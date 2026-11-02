@@ -8,9 +8,9 @@ import tempfile
 from pathlib import Path
 
 HOME = Path(os.environ.get("CODEX_HOME", Path.home() / ".codex"))
-INSTRUCTION = """Call the image generation tool exactly once and then reply with only the word done.
-Do not read any files or skills first. Pass the attached reference cards to the tool as style references.
+INSTRUCTION = """Your task is to create one new image. You must call the image_gen tool exactly once with the description below. Replying without calling the tool is a failure. Do not read any files or skills first. Any attached images are style references for the tool. After the tool returns, reply with only the word done.
 
+Image description:
 """
 
 

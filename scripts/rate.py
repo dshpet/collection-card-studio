@@ -39,7 +39,7 @@ List the ten cards in reading order with slot 0-9, printed name, and whether the
 {guide(SET_FORM)}"""
 
 
-def ask_codex(prompt, image, schema):
+def ask_codex(prompt, image, schema, timeout=600):
     attachments = ["-i", str(image)] if image else []
     with tempfile.TemporaryDirectory() as folder:
         folder = Path(folder)
@@ -48,7 +48,8 @@ def ask_codex(prompt, image, schema):
                    "-m", "gpt-6.1-sol", "-c", 'model_reasoning_effort="low"', "-s", "read-only",
                    "-C", str(folder), "--output-schema", str(folder / "schema.json"),
                    "-o", str(folder / "out.json"), *attachments, "--", prompt]
-        done = subprocess.run(command, capture_output=True, text=True, timeout=600)
+        done = subprocess.run(command, capture_output=True, text=True, timeout=timeout,
+                              stdin=subprocess.DEVNULL)
         if done.returncode:
             raise RuntimeError(done.stderr[-400:])
         return json.loads((folder / "out.json").read_text())

@@ -70,7 +70,8 @@ Rules learned from the game's real sets:
 - title: 1-3 plain words that name the topic. A story behind the set is optional. Give it in one line or leave it empty.
 - Card names: 1-2 plain words.
 - Pick the first things anyone would name for the topic: instantly recognizable objects with a simple, distinctive silhouette.
-- No characters, people or animal heroes, no brands, logos or real franchises. Nothing frightening or violent: keep it playful.
+- Every object must belong to this specific topic, not to the wider collection. A film genre set shows that genre's world, not generic cinema items such as film reels or popcorn.
+- No characters, people or animal heroes, no brands, logos or real franchises. Keep dark topics playful and cute, never gory or violent.
 - Real sets use {knowledge['set_ranges']['object_classes'][0]}-{knowledge['set_ranges']['object_classes'][1]} object classes and {knowledge['set_ranges']['scale_classes'][0]}-{knowledge['set_ranges']['scale_classes'][1]} real-world sizes, from handheld things to vehicles and buildings.
 - Every version uses all four art categories: 1 floating object, 2 object on a plain ledge, 3 object on a real surface, 4 object in an environment. Use 2-4 of category 1, 1-2 of category 2, 2-4 of category 3 and 1-5 of category 4.
 - For category 4 use pattern full_scene. Otherwise pick a graphic pattern.
@@ -173,7 +174,13 @@ def draw_card(run, brief, attempt, fixes, use_references):
 
 
 def rate_blind(path):
-    return ask_codex(card_prompt(RATED), path, card_schema(RATED))
+    """A stuck or failed rating marks the card unrated, and never stops the run."""
+    for attempt in (1, 2):
+        try:
+            return ask_codex(card_prompt(RATED), path, card_schema(RATED), timeout=180)
+        except Exception as error:
+            print(f"{path.stem} rating attempt {attempt}: {type(error).__name__}", flush=True)
+    return None
 
 
 def judge_names(pairs):
@@ -200,7 +207,8 @@ def check_tries(run, tries, knowledge, workers):
     nearest = (vectors @ references.T).max(axis=1)
     with ThreadPoolExecutor(workers) as pool:
         ratings = list(pool.map(lambda r: rate_blind(ROOT / r["file"]), records))
-    same = judge_names([(t["card"]["subject"], r["identity"]["subject"]) for t, r in zip(tries, ratings)])
+    same = judge_names([(t["card"]["subject"], r["identity"]["subject"] if r else "nothing")
+                         for t, r in zip(tries, ratings)])
 
     for entry, record, score, rating, named in zip(tries, records, nearest, ratings, same):
         category = entry["card"]["category"]
@@ -212,9 +220,11 @@ def check_tries(run, tries, knowledge, workers):
             issues.append("style")
         if float(score) > knowledge["style"]["copy"]:
             issues.append("copy")
-        if GROUPS[rating["staging"]["art_category"]] != GROUPS[category]:
+        if rating is None:
+            issues.append("unrated")
+        elif GROUPS[rating["staging"]["art_category"]] != GROUPS[category]:
             issues.append("art_category")
-        if not named:
+        if rating and not named:
             issues.append("identity")
         entry.update(style=round(float(score), 3), misses=misses, issues=issues, seen=rating,
                      passed=not issues and len(misses) <= ALLOWED_MISSES)

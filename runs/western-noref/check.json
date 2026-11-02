@@ -1,0 +1,378 @@
+{
+ "v1_01": [
+  {
+   "try_id": "v1_01_1",
+   "brief_id": "v1_01",
+   "card": {
+    "name": "Cowboy Hat",
+    "subject": "A tan cowboy hat with a wide curled brim and a pinched high crown.",
+    "object_class": "clothing",
+    "category": "1",
+    "pattern": "rays",
+    "hero_colors": "tan and brown",
+    "backdrop_colors": "sky blue and teal",
+    "surface_or_setting": ""
+   },
+   "style": 0.722,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Cowboy hat",
+     "object_class": "clothing",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_02": [
+  {
+   "try_id": "v1_02_1",
+   "brief_id": "v1_02",
+   "card": {
+    "name": "Sheriff Star",
+    "subject": "A silver six-point star badge with small ball tips on each point.",
+    "object_class": "accessory",
+    "category": "1",
+    "pattern": "concentric_rings",
+    "hero_colors": "silver and gold",
+    "backdrop_colors": "deep purple and navy",
+    "surface_or_setting": ""
+   },
+   "style": 0.707,
+   "misses": [
+    "color_palette.hue_gap",
+    "value_contrast.lightness_mean",
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Sheriff badge",
+     "object_class": "accessory",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v1_03": [
+  {
+   "try_id": "v1_03_1",
+   "brief_id": "v1_03",
+   "card": {
+    "name": "Boots",
+    "subject": "A pair of brown leather cowboy boots with pointed toes, tall shafts and a small spur.",
+    "object_class": "clothing",
+    "category": "1",
+    "pattern": "stripes",
+    "hero_colors": "chestnut and cream",
+    "backdrop_colors": "mint green and olive",
+    "surface_or_setting": ""
+   },
+   "style": 0.719,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Cowboy boots",
+     "object_class": "clothing",
+     "real_world_scale": "body_sized",
+     "subject_count": "pair"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_04": [
+  {
+   "try_id": "v1_04_1",
+   "brief_id": "v1_04",
+   "card": {
+    "name": "Film Reel",
+    "subject": "A round metal film reel with spoked holes and a curl of film strip hanging out.",
+    "object_class": "electronics",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "charcoal and silver",
+    "backdrop_colors": "warm yellow and orange",
+    "surface_or_setting": "a wooden shelf ledge"
+   },
+   "style": 0.693,
+   "misses": [
+    "composition_hierarchy.center_x",
+    "composition_hierarchy.center_y"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Film reel",
+     "object_class": "other",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_05": [
+  {
+   "try_id": "v1_05_1",
+   "brief_id": "v1_05",
+   "card": {
+    "name": "Popcorn",
+    "subject": "A red-and-white striped popcorn box overflowing with fluffy kernels.",
+    "object_class": "food_drink",
+    "category": "3",
+    "pattern": "diamonds",
+    "hero_colors": "red and white",
+    "backdrop_colors": "forest green and lime",
+    "surface_or_setting": "a cinema lobby counter"
+   },
+   "style": 0.757,
+   "misses": [
+    "color_palette.shadow_chroma_kept"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Popcorn carton",
+     "object_class": "food_drink",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_06": [
+  {
+   "try_id": "v1_06_1",
+   "brief_id": "v1_06",
+   "card": {
+    "name": "Saloon Doors",
+    "subject": "A pair of wooden swinging half doors with slatted tops, slightly open.",
+    "object_class": "building_place",
+    "category": "3",
+    "pattern": "plain_wall",
+    "hero_colors": "honey brown and red",
+    "backdrop_colors": "slate blue and grey",
+    "surface_or_setting": "a wooden saloon porch"
+   },
+   "style": 0.777,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.box_width",
+    "composition_hierarchy.box_height"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Saloon swinging doors",
+     "object_class": "building_place",
+     "real_world_scale": "body_sized",
+     "subject_count": "pair"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v1_07": [
+  {
+   "try_id": "v1_07_1",
+   "brief_id": "v1_07",
+   "card": {
+    "name": "Wagon",
+    "subject": "A covered wagon with a white canvas arch top and two big spoked wooden wheels.",
+    "object_class": "vehicle",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "cream and brown",
+    "backdrop_colors": "dusty orange and sky blue",
+    "surface_or_setting": "a dusty prairie trail with distant mesas"
+   },
+   "style": 0.776,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "value_contrast.boundary_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Covered wagon",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 4,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_08": [
+  {
+   "try_id": "v1_08_1",
+   "brief_id": "v1_08",
+   "card": {
+    "name": "Cactus",
+    "subject": "A green saguaro cactus with two raised arms and a small pink flower on top.",
+    "object_class": "plant_nature",
+    "category": "3",
+    "pattern": "waves",
+    "hero_colors": "green and pink",
+    "backdrop_colors": "sandy peach and rust",
+    "surface_or_setting": "sandy desert ground"
+   },
+   "style": 0.778,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "color_palette.chroma_subject",
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Flowering cactus",
+     "object_class": "plant_nature",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v1_09": [
+  {
+   "try_id": "v1_09_1",
+   "brief_id": "v1_09",
+   "card": {
+    "name": "Train",
+    "subject": "A small steam locomotive with a funnel chimney, round boiler and cowcatcher front.",
+    "object_class": "vehicle",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "black and red",
+    "backdrop_colors": "golden yellow and light blue",
+    "surface_or_setting": "a desert railway track with rocky hills"
+   },
+   "style": 0.776,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "color_palette.shadow_chroma_kept",
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Steam locomotive",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v1_10": [
+  {
+   "try_id": "v1_10_1",
+   "brief_id": "v1_10",
+   "card": {
+    "name": "Clapperboard",
+    "subject": "A black-and-white striped clapperboard with its top clapper arm raised open.",
+    "object_class": "electronics",
+    "category": "1",
+    "pattern": "repeated_motif",
+    "hero_colors": "black and white",
+    "backdrop_colors": "coral and magenta",
+    "surface_or_setting": ""
+   },
+   "style": 0.726,
+   "misses": [
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Movie clapperboard",
+     "object_class": "tool",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ]
+}
