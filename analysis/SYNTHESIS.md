@@ -1,6 +1,6 @@
 # What the references show
 
-All 160 cards and 16 sets, rated by four vision models (Codex, Claude, Qwen, Gemma) and measured from pixels, subject masks, depth and shading. Numbers below are counts out of 160 cards unless stated.
+All 160 cards and 16 sets, rated by four vision models (Codex, Claude, Qwen, Gemma) and measured from pixels, subject masks, depth, shading and predicted attention. Numbers below are counts out of 160 cards unless stated.
 
 ## The style that never changes
 
@@ -11,8 +11,9 @@ All 160 cards and 16 sets, rated by four vision models (Codex, Claude, Qwen, Gem
 - **Colour:** saturation 4–5 of 5 in 158. Warm and cool colours are mixed in 140. Backgrounds are as saturated as subjects.
 - **Value:** bright overall, and deep shadow is rare. About 1% of a typical subject is dark.
 - **Camera:** eye level or slightly above in 145, three-quarter view in 127.
-- **Framing:** centred in 135. The subject covers about 31% of the card (17–48%) and comes within 5% of an edge.
-- **Light:** from above. Normal maps put it in the upper half in 151 cards. Raters say upper left, but they agree poorly on this.
+- **Framing:** centred in 135. The subject covers about 33% of the card (23–47%) and comes within 5% of an edge.
+- **Attention:** 85% of predicted gaze lands on the subject, in 33% of the area. The peak sits at the card centre, and higher on character cards, where it finds faces.
+- **Light:** from above. Normal maps put it in the upper half in 155 cards. Raters say upper left, but they agree poorly on this.
 
 ## What changes by category
 
@@ -38,7 +39,7 @@ All 160 cards and 16 sets, rated by four vision models (Codex, Claude, Qwen, Gem
 - **SigLIP 2:** closest to the sets, but still weak (0.29).
 - **CSD:** staging, not style differences (0.43 with category).
 - **Subject only:** SigLIP 2 and CSD density clusters simply split characters from objects.
-- **No natural families:** the best silhouette is 0.22. The cards form a continuum, not distinct groups.
+- **No natural families:** the best silhouette is 0.24. The cards form a continuum, not distinct groups.
 
 ## How far to trust this
 
@@ -46,7 +47,8 @@ All 160 cards and 16 sets, rated by four vision models (Codex, Claude, Qwen, Gem
 - Most reliable: support, object class, category, background type and humour (κ above 0.75).
 - Weak: subject-versus-background contrast, light direction, rim light, margin and value key (κ below 0.2).
 - Two fields carry no information. Recognizability is 5 and shading model is soft gradient on every card.
-- 151 masks pass the quality threshold, and about 9 are wrong.
+- The 48 hardest and lowest-scoring masks were checked by eye and look right. The rest were sampled, not all inspected.
+- DeepGaze learned from photos, so its attention maps on stylised art are unvalidated, and they include a built-in pull toward the centre.
 - No art director has checked these ratings, and 430×480 limits conclusions about fine texture.
 
 ## What this means for generation

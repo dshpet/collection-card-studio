@@ -63,7 +63,7 @@ h3 { font-size: 12px; margin: 14px 0 4px; color: var(--muted); text-transform: u
 #drawer { position: fixed; top: 0; right: 0; bottom: 0; width: min(520px, 100vw); background: var(--surface); border-left: 1px solid var(--line); box-shadow: -10px 0 30px rgba(0,0,0,.18); overflow: auto; padding: 16px 18px 40px; transform: translateX(105%); transition: transform .2s; z-index: 50; }
 #drawer.open { transform: none; }
 .top { display: flex; justify-content: space-between; gap: 8px; align-items: start; }
-.tile-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin: 10px 0; }
+.tile-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin: 10px 0; }
 .tile-row figure { margin: 0; }
 .tile-row img { width: 100%; aspect-ratio: 430/480; object-fit: cover; border-radius: 6px; background: var(--line); display: block; }
 .tile-row figcaption { font-size: 11px; color: var(--muted); }
@@ -294,11 +294,11 @@ function drawer() {
   const box = document.getElementById('drawer'), c = byId[S.card];
   if (!c) { box.classList.remove('open'); return; }
   const near = D.maps[`${S.model}_whole`] || D.maps[keyName()];
-  const tiles = [['Art', art(c.id)], ['Subject mask', `derived/masks/${c.id}.png`], ['Depth', `derived/depth/${c.id}.png`], ['Shading', `derived/shading/${c.id}.png`]];
+  const tiles = [['Art', art(c.id)], ['Subject mask', `derived/masks/${c.id}.png`], ['Attention', `derived/attention/${c.id}.png`], ['Depth', `derived/depth/${c.id}.png`], ['Normals', `derived/normals/${c.id}.png`], ['Shading', `derived/shading/${c.id}.png`]];
   box.innerHTML = `<div class="top"><div><h2>${esc(c.name || c.form.identity.subject)}</h2><div class="note">${esc(c.set)} · category ${esc(c.form.staging.art_category)}</div></div>
     <div><button class="btn" id="pin">${S.pinned === c.id ? 'Pinned' : 'Compare'}</button> <button class="btn" id="close" aria-label="Close">Close</button></div></div>
     <div class="tile-row">${tiles.map(([t, src]) => `<figure><img src="${src}" alt="${t}" onerror="this.style.visibility='hidden'"><figcaption>${t}</figcaption></figure>`).join('')}</div>
-    ${c.measured.mask_quality < 0.03 ? '<p class="flag">Low mask quality: subject measurements may be wrong.</p>' : ''}<h3>Palette</h3><div>${swatches(c.measured.color_palette.palette_subject)}</div><div style="margin-top:4px">${swatches(c.measured.color_palette.palette_background)}</div>
+    <h3>Palette</h3><div>${swatches(c.measured.color_palette.palette_subject)}</div><div style="margin-top:4px">${swatches(c.measured.color_palette.palette_background)}</div>
     <h3>Nearest in ${S.model}</h3><div class="setcards" style="grid-template-columns:repeat(8,1fr)">${near.neighbours[c.index].map(i => D.cards.find(x => x.index === i)).filter(Boolean).map(x => `<button class="thumb" data-card="${x.id}"><div class="pic"><img src="${art(x.id)}" alt="${esc(x.form.identity.subject)}"></div></button>`).join('')}</div>
     <table>${formRows(c)}</table>`;
   box.classList.add('open');
