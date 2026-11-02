@@ -118,17 +118,23 @@ const allPaths = (kinds) => Object.entries(D.form).flatMap(([s, fs]) => Object.e
 const numericPaths = () => Object.keys(D.stats.measured).concat(allPaths(['scale']));
 
 function tabs() {
-  const names = ['Summary', 'Map', 'Cards', 'Sets', 'Fields', 'Compare'];
+  const names = ['Summary', 'Generated', 'Map', 'Cards', 'Sets', 'Fields', 'Compare'];
   document.getElementById('tabs').innerHTML = names.map(n => `<button role="tab" aria-selected="${n === S.tab}" data-tab="${n}">${n}</button>`).join('');
 }
 
 function render() {
   tabs();
-  ({ Summary: summary, Map: map, Cards: grid, Sets: sets, Fields: fields, Compare: compare })[S.tab]();
+  ({ Summary: summary, Generated: generated, Map: map, Cards: grid, Sets: sets, Fields: fields, Compare: compare })[S.tab]();
 }
 
 function summary() {
   document.getElementById('main').innerHTML = `<div class="panel prose">${D.synthesis}</div>`;
+}
+
+function generated() {
+  document.getElementById('main').innerHTML = `<div class="sets">${D.runs.map(r => `<div class="panel"><h2>${esc(r.title)}</h2>
+    <p class="note">${esc(r.slug)}: ${r.passed} of ${r.cards} cards passed the automatic check.${r.review.length ? ` For review: ${r.review.map(esc).join(', ')}.` : ''}</p>
+    ${Array.from({ length: r.variants }, (_, i) => `<img loading="lazy" src="../runs/${r.slug}/variant_${i + 1}.png" alt="${esc(r.title)} variant ${i + 1}" style="width:100%;max-width:1000px;display:block;margin:8px 0;border-radius:8px">`).join('')}</div>`).join('')}</div>`;
 }
 
 function keyName() { return `${S.model}_${S.view}`; }

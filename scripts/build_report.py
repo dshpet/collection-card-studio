@@ -5,7 +5,7 @@ import json
 import re
 from pathlib import Path
 
-from common import ANALYSIS, load_json
+from common import ANALYSIS, ROOT, load_json
 
 from form import CARD_FORM
 
@@ -36,12 +36,27 @@ def markdown(text):
     return "\n".join(output)
 
 
+def generated_runs():
+    """Every finished pipeline run, for the Generated tab."""
+    runs = []
+    for report in sorted((ROOT / "runs").glob("*/report.md")):
+        folder = report.parent
+        plan = load_json(folder / "plan.json")
+        history = load_json(folder / "check.json")
+        best = [min(t, key=lambda x: (not x["passed"], len(x["issues"]), len(x["misses"]))) for t in history.values()]
+        runs.append({"slug": folder.name, "title": plan["title"], "story": plan.get("story"),
+                     "variants": len(plan["variants"]), "cards": len(best),
+                     "passed": sum(b["passed"] for b in best),
+                     "review": [b["card"]["name"] for b in best if not b["passed"]]})
+    return runs
+
+
 def main():
     synthesis = ANALYSIS / "SYNTHESIS.md"
     maps = load_json(ANALYSIS / "embedding_map.json")
     cards = load_json(ANALYSIS / "cards.json")
     data = {"cards": cards, "sets": load_json(ANALYSIS / "sets.json"),
-            "stats": load_json(ANALYSIS / "stats.json"), "maps": maps, "form": CARD_FORM,
+            "stats": load_json(ANALYSIS / "stats.json"), "maps": maps, "form": CARD_FORM, "runs": generated_runs(),
             "synthesis": markdown(synthesis.read_text("utf-8")) if synthesis.exists() else "<p>No synthesis yet.</p>"}
     template = (Path(__file__).parent / "report_template.html").read_text("utf-8")
     payload = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")

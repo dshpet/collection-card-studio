@@ -231,6 +231,10 @@ def check_tries(run, tries, knowledge, workers):
     return tries
 
 
+def best_try(tries):
+    return min(tries, key=lambda t: (not t["passed"], len(t["issues"]), len(t["misses"])))
+
+
 def contact_sheet(paths, out, columns=5):
     tile = (258, 288)
     rows = (len(paths) + columns - 1) // columns
@@ -251,7 +255,7 @@ def deliver(run, plan, briefs, history):
                   "|---|---|---:|---:|---|---|"]
         for brief in [b for b in briefs if b["variant"] == variant]:
             tries = history[brief["id"]]
-            best = min(tries, key=lambda t: (not t["passed"], len(t["issues"]), len(t["misses"])))
+            best = best_try(tries)
             name = re.sub(r"[^a-z0-9]+", "_", brief["card"]["name"].lower()).strip("_")
             path = folder / f"{brief['id'][-2:]}_{name}.png"
             Image.open(run / "tries" / f"{best['try_id']}.png").save(path)
