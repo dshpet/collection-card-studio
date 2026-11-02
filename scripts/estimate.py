@@ -34,7 +34,7 @@ def run_deform_conv_on_cpu():
     ops.deform_conv2d = wrapped
 
 
-def write_masks(records, device):
+def write_masks(records, device, folder=DERIVED / "masks"):
     from torchvision import transforms
     from transformers import AutoModelForImageSegmentation
 
@@ -44,7 +44,6 @@ def write_masks(records, device):
         trust_remote_code=True).float().to(device).eval()
     prepare = transforms.Compose([transforms.Resize((1024, 1024)), transforms.ToTensor(),
                                   transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))])
-    folder = DERIVED / "masks"
     folder.mkdir(parents=True, exist_ok=True)
     for record in records:
         out = folder / f"{record['id']}.png"
@@ -54,6 +53,8 @@ def write_masks(records, device):
         with torch.inference_mode():
             mask = model(prepare(image)[None].to(device))[-1].sigmoid()[0, 0].cpu().numpy()
         Image.fromarray((mask * 255).astype(np.uint8)).resize(image.size).save(out)
+    del model
+    torch.cuda.empty_cache()
 
 
 def write_depth(records, device):
@@ -118,7 +119,7 @@ def write_marigold(records, device):
         return kind.from_pretrained(repo, variant="fp16", torch_dtype=torch.float16).to(device)
 
     normals = pipeline(MarigoldNormalsPipeline, "prs-eth/marigold-normals-v1-1")
-    for name in ("normals", "shading", "albedo"):
+    for name in ("normals", "shading"):
         (DERIVED / name).mkdir(parents=True, exist_ok=True)
     for record in records:
         out = DERIVED / "normals" / f"{record['id']}.npy"
@@ -137,10 +138,7 @@ def write_marigold(records, device):
             continue
         image = Image.open(ROOT / record["file"]).convert("RGB")
         result = intrinsics(image, num_inference_steps=4, ensemble_size=1, output_type="np").prediction
-        albedo, shading = result[0], result[1]
-        Image.fromarray((np.clip(shading, 0, 1) * 255).astype(np.uint8)).save(shading_path)
-        Image.fromarray((np.clip(albedo, 0, 1) * 255).astype(np.uint8)).save(
-            DERIVED / "albedo" / f"{record['id']}.png")
+        Image.fromarray((np.clip(result[1], 0, 1) * 255).astype(np.uint8)).save(shading_path)
 
 
 def main():

@@ -34,7 +34,7 @@ def merge(form, answers):
     for section, fields in form.items():
         merged[section] = {}
         for name, field in fields.items():
-            values = [a[section][name] for a in answers]
+            values = [a[section][name] for a in answers if section in a]
             if field["kind"] == "scale":
                 numbers = [v for v in values if isinstance(v, int)]
                 merged[section][name] = float(np.median(numbers))
@@ -55,6 +55,8 @@ def pair_scores(form, first, second):
     shared = sorted(set(first) & set(second))
     scores = {}
     for section, fields in form.items():
+        if section not in first[shared[0]] or section not in second[shared[0]]:
+            continue
         for name, field in fields.items():
             if field["kind"] == TEXT:
                 continue
@@ -76,10 +78,11 @@ def agreement(form, ratings):
              for a, b in combinations(ratings, 2)}
     fields = {}
     if pairs:
-        for path, (kind, _, _) in next(iter(pairs.values())).items():
-            fields[path] = {"kind": kind,
-                            "match": round(float(np.mean([p[path][1] for p in pairs.values()])), 3),
-                            "kappa": round(float(np.mean([p[path][2] for p in pairs.values()])), 3)}
+        paths = {path: scores[path][0] for scores in pairs.values() for path in scores}
+        for path, kind in paths.items():
+            rows = [p[path] for p in pairs.values() if path in p]
+            fields[path] = {"kind": kind, "match": round(float(np.mean([r[1] for r in rows])), 3),
+                            "kappa": round(float(np.mean([r[2] for r in rows])), 3)}
     overall = {name: {"choice_match": round(float(np.mean([v[1] for v in p.values() if v[0] == "choice"])), 3),
                       "scale_within_1": round(float(np.mean([v[1] for v in p.values() if v[0] == "scale"])), 3),
                       "mean_kappa": round(float(np.mean([v[2] for v in p.values()])), 3)}
@@ -154,17 +157,13 @@ def main():
     records = cards()
     set_map = load_json(ANALYSIS / "set_map.json")
     measured = load_json(ANALYSIS / "measurements.json")
-    prior = load_json(ANALYSIS / "prior_labels.json")
     ratings = load_ratings("", records)
     screens = sorted(manifest("collection_examples"), key=lambda r: r["id"])
     set_ratings = load_ratings("sets_", screens)
 
-    readings = {}
-    for screen in screens:
-        for rater in set_ratings.values():
-            for card in rater.get(screen["id"], {}).get("cards", []):
-                readings.setdefault((screen["id"], card["slot"]), card)
-            break
+    first_rater = next(iter(set_ratings.values()))
+    readings = {(screen["id"], card["slot"]): card
+                for screen in screens for card in first_rater.get(screen["id"], {}).get("cards", [])}
 
     joined = []
     for index, record in enumerate(records):
@@ -177,9 +176,9 @@ def main():
         reading = readings.get((place["set_id"], place["slot"]), {})
         joined.append({
             "id": card_id, "index": index, "set_id": place["set_id"], "slot": place["slot"],
-            "name": tidy(reading.get("name")), "form": form, "disputed": disputed,
+            "name": tidy(reading.get("name")), "gold_frame": reading.get("gold_frame"), "form": form, "disputed": disputed,
             "raters": {name: rater.get(card_id) for name, rater in ratings.items()},
-            "measured": measured[card_id], "prior": prior.get(card_id),
+            "measured": measured[card_id],
         })
 
     style_path = ANALYSIS / "embeddings" / "csd_whole.npy"

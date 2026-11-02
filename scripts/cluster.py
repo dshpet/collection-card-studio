@@ -9,20 +9,13 @@ from sklearn.decomposition import PCA
 from sklearn.metrics import adjusted_mutual_info_score, silhouette_score
 
 
-def rated_field(records, section, field):
-    folder = ANALYSIS / "ratings" / "codex"
-    values = []
-    for record in records:
-        path = folder / f"{record['id']}.json"
-        values.append(load_json(path)[section][field] if path.exists() else None)
-    return values
+def merged_field(records, section, field):
+    joined = {card["id"]: card for card in load_json(ANALYSIS / "cards.json")}
+    return [joined[r["id"]]["form"][section][field] for r in records]
 
 
-def agreement(clusters, labels):
-    pairs = [(c, l) for c, l in zip(clusters, labels) if l is not None]
-    if len(pairs) < 100:
-        return None
-    return round(float(adjusted_mutual_info_score(*zip(*pairs))), 3)
+def mutual_info(clusters, labels):
+    return round(float(adjusted_mutual_info_score(clusters, labels)), 3)
 
 
 def best_kmeans(vectors):
@@ -38,9 +31,9 @@ def main():
     set_map = load_json(ANALYSIS / "set_map.json")
     targets = {
         "set": [set_map[r["id"]]["set_index"] for r in records],
-        "art_category": rated_field(records, "staging", "art_category"),
-        "background": rated_field(records, "staging", "background_type"),
-        "object_class": rated_field(records, "identity", "object_class"),
+        "art_category": merged_field(records, "staging", "art_category"),
+        "background": merged_field(records, "staging", "background_type"),
+        "object_class": merged_field(records, "identity", "object_class"),
     }
 
     maps = {}
@@ -67,8 +60,8 @@ def main():
                 "kmeans_silhouette": round(float(silhouette), 3),
                 "hdbscan_clusters": int(density.max() + 1),
                 "hdbscan_noise": int((density < 0).sum()),
-                "kmeans_ami": {name: agreement(kmeans, labels) for name, labels in targets.items()},
-                "hdbscan_ami": {name: agreement(density, labels) for name, labels in targets.items()},
+                "kmeans_ami": {name: mutual_info(kmeans, labels) for name, labels in targets.items()},
+                "hdbscan_ami": {name: mutual_info(density, labels) for name, labels in targets.items()},
             },
         }
         print(path.stem, maps[path.stem]["scores"], flush=True)
