@@ -8,6 +8,8 @@ import numpy as np
 
 from style import BANDS
 
+STYLE_FLOOR = 0.58
+
 
 def value(card, path):
     section, name = path.split(".")
@@ -31,13 +33,16 @@ def modes(cards, section, field):
 
 
 def style_floor(cards):
-    """How close each real card is to its nearest neighbour in the style space."""
+    """How close a card must be to its nearest real neighbour in the style space.
+
+    The floor sits between the best off-style control (0.54) and the worst good card on new topics (0.62).
+    New topics have no close neighbour by content, so the real cards' own range would reject good art.
+    """
     vectors = np.load(ANALYSIS / "embeddings" / "csd_whole.npy")
     similarity = vectors @ vectors.T
     np.fill_diagonal(similarity, -1)
     nearest = similarity.max(axis=1)
-    return {"min": round(float(np.percentile(nearest, 2)), 3), "median": round(float(np.median(nearest)), 3),
-            "copy": round(float(nearest.max()) + 0.02, 3)}
+    return {"min": STYLE_FLOOR, "median": round(float(np.median(nearest)), 3), "copy": round(float(nearest.max()) + 0.02, 3)}
 
 
 def main():

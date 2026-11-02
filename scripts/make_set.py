@@ -73,7 +73,7 @@ Rules learned from the game's real sets:
 - Card names: 1-2 plain words.
 - Pick the first things anyone would name for the topic: instantly recognizable objects with a simple, distinctive silhouette.
 - Every object must belong to this specific topic, not to the wider collection. A film genre set shows that genre's world, not generic cinema items such as film reels or popcorn.
-- No characters or people, no brands, logos or real franchises. An animal may appear as an object, at most once in a set. No weapons, blood or gore. Keep dark topics playful.
+- No characters or people, no brands, logos or real franchises. An animal may appear as an object, at most once in a set. No weapons of any kind, toy or sci-fi ones included. No blood or gore. Keep dark topics playful.
 - Cards carry no text, so skip objects that need readable words to make sense.
 - Real sets use {knowledge['set_ranges']['object_classes'][0]}-{knowledge['set_ranges']['object_classes'][1]} object classes and {knowledge['set_ranges']['scale_classes'][0]}-{knowledge['set_ranges']['scale_classes'][1]} real-world sizes, from handheld things to vehicles and buildings.
 - Every version uses all four art categories: 1 floating object, 2 object on a plain ledge, 3 object on a real surface, 4 object in an environment. Use 2-4 of category 1, 1-2 of category 2, 2-4 of category 3 and 1-5 of category 4.
@@ -81,7 +81,7 @@ Rules learned from the game's real sets:
 - subject: one plain sentence on what to draw, with the two or three features that make it recognizable. Name the object and its parts only, with no mood, style or props.
 - hero_colors are the object's natural colors. Give every card a different backdrop, whose color contrasts with the hero.
 - backdrop_colors are bright and clean, as in the real cards: sky blue, cyan, yellow, orange, purple, pink, grass green. Never dusty, muted, dull or dark. Skies stay clear and bright, even on dark topics.
-- surface_or_setting: the surface for categories 2-3 and the place for category 4, empty for category 1.
+- surface_or_setting: the surface for categories 2-3 and the place for category 4, empty for category 1. Real sets reuse one or two ground materials across their cards, so reuse them too.
 - Versions may share at most 5 objects.
 
 Real sets from the game, as examples:

@@ -2,9 +2,9 @@
 
 Turn a theme and free-form producer wishes into 3–5 complete ten-card sets that could sit next to the [reference collection](materials/02_collection_explanation.md). Full brief: [task](materials/01_task_description.md), [art guide](materials/03_art_guide.md), [Miro board](https://miro.com/app/board/uXjVEUZR5u0=/).
 
-**Status:** the pipeline runs end to end. Three film-genre sets with three variants each are in `runs/`.
+**Status:** the pipeline runs end to end. Film-genre sets are in `runs/`, the first run in `runs/first/`.
 
-Findings: [analysis/SYNTHESIS.md](analysis/SYNTHESIS.md). Dashboard: open `analysis/report.html`, which reads images from `materials/` and `runs/`.
+Findings: [analysis/SYNTHESIS.md](analysis/SYNTHESIS.md). Style mismatches and fixes: [analysis/STYLE_GAPS.md](analysis/STYLE_GAPS.md). Dashboard: open `analysis/report.html`, which reads images from `materials/` and `runs/`.
 
 ## Make a set
 
@@ -12,11 +12,19 @@ Findings: [analysis/SYNTHESIS.md](analysis/SYNTHESIS.md). Dashboard: open `analy
 .venv/bin/python -B scripts/make_set.py "Western" --wishes "A set for a Movie collection" --variants 3
 ```
 
-It plans the set, picks reference cards, draws every card, checks each one against the reference analysis and redraws failures. Results land in `runs/<slug>/`: the cards in `variant_N/`, a sheet per variant, and `report.md`. Rerunning continues where it stopped. A run of 30 cards takes about 25 minutes.
+It plans the set, picks reference cards and draws three candidates per card. It checks each one against the reference analysis, chooses the best by eye, reviews the variant with nine specialists and an art director, and edits what they flag. Results land in `runs/<slug>/`: the cards in `variant_N/`, a sheet per variant, and `report.md`. Rerunning continues where it stopped. Three variants take about an hour. `--candidates 1 --review-rounds 0` gives a quick draft.
+
+To see a set in the game's window, run `scripts/screen.py western --color blue`.
 
 It needs the Codex and Claude CLIs logged in, the board images in `materials/`, and `analysis/embeddings/` from `scripts/embed.py`.
 
-`scripts/draw.py` holds the generator, so another model replaces one function. After changing the generator or the check, run `scripts/validate.py off-style` and `scripts/validate.py acceptance`.
+`scripts/draw.py` holds the generator, so another model replaces one function. After changing the generator or the style text, redraw the twins, then judge them:
+
+```sh
+.venv/bin/python -B scripts/validate.py twins --label r9
+.venv/bin/python -B scripts/drift.py twins/r9 --no-classifier
+.venv/bin/python -B scripts/review.py twins r9 --rater claude-opus-5-5 --lessons baseline r3 r8
+```
 
 ## How the analysis feeds generation
 
@@ -24,7 +32,7 @@ It needs the Codex and Claude CLIs logged in, the board images in `materials/`, 
 - **Prompts:** the style text and category rules come from the findings (`scripts/style.py`).
 - **References:** each card gets three real cards with the same category and backdrop, and a similar object where possible (`cards.json`).
 - **Checks:** every card is measured like the references and compared with per-category ranges, the style embedding and a blind rater.
-- **Correction:** each failed check maps to one fix sentence for the redraw (`scripts/style.py`).
+- **Review:** calibrated specialists compare each card with a real one, blind, with hidden real controls. The art director turns their reports into edit notes ([analysis/agents/](analysis/agents/README.md)).
 
 ## Layout
 
@@ -34,8 +42,8 @@ It needs the Codex and Claude CLIs logged in, the board images in `materials/`, 
 | `sources/` | Board export and image manifests with hashes. |
 | `research/` | Research reports and per-vector notes. |
 | `analysis/` | Analysis outputs. `knowledge.json` is what the generator reads. |
-| `analysis/agents/` | Specialist art reviewers, one per vector, plus the art director. `VOCABULARY.md`, `TOOLS.md`, `LIGHTING.md` and `RECIPES.md` are their language and tools. |
-| `runs/` | Generated sets and control tests. |
+| `analysis/agents/` | Specialist art reviewers, one per vector, plus the art director. `VOCABULARY.md` and `TOOLS.md` are their language and evidence. |
+| `runs/` | Generated sets, twin rounds in `twins/`, reviews in `review/`, drift in `drift/`, the first run in `first/`. |
 | `scripts/` | Pipeline scripts. |
 | `PROCESS.md` | What was tried and why. Draft. |
 
