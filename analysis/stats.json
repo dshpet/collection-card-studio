@@ -52,6 +52,36 @@
    "match": 0.767,
    "kappa": 0.641
   },
+  "backdrop.pattern": {
+   "kind": "choice",
+   "match": 0.912,
+   "kappa": 0.882
+  },
+  "backdrop.tone": {
+   "kind": "choice",
+   "match": 0.875,
+   "kappa": 0.792
+  },
+  "backdrop.glow_behind_subject": {
+   "kind": "choice",
+   "match": 0.725,
+   "kappa": 0.432
+  },
+  "backdrop.surface_kind": {
+   "kind": "choice",
+   "match": 0.844,
+   "kappa": 0.784
+  },
+  "backdrop.rendering_vs_subject": {
+   "kind": "choice",
+   "match": 0.838,
+   "kappa": 0.692
+  },
+  "backdrop.game_motif": {
+   "kind": "choice",
+   "match": 0.975,
+   "kappa": -0.006
+  },
   "lighting_shading.light_direction": {
    "kind": "choice",
    "match": 0.523,
@@ -237,22 +267,22 @@
    "match": 0.994,
    "kappa": 0.364
   },
-  "rhythm_staging.pose": {
+  "pose_rhythm.pose": {
    "kind": "choice",
    "match": 0.721,
    "kappa": 0.556
   },
-  "rhythm_staging.symmetry": {
+  "pose_rhythm.symmetry": {
    "kind": "scale",
    "match": 0.903,
    "kappa": 0.64
   },
-  "rhythm_staging.repetition": {
+  "pose_rhythm.repetition": {
    "kind": "scale",
    "match": 0.907,
    "kappa": 0.567
   },
-  "rhythm_staging.energy": {
+  "pose_rhythm.energy": {
    "kind": "scale",
    "match": 0.99,
    "kappa": 0.778
@@ -275,9 +305,9 @@
  },
  "rater_pairs": {
   "codex + claude": {
-   "choice_match": 0.771,
+   "choice_match": 0.786,
    "scale_within_1": 0.993,
-   "mean_kappa": 0.517
+   "mean_kappa": 0.526
   },
   "codex + qwen3.8": {
    "choice_match": 0.699,
@@ -632,6 +662,211 @@
      "one": 1,
      "few": 22,
      "many": 8
+    }
+   }
+  },
+  "backdrop.pattern": {
+   "all": {
+    "concentric_rings": 14,
+    "full_scene": 73,
+    "repeated_motif": 4,
+    "plain_wall": 6,
+    "plain_gradient": 15,
+    "stripes": 17,
+    "rays": 21,
+    "waves": 6,
+    "diamonds": 4
+   },
+   "by_category": {
+    "1": {
+     "concentric_rings": 8,
+     "repeated_motif": 3,
+     "full_scene": 2,
+     "rays": 11,
+     "waves": 2,
+     "stripes": 6,
+     "plain_gradient": 3
+    },
+    "4": {
+     "full_scene": 38,
+     "stripes": 1,
+     "plain_wall": 3
+    },
+    "3": {
+     "full_scene": 3,
+     "plain_wall": 2,
+     "plain_gradient": 5,
+     "rays": 7,
+     "stripes": 7,
+     "concentric_rings": 5,
+     "waves": 2,
+     "diamonds": 1
+    },
+    "2": {
+     "stripes": 3,
+     "plain_gradient": 7,
+     "concentric_rings": 1,
+     "diamonds": 3,
+     "rays": 3,
+     "waves": 2,
+     "repeated_motif": 1
+    },
+    "5": {
+     "full_scene": 30,
+     "plain_wall": 1
+    }
+   }
+  },
+  "backdrop.tone": {
+   "all": {
+    "tone_on_tone": 75,
+    "multicolor": 9,
+    "two_tone": 11,
+    "natural_scene": 65
+   },
+   "by_category": {
+    "1": {
+     "tone_on_tone": 32,
+     "natural_scene": 2,
+     "multicolor": 1
+    },
+    "4": {
+     "multicolor": 4,
+     "tone_on_tone": 4,
+     "natural_scene": 34
+    },
+    "3": {
+     "two_tone": 8,
+     "tone_on_tone": 22,
+     "multicolor": 1,
+     "natural_scene": 1
+    },
+    "2": {
+     "tone_on_tone": 17,
+     "two_tone": 3
+    },
+    "5": {
+     "natural_scene": 28,
+     "multicolor": 3
+    }
+   }
+  },
+  "backdrop.glow_behind_subject": {
+   "all": {
+    "soft": 39,
+    "none": 114,
+    "strong": 7
+   },
+   "by_category": {
+    "1": {
+     "soft": 10,
+     "none": 23,
+     "strong": 2
+    },
+    "4": {
+     "none": 40,
+     "soft": 2
+    },
+    "3": {
+     "none": 21,
+     "strong": 4,
+     "soft": 7
+    },
+    "2": {
+     "none": 5,
+     "soft": 15
+    },
+    "5": {
+     "none": 25,
+     "soft": 5,
+     "strong": 1
+    }
+   }
+  },
+  "backdrop.surface_kind": {
+   "all": {
+    "none": 47,
+    "plain_colored_surface": 22,
+    "real_material_surface": 40,
+    "environment_ground": 51
+   },
+   "by_category": {
+    "1": {
+     "none": 35
+    },
+    "4": {
+     "plain_colored_surface": 2,
+     "none": 6,
+     "environment_ground": 23,
+     "real_material_surface": 11
+    },
+    "3": {
+     "real_material_surface": 23,
+     "plain_colored_surface": 3,
+     "environment_ground": 6
+    },
+    "2": {
+     "none": 3,
+     "plain_colored_surface": 17
+    },
+    "5": {
+     "environment_ground": 22,
+     "real_material_surface": 6,
+     "none": 3
+    }
+   }
+  },
+  "backdrop.rendering_vs_subject": {
+   "all": {
+    "flatter_than_subject": 87,
+    "same_finish": 72,
+    "more_painterly_than_subject": 1
+   },
+   "by_category": {
+    "1": {
+     "flatter_than_subject": 33,
+     "same_finish": 2
+    },
+    "4": {
+     "same_finish": 32,
+     "flatter_than_subject": 10
+    },
+    "3": {
+     "same_finish": 11,
+     "flatter_than_subject": 21
+    },
+    "2": {
+     "flatter_than_subject": 19,
+     "same_finish": 1
+    },
+    "5": {
+     "same_finish": 26,
+     "flatter_than_subject": 4,
+     "more_painterly_than_subject": 1
+    }
+   }
+  },
+  "backdrop.game_motif": {
+   "all": {
+    "none": 158,
+    "house_logo": 2
+   },
+   "by_category": {
+    "1": {
+     "none": 35
+    },
+    "4": {
+     "none": 40,
+     "house_logo": 2
+    },
+    "3": {
+     "none": 32
+    },
+    "2": {
+     "none": 20
+    },
+    "5": {
+     "none": 31
     }
    }
   },
@@ -1795,7 +2030,7 @@
     }
    }
   },
-  "rhythm_staging.pose": {
+  "pose_rhythm.pose": {
    "all": {
     "upright_static": 92,
     "slight_tilt": 32,
@@ -1832,7 +2067,7 @@
     }
    }
   },
-  "rhythm_staging.symmetry": {
+  "pose_rhythm.symmetry": {
    "all": {
     "3": 24,
     "2": 74,
@@ -1871,7 +2106,7 @@
     }
    }
   },
-  "rhythm_staging.repetition": {
+  "pose_rhythm.repetition": {
    "all": {
     "2": 64,
     "4": 49,
@@ -1910,7 +2145,7 @@
     }
    }
   },
-  "rhythm_staging.energy": {
+  "pose_rhythm.energy": {
    "all": {
     "2": 88,
     "1": 8,
@@ -2058,6 +2293,30 @@
   }
  },
  "measured": {
+  "color_palette.hue_gap": {
+   "p10": 29.89,
+   "median": 114.4,
+   "p90": 167.72,
+   "by_category": {
+    "1": 142.4,
+    "4": 86.8,
+    "3": 115.35,
+    "2": 96.55,
+    "5": 88.3
+   }
+  },
+  "color_palette.shadow_chroma_kept": {
+   "p10": 0.683,
+   "median": 0.954,
+   "p90": 1.42,
+   "by_category": {
+    "1": 1.066,
+    "4": 0.903,
+    "3": 0.881,
+    "2": 0.953,
+    "5": 0.917
+   }
+  },
   "color_palette.chroma_subject": {
    "p10": 0.07,
    "median": 0.124,
@@ -2140,6 +2399,18 @@
     "3": 0.888,
     "2": 0.901,
     "5": 0.898
+   }
+  },
+  "value_contrast.lightness_p1": {
+   "p10": 0.229,
+   "median": 0.302,
+   "p90": 0.462,
+   "by_category": {
+    "1": 0.42,
+    "4": 0.299,
+    "3": 0.294,
+    "2": 0.318,
+    "5": 0.288
    }
   },
   "value_contrast.rms_contrast": {
@@ -2250,52 +2521,28 @@
     "5": 0.0
    }
   },
-  "composition_hierarchy.attention_on_subject": {
-   "p10": 0.66,
-   "median": 0.855,
-   "p90": 0.96,
+  "composition_hierarchy.box_width": {
+   "p10": 0.576,
+   "median": 0.826,
+   "p90": 0.944,
    "by_category": {
-    "1": 0.85,
-    "4": 0.802,
-    "3": 0.889,
-    "2": 0.911,
-    "5": 0.833
+    "1": 0.758,
+    "4": 0.826,
+    "3": 0.839,
+    "2": 0.781,
+    "5": 0.919
    }
   },
-  "composition_hierarchy.attention_peak_x": {
-   "p10": 0.428,
-   "median": 0.498,
-   "p90": 0.577,
+  "composition_hierarchy.box_height": {
+   "p10": 0.535,
+   "median": 0.756,
+   "p90": 0.887,
    "by_category": {
-    "1": 0.493,
-    "4": 0.504,
-    "3": 0.493,
-    "2": 0.512,
-    "5": 0.493
-   }
-  },
-  "composition_hierarchy.attention_peak_y": {
-   "p10": 0.308,
-   "median": 0.463,
-   "p90": 0.622,
-   "by_category": {
-    "1": 0.475,
-    "4": 0.487,
-    "3": 0.481,
-    "2": 0.475,
-    "5": 0.367
-   }
-  },
-  "composition_hierarchy.attention_spread": {
-   "p10": 0.196,
-   "median": 0.266,
-   "p90": 0.365,
-   "by_category": {
-    "1": 0.26,
-    "4": 0.302,
-    "3": 0.276,
-    "2": 0.247,
-    "5": 0.245
+    "1": 0.746,
+    "4": 0.788,
+    "3": 0.742,
+    "2": 0.756,
+    "5": 0.838
    }
   },
   "shape_proportions.solidity": {
@@ -2536,6 +2783,54 @@
     "3": 0.808,
     "2": 0.804,
     "5": 0.62
+   }
+  },
+  "attention.on_subject": {
+   "p10": 0.66,
+   "median": 0.855,
+   "p90": 0.96,
+   "by_category": {
+    "1": 0.85,
+    "4": 0.802,
+    "3": 0.889,
+    "2": 0.911,
+    "5": 0.833
+   }
+  },
+  "attention.peak_x": {
+   "p10": 0.428,
+   "median": 0.498,
+   "p90": 0.577,
+   "by_category": {
+    "1": 0.493,
+    "4": 0.504,
+    "3": 0.493,
+    "2": 0.512,
+    "5": 0.493
+   }
+  },
+  "attention.peak_y": {
+   "p10": 0.308,
+   "median": 0.463,
+   "p90": 0.622,
+   "by_category": {
+    "1": 0.475,
+    "4": 0.487,
+    "3": 0.481,
+    "2": 0.475,
+    "5": 0.367
+   }
+  },
+  "attention.spread": {
+   "p10": 0.196,
+   "median": 0.266,
+   "p90": 0.365,
+   "by_category": {
+    "1": 0.26,
+    "4": 0.302,
+    "3": 0.276,
+    "2": 0.247,
+    "5": 0.245
    }
   }
  }

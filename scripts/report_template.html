@@ -256,7 +256,7 @@ function fields() {
       .concat(Object.keys(D.stats.measured).filter(p => p.startsWith(title + '.')));
     return `<h2 style="margin-top:18px">${nice(title)}</h2><div class="fields">${paths.map(block).join('')}</div>`;
   };
-  document.getElementById('main').innerHTML = `<div class="filters"><label>Category<select id="fCat"><option value="">All categories</option>${['1', '2', '3', '4', '5'].map(c => `<option ${c === S.cat ? 'selected' : ''}>${c}</option>`).join('')}</select></label></div>` + Object.keys(D.form).map(section).join('');
+  document.getElementById('main').innerHTML = `<div class="filters"><label>Category<select id="fCat"><option value="">All categories</option>${['1', '2', '3', '4', '5'].map(c => `<option ${c === S.cat ? 'selected' : ''}>${c}</option>`).join('')}</select></label></div>` + [...Object.keys(D.form), ...measuredOnly()].map(section).join('');
   document.getElementById('fCat').onchange = e => { S.cat = e.target.value; fields(); };
 }
 
@@ -268,10 +268,12 @@ function strip(path, value) {
   return `<span class="strip" title="p10 ${s.p10}, median ${s.median}, p90 ${s.p90}"><i></i><u style="left:${at(s.p10)}%;width:${at(s.p90) - at(s.p10)}%"></u><s style="left:${at(value)}%"></s></span>`;
 }
 
+const measuredOnly = () => Object.keys(D.cards[0].measured).filter(k => typeof D.cards[0].measured[k] === 'object' && !D.form[k]);
+
 function formRows(card, other) {
   const rows = [];
   const raters = D.stats.raters;
-  for (const [section, fs] of Object.entries(D.form)) {
+  for (const [section, fs] of [...Object.entries(D.form), ...measuredOnly().map(k => [k, {}])]) {
     rows.push(`<tr><td colspan="${other ? 3 : 2}"><h3>${nice(section)}</h3></td></tr>`);
     for (const [name, f] of Object.entries(fs)) {
       const path = `${section}.${name}`, value = card.form[section][name], second = other && other.form[section][name];

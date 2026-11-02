@@ -21,8 +21,8 @@ Start with the [findings](analysis/SYNTHESIS.md). Open `analysis/report.html` fo
 |---|---|
 | `materials/` | Task documents and board images. Images are not in git. |
 | `sources/` | Board export and image manifests with hashes. |
-| `research/` | Research reports and the item-selection source pack. |
-| `analysis/` | Analysis outputs. |
+| `research/` | Research reports. |
+| `analysis/` | Analysis outputs. `knowledge.json` is what the generator reads. |
 | `scripts/` | Pipeline scripts. |
 | `PROCESS.md` | What was tried and why. Draft. |
 
@@ -32,13 +32,14 @@ Run from the project root. Each step skips finished work where it can.
 
 ```sh
 python scripts/map_sets.py
-python scripts/rate.py cards --rater codex    # also: claude, or an Ollama tag
+python scripts/rate.py cards --rater codex    # also: claude, qwen3.8:27b-q4_K_M, gemma4:31b
 python scripts/rate.py sets --rater codex
 python scripts/estimate.py masks depth attention marigold
 python scripts/embed.py
 python scripts/measure.py
-python scripts/cluster.py
 python scripts/summarize.py
+python scripts/cluster.py
+python scripts/knowledge.py
 python scripts/build_report.py
 ```
 
