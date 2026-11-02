@@ -1,0 +1,95 @@
+{
+ "subject_box": {
+  "x0": 0.05,
+  "y0": 0.0,
+  "x1": 0.95,
+  "y1": 0.85
+ },
+ "identity": {
+  "subject": "bumper car",
+  "object_class": "vehicle",
+  "real_world_scale": "vehicle_sized",
+  "subject_count": "one"
+ },
+ "staging": {
+  "art_category": "3",
+  "support": "on_surface",
+  "background_type": "flat_gradient",
+  "background_detail": 1,
+  "secondary_objects": "none"
+ },
+ "lighting_shading": {
+  "light_direction": "upper_left",
+  "shading_model": "soft_gradient",
+  "shadow_softness": 4,
+  "ground_shadow": "contact",
+  "highlight_style": "both",
+  "rim_light": "subtle",
+  "note": "Soft top-left key light with gentle contact shadow and specular highlights."
+ },
+ "value_contrast": {
+  "value_key": "mid",
+  "contrast": 3,
+  "subject_separation": 5,
+  "darkest_accent": "object_parts",
+  "note": "Dark bumper and seat provide strong value contrast against bright green body."
+ },
+ "color_palette": {
+  "harmony": "complementary",
+  "saturation": 4,
+  "temperature": "warm_cool_mix",
+  "subject_vs_background": "hue_contrast",
+  "accent_color": "one",
+  "note": "Vibrant green car contrasts sharply with warm orange background."
+ },
+ "composition_hierarchy": {
+  "placement": "center",
+  "scale_in_frame": 4,
+  "margin": "medium",
+  "main_axis": "horizontal",
+  "focal_clarity": 5,
+  "note": "Single centered subject dominates the frame with clear focal point."
+ },
+ "shape_proportions": {
+  "form_language": "round_soft",
+  "exaggeration": 4,
+  "chunkiness": 5,
+  "silhouette_clarity": 5,
+  "simplification": 4,
+  "note": "Chunky, rounded toy-like proportions with instantly readable silhouette."
+ },
+ "viewpoint_depth": {
+  "camera_height": "slightly_above",
+  "object_angle": "three_quarter",
+  "perspective": 3,
+  "depth_layers": "2",
+  "background_blur": "none",
+  "note": "Slightly elevated three-quarter view showing clear separation from background."
+ },
+ "edges_linework": {
+  "outline": "none",
+  "edge_softness": 3,
+  "interior_lines": 2,
+  "note": "Clean edges defined by shading rather than drawn outlines."
+ },
+ "surface_finish": {
+  "render_look": "glossy_3d",
+  "gloss": 4,
+  "texture_amount": 1,
+  "material_realism": 3,
+  "note": "Smooth, glossy plastic-like finish typical of stylized 3D mobile art."
+ },
+ "rhythm_staging": {
+  "pose": "upright_static",
+  "symmetry": 3,
+  "repetition": 2,
+  "energy": 3,
+  "note": "Static presentation with balanced, slightly asymmetric composition."
+ },
+ "idea": {
+  "recognizability": 5,
+  "recognition_cue": "green bumper car with steering wheel and pole",
+  "theme_role": "vehicle",
+  "humor": 3
+ }
+}

@@ -12,8 +12,9 @@ from skimage import filters, measure, morphology
 PAD = 0.015
 
 
-def rated_box(record, size):
-    """The rater's box in pixels. Some raters answer on a 0-1000 scale."""
+def rated_boxes(record, size):
+    """Every rater's box in pixels. Some raters answer on a 0-1000 scale."""
+    boxes = []
     for rater in ("codex", "gemma4", "qwen3.8"):
         path = ANALYSIS / "ratings" / rater / f"{record['id']}.json"
         if path.exists():
@@ -22,9 +23,9 @@ def rated_box(record, size):
             if max(values) > 1:
                 values = [v / 1000 for v in values]
             width, height = size
-            return [max(0, (values[0] - PAD) * width), max(0, (values[1] - PAD) * height),
-                    min(width, (values[2] + PAD) * width), min(height, (values[3] + PAD) * height)]
-    return None
+            boxes.append([max(0, (values[0] - PAD) * width), max(0, (values[1] - PAD) * height),
+                          min(width, (values[2] + PAD) * width), min(height, (values[3] + PAD) * height)])
+    return boxes
 
 
 def depth_box(depth):
@@ -46,7 +47,17 @@ def separation(mask, depth):
     if not 0.03 < share < 0.85:
         return -1.0
     ring = morphology.dilation(mask, morphology.disk(10)) & ~mask
-    return float(depth[mask].mean() - depth[ring].mean()) if ring.any() else -1.0
+    if not ring.any():
+        return -1.0
+    frame_contact = np.concatenate((mask[0], mask[-1], mask[:, 0], mask[:, -1])).mean()
+    return float(depth[mask].mean() - depth[ring].mean()) - 0.6 * float(frame_contact)
+
+
+def clean(mask):
+    """Drop specks and fill small holes."""
+    labels = measure.label(mask)
+    keep = [r.label for r in measure.regionprops(labels) if r.area >= 0.03 * mask.sum()]
+    return morphology.remove_small_holes(np.isin(labels, keep), max_size=int(0.08 * mask.size))
 
 
 def write_masks(records, device):
@@ -60,21 +71,24 @@ def write_masks(records, device):
     for record in records:
         out = folder / f"{record['id']}.png"
         image = Image.open(ROOT / record["file"]).convert("RGB")
-        rated = rated_box(record, image.size)
-        if out.exists() or rated is None:
+        rated = rated_boxes(record, image.size)
+        if out.exists() or not rated:
             continue
         depth = np.asarray(Image.open(DERIVED / "depth" / f"{record['id']}.png"), dtype=np.float32) / 65535
         from_depth = depth_box(depth)
-        boxes = [rated, from_depth, union(rated, from_depth)]
+        boxes = rated + [from_depth] + [union(box, from_depth) for box in rated]
+        boxes = [box for box in boxes if box[2] > box[0] and box[3] > box[1]]
         inputs = processor(images=image, input_boxes=[boxes], return_tensors="pt").to(device)
         with torch.inference_mode():
             output = model(**inputs, multimask_output=True)
         masks = processor.post_process_masks(output.pred_masks.cpu(), inputs["original_sizes"])[0].numpy() > 0
         confidence = output.iou_scores.squeeze(0).cpu().numpy()
-        candidates = [(separation(masks[b, m], depth) + 0.25 * confidence[b, m], b, m)
-                      for b in range(masks.shape[0]) for m in range(masks.shape[1])]
-        _, box_index, mask_index = max(candidates)
-        Image.fromarray((masks[box_index, mask_index] * 255).astype(np.uint8)).save(out)
+        options = [(masks[b, m], 0.25 * confidence[b, m])
+                   for b in range(masks.shape[0]) for m in range(masks.shape[1])]
+        options += [(~mask, 0.0) for mask, _ in options]  # SAM sometimes outlines the background
+        options.append((depth > filters.threshold_otsu(depth), 0.0))
+        best = max(options, key=lambda option: separation(option[0], depth) + option[1])[0]
+        Image.fromarray((clean(best) * 255).astype(np.uint8)).save(out)
 
 
 def write_depth(records, device):
@@ -114,6 +128,7 @@ def write_marigold(records, device):
             image = Image.open(ROOT / record["file"]).convert("RGB")
             result = normals(image, num_inference_steps=4, ensemble_size=1, output_type="np").prediction
             np.save(out, result[0].astype(np.float16))
+            Image.fromarray(((result[0] + 1) * 127.5).astype(np.uint8)).save(out.with_suffix(".png"))
     del normals
     torch.cuda.empty_cache()
 

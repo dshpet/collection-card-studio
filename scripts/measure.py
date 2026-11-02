@@ -113,6 +113,7 @@ def measure_card(record):
         lighting["shading_range"] = round(float(high - low), 3)
 
     separation = depth[mask].mean() - depth[outer_ring].mean() if outer_ring.any() else 0.0
+    frame_contact = float(np.concatenate((mask[0], mask[-1], mask[:, 0], mask[:, -1])).mean())
     return {
         "color_palette": {
             "palette_subject": palette(rgb[mask], lab[mask], 5),
@@ -163,7 +164,7 @@ def measure_card(record):
             "background_depth_range": round(float(
                 np.percentile(depth[background], 95) - np.percentile(depth[background], 5)), 3),
         },
-        "mask_separation": round(float(separation), 3),
+        "mask_quality": round(float(separation) - frame_contact, 3),
     }
 
 

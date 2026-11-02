@@ -1,0 +1,95 @@
+{
+ "subject_box": {
+  "x0": 0.03,
+  "y0": 0.154,
+  "x1": 0.935,
+  "y1": 0.863
+ },
+ "identity": {
+  "subject": "Double-decker bus",
+  "object_class": "vehicle",
+  "real_world_scale": "vehicle_sized",
+  "subject_count": "one"
+ },
+ "staging": {
+  "art_category": "4",
+  "support": "in_environment",
+  "background_type": "exterior_scene",
+  "background_detail": 3,
+  "secondary_objects": "few"
+ },
+ "lighting_shading": {
+  "light_direction": "upper_left",
+  "shading_model": "soft_gradient",
+  "shadow_softness": 3,
+  "ground_shadow": "cast",
+  "highlight_style": "both",
+  "rim_light": "subtle",
+  "note": "Bright upper edges contrast with cool shadows beneath the bus."
+ },
+ "value_contrast": {
+  "value_key": "mid",
+  "contrast": 4,
+  "subject_separation": 5,
+  "darkest_accent": "object_parts",
+  "note": "Dark window frames and tires anchor the bright red body."
+ },
+ "color_palette": {
+  "harmony": "complementary",
+  "saturation": 5,
+  "temperature": "warm_cool_mix",
+  "subject_vs_background": "hue_contrast",
+  "accent_color": "several",
+  "note": "Vivid red contrasts with cyan sky and yellow trim."
+ },
+ "composition_hierarchy": {
+  "placement": "center",
+  "scale_in_frame": 5,
+  "margin": "tight",
+  "main_axis": "horizontal",
+  "focal_clarity": 5,
+  "note": "Large bus dominates, with buildings confined to the side margins."
+ },
+ "shape_proportions": {
+  "form_language": "round_soft",
+  "exaggeration": 3,
+  "chunkiness": 4,
+  "silhouette_clarity": 5,
+  "simplification": 3,
+  "note": "Rounded body, thick frames, and small wheels create toy-like proportions."
+ },
+ "viewpoint_depth": {
+  "camera_height": "below",
+  "object_angle": "three_quarter",
+  "perspective": 4,
+  "depth_layers": "4_or_more",
+  "background_blur": "slight",
+  "note": "Low viewpoint emphasizes height; the long side recedes strongly."
+ },
+ "edges_linework": {
+  "outline": "selective",
+  "edge_softness": 2,
+  "interior_lines": 2,
+  "note": "Dark window borders define structure without a continuous outer outline."
+ },
+ "surface_finish": {
+  "render_look": "soft_3d",
+  "gloss": 3,
+  "texture_amount": 2,
+  "material_realism": 3,
+  "note": "Smooth body panels carry soft highlights; roadway has fine grain."
+ },
+ "rhythm_staging": {
+  "pose": "upright_static",
+  "symmetry": 2,
+  "repetition": 4,
+  "energy": 2,
+  "note": "Repeated windows, seats, and rail posts organize the stationary vehicle."
+ },
+ "idea": {
+  "recognizability": 5,
+  "recognition_cue": "Red body with two stacked passenger decks",
+  "theme_role": "vehicle",
+  "humor": 1
+ }
+}

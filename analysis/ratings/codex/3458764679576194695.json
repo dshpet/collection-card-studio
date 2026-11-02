@@ -1,0 +1,95 @@
+{
+ "subject_box": {
+  "x0": 0.037,
+  "y0": 0.246,
+  "x1": 0.972,
+  "y1": 0.831
+ },
+ "identity": {
+  "subject": "Yellow taxi",
+  "object_class": "vehicle",
+  "real_world_scale": "vehicle_sized",
+  "subject_count": "one"
+ },
+ "staging": {
+  "art_category": "3",
+  "support": "on_surface",
+  "background_type": "rays",
+  "background_detail": 2,
+  "secondary_objects": "none"
+ },
+ "lighting_shading": {
+  "light_direction": "upper_left",
+  "shading_model": "soft_gradient",
+  "shadow_softness": 3,
+  "ground_shadow": "cast",
+  "highlight_style": "both",
+  "rim_light": "none",
+  "note": "Broad highlights brighten the hood; shadows collect beneath the chassis."
+ },
+ "value_contrast": {
+  "value_key": "high",
+  "contrast": 4,
+  "subject_separation": 5,
+  "darkest_accent": "object_parts",
+  "note": "Dark tires and grille anchor the bright yellow body."
+ },
+ "color_palette": {
+  "harmony": "complementary",
+  "saturation": 5,
+  "temperature": "warm_cool_mix",
+  "subject_vs_background": "both",
+  "accent_color": "several",
+  "note": "Golden yellow body contrasts strongly with cyan and blue rays."
+ },
+ "composition_hierarchy": {
+  "placement": "center",
+  "scale_in_frame": 4,
+  "margin": "tight",
+  "main_axis": "horizontal",
+  "focal_clarity": 5,
+  "note": "Taxi dominates the frame, with rays reinforcing its central importance."
+ },
+ "shape_proportions": {
+  "form_language": "round_soft",
+  "exaggeration": 4,
+  "chunkiness": 4,
+  "silhouette_clarity": 5,
+  "simplification": 3,
+  "note": "Bulging hood, rounded cabin, and oversized headlights create toy-like proportions."
+ },
+ "viewpoint_depth": {
+  "camera_height": "slightly_above",
+  "object_angle": "three_quarter",
+  "perspective": 3,
+  "depth_layers": "3",
+  "background_blur": "none",
+  "note": "Visible hood, roof, and side establish clear three-quarter volume."
+ },
+ "edges_linework": {
+  "outline": "selective",
+  "edge_softness": 2,
+  "interior_lines": 2,
+  "note": "Dark window trim and fine door seams define selected boundaries."
+ },
+ "surface_finish": {
+  "render_look": "glossy_3d",
+  "gloss": 4,
+  "texture_amount": 1,
+  "material_realism": 3,
+  "note": "Smooth paint, reflective windows, and rubber tires have simplified material cues."
+ },
+ "rhythm_staging": {
+  "pose": "upright_static",
+  "symmetry": 2,
+  "repetition": 3,
+  "energy": 3,
+  "note": "Repeated checks, grille bars, and rays enliven the stationary taxi."
+ },
+ "idea": {
+  "recognizability": 5,
+  "recognition_cue": "Yellow body, roof sign, and checker markings",
+  "theme_role": "vehicle",
+  "humor": 2
+ }
+}

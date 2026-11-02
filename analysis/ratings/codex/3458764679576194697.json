@@ -1,0 +1,95 @@
+{
+ "subject_box": {
+  "x0": 0.051,
+  "y0": 0.123,
+  "x1": 1.0,
+  "y1": 0.823
+ },
+ "identity": {
+  "subject": "Passenger jet",
+  "object_class": "vehicle",
+  "real_world_scale": "vehicle_sized",
+  "subject_count": "one"
+ },
+ "staging": {
+  "art_category": "4",
+  "support": "in_environment",
+  "background_type": "exterior_scene",
+  "background_detail": 3,
+  "secondary_objects": "many"
+ },
+ "lighting_shading": {
+  "light_direction": "upper_left",
+  "shading_model": "soft_gradient",
+  "shadow_softness": 4,
+  "ground_shadow": "not_applicable",
+  "highlight_style": "both",
+  "rim_light": "subtle",
+  "note": "Bright upper surfaces contrast with softly shaded blue undersides."
+ },
+ "value_contrast": {
+  "value_key": "high",
+  "contrast": 4,
+  "subject_separation": 4,
+  "darkest_accent": "object_parts",
+  "note": "Dark engine interiors and cockpit glazing anchor the pale fuselage."
+ },
+ "color_palette": {
+  "harmony": "analogous",
+  "saturation": 4,
+  "temperature": "cool",
+  "subject_vs_background": "value_contrast",
+  "accent_color": "none",
+  "note": "Cyan sky, cobalt undersides, and lavender shadows surround white surfaces."
+ },
+ "composition_hierarchy": {
+  "placement": "center",
+  "scale_in_frame": 5,
+  "margin": "cropped",
+  "main_axis": "diagonal",
+  "focal_clarity": 5,
+  "note": "Nose leads lower left; right wing extends beyond the frame."
+ },
+ "shape_proportions": {
+  "form_language": "round_soft",
+  "exaggeration": 3,
+  "chunkiness": 4,
+  "silhouette_clarity": 5,
+  "simplification": 3,
+  "note": "Bulbous nose, thick wings, and oversized engines soften aircraft geometry."
+ },
+ "viewpoint_depth": {
+  "camera_height": "slightly_above",
+  "object_angle": "three_quarter",
+  "perspective": 4,
+  "depth_layers": "4_or_more",
+  "background_blur": "slight",
+  "note": "Near engine enlarges prominently against overlapping distant cloud banks."
+ },
+ "edges_linework": {
+  "outline": "selective",
+  "edge_softness": 2,
+  "interior_lines": 2,
+  "note": "Thin colored seams define doors, windows, and nose panels."
+ },
+ "surface_finish": {
+  "render_look": "glossy_3d",
+  "gloss": 4,
+  "texture_amount": 1,
+  "material_realism": 3,
+  "note": "Smooth fuselage and reflective glazing have clean, polished finishes."
+ },
+ "rhythm_staging": {
+  "pose": "dynamic",
+  "symmetry": 3,
+  "repetition": 3,
+  "energy": 4,
+  "note": "Diagonal flight and receding windows create forward movement."
+ },
+ "idea": {
+  "recognizability": 5,
+  "recognition_cue": "Swept wings, twin engines, cockpit, and tail",
+  "theme_role": "vehicle",
+  "humor": 1
+ }
+}

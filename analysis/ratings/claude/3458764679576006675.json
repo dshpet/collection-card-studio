@@ -1,0 +1,95 @@
+{
+ "subject_box": {
+  "x0": 0.06,
+  "y0": 0.19,
+  "x1": 0.97,
+  "y1": 0.78
+ },
+ "identity": {
+  "subject": "tennis racket and ball",
+  "object_class": "sports_gear",
+  "real_world_scale": "handheld",
+  "subject_count": "pair"
+ },
+ "staging": {
+  "art_category": "3",
+  "support": "on_surface",
+  "background_type": "simple_wall",
+  "background_detail": 2,
+  "secondary_objects": "one"
+ },
+ "lighting_shading": {
+  "light_direction": "upper_left",
+  "shading_model": "soft_gradient",
+  "shadow_softness": 3,
+  "ground_shadow": "cast",
+  "highlight_style": "soft_bloom",
+  "rim_light": "subtle",
+  "note": "Soft shadows pool under racket and ball on green court."
+ },
+ "value_contrast": {
+  "value_key": "mid",
+  "contrast": 3,
+  "subject_separation": 4,
+  "darkest_accent": "object_parts",
+  "note": "Black grip anchors the darkest value; blue pops from green."
+ },
+ "color_palette": {
+  "harmony": "analogous",
+  "saturation": 4,
+  "temperature": "cool",
+  "subject_vs_background": "both",
+  "accent_color": "one",
+  "note": "Yellow-green ball is the single warm accent against blue and green."
+ },
+ "composition_hierarchy": {
+  "placement": "center",
+  "scale_in_frame": 4,
+  "margin": "tight",
+  "main_axis": "diagonal",
+  "focal_clarity": 4,
+  "note": "Racket sweeps diagonally; ball sits as secondary focal point."
+ },
+ "shape_proportions": {
+  "form_language": "round_soft",
+  "exaggeration": 3,
+  "chunkiness": 4,
+  "silhouette_clarity": 5,
+  "simplification": 4,
+  "note": "Thick toy-like frame and simplified grid strings read instantly."
+ },
+ "viewpoint_depth": {
+  "camera_height": "high_above",
+  "object_angle": "three_quarter",
+  "perspective": 3,
+  "depth_layers": "2",
+  "background_blur": "none",
+  "note": "Overhead angled view of court with line crossing diagonally."
+ },
+ "edges_linework": {
+  "outline": "none",
+  "edge_softness": 3,
+  "interior_lines": 2,
+  "note": "Form defined by shading, not outlines; strings and grip ridges only."
+ },
+ "surface_finish": {
+  "render_look": "soft_3d",
+  "gloss": 3,
+  "texture_amount": 2,
+  "material_realism": 3,
+  "note": "Smooth plastic-like racket with lightly fuzzy ball texture."
+ },
+ "rhythm_staging": {
+  "pose": "strong_tilt",
+  "symmetry": 2,
+  "repetition": 3,
+  "energy": 3,
+  "note": "Diagonal racket and court line create parallel directional rhythm."
+ },
+ "idea": {
+  "recognizability": 5,
+  "recognition_cue": "Blue racket with strings, yellow ball on court",
+  "theme_role": "equipment",
+  "humor": 1
+ }
+}

@@ -48,6 +48,19 @@ def ask_codex(prompt, image, schema):
         return json.loads((folder / "out.json").read_text())
 
 
+def ask_claude(prompt, image, schema):
+    command = ["claude", "-p", "--setting-sources", "", "--strict-mcp-config", "--disable-slash-commands",
+               "--model", "claude-sonnet-5-5", "--output-format", "json",
+               "--json-schema", json.dumps(schema), "--allowedTools", "Read",
+               "--add-dir", str(Path(image).parent), "--", f"Read the image {image}, then answer.\n{prompt}"]
+    with tempfile.TemporaryDirectory() as folder:
+        done = subprocess.run(command, capture_output=True, text=True, timeout=600,
+                              stdin=subprocess.DEVNULL, cwd=folder)
+    if done.returncode:
+        raise RuntimeError((done.stdout or done.stderr)[-400:])
+    return json.loads(done.stdout)["structured_output"]
+
+
 def ask_ollama(model, prompt, image, schema):
     payload = {"model": model, "stream": False, "format": schema, "think": False,
                "options": {"temperature": 0, "num_ctx": 16384},
@@ -66,6 +79,8 @@ def run_one(rater, prompt, image, schema, out):
         try:
             if rater == "codex":
                 result = ask_codex(prompt, image, schema)
+            elif rater == "claude":
+                result = ask_claude(prompt, image, schema)
             else:
                 result = ask_ollama(rater, prompt, image, schema)
             save_json(out, result)
@@ -88,12 +103,12 @@ def shrunk(record, folder):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("target", choices=("cards", "sets"))
-    parser.add_argument("--rater", default="codex", help="codex or an Ollama model tag")
+    parser.add_argument("--rater", default="codex", help="codex, claude or an Ollama model tag")
     parser.add_argument("--limit", type=int)
     parser.add_argument("--workers", type=int, default=6)
     args = parser.parse_args()
 
-    name = "codex" if args.rater == "codex" else args.rater.split(":")[0]
+    name = args.rater.split(":")[0]
     folder = ANALYSIS / "ratings" / name
     records = cards() if args.target == "cards" else manifest("collection_examples")
     records = records[:args.limit]

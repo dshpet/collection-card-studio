@@ -1,0 +1,95 @@
+{
+ "subject_box": {
+  "x0": 0.1,
+  "y0": 0.1,
+  "x1": 0.9,
+  "y1": 0.9
+ },
+ "identity": {
+  "subject": "sailing ship",
+  "object_class": "vehicle",
+  "real_world_scale": "building_or_larger",
+  "subject_count": "one"
+ },
+ "staging": {
+  "art_category": "1",
+  "support": "floating",
+  "background_type": "rays",
+  "background_detail": 2,
+  "secondary_objects": "none"
+ },
+ "lighting_shading": {
+  "light_direction": "upper_left",
+  "shading_model": "soft_gradient",
+  "shadow_softness": 4,
+  "ground_shadow": "not_applicable",
+  "highlight_style": "soft_bloom",
+  "rim_light": "subtle",
+  "note": "Soft, even lighting with gentle highlights on sails and hull."
+ },
+ "value_contrast": {
+  "value_key": "mid",
+  "contrast": 3,
+  "subject_separation": 4,
+  "darkest_accent": "shadows",
+  "note": "Clear separation via value difference between ship and background."
+ },
+ "color_palette": {
+  "harmony": "complementary",
+  "saturation": 4,
+  "temperature": "warm_cool_mix",
+  "subject_vs_background": "hue_contrast",
+  "accent_color": "one",
+  "note": "Warm wood tones contrast with cool blue water and purple sky."
+ },
+ "composition_hierarchy": {
+  "placement": "center",
+  "scale_in_frame": 4,
+  "margin": "medium",
+  "main_axis": "vertical",
+  "focal_clarity": 5,
+  "note": "Ship is the sole focus, centered and large in frame."
+ },
+ "shape_proportions": {
+  "form_language": "round_soft",
+  "exaggeration": 3,
+  "chunkiness": 4,
+  "silhouette_clarity": 5,
+  "simplification": 4,
+  "note": "Chunky, toy-like proportions with a very clear, readable silhouette."
+ },
+ "viewpoint_depth": {
+  "camera_height": "eye_level",
+  "object_angle": "three_quarter",
+  "perspective": 2,
+  "depth_layers": "2",
+  "background_blur": "none",
+  "note": "Simple three-quarter view with minimal perspective depth."
+ },
+ "edges_linework": {
+  "outline": "none",
+  "edge_softness": 2,
+  "interior_lines": 3,
+  "note": "Clean edges defined by color contrast rather than dark outlines."
+ },
+ "surface_finish": {
+  "render_look": "soft_3d",
+  "gloss": 3,
+  "texture_amount": 2,
+  "material_realism": 2,
+  "note": "Smooth, stylized surfaces with soft gradients, no realistic texture."
+ },
+ "rhythm_staging": {
+  "pose": "upright_static",
+  "symmetry": 3,
+  "repetition": 3,
+  "energy": 2,
+  "note": "Static pose with calm energy; repeated sails create rhythm."
+ },
+ "idea": {
+  "recognizability": 5,
+  "recognition_cue": "masts, sails, hull, water",
+  "theme_role": "vehicle",
+  "humor": 2
+ }
+}

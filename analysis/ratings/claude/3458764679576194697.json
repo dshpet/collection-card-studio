@@ -1,0 +1,95 @@
+{
+ "subject_box": {
+  "x0": 0.05,
+  "y0": 0.12,
+  "x1": 1,
+  "y1": 0.85
+ },
+ "identity": {
+  "subject": "passenger airplane",
+  "object_class": "vehicle",
+  "real_world_scale": "building_or_larger",
+  "subject_count": "one"
+ },
+ "staging": {
+  "art_category": "1",
+  "support": "floating",
+  "background_type": "exterior_scene",
+  "background_detail": 2,
+  "secondary_objects": "few"
+ },
+ "lighting_shading": {
+  "light_direction": "upper_left",
+  "shading_model": "soft_gradient",
+  "shadow_softness": 4,
+  "ground_shadow": "not_applicable",
+  "highlight_style": "both",
+  "rim_light": "subtle",
+  "note": "Soft glossy shading with blue underside shadows on white fuselage"
+ },
+ "value_contrast": {
+  "value_key": "high",
+  "contrast": 3,
+  "subject_separation": 4,
+  "darkest_accent": "object_parts",
+  "note": "White plane pops against saturated blue sky; dark engine intakes"
+ },
+ "color_palette": {
+  "harmony": "analogous",
+  "saturation": 4,
+  "temperature": "cool",
+  "subject_vs_background": "both",
+  "accent_color": "none",
+  "note": "Blue and white dominate; clean, fresh sky palette"
+ },
+ "composition_hierarchy": {
+  "placement": "center",
+  "scale_in_frame": 5,
+  "margin": "tight",
+  "main_axis": "diagonal",
+  "focal_clarity": 5,
+  "note": "Large plane fills frame diagonally, clouds frame it"
+ },
+ "shape_proportions": {
+  "form_language": "round_soft",
+  "exaggeration": 3,
+  "chunkiness": 4,
+  "silhouette_clarity": 5,
+  "simplification": 4,
+  "note": "Plump fuselage and oversized engines give toy-like friendliness"
+ },
+ "viewpoint_depth": {
+  "camera_height": "slightly_above",
+  "object_angle": "three_quarter",
+  "perspective": 3,
+  "depth_layers": "3",
+  "background_blur": "none",
+  "note": "Foreshortened nose toward viewer, clouds layered front and back"
+ },
+ "edges_linework": {
+  "outline": "none",
+  "edge_softness": 3,
+  "interior_lines": 2,
+  "note": "Form defined by shading, only panel seams as lines"
+ },
+ "surface_finish": {
+  "render_look": "glossy_3d",
+  "gloss": 4,
+  "texture_amount": 1,
+  "material_realism": 2,
+  "note": "Smooth glossy metal and glass, fluffy painted clouds"
+ },
+ "rhythm_staging": {
+  "pose": "dynamic",
+  "symmetry": 2,
+  "repetition": 2,
+  "energy": 4,
+  "note": "Banking plane suggests flight; windows repeat along fuselage"
+ },
+ "idea": {
+  "recognizability": 5,
+  "recognition_cue": "White-blue airliner with engines against sky",
+  "theme_role": "vehicle",
+  "humor": 1
+ }
+}

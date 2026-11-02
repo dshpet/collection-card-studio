@@ -1,0 +1,95 @@
+{
+ "subject_box": {
+  "x0": 0.05,
+  "y0": 0.3,
+  "x1": 0.95,
+  "y1": 0.85
+ },
+ "identity": {
+  "subject": "caravan",
+  "object_class": "vehicle",
+  "real_world_scale": "vehicle_sized",
+  "subject_count": "one"
+ },
+ "staging": {
+  "art_category": "3",
+  "support": "on_surface",
+  "background_type": "flat_gradient",
+  "background_detail": 1,
+  "secondary_objects": "none"
+ },
+ "lighting_shading": {
+  "light_direction": "upper_left",
+  "shading_model": "soft_gradient",
+  "shadow_softness": 4,
+  "ground_shadow": "contact",
+  "highlight_style": "soft_bloom",
+  "rim_light": "subtle",
+  "note": "Soft, diffuse lighting creates a gentle, toy-like appearance."
+ },
+ "value_contrast": {
+  "value_key": "mid",
+  "contrast": 3,
+  "subject_separation": 5,
+  "darkest_accent": "shadows",
+  "note": "Light subject stands out clearly against the darker background."
+ },
+ "color_palette": {
+  "harmony": "complementary",
+  "saturation": 4,
+  "temperature": "warm_cool_mix",
+  "subject_vs_background": "hue_contrast",
+  "accent_color": "one",
+  "note": "Warm cream and orange subject contrasts with cool purple background."
+ },
+ "composition_hierarchy": {
+  "placement": "center",
+  "scale_in_frame": 4,
+  "margin": "medium",
+  "main_axis": "horizontal",
+  "focal_clarity": 5,
+  "note": "Single, centrally placed subject dominates the frame."
+ },
+ "shape_proportions": {
+  "form_language": "round_soft",
+  "exaggeration": 4,
+  "chunkiness": 5,
+  "silhouette_clarity": 5,
+  "simplification": 4,
+  "note": "Chunky, rounded forms create a friendly, toy-like silhouette."
+ },
+ "viewpoint_depth": {
+  "camera_height": "eye_level",
+  "object_angle": "three_quarter",
+  "perspective": 2,
+  "depth_layers": "2",
+  "background_blur": "none",
+  "note": "Simple three-quarter view with minimal perspective distortion."
+ },
+ "edges_linework": {
+  "outline": "none",
+  "edge_softness": 4,
+  "interior_lines": 2,
+  "note": "Clean, soft edges defined by shading rather than lines."
+ },
+ "surface_finish": {
+  "render_look": "clay_toy",
+  "gloss": 2,
+  "texture_amount": 1,
+  "material_realism": 2,
+  "note": "Matte, smooth surfaces resemble a plastic or clay toy."
+ },
+ "rhythm_staging": {
+  "pose": "upright_static",
+  "symmetry": 3,
+  "repetition": 2,
+  "energy": 1,
+  "note": "Static, stable pose conveys a calm and peaceful mood."
+ },
+ "idea": {
+  "recognizability": 5,
+  "recognition_cue": "Rounded caravan shape with windows and wheels",
+  "theme_role": "vehicle",
+  "humor": 2
+ }
+}

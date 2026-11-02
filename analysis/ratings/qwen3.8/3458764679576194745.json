@@ -1,0 +1,95 @@
+{
+ "subject_box": {
+  "x0": 0.05,
+  "y0": 0.1,
+  "x1": 0.95,
+  "y1": 0.85
+ },
+ "identity": {
+  "subject": "yellow submarine",
+  "object_class": "vehicle",
+  "real_world_scale": "vehicle_sized",
+  "subject_count": "one"
+ },
+ "staging": {
+  "art_category": "1",
+  "support": "floating",
+  "background_type": "rays",
+  "background_detail": 2,
+  "secondary_objects": "none"
+ },
+ "lighting_shading": {
+  "light_direction": "upper_left",
+  "shading_model": "soft_gradient",
+  "shadow_softness": 4,
+  "ground_shadow": "none",
+  "highlight_style": "both",
+  "rim_light": "subtle",
+  "note": "Soft top-left key light with crisp specular highlights on the hull."
+ },
+ "value_contrast": {
+  "value_key": "mid",
+  "contrast": 4,
+  "subject_separation": 5,
+  "darkest_accent": "shadows",
+  "note": "Bright yellow hull pops sharply against the dark green background."
+ },
+ "color_palette": {
+  "harmony": "complementary",
+  "saturation": 5,
+  "temperature": "warm_cool_mix",
+  "subject_vs_background": "both",
+  "accent_color": "several",
+  "note": "Vibrant yellow and green complementary scheme with cyan porthole accents."
+ },
+ "composition_hierarchy": {
+  "placement": "center",
+  "scale_in_frame": 4,
+  "margin": "medium",
+  "main_axis": "diagonal",
+  "focal_clarity": 5,
+  "note": "Single central subject with a clear diagonal orientation."
+ },
+ "shape_proportions": {
+  "form_language": "round_soft",
+  "exaggeration": 4,
+  "chunkiness": 5,
+  "silhouette_clarity": 5,
+  "simplification": 4,
+  "note": "Chunky, toy-like proportions with a highly readable silhouette."
+ },
+ "viewpoint_depth": {
+  "camera_height": "eye_level",
+  "object_angle": "three_quarter",
+  "perspective": 3,
+  "depth_layers": "2",
+  "background_blur": "none",
+  "note": "Three-quarter view showing the front and side of the vessel."
+ },
+ "edges_linework": {
+  "outline": "none",
+  "edge_softness": 2,
+  "interior_lines": 2,
+  "note": "Clean edges defined by shading rather than drawn outlines."
+ },
+ "surface_finish": {
+  "render_look": "glossy_3d",
+  "gloss": 4,
+  "texture_amount": 1,
+  "material_realism": 3,
+  "note": "Smooth, glossy plastic finish typical of stylized 3D mobile art."
+ },
+ "rhythm_staging": {
+  "pose": "slight_tilt",
+  "symmetry": 2,
+  "repetition": 3,
+  "energy": 3,
+  "note": "Slight upward tilt and repeated portholes create a balanced, playful feel."
+ },
+ "idea": {
+  "recognizability": 5,
+  "recognition_cue": "Yellow hull, portholes, propeller, and periscope",
+  "theme_role": "vehicle",
+  "humor": 3
+ }
+}

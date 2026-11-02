@@ -1,0 +1,95 @@
+{
+ "subject_box": {
+  "x0": 0.07,
+  "y0": 0.3,
+  "x1": 0.93,
+  "y1": 0.88
+ },
+ "identity": {
+  "subject": "Retro camper trailer",
+  "object_class": "vehicle",
+  "real_world_scale": "vehicle_sized",
+  "subject_count": "one"
+ },
+ "staging": {
+  "art_category": "3",
+  "support": "on_surface",
+  "background_type": "rays",
+  "background_detail": 2,
+  "secondary_objects": "none"
+ },
+ "lighting_shading": {
+  "light_direction": "upper_left",
+  "shading_model": "soft_gradient",
+  "shadow_softness": 4,
+  "ground_shadow": "contact",
+  "highlight_style": "soft_bloom",
+  "rim_light": "subtle",
+  "note": "Soft warm light with gentle gradients on rounded caravan body."
+ },
+ "value_contrast": {
+  "value_key": "mid",
+  "contrast": 3,
+  "subject_separation": 4,
+  "darkest_accent": "object_parts",
+  "note": "Cream trailer pops against purple sky; dark wheel and windows anchor."
+ },
+ "color_palette": {
+  "harmony": "complementary",
+  "saturation": 4,
+  "temperature": "warm_cool_mix",
+  "subject_vs_background": "both",
+  "accent_color": "one",
+  "note": "Purple backdrop against green grass; orange stripe is the accent."
+ },
+ "composition_hierarchy": {
+  "placement": "center_low",
+  "scale_in_frame": 4,
+  "margin": "medium",
+  "main_axis": "horizontal",
+  "focal_clarity": 5,
+  "note": "Single trailer fills lower frame with open sky above."
+ },
+ "shape_proportions": {
+  "form_language": "round_soft",
+  "exaggeration": 3,
+  "chunkiness": 4,
+  "silhouette_clarity": 5,
+  "simplification": 4,
+  "note": "Puffy rounded body with simplified details reads as toy-like."
+ },
+ "viewpoint_depth": {
+  "camera_height": "eye_level",
+  "object_angle": "three_quarter",
+  "perspective": 3,
+  "depth_layers": "3",
+  "background_blur": "none",
+  "note": "Slight three-quarter view with sky, trailer and grass layers."
+ },
+ "edges_linework": {
+  "outline": "none",
+  "edge_softness": 3,
+  "interior_lines": 2,
+  "note": "Form defined by shading and bevels, no drawn outlines."
+ },
+ "surface_finish": {
+  "render_look": "soft_3d",
+  "gloss": 3,
+  "texture_amount": 2,
+  "material_realism": 2,
+  "note": "Smooth plastic-like surfaces with simple stylised grass blades."
+ },
+ "rhythm_staging": {
+  "pose": "upright_static",
+  "symmetry": 2,
+  "repetition": 2,
+  "energy": 2,
+  "note": "Calm parked pose; grass tufts add minor repetition."
+ },
+ "idea": {
+  "recognizability": 5,
+  "recognition_cue": "Rounded cream caravan with orange stripe and wheel",
+  "theme_role": "vehicle",
+  "humor": 2
+ }
+}
