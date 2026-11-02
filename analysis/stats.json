@@ -1,0 +1,2494 @@
+{
+ "raters": [
+  "codex",
+  "claude",
+  "qwen3.8",
+  "gemma4"
+ ],
+ "set_raters": [
+  "codex",
+  "claude",
+  "qwen3.8",
+  "gemma4"
+ ],
+ "agreement": {
+  "identity.object_class": {
+   "kind": "choice",
+   "match": 0.835,
+   "kappa": 0.822
+  },
+  "identity.real_world_scale": {
+   "kind": "choice",
+   "match": 0.801,
+   "kappa": 0.728
+  },
+  "identity.subject_count": {
+   "kind": "choice",
+   "match": 0.924,
+   "kappa": 0.771
+  },
+  "staging.art_category": {
+   "kind": "choice",
+   "match": 0.827,
+   "kappa": 0.779
+  },
+  "staging.support": {
+   "kind": "choice",
+   "match": 0.889,
+   "kappa": 0.83
+  },
+  "staging.background_type": {
+   "kind": "choice",
+   "match": 0.818,
+   "kappa": 0.763
+  },
+  "staging.background_detail": {
+   "kind": "scale",
+   "match": 1.0,
+   "kappa": 0.807
+  },
+  "staging.secondary_objects": {
+   "kind": "choice",
+   "match": 0.767,
+   "kappa": 0.641
+  },
+  "lighting_shading.light_direction": {
+   "kind": "choice",
+   "match": 0.523,
+   "kappa": 0.165
+  },
+  "lighting_shading.shading_model": {
+   "kind": "choice",
+   "match": 0.991,
+   "kappa": -0.001
+  },
+  "lighting_shading.shadow_softness": {
+   "kind": "scale",
+   "match": 0.996,
+   "kappa": 0.295
+  },
+  "lighting_shading.ground_shadow": {
+   "kind": "choice",
+   "match": 0.551,
+   "kappa": 0.408
+  },
+  "lighting_shading.highlight_style": {
+   "kind": "choice",
+   "match": 0.493,
+   "kappa": 0.205
+  },
+  "lighting_shading.rim_light": {
+   "kind": "choice",
+   "match": 0.799,
+   "kappa": 0.18
+  },
+  "value_contrast.value_key": {
+   "kind": "choice",
+   "match": 0.711,
+   "kappa": 0.184
+  },
+  "value_contrast.contrast": {
+   "kind": "scale",
+   "match": 0.997,
+   "kappa": 0.257
+  },
+  "value_contrast.subject_separation": {
+   "kind": "scale",
+   "match": 1.0,
+   "kappa": 0.566
+  },
+  "value_contrast.darkest_accent": {
+   "kind": "choice",
+   "match": 0.591,
+   "kappa": 0.244
+  },
+  "color_palette.harmony": {
+   "kind": "choice",
+   "match": 0.749,
+   "kappa": 0.556
+  },
+  "color_palette.saturation": {
+   "kind": "scale",
+   "match": 1.0,
+   "kappa": 0.482
+  },
+  "color_palette.temperature": {
+   "kind": "choice",
+   "match": 0.839,
+   "kappa": 0.493
+  },
+  "color_palette.subject_vs_background": {
+   "kind": "choice",
+   "match": 0.414,
+   "kappa": 0.123
+  },
+  "color_palette.accent_color": {
+   "kind": "choice",
+   "match": 0.714,
+   "kappa": 0.506
+  },
+  "composition_hierarchy.placement": {
+   "kind": "choice",
+   "match": 0.887,
+   "kappa": 0.494
+  },
+  "composition_hierarchy.scale_in_frame": {
+   "kind": "scale",
+   "match": 0.996,
+   "kappa": 0.395
+  },
+  "composition_hierarchy.margin": {
+   "kind": "choice",
+   "match": 0.543,
+   "kappa": 0.182
+  },
+  "composition_hierarchy.main_axis": {
+   "kind": "choice",
+   "match": 0.771,
+   "kappa": 0.645
+  },
+  "composition_hierarchy.focal_clarity": {
+   "kind": "scale",
+   "match": 0.999,
+   "kappa": 0.471
+  },
+  "shape_proportions.form_language": {
+   "kind": "choice",
+   "match": 0.82,
+   "kappa": 0.407
+  },
+  "shape_proportions.exaggeration": {
+   "kind": "scale",
+   "match": 1.0,
+   "kappa": 0.624
+  },
+  "shape_proportions.chunkiness": {
+   "kind": "scale",
+   "match": 0.995,
+   "kappa": 0.43
+  },
+  "shape_proportions.silhouette_clarity": {
+   "kind": "scale",
+   "match": 0.968,
+   "kappa": 0.186
+  },
+  "shape_proportions.simplification": {
+   "kind": "scale",
+   "match": 0.996,
+   "kappa": 0.244
+  },
+  "viewpoint_depth.camera_height": {
+   "kind": "choice",
+   "match": 0.628,
+   "kappa": 0.392
+  },
+  "viewpoint_depth.object_angle": {
+   "kind": "choice",
+   "match": 0.845,
+   "kappa": 0.59
+  },
+  "viewpoint_depth.perspective": {
+   "kind": "scale",
+   "match": 1.0,
+   "kappa": 0.63
+  },
+  "viewpoint_depth.depth_layers": {
+   "kind": "choice",
+   "match": 0.608,
+   "kappa": 0.416
+  },
+  "viewpoint_depth.background_blur": {
+   "kind": "choice",
+   "match": 0.839,
+   "kappa": 0.553
+  },
+  "edges_linework.outline": {
+   "kind": "choice",
+   "match": 0.886,
+   "kappa": 0.197
+  },
+  "edges_linework.edge_softness": {
+   "kind": "scale",
+   "match": 0.946,
+   "kappa": 0.177
+  },
+  "edges_linework.interior_lines": {
+   "kind": "scale",
+   "match": 0.969,
+   "kappa": 0.283
+  },
+  "surface_finish.render_look": {
+   "kind": "choice",
+   "match": 0.596,
+   "kappa": 0.323
+  },
+  "surface_finish.gloss": {
+   "kind": "scale",
+   "match": 0.98,
+   "kappa": 0.603
+  },
+  "surface_finish.texture_amount": {
+   "kind": "scale",
+   "match": 0.997,
+   "kappa": 0.666
+  },
+  "surface_finish.material_realism": {
+   "kind": "scale",
+   "match": 0.994,
+   "kappa": 0.364
+  },
+  "rhythm_staging.pose": {
+   "kind": "choice",
+   "match": 0.721,
+   "kappa": 0.556
+  },
+  "rhythm_staging.symmetry": {
+   "kind": "scale",
+   "match": 0.903,
+   "kappa": 0.64
+  },
+  "rhythm_staging.repetition": {
+   "kind": "scale",
+   "match": 0.907,
+   "kappa": 0.567
+  },
+  "rhythm_staging.energy": {
+   "kind": "scale",
+   "match": 0.99,
+   "kappa": 0.778
+  },
+  "idea.recognizability": {
+   "kind": "scale",
+   "match": 1.0,
+   "kappa": -0.005
+  },
+  "idea.theme_role": {
+   "kind": "choice",
+   "match": 0.74,
+   "kappa": 0.675
+  },
+  "idea.humor": {
+   "kind": "scale",
+   "match": 0.989,
+   "kappa": 0.828
+  }
+ },
+ "rater_pairs": {
+  "codex + claude": {
+   "choice_match": 0.771,
+   "scale_within_1": 0.993,
+   "mean_kappa": 0.517
+  },
+  "codex + qwen3.8": {
+   "choice_match": 0.699,
+   "scale_within_1": 0.983,
+   "mean_kappa": 0.41
+  },
+  "codex + gemma4": {
+   "choice_match": 0.71,
+   "scale_within_1": 0.974,
+   "mean_kappa": 0.46
+  },
+  "claude + qwen3.8": {
+   "choice_match": 0.731,
+   "scale_within_1": 0.99,
+   "mean_kappa": 0.434
+  },
+  "claude + gemma4": {
+   "choice_match": 0.724,
+   "scale_within_1": 0.97,
+   "mean_kappa": 0.461
+  },
+  "qwen3.8 + gemma4": {
+   "choice_match": 0.789,
+   "scale_within_1": 0.986,
+   "mean_kappa": 0.501
+  }
+ },
+ "fields": {
+  "identity.object_class": {
+   "all": {
+    "clothing": 5,
+    "paper_document": 9,
+    "furniture": 11,
+    "electronics": 9,
+    "toy_game": 11,
+    "accessory": 10,
+    "container": 10,
+    "food_drink": 8,
+    "building_place": 13,
+    "plant_nature": 5,
+    "character": 30,
+    "other": 4,
+    "vehicle": 11,
+    "sports_gear": 10,
+    "tool": 7,
+    "music_instrument": 4,
+    "animal": 3
+   },
+   "by_category": {
+    "1": {
+     "clothing": 3,
+     "electronics": 3,
+     "toy_game": 2,
+     "accessory": 7,
+     "food_drink": 2,
+     "paper_document": 3,
+     "sports_gear": 4,
+     "container": 1,
+     "building_place": 1,
+     "tool": 3,
+     "music_instrument": 1,
+     "furniture": 1,
+     "vehicle": 2,
+     "animal": 2
+    },
+    "4": {
+     "paper_document": 2,
+     "electronics": 2,
+     "building_place": 10,
+     "toy_game": 3,
+     "container": 3,
+     "furniture": 5,
+     "other": 4,
+     "vehicle": 4,
+     "sports_gear": 4,
+     "food_drink": 2,
+     "music_instrument": 1,
+     "tool": 1,
+     "plant_nature": 1
+    },
+    "3": {
+     "furniture": 3,
+     "electronics": 1,
+     "paper_document": 3,
+     "container": 4,
+     "food_drink": 1,
+     "plant_nature": 1,
+     "toy_game": 5,
+     "vehicle": 5,
+     "sports_gear": 2,
+     "tool": 3,
+     "accessory": 1,
+     "music_instrument": 1,
+     "building_place": 1,
+     "clothing": 1
+    },
+    "2": {
+     "furniture": 2,
+     "electronics": 3,
+     "food_drink": 3,
+     "container": 2,
+     "accessory": 2,
+     "clothing": 1,
+     "toy_game": 1,
+     "music_instrument": 1,
+     "paper_document": 1,
+     "plant_nature": 3,
+     "building_place": 1
+    },
+    "5": {
+     "character": 30,
+     "animal": 1
+    }
+   }
+  },
+  "identity.real_world_scale": {
+   "all": {
+    "handheld": 55,
+    "furniture_sized": 39,
+    "building_or_larger": 10,
+    "body_sized": 46,
+    "vehicle_sized": 10
+   },
+   "by_category": {
+    "1": {
+     "handheld": 24,
+     "furniture_sized": 4,
+     "building_or_larger": 1,
+     "body_sized": 4,
+     "vehicle_sized": 2
+    },
+    "4": {
+     "handheld": 9,
+     "furniture_sized": 18,
+     "body_sized": 7,
+     "building_or_larger": 6,
+     "vehicle_sized": 2
+    },
+    "3": {
+     "furniture_sized": 11,
+     "handheld": 11,
+     "building_or_larger": 2,
+     "vehicle_sized": 4,
+     "body_sized": 4
+    },
+    "2": {
+     "handheld": 11,
+     "furniture_sized": 6,
+     "body_sized": 2,
+     "building_or_larger": 1
+    },
+    "5": {
+     "body_sized": 29,
+     "vehicle_sized": 2
+    }
+   }
+  },
+  "identity.subject_count": {
+   "all": {
+    "one": 131,
+    "few": 7,
+    "many": 1,
+    "pair": 21
+   },
+   "by_category": {
+    "1": {
+     "one": 30,
+     "few": 2,
+     "pair": 3
+    },
+    "4": {
+     "few": 3,
+     "one": 37,
+     "pair": 2
+    },
+    "3": {
+     "one": 28,
+     "many": 1,
+     "pair": 3
+    },
+    "2": {
+     "one": 16,
+     "pair": 2,
+     "few": 2
+    },
+    "5": {
+     "one": 20,
+     "pair": 11
+    }
+   }
+  },
+  "staging.art_category": {
+   "all": {
+    "1": 35,
+    "4": 42,
+    "3": 32,
+    "2": 20,
+    "5": 31
+   },
+   "by_category": {
+    "1": {
+     "1": 35
+    },
+    "4": {
+     "4": 42
+    },
+    "3": {
+     "3": 32
+    },
+    "2": {
+     "2": 20
+    },
+    "5": {
+     "5": 31
+    }
+   }
+  },
+  "staging.support": {
+   "all": {
+    "floating": 36,
+    "on_surface": 61,
+    "in_environment": 63
+   },
+   "by_category": {
+    "1": {
+     "floating": 35
+    },
+    "4": {
+     "on_surface": 10,
+     "in_environment": 32
+    },
+    "3": {
+     "on_surface": 32
+    },
+    "2": {
+     "on_surface": 19,
+     "floating": 1
+    },
+    "5": {
+     "in_environment": 31
+    }
+   }
+  },
+  "staging.background_type": {
+   "all": {
+    "motif_pattern": 17,
+    "interior_scene": 10,
+    "simple_wall": 5,
+    "flat_gradient": 17,
+    "exterior_scene": 66,
+    "stripes": 19,
+    "rays": 26
+   },
+   "by_category": {
+    "1": {
+     "motif_pattern": 10,
+     "exterior_scene": 2,
+     "rays": 14,
+     "stripes": 6,
+     "flat_gradient": 3
+    },
+    "4": {
+     "interior_scene": 5,
+     "stripes": 1,
+     "simple_wall": 1,
+     "exterior_scene": 35
+    },
+    "3": {
+     "interior_scene": 3,
+     "simple_wall": 3,
+     "flat_gradient": 7,
+     "rays": 8,
+     "stripes": 7,
+     "motif_pattern": 3,
+     "exterior_scene": 1
+    },
+    "2": {
+     "stripes": 5,
+     "flat_gradient": 7,
+     "rays": 4,
+     "motif_pattern": 4
+    },
+    "5": {
+     "exterior_scene": 28,
+     "interior_scene": 2,
+     "simple_wall": 1
+    }
+   }
+  },
+  "staging.background_detail": {
+   "all": {
+    "2": 88,
+    "3": 29,
+    "1": 11,
+    "4": 32
+   },
+   "by_category": {
+    "1": {
+     "2": 33,
+     "1": 2
+    },
+    "4": {
+     "3": 20,
+     "2": 12,
+     "4": 10
+    },
+    "3": {
+     "2": 30,
+     "1": 2
+    },
+    "2": {
+     "2": 13,
+     "1": 7
+    },
+    "5": {
+     "3": 9,
+     "4": 22
+    }
+   }
+  },
+  "staging.secondary_objects": {
+   "all": {
+    "none": 76,
+    "few": 57,
+    "one": 12,
+    "many": 15
+   },
+   "by_category": {
+    "1": {
+     "none": 31,
+     "one": 1,
+     "few": 3
+    },
+    "4": {
+     "few": 24,
+     "none": 8,
+     "one": 5,
+     "many": 5
+    },
+    "3": {
+     "one": 3,
+     "few": 6,
+     "none": 21,
+     "many": 2
+    },
+    "2": {
+     "none": 16,
+     "few": 2,
+     "one": 2
+    },
+    "5": {
+     "one": 1,
+     "few": 22,
+     "many": 8
+    }
+   }
+  },
+  "lighting_shading.light_direction": {
+   "all": {
+    "upper_left": 134,
+    "upper_right": 15,
+    "front": 1,
+    "top": 9,
+    "left": 1
+   },
+   "by_category": {
+    "1": {
+     "upper_left": 33,
+     "upper_right": 1,
+     "top": 1
+    },
+    "4": {
+     "upper_right": 8,
+     "upper_left": 31,
+     "front": 1,
+     "top": 2
+    },
+    "3": {
+     "upper_left": 29,
+     "upper_right": 2,
+     "top": 1
+    },
+    "2": {
+     "upper_left": 19,
+     "top": 1
+    },
+    "5": {
+     "upper_left": 22,
+     "top": 4,
+     "upper_right": 4,
+     "left": 1
+    }
+   }
+  },
+  "lighting_shading.shading_model": {
+   "all": {
+    "soft_gradient": 160
+   },
+   "by_category": {
+    "1": {
+     "soft_gradient": 35
+    },
+    "4": {
+     "soft_gradient": 42
+    },
+    "3": {
+     "soft_gradient": 32
+    },
+    "2": {
+     "soft_gradient": 20
+    },
+    "5": {
+     "soft_gradient": 31
+    }
+   }
+  },
+  "lighting_shading.shadow_softness": {
+   "all": {
+    "4": 142,
+    "3": 16,
+    "2": 1,
+    "5": 1
+   },
+   "by_category": {
+    "1": {
+     "4": 33,
+     "3": 1,
+     "5": 1
+    },
+    "4": {
+     "4": 31,
+     "3": 10,
+     "2": 1
+    },
+    "3": {
+     "4": 28,
+     "3": 4
+    },
+    "2": {
+     "4": 19,
+     "3": 1
+    },
+    "5": {
+     "4": 31
+    }
+   }
+  },
+  "lighting_shading.ground_shadow": {
+   "all": {
+    "none": 32,
+    "cast": 87,
+    "not_applicable": 27,
+    "contact": 14
+   },
+   "by_category": {
+    "1": {
+     "none": 25,
+     "cast": 2,
+     "not_applicable": 8
+    },
+    "4": {
+     "cast": 29,
+     "not_applicable": 7,
+     "none": 4,
+     "contact": 2
+    },
+    "3": {
+     "cast": 30,
+     "contact": 2
+    },
+    "2": {
+     "cast": 19,
+     "contact": 1
+    },
+    "5": {
+     "contact": 9,
+     "not_applicable": 12,
+     "cast": 7,
+     "none": 3
+    }
+   }
+  },
+  "lighting_shading.highlight_style": {
+   "all": {
+    "soft_bloom": 71,
+    "both": 78,
+    "crisp_specular": 9,
+    "none": 2
+   },
+   "by_category": {
+    "1": {
+     "soft_bloom": 14,
+     "crisp_specular": 3,
+     "both": 17,
+     "none": 1
+    },
+    "4": {
+     "both": 19,
+     "soft_bloom": 20,
+     "crisp_specular": 2,
+     "none": 1
+    },
+    "3": {
+     "both": 19,
+     "soft_bloom": 10,
+     "crisp_specular": 3
+    },
+    "2": {
+     "both": 9,
+     "soft_bloom": 10,
+     "crisp_specular": 1
+    },
+    "5": {
+     "soft_bloom": 17,
+     "both": 14
+    }
+   }
+  },
+  "lighting_shading.rim_light": {
+   "all": {
+    "subtle": 149,
+    "none": 9,
+    "strong": 2
+   },
+   "by_category": {
+    "1": {
+     "subtle": 28,
+     "none": 5,
+     "strong": 2
+    },
+    "4": {
+     "subtle": 40,
+     "none": 2
+    },
+    "3": {
+     "none": 1,
+     "subtle": 31
+    },
+    "2": {
+     "subtle": 19,
+     "none": 1
+    },
+    "5": {
+     "subtle": 31
+    }
+   }
+  },
+  "value_contrast.value_key": {
+   "all": {
+    "mid": 116,
+    "high": 44
+   },
+   "by_category": {
+    "1": {
+     "mid": 27,
+     "high": 8
+    },
+    "4": {
+     "mid": 27,
+     "high": 15
+    },
+    "3": {
+     "mid": 26,
+     "high": 6
+    },
+    "2": {
+     "high": 3,
+     "mid": 17
+    },
+    "5": {
+     "mid": 19,
+     "high": 12
+    }
+   }
+  },
+  "value_contrast.contrast": {
+   "all": {
+    "3": 145,
+    "4": 15
+   },
+   "by_category": {
+    "1": {
+     "3": 32,
+     "4": 3
+    },
+    "4": {
+     "3": 37,
+     "4": 5
+    },
+    "3": {
+     "3": 31,
+     "4": 1
+    },
+    "2": {
+     "3": 18,
+     "4": 2
+    },
+    "5": {
+     "3": 27,
+     "4": 4
+    }
+   }
+  },
+  "value_contrast.subject_separation": {
+   "all": {
+    "4": 108,
+    "5": 52
+   },
+   "by_category": {
+    "1": {
+     "4": 12,
+     "5": 23
+    },
+    "4": {
+     "4": 34,
+     "5": 8
+    },
+    "3": {
+     "4": 19,
+     "5": 13
+    },
+    "2": {
+     "4": 12,
+     "5": 8
+    },
+    "5": {
+     "4": 31
+    }
+   }
+  },
+  "value_contrast.darkest_accent": {
+   "all": {
+    "shadows": 81,
+    "object_parts": 79
+   },
+   "by_category": {
+    "1": {
+     "shadows": 23,
+     "object_parts": 12
+    },
+    "4": {
+     "object_parts": 14,
+     "shadows": 28
+    },
+    "3": {
+     "shadows": 17,
+     "object_parts": 15
+    },
+    "2": {
+     "object_parts": 10,
+     "shadows": 10
+    },
+    "5": {
+     "object_parts": 28,
+     "shadows": 3
+    }
+   }
+  },
+  "color_palette.harmony": {
+   "all": {
+    "complementary": 101,
+    "multicolor": 41,
+    "analogous": 18
+   },
+   "by_category": {
+    "1": {
+     "complementary": 25,
+     "multicolor": 5,
+     "analogous": 5
+    },
+    "4": {
+     "multicolor": 7,
+     "analogous": 7,
+     "complementary": 28
+    },
+    "3": {
+     "analogous": 2,
+     "complementary": 24,
+     "multicolor": 6
+    },
+    "2": {
+     "complementary": 14,
+     "analogous": 2,
+     "multicolor": 4
+    },
+    "5": {
+     "complementary": 10,
+     "multicolor": 19,
+     "analogous": 2
+    }
+   }
+  },
+  "color_palette.saturation": {
+   "all": {
+    "4": 113,
+    "5": 45,
+    "3": 2
+   },
+   "by_category": {
+    "1": {
+     "4": 17,
+     "5": 18
+    },
+    "4": {
+     "4": 37,
+     "3": 1,
+     "5": 4
+    },
+    "3": {
+     "4": 23,
+     "5": 8,
+     "3": 1
+    },
+    "2": {
+     "4": 10,
+     "5": 10
+    },
+    "5": {
+     "4": 26,
+     "5": 5
+    }
+   }
+  },
+  "color_palette.temperature": {
+   "all": {
+    "cool": 10,
+    "warm_cool_mix": 140,
+    "warm": 10
+   },
+   "by_category": {
+    "1": {
+     "cool": 4,
+     "warm_cool_mix": 30,
+     "warm": 1
+    },
+    "4": {
+     "warm_cool_mix": 36,
+     "cool": 3,
+     "warm": 3
+    },
+    "3": {
+     "warm": 3,
+     "warm_cool_mix": 28,
+     "cool": 1
+    },
+    "2": {
+     "warm_cool_mix": 16,
+     "cool": 2,
+     "warm": 2
+    },
+    "5": {
+     "warm_cool_mix": 30,
+     "warm": 1
+    }
+   }
+  },
+  "color_palette.subject_vs_background": {
+   "all": {
+    "both": 115,
+    "hue_contrast": 41,
+    "value_contrast": 4
+   },
+   "by_category": {
+    "1": {
+     "both": 28,
+     "hue_contrast": 6,
+     "value_contrast": 1
+    },
+    "4": {
+     "both": 24,
+     "hue_contrast": 15,
+     "value_contrast": 3
+    },
+    "3": {
+     "both": 20,
+     "hue_contrast": 12
+    },
+    "2": {
+     "both": 15,
+     "hue_contrast": 5
+    },
+    "5": {
+     "hue_contrast": 3,
+     "both": 28
+    }
+   }
+  },
+  "color_palette.accent_color": {
+   "all": {
+    "one": 72,
+    "several": 80,
+    "none": 8
+   },
+   "by_category": {
+    "1": {
+     "one": 18,
+     "several": 13,
+     "none": 4
+    },
+    "4": {
+     "several": 16,
+     "one": 23,
+     "none": 3
+    },
+    "3": {
+     "one": 20,
+     "several": 11,
+     "none": 1
+    },
+    "2": {
+     "one": 7,
+     "several": 13
+    },
+    "5": {
+     "one": 4,
+     "several": 27
+    }
+   }
+  },
+  "composition_hierarchy.placement": {
+   "all": {
+    "center": 135,
+    "center_low": 21,
+    "off_center": 4
+   },
+   "by_category": {
+    "1": {
+     "center": 34,
+     "off_center": 1
+    },
+    "4": {
+     "center_low": 6,
+     "center": 35,
+     "off_center": 1
+    },
+    "3": {
+     "center": 27,
+     "center_low": 5
+    },
+    "2": {
+     "center": 18,
+     "center_low": 2
+    },
+    "5": {
+     "center": 21,
+     "center_low": 8,
+     "off_center": 2
+    }
+   }
+  },
+  "composition_hierarchy.scale_in_frame": {
+   "all": {
+    "4": 134,
+    "5": 26
+   },
+   "by_category": {
+    "1": {
+     "4": 33,
+     "5": 2
+    },
+    "4": {
+     "4": 37,
+     "5": 5
+    },
+    "3": {
+     "4": 31,
+     "5": 1
+    },
+    "2": {
+     "4": 20
+    },
+    "5": {
+     "4": 13,
+     "5": 18
+    }
+   }
+  },
+  "composition_hierarchy.margin": {
+   "all": {
+    "medium": 83,
+    "tight": 48,
+    "cropped": 29
+   },
+   "by_category": {
+    "1": {
+     "medium": 28,
+     "tight": 5,
+     "cropped": 2
+    },
+    "4": {
+     "tight": 15,
+     "medium": 18,
+     "cropped": 9
+    },
+    "3": {
+     "medium": 16,
+     "tight": 15,
+     "cropped": 1
+    },
+    "2": {
+     "medium": 17,
+     "tight": 3
+    },
+    "5": {
+     "tight": 10,
+     "cropped": 17,
+     "medium": 4
+    }
+   }
+  },
+  "composition_hierarchy.main_axis": {
+   "all": {
+    "diagonal": 55,
+    "horizontal": 19,
+    "vertical": 74,
+    "round": 12
+   },
+   "by_category": {
+    "1": {
+     "diagonal": 21,
+     "vertical": 10,
+     "round": 3,
+     "horizontal": 1
+    },
+    "4": {
+     "horizontal": 9,
+     "vertical": 20,
+     "diagonal": 9,
+     "round": 4
+    },
+    "3": {
+     "vertical": 14,
+     "diagonal": 8,
+     "horizontal": 7,
+     "round": 3
+    },
+    "2": {
+     "round": 2,
+     "vertical": 14,
+     "diagonal": 4
+    },
+    "5": {
+     "vertical": 16,
+     "diagonal": 13,
+     "horizontal": 2
+    }
+   }
+  },
+  "composition_hierarchy.focal_clarity": {
+   "all": {
+    "5": 110,
+    "4": 49,
+    "3": 1
+   },
+   "by_category": {
+    "1": {
+     "5": 33,
+     "4": 2
+    },
+    "4": {
+     "5": 25,
+     "4": 16,
+     "3": 1
+    },
+    "3": {
+     "5": 28,
+     "4": 4
+    },
+    "2": {
+     "5": 16,
+     "4": 4
+    },
+    "5": {
+     "5": 8,
+     "4": 23
+    }
+   }
+  },
+  "shape_proportions.form_language": {
+   "all": {
+    "mixed": 20,
+    "round_soft": 133,
+    "geometric": 5,
+    "organic": 2
+   },
+   "by_category": {
+    "1": {
+     "mixed": 4,
+     "round_soft": 28,
+     "geometric": 2,
+     "organic": 1
+    },
+    "4": {
+     "round_soft": 32,
+     "mixed": 10
+    },
+    "3": {
+     "geometric": 2,
+     "round_soft": 29,
+     "mixed": 1
+    },
+    "2": {
+     "round_soft": 13,
+     "mixed": 5,
+     "geometric": 1,
+     "organic": 1
+    },
+    "5": {
+     "round_soft": 31
+    }
+   }
+  },
+  "shape_proportions.exaggeration": {
+   "all": {
+    "3": 102,
+    "2": 19,
+    "4": 39
+   },
+   "by_category": {
+    "1": {
+     "3": 28,
+     "2": 6,
+     "4": 1
+    },
+    "4": {
+     "3": 37,
+     "2": 4,
+     "4": 1
+    },
+    "3": {
+     "2": 5,
+     "3": 23,
+     "4": 4
+    },
+    "2": {
+     "3": 13,
+     "4": 3,
+     "2": 4
+    },
+    "5": {
+     "4": 30,
+     "3": 1
+    }
+   }
+  },
+  "shape_proportions.chunkiness": {
+   "all": {
+    "4": 140,
+    "3": 12,
+    "5": 8
+   },
+   "by_category": {
+    "1": {
+     "4": 29,
+     "3": 4,
+     "5": 2
+    },
+    "4": {
+     "4": 37,
+     "3": 3,
+     "5": 2
+    },
+    "3": {
+     "4": 29,
+     "3": 1,
+     "5": 2
+    },
+    "2": {
+     "4": 15,
+     "3": 4,
+     "5": 1
+    },
+    "5": {
+     "4": 30,
+     "5": 1
+    }
+   }
+  },
+  "shape_proportions.silhouette_clarity": {
+   "all": {
+    "5": 91,
+    "4": 69
+   },
+   "by_category": {
+    "1": {
+     "5": 28,
+     "4": 7
+    },
+    "4": {
+     "5": 20,
+     "4": 22
+    },
+    "3": {
+     "5": 27,
+     "4": 5
+    },
+    "2": {
+     "5": 16,
+     "4": 4
+    },
+    "5": {
+     "4": 31
+    }
+   }
+  },
+  "shape_proportions.simplification": {
+   "all": {
+    "4": 101,
+    "3": 59
+   },
+   "by_category": {
+    "1": {
+     "4": 31,
+     "3": 4
+    },
+    "4": {
+     "4": 23,
+     "3": 19
+    },
+    "3": {
+     "3": 5,
+     "4": 27
+    },
+    "2": {
+     "4": 15,
+     "3": 5
+    },
+    "5": {
+     "3": 26,
+     "4": 5
+    }
+   }
+  },
+  "viewpoint_depth.camera_height": {
+   "all": {
+    "slightly_above": 75,
+    "eye_level": 70,
+    "high_above": 11,
+    "below": 4
+   },
+   "by_category": {
+    "1": {
+     "slightly_above": 15,
+     "high_above": 4,
+     "eye_level": 16
+    },
+    "4": {
+     "slightly_above": 20,
+     "eye_level": 17,
+     "below": 3,
+     "high_above": 2
+    },
+    "3": {
+     "eye_level": 5,
+     "slightly_above": 23,
+     "high_above": 4
+    },
+    "2": {
+     "eye_level": 9,
+     "slightly_above": 10,
+     "high_above": 1
+    },
+    "5": {
+     "eye_level": 23,
+     "below": 1,
+     "slightly_above": 7
+    }
+   }
+  },
+  "viewpoint_depth.object_angle": {
+   "all": {
+    "three_quarter": 127,
+    "front": 31,
+    "mixed": 1,
+    "side": 1
+   },
+   "by_category": {
+    "1": {
+     "three_quarter": 27,
+     "front": 7,
+     "side": 1
+    },
+    "4": {
+     "three_quarter": 33,
+     "front": 9
+    },
+    "3": {
+     "front": 6,
+     "three_quarter": 26
+    },
+    "2": {
+     "front": 7,
+     "three_quarter": 13
+    },
+    "5": {
+     "three_quarter": 28,
+     "front": 2,
+     "mixed": 1
+    }
+   }
+  },
+  "viewpoint_depth.perspective": {
+   "all": {
+    "3": 99,
+    "2": 56,
+    "1": 1,
+    "4": 4
+   },
+   "by_category": {
+    "1": {
+     "3": 13,
+     "2": 21,
+     "4": 1
+    },
+    "4": {
+     "3": 29,
+     "2": 11,
+     "4": 2
+    },
+    "3": {
+     "2": 8,
+     "3": 24
+    },
+    "2": {
+     "1": 1,
+     "3": 7,
+     "2": 12
+    },
+    "5": {
+     "3": 26,
+     "2": 4,
+     "4": 1
+    }
+   }
+  },
+  "viewpoint_depth.depth_layers": {
+   "all": {
+    "2": 37,
+    "3": 79,
+    "4_or_more": 44
+   },
+   "by_category": {
+    "1": {
+     "2": 28,
+     "3": 7
+    },
+    "4": {
+     "3": 22,
+     "4_or_more": 20
+    },
+    "3": {
+     "3": 29,
+     "2": 3
+    },
+    "2": {
+     "2": 6,
+     "3": 14
+    },
+    "5": {
+     "3": 7,
+     "4_or_more": 24
+    }
+   }
+  },
+  "viewpoint_depth.background_blur": {
+   "all": {
+    "none": 121,
+    "slight": 38,
+    "strong": 1
+   },
+   "by_category": {
+    "1": {
+     "none": 31,
+     "slight": 3,
+     "strong": 1
+    },
+    "4": {
+     "slight": 13,
+     "none": 29
+    },
+    "3": {
+     "none": 32
+    },
+    "2": {
+     "none": 20
+    },
+    "5": {
+     "none": 9,
+     "slight": 22
+    }
+   }
+  },
+  "edges_linework.outline": {
+   "all": {
+    "none": 154,
+    "selective": 5,
+    "full_colored": 1
+   },
+   "by_category": {
+    "1": {
+     "none": 34,
+     "full_colored": 1
+    },
+    "4": {
+     "none": 42
+    },
+    "3": {
+     "selective": 4,
+     "none": 28
+    },
+    "2": {
+     "none": 20
+    },
+    "5": {
+     "none": 30,
+     "selective": 1
+    }
+   }
+  },
+  "edges_linework.edge_softness": {
+   "all": {
+    "2": 134,
+    "3": 26
+   },
+   "by_category": {
+    "1": {
+     "2": 34,
+     "3": 1
+    },
+    "4": {
+     "3": 6,
+     "2": 36
+    },
+    "3": {
+     "2": 32
+    },
+    "2": {
+     "2": 18,
+     "3": 2
+    },
+    "5": {
+     "2": 14,
+     "3": 17
+    }
+   }
+  },
+  "edges_linework.interior_lines": {
+   "all": {
+    "1": 36,
+    "2": 121,
+    "3": 3
+   },
+   "by_category": {
+    "1": {
+     "1": 15,
+     "2": 20
+    },
+    "4": {
+     "2": 38,
+     "1": 4
+    },
+    "3": {
+     "3": 3,
+     "2": 22,
+     "1": 7
+    },
+    "2": {
+     "2": 12,
+     "1": 8
+    },
+    "5": {
+     "2": 29,
+     "1": 2
+    }
+   }
+  },
+  "surface_finish.render_look": {
+   "all": {
+    "soft_3d": 99,
+    "glossy_3d": 55,
+    "painted_2d": 5,
+    "clay_toy": 1
+   },
+   "by_category": {
+    "1": {
+     "soft_3d": 19,
+     "glossy_3d": 16
+    },
+    "4": {
+     "soft_3d": 27,
+     "glossy_3d": 12,
+     "painted_2d": 3
+    },
+    "3": {
+     "soft_3d": 16,
+     "glossy_3d": 16
+    },
+    "2": {
+     "soft_3d": 8,
+     "glossy_3d": 10,
+     "clay_toy": 1,
+     "painted_2d": 1
+    },
+    "5": {
+     "soft_3d": 29,
+     "glossy_3d": 1,
+     "painted_2d": 1
+    }
+   }
+  },
+  "surface_finish.gloss": {
+   "all": {
+    "3": 66,
+    "2": 33,
+    "4": 55,
+    "5": 5,
+    "1": 1
+   },
+   "by_category": {
+    "1": {
+     "3": 9,
+     "4": 17,
+     "2": 7,
+     "5": 1,
+     "1": 1
+    },
+    "4": {
+     "3": 18,
+     "4": 13,
+     "2": 11
+    },
+    "3": {
+     "3": 12,
+     "2": 3,
+     "5": 2,
+     "4": 15
+    },
+    "2": {
+     "3": 8,
+     "4": 7,
+     "5": 2,
+     "2": 3
+    },
+    "5": {
+     "3": 19,
+     "4": 3,
+     "2": 9
+    }
+   }
+  },
+  "surface_finish.texture_amount": {
+   "all": {
+    "1": 42,
+    "3": 16,
+    "2": 100,
+    "4": 2
+   },
+   "by_category": {
+    "1": {
+     "1": 21,
+     "2": 11,
+     "3": 2,
+     "4": 1
+    },
+    "4": {
+     "1": 6,
+     "2": 30,
+     "3": 5,
+     "4": 1
+    },
+    "3": {
+     "3": 3,
+     "2": 21,
+     "1": 8
+    },
+    "2": {
+     "1": 7,
+     "2": 12,
+     "3": 1
+    },
+    "5": {
+     "2": 26,
+     "3": 5
+    }
+   }
+  },
+  "surface_finish.material_realism": {
+   "all": {
+    "2": 81,
+    "3": 74,
+    "4": 5
+   },
+   "by_category": {
+    "1": {
+     "2": 20,
+     "3": 13,
+     "4": 2
+    },
+    "4": {
+     "2": 13,
+     "3": 26,
+     "4": 3
+    },
+    "3": {
+     "3": 18,
+     "2": 14
+    },
+    "2": {
+     "2": 12,
+     "3": 8
+    },
+    "5": {
+     "2": 22,
+     "3": 9
+    }
+   }
+  },
+  "rhythm_staging.pose": {
+   "all": {
+    "upright_static": 92,
+    "slight_tilt": 32,
+    "dynamic": 22,
+    "strong_tilt": 14
+   },
+   "by_category": {
+    "1": {
+     "upright_static": 13,
+     "slight_tilt": 12,
+     "strong_tilt": 9,
+     "dynamic": 1
+    },
+    "4": {
+     "upright_static": 34,
+     "dynamic": 2,
+     "strong_tilt": 2,
+     "slight_tilt": 4
+    },
+    "3": {
+     "upright_static": 25,
+     "slight_tilt": 6,
+     "strong_tilt": 1
+    },
+    "2": {
+     "upright_static": 18,
+     "slight_tilt": 2
+    },
+    "5": {
+     "dynamic": 19,
+     "strong_tilt": 2,
+     "slight_tilt": 8,
+     "upright_static": 2
+    }
+   }
+  },
+  "rhythm_staging.symmetry": {
+   "all": {
+    "3": 24,
+    "2": 74,
+    "4": 45,
+    "1": 15,
+    "5": 2
+   },
+   "by_category": {
+    "1": {
+     "3": 11,
+     "2": 14,
+     "4": 8,
+     "1": 2
+    },
+    "4": {
+     "2": 19,
+     "4": 18,
+     "3": 4,
+     "1": 1
+    },
+    "3": {
+     "4": 9,
+     "2": 16,
+     "3": 5,
+     "5": 2
+    },
+    "2": {
+     "4": 10,
+     "2": 7,
+     "3": 3
+    },
+    "5": {
+     "2": 18,
+     "1": 12,
+     "3": 1
+    }
+   }
+  },
+  "rhythm_staging.repetition": {
+   "all": {
+    "2": 64,
+    "4": 49,
+    "3": 40,
+    "5": 7
+   },
+   "by_category": {
+    "1": {
+     "2": 12,
+     "4": 10,
+     "3": 11,
+     "5": 2
+    },
+    "4": {
+     "4": 14,
+     "3": 10,
+     "2": 15,
+     "5": 3
+    },
+    "3": {
+     "3": 10,
+     "4": 11,
+     "2": 10,
+     "5": 1
+    },
+    "2": {
+     "4": 11,
+     "3": 2,
+     "2": 6,
+     "5": 1
+    },
+    "5": {
+     "2": 21,
+     "3": 7,
+     "4": 3
+    }
+   }
+  },
+  "rhythm_staging.energy": {
+   "all": {
+    "2": 88,
+    "1": 8,
+    "3": 41,
+    "5": 8,
+    "4": 15
+   },
+   "by_category": {
+    "1": {
+     "2": 15,
+     "3": 17,
+     "4": 3
+    },
+    "4": {
+     "2": 36,
+     "3": 3,
+     "4": 1,
+     "1": 2
+    },
+    "3": {
+     "1": 4,
+     "2": 18,
+     "3": 10
+    },
+    "2": {
+     "2": 14,
+     "3": 5,
+     "4": 1
+    },
+    "5": {
+     "5": 8,
+     "4": 10,
+     "3": 6,
+     "1": 2,
+     "2": 5
+    }
+   }
+  },
+  "idea.recognizability": {
+   "all": {
+    "5": 160
+   },
+   "by_category": {
+    "1": {
+     "5": 35
+    },
+    "4": {
+     "5": 42
+    },
+    "3": {
+     "5": 32
+    },
+    "2": {
+     "5": 20
+    },
+    "5": {
+     "5": 31
+    }
+   }
+  },
+  "idea.theme_role": {
+   "all": {
+    "core_symbol": 15,
+    "equipment": 62,
+    "keepsake": 13,
+    "food_drink": 10,
+    "place": 15,
+    "activity": 6,
+    "character_moment": 31,
+    "vehicle": 8
+   },
+   "by_category": {
+    "1": {
+     "core_symbol": 5,
+     "equipment": 18,
+     "keepsake": 6,
+     "food_drink": 2,
+     "place": 1,
+     "activity": 1,
+     "vehicle": 2
+    },
+    "4": {
+     "core_symbol": 3,
+     "equipment": 17,
+     "place": 11,
+     "activity": 4,
+     "keepsake": 3,
+     "vehicle": 2,
+     "food_drink": 2
+    },
+    "3": {
+     "equipment": 18,
+     "core_symbol": 4,
+     "food_drink": 2,
+     "vehicle": 4,
+     "keepsake": 3,
+     "place": 1
+    },
+    "2": {
+     "core_symbol": 3,
+     "equipment": 9,
+     "food_drink": 4,
+     "activity": 1,
+     "keepsake": 1,
+     "place": 2
+    },
+    "5": {
+     "character_moment": 31
+    }
+   }
+  },
+  "idea.humor": {
+   "all": {
+    "1": 80,
+    "2": 51,
+    "4": 21,
+    "3": 7,
+    "5": 1
+   },
+   "by_category": {
+    "1": {
+     "1": 24,
+     "2": 11
+    },
+    "4": {
+     "1": 25,
+     "2": 17
+    },
+    "3": {
+     "1": 20,
+     "2": 11,
+     "3": 1
+    },
+    "2": {
+     "1": 11,
+     "2": 9
+    },
+    "5": {
+     "4": 21,
+     "2": 3,
+     "3": 6,
+     "5": 1
+    }
+   }
+  }
+ },
+ "measured": {
+  "color_palette.chroma_subject": {
+   "p10": 0.07,
+   "median": 0.124,
+   "p90": 0.166,
+   "by_category": {
+    "1": 0.144,
+    "4": 0.123,
+    "3": 0.113,
+    "2": 0.132,
+    "5": 0.119
+   }
+  },
+  "color_palette.chroma_background": {
+   "p10": 0.092,
+   "median": 0.131,
+   "p90": 0.188,
+   "by_category": {
+    "1": 0.154,
+    "4": 0.12,
+    "3": 0.139,
+    "2": 0.171,
+    "5": 0.107
+   }
+  },
+  "color_palette.hue_families": {
+   "p10": 2.566,
+   "median": 4.375,
+   "p90": 7.123,
+   "by_category": {
+    "1": 3.18,
+    "4": 4.71,
+    "3": 4.235,
+    "2": 3.245,
+    "5": 7.11
+   }
+  },
+  "color_palette.warm_share": {
+   "p10": 0.123,
+   "median": 0.414,
+   "p90": 0.797,
+   "by_category": {
+    "1": 0.269,
+    "4": 0.397,
+    "3": 0.57,
+    "2": 0.472,
+    "5": 0.435
+   }
+  },
+  "value_contrast.lightness_mean": {
+   "p10": 0.566,
+   "median": 0.674,
+   "p90": 0.762,
+   "by_category": {
+    "1": 0.727,
+    "4": 0.663,
+    "3": 0.675,
+    "2": 0.657,
+    "5": 0.64
+   }
+  },
+  "value_contrast.lightness_p5": {
+   "p10": 0.304,
+   "median": 0.39,
+   "p90": 0.543,
+   "by_category": {
+    "1": 0.52,
+    "4": 0.371,
+    "3": 0.401,
+    "2": 0.414,
+    "5": 0.353
+   }
+  },
+  "value_contrast.lightness_p95": {
+   "p10": 0.825,
+   "median": 0.895,
+   "p90": 0.955,
+   "by_category": {
+    "1": 0.883,
+    "4": 0.905,
+    "3": 0.888,
+    "2": 0.901,
+    "5": 0.898
+   }
+  },
+  "value_contrast.rms_contrast": {
+   "p10": 0.112,
+   "median": 0.148,
+   "p90": 0.19,
+   "by_category": {
+    "1": 0.116,
+    "4": 0.161,
+    "3": 0.146,
+    "2": 0.143,
+    "5": 0.163
+   }
+  },
+  "value_contrast.lightness_gap": {
+   "p10": -0.228,
+   "median": -0.018,
+   "p90": 0.157,
+   "by_category": {
+    "1": -0.056,
+    "4": -0.001,
+    "3": -0.022,
+    "2": 0.01,
+    "5": -0.019
+   }
+  },
+  "value_contrast.color_gap": {
+   "p10": 0.099,
+   "median": 0.194,
+   "p90": 0.334,
+   "by_category": {
+    "1": 0.278,
+    "4": 0.167,
+    "3": 0.2,
+    "2": 0.206,
+    "5": 0.151
+   }
+  },
+  "value_contrast.boundary_contrast": {
+   "p10": 0.077,
+   "median": 0.173,
+   "p90": 0.302,
+   "by_category": {
+    "1": 0.271,
+    "4": 0.163,
+    "3": 0.16,
+    "2": 0.204,
+    "5": 0.118
+   }
+  },
+  "composition_hierarchy.subject_area": {
+   "p10": 0.175,
+   "median": 0.306,
+   "p90": 0.478,
+   "by_category": {
+    "1": 0.289,
+    "4": 0.296,
+    "3": 0.356,
+    "2": 0.319,
+    "5": 0.297
+   }
+  },
+  "composition_hierarchy.box_fill": {
+   "p10": 0.418,
+   "median": 0.583,
+   "p90": 0.793,
+   "by_category": {
+    "1": 0.56,
+    "4": 0.626,
+    "3": 0.602,
+    "2": 0.69,
+    "5": 0.522
+   }
+  },
+  "composition_hierarchy.center_x": {
+   "p10": 0.455,
+   "median": 0.5,
+   "p90": 0.551,
+   "by_category": {
+    "1": 0.505,
+    "4": 0.489,
+    "3": 0.504,
+    "2": 0.5,
+    "5": 0.494
+   }
+  },
+  "composition_hierarchy.center_y": {
+   "p10": 0.475,
+   "median": 0.538,
+   "p90": 0.667,
+   "by_category": {
+    "1": 0.509,
+    "4": 0.55,
+    "3": 0.546,
+    "2": 0.522,
+    "5": 0.596
+   }
+  },
+  "composition_hierarchy.margin_min": {
+   "p10": 0.0,
+   "median": 0.05,
+   "p90": 0.112,
+   "by_category": {
+    "1": 0.074,
+    "4": 0.04,
+    "3": 0.046,
+    "2": 0.077,
+    "5": 0.0
+   }
+  },
+  "shape_proportions.solidity": {
+   "p10": 0.595,
+   "median": 0.822,
+   "p90": 0.972,
+   "by_category": {
+    "1": 0.892,
+    "4": 0.826,
+    "3": 0.835,
+    "2": 0.865,
+    "5": 0.771
+   }
+  },
+  "shape_proportions.eccentricity": {
+   "p10": 0.477,
+   "median": 0.774,
+   "p90": 0.918,
+   "by_category": {
+    "1": 0.797,
+    "4": 0.791,
+    "3": 0.699,
+    "2": 0.778,
+    "5": 0.776
+   }
+  },
+  "shape_proportions.compactness": {
+   "p10": 0.144,
+   "median": 0.392,
+   "p90": 0.696,
+   "by_category": {
+    "1": 0.462,
+    "4": 0.397,
+    "3": 0.394,
+    "2": 0.488,
+    "5": 0.319
+   }
+  },
+  "shape_proportions.boundary_roughness": {
+   "p10": 1.024,
+   "median": 1.223,
+   "p90": 1.693,
+   "by_category": {
+    "1": 1.157,
+    "4": 1.167,
+    "3": 1.247,
+    "2": 1.17,
+    "5": 1.367
+   }
+  },
+  "shape_proportions.holes": {
+   "p10": 0.0,
+   "median": 0.0,
+   "p90": 0.0,
+   "by_category": {
+    "1": 0.0,
+    "4": 0.0,
+    "3": 0.0,
+    "2": 0.0,
+    "5": 0.0
+   }
+  },
+  "edges_linework.edge_density_subject": {
+   "p10": 0.048,
+   "median": 0.108,
+   "p90": 0.168,
+   "by_category": {
+    "1": 0.091,
+    "4": 0.123,
+    "3": 0.118,
+    "2": 0.13,
+    "5": 0.084
+   }
+  },
+  "edges_linework.edge_density_background": {
+   "p10": 0.009,
+   "median": 0.036,
+   "p90": 0.086,
+   "by_category": {
+    "1": 0.011,
+    "4": 0.052,
+    "3": 0.029,
+    "2": 0.014,
+    "5": 0.073
+   }
+  },
+  "edges_linework.outline_darkness": {
+   "p10": -0.058,
+   "median": 0.024,
+   "p90": 0.12,
+   "by_category": {
+    "1": 0.001,
+    "4": 0.004,
+    "3": 0.04,
+    "2": 0.036,
+    "5": 0.03
+   }
+  },
+  "surface_finish.detail_subject": {
+   "p10": 0.017,
+   "median": 0.033,
+   "p90": 0.05,
+   "by_category": {
+    "1": 0.024,
+    "4": 0.034,
+    "3": 0.037,
+    "2": 0.042,
+    "5": 0.029
+   }
+  },
+  "surface_finish.detail_background": {
+   "p10": 0.009,
+   "median": 0.017,
+   "p90": 0.031,
+   "by_category": {
+    "1": 0.012,
+    "4": 0.021,
+    "3": 0.015,
+    "2": 0.012,
+    "5": 0.026
+   }
+  },
+  "surface_finish.highlight_share": {
+   "p10": 0.0,
+   "median": 0.017,
+   "p90": 0.171,
+   "by_category": {
+    "1": 0.004,
+    "4": 0.029,
+    "3": 0.026,
+    "2": 0.013,
+    "5": 0.011
+   }
+  },
+  "surface_finish.dark_share": {
+   "p10": 0.0,
+   "median": 0.01,
+   "p90": 0.108,
+   "by_category": {
+    "1": 0.001,
+    "4": 0.007,
+    "3": 0.02,
+    "2": 0.009,
+    "5": 0.022
+   }
+  },
+  "lighting_shading.light_bias_azimuth": {
+   "p10": 31.82,
+   "median": 111.25,
+   "p90": 281.85,
+   "by_category": {
+    "1": 119.9,
+    "4": 110.1,
+    "3": 105.45,
+    "2": 98.75,
+    "5": 105.6
+   }
+  },
+  "lighting_shading.light_bias_strength": {
+   "p10": 0.142,
+   "median": 0.324,
+   "p90": 0.725,
+   "by_category": {
+    "1": 0.29,
+    "4": 0.377,
+    "3": 0.404,
+    "2": 0.289,
+    "5": 0.254
+   }
+  },
+  "lighting_shading.light_azimuth": {
+   "p10": 39.13,
+   "median": 93.65,
+   "p90": 151.95,
+   "by_category": {
+    "1": 110.0,
+    "4": 88.85,
+    "3": 90.95,
+    "2": 103.95,
+    "5": 80.6
+   }
+  },
+  "lighting_shading.light_elevation": {
+   "p10": -22.9,
+   "median": 16.95,
+   "p90": 58.66,
+   "by_category": {
+    "1": 20.6,
+    "4": 12.75,
+    "3": 24.2,
+    "2": -9.5,
+    "5": 20.2
+   }
+  },
+  "lighting_shading.light_fit": {
+   "p10": 0.105,
+   "median": 0.282,
+   "p90": 0.534,
+   "by_category": {
+    "1": 0.294,
+    "4": 0.322,
+    "3": 0.289,
+    "2": 0.231,
+    "5": 0.233
+   }
+  },
+  "lighting_shading.shading_range": {
+   "p10": 0.553,
+   "median": 0.729,
+   "p90": 0.847,
+   "by_category": {
+    "1": 0.69,
+    "4": 0.753,
+    "3": 0.763,
+    "2": 0.737,
+    "5": 0.698
+   }
+  },
+  "viewpoint_depth.subject_relief": {
+   "p10": 0.198,
+   "median": 0.381,
+   "p90": 0.736,
+   "by_category": {
+    "1": 0.474,
+    "4": 0.344,
+    "3": 0.398,
+    "2": 0.361,
+    "5": 0.324
+   }
+  },
+  "viewpoint_depth.background_depth_range": {
+   "p10": 0.12,
+   "median": 0.717,
+   "p90": 0.862,
+   "by_category": {
+    "1": 0.303,
+    "4": 0.781,
+    "3": 0.809,
+    "2": 0.775,
+    "5": 0.767
+   }
+  }
+ }
+}
