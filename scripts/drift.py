@@ -29,7 +29,7 @@ from embed import MODELS, NEUTRAL, load_hf
 from estimate import write_marigold, write_masks
 from measure import measure_card
 
-FIRST_RUN = ("western", "sci-fi", "horror")
+FIRST_RUN = ("first/western", "first/sci-fi", "first/horror")
 FIELDS = ("shape_proportions", "surface_finish", "color_palette", "value_contrast", "edges_linework",
           "composition_hierarchy", "lighting_shading")
 

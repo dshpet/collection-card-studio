@@ -6,10 +6,7 @@ from common import ANALYSIS, load_json, save_json
 
 import numpy as np
 
-from style import FIXES
-
-BAND_FIELDS = [path for path in FIXES if "." in path]
-# Depth, attention and light need heavy model maps, so they stay out of the fast check.
+from style import BANDS
 
 
 def value(card, path):
@@ -22,7 +19,7 @@ def bands(cards):
     for card in cards:
         groups[card["form"]["staging"]["art_category"]].append(card)
     return {category: {path: [round(float(v), 3) for v in np.percentile(
-        [value(c, path) for c in members], [2, 98])] for path in BAND_FIELDS}
+        [value(c, path) for c in members], [2, 98])] for path in BANDS}
         for category, members in groups.items()}
 
 

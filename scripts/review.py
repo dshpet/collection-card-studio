@@ -2,6 +2,8 @@
 
     review.py study                 specialists read real cards and describe the style
     review.py twins r2              blind pairs: a run's twins against the real cards
+
+make_set.py calls choose() and review_variant() for new cards.
 """
 
 import argparse
@@ -21,6 +23,8 @@ AGENTS = ANALYSIS / "agents"
 SIZE = (430, 480)
 STUDY_CATEGORIES = "1234"
 LESSONS = ("t02", "t04", "t09", "t11")  # one twin per category, shown with its answer
+LESSON_ROUNDS = ("baseline", "r3", "r7")  # too toy, too realistic, closest
+CONTROLS = 2
 
 
 def text():
@@ -54,6 +58,7 @@ DIRECTOR_SCHEMA = strict({
     "style_text": text(),
     "cards": array(strict({"pair": text(), "keep": {"type": "boolean"}, "note": text()})),
     "summary": text()})
+PICK_SCHEMA = strict({"picks": array(strict({"card": text(), "pick": {"type": "integer"}, "why": text()}))})
 
 
 def card_image(card):
@@ -264,7 +269,7 @@ def blind_pairs(entries, seed):
 
 
 def lesson_sheets(lessons, role, folder):
-    """Twins from an earlier round with their answers, so a reviewer learns which way differences run."""
+    """Twins from earlier rounds with their answers, so a reviewer learns which way differences run."""
     return [pair_sheet({"A": real, "B": generated}, role, folder / "sheets" / f"{role}_lesson{i}.png", ("REAL", "GENERATED"))
             for i, (generated, real) in enumerate(lessons)]
 
@@ -319,6 +324,83 @@ def score(pairs, reports):
     return rows
 
 
+def candidate_sheet(real, paths, out):
+    """A real card and the numbered candidates of a new card, two to a row."""
+    tiles = [labelled(card_image(real), "REAL")]
+    tiles += [labelled(card_image({"file": str(path.relative_to(ROOT))}), str(i)) for i, path in enumerate(paths, 1)]
+    rows = (len(tiles) + 1) // 2
+    sheet = Image.new("RGB", (SIZE[0] * 2 + 12, rows * (SIZE[1] + 12)), "white")
+    for index, tile in enumerate(tiles):
+        sheet.paste(tile, (index % 2 * (SIZE[0] + 12), index // 2 * (SIZE[1] + 12)))
+    sheet.save(out)
+    return out
+
+
+def lessons_for():
+    return [entry for label in LESSON_ROUNDS for entry in twin_entries(label)[0] if entry[0]["twin"] in LESSONS]
+
+
+def choose(run, briefs, history, rater="claude-opus-5-5"):
+    """Mark each card's best candidate, judged by eye beside a real card."""
+    folder = run / "choose"
+    (folder / "sheets").mkdir(parents=True, exist_ok=True)
+    real = {c["id"]: c for c in real_cards()}
+    lessons = lesson_sheets(lessons_for(), "staging_detail", folder)
+    sheets, options = [], {}
+    for brief in briefs:
+        tries = [t for t in history[brief["id"]] if t["passed"]] or history[brief["id"]]
+        options[brief["id"]] = tries
+        paths = [run / "tries" / f"{t['try_id']}.png" for t in tries]
+        sheets.append(candidate_sheet(real[brief["references"][0]], paths, folder / "sheets" / f"{brief['id']}.png"))
+    listing = "\n".join(f"{brief['id']} ({brief['card']['name']}) is image {i + len(lessons) + 1}" for i, brief in enumerate(briefs))
+    prompt = (f"{(AGENTS / 'art_director.md').read_text('utf-8')}\n\nThe first {len(lessons)} images are lessons: the label "
+              "shows which card is REAL and which was GENERATED, with a lens below. Study which way the differences run. "
+              "Each later image shows one REAL card, of another object, and numbered candidates for a new card:\n"
+              f"{listing}\nFor each new card, pick the candidate that could sit beside the real card unnoticed: true "
+              "proportions, no invented extras, instantly read as the object. Reply with the card id and the number.")
+    answer = ask(rater, prompt, [*lessons, *sheets], PICK_SCHEMA)
+    picks = {p["card"]: p["pick"] for p in answer["picks"]} if answer else {}
+    for brief in briefs:
+        tries = options[brief["id"]]
+        tries[min(max(picks.get(brief["id"], 1), 1), len(tries)) - 1]["chosen"] = True
+    save_json(folder / f"picks_{briefs[0]['variant']}.json", answer)
+
+
+def review_variant(run, variant, round_number, briefs, history, rater):
+    """Blind review of a variant with hidden real controls. Returns {brief id: edit note}."""
+    from estimate import write_marigold
+    from make_set import best_try
+    from measure import measure_card
+
+    real = {c["id"]: c for c in real_cards()}
+    entries, ids = [], {}
+    for brief in briefs:
+        best = best_try(history[brief["id"]])
+        record = {"id": best["try_id"], "file": str((run / "tries" / f"{best['try_id']}.png").relative_to(ROOT)),
+                  "derived": run / "derived", "name": brief["card"]["name"], "real": False}
+        entries.append((record, real[brief["references"][0]]))
+        ids[best["try_id"]] = brief["id"]
+    write_marigold([e[0] for e in entries], "cuda", run / "derived")
+    for record, _ in entries:
+        record["measured"] = measure_card(record, run / "derived")
+    used = {i for brief in briefs for i in brief["references"]}
+    spare = [c for c in real.values() if c["id"] not in used and c["id"] not in twin_entries("baseline")[1]]
+    rng = random.Random(f"{run.name}{variant}{round_number}")
+    entries += [tuple(rng.sample(spare, 2)) for _ in range(CONTROLS)]
+    rng.shuffle(entries)
+
+    name = f"{run.name}/v{variant}r{round_number}"
+    pairs = blind_pairs(entries, name)
+    reports = specialists(name, pairs, lessons_for(), used, rater, list(ROLES))
+    direction = direct(name, pairs, reports, None, rater)
+    report(name, pairs, reports, direction)
+    if not direction:
+        return {}
+    by_pair = {p["pair"]: p[p["odd"]]["id"] for p in pairs if p["odd"] != "neither"}
+    return {ids[by_pair[card["pair"]]]: card["note"] for card in direction["cards"]
+            if card["pair"] in by_pair and not card["keep"] and card["note"]}
+
+
 def direct(name, pairs, reports, style_text, rater):
     folder = ROOT / "runs" / "review" / name
     out = folder / "art_director.json"
@@ -328,11 +410,15 @@ def direct(name, pairs, reports, style_text, rater):
                           f"{'control, both real' if p['odd'] == 'neither' else p['odd'] + ' is generated'}"
                           for p in pairs)
     sheets = [folder / "sheets" / f"staging_detail_{p['pair']}.png" for p in pairs]
+    style_part = (f"The generator's current style text:\n{style_text}\n\n" if style_text else "")
+    style_ask = ("Return style_text: a full replacement for the current text, at most 110 words. " if style_text else
+                 "The style text is settled: leave style_text empty. In a pair of different objects, the real card shows "
+                 "the look, not the object. ")
     prompt = (f"{(AGENTS / 'art_director.md').read_text('utf-8')}\n\nEach image is one pair of cards, A and B on top.\n"
-              f"Answer key:\n{unblinded}\n\nThe generator's current style text:\n{style_text}\n\n"
+              f"Answer key:\n{unblinded}\n\n{style_part}"
               f"Specialist reports:\n{json.dumps(reports, ensure_ascii=False)}\n\n"
-              "Return issues, ranked. Return style_text: a full replacement for the current text, at most 110 words. "
-              "For each generated card return keep, or a note for its redraw. Summary: is this close to the real cards?")
+              f"Return issues, ranked. {style_ask}"
+              "For each generated card return keep, or a note for its edit. Summary: is this close to the real cards?")
     result = ask(rater, prompt, sheets, DIRECTOR_SCHEMA)
     if result:
         save_json(out, result)
@@ -351,7 +437,7 @@ def report(name, pairs, reports, direction):
     if direction:
         lines += ["", "## Art director", "", direction["summary"], ""]
         lines += [f"{i}. **{issue['issue']}** {issue['instruction']}" for i, issue in enumerate(direction["issues"], 1)]
-        lines += ["", "Style text:", "", direction["style_text"], ""]
+        lines += ["", "Style text:", "", direction["style_text"], ""] if direction["style_text"] else [""]
         lines += [f"- {card['pair']}: {'keep' if card['keep'] else card['note']}" for card in direction["cards"]]
     (folder / "report.md").write_text("\n".join(lines) + "\n", "utf-8")
 

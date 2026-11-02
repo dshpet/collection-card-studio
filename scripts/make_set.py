@@ -1,6 +1,7 @@
 """Turn a theme and producer wishes into ten-card set variants, with no manual steps.
 
-Stages: plan, brief, draw, check, correct, deliver. Results land in runs/<slug>/ and finished work is kept.
+Stages: plan, brief, draw candidates, check, choose, review, edit, deliver.
+Results land in runs/<slug>/ and finished work is kept.
 """
 
 import argparse
@@ -24,10 +25,11 @@ from estimate import write_masks
 from form import CARD_FORM, card_schema
 from measure import measure_card
 from rate import ask_claude, ask_codex, card_prompt
-from style import CATEGORY_RULES, FIXES, PATTERNS, STYLE
+from style import CATEGORY_RULES, EDIT, PATTERNS, STYLE
 
 SIZE = (430, 480)
-ROUNDS = 3
+CANDIDATES = 3
+REVIEW_ROUNDS = 2
 ALLOWED_MISSES = 2
 RATED = ["identity", "staging"]
 GROUPS = {"1": "floating", "2": "standing", "3": "standing", "4": "environment", "5": "environment"}
@@ -67,16 +69,17 @@ Producer wishes: {wishes or "none"}
 Design {variants} clearly different versions of one ten-card set for this theme.
 
 Rules learned from the game's real sets:
-- title: 1-3 plain words that name the topic. A story behind the set is optional. Give it in one line or leave it empty.
+- title: the topic itself, in 1-2 plain words, like "Beach" or "Road Trip". A story behind the set is optional. Give it in one line or leave it empty.
 - Card names: 1-2 plain words.
 - Pick the first things anyone would name for the topic: instantly recognizable objects with a simple, distinctive silhouette.
 - Every object must belong to this specific topic, not to the wider collection. A film genre set shows that genre's world, not generic cinema items such as film reels or popcorn.
-- No characters, people or animal heroes, no brands, logos or real franchises. Keep dark topics playful and cute, never gory or violent.
+- No characters or people, no brands, logos or real franchises. An animal may appear as an object, at most once in a set. No weapons, blood or gore. Keep dark topics playful.
+- Cards carry no text, so skip objects that need readable words to make sense.
 - Real sets use {knowledge['set_ranges']['object_classes'][0]}-{knowledge['set_ranges']['object_classes'][1]} object classes and {knowledge['set_ranges']['scale_classes'][0]}-{knowledge['set_ranges']['scale_classes'][1]} real-world sizes, from handheld things to vehicles and buildings.
 - Every version uses all four art categories: 1 floating object, 2 object on a plain ledge, 3 object on a real surface, 4 object in an environment. Use 2-4 of category 1, 1-2 of category 2, 2-4 of category 3 and 1-5 of category 4.
 - For category 4 use pattern full_scene. Otherwise pick a graphic pattern.
-- subject: one sentence on what to draw, with the two or three features that make it recognizable.
-- Give every card a different color pairing. hero_colors must oppose backdrop_colors.
+- subject: one plain sentence on what to draw, with the two or three features that make it recognizable. Name the object and its parts only, with no mood, style or props.
+- hero_colors are the object's natural colors. Give every card a different backdrop, whose color contrasts with the hero.
 - surface_or_setting: the surface for categories 2-3 and the place for category 4, empty for category 1.
 - Versions may share at most 5 objects.
 
@@ -152,13 +155,15 @@ def make_briefs(plan, cards, seed):
     return briefs
 
 
-def draw_card(run, brief, attempt, fixes, use_references):
+def draw_card(run, brief, attempt, fixes, use_references, edit=None):
+    """Draw a card from its brief, or with edit set to a draft, change only what the notes name."""
     try_id = f"{brief['id']}_{attempt}"
     out, full = run / "tries" / f"{try_id}.png", run / "full" / f"{try_id}.png"
     if out.exists():
         return try_id
     references = [ROOT / f"materials/card_examples/{i}.png" for i in brief["references"]]
-    prompt = card_brief(brief["card"], fixes)
+    prompt = EDIT.format(notes="\n".join(fixes)) if edit else card_brief(brief["card"], fixes)
+    references += [edit] if edit else []
     (run / "prompts").mkdir(exist_ok=True)
     (run / "prompts" / f"{try_id}.txt").write_text(prompt, "utf-8")
     for tries_left in (1, 0):
@@ -232,7 +237,7 @@ def check_tries(run, tries, knowledge, workers):
 
 
 def best_try(tries):
-    return min(tries, key=lambda t: (not t["passed"], len(t["issues"]), len(t["misses"])))
+    return min(tries, key=lambda t: (not t.get("chosen"), not t["passed"], len(t["issues"]), len(t["misses"])))
 
 
 def contact_sheet(paths, out, columns=5):
@@ -276,7 +281,9 @@ def main():
     parser.add_argument("--wishes", default="")
     parser.add_argument("--variants", type=int, default=3)
     parser.add_argument("--workers", type=int, default=4)
-    parser.add_argument("--rounds", type=int, default=ROUNDS)
+    parser.add_argument("--candidates", type=int, default=CANDIDATES, help="drawings per card to choose from")
+    parser.add_argument("--review-rounds", type=int, default=REVIEW_ROUNDS, help="0 skips the specialists")
+    parser.add_argument("--rater", default="claude-opus-5-5")
     parser.add_argument("--plan", help="reuse the plan.json of an earlier run")
     parser.add_argument("--no-references", action="store_true", help="draw from text alone, as a control")
     args = parser.parse_args()
@@ -300,20 +307,46 @@ def main():
         save_json(briefs_path, make_briefs(plan, cards, seed=args.theme))
     briefs = load_json(briefs_path)
 
-    history = defaultdict(list)
-    for attempt in range(1, args.rounds + 1):
-        waiting = [b for b in briefs if not any(t["passed"] for t in history[b["id"]])]
-        if not waiting:
-            break
-        fixes = {b["id"]: sorted({FIXES[key] for t in history[b["id"]] for key in t["misses"] + t["issues"] if key in FIXES})
-                 for b in waiting}
+    history = defaultdict(list, load_json(run / "check.json") if (run / "check.json").exists() else {})
+
+    def draw_and_check(jobs, attempt):
+        """jobs: (brief, notes, draft). Finished tries stay in the history."""
         with ThreadPoolExecutor(args.workers) as pool:
-            done = list(pool.map(lambda b: draw_card(run, b, attempt, fixes[b["id"]], not args.no_references), waiting))
-        tries = [{"try_id": try_id, "brief_id": b["id"], "card": b["card"]} for b, try_id in zip(waiting, done) if try_id]
-        for entry in check_tries(run, tries, knowledge, args.workers):
+            done = list(pool.map(lambda job: draw_card(run, job[0], attempt, job[1], not args.no_references, job[2]), jobs))
+        seen = {t["try_id"] for tries in history.values() for t in tries}
+        tries = [{"try_id": try_id, "brief_id": job[0]["id"], "card": job[0]["card"]}
+                 for job, try_id in zip(jobs, done) if try_id and try_id not in seen]
+        for entry in check_tries(run, tries, knowledge, args.workers) if tries else []:
             history[entry["brief_id"]].append(entry)
         save_json(run / "check.json", history)
-        print(f"round {attempt}: drew {len(tries)}, passed {sum(t['passed'] for t in tries)}", flush=True)
+        return tries
+
+    for attempt in range(1, args.candidates + 1):
+        tries = draw_and_check([(b, [], None) for b in briefs], attempt)
+        print(f"candidates {attempt}: drew {len(tries)}, passed {sum(t.get('passed', False) for t in tries)}", flush=True)
+
+    if args.review_rounds:
+        from review import choose, review_variant
+
+        for variant in range(1, len(plan["variants"]) + 1):
+            chosen = [b for b in briefs if b["variant"] == variant]
+            if not any(t.get("chosen") for b in chosen for t in history[b["id"]]):
+                choose(run, chosen, history)
+            save_json(run / "check.json", history)
+            for round_number in range(1, args.review_rounds + 1):
+                notes = review_variant(run, variant, round_number, chosen, history, args.rater)
+                print(f"variant {variant} review {round_number}: {len(notes)} of {len(chosen)} cards need edits", flush=True)
+                if not notes:
+                    break
+                drafts = {b["id"]: run / "tries" / f"{best_try(history[b['id']])['try_id']}.png" for b in chosen}
+                attempt = args.candidates + round_number
+                jobs = [(b, [notes[b["id"]]], drafts[b["id"]]) for b in chosen if b["id"] in notes]
+                for entry in draw_and_check(jobs, attempt):
+                    if entry.get("passed") or not entry.get("issues"):
+                        for old in history[entry["brief_id"]]:
+                            old.pop("chosen", None)
+                        entry["chosen"] = True
+                save_json(run / "check.json", history)
 
     deliver(run, plan, briefs, history)
     print("done:", run / "report.md")

@@ -1,8 +1,8 @@
 """What the reference analysis says about the art, written for the generator."""
 
 STYLE = """The attached images are real cards from the game. Draw one new card that could sit beside them unnoticed: the same rendering, lighting, finish, color and level of detail.
-Draw the object at its true real-world proportions, seen through a long lens from a low camera, so near parts never balloon. Tubes, ropes, rims, handles and hoops stay thin, and small parts stay small.
-Surfaces are smooth and calm, with a few quiet marks. Cloth, cord and wood are matte. Only metal and glaze shine.
+Draw the object with its true proportions and mild perspective. It spans about four fifths of the card. Forms are smooth, with small soft bevels. Rims, handles, cords, bands and posts stay slim, and small parts stay small.
+Each material looks like itself, with a little quiet detail and natural local color. Shiny materials carry one soft highlight. Cloth, cord and wood stay matte.
 Draw only what the subject names. No text, letters, numbers, frame, border or watermark."""
 
 CATEGORY_RULES = {
@@ -12,6 +12,11 @@ CATEGORY_RULES = {
     "4": "A close view of the object in its real place, central and large. The setting is open and calm: a few large soft shapes, with nothing added around the object.",
 }
 
+EDIT = """The last attached image is a draft of a new card. The other images are real cards from the game.
+Redraw the draft with these changes and keep everything else: the object, its pose, the backdrop and the colors.
+{notes}
+No text, letters, numbers, frame, border or watermark."""
+
 PATTERNS = {
     "plain_gradient": "a smooth gradient", "concentric_rings": "tone-on-tone concentric rings",
     "rays": "tone-on-tone radial rays", "stripes": "tone-on-tone wide stripes", "waves": "tone-on-tone soft waves",
@@ -19,27 +24,10 @@ PATTERNS = {
     "plain_wall": "a plain wall", "full_scene": "a simple scene",
 }
 
-FIXES = {
-    "composition_hierarchy.subject_area": "Make the hero fill more of the card.",
-    "composition_hierarchy.box_width": "Make the hero wider so it spans most of the card.",
-    "composition_hierarchy.box_height": "Make the hero taller so it spans most of the card.",
-    "composition_hierarchy.center_x": "Center the hero horizontally.",
-    "composition_hierarchy.center_y": "Center the hero vertically.",
-    "composition_hierarchy.margin_min": "Keep a small even margin around the hero.",
-    "color_palette.chroma_subject": "Make the hero's colors more saturated.",
-    "color_palette.chroma_background": "Make the background more saturated.",
-    "color_palette.hue_gap": "Give the hero a color opposite to the background.",
-    "color_palette.shadow_chroma_kept": "Keep shadows colorful, never grey.",
-    "value_contrast.lightness_mean": "Keep the card bright overall.",
-    "value_contrast.lightness_p1": "Avoid pure black areas.",
-    "value_contrast.rms_contrast": "Keep tones within a soft, moderate range.",
-    "value_contrast.boundary_contrast": "Separate the hero's outline clearly from the background.",
-    "surface_finish.detail_subject": "Simplify the hero: fewer small details.",
-    "edges_linework.edge_density_subject": "Use larger, simpler shapes on the hero.",
-    "edges_linework.edge_density_background": "Simplify the background.",
-    "style": "Match the reference cards' render and finish more closely.",
-    "art_category": "Follow the staging instructions exactly.",
-    "support": "Follow the staging instructions exactly: floating, on a surface or in an environment as asked.",
-    "pattern": "Use exactly the requested backdrop.",
-    "identity": "Make the object instantly recognizable, keeping its most typical features.",
-}
+# Measured fields checked against the real range of each category.
+BANDS = ("composition_hierarchy.subject_area", "composition_hierarchy.box_width", "composition_hierarchy.box_height",
+         "composition_hierarchy.center_x", "composition_hierarchy.center_y", "composition_hierarchy.margin_min",
+         "color_palette.chroma_subject", "color_palette.chroma_background", "color_palette.hue_gap",
+         "color_palette.shadow_chroma_kept", "value_contrast.lightness_mean", "value_contrast.lightness_p1",
+         "value_contrast.rms_contrast", "value_contrast.boundary_contrast", "surface_finish.detail_subject",
+         "edges_linework.edge_density_subject", "edges_linework.edge_density_background")

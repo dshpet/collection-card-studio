@@ -25,7 +25,7 @@ Which slot is the odd one out? Give your best guess even if unsure."""
 
 
 def off_style(run_name):
-    run = ROOT / "runs" / "controls-off-style"
+    run = ROOT / "runs" / "first" / "controls-off-style"
     card = load_json(ROOT / "runs" / run_name / "plan.json")["variants"][0]["cards"][0]
 
     def one(name):
@@ -54,7 +54,7 @@ def off_style(run_name):
 
 
 def acceptance(run_names, trials):
-    run = ROOT / "runs" / "acceptance"
+    run = ROOT / "runs" / "first" / "acceptance"
     (run / "sheets").mkdir(parents=True, exist_ok=True)
     rng = random.Random(7)
     real = [c for c in load_json(ANALYSIS / "cards.json") if c["form"]["staging"]["art_category"] != "5"]
