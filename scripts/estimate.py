@@ -15,7 +15,7 @@ PAD = 0.015
 def rated_boxes(record, size):
     """Every rater's box in pixels. Some raters answer on a 0-1000 scale."""
     boxes = []
-    for rater in ("codex", "gemma4", "qwen3.8"):
+    for rater in ("codex", "claude", "gemma4", "qwen3.8"):
         path = ANALYSIS / "ratings" / rater / f"{record['id']}.json"
         if path.exists():
             box = load_json(path)["subject_box"]

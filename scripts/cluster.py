@@ -10,7 +10,7 @@ from sklearn.metrics import adjusted_mutual_info_score, silhouette_score
 
 
 def rated_field(records, section, field):
-    folder = ANALYSIS / "ratings" / "gemma4"
+    folder = ANALYSIS / "ratings" / "codex"
     values = []
     for record in records:
         path = folder / f"{record['id']}.json"
