@@ -35,6 +35,16 @@ CARD_FORM = {
         "background_detail": scale("plain field", "busy full scene"),
         "secondary_objects": choice("none", "one", "few", "many"),
     },
+    "backdrop": {
+        "pattern": choice(
+            "plain_gradient", "concentric_rings", "rays", "stripes", "waves", "diamonds",
+            "repeated_motif", "plain_wall", "full_scene"),
+        "tone": choice("tone_on_tone", "two_tone", "multicolor", "natural_scene"),
+        "glow_behind_subject": choice("none", "soft", "strong"),
+        "surface_kind": choice("none", "plain_colored_surface", "real_material_surface", "environment_ground"),
+        "rendering_vs_subject": choice("same_finish", "flatter_than_subject", "more_painterly_than_subject"),
+        "game_motif": choice("none", "house_logo", "animal_logo", "other_logo"),
+    },
     "lighting_shading": {
         "light_direction": choice(
             "upper_left", "top", "upper_right", "left", "front", "right", "no_clear_direction"),
@@ -97,7 +107,7 @@ CARD_FORM = {
         "material_realism": scale("symbolic materials", "convincing materials"),
         "note": NOTE,
     },
-    "rhythm_staging": {
+    "pose_rhythm": {
         "pose": choice("upright_static", "slight_tilt", "strong_tilt", "dynamic"),
         "symmetry": scale("asymmetric", "symmetric"),
         "repetition": scale("no repeated motifs", "strong repeated motifs"),
@@ -156,13 +166,14 @@ def _sections(form):
             for section, fields in form.items()}
 
 
-def card_schema():
-    return _object(_sections(CARD_FORM))
+def card_schema(sections=None):
+    form = {name: CARD_FORM[name] for name in sections or CARD_FORM}
+    return _object(_sections(form))
 
 
 def set_schema():
     card = _object({"slot": {"type": "integer"}, "name": {"type": "string"},
-                    "stars": {"type": "integer"}, "gold_frame": {"type": "boolean"}})
+                    "gold_frame": {"type": "boolean"}})
     return _object({"cards": {"type": "array", "items": card}, **_sections(SET_FORM)})
 
 

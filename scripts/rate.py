@@ -12,7 +12,7 @@ from pathlib import Path
 
 from PIL import Image
 
-from common import ANALYSIS, ROOT, cards, manifest, save_json
+from common import ANALYSIS, ROOT, cards, load_json, manifest, save_json
 from form import CARD_FORM, SET_FORM, card_schema, guide, set_schema
 
 CATEGORIES = """art_category uses the art guide:
@@ -22,25 +22,32 @@ CATEGORIES = """art_category uses the art guide:
 4 = object set into a realistic environment, still central.
 5 = a scene with one or two characters acting out a small story."""
 
-CARD_PROMPT = f"""You are a senior game art director. Fill the form for this mobile-game collection card.
+CARD_PROMPT = """You are a senior game art director. Fill the form for this mobile-game collection card.
 Judge only what is visible. Use the scales evenly: 3 is typical for stylised mobile-game art.
-{CATEGORIES}
-{guide(CARD_FORM)}"""
+{categories}
+surface_kind: plain_colored_surface is a simple colored ledge; real_material_surface shows wood, stone, sand or grass.
+{fields}"""
+
+
+def card_prompt(sections):
+    fields = guide({name: CARD_FORM[name] for name in sections})
+    return CARD_PROMPT.format(categories=CATEGORIES, fields=fields)
+
 
 SET_PROMPT = f"""You are a senior game producer. This screenshot shows one ten-card set from a collection.
-List the ten cards in reading order with slot 0-9, printed name, the number of stars above the card,
-and whether the frame is gold. Then fill the form for the set as a whole.
+List the ten cards in reading order with slot 0-9, printed name, and whether the frame is gold. Then fill the form for the set as a whole.
 {guide(SET_FORM)}"""
 
 
 def ask_codex(prompt, image, schema):
+    attachments = ["-i", str(image)] if image else []
     with tempfile.TemporaryDirectory() as folder:
         folder = Path(folder)
         (folder / "schema.json").write_text(json.dumps(schema))
         command = ["codex", "exec", "--skip-git-repo-check", "--ephemeral", "--ignore-user-config",
                    "-m", "gpt-6.1-sol", "-c", 'model_reasoning_effort="low"', "-s", "read-only",
                    "-C", str(folder), "--output-schema", str(folder / "schema.json"),
-                   "-o", str(folder / "out.json"), "-i", str(image), "--", prompt]
+                   "-o", str(folder / "out.json"), *attachments, "--", prompt]
         done = subprocess.run(command, capture_output=True, text=True, timeout=600)
         if done.returncode:
             raise RuntimeError(done.stderr[-400:])
@@ -48,10 +55,11 @@ def ask_codex(prompt, image, schema):
 
 
 def ask_claude(prompt, image, schema):
+    tools = ["--allowedTools", "Read", "--add-dir", str(Path(image).parent)] if image else ["--tools", ""]
+    request = f"Read the image {image}, then answer.\n{prompt}" if image else prompt
     command = ["claude", "-p", "--setting-sources", "", "--strict-mcp-config", "--disable-slash-commands",
                "--model", "claude-sonnet-5-5", "--output-format", "json",
-               "--json-schema", json.dumps(schema), "--allowedTools", "Read",
-               "--add-dir", str(Path(image).parent), "--", f"Read the image {image}, then answer.\n{prompt}"]
+               "--json-schema", json.dumps(schema), *tools, "--", request]
     with tempfile.TemporaryDirectory() as folder:
         done = subprocess.run(command, capture_output=True, text=True, timeout=600,
                               stdin=subprocess.DEVNULL, cwd=folder)
@@ -72,8 +80,7 @@ def ask_ollama(model, prompt, image, schema):
 
 
 def run_one(rater, prompt, image, schema, out):
-    if out.exists():
-        return "skip"
+    """Ask one rater and merge the answer into its record, so new form sections fill in later."""
     for attempt in (1, 2):
         try:
             if rater == "codex":
@@ -82,12 +89,21 @@ def run_one(rater, prompt, image, schema, out):
                 result = ask_claude(prompt, image, schema)
             else:
                 result = ask_ollama(rater, prompt, image, schema)
-            save_json(out, result)
+            save_json(out, {**(load_json(out) if out.exists() else {}), **result})
             return "ok"
         except Exception as error:
             print(f"{out.stem} attempt {attempt}: {type(error).__name__} {str(error)[:160]}",
                   file=sys.stderr, flush=True)
     return "failed"
+
+
+def card_job(rater, record, folder):
+    out = folder / f"{record['id']}.json"
+    done = load_json(out) if out.exists() else {}
+    missing = [section for section in CARD_FORM if section not in done]
+    if not missing:
+        return None
+    return rater, card_prompt(missing), ROOT / record["file"], card_schema(missing), out
 
 
 def shrunk(record, folder):
@@ -114,8 +130,7 @@ def main():
 
     with tempfile.TemporaryDirectory() as scratch, ThreadPoolExecutor(args.workers) as pool:
         if args.target == "cards":
-            jobs = [(args.rater, CARD_PROMPT, ROOT / r["file"], card_schema(),
-                     folder / f"{r['id']}.json") for r in records]
+            jobs = [job for job in (card_job(args.rater, r, folder) for r in records) if job]
         else:
             jobs = [(args.rater, SET_PROMPT, shrunk(r, scratch), set_schema(),
                      ANALYSIS / "ratings" / f"sets_{name}" / f"{r['id']}.json") for r in records]

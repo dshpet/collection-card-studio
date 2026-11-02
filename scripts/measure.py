@@ -71,13 +71,20 @@ def light_fit(lightness, normals, mask):
             "light_fit": round(float(fit), 3)}
 
 
-def measure_card(record):
+def hue_of(hex_color):
+    rgb = np.array([int(hex_color[i:i + 2], 16) / 255 for i in (1, 3, 5)])
+    lab = to_oklab(rgb)
+    return float(np.degrees(np.arctan2(lab[2], lab[1])) % 360)
+
+
+def measure_card(record, derived=DERIVED):
+    """Works for reference and generated cards. Depth, attention and light need their model maps."""
     card_id = record["id"]
     rgb = np.asarray(Image.open(ROOT / record["file"]).convert("RGB"), dtype=np.float64) / 255
     lab = to_oklab(rgb)
     lightness = lab[..., 0]
     chroma = np.hypot(lab[..., 1], lab[..., 2])
-    mask = np.asarray(Image.open(DERIVED / "masks" / f"{card_id}.png").convert("L")) > 127
+    mask = np.asarray(Image.open(derived / "masks" / f"{card_id}.png").convert("L")) > 127
     background = ~mask
     height, width = mask.shape
 
@@ -96,30 +103,30 @@ def measure_card(record):
     edge_line = edges > 0.08
     detail = np.abs(ndimage.laplace(lightness))
 
-    depth_path = DERIVED / "depth" / f"{card_id}.png"
-    depth = np.asarray(Image.open(depth_path), dtype=np.float64) / 65535
     tilt_x, tilt_y = plane_tilt(lightness, mask)
 
     lighting = {"light_bias_azimuth": round(float(np.degrees(np.arctan2(tilt_y, tilt_x))) % 360, 1),
                 "light_bias_strength": round(float(np.hypot(tilt_x, tilt_y)), 3)}
-    normals_path = DERIVED / "normals" / f"{card_id}.npy"
+    normals_path = derived / "normals" / f"{card_id}.npy"
     if normals_path.exists():
         normals = np.load(normals_path).astype(np.float64)
         lighting.update(light_fit(lightness, normals, mask))
-    shading_path = DERIVED / "shading" / f"{card_id}.png"
+    shading_path = derived / "shading" / f"{card_id}.png"
     if shading_path.exists():
         shading = np.asarray(Image.open(shading_path).convert("L"), dtype=np.float64) / 255
         low, high = np.percentile(shading[mask], [5, 95])
         lighting["shading_range"] = round(float(high - low), 3)
 
-    attention = np.load(DERIVED / "attention" / f"{card_id}.npy").astype(np.float64)
-    attention = attention / attention.sum()
-    peak_y, peak_x = np.unravel_index(np.argmax(attention), attention.shape)
-    filled_density = attention[attention > 0]
+    darkest = lightness[mask] <= np.percentile(lightness[mask], 25)
+    colors = {"subject": palette(rgb[mask], lab[mask], 5), "background": palette(rgb[background], lab[background], 3)}
+    hue_gap = abs(hue_of(colors["subject"][0]["hex"]) - hue_of(colors["background"][0]["hex"])) if all(colors.values()) else 0.0
+
     return {
         "color_palette": {
-            "palette_subject": palette(rgb[mask], lab[mask], 5),
-            "palette_background": palette(rgb[background], lab[background], 3),
+            "palette_subject": colors["subject"],
+            "palette_background": colors["background"],
+            "hue_gap": round(min(hue_gap, 360 - hue_gap), 1),
+            "shadow_chroma_kept": round(float(chroma[mask][darkest].mean() / max(chroma[mask].mean(), 1e-6)), 3),
             "chroma_subject": round(float(chroma[mask].mean()), 4),
             "chroma_background": round(float(chroma[background].mean()), 4),
             "hue_families": round(hue_families(lab), 2),
@@ -129,6 +136,7 @@ def measure_card(record):
             "lightness_mean": round(float(lightness.mean()), 3),
             "lightness_p5": round(float(np.percentile(lightness, 5)), 3),
             "lightness_p95": round(float(np.percentile(lightness, 95)), 3),
+            "lightness_p1": round(float(np.percentile(lightness, 1)), 3),
             "rms_contrast": round(float(lightness.std()), 3),
             "lightness_gap": round(float(lightness[mask].mean() - lightness[background].mean()), 3),
             "color_gap": round(float(np.linalg.norm(lab[mask].mean(0) - lab[background].mean(0))), 3),
@@ -141,10 +149,8 @@ def measure_card(record):
             "center_x": round(float(xs.mean() / width), 3),
             "center_y": round(float(ys.mean() / height), 3),
             "margin_min": round(float(min(x0 / width, y0 / height, 1 - x1 / width, 1 - y1 / height)), 3),
-            "attention_on_subject": round(float(attention[mask].sum()), 3),
-            "attention_peak_x": round(float(peak_x / width), 3),
-            "attention_peak_y": round(float(peak_y / height), 3),
-            "attention_spread": round(float(np.exp(-(filled_density * np.log(filled_density)).sum()) / attention.size), 3),
+            "box_width": round(float((x1 - x0) / width), 3),
+            "box_height": round(float((y1 - y0) / height), 3),
         },
         "shape_proportions": {
             "solidity": round(float(main.solidity), 3),
@@ -165,12 +171,36 @@ def measure_card(record):
             "dark_share": round(float((lightness[mask] < 0.3).mean()), 3),
         },
         "lighting_shading": lighting,
-        "viewpoint_depth": {
-            "subject_relief": round(float(np.percentile(depth[mask], 95) - np.percentile(depth[mask], 5)), 3),
-            "background_depth_range": round(float(
-                np.percentile(depth[background], 95) - np.percentile(depth[background], 5)), 3),
-        },
+        **depth_fields(derived, card_id, mask, background),
+        **attention_fields(derived, card_id, mask),
     }
+
+
+def depth_fields(derived, card_id, mask, background):
+    path = derived / "depth" / f"{card_id}.png"
+    if not path.exists():
+        return {}
+    depth = np.asarray(Image.open(path), dtype=np.float64) / 65535
+    return {"viewpoint_depth": {
+        "subject_relief": round(float(np.percentile(depth[mask], 95) - np.percentile(depth[mask], 5)), 3),
+        "background_depth_range": round(float(
+            np.percentile(depth[background], 95) - np.percentile(depth[background], 5)), 3)}}
+
+
+def attention_fields(derived, card_id, mask):
+    path = derived / "attention" / f"{card_id}.npy"
+    if not path.exists():
+        return {}
+    attention = np.load(path).astype(np.float64)
+    attention = attention / attention.sum()
+    peak_y, peak_x = np.unravel_index(np.argmax(attention), attention.shape)
+    height, width = mask.shape
+    density = attention[attention > 0]
+    return {"attention": {
+        "on_subject": round(float(attention[mask].sum()), 3),
+        "peak_x": round(float(peak_x / width), 3),
+        "peak_y": round(float(peak_y / height), 3),
+        "spread": round(float(np.exp(-(density * np.log(density)).sum()) / attention.size), 3)}}
 
 
 def main():
