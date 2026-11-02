@@ -40,7 +40,9 @@ Decisions:
 - Rebuilt the analysis around one form with fixed fields, covering nine art vectors plus staging, identity and idea.
 - Matched every card to its set and slot from the screenshots.
 - Rated all 160 cards and 16 sets with Codex, Claude, Qwen and Gemma, and measured how far they agree.
-- Tried BiRefNet for masks first, but it needs external code, so masks use SAM 2.1 instead. Several rounds of fixes were needed: depth-based prompts, inverted-mask candidates and rater boxes.
-- Added Depth Anything V2 and Marigold, and embedded each card as whole, subject and background with DINOv2, SigLIP 2 and CSD.
+- Claude Code first blocked external code, so masks started on SAM 2.1 and depth on Depth Anything V2. About 9 of 160 masks stayed wrong despite several fixes.
+- With approval, tested RMBG-2.0, BiRefNet, Depth Anything 3 and DeepGaze. They ran on test cards before the review; the jobs were then stopped until the code was audited.
+- BiRefNet replaced SAM and all the mask-rescue logic. DA3 replaced V2. RMBG-2.0 was dropped: it was weaker on the test cards and its licence is non-commercial.
+- Added Marigold normals and shading, DeepGaze attention, and embedded each card as whole, subject and background with DINOv2, SigLIP 2 and CSD.
 - Dropped star counts because the readings were unreliable.
 - Main results: the look is a soft 3D render, sets hold together by idea rather than look, and five sets without characters are the closest models for the movie sets.

@@ -3,7 +3,8 @@
 - Keep the project lean: short docs, small scripts, and no test suites without a real need.
 - `PROCESS.md` is a draft. It must be reviewed and rewritten before submission.
 - Board images are Playrix art and stay out of git.
-- `.env` holds `HUGGING_FACE_API_KEY`. Never print or commit it.
+- `.env` holds `HUGGING_FACE_API_KEY`. Never print or commit it, and keep it away from external code.
+- External code is pinned to reviewed revisions. Review again before changing one.
 - Sets are topics with 1–3 word names. Rarity does not change the art.
 - Codex is the working generator. Generation waits until reference analysis is done.
 - In analysis, keep measured, model-estimated and rated fields distinct.

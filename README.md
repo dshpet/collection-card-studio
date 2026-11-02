@@ -28,14 +28,13 @@ Start with the [findings](analysis/SYNTHESIS.md). Open `analysis/report.html` fo
 
 ## Reference analysis
 
-Run from the project root. Each step skips finished work where it can. Masks use the rater boxes, so `depth` and the ratings come first.
+Run from the project root. Each step skips finished work where it can.
 
 ```sh
 python scripts/map_sets.py
 python scripts/rate.py cards --rater codex    # also: claude, or an Ollama tag
 python scripts/rate.py sets --rater codex
-python scripts/estimate.py depth
-python scripts/estimate.py masks marigold
+python scripts/estimate.py masks depth attention marigold
 python scripts/embed.py
 python scripts/measure.py
 python scripts/cluster.py
@@ -44,6 +43,19 @@ python scripts/build_report.py
 ```
 
 The forms are defined in `scripts/form.py`. `.env` needs `HUGGING_FACE_API_KEY` only for gated models.
+
+## External code
+
+BiRefNet, Depth Anything 3 and DeepGaze run upstream code, so each is pinned to a reviewed revision. BiRefNet and the DA3 weights are pinned in `scripts/estimate.py`. The source checkouts are:
+
+```sh
+git clone https://github.com/ByteDance-Seed/depth-anything-3.git .models/src/da3
+git -C .models/src/da3 checkout 3d835ec
+git clone https://github.com/matthias-k/DeepGaze.git .models/src/deepgaze
+git -C .models/src/deepgaze checkout c7db17e
+```
+
+The review scanned all 295 fetched Python files, read the code that actually runs, and checked every pickled checkpoint with PyTorch's restricted loader. Short test runs under a Python audit hook showed no network connections, subprocesses or writes outside the project and temp folders. It was not a line-by-line audit, and the hook cannot see inside compiled code. Review again before changing a revision.
 
 ## Materials
 
