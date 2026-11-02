@@ -34,3 +34,13 @@ Decisions:
 - Removed the planner, its test suite and most generated documents.
 - Sets are now topics with 1–3 word names.
 - Analyse every reference in one form before generating anything.
+
+## 2026-11-02: Reference analysis
+
+- Rebuilt the analysis around one form with fixed fields, covering nine art vectors plus staging, identity and idea.
+- Matched every card to its set and slot from the screenshots.
+- Rated all 160 cards and 16 sets with Codex, Claude, Qwen and Gemma, and measured how far they agree.
+- Tried BiRefNet for masks first, but it needs external code, so masks use SAM 2.1 instead. Several rounds of fixes were needed: depth-based prompts, inverted-mask candidates and rater boxes.
+- Added Depth Anything V2 and Marigold, and embedded each card as whole, subject and background with DINOv2, SigLIP 2 and CSD.
+- Dropped star counts because the readings were unreliable.
+- Main results: the look is a soft 3D render, sets hold together by idea rather than look, and five sets without characters are the closest models for the movie sets.

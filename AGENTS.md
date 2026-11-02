@@ -8,3 +8,5 @@
 - Codex is the working generator. Generation waits until reference analysis is done.
 - In analysis, keep measured, model-estimated and rated fields distinct.
 - Reference cards are 430×480, which limits conclusions about fine detail.
+- Findings live in `analysis/SYNTHESIS.md`. The form lives in `scripts/form.py`.
+- `scripts/*.py` run with `.venv/bin/python`. Use `-B` to keep the tree clean.
