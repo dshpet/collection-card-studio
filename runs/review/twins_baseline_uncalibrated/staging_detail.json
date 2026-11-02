@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01 whistle",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Both float on a yellow field with a campfire icon pattern. A's icons are pale and tone-on-tone with a white glow. B's icons are a deeper orange, a little stronger, but still quiet and well behind the hero.",
+   "fix": ""
+  },
+  {
+   "pair": "p02 glove",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "Both are a glove with a ball on a blue sunburst. Neither has props or environment.",
+   "fix": ""
+  },
+  {
+   "pair": "p03 bugle",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "Both float on cyan rays. The only extras are the rope and tassels, which belong to the object.",
+   "fix": ""
+  },
+  {
+   "pair": "p04 camera",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "Both sit on a plain yellow ledge with a soft shadow in front of a ray backdrop. Neither has props.",
+   "fix": ""
+  },
+  {
+   "pair": "p05 cup",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "Both are a cup and saucer on a plain red field with a soft shadow. A has a faint steam wisp and B has a stronger one, which is the same idea in both.",
+   "fix": ""
+  },
+  {
+   "pair": "p06 basket",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "Both stand on a simple ledge in front of a purple wall. A's ledge has a faint reflection and B's is flat yellow. The cloth and apples belong to the basket.",
+   "fix": ""
+  },
+  {
+   "pair": "p07 barrel",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Both put the barrel on a ship deck with a rail in the background. B's plank texture is a bit finer and its wall is a bit busier. Both stay quiet and the barrel stays central.",
+   "fix": ""
+  },
+  {
+   "pair": "p08 taxi",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "Both put the taxi on a road with a few white dashes in front of a ray sky. Neither has extra props.",
+   "fix": ""
+  },
+  {
+   "pair": "p09 computer",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A uses a desk edge with a drawer and B uses a wood tabletop with a visible grain swirl. Both are simple material surfaces in front of an orange gradient. B's grain is a little more detailed.",
+   "fix": ""
+  },
+  {
+   "pair": "p10 tent",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B has a lantern on a rock at lower right, a cushion and bedroll inside the tent, rope-wrapped stakes, yellow flower clusters, foreground bushes and sun rays. Many small invented props crowd the tent. A is a tent in a soft forest with a few large tree shapes and almost nothing else.",
+   "fix": "Draw only the tent on plain grass in front of a few large soft tree shapes. Remove the lantern, rock, bedroll, flowers, foreground bushes and light rays. Keep the stakes simple."
+  },
+  {
+   "pair": "p11 lighthouse",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B builds a whole rocky island with a green bush, a life ring, a rope bollard, an arched door, two lit windows, foam and cloud clusters on both sides. A is the tower against a quiet sky and flat sea with one cloud bank and a single window.",
+   "fix": "Show the lighthouse rising straight from calm sea, with a plain sky and one soft cloud bank behind it. Remove the island rocks, bushes, life ring, rope post, foam and extra windows."
+  },
+  {
+   "pair": "p12 cauldron",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B has a vegetable crate at left, a tree stump with herbs at right, a ring of large rocks round the fire, rope wraps on the beam, scattered pebbles and a bright grass and path backdrop. A has one fire of logs, a few pebbles and a dark, quiet forest.",
+   "fix": "Show only the hanging pot over a small log fire on bare dirt, in front of a dark, quiet forest. Remove the crate, stump, herbs, ring of rocks and scattered grass and path details."
+  }
+ ],
+ "pattern": "The odd cards are the category-4 scenes in p10 to p12, and in each it is B. Each adds many small invented props around the hero: a lantern, flowers and bedroll, a life ring, rope post and rocks, a crate and stump. The real cards keep the environment to a few large, quiet shapes with one or two purposeful props. The category 1 to 3 pairs (p01 to p09) show no staging difference."
+}

@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a thin, dark, unbroken line runs around the whistle body, darkest along the lower right and around the mouth, with a pale glow behind the hero. B: the contour is softer and fades on the lit top edge; only the steel ring is drawn heavily, and the body carries faint scratch marks. Subject density is the same on both (0.039 vs 0.040), and B's fine surface marks keep this from being a clear call.",
+   "fix": "Remove the thin dark line around the whistle. Let the lit top edge melt softly into the background, keep the edge crisp only on the shadow side, and drop the pale glow behind the whistle."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: a heavy double dark line circles the bell rim, the coil and tassels have a thick closed contour, and the knotted cord is cut by deep grooves. A: the bell's top edge is nearly lost in the map, line weight changes around the rim, and the tassels and rope stay fine and light. B's outline measure is the lower of the two (-0.006 vs 0.029), so this rests on the map, where A's figure is inflated by its background rays and thin lines.",
+   "fix": "Thin the edge of the bell and coil, with no dark ring around the rim. Let the lit side of the brass fade softly into the background, and draw the rope and tassels with fine, light separations rather than deep black grooves."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a dark contour wraps the cup wall, handle and saucer, the flower petals and leaves are ringed with dark lines, and the steam has many streaky internal edges. A: the cup outline is lighter on the left, the flower decoration has softer edges, and the steam is one thin soft wisp. B's outline measure is higher (0.037 vs 0.007). A's fine bubble marks at the tea rim are its only busy spot.",
+   "fix": "Remove the dark line around the cup, handle and saucer. Paint the flower with soft colour edges and no dark outline, and make the steam one thin soft wisp with no hard streaks inside."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a stipple of tiny specks sits on the apple skins, and strong dark contours follow the cloth edge and basket rim (outline 0.049). B: apples are smooth with soft interiors and lighter contours (outline -0.052), though it has a hard-edged cast shadow at left and tightly drawn weave. The speck texture matches the lesson generated cards, but B's shadow edge cuts against this, so confidence is low.",
+   "fix": "Make the apple skin smooth with no dots or speckles, and remove the dark line along the cloth edge and basket rim. Let the contours soften where the light hits."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: each iron hoop has closed double lines, and the rim is a heavy dark ring, with even line weight all around the barrel. A: stave gaps are thick and irregular, but hoop edges vary in weight and the top hoop stays light against the sky. Density (0.131 vs 0.113) and outline (-0.030 vs -0.043) do not separate them, so this rests only on line evenness.",
+   "fix": "Draw the hoops with one clean edge rather than double lines, and remove the dark ring around the barrel opening. Let the line weight vary, softer on the lit side and crisper in shadow."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the windshield and side windows have thick double frames, the grille bars are heavy black, and the road stripes are boxed by strong lines (outline 0.084). A: window frames and grille lines are thinner and door seams are light (outline 0.046), though its road has fine speckle. Both exceed the real subject density range (about 0.20 vs a 0.179 maximum), so neither is clean.",
+   "fix": "Thin the window frames to single precise edges and lighten the grille lines. Make door seams hairline, and give the road stripes soft edges with no dark border."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a hard near-black line runs down the tent door, and the tree foliage has dark scalloped contours as strong as the hero's, so the background competes (0.070). A: the tent's edges vary, the top ridge fades, and the foliage is softer and lower in contrast (0.058), so the edge hierarchy favours the tent. Subject density is near equal.",
+   "fix": "Keep the sharpest edges on the tent only. Soften and blur the background trees and leaves with no dark scalloped outlines, and replace the black line at the tent door with a soft fold edge."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a dense patch of fine speckle covers the lower cauldron, and a heavy dark contour runs around the rim and logs, while the pot's middle stays empty. A: the pot wall is smooth with few inner edges, though the ropes and stones are firmly drawn. The speckle patch matches the fine texture noise seen on the lesson generated camera grip and lighthouse stone. A's outline measure is higher (0.046 vs 0.018), so the call rests on the texture.",
+   "fix": "Paint the cauldron as smooth dark metal with no speckle or grainy dots, using a soft glow from the fire. Remove the dark line around the rim and logs."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through contours that are too even and too closed. The hero has an unbroken dark line, doubled lines on rims and frames, and heavy grooves at tassels, grilles and hoops, where real cards let lit edges fade and vary line weight. A second tell is patches of fine stipple on surfaces that real cards keep smooth, such as apple skin, pot metal and leather. Backgrounds can also compete with the hero, with edges drawn as strongly as the subject's. The numbers rarely separate the pairs on their own; most calls come from line evenness and speckle in the maps, and confidence on p01, p04 and p05 is low."
+}

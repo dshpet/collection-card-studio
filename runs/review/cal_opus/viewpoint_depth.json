@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "The two share nearly the same three-quarter top view, so this is a weak call. A: the mouth at lower left opens as a full rectangle, and the top, side and round faces are even patches with clear turns in the normals. B: the mouth is squeezed to a thin curved slot, and the body narrows toward it as if turned harder from the same camera. Its top face rolls softly into the side, and the ring is half hidden behind the barrel.",
+   "fix": "Show the whistle from a mild three-quarter view with the mouth opening as a full, clear rectangle. Keep the top and side as flat faces meeting at a defined turn."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the bugle sits at a tilted diagonal at moderate scale. The bell is larger than the mouthpiece end but stays in mild perspective, and the coil and tube share one tilt. B: the bell at upper right is thrust at the camera and is huge against the small mouthpiece, which is wide-angle foreshortening. The coil and knot below face almost straight on, so bell and loop do not share one view. The hero also nearly fills the card edge to edge.",
+   "fix": "Pull the camera back and use a longer lens. Keep the bell only slightly larger than the far end. Tilt the coil and rope to the same angle as the tube, with margin around the bugle."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cup is large and close, and the rim opens wide so the whole tea surface shows. The normals background is one flat teal with no wall-to-table break, so only the cast shadow suggests a ground plane. B: the cup is smaller and seen from a lower, calmer height with a thinner rim ellipse. A soft table-to-wall break sits behind it, and the cup and saucer rest on that one plane.",
+   "fix": "Lower the camera slightly so the rim is a thinner ellipse. Make the cup smaller on the card and stand it on a soft table surface that meets the back wall behind it."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the camera is low and the table line sits low behind the basket. The rim is a thin ellipse, the apples sit high in front of the view, and the depth is calm. B: the camera is higher, so more of the rim and the inside of the basket shows. The table line climbs to mid-card, and the basket looks chunkier and closer, with the bottom bulging toward the viewer.",
+   "fix": "Lower the camera to just above the rim so the basket's opening is a thin ellipse. Set the table edge low on the card and move the camera back so the basket does not swell toward the viewer."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the camera looks strongly down into the barrel, and the deep top opening shows the inner staves. The barrel fills the card, and the staves lean out in a fisheye bulge. Meanwhile the deck rail behind runs flat and level, so hero and background do not read at the same height. B: the camera is low with a thin top ellipse and gently curved bands. The deck boards and the rail at right converge in one mild perspective with the barrel standing on them.",
+   "fix": "Lower the camera to near the barrel's top so only a thin ellipse of the opening shows. Flatten the curve of the bands, and match the rail and deck boards to the same low view."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the taxi is seen from a mild three-quarter view at some distance, with low height and a gentle size change from front to rear. It stands on one road plane with long lane marks. B: the camera is close and wide, so the grille, bumper and front wheel balloon toward the viewer while the rear shrinks. The roof sign tips up and the hood shows strongly from above. The dashes curve away steeply, so the car looks forced and pushed against the frame.",
+   "fix": "Move the camera back and use a long lens. Make the front and rear of the car nearly equal in scale, keep the camera at about roof height, and leave space around the car on a flat road."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the tent is seen from low and side-on, with its roof slope as one large even patch. It sits on a single green ground plane, and the far trees are hazy and fall back in simple steps. B: the view is higher, with a stacked foreground of big corner leaves, then lantern on rock, tent, bushes, and trees framing the top. The bedding inside tilts up toward the viewer, and every layer is equally crisp, so depth reads as piled props rather than distance.",
+   "fix": "Use a lower side-on view with the tent alone on one simple ground plane. Remove the foreground leaves and props, and let the far trees fade into haze with less detail."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: a near-frontal view with upright posts and a level beam, one pot, a low fire and a simple forest wall behind, so there are few layers. The soup ellipse is somewhat open for that view, but the parts largely agree. B: a higher, wider view where the posts lean in, the log ends and stew surface face the camera, and the fire ring tips up toward the viewer. A crate and stump add side layers, and the beam reads from a different angle than the ground, which gives a forced, bowl-like space.",
+   "fix": "Use a lower, near-straight-on camera with upright posts and a level beam. Show the stew as a thinner ellipse, keep the fire and ground at the same low angle, and remove the side crate and stump."
+  }
+ ],
+ "pattern": "Generated cards bring the camera too close and too high. Wide-angle foreshortening swells the nearest part of the hero (bell, grille, barrel rim), and the top faces open too far. Parts often disagree on the view: the hero, its props and the ground tilt at different angles. Depth is built by piling equally sharp props in foreground and side layers, not by a few calm layers with a simpler background. Real cards use a longer lens, a lower and milder angle, and one clear ground plane."
+}

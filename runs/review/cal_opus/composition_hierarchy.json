@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both whistles sit tilted and centered with similar scale, and both name instantly at thumbnail size. A sits on saturated yellow with the campfire pattern evenly visible, like the real calculator card with its pi pattern. B has a pale white-yellow halo behind the whistle that washes out the campfires, and the card edges crop the pattern. The halo gives B a lit-up spotlight look, as on the generated glove and bugle cards. The ring in B is also partly hidden behind the body, so the silhouette is simpler. This is a weak signal, because hero scale does not separate the two.",
+   "fix": "Remove the bright white glow behind the whistle. Keep the background an even, saturated golden yellow, with the campfire pattern quietly visible across the whole card."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "In A the bugle runs on a diagonal with a slim tube, a small tightly wrapped cord and two small tassels. The bell is the first read and there is open space on all sides. In B the bugle is larger and its bell nearly reaches the top right corner. Two oversized red tassels hang at lower centre and compete with the bell at thumbnail size, so the red reads as loudly as the gold. A bright glow behind the object adds to this. This matches the lessons, where generated heroes fill more of the card with enlarged, chunky parts.",
+   "fix": "Draw the bugle smaller with more empty space around it. Make the cord thin and wrap it neatly around the tube, with two small tassels hanging low. The golden bell should be the first thing seen."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "In A the cup and saucer fill most of the width. The thick blue rim and the large puffy flower on the cup's front read as loud as the cup itself at thumbnail size. A hot orange glow sits behind the cup. In B the cup is smaller and sits low, with a thin rim stripe, a small flower spray and a tall wisp of steam filling the space above. It has more breathing room and one calm read. A follows the lesson direction of a bigger, chunkier hero with a glow behind it.",
+   "fix": "Make the cup smaller on the card, with space on all sides. Use a thin blue line on the rim and a small painted flower on the side. Use a plain deep red background with no glow behind the cup."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both baskets are centered with similar height, and the handle comes close to the top edge on both. In A the large apples fill the basket opening and read first as one simple mass, with a soft check cloth lying flat. In B the apples are smaller, each with a bright green leaf, and the sharp high-contrast check cloth hangs down the front. Those small green spots scatter the eye at thumbnail size, and the eye goes to the cloth rather than the fruit. A glow sits behind the handle. This signal is only moderate.",
+   "fix": "Draw fewer, bigger red apples that fill the top of the basket, without leaves. Make the checked cloth softer and smaller so the apples are seen first. Remove the glow behind the handle."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both barrels are centered at a similar width. A stands taller, closer to the top edge, with a tilted-up open top. Its four heavy grey bands with large rivets create loud repeating stripes that compete with the wood at thumbnail size, and the orange is highly saturated. B sits lower, with space above it, on calmer brown staves with plain bands, and the rail and deck are quiet. A has the chunkier, louder read seen on generated lesson cards, but the difference is small.",
+   "fix": "Lower the barrel slightly so there is more sky above it. Use fewer, thinner metal bands without big rivets, and a calmer natural wood colour."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "In A the taxi sits in the middle of the card at a three-quarter view, with a wide margin of road below and open sky above. The whole car reads as one calm shape. In B the taxi is enlarged, with the front pushed toward the viewer. The huge chrome grille and bumper almost touch the right edge, the left and right margins are tight, and the big roof sign nears the top. The grille and shiny bumper compete with the car shape at thumbnail size. This is the same oversized hero and tight margin seen on the generated camera card.",
+   "fix": "Draw the taxi smaller and further from the viewer, side-on at three-quarter view, with clear road in front of it and space on both sides. Use a slim bumper and a small grille."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "In A a single plain yellow tent sits on the grass, with an empty dark opening and a calm forest behind. The tent is the only focus and there is open grass in front. In B the tent competes with a red lantern on a rock, bedding inside, a rolled mat, rope pegs, yellow flowers and big foreground leaves, and bright branches frame the top corners. At thumbnail size the red lantern pulls the eye away, and the card fills edge to edge with no rest area. This matches the generated lighthouse, where added props crowd the scene.",
+   "fix": "Show only the tent on a simple patch of grass. Remove the lantern, rock, bedding, flowers and big foreground leaves. Keep the forest behind it soft and quiet, with open grass in front."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "In A the pot hangs from a simple frame with a small fire below, which the bottom edge crops. A dim forest sits behind, with a muted ground and few extras, so the pot reads first. In B the pot is surrounded by a vegetable crate on the left, a tree stump with herbs on the right, a ring of large stones and bright grass. The saturated fire and busy stew compete with the pot, and the props fill both side margins. As on the generated lighthouse, side stories crowd the hero and leave no rest space.",
+   "fix": "Remove the vegetable crate, tree stump and ring of stones. Show only the pot hanging over a small fire, against a soft dark forest with plain ground around it."
+  }
+ ],
+ "pattern": "Generated cards push the hero larger and closer to the edges, with oversized chunky parts. They also add a bright glow behind the object and extra props that compete with it, such as lanterns, crates, stumps, leaves and tassels. Real cards keep a calmer single read, with more space around the hero, smaller secondary details and quieter backgrounds. The signal is strongest on scenes and weakest on single objects at matching scale, such as the whistle and basket."
+}

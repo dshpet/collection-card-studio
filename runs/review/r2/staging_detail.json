@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both are category 1, a flat yellow field with a tone-on-tone campfire pattern. A has a pale white-yellow glow hugging the whistle's silhouette, which washes out the field and the flames around it, the same tight halo as the generated baseball glove in lesson 0. B keeps an even amber field with only a soft shadow lower right, closer to the calculator card. Against this, B's flames vary in shape and sit in wobbly rows, while A's look stamped on a clean grid, so the call is weak.",
+   "fix": "Remove the white glow around the whistle. Keep one even warm yellow background, with the campfire pattern only slightly darker than the yellow, and a soft shadow under the whistle."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both are category 1 with a sunburst and no props. B's field is electric cyan going to blue at the corners, with a blown-out white-cyan hotspot behind the bugle coil and around its bell, as on the generated baseball-glove and camera cards. A has even, calm teal rays that converge cleanly behind the coil, with no hot core, matching the real street-lamp card. B's detail value, 0.0085, is at the low end because its rays melt into the glow.",
+   "fix": "Use a calm flat teal sunburst with evenly toned rays. Remove the bright glowing center and the color shift to deep blue in the corners."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A is category 2: a red wall meets a plain orange ledge at a crisp horizon, like the flowerbed card, but its detail value of 0.0059 is below the real range. B is a seamless red sweep with a vignette and a faintly mottled surface. Its detail value of 0.0081 is in range, but the mottling is not something the clean real fields show. Both are simple and neither has invented props, so the two signals cancel out.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both are category 2, a purple wall over a pale ledge. B's wall is heavily saturated with a hot pink glow behind the basket at right, and its ledge is lightly mottled with a long, hard-edged cast shadow to the left. B's detail value of 0.0069 falls below the real floor. A has a soft lilac gradient and a warm ledge with a faint reflection and quiet shadow, and its 0.008 is in range.",
+   "fix": "Use a soft, even purple wall with no glowing patch behind the basket. Make the ledge a clean plain surface with a short, soft shadow under the basket."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both put the barrel on a ship's deck against a plain sky. B's deck planks carry swirling knot-like grain across the foreground, the same grain as the generated desks in the computer lessons, while the real desk has straight, quiet grain. A's planks have straight streaks with simple seams, although its corner of raised bulwark is a bigger, less tidy shape than B's rail. B's rail posts are clean, so only the grain favors the call.",
+   "fix": "Draw the deck as a few wide planks with straight, faint grain lines. Remove the swirls and knots from the wood."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both are a sunburst over a strip of road. B's road is tilted, with large, bright white lane dashes running off the bottom edge and a second line at right, and these high-contrast shapes compete with the car. The blue rays also deepen strongly into the corners, and B has the higher values, 0.0153 detail and 0.019 edge. A keeps a level grey road with smaller, quieter dashes, though its asphalt has a fine speckle.",
+   "fix": "Keep the road level and grey with only two or three small, thin, soft-white dashes. Do not let the lane lines run large across the foreground."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both are category 4 forest cards with a central tent. B stacks the environment: five or more trunks, several pines, leaf-clump canopies at multiple depths, mist and many grass tufts, all with similar sharpness around the tent. It measures higher, 0.0288 detail and 0.07 edge. A has two framing trees, a few soft pines and open sky, closer to the few large shapes of the real lion card, though its flowers and foreground ferns add some clutter.",
+   "fix": "Reduce the forest to two large trees framing the card and two or three soft pines behind, with open sky. Make the grass one smooth green shape with only a few tufts."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both are category 4 campfire clearings. B's background is a wall of dark pines with hard, repeated needle clusters, plus spiky grass along both sides and scattered disc-shaped stones, all competing behind the pot. B's detail value, 0.0234, is the higher of the two. A has soft dark pine shapes, a teal sky gap, smooth grass and a few pebbles, so the fire and pot stand out, and its large rocks belong to the hero group.",
+   "fix": "Paint the background as a few soft, dark pine shapes with little inner detail, a patch of open sky, and smooth low grass. Use only a few small pebbles on the dirt."
+  }
+ ],
+ "pattern": "Generated cards give themselves away by overworking the background. On flat fields this means a glowing halo or hot spot behind the hero, and color pushed brighter toward the center and deeper at the corners. On material surfaces it means swirling wood grain, mottling and hard or oversized shapes such as large lane dashes. In environments it means many layers of trees, needle clusters and grass tufts at equal sharpness, where real cards use a few large, quiet shapes. Calls on the plain-ledge cards are weak, because the backgrounds there are too simple to separate clearly."
+}

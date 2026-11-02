@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the whistle sits on a pale, washed-out yellow with a white glow around it, like the blown-out halo on the generated gloves, and the campfire icons form a stiff grid. Its margin of 0.126 is above the real range. B: the whistle sits on saturated yellow with a soft cast shadow and scattered icons, like the real calculator card, and its 0.100 margin is in range. B's orange-on-amber separation is weaker at thumbnail, but it matches how real cards are staged.",
+   "fix": "Make the whistle slightly larger so it nearly reaches the card edges. Remove the white glow behind it. Use a deep saturated yellow background with faint, loosely scattered campfire icons and a soft shadow under the whistle."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the bugle is a thin diagonal with slim tassels hanging into the lower middle. Its subject area of 0.171 is below the real minimum of 0.198, and at thumbnail it reads lighter and slimmer. B: the bell and tassels are chunky and fill the card (area 0.256, in range), and the object names itself at once. B's neon glow at the centre looks a bit generated, so this call is weak.",
+   "fix": "Draw the bugle larger and chunkier, with a thick tube, a big bell and fat tassels, so it fills most of the card with only small gaps at the edges."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the cup sits low on the card and a large steam plume fills the upper half almost to the top edge, so at thumbnail the steam competes with the cup. The dark vignette also dims the card. A: the cup and saucer sit centred on a bright two-tone wall and floor with a small steam curl, so the cup reads first. However, A's 0.149 margin and 0.239 area are outside the real ranges, and B's numbers are closer, so the eye and the numbers disagree.",
+   "fix": "Raise the cup to the centre of the card and make it larger. Shrink the steam to a small wisp just above the rim. Replace the dark vignette with a bright, even backdrop."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the whole basket is shrunk to fit, with a wide empty purple band above the handle, an empty floor below and a long cast shadow to the left. Its margin of 0.140 is above the real range, the same fit-everything-with-room habit as the generated lighthouse. A: the basket and big apples fill the card (area 0.418, margin 0.091, in range) and the fruit reads first.",
+   "fix": "Enlarge the basket until it almost touches the left and right edges, with big apples filling the upper half and little empty space above the handle. Shorten the cast shadow."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the barrel is narrower and floats mid-card with open sky above and open deck below (width 0.586, margin 0.144, area 0.350). The railing runs behind it as a thin stripe with a separate cast shadow. A: the barrel fills the card more fully (area 0.424, margin 0.094, in range) and sits against a chunky deck corner. Both barrels are narrower than the real range, but A's framing is much closer.",
+   "fix": "Make the barrel larger and wider so it fills most of the card height and reaches near the sides. Keep only a small strip of deck and rail visible behind it."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the car sits right of centre with its tail close to the right edge (width 0.926, just above the real maximum). A thick white road stripe sweeps through the bottom right and competes with the car at thumbnail. A: the taxi is more centred, with a raised roof sign, small road dashes that stay secondary, and more room at the sides (margin 0.049). The sizes are close, so this is a weak read.",
+   "fix": "Centre the taxi, leaving a small even gap on both sides. Replace the wide white road stripe with short, thin dashes in the foreground."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the muted tent sits low among dense dark trunks and pines that compete with it at thumbnail. Its guy ropes reach the card edges (margin 0.000, width 0.977), and the tent itself looks smaller than the box suggests. A: the saturated tent is the brightest mass, with trees pushed to the corners as a frame, like the real lion card. A does add extra posts and flowers, which is a habit of generated cards, so confidence is low.",
+   "fix": "Make the tent bigger and brighter at the centre. Lighten and simplify the forest into soft distant shapes, with large trees only in the corners, and keep the ropes short and inside the card."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the logs, pot, rocks and fire are packed edge to edge. Its subject area of 0.545 is well above the real maximum of 0.442, the beam nearly touches both sides, and little quiet space is left around the pot. B: the pot hangs in a roomier frame (area 0.391, in range) and reads first, with the fire logs lightly cropped at the bottom edge, which real cards also allow.",
+   "fix": "Pull the scene back so the pot is the main shape. Remove some of the rocks, shorten the crossbeam so it stops well short of the card edges, and leave open ground and background around the pot."
+  }
+ ],
+ "pattern": "Generated cards rarely fail one clear framing rule. The most reliable tell on this vector is a whole object shrunk to fit, with wide margins and a lot of empty backdrop, where real cards push the hero larger and let it crowd or crop at the edges. The other tells are extras that compete at thumbnail: glow halos behind the hero, oversized steam or road stripes, busy high-contrast scenery, and added props. In p03, p06, p07 and p08 the signals were weak or the eye and the numbers disagreed, so those calls are low-confidence."
+}

@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the background falls almost entirely into the top grey level (lightness_mean 0.868, above the real 0.581-0.793), a pale halo hugs the whistle's outline, and the campfire motifs break into speckle. The whistle is separated by a light surround. B: one even middle-light background group, no halo, and a contact shadow at lower left. Its hero is modelled in two or three broad steps down to a dark mouth slot, and its mean of 0.785 is in range.",
+   "fix": "Lower the background to a solid mid-bright golden yellow, about one step darker. Remove the pale glow around the whistle and let it sit on the field with a soft shadow at its lower left. Keep the flame pattern one even, quiet tone."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a blown electric cyan centre falls to darker blue corners (vignette 0.157, above the real maximum of 0.123). The bell has hard white rims against a dark inner mass, and the tassels run to black accents. A: the teal rays sit in two close light-middle steps with mild corners (0.033). The brass rolls off gently, with one small white patch inside the bell. A's mean of 0.809 is slightly high, but its value design matches the real sunburst cards.",
+   "fix": "Flatten the background to an even turquoise sunburst with close-toned rays. No bright glow in the centre and no dark corners. Soften the white rims on the brass and lighten the darkest folds of the tassels."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the cup and saucer are mostly top-level white on a dark red ground, with a gap of 0.252 (above the real maximum of 0.216) and a mean of 0.571 (below range). A black shadow pool sits under the saucer and the corners darken (0.087). A: a lighter orange table plane adds a large middle group under the cup, the shadow stays dark grey, the corners are even (-0.005), and the cup keeps more middle tone on its body.",
+   "fix": "Lift the red background one step and remove the dark corners. Add a lighter table surface under the cup. Give the cup body soft grey-pink shading rather than pure white, and make the cast shadow a soft dark red rather than near black."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a lighter arch glows behind the basket in the lens, the table is a blown top-level white band, the cast shadow is crisp, and vignette is -0.073, below the real minimum of -0.010. The apples and weave break into many small value patches. A: the wall divides into two large light and middle shapes with a soft falloff at the right (vignette -0.002), and the apples form one solid dark mass.",
+   "fix": "Remove the lighter halo behind the basket and let the wall darken gently to one side. Bring the table down from near white to warm cream. Soften the cast shadow, and group the apples into one large deep red shape with a single small highlight on each."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a hard diagonal light-shadow edge splits the barrel into a dark left half and a pale right half. Sharp white streaks run across the deck and a near-black accent sits at the base; rms contrast is 0.170 against B's 0.135. B: the barrel stays in close middle steps, the shadow is soft, and the deck is calmer. Both are inside the measured ranges, so this is a weak lean.",
+   "fix": "Shade the barrel with a soft gradual turn from light to shadow, with no hard diagonal shadow edge. Calm the deck to even light planks without white streaks, and soften the black patch at the barrel's foot."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the car body and windshield are almost all top-level white against a darker road and darker sky. A thick black outline-like shadow runs under the car and around the windshield, and rms contrast is 0.185. A: the body holds light and middle steps, the sky stays lighter, the road is mid grey, and the shadow under the car is a narrower dark band. Both have slightly high vignette (A 0.105, B 0.096), so that field does not separate them.",
+   "fix": "Keep the yellow body in soft light-to-middle shading rather than washed-out bright. Lighten the road and the top of the sky. Thin the black shadow under the car and remove the heavy dark line around the windshield."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: near-black foliage masses fill the top corners (vignette 0.182, far above the real maximum of 0.100) and the leaves break into fine dark speckle. The tent splits into a flat middle plane and a white apex against a black doorway. A: the trees and shafts of light sit in middle steps, the corners are only moderately dark (0.103), and the tent reads as one large light shape with soft fold steps.",
+   "fix": "Lighten the tree canopy in the top corners to mid greens, with large simple leaf clumps and no black gaps. Light the tent evenly as one warm yellow shape, without a bright tip or dull flat side."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the overall key is too low (mean 0.537, below the real minimum of 0.556). The forest reads as one dark band with black speckle, and the pot's base breaks into noisy dark grain with a small white flame below. A: a brighter key (0.592), a light sandy ground forms a large light group, the pot is a clean dark mass with one soft highlight, and the rocks and logs make readable middle shapes.",
+   "fix": "Brighten the whole scene one step. Make the forest backdrop a simple mid green, and the ground a light warm sand. Shade the pot as a smooth dark shape with one soft highlight and no speckled soot."
+  }
+ ],
+ "pattern": "Generated cards still push value to the extremes where real cards hold broad, simple groups. They show a pale halo or blown centre hugging the hero, heavier corner or surround darkening, and heroes pushed to near-white or broken into many small hard patches. Their darkest accents sit in black contact pools and speckle, not in one soft dark mass. In real cards the hero keeps middle tones and rolls off gently against an even, quiet background."
+}

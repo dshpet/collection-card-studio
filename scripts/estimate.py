@@ -112,7 +112,7 @@ def write_attention(records, device):
         Image.fromarray((density / density.max() * 255).astype(np.uint8)).save(out.with_suffix(".png"))
 
 
-def write_marigold(records, device):
+def write_marigold(records, device, derived=DERIVED):
     from diffusers import MarigoldIntrinsicsPipeline, MarigoldNormalsPipeline
 
     def pipeline(kind, repo):
@@ -120,9 +120,9 @@ def write_marigold(records, device):
 
     normals = pipeline(MarigoldNormalsPipeline, "prs-eth/marigold-normals-v1-1")
     for name in ("normals", "shading"):
-        (DERIVED / name).mkdir(parents=True, exist_ok=True)
+        (derived / name).mkdir(parents=True, exist_ok=True)
     for record in records:
-        out = DERIVED / "normals" / f"{record['id']}.npy"
+        out = derived / "normals" / f"{record['id']}.npy"
         if not out.exists():
             image = Image.open(ROOT / record["file"]).convert("RGB")
             result = normals(image, num_inference_steps=4, ensemble_size=1, output_type="np").prediction
@@ -133,7 +133,7 @@ def write_marigold(records, device):
 
     intrinsics = pipeline(MarigoldIntrinsicsPipeline, "prs-eth/marigold-iid-lighting-v1-1")
     for record in records:
-        shading_path = DERIVED / "shading" / f"{record['id']}.png"
+        shading_path = derived / "shading" / f"{record['id']}.png"
         if shading_path.exists():
             continue
         image = Image.open(ROOT / record["file"]).convert("RGB")

@@ -1,0 +1,27 @@
+{
+ "always": [
+  "Light comes from the upper left or upper front. Tops and left faces are lightest, right and underside faces are darker. Examples: the phone booth's left face against its right, the pump's dome top, the book cover.",
+  "Form turns smoothly, with soft gradients over rounded volumes (pillow, gloves, palm trunk, stools). Hard edges only show where the geometry has a real corner, such as the booth frame, book spine and fence slats.",
+  "Shadow side stays gentle. Even the darkest areas are mid-tone and keep local color. The estimated shading reads as soft clay or matte plastic with a narrow value range.",
+  "Highlights are broad, soft sheens on the lit side, such as the glove tops, fin edges and pillow crown. They are never tiny sharp white hot spots.",
+  "Each hero has a soft, fairly low-contrast cast shadow on the ground, falling to the lower left or toward the viewer (sneakers, carousel, book, gloves). Contact darkening sits at the base or under the object.",
+  "Thin lighter edge on lit contours and a slightly darker underside give a gentle volume lift. Fine detail (booth panes, chains, lace) gets a small darkening in the gaps."
+ ],
+ "varies": [
+  "Cast shadow presence: strong and clear for grounded objects on a floor (sneakers, carousel, book on wood, gloves). Weak or missing for the floating ticket, pillow and fins, which sit on abstract backgrounds.",
+  "Form contrast: highest on big rounded volumes with deep folds (neck pillow wrinkles, gloves, thatch roof). Lowest on flat graphic items (ticket, fin blades, pump panel), which barely model.",
+  "Shading range: the pillow and gloves run from near-white to a fairly deep mid-dark. The ticket and carousel sit in a compressed pale band.",
+  "Light bias strength: moderate for the booth and pump, where one side is clearly darker. Nearly even for the ticket and carousel.",
+  "Highlight size: wide on glossy rubber (gloves, pillow) and small rim sparkles on fins and palm leaves.",
+  "Background lighting: the sunset pump scene has warm light and a strong gradient, while pool and garden scenes are evenly lit."
+ ],
+ "never": [
+  "Deep black core shadows or harsh high-contrast chiaroscuro.",
+  "Sharp white specular hot spots or mirror-like chrome glints.",
+  "Hard-edged, dark, graphic drop shadows (not seen beyond a soft floor shadow).",
+  "Strong colored rim light or neon glow around the hero edges.",
+  "Visible banding or cel-shaded steps in the form turn.",
+  "Light direction that flips between objects on a card."
+ ],
+ "generator_wording": "Soft clay-like 3D toy lighting from upper left. Smooth gradients across rounded forms, gentle mid-tone shadow side, no black core shadows. Broad soft sheen on lit tops, no sharp white hot spots. Soft low-contrast cast shadow on the ground to lower left, with slight contact darkening at the base. Thin lighter edge only on lit contours."
+}

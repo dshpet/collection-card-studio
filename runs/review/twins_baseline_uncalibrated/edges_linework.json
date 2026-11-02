@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01 whistle",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A has a pale glow halo around the whole whistle, with a soft outer edge on the cream side and a thicker dark contour at the bottom-left. B has a crisp edge against a saturated background with no halo.",
+   "fix": "Crisp clean silhouette against the background. No glow or halo around the object. No dark contour line."
+  },
+  {
+   "pair": "p02 glove",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B has heavy dark stitch marks on the ball and a continuous dark contour around the ball and glove. Its fold edges are fine and numerous. A has clean, thick rounded shapes with soft internal edges.",
+   "fix": "Chunky rounded forms with soft internal creases. Stitches drawn as simple raised shapes, not dark thin lines. No outline around the ball."
+  },
+  {
+   "pair": "p03 bugle",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B has thin rope wraps, fine hairline tassel strands and tiny parts. These make dense, fine edges on the knot and tassels. A has big smooth glossy shapes with few edges.",
+   "fix": "Thick, simple, chunky rope and tassels with a few big smooth forms. No hairline strands."
+  },
+  {
+   "pair": "p04 camera",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A is a realistic DSLR with many small edges: lens ribbing, dials and buttons. Its edges are thin and fine. B has big simple forms and a few bold edges, like the real cards.",
+   "fix": "Chunky toy-like camera with big smooth blocks. Few large buttons. No fine ribbing or tiny details."
+  },
+  {
+   "pair": "p05 teacup",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A has thin, dark outlines on the flower, leaves and rims. Its steam and base shadow are soft and smudgy. B has bolder, thicker simple shapes with a crisp edge.",
+   "fix": "Thick glossy rim and large simple flower shapes. Crisp silhouette. No thin dark line on the flower."
+  },
+  {
+   "pair": "p06 basket",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A has speckled, stippled apple skin that makes a noisy edge texture, and a realistic shaded cloth. B has clean smooth apples and plump weave edges.",
+   "fix": "Smooth glossy apples with no speckle texture. Plump weave bands with soft rounded edges."
+  },
+  {
+   "pair": "p07 barrel",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B has many thin vertical wood-grain lines and dense plank edges on the barrel. The deck and wall behind it are also dense with lines. A has few big plank seams and chunky metal bands with rivets.",
+   "fix": "Big smooth planks with only a few wide seams. Simple soft background planks. No fine grain streaks."
+  },
+  {
+   "pair": "p08 taxi",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Both have similar edge density. B has a slightly heavier dark windshield frame and a thin grille. This is not a strong difference.",
+   "fix": ""
+  },
+  {
+   "pair": "p09 computer",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B has dark outlines on every key and vent. The wood desk grain makes a dense, fine background edge field. A has a soft, quiet background and softer internal edges.",
+   "fix": "Soft, smooth desk with no visible wood grain lines. Keys as soft rounded blocks with no dark outlines."
+  },
+  {
+   "pair": "p10 tent",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B has a dense background of leaves, bushes and flowers, all with strong dark contours. The tent edges, ropes and lantern are also heavily outlined. A has a quieter, blurrier background.",
+   "fix": "Simple soft-focus background with few leaf edges. Hero edges crisp, background edges soft. No dark contour lines."
+  },
+  {
+   "pair": "p11 lighthouse",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B has heavy dark lines around the rocks, water splashes, windows and rails. The background water is also full of edges. A has a clean tower and a plain sky and sea.",
+   "fix": "Plain smooth sea and sky with a few soft edges. Rounded rocks with no dark outline. Keep the sharpest edges on the tower only."
+  },
+  {
+   "pair": "p12 cauldron",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B has very dense edges in the soup, logs, rocks, crate and grass. Its dark contours are strong. A has a simpler edge set with a speckled pot.",
+   "fix": "Fewer, larger shapes with soft background foliage. No dark contour lines on the logs or rocks."
+  }
+ ],
+ "pattern": "The odd cards have too many edges, and many of those edges are thin or dark. This shows as fine hairline detail on the hero, such as grain, stitches, ribbing and speckle. It also shows as dense, outlined background clutter, and as dark contours around small parts. A few odd cards have a glow halo or soft smudgy edges instead. Real cards have a crisp silhouette, soft internal creases, no outlines, and a simple, soft background."
+}

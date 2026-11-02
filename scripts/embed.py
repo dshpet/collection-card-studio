@@ -35,16 +35,16 @@ def views(record):
         yield "background", Image.composite(grey, image, mask)
 
 
-def load_hf(repo):
+def load_hf(repo, dtype=torch.float16):
     processor = AutoImageProcessor.from_pretrained(repo)
-    model = AutoModel.from_pretrained(repo, dtype=torch.float16).cuda().eval()
+    model = AutoModel.from_pretrained(repo, dtype=dtype).cuda().eval()
     size = processor.size.get("height") or processor.size.get("shortest_edge")
     mean, std = torch.tensor(processor.image_mean), torch.tensor(processor.image_std)
 
     def encode(batch):
         tensor = torch.stack([torch.from_numpy(np.asarray(square(b, size)).copy()) for b in batch])
         tensor = (tensor.permute(0, 3, 1, 2).float() / 255 - mean[..., None, None]) / std[..., None, None]
-        tensor = tensor.cuda().to(torch.float16)
+        tensor = tensor.cuda().to(dtype)
         if hasattr(model, "get_image_features"):
             output = model.get_image_features(pixel_values=tensor)
             return getattr(output, "pooler_output", output)
@@ -90,7 +90,8 @@ def main():
     output = ANALYSIS / "embeddings"
     output.mkdir(parents=True, exist_ok=True)
     for name in args.models:
-        encode = load_csd(MODELS[name]) if name == "csd" else load_hf(MODELS[name])
+        dtype = torch.float32 if name == "dinov3" else torch.float16  # DINOv3 returns NaNs at half precision
+        encode = load_csd(MODELS[name]) if name == "csd" else load_hf(MODELS[name], dtype)
         by_view = {}
         for record in records:
             for view, image in views(record):

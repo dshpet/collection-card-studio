@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both whistles are tilted on a diagonal, centered, and fill about the same area. A is slightly larger and its ring comes close to the top right. B has a paler background with a glow halo, but the hero scale is the same. The thumbnails read equally fast.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the bugle is huge and runs nearly edge to edge. The bell touches the top right, the mouthpiece nearly touches the left edge, and the big tassels drop to the bottom. It is tightly cropped with little air. B: the bugle is smaller and floats with clear margin on all sides, and the tassels are small.",
+   "fix": "Draw the bugle a little smaller and keep a clear margin around the bell, mouthpiece and tassels so none of them nears the card edge."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the cup is small and low, with a large amount of space for the steam above and a dark vignette. B: the cup and saucer are bigger and fill the width, and a bright orange glow halo sits behind the cup. B has the stronger hero push and the haloed spotlight.",
+   "fix": "Make the cup smaller with more room around it. Use a plain, even background with no glow halo behind the cup."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the basket and apples are bigger. The handle and rim run close to the edges, and the cloth plus the table fill the lower half. B: the basket is slightly smaller, with a bit more space around it. The two are close, so I am only weakly choosing A.",
+   "fix": "Shrink the basket slightly and leave more space around the handle and sides."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the barrel is centered with a plain deck and rail, and its top has some air. B: the barrel is a bit taller, its top rim is near the top edge, and the studded bands add detail. A rail with posts and bright rivets compete behind it. The scale difference is small.",
+   "fix": "Lower the barrel and leave more air above it. Simplify the background rail and drop the bright rivets."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the taxi is big, nearly touches both side edges, and sits close to the frame. The close view and the bold grille and headlights give an instant read. B: the taxi is smaller, offset to the right, and sits in a wide road with more breathing room.",
+   "fix": "Pull the camera back so the taxi is smaller, with a clear margin at the left and right edges and more road around it."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the tent is surrounded by extra props: a glowing lantern, rocks, flowers, rope posts and big foreground leaves. These compete with the tent and spread attention, and the whole scene is packed to the edges. B: a single tent, simple and clear, with open grass around it. The tent is cropped slightly at the left.",
+   "fix": "Show only the tent as the hero. Remove the lantern, rocks and extra flowers, and keep the foreground empty."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cauldron, fire, frame logs, crate of vegetables and stump fill the whole card, touching the left, right and top edges. Several bright items compete. B: the pot and fire are on a simpler ground, with a clear margin and one focus.",
+   "fix": "Keep only the pot and fire as the subject. Remove the vegetable crate and stump, and leave empty ground around the frame."
+  }
+ ],
+ "pattern": "Generated cards tend to fill more of the frame and sit closer to the edges with the hero enlarged and centered. They add extra props or glow halos that compete with the hero. Real cards leave more air and use a simpler single focus. The signal is weak and inconsistent, so near-equal pairs should be called neither."
+}

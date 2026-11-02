@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01 whistle",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the whistle is tilted and centered and fills about 70% of the card, with a clear margin all round. B: the whistle is slightly larger and the ring runs close to the top-right edge. Both read at once as a whistle at thumbnail size. Both are close to the real cards' hero scale.",
+   "fix": ""
+  },
+  {
+   "pair": "p02 glove",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the glove fills nearly the whole card and is centered, with the ball as the focal point. B: the glove is a little smaller with a bit more space at the sides, but it is still centered and large. Both name the object instantly. Both are inside the range of the real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p03 bugle",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the bugle is huge, with the bell cropped by the top and right edges and the tassels big, so it reads at once. B: the bugle is small and thin, floating in the middle of a lot of empty burst background. The tassels shrink to specks at thumbnail size and the card feels empty. The real cards have a bold, dominant hero.",
+   "fix": "Scale the bugle up so it fills about 75% of the card, with the bell close to the top edge. Make the red tassels large and chunky, and cut down the empty background around it."
+  },
+  {
+   "pair": "p04 camera",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the camera is a wide, low landscape shape sitting in the lower middle, with a lot of empty yellow burst above it. The dark body is small at thumbnail size and the lens detail is hard to see. B: the camera is chunky, large, upright and centered, with the lens as a clear focal point, like the real cards' bold icon silhouettes.",
+   "fix": "Frame the camera tighter and bigger, centered, filling most of the card. Turn it so the lens faces the viewer, and keep the empty space above it small."
+  },
+  {
+   "pair": "p05 teacup",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cup and saucer are small and sit low in the card, with a tall steam wisp and a lot of dark empty red background. The steam is a competing element and the hero is under-scaled. B: the cup is larger and centered, with a tight steam curl and a bold cup and saucer silhouette, which fits the real cards better.",
+   "fix": "Enlarge the cup and saucer to fill about 70% of the card width. Keep the steam short and tucked behind the cup rim, and put the cup in the middle of the card."
+  },
+  {
+   "pair": "p06 basket",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the basket and apples fill the card, and the table line cuts across the lower part. B: the basket is slightly smaller, with more table and a shadow around it. Both are centered and read instantly. The difference in scale is small compared with the real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p07 barrel",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the barrel is big, fills the card from top to bottom and is centered, and the ship rails sit quietly behind it. B: the barrel is a little smaller and the large ship wall and deck take up the sides. The scene gets more weight and the hero loses some punch at thumbnail size.",
+   "fix": "Make the barrel bigger and closer to the camera so it nearly fills the height. Keep the ship rail small and soft in the background."
+  },
+  {
+   "pair": "p08 taxi",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the taxi is big, filling the width of the card, centered and seen at close range. B: the taxi is small and low, with a large area of empty road and white lines at the bottom, and it looks like a distant scene. The hero is under-scaled and the road competes with it.",
+   "fix": "Draw the taxi much closer so it fills about 80% of the card width. Crop out most of the empty road, and keep the lane markings small."
+  },
+  {
+   "pair": "p09 computer",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the computer is small and sits in the upper middle, with the desk front and drawer cut off by the bottom edge and a lot of empty wall. The thumbnail reads as a desk scene. B: the whole computer, with keyboard and mouse, is bigger, fills the card and is centered, which fits the real cards better.",
+   "fix": "Remove the desk front and drawer. Put the whole computer on a plain desktop, centered and enlarged so the monitor, keyboard and mouse fill most of the card."
+  },
+  {
+   "pair": "p10 tent",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the tent is large and sits low in the card, with its left corner cropped by the edge, and the forest behind it is soft. B: the tent is smaller and surrounded by a lantern, logs, rope, flowers and bushes, all in the same bright colors. At thumbnail size these props compete with the tent and the card reads as a busy scene.",
+   "fix": "Make the tent the one big hero filling about 75% of the card. Remove the lantern and the extra flowers and posts, and keep the background calm."
+  },
+  {
+   "pair": "p11 lighthouse",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: a tall close-up of the tower, with its base cropped by the bottom edge, fills the height of the card and is centered, so it reads at once. B: the whole lighthouse on a rock island with water, bushes, a life ring and a bollard, small in the middle of a wide sea. The hero is small and the surrounding props compete, so it reads as a miniature scene.",
+   "fix": "Frame the lighthouse tower close up and large, with the base cropped by the bottom edge. Leave out the island, rocks, bushes and life ring, and keep the sea and sky simple."
+  },
+  {
+   "pair": "p12 cauldron",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the pot with the fire below it fills the card, with a simple forest behind and the pot at the center of attention. B: the pot is smaller and surrounded by a crate of vegetables, a tree stump, a ring of rocks, a rope-wrapped frame and flowers. At thumbnail size the bright props and the fire compete for attention with the pot.",
+   "fix": "Make the pot and the fire the big centered hero, filling about 75% of the card. Remove the vegetable crate, the stump and the rock ring, and keep a simple green background."
+  }
+ ],
+ "pattern": "The odd cards are the more elaborate scene versions: the hero is smaller and sits inside a wider scene, with extra props (lantern, island, crate, stump, road, desk) and empty space around it. The real cards have one big hero that fills about 70-80% of the card, is centered or cropped by an edge, and has a simple background. Where a card fails, the thumbnail reads as a scene or as empty space, not as one object."
+}

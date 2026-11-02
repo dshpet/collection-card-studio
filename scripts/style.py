@@ -1,22 +1,15 @@
 """What the reference analysis says about the art, written for the generator."""
 
-STYLE = """Polished mobile-game collection card art, a soft 3D render with smooth gradients.
-Chunky, rounded, toy-like shapes with slightly exaggerated proportions and no thin fragile parts.
-No outlines, no visible grain or brush texture. Clean surfaces with soft highlights.
-Very saturated, bright colors. Shadows stay colorful: never black or grey. Dark colors are rich indigo or crimson.
-One large hero, centered, seen in three-quarter view from slightly above, lit softly from above.
-The hero's main color opposes the background color, so it pops instantly at thumbnail size.
-No text, letters, numbers, card frame, border or watermark."""
+STYLE = """The attached images are real cards from the game. Draw one new card that could sit beside them unnoticed: the same rendering, lighting, finish, color and level of detail.
+Draw the object at its true real-world proportions, seen through a long lens from a low camera, so near parts never balloon. Tubes, ropes, rims, handles and hoops stay thin, and small parts stay small.
+Surfaces are smooth and calm, with a few quiet marks. Cloth, cord and wood are matte. Only metal and glaze shine.
+Draw only what the subject names. No text, letters, numbers, frame, border or watermark."""
 
 CATEGORY_RULES = {
-    "1": "The hero floats in the air with no ground and no shadow beneath it, usually slightly tilted. "
-         "No small details. The background is a flat graphic field, tone-on-tone, with a soft glow behind the hero.",
-    "2": "The hero stands upright on a simple plain colored ledge and casts a soft shadow. No small details. "
-         "Behind it is a simple graphic backdrop, tone-on-tone, with a soft glow.",
-    "3": "The hero stands on a real material surface such as wood, stone, sand or grass and casts a soft shadow. "
-         "The backdrop behind it stays simple and graphic, not a full scene.",
-    "4": "The hero sits inside a simple real environment that fills the card, with a few supporting objects, "
-         "but it stays large, central and clearly the focus.",
+    "1": "The object floats in the air, usually slightly tilted, large on the card. The background is flat and graphic.",
+    "2": "The object stands on a plain colored ledge and casts a soft shadow, large on the card. Behind it is a simple graphic backdrop.",
+    "3": "The object stands on a real material surface and casts a soft shadow, large on the card. The backdrop behind it stays simple and graphic, not a full scene.",
+    "4": "A close view of the object in its real place, central and large. The setting is open and calm: a few large soft shapes, with nothing added around the object.",
 }
 
 PATTERNS = {

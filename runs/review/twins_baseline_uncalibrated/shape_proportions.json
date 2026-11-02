@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01 whistle",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: body swollen and pillowy, soft rounded corners on the mouthpiece and barrel, ring thin and half-hidden. B: tighter bevels on the mouthpiece, flatter planar sides, ring clearly readable as a thin ring. Silhouettes are close.",
+   "fix": "Draw the whistle with flatter side faces and tight crisp bevels on the mouthpiece edges; thin metal ring clearly separate from the body."
+  },
+  {
+   "pair": "p02 glove",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: chunky simplified fingers, thick laces, clear web openings, like the chunky real cards. B: realistic leather glove with thin stitching, soft wrinkled surface, one tiny web hole, and a slab-like silhouette.",
+   "fix": "Simplify to bold chunky fingers with thick laced web strips and clear gaps between fingers; no wrinkled leather detail."
+  },
+  {
+   "pair": "p03 bugle",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: tassels are huge fat bell blobs and the knot is thick, which looks toy-like. B: thin cord and small tassels, tubing at believable thickness. B's silhouette has a messy double loop.",
+   "fix": "Make the tassels small and slim with thin cords; keep the tubing at a believable thickness."
+  },
+  {
+   "pair": "p04 camera",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: believable DSLR proportions with a lens barrel, grip, dials and a prism hump, and tight corners. B: toy camera with an oversized fat lens, a pillow-soft body, a puffy grip and rounded blob dials. Silhouette is a bulging box with soft corners.",
+   "fix": "Draw a camera with realistic proportions: a lens of moderate size, a boxy body with flat faces and tight bevelled corners, and small crisp dials."
+  },
+  {
+   "pair": "p05 teacup",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: slim cup, thin rim, small handle, thin saucer. B: oversized tall cup, thick tube-like rim, fat sausage handle, thick saucer lip, and a chubby flower as a bump on the side.",
+   "fix": "Draw a slimmer cup with a thin rim, a thin delicate handle and a thin flat saucer; the flower is a flat painted decal."
+  },
+  {
+   "pair": "p06 basket",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both baskets have similar woven bodies, a thick twisted handle and a rounded silhouette. B has leaves on the apples and A has none. No clear shape difference.",
+   "fix": ""
+  },
+  {
+   "pair": "p07 barrel",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: bulging barrel with thick chunky hoops that stick out of the silhouette, and rounded staves at the rim. B: straighter staves, thin flat hoops, crisp rim. The difference is small.",
+   "fix": "Draw thin flat metal hoops hugging the barrel, with straight staves and a crisp rim."
+  },
+  {
+   "pair": "p08 taxi",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: chubby toy taxi with huge bulbous wheel arches, a fat bumper and oversized headlights. B: lower, longer body with believable proportions, a thin bumper and smaller wheels.",
+   "fix": "Draw the taxi with realistic car proportions: a long low body, moderate wheels, a thin bumper, smaller headlights, and flat door panels with crisp edges."
+  },
+  {
+   "pair": "p09 computer",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: boxy monitor with flat faces and a slim keyboard. B: puffy rounded monitor, thick pillow-like base, fat keys and an inflated mouse, with soft blob corners everywhere.",
+   "fix": "Draw flat planar faces on the monitor and case with tight bevelled corners, a slim flat keyboard and a small mouse."
+  },
+  {
+   "pair": "p10 tent",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a single tent shape with clean straight runs and a simple silhouette. B: crossed poles on top, rope-and-peg posts sticking out to the sides, a lantern, a bedroll, rocks and foliage, so the silhouette is fragmented and busy.",
+   "fix": "Draw only the tent with a simple clean shape, flat canvas panels and straight edges. No extra props."
+  },
+  {
+   "pair": "p11 lighthouse",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a tall slim tower with a thin railing, tight crisp stonework and a clean contour. B: a squat chubby tower on a lumpy rock island, with a lifebuoy, bollards and bushes that make the silhouette bumpy and cluttered.",
+   "fix": "Draw a slim lighthouse tower with a thin railing and crisp stone blocks. Keep the base simple, with no pile of props."
+  },
+  {
+   "pair": "p12 cauldron",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a symmetric tripod with thin straight posts, a thin strap handle and a clean pot. B: a round blobby pot, a thick sausage-like handle, one tilted post, a lumpy rock-and-log pile, and extra crates and stumps around.",
+   "fix": "Draw a pot with a wide shallow shape, a thin metal bail handle and two straight thin posts. The fire is a small simple pile of logs."
+  }
+ ],
+ "pattern": "The odd cards are usually toy-fattened. Parts are inflated: fat sausage handles, bulbous wheels, oversized lenses, pillow-soft boxes with blob corners. Or they are cluttered with extra props that break up the silhouette. The real cards keep a simple silhouette with flat faces, tight bevels and thin parts kept thin. Three of the 12 calls are weak: p01, p03 and p07 have only small shape differences."
+}

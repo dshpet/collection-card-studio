@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: an unbroken heavy black contour runs round the whistle's underside and mouthpiece, and a pale halo sits just outside the silhouette. A: the outline is thinner and varies in weight, fading on the lit top edge, with no halo and the orange body sitting directly on the background.",
+   "fix": "Remove the pale glow around the whistle so its edge meets the background directly. Keep the edge soft and thin, with no dark line around the shape, and let it fade where the light hits the top."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the tassels and cord have thick, even black contours, the fringe is cut by wide grooves, and a bright halo sits behind the bugle. A: the rope and small tassels are drawn with many thin, precise lines, and the bell's edge fades to almost nothing on its lit side.",
+   "fix": "Make the tassels small with fine thin strands instead of fat lobes. Remove the bright glow behind the bugle. Let the edges thin out on the lit side, with no dark line around the shape."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cup, saucer and raised flower share one even, rounded contour weight, the flower's petals and leaves are ringed by grooves, and a warm glow sits behind the cup's upper left. B: the rim and saucer lines are thin and precise, and the flower is a flat painted detail with fine edges. B's steam strands are harder-edged, which keeps the call weak.",
+   "fix": "Paint the flower flat on the cup with thin edges instead of a raised shape. Replace the thick blue rim bands with thin painted lines. Remove the glow behind the cup."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the weave strips are fat pillows split by wide grooves, a heavy dark contour runs under the basket base, and the cloth has hard grid lines with a sharp cast shadow on the table. A: the weave lines are finer, the apples carry soft speckle instead of contours, and the base contour dissolves into a soft shadow.",
+   "fix": "Make the weave strips thinner with narrow gaps between them. Soften the basket's bottom edge into its shadow, with no dark line around it. Draw the cloth's check pattern with soft color changes, not drawn lines."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: every hoop has the same even double contour, the rim blocks and rivets are each ringed by an outline, and edge density inside the hero is high and uniform. B: edges are fewer, with longer soft runs along the hoops. However, B's stave gaps are thick black grooves on the right side, so the call is weak.",
+   "fix": "Use fewer rivets and rim blocks. Make the gaps between staves thin and precise. Let the hoop edges soften in places instead of keeping one even line all the way around."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the hero is packed with edges, from the grille bars, chrome bumper rings and wheel rings to the interior seats and steering wheel, with a dark contour around the bumper and tyres, all at equal sharpness. A: the body panels are open and quiet, the seams are thin door lines, and only the windows and grille carry strong edges.",
+   "fix": "Simplify the taxi to large smooth body panels with thin door seams. Reduce the chrome parts and fine detail, and keep sharp edges only on the windows and grille. Use no dark line around the car."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: dense, equally sharp edges cover the whole card, including the ropes, pegs, straps, bedroll, lantern, flowers and leaves, and the foreground leaves and lantern have thick contours. The hero does not separate from the background by edge. A: the tent is mostly empty, with long soft folds, and the grass is sparse, leaving a clear edge hierarchy.",
+   "fix": "Remove the lantern, flowers, ropes and straps. Draw the tent as large plain cloth with a few long soft folds. Make the background and foreground softer and less detailed than the tent."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: thick dark contours wrap the logs, ropes, stones and pot rim, the stew is a busy cluster of edged shapes, and the crate and stump add dense edges at the sides, all at the same sharpness. A: the frame is plain with thin edges, the soup has a few simple shapes, the pot body has soft speckle instead of contour, and the background stays quiet.",
+   "fix": "Remove the crate, stump and rope bindings. Use fewer pieces in the stew. Soften the edges of the logs and stones and keep the sharpest edge only on the pot rim. Use no dark line around the shapes."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away with a continuous dark contour of even weight around the hero, which reads like an ink outline. Real cards have thin edges that vary in weight and fade on the lit side. Other signs are a pale glow outside the silhouette, wide pillow-like grooves where real cards have thin seams, and too many equally sharp edges inside the hero and across the background, which flattens the edge hierarchy. These cues separate p01, p02, p06, p07 and p08 well. They are weaker in p03, p04 and p05, where the differences are smaller and both cards carry some heavy lines."
+}

@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the whistle body is lit almost frontally. The barrel and side disc barely turn darker, and a white halo sits behind it instead of a cast shadow. The lens shows a pale glow ring, and form_contrast of 0.32 falls just under the real floor. The only depth comes from saturated red in the openings, like the generated glove mouth in lesson 0. B: light comes from upper left. The top face is lit, the front and disc face drop darker, the slot and mouth go properly dark, and a soft shadow falls lower right on the wall, close to the calculator card. B's lens does leak warm color and its surface is a little matte, so this call is not firm.",
+   "fix": "Remove the white glow behind the whistle. Light it from the upper left so the top face is bright and the round side falls into a deeper, cooler shade. Add a soft shadow on the background at lower right. Make the openings dark, not glowing red."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the bell has one broad soft sheen on its lit left side, and the tube fades gradually into shade toward the mouthpiece. The cord and tassels stay gently modeled, like a single soft key. B: a bright pale line runs around the whole bell lip and along the coil edges. The bell interior goes very dark with a hot spot, and the tassels are bright with crisp folds. It reads as sheen outlined on every edge, not as a turn away from one light. Light bias of 0.23 against A's 0.431 agrees that B's light is less directional.",
+   "fix": "Drop the bright outline around the bell lip and coil. Let one broad soft sheen sit on the upper-left side of the brass and let the far side fade slowly into warm shade."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a fairly dark, crisp shadow falls left on the floor, but the cup itself hardly models. In the lens the cup and saucer are nearly one flat mid-gray with little turn from right to left. All three measures sit below the real range (0.463, 0.371, 0.179). B: the cup is lit from the right and falls darker on the left, which agrees with its shadow, and there is contact darkness under the foot. B's lens leaks red and has a spot-like glow on the floor, so confidence stays low.",
+   "fix": "Light the cup from the right so its right side is bright and its left side turns gradually into a deeper shade that matches the shadow on the table. Darken the inside of the rim and under the saucer."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the shadow is soft and spreads right along the table, with a warm reflection in front and a cool lavender shade under the rim. Apples turn broadly, with a sheen on their upper sides. B: a dark, crisp-edged shadow blob sits detached to the left, while the basket and apples are lit evenly from the front, so the shadow's strength does not match the form. The numbers do not separate them, and A's shading range of 0.812 is slightly high.",
+   "fix": "Soften the shadow on the table and lighten it, keeping it attached to the basket's base. Light the basket from one side so its far side falls into a cooler shade."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: strong side light. In the lens the barrel's left side falls deep while the right staves are bright, the turn across the staves is gradual, and the metal bands carry a streak sheen. A shadow crosses the deck at the base. B: the barrel is lit evenly from the front with only the outer edges darkened, like a vignette on each stave. There is a pale fringe around the silhouette, and a neat cast shadow to the right is not supported by the form. form_contrast of 0.381 is below the real floor.",
+   "fix": "Light the barrel strongly from one side. One half of the staves should be bright and the other half should fall into a deep soft shade, with the change spreading across several staves. Remove the pale edge around the barrel."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the top planes are softly lit and the body sides drop gently, with a soft dark contact shadow under the car and sheen confined to bumper, grille and mirrors. All values are within the real range. B: a broad white sheen covers the hood and roof, the panels are bright, and the windows and underside go near black, so light jumps abruptly between planes. All three measures exceed the real range (0.929, 0.708, 0.934).",
+   "fix": "Reduce the white sheen on the hood and roof to a soft highlight. Lift the darkest areas in the windows and under the car, and let body panels turn gradually from lit top to mid-tone side."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the roof canvas turns gradually from lit ridge to shaded lower edge with soft fold modeling, the curtains have gentle form shadows, and dappled light on the grass agrees with the sun rays at upper left. B: the roof is a flat, even mid-gray plane in the lens, butted directly against a bright front panel, so the form turns by a hard two-tone break. The surroundings go very dark, and shading range of 0.882 is above the real range. Light bias is low at 0.199. A's 0.736 is high but matches its visible side sun.",
+   "fix": "Let sunlight fall across the roof from the upper left, with a soft gradient and gentle folds, so the roof and front panel join smoothly instead of as two flat tones. Add soft dappled light on the grass that matches the sun's direction."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: firelight behaves as a light. Orange glow wraps softly up the pot's underside, catches the rocks and logs, and the pot throws a soft shadow on the ground around the base. The pot's side has a broad sheen. Its light bias of 0.078 is low, but that fits a central fire. B: the fire sits far below the pot, yet a red patch is painted on the pot's belly with speckled dark edges, reading as a stain rather than light. The ground barely receives glow or a shadow from the pot, and shading range of 0.6 is just under the real floor.",
+   "fix": "Make the fire's orange light wrap softly up the bottom of the pot and spill onto the logs and nearby ground. Remove the speckled red patch. Add a soft shadow on the ground beneath the pot."
+  }
+ ],
+ "pattern": "Generated cards light the hero evenly from the front and only darken its edges, so forms barely turn from a true lit side to a shadow side. Depth gets faked with glowing halos, outlined rim sheen, saturated cavities or painted-on glow patches. Cast shadows often look stronger or crisper than the hero's own shading can support, or they don't match it. Real cards commit to one directional key, with a gradual turn into a cooler shade and soft, grounded shadows."
+}

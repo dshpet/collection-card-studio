@@ -39,13 +39,17 @@ List the ten cards in reading order with slot 0-9, printed name, and whether the
 {guide(SET_FORM)}"""
 
 
-def ask_codex(prompt, image, schema, timeout=600):
-    attachments = ["-i", str(image)] if image else []
+def image_list(image):
+    return [image] if isinstance(image, (str, Path)) else list(image or [])
+
+
+def ask_codex(prompt, image, schema, timeout=600, effort="low"):
+    attachments = [flag for path in image_list(image) for flag in ("-i", str(path))]
     with tempfile.TemporaryDirectory() as folder:
         folder = Path(folder)
         (folder / "schema.json").write_text(json.dumps(schema))
         command = ["codex", "exec", "--skip-git-repo-check", "--ephemeral", "--ignore-user-config",
-                   "-m", "gpt-6.1-sol", "-c", 'model_reasoning_effort="low"', "-s", "read-only",
+                   "-m", "gpt-6.1-sol", "-c", f'model_reasoning_effort="{effort}"', "-s", "read-only",
                    "-C", str(folder), "--output-schema", str(folder / "schema.json"),
                    "-o", str(folder / "out.json"), *attachments, "--", prompt]
         done = subprocess.run(command, capture_output=True, text=True, timeout=timeout,
@@ -55,14 +59,17 @@ def ask_codex(prompt, image, schema, timeout=600):
         return json.loads((folder / "out.json").read_text())
 
 
-def ask_claude(prompt, image, schema):
-    tools = ["--allowedTools", "Read", "--add-dir", str(Path(image).parent)] if image else ["--tools", ""]
-    request = f"Read the image {image}, then answer.\n{prompt}" if image else prompt
+def ask_claude(prompt, image, schema, model="claude-sonnet-5-5"):
+    images = image_list(image)
+    folders = sorted({str(Path(path).parent) for path in images})
+    tools = ["--allowedTools", "Read", "--add-dir", *folders] if images else ["--tools", ""]
+    listing = ", ".join(map(str, images))
+    request = f"Read every one of these images, in order, then answer: {listing}\n{prompt}" if images else prompt
     command = ["claude", "-p", "--setting-sources", "", "--strict-mcp-config", "--disable-slash-commands",
-               "--model", "claude-sonnet-5-5", "--output-format", "json",
+               "--model", model, "--output-format", "json",
                "--json-schema", json.dumps(schema), *tools, "--", request]
     with tempfile.TemporaryDirectory() as folder:
-        done = subprocess.run(command, capture_output=True, text=True, timeout=600,
+        done = subprocess.run(command, capture_output=True, text=True, timeout=1200,
                               stdin=subprocess.DEVNULL, cwd=folder)
     if done.returncode:
         raise RuntimeError((done.stdout or done.stderr)[-400:])

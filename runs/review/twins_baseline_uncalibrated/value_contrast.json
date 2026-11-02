@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01 whistle",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: very pale, washed-out key. Background is pale yellow with a big white halo around the whistle, so the orange hero is the only mid-dark shape. B: saturated golden-yellow ground with a moderate glow, close to the calculator card's mid-bright key.",
+   "fix": "Use a saturated golden-yellow background with a soft warm glow behind the hero. Do not use a pale cream wash or a white halo."
+  },
+  {
+   "pair": "p02 glove",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: vivid cyan with a bright burst, light orange glove, white ball. B: duller, browner glove that sits darker and closer in value to the blue rays. Corners go dark blue and the inner glove shadows are heavy, so the key is lower.",
+   "fix": "Make the glove a bright warm orange, lit evenly with gentle shading. Keep the background bright cyan with light corners."
+  },
+  {
+   "pair": "p03 bugle",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Both have a light-cyan ray background, a bright brass horn and a dark red rope. B has a small bright burst behind the horn, but the key and the groupings match A.",
+   "fix": ""
+  },
+  {
+   "pair": "p04 camera",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: large black lens and body, with heavy darks and a hard contrast jump between the hero and the yellow ground. A long dark cast shadow runs across the floor. B: lighter blue body, bright cyan lens, glossy mid values, a soft glow behind it and small darkest areas.",
+   "fix": "Use a bright, saturated blue body with a glossy cyan lens. Keep the darkest areas small and soft. Add a light glow behind the hero and a short, soft shadow."
+  },
+  {
+   "pair": "p05 teacup",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: dark, muted maroon background. Corners darken strongly and the whole card sits in a low key. The white cup is the only light shape. B: bright red-orange background with a warm glow behind the cup and light corners.",
+   "fix": "Use a bright, saturated red-orange background with a warm glow behind the cup. Keep the corners light with no dark vignette."
+  },
+  {
+   "pair": "p06 basket",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Both are light-mid purple wall over a pale floor with the basket as the darker shape. A has a slightly darker right edge and soft realistic gradients. B has a glow behind the handle. The difference is small.",
+   "fix": ""
+  },
+  {
+   "pair": "p07 barrel",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: dark, desaturated brown barrel. Deep shadow sides, a dull grey floor and wall, and a low key overall. Hero and wood floor are close in value. A: bright orange barrel against a vivid blue sky, light floor, and clear separation.",
+   "fix": "Make the barrel a bright saturated orange with light wood faces and soft shading. Keep the sky vivid blue and the floor light. Avoid dark brown sides."
+  },
+  {
+   "pair": "p08 taxi",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Both have a bright yellow car on a mid-grey road, with a blue ray background. B's road is slightly darker and its burst is a bit less bright, but the value groups are the same.",
+   "fix": ""
+  },
+  {
+   "pair": "p09 computer",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Both have a light cream hero, a dark screen and an orange ground. B has a darker wood desk that fills the bottom, but the value split is the same as A.",
+   "fix": ""
+  },
+  {
+   "pair": "p10 tent",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: dim, muted forest, with dark trees in the corners and a heavy darkening at the top. The tent is mid-value and sits close to the surroundings. The black doorway is large and hard. B: bright green and sky, a light-lit tent and a small dark doorway, with an open, light key.",
+   "fix": "Use a bright, light forest with saturated green grass and a sunny sky. Make the tent a light warm yellow-orange that stands clear of the background. Keep the doorway interior a soft mid-dark and the corners light."
+  },
+  {
+   "pair": "p11 lighthouse",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Both are bright blue sky and sea with a light tower and red stripes. The hero separates in the same way. B has more busy mid values around the rocks, but the key is the same.",
+   "fix": ""
+  },
+  {
+   "pair": "p12 cauldron",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: dark forest backdrop, a grey-black pot that blends with the dark trees, a heavy dark vignette and a dim key. The flame is the only bright spot. B: brighter green and orange surroundings, a lit stew and rocks, and a more open key.",
+   "fix": "Use bright, sunlit green grass and trees. Make the pot a lighter blue-grey with a warm glow from the fire, clearly lighter than the background. Keep the corners light."
+  }
+ ],
+ "pattern": "The odd cards sit in a lower, duller key. Their corners are darker or heavily vignetted. The darkest accents take more area. The hero blends into the background by value instead of standing out against a bright, saturated ground. Examples are the maroon teacup, the dark brown barrel, the dim forest tent and the dark cauldron. The one other kind of odd card is washed out: the pale whistle."
+}

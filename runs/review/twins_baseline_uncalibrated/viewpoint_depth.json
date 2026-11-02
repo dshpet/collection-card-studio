@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01 whistle",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Both whistles float on a patterned backdrop at a similar high three-quarter angle. Both show the top face and the end opening with mild perspective. The normals are smooth on both. B's ring is a little larger.",
+   "fix": ""
+  },
+  {
+   "pair": "p02 glove",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Both gloves are seen from the front, tilted slightly, with the ball in the pocket. Both use a mild lens and a flat sunburst background. Nothing separates them on camera or depth.",
+   "fix": ""
+  },
+  {
+   "pair": "p03 bugle",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A has strong foreshortening. The bell at upper right is huge and near, while the mouthpiece at left is small. The two tassels are very large and close to the camera, which reads as wide-angle. B keeps the whole horn at a similar distance with mild perspective, like the real guitar card.",
+   "fix": "Draw the horn with mild, near-orthographic perspective. Keep the bell and mouthpiece at similar apparent scale. Keep the tassels in proportion, not oversized in the foreground."
+  },
+  {
+   "pair": "p04 camera",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B is viewed head-on with a huge front lens and a bulging grip pushed toward the viewer. The lens face is almost frontal, yet the top face and flash shoe are also visible. That mix of views looks forced and wide-angle. A is a calmer three-quarter view with the lens, top and side sharing one angle, and it sits on a ground plane that reads at one angle.",
+   "fix": "Turn the camera to a clear three-quarter view from slightly above. Use mild perspective, with the lens face and top face at one consistent angle. Do not enlarge the front lens toward the viewer."
+  },
+  {
+   "pair": "p05 teacup",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A is seen from a lower angle with a thin rim ellipse and a wall-and-floor horizon. B is seen from a higher angle with a more open rim. Each is internally consistent, with the cup and saucer sharing one angle. Both fall within the range of the real cards, which also vary in camera height.",
+   "fix": ""
+  },
+  {
+   "pair": "p06 basket",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Both baskets stand on a table with a horizon edge behind them. Camera height and perspective are similar and consistent. They differ only in the rendering of the table edge.",
+   "fix": ""
+  },
+  {
+   "pair": "p07 barrel",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B's top rim is a thin ellipse, as if seen at eye level. The bottom hoop ellipse is wider than the top, and the deck planks are seen from higher up. The barrel and the floor therefore disagree on camera height. A shows the open top with the rim looking down at the same angle as the deck and railing.",
+   "fix": "Show the barrel from a slightly raised camera so the open top ellipse is wider than the bottom hoop. Keep the deck planks at the same angle as the barrel."
+  },
+  {
+   "pair": "p08 taxi",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Both are three-quarter front views on a road with converging lane lines. A is closer and wider, with a large bumper. B is a little more distant. Neither is clearly outside the real range, and there is no car among the real cards to compare against.",
+   "fix": ""
+  },
+  {
+   "pair": "p09 computer",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A is a lower, flatter view with the desk edge across the bottom. B is a higher view with more of the keyboard top showing. Each keeps its monitor, base and desk at one angle.",
+   "fix": ""
+  },
+  {
+   "pair": "p10 tent",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B stacks many layers. Large foreground leaves frame the corners, a lantern and rock sit in front, and a log fence, flowers, trees and a sky with light rays sit behind. This is a full diorama. A has a hazy forest that fades with distance and a plainer ground, which is closer to the real cards. They keep a simple backdrop with the hero and little foreground clutter.",
+   "fix": "Keep one hero on a simple ground plane. Use a soft, simple background with trees only as blurred shapes. Leave out foreground framing leaves and extra props."
+  },
+  {
+   "pair": "p11 lighthouse",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B builds a whole island with rocks, a buoy, bushes and ocean waves. The rocks are seen from above while the tower and lantern are seen from nearly level, so the view feels stacked. A is a single tower against sea and sky with a plain horizon and one angle. The real cards keep the hero simple and fill the frame.",
+   "fix": "Draw only the lighthouse on a small base, seen from one mild three-quarter angle. Use a plain sea and sky behind, and leave out the island, props and foreground rocks."
+  },
+  {
+   "pair": "p12 cauldron",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B adds crates, vegetables, a stump with herbs, a ring of rocks and a dirt path around the fire. That makes foreground, midground and detailed background layers. A has the cauldron, fire and posts on a flat clearing, with a darker forest receding behind. The real cards have a simpler layout.",
+   "fix": "Show the cauldron and its stand on a plain ground patch. Use a soft, simple forest backdrop. Remove the side props and the surrounding rock ring."
+  }
+ ],
+ "pattern": "The odd cards are overbuilt in depth. They use wide-angle foreshortening (bugle A, camera B) or mixed camera heights within one object (barrel B). They also add several depth layers: foreground leaves and props, a midground, and a detailed backdrop (tent, lighthouse, cauldron B). Real cards use one mild three-quarter angle, a hero with a simple soft background, and little foreground."
+}

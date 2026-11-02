@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the whistle body is smooth, soft-edged moulded plastic with a broad satin sheen along the top edge and no surface marks, like the smooth surfaces on the real calculator and cooler. B: the body and side disc carry an even sandpaper-like speckle, with a crisp incised ring on the disc and hard edges around the top slot. No real card or lesson shows this grain. A's gradient body is slightly candied, so the call is weak.",
+   "fix": "Smooth moulded plastic with a soft satin sheen, no surface grain or speckle, softly rounded edges around the slot and the side disc."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the bell and tube have streaky brushed-gold lines and hard, contrasty mirror highlights. The rope wrap and tassels are full of fine crunchy fibre strands. B: the brass is a soft, continuous gold gradient with one calm highlight, and the rope is simple rounded twists with no fibre noise. That quieter finish matches the real cards.",
+   "fix": "Polished brass with one soft continuous highlight and no brushed streaks. Red cord drawn as simple smooth twists, no individual fibres, tassels as soft grouped strands."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the porcelain is soft and creamy, with a muted rim stripe, calm tea and a highlight that melts across the cup. B: the glaze is glassier, with a crisp saturated blue rim, sharp reflection arcs on the saucer, tiny foam bubbles along the tea edge, and a thinly lined flower with fine yellow stamens. These are extra hard micro details and a more lacquered finish than the real cards show.",
+   "fix": "Soft creamy porcelain with a gentle low-contrast sheen, no bubbles on the tea, plain calm liquid surface, muted painted flower with simple shapes, soft rim stripe."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: every surface is equally crisp. Apples are peppered with tiny speckles, the wicker has many sharp strand lines, and the cloth has a dashed white stitch line and visible weave. It looks like uniform sharpening noise. B: the apples are soft with a blended blush, the cloth is smooth, and the weave is broad and simple. B's apples are glossy and its braid is chunky, so its lacquer pulls against this call.",
+   "fix": "Reduce surface noise: apples with soft blended colour and few or no speckles, smooth quiet wicker strands, cloth without dashed stitching, one soft highlight per apple."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the staves have saturated, varnished orange wood with crisp cathedral grain. The bands are scratched steel with evenly repeated domed rivets, and everything is similarly sharp and lacquered. B: the wood is matte, with a few short quiet grain strokes, the bands are plain dull metal with soft highlights, and the gloss differs clearly between wood and metal. B's finish is closer to the restrained real surfaces.",
+   "fix": "Matte unvarnished wood in a slightly muted brown, with only a few faint quiet grain lines. Plain dull metal bands with a soft highlight, no scratches, fewer rivets."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the paint is hard and lacquered, with mirror chrome on the grille, bumper, mirrors and hubcaps, tooled leather seats, and sharp tyre and asphalt texture. The high-contrast finish is nearly photographic. B: the paint is soft and semi-matte, the bumper and grille are quiet satin metal, and the glass and tyres are simple. B may be over-smoothed, since the real camera keeps more small detail, so confidence is low.",
+   "fix": "Soft semi-gloss yellow paint with a broad gentle highlight, satin metal trim instead of mirror chrome, simple seats and tyres, smooth road with no gravel noise."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the canvas is crisply detailed, with dashed cream stitching along every edge, brass-studded tie straps, a metal grommet with rope, and a sharp dappled leaf shadow. The small hardware is over-described and sharpened. B: the tent is soft felt-like cloth, with broad folds, a plain hem and no fine hardware. It sits nearer the simple fabric on the real folding chair, though B's softness is slightly blurry.",
+   "fix": "Soft plain canvas with broad gentle folds and a simple hem, no dashed stitching, no studs or grommets, thin plain ropes."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the pot is hard, hammered cast iron with speckled pitting, rows of sharp rivets, a bright rim highlight, and stew crowded with tiny herb flecks and bubbles. The whole surface is high-frequency. B: the pot is plain grey metal with soft shading, the soup is smooth and the ingredients few. Its grainy soot patch is airbrushed noise, so B is not clean either and the call is close.",
+   "fix": "Smooth dark iron with a soft dull sheen and no pitting, fewer rivets, calm soup with a few simple ingredients and no tiny flecks."
+  }
+ ],
+ "pattern": "In the lessons, generated cards are more lacquered and saturated, with chunky toy details and fine parts smoothed away. In the test pairs, the suspected generated cards go the other way. Micro detail is spread evenly and crisply over every material: fibre strands, speckles, dashed stitches, pitting, scratches and repeated rivets. Highlights are hard and mirror-like, so gloss and sharpness barely vary across the object. Real cards stay softer and quieter, with one blended highlight, fewer marks and a clear matte-to-shiny difference. This test-pair pattern is an inference, not something the lessons show directly, so the calls are moderate to low confidence: p01, p04, p06 and p08 are weak, and a smoothed card could still be the generated one."
+}

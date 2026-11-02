@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01 whistle",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the background is a pale washed-out cream-yellow with a white halo, so it is much quieter than the orange whistle. B: the background is a loud saturated amber-gold that matches the other real cards. In both, the whistle is one orange family.",
+   "fix": "Make the background a rich saturated golden-orange, not pale cream. Remove the white glow behind the object."
+  },
+  {
+   "pair": "p02 glove",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the glove is a dull tan-brown leather and the ball is a dusty cream. The blue is deeper and darker. The lens shows very little chroma in the glove. A: the glove is a bright saturated orange, the stitches are red and the blue is vivid.",
+   "fix": "Paint the glove bright saturated orange-amber with clean red stitching. Use a vivid cyan-blue background with no brown or gray cast."
+  },
+  {
+   "pair": "p03 trumpet",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the cyan background is duller and grayer, and the brass is a darker brownish orange. The red tassels are small and dark. A: the brass is a bright gold-orange, the tassels are a hot red, and the cyan is clean.",
+   "fix": "Use bright glossy gold-orange brass and hot saturated red tassels on clean vivid cyan. Don't let the colors go dark or muddy."
+  },
+  {
+   "pair": "p04 camera",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the body is a gray-navy near-neutral and the lens is murky, so the hero chroma is low. The shadow on the yellow floor is dull. B: the body is saturated royal blue with a bright cyan lens, set against yellow-orange as a clear complementary pair.",
+   "fix": "Paint the camera body saturated cobalt blue with a bright cyan glass lens. Keep the gray only on the top plate, and keep the shadow a rich warm orange."
+  },
+  {
+   "pair": "p05 teacup",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the maroon background is dim and muted, and the cup is a dull cream-white with a pale blue rim. The shadow is dark and brownish. B: the red-to-orange background is bright and glowing, and the blue rim and flower are saturated.",
+   "fix": "Use a bright saturated red-orange background with a warm glow. Paint a vivid blue rim and flower on a clean white cup, and give the shadow a rich red tone."
+  },
+  {
+   "pair": "p06 basket",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the lavender background is pale and pastel, the apples are a darker, slightly dull red, and the cloth is a pale muted green. B: the purple is vivid magenta-violet, the apples are a bright red, and the green cloth and leaves are saturated.",
+   "fix": "Use a saturated violet-magenta wall, bright candy-red apples with green leaves, and a vivid green checked cloth."
+  },
+  {
+   "pair": "p07 barrel",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the staves are a muddy brown-tan, the hoops are dull gray, and the deck is a washed beige. The sky is paler. A: the barrel is a bright orange, the sky is a vivid blue, and the deck is a warm golden color.",
+   "fix": "Paint the barrel saturated orange-amber wood with polished steel hoops. Use a vivid blue sky and a warm golden deck, with no brown-gray cast."
+  },
+  {
+   "pair": "p08 taxi",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the taxi is a pale, dusty mustard-yellow, the road is a flat brown-gray, and the shadows are dark brown. The blue sky is clean but less vivid. A: the taxi is a bright yellow-orange, the road is a purple-blue that relates to the sky, and the shadows are saturated.",
+   "fix": "Paint the taxi bright saturated golden yellow. Give the road a purple-blue shade that relates to the sky, and give the shadows a rich blue-violet tint."
+  },
+  {
+   "pair": "p09 computer",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the computer is a gray-lavender near-neutral and the dark screen is cool. The desk is brown. It is a more realistic, muted local color set against the vivid orange. B: the computer is a warm cream, with a rich red-brown desk and a hot orange background. The whole card is pulled warm and saturated.",
+   "fix": "Give the computer a warm cream-beige case with saturated purple keys. Keep the background and desk bright and colorful, and avoid a gray-blue cast."
+  },
+  {
+   "pair": "p10 tent",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the forest is a hazy, desaturated green-teal, the trunks are dull brown, and the tent is a muted ochre. Nothing stands out. B: the greens are saturated, the sky is cyan, and the tent is a bright orange-yellow. The lantern and flowers are small bright accents.",
+   "fix": "Use a bright saturated green meadow and a vivid cyan sky. Paint the tent glowing orange-yellow, with a few small bright flowers as accents. No haze or gray."
+  },
+  {
+   "pair": "p11 lighthouse",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the sky and sea are a flat mid-blue, the tower is a gray-white, and the red is a heavy, slightly brick tone. Most of the card is quiet. B: the sea is a bright turquoise, the sky is a cyan-blue, and the red stripes are a hot red. The stone is a warm sandy tone, and the rocks and green plants add color.",
+   "fix": "Use a turquoise-cyan sea and a saturated blue sky. Paint the tower white with hot candy-red stripes and a glowing yellow lamp, with warm sandy stone."
+  },
+  {
+   "pair": "p12 cauldron",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cauldron is a gray-brown metal, the greens are a murky olive, and the ground is a dull tan. The glow under the pot is dark red. B: the pot is a deep blue-black, the fire is a bright orange-yellow, and the greens and teal are saturated.",
+   "fix": "Paint the pot a deep blue-black metal with a bright orange-yellow fire glow. Use a saturated green forest with teal, and a rich warm soup with orange carrots."
+  }
+ ],
+ "pattern": "The odd card is the more muted, realistic one. It has dusty or grayed local colors on the hero (tan glove, gray-navy camera, mustard taxi, murky teal-green forest). The background is often pale, hazy or dim. Shadows go brown or gray, not rich or related in hue. The real cards use a loud saturated background, a bright candy-colored hero, and tinted shadows."
+}

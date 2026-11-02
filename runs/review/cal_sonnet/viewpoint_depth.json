@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both whistles are seen from the same upper three-quarter angle with the same flat patterned wall. A has a crisp, even background with the hero clearly separated. B has a soft white glow behind the whistle, and its ring and mouth edges are less defined. The normal map for B is smoother and has less defined planes. The camera is nearly the same, so this is weak evidence.",
+   "fix": "Keep the whistle at the same mild three-quarter angle. Use a clean, crisp patterned wall without a soft glow, and keep the ring edges sharp."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A has a huge bell very close to the camera, with a much smaller mouthpiece and tassels at the bottom. The scale falls off steeply, which reads as wide-angle and forced. B has a milder size change along the horn, and its bell, coil and tassels sit in a calmer, more even perspective.",
+   "fix": "Use a mild, telephoto-like perspective. Keep the bell only slightly larger than the tube, and keep the tassels in proportion to it."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B has a higher camera that shows the tea surface and saucer top, with a bright glow behind the cup. The cup looks swollen, and the ground is a flat green plane that fades into the background. A is lower and calmer, with a soft horizon behind it and a floor shadow. The two do not differ much on camera.",
+   "fix": "Lower the camera a little and add a defined table or ground plane. Avoid the inflated cup and the bright halo."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A has a table with a blurry reflective sheen and a soft wall, and the basket is near-frontal. B has a clear table edge and a crisp wall, and its basket is seen from slightly higher. Both show the same kind of ground plane and a consistent view. The difference is small.",
+   "fix": "Use a crisp table edge without a glossy reflection, and keep the basket's top face visible at the same angle as the table."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B shows a steep top ellipse on the barrel, as if seen from high above. The deck boards and rail behind it are drawn from a much shallower angle. That makes two camera heights on one card. A has a lower ellipse that matches the deck lines and the wall. Its barrel stands on the ground in one view.",
+   "fix": "Draw the barrel, the deck boards and the railing from one shared camera height, with the barrel's top ellipse matching the floor lines."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's taxi is very close, and its front bumper and wheels are much bigger than the rear. That looks like a wide-angle lens. The road stripes run steeply to the corner. B has a smaller car with milder perspective, and the road stripes recede more calmly.",
+   "fix": "Use a mild perspective with less size change between the car's front and rear. Place the car a bit further back, with the road lines receding gently."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A has many layers: big foreground leaves at the corners, the tent, a lantern, then trees and light rays behind. The layers are close together and busy. B has a simple grass ground, a tent and a forest that softens with distance. That reads as a plain, softer background.",
+   "fix": "Remove the corner foreground leaves and the many small props. Use a simple grass ground with a softened forest behind the tent."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A is dense with layers: a crate with vegetables on the left, a stump on the right, rocks around the fire and logs on the beam. Everything is sharply drawn. B has a simpler layout of a pot, a fire and a tree backdrop, with fewer objects on the ground. The camera angle is similar.",
+   "fix": "Remove the crate, the stump and the extra rocks. Keep a simple ground plane with the pot and the fire, and let the forest behind it go soft."
+  }
+ ],
+ "pattern": "Generated cards pack in extra depth layers (corner foreground leaves, many props, rocks) and use close, wide-angle perspective with a large near part. Sometimes the hero's top ellipse disagrees with the ground lines, so the card has two camera heights. Real cards stay with one mild angle and a simple background."
+}

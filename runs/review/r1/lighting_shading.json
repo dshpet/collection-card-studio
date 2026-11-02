@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the whistle body is soft and clay-like, its side turns slowly into shadow, and a white halo surrounds it on the background. There is almost no cast shadow, so it floats, and the disc on the side melts into a shallow dark smudge. B: the top, front and side planes meet at crisp edges, the mouth and window have hard interior shadows, and a tight soft cast shadow falls lower right. There is no halo.",
+   "fix": "Remove the white glow behind the whistle. Light it from one side so the top face is bright and the side face is clearly darker, with a crisp edge between them. Add a soft, tight shadow on the background under the lower right edge."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the tube and coil stay a warm mid-brown in the lens with little lit-to-shadow change. The bell carries streaky painted reflections and only a thin rim light, with no cool bounce. B: the bell lip is brightly lit, the shaft shows a clear dark core, and the coil and mouthpiece pick up cool blue bounce from the background, as the shadow sides on the real lesson cards do. The evidence is weak because this is metal and the lens leaks color.",
+   "fix": "Give the brass a single clear highlight along the top of the tube and a dark band below it, with cool blue reflected from the background on the underside of the coil. Replace the streaky reflections in the bell with one smooth gradient."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a soft pale glow spreads over the surface around the saucer's lower right, the cup turns very gently, and the cast shadow to the left is a diffuse red smear that melts into the wall with no clear floor line. B: the cup has a darker shadow side at left and under the handle, a dark contact line under the foot and saucer, and a defined dark cast shadow on a separate floor plane. The cup front in B is fairly even, so this is a weak call.",
+   "fix": "Remove the glow around the saucer. Add a thin dark contact shadow under the cup foot and under the saucer, and give the cast shadow a clearer shape on a flat table surface, darker near the saucer and fading away from it."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the apples are big inflated spheres with a broad soft sheen and very slow turn. The handle is puffy. The table has a glossy vertical reflection and only a faint soft shadow to the right, so the hero is not firmly grounded. A: the apples have tighter highlights and clear shaded undersides, the weave has dark gaps between strands, and a defined cast shadow falls left on the table with a clear contact edge.",
+   "fix": "Light the basket from the upper right with a defined cast shadow falling left on a matte table. Remove the shiny reflection under the basket. Make the apples darker on their undersides, with small tight highlights instead of a wide sheen."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the barrel is lit by a central frontal stripe and falls dark at both the left and right edges, like a vignette, with the lower hoops going dark. The cast shadow to the left is thin and weak and does not match that frontal light. A: the light comes from the upper left, the right side steps down in value, hoops and rivets catch clear highlights, and a solid cast shadow falls right on the deck with firm contact at the base.",
+   "fix": "Light the barrel from the upper left so the left staves are brightest and the right side is darkest, instead of a bright stripe down the middle. Add a clear, solid shadow falling right across the deck, dark where it meets the base."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the body has a broad, pale, soft sheen across hood and roof and turns slowly, so the shape reads inflated. Bumper and wheel trim are dull matte gray with no sharp reflections, and the shadow under the car is a soft dark pool. A: the door sides drop clearly below the hood, the chrome bumper and grille have sharp dark-and-light reflections, the headlights have tight highlights, and a darker cast shadow firmly grounds the wheels.",
+   "fix": "Make the side of the car noticeably darker than the hood and roof, with a tighter highlight along the body crease. Render bumper and grille as chrome with sharp dark and bright reflections. Darken the contact shadow right under each tire."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the door flaps are rolled, puffy cylinders with smooth airbrushed sheen, and the left roof plane is flat gray. There is almost no cast shadow on the grass although the light clearly comes from the right, so the tent sits on an evenly lit ground. A: the panels are crisp planes, a dappled leaf shadow falls across the roof, the interior is dark and deep, and the tent has shadow at the ground line. The dappled shadow itself is unlike the real cards, so this is a low-confidence call.",
+   "fix": "Add a soft dark shadow on the grass along the tent's left side and base. Replace the smooth rolled sheen on the flaps with folds that have crisp shaded creases, and darken the ground right at the tent's edge."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: a red glow sits on the pot's underside although the small flame is well below it, and the pale gray upper body turns slowly to it with blotchy soot. The fire casts no visible light on the ground or logs, and the posts have flat, even shading with no cast shadow on the dirt. A: the firelight falls on the inner faces of the stones and logs and on the pot's base, the iron has clear highlights on rivets and rim, and dark contact shadows sit around the stones.",
+   "fix": "Let the fire light the scene: warm light on the inner faces of the logs and on the ground around them, fading with distance. Keep the glow on the pot small and low. Add dark shadows on the dirt under the logs and posts, and give the iron pot a clear highlight along its upper curve."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through soft, frontal, wrap-around light: a glow around the hero, slow airbrushed turn on inflated forms, broad sheen instead of tight highlights, weak or missing contact and cast shadows, and little cool shadow side. Real cards commit to one light direction, with crisp plane changes, a clearly darker often cool shadow side, and a firm grounding shadow."
+}

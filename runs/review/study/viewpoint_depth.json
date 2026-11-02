@@ -1,0 +1,26 @@
+{
+ "always": [
+  "Hero is a single 3D-rendered object shown from slightly above, at a mild high three-quarter angle: top face visible, one or two side faces turned toward camera, never a pure side elevation (palm, pump, booth and carousel come closest).",
+  "Perspective is mild and consistent within an object: edges converge gently (phone booth, planter, pump, book), with no fisheye or wide-angle stretching.",
+  "Hero and ground plane agree: where a floor is present, normals show a flat green-cyan plane with a horizon band behind it, and the hero base sits on it with a contact shadow or footprint.",
+  "Rounded hero forms read as smooth swollen normal gradients (pillow, gloves, fins, shoes); hard-edged forms read as even flat patches with crisp edges (booth, planter, ticket, book cover).",
+  "Depth is shallow and layered in simple tiers: hero, a ground or table, then a simple backdrop. The hero is always the nearest and largest object."
+ ],
+ "varies": [
+  "Camera height: top-down or near top-down for flat items (ticket, pillow, fins, book on table) versus a low eye-level three-quarter for tall items (phone booth, carousel, pump, palm, planter).",
+  "Ground presence: no ground, only an abstract flat backdrop with stripes or rings (ticket, pillow, fins); a floor with a horizon line (booth, carousel, shoes, gloves, palm, pump); a tabletop that fills the frame (book).",
+  "Background treatment: flat graphic color or pattern (most cards), a simple painted scene (fence, desert mesas, sky), or a fully built environment with mid-ground props (the pool bar, which has foreground and background layers and a cropped roof).",
+  "Number of layers: one (ticket) up to four or five (pool bar: roof, bar, stools, water, pool edge).",
+  "Crop: some heroes sit fully inside the frame with margin; the gloves and the pool bar crop at the edges.",
+  "Planar share: very high on the ticket (almost fully flat normals), moderate on the booth, planter and book, low on the pillow, gloves and fins."
+ ],
+ "never": [
+  "Strong wide-angle distortion or forced extreme perspective.",
+  "A true bird's-eye view that makes a standing object look flat, or a worm's-eye view from below.",
+  "Heavy depth-of-field blur: backgrounds are simplified or flat, not optically blurred (a faint softening in the desert and fence scenes is the most there is).",
+  "A hero floating without any relation to its ground when a floor is shown.",
+  "Parts of one object drawn from different viewpoints, except the flat ticket, which is a graphic.",
+  "Several competing focal depths: the hero stays nearest and sharpest."
+ ],
+ "generator_wording": "Single hero object in soft 3D render, seen from slightly above in a mild three-quarter view with gentle perspective, no wide-angle distortion. Hero stands on a simple ground plane with a soft contact shadow, in front of a flat or simplified backdrop. Rounded forms are smooth and swollen, hard forms have flat faces. Background is simpler, not blurred."
+}

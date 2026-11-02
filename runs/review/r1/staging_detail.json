@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a white-yellow halo around the whistle washes the flame pattern out next to the body, and the field is pale. The flames sit on a stiff, even grid. B: a saturated yellow field with an even tone, tone-on-tone staggered flames, and only a soft drop shadow lower right. This is close to the real calculator card. The halo in A repeats the glow around the generated glove.",
+   "fix": "Flat saturated golden-yellow background with no glow around the object. Campfire icons one shade darker than the background, staggered and evenly faint. Soft drop shadow only."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the sunburst is intense cyan with soft ray edges, and a bright bloom sits behind the bugle and tassels. The hero fills more of the card. B: a paler teal burst with crisp, even rays and no bloom, though its rays converge visibly inside the bugle's loop. The burst in A is nearer the generated glove's lit-from-behind field.",
+   "fix": "Even turquoise sunburst with clean, crisp rays and no bright glow behind the bugle. Leave more empty background around the object."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a muted red studio backdrop with a soft vignette and no hard horizon. The floor melts into the wall and the object sits in a long, quiet shadow. B: a hot crimson wall meets an orange ledge at a hard straight line, with a glow at the wall's lower right. The contrast between the two bands is high. Steam is a story addition on both cards, so it does not separate them. The call rests only on B's more pushed, saturated field.",
+   "fix": "One quiet red background that fades softly into the surface. No sharp horizon line, no second bright color for the ledge, no glow behind the cup."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a plain category 2 setup. Saturated purple wall, flat pale-yellow ledge, one cast shadow to the left, nothing else. B: the wall is washed to pale lilac with a bright center and darker corners. The ledge carries a glossy yellow reflection streak and a warm glow under the basket. These lighting effects on the background resemble the generated cards' glow. The horizon also sits lower, so the basket looms larger.",
+   "fix": "Plain matte tabletop with a single soft shadow, no reflection or glow. Evenly saturated purple wall with no bright patch behind the basket."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the deck is covered in small nail dots and the rail has repeated posts, which adds small detail behind and around the barrel. It is frontal, with a large cast shadow. B: plain plank walls and a diagonal deck with no fasteners. These are a few large, quiet shapes against a simple cyan sky, closer to the real desk and lion plinth settings. The evidence is thin because both cards use the same ship-deck idea.",
+   "fix": "Remove the nail heads from the deck and simplify the railing to one or two plain wood shapes. Keep the deck as a few wide, smooth planks."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the asphalt has a speckled, gritty texture across the bottom third, and a pale bloom in the sunburst sits behind the roof. B: a smooth, matte road with two or three large lane stripes under a clean-edged sunburst, which is the quieter load the real cards show. B's road tilts and a stray red stripe shows at the right edge, but this is minor.",
+   "fix": "Smooth, matte dark road with no gravel texture, two or three simple white lane dashes, and an even blue sunburst with no glow behind the taxi."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the environment is crowded. There is a big foreground tree and canopy, a boulder, bushes, firs, sun shafts, yellow flowers, ferns in the corners and lit grass blades, all close around the tent. B: also a forest, but built from upright trunks and firs behind a broad, plain lawn with only tiny flowers, and the ground is much quieter. Compared with the real lion card's large, calm shapes, A carries far more secondary objects, like the generated lighthouse island.",
+   "fix": "Open sunny clearing with a few large soft tree shapes far behind. Plain green grass with no flowers, rocks, ferns or light rays. Nothing near the tent."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: dense props. Rope lashings, thick posts cropped by the frame, a full ring of boulders, pebbles, split logs and a large fire all sit packed under the pot, with little empty space. B: a simpler frame, a flat dirt circle, a few disc stones and a small fire on a quieter fir backdrop, though the logs touch the bottom edge. A's load of small objects is closer to the generated lighthouse habit. Neither card is as calm as the real environments, so this is a weak call.",
+   "fix": "Fewer props: a plain wooden frame without rope, a small simple fire, no ring of rocks or pebbles, and a quiet dirt patch with soft green behind."
+  }
+ ],
+ "pattern": "Generated cards light and furnish the background instead of keeping it quiet. Look for a glow or bloom behind the hero, pushed or washed-out field saturation, and gloss or reflection on plain ledges. They also add invented secondary props and small surface detail: nail dots, gritty asphalt, flowers, rocks, rope, pebbles. The hero tends to be packed tighter into the frame. Real cards keep an even field, one soft shadow and a few large, calm shapes. These signals were weaker in the test pairs than in the lessons, so most calls here are low confidence."
+}

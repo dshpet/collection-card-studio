@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "The camera is nearly the same on both: a three-quarter view from above with the whistle tilted on the diagonal. On A the top face melts into the side in a smooth rainbow on the normal map, and the slot and mouth have rounded lips with no readable inner walls, so the form looks swollen. On B the top and side stay separate even patches meeting at a tighter edge, and the slot and mouth show flat inner walls that agree with the view. The evidence is thin because the view itself barely differs.",
+   "fix": "Three-quarter view from above with mild perspective. Keep the whistle's top and side as separate flat faces with a clear edge between them, and show the flat inner walls of the slot and mouth opening."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A pushes the bell at the camera: it is huge, fills the top left and shows a deep open cone, while the tube shrinks fast to a tiny mouthpiece. The hero fills the frame, which reads as forced wide-angle, the same direction as the generated camera lens in the lesson. B has the bugle turned further to the side with a smaller bell and a long even taper, so the foreshortening is milder. B's coil does look doubled, but its overall perspective is closer to the real cards.",
+   "fix": "Side-on three-quarter view with mild perspective. Make the bell only moderately larger than the mouthpiece end, keep the tube's taper gentle, and leave clear margin around the bugle."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B has a higher camera: the tea surface and inner wall show more, the saucer opens as a wide ellipse and the cup's foot is visible, all on a hard-edged two-tone ground with the horizon behind the cup. This matches the lessons' generated cards, which look further down on the object. A sits lower: the rim is a flatter ellipse, the cup settles into the saucer, and the ground fades softly into the wall with no hard line. The gap is small, because the rim ellipses are close.",
+   "fix": "Lower the camera to just above the rim, so the tea is a thin ellipse and the saucer is shallow. Let the cup sit low in the saucer on a calm ground plane."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B is pushed closer: oversized apples crowd the top, and the rim bulges forward and tilts while the handle sits off-axis. The sides fall away toward a low base, so the rim and base don't quite share one view. The floor is a thin strip with a low horizon at the bottom of the card. A sits further back with a level rim, a handle arching squarely over it, a base curve that matches the rim, and a deeper table plane with a shadow that lies flat on it.",
+   "fix": "Pull the camera back. Keep the basket rim level and the handle centered over it, with the rim and base curves matching one slightly raised view on a flat table."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "On A the camera looks well down into the barrel: there is a deep open rim ellipse and strongly curved hoops. Yet the deck planks and rail run flat and square-on behind it at a low level, so the barrel and the ground appear to be seen from different heights. The belly also swells toward the viewer. B has a nearly level view of the rim with a thin ellipse and gentler hoops, and its deck and rail run on one receding angle. B's view is calmer and closer to the lessons' real low camera.",
+   "fix": "Low camera with only a thin sliver of the barrel's top showing and gently curved hoops. Run the deck planks and rail at the same viewing angle as the barrel."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "On B the body is a soft inflated toy: panels flow together in a smooth rainbow on the normal map, with few flat patches on the doors or hood. The ground tilts steeply, and the road dash in the near corner is oversized, which forces the foreground. On A the panels, bumper and arches stay clearer and more planar, and the road markings stay small and even, although the front end is also pushed close to the camera. A's front-to-rear wheel scaling is about the same as B's, so this call rests on the forms and the road.",
+   "fix": "Three-quarter view with mild perspective and a calmer road tilt. Keep the road dashes small and even, with flat door and hood panels and clear edges between them."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A uses a close wide-angle view: the near corner of the tent swells toward the viewer and the ridge barely climbs while the base edge rises steeply. That is strong convergence. A big stake, flowers and ferns stack up in the foreground as an extra depth layer, and the ground rushes up to the camera. B sits further back with a calm front-on three-quarter view, a mild ridge line and a simple grass ground. Its background fades back in clear steps behind the hero.",
+   "fix": "Step the camera back and use mild perspective. Show the tent at one calm three-quarter angle on flat grass, with no large props in the foreground and a simple background behind it."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A is shot tight and close: the cauldron fills the card, the frame legs splay out to the edges, and the ring of stones is seen from well above while the beam reads almost side-on. The near stones also crowd the bottom of the card as a heavy foreground. B has straight posts, a smaller pot and an open ground plane, so it is calmer, though its deep rim ellipse is at odds with its side-on beam and its ground bows like a mound. Both have view inconsistencies, so A is only a slight lean.",
+   "fix": "Pull the camera back to a single gently raised view. Keep the posts near-upright and leave open ground around the fire, with the stones, rim and beam all sharing that same view."
+  }
+ ],
+ "pattern": "Generated cards still stand too close, with a slightly wide-angle view. The near part of the hero swells toward the viewer (bell, tent corner, barrel belly, oversized apples) and it fills more of the frame than on real cards. They also tend to look further down on the object, while the ground, horizon or background is drawn from a different height or angle, so hero and ground do not share one view. Forms melt into smooth rainbows on the normal map rather than holding flat faces with clear edges, and extra foreground props add a depth layer the real cards rarely have."
+}

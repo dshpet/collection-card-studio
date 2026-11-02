@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both whistles are the same saturated orange on yellow, so hue roles match. In A the body keeps an orange-to-burnt-orange ramp and the slot stays a darker orange, on a mid golden yellow. In B the slot and mouth shadows jump to pure red, the body lens splits into two loud orange-red masses, and the background is bleached to pale lemon with a near-white halo around the whistle. B's red shadows follow the lesson direction, but the gap is small.",
+   "fix": "Keep shadows on the whistle a deeper burnt orange, not pure red, including inside the slot and mouth. Make the background a solid mid golden yellow with no pale glow around the object."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: brass reads as one coherent old-gold family in the lens, the red cord is a deep crimson, and the teal background is slightly muted. B: the bell's inside shifts to hot orange-red, the brass is a bright pure orange-yellow, the tassels are candy pink-red, and the background is neon cyan near full chroma. Hero and background are equally loud in B.",
+   "fix": "Make the brass an aged warm gold with olive-brown shadows, not orange-red. Make the cord a deep muted crimson and the background a calmer, slightly greyed teal."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 5,
+   "difference": "A: the cup rim, saucer rim and flower are pure sky blue, leaves are pure green, and the background runs red to hot orange at full chroma, so there is no rest area and the lens has big blue masses. B: the porcelain is off-white, the blue band is a dusty faded blue, the leaves are muted olive, and the background is a dusty wine red with deep burgundy shadow. B's cup is a neutral rest against a controlled field.",
+   "fix": "Draw an off-white porcelain cup with a thin faded dusty-blue band and a small muted painted flower with olive leaves. Make the background a dusty wine red, with shadows in deep burgundy rather than orange."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the cloth is pale sage and cream, which clusters with neutrals in the lens, the apples have yellow-green blush near the stems, the table is a soft peach, and the cast shadow is a muted rose. B: the cloth is pure lime green and white, leaves are the same pure green, apples are uniform pure red, the basket is pushed red-orange, and the background is flat loud violet. Almost every mass in B is at full chroma.",
+   "fix": "Make the cloth a soft faded green and cream check. Give the apples yellow-green blush near the stems and no bright leaves. Use a dustier lilac wall, and a table with a soft muted peach cast."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 5,
+   "difference": "A: the staves are pure saturated orange with red-orange shadows, the bands are purple-grey, and the deck is orange-peach, so the wood has lost its local color and the whole card is pulled warm. B: the wood is a believable mid brown with a tan-to-umber range, the metal is grey with a cool sky pickup, and shadows stay brown rather than orange.",
+   "fix": "Paint the barrel in natural weathered oak brown with tan lights and dark umber shadows, not orange. Make the bands neutral steel grey, and the deck a pale desaturated tan."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "A: the body is a soft mustard yellow, which the lens groups as a muted sand, the road is neutral grey-brown, and glass is a greyed blue. B: the body is pure taxi yellow with orange shadows, the road is shifted to violet-blue with indigo shadow, the glass and interior are saturated blue, and the chrome picks up cyan. B has no true neutral anywhere.",
+   "fix": "Make the car a slightly dusty mustard yellow with ochre shadows. Make the road plain neutral grey asphalt with dark grey shadow, the windows greyed pale blue, and the chrome neutral."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "A: the tent is a dull ochre with brown shadows, the forest recedes into dusty greens and grey-blue haze, and the trunks are muted brown-red, giving large rest areas. B: the tent is pure yellow with orange-red shadows, the grass is pure green, the sky is teal-cyan, and orange-red props and a red lantern add extra hot accents. The lens shows acid yellow spreading across grass, leaves and tent.",
+   "fix": "Make the tent dull ochre canvas with brown shadows. Use muted forest greens that fade to grey-blue in the distance, with no red lantern or bright orange props."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the pot is a neutral grey with soot-black and a local red glow, the greens are dark and muted, the soil is a dull tan, and the logs are plain brown. B: the logs and stones are pushed to saturated orange, the sky is teal, the grass is bright yellow-green, the pot's iron shifts to blue-purple, and vegetables add many pure accents. Warm orange covers nearly the whole lower half in the lens.",
+   "fix": "Make the pot neutral sooty grey-black iron. Use plain brown logs and grey stones, a dull tan dirt ground, and dark muted forest greens, with the fire as the only hot orange."
+  }
+ ],
+ "pattern": "Generated cards push every local color toward its pure hue: wood goes orange, cream goes yellow, greys pick up blue or violet, and the card keeps almost no true neutral to rest the eye. Hero and background run equally loud, shadows shift to hot red-orange or saturated violet instead of a deeper version of the local color, and extra saturated accents raise the hue count. Real cards keep muted local colors (brown wood, dusty blue, sage green, neutral grey) and let one field carry the chroma."
+}

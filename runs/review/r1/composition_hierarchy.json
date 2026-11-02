@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the whistle is larger, with its lower-left corner about 60 px from the edge, and a pale glow behind it lifts the hero off the campfire pattern. This matches the halo on the generated glove in lesson 0. B: the whistle is smaller with wider margins, and it sits on the yellow ground with a soft cast shadow at lower right, like the real calculator on its pattern. Both are tilted the same way and name instantly at thumbnail size.",
+   "fix": "Make the whistle about 10% smaller. Remove the white glow behind it. Keep the yellow background even, and let the whistle rest on it with a soft shadow at lower right."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the bugle pushes close to the frame. The bell sits about 25 px from the left edge and the top of the bell about 35 px from the top, and the tassels hang large. At thumbnail size the hero feels crowded. B: the same pose is smaller, with clear space on all sides, and the burst center sits behind the coil. Lesson 0 and lesson 1 ran the same way, with the generated hero pushed larger toward the edges.",
+   "fix": "Draw the bugle about 15% smaller, centered on the burst, with clear space on every side. Make the tassels smaller."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the cup sits low, with a tall steam curl filling the top third and no horizon. B: the cup sits slightly higher, with shorter steam and a table line behind it. Both cups span about 70% of the card width, sit near center and read at once as a teacup. Both framings appear on the real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the basket is frontal and centered, about 300 px wide, with many small apples and two leaves. B: the basket is about 345 px wide and turned slightly, with fewer, larger apples. The thumbnail read is a little cleaner on B, while the extra hero scale points the other way. Both fit within the margins of the real cards, and the composition signals cancel out.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: a frontal barrel, centered, about 370 px tall, with the deck rail running straight behind it. B: a similar barrel, about 350 px tall and slightly turned, with the rail angled into the corner. Hero scale, centering and margins are almost the same, and both name instantly at thumbnail size. Nothing competes with the barrel on either card.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the taxi faces right, about 400 px wide and 300 px tall, leaving about 12 px of margin at the left. B: the taxi faces left, also about 400 px wide but shorter, about 275 px, with large road stripes cropped by the bottom edge. Side margins are about the same on both, and A's extra height is too small a difference to decide on. Both read as a taxi at thumbnail size.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the tent nearly touches both side edges, with close-up flowers, ferns, a thick stake and a sunbeam packed around it. The card reads as dense at thumbnail size, and the foreground competes slightly with the tent. B: the tent sits in the middle with open grass in front and more calm space around it, though its peg lines run to the frame. The extra props and fuller frame match the generated lighthouse in lesson 3.",
+   "fix": "Pull back so the tent has clear space on both sides. Remove the close-up flowers and ferns from the bottom corners and keep the grass in front simple. Remove the sunbeam."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the beam nearly touches the top edge and the legs splay to both side edges. A ring of boulders, logs and bright flames is stacked under the pot, so the fire competes with the cauldron at thumbnail size. B: the frame is lighter with more air around the pot, though the fire logs are cropped by the bottom edge. Packing in every element matches the generated lighthouse lesson, where the real card crops instead.",
+   "fix": "Keep the cauldron as the largest and brightest shape. Make the fire smaller and simpler, with fewer stones. Move the top beam down so it clears the top edge, and leave space around the frame."
+  }
+ ],
+ "pattern": "On composition, generated cards still show up as overfilled frames. The hero is pushed larger toward the edges, and it is often lifted by a glow halo instead of being grounded with a shadow. Scene cards pack in extra foreground props and show every element complete, where real cards leave calm space or crop boldly. In these pairs the signal is modest: p03 to p06 gave no reliable composition difference."
+}

@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: very high key. A pale, near-white glow hugs the whistle, and the lens puts the whole background in its top value, so the campfire motifs break up inside the halo. This matches the glow-behind-hero on the generated glove and camera. The darkest accents are the two whistle openings, with a hard jump to black. B: a mid-light background held as one flat grey group with no halo. The hero separates by hue plus a tight soft contact shadow, and the body stays in close mid-values.",
+   "fix": "Keep the background an even, saturated mid-yellow from edge to edge with no pale glow around the whistle. Let the orange whistle stand out by its color and a small soft shadow beneath it, with the campfire pattern evenly visible."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: hard local contrast in the brass. The bell interior and tube jump from near-black to white in narrow bands, like the generated cards' whiter highlights and deeper blacks, and the hero fills the frame. Darker ray corners add a vignette-like ring. B: the brass stays gentle, mostly mid greys with one white patch in the bell. The darkest accents are limited to the red cord and tassels, and the lightest rays sit quietly at the centre behind the loop.",
+   "fix": "Paint the brass with soft, gradual shading in warm mid-tones and only one or two small bright highlights. No black streaks inside the bell. Make the horn a little smaller in the frame, with evenly bright rays out to the corners."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: one dark, single-group red background with darkened corners. The cup is gentle white with soft mid-grey modelling, and the dark shadow pools left under the saucer. B: more value groups and a brighter key. The orange floor is a large light band with a hot lit pool at lower right, the cup whites are crisper, and the darkest accent is a tight black line under the saucer. It reads closer to the brighter, harder generated habit, but A's heavy vignette is also unusual against the anchors, so this is a weak call.",
+   "fix": "Lower the brightness of the floor so wall and floor sit closer in value, without a bright pool of light. Shade the cup softly with fewer pure-white areas and a broad, soft shadow under the saucer."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the wicker and handle are chopped into tiny alternating dark and light marks, so the basket has no large value group. The apples drop to dark with hard white specks, and the local contrast is hard across the whole hero. B: broader groups, with apples as one dark mass, cloth as one light shape, and basket weave in wider mid-value bands, though its big hero and lilac glow at top left are also generated-leaning. Slight lean only.",
+   "fix": "Shade the basket as one warm mid-tone form with soft, wide weave strands and no dark gaps between every strand. Group the apples as one smooth red shape with a single soft highlight on each."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: tidy value design. The barrel sits in a mid-dark group with even modelling, the darkest accent is inside the rim and in the deck shadow at right, and the deck stays a calm light group. B: a hard split across the hero, with the left half of the barrel a flat dark block and the right half a bright patch. The deck behind and below breaks into streaky white plank lines, the same noisy light-dark striping as the generated desk. The top hoop and rim also hit near-white.",
+   "fix": "Light the barrel evenly with soft shading that rolls gently from one side to the other, not half dark and half bright. Make the deck a calm, even light wood tone with quiet plank lines and one soft shadow."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a brighter sky group with a white patch hugging the hood and roof, like a glow behind the hero. Hard black and white chrome on the bumper, grille and wheels, and grainy speckle across the asphalt. B: the rays stay in a calm darker group with no halo. The car body is one broad light shape and the darkest accents are limited to window outlines and the band under the car. B's blown white body also recalls the generated computer, so this is a weak call.",
+   "fix": "Remove the bright glow behind the car and keep the sky rays even. Soften the chrome to gentle grey shading with few bright spots, and make the road one smooth, even dark tone without speckle."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: a busy value pattern, with dappled white patches on the canvas, a bright light shaft at top right, and white flowers scattered in the grass. The hero fragments but keeps a strong black doorway. B: quieter groups, with the tent as one mid-value shape and the doorway as a black wedge, but heavy black foliage in the top corners acts as a strong vignette. Each has one habit unlike the anchors, and the value design gives no clear direction.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: scattered value fragments everywhere, with black forest gaps at the top, a speckled ground, and white sparks and highlights on the fire. The pot has a hard white hotspot in its dark belly, and there is a bright glow under it. B: simpler large groups, with a dark pot, a mid ground and one compact white flame, and the darkest accents stay in the pot's lower belly. B is cleaner, but real cards can also be busy, so this is only a lean.",
+   "fix": "Group the forest into one calm dark-green shape without black gaps. Shade the pot softly with a dull, wide highlight instead of a white hot spot, keep the ground an even mid-brown, and make the flame the only small bright accent."
+  }
+ ],
+ "pattern": "In the lessons, generated cards push values toward both ends: a pale glow hugging the hero, whiter highlights, deeper blacks and harder local contrast inside the hero, often with streaky light-dark noise on secondary surfaces such as wood or ground. Real cards hold flat background groups, keep the hero in closer mid-values, and limit the darkest accents to a few places such as contact shadows or openings. Extra detail alone is not a reliable tell, because the real camera is more detailed than the generated one. Most test calls here are therefore weak: p01, p02 and p05 are moderate, and p03, p04, p06 and p08 are only leans."
+}

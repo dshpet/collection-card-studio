@@ -1,0 +1,109 @@
+{
+ "issues": [
+  {
+   "issue": "Fattened, stubby build. Thin parts swell into sausages and secondary parts grow: bugle tube and tassels, tent pegs and ropes, cook-frame logs, taxi sign, bumper and wheels. This is the biggest giveaway; shape_proportions called all 8 pairs correctly.",
+   "specialists": [
+    "shape_proportions",
+    "surface_finish",
+    "composition_hierarchy"
+   ],
+   "instruction": "Draw true real-world proportions. Tubes, ropes, poles, rims, handles and hoops are thin. Tassels, signs, pegs and rings are small. Cars are long and low."
+  },
+  {
+   "issue": "Everything is puffed and rounded: mouth corners, hoop edges, barrel tops and weave melt into soft bumps. The current text's 'gently rounded edges' feeds this.",
+   "specialists": [
+    "shape_proportions",
+    "edges_linework"
+   ],
+   "instruction": "Flat planes meet at crisp, tight edges. Hoops step sharply off the wood. Woven strips are flat ribbons. Cut ends are sharp rectangles."
+  },
+  {
+   "issue": "Close, wide-angle camera, sometimes also too high. Near parts balloon (bugle bell, taxi nose), and barrel tops open up to show the inside.",
+   "specialists": [
+    "viewpoint_depth"
+   ],
+   "instruction": "Long lens, low camera, mild perspective. Near and far parts stay close in size. Only a thin sliver of any top face shows."
+  },
+  {
+   "issue": "Invented or swollen extras: a leaf on every apple, rope wraps and sleeves, log pegs, a rock pile under the pot, orange curtains, flowers.",
+   "specialists": [
+    "shape_proportions",
+    "composition_hierarchy",
+    "staging_detail"
+   ],
+   "instruction": "Draw only the named object and its plain parts. Apples show a stem. Open space stays between separate parts, such as pot and fire."
+  },
+  {
+   "issue": "Materials and light are too uniform. Wood is saturated orange with swirling grain, wicker and cord are glossy plastic, and iron is spotless. Light is frontal and even, with little turn into shade.",
+   "specialists": [
+    "surface_finish",
+    "lighting_shading",
+    "color_palette"
+   ],
+   "instruction": "Wood is muted brown with fine straight grain. Cloth and cord are matte. Only metal and glaze shine. Old iron carries soot. One side light turns the form into deep soft shade."
+  },
+  {
+   "issue": "Isolated objects sit too small with wide empty margins (Basket, Cargo Barrel). The composition call on the Bugle is overruled: the real bugle is the slim, smaller one, so 'larger and chunkier' is wrong.",
+   "specialists": [
+    "composition_hierarchy"
+   ],
+   "instruction": "Enlarge bulky objects until they fill most of the card height and reach close to the sides."
+  },
+  {
+   "issue": "Overruled as tells, because the real cards have these: the pale halo and stamped grid on the real Whistle, the vignette and tall steam on the real Tea Cup, the white sheen and large lane dashes on the real Taxi, the dense sharp forest on the real Tent, and the soot speckle, red glow and pine wall on the real Campfire Cook. Most value, edge, staging and composition calls fell on these features and landed on the real card.",
+   "specialists": [
+    "value_contrast",
+    "edges_linework",
+    "staging_detail",
+    "composition_hierarchy",
+    "lighting_shading",
+    "color_palette"
+   ],
+   "instruction": "Make no style change for these. Backgrounds stay as rich as the references, and aged objects keep their wear."
+  }
+ ],
+ "style_text": "The attached images are real cards from the game. Draw one new card that could sit beside them unnoticed: the same rendering, lighting, finish, color and level of detail.\nDraw the object at its true proportions, seen through a long lens from a low camera. Flat planes meet at crisp, tight edges. Tubes, ropes, rims, handles and hoops are thin; small parts stay small. The object fills the card.\nLight falls from one side, and the form turns into soft shade. Each material keeps its own finish and natural wear; colors stay slightly muted.\nDraw only what the subject names. No text, letters, numbers, frame, border or watermark.",
+ "cards": [
+  {
+   "pair": "p01",
+   "keep": true,
+   "note": "Whistle holds up: most specialists picked the real card. The ring is a little large and the mouth a little soft, but neither is worth a redraw."
+  },
+  {
+   "pair": "p02",
+   "keep": false,
+   "note": "Slim brass bugle on one long diagonal: thin even tube, narrow double coil, modest bell, mouthpiece close to it in scale. Small tassels on thin cords. Deeper orange-brown brass with one broad soft sheen. Calm even teal sunburst."
+  },
+  {
+   "pair": "p03",
+   "keep": true,
+   "note": "Tea Cup is close: specialists split, and several picked the real card. The blue rim is slightly heavy, but it does not justify a redraw."
+  },
+  {
+   "pair": "p04",
+   "keep": false,
+   "note": "Basket fills the card, with the handle near the top edge. Large apples with plain stems, one leaf at most. Weave of flat ribbon strips with a firm rim band. Low camera with a narrow rim oval. Soft purple wall gradient, soft shadow on the table."
+  },
+  {
+   "pair": "p05",
+   "keep": false,
+   "note": "Barrel fills the card from a camera near rim height: a thin sliver of the top, flat top line, tight shoulders. Thin hoops step sharply off the staves. Muted brown wood with fine straight grain. Strong side light, with the far staves in deep shade. Straight-grained deck planks."
+  },
+  {
+   "pair": "p06",
+   "keep": false,
+   "note": "Long low sedan turned more side-on, with a clear hood, cabin and trunk. Long lens, front and rear wheels close in size. Small roof sign, slim bumper, simple grille, mirrors tight to the doors. Clean smooth paint."
+  },
+  {
+   "pair": "p07",
+   "keep": false,
+   "note": "Canvas tent with thin straight guy lines running to tiny stakes, flaps as plain canvas folds. Muted ochre roof in shade, bright yellow front. Deeper forest greens, brown trunks, fewer flowers."
+  },
+  {
+   "pair": "p08",
+   "keep": false,
+   "note": "Slim upright poles with forked tops, thin crossbar sitting in the forks, thin wire handle. Wide plain iron pot with soot on its lower half. Small log fire well below the pot, no rock pile, open air between them. Dense pine backdrop and grassy edges."
+  }
+ ],
+ "summary": "Close in rendering, finish and color, not yet in construction. Whistle and Tea Cup could pass and are kept. The other six are given away by the object build: thin parts fatten, corners soften, small parts grow, and the camera sits too close. Specialists mostly picked the real card on the Taxi, Tent and Campfire Cook, so background, value and edge work are not the problem there; those calls are overruled. Only shape_proportions got all 8 pairs right. The new style text moves effort to proportions, crisp edges and lens, and drops the 'smooth, calm' wording that made materials too clean."
+}

@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: an even, dark, closed contour runs around the whole whistle body and mouth, with a pale glow halo on the yellow background around the silhouette. B: the contour is thin and varies in weight, fading along the top of the body and darkening only under the mouth and at the ring. There is no halo, just a contact shadow, and the inner circle and window are thin seams.",
+   "fix": "Remove the glow around the whistle. No outline: the orange body meets the background directly, with an edge that is thin on the lit top side and only slightly darker on the underside. Keep the disc seam a fine hairline."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a heavy dark line traces the bell rim, and the tassels carry a thick black contour with dense, hard strand lines, so edge weight is strong all over the object. B: the bell edge nearly dissolves on the lit side, the tube contours are lighter, and only the rope and tassels hold strong edges, which gives a clearer hierarchy. B's tassels are still somewhat outlined, so the gap is moderate.",
+   "fix": "Let the bell rim edge fade on the lit side with no dark line around it. Draw the tassel strands as soft grouped clumps, not many sharp dark lines, with no contour around the tassel shape."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: thick dark lines run around the cup rim, saucer rim and foot, and the flower is drawn with a black-looking outline around each petal and leaf, like inked linework. A: the cup contour is lighter on the left and body, the flower edges are softer with less contrast, and the saucer rings are thinner.",
+   "fix": "No dark outline around the cup, saucer or flower. Paint the flower as soft-edged colour on the glaze, and let the rim edges be thin and fade on the lit side."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: edges are dense everywhere, with hard lines on every wicker strand, a stitched cloth hem, heavily speckled apples and a hard dark ring around the cast shadow, so nothing is quieter than anything else. B: broader weave bands with softer inner lines and a soft shadow edge, with the sharpest lines at the handle and rim. Hero edge count is clearly lower, with a real focus. B's inner handle line is a bit heavy.",
+   "fix": "Use fewer, wider wicker bands with soft gaps between them. Remove the stitched hem line from the cloth. Keep the sharpest edges on the front apples and rim, and give the floor shadow a soft blurred edge."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: long, dark, thick grooves run between the staves, reading as drawn black lines, and the barrel's left side has a strong contour. A: the stave gaps are also dark but shorter and broken by the hoops and rivets, and the outer contour is lighter. Both show dark seams, so the difference is small and this is a low-confidence call.",
+   "fix": "Make the gaps between staves thin, precise seams instead of thick black grooves, and remove the dark line down the barrel's sides."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the asphalt fills the lens with dense grit across the whole road, and the car carries many tight lines on grille, seats and door gaps, so the background competes with the hero. B: the road is clean with low background density and the hero reads clearly, but its windshield frame and wheels have thick dark bands. The two signals conflict: A is over-dense, B is heavy-lined. Background density decides it, weakly.",
+   "fix": "Paint the road as smooth, soft asphalt with no grit. Simplify the grille and interior to a few clean lines so the car is the only busy area."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: stitching, fabric weave, rope and buckles all make edges inside the tent, and the grass, leaves and flowers are equally dense right to the corners, with no hierarchy between hero and background. B: the tent has few inner edges, long clean folds and a quieter meadow, so the hero separates through edge density. B does have some hard black strokes on the fold lines and tree leaves.",
+   "fix": "Remove the dashed stitching and fabric texture lines. Keep the tent to a few large folds, and soften the background trees and grass with fewer, blurred edges so the tent is the sharpest thing on the card."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: strong edges fill the frame, with bold dark contours on the rope crossings, stones and pot silhouette, plus rivets, wood grain and dense soup detail. B: fewer edges and a quieter background, though its pot rim and logs have a uniform drawn contour and the pot belly is stippled. Both have some outline, so the difference is mostly density and weakly favours A as generated.",
+   "fix": "Reduce the detail: fewer rivets, less wood grain, simple soup shapes. Remove the dark outline around the stones and rope, and soften the edges of the ground and trees behind."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away in two ways. First, a dark, even, closed contour around the hero and its parts reads as a drawn outline where real cards have thin edges that vary in weight and fade on the lit side, sometimes with a glow halo as well (p01 A). Second, edge hierarchy is flat: fine lines such as stitching, strands, grit and grain are spread evenly across hero and background, so nothing is clearly the sharpest area (p04 A, p07 A). Seams drawn as thick dark grooves are a third, weaker tell (p05 B). p05, p06 and p08 are low confidence: both cards have dark lines and the choice rests mostly on density."
+}

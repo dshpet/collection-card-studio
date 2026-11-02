@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both float on a tone-on-tone campfire pattern. A keeps a saturated yellow-orange field, its icons stay quiet and only a soft warm lift sits behind the whistle. B bleaches the field to pale cream and puts a tight white halo around the whistle's outline, as on the generated glove in the lesson. Its campfire icons are also larger and sit in a stiffer grid.",
+   "fix": "Keep the yellow background evenly saturated with no white glow around the whistle. Make the campfire pattern small, scattered and only slightly darker than the background."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both use a ray burst. A's teal rays are even and muted, and the light gathers softly at the ray centre inside the coil. B's field is hotter, with near-white cyan blooming around the bugle and tassels and bright streaks at the top right. This matches the lit-up halo behind the generated glove and camera in the lessons.",
+   "fix": "Use a calm, even teal ray background with no bright glow behind the bugle. Keep the ray contrast low and the same across the whole card."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "Both are a cup on a plain red field. A has a hot orange-yellow glow behind the cup rim and a field running from orange to crimson, so the backdrop competes with the hero. B has a quiet, dull red field with a gentle vignette and a dark, soft cast shadow at the left, which is closer to the plain backdrops on real cards.",
+   "fix": "Use a plain, muted red background with a soft darkening toward the corners. Remove the orange glow behind the cup and let the shadow fall in a darker red."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both are category 3: table plus plain wall. A has an off-centre, soft lavender gradient and a warm tabletop with a faint reflection under the basket and a soft shadow. B has a bright pink-lilac glow centred behind the apples, inside the handle. Its table is a flat pale yellow band with a hard purple cast shadow at the left. It also adds a leaf on every apple.",
+   "fix": "Remove the glow behind the apples and let the wall fall off gently to one side. Give the table a slight warm sheen and reflection under the basket, with a soft brown shadow instead of a purple one. Drop the extra leaves."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both stand on a ship deck with blue sky, so the category is the same. A adds a row of evenly spaced rivets on every hoop and throws a saturated purple cast shadow to the right, the same tint as the generated-looking road shadow in p06 B. B has plain hoops and a neutral shadow, but its deck and side wall carry more narrow plank lines. The evidence is mixed and leans only slightly toward A.",
+   "fix": "Remove the rivets from the metal hoops and keep them plain. Make the shadow on the deck a darker brown of the wood, not purple."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both are road scenes with a ray sky. A has a neutral grey asphalt band, restrained blue rays, and a plain dark shadow under the car. B tints the road violet with a purple glow under the car, adds a row of short dashes receding along the edge, and its sky blooms pale behind the roof sign. The generated-looking lift and colored shadow run the same way as in the lessons.",
+   "fix": "Paint the road plain mid-grey with a dark neutral shadow under the car. Use one or two large lane stripes and keep the sky rays calm, with no bright glow behind the roof."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is a category 4 forest with trunks and firs and an empty grass foreground holding only small tufts. The tent stands alone. B adds invented props: a lit red lantern on a rock, and a rolled bedding mat and mattress inside the tent. It also adds rope-wrapped log stakes, yellow flower clusters, big foreground ferns, framing leaf canopies and sun rays. This is the same prop accumulation as the generated lighthouse's island, lifebuoy and bollards in the lesson.",
+   "fix": "Show only the tent on open grass with a few large, quiet trees behind it. No lantern, rock, flowers, foreground ferns or sun rays. Use plain thin guy lines and small pegs."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A has a simple clearing with a dark fir wall, a muted grass patch and a few flat pebbles on dirt, so the background stays a set of large, quiet shapes. B adds a crate of vegetables at the left, a stump with a sprig of herbs at the right, a ring of large stones, a rock, bright grass tufts and thick rope lashings. Every corner holds an object competing with the pot.",
+   "fix": "Keep only the pot, the log frame and the small fire. Remove the vegetable crate, the stump and the ring of stones. Behind it, paint a dark, simple wall of fir trees and plain dirt."
+  }
+ ],
+ "pattern": "Generated cards still show up through additions to the staging. There is a bright halo or bloom hugging the hero's outline on otherwise flat fields. Backdrops are hotter and more saturated, and shadows are tinted purple instead of a darker shade of the surface. In category 4 scenes the model adds story props the object does not need (lantern, crate, stump, flowers, ferns, sun rays) and fills every corner, where real cards keep a few large, quiet shapes and leave the foreground empty."
+}

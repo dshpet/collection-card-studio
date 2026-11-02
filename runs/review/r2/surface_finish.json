@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the whistle body is a clean airbrushed orange with a soft, even sheen and no surface marks, like the smooth shells on the real cards, although its detail and micro-texture measure just under the real range. B: the body is matte with faint mottling and tiny pale nicks and scratches on the top face beside the window and along the barrel. This is added wear of a kind the real smooth objects in the lessons (camera, monitor) do not have. The numbers lean slightly the other way, so this is a weak call.",
+   "fix": "Smooth, clean moulded plastic whistle with no scratches, nicks or mottling; soft even sheen across the body, one broad soft highlight along the top edge."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the red cord has a fine, tight braid, the tassels break into thin fibre strands, and the brass has soft, restrained gradients, so metal and cord read as different materials. B: the cord is thick, smooth, chunky coils and the tassels are moulded, glossy red shapes with the same lacquer as the brass, so fabric reads as plastic. The horn loop also has a hazy glow along its edges. A's gloss share measures high, but B's sameness of finish is the stronger cue.",
+   "fix": "Cord is thin braided matte textile with small tight strands; tassels end in fine soft fibres with no shine; only the brass horn carries highlights."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the rim and saucer edge are thick, saturated blue bands that sit proud like plastic tubing, and the flower is a puffy raised sticker, so glaze and decoration share one toy gloss. The tiny bubbles on the tea are a nice detail. B: the blue line and flower look painted flat under the glaze, which reads as porcelain, though the white is somewhat hazy. A weak difference; the measured fields do not separate them.",
+   "fix": "Porcelain cup with thin blue line painted flat under the glaze and a flat painted flower, no raised rim band; one soft highlight on the white glaze."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the apples carry fine, quiet streaks and flecks in the skin with a yellow blush near the stem, and the weave is flatter strips with a soft finish. B: the apples are uniform smooth red plastic with identical copy-paste leaves, and the basket is chunky rounded tubes with the same glossy finish, an enlarged toy version of a weave. Fruit and wicker share one finish.",
+   "fix": "Apples with fine skin streaks and small flecks, waxy but not plastic; basket of thin flat matte wicker strips with quiet grain, no rounded tube shapes."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the staves have fine, straight, irregular grain streaks that follow the plank, in a muted, matte wood tone, and the hoops have soft metal reflections. B: the grain is sparse pale swirling lines drawn on saturated orange, decorative rather than structural, like a wood pattern painted on plastic, and the hoops are flatter and grey. B also has the lower detail and micro-texture of the two.",
+   "fix": "Staves of muted brown wood with fine straight grain running the length of each plank, no swirling lines; matte wood against brighter, slightly reflective steel hoops."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the hood and front fender carry tiny pale scratches and specks, the same added-wear marks seen on other suspect cards, and the grille and bumper chrome are the busiest part, with the highest gloss share at 0.182, above the real range. B: the paint is clean and smooth, though soft and clay-like, with a grey matte bumper and a pale windshield. Both exceed the real range for detail and micro-texture, so this is a close call resting on the scratches.",
+   "fix": "Clean smooth yellow paint with no scratches or specks; simplify the grille to fewer soft chrome bars with one broad reflection."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the canvas has long thin crease lines along the roof, gathered curtains at the tie-backs, and a twisted rope, so it reads as cloth. B: the walls are soft, thick, felt-or-clay sheets with rolled tube hems and no folds or seams, and the roof is a dull smeared tan with hazy grain. B's detail measures 0.0174, below the real floor of 0.018, and its micro-texture 0.0081 is below the floor of 0.009.",
+   "fix": "Thin canvas with fine crease lines and a stitched seam along the ridge and hem; flaps fall in thin soft folds, not thick rolled edges; even, clean fabric surface with no smearing."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the pot is dark iron with one soft highlight and a few small scratches, the rim is clean, and the soup has crisp garnish, with a good matte-to-sheen mix. B: the lower half of the pot is covered in a coarse black and grey speckle that reads as stipple noise rather than soot on iron, it turns into a red glow at the base, and the soup is a flat smooth fill. Real cards show no such noise; B also has the lower detail, 0.0267 against 0.0368.",
+   "fix": "Smooth dark cast iron with soft even satin finish, no speckle or stipple; a gentle soot darkening at the base as a smooth gradient; soup with small detailed pieces and fine surface swirls."
+  }
+ ],
+ "pattern": "Generated cards miss the real cards' quiet surface in one of two ways. Either materials collapse into one candy finish (cord, wicker, fruit and canvas moulded as smooth, chunky, evenly lacquered shapes), or marks are added on top: tiny scratches and nicks, coarse stipple, swirling decorative grain. Real cards keep surfaces smooth and airbrushed, with fine marks that follow the material and a clear matte-versus-shiny split within one object. Whether scratches are a reliable tell is uncertain: it rests on p01, p06 and p08, and only p01 and p06 use them to choose a side. Those two calls are low confidence, and p01 goes against the measured detail numbers."
+}

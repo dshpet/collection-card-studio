@@ -10,6 +10,7 @@ from skimage import filters, measure, morphology
 from sklearn.cluster import KMeans
 
 SAMPLE = 20000
+PLANAR = 0.012
 
 
 def to_oklab(rgb):
@@ -71,6 +72,25 @@ def light_fit(lightness, normals, mask):
             "light_fit": round(float(fit), 3)}
 
 
+def contour_shape(mask):
+    """Share of the silhouette that runs straight, and its sharp corners per card width."""
+    smooth = ndimage.gaussian_filter(mask.astype(float), 1.5)
+    contour = max(measure.find_contours(smooth, 0.5), key=len)
+    arc = np.r_[0, np.hypot(*np.diff(contour, axis=0).T).cumsum()]
+    spots = np.arange(0, arc[-1], 2.0)
+    line = np.column_stack([np.interp(spots, arc, contour[:, axis]) for axis in (0, 1)])
+    ahead, behind = np.roll(line, -6, 0) - line, line - np.roll(line, 6, 0)
+    cross = behind[:, 0] * ahead[:, 1] - behind[:, 1] * ahead[:, 0]
+    turn = np.degrees(np.abs(np.arctan2(cross, (behind * ahead).sum(1))))
+    return float((turn < 6).mean()), float(measure.label(turn > 50).max() / (arc[-1] / mask.shape[1]))
+
+
+def planar_share(normals, region):
+    """Share of the region whose surface normals barely change: flat faces, not inflated ones."""
+    bend = np.sqrt(sum(np.square(np.gradient(normals, axis=axis)).sum(-1) for axis in (0, 1)))
+    return float((bend[region] < PLANAR).mean())
+
+
 def hue_of(hex_color):
     rgb = np.array([int(hex_color[i:i + 2], 16) / 255 for i in (1, 3, 5)])
     lab = to_oklab(rgb)
@@ -104,6 +124,12 @@ def measure_card(record, derived=DERIVED):
     detail = np.abs(ndimage.laplace(lightness))
 
     tilt_x, tilt_y = plane_tilt(lightness, mask)
+    straight, corners = contour_shape(mask)
+    bright = morphology.white_tophat(lightness, morphology.disk(6))
+    corner_zone = np.zeros_like(mask)
+    for row, column in ((0, 0), (0, -1), (-1, 0), (-1, -1)):
+        zone = (slice(None, 60) if row == 0 else slice(-60, None), slice(None, 60) if column == 0 else slice(-60, None))
+        corner_zone[zone] = True
 
     lighting = {"light_bias_azimuth": round(float(np.degrees(np.arctan2(tilt_y, tilt_x))) % 360, 1),
                 "light_bias_strength": round(float(np.hypot(tilt_x, tilt_y)), 3)}
@@ -111,6 +137,7 @@ def measure_card(record, derived=DERIVED):
     if normals_path.exists():
         normals = np.load(normals_path).astype(np.float64)
         lighting.update(light_fit(lightness, normals, mask))
+        lighting["planar_share"] = round(planar_share(normals, interior), 3)
     shading_path = derived / "shading" / f"{card_id}.png"
     if shading_path.exists():
         shading = np.asarray(Image.open(shading_path).convert("L"), dtype=np.float64) / 255
@@ -158,6 +185,9 @@ def measure_card(record, derived=DERIVED):
             "compactness": round(float(min(1, 4 * np.pi * main.area / max(main.perimeter, 1) ** 2)), 3),
             "boundary_roughness": round(float(main.perimeter / max(convex_perimeter, 1)), 3),
             "holes": int(max(0, 1 - measure.euler_number(filled, connectivity=2))),
+            "straight_share": round(straight, 3),
+            "corner_rate": round(corners, 3),
+            "thin_share": round(float(1 - morphology.opening(mask, morphology.disk(5)).sum() / mask.sum()), 3),
         },
         "edges_linework": {
             "edge_density_subject": round(float(edge_line[mask].mean()), 3),
@@ -169,6 +199,11 @@ def measure_card(record, derived=DERIVED):
             "detail_background": round(float(detail[background].mean()), 4),
             "highlight_share": round(float(((lightness > 0.9) & (chroma < 0.05))[mask].mean()), 3),
             "dark_share": round(float((lightness[mask] < 0.3).mean()), 3),
+            "gloss_share": round(float((bright[interior] > 0.1).mean()), 3),
+            "micro_texture": round(float(np.abs(lightness - ndimage.gaussian_filter(lightness, 1.5))[interior].mean()), 4),
+            "form_contrast": round(float(np.subtract(*np.percentile(lightness[interior], [95, 5]))), 3),
+            "vignette": round(float(np.median(lightness[background & ~corner_zone]) - np.median(lightness[background & corner_zone]))
+                              if (background & corner_zone).any() else 0.0, 3),
         },
         "lighting_shading": lighting,
         **depth_fields(derived, card_id, mask, background),

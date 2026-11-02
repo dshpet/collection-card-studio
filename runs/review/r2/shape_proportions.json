@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the mouth end has a crisp angled lip, and the top ring stays thin and tucks behind the loop. B: the mouth is a soft rounded-corner box, and the loop tab is enlarged with an oversized full ring standing off the body. Body proportions are nearly identical, so this is a weak call.",
+   "fix": "Keep the whistle's mouth end a sharp rectangle with tight bevelled corners. Make the top loop small and the metal ring thin and partly hidden behind it."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: slender bugle with a thin tube, a narrow loop, a small bell, a tiny mouthpiece and small thin-corded tassels. B: bell blown up, loop tube thick like a sausage, tassels huge and bell-shaped. B's thin_share is 0.001 against A's 0.020, which confirms its thin parts have fattened.",
+   "fix": "Draw a slim brass bugle: thin even tube, narrow coil, modest bell, and small tassels on thin cords."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: cup handle is a thick rounded loop, and the rim and saucer edge are swollen, with a plump toy-like bowl. B: slimmer handle, thinner rim and a flatter, wider saucer closer to real china. The silhouettes and metrics are almost equal, so this is a weak call.",
+   "fix": "Make the handle a slim loop, keep the cup rim and saucer edge thin, and keep the saucer flat and wide."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: rim and weave are puffy round tubes, the outline is lumpy with no corners, and a leaf is added to every apple. A: weave is flat ribbon strips and the rim is firmer, though its apples are large. B's corner_rate of 0.0 falls below the real range and A's 1.10 falls inside it.",
+   "fix": "Weave the basket from flat strips with crisp edges, make the rim a firm band, and leave most apples with a plain stem and no leaf."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: flat top line, tight shoulders, and hoops that step out from the staves as crisp notches. B: top is domed, shoulders are rounded, and hoops are thick soft bands that read as gentle bumps in the outline. B's corner_rate of 0.0 falls below the real range and A's 0.76 sits just under it.",
+   "fix": "Make the metal hoops thin bands with sharp edges that step cleanly off the staves, and keep the barrel's top edge tight with crisp corners."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: car squashed short and tall, with an oversized roof sign, a heavy bumper, fat wheels and a mirror on a thick stalk. B: longer sedan with a clear hood-cabin-trunk run, a smaller sign and truer wheel size. A's straight_share of 0.225 falls below the real range, while B's 0.300 is inside it.",
+   "fix": "Draw the taxi with true sedan length: a long low body, straight roof and sills, a small roof sign, and normal-size wheels and bumper."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: pegs are fat upright log stumps, and the guy ropes are thick twisted cords ending in big sleeves at the corners. B: thin straight guy lines end in tiny stakes, and the canvas ends in clean edges. The tent bodies are similar, so the difference lies in the thin parts.",
+   "fix": "Use thin straight guy lines running to small stakes, with no thick log posts or heavy rope."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: beam and legs are thick logs, the rope bindings are bulky, the pot is round and potbellied, and stones pile up as a fat mass under it, giving solidity of 0.706. B: slim poles with forked tops, a thinner crossbar and a separate pot, with open gaps around the parts and solidity of 0.577.",
+   "fix": "Use slim straight poles with forked tops and a thin crossbar, hang a plainer pot from a thin wire handle, and leave open space between the pot and the fire."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away by fattening: thin parts such as tubes, ropes, poles, handles and hoops thicken into sausages. Secondary parts like tassels, signs and pegs grow too large, and objects get squashed into stubby toy proportions. Corners and hoop edges melt into soft bumps, which shows as very low corner_rate, and flat strips swell into tubes. Extra small parts also get added, such as a leaf on every apple."
+}

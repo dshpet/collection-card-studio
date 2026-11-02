@@ -1,0 +1,22 @@
+{
+ "always": [
+  "No drawn dark outline: the contour in the edge map comes only from the color/value step between the hero and its background. The outer silhouette is crisp and closed, one thin precise line, a little heavier on the shadow-side rim or underside (pillow, ticket base, glove).",
+  "Internal seams and panel gaps are thin, fine, single lines (phone booth window bars, ticket panels, sneaker panels, pump dial bezel). Rounded rims show as paired double lines.",
+  "The hero is clearly cut out from the background with no halo or glow around it. Edges and contrast are strongest at the hero's outer boundary and at its small high-contrast details.",
+  "Soft rounded volumes (pillow, gloves, fins) have mostly faint, smooth interior edge lines. Only the silhouette and the few creases or seams stand out."
+ ],
+ "varies": [
+  "Edge density in the hero ranges from sparse (ticket, pillow, gloves, fins, book cover) to dense (phone booth, carousel chains, sneaker laces and mesh, thatch roof, pineapple, pump).",
+  "Background edge density: near zero for plain gradients with faint ring or stripe edges (ticket, pillow, fins, gloves). Medium for graphic motifs (suitcase pattern, wood grain). High for scene backgrounds (fence, paving, pool tiles, desert mesas), which are drawn about as finely as the hero.",
+  "In scene cards the hero and background are drawn at similar line weight. Hierarchy then comes from the hero's slightly darker, closed outer contour and from blur or low contrast in far areas.",
+  "Outline darkness is light to medium. It is heaviest on cards with a strong color jump, such as the pillow's right side and the red booth against green."
+ ],
+ "never": [
+  "Thick black cartoon outlines or sticker-style borders around the hero.",
+  "Glow, halo, or white rim around the silhouette.",
+  "Thick grooves or heavy dark gaps for seams.",
+  "Blurry, smeared, or broken outer edges.",
+  "A background that is sharper or darker in edge terms than the hero's own contour."
+ ],
+ "generator_wording": "No outlines or glow. Hero has a crisp, clean silhouette edge made only by color contrast with the background, slightly firmer on the shadowed side. Panel seams and details are thin, precise hairlines. Smooth soft volumes stay mostly edge-free. Background is either plain and soft or detailed with finer, lower-contrast lines than the hero's contour."
+}

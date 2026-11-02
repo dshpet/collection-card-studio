@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Both whistles use nearly the same three-quarter view from above: the top slot and the mouth end are both visible, and the side disc is a slightly narrowed ellipse. A's mouth end is more foreshortened and its ring tucks behind the body. B's mouth end faces us a little more and its ring stands clear. Perspective is mild on both, every part shares one view, and planar_share is almost identical (0.56 vs 0.563). Nothing in the camera separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B's bell is huge and turned almost toward the viewer, while its mouthpiece and tassels stay large on the right, so it reads as a close wide-angle view. Its loop is drawn nearly flat-on while the bell turns, so the parts don't quite share one view. The tassels are also swollen in the lens. A has a slimmer, longer tube that recedes steadily toward the small mouthpiece at lower right, and its bell, double loop and cord all share one mild tilt.",
+   "fix": "Draw the bugle from further away with a long lens. Keep the bell only moderately larger than the mouthpiece, turn the bell and the tube loop to the same angle, and tilt the whole instrument along one diagonal."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A has a clear ground plane: a straight table edge across the card at about 60% height, with the cup and saucer sitting on it at one consistent angle. In B the floor melts into the wall with no edge, showing as a blurred band in the lens, so the saucer floats in a soft studio space. Cup and saucer ellipses are consistent on both, so this rests on the ground plane alone.",
+   "fix": "Add a clean, straight back edge where the table meets the wall behind the cup, and keep the table flat at the same angle as the saucer."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B sits at a slightly higher, more distant camera: the rim opens wider and the table edge rises to mid-card, behind the upper basket. A is a closer, lower view with a narrow rim, and the table edge sits low behind the lower basket, closer to the eye-level views in the real cards. Both are single-view and mild, so the lean is weak.",
+   "fix": "Lower the camera so the basket rim is only a narrow oval, and put the table edge low behind the bottom third of the basket."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B's camera is higher: the barrel mouth opens to show the inner staves, the hoops bow strongly, and the rail sits as a flat level strip behind it. A is near eye level at the rim, showing only a thin sliver of the top, with the deck and side rails running back at one shared angle. The extra top face matches the lessons' generated drift, but the ellipses are consistent on both.",
+   "fix": "Lower the camera to just under barrel-top height so only a thin sliver of the rim shows, with no inside walls visible, and run the deck boards and rail back at the same angle."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's nose is pushed at the camera: the grille, bumper and front wheel balloon while the cabin and rear shrink quickly, a short wide-angle squash with a tall roof sign. B also has a near front wheel and receding road, but the car is turned more side-on, so its side reads longer and the front-to-rear scale change is gentler. B's road lines and body share one receding angle.",
+   "fix": "Move the camera further back with a long lens. Turn the taxi so more of the side shows, and draw the front and rear wheels closer in size, with the bumper not swelling toward the viewer."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Both tents use a three-quarter view from slightly above, with the ridge running back left, on a flat lawn. A has simpler background trees and larger near stakes and corner plants. B has denser, equally sharp trees behind and thin guy lines. Layer count and ground angle are about the same, and the tent body holds one view on each. The planar_share gap (0.284 vs 0.509) comes from ground and background area, not from any camera error I can see.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's crossbeam shows both cut log ends turned toward the viewer, and its legs lean inward toward the top, while the soup is seen from above and the stones from higher still. These parts don't share one camera, and the frame reads as bent around the pot. B's posts and beam stand square and upright with no end faces showing. Its pot, soup ellipse and ground fit one view, though its fire is cropped at the bottom edge.",
+   "fix": "Draw the frame from one camera: a straight horizontal beam with only one end hinting at depth, and upright posts. Match the beam, pot rim and fire to the same slight downward view."
+  }
+ ],
+ "pattern": "Generated cards still drift toward a closer, wider lens and a slightly higher camera. Near parts swell (bell, car nose, lens barrel), more top face opens up, and separate parts can each face the viewer instead of sharing one view. Ground planes also go soft or get less consistent with the hero. Real cards stay at mild, long-lens perspective with a low camera, a plain ground edge and one view across all parts. Several pairs here were close on this vector, so this is a weak signal on its own."
+}

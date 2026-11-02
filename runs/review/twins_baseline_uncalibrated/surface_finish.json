@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01 whistle",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: soft, hazy edges with a glow, and the body is one even matte orange with weak highlights. B: crisper edges, a bright specular streak along the body, and a shiny metal ring. Both are smooth plastic, so the gap is small.",
+   "fix": "Give the whistle crisp glossy highlights along its edges and a shiny metal ring, with clean sharp contours."
+  },
+  {
+   "pair": "p02 glove",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: matte, muted tan leather with fine grain and small thin stitches along the edges. A: glossy orange leather with fat rounded laces and chunky cross-stitches, like the real cards' toy finish.",
+   "fix": "Make the leather a smooth, glossy, saturated orange. Draw the stitches and laces as big, fat, rounded shapes with bright highlights, and leave out fine grain."
+  },
+  {
+   "pair": "p03 bugle",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the rope is fine twisted strands wound tightly, with thin cords and small tassels, giving a realistic fibre texture. A: the rope and tassels are big, smooth, glossy lobes.",
+   "fix": "Draw the rope and tassels as thick, smooth, glossy rounded lobes with a few big grooves, not fine strands."
+  },
+  {
+   "pair": "p04 camera",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: realistic details such as a knurled lens ring, tiny 'P' marking, small buttons, brushed grey metal and dull dark rubber with a lot of tonal variation. B: smooth glossy toy plastic with big rounded parts and a single bright lens highlight.",
+   "fix": "Make the camera body smooth and glossy, with big rounded buttons and a simple shiny lens. Leave out the knurling, fine marks and small panel details."
+  },
+  {
+   "pair": "p05 teacup",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: matte porcelain, with the flower and leaves drawn flat on the cup like a thin decal and soft, low-contrast highlights. B: glossy ceramic with a raised, puffy flower and leaves, and sharp bright highlights on the rim and tea.",
+   "fix": "Make the porcelain glossy, with sharp white highlights on the rim. Draw the flower and leaves as raised, puffy, shiny 3D shapes, not a flat print."
+  },
+  {
+   "pair": "p06 basket",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: apples have realistic speckled skin, a green-yellow blush, small soft highlights and a gently lit gingham cloth. B: apples are smooth glossy red balls with crisp white highlights and big clean leaves; the cloth is a bold flat check.",
+   "fix": "Draw the apples as smooth, uniformly glossy red shapes with bright crisp highlights. Leave out the speckles and skin variation."
+  },
+  {
+   "pair": "p07 barrel",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: muted brown wood with lots of fine, thin, scratchy grain lines, dull brushed-steel hoops with no rivets, and soft lighting. A: bright saturated orange staves with a few large smooth grain marks, and shiny metal hoops with big round rivets.",
+   "fix": "Paint the staves in saturated orange with a few big, smooth grain strokes. Make the hoops shiny with big round domed rivets, and leave out the fine scratchy grain."
+  },
+  {
+   "pair": "p08 taxi",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: muted, flatter paint with thin outlines, fine wipers, a fine grille mesh and a dull bumper. A: very glossy yellow paint with a big smooth chrome bumper, bold round headlights and a shiny grille.",
+   "fix": "Make the paint very glossy yellow with big smooth highlights. Make the bumper, grille and headlight rims thick shiny chrome, and leave out the thin wipers and fine mesh."
+  },
+  {
+   "pair": "p09 computer",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: dull, hazy, blue-grey matte plastic with soft edges and flat low-contrast shading, and fine quiet wood grain on the desk. B: warm cream plastic with a soft sheen, rounded edges and crisper vents, buttons and slot, with big swirling grain on the desk. Both are fairly soft.",
+   "fix": "Give the casing a smooth satin-glossy sheen with a clear highlight along the rounded edges. Make the buttons and vents crisp and chunky."
+  },
+  {
+   "pair": "p10 tent",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the canvas is a flat matte yellow with a blurry, smeared look, little shading, and no seams, ropes or fasteners. B: glossy rounded fabric with bright highlights, plus rope, wooden pegs, buttons and a quilted bedroll.",
+   "fix": "Draw the canvas as smooth glossy fabric with bright highlights and soft folds. Add chunky details such as thick rope, round buttons and big pegs."
+  },
+  {
+   "pair": "p11 lighthouse",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: soft, blurry, matte stone and paint with weak highlights, and no sharp edges on the blocks or the window. B: crisp rounded bricks, glossy red paint, glowing windows and a sharp bright ring of light.",
+   "fix": "Draw the bricks as crisp, chunky, rounded blocks with clear highlights on their edges. Make the red paint glossy and add a bright glow at the window."
+  },
+  {
+   "pair": "p12 cauldron",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the pot is matte grey and covered in speckled soot and grit, which looks like noise or a rough brush texture, with a flat painted look and soft outlines. B: smooth glossy dark iron with a clean sheen, a warm glow from the fire and sharp highlights on the rim.",
+   "fix": "Make the pot smooth, glossy dark iron with a clean shiny highlight and a soft orange glow near the fire. Leave out the speckled soot and grit."
+  }
+ ],
+ "pattern": "The odd cards go away from the real cards' finish in two ways. Some are matte and soft, with flat or hazy surfaces (teacup A, tent A, lighthouse A, cauldron A with soot noise). Others are more realistic, with fine, thin detail (glove B, bugle B, camera A, apples A, barrel B, taxi B). The real cards are glossy, smooth and chunky, with big rounded details and crisp highlights."
+}

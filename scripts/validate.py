@@ -2,6 +2,7 @@
 
 off-style: can the check reject images that are plainly the wrong style?
 acceptance: can vision models pick out one generated card hidden among nine real ones?
+twins: redraw real cards with the card itself hidden, so style can be compared with content held equal.
 """
 
 import argparse
@@ -9,7 +10,7 @@ import random
 from collections import Counter
 
 from make_set import (ANALYSIS, ROOT, SIZE, Image, ThreadPoolExecutor, ask_claude, ask_codex, best_try,
-                      check_tries, contact_sheet, draw, load_json, save_json, strict, text)
+                      check_tries, contact_sheet, draw, draw_card, load_json, save_json, strict, text)
 
 STYLES = {"photo": "a real studio photograph, photorealistic, natural materials",
           "vector": "flat vector illustration with solid colors and no shading",
@@ -93,14 +94,32 @@ def acceptance(run_names, trials):
     print("found by genre", Counter(r["genre"] for r in results if r["hit"]))
 
 
+def twins(label):
+    briefs = load_json(ROOT / "runs" / "twins" / "briefs.json")
+    run = ROOT / "runs" / "twins" / label
+    run.mkdir(parents=True, exist_ok=True)
+    with ThreadPoolExecutor(4) as pool:
+        done = list(pool.map(lambda brief: draw_card(run, brief, 1, [], True), briefs))
+    save_json(run / "check.json", {brief["id"]: [{"try_id": try_id, "card": brief["card"], "passed": True,
+                                                  "issues": [], "misses": []}]
+                                   for brief, try_id in zip(briefs, done) if try_id})
+    paths = [ROOT / f"materials/card_examples/{b['real']}.png" for b in briefs]
+    paths += [run / "tries" / f"{t}.png" for t in done if t]
+    contact_sheet(paths, run / "sheet.png", columns=len(briefs))
+    print("drew", sum(bool(t) for t in done), "of", len(briefs))
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("test", choices=("off-style", "acceptance"))
+    parser.add_argument("test", choices=("off-style", "acceptance", "twins"))
+    parser.add_argument("--label", default="baseline")
     parser.add_argument("--runs", nargs="+", default=["western", "sci-fi", "horror"])
     parser.add_argument("--trials", type=int, default=24)
     args = parser.parse_args()
     if args.test == "off-style":
         off_style(args.runs[0])
+    elif args.test == "twins":
+        twins(args.label)
     else:
         acceptance(args.runs, args.trials)
 

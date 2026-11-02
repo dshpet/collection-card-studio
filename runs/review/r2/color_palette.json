@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the whistle is pushed to pure orange, and its shaded side and window slot go straight to saturated red. The pale lemon background carries a glowing halo around the body, and the lens turns even the grey ring orange-red. Subject chroma 0.189 sits at the very top of the real range. B: a calmer burnt orange on a deep amber ground, with a darker, related orange in the shadows and a ring that stays neutral grey in the photo. Both cards are nearly all warm, but only A has the pure-hue, red-shadow push.",
+   "fix": "Make the whistle a slightly muted burnt orange. Shade its side with darker brown-orange, not bright red. Keep the ring plain cool grey. Use an even deep amber background with no glow around the object."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the background clips to electric cyan at the centre and runs to strong blue at the corners, so it is as loud as the gold horn and the pure red tassels. Hue families reach 5.25, above the real maximum of 4.916. A: a softer single teal burst with a more orange-brown brass and a darker red cord, 2.13 hue families, and a background that lets the object lead.",
+   "fix": "Use one soft teal background with gentle rays and no neon cyan centre. Make the brass deeper with brownish shadows, and use a darker wine-red cord."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the card collapses into one red family at 1.98 hue families, below the real range, with warm share 0.946. The cup's white goes pink-cream, the saucer picks up red, and the blue rim is pale. A: the porcelain stays a cool lilac-grey neutral and a clear blue rim gives a separate accent against the crimson wall and orange floor. That matches the cool neutrals of the real monitor and lighthouse lessons. A's shadows also run very rich, so this is a moderate call.",
+   "fix": "Keep the porcelain a clean cool white with faint grey-lilac shadows and no pink tint. Make the rim and flower a clear medium blue. Add a second background color, such as an orange tabletop under the red wall."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the apples are near-pure red and the basket pushes orange-red, so the lens merges both into one hot red mass. Subject chroma 0.166 is above the real maximum of 0.154, and it sits on a pale washed lilac background at the bottom of the real range. B: the basket is a yellower golden tan, set against a deeper purple wall that holds the object better. B's subject is also slightly over range, so the gap is small.",
+   "fix": "Use deeper apple reds with yellow-green blush, and a golden-tan wicker rather than orange-red. Use a richer medium purple wall so the background and object are not equally hot."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A has tan-orange staves with a more natural wood range and cool steel hoops, but its sky is a near-neon cyan. B has more uniform orange staves and blue glints on the hoops, under a more believable azure sky. Chroma, hue families and shadow values are almost identical, and the two warning signs point in opposite directions.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the asphalt is a warm grey that the lens reads as red-brown, so the one neutral rest area leans warm, like the cream-tinted neutrals on the generated computer cards. The taxi is a flat lemon-yellow and the blue rays are stronger. A: the road stays a cooler blue-grey and the taxi is a deeper amber with orange shadow steps. A's measured shadow chroma of 0.285 is the further outlier, which keeps confidence low.",
+   "fix": "Make the road a cool neutral grey with bluish shadows and no brown. Paint the taxi a deeper amber-yellow that turns orange in its shaded areas."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the tent is pure yellow with hot orange curtains and trim, standing on lime grass with yellow sun patches. The lens spreads the tent's yellow into the grass and leaves, and subject and background chroma both sit at the top of the real ranges. B: the roof drops to muted ochre in shade, the forest has deep muted greens and brown trunks, and those quieter masses rest the eye, so the bright tent front stands out.",
+   "fix": "Make the tent a muted canvas yellow with an ochre shaded roof and no orange curtains. Use deeper, calmer forest greens with fewer bright yellow patches on the grass."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: orange logs, orange dirt and orange stew are pulled together against a teal forest, and the pot itself splits into teal and orange in the lens. Warm share 0.654 is near the real top, and shadow chroma 0.614 is at the real floor. B: green trees dominate, with duller brown logs and a grey pot with soot, so local colors hold and warm share is 0.521. Its one hot spot is the red glow under the pot.",
+   "fix": "Paint the logs a natural mid-brown and the dirt a dull tan, and make the pot neutral dark grey with no teal cast. Use plain mid-green trees, and keep orange to the stew and the fire."
+  }
+ ],
+ "pattern": "Generated cards still push local color toward pure hue: leather and wood go orange, yellow goes lemon or hot amber, and cyan and blue grounds clip to neon. They also warm neutrals, so whites become cream or pink and greys become brown, where real cards keep cool, truly neutral greys. Hero and background end up equally loud, and shadows tend to stay in the same hot family (orange or red) instead of shifting to a related, quieter color. Muted masses to rest the eye are scarcer, and one warm hue often spreads across the object and its surroundings."
+}

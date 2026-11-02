@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A is an even saturated orange whistle on a saturated gold ground with flat orange masses. B has a pale washed glow around the whistle and a deep red-hot shadow inside the mouth and along the underside. Its warm hue is pushed further toward red in the shadows.",
+   "fix": "Keep the whistle's shadows a darker, slightly desaturated orange-brown instead of hot red. Remove the pale glow halo and keep the background chroma calm."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A has a very saturated gold horn with large vivid crimson tassels on a bright cyan field, so the hero and background are equally loud. B has a similar palette but the horn is darker and more brown-orange, and the tassels are smaller and less loud. The difference is small.",
+   "fix": "Tone the tassel red down a little. Give the brass more natural brown in its shadows, and keep the cyan background calmer than the hero."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A has a muted dark crimson background with a vignette, a creamy white cup and a pale dusty blue rim. The shadow is a related deep maroon. B has a hot orange-red glow behind the cup and a vivid electric blue rim, flower and saucer. The tea is saturated orange, so every area is at full chroma.",
+   "fix": "Use a deeper, muted crimson background without an orange glow. Make the cup trim a softer powdery blue and the tea a natural amber brown. Keep the shadows a related dark maroon."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A has a soft pastel lavender wall, a pale cream table and a basket in natural muted orange. The apple reds are rich but not neon. B has a saturated violet wall, a bright yellow floor, neon-green gingham and glossy bright orange weave. It has more separate hue families all at high chroma, and the shadow is a clean violet.",
+   "fix": "Soften the wall to a dusty lilac. Use a creamy tan table and a more muted, natural basket brown. Make the checked cloth a paler sage green and keep the apple reds natural."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A has a muted brown-tan barrel with desaturated steel bands and a natural wood deck. The sky is the only strong color. B has a barrel in vivid hot orange with orange-red shadows, strong violet shadows on the deck and a saturated blue sky. The whole card is pulled warm and loud.",
+   "fix": "Paint the barrel in natural brown wood with small grain variation and dull, grayish steel bands. Make the shadows a darker brown, not hot orange."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A has a vivid saturated cyan-to-blue sunburst, a bright golden taxi and a blue-violet shadowed road. All three areas are at high chroma. B has a muted gray-brown road, a dustier pale-yellow taxi and a calmer blue with neutral rest areas. B looks like the real cards.",
+   "fix": "Make the road a neutral gray-brown. Dull the taxi yellow slightly to a more natural ochre. Reduce the background blue saturation and drop the violet from the road shadows."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A has a lush, saturated green meadow, a glowing tent, a hot orange tent with red cushions and a red lantern. The extra sky and flowers add many saturated hue families. B has a muted olive and sage forest and a dusty ochre tent. The tent is the only warm mass, and the neutral browns give the eye rest.",
+   "fix": "Mute the greens to olive and sage. Make the tent a natural canvas ochre without glow. Remove the extra saturated accents and let the trees recede in desaturated tones."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A has a saturated emerald forest, a glowing orange fire and a blue-purple iron pot. The stew is a bright orange-red and the logs are a rich red-orange. Everything is loud. B has dusty olive greens, a gray-brown pot and a muted brown stew. The only bright spot is the small flame.",
+   "fix": "Dull the green background to a deep, grayed forest tone. Make the pot a neutral charcoal and the stew a natural brown-orange. Keep the fire as the one bright accent and make the logs plain brown."
+  }
+ ],
+ "pattern": "Generated cards run more saturated and warm. Hero and background are both at high chroma, with few neutral rest areas. Shadows turn hot orange, red or clean violet instead of related muted dark tones. Bright glow halos appear, along with extra saturated accent hues such as electric blue trim or neon green. Real cards keep dusty, neutral local colors and a single accent."
+}
