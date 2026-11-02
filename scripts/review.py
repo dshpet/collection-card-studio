@@ -412,8 +412,9 @@ def direct(name, pairs, reports, style_text, rater):
     sheets = [folder / "sheets" / f"staging_detail_{p['pair']}.png" for p in pairs]
     style_part = (f"The generator's current style text:\n{style_text}\n\n" if style_text else "")
     style_ask = ("Return style_text: a full replacement for the current text, at most 110 words. " if style_text else
-                 "The style text is settled: leave style_text empty. In a pair of different objects, the real card shows "
-                 "the look, not the object. ")
+                 "The style text is settled: leave style_text empty. Each pair shows different objects, so the real card "
+                 "shows the look, not the object. Form cannot be judged across objects: never ask to change a card's "
+                 "proportions, thickness or roundness. Notes may change color, value, backdrop, light, finish and extras. ")
     prompt = (f"{(AGENTS / 'art_director.md').read_text('utf-8')}\n\nEach image is one pair of cards, A and B on top.\n"
               f"Answer key:\n{unblinded}\n\n{style_part}"
               f"Specialist reports:\n{json.dumps(reports, ensure_ascii=False)}\n\n"

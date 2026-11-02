@@ -80,6 +80,7 @@ Rules learned from the game's real sets:
 - For category 4 use pattern full_scene. Otherwise pick a graphic pattern.
 - subject: one plain sentence on what to draw, with the two or three features that make it recognizable. Name the object and its parts only, with no mood, style or props.
 - hero_colors are the object's natural colors. Give every card a different backdrop, whose color contrasts with the hero.
+- backdrop_colors are bright and clean, as in the real cards: sky blue, cyan, yellow, orange, purple, pink, grass green. Never dusty, muted, dull or dark. Skies stay clear and bright, even on dark topics.
 - surface_or_setting: the surface for categories 2-3 and the place for category 4, empty for category 1.
 - Versions may share at most 5 objects.
 

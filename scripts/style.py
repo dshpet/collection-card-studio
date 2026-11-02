@@ -15,8 +15,7 @@ CATEGORY_RULES = {
 
 EDIT = """The last attached image is a draft of a new card. The other images are real cards from the game.
 Redraw the draft with these changes and keep everything else: the object, its pose, the backdrop and the colors.
-{notes}
-No text, letters, numbers, frame, border or watermark."""
+{notes}"""
 
 PATTERNS = {
     "plain_gradient": "a smooth gradient", "concentric_rings": "tone-on-tone concentric rings",
