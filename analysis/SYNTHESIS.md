@@ -1,37 +1,38 @@
 # What the references show
 
-All 160 cards and 16 sets, rated by four vision models (Codex, Claude, Qwen, Gemma) and measured from pixels, subject masks, depth, shading and predicted attention. Numbers below are counts out of 160 cards unless stated.
+All 160 cards and 16 sets of one summer collection, rated by four vision models (Codex, Claude, Qwen, Gemma) and measured from pixels, subject masks, depth, shading and predicted attention. Numbers are counts out of 160 cards unless stated. The generator reads this through `knowledge.json` and `scripts/style.py`.
 
 ## The style that never changes
 
-- **Render:** soft or glossy 3D in 154 cards, with soft gradients in all 160. It is not a flat painted style, which corrects the earlier four-card brief.
+- **Render:** soft or glossy 3D in 154 cards, with soft gradients on all 160. A polished hero often sits on a flatter backdrop (87 cards).
 - **No outlines:** 154 cards. Form comes from shading.
-- **Shapes:** round and soft in 133, chunky in 148.
-- **Surfaces:** clean, with little texture in 142.
-- **Colour:** saturation 4–5 of 5 in 158. Warm and cool colours are mixed in 140. Backgrounds are as saturated as subjects.
-- **Value:** bright overall, and deep shadow is rare. About 1% of a typical subject is dark.
+- **Shapes:** round and soft in 133, chunky in 136.
+- **Surfaces:** clean, with little texture in 132.
+- **Colour:** saturation 4–5 of 5 in 156. Backgrounds are as saturated as subjects.
+- **Hero against background:** opposing hues, strongest in Category 1 (142° apart, against 98° for shuffled pairs).
+- **Shadows stay colourful:** the darkest quarter of a subject keeps 95% of its chroma. Dark means rich indigo or crimson, not black or grey.
 - **Camera:** eye level or slightly above in 145, three-quarter view in 127.
-- **Framing:** centred in 135. The subject covers about 33% of the card (23–47%) and comes within 5% of an edge.
-- **Attention:** 85% of predicted gaze lands on the subject, in 33% of the area. The peak sits at the card centre, and higher on character cards, where it finds faces.
-- **Light:** from above. Normal maps put it in the upper half in 155 cards. Raters say upper left, but they agree poorly on this.
+- **Framing:** centred in 135. The subject's box spans about 83% × 76% of the card, though its silhouette covers only 33% of the area. 42 cards touch an edge.
+- **Attention:** 86% of predicted gaze lands on the subject. A content-free average map already scores 75%, so most of this reflects central framing.
+- **Light:** from above in 155 cards. Normal maps split evenly between left and right, so the raters' "upper left" is a habit, not a rule.
 
 ## What changes by category
 
-- **Category 1 (35):** always floating, with no ground shadow. Most are tilted. Backgrounds are rays, motifs or stripes, with the strongest colour separation.
-- **Category 2 (20):** upright on a surface with a cast shadow. This is the rarest category and has the most saturated backgrounds.
-- **Category 3 (32):** on a real surface, but the background stays graphic: rays, gradient or stripes.
+- **Category 1 (35):** always floating, with no ground. Most are tilted. Backdrops are tone-on-tone rays, rings or stripes.
+- **Category 2 (20):** upright on a plain coloured ledge (17 of 20) with a cast shadow. Backdrops are the most saturated. Raters never fully agree on this category, so the surface field below is the reliable test.
+- **Category 3 (32):** on a real material such as wood, sand or grass (23 of 32). The backdrop stays graphic.
 - **Category 4 (42):** a real environment, usually outdoors, with a few supporting objects.
-- **Category 5 (31):** characters in dynamic poses with comic timing, and about twice the hue variety.
+- **Category 5 (31):** characters in dynamic poses with comic timing. Ten of these are the all-gold grand set, Summer Party. The rest come from one recurring cast and sit late in their sets.
 
 ## How a set is built
 
 - **Names:** 13 titles are one word and 3 are two words. Card names are one or two words.
-- **Topics:** six activities, five places, three events, one group and one mood. All 16 are plain topics.
+- **Topics:** six activities, five places, three events, one group and one mood.
 - **Picks:** every set rates 4–5 of 5 for obviousness: the first things anyone would name.
-- **Variety is deliberate:** each set uses 5–8 background hues and usually 6 object classes, mixing small objects with vehicles and buildings.
-- **Sets hold together by idea, not look.** Style similarity within a set is 0.57–0.74, against 0.57 for any two cards.
+- **Sets share a look as well as an idea.** Regular sets average 0.62 style similarity against 0.57 for random cards, partly through shared ground materials such as sand, lawn or deck.
+- **Variety is not engineered.** Background hues per set (6.7) barely beat random draws (6.5), so a set's colours are about what chance gives. Object classes range from 4 to 9.
 - **Category mix is uneven:** Category 2 appears only 1–3 times per set, when it appears at all.
-- **No-gold models:** Sports, Finals, Amusement, Coolness and Countrystead have no character cards. They are the closest templates for the movie sets.
+- **Models for the movie sets:** Sports, Finals, Coolness and Countrystead have no characters and no gold frames. Amusement has no characters, but three objects carry gold frames.
 
 ## What the embeddings group by
 
@@ -43,16 +44,11 @@ All 160 cards and 16 sets, rated by four vision models (Codex, Claude, Qwen, Gem
 
 ## How far to trust this
 
-- Raters agree on 70–79% of choice fields, and within one point on 97–99% of scales. Mean κ is 0.41–0.52.
-- Most reliable: support, object class, category, background type and humour (κ above 0.75).
-- Weak: subject-versus-background contrast, light direction, rim light, margin and value key (κ below 0.2).
-- Two fields carry no information. Recognizability is 5 and shading model is soft gradient on every card.
-- The 48 hardest and lowest-scoring masks were checked by eye and look right. The rest were sampled, not all inspected.
-- DeepGaze learned from photos, so its attention maps on stylised art are unvalidated, and they include a built-in pull toward the centre.
-- No art director has checked these ratings, and 430×480 limits conclusions about fine texture.
-
-## What this means for generation
-
-- Show the look with category-matched reference cards, and keep prompts short: subject, category, background type and colour.
-- Plan sets as plain topics with obvious, varied objects, modelled on the five no-gold sets.
-- Rate generated cards with the same form and compare them with these ranges.
+- Raters agree on 70–79% of choice fields, and within one point on 97–99% of scales. Mean κ is 0.41–0.53.
+- **Most reliable:** backdrop pattern (κ 0.88), support, object class, tone, surface kind, art category and background type (κ 0.76–0.83).
+- **Weak:** subject-versus-background contrast, light direction, rim light, margin and value key (κ below 0.2).
+- **Constant fields** are kept as style invariants, but they are unproven as checks, because all 160 cards are positives. Off-style controls test them.
+- A fresh reviewer's spot check of 38 cards found 8 wrong, mostly rings read as rays, which the new pattern field addresses, and surfaces misjudged.
+- Reviewers found 3 of 24 hard masks incomplete: Park Gate, Pool Bar and Adventure.
+- Shading maps leak some colour. DeepGaze learned from photos, so it is unvalidated on this art.
+- The sky, sand and lawn reflect this summer collection, not the franchise. No art director has checked these ratings, and 430×480 limits conclusions about fine texture.
