@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reference Analysis</title>
+<style>
+:root {
+  color-scheme: light;
+  --surface: #fcfcfb; --plane: #f9f9f7; --ink: #0b0b0b; --ink-2: #52514e; --muted: #6f6d68;
+  --line: #e1e0d9; --axis: #c3c2b7; --ring: rgba(11,11,11,.10); --series: #2a78d6; --band: #cde2fb;
+  --flag: #d03b3b;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --surface: #1a1a19; --plane: #0d0d0d; --ink: #f0efec; --ink-2: #c3c2b7; --muted: #a09e97;
+    --line: #2c2c2a; --axis: #383835; --ring: rgba(255,255,255,.10); --series: #3987e5; --band: #184f95;
+    --flag: #e66767;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--plane); color: var(--ink); font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+header { padding: 20px 24px 0; background: var(--surface); border-bottom: 1px solid var(--line); }
+h1 { font-size: 20px; margin: 0; }
+.sub { color: var(--ink-2); margin: 2px 0 12px; }
+nav { display: flex; gap: 4px; overflow-x: auto; }
+nav button { all: unset; cursor: pointer; padding: 8px 12px; color: var(--ink-2); border-bottom: 2px solid transparent; white-space: nowrap; }
+nav button[aria-selected="true"] { color: var(--ink); border-color: var(--series); font-weight: 600; }
+nav button:focus-visible, .pt:focus-visible, .thumb:focus-visible, .legend button:focus-visible { outline: 2px solid var(--series); outline-offset: 1px; }
+main { padding: 16px 24px 48px; max-width: 1500px; }
+.filters { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 12px; align-items: end; }
+label { display: grid; gap: 2px; color: var(--muted); font-size: 12px; }
+select { font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--axis); border-radius: 6px; padding: 5px 8px; max-width: 240px; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; }
+.mapgrid { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 12px; }
+#stage { position: relative; height: 680px; overflow: hidden; padding: 0; }
+#hulls { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+#hulls polygon { fill: var(--ink); fill-opacity: .035; stroke: var(--axis); stroke-width: 1; }
+.tag { position: absolute; z-index: 15; transform: translate(-50%, -50%); padding: 0 6px; border-radius: 9px; background: var(--surface); box-shadow: 0 0 0 1px var(--axis); color: var(--ink); font-size: 12px; font-weight: 600; pointer-events: none; white-space: nowrap; }
+.pt { position: absolute; width: 50px; height: 56px; padding: 0; margin: -28px 0 0 -25px; border: 2px solid var(--surface); border-radius: 7px; overflow: hidden; background: var(--line); cursor: pointer; transition: left .45s, top .45s, opacity .2s, transform .12s; }
+.pt img, .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.pt:hover, .pt:focus-visible { transform: scale(2.6); z-index: 30; box-shadow: 0 6px 18px rgba(0,0,0,.35); }
+.pt.dim { opacity: .13; }
+.pt.sel { border-color: var(--series); z-index: 20; }
+.legend { max-height: 400px; overflow: auto; display: grid; gap: 1px; margin: 6px -6px 14px; }
+.legend button { all: unset; cursor: pointer; display: flex; justify-content: space-between; gap: 8px; padding: 3px 6px; border-radius: 5px; color: var(--ink-2); }
+.legend button:hover { background: var(--plane); }
+.legend button[aria-pressed="true"] { background: var(--band); color: var(--ink); font-weight: 600; }
+h2 { font-size: 15px; margin: 0 0 8px; }
+h3 { font-size: 12px; margin: 14px 0 4px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+.bar { display: grid; grid-template-columns: 92px minmax(0, 1fr) 36px; gap: 8px; align-items: center; font-size: 13px; color: var(--ink-2); margin: 2px 0; }
+.bar .track { height: 8px; }
+.bar .fill { height: 8px; background: var(--series); border-radius: 0 4px 4px 0; min-width: 2px; }
+.bar b { font-weight: 500; font-variant-numeric: tabular-nums; text-align: right; color: var(--ink); }
+.bar span:first-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.note { color: var(--ink-2); font-size: 13px; }
+.thumbs { display: grid; grid-template-columns: repeat(auto-fill, minmax(112px, 1fr)); gap: 10px; }
+.thumb { all: unset; cursor: pointer; display: block; }
+.thumb .pic { aspect-ratio: 430 / 480; border-radius: 8px; overflow: hidden; background: var(--line); }
+.thumb small { display: block; color: var(--ink-2); margin-top: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.thumb b { font-weight: 600; font-variant-numeric: tabular-nums; color: var(--ink); }
+#drawer { position: fixed; top: 0; right: 0; bottom: 0; width: min(520px, 100vw); background: var(--surface); border-left: 1px solid var(--line); box-shadow: -10px 0 30px rgba(0,0,0,.18); overflow: auto; padding: 16px 18px 40px; transform: translateX(105%); transition: transform .2s; z-index: 50; }
+#drawer.open { transform: none; }
+.top { display: flex; justify-content: space-between; gap: 8px; align-items: start; }
+.tile-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin: 10px 0; }
+.tile-row figure { margin: 0; }
+.tile-row img { width: 100%; aspect-ratio: 430/480; object-fit: cover; border-radius: 6px; background: var(--line); display: block; }
+.tile-row figcaption { font-size: 11px; color: var(--muted); }
+.btn { font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--axis); border-radius: 6px; padding: 4px 10px; cursor: pointer; }
+table { border-collapse: collapse; width: 100%; font-size: 13px; }
+td, th { padding: 3px 6px 3px 0; border-bottom: 1px solid var(--line); vertical-align: top; text-align: left; }
+th { font-weight: 500; color: var(--muted); }
+td.num { font-variant-numeric: tabular-nums; }
+tr.diff td { background: color-mix(in srgb, var(--band) 45%, transparent); }
+.flag { color: var(--flag); font-size: 11px; white-space: nowrap; }
+.strip { position: relative; width: 84px; height: 10px; display: inline-block; vertical-align: middle; margin-left: 6px; }
+.strip i { position: absolute; top: 4px; height: 2px; background: var(--axis); left: 0; right: 0; }
+.strip u { position: absolute; top: 2px; height: 6px; background: var(--band); }
+.strip s { position: absolute; top: 0; width: 3px; height: 10px; margin-left: -1px; background: var(--series); border-radius: 2px; }
+.sets { display: grid; gap: 12px; }
+.setrow { display: grid; grid-template-columns: minmax(0, 1fr) 290px; gap: 16px; }
+.setcards { display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 6px; }
+.fields { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 12px; }
+.hist { display: flex; align-items: end; gap: 2px; height: 56px; border-bottom: 1px solid var(--axis); margin-top: 6px; }
+.hist div { flex: 1; background: var(--series); border-radius: 3px 3px 0 0; min-height: 1px; }
+.prose { max-width: 820px; }
+.prose h2 { margin-top: 20px; }
+.prose h2:first-child { margin-top: 0; font-size: 18px; }
+.prose li { margin: 3px 0; }
+@media (max-width: 900px) {
+  header, main { padding-left: 16px; padding-right: 16px; }
+  .mapgrid, .setrow { grid-template-columns: minmax(0, 1fr); }
+  #stage { height: 480px; }
+  .setcards { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+}
+@media (prefers-reduced-motion: reduce) { .pt, #drawer { transition: none; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Reference analysis</h1>
+  <p class="sub" id="sub"></p>
+  <nav id="tabs" role="tablist"></nav>
+</header>
+<main id="main"></main>
+<aside id="drawer" aria-label="Card details"></aside>
+<script>
+const D = /*DATA*/;
+const byId = Object.fromEntries(D.cards.map(c => [c.id, c]));
+const S = { tab: 'Summary', model: 'dinov2', view: 'whole', group: 'cluster', pick: null, card: null, pinned: null,
+            sort: 'composition_hierarchy.subject_area', set: '', cat: '' };
+const esc = s => String(s ?? '–').replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
+const nice = s => String(s).replace(/_/g, ' ');
+const art = id => `../materials/card_examples/${id}.png`;
+const get = (card, path) => { const [a, b] = path.split('.'); return (card.form[a] || {})[b] ?? (card.measured[a] || {})[b]; };
+const allPaths = (kinds) => Object.entries(D.form).flatMap(([s, fs]) => Object.entries(fs).filter(([, f]) => kinds.includes(f.kind)).map(([n]) => `${s}.${n}`));
+const numericPaths = () => Object.keys(D.stats.measured).concat(allPaths(['scale']));
+
+function tabs() {
+  const names = ['Summary', 'Map', 'Cards', 'Sets', 'Fields', 'Compare'];
+  document.getElementById('tabs').innerHTML = names.map(n => `<button role="tab" aria-selected="${n === S.tab}" data-tab="${n}">${n}</button>`).join('');
+}
+
+function render() {
+  tabs();
+  ({ Summary: summary, Map: map, Cards: grid, Sets: sets, Fields: fields, Compare: compare })[S.tab]();
+}
+
+function summary() {
+  document.getElementById('main').innerHTML = `<div class="panel prose">${D.synthesis}</div>`;
+}
+
+function keyName() { return `${S.model}_${S.view}`; }
+
+function groupOf(card, m) {
+  if (S.group === 'cluster') { const c = m.hdbscan[card.index]; return c < 0 ? 'unclustered' : `cluster ${c + 1}`; }
+  if (S.group === 'kmeans') return `group ${m.kmeans[card.index] + 1}`;
+  if (S.group === 'set') return card.set || 'unknown';
+  const value = get(card, S.group);
+  return nice(typeof value === 'number' ? Math.round(value) : value);
+}
+
+function hull(points) {
+  const p = [...points].sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+  if (p.length < 3) return p;
+  const cross = (o, a, b) => (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]);
+  const half = list => { const h = []; for (const q of list) { while (h.length > 1 && cross(h[h.length - 2], h[h.length - 1], q) <= 0) h.pop(); h.push(q); } h.pop(); return h; };
+  return half(p).concat(half([...p].reverse()));
+}
+
+function map() {
+  const models = [...new Set(Object.keys(D.maps).map(k => k.split('_')[0]))];
+  const views = [...new Set(Object.keys(D.maps).filter(k => k.startsWith(S.model + '_')).map(k => k.split('_')[1]))];
+  if (!views.includes(S.view)) S.view = 'whole';
+  const options = (list, value, label = nice) => list.map(o => `<option value="${o}" ${o === value ? 'selected' : ''}>${label(o)}</option>`).join('');
+  const groups = [['cluster', 'density clusters'], ['kmeans', 'k-means groups'], ['set', 'set'], ...allPaths(['choice', 'scale']).map(p => [p, nice(p.split('.')[1])])];
+  document.getElementById('main').innerHTML = `
+  <div class="filters">
+    <label>Embedding<select id="fModel">${options(models, S.model)}</select></label>
+    <label>View<select id="fView">${options(views, S.view)}</select></label>
+    <label>Group by<select id="fGroup">${groups.map(([v, l]) => `<option value="${v}" ${v === S.group ? 'selected' : ''}>${l}</option>`).join('')}</select></label>
+  </div>
+  <div class="mapgrid">
+    <div class="panel" id="stage"><svg id="hulls"></svg></div>
+    <div class="panel"><h2 id="legendTitle"></h2><div class="legend" id="legend"></div><div id="scores"></div></div>
+  </div>`;
+  for (const [id, key] of [['fModel', 'model'], ['fView', 'view'], ['fGroup', 'group']])
+    document.getElementById(id).onchange = e => { S[key] = e.target.value; S.pick = null; map(); };
+  drawMap();
+}
+
+function drawMap() {
+  const m = D.maps[keyName()], stage = document.getElementById('stage');
+  const W = stage.clientWidth, H = stage.clientHeight, pad = 44;
+  const xs = m.xy.map(p => p[0]), ys = m.xy.map(p => p[1]);
+  const [x0, x1, y0, y1] = [Math.min(...xs), Math.max(...xs), Math.min(...ys), Math.max(...ys)];
+  const pos = i => [pad + (m.xy[i][0] - x0) / (x1 - x0) * (W - 2 * pad), pad + (m.xy[i][1] - y0) / (y1 - y0) * (H - 2 * pad)];
+  const counts = {};
+  for (const c of D.cards) { const g = groupOf(c, m); counts[g] = (counts[g] || 0) + 1; }
+  const names = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
+  stage.querySelectorAll('.pt, .tag').forEach(e => e.remove());
+  for (const c of D.cards) {
+    const [x, y] = pos(c.index), g = groupOf(c, m), b = document.createElement('button');
+    b.className = 'pt' + (S.pick && S.pick !== g ? ' dim' : '') + (S.card === c.id ? ' sel' : '');
+    b.style.left = x + 'px'; b.style.top = y + 'px'; b.title = `${c.name || c.form.identity.subject} · ${c.set || ''} · ${g}`;
+    b.setAttribute('aria-label', b.title); b.dataset.card = c.id;
+    b.innerHTML = `<img loading="lazy" src="${art(c.id)}" alt="">`;
+    stage.appendChild(b);
+  }
+  const shapes = S.group === 'cluster' || S.group === 'kmeans' ? names.filter(n => n !== 'unclustered' && (!S.pick || n === S.pick)) : (S.pick ? [S.pick] : []);
+  document.getElementById('hulls').innerHTML = shapes.map(n => {
+    const pts = D.cards.filter(c => groupOf(c, m) === n).map(c => pos(c.index));
+    const tag = document.createElement('span');
+    tag.className = 'tag'; tag.textContent = n.replace('cluster ', '').replace('group ', '');
+    tag.style.left = pts.reduce((a, p) => a + p[0], 0) / pts.length + 'px';
+    tag.style.top = pts.reduce((a, p) => a + p[1], 0) / pts.length + 'px';
+    stage.appendChild(tag);
+    return `<polygon points="${hull(pts).map(p => p.join(',')).join(' ')}"/>`;
+  }).join('');
+  document.getElementById('legendTitle').textContent = `${names.length} groups`;
+  document.getElementById('legend').innerHTML = names.map(n => `<button aria-pressed="${n === S.pick}" data-pick="${esc(n)}"><span>${esc(n)}</span><span>${counts[n]}</span></button>`).join('');
+  const sc = m.scores, targets = sc.hdbscan_ami;
+  document.getElementById('scores').innerHTML = `<h3>What the clusters follow</h3>` + Object.entries(targets).filter(([, v]) => v !== null).map(([k, v]) =>
+    `<div class="bar"><span>${nice(k)}</span><div class="track"><div class="fill" style="width:${Math.max(0, v) * 100}%"></div></div><b>${v.toFixed(2)}</b></div>`).join('') +
+    `<p class="note">Adjusted mutual information: 0 is chance, 1 is a perfect match. ${sc.hdbscan_clusters} density clusters, ${sc.hdbscan_noise} cards unclustered.</p>`;
+}
+
+function grid() {
+  const paths = numericPaths(), sets = [...new Set(D.cards.map(c => c.set))].sort();
+  const list = D.cards.filter(c => (!S.set || c.set === S.set) && (!S.cat || c.form.staging.art_category === S.cat))
+    .sort((a, b) => (get(b, S.sort) ?? -1e9) - (get(a, S.sort) ?? -1e9));
+  document.getElementById('main').innerHTML = `
+  <div class="filters">
+    <label>Sort by<select id="fSort">${paths.map(p => `<option value="${p}" ${p === S.sort ? 'selected' : ''}>${nice(p.split('.')[1])}</option>`).join('')}</select></label>
+    <label>Set<select id="fSet"><option value="">All sets</option>${sets.map(s => `<option ${s === S.set ? 'selected' : ''}>${esc(s)}</option>`).join('')}</select></label>
+    <label>Category<select id="fCat"><option value="">All categories</option>${['1', '2', '3', '4', '5'].map(c => `<option ${c === S.cat ? 'selected' : ''}>${c}</option>`).join('')}</select></label>
+  </div>
+  <div class="panel"><div class="thumbs">${list.map(c => `<button class="thumb" data-card="${c.id}"><div class="pic"><img loading="lazy" src="${art(c.id)}" alt=""></div><small>${esc(c.name || c.form.identity.subject)}</small><small><b>${esc(get(c, S.sort))}</b></small></button>`).join('')}</div></div>`;
+  for (const [id, key] of [['fSort', 'sort'], ['fSet', 'set'], ['fCat', 'cat']])
+    document.getElementById(id).onchange = e => { S[key] = e.target.value; grid(); };
+}
+
+function sets() {
+  document.getElementById('main').innerHTML = `<div class="sets">${D.sets.map(s => {
+    const f = s.form, m = s.metrics;
+    return `<div class="panel setrow"><div><h2>${esc(s.title)}</h2><div class="setcards">${s.cards.map(id => `<button class="thumb" data-card="${id}"><div class="pic"><img loading="lazy" src="${art(id)}" alt=""></div><small>${esc(byId[id].name || byId[id].form.identity.subject)}</small></button>`).join('')}</div></div>
+    <table><tr><th>Topic</th><td>${nice(f.idea.topic_type)}, ${nice(f.idea.item_logic)}</td></tr>
+    <tr><th>Categories</th><td class="num">${Object.entries(m.categories).map(([k, v]) => `${k}: ${v}`).join(', ')}</td></tr>
+    <tr><th>Object classes</th><td class="num">${m.object_classes} of 10</td></tr>
+    <tr><th>Background hues</th><td class="num">${m.background_hues} distinct</td></tr>
+    <tr><th>Obviousness</th><td class="num">${f.idea.obviousness} of 5</td></tr>
+    <tr><th>Style similarity</th><td class="num">${m.style_similarity}</td></tr>
+    <tr><td colspan="2" class="note">${esc(f.note.note)}</td></tr></table></div>`; }).join('')}</div>`;
+}
+
+function fields() {
+  const list = D.cards.filter(c => !S.cat || c.form.staging.art_category === S.cat);
+  const block = path => {
+    const name = path.split('.')[1], field = D.form[path.split('.')[0]]?.[name], agree = D.stats.agreement[path];
+    const tail = agree ? `<p class="note">Raters agree ${Math.round(agree.match * 100)}%${agree.kind === 'scale' ? ' within 1 point' : ''}, κ ${agree.kappa.toFixed(2)}</p>` : '';
+    if (field && field.kind === 'choice') {
+      const counts = {};
+      for (const c of list) { const v = get(c, path); counts[v] = (counts[v] || 0) + 1; }
+      const top = Math.max(...Object.values(counts));
+      return `<div class="panel"><h2>${nice(name)}</h2>${Object.entries(counts).sort((a, b) => b[1] - a[1]).map(([k, v]) => `<div class="bar"><span title="${esc(nice(k))}">${esc(nice(k))}</span><div class="track"><div class="fill" style="width:${v / top * 100}%"></div></div><b>${v}</b></div>`).join('')}${tail}</div>`;
+    }
+    const values = list.map(c => get(c, path)).filter(v => typeof v === 'number');
+    const low = Math.min(...values), high = Math.max(...values), bins = Array(field ? 5 : 20).fill(0);
+    for (const v of values) bins[Math.min(bins.length - 1, Math.floor((v - low) / (high - low + 1e-9) * bins.length))]++;
+    const top = Math.max(...bins), mid = [...values].sort((a, b) => a - b)[values.length >> 1];
+    return `<div class="panel"><h2>${nice(name)}</h2><div class="hist">${bins.map((b, i) => `<div title="${(low + (high - low) * i / bins.length).toFixed(2)}: ${b} cards" style="height:${b / top * 100}%"></div>`).join('')}</div><p class="note">Median ${mid}, range ${low} to ${high}</p>${tail}</div>`;
+  };
+  const section = title => {
+    const paths = Object.keys(D.form[title] || {}).filter(n => D.form[title][n].kind !== 'text').map(n => `${title}.${n}`)
+      .concat(Object.keys(D.stats.measured).filter(p => p.startsWith(title + '.')));
+    return `<h2 style="margin-top:18px">${nice(title)}</h2><div class="fields">${paths.map(block).join('')}</div>`;
+  };
+  document.getElementById('main').innerHTML = `<div class="filters"><label>Category<select id="fCat"><option value="">All categories</option>${['1', '2', '3', '4', '5'].map(c => `<option ${c === S.cat ? 'selected' : ''}>${c}</option>`).join('')}</select></label></div>` + Object.keys(D.form).map(section).join('');
+  document.getElementById('fCat').onchange = e => { S.cat = e.target.value; fields(); };
+}
+
+function strip(path, value) {
+  const s = D.stats.measured[path];
+  if (!s) return '';
+  const values = D.cards.map(c => get(c, path)).filter(v => typeof v === 'number');
+  const low = Math.min(...values), high = Math.max(...values), at = v => (v - low) / (high - low + 1e-9) * 100;
+  return `<span class="strip" title="p10 ${s.p10}, median ${s.median}, p90 ${s.p90}"><i></i><u style="left:${at(s.p10)}%;width:${at(s.p90) - at(s.p10)}%"></u><s style="left:${at(value)}%"></s></span>`;
+}
+
+function formRows(card, other) {
+  const rows = [];
+  const raters = D.stats.raters;
+  for (const [section, fs] of Object.entries(D.form)) {
+    rows.push(`<tr><td colspan="${other ? 3 : 2}"><h3>${nice(section)}</h3></td></tr>`);
+    for (const [name, f] of Object.entries(fs)) {
+      const path = `${section}.${name}`, value = card.form[section][name], second = other && other.form[section][name];
+      const disputed = card.disputed.includes(path);
+      const detail = disputed ? `<div class="flag">raters: ${raters.map(r => esc(nice(card.raters[r]?.[section]?.[name]))).join(' / ')}</div>` : '';
+      rows.push(`<tr class="${other && f.kind !== 'text' && value !== second ? 'diff' : ''}"><th>${nice(name)}</th><td>${esc(nice(value))}${detail}</td>${other ? `<td>${esc(nice(second))}</td>` : ''}</tr>`);
+    }
+    for (const [name, value] of Object.entries(card.measured[section] || {})) {
+      if (typeof value !== 'number') continue;
+      const path = `${section}.${name}`, second = other && other.measured[section]?.[name];
+      rows.push(`<tr><th>${nice(name)}</th><td class="num">${value}${other ? '' : strip(path, value)}</td>${other ? `<td class="num">${second ?? '–'}</td>` : ''}</tr>`);
+    }
+  }
+  return rows.join('');
+}
+
+function swatches(colors) { return (colors || []).map(c => `<span title="${c.hex} ${Math.round(c.share * 100)}%" style="display:inline-block;width:${Math.max(10, c.share * 120)}px;height:14px;background:${c.hex}"></span>`).join(''); }
+
+function drawer() {
+  const box = document.getElementById('drawer'), c = byId[S.card];
+  if (!c) { box.classList.remove('open'); return; }
+  const near = D.maps[`${S.model}_whole`] || D.maps[keyName()];
+  const tiles = [['Art', art(c.id)], ['Subject mask', `derived/masks/${c.id}.png`], ['Depth', `derived/depth/${c.id}.png`], ['Shading', `derived/shading/${c.id}.png`]];
+  box.innerHTML = `<div class="top"><div><h2>${esc(c.name || c.form.identity.subject)}</h2><div class="note">${esc(c.set)} · category ${esc(c.form.staging.art_category)}</div></div>
+    <div><button class="btn" id="pin">${S.pinned === c.id ? 'Pinned' : 'Compare'}</button> <button class="btn" id="close" aria-label="Close">Close</button></div></div>
+    <div class="tile-row">${tiles.map(([t, src]) => `<figure><img src="${src}" alt="${t}" onerror="this.style.visibility='hidden'"><figcaption>${t}</figcaption></figure>`).join('')}</div>
+    ${c.measured.mask_quality < 0.03 ? '<p class="flag">Low mask quality: subject measurements may be wrong.</p>' : ''}<h3>Palette</h3><div>${swatches(c.measured.color_palette.palette_subject)}</div><div style="margin-top:4px">${swatches(c.measured.color_palette.palette_background)}</div>
+    <h3>Nearest in ${S.model}</h3><div class="setcards" style="grid-template-columns:repeat(8,1fr)">${near.neighbours[c.index].map(i => D.cards.find(x => x.index === i)).filter(Boolean).map(x => `<button class="thumb" data-card="${x.id}"><div class="pic"><img src="${art(x.id)}" alt="${esc(x.form.identity.subject)}"></div></button>`).join('')}</div>
+    <table>${formRows(c)}</table>`;
+  box.classList.add('open');
+  box.scrollTop = 0;
+  document.getElementById('close').onclick = () => { S.card = null; drawer(); };
+  document.getElementById('pin').onclick = () => { S.pinned ? (S.second = c.id, S.tab = 'Compare', S.card = null, drawer(), render()) : (S.pinned = c.id, drawer()); };
+}
+
+function compare() {
+  const a = byId[S.pinned], b = byId[S.second];
+  if (!a || !b) { document.getElementById('main').innerHTML = `<div class="panel note">Open a card and press Compare, then open a second card and press Compare again.</div>`; return; }
+  document.getElementById('main').innerHTML = `<div class="panel"><table><tr><th></th><th><img src="${art(a.id)}" alt="" style="width:180px;border-radius:8px"><br>${esc(a.name)}</th><th><img src="${art(b.id)}" alt="" style="width:180px;border-radius:8px"><br>${esc(b.name)}</th></tr>${formRows(a, b)}</table></div>
+  <p><button class="btn" id="reset">Clear comparison</button></p>`;
+  document.getElementById('reset').onclick = () => { S.pinned = S.second = null; compare(); };
+}
+
+document.addEventListener('click', e => {
+  const t = e.target.closest('[data-tab],[data-card],[data-pick]');
+  if (!t) return;
+  if (t.dataset.tab) { S.tab = t.dataset.tab; render(); }
+  if (t.dataset.card) { S.card = t.dataset.card; drawer(); if (S.tab === 'Map') drawMap(); }
+  if (t.dataset.pick) { S.pick = S.pick === t.dataset.pick ? null : t.dataset.pick; drawMap(); }
+});
+document.addEventListener('keydown', e => { if (e.key === 'Escape') { S.card = null; drawer(); } });
+addEventListener('resize', () => { if (S.tab === 'Map') drawMap(); });
+document.getElementById('sub').textContent = `${D.cards.length} cards, ${D.sets.length} sets, rated by ${D.stats.raters.join(', ')}`;
+render();
+</script>
+</body>
+</html>
