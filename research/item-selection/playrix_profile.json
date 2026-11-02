@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-01",
+  "target_game": null,
+  "audience": {
+    "countries": null,
+    "country_weights": null,
+    "age": null,
+    "gender": null,
+    "status": "unknown",
+    "storefront_age_ratings": "not_applicable_as_player_demographics"
+  },
+  "games": {
+    "gardenscapes": {
+      "source_ids": ["P_GARDEN", "P_GSET"],
+      "publisher_context": ["garden restoration and decoration", "Austin", "friends and neighbors", "pets", "expeditions", "coziness and beauty"],
+      "limits": "Marketing tone, not audience measurement; collection details vary by release."
+    },
+    "homescapes": {
+      "source_ids": ["P_HOME", "P_HCOL"],
+      "publisher_context": ["mansion renovation", "Austin and family story", "cat", "heartwarming/cozy adventures", "sets as related subthemes"],
+      "supported_languages": ["English", "French", "German", "Italian", "Japanese", "Korean", "Portuguese", "Russian", "Simplified Chinese", "Spanish", "Traditional Chinese"],
+      "limits": "Supported languages are not countries or player weights; content ratings are not observed ages."
+    },
+    "township": {
+      "source_ids": ["P_TOWN"],
+      "publisher_context": ["farming", "city building", "factories", "friendly characters", "artifacts and antiquities"],
+      "limits": "Separate game; no shared target card style or demographics established."
+    },
+    "fishdom": {
+      "source_ids": ["P_FISH"],
+      "publisher_context": ["underwater fish", "aquarium decorations", "expeditions"],
+      "limits": "Separate game; underwater context is not a universal collection constraint."
+    }
+  },
+  "exercise_authority": {
+    "source_ids": ["L_TASK", "L_COLLECTION", "L_ART"],
+    "cards_per_set": 10,
+    "variants_range": [3, 5],
+    "movie_genres_required": 3,
+    "categories_per_set": [1, 2, 3, 4],
+    "gold": false,
+    "rarity_changes_rendering": false
+  },
+  "proposed_editorial_assumptions": [
+    {"id": "warm_readable", "statement": "Prefer warm/playful readable objects.", "status": "editable_assumption_not_company_policy"},
+    {"id": "evergreen_first", "statement": "Prefer evergreen thematic fit over optional recent-attention signals.", "status": "editable_assumption_not_company_policy"},
+    {"id": "accessible_genres", "statement": "Use non-graphic accessible genre treatments.", "status": "editable_assumption_not_company_policy"},
+    {"id": "frame_first", "statement": "Declare premise, frame, era and locale before choosing a roster.", "status": "proposed_planning_method"}
+  ],
+  "claim_limits": [
+    "No measured target-game cohort, countries, age or gender is supplied.",
+    "No claim all Playrix games share the requested rendering.",
+    "Candidate identity, era and familiarity remain hypotheses unless specific evidence supports each claim.",
+    "Machine priority is an ordinal editorial heuristic, not recognition probability.",
+    "No empirical recognition, visual quality or generated-image quality is established."
+  ]
+}
