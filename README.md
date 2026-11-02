@@ -32,8 +32,9 @@ It needs the Codex and Claude CLIs logged in, the board images in `materials/`, 
 |---|---|
 | `materials/` | Task documents and board images. Images are not in git. |
 | `sources/` | Board export and image manifests with hashes. |
-| `research/` | Research reports. |
+| `research/` | Research reports and per-vector notes. |
 | `analysis/` | Analysis outputs. `knowledge.json` is what the generator reads. |
+| `analysis/agents/` | Specialist art reviewers, one per vector, plus the art director. `VOCABULARY.md`, `TOOLS.md`, `LIGHTING.md` and `RECIPES.md` are their language and tools. |
 | `runs/` | Generated sets and control tests. |
 | `scripts/` | Pipeline scripts. |
 | `PROCESS.md` | What was tried and why. Draft. |

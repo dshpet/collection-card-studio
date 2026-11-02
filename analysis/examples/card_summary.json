@@ -1,0 +1,188 @@
+{
+  "command": "summary",
+  "conventions": {
+    "canvas": "59x67",
+    "coordinates": "x,y in EXIF-transposed native pixels; bbox x0,y0,x1,y1 with x1,y1 exclusive"
+  },
+  "edges_detail": {
+    "sobel": {
+      "computed_on": "full-image linear relative luminance Y before region masking (skimage.filters.sobel)",
+      "interior_rule": "region eroded by 2 native px (scipy.ndimage.binary_erosion, iterations=2, border_value=0)",
+      "interpretation": "mean gradient magnitude over valid interior; not outline width or readability",
+      "mean_magnitude": 0.05610446304107698,
+      "valid_pixels": 3465
+    },
+    "wavelet": {
+      "full_extent_mean_sq": {
+        "D": 0.00023647393539729628,
+        "H": 0.0022024207372905434,
+        "V": 0.0010702423064279927
+      },
+      "interior_mean_sq": {
+        "mean_sq": {
+          "D": 0.00026473277416888736,
+          "H": 0.0015766075801484343,
+          "V": 0.0005282222774828057
+        }
+      },
+      "label": "native-pixel band energy (mean squared detail coefficient, squared linear-luminance units); not brushwork/material/beauty",
+      "method": "pywt.swt2 Haar level 1, norm=True, on full linear Y reflect-padded to even dims; coefficients cropped back to original extent; mask never zeroed before filtering",
+      "reflect_padding": {
+        "bottom": 1,
+        "right": 1
+      },
+      "status": "ok"
+    }
+  },
+  "geometry": {
+    "bbox_margins_normalized_by_canvas": {
+      "bottom": 0.0,
+      "left": 0.0,
+      "right": 0.0,
+      "top": 0.0
+    },
+    "bbox_x0y0x1y1_exclusive": [
+      0,
+      0,
+      59,
+      67
+    ],
+    "canvas_pixels": 3953,
+    "centroid_xy": [
+      29.0,
+      33.0
+    ],
+    "method": "skimage.measure.regionprops on the 0/1 mask cast to int (one union label; no connected-component selection)",
+    "scope": "whole-image (no user mask); describes the entire frame, not a subject, lighting or any semantic region",
+    "selected_fraction": 1.0,
+    "selected_pixels": 3953
+  },
+  "input": {
+    "alpha": {
+      "background_rgb8": null,
+      "mode_had_alpha": false,
+      "nonopaque_pixels": 0,
+      "treatment": "none; fully opaque (--background supplied, unused)"
+    },
+    "color": {
+      "handling": "no embedded ICC profile; sRGB assumed (assumption recorded)",
+      "icc_profile_embedded": false,
+      "reporting": "encoded sRGB kept for palette/reporting; linearized only inside colour.sRGB_to_XYZ (single decode) and the EOTF in compositing"
+    },
+    "decoded_at_native_resolution": true,
+    "exif_transpose_applied": true,
+    "height": 67,
+    "libraries": {
+      "colour-science": "0.4.7",
+      "numpy": "2.5.4",
+      "pillow": "13.0.0",
+      "pywavelets": "1.8.0",
+      "scikit-image": "0.26.0",
+      "scipy": "1.18.1"
+    },
+    "original_mode": "RGB",
+    "path": "materials/card_examples/3458764679576006333.png",
+    "sha256": "0d4e0ba723240429f8435a85f1ff72eec4bb2116d665ad25bd11d15cbcc7542c",
+    "width": 59
+  },
+  "limitations": [
+    "Descriptive statistics of the rendered image only; no aesthetic/style score, no inference of original scene, capture, lighting or materials.",
+    "Tone values are dimensionless, display-referred (D65); no nits, Kelvin, key/fill ratio or physical roughness is implied.",
+    "Region outputs describe the user-supplied mask union or the whole frame; not a detected subject or lighting region.",
+    "Edge/wavelet values are native-pixel descriptive energy, not outline width, brushwork, readability or quality.",
+    "native image < 128 px in a dimension; fine-detail/material conclusions unsupported (arithmetic still reported)"
+  ],
+  "mask": {
+    "scope": "whole-image (no user mask); describes the entire frame, not a subject, lighting or any semantic region",
+    "selected_pixels": 3953,
+    "source": null
+  },
+  "palette": {
+    "bins": [
+      {
+        "bin_id": 47,
+        "mean_rgb8": [
+          11,
+          179,
+          245
+        ],
+        "share": 0.3407538578294966
+      },
+      {
+        "bin_id": 55,
+        "mean_rgb8": [
+          13,
+          208,
+          246
+        ],
+        "share": 0.19023526435618518
+      },
+      {
+        "bin_id": 39,
+        "mean_rgb8": [
+          9,
+          146,
+          239
+        ],
+        "share": 0.04072856058689603
+      },
+      {
+        "bin_id": 85,
+        "mean_rgb8": [
+          56,
+          74,
+          167
+        ],
+        "share": 0.04072856058689603
+      },
+      {
+        "bin_id": 76,
+        "mean_rgb8": [
+          43,
+          58,
+          146
+        ],
+        "share": 0.03541613964077916
+      },
+      {
+        "bin_id": 2,
+        "mean_rgb8": [
+          13,
+          19,
+          78
+        ],
+        "share": 0.025044270174550975
+      }
+    ],
+    "method": "deterministic fixed quantization: 8 bins per encoded sRGB channel, bin=min(floor(c*8),7), bin_id=(r<<6)|(g<<3)|b; six most populous bins, ties by ascending bin_id; not kmeans",
+    "remaining_share": 0.3270933468251961,
+    "sampled_pixels": 3953
+  },
+  "value_color": {
+    "definitions": {
+      "luminance_Y": "relative luminance colour.sRGB_to_XYZ(encoded sRGB)[...,1], linear, single decode",
+      "oklab_L": "colour.XYZ_to_Oklab L channel",
+      "oklab_chroma": "sqrt(a^2 + b^2) from Oklab"
+    },
+    "luminance_Y": {
+      "p10": 0.05685347041706536,
+      "p50": 0.3819146413313992,
+      "p90": 0.5426887567283346,
+      "p90_p10": 0.48583528631126927
+    },
+    "oklab_L": {
+      "p10": 0.39286614851000423,
+      "p50": 0.7190089984867936,
+      "p90": 0.8034687959071838,
+      "p90_p10": 0.41060264739717955
+    },
+    "oklab_chroma": {
+      "p10": 0.0999969060917113,
+      "p50": 0.143070633907896,
+      "p90": 0.1549733551331299,
+      "p90_p10": 0.0549764490414186
+    },
+    "scope": "whole-image (no user mask); describes the entire frame, not a subject, lighting or any semantic region; rendered (composited) image, un-eroded mask union",
+    "units": "dimensionless, display-referred D65; no nits, Kelvin, exposure, key/fill ratio or physical roughness is implied"
+  }
+}

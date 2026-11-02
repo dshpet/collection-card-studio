@@ -10,5 +10,6 @@
 - A pipeline change should be judged with `scripts/validate.py` and by looking at the cards.
 - In analysis, keep measured, model-estimated and rated fields distinct.
 - Reference cards are 430×480, which limits conclusions about fine detail.
+- Specialist agents, one per art vector, plus an art director are a core idea of this project: see `analysis/agents/`. They review references and generated cards.
 - Findings live in `analysis/SYNTHESIS.md`. The form lives in `scripts/form.py`.
 - `scripts/*.py` run with `.venv/bin/python`. Use `-B` to keep the tree clean.
