@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the cap is one big near-black mass on a mid-value ring field, with simple flat faces, a thin light rim on the board edge and a calm light disc behind it. Its lightness_gap of -0.312 is just past the real range, but the grouping is as broad as on real cards. B: the boot's mid-dark leather breaks into many small tones. A white hot spot sits right behind the shin, and the outer rings break up into thin, ragged bands. In the lessons, that hero-hugging glow appears on generated cards. Both sit near the dark-hero limit, so this is weak.",
+   "fix": "Remove the bright yellow-white spot behind the boot and make the rings even, wide, soft bands. Group the leather into one calm dark shape with a single soft highlight along the shin and toe."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the white star sits on mid-value purple with darker diamond corners, so hero and background split clearly by value. The star is on the light side (gap 0.154, just over the range) and has few dark accents. B: the pink band and cyan background are nearly the same grey, so the hero separates almost entirely by hue. The only dark is a small patch inside the ring, and rms_contrast of 0.068 is below every real card.",
+   "fix": "Make the bracelet clearly darker than the background: a deep shadow on the inner band and under the lower edge, darker pink on the side turning away, and a darker blue background at the corners."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the green background falls to nearly black-grey corners around a tight lighter ring hugging the jacket, and vignette of 0.134 is above the real range. The jacket adds many small light and dark pieces, including sash, badges and cuffs. B: the blue field has broad rays with only mild corner darkening. The hat is one calm middle value, with one dark underside shadow and a light brim edge, which matches the broad real groups.",
+   "fix": "Lighten the corners of the green background so the rays stay even to the edge, and remove the bright ring around the jacket. Keep the jacket in one soft light shape with fewer dark spots."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the ticket is almost flat, with a near-white panel on a light-grey field and a mid-grey band. There is no real dark accent beyond a small shadow at the lower edge, and rms_contrast of 0.084 is just under the real range. The background edges also break up into ragged value noise. B: the signpost has wood turning from light top planes to dark undersides, cut-out dark icons and broad cloud and sky groups. Its negative vignette comes from the clouds in the corners, which is a scene effect and not a value fault.",
+   "fix": "Give the ticket real thickness: a dark shadow along the lower edge and under the card, a soft darkening across the blue stub, and a calm background without broken streaks."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cactus and its pot sit in the same middle greys as the wall and table. Only a small cast shadow goes dark, and rms_contrast of 0.087 is well below the real range, so the card reads flat and hue-separated. B: the vending machine has a big dark side plane, a bright window panel and a soft light floor patch, giving clear light, middle and dark groups within the real range.",
+   "fix": "Add deep dark green in the cactus ribs and shaded side, a dark shadow inside the pot rim and under the pot, and make the pink wall a step deeper at the top."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the ball divides into huge clean light, middle and dark panels with one broad cast shadow, so the grouping is very simple and strong. B: the saddle and fence spread into many small mid-grey pieces, with fine speckle on the leather. The fence rails merge into the same light grey as the background. Darks scatter in small pockets, with the deepest under the pommel. All numbers are in range, so this rests only on the grouping.",
+   "fix": "Simplify the saddle into one dark leather shape with one soft highlight on the seat, and make the fence one step darker than the background so the groups stay large."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a white glow sits directly behind the rope coil and fades to dark-grey top corners, and vignette of 0.115 is above the real range. Lightness of 0.755 is slightly over too. The rope itself is busy light and dark twist with no overall dark side. B: flat background over a near-white floor, a dark shoe mass and a solid cast shadow, without vignette. The floor is very bright (0.762), but the three-value split is clean.",
+   "fix": "Remove the bright glow behind the rope and keep the green even with only slightly deeper corners. Put a darker shaded side on the coil so it reads as one shape."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the fountain is very light, with pale stone on light stripes, a dark pool as the only strong group, and speckled stripes in the lens. B: the canvas is clipped white and merges with the white stripes, while the dark wheels and wagon bed anchor the card. Both are above the real lightness range by about the same amount (0.783 and 0.776), and each has a similar hero-background merge. My vector gives no clear reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the kettle is a middle-dark shape with one sharp highlight and a dark right side. The rays run out to the edges and the sand is a calm light group, with the fire as a small bright accent. B: a white blob sits tight behind the ice cube and fades up through light rays to darker corners. That is the hero-hugging glow from the generated lessons. The tray is a soft mid-grey, with its darkest value only in small gaps, and the card is brighter overall (0.735).",
+   "fix": "Remove the white glow behind the ice cube and let the rays stay even from centre to edge. Make the tray's front faces and the gaps between cups a clearly deeper dark."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the saloon is a wide dark-mid mass cut into many thin plank lines with grainy speckle, and its lightness_gap of -0.195 is slightly past the real range. The black door opening is the only large dark accent. B: broad groups read clearly, with white sand at the top, dark water, a mid-tone dock and bright white buoy bands. The darks are big and calm, as on real cards.",
+   "fix": "Lighten the saloon walls one step, merge plank lines into a single sunny front plane, and keep darks to the door and under the porch roof."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the locomotive is almost pure black, with hard white highlights scattered over the boiler, rims and rods. rms_contrast of 0.221 and lightness_gap of -0.291 are both beyond the real range, so local contrast is too hard. B: the bus is a dark but even mid-dark mass with softer highlights around bright windows, and its numbers are within range.",
+   "fix": "Lift the boiler from black to dark charcoal with a broad soft sheen. Soften the highlights on the rims and rods, and use the deepest black only under the engine."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the wheel is a white mass on a mid blue with soft grey in the cabins, an open and light key like the real cards, with all numbers in range. B: the card is low-key, with near-black lower background, a grey-dark top and a hot glowing white jellyfish rim. Its lightness of 0.515, gap of 0.286 and vignette of -0.046 are all outside the real range. Black pools below the hero in a way the real set never does.",
+   "fix": "Lift the whole card into a bright, medium-blue water with no black area. Keep the background light from top to bottom, and tone the jellyfish rim down from glowing white to soft pale pink."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away mainly through a hot glow tight behind the hero, which fades to darker corners instead of keeping an even background. They also push contrast past real limits: either a near-black hero with hard white sparkle (the train) or a flat hero matching the background in value and split only by hue (the bracelet, the cactus). Real cards hold broad, calm light, middle and dark groups with one or two soft dark accents; generated cards scatter small darks and highlights across the hero."
+}

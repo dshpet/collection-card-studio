@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the popcorn cart keeps thin posts, a slim handle, spoked wheels and open gaps under the awning, so its contour is busy (corner_rate 5.24). B: the helmet is one swollen ball with a fat ear puck on each side and a short collar. The contour has almost no corners (corner_rate 0.428, below the real range) and solidity 0.976 is above the real range.",
+   "fix": "Draw a true astronaut helmet: a taller shell with a distinct stepped neck ring, a thin raised visor frame with crisp edges, and small flat side latches instead of round puffy ear discs."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the topiary tiers narrow believably and the base is a thin flat curb. Its leaf fringe explains the low straight_share of 0.185. B: the planet is a clean ball, but the ring is a fat sausage with blunt, blobby ends and barely any gap against the sphere. The contour is long smooth arcs (straight_share 0.655, above real; corner_rate 1.212, below real).",
+   "fix": "Make the ring a thin flat disc that tapers to sharp tips at both ends, with a clear open gap between ring and planet."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the player's corners are soft, but the cables stay genuinely thin and the earbuds have distinct stems. The numbers are driven by the cables (thin_share 0.083, solidity 0.58). B: the saucer and dome merge into one hat-shaped mass. The rim has no sharp edge, with only a tiny step at the dome collar (corner_rate 0.0, solidity 0.961, above real), and there are no thin parts.",
+   "fix": "Give the saucer a thin sharp outer rim, a clear stepped collar under the dome, and a smaller dome; add small landing legs or an antenna that break the outline."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both are in the real range. A: the submarine is plump but has distinct parts: a thin periscope, a propeller with separate blades, a conning tower. B: the rocket body is fat, and the three fins are thick, swollen horns. The centre fin is a sausage and the nozzle is short and stubby, so the parts read as toy-like.",
+   "fix": "Slim the rocket body, draw the fins as thin flat plates with crisp tips and straight trailing edges, and lengthen the nozzle into a clean flared bell."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the telescope has a tapered tube and thin tripod legs with correct proportions. B: the ship's wheel has a flat rim, turned spokes and a flat-faced plank stand; the knobby handles explain its high corner_rate of 6.793. Both are open forms, with low solidity for a legitimate reason. Neither shows fattening or pillowing that separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the robot has a pillowy head box with soft corners, swollen shoulder and joint balls, and stubby legs with chunky feet, which gives toy proportions, though the antennae stay thin. B: the vending machine has long straight runs, planar side and front faces, tight corners and small feet (straight_share 0.788), as a real appliance has.",
+   "fix": "Draw the robot with a flat-faced box head and torso with tight bevelled corners, slimmer limbs with narrow hinge joints, and longer legs."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the lion statue has a stepped plinth with planar faces and tight edges, and a naturally rounded animal form. B: the envelope is a flat plate with straight edges and thin stacked photo corners, though the corners are slightly rounded and straight_share of 0.663 is just over the real range. That is expected for a flat rectangular object, so it is not a defect. Flat stays flat on both cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the spyglass is a stubby telescoping tube with stepped sections and collars, and it is plain and believable. B: the ray gun body is a swollen egg, the grip is bulbous and the fin is a soft blob. Only the trigger guard and emitter rod are thin, so the parts read as inflated. The metrics do not separate the pair, so this rests on the eye.",
+   "fix": "Slim the gun barrel into a narrower cylinder with hard stepped rings, make the grip a flatter angled slab, and draw the fin as a thin flat plate with a sharp tip."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the console is a single inflated wedge. The top corners are big soft blobs, the slope and sides bulge, and there are almost no contour corners (corner_rate 0.395, below real; straight_share 0.666 and solidity 0.969, above real). B: the fruit plate has an irregular natural contour, a sharp watermelon rind tip and a strawberry leaf fringe.",
+   "fix": "Draw the console as a hard metal desk unit with flat planar panels, straight edges and tight small bevels at every corner, plus thin separate feet."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the flower bed has puffy petals and rounded curb stones, but the stones keep flat tops and the plant form is naturally soft. B: the Ferris wheel has straight spokes, thin braces and boxy gondolas, cropped by the frame. All numbers are in the real range and neither card has a shape fault that sets it apart.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the gate keeps genuinely thin ironwork bars and scrolls. Its extreme thin_share of 0.389 and solidity of 0.552 come from that ironwork and a mask that dropped the brick piers, so they are not a flaw. B: the station hub is a fat ball with stubby arm connectors, the solar panels are thick slabs with soft rounded corners, and the antenna is short, giving toy-like proportions.",
+   "fix": "Draw the solar panels as thin flat sheets with sharp square corners on long slim truss arms, and make the hub a smaller cylinder with flat end caps."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the boat has a true hull taper with a pointed bow, thin rope and a flat plank dock with square corners. B: the pod is an oversized swollen sphere on three stubby splayed legs with thick disc feet, with a small knob on top. It is fattened like a toy and has no flat faces. The metrics do not separate the pair, so this rests on the eye.",
+   "fix": "Make the pod a taller capsule with a flat base ring and flat door panel, and draw long thin landing struts with small narrow foot pads."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away by inflation. The object is a single swollen mass with few contour corners and solidity at or above the top of the real range. Hard bevels become soft blobs, flat plates and fins become thick pillows or sausages, and thin parts (struts, rims, ring tips, connectors) are thickened, shortened or merged into the body, so the proportions read as a toy. Real cards keep planar faces, tight corners and truly thin secondary parts that break the outline."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the popcorn cart stands on pale paving with soft stones, and the quiet blue diamonds stay behind it (category 3). B: the helmet sits on a steel floor cut by seams, with rows of rivets and a hot reflection pool under the base. The floor is a built sci-fi set and a loud diamond field sits above it, so the card has two competing surfaces. Both cards' metrics are in the real range.",
+   "fix": "Stand the helmet on a plain smooth grey surface with no rivets or panel seams and only a soft contact shadow; keep the green diamond pattern faint."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the topiary sits in a garden of a few large shapes: hedge band, path, lawn and pale sky. The only small detail is the grass tufts at the bottom edge. B: the planet has invented company: two small cratered moons at top right and lower left, about a dozen four-point sparkles and star specks, and pink nebula streaks across the corners. The extras read as decoration. The real sky cards use only a few large soft clouds.",
+   "fix": "Draw the ringed planet alone on a smooth deep-blue background with a faint tone-on-tone pattern. No moons, no sparkles, no stars, no pink clouds."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both use tone-on-tone concentric rings. A: the flat violet rings have clean steps and even contrast, and the cable crosses them with no halo. B: the magenta rings dissolve into a hot pink glow under and around the saucer, darkening to murky corners. The ring steps are so soft that background values drop below the real range (detail 0.0068, edge 0.003). This matches the lesson cards, where the generated glove and camera have a bright hot zone behind the hero.",
+   "fix": "Keep the ring pattern flat with clear, even steps between two close purples, with no bright glow behind the saucer and no dark corners."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both are floating category 1 sunbursts with no props. A: dark green rays with a heavy vignette and a lit centre. B: cyan rays with almost no value change, clean and very smooth (detail 0.0064, below the real range). The real sunbursts in the lessons keep a slow shift of depth from corner to corner, which B lacks. The evidence is weak, and only the measurement separates them.",
+   "fix": "Give the cyan rays a gentle shift from deeper blue at the corners to lighter at the centre, keeping the ray edges soft."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Both use the same staging: sunburst above a curved wooden deck, category 3, no props. A has saturated purple rays over smooth planks. B has pale washed rays over planks with more cracks and grain. B's deck is slightly busier, but both are within the real range and neither invents anything.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the robot stands on a blank white ledge against a yellow-orange glow that burns hottest right behind its body, with a long soft shadow to the left. B: the vending machine sits on a plain purple gradient with a soft floor sheen and nothing added. Both are quiet, and metrics barely differ. A's hot glow behind the hero is the only generated-leaning tell here.",
+   "fix": "Replace the bright glow behind the robot with an even backdrop carrying a faint tone-on-tone pattern; keep the ledge plain."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the lion sits in a full garden with trees left and right, conifers, a brick path and grass tufts. It is heavy for category 4 but stays within the real range, and the lion stays central and dominant. B: the envelope floats on quiet green swirling rings, with all the detail inside the hero; its edge value (0.010) sits just under the real range, which is not a real tell. Each matches a real staging type.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the spyglass floats on cyan stripes one step apart in tone, and the pattern recedes (the real cards work this way). B: the ray gun floats on full yellow and teal diagonal stripes of near-equal strength. This is not tone-on-tone: the stripes cut hard edges against the red body and compete with the hero. A's raised detail value (0.0217) comes with a very low edge value (0.004), so it is fine texture rather than a busy shape.",
+   "fix": "Change the background to diagonal stripes in two close shades of teal, with no yellow, low contrast and soft edges."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the console sits on a metal floor with cut panel seams and several glowing blue light strips, and the strips also leak out from behind it at the right and left wall line. The orange striped wall adds a third layer. The floor is an invented sci-fi set full of small bright accents that pull from the hero. B: the fruit plate sits on plain wooden planks, one material with long quiet lines, like the real table cards.",
+   "fix": "Set the console on a plain matte grey surface with no glowing strips or panel lines, and keep the wall stripes in two close tones."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the flowerbed sits on a plain pink ledge with faint magenta diamonds (category 2). The backdrop is quiet, though slightly under the real range (detail 0.0068, edge 0.007). B: the Ferris wheel is cropped large against an empty blue sky with nothing added. Both are restrained, with no invented props.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the gate fills a garden scene with brick pillars, trees and paving. Its high numbers (detail 0.0423, edge 0.122) are inflated because the mask counts the pillars as background, while the gate itself stays central. B: the station floats over a cartoon Earth with green land, cloud patches and a glowing rim, under an invented magenta-to-blue sky. The globe is a large added prop, and the pink sky is the same decorative gradient as the p02 space card. A is the busier card, so this call is low confidence.",
+   "fix": "Remove the planet. Draw the station alone on a calm deep-blue background with a faint tone-on-tone pattern."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the boat, pier and water are one scene, with two lily pads and ripples as purposeful, large, quiet props. B: the pod sits in a built sci-fi hall with columns, arched windows, curved ceiling lights and glowing rings on the floor. Every layer has a bright yellow neon line, so the background repeats the hero's lights and competes with it. Real interiors, like the fan card, use a few flat dark or plain shapes with no glow lines.",
+   "fix": "Put the pod against a simple plain wall in one soft blue on a smooth floor. No columns, no glowing rings, no light strips."
+  }
+ ],
+ "pattern": "Generated cards invent a setting instead of leaving the object alone. They add riveted or panelled metal floors, glowing light strips, neon rings, moons, sparkles and nebula streaks, plus a hot glow directly behind the hero. Their backdrops also use full-strength colour stripes or blurred ring steps where the real cards use a flat tone-on-tone pattern. Real cards keep a few large quiet shapes and put the detail in the hero."
+}

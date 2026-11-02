@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the cart is turned about 3/4, with a tiled ground running back to a wall line. Its big wheel, deck and awning read as one mild view, though the awning top shows slightly more than a low camera would give. B: the helmet faces almost straight on, and its collar sits as a very shallow ellipse. The riveted floor around it is seen from higher, with panel seams fanning out wide, so the hero and ground angles differ slightly.",
+   "fix": "Turn the helmet about 30 degrees to one side. Draw the collar ring as an ellipse that matches the angle of the floor, and keep the floor seams only gently converging."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the topiary stands on a planter ring on lawn, with a path and a hedge behind it. The foreground, hero and background layers all share one low garden camera. B: Saturn's ring is a tilted ellipse seen from above, but the wavy bands on the sphere do not follow that tilt. The globe and ring therefore read as two views. There is no ground, and the moons sit flat on the sky, with planar_share 0.618 above the real range.",
+   "fix": "Curve the planet's stripes as parallel ellipses that match the tilt of the ring, so the ball and ring look seen from one camera. Make the moons smaller and softer so they sit far behind."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the player is one tilted slab with a consistent front and side face, and the cable lies in the same space. B: the saucer shows the dome base and rim from above, yet the oval hatch on the belly is also fully visible from below. Top and underside are both visible at once, so the hull does not hold one camera height.",
+   "fix": "Show the saucer from one slightly raised camera: top of the rim and dome visible, belly hidden except for a thin dark edge, with the lights following one even ellipse. Or tilt the whole saucer as one piece."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the submarine is a near-side view with a mild turn. The hull, portholes and propeller agree, though the hull is swollen. B: the rocket looks up at the nozzle opening from below, while the body tapers hard toward the nose and the front fin stands forward. This forced, wider-angle read is stronger than the mild perspective on real cards.",
+   "fix": "Use a gentler rocket view: less taper from tail to nose, nozzle opening only just visible, and side fins the same size and angle as a straight 3/4 turn."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the telescope tube shrinks hard from a huge front lens to a tiny eyepiece, a forced near-camera view that is stronger than the tripod below it, which stands in a calm mild view. B: the ship's wheel is a flat frontal view on a simple post. The deck planks fan out beneath it, but the plain frontal view matches the frontal real clock.",
+   "fix": "Reduce the size difference between the telescope's front and back ends. Draw the tube with mild foreshortening matching the tripod legs, and show less of the front lens opening."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the robot's head and chest face the camera almost flat, while the feet are splayed and turned and show top faces. The floor band meets the wall at thigh height, so the body parts do not settle on one angle. B: the vending machine is one clean box with a narrow left side, and its verticals and small feet agree, though its ground is barely drawn.",
+   "fix": "Turn the robot's head, chest and feet together about 20 degrees to the same side, with the top of the head and tops of the feet showing a matching small amount."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the lion sits on a stepped plinth seen from a raised 3/4 camera. The plinth edges converge a little, and the garden behind steps back through clear layers on one ground plane. B: the envelope and photos are flat layered sheets with no ground and only overlap for depth. Its planar_share of 0.855 is high, but that fits flat paper, not a wrong camera. Neither card breaks its own view, and the lessons give no rule against either.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the spyglass recedes along one axis, with each ring shrinking evenly and every ellipse agreeing. B: the barrel rings and muzzle turn toward the viewer and the body swells toward the camera, but the grip and trigger guard are a flat side view. The front and back of the gun therefore read as two different turns.",
+   "fix": "Keep the whole gun at one mild 3/4 turn: the grip and trigger guard turn with the barrel, the side of the handle shows some thickness, and the barrel rings are only slightly elliptical."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the console is seen from a high 3/4 camera with a broad top face, in the generated habit of showing the top more. The front edge bows, the wedge side bulges, and the floor seams and light strips run on their own slightly different angle from the console's base. B: the plate is a single ellipse on one tilted table, with planks and rim agreeing and the fruit sitting in the same tilt.",
+   "fix": "Lower the camera a little so less of the console's top shows. Keep its front edge straight, and run the floor panel lines in the same direction as the console's sides."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the raised bed is seen from a high camera on a simple floor and back-wall split, with its brick ring a clean ellipse, although the flower heads tip toward the viewer. B: the Ferris wheel is cropped and seen at an angle, with a clear rear rim behind the front rim, although the cabin roofs show a little more than the wheel's angle suggests. Each has only a small mismatch, and the cropped hero is a real-card trait. Nothing decides it.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the gate is at a low eye level. Pillars, paving and path all run to one vanishing direction, with the gardens as clear layers behind. B: the two solar panels skew in mirror image toward the centre, so they cannot share a camera with the sphere. The docking tube pushes out at the viewer in a stronger view than the body, and the Earth below is a separate curved layer.",
+   "fix": "Draw the space station from one 3/4 camera: both solar panels lean the same way and the nearer one is slightly larger, with the docking tube only gently foreshortened."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the boat, dock and post share one high camera. Water fills the ground plane, and the cropped dock gives the foreground and depth. B: the capsule faces dead-on while the room around it bends like a wide lens, with curved ceiling bands and floor rings seen from above. The legs splay outward, so the hero is flat-on inside a wide-angle background.",
+   "fix": "Turn the capsule about 25 degrees so one side shows. Replace the curved room with a simple plain back wall and flat floor at one mild angle, with the floor ring matching the ellipse of the capsule's base."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away by failing to hold one camera. Parts of a hero sit at different angles: a frontal body with a turned nose or feet, a top and underside visible at once, or surface stripes that ignore the ring's tilt. They also use forced, close-lens perspective (hard tapers, swollen forms growing toward the viewer, floors or rooms that bend wide) where real cards stay mild. Heroes are usually complete, centred and shown with more top face, whereas real cards accept a lower 3/4 turn and tight crops. Calibration is weak: p05, p07 and p10 are low-confidence calls, and planar_share was mostly unhelpful, with p02 and p07 reading high and p05 A near zero without showing a camera fault on its own."
+}

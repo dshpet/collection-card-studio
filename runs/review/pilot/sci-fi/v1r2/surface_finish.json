@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the station hull has crisp, evenly cut panel lines and hard-edged gold bands, with the same clean lacquer on hull, trim and cannon rim. Its detail and micro-texture sit above the real range. B: the gate is softer and painted, but its iron scrolls read as glazed terracotta and its gloss (0.333) is also out of range, so the call is weak.",
+   "fix": "Soften the hull panel seams into thin, quiet lines. Make the white hull a matte painted shell, and keep bright polish only on the narrow gold rims. Fade the small details rather than outlining them sharply."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the spyglass is soft like the real crops, with a fine quiet ripple on the brown wrap and broad gold gradients. B: the ray gun has crisp, sharpened edges, brushed streaks on the chrome rings and a hard lacquer on the red body, close to the over-defined metal of the generated cameras.",
+   "fix": "Remove the brushed streaks from the silver rings and use one broad soft reflection. Make the red body a softer satin with blurred edges to the highlight, and lower the sharpness of the grille slots."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the console has sharp tick marks on the slider panel, faint grain on the grey housing and identically lacquered buttons in every row. Its detail, micro-texture and gloss all exceed the real range. B: the fruit is glossy but varies by material, with wet melon, dull seeds and clear glass, and its numbers stay in range.",
+   "fix": "Remove the speckle from the grey housing and make it smooth matte plastic. Drop most slider tick marks. Give the round buttons soft satin tops, with only a small highlight on a few keys."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the pod's gold dial has fine radial lines and the hinges are crisply polished against a pale, tinted metal shell with no surface character. B: the boat has quiet plank lines, a believable rope twist and matte painted wood, with no sign of over-finishing.",
+   "fix": "Remove the radial lines from the gold dial and use one soft sheen. Give the grey shell a calmer satin finish with a clear broad highlight, so it reads as metal rather than tinted plastic."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the topiary leaves are crisp and repetitive, and gloss (0.437) and micro-texture exceed the real range, which argues against this call, though that count may come from the many leaf-edge highlights. B: the planet is airbrushed with no fine marks, and micro-texture sits just below the real floor; where the ring crosses the bands the paint turns to a muddy translucent smear.",
+   "fix": "Add a very fine, quiet variation inside the planet's bands. Keep the ring as a clean separate object with no muddy see-through area, and limit the shine to one soft highlight at the upper left."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the pool rings read as glossy inflated vinyl and the water is soft, with low measured detail. B: the jacket is smooth like clay with no weave or stitching, but the real cards also simplify such detail, and its numbers are in range. Neither surface separates cleanly from the real set.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the wheel has painted grain on the ring and decorative cracked deck lines, but the rest of its finish is soft. B: the telescope separates white enamel, gold and dark wood well, with a near-maximum highlight share that is still in range. The cues point in opposite directions, so there is no surface reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the robot has satin grey shells, crisp small screws and sharp vent bars, with detail near the top of the real range, much like the over-specified generated cameras. B: the vending machine is soft with a misty glass front. The cans smear slightly, but the softness and material variety fit the real crops better.",
+   "fix": "Remove the tiny corner screws and soften the vent bars. Make the grey shell smoother with one broad reflection, keep the blue parts matte, and blur the small edges slightly."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the book has soft cream pages, quiet wood grain and a satin ribbon. Its highlight share (0.453) comes from the white pages, not gloss. B: the chair has flat canvas with one seam and pale matte tubes that read weakly as metal. Neither shows a clear generated surface fault.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the player is calm, soft rubbery matte with clean white gloss earbuds, a genuine matte and shiny mix. B: the UFO has sharp streaked reflections on the silver band and identical hard-rimmed glowing lamps, with a crisp glass highlight, which is the over-defined finish of the generated cards.",
+   "fix": "Replace the streaks on the silver band with one broad soft reflection. Make the lamps simpler and softer with no hard rims, and blur the edge of the highlight on the dome."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the popcorn cart varies its surfaces, with rough kernels, clear glass, soft fabric awning and painted wood. B: the helmet visor is one airbrushed gold lacquer with a smeared reflection band, the shell is plain smooth plastic, and the base has a crisp hard finish, so surfaces are less varied.",
+   "fix": "Make the visor dark tinted glass with a small sharp window reflection and a thin gold edge. Make the white shell a matte padded surface with soft fabric folds, and keep shine only on the visor and metal ring."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the rocket hull is soft pearl with a broad sheen, slightly duller grey collars and small rivets, and its crop is soft like the real cards. Highlight share (0.21) is above range but follows the white hull. B: the submarine is one saturated yellow lacquer with crisp copper rings and raised rivets, closer to a toy finish.",
+   "fix": "Make the yellow hull a softer semi-matte paint with one wide highlight. Shrink the rivets and sink them into the surface, and dull the copper rings with a soft sheen."
+  }
+ ],
+ "pattern": "Generated cards are mainly given away by being too clean and too defined at 2×: crisp edges, sharpened small parts such as screws, tick marks and rims, and brushed streaks on metal. Lacquer is often spread evenly across parts that should differ. Real cards are softer, with one broad highlight per form, quiet details that fade away, and more matte surfaces beside the shiny ones. These are low-confidence calls: only p03, p08 and p11 reach 3, and p01 and p05 have conflicting numbers, with p05 going against its out-of-range figures."
+}

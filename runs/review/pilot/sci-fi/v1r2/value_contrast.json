@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the satellite sits on a single flat mid-grey sky. Body and solar panels break into small white rims and dark cells, with no big dark shape, and overall contrast is low (rms 0.104, below the real 0.124 floor). B: the brick pillars and gate form one dark mass, against a light paving mass and a mid sky, giving clear three-way grouping (rms 0.147).",
+   "fix": "Give the satellite one large shadow side: the lower third of the hull and the underside of the panels fall into deep shade. Make the planet below darker and simpler, and drop the thin white outlines around the panels."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the spyglass barrel is one compact dark mass with a few soft bright rings on a light background, close to the real camera's dark hero. B: the ray gun body is mid-dark, but the chrome rings, grip and fin carry hard black-and-white bands and a white halo around the green ball. Local contrast is harder than on real heroes. Numbers do not separate them; A sits near the top of the range on key and gap.",
+   "fix": "Soften the chrome rings to gentle grey gradients with one small highlight each. Remove the white glow around the green ball and let the red body roll slowly from light to shadow."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the console has near-black panel wells, a continuous white rim around the whole top edge, and bright button caps, so it has hard local contrast across many small shapes. The background splits into two flat tones. B: the fruit plate stays in soft mid values on a light wood mass, and its darks are small accents in the seeds and berries. B's rms of 0.115 is slightly below the real range, so this call rests on the eye rather than the number.",
+   "fix": "Lift the black panel wells to a dark grey. Remove the white rim line along the console's edge and let the top face fade softly into the side. Keep the darkest darks only under the base."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the card is high-key (0.727, above the real 0.707). White glow bands wrap the room and floor, a white rim surrounds the pod, and the sphere is pale against pale, so hero and background share one light group. Only the blue belt reads dark. B: the boat and dock form clear mid and dark shapes on an even water tone, with a deep shadow under the hull.",
+   "fix": "Dim the room behind the pod to a calm mid blue with no glowing strips. Remove the bright floor rings. Shade the lower half of the sphere noticeably darker, with a solid shadow under it."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the topiary is a dark hero (gap -0.189) against a lighter sky and bright lawn, with clear light, middle and dark zones. It is speckled inside, but it groups. B: the planet has almost the same mid value as the sky around it (gap 0.053, rms 0.106, below real). Light and dark stripes float inside it with no overall shadow side, and only a thin rim and the ring hold its edge.",
+   "fix": "Darken the planet's lower right side into a broad soft shadow across all the stripes, and keep the upper left lit. Make the sky behind it clearly lighter or darker than the planet."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the pool scene has the fence as one dark corner shape, a mid lawn and a mid pool, with shadow falling to the lower right and no vignette (-0.002). B: the jacket glows pale in the middle, a hard sash is the darkest stripe across it, and corners fall to deep dark (vignette 0.134, above the real 0.100). The spotlight falloff around the hero is more pushed than on real cards.",
+   "fix": "Lighten the corners of the green background so the sunburst stays even edge to edge. Remove the glow behind the jacket and bring the sash to a mid-dark green."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the card is very high-key (0.761, gap -0.282, vignette 0.089, all just outside real). A pale background and a white burst hug the wheel, the deck bursts white under it, and the wheel is one even mid-dark shape with little form inside. B: the white tube is nearly flat and clipped (rms 0.104, below real), but it sits on a mid background with a real cast shadow. Both have flaws, so this is a weak call.",
+   "fix": "Darken the background to a richer mid tone and remove the white glow around the wheel and under the stand. Give the rim of the wheel a light top edge and a shaded lower side."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the robot sits on a dead flat mid background (vignette -0.010), and its limbs and head carry many hard spots of white next to black, with white rims on nearly every part. The hero's light and dark are scattered. B: the vending machine has a big solid dark side panel, a light door group, and a soft pool of light on the wall behind, so large shapes read first.",
+   "fix": "Group the robot's arms and legs into one darker shaded side and reduce the small white highlights to two or three. Add a soft lighter pool on the wall behind it, away from the corners."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the open book is a very large light shape against a dark railing band (gap 0.190, rms 0.200, vignette -0.152, all outside or at the real edge), which argues against my pick. Even so, it has a confident three-band scene structure. B: a neat circular glow sits behind the chair, corners dim evenly, the table clips white, and the seat and backrest are flat dark shapes with thin pale tubes. The value design looks like a studio spotlight, not an authored scene. Low confidence because the numbers favor A as the outlier.",
+   "fix": "Remove the round spotlight behind the chair and use a plain background with a slow gradient. Lower the table top from near-white to a warm mid tone, and shade the fabric with a soft fold gradient."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the orange case and white earbuds are nearly all light, on a two-tone ring background, and the hero is well above its background (gap 0.223, above real). B: the rings get lighter toward the corners (vignette -0.073, below real), the reverse of real falloff. The lower hull melts into the dark ring, while the top carries clipped white streaks. Both cards show the same flat two-tone ring structure, so the call is weak.",
+   "fix": "Darken the rings gently toward the corners. Lift the underside of the saucer so its edge stays visible against the background, and shorten the white streaks along the hull to one soft highlight."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the popcorn cart has a dark red body, dark wheels and awning stripes against a dark blue upper and a white paving floor, with bold big value groups (rms 0.140). B: the helmet is white on a light background over a light floor (0.750, above real; rms 0.108, below real). The hero shares the same light group as the card, and the only separation comes from the green hue. The visor holds gentle mid greys with one small dark patch.",
+   "fix": "Darken the green background and the grey floor so the white helmet stands clearly lighter than both. Add a deep dark zone at the bottom of the gold visor and a stronger shadow under the collar."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the rocket is high-key (0.821, above real), with a white body on a light background, but its red fins and nose give clear dark accents and the corners stay calm. B: near-black corners, a tight bright circle and a mostly white submarine (mean 0.546, rms 0.185, gap 0.322, all outside real). The yellow body reads as almost clipped against a heavy spotlight vignette.",
+   "fix": "Lift the green background to a mid green that stays even out to the corners, with no black edges. Shade the lower half of the submarine to a deep orange-yellow so the body is not all near-white."
+  }
+ ],
+ "pattern": "Generated cards stack hard, small highlight-and-black pairs across every part of the hero, where real cards use one broad shadow side and a few soft highlights. Their value design is also pushed to an extreme: glowing halos hugging the hero, pale high-key backgrounds or spotlight-black corners, and heroes whose form relies on hue rather than a clear value step from the background."
+}

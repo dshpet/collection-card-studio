@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the topiary's interior is packed with hard leaf-scale edges from top to bottom, with no quieter zone. The silhouette is a saw-toothed dark contour, and the back hedge breaks into speckle in the lens. Subject density 0.29 is above the real range and outline_darkness -0.086 is below it. A: pumpkin bodies stay open and soft, with only a few rib lines. Firm edges sit on the leaves and vines, and its numbers are in range.",
+   "fix": "Group the leaves into large soft clumps. Show crisp leaf shapes only on the front of each tier and let the rest melt into smooth green. Make the back hedge a soft, simple band without individual dots."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the lion's body and plinth are very quiet (subject density 0.05, below the real range), while the tree canopies and curved brick path behind it are full of edges (background 0.068). The strongest detail therefore competes with the hero, and the lion is ringed by one dark contour around mane and plinth. A: the cooler carries clean panel, handle and can-rim edges, with a quiet sea and sky behind it (background 0.015).",
+   "fix": "Keep the sharpest detail on the lion's face, mane locks and paws. Blur the trees and brick path behind into soft simple shapes with no individual leaves or bricks. Do not run a dark line around the statue."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the envelope and each stacked photo have firm, even, dark boundaries, the stamp and postmark rings are doubled lines, and the small village scene packs in many tiny edges. Edge weight barely changes around the hero. A: the bat's wing contour is firm, but the head and fur body go soft and fuzzy, leaving a clear change in edge weight. Numbers are in range for both, so this is a weak call.",
+   "fix": "Let the envelope's lit edges and the back photos fade softly into the background. Keep crisp edges only on the front photo's corner and the stamp, and simplify the village into a few clean shapes."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the sneakers are dense with hard edges: mesh dots, laces, sole bands and panel lines all at equal sharpness (subject density 0.227, top of the real range). outline_darkness -0.1 is below the real range, and thin vertical lines run along the card's left and right borders in the lens. B: the cauldron body is almost empty of edges, the feet soften, and the sharp detail is concentrated at the bubbling rim and ring handles.",
+   "fix": "Reduce the shoes to a few big soft panels. Remove the mesh dots and fine stitching, simplify the laces into thick smooth shapes, and keep the sharpest edges only on the front shoe's laces and sole."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the lamp has heavy dark contour along the cap, arched arm, glass ribs and scroll, often reading as doubled parallel lines. Subject density 0.187 and outline_darkness 0.149 are both above the real range. B: the candelabra's line weight is lighter (outline -0.021), the flames have lost edges against the background, and the base rim alone is firm.",
+   "fix": "Do not draw dark lines around the lamp. Shape the arm and cap with soft light and shadow, let the glass edge fade into the background on the lit side, and leave crisp edges only on the lantern frame."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: ivy leaves all around the frame are drawn with equally hard contours, the door has grooved panels and wood-grain lines, and the wreath competes with its surround. Subject density 0.342 and background 0.107 are both above the real range, with no clear edge hierarchy. There is also a wavy leaf-shadow edge across the door. B: the house is busy but in range (0.214 / 0.016), and the sky stays soft against it.",
+   "fix": "Keep crisp edges on the wreath only. Turn the surrounding ivy into soft, blurred leaf clusters, remove the wood grain lines, and make the door panels shallow with thin seams."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the slide has hard, doubled edges along the rails and ladder, and the foreground pool tiles add a full grid of lines that pushes background density to 0.065, above the real range. A: the stone contour is lighter and partly lost under the moss, with firm edges reserved for the cross and cracks. Its subject density 0.069 is slightly below the real range, so this is not a clean call.",
+   "fix": "Remove most of the tile lines, leaving a soft pale deck with a few faint seams. Smooth the slide's rail into one soft rounded form without double edges."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the crystal ball has a crisp thin rim and firm filigree stand, with soft swirls inside. B: the vending machine has a clean cabinet contour and a thicker dark line around the window, with speckle on the glass. All numbers are in range for both, and neither shows a boundary that separates it from the real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the floorboard gaps are thick, dark grooves that are as strong as the hero's own edges, and the bristles are many dense black strokes of equal weight. Attention goes to the floor and the bristles, while the handle stays comparatively quiet. A: the mower has smooth firm contours and soft highlight edges on the shell, and the grass tufts stay lighter than the hero (background 0.021 vs subject 0.162).",
+   "fix": "Make the floorboard gaps thin, faint and soft, fading toward the back. Merge the bristles into a few large soft tufts, with crisp edges only at the binding and tips."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the chair has heavier dark contour on the arms, crest rail and rockers (outline 0.041), the floorboards radiate in strong dark lines, and there are streaky reflection edges under it. A: the coffin's boundaries are thin and precise, with hairline grain on the lid. Its parallel floor lines are strong, though, and subject density 0.068 is below the real range, so the gap is small.",
+   "fix": "Remove the dark line along the arms and rockers and shape them with soft shading. Make the floor seams thinner and paler and drop the streaks in the floor reflection."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the jacket has an even dark contour all around, plus hard pocket flaps, stitching, ringed badges and sash lines. Subject density 0.159 is just above the real range, and weight changes little between focus and sleeves. A: the pumpkin's lower contour and ribs nearly disappear, and the carved face holds the firmest edges, which matches the real cards' edge hierarchy. Its densities (0.037 / 0.003) run just under the real range.",
+   "fix": "Let the sleeves and lower jacket fade softly into shading with no dark contour. Keep crisp edges only on the badges and sash, and drop the stitching and small seam lines."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: compared with the real coral in the reference sheet, its branches carry a dark, even contour and many dark-ringed pit marks, and its smooth forms are interrupted by these spots. Background density 0.022 is above the real range, and a stray vertical line runs along the right border. A: the towel is noisy all over from terry speckle, but that sits on one material, with a clean rolled rim and an in-range background (0.008).",
+   "fix": "Remove the pits from the coral and leave smooth rounded branches. Do not draw a dark line around them, and let the far branches soften into the green background. Keep the background clean to the card edge with no vertical line."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through even edge weight. A dark contour runs at nearly the same strength around the whole hero, often doubled along rims and rails, where real cards let lit sides and far forms go soft or lost and keep the firmest edges at the focus. They also over-detail: hard mesh, leaf, stitch and pit marks spread across the form instead of big quiet shapes. Backgrounds get the same treatment, with floor seams, tiles, foliage and brick drawn as strongly as the hero, so the edge hierarchy flattens."
+}

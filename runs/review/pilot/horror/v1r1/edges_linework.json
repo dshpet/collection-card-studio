@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: envelope and photo borders have firm contours, but the flap creases taper and fade out, and the small edges gather in the village as a focus. B: the bat wings carry one even, piped dark rim all the way round with no lost edge, while the body interior is nearly empty. Its outline_darkness of -0.098 sits just outside the real range. Weak call, because both cards have clean silhouettes.",
+   "fix": "Let the wing edge change along its length: firm at the top bone, then thin and melting into the purple toward the wing tips. Drop the even raised rim around the wing."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the rock slab is covered in scratchy, crackled fine edges and the cauldron belly has a mottled grainy patch. This surface noise competes with the rim, as the wood grain does on the generated computer cards; background density is at the real ceiling (0.021). B: the shoes are dense (0.227) but the edges are real construction lines (laces, panels), and the wall-floor line is clean.",
+   "fix": "Keep the stone slab as a few large smooth planes with two or three clean cracks. Make the iron belly smooth with no grainy speckle, and keep the crispest edge on the cauldron rim."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the topiary silhouette is jagged and every leaf has an equally hard edge, so subject density (0.29) exceeds the real range. There is no edge hierarchy, and the hedge behind breaks into speckle. B: the pumpkins have soft ribs and lighter interior lines, with stronger line reserved for vines and leaves, and density is in range (0.115).",
+   "fix": "Group the foliage into large soft clumps with only a few crisp leaves on the lit front. Smooth the outer silhouette and blur the hedge behind into a plain soft band."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the crack across the column shaft is a thick dark groove, the strongest line on the card, sitting on an otherwise soft form with mushy flute edges. Hierarchy is therefore off. B: thin precise sticker borders, a crisp case silhouette and even plank seams, matching the real suitcase card in the reference sheet.",
+   "fix": "Draw the crack as a hairline: thin, tapering at both ends, no darker than the flute shadows. Sharpen the scroll and top slab edges so they are the crispest on the card."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the stone face is stippled with fine speckle and the moss is scribbled, a texture noise no real lesson card shows, while subject density still falls below the real floor (0.07). B: background density is high (0.065) from the tile grid, but those are regular thin seams, and the slide surfaces are smooth with long clean edges. Conflicting signals, so low confidence.",
+   "fix": "Make the stone smooth with a few soft chips and one or two thin cracks, no speckle. Give the moss soft rounded clumps instead of scribbled edges."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: subject density (0.206) exceeds the real range, from many parallel hard bristle grooves all at the same weight. The dark floorboard seams and outlined repeating broom icons add further hard edges behind. A: thin handle and body contours, soft lost highlights on the hood, faint background rings and in-range density.",
+   "fix": "Merge the bristles into a few large tapered bunches with thin seams. Make the floor seams faint and the background icons low contrast with almost no edge."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: dark drawn contour on roofs, stone blocks and branches, scratchy shingle hatching, and a closed hard ring around the moon, which reads as inked outline. B: the highest densities (0.342, 0.107, both above real range) come from ivy leaves and wreath, while the door panels stay thin and soft. The numbers point to B and the contour character points to A, which I weight more because real cards have no outline.",
+   "fix": "Remove the dark contour lines from the walls and roof. Separate shingles and stones by soft light and shadow, with thin seams. Let the moon edge be clean colour against sky, with no ring."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: nearly no edges (0.037 and 0.003, both below real floor), with a faint outer contour and soft carved face rims, so no crisp focal edge. B: crisp jacket contour and badge rings, with density only just above the range (0.159) and thin seam lines. Weak, since real cards also run soft and the lessons warn against crispness.",
+   "fix": "Sharpen the carved rims of the eyes and mouth so they are the crispest edges on the card. Keep the outer pumpkin edge clean and narrow, with no glow bleed."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: hard black lines on the stand, dense streaky strands inside the sphere, and a hard table edge with grain lines, putting background density just over the real ceiling (0.023). B: thin precise panel gaps on the machine, a clean silhouette and an empty background (0.012), with detail concentrated in the window.",
+   "fix": "Give the stand thin bright edges with no black rim. Make the swirl a smooth soft haze with no streak lines. Keep the tabletop as one clean strip with no grain."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: wood-grain lines cover the coffin lid, a double dark line runs along its left edge, and the paving has scribbled cracks, the same busy-surface fault as generated tabletops. B: the chair has firm rails and rockers, but the seams are clean and the cushion and wall are quiet. A's subject density of 0.061 is low, so this is an eye call rather than a numeric one.",
+   "fix": "Make the lid a smooth plane with a single thin inset seam and only faint grain. Render the paving stones with plain thin gaps and no crack scribbles."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: heavy double dark lines run along the curved arm and lantern frame, with subject density (0.187) and outline_darkness (0.149) both above real range. A: thin even contours, soft flames and quiet background diamonds, in range on all fields. Part of B's strength comes from the dark metal itself, which limits confidence.",
+   "fix": "Thin the dark edges along the arm and lantern frame to a single narrow line, and let the shadow side of the arm melt softly into the background."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: thick black blobs along the waves, dark heavy spars and hard porthole rings, with background density of 0.049, far above real range. A: soft balloons with partly lost edges and quiet clouds. A's subject density of 0.028 is below the floor, but only because the forms are simple.",
+   "fix": "Draw the waves as a few thin soft crest lines, not dark blobs. Thin the spar edges and keep the sea quiet so the sails hold the crispest edges."
+  }
+ ],
+ "pattern": "Generated cards are still given away by surface edges that real cards do not have, and by weak edge hierarchy. Stone, wood, foliage and water get scratchy grain, speckle or crack scribbles at the same strength as the hero's structure. Contours run as one even dark line with no lost passages, and details such as cracks become thick grooves. Real cards keep large smooth planes, thin precise seams, and crisp edges saved for the focus while other edges melt away."
+}

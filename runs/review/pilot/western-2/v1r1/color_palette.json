@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: navy cap on cyan rings, with one gold accent at the band and tassel, so hero and background are separated by value and hue. B: orange-brown boot on orange-yellow rings, the same hue family as the background (warm_share 1.0). Its shadows only darken to red-brown, with no cool shift (shadow_chroma_kept 0.715, below the real range). Even the spur reads orange in the lens.",
+   "fix": "Make the boot a duller, dusty brown leather. Put it on a cool teal or blue background, let the shadows on the shaft and heel go cool mauve-brown, and keep the spur plain grey steel."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: magenta field at 0.2538 chroma, well above the real ceiling and as loud as the pure gold star, with nothing neutral to rest the eye. The silver star face merges into the gold mass in the lens. B: pink band on cyan is also loud (subject 0.1921, slightly over), but the background is calmer, at 0.1381, so hero and field are not competing equally.",
+   "fix": "Lower the purple background to a dusty, muted violet. Make the star's centre a cool grey steel clearly separate from the gold rim, and keep the gold slightly brownish in its shadows."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: tan jacket with green sash and orange cuffs, with hue roles tied to the green field and enough muted tan to rest the eye. B: cowboy hat is one orange-tan mass that splits into just two lens colors, flat brown and pale highlight. The shadow under the brim stays the same orange-brown, unlike the real glove's mauve shadow.",
+   "fix": "Make the hat a muted, greyish felt tan. Let the shadow under the brim and in the crown crease shift to cool mauve-brown, and use a duller band and buckle."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: blue ticket on orange-yellow stripes, a clean hero-versus-field complement with pale neutral paper, though the shadow chroma of 1.506 and warm_share of 0.729 sit just over range. B: orange wood signpost on cyan sky with one pink butterfly accent. The wood is rather pure orange, but the white clouds stay neutral. Neither card shows a clear generated color habit.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: lime-green cactus, orange pot and tan ledge on hot pink, so three loud hue masses compete. Subject chroma of 0.1678 is above the real range, and the green is pushed well past a believable cactus color. B: blue machine on violet is an analogous cool pairing, with small multi-color cans as the accents and grey-silver trim as neutral rest.",
+   "fix": "Make the cactus a dusty, slightly grey sage green. Use a muted terracotta pot and soften the pink background to a dusty rose, keeping only one strong color on the card."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: beach ball with blue, green, red and off-white panels on sand. The white panels give a large neutral mass, and blue and green stay separate in the lens. Its 5.43 hue families are in the real range. B: saddle, fence and swirled background are all orange-brown (warm_share 1.0, 1.99 hue families, below the real range). Saddle shadow, fence and field collapse into one hue, and even the steel stirrup turns orange in the lens.",
+   "fix": "Put the saddle on a cool blue-green background. Use a darker, duller brown leather, a grey weathered fence and neutral grey steel on the stirrup and buckle."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: rope and fence are both saturated yellow-orange on lime green, with almost no neutral (2.28 hue families, at the real floor). Rope and wood read as one orange family, and the shadow on the rail stays orange-brown. B: sneakers scatter pink, teal and lime accents (5.49 hue families, above range), but they sit on a large calm cream floor, and the shadow turns neutral grey, as real shadows do.",
+   "fix": "Make the rope a pale, dull straw color and the fence a grey-brown weathered wood. Mute the green background to a soft sage."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: stone fountain stays cool grey-green in the lens, a real neutral that contrasts with the yellow stripes, and cyan water is the single accent. B: canvas goes warm peach-cream in the lens, and the wood and ground share one orange family, so the neutral is warmed like the generated computer's cream case. Shadows on the ground stay orange-brown.",
+   "fix": "Make the canvas a cooler off-white with grey-blue shadows in its folds. Use duller grey-brown wood and a pale, dusty ground instead of orange dirt."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: blue-grey pot is believably muted, but everything around it is warm: coral rays, orange sand, orange logs and fire (warm_share 0.84, near the top of range). Logs, sand and flame fuse into one orange mass in the lens. B: magenta tray with blue ice on a tan table has more hues (5.96, just over range) and very pure pink, but its cool blue field and white frost give rest. This is a weak call because B is also loud.",
+   "fix": "Replace the coral background with a cool dusty blue or dull teal. Make the sand a pale, greyish beige and keep the flame as the only hot orange on the card."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: building walls, porch, trim, sand and distant mesas are all orange-red, with warm_share 0.74 above the real ceiling. Shadows under the porch only deepen to red-brown, and the cloud fragments turn sand-colored in the lens. Blue sky is the only relief. B: orange post and rope sit against big teal water, the life ring is a single red accent with pale bands, and the pier shadows and legs go a rich dark blue-teal.",
+   "fix": "Paint the walls in grey weathered timber with desaturated brown. Make the sand a pale, dusty beige and the clouds pure white, and let the porch shadows go cool blue-violet."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: red and black engine with gold trim is set against tan sand. The clouds fall into the same tan lens color as the sand, so the whites are warmed, and the darks carry little color (shadow_chroma_kept 0.353, far below range). B: red bus is one strong hero. Cool mauve-grey road and pale neutral clouds and buildings rest the eye, and its dark windows keep a blue-slate hue (0.556).",
+   "fix": "Make the clouds clean cool white. Let the black boiler carry a deep blue tint in its shadows, and dull the sand to a pale, greyish beige."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: cream wheel on clean blue, with small primary-color gondolas as accents and mauve-grey wheel shadows. It matches the real ferris wheel card in image 1. B: neon pink and violet jellyfish on deep indigo is very high in chroma (subject 0.1881, near the top of range), but hero and field are related and the glow suits the subject. The hue roles look deliberate on both.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards push neutrals and local materials toward one warm orange. Wood, leather, sand and even steel or clouds merge into the same family, whites go cream or tan, and hero, ground and sometimes background share a hue. Shadows stay in that hue and only darken, rather than cooling to mauve, grey or blue as on the real glove and monitor. Caveat: all my A/B picks except p04 and p12 landed on Western-themed subjects, which likely influenced p03, p07 and p09. Treat those as weak color calls; their confidence is low for that reason."
+}

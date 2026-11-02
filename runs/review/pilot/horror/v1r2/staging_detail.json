@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A packs fence rails, two rolling hills and a sprinkle of bright grass tufts, with the largest tufts along the bottom edge, around the hero. B has a hedge band, a curved path and smaller lawn tufts, which read as a few long, quiet shapes. Both measure in range, so the lean is slight.",
+   "fix": "Keep the lawn as one smooth green shape with only a few tufts near the hero. Remove the big foreground tufts and simplify the fence to a soft, low-contrast band."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A is a beach of sand, sea and sky in large calm bands with a few ripples and one small shell. B is a park with several trees, conifers and a winding brick path, which is busier but in range and similar to the real park card. A measures slightly below range on detail, but nothing in the staging separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A's yellow field has evenly spaced, perfectly centred rings with fairly strong band contrast and a bright glow directly behind the bat. B's green rings are offset and irregular, darker at the corners and stay tone-on-tone behind the envelope. A also sits just below the real detail range.",
+   "fix": "Make the rings fainter, wider and slightly off-centre, nearly the same yellow as the base, with no bright glow behind the bat."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B's cauldron stands on a plain ledge with a front face, but the ledge is a dull grey-mauve unrelated to the magenta wall, while the real ledge cards keep wall and ledge in the same hue. A's sneakers sit on a plain cream floor with an orange wall and no front lip, which is also two colours but simple. B measures just below range on detail.",
+   "fix": "Paint the ledge in a lighter tint of the magenta wall so wall and ledge read as one colour family."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A is a lamp on wide, soft tone-on-tone teal rays, with the post running off the bottom. B is a candelabra floating on a quiet tone-on-tone diamond pattern. Both are clean category 1 fields with no props, and both are in range.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "In A, dense ivy of dozens of crisp little leaves hangs across the top and down both sides of the door, and leaf shadows fall on the door around a small wreath. The surroundings compete with the hero and exceed the real range on both measures. B's house sits on a simple hill under open sky with a few clouds and two rocks.",
+   "fix": "Remove most of the ivy. Show a plain door and frame with at most one soft, large leafy mass in a corner, and no leaf shadows on the door."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B stacks a strong pink and peach wave backdrop on a gridded tile deck, blue edge tiles and rippling pool water, which adds many hard lines and exceeds the real edge range. A has a pale wave backdrop and a simple grass mound with a few ferns and pebbles, in range.",
+   "fix": "Make the wall pattern nearly one pink tone. Replace the tile grid with a plain pale deck and show only a calm strip of flat blue water."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A's crystal ball stands on a same-hue orange ledge, matching the real ledge cards. B's vending machine stands on a seamless purple floor with no horizon. Both are plain, have no props and measure nearly the same.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A has a graphic ring backdrop with a real grass strip full of tufts, leaf clumps and tiny daisies cut off at the edges, so small invented decoration surrounds the wheels. B is a broom on plain planks with quiet diagonal stripes, the same clean setup as the real plank cards. Both are in range.",
+   "fix": "Make the ground a smooth green strip with a few soft tufts and remove the daisies and the large leaf clumps in the corner."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A's floor boards run as straight horizontal dark lines that do not recede, so the three-quarter coffin sits on a flat strip. B's boards converge toward the wall like the real plank cards, with soft reflections under the rockers. Both have the same stripe-wall setup and equal measures, so this is a weak cue.",
+   "fix": "Draw the floor boards running back toward the wall in perspective, with softer, thinner seams."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B's ray field is many narrow rays with dark, muddy corners and a bright core behind the jacket, which leans toward the fine-ray look of the generated glove lessons. A's purple rays are broader and softer, though A measures below range and looks slightly too blurred. No props on either.",
+   "fix": "Use fewer, wider rays in close tones of green and keep the corners from going dark."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B has high-contrast wave bands, a bright lime halo around the coral and a thin vertical sliver along the right edge, and it exceeds the real edge range. The real coral card has softer bands and no sliver. A's towel floats on a soft tone-on-tone checker, quiet and in range.",
+   "fix": "Make the waves only a shade different from the base green, remove the glow behind the coral and keep the background clean to the card edge."
+  }
+ ],
+ "pattern": "Generated cards still show up in the setting. Common signs are bright halos directly behind the hero, stronger or mechanically regular backdrop bands and narrow rays. Small scattered ground detail such as tufts, daisies, ivy and tile grids also adds busyness. Ledges and floors drift from the wall's hue or lose perspective. Real cards keep a few large quiet tone-on-tone shapes, same-hue ledges and receding planks. Most of these cues are weak: only p06, p07 and p12 reach confidence 3, and three pairs gave no reason to choose."
+}

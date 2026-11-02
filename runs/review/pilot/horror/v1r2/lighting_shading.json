@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the big pumpkin turns from light to shadow in a slow, even gradient with only a dim shadow side at lower right; the ribs are soft and carry no real highlight, and the lens reads as even clay. shading_range 0.847 is above the real band. Its blue-green cast shadow at right is a blurry pool. B: the topiary tiers have a bright upper-left light side falling to a deep dark underside on every tier, and a clear directional cast shadow runs right on the grass. All B fields are in band.",
+   "fix": "Light the pumpkins from the upper left with one clear light side and a darker core shadow on the lower right of each pumpkin, a small soft sheen on the top of each rib, and a tighter, darker contact shadow where they touch the grass."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the cooler has a lit top rim and lid interior, a side plane that drops clearly, and a soft cast shadow sliding left across the sand, with form_contrast 0.514 in band. B: the lion and plinth are nearly evenly lit pale marble, with shallow shadow in the mane and little drop on the plinth's side faces; form_contrast 0.331 is below the real band, and the lens looks close to the delivered color.",
+   "fix": "Give the lion a darker shadow side on the far flank and under the mane, make the plinth's side faces clearly darker than its top, and add a dark contact shadow where the steps meet the grass."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the bat body is a soft ball with almost no direction to the light, and the wings are shaded symmetrically left and right with a thin dark edge all round. form_contrast 0.269 and light_bias_strength 0.067 are both below the real band. No side reads as lit. B: the envelope and photos have soft but readable folds, a lighter upper flap and a shaded edge, and form_contrast 0.429 is in band.",
+   "fix": "Light the bat from the upper left: brighter top of head and left wing, the body falling into a clear shadow at lower right, the right wing darker than the left, with a small soft sheen on the head."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the shoes have crisp planes, a tight dark contact line and a firm long cast shadow to the left, so the light direction is easy to read, though light_bias_strength 0.019 is oddly low and range 0.82 slightly high. B: the cauldron belly is an airbrushed dark gradient with a broad vague sheen and a teal patch of bounce, with no defined highlight, and the green liquid does not light the rim. light_bias_strength 0.761 is above the band.",
+   "fix": "Add one small, soft highlight high on the left of the cauldron's shoulder, make the core shadow a clear band on the right of the belly, and let the green liquid throw a faint glow on the inside of the rim."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the lamp dome has a clear lit top and a darker lower side with a narrow bright reflection along the arm, but form_contrast 0.68 is above the band, partly from dark metal against a pale ground. B: the flames glow yet the wax and gold arms barely pick up warm light from them; the gold is broad and even, and the base underside is a flat black band. Fields are in band, so this rests on my eye only.",
+   "fix": "Let each flame spill warm light on the top of its candle and on the nearest cup, and fade that glow downward; give the gold arms a darker underside with a thin warm reflected edge."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: leaves throw hard dappled cast shadows across the blue door, and panels have a lit edge and a dark inset, all from a single upper-left source. B: the house walls are close to the same mid-dark on both sides with no clear key side; the windows are saturated self-lit yellow with little spill on the surrounding stone, and form_contrast 0.607 is just above the band.",
+   "fix": "Pick one side of the house as the sunlit side and make the walls there clearly brighter, cast roof shadows down the walls, and let each window throw a soft warm glow onto its stone frame."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the gravestone front is an even matte grey with a soft dark side at right, shallow chiseled edges, and a blurry oval cast shadow; form_contrast 0.393 is just below the band. B: the slide has sharp shifts from white lit trough to deep navy outer wall, and the posts throw clear shadows on the deck, though light_bias_strength 0.149 is low.",
+   "fix": "Brighten the top-left face of the stone, deepen the right side into a firm core shadow, cut crisp dark shadow into the cross on one side and a lit edge on the other, and give the cast shadow a darker edge at the base."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the crystal ball reads as a nearly blank sphere in the lens, with one small streak highlight at upper right and a soft flat stand; shading_range 0.537 and form_contrast 0.372 are both below the band. Transparent glass may understate this in the lens. The shadow under the stand is faint. B: the vending machine has a bright top and front edge, a dark left side, a soft floor glow and a contact shadow, with all fields in band.",
+   "fix": "Give the ball a bright curved window highlight at upper left, a darker lower rim with a thin warm bounce edge, sharper bright and dark sides on the metal stand, and a firmer shadow under its feet."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the mower has sharp highlights on the red hood, cool shadow under the body, warm bounce on the wheel faces, and strong range at 0.875. B: the broom bristles are a single soft brown mass with a shallow turn and only an even dark cast shadow to the right; form_contrast 0.391 is below the band and light_bias_strength 1.561 is far above it, likely driven by the dark wall against the lit floor.",
+   "fix": "Make the upper-left bristles catch bright light and drop the lower right into dark shadow, add dark gaps between bristle clumps, a small sheen along the handle, and a tight dark contact line at the floor."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the coffin lid is a broad soft gradient and the lens stays warm all over like the base color; the side is simply darker, and the edge sheen is a uniform line. form_contrast 0.352 is below the band. B: the chair has crisp light and shadow on rails and rockers, a dark underside to the seat, and floor shadows and reflections under the rockers, with all fields in band.",
+   "fix": "Make the lid's near corner bright and fall off toward the far end, darken the long side into a clean plane with a lighter bevel on top, and add a dark contact shadow along the base with a soft shadow across the floor."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the pumpkin is very smoothly modeled with a broad soft turn, no crisp highlight, and flat yellow glow in the carved shapes that does not fall off on the carved walls; shading_range 0.855 is above the band. B: the jacket has dark folds, a soft shadow side and small highlights on the badges, with all fields in band, though the lens is tinted by the green ground. The call is close.",
+   "fix": "Add small soft highlights on the ribs at upper left, and make the glow brightest deep inside the carved face and fade it across the carved edges into dark orange."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the towel is flat with soft blurry fold shadows and no contact shadow; shading_range 0.494 sits just below the band, but a flat cloth naturally has little form, and floating real cards also skip the cast shadow. B: the coral has a glossy sheen on the tips and a warm glow behind it, with all fields in band. Neither card shows a clear lighting fault.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards still model form with a broad, slow, even gradient, while real cards have one committed light side, a firm core shadow and a clearly darker shadow side. Common giveaways are low form_contrast with no clear light direction (bat, lion, gravestone, coffin), soft vague sheen in place of a placed highlight, self-lit glows that do not spill onto nearby surfaces (candles, windows, carved pumpkin), and blurry cast shadows without a tight contact line. Caveat: many pairs split horror subject versus everyday subject, so close calls may carry that bias. Transparent glass and strong background color also distort the lens readings."
+}

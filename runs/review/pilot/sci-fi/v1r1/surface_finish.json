@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the popcorn kernels have soft, lumpy, matte faces, the glass has one quiet streak, and the red cart body is satin, so the card holds several finishes. B: the gold visor and its rim are one continuous lacquer with a broad, streaky airbrushed sheen, the white shell is smooth as enamel with no seam or panel texture, and the floor plates have neat brushed-metal sheen and even rivets.",
+   "fix": "Make the helmet shell matte white with fine seam lines; keep the shine only on the visor as one small soft highlight; leave the gold rim dull and the floor plates plain, with fewer rivets."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: small crisp leaves in repeated clusters across the topiary, more stamped than the real cards and above the real range on micro_texture and gloss_share, so the numbers point at A. B: the planet bands are ribbons of identical candy lacquer with razor-clean edges, a hot highlight at top left and no surface variation, micro_texture at the floor of the real range. I call B on the single-finish reading, against the numbers, so this is a weak call.",
+   "fix": "Make the planet surface matte with soft, slightly feathered band edges, a faint fine mottling in the bands, and only one small soft highlight; give the ring a dull, dusty finish unlike the planet."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the yellow player reads as soft matte rubber and the earbuds as satin plastic, two distinct finishes at a quiet scale, like the real cards. B: the saucer hull is airbrushed chrome with smooth smeared bands and no panel seams or rivets, the dome is glossy jelly, and the amber lights look like glowing candy.",
+   "fix": "Give the saucer brushed grey metal with thin panel seams and a matte underside; make the dome clear thin glass with one small highlight; lights small and flat."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the yellow hull is glossy but broken up by copper rims and small rivets of a different finish. B: the white rocket body is porcelain-like with a long milky sheen and highlight_share above the real range (0.21), the red fins carry the same wet shine, and the grey collar rivets are chunky toy beads.",
+   "fix": "Paint the rocket body as satin painted metal with thin seam lines and little sheen; keep the fins matte red; make the rivets tiny and flush with the surface."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the telescope has a soft matte white tube, satin brass and quiet smooth wood legs. B: the ship wheel has soft fine grain on the rim, satin wood and a brass hub. Both mix finishes and keep marks quiet; surface gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the robot's body, shoulders, joints and feet all share one smooth vinyl finish with crisp, clean seam lines; the grey casing and blue plastic differ only in color, and the screws are neat tiny dots. B: the vending machine separates matte blue paint, frosted glass with droplets, and satin cans, and its edges stay soft like the real crops.",
+   "fix": "Give the robot two clear finishes: dull brushed grey metal on the torso and head, satin rubber on the joints. Only the face screen shines, and seams are soft and fine."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the lion has satin marble with thin grey veins at a fine, quiet scale. B: the envelope is matte paper with soft folds against a crisper painted photo and stamp. Both show believable materials and in-range numbers, so surface gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the spyglass has satin brass rings and a quiet barrel, with only a faint wavy ripple on the brown band, though that ripple is an artifact against it. B: the ray gun's chrome has fine, crisp, CG-looking streaks, the red body is a wet car-paint lacquer, the green grip and vents are glossy too, and edges are sharper than real crops, so nearly everything shines.",
+   "fix": "Make the red body satin painted metal with a soft broad sheen, the grip matte rubber, and the chrome cones dull and softly blurred, without fine streaks."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the console has crisp molded keys, buttons and sliders, each with the same glassy cap and white highlight, tiny hard fader ticks, and detail, micro_texture and gloss_share all above the real range. B: the watermelon flesh is fine-grained, the orange pulp is visible, and the droplets and glass plate contrast with the matte wood, so several finishes coexist.",
+   "fix": "Make the console body matte grey with soft edges; turn most buttons into dull satin plastic with only faint highlights; reduce the small tick marks and let them soften."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the flowers are soft inflated satin petals and the stones are chalky with a slight sheen. B: the wheel spokes are soft, matte, cream-painted beams with blurred edges and clear gondola tops. Neither has a surface tell the lessons point to.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the gate has painterly matte brick with soft mortar lines and chocolate-brown ironwork; it is rather plastic, and its gloss_share is high, but its surfaces stay varied. B: the station hull carries dense crisp panel lines and small inset slots, above the real range on detail and micro_texture, with gold bands and blue glass all in one shiny lacquer finish, so it is over-detailed like the lesson cards.",
+   "fix": "Remove most hull panel lines and small slots; make the hull matte off-white, the gold bands dull and thin, the solar panels flat and non-reflective."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the boat has quiet wood grain lines, matte planks and twisted rope with a fine strand pattern, which reads as wood and rope. B: the pod's silver shell, blue ring, gold hinges and handle are all smooth lacquer with airbrushed gradients, the brushed-gold dial is crisp against the blur, and the glowing dots and glass add more shine.",
+   "fix": "Make the pod shell matte brushed grey with fine seams, the blue ring flat painted metal, and the handle and dial dull brass; keep shine only as one soft reflection on the glass door."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through crisp, over-resolved surface detail and a single lacquered finish. Metal, plastic, paint and glass are told apart by color instead of by gloss. Common tells are airbrushed chrome with smooth bands or fine CG streaks, porcelain or wet-candy shells with long sheens, and neat bead rivets with hard panel lines, all sharper than the soft edges and restrained highlights of real crops. Real cards keep large matte or satin areas, soft small marks, and shine limited to one or two places. Caveat: subject matter (sci-fi objects versus everyday ones) may have influenced my low-confidence calls, especially p02, where I went against the numbers."
+}

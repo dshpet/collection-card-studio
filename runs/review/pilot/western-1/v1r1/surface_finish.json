@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the umbrella panels are soft, smooth and rubbery with no seams or weave, like the real cards' quiet surfaces, though its gloss_share of 0.001 is below the real range. B: the star's yellow face and the silver ring carry a fine sharpened speckle, and the ring's edge looks crisper than the soft real crops. The gold reads as flat yellow plastic rather than metal like the real trophy. The evidence is thin.",
+   "fix": "Paint the star as smooth polished gold with one soft warm highlight along each arm. Keep the silver ring clean and softly blended, with no speckle or grain and no sharpened edges."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the boot shaft has crisp dashed stitching along the collar and swirls, plus a fine fibrous grain across the leather. This is the printed-looking stitching of the generated gloves in the lessons, and detail_subject 0.058 and micro_texture 0.023 are both over the real range. B: the cap is smooth with soft bevels, and the tassel cord is simple, which matches the real restraint.",
+   "fix": "Remove the dashed stitching and the leather grain. Draw the swirls as a few soft raised pale shapes on smooth, softly shaded brown leather, with one broad gentle highlight."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the jacket cloth reads as soft clay, with no weave, and the shirt, sash and collar share one even sheen. Only the badges differ in finish. Detail and micro_texture sit at the top edge of the real range. B: the hat crown reads as matte felt with a soft highlight, and the leather band is visibly a different material, so it has a truer gloss range. It does carry a slight fine speckle.",
+   "fix": "Make the jacket a dry matte cotton with soft fold shading, the sash a slightly darker matte cloth, and the badges the only shiny parts."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the sign planks have large decorative grain lines and a whorl on the top board, in a smeared, oil-paint orange, with chunky splits at the plank ends. Real wood, such as the desk in the lessons, has fine, quiet grain. A: the booth is smooth red paint with soft edges and a matte-grey phone, closer to the real cards, though the glazing bars are slightly smeary.",
+   "fix": "Paint the wood with very fine, quiet, straight grain in soft brown tones. Remove the whorls and deep carved lines, and use small plain bolts."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the tennis ball has a crisp pitted surface, the strings are sharp thin white lines with hard ends, and the grip has hard edges. These are the print-like micro details seen on generated lesson cards. A: the cactus is a soft, blended green with broad rounded ribs and no fine marks. It reads as rubber, but the softness matches the real crops.",
+   "fix": "Paint the ball with a soft smooth felt surface and no pitting or dimples. Draw the strings as soft, slightly thicker lines blended into the frame."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the suitcase body has smeared brown scuff patches and specks, the stickers have hard white die-cut edges and their own sheen, and the paint has a mottled, noisy look. Detail 0.050 and micro_texture 0.022 are at or above the real ceiling, and gloss 0.139 is above it. B: the barrel staves have thin, restrained grain and the bands read as dull metal, with a clear matte and metal split.",
+   "fix": "Paint the suitcase as smooth matte leather with clean soft shading. Remove the scuffs and rust patches, and make the stickers soft flat shapes without crisp bright borders."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the teapot has photographic enamel with hundreds of tiny white specks, chipped rust at the rims, a dented wall and a rough rock base. This material detail is far more literal than anything on the real sheet. B: the sneakers are also busy, with a crisp mesh dot pattern and gloss at the top of the range (0.267), but they stay in the toy-like smooth surface language of the cards.",
+   "fix": "Paint the pot as clean smooth blue enamel with a few soft pale dots and one soft highlight. Remove the rust chips and the dent, and simplify the rock into smooth soft shapes."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the poster has photographic paper with fine fibres, crease lines and torn edges, set on weathered grey boards with real-looking grain and knots. Detail 0.0645 and micro_texture 0.0296 are well over the real ceiling. A: the locker is smooth, softly blended orange with rounded vents. It is uniformly glossy, but its surface language and numbers are within the real range.",
+   "fix": "Paint the paper as a smooth, soft cream sheet with two or three broad gentle folds. Remove the fibres and fine creases, and paint the boards as smooth planks with very faint grain."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: every saloon wall, rail and trim has dense plank lines and fine grain, and small items such as bottles and lamp add more. All of it is rendered in a sharp painted finish, and detail 0.073, micro_texture 0.032 and gloss 0.284 are all over the real range. B: the pier wood has marks too, but they are larger and fewer, and the rope, painted ring and water read as separate surfaces, with numbers in range.",
+   "fix": "Paint fewer, wider planks with almost no grain, drawn as smooth soft shaded wood. Drop the small interior details and keep the trim as plain soft shapes."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the boat and dock are one saturated, lacquered orange, with plank lines drawn uniformly and little change in finish between hull, seat and rim. A: the wagon separates matte canvas with a faint weave, dull iron bolts and painted red wheels, so its gloss range is truer. The numbers are almost equal and both are in range, so this is a weak call.",
+   "fix": "Paint the boat's wood in softer, less saturated brown with a matte finish, leaving a gentle sheen only on the rim. Keep the planks plain with faint fine grain."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "B: the door has heavy vertical grain and smeared paint mottling under the wreath, the flowers and leaves are crowded and clay-like, and the shading is noisy across the blue. Detail 0.088, micro_texture 0.045 and gloss 0.51 are far beyond the real range. A: the windmill has clean matte metal blades, a dull ribbed tank and quiet wood grain, all in range.",
+   "fix": "Paint the door as smooth, flat satin blue with soft panel bevels and no grain or mottling. Make the wreath from fewer, larger soft leaves and flowers with one gentle highlight each."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the fins have sharpened edges with bright rims, a faint dotted noise in the grey blade panels, and a hard, over-defined pocket rim. A: the bumper car is softly blended, with broad highlights on the green shell and matte black rubber, which matches the soft real crops, though the green is uniformly lacquered.",
+   "fix": "Blend the fins softly with no sharpened rims and no dot pattern. Paint the blade panels as smooth matte dark rubber and the yellow as gently glossy plastic with a broad soft highlight."
+  }
+ ],
+ "pattern": "Generated cards are given away by too much surface. They have crisp printed micro detail such as dashed stitching, pitted felt, mesh dots, dense plank lines and paper fibres. They also add decorative or literal wear such as scuffs, chips and whorled grain, and sharpened edges or fine speckle that the soft real cards lack. A second tell is one lacquered sheen and saturation across several materials. Real cards stay quiet and softly blended, separating materials with broad matte and gloss differences rather than fine marks."
+}

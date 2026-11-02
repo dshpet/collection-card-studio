@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the cap board has a thin, firm rim, but the crown and gold band go soft and partly lost at the bottom, so edges vary. Its outline_darkness of -0.096 is only just outside the real range. B: the boot has a closed, even contour from toe to pull straps, a double line at the collar and crinkled edge texture on the foot, which matches the sealed silhouettes on the lesson generated cards.",
+   "fix": "Let the boot's outer edge fade on the lit side so it nearly merges with the background. Keep only a crisp edge under the sole and at the spur. Keep the foot leather smooth, with no fine creases."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the gold balls on the star tips are nearly lost in the edge map, and only the rim and centre disc are firm, which gives a real-like hierarchy. B: the band's outer edge is soft, but every note and speaker icon has a hard, dark double contour of the same weight, even at the far end of the band. Measured values are in range for both, so this rests on the eye alone.",
+   "fix": "Model the music icons as soft raised bumps with no dark ring around them. Make the icons sharpest at the front of the band and softer as the band turns away."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the jacket reaches 0.159 subject density, just over the real maximum. Every pocket, flap, cuff, badge and sash edge has the same firm dark line, and the background rays are dense, so nothing leads. B: the hat is sparse at 0.062, with one crisp brim edge and a star buckle as the focus. The crown stays soft.",
+   "fix": "Cut the jacket's seams and pocket lines to a few thin ones. Merge the sleeves and lower hem softly into the form, and keep the sharpest edges only on the badges and sash."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the ticket has outline_darkness of 0.164, above the real maximum of 0.122. A continuous thin line runs round the outside and round each inner panel at one weight, like a flat drawn sticker with no soft edges. B: the signpost has strong contours on the arrows, but the post top and clouds soften and its value of 0.0 is mid-range.",
+   "fix": "Remove the line around the ticket. Give it a real thickness with a soft rounded bevel, so the edge comes from light and shadow, and keep inner panels as shallow recesses with soft sides."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the cactus is marginally under the real range at 0.084 subject and 0.006 background, with a firm contour and dark spine clusters. B: the vending machine is in range, but has a thick double groove round the window and speckles on the glass. The small measured miss on A and the groove on B cancel out.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the ball is far below the real range at 0.029 subject and 0.003 background. Only panel seams and the central disc read, and the outer edge nearly vanishes at top right, with scattered sand dots as the only other marks. B: the saddle is in range, with crisp stitching, buckle and fence edges. Its seat shows swirl marks in the edge map, but the density is real-like. Low density is not the direction the lessons run, hence low confidence.",
+   "fix": "Give the ball a clear crisp silhouette against the sand, with thin precise panel seams and a sharp ring round the centre disc."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the rope has dense strand lines, but they are even in rhythm and fade away from the coil, and its -0.054 is in range. B: the sneakers have outline_darkness of -0.1, outside the real range. Heavy dark contours wrap the soles and uppers, the mesh is finely etched, and a hard ruler-straight horizon line cuts behind them.",
+   "fix": "Soften the sole's outer contour into smooth rounded shading and drop the fine mesh to a hint. Blend the wall into the floor with a soft transition, not a hard line."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the fountain has soft water edges and a calm basin, but dark broken paving lines, with background density at the real upper limit of 0.046. B: the wagon has a soft canvas, crisp wheels and a firm canopy opening, with fine hatching in the ground. All values are in range and neither card shows a clear lean.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the pot's body is peppered with small chip and scratch edges, and the firm contour wraps the handle, logs and rocks at one weight. B: the tray has clean rims with speckled frost only in bands. The dark plank gaps are thick, but they stay in the background and its density is lower. Measured values are effectively in range for both.",
+   "fix": "Clean the pot's body to smooth enamel with only two or three small chips near the rim. Keep the crispest edges at the lid and spout, and soften the logs and sand."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the saloon has high density at 0.205, and outline_darkness of -0.068 falls outside the real range. Every plank, roof rib, window bar and rail is drawn with the same even line, so the facade has no focus. B: the dock has its strongest edges on rope and lifebuoy, while water ripples and shore stay light, and its values are in range.",
+   "fix": "Use fewer, wider boards with thin seams, and let plank lines fade towards the sides and top. Keep the sharpest edges at the swing doors and porch, and soften the far wall."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the locomotive exceeds the real range on two fields, at 0.281 subject density and -0.086 outline_darkness. Wheels, rivets, pipes, cowcatcher slats and cab trim all carry equally firm lines, and the distant buttes are also busy. B: the bus has 0.173 density and an in-range outline. Large panels are quiet, with detail gathered at the windscreen and lamps.",
+   "fix": "Simplify to fewer spokes, fewer rivets and wider cowcatcher slats. Keep large smooth boiler surfaces, keep crisp edges only at the front lamp and funnel rim, and soften the far buttes."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the wheel is slightly over the real range at 0.164, but it has thin precise lines on the front spokes while the rear wheel and cabins blur, a clear edge hierarchy like the real wheel card. B: background density of 0.033 is well above the real 0.017. The jellyfish has a glowing halo rim, double-walled contours along every tentacle, and a hard bright line along the card's top edge.",
+   "fix": "Remove the glow around the bell and tentacles, so the edge is a clean soft change of colour with no double rim. Fade the light rays to a smooth gradient and keep the top of the card clean."
+  }
+ ],
+ "pattern": "Generated cards are given away by uniform edge weight. A closed, firm contour runs round the whole silhouette, and every internal seam, plank, rivet and stitch gets the same strength, so nothing leads and edges are not sharpest at the focus. Real cards let the lit side and secondary forms soften or get lost, keep seams thin and sparse, and put their sharpest edges at one focal area. Secondary tells are fine surface scratches and hatching, hard double contours round small icons, and glow halos behind the subject."
+}

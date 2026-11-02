@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the shirt is soft matte cloth, but the sash badges are crisp, hard enamel-like coins with sharp rims and chunky icons. They sit much harder than the cloth, and detail and micro-texture are at the very top of the real range (0.0459, 0.0212). B: the hat is an even, quiet matte felt with a soft-sheen band and a modest buckle, like the restrained real surfaces. Weak call: A's shirt cloth itself is fine.",
+   "fix": "Make the badges soft embroidered cloth patches with small, quiet stitching, the same low sheen as the sash, and no hard glossy rims."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the speakers and stage in the photo are smeared and blotchy, the white frame has speckled noise, and the signature has a scratchy dry-brush edge. Detail (0.061), micro-texture (0.0276) and highlight share (0.409) are all above the real range. A: the pillow is one fabric throughout, with soft gathers and a very fine weave. Its low numbers come from the plain subject.",
+   "fix": "Draw the photo print as a clean smooth surface with crisp simple shapes, a plain smooth white paper border with no speckle, and a smooth ink signature."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the gold rim, centre coin and star read as one flat yellow plastic with crisp even edges. Only the silver panel has a metal sheen, unlike the telescope's graded brass in the real set. A: the band is believable matte silicone with soft edges and raised rubbery icons. Both are in range, so this is a small visual lean only.",
+   "fix": "Paint the gold parts as real polished brass: darker amber in the shadows, a narrow bright highlight on the rim, softly rounded edges."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the post top and planks have big carved splits and dark knot rings, so the wood marks are large and decorative, and the rope twists are heavy and chunky. B: the saloon boards, roof ribs and window frames have thin, quiet plank lines at a fine scale, closer to the real cards' wood. Gloss range does not separate them.",
+   "fix": "Make the wood grain thin and quiet with shallow lines, no deep carved cracks or knot rings, and use a finer rope twist."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: all the saddle leather is wet-looking, with bright soft highlights on the seat, pommel and skirt, and no stitches or grain, so it reads as lacquered plastic. B: the ball is soft and blurry with a bloomed highlight on one panel, closer to the soft real rendering. However, its detail, micro-texture and gloss are below the real range (0.0103, 0.0044, 0.005) because vinyl panels are plain. Conflicting evidence, weak call.",
+   "fix": "Make the saddle satin leather with broad low-sheen highlights, a fine row of small stitches along the edges, and a faint leather grain."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the frost on the tray is scattered white noisy speckle, like sprayed grain. The ice is filled with random bubbles and dots and has a jelly gloss, and the pink tray is lacquered like the ice. B: the enamel pot has calm vertical highlights and small rivets, with a separate matte log bark and fine wood marks. Its surfaces stay controlled, as on real cards.",
+   "fix": "Replace the speckled frost with a thin, smooth pale frost edge, keep the ice clear with only a few bubbles, and make the tray matte silicone."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the upper, sole and laces share one candy plastic sheen, and the laces read as rubber tubes. The mesh is a chunky dot pattern and edges are soft and blotchy, with no fabric or foam difference. A: the rope has a fine regular twist that reads as dry fibre, with quiet grain on the plank. Its gloss share of 0.42 is above the real range and is the one point against A.",
+   "fix": "Make the shoe upper a matte woven mesh with tiny holes, flat cloth laces, and a matte foam sole, with shine only on small rubber accents."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the cans and bottles behind the glass are smeared, the labels are wobbly blobs, and the droplets are noisy specks across a hazy pane. Blue metal and glass blur together with AI softness. A: the cactus is clean and toy-like with chunky gold star spines, but the skin is one consistent satin and the pot is matte terracotta. Its surfaces are coherent, though the spines are oversized.",
+   "fix": "Draw the items behind glass with clean simple label shapes, clear glass with one soft diagonal reflection, few or no droplets, and a smooth painted metal body."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the boot has satin leather with broad soft sheen, restrained inlay and a small metal spur. B: the cap has a quiet matte board with a slightly lighter edge and a satin cord and tassel. Both have controlled gloss, quiet surfaces and in-range numbers, so my vector gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: visible painterly brush marks on the scroll and rope, dabbed texture in the sand and background, and hand-painted highlights on the glass. Real cards are smooth rendered surfaces without visible strokes. B: clean smooth map surfaces, a glossy red X and soft white page edges, with no marks or noise. The paper is a little plastic, but it matches the real finish.",
+   "fix": "Remove visible brush strokes. Render the sand, scroll and rope as smooth soft shaded surfaces with fine quiet texture, and keep the glass clean."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: crisp, densely packed trim with a granular black boiler, sharp gold rivets, bands and rails everywhere. Detail (0.0762), micro-texture (0.0334) and gloss (0.283) all exceed the real range. A: the bus has soft smooth red paint with few, quiet details and in-range numbers. This matches the softer real finish in the lessons, despite the speckled road.",
+   "fix": "Reduce the small rivets and trim, make the black boiler smooth satin paint with no grain, and soften the edges and gold highlights."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the wagon has soft matte canvas, satin wood with fine plank lines, and small rivets, giving a good material mix. Gloss is only slightly above range (0.131), and highlight is in range. B: the fountain has smooth matte stone with translucent water. Its numbers are in range and it is soft. Neither has a surface tell on this vector.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards are still given away by surfaces that are too busy and too hard. Examples are excess crisp small trim and rivets, oversized decorative marks (carved wood splits, chunky mesh dots, heavy rope), and one lacquered sheen shared across different materials. AI residue also shows as speckled noise, smeared small content and visible brush strokes. Real cards stay softer and quieter, with few fine details and a clear matte-versus-shiny split."
+}

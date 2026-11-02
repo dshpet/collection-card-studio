@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the sky runs from hot magenta at top right into pure cyan, and the solar panels and the band on the hull are the same pure blue. Background chroma is 0.182, above the real range, and it is louder than the station. Shadow chroma actually rises under the hull (1.31). B: the gate has believable local colors, with brick red-orange, dusty rust iron and peach paving. Its shadows drop to deep brown and its background sits in range.",
+   "fix": "Replace the magenta-to-cyan sky with one calm, slightly muted deep blue. Keep the hull a quiet warm grey-white, and make the shadows under it a dark desaturated blue-grey. Use gold only as a small accent."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the body is pure candy red, with lime grips, fin and orb on a teal field. Almost nothing sits between pure hue and silver, and the gun's shadows stay bright red instead of deepening. A: the spyglass uses related browns, with dark maroon leather, orange-brown sections and brass. It has real local-color variety and deep shadows, though the cyan field is loud. Its shadow chroma of 0.67 is slightly low, which fits muted dark leather.",
+   "fix": "Make the body a deeper, slightly dusty enamel red that falls to dark wine in the shadows. Change the lime parts to a muted olive-green. Dull the teal background so the gun is the loudest thing on the card."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the console and floor are one flat cool grey, with subject chroma at 0.052, below the real range. Pure red, green and blue buttons are dotted on top against a flat orange wall. The color comes from small primary spots rather than from the object's mass. B: the fruit has rich local reds, oranges and greens with brown-toned shadows, on a warm wood table that recedes in chroma.",
+   "fix": "Give the console body a real color, such as a deep slate blue or warm painted metal. Reduce the buttons to one or two related colors. Replace the neutral grey floor with a tinted surface that relates to the wall."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the whole card is pale cyan and buttery yellow. Hull, room and floor all share the same milky tint, the hull's grey picks up cyan and cream, and background chroma of 0.087 is at the bottom of the range. Hero and background don't separate by hue. B: the boat and dock are full orange-brown and wine red on cyan water, with a clear warm-versus-cool split and dark red-brown shadows. A green lily pad gives one small accent.",
+   "fix": "Clear the milky haze. Make the room a deeper, darker teal-blue, and keep the pod a clean neutral silver with a saturated blue band. Limit the yellow glow to the small lights instead of tinting the floor and walls."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: orange, magenta-purple, pink and blue all run at full strength. The planet and the sky compete, and both subject (0.157) and background (0.181) chroma exceed the real range. There is no neutral rest area, and the cream is tinted peach. A: the topiary is a nearly all-green natural card. Greens step down into deep shadow green under a soft sky, with a stone ring as a neutral rest. Its low warm share and hue count are just at the edge of the real range.",
+   "fix": "Darken and calm the sky to a deep muted indigo with faint clouds and remove the pink. Keep the planet to two related bands, such as orange and cream, with shadow falling to deep brown-violet."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the pool's pure pink, yellow and blue rings are plausible local colors for an inflatable toy, set against green grass and a brown fence. Its shadows dull to teal-grey. B: the jacket is natural tan with orange cuffs and a dark green sash on a green burst, a tone-on-tone hue plan. Hue count of 2.53 is low and background chroma of 0.156 is slightly high, but only by small margins. Both hold believable local colors, so my vector gives no strong reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the wheel is natural orange-brown wood with a gold hub, but the rays behind it are washed lavender and cream, and background chroma of 0.076 is below the real range. B: the telescope has a white tube, brass and wood on a saturated purple burst, with a violet-tinged cast shadow on warm boards. It sits in range and reads like the real purple cards. A's pale background is the only flag, and the wood color on both cards is sound. That is too thin to call.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a pure flat orange field takes up the whole card, and the robot's blue parts and orange accents use the same two hues as that field. The hue count of 1.68 is below the real range, and warm share is high with the blue set directly against it. The result is a hard two-hue poster with the card's color mass dominated by the background. B: the blue cabinet on purple is an analogous pairing and also very loud, with warm share of 0.026 below range. However, the cans and bottles add several small local colors, and the hue plan is closer to real cards.",
+   "fix": "Add a soft second tone to the background, such as a lighter orange-yellow center fading to a deeper red-orange. Add one or two extra local colors on the robot, and let its orange trim be a different, duller copper instead of matching the background."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the book scene is pulled warm, with orange wood and red cover and shadows staying saturated orange-red (shadow kept 1.75, above range). B: the camp chair has a coral-red field and peach floor, also warm (0.876, above range), with a pure green seat as the complement. Its grey frame picks up pink, and shadow chroma of 0.725 is in range. Both cards overshoot on warm share in different ways, so the warmth does not separate them.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the UFO hull is lilac-grey that merges with the purple rings, and the dark underside is plain violet. Almost the whole card sits in purple, with warm share of 0.016 below range and background chroma of 0.231 above it. Only the lime dome and small yellow lights break it, and the lime reads as pure hue. A: the player is warm orange-yellow with white earbuds on violet, a clear hero-against-background split. Its background is equally overloud at 0.238, and its hue count is low, so the gap is moderate.",
+   "fix": "Make the saucer hull neutral silver with a warm tint, so it stands clear of the purple. Dull the background rings to a deeper, quieter violet. Make the dome a softer sea-green glass, with shadows falling to dark blue-grey."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the card is lime green over neutral grey floor, with a neutral grey-white helmet and a yellow-gold visor. Hue count of 2.52 is below the real range, and lime reflections leak into the visor. The grey floor is dead neutral and unrelated to the wall. A: the popcorn cart has red, gold, cream and blue with believable local colors, deep wine shadows on the red, and a neutral paved floor to rest the eye. It sits in range on every field.",
+   "fix": "Replace the grey floor with a tinted surface in deep green or warm stone. Calm the lime wall to a softer leaf green. Add one small second color on the helmet, such as a red or blue patch, and keep the visor a deeper amber."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the rocket is pure red and cool white on bright cyan rays. The hue count of 1.94 is below range, and shadow chroma of 1.645 is above range, because the red fins stay fully saturated in shade and the shaded white goes cyan. B: the yellow submarine has amber-brown shadows, copper rims and a dark muted green field. Its background chroma of 0.095 is a little low, but hero and background have clear loud-against-quiet roles.",
+   "fix": "Deepen the shaded side of the red fins to dark wine red. Let the white hull's shadow fall to warm grey, not cyan. Reduce the background to a calmer, deeper blue so the rocket's red is the only loud color."
+  }
+ ],
+ "pattern": "Generated cards still push color to pure hue instead of holding believable local color. Hero and background run equally loud, with magenta or cyan skies and lime or candy red on the object. Neutrals stay dead grey or take on the background tint, rather than acting as a deliberate rest area. Hue plans collapse to two poster colors, or scatter small primary spots on a grey body. Shadows stay bright versions of the same hue rather than falling to a deep related color. Real cards keep muted local colors, a clear loud-against-quiet split, and dark, related shadows."
+}

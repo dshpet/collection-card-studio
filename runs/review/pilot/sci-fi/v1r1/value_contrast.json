@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the cart has clear groups: a dark red body and awning stripes, near-black under the awning and in the wheels, and a pale paving band. B: the white helmet, gold visor and steel floor all sit in the light and middle greys. Only a thin rim line and the cast shadow go dark. RMS contrast 0.121 is at the bottom of the real range. Hue separates the helmet from the green wall more than value does.",
+   "fix": "Darken the helmet's lower right side and the inside of the visor into one large deep shadow shape, add a small near-black accent under the collar, and dim the bright floor patch under the helmet."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the dark topiary stands against a light sky with a strong value step, plus deep shadow between the leaves and on the hedge. B: the planet sits in the middle greys on a mid-grey sky, close to the background value. Only the bright ring and a small dark band in the lower right stand out, and nothing else carries a dark accent. RMS contrast 0.106 is below the real range.",
+   "fix": "Turn the planet's lower right into one deep dark crescent of shadow, darken the sky around it, and keep the bright ring as the single light band."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the bright player and white earbuds sit on clearly separate dark and mid-grey rings, so there are three value groups, though the hero-over-background gap of 0.223 is above the real range. B: on the lens the whole background collapses to one mid grey, the saucer is light on top, and only a sliver under the hull goes dark. There are no real dark accents, and RMS contrast 0.08 is below the real range. Separation comes from hue, magenta against green and grey.",
+   "fix": "Give the saucer's underside a large deep shadow shape, put a near-black accent in the hull seam and under the rim, and make the background rings step clearly lighter and darker."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the bright yellow submarine sits in a dark green field with near-black corners. It is a strong, readable light-on-dark grouping, though the mean of 0.546 and gap of 0.322 fall outside the real range. B: the card is very high key at 0.821, above the real range. The white rocket body and bright cyan rays merge into two light levels, and only the fins and nose go dark. RMS contrast is 0.098. Value alone is less decisive here than on the other pairs, because both cards break a limit.",
+   "fix": "Lower the background to a deeper cyan-blue with darker corners, shade the rocket's right side into a broad mid-to-dark shape, and add dark accents under the fins and around the nozzle."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the white tube is mostly one clipped light shape on a mid-grey background with a soft pale burst. The only deep dark is the lens opening, and RMS contrast 0.104 is below the real range. B: the dark wheel reads as one strong shape against a white burst, like the dark camera on its pale rays in the real lesson card, but the mean of 0.761, gap of -0.282 and vignette of 0.089 are all just past the real limits. This is a weak call, because each card has its own fault.",
+   "fix": "Shade the telescope tube from light on top to a broad mid-dark underside, darken the tripod legs and the shadow on the deck, and keep pure white only on a thin highlight."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a very bright card at 0.769 mean, above the real range, with a white floor and pale orange wall. The hero is broken into many small hard-edged patches of grey, with the black face plate as a sticker-like accent, and its gap of -0.24 sits just past the real limit. B: the dark blue cabinet is one big dark mass on a mid-grey wall with a soft floor glow, and the lit window is the single light group. All four measures are inside the real range.",
+   "fix": "Lower the wall and floor to a middle value, group the robot's body into one light side and one shadow side instead of many small patches, and let the darkest tone fall only in the face plate and under the feet."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the white lion and plinth form one light mass on dark foliage and a dark shadowed lawn, with a gap of 0.211 above the real range. B: the pale envelope and photos sit on a mid-grey green with darker corners, and the mean of 0.727 and vignette of 0.101 are slightly high. Both have clear large groups, and both overrun a limit by a similar small amount, so value gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the dark spyglass barrel sits on a single light cyan group with soft darker corners, and the gold rims give a gentle step between dark and light. B: alternating white and light-grey stripes run across the whole background at full strength, pushing the mean to 0.811, above the real range. The gun is a hard, even dark mass with sharp chrome highlights, and the shading on it has little roll-off.",
+   "fix": "Dim the background stripes so they are close together in value and stay behind the gun, lift the gun's red body into a mid value on the lit side, and fade its highlights softly instead of ending them in hard edges."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the panel's face is broken into many hard-edged dark wells and bright bevels, and every button has its own highlight and shadow, so local contrast is hard and the groups are busy. The bright floor strips add extra small lights. B: the plate of fruit sits in a gentle mid-to-light key on the table, with moderate dark seeds and berries, and is slightly soft at 0.115 RMS. A's lens fits the generated habit of hard local contrast, but the numbers alone do not separate the two cards.",
+   "fix": "Group the panel's top into one calm mid-grey plane, soften the bevel highlights, keep the deepest dark only in the slots and under the front edge, and remove the bright floor strips."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the flower dome is a dark-to-mid mass in a two-step background, with black between the leaves. B: the pale wheel spokes are a white shape on one mid-grey sky, with dark cabins as accents. Both are simple, clear groupings. Both have RMS contrast at or near the low end of the real range, and their gap and vignette values are inside it, so value does not separate them.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the brick pillars and iron gate form a broad dark mass against pale paving and caps, with a firm step between light and dark and RMS contrast 0.147. B: the station is a light hull on a mid-grey sky with many scattered small darks in the panels and windows. A lighter Earth band competes along the bottom, and there is no large dark shape. RMS contrast 0.104 is below the real range.",
+   "fix": "Put a large soft shadow on the station's underside, darken the solar panels into one calm dark group, and drop the Earth to a quieter middle value so the hull is the lightest shape."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: three clear groups. The dock and water are in the middle, the boat interior and the dock's cast shadow are dark, and the rim of the boat is the light line. B: the mean of 0.727 is above the real range. Pale glow bands, the ceiling and the floor ring spread white all over the card, the background is as light as the hero, and the only dark is the belt and the door frame. The light is scattered rather than grouped.",
+   "fix": "Dim the room to a calm mid-dark blue, remove most of the glowing bands, keep bright light only in the small door lamps, and add a soft dark shadow under the pod."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away by weak large-scale value grouping. The hero and background sit close together in the light and middle greys, so hue does the separating. Value contrast is mostly below or at the low end of the real range, and the big shadow shapes the real cards use are missing: the dark glove pocket, the dark camera body, the cast shadow. When contrast does appear, it comes as many small hard-edged darks and bright rims across the hero, or as full-strength background patterns and glows spread all over the card. Real cards keep one or two large dark shapes with softer roll-off. Lens evidence was weak on p04 and p05, where each card breaks a limit, so subject matter nudged those two calls towards the space-themed card; p07 and p10 gave no value reason to choose."
+}

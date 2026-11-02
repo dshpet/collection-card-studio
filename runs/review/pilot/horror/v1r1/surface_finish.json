@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the envelope is a matte, slightly fibrous paper with soft creases and a deckled stamp edge, and the photo inside has a separate crisp print look, so paper and print read as two materials. Its high detail and gloss come from the tiny village scene. B: the bat's body, wing membranes and wing bones all share one smooth airbrushed vinyl finish with a soft sheen. Membrane does not differ from fur or bone, and there is no micro detail (detail 0.0168, micro 0.0078, low end of real).",
+   "fix": "Give the bat's body short, fine matte fur, make the wing membranes thin, slightly translucent leathery skin with faint veins, and keep a shine only on the eyes and fangs."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cauldron has dark rubbery iron with a broad smeared sheen on the belly, faint scuff marks and pitting, a photographic pass that leaves the rim, handles and legs as one finish. Micro texture 0.0104 is below the real range. B: the shoe mixes dotted mesh, soft rubber foam sole, glossy cords and matte tongue tabs, a real gloss range at small scale.",
+   "fix": "Make the iron a fine, dry cast surface with tiny even pitting, tight bright edge highlights on the rim and handle rings, and no broad smeared sheen on the belly."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the topiary is many repeated waxy leaf clusters, large and glossy, with gloss 0.437 far above real; the leaf marks are coarse but soft-edged like the real cards. B: the pumpkins are crisply airbrushed with fine painterly streaks along the ribs and a satin finish, and the leaves and stems have the same smooth finish, with sharper rendering than the reference softness. The numbers point at A and the eye at B, so this is a weak call.",
+   "fix": "Make the pumpkin skin a slightly waxy, dimpled rind with faint pale speckles, keep the stems dry and fibrous and the leaves matte with thin veins, and soften the painted streaks along the ribs."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "A: the column is a smooth matte plaster-like stone with soft flutes and a quiet crack, and a glassier gold plaque beside it gives a gloss contrast. B: the suitcase is a known real card with chipped worn patches on tan leather and vinyl stickers. Both sit in range on every field and both hold their materials apart, so this vector gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the tombstone carries an even all-over stipple and scattered round pits, a uniform noise that sits on the surface, and the moss is a sponge-like speckled clump. Detail is added evenly instead of being worn in at particular places. B: the slide is clean moulded plastic with long smooth reflections and only a thin wood-plank strip; this is sparse and plain like the real cards, even with gloss at 0.033, just under range.",
+   "fix": "Make the stone smoother and quieter, with only slight soft grain, wear only at edges and in the carved cross, and small soft moss patches, with no even speckle or scattered pits."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the mower has satin red moulded plastic, matte rubber tyres and brushed grey metal hubs, a clear gloss range in range on all fields. B: the broom's straw is thick waxy strands with a lacquered shine, chunky and enlarged, and the cord is a bulky toy rope; detail 0.075, micro 0.0274 and gloss 0.322 are all above real.",
+   "fix": "Draw the bristles as many thin dry matte straw fibres of uneven length, make the binding a fine thin twine, and keep the handle a quiet satin wood."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the roof slates and stone blocks are covered in dark hatched edge lines and painted chips with a uniform painterly mark on every surface, so slate, stone and timber trim all carry the same scratchy hand; gloss 0.316 is over range. B: the door has quiet vertical wood grain under blue paint, and the wreath flowers are smooth glossy toy plastic, also out of range (gloss 0.51) and busy, so B is not clean either; the call rests on A's one-mark-everywhere finish.",
+   "fix": "Keep the slates and stone smooth with soft shading, fewer dark scratch lines, and a matte finish on stone with a slight sheen only on the roof slates."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the pumpkin rind has tiny speckled pits and fine ribbed streaks, a heavily airbrushed waxy skin, and the glow in the cut face is a flat airbrushed yellow with no cut flesh texture; gloss 0.009 is below the real range. B: the jacket is soft matte clay-like cloth with no stitching or weave, though the badges are glossy enamel so the card does hold two finishes, with values in range.",
+   "fix": "Show the cut edges of the face as pale wet pumpkin flesh, add a clear glossy highlight along the top of the ribs, and keep the stem dry and fibrous."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the crystal-ball interior is soft wispy smoke, an AI-style smear of feathered streaks and dust specks, and it has no glass surface reflection across the middle. The stand's silver filigree is also uniformly polished. B: the vending machine has satin blue enamel, a brushed metal tray and cold droplets on glass; each part has a distinct finish, and the numbers are well inside the real range.",
+   "fix": "Paint the glass as a clean clear sphere with one crisp window highlight and a thin bright rim, and make the mist inside smooth and simple, with no feathery streaks; give the metal stand a satin tone."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the coffin lid has large flame-figured wood grain under an even lacquer, decorative and all over, with a warm sheen, and the same varnish covers lid and sides; the brass handle is the only gloss break. B: the chair also has visible painted grain and a smooth waxy finish, but the matte cushion gives a material contrast and the grain is finer and quieter. Both overdo the wood, so the gap is small.",
+   "fix": "Make the wood grain fine, straight and quiet, with a soft satin finish instead of a thick varnish and thin clean highlights on the edges."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the candelabra is one uniform soft gold lacquer from base to cups, with blurred highlights and no change of finish except the waxy candle; the wax drips are smooth. B: the lamp has dark green enamel with a faint speckle on the dome, frosted glass and a soft bulb, so three finishes sit in one object, with crisper rim lines. Values for both are in range, so this is a weak read.",
+   "fix": "Give the gold tight bright highlights on the ridges with darker brushed areas between them, a little wear in the cups, and matte soft wax with thin drips."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "A: the balloons are smooth stretched latex with soft round highlights and simple plain surfaces, correct for the subject, which explains the low detail and zero gloss. B: the matte white sailcloth with thin seams and the plank hull are also correct, and the high highlight share comes from the white sails, not a lacquered finish. Both read as true materials with the real cards' softness.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards spread one finish over everything. Detail is laid on evenly as stipple, pits, hatching or scuffs (tombstone, haunted-house slates, jack-o'-lantern rind) instead of sitting only where wear belongs. The lacquered or airbrushed coating stays the same across different materials (bat, candelabra, coffin), and soft smears stand in for real material behaviour (crystal-ball smoke, cauldron sheen). Real cards are plainer and softer, keep materials apart, and put fine marks in only a few places. Most of these calls are low confidence (2-3), and they are not pure surface reads: I also leaned on the horror subject matter of the run, and the p03, p06, p10 and p11 surface differences alone are weak. The measured fields often flagged the busier real-looking card, so I did not rely on them alone."
+}

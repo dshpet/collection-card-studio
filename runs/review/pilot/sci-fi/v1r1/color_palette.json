@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the popcorn cart has clear local colours (red body, white awning stripes, gold frame) against a blue wall, and its shadows go to deep crimson. B: the card is only three masses: yellow-gold visor, lime wall, grey floor. The white shell turns greenish-cream in the lens and the gold reflects into the floor. B's hue_families of 2.82 is below the real range.",
+   "fix": "Keep the helmet shell a clean cool white with blue-grey shadows, no green or yellow tint. Add one small contrasting accent, such as a red or blue stripe on the collar."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the topiary uses natural greens with a soft sky blue and a neutral stone rim, so the eye gets rest. B: the planet's bands are pure orange and violet, on a pink and blue nebula background that is just as loud. There is almost no neutral area, and chroma_background of 0.181 is above the real range.",
+   "fix": "Calm the sky to one deep muted navy-blue with only a faint pink haze. Keep the planet as the only saturated object and make its pale bands soft greyish cream."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both cards have a loud flat background and few hues; both are out of range on background chroma and hue_families. A: yellow case on violet is a clean complementary pair, with true white earbuds as the neutral. B: the green dome and silver hull sit on magenta, and the hull takes on a mauve-grey cast, so the object has less independent local colour. The call is close.",
+   "fix": "Keep the saucer hull a clean cool silver with blue-grey shadows, no pink cast, and lower the magenta rings to a deeper, duller purple."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the yellow hull shifts to rich amber-brown shadow on dark muted green, with copper trims as a related accent. The background is quiet and the hero is loud. B: the white body takes the cyan of the background over its whole shadow side, the red is pure, and the sky is a very bright cyan as loud as the hero. hue_families of 1.94 is below range and shadow_chroma_kept of 1.645 is above it.",
+   "fix": "Draw the rocket's body as white paint with soft neutral grey shadows, not cyan. Make the background a deeper, darker blue, and shadow the red fins toward dark wine."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the white tube, gold rings and red-brown legs each keep their own colour on a rich purple. B: the wheel, floor and glow all drift into one orange-cream family, and the gold hub barely separates from the wood. The pale lilac and cream background is washed out, with chroma_background of 0.076 below range. Whole-card warm drift is the generated direction in the lessons.",
+   "fix": "Make the background a rich, solid mid-purple or teal with no cream glow. Keep the wood a darker neutral brown and the hub a distinct bright gold."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the blue-and-orange robot has grey plating on an orange-yellow glow, above a near-colourless pale floor. The background is weak (0.117, below range) and the pale floor reads as an empty neutral area. B: the blue machine on purple is an analogous pair with a warm share of only 0.026, but the small multicoloured cans give it a believable accent. The call is weak because both cards fall outside a range.",
+   "fix": "Replace the pale floor with a saturated orange-red floor, and deepen the backdrop to a richer orange. Tint the grey plating slightly cool."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the lion's near-neutral marble rests against muted greens, and its pale subject chroma is explained by the material. B: a very pure emerald field (chroma_background 0.221) surrounds a cream envelope, whose shadow side turns green. The rainbow scene is packed into the postcard, with hue_families of 2.52 below range and shadow_chroma_kept of 1.605 above it.",
+   "fix": "Darken and dull the green background to a soft mossy green. Shadow the envelope with warm grey-brown, not green."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the spyglass has believable brass and brown leather local colours on cyan, one hero family against one background hue. B: pure red body, lime fin and grip, and yellow and turquoise stripes are all at full strength, so hero and background are equally loud. Only the chrome rests the eye. Its numbers are in range, so this rests on my eye. A's shadow_chroma_kept of 0.67 is slightly low but fits dark leather.",
+   "fix": "Make the background a single soft teal with faint tonal stripes and no yellow. Darken the red toward cherry and change the fin and grip to dull olive."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the grey console body is mauve-tinted, and pure primary red, green and blue buttons sit on it like a toy chart. The orange-red stripes and the pink-grey floor reflections are the only other hue, so the buttons have no related colour; subject chroma of 0.058 is below range. B: the fruit keeps natural local colours (red melon, orange, green grapes) on neutral tan wood, though subject chroma is just over range and background just under.",
+   "fix": "Make the console a cool blue-grey metal and let the button colours be slightly softer and varied in tone. Clean the pink from the floor."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: multicoloured flowers sit on pink and magenta, with beige stones and brown soil as neutrals. B: cream spokes sit on blue, with small coloured cabins as accents. All measured fields are in range for both and neither shows a clear generated palette habit.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: red brick, tan paving, and a sky-to-green setting hold believable local colours, with a warm hero and cool background. B: the sky runs from pure magenta to cyan, the planet is pure blue with bright green, and the blue panels and blue trim merge into the background. The hero is no louder than the background, with chroma_background of 0.182 above range.",
+   "fix": "Use a single dark navy space background without the magenta gradient, and dull the planet to a soft hazy blue. Keep the gold and white hull as the brightest colours on the card."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: orange wood sits on one pure cyan water, with a green lily accent and a deep red-brown hull shadow. It is a clear hero-versus-background split. B: pale yellow glow and light blue haze spread across pod, walls and floor, and the grey shell picks up cream on one side and blue on the other. Hero and setting share the same hues and a chalky low chroma (background 0.087).",
+   "fix": "Remove the yellow glow from the floor and walls and make the room a deep solid blue. Paint the pod a clean neutral silver with a single gold accent."
+  }
+ ],
+ "pattern": "Generated cards rarely fail on one number. They give themselves away in how colour is shared across the card. Neutrals pick up colour: whites and greys drift to cream or take the background's hue. Shadows keep too much chroma instead of falling to a related deep tone. Hero and background are equally loud, or both are hazy, with too few quiet areas to rest the eye. Real cards keep distinct local colours, a clean neutral, and one dominant background hue. Most calls here are low confidence because many generated cards sit inside the real numeric ranges."
+}

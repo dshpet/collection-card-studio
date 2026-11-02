@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the bat's body is a near-perfect ball with stub feet, and its small head has merged into the body with no neck or shoulders, like a toy. The wing edges are soft, sausage-thick rolls, and straight_share 0.126 and corner_rate 6.498 are both outside the real range. A: the envelope keeps flat panels, straight flap creases and fairly tight corners on the photos and paper.",
+   "fix": "Draw a lean bat: a small oval body narrower than the head and ears, a distinct neck, thin membrane wings with thin finger bones and sharp scallop points."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the cauldron has a squat belly, a rolled rim, three short legs and open ring handles, all believable for the object. B: the sneakers have chunky soles and thick laces, but that fits a modern running shoe. The toe and heel read correctly and both cards' numbers sit inside the real range. Neither form gives a reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the pumpkin vines end in fat, even-width curls that loop around the group, and the pumpkins fuse into one mound in the silhouette. Straight_share 0.081 is far below the real range. A: the topiary is a clean stack of tapering tiers on a flat, straight plinth, though its 0.185 is also slightly low. The difference is modest.",
+   "fix": "Draw the vines as thin, tapering stems with few curls, and keep gaps between the pumpkins so each one reads as a separate form."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the column's volutes are swollen into overhanging rolls wider than the shaft, and the shaft is shortened, so the capital looks oversized like a toy. The base mouldings are inflated tyres. B: this is the real suitcase from the reference sheet, with a straight body, a thin handle and tight corner caps.",
+   "fix": "Draw a slimmer, taller column with a shaft much longer than the capital, small tight volutes, and thin crisp base mouldings."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the headstone is a plain slab with a flat face, a bevelled side edge and a recessed cross, and the dome runs into the sides without a shoulder. B: the slide has a thick trough and fat posts, but the ladder rails and rungs stay thin and the parts connect sensibly. Both forms are plausible and the numbers are in range.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the mower has a soft, rounded deck and large wheels, but its U-shaped handle stays thin and its parts are all present. B: the broom has a uniform capsule-ended handle and a full straw head with pointed tips and a thin binding. A's solidity 0.557 is just below range, but that comes from the open handle, not a form flaw. The evidence pulls neither way.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the house's walls and roof bulge and bend throughout, with soft pillowy stones and no straight run longer than a short stretch. The wings merge into a lumpy mass in the silhouette, though some warp is intended by the subject. B: the door keeps flat panels, straight stiles and tight bevels. The wreath's extreme corner_rate 21.806 and straight_share 0.043 come from the leaf-edge cut-out, not from the object's form.",
+   "fix": "Keep the crooked pose, but draw flat wall planes, straight roof edges, tight corners on the stones and frames, and clear gaps between the wings and tower."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the pumpkin is nearly circular with little lobe notching on the contour, plus a believable curved stem. B: the jacket has inflated sleeves and tube cuffs, but a padded jacket can look like that, and its collar, pockets and sash are all placed correctly. Each roundness has a natural explanation and both cards are within range.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the sphere sits on a scroll stand whose legs stay fairly thin but end in small blobs. B: the vending machine keeps a flat box with long straight edges and moderately rounded corners, and the door and tray parts are all present. Both are within range and neither shows a clear proportion fault.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the coffin's six-sided outline melts into soft corners, with corner_rate 0.0 below the real range, and straight_share 0.746 and solidity 0.988 above it. The shoulder bend barely registers and the base trim is a soft roll. B: the rocking chair is chunky but keeps open gaps, separate rails, rockers, spindles and arms.",
+   "fix": "Draw a sharp coffin outline with a crisp angled shoulder, tight bevels on the lid and base, and thin flat trim."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the candelabra has fat, stubby candles and thick tube arms, oversized cups, and a heavy dome base on a short stem, so it reads as a toy. Corner_rate 7.282 is above range and solidity 0.433 is below it. B: the lamp keeps a thin curved arm, thin glazing bars and a tight scroll, and its corner_rate is only just over the range at 4.738.",
+   "fix": "Draw taller, slimmer candles, thin arms, shallow cups, a slender stem and a small flat base."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the ship's hull is short and bath-toy fat under oversized sails. The spars are thick sausages, and extra poles jut from the bow and stern without a clear relation to the masts. Corner_rate 6.139 and thin_share 0.027 are above range. A: the balloons are simple teardrops with small knots and thin strings. A's own numbers are also slightly out of range, but that comes from the strings and the bow.",
+   "fix": "Draw a long, low hull with a sheer line, thin masts and yards, and one bowsprit at the bow. Run thin rigging between the masts."
+  }
+ ],
+ "pattern": "Generated cards still show the same toy-like inflation as the lessons. Bodies swell into balls, thin parts (arms, spars, vines, trim) thicken into even-width tubes, corners melt, and fine parts become stubby and oversized. Some lose real straight runs altogether, such as the house walls and coffin shoulders. On natural or genuinely puffy objects (pumpkin, padded jacket, cauldron), this vector alone cannot separate real from generated, so those pairs are marked neither."
+}

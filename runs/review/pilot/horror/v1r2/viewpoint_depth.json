@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the pumpkins are stacked frontally like round balls, with almost no top view, yet the grass spreads out as if seen from higher, up to the fence and hills. The large foreground grass tufts look added on. B: the topiary's stone ring and the curved path share one low ellipse angle, and the hedge sits at a believable distance. The evidence is weak because both have swollen forms and very low planar_share.",
+   "fix": "Lower the camera to one height for pumpkins and ground: show the top of each pumpkin around the stem at the same tilt as the grass, and let the field flatten toward the fence."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "A: the cooler is turned three-quarter and seen from above, with can tops visible and the box narrowing a little toward its base; lid, body and sand share that view. B: the lion's plinth shows crisp stepped faces in clear two-corner perspective, and the path and trees recede behind it in simpler layers. Both hold one view and have even flat faces within the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the bat is dead front-on, with the ball body as a smooth rainbow and the wings pressed flat either side. There is no turn, tilt or overlap in depth. B: the envelope is rotated and tilted, with photos stacked behind the flap in clear overlapping layers. Its 0.855 planar_share only reflects a nearly face-on flat object, so I do not count it against B.",
+   "fix": "Turn the bat three-quarter and tilt it, with the near wing larger and overlapping the body and the far wing foreshortened behind it."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the cauldron sits square-on on a slab with a dead-horizontal front edge, like a stage block; only the rim ellipse suggests any camera tilt, and the body is one smooth rainbow. A: the sneakers are turned three-quarter from above, the near shoe overlaps the far one, and the floor plane and shadows agree with that view.",
+   "fix": "Rotate the cauldron and the ground so they are seen from a three-quarter angle and slightly above; remove the slab's straight front edge and let the floor run out of the frame."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the candelabra shows the top of its domed base and also a dark elliptical underside below it, while the cups are seen from below. The parts do not share one eye level, and the object is square-on and fully contained. A: the lamp is cropped by the frame at the pole, the dome and glass share one slightly low view, and the arm passes behind the head in clear overlap.",
+   "fix": "Draw every part from one eye level just above the base: flat ellipse on the foot with no underside showing, cup rims seen from the same height, and turn the arms slightly so one comes forward."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the house walls bend and lean, and the tower tilts on its own axis. Steps and roof slopes both show top faces while the upward lean implies a low camera, so the storeys do not share one view. A: the door is a plain frontal view, cropped by the frame, with flat even panels and ivy overlapping as a clean foreground layer.",
+   "fix": "Draw the house from one low three-quarter view with straight walls that lean evenly toward one point; keep window, step and eave angles matching on every floor."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the headstone's face is nearly frontal and it leans, but its thickness shows only as a puffy band on the right, and its base does not tilt into the mound with it. The grass is a shallow low hill with little ground depth. B: the slide spirals with real foreshortening, the deck tiles and pool edge recede at one angle, and the posts stand firmly on that deck.",
+   "fix": "Turn the headstone a little so its side and top edge are clear flat faces with crisp corners, and sink the leaning base into the ground at the same angle as the grass."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the crystal ball is square-on on a slab with a straight horizontal front edge, and the normals show a green top strip then a flat front band; it reads as a stage block with no turn. B: the vending machine is turned with a clear left side, flat even front and side faces, mild convergence, and a soft floor it stands on.",
+   "fix": "Turn the stand and table a little so the three legs sit at different depths, and replace the block with a continuous tabletop running off the frame at a three-quarter angle."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the floor planks fan strongly toward a point while the broom is drawn almost flat with no matching foreshortening, and the head rests on the floor at a point rather than settling on it. A: the mower's wheels, deck and handle tapering all agree with one low three-quarter view on the grass. The anchor suitcase also has fanned planks, so this is weak.",
+   "fix": "Calm the plank convergence to match a mild lens and foreshorten the handle slightly toward the viewer, with bristles spreading flat where they press on the boards."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the coffin lid is seen from high above, about half the object, but the floor boards run dead horizontal with thin spacing and the wall line sits flat, as if from a much lower, square-on camera. The object and floor are on two different views, and the coffin slides across rather than sits. B: the chair's seat, rockers and fanned floor boards agree on one slightly raised view, with a shared ground contact.",
+   "fix": "Rotate the floor to match the coffin: run the boards parallel to its long side, converging gently away, and raise the wall line so floor and lid show the same camera height."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the jack-o'-lantern is almost dead front, a smooth rainbow sphere with the face centred and a stem barely turned, and it shows no real rotation. B: the jacket is turned with the near sleeve forward, cuff openings and collar interior visible, and the sash wrapping around the body in depth.",
+   "fix": "Turn the pumpkin three-quarter and slightly from above, with the face sliding to one side, the far cut-outs foreshortened, and the stem's base and top dimple visible."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "A: the towel is a tilted plane seen from high above, with no ground, and its soft waves stay in one plane. B: the coral sits low-camera on a level ground band with overlapping front and back branches, and the rocks show flat tops, the same arrangement as the real anchor coral. Each is consistent, and both views exist on real cards.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards still give themselves away in the camera. Objects are square-on or nearly so, centred and fully contained, with little turn, and they often sit on a staged slab with a dead-horizontal front edge. Parts or layers do not share one eye level: the coffin lid is seen from above while the floor is drawn from low, and the candelabra shows both the top and underside of its base. Forms swell into smooth rainbow spheres with no flat faces or foreshortening, whereas real cards commit to one mild three-quarter view with crop, overlap and crisp faces. Caveat: the generated picks are mostly Halloween subjects, a pattern I noticed; I argued each from viewpoint evidence, but it may have nudged the weaker calls (p01, p09)."
+}

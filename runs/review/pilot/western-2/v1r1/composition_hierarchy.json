@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the wide mortarboard sits centered with a slight tilt, and its 0.506 box height is below the real range only because the object is flat. B: the boot is whole, centered and slightly tilted, with even margins. Both read at once at thumbnail size, nothing competes with either, and their subject area and margins almost match.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the star badge is upright and centered, and reads first at thumbnail size. Its small pin on the right is minor. B: the bracelet runs diagonally across the card, and its open center leaves less mass, but it holds the same margin (about 0.115). Both are single heroes on a quiet background, like the floating real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the jacket fills the card compactly at 0.84 × 0.65, with the sash running diagonally and the sleeves well clear of the edges. B: the hat is a thin horizontal strip, 0.921 wide and 0.475 tall, both outside the real range. Its brim nearly touches both sides, with empty sky above and below. This is a weak lean, because a wide brim explains part of the shape.",
+   "fix": "Turn the hat three-quarters and tilt the crown toward the viewer so it stands taller and fills more of the card's height, with the brim clear of the left and right edges."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the ticket is a single diagonal hero with clean margins (0.091), much like the tilted real spyglass. B: the signpost is cropped by the bottom edge (margin 0, below the real range), and the pale pink butterfly on top is an extra accent that pulls the eye away from the arrows. Generated lesson cards added small props in the same way, so this is a thin signal.",
+   "fix": "Remove the butterfly from the top of the post so the two arrows are the only focus."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cactus and pot stand dead center and frontally symmetric, with box width 0.535 and area 0.248, both below the real range. Wide empty pink strips sit on both sides, and a flat ledge runs across the bottom. B: the vending machine is also narrow, but it is turned three-quarters and carries more mass (area 0.422, inside the range).",
+   "fix": "Draw the potted cactus larger, turned slightly and off the exact center, with the arms reaching closer to the card's sides and less empty pink on the left and right."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the beach ball is one huge mass filling the card (area 0.493, just above the range), and it is named instantly, with the sand staying quiet. B: the saddle is the hero, but the fence boxes it in. Two posts and two rails run across the whole width and out of the left and right edges, and they share the saddle's warm brown. Saddle and fence merge at thumbnail size, so the read is slower.",
+   "fix": "Enlarge the saddle and show only one rail behind it, with no upright posts at the sides, and keep the rail lighter than the saddle."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the thin rope gives only 0.153 subject area, far below the real range, and the loop outline is mostly empty green. The wooden beam, cropped by the left and right edges, is the heaviest shape on the card and competes with the coil. B: the pair of sneakers sits low (box height 0.487, also short) with empty orange above, but the shoes are one solid, instantly named mass.",
+   "fix": "Draw a thicker rope, coiled large in the center of the card, and remove the wooden rail or shrink it to a small edge at the bottom."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the fountain stands centered and frontal, with paving running to the edges. B: the wagon sits three-quarters with its tongue pointing left, and small grass tufts and stones are scattered over the ground. Both heroes are whole, read first, and have similar area and margins inside the real range. The real cards include both centered props and three-quarter vehicles.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the card has two focal points. The bright flames and logs at the bottom are the hottest part and draw the eye before the blue-gray pot. The margin of 0.117 is above the real range, so the group sits inset. B: the ice tray is one wide pink block with the raised cube as its peak. It has a clear single focus and comes close to the edges, though its 0.921 width is just over the range.",
+   "fix": "Enlarge the pot until it dominates the card, and keep the campfire small, dim and low so the flames do not outshine it."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the whole saloon is packed into the card, with subject area 0.631 well above the real range. Little sky is left around the frontal block, so the card feels dense, and many small windows and rails compete at thumbnail size. B: the dock has a looser diagonal composition, cropped by the right edge, with the life ring as the focal point. The two posts split the focus somewhat, but its area of 0.371 is inside the range.",
+   "fix": "Pull the building back to about 70% of the card's width, show more sky around the roofline, and simplify the facade to fewer large windows."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the locomotive runs diagonally across the card, with the funnel and cowcatcher reaching near the edges. B: the bus is three-quarters, with buildings and clouds at the sides. Area (0.466 and 0.465) and margins are almost identical, and both vehicles are named instantly. They sit in the same range and use the same scene-style framing as the real plane and taxi.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the wheel is cropped by the right and bottom edges, with the hub at lower right. Three fields fall outside the range (area 0.477, height 0.898, margin 0), yet the crop and hub position match the real Ferris wheel card in image 1. B: the jellyfish is whole and clear of the edges, with an area of 0.245 from thin tentacles and a few small bubbles at the sides. Its bell reads first, and that framing is also real-like. Composition gives no reason to choose.",
+   "fix": ""
+  }
+ ],
+ "pattern": "On this vector, generated cards give themselves away by less decisive framing, and the signal is weak. In the lessons, the model keeps the whole object in frame, centered and frontal, with even margins, or it adds supporting scene elements. Examples are the extra rocks and props around the lighthouse, where the real card crops the base at the bottom edge. In the test pairs, the likeliest giveaways are a second element that outweighs or competes with the hero, such as the campfire under the pot, the beam under the rope and the fence around the saddle. Others are a hero that is too sparse or too dense for the card, such as the thin rope (area 0.153) and the saloon (area 0.631). Real cards commit to one mass with quiet surroundings, even when that means cropping it. Most pairs stay close on the metrics, so composition alone leaves only low-confidence calls; several were called neither."
+}

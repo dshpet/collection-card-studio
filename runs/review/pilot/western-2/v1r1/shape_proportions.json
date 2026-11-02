@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the cap's board keeps flat faces, straight edges and fairly tight corners, and the tassel cord stays thin. Only the flared gold band under the skull looks slightly bowl-like. B: the boot has a true shaft, heel and pointed toe, a thin spur neck and flat pull straps. B's corner_rate of 5.08 comes from the spur rowel teeth, not from a form error. Neither card shows a real shape fault.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the silver star faces swell like a pillow between the arms, the gold balls are large on the tips, and the lower-right arm contour runs unevenly. B: the wristband is a flat ribbon with a crisp rim and plausible thickness, though the charms are chunky. This is a weak lean from the pillowed plate only.",
+   "fix": "Draw the star badge as a thin flat metal plate with straight sharp edges and flat faces, equal arm lengths, and small ball tips."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the hat brim is one thick swollen roll with a blobby outline and no thin edge, and corner_rate is low at 0.78. A: the jacket is also puffy, with fat sleeves and cuffs, but it keeps a defined collar, flat pockets, a flat sash and a stepped outline. Both are soft; the brim is the worse case.",
+   "fix": "Draw the brim as a thin stiff felt sheet with a sharp narrow edge that curls up at the sides, and a crown with crisp creases."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the ticket's corners are large soft radii on a near-solid slab, with solidity at 0.985, above the real range, and only two small notches break the outline. B: the sign has plank-like boards with stepped ends and a narrow post, though the arrow tips are rounded. B's out-of-range numbers come from the butterfly and the many protruding parts, not from bad form.",
+   "fix": "Draw the ticket as a thin stiff paper card with tight small corners, a clear thickness edge and sharp punched notches."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the cactus arms and trunk are fat rounded tubes, but a real cactus is a rounded form, and the pot taper is true. B: the vending machine has planar sides, straight runs, tight corners, small feet and a slim handle. The machine's numbers sit at the top of the real range but stay inside it. The cactus fatness is too mild to call.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the ball is a sphere, so its out-of-range straight_share of 0.885 and solidity of 0.996 only reflect a plain circle. The panels and the cap are plausible, though the cap is large. B: the saddle has a correct horn, seat, skirt, thin strap and open stirrup. Shape gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the sneaker soles are swollen pillows, the two shoes merge into a lumpy blob, and the toes are fat. A: the rope stays a consistent thin cord through the loop and the knot, the coil is believable, and the plank and post beside it are flat and square. A's low solidity of 0.417 comes from the open loop, which is correct for a lasso.",
+   "fix": "Draw running shoes with a slim sole of even thickness, a longer lower toe, a crisp heel edge and thin laces."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the fountain has stacked round basins with thick, soft rims but correct tier order and tapering pedestals. B: the wagon's canvas is puffy, as canvas should be, and it has plank sides, spoked wheels with open gaps, and a tongue. Both have similar softness and solidity near 0.83, and both part counts are complete.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the tray walls and cells are swollen, the rim corners are soft blobs, and the cube tops are pillowed, so the whole outline reads as inflated. A: the coffee pot has straight tapered sides, a sharp spout, a thin looped handle with rivets, a seam at the lid, and distinct logs below it.",
+   "fix": "Draw the tray with thin straight walls, flat rim, tight corners and square cells; draw the cubes with flat faces and crisp edges."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the dock posts are oversized stubby blocks against the planks, and the rope is fat. The life ring is jammed around a post that runs through the deck, so the parts relate awkwardly, and there is a stray speck at the right edge of the silhouette. A: the saloon has flat walls, a straight parapet, tight stepped corners, and thin porch posts and rails.",
+   "fix": "Draw slim round dock piles at scale with the planks, thin rope, and a life ring hung flat on a hook beside the post."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the locomotive is shortened like a toy, with a squat boiler, an oversized funnel stack and a bulky cab, and its contour is soft and lumpy. B: the bus has long flat sides, thin rails and mirrors, and straight window runs, though it is somewhat short. This is a stylised subject, so the lean is weak.",
+   "fix": "Draw a longer narrow boiler, a smaller stack, and a thinner running board and rods at true locomotive length."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the wheel's spokes and rim are thickened into wide soft bars, the gondolas are fat lumps merged with the rim, and thin_share is only 0.002, while the real wheel in the reference has slim rim and spokes with visible crossbars. B: the jellyfish has thin, tapering tentacles and a clean bell. Its 0.076 thin_share and low solidity fit a thin-limbed subject.",
+   "fix": "Draw thin straight spokes, a narrow double rim with fine cross braces and clear gaps, and small gondolas hung clear of the rim."
+  }
+ ],
+ "pattern": "Generated cards give themselves away by inflating form. Planar faces swell into pillows (tray walls, sole sides, badge plates), corner radii get bigger, and edges that should be thin (brims, spokes, rims, ropes, posts) gain thickness. Objects also get shorter and fatter, like toys, and parts merge into one lumpy outline. Real cards keep slim parts, flat runs and tight bevels at true proportions. Many pairs are close on this vector, so most calls are low confidence."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the station body is seen slightly from above with its nozzle swung toward the viewer, but both solar panels lie almost flat to the picture plane, and the Earth arc is a separate curved band with no link to the hero. In the normals the panels are even patches at a different facing from the rainbow body. B: paving, piers and gate all converge to one mild perspective, and the path carries the eye through the gate into a simpler far garden.",
+   "fix": "Turn the solar panels with the body so they recede at the same three-quarter angle, the far panel slightly smaller. Keep one mild camera height for every part."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the ray gun is held nearly in flat side profile, yet its body normals are one smooth swollen rainbow, and it has no foreshortening along the barrel. A: the spyglass recedes along a real diagonal, with the near rim large and the eyepiece small, and rim and rings share one view. Both float on flat striped backgrounds, so depth layers do not separate them.",
+   "fix": "Turn the gun about 25 degrees so the muzzle comes toward the viewer, with the barrel rings as visible ellipses that shrink toward the rear."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the console is seen from high up, but it sits on a hard straight line between flat grey floor and flat orange wall, with the floor empty and just a contact shadow to ground it. The depth stops at two plain bands. B: plate and fruit are seen from a high camera that agrees with the diagonal table planks, and the ellipse of the plate matches the board angle.",
+   "fix": "Lower the camera a little and show the console on a real surface whose lines recede at the same angle as its base, with a softer floor-to-wall transition."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the capsule is dead frontal, centered and swollen, with a smooth rainbow sphere in the normals. The room around it uses wide-angle curved ceiling and floor arcs that wrap around the hero, while the feet sit at a shallower angle than the floor rings. B: dock, boat and water share one high camera; plank lines, the boat rim and the lily pads foreshorten together.",
+   "fix": "Turn the capsule a quarter to one side, use mild perspective, and draw the floor rings as flatter ellipses that match the feet."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the planet floats with no ground plane, and its background is a flat sky with no spatial link to the hero. The two small moons are just pasted-on scale cues, and planar_share 0.618 above the real range comes from that empty backdrop. A: the topiary stands on a grass plane with a planter ellipse, a receding path and a simpler hedge behind, so there are three clear depth layers.",
+   "fix": "Add one clear depth layer: a soft nearer cloud band low on the card overlapping the ring, with distant moons smaller and paler."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the pool ellipses, grass and fence corner all agree on one high camera, with the fence receding behind. B: the jacket floats in mild three-quarter view on a sunburst, with sleeves and cuffs turning the same way. Each is consistent inside its own view, and neither looks forced or wide-angle.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the wheel and its stand are dead frontal while the deck planks recede from above, but a frontal hero over a receding floor also appears on real cards. B: the telescope has strong foreshortening along the tube and stands on a curved deck, and its 0.002 planar_share reflects only smooth surfaces. Each has a small view mismatch, and neither gives a clear reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the robot's head and chest are turned slightly and show a top face, yet the feet sit almost flat-on near a blurred soft horizon, so the stance reads as a posed figure on an empty band. B: the vending machine has a consistent three-quarter box, with an even flat front and side in the normals and mild convergence.",
+   "fix": "Set all parts of the robot to one slightly raised three-quarter view, with the feet showing their top faces and the same turn as the chest."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the book, table and rail share a high diagonal view with a tight crop and a simpler hedge behind. B: the chair has a low-to-mid view on a curved floor edge. Its seat and back are slightly mismatched, but the crossed legs still land on the floor. A's planar_share of 0.53 is only just above the real range, and I see no firm viewpoint flaw on either card.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the saucer rim shows from above with the dome sitting on a lit top band, while the underside hatch shows from below on the same object, so two camera heights are merged. There is no depth layer beyond flat rings. A: the player is a clean tilted flat-lay, with faces, cable and earbuds agreeing on one view; even patches in the normals mark its flat front.",
+   "fix": "Choose one view: camera slightly above the saucer, the rim a single ellipse, the underside hidden except for a thin shadowed edge."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the helmet is near frontal and swollen, cut against a hard straight floor line. The grey floor is empty and the base ring is a shallow ellipse, with only a contact shadow, giving two flat bands of depth. A: the cart shows a mild three-quarter turn, the wheel ellipses and awning agree, the paved floor recedes, and the far wheel overlaps behind.",
+   "fix": "Turn the helmet a quarter to one side, show the base ring as a fuller ellipse, and use a soft floor line with a surface that recedes under it."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the rocket body is in near flat side view, tilted on the card, but the nozzle opening shows from below and the fins do not foreshorten with the body. Its normals are one smooth bulge. B: the submarine shows a plain three-quarter turn with the nose nearer and the tail smaller, with portholes turning around the hull in one view. Both are on flat bursts, so this rests only on the rocket's mixed view.",
+   "fix": "Point the rocket slightly toward the viewer so the nose is larger, and make the nozzle ellipse and fins follow the same turn."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through a centered, near-frontal or generically turned hero with parts on slightly different views: panels flat while the body turns, a saucer showing both top and underside. Their ground is often a bare band with a hard or curved horizon rather than a surface receding under the object, and depth is two flat layers instead of a separate foreground, hero and background. Swollen forms also appear as one smooth rainbow in the normals."
+}

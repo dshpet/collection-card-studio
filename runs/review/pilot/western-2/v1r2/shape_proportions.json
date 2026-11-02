@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the jacket is inflated. The sleeves are thick padded tubes, the orange cuffs and collar are fat rolled rings, and the pockets bulge, so the silhouette reads as a puffer toy rather than a shirt-weight scout jacket. B: the hat has a clean drooping brim that thins toward the edge, a pinched crown, and a thin band with a true-to-life proportion to the crown.",
+   "fix": "Draw a slim scout jacket of thin cotton: narrow sleeves that hang close to the body, flat cuffs and a flat collar with crisp edges, pockets lying flat on the chest."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the neck pillow is swollen, but an inflated pillow is meant to be, and its U shape and small valve are correct. B: the instant photo is a flat sheet with straight edges and tight corners. Its high straight_share and solidity come from being a rectangle, not from a flaw. Neither form departs from its object.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the wristband is a clean ellipse with a slightly thick wall and raised icons; zero corner_rate is what a smooth ring gives. B: the star badge has correct five arms with ball tips, somewhat soft inner corners, and a thin pin kept thin. Both forms are simplified without clear distortion, and no shape evidence separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the mooring posts are oversized stubby blocks, as wide as several planks, with blunted tops. The life ring is enlarged against the short pier and the rope coil is fat, so the scene reads like a toy set. B: the saloon keeps flat wall planes, straight trim runs, tight corners at the stepped false front, and thin porch posts and rails.",
+   "fix": "Draw slim round pier posts with crisp cut tops, much narrower than the deck is wide, a thin rope, and a life ring smaller than the deck section, with long straight planks."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the saddle seat and skirt are swollen like a cushion, with a heavy rounded horn and a thick stubby strap running into the stirrup, and all contours are soft. B: the beach ball is a true sphere with slight panel seams at the edge; its out-of-range straight_share and zero corner_rate are just what a circle gives.",
+   "fix": "Draw the saddle with a thinner leather seat and flatter skirt with defined edges, a smaller horn, and a long narrow stirrup strap."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the ice tray's corners are soft blobs. The rim is a fat rounded lip, the cell walls bulge outward, and the ice cubes are pillowed with no flat faces or crisp edges. B: the coffee pot keeps straight tapering sides, a clean spout edge, a thin riveted handle and a true lid proportion; only the logs are a bit stubby.",
+   "fix": "Draw a tray with a thin flat rim, straight cell walls and tight corners, and ice cubes with flat faces and crisp edges."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the sneakers have an inflated white midsole, a bulbous toe and rope-thick laces, with every contour rounded into lumps. A: the lasso holds an even rope width with a knot and neat coil. Its low solidity and corner_rate come from the open loop, not a defect.",
+   "fix": "Draw running shoes with a thinner sole with a clear straight edge, a slimmer toe, and thin flat laces."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the cactus is plump but has a correct trunk, two arms and a tapered pot, and its spines are thin. B: the vending machine is a bit squat, with soft top corners, but it keeps planar faces, straight sides and small feet. Each is mildly rounded, and neither stands out.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the boot has a true shaft-to-foot proportion, a defined heel and a thin spur rowel; the high corner_rate comes from the spur's spikes. B: the cap's board has flat faces, a straight run and a thin cord, with only a slightly thick board and rounded corners. Both forms hold up.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the map sheets are thick slabs, not paper. The lower folds are swollen rolled lips, the stack relation is confusing, and the edge notches are arbitrary. Solidity 0.951 is above the real range. A: the bottle has a believable body, shoulder and neck, a straight lower side and a tapered cork, though it is slightly stout.",
+   "fix": "Draw thin sheets of paper with a sharp fold line and a thin crisp edge, each stacked sheet clearly separate, without thick rolled lips."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the bus is shortened and tall, with a soft roof, but has thin railings, a thin mirror arm and the correct two decks. B: the locomotive has an oversized funnel and a chunky cowcatcher, but its parts are all present and the coupling rods and rails stay fairly thin. Both are stylised vehicles like the real taxi, so shape gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the wagon cover is a swollen lobed blob, with straight_share 0.194 below the real range. The body is short, the wheels are thick and oversized with heavy spokes, and the tongue is stubby, so the proportions are toy-like. B: the fountain has clean concentric tiers with crisp rims and a believable stem-to-bowl stack, though the water is a little thick.",
+   "fix": "Draw a long wagon bed with a taut canvas over evenly spaced hoops, a straight lower edge, slimmer wheels with thin spokes and rims, and a long thin tongue."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through inflation: form is fattened and shortened, so parts swell into padded tubes and thick lips, thin parts such as sleeves, posts, straps and paper edges bulk up, corners go soft, flat planes bulge, and proportions tip toward a toy. Real cards keep straighter runs, tighter corners, slimmer parts and truer part-to-part scale. The metrics alone mislead, because rectangles, spheres and open loops fall outside the real range for innocent reasons."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the umbrella canopy is seen from above on its near panels, while the far panels hang open like a skirt, so top and underside both show strongly. The pole runs one clean line, but the canopy reads as two views joined at the scalloped rim. B: the star is one flat, nearly frontal plate with even normals and bevel edges at one angle, like the real clock.",
+   "fix": "Draw the umbrella from one slightly raised three-quarter view. Show the top of the canopy, with only a thin sliver of the inside at the far edge."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the boot opening is an open ellipse seen from well above, but the foot and sole are almost pure side view, with no top-of-foot turn to match. B: the cap board is one even top patch, and the band and gold rim curve down to agree with it, with mild perspective.",
+   "fix": "Turn the whole boot to one three-quarter view from slightly above. The boot opening should be a narrow ellipse and the toe should turn toward the viewer to match."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the collar is seen from above, looking down into the neck, but both cuffs open toward the viewer as if seen from the front and below. The torso and sleeves do not share one view. B: the hat brim and crown agree on one raised three-quarter view, and the brim dips and foreshortens smoothly.",
+   "fix": "Draw the jacket from one straight-on, slightly raised view. Cuff openings should be thin slivers, or hidden, and match the view into the collar."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the arrow boards show their undersides and thick bottom edges, as if seen from below, yet the post top shows a lit upward face, as if seen from above. The two arrows also splay at strong, unrelated angles. A: the booth is one mild two-point view with a slight narrowing upward, sitting on a level ground line.",
+   "fix": "Draw the signpost from one eye level just below the boards. Show the undersides of the arrows and no top face on the post, with both arrows turned only slightly from the card plane."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the camera is high, looking well down onto a court that fills the card with no horizon, and the grip end swells toward the viewer, which is forced perspective. A: a low, near-eye-level view with mild perspective and a hero planted on sand below a simple backdrop. However, A's planar_share of 0.003 is below the real range, so the evidence is mixed.",
+   "fix": "Lower the camera to a gentle three-quarter view, less top-down, and keep the racket head and grip end closer in scale."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the suitcase front is almost flat-on with barely any top face, but the floor planks fan out strongly as if seen from higher up, so the hero and the ground disagree on camera height. B: the barrel rim ellipse, smile-curved hoops and base all agree with the floor's raised view.",
+   "fix": "Raise the suitcase view slightly and turn it a little so a thin top face shows, matching the angle of the floor boards."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a long-lens, near-side view of the teapot on a rock ledge, with a separate rock front as an added foreground layer, reads as a tabletop photo more than a card. The ellipses themselves are consistent. B: both shoes share a raised three-quarter view on a simple floor and wall split, though the far shoe is almost the same size as the near one.",
+   "fix": "Raise the camera slightly into a mild three-quarter view and drop the rock front. Stand the teapot on one simple ground plane."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the locker's outer top face is seen from above, while its inner ceiling is seen from below in the magenta normal patch just under it, and the shelf and floor are seen from above. The perspective is forced inside the box, and the baseboard angle adds to it. B: the poster is dead frontal, matching the frontal planks. Its planar_share of 0.906 is above the real range, but that comes from a flat subject, not a view error.",
+   "fix": "Draw the locker from one camera slightly above its top. Show the outer top face and the shelf tops, with no underside of the inner ceiling, and use mild perspective."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: a high, close camera looks down on the deck and water with no horizon, and the deck plunges diagonally while the posts are cropped large, giving strong forced depth. A: the saloon has a raised three-quarter view with parallel verticals and a simplified town behind, although its front is nearly flat-on while the side recedes hard.",
+   "fix": "Lower the camera to a gentle three-quarter view and step back. Show less top of the deck and keep the far post closer in size to the near one."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the camera sits high above the boat and pier, with no horizon and water filling the card, and the top faces dominate the normals as one green field. The pier also recedes steeply. A: the wagon has a lower three-quarter view with wheels and box agreeing, and clear foreground grass, road, field and sky layers, although the depth stack is busy.",
+   "fix": "Lower the camera so the boat is seen from a gentle three-quarter angle with more of the hull side, less inside and less top of the pier."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the mesa horizon sits low, so the platform and tank are above eye level, yet their tops are shown from above in green normals. The wheel is flat-on while the tower is three-quarter, so the parts do not share one view. B: the door and wreath are one frontal view, with the left and right jambs agreeing on a central eye point. Its planar_share of 0.012 reflects the leaves, not the camera.",
+   "fix": "Draw the windmill from a low eye level. Show the undersides of the platform and tank with no top faces, and turn the wheel to match the tower's angle."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a low, close camera swells the car nose toward the viewer, with wide-angle bulge and smooth rainbow normals on the body, and the rink edge curves behind it. The floor is a strong near layer with a reflection. B: both fins share one mild raised view, with even, flatter faces and no ground, like the real floating items.",
+   "fix": "Step the camera back and raise it a little. Use a mild three-quarter view so the car nose and rear stay close in scale, with a straight rink edge."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through camera conflicts. Parts of one object, or the hero and its ground, imply different eye heights, such as tops shown above the horizon, floors steeper than the hero, or cuffs and collars seen from different sides. Generated cards also favour a high or close camera with forced perspective and big top faces, where the real cards keep one mild three-quarter view, a simple ground plane and a calm backdrop."
+}

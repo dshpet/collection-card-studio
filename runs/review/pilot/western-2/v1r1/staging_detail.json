@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Both cards float the object on the same tone-on-tone concentric ring field, with no ground or props. A's cap sits on cyan rings and B's boot on orange rings. B's background detail (0.0067) is just under the real range, but the rings are as quiet as A's.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Both are category 1 with no props. A's badge is on a soft magenta diamond checker and B's bracelet is on cyan rings. Both patterns are tone-on-tone and sit behind the hero. A's detail (0.0063) is slightly low, which only means a quiet field.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A's jacket sits on many thin, tightly packed green rays with a dark corner vignette, like the dense ray fields on the generated gloves in the lessons. B's hat sits on a few broad, calm blue rays, like the real cards. A's rays are the busier background (detail 0.0115 vs 0.0075).",
+   "fix": "Use a plain green background with about twelve wide, soft, tone-on-tone rays, no thin lines and no dark corners."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B's signpost has a pink butterfly perched on top, an invented story prop the object would not have, against a sky with several cloud groups (edge 0.014). A's ticket floats alone on quiet vertical stripes (edge 0.004) with no added decoration.",
+   "fix": "Remove the butterfly. Show only the signpost against a simple blue sky with one large soft cloud."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A's cactus stands on a plain sand ledge in front of a pink gradient. B's vending machine stands on a purple floor that fades into the wall, with a soft glow beneath it. Each has a simple backdrop and no secondary props. A's edge density (0.006) is a little low only because its field is so plain.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B hangs the saddle on a large fence, with two posts and two rails framing the card, over a loud orange wave pattern. The fence is a big secondary structure and raises edge density to 0.026. A's beach ball simply rests on soft sand dunes with nothing else in frame (edge 0.003).",
+   "fix": "Show less fence: one thick plain rail under the saddle, no side posts, with a soft plain orange background behind it."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A places the lasso on a wooden rail with a corner post and diagonal brace, so the staging adds a built structure (edge 0.021, top of range). B's sneakers stand on a bare two-tone floor and wall with only a cast shadow (edge 0.015).",
+   "fix": "Rest the rope on one plain wooden ledge with no corner post and no brace."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B's wagon stands in front of hard, high-contrast cyan and pale stripes that are not tone-on-tone, on dirt scattered with grass tufts and pebbles. A's fountain has quiet yellow tone-on-tone stripes. Its paving is detailed (edge 0.046), but it is one purposeful ring around the base.",
+   "fix": "Make the background stripes two close shades of blue. Keep the ground as smooth dirt with no pebbles or grass tufts."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A surrounds the coffee pot with a story set: burning logs, embers, flames and scattered stones on rippled sand, all under strong red rays. B's ice tray sits on plain wooden planks with no added props.",
+   "fix": "Drop the scattered stones and keep the campfire small. Stand the pot on smooth sand with softer, low-contrast rays behind it."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A's saloon stands whole on desert with distant mesas, clouds and a scatter of pebbles. B is a cropped close-up of a pier with a rope-wrapped post and lifebuoy over rippling water and a beach corner. Both carry similar environment load (edge 0.032 vs 0.027), so neither stands out.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A's train has mesas, clouds, tracks with sleepers and scattered rocks. B's bus has window-lined pink and green buildings, a kerb and a speckled road. Both environments are similarly dense (detail 0.0241 vs 0.0231) and within the real range, and the hero stays central in each.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B's jellyfish has added bubbles, diagonal light shafts and a bright water-surface line across the top edge, pushing edge density to 0.033, far above the real range. A's wheel is cropped against empty blue sky with nothing added (edge 0.014), like the anchor's wheel staging.",
+   "fix": "Remove the bubbles, the top surface line and the hard light shafts. Use a smooth deep-blue gradient behind the jellyfish."
+  }
+ ],
+ "pattern": "Generated cards give themselves away through added staging rather than the field itself. They bring extra story props (butterfly, rope and lifebuoy, rocks and islands), scattered small pebbles and tufts on the ground, and large structures that frame the hero. They also use denser or higher-contrast rays and stripes than the real tone-on-tone fields, and tend to show the whole object rather than a calm crop. Real cards keep a few large quiet shapes and one simple support. In the plain category 1 cards this vector separates little."
+}

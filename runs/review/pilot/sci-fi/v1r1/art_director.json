@@ -1,0 +1,101 @@
+{
+ "issues": [
+  {
+   "issue": "Invented sci-fi sets and decorative extras surround the hero: riveted floors, glowing strips, neon rings, columns, moons, sparkles and an Earth. Real cards use a few large quiet shapes and keep the detail in the hero.",
+   "specialists": [
+    "staging_detail",
+    "composition_hierarchy",
+    "value_contrast",
+    "color_palette"
+   ],
+   "instruction": "Stand or float the hero on one plain surface or one calm backdrop. Keep every glow, prop and panel line off the setting. Affects p01, p02, p09, p11 and p12."
+  },
+  {
+   "issue": "Backdrops are as loud as the hero: full-strength yellow and teal stripes, magenta-to-cyan skies, pink nebula, and a hot glow directly behind the object. Real backdrops stay in one hue family with close tone-on-tone steps.",
+   "specialists": [
+    "staging_detail",
+    "color_palette",
+    "composition_hierarchy",
+    "value_contrast"
+   ],
+   "instruction": "Use one background hue with a faint pattern in two close tones, evenly lit from edge to edge, so the hero is the loudest thing on the card. Affects p02, p03, p06, p08 and p11."
+  },
+  {
+   "issue": "Light is soft and frontal, so heroes turn as even gradients and lack the one large dark shape real cards have. Parts rarely shade each other.",
+   "specialists": [
+    "lighting_shading",
+    "value_contrast"
+   ],
+   "instruction": "Use one key light from the upper left. Give the lower right of the hero a broad, deep shadow side, and tuck a dark contact shadow under it. Affects p01, p02, p06, p11 and p12."
+  },
+  {
+   "issue": "Everything on the hero shares one wet lacquer finish with crisp streaky highlights, so metal, plastic and paint differ only by color. Real cards keep large satin or matte areas and shine in only one or two places.",
+   "specialists": [
+    "surface_finish",
+    "edges_linework"
+   ],
+   "instruction": "Make large areas satin or matte, and keep one or two small soft highlights on the glossiest part. Affects p01, p06, p08, p09 and p12."
+  },
+  {
+   "issue": "Neutrals pick up the colors around them: the pod's silver turns cream and blue, and the helmet's white leans cream.",
+   "specialists": [
+    "color_palette"
+   ],
+   "instruction": "Keep whites and silvers clean, with cool blue-grey shadows. Affects p01 and p12."
+  }
+ ],
+ "style_text": "",
+ "cards": [
+  {
+   "pair": "p01",
+   "keep": false,
+   "note": "Change the floor to one smooth, plain light-grey surface with a soft contact shadow under the collar. Give the white shell a satin finish with a slightly deeper cool blue-grey shadow on its lower right."
+  },
+  {
+   "pair": "p02",
+   "keep": false,
+   "note": "Show the ringed planet alone. Change the background to a smooth deep-blue sky with a few faint stars. Let the lower right of the planet fall into a deep dark crescent of shadow."
+  },
+  {
+   "pair": "p03",
+   "keep": false,
+   "note": "Make the ring backdrop evenly lit, with clear steps between two close purples and no bright pink glow around the saucer. Slightly darken the underside of the hull."
+  },
+  {
+   "pair": "p04",
+   "keep": true,
+   "note": ""
+  },
+  {
+   "pair": "p05",
+   "keep": true,
+   "note": ""
+  },
+  {
+   "pair": "p06",
+   "keep": false,
+   "note": "Change the backdrop to an even orange with a faint tone-on-tone pattern. Change the white floor to a warm mid-orange. Light the robot from one side so its other side falls slightly darker."
+  },
+  {
+   "pair": "p08",
+   "keep": false,
+   "note": "Change the background to diagonal stripes in two close shades of teal. Make the red body satin paint with one broad soft highlight, and make the grip matte."
+  },
+  {
+   "pair": "p09",
+   "keep": false,
+   "note": "Set the console on a plain matte grey surface. Paint the wall stripes in two close orange tones. Make the buttons satin with small faint highlights."
+  },
+  {
+   "pair": "p11",
+   "keep": false,
+   "note": "Show the station alone on a calm deep-blue background with a faint tone-on-tone pattern. Light it with one sun from the side so the hull's lower side falls into a soft deep shadow."
+  },
+  {
+   "pair": "p12",
+   "keep": false,
+   "note": "Place the pod in front of a plain soft-blue wall on a smooth floor, with a soft dark shadow beneath it. Make the shell matte clean silver, and keep the bright light only in the small door lamps."
+  }
+ ],
+ "summary": "Close on the object, not yet on the setting. The heroes already sit near the real cards in rendering and color, and the rocket (p04) and telescope (p05) can pass as they are. The UFO (p03) needs only a light backdrop fix. The biggest giveaway is staging: invented sci-fi sets and loud backdrops on p02, p08, p09, p11 and p12. Soft frontal light and one lacquer finish come next.\n\nOverruled:\n- All shape_proportions fixes, because form can't be judged across different objects.\n- Viewpoint and framing fixes, because they fall outside what notes may change.\n- Calls that named real cards, including the p05 wheel, p02 topiary, p11 gate and controls p07 and p10. Those specialists were reading real-card traits as faults."
+}

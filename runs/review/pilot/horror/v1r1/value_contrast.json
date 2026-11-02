@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the cream envelope is one large, near-white shape on a mid-green ground, with only soft darks in the photo inset. Its hero is lighter than the background, and the corners darken gently. B: the bat's body and wing edges drop to near-black, with hard glossy wing highlights, against a pale yellow field. The hero-to-background gap of -0.411 is far outside the real -0.290 floor, and rms 0.168 is just over the real top.",
+   "fix": "Lift the bat's body and wings to a dark-middle purple-grey, keep black only under the belly and in the eyes, and soften the wing highlights so they fade out gradually."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cauldron is one huge black mass filling the card centre, under a hard white rim of liquid. The rock ledge and magenta wall are dark too, giving mean 0.51, below the real 0.591, and vignette 0.101, above the real 0.086. B: bright wall and pale floor with midtone shoes, in a high key at the top of the real range and almost no vignette.",
+   "fix": "Raise the card to a brighter overall level: lighten the wall behind the cauldron and the stone ledge to clear middle tones, make the cauldron a dark grey with a broad soft sheen, and keep black only under the rim and feet."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the topiary is a clear dark shape against a light sky band, with a dark hedge band and light path, so the hero separates by value. B: pumpkins, leaves, fence and grass all sit in the same middle greys, so the hero separates by hue only. Its rms of 0.115 is below the real 0.124 and the lens shows no dominant light or dark group.",
+   "fix": "Darken the grass and fence behind the pumpkins into one simple shape, make the sky one lighter shape, and add a soft light side and a dark shadow side to the biggest pumpkin."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the white column sits on a maroon wall that crushes to black in the lens, with noisy speckle at top left. Mean 0.514 and gap 0.295 are both outside the real range, and the local contrast on the flutes is hard. B: the suitcase is a mid-dark shape on a white sunburst sky, which matches the real suitcase card's grouping, though its 0.792 mean is above this set's range.",
+   "fix": "Lighten the wall behind the column to a clear middle tone so it never reaches black, soften the shadows in the column grooves, and bring the overall card brighter."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the gravestone is mid-grey against a pale sky of similar value, and its edges and moss break into speckled patches in the lens. The only strong dark is the cast shadow on the grass, so the hero barely groups. B: the slide has large clean light and dark shapes, with a long dark underside, bright deck and clear stripes. Numbers do not separate them, as both are near the bottom of the real rms range.",
+   "fix": "Make the stone one smooth, clearly darker shape against the pale sky, with a broad lit side fading softly into a shaded side and no fine speckle."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the mower has a dark red body and black wheels on a mid background with a soft circular glow, so hero separation and darkest accents are clear. Gap -0.272 is only slightly past the real floor. B: the broom has pale bristles and a mid handle that nearly match the teal wall, and the only dark is the small cast shadow. Rms 0.087 is well under the real 0.120, and mean 0.757 is just over the real top.",
+   "fix": "Add a dark shadow side to the bristle bundle and handle, darken the wooden floor in front of the broom, and make the wall behind it a little deeper so the broom stands apart."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: near-black roofs and dark trunks run hard against white window shapes and the white moon, so dark accents are scattered widely and local contrast inside the house is hard. Gap -0.199 is slightly past the real floor. B: the door is one large dark-blue value group with a light wreath, though the lens is grainy along the panels and its vignette of -0.07 is at the real edge.",
+   "fix": "Lighten the roofs to a dark-middle purple, soften the window glow into the walls, and keep the darkest tone only under the eaves so the house reads as a few big shapes."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the pumpkin body sits in the same middle grey as the purple rays, so the hero separates mostly by hue. Dark falls in one crescent under the jaw and rms is low at 0.089. B: the jacket is light with a dark sash on a darker ground, separated by value, though its dark corners give vignette 0.134, above the real 0.123. Evidence is weak in both directions.",
+   "fix": "Make the pumpkin's top left clearly lighter than the purple background, and let the shadow side fall off gradually toward the bottom right."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the crystal ball is a broken pattern of middle greys against a similar mid-light wall, with hard patches inside the swirl and a near-black table band along the bottom. B: the vending machine is a strong dark side panel beside a bright window on a mid wall, with a soft floor glow, so it forms clear large groups.",
+   "fix": "Keep the sphere's inside to one soft light swirl on a smooth darker base, and lighten the table's front edge so it does not form a black band."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the coffin is a dark mid-grey block on a dark stone floor with a mottled, noisy lens. Its near-black cast shadow merges with the floor, so the lower card is one heavy low-key mass with weak hero separation. B: the chair has mostly light wood, a pale floor and darker stripes, so the hero stands light on dark at the top and the darks are small and clean.",
+   "fix": "Lighten the stone floor to a smooth pale tone, lift the coffin lid to a warm light brown, and shorten the cast shadow so the coffin stands out from the ground."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the gold candelabra and pale candles sit on a flat bright cyan ground with almost no dark anywhere. Mean 0.822 is above the real 0.793, rms 0.081 is below the real 0.085, and vignette -0.02 is below the real 0.008, so the key is washed flat. B: the dark lamp frame gives a strong dark silhouette against bright rays, with a white glow inside, though its gap of -0.292 is right at the real floor.",
+   "fix": "Deepen the background a little toward the corners, and give the gold arms and base darker shaded undersides so the candelabra has a real dark group."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: balloons are broad mid shapes with small soft highlights over large light cloud shapes, with very clean groups. B: white sails form a big light mass over a darker hull and water, with a sunburst behind. Both have large, readable groups and every number sits inside the real ranges, so value gives no reason to choose.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through tonal extremes in the wrong places. Heroes fall into near-black masses or heavy dark backgrounds that push the key and hero gap past the real range, and local contrast inside the hero is hard, with crisp glossy highlights instead of gradual roll-off. At the other extreme, some flatten into one bright or middle tone with no dark group at all. Real cards keep a few simple large value groups with a broad soft fall of light, and they reserve the darkest accents for small contact areas. The value lens also shows generated cards breaking into mottled, speckled patches on stone, floor and table surfaces."
+}

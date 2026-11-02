@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: dense burst of many thin green rays of mixed width, with a dark vignette in the corners and a bright glow behind the jacket, so the backdrop is busy around the hero. Detail 0.0115 is in range but above B. B: a few broad blue wedges, closer to the real spyglass and taxi fields, though slightly cleaner than real at 0.0075.",
+   "fix": "Plain green background with about twelve broad, even, soft rays in two close greens. No dark corners, no thin rays, no glow behind the jacket."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: crisp tone-on-tone pink rings, detail 0.0159 just over the real ceiling. B: faint, blurred, unevenly spaced light blades on crimson that do not read as a regular burst. Each departs mildly from the real fields in a different way, and both are category 1 with no props, so nothing separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: blue concentric rings, quiet and in range. B: purple tone-on-tone diamonds, quiet, detail 0.0062 slightly under the real floor. Both badges float on a flat field with no added props or sparkles, and neither backdrop competes with the hero.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the saloon is shown whole and centred like a model on a table, with small pebbles sprinkled along the bottom edge, mesas on both sides and clouds. This matches the generated lighthouses, which sit complete on a rock base. A: the dock crops off the card at the right, with the scene built from a few large shapes of water and sand, like the real cropped bird feeder and lighthouse. Metrics are nearly equal.",
+   "fix": "Move in close so the saloon crops off one side of the card. Bare flat sand with no pebbles, one distant mesa, plain sky."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the saddle hangs on a wooden rail that runs edge to edge across a flat wave field, and a blue shadow pool sits under the stirrup on empty air, so the staging is neither floating nor standing. B: the ball sits on real sand with a solid cast shadow and quiet dune shapes, a clean category 3, though edge 0.003 is below the real floor.",
+   "fix": "Remove the rail and the shadow under the stirrup. The saddle floats alone on the flat blue wave pattern, or stands on one plain ground ledge."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the pot sits directly on an added campfire of four logs and flames, a large story prop taking up the lower third, on rippled sand with a ray backdrop behind, and the flames throw no light on the sand. A: the tray stands simply on broad wooden planks against soft rays with no added prop, closer to the real computer on its desk.",
+   "fix": "Remove the logs and the fire. The blue coffee pot stands alone on a plain smooth surface with one soft shadow."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a large fence rail and cropped post fill the lower left corner, an extra built prop with heavy wood grain, pushing background detail to the top of range (0.013 / 0.021). B: sneakers on a plain pale ledge against a plain orange wall with no props, a clean category 2 at 0.0089 / 0.015.",
+   "fix": "Replace the fence with one plain flat ledge across the bottom of the card, no post, no bracket, no wood grain."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: cactus on a plain sand ledge against flat magenta, a simple category 2. B: vending machine on a seamless purple floor and wall with a soft reflection. Both are quiet, have no secondary props and measure almost the same.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: orange rings with a yellow centre, detail 0.0067 a little under the real floor. B: blue rings at 0.0094. Both are the same quiet category 1 tone-on-tone field with no props, so the small metric gap is not enough to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the seabed carries about eight bubbles, seaweed clumps on both sides, dark rocks and light shafts around the bottle, more small items than the real environments, which use a few large quiet shapes. B: a stack of maps on plain wide pink diagonal stripes, like the real spyglass field, with no extras. The soft blur on A's backdrop keeps this weak.",
+   "fix": "Keep only rippled sand and soft blue water behind the bottle. Remove the bubbles and rocks, and leave at most one dark seaweed shape at the edge."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the locomotive is complete and contained, with rail ties, many sprinkled stones along the track, mesas on both sides and clouds, edge 0.075 and full of small items like the generated lighthouses. A: the bus fills the card and nearly touches the edges, with a simple street and a few soft building blocks, edge 0.051, like the real taxi and bird feeder.",
+   "fix": "Enlarge the train so it crops off the card edge. Plain desert ground with no stones, a simple track, and one distant mesa."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: a wide paving ring of many small bricks wraps the fountain beneath a striped wall, detail 0.0169 and edge 0.046 at the top of the real range, so the ground is the busiest part of the backdrop. A: plain sand ledge under quiet blue stripes at 0.0102 / 0.020, a simple category 2.",
+   "fix": "Replace the brick paving with one plain smooth stone floor, no brick joints, and keep the striped wall behind quiet."
+  }
+ ],
+ "pattern": "Generated cards show the hero whole and centred like a model on a table, then fill the setting with small invented items: rock bases, sprinkled pebbles, rails, logs, bubbles. Real environment cards crop the object and use a few large quiet shapes. On flat fields, generated bursts have too many thin rays with a glow behind the hero and dark corners, while real fields use broad, even, soft wedges. Generated props can also break the staging, such as a shadow on empty air or a rail across a flat graphic field. Ring and diamond backdrops gave no signal in these pairs. Calls rest only on staging and backdrop evidence, not on subject matter or the run's folder name."
+}

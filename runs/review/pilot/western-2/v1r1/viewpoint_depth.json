@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the cap's board is one even green patch with mild convergence, and the skull band below curves as seen from the same high camera, so the whole object shares one view. B: the boot mouth shows its inside from above, while the toe shows the dark underside of the sole as if seen from below. The shaft and the foot do not share one camera, and the toe swells into a smooth rainbow.",
+   "fix": "Draw the boot from one slightly raised three-quarter view: show the inside of the top opening, keep the sole edge hidden under the toe, and make the toe less bulbous."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the star faces the camera almost dead-on, yet the pin sticks out at the right and a thick side edge shows along the right points, so the depth cue is stuck onto a frontal shape. B: the wristband is one tilted ring, and its near and far rims and the raised icons all follow the same ellipse. This is a weak call because neither card has a ground plane.",
+   "fix": "Turn the whole badge about 20 degrees so the star face narrows on the far side, and show the thickness and pin from that same angle."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the hat band arcs as if seen from above and the left brim shows its top, but the right brim shows a large area of underside, so the brim mixes views. Part of this could be the curl of the brim. A: the jacket has its own flaws, with cuff holes open to the viewer over a nearly flat hem, but collar, sash and pockets all follow one turned body.",
+   "fix": "Show the hat from slightly above with the crown turned a little, and let the top of the brim show on both sides with only a thin underside edge."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: both arrow boards show undersides along their lower edges, as from a low camera, yet the top of the post is visible as from above. The boards are thick and chunky, which matches the direction of the generated lessons. A: the ticket is a flat shape lying in the picture plane with almost no depth (planar_share 0.957, outside the real range), but it uses no camera at all, and the lessons show generators adding volume rather than removing it. This is a weak call.",
+   "fix": "Use one low camera for the signpost: hide the top of the post or cut it level with the eye, and make the arrow boards thinner so only a narrow underside shows."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cactus is dead-frontal and symmetrical, the pot rim opens wide as from above, and the table is a dead-level band with a straight back edge, so rim and body disagree on camera height. Its planar_share of 0.042 is below the real range. B: the vending machine is a plain three-quarter turn with a side face and a front face, mild convergence, and a soft floor line at one height.",
+   "fix": "Turn the pot and cactus slightly to one side, lower the camera so the pot rim is a thin ellipse, and let the table edge run at a slight angle."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the fence rails both rise to the right as near-parallel lines without converging, while the posts stay dead vertical and flat-on. The saddle seat is seen from above, the rail is close to eye level, and there is no ground under the fence. A: the ball's top panel faces up at the camera and the sand fills the card as one high-angle plane. The ball reads oddly flat in the lens (0.613), but that may be a lens error on glossy panels.",
+   "fix": "Put the fence on one plane with rails that converge slightly toward the far post, seen from the same raised three-quarter view as the saddle seat."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the loop hangs as a wide ellipse tilted up to the right, while the coil below is a level ellipse seen from above and the beam drops down to the right. These three planes disagree, and the loop floats without support. Its planar_share of 0.001 is below the real range. B: the sneakers sit on one floor with a straight horizon at about mid-height, both shoes share one raised three-quarter view, and convergence is mild.",
+   "fix": "Lay the rope in one consistent view: make the loop ellipse parallel to the coil and the beam, seen from the same height, with the rope resting on the wood."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the near wheel is clearly larger than the far wheel and the tongue shoots toward the left, which gives a pushed, wide-angle look. The cover's front opening and the side wheels both open wide to the viewer at once, on a high ground line. A: the fountain's tiers keep nearly the same ellipse openness from top to base, and the paving sits on one plane, so the mild camera is consistent.",
+   "fix": "Use a milder lens: make the front and rear wheels nearly the same size, and turn the wagon so the side is dominant and the cover opening is a narrow ellipse."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the logs are laid out as a wide ring seen from noticeably higher than the kettle, whose lid and base are shallow ellipses (roughly 0.37 against 0.2 openness), so the fire and kettle are on slightly different cameras. B: the tray shows a lot of top face from a high camera with fairly strong plank convergence, which leans toward the lessons' generated look, but all parts share one view. This is a weak call.",
+   "fix": "Lower the camera on the campfire so the log ring is a shallower ellipse that matches the kettle's lid and base."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the distant mesas put the horizon low, near the porch, which implies a low camera, yet the facade top barely converges and the awning top is clearly visible. The front is nearly flat-on with a narrow side wall. B: the dock uses one high camera, with deck, water and post tops agreeing on one plane, though the near post looks somewhat wide-angle. This is a weak call.",
+   "fix": "Choose one camera for the saloon: either lift the horizon to mid-building, or keep it low and let the roofline slope clearly down to the far side."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the train has strong wide-angle convergence from cowcatcher to cab, but the round smokebox face and side wheels agree on one turn, and the rails sit on one plane. B: the bus has an equally strong or stronger shrink from front to rear, and planar_share of 0.535 is slightly above the real range, but road, kerb and blurred buildings stay consistent. Both are forced compared with the real taxi, so this vector does not separate them.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "A: the Ferris wheel has the same crop, hub position and gondola layout as the real card in image 1 (visual match only, not pixel-tested). The wheel rim and spokes share one mild turned view. B: the jellyfish floats with no ground, and light rays give a simple background depth, with soft layers that suit its subject. Neither card shows a viewpoint fault.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards tend to show the whole hero fully inside the frame, from a camera higher and closer than the real cards, with more top face and chunkier thickness. Parts often disagree on camera: an opening seen from above sits with undersides seen from below, ellipses change openness between parts, or lines stay parallel where they should converge. Real cards hold one mild turned view and often crop the object."
+}

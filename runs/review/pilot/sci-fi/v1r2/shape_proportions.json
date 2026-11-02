@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the satellite body is a stubby round ball, squat against its panels, with a short fat lens barrel, thick gold collars and swollen arms. The solar panels do keep long straight edges. B: the gate has thin ironwork, a flat brick post and tight corners. Its 0.389 thin_share and 0.552 solidity come from the mask catching only the ironwork, not from a shape fault.",
+   "fix": "Draw a slimmer, longer satellite bus with flat panels and thin struts instead of a round toy ball; keep collars narrow and corners tight."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the ray gun hull is one swollen egg with a fat grip and a blobby tail, and even the trigger guard and fin are soft and plump. A: the spyglass steps down through distinct barrel sections and keeps its long taper, though it is also somewhat stubby.",
+   "fix": "Slim the gun barrel and body, add flat panels and hard stepped edges between parts, and thin the grip to a real hand-sized handle."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the console reads as a soft pillow, with a big-radius blob at every shell corner and swollen sides. straight_share 0.642 is above the real range and corner_rate 0.787 is below it. B: the fruit silhouette has specific part shapes, a sharp melon wedge tip and a leaf crown.",
+   "fix": "Draw the console as a hard wedge box with flat top and side faces and tight bevelled corners, not an inflated shell."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the pod is an almost perfect inflated sphere on short stubby legs with fat round feet, and nothing in the silhouette breaks the ball. B: the dock has straight planar plank runs and a crisp corner, the hull tapers to a real bow point, and the rope stays thin.",
+   "fix": "Give the pod flat base plates and a defined hatch frame, with thinner, longer legs and small feet instead of a balloon on stumps."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the planet is a perfect disc with a thick sausage ring whose ends are rounded lobes, and the moons are plain circles. straight_share 0.655 is above the real range and corner_rate 1.212 is below it. A: the topiary has stacked tiers of decreasing size and a leaf-broken edge; its low 0.185 straight_share simply comes from that foliage.",
+   "fix": "Make the ring a thin flat band tapering to fine edges at both ends, seen as a sliver rather than a thick tube."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the pool is three stacked tube rings, a proper inflatable form, so its near-convex 0.994 solidity is expected and not a fault. B: the jacket has puffy sleeves and tubular cuffs, but a believable collar, shoulder line and body proportions. Neither gives a clear shape reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the wheel has correct spoke and handle count in even radial order, with chunky but plausible bowling-pin handles and a flat-edged base. B: the telescope has a long tapering tube and three thin tripod legs in the right relation. Both low solidities are explained by the open forms.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the robot has an oversized head on a short body, sausage arms, blobby clamp hands, huge shoes and rounded head corners, a toy-enlarged proportion throughout. B: the vending machine is a tall straight box with planar faces, tight top corners and small feet.",
+   "fix": "Lengthen the limbs and torso, shrink the head and feet, make arms thin jointed rods, and give the head and chest flat plates with crisp bevels."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the chair frame is thick uniform tubing with soft joints, the seat is a sagging slab and the crossed legs do not connect in a clear way, so parts look fused. A: the book has straight page-block edges, a flat cover and a thin ribbon, though its pages are slightly swollen.",
+   "fix": "Use thin metal tubes with small distinct pivot joints, a clear X-leg folding structure, and a taut flat fabric seat."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the UFO is a dome on a thick rounded disc, with corner_rate 0.0 and a soft hat-like outline, and the saucer rim has no sharp edge or thin lip. A: the player is a soft rounded rectangle, but its earbud wires and stems stay truly thin, and the 0.083 thin_share comes from those wires.",
+   "fix": "Thin the saucer to a sharp tapered rim, with a flat stepped collar under the dome and a crisp edge instead of a fat puck."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the helmet is one inflated ball with an oversized visor and a fat ear disc, solidity 0.976 is above the real range and corner_rate is 0.0, with only a thin base ring breaking it. A: the cart has many separate parts, with thin posts, a straight-run roof edge, spoked wheels and a handle in true relation.",
+   "fix": "Add a flat neck ring with hard steps and smaller side fittings, and flatten the shell into distinct panels with tight seams, not a smooth balloon."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the rocket body is a swollen egg with fat, rounded fins, the nozzle is lost in a lumpy silhouette, and the centre fin is a sausage. B: the submarine is also plump, but its parts read separately, with a thin periscope bend, a tower step, a thin propeller and dive fins.",
+   "fix": "Slim the rocket into a longer body with straight flanks, thin flat swept fins with crisp tips, and a distinct stepped nozzle."
+  }
+ ],
+ "pattern": "Generated cards still inflate the object. Bodies become balls or eggs, boxes become pillows with large-radius corners, and thin parts such as fins, rims, rings and legs thicken into rounded sausages. Silhouettes end up simple and near-convex, with few crisp corners or straight planar runs and fewer separate parts than real cards, which keep hard steps and thin elements. The metric extremes that mark this are very low corner_rate paired with high solidity. Out-of-range numbers on open or foliage objects, such as the gate, topiary, or earbud wires, are mask or form effects rather than flaws."
+}

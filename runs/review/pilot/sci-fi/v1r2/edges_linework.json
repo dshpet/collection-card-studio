@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the solar panels carry an even, heavy double frame on every side and every cell gap reads as a dark groove, while the Earth limb is soft, so the line looks inked rather than varied. B: the gate is very busy (subject 0.323 and background 0.122, both above the real range), with brick, flagstone and scrollwork at equal strength, which is B's weak point. A's background (0.012) is slightly below range. The numbers lean B and the even contour leans A, so this is a low-confidence call.",
+   "fix": "Draw the solar panels with no dark frame line: thin hairline gaps between cells, and let the frame edge fade on the lit side so the panel separates from the sky by colour alone."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the raygun vents and grip slots are thick black-rimmed grooves, the body carries a strong even contour, and a soft glow halo sits around the green muzzle ball. A: the spyglass contour is lighter and breaks along the barrel, with thin rim lines, closer to the real glove and camera. Its outline value (-0.147) is below the real range, but that means weaker, not drawn, edges.",
+   "fix": "Make the vent slots thin precise seams instead of deep dark grooves, remove the glow halo around the green ball, and let the body edge soften on the lit side."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the console has concentric double lines around every recessed panel, button and fader (subject 0.192, above range), while the background is almost empty (0.005, below range). That gives dense even linework on the hero and nothing behind it. B: the fruit has more varied edges, with soft lost edges on the glass plate rim and sharpest edges at the melon and orange; its density and outline values are in range.",
+   "fix": "Reduce the console to fewer seams: one thin precise line around each panel instead of double grooves, and a softer outer edge along the lower body."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the capsule porthole has several heavy concentric rings of even weight, thick seam grooves cross the shell, and the lamps and floor rings carry soft glow bands. B: the boat has thick dark plank gaps on the dock, but its contour weight varies and the water ripples are loose. All values are in range except A's outline (-0.078), so the eye evidence is modest.",
+   "fix": "Use one thin ring around the porthole instead of stacked heavy rings, draw shell seams as fine hairlines, and remove soft glow bands around the lamps."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the planet and ring have a clean, unbroken, even contour with no lost edges, the band edges are vector-like, and subject density (0.068) is below the real range. A: the topiary is jagged and very dense (0.29, above range), but that comes from leaf clusters, and the rose arch among the real cards is similarly busy. Both are outside the range, so the even contour decides it.",
+   "fix": "Let the planet's edge disappear softly into the sky on the shadow side, and vary the sharpness of band edges: crisp only near the highlight, soft elsewhere."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the jacket has a continuous dark silhouette contour, and each badge and pocket carries a strong even ring or flap line, like the generated glove and camera lessons. A: the pool has broad soft tube edges with lost boundaries (subject 0.045, below range), and its dark marks come from grass and water ripples. A's low density is a mismatch, but it is not an outline.",
+   "fix": "Remove the dark contour around the jacket and let the sleeve edges soften into the background. Draw badge rims as thin light lines."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the wheel has a near-uniform dark inked contour around every handle, spoke and rim, so the edge hierarchy is flat. B: the telescope has varied edges, losing some on the white tube's lit side and sharpening at the gold bands and eyepiece, though the deck planks are dark. Both are in range, so this rests on the eye alone.",
+   "fix": "Drop the dark line around the wheel handles. Separate them from the sky by shading, and keep the crispest edge only at the gold hub."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the robot has many even seams and double lines at the joints, face plate and chest panel (subject 0.243, above the real range), and a repeated icon pattern adds crisp marks to the background. B: the vending machine has a heavy frame around the window, but large plain faces, thin sides and a density within range.",
+   "fix": "Remove most small seams on the robot's limbs and chest, keep one thin line per panel, and make the background pattern fainter with no crisp icon edges."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the book scene has firm contours on pages, leaves and railing, and background density at the very top of the real range (0.089). B: the chair has thin tube edges and soft fabric creases with low-contrast edges along the seat. All values are in range, and neither shows a drawn outline or halo clearly enough to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the UFO disc has a continuous even contour, with evenly weighted double rings around each lamp and the belly hatch. A: the player case loses its edge softly on the right side, like the real lessons, though the earphone cables are dark double lines. Both are in range, and the difference is lost edges rather than density.",
+   "fix": "Let the saucer's upper rim fade softly on the lit side, and draw lamp rims as a single thin line instead of a dark ring."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the helmet has a very sparse background (0.007, below range), even thin double grooves around the visor and side disc, and an unbroken silhouette. A: the popcorn cart has varied edges, heavy at the awning stripes and fine in the wheel spokes and glass, with density and outline in range. This is a weak call.",
+   "fix": "Use one thin seam around the visor instead of a double groove, and soften the helmet's top edge into the background."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the rocket has an even dark contour down both sides and around the fins, with a sharp double ring at the porthole. B: the submarine has real edge hierarchy, sharpest at the riveted band and portholes, with the belly and hull top soft and nearly lost. Both are in range.",
+   "fix": "Let the rocket's lit side lose its edge into the bright background, and keep crisp edges only around the porthole and nose band."
+  }
+ ],
+ "pattern": "In the lessons, generated cards draw silhouettes and seams as an even, continuous, heavier line, with stacked double rings around recesses, thick grooves and flat edge hierarchy. Real cards vary edge weight, lose the silhouette on the lit side and keep seams thin. Density numbers alone do not separate them: painted scene cards such as the gate and topiary exceed the real range, and in p01 and p05 I ruled against the numbers, so those calls rest on contour character. Confidence is low on most pairs."
+}

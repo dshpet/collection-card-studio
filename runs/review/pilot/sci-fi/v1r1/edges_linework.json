@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the awning scallops and wheel carry dark contours and the paving is busy, but line weight varies and the cart posts stay soft. B: the helmet dome fades to a thin, nearly lost edge at the top, while the floor plates have crisp double-ruled seams. Each has one weak point, and all three fields are inside the real range for both.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the topiary has a jagged, saw-toothed silhouette, and every leaf is ringed by a hard line. Subject density of 0.29 is above the real range, and the back hedge breaks into speckled edge noise. B: the planet has a clean, sparse contour with soft band edges. Its 0.068 is slightly under the real range, but it reads as a controlled, quiet form.",
+   "fix": "Group the leaves into a few soft clumps with a smooth silhouette. Draw crisp leaf edges only at the front centre, let the others melt together, and keep the back hedge as a soft blur with no leaf detail."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the player has a thick double-ruled groove around its face and a strongly lined cable, but its right side fades to a soft lost edge. B: the UFO has a thin contour with a soft hull underside, plus closed rings around the lights. Its background of 0.003 is a hair under the real range. Neither card breaks the real pattern clearly.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the submarine contour varies from heavy on the hatch rim to soft along the top of the hull, and the seams are thin. B: the rocket contour is a little more closed around the fins and the rays are stronger, but the body edge also thins. Density and outline values are in range and nearly level.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the deck has heavy black crack and plank strokes that read as drawn pen lines and pull more weight than the hero. The wheel has an even dark contour all round, with a pale halo band beside it. A: the telescope tube edges thin out and fade on the lit side, and the deck lines are thin and tapering.",
+   "fix": "Paint the deck as smooth planks with thin, faint gaps and no dark cracks. Remove the dark line around the wheel, and let its lit side fade softly into the background."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: every robot panel, joint and claw is closed by a dark line of similar weight, so subject density of 0.236 is above the real range and there is no quiet area. B: the vending machine has a heavy double line round the window, but its side and body are plain with a thin contour, and density is well in range.",
+   "fix": "Merge the small armour plates into fewer big rounded shapes. Keep crisp seams only on the face and chest, and soften the edges on the arms, legs and feet."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a dark contour runs along the lion's mane and back, while the inside of the statue has few edges (subject 0.05, below the real range). The trees, path bricks and grass have heavy edges (background 0.068), so the background out-draws the hero. B: the envelope and photos are outlined firmly, but the edges concentrate on the hero against a quiet background of concentric rings.",
+   "fix": "Remove the dark line around the lion and blur the trees, path and grass into soft shapes. Keep the sharpest edges on the face and front paws."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the gun has a firm, closed contour around the body and grip, a soft glow halo at the green orb, and very hard black stripe lines in the background. A: the spyglass contour is fine and breaks up at the lower end with lost edges, though the outline reading of -0.147 sits below the real range and its edges look slightly fuzzy. B's stripes are partly just colour contrast, so the call is weak.",
+   "fix": "Let the gun's outer edge thin and fade on the lit side, remove the glow around the orb, and lower the contrast between the background stripes."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: each button, slider and panel has a crisp double ring of even weight across the whole console, so subject density of 0.204 is above the real range and nothing is the focus. B: the fruit has soft internal edges, and the plate rim thins out, although the planks in the background are strong.",
+   "fix": "Use fewer buttons and sliders, drawn as simple soft-edged shapes without double rims. Keep crisp edges only on the radar screen, and soften the outer buttons and the base."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the spokes and rim are ruled with parallel lines of constant width and strong dark edges, with a mechanical uniform weight across the crop. A: the flower petals have firm edges only near the centres and soften outward, and the stone border has rounded, softer edges. The numbers are all in range, so this rests on the line character.",
+   "fix": "Round the spoke edges and vary them, sharp where they meet the hub and softening towards the rim and the far side of the wheel."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: both densities are far above the real range (subject 0.323, background 0.122). The ironwork scrolls, every brick and all the paving joints are drawn with equally hard dark gaps, and there is no quiet area around the gate. B: the station's solar grid is heavy, but the sky is empty (background 0.012), so the hero clearly leads.",
+   "fix": "Simplify the gate to a few bold scrolls and show only a few bricks on the pillars, with thin faint joints. Make the paving and the scene behind the gate soft shapes with almost no lines."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the pod has many parallel double-ruled grooves on its door ring, panels and belt, the room's columns and floor rings are ruled too, and the outline of -0.078 sits below the real range. A: the dock gaps and ripples are strong, but the line weights vary and taper and all three fields are in range. The call is a weak one because A's dock lines are also heavy.",
+   "fix": "Use fewer panel seams and draw them as single thin lines. Remove the doubled rim lines around the door, and blur the room's columns and floor rings into soft light shapes."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through how evenly edges are spent. Real cards let contours thin and vanish on the lit side, with sharp edges gathered at the focus and quiet areas elsewhere. Generated cards close forms with a steady dark line, double-rule seams and rims, and give leaves, bricks, buttons and background details the same crisp treatment, which pushes edge density past the real range and flattens the edge hierarchy. Background strokes such as wood cracks, trees and paving can out-draw the hero. When density and outline both sit in range, this lens does not separate the cards reliably: p01, p03 and p04 stayed undecided, and p08, p10 and p12 are weak calls."
+}

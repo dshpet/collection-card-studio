@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the satellite hull is lit almost head-on, with a gentle wrap around the sphere, no firm shadow side, and flat, even solar panels. Its shading_range of 0.588 sits below the real floor. B: the gate pillars have a clear light face and a darker side plane, and the arches and caps cast small shadows under the ball finials and onto the paving.",
+   "fix": "Light the satellite from the upper left. Let the right and lower side of the hull fall into a deep, cool blue shadow with a clear edge where the form turns away, and let the cannon drop a dark shadow onto the hull."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the ray gun's red hull has long, soft, plastic sheen bands across the top. A lighter halo surrounds the gun on the background in the lens, as on generated lesson cards. A: the spyglass falls steadily from a lit top edge to a dark underside with a thin blue rim. Its form_contrast (0.654) and light_bias_strength (0.927) are above the real range, but its dark brown leather likely leaks into the lens, so I weigh those numbers lightly.",
+   "fix": "Remove the glow around the gun. Replace the long white sheen on the red body with one small soft highlight, and let the lower belly and grip turn darker and cooler."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the console reads as evenly lit, soft grey clay. Top and front differ only mildly, the right side barely darkens, and there is only a faint soft shadow under the feet. Its shading_range of 0.608 is below the real floor. B: the plate has a clear shadow falling onto the table, wet highlights on the fruit, and darker gaps between the fruit.",
+   "fix": "Make the top face brightly lit and drop the front and right faces clearly darker with a crisp corner between them. Put a dark, tight contact shadow under the base and a longer soft shadow on the floor to one side."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the pod sphere is lit frontally and symmetrically, with soft wrapped light, an even grey falloff toward both edges and no dominant side. B: the boat has a lit rim and bright inner planks against a darkened hull side, and the dock casts a shadow onto the water and post, so light comes from one direction.",
+   "fix": "Bring the light from the upper left only. Keep the left of the sphere bright and let the right third turn into a deep cool shadow, with the legs dropping one-sided shadows on the floor."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the planet has a large blurry white sheen at upper left and a soft, wide terminator into a muddy lower-right shadow, and the ring casts only a weak shadow. Its shading_range of 0.631 is the lower of the pair. A: the topiary has clear directional sun, with lit leaf tops, dark lower tiers and a firm cast shadow on the grass to the right.",
+   "fix": "Shrink the white sheen on the planet to a small soft spot, make the shadow side deeper and cooler, and have the ring cast a clear, curved dark band across the sphere."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the pool has soft, rounded tube shading and a firm fence shadow on the grass, with form_contrast at the real floor (0.385). B: the jacket has soft sleeve turns and dark cuff interiors, but a lighter background glow around it, which could be the sunburst leaking into the lens. Both sit inside the real ranges and neither shows a clear lighting fault.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the wheel is lit head-on, with even, soft rounding on the spokes and rim, almost no side-to-side falloff, and only a small dim pool under the base. Its shading_range of 0.573 is well below the real floor. B: the telescope has a bright top to the tube, a dark underside, and a long, directional cast shadow on the deck.",
+   "fix": "Light the wheel from the upper left so the lower right of the rim and spokes go dark, have the spokes and stand cast shadows on each other, and add a long soft shadow across the deck to the right."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the robot has a soft, wrapped, clay-like light, rounded glossy sheens on every part and a weak, blurry shadow on the floor, with no clearly dark side on the body. B: the vending machine has a crisp plane change, with a bright front and a dark left side, closer to the real computer and camera cards, though its floor shadow is faint.",
+   "fix": "Keep the robot's left side lit and push the right side of the head, torso and limbs into a deeper cool shadow, with a clear edge where each form turns away. Tighten the shadow under the feet."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the open book has soft page curves, a dark gutter and a warm cast shadow on the planks. B: the chair has clean highlights on the tubes and a soft violet shadow on the floor, slightly faint. Both sit within the real ranges and both have a clear light direction and cast shadow.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the UFO dome has a sharp white oval hot spot and the saucer has a bright band over a very dark belly, so light_bias_strength of 0.900 is above the real ceiling. It reads like glossy plastic, as on the generated camera lenses. A: the player and earbuds have soft matte shading with a gentle right side and thin shadows, at the low end of the range but inside it.",
+   "fix": "Replace the sharp white oval on the dome with a broad, soft sheen. Ease the belly so it still shows form, with cool light bounced up into the shadow."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the helmet has a smooth gradient over chrome-like forms, a big glossy sheen on the visor and a soft, oval, centred shadow that looks pasted under it, with a dark edge glow on the background. Its shading_range of 0.682 is the lower of the pair. A: the cart has a firm directional setup, with a dark shadow under the awning, shaded wheel recesses and soft shadows on the tiles.",
+   "fix": "Bring the light from one side so the helmet's far side turns into a dark cool shadow. Make the visor highlight smaller, and shift the floor shadow to the side opposite the light, tight at the base and fading outward."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the rocket body has pale, soft, wrapped light with broad white sheens on the hull and fins, a warm shading lens and only a gentle right side. B: the submarine has a lit top against a clearly darker lower hull and dark port recesses, though the lens shows a lighter halo against its dark background. This is a close call and neither card breaks the measured ranges.",
+   "fix": "Turn the right side of the rocket into a deep cool shadow, keep the sheen narrow, and let the fins and porthole rim cast small dark shadows on the hull."
+  }
+ ],
+ "pattern": "Generated cards still show frontal, wrapped, clay-like light: forms round off softly and evenly, with no committed dark side. Real cards pick a side, with a cool, deep shadow plane and a clear turn at corners. Generated cards also lean on broad plastic sheens and sharp oval hot spots, a pale glow around the hero on the background, and weak or generic soft shadows under the object in place of a dark contact shadow plus a directional cast shadow."
+}

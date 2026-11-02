@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both are category 1: the umbrella (A) and the star (B) float on concentric tone-on-tone rings with no props. A's rings are paler and B's are darker, but both measure at the low end of the real range and neither backdrop competes with the hero.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A puts the boot on a crisp harlequin diamond grid that fills the card edge to edge. Its hard-edged cells run behind the spur and toe and read as a loud pattern, with edge density 0.039 against a real maximum of 0.017. B's grad cap sits on soft, wide rings that fade into each other (0.008), matching the quiet real fields.",
+   "fix": "Replace the diamond pattern with a soft tone-on-tone blue field: broad radial rays or wide rings with blurred, low-contrast edges, and no small repeating shapes."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A's green burst behind the jacket has many thin rays of uneven width, packed around the sleeves. This matches the fine, busy ray fields on the generated glove lessons. B's teal burst behind the hat has fewer, wider rays, like the real cards. The measured gap is small (0.007 vs 0.006), so this rests mostly on the ray count.",
+   "fix": "Use about 12 to 16 wide, even sunburst rays with low contrast between them, and no thin slivers."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B has an invented pink butterfly perched on top of the signpost, a whimsy prop the object would not have, set on a full cloud-sky backdrop. A's phone box stands on a plain green ledge with no extra props. A's large tone-on-tone suitcase wallpaper reads high (detail 0.0187) and is an unrelated motif, which is why confidence stays low.",
+   "fix": "Remove the butterfly from the top of the post. Leave the signpost alone against the sky."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A is a cactus on simple sand with a broad diagonal-stripe backdrop, a clean category 3. B is a racket and ball on a plain court with one wide line. The ball is a purposeful prop and the surface is quiet, like the real football on grass. B's edge count comes from the racket strings showing the court through them. Neither shows extra staging load.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A combines a sunburst graphic with room elements: rays run down to a white skirting board and a green plank floor, and the floor has blotchy pale patches under the case. B's room is coherent, with quiet clover wallpaper, a mint skirting board and a plain orange plank floor under the barrel. The two are close in structure, so this is a weak call.",
+   "fix": "Choose one setting: a plain wall with a skirting board and an even plank floor, or a sunburst alone. Keep the floor one clean color with no blotches."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's teapot sits on a near-photographic rock slab with fine cracks, chipped edges and grain across the lower card, far more surface detail than the smooth real ground planes (detail 0.0211 vs a real maximum of 0.013). B's sneakers sit on a plain pale ledge against a smooth orange wall (0.0089), the simple staging the real cards use.",
+   "fix": "Replace the rock with a smooth, simple stone ledge made of a few large soft shapes, without cracks, chips or fine grain."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B's poster hangs on a weathered grey plank wall with dark knots, rust-orange streaks and scratchy grain across the lower half, plus a strong split against the olive upper wall. Both measures exceed the real range (detail 0.0317, edges 0.059). A's locker stands against a smooth purple wall and pale plank floor with a plain skirting board, in range and quiet.",
+   "fix": "Paint the planks as smooth, even, soft brown boards with only a few wide gaps. Remove knots, streaks and scratches, and keep the wall above plain."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B has no single central hero: a rope-wrapped post, a second post, a life ring, pier boards, curling water rings, a sandy shore and pebbles all spread across the card. This matches the rope-and-life-ring props added on the generated lighthouse lesson. A's saloon stays central, with only faded buildings, mesas and a few stones behind it.",
+   "fix": "Show one large mooring post with its rope, centered, on calm plain water. Remove the life ring, pier boards and shoreline."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B adds a pier that takes up the upper left corner and competes with the boat in size. It also adds two lily pads and many ripple rings, and the boat sits off center. These are invented secondary props, as on the generated lighthouses. A's wagon stays central on a dirt road with broad field, hills and sky, though its foreground grass tufts add some small detail.",
+   "fix": "Show the rowboat alone and centered on calm water with a few soft ripples. Remove the pier and lily pads."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B frames the door with dozens of separate ivy leaves along the top and both sides, with cast shadows on the blue door. The foliage out-details the small wreath hero, and detail 0.0353 and edges 0.107 both exceed the real range. A's windmill stands in a real environment of a few large quiet shapes: sky, mesas and sand, with only a few tufts and stones, all in range.",
+   "fix": "Remove the ivy. Show a plain blue door with a simple frame and a calm wall, and make the wreath larger as the clear focus."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A's bumper car sits on a rink floor with a soft reflection and one yellow stripe, against a ring backdrop, the same mix of graphic field and ground as the real taxi on road. B's fins float on quiet purple rings. B's edge density of 0.005 is below the real minimum of 0.011, but this only reflects a very soft field, not a staging flaw.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards give themselves away by adding to the scene around the object. They invent secondary props such as life rings, rope, lily pads, a butterfly, ivy or an adjoining pier, and these push the hero off center or pull attention from it. Their surfaces are over-detailed too: photographic rock cracks, knotted plank grain, and crisp or finely repeated backdrop patterns instead of a few large quiet shapes. Real cards keep one central object on a soft, simple field or ground."
+}

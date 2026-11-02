@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the jacket sits in a light ring that hugs its whole silhouette, the corners drop to the darkest grey (vignette 0.134, above the real range), and the sash is one dark band. B: the hat's light rays run out to the card edges and the brim shadow is one broad dark shape, though a thin white rim line traces the brim. The vignette is the main evidence and the margin is small.",
+   "fix": "Keep the green background one even mid-tone out to the corners with no darkening. Remove the bright ring around the jacket and let wide soft rays reach the edges."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the pillow is one mid-dark mass on a light pink field, with a soft dark group inside the curve and a gentle core shadow. B: the near-white card sits on a dark red field, with black guitar and speakers packed inside it, so white and black butt together (rms 0.177 and gap 0.134, both above the real range). Part of this comes from the white paper itself.",
+   "fix": "Lift the red background to a middle tone, soften the white of the card slightly, and open the blacks in the concert photo to dark greys."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the star is almost entirely in the two lightest levels on one flat mid-grey field, with only slivers of dark at the balls and rim, and gap 0.183 is well above the real range. A: the wristband is too close in value to the cyan field (rms 0.068, below the real range), but it has one broad shade group inside the ring like the real cards. Both miss the range, so this is a weak call.",
+   "fix": "Turn the lower right of the star and its points into a broad soft shadow in a middle-dark tone, and reduce the white highlights to one area on the upper left."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: dark teal water forms a large dark group, with lighter rope and sand above. B: bright sky and sand frame a mid-tone building, with the darkest accent in the doorway. Both have clear groups, and gap and vignette are nearly equal and in range.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the saddle carries hard white streaks on the seat and along the top of the rail, plus a black pocket under the cantle, so light and dark jump abruptly in small shapes. B: the beach ball divides into broad light and mid panels with one large soft shadow on the sand, closer to the real cards' massing, though its key sits at the top of the range.",
+   "fix": "Replace the sharp white streaks on the saddle seat with one wide soft sheen, open the black under the cantle to dark brown, and let shade roll gradually across the leather."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: a white glow sits behind the cube, and frost scatters small light flecks across a mid-dark tray. B: the pot is one dark mass with a long hard window highlight, set against strong ray bands. Each has a minor oddity, all fields are in range, and neither points clearly the same way as the lessons.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a white glow mound sits behind the coil, the corners darken (vignette 0.115, above the real range), and the rope is salted evenly with light and dark twists, so it never forms one value shape. B: the card has three plain groups of mid wall, near-white floor and dark shoes with a single cast shadow, though its key is slightly above range.",
+   "fix": "Remove the bright glow behind the rope and the dark corners. Make the green background one even tone, and shade the coil as a single form that is light on top and darker underneath, with fewer tiny highlights."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cactus trunk alternates hard dark and light vertical stripes, is scattered with bright spine dots, and has a hard-edged dark cast shadow on the shelf. B: the machine reads as a dark side plane plus one light glass group, in a soft wash of background light. Fields are all in range, so this rests on the eye.",
+   "fix": "Shade the cactus as one rounded form, with a broad light side and a broad soft shadow side, and soften the shadow on the shelf."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the boot is a dark mass with rolled highlights in front of a pale spot of glow. B: the cap is a flat near-black shape on a light disc, with gap -0.312 only just outside the real range. Both separate the hero strongly by value, and the difference is too small to call.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the map is white borders and mid-grey interiors with almost no dark accent, and the striped background sits in the same mid band (key 0.739 above range, rms 0.105 below it), so it reads flat. A: the bottle has a full light, middle and dark structure, with dark rocks behind and a light sand floor. Flat graphic objects can be real, so this is a mild preference.",
+   "fix": "Add a soft dark shadow under each map sheet, drop the background pink one step darker, and put a small dark accent in the creases between the sheets."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the locomotive is nearly solid black with sharp white metal glints, on pale sand and sky (rms 0.226 and gap -0.298, both outside the real range), so local contrast inside the hero is very hard. A: the bus is one mid-dark mass with softer window groups, against a lighter sky, and all its fields are in range.",
+   "fix": "Lift the black boiler and cab to a deep charcoal with soft rounded shading, reduce the bright metal glints to a few soft highlights, and keep the darkest black only under the engine."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: almost the whole card sits in the two lightest levels (key 0.783, above the real range); the stone fountain merges into the pale stripes, whose lens breaks up, and only the basin interior forms a darker shape. A: the wagon has a white canopy, mid-grey wood and field, and dark wheel and interior accents, so the groups are clear.",
+   "fix": "Darken the stone on the shaded side of the fountain and inside the tiers, deepen the yellow stripes one step behind it, and add a soft shadow on the paving so the fountain stands apart from the background."
+  }
+ ],
+ "pattern": "Generated cards tend to lose the real cards' broad, quiet value masses. The hero is either pushed too light or too dark as a whole (p03, p11, p12), or broken into hard small highlights and scattered flecks (p05, p07, p08), rather than a single light side rolling into a large soft shadow. A second tell is a bright ring or mound hugging the silhouette, sometimes with darkened corners (p01, p07), where real cards use wide rays or an even field. These signals are mostly weak here: only p11 is a firm call, p07 and p12 are moderate, and p04, p06 and p09 give no value reason to choose."
+}

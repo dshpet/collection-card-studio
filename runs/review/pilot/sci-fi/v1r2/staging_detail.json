@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the station floats on a cyan-to-magenta gradient with a curved Earth and cloud wisps along the bottom. The upper backdrop is almost empty (detail 0.0076, below the real range), so the card reads as a graphic field with an unrelated planet prop. B: a full category 4 scene with brick pillars, pavers, lawn and trees. It is over the real range (edge 0.122), but the mask covers only the gate, so the pillars are counted as background. The numbers point both ways, so this call is weak.",
+   "fix": "Remove the magenta gradient. Use a deep blue space backdrop with one large, quiet planet curve and no cloud wisps."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: wide diagonal stripes in tone-on-tone cyan, with no glow around the spyglass. Its detail of 0.0217 is above the real range, which counts against this call. B: similar stripes in duller teal, plus a soft green halo spilling off the ball at the gun's tip onto the field, the same kind of glow as the generated gloves in the lessons.",
+   "fix": "Remove the green glow around the ball at the tip. Keep the stripes clean right up to the object's edge."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the console sits on a dead grey ledge under flat orange stripes, with almost no background information (detail 0.0064, edge 0.005, both below the real range). Real ledges pick up the backdrop color, as in the pink arch and purple juice cards. B: warm wooden planks with soft shadow and a few water drops, a real category 3 material within the real range.",
+   "fix": "Replace the grey floor with a soft ledge in a lighter tint of the backdrop color, and let the backdrop's color fall onto it."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: an invented sci-fi room behind the pod, with glowing strips on the ceiling and walls, lit pillars, neon rings on the floor and reflections. There are many small lights, not a few large quiet shapes. B: the dock and water are large simple shapes with ripples and two lily pads, and the props suit the place.",
+   "fix": "Remove the glowing strips and neon floor rings. Use one plain curved wall and a plain floor with soft shading."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the planet sits among sparkle stars, pink nebula clouds and two extra cratered moons. These are the invented decoration and added props the lessons mark as generated, on a flat field below the real range (detail 0.0081, edge 0.011). A: a hedge, a path and a lawn, a few large quiet shapes with the topiary central and within the real range.",
+   "fix": "Remove the sparkles, the nebula clouds and both small moons. Put the planet on a plain deep-blue field with a soft tone-on-tone pattern."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the pool stands on grass with grass tufts and a plank fence, one purposeful prop (the duck), and values within the real range. B: the jacket floats on a green sunburst with a central glow. The rays are thinner than on most real sunbursts, but only slightly, and glowing sunbursts do appear on real cards. Neither card shows a clear tell on staging.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a washed-out cream and lilac ray field, with deck boards drawn in many dark lines and cracks that add small detail right under the hero. Real backdrops are more saturated. B: a saturated purple sunburst and a simpler curved deck with one soft shadow, closer to the real category 2 and 3 cards.",
+   "fix": "Use a saturated single-color sunburst. Draw the deck as a few broad planks with no cracks."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: small gear and star icons repeat across the orange field. Real patterns are large checks, stripes and diamonds, not tiny themed icons. The motif is quiet but invented decoration. B: a plain purple gradient with a soft floor reflection, and nothing competing with the vending machine.",
+   "fix": "Remove the small gear and star icons. Use a smooth orange field or large soft tone-on-tone stripes."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: a railing, a dense hedge and a cropped potted plant make a busy category 4 scene, right at the top of the real range (detail 0.0304, edge 0.089), but the props suit the place. B: a red gradient with a plain peach ledge, within range. A is the heavier card, but both fit how real cards are staged.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both cards use concentric rings. B: hard-edged, higher-contrast rings fill the whole card around the UFO, with nothing else in the background, and sit at the floor of the real range (detail 0.008, edge 0.004). A: softer rings, within range. The gap is small.",
+   "fix": "Lower the ring contrast until the rings are barely lighter than the field, and fade them toward the corners."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the helmet stands on a flat neutral grey ledge under a green diamond pattern, with little background information (detail 0.007, edge 0.007, both below the real range). This is the same grey floor as the p03 console. A: a blue diamond backdrop with a warm paved floor, a real material within range that suits the cart.",
+   "fix": "Replace the grey floor with a soft ledge in a lighter green tint of the backdrop, or a real material such as metal deck plating, in a warm tone."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: broad cyan rays with almost no tonal falloff from corner to center, and no shadow or glow, leaving a very flat field (detail 0.0064, edge 0.004, at or below the real floor). Real sunbursts darken clearly toward the corners. B: dark corners and a green central glow, stronger than usual but with real depth, and within range.",
+   "fix": "Darken the sunburst toward the corners and brighten it gently behind the rocket, keeping the rays soft."
+  }
+ ],
+ "pattern": "Three staging tells give generated cards away. First, a dead neutral grey ledge that ignores the backdrop color, seen on p03 and p11, with background detail below the real range. Second, invented atmosphere the object would not have: sparkles, nebula and extra moons, neon strips and floor rings, halos around glowing parts, and small themed icon patterns. Third, backdrops that are flat or mis-keyed: rays with no corner falloff, washed-out fields, and hard rings. On the p01, p02, p07, p10 and p12 calls the evidence is weak."
+}

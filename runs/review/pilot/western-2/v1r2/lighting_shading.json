@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the jacket shades like soft clay. Its lens stays warm olive, the turn across chest and sleeves is even and blurry, and the sash barely separates in light. B: the hat has a clear lit crown side, a smooth turn into the dent, and a deep dark underside of the brim, all in neutral grey like the real gloves. The numbers do not separate them.",
+   "fix": "Light the jacket from the upper left with a clear bright side and a cooler, darker right side. Put a firm shadow under the sash and pocket flaps, not an even soft glow."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the card is almost shadeless, with a uniform white border, no light turn across the surface, and only a thin offset drop shadow at the lower right. Its form_contrast of 0.751 is above the real range, driven by the printed picture rather than by light. A: the pillow turns from a soft lit top to a dark lower right, with shadowed tucks along the inner curve.",
+   "fix": "Give the photo card a slight curl with a soft light-to-dark gradient across the white border, and a wider, softer shadow on the background beneath it."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the star's face is pale and evenly front-lit in the lens, with almost no light or shadow side, and the only drama is the small highlights on the gold balls. A: the band has a directional turn, with a lit outer rim, a shaded inner wall and shading on the raised notes. However, A's form_contrast of 0.315 sits just below the real range, so this is a weak call.",
+   "fix": "Light the star from one upper side so two or three points fall into a clear cool shadow plane, and cast a soft shadow from the rim onto the face."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the dock shades warm and clay-like, and the shadow sides of the post and ring stay brown with little depth. Only the gaps under the planks go dark. B: the saloon has a cool blue-violet shadow under the porch, a darker cooler left wall against a lit facade, and clear plane changes, like the real computer's blue side panel. B's shading_range of 0.831 is at the top of the real range.",
+   "fix": "Turn the shadow side of the post and ring cooler and darker, and make a clear plane break between the lit top of the post and its shaded side."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the ball has a very large blown soft white hot spot at the upper right, and a broad, cloudy turn across the panels. Its shading_range of 0.533 is below the real range. The lens stays muddy, and the panels never reach a firm core shadow. A: the saddle has a firm lit seat, a sharper fall into shadow under the skirt, and a tight contact shadow under the stirrup.",
+   "fix": "Shrink the ball's highlight to a smaller, defined glossy spot. Add a clear darker core shadow band on the lower right, with a lighter bounce from the sand along the bottom edge."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the tray and ice shade in a blurred, even way. Faces barely differ and the turn is mushy, with form_contrast of 0.378 below the real range. The ice cube has no firm lit or shadow plane in the lens. B: the kettle has a clean cone turn from a lit centre to darkened edges, broad enamel sheen, and a firm cast shadow on the sand to the right.",
+   "fix": "Make the top of the tray clearly bright and its front walls clearly darker. Give each ice cube one sharp lit face and one shaded face, and add a darker contact shadow where the tray meets the table."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the sneakers look like a photographic studio render, with a crisp dark cast shadow to the left and even illumination across the shoes. Light bias of 0.019 is far below the real range, and shading_range of 0.82 is above it. A: the lasso has a clear light direction, and the coil throws a soft, grounded shadow onto the plank.",
+   "fix": "Light the shoes from one upper side so the far shoe and inner sides fall into soft cool shadow. Soften the cast shadow's edge and keep it dark only near the sole."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cactus is hard side-lit, and its lens goes uniformly dark and muddy across the ribs, with a long hard shadow on the shelf. Light bias of 0.738 is above the real range, so the light is more one-sided than on the real cards. B: the machine has a softer split between a dark left side and a lit front, plus a gentle floor glow. It is a weak call, because B's soft glow is also slightly suspect.",
+   "fix": "Open up the cactus's shadow side with soft fill so each rib keeps a lit ridge and a shaded groove. Shorten and soften the cast shadow on the shelf."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the boot's light is a broad, soft leather sheen with a slow, warm turn. The lens stays orange, and there is no cool shadow plane on the shaft or foot. B: the cap has a flat, bright board with a crisp corner, and a deep, cool, dark band under the board. B's shading_range of 0.847 exceeds the real range, so this rests on the eye rather than the numbers.",
+   "fix": "Add a clear cooler shadow side down the back of the shaft and under the ankle strap, with a firmer edge where the light turns to shadow, rather than an even warm sheen."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the map sheets are evenly front-lit with almost no light direction, and light bias of 0.155 is below the real range. The lens shows only the printed map, and the folds at the bottom edges get thin soft shadows. A: the bottle has directional underwater light, a dark contact pool in the sand and a shadow falling to the right, though its shading_range of 0.588 is slightly low.",
+   "fix": "Light the sheets from the upper left. Let each sheet cast a clear darker shadow onto the one below, and shade the rolled lower folds from bright to dark."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the train has thin specular glints on nearly every edge and rivet, with even light on all parts. Light bias of 0.067 is far below the real range, and shading_range of 0.839 exceeds it. The shadow side is not organised. A: the bus has a clear lit side against a darker front face, plus a long grounded shadow across the road. All its numbers are in range.",
+   "fix": "Pick one light from the upper left. Make the boiler and cab fall into one broad shadow side on the right, keep only a few larger highlights, and add a dark shadow on the track under the wheels."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the fountain is evenly lit in warm clay tones. The lens stays tan, the basin rim shows little core shadow, and the bowls and base cast almost no ground shadow, as on the generated computers. A: the wagon has neutral grey shading, canopy folds with real depth, and a soft directional cast shadow under the wheels. Form_contrast of 0.587 sits comfortably in range.",
+   "fix": "Light the fountain from the upper left, with a darker, cooler shaded side on each bowl and on the basin wall. Add firm shadows from the upper bowl onto the lower one and from the basin onto the paving."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through front-lit, clay-soft modelling. Shading stays warm and monochrome, shadow sides are shallow, and the turn from light to shadow is mushy and even. Real cards commit to one side light, with a cooler, darker shadow plane and firm plane changes. Generated cards also tend to scatter or blow out highlights, and to skip firm cast and contact shadows between parts, or use a thin offset drop shadow instead. Calls are mostly low confidence: four pairs (p01, p02, p09, p12) have numbers that do not clearly support the eye, and both cards in a pair may be real."
+}
