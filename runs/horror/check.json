@@ -1,0 +1,1688 @@
+{
+ "v1_01": [
+  {
+   "try_id": "v1_01_1",
+   "brief_id": "v1_01",
+   "card": {
+    "name": "Haunted House",
+    "subject": "A tall crooked mansion with a pointy roof, glowing yellow windows and a little tower.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "plum purple and warm yellow",
+    "backdrop_colors": "misty teal and midnight blue",
+    "surface_or_setting": "a hilltop under a big full moon"
+   },
+   "style": 0.751,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Whimsical moonlit house",
+     "object_class": "building_place",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "many"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_02": [
+  {
+   "try_id": "v1_02_1",
+   "brief_id": "v1_02",
+   "card": {
+    "name": "Pumpkin",
+    "subject": "A round orange jack-o'-lantern with a cheerful triangle-eyed grin and a curly green stem.",
+    "object_class": "plant_nature",
+    "category": "3",
+    "pattern": "stripes",
+    "hero_colors": "bright orange and lime green",
+    "backdrop_colors": "deep indigo and slate",
+    "surface_or_setting": "a worn wooden porch step"
+   },
+   "style": 0.737,
+   "misses": [
+    "color_palette.chroma_subject",
+    "value_contrast.boundary_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Jack-o'-lantern",
+     "object_class": "plant_nature",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_03": [
+  {
+   "try_id": "v1_03_1",
+   "brief_id": "v1_03",
+   "card": {
+    "name": "Tombstone",
+    "subject": "A rounded gray gravestone with a small cross carved on top and a tuft of grass at the base.",
+    "object_class": "other",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "soft gray and moss green",
+    "backdrop_colors": "warm peach and coral",
+    "surface_or_setting": "a flat stone ledge"
+   },
+   "style": 0.755,
+   "misses": [
+    "color_palette.chroma_subject",
+    "value_contrast.rms_contrast",
+    "surface_finish.detail_subject",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Gravestone",
+     "object_class": "other",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "one"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v1_03_2",
+   "brief_id": "v1_03",
+   "card": {
+    "name": "Tombstone",
+    "subject": "A rounded gray gravestone with a small cross carved on top and a tuft of grass at the base.",
+    "object_class": "other",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "soft gray and moss green",
+    "backdrop_colors": "warm peach and coral",
+    "surface_or_setting": "a flat stone ledge"
+   },
+   "style": 0.754,
+   "misses": [
+    "value_contrast.rms_contrast",
+    "surface_finish.detail_subject",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Gravestone",
+     "object_class": "other",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "one"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v1_03_3",
+   "brief_id": "v1_03",
+   "card": {
+    "name": "Tombstone",
+    "subject": "A rounded gray gravestone with a small cross carved on top and a tuft of grass at the base.",
+    "object_class": "other",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "soft gray and moss green",
+    "backdrop_colors": "warm peach and coral",
+    "surface_or_setting": "a flat stone ledge"
+   },
+   "style": 0.752,
+   "misses": [
+    "value_contrast.rms_contrast",
+    "surface_finish.detail_subject",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Gravestone",
+     "object_class": "other",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "one"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v1_04": [
+  {
+   "try_id": "v1_04_1",
+   "brief_id": "v1_04",
+   "card": {
+    "name": "Crescent Moon",
+    "subject": "A smooth glowing crescent moon with a few tiny sparkle stars beside it.",
+    "object_class": "other",
+    "category": "1",
+    "pattern": "rays",
+    "hero_colors": "pale cream yellow",
+    "backdrop_colors": "royal blue and violet",
+    "surface_or_setting": ""
+   },
+   "style": 0.692,
+   "misses": [
+    "composition_hierarchy.margin_min",
+    "color_palette.chroma_background",
+    "surface_finish.detail_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Golden crescent moon",
+     "object_class": "plant_nature",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v1_04_2",
+   "brief_id": "v1_04",
+   "card": {
+    "name": "Crescent Moon",
+    "subject": "A smooth glowing crescent moon with a few tiny sparkle stars beside it.",
+    "object_class": "other",
+    "category": "1",
+    "pattern": "rays",
+    "hero_colors": "pale cream yellow",
+    "backdrop_colors": "royal blue and violet",
+    "surface_or_setting": ""
+   },
+   "style": 0.69,
+   "misses": [
+    "composition_hierarchy.center_x",
+    "color_palette.chroma_background",
+    "color_palette.hue_gap",
+    "value_contrast.rms_contrast",
+    "value_contrast.boundary_contrast",
+    "surface_finish.detail_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Golden crescent moon",
+     "object_class": "plant_nature",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v1_04_3",
+   "brief_id": "v1_04",
+   "card": {
+    "name": "Crescent Moon",
+    "subject": "A smooth glowing crescent moon with a few tiny sparkle stars beside it.",
+    "object_class": "other",
+    "category": "1",
+    "pattern": "rays",
+    "hero_colors": "pale cream yellow",
+    "backdrop_colors": "royal blue and violet",
+    "surface_or_setting": ""
+   },
+   "style": 0.697,
+   "misses": [
+    "composition_hierarchy.margin_min",
+    "color_palette.chroma_background",
+    "surface_finish.detail_subject",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Golden crescent moon",
+     "object_class": "plant_nature",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v1_05": [
+  {
+   "try_id": "v1_05_1",
+   "brief_id": "v1_05",
+   "card": {
+    "name": "Iron Gate",
+    "subject": "A swirly black iron gate with pointed bars and two stone pillars, slightly open.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "charcoal black and rust",
+    "backdrop_colors": "pale lavender and silver fog",
+    "surface_or_setting": "a foggy cemetery entrance"
+   },
+   "style": 0.774,
+   "misses": [
+    "composition_hierarchy.center_x",
+    "value_contrast.boundary_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Cemetery gate",
+     "object_class": "building_place",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "many"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_06": [
+  {
+   "try_id": "v1_06_1",
+   "brief_id": "v1_06",
+   "card": {
+    "name": "Hearse",
+    "subject": "A long vintage black carriage car with rounded fenders, tall windows and little round lamps.",
+    "object_class": "vehicle",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "glossy black and burgundy",
+    "backdrop_colors": "sunset orange and gold",
+    "surface_or_setting": "a winding country road at dusk"
+   },
+   "style": 0.743,
+   "misses": [
+    "color_palette.shadow_chroma_kept",
+    "value_contrast.boundary_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Vintage car",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_07": [
+  {
+   "try_id": "v1_07_1",
+   "brief_id": "v1_07",
+   "card": {
+    "name": "Lantern",
+    "subject": "A small iron lantern with a ring handle and a warm glowing flame inside glass panes.",
+    "object_class": "tool",
+    "category": "1",
+    "pattern": "concentric_rings",
+    "hero_colors": "amber and black",
+    "backdrop_colors": "deep navy and teal",
+    "surface_or_setting": ""
+   },
+   "style": 0.738,
+   "misses": [
+    "value_contrast.lightness_mean"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Glowing lantern",
+     "object_class": "tool",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_08": [
+  {
+   "try_id": "v1_08_1",
+   "brief_id": "v1_08",
+   "card": {
+    "name": "Bare Tree",
+    "subject": "A twisty leafless tree with long curvy branches and a knobby trunk.",
+    "object_class": "plant_nature",
+    "category": "3",
+    "pattern": "waves",
+    "hero_colors": "dark brown and tan",
+    "backdrop_colors": "bright magenta and pink",
+    "surface_or_setting": "a grassy hill"
+   },
+   "style": 0.747,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "color_palette.chroma_background",
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Twisted leafless tree",
+     "object_class": "plant_nature",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v1_08_2",
+   "brief_id": "v1_08",
+   "card": {
+    "name": "Bare Tree",
+    "subject": "A twisty leafless tree with long curvy branches and a knobby trunk.",
+    "object_class": "plant_nature",
+    "category": "3",
+    "pattern": "waves",
+    "hero_colors": "dark brown and tan",
+    "backdrop_colors": "bright magenta and pink",
+    "surface_or_setting": "a grassy hill"
+   },
+   "style": 0.764,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "color_palette.chroma_background",
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Twisted bare tree",
+     "object_class": "plant_nature",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v1_08_3",
+   "brief_id": "v1_08",
+   "card": {
+    "name": "Bare Tree",
+    "subject": "A twisty leafless tree with long curvy branches and a knobby trunk.",
+    "object_class": "plant_nature",
+    "category": "3",
+    "pattern": "waves",
+    "hero_colors": "dark brown and tan",
+    "backdrop_colors": "bright magenta and pink",
+    "surface_or_setting": "a grassy hill"
+   },
+   "style": 0.781,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "color_palette.chroma_background",
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Twisted bare tree",
+     "object_class": "plant_nature",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v1_09": [
+  {
+   "try_id": "v1_09_1",
+   "brief_id": "v1_09",
+   "card": {
+    "name": "Witch Hat",
+    "subject": "A tall pointy purple hat with a wide brim, a bent tip and a golden buckle band.",
+    "object_class": "clothing",
+    "category": "1",
+    "pattern": "diamonds",
+    "hero_colors": "violet and gold",
+    "backdrop_colors": "mint green and aqua",
+    "surface_or_setting": ""
+   },
+   "style": 0.709,
+   "misses": [
+    "color_palette.chroma_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Witch hat",
+     "object_class": "clothing",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_10": [
+  {
+   "try_id": "v1_10_1",
+   "brief_id": "v1_10",
+   "card": {
+    "name": "Coffin",
+    "subject": "A six-sided wooden coffin with a lid slightly ajar and a little brass handle on the side.",
+    "object_class": "container",
+    "category": "3",
+    "pattern": "plain_wall",
+    "hero_colors": "walnut brown and brass",
+    "backdrop_colors": "sky blue and white",
+    "surface_or_setting": "a cool stone crypt floor"
+   },
+   "style": 0.74,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Open wooden coffin",
+     "object_class": "container",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "simple_wall",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v2_01": [
+  {
+   "try_id": "v2_01_1",
+   "brief_id": "v2_01",
+   "card": {
+    "name": "Cauldron",
+    "subject": "A round black pot on three short legs with green bubbling brew spilling a few bubbles over the rim.",
+    "object_class": "container",
+    "category": "3",
+    "pattern": "concentric_rings",
+    "hero_colors": "black and neon green",
+    "backdrop_colors": "warm red and orange",
+    "surface_or_setting": "a crackling log fire"
+   },
+   "style": 0.687,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "color_palette.chroma_background"
+   ],
+   "issues": [
+    "style"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Bubbling potion cauldron",
+     "object_class": "container",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v2_01_2",
+   "brief_id": "v2_01",
+   "card": {
+    "name": "Cauldron",
+    "subject": "A round black pot on three short legs with green bubbling brew spilling a few bubbles over the rim.",
+    "object_class": "container",
+    "category": "3",
+    "pattern": "concentric_rings",
+    "hero_colors": "black and neon green",
+    "backdrop_colors": "warm red and orange",
+    "surface_or_setting": "a crackling log fire"
+   },
+   "style": 0.681,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "color_palette.chroma_background",
+    "edges_linework.edge_density_background"
+   ],
+   "issues": [
+    "style"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Bubbling potion cauldron",
+     "object_class": "container",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v2_01_3",
+   "brief_id": "v2_01",
+   "card": {
+    "name": "Cauldron",
+    "subject": "A round black pot on three short legs with green bubbling brew spilling a few bubbles over the rim.",
+    "object_class": "container",
+    "category": "3",
+    "pattern": "concentric_rings",
+    "hero_colors": "black and neon green",
+    "backdrop_colors": "warm red and orange",
+    "surface_or_setting": "a crackling log fire"
+   },
+   "style": 0.687,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "color_palette.chroma_background"
+   ],
+   "issues": [
+    "style"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Bubbling witch cauldron",
+     "object_class": "container",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v2_02": [
+  {
+   "try_id": "v2_02_1",
+   "brief_id": "v2_02",
+   "card": {
+    "name": "Potion",
+    "subject": "A round glass flask with a long neck, a cork stopper and swirling purple liquid.",
+    "object_class": "container",
+    "category": "1",
+    "pattern": "rays",
+    "hero_colors": "purple and pink",
+    "backdrop_colors": "lemon yellow and cream",
+    "surface_or_setting": ""
+   },
+   "style": 0.782,
+   "misses": [
+    "value_contrast.lightness_mean",
+    "edges_linework.edge_density_background"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Purple potion bottle",
+     "object_class": "container",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v2_03": [
+  {
+   "try_id": "v2_03_1",
+   "brief_id": "v2_03",
+   "card": {
+    "name": "Spellbook",
+    "subject": "A thick old book with a worn leather cover, a gold star emblem and a strap clasp.",
+    "object_class": "paper_document",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "crimson and gold",
+    "backdrop_colors": "teal and seafoam",
+    "surface_or_setting": "a wooden shelf ledge"
+   },
+   "style": 0.804,
+   "misses": [
+    "color_palette.chroma_subject",
+    "color_palette.hue_gap"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Star clasp book",
+     "object_class": "paper_document",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v2_04": [
+  {
+   "try_id": "v2_04_1",
+   "brief_id": "v2_04",
+   "card": {
+    "name": "Crystal Ball",
+    "subject": "A clear glass sphere full of swirling blue mist on a small carved golden stand.",
+    "object_class": "other",
+    "category": "2",
+    "pattern": "stripes",
+    "hero_colors": "icy blue and gold",
+    "backdrop_colors": "burgundy and plum",
+    "surface_or_setting": "a velvet-draped table edge"
+   },
+   "style": 0.703,
+   "misses": [
+    "value_contrast.lightness_mean",
+    "surface_finish.detail_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Crystal ball",
+     "object_class": "other",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v2_05": [
+  {
+   "try_id": "v2_05_1",
+   "brief_id": "v2_05",
+   "card": {
+    "name": "Broomstick",
+    "subject": "A long wooden stick with a bundle of straw bristles tied at the end with twine.",
+    "object_class": "tool",
+    "category": "1",
+    "pattern": "waves",
+    "hero_colors": "golden straw and brown",
+    "backdrop_colors": "deep violet and blue",
+    "surface_or_setting": ""
+   },
+   "style": 0.748,
+   "misses": [
+    "composition_hierarchy.center_y",
+    "color_palette.chroma_background",
+    "color_palette.hue_gap"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Hand broom",
+     "object_class": "tool",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v2_05_2",
+   "brief_id": "v2_05",
+   "card": {
+    "name": "Broomstick",
+    "subject": "A long wooden stick with a bundle of straw bristles tied at the end with twine.",
+    "object_class": "tool",
+    "category": "1",
+    "pattern": "waves",
+    "hero_colors": "golden straw and brown",
+    "backdrop_colors": "deep violet and blue",
+    "surface_or_setting": ""
+   },
+   "style": 0.755,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "composition_hierarchy.center_y",
+    "color_palette.chroma_background",
+    "color_palette.hue_gap"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Broom",
+     "object_class": "tool",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v2_05_3",
+   "brief_id": "v2_05",
+   "card": {
+    "name": "Broomstick",
+    "subject": "A long wooden stick with a bundle of straw bristles tied at the end with twine.",
+    "object_class": "tool",
+    "category": "1",
+    "pattern": "waves",
+    "hero_colors": "golden straw and brown",
+    "backdrop_colors": "deep violet and blue",
+    "surface_or_setting": ""
+   },
+   "style": 0.759,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "composition_hierarchy.center_y",
+    "color_palette.chroma_background"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Broom",
+     "object_class": "tool",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v2_06": [
+  {
+   "try_id": "v2_06_1",
+   "brief_id": "v2_06",
+   "card": {
+    "name": "Drip Candle",
+    "subject": "A fat cream candle with melted wax drips and a tiny dancing flame.",
+    "object_class": "other",
+    "category": "1",
+    "pattern": "repeated_motif",
+    "hero_colors": "ivory and flame orange",
+    "backdrop_colors": "forest green and black",
+    "surface_or_setting": ""
+   },
+   "style": 0.785,
+   "misses": [
+    "surface_finish.detail_subject",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Lit candle",
+     "object_class": "other",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v2_07": [
+  {
+   "try_id": "v2_07_1",
+   "brief_id": "v2_07",
+   "card": {
+    "name": "Toadstool",
+    "subject": "A big red mushroom with white spots on the cap and a thick pale stem.",
+    "object_class": "plant_nature",
+    "category": "3",
+    "pattern": "diamonds",
+    "hero_colors": "red and white",
+    "backdrop_colors": "dark olive and moss",
+    "surface_or_setting": "a mossy fallen log"
+   },
+   "style": 0.743,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.box_height"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Spotted red mushroom",
+     "object_class": "plant_nature",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v2_08": [
+  {
+   "try_id": "v2_08_1",
+   "brief_id": "v2_08",
+   "card": {
+    "name": "Cobweb",
+    "subject": "A round spiderweb with radiating threads sparkling with tiny dew drops, no spider.",
+    "object_class": "other",
+    "category": "3",
+    "pattern": "plain_wall",
+    "hero_colors": "silver white",
+    "backdrop_colors": "rich orange and rust",
+    "surface_or_setting": "an old window frame corner"
+   },
+   "style": 0.708,
+   "misses": [
+    "color_palette.shadow_chroma_kept",
+    "edges_linework.edge_density_subject",
+    "edges_linework.edge_density_background"
+   ],
+   "issues": [
+    "art_category"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Dewy spider web",
+     "object_class": "plant_nature",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "interior_scene",
+     "background_detail": 3,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v2_08_2",
+   "brief_id": "v2_08",
+   "card": {
+    "name": "Cobweb",
+    "subject": "A round spiderweb with radiating threads sparkling with tiny dew drops, no spider.",
+    "object_class": "other",
+    "category": "3",
+    "pattern": "plain_wall",
+    "hero_colors": "silver white",
+    "backdrop_colors": "rich orange and rust",
+    "surface_or_setting": "an old window frame corner"
+   },
+   "style": 0.714,
+   "misses": [
+    "color_palette.shadow_chroma_kept"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Spider web",
+     "object_class": "other",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "simple_wall",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v2_09": [
+  {
+   "try_id": "v2_09_1",
+   "brief_id": "v2_09",
+   "card": {
+    "name": "Castle",
+    "subject": "A stone castle with round towers, pointed roofs, and a drawbridge lit by torches.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "stone gray and torch gold",
+    "backdrop_colors": "night blue and magenta",
+    "surface_or_setting": "a craggy cliff by a stormy sky"
+   },
+   "style": 0.719,
+   "misses": [
+    "color_palette.chroma_background"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Fantasy castle",
+     "object_class": "building_place",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 4,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v2_10": [
+  {
+   "try_id": "v2_10_1",
+   "brief_id": "v2_10",
+   "card": {
+    "name": "Potion Lab",
+    "subject": "A cozy stone cellar room with shelves of colorful bottles, a bubbling pot and a hanging lamp.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "emerald and amber",
+    "backdrop_colors": "dusky rose and brown",
+    "surface_or_setting": "a candlelit underground cellar"
+   },
+   "style": 0.742,
+   "misses": [
+    "composition_hierarchy.center_y"
+   ],
+   "issues": [
+    "identity"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Bubbling potion cauldron",
+     "object_class": "container",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "interior_scene",
+     "background_detail": 4,
+     "secondary_objects": "many"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v2_10_2",
+   "brief_id": "v2_10",
+   "card": {
+    "name": "Potion Lab",
+    "subject": "A cozy stone cellar room with shelves of colorful bottles, a bubbling pot and a hanging lamp.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "emerald and amber",
+    "backdrop_colors": "dusky rose and brown",
+    "surface_or_setting": "a candlelit underground cellar"
+   },
+   "style": 0.744,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "composition_hierarchy.center_y"
+   ],
+   "issues": [
+    "identity"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Bubbling potion cauldron",
+     "object_class": "container",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "interior_scene",
+     "background_detail": 5,
+     "secondary_objects": "many"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v2_10_3",
+   "brief_id": "v2_10",
+   "card": {
+    "name": "Potion Lab",
+    "subject": "A cozy stone cellar room with shelves of colorful bottles, a bubbling pot and a hanging lamp.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "emerald and amber",
+    "backdrop_colors": "dusky rose and brown",
+    "surface_or_setting": "a candlelit underground cellar"
+   },
+   "style": 0.726,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.box_height"
+   ],
+   "issues": [
+    "identity"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Bubbling potion cauldron",
+     "object_class": "container",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "interior_scene",
+     "background_detail": 5,
+     "secondary_objects": "many"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v3_01": [
+  {
+   "try_id": "v3_01_1",
+   "brief_id": "v3_01",
+   "card": {
+    "name": "Candelabra",
+    "subject": "A silver stand with five curling arms, each holding a lit white candle.",
+    "object_class": "other",
+    "category": "1",
+    "pattern": "rays",
+    "hero_colors": "silver and flame yellow",
+    "backdrop_colors": "deep crimson and wine",
+    "surface_or_setting": ""
+   },
+   "style": 0.661,
+   "misses": [],
+   "issues": [
+    "style"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Five-arm candelabra",
+     "object_class": "furniture",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v3_01_2",
+   "brief_id": "v3_01",
+   "card": {
+    "name": "Candelabra",
+    "subject": "A silver stand with five curling arms, each holding a lit white candle.",
+    "object_class": "other",
+    "category": "1",
+    "pattern": "rays",
+    "hero_colors": "silver and flame yellow",
+    "backdrop_colors": "deep crimson and wine",
+    "surface_or_setting": ""
+   },
+   "style": 0.662,
+   "misses": [
+    "value_contrast.lightness_mean"
+   ],
+   "issues": [
+    "style"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Five-arm candelabrum",
+     "object_class": "furniture",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v3_01_3",
+   "brief_id": "v3_01",
+   "card": {
+    "name": "Candelabra",
+    "subject": "A silver stand with five curling arms, each holding a lit white candle.",
+    "object_class": "other",
+    "category": "1",
+    "pattern": "rays",
+    "hero_colors": "silver and flame yellow",
+    "backdrop_colors": "deep crimson and wine",
+    "surface_or_setting": ""
+   },
+   "style": 0.699,
+   "misses": [
+    "color_palette.hue_gap"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Five-arm candelabra",
+     "object_class": "furniture",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v3_02": [
+  {
+   "try_id": "v3_02_1",
+   "brief_id": "v3_02",
+   "card": {
+    "name": "Old Key",
+    "subject": "A large iron skeleton-style key with a round decorated loop and a notched tip.",
+    "object_class": "tool",
+    "category": "1",
+    "pattern": "concentric_rings",
+    "hero_colors": "antique bronze",
+    "backdrop_colors": "sky blue and periwinkle",
+    "surface_or_setting": ""
+   },
+   "style": 0.775,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Golden key",
+     "object_class": "tool",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v3_03": [
+  {
+   "try_id": "v3_03_1",
+   "brief_id": "v3_03",
+   "card": {
+    "name": "Party Mask",
+    "subject": "A white half-face masquerade mask with swirly gold trim and two eye cutouts, tied with a ribbon.",
+    "object_class": "accessory",
+    "category": "1",
+    "pattern": "repeated_motif",
+    "hero_colors": "white and gold",
+    "backdrop_colors": "emerald and dark green",
+    "surface_or_setting": ""
+   },
+   "style": 0.724,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Masquerade mask",
+     "object_class": "accessory",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v3_04": [
+  {
+   "try_id": "v3_04_1",
+   "brief_id": "v3_04",
+   "card": {
+    "name": "Music Box",
+    "subject": "A small wooden box with an open lid, a tiny crank on the side and a golden comb inside.",
+    "object_class": "music_instrument",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "mahogany and rose gold",
+    "backdrop_colors": "mint and pale aqua",
+    "surface_or_setting": "a dusty dresser ledge"
+   },
+   "style": 0.769,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Music box",
+     "object_class": "music_instrument",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v3_05": [
+  {
+   "try_id": "v3_05_1",
+   "brief_id": "v3_05",
+   "card": {
+    "name": "Grand Clock",
+    "subject": "A tall wooden clock with a round face, a swinging gold pendulum and a pointed top.",
+    "object_class": "furniture",
+    "category": "3",
+    "pattern": "stripes",
+    "hero_colors": "dark oak and brass",
+    "backdrop_colors": "turquoise and cream",
+    "surface_or_setting": "a patterned hallway rug"
+   },
+   "style": 0.747,
+   "misses": [
+    "composition_hierarchy.box_height"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Pendulum clock",
+     "object_class": "furniture",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "one"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v3_06": [
+  {
+   "try_id": "v3_06_1",
+   "brief_id": "v3_06",
+   "card": {
+    "name": "Mirror",
+    "subject": "A tall oval mirror in an ornate curly frame with a faint foggy shine.",
+    "object_class": "furniture",
+    "category": "3",
+    "pattern": "plain_wall",
+    "hero_colors": "antique gold and silver",
+    "backdrop_colors": "burnt orange and peach",
+    "surface_or_setting": "a wallpapered bedroom wall"
+   },
+   "style": 0.738,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Ornate standing mirror",
+     "object_class": "furniture",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v3_07": [
+  {
+   "try_id": "v3_07_1",
+   "brief_id": "v3_07",
+   "card": {
+    "name": "Old Trunk",
+    "subject": "A dome-lidded wooden chest with metal corner bands, a big lock and leather straps.",
+    "object_class": "container",
+    "category": "3",
+    "pattern": "waves",
+    "hero_colors": "tan brown and iron gray",
+    "backdrop_colors": "lilac and berry",
+    "surface_or_setting": "creaky attic floorboards"
+   },
+   "style": 0.78,
+   "misses": [
+    "composition_hierarchy.subject_area"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Locked treasure chest",
+     "object_class": "container",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v3_08": [
+  {
+   "try_id": "v3_08_1",
+   "brief_id": "v3_08",
+   "card": {
+    "name": "Grand Piano",
+    "subject": "A big black piano with a raised lid, white and black keys and curved legs, lit by a candle.",
+    "object_class": "music_instrument",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "glossy black and ivory",
+    "backdrop_colors": "golden yellow and amber",
+    "surface_or_setting": "a dusty ballroom"
+   },
+   "style": 0.704,
+   "misses": [
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Grand piano",
+     "object_class": "music_instrument",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "interior_scene",
+     "background_detail": 4,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v3_09": [
+  {
+   "try_id": "v3_09_1",
+   "brief_id": "v3_09",
+   "card": {
+    "name": "Attic",
+    "subject": "A slanted-roof room with a round window, hanging sheets, a lamp and stacked boxes.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "warm brown and lamp yellow",
+    "backdrop_colors": "slate blue and gray",
+    "surface_or_setting": "a cozy cluttered attic"
+   },
+   "style": 0.788,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Attic storage room",
+     "object_class": "building_place",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "interior_scene",
+     "background_detail": 4,
+     "secondary_objects": "many"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v3_10": [
+  {
+   "try_id": "v3_10_1",
+   "brief_id": "v3_10",
+   "card": {
+    "name": "Staircase",
+    "subject": "A wide curved wooden staircase with a carved railing and a red carpet runner.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "red carpet and dark wood",
+    "backdrop_colors": "pale green and ivory",
+    "surface_or_setting": "a grand entrance hall"
+   },
+   "style": 0.763,
+   "misses": [
+    "composition_hierarchy.subject_area"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Grand staircase",
+     "object_class": "building_place",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "interior_scene",
+     "background_detail": 4,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true
+  }
+ ]
+}

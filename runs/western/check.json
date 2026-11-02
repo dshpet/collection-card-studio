@@ -1,0 +1,1511 @@
+{
+ "v1_01": [
+  {
+   "try_id": "v1_01_1",
+   "brief_id": "v1_01",
+   "card": {
+    "name": "Cowboy Hat",
+    "subject": "A tan cowboy hat with a wide curled brim, a tall creased crown and a brown band.",
+    "object_class": "clothing",
+    "category": "1",
+    "pattern": "rays",
+    "hero_colors": "tan and brown",
+    "backdrop_colors": "sky blue and pale blue",
+    "surface_or_setting": ""
+   },
+   "style": 0.766,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Cowboy hat",
+     "object_class": "clothing",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_02": [
+  {
+   "try_id": "v1_02_1",
+   "brief_id": "v1_02",
+   "card": {
+    "name": "Sheriff Star",
+    "subject": "A shiny six-pointed gold badge with little ball tips and a round center ring.",
+    "object_class": "accessory",
+    "category": "1",
+    "pattern": "concentric_rings",
+    "hero_colors": "golden yellow",
+    "backdrop_colors": "deep teal and navy",
+    "surface_or_setting": ""
+   },
+   "style": 0.782,
+   "misses": [
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Sheriff badge",
+     "object_class": "accessory",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_03": [
+  {
+   "try_id": "v1_03_1",
+   "brief_id": "v1_03",
+   "card": {
+    "name": "Lasso",
+    "subject": "A coiled golden rope with a big open loop and a small knot at the loop.",
+    "object_class": "tool",
+    "category": "1",
+    "pattern": "plain_gradient",
+    "hero_colors": "straw yellow and beige",
+    "backdrop_colors": "plum purple and lilac",
+    "surface_or_setting": ""
+   },
+   "style": 0.731,
+   "misses": [
+    "color_palette.chroma_background"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Coiled lasso",
+     "object_class": "tool",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_04": [
+  {
+   "try_id": "v1_04_1",
+   "brief_id": "v1_04",
+   "card": {
+    "name": "Cowboy Boots",
+    "subject": "A pair of red-brown leather boots with pointed toes, tall shafts, stitched patterns and small heels.",
+    "object_class": "clothing",
+    "category": "3",
+    "pattern": "stripes",
+    "hero_colors": "rust red and brown",
+    "backdrop_colors": "mint green and aqua",
+    "surface_or_setting": "worn wooden plank porch floor"
+   },
+   "style": 0.712,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Cowboy boots",
+     "object_class": "clothing",
+     "real_world_scale": "body_sized",
+     "subject_count": "pair"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_05": [
+  {
+   "try_id": "v1_05_1",
+   "brief_id": "v1_05",
+   "card": {
+    "name": "Cactus",
+    "subject": "A round green saguaro cactus with two upturned arms and one small pink flower on top.",
+    "object_class": "plant_nature",
+    "category": "3",
+    "pattern": "plain_gradient",
+    "hero_colors": "fresh green and pink",
+    "backdrop_colors": "warm orange and peach",
+    "surface_or_setting": "sandy desert ground with small pebbles"
+   },
+   "style": 0.769,
+   "misses": [
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Flowering cactus",
+     "object_class": "plant_nature",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_06": [
+  {
+   "try_id": "v1_06_1",
+   "brief_id": "v1_06",
+   "card": {
+    "name": "Horseshoe",
+    "subject": "A silver U-shaped horseshoe with seven nail holes and open ends pointing up.",
+    "object_class": "tool",
+    "category": "3",
+    "pattern": "repeated_motif",
+    "hero_colors": "silver gray",
+    "backdrop_colors": "barn red and maroon",
+    "surface_or_setting": "weathered barn wood boards"
+   },
+   "style": 0.714,
+   "misses": [
+    "composition_hierarchy.margin_min",
+    "color_palette.shadow_chroma_kept"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Metal horseshoe",
+     "object_class": "tool",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_07": [
+  {
+   "try_id": "v1_07_1",
+   "brief_id": "v1_07",
+   "card": {
+    "name": "Coffee Pot",
+    "subject": "A blue enamel campfire coffee pot with a curved spout, arched handle and dented lid.",
+    "object_class": "container",
+    "category": "2",
+    "pattern": "diamonds",
+    "hero_colors": "cobalt blue and white",
+    "backdrop_colors": "golden yellow and cream",
+    "surface_or_setting": "flat stone ledge"
+   },
+   "style": 0.744,
+   "misses": [
+    "color_palette.chroma_subject",
+    "surface_finish.detail_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Blue coffee pot",
+     "object_class": "container",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_08": [
+  {
+   "try_id": "v1_08_1",
+   "brief_id": "v1_08",
+   "card": {
+    "name": "Bean Tin",
+    "subject": "A round tin can with a paper label, a small spoon sticking out and a rolled lid edge.",
+    "object_class": "container",
+    "category": "2",
+    "pattern": "waves",
+    "hero_colors": "red and silver",
+    "backdrop_colors": "leaf green and olive",
+    "surface_or_setting": "rough wooden shelf ledge"
+   },
+   "style": 0.731,
+   "misses": [
+    "composition_hierarchy.box_width",
+    "surface_finish.detail_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Opened food can",
+     "object_class": "food_drink",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "one"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_09": [
+  {
+   "try_id": "v1_09_1",
+   "brief_id": "v1_09",
+   "card": {
+    "name": "Saloon",
+    "subject": "A two-story wooden saloon with a false front, swinging half doors, a balcony and a hanging sign.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "warm brown and cream",
+    "backdrop_colors": "dusty pink and lavender sunset",
+    "surface_or_setting": "dusty main street of a small desert town"
+   },
+   "style": 0.736,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "color_palette.hue_gap"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Western saloon",
+     "object_class": "building_place",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_10": [
+  {
+   "try_id": "v1_10_1",
+   "brief_id": "v1_10",
+   "card": {
+    "name": "Wagon",
+    "subject": "A covered wagon with a white arched canvas top, big wooden spoked wheels and a front tongue.",
+    "object_class": "vehicle",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "white and wood brown",
+    "backdrop_colors": "turquoise and golden grass",
+    "surface_or_setting": "open prairie trail with rolling hills"
+   },
+   "style": 0.804,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Covered wagon",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v2_01": [
+  {
+   "try_id": "v2_01_1",
+   "brief_id": "v2_01",
+   "card": {
+    "name": "Sheriff Star",
+    "subject": "A shiny gold star badge with six ball-tipped points and a raised round center.",
+    "object_class": "accessory",
+    "category": "1",
+    "pattern": "rays",
+    "hero_colors": "gold and amber",
+    "backdrop_colors": "royal purple and indigo",
+    "surface_or_setting": ""
+   },
+   "style": 0.785,
+   "misses": [
+    "color_palette.chroma_background",
+    "value_contrast.boundary_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Sheriff badge",
+     "object_class": "accessory",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v2_02": [
+  {
+   "try_id": "v2_02_1",
+   "brief_id": "v2_02",
+   "card": {
+    "name": "Spurs",
+    "subject": "A silver spur with a U-shaped heel band, a short neck and a round spiky wheel.",
+    "object_class": "accessory",
+    "category": "1",
+    "pattern": "concentric_rings",
+    "hero_colors": "silver and steel gray",
+    "backdrop_colors": "coral red and orange",
+    "surface_or_setting": ""
+   },
+   "style": 0.75,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Cowboy spur",
+     "object_class": "accessory",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v2_03": [
+  {
+   "try_id": "v2_03_1",
+   "brief_id": "v2_03",
+   "card": {
+    "name": "Lantern",
+    "subject": "An old black oil lantern with a glass globe, a glowing flame, a wire cage and a top handle.",
+    "object_class": "tool",
+    "category": "1",
+    "pattern": "plain_gradient",
+    "hero_colors": "black and glowing yellow",
+    "backdrop_colors": "sea green and light teal",
+    "surface_or_setting": ""
+   },
+   "style": 0.787,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Oil lantern",
+     "object_class": "tool",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v2_04": [
+  {
+   "try_id": "v2_04_1",
+   "brief_id": "v2_04",
+   "card": {
+    "name": "Sarsaparilla",
+    "subject": "A big glass mug with a handle, brown fizzy drink and a foamy white top.",
+    "object_class": "food_drink",
+    "category": "2",
+    "pattern": "waves",
+    "hero_colors": "brown and cream",
+    "backdrop_colors": "bright blue and sky",
+    "surface_or_setting": "polished wooden bar ledge"
+   },
+   "style": 0.764,
+   "misses": [
+    "color_palette.hue_gap",
+    "surface_finish.detail_subject",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Frothy drink mug",
+     "object_class": "food_drink",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v2_04_2",
+   "brief_id": "v2_04",
+   "card": {
+    "name": "Sarsaparilla",
+    "subject": "A big glass mug with a handle, brown fizzy drink and a foamy white top.",
+    "object_class": "food_drink",
+    "category": "2",
+    "pattern": "waves",
+    "hero_colors": "brown and cream",
+    "backdrop_colors": "bright blue and sky",
+    "surface_or_setting": "polished wooden bar ledge"
+   },
+   "style": 0.746,
+   "misses": [
+    "color_palette.shadow_chroma_kept",
+    "surface_finish.detail_subject",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Foamy beer mug",
+     "object_class": "food_drink",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v2_04_3",
+   "brief_id": "v2_04",
+   "card": {
+    "name": "Sarsaparilla",
+    "subject": "A big glass mug with a handle, brown fizzy drink and a foamy white top.",
+    "object_class": "food_drink",
+    "category": "2",
+    "pattern": "waves",
+    "hero_colors": "brown and cream",
+    "backdrop_colors": "bright blue and sky",
+    "surface_or_setting": "polished wooden bar ledge"
+   },
+   "style": 0.75,
+   "misses": [
+    "color_palette.shadow_chroma_kept",
+    "surface_finish.detail_subject",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Foamy beer mug",
+     "object_class": "food_drink",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v2_05": [
+  {
+   "try_id": "v2_05_1",
+   "brief_id": "v2_05",
+   "card": {
+    "name": "Playing Cards",
+    "subject": "A fanned hand of five cards with red hearts and black spades, held in a neat arc.",
+    "object_class": "toy_game",
+    "category": "2",
+    "pattern": "diamonds",
+    "hero_colors": "white, red and black",
+    "backdrop_colors": "emerald green and forest",
+    "surface_or_setting": "green felt table edge"
+   },
+   "style": 0.698,
+   "misses": [
+    "composition_hierarchy.box_width",
+    "color_palette.shadow_chroma_kept"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Playing cards",
+     "object_class": "toy_game",
+     "real_world_scale": "handheld",
+     "subject_count": "few"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v2_06": [
+  {
+   "try_id": "v2_06_1",
+   "brief_id": "v2_06",
+   "card": {
+    "name": "Wanted Poster",
+    "subject": "A rough paper poster with a big WANTED header, an empty round frame for a face and a reward sign, tacked at the corners.",
+    "object_class": "paper_document",
+    "category": "3",
+    "pattern": "plain_wall",
+    "hero_colors": "parchment beige and black",
+    "backdrop_colors": "deep blue and slate",
+    "surface_or_setting": "rustic plank wall"
+   },
+   "style": 0.781,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.box_height",
+    "value_contrast.rms_contrast",
+    "value_contrast.boundary_contrast",
+    "edges_linework.edge_density_background"
+   ],
+   "issues": [
+    "art_category"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Western parchment poster",
+     "object_class": "paper_document",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "on_surface",
+     "background_type": "simple_wall",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v2_06_2",
+   "brief_id": "v2_06",
+   "card": {
+    "name": "Wanted Poster",
+    "subject": "A rough paper poster with a big WANTED header, an empty round frame for a face and a reward sign, tacked at the corners.",
+    "object_class": "paper_document",
+    "category": "3",
+    "pattern": "plain_wall",
+    "hero_colors": "parchment beige and black",
+    "backdrop_colors": "deep blue and slate",
+    "surface_or_setting": "rustic plank wall"
+   },
+   "style": 0.757,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.box_height",
+    "color_palette.hue_gap",
+    "value_contrast.rms_contrast",
+    "value_contrast.boundary_contrast",
+    "edges_linework.edge_density_background"
+   ],
+   "issues": [
+    "identity"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Decorative parchment card",
+     "object_class": "paper_document",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "simple_wall",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v2_06_3",
+   "brief_id": "v2_06",
+   "card": {
+    "name": "Wanted Poster",
+    "subject": "A rough paper poster with a big WANTED header, an empty round frame for a face and a reward sign, tacked at the corners.",
+    "object_class": "paper_document",
+    "category": "3",
+    "pattern": "plain_wall",
+    "hero_colors": "parchment beige and black",
+    "backdrop_colors": "deep blue and slate",
+    "surface_or_setting": "rustic plank wall"
+   },
+   "style": 0.757,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "value_contrast.rms_contrast",
+    "value_contrast.boundary_contrast",
+    "edges_linework.edge_density_background"
+   ],
+   "issues": [
+    "identity"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Decorative parchment card",
+     "object_class": "paper_document",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "simple_wall",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v2_07": [
+  {
+   "try_id": "v2_07_1",
+   "brief_id": "v2_07",
+   "card": {
+    "name": "Treasure Map",
+    "subject": "A rolled-out old map with torn edges, a dotted trail and a red X mark.",
+    "object_class": "paper_document",
+    "category": "3",
+    "pattern": "stripes",
+    "hero_colors": "tan and red",
+    "backdrop_colors": "teal and seafoam",
+    "surface_or_setting": "wooden table top"
+   },
+   "style": 0.788,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Treasure map",
+     "object_class": "paper_document",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v2_08": [
+  {
+   "try_id": "v2_08_1",
+   "brief_id": "v2_08",
+   "card": {
+    "name": "Steam Train",
+    "subject": "A small black steam locomotive with a tall funnel, a round front lamp, red wheels and white puffs of smoke.",
+    "object_class": "vehicle",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "black and red",
+    "backdrop_colors": "golden dawn sky and orange rock",
+    "surface_or_setting": "railway track crossing a desert valley"
+   },
+   "style": 0.792,
+   "misses": [
+    "color_palette.shadow_chroma_kept"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Steam locomotive",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 4,
+     "secondary_objects": "many"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v2_09": [
+  {
+   "try_id": "v2_09_1",
+   "brief_id": "v2_09",
+   "card": {
+    "name": "Windmill",
+    "subject": "A tall wooden ranch windmill with a round fan of blades, a tail vane and a small water trough below.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "silver and weathered wood",
+    "backdrop_colors": "rosy pink and sunset yellow",
+    "surface_or_setting": "dry grassy ranch field"
+   },
+   "style": 0.786,
+   "misses": [
+    "composition_hierarchy.box_height"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Farm windmill",
+     "object_class": "building_place",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v2_10": [
+  {
+   "try_id": "v2_10_1",
+   "brief_id": "v2_10",
+   "card": {
+    "name": "Water Tower",
+    "subject": "A round wooden water tank with a cone roof, on four tall crossed legs, with a spout hanging down.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "brown and gray",
+    "backdrop_colors": "clear blue and light green",
+    "surface_or_setting": "beside a railway stop in a small frontier town"
+   },
+   "style": 0.782,
+   "misses": [
+    "edges_linework.edge_density_background"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Wooden water tower",
+     "object_class": "building_place",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 4,
+     "secondary_objects": "many"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v3_01": [
+  {
+   "try_id": "v3_01_1",
+   "brief_id": "v3_01",
+   "card": {
+    "name": "Tumbleweed",
+    "subject": "A round ball of tangled pale twigs with gaps showing through, bouncing along.",
+    "object_class": "plant_nature",
+    "category": "1",
+    "pattern": "rays",
+    "hero_colors": "straw beige and light brown",
+    "backdrop_colors": "deep blue and cobalt",
+    "surface_or_setting": ""
+   },
+   "style": 0.761,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Woven wooden ball",
+     "object_class": "toy_game",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v3_02": [
+  {
+   "try_id": "v3_02_1",
+   "brief_id": "v3_02",
+   "card": {
+    "name": "Canteen",
+    "subject": "A flat round metal canteen with a cloth cover, a screw cap and a short strap loop.",
+    "object_class": "container",
+    "category": "1",
+    "pattern": "concentric_rings",
+    "hero_colors": "olive green and khaki",
+    "backdrop_colors": "magenta and rose",
+    "surface_or_setting": ""
+   },
+   "style": 0.781,
+   "misses": [
+    "color_palette.chroma_background"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Water canteen",
+     "object_class": "container",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v3_03": [
+  {
+   "try_id": "v3_03_1",
+   "brief_id": "v3_03",
+   "card": {
+    "name": "Bandana",
+    "subject": "A red triangle neckerchief with white paisley dots and a loose knot at the point.",
+    "object_class": "clothing",
+    "category": "1",
+    "pattern": "waves",
+    "hero_colors": "red and white",
+    "backdrop_colors": "lime green and mint",
+    "surface_or_setting": ""
+   },
+   "style": 0.732,
+   "misses": [
+    "value_contrast.boundary_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Red bandana",
+     "object_class": "accessory",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v3_04": [
+  {
+   "try_id": "v3_04_1",
+   "brief_id": "v3_04",
+   "card": {
+    "name": "Harmonica",
+    "subject": "A silver rectangular harmonica with many small holes in a row and curved end covers.",
+    "object_class": "music_instrument",
+    "category": "2",
+    "pattern": "stripes",
+    "hero_colors": "silver and navy",
+    "backdrop_colors": "sunny yellow and apricot",
+    "surface_or_setting": "wooden fence rail ledge"
+   },
+   "style": 0.763,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "color_palette.shadow_chroma_kept"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Harmonica",
+     "object_class": "music_instrument",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v3_05": [
+  {
+   "try_id": "v3_05_1",
+   "brief_id": "v3_05",
+   "card": {
+    "name": "Gold Pan",
+    "subject": "A wide shallow metal pan with sloped sides and a few shiny gold nuggets inside.",
+    "object_class": "tool",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "dark gray and gold",
+    "backdrop_colors": "sky blue and periwinkle",
+    "surface_or_setting": "smooth riverside rock ledge"
+   },
+   "style": 0.803,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.box_width",
+    "composition_hierarchy.center_x",
+    "composition_hierarchy.margin_min",
+    "color_palette.hue_gap",
+    "surface_finish.detail_subject",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [
+    "art_category"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Gold panning pan",
+     "object_class": "tool",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v3_05_2",
+   "brief_id": "v3_05",
+   "card": {
+    "name": "Gold Pan",
+    "subject": "A wide shallow metal pan with sloped sides and a few shiny gold nuggets inside.",
+    "object_class": "tool",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "dark gray and gold",
+    "backdrop_colors": "sky blue and periwinkle",
+    "surface_or_setting": "smooth riverside rock ledge"
+   },
+   "style": 0.825,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.box_width",
+    "composition_hierarchy.center_x",
+    "composition_hierarchy.margin_min",
+    "surface_finish.detail_subject"
+   ],
+   "issues": [
+    "art_category"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Gold panning pan",
+     "object_class": "tool",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "flat_gradient",
+     "background_detail": 2,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v3_05_3",
+   "brief_id": "v3_05",
+   "card": {
+    "name": "Gold Pan",
+    "subject": "A wide shallow metal pan with sloped sides and a few shiny gold nuggets inside.",
+    "object_class": "tool",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "dark gray and gold",
+    "backdrop_colors": "sky blue and periwinkle",
+    "surface_or_setting": "smooth riverside rock ledge"
+   },
+   "style": 0.792,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.box_width",
+    "composition_hierarchy.center_x",
+    "composition_hierarchy.margin_min",
+    "surface_finish.detail_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Gold panning pan",
+     "object_class": "container",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v3_06": [
+  {
+   "try_id": "v3_06_1",
+   "brief_id": "v3_06",
+   "card": {
+    "name": "Banjo",
+    "subject": "A banjo with a round drum body, a long neck, five strings and a wooden head peg.",
+    "object_class": "music_instrument",
+    "category": "3",
+    "pattern": "diamonds",
+    "hero_colors": "honey wood and white",
+    "backdrop_colors": "burgundy and wine",
+    "surface_or_setting": "golden hay bale"
+   },
+   "style": 0.688,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "composition_hierarchy.center_x",
+    "value_contrast.rms_contrast",
+    "value_contrast.boundary_contrast"
+   ],
+   "issues": [
+    "style"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Banjo",
+     "object_class": "music_instrument",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v3_06_2",
+   "brief_id": "v3_06",
+   "card": {
+    "name": "Banjo",
+    "subject": "A banjo with a round drum body, a long neck, five strings and a wooden head peg.",
+    "object_class": "music_instrument",
+    "category": "3",
+    "pattern": "diamonds",
+    "hero_colors": "honey wood and white",
+    "backdrop_colors": "burgundy and wine",
+    "surface_or_setting": "golden hay bale"
+   },
+   "style": 0.689,
+   "misses": [
+    "composition_hierarchy.box_height"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Banjo",
+     "object_class": "music_instrument",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "one"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v3_07": [
+  {
+   "try_id": "v3_07_1",
+   "brief_id": "v3_07",
+   "card": {
+    "name": "Saddle",
+    "subject": "A brown leather saddle with a curved seat, a front horn, stirrups and a cinch strap.",
+    "object_class": "other",
+    "category": "3",
+    "pattern": "repeated_motif",
+    "hero_colors": "saddle brown and tan",
+    "backdrop_colors": "aqua and turquoise",
+    "surface_or_setting": "split-rail corral fence"
+   },
+   "style": 0.741,
+   "misses": [],
+   "issues": [
+    "art_category"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Western saddle",
+     "object_class": "sports_gear",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "motif_pattern",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v3_07_2",
+   "brief_id": "v3_07",
+   "card": {
+    "name": "Saddle",
+    "subject": "A brown leather saddle with a curved seat, a front horn, stirrups and a cinch strap.",
+    "object_class": "other",
+    "category": "3",
+    "pattern": "repeated_motif",
+    "hero_colors": "saddle brown and tan",
+    "backdrop_colors": "aqua and turquoise",
+    "surface_or_setting": "split-rail corral fence"
+   },
+   "style": 0.752,
+   "misses": [
+    "composition_hierarchy.margin_min"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Western saddle",
+     "object_class": "sports_gear",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "one"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v3_08": [
+  {
+   "try_id": "v3_08_1",
+   "brief_id": "v3_08",
+   "card": {
+    "name": "Cactus",
+    "subject": "A tall green cactus with two arms, ridged sides and a bright yellow flower on top.",
+    "object_class": "plant_nature",
+    "category": "3",
+    "pattern": "plain_gradient",
+    "hero_colors": "green and yellow",
+    "backdrop_colors": "lavender and violet",
+    "surface_or_setting": "red desert sand"
+   },
+   "style": 0.755,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "color_palette.chroma_background",
+    "color_palette.hue_gap"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Flowering cactus",
+     "object_class": "plant_nature",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v3_08_2",
+   "brief_id": "v3_08",
+   "card": {
+    "name": "Cactus",
+    "subject": "A tall green cactus with two arms, ridged sides and a bright yellow flower on top.",
+    "object_class": "plant_nature",
+    "category": "3",
+    "pattern": "plain_gradient",
+    "hero_colors": "green and yellow",
+    "backdrop_colors": "lavender and violet",
+    "surface_or_setting": "red desert sand"
+   },
+   "style": 0.756,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "color_palette.chroma_subject",
+    "color_palette.chroma_background",
+    "value_contrast.rms_contrast",
+    "value_contrast.boundary_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Flowering cactus",
+     "object_class": "plant_nature",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v3_08_3",
+   "brief_id": "v3_08",
+   "card": {
+    "name": "Cactus",
+    "subject": "A tall green cactus with two arms, ridged sides and a bright yellow flower on top.",
+    "object_class": "plant_nature",
+    "category": "3",
+    "pattern": "plain_gradient",
+    "hero_colors": "green and yellow",
+    "backdrop_colors": "lavender and violet",
+    "surface_or_setting": "red desert sand"
+   },
+   "style": 0.763,
+   "misses": [
+    "color_palette.chroma_subject",
+    "color_palette.chroma_background",
+    "value_contrast.boundary_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Flowering cactus",
+     "object_class": "plant_nature",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v3_09": [
+  {
+   "try_id": "v3_09_1",
+   "brief_id": "v3_09",
+   "card": {
+    "name": "Campfire",
+    "subject": "A cozy campfire with stacked logs, orange flames, a ring of stones and a pot hanging on a stick.",
+    "object_class": "other",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "orange and yellow flames",
+    "backdrop_colors": "starry night blue and indigo",
+    "surface_or_setting": "campsite on the open desert at night"
+   },
+   "style": 0.702,
+   "misses": [
+    "color_palette.chroma_background"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Campfire cooking pot",
+     "object_class": "container",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 4,
+     "secondary_objects": "many"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v3_10": [
+  {
+   "try_id": "v3_10_1",
+   "brief_id": "v3_10",
+   "card": {
+    "name": "Desert Mesa",
+    "subject": "A flat-topped red rock mesa with striped layers and a small green bush at its base.",
+    "object_class": "plant_nature",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "terracotta red and orange",
+    "backdrop_colors": "pale blue sky and white clouds",
+    "surface_or_setting": "wide desert valley at midday"
+   },
+   "style": 0.806,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Desert mesa",
+     "object_class": "plant_nature",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "many"
+    }
+   },
+   "passed": true
+  }
+ ]
+}

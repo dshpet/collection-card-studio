@@ -1,0 +1,1781 @@
+{
+ "v1_01": [
+  {
+   "try_id": "v1_01_1",
+   "brief_id": "v1_01",
+   "card": {
+    "name": "Rocket",
+    "subject": "A chubby retro rocket with a pointed nose cone, round porthole window and three fins.",
+    "object_class": "vehicle",
+    "category": "1",
+    "pattern": "rays",
+    "hero_colors": "red and white",
+    "backdrop_colors": "teal and deep blue",
+    "surface_or_setting": ""
+   },
+   "style": 0.754,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Rocket",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_02": [
+  {
+   "try_id": "v1_02_1",
+   "brief_id": "v1_02",
+   "card": {
+    "name": "Flying Saucer",
+    "subject": "A classic silver flying saucer with a glass dome on top and a ring of little round lights.",
+    "object_class": "vehicle",
+    "category": "1",
+    "pattern": "concentric_rings",
+    "hero_colors": "silver and lime green",
+    "backdrop_colors": "purple and magenta",
+    "surface_or_setting": ""
+   },
+   "style": 0.748,
+   "misses": [
+    "color_palette.chroma_background"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Flying saucer",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_03": [
+  {
+   "try_id": "v1_03_1",
+   "brief_id": "v1_03",
+   "card": {
+    "name": "Ringed Planet",
+    "subject": "A round planet with soft bands of color and one big tilted ring around it.",
+    "object_class": "other",
+    "category": "1",
+    "pattern": "stripes",
+    "hero_colors": "orange and cream",
+    "backdrop_colors": "navy and indigo",
+    "surface_or_setting": ""
+   },
+   "style": 0.669,
+   "misses": [
+    "value_contrast.lightness_mean",
+    "value_contrast.rms_contrast",
+    "value_contrast.boundary_contrast"
+   ],
+   "issues": [
+    "style"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Ringed planet",
+     "object_class": "plant_nature",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v1_03_2",
+   "brief_id": "v1_03",
+   "card": {
+    "name": "Ringed Planet",
+    "subject": "A round planet with soft bands of color and one big tilted ring around it.",
+    "object_class": "other",
+    "category": "1",
+    "pattern": "stripes",
+    "hero_colors": "orange and cream",
+    "backdrop_colors": "navy and indigo",
+    "surface_or_setting": ""
+   },
+   "style": 0.756,
+   "misses": [
+    "color_palette.chroma_background",
+    "color_palette.hue_gap",
+    "value_contrast.lightness_mean",
+    "value_contrast.boundary_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Ringed planet",
+     "object_class": "plant_nature",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v1_03_3",
+   "brief_id": "v1_03",
+   "card": {
+    "name": "Ringed Planet",
+    "subject": "A round planet with soft bands of color and one big tilted ring around it.",
+    "object_class": "other",
+    "category": "1",
+    "pattern": "stripes",
+    "hero_colors": "orange and cream",
+    "backdrop_colors": "navy and indigo",
+    "surface_or_setting": ""
+   },
+   "style": 0.682,
+   "misses": [
+    "color_palette.hue_gap",
+    "value_contrast.lightness_mean",
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [
+    "style"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Ringed planet",
+     "object_class": "plant_nature",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v1_04": [
+  {
+   "try_id": "v1_04_1",
+   "brief_id": "v1_04",
+   "card": {
+    "name": "Space Helmet",
+    "subject": "A round glass-front space helmet with a collar ring and a small antenna on the side.",
+    "object_class": "accessory",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "white and gold",
+    "backdrop_colors": "dusty violet",
+    "surface_or_setting": "a smooth metal ledge"
+   },
+   "style": 0.788,
+   "misses": [
+    "color_palette.hue_gap"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Space helmet",
+     "object_class": "clothing",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_05": [
+  {
+   "try_id": "v1_05_1",
+   "brief_id": "v1_05",
+   "card": {
+    "name": "Moon Rock",
+    "subject": "A lumpy grey moon rock with small craters and a sparkling crystal vein.",
+    "object_class": "plant_nature",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "grey and light blue",
+    "backdrop_colors": "warm peach and coral",
+    "surface_or_setting": "a pale stone ledge"
+   },
+   "style": 0.714,
+   "misses": [
+    "composition_hierarchy.center_x",
+    "value_contrast.rms_contrast",
+    "surface_finish.detail_subject",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Glowing crystal rock",
+     "object_class": "plant_nature",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v1_05_2",
+   "brief_id": "v1_05",
+   "card": {
+    "name": "Moon Rock",
+    "subject": "A lumpy grey moon rock with small craters and a sparkling crystal vein.",
+    "object_class": "plant_nature",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "grey and light blue",
+    "backdrop_colors": "warm peach and coral",
+    "surface_or_setting": "a pale stone ledge"
+   },
+   "style": 0.702,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.box_width",
+    "composition_hierarchy.margin_min",
+    "value_contrast.rms_contrast",
+    "value_contrast.boundary_contrast",
+    "surface_finish.detail_subject",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Crystal rock",
+     "object_class": "plant_nature",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v1_05_3",
+   "brief_id": "v1_05",
+   "card": {
+    "name": "Moon Rock",
+    "subject": "A lumpy grey moon rock with small craters and a sparkling crystal vein.",
+    "object_class": "plant_nature",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "grey and light blue",
+    "backdrop_colors": "warm peach and coral",
+    "surface_or_setting": "a pale stone ledge"
+   },
+   "style": 0.715,
+   "misses": [
+    "value_contrast.rms_contrast",
+    "value_contrast.boundary_contrast",
+    "surface_finish.detail_subject",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Crystal ore rock",
+     "object_class": "plant_nature",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v1_06": [
+  {
+   "try_id": "v1_06_1",
+   "brief_id": "v1_06",
+   "card": {
+    "name": "Control Panel",
+    "subject": "A slanted control console with big round buttons, a bright screen and a chunky lever.",
+    "object_class": "electronics",
+    "category": "3",
+    "pattern": "diamonds",
+    "hero_colors": "yellow and green",
+    "backdrop_colors": "maroon and plum",
+    "surface_or_setting": "a brushed metal spaceship desk"
+   },
+   "style": 0.75,
+   "misses": [
+    "value_contrast.boundary_contrast"
+   ],
+   "issues": [
+    "identity"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Arcade game console",
+     "object_class": "toy_game",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v1_06_2",
+   "brief_id": "v1_06",
+   "card": {
+    "name": "Control Panel",
+    "subject": "A slanted control console with big round buttons, a bright screen and a chunky lever.",
+    "object_class": "electronics",
+    "category": "3",
+    "pattern": "diamonds",
+    "hero_colors": "yellow and green",
+    "backdrop_colors": "maroon and plum",
+    "surface_or_setting": "a brushed metal spaceship desk"
+   },
+   "style": 0.737,
+   "misses": [
+    "color_palette.chroma_subject",
+    "value_contrast.boundary_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Radar control console",
+     "object_class": "electronics",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_07": [
+  {
+   "try_id": "v1_07_1",
+   "brief_id": "v1_07",
+   "card": {
+    "name": "Moon Rover",
+    "subject": "A six-wheeled moon buggy with an open seat, a dish antenna and a tiny flag.",
+    "object_class": "vehicle",
+    "category": "3",
+    "pattern": "plain_gradient",
+    "hero_colors": "mint and white",
+    "backdrop_colors": "burnt orange and brown",
+    "surface_or_setting": "grey moon dust with small craters"
+   },
+   "style": 0.796,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Lunar rover",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_08": [
+  {
+   "try_id": "v1_08_1",
+   "brief_id": "v1_08",
+   "card": {
+    "name": "Star Map",
+    "subject": "A big unrolled paper chart with dotted star routes, small planets and a compass rose.",
+    "object_class": "paper_document",
+    "category": "3",
+    "pattern": "repeated_motif",
+    "hero_colors": "sky blue and cream",
+    "backdrop_colors": "rust red",
+    "surface_or_setting": "a round wooden navigator table"
+   },
+   "style": 0.762,
+   "misses": [
+    "composition_hierarchy.box_width"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Space map scroll",
+     "object_class": "paper_document",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_09": [
+  {
+   "try_id": "v1_09_1",
+   "brief_id": "v1_09",
+   "card": {
+    "name": "Space Station",
+    "subject": "A ring-shaped space station with solar panels, a central hub and glowing windows, floating above Earth.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "pearl white and pink",
+    "backdrop_colors": "deep green and black",
+    "surface_or_setting": "orbit above the blue Earth"
+   },
+   "style": 0.703,
+   "misses": [
+    "value_contrast.rms_contrast",
+    "value_contrast.boundary_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Space station",
+     "object_class": "building_place",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "floating",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_10": [
+  {
+   "try_id": "v1_10_1",
+   "brief_id": "v1_10",
+   "card": {
+    "name": "Launch Pad",
+    "subject": "A tall launch tower with a rocket standing beside it and puffs of friendly smoke.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "golden yellow and red",
+    "backdrop_colors": "slate blue and dusk grey",
+    "surface_or_setting": "a sunrise desert launch site"
+   },
+   "style": 0.774,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.box_height"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Rocket launch pad",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "many"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v2_01": [
+  {
+   "try_id": "v2_01_1",
+   "brief_id": "v2_01",
+   "card": {
+    "name": "Jetpack",
+    "subject": "A twin-tank backpack with two nozzles, small fins and glowing orange flames.",
+    "object_class": "tool",
+    "category": "1",
+    "pattern": "rays",
+    "hero_colors": "orange and silver",
+    "backdrop_colors": "aqua and navy",
+    "surface_or_setting": ""
+   },
+   "style": 0.748,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Jetpack",
+     "object_class": "accessory",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v2_02": [
+  {
+   "try_id": "v2_02_1",
+   "brief_id": "v2_02",
+   "card": {
+    "name": "Hover Board",
+    "subject": "A rounded skateboard-shaped board floating with glowing underside lights and no wheels.",
+    "object_class": "toy_game",
+    "category": "1",
+    "pattern": "waves",
+    "hero_colors": "pink and white",
+    "backdrop_colors": "forest green and teal",
+    "surface_or_setting": ""
+   },
+   "style": 0.742,
+   "misses": [
+    "color_palette.hue_gap"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Pink hoverboard",
+     "object_class": "vehicle",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v2_03": [
+  {
+   "try_id": "v2_03_1",
+   "brief_id": "v2_03",
+   "card": {
+    "name": "Glow Crystal",
+    "subject": "A cluster of tall faceted crystals with a bright glowing core.",
+    "object_class": "plant_nature",
+    "category": "1",
+    "pattern": "concentric_rings",
+    "hero_colors": "cyan and lilac",
+    "backdrop_colors": "burgundy and brown",
+    "surface_or_setting": ""
+   },
+   "style": 0.694,
+   "misses": [
+    "color_palette.hue_gap",
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Crystal cluster",
+     "object_class": "plant_nature",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v2_04": [
+  {
+   "try_id": "v2_04_1",
+   "brief_id": "v2_04",
+   "card": {
+    "name": "Visor Goggles",
+    "subject": "Wide curved futuristic goggles with a glowing blue lens strip and a thick strap.",
+    "object_class": "accessory",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "electric blue and black",
+    "backdrop_colors": "sunny yellow",
+    "surface_or_setting": "a white shelf ledge"
+   },
+   "style": 0.783,
+   "misses": [
+    "composition_hierarchy.box_width",
+    "composition_hierarchy.center_x",
+    "composition_hierarchy.margin_min",
+    "color_palette.hue_gap",
+    "surface_finish.detail_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Futuristic goggles",
+     "object_class": "accessory",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v2_04_2",
+   "brief_id": "v2_04",
+   "card": {
+    "name": "Visor Goggles",
+    "subject": "Wide curved futuristic goggles with a glowing blue lens strip and a thick strap.",
+    "object_class": "accessory",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "electric blue and black",
+    "backdrop_colors": "sunny yellow",
+    "surface_or_setting": "a white shelf ledge"
+   },
+   "style": 0.79,
+   "misses": [
+    "composition_hierarchy.box_width",
+    "composition_hierarchy.center_x",
+    "composition_hierarchy.margin_min",
+    "surface_finish.detail_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Blue goggles",
+     "object_class": "sports_gear",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v2_04_3",
+   "brief_id": "v2_04",
+   "card": {
+    "name": "Visor Goggles",
+    "subject": "Wide curved futuristic goggles with a glowing blue lens strip and a thick strap.",
+    "object_class": "accessory",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "electric blue and black",
+    "backdrop_colors": "sunny yellow",
+    "surface_or_setting": "a white shelf ledge"
+   },
+   "style": 0.786,
+   "misses": [
+    "composition_hierarchy.box_width",
+    "composition_hierarchy.margin_min",
+    "color_palette.hue_gap"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Futuristic goggles",
+     "object_class": "accessory",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v2_05": [
+  {
+   "try_id": "v2_05_1",
+   "brief_id": "v2_05",
+   "card": {
+    "name": "Energy Cell",
+    "subject": "A chunky glass battery canister with glowing green liquid and metal caps.",
+    "object_class": "electronics",
+    "category": "2",
+    "pattern": "stripes",
+    "hero_colors": "lime and steel grey",
+    "backdrop_colors": "magenta and rose",
+    "surface_or_setting": "a rounded metal ledge"
+   },
+   "style": 0.713,
+   "misses": [
+    "composition_hierarchy.box_width",
+    "color_palette.shadow_chroma_kept"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Glowing energy canister",
+     "object_class": "container",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v2_06": [
+  {
+   "try_id": "v2_06_1",
+   "brief_id": "v2_06",
+   "card": {
+    "name": "Teleport Pad",
+    "subject": "A round glowing platform with a ring of lights and sparkling beams rising above it.",
+    "object_class": "electronics",
+    "category": "3",
+    "pattern": "diamonds",
+    "hero_colors": "turquoise and white",
+    "backdrop_colors": "deep red and wine",
+    "surface_or_setting": "a clean tiled laboratory floor"
+   },
+   "style": 0.693,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Sci-fi teleport platform",
+     "object_class": "electronics",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v2_07": [
+  {
+   "try_id": "v2_07_1",
+   "brief_id": "v2_07",
+   "card": {
+    "name": "Robot Arm",
+    "subject": "A jointed factory arm with a round base, two segments and a gentle claw holding a gear.",
+    "object_class": "tool",
+    "category": "3",
+    "pattern": "plain_wall",
+    "hero_colors": "yellow and grey",
+    "backdrop_colors": "violet and blue",
+    "surface_or_setting": "a workshop bench with gears"
+   },
+   "style": 0.758,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Robotic arm",
+     "object_class": "tool",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v2_08": [
+  {
+   "try_id": "v2_08_1",
+   "brief_id": "v2_08",
+   "card": {
+    "name": "Hologram Globe",
+    "subject": "A small projector disc beaming a floating glowing planet with tiny orbiting dots.",
+    "object_class": "electronics",
+    "category": "3",
+    "pattern": "plain_gradient",
+    "hero_colors": "sea green and gold",
+    "backdrop_colors": "charcoal and plum",
+    "surface_or_setting": "a glossy white desk"
+   },
+   "style": 0.739,
+   "misses": [
+    "composition_hierarchy.box_width",
+    "composition_hierarchy.box_height",
+    "composition_hierarchy.margin_min",
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Planet hologram projector",
+     "object_class": "electronics",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v2_08_2",
+   "brief_id": "v2_08",
+   "card": {
+    "name": "Hologram Globe",
+    "subject": "A small projector disc beaming a floating glowing planet with tiny orbiting dots.",
+    "object_class": "electronics",
+    "category": "3",
+    "pattern": "plain_gradient",
+    "hero_colors": "sea green and gold",
+    "backdrop_colors": "charcoal and plum",
+    "surface_or_setting": "a glossy white desk"
+   },
+   "style": 0.715,
+   "misses": [
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Planet hologram projector",
+     "object_class": "electronics",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v2_09": [
+  {
+   "try_id": "v2_09_1",
+   "brief_id": "v2_09",
+   "card": {
+    "name": "Dome City",
+    "subject": "A glass-domed city with tall rounded towers, little bridges and glowing windows.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "peach and gold",
+    "backdrop_colors": "indigo and olive",
+    "surface_or_setting": "a quiet red planet landscape"
+   },
+   "style": 0.744,
+   "misses": [],
+   "issues": [
+    "identity"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Domed golden palace",
+     "object_class": "building_place",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v2_09_2",
+   "brief_id": "v2_09",
+   "card": {
+    "name": "Dome City",
+    "subject": "A glass-domed city with tall rounded towers, little bridges and glowing windows.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "peach and gold",
+    "backdrop_colors": "indigo and olive",
+    "surface_or_setting": "a quiet red planet landscape"
+   },
+   "style": 0.753,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "color_palette.chroma_background",
+    "value_contrast.boundary_contrast"
+   ],
+   "issues": [
+    "identity"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Domed fantasy palace",
+     "object_class": "building_place",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v2_09_3",
+   "brief_id": "v2_09",
+   "card": {
+    "name": "Dome City",
+    "subject": "A glass-domed city with tall rounded towers, little bridges and glowing windows.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "peach and gold",
+    "backdrop_colors": "indigo and olive",
+    "surface_or_setting": "a quiet red planet landscape"
+   },
+   "style": 0.758,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "color_palette.chroma_background",
+    "value_contrast.boundary_contrast"
+   ],
+   "issues": [
+    "identity"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Palace snow globe",
+     "object_class": "building_place",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v2_10": [
+  {
+   "try_id": "v2_10_1",
+   "brief_id": "v2_10",
+   "card": {
+    "name": "Time Machine",
+    "subject": "A round brass-and-glass machine with a big dial, a cozy seat and a spinning ring.",
+    "object_class": "vehicle",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "copper and cream",
+    "backdrop_colors": "sea blue and slate",
+    "surface_or_setting": "a cluttered inventor's attic lab"
+   },
+   "style": 0.754,
+   "misses": [
+    "value_contrast.boundary_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Time machine",
+     "object_class": "vehicle",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "interior_scene",
+     "background_detail": 4,
+     "secondary_objects": "many"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v3_01": [
+  {
+   "try_id": "v3_01_1",
+   "brief_id": "v3_01",
+   "card": {
+    "name": "Flying Saucer",
+    "subject": "A tiny round saucer with a bubble top, three feet and a soft beam of light below.",
+    "object_class": "vehicle",
+    "category": "1",
+    "pattern": "rays",
+    "hero_colors": "lavender and mint",
+    "backdrop_colors": "dark orange and amber",
+    "surface_or_setting": ""
+   },
+   "style": 0.771,
+   "misses": [
+    "value_contrast.lightness_p1",
+    "edges_linework.edge_density_background"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Flying saucer",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v3_02": [
+  {
+   "try_id": "v3_02_1",
+   "brief_id": "v3_02",
+   "card": {
+    "name": "Comet",
+    "subject": "A round icy comet with a long curved sparkling tail trailing behind.",
+    "object_class": "other",
+    "category": "1",
+    "pattern": "waves",
+    "hero_colors": "ice blue and white",
+    "backdrop_colors": "crimson and black",
+    "surface_or_setting": ""
+   },
+   "style": 0.758,
+   "misses": [
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Icy comet",
+     "object_class": "plant_nature",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v3_03": [
+  {
+   "try_id": "v3_03_1",
+   "brief_id": "v3_03",
+   "card": {
+    "name": "Satellite",
+    "subject": "A boxy satellite with two big square solar wings and a small dish on top.",
+    "object_class": "vehicle",
+    "category": "1",
+    "pattern": "diamonds",
+    "hero_colors": "gold and sky blue",
+    "backdrop_colors": "brick red and coffee",
+    "surface_or_setting": ""
+   },
+   "style": 0.718,
+   "misses": [
+    "composition_hierarchy.box_width",
+    "value_contrast.lightness_mean"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Satellite",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v3_04": [
+  {
+   "try_id": "v3_04_1",
+   "brief_id": "v3_04",
+   "card": {
+    "name": "Alien Sprout",
+    "subject": "A cheerful glowing sprout with swirly leaves and a star-shaped bud growing from a round pot.",
+    "object_class": "plant_nature",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "purple and pink",
+    "backdrop_colors": "lemon yellow",
+    "surface_or_setting": "a curved clay ledge"
+   },
+   "style": 0.794,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "color_palette.chroma_subject",
+    "surface_finish.detail_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Potted fantasy flower",
+     "object_class": "plant_nature",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v3_04_2",
+   "brief_id": "v3_04",
+   "card": {
+    "name": "Alien Sprout",
+    "subject": "A cheerful glowing sprout with swirly leaves and a star-shaped bud growing from a round pot.",
+    "object_class": "plant_nature",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "purple and pink",
+    "backdrop_colors": "lemon yellow",
+    "surface_or_setting": "a curved clay ledge"
+   },
+   "style": 0.803,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "composition_hierarchy.margin_min",
+    "color_palette.chroma_subject",
+    "surface_finish.detail_subject",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Potted star flower",
+     "object_class": "plant_nature",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v3_04_3",
+   "brief_id": "v3_04",
+   "card": {
+    "name": "Alien Sprout",
+    "subject": "A cheerful glowing sprout with swirly leaves and a star-shaped bud growing from a round pot.",
+    "object_class": "plant_nature",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "purple and pink",
+    "backdrop_colors": "lemon yellow",
+    "surface_or_setting": "a curved clay ledge"
+   },
+   "style": 0.769,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "color_palette.chroma_subject",
+    "value_contrast.lightness_mean",
+    "surface_finish.detail_subject",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Potted star flower",
+     "object_class": "plant_nature",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v3_05": [
+  {
+   "try_id": "v3_05_1",
+   "brief_id": "v3_05",
+   "card": {
+    "name": "Space Snack",
+    "subject": "A squeezable toothpaste-style food tube with a bright label and a star-shaped cap.",
+    "object_class": "food_drink",
+    "category": "2",
+    "pattern": "concentric_rings",
+    "hero_colors": "red and sunshine yellow",
+    "backdrop_colors": "cyan and ocean blue",
+    "surface_or_setting": "a white stone ledge"
+   },
+   "style": 0.786,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "composition_hierarchy.center_x",
+    "composition_hierarchy.margin_min",
+    "color_palette.chroma_subject",
+    "value_contrast.lightness_p1",
+    "surface_finish.detail_subject",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Squeeze tube",
+     "object_class": "container",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v3_05_2",
+   "brief_id": "v3_05",
+   "card": {
+    "name": "Space Snack",
+    "subject": "A squeezable toothpaste-style food tube with a bright label and a star-shaped cap.",
+    "object_class": "food_drink",
+    "category": "2",
+    "pattern": "concentric_rings",
+    "hero_colors": "red and sunshine yellow",
+    "backdrop_colors": "cyan and ocean blue",
+    "surface_or_setting": "a white stone ledge"
+   },
+   "style": 0.805,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "composition_hierarchy.margin_min",
+    "value_contrast.lightness_p1",
+    "value_contrast.rms_contrast",
+    "surface_finish.detail_subject",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Squeeze tube",
+     "object_class": "container",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v3_05_3",
+   "brief_id": "v3_05",
+   "card": {
+    "name": "Space Snack",
+    "subject": "A squeezable toothpaste-style food tube with a bright label and a star-shaped cap.",
+    "object_class": "food_drink",
+    "category": "2",
+    "pattern": "concentric_rings",
+    "hero_colors": "red and sunshine yellow",
+    "backdrop_colors": "cyan and ocean blue",
+    "surface_or_setting": "a white stone ledge"
+   },
+   "style": 0.786,
+   "misses": [
+    "composition_hierarchy.box_width",
+    "composition_hierarchy.box_height",
+    "composition_hierarchy.center_x",
+    "composition_hierarchy.center_y",
+    "composition_hierarchy.margin_min",
+    "color_palette.chroma_subject",
+    "value_contrast.lightness_p1",
+    "surface_finish.detail_subject",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Star-capped squeeze tube",
+     "object_class": "container",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v3_06": [
+  {
+   "try_id": "v3_06_1",
+   "brief_id": "v3_06",
+   "card": {
+    "name": "Telescope",
+    "subject": "A long telescope with a wide lens, a tripod and a small finder scope.",
+    "object_class": "electronics",
+    "category": "3",
+    "pattern": "stripes",
+    "hero_colors": "brass and teal",
+    "backdrop_colors": "midnight blue and rose",
+    "surface_or_setting": "a wooden rooftop deck at night"
+   },
+   "style": 0.76,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "composition_hierarchy.center_x",
+    "edges_linework.edge_density_background"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Telescope",
+     "object_class": "tool",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v3_06_2",
+   "brief_id": "v3_06",
+   "card": {
+    "name": "Telescope",
+    "subject": "A long telescope with a wide lens, a tripod and a small finder scope.",
+    "object_class": "electronics",
+    "category": "3",
+    "pattern": "stripes",
+    "hero_colors": "brass and teal",
+    "backdrop_colors": "midnight blue and rose",
+    "surface_or_setting": "a wooden rooftop deck at night"
+   },
+   "style": 0.759,
+   "misses": [
+    "composition_hierarchy.box_height"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Telescope",
+     "object_class": "tool",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v3_07": [
+  {
+   "try_id": "v3_07_1",
+   "brief_id": "v3_07",
+   "card": {
+    "name": "Toy Rocket",
+    "subject": "A small plastic toy rocket with a rounded nose, big fins and a sticker star.",
+    "object_class": "toy_game",
+    "category": "3",
+    "pattern": "repeated_motif",
+    "hero_colors": "blue and orange",
+    "backdrop_colors": "sage green and cream",
+    "surface_or_setting": "a soft kids bedroom rug"
+   },
+   "style": 0.768,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Toy rocket",
+     "object_class": "toy_game",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v3_08": [
+  {
+   "try_id": "v3_08_1",
+   "brief_id": "v3_08",
+   "card": {
+    "name": "Star Globe",
+    "subject": "A round desk globe of the night sky with constellation dots on a curved stand.",
+    "object_class": "toy_game",
+    "category": "3",
+    "pattern": "plain_wall",
+    "hero_colors": "indigo and silver",
+    "backdrop_colors": "tangerine and sand",
+    "surface_or_setting": "a cozy study table"
+   },
+   "style": 0.749,
+   "misses": [
+    "composition_hierarchy.box_height"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Constellation globe",
+     "object_class": "other",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v3_09": [
+  {
+   "try_id": "v3_09_1",
+   "brief_id": "v3_09",
+   "card": {
+    "name": "Crater Camp",
+    "subject": "A small round dome tent-house with a lit window, a flag and a ladder inside a moon crater.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "warm white and coral",
+    "backdrop_colors": "deep teal and grey",
+    "surface_or_setting": "a quiet moon crater under a big Earth"
+   },
+   "style": 0.705,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Moon base",
+     "object_class": "building_place",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v3_10": [
+  {
+   "try_id": "v3_10_1",
+   "brief_id": "v3_10",
+   "card": {
+    "name": "Moon Garden",
+    "subject": "A glass greenhouse filled with glowing flowers, vines and tiny watering cans.",
+    "object_class": "plant_nature",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "emerald and pink",
+    "backdrop_colors": "violet and navy",
+    "surface_or_setting": "a glass greenhouse on a hill of lunar dust"
+   },
+   "style": 0.748,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "color_palette.chroma_background",
+    "value_contrast.boundary_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Flower greenhouse",
+     "object_class": "building_place",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "many"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v3_10_2",
+   "brief_id": "v3_10",
+   "card": {
+    "name": "Moon Garden",
+    "subject": "A glass greenhouse filled with glowing flowers, vines and tiny watering cans.",
+    "object_class": "plant_nature",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "emerald and pink",
+    "backdrop_colors": "violet and navy",
+    "surface_or_setting": "a glass greenhouse on a hill of lunar dust"
+   },
+   "style": 0.691,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "color_palette.chroma_background",
+    "value_contrast.boundary_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Flower greenhouse",
+     "object_class": "building_place",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "many"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v3_10_3",
+   "brief_id": "v3_10",
+   "card": {
+    "name": "Moon Garden",
+    "subject": "A glass greenhouse filled with glowing flowers, vines and tiny watering cans.",
+    "object_class": "plant_nature",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "emerald and pink",
+    "backdrop_colors": "violet and navy",
+    "surface_or_setting": "a glass greenhouse on a hill of lunar dust"
+   },
+   "style": 0.706,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "color_palette.chroma_background"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Flower greenhouse",
+     "object_class": "building_place",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "many"
+    }
+   },
+   "passed": true
+  }
+ ]
+}
