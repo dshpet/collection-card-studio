@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A puts a white-yellow glow halo around the whistle on a washed-out pale field, and the halo cuts the campfire motifs near the body, so the backdrop is lit around the hero. B has a saturated golden field with tone-on-tone campfires, no halo and a short contact shadow, like the real calculator's pi field. B's edge density of 0.003 sits slightly below the real range, but its backdrop reads as the quieter one.",
+   "fix": "Remove the glow around the whistle. Use a flat, saturated golden-yellow field with evenly staggered campfire shapes only slightly darker than the field, and add a soft short shadow under the whistle."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both float on a category 1 sunburst with no props. B's rays go neon cyan with a blown-out hot centre behind the loop, the same brightened burst seen in the generated glove lessons. A's rays are calmer, with soft teal steps closer to the real lamp card. The difference is small.",
+   "fix": "Lower the burst to a calm teal with soft, low-contrast rays, and remove the bright white-cyan glow from the centre."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A stands on a plain orange ledge with a clear straight horizon against a red wall, a simple split like the real flowerbed card, though its background numbers fall slightly below the real range. B has no horizon, only a seamless red sweep darkening to maroon at the corners, with a large steam plume filling the top of the card.",
+   "fix": "Add a plain warm ledge with a straight horizon behind the cup, keep the wall a clean bright red without dark corners, and make the steam a small, faint wisp."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A's basket fills the card, with a soft lit lilac wall and warm reflections on the ledge. B's basket is small on a flat cream ledge with a flat purple wall, large empty areas and a hard dark shadow to the left. B's detail of 0.0056 falls below the real range of 0.008 to 0.013.",
+   "fix": "Scale the basket up to nearly fill the card, give the wall a soft light falloff, and replace the hard shadow with a short soft shadow plus a warm reflection on the ledge."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A has a deep blue sky and a low curved rail with a few large posts on broad, quiet deck planks. B's sky turns neon turquoise, the same shift as the generated lighthouse skies, and plank-built bulwarks on both sides add many extra lines and grain behind the barrel.",
+   "fix": "Use a deep blue gradient sky. Replace the plank walls with one low simple rail, and draw the deck as a few wide smooth boards with little grain."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A has a deep blue burst and smooth dark asphalt with a few bold dashes, so the background is a few quiet shapes. B's burst is washed to pale cyan with a glow behind the roof, and its road is covered in speckled asphalt grain. That grain is added small detail that the real cards do not carry.",
+   "fix": "Make the road smooth, flat dark grey with no speckle, keep two bold white dashes, and deepen the burst to a saturated blue with no pale glow."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A's category 4 forest is overloaded: many trunks, layered firs, leaf clusters and mist packed behind the tent, at the high end of real detail (0.0288, edge 0.07), and the tent runs off the left edge. B has a few large trees framing an open meadow, closer to the real lion card, though its sunbeams, flowers and foreground leaves are added decoration.",
+   "fix": "Reduce the forest to two or three large, soft trees and a plain pale distance, open up the meadow, and bring the whole tent into the centre of the card."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A packs dark, dense firs behind the pot and scatters pebbles across the dirt, so the backdrop is busier (detail 0.0234) and its dark mass crowds the frame posts. B has a few large firs, a clear glade and a tidy dirt circle, but its stone ring and rope lashings add more props, so the call is weak.",
+   "fix": "Thin the forest to a few large, soft fir shapes against a lighter sky, and remove the scattered pebbles from the dirt so the ground is one quiet shape."
+  }
+ ],
+ "pattern": "Generated cards still show up in the backdrop rather than the hero. Flat fields gain a glow halo or a hot centre behind the object, and bursts and skies push toward neon cyan or wash out. Ground surfaces pick up speckle, grain or extra plank lines, and environments gain more small shapes than the few large quiet ones on real cards. Corners may also darken or the scale may drift, leaving the hero small or the ledge empty. Calls on the two forest scenes and on the bugle and teacup pairs are weak."
+}

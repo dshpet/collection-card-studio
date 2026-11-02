@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a dark, unbroken contour of even weight runs around the whole whistle body, including the lit top edge, and a pale glow surrounds the hero against the background. B: the body edge is thin and fades along the top and right of the barrel, with only the mouth slot and ring strongly defined, and no halo. B's contour behaves like the real glove's lit side. A's reads as a drawn outline.",
+   "fix": "Remove the pale glow behind the whistle. Let the orange body meet the yellow background directly, with no dark line around it. Let the edge on the lit top side fade softly and keep the sharpest edge only at the mouth slot."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the bell rim has a heavy black contour with a doubled inner line, the tube has several dense parallel lines, and the rope and tassels are packed with hard, even lines, so the whole object is equally sharp. A: the bell's left edge nearly disappears into the background, the tube has few edges, and only the rope and rear loop are strongly drawn. A has the lost edges and hierarchy of the real cards.",
+   "fix": "Let the bell's lit left edge melt softly into the background with no dark rim line. Use fewer lines on the brass tube. Keep the crispest detail only on the rope wrap, and draw the tassel strands as soft, broad folds."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the cup rim and saucer have tight, wire-like contours, the flower and leaves have hard-drawn borders, there are tiny crisp bubble rings on the tea, and a ruler-straight horizon cuts behind the cup. A: the rim and saucer are also dark but the line weight varies, the steam and left saucer edge are softer, and the floor blends with no horizon line. The gap is small, because A's outline value is higher and its saucer is also firmly edged.",
+   "fix": "Soften the cup and saucer edges so that line weight varies around the form. Paint the flower as soft-edged colour with no drawn border. Remove the tiny bubbles and blend the wall into the table with no hard line."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the weave is many separate strips, each edged by narrow dark grooves of equal strength from rim to base, giving the highest subject density of the pair. Hard edges also appear on the leaves, the cloth grid, and the rim of the cast shadow at left. A: the weave is wider and softer lower down, the table shadow fades out, and its strong edges cluster around the handle and cloth. A does carry a dark line along the handle and cloth, so the call is weak.",
+   "fix": "Use fewer, wider basket strips with soft shallow gaps. Fade the weave detail toward the base. Give the cast shadow a soft edge that fades into the table."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: stave gaps are dark, evenly wide grooves, every hoop has clean uniform contours, and evenly spaced rivets add small hard rings at equal sharpness all around. A: stave gaps vary in strength, the hoops have soft highlights with weaker borders, and the rim edge partly dissolves. The grain in A is heavier, so this is a mild preference only.",
+   "fix": "Remove the rivets from the metal bands. Draw the plank gaps as thin lines that vary in strength and fade in places. Let the band edges soften where the light hits them."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: windscreen and side windows have thick doubled black frames, the wipers, grille and wheel arches are inked hard, the road dashes have hard dark borders, and outline darkness is the higher of the pair at 0.084. A: the body and windows have thinner lines of varied weight, and the asphalt is fine grain rather than drawn shapes. Both subject densities are above the real range, and A's is the higher at 0.24, so A is not clean either.",
+   "fix": "Replace the thick black window frames with a thin, single seam. Reduce the grille to fewer, softer bars. Paint the road dashes as plain white shapes with soft worn edges and no dark border."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: foliage, grass tufts and flowers carry dark inked contours nearly as strong as the tent's, so the edge hierarchy is flat from foreground to the far trees. The tent seams are thin and precise. B: the tent roof is soft, the left slope edge fades, the strongest lines sit on the door flaps, and the distant trees fall off somewhat. B's upper tree crowns are still dark, and background density is equal at 0.07, so the evidence is thin.",
+   "fix": "Paint the trees, bushes and grass as soft colour masses with no dark edges, getting softer with distance. Keep the crispest edges on the tent only."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the posts, rope lashings, logs and every stone have firm dark contours of similar weight, and the pot has a continuous line around it, so no area is clearly softer. A: the post edges are weaker and partly lost against the forest, and the top of the pot fades. The strongest lines sit on the rim and fire logs. A's speckled pot base adds busy small edges, so the case against B is limited.",
+   "fix": "Let the wooden posts and stones have soft edges with no dark line around them. Keep the sharpest edge at the pot rim and the stew. Simplify the rope lashings to a few soft bands."
+  }
+ ],
+ "pattern": "Generated cards keep every boundary equally resolved. They run a dark, even, nearly unbroken contour around the hero, including lit sides where real cards let the edge fade or disappear. Internal seams, windows and grooves become thick or doubled inked lines. Small hard parts such as rivets, stitch-like strips and bubbles are added at the same sharpness everywhere, and background features such as wood grain, water and foliage get drawn contours, which flattens the edge hierarchy. A pale halo sometimes appears behind the hero. Real cards vary line weight, lose edges on the lit side, and concentrate sharpness at the focus. The measured fields mostly did not separate the pairs. Values were close within each pair, and where they left the real range both cards usually did so together (p01 subject density below it, p06 subject density above it), so these calls rest mainly on contour behaviour seen by eye. p03, p04, p05, p07 and p08 are low confidence."
+}

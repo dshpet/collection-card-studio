@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both are category 1 cards with a campfire motif on yellow. A has a saturated amber field, and its darker tone-on-tone campfires are staggered irregularly, as with the pi field on the real calculator card. B has a washed pale yellow field with a white halo tight around the whistle, and the campfires sit in a stiffer grid. The halo fades the motifs next to the hero. The lesson generated glove cards show the same hot glow behind the hero.",
+   "fix": "Use a deep, even golden-yellow background with no white glow around the whistle. Make the campfire pattern only slightly darker than the yellow, in loose staggered rows, at the same strength right up to the whistle."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both are sunburst cards with no props. A has calm teal-cyan rays with even contrast that converge cleanly inside the bugle's loop. B has a neon cyan centre that blooms behind the hero and turns the ray contrast into a glow, and the hero crowds the edges. This matches the lit-from-behind sunburst on the generated glove cards. The evidence is modest because the metrics for both are in range.",
+   "fix": "Use flat, medium teal sunburst rays with even contrast from centre to corners, and no bright glow behind the bugle. Leave calm background space around the object."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A has a clean, vivid crimson-to-orange gradient with a single soft cast shadow to the lower right, like the graphic gradients on real cards. B has a dull maroon field with a photographic dark vignette in the corners, a muddy shadow, and a large smoky steam plume that takes up nearly as much height as the small cup. The B background reads as a studio backdrop rather than a graphic field.",
+   "fix": "Use a bright red-to-orange smooth gradient with no dark corners. Make the cup larger, with one simple thin wisp of steam and one soft shadow on the ground."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both are category 2, with the basket on a plain ledge against purple. A's ledge is a flat cream band with a simple soft shadow and a saturated purple wall. B's ledge has glossy yellow-orange streaks reflected under the basket, and its pale lilac wall has a bright bloom at upper left. That adds surface effects a plain ledge should not have.",
+   "fix": "Make the ledge a plain flat cream band with one soft shadow and no reflection. Use a saturated, even purple wall."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both are category 3 ship decks. A has a pale deck with a low solid plank wall running in perspective, which forms one quiet mass behind the barrel, under a plain cyan sky. B adds a separate railing with square posts and bright sky gaps on both sides, and darker, higher-contrast plank seams. Its edge density of 0.052 is above the real range. A's deck also carries wood grain, so this is a weak call.",
+   "fix": "Replace the railing posts with one low solid plank wall behind the barrel, with no gaps of sky. Use pale, low-contrast deck planks with few seams."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both combine a sunburst with a road. A has a pale glowing haze where the road meets the rays, directly behind the car, and the road dissolves into it, while the hero nearly touches both side edges. B has a firm road edge, even rays and a single grounded shadow, with room around the car. Road markings are simple on both cards, so the difference is mostly the haze and the crowding.",
+   "fix": "Remove the glow behind the car. Give the road a clean, simple edge against even blue rays, and leave a margin between the car and the card edges."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both are category 4 forest cards. A's background is a few large shapes: two trees, soft firs in a pale teal haze, and a plain open meadow with a couple of flowers. B stacks many trunks, several dark firs at full contrast, dense leaf clusters and light shafts, so the forest competes with the tent and has the higher edge density, 0.070 against 0.058. Real environments, such as the lion card, stay few and quiet.",
+   "fix": "Keep only two or three large soft trees framing the tent. Make the distance pale and simple, with no light beams, few trunks and no dense leaf clusters."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both are category 4 campfire cards. A's dirt patch is dotted with flat disc pebbles, an invented scatter, and its full-contrast firs and grass tufts fill the frame while the logs are cropped at the bottom edge. B has broad quiet firs, plain dirt and one tidy ring of large stones that gives the fire a purpose. B's higher edge number is a poor guide here because the stone ring is partly inside the hero mask.",
+   "fix": "Remove the scattered pebbles from the dirt. Use one plain dirt clearing and a few large soft dark fir shapes, and keep the whole fire inside the card."
+  }
+ ],
+ "pattern": "Generated cards give themselves away in the background more than in the props. Tells are a hot glow or white halo directly behind the hero, photographic vignettes and bloom, and glossy reflections on what should be a plain ledge. Others are stiff grid-like motifs, more environment pieces at full contrast (railings, trunks, light shafts, scattered pebbles) and heroes crowding the edges. Real cards keep the field even and the environment to a few large quiet shapes. Calls on p05, p06 and p08 are weak, and the metrics are mostly in the real range, so they rarely separate the pairs."
+}

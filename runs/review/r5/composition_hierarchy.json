@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the whistle runs on a strong diagonal across the card, with the ring reaching toward the top-right corner. The small, low-contrast campfire pattern stays behind it, so the first read at thumbnail is orange whistle on yellow. B: the whistle is slightly smaller (margin 0.126, above the real maximum of 0.116) and sits inside a pale white glow. The campfire icons are larger and more regular and sit close around the hero, so they compete for attention at thumbnail.",
+   "fix": "Enlarge the whistle so it reaches closer to the card edges on a bold diagonal. Remove the white glow behind it. Make the background a deep, even golden yellow with small, faint campfire icons."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the bugle is large, with a big bell at top left and two fat tassels. It runs slightly tall (box height 0.89) but reads at once at thumbnail. B: the hero is thin and spindly, with a narrow tube and small tassels. It covers only 0.171 of the card, below the real minimum of 0.198. The bright ray centre behind the loop gets more attention than the thin horn, so the first read is weaker.",
+   "fix": "Make the bugle much bigger and chunkier so it fills most of the card. Draw a wide bell, a thick tube and two large, heavy red tassels, and soften the rays behind it."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a small wisp of steam stays secondary to the cup, and the cup sits on a clear warm floor band against a red wall, so it separates cleanly. B: a large steam plume climbs almost to the top edge and nearly matches the cup in visual weight, drawing the eye upward. The dark red surround gives the cup no floor line. The evidence is weak because A's margin of 0.14 is itself above the real maximum of 0.108.",
+   "fix": "Shrink the steam to one small, soft wisp just above the cup. Draw a bright warm tabletop with a clear horizon behind the cup so the cup stands out first."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the basket is large and heavy (subject area 0.418), the apples are big and fill the top of the basket, and the card is packed with little empty space. B: the basket is smaller and centred on a flat yellow floor, with margin 0.125 above the real maximum of 0.108. Its apples are small and the long dark shadow to the left adds a second dark shape, so it reads as a staged product shot with more empty space.",
+   "fix": "Scale the basket up until it nearly fills the card, with big apples crowding the top. Remove the long cast shadow and keep only a soft contact shadow under the basket."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the barrel sits close to the camera and low on a deck, with the top rim almost edge-on. Deck walls run off both sides of the card, so it feels like a crop of a larger place. B: the barrel stands dead centre with a neat, even gap on every side (margin 0.113, above the real maximum of 0.098). The railing is symmetrical and the open top is tipped toward the camera, which makes it a posed, evenly spaced setup.",
+   "fix": "Bring the barrel closer so it fills more of the card and nearly touches the side edges. Lower the camera and let the ship's deck wall run off the card edges behind it instead of a tidy symmetrical railing."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Hero scale and framing are nearly identical (subject area 0.342 and 0.348, width about 0.92 on both). A: taxi angled to the left, with road stripes running off the bottom and right edges. B: taxi angled to the right, with a larger roof sign and rays centred behind it. Both read instantly as a taxi at thumbnail, and nothing fights the hero on either card, so framing gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the tent is pushed left and its corner touches the card edge (margin 0.0). It is asymmetrical, like a crop of a real place, though the forest behind it is busy. B: the whole tent sits contained and centred, with both guy ropes tied to prominent posts, scattered flowers in the foreground, a light shaft, and leafy branches framing both top corners. The extra props and tidy frame compete with the tent at thumbnail. This matches the added props and full containment of the generated lighthouse lessons.",
+   "fix": "Remove the flowers, chunky posts and light rays. Turn the tent to a side-on three-quarter view, shift it so one corner touches the card edge, and keep plain grass in front."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the frame, pot, ring of rocks and fire are all contained and packed into a symmetrical stack, with subject area 0.531 well above the real maximum of 0.442. The pot is only one part of a busy cluster, and the rocks and tied crossbar compete with it at thumbnail. B: the pot is clearly the largest shape and the first read. The fire sits lower and its logs are cut by the bottom edge, like the real cards that crop. B's area of 0.391 is inside the real range.",
+   "fix": "Make the pot the biggest shape on the card. Drop the ring of stones, simplify the wooden frame to thin posts, and let the fire logs run off the bottom edge."
+  }
+ ],
+ "pattern": "Generated cards tend to show the object whole, centred and evenly spaced, like a posed product shot. Gaps often sit at or above the top of the real margin range, with nothing cropped and no asymmetrical shift. They also add things around the hero: glows, enlarged background icons, big steam, long cast shadows, side props, flowers and framing branches, and these compete with it at thumbnail. Real cards commit to a bigger or off-centre hero, let the object or setting run off an edge, and keep the background quiet. The generator also misses scale in both directions: spindly heroes below the real area range, or overstuffed scenes above it. This signal is weak, because framing differences were small on p03, p05, p06 and p08."
+}

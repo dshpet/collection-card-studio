@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's whistle body is swollen: the mouthpiece end bows outward as a soft curve, its corners are blobs, and the top air slot has rounded lips. The ring is pressed against the body and nearly closes up in the silhouette. B keeps a straight, flat mouth edge with tight bevels at both corners, a thin square-cut opening wall, and a thin ring that stands clear of the lug.",
+   "fix": "Draw the whistle as hard moulded plastic: flat side faces, a straight square-cut mouth end with tight small bevels, thin walls around the openings, and a thin metal ring that hangs clear of the lug."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's parts are fattened: the bell is oversized, the tube loop is one thick ring, the cord is a fat sausage, and the tassels are heavy blocks about as wide as the loop. B has a slimmer bell, a thin mouthpiece end, a double tube coil visible at the right, and thin cords with small tassels (thin_share 0.020 against A's 0.001).",
+   "fix": "Slim the bugle: a smaller bell, thin brass tubing with a double coil, thin twisted cords and small narrow tassels."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's cup is squat and heavy: a thick rolled rim, a fat handle with a small opening, a thick puffy saucer lip, and no visible foot, so the cup sinks into the saucer. B has a thin-walled rim, a slim handle with a wide opening, a distinct foot ring under the bowl, and a thin saucer edge.",
+   "fix": "Draw thin porcelain: a fine rim, a slim loop handle with a wide opening, a small foot ring under the bowl, and a thin saucer with a narrow edge."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B enlarges its parts like a toy: the apples are huge against the basket, the rope handle is a thick sausage, and the rim bulges into a fat roll that sticks out past the body at both sides. A keeps smaller apples at believable scale with stems and leaves breaking the contour, a thinner handle and a tight rim with neat handle wraps.",
+   "fix": "Make the apples smaller so several fit in the basket, thin the twisted handle, and draw a narrow woven rim that stays flush with the basket body."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Both barrels have a plausible bulge, stepped hoops and straight staves with near-identical solidity (0.983 and 0.985). A has staves rising above the top hoop, and rivets; B has its top hoop at the very lip and wider staves. Both sit low on corner_rate, and neither silhouette gives a usable tell.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B is a shortened, pudgy toy car: a short hood, a bulging roof, blobby fenders, a thick single-piece bumper, a fat grille surround and a lump for a mirror. A keeps a long hood and sedan proportions, a thin mirror on a stalk, a thin bumper with overriders, narrow roof pillars and a distinct roof sign on a thin rack.",
+   "fix": "Draw a real 1950s sedan: long hood, flat roof, thin pillars, slim chrome bumper with overriders, a small mirror on a thin stalk, and a slim roof sign on a thin rack."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B's tent loses its structure: the door flaps curl into thick rolled tubes at the bottom, the left eave hangs over like a loose slab, and the walls do not meet the ground in a clean run (straight_share 0.545 against A's 0.628). A has a straight ground edge, flat roof panels, a ridge end with a small knot, flaps pinched by thin ties, and thin guy lines to three pegs.",
+   "fix": "Draw flat taut canvas panels with a straight bottom edge on the ground. Tie the door flaps back with thin straps and do not roll them into tubes."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B's parts relate poorly: the thin bail runs up over the beam with no hook or ring, and the wide bowl pot fills the frame. A has every expected link: a ring on the crossbar, the bail through lugs, rope lashings at both joints and a round pot. A's mask swallows the rocks, so its solidity (0.639) is not comparable. This is a weak call because A's pot and logs are also chunky.",
+   "fix": "Hang the pot from the beam by a visible ring or hook, attach the thin bail at two lugs on the rim, and make the pot smaller and round."
+  }
+ ],
+ "pattern": "Generated cards still inflate the object. Bodies and rims swell, thin parts such as ropes, handles, bumpers and mirrors thicken into sausages or lumps, and the key part is enlarged like a toy, as with the apples and the short taxi hood. Corners turn into soft blobs where real cards keep flat faces, straight runs and tight bevels. Small connecting parts also go missing or stop making sense: hooks, foot rings, ties and thin stalks."
+}

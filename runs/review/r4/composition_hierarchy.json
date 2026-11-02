@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the whistle runs corner to corner at 0.944 width, past the real maximum of 0.896. The mouthpiece at lower left and the steel ring at upper right almost touch the edges (margin 0.021), so the hero is packed in tightly. B: the whistle sits inside the card with about 0.126 clear on all sides and 0.73 width, like the real baseball glove. B's pale halo and washed-out pattern are its weak point, but its scale matches the real cards. The tight fit in A is the stronger signal, and the call is only moderately sure.",
+   "fix": "Draw the whistle about 20 percent smaller, centered, with clear background on all sides. Keep the mouthpiece and metal ring well away from the card edges."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the bugle fills nearly the whole card (0.97 by 0.956, subject area 0.385). The bell presses against the top and left edges (margin 0.014), and the oversized red tassels are big enough to compete with the bell at thumbnail size. A: a slimmer bugle sits on the diagonal with open sunburst around it (0.791 by 0.756, margin 0.088). The tassels stay small and secondary. A's hero is on the light side at 0.171 but reads cleanly.",
+   "fix": "Shrink the bugle so the bell sits well inside the top and left edges. Make the red tassels much smaller and thinner, hanging as a small accent below the tube, with open sunburst around the whole object."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cup and saucer are blown up to 0.914 width, past the real maximum of 0.867. The saucer reaches close to the left edge (margin 0.04), and the steam touches the top of the card, leaving little air. B: a smaller cup sits low in the card (box height 0.481, under the real range), with the steam rising through open red background above it. B's hero is slightly small, but it sits in the card with even air, as the real cards do. A's overfill is the stronger signal.",
+   "fix": "Draw the cup and saucer about 15 percent smaller, centered, with clear red space on both sides of the saucer and above the steam."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the basket is oversized (subject area 0.523, height 0.927, both above the real range). The handle top nearly touches the top edge (margin 0.021), the basket fills the lower card, and the background is reduced to small slivers. B: the basket sits at 0.812 by 0.79 and area 0.418, inside the real range. Its handle has clear purple above it and the base has table space below it (margin 0.091).",
+   "fix": "Make the basket smaller, with clear space above the handle and table visible below and on both sides of the basket."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the barrel dominates the card (subject area 0.585, height 0.898, both above the real range). Its rim nearly reaches the top edge (margin 0.04), and the deck rail is mostly hidden behind it. A: the barrel stands at 0.64 by 0.729 and area 0.424, with sky above and deck on all sides (margin 0.094), so it sits in a place. At thumbnail size both read instantly, but only A has breathing room.",
+   "fix": "Draw the barrel about 25 percent smaller, standing on the deck with open sky above the rim and deck visible on both sides of it."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the taxi spans almost the full card width (0.981, past the real maximum of 0.921). The fender touches the left edge and the bumper is close to the right edge (margin 0.005). The roof sign nears the top third, and the car is a big front-on mass with no road ahead of it. B: a three-quarter car at area 0.342 sits on the road with sunburst above it and asphalt below it (margin 0.035). B is also wide at 0.926, but the car keeps air at both ends.",
+   "fix": "Draw the taxi smaller, centered on the road, with clear space between the car and the left and right edges and open sky above the roof sign."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the tent is large and pushed forward (area 0.409, width 0.991). Its wooden stakes reach the left edge, the ridge knob sits high in the card, and the hero leaves little grass or forest around it. B: the tent sits further back (area 0.275, height 0.56) with grass in front and forest around it. However, the dark tree trunks are busy at thumbnail size and the mustard tent separates less well. Both boxes exceed the real width range, so this is a weak call based mainly on A's overfill.",
+   "fix": "Draw the tent smaller and further back, with the stakes inside the card edges, and more grass and forest visible on both sides."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the whole camp setup is packed into the card (area 0.621, width 1.0, height 0.925, above the real range). The tripod logs hit the top corners, and the post feet and the stones of the fire ring crowd the sides and bottom, leaving almost no scene around them. The fire ring is loud enough to compete with the pot at thumbnail size. A: the thinner frame and pot occupy 0.391 area at 0.926 by 0.779, with forest above and ground around them (margin 0.03). The logs at the bottom are cropped by the edge, and the pot stays the clear first read.",
+   "fix": "Draw the cooking pot and its wooden frame smaller, with thinner posts and forest visible above and beside them. Make the fire and stones small and let the bottom edge of the card cut them off."
+  }
+ ],
+ "pattern": "Overfill is the main giveaway. Generated cards tend to blow the hero up until it presses on the edges, and subject area, box width or box height often run past the real range, with margins of about 0.02 or less. The whole object is forced inside the frame, so secondary parts such as tassels, fire rings and stakes grow large enough to compete with the main form. Real cards leave even air around a clearly ranked hero, or crop it deliberately, as the real lighthouse base is cut by the bottom edge. Smaller generated variants still give themselves away by fitting the complete object plus extra props, instead of committing to a tight crop."
+}

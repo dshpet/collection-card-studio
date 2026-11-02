@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: a solid mid-light yellow field sits as one flat grey group, and the whistle has a broad cast shadow under the round chamber, with black only in the top slot. B: the background is pushed to near white (key 0.868, above the real maximum of 0.793), a pale halo hugs the whistle's outline, and the campfire pattern dissolves into white in the lens. B separates the hero with an added glow, the same tight halo seen on the generated glove in the lessons.",
+   "fix": "Keep the yellow background a deep, even mid-tone right up to the whistle, with no white glow around it. Separate the whistle with a soft shadow on the background instead."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: pale rays stay visible through the bugle's loop, and the hero's shading is gentle, with one soft dark inside the bell and a dark cord group. B: the bell has a hard white rim against a dark inner core, white-edged tubing and near-black tassels with black accents at the bottom, so local contrast is harder (rms 0.132 vs 0.098). The call is weak: A's key of 0.809 is itself slightly above the real range, which is evidence against A.",
+   "fix": "Soften the shading on the bugle: replace the white rim lines with smooth gradual highlights, and make the tassels dark red with soft folds rather than near-black."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the white cup is a big light mass on a mid background, and a soft dark shadow on the lower right sits against a lighter orange floor. B: the overall key is lower (0.571, below the real minimum of 0.591), the top corners darken to wine red, and the cup-to-background gap is 0.252, above the real maximum of 0.216. A black contact shadow pools under the saucer, and a red edge sits along its rim. The light cup is spotlit against a low-key field, unlike the brighter real cards.",
+   "fix": "Brighten the background to a clear mid-tone red with a lighter orange floor, remove the dark corners, and replace the black pool under the saucer with a soft mid-dark shadow."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the card reads as three broad groups: a mid-toned purple wall, a white floor and a dark-mid basket, and the apples form one dark cluster with small highlights. B: the wall is split by a bright patch that ends in a hard dark band on the right edge. A pale patch surrounds the basket's base on the floor, the apples go near-black beside white hotspots, and the weave breaks into fine speckled light and dark.",
+   "fix": "Paint the purple wall as one even mid-tone with no bright patch. Group the basket weave into a simple mid-tone with a few soft dark gaps, and give the apples soft dark-red shadows rather than near-black."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: one clear shadow shape covers the barrel's left half and the light wood is on the right, a broad light-dark division like the real glove, although the deck is broken by thin white streaks. B: the light falls in scattered patches across the staves, black sits in the open top and in speckled clusters at the lower right, and the hero has no single large shadow shape. The numbers do not separate them, so this rests on the grouping alone.",
+   "fix": "Light the barrel from one side so a single smooth shadow covers one half. Fill the open top with dark brown rather than black, and remove the black speckling at the lower right."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a big bright disc spreads behind the cab's roof and sides, the rays only appear in the corners, and the corners fall darker (vignette 0.117, above the real maximum of 0.088). The body is broken into many glossy patches of grey. B: the rays stay separate and run close to the hero as they do on the real camera card, the cab is one large white group, and the only big black is a shadow under the car. B's vignette of 0.096 is also slightly high, so this is not decisive.",
+   "fix": "Remove the bright glow behind the taxi and keep the background rays crisp and even up to the car. Paint the yellow body as one big light shape with only soft shading underneath."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the tent is a large mid-light shape against middle-value trees, its black is confined to the doorway, and the corners stay moderate (vignette 0.098, within the real range). B: the top corners go to black leaf clusters and tree trunks frame the card (vignette 0.182, far above the real maximum of 0.100). Bright sky holes punch through the middle, the foliage speckles between black and light, and the tent's mid-tone has no clear separation from the forest.",
+   "fix": "Lighten the trees and leaves in the corners to soft mid-greens with no black. Keep the forest as simple, even middle tones so the tent is the lightest large shape."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the card sits below the real key range (0.537, minimum 0.556), and the dark forest and dark pot merge into one low-key mass with a weak lit ground below. The darkest accent is a speckled black patch on the lower right of the pot. B: a dark pot sits against a lighter ground, with a clear single highlight and one clean black shadow shape on its right, so the hero separates clearly by value.",
+   "fix": "Lighten the ground and the forest behind the pot to clear middle tones. Paint the pot's shadow as one smooth dark shape with a single soft highlight, with no speckled soot."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away in how they separate the hero and group their darks. They add a tight pale glow or bright disc behind the hero, where real cards rely on a clean background field. They push the key outside the real range, either bleached or low-key with darkened corners. Their shading scatters into many small glossy patches, with white rims and speckled near-black accents, where real heroes carry one broad shadow shape and a few simple value groups."
+}

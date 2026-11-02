@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the whistle body is fat and swollen. The barrel is thick, the mouthpiece end has a soft blob corner, the lug is a large bump, and the metal ring is thick and half merged into the body, so its hole nearly closes in the silhouette. B: slimmer body, and the mouth opening has a tight bevel with straight runs. A small lug carries a thin ring with a fully open hole. B reads as the true whistle shape.",
+   "fix": "Draw a slimmer whistle with a narrow rectangular mouthpiece, tight bevelled corners and a flat top face. Add a small lug and a thin metal ring standing clear of the body, with its hole fully open."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: slender bell flare and thin tube. The coil shows a double tube with a slit of gap behind it, and thin cords run to small tassels (thin_share 0.02). B: the bell is enlarged and the tube loop is thick and simple. The cords are thicker and the tassels are fat cones, so it looks swollen like a toy (thin_share 0.001).",
+   "fix": "Make the bell smaller and the brass tube thinner. Show the double coil with a visible gap, and draw thin cords ending in small narrow tassels."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: compact cup with a slim, even handle loop, a visible foot ring and a thin saucer rim. B: the bowl is wider and heavier and the saucer is broad. The handle is thicker with a knobby notch where it meets the bowl. The measured contours are almost identical, so this rests only on B's handle and bowl weight.",
+   "fix": "Thin the handle to a slim, even loop that joins the cup cleanly. Narrow the bowl slightly toward a small foot ring."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: oversized apples burst out of the basket and the handle is a thick twisted sausage. The rim swells into lobes at both sides, and the part sizes run large against the basket. B: thin braided handle with small cuffs at the rim, apples in scale with the basket, and a tighter weave. However, B's corner_rate of 0.0 sits below the real range, which keeps confidence low.",
+   "fix": "Shrink the apples so they sit inside the basket. Thin the handle to a slim braid and keep the rim a narrow, even band without side bulges."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: pot-bellied barrel with a visible hollow and a thick rim. B: slightly straighter staves with heavier hoops, and a shallow top opening. Both have correct part counts (four hoops, staves) and nearly the same aspect and solidity. Both solidity values sit above the real range, so nothing separates them on shape.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: long, low sedan body with a believable wheelbase, though it is soft, with a roof sign merged into the cabin as one blob. B: the body is shortened and tall with big wheels, like a toy. The bumper is a stacked chrome sausage with fat overriders, and the roof sign sits on posts with a sliver gap. B's squat proportion is the stronger departure from true form.",
+   "fix": "Lengthen the car body and wheelbase and lower the cabin. Shrink the wheels and make the bumper a slim bar without fat overriders."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the roof and eaves sag in concave curves, the ridge runs off to a lumpy peak, and the wall hem is frayed and shapeless. The tent reads as a soft bell with no taut planes. B: a taut A-frame with straight edges and a flat roof panel (straight_share 0.588 vs 0.545), and clear guy ropes. However, its stakes are oversized and the ridge ends are blobby.",
+   "fix": "Draw a taut A-frame tent with a straight ridge pole and flat roof panels. Pull the edges straight to pegs with thin guy ropes, and give the bottom hem a clean straight line."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the pot is enlarged into a wide, shallow basin that nearly fills the frame. Its thick handle arcs over the beam with no real hook point, and a notch breaks the base outline. B: a true round-bellied cauldron with a narrower mouth, small lugs, a thin bail handle hung from a ring on the beam, and lashings at the posts. Pot size relative to the frame is believable.",
+   "fix": "Draw a smaller round-bellied iron cauldron with a narrower mouth. Hang it by a thin wire handle from a ring on the crossbeam, leaving open space between the pot and the posts."
+  }
+ ],
+ "pattern": "Generated cards give themselves away by inflating the main mass: bodies are fatter, shorter or oversized against their surroundings. Thin parts such as handles, cords, bumpers and tassels are thickened, and corners swell into soft blobs. They also add tidy, surplus parts. The contour metrics barely separate pairs, so the tell lies in part-to-part proportion and in whether thin parts stay thin. Several calls here are low confidence."
+}

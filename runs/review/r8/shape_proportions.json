@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the whistle body is stubbier and swollen, the mouth end is a curved puffy lip, and the chunky ring merges with the loop lug so its hole nearly closes in the silhouette. B: the barrel is longer, the mouth end has a flat rectangular face with tight corners, and a thin wire ring leaves a fully open hole. Solidity is higher on A (0.917 vs 0.879).",
+   "fix": "Draw the whistle with a long straight barrel and a flat rectangular mouth end with tight bevelled corners. Hang it from a thin wire ring with a clear open hole, separate from the lug."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the bell is enlarged, the tube is fattened into a smooth broad oval loop, and the cord wrap and tassels are oversized and toy-like. A: slimmer tube and a smaller bell, with an overlapping double tube bend that leaves a thin sliver gap, plus thin cords and small tassels. Thin share is 0.02 on A vs 0.001 on B.",
+   "fix": "Draw a slim brass bugle with a thin even tube and a modest bell. The tube folds into a narrow overlapping loop, with thin twin cords ending in small tassels."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Both have the same wide cup on an oval saucer, and the measures are almost equal. A has a long swept handle and a visible foot ring; B has a tighter ear handle and the cup sits directly on the saucer. Neither reads as a form error.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: leaves and extra stems break the apple contour and the weave edge is busy, the kind of added small parts the lessons show on generated cards; corner_rate is 0.0, below the real range. A: fewer parts and one clean apple stem, though its handle and rim are thick and the apples are large, so the signal is mixed.",
+   "fix": "Draw fewer parts: a basket with four plain apples with short stems and no leaves, a clean rim line, and a simple handle with a firm contour."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the belly bulges more and tapers harder to narrow ends, the contour flows smoothly with no corners (corner_rate 0.0), and rivets are added on every hoop. A: straighter staves, flat plain hoops with squared steps at the top and bottom edges, and no added hardware.",
+   "fix": "Draw a barrel with straighter staves and only a slight belly. Use plain flat metal hoops with crisp square edges that step out from the wood, and no rivets."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the contour is blobby, the roof sign is squat and fused to the roof, the mirrors are stalkless blobs, and the bumper and wheel arches melt into the body. A: the roof sign stands on small legs with a visible gap, the round mirror sits on a thin stalk, and the bumper is a separate bar. Solidity is 0.893 on B vs 0.861 on A.",
+   "fix": "Stand the roof sign on two small legs with a gap under it. Put round mirrors on thin stalks, and make the chrome bumper a distinct bar with crisp ends."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: pegs are oversized chunky stumps with thick ropes, and tie-back curtains, trim and a blobby ridge cap add parts. A: thin guy lines ending in tiny pegs, a sharp ridge tip, and fabric flaps with a simple opening.",
+   "fix": "Draw thin guy lines ending in tiny pegs, a sharp ridge tip, and plain door flaps without tie-backs or a trim band."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the pot is enlarged and its wide flat rim dominates, the handle passes over the crossbar with no hook, and the fire is detached and cropped from the silhouette. A: the handle hooks through a ring on the bar, the bar is lashed to the posts, and the pot sits over a stone ring. Thin share is 0.02 on A vs 0.001 on B.",
+   "fix": "Draw a smaller round pot with a thin handle that hooks through a ring on the crossbar. Lash the crossbar to the posts with rope, and set the fire ring directly under the pot."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away by swollen tubes, rims and small attachments, with soft fused junctions where real cards keep thin stalks, gaps and clean steps between parts. They also add small parts the real cards leave out, such as rivets, leaves, pegs and tie-backs, and these clutter the contour. Parts can also connect wrongly, as when a handle has no hook."
+}

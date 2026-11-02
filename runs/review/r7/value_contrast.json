@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A is a very high-key card: the pale cream-yellow field falls into the top grey level almost everywhere, and a white glow hugs the whistle's outline. Its key (lightness_mean 0.868) is well above the real cards' maximum of 0.793. The only hard darks are the red-black window and mouth slot. B sits on one even mid-light yellow group, nearly in range at 0.800. Its whistle is grounded by a soft cast shadow at lower right and a dark crescent under the barrel.",
+   "fix": "Make the background a deeper, richer golden yellow, not pale cream. Remove the white glow around the whistle. Add a soft darker shadow on the background below and to the right of the whistle."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B has the harder local contrast. The bell interior drops to a dark patch beside clipped white rims, a bright outline runs along the whole tube, and the ropes are near-black. A pale ring of glow sits around the hero and the outer rays turn dark at the corners (vignette 0.117, at the top of the real range). A is gentler: the brass stays in light-to-middle greys with soft roll-off and one soft bell shadow, and its rays run unbroken up to and through the loop. A's key of 0.809 is slightly too bright, but its value design reads closer to the real cards.",
+   "fix": "Soften the trumpet's shading so the inside of the bell is warm mid-gold, not nearly black. Remove the bright white outline along the tube. Drop the glow behind the trumpet, and keep the rays even in brightness out to the corners."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A is low in key with a smoky dark maroon field: lightness_mean 0.571 is below the real floor of 0.591, and the corners darken heavily (vignette 0.087, just above the real maximum). The hero's white cup is pushed hard against that dark field, giving a lightness_gap of 0.252, above the real maximum of 0.216, plus a black pool under the saucer's left side. B stays in range on all four fields. Its background splits into a dark upper wall and a light orange table, with a broad light pool around the saucer and a soft shadow.",
+   "fix": "Brighten the background to a clear, even red with no dark smoky corners. Light the area around the saucer, and lighten the black shadow under the saucer to a soft deep red."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B has a soft glow patch behind the apples, bright at the centre and darker across the top of the wall, which gives a vignette of -0.075, outside the real range (-0.010 to 0.086). The table is a flat top-level white with a hard-edged cast shadow at left, and apples, weave and shadow all break into many small, similar mid-dark pieces. A has broad light from the left: a light wall that darkens only at the right edge, large dark apple masses with one soft highlight each, and a soft shadow pool on the table. Its vignette of -0.002 is in range.",
+   "fix": "Remove the glow behind the apples and let the wall fall off gently from one side. Make the shadow on the table soft-edged, and let the apples merge into one large dark shape with one soft highlight each."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B's barrel sits almost entirely in one even middle grey with no large shaded side, only small patches of light on the staves and a pale halo in the sky behind the rim. Its hoops carry dotted rivet highlights, and rms_contrast is lower at 0.132. A has a strong light and dark split: the left two-thirds of the staves fall into a large dark group and the right side is lit, with a hard highlight on the hoops, a black contact shadow at the base and bright deck planks (rms_contrast 0.170). This matches the broad shaded mass of the real glove and camera.",
+   "fix": "Light the barrel strongly from the right so the left side falls into one large dark shadow and the right side stays bright. Remove the pale glow in the sky behind the barrel."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "The evidence is weak. A's lens shows a wide light disc hugging the taxi, with only blunt dark stubs of ray left at the card's edge, the ring-shaped glow seen on generated gloves. The roof glow is clipped white, and the car body has many small highlights and darks. B's rays run in narrow from the edges toward the car, as in the real camera card, and the body stays in light groups. B's strongest flaw is the heavy black outline around the windscreen, and its vignette of 0.096 is only marginally over the real maximum.",
+   "fix": "Remove the wide glow around the taxi and let the sky rays run in clearly up to the car. Calm the small highlights on the bodywork into a few broad light shapes."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B has far too strong a corner darkening: near-black foliage masses sit in the top corners and along the tree trunks (vignette 0.182, against a real maximum of 0.100), with a bright gap at the centre behind the tent. The tent's left face is a flat middle grey that sits close to the surrounding forest and grass, and its door is a large black wedge. A is lighter and more even (vignette 0.081), with mid-grey trees evenly around a light tent. Its darks are held to the tent's open mouth, and the grass stays one quiet middle group.",
+   "fix": "Lighten the trees in the top corners to mid greens and remove the near-black leaf clumps. Light the tent's left side so it stands brighter than the forest behind it."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A is low in key: lightness_mean 0.537 is under the real floor of 0.556, and its forest and pot belly sit in the same dark greys, so only the pale rim separates the hero from the background. The belly is broken by speckled black grain, the ground is a scattered dark group, and the fire is cut off at the bottom edge. B stays in range (0.600) with clear groups: a light clearing, a single dark pot mass with one soft highlight, and bright logs and flame beneath it.",
+   "fix": "Lighten the forest and the ground to bright mid greens and warm sand so the dark pot stands out against them. Make the pot one smooth dark shape with a single soft highlight, with no speckled grain."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through light placed to suit the hero rather than a real light source. A pale glow or ring hugs the silhouette, and backgrounds drift too high in key or fall into too-dark corners. Inside the hero, generated shading is either even, with no large shaded side, or broken into many small hard highlights and rim lines, where real cards use one broad light-and-dark split with soft roll-off. Darks also spread as scattered patches or black foliage, while real cards keep the darkest accents small and tied to contact shadows and openings."
+}

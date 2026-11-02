@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: an even, unbroken dark line runs around the whole whistle body, including the lit top edge, and a pale glow sits around the hero; the campfire motifs behind are also firmly drawn. B: the whistle contour is thinner and fades along the lit top and right drum, and the boundary is only firm at the mouth and window. The ring has fine thin lines and there is no halo. A has the same closed contour as the generated gloves in the lessons.",
+   "fix": "Remove the pale glow around the whistle. Let the orange body meet the background directly, with no dark line. Let the lit top edge nearly melt into the background and keep the sharpest edge only at the mouth opening and window."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a thick, doubled black band runs around the bell rim, and the rope wrap and tassels carry a heavy contour with bold groove lines. A: the bell's left edge nearly disappears, the dark edge is limited to the rim's shadow side, and the tube contour is thin and broken. The tassels are smaller and finely cut.",
+   "fix": "Remove the dark ring around the bell rim. Make the rim a thin bright highlight that fades on the lit side. Draw the tassel strands as fine shallow gaps, with no dark line around the tassels."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the steam has dark, line-like edges, and the rim and right side of the cup carry a heavier stroke, while the left side is noticeably lighter. The saucer rim shows doubled lines. A: the steam fades softly, and the cup and saucer contour is thinner and more consistent. Its darkest edges are at the rim and handle. Both cups are fairly closed, so the separation is modest.",
+   "fix": "Make the steam a soft haze with no visible edge. Thin the cup's right side so it reads as a change of tone, not a line. Keep the rim's blue band crisp, with no dark line beside it."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: every wicker strand and handle twist has its own dark boundary, giving a dense, even network with a subject density of 0.185 against 0.128 for A. The cast shadow also has a hard, line-like edge. A: the weave is broader with fewer divisions, the strands merge in places along the lower bowl, and the shadow fades softly. A's firmest edge is around the cloth and the handle.",
+   "fix": "Use fewer, wider basket strands. Let neighboring strands merge softly in the shadowed lower half and keep sharp gaps only near the cloth. Fade the shadow on the table so it has no hard edge."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: stave gaps and hoop edges are uniform dark grooves at the same weight everywhere, each rivet is a ringed dot, and the floor shadow ends in a line-like arc. Its background density of 0.052 is above the real range. A: the stave seams vary in weight, thin out, and stop along their length. The hoop and rim edges are broken, and the shadow on the deck dissolves.",
+   "fix": "Thin the gaps between the staves and vary them so some fade out. Remove most rivets. Soften the shadow on the deck so it has no outline. Calm the deck planks behind the barrel with fewer lines."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: heavy doubled black lines frame the windshield and side windows, the door and grille have even dark contours, and the road dashes read as hard outlined boxes. Its outline reading of 0.084 is above A's 0.036. A: the edges are dense too, and its subject density is above the real range, but the window frames are thinner. Weight changes more across chrome, wheels and body, and the road edges are softer and broken up by grain.",
+   "fix": "Replace the thick dark window frames with thin yellow body edges beside the glass. Keep door seams as hairline gaps. Soften the edges of the road stripes so they do not read as outlined boxes."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: thick black strokes run down the door flaps and along the tent's front edges and rope, so the hero looks inked with an even weight. A: the tent has long soft or lost edges on the left panel and only a few firm folds. However, its dark, jagged tree canopy is busy, with a background density of 0.07. That counts against A, so the call rests on the tent lines alone.",
+   "fix": "Remove the thick dark lines down the tent flaps. Show the folds with soft changes of tone and keep only a thin crisp edge where the flap meets the dark opening."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: a thick doubled contour runs around the pot's rim and handle, and the soot on the pot's lower half makes a dense speckle of tiny edges. A: the pot's contour is thinner and tapers along the lit side, with a firm edge at the rim. The fire and stones have softer boundaries, though the tripod logs are fairly firmly outlined.",
+   "fix": "Thin the pot's rim and handle to a single fine edge with no dark doubled line. Replace the speckled soot with a smooth fading dark patch. Let the lit side of the pot soften into the background."
+  }
+ ],
+ "pattern": "Generated cards still show closed, even-weight contours around the hero, as if inked, even on lit edges where real cards lose the boundary. Rims and windows carry doubled dark lines, and seams are uniform grooves that do not taper or break. Shadows and background shapes also get line-like edges, so detail is spread evenly instead of the sharpest edges gathering at the focus. The measurements rarely separate the pairs: outline_darkness stays in the real range throughout, and the out-of-range densities either hit both cards (p01 and p06 subject) or only B's background in p05. These calls therefore rest mainly on line character seen by eye."
+}

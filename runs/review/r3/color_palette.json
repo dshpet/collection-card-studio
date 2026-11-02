@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the whistle runs from hot orange to pure red in the mouth slot and along its underside and side disc. It sits on a pale lemon background washed out by a white-yellow halo, and in the lens the ring is swallowed by orange. B: an evenly muted orange body with brown-orange shadows, on a full golden yellow close to the real calculator card, with a clean grey ring. A's shadows go straight to red, which is the lesson direction, but both cards are almost fully warm, so the call is weak.",
+   "fix": "Paint the whistle a slightly muted orange plastic, with shadows in darker brown-orange rather than bright red. Remove the white glow behind it, make the background a solid rich golden yellow, and keep the metal ring plain cool grey."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: near-pure cyan rays, a hot glow behind the bugle, crimson tassels at full strength and a bright yellow-gold bell; the whole card is loud with little rest. B: softer turquoise rays and a deeper, darker red rope, with a gold that stays orange and shows almost no second hue in the lens. Subject and background chroma are close, and A's lead is small. I lean to A only because hero and background are equally pushed, as on the generated lesson cards.",
+   "fix": "Lower the background from electric cyan to a softer turquoise, and make the red rope a deeper, slightly darker red. Keep the brass a warm, believable gold rather than glowing yellow."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the background splits into a loud crimson wall and a flat bright coral floor, and the steam also goes orange. The porcelain stays a clean grey-white. A: one quieter brick red with a darker vignette; the cup picks up pink-cream and the blue band is soft. B's background is louder (0.188 vs 0.163) and its shadows gain the most chroma (1.76 vs 1.56, above the real range). A also overshoots that range, so this is low confidence.",
+   "fix": "Use one calm, deep red background rather than crimson over bright coral. Keep the table the same muted red family, and paint the steam soft white-grey, not orange."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: pure tomato-red apples dominate the card, and in the lens the wicker merges into the same red mass. The wall is a pale washed lavender with a white bloom, and the floor has a yellow glow and a pink-orange shadow. A: smaller, slightly deeper red apples, wicker that stays separate from the fruit, a full violet wall, and a cool grey-purple floor shadow that gives the eye a neutral rest. The cool floor shadow matches the real lesson cards. B's warm floor shadow and bleached wall match the generated side.",
+   "fix": "Use deeper, less fiery red apples and keep the basket a clearly different straw-orange. Make the wall a rich even violet with no white bloom, and make the shadow on the table a cool grey-purple."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the sky is flat electric cyan, and the iron hoops turn warm mauve-brown in the lens with only small teal patches, so the metal loses its cool neutral. Pink-brown shadows wrap the staves and spill onto the tan deck. A: a graded natural blue sky, with hoops that stay slate blue-grey in the lens and read as a cool neutral against the wood. A's staves are a rather pure orange, which counts against it, so this is not a clear call.",
+   "fix": "Change the sky from flat bright cyan to a natural graded blue. Paint the iron bands cool steel grey with blue-grey reflections, and keep the shadows on the wood dark brown rather than pink."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the body is pulled amber-orange all over and reads as one tan mass in the lens. The chrome and lamps also go warm cream, and the sky bleaches to a pale glow behind the car. The road is the one neutral rest. B: a truer taxi yellow with orange only in the shading, plum shadows, chrome that keeps blue-white reflections, and a rich blue sky. B's road reads warm brown in the lens, which is a mark against it. Both cards are low on background chroma, so the numbers do not separate them.",
+   "fix": "Paint the taxi clean yellow rather than amber-orange, with orange only in the shaded areas. Keep the chrome cool silver with blue sky reflections, and make the sky a rich even blue without a pale glow behind the car."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: acid lime grass fills the foreground, and the tent is one yellow fading to dull mustard on the roof. The dark greens and yellow-greens crowd the card, so there is little neutral rest. A: a softer dappled yellow-green lawn, an orange accent band on the tent, and a pale blue-grey sky gap that rests the eye. B's grass is the most pushed hue on either card, but A is also vivid, so the call is weak.",
+   "fix": "Soften the grass to a natural mid green with some olive and yellow patches rather than bright lime. Open a patch of pale blue sky between the trees, and give the tent a clean warm yellow with a slightly darker trim."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the neutrals are pulled warm. The pot goes tan and olive in the lens with a red-orange glow across its belly, the rim is warm, and the flat stones are tan, so almost no cool grey is left beside the saturated stew and yellow-green grass. A: the pot keeps slate grey with teal in its shadows, the rocks stay grey with cool shadow sides, and the teal forest depth sets the fire and stew off as the warm accent. That matches the cool neutrals on the real lesson cards.",
+   "fix": "Paint the pot dark cool iron grey with blue-green shadows, with only a small orange reflection near the flames. Make the ring stones cool grey, and use deep blue-green for the forest behind."
+  }
+ ],
+ "pattern": "Generated cards lose the cool neutral. Across the lessons, real cards keep grey or blue-white metal, plastic, cloud and porcelain, and floor shadows lean cool grey-purple. Generated cards warm these to cream, tan or mauve, push the hero to a purer hue (orange glove, fiery reds), and brighten or bleach the background into electric cyan or a white-glow centre. As a result hero and background are equally loud, with few places for the eye to rest. Calls are weak on the near-monochrome pairs p01 and p02, where there is no neutral area to test."
+}

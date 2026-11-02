@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a thick pale-white halo hugs the whistle's outline and washes out the flame pattern around it, like the glow around the generated gloves in the lessons. The rest of the field is pale. B: an even golden field with tone-on-tone flames and only a soft cast shadow at lower right, closer to the real calculator card with its pi pattern. B's edge density (0.003) is below the real range, so its pattern is, if anything, too quiet. That is a smaller issue than A's halo.",
+   "fix": "Remove the white glow around the whistle. Make the background one even, deep golden yellow with quiet flame shapes running right up to the object, and put a soft shadow under it instead of a halo."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a flat, chalky teal burst with even wedge-shaped rays and a plain centre, close to the real street-lamp card. B: hot neon cyan blooming in the centre and falling off to deep blue corners, the same overdriven glow as the generated glove cards. The rays dissolve into it near the bugle. Both are plain bursts with no props, so this is a weak call on field saturation only.",
+   "fix": "Calm the burst: use flat teal rays with clear, even wedges, no neon cyan bloom in the centre and no dark blue corners."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: one red field that falls softly into a floor with no visible join, a soft shadow to the left and a dark vignette. B: a ruler-straight join between crimson wall and flat orange floor, an empty ledge with no surface tone, and a firm shadow. B's background detail (0.0056) is below the real range (0.008 to 0.013), so the setting reads as thin. A's steam is larger than B's but stays translucent.",
+   "fix": "Soften the wall-to-floor join into a gentle gradient, give the floor a slight falloff of light, and blur the cup's shadow so it melts into the surface."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a warm floor with a soft gradient, a faint vertical reflection under the basket and a soft shadow at right, plus a lit violet wall. B: a flat cream floor against a hard horizon, with a firm dark shadow thrown to the left and no surface response. B's background detail (0.0066) is below the real range, while A sits at its lower edge (0.008). The B card reads as a plain ledge, not a surface the basket stands on.",
+   "fix": "Make the table surface warm and softly lit, with a faint reflection under the basket and a soft shadow. Blur the line where table meets wall and let light fall across the wall."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the deck planks run diagonally into a built bulwark corner of stacked boards, so the barrel stands in a place with structure, much as the real computer stands at a desk with an edge and a drawer. The shadow is soft and low. B: a simple straight rail with evenly spaced posts behind the barrel, a level deck and a long, firm shadow to the right. This is the same simplified set-dressing the generated computer tables show. Both backgrounds are quiet and measure in range, so the lean is slight.",
+   "fix": "Replace the even rail with a solid wooden ship's side meeting the deck at a corner, turn the planks to a diagonal, and soften the barrel's shadow so it stays close to the base."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: fine grain across the asphalt, three small dashes receding at lower left, and a lighter cyan burst. B: smooth purple-grey road, two thick white dashes, a diagonal road edge at right, and a deeper blue burst. The two stagings match: a burst over a single road surface with no extra props. A's grain and B's heavier dashes roughly cancel out, and both measure in range.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: two framing trees, a couple of pines and shrubs on open sky, with a few large, clean masses and a calm lawn, though the large yellow flowers are a small extra. B: packed with shapes, including many dark trunks, several pines, a leaf cluster behind the peak, a hazy light shaft and grass tufts everywhere. Its tent also runs to the left card edge and sits off centre. Its background detail is higher (0.0288 vs 0.0246). The real lion card uses a few large, quiet shapes, and B's forest competes with the tent.",
+   "fix": "Cut the forest to one or two big trees at the sides and a soft, pale line of distant trees. Keep the middle open behind the tent, centre the tent with clear space on both sides, and reduce the grass tufts."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the pot fills the card, the fire is cropped by the bottom edge and the ground is simple dirt with a few flat pebbles, though the pine wall behind is dark and dense. B: everything is fully inside the frame and spelled out, with a ring of large stones around the logs, rope lashings, grass clumps and scattered pebbles. Like the generated lighthouses, it shows the whole scene and adds supporting props where the real lighthouse simply crops. Its background detail is lower (0.0197 vs 0.0234), which argues against the call, so confidence is low.",
+   "fix": "Move in closer so the pot is the main shape and let the bottom of the fire run off the card. Remove the ring of stones and the grass clumps, leaving plain dirt and a soft forest behind."
+  }
+ ],
+ "pattern": "Generated cards tend to stage the hero more than the real ones do, and five signs give them away. (1) A bright glow or hot neon bloom around the object, instead of an even field with a soft shadow beneath it. (2) Bases and helper props added so the whole scene fits inside the frame, as with the islands, lifebuoys and stone rings, where real cards crop and keep the object large. (3) Plain ledges with a hard, ruler-straight horizon, a flat floor and a firm cast shadow, where real surfaces have soft light falloff and a bit of structure such as a desk edge. (4) Category 4 environments that fill with many small trees, tufts and light shafts rather than a few large, quiet shapes. (5) Oversaturated field colour overall. Plain bursts and simple road or deck settings are the hardest to separate on this vector."
+}

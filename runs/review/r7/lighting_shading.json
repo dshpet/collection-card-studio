@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the whistle has a smooth glossy body, a white halo pressed around its silhouette, no cast shadow, and saturated red glow in the mouth and window, like the halo and red pocket on the generated gloves. B: matte surface, gentle turn from the top-left to the lower right, and a soft cast shadow to the lower right, like the real camera's shadow. Both have nearly equal form_contrast (0.32), so this rests on the halo and the missing shadow.",
+   "fix": "Remove the white glow around the whistle. Make the plastic soft and matte with one gentle light from the upper left, keep the openings a plain dark tone, and add a soft shadow falling to the lower right on the background."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the bell rim and tube carry a bright, even outline highlight, the bell interior drops very dark, and the body is lit evenly from the front (light_bias 0.25). A: light clearly comes from the left, so the bell flares bright there and the tube fades gradually into shadow toward the right (light_bias 0.43).",
+   "fix": "Light the bugle from one side only. Let the brass fade slowly from bright on the left to darker on the right, remove the bright line along every edge, and keep the inside of the bell a warm mid tone rather than near black."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the cup is flat and evenly lit, with little difference between sides, and a dark cast shadow with a fairly clean edge sits on the left. shading_range 0.51 and form_contrast 0.345 both fall below the real band. A: the cup turns softly from a warm lit side to a shaded side, the saucer picks up red bounce, and the left shadow fades out softly.",
+   "fix": "Give the cup one strong soft light from the right, so the left side of the bowl falls into a clear soft shadow. Add a warm reflected glow under the saucer rim and fade the cast shadow's edge."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: a dark blob of cast shadow with a defined edge sits to the left on a flat table, and the weave has hard, tight dark gaps. The apples are shaded evenly from the front. A: the shadow to the right is faint and diffuse, the table has a soft warm reflection, and the apples turn broadly with soft sheen. Both shading ranges are just over the real band, so the numbers do not separate them.",
+   "fix": "Make the shadow on the table pale and very soft with no clear edge, add a faint warm reflection under the basket, and soften the dark gaps in the weave."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the barrel is lit almost from the front, the staves stay a similar mid tone all the way around, and the only strong darkness is a separate cast shadow to the right. form_contrast 0.379 falls below the real band. A: a clear side light leaves the left third in deep shadow and turns gradually to a bright right side, with streak highlights on the steel hoops (form_contrast 0.488, light_bias 0.659).",
+   "fix": "Light the barrel strongly from the right so the left side falls into deep soft shadow, with the staves fading gradually from light to dark. Give the metal hoops a long bright streak on the lit side."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a bright, plastic-looking sheen sits on the hood and roof against a dark lower body, and the light is pushed hard to one side. All three measures exceed the real band (0.929, 0.708, 0.934). A: gentler, more even modeling on the yellow body, moderate chrome highlights, and a soft cool shadow under the car, all within the real band.",
+   "fix": "Reduce the white shine on the hood and roof to a soft broad sheen, lift the shadows on the lower doors, and keep a soft shadow under the car."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the roof is one flat dark plane against a glowing front panel, the opening drops to near black, and there is barely any shadow where the tent meets the grass. shading_range 0.882 exceeds the real band. A: the panels shade softly, the opening stays a warm mid tone, and the stakes and tent cast clear shadows on the grass (shading_range 0.643).",
+   "fix": "Soften the jump from the dark roof to the bright front panel, make the inside of the tent warm brown rather than black, and add soft shadows on the grass under the tent edge and stakes."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the pot is lit nearly evenly from the front with a broad sheen and a small fire glow at the bottom. light_bias 0.074 is far below the real band. A: the top of the pot sits in shade and is lit dramatically from below by the fire, with a clear gradient up the belly, though it has little cast shadow on the ground. Its shading_range of 0.6 is only just under the band. This is a weak call because A's underglow is also heavy.",
+   "fix": "Make the campfire the main light: a warm glow rising up the pot's belly that fades into shadow toward the rim and away from the camera, in place of the even front sheen."
+  }
+ ],
+ "pattern": "Generated cards still favor frontal, even lighting. Form stays at one mid tone around the object, and darkness comes from separate pools rather than a true shadow side: a defined cast-shadow blob, dark gaps, or near-black openings. Glossy plastic sheen, bright outlines along edges and halo glows stand in for the slow side-lit turn of the real cards, whose shadow sides fall off gradually and pick up soft bounce."
+}

@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both whistles show the same three faces: top with window, mouth end, side disc. A sits at a confident 3/4 turn; the mouth is an open, even rectangle in the normals and the disc reads nearly round. B is tipped steeper, so the mouth is squeezed to a thin sliver and the disc narrows, while the ring slips behind the body. B reads as floating with no spatial anchor. The evidence is weak: planar shares are similar (0.624 vs 0.56).",
+   "fix": "Turn the whistle to a calm three-quarter view so the mouth end shows as a clear open rectangle and the side disc looks nearly round. Keep the ring in full view beside the loop."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B shows the inside of both tube ends at once: the bell opening faces us at left and the mouthpiece opening faces us at right, which one view cannot give. The bell is also huge against a tiny far end, a forced wide-angle look, and the tassels hang flat-on. A has one view: the bell is turned, the mouthpiece is seen from the side, and the coil overlaps cleanly. A's planar_share of 0.002 sits below the real range, but a thin, all-round tube explains that, so I discount it.",
+   "fix": "Draw the bugle from one gentle side-on angle: the bell opening visible, the mouthpiece seen from the side with no hole showing, and the bell only moderately larger than the far end."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Rim and saucer ellipses are about equally open within each card (roughly 0.33 to 0.38 in A, 0.32 to 0.33 in B), so both share one camera height. A's background has no horizon in the normals; B has a soft wall-to-table change. Both occur on real cards. Planar shares are equal (0.376 vs 0.375). My vector gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A is a steady, near-frontal view: the rim curve and base curve match a single low camera, and the handle stands square on the rim. B is turned slightly: the rim dips and lifts unevenly, the handle's feet sit at different places (the left foot hides behind the apples), and the apples show their tops from higher than the wall/table line suggests. B's planar_share of 0.054 is at the bottom of the real range because its surfaces break into fine rounded strands, against A's flat bands.",
+   "fix": "Show the basket straight-on from a low, steady camera: one even oval for the rim, a matching curve at the base, and the handle rising from opposite sides of the rim."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A has the low camera the real lessons show: the top opening is a very thin sliver, the base curve is deeper than the top curve, the deck planks converge, and the rail turns a corner behind the barrel. B looks down from higher: the wide open mouth shows the inner wall, the top and base curves are about equally open as in an orthographic view, and the rail runs flat and parallel behind it. The extra top face and higher camera match the generated side of the lessons.",
+   "fix": "Lower the camera to just above the barrel's rim so the opening is a thin oval and the hoops curve more toward the bottom. Let the deck planks run back toward one distant point."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A pushes the wide-angle look: grille, headlights and front wheel are swollen and close, while the cab shrinks quickly behind them. The car nearly fills the width and its normals are smooth, puffed rainbows. B has milder perspective with sensible front-to-rear scale; the slanted skyline agrees with the road lines and the car's side line, so it stands on one ground plane. Planar shares are equal (0.216 vs 0.221), so this rests on the eye alone.",
+   "fix": "Step the camera back for a mild three-quarter view: front and rear wheels nearly the same size, a modest hood, and the roof sign in scale with the cab."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A has a clear stack: tent on a simple smooth lawn, soft faded trees behind, and the tent's edges converge to a level consistent with the scene. In B the trunks, pines and foliage stay about as crisp as the tent and the normals show every leaf and grass tuft, so foreground, hero and background do not separate; the depth is only hinted at by a light shaft. Real cards keep backgrounds simpler or softer.",
+   "fix": "Simplify the forest behind the tent into soft, pale, rounded tree shapes with little detail, and keep the grass in front plain, so the tent is the only sharp thing."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B looks down from higher: stones and logs are splayed from above, with a wide soup oval. The beam is drawn frontally yet its right end shows a full end-grain circle, a turned part inside a frontal view. A is a lower, flatter frontal view: beam, posts and fire share one front-on angle, and the ground recedes evenly. A's planar_share of 0.289 is mid-range; B's 0.084 reflects its round pot and is weak evidence.",
+   "fix": "Lower the camera to a steady frontal view: show the beam side-on with no log ends facing us, a thin soup oval, and the fire seen from near ground level."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through a camera that sits too high and shows too much top face, as with open rims and ground items splayed from above, where real cards stay low and steady. They also mix views inside one object, such as both tube ends open or a log end turned toward us in a frontal scene. Perspective is sometimes forced, with near parts swollen against a shrunken back. Backgrounds stay as sharp and busy as the hero instead of dropping to a simpler, softer layer. Most calls here are low confidence: planar_share barely separates the pairs."
+}

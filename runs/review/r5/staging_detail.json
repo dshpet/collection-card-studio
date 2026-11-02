@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: deep saturated yellow field, with campfire motifs one quiet step darker than the ground and no light around the whistle. B: the field is washed to pale lemon, a white-yellow halo hugs the whistle's outline, and the campfire motifs sit on a stiff grid and read darker and louder against the pale ground. The halo matches the generated glove lessons and appears on no real flat-field card.",
+   "fix": "Keep the background one even, deep saturated yellow right up to the object. No white glow or halo around the whistle. Draw the campfire pattern only slightly darker than the yellow, as a faint tone-on-tone print."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: saturated cyan burst with broad rays that melt softly into a bright centre, like the real baseball-glove and lamp cards. B: paler, chalky teal with more pale rays. Their edges are harder, and they pinch to a sharp point visible inside the bugle's loop, so the backdrop competes with the thin hero.",
+   "fix": "Use fewer, wider sunburst rays in saturated cyan, with only a small tone step between them. Melt the rays into a soft glow behind the object, with no sharp point where they meet."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: category 2, a flat peach ledge with a ruler-straight horizon, an orange glow sitting exactly on that line, and a dark shadow thrown left. The background has almost no surface information, and detail_background of 0.0061 is below the real range. B: a soft red field with no horizon, where the cup is grounded only by a soft shadow, like the real camera card, and detail is in range. The evidence is weak because the anchor also has ledge cards.",
+   "fix": "Soften the table edge into the background with a gentle curve or fade. Remove the orange band along the horizon. Add slight tonal variation across the tabletop, and make the cast shadow soft and short."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: lavender wall with a light falloff, and a warm tabletop carrying soft reflections of the cloth and basket; detail 0.008 is in range. B: flat purple wall on a flat butter-yellow slab with a hard horizon and a long, dark shadow to the left; detail 0.0065 is below range. Each apple in B also carries an identical added bright leaf, a repeated decoration A does not have.",
+   "fix": "Light the wall with a soft gradient from one side. Give the tabletop a soft sheen with faint reflections of the basket, and keep the shadow short and soft. Remove the matching leaves from the apples."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: muted sky and a plank bulwark in quiet wood tones close to the barrel, with deck boards at low contrast. It carries more planks (detail 0.0188) but holds together as one calm mass. B: saturated blue sky and a neat ring-shaped rail with evenly spaced square posts centred on the barrel, plus a strong violet cast shadow. The set-built symmetry and heavy saturation run the same way as the generated lessons.",
+   "fix": "Replace the even post-and-rail ring with a plain low wooden ship's side, slightly off-symmetry. Calm the sky to a softer blue and make the deck shadow short and light."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a road runs diagonally through the frame, with clean smooth asphalt, broad lane dashes and even blue rays. B: the road ends on a curved hill-like horizon, the asphalt has speckled gravel texture, and a white blown-out glow sits behind the roof. Grain and halo are both things real cards leave out.",
+   "fix": "Draw the road as smooth, quiet dark asphalt with no speckle, running diagonally off the card. Remove the white glow behind the car and keep the rays saturated blue."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a dense, layered forest of many trunks, pines and fine leaf clusters with haze shafts, at the high end of measured load (detail 0.0288, edges 0.07), in dark, muddy greens. B: fewer, larger shapes, with two framing trees, a few pines and lime rounded canopies close to the real lion card, although its large daisies and ferns are added dressing. The call is weak because both are in range.",
+   "fix": "Reduce the forest to two large trees and a few simple pines, with big rounded leaf masses in bright clean greens. Remove the small trunks, fine leaves and light haze behind the tent."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a warm open clearing with a strip of sky, a few soft pines and a calm orange ground, so the stone ring and cauldron read at once. B: a wall of dark pines fills the whole top with fine needles, grass tufts line the clearing, and flat pebble discs are scattered round it. Detail is higher at 0.0234, and the busy green sits right behind the pot's rim and handle.",
+   "fix": "Open the background to a few big soft pine shapes with sky showing between them. Remove most of the grass tufts and pebbles, and leave a plain warm dirt clearing around the fire."
+  }
+ ],
+ "pattern": "Generated cards still show a white or pale halo hugging the hero and washed-out or bleached fields. Rays are harder and more numerous, with a sharp convergence point. Environments are overbuilt or tidily staged: symmetrical rails, packed pine walls, scattered pebbles and flowers. Generated cards also add surface noise such as speckled asphalt, ruler-straight ledges with long hard shadows, and repeated invented decoration such as matching leaves. Real cards keep the field saturated and low contrast, and build the setting from a few large, quiet shapes."
+}

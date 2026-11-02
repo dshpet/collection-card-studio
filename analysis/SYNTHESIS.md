@@ -2,12 +2,14 @@
 
 All 160 cards and 16 sets of one summer collection, rated by four vision models (Codex, Claude, Qwen, Gemma) and measured from pixels, subject masks, depth, shading and predicted attention. Numbers are counts out of 160 cards unless stated. The generator reads this through `knowledge.json` and `scripts/style.py`.
 
+Rater counts below are what models said, not what the cards are. Blind tests later showed the raters expect game art to be rounder, glossier and more saturated than it is: see [STYLE_GAPS.md](STYLE_GAPS.md). Where a rated claim and a twin comparison disagree, the comparison wins.
+
 ## The style that never changes
 
 - **Render:** soft or glossy 3D in 154 cards, with soft gradients on all 160. A polished hero often sits on a flatter backdrop (87 cards).
 - **No outlines:** 154 cards. Form comes from shading.
-- **Shapes:** round and soft in 133, chunky in 136.
-- **Surfaces:** clean, with little texture in 132.
+- **Shapes:** raters said round and soft in 133 and chunky in 136, but that is rater bias. Beside redraws of the same objects, real cards keep true proportions, slim parts and small soft bevels. They are simplified, not inflated.
+- **Surfaces:** smooth and calm. Raters said little texture in 132, yet materials stay readable: stitching, grain and seams exist, small and quiet.
 - **Colour:** saturation 4–5 of 5 in 156. Backgrounds are as saturated as subjects.
 - **Hero against background:** opposing hues, strongest in Category 1 (142° apart, against 98° for shuffled pairs).
 - **Shadows stay colourful:** the darkest quarter of a subject keeps 95% of its chroma. Dark means rich indigo or crimson, not black or grey.
@@ -48,6 +50,7 @@ All 160 cards and 16 sets of one summer collection, rated by four vision models 
 - **Most reliable:** backdrop pattern (κ 0.88), support, object class, tone, surface kind, art category and background type (κ 0.76–0.83).
 - **Weak:** subject-versus-background contrast, light direction, rim light, margin and value key (κ below 0.2).
 - **Constant fields** are kept as style invariants, but they are unproven as checks, because all 160 cards are positives. Off-style controls test them.
+- **Agreement is not truth.** All four raters shared the same wrong expectation, so their agreement could not reveal it.
 - A fresh reviewer's spot check of 38 cards found 8 wrong, mostly rings read as rays, which the new pattern field addresses, and surfaces misjudged.
 - Reviewers found 3 of 24 hard masks incomplete: Park Gate, Pool Bar and Adventure.
 - Shading maps leak some colour. DeepGaze learned from photos, so it is unvalidated on this art.

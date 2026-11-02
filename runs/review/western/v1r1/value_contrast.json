@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: umbrella in a bright, middling-contrast card; the yellow panel is the lightest shape, the underside the dark group, and the background rings stay one mid value with a faint lift under the canopy. B: light star on a near-black magenta field, with only two background groups and white-clipped streaks on the star's upper arms and ring. Its lightness_gap of 0.361 is far above the real maximum of 0.128, and mean 0.521 and rms 0.167 are also out of range. The hero separates by a much harder value jump than real cards use.",
+   "fix": "Lift the magenta background to a medium, brighter pink so the card is not so dark; keep the gold star only moderately lighter than the background, with soft highlights instead of white streaks on the arms and ring."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the lens shows a ragged lighter patch hugging the boot's silhouette and breaking up the diamonds, like a tight halo; the boot is nearly black with a hard white flash on the toe and sharp light stitching. B: the cap is one big dark block on a clean round glow, with simple groups, though its lightness_gap of -0.312 slightly exceeds the real limit of -0.290. The numbers lean slightly against A; the halo and hard toe highlight are what favour A.",
+   "fix": "Keep the diamond background at an even value right up to the boot, with no glow around the outline; shade the leather in soft middle steps and widen the toe highlight into a gentle sheen."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the jacket falls into broad light and middle masses, with the sash as the one dark diagonal and a soft ray glow; its vignette of 0.134 is slightly high. B: the card is darker, with mean 0.543 below the real minimum of 0.581; the hat sits close to the mid-dark background and depends on a thin bright rim around the brim to separate. The hat's crown has only a small hot highlight, and the dark corners take a large share of the card.",
+   "fix": "Brighten the teal background and its centre so the whole card is lighter; light the hat crown broadly from above and remove the thin bright outline along the brim."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: dark red booth as one strong dark mass on a light green field, with a round glow behind and all values in range. B: a mid-value signpost on a sky of similar value, with big white clouds low right; mean 0.762 and vignette -0.047 are slightly outside range, and the butterfly nearly melts into the sky in greys. Both have readable, large groups, and B's breaches are small, so value gives no firm reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the cactus sits in nearly the same mid-grey as the striped wall, with very few dark accents and only soft stripes of light down the body. rms 0.090 is well below the real minimum of 0.120, so the card reads flat and foggy in the lens. B: strong range, with a white court line, near-black grip and cast shadow, and a bright ball; rms 0.135 is in range.",
+   "fix": "Add more light-dark range: deepen the shadow side of the cactus and the shadow on the sand to a dark value, lighten the lit ribs, and make the wall clearly lighter or darker than the cactus."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the suitcase body is a calm middle group, with white stickers as light accents and the background clipped almost entirely to white; its mean of 0.792 is above range. B: the barrel is broken into hard dark and light blotches across the staves, with near-black hoops and a hard floor shadow. rms 0.197 and gap -0.299 both exceed the real limits, and the mean of 0.749 does too, so it has more breaches and harsher local contrast.",
+   "fix": "Shade the barrel staves as smooth rounded middle tones from a light side to a darker side, soften the hoop highlight and make the floor shadow lighter and softer."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: dark pot with a hard specular strip, near-black lid knob and base ring against a card with darkened corners around a tight glow. In the lens the rock breaks into noisy white and grey crumbs along its edge instead of a clean group. B: clean groups with an orange wall in one value and a pale floor nearly clipped; soft-to-medium shoe shading. Its mean of 0.762 is just over range, but A's grouping is the less card-like, although all its numbers fit.",
+   "fix": "Simplify the rock into a broad smooth tone with no speckled highlights along its edge; soften the pot's highlight strip and remove the dark corners and tight glow behind it."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: orange locker in a mid value similar to the wall, deep black interior as the accent, with a shadowed left wall; vignette -0.055 is a bit low. B: the poster is a huge white-clipped mass against darker wood, with ragged light patches in the paper and heavy black lettering. Gap 0.207 exceeds the real maximum of 0.158, and the hero's hard black-on-white is the largest contrast step on the card.",
+   "fix": "Make the poster paper a soft even light tan rather than near white, with gentle fold shading instead of blotchy bright patches, and lighten the wood background a little so the poster stands out less harshly."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the saloon is cut into many tiny dark lines and small value patches across planks, windows and railings, with no broad dark or light shape on the building; the doorway is the only larger dark. Gap -0.223 is below the real limit of -0.187. B: large simple groups of light sand, mid water, dark ring and post, and a light rope coil; all numbers are in range.",
+   "fix": "Group the building into a few big shapes: one smooth mid tone for the walls, a soft dark under the porch and a light roof line, with fewer thin dark lines between planks."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the canvas clips into a large near-white shape with ragged fold edges, and the grass field and foreground break into scattered light flecks; mean 0.723 is above the real maximum of 0.707. B: the boat and dock settle in clear mid groups with a dark water shadow and a light rim, and all numbers are in range, though the water ripples add small flecks.",
+   "fix": "Bring the canvas down to a warm light tone with soft fold shading, keep the brightest white to a small area, and paint the grass field as one calm tone without scattered bright strokes."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: nearly everything sits in two neighbouring mid greys; the tower has no real dark group and the fan blades only small lights, so the hero barely separates by value. rms 0.103 is under the real minimum of 0.124. B: a dark door mass with a bright wreath at the centre and a light vine frame gives a clear focus, with rms 0.140 in range and mean only marginally low.",
+   "fix": "Darken the tower's shadow sides and the fan's underside to a strong dark and lighten the sky behind the fan, so the windmill stands out as a clear dark shape on a lighter background with one bright sunlit edge."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: bumper car with a near-black rubber base and a bright reflective floor, rms 0.199 just above range; light-dark range is wide but organized. B: bright yellow fins on a dark even purple field with a soft glow, mean 0.548 just below range; hard white on the fin edges but simple groups. Both breaches are marginal and both cards have clear large groups.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards rarely fail on overall key; they fail in how values are grouped. The giveaways are a tight glow or lifted patch hugging the hero's outline; hero contrast pushed to hard white streaks and blotches rather than a gentle roll-off; and large areas clipped near white or near black. Many cards also break up into small ragged flecks in the five-level view instead of a few large light, middle and dark masses. There is an opposite failure too: flat cards (cactus, windmill) where the hero and background share mid greys and rms contrast falls below the real range. Real cards keep broad shadow masses on the hero and one or two compact dark accents."
+}

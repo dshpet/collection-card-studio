@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "The whistle has almost the same scale and diagonal placement on both cards. A puts a pale white-yellow glow directly around the whistle, and the campfire pattern stays strong and busy on the washed-out field. The lesson generated glove has the same kind of hero halo. A also has the wider clearance (margin 0.126, above the real maximum of 0.116). B sits on a saturated yellow field with a quiet pattern, like the real calculator card, and its margin of 0.105 is in range. This rests on a small difference, so confidence is low.",
+   "fix": "Remove the white glow around the whistle. Use a deep saturated golden-yellow background with a faint tone-on-tone campfire pattern, and draw the whistle slightly larger so it comes closer to the card edges."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A's bugle fills the card: the bell reaches close to the top-left corner, the mouthpiece reaches the right side, and the tassels hang into the lower third. Its area of 0.225 is in the real range. B's bugle is visibly smaller, with wide empty sky above and below, and its area of 0.171 is below the real minimum of 0.198. B's thin tassels and rays read weakly at thumbnail size, while A's thick red tassels and bell read at once.",
+   "fix": "Draw the bugle much larger so the bell nearly reaches the top-left corner and the mouthpiece nearly reaches the right edge. Make the tassels thick and hanging low in the card."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A's cup and saucer are large, sit low in the card, and carry a tall curl of steam up to the top edge, so the hero column fills the height. B's cup is smaller and floats mid-card over a hard table horizon, with thin steam and a lot of empty red above and orange below. B's area of 0.193 is below the real minimum of 0.264, and its margin of 0.163 is well above the real maximum of 0.108. A's area of 0.265 and margin of 0.108 only just reach the real range.",
+   "fix": "Draw the cup and saucer much larger, with the saucer spanning most of the card width. Add a tall bold curl of steam that rises almost to the top edge, and remove the hard table line behind the cup."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's basket is smaller and fully contained, with a wide empty band of floor below it and a margin of 0.133, above the real maximum of 0.108. It holds several small apples, which merge into a red cluster at thumbnail size. B's basket fills the card (area 0.418, margin 0.091), with a few big apples and a big checkered cloth corner that read at once. Its weight and scale match the real chest and cooler cards.",
+   "fix": "Draw the basket much larger, filling most of the card, with only 3 to 4 big apples inside. Bring the handle close to the top edge and the basket base close to the bottom edge, with very little empty floor."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "Both barrels are narrow on the card, and both box widths (0.547 and 0.640) fall below the real minimum of 0.661. A's barrel is smaller and stands dead-centre and frontal, with a thin rail running behind its middle and deck showing all around. Its margin of 0.133 is above the real maximum of 0.098. B's barrel is larger (area 0.424, margin 0.094), viewed from slightly above and pressed toward the viewer, so it dominates the card as the real hero objects do.",
+   "fix": "Draw the barrel much larger and wider, seen from slightly above, so it nearly reaches the card edges. Show less deck around it and keep the rail low and out of the way behind it."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both taxis are wide three-quarter views low in the card with road below and rays above, and both measure in or at the edge of the real range. A's car is a little smaller and more contained (margin 0.063, area 0.302), with a stack of fine chrome details and thin road dashes. B's car is bolder and larger (area 0.342, margin 0.035), and it presses toward the right edge, though its big white dash in the foreground competes slightly. The call rests on the small lean toward a contained hero, so confidence is low.",
+   "fix": "Draw the taxi larger with its bumper and rear nearly touching the card edges, and use bigger simple shapes with less small chrome detail."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A's tent is wide and low (box height 0.504, below the real minimum of 0.527), set in a bright full scene with sunlit grass, flowers, trees at both top corners and distant pines. These add many small accents around a tent of similar brightness. B's tent is taller and separates more cleanly at thumbnail size against darker trees, although the dense forest crowds the top half. Neither card matches the simple real scene backgrounds well, so confidence is low.",
+   "fix": "Draw the tent taller and larger, filling more of the card height. Simplify the surroundings to a soft blurred forest, with no flowers and no large foliage in the corners."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's wooden frame stretches almost edge to edge (area 0.471, above the real maximum of 0.442; width 0.963, above the real maximum of 0.955), so the frame takes the top of the card. The pot is modest inside it and shares attention with a wide ring of rocks and the fire. Everything is fully contained in a tidy symmetrical layout. B's pot is much larger and is the clear first read at thumbnail size, and the fire logs are cropped by the bottom edge, like the real lighthouse crop. Its area of 0.391 is in range.",
+   "fix": "Draw the pot much larger as the centre of the card, with its rim nearly as wide as the frame. Remove the ring of rocks, keep the fire small under the pot, and let the bottom of the fire run off the card edge."
+  }
+ ],
+ "pattern": "Generated cards still tend to keep the hero smaller and fully contained, usually centred or symmetrical, and with more clearance than real cards: margins run high, box height or area runs low, and nothing is cropped. They spread attention into added props, scenery, halos and small repeated details such as apples, rocks, flowers and rivets. Real cards use one big, simple hero that nearly reaches the edges, may be cropped, and is named instantly at thumbnail size. Scale and margin gaps are subtle in close pairs such as p01, p06 and p07, so those calls are weak."
+}

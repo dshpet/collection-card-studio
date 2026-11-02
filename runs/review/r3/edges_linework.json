@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a near-uniform dark contour runs around the whistle, heaviest along the lower-left body and mouth, and a pale glow halo surrounds the hero. Almost nothing sits inside the body, so subject density of 0.039 is below the real range. B: a thinner, more varied contour with no halo, plus faint scratch marks on the barrel and a dark doubled line on the metal ring. B's scratches and ring are slightly fussy, so this is a weak call.",
+   "fix": "Remove the pale glow around the whistle. Let the shape meet the background directly, with an edge that thins and softens on the lit side instead of one even dark rim."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the bell rim is a heavy double contour all the way round, and the tassels and rope carry bold dark outer lines of similar weight. B: the bell's left rim almost disappears (a lost edge), and line weight changes along the tube, as on the real glove's left side. B's fine rope strands and dark ray lines through the hoop keep this uncertain.",
+   "fix": "Thin the bell rim and let its lit side fade into the background. Keep the strongest edge only where the rope crosses the tube, and do not trace the tassels with an even dark line."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the rim and saucer are stacked heavy, even double lines, and the flower petals and leaves are traced with a bold contour. B: the cup contour varies from thin on the left to firmer on the handle, the flower lines are finer, and the saucer edge is lighter. B has tiny speckles at the tea rim and a hard horizon line, but both are small. Measured densities are nearly equal; outline darkness leans slightly towards A.",
+   "fix": "Draw the saucer rim as one soft rounded edge, not two parallel lines. Paint the flower as soft color shapes with no traced outline."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: every weave strip, handle twist and check line is the same crisp black, so there is no edge hierarchy, and subject density of 0.231 is just above the real ceiling. The cast shadow on the table also has a hard rim. B: the weave lines are softer and the basket's bottom edge fades into the table, though the apples show dotted stipple and the handle's inner edge is heavy.",
+   "fix": "Keep crisp edges only on the apples and cloth at the center. Soften the weave gaps towards the bottom and sides, merge some strips, and give the shadow a soft edge."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: thick black grooves between the staves, uneven and doubled on the right side, a heavy contour down the left, and many long grain strokes on the staves. A: the stave gaps are narrower and the rivets are small and precise, but its deck planks and hard oval shadow ring push background density of 0.049 just over the real limit, so A is not clean.",
+   "fix": "Make the gaps between staves thin, even seams. Remove the long grain strokes from the staves and keep the barrel's outer edge soft with no dark rim."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: subject density of 0.261 is well over the real ceiling of 0.179, with dense grille bars, trim lines and door seams, and the asphalt reads as noisy speckle on the edge map. B: fewer inner edges and a smooth road, but it is also over the range at 0.203, with doubled window frame lines and black-rimmed road dashes. Both are too busy; A is further from the real cards.",
+   "fix": "Reduce the grille to a few broad bars and drop the small trim lines. Paint the road as smooth flat tone with no grain, with soft seams on the doors."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: tree canopies and pine edges in the background are crisp and spiky, sharper and busier than the hero, while the tent body is nearly empty inside and has one long black stroke down its right flap and stays. A: background trees fall away softly with distance and the sharpest lines stay on the tent's opening and ties, though the grass is busy.",
+   "fix": "Blur the trees behind the tent into soft leaf masses with no crisp spiky edges. Give the tent the sharpest edges in the card, at the opening, and thin the long dark line down the flap."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the lower pot belly is a field of dense stipple dots on the edge map, the same kind of fine texture speckle as the generated camera grip, and a heavy dark line traces the handle and rim. A: the pot belly is smooth with few inner edges, the rim seam is thin and precise, and the small marks sit on the rope and wood grain.",
+   "fix": "Paint the pot belly as smooth dark metal with one soft highlight and no speckle or soot grain. Thin the handle and rim line to a clean narrow edge."
+  }
+ ],
+ "pattern": "Generated cards still show even line weight: a dark contour of near-constant width around the hero and doubled lines on rims and frames, with few lost edges. They also add fine edge noise that real cards lack, such as stipple dots on metal, leather or fruit, speckled ground, and long grain strokes. Edge hierarchy is flat or inverted, with crisp edges spread across the card and backgrounds sometimes sharper than the hero. Real cards vary line weight, let lit sides fade, and keep seams thin. This is weak on single pairs: only p04, p06 and p08 reached confidence 3."
+}

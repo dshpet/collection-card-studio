@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A's whistle runs from yellow-orange on the top face to hot red on the side and in the mouth slot. It sits on a pale lemon field with a glowing halo, so the hero is much louder than the washed background (0.189 vs 0.145). In the lens the two masses split into yellow-orange and fire-red. B's whistle holds one calmer orange that only darkens to a related rust, and the ring stays neutral grey against an even golden field. Hero and background are closer in strength (0.179 vs 0.172). Both cards are almost fully warm, so warm_share does not separate them.",
+   "fix": "Paint the whistle in a single orange plastic that darkens to a deeper burnt orange in shadow, not fire red. Make the background a solid golden yellow with no pale glow behind the whistle. Keep the metal ring plain cool grey."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B's background is electric cyan close to pure hue, the tassels are hot crimson, and the brass goes from lemon to deep burnt orange inside the bell. The lens has to add an extra olive-gold mass on the brass, and hue_families jumps to 4.24 against A's 2.13. A keeps a softer sea-green teal, and its brass stays one honey-orange mass with a muted red cord. The palette is smaller and quieter, as on the real lamp card.",
+   "fix": "Make the background a calmer soft teal, not neon cyan. Paint the brass as one warm honey gold without dark burnt-orange patches in the bell. Make the rope a slightly deeper, muted red."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B's porcelain is cream-pink, and its lens mass is warm ivory with rosy shadows. The steam, saucer and shadow on the table are all pulled into the same crimson, so the card reads as nearly one hue family (1.98, below the real range), with a dark red vignette. A's porcelain is a cool lilac-grey white that rests the eye against the red and orange. The rim and flower are a clear sky blue, and the set has a separate orange table plane. This matches the lessons, where real whites stay neutral and generated whites turn cream.",
+   "fix": "Paint the cup as clean cool white porcelain with pale grey-lilac shadows, not cream or pink. Keep the steam neutral white. Add a separate lighter orange tabletop so the card is not all one red."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A's apples are pure tomato red with yellow blush and the wicker is vivid orange. Together they push subject chroma to 0.166, above the real range, while the lilac background fades to 0.139, near the bottom of it. The hero shouts over a pale backdrop, and the lens shows the basket and apples merging into bright red. B has crimson apples, a stronger orchid background that balances the hero, and a duller brown-tan shadow on the floor. Its green leaves add a small natural accent.",
+   "fix": "Use deeper natural red apples and a browner, less orange wicker. Make the purple background richer and more solid so it matches the basket's strength."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B's staves are a uniform pushed orange, and the iron bands are warm grey with hardly any colour from the surroundings. The shadow side drops to a heavy red-brown, with the lowest shadow chroma of the pair (0.70). A's wood is a paler, more natural tan-orange with yellow lights. Its metal bands pick up cool blue from the sky, shown as teal patches in the lens, much like the blue reflections on the real camera. The cool metal gives the eye a neutral rest.",
+   "fix": "Paint the barrel in natural light tan-brown oak, not uniform orange. Let the steel bands reflect a little cool blue from the sky."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B's road is a warm mauve-grey that falls into a brown mass in the lens, and its windshield and sky are a harder blue. The yellow body is one flat, slightly lemony mass. A's asphalt stays a cool blue-grey in the lens, and its yellow body carries warm orange reflections, while the chrome picks up blue from the sky. That keeps a true neutral on the card, and in the lessons real neutrals stay cool while generated ones warm up.",
+   "fix": "Paint the road as cool neutral blue-grey asphalt with no brown or pink. Let the chrome bumper reflect the blue sky."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B's tent is pure yellow with orange trim, set on lime grass under bright leaves, so hero and background are equally loud (0.147 vs 0.140). Almost nothing is muted. The tent interior shifts to olive in the lens, and shadow chroma falls to 0.64, near the bottom of the real range. A's canvas is a duller natural ochre, and its forest is deep muted green and reddish bark. That gives the eye a dark, quiet rest and leaves the tent louder than the background (0.141 vs 0.112), with a brown tent interior.",
+   "fix": "Paint the tent in a dull ochre canvas instead of bright yellow, and drop the orange trim. Make the forest behind deep and muted dark green. Keep the shadows inside the tent warm brown, not olive."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B's pot is a warm tan-grey with a sooty speckle and a red-orange flush on its belly, and the highlight becomes a cream mass in the lens. The forest behind is a monotone olive-green, and the card has less of a cool anchor. A's iron is a dark cool neutral that turns green-grey in the lens, with a blue-teal gap of sky behind the trees. That sets the orange logs and fire against a cool counter-hue. A's shadow_chroma is low at 0.53, so this is a weak call.",
+   "fix": "Paint the pot as dark cool black iron with neutral grey highlights and no red flush on the belly. Add a blue-teal glimpse between the trees behind the logs."
+  }
+ ],
+ "pattern": "The lessons point to neutrals as the main giveaway. Generated cards warm their whites, greys and asphalt toward cream, tan or mauve, while real cards keep whites, metal and stone cool. Real shadows move to muted violet or blue-grey, and generated shadows stay warm brown or red. Generated cards also push local colours toward pure hue, such as orange leather and electric cyan or blue backgrounds, and they make hero and background equally loud with no muted area for the eye to rest. Warm_share and the other measured fields overlap too much to separate pairs alone, so most of these calls are low confidence."
+}

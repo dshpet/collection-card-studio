@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A sits almost entirely in the top grey level: the pale yellow field bleaches to near white around the whistle, with a soft white halo along its edges, and overall lightness (0.868) is well above the real range. The whistle is the only mid-value mass. B keeps a solid middle-light gold field with a darker orange pool around the whistle, an attached cast shadow under the barrel, and its key (0.792) is at the real ceiling.",
+   "fix": "Fill the background with a deep, saturated golden yellow, one even mid-light value. Remove the white glow around the whistle. Add a soft darker orange shadow under the whistle on the background."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B's bell has a heavy dark inner patch next to a crisp white rim and white crescent glints, so the hero has hard jumps; the corners also drop darker (vignette 0.081). A rolls off more softly: a small mid-dark inside the bell, gentle gold on the tube, and pale even rays closer to the real teal ray card. Key alone does not separate them: A is slightly over the real range at 0.809, so this is a weak call.",
+   "fix": "Soften the inside of the bell to a warm mid gold, with no near-black patch. Remove the thin white rim around the bell edge. Keep the corners as light as the centre of the background."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B is too dark overall (0.571) with a large deep-red field, darkened corners (0.087) and a gap between hero and background above the real range (0.252): the white cup pops off it, and a near-black cast shadow sits under the saucer. A keeps a lighter orange tabletop as a middle group beneath a darker wall, with the cup in light greys and a softer shadow, all inside the real ranges.",
+   "fix": "Lighten the red background and keep the corners the same value as the middle. Put a lighter orange tabletop under the cup. Give the cup a soft grey shaded side, and make the shadow under the saucer a medium red-brown, not black."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B has a lighter halo following the basket's outline against a darker purple field, so the corners read lighter-darker the wrong way (vignette -0.069, below the real range), and the table is a flat clipped white band with a hard dark cast shadow on the left. A groups simply: a big dark apple mass, a light cloth, a middle basket, with light falling off to one side of the wall and a floor that keeps some tone.",
+   "fix": "Remove the pale glow around the basket and give the wall a single soft gradient from one side. Tone the tabletop down from white to a warm light yellow. Soften the shadow into a low, gentle pool under the basket."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B lights the barrel evenly: every stave is a similar middle grey with small lighter patches, repeated bright rivets and hoop glints, so the body has no big shadow side (rms 0.138). A splits the barrel into one large dark left mass and a lit right mass, with the shadow carrying across the hoops, like the broad shadow shapes on real cards (rms 0.170).",
+   "fix": "Light the barrel strongly from the right: make the left half one big dark brown shadow shape and the right side clearly lit. Let the shadow run across the staves and metal bands. Dull the rivets so they do not sparkle."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A has many small value breaks: dark and bright pieces in the chrome grille, bumper and wheels, plus speckled grit across the road, and the sky brightens widely behind the roof. B holds simpler groups: a light body, one flat road value, and one solid dark shadow under the car. B's black windscreen outline is hard, and both vignettes run just over the real range, so this is a weak call.",
+   "fix": "Flatten the road to one smooth dark grey with no speckle. Simplify the grille, bumper and wheels into a few large soft light and dark shapes. Keep the background rays an even blue without a bright patch behind the car."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A frames the card with near-black foliage and trunks in the upper corners, with a bright gap behind the tent peak, giving a vignette of 0.182, far above the real maximum of 0.100. B keeps its trees and leaves in light-to-middle values with only a mild corner darkening (0.107); its darkest accent stays inside the tent opening.",
+   "fix": "Lighten the trees and leaves in the top corners to a fresh mid green and warm mid brown, with no near-black. Keep the darkest area only inside the tent opening."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B is too dark overall (0.537, below the real range) with a dark forest field and dark ground around a pot of similar value, so the pot's lower half sinks into the background; there is speckled black noise on the pot bottom, and corners run lighter than centre (-0.053). A has clear groups: a light ground, one dark pot with a single clean highlight, and the fire as the brightest accent.",
+   "fix": "Lighten the ground and the area behind the pot to a warm light tan and fresh green. Make the pot one smooth dark shape with one soft highlight and no speckles, so it stands clearly against the lighter ground."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through light placed around the hero rather than across it. A pale halo follows the silhouette, while keys run lighter or corner darkening falls outside the real range. Inside the hero, value breaks into many small patches, crisp rim lines and sparkle highlights, where real cards hold one large shadow-side mass and soft roll-off. Dark accents are also misplaced: near-black cast shadows or corner framing rather than darks grouped in the hero's own shadow. These calls are moderate at best, and p02 and p06 are weak."
+}

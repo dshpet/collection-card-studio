@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: soft side key, and the round drum turns into a deep, clean shadow on the lower right; no glow around it. The window hole falls to near black. B: a white halo surrounds the whole silhouette in the lens, and the body is lit almost evenly from the front. The shadow is only a thin red rim along the lower edge, and the holes fill with saturated red instead of dark. B's form_contrast (0.32) sits just under the real range and its light bias is much weaker (0.357 vs 0.594).",
+   "fix": "Remove the white glow around the whistle. Light it from one side so the round drum falls into a broad, darker shadow side, and make the inside of the holes dark rather than glowing red."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the thick tube has a steady light top and a darker underside, the bell interior falls to deep brown, and the fat tassels have soft rounded shading. B: the bell lip and upper tube carry sharper hot streaks, the loop has hard thin white lines, and the rope goes pale and evenly lit in the lens with little shadow side. B's shading_range (0.827) is at the top of the real range. The evidence is modest.",
+   "fix": "Replace the thin white streaks on the tube with one broad soft sheen, and give the rope and tassels a clear darker underside."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the cup's shade is cool grey-violet, the saucer has a defined bright rim, and a dark soft cast shadow falls to the left. The cup side turns fairly little, and A's form_contrast (0.385) is slightly under the real range. B: the shade is warm pink with no cool side, a heavy dark vignette fills the corners, a hot light pool sits lower right, and red bounce runs along the saucer underside. The numbers lean the other way, so this is a weak call based on the warm wash and vignette seen in the lesson fakes.",
+   "fix": "Remove the dark corners and the bright pool behind the cup. Make the shadow side of the cup a cool, slightly blue grey instead of warm pink."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the apples carry realistic streaked sheen with broad white spec patches, the rope handle has bright polished bands, and the cast shadow is a faint smear to the right with a reflective glow on the table. shading_range 0.812 is above the real range. B: stylised apples with a soft single highlight, a firm dark cast shadow to the left and solid contact under the basket, reading as one clear key light, and B stays within range.",
+   "fix": "Give the basket a firm, soft-edged cast shadow on one side and clear dark contact where it meets the table. Reduce the apples to one soft highlight each, and remove the shine on the table."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: light rolls smoothly across the staves from the bright right-centre into a broad darker left side, with cast shadow to the left and contact darkening at the base. B: each stave is close to one flat tone, lit frontally, with the shadow squeezed to a narrow strip at the right edge. The metal hoops are flat bands with little sheen. The three metrics are nearly equal, so this rests only on the form turn seen by eye.",
+   "fix": "Light the barrel from one side so the staves gradually darken around the curve into a wide shadow side. Give the metal hoops a soft streak of light that follows the curve."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: crisp directional modelling on hood and doors, soft single sheen on the roof, and a clean dark cast shadow under the car. B: glossy plastic body with broad hot patches on the hood, hard white hot spots on the oversized chrome bumper and grille, and a soft mushy lens with blurred panel forms. A's three metrics sit marginally above the real maxima, which works against this call, likely because the road and windows read very dark, so confidence stays low.",
+   "fix": "Reduce the chrome to soft grey metal with one small highlight. Replace the wet shine on the hood with a gentle broad sheen, and keep the panels clearly turned from light to shadow."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the opening falls to pure black and the left slope is a flat dull plane. The tent base meets the grass with almost no cast shadow, and shading_range 0.882 is above the real maximum. B: the interior stays warm brown with reflected light, the right slope shades softly, and the stakes and tent have small cast shadows on the grass. Range is within real limits.",
+   "fix": "Lighten the inside of the tent to warm dark brown with light bouncing off the ground, and add a soft cast shadow on the grass along the base of the tent."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the pot is a smooth round form with broad soft sheen on the upper side, firelight bounces warmly onto the belly, and the logs and stones have clear rounded light and shadow with a cast shadow on the ground. B: the pot surface is noisy speckled soot, with an airbrushed red glow patch on its base. The flame sits far below and does not connect with that glow, there is no real cast shadow from the rig, and the lens is muddy and yellow over everything. B's shading_range (0.6) sits at the real minimum.",
+   "fix": "Make the pot smooth with one broad soft sheen. Let warm firelight fade gently up the belly from the flame directly beneath it, and add soft shadows under the pot and posts on the ground."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through light that wraps the form from the front. The shadow side is squeezed to a thin edge instead of a broad, cool, deep side. Shading stays warm and clay-like, often with a glow halo or vignette around the hero, hot sharp streaks on glossy parts, saturated glowing cavities, and soft or disconnected contact and bounce. Real cards commit to one key direction, with smooth turns into a cool shadow side."
+}

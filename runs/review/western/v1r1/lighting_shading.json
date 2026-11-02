@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A umbrella: top panels are bright, and the under-canopy drops into a deep shadow with a clear core under the scalloped edge, so one overhead light reads strongly (bias 0.716). B star: lit almost head-on. The star face is one pale even value, shade appears only as thin bevels along the points, and there is no shadow side or cast shadow on the background (bias 0.174, form_contrast 0.304, below the real range).",
+   "fix": "Light the star from the upper left. Let the right and lower arms fall into a darker, cooler shade, and add a soft shadow on the background below and to the right of the star."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A boot: a soft broad sheen on the toe and shaft, darker heel and sole, a light rim on the collar. B cap: the board top is lit, the skull under it falls into a dark shadow, and the board has a crisp lit bevel. Both have one believable light from above and gentle turns, like the real soccer ball and trophy. Nothing in the shading separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A jacket: soft low-contrast modeling, with dark creases under the sash and pockets and a light upper right side. B hat: the crown carries a small sheen spot, and a thin bright line runs around almost the whole brim edge, on the lit and the shaded sides alike. That rim does not follow one light, which matches the rim lines on the generated glove in lessons 8 and 9. The call is weak, since the brim's underside shadow is believable.",
+   "fix": "Remove the bright outline around the brim. Keep light only on the upper edge facing the light, and let the far brim edge sink into soft shadow."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A booth: a strong side split. The right face is bright, the left face is dark and cool, with a clear corner between them and a long soft cast shadow on the grass to the left, like the shadow side on the real camera and lighthouse. B signpost: soft flat light from the front. The arrows are pale with only thin dark undersides, the post barely turns, and the board casts no clear shadow on the post (form_contrast 0.304, below the real range).",
+   "fix": "Light the signpost from one side. Make one side of the post clearly darker, and have each arrow board drop a soft shadow onto the post and onto the board below it."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A cactus: a dark, hard-edged cast shadow stretches across the sand, and streaky sheen runs along each rib, so it reads as a harsh render (form_contrast 0.36, below the real range). The real cards use soft, short ground shadows. B racket: a soft contact shadow under the frame and ball, a gentle turn on the ball, and cool shade like the real cards.",
+   "fix": "Soften and shorten the cactus shadow, with a blurred edge and a darker pool at the base only. Replace the rib streaks with one broad soft sheen on the lit side of the trunk."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A suitcase: the front face is one flat even tone with almost no falloff, lit from the front. Only the corners and a soft floor shadow give it depth (shading_range 0.655, just below the real range). B barrel: a smooth cylinder turn from a lit right side to a darker left side, with a defined cast shadow on the floor to the left.",
+   "fix": "Light the suitcase from the upper left. Let the front face grade from bright at the top left to darker at the lower right, with a dark side panel and a soft shadow under the case."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A teapot: a clear side light, a long sheen down the body, and a smooth turn to shade, though the sheen and hard shadow run photographic. B sneakers: the uppers are evenly lit with cool shade all over, so neither shoe shows a real light side (bias 0.019, far below the real range). Only the cast shadow to the left gives any direction. Both sit apart from the real cards, so the call is weak.",
+   "fix": "Light the shoes from the upper right. Make the near side of each shoe bright, let the inner and far sides fall into deeper blue shade, and keep a soft shadow under the soles."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A locker: a directional wall shadow on the left, a dark interior, and a bright bevel on the door and body edges, in line with the real wall clock (bias 0.2 is only just below the real range). B poster: the paper stays one pale value from top to bottom. Crinkles give small bumps, but there is no light falloff across the sheet (shading_range 0.314, far below the real range; bias 0.118). Being a flat object explains part of that low range.",
+   "fix": "Let light fall across the poster from the upper right: brighter at that corner, gradually darker toward the lower left, with deeper shade inside the folds and curled corners."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A saloon: warm even light from the front. The facade, porch posts and side wall sit close in tone, the shade is the same warm brown throughout, and the only real depth is under the porch roof (bias 0.151, below the real range). B dock: a clear warm light on the post tops and planks, dark pilings, and a strong drop to shade on the post sides and under the deck (bias 0.576).",
+   "fix": "Light the saloon from the upper left. Keep the front bright, put the right side wall in clearly darker cool shade, and let the balcony and roof drop stronger shadows on the wall below them."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A wagon: light from the upper right, a broad soft shadow on the ground under the wagon, gentle canvas folds (bias 0.687, slightly above the real range). B boat: a lit rail against a darker hull, and clear shade inside the boat and under the dock. Each has one coherent light and soft shadows like the real taxi. I see no shading reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A windmill: even light across the tower, blades and tank. The blades are nearly one pale tone, the tower legs barely split into light and dark faces, and the ground shadows are tiny (bias 0.142, below the real range). B door: strong directional light, with leaf shadows falling across the door, shade under the frame and molded panels with lit edges.",
+   "fix": "Use a low side sun on the windmill. Give each tower leg a bright face and a dark face, tilt the blades through light and shade, and lay a long soft shadow across the ground."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A bumper car: broad soft sheen across the hood, a darker body side, a dark contact shadow under the bumper and a reflection in the floor, so it sits under one light (form_contrast 0.708, just above the real range). B flippers: a bright line traces every edge of the blades and foot pockets regardless of which way each edge faces, the faces stay pale, and there is no cast shadow on the background (form_contrast 0.762, above the real range).",
+   "fix": "Remove the glowing outline from the flippers. Light them from the upper left, keep shine only on the edges facing the light, darken the far sides and add a soft shadow on the background beneath them."
+  }
+ ],
+ "pattern": "Generated cards are lit from the front. Real cards put the hero under one side or top light, with a clear, often cool, shadow side and a soft grounded shadow. Generated faces stay even in tone, shade collapses into thin dark bevels and warm brown creases, and a thin bright rim traces edges whichever way they face. Where a generated card does use a strong cast shadow, it tends to be harder and longer than the soft shadows on real cards."
+}

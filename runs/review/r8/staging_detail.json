@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a white-yellow halo hugs the whistle and bleaches the field to pale lemon, and the flame motifs sit in a stiff grid. The halo is the same glow the generated glove lessons show. B: saturated yellow field with a soft darker corner falloff, staggered flame motifs in one tone-on-tone orange, like the pi pattern on the real calculator card, and no halo.",
+   "fix": "Remove the white glow around the whistle. Make the background a deep saturated golden yellow, with flat flame shapes only slightly darker than the field, in staggered rows."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: neon cyan field that blows out to near white behind the bugle, with the rays dissolving into the glow, as in the generated glove lessons. A: flatter turquoise sunburst with clean-edged rays and an even value range, closer to the real street-lamp card, though its rays are pale. The busier measured background on A does not contradict this, because it comes from those crisp rays.",
+   "fix": "Turn the glow down. Use a flat turquoise sunburst with clean, even rays of two close tones and no bright hot spot behind the bugle."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: no ledge, a seamless dusty red backdrop with a heavy dark vignette in the corners, and a tall steam plume nearly as tall as the cup. A: a clear category 2 stage with a saturated red wall, a plain orange ledge and a clean horizon, as on the real folding-chair and flower-bed cards, with a smaller steam wisp. A's low measured detail only reflects that plain field.",
+   "fix": "Place the cup on a plain orange ledge with a straight horizon against a saturated red wall. Remove the dark corners and make the steam a small thin wisp."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: flat pale-yellow ledge with a hard-edged dark shadow thrown to the left that reads as a separate shape, and leaf sprigs added on several apples. Detail is just under the real range. A: warm ledge with a soft contact shadow and faint reflection, and plain apples with no added leaves, though its lilac wall has an uneven pale patch. The evidence is thin.",
+   "fix": "Soften the shadow into a short pool under the basket, give the ledge a warm gradient, and remove the extra leaves from the apples."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: a railing with repeated posts and long deck planks with wood grain run all around the barrel, and edge density of 0.052 is above the real ceiling of 0.046. A: a quieter deck with one solid plank bulwark and fewer separate shapes, at 0.036, though its sky is a bright cyan.",
+   "fix": "Replace the post railing with one low solid wooden wall, and draw fewer, wider deck planks with almost no grain."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both cards use the same staging of a sunburst sky over a road with white dashes, and edge density is identical. A has speckled asphalt and a level horizon. B has flat grey road, a tilted plane, larger stripes and a thin curb line at the right edge. Neither departs from the real cards in a clear direction.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a dense forest of many overlapping trunks, pines and leaf clusters plus misty layers fills the whole top half, and scattered grass tufts run across the foreground. The result is busy at 0.07 detail-related edge density. B: two framing trees, a few large soft pines and bushes, and a clear open lawn, closer to the few quiet shapes of the real lion-statue park, despite a few added yellow flowers and sun rays.",
+   "fix": "Reduce the forest to two or three large soft trees with simple leaf masses and a pale open sky behind the tent. Keep the grass plain, with only a few tufts."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a wall of dark pines with tight repeated needle detail fills the frame behind the pot. Grass blades, flat stones and spark flecks add more small marks, and the fire sits low and is cut off by the bottom edge, detached from the pot. Detail is 0.0234 against A's 0.0171. A: a few large quiet pines, a pale teal sky gap and a calm dirt clearing, with the fire ring tucked under the pot and whole inside the frame.",
+   "fix": "Replace the dense pines with a few large simple tree shapes, faded and soft, and open up the sky. Clear the small stones and sparks, and place the whole campfire directly under the pot inside a ring of a few big stones."
+  }
+ ],
+ "pattern": "Generated cards overwork the space around the hero. They add a bright halo or blown-out glow behind the object, push backdrops to neon or into heavy vignettes, and fill environments with repeated small marks such as needle-dense trees, posts, planks, grass tufts, pebbles and sparks. They also invent extras such as rock islands, rope, life rings, leaf sprigs, flowers and oversized steam. Real cards keep the backdrop flat, tone-on-tone or built from a few large quiet shapes, with no props the object does not need. On backdrop-only cards like p06 this vector separates little."
+}

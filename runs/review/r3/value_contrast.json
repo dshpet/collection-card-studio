@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the background is blown out into one near-white field (lightness 0.868, far above the real ceiling of 0.793). A pale halo hugs the whistle, and the campfire icons break into scraps in the lens. B: the background holds one steady light-middle value, the whistle sits a step below it, and the darkest accent is small, inside the top slot. B's key is only just above the real range.",
+   "fix": "Lower the background to a rich, saturated mid-yellow with no white glow around the whistle. Keep the pattern icons one even step darker than the background."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the background is pale (lightness 0.809), and the gold bell and tube sit in the same middle grey as the rays, so the hero melts into them; only the red rope reads dark. Rays pinch to a bright point visible through the coil. A: the bell has a clear white rim and streak plus a darker inner bell, and the deeper corners (vignette 0.11) frame the hero. Both keys are above the real range, so this is a weak call.",
+   "fix": "Darken and saturate the outer rays so the corners fall off. Give the gold horn a darker core shadow and one clean bright streak so it stands clear of the background."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a dark, heavily vignetted red background (lightness 0.571 below range, gap 0.252 above range, vignette 0.087 just above) sets off a clipped white cup with a black pool under the saucer. It is a hard spotlight-on-dark design. B: the key is in range with a broad light tabletop against a darker wall, the cup is gentler at middle-light, and the darks stay small.",
+   "fix": "Brighten the red background evenly and remove the dark corners. Add a lighter tabletop plane, soften the shadow under the saucer so it is not black, and let the cup's shaded side stay light grey instead of pure white against dark."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the apples form one heavy dark mass with hard white hot spots, a lit patch on the wall ends in a stepped edge on the right, and the floor glow is uneven. A: the apples have gentler values, the wall and table are two clean flat groups, and the darks are small. A's table is nearly clipped and its vignette (-0.062) is below the real range, so the numbers do not favour this call; it rests on local contrast.",
+   "fix": "Light the wall evenly with no bright patch at the upper left. Soften the apple highlights into wide gentle gradients and lift their shaded sides out of near-black."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a hard light-dark split down the barrel, with near-black staves on the left against a bright sun patch on the right. The deck breaks into white and dark streaks, and rms contrast is 0.17 against A's 0.126. A: the barrel stays in middle values with soft modelling, the deck is a calm light group, and the only darks are the contact shadow and the band rivets.",
+   "fix": "Light the barrel softly from the front so the staves stay warm mid-tones with a gentle roll-off. Keep the deck as one calm light plane without streaks of glare."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the car body sits in nearly the same light grey as the sky glow behind it, with a ragged pale halo, so value separates it poorly. Value breaks into tiny grille, chrome and road-grain flecks. B: a white body against mid-grey with a clear black contact shadow and windshield frame gives simple large groups, though the black is heavy. Vignette is identical (0.096) and slightly over range on both, so it does not decide.",
+   "fix": "Darken the sky behind the car by one step and remove the pale halo. Simplify the grille, chrome and asphalt into a few broad light and dark shapes."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: near-black foliage masses fill both top corners (vignette 0.182, well past the real ceiling of 0.100) with a dark tree ring. The tent's bright peak and pale shaft of light sit against them, producing a heavy dark frame. A: mid-value trees, a light sky and a sunlit meadow, with the darkest accent confined to the tent opening. Its vignette of 0.11 is only slightly over range.",
+   "fix": "Lift the tree canopies in the corners to sunny mid-greens with no black. Keep the only deep dark inside the tent opening."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the key is the lowest in the set (0.537, below the real range). Dark forest fills the upper field in a flat low band, while the pot is a blotchy mid-grey with speckled black patches at lower right, so it does not read as one dark shape. A: the pot is one solid dark mass with a single highlight, framed by lighter logs, rocks and ground, and the fire is the brightest accent.",
+   "fix": "Brighten the forest and ground. Paint the pot as one solid dark shape with a single soft highlight and no speckled black soot, with light from the fire only as a soft warm edge."
+  }
+ ],
+ "pattern": "Generated cards still push value to extremes and break the big groups. The tells are a higher overall key, with heroes and backgrounds running to clipped white; halo glows hugging the hero; hard jumps inside the hero between near-black and glossy white; and heavy dark corners or black contact pools. Value is also scattered into small flecks of texture and streaky wood, not held in a few broad light, middle and dark masses. Real cards keep saturated mid-value backgrounds, gentle roll-off inside the hero, and a small, purposeful darkest accent. This is clearer on p01, p03, p05, p07 and p08; p02, p04 and p06 are weak calls."
+}

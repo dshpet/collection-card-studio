@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the whistle sits mid-card with a pale glow halo around it and the widest margin of the pair (0.126, above the real range). The ring stays well inside the right edge. B: the whistle runs on a longer diagonal from lower left to the ring near the top-right corner, sits on a ground shadow with no halo, and its 0.081 margin is within the real range.",
+   "fix": "Make the whistle larger and run it corner to corner, with the ring close to the top-right edge. Remove the glow behind it and ground it with a soft cast shadow."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the bugle is thin and spread on a diagonal, with bare background around the tube, and its 0.171 area is below the real range. At thumbnail size the small tassels hanging at bottom centre make a weak read. B: the bell is large near the top-left edge, the tube and loop are thick, and the tassels are big, so it reads instantly at thumbnail, though its 0.905 width just exceeds the real range.",
+   "fix": "Draw the bugle much bigger, with a large bell and thicker tube, so it fills most of the card and nearly reaches the edges. Make the red tassels larger."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Both show a cup and saucer in the lower-middle of the card, with steam above and the same short subject height (about 0.48). A has a hard table line and sits slightly higher. B sits lower and to the right, with taller steam reaching the top edge. Neither placement separates them. Both margins sit at or beyond the top of the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the basket is big, with large apples pressing out to the handle and the right side, and its 0.418 area is near the top of the real range. The apples are the first read at thumbnail. B: the basket is smaller and centred, with small apples, more empty wall and table around it, and a 0.115 margin above the real range.",
+   "fix": "Enlarge the basket until it fills most of the card, with its rim close to the left and right edges. Make the apples big and bulging, and cut the empty table in front."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the barrel is pushed close to the viewer, its hoops take up the card, the rim is barely open, and its margin is 0.094. B: the barrel stands whole and dead centre, with even empty deck and sky around it and a symmetrical rail either side, and its 0.117 margin is above the real range.",
+   "fix": "Move the barrel closer to the camera so it fills more of the card. Shift it slightly off-centre and let the deck rail sit asymmetrically behind it."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the taxi is taller in the card (0.61 height) and fills it, with the grille and roof sign as the clear first read and thin road dashes staying secondary. B: the taxi is lower and slightly smaller, and a bright thick white road stripe cuts out through the bottom edge and competes at thumbnail. The difference is slight because the width and margin measurements are almost equal.",
+   "fix": "Remove the thick white stripe in the foreground or make it thin and dim. Make the taxi taller in the frame, with the roof sign close to the top."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the tent is offset left, with its guy rope touching the left edge (margin 0), and the forest stays secondary in a lopsided layout. B: the tent is centred and fully contained, with trees framing both top corners and scattered yellow flowers in the foreground adding small accents around it.",
+   "fix": "Push the tent left and closer to the camera so its corner reaches the card edge. Remove the foreground flowers and the matching trees framing both top corners."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a symmetrical full diorama with frame, pot, fire and a complete stone ring all fitted in, and posts spanning the card to its edges (width 0.998, margin 0). The pot is one part of a busy assembly, and the 0.473 area is above the real range. B: the pot is larger and dominates the first read, and the campfire is cropped by the bottom edge, like the real cropped lighthouse base.",
+   "fix": "Enlarge the pot so it dominates the card. Drop the stone ring and let the fire logs crop at the bottom edge, with the wooden frame kept thinner and secondary."
+  }
+ ],
+ "pattern": "Generated cards tend to fit the whole object neatly inside the card. It sits centred and level, with even margins that often exceed the real range, and with symmetrical framing, added props or a glow halo around it. Real cards are bolder: the hero is pushed close, tilted, offset, or cropped by an edge, so the object reads first at thumbnail size. This is a tendency only: margins and fill overlap heavily, as on p03, p06 and p08."
+}

@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the whistle runs diagonally from lower left to upper right and fills more of the card, though a pale halo behind it washes out the campfire pattern. B: the same diagonal pose, but the whistle is smaller and sits slightly low, with its ring near the upper right. Wider margins let the campfire pattern take more of the thumbnail. B's area (0.193) and height (0.542) fall below the real range, and A's height stays inside it. Both margins exceed the real range, and A's halo is also a generated habit, so this is a weak call.",
+   "fix": "Draw the whistle about 20% larger so it nearly reaches the card edges, with the campfire pattern staying faint and mostly hidden behind it."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the bugle is thin and tilted, with a slim tube and a smaller bell at upper left. Lots of cyan shows through, and at thumbnail size it reads lighter (area 0.171, below the real range). B: the bell is much bigger and sits close to the top-left corner, with heavy tassels below, so it has more mass and an immediate read (area 0.208, inside the range). Box width and margin are almost equal, so only the visual mass separates them.",
+   "fix": "Make the bell and the tube thicker and chunkier so the bugle fills more of the card, and move the bell closer to the top-left corner."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the cup and saucer are small and sit in the middle of the card, with wide empty bands above and below. A hard horizon cuts straight across behind the cup (height 0.404, margin 0.195, both well outside real cards). B: the cup and saucer are much larger and sit low and wide, with the steam rising to near the top, so the hero column fills the card (margin 0.108, at the edge of the real range, though its height of 0.481 is still short).",
+   "fix": "Draw the teacup and saucer much larger, spanning nearly the full card width, with the steam reaching close to the top edge and very little empty table around it."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the basket fills the card, the handle almost reaches the top, and the big apples read instantly (area 0.418, margin 0.091). B: the basket is much smaller and floats in the centre, with broad empty bands of purple wall above and cream table around it, plus a long cast shadow to the left (area 0.231, margin 0.183). It is the same small, contained placement seen in the generated lesson cards.",
+   "fix": "Draw the basket about 1.5 times larger, with the handle near the top edge and the base near the bottom edge, and much less empty wall and table around it."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the barrel is small and narrow in the centre, with a lot of sky above and open deck below and the rail running behind it (width 0.465, margin 0.162, far outside real cards). B: the barrel is large and close, nearly filling the height and pressing toward the top, with the rail mostly hidden behind it (area 0.424, margin 0.094, close to or within the real range).",
+   "fix": "Draw the barrel much larger and closer to the viewer, filling most of the card height and about two-thirds of its width, with only a little deck and sky visible around it."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the taxi fills the width with its front at lower left. The bumper sits close to the left edge and the road lines run diagonally off the card, so the framing has energy (margin 0.035, width 0.926). B: the taxi is slightly smaller and tidier, sitting in the centre on an evenly open road, with the rays radiating straight behind the roof sign and short dashes placed separately in the foreground. Both are inside the real range, so the only signal is B's more contained, centred placement.",
+   "fix": "Move the taxi slightly closer so its bumper nearly touches the card edge, and let the lane markings run diagonally off the edge of the card."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the tent sits left of centre with its corner touching the left edge (margin 0.0), and the peak is the clear single point. The trees stay behind it, though the background is busy. B: the tent is fully contained and neatly centred, with symmetrical trees framing both sides, leaf clusters in the bottom corners, and sunbeams and yellow flowers added. These extras pull the eye away from the hero. Contained staging with added props matches the generated lesson cards.",
+   "fix": "Remove the flowers and foreground leaves, and enlarge the tent and shift it so one corner touches the card edge, against a plain, soft background of trees."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the wide pot dominates the middle of the card and the soup is the first read. The frame reaches the top and the logs are cropped by the bottom edge, like the real lighthouse base. B: the same scene is shown whole and tidy, with a smaller round pot, a complete ring of stones, symmetrical A-frame posts, and open dirt around it. The fire and stones take attention from the pot, and the card reads as a small, complete diorama. The measured area and margins are similar, so this rests on crop and pot size.",
+   "fix": "Draw the pot about 30% larger as the main shape in the middle of the card, and crop the firewood with the bottom edge. Leave out the full ring of stones."
+  }
+ ],
+ "pattern": "Generated cards tend to show the whole object as a small, tidy, centred diorama. It sits fully inside the card with even, wide margins, often beyond the real maximum, and has open background on all sides. Real cards push the hero larger and closer to the edges, off-centre or cropped, with fewer props competing. Added extras such as islands, flowers, framing trees, stone rings and glow halos are also a sign, along with hard horizon bands behind a small hero."
+}

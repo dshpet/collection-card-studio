@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the whistle body is a hot orange running to pure red-orange in the mouth slot and the side disc, at the top of the real chroma range (0.189). The background is washed to pale lemon with a glowing halo around the object, so the card reads as one yellow-to-red ramp. B: the orange is slightly dustier and the shadow side stays a related burnt orange. The background is a solid, full yellow like the calculator card, and the steel ring stays neutral grey.",
+   "fix": "Make the whistle a slightly dusty plastic orange, with a deeper burnt orange in the shadow side instead of bright red. Remove the pale glow behind it and make the background an even, rich golden yellow. Keep the ring plain neutral grey."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the background goes from electric pure cyan at the centre to strong blue at the corners. The brass is pushed to orange with a deep red-brown throat in the bell, and the red tassels are at full strength, so everything is equally loud. This matches the over-bright cyan glow of the generated glove lessons. A: the background is a single calmer teal, like the lantern card, and the brass is a softer honey gold. Only one red accent stands out.",
+   "fix": "Use one even teal for the background rays, with no bright cyan glow at the centre. Make the brass a soft honey gold with no orange-red in the bell. Keep the red cord as the single strong accent."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the white porcelain is tinted cream-pink, and the lens turns the cup and saucer warm, like the cream computers in the generated lessons. The background is one dull red with a dark maroon vignette and a red shadow, so nothing cool rests the eye beyond the small flower and rim. B: the cup and saucer stay a cool lilac-grey neutral against red, as the real computer stays cool grey against orange. A separate orange floor adds a second clean background mass.",
+   "fix": "Make the cup a clean cool white with soft bluish-grey shading, not cream or pink. Keep the background a clear rich red, with an orange tabletop and no dark brown-red vignette."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the apples are pure fire-engine red and the wicker is pushed to red-orange in the lens, so subject chroma exceeds the real range (0.166). Meanwhile the lilac wall is washed pale, at the low edge of real background chroma, and the loudness has moved entirely onto the hero. B: the apples are a deeper crimson, and the purple wall is rich like the real flowerbed card. The wicker and the green leaves and cloth give more varied local colors.",
+   "fix": "Make the apples a natural deep crimson with some yellow-green near the stems, and the basket a tan-brown straw color rather than orange-red. Make the wall a rich, solid purple instead of pale lilac."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the staves are one even saturated orange and the deck is orange too, with higher subject chroma and less of the wood tan and honey variation. Shadow color also retains less chroma, turning brown-grey on the hoops and floor. A: the staves shift between tan, honey and brown with cooler glints on the metal hoops, a more natural local wood color, though its very bright cyan sky also leans generated. The signal is weak and mixed.",
+   "fix": "Make the barrel a natural tan-brown wood with lighter honey and darker brown boards, not one flat orange. Keep the deck a paler sandy wood and give the iron hoops a cool steel-grey color."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the road is a warm mauve-brown, shown as a flat brown mass in the lens, with near-black plum under the car. The warmed neutral is the same drift as the cream computers in the generated lessons. The cobalt-to-cyan sky rays are also high in contrast. A: the asphalt stays a cooler blue-grey neutral, and its shadows pick up related blue. The sky is a single lighter blue family, though both cards have low shadow chroma.",
+   "fix": "Paint the road a cool neutral blue-grey asphalt, with soft blue-grey shadow under the car instead of brown or black. Keep the sky rays in one mid-blue range."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the tent is pushed to bright yellow with pure orange flaps and base trim, and subject chroma is above the real range (0.155). The lit lime grass and leaves and the yellow flowers are also bright, so hero and background compete and little muted color rests the eye. B: the canvas is a natural ochre mustard with a dull tan shaded side. The forest uses deeper, muted greens and browns, and background chroma is lower.",
+   "fix": "Make the tent a slightly dusty ochre-yellow canvas with a dull tan shaded side and no bright orange trim. Use deeper, calmer forest greens and remove the lime-bright highlights from the grass and leaves."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the pot metal is warmed to brownish grey with a pure red-orange glow on its belly, and the rim and handle read warm tan in the lens. The stew is flat hot orange, and the rest sits in yellow-green and red-brown. Neutrals are being pulled warm, as in the generated lessons. B: the pot and stones keep a cool blue-grey to teal neutral, and the teal sky gives a cool rest against the dirt and logs. Its shadow chroma is low (0.574), so this is weak evidence.",
+   "fix": "Make the pot dark neutral iron with cool blue-grey shading and only a small warm firelight touch at the very bottom. Use a clear cool-toned grey for the handle and rim, and let some cool blue-green show in the distant trees."
+  }
+ ],
+ "pattern": "Generated cards pull neutrals warm: whites, greys and metals drift toward cream, tan or brown where real cards keep them cool grey or lilac. They also push local colors to pure hue, such as orange leather, bright red or pale-glow cyan, with a soft halo behind the hero, so hero and background are equally loud. Real cards keep muted local colors with cooler, related shadows."
+}

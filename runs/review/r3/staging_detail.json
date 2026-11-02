@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A puts a pale, almost white glow behind the whistle, which washes out the yellow field and leaves the flame icons in an even, stiff grid that stands out from the pale ground. B keeps a saturated golden field with darker tone-on-tone flames in a staggered layout and no halo, like the pi pattern on the real calculator card. The bright halo matches the generated glove and camera lessons.",
+   "fix": "Remove the white glow behind the whistle. Use a saturated golden yellow background, with the campfire icons only slightly darker than the background and staggered row to row."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both are category 1 sunburst fields with no props. A has saturated cyan rays that fall off to deeper corners, like the real glove card. B's rays are pale and milky with hard edges, and they meet in a sharp point visible inside the bugle's loop, so the backdrop pulls the eye through the hero. The evidence is thin, and B's detail is higher but still inside the real range.",
+   "fix": "Use deep saturated turquoise rays with low contrast between them, and hide the point where they meet behind the bugle."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A sits on a seamless dark red field with a heavy vignette at the corners and no clear surface, with a tall steam plume filling the top third. B has a plain ledge: a flat coral surface under a red wall with a clean horizon, close to the real flowerbed card, and its steam is small. B's detail of 0.0055 is below the real range, which is why confidence stays low.",
+   "fix": "Remove the dark corner vignette. Stand the cup on a plain flat ledge in a bright colour with a simple horizon line, and keep the steam small and faint."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both are category 2 ledges. A has a flat cream ledge under an even purple wall with one soft cast shadow, the same simple staging as the real flowerbed card. B bleaches the wall to pale lilac with a glowing patch and darker edges, and adds a glossy yellow reflection on the ledge under the basket, so the plain ledge reads as a polished surface.",
+   "fix": "Make the ledge matte and plain with no reflection under the basket. Use an even saturated purple wall with no glowing patch, and one soft shadow on the ground."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both are category 3 ship decks. A has a deep blue sky, a low side-on railing and level planks, a few simple horizontal bands like the real desk card, though its edge density of 0.049 is just above the real range. B uses a bright cyan sky like the generated lighthouse lessons, and a raking deck with a plank wall that turns a corner behind the barrel, which adds depth the backdrop does not need.",
+   "fix": "Use a deep blue sky and a level deck seen straight on, with a low simple railing behind the barrel and no corner in the ship wall."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A's road has fine speckled asphalt grain across the whole lower third, three separate dashes, and a pale washed-out glow in the rays behind the roof. B's road is a smooth quiet grey-violet shape with a few bold dashes, under deep blue rays, closer to the few large quiet shapes on the real cards. Measured detail is nearly equal, so this rests on the kind of detail rather than the amount.",
+   "fix": "Paint the road as a smooth flat grey shape with no grain, keep only two or three bold white dashes, and use deep blue rays with no pale glow behind the car."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both are category 4 forest scenes. A has an open glade with one large tree on each side, soft distant pines and clear sky above the tent, which gives it the breathing room of the real lion card, though its small yellow flowers are added decoration. B fills the frame with dark trunks, leaf clusters, several sharp pines, light shafts and ferns, leaving only a small patch of sky, so the crowded forest competes with the tent. B also has the higher numbers, at 0.0288 and 0.07.",
+   "fix": "Thin the forest to one large tree at each side and a few soft distant pines. Show open blue sky above the tent and keep the grass plain, with no ferns or light shafts."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B has the busier background, at 0.0234 and 0.051 against A's 0.0173 and 0.035. Dense bright pines and grass run edge to edge, the ground is scattered with repeated round disc stones, and sparks rise from the fire. A sets soft dark teal pines behind plain grass and bare dirt, with only a few small pebbles, so the pot stays clear against a quieter backdrop.",
+   "fix": "Darken and soften the pines into a few large simple shapes behind the pot. Keep the ground as bare dirt with plain grass and remove the round stones and sparks."
+  }
+ ],
+ "pattern": "Generated cards give themselves away by a backdrop that works harder than the real ones. They add a pale halo or glow behind the hero, push skies and fields to brighter cyan or bleached tints, and put gloss on surfaces that should be plain. Their environments fill with extra small elements such as trunks, pines, ferns, light shafts, repeated ground stones and sparks, where real cards use a few large quiet shapes with open space around the hero. The signal is weak in the category 1 and 2 pairs, where the measured numbers mostly overlap the real range, so those calls rest on glow and surface treatment rather than quantity."
+}

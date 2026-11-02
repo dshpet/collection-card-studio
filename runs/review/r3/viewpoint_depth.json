@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both whistles share almost the same three-quarter view, so the evidence is thin. On A the key ring sits foreshortened at the top right, turned with the body, and the mouth end is a modest face. On B the ring swings round to face the viewer as an open circle while the body stays turned away, so it breaks from the whistle's view. B's flat mouth face is also pushed forward and looks larger against the tapering top face.",
+   "fix": "Turn the metal ring with the whistle so it appears as a narrow foreshortened oval on the same angle as the body. Make the mouth end smaller, with only a gentle size change along the barrel."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "On A the bell opening is shown wide and fills the top-left corner almost to the edge, but the loop and tube below read nearly side-on in one flat plane, so the bell and loop look seen from different angles. On B the bell, the doubled loop with its visible depth, and the tassels all tilt along one receding axis. Both are heavily foreshortened and both have planar_share below the real range, so this is a weak call.",
+   "fix": "Pull the bugle back from the camera so the bell does not crowd the corner. Turn the loop along with the bell so the back of the loop shows behind the front, all at one angle."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "On A the cup is close and large, with no readable ground line: table and wall melt into a soft gradient around the middle of the card, and the shadow runs off the left edge, so the saucer's plane is only implied. On B the cup is smaller and stands on a clean flat table with a straight horizon behind it, and the rim and saucer ovals open slightly as they go down, which is mild perspective.",
+   "fix": "Set the cup further from the camera on a flat table with one clear straight edge between table and wall. Keep a low, gentle view with shallow ovals for the rim and saucer."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "On A the basket is seen from near eye level, sits small on the table with a straight horizon, and the rim and base are shallow matching ovals. On B the camera has moved in close: the apples balloon toward the viewer and the base bows in a deep curve under a thin rim. The handle leans off axis and lands on the right rim, so handle and body do not share one view. This matches the closer, stronger perspective of the generated lessons.",
+   "fix": "Move the camera back and lower it to near eye level. Show the basket straight-on with a shallow oval rim and base, an upright centered handle, and apples at normal size."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "On A the barrel faces straight on, with rim and base ovals of similar depth, straight horizontal deck planks and a flat-on rail, so there is one calm, mild view. On B the top rim is a thin sliver but the base curves deeply, while the deck planks run diagonally and the rails converge toward a corner behind the barrel. The barrel looks wide-angle and the deck is seen from a higher, turned view, so they do not share one ground plane.",
+   "fix": "Keep the camera level and straight-on to the deck. Run the planks and rail horizontally, and make the rim and base ovals similarly shallow so the barrel stands squarely on the deck."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "On A the road edge is nearly level and the dashes lie in a gentle receding line, so the taxi stands on a stable ground plane, although its nose is somewhat wide-angle. On B the road horizon tilts steeply from low left to high right and the lane dashes fan out toward the bottom edge, which reads as a tipped, forced camera. The car seems to slide along a slanted ground, and the normal lens shows the background turning pink.",
+   "fix": "Level the horizon. Draw the road flat with lane dashes that recede gently, and use a low mild three-quarter view without tilting the camera."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "On A the tent sits at a moderate distance from a low camera, with even side panels, a nearly level ridge and clear stepped layers: flowers in front, tent, bushes, then soft far trees and open sky. On B the tent is pushed close, with its big roof panel sharply converging and the ridge dropping toward the back, so the shape feels forced wide-angle. Trees of similar sharpness crowd directly behind it with little distance between layers. B's planar_share of 0.509 is at the top of the real range, from that large flat roof.",
+   "fix": "Set the tent further back in a low, mild three-quarter view with a nearly level ridge. Open a clear gap of meadow behind it, with the distant trees paler, simpler and smaller."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "On A the frame legs splay evenly, the pot hangs just above a compact fire and stone ring, and everything sits on one ground patch with a mild downward view. On B the pot is enlarged and close to the camera, with a deep open rim, while the fire is small, separate and cropped by the bottom edge. The pot seems to float above a ground plane seen from a different height and the fire sits in front of it, not beneath it. The dense forest wall sits close behind.",
+   "fix": "Pull the camera back and show the rim as a shallower oval. Place the fire directly under the pot with its logs fully in frame, on the same ground the frame posts stand on."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away by moving the camera too close and using a stronger lens than real cards. The hero is enlarged and pushes toward the viewer, ellipses change depth too much from top to bottom, and parallel lines such as planks, lane marks and tent ridges converge or tilt hard. Ground planes tend to curve, tilt or disagree with the hero's view, and attachments such as rings, handles and fires can sit in a different view from the body. Real cards use a calmer low camera, level ground and mild foreshortening, with more distance between hero and background. Most of these calls are low confidence because several pairs share nearly the same view, and p01 and p02 especially rest on small differences."
+}

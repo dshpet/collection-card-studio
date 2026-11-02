@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: a pale glow hugs the whistle's silhouette, and the edge map shows one unbroken dark line around the whole body, equally heavy on lit and shadow sides, plus a thick dark lip at the mouthpiece. A: no halo against the yellow; the contour is thin and thins out along the lit top edge, darkening only at the underside and the mouth. That breaking line matches the real lesson cards, such as the real glove's faint left side.",
+   "fix": "Remove the pale glow behind the whistle so the orange meets the yellow background directly. Let the edge fade on the lit top side and sharpen only under the body, with no even dark line around the shape."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the rope is split into many fine strand lines and the tassels into thin hair-sharp fringes, which packs dense edges into the lower hero (subject density 0.138). The background rays are also dense and converge sharply inside the horn loop. A: rope and tassels are a few broad folds with soft transitions, and the horn body nearly loses its edge on the lit side, with only the bell rim dark. The real cards reduce small parts to chunky shapes like this.",
+   "fix": "Draw the cord as three or four thick smooth twists and the tassels as a few wide soft folds, with no thin strands or fringe hairs. Use fewer, wider background rays."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the steam has defined dark contour lines along each ribbon, and the cup and saucer carry a closed, double, even-weight line around rim and base. A: the steam dissolves into soft lost edges, and the cup contour thins along the lit left and right sides. However, A's rim is also fairly dark and its cast shadow has a clear edge, so the gap is moderate.",
+   "fix": "Make the steam a faint soft wisp with no visible edge lines. Soften the cup's outer edge on the lit side and keep the sharpest edge only at the rim."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the apples carry stippled speckle marks that read as fine noise in the edge map. A thin dark hairline traces the handle and cloth, which is why its outline value is higher (0.049 against 0.006). B: apple surfaces are clean with few broad edges, but the cast shadow on the left has a crisp rim and the basket base is dark. Both cards have flaws here, so this is a weak call.",
+   "fix": "Keep the apple skin smooth with no speckles or dots. Remove the thin dark line along the handle and cloth so these edges come only from light and shadow."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: stave seams are thick dark grooves of uneven width, doubled in the edge map at centre right, with many grain streaks on the staves and a dense stack of plank lines at left. B: fewer, shorter seams, soft outer edges and a calmer deck, though its shadow has a ring-like rim and its seams are also dark. Background density is equal at 0.036, so the call rests only on the seam weight and grain on the hero.",
+   "fix": "Draw the gaps between staves as thin even lines, not deep dark grooves, and reduce the wood grain to a few faint strokes."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the windshield and side windows are framed by thick doubled black lines, the grille is a heavy black lattice and the wipers are hard strokes. Subject density of 0.203 is above the real range (top 0.179), and outline darkness of 0.084 is near its top. B: the cabin and wheel edges are softer and the body fades on lit panels, staying inside the range, though its road dashes are crisply boxed. A reads as drawn linework; B reads closer to light-built edges.",
+   "fix": "Remove the thick black frames around the windows: thin, soft window edges only. Simplify the grille to a few soft bars and drop the fine wipers and interior details."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the tent flaps, door opening and tiebacks are wrapped in thick dark contours of steady weight, with similar heavy scallop lines on the tree canopies, so the card reads as outlined. A: the roof's long lit slope and the flaps have thin or lost edges, with dark accent only under the flap hems. A's foliage is busier than the hero, a weakness of its own, but it lacks the closed-contour habit seen on the generated lesson cards.",
+   "fix": "Remove the dark contour around the tent flaps and door: let the cloth edges fade on lit sides and sharpen only where the flap casts a shadow. Soften the outer edges of the tree canopies."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the pot belly has a dense cluster of stippled speckles, which makes a patch of fine noise edges in the edge map where real cards keep clean surfaces. The log ends are drawn as closed ellipses, and the thin handle and rim are hard closed lines. A: the pot belly is one clean gradient with a soft edge and the rocks have few lines, though the rope lashings are dark and heavy.",
+   "fix": "Paint the pot as a smooth surface with one soft gradient, with no speckles or soot dots. Do not ring the log ends with a line; make the handle thick with a soft edge."
+  }
+ ],
+ "pattern": "Generated cards still run a closed, even-weight contour around the hero that holds on the lit side, where real cards let the edge thin out or vanish and sharpen only at dark undersides and focal rims. They also add fine edge noise that real cards lack: speckle on surfaces, split rope strands, fringe hairs, grain streaks and thick doubled seams. Secondary tells are pale halos behind the hero and hard rims on shadows and steam. Measured values mostly overlap the real range, so the eye evidence on line weight and lost edges decides more than the numbers do."
+}

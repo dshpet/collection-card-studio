@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a single orange whistle on deep golden yellow; the sound hole and mouth stay a dark burnt orange, the ring stays neutral grey, and the background is about as loud as the subject (0.166 vs 0.172). B: the orange slides to pure red-orange on the barrel side and to hot red in the hole and mouth, while the background is washed to pale lemon with a white-yellow halo. That puts hero chroma at the real ceiling (0.189). Neither card has a resting neutral beyond the ring, and warm_share is about 1.0 on both.",
+   "fix": "Keep the whistle one even orange plastic with burnt-orange shadows, no red in the openings. Make the background a solid deep golden yellow with no pale glow around the whistle."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the cyan is a softer, slightly chalky turquoise. The brass reads as one mass in the lens and the rope is a deep red, giving a tight three-role palette (2.13 hue families). B: the background is electric pure cyan. The brass splits into orange, pure red in the bell's throat and green-tinted highlights picked up from the background, and the tassels are candy red. Every hue is at full strength (4.05 families), with no muted area to rest the eye.",
+   "fix": "Soften the background to a calm turquoise. Paint the brass in warm gold with brown-gold shadows, no red inside the bell, and make the rope a deeper, duller red."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the white cup stays cool, with lavender-blue shadows in the bowl and saucer, against a red-orange background. That cool/warm split matches the real monitor's blue side and the real glove's plum shadow. B: everything sits in one red family. The cup shadows are pink-rose, the saucer picks up red, the blue rim and flower are muted, and the background is a dull vignetted crimson. warm_share 0.946 and hue_families 1.98 both fall outside the real range; A's warm_share 0.76 and 3.94 families fall inside it.",
+   "fix": "Keep the porcelain clean white with cool blue-lavender shadows, not pink. Keep the rim and flower a clear blue, and let the background be the only red."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: saturated violet background, orange wicker and green cloth, each a separate flat mass; the apples are deeper red with lens shadows held in dark red. B: the background is washed to pale lilac with a brighter centre (chroma 0.139, the real floor), so the very pure red apples and red-orange wicker shout against it. The cloth shifts to pale green and the hero and background are unbalanced. Both subjects exceed the real chroma ceiling, so this is a weak call.",
+   "fix": "Deepen the background to a solid medium violet. Make the apples a slightly deeper red and the wicker a warm tan-orange rather than red-orange."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the sky is bright pure cyan, the same shift generated lessons make away from a medium blue, and that cyan leaks into the hoops as mint patches in the lens. The wood is a brown-orange with mauve-brown shadows. B: the sky is a medium blue, the hoops are a clean slate grey-violet that rests the eye, and the shadows go plum and wine like the real glove. B's orange staves are loud, but the hue roles are clearer. Measurements are almost tied.",
+   "fix": "Change the sky to a medium, slightly deeper blue. Keep the metal bands plain neutral grey with no turquoise reflections."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the taxi yellow is clean, the road stays cool blue-grey in the lens, and the chrome picks up blue, so neutrals stay cool against the warm hero, as on the real cards. B: the asphalt is pulled to warm brown-grey, the yellow body flattens toward a dull cream-mustard, and the shadow under the car is near-black. This warming of neutrals is the same drift as the cream computers in the lessons. Both cards have low shadow_chroma_kept (0.40 and 0.46, below the real floor), so that field does not separate them.",
+   "fix": "Make the road a cool blue-grey asphalt, with no brown. Keep the taxi a clean warm yellow and let the shadow under it stay dark blue-grey."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the tent is pure yellow-orange with hot orange curtains, on acid yellow-green grass and a bright blue sky. Hero and background are equally loud (0.152 vs 0.142, both at the real ceiling) and there is little muted colour. B: the canvas is a muted ochre and the forest steps back through dull greens and browns (background 0.112). This gives the eye rest and keeps the hero separate, so it stays inside the real range.",
+   "fix": "Mute the canvas to a natural ochre-yellow and the curtains to burnt orange. Calm the grass to a mid green and drop the background greens so the tent is the loudest thing."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the ground is dull tan, the rim and pot stay grey, and the deep green forest covers a large area, so the card has a real cool counterweight; only the glow under the pot is hot. B: logs, posts, stew and dirt all merge into one saturated orange, and the fire glow spreads into the ground and stones. warm_share 0.657 is near the real ceiling and shadow_chroma_kept 0.603 sits below the real floor. Only the slate-teal pot and dim forest resist the orange.",
+   "fix": "Make the ground a dull grey-tan dirt and the wooden posts a muted brown. Keep the stones neutral grey and hold the orange to the stew and the flames only."
+  }
+ ],
+ "pattern": "Generated cards pull neutrals warm: whites go cream, greys go brown or pink, and metals and shadows drift into the card's dominant warm hue. Real cards hold cool or plum shadows and true neutrals against a warm hero. Generated subjects also push toward pure orange or red in shadowed openings, and backgrounds shift to electric cyan or pale glowing washes behind the object, so nothing stays muted to rest the eye."
+}

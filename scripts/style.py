@@ -1,7 +1,8 @@
 """What the reference analysis says about the art, written for the generator."""
 
 STYLE = """The attached images are real cards from the game. Draw one new card that could sit beside them unnoticed: the same rendering, lighting, finish, color and level of detail.
-Draw the object with its true proportions and mild perspective. It spans about four fifths of the card. Forms are smooth, with small soft bevels. Rims, handles, cords, bands and posts stay slim, and small parts stay small.
+Draw the object with its true proportions and mild perspective, from a low camera, so openings and rims are thin ovals. It spans about four fifths of the card. Forms are smooth, with small soft bevels. Rims, handles, cords, bands and posts stay slim, and small parts stay small.
+One soft light from one side turns the form smoothly into shade.
 Each material looks like itself, with a little quiet detail and natural local color. Shiny materials carry one soft highlight. Cloth, cord and wood stay matte.
 Draw only what the subject names. No text, letters, numbers, frame, border or watermark."""
 

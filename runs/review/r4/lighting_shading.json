@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B has a white glow around the whole whistle, and the lens shows a bright halo hugging the silhouette like the generated gloves. It also has almost no cast shadow, so the whistle floats, and the mouth and window drop to a saturated red. A has no halo: light turns softly across the barrel to a shaded disc face, with a gentle offset cast shadow lower right on the background.",
+   "fix": "Remove the white glow behind the whistle. Keep the background evenly lit and add a soft, low-contrast shadow offset to the lower right. Let the side of the whistle turn gradually into a calm, slightly darker shade."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A has a side-lit bell with a soft sheen along the tube and a darker underside. B has a thin bright rim around the bell, a deep dark inner bell and broad streak highlights along the tube. Both show smooth metal turn, cast no ground shadow as floating objects, and sit within or at the edge of the real ranges (A's shading range 0.827 is 0.001 over). Nothing on my vector separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B has a spotlight pool on the background at lower right behind the saucer, a dark vignette in the corners and a warm cream cup with a red-tinted saucer underside. A's cup keeps a cool lavender shadow side down its right and into the handle, like the real monitor and lighthouse, with a clear soft cast shadow lower right. A's form contrast (0.382) is slightly below the real range, so this is not decisive.",
+   "fix": "Remove the bright pool of light behind the saucer and the dark corners. Keep the background evenly lit. Shade the right side of the cup and handle with a soft cool lavender, and let a single soft shadow fall from the saucer."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B has a sheen-streaked, glossy table with a yellow reflection under the basket. Bright highlights run along each handle strand, and the shading range (0.812) is above the real range. Its apples have soft window highlights. A has broad smooth plane shading on thick weave and a firm cast shadow to the left, though its sharp apple hot spots do not sit perfectly with that shadow direction.",
+   "fix": "Make the table matte with no reflection. Reduce the highlights on the handle to one soft sheen, and give the basket a single soft shadow on the table."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A is lit almost from the front, brightest down the centre staves and falling off equally to both sides, with a neutral grey lens, a weak ground shadow and a streaky hoop highlight. B has a clear left key: bright upper-left staves turn to a cool blue-violet shadow side on the right, with a defined cast shadow to the right, as in the real cards. B's upper-left stave is close to blown out, which limits confidence.",
+   "fix": "Light the barrel from one side. Keep the left staves bright and turn the right staves gradually into a cool, darker shade. Add a soft shadow on the deck to the side away from the light."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B's hood and roof blow out to near white in the lens against black windows and a hard dark underbody. All three measures are above the real range (shading 0.929, contrast 0.708, bias 0.934). A has a broad soft sheen on rounded bodywork, gentler turn into shade and a soft contact shadow, with all three measures in range.",
+   "fix": "Lower the brightness on the hood and roof so the yellow stays colored rather than washed out. Lighten the windows and the shadow under the car, and turn the light softly around the rounded bodywork."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B splits into a flat dull grey-brown roof plane against a hot bright front flap, with a very dark forest and vignette behind; shading range 0.882 is above the real 0.831. The flap folds are lit with hard pale bands. A has a warm consistent light from upper left with soft sun shafts, a gentle turn across the right plane and folds that shade softly, with shading range 0.733 in range.",
+   "fix": "Lighten the shaded roof so it stays warm yellow, and bring the front flap down. Soften the fold edges, and lift the darkness of the forest behind the tent so the whole scene shares one warm daylight."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A's upper pot is a flat grey tone, with fire glow painted as a red gradient on the base. Its poles and pot throw almost no cast shadow, so the pot hovers; shading range 0.6 is just under the real range. B has a smooth rounded belly with a broad soft sheen at upper left, orange underglow that also lights the rocks and logs, and firm ground shadows beside the poles. B's light bias 0.133 is below range, so this is a weak call.",
+   "fix": "Shade the pot as one round form with a broad soft highlight at upper left. Let the orange firelight wrap the underside and reach the logs and ground, and add soft shadows under the pot and poles."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through staged light instead of one coherent key. There is a white halo or spotlight pool around the hero and a dark vignette at the corners. Lit planes run hot, near white, against near-black openings, and shading measures can overshoot the real range. Real cards keep a calm background, turn softly into a cool shadow side, and ground the hero with one simple cast shadow."
+}

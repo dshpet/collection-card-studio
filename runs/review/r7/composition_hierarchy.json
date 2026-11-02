@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "The hero is nearly identical: same diagonal tilt, same area (0.234 vs 0.235). A tucks the steel ring behind the whistle's top and lets the campfire motifs run in a plain grid behind a pale glow, so the orange body stands alone at thumbnail. B shows the whole ring standing clear at top right and uses staggered motifs that sit closer to the body, on an orange-yellow ground near the hero's own color, so the thumbnail separation is weaker. B's margin (0.102) is the better number, so this is a weak call from the eye only.",
+   "fix": "Set the orange whistle on a paler yellow background with faint campfire icons in an even grid, kept away from the whistle. Let the ring tuck partly behind the top of the whistle."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's bugle is a thin diagonal line. Its subject area of 0.171 is below the real range, the small tassels hang under the middle, and much of the sunburst shows through and around the coil, so the thumbnail reads light. B's wide bell, thick coil and big tassels fill the card (0.252, within the real range) and read at once as a bugle with red tassels, with the bell close to the left edge as real heroes sit.",
+   "fix": "Draw the bugle much larger and heavier so it fills the card: a wide bell close to the left edge, a thick tube, and big red tassels that read at thumbnail size."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B's cup and saucer sit dead center, smaller, with wide clearance (margin 0.137, above the real range). A hard horizontal line behind the cup splits the card into crimson and orange bands, and that bright orange floor competes with the hero. A's cup is larger, low in the card and closer to the side edges (margin 0.108), on one continuous red ground, with the tall steam curl using the upper card. The cup stays first read in A, though the tall steam takes some attention.",
+   "fix": "Enlarge the cup and saucer so they nearly reach the sides, and set them lower in the card. Use one continuous red background with no horizon band, and let tall steam fill the space above."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A's basket fills the card (area 0.418, margin 0.091). Four big apples sit close to the camera and read first at thumbnail, and the floor strip is thin. B's basket is smaller and centered (0.358, margin 0.115, above the real range). It has many small apples, an empty cream floor below, and a long dark cast shadow at left that adds a second shape beside the hero.",
+   "fix": "Enlarge the basket and draw fewer, bigger apples so they read first. Lower the table line, drop the long cast shadow, and let the basket almost reach the sides."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both barrels are narrow (box widths 0.64 and 0.616, below the real range) and central. A's barrel sits lower and bigger with less empty deck (margin 0.094), and the deck rail corner frames it. B's barrel stands slightly smaller and higher (margin 0.127, above the real range), with a band of empty deck and a cast shadow beneath and the railing running straight across at mid-height.",
+   "fix": "Make the barrel bigger and lower in the card, closer to the bottom and side edges, with less empty deck in front. Set it in the corner of the ship's rail."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Hero scale and margins are about equal (0.354 vs 0.342, margins 0.037 vs 0.035). A's taxi is taller in the card, with a big checker roof sign that names the object at thumbnail, and only small dashes on the road. B's car sits lower and flatter (height 0.579) with a smaller roof sign, and thick white road stripes crop off the bottom and right edges, pulling the eye from the car. The difference is slight.",
+   "fix": "Make the checker roof sign bigger and the car taller in the card. Replace the wide road stripes with small thin dashes that stay quiet."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A's bright orange tent sits against an open lit clearing with its dark doorway facing the viewer. The trees stay at the corners and the tent keeps a small margin (0.03). B's mustard tent is duller and backed by a wall of dark trunks and pines across the full width, which competes with it at thumbnail. Its rope runs to the edge (margin 0.0, box width 0.977), though the real range also reaches 0.0. A's small yellow flowers are minor clutter.",
+   "fix": "Make the tent bright orange with a dark open doorway. Push the trees to the corners, paler and simpler, and open a light clearing directly behind the tent."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A's pot is the clear first read: a big pale pot in the middle, with the fire and logs cropped by the bottom edge and within the real occupancy range (0.391). B fits everything into the card, including the whole fire ring of logs and stones, both posts and the crossbeam. Its area (0.529) and height (0.9) are above the real range, and the bright fire and large stones compete with the dark pot at thumbnail.",
+   "fix": "Make the pot the largest, brightest shape. Let the bottom edge crop the fire and logs, remove the ring of stones, and leave more forest visible around the frame."
+  }
+ ],
+ "pattern": "Generated cards fit the whole scene neatly inside the card instead of letting the hero push against or crop at an edge. Heroes sit centered, with margins at or above the top of the real range. Secondary props and ground also compete with the hero: cast shadows, horizon bands, road stripes, stone rings, and dense tree backdrops. Real cards commit to one large shape that reads first at thumbnail, with a simpler backdrop."
+}

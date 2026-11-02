@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the whistle floats in a white halo that the lens shows as a bright ring around the whole silhouette. There is no cast shadow on the flame-pattern ground. The barrel turns only gently from orange to red at the lower edge, and the side disc barely separates (form_contrast 0.32, just under the real range). B: a soft shadow falls to the lower right under the mouthpiece and body, as on the real calculator card. The bevels catch light along the top edge, and the window and mouth openings go deep dark, so the form reads through light.",
+   "fix": "Remove the white glow behind the whistle. Add a soft dark shadow falling onto the background at the lower right. Darken the underside of the barrel and the far side of the round disc so one side is clearly in shadow."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a cyan glow sits behind the bugle. In the lens, a bright even rim runs right around the bell lip, the mouthpiece and the coil, as if lit from all sides, and the bell has streaky gloss bands. The rope and tassels are evenly pale and lit from the front. A: light slides along the tube from the upper left and falls away on the lower coil. The bell's inside runs from bright to dark in one smooth turn, and the rope coils shade one by one.",
+   "fix": "Remove the glow behind the bugle. Light it from the upper left only, with a single soft sheen along the tube. Let the lower coil and the underside of the rope and tassels fall into shadow, and do not outline every edge with a bright rim."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cup body stays almost one flat grey-white from left to right, with only a faint darkening near the handle, and the saucer is equally flat. The soft shadow on the table does the grounding alone (form_contrast 0.328 against a real floor of 0.413). B: the cup has a clear lit side, a darker side and a turn around the bowl. The saucer has a dark underside with a red bounce on the rim, a contact shadow sits under the foot, and light pools on the table.",
+   "fix": "Light the cup from one side so the bowl turns from bright to a soft darker side. Add a dark contact shadow under the cup foot and shade the underside of the saucer, with a little warm surface colour bounced up into it."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: a dark, fairly hard-edged oval shadow is thrown far to the left on the table, yet the basket front is lit evenly with little side-to-side turn. The apples carry small sharp hot spots, and the lens shows many tiny equal-value strands. A: the apples turn broadly with soft sheen, the big weave strands model as rounded forms, and the soft shadow at right fades gently. A's faint reflection on the table is odd, so this is a weak call.",
+   "fix": "Soften and shorten the cast shadow and let it fade out. Shade the side of the basket away from the light so it matches the shadow's direction. Replace the small sharp apple highlights with broad soft sheen."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the barrel staves stay close to one mid value across the body, with only slight darkening at the far edges and little core shadow (form_contrast 0.343, below the real floor of 0.415). The hoops are light bands with little turn. B: the lens shows a real cylinder, with a bright centre stave, dark turning sides and deep gaps between staves. B's shadow at the lower left is muddy where it crosses the bottom hoop.",
+   "fix": "Shade the barrel as a round form: a bright band on the lit side, turning to a clearly darker side. Darken the gaps between staves and the underside of each metal hoop."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: sharp streak highlights sit on the hood and chrome, the headlamps and mirror have small hot spots, and the lens shows a fairly even mid value across body panels. Shadow under the car is thin and close to the tyres. A: broad soft sheen on the roof and hood, a strong top-lit body falling to a dark underside, and a big soft shadow on the road. A's measures sit slightly above the real range (light_bias 0.934, shading_range 0.929), so the call rests on the eye and is weak.",
+   "fix": "Use broad soft sheen on the hood and roof instead of sharp streaks. Keep the sides of the car clearly darker than the top, and spread a wider soft shadow under the car on the road."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: sun shafts come from behind at the upper left, yet the facing right panel of the tent is lit flat and evenly. The lens is warm golden across tent, ground and trees, with no cool side, and the tent throws almost no ground shadow. A: the roof slope falls into a cool grey shadow plane while the front flaps are bright, with rounded folds and a very dark opening, so light and shadow sides separate clearly.",
+   "fix": "Put the side of the tent away from the sun into a cooler, darker shadow. Give the flaps rounded folds with a shaded side, and add a soft dark shadow on the grass along the tent's base."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the lens shows the pot as a pale, even form with a slow top-to-bottom change and almost no side bias (light_bias 0.062, far below the real floor of 0.191). The fire adds only a thin orange edge at the pot's base, though the post shadows do radiate from the fire. A: the fire lights the pot's belly strongly and fades upward, the bowl turns toward dark at the sides, and the logs shade from their fire-facing ends. A's speckled belly is painted-looking, so this is a weak call.",
+   "fix": "Let the fire light the bottom of the pot with a warm orange glow that fades upward into dark. Shade one side of the pot deeper, and give it a single soft sheen near the rim."
+  }
+ ],
+ "pattern": "Generated cards still avoid committing to one light. Glow halos and bright rims wrap the whole silhouette, or light sits flat on the front, so the shadow side stays shallow and takes on the same warm tint as the lit side. Real cards push one side into a darker, often cooler form shadow with a broad soft turn and a grounded soft cast shadow. Generated cards also use more small sharp gloss streaks and hot spots, and their cast shadows are either missing or disconnected from the shading on the object."
+}

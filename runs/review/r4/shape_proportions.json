@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "The two whistle bodies are close: both have a bevelled mouth, a straight top run and a round drum. A's ring is a clean, open loop on a clear lug. On B the ring is tucked behind the drum and fused to the lug, so the silhouette shows only a sliver of hole. B's lug is a soft blob. Numbers do not separate them, and A's ring is on the thick side, so this is a weak call.",
+   "fix": "Draw the metal ring as one clear, open loop on a small lug at the top of the whistle, with the hole fully visible and the ring not hidden behind the round drum."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A keeps a slim tapered tube, a narrow mouthpiece, a thin double loop with a visible second bend, and thin cords ending in small tassels (thin_share 0.02). B fattens everything: an oversized bell, a sausage-thick single loop, a knot swollen into a lump, and two huge tassels nearly as wide as the loop (thin_share 0.0).",
+   "fix": "Draw a slim brass bugle with a narrow tube of even thickness and a modest bell. Wrap the cord tightly around the tube, with thin cords and two small tassels no wider than the bell's throat."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A's cup has a heavy body and a thick, sausage-like handle, and its saucer is a deep, puffy dish. B's cup has a thinner rim, a slimmer handle, a visible foot ring and a shallower saucer. Measured contours are nearly equal, and the later lessons also show generated objects that are finer than real ones, so confidence is low.",
+   "fix": "Draw the teacup with a thin rim and a slim loop handle of even width, sitting on a small foot on a shallow, thin-edged saucer."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's handle is a fat rope sausage and its basket strips are wide, pillowy bands. The rim bulges into a swollen lip, and corner_rate 0.33 falls below the real range, so the contour is soft and blobby. B keeps a thinner twisted handle, narrower weave strips and a tighter rim (corner_rate 1.104, inside the real range), with a bound knot where the handle meets the rim.",
+   "fix": "Draw a thin twisted handle and narrow, flat woven strips with tight edges, and make the rim a slim band rather than a swollen ring."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A's barrel has narrow metal hoops that sit close to the wood, a modest belly and a thin top rim. B has a fatter barrel filling the card, with broad hoops that stand out as raised bands in the silhouette, a thick swollen rim, and a corner_rate of 0.0. Both have solidity of 0.985, above the real range, so the contour alone is weak evidence.",
+   "fix": "Draw a slimmer barrel with thin metal hoops lying flat against narrow staves, and a thin top rim with crisp edges."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A is a shortened, fattened toy car: huge wheels, almost no hood length, a sausage-thick bumper with bulbous uprights, ball-shaped mirrors and an oversized roof sign. B keeps a believable sedan: a longer body, a real hood and trunk, smaller wheels, a thin bumper and a slim grille (corner_rate 4.405 against 2.142).",
+   "fix": "Draw a real sedan taxi with a long body, a separate hood and trunk, and normal-sized wheels. Give it a slim chrome bumper, small mirrors and a small roof sign."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's tent has thick log stakes and fat rope bindings, and big ball ends on the ridge pole break the silhouette. The canvas edge is pinched and curved (straight_share 0.421). B has long straight canvas runs and flat roof planes (straight_share 0.545), with thin guy lines ending in small pegs.",
+   "fix": "Draw a tent with flat canvas slopes and a straight ridge. Use thin guy lines and small pegs, with no oversized log stakes or ball ends on the ridge."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A has slim, forked posts with the beam laid in the forks, a thin bail handle and a shallow pot, leaving open space around them (solidity 0.577). B has thick tapered posts, a heavy swollen beam and a chunky ring, and its balloon-round pot merges with a pile of fat stones in the silhouette (solidity 0.73).",
+   "fix": "Draw thin forked wooden posts with a slim beam resting in the forks, and a thin wire handle. Keep the pot modest, with a clear gap of open air between it and the fire."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away by fattening: thin parts such as handles, hoops, cords, stakes and bumpers swell into sausages, and bodies inflate into a toy shortness. Rims and ring edges go soft, and small attached parts such as lugs, knots and mirrors become blobs. Holes and gaps also close up. Measured numbers separate pairs only weakly, and the later lessons show generated objects can be finer and more detailed than real ones, so a fat-versus-slim call on near-equal contours (p01, p03) stays low confidence."
+}

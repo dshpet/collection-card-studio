@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B's background is almost one blown-out light group: the lens turns nearly all of it white, lightness_mean 0.868 is well above the real ceiling of 0.793, and a pale halo hugs the whistle. A holds a single mid-light yellow group behind the whistle, with no halo and a dark round face side that gives one clear shadow mass, within reach of the real range.",
+   "fix": "Lower the background to a rich mid-yellow, remove the pale glow around the whistle, keep the campfire pattern only slightly darker than the ground, and let the round side of the whistle fall into a broad, soft shadow."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A has a bright cyan glow right behind the horn and corners that drop darker (vignette 0.118, near the real ceiling), and the hero is hard inside: white rim bands sit against a dark bell throat. B has a flatter, paler ray field with a small vignette (0.033), closer to the real teal lamp card, though its key is slightly too high at 0.809 and its rays pinch to a point inside the loop. Weak call.",
+   "fix": "Remove the bright spot behind the horn and the darkened corners, use even flat rays, and soften the bell interior into a mid-tone with gentle roll-off instead of white rims against dark."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B falls outside the real range on key (0.571), gap (0.252) and just over on vignette (0.087): a dark red room with dark corners, a pale cup standing out only by a spot of light, and a near-black pool under the saucer. A has a light table mass under a dark wall, giving two clear value planes, with a softer mid-grey cast shadow, closer to real cards, though its corners do not darken (-0.047).",
+   "fix": "Raise the whole background to a brighter red, drop the corner darkening, add a light tabletop plane under the cup, and make the cast shadow a soft mid-tone instead of near-black."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B has a lighter halo band following the basket and handle against the purple wall, a near-white table, and vignette -0.072, below the real floor of -0.010: the centre is lit, not the corners darkened. The apples are small dark clusters and the cast shadow is a hard dark ellipse. A's wall is light and steps down broadly at the right edge, the apples form one large dark mass, and the shadow fades softly into the table.",
+   "fix": "Remove the pale glow around the basket, make the wall a flat even tone or darken it gently toward one side, bring the table down from near-white to warm mid-light, and fade the cast shadow softly into the table."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B breaks the barrel into scattered patches with small near-black pools at the inner rim, on the hoops and at the base, and each stave is lit like a separate cushion. A groups the barrel into one broad dark left side and one lit right side, with its darkest accent kept low at the base. Metrics do not separate them.",
+   "fix": "Light the barrel from one side so the left half falls into one large soft shadow and the right half stays lit. Remove the black spots on the hoops, and keep the darkest tone only in a thin line at the base."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B has a wide pale halo around the car with sky corners dropping dark (vignette 0.122, above the real ceiling of 0.088), and its body is broken into many small highlight and mid-tone chips. A reads as a single light body mass with black window lines and a firm dark road shadow, with rays that stay clean and only a slight vignette excess (0.096).",
+   "fix": "Remove the bright glow behind the car and the dark sky corners, keep the rays even in tone, and paint the yellow body as one broad light shape with only a few simple highlights."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A has black masses in the top corners from the tree canopies and a white patch of sky at the tent peak (vignette 0.182, nearly double the real ceiling of 0.100), so the forest works as a dark frame around a spotlit middle. The tent doorway is also a large pure-black shape. B keeps the trees in mid and mid-dark groups, with a smaller, softer doorway dark and a vignette in range (0.062).",
+   "fix": "Lighten the tree canopies in the corners to mid-green, drop the bright sky gap behind the tent peak, and make the doorway a warm dark orange-brown that stays clearly lighter than black."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B sits below the real key range at 0.537: the forest and frame merge into one large dark mass, the pot stands barely separated from it, and the black is broken into speckled patches low on the pot. A is lighter (0.578), with a light ground ring that sets off a dark pot, and a single clean dark crescent on the pot with a compact highlight.",
+   "fix": "Brighten the forest behind the pot to clear mid-greens, lighten the ground around the fire, and shade the pot with one smooth dark crescent on one side instead of speckled black patches."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through a pale halo hugging the hero, which real cards do not have, and a key pushed outside the real range, either blown out or too dark. Their corners and frames also go dark like a spotlight. Inside the hero, the shadow breaks into many small hard patches and small near-black pools, where real cards use one or two broad, softly rolled-off shadow masses and keep their darkest accents in a compact area."
+}

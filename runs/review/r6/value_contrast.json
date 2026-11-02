@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the background is almost white (key 0.868, above the real range) with a pale halo hugging the whistle, and the campfire motifs are the only mid-grey left in the top value group. B: the background is one even saturated yellow middle value (0.809, also slightly high) with no halo; the whistle sits on a tight cast shadow and the darkest accents stay inside the two openings.",
+   "fix": "Make the background a solid, saturated golden yellow in a middle value, not pale cream. Remove the white glow around the whistle. Let a small soft shadow under the whistle separate it from the background."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both cards have a key near 0.81, above the real range, so the numbers do not separate them. A: pale turquoise rays with gentle steps, thin rays running behind the loop, and a soft middle-valued horn with one white patch on the bell. B: the cyan brightens toward a hot centre and the corners darken more (vignette 0.071 vs 0.033); the bell pairs a dark grey interior with white rims, so local contrast on the hero is harder, as in the generated gloves.",
+   "fix": "Lower the brightness at the centre of the rays so the cyan stays even across the card. Shade the inside of the bell with soft mid-tone gold instead of a dark core next to white highlights."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: a plain split into a dark red upper wall and a lighter orange tabletop, in-range key 0.652 and no corner darkening (0.006); the table shares the pale cup's light side. B: a low key (0.571, below the real range) with dark red corners (vignette 0.087) and a glow behind the cup, so the cup stands alone as a white shape. Its lightness gap of 0.252 is above the real range, and a black shadow sits under the saucer.",
+   "fix": "Lighten the whole background to a clean, even red with no dark corners and no glow behind the cup. Add a lighter orange tabletop and soften the shadow under the saucer to a mid-tone."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the tabletop rolls off from light to a mid-tone and vignette is in range (-0.002); the violet wall brightens at upper left and falls to a darker right edge. B: the table is one clipped-looking near-white sheet, and the bright lower half against the darker top wall gives a vignette of -0.061, below the real range. The key sits at the top of the range (0.748), with an arch of lighter wall behind a small basket.",
+   "fix": "Darken the tabletop to a warm mid-tone sand with a soft gradient, not a near-white surface. Keep the wall evenly lit, without a pale arch of light behind the basket."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Weak call: the numbers lean the other way, since A's rms contrast of 0.114 is just below the real range. A: a calm barrel in middle values with a soft shadow and gently stepped deck planks. B: a hard split on the barrel with a dark left half against a bright right half, a pale cyan sky, and white streaks scattered across the deck, so the light group breaks into many small slivers.",
+   "fix": "Shade the barrel with a soft, gradual falloff from light to dark instead of a hard vertical split. Remove the white streaks from the deck planks so the wood reads as one even mid-light area, and deepen the sky to a mid-tone blue."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: three clear groups, with a large near-white car body, mid-grey road and a solid black shadow under the car; the rays stay distinct at the top. A's vignette of 0.096 runs slightly over the real range. B: the car body is broken into many light and mid slivers, the rays wash out into a broad pale glow behind the car, and the road is speckled with small value noise, so the groups are less clear.",
+   "fix": "Light the taxi body as one broad bright shape with simple shading. Keep the background rays even, without a pale glow behind the car. Make the road one smooth dark grey with no speckle, and put a solid soft shadow under the car."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both cards exceed the real vignette range (A 0.182, B 0.165), so this is a matter of degree. A: tree canopies drop to black in the top corners, the tent opening is a large black wedge, and a lit patch of grass sits in the centre, giving a strong spotlight frame. B: a lighter key (0.676) with fewer pure blacks; the darks stay in the tent interior, though foliage and ground are fragmented into small light flecks.",
+   "fix": "Lighten the tree canopies in the top corners to mid-tone greens with no black. Brighten the grass evenly to the card edges, and make the inside of the tent a warm mid-dark rather than black."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the key of 0.537 is below the real range, with a dark forest band and black gaps at the top and a pot in similar dark greys, so hero and background barely separate by value (gap -0.001). The vignette of -0.053 means the corners are not darker than the centre. B: key 0.614, in range; a lighter ground and sky-side background sit behind one solid dark pot shape, giving a clean hero read (gap -0.092), with the fire as a small bright accent.",
+   "fix": "Brighten the forest background and grass to light and middle greens with no black gaps. Make the cauldron one solid dark shape against that lighter background, and keep the brightest accent to the small fire."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through how light is placed around the hero rather than through any single number. The key is pushed up or hot, with a pale glow behind the hero and backgrounds lifted toward white or cyan, and corners or canopies darken into a spotlight frame. Inside the hero and setting, light groups break into many small slivers and streaks where real cards keep broad simple masses, and darkest accents go to pure black in openings and under-shadows. Value numbers alone are weak: p02, p05 and p07 have ambiguous or opposing measurements, so those calls are low confidence."
+}

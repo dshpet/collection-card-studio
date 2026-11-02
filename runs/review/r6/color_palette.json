@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the whistle body is pushed to near-pure orange, and its shaded side, window and mouth slot go straight to hot red. Subject chroma is 0.189, the top of the real range, and a pale lemon halo washes out the wall around it. B: the orange is calmer, its window and mouth slot drop to a brown-orange related to the body, and the yellow wall stays one solid, rich mass. On B the hero and wall share a family but the shadows are not forced to red.",
+   "fix": "Make the whistle a slightly muted plastic orange. Shade the side, window and mouth slot with deeper brown-orange, not bright red. Remove the pale glow and keep the wall a solid golden yellow."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the wall is electric, almost pure cyan, and the gold and red are at full strength against it, so nothing rests the eye. A: the same burst is a softer, slightly muted teal-cyan with a chalkier light ray, closer to the real turquoise lamp card, and the brass is less yellow-hot. The lessons repeatedly show generated backgrounds sliding to brighter cyan, and B has the same slide.",
+   "fix": "Change the background from neon cyan to a slightly muted teal turquoise, and make the brass a little less yellow."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the whole card sits in one red family, at 1.98 hue families, below the real range. The cup's white takes a warm pink-cream cast, its blue trim is washed out, and the wall drops to dull burgundy. A: the porcelain stays a cool blue-grey neutral, the blue rim is clean, and an orange table separates from a red wall, giving distinct hue roles. This matches the real cards' cool whites against warm grounds.",
+   "fix": "Keep the cup a clean cool white, not pink-tinted. Make the rim and flower a clear blue. Add a separate orange table under a red wall, and do not let red spill onto the porcelain."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the apples are near-pure red and the basket is pushed to a saturated red-orange, so subject chroma of 0.166 exceeds the real range. In the lens, the basket and apples merge into one red mass, and the floor shadow also turns pink. B: the wicker stays a believable tan-orange and the subject chroma of 0.153 is in range. The purple wall and cream table are clean, and the checked cloth stays green and white.",
+   "fix": "Make the wicker a natural tan straw, clearly different from the apples. Soften the apple red slightly, and use a neutral dark tint for the table shadow instead of pink."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the sky slides to bright cyan, the hoops pick up cyan reflection patches, and the deck goes warm cream-peach, with a warm share of 0.664, the warmer of the two. A: the sky is a deeper true blue and the hoops stay plain cool grey, though the barrel orange is strong and close to the deck hue. The signal is modest, resting mainly on the cyan shift the lessons show.",
+   "fix": "Use a deeper true-blue sky, not cyan. Keep the metal hoops plain neutral grey with no cyan patches, and keep the deck wood a less peachy tan."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the yellow leans to dull amber in the lens, the sky is paler, and the road and car shadow drain to near-grey, with shadow chroma kept at 0.292, well below the real floor of 0.486. Only 3.98 hue families read. A: the yellow is clean, the blue burst is deeper, and the road shadow stays dark purple-violet with more colour, though 0.464 is also just under the real floor.",
+   "fix": "Make the taxi a clean bright yellow, the sky a deeper blue, and the road and car shadows a dark violet-grey with visible colour instead of flat grey."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: tree crowns, grass and light are all pulled to yellow-green, so the yellow tent and its orange trim are equally loud against the background. The trunks go warm orange and the shadows thin out, with chroma kept at 0.615, at the real floor. A: dark blue-green pines and red-brown trunks give a deep, muted forest behind a golden tent. Cool mist rests the eye and the hero stands apart.",
+   "fix": "Paint the forest in deep cool blue-greens with dark red-brown trunks. Keep yellow only on the tent, and make the foliage shadows rich dark green rather than yellow-lit."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the pot's black reads as a green-tinted mass in the lens, and its shadows lose colour, with chroma kept at 0.538, below the real floor of 0.612. The even, bright grass and even ground give every area the same mid-loudness. A: the forest is deeper and more muted, and the grass rests the eye behind a strong orange stew, but the red glow under the pot is a heavy warm push, so this call is weak.",
+   "fix": "Darken the forest into deep muted greens, keep the grass less bright, and give the pot and ground shadows a rich dark tint with visible colour."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through local colour drift. Blues slide to bright cyan, whites and greys take a warm cream or pink cast, and browns become pure orange. Backgrounds match the hero's loudness instead of resting the eye, and shadows either go hot red-orange or drain to flat grey rather than keeping a rich related hue. Real cards keep cool neutrals and browner local colours against strong grounds."
+}

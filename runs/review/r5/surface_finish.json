@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the orange body has a soft, broad sheen with a faint moulded seam around the round side panel, and the steel ring has a tight, believable highlight, so plastic and metal read as different materials. B: the body is an even gel-like orange with no surface variation, the seam is a soft blurred ridge, the window interior glows saturated red, and the ring is mostly hidden. The numbers barely separate them (both gloss 0.005), so this rests on the eye.",
+   "fix": "Hard matte moulded plastic with a thin crisp seam around the round side panel, one soft broad sheen along the top, a dark unlit interior in the window, and a clearly visible steel ring with a small sharp highlight."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the brass has long clean reflections, and the rope wrap is soft with only faint twist lines, simplified like the real glove laces. B: the rope has every strand drawn crisply, the tassel ends are ragged and fringed, the knot is busy, and the brass is a soft orange gradient across the bell. B's gloss share of 0.177 is above the real range of 0.010 to 0.152. A's fat, smooth tassels are slightly toy-like, so this is a weak call.",
+   "fix": "Simplify the rope into a few soft, thick wraps with faint twist lines. Make the tassels smooth rounded shapes with no loose strands. Give the brass one long clean streak highlight and keep the rest satin."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the flower and leaves are raised, puffy, glossy blobs like stuck-on plastic, and the blue rim is a thick lacquered tube, so the cup reads as vinyl toy rather than ceramic. B: the flower is a flat painted decal under the glaze, the rim is a thin glazed band, and the porcelain has a soft, milky sheen.",
+   "fix": "Paint the flower and leaves flat on the cup under a thin glaze, with no raised relief. Make the rim a thin painted line and give the porcelain a soft, milky sheen with one small highlight."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the apples carry fine flecks and pale streaks in the skin with a yellow-green blush near the stem, so the skin reads as fruit, and the wicker has a quieter sheen. B: the apples are smooth, uniform red with identical round white highlights and thick, glossy leaf blobs, so they read as moulded plastic, and the wicker is chunky and equally lacquered.",
+   "fix": "Add fine pale flecks and streaks to the apple skin, a soft yellow-green blush around each stem, and varied highlights. Make the wicker strips thinner and drier, with a less shiny surface."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the staves carry many thin, quiet grain lines running along the wood, with matte tan timber against satin steel hoops. B: the staves are saturated, smooth orange with a few big decorative swoosh marks, leaving large blank areas that read as painted plastic. B's detail is also lower (0.0221 against 0.0398, at the bottom of the real range).",
+   "fix": "Replace the big swoosh marks with many thin, fine grain lines running the length of each stave. Make the wood a drier, less saturated tan with a matte surface."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the body paint is a soft satin, the windscreen shows thin wipers and a pale interior through glass, and the trim is thin. B: the bumper and grille are chunky, heavily rounded chrome pieces, the mirror is a shiny blob, the windows are opaque blue with diagonal streak reflections, and the road has speckle noise. Both are above the real detail range, so the numbers do not decide it.",
+   "fix": "Slim the bumper and grille into thin satin chrome trim. Make the windows see-through with a pale interior and thin wipers, remove the diagonal streaks, and keep the road smooth without speckle."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the canvas is quiet and matte with a soft rolled hem and folds, though smoothed almost blank (detail 0.0174, gloss 0.021, both just under the real ranges). B: the side panel has broad decorative sweep marks, the orange trims have crisp flat edges, and the rope is drawn with fibres around chunky toy posts. A's softness matches the lesson real cards, but the numbers lean the other way, so confidence is low.",
+   "fix": "Make the canvas plain matte fabric with a few soft folds, and remove the painted sweep marks. Thin the rope and posts to small, quiet details with no enlarged fibres."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the pot is smooth dark iron with a soft, broad sheen and a warm reflected glow from the fire, with one clean finish over the form. B: the lower pot is covered in grainy stipple speckle and dark scorch noise that sits on the surface like a filter, the rim is flat grey, and the soup and background are blurry. This noise appears on no real card.",
+   "fix": "Remove the speckle and scorch noise. Make the pot smooth dark cast iron with a soft satin sheen and a clean warm glow from the fire on its underside."
+  }
+ ],
+ "pattern": "Generated cards miss the real cards' quiet, soft, matte-leaning finish. The surfaces go one of two ways: smooth, saturated, uniformly lacquered plastic with puffy toy details and identical highlights, or scattered over-sharp detail such as crisp rope fibres, big decorative grain swooshes, stipple noise, and diagonal glass streaks. Real cards keep small details soft and simple, keep grain fine, and separate materials with restrained differences in sheen."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the star's inner notches are soft rounded fillets and its points melt into the ball tips, so the outline reads as one moulded blob; solidity 0.622 is just under the real range. A: the umbrella keeps a thin straight pole and a clear scalloped canopy edge, in true relation to each other.",
+   "fix": "Draw the badge as a flat stamped metal star with straight edges, sharp inner notches and small balls on crisp points."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the boot's pull straps and collar are fat rolled tubes standing off the shaft, and corner_rate 4.642 is just over the real range. B: the cap's board has long straight edges and flat faces with tight corners, and the tassel cord stays thin.",
+   "fix": "Make the boot's pull straps thin flat leather loops stitched to a thin shaft top edge, with no rolled tube rim."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the jacket sleeves are inflated, the cuffs are fat rings and the collar is a thick roll, so the garment reads as a puffy toy with no cloth thinness. B: the hat has a believable crown and a curled brim that thins toward the edge, though its outline is soft.",
+   "fix": "Draw the jacket in thin cotton with slim sleeves, narrow flat cuffs and a flat folded collar."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the sign boards are thick swollen planks with blunt rounded arrow tips and blobby plank ends; corner_rate 7.419 is above and solidity 0.571 below the real range. A: the phone box has long straight vertical runs, a tight roof line and a crisp base plinth at true proportions.",
+   "fix": "Draw thin flat sawn boards with straight edges, sharp arrow points and square-cut ends."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cactus is a fat, smooth toy with sausage arms and a rounded stump base, with no sharp contour anywhere. B: the racket keeps a thin frame, a narrow throat and separate strings; its thin_share of 0.259 is far over the real range, but that comes from the string grid and the part is correct.",
+   "fix": "Slim the cactus: a narrower trunk with thinner arms that bend at tighter elbows, and spines breaking the outline."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the barrel is one smooth swollen form with no contour break at the hoops; corner_rate 0.0 and solidity 0.991 fall outside the real range, and it is squat and over-bellied. A: the suitcase has a straight lid line, distinct corner caps and a separate handle with a real opening.",
+   "fix": "Draw a taller barrel with a gentler belly, hoops that visibly step out of the outline, and a crisp rim with stave ends."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the sneakers have swollen, oversized midsoles and a lumpy merged outline, shortened and fattened like a toy. A: the coffee pot has true proportions, with a thin handle, a narrow spout, a separate hinge and a straight tapered wall.",
+   "fix": "Draw slimmer running shoes with a thinner, lower sole, a longer toe and a clear heel and tongue."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the locker has large soft top corners, thick plastic walls and door, and stubby blob feet, so it reads as a chunky toy rather than sheet metal; the door is fat, not a thin panel. B: the poster has an irregular torn paper edge that suits a thin sheet.",
+   "fix": "Draw a sheet-metal locker with tight small corners, a thin flat door and thin walls, and no rounded plastic feet."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the mooring posts are short and fat, the rope is a thick sausage coil and the life ring is oversized against the post, so the parts relate like toys. A: the saloon keeps straight storey lines, thin railing posts and a full set of expected parts in true relation.",
+   "fix": "Draw taller, slimmer mooring posts, thinner rope and a smaller life ring hung flat against the dock edge."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the wagon canopy is a swollen pillow with no taut hoop lines, straight_share 0.167 is below the real range, and the wheel rims are thick. B: the dock has straight plank edges and a crisp square corner, and the boat hull has a clean pointed sweep.",
+   "fix": "Stretch the canvas tight over thin visible hoops with straighter side runs, and draw thin wheel rims and narrow spokes on a longer, boxier wagon bed."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the tower legs and braces are thick heavy timbers and the blades are wide and stubby, too chunky for a lattice windmill; solidity 0.569 is just under the real range. B: the door panels have straight runs and tight bevels; its out-of-range corner_rate 21.806 comes from the wreath's leaf fringe, which is the only area in the mask, and does not show a form flaw.",
+   "fix": "Draw thin struts and braces in an open lattice tower, with narrow, more numerous metal blades."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the fins have a soft continuous outline with blunt blade tips and no crisp corners; corner_rate 0.579 is below the real range, and the foot pockets merge into the blades. A: the bumper car is bulbous, but real ones are, and the wheel and pole read as separate parts with a clear base ring.",
+   "fix": "Draw thin flat fin blades with straight side rails and a crisp squared tip, with a clear step where the foot pocket meets the blade."
+  }
+ ],
+ "pattern": "Generated cards still inflate form: rigid or thin things become swollen, moulded toys, with soft rounded corners, fat rims and straps, and short chunky proportions. Real cards keep more straight runs, tight corners and thin parts. This signal is weak in many pairs because each pair shows different objects. Metric outliers often come from the subject, such as string grids or leaf fringes, rather than from a form flaw, so I treated them as support only."
+}

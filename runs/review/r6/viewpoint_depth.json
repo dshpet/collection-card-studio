@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both whistles share nearly the same three-quarter view, and planar_share is level (0.56 vs 0.581). A's body is swollen: in the normals the top slides into the side as a smooth gradient, and the mouth slot and top window have soft, melted walls. The ring melts into the loop. B keeps distinct faces: the top and side meet at a tighter edge, and the mouth and window show flat, evenly coloured inner walls. A contact shadow also sets B on the ground. The gap is small and rests on how forms turn, not on the camera.",
+   "fix": "Same camera angle, but draw the whistle as a hard plastic box with flat top and side faces meeting at a tight rounded edge. Show straight flat inner walls in the mouth slot and top window, and a thin separate metal ring."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B is close to a flat side view with a strongly enlarged bell, about twice as dominant as the far end, like a wide-angle shot forced onto a toy. Its single coil hangs flat under the tube, and its tassels are puffy. A is turned further into the card. The bell, tube and double coil overlap in depth, and the tube foreshortens toward the mouthpiece at a milder strength. Planar_share is about zero on both and gives no help.",
+   "fix": "Turn the bugle at a three-quarter angle with the mouthpiece receding gently. Keep the bell only moderately larger than the far end. Draw the tube loop as two overlapping coils, one passing behind the other, with the cord wrapped around them in depth."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "On A the cup rim and saucer are ellipses of almost equal openness, about 0.39 each, so the cup reads as a flat-projected icon with no change of view from top to bottom. It sits on a hard mid-card wall/table line with a sharp cast shadow, smaller in frame. On B the rim is flatter (about 0.29) and the saucer more open (about 0.33), which is correct for a camera looking down, and the table fades softly into the wall. B's lack of a horizon is a small doubt, since real cards often have a clean ground break.",
+   "fix": "Lower the camera slightly so the cup rim is a narrower oval than the saucer, which should open a little more because it sits lower. Move in closer so the cup is large in the frame."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "On B the table is seen from above, with its horizon past mid-card, yet the small basket shows only a thin rim, so ground and hero disagree slightly. The long cast shadow lies on a blank flat plane, and the basket looks like a miniature set on a floor. On A the camera sits low and close, with the horizon low on the card. The basket rim, handle and table all agree with that low view, and the hero fills the space between foreground and wall.",
+   "fix": "Move the camera lower and closer, with the table edge low on the card. The basket should fill the frame, with its rim, handle and table all seen from the same slightly raised eye level."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "On A the deck and rail bend in a shallow curve around the barrel, a dome-like ground also seen on the generated desk lessons, and the barrel is puffed and small with a wide-open top. A's normals are low on flat area (planar_share 0.217). On B the deck planks run straight and converge toward the back, and the side wall recedes as flat panels at one consistent angle. The barrel rim is a narrow ellipse with a more open base ellipse, and the stronger flatness fits (planar_share 0.511).",
+   "fix": "Draw a straight flat deck with parallel planks receding to one vanishing point and straight rails behind. Use a lower camera so the barrel's top is a narrow oval, and make the barrel large in the frame."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Weak call. Both are three-quarter car views with a clear ground plane. A has a broad, simple body with clean road dashes running parallel to the car, and its tilted road line matches the turn of the car. B has a stronger bulge toward the near front wheel and grille, a noisy road surface, and more small forms breaking up the body in the normals (planar_share 0.174 vs 0.221). Neither has a real view conflict.",
+   "fix": "Keep a mild perspective with the front wheel only slightly larger than the rear. Show the car body as broad simple panels on a clean flat road, with dashes running parallel to the car."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B stages depth with framing props: blurred leaves in the bottom corners, big trees overhead, light shafts and a tipped-up floor inside the tent. That is more layers than the lessons' real cards use. Its canvas shows little form change, and the ground rises in the frame around it. A has a plain grass plane, one hero and sharp simplified trees stepping back in value, with the roof reading as one large flat plane. A's planar_share of 0.509 is at the top of the real range, and B's is lower at 0.344.",
+   "fix": "Remove the blurred foreground leaves and light shafts. Show the tent on a plain grass plane with simple trees behind it, sharp but paler with distance. Make the roof one big flat sloped face, and do not show the tent floor tipped up toward the camera."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B is complete and centred, with the frame, pot and full stone ring all shown from one tidy raised view. Its normals are balloon-smooth on the pot and pillow-soft on the stones and logs (planar_share 0.051). A is closer and low-cropped, with the foreground fire cut by the card edge and a straighter frame. It has some flat scene layers (planar_share 0.289), though its soup is tilted quite open against frontal posts, so A's view is not clean either.",
+   "fix": "Move in close so the pot fills the frame and the fire is partly cut by the bottom edge. Draw the stones and logs with flat chipped faces rather than pillows, and keep the rim oval moderate."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through a tidier, more inflated space, and the signs are stronger when several occur together. Forms swell toward the camera, as with the cameras' big lenses and the bugle bell. Normals show smooth gradients where real cards keep flat faces. Ground planes bend into curved, dome-like edges, such as round desks and bent decks. The whole object is shown centred with extra props or framing layers, while real cards use a closer, cropped, lower camera with straight ground lines and fewer depth layers. The calls here are moderate at best: the current generated cards mostly hold one viewpoint, so the evidence is subtle, and p01, p03, p04, p06 and p08 are low confidence."
+}

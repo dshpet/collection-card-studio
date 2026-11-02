@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the whistle body is glossy with a smooth turn, and its shadow moves into saturated red at the mouth opening and top slot. The lens shows a neutral, pinkish-grey form. A's form_contrast of 0.32 sits at the bottom edge of the real range, and its white halo is a mild warning. B: the barrel is dull matte orange with fine surface scratches, the shadow under the barrel goes dull brown, and the slot is near-black. There is no cast shadow, and the lens stays one warm orange tone with no cool shadow side, like the generated computer lessons.",
+   "fix": "Smooth glossy toy plastic with no scratches. Soft broad sheen on the top of the barrel, shadow side turning to rich saturated red-orange instead of brown, soft cooler shade along the underside."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the bell and tube are lit almost evenly along their length, with a warm brown lens tone and a centred hot spot inside the bell. There is little sense of a side the light comes from (light_bias 0.191), and the rope tassels are evenly lit cream. B: the bell lip has a crisp bright rim, the bell interior falls away into shadow, and the loop picks up cool blue bounce from the background. Its light has a clearer direction (light_bias 0.431). B's shading_range of 0.827 is only at the real ceiling.",
+   "fix": "Light from the upper left. Bright crisp edge on the left of the bell rim, the underside of the tube falling into deeper shadow, cool blue reflections from the background along the lower curves of the brass."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the cup has a full rounded turn, a bright lit flank, a soft darker core, and warm bounce on the rim and saucer. Its numbers sit inside the real range (0.647 / 0.463). B: the cup wall reads flat grey in the lens with almost no light-to-shadow turn, and the saucer is equally flat. Only the fairly firm dark cast shadow on the left models anything. Its shading_range of 0.482 and form_contrast of 0.318 both fall below every real card.",
+   "fix": "Round the cup with visible light: bright side on the right of the bowl turning smoothly into a darker core on the left, soft reflected glow from the saucer on the underside, softer edge on the cast shadow."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cast shadow is a flat dark ellipse with a firm edge on the table to the left, so it looks pasted on. The basket and apples are lit nearly front-on, with a tinted grey lens and little side-to-side difference (light_bias 0.197, just under the real floor). B: the apples have broad soft sheen and clear turns, the table shadow fades softly to the right, warm bounce pools under the basket, and the lens shows cool lilac highlights on the handle. B's range of 0.812 is only slightly over the real top.",
+   "fix": "Light clearly from one side, with the apples and basket going darker on the far side. Replace the flat oval with a soft shadow that fades away from the basket, dark only at the contact line, and add warm bounce from the table on the lower weave."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the staves are lit nearly flat and front-on, with the same mid value from left to right and only a slight darkening at the edges. The iron bands are evenly grey, and the shadow on the deck is a thin dark strip on the right. Its form_contrast of 0.34 is below the real floor of 0.415. B: the barrel has a real turn, with a bright lit strip on the right-centre staves, a deep shadow side on the left, and a broad soft shadow across the deck. Its form_contrast is 0.488.",
+   "fix": "Light from the upper right. Bright band down one side of the barrel, staves turning smoothly into a deep shadow side, darker core on the iron hoops, wide soft shadow across the deck with a dark contact line under the base."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: small sharp hot spots sit on the chrome bumper, grille and headlamps, and the lens darkens to a vignette at the corners behind the car, as on the generated glove and lighthouse lessons. The road surface carries fine speckle. B: the hood and roof have broad soft sheen, the rounded panels turn smoothly, and a soft cool shadow lies under the car. Its measures slightly overrun the real range on all three fields (0.929 / 0.708 / 0.934), mostly because of the hard rays and high lit top, so the evidence is mixed.",
+   "fix": "Fewer sharp chrome sparkles. Broad soft sheen on the hood and roof, chunkier smooth turns on the body panels, soft cool shadow under the car, no dark vignette behind it."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the tent has one consistent, gentle sun from the upper left. The canvas folds turn softly, the interior is a mid-dark, and dappled shadow lies on the grass. Its numbers are in range (0.616 / 0.53 / 0.517). B: the front flaps are lit with tubular, almost plastic highlights, the roof drops to flat dark grey, and the opening goes near-black. Value jumps sharply between planes with little side-to-side logic (light_bias 0.199), and shading_range of 0.882 is above the real top of 0.831. The tent also casts almost no shadow on the grass.",
+   "fix": "Soft sun from one side. Gentle cloth folds with soft shading instead of shiny tubes, roof only a little darker than the front, soft shadow on the grass along the tent base."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the pot has a smooth round turn with a soft sheen on the upper belly, firelight sits on the underside and on the rocks, and the logs and stones are grounded with contact darkening. Its very low light_bias of 0.046 is a warning, but the composition and light are symmetric and centred on the fire. B: the firelight is a red-orange blotch on the bottom of the pot with speckle over it, and it is not tied to the small flame well below. The upper pot is flat grey, the logs have little contact shadow on the ground, and shading_range of 0.6 sits on the real floor with a dark corner vignette in the lens.",
+   "fix": "Round the pot with a soft sheen on the upper side, firelight fading smoothly up from the base with no speckled patch, flame close under the pot, dark contact shadow beneath the logs and warm glow on the ground around the fire."
+  }
+ ],
+ "pattern": "Generated cards tend to light the hero front-on, or with a light that does not organise the whole object. Shadow sides stay close to the lit side, or planes jump in value without a smooth turn. The lens stays one warm tone, without the real cards' cool shadow side and warm lit side. Cast shadows are flat firm ellipses or thin strips instead of soft fading pools with dark contact lines. Other tells are glow halos or dark vignettes behind the object, small sharp hot spots or speckle in place of broad sheen, and firelight or bounce painted as a local colour patch."
+}

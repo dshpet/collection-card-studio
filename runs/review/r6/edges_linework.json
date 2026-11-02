@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the whole whistle body has one unbroken, even, near-black contour from mouthpiece to round chamber, and a pale glow sits around the silhouette. Its interior is almost empty (subject density 0.039, below the real range). B: the contour is thinner and varies in weight. It weakens along the lit top of the barrel, and the interior has crisp thin lines at the window and mouth, with the sharpest edges at the steel ring.",
+   "fix": "No outline around the whistle. Let the lit upper edge almost melt into the background and keep a crisp edge only on the shadow side. Remove the pale glow behind it. Add thin, precise lines at the window and mouthpiece."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the bell rim carries a heavy doubled dark contour all the way round, and the tube and tassels are ringed by a thick, even line. A: the lit top of the bell and the upper tube nearly dissolve into the background as lost edges, and dark weight appears only on the shadow side of the rim and under the rope. This matches the broken contour on the real glove.",
+   "fix": "Remove the dark line around the bell and tassels. Let the top of the bell fade softly into the bright background, and keep one thin crisp edge only on the shadow side of the rim."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the cup lip and saucer rim are thick, doubled dark rings, and the steam has hard dark edges like drawn ribbons. A: the cup and saucer lines are thinner and lighter, the left side of the cup softens, and the steam is a faint wisp with almost no edge. The one strong line in A is the table horizon.",
+   "fix": "Draw the steam as a soft, faint wisp with no edges. Thin the rings on the cup lip and saucer to a fine, single rim line, and let the lit side of the cup soften."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: a tiny, crowded weave packs in many hard edges (subject density 0.209), and the shadow has a sharp dark rim on the table, so the small basket reads as busy linework. A: wide, plump weave bands give fewer, cleaner internal lines (0.128), closer to the bold simple forms on the real cards. However, A also has a strong contour on the handle and cloth and speckled marks on the apples, so this call is weak.",
+   "fix": "Use fewer, wider, smoother weave bands with thin gaps between them. Soften the far edge of the shadow on the table so it has no hard rim."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the gaps between staves are thick black grooves that vary in weight, doubled under the hoops, and streaks of grain cut across each stave. A: the stave seams are thin and even, the grain is light, and the hoops have fine edges, like the precise seams on the real cards. The densities are close (0.139 vs 0.131), so the difference is in line quality.",
+   "fix": "Make the gaps between staves thin, fine seams rather than deep black grooves. Keep the wood faces smooth with only a few faint grain lines."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the asphalt is covered in fine speckled edge noise, the grille and bumper are stacked with many parallel doubled lines, and the tires have concentric rings. A: the road is clean with crisp lane markings and the body panels have simple lines, although the windshield frame has a thick black doubled contour. Both cards exceed the real subject density range, so neither is clean.",
+   "fix": "Make the road a smooth surface with no grain. Reduce the grille to a few simple bars, drop the extra lines on the bumper and tires, and keep the car's panel seams thin."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: edge hierarchy is inverted. The foliage and tree trunks carry jagged dark contours and heavy clusters (background 0.070), while the tent is the emptiest area with soft edges (subject 0.076, the bottom of the real range). B: the tent has the strongest lines, with crisp trim, ties and ropes (0.111), and the trees behind are softer and fainter (0.057).",
+   "fix": "Blur and simplify the trees behind the tent, with no dark jagged leaf edges. Make the tent the sharpest thing on the card, with crisp folds, trim and thin seams."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the lower pot has a stippled patch of speckled edge noise, and the rim and handle carry a thick, even, doubled black contour that continues around the logs. B: the pot body is smooth with a thin, clean contour. Its dense edges stay at the rope lashings and stew, and the trees behind are faint.",
+   "fix": "Keep the pot body smooth with no speckled scorch texture. Thin the line around the rim and handle to one fine edge, and let the shadow side of the logs define their shape without a drawn outline."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away by treating edges as drawn lines. Their contours are continuous, even in weight and often doubled around the whole silhouette, where real cards break the contour and lose it on the lit side. Their seams are thick grooves rather than thin lines. They also add fine edge noise where real cards stay simple, such as speckled surfaces, wood grain and over-subdivided detail, and this can pull edge attention away from the hero."
+}

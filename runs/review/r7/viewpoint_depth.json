@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both whistles share nearly the same three-quarter view from above, and planar_share is the same (0.56 vs 0.548). On A the top and side melt into one soft swell, and the normal lens shows a smooth gradient across the shoulder with the mouth opening squeezed shallow. On B the top face and side face are separate even patches with a clear corner, the mouth shows real inner walls and floor, and the window is cut deep. A's turn is harder to read. The call is weak.",
+   "fix": "Show the whistle body as a box with a flat top face and a flat side face meeting at a clear rounded corner. Make the mouth opening deep, with its inner floor and walls visible from the same angle as the top face."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B pushes the bell right at the camera. It is huge and takes the upper left of the card, while the mouthpiece shrinks far away, so the perspective is forced and wide-angle. The tassels also swell toward the viewer as if on a different scale. A has the same diagonal pose, but the bell-to-mouthpiece size change is milder and the coil and cord stay in proportion to one flatter view.",
+   "fix": "Use a calm side-on three-quarter view with a gentle perspective. The bell should be only moderately larger than the far end, and the tassels should be small and hang in the same plane as the coil."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A sits at a low camera: a thin rim ellipse, a saucer ellipse that matches it, little tea visible, and a ground that fades softly into the backdrop. B lifts the camera, opening a wide tea surface, and sets a hard horizon line behind a fully separate orange table. The saucer ellipse is slightly more open than the rim, and the cup stands on a visible foot. This matches the lesson pattern of generated cards looking down more than real ones.",
+   "fix": "Lower the camera to just above the cup rim so only a thin sliver of tea shows. Make the rim and saucer equally flat ovals, and let the table fade softly into the background with no hard line."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A is viewed nearly level with the rim: the rim curve is shallow, the bottom curve is rounder, the horizon sits low at about three quarters of the card, and the basket fills the frame close up. B has a higher camera with a more open rim ellipse, the horizon raised to about 60% of the card, more tabletop around the basket, and a long cast shadow. The whole object sits back on a large ground plane, which is the distant, high view seen in the generated lessons.",
+   "fix": "Lower the camera to about the level of the basket rim and move in close. Make the rim a shallow curve, set the table edge low on the card, and show only a narrow strip of table in front."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "On A the view holds together: a thin top rim oval, rounder lower hoops as they go below eye level, and deck boards and side rails that recede into depth. On B the top is opened far (a wide oval showing the inner staves), yet the bottom hoop curves less open than the top, the reverse of how a view from above works. The rail runs flat and straight across behind it at low eye level, and the deck reads at a lower angle than the rim. The barrel's top and bottom do not share one view with the ground.",
+   "fix": "Set the camera just above the barrel top so only a thin oval of rim shows, with each hoop curving a little more toward the bottom. Run the deck boards and side rails back at the same low angle."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Both cabs use a similar low three-quarter front view with a small roof sign and a tilted road edge in the normal lens, and planar_share is close (0.21 vs 0.221). A turns the bumper and grille almost square to the camera with a broad hood. B has a more even turn but larger lane dashes in the foreground. Each is internally consistent enough, and the dash directions match the cars' travel, so neither view is a reliable tell.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both tents have strong convergence toward the rear and a similar ground plane. A's background recedes: the distant pines are soft and low-contrast and nearly vanish in the normal lens, leaving clear foreground, hero and background layers. In B the background pines and trunks are as crisp and contrasty as the tent, with fully modeled normals, so the layers crowd together and only the right side has haze. This rests on depth separation, not camera, and A's higher view of the tent floor weighs slightly against it.",
+   "fix": "Keep the tent sharp and push the forest back: make distant trees paler, simpler and softer with less detail, and leave open space between the tent and the tree line."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A frames the pot close and frontal, with the posts upright, the fire cropped at the bottom edge, and soft flat ground behind. B pulls back to fit everything, including the full stone ring, a large ground patch and a long shadow, seen from a higher angle. The beam shows a cut end on one side while the post tops also tilt toward the viewer. The stones and pot are swollen smooth rainbows in the normal lens, and planar_share is 0.057 against A's 0.289. A has its own unclear overlap where the handle meets the beam, so this is a weak call.",
+   "fix": "Move the camera lower and closer, level with the crossbeam, so the frame is seen nearly straight on with no beam end showing. Let the fire crop at the bottom edge, and give the pot and stones flatter faces instead of a balloon shape."
+  }
+ ],
+ "pattern": "Generated cards still lift the camera too high and step back to fit the whole object: top openings are too wide, more ground is visible, and horizons sit higher than on real cards, which stay low and close. Ellipses often do not agree (a wide-open rim above a flatter base, as on the p05 barrel), so parts do not share one view with the ground. Near parts can balloon in forced perspective, and backgrounds stay as sharp as the hero, with less layer separation. Normals show swollen rainbow forms where real cards keep distinct faces."
+}

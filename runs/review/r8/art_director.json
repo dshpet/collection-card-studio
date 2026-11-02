@@ -1,0 +1,109 @@
+{
+ "issues": [
+  {
+   "issue": "Camera sits too high. On Basket, Barrel and Tent the rim or tent floor opens up and the ground rises, where the real cards stay low with a thin rim and a low floor line.",
+   "specialists": [
+    "viewpoint_depth",
+    "composition_hierarchy"
+   ],
+   "instruction": "Put the camera level with the top edge of the object. Rims are thin slivers, the floor line sits low on the card, and the inside floor of the object stays hidden."
+  },
+  {
+   "issue": "Extra and chunky small parts: rivets on hoops, leaves on apples, tie-backs, orange trim, thick ropes, stump pegs, fat tassels and a fat bugle tube. Real cards use fewer parts, and the small ones are tiny. Slimness is not a rule, though: the real basket has a thick handle and rim, so the old 'rims stay slim' line is dropped.",
+   "specialists": [
+    "shape_proportions",
+    "surface_finish",
+    "staging_detail",
+    "edges_linework"
+   ],
+   "instruction": "Draw only the named object in plain parts. Cords, pegs and tassels are small and fine. Each main part keeps the true thickness of the object."
+  },
+  {
+   "issue": "Light is even and frontal. Barrel, Tent, Tea Cup and Taxi stay bright all over, where real cards drop a whole side into one large shadow. Real shadows stay colorful and pick up the surroundings: red on the whistle, violet on the basket, blue on the barrel hoops and bugle tube.",
+   "specialists": [
+    "lighting_shading",
+    "value_contrast"
+   ],
+   "instruction": "Light from one side. A large shadow crosses the whole form, deep in color and tinted by the background. Keep shading on the big form, not on each small strip."
+  },
+  {
+   "issue": "Background is as loud as the object: electric cyan on Bugle, lime and bright yellow on Tent, strong orchid on Basket. Real backgrounds are softer than the object, as the color measures show on Basket and Tent.",
+   "specialists": [
+    "color_palette"
+   ],
+   "instruction": "Make background colors softer and calmer than the object, so the object is the most saturated thing on the card."
+  },
+  {
+   "issue": "Object sits neat, whole and centered, with room around it. Real heroes are pushed closer and sit off-center, sometimes touching or cropped by an edge, as on Basket, Barrel, Tent and Campfire Cook.",
+   "specialists": [
+    "composition_hierarchy"
+   ],
+   "instruction": "Bring the object close and set it slightly off-center. A corner may touch the card edge."
+  },
+  {
+   "issue": "Surface work is too fine and too real: thin crisp wicker strips, speckled asphalt, tire tread, detailed chrome, hard whistle edges. Real cards use broader, softer painted shapes.",
+   "specialists": [
+    "surface_finish",
+    "edges_linework"
+   ],
+   "instruction": "Paint smooth surfaces with broad shapes and few marks. Shiny materials carry one soft highlight."
+  },
+  {
+   "issue": "Overruled, do not apply. The answer key shows these signs belong to the real cards: the pale halo on the whistle, the dark corners and tall steam on the tea cup, the dark busy forest on the tent, the speckled soot, big pot and cropped fire on the campfire, and the simple taxi with dark window frames and a tilted road. Warm cream porcelain and mauve asphalt are also real, and the generated cards were the cooler ones, so the 'cool neutrals' lesson fails here. Also rejected: making the Bugle bigger, because the real one is the smaller.",
+   "specialists": [
+    "color_palette",
+    "value_contrast",
+    "staging_detail",
+    "edges_linework",
+    "surface_finish",
+    "composition_hierarchy",
+    "shape_proportions"
+   ],
+   "instruction": "Change nothing in the style for these points: no rule against halos, dark corners or soot, and no rule for cool whites."
+  }
+ ],
+ "style_text": "The attached images are real cards from the game. Draw one new card that could sit beside them unnoticed: the same rendering, lighting, finish, color and level of detail.\nDraw the object close, slightly off-center, with true proportions, from a low camera at its top edge, so openings are thin ovals. Small parts stay small.\nOne soft side light leaves a large shadow across the whole form, deep in color, tinted by the background. Surfaces are smooth with broad painted shapes; shiny materials carry one soft highlight. Background colors are softer than the object.\nDraw only what the subject names. No text, letters, numbers, frame, border or watermark.",
+ "cards": [
+  {
+   "pair": "p01 Whistle (B)",
+   "keep": true,
+   "note": "Could pass. Most of the panel picked the real card as the odd one."
+  },
+  {
+   "pair": "p02 Bugle (B)",
+   "keep": false,
+   "note": "Make the bell slightly smaller and the tube slimmer, folded into a narrow overlapping loop. Make the cords thin and the tassels small. Change the background to a calmer, softer teal."
+  },
+  {
+   "pair": "p03 Tea Cup (A)",
+   "keep": true,
+   "note": "Could pass. Its slightly flat shading is too small to justify an edit."
+  },
+  {
+   "pair": "p04 Basket (B)",
+   "keep": false,
+   "note": "Draw larger plain apples with short stems only, filling the basket. Lower the camera so the rim is a shallow curve and the table line sits low. Make the shadow a soft short pool under the basket."
+  },
+  {
+   "pair": "p05 Cargo Barrel (B)",
+   "keep": false,
+   "note": "Make the hoops plain flat steel with a little blue sky reflected in them. Lower the camera so the opening is a thin sliver. Light from one side, with one side of the barrel in a large deep shadow."
+  },
+  {
+   "pair": "p06 Taxi (A)",
+   "keep": true,
+   "note": "Could pass. It is slightly more detailed than the real card, but an edit risks more than it gains."
+  },
+  {
+   "pair": "p07 Tent (B)",
+   "keep": false,
+   "note": "Make the guy lines thin with tiny pegs. Make the tent plain dull ochre canvas with loose door flaps. Lower the camera so the tent floor is hidden."
+  },
+  {
+   "pair": "p08 Campfire Cook (A)",
+   "keep": true,
+   "note": "Could pass. It is tidier than the real card, but only one specialist caught it."
+  }
+ ],
+ "summary": "Close, but not there yet. Four of the eight cards (Whistle, Tea Cup, Taxi, Campfire Cook) fooled most specialists and are kept. Treat that with care: the panel leaned towards B, and all three cards where A was generated are among the four. Bugle, Basket, Barrel and Tent were caught by 7 to 9 of 9 specialists, for concrete, fixable reasons: a raised camera, added chunky parts, even light and loud backgrounds. Much of the reports' advice pointed at real cards, so I overruled it. The real cards are looser and bolder than the panel assumes, so the new style text adds no cleanliness rules and removes the blanket slimness rule."
+}

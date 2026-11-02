@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the whistle body is an even, satin orange plastic with one soft highlight along the top edge, and the sound window has a dark, quiet interior. It reads as moulded matte plastic. B: the body runs from candy orange to hot red, the window interior is saturated glowing red, and the rim lines are thin and bright. The surface looks more lacquered and airbrushed. Measured gloss and detail are nearly equal, so this rests on finish alone and is a weak call.",
+   "fix": "Moulded satin plastic whistle in one orange. Keep the inside of the window dark brown-orange, not glowing red. Use one soft highlight along the top edge and no glossy candy sheen."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the brass is modelled in tight tubing, and the red cord is a fine braid with small, regular strands at small scale, ending in thin fringed tassels. B: the rope is enlarged into fat rubbery coils, and the tassels are big moulded blobs with ribbed folds instead of threads. The brass carries wide, airbrushed bands of highlight. Details are enlarged into chunky toy parts. A's high gloss share (0.177) is the one number against this call, but brass can carry that.",
+   "fix": "Thin braided cord with fine, small strands, wrapped tightly around the tube. Small tassels made of many thin threads, not rubbery lumps. Narrow, crisp highlights on the brass."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cup, saucer and handle are all one lavender-white lacquered vinyl. The flower and leaves sit on it like raised flat stickers with big simple shapes, and the blue rim is a thick glossy tube. B: the body is warm white with a ceramic feel, the small blue flower and leaf sprig read as a painted glaze decal, and the rim line is thin. B is a little soft, but it has the finer detail. A's detail (0.0176) falls below the real range and B's (0.0266) sits at its floor.",
+   "fix": "Warm white glazed porcelain. Paint a small flower and leaf sprig flat into the glaze, not raised. Use a thin blue rim line and a sharp small highlight on the rim, with the rest of the cup softer."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the basket weave is wide, smooth, plastic-looking straps and the handle is a fat rubbery twist. All the apples carry the same white lacquer patch, so basket, fruit and leaves share one glossy toy finish. B: the weave is finer, with a plaited rim, and the apples have soft streaks and a yellow-green cavity, so skin and wicker differ in gloss. B's speckle is close to over-rendering, so confidence stays low.",
+   "fix": "Narrower wicker strips with slight fibre lines and a dry, matte finish. Apples with faint streaks and varied soft highlights, not the same white patch on each. Keep the basket clearly less shiny than the fruit."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the staves carry fine, quiet vertical grain lines and small nicks that follow each board, and the metal hoops have a narrow brushed highlight. B: the staves are smooth saturated orange with large diagonal swooshes for grain that ignore the board direction. The hoops are flat grey with wide soft edges. The grain is big and decorative, not fine, and B's detail (0.0222) sits at the floor of the real range while A's sits near the top.",
+   "fix": "Fine, thin wood grain running along each stave from top to bottom, with small nicks and no big diagonal streaks. Dry matte wood, with steel hoops showing a narrow crisp highlight."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the taxi's paint, chrome and glass are clearly separated, with broad smooth yellow body panels, a simple blue windshield with soft diagonal reflections, and bright chrome. The body is bulgy but the surfaces are clean. B: the windshield is filled with a smeary pale interior of seats, mirror and wipers. Tiny orange lamps and a thin door seam are added, the edges go soft, and the paint is dull and waxy. Detail (0.0558) and micro texture (0.028) both sit above the real range, so this is over-rendered small detail.",
+   "fix": "Simple tinted windshield with one or two soft reflections and no visible interior or wipers. Clean glossy yellow paint and bright chrome trim, with fewer tiny parts."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the canvas is smooth and even with soft fold shading, and the orange flaps, cord-wrapped ties and rope with its eyelet are each a distinct material. B: the canvas has a mottled, dull grey-yellow tone with a faint noisy grain on the roof, the door flaps are soft rolled tubes, and the scene around it is painterly. Its gloss (0.021) falls below the real range. The finish is one muddy matte with brush noise, and there are no separate material accents.",
+   "fix": "Clean smooth canvas in a clear yellow, with soft folds and no mottled noise. Add crisp stitched hems and separate rope ties, with a light satin sheen on the cloth."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the pot belly is covered in dark speckled stipple around the base, like sprayed grit noise. The grey rim is pale and flat, and the iron has almost no sheen. B: the cast iron is smooth dark metal with a clear soft highlight and a thick rim, and it reads against the matte logs and stew, so the gloss range is clearer. A's speckle is visible noise on the hero. Detail numbers are close, so the call comes from the look of the surface.",
+   "fix": "Smooth dark cast-iron pot with a soft sheen on the belly and no speckled spray noise. Add a clean, darker soot gradient near the base and a defined highlight on the rim."
+  }
+ ],
+ "pattern": "Generated cards miss the real cards' scale of detail in one of two directions: details get enlarged into chunky rubbery toy parts such as rope, tassels and wide weave, or fine detail gets over-rendered as stitching, wipers, interiors or speckle. Real cards keep small marks quiet, such as fine grain that follows the form and modest laces. Other tells are one shared lacquer or waxy finish across different materials, the same highlight repeated on each object, decorative grain that ignores board direction, and noisy stipple or smear on surfaces that should be clean. On plain subjects the signal is weak, so several of these calls are low confidence."
+}

@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the whistle is a single orange with brick-red shadow on the round side, set on a rich deep yellow field, and the ring is a cool neutral steel. B: the body runs from orange to hot red-orange, the window and mouth glow pure red, and the field is washed to pale lemon with a white halo around the whistle. The hero is far louder than the ground (chroma 0.189 vs 0.145) and warm share is about 1.0 on both, so the field colour and the red cavities are what separate them.",
+   "fix": "Make the background a deep, even golden yellow with no pale glow around the whistle. Keep the whistle one plain orange, with dark brick-brown inside the openings instead of glowing red."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the brass keeps a yellow-gold body with a dark brown inside the bell, and the lens separates gold from the red cord, though the cord and centre cyan are very pure. B: the brass is pushed to orange and merges with the red cord into one orange-red mass in the lens (2.13 hue families, at the bottom of the real range), on a pale milky turquoise field. This is a weak call because A's pure red and neon cyan are also loud.",
+   "fix": "Paint the bugle yellow brass, not orange, with olive-brown in the shadows, so the brass stays clearly separate from the red cord."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the white cup has cool lavender-grey shadows, with a clear blue rim and flower against a crimson wall and a pale peach table, so the card has a real warm/cool opposition. B: the porcelain is tinted cream-pink, the blue rim and flower are greyed, and the wall, table, shadow and leaf accents all collapse into one red family (1.98 hue families, below the real range).",
+   "fix": "Make the cup clean white with cool blue-lilac shadows. Use a saturated blue for the rim and flower, and give the table a separate light colour from the red wall."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the apples are pure fire-engine red and the basket pushes orange-red, so the lens turns almost everything into one red mass, with little green on the apples and a pale lilac wall as the only rest. B: the apples sit at a deeper crimson, the basket stays amber, and green leaves add an accent; the shadow on the table drops to plum against a stronger violet wall. Both heroes exceed the real chroma range, so the gap is small.",
+   "fix": "Deepen the apples to a crimson with darker wine shadows, keep the basket a straw brown instead of orange-red, and add a few green leaves as a small accent."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the barrel staves are believable tan-brown wood with varied plank tones, and the steel bands stay grey with a cool blue reflection. B: the staves are pushed to one saturated pumpkin orange, with red-brown in the dark side and a hot yellow-orange lip, so the object loses its wood local colour. The same pattern as the lesson gloves: brown leather pushed to orange.",
+   "fix": "Paint the barrel in natural mid-brown oak, with slightly different tan and brown planks and only a little orange in the lit areas."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the taxi body is a clean yellow with a light, even lens mass, a dark neutral road and a strong blue-cyan ray field. B: the paint is pushed toward amber-orange with tan-gold shade patches across the doors and hood, the chrome picks up warm tints, and the sky washes pale around the car. The numbers barely separate them, so this rests on the body hue.",
+   "fix": "Paint the taxi a clean lemon-leaning yellow, not amber, with neutral grey chrome and a deeper blue sky behind it with no pale glow."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the forest is muted, with hazy grey-green distant pines and soft brown trunks, leaving the mustard tent as the warm mass and the lime grass as the only loud area. B: the leaves are acid lime, the sky is saturated blue-cyan, the trunks and tent trim are hot orange, and the yellow flowers add more accents. Background chroma is 0.146 against 0.112, so hero and background are equally loud and nothing rests the eye.",
+   "fix": "Mute the background trees to soft grey-greens and pale misty blues, make the trunks plain brown, drop the orange trim and leave the tent as the only warm colour."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the stones are mauve-grey and the pot is cool blue-black, so neutrals rest against the orange logs and fire, even though the wood is quite orange. B: the stones are warm tan, the grey pot turns to rust with a large red-orange glow on its underside, and the ground is warm brown, so the neutrals are warmed. A weak call because A has the higher warm share (0.619 vs 0.521) and the louder wood.",
+   "fix": "Paint the pot a cool dark iron and the stones a cool grey. Limit the fire glow to a small highlight at the very bottom of the pot."
+  }
+ ],
+ "pattern": "Generated cards warm or tint their neutrals. Whites go cream or peach where real cards keep clean white or grey with cool blue-lilac shadows. Local colours get pushed toward one saturated hue, especially brown wood and leather and brass going to orange, or yellow paint going to amber. Backgrounds lift into bright, pale glows or halos behind the subject, so hero and ground are equally loud and fewer muted areas remain to rest the eye. Shadows stay in the object's own orange-red family rather than dropping to a plum or cool related colour."
+}

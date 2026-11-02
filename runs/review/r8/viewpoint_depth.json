@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the whistle floats at a moderate downward tilt. The mouth end shows only a thin slot, and the turn is mild. B: same pose family, but the near mouth end opens wide, so the inner floor and walls show as crisp patches, and the top window shows a deep inner wall. The near end reads as pushed toward the camera. Planar shares are close (0.56 vs 0.599), so this is a weak call.",
+   "fix": "Turn the whistle slightly less toward the viewer so the mouth end shows as a narrow slot, with a shallow view into the top window and a gentle camera."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the bugle is one tilted three-quarter view. The bell recedes, the tube passes behind and in front of itself in a double coil with clear overlap, and the far mouthpiece gets smaller toward the lower right. B: the bell is hugely enlarged and turned toward the viewer, while the coil and rope are drawn almost flat side-on and the tassels hang front-on. The parts do not share one view, and the size drop from bell to mouthpiece looks forced.",
+   "fix": "Draw the whole bugle from one gentle three-quarter angle, with a smaller bell, the coil tilted the same way as the bell, and tube loops overlapping each other."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the camera sits slightly above the cup, with a straight hard floor line behind it and rim and saucer ellipses that agree. B: a similar height, with slightly narrower ellipses and a floor that fades softly into the wall with no line. Both cups share one view and stand firmly on the ground plane, so the camera gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a low, close camera. The floor line sits low on the card, the rim is a shallow curve, and the apples rise above it. B: a higher camera. The floor line sits at mid-card, the rim reads as an open ellipse with the back edge visible, and the basket looks down into the fruit, like the raised views on the lesson generated cards.",
+   "fix": "Lower the camera to just above the basket rim, so the rim is a shallow curve, the apples stack above it, and the table line sits low on the card."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: eye level is near the barrel top. The top rim is a thin sliver and the hoops open progressively toward the base, so curvature grows down the barrel. The deck planks recede steadily to the rail. B: the rim is opened up to show the inner wall, with a lifted top view, while hoop curvature changes less from top to bottom. The deck reads flatter, and the rail sits at one low band.",
+   "fix": "Lower the camera to the height of the barrel top, so the opening is a thin sliver and only the lower hoops curve more strongly. Let the deck planks run back at a clear angle."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a low three-quarter camera. The roof barely shows, the near wheel and bumper are large but controlled, and the ground line is nearly level with dashes receding along the road. B: a higher camera looking down on the hood and roof. The ground edge is tilted up to the right, and the road slants across the card, so the whole scene looks tipped and toy-like.",
+   "fix": "Lower the camera to headlight height, keep the road horizon level across the card, and show almost none of the roof top."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a low viewpoint near the grass. The long roof side recedes, the ground stays shallow, and the forest behind steps back in several hazy tree layers. B: a raised viewpoint looking into the tent. The inner floor is visible, a wide grass plane tilts up to the viewer, and large near stakes and foreground tufts add a staged foreground layer.",
+   "fix": "Lower the camera to near ground level so the tent floor is hidden, the grass is a thin band, and the tent stands tall against layered, paler trees."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the rim, soup, stones and fire are all seen from the same mild high angle, and the stones sit firmly on one dirt plane. B: the pot rim is a wide open ellipse seen from above, but the crossbeam is head-on and the fire logs are low and front-on, cropped by the bottom edge. The ground bulges like a mound, and the oversized pot does not share a view with what is under it.",
+   "fix": "Use one mild high angle for everything: a smaller pot, a full ring of stones and logs seen from the same height as the pot rim, on flat level ground, with the fire fully inside the card."
+  }
+ ],
+ "pattern": "Generated cards still lift the camera. They show more top face, wider rim openings and more visible ground, and the floor line sits higher or tilts, or curves like a round table. They also enlarge the near part into a forced, swollen foreshortening, and parts can drift out of one shared view. Real cards hold a lower, milder camera with a level ground plane and one projection across the whole object."
+}

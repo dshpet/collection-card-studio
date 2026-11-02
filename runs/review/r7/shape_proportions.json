@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the mouthpiece end is a soft curved blob, the body edges roll into each other, and the ring is squashed against the barrel so its opening nearly closes in the silhouette. B: the mouth is a flat rectangular face with a tight bevel, the top and side planes meet along a straight edge, and the ring is thin, round and clearly separate. Solidity agrees that A is the more massed shape (0.917 vs 0.862).",
+   "fix": "Draw the whistle with flat side faces and a tight bevel where the planes meet. Make the mouth end a straight-edged rectangle, not a rounded lip. Hang a thin round metal ring clear of the body so its full open hole shows."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the bell is oversized and takes up nearly half the card, the tube loop is thick, the rope is a fat knotted lump, and the tassels are large and pleated with thick cords. A: the bell is smaller against the tube, the mouthpiece pipe is slim, the rope wrap is long and narrow, and the tassels are small on thin cords. Thin share supports this (A 0.020, B 0.001).",
+   "fix": "Make the bell smaller relative to the tube and keep the brass tube slim along its whole length. Wrap the rope in a thin, narrow band and hang two small tassels on thin cords."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: wide low cup with its foot nearly hidden, thin flat saucer, slim handle. B: slightly taller cup on a visible foot ring, deeper saucer ellipse from a higher view, handle a touch thicker. Both keep correct part relations and a thin rim, and solidity is the same (0.908 vs 0.911). The differences come from view angle, not swelling.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: adds leaves on three apples plus a wrapped binding on each side of the handle, and the rim is a fat rolled tube around a tall bowl. The contour reads smooth, with corner_rate 0.0 below the real range. A: simpler parts, apples with stems only, handle joining the rim at one wrap, though the apples are large and the rim bulges out at the sides, so the call is not clean.",
+   "fix": "Remove the leaves and the extra handle bindings. Use apples with short stems only, a thinner rim band, and a low wide basket with clear corners where the rim meets the bowl."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the top is a thick, rounded ring of stave ends over a domed contour. Four evenly spaced hoops are studded with rivets, and the bottom corner rounds off softly (corner_rate 0.0). A: a thin, flat top rim with a narrow opening, plain hoops that step crisply off the staves in the silhouette, and paired hoop spacing near each end, as on a real barrel (corner_rate 0.759).",
+   "fix": "Draw thin stave ends and a narrow flat top rim. Use plain metal hoops without rivets, grouped in pairs near the top and bottom, with each hoop stepping out as a crisp edge from the staves."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a stubby toy body with a swollen hood and fenders, oversized fat tyres dropping well below the body, and a thick sausage bumper with heavy overriders. Straight share 0.224 falls below the real range. B: a longer body with a straighter roofline and side, smaller wheels set into the arches, and a slimmer bumper (straight share 0.300).",
+   "fix": "Lengthen the car body and flatten the hood and door panels into straighter runs. Shrink the wheels to sit inside the arches and draw a slim chrome bumper."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: chunky oversized stake logs at three corners with thick ropes, enlarged like toys, and a blunt, squared ridge. B: thin guy lines ending in small pegs and a sharper ridge peak. Its door flaps do roll into tubes, but the thin parts stay thin.",
+   "fix": "Shrink the tent stakes to small pegs and draw the guy ropes as thin lines. Keep the ridge a narrow straight edge."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a near-spherical swollen pot, a thick crossbar with rope lashings, an added hanging loop and ring lugs, and a ring of round stones merging with the pot in the silhouette. Everything is bulked up and extra parts are added. A: a wide shallow pot with a thin flat rim, a slim handle arc over the bar, plain forked posts and no extra hardware (solidity 0.577 vs 0.685).",
+   "fix": "Draw a wider, shallower pot with a thin flat rim and a slim wire handle. Use plain thin posts without rope lashings or an extra hanging loop, and leave a clear gap between the pot and the fire."
+  }
+ ],
+ "pattern": "Generated cards bulk everything up: bodies swell, thin parts such as cords, stakes, tyres and rims become sausages, and corners round into soft blobs, so straight runs and thin_share drop. They also add parts the real simplified card leaves out, such as rivets, lashings, leaves, extra web gaps and rocks. Real cards keep fewer parts, tight stepped edges and slim attachments."
+}

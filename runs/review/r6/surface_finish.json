@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the orange whistle body is smooth and soft, with a slow gradient into red-orange and no surface marks; its detail (0.0093) sits below the real range, which argues against calling it clearly real. B: the barrel and side disc carry a fine mottled grain, and the edge ridges are crisper. That dry, peened surface matches the fine grain on the generated cards in the lessons. The real lesson cards are soft like A.",
+   "fix": "Smooth moulded plastic with a clean, even satin surface, no speckle or grain, and soft rounded edges with one quiet highlight along the top of the barrel."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: polished brass tube with long soft highlights, and a red cord with fine, regular braid ribs. B: the same brass finish with slightly streakier highlights, and a chunkier, softer cord. Both separate metal from fibre, and the detail and gloss numbers are almost identical. Nothing on my vector separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: small crisp bubbles at the right of the tea surface, a hard-edged flat flower decal, and a thick, evenly bright blue rim. B: the porcelain falls off softly, the flower melts slightly into the glaze, and the tea has one soft sheen with no extra surface detail. The added bubbles and the sticker-sharp decal follow the lesson direction, where generated cards add crisp small detail and real cards stay soft.",
+   "fix": "Plain tea surface with one soft sheen and no bubbles; paint the flower softly into the glaze, slightly blurred at its edges, with a thin quiet blue rim."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: broad soft wicker strips, a thick twisted handle, apples with quiet fine flecks, and soft gingham folds. B: a dense, crisply cut weave of many small strips, hard gloss on every apple, shiny added leaves, and a sharp hemmed edge on the cloth. B's gloss share (0.225) is three times A's (0.074). B is uniformly lacquered and over-detailed, as the generated lessons are.",
+   "fix": "Fewer, wider wicker strips with soft edges and a dull dry surface; apples with one soft highlight and faint flecks, no shiny leaves; a soft cloth edge with no hem line."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: wavy dark grain lines of similar size repeat on every stave, reading as decoration, and the hoops are a flat, even grey. B: pale, scratch-like grain varies stave to stave, and the hoops carry changing tones and warm reflections, so metal and wood separate more clearly. The numbers are nearly equal, so this rests only on A's grain looking patterned.",
+   "fix": "Very fine, quiet wood grain that differs from stave to stave, with no repeated wavy lines; steel hoops with a soft moving highlight and a little warm reflection from the wood."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: soft yellow paint with one broad sheen, simple rounded chrome, and a pale windscreen with soft shapes behind it. B: tiny crisp parts everywhere, including seat pleats, a steering wheel, door handles, a ribbed grille, tread on the tyres, hard ball-like mirrors, and a noisy speckled road. B's enlarged, sharply drawn detail is the same over-detailing seen on the generated lessons. A's micro_texture (0.028) and detail (0.0558) are also above the real range, so the call rests on what I see.",
+   "fix": "Remove tread and speckle from the road and tyres; make the grille a few soft bars; keep the windscreen a soft, plain reflection with only faint interior shapes; give the paint one broad soft highlight."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the canvas is soft and nearly markless, with thick rolled door flaps and low gloss, and it sits just under the real detail floor. B: a dry fine weave across the canvas panels, a dashed stitch line on the lower right hem, contrast orange binding, and rope with crisp twists. The dashed stitching is the same mark that gave away the generated baseball gloves in the lessons.",
+   "fix": "Remove the dashed stitch line and the fine weave; draw smooth soft canvas with a few broad folds, plain hems, and simple rope without visible twists."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the pot wall is covered with a dark stippled soot speckle, heavy near the base, and this visible noise makes the pale grey metal look sprayed. B: smooth dark iron with a broad soft sheen and a slight dent-like tonal change, which reads as cast iron. However, B has more added detail in its stew and rope lashings, which keeps my confidence low. No real reference shows stipple like A's.",
+   "fix": "Remove the speckle from the pot; draw dark cast iron with a smooth, dull surface, one broad soft highlight, and a gentle warm glow near the fire."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through surface detail that is too crisp and too plentiful for the card size: dashed stitching, dense weaves, seat pleats, tyre tread, bubbles and speckled noise. Gloss is also spread evenly across every part. Real cards stay soft, leave small parts simple, and give each surface one quiet highlight."
+}

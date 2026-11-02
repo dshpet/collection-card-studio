@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the whistle body is airbrushed wax, with an orange-to-red gradient, no surface variation, and a soft mouth edge and slot. Detail 0.0093 and micro 0.0041 fall below the real range. B: the body is satin plastic with a faint fine surface and quiet sheen along the top, crisp slot and mouth rims, and a separately readable metal ring. Its detail and micro are in range. Both have gloss below the real range, so this is a weak call.",
+   "fix": "Molded satin plastic whistle with a slight fine surface, a narrow soft sheen along the top edge, crisp rims on the slot and mouth, and a cool steel ring with one small bright highlight. No waxy gradient."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the brass is liquid-lacquered, with hard alternating bright and dark bands along the bell and tube. The rope coil is fat and chunky, and the tassels have shiny gold caps. A: the brass is softer, with broad low-contrast sheen, and the rope is a finer, tighter braid that stays matte against the metal. A's gloss_share of 0.177 is slightly above the real range, which argues against this call, but on the card A shows the calmer metal.",
+   "fix": "Soft brushed-brass horn with broad gentle highlights instead of hard mirror bands. Thin tight matte red cord with small strands, and small plain tassels without shiny caps."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the flower is a raised, puffy sticker on the cup with crisp edges. The tea has tiny bubbles at the rim, and the porcelain is lilac-white with a hard-edged blue rim and a defined foot ring. A: the flower sits in the glaze as a flat soft decal, the porcelain is warm with a soft wide sheen, and the tea surface is plain. A's softness matches the real lesson crops.",
+   "fix": "Flat painted flower sitting under the glaze with no raised edges, warm white porcelain with one soft broad sheen, plain smooth tea surface with no bubbles."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the apples are evenly lacquered and smooth, with crisp leaves. The gingham has sharp printed cloth edges, and the wicker is cleanly separated into chunky strips with an even sheen. A: the apples carry fine streaks and speckle around soft highlights, the cloth is softer, and the wicker is less insistent. A's basket does smear in places, so confidence is low.",
+   "fix": "Apples with fine pale skin flecks and soft broad highlights, a soft matte cloth check without crisp print edges, and quieter dry wicker with less shine."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the hoops are brushed metal with evenly spaced round rivets, and the staves have decorative wavy grain in a saturated orange. A: the hoops are plain soft steel with a single gliding sheen and no rivets. The wood has thin, quiet, sparse scratch lines. B's added hardware and patterned grain follow the over-detailing seen in the lessons.",
+   "fix": "Plain steel hoops with a soft single highlight and no rivets. Staves with thin sparse straight grain lines, dry matte wood, no wavy pattern."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the taxi reads as one rubbery toy plastic, with blobby yellow mirrors, thick dark rubber around the pale windshield, and flat, dull grey bumper and hubcap. A: materials separate, with chrome grille, bumper and mirrors holding reflections, tinted glass, and a speckled asphalt. Both cards exceed the real detail and gloss ranges, A more than B, so the numbers do not support this call and the eye evidence is material separation only.",
+   "fix": "Separate the materials: bright chrome bumper, grille and mirrors with sharp small reflections, deeper tinted glass, thin window trim, and satin painted body instead of rubbery toy plastic."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the canvas has no stitching or weave. The hems are thick rolled tubes like clay, the flaps are smooth and felt-like, and detail and gloss sit at or below the real floor. A: the canvas shows a fine weave, a thin dashed seam, a tie band and twisted rope, all at small scale. Dashed stitches were a generated trait on the lesson gloves, so this is a low-confidence call.",
+   "fix": "Woven canvas tent with fine cloth texture, thin flat hems with a small seam, and soft natural folds, not thick rolled clay edges."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the pot has heavy stipple noise, a grainy dotted soot band over pale grey metal with red glow, and the soup is flat with sticker-like slices. B: the iron is dark and smooth with a soft sheen and one small highlight, and the rim is clean. The stew has fine small herbs and varied surface. A's dotted mottling is like the noise on the lesson's generated camera grip, and the real cards keep surfaces clean.",
+   "fix": "Dark cast iron pot with a smooth soft matte surface and one gentle highlight, no dotted soot noise. Thick stew with small herbs and varied surface instead of flat floating slices."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away by surface that is either over-managed or under-differentiated. Materials collapse into one lacquered or rubbery plastic, metal shows hard mirror bands, and small hardware and marks are added as enlarged decoration: rivets, raised sticker motifs, chunky rope, wavy grain, even dashed stitches. Some cards also show dotted noise as a stand-in for wear. Real cards stay softer at 2×, with quiet sparse marks, broad gentle highlights and clearly separated matte and shiny zones. The measured fields rarely separated these pairs on their own: both taxis are out of range, and several in-range cards still look generated."
+}

@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the whistle body is pillowy, waxy orange that melts from orange into red. The window and mouth edges are rounded off, there is no surface mark, and detail and micro-texture fall below the real range. B: flatter faces, a crisp rim at the mouth and window, and a dry moulded-plastic look with faint hairline scuffs on the top face. B's scuffs are slightly suspicious, but its planes match the real cards' flat faces better than A's wax.",
+   "fix": "Hard matte moulded plastic with flat faces and crisp edges around the window and mouth. One small soft highlight along the top edge. No waxy glow and no red bleeding through the surface."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the brass is a dull orange smear with almost no highlight (highlight 0.0), so it reads as painted rather than metal. The rope wrap has ragged, noisy edges and the tubes blur into each other. A: the brass has clean, thin streak highlights on the bell and tube, and the cord is simplified into soft, plump twists. Gloss is above the real range on both, so this rests on highlight quality.",
+   "fix": "Polished brass tube with thin, clean bright highlight streaks along its length and darker reflected bands. Rope drawn as simple soft twists with clean edges, and no noisy fibres."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: small fine details sit on the surface. There are tiny foam bubbles at the tea's edge, a swirl in the liquid, fine orange stamens, and a thin printed-decal flower with a hard, thin blue rim line. A: thick, soft porcelain with a broad, creamy rim highlight. Its flower is simplified and enamel-like, and the tea has one quiet highlight, which matches the real cards' restraint.",
+   "fix": "Thick soft white porcelain with one broad creamy highlight. Tea as a smooth surface with no bubbles or swirl. Simple flower with solid rounded petals, not a fine decal."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: every surface is equally crisp and lacquered, with hard white highlights on the apples and leaves and a hard shine on each weave strip. Gloss is 0.212, near the top of the real range, and detail is high. B: softer apples with broad blurred highlights, a calmer rim and a soft cloth fold, closer to the soft real crops. B's apple speckles are slightly over-observed, so this is a weak call.",
+   "fix": "Soft broad highlights on the apples only. Matte, quiet wicker with simple strips and no shine on each strand. Matte cloth with soft folds."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: saturated orange staves with fine, quiet grain, plus satin bands with round rivets. B: softer staves with longer hairline grain strokes and rivetless satin bands with soft colour variation. Both read correctly as wood and metal, their detail and texture figures almost match, and both sit in the real range. My vector gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a hyper-detailed finish, with realistic chrome bumper and grille bars, a hood ornament, ribbed tyres, fine wheel hubs, visible leather seats and grainy asphalt. Detail 0.0759, micro-texture 0.0334 and gloss 0.232 are all well above the real range. B: simple soft yellow paint, matte-grey hubs and plain trim, also above the range but much nearer it and closer to the real cards' economy.",
+   "fix": "Simplify to soft painted surfaces. Plain grey-silver bumper with one soft highlight, a few simple grille bars, smooth tyres and hubs, and a smooth road with no grain. No small ornaments or interior detail."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the fabric reads as rubbery felt, with thick rolled flap hems, a blotchy mottled roof and no creases or seams. Micro-texture (0.0081) and gloss (0.021) are below the real range. A: thin canvas with fine tension creases on the roof, stitched orange trim, tie bands and a crisply twisted guy rope, so the material reads as cloth at small scale.",
+   "fix": "Thin matte canvas with a few fine tension creases and a narrow sewn trim along the edges. Flat hems, not thick rolled tubes, and no blotchy mottling on the roof."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the pot is covered in a large decorative stipple of dark soot dots that reads as sprayed noise, and the metal has almost no sheen. The rim and handle are flat and blurry, and the soup is smooth paste. A: dark cast iron with a soft specular patch, a few fine scratches, a defined rim with thickness, and small crisp herbs and rope lashings. Its gloss range is more believable.",
+   "fix": "Smooth dark cast iron with one soft satin highlight and a few faint scratches. No speckled soot dots. Rim with a clear lit edge."
+  }
+ ],
+ "pattern": "Generated cards rarely hit the real cards' restraint in finish. They miss in one of two directions. Either they are over-resolved, with tiny photoreal additions such as bubbles, stamens, chrome trim, tyre ribs, stitching and grainy asphalt, or they fall back on a uniform waxy or rubbery skin with pillowy edges. When asked for texture, they scatter stipple, mottling or hairline scratches evenly across a surface, whereas real cards use soft, broad surfaces, one or two clean highlights and only a few simple details. Gloss also tends to be applied evenly rather than concentrated on the material that should be shiny."
+}

@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the whistle barrel falls off softly into mauve at the lower right of the drum, the mouth and window interiors stay saturated, and a pale glow sits behind it with no cast shadow. B: the body turns only into a warm brown, the lens stays a single orange-tan across object and background, and a soft low-contrast cast shadow sits under the barrel. A's halo also looks suspicious and the numbers barely separate them, so this is a weak call.",
+   "fix": "Light the whistle from upper left with a clear shadow side on the lower right of the round drum, letting that shadow go cool and bluish instead of brown; darken the core shadow under the barrel."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the brass turns cool blue-grey along the lower tube, with a soft bright sheen on the bell and a lit lip that fades around the rim. B: the bell interior is a heavy dark brown blot ringed by an even white line, the tube is uniformly warm, and the tassels are pillowy with soft even shading.",
+   "fix": "Inside the bell, use a soft gradient from bright yellow gold to mid orange rather than a dark brown hole; drop the even white line around the rim and let reflected blue from the background run along the underside of the tube."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cup's lens is nearly one flat grey, with a barely visible turn from the left to the right of the bowl, and a dark cast shadow to the left that the cup's own shading does not match. Shading_range 0.416 and form_contrast 0.34 are below the real cards. B: light comes clearly from the right, the bowl turns into a darker left side, the saucer has a lit right edge, and the shadow falls left, all in agreement.",
+   "fix": "Light the cup strongly from the right: bright side on the right of the bowl, a clear darker band down the left side, and a cast shadow on the table falling left from that same light."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: broad soft sheen on large apples, a cool violet shadow on the right of the basket, and a soft shadow blending into the table. B: warm pinkish shading all over, every small weave strip shaded the same way, and a hard-edged dark blob of cast shadow on the left that feels stuck on rather than grounding the basket. The light on the apples does not clearly explain that shadow.",
+   "fix": "Shade the basket as one big rounded form with a large soft shadow side, not each strip separately; make the cast shadow soft, attached at the base, and tinted cool violet."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the staves turn from a lit centre into dark edges, a broad diagonal shadow crosses the barrel's left, and the metal hoops carry cool blue reflections; the lens is deep and dramatic. B: the barrel is lit evenly from the front with pale hoops and a light grey body, so the sides barely darken. Its cast shadow on the right is crisp but the form shadow does not match its strength.",
+   "fix": "Light the barrel from one side: leave one vertical band of staves bright and let the far side drop into deep shadow, with blue sky reflecting on the metal hoops and a dark contact shadow at the base."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the yellow body is lit almost evenly from the front, the turn from roof to door is small, and the light work sits in sharp hot spots on the chrome bumper and grille. B: bright roof and hood planes drop clearly into darker door sides, with a broad shadow under the car, which matches the real cards' side-and-top light. B's measured values exceed the real range on all three fields, which argues against this call, so confidence is low.",
+   "fix": "Light the taxi from above and to one side: bright roof and hood, doors falling into a clearly darker orange-yellow, softer broad sheen on the chrome rather than sharp white spots."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the left roof plane falls into grey shadow while the front flaps are lit, so the two planes separate clearly and the interior goes near black. B: all tent faces share one warm yellow in the lens, the right roof plane is barely below the front, and the light shaft in the sky does not change the tent. Its shadows are thin and low, and the shading looks evenly applied.",
+   "fix": "Put one roof plane in clear cool shadow and keep the front flaps sunlit, with a large soft shadow of the tent falling on the grass on the side away from the sun."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a soft bottom glow from the fire on a dark rounded iron pot with a broad sheen, and cast shadows falling from the posts on the dirt; the fire is an accent. B: a saturated red-orange blob on the pot's underside with speckled soot, warm lens everywhere with a vignette, and no real cast shadow from posts or pot. The pot's fill looks painted on rather than caused by the small fire.",
+   "fix": "Keep the pot dark with a smooth sheen on its upper left, limit the fire glow to a thin soft warm rim at the very bottom, and add soft cast shadows from the posts and pot on the ground."
+  }
+ ],
+ "pattern": "Generated cards tend to light the hero evenly from the front or with one warm tone, so the shadow side stays shallow and goes brown rather than cool. Planes separate less than on real cards, where a clear shadow side with cool bounce sits against a lit side. Cast shadows and glows are added without agreeing with the form shading: stuck-on dark blobs, or a strong local glow from a small practical. Small details are shaded separately rather than the whole form turning as one mass. p01 and p06 were low-confidence calls."
+}

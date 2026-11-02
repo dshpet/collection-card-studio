@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: three-quarter view; the mouth end opens square to the viewer and shows its inner floor, and the ring and lug turn with the body. B: nearly the same camera, but the body tapers harder to a narrower, slit-like mouth, and the ring swings edge-on behind the chamber, as if turned from a different angle than the disc face. Both are clean planar forms, so the gap is small.",
+   "fix": "Keep the same three-quarter view with mild perspective: the body stays nearly even in width to the mouth end, the square mouth opening shows clearly, and the ring turns with the whistle, seen as an open loop."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the bell, straight tube and loop lie in one tilted plane, so the whole bugle reads from one view, with a large bell but a steady tube. B: the tube dives away and tapers hard to a tiny mouthpiece, while the doubled loop sits at its own tilt, not flat with the tube. Its planar_share of 0.002 is below the real range, though a curved object explains much of that. Weak call: A's bell is also oversized.",
+   "fix": "Draw the whole bugle from one gentle side-on view: tube and loop lie flat in the same plane, the tube keeps nearly even thickness toward the mouthpiece, and the bell is only moderately larger because it is nearer."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a crisp straight table edge behind the cup separates the wall from the tabletop, and the saucer and cup rim share one ellipse shape, so the cup sits on a clear ground plane. B: the rim and saucer ellipses also agree, but the floor melts into the wall with no edge; the normals show only a soft smear there, so the cup sits in a vague space.",
+   "fix": "Add a clear straight table edge behind the cup at a consistent height, with the flat tabletop in front and the plain wall behind, so the saucer plainly rests on the table."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: a large basket seen from slightly above, with a crisp straight table edge, the rim gently open and the apples piled above it. B: a smaller basket with almost the same camera height, table edge and frontal handle arc. Both show one consistent view on one flat ground plane, and planar_share (0.054 vs 0.08) does not separate them.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a low camera with only a thin sliver of rim on top; the top hoop is nearly straight and the bottom hoop curves more, and the straight deck planks recede diagonally toward a straight bulwark. B: a higher camera looks well into the open barrel, with all the hoops bowed, and the rail and deck edge curve around it like a round platform. That matches the raised camera and bent ground seen in generated lessons, such as the curved desks.",
+   "fix": "Lower the camera to just above the barrel top so only a thin sliver of the rim shows. Make the deck planks and the rail behind straight, running to one distant point, with no curved platform."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a mild three-quarter view; front and rear wheels are close in size, the roof stays in scale, and the road edge and dashes run along the car at one angle. B: wide-angle forcing; the grille, bumper and near wheel swell toward the viewer while the rear and roof shrink, with bulging smooth rainbow normals on the nose. This is the same close, inflated front seen on generated cameras.",
+   "fix": "Step the camera back and use mild perspective: front and rear wheels nearly the same size, the nose not enlarged, and the car body boxy with flat side panels, its side parallel to the lane markings."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the tent sits firmly on grass whose tufts shrink steadily into distance; trees step back in several layers that fade into haze. B: the ground is a nearly blank plane with a few plants at the front, so its receding scale is weak; the tent's roof panel is a flat even patch, and the front drapes and base appear to turn at a different angle than the side panel. The trees are framed like a stage set around the tent.",
+   "fix": "Let the grass tufts and flowers shrink steadily from the front of the card to the tent, and make the tent front and side meet the ground along straight lines that follow one view. Fade trees gradually into distance."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the stone ring sits between the post feet, so the fire is directly under the pot, and the soup, stones and dirt share one raised view. B: the post feet land mid-card, but the fire sits lower on the card, nearer the camera and cropped by the bottom edge, so it is not under the pot. The pot hangs high in a large empty gap, and its handle passes in front of the beam with no clear attachment. Depth positions do not agree.",
+   "fix": "Place the fire on the ground directly below the pot, in line with the two post feet, with the whole fire in frame. Lower the pot to just above the flames and hook its handle clearly over the beam."
+  }
+ ],
+ "pattern": "Generated cards push the camera closer and higher, which forces perspective: near parts swell, as in big camera lenses and taxi noses, and more top face shows than on the real cards. Ground planes bend into round tables or platforms instead of running straight to one view, and parts can sit at depths that disagree, such as a fire not under its pot. Real cards keep mild perspective, straight ground lines and one shared view. These signs are clear on the barrel, taxi, tent and cauldron, but only weak on the whistle, bugle and cup, and absent on the basket."
+}

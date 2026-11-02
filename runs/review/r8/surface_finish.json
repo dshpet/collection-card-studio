@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A's whistle body is smooth, soft-edged molded plastic with a gentle satin sheen along the top edge and the round side panel. B's body has a dry, fine-grained noise across the barrel and side panel, with crisper, harder edges at the mouth and top window. It reads as a textured render rather than a soft painted surface. Both have very little gloss, so this is a weak call.",
+   "fix": "Smooth molded plastic whistle with no surface grain or speckle, soft satin sheen along the top edge, slightly softened edges around the openings."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A's cord is a thin, tightly wrapped braid with small, even strands and slender tassels, and the brass has long, calm highlights. B's rope is thicker and fuzzier, its tassels are oversized, chunky toy shapes, and the brass carries streaky, smeared highlights around the loop. Detail numbers are almost equal, so the call rests on detail scale and the smear.",
+   "fix": "Thin, tightly wound red cord with small even strands and slim tassels; brass tube with one long clean highlight along its length, no streaky or smeared reflections."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A's cup reads as hard porcelain, with tight highlights on the rim and tea and a clear edge on the foot and saucer rings. B's glaze is hazier: the highlights bloom into the rim, the rim lines on the saucer blur, and the flower-and-sprig decal has smudgy petal edges. A's raised flower is slightly sticker-like, which keeps this uncertain.",
+   "fix": "Hard glazed porcelain with small tight highlights on the rim and saucer edge, crisp painted decal with clean petal edges, no hazy bloom on the glaze."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A has a broad, quiet weave and soft gingham with no cloth grain. Its apples have small painted speckles under one soft highlight. B packs in many thin, crisp wicker strips and gives the gingham a visible noisy cloth texture. Its apples are uniformly lacquered, with hard white highlight spots. B's numbers are about 1.5 to 2.5 times A's on detail and gloss, though still inside the real range.",
+   "fix": "Fewer, broader wicker strips with soft edges; plain smooth gingham without fabric grain; apples with fine painted speckle and one soft highlight, less lacquer."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A's staves have hand-painted hairline grain and a soft worn sheen, and its bands are plain, softly brushed steel. B's bands are studded with evenly spaced round rivets that are enlarged decorative add-ons. Its wood is a uniform, saturated orange with fainter, more regular grain, so the staves look coated.",
+   "fix": "Plain steel hoops without rivets, softly brushed sheen; natural wood staves with fine irregular hairline grain and a dry low-gloss finish."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A separates its materials clearly: reflective chrome on the bumper and grille, rubber tires with tread, and glass with simple diagonal reflections. B's bumper and grille are dull grey with little chrome reflection, and paint, trim and tires share one soft matte finish. Dark sketchy lines around the windshield and wipers replace material cues. Both exceed the real detail range, so the numbers do not separate them.",
+   "fix": "Bright reflective chrome on bumper, grille and headlight rims, glossy yellow paint with soft long highlights, rubber tires with fine tread, windshield as simple glass with soft diagonal reflections."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A's canvas is soft and quiet, with minimal surface marks, though its rolled flaps verge on rubbery. B's canvas has a visible painterly grain across the panels, plus a set of crisp added small parts: orange trim, tie-backs, twisted rope and corner caps. A sits just below the real detail and gloss ranges, so its smoothness is itself a counter-signal and this is a weak call.",
+   "fix": "Plain tent canvas with a soft matte surface, no visible brush or grain texture, simple seams at small scale, fewer trim pieces and ties."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A's pot reads as dark cast iron with a soft specular hotspot, a thin bright rim and clean painted shading. B's pot has a speckled, salt-and-pepper soot pattern over grey metal, which reads as noise rather than material. Its rim is flat grey and its soup is a smooth, flat orange surface with sticker-like vegetables.",
+   "fix": "Dark smooth cast-iron pot with a soft curved highlight and a thin bright rim, no speckled noise; soup with gentle sheen and vegetables partly sunk into it."
+  }
+ ],
+ "pattern": "Generated cards spend surface detail in the wrong way. They add evenly spaced small parts such as rivets, stitches, trims and tiny wicker strips, or scatter uniform grain and speckle across a surface as noise. Real cards stay softer and quieter: fewer marks, broad painted transitions, and clear separation between matte and shiny materials. Generated materials also collapse toward one coating, either lacquered, hazy with bloomed highlights, or dull and matte, with little gloss variation inside one object. On chrome and brass the generated reflections go dull or streaky rather than long and clean. These calls are low to moderate confidence, and the metrics mostly do not separate the pairs; I found no pair where \"neither\" was clearly right, but p01, p02, p03, p06 and p07 are weak."
+}

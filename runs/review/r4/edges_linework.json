@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B has a pale glow around the whistle, and a heavy, unbroken dark line runs along its lower right side and under the barrel. Its mouth slot is also ringed with a thick line. A has no halo: its contour is thin and even, and it fades on the lit top edge and along the mouthpiece. The two are close on density (0.037 and 0.039), both below the real range, so this call rests on the halo and the line weight.",
+   "fix": "Remove the pale glow behind the whistle so the orange meets the background directly. Let the shadow-side edge come only from the color change, with no dark line along it, and let the lit edge nearly fade into the background."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B's tassels and knot are enclosed by a thick, continuous dark contour, and the bell has a hard black arc down its right rim, like an inked sticker. Inside the shapes there are only a few broad folds. A's bell rim fades on the left side, the tube edges are lighter, and the dark edge is confined to the shadow side of the bell and the rope. A's subject density (0.138) sits well in the real range, while B's (0.069) is low.",
+   "fix": "Remove the dark contour around the tassels and knot. Separate them from the background with color and shading alone, and let the bell rim soften where it catches light."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B's rim and saucer are drawn with crisp, dark double lines of nearly the same weight all the way around, and the cup base has a hard black arc. The small flower is packed with tight little edges. A's saucer and handle edges thin out and nearly vanish on the lit side, with only the inner rim and shadow side strong, which is how real-card contours behave. The measurements do not separate them cleanly: A's subject density (0.066) is below the real range and B's (0.113) is inside it.",
+   "fix": "Paint the rim and saucer as soft porcelain edges with no dark ring. Let the lit side of the saucer and handle fade softly, and keep the flower as one simple shape with few inner edges."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B's apples are covered in rows of tiny speckle edges. The rope handle is cut by many tight dark grooves, and the weave is split into small strips with a heavy line under the rim. A has large smooth apples with a single highlight shape, and broad weave bands with simple seams. A's background density (0.025) is slightly above the real range and comes from the table line and shadow edge, not from the hero, so I weight it less than B's fine-grain edges.",
+   "fix": "Remove the speckles from the apples so each one is smooth with one clean highlight. Use fewer, wider basket strips and fewer shallow grooves on the handle."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B's staves are separated by thick dark grooves, with heavy lines above and below each metal hoop. Between those grooves the wood is almost empty, apart from a few stray diagonal strokes on the staves. Its subject density (0.075) is below the real range and its background density (0.052) is above it. A's seams are also dark and a little wobbly, and its grain streaks are busy, but its density figures fall inside the real ranges. The evidence is weak because both cards have strong seams.",
+   "fix": "Make the gaps between staves thin, precise lines instead of wide dark grooves. Drop the stray diagonal marks and soften the lines around the hoops. Keep the deck and railing quieter than the barrel."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B's windshield and side windows are framed by thick double black lines, and the grille is a dense cage of small edges. Its subject density (0.203) is above the real range of 0.087 to 0.179. A's body panels have softer, thinner seams and the hood edges fade out. The strongest lines are limited to the grille, wheels and checker pattern, and its density (0.167) is inside the range.",
+   "fix": "Remove the thick dark frame around the windows and use a thin, simple rubber trim. Simplify the grille to a few wide bars. Keep door seams as thin, faint lines."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B's tree canopies are broken into dense clusters of small leaf edges, with busy trunks and pines behind the tent, so the background has more edges than the hero and competes with it. The tent has a hard black line down the door flaps and along the ridge. A's tent has soft, broad fold transitions, and its background is simpler, with larger forms (0.058 against 0.070). A's canopy outline at the top is still strong, so this is not a clean separation.",
+   "fix": "Paint the forest as large soft masses with few leaf details and softer edges than the tent. Replace the black lines on the door flaps with a soft shadow where the fabric folds."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's cauldron body is filled with a noisy stipple of tiny specks across its lower half. That is the same fine-noise edge texture the generated cards show on the camera grip and lighthouse bricks. It is the only part of the hero with that grain, and it sits against otherwise smooth areas. B's pot is a clean, smooth surface with one soft highlight and strong edges only at the rim, logs and base. B's lines are fairly heavy, but its internal edge structure matches the real cards better.",
+   "fix": "Remove the speckled soot grain from the pot. Paint a smooth dark iron surface with one soft highlight and a gentle glow from the fire."
+  }
+ ],
+ "pattern": "Generated cards still show up through line behavior more than through density alone. Their contours are heavy, continuous and even in weight, like inked outlines, where real cards break and lose edges on the lit side and darken only on the shadow side. Other tells are soft pale halos behind the hero, thick double lines around windows and rims, wide dark grooves instead of thin seams, and fine edge noise (speckles, stipple, dense rope, leaf or grille detail) in places where real cards keep large smooth shapes. Edge hierarchy also slips when the background carries as much detail as the hero."
+}
