@@ -1,102 +1,70 @@
-"""Model estimates per card: subject mask, depth, normals and shading, saved to analysis/derived."""
+"""Model estimates per card: subject mask, depth, attention, normals and shading, in analysis/derived.
+
+BiRefNet, Depth Anything 3 and DeepGaze run external code, pinned here to the reviewed revisions.
+None of these models needs the Hugging Face key. See README.md for the two source checkouts.
+"""
 
 import argparse
+import sys
+from unittest.mock import MagicMock
+from urllib.request import urlretrieve
 
-from common import ANALYSIS, DERIVED, ROOT, cards, load_json, load_token  # first: sets the model cache
+from common import DERIVED, MODELS, ROOT, cards  # first: sets the model cache
 
 import numpy as np
 import torch
 from PIL import Image
-from skimage import filters, measure, morphology
 
-PAD = 0.015
-
-
-def rated_boxes(record, size):
-    """Every rater's box in pixels. Some raters answer on a 0-1000 scale."""
-    boxes = []
-    for rater in ("codex", "claude", "gemma4", "qwen3.8"):
-        path = ANALYSIS / "ratings" / rater / f"{record['id']}.json"
-        if path.exists():
-            box = load_json(path)["subject_box"]
-            values = [box[side] for side in ("x0", "y0", "x1", "y1")]
-            if max(values) > 1:
-                values = [v / 1000 for v in values]
-            width, height = size
-            boxes.append([max(0, (values[0] - PAD) * width), max(0, (values[1] - PAD) * height),
-                          min(width, (values[2] + PAD) * width), min(height, (values[3] + PAD) * height)])
-    return boxes
+BIREFNET_REVISION = "e2bf8e4460fc8fa32bba5ea4d94b3233d367b0e4"
+DEPTH_REVISION = "f465978e618db8cc79c83b8bbf24964857db1875"
+CENTER_BIAS = "https://github.com/matthias-k/DeepGaze/releases/download/v1.0.0/centerbias_mit1003.npy"
 
 
-def depth_box(depth):
-    """The box around the largest region standing out from the background in depth."""
-    regions = measure.label(depth > filters.threshold_otsu(depth))
-    largest = max(measure.regionprops(regions), key=lambda region: region.area)
-    y0, x0, y1, x1 = largest.bbox
-    return [float(x0), float(y0), float(x1), float(y1)]
+def run_deform_conv_on_cpu():
+    """The CPU torchvision wheel has no GPU kernel for this op, which BiRefNet needs."""
+    import torchvision.ops as ops
 
+    original = ops.deform_conv2d
 
-def union(first, second):
-    return [min(first[0], second[0]), min(first[1], second[1]),
-            max(first[2], second[2]), max(first[3], second[3])]
+    def wrapped(input, offset, weight, bias=None, mask=None, **options):
+        move = lambda tensor: None if tensor is None else tensor.cpu()
+        result = original(move(input), move(offset), move(weight), move(bias), mask=move(mask), **options)
+        return result.to(input.device)
 
-
-def separation(mask, depth):
-    """How far the mask stands out in depth from the ring around it. Rejects bad masks."""
-    share = mask.mean()
-    if not 0.03 < share < 0.85:
-        return -1.0
-    ring = morphology.dilation(mask, morphology.disk(10)) & ~mask
-    if not ring.any():
-        return -1.0
-    frame_contact = np.concatenate((mask[0], mask[-1], mask[:, 0], mask[:, -1])).mean()
-    return float(depth[mask].mean() - depth[ring].mean()) - 0.6 * float(frame_contact)
-
-
-def clean(mask):
-    """Drop specks and fill small holes."""
-    labels = measure.label(mask)
-    keep = [r.label for r in measure.regionprops(labels) if r.area >= 0.03 * mask.sum()]
-    return morphology.remove_small_holes(np.isin(labels, keep), max_size=int(0.08 * mask.size))
+    ops.deform_conv2d = wrapped
 
 
 def write_masks(records, device):
-    from transformers import Sam2Model, Sam2Processor
+    from torchvision import transforms
+    from transformers import AutoModelForImageSegmentation
 
-    repo = "facebook/sam2.1-hiera-large"
-    processor = Sam2Processor.from_pretrained(repo)
-    model = Sam2Model.from_pretrained(repo).to(device).eval()
+    run_deform_conv_on_cpu()
+    model = AutoModelForImageSegmentation.from_pretrained(
+        "ZhengPeng7/BiRefNet", revision=BIREFNET_REVISION, code_revision=BIREFNET_REVISION,
+        trust_remote_code=True).float().to(device).eval()
+    prepare = transforms.Compose([transforms.Resize((1024, 1024)), transforms.ToTensor(),
+                                  transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))])
     folder = DERIVED / "masks"
     folder.mkdir(parents=True, exist_ok=True)
     for record in records:
         out = folder / f"{record['id']}.png"
-        image = Image.open(ROOT / record["file"]).convert("RGB")
-        rated = rated_boxes(record, image.size)
-        if out.exists() or not rated:
+        if out.exists():
             continue
-        depth = np.asarray(Image.open(DERIVED / "depth" / f"{record['id']}.png"), dtype=np.float32) / 65535
-        from_depth = depth_box(depth)
-        boxes = rated + [from_depth] + [union(box, from_depth) for box in rated]
-        boxes = [box for box in boxes if box[2] > box[0] and box[3] > box[1]]
-        inputs = processor(images=image, input_boxes=[boxes], return_tensors="pt").to(device)
+        image = Image.open(ROOT / record["file"]).convert("RGB")
         with torch.inference_mode():
-            output = model(**inputs, multimask_output=True)
-        masks = processor.post_process_masks(output.pred_masks.cpu(), inputs["original_sizes"])[0].numpy() > 0
-        confidence = output.iou_scores.squeeze(0).cpu().numpy()
-        options = [(masks[b, m], 0.25 * confidence[b, m])
-                   for b in range(masks.shape[0]) for m in range(masks.shape[1])]
-        options += [(~mask, 0.0) for mask, _ in options]  # SAM sometimes outlines the background
-        options.append((depth > filters.threshold_otsu(depth), 0.0))
-        best = max(options, key=lambda option: separation(option[0], depth) + option[1])[0]
-        Image.fromarray((clean(best) * 255).astype(np.uint8)).save(out)
+            mask = model(prepare(image)[None].to(device))[-1].sigmoid()[0, 0].cpu().numpy()
+        Image.fromarray((mask * 255).astype(np.uint8)).resize(image.size).save(out)
 
 
 def write_depth(records, device):
-    from transformers import AutoImageProcessor, AutoModelForDepthEstimation
+    """Depth Anything 3. Its export and pose modules need a 3D stack that depth does not use."""
+    sys.path.insert(0, str(MODELS / "src/da3/src"))
+    sys.modules["depth_anything_3.utils.export"] = MagicMock()
+    sys.modules["depth_anything_3.utils.pose_align"] = MagicMock()
+    from depth_anything_3.api import DepthAnything3
 
-    repo = "depth-anything/Depth-Anything-V2-Small-hf"
-    processor = AutoImageProcessor.from_pretrained(repo)
-    model = AutoModelForDepthEstimation.from_pretrained(repo).to(device).eval()
+    model = DepthAnything3.from_pretrained("depth-anything/DA3MONO-LARGE", revision=DEPTH_REVISION)
+    model = model.to(device).eval()
     folder = DERIVED / "depth"
     folder.mkdir(parents=True, exist_ok=True)
     for record in records:
@@ -104,13 +72,43 @@ def write_depth(records, device):
         if out.exists():
             continue
         image = Image.open(ROOT / record["file"]).convert("RGB")
-        inputs = processor(images=image, return_tensors="pt").to(device)
+        depth = model.inference([image]).depth[0]
+        near = 1 / np.maximum(depth, 1e-6)  # near is bright
+        low, high = np.percentile(near, [0.5, 99.5])
+        near = np.clip((near - low) / (high - low + 1e-9), 0, 1)
+        Image.fromarray((near * 65535).astype(np.uint16)).resize(image.size, Image.BICUBIC).save(out)
+
+
+def write_attention(records, device):
+    """DeepGaze IIE: where people are predicted to look."""
+    from scipy.ndimage import zoom
+    from scipy.special import logsumexp
+
+    sys.path.insert(0, str(MODELS / "src/deepgaze"))
+    sys.modules.setdefault("clip", MagicMock())  # only other DeepGaze models need it
+    import deepgaze_pytorch
+
+    bias_path = MODELS / "centerbias_mit1003.npy"
+    if not bias_path.exists():
+        urlretrieve(CENTER_BIAS, bias_path)
+    template = np.load(bias_path)
+    model = deepgaze_pytorch.DeepGazeIIE(pretrained=True).to(device).eval()
+    folder = DERIVED / "attention"
+    folder.mkdir(parents=True, exist_ok=True)
+    for record in records:
+        out = folder / f"{record['id']}.npy"
+        if out.exists():
+            continue
+        image = np.asarray(Image.open(ROOT / record["file"]).convert("RGB"), dtype=np.float32)
+        height, width = image.shape[:2]
+        bias = zoom(template, (height / template.shape[0], width / template.shape[1]), order=0, mode="nearest")
+        bias = bias - logsumexp(bias)
         with torch.inference_mode():
-            depth = model(**inputs).predicted_depth
-        depth = torch.nn.functional.interpolate(depth[None], image.size[::-1], mode="bicubic")[0, 0]
-        depth = depth.cpu().numpy()
-        depth = (depth - depth.min()) / (np.ptp(depth) + 1e-9)
-        Image.fromarray((depth * 65535).astype(np.uint16)).save(out)
+            density = model(torch.tensor(image.transpose(2, 0, 1)[None]).to(device),
+                            torch.tensor(bias[None], dtype=torch.float32).to(device))
+        density = torch.exp(density)[0, 0].cpu().numpy()
+        np.save(out, density.astype(np.float32))
+        Image.fromarray((density / density.max() * 255).astype(np.uint8)).save(out.with_suffix(".png"))
 
 
 def write_marigold(records, device):
@@ -147,13 +145,13 @@ def write_marigold(records, device):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("steps", nargs="+", choices=("masks", "depth", "marigold"))
+    parser.add_argument("steps", nargs="+", choices=("masks", "depth", "attention", "marigold"))
     parser.add_argument("--device", default="cuda")
     parser.add_argument("--limit", type=int)
     args = parser.parse_args()
-    load_token()
     records = cards()[:args.limit]
-    steps = {"masks": write_masks, "depth": write_depth, "marigold": write_marigold}
+    steps = {"masks": write_masks, "depth": write_depth, "attention": write_attention,
+             "marigold": write_marigold}
     for step in args.steps:
         steps[step](records, args.device)
         print("done", step, flush=True)

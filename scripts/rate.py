@@ -24,7 +24,6 @@ CATEGORIES = """art_category uses the art guide:
 
 CARD_PROMPT = f"""You are a senior game art director. Fill the form for this mobile-game collection card.
 Judge only what is visible. Use the scales evenly: 3 is typical for stylised mobile-game art.
-subject_box is the tight box around the main subject, with values from 0 to 1 and the origin at top left.
 {CATEGORIES}
 {guide(CARD_FORM)}"""
 

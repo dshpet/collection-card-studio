@@ -112,8 +112,10 @@ def measure_card(record):
         low, high = np.percentile(shading[mask], [5, 95])
         lighting["shading_range"] = round(float(high - low), 3)
 
-    separation = depth[mask].mean() - depth[outer_ring].mean() if outer_ring.any() else 0.0
-    frame_contact = float(np.concatenate((mask[0], mask[-1], mask[:, 0], mask[:, -1])).mean())
+    attention = np.load(DERIVED / "attention" / f"{card_id}.npy").astype(np.float64)
+    attention = attention / attention.sum()
+    peak_y, peak_x = np.unravel_index(np.argmax(attention), attention.shape)
+    filled_density = attention[attention > 0]
     return {
         "color_palette": {
             "palette_subject": palette(rgb[mask], lab[mask], 5),
@@ -139,6 +141,10 @@ def measure_card(record):
             "center_x": round(float(xs.mean() / width), 3),
             "center_y": round(float(ys.mean() / height), 3),
             "margin_min": round(float(min(x0 / width, y0 / height, 1 - x1 / width, 1 - y1 / height)), 3),
+            "attention_on_subject": round(float(attention[mask].sum()), 3),
+            "attention_peak_x": round(float(peak_x / width), 3),
+            "attention_peak_y": round(float(peak_y / height), 3),
+            "attention_spread": round(float(np.exp(-(filled_density * np.log(filled_density)).sum()) / attention.size), 3),
         },
         "shape_proportions": {
             "solidity": round(float(main.solidity), 3),
@@ -164,7 +170,6 @@ def measure_card(record):
             "background_depth_range": round(float(
                 np.percentile(depth[background], 95) - np.percentile(depth[background], 5)), 3),
         },
-        "mask_quality": round(float(separation) - frame_contact, 3),
     }
 
 

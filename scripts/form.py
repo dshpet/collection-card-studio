@@ -157,8 +157,7 @@ def _sections(form):
 
 
 def card_schema():
-    box = _object({side: {"type": "number"} for side in ("x0", "y0", "x1", "y1")})
-    return _object({"subject_box": box, **_sections(CARD_FORM)})
+    return _object(_sections(CARD_FORM))
 
 
 def set_schema():
