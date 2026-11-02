@@ -1,9 +1,14 @@
-# Analysis environment top-level pins; installed with prior parent approval.
-# Record only: do not install automatically. See analysis/environment-lock.txt.
-scikit-image==0.26.0
-colour-science==0.4.7
-PyWavelets==1.10.0
-POT==0.9.7.post1
-Pillow==13.0.0
-numpy==2.5.4
-scipy==1.18.1
+# Elsewhere, a plain install works. On this ROCm machine torch comes from the system
+# (venv with --system-site-packages) and torchvision from the PyTorch CPU index, --no-deps.
+colour-science
+diffusers
+huggingface_hub
+numpy
+open_clip_torch
+pillow
+scikit-image
+scikit-learn
+scipy
+torchvision
+transformers
+umap-learn
