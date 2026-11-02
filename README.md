@@ -2,18 +2,29 @@
 
 Turn a theme and free-form producer wishes into 3–5 complete ten-card sets that could sit next to the [reference collection](materials/02_collection_explanation.md). Full brief: [task](materials/01_task_description.md), [art guide](materials/03_art_guide.md), [Miro board](https://miro.com/app/board/uXjVEUZR5u0=/).
 
-**Status:** reference analysis done. No cards generated yet.
+**Status:** the pipeline runs end to end. Three film-genre sets with three variants each are in `runs/`.
 
-Start with the [findings](analysis/SYNTHESIS.md). Open `analysis/report.html` for the dashboard. It reads card images from `materials/`.
+Findings: [analysis/SYNTHESIS.md](analysis/SYNTHESIS.md). Dashboard: open `analysis/report.html`, which reads images from `materials/` and `runs/`.
 
-## Plan
+## Make a set
 
-1. ~~Analyse all 160 reference cards and 16 sets in one universal form.~~
-2. Plan sets as topics with 1–3 word names. A story behind a set is optional.
-3. Pick objects as a whole set: theme fit, variety, and all four non-gold categories.
-4. Generate cards with style references. Codex is the working generator.
-5. Check generated cards with the same form, then correct failures.
-6. Deliver three movie-genre sets, the comparison with the references, and the process on Miro.
+```sh
+.venv/bin/python -B scripts/make_set.py "Western" --wishes "A set for a Movie collection" --variants 3
+```
+
+It plans the set, picks reference cards, draws every card, checks each one against the reference analysis and redraws failures. Results land in `runs/<slug>/`: the cards in `variant_N/`, a sheet per variant, and `report.md`. Rerunning continues where it stopped. A run of 30 cards takes about 25 minutes.
+
+It needs the Codex and Claude CLIs logged in, the board images in `materials/`, and `analysis/embeddings/` from `scripts/embed.py`.
+
+`scripts/draw.py` holds the generator, so another model replaces one function. After changing the generator or the check, run `scripts/validate.py off-style` and `scripts/validate.py acceptance`.
+
+## How the analysis feeds generation
+
+- **Planning:** real character-free sets are the examples, and their ranges set the rules (`knowledge.json`).
+- **Prompts:** the style text and category rules come from the findings (`scripts/style.py`).
+- **References:** each card gets three real cards with the same category and backdrop, and a similar object where possible (`cards.json`).
+- **Checks:** every card is measured like the references and compared with per-category ranges, the style embedding and a blind rater.
+- **Correction:** each failed check maps to one fix sentence for the redraw (`scripts/style.py`).
 
 ## Layout
 
@@ -23,6 +34,7 @@ Start with the [findings](analysis/SYNTHESIS.md). Open `analysis/report.html` fo
 | `sources/` | Board export and image manifests with hashes. |
 | `research/` | Research reports. |
 | `analysis/` | Analysis outputs. `knowledge.json` is what the generator reads. |
+| `runs/` | Generated sets and control tests. |
 | `scripts/` | Pipeline scripts. |
 | `PROCESS.md` | What was tried and why. Draft. |
 

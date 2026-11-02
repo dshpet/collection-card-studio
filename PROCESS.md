@@ -46,3 +46,18 @@ Decisions:
 - Added Marigold normals and shading, DeepGaze attention, and embedded each card as whole, subject and background with DINOv2, SigLIP 2 and CSD.
 - Dropped star counts because the readings were unreliable.
 - Main results: the look is a soft 3D render, sets hold together by idea rather than look, and five sets without characters are the closest models for the movie sets.
+
+## 2026-11-02: Independent review
+
+- Three fresh agents audited the data, checked the findings against the cards and reviewed the fit with the task.
+- Two findings were wrong and were corrected: sets do share a look, and their variety is no better than chance. "No-gold" sets were also misnamed.
+- The review surfaced traits the form had missed, so a backdrop section was added: pattern, tone, glow and surface kind. These are among the most reliable fields.
+
+## 2026-11-02: First end-to-end pipeline
+
+- Built one command: plan, brief, draw, check, correct, deliver. Generated cards go through the same analysis as the references.
+- First try, one Western set: 8 of 10 passed. The same set without references: 6 of 10.
+- Negative control: the check rejected all six wrong-style images (photo, vector, pixel, watercolor, line art, clay).
+- Full run: three genres, three variants each, 90 cards. 66 passed first time, redraws rescued 8 more, and 16 were left for review.
+- Acceptance test: one generated card hidden among nine real ones. Codex and Claude found it 5 times in 48, which matches the 10% chance rate.
+- Known weak spots: horror drifted to Halloween and antiques, environment cards came out too detailed, several objects read poorly, and correction rounds rarely help.

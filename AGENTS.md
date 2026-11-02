@@ -6,7 +6,8 @@
 - `.env` holds `HUGGING_FACE_API_KEY`. Never print or commit it, and keep it away from external code.
 - External code is pinned to reviewed revisions. Review again before changing one.
 - Sets are topics with 1–3 word names. Rarity does not change the art.
-- Codex is the working generator. Generation waits until reference analysis is done.
+- Codex is the working generator, behind `draw()` in `scripts/draw.py`.
+- A pipeline change should be judged with `scripts/validate.py` and by looking at the cards.
 - In analysis, keep measured, model-estimated and rated fields distinct.
 - Reference cards are 430×480, which limits conclusions about fine detail.
 - Findings live in `analysis/SYNTHESIS.md`. The form lives in `scripts/form.py`.
