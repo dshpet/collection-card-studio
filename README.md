@@ -2,9 +2,9 @@
 
 Turn a theme and free-form producer wishes into 3–5 complete ten-card sets that could sit next to the [reference collection](materials/02_collection_explanation.md). Full brief: [task](materials/01_task_description.md), [art guide](materials/03_art_guide.md), [Miro board](https://miro.com/app/board/uXjVEUZR5u0=/).
 
-**Status:** the pipeline runs end to end. Film-genre sets are in `runs/`, the first run in `runs/first/`.
+**Status:** the pipeline runs end to end. The three final film-genre sets are in `runs/final/`, and every variant is in `runs/western`, `runs/sci-fi` and `runs/horror`.
 
-Findings: [analysis/SYNTHESIS.md](analysis/SYNTHESIS.md). Style mismatches and fixes: [analysis/STYLE_GAPS.md](analysis/STYLE_GAPS.md). Dashboard: open `analysis/report.html`, which reads images from `materials/` and `runs/`.
+Findings: [analysis/SYNTHESIS.md](analysis/SYNTHESIS.md). Style mismatches and fixes: [analysis/STYLE_GAPS.md](analysis/STYLE_GAPS.md). Our sets against the references: [analysis/COMPARISON.md](analysis/COMPARISON.md). Dashboard: open `analysis/report.html`, which reads images from `materials/` and `runs/`.
 
 ## Make a set
 
@@ -43,7 +43,7 @@ It needs the Codex and Claude CLIs logged in, the board images in `materials/`, 
 | `research/` | Research reports and per-vector notes. |
 | `analysis/` | Analysis outputs. `knowledge.json` is what the generator reads. |
 | `analysis/agents/` | Specialist art reviewers, one per vector, plus the art director. `VOCABULARY.md` and `TOOLS.md` are their language and evidence. |
-| `runs/` | Generated sets, twin rounds in `twins/`, reviews in `review/`, drift in `drift/`, the first run in `first/`. |
+| `runs/` | Final sets in `final/`, their variants beside it, twins in `twins/` and `twins40/`, reviews in `review/`, drift in `drift/`, early runs in `first/` and `pilot/`. |
 | `scripts/` | Pipeline scripts. |
 | `PROCESS.md` | What was tried and why. Draft. |
 
