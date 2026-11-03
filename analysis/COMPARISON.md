@@ -43,6 +43,7 @@ Our sets sit inside or at the edge of the real ranges. Horror is the least unifi
 
 ## Where we still differ
 
+- **Variants:** the third variant of Horror and of Sci-Fi is weaker in idea. Armchair, Rocking Horse and Space Food fit the topic only beside the others. The planner now asks for objects that name the topic on their own.
 - **By eye:** real cards look a little softer and quieter than ours. Ours are slightly tidier.
 - **Classifier:** a DINOv3 classifier still separates real cards from their redraws, at AUC 0.84 on the whole card. The old style scored 0.86. Style moved less on this measure than by eye, so part of the gap may be a generator fingerprint no viewer would see, but that is not proven.
 - **Blind review:** on unseen same-object pairs, specialists are at chance: right 47% of the time when they choose a side, against 71% for the old style. On pairs of different objects they pick the generated card 75% of the time, but they also accuse a real card on 59-69% of hidden real controls, so that number is weak.
