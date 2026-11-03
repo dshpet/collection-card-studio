@@ -28,6 +28,8 @@ Field drift is the mean distance from the real median, 0 to 0.5. Real-likeness c
 
 Below 50% means reviewers mistook the real card for the fake: r3 went past the target, into realism. That bracket located the target between r2 and r3. The real look is simplified but not inflated.
 
+**Second vendor.** With the same lessons, GPT-6.1 specialists caught baseline 46 times and missed 6, abstaining 20 times. On r8 they caught 11 and missed 39, abstaining 22. So an unrelated model also fails to separate r8, and leans slightly toward calling the real card the fake.
+
 ## Mismatches
 
 | Vector | Mismatch | Cause | Fix |
