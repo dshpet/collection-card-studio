@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the cap's board is a bright top plane over a dark skull cap, with a clean light-to-shadow break at the front edge and a cool neutral lens. B: the boot shaft and vamp stay at one warm mid value, with only a thin dark strip down the back and heel. There is no real shadow side, and the lens stays orange, as on the generated lesson cards. Neither card has a cast shadow. A's shading_range sits slightly above the real band, so the call is weak.",
+   "fix": "Light the boot from the upper left. Let the right third of the shaft and the back of the foot fall into a clear cool, darker shadow side, and keep one soft broad sheen on the toe."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the rope coils have a top-lit roll on each strand and dark gaps between coils, and the lower coils are darker than the upper ones. B: the scarf's tails and collar are near-even all over, with soft sheen and only the inside of the collar dark. form_contrast 0.256 is below the real band, so the cloth folds barely turn into shadow.",
+   "fix": "Light the scarf from the upper left. Make each fold turn clearly from lit red to deep shadow red, and darken the right tail and the underside of the collar so the cloth has a lit side and a shadow side."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the jacket body, sash and pockets are lit almost frontally, with small dark creases rather than a shadow side, and the lens stays olive and tan like generated cards. B: the hat has a clear cool shadow under the brim and inside the crown dent, a broad soft turn across the crown and a thin bright rim on the brim edge, close to the real glove lens.",
+   "fix": "Light the jacket from the upper left. Let the right sleeve and right side of the body fall into one connected, cooler shadow, rather than a dark crease around every pocket."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the anchor reads as a raised relief. Its flukes and shank are nearly one pale value in the lens, with a thin offset drop-shadow edge and a narrow highlight on the stock. light_bias is only 0.177 and range is above the real band. B: the caravan's front is lit and its right flank falls into a large cool blue shadow, matching the real computer's side-plane behavior, and it has a dark contact shadow under the chassis.",
+   "fix": "Give the anchor a real side light. Make the left faces of the shank and flukes bright and the right faces clearly dark and cool, with a soft turn between them, and remove the thin drop-shadow outline."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the cup is lit from the left, with a broad vertical sheen, a darkening right side and a dark cast shadow running right across the table, all agreeing on one direction. B: the arch's foliage is lit evenly on both legs, with no side falling into shadow, and only two soft pools of shadow at its feet. light_bias 0.14 is below the real band. The cup's brushed-metal rendering is itself unusual, which limits confidence.",
+   "fix": "Light the arch from the upper left. Keep the left leg's leaves bright, put the right leg and the underside of the arch into cooler shadow, and let the cast shadow fall to one side."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the computer has a light front and a sharply darker cool blue right side, with a dark shadow beneath the monitor, which is the real pattern from the lessons. B: the saddle is lit from the front with an even warm tan lens, with the shading sitting in stitching and small creases. No side falls away, and light_bias 0.088 is well below the real band. The fence's cast shadow is the only large dark.",
+   "fix": "Light the saddle from the upper left. Let the right side of the seat, fender and fence rail turn into a clear cool, darker shadow side, and keep the stitching out of the shading."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the doors are lit flat-on, with a warm lens, dark slat gaps and a low cast shadow under them. B: the sneakers have a hard dark cast shadow to the left and even, cool form modeling. Both cards have light_bias well below the real band, and each has a harder cast shadow than its form shading would suggest. Neither shows a shadow side that separates it from the other.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the cart's awning has broad soft scallop shading, a dark underside and a neutral, cool lens with contact darks at the wheels. B: the cactus turns dark on the right, but its ribs read as repeated narrow bands of light and dark rather than one turning column. The lens stays warm gold, and form_contrast 0.361 is below the real band.",
+   "fix": "Paint the cactus as one round column lit from the upper left, with light turning smoothly into shadow across the whole trunk and the ribs only lightly marked."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the barrel has a soft, low-contrast turn across the staves, with bright bands in the lens where the colored metal is dark, a sign of generated-style shading leakage. form_contrast is near the real floor. B: the chest has a bright warm lid top and a cool, deep shadow on the right face and under the lid, like the real cards, though its range is marginally above the band.",
+   "fix": "Light the barrel from the upper left. Push the right staves and metal bands into deep cool shadow and keep the metal bands darker than the lit wood."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the wagon's canvas is cream in color but mid-brown in the lens, so the whole image sits in a warm, compressed range. Range is below the real band and light_bias above it. The side-plane shadow is thin, and the cast shadow under the wagon is hatched by spokes. B: the boat has bright deck faces and a dark, cool hull interior with clear plane changes, within the real bands.",
+   "fix": "Keep the wagon canvas bright on the lit left side, turning cooly into a clear shadow on the right and under the cover, with a soft, simple shadow on the ground."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the train's boiler and wheels are shaded with a warm brown lens and no larger shadow side, and its dark forms hold only local gradients. B: the coaster cars have broad pale sheen and soft, cool shadows inside the seats and under the cars, like the real glove lens. Both have light_bias below the real band, and B's range is slightly above it, so the call is weak.",
+   "fix": "Light the train from the upper left. Keep a broad soft sheen along the boiler top, and let the right and lower sides of the cab and smokebox fall into cooler connected shadow."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the gloves are large, soft rounded forms with broad sheen and a smooth turn into shadow toward their lower edges, with a neutral lens and light_bias in the real band. B: the snorkel mask's lens keeps its blue color, with sharp glassy streaks on the visor and tube, a soft blob shadow beneath it, and light_bias 0.13 below the real band.",
+   "fix": "Light the snorkel from one side. Keep a single soft sheen on the tube, make the far side of the mask clearly darker, and add a firm contact shadow where it touches the planks."
+  }
+ ],
+ "pattern": "Generated cards still lack one big connected shadow side. The real cards light one face and let the opposite side fall into a broad, cool, dark plane, as on the computer's right flank, the camera body and the shadowed tower of the lighthouse. Generated cards light the hero frontally and put the shading into small local creases and outlines. Their lens stays warm and carries the card's color, with low light_bias and compressed form shading. The cast shadow is often firmer than the form shading above it would justify."
+}

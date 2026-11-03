@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: saloon fills and centres the card; the desert is quiet, with a few grass tufts and pebbles at the foot and small mesas at the edges. B: the sign sits right of centre while a motel wing takes the left third, with balcony railing, lit windows and brick, plus a fence, tree and stars. That is many objects for a category 4 card, and the building competes with the hero. Both measure in range, so this rests on my eye.",
+   "fix": "Centre the sign and make it larger. Replace the motel wing with one dark, simple building shape with no railing or brick. Remove the fence slats and keep a plain night sky."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: category 3, mine cart on softly rippled sand against a plain cyan backdrop. B: category 2, scroll on a glossy blue ledge against a plain dark blue backdrop, with a soft reflection under it. Both backgrounds are large and quiet, with no invented props. B's detail is just under the real range, but generated lessons err busier, not calmer.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: ray field with a hot cyan glow pooled around the ring box and strong light-to-dark contrast toward the corners, like the glow in the generated glove lessons. B: even purple rays with no pooled light, and very low background edges. Both are category 1 with no props, so the only signal is the glow, and it is weak.",
+   "fix": "Keep the rays tone-on-tone in one mid blue, with no bright cyan glow around the box."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: category 1, cap floating on quiet tone-on-tone rings, with detail and edges in range. B: cap in a wooden room corner, with plank walls, a post, skirting boards, grained floorboards and a hard diagonal light shadow across the top right. Detail 0.021 and edges 0.035 are both well above the real range.",
+   "fix": "Put the cap on a plain wooden surface against a simple flat wall. Remove the post, skirting and diagonal light band, and keep the board grain faint."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: dozens of ivy leaves, each individually outlined, wrap the top and both sides of the door, on top of door panels with grain, a wood frame and textured plaster. Detail 0.035 and edges 0.107 are above the real range, and the leaves compete with the wreath. B: windmill on large quiet shapes of sky, hills and grass with a few tufts, in range and like the real environment cards.",
+   "fix": "Remove the ivy. Show a plain blue door in a simple frame with smooth wall on either side, with the wreath as the only detailed thing on the card."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: quiet blue diamond backdrop over pale paving, whose many joints make the busier lower band. B: quiet purple diamond backdrop over smooth sand with three pebbles. Each has a small flaw, the paving joints in A and the pebbles in B, but both are in range and neither points clearly to a generator.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: green rings are clean and even around the horseshoe, in range. B: pink rings are many and close in tone, with a mauve tint in the top right corner and a thin orange sliver along the bottom edge that have no reason to be there. Detail 0.0159 is just above the real range.",
+   "fix": "Use three or four wide pink rings of even colour right to the card edges, with no tinted corners or stray colour along the border."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: pale pink stripes over a plain pink floor with nothing else; the busy roses belong to the hero. B: hard-edged blue stripes above a plank floor with crisp seams and grain, so two patterned layers meet behind the piano. Detail 0.019 and edges 0.042 are the further above range; A also exceeds the range but by less.",
+   "fix": "Soften the blue stripes to tone-on-tone and draw the floor as a plain warm wood band with one or two faint board lines."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: trophy on a round blue table with a single spotlight on a plain purple wall, and no props. B: column in a room with wall trim, a floor and a pedestal, plus a big blank gold plaque on a post that overlaps the column base. The plaque has no content and is a large secondary prop competing with the hero. Numbers do not separate them.",
+   "fix": "Remove the plaque and its post. Show the column on its pedestal against a plain red wall with no trim."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: pink gradient behind a plank tabletop with visible seams, grain, a knot and a dark front edge, so edges at 0.029 are above range. Generated lessons also tend to richer wood grain. B: plain orange gradient over a smooth cream ledge, in range. The real computer card also has wood grain, so this is only a lean.",
+   "fix": "Draw the tabletop as smooth warm wood with one or two faint grain lines and no knots or plank seams."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: yellow waves are tone-on-tone and low contrast behind the harmonica, like the real sunscreen card's wave field. B: a blue spiral with strong light-dark bands winds around the scarf, a stronger shape than A's and pulling the eye toward its centre. It is still in range, so this is a weak call.",
+   "fix": "Replace the spiral with soft tone-on-tone concentric rings in close blues."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: two detailed layers, a wall of card-suit motifs in a themed pattern and a grained plank table with knots. The suits echo the hero's and sit large and close behind it. B: only soft sand with pits and fine grains, a single material with almost no edges, below the real range but quieter. Generated lessons run toward more layers, which favours A.",
+   "fix": "Use a plain orange backdrop or a very faint simple pattern with no card suits, and make the table smooth wood with faint grain."
+  }
+ ],
+ "pattern": "Generated cards give themselves away by overfilling the area around the hero: extra environmental layers, such as ivy, room architecture or a second building; dense small repeated elements; richer floor grain and plank seams; glow pooled behind the object; and strong, high-contrast backdrops instead of quiet tone-on-tone ones. Only p05, and less so p04, show this clearly; most other calls are weak."
+}

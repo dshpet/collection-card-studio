@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the sneakers have a dark, even contour around both shoes and doubled lines along the sole, plus dense mesh and lace edges. Subject density is at the top of the real range and outline_darkness (-0.1) is below it. B: the candle's wax drips have soft, partly lost edges with few internal lines. Its density (0.035) is below the real range, so the evidence is mixed, but A's ink-like contour matches the lessons' generated cards.",
+   "fix": "Remove the dark line around the shoes; let the white sole melt into the bright floor on the lit side. Draw only the main panel seams as hair-thin gaps, and show the mesh as a soft tone instead of a grid of tiny holes."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the glass, ice and umbrella have thin, precise lines, and the glass walls fade out in places. Density is slightly below range. B: the mirror frame has thick black doubled contours and deep grooves in every scroll, evenly strong around the whole oval and foot. outline_darkness (0.167) is above the real range (top 0.106).",
+   "fix": "Make the gold frame edges lighter and thinner, with no dark line around it. Let the top-lit scrolls fade softly into the wall and keep the sharpest edge only at the purple gem and the inner rim."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the calculator has a heavy contour and thick rings around its keys, and subject density (0.202) is over range, but the background is only faint pi shapes. B: the tree, leaves, far buildings and bushes are all drawn with dark coloring-book lines as strong as the feeder's. Background density (0.037) is double the real top (0.017), so there is no edge hierarchy between hero and scene.",
+   "fix": "Blur and soften the park, buildings and tree leaves so they have no drawn edges. Keep crisp board edges only on the feeder and the seeds, and make the tree bark low contrast."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the moon's contour is strong at upper left and fades at lower right, with crisp crater rims. B: the bugle's contour is thin and lost on the lit bell, with the crispest edges at the rope and tassels. Both are in range on all three fields and both have real-style edge hierarchy.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the cabin has moderately soft, uniform line weight on logs, stones and roof, with dark notches where trees meet the walls; outline_darkness (-0.09) is just under range. B: the thatch has heavy lines around each shingle and background density (0.144) is above range, but the stools dissolve softly into the water, so hierarchy runs sharp at the top and fruit and soft below. Each card has a flag and the signals do not agree.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the thatch is heavily lined and background density (0.144) is high, but edges fall off into soft water and the stool bases are nearly lost. B: the iron gate, pillars, lanterns and grass all carry the same dark drawn line. Subject density (0.282) and outline_darkness (0.178) both exceed the real range, and the pillars look traced instead of painted.",
+   "fix": "Paint the stone pillars with soft rounded edges and no dark line around them. Let the far bars fade slightly into the purple sky and keep the sharpest edges only on the spear tips and central scrollwork. Reduce the number of thin iron pieces."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the locker has clean, thin seams and vents with even rounded edges, and its density is in range. B: the armchair has a strong dark contour around the wing and arms that does not match the very soft velvet interior. Density (0.066) is below range, so it reads as an outlined shape with an empty inside. Both are just below the outline range.",
+   "fix": "Drop the dark line around the chair; let the velvet edge roll softly into the green wall, with a lit rim on the shadow side. Add thin crisp seam lines along the cushion and arm fronts."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the lamp has thin edges, with the glass chimney almost lost against the background and the sharpest lines on the brass burner. B: the map sheets have a thick even contour with a second inset line along every border. The dashed path is ringed by repeated hard lines. The background shows speckle in the lens, and outline_darkness (-0.137) is outside the real range.",
+   "fix": "Draw the map sheets with thin, soft paper edges and no double border line. Let the stacked sheets fade slightly at the back, keep the crisp edge only at the red X, and make the pink background smooth and clean."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the lantern has a heavy dark contour and doubled frame lines, slightly over range at 0.172, but its lines are clean and its flame is soft. B: the neck pillow's left side blurs into the pink while its right and inner edges have a hard black line. The interior shows fine ribbed ripple, and subject density (0.017) is far below the real floor (0.046).",
+   "fix": "Give the pillow one even, clean silhouette, soft all the way around with no black line on the right side. Add crisp thin seam lines and a defined zip or tab, and replace the fine ripple with a few large smooth puffs."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the candy corn has one hard black arc at top left and almost nothing else, with a washed-out right side and a scatter of small dots in the lens. Subject density (0.016) is far below the real range (0.087 to 0.179). B: the fruit plate has crisp edges concentrated on fruit and droplets, a softer glass rim, and density in range.",
+   "fix": "Keep the candy's edge even and clean all around, soft on the lit side, without one black arc. Add crisp, narrow boundaries where the white, orange and yellow bands meet, and remove the speckled surface dots."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the binoculars have clean ring edges on the lenses, the top of the right barrel fades softly, and density is in range. B: the horse has a dark line around the mane, tail and legs, with scratchy grain lines hatched through the body and rockers. Density (0.072) is below range because the shapes are outlined instead of edged by form.",
+   "fix": "Remove the dark line around the horse. Let the rounded wood edges turn softly into light, and make wood grain a faint tone instead of drawn lines. Keep the crispest edge at the eye and saddle rim."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the spider's contour is strong under the legs but fades on the lit tops, with its sharpest detail at the eyes. B: the fan has a nearly continuous thick dark contour around the top arc and handle, while the pleats are faint, so the line weight does not follow the light. Both are in range, so this is a slight lean only.",
+   "fix": "Thin the outer edge of the fan and let it fade on the lit side. Draw each pleat fold as a thin crisp crease, with the sharpest edge at the pin and handle."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away with contour behaving like a drawn outline: a continuous dark line of even weight around the hero, often doubled along frames, borders and rims, whereas real cards lose the edge on lit sides. Line weight stays equal across hero and background, so trees, wood and scenery get coloring-book lines and there is no sharp-at-focus hierarchy. Thin-detail areas are over-grooved. A second failure runs the opposite way: smooth forms have one hard arc and a mushy remainder, with ripple or speckle in the lens and almost no internal edges."
+}

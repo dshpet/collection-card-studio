@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the arm links are swollen capsules with soft ends, the shoulder and elbow joints bulge past them, and the gripper fingers end in blunt rounded tips. The silhouette reads as joined sausages. B: the binocular barrels are short and fat, but they keep straight cylinder sides, a defined eyepiece step and a bridge. Both are chunky, and A's links lose more of their planar form.",
+   "fix": "Draw the robot arm links as slimmer box-section beams with flat sides and tight bevelled edges. Keep the joints only slightly wider than the links, and give the gripper fingers squared, angular tips."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the shoulder straps are thick, inflated loops, about as heavy as limbs. The tanks are smooth bullets with no valves or fittings, so there are few parts and no real pack body. A: the case lid and base are very soft pillows with blob corners, which is a flaw, but a leather medal case is plausibly rounded and its lid-to-base relation is correct.",
+   "fix": "Draw the jetpack straps as thin flat webbing with crisp edges. Show a rigid backplate between the tanks, and add small valves and nozzles with hard stepped edges."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the satellite body is a swollen yellow cube with bulging faces and large soft corners, and the solar panels have rounded corners and fat rims. A: the plane is shortened and its engines oversized, yet the wings and tail keep straight, tapered edges and pointed, crisp ends.",
+   "fix": "Draw the satellite body as a box with flat faces and tight bevelled corners. Make the solar panels thin flat plates with square corners, attached by a slim strut."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the stools are stubby mushrooms on short posts, but this is a scene, and the mask breaks up on the bar, so its out-of-range numbers (straight_share 0.15, corner_rate 10.2) are not reliable. B: the keyboard has flat faces, tight corners and a thin X stand with correct parts. Nothing on my vector separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the atom's orbits are uniform, tube-thick rings where a thin wire is expected, joined by a plain ball nucleus with big electron beads. A: the backboard is a true flat plate with straight runs, an inner square, and a net of thin cords. Its corner radius is moderately soft but believable.",
+   "fix": "Draw the orbits as thin, fine wire ellipses, a fraction of their current thickness, with small electrons sitting on them."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the tape cabinet is a tall slab with a nearly convex outline (solidity 0.977, above the real range) and straight_share 0.769, also above range. The front top edge is a soft curve, the corners are soft, and only stubby feet break the shape. B: the computer has a separated monitor, neck, base, keyboard and thin mouse cable, with the tight bevels of the real computer card.",
+   "fix": "Break up the cabinet outline with a separate top lid, a stepped control panel, a recessed reel window and a proper plinth. Keep the corners tight, and make the body less tall."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the hover car body is a bloated bean with no flat runs. The thrusters are squashed discs, the fins are small nubs, and the bumper is a fat tube, so it reads as a toy. B: the neckerchief is also puffy, with inflated cloth tails, but its knot and tail structure are correct and fabric folds can justify the volume.",
+   "fix": "Draw the hover car with a longer, lower body, a straight beltline and a crisp edge along the sill. Use thin chrome trim and sharper, taller tail fins."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the phone has a fat handset and a thick bead-like cord, but the body has planar faces and bevels. B: the tray cells bulge a little and the rim is soft, yet the grid and walls read correctly. Both fall within the real range, and any softness is about equal.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the bracelet is one thick, swollen band with no corner at all (corner_rate 0.0, below the real range), and the raised icons barely break the outline. A: the stone table has flat planes, tight corners, a separate pedestal and stools, and a contour broken by grass, with corner_rate within the real range.",
+   "fix": "Draw the wristband as a thinner flat strap with squared edges and a clear rim. Make the icons sit as distinct small raised shapes that break the outline."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the domed building is squat and swollen, with fat blue bands bulging out of the wall and a dome that fills the width. The door is small against the body, and the wall barely steps. A: the sign panels have flat faces with slightly soft corners, thin posts and a clear stacked relation of parts.",
+   "fix": "Make the building taller and narrower, with thin ring bands flush to straight walls. Give the steps and door a larger true scale, and use tight bevels on the window frame."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the capsule is a plain column with few parts: cap, straight tube and base, with a low corner_rate of 0.764, below the real range. The base and cap are rounded, smooth forms with no fittings. B: the dock has broad planks with straight edges, posts and thin rope, in many overlapping parts, as the real scenes do.",
+   "fix": "Add hard stepped collars, clamps and thin rails around the capsule tube. Cut the cap and base into angular, faceted plates with crisp edges."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the sneaker soles are inflated into thick pillows, and the laces are fat tubes. The two shoes merge into one lumpy mass with a soft outline. B: the flask has a true round body, a long straight neck, a lip and a cork, with a slightly flattened base that a real flask has. Its parts are in correct proportion.",
+   "fix": "Draw the sneakers with a slimmer sole with a flat sidewall, thin laces and sharper edges at the toe and heel collar. Separate the two shoes with a clear gap."
+  }
+ ],
+ "pattern": "Generated cards still inflate the form. Bodies swell into pillows, corners become soft blobs, and thin parts such as straps, orbits and trim turn into tubes. Overall outlines are simple and near-convex, with few hard steps or small breaks in the contour. Real cards keep flat faces, tight bevels and stepped parts that interrupt the silhouette."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: orange towel floats on a soft green checker field with a mild centre glow, category 1. B: calculator floats on a yellow field with tone-on-tone pi symbols cropped at the edges, category 1. Both backdrops are quiet, carry no extra props, and sit inside the real detail and edge ranges. Nothing on my vector separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: oil lamp on crisp, high-contrast yellow-green rays, with no halo beyond the rays. B: purple rays are soft and washed out, and a fuzzy orange halo around each flame bleeds into the field. B's background detail of 0.0061 is below the real floor of 0.008. The haloes match the glow the lessons show on generated cards.",
+   "fix": "Draw clean, crisp sunburst rays with clear steps of purple. Keep the flames from throwing any orange haze onto the background."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: pumpkin on hard dark plank seams, with a warm gold reflection pooling on the wood under the mouth, over a saturated purple ray burst. The floor is louder than the quiet surfaces on real cards. B: spring duck on a sand disc with three pebbles and a blotchy brown shadow behind it, which is also slightly fussy. The call is weak, leaning on A's lit floor.",
+   "fix": "Use a calm wooden surface with faint plank lines and no golden glow on the boards. Keep one soft shadow under the pumpkin."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: fountain on curved paving with small chips and speckles. Its edge density of 0.046 is the real ceiling, though the paving is still large, simple slabs. B: black cat on plain stripes and planks has a quiet background, but the card adds a smile and a bell collar as story decoration. A long hard shadow sweeps across the floor at right.",
+   "fix": "Draw a plain black cat sitting calmly with a neutral expression, no smile and no bell. Keep only a short soft shadow on the floor."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both cards float on concentric rings. A: blue rings stay even and tone-on-tone, with a detail value inside the real range. B: orange rings gather into a bright yellow hot spot left of the hat crown, and background detail of 0.0068 is below the real floor of 0.008. The centre glow matches the lessons' generated cards.",
+   "fix": "Draw even, tone-on-tone orange rings with no bright hot spot behind the hat."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: lighthouse is the real anchor card, with only sky, clouds and sea cropped simply at the base. B: a big cratered yellow moon sits directly behind the chimney in full daylight, an invented story prop competing with the top of the house. Grass tufts are scattered along a mound. This matches the lessons' generated lighthouses with added island props.",
+   "fix": "Remove the moon. Show only blue sky and a few soft clouds behind the house, on a plain green slope with no grass tufts."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: cauldron has floating green bubbles above the rim and an orange fire glow spilling onto a grey cracked stone floor, against pink stripes. The added effects and floor glow are more staged than real cards. B: boxing gloves on a plank ledge with a plain battened blue wall. It has more edges at 0.04, but they come from large simple wall lines.",
+   "fix": "Stand the cauldron on a plain floor with no glow on the stone. Keep the bubbles inside the pot and leave none floating in the air."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "A: lion is the real anchor card, a category 4 park with trees and a path. B: bag on quiet purple stripes and a plain floor; its detail values are inside the real range and its contents belong to the bag. Neither card shows a staging fault.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: scarf on a broad spiral with clear tonal steps. B: broom on faint, soft waves, with background detail of 0.0074 below the real floor of 0.008. The field is pale and evenly washed, without the depth steps seen on real graphic fields. No props on either card, so only the backdrop differs.",
+   "fix": "Give the wave backdrop clearer steps from deep blue to light blue, with a darker tone toward the corners."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: coffin on grass with two small headstones placed as story props, plus evenly scattered bright, hard-outlined grass tufts. B: chess table in a park built from large trees, a path and open lawn. It has higher detail at 0.0282 but matches the real lion card's environment, and its stools belong to the set.",
+   "fix": "Remove the headstones. Set the coffin on a smooth lawn with a few large soft trees and bushes behind, and only a few grass blades near the base."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both cards use a category 2 ledge with a diamond pattern behind. A: the crystal ball sits on a heavily saturated wooden ledge with a hard lit front lip, and the green harlequin is strong. B: quiet purple ledge with a soft pink light pool, and a calmer tone-on-tone pattern. A's backdrop competes slightly more; both are within range, so the difference is small.",
+   "fix": "Make the diamond pattern softer and closer in tone. Use a plainer ledge with a less orange top and front edge."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: sneakers on a two-tone wall and floor with a soft gradient on the wall and no added props. B: gravestone has a flat orange wall with no gradient, plus an invented moss sprig and a small orange leaf on the base. Background detail of 0.0068 is below the real floor of 0.008.",
+   "fix": "Remove the moss and the leaf. Add a soft light-to-dark gradient on the orange wall."
+  }
+ ],
+ "pattern": "Generated cards still show themselves through added staging. They invent small story items such as a daylight moon, headstones, moss, a leaf, floating bubbles, or a smile and a bell. Light spills where real cards stay clean: flame halos, fire glow on floors, gold pools on boards, and hot spots in the backdrop. Graphic fields also go too soft, and several fall below the real background-detail floor (p02 B, p05 B, p09 B, p12 B; p06 B is below it too). Caveat: p03, p04 and p11 are low-confidence calls, and their visual evidence is thin. The horror subject of those cards also nudged my pick, and p01 and p08 stayed neither partly because neither has a horror subject."
+}

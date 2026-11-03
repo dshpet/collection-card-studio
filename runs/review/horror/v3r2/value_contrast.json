@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: dark blue shoe uppers with white soles sit on a flat two-band background with a near-white floor and no glow. B: pale candle melts into a soft dome of glow on a mid teal wall, with a darker wood band at the bottom. Both keys sit just above the real range by the same amount, and both value designs have real counterparts (the basket's split background, the computer's light hero on a glow dome).",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the glass is almost all near-white and sits on a dark purple field, with a lighter diamond patch behind it. The lightness gap (0.257) and vignette (-0.025) are both outside the real range. B: the mirror's mid-light oval sits on one even mid-grey wall, with dark accents only in the frame scrolls, and every number is in range.",
+   "fix": "Keep the drink a middle tone with soft shading down the glass and only small white highlights on the ice. Keep the purple background close to one even tone, with no brighter patch behind the glass."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: black leaves and trunk shadow sit against near-white pavement and sky, chopped into many small pieces. The mid-grey feeder has no value of its own against them, and rms contrast is the highest of the pair (0.204). A: one dark calculator shape on one flat light field gives clean large groups, though its gap (-0.354) is too strong, so this is a weak call.",
+   "fix": "Group the background into one soft middle tone: lighten the leaves and trunk, dim the pavement and sky, and keep the darkest darks inside the feeder opening."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: a large white moon on dark blue rays, with black inside the craters and a soft shadow side at lower right; its gap (0.175) is above range. B: a mid-toned trumpet on pale teal rays, with the dark accent held in the red cord; its key (0.809) is just above range. Each misses one number by a little, and both have real ray-card counterparts.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cabin's dark roof, log gaps and door form a heavy mass against pale sky and bright grass (gap -0.184, near the real limit), with black accents spread across the whole front and the tree masses broken into patches. B: the pool bar keeps most of the card in wide middle tones; its white counter, darker hut and evenly lit water make broad bands, and the numbers sit inside the real range.",
+   "fix": "Lighten the cabin's logs and door to a warm middle tone, keep black only in the deepest roof overhang, and soften the trees and sky into one calm light shape."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: a low-key card (mean 0.543, below the real range). Black gate bars run hard against mid-grey stone and a dark sky, and a pure white moon is the only large light. A: the pool bar is high and middle in key, with a white counter band and wide water tones, and its numbers sit in range. Real cards in the lessons never go this dark overall.",
+   "fix": "Raise the whole card to a bright daytime or pale dusk sky, lift the gate from black to a dark grey with soft highlights, and make the moon less stark against the sky."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the chair is one near-black mass on a flat light wall. The tufting and folds drop out into solid black, gap (-0.374) and rms (0.210) are both far outside range, and only small rims stay light. A: the locker body is middle-light with black kept to the inner cavity, and only its vignette (-0.055) slightly misses.",
+   "fix": "Lift the chair's red to a mid value, with soft light on the top of the cushion, arms and tufts, and keep the darkest shadow only under the seat and between the buttons."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a bright rayed disc sits behind the lamp and the card falls off to dark green corners, with vignette 0.144 above the real limit. B: the map's white border on a pink field holds even brightness out to the corners, and its numbers are in range.",
+   "fix": "Make the green rays even from center to edge, drop the bright circle behind the lamp, and do not darken the corners."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a black lantern frame sits on near-white rings of lime, so the card is very bright around a very dark hero, with hard edges and little in between. Mean 0.789 is at the top of the range, while rms 0.193 and gap -0.35 are outside it. B: the pillow is a soft middle-dark shape on a light pink field, with a gentle roll-off into shadow, and it is in range.",
+   "fix": "Dim the green background to a calmer middle-light tone, lift the lantern metal to a dark grey with soft sheen, and let shadows fade gradually instead of going solid black."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the fruit is broken into many tiny dark seeds, berries and droplets over a mid-light wood field, with no large hero value mass, and rms 0.115 is just under the real range. A: the candy has three big simple bands, with a clear shadow side and cast shadow, and it is in range.",
+   "fix": "Group the fruit into a few big light and middle shapes, keep one clear dark area under the plate, and drop the scattered small dark specks."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the binoculars' barrel ends and lenses go to heavy black against a clipped pale floor, with bright streaks at left. Rms (0.200) and gap (-0.277) are both outside range. B: the horse is middle-light on striped mid tones, with black limited to mane and tail, and it is in range.",
+   "fix": "Lift the rubber and lenses to dark grey with soft highlights, keep the floor at one even warm middle-light tone, and remove the bright streaks."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the spider's body is a solid near-black mass with hard-edged highlights on a light orange field, so gap (-0.323) and rms (0.171) are both past the real limit. B: the fan's purple ribs alternate middle and dark tones with a soft glow behind, and its numbers are in range.",
+   "fix": "Paint the spider in a dark blue-grey rather than black, with broad soft light across the top of the body and legs, and keep pure dark only under the body."
+  }
+ ],
+ "pattern": "The tell is value contrast pushed too far. Heroes go too dark against too bright a field, past the real gap limit, with solid black masses instead of a gradual fall into shadow. Darks are scattered across the hero rather than kept to one place, backgrounds fragment into hard patches, and glow behind the hero ends in a bright disc with darker corners. Real cards hold darks to small places and keep wide calm middle tones. Caveat: reading is weakest on pairs whose numbers are all near range, and the pool bar's vignette matching the real bound suggests it is real, which fed the p05 and p06 calls."
+}

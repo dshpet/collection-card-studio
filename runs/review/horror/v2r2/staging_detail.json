@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: pumpkin bucket on a plain wood ledge against a tone-on-tone green wave backdrop, the same setup as the real sunscreen card, with both measures in range. B: the ball sits on a full-frame sand field with soft blurred craters and fine speckle at bottom right. There is no backdrop or horizon, and both measures fall below the real range (edge 0.003 vs 0.011 minimum). The sand reads as airbrushed haze with no firm shapes.",
+   "fix": "Draw the sand as a few large, clear dunes with firm soft edges. Drop the small speckles and blurry craters, and show a simple sky band behind the ball."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the gate is surrounded by brick piers with individually drawn bricks, stone balls, conifers, a hedge, a lawn seen through the bars, and a paved path of many slabs. Background measures exceed the real range (detail 0.042, edge 0.122), and the eye is pulled to the left and right piers. This is the over-furnished environment seen in the generated lighthouse lessons. B: the spyglass floats on quiet tone-on-tone diagonal stripes, category 1.",
+   "fix": "Keep only the gate, two plain pillars and a flat green lawn under open sky. Remove the individual bricks, the trees and hedge behind the bars, and the paving slabs."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the castle stands on a plain green mound with sky and two clouds, a few large quiet shapes, and only sparse grass tufts. B: dense ivy of dozens of separate leaves runs across the top and down both sides of the door, with dappled leaf shadow on the blue panels and plaster cracks at lower right. Edge density of 0.107 exceeds the real maximum of 0.089. The ivy is invented foliage that rivals the wreath.",
+   "fix": "Remove the ivy. Show the wreath on a plain blue door with a simple wood frame and smooth wall, with no leaf shadows."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the tree stands against three large, soft hill shapes and open sky, with grass tufts only in the foreground. B: the topiary has a whole garden behind and around it: a hedge wall with small leaf texture, a curved paved path with a kerb, and grass tufts across the lawn. The measures are equal and in range, so this rests only on the count of added props.",
+   "fix": "Remove the paved path and kerb. Replace the hedge wall with one smooth distant green band under the sky."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the chest sits on a flat grey-violet disc with a mottled speckled surface and a muddy purple shadow, below hot pink rays. Both measures are under the real range. It reads as neither a clean ledge nor a real material, unlike the clean glossy podium on the real trophy card. B: the tray sits on broad wood planks with a soft blue ray backdrop, category 3 and in range.",
+   "fix": "Stand the chest on a clean, smooth round podium with a soft highlight along its rim, in a colour related to the pink backdrop, with no speckled texture."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the bag stands on a plain purple floor with tone-on-tone vertical stripes, matching the real striped cards, and its measures are in range. The bottle and towel are large and purposeful. B: the seahorse floats in a blurred blue gradient with hazy diagonal light shafts and no graphic pattern. The field is soft and featureless, and both measures fall under the real range (detail 0.0052, edge 0.002).",
+   "fix": "Replace the hazy light shafts with a clean flat graphic backdrop of tone-on-tone blue rays or stripes with crisp edges."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both cards are category 1 on quiet tone-on-tone concentric rings, like the real flippers card. Both objects float with no props, and both sets of measures are in range. The backdrops give no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both cards are category 1 on ray backdrops. A's yellow and orange rays are stronger in contrast but within range. B's purple rays are soft, and its detail figure of 0.0066 sits only slightly low. Neither has props or added decoration, and bubbles belong in a potion. Nothing on the backdrops separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the car is on a road with hills and clouds, a few large shapes, though with some tufts at the bottom. B: a boat with a large dock filling the upper left, a mooring post, ropes, two lily pads, and swirling ripple rings with glints all over the water. The props and ripples compete with the hero. The lily pads are unprompted extras, like the rope and life ring added in the generated lighthouse lesson.",
+   "fix": "Remove the lily pads and ripple rings. Show the boat on calm flat water with a few long soft bands, and keep only a small edge of the dock."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a repeating campfire icon fills the backdrop, and the shapes are clearly readable. A bright white halo around the whistle washes the pattern out, the same halo as on the generated glove lesson. B: small tone-on-tone diamonds on pink stay quiet behind the web. B's edge figure of 0.025 comes from the background showing through the web's gaps, not from a busy backdrop.",
+   "fix": "Remove the white glow around the whistle. Make the campfire pattern fainter and evenly toned, or swap it for plain tone-on-tone stripes."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both cards are category 2, in range. A has a skull on a stone ledge with a few block joints in front of a cyan gradient. B has sneakers on a plain cream floor in front of an orange gradient. Both are simple, with no props, so there is no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the book lies on a full-frame table of strong orange and cream streaks, a loud, flat, wavy grain that runs right up to the book and competes with it. B: quiet, fine wood grain on a ledge with a tone-on-tone striped backdrop, the setup of the real cards. A's wood is the saturated, patterned table seen in the generated computer lessons, compared with the quiet real desk.",
+   "fix": "Paint the table as calm, smooth wood with a few thin grain lines close in tone to the base colour, with no bold light and dark streaks."
+  }
+ ],
+ "pattern": "Generated cards give themselves away by over-furnishing the setting. Real cards use a few large, quiet shapes, while generated ones add unasked-for props and small repeated detail: individual bricks, ivy leaves, lily pads, ripple rings, hedges, paths, and loud wood streaks. A second tell is a hot glow halo behind the hero. A third is a soft, airbrushed field with no firm shapes in place of a clean graphic backdrop. Pure category 1 cards on tone-on-tone backdrops are hard to separate on this vector."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the backboard is tilted and large, pushed left, and its pole is cut by the bottom edge, so it reads at once as a hoop. B: the atom floats dead center, whole, with even space all round. Only the sphere has mass, and the thin rings shrink at thumbnail size (area 0.201, the low end of real cards).",
+   "fix": "Move in closer so the atom fills the card, tilt it off-axis, let one orbit ring run nearly to the card edge, and make the rings thick enough to read at small size."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the ring box sits at a three-quarter angle, its lid leaning right, with the gold medal low and front as a clear focus. B: the jetpack is frontal and almost symmetric, upright in the center with twin flames and straps mirrored left and right. It looks posed for a catalog, and the two grey tanks are the only read.",
+   "fix": "Turn the jetpack to a three-quarter angle and tilt it so one tank comes forward and overlaps the other. Drop the mirrored left-right layout."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the dome is dead frontal and symmetric, whole from spire to grass, with the spire tip near the top edge. It has no crop and no angle. B: the sign sits right of center with the motel cropped by the left edge. The building does compete with the sign, but this off-center, cropped setting is how real cards use context.",
+   "fix": "Shift the dome off center, view it from a low three-quarter angle, and let the ground and one side of the building run off the card edge."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the bottle is tilted and centered on a sunburst, with a clean silhouette and first read. B: the goal runs at a diagonal, with the pool bar cut by both side edges and the orange ball as a clear focus inside the frame. Both match real framing, and B's full box width is only pool context, not a framing fault.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: a round flower bed sits centered, slightly low, with room all round and a clear read. B: the book stack sits right of center and nearly touches the right edge, with the shelf cropped and a window in the top corner. The window pulls the eye a little, but the books still read first. Both framings occur on real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: a tall cabinet stands upright and fills the card top to bottom (height 0.85, area 0.479, above the real range). It is a narrow slab with little space above, and the small lights and vents busy the thumbnail. B: the monitor sits with keyboard and mouse in a stepped group, the desk cropped by the card edges. This is the same real computer card shown in the lessons.",
+   "fix": "Pull back so the cabinet fills less of the card, and leave clear space above it. Angle it more to one side and simplify the panel to the two reels so they read at thumbnail size."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the binoculars lie on a strong diagonal and fill the width, with the near lens big in the foreground and planks running off every edge. B: the arm stands whole in the middle of a staged wall and floor with its full base shown. The claw and arm are clear, but the long floor shadow at right adds a second shape.",
+   "fix": "Bring the camera closer and lower so the claw comes toward the viewer and the base is partly cut by the bottom edge. Make the floor shadow small and soft."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the car floats in a flat, side-leaning profile, whole and centered in the width, with empty yellow above and below (height 0.537, at the low end of real cards). The glass dome blends into the backdrop at thumbnail size. B: the scarf is big and upright with the round badge as a clear focal point in the middle, and it reads at once.",
+   "fix": "Turn the car to a closer three-quarter view with the nose coming toward the viewer, make it taller in the frame, and tilt it upward."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the tray sits at a three-quarter angle on a table cut by the card edges, with the raised cube giving a peak at the center. B: the phone sits slightly right of center on a tiled floor, with the handset and blue dial reading first and space around it. Both have a single clean focus within the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the plane is on a diagonal, its wing and tail cut by the right edge, with the nose coming forward and clouds overlapping below. B: the satellite is held whole, centered, and stretched wide with its panels stopping just short of both side edges (width 0.953, margin 0.023). The panels are as loud as the small body, and it floats on a flat pattern.",
+   "fix": "Tilt the satellite strongly and bring one solar panel toward the viewer so it runs off the card edge. Make the body bigger and the panels smaller."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the shoes are a wide pair angled across the lower card, with the top third empty but the mass strong (area 0.268). B: the flask is slim and centered with a thin glass neck, so only the green bulb carries at thumbnail size. It is the smallest hero here (width 0.479, area 0.204, both below the real range), with wide empty orange on both sides.",
+   "fix": "Move in closer so the flask fills most of the card, tilt it slightly, and make the neck shorter and thicker. Reduce the shelf to a thin strip at the bottom."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the tube is an upright column in the exact center, narrow (width 0.451, below the real range), and pale glass carries little weight. The neon curve in the top left corner competes with it. B: the posts, ring and dock cross on a diagonal, cut by the card edges, with the red ring as a bold focus. It is busy but reads as a real cropped scene.",
+   "fix": "Make the capsule wider and shift it to a three-quarter view with a stronger tilt or lower camera. Remove the glowing wall pipe at top left and make the pink core brighter so it reads first."
+  }
+ ],
+ "pattern": "Generated cards keep the hero whole, upright and near the exact center, often frontal or mirrored, with staged even space around it. The real cards commit to a bolder angle: tilt, diagonal, off-center placement, and crops where object or setting runs off the card edge. At thumbnail size, generated heroes also lean on thin parts (rings, necks, glass, spindly panels) or stay narrow, so they carry less weight than the real cards' solid silhouettes."
+}

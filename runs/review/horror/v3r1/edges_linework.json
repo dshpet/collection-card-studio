@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (drink): the glass wall, straw and umbrella have thin, crisp lines. The glass contour breaks and thins on the lit left side, and the ice cubes have light inner edges. B (mirror): every scroll of the gold frame carries an even, soft double contour with little change around the oval. The edges read slightly blurred, and the stone floor adds faint wandering crack lines. The evidence is weak because A sits a little under the real subject density.",
+   "fix": "Keep the frame's silhouette crisp only at the crest and gem, and let the lit side of the gold scrolls melt into the frame. Do not trace every scroll with the same soft double line. Leave the stone floor nearly free of crack lines."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (rocking horse): plank lines and wall stripes are light, the mane and wood grain have soft internal edges, and the darkest contour stays on the hero. B (binoculars): the floor plank gaps are thick black grooves that run off the card, as dark as or darker than the binocular contour. Streaky grain fills every plank. The background competes with the hero and the edge hierarchy flips, as on the generated wood tables in the lessons.",
+   "fix": "Draw floor boards with thin, pale gaps and almost no grain, much weaker than the binoculars' edges. Keep the strongest edge on the near eyepiece rim."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (spider): a smooth silhouette, with the contour thinning on the top of the abdomen and very little internal line. B (fan): a heavy dark band runs unbroken along the top rim and down the sides, and the pleat folds read as ruled lines of equal weight. The difference is slight because both hero contours are mostly closed.",
+   "fix": "Let the fan's rim edge come only from the color change against the background, with no dark band along the top. Make pleat folds thin and fading toward the rim."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (pool bar): every thatch shingle, stool rim, water ripple and pool tile has a hard dark edge. Background density of 0.144 is far above the real range, and thatch at the card edge is as sharp as the drinks at the focus, so there is no hierarchy. B (cabin): edges are soft, background trees are only faint scalloped lines, and density of 0.02 is in range, with the hero clearly stronger.",
+   "fix": "Keep hard edges only on the drinks and fruit. Merge the thatch into a few large soft masses, and let water ripples and pool tiles fade to faint, broken lines with no dark edges."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (gate): iron bars and pillars are sharp while the clouds, hills and graves fall away softly, so the hierarchy is clear. However, its outline darkness of 0.192 is above the real range. B (pool bar): the same hard dark edges appear on thatch, stool rims, ripples and tiles, with no drop-off away from the drinks. Density of 0.144 is above the real range. The metrics conflict, so confidence is low.",
+   "fix": "Keep the sharpest edges on the glasses and fruit. Soften thatch, tiles and water to faint, broken lines with no dark edges."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (stage light): the body has thin seams and lost edges on the dark side, and the lens rims melt into the colored glow. The truss is the strongest edge, but the hero's seams are precise. B (fuel pump): every panel, the gauge and the nozzle carry an even, closed double contour, and the digits and dial marks go mushy. The mesas, ground scrub and base pad are each outlined too, and subject density is just above the real range.",
+   "fix": "Make panel seams thin single lines, and let the pump's silhouette soften where it meets the sky. Leave the desert mesas as flat soft shapes with no contour lines, and keep the digits sharp and simple."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (candy corn): very few edges, with soft color bands and a contour dark only on the left and fading elsewhere. Its subject density of 0.014 is well under the real range, which is the main caution. B (fruit plate): watermelon seeds, droplets, grapes, berries and the plate rim all carry the same dark ring, while the table grooves are as dark as the fruit edges. It is busy, with no focus in the edges.",
+   "fix": "Keep the darkest edges on the watermelon and front orange. Let berries, droplets and the plate rim have light, thin edges, and make table board gaps pale and thin."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (moon): a soft glowing halo surrounds the disc, seen in the lens as a gray smear outside a closed thin contour. Inside, subject density is very low at 0.008, with only faint crater rims. B (bugle): no halo, a crisp outer edge, thin precise lines on rope and tassels, and lost edges on the bright bell, with density in range.",
+   "fix": "Remove the glow around the moon and set the disc directly against the rays with a clean, crisp edge. Cut the crater rims more sharply so the surface has clear inner edges."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (armchair): a heavy closed contour around the wings and arms, soft velvet interior, and floor lines that are fairly strong. B (locker): a heavy closed contour with thick double-line vents and door edges, and a similar floor. Outline darkness is equal at -0.088 and -0.087. Both have the same mix of strong contour and strong floor lines, so this vector gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (street lamp): thick dark double rails follow the cap, glass frame, post and curled arm almost without a break. Outline darkness of 0.149 and subject density of 0.187 are both above the real range. B (bird feeder): the plank seams are thin and the hero contour is more varied. Its faults are the heavy black scalloped leaf edges at the top corners and a busy park with background density above range, so A's fault is on the hero and B's is secondary.",
+   "fix": "Draw the lamp without any dark outline. Let the post and arm show as clean color against the teal, with thin single seams and the lit side of the metal fading into the background."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (sneakers): dense, hard edges everywhere, including the sole stripes, laces and mesh grid. Subject density of 0.227 is at the top of the real range. The cast shadow has a hard dark rim, and the wall-floor join is a black ruled line. B (candle): soft sfumato drips, a gentle contour, and a flame with lost edges. Its density of 0.035 is below the real range, which keeps confidence low.",
+   "fix": "Simplify the shoe's panels and laces to fewer thin seams, and drop the fine mesh grid. Give the cast shadow a soft edge, and make the wall-floor join a soft color change."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (lantern): crisp, clean edges on cap, ring, frame and glass, with density in range, though the contour is fairly heavy. B (neck pillow): the left side and top edge are almost lost, while the right side has a sudden heavy black contour. Pleats are fuzzy hatching, and fine noise covers both hero and background in the lens. Subject density of 0.017 is well under the real range. No part of it has the crisp, precise edges of the real cards.",
+   "fix": "Give the pillow one clean, crisp silhouette all the way around with no blur. Draw a few thin, sharp seam and pleat lines, and keep the background rings clean and free of fine grain."
+  }
+ ],
+ "pattern": "Generated cards are given away by edges of even weight and no selection. Lesson generated heroes often have closed, even dark contours and thick double-line grooves, while real heroes break or thin their contour on the lit side and use thin single seams. Lessons also show generated backgrounds carrying too many strong marks, such as wood grain, plank gaps, water ripples and cloud outlines, sometimes as dark as the hero, so sharpness does not concentrate at the focus. A second failure runs the other way: soft heroes with blurry or noisy edges, a halo, or almost no inner edges (moon, pillow). In the test pairs these remain judgement calls, and confidence is low to moderate throughout."
+}

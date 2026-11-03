@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a flat teal stripe field meets a grey clay hump along the bottom third. It is a plain category 2 ledge in a colour unrelated to the field, and the same grey lump recurs on the p04 rover and the p07 dome. B: warm wooden planks fill the whole card, one real material carrying the object with a shadow that sits on the boards. A's detail is at the bottom of the real range (0.0094, edge 0.011). B is mid-range (0.0152, edge 0.036).",
+   "fix": "Stand the telescope on a real surface such as weathered wooden decking with wide boards and a soft contact shadow, instead of a smooth grey clay mound."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: a soft tone-on-tone blue spiral behind a floating scarf. B: tone-on-tone cyan wavy bands behind a floating asteroid. Both are clean category 1 graphic fields with no props, both patterns stay quiet behind the hero, and both sit inside the real range. Staging gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a generic dune strip with evenly sprinkled small pebbles and a small puffy cloud low on each side of the horizon, the same stock sky as the generated lighthouses. No secondary prop, and detail 0.0093 is just under the real floor. B: a beach with a sea band, plus a bucket and spade that belong with a sandcastle and sit in the foreground with heaped, disturbed sand. A is the weaker call because B's measured detail is about equal and B carries more objects.",
+   "fix": "Remove the scattered pebbles and the paired cloud puffs. Use one large dune that overlaps the base of the dish, with sand piled against it so it looks planted in the ground."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a green ray burst is cut by a lumpy grey mound, with a saturated purple-blue shadow pooled under the wheels and a stray yellow sliver at the mound's right edge. Field and ground read as two unrelated layers. B: a blue ray burst sits over a dark road with diagonal lane dashes, a hybrid too, but the road gives the taxi a purposeful ground and a shadow in the road's own colour.",
+   "fix": "Replace the grey mound with one simple dusty ground plane in a colour related to the backdrop, with a soft neutral shadow under the wheels and no violet pool."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both are category 2: a plain wall over a plain ledge. A: an orange wall with a warm vignette over a pale yellow ledge, with a soft cast shadow, detail 0.0089. B: a pink wall over a lighter pink ledge, almost empty, detail 0.0061 and edge 0.011. B's detail is below the real floor of 0.008, so it is smoother and more sterile than any real card.",
+   "fix": "Give the wall and ledge gentle hand-painted tonal variation and a soft vignette, so the pink surfaces are not perfectly smooth digital gradients."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a category 4 yard with a large fence and a lawn, with scattered grass tufts as the only small detail. The duck is a natural prop and the pool stays central. B: a floating jacket on a green burst with many thin, dense rays and a bright glow behind the hero. That matches the generated baseball-glove lessons, where real cards use fewer, wider wedges. B's low edge value (0.007) is weak evidence because this range comes from busier cards.",
+   "fix": "Use about ten wide, soft ray wedges in closely related greens, with no bright halo behind the jacket."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Conflicting evidence. A is far over the real range (detail 0.0569, edge 0.144): a thatched roof, tiled pool, bar counter, stools, fruit and drinks, so it is the busier card and has no single hero. B is quiet but just under the real floor (0.0097, 0.014). B has the repeated smooth lavender mound seen on p01 and p04, with pinprick stars and paired soft clouds. A's objects are all purposeful and tied to one place, while B's ground is generic. I weight that formula over A's numbers, so this call goes against the measurements and confidence is low.",
+   "fix": "Set the dome on one believable ground with a real surface, snow or rock that overlaps its base. Remove the pinprick stars and the matching soft clouds."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "Both use vertical tone-on-tone stripes. A: muted purple stripes with a wide white-lilac halo around the planet, and detail below the real floor (0.0058, edge 0.003). B: teal stripes with crisp, readable edges and only a mild central lift, inside the range (0.0146, 0.016). A's halo is the same added glow as the generated glove card, and it washes out the stripes around the hero.",
+   "fix": "Remove the white glow around the planet. Keep clear flat vertical stripes in two close purples running behind it, with only a faint brightening in the centre."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a tight crop on a wooden table with a railing, hedge and cut-off pot. It is at the top of the real range (0.0304, 0.089), but the shapes are coherent and the hero stays dominant. B: a red-to-orange gradient with a curved peach tabletop edge and smeared glossy reflections under the chair. The rounded table horizon over a smooth gradient is the same setup as the generated computer lessons. The real computer sits on a straight desk with front and drawer structure.",
+   "fix": "Stand the chair on a real flat ground with a straight horizon and matte surface, such as packed earth or decking, with one soft shadow and no glossy reflections."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both use concentric rings. A: purple rings with clear value steps, in range (0.0135, 0.012). B: yellow rings so close in tone and so smooth that detail falls below the real floor (0.0059, edge 0.003). B's field reads as a clean vector gradient with almost no painted variation. Neither card has invented props.",
+   "fix": "Paint the yellow rings with slightly stronger steps between bands and subtle hand-painted tonal variation, while keeping them tone-on-tone."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a diamond-pattern wall over pink paving, with a popcorn tub as a purposeful prop, in range (0.019, 0.041). The paving is a real material that gives the cart ground to stand on. B: a diamond wall over a bare grey ledge with coloured glossy reflection smears under the console, below the real floor (0.006, 0.005). The cool grey floor is unrelated to the orange wall.",
+   "fix": "Stand the console on a real material such as a matte painted metal workbench with visible panel seams, in a tone related to the backdrop, and remove the mirror-like coloured reflections."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: a floating rocket on wide cyan ray wedges, the same type as the real baseball-glove field, with detail slightly under the floor (0.0067, edge 0.004). B: a floating submarine on faint rays with a dark vignette and central green glow, in range (0.0104, 0.007). Each card has one small mark against it and the two cancel out. Both are clean category 1 with no added props.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards are given away by formula staging. The same smooth grey or lavender clay mound stands in for ground regardless of the backdrop (p01, p04, p07), often with a coloured pooled shadow. Other repeats are curved tabletop horizons over a gradient and glossy smeared floor reflections (p09, p11), white or bright halos behind the hero (p08, p06), and thin dense rays where real cards use wide wedges. Paired small clouds and evenly sprinkled pebbles or stars recur as filler (p03, p07). Backdrops are often too clean, with detail below the real floor (p05, p08, p10, p11), because the fields are vector-smooth and lack painted variation."
+}

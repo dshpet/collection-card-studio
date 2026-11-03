@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the glass sits on a level purple table. The rim ellipse is shallow and the base ellipse deeper, as a single mild view from just above should give, and the table back edge is a straight horizon. B: the mirror is turned slightly, showing frame thickness on the left, and stands on a curved stone ledge whose horizon matches the feet. B's planar_share (0.593) is only just above the real range, which is explained by the flat glass oval. Neither card breaks its one view.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the rocking horse is in a mild three-quarter view at table height. The floor meets the wall at a straight horizon and both rockers sit on the floorboards. B: the binoculars are seen from high above with no horizon, the whole card is tilted floor, and the front lenses swell well past the rear eyepieces. That close-up, wide-angle swelling at the front matches the generated cameras in the lessons, not the mild real perspective. It is a weak call because the floor plane itself is consistent.",
+   "fix": "Pull the camera back and lower it. Draw the binoculars in a gentle three-quarter view with front and rear barrels nearly the same size, and show less floor."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the spider floats on a flat wavy background, seen from a moderately high front view. The body top and legs all share that view, and the rounded normals suit its form. B: the fan lies almost flat to the camera with no ground. Its pleats are even, alternating patches, which accounts for the high planar_share. Both use a single simple view with one layer behind the hero.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the pool bar is cropped by the card edges and shot from a high angle. The stool tops widen steadily toward the viewer and the water plane stays even from bottom to top. B: the whole cabin is centred with a stack of layers behind it. The gable wall faces us almost flat, yet the roof tops read strongly upward (green) from a low grass-level eye line, so the roof and ground do not quite share one camera height. The whole-object, centred framing with extra layers matches the generated lighthouse lessons.",
+   "fix": "Use one camera height for the whole cabin: lower it so the roof slopes foreshorten, or raise it so more of the grass shows. Move in closer and let the card edges crop the scene."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the gate is a dead-on front elevation, but the pillars show extra side faces. Flat stacked layers sit behind it: gate, tombstones, hills and moon. Depth comes from stacking, not from the ground receding. B: this is the same pool-bar image as p04 A, with a cropped, high, consistent view and stools and water on one plane. A reads as the staged, layered generated scene.",
+   "fix": "Turn the gate slightly so one pillar sits nearer than the other, and let the path recede to one horizon. Use fewer background layers and simplify them."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the spotlight barrel is in a mild three-quarter view with little size difference between front and back. The truss is a simple cropped foreground strip and the background is plain blurred light. B: the pump stands on a slab with a full three-layer desert behind it, including a horizon and hazy mesas. Its slab edges sit at slightly different angles, and the object is framed whole like the generated lighthouses. The view is still fairly coherent, so this is a weak call.",
+   "fix": "Simplify the background to one soft band. Keep the slab's edges converging to the same horizon the pump stands on, and crop in closer."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the candy corn is seen almost side-on, with a nearly straight base, while the table planks recede from a higher view. The table's back edge bows in a curve in the lens, the same round-table horizon seen on the generated computers in the lessons. The high planar_share comes mainly from the big flat table and wall. B: the plate ellipse, plank direction and fruit share one high tilted view, even though the lens shows the table as a blue-tinted plane.",
+   "fix": "Put the candy corn on a straight-edged table with a straight back horizon. Curve its base into a visible ellipse that matches the camera angle on the planks."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the moon is a plain sphere, and its craters narrow correctly toward the rim, so it reads as one view. The background shows the soft pink-to-blue normal drift seen on real sunburst cards in the lessons. B: the bugle bell swells hard toward the camera while the mouthpiece shrinks far away, a forced wide-angle turn. The background reads flat and uniform like the generated gloves, and planar_share (0.002) is below the real range, though tube forms partly explain that.",
+   "fix": "Turn the bugle closer to side-on so the bell and mouthpiece keep a natural size ratio, with only gentle perspective along the tube."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the chair is a near-front view with a slight turn, and the baseboard and floor run level behind it. B: the locker is in a three-quarter view at about mid-height, with the shelf underside and the locker floor both visible as that height predicts. The baseboard rises in step with the turned wall. Both hold one camera and mild perspective, and both have a simple room behind.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the lamp repeats the real lamp-post idea from the reference sheet but sits larger and flatter to the camera. The hood top reads from above, while the arm and pole read as a side-on flat shape, and there is no depth layer behind it. B: the feeder's roof top and tray top agree on one camera above, with a clear gap to the blurred park behind and an overlapping trunk. It reads as a settled single view.",
+   "fix": "Turn the lamp head slightly so the hood, glass and curved arm share one three-quarter view, with the arm visibly passing behind the lantern."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the sneakers are in a high three-quarter view on a plain floor with a straight horizon, and near and far shoes differ only mildly in size. B: the candle's top ellipse and saucer ellipse agree with the table, and the table's straight back and front edges echo the real desk card. Both ground planes are consistent.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the tilted floating lantern shows the roof's top face (green) and also a broad underside of its base (purple). The glass panels flare outward toward the bottom, which suggests a close, exaggerated view rather than one mild camera. B: the neck pillow is a swollen form with smooth rainbow normals and a slight tilt, and that form needs no perspective tricks.",
+   "fix": "Keep the lantern tilt mild, showing the roof from above and only the front edge of the base, not its underside. Keep the glass panels parallel in one view."
+  }
+ ],
+ "pattern": "Generated cards pull the camera close and exaggerate it: the nearest part swells (lenses, bells, keyboards) and the object is usually shown whole and centred. Ground planes give them away too, with curved table horizons or a floor seen from higher than the hero. Stacked scenic layers often replace real ground recession. Real cards keep mild perspective, one level camera, straight horizons and simple backgrounds, and they often crop the hero. Most test calls are low confidence, because only the wide-angle swelling and curved horizons recur clearly."
+}

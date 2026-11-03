@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A is a true night card: most of the frame sits in one dark sky and fence mass, with light only in the sign faces and yellow windows, and its mean (0.487) and lightness gap (0.284) are well outside the real range. B has a light sky and ground, a mid-grey facade and dark timber in many thin lines. It is busy but keeps a normal bright key, with its gap only just past the real limit.",
+   "fix": "Raise the whole card to a bright daytime key: light blue sky behind the sign, no dark night field, and keep the darkest tones only in small shadows under the sign panels and balcony."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A's horseshoe is mid-grey on mid-green rings, with small crisp highlights along the rim and a soft dark band on the lower curve, so it splits cleanly into few groups. B's pillow is one heavy dark blue mass with jagged black fold wedges around the hole and a pure white hole, and the ring edges in the background break into speckle. All numbers are in range, so this is a weak call.",
+   "fix": "Lighten the inner fold shadows on the pillow to a soft medium blue, with no black wedges around the hole, and keep the pink rings clean-edged."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A's teapot is a near-black mass on a mid wall with a soft pale glow behind it, plus a white rim and a tall soft highlight, like the dark hero in the real camera card. B's floor is close to white and fills the lower half, the wall above is one flat light tone, and the shoes are mid-grey with no deep dark group. Its mean of 0.762 is above the real range.",
+   "fix": "Darken the floor to a warm mid yellow so it is not near white, and give the shoes a deep blue body with one solid dark shadow under them."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A has clear bands: dark sky, lighter clouds and field, and bright white blades as the top accent against the dark sky. B sits almost entirely in one dark door value, broken by scratchy light patches on the panels and hundreds of small leaf tones around the frame, with a white chip at the right edge. The wreath is the only group that lifts out, and the mean of 0.552 is just under the real range.",
+   "fix": "Keep the door one smooth, even blue with soft shading, simplify the ivy into a few larger leaf clusters of two tones, and remove the scratchy pale streaks on the door panels."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A's twig ball is hard contrast throughout, with pale twig tops next to black gaps across the whole form, so it has no broad light or dark side. B's cart has big groups: white and dark awning stripes, one dark red box and a mid-tone blue background. Local contrast in B is gentle within each group. Numbers are in range on both, and the subject partly forces A's busyness.",
+   "fix": "Shade the twig ball as one round form with a lit upper left and a soft darker lower right, and fill the gaps between twigs with a medium brown instead of black."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A has scattered values: bright green at the top corners, a dark rail band with black gaps across the middle, and a white book below, which pushes the vignette to -0.152 and the gap to 0.19, both outside the real range. B has a dark lamp silhouette on a very light cyan ray field, with one soft pale glow in the glass. B's mean is too high, but its hero-against-background design matches the real cards.",
+   "fix": "Drop the black gaps behind the railing, darken the bright top corners slightly, and make the background one calm mid tone so the white book is the only large light shape."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A has light corners from sky and paving, a white fence and a mid-dark planter, with broken tones across the fence, leaves and stones, so there is no single quiet background group. The vignette of -0.12 is outside the real range. B has a dark background, a lighter floor and a large backpack with a soft dark side, with few groups and a corner value that fits the real cards.",
+   "fix": "Darken the corners a little, simplify the fence and paving into one calm mid tone behind the planter, and remove the white gaps between the fence boards."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B has black upper corners, a black table edge and a near-white scroll, with a sharp dark arc around the glow. It is a hard light-on-black design, and its mean, contrast and gap (0.313) are all outside the real range. A's light cyan sky and sand frame a mid-dark cart with gold highlights on top. Only A's gap (-0.314) is out, and that matches the dark-hero-on-light design of real cards.",
+   "fix": "Lift the background from near black to a medium blue, soften the glow into a broad, gentle gradient, and turn the scroll's pure white faces into warm cream with soft shading."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A's scarf is a dark group on a mid-tone swirl, with soft inner folds and one small black fold at the neck, and it is clearly split from the background by value. B's harmonica has a hard white streak on the top, a black lower edge and bright rim lines. Its mid greys match the wave background, so it separates mostly by hue and only at the dark edge. Numbers are in range on both, so this is a weak call.",
+   "fix": "Replace the sharp white streak with a broad soft highlight, and darken the whole harmonica body one step so it stands apart from the orange waves."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A has large near-white card faces with almost no shading, set on a light field, and a hard black shadow slot under the fan. The mean of 0.783 is above the real range, and light tones dominate the frame. B's ball breaks into broad soft panels of light, mid and dark, with a soft shadow, and sits just at the top of the range.",
+   "fix": "Give the card faces a soft pale grey shading toward the lower edges, darken the background one step, and soften the black shadow under the cards into a medium brown."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B has a strong bright glow right behind the box that falls away to dark corners, with a vignette of 0.162 above the real range. This matches the halo seen on the generated glove lessons. Inside the hero, black lid edges sit hard against a near-white medal cushion. A's rays stay in two even dark and mid bands with no halo, and the gold star separates cleanly as a lighter shape, though its gap of 0.201 is high.",
+   "fix": "Remove the bright glow behind the box, keep the ray background at an even mid tone out to the corners, and lighten the black lid edges to deep red."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's piano is a nearly black mass with speckled dark panels and a hard strip of white keys, on a light background. Contrast (0.218) and gap (-0.352) are both well past the real limits. B's arch is also darker than its light stripes, but its mid-tone leaf and flower groups are gentler, and its numbers sit close to the real range.",
+   "fix": "Lighten the piano body to a warm medium red-brown with soft shading on the panels, and keep black only for the black keys and the slim shadow under the piano."
+  }
+ ],
+ "pattern": "Generated cards break away from the real value design in three ways. They push key too far, with near-black fields or near-white surfaces outside the real mean and gap ranges. They add a bright halo behind the hero that drops to dark corners, or scatter light and dark across the whole frame with no quiet background group. They also use hard local contrast inside the hero: black gaps, hard white streaks and scratchy broken tones instead of broad masses with soft roll-off."
+}

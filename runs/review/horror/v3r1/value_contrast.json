@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (mirror) sits almost entirely in the top two greys. The wall, mirror glass and gold frame merge into one pale group, the only darks are a thin floor shadow and the gem, and the mean of 0.813 and rms of 0.09 are both outside the real range. A (drink) has a clear dark purple field with a light glass hero, as real cards do, though its gap of 0.257 runs slightly past the real limit.",
+   "fix": "Darken the back wall to a mid tone so the pale mirror stands out against it. Add a deep shadow under the frame and darker inner edges on the gold carving."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (binoculars) has a near-black hero on a pale floor, with hot white boards in a halo around the hero and darker boards at the top. Its gap of -0.277 is past the real limit. A (rocking horse) has a mid-value body, darks kept to the mane and tail, and broad stripes in the background, all within real ranges.",
+   "fix": "Keep the floor one even mid-light tone with no bright patch around the binoculars. Lift the dark barrels and eyepieces a step, and keep black only in the deepest creases."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (spider) has a large black mass across body and head on a light field, with very little modelling inside it. Its rms of 0.184 and gap of -0.377 are both outside the real range. B (fan) stays in range, with mid-grey and dark pleats and a soft bright patch behind it. A black subject explains part of A's reading, so this is a weak call.",
+   "fix": "Lift the spider's body from black to soft charcoal, with a broad lighter sheen across the top. Keep true black only under the body and at the leg joints."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (log cabin) breaks into many small dark, mid and light patches across the logs, roof, trees and grass, with no broad light mass, and the hero is close in value to the foliage behind it. A (pool bar) has clear large groups: pale counter, mid water and dark bar opening. A is the same card as p05 B, and its vignette of -0.071 exactly equals the bottom of the real range.",
+   "fix": "Group the cabin into one dark roof, one mid wall and one lighter sky. Calm the trees and grass into a single soft pale backdrop so the cabin stands out by value."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (gate) is mostly mid-grey, with a pale moon, thin black ironwork and mottled light patches in the stone and path, so its light shapes stay small and scattered. Its mean of 0.564 is at the low end of the real range. B (pool bar) has a pale counter and thatch over mid water with a single dark opening, which are the broad groups seen on real cards. B is the same card as p04 A.",
+   "fix": "Light the two stone pillars as one clean pale shape and make the sky behind the gate a single brighter tone. Remove the blotchy light patches from the path."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (spotlight) is low key, with a near-black lamp body and a dark lower-right corner that the lamp merges into. Its mean of 0.567 and vignette of 0.128 are both just outside the real range. B (fuel pump) has a mid-dark hero on a lighter desert field and stays within range. Both misses are small.",
+   "fix": "Brighten the backdrop to an even medium tone and remove the dark lower corner. Lift the lamp housing to a dark blue-grey with a wide soft highlight."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (fruit plate) fragments into many small light and dark spots across the fruit, and the plate rim and table share nearly the same light tone, so the hero has no single value shape. Its rms of 0.115 is just under the real range. A (candy corn) reads as one big light shape, with gentle steps across the bands and a soft shadow.",
+   "fix": "Darken the table one step so the plate reads as one bright shape. Gather the fruit into a few broad light and dark clusters, with fewer small highlights."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (moon) is a huge near-white disc with little tone inside it, ringed by a bright glow against a dark blue field. Its gap of 0.288 is far past the real limit. B (bugle) has a mid-value hero with dark rope accents on a light field, and only its mean of 0.809 runs slightly high.",
+   "fix": "Lower the moon to a warm mid-light tone with shaded lower edges and darker craters. Remove the glowing ring and calm the background so the difference is less extreme."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (armchair) is a heavy black silhouette on a pale wall, with the tufting and cushions sunk into black. Its rms of 0.21 and gap of -0.374 are both outside the real range. B (locker) has a mid-value hero with darks kept inside the open cabinet, though the hard wall shadow pushes its vignette slightly negative.",
+   "fix": "Render the chair in a mid-dark red with lit tops on the arms and cushions and visible soft folds in the tufting. Keep the deepest dark only under the seat."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (bird feeder) puts black foliage and trunk against near-white pavement and sky, leaving the mid-grey hero between the two extremes. Its rms of 0.204 is well above the real range, and the bright background and dark top split the card with no clean grouping. A (lamp) has a dark frame on a simple light field, with only small misses on gap and vignette.",
+   "fix": "Soften the park background to a pale mid tone. Lighten the tree trunk and leaves to a medium value, so the feeder is the strongest contrast on the card."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (shoes) has a floor almost clipped to white across the lower half, set against a flat mid wall with a hard horizon, and a dark blue hero with hard internal contrast. B (candle) is also light, but its hero, soft dome glow and darker wood steps match the real computer card. Both means are over the real range, so the call is weak.",
+   "fix": "Bring the floor down to a warm mid-light tone so it stops reading white. Soften the jump between the blue uppers and pale soles."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (lantern) sets a near-black frame on a blown-out bright ring pattern, with hard, crisp value breaks on the hero. Its rms of 0.198 and gap of -0.359 are both well outside the real range. B (neck pillow) has a mid-value hero with soft shading on a light field and stays within range.",
+   "fix": "Lift the lantern frame to a dark warm grey with soft broad highlights. Lower the rings behind it to gentle steps of a single mid-light tone."
+  }
+ ],
+ "pattern": "Generated cards push value too far. Heroes go too black or too white, with large areas of near-clipped tone and little modelling inside them. A bright halo often sits tight behind the hero. Small light and dark patches scatter across the hero and background instead of forming the broad, calm groups and soft roll-off of real cards. The measured misses cluster in lightness_gap and rms_contrast. This is a tendency and not a clean rule: several calls are weak, and subject colour (black spider, red chair) explains part of the extreme readings. p04 A and p05 B are the same card, with its vignette exactly at the real floor, so it is probably real."
+}

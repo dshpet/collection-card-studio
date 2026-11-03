@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: hay bale in low three-quarter view, with end, long side and top each a separate normal patch, resting on a ground that recedes to a wall line. B: book seen almost from above, with cover, fore-edge and table merged into one near-flat blue field. planar_share 0.706 is above the real range. The view itself is consistent, so this is a weak call.",
+   "fix": "Lower the camera and turn the book further so the page block and spine are clearly foreshortened side faces. Let the table recede instead of lying like a flat backdrop."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: popcorn cart turned three-quarter, with paving that recedes under the wheels and a canopy, counter and wheels sharing one low view. B: barrel nearly front-on and centred, with an unusually open lid disc on top. The dirt floor stops at a straight wall line, closer to the generated cards' raised camera than the low real barrel in the reference set.",
+   "fix": "Lower the camera so the lid is a thin ellipse, turn the barrel slightly and let the staves curve away. Keep the ground receding at the same shallow angle."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: vending machine is wider at the top than the bottom, a keystone that implies a camera above, yet no top face shows. Top and bottom edges also converge fairly hard to the right, and the floor fades out with no firm plane under the feet. B: lantern is front-on but its base ellipse agrees with the depth of the table top.",
+   "fix": "Use mild perspective with vertical sides kept parallel. If the machine leans away at the base, show a sliver of its top face. Give it a clear floor line and a contact shadow under the feet."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: neon sign is dead-on against a wall with only an offset shadow, which suits a wall-mounted object. B: viewer is cropped at the bottom, low and three-quarter, with a railing receding and a paler city behind, like the real cropped lighthouse. Each view is internally consistent and planar_share is in range for both.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: coaster cars grow from about 60 px to 150 px wide along a short run, a forced wide-angle look. The stacked cars and the loop do not read as one rail curve seen from one point, and the rounded rainbow normals show few flat faces (planar_share 0.028, below real). A: stagecoach is three-quarter with its wheels and ground in one view, and its body has planar panels.",
+   "fix": "Use a mild lens with cars of similar size along the track. Draw one continuous rail from one camera position, and give the car bodies flat side panels with crisp edges."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: cowboy hat turned three-quarter and floating, with the brim dipping so its top and underside both read naturally. B: flip-flops seen from a raised three-quarter view, also floating, like the real fins card. Neither has a ground plane, both hold one view, and planar_share is almost equal.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: guitar body faces the camera as a flat, even blue patch, while the stage planks beneath it fan out as if seen from well above. The guitar and floor therefore do not share a view, and the truss is also dead-on. B: horse in side view with hooves planted on boards at a matching angle, and fence and hills behind it in clear layers.",
+   "fix": "Turn the guitar three-quarter so the body edge shows and it leans on a stand. Lower the camera so the floor planks recede at the same shallow angle as the guitar's base."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: cactus is frontal and symmetrical. Its flower tips toward the viewer as if seen from above, while the sand sits at a low eye level, so the parts disagree. Its smooth rainbow forms have almost no flat faces (planar_share 0.006, below real). B: slide is three-quarter, with the deck, ladder and pool edge all receding in one view and clear layers.",
+   "fix": "Turn the cactus slightly with one arm nearer the camera. View the flower from the same low height as the sand so its underside and side show, and shape the arms with flatter ribbed faces."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: glass has a thin rim ellipse, a rounder base ellipse and a clear table line. B: jug has a similar shallow view of lip and base with a plank table. Both hold one camera height with mild perspective, and planar_share is close.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: door is dead-on and symmetrical, with both jambs equally visible and ivy simply framing it, so there is no turn or foreshortening. planar_share 0.012 is below real, likely because the ivy dominates the map. A: travel pillow is tilted and turned in space, with one arm passing behind the other at the clasp, giving a clear overlap and a sense of depth.",
+   "fix": "Turn the door slightly so one jamb and the door's thickness recede. Add a step at the bottom as a ground plane, and put leaves nearer the camera on one side only so they overlap the door."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: bandana floats, facing the camera, with a dark inner fold giving depth. B: towel is a tilted plane with near-parallel edges and soft folds, also floating. Neither has a ground plane, both stay in mild projection, and planar_share is in range for both.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: oil lamp is upright, centred and symmetrical, with a smooth rainbow in the normals and a planar_share of 0.003, far below real. Its rim and base ellipses agree, so the view is simple but not broken. B: gold pan is strongly tilted and turned, with the handle receding, interior floor foreshortened, and a flatter inner base (0.305).",
+   "fix": "Tilt the lamp slightly and turn it so the handle comes forward and overlaps the bowl. Place it on a surface with a clear ground angle, and add flat faces and hard steps to the brass base."
+  }
+ ],
+ "pattern": "The camera still gives generated cards away. They sit upright, centred and near-frontal, or use a raised view with a top-heavy keystone. Real cards turn the object harder, sit lower, use milder perspective and accept a crop. Generated parts can also disagree with each other or with the ground, such as a flower or top seen from above over a low floor, or a flat-on object on a steep floor. Their forms read as smooth rainbow swelling with few flat faces, often with planar_share below the real floor, and backdrops tend to be simple flat layers rather than planes the hero stands on. These are tendencies rather than proof: only p05 and p08 got confidence 3, the p01, p02, p03, p07, p10 and p12 calls are weak, and p04, p06, p09 and p11 gave no reason to choose."
+}

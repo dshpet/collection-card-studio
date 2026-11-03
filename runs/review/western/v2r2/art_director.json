@@ -1,0 +1,92 @@
+{
+ "issues": [
+  {
+   "issue": "Harsh dark gaps inside the hero break up one big light. The tumbleweed is the clearest case, with near-black gaps between the branches and no broad light or shadow side. The saloon shows it more mildly under the balcony and in the doorway. This is the strongest tell in the set: both cards are above the real range on form contrast, and the eye agrees.",
+   "specialists": [
+    "lighting_shading",
+    "value_contrast",
+    "edges_linework"
+   ],
+   "instruction": "Fill deep gaps with a warm mid tone. Light the whole object as one form, with a bright upper side and a soft shadow side."
+  },
+  {
+   "issue": "Metal renders as hard studio chrome. The harmonica has a sharp white band against a dark lower plate, and the windmill blades jump between bright and dark. Next to the soft sheen on the real cards, these read as photographic. The horseshoe's softer steel passes.",
+   "specialists": [
+    "lighting_shading",
+    "value_contrast",
+    "surface_finish",
+    "color_palette"
+   ],
+   "instruction": "Paint metal with one broad soft sheen that rolls gradually into a cool blue-grey shadow."
+  },
+  {
+   "issue": "Surface marks are spread evenly over the whole of some wooden objects: bark strokes and cracks on every tumbleweed branch, and grain on every saloon post and rail. This applies to these two cards only. Real cards also carry dense detail, so this is about even marks, not the amount of detail.",
+   "specialists": [
+    "surface_finish",
+    "edges_linework"
+   ],
+   "instruction": "Keep wood surfaces smooth, with a few faint grain lines placed where the light falls."
+  },
+  {
+   "issue": "Value is pushed too far on two cards. The card faces are nearly flat white with a near-black shadow under the fan, and the piano body sits darker than the real value range. Both are measurable and visible, but they are mild.",
+   "specialists": [
+    "value_contrast"
+   ],
+   "instruction": "Add soft shading to large white areas, and lift dark bodies and shadows to a rich mid-dark colour."
+  }
+ ],
+ "style_text": "",
+ "cards": [
+  {
+   "pair": "p01",
+   "keep": false,
+   "note": "Saloon: slightly lighten the dark gaps under the balcony and in the doorway to a cool mid brown. Make the wood grain fainter on the posts and rails. Let the right-hand walls fall into a soft shadow."
+  },
+  {
+   "pair": "p02",
+   "keep": true,
+   "note": ""
+  },
+  {
+   "pair": "p03",
+   "keep": true,
+   "note": ""
+  },
+  {
+   "pair": "p04",
+   "keep": false,
+   "note": "Slightly soften the blades to a gentle light-to-mid gradient with one soft sheen."
+  },
+  {
+   "pair": "p05",
+   "keep": false,
+   "note": "Fill the gaps between the branches with a warm mid brown. Shade the ball as one round form, lit upper left with a soft shadow lower right. Make the branches smooth, with only a few faint bark lines."
+  },
+  {
+   "pair": "p08",
+   "keep": true,
+   "note": ""
+  },
+  {
+   "pair": "p09",
+   "keep": false,
+   "note": "Harmonica: replace the sharp white band with one broad soft sheen that rolls gently into the lower edge. Tint the steel shadows a cool blue-grey. Add a soft shadow on the background under the harmonica."
+  },
+  {
+   "pair": "p10",
+   "keep": false,
+   "note": "Add soft pale lilac shading toward the lower edges of the card faces. Soften the black shadow under the fan into a medium warm brown."
+  },
+  {
+   "pair": "p11",
+   "keep": true,
+   "note": ""
+  },
+  {
+   "pair": "p12",
+   "keep": false,
+   "note": "Slightly lighten the piano body to a warm medium red-brown with soft shading on the panels. Make the floor seams fainter."
+  }
+ ],
+ "summary": "Yes, this is close to the real cards. The specialists could not reliably find the generated card: no one named it in more than about 4 of the 10 pairs, and most calls pointed at real cards or at nothing. They also made firm calls on the two controls, where both cards are real.\n\nI read the key's names as card A's title, so the generated cards in p01 and p09 are the saloon and the harmonica. On that reading, 4 of the 10 generated cards can stay as they are: horseshoe, coffee pot, mine cart and star badge. Windmill, saloon, card hand and piano need small touch-ups. Tumbleweed is the only card with a clear fault, and harmonica is the next weakest.\n\nI overruled these calls because they fall on real cards, which sets the bar for what is acceptable:\n- Ivy door and rose arch: dense detail and gloss.\n- Sneakers: multicoloured accents.\n- Scroll: glossy reflective slab.\n- Ring box: bright glow behind the hero.\n- Beach ball: full-frame sand.\n- Motel: night scene.\n- Neck pillow, sneakers, ring box and rose arch: form calls.\n\nThe real range limits on detail, edges and gloss are too tight, because real cards exceed them. Only flagged numbers that also show on the card were used. Form and framing fixes were dropped as instructed. The viewpoint report's p10 and p11 entries describe each other's sheets, so I discounted them.\n\nNo style change is needed. Over-correcting toward softness is now the main risk, so all notes are kept small."
+}

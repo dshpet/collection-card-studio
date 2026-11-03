@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: hay is drawn as soft flat ribbons with a slightly out-of-focus finish, and the rope twist is quiet, which sits close to the soft real cards. B: sticker edges and map pins on the cover are razor-clean, and the tabletop wood is wide orange-and-cream decorative stripes, far larger than the fine grain on the real barrel and map cards. B's detail_subject and micro_texture are at the top of the real range.",
+   "fix": "Make the tabletop wood grain fine and quiet, thin low-contrast lines in one brown family, not wide stripes. Soften the sticker edges slightly so they sit on the cover like printed paper."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: cart paint and popcorn are soft and simple, with smooth lacquered gold posts and clear glass, in the same finish as the real cards. B: staves carry drawn wavy grain lines plus orange splat stains and dark blotches, the iron hoops have gritty scuffing and beaded rivets, and the ground is pitted and cracked. B's marks read as painted-on texture, unlike the real barrel's smooth, fine grain. Its gloss_share of 0.041 is near the matte floor of the real range.",
+   "fix": "Remove the stains and splats from the staves. Use fine, quiet straight wood grain with a soft satin sheen, and make the metal hoops smooth with a clean soft highlight."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the machine is soft-edged with glossy blue paint and slightly blurred cans and droplets, matching the soft finish of real cards. B: the lantern's black metal has crisp, even matte-satin edges, the glass has a sharp clean rim, and the table has a drawn knot-ring grain pattern. It is cleaner and sharper than real cards, but the measured fields are in range for both, so this is a weak call.",
+   "fix": "Soften edges and highlights on the lantern metal, and replace the knot rings in the table with fine, quiet straight grain."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the neon cone is very soft, with a blurred glow and a simple glossy surface, and its detail is low within the real range. B: the viewer's metal shows hard streaky chrome reflection bands and crisp panel edges, with slightly smeared gradients on the post rings. Its detail_subject of 0.0446 is at the top of the real range. Neon-sign material is hard to compare with the reference cards, so confidence is low.",
+   "fix": "Replace the streaky chrome bands with broad soft highlights on smooth painted metal, and soften the panel edges."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the coach has outlined trim, crisp yellow panel lines, ribbed seat cushions and spoke edges all at equal sharpness, in one flat painted finish, with wood and paint reading alike. Gloss_share of 0.276 is above the real ceiling and detail_subject is near the top. B: the coaster cars are soft moulded glossy shells with broad highlights and few marks, like the inflatable and pool real cards.",
+   "fix": "Reduce the fine trim lines and seat ribbing, soften edges, and separate the materials: smooth glossy red paint on the body and quieter satin wood on the frame and spokes."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the hat is matte felt-like with a very faint fine surface tone, and the band has a soft satin sheen. B: the sandal sole is matte foam with small moulded dots, and the strap is glossy. Both mix matte and shiny plausibly, both are soft, and all fields are in range, so this vector gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the guitar has sharply drawn frets, strings, pickups and fret dots against a mirror-lacquered red body, and detail, gloss and highlight are all at or above the top of the real range (gloss 0.211, highlight 0.172). B: the horse hide is a soft airbrushed satin with low micro-texture, and the deck grain is quiet. This lean relies on A being over-crisp.",
+   "fix": "Simplify and soften the hardware on the neck and pickups, and reduce the lacquer shine on the body to one broad soft highlight."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cactus reads as one smooth rubbery vinyl, with tiny beads for spines and no plant surface, so the skin and the flower look like the same toy material. B: the slide is also smooth, but moulded plastic is the correct material, and the wood underside and tile deck add variety. Both sit slightly below the real gloss range.",
+   "fix": "Give the cactus a waxy plant skin with subtle fine lengthwise variation and small pale spine clusters, not uniform plastic beads."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: glass, ice and juice are soft and clean, with broad simple highlights. B: the clay body is covered in visible stipple speckle, the shoulder has an airbrushed grainy hot spot, and the table has drawn knot rings. This grainy painted finish is not seen on the smooth real cards, and it recurs on the generated-looking barrel in p02 and lantern table in p03.",
+   "fix": "Remove the speckle from the clay and draw smooth matte terracotta with one soft highlight. Make the table grain fine and quiet with no knots."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the pillow has soft puffy folds and a faint fabric weave, with very low detail at the bottom of the real range. B: the door and wreath are dense with crisp petal edges, painted door grain and hard leaf outlines, with heavily worked vine leaves around them. Detail_subject of 0.0884, micro_texture of 0.0447 and gloss_share of 0.51 are all far outside the real range.",
+   "fix": "Simplify the wreath into fewer, larger soft flowers with smooth shading. Remove the scratched grain from the door paint and leave a smooth satin surface."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the bandana is soft matte cloth with a slight velvety fuzz and clean print. Its detail_subject of 0.0476 is only just above the real range. B: the towel is covered edge to edge in enlarged bumpy terry noise, a heavy repeated texture at large scale with no smooth area. Detail_subject of 0.0995 and micro_texture of 0.0277 are well above the real range.",
+   "fix": "Remove the bumpy noise and paint the towel as smooth soft cloth with only a very fine, faint weave and large simple folds."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the brass lamp is smoothly lacquered with broad soft highlights, and the milky glass is simple, like the rounded real objects. B: the pan has brushed streaks, scuff marks and concentric ridges, and the nuggets have crisp hammered facets. This is a photoreal rendered metal finish with more worked surface than real cards show.",
+   "fix": "Remove the scratches and brushed streaks from the pan. Draw smooth grey metal with broad soft reflections and make the gold nuggets rounder with fewer facets."
+  }
+ ],
+ "pattern": "Generated cards give themselves away through worked surface, not through too much gloss. Real cards are soft and simple: broad highlights, quiet fine grain and few marks at small scale. Generated cards add crisp or noisy surface everywhere: stipple on clay, bumpy terry on cloth, drawn wood grain with knots and stains, scratches on metal, sharp trim and stitches, and enlarged decorative texture scale. All of it sits at one even sharpness, and detail_subject and micro_texture run at or above the top of the real range."
+}

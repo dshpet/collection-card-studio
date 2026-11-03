@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the boot, spur and swirl background all sit in orange-brown, with no cool or neutral area on the card. The boot's shadows at the sole and heel only go to darker red-brown (warm_share 1.0; shadow_chroma_kept 0.606, below the real floor). A: a navy cap with one gold accent on cyan gives a clear hero/background hue split, and its lens shadows stay related blue-violet. A's warm share is slightly low, but that is its blue card rather than a colour fault.",
+   "fix": "Put the tan leather boot on a cool blue or teal background. Make the leather a muted natural brown, and let the shadow under the ankle and sole turn dusty plum rather than deeper orange."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: nearly the whole card is two masses, gold rope on violet. hue_families is 1.79, below the real floor, and the violet background at 0.2313 is above the real ceiling. The rope is pushed golden rather than a natural hemp tan. B: the red scarf is very pure (chroma_subject 0.2165, above the real range), but it has a gold and orange badge plus a cyan background, so its hue roles are clearer. Both overshoot, so this is a weak call.",
+   "fix": "Make the rope a dull natural hemp tan with grey-brown shadows. Calm the purple background, and add a small dark or neutral element to rest the eye."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the hat crown and brim are a single terracotta-orange, and the lens shows only two close brown tones. Shadows under the brim stay the same orange-brown, with none of the plum drift seen on the real baseball glove, and the cyan burst is the only contrast. A: tan jacket, orange collar and cuffs, and green sash make three separate local colours, and the jacket's lights pick up green from the background, tying hero and background together.",
+   "fix": "Paint the hat in muted dusty brown felt, not orange. Let the underside of the brim fall into a cool plum-brown shadow that picks up some of the blue background, and add a darker worn band."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the caravan body is yellow-cream rather than neutral, which matches the cream drift in the generated computers. The card also stacks orange stripe, sky-blue blind, loud chartreuse grass and hot violet background, so there are many loud masses. A: the greyed navy anchor on yellow matches the muted navy of the real camera on yellow, with a tan rope as the one secondary colour. Its warm_share of 0.812 is just the striped background. B's violet-grey shadows are good, so confidence is low.",
+   "fix": "Make the caravan body a neutral off-white with grey shading instead of butter cream. Mute the grass to a soft natural green, and keep the orange stripe as the only strong accent."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: blue-grey metal mug with a single red dot, on lime stripes and an orange plank. Its very low subject chroma of 0.0337 is not a flag, because the real computer card scores the same way. B: pink roses and green leaves on pale pink, with a slightly low background chroma of 0.0954. Both keep believable local colours and a clear hue split, so colour gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the saddle is red-orange and the fence is orange, so hero and props share one hue. Shadows on the flaps and on the fence behind stay rust and orange, and the only relief is the pure cyan sky. A: the computer keeps off-white and grey plastic with blue-lilac shadows on its side and keyboard. That large neutral mass rests against the orange, and it is the card labelled REAL in the lessons.",
+   "fix": "Make the saddle a darker muted brown leather and the fence a pale weathered grey-tan wood, so the two separate. Let shadows on the wood go cool grey-brown rather than orange, and soften the cyan sky."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: pink-red wall, orange doors and orange floor fill the card with warm hues (warm_share 1.0, above the real ceiling). Shadows on the floor and door frame are only deeper red-orange, and there is no cool or neutral relief except a few tiny gold hinges. B: blue shoes on an orange and cream set give a true warm/cool split, with neutral taupe shadows on the cream floor. B's many small lace colours are busy, but the masses are controlled.",
+   "fix": "Replace the pink wall with a cool teal or dusty blue wall. Make the doors a muted brown wood and the floor a paler, greyer plank, and let the cast shadow go cool grey-brown."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: orange wall and orange-tan sand with a pure yellow-green cactus give two loud hues at equal volume. The sand shadows and rocks stay in orange and tan, and even the pink flower reads orange in the lens. No neutral area rests the eye. A: red and gold cart on blue, with a large pale stone pavement and white stripes supplying real neutral share. Hue roles are clear (hue_families 4.57 vs 2.97).",
+   "fix": "Turn the wall behind the cactus into a soft cool sky blue. Make the cactus a dusty desert green, paint the sand a pale muted beige, and let its shadow go cool lilac-grey."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: barrel, lid and floor are the same orange-brown, so the hero merges into its table, and only the sky-blue wall breaks it. Dark areas on the staves and iron hoops go red-brown, even the iron looks warm, and shadow_chroma_kept is 0.579. B: gold trim, dusty maroon wood, muted sand and a violet shadow side on the chest, with cyan and magenta gems as small accents, so more materials hold separate local colours.",
+   "fix": "Make the table a pale grey-tan wood so it separates from the barrel. Make the bands true cold grey iron, mute the barrel wood to a natural brown, and let its shadow fall cool."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: wagon wood, wheels, dirt and red trim all share orange-brown, the canvas drifts cream, and shadows on the ground and under the bed stay saturated orange (shadow_chroma_kept 1.145; warm 0.713). The blue sky is the only cool area. B: wood is also orange, but it sits against a full cyan water mass with a maroon hull and green lily pads, giving a stronger warm/cool split. B's cyan is loud, so this is not a clear win.",
+   "fix": "Paint the wagon canvas a neutral grey-white and the wheels a darker muted brown. Make the dirt road a dusty pale grey-tan, and let shadows under the wagon go cool brown-grey."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: orange sand, peach-yellow sky and red trim pull the card warm, and the black locomotive shows warm brown reflections all over. shadow_chroma_kept is 0.424, below the real floor, partly because black metal has little chroma to keep. B: yellow and red cars with blue rails are loud primaries (chroma_subject 0.1729, above the real range), but they sit in a cool sky with clear hue roles. Both are off in opposite ways, so this is weak.",
+   "fix": "Make the desert a pale dusty beige and the sky a clean soft blue. Let the black locomotive pick up cool blue-grey reflections rather than brown, and darken shadows on the red parts toward deep plum."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: pure red gloves on an orange plank and pure blue wall are three full-strength hues (chroma_subject 0.1818, above the real range). Glove shadows only go to deeper red, and the highlights go orange. B: blue snorkel on muted wood, with plum-violet cast shadows like the plum shadow on the real baseball glove. B has one odd purple tip and many families (6.01), so it is not clean either.",
+   "fix": "Lower the gloves to a slightly deeper natural leather red, with shadows turning wine-plum and highlights staying pale rather than orange. Mute the blue wall and make the wood paler and greyer."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through warm capture. Hero, props and ground share one orange-brown family, and neutrals drift to cream. Shadows only get deeper in the same orange or red instead of moving to a cool plum, grey or lilac, as they do on the real glove and computer. The result is little neutral rest, and hero and background are equally loud with a single complementary backdrop doing all the contrast."
+}

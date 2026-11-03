@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the capsule's cone turns from light to shadow in one slow, even gradient, with no clear core shadow down the side. The lens shows a nearly uniform grey body over a heavy dark underside, which is why light bias is 0.999 and shading range is 0.486, both outside the real range. B: the envelope flap and stacked photos have small soft cast shadows that separate each layer, and light bias and range sit inside the real band.",
+   "fix": "Light the cone from the upper left: a bright strip down the left side, a clear darker band curving down the right side, and a soft shadow under each panel and around the porthole rim."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the asteroid is matte clay with soft-lipped craters. The shadow simply slides to the lower right, the lens shows a glow wrapping the edge, and light bias is 0.921, above the real range. A: the inflatable has narrow streak highlights along its tubes, darkening in the seams, and shading that follows each bulging section, with light bias inside the range.",
+   "fix": "Give the rock crisp planes: sharp sunlit crater rims on the upper left, dark crater floors, and a cool, deep shadow side at the lower right instead of an orange glow around the edge."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the observatory dome and drum carry a soft, front-on gradient. The low sun sits behind the building, yet the front is evenly lit, and there is almost no cast shadow on the grass, only a faint darkening at the base. A: the sandcastle has one clear direction, with a long shadow falling to the left across the sand, dark window recesses and shaded tower sides.",
+   "fix": "Let the sunset light come from one side: warm light on one side of the dome and drum, a cool darker other side, and a long soft shadow across the grass from the base."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the comet's rock is flat facets, each filled with its own blue tone, and the bright tail does not light the rock. The lens is blurry and shallow, with shading range at the low end at 0.514. B: the scarf has a deep inner-collar shadow and smooth turns over each fold, though its form contrast of 0.256 is below the real range, so this call is weak.",
+   "fix": "Show one light on the rock: bright upper-left facets, a darker cool lower-right side, and a pale glow from the tail along the rock's rear edge."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the beach ball has a soft hot spot at upper right, a red-tinted bounce on its lower edge and a dark soft shadow on the sand. B: the glass has a soft shadow to the left and a tabletop reflection. Both have shading range below the real band by a similar amount, and neither shows a lighting tell that separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the station's cylinder is evenly lit in beige with a soft edge falloff. The ring casts little onto the tube, and the solar panels are flat fills. B: the bike and car have a warm sunset side against cool purple shadow, with dark occlusion behind the frame, similar to the cool shadow sides on the real monitor and camera in the lessons. B's range of 0.549 is below the band, so this is not certain.",
+   "fix": "Light the station from one side: bright on the top of the tube, a cool dark underside, and a clear curved shadow from the ring across the tube and from each strut onto the hull."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the bag is pale and even across its front in the lens (form contrast 0.319, below range), but its right end darkens, there is purple bounce at the base and a soft contact shadow. B: the target and bear have shadowed recesses, glow from the bulbs and a soft cast shadow. A leans slightly flat, but not enough to call it.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the pot and stems are evenly lit plastic, and the glowing bulbs put no colored light on the leaves or stems. The table shadow is a detached dark oval to the right. B: the book has a clear shadow side, a page block that falls into shade and a broad soft cast shadow that follows its shape and stays attached along its edge.",
+   "fix": "Make the bulbs light the plant: warm yellow glow on nearby leaves and stem curls, a darker lower pot, and a table shadow that starts tight at the pot base and fades outward."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the rocket body is front-lit and even, with only a thin darkening at the edges. Fins and tower barely shadow the pad or the rocket, and the lens is pale overall. B: the thatch throws a deep shadow over the bar, the stools have dark undersides, and the counter has a strong, deep shadow side.",
+   "fix": "Use side sunlight: a bright band down one side of the hull, a clear core shadow near the other edge, dark shadows from the tower and fins across the pad."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the globe has a broad sheen at upper left and a dark lower-right rim, but the band and arm cast no shadow on the sphere and the stand sits with no contact shadow. Sharp glints sit on the gold. B: the balloons turn smoothly from light to shadow, with soft oval highlights and darkening where they overlap.",
+   "fix": "Add a thin curved shadow from the orbit ring across the globe and from the arm onto the sphere, and darken the sphere where it meets the stand."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the sheet is almost flat and frontal in the lens, with only the curled corners shaded. Light bias of 0.045 and range of 0.545 both fall below the real band. B: the rolled diploma has a clear lit top and a darker cool side, a deep spiral inside the roll, and a reflection on the glossy table.",
+   "fix": "Light the sheet from the upper left: a gradient across the paper, gentle waves that catch light, dark inside each curl, and a soft shadow that widens under the lifted edges."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the tube has thin specular streaks and a foil look, a high-key even body in the lens and a long dark shadow to the left, with light bias of 0.774 above the real range. It reads as a photo study, not the soft stylized shading of the real cards. A: the vending machine has a clean plane change with a darker left side, a soft-edged glass highlight and a soft contact shadow.",
+   "fix": "Draw the tube as soft stylized metal: one broad vertical sheen, rounded folds with gentle dark sides, and a shorter, softer shadow that stays tight at the base."
+  }
+ ],
+ "pattern": "Generated cards tend to use a soft, front-on wrap light: forms turn slowly and evenly like clay, with no firm core shadow and no cool, dark shadow side. Cast shadows are weak or detached, and strong lit elements such as glowing bulbs, a comet tail or a low sun do not affect nearby surfaces. Real cards commit to one direction, with distinct plane changes, deep recesses and shadows that stay attached at the contact point. Caveat: these calls are not purely from lighting. The run path says sci-fi and the test subjects seem to split along that theme, which nudged the low-confidence picks, especially p02, p08, p10 and p12. p05 and p07 are the two pairs I could not separate."
+}

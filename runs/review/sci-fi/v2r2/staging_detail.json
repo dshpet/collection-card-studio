@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: robot arm on a flat grey floor with a hard horizontal seam under broad green diagonal stripes; the only detail is fine floor grain, and background edge density (0.010) falls just below the real range. B: binoculars on warm planks that fill the card, with dark plank seams and a soft shadow, inside the real range.",
+   "fix": "Stand the arm on a real brushed-steel workshop floor with a few large panel seams and a soft contact shadow; replace the stripes with a simple wall that has a soft light falloff."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: medal box on a cyan sunburst with visible ray contrast and a bright centre, inside the real range. B: jetpack on a violet sunburst with soft, low-contrast rays and a smooth glow behind the base; background detail (0.0062) is below the real range. Neither has extra props.",
+   "fix": "Make the violet rays cleaner and more distinct, with a brighter centre and darker corners, and remove the soft haze behind the pack."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: airliner in a real sky with several large cloud masses, cropped by the card edge. B: satellite floating on a very faint tone-on-tone cyan diamond pattern with a plain central glow; background detail (0.0066) and edges (0.004) are at or below the bottom of the real range, so the field reads almost empty.",
+   "fix": "Keep the satellite floating, but give the field a clear two-tone pattern of broad stripes or rays with a visible step between tones, instead of a faint diamond texture."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: swim-up bar crowded with thatch shingles, pool tiles, curved coping, wall boards, four stools, fruit and two cocktails; no single object holds the centre. Background detail (0.0569) and edges (0.144) are far above the real range. B: keyboard on a blue field with pale music notes and stars, tone-on-tone and quiet, with no competing props.",
+   "fix": "Pick one hero, such as the bar counter with one drink; remove the fruit and most stools, simplify the thatch into a few big clumps, and make the pool one calm water shape."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: backboard on cyan concentric rings, large and cropped by the card edge, with a stable lit centre. B: atom on magenta concentric rings that are nearly the same tone as each other; background detail (0.0077) is slightly below the real range, though the edge count is normal. Both are quiet and neither has extra props.",
+   "fix": "Give the magenta rings a stronger step between light and dark bands, with a brighter centre behind the atom and darker corners."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: tape cabinet on a plain wood shelf with two wide bands of blue wall and wood; the shelf has few grain lines and no front drawer or lower structure. B: computer on a desk with visible grain, a shaped desk edge, dark under-desk space and a drawer, plus keyboard and mouse as purposeful props. A's table is thinner and more generic, though its numbers are in range.",
+   "fix": "Draw a real desk under the cabinet: visible wood grain, a rounded front edge, a dark gap beneath and a drawer front, with one small related prop such as a tape reel."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: hover car on a yellow wavy pattern, tone-on-tone with only a slight step between bands; background detail (0.0063) is below the real range. B: scarf on a blue spiral with stronger band contrast, inside the real range. Neither has extra props.",
+   "fix": "Keep the yellow wave motif but use wider, clearer bands with a stronger step between them, plus a soft lighter area behind the car."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both are the same category: A is a phone on white floor tiles with a purple ray backdrop, B is an ice tray on wooden planks with a blue ray backdrop. Both have one hero, no extra props and in-range numbers, so nothing on this vector separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: stone table in a park with several trees, a path, grass tufts and a stump stool. It is busy for its category but stays central and within the real range. B: wristband on quiet blue concentric rings, with a low edge count that is normal for a flat graphic field. The two categories differ too much to rank.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: motel sign at night with a balcony building, fence, tree, hills and stars; a real environment that is busy but within range. B: dome on a smooth hill with a clear sky, soft clouds and a few grass tufts; background detail (0.0081) and edges (0.011) are below the real range, so the setting is emptier than real environments.",
+   "fix": "Place the dome in a clearer setting: a curved path leading to the door, one or two large rounded trees to the side, and a distant hill line, all kept as big quiet shapes."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: capsule in a teal lab with large wall panels, one curved neon pipe, a short glowing dash and a glossy floor; the shapes are quiet but the neon trim is invented decoration, and the numbers sit near the low end of the range. B: two dock posts with rope and a life ring on planks over water, with sand at the top; several purposeful objects and natural clutter.",
+   "fix": "Remove the curved neon pipe and floating glow dash; use a plain lab wall with two or three large panel seams, and a matte floor with a soft reflection under the base."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: sneakers on a pale yellow floor against an orange wall, with a simple hard seam and a long soft shadow. B: flask on a pale ledge with a clean front lip against an orange gradient; background detail (0.0063) is below the real range and the ledge has almost no surface character. The green glow under the flask is the only added effect.",
+   "fix": "Give the ledge a slightly wider, warmer front edge and a darker lower band, add a soft broad gradient behind the flask, and keep the base shadow neutral with less green glow."
+  }
+ ],
+ "pattern": "Generated cards are given away less by clutter than by emptiness: backdrops have weak tone steps and sit at or below the bottom of the real detail range, surfaces are generic and featureless, and invented glow or neon trim replaces real setting structure. The exception is an over-built environment like p04. Confidence is low throughout: on this vector most pairs are close, the category mix makes some measured ranges a poor fit (p04 B, p09 B), and the object choices themselves may have influenced the calls for the sci-fi subjects."
+}

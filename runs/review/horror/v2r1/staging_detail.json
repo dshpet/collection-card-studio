@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A shows the whole hearse inside a full landscape: two clouds, hills with tiny bushes, a road with dashes and grass tufts across the front. That is five stacked bands behind the object. B crops the pier and boat hard at the top left, and the backdrop is mostly one water field with ripple rings and two lily pads. The lily pads are extras, but the tight crop matches the real lighthouse and Ferris wheel. In the lessons, generated versions pull back to show the whole object with its ground. Both measure in range, so this is a weak call.",
+   "fix": "Move in close so the car overfills the frame and crops at one edge. Remove the distant hills and bushes. Keep only plain sky and a simple road surface."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A is a beach ball on sand with no backdrop: soft dune patches and fine grain, and very few background edges (0.003, below the real range), though the ball covers most of the card. B is a pumpkin bucket on a plain wood table against a tone-on-tone green wave, the same setup as the real sunscreen card. A's low numbers and B's slightly busier two-zone setting do not separate them on staging.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "B's captain's hat on a plank floor with a wall corner is the card in the real sheet, so it cannot be the generated one. A is a map and magnifier on plain planks with no extra props. Its high numbers (0.0313, 0.077) come from the mask: the right half of the map stays ungreyed, so the map art is counted as background. The planks themselves are as quiet as the real floor.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A puts magenta rays behind a floor of cracked purple flagstones with moss in the joints, and adds a glowing green line along the lid seam, an effect the chest would not have. The stones break into many small shapes across the bottom third. B keeps rays behind two or three wide wood planks, a few large quiet shapes like the real floors, and its frost belongs to the object.",
+   "fix": "Remove the green glow from the lid seam. Replace the flagstones with one plain, smooth stone slab with no cracks or moss."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A's book lies on wood with strong orange tiger-stripe grain running across the whole card, louder than the real floors. B has a quiet striped wall and a plain table, but its edge density (0.007) falls below the real range. Each has one small flag and A's detail is in range, so neither is a clear signal.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Both are category 1 objects floating on rays with no props. A's purple rays are soft and tone-on-tone, slightly under the real detail range. B's yellow and orange rays are stronger, with thin bright lines at the wedge edges, but stay in range. Both are plausible flat fields.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A stands on a simple grey stone ledge against a plain blue gradient. B stands on a flat cream floor against a plain orange gradient with a hard horizon. Both have no props and a clean category 2 setup, and their numbers are almost identical.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Both float on tone-on-tone concentric rings, cyan in A and yellow in B, the same treatment as the real flippers card. Neither has props or extra decoration behind the object. B's detail is slightly low (0.0073), but its rings read just as quiet as A's.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B adds a tiny orange dew bead at the upper right of the web, an invented touch with no job, and its diamond field shows through the web and raises the edge count to the top of the range. A sets the whistle on a tone-on-tone campfire motif that is on topic and quiet, with no added props. The soft halo around A's hero is a mild flag, so the call is weak.",
+   "fix": "Remove the orange droplet. Show the web alone on a plain, soft pink field."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A hangs a textured full moon in a bright daytime sky at the top right and a single orange leaf on a branch. Both are story props, and the moon is a second focal point away from the tree. B has a hedge, curved path and grass that form a believable garden with no invented story elements, and the topiary stays clearly dominant.",
+   "fix": "Remove the moon and the orange leaf. Use a plain blue sky and low, simple green hills behind the tree."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A has soft clouds low in a plain blue sky. B has a tone-on-tone magenta lattice wall over a plain pink floor. Both backdrops are quiet with no extra props, and both numbers sit at the low end, with no difference to choose from.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A surrounds the small wreath with dozens of separate ivy leaves down both sides and across the top, plus door panels, wood grain and cracked plaster. Both numbers exceed the real range (0.0353, 0.107), and the wreath competes with its surroundings instead of leading the card. B is a castle on plain grass against sky with two or three clouds: a few large quiet shapes, close to the real cards.",
+   "fix": "Remove the ivy. Show the wreath large on a plain blue door, with one smooth door frame and no cracks or wood grain. Keep only a few big, simple shapes."
+  }
+ ],
+ "pattern": "Generated cards give themselves away through additions around the object: extras nobody asked for (moon, single leaf, seam glow, dew bead, life ring and rocks in the lessons), many small background pieces (ivy leaves, cracked flagstones) instead of a few large quiet shapes, and pulling back to show the whole object on its ground where real cards crop in tight. Flat-field cards (rays, rings, tone-on-tone patterns) are now hard to separate on staging, so most of those pairs gave no signal."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A stands on a plain flat purple ledge with no surface marks, under a quiet diamond wall, like the basket card; the only oddity is a small magenta pool of light under the glass. B stands on a curved stone plinth with slab joints and veining, which is more built staging than a plain ledge. Its numbers are in range (0.0091 / 0.007), so this rests on the ledge alone.",
+   "fix": "Stand the mirror on a plain flat ledge in one soft color, with a straight front edge and no stone slabs, joints or veining."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A uses the familiar two-zone stage: pink stripes above, pale plank floor below, with thin seams. B fills the whole card with planks and has no backdrop. Its dark seams run right up to the binoculars and carry most of the background edges (0.036 against 0.020). This matches the over-worked wood on the generated computer lessons, but both cards are in range.",
+   "fix": "Show a simple soft-colored wall behind the binoculars and keep the floor to the lower third, with thin, pale plank seams."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both float on the same tone-on-tone wavy field, A in orange and B in yellow. Neither has props or added decoration, and the numbers nearly match (0.014 and 0.013 edge density). My vector gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A is a crowded scene: cropped thatch roof with dozens of shingles, wood wall, pool tiles and coping, four stools, plus pineapple, grapes and two drinks. No single object holds the center. Background numbers are far above real cards (0.0569 / 0.144 against a top of 0.031 / 0.089). B keeps one cabin central against sky, a few trees and a lawn with small tufts, in range (0.0115 / 0.02).",
+   "fix": "Show one bar counter large in the center with one drink on it. Remove the stools and fruit, crop out the thatch, and make the pool a calm flat blue with no tile pattern."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B is the same crowded poolside bar: thatch fringe, tiles, stools, fruit and glasses with no central hero, at 0.0569 / 0.144 against a real top of 0.031 / 0.089. A is also loaded (moon, clouds, tombstones, grass, path stones), but the gate stays central and symmetrical and the numbers are in range (0.0225 / 0.057).",
+   "fix": "Show one bar counter large in the center with one drink on it. Remove the stools and fruit, crop out the thatch, and make the pool a calm flat blue with no tile pattern."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A has a dense lattice truss across the top edge plus crossing colored light beams on a blurred teal wall, the main source of its 0.061 edge density. B has hazy mesas, sand and a slab that stay soft and low-contrast (0.029), though that is also above this pair's real top of 0.017. The call is weak because both exceed it.",
+   "fix": "Replace the lattice truss with one plain thick bar at the top edge, and keep the wall a smooth single gradient with one soft beam."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A has a plank table with a wall of hero-shaped triangles. The motif is quiet but copies the object, which no real card here does. B has a full-frame plank table with a plate of many fruits and stray droplets on the glass rim. Each has one small oddity, and both are in range (0.0101 and 0.0199), so nothing separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A has a bright orange-white glowing rim hugging the moon's silhouette over the blue rays, the same halo seen on the generated glove lessons. Its detail is just under the real range (0.0067 against 0.008). B has clean pale rays with no halo around the bugle, in range (0.0116). A moon can plausibly glow, so this is weak.",
+   "fix": "Remove the glow around the moon. Let its edge sit directly on the blue rays with no bright rim."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A is a clean wall, skirting and floor with one chair and nothing else, close to the fan and computer staging. B has the same setup, but a large blotchy dark shadow patch on the purple wall and a group of props inside the locker (stack of books, ball, sneakers). That adds detail, and its 0.0218 is just past the real top of 0.021. The props are purposeful, so this is mild.",
+   "fix": "Keep the wall one smooth purple with a soft shadow, and show only the basketball inside the locker."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A is a lamp on quiet rays with nothing else, in range (0.0095 / 0.013). B has a tree trunk, branches, leaf clusters, office towers, paved paths, hedges and rows of small trees behind the feeder. That is many small shapes rather than a few large quiet ones, and it measures above the range (0.0216 / 0.037). The lion card has a comparable park, so this is not decisive.",
+   "fix": "Keep the trunk and one leafy branch. Replace the park and buildings with a soft blue sky and one smooth green blur."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A sits on a plain cream ledge against an orange gradient. B sits on a plain wood ledge against a blue gradient. Neither has props or pattern, and both have quiet backgrounds matching the basket and computer staging. Detail is in range for both, with B just under at 0.0079.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both float on concentric tone-on-tone rings. A's green rings are even and clean (0.009). B's pink rings are less even, with a darker mauve patch in the top-right corner and a thin orange sliver along the bottom edge, and detail just above range (0.0159 against 0.015). These are small background defects, not a staging difference.",
+   "fix": "Draw even, smooth pink rings right out to all four edges, with no color patches in the corners and no stray line along the border."
+  }
+ ],
+ "pattern": "The strongest tell is environment overload: scenes with many small objects and no single central hero, such as the poolside bar (roof shingles, tiles, stools, fruit, drinks) and the bird feeder park (buildings, hedges, paths), where real environments stay a few large quiet shapes. Added staging is the next tell: the lessons added rock islands, life rings, posts and bright halos, and here the same habit shows as built stone plinths, heavy plank seams, a glow rim around the hero and extra props. On plain cards with flat fields, ledges or simple walls, generated work now matches real cards closely, so this vector separates little there; p03, p07 and p11 gave no call, and most other calls are low confidence."
+}

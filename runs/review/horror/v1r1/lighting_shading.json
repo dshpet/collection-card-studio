@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the cap board has flat faces and a crisp lit top plane, with a clear drop into the dark skull cap, so the planes read as lit from above. B: the witch hat cone turns in one slow, even gradient with no firm core shadow. The light is a broad soft sheen on the left, and the brim underside is a smooth dark pool that the lens shows with little structure.",
+   "fix": "Light the hat hard from the upper left: a bright lit side on the cone, a clear dark core shadow running down its right side, a crisp shadow under the band, and a cooler dark side instead of an even soft glow."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cauldron belly has one round soft sheen at upper left, and the lens reads almost flat grey across the body. The flame underneath only tints the floor and barely lights the underside of the pot. B: the gloves turn clearly from a bright upper side into shadow in the creases and sit in a dark contact shadow on the wood.",
+   "fix": "Give the cauldron a bright side and a deep dark core down the far side, let the orange fire light the bottom of the belly and the inner legs, and darken the contact under the feet."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the scarf folds fall into deep soft shadow inside the collar and between the tails, so the cloth has real depth, although overall contrast is low (0.256). B: the broom straws each carry the same repeated tube highlight with little shadow between groups, and the handle is an even lit cylinder. The light reads as all-over sheen, not one direction (bias 0.989 is lens-driven and I discount it).",
+   "fix": "Light the broom from one side: bright on the near straws, a dark shadow mass on the far side and under the binding, and fewer, softer highlights on the straws."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the envelope has soft creased planes and a gentle shadow on the green ground. B: the ship wheel is lit fairly frontally with soft rounded sheen, a dark contact under the base and a pale pool on the deck. Both sit within the real cards' ranges and neither shows a shading fault I can place.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the gold stem and base are broken into many sharp vertical streaks, and the flames do not visibly warm the arms or the base; the lens shows an even pink metal. B: the brass bowl turns smoothly from a warm lit top into a dark lower side, and the flame glow is held inside the chimney glass and affects the form.",
+   "fix": "Use fewer, softer gold highlights: one broad warm reflection on the lit side, a dark band in the turn of the stem and base, and warm candlelight falling down onto the cups and arms."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the glass has believable transmitted light, with a pink caustic spot and a soft cast shadow on the floor at lower left that follows the light direction. B: the ball has a thin even rim and a small window highlight, and the lens shows a flat grey sphere with no dark side. Its cast shadow is a plain flat band under the stand.",
+   "fix": "Give the crystal ball one side darker than the other, a bright light pool through the glass onto the table, and a soft shadow that fades away from the stand."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cat body is soft and nearly one value, with faint fuzzy turn between chest, legs and head (shading range 0.576, below the real 0.658 lower bound), set against a hard dark cast shadow on the floor. B: the fountain tiers have a clear lit top, dark undersides and a stepped shadow under each bowl, so the form is carried by the light.",
+   "fix": "Add a bright rim and a lit side along the cat's head and back, with deep dark on the far side of the body and under the chin, so the black fur shows clear form."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the coffin lid is a broad evenly lit plane, its side falls only moderately darker, and the shadow on the grass is soft and neutral. The lens is a single warm tone. B: the stone table has a bright top against cool blue-dark sides and hard dappled tree shadow, the cool shadow side the lessons show on real cards. Its bias of 0.93 is above range but comes from the tree shade.",
+   "fix": "Light the coffin strongly from one side: a bright lid, a much darker cool front side, a crisp shadow under the lid edge, and a darker cast shadow with a sharper edge on the grass."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the house has even dark stone with bright roof edges all round, and the glowing windows spill no light on the wall around them; the moon does not act as a light source. The lens reads as outlined shapes, not a turning mass. B: this is the lighthouse shown as REAL in the lessons, with a warm lit left and a blue-dark shadow side turning across the tower. Its 0.971 bias is therefore a real card outside the listed range.",
+   "fix": "Choose one side of the house as lit and let the other fall into cool shadow, remove the bright edge running along every roof, and put warm yellow window light on the stone around each frame."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the tombstone turns softly with a dusty, even clay surface and a dim lit face (form contrast 0.328, below the real 0.413), with only a slightly darker left side and a soft blurry cast shadow. B: the shoes have crisp forms, cool lit tops, dark soles and a firm contact shadow, although the light is unusually even (bias 0.019).",
+   "fix": "Light the stone face brightly from the right, darken the left side firmly, add a crisp shadow inside the cross and crack, and darken the contact where the base meets the ground."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the pumpkin has a soft overall sheen across its ribs with a mild turn, the inner glow stops at the carved edges, and the lens is one brown-mauve tone. B: the duck has a strong lit top, a dark lower belly and a defined sheen on its plastic, and a clear shadow from the seat falls on the sand.",
+   "fix": "Darken the far side of the pumpkin into a clear core shadow, keep one bright highlight on the near ribs, and let the yellow glow light the inside edges of the carved cuts."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the balloons have soft window highlights at upper left, smooth round turn and gentle darkening at the far edges. B: the buoy has a broad light on its cylinders, firm dark undersides at the base and a dark waterline. Both have the soft sheen and clear dark turn of the real cards, and the numbers are in range.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards still give themselves away with even, all-round light. Forms turn in one slow soft gradient with no firm core shadow, the dark side stays warm and close to the lit side where real cards drop into a cool blue-dark shadow side, bright edges run around the whole silhouette, and sheen is broad and repeated. Glowing sources (fire, windows, candles, carved pumpkin) stay self-contained and do not light nearby surfaces. In the lens these cards read as a single warm tone, not a lit side against a shadow side. Limits: these are subtle calls, with confidence mostly 2-3; subject matter (horror props against everyday objects) also leaned my picks in p01, p03, p06, p10 and p11, so those are not pure shading evidence. The measured ranges are not decisive: the p09 B lighthouse is labelled REAL in the lessons yet exceeds the light_bias range."
+}

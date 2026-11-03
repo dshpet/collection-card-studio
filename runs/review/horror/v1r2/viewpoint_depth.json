@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the towel lies as a flat sheet seen from high above, with its far end slightly narrower and its soft folds staying in one tilted plane. B: the calculator is tilted the same way, showing a thin right and bottom edge, with mild convergence up the body. Both have one clean view, no ground plane and planar_share in range, so nothing on this vector separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the candelabra shows green top on its foot and also an open underside ellipse below it, while the three candle saucers show pink undersides. It looks up and down at once, on a dead-frontal, symmetrical stance. A: the lamp is near eye level, with thin foot ellipses and a slight look into the chimney mouth. It is more unified, although its planar_share of 0.003 is below the real range.",
+   "fix": "Draw the candelabra from one slightly raised camera, turned a little to the side: every ellipse is seen from above, the base is a solid disc with no visible underside."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the pumpkin is nearly front-on, yet the table back edge bows in a curve and the planks run off at a steep diagonal, so the ground sits at a different angle from the hero. The stem top also tips toward the camera. B: the duck is a side view, and its base plate and sand disc share one raised camera. The sand edge also curves, but it is a plausible mound, so the evidence is moderate.",
+   "fix": "Set the pumpkin on a straight-edged table with a level back edge, planks receding gently at the same low camera angle as the pumpkin."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the cat is drawn flat front-on at eye level, while the floor boards fan out strongly from a vanishing point, as if the floor were shot with a wider lens and seen from higher than the cat. A: the fountain's tier ellipses and the paving rings open steadily from top to bottom under one raised camera.",
+   "fix": "Turn the cat slightly three-quarter and keep the floor boards nearly parallel with gentle convergence, so the floor and cat share one camera height."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the witch hat's brim shows its top face at the back (green) and a large pink-blue underside at the front, so it is seen from above and from below at once. The cone sits at yet another angle. A: the mortarboard's flat top, thin edges and the band below all read from one raised camera with mild perspective.",
+   "fix": "Draw the hat from slightly above with a flat, even brim: the brim's top surface is visible all the way round as one clean ellipse, with no underside showing."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the house front is flat and frontal, its roof slopes read as if seen from above, and storeys and chimney lean in different directions, so the parts do not share one view. Walls in the normal map are one even wash with little side face. A: the lighthouse is a known real card, with a low camera, a railing and gallery ellipses seen from below, and a flat sea horizon behind.",
+   "fix": "Turn the house slightly so one side wall is visible, keep all storeys and the chimney on the same vertical axis, and view all roofs from one low camera with a level ground line."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cauldron's rim opens wide as if seen from above, but the body is frontal and the feet stand on one flat line, with no leg set further back. The stone floor gives little depth. B: the gloves sit low and close to the camera, overlapping each other, with wood planks receding at one low angle and the wall as a simple flat layer.",
+   "fix": "Lower the camera so the rim is a narrow ellipse, and draw the third leg set back behind the front two so the cauldron stands in depth on the floor."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the lion's head is oversized against the hindquarters and the stepped plinth converges hard from its near corner, a forced close-camera look. The park background is also fully detailed in the normal map rather than simplified. Compared with the real lion in the reference sheet, it is more wide-angle. B: the bag sits on a level ground line with a mild, single view.",
+   "fix": "Move the camera further back with mild perspective: plinth edges nearly parallel, lion head in natural proportion to its body, background trees and path simple and soft."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the broom lies flat on the card like a cutout. The bristle head spreads sideways with no turn toward the viewer, and the shaft shows no foreshortening. Its planar_share of 0.011 is below the real range. A: the scarf has more depth, with the neck loop showing its inside and overlapping the tails at the knot. With no ground plane, this is weak evidence.",
+   "fix": "Tilt the broom in space so the bristle head comes toward the viewer and the handle recedes, narrowing slightly with distance."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the lid is one huge flat plane, with planar_share of 0.654 above the real range of 0.034 to 0.509. The box tapers hard toward the back, a stretched wide-angle look, against small headstones and a high horizon. B: the chess table sits in the grass at one consistent raised angle, with its base slab and stool on the same plane and background trees simpler and further away.",
+   "fix": "Draw the coffin from further away with gentle perspective: the far end barely narrower, the lid foreshortened, the headstones in scale on the same ground."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the shelf is nearly edge-on with a flat front strip, and the ball and stand are dead frontal, with no ellipse anywhere and a stage-flat stack of layers. Planar_share of 0.682 is above the real range, although the glass ball may be fooling the normal estimate. B: the glass rim and base ellipses grow from top to bottom under one slightly raised camera, on a level table.",
+   "fix": "Raise the camera a little so the table top is visible and the stand's feet sit on it at different depths, with the stand's base reading as a shallow ellipse."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the stone face is one flat frontal slab, with planar_share of 0.669 above the real range of 0.053 to 0.559. The plinth under it is turned with a visible top and converging ends, so slab and base do not quite share one turn. A: the shoes sit three-quarter on the floor, overlapping, with soles and toes turning in one mild view.",
+   "fix": "Turn the whole gravestone slightly three-quarter so the stone and its base show the same side face, with gently rounded front surfaces and mild perspective."
+  }
+ ],
+ "pattern": "Generated cards break one shared view. Parts disagree on camera height: a brim or base shows top and underside together, and a frontal hero sits on a floor or plank field drawn at a steeper, wider angle. Lessons also show curved or bowed tabletop edges, and forced close-camera bulk where real cards stay further back with mild perspective. Very flat front-on slabs give planar_share above the real range. In pairs with no ground plane the signal is weak."
+}

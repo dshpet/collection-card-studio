@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: all four orbit rings are the same fat, even-width tube with no taper, and the electrons are blobs fused onto them. Solidity 0.519 is below the real range, though an open ring object partly explains that. A: the backboard keeps long straight edges and a planar face, with soft top corners. Its pole and net cords are a little heavy, and thin_share 0.025 is just over the real range, so this is a weak call.",
+   "fix": "Draw the orbits as thin, fine wire hoops, much narrower than the electrons, with crisp small spheres sitting on them."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the shoulder straps are thick padded sausages arching out from the tanks. The tanks are short and fat with bulbous red end caps, and the two tanks merge into one mass with the backpack. A: the case lid and tray have large soft corners and read pillowy, which is also a fault, but the box keeps two clear parts and a believable hinge. Both are soft, so the call is weak.",
+   "fix": "Make the tanks longer and slimmer with flat end caps, and make the shoulder straps thin flat webbing rather than padded tubes."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the building is a squat, perfectly symmetrical capsule, with a swollen dome and a fat blue band bulging past the wall at both sides, so it reads as a toy. Mast and ball are the only thin part. B: the sign boards are planar with tight bevels, the two posts stay thin and straight, and the arrow has a sharp point.",
+   "fix": "Make the walls taller and the dome shallower, make the blue ring a thin flat trim flush with the wall, and keep the wall edges straight."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the bottle has a believable waist and base, the cap steps crisply, and the loop is a little fat. B: thin_share 0.168 and solidity 0.588 fall outside the real range, but that comes from the net being an open mesh object, not from a form fault. The frame stays straight with square joins. Neither card has a shape error that decides it.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the edging stones are puffy with soft corners, and the flowers are balloon-like, but the stones still hold separate wedge shapes. B: the book covers stay thin and flat, the page blocks are straight, and the spines round correctly. A is softer, yet all metrics are in range and real cards are often this rounded, so this does not settle it.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 5,
+   "difference": "A: the cabinet is one near-solid slab, with solidity 0.978 and straight_share 0.758 both above the real range. It has a clipped top corner, stub feet and nothing breaking the contour. B: this is the real computer from the lessons, with a stepped monitor, neck, base, keyboard and a thin mouse cable.",
+   "fix": "Break up the block outline: add a stepped top section, a recessed deck and slim, tall legs or a plinth, and keep the side panel thin."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the arm segments are even, fat capsules with oversized elbow hubs and a large toy claw, and the base has an added ring of bolts on stepped tiers. This matches the lesson habit of adding parts. A: the binocular barrels are also stubby and fat, with low corner_rate 1.493, so both are toy-like and the call is weak.",
+   "fix": "Slim the arm links so they taper towards the claw, shrink the joint hubs, and give the links flat side faces with crisp edges."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the body is a swollen pill, and the dome is oversized and merges with the hull into one lump, solidity 0.921. Hover pads are flat bulges and only the tail fins break the contour. B: the scarf is puffy too, but it keeps a clear collar loop, a pinched knot and two tapering tails with pointed ends, which is correct for cloth.",
+   "fix": "Stretch the body long and low with a flat side line, shrink the canopy to a small cockpit, and make the fins thin and sharp."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the handset is fattened like a toy, the body slope has blob corners, corner_rate is low at 1.182, and the feet are stubby. The coiled cord is a thick string of beads, not a thin wire. A: the tray keeps a flat rim, four square cells and straight wall runs, with corners that read as moulded silicone.",
+   "fix": "Make the handset slimmer with distinct earpieces, give the body flat planes and tight edges, and draw the cord as a thin tight coil."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the cube body has large soft corners and a bulged belly, and the solar panels have thick rounded frames like cushions, so nothing is truly flat or thin. A: the plane is a stubby toy fuselage too, but the wings and tail taper to fine tips, and the card's parts sit in true relation. Stylised planes are common, so the call is weak.",
+   "fix": "Draw the body as a true box with tight bevelled corners, and make the solar panels thin flat plates on slim struts."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the flask neck is wide and dead straight, too thick against the bulb, and the bulb is flattened at the foot into a nearly perfect contour. A: the sneakers have chunky soles and heavy laces, and the pair fuses into one mass in the silhouette, but heel, collar and toe all read in the right relation. Metrics give no help, so the call is weak.",
+   "fix": "Make the neck much narrower against the round bulb, with a slim lip, and keep the base curve continuous down to a small flat foot."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the silhouette is a plain capsule, with corner_rate 0.764 far below the real minimum of 1.668. It has a smooth domed cap, a dead-straight tube and a soft stepped base, so almost nothing breaks the contour. B: the pilings, plank ends and rope coils give a broken outline, corner_rate 6.653, with flat cut plank ends. The speck at right is mask leak, not form.",
+   "fix": "Add crisp hard-edged parts to the contour: a flat, tight-cornered cap, thin clamps around the tube, and a base with square notches."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away by thickening: thin parts such as straps, rings, cords and frames become even-width sausages, and bodies swell into stubby toy capsules with large soft corners. They also smooth the outline into one mass or add extra small parts like bolts, tiers and rims, instead of keeping true proportions, flat planes and tight bevels. On this vector real and generated cards overlap, because real cards are also rounded, so most calls are weak; only p06 and p12 have strong measured support, and in p06 the real card is also recognisable from the lessons."
+}

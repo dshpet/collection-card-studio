@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the leaf clusters at the top corners carry a hard, dark scalloped contour. The distant park trees and buildings are drawn as dense line shapes, and background edge density (0.037) is over twice the real ceiling (0.017). A: the backdrop holds only faint rays, and the strong edges stay on the submarine's hull seam and portholes.",
+   "fix": "Paint the background trees and city as soft colour shapes with no edge lines. Blur them so that only the feeder has crisp boundaries, and let the leaf silhouettes melt into the sky."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a heavy, closed black contour runs around the guitar body, pickguard and strap, and outline darkness (0.163) is above the real ceiling (0.148). A: the horse's edges are thinner and broken along the belly and flank, and its density comes from fine hair strokes in the mane, with no dark ring around the form.",
+   "fix": "Remove the dark line around the guitar body. Let the red body meet the background through colour and light alone, and let the lit side of the body fade softly into the stage glow."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cover stickers have thick double contours like die-cut outlines, and the book's cover and spine are also strongly edged. Outline darkness (0.165) is far above the real ceiling (0.097). B: the hay has many small strand edges but no continuous contour around the bale, and the backdrop stays quiet.",
+   "fix": "Remove the dark lines and thick borders around the stickers. Make them flat printed shapes on the cover, separated from it only by colour and a very thin pale rim."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the lamp has thin, precise edges at the collar and burner and lost edges on the glass. B: the pan's lower rim is a darker double line, but all three measures for both cards sit inside the real range and the backgrounds match. That rim alone is not enough to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the glass, straw and umbrella have crisp, continuous contours, and subject density (0.074) is below the real floor. B: the jug has a soft outline and almost no internal edges, so its density (0.015) is far below the floor, though the smooth clay explains that. Both miss the real range in the same direction, so the edges do not separate them.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the towel face is covered in dense, even, speckled micro-edges that darken at the fold, and its rim shows as an embossed double contour. Outline darkness (0.088) is high but in range. B: the bandana has a thin outer contour, and its motifs have clean printed edges. Its form edges are more selective than the towel's all-over noise.",
+   "fix": "Replace the even all-over grain with soft towelling that shows texture only near the central fold. Keep the rest of the cloth smooth, and let the orange border roll softly into the towel with no hard double line."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the tile grid and pool ripples fill the lower background with sharp lines, and background density (0.065) is above the real ceiling (0.046). They compete with the slide, whose own edges are softer. A: the cactus holds the strongest edges, while the wavy backdrop and sand stay faint apart from small speckles.",
+   "fix": "Soften the pool deck and water: fewer tile lines, fine and low in contrast, fading out with distance. Keep the sharpest edges on the slide's rim and ladder."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the coaster cars and track have long, smooth, double-line contours, and outline darkness (0.065) is the higher of the two. A: the carriage has many thin, even edges at the spokes and panels, with no heavier contour around the form. All numbers are in range, so this is a weak call.",
+   "fix": "Lighten the dark line around the coaster cars. Keep crisp edges only at the front car's lip, and let the far cars and track soften into the sky."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the stave seams are thick, even, dark grooves running the full height of the barrel, and the cast shadow has a hard ring-like edge. Background density (0.011) sits at the real floor. B: the awning's bold lines break into lost edges on the white stripes and the posts are soft, though the paving is busy. The groove weight is the only cue.",
+   "fix": "Draw the gaps between the staves as thin, precise lines that vary slightly in weight, not thick dark grooves. Soften the edge of the shadow on the ground."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the hat's brim has a long dark tapered contour, but outline darkness is negative (-0.068), so this is no drawn ring. B: the sandals have lost edges on the outer soles and stronger stripe lines behind them, and all values are in range. The cues conflict and neither card breaks the real pattern.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the lantern frame, cage wires and handle have dense double contours, and the plank lines add long hard edges. Subject density (0.247) and background density (0.03) are both above the real ceilings (0.228 and 0.021). A: the vending machine's strongest edges sit in the door frame and bottles, its side silhouette stays thin, and the backdrop is almost empty.",
+   "fix": "Simplify the lantern: fewer wires and double rims, with soft reflections instead of sharp lines on the metal. Make the table plain, with faint grain and no long plank lines."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the claw machine has thick, closed contours around the star sign, glass case, panels and hatch, like drawn panel lines at equal strength across the whole machine. A: the sleeping bag's edges are soft and lost along the puffy seams, with crisp edges only at the buckles, so it has a clear edge hierarchy. All numbers are in range.",
+   "fix": "Remove the dark lines around the machine's panels. Separate the parts by colour and soft rounded shading, keep the sharpest edges on the joystick and toys, and let the far panels soften."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through contours that are too closed, too dark and too even. In the lessons, heavy unbroken lines run around the whole form and around inner parts such as stickers, panels and rims, where real cards let edges break and get lost on the lit side. Sharpness is also spread evenly instead of gathering at the focus. Background surfaces such as wood grain, tiles and foliage pick up too many hard lines, and small repeated detail or uniform surface grain inflates edge density. On this vector the differences are often slight, so most calls here are low-confidence."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the pumpkin bucket sits low and centered on a table, with the handle reaching near the top and even side gaps. B: the beach ball fills the card and sits slightly right of center on sand. Its area of 0.493 is only just over the real maximum of 0.475. Both name the object at once at thumbnail size and nothing fights either hero, so framing does not separate them.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the gate is framed between brick pillars, and the wall, foliage and path run off the edges. The 0.157 area counts only the ironwork, so it understates the hero, though the red pillars do outweigh the thin gate at thumbnail size. B: the spyglass floats on the diagonal in open cyan, with empty corners top-right and bottom-left. Its area of 0.168 and margin of 0.116 are both outside the real range with no measurement excuse, so it is under-scaled.",
+   "fix": "Draw the spyglass much larger, running corner to corner on the diagonal, with the big lens end almost touching the left edge and the eyepiece almost touching the right edge."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the whole castle is shown front-on and perfectly symmetrical, centered with clear gaps on both sides, standing on a flat strip of grass. This is the fully contained framing the lessons show on generated cards. B: the door is cut off by the top and bottom of the card, and vines bleed off the top and sides, like the cropped lighthouse and ferris wheel. Its 0.081 area measures only the wreath, so that outlier is not a real scale problem.",
+   "fix": "Move in close and turn the castle slightly to a three-quarter view, letting the near tower run off the left edge and the bottom of the walls run off the bottom of the card."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the bare tree stands alone, with branches spreading wide and a clear silhouette against the sky. B: the spiral topiary is centered on a plinth, with a hedge and path behind it, and green on green separates it a little less cleanly. All measures for both are inside the real range and both read at once at thumbnail size. Neither has a framing fault.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the chest is whole, nearly front-on and centered, with a floor band behind it and even space all round. Its margin of 0.102 is just past the real maximum of 0.098. B: the ice tray is at a three-quarter angle, with its right corner pushed close to the edge (width 0.921, margin 0.035) and the table running off the card, which is closer to the bolder real framing. The difference is small because A still reads very clearly.",
+   "fix": "Turn the chest to a three-quarter view and enlarge it so one corner comes close to the card edge, with the floor running off the bottom."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the bag is large and sits low, with bottle and towel props rising behind it. Its area of 0.467 is over the real maximum of 0.427, but the mass reads as one solid shape. B: the seahorse is a thin vertical form placed centrally with wide empty blue on the left and right. Its area of 0.206 and width of 0.553 are both under the real minimums, and the hero looks slight at thumbnail size. The thin species accounts for part of this.",
+   "fix": "Make the seahorse much bigger and bulkier, curving across the card with its snout and tail reaching close to the edges."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the wristband is tilted in the center, a solid ring with even space around it, and all measures are in range or at the limit. B: the bat's wings stretch almost edge to edge (width 0.953, height 0.421, both outside the real range), while the body is small in the middle. At thumbnail size the wings form a thin strip with wide empty yellow above and below.",
+   "fix": "Draw the bat bigger and rounder, with a large head and body filling the middle of the card and the wings folded up and in so they fill the height as well as the width."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the bottle is tilted, with the loop near the top right, sitting over rays. B: the potion is upright and centered, with its round flask low and the cork above. Both have almost the same area and both are just at or under the minimum width, because both are narrow objects. Both are instantly named and neither has competing focus. B's upright centering is a very slight lean, not enough for a finding.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the hearse spans the full width (0.988, over the 0.955 real maximum), with the bumper and tail just kissing the left and right edges without a clear crop. Its height of 0.500 is under the real minimum, leaving a wide sky band above. B: the dock clearly bleeds off the top-left and the boat is a strong diagonal, a deliberate crop, though the dock and lily pads do add some competition and the area of 0.480 and height of 0.927 run high.",
+   "fix": "Move in closer so the front of the car is clearly cut off by the left edge, or pull back so a clear gap shows on both sides. Avoid letting it just touch the edges."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the whistle is a solid orange diagonal mass on a pale glow, which reads at once despite the campfire pattern behind it. Its margin of 0.126 is slightly high. B: the web is a flat, top-down centered circle of thin pale lines. Area is 0.177, below the real range, though the open mesh explains part of that. At thumbnail size the lines weigh less than a solid hero and the small dew drop barely registers.",
+   "fix": "Draw the web with thick, chunky strands and tilt it at an angle, with a big bright spider or large drop at the center as a single bold focal point."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the skull is whole and centered on a ledge, with even clear space on both sides. Its margin of 0.158 is well over the real maximum of 0.108, which matches the contained look of generated cards, even though it reads instantly. B: the shoes sit in the lower half, leaving the top third as empty orange. Height is 0.487, but a pair of shoes is a wide object, and they reach close to the side edges (margin 0.033). The two outliers are close, so this is a weak call.",
+   "fix": "Enlarge the skull and shift it to a three-quarter turn so it nearly touches the card edges, with the ledge running off the bottom."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the book fills the card on a diagonal, with area 0.527 well above the real maximum of 0.475 and only a tight strip of table around it. Several cover pictures and ribbons split the first read. B: the book is smaller and centered at area 0.420, with a single star as its focal point and a margin of 0.105, barely over the real limit. B reads faster at thumbnail size.",
+   "fix": "Draw the book a little smaller with more table showing around it, and put one big picture on the cover in place of several small ones."
+  }
+ ],
+ "pattern": "Framing separates these cards only weakly: no pair rated above confidence 3, and three pairs came back neither. The most reliable sign is containment. Generated heroes are usually kept whole, front-on and centered, with even clear space around them, where real cards commit to a crop or a three-quarter angle that runs off an edge. Generated cards also tend to end up awkwardly fitted: wide shapes stretched until they just touch the sides, or thin shapes left slight in open background. Scale outliers run both ways, so area alone does not identify a generated card. Some area figures measure only part of the hero (the p02 gate, the p03 wreath) and open or thin forms read low, so those numbers need checking by eye."
+}

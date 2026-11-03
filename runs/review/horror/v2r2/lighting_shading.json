@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the pumpkin body is lit almost evenly from the front, with its left and right bulges matching and no clear shadow side, yet a long dark shadow falls to the left (bias 0.127, below real). B: the ball has a clear sheen at upper right and darkens to lower left, matching its shadow on the sand, though the dark side stays shallow (range 0.533).",
+   "fix": "Light the pumpkin from the upper right: brighten the right bulges and let the left side and underside fall into a clear, smooth, cooler shadow that matches the shadow on the table."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: brick pillars and gate are lit flat from the front, and the gate throws almost no shadow on the paving, so forms stay at one level. B: the spyglass tube turns smoothly from a top sheen into a cool dark underside, like the real camera lens. Its bias (0.927) and form contrast (0.654) run high, so this is a weak call.",
+   "fix": "Make the sun come from one side: shade one face of each pillar darker and cooler, and lay soft bar and scroll shadows from the gate across the paving."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the towers are front-lit with dark on both edges, no side is clearly lit, and the castle has almost no cast or contact shadow on the grass (bias 0.158). B: leaves and the wreath throw crisp directional shadows across the door from one upper-left light (bias 0.259).",
+   "fix": "Light the castle from the upper left: one bright side on each tower, the other side in cool shadow, the towers shading the wall behind them, and a soft shadow on the grass at the base."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the trunk has pale glossy streaks along each ridge, like rim bands, more than one side turning from light to dark (form contrast 0.395 is at the low edge). B: the topiary turns from sunlit tops into deep cool blue-green undersides, with a matching shadow on the grass.",
+   "fix": "Remove the shiny streaks on the trunk ridges. Light the trunk broadly from the left and let the right side sink into a smooth, cool shadow."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the chest's lid and front sit at nearly the same brightness, with even frontal light, only dark lines in the creases, and a thin shadow on the floor (bias 0.277). B: the tray has a soft directional light and a cool, soft cast shadow to the right on the table, even though its side faces stay bright (form contrast 0.378).",
+   "fix": "Light the chest from above and one side: bright lid top, front face a step darker, one end in cool shadow, and a soft wide shadow on the floor."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the bag has soft studio light, with a gentle turn across the body, bright handles and a soft contact shadow on the floor (range 0.655). B: the seahorse is lit nearly flat from the front; the belly rings are only thin creases, with no shadow side (range 0.51, bias 0.132, both below real).",
+   "fix": "Light the seahorse from the upper left, in line with the water rays: bright head and back, belly and tail curl dropping into a smooth deep blue shadow."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the band turns softly from a lit top rim to a shaded inner wall, in broad matte shading, and the raised notes have small soft shadows. B: every bat wing rib and body edge has the same puffy dark-to-bright pillow shading and a glossy edge, with no overall light side and no shadow on the backdrop.",
+   "fix": "Drop the outline glow on the wing ribs. Light the bat from one upper side, so one wing is brighter, the other falls darker, and the belly turns under into shadow."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the bottle is washed out, with a pale, nearly shadowless body, a blurry turn and a bright halo behind it (range 0.459, below real). B: the flask has deep dark glass edges, crisp window highlights and a bright glow in the liquid base (range 0.698).",
+   "fix": "Give the bottle a real dark side: a soft vertical sheen on one side, the opposite edge dropping to deep blue, and a darker base with crisper light on the plastic."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the car has near-black windows and undersides, with hard white glints on the chrome and body (range 0.859, form contrast 0.673, above real). B: the boat and dock have softer shading within real range, although the boat throws little shadow on the water.",
+   "fix": "Lift the car's black shadow areas to a deep cool blue, replace the hard white glints with broad soft sheen on the roof and doors, and keep a soft shadow under the car."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the whistle body turns smoothly from a lit top to a darker lower side, with a deep shaded mouth and slot. B: the web looks embossed, every strand carries the same highlight and an even soft drop shadow, and there is no clear overall light direction (bias 0.07, below real).",
+   "fix": "Light the web from the upper left: strands facing the light brighter, the lower right darker, and each strand casting a slim shadow in one direction on the backdrop."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the skull has a clear lit right front and a broad smooth cool shadow on its left side, matching the shadow on the stone. B: the shoes are lit almost evenly, with no side darker than the other, yet a hard dark shadow falls to the left (bias 0.019, far below real).",
+   "fix": "Light the shoes from the right to match their shadow: bright toes and right faces, left heel areas turning into soft cool shadow, and darker gaps between the shoes."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the book has neutral light on a flat cover, a clear side-shade on the page block and a wide soft shadow on the wood. B: the cover and gold corners have even pillow shading with small dots of shine, and the shadow side barely separates from the lit cover (bias 0.209, slightly below real).",
+   "fix": "Light the book from the upper right: a broad gradient across the cover, spine in clear shadow, gold corners with one soft sheen instead of small dots."
+  }
+ ],
+ "pattern": "Generated cards light the hero evenly from the front, so no side is clearly lit and no broad, cool shadow side forms. Modelling comes from local pillow shading or edge sheen on each part instead of one light turning the whole form. Cast shadows are often added without matching the shading on the hero (pumpkin, shoes) or are missing altogether (castle, gate). Real cards commit to one light direction, with a deep cool shadow side and a smooth turn. Calls at confidence 2 are weak, and the numbers overlap, especially on hero-only cards."
+}

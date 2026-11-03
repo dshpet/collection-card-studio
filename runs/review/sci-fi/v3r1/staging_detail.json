@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "Both are category 1 on tone-on-tone concentric rings. A's capsule floats on a bare yellow field with soft, wide rings and nothing else, and its background detail (0.0064) falls below the real range. B's envelope sits on green rings with vignette depth, and its values are inside the range.",
+   "fix": "Keep the capsule on the flat ring field, but give the rings slightly crisper steps and a darker corner vignette, as on the real green ring cards."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B has three four-point gold sparkles around the crystals and rock, floating on the orange sunburst. The object would not have these, and no real card shows them. A's bounce house sits on a plain blue sunburst with no added decoration, only its cow emblem.",
+   "fix": "Remove all sparkles and star glints. Show only the rock and crystals on the plain sunburst."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B surrounds the observatory with a full tidy scene: sunset sky, three clouds, a sun disc, rolling hills and evenly spaced grass tufts along the base. Its background detail (0.0076) is low, so the tufts read as placed, like the added shoreline dressing in the lighthouse lessons. A's sandcastle has a bucket and spade half sunk in churned sand, and the props and surface feel used. Its value is also low, so the numbers separate them only weakly.",
+   "fix": "Drop the sun disc and most grass tufts. Use one or two large quiet hill shapes and a simple sky, with the building cropped larger."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A adds an orange four-point sparkle and three ember dots along the comet's tail, and a white glow bleeds into the purple wave backdrop. Its background detail (0.0061) is below the real range. B's scarf sits on clean blue swirls with no extras.",
+   "fix": "Remove the sparkle and ember dots. Keep the tail as one simple shape with no glow halo on the wave pattern."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A's beach ball rests on real sand with soft dunes and a contact shadow. B's glass stands on a pale ledge against a quiet ring backdrop. Both are simple category 3 or 2 stagings with no invented props, and both values sit near the real range, so staging gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A floats the station centred over a starfield with an Earth arc and cartoon clouds across the bottom, a neat full-frame scene dressed around the hero with many tiny star dots. B crops a real car and road behind the bike and lets the hero overlap the car, like the real fan and motel cards. B's 0.0443 and 0.094 are above the range, but that is partly a mask failure because the spokes and car leak into the background.",
+   "fix": "Remove the small stars and the Earth arc, or reduce them to one large quiet blue curve, and enlarge the station so the panels nearly touch the card edges."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A's bag stands on a plain purple floor before tone-on-tone stripes, with purposeful contents. B's target stands in a wooden booth with bulbs and a teddy bear. B's 0.0229 and 0.058 exceed the range because the booth counts as background, but the booth, bulbs and prize all belong to a fairground stall. Neither card shows invented decoration.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A puts soft yellow halos around the three bulbs, which leak onto the striped backdrop, and the plant has decorative invented curls. Its edge density (0.008) is below the real range. B's book lies on wood from above, with a broad cast shadow and props that belong to it, such as the bookmark and tabs.",
+   "fix": "Remove the glow halos around the bulbs so the striped wall stays clean, and simplify the tendrils to fewer plain stems."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A is a tidy diorama: the rocket stands on a round pad, with a red gantry nearly as large as the hero, plus clouds, bushes and evenly scattered grass tufts. The whole set sits inside the frame, like the lighthouse-on-island lessons. B crops a thatched bar and pool hard at the edges with no single central hero. Its 0.0569 and 0.144 exceed the range because the thatch and the failed mask count as background.",
+   "fix": "Crop in on the rocket and remove the round pad and grass tufts. Keep the tower as a simple shape partly out of frame, against plain sky and one low hill."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A floats a gold-mounted globe with stars, an invented ring and small orbiting beads on a harlequin diamond field. It casts no shadow, so its base has no ground. The extra ring and beads are decoration that a globe would not have. B's balloons sit in a plain sky with large quiet clouds cropped at the edges, like the real lifeguard card.",
+   "fix": "Remove the orbit ring and beads. Stand the globe on a plain ledge with a soft contact shadow, or keep the diamonds quieter behind it."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A's sheet lies on wood planks with a purple wall of tone-on-tone stars, and B's scroll sits on a glossy blue ledge with a gradient backdrop. Both stay central with no extra props and calm backgrounds within the real range. A's star pattern is a little busier and B's value is a little low, but neither gives a reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B stands a foil tube on a pale grey ledge before a flat pink gradient. The tube has an invented bendy straw that sticks out of the cap, and the scene reads like a product shot with its wide, hard ledge band and long side shadow. A's vending machine stands on a purple floor with a soft reflection and no added props.",
+   "fix": "Remove the straw, or make it part of the cap. Soften the ledge into a low plain shelf in a tone close to the backdrop, with a short shadow directly under the tube."
+  }
+ ],
+ "pattern": "Caveat: the 'sci-fi' folder name and each pair's subject influenced these calls, so confidence is partly subject inference, not staging alone. Staging tells: generated cards add four-point sparkles, ember dots, glow halos that bleed onto the backdrop, and invented orbit rings or straws. They also over-dress scenes inside the frame with evenly spaced grass tufts, clouds, pads, or a tidy island or diorama base, instead of cropping large and quiet into the world. Their flat fields often read cleaner and lower in detail than the real range. High background numbers on p06, p07 and p09 mostly reflect real environment content or mask leakage, not generated clutter."
+}

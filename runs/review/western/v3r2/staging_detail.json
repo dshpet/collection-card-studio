@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the submarine floats on a dark green ray field with soft rays and nothing else, and both measures are in range. B: the feeder sits in a full park with a tree trunk, leaf clusters, side trees, office blocks, hedges, paving and kerbs. Both B measures are above the real range for this pair (0.0216 and 0.037), and the buildings at upper right pull attention from the hero.",
+   "fix": "Keep only the trunk and one or two large soft leaf masses. Remove the buildings, hedges and paving lines. Blur the distance into a plain pale blue-green wash."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: fence rails, soft hills, clouds, a tree clump and grass tufts along the bottom edge. Its edge measure (0.07) is the higher one, but the shapes are large. B: stage trusses at both sides and across the top, plus two spotlight beams over a plank floor. The lattice is busy but stays at the edges. Both cards are category 4 and in range, and each has one busier element, so neither is a clear outlier.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the wood under the book is drawn as strong orange and cream streaks across the whole surface, so it reads as loud stripes rather than quiet planks like the real map card. B: a quiet striped blue backdrop over plain dirt with a few pebbles; its edge measure is slightly low (0.006). A's surface competes more with the hero.",
+   "fix": "Draw the tabletop as three or four wide planks with thin seams and faint grain in close tones of one warm brown. No bright streaks."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both cards are a lone hero on a green-yellow ray field, with no props and no floor. Both measures are nearly identical and in range (edges 0.006 and 0.007). The ray spacing and centre brightness match, so the staging gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: a purple tone-on-tone diamond backdrop over a plain lilac ledge, with a small magenta glow on the ledge under the glass. The straw and paper umbrella belong to a drink. B: pink rings over a pale wooden ledge with two thin seams. Both are quiet, in range and close to the real ledge cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the towel floats on a soft green tone-on-tone checker with a centre glow. B: the bandana floats on a blue ray field with wide rays. Both are category 1 with no props and clean edge measures. B's detail reads slightly low (0.0068), but that only means a very quiet field.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: an orange wave backdrop in close tones, soft dunes and three pebbles, all quiet, with edges in range at 0.017. B: strong pink waves plus a white tile deck with many grout lines, a dark tile rim and rippled blue pool water in the lower left. That is a patterned wall and a detailed scene stacked together, and its edge measure of 0.065 is above the real maximum of 0.046.",
+   "fix": "Use a calm two-tone pink backdrop with soft shapes. Make the deck a plain pale surface with only a few wide tile lines, and show the water as one flat blue shape without ripple rings."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: blue sky, clouds, two distant mesas, sand, scattered pebbles and small shrubs. B: sky, clouds, soft hills and grass tufts, with the track filling much of the card. Both are category 4 scenes built from large quiet shapes, and both are mid-range at nearly the same values.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a lilac diamond backdrop over a bare pinkish floor with two small pebbles, and detail just under the range at 0.0085. It is sparse but calm. B: a blue diamond backdrop over a full cobble pavement with many pink and cream stones in perspective. The floor band is heavily worked, and both measures are near the top of the range (0.019 and 0.041).",
+   "fix": "Replace the cobbles with a smooth pale stone floor with a few wide joints and no colour variation between stones."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: flat purple and magenta stripes with hard, even bands and no glow, with low measures of 0.0063 and 0.005. B: teal stripes with thin bright seams and a strong cyan glow between and behind the sandals, so the field brightens around the hero. Its measures sit at the top of the range. That halo matches the bright backlight on the generated lesson cards.",
+   "fix": "Use even, flat teal stripes in two close tones. Remove the bright glow behind the sandals and the thin light lines between stripes."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a smooth purple gradient with a soft floor and a faint reflection, no pattern, and measures in range. B: an orange gradient over a saturated wooden shelf with plank seams, grain and a dark front lip, so the ledge has become a detailed material. Both measures are above the real range for this pair (0.0144 and 0.03).",
+   "fix": "Make the ledge a plain smooth warm surface with a single soft edge. Remove the plank seams and grain, and keep only a soft contact shadow."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: strong orange and yellow rings behind the bag, plus a lawn dotted with many separate grass sprigs in the foreground and along the bag's lower edge. B: a teal room with one wall corner, a skirting line and a faintly reflective floor, made of a few large quiet shapes. The stars and toys in B belong to a claw machine. The measures are nearly equal, so this is a judgement of the small repeated detail in A.",
+   "fix": "Make the grass one soft green mound with a few tufts at the edge only. Calm the rings to close tones."
+  }
+ ],
+ "pattern": "Generated cards give themselves away in the ground and background, not in invented props. They over-work the surface under the hero: tile grout, cobbles, plank seams, wood streaks, ripples and scattered sprigs, where real cards use a few large quiet shapes. They also stack a patterned backdrop on top of a detailed floor, and they add a bright glow behind the hero. On plain category 1 ray fields there is little left to separate cards. The measures flag this mainly as edge density above the real range (p01, p07, p11)."
+}

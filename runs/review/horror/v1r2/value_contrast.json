@@ -1,0 +1,89 @@
+{
+ "pattern": "The weak signal, seen most clearly on p06, p10 and p04, is a hero pushed into one heavy near-black mass or pepper-hard local contrast. Generated cards tend to keep too little middle grey inside the hero: the black undersides, shadow sides and glowing windows jump straight between extremes, where the real glove and lighthouse step through soft mid greys. On several pairs (p05, p11, p12) the difference between the cards is small, and lightness_gap is the measure that moves most. The other metrics are less reliable: the known-real lion on p08 sits outside the gap range at 0.211, so being out of range is not proof on its own. Glow behind the hero is also not decisive, because real cards use it too. Five of these calls are confidence 2 or below.",
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the towel stays in light and middle greys with its stripes close to the green field (gap 0.038), and rms 0.076 is below the real range. B: a near-black calculator sits on one flat light field with a few white digits, and rms 0.19 and gap -0.354 are beyond the real range. Each card misses in the opposite direction, and the real dark camera shows dark-on-light is a real design, so value does not separate them.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the deep purple card is low key (mean 0.556, below the real range), with a pale blob around the stem and the brass and wax much lighter than the field (gap 0.164, above range). A: the lit lamp sits on a light middle burst and its corners darken hard (vignette 0.144, slightly above range), but its mean and gap are in range. B breaks the key, which is the larger miss, but only weakly.",
+   "fix": "Lift the whole background to a lighter, medium purple so the card reads bright, and remove the pale patch behind the stem."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the pumpkin is a middle mass with a bright carved face and a dark cast shadow on mid-grey boards. B: the duck is a broad light mass with small dark accents at the spring and eye, on a light sand floor. All four measures are in range for both, and both have clear value groups.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the cat is one almost solid black shape on a flat light wall, with only the eyes and thin rim lines breaking it. Rms 0.24 and gap -0.445 are well outside the real range. A: the fountain is high key (mean 0.783, above range) with soft stone greys and only the pool as a dark, but its contrast and gap are in range. B's miss is much larger.",
+   "fix": "Paint the cat in soft charcoal rather than black, with broad lighter grey shapes on the head, chest and back so the fur shows gentle steps from dark to mid tone."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: pure black fills the whole underside of the witch hat's brim and the top of the peak, with a jump to mid grey across the crown (rms 0.186, gap -0.375, both outside range). A: the cap has similar black under the board and at the band, but in less area, and rms 0.165 is at the top of the range while gap -0.312 is just outside it. The two cards are close.",
+   "fix": "Lighten the underside of the brim and the peak to a dark plum with visible soft shading, and keep the deepest black to a thin line under the brim."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the lighthouse shown as REAL in the lessons: mid-grey sky, white stone and two dark bands in large simple groups. B: near-black roofs and walls are broken by many small white windows and a white moon beside the dark chimney, so the hero is hard and busy, with gap -0.217 outside the real range. The darks are spread across the hero in small pieces instead of a few large groups.",
+   "fix": "Make the roofs and walls a lighter middle tone with soft shading, keep the windows warm rather than white-hot, and gather the darkest shadow into one or two large shapes under the eaves."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cauldron body is a single near-black mass with one isolated highlight on the shoulder and a white flame below (rms 0.178, gap -0.256, just outside range). B: the gloves sit as soft middle greys against a middle wall, with gradual shading on each glove and black only in the seams and under-shadow. However, B's vignette of -0.103 is outside range, so the call is moderate.",
+   "fix": "Paint the cauldron as a medium navy with a broad soft light across the belly fading gradually to dark, instead of a black pot with one highlight spot."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A is the lion from the real sheet: a white statue on dark garden middle tones, with black tree foliage in the top corners. B: the light bag sits on a dark purple wall and floor in the same design, a bright hero on a darker field. Their gaps are almost identical (0.211 and 0.212), and the real lion has the same out-of-range value, so the measure gives no reason to flag B.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the broom is a thin middle-grey handle on a middle-grey field of waves, with only the bristles reaching light, and rms 0.066 is below the real range. The card has no real dark group. A: the scarf is a clear dark mass on a light swirl, with black inside the neck and well-separated groups (rms 0.114). B is too flat.",
+   "fix": "Make the broom handle a deep dark brown and add stronger dark shading between the bristles and under the binding, so the broom stands out clearly from the blue."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the coffin is a dark hero whose side wall drops to black, with speckled streaks across the lid (gap -0.291, well below the real floor of -0.187). B: the chess table is a light stone hero on middle grass with dark foliage and shadows at the edges (gap 0.051), with the darks placed around the hero instead of filling it. B matches the real value plan.",
+   "fix": "Paint the coffin in a warmer, lighter mid-brown with soft shading along the side, keeping only a thin dark line at the base and removing the black side wall and scratchy streaks."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the crystal ball shares the middle grey of the wall and has only a small dark patch and pale cloud inside, so the hero sits in the background's value group (rms 0.105, below range). B: the bright drink is on a dark purple field with crisp light cubes, a stronger value split, though its gap of 0.257 is above range. A's hero has less value structure of its own.",
+   "fix": "Darken the outer edge of the ball to a deep blue and brighten the centre, so the sphere has a strong dark rim and a clear light core against the green."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the gravestone hero is broken into peppery dark and light flecks across its face, with a near-black band on the left side and a hard-edged cut cross, and its vignette of -0.076 is outside range. A: the sneakers have clean middle and light shapes in the upper and sole, though their mean of 0.762 is slightly above range. Both have a clipped white floor, so the difference is the hero's local contrast.",
+   "fix": "Paint the stone with smooth broad shading from light to mid grey, remove the speckled mottling, and soften the dark left side into a gentle shadow."
+  }
+ ]
+}

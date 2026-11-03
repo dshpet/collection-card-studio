@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the night sign has rounded panels turning softly into a dark lower edge, a neon glow on the tubes, and warm window light against a cool shadowed building. B: the saloon is lit almost flat from the front. Its wall faces barely differ left to right, and depth comes from near-black gaps under the balcony, in the door opening and along the posts, not from a light side and shadow side. Form contrast is 0.649, above the real range, and light bias is 0.189, just below it.",
+   "fix": "Light the saloon from the upper left so the right side walls and posts fall into a clear soft shadow. Lighten the black gaps under the balcony and in the doorway so they stay readable and tinted cool, not black."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the horseshoe has a clear light top left and a dark core along the lower right rim, with a broad metal sheen like the real cards. B: the neck pillow has a soft sideways gradient, but the darkest areas sit in fine radial pinch wrinkles and at the two lower lobes. It reads as a soft photographic fabric render with a thin edge glow, not simple sculpted form. The numbers do not separate them, so this rests on the eye.",
+   "fix": "Shade the pillow as one smooth puffy form: broad soft light on the upper left, one calm shadow down the right side, and only a few large shallow folds in place of many fine wrinkles."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the teapot has a simple side gradient, a soft vertical sheen and a long soft shadow to the left, though the body is rather flat. B: the shoes show many small shaded panels, each with its own soft-box sheen, and no overall light or shadow side. Light bias is 0.019, far below the real floor of 0.199. Only the cast shadow to the left gives a direction.",
+   "fix": "Give the shoes one clear light from the upper right: lit top and toe, a broad shadow down the opposite side of each shoe. Merge the many small panel sheens into a few big soft highlights."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the windmill blades jump between dark and bright with hard steely gradients, and the tower has dark contact at the feet and a crisp dark shadow on the grass. Shading range 0.839 and form contrast 0.631 are both above the real range. B: the door has a soft dappled leaf shadow across it, gentler recessed panels, and a cast shadow from the ivy that agrees with the top-side light. Its form contrast of 0.538 is within range.",
+   "fix": "Soften the windmill shading: blades in a gentle light-to-mid gradient with a soft sheen, wood posts with a soft shadow side, and a lighter, softer shadow on the grass."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the tumbleweed is filled with deep near-black gaps between the branches, and strong contrast runs on every twig, so the ball as a whole barely turns from light to shadow. Its shadow on the sand is dark, and form contrast is 0.633. B: the popcorn cart has a soft awning with gentle scallop shadows and calm matte shading on the red box, like the soft forms of the real cards. Its form contrast of 0.538 is mid-range.",
+   "fix": "Treat the tumbleweed as one big ball: lit upper left, a soft shadow on the lower right. Lift the gaps between branches from black to a warm mid brown and make the shadow on the sand lighter."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the book has a warm top light, soft page curves, and a soft shadow under the cover and across the table, matching the surroundings. B: the lamp's dark metal is lit by thin bright edge lines over a near-uniform dark body. The glass has a smeary glow that throws no light onto the nearby frame. Form contrast is 0.68, above the real range, though the dark paint may inflate it.",
+   "fix": "Light the lamp from one side with a broad soft sheen on the dome and post, drop the thin bright edge lines, and let the warm bulb glow spill softly onto the inside of the frame."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the planter is softly lit from the front with simple plank shading, a gentle shadow on the shelf and soft shade on the watering can. B: the backpack has a glossy bright top that sinks into a heavy dark lower body. Black creases sit around the straps and pockets, and there is almost no shadow on the ground, so the shading does not ground it. The numbers fall inside the real range, so this call is weak.",
+   "fix": "Lift the backpack's lower half so its shadow side stays a clear mid green, soften the dark lines around the straps, and add a soft shadow on the floor beneath it."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the mine cart has a clear lit rim and shaded side, soft gold nuggets, and a dark grounded shadow on the sand to the left, matching the real cards. B: the scroll has a strong one-sided gradient and a mirror-like reflection on a glossy table, like a studio render. Light bias is 0.924, above the real range.",
+   "fix": "Make the table surface matte with a soft cast shadow under the scroll instead of a mirror reflection, and even out the light along the scroll so the far end stays lit."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the scarf is a soft clay-like form with gentle folds and a smooth turn into its inner shadow. Form contrast of 0.256 is below the real range, but the eye sees smooth, believable form. B: the harmonica has a wide, sharp white band across the top and a hard dark lower plate, with almost no ground shadow. Form contrast is 0.739 and light bias is 1.438, both well outside the real range.",
+   "fix": "Replace the hard white band on the harmonica with a broad soft sheen, let the metal turn gradually into the shadow on the lower edge, and add a soft shadow on the background under it."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the playing cards have flat faces, raised soft symbols and one dark soft shadow to the left, simple and consistent. B: the beach ball has a large blurred white hot spot, and a strong red-orange bounce along the bottom that reads as photographic. Fine grain in the sand adds to that. Both cards have a shading range below the real floor, so that number does not separate them.",
+   "fix": "Shrink and soften the ball's bright spot into a calm sheen, keep the lower shadow side a darker version of each panel color with only a light warm bounce, and simplify the sand."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the star has crisp faceted planes, with each face at its own clean value, like the crisp planes on the real cards. B: the ring box has a soft rubbery gradient on all its surfaces, a bright halo behind it, and no shadow beneath. It floats in a glow, as the generated gloves in the lessons do. Its form contrast of 0.584 is still in range.",
+   "fix": "Remove the bright halo behind the box, add a soft shadow under it, and make the shadow side of the lid clearer and firmer, like felt-covered card with defined edges."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the piano has coherent plane shading, with a darker right side face, a lit top edge and a soft shadow on the floor to the right. B: the rose arch has no shared light across it. Each leaf and rose is shaded for itself with dark gaps between them, and only pale contact shadows sit at the two feet. Light bias is low on both cards (0.11 and 0.14), so this rests on the eye.",
+   "fix": "Light the arch from one upper side so the whole left column is brighter and the right column falls into soft shade. Lighten the gaps between leaves and add a soft shadow on the floor."
+  }
+ ],
+ "pattern": "Generated cards rarely commit to one big light across the whole object. The real cards have a clear light side and a broad soft shadow side, often cool, plus a grounded soft shadow and simple sheen. Generated cards shade each small part for itself, with near-black crevices, dark outlines between parts, thin bright edge lines and sharp sheen bands. They also add photographic touches such as studio reflections, blurred hot spots and a halo behind the hero in place of a real ground shadow."
+}

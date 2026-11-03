@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the sneakers have a chunky swollen sole, but the toe spring, collar and lace run stay shoe-like. B: the candle is squat, with a blobby rim and a plate that merges into a thick lens in the silhouette, but a stout wax pillar is plausible. Both are mildly rounded and all numbers are in range, so neither shape gives a reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the glass has straight, tapering walls and a thin straw with a crisp bend, and the umbrella has a jagged edge, so it reads as true proportions. B: the mirror frame's scrolls are fat knobs along the contour, the crest and side ornaments are blobs in the silhouette, and the feet are stubby. Its corner_rate of 7.92 is above the real range and comes from those lumps.",
+   "fix": "Draw a slim gold oval frame with thin, flat scrollwork that stays close to the rim, a small crest, and slender feet. No swollen knobs on the outline."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the calculator body has soft, wide-radius corners and a kink partway down its left edge where the straight run breaks. Straight_share of 0.805 and corner_rate of 0.0 are both outside the real range, so the outline is one rounded slab. B: the feeder's roof planks, walls and tray have flat faces and tight corners, and the rope stays thin. Its high corner_rate comes from the rope and tree in the mask.",
+   "fix": "Draw the calculator as a thin, flat rectangular slab with four tight bevelled corners and dead-straight edges, without a bend in the left side."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the moon is a clean disc, so its out-of-range numbers just describe a sphere and the shape tells us nothing. B: the bugle has a true flared bell, a thin tube loop and a thin mouthpiece stem, with a plausible rope and tassels. Neither shows a form fault.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cabin is squat and toy-like, with logs bulging like sausages at both corners, a swollen rounded roof ridge and a stubby, oversized chimney. The outline is lumpy where a wall should run straight. B: the tiki bar's stools are chunky, but the glasses keep thin stems and the counter keeps a long clean curve. Its high corner_rate comes from the broken-up mask.",
+   "fix": "Draw the cabin with taller, straighter walls of slimmer logs with small flat cut ends, a thin roof with a straight ridge line and tight eaves, and a smaller chimney."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the tiki bar's counter curve, stool posts and thin glass stems sit in believable relation, and its seats are only mildly fat. B: the gate's bars are thin and the posts are boxy, but the post-top balls are oversized and the bars waver slightly along their length. Spears and scrolls are packed in, and thin_share of 0.207 is far above the real maximum of 0.072, which fits the over-parted drawing seen in the lessons.",
+   "fix": "Draw fewer, evenly spaced, dead-straight iron bars with simple spear tips, one modest scroll at the centre, and smaller post caps."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the locker has a soft blob corner at the top left, and its door and body are slightly swollen. The vents are sausage bars, and the feet are stubby pegs. Straight_share of 0.682 and solidity of 0.961 are above the real range because it reads as a thick toy block. B: the armchair has a clear contour of wings, rolled arms and curved cabriole legs, with true proportions and negative gaps between the legs.",
+   "fix": "Draw a tall narrow metal locker with thin flat sheet-metal walls, a flat thin door, tight square corners, slim pressed vent slits and no peg feet."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the oil lamp's chimney, font, foot and thin ring handle are all present and in true relation. Its high corner_rate comes from the handle and burner detail. B: the map sheets are flat with straight runs, but they stack as three stiff plates with thick white borders and small unexplained nicks in the edges. The fold reads as a rolled lip, so the paper does not behave like one folded sheet, and straight_share of 0.701 is just over the real limit.",
+   "fix": "Draw one thin paper map with a single believable accordion fold, thin edges, a narrow border, and no notches."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the lantern has a pitched roof, thin ring, posts and a tight base bevel, though the base sits slightly soft. B: the neck pillow's puffed U with a pinched opening and a small valve is how the real object looks, so the swelling is correct here. Neither has a form fault that decides the pair.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the candy corn is a squat, swollen triangle with blob corners and a very wide soft base, with no edge between the faces. Solidity of 0.994, straight_share of 0.73 and corner_rate of 0.0 are outside the real range. B: the watermelon wedge has a crisp point and straight cut, and the fruit parts and berry leaves give a varied, believable contour. The plate rim is missing from the mask, so that part of the silhouette is not evidence.",
+   "fix": "Draw the candy corn taller and narrower, as a true tapered wedge with a smaller tip, firmer base corners, and flat sides."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the binocular barrels are short and fat, nearly as wide as they are long, with a stubby bridge. Everything merges into one toy-like lump, with no gap between the barrels in the silhouette. B: the rocking horse has slim legs, a clear neck and tail, and long thin rockers with open gaps between the parts, so its proportions hold.",
+   "fix": "Draw longer, slimmer binocular barrels with a clear gap between them, joined by a thin hinge bridge, with narrow eyepieces."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: all eight spider legs are present, but they are thick sausages with rounded blunt tips, and the head and abdomen are oversized balls. Corner_rate of 4.83 is slightly above the real maximum. B: the fan's pleats are flat and straight with thin ribs and a clean arc, though the right-hand guard stick is weak.",
+   "fix": "Draw thin, angular spider legs with sharp joints that taper to fine points, and a smaller body."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through inflated form. Bodies come out fat and squat, with soft blob corners instead of tight bevels. Parts that should be thin become sausages, as with logs, legs and vents. Barrels and blocks lose their negative gaps and merge into one lump. The opposite failure is over-parting, where ornaments or bars pile onto the contour, as on the mirror scrolls and gate spears. Objects that really are round or puffy, such as the moon and the neck pillow, tell us nothing on this vector."
+}

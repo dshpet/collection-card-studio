@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the yellow arm and dark joints are one even satin plastic, cut by crisp edges, and the grey floor carries a fine speckle noise. Detail 0.061, micro-texture 0.025 and gloss 0.13 are all above the real range. B: the binocular barrels are soft matte rubber with a separate glassy lens and quiet plank streaks, all inside the real range.",
+   "fix": "Paint the arm as matte enamel with soft edges, make the joints dull rubber and the claw worn metal, and leave the floor plain and smooth without speckle."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the box rim is soft matte, the cushion is dull, and the coin is the only shiny part. B: the tanks are satin grey with soft highlights, the straps are matte, and the buckles are gold. Both mix matte and shiny within the object, stay soft at 2×, and sit inside the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the yellow body, gold trim and red dish share one thick lacquered plastic with soft blown highlights, and the rivets are crisp beads. A: the fuselage is quieter, with thin panel lines, and paint, grey metal and glass stay separate. A's high highlight share of 0.334 just reflects its white subject.",
+   "fix": "Make the body brushed painted metal with a low sheen, the trim thin dull brass and the dish matte, and draw the rivets as small flat dots."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the keys, red case and buttons are razor-crisp, with hard specular edges on every key and a uniform lacquer. Detail 0.084, micro-texture 0.037 and gloss 0.269 are all above the real range. A: the bar top is matte plaster, the glass and fruit are shinier, and the marks are softer and inside the range, though the thatch is chunky.",
+   "fix": "Soften the key edges, make the white keys satin and the case matte plastic, keep gloss to a thin strip on the black keys, and remove the sharp edge glints."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the backboard is a plain matte white with a smooth orange rim and a tube-like net. Its 0.569 highlight share comes from the white board, not from finish. B: the sphere is a smooth satin blue with soft orbit rings. Both are simple smooth plastics with no noise, so finish gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cream cabinet carries a fine speckled grain, and the toggles and reels look sharpened, with slightly smeared edges at 2×. Micro-grain is visible on what should be a flat surface. B: the monitor shell is clean satin with a soft bezel and a quiet glass sheen, matching the real retro computer card.",
+   "fix": "Make the cream casing smooth satin plastic with no speckle, keep the toggles soft and small, and let the only sheen be a faint glow on the window."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the scarf is a smooth, inflated-looking red with no weave, hem or fold crease, so it reads as rubber rather than cloth, and the medallion is crisp. Gloss is low at 0.04. A: the car separates lacquer, grey metal trim, clear dome and dull seats, with thin panel seams inside the real range. The material gap is the only cue, so confidence is low.",
+   "fix": "Draw soft cotton cloth with a faint fine weave, thin stitched hems and small sharp fold creases, without the puffy balloon shading."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the frost is a dense scatter of white specks along the tray bottom and rim, and the ice is filled with dot bubbles, giving a noisy speckle over wet-looking pink plastic. A: the phone body is calm satin plastic, with a glossy dial window and matte keys, and it has no noise.",
+   "fix": "Make frost a thin soft pale haze on the tray edges without separate dots, keep the ice clear with two or three small bubbles, and make the tray matte silicone."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: hairline cracks are drawn across the stone table edges and pedestal, and the surface has mottled painterly grain. Those marks sit on the surface as decoration, and highlight share of 0.264 is above the real range. B: the band is an even matte silicone with soft raised icons and no surface marks, which is material-true.",
+   "fix": "Remove the drawn cracks, make the stone smooth pale matte with soft chipped corners, and keep the tile tops satin."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a visible grain runs through the night sky, and the sign faces have a sharpened look around the tube highlights, even though the tube-and-painted-box contrast reads well. B: the dome and wall are quiet matte paint with thin seams, and the window glass is clean with soft reflections. Both are inside the real range, so this is a weak call.",
+   "fix": "Remove the grain from the sky, keep soft smooth gradients, and let the sign boxes be matte painted metal with a gentle tube glow."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the post and planks have big gouged grain lines and knots, the rope twists are chunky, and the lifebuoy is glossy plastic, so wood marks are large and decorative. A: the glass tube is soft and quiet, with a thin edge sheen, and the base is plain satin metal, with lower detail at 0.026.",
+   "fix": "Use fine quiet wood grain with thin faint lines, no deep gouges, finer rope twist, and a satin rather than wet lifebuoy."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the sneaker upper, foam sole and laces share one lacquered plastic look, the laces are shiny tubes, and the mesh dots are crisp. Detail 0.072 and gloss 0.267 sit at the very top of the real range. B: the flask has clear glass, a pored matte cork and a matte shelf, a wider mix of finishes. A stays inside the range, so this is a weak call.",
+   "fix": "Make the upper soft matte fabric with a faint fine mesh, the sole dull foam and the laces woven flat cord, and keep sheen to the small rubber trims."
+  }
+ ],
+ "pattern": "Generated cards are given away by finish that is too even and too crisp. Different materials collapse into one lacquered plastic, edges and small parts are sharper than the soft real cards, and surface marks are added on top of the form rather than left quiet: speckle grain, drawn hairline cracks, gouged wood lines, dotted frost. Real cards stay soft at 2×, keep marks small and quiet, and confine gloss to one or two parts of the object."
+}

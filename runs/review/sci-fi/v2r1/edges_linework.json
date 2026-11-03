@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the backboard's red frame and inner square carry a heavy, even black double contour all the way round, and the rim and net are just as dark; outline_darkness 0.201 is well above the real range. B: atom rings are dense with doubled highlight lines, slightly high at 0.171 subject density, but the sphere's edge fades softly at the top and there is no dark contour (-0.015).",
+   "fix": "Remove the dark line around the backboard. Let the red frame end directly against the blue background, with a thin bright bevel on the lit top edge and a softer edge on the shadow side."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the red box has one unbroken, even dark contour around lid and base, with little variation between lit and shadow sides; outline 0.13 is just above the real range. B: jetpack straps and buckles are the sharpest edges, while the backpack straps and tank sides soften (-0.008). B's tanks have some streaky internal edges, so the call is weak.",
+   "fix": "Let the box edge change along its length: crisp under the lid and at the base corner, softer and lighter along the lit top of the lid, with no even line around it."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the sign boards, arrow and neon bed have thick doubled contours (outline 0.161, above the real range), a mottled halo and blocky ripple in the sky around the sign, and window frames as dark as the sign, so the focus does not lead. A: dome and base contours are firm and clean, roof seams are thin, and the background is quiet, though at 0.01 it is slightly below the real range.",
+   "fix": "Remove the dark rim around the sign boards and the halo in the sky. Keep the sky a smooth clean gradient, draw the neon tube with one crisp edge, and make the motel building softer and lower in contrast than the sign."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the goal frame has a thick black contour and the pool floor caustics fill the background with busy cell lines; background 0.025 is above the real range, so the net and water compete with the ball. A: the bottle has a clean thin contour, soft edges inside the plastic, and only the flat ray lines behind it.",
+   "fix": "Soften the pool pattern: wide, blurred, low-contrast light ripples behind the goal. Keep crisp edges only on the goal posts and ball, with no dark line along the frame."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: subject density is low (0.08) while background density is about double the real ceiling (0.04): the window plants and drawer compete with the hero. The page blocks sit in thick dark grooves and the book covers have long even contours. A: flower petals and bricks hold the dense sharp edges (0.137) and the backdrop is a faint lattice, which is the real distribution.",
+   "fix": "Blur and simplify the window and drawer behind the books so they have almost no edges. Add fine crisp page lines and small spine details on the books, and replace the dark grooves around the pages with thin precise gaps."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the vents, panel frames and reels are heavy black grooves with hard rectangular contours; subject density 0.2 is above the real range, and every panel is equally sharp. Its contour value (-0.138) is also below range. B: the monitor rim and keyboard have thin precise seams, with sharpness focused on the screen edge and keys, matching the real computer in the lessons. Its contour value (-0.088) is also slightly low.",
+   "fix": "Make the vent slots and panel gaps thin and precise, not deep black grooves. Keep the sharpest edges on the reels and leave the lower speaker panel soft and low in contrast."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the black plank gaps are the longest and hardest lines on the card, cut across the scene, and are harder than the binoculars' lit green edges, which fade, so the hierarchy is reversed. B: arm contours are clean and lead the card, though subject density is slightly high (0.184) and the shadow edge wobbles. The numbers do not separate the pair much.",
+   "fix": "Make the plank gaps thin, soft and lower in contrast. Keep the crispest edges on the lens rims and barrel bands."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the scarf has a wire-like, even dark contour down both tails, and the fold interiors are almost edgeless (0.053, at the low end), so it reads as a drawn shape; the spiral background lines are as firm as the hero. A: car contour weight varies, firm under the body and lost along the lit dome, with thin door seams. Both are within all measured ranges.",
+   "fix": "Remove the even line around the scarf. Let the lit folds melt softly into the background, keep the shadowed underside crisp, and add sharp creases near the knot and badge."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: frost crusting along the tray makes scattered hard specks and broken dark marks, mostly near the corners and bottom, while the ice cubes themselves have weak edges (0.086, just under range), so the sharpest detail is on noise, not on form. B: the phone has clean even seams and a tidy cord, with a clear focus on the dial and buttons, though the outline is firmer.",
+   "fix": "Replace the speckled frost with a few smooth soft patches. Put the crispest edges on the ice cube corners and the tray rim."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: clouds carry dark coloring-book contours with rippled lines inside, background 0.018 is just above range, and the fuselage and wings have a dark drawn line along the bottom. B: solar panel grids are heavy and subject density 0.199 exceeds range, but they are tightly localized on a high-contrast panel, and the backdrop lattice stays faint. Both have flaws, so the call is weak.",
+   "fix": "Remove the dark lines around clouds and fuselage. Make the clouds soft white shapes with no drawn edge, and let the plane's edges come from light against sky."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: dense mesh, lace and sole lines are equally sharp across both shoes (0.227, top of the real range), and the floor shadow has a hard dark rim; a thin line also runs down the card's left and right borders. B: the flask has fine precise glass rims and a softer shadow edge, with detail concentrated on the bubbles. Both contour values are slightly low.",
+   "fix": "Keep the sharpest lines on the front shoe's laces and toe, and soften the rear shoe and mesh. Give the floor shadow a soft fading edge with no dark rim, and leave the card borders clean."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: wall channels, the cylinder and base share the same hard, ruler-even double lines, with the wall trim as firm as the hero, so hierarchy is flat. B: rope and post edges are firm where they cross and fade along the sunlit planks and water; the contour is more varied. All measures are in range, so this rests on my eye.",
+   "fix": "Make the wall panel lines thin, soft and low in contrast. Keep the sharpest edges on the base rim and glass rims, and let the lit side of the cap soften."
+  }
+ ],
+ "pattern": "Generated cards give themselves away with edge distribution. They use even, unbroken dark contours around the hero where real cards vary edge weight and lose lit edges. Seams, vents and page gaps become thick grooves. Background elements such as planks, caustics, clouds and window detail are as sharp as or sharper than the hero, or noise such as frost or halo banding takes the sharpest edges away from the focus. Real cards put the crisp edges at the focus, with thin precise seams and a quiet background."
+}

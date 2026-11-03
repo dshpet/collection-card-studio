@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the cap is seen from a high three-quarter view. The board's top is a flat, even green patch, and the band's lower curve agrees with that height. B: the boot is almost side-on with slight floating, and only the cuff opening shows from above. Each card holds one mild view, and neither is forced.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the lower coil is seen from above with open ellipses, but the upper loop stands nearly face-on, so the object reads as two views. It floats with no ground, and normals are all tube rainbow (planar_share 0.0, below the real range). B: the scarf is frontal with one simple view, though it is also soft. Weak lean: twisted rope naturally measures low.",
+   "fix": "Draw the whole rope from one low three-quarter view: the upper loop tilts back at the same angle as the coil, with mild perspective."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the collar interior is seen from above, while both cuff openings turn toward the viewer, so the top and the sleeves do not quite share a view. The torso bulges toward the camera. B: the hat is at a low three-quarter angle and its brim twist reads as one tilted object. Weak lean.",
+   "fix": "Show the jacket from one straight, slightly raised view: sleeves hang back and down, cuff openings mostly hidden, torso flatter."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the anchor is a shallow, nearly orthographic relief with no ground plane, and it holds together as one view. B: the caravan's normals turn from blue to pink mid-body as if it has two faces, yet the orange stripe and roofline run almost straight across that turn. The evenly scattered grass tufts spread flatly toward the viewer rather than tightening with distance.",
+   "fix": "Turn the caravan clearly three-quarter: stripe and roofline angle gently away at the far end, and the grass tufts get smaller and tighter toward the horizon."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the mug is at low eye level with a shallow rim ellipse, on a table with a flat front edge. Its view agrees with the table top. B: the arch is straight frontal on a flat floor with a level ground line, and both pillars share one view. Its 0.01 planar_share comes from leaf noise, not the camera. Both views are mild and consistent.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: this is the same computer that appears as REAL in the lessons, with a low desk view and mild perspective. B: the saddle seat shows a broad top face and a three-quarter turn, while the fence rails read closer to frontal with thin top faces, so the hero sits slightly off the fence's angle.",
+   "fix": "Turn the fence to the same three-quarter angle as the saddle, and show the same amount of top face on the rails and the seat."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the doors are nearly frontal, with both posts showing a narrow left face and level floor bands. B: the sneakers are at a raised three-quarter view on a flat floor, with a hard wall line and the near shoe modestly larger. Each card keeps one view and mild perspective, like the real camera and podium cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the awning shows a large top face from above, while the wheels and ground sit in a lower view with the tile edge low on the card, so the cart tips toward the viewer. B: the cactus is steady at eye level on a dune. Its low 0.002 planar_share reflects a rounded form, not a camera fault. Weak lean.",
+   "fix": "Lower the camera on the cart so the awning top is only a shallow slope, the wheels stay near round, and the ground ends at a higher line."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the barrel is frontal with shallow lid and band ellipses, but the floor planks fan out steeply from the centre, as if from a wider lens than the barrel. B: the chest is at one raised three-quarter view, with box, lid and sand all agreeing. Weak lean.",
+   "fix": "Keep the floor gentle: planks run nearly parallel with slight convergence, matching the low view of the barrel."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the wagon shows its front opening and long side both wide open. The near wheel swells and the tongue pushes toward the camera, which is a stronger perspective than the real cards use. B: the boat and dock share one high view, with flat even normal patches and steady parallel planks. Its 0.509 planar_share sits exactly at the top of the real range.",
+   "fix": "Use a gentler camera farther from the wagon: the near wheel only slightly bigger than the far one, the side longer, and the front opening turned away and narrower."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the train is at a low three-quarter view, with cab, boiler and ties converging moderately on one ground line. B: the coaster cars jump from huge in front to tiny behind and the track curls overhead, which is forced wide-angle. Near-car normals are smooth rainbow, and planar_share 0.028 is below the real range.",
+   "fix": "Step back from the coaster: all cars close to the same size, one gently curved track, with mild perspective."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the gloves are at low eye level with a level table edge, close-cropped but in one view. B: the deck is seen steeply from above on a strong diagonal, with wide-spreading planks and a post cropped at the top left. The mask faces the camera more than the deck angle suggests, so it sits propped rather than lying flat. Weak lean.",
+   "fix": "Lay the mask and snorkel flat on the deck at the same angle as the planks, with a soft contact shadow, and use a lower, gentler view of the dock."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away with the camera. They sit closer and use a wider lens than the real cards, so the near part swells and the far part shrinks (coaster cars, wagon wheel, fanned barrel floor planks). Parts can also disagree on view: a hero turned three-quarter on a frontal prop, or a coil seen from above with a face-on loop. The lessons show the same drift: higher cameras, more top face and swollen forms, with smooth rainbow normals where real cards have flat, even patches. planar_share alone is weak, because rope, leaves and rounded forms read low on any card, and most calls here are low confidence."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the shoes are lit almost evenly from side to side; both uppers and white soles stay light, and all the darkness sits in the hard cast shadow going left and in the mesh and collar creases. Light bias is 0.019, far below the real floor of 0.199, and shading range is 0.82, above the real ceiling. B: the candle has a clear lit side with a soft turn across the wax body, a warm glow on the top rim, and a cast shadow on the table that matches the light direction.",
+   "fix": "Light the shoes from the upper right so the near side of each shoe falls into a soft, cool shadow. Keep the left shoe darker than the right, and let the light roll gradually across the toe and sole instead of lighting every panel equally."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the glass is mostly transmitted light, so low form numbers are expected; it has a tall soft window sheen on the left wall and a magenta caustic pool on the table that ties it to the surface. B: every side of the gold frame carries the same bright sheen with no shadow side, the mirror face is a flat pale fill, and the oval pedestal shadow looks detached. Shading range is 0.831, above the real ceiling. This is a weak call because the glass also sits just below range.",
+   "fix": "Give the mirror frame one light side: bright gold on the upper left, sliding to deep amber on the lower right scrolls. Make the shadow on the stone darkest right under the feet and fade it as it moves away."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the calculator has soft pillowy keys that each carry a small top sheen, a lit top-left chamfer, and a soft dark shadow offset to the lower right, all from one direction. B: the feeder faces are flat fills, with roof planks and side walls each one value, and the turn happens only at hard plank edges. Its lens is one brown tone with no cool shadow side, the pattern the lessons show on generated cards. All numbers are in range, so this rests on the eye only.",
+   "fix": "Light the feeder from the upper left. Let the roof planks fade from bright to darker along their length, shade the right wall in a cooler tone, and add a soft shadow under the roof overhang that fades into the seed tray."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the moon has a steady turn from a lit upper left to a warm dark lower right, with crater interiors shaded and rims lit consistently from the same direction. Its range of 0.875 is slightly above the real ceiling but the light is coherent. B: the bugle's bell has a smooth metallic turn, a broad soft sheen and a dark inner throat, and the cord has its own shadow on the tube. Both hold a single believable light, so this vector gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cabin's logs each repeat the same banded top-light and dark underside, the roof shingles repeat one soft shine, and the lens stays one warm brown with no cool shadow side. The cast shadow on the grass is a dark even shape. B: the bar counter wall and the stools turn into cool blue-grey on their shaded sides against warm tops, the split the real cards show in the lens, and the shadow fades softly under the counter lip.",
+   "fix": "Light the cabin from the upper left and let the right wall sink into a soft, cooler shadow, so logs on that side are darker overall. Vary log highlights, brightest near the light and fading away, instead of the same shine on every log."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the bar has warm lit tops, cool shaded stool undersides and counter wall, and a clear turn across the curved counter. B: the gate pillars are flat, evenly dark stone with no light side from the moon, and the lantern glow is a small orange patch painted on the stone instead of washing across the pillar face. Shading range 0.561 and light bias 0.114 are both below the real floor. The bar stripes on the ground are the only strong light cue.",
+   "fix": "Let the lantern light spread across the pillar faces, bright near the lantern and fading over the stone blocks. Give each pillar a lit inner side and a darker outer side, and round the sphere caps with a clear moonlit top and dark underside."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the locker has a strong light rim along its top and front edges, a bright door against a darker interior, and a soft wall shadow behind it; form contrast 0.556 is in the real range. B: the armchair's velvet turns very softly, wings, seat and arms stay nearly one mid value, and only the dark floor shadow carries weight. Form contrast 0.276 and light bias 0.144 are both below the real floor. The soft photographic falloff differs from the crisper real modeling.",
+   "fix": "Light the chair strongly from the upper left: bright velvet on the left wing, arm roll and seat top, and a clearly darker right wing and front panel. Add a soft sheen along the top of each roll and deep dark shading between the cushions."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the brass base turns smoothly from a bright band to a dark underside, with narrow sheen lines and a flame glow inside the chimney. Light bias 0.745 is just over the real ceiling, but the glow explains it. B: the map sheets are flat with almost no change across the paper, and the only shading is blurry dark smudges between sheets. Light bias is 0.155, inside the wide range but low. A flat object could read this way, so the call is weak.",
+   "fix": "Add a soft gradient across each sheet, lighter at the upper left and darker to the lower right, slightly curl the sheet edges so they catch light, and draw clean narrow shadows where one sheet lies on the next."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the lantern jumps from a near-white roof plane to a near-black base underside, with little in between; the metal faces are flat planes with hard value steps. Shading range 0.965 and form contrast 0.65 are both over the real ceiling, the range by a wide margin. B: the neck pillow turns gently from a lit top to a cool lavender shadow in the lower lobes, with small soft shading in the puckers, and all numbers are in range.",
+   "fix": "Soften the lantern's light: make the roof a mid-bright metal with a thin sheen, not a white plane, and lift the base underside to a dark blue-grey with a soft gradient into the sides."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the candy corn has one clear light from the left, a slow smooth turn into shadow on the right, a soft sheen at the tip, and a matching cast shadow on the planks. B: the fruit is lit almost frontally, each piece carrying its own small highlight and droplet hot spots, and the lens is one cream tone with weak side-to-side change. Light bias is 0.293 against A's 0.689, though still in range, so the call is weak.",
+   "fix": "Light the plate from one side: the near side of the watermelon and oranges bright, the far side of the fruit pile in soft shadow. Reduce the small white dots on droplets and grapes to a few on the lit side only."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the binocular barrels are lit hard with pale tops, near-black lens housings and a heavy cast shadow, and the floor corners darken as well. Shading range 0.925 is above the real ceiling, the shadows dropping further than on real cards. B: the horse has a soft directional turn, a gentle underside shadow and a light contact shadow under the rockers, all within range. Its lens is monochrome, so B is not clean either.",
+   "fix": "Lift the binocular shadows: keep the barrels' shaded sides a rich dark green rather than near black, soften the floor shadow's edge and lighten it, and remove the dark corners around the floor."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the spider has a round lit body with a smooth turn into dark, and a soft light rim down each leg, giving clear volume. Range 0.863 is a little high. B: the fan's pleats are flat fills with no turn across each fold, the wooden sticks barely shade, and there is almost no shadow on the background. Shading range 0.518 is close to the floor, form contrast 0.213 is well below it, and light bias 0.09 is also below the real floor. Part of the lens stripe is pleat color leaking through.",
+   "fix": "Light the fan from the upper left: each pleat fades from bright at the top to darker into the fold, the sticks have a lit edge and a dark edge, and a soft shadow falls on the background to the lower right."
+  }
+ ],
+ "pattern": "Generated cards still lose on one coherent key light. Their heroes tend to be lit evenly or frontally, with the same sheen repeated on every part rather than one clear lit side falling into a shaded side. In the lens, their shadows stay one warm monochrome tone where real cards turn to a cool shadow side. Form is often carried by flat fills with hard edge steps or by very soft, low-contrast falloff, and glows sit as patches instead of spreading over nearby surfaces."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the navy telescope tube carries one long even sheen and barely darkens along its underside. The tripod legs are lit almost the same all round, and the ground shadow is a pale soft smear (form_contrast 0.529). B: the binocular barrels turn clearly from a lit top into a dark lower side, with a dense shadow pooled on the planks at lower right. Its shading_range of 0.925 is slightly over the real maximum, but the light direction reads like the real camera card.",
+   "fix": "Light the telescope from the upper left so the underside of the tube falls into a clear dark band. Make the shadow under the tripod darker where the legs touch the ground."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the scarf is gentle and puffy, with soft sheen on the folds and shallow shadows. Its form_contrast of 0.256 is below the real range. B: the meteor is lit hard from the upper left, and the lower right drops to near black with no fill or bounce. Crater rims are crisp and light_bias_strength of 0.861 is above the real maximum. Both sit off the range, but B's one-sided lighting is the bigger departure from the opened shadows on real cards.",
+   "fix": "Lift the dark lower right of the meteor with soft fill light and a faint warm bounce from the flames, so the shadow side stays readable and is not near black."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the dish reads as hard-edged. The bowl interior is flat grey-dark, the base is sharply glossy, and a crisp dark shadow lies on the sand to the right. All three measures are off the real range (shading_range 0.584 low, form_contrast 0.653 and light_bias_strength 0.735 high). B: the sandcastle towers turn softly from warm lit faces into gentle shade. Sand mounds pick up soft shadow and light bounce, and all three measures are in range.",
+   "fix": "Soften the shadow on the sand and let it fade with distance. Add a gradual light-to-dark turn across the inside of the dish, and replace the sharp shine on the blue base with broad soft sheen."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the rover's side panels are flat with little turn. It sits on an even saturated violet shadow blob that rings the whole vehicle rather than falling in one direction. form_contrast 0.759 and light_bias_strength 0.932 are both over the real range. B: the taxi's rounded hood and roof roll smoothly from a broad sheen into the side, with a dark directional shadow under the car. It is also strong (shading_range 0.929, bias 0.934), but the forms turn believably.",
+   "fix": "Round the rover's body panels so light rolls gradually across them. Replace the violet ring on the ground with a soft dark shadow falling to one side, darkest under the tyres."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the sneakers have a dark, fairly crisp cast shadow on the left and strong local contrast on the mesh and sole, with a nearly neutral overall light bias (shading_range 0.82 high, light_bias_strength 0.019 very low). B: the helmet turns softly across the shell, with a broad window-like sheen on the visor and a soft cast shadow, and all three measures sit near or inside the real range. The helmet's visor highlight is glossy, so this is a weak call.",
+   "fix": "Soften the sneakers' cast shadow and lighten its core. Let a clear single light from the upper right brighten one shoe face and shade the other side more gently."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the inflatable rings have soft tube shading, a broad sheen, and a clear fence shadow on the grass. B: the jacket has soft padded folds, dark cuff interiors, and gentle shading across the sleeves. The dark lens surround is leaked background color, not light. All three measures are in range on both cards, and neither shows a distinct shading flaw.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the bar counter and stools have clear top light, dark undersides, and shadows and reflections in the water. B: the dome is lit evenly with little separation between lit and shadow side. The ground shadow to the right is pale and soft, and the warm door glow stays local and does not model the dome (form_contrast 0.411, lower than A's 0.503). The numbers do not separate them, so this rests on the weak form turn.",
+   "fix": "Give the dome one clear light side and a darker shadow side. Add a defined shadow on the snow at the base, and let the warm door light spill onto the steps and ground."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the planet has an airbrushed sphere with a soft hot spot at upper left, a strong dark lower terminator, a bright glow ringing the silhouette, and a very glossy ring. The halo matches the bright surround on the generated glove lesson. B: the flip-flops have gentle matte shading, soft side walls, and shallow dimples, with no hot highlights. It is on the gentle side, with shading_range 0.553 still in range.",
+   "fix": "Remove the bright glow around the planet's edge. Keep a soft matte sheen on the sphere, and replace the plastic shine on the ring with a broad gentle highlight."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the book has soft page turns, with a gentle shadow under the cover and from the fence and plant. B: the chair has rounded tube highlights and a soft directional floor shadow with colored bounce. All three measures are in range on both cards, and both show a consistent single light with believable softness.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the player and earbuds are soft and matte, with gentle rounded turns and little shine (form_contrast 0.331 is low but in range). B: the saucer has streaked metal bands and sharp dome highlights, with a pale glow around it in the lens, and light_bias_strength of 0.881 is over the real maximum. Its lights are small sharp beads, and the shading is split strongly between top and belly.",
+   "fix": "Replace the streaked metal with a smooth surface and one broad soft sheen across the saucer. Soften the dome highlight and let the underside fall gently into shade with a little bounce."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the popcorn cart has soft even daylight, with rounded awning folds, undersides in gentle shade, and a soft shadow on the paving. B: the control panel has a pale washed left face and a glossy teal front. It sits on a reflective floor with blurred color smears of the buttons in place of a plain cast shadow. Numbers are in range for both, so the call rests on this floor treatment.",
+   "fix": "Make the floor matte and remove the blurred button reflections. Add a soft shadow under the panel, and let the left face fall into a clear darker side."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the rocket body shows chrome-like banding, with a dark band beside a bright streak down the hull and sharp white hot spots on the red fins and nose. B: the submarine has a broad even sheen rolling over the yellow hull into a gentle lower shade, though it also has some white highlights. Numbers are in range for both, so this rests only on the banded turn and hot spots.",
+   "fix": "Smooth the rocket body so light rolls gradually from lit side to shaded side with no stripes. Make the highlights on the fins and nose broad and soft, not sharp white."
+  }
+ ],
+ "pattern": "Generated cards are still given away by light that models the object poorly. Forms are often lit evenly with weak turn or split into hard one-sided lighting, with shadows either pale and too even or near black with no fill. Surfaces lean to plastic or chrome, with sharp hot spots, streaked banding and glowing halos around silhouettes. Ground contact is often a blob, a crisp dark shape or a glossy reflection, where real cards use a soft directional shadow that is darkest at contact. Real cards turn light gradually from one clear side, keep shadows open with cool fill or bounce, and use broad soft sheen. The measures only separate the extreme pairs, so p03 is the only strong call; p06 and p09 give no shading reason to choose."
+}

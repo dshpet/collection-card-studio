@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: low camera looking up past the sign, with the motel cropped at left and fence and hills behind. That gives three clear depth layers, like the real cropped lighthouse. B: the whole saloon is pushed into a hard corner view. The roofline and porch lines converge steeply, the left wall leans, and we see the porch deck from above and the balcony underside from below, so the perspective reads wide-angle and forced.",
+   "fix": "Show the saloon from a gentle three-quarter view at eye level, with mild perspective and upright walls. Turn the building less and let the left wall stay narrow."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: horseshoe seen nearly front-on with a slight tilt that shows its lower rim thickness. B: neck pillow turned slightly, with a smooth rainbow form as expected for a soft object. Both float on flat ring backgrounds, each holds one view, and both planar_share values are in range.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: teapot at low side-on eye level. The lid rim and base curves agree, and the table recedes at a shallow angle. B: sneakers from a higher three-quarter view, parallel to each other on a floor that meets a level wall line. Both have one consistent view and a readable ground plane.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the tower is seen from below with legs converging strongly upward, while the wheel faces the camera almost flat and the tail vane sticks out sideways in the same plane. A vane behind a front-facing wheel should foreshorten away, so the top and tail do not share the tower's view. B: a straight front elevation of the door with shallow relief, where every part agrees.",
+   "fix": "Turn the windmill head a little so the wheel is a slight oval and the tail vane points back and away behind it, shortened. Reduce the upward taper of the tower legs."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the twig ball sits on soft dunes with a wavy horizon and no firm ground angle, and its planar_share of 0.0 is below the real range. B: the popcorn cart stands on paving that recedes evenly to a level line, and its wheels, body and awning agree with one mild three-quarter view.",
+   "fix": "Set the ball on a flatter stretch of sand with a clean level horizon line and a contact shadow directly under it, so the ground reads at one angle."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: high camera tipped sideways, so the table, rail and book all run on diagonals. The book's near page is much larger than the far one, and a pot crowds the corner, giving forced perspective with stacked near and far layers. planar_share 0.53 is just over the real range. B: a calm eye-level lamp cropped at the bottom, with the collar underside and dome top agreeing, like the real cropped lighthouse.",
+   "fix": "Lower the camera and level the table so its edges run nearly horizontal. Show the open book with mild perspective and both pages close to equal size."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the planter is turned, with the near left leg large and the rear legs offset, but the fence behind is dead front-on and the paving follows no matching angle, so hero and setting do not share one view. B: the backpack and mat roll agree on one three-quarter view, with the bedroll end and side pocket both on the right, standing on a level floor.",
+   "fix": "Turn the fence and paving to match the planter's angle, or square the planter to the fence. Keep all four legs in the same mild perspective."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: mine cart in low three-quarter view, with the rim and wheels agreeing on soft sand. B: scroll on a blue slab tilted diagonally across the card, an unusual angle, but real cards also tilt ground (the taxi road) and the scroll follows the slab. No firm view fault on either card.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the scarf's neck loop is seen from above like a ring lying back, but the knot, badge and tails face the camera flat, so two views meet at the knot. The normals are one swollen rainbow, planar_share 0.07. B: the harmonica holds one tilted view from above, with a flat top, a crisp side face and windows following the same receding line.",
+   "fix": "Draw the whole scarf from one slightly raised view. Lay the tails and knot back at the same angle as the neck loop so the badge is a slight oval."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: star badge square-on, with flat facets and almost no depth. Its planar_share of 0.719 is slightly over the real range, but a front view of a flat object explains that. B: ring box from a raised three-quarter view, with the coin, cushion and open lid agreeing. Each card holds one view.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the fanned cards are flat to the camera, with the same normal colour as the back wall and no foreshortening, yet they stand on a table seen receding at an angle. They read as a sticker on a tabletop. B: the ball is seen from above on sand that fills the frame with no horizon, and ball, valve and ground share one high view.",
+   "fix": "Lean the fan of cards back so they tilt away from the camera. Make the top edges slightly narrower than the bottom, with the lower corners resting on the table."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: piano in mild three-quarter view with a level floor, gentle convergence to the left and a consistent view. B: rose arch front-on on a level floor, with an inner rail showing depth. Its planar_share of 0.01 is under the real range, but the leaf mass explains that, and no spatial fault shows.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards give themselves away by stronger, less disciplined cameras: a forced wide-angle corner or diagonal tilt, or parts that do not share one view, such as a flat-on element placed on a receding ground or a neck loop from above with a knot from the front. Real cards hold one mild view with a level, simple ground. On this vector the evidence is weak; most calls are confidence 2 or lower, and planar_share alone rarely separated the cards."
+}

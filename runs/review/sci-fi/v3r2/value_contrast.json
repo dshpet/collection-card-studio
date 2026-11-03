@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the asteroid splits hard into a near-white top and a dark lower band with a black crescent at the base. The orange rays collapse into one flat grey level in the lens, so no background value shapes survive. B: the bounce house has a soft light-to-mid roll-off, and a real glow and rays stay readable as light and mid shapes behind it.",
+   "fix": "Shade the asteroid with a gentle slide from light grey to mid grey, and keep the shadow side soft with no black patch at the base. Make the background rays clearly lighter and darker, with a soft light glow behind the rock."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the carousel is a bright canopy over a dark underside, on a mid purple field with soft corner darkening and a broad light patch behind it. B: the keyboard has black keys against white keys on a mid-dark body, with a faint star-shaped glow and darker corners (vignette 0.109, slightly over the real range). Both have clear hero groups and readable background glows, and neither departs from the real cards in a way that picks a side.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the station is almost all near-white with thin hard white rims around every solar panel, set against one flat dark sky. It is separated purely by a bright outline, with little middle value on the hero. B: the bike and car form a full scene with graded groups, white sky at the top, a mid car and deep accents low in the frame. Its vignette of -0.318 and contrast of 0.232 fall outside the real range, but they come from the bright sky over a dark road, not from a stuck-on glow.",
+   "fix": "Remove the bright white outline around the solar panels. Shade the station body in mid greys with one soft lit side, and let the sky brighten gradually toward the planet instead of staying one flat dark tone."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the top corners and the upper background go to pure black, with a dome-shaped glow cut out behind a white scroll. That makes a very hard hero-to-background jump (contrast 0.213, gap 0.313, both over range). B: the parchment is also bright (gap 0.285), but its background stays in dark and mid greys, with black kept to small dots on the drawing. The call is weak because both cards run hot on hero brightness.",
+   "fix": "Lift the top corners from near black to a dark mid blue, soften the glow behind the scroll into a wide gradual falloff, and lower the scroll's highlights from pure white to warm cream."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the rocket body is one near-white shape on a single flat mid-grey sky, with a dark tower beside it, so the hero reads as bright-on-flat with no glow or background gradient. A: the pool bar is a full scene, with light, middle and dark shapes spread across the frame from the thatched roof, the dark hut wall and the pale counter. Its value groups are scattered, but they vary the way a real scene does.",
+   "fix": "Give the sky a gradual change from lighter near the horizon to deeper at the top. Bring the rocket body down from white to soft light grey, with a broad mid-grey shadow side."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the background is one dead-flat dark tone with no glow behind the tube, and a clean light band for the shelf. Corners read lighter than the centre (vignette -0.065, below the real range). The tube breaks into hard patches of white and mid grey. B: the vending machine is a dark mass with a soft spotlight spreading behind and below it, and corners darken gently, as on real cards.",
+   "fix": "Add a soft light glow on the wall behind the tube, fading to slightly darker corners. Replace the hard white streaks on the metal with fewer broad, soft highlights."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the dome is dark with a pure black opening right next to the near-white telescope and stone, on a sky of mostly one light tone, so transitions are chiselled and hard. B: the sandcastle is very high key (mean 0.771, over range) and sits in almost the same value as the sand, with a large clipped white area in the foreground. Its roll-off is gentle, though. This is a weak preference, since each card strays from the real cards in its own way.",
+   "fix": "Lift the black opening behind the telescope to a dark mid tone, and soften the shadow edges on the dome and stonework so light slides gradually into dark."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the rose arch is a busy mid-dark mass of small highlights on clipped white stripes (gap -0.278, slightly past the real range), very close to the real arch on the reference sheet. B: the backpack is a mid-dark hero with soft shadow and a broad light floor patch, with black kept to strap edges. Both have readable groups, and value gives no solid reason to pick either.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the globe's lower half drops to a large pure black area beside bright, hard highlights, and the card is darker overall (mean 0.567, below range). The diamond background is a hard two-level pattern that competes with the hero. A: the balloons stay in gentle mid values with soft shadow sides and small highlights, against sky and clouds that form broad light groups.",
+   "fix": "Lighten the globe's shadow side from black to deep blue with a soft transition, and keep the black to a small accent. Make the background diamonds closer in tone to each other, and add a soft light glow behind the globe."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the card is too dark overall (mean 0.488, below range), with black wave bands across the background and a bright hero well above it (gap 0.26, over range). No glow sits behind the comet, and corners do not darken (vignette -0.006). B: the scarf is a dark red mass on a light blue swirl with a bright centre and darker corners, the same dark-hero-on-light-glow arrangement as the real cards.",
+   "fix": "Brighten the whole background to a mid purple and remove the near-black waves, keeping them only a little darker than the field. Add a soft bright glow behind the comet, and let the corners darken slightly."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the plant has clipped white bulbs and a nearly black pot underside and cast shadow, on a background of two flat, tidy tones (mid stripes and a light tabletop). B: the book is a broad single mid-grey cover with white stickers, on wood streaked with light and dark bands that vary naturally. The difference is small and both stay within real ranges.",
+   "fix": "Bring the bulbs down from pure white to soft pale yellow, lighten the black pot shadow to a dark mid tone, and add a gentle glow on the wall behind the plant."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the capsule's underside is one huge pure black ellipse sitting on a very light yellow field, which gives extreme contrast and a very dark hero against the background (rms 0.207 and gap -0.357, both past the real range). B: the envelope is a bright hero on a mid green field with corners darkening smoothly. Black is absent, and the darkest tones are confined to the small photo detail.",
+   "fix": "Paint the capsule's open underside as a dark mid blue with soft lighter reflected light along the rim, not a solid black shape. Keep the darkest touches to small accents like the rivets and the window frame."
+  }
+ ],
+ "pattern": "Generated cards push the extremes and lose the middle. Shadow sides go to large areas of pure black (capsule underside, globe lower half), and lit sides go to near-white shapes with hard edges or bright rims (station, rocket). Backgrounds are also wrong: they collapse to one flat tone or to hard near-black patterns (comet waves, tube wall), or show a cut-out glow, instead of the soft bright glow behind the hero with gently darker corners seen on real cards. Real cards keep the hero in connected mid and dark masses with gentle roll-off, and reserve black and white for small accents."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the submarine hull is one clean yellow gloss, with soft, small rivets and copper porthole rims separated from the paint by their duller finish. B: the feeder's roof and walls carry streaky, smeared grain that runs into the paint, and the seeds have over-sharpened outlines with a slight halo. All measures are in range and close, so this rests on the mark quality in B.",
+   "fix": "Draw the wood as smooth painted planks with very faint, fine grain; no streaks or smeared brush marks. Keep soft, clean edges on the seeds with no bright outline."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the horse's coat is a uniform oily satin, with airbrushed sheen patches on the shoulder and rump that read as polished plastic rather than short hair. B: the guitar mixes a lacquered red body, a matte pickguard, a dull fretboard and woven strap, so its gloss range is believable. Measures are in range for both.",
+   "fix": "Give the horse a matte short-hair coat with only a soft, broad sheen along the back; remove the wet-looking highlights on the shoulder and hip."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the desk wood under the book is big orange stripes, decorative rather than grain and smeared at the edges; micro_texture 0.0226 is just over the real ceiling. B: the hay strands are thick but consistent, and the twisted rope has a quiet, fine twist. The anchor's real wood is much finer and quieter than A's desk.",
+   "fix": "Make the desk wood fine and quiet: thin, low-contrast grain lines, with no wide stripes."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: smooth brass with soft reflections, plus frosted glass that is matte against the shiny metal. B: satin grey steel with a faint brushed sheen, and smooth gold nuggets that are glossier than the pan. Both separate materials and gloss levels convincingly, and all measures are in range.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: glass and ice are built from hard, flat translucent overlays and straight highlight bands, crisp and graphic with no soft surface falloff. B: the clay jug is believably matte with a soft sheen and a dry cork, so the material reads directly. Both measures sit below the real range, so the numbers do not separate them.",
+   "fix": "Paint the glass and ice with soft, rounded highlights that fade out gradually; no hard-edged straight bands or flat overlay shapes."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the towel is covered edge to edge in a loud, bumpy terry texture, oversized for the object; detail_subject 0.0995 is more than double the real ceiling and micro_texture 0.0277 is also over it. B: the bandana has a soft cloth surface with quiet weave and a clean printed pattern, with detail at 0.0417 in range.",
+   "fix": "Make the towel a soft, nearly smooth cloth with only a faint, fine fuzz; remove the visible bumpy loops and let the folds show the softness."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cactus is one smooth rubber-toy surface, with spines reduced to chunky yellow beads and no plant surface at all. B: the slide is also smooth plastic, but that is the right material, and it has a matte plank deck and tile as contrast. Measures are in range for both.",
+   "fix": "Make the cactus skin matte and waxy, with thin small spines at the ribs instead of round beads."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the coach is evenly lacquered across red panels, trim and wheels, with crisp added detail on the seat ribs and window frames; gloss_share 0.251 is above the real ceiling of 0.209. B: the coaster cars are glossy too, but that suits moulded plastic, gloss is 0.105, and the surfaces are simple and soft.",
+   "fix": "Keep the coach paint satin rather than lacquered; make the wheels and trim dull painted wood, and the seat fabric matte."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the staves have even hairline grain repeated across every plank, and the steel bands have brushed streaks and rivets. The real anchor barrel has broader, softer grain and smoother hoops. B: the popcorn cart has simple clean surfaces with matte kernels against glossy paint. Measures are in range and close, so this is a light call.",
+   "fix": "Paint the barrel with broad, soft wood tone and only a few faint grain lines; keep the metal bands smooth, with fewer rivets."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the hat is a matte felt-like surface with a fine, even mottle and a slightly shinier teal band. B: the flip-flops have a matte sole with small dimples and a glossier strap. Both mix gloss levels with small, quiet detail, and all measures are in range.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the vending machine glass has speckled condensation dots that read as noise, and the can and bottle labels are smeared at crop scale. B: the lantern has clean glass and satin dark metal, with even detail and no visible noise. Measures are in range for both.",
+   "fix": "Keep the vending machine glass clean with one soft reflection; remove the droplets and give the cans simple, clean labels."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the sleeping bag has matte-satin puffy nylon with soft seams, a dull leather strap and a small metal buckle, so the materials separate well. B: the claw machine has visible AI smear and sharpening halos around the bears and balls, every toy and panel shares the same candy gloss, and the bears' plush has no fabric at all.",
+   "fix": "Make the teddy bears soft matte plush with fine short fuzz, keep the balls as the only shiny items, and render clean soft edges with no smear or halo."
+  }
+ ],
+ "pattern": "Generated cards are given away by surface treatment applied across the whole object rather than chosen by material. This shows up as even lacquer on everything (the stagecoach), loud oversized texture (terry towel, striped desk wood), added fine repeated detail (hairline grain, droplets, brushed streaks), and smeared or sharpened marks with halos at edges. Real cards stay quieter: soft edges, sparse small detail, and matte and shiny parts mixed within one object. Only p06 is a firm call; most others are low confidence, and p04 and p10 give no reason to choose."
+}

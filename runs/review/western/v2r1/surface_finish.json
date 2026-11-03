@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the saloon's siding, balusters, window frames and door slats are all sharply drawn, and the wood has one even satin finish. Gloss 0.246 is above the real range and detail sits at the top. B: the sign panels are soft-edged, the neon tube and enamel faces differ from each other, and small detail drops away softly as on real cards.",
+   "fix": "Simplify the saloon boards into fewer soft planks, let small railing and frame edges blur slightly, keep the wood mostly matte with shine only on a few top edges."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cart body has mottled, blotchy rust and scuffed edge wear across every panel, plus rippled sand, so it reads as a photo-like weathered surface. That noise is busier than any real card. B: the scroll is clean, with smooth matte paper and a soft wax seal, in the quiet finish of real cards. It sits at the low end of the measured ranges.",
+   "fix": "Paint the cart as clean smooth brown metal with only a few soft worn patches at the corners, no blotchy rust texture, and calm soft-toned sand."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the box has soft matte lining and rim, and the coin has a satin shine. B: the star has broad shiny facets with faint fine mottling, and a crisp ruby. Both mix matte and shiny plausibly and both are within the real ranges on every measure. Nothing on my vector separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the cap's board is a smooth matte surface with soft corners and a quiet cord, close to real cards' restraint. B: the band has a visible woven mesh, the crown has piping, the visor has a sheen, and the plank floor carries drawn grain, so its fine surface detail is more elaborate. The crop also looks slightly smeared around the badge. The call is weak.",
+   "fix": "Drop the woven pattern on the hat band, paint it as smooth matte navy, and quiet the floor grain to a few faint soft lines."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: door panels have streaky painted grain, the frame has carved cracks, and every ivy leaf and flower carries hard veins and highlights. The whole surface is equally shiny and busy, with gloss 0.51 and detail 0.088 far above real. B: the windmill's weathered wood and metal blades are quiet and soft, with small rivets at real scale, in range.",
+   "fix": "Paint the door as smooth flat blue with no brush streaks, group the ivy into soft masses with few leaf highlights, and remove grain lines from the frame."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: every twig in the ball has knots, ridges and sharp shine, with dense high-contrast marks across the whole object. Gloss 0.425 and detail 0.088 are far outside the real range. A: the popcorn cart has clean painted surfaces, clear glass, and popcorn detail limited to one area, in range.",
+   "fix": "Use fewer, thicker smooth branches with soft shading, no bark knots or ridges, and shine only on a few upper curves."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the pillow is a blurred, airbrushed mass with faint noisy fabric speckle, smeared puckers and a mushy seam. It has almost no shine, and gloss and micro texture fall below the real range. A: the horseshoe reads as metal, with crisp bright edge highlights, a matte face and brass nails with small dark sockets, in range.",
+   "fix": "Draw the pillow as soft fabric with a clean stitched seam, defined small puckers along the edge and a gentle sheen on the top curve, with no blur or noise."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: every rose petal and leaf has sharp, wet-looking highlights, packed edge to edge, and even the wood blocks carry grain. Gloss 0.416 and detail 0.087 are far above real. B: the piano has satin wood, quiet grain, simple keys and small brass caps, with matte and shiny parts mixed in range.",
+   "fix": "Paint leaves and roses in soft simple groups with matte surfaces, keep highlights to a few top petals, and use fewer sharp leaf edges."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the trophy cup is one smooth gold gradient with no sharp reflection, so it reads as painted satin plastic. Detail, micro texture and highlight all fall at or below the real floor. B: the column's stone is matte with fine chalky grain, a crisp crack and a separate shiny plaque, so its materials differ, though gloss is just over the range.",
+   "fix": "Give the gold cup crisp bright reflection bands and a sharp highlight on the rim and curve, so it reads as polished metal."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the teapot enamel has grainy speckle, streaked shine and a realistic knotted wood table, a more photographic surface than real cards. B: the sneakers are busy, with mesh and glossy laces, but they sit in the real range and read as clean toy-like painted materials. The call is weak.",
+   "fix": "Paint the teapot as smooth clean enamel with one soft highlight, make the specks fewer and softer, and calm the table to faint grain with no knot."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the scarf is uniform smooth rubbery red with no cloth weave or edge hem, so fabric reads as clay, and the badge has the same finish. A: the harmonica has believable brushed metal, a bright edge highlight and a separate matte red cap, in range. The call is weak, because real cards also simplify cloth.",
+   "fix": "Make the scarf read as cotton cloth: matte, with soft fine folds and a thin hem along the edges, and no plastic shine."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the ball is an airbrushed surface with a blown-out bloom highlight and a smeared pink haze on the white panels. No seams or crisp reflections, and detail, micro texture and gloss all fall below the real range. A: the cards are matte with embossed glossy suits and fine gilt edges. Bright white faces explain the high highlight share.",
+   "fix": "Paint the ball as shiny vinyl with crisp narrow window-like highlights, thin panel seams and clean white panels, without glow or haze."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away in two ways. Most often they overwork the surface: sharp grain, knots, veins and highlights spread evenly across the whole object, with gloss and detail well above the real range and rust or wood that looks photographic. Less often they go too far the other way, with airbrushed blur, blown-out bloom and smeared gradients where seams or crisp reflections belong. Real cards keep surfaces quiet and slightly soft, and put their fine detail and shine in only a few places."
+}

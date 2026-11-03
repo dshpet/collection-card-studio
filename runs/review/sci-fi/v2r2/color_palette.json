@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: pure yellow arm on flat bright green, split by a neutral grey floor. The arm's shadow sides drop to grey-brown with little yellow left, and the card reads as only two hue families (shadow_chroma_kept 0.21, hue_families 2.22, both under the real range). B: green barrels on a honey wood floor with blue lenses. Its shadows also run dark but stay olive and brown, and it has three hue families inside the real range.",
+   "fix": "Let the yellow arm's shadows deepen into rich amber and warm brown, not grey. Add a small second accent colour and a slightly muted, less pure yellow."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the purple burst behind the jetpack is louder than the hero (chroma_background 0.28, above the real 0.217), while the tanks are grey and the card collapses to about two hue families. Pure red straps sit straight on pure violet. A: a deep crimson box, soft beige lining and gold medal on a cyan burst. Hue roles are clear, beige gives rest, and background chroma is in range, though hue count is slightly high.",
+   "fix": "Calm the purple background to a deeper, less saturated violet so the jetpack is the loudest thing on the card. Use a deeper crimson and warm leather straps."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: an amber-yellow body with orange shadows, pure navy panels and a pure red dish on flat bright cyan. Every part is a full-strength hue with nothing neutral but small grey joints. A: white fuselage and pale clouds on blue with soft blue shadows, a lot of near-neutral area. Its numbers are outside the range (shadow_chroma_kept 2.24, warm_share 0), but that comes from blue shadow on white, which the real lessons also show.",
+   "fix": "Make the satellite body a brushed pale metal with muted gold trim, keep one red accent on the dish, and soften the cyan background."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a pure fire-red keyboard body on saturated blue, with rainbow candy buttons as the only other colour. The body shadow falls to dark navy and loses red (shadow_chroma_kept 0.555, under the real range). There is no mid neutral beyond the white keys. A: many hues (7.05, slightly high) but they are believable local colours: straw thatch, brown wood, grey-white plaster, teal water, with neutral concrete resting the eye.",
+   "fix": "Make the keyboard a deeper brick red with dark red shadows and matte charcoal side panels. Reduce the buttons to one or two accent colours and quiet the blue background."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: a pure blue sphere on a pure hot-magenta field. Background chroma 0.238 is above range, hue_families 1.64 is below it, and warm_share 0.835 is above it. Two full-strength hues fight with no neutral, and the orange dots merge into the magenta in the lens. A: a white board and grey pole give a large neutral rest area, with one red frame and an orange rim on a soft cyan background.",
+   "fix": "Lower the pink background to a dusty, deeper rose, or use a calm blue. Make the rings neutral silver and keep the sphere as the single saturated colour."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the cabinet front is cream-peach with warm whites all over, and the wood desk washes to tan in the lens. This is the same cream shift the generated computers show in the lessons. B: the casing is a true grey-white with a cool periwinkle side plane, with cool grey keys against an orange background. It matches the real computer card in the lessons.",
+   "fix": "Make the cabinet a cool off-white plastic, with grey-blue shading on the side instead of peach, and neutral grey reels."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a teal car on flat yellow is essentially a two-hue card (hue_families 1.78, under range; warm_share 0.817, over range). Teal is applied over the whole body, with a single orange glow and little neutral. B: a pure red scarf on blue with a gold badge. The red is over range (subject 0.2165), but shadows stay a rich dark crimson and hue roles are clear: hero, background, one accent.",
+   "fix": "Add neutral chrome and cream interior areas with more presence, use a slightly muted teal paint with deep blue-green shadows, and quiet the yellow background."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: a mint phone with an orange handset on purple, with near-neutral lilac-white tiles (warm_share 0.113, a little low). B: a hot pink tray with pale blue ice on honey wood (hue_families 5.96, a little high). Each misses the range slightly, and each has clear hue roles and shadows that keep their colour. Colour gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a hot pink band slides into orange along the strap, with yellow icons on full cyan. Subject chroma 0.192 is over range, and pink, orange and yellow are all at full strength with no neutral. A: grey stone with natural lawn greens and dark trees. The stone is very low chroma (0.04), but local colours are believable and much of the card is neutral.",
+   "fix": "Make the band a single soft matte rose with a deeper rose in shadow, remove the pink-to-orange fade, and keep the icons a muted gold."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: nearly monochrome blue. Trim, window, door, sky and hills are all blue, and the shaded walls go blue too (warm_share 0.001, shadow_chroma_kept 1.61, over range), with only a tiny orange ball as a warm accent. A: warm window yellow, neon pink and orange signs against navy night, a planned warm/cool split with all fields in range.",
+   "fix": "Give the building warm stone or cream walls with neutral grey shading, and make the door and trim a contrasting colour such as red or wood brown so it stands apart from the blue sky."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: teal wall, teal floor and teal-tinted metal, so the whole card sits in one cool hue (warm_share 0.02, under range), with a small pink glow as the only other colour. The silver reads as blue-grey in the lens. B: orange wood, red ring, rope tan and sand against blue-teal water, a rich complementary mix with shadows going to dark teal-brown. Shadow chroma is only slightly low.",
+   "fix": "Separate the room from the capsule: a calmer deep slate wall, neutral warm-grey metal, and the magenta glow kept as the one strong accent."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the whole card is pulled warm (warm_share 0.839). The white counter turns peach in the lens, the same cream drift as the generated cards in the lessons, against one neon green liquid. A: more accents (hue_families 5.49, above range) from neon laces on blue, but the sole stays cool lavender-white, close to the true whites of the real cards. Background chroma is equally low on both, so this is a weak call.",
+   "fix": "Make the counter a true cool white with grey-lilac shadows, and let the green liquid drop to a slightly deeper natural green."
+  }
+ ],
+ "pattern": "Generated cards push each mass to a full-strength hue with little neutral in between: backgrounds as loud as or louder than the hero (purple, magenta, cyan), and heroes in one pure colour. Whites drift to cream or peach where real cards keep cool grey-white with blue-lilac shading. Hue roles collapse to two colours, or the object takes on the background's hue (all-blue dome, all-teal capsule), instead of believable local colours with one accent. Warm-lit cards drift further warm overall."
+}

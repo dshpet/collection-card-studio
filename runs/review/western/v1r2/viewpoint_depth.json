@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the jacket holds one three-quarter view from slightly above. Collar opening, pockets and both cuffs agree, and flat patches sit on the chest and pockets (0.116). B: the hat crown is near eye level, but the left brim shows its top face and the right brim swings to show its underside. The brim reads as one smooth rainbow with no settled plane, so two views meet in one object.",
+   "fix": "Show the hat from one slightly raised three-quarter view: the top of the brim visible all the way round, the far brim edge behind the crown, no twist showing the underside on one side only."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: this matches the real ship wheel in image 1, frontal with a mild floor curve, so I treat it as real. Rim and base are even flat patches (0.597). B: the table is seen from high up, with planks running hard to the corner, but the bottles stand almost side-on with little cap top showing. Bottle and table views disagree. Planar share 0.009 is below the real floor, though round bottles explain part of that.",
+   "fix": "Lower the camera so the table top is a shallower band with gentler plank lines, or show more of the top of each cap and shoulder so the bottles sit in the same view as the table."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the scarf is one soft frontal view, with the collar ring opening slightly toward the viewer and the tails hanging in the same plane. B: the coil is flat ellipses seen from well above, but the upper loop stands up nearly face-on, so the two parts do not share a tilt. No ground plane or contact anchors it, and planar share 0.0 is below the real floor.",
+   "fix": "Keep the whole rope at one tilt: draw the upper loop as an ellipse matching the coil below, resting on a flat surface with a soft contact shadow."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a steady raised view. Dock top, boat interior and water all sit at one angle, and even flat patches on the water and planks give 0.509. B: the wagon has forced convergence. The canvas hoop at the front swells toward the viewer and the cover narrows quickly to the rear, like a wide-angle lens. The rear wheel shrinks sharply, and the ground slopes up behind sharp hills with no blur or real separation.",
+   "fix": "Use a longer lens: keep the front and rear canvas hoops nearly the same size, make the front and rear wheels closer in size, and flatten the ground to one gentle angle."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "B: this is the same computer card shown as REAL in the lessons, with the straight desk edge and mild perspective. A: the seat top is seen from above, but the flap, strap and stirrup are drawn nearly flat to the viewer, and the fence rails run almost dead level. The saddle reads as pressed against the rail, not sitting over it.",
+   "fix": "Turn the saddle slightly so the seat, flap and stirrup share one three-quarter view, with the saddle wrapping over the top of the rail and the fence receding gently behind it."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the chest is a two-point three-quarter view from above. Front, side and open lid agree, and the sand ground holds one angle. B: the barrel top disc, curved hoops and floor plane all imply one raised view, with a straight horizon behind. Both are mild and consistent, with planar shares well inside the real range, so my vector gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the doors are flat-on with almost no depth. Both posts show the same left face strip, and the louvres and panels read as one even patch, so the object reads as a stage flat while the floor below is seen from above. B: the sneakers sit in a clean three-quarter raised view with a straight floor line, and both shoes share one angle.",
+   "fix": "Turn the doors slightly so the posts recede in true perspective: show the near post's side face, the top of the post caps and the thickness of the door edges, standing on a floor at the same angle."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cup rim is a shallow ellipse from near eye level, but the base rounds off much more deeply, and the table is a broad band with a hard edge behind. Rim and base imply different camera heights. B: the arch is frontal and simple, with a floor line and both feet on one plane. Its 0.01 planar share comes from foliage, not from a bad view.",
+   "fix": "Make the cup's rim and base curves match one slightly raised view: open the rim ellipse a little more, flatten the base curve, and have the cup sit flat on the table."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the boot opening is seen from above, but the foot and sole are a pure side profile with no ground, so the top and bottom of the object lean to different views. B: the cap board is a clean flat patch seen from above, and the band below curves to match. It reads as one view (0.593).",
+   "fix": "Rotate the boot a little toward the viewer so the toe recedes and a hint of the sole plane agrees with the view into the opening, and stand it on a soft ground shadow."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a steep top-down view. The cover and table are nearly the same facing colour, so ground and hero merge into one plane. Planar share 0.706 is above the real top, and real cards rarely use a view this high. B: a low camera on the sign with a building, fence and hills behind. It has clear depth layers and strong but coherent perspective. This is a close call, because the low angle is also pushed.",
+   "fix": "Lower the camera so the book lies at a gentler tilt, with the table receding behind it and clearly separated from the cover."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a tight crop and a strong low angle, with cars growing toward the viewer along the track. It is dramatic, but the track curve and the cars agree, and tight crops do occur on real cards such as the Ferris wheel. B: the wheels are drawn nearly round, as if side-on, while the boiler front also faces almost straight at the camera. Side and front cannot both be that open, so the train reads as two views joined together. The rails also slope more steeply than the body.",
+   "fix": "Choose one three-quarter view: narrow the wheels into ellipses, turn the boiler front partly away, and run the rails parallel under the wheels at a mild angle."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the cactus is one simple frontal view on a low mound of ground, and its 0.002 planar share simply reflects round forms. B: the cart box is almost dead side-on, but the awning swings to a three-quarter view from above with its top showing, and the paved floor is seen higher still. The awning, box and floor do not share one view.",
+   "fix": "Put the awning, cart box and pavement in the same slight three-quarter view: show the cart's end face, angle the box like the awning, and lower the floor tilt to match."
+  }
+ ],
+ "pattern": "Generated cards give themselves away by parts that do not share one camera. Top faces are seen from above while bodies stay side-on (saddle, cart, boot), and rims, wheels and fronts each open toward the viewer on their own (train). Perspective is also pushed: near parts swell and far parts shrink too fast (wagon front hoop), where real cards keep a mild, longer-lens view with one flat, straight ground plane. Generated scenes tend to show the whole hero with sharp, equally detailed layers behind it, rather than a tight crop over a simpler background."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A (towel): crisp rolled border with a clean rim; the terry field is speckle from the fabric grain, not drawn lines, and subject density of 0.079 is in range. B (calculator): a heavy dark contour around the case and screen, and thick double rings around keys and numerals. Its subject density of 0.202 is above the real range, but that comes from the digits and key gaps, and the real camera lesson card carries similar contour weight. Nothing here separates the two.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (oil lamp): thin, precise lines at the collar and foot, a chimney edge that goes faint on the glass, and clean starburst lines; subject density of 0.128 is in range. B (candelabra): grey smudges of halo around all three flames, and the metal stem and arms packed with parallel dark bands, so the whole height of the stem has equal edge weight and no focus. Subject density of 0.163 is just above the real range.",
+   "fix": "Keep the flames clean with no smoky glow ring around them. Give the gold stem one broad smooth highlight, keep the fine ridges only at the cups and the base, and let the shaft edge fade softly on its lit side."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (pumpkin): subject density of 0.038 is far below the real floor of 0.087. The ribs are nearly lost, the silhouette is a faint even line, and the only strong internal edges are the double bevels around the eyes and mouth. B (duck): a firm silhouette with crisper transitions at the bill, eye and spring base, placing the sharpest edges at the focus; 0.082 is just under the floor.",
+   "fix": "Give the pumpkin ribs thin, clear creases running from stem to base. Make the stem joint and the rim of the carved face the sharpest edges, with a single clean cut edge instead of a doubled bevel."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (fountain): basin rims, bowl flutes and paving have thin, precise lines with a density that falls off into the stripes; its outline value is close to the real floor. B (cat): a thick dark contour runs nearly unbroken around ears, head, tail and paws, plus heavy whisker and eye rings, while the body interior is hazy fur speckle. Outline darkness of -0.166 is far outside the real range of -0.054 to 0.097.",
+   "fix": "Let the cat's outer edge vary: crisp at the ears and face, soft and partly lost along the back and tail. Do not run a dark rim around the body, and draw thin, tapered whiskers."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (graduation cap): the board has a crisp corner line with varied weight, a thin tuck under the rim and fine tassel strands, so the sharpest edges sit around the board and tassel. B (witch hat): a long, even silhouette line with an almost blank cone and brim; the only internal edges are the band and a buckle ringed by a heavy double line. Its outline value of -0.126 is further below the real floor than A's -0.096.",
+   "fix": "Add a few thin fold creases to the cone and a crisp rolled edge along the brim. Vary the outer edge so it softens on the lit side, and draw the buckle with one thin rim, not a doubled ring."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A (lighthouse) is a real card from the lessons: a clean tower with sparse, thin block joints and open sky. B (house): every roof tile, window muntin, stone and moon crater has its own dark line. The roof eaves and door arch carry thick double contours and the moon has a firm drawn ring, so the edge map reads like a coloring-book page with no sharpest area.",
+   "fix": "Merge the roof tiles and wall stones into large smooth shapes with only a few thin joints. Keep sharp detail around the door and central window, and let the moon's edge be soft with no ring line."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (cauldron): a closed, even contour around the bowl and legs, with thick looped handles and hard rings on every bubble; the fire is a faint smudge under the bowl and the cast shadow has a drawn rim. B (boxing gloves): broad soft forms with lost edges along the lit sides, and tight thin creases concentrated at the thumb. Its density of 0.037 is low and the wall stripes outrank the hero, so this call is weak.",
+   "fix": "Let the cauldron's outer edge fade on the lit side and keep it crisp only at the rim and handles. Remove the hard line around the floor shadow and draw fewer bubbles, with thin edges."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A (lion) is a real card from the anchor sheet: flowing mane lines, thin marble veins and a dense background. B (bag): crisp handles, a neat stitched patch and fine canvas grain, with subject density of 0.094 and background density of 0.019 both in range. The rolled towel's hatching is busy, but it is pattern, not a boundary fault.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (scarf): a firm silhouette with soft folds and a sharp badge at the centre, so the edge hierarchy peaks at the focus. Density of 0.053 is low. B (broom): each bristle clump is bounded by a thick dark groove of the same weight, the binding is a heavy stack of lines, and the handle is a long parallel double contour, with background density of 0.004 at the very floor of the range.",
+   "fix": "Draw the bristles as fine thin strands that blend together toward the tips, with only a few deeper gaps. Thin the handle's edges and let its lit side soften."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (coffin): a heavy, evenly dark contour around the lid and box, with a parallel double line around the lid panel. The cast shadow on the grass ends in a hard drawn line, and outline darkness of -0.078 is below the real floor of -0.056. B (stone table): thin irregular cracks, varied edge strength along the slab, and shadows without a drawn rim, plus dense foliage that sits in the real range.",
+   "fix": "Thin the coffin's outer contour and vary it, with a crisp lid corner and softer lower sides. Make the panel inset a single fine seam, and give the grass shadow a soft edge."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (crystal ball): a thick dark ring around the sphere and a blank interior with only soft smoke texture, so all the edge weight sits on the rim; the curled stand is heavily contoured. Subject density of 0.051 is low. B (cocktail): thin, precise glass walls, crisp ice cube facets and a fine umbrella, with detail stacked at the focus. Its 0.074 is also below the floor, so the gap is modest.",
+   "fix": "Make the sphere's rim a thin refraction edge that fades away on one side. Add a few crisp reflections inside the ball, and thin the lines on the stand."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (sneakers): dense but orderly panel seams, a crisp mesh and clean sole lines, at 0.227, the top of the real range. B (tombstone): the stone surface is fine speckle and scratchy noise, and the crack and cross are thick, jagged black grooves. No lesson's real card has this gritty surface edge texture; it reads as photo stone and not smooth painted forms.",
+   "fix": "Paint the stone as smooth, simple planes with no gritty speckle. Draw the crack as one thin clean line, and give the cross cut-out a single crisp edge."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through uniform edges rather than single flaws. The silhouette is closed at one even weight with few lost edges, where real cards let the contour fade on the lit side, as on the real glove's left edge. Bevels and insets are doubled into parallel lines, and tiles, bristles and keys all get equal outlines, so edge strength does not peak at a focus. Interiors are either blank or filled with fine noise. Glows leave smudges around light sources, and cast shadows end in hard drawn rims. Measured outliers are too few and too varied to decide on their own: real-looking cards also fall outside the ranges, so these calls rest on the edge map first. p01 and p08 show no edge reason to choose, and p07, p09 and p11 are weak calls."
+}

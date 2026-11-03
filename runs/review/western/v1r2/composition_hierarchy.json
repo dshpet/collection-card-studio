@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the jacket sits at a three-quarter angle with the arms spread wide and the sash running diagonally across it, filling the middle of the card (box 0.84 x 0.65). B: the hat is whole, level and wide (box height 0.48, below the real range). It sits slightly high, with an empty band of rays under it, about 30% of the card. This matches the lessons, where generated heroes are held complete and neatly inside the frame. The hat is still named instantly, so the signal is weak.",
+   "fix": "Draw the hat larger and closer to the camera, tipped about 15 degrees with the brim rising toward the viewer, so it fills the card top to bottom and the brim nearly touches the side edges."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the frontal wheel and stand match the real ship wheel in image 1 in size and position (0.79 x 0.75), so I treat it as real. B: five bottles stand as a loose cluster in the middle of the table, with a wide margin (0.135, above the real range) and a narrow box (0.64). The table corner and the dark tent opening take up much of the card. At thumbnail the bottles are small and the first read is a group, not one hero.",
+   "fix": "Draw one tight group of three bottles, much larger and closer to the camera, filling the card from just below the top edge to the bottom. Crop the table so only a strip of it shows, with no tent opening behind."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the scarf is frontal, mirror-symmetric and dead center, with the badge exactly on the middle axis, floating on rings that echo that center. B: the rope coil sits low left and the loop swings up to the top right, a real diagonal like the tilted real baseball glove. Both have measurements in range, and both read at once. The only reason to prefer B is that A is the more static placement.",
+   "fix": "Turn the scarf about 20 degrees and draw it closer, with one tail swinging out toward a lower corner, so it is no longer a perfect mirror image down the card's center."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the dock is cut by the top and left edges (margin 0) and the boat runs diagonally across the card, cropped like the real ferris wheel. The dock and lily pads take some attention, but the boat reads first. B: the wagon is complete, with every wheel and the tongue inside the frame, and a tidy gap all round on a level road. Real cards crop or push in; lesson generated cards keep the whole object on a small stage.",
+   "fix": "Push in on the wagon so the back wheel and the rear of the canvas top run off the right edge. Angle it steeply toward the viewer so the front wheel is the largest thing on the card."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "B: this is the real computer card from the lessons, with the same placement, the desk cut by the edges and the cable running off to the right, so B is real. A: the saddle is complete in the middle of the card (area 0.29), hung on a fence that is cropped by the left and right edges. The fence posts and rails form a large second shape around it. The composition alone would not have flagged it strongly; the call leans on B being a known real card, and A could also be real.",
+   "fix": "Draw the saddle larger, filling most of the card, with only a short piece of one fence rail showing behind it and no post at the left edge."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the chest is at a three-quarter angle and fills the card (0.84 x 0.74, margin 0.06), with the lid swinging up to the top right and gold at the center. The bubbles and shell are small and stay secondary. B: the barrel is frontal, upright and centered with wide clear space at the sides (margin 0.14, above the real range; box width 0.67), on a flat table with no diagonal. It is well named but static and held away from the edges, which is the way the lessons run.",
+   "fix": "Draw the barrel much larger and turned to a three-quarter view, tipped slightly, so its belly comes within a few pixels of the side edges and the top of the lid is close to the top edge."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the saloon doors are frontal, centered and symmetric, with a wide margin (0.13, above the real range). Real frontal heroes such as the ship wheel and podium do the same, so this is acceptable. B: the two sneakers sit low on the card, with the upper third an empty orange wall and a short box height (0.49, below the real range). At thumbnail the hero is a small pair in the lower half. It is the weaker framing, but both cards have an out-of-range number.",
+   "fix": "Draw the sneakers much larger and closer to the camera, one in front of the other, so the front toe nearly reaches the bottom corner and the pair fills the card from top to bottom, with only a thin strip of wall above."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the mug is a level side view, wide and short (box height 0.49, below the real range), with a thick table band and a striped wall above it. The tiny red dot in the middle of the mug body draws the eye first at thumbnail. B: the rose arch is complete and centered but tall and wide, nearly filling the card (0.81 x 0.87). Its open middle shows the background, but the arch shape is named at once. The mug is the flatter, less filled framing.",
+   "fix": "Draw the mug larger and from slightly above, angled so the rim opening shows and the handle swings toward the viewer, filling the card top to bottom. Remove the red dot from the side of the mug."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the boot is whole, slightly diagonal, centered, and fills the card well (0.76 x 0.77). B: the cap is whole, tilted and centered, wide and shorter (0.81 x 0.51), with the tassel hanging at right. Both are single heroes on a ring background, both are named at once, and neither has a competing shape. The cap's short box comes from the object's flat shape, so composition gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the book is a single hero, tilted across the card and nearly filling it (area 0.53, above the real range), with a little of it close to the edges. It reads at once. B: the sign is pushed to the right as a tall, narrow stack (box width 0.46, below the real range), while the lit motel on the left takes up nearly half the card. The bright yellow windows compete with the sign, so the thumbnail reads as a scene split into two parts.",
+   "fix": "Draw the sign as the one hero, large and centered, filling most of the card. Reduce the motel to a dark, simple shape low behind it, with no lit windows."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the track sweeps out of the card on the left, right and bottom edges (box width 1.0, margin 0), and the cars curve in a big arc with the nearest car largest. This is a bold crop like the real ferris wheel and lighthouse. B: the locomotive is a complete side-on object held inside the frame on a level track, with gaps on all sides. It is clear and clean, but it is the whole-object-on-a-stage framing that lesson generated cards use.",
+   "fix": "Bring the camera down near the rails at the front of the locomotive, so the red cowcatcher and smokestack loom large and the cab runs off the left edge of the card."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cactus is an upright, frontal, symmetric shape in the center, with the narrowest box (0.60, below the real range), wide empty sky on each side, and a flat sand strip. It is named instantly but static. B: the cart fills the card (0.81 x 0.87), with the awning close to the top edge and the three-quarter angle giving depth. It is busier, but it uses the card the way the real cards do.",
+   "fix": "Draw the cactus bigger and closer, turned slightly and leaning, with the arms spreading almost to the side edges and the sand base cropped by the bottom of the card."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away by keeping the whole object safely inside the frame. The hero sits complete on a small stage with even gaps all round. Real cards push in, crop the hero or its support on an edge, and use a stronger tilt or diagonal. When generated cards do go wider, they drift into two extremes: a static, centered, upright hero with wide margins, or a hero that shares the card with a scene element or props that compete for the first read. These signals are moderate. Most of the calls here are confidence 2 or 3, and p02 A and p05 B were settled by recognising them as known real cards rather than by composition alone."
+}

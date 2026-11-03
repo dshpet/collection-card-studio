@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the hearse body is one jet-black mass against pale road and sky, with hard white trim, grille and wheels cutting straight into it. The clouds clip to white, and the gap of -0.271 is outside the real range. B: the boat and dock stay in mid values with gentle steps, a soft dark hull underside and only small dark accents.",
+   "fix": "Lighten the car body to a soft charcoal with broad gradual sheen, keep pure black only under the car and in the wheel arches, and dim the chrome trim and clouds so nothing jumps to white."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the beach ball has large, simple light and mid panels with a soft cast shadow. B: the pumpkin is a single mid mass with dark carved holes, a dark handle and some streaky wood. Both have clear groups and in-range numbers, with A at the top of the lightness range. Neither has a value tell.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a high-key map with white paper in small torn patches around the grey land shapes, a hard black lens handle and a hard rim on the magnifier, so the light group is fragmented. B: a low-key dark room with one big pale cap crown, a dark band and brim, and strong grouped light and dark. By eye B matches the cap in the real sheet, though its 0.5 lightness is below the quoted range. The pixel check was not run.",
+   "fix": "Group the map into one calm light shape with soft fold shading, reduce the white flecks along the coastlines, and soften the black handle to a dark grey with a broad sheen."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the chest is mid-dark on a mid background, with many small hard accents such as white hoop rims, rivet glints and black contact lines; rms 0.113 is just under the real range. B: the tray has a broad mid-grey body on a light field, with bright frost speckle and a white glow behind the top cube. It is also busy, so the call is weak.",
+   "fix": "Drop the white rims on the metal bands and rivets, shade each band as one soft dark shape, and add a broader light-to-dark change across the chest."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cover is one flat mid value, the same as much of the streaky wood, so the hero barely separates by value and relies on hue. White-outlined stickers and a broken wood pattern scatter the lights. B: the dark purple cover is a clear dark mass on a light table, with light corners and a clean three-step read.",
+   "fix": "Darken the book cover clearly against a calmer, paler table, remove the dark streaks in the wood, and let the cast shadow be one soft shape."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: dark purple field with a glow ring behind the flask, thin white rim lines around the glass and a gap of 0.168 above the real range; mean 0.573 is just under it. B: the bottle is a calm mid mass with gentle internal steps on a bright ray field. Its 0.815 mean is slightly high, but its groups are simple.",
+   "fix": "Lower the glow behind the flask, replace the hard white outline on the glass with a few soft reflections, and let the rays fade evenly instead of forming a halo."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the floor clips to a white sheet, a hard value seam runs across the background, and the shoes break into many hard black and white bits at the laces, mesh and sole; mean 0.762 is above range. A: the skull has large smooth light planes, soft roll-off into mid values and dark sockets as its only strong accents.",
+   "fix": "Bring the floor down to a warm pale mid tone with soft light falloff, blend the wall into it, and simplify the shoes into broad dark upper and light sole shapes with fewer sharp highlights."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the pink band and cyan field share almost the same value, so the lens shows just two nearby greys and one dark patch inside the ring. Separation is hue only, and rms 0.068 is far under range. B: the dark bat on bright yellow is a strong clean silhouette, like the real dark camera on yellow, though its -0.381 gap is beyond range.",
+   "fix": "Darken the inner wall of the band and the side away from the light, so the bracelet reads as a darker shape against a brighter blue ring background."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the background clips to near-white with a soft glow hugging the whole whistle, and the flame pattern dissolves in it. Mean 0.868 is far above the real range, matching the hero-hugging halo on the generated lesson gloves. B: the pink field and diamonds hold a steady mid value with a white web on top. It is flat at rms 0.058 but has no glow or clipping.",
+   "fix": "Make the background a saturated mid-yellow with a clearly visible pattern, remove the pale glow around the whistle, and keep the brightest light small and away from the outline."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the topiary breaks into dense black and white leaf speckle with no large light or dark group, and there is a hard white band above a dark hedge behind it. A: the tree is one dark mass on two calm mid groups, with the moon as the sole light accent, though its -0.286 gap is out of range.",
+   "fix": "Shade each topiary tier as one soft round form, light on top and dark below, with the leaves staying close in value; remove the bright strip behind the hedge."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the flower mound is a cluster of small hard spots, with many white highlights on black gaps and bright hard glints along the stones, on a flat mid field. A: the balloons are broad soft forms with a single dark crescent each, sitting over clean large mid and light cloud groups.",
+   "fix": "Group the flowers into one rounded mass, lit on top and darker at the base, reduce the highlight on each petal and stone, and soften the dark gaps between the leaves."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a dark blue door fills the card, with ivy broken into busy light and dark flecks, black patches under the top frame and clipped white at the right edge. Corners are lighter than the centre (vignette -0.07, at the real limit), and the 0.552 mean is just under range. B: the castle has calm mid walls, a light sky and dark roofs, in clear large groups.",
+   "fix": "Lift the door to a brighter blue with soft panel shading, calm the ivy into grouped mid-green clumps, and remove the black under the frame and the white edge patch."
+  }
+ ],
+ "pattern": "Generated cards break their value groups into many small hard accents: white rims, black contact gaps and speckled texture, as on the p01 trim, p10 leaves and p12 ivy. Real cards hold a few big soft masses with one or two dark accents. Generated cards also put a glow or clipped light field around the hero (p09), or leave the hero separated by hue alone (p08). Calls were made from reading the images and the numbers; many are low confidence, and the pixel comparison of the p03 cap against the anchor was not approved, so that match is by eye."
+}

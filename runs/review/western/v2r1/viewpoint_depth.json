@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the whole saloon sits uncropped in the card, with one near-frontal facade and a thin left side wall. The porch deck is seen from above while the cornice is seen from below, so the building stretches like a wide-angle shot. B: the motel is cropped at the left edge and the sign stands in front, giving two clear layers from a low camera. The sign and the building agree on one view. A's normal map has lots of even patches but the verticals lean inward. This is a weak call.",
+   "fix": "Show the saloon from a calm three-quarter view with a mild lens. Keep the verticals nearly upright and let the building run off one card edge instead of fitting it whole."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cart rim's top face is visible, so the camera is above it, yet the sand line behind sits at axle height. The ground and the hero read as slightly different camera heights. B: the scroll lies on one tilted blue tabletop, and its edge and the scroll axis agree on one plane. Normals show even green on the table and a clean cylinder. A weak call.",
+   "fix": "Lower the camera so the cart rim is seen edge-on, or raise the sand line so the ground rises behind the cart to match a view from above."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the ring box is turned three-quarter and seen from above. The base top, lid inside and side walls all share one view, with clear overlap of coin, cushion and lid. B: the star is almost dead head-on with no side wall visible, only tilted facets. It has no ground and no sense of being turned. The real cards with floating objects usually turn them, as the spyglass and fan do.",
+   "fix": "Turn the star a little to one side and tilt it back so its thick side edge shows along the bottom and right."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the cap is seen close to side-on, with the brim as a low flat curve, but the floor planks are seen from high up and converge hard across the card. The wall corner adds a third layer. The hero and the ground do not share one camera height, and the cap seems to lie on the floor rather than stand on it. A: the mortarboard top and the skull cap below share one mild high view, on a flat pattern with no ground to contradict it.",
+   "fix": "Lower the camera to near floor level so the planks are strongly foreshortened and run gently. Keep the wall simple and far back, and tilt the cap to show a bit more of its top, matching the floor angle."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the rotor faces the viewer head-on while the tail vane runs out sideways in the same flat plane. On a real windmill the tail is perpendicular to the wheel, so these are two different views on one object. The tower below is seen from a low three-quarter angle. A: the door is a calm one-point front view, cropped by the card, and the jambs recede evenly on both sides. Its planar_share of 0.012 comes from the ivy normals, not the view.",
+   "fix": "Turn the wheel three-quarter so its circle becomes an ellipse, and draw the tail vane pointing back behind the wheel, foreshortened, in the same view as the tower."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the awning top and counter top are both seen from above, implying a high camera, but the floor only fills the bottom quarter and the paving runs at a shallow angle. The hero is seen higher than the ground it stands on. B: the twig ball sits on sand with a low dune line and a shadow that lies on the ground. A sphere offers little to contradict the view, and planar_share of 0.001 only reflects the round twigs.",
+   "fix": "Lower the camera so the awning top is barely visible and the counter top is a thin strip, or raise the floor line behind the cart so the paving shows at the same high angle."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the horseshoe floats with a slight tilt, showing its bottom rim and both inner walls. B: the neck pillow floats turned three-quarter with its side seam running around the right. Both are single floating objects on a flat pattern, with no ground and one consistent view. Normals are smooth on B because the object is inflated, not because of the camera.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the rose arch is front-on with almost no side depth. The posts show no receding faces, and the pink floor is a plain band. Depth reads only through the overlap of leaves. B: the piano is in a mild three-quarter view, with the keyboard shelf, lid and right side all in one view, and it stands on a clear floor with a wall line behind. A weak call, because frontal views also occur on real cards.",
+   "fix": "Turn the arch slightly so one post is nearer and larger than the other, and show the arch's depth on the inner side."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the column is close and wide-angle. The top of the capital slab is visible, and so is the top of the plinth, while the room's wall lines run steeply up to the right and the plaque tilts at its own angle. It holds foreground plaque, hero and a room with a corner, which is too many planes for the crop. A: the trophy rim, base and round table ellipses open gradually downward in one mild view, on a soft plain backdrop.",
+   "fix": "Move the camera back and use a mild lens, with the slab seen barely or from below. Replace the room corner with one plain back wall and set the plaque flat to the same view as the column."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the sneakers are seen from fairly high, both at the same turn, with even rainbow normals across the uppers and a floor line behind. This is the raised camera that generated lesson cards tend to take. A: the teapot is a calm near-side view with thin rim and base ellipses, on a plank table whose front edge is visible, similar to the real computer desk. A weak call.",
+   "fix": "Lower the camera so the shoes are seen more from the side, with only a thin strip of top showing, and vary the turn of the second shoe slightly."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the collar loop is seen from above with its inside back wall showing, but the medal and the tails are dead frontal and hang flat, so two views meet at the knot. A: the harmonica is turned and tilted, with its top, front and end caps in one view, and its holes taper mildly toward the far end.",
+   "fix": "Turn the whole scarf a little to one side, so the medal becomes a slight oval and the tails recede along with the collar."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the card fan faces the viewer nearly flat and stands on its corners, with no thickness showing, while the table behind is seen from above with a low wall line. The cards read as pasted up against the ground. Its planar_share of 0.736 is above the real maximum of 0.667. B: the ball fills the card at close range and the sand sits at one high angle around it, with the shadow on the sand.",
+   "fix": "Tilt the fan back so the card faces foreshorten toward the top and the stack's thickness shows along the lower edge, resting on the table at the same angle as the planks."
+  }
+ ],
+ "pattern": "Generated cards are mainly betrayed by a camera that does not agree across the card: a hero seen near side-on or head-on over ground seen from high up, or parts of one object drawn from two views. The second tell is a fuller scene than the crop can carry, with room corners, a third depth layer and steep wide-angle lines, where real cards keep one mild view and a simpler ground. On these pairs the signal was weak: most calls are confidence 2, and planar_share did not separate the cards."
+}

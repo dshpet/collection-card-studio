@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the neon sign stands right of center, and a motel wing cropped by the left edge sits beside it. Its 0.243 area is in range, and the off-center, cropped staging matches the real fan and podium cards. B: the saloon is shown whole and front-on, filling the card from near the top edge to the foreground. Its 0.678 area is far above the real maximum of 0.442, and only thin slivers of sky remain at the top corners.",
+   "fix": "Pull the camera back and turn the saloon to a three-quarter angle, so it fills about two-thirds of the card with clear sky above and on both sides."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the horseshoe is upright and centered, with even space all round. B: the neck pillow is tilted, larger and close to the sides, at 0.418 area. Both sit in or at the edge of the real range, read instantly at thumbnail size, and have clean concentric backgrounds with nothing competing.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the teapot sits centered and large, filling most of the card, with the table as a simple base. B: the sneakers are a low, wide group in the lower two-thirds under a large empty orange band. Their 0.487 box height is below the real minimum of 0.551, so at thumbnail size they look small and bottom-heavy.",
+   "fix": "Move the camera closer and raise the sneakers toward the middle of the card, so the pair fills more of its height and the empty orange wall above shrinks."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the windmill is one tall object running almost the full card height. Its 0.958 box height is slightly over range, with the blades close to the top edge, but it is named instantly. B: the wreath is only 0.081 area, well below the real minimum of 0.237. The blue door and the ivy across the top and sides take up the card, so at thumbnail size the door reads first and the ivy competes with the wreath.",
+   "fix": "Move in on the wreath until it fills most of the card, with just a little blue door behind it, and remove the ivy around the frame."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the tumbleweed ball sits centered on sand, with a clear margin all round. B: the popcorn cart is shown whole in three-quarter view, with its awning near the top and a box height of 0.869, slightly over range. Both are one clear hero on a simple diamond background, and both read at thumbnail size.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the open book is cropped by both the left and right edges, with a box width of 1.0 against a real maximum of 0.955. A cropped plant pot in the top right, the railing and the hedge all compete with it, so the thumbnail reads as a busy table scene. B: the street lamp is a single vertical hero, cropped only at the base like the real lighthouse, on a clean ray background with open space on both sides.",
+   "fix": "Pull back so the whole book fits inside the card with space on all sides, remove the plant pot, and blur the railing and hedge into a simple background."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the red planter sits among many elements: fence, side bushes, paving, a blue watering can and a trowel. The blue can pulls the eye from the plants, so the thumbnail takes longer to name. This matches the extra props seen on the generated lighthouses in the lessons. B: the backpack is very large at 0.507 area, over the real maximum of 0.442, but it is one clear hero on a plain ground and reads instantly.",
+   "fix": "Remove the watering can and trowel from the shelf, drop the side bushes, and simplify the fence behind so the planter is the only thing that stands out."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the mine cart is centered and compact on sand, with an in-range box and a clear margin. B: the scroll is a thin diagonal shape with a box height of 0.463, below the real minimum of 0.522. It sits on a bright glossy blue slab whose hard edge cuts across the lower card and competes with the hero.",
+   "fix": "Make the scroll bigger in the card and replace the glossy blue slab with a simple soft floor or a plain ray background."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the red scarf is upright and centered, with its badge at the middle and a clean spiral behind it. B: the harmonica lies on a diagonal across the card, like the real spyglass; its low 0.402 height comes from the object's slim shape. Both are single heroes on patterned backgrounds and both read at once.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the fan of playing cards sits centered, with room around it, a clear table line and a patterned wall. B: the beach ball is pushed close to the camera, at 0.493 area, just over the real maximum of 0.475. It leaves little space around it, and the sand fills the whole background with no horizon or simple backdrop. It still reads instantly.",
+   "fix": "Make the ball slightly smaller, with more space around it, and add a simple horizon or sky behind it so it sits clear of the sand."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the gold star is centered with a small tilt, with its points well inside the card on a ray background. B: the open red box with its coin is centered, in three-quarter view, on a ray background. Both are in range, with similar margins, one clear hero and nothing competing.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the piano is shown in three-quarter view on a simple floor and striped wall, at 0.452 area, slightly over range. B: the rose arch is centered and full width, at a box width of 0.9, slightly over range, with an open middle. Each is only marginally out of range, each reads at once, and neither has competing elements.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards tend to give themselves away by framing rather than object design. The evidence is modest, since no pair scored above confidence 3. The hero may be pushed to an extreme of scale: it nearly fills the card (saloon, backpack, beach ball), or it shrinks into a low band or inside its setting (sneakers, wreath on door). Scenes also pick up extra props and busy surroundings that compete for the first read at thumbnail size (planter tools, plant pot beside the book, ivy around the door, glossy slab under the scroll). Real cards keep one clear hero at a moderate scale on a simple backdrop. When they crop, the crop is deliberate and affects only the hero's base or a backdrop element."
+}

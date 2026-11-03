@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the three sign boards keep straight runs, though the top board's corners are fairly generous; posts stay slim. B: the saloon keeps straight posts, thin rails and flat siding, with a dense part count. Neither card has swollen forms or a broken structure, and all the numbers sit inside the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the horseshoe has a flat face and an even band, and its heel ends are knobby but read as true to the object. B: the neck pillow is overfilled, so its opening shrinks to a small teardrop and the two ends almost touch at the bottom; the outline is one fat blob. The material excuses some of the softness, so this is a weak call.",
+   "fix": "Draw a travel neck pillow as an open U with a wide centre gap and two clearly separated ends, and make the tube slimmer and less inflated."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the teapot has a true tapered body, a slim handle and a narrow spout, and all parts relate correctly. B: the sneakers have swollen, oversized white soles and rope-thick laces, and the upper is puffy with an inflated collar, giving toy proportions.",
+   "fix": "Draw the running shoes with a slimmer sole at realistic height, thin flat laces and a lower, tighter collar and upper."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the windmill tower is built from very thick timbers and the blades are broad, so a thin lattice structure closes into a heavy mass in the silhouette. B: the door keeps flat panels, straight frames and crisp corners. The wreath-only mask explains B's out-of-range numbers, so they do not count against it.",
+   "fix": "Draw the windmill tower with slim, thin struts and open gaps between them, and use narrower blades."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the tumbleweed is made of thick, rope-like driftwood limbs of uneven weight, where thin dry twigs are expected; the outline is lumpy and its corner rate of 9.8 is above the real range. B: the popcorn cart has slim posts, a flat counter, straight runs and all expected parts in the right relation.",
+   "fix": "Draw the tumbleweed from many thin, dry, wiry twigs of similar thickness, with small open gaps and a light, airy outline."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the open book has a believable page block and a thin cover, with straight edges. B: the street lamp keeps a thin curved arm and scroll, though the lantern is plump. Both are simplified but plausible, and the numbers are all in range.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the raised planter has square legs, flat boards, tight corners and straight rails. B: the backpack body is swollen with soft rounded corners, the straps are thick, and a large orange shape behind the right side reads as an unclear shoulder strap, so the part relation is muddled.",
+   "fix": "Draw the backpack with flatter panels and firmer corners, slimmer straps, and a clearly thin shoulder strap, not a wide flap behind the bag."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the mine cart has flat tapered sides, a crisp rim and tight corners, with chunky wheels. B: the scroll has a thick, soft paper roll but a clean curl and thin ribbon tails. Each is true enough to its object, so the shape gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the neckerchief is swollen into a thick padded tube at the collar and in both fat tails, with no thin cloth edge. B: the harmonica has a flat comb, straight long edges and square holes at true proportion. B's corner rate of 0.0 and solidity of 0.978 sit outside the real range, but that comes from a compact bar shape and not from a form flaw.",
+   "fix": "Draw the scarf as thin flat cloth with sharp folds, narrow edges and slim, tapering tails, not padded tubes."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the playing cards are flat with even, rounded card corners, which is true to the object. B: the beach ball is a clean sphere with slight seam bumps on the contour. Both cards have measures out of range, which their simple closed shapes explain.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the sheriff star has crisp points, flat faceted planes and straight ridges. Its solidity of 0.593 is just below the real range only because a star is spiky. B: the ring box lid and base are swollen into soft pillows with large blob corners and no straight runs, where a box should have flat faces and tight bevels.",
+   "fix": "Draw the box with flat lid and base faces, straight edges and tight small bevels at the corners."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the upright piano has flat panels, a straight top and tight corners, with thin pedals and a thin music rest. B: the rose arch buries its structure under foliage, so the wooden posts and grey lattice band barely read and do not join clearly. Its corner and thin-part numbers exceed the real range, though the leaves cause most of that.",
+   "fix": "Draw a clear arch frame with slim visible posts and one thin lattice curve, with fewer roses and leaves so the structure stays readable."
+  }
+ ],
+ "pattern": "Generated cards give themselves away by overfilling form. Objects that should be thin or flat are inflated: soles, scarves, boxes and bag panels swell, openings shrink, corners turn into soft blobs, and straps and laces thicken. A second tell is extra or muddled parts, where the structure is buried under added detail and joins do not read clearly. Each pair shows two different objects, so these calls rest on how true each card is to its own object, and confidence stays moderate at best."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the orange glass is the first read, with the straw and paper umbrella fanning out to top left and top right. It stands a little tall at 0.89, just over the real 0.856. B: the gold oval mirror is centered and upright on a stone ledge, with clear side space. Both name their object at once at thumbnail size, and nothing else competes. The small height overrun on A is not enough to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the rocking horse is a full side view on the usual two-band setup of striped wall over floor, and it clears every edge. B: the binoculars are seen from high above, with plank floor filling the whole card and no wall or horizon. They stretch corner to corner at 0.907 width, and the yellow planks are busier than any real backdrop on the sheet. This is a weak lean, because the hero is still clear at thumbnail size.",
+   "fix": "Lower the camera to a three-quarter view. Stand the binoculars on a floor strip in the lower third with a plain wall or soft sunburst behind, and keep clear space around them."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the spider is centered and faces the viewer, with legs spread evenly toward the sides. B: the purple fan is tilted, with its pivot at lower right and its sweep toward the upper right. Both sit on the same soft wave backdrop, stay within real scale and margins, and read instantly with no competing element.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the pool bar is a scene crop, with the thatch roof and bar running off the top and right edges, like the lessons' real lighthouse, which is cut by the card edge. Its focus does spread across fruit, drinks and stools. B: the cabin is a complete object shown whole on its stone footing, framed by trees left and right. Its area of 0.493 is over the real maximum of 0.442. In the lessons, the generated cards are the ones that keep the whole object intact and neatly framed.",
+   "fix": "Move in closer and let the cabin's right side and base run off the card edge. Remove the framing trees, and use a simpler soft background."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the gate is dead frontal and mirror-symmetrical, and the pillars nearly touch both sides at 0.942 width. The bright moon at top right and two glowing lamps pull the eye away, and the thin dark bars go weak against the purple at thumbnail size. B: the same pool bar as p04, an off-center crop running off the top and right edges, with the drinks as the bright focal point.",
+   "fix": "Turn the gate to a slight three-quarter angle and draw thicker bars. Remove the moon and graveyard details, and use a plain soft purple backdrop so the gate is the only bright shape."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the spotlight hangs from a truss cut by the top edge, turned on a diagonal, with its beam running off the left edge, and it reads as one dark shape with three bright lenses. B: the gas pump is upright and centered and shown whole on a slab. It is narrow at 0.505, under the real minimum of 0.558. The desert mesas and horizon sit on both sides at its mid-height and take attention from a slim hero.",
+   "fix": "Make the pump larger so it fills most of the card width and turn it to a three-quarter view. Replace the detailed mesas with a soft sunburst or plain warm gradient."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the candy corn is a single simple cone, centered and whole, with a margin of 0.142, above the real maximum of 0.098. That leaves more open space than real cards, and repeated candy shapes on the wall echo the hero. B: the fruit plate is wider at 0.826 and busier, with watermelon as the clear first read. Its margin is in range, though the wood-only backdrop is also uncommon. This is a weak lean, resting mostly on the margin.",
+   "fix": "Enlarge the candy corn so it fills more of the card and sits closer to the edges. Replace the wall of little candy shapes with a plain soft pattern."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the moon is a round disc set dead center on the rays, with a glowing rim. The margin of 0.121 is just over the real maximum of 0.116, and the static, ring-clear placement and halo match the lesson's generated glove. B: the bugle runs on a diagonal from upper left to right, with tassels hanging below. It has an off-center silhouette and thin forms, and its area of 0.171 is below real, but the placement is livelier and closer to real framing.",
+   "fix": "Enlarge the moon so its edge nearly touches the card sides, or let it be slightly cut by one edge. Remove the glowing rim and shift it slightly off center."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the red armchair is one solid mass slightly left of center, with clear wall and floor around it and an instant read. B: the orange locker has its door swung open and is filled with books, a basketball and shoes. Those props become small second focal points inside the hero. Its area of 0.496 is over the real maximum of 0.475. The lessons' generated cards also add props.",
+   "fix": "Close the locker door or show only one item inside, and make the locker a simple solid shape. Leave more clear wall around it."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: this is the lamp from the real reference sheet, a single dark post cut by the bottom edge on clean rays, with an instant read. B: the feeder hangs in front of a thick tree trunk that runs the full card height from top to bottom edge. Rope, leaves, buildings and a park path fill the rest, so the background competes with the hero and only color and scale keep it separate.",
+   "fix": "Remove the trunk, buildings and path. Hang the feeder from a short rope against a plain soft sky or sunburst, so it is the only object on the card."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the pair of sneakers sits low and wide at 0.487 height, below the real minimum of 0.551, leaving the upper part of the orange wall empty. B: the candle is centered and whole on a table band, with a margin of 0.127, above the real maximum of 0.108. Each misses the real range in the opposite direction, and both read instantly, so framing gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the lantern is tilted and floats on lime concentric rings, slim at 0.574 width, with its glowing flame at the center of the rings. B: the blue neck pillow is a large tilted U on pink rings, with a clear margin. Both are centered, single-object cards in the real ranges with no competing element. The pillow is a little slower to name but still has a clean silhouette.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards tend to show the whole object, tidily centered and clear of every edge, often with extra framing: scenery on both sides, props, or a glow. Real cards more often commit to a crop or an off-center diagonal, let the hero run close to or off the edge, and keep one simple backdrop so nothing competes. Measured extremes on the generated side are oversized area or margins wider than real, and scenery such as moons, mesas, trees and buildings pulling focus. Several pairs show no framing difference at all, so this is a moderate signal."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the saloon front is lit almost head-on, with the same warm mid-tone across wall, posts and balcony, and no cooler shadow side. The windows glow in full daylight, and light_bias 0.17 sits just under the real range. B: night light has a clear source. The neon sign and windows glow against dark surroundings, and the sign board's thick side falls into shadow. The difference is modest.",
+   "fix": "Light the saloon from the upper left. Keep the left-facing planes bright and turn the right side wall and the undersides of the balconies into a cooler, darker shadow. Do not make the windows glow in daylight."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: in the lens the cart's front face is a nearly even warm brown from side to side. The form barely turns, and the only strong dark is the long shadow on the sand to the left. B: the scroll turns smoothly along its roll, its open end has a cooler shadowed interior, and the seal casts a soft shadow on the paper. The evidence is weak because both sit in range.",
+   "fix": "Turn the cart's front face from bright on the left to darker and cooler on the right, and put a soft dark band under the rim."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the box has smooth rounded turns, a darker cool lid and a soft sheen on the medal. B: the star's facets split cleanly into lit and shadow planes, and the balls carry small highlights. Both model form plausibly and both numbers are within the real range, so lighting gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the mortarboard has a bright flat top, a crisp corner and a darker cool skull cap, which is the clean plane change seen on real cards. B: a hard raking light cuts a diagonal shadow across the back wall, the white crown falls to grey, and the visor burns pale. form_contrast 0.703 and light_bias 1.249 are both above the real range, so the light is more theatrical than the real cards.",
+   "fix": "Remove the diagonal sun shaft from the wall. Use one gentle light from upper left, keep the white crown bright with only a soft grey turn on the right, and add a soft short shadow under the cap."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: leaf shadows fall consistently on the door, the panels have crisp lit bevels, and the wreath shades softly. B: the blades carry clean metal gradients, the tower has a cool shadow side, and a clear shadow falls right on the grass. Both have a single readable light, and the numbers are in range.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the cart has broad gentle light. The awning turns softly, the body side is even, and the lens stays neutral to cool, like the real cards. B: the lens is warm throughout with no cool shadow side, while every twig has a dark crevice and a thin bright streak. Light reads as local detail rather than one turn across the sphere.",
+   "fix": "Shade the tumbleweed as one ball: brighter on the upper left, falling to a cooler, darker lower right across all the twigs. Use fewer thin shiny streaks on individual branches."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the horseshoe has a firm lit bevel, a decisive dark lower edge and a cool shadow on the inner right, so the form turn has an edge. B: the pillow is airbrushed all over. Light melts into shadow with no core shadow, the top shifts cyan, and the bottom lobes darken only softly. This is the over-soft modeling seen on generated lesson cards.",
+   "fix": "Give the pillow a clear light upper-left side and a firmer darker core shadow along the lower right of each lobe, with the seam puckers catching small bright edges."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: flowers and leaves are lit evenly with no side falling into shadow across the arch. Contact is two soft blobs at the feet with no direction. shading_range 0.627 is low. B: the piano has a bright top edge, a darker recessed front and a directional cast shadow to the right. Both are frontal, with light_bias below the real range, so this is a weak call.",
+   "fix": "Make the rose arch brighter on its upper-left curve and darker and cooler on the lower right and inner arch. Add a soft cast shadow falling to one side on the floor."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cup is a blurred gold gradient with a soft sheen, no firm core shadow and a dissolved rim on the handles. form_contrast 0.385 is below the real range. B: the column has a warm lit right side and a deep cool violet shadow on the left of the capital, with crisp flute shading, matching the warm-light and cool-shadow split of real cards.",
+   "fix": "Give the trophy a firm darker core stripe down one side of the cup, a crisp bright band beside it, and a darker reflected edge on the shadow side. Keep the handle edges sharp."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the teapot has one broad soft sheen, a smooth turn and a single long soft shadow to the left. B: the shoes carry many small hot spots on sole and mesh, and light is spread evenly over both shoes with no overall bright and dark side. light_bias 0.019 is far below the real range, so the light is nearly directionless despite the cast shadow.",
+   "fix": "Light the shoes from one side so the far side of each shoe falls into a cooler shade. Use broad soft sheens on the sole instead of many small bright spots."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the harmonica cover has a wide pale sheen that reads as blown out, with almost no shadow side in the lens and no cast shadow, and form_contrast 0.63 and light_bias 1.148 are both above the real range. B: the scarf folds turn smoothly with a dark inner collar, though form_contrast 0.256 is low. Both have outliers, so this is weak.",
+   "fix": "Bring the cover's white patch down to a narrower soft band of light, and let the lower front edge fall into a clear darker shade."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the card faces are almost flat and evenly lit with no gradient across them. Depth comes only from the soft dark shadow to the left, and form_contrast 0.372 is under the real range. B: the ball has a clear light upper right, a strong round turn and warm sand bounce on the lower edge, though its hot spot is large. Both have low shading_range, so the call is weak.",
+   "fix": "Add a soft gradient across each card, brighter toward the upper right and slightly darker at the lower left. Darken the gaps where the cards overlap with small contact shadows."
+  }
+ ],
+ "pattern": "Generated cards still lack one decisive light. They are soft and airbrushed, or lit nearly head-on, with warm mid-tones and no cool shadow side or firm core shadow, while small bright streaks and hot spots stand in for form. When they do try drama, as with the sailor cap's raking light, it overshoots the real range. Real cards use one clear turn from a bright side to a cool shadow side, with crisp plane changes. Most test calls are low confidence."
+}

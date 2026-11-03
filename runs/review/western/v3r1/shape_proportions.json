@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the hay bale is a swollen loaf with rounded box corners, and its straw is drawn as thick ribbons sticking out all round the contour (corner_rate 14.2 and thin_share 0.035, both above the real range, though fringe inflates both). B: the book keeps flat cover faces, long straight edges and a tight corner at top left, with bookmarks as small crisp tabs; its numbers are in range.",
+   "fix": "Draw the hay bale as a firm rectangular block with flat faces and tight corners. Use fine, short straw strands that lie close to the surface, with only a few thin wisps breaking the outline."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the barrel is a squat, fat tub with no break in its contour (corner_rate 0, solidity 0.989, above real), the lid domes up like a cushion and the bands are thick. The real barrel in the reference sheet is taller, with a clear taper and thin hoops. A: the cart keeps thin posts, separate wheels with spoke gaps, a handle and a scalloped awning, all in the right relation.",
+   "fix": "Draw a taller, slimmer barrel with a gentle belly and a clear taper to narrower top and bottom. Give it a flat recessed lid, thin metal hoops and a crisp rim edge."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the lantern's frame arms are heavy, curved bars around a bulging glass, with a separate wire handle and crossing wires that add many openings (thin_share 0.042, well above real 0.004). A: the vending machine is a plain box with straight runs and flat faces, slightly soft at the top corners but within the real range on every field. This is a weak call: the wire handle is correctly thin, and the outlier may come from the object type.",
+   "fix": "Draw the lantern with slim, even guard rods and a simple wire handle. Keep the glass globe modest and the base flat, and remove the extra crossing wires."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the viewer's housing is a melted, swollen pod with soft blob corners, and the side bracket is a thick sausage. Bumps stack down the neck and collar, giving corner_rate 5.38, above real. A: the ice-cream sign is soft too, but that suits the object: the swirl and tapered cone read as one clean shape with a simple contour, in range on all fields.",
+   "fix": "Draw the coin viewer as a hard metal housing with flat side plates and tight bevelled corners. Use a slim side bracket and a straight cylindrical post with one crisp collar."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the coaster cars are bloated, pillowy tubs that merge into one lumpy mass along the curve, and the rails and supports are heavy (solidity 0.495, below real; thin_share 0.075, just above real). A: the stagecoach has a boxy body, thin roof rail and separate spoked wheels with clean openings, and the parts stay distinct. Its numbers are in range.",
+   "fix": "Draw the coaster cars as firm, compact cars with flat side panels and crisp seat openings, clearly separated from each other. Use slim tubular rails and thin supports."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the flip-flop soles are fat rounded blobs with an unbroken contour (corner_rate 0, below real), and the straps are thick sausages almost filling the gap above the sole. A: the cowboy hat has a thin, curling brim edge, a clear pinched crown and a slim band, so the parts read with correct proportions.",
+   "fix": "Draw the flip-flops with thin flat soles and a defined foot outline with a narrow waist. Use slim, flat straps with a clear open gap between strap and sole."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the guitar body is inflated, with stubby, soft horns, and the strap fuses into a thick band behind it. The neck stays correctly thin. B: the horse has plausible anatomy, with slim legs and defined hooves, ears and mane contour. Both are in range on every field, so this rests only on the guitar's swollen body.",
+   "fix": "Draw the guitar with a thinner, flatter solid body, sharper longer horns with crisp cutaways, and a narrow, thin strap."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the cactus is plump with rounded arm ends, which is true to the plant. B: the slide is a wide, heavy trough on thick posts, but the ladder rails and rungs stay thin and the spiral reads correctly. Both are in range, and neither shows a shape fault that decides it.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the glass has straight tapered sides, a thin bent straw and a crisp paper umbrella. B: the jug has a round belly, short neck, ring handle and small foot, which is plausible for pottery. Both match their objects and all fields are in range.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the lens isolates only the wreath, a small ring with a jagged contour of chunky leaves and bow tails (straight_share 0.043, corner_rate 21.8, thin_share 0.028, all out of range, though leaf outlines inflate them). The door itself has flat panels and tight corners. A: the neck pillow is a very fat U with a squeezed hole, but it is an inflated object and its contour is smooth and in range. Eye and numbers do not fully agree here.",
+   "fix": "Draw the wreath with smaller, tighter leaves on a slim ring, keeping a cleaner round outer contour and a thin ribbon bow."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the towel's edges wobble rather than run straight, all four corners are soft blobs, and a swollen piped border runs round it. It reads as a puffy mat, not a flat cloth (solidity 0.955 and straight_share 0.698 at the top of real, corner_rate 0.366 just below real). A: the bandana has a defined pointed tip, a straight top fold and pinched knots with a distinct silhouette, though the tails are slightly leaf-shaped.",
+   "fix": "Draw the towel as a thin flat rectangle with straight edges and tight square corners. Use a narrow flat hem and a few shallow folds."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the oil lamp's contour is broken by many stacked bumps at the burner collar, a round ball knob on the left and a pin below the ring handle (corner_rate 6.1, above real). B: the gold pan is a clean shallow bowl with a thin rim and a slim loop handle, and it is in range. The lamp's thin parts are fine, so the case rests on its fussy contour.",
+   "fix": "Draw the oil lamp with fewer, simpler parts: a smooth bowl, one clean burner collar, a slim stem and a plain thin handle. Remove the extra ball knob and the small bumps."
+  }
+ ],
+ "pattern": "In the lessons, generated cards inflate the object: bodies get fatter and shorter, corners turn into soft blobs, and thin parts such as cables and rails thicken. Flat items swell into cushions, and a few contours lose all their corners (corner_rate near 0, solidity near 1). They also add extra parts and openings that fuss up the contour: more glove webbing holes, extra rocks, stacked collars and knobs. Real cards keep a simpler contour with long straight runs, tight bevels and slim thin parts. The numbers help most at the extremes, but fringe objects like straw and leaves inflate corner_rate, so read outliers with the eye."
+}

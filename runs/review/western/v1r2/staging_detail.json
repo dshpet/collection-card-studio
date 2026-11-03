@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the green sunburst has many thin rays of uneven width, packed tightly, with dark corners and a bright centre. This matches the dense rays of the generated gloves in the lessons. B: about ten wide, even blue rays behind the hat, as on the real glove and camera cards. B's detail (0.0075) is just under the real range but reads as calm.",
+   "fix": "Behind the jacket, use a soft green sunburst of about ten wide, even rays with low contrast between them. No thin rays and no dark vignette in the corners."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the wheel on a deck with pale rays has the same layout as the real wheel in the reference sheet. The bottom deck edge, hero size and base position all match. B: tent, planked table and a few grass tufts are large quiet shapes with the bottles central, a valid category 3/4 staging. Both metrics are in range. Nothing on this vector separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a bold blue spiral runs around the whole scarf in strong light-to-dark bands, with a bright core behind the knot. It draws the eye more than any real backdrop and is not a pattern seen on the real cards. B: tone-on-tone purple waves, like the wavy pattern on the real water-slide card, and quiet. B's detail is slightly low (0.0069) but it does not compete with the rope.",
+   "fix": "Replace the spiral with a quiet tone-on-tone background: broad soft blue waves or wide rays, only one shade apart, with no bright core."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the jetty, post and rope take up the upper left. Two lily pads were added, and ripple rings and small sparks are scattered across the water, so the boat shares the card with many small marks. B: the wagon fills the card over a few large shapes (sky, hill, dirt path), with only a little grass and a few pebbles.",
+   "fix": "Show the boat alone on calm water with a few broad, soft ripples. Remove the lily pads and the small ring marks, and keep only a small piece of jetty or none."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the two grey fence rails and post cross the whole card with knots and heavy wood grain, and background detail (0.0293) is above the real ceiling of 0.021. The rails are the busiest thing behind the saddle. B: orange gradient and plain desk with quiet grain, the same staging as the real computer card in the lessons.",
+   "fix": "Rest the saddle on one simple smooth fence rail with soft, almost no grain. Remove the second rail and the post, and keep the sky plain."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the underwater scene adds about a dozen bubbles, a shell and loose coins around the chest. That is more props than most real cards, but they are small and on theme. B: pale anchor motifs in tone-on-tone rows behind the barrel, slightly uneven in spacing, on a plain plank floor. Metrics are nearly equal and in range, and each card has one small weakness, so there is no clear lean.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a dull flat teal wall over a pale grey plank floor with ruled board lines and grain. Background detail (0.0145) and edges (0.031) are both above the real range, and the muted teal lacks the saturated field of the real cards. B: a plain orange gradient over a plain yellow ledge with one soft horizon line, in range, like the real basket card.",
+   "fix": "Stand the doors on a plain warm ledge with no board lines, in front of a saturated smooth gradient wall."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: hard lime and dark green vertical stripes at strong contrast fill the wall behind the mug, and the shelf has strong wood grain. The backdrop competes with the hero and edges (0.023) are over the real range. B: soft pink tone-on-tone stripes fading to a pale centre over a plain floor. Its numbers are also slightly high, but that comes from the backdrop's soft stripe edges and it stays quiet.",
+   "fix": "Make the wall stripes two close shades of the same green with soft contrast, and keep the wooden shelf smooth with little grain."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a dull flat teal field with barely visible rings. Detail (0.0063) is under the real floor and the color is less saturated than the real flat-field cards. B: vivid concentric blue rings, in range, stepped but one-hue and a clean sunburst-type backdrop. The evidence is mainly A's flat, desaturated field, so confidence is low.",
+   "fix": "Put the boot on a bright saturated field with soft wide rays or rings, lighter at the centre."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the sign is pushed right while a motel takes the left half, with a balcony, railing, lit windows, fence, mountains, tree, clouds and stars. Edge density (0.053) is above the real ceiling of 0.046, and the environment is many small objects rather than a few large quiet shapes. A: the book is central on a simple plank surface, with low edges (0.011) and only bold wood streaks.",
+   "fix": "Centre the sign and make it larger against a plain dusk sky with one low dark silhouette of a roofline. Remove the balcony, fence, tree and stars."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the coaster is against sky, soft clouds and low green hills, all large quiet shapes. B: the train is on rails with sand, two pale dunes and an empty sky, also a few quiet shapes. Both are central category 4 scenes with metrics in range and no invented props.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: pale diamond wall over a blank smooth sand mound, with detail (0.0069) and edges (0.008) both under the real range and no surface texture at the ground line. B: diamond backdrop over a paved floor of many small tiles. It is the busier card, but it is in range and comparable to the real pool-tile edge on the slide card. The lean rests only on A's numbers, so confidence is low.",
+   "fix": "Give the sand a little soft surface shape with a gentle ripple and a clearer sunlit ground, keeping the diamond wall quiet."
+  }
+ ],
+ "pattern": "Generated cards give themselves away by what surrounds the hero, not by the hero. Their backdrops are louder: tight multi-width rays, high-contrast stripes or spirals, and bright halos behind the object. Their surfaces are over-worked, with heavy wood grain, ruled board lines and ripple marks. Their scenes collect small extras (lily pads, rails, balconies, fences, stars) that push the hero off-centre, instead of using a few large quiet shapes on one saturated field. Too-flat, desaturated fields are a weaker sign in the opposite direction."
+}

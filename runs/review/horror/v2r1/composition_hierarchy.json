@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the whole hearse is squeezed into the frame. The chrome bumper at left and the tail at right almost touch the edges (margin 0.005, width 0.988), and the road and grass sit under it, so the car looks fitted to the card rather than cropped. B: the boat runs on a strong diagonal and the dock is cut cleanly by the left edge, which matches the real ferris wheel and lighthouse crops. The lily pads add minor clutter and occupancy is high (0.48), so this call is weak.",
+   "fix": "Move in closer on the black car and let the rear of the car run off the right edge of the card. Turn the car a little more toward the viewer. Do not leave a thin gap between the car and the card edges."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the pumpkin pail faces dead front, centered and symmetrical. The handle arc stacks directly above the face, the same upright, frontal pose as the generated cameras in the lessons. Candy adds a cluster of small colors at the rim. A: the ball sits slightly off-axis and rotated, with its seams at an angle and its shadow pulling down-left. It is large (0.493, above the real range), but it gives a single instant read.",
+   "fix": "Turn the pumpkin pail three-quarters so one side of the face leads, and tilt the handle off the center line. Fewer candies, so the jack-o'-lantern face stays the main shape."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "B is the captain's hat from the real card sheet: low and to the right, resting in the corner of the room, with height 0.492 yet fully readable. A: the map's left corner just kisses the card edge (margin 0.0), neither inside nor properly cropped. The magnifier on top competes with the map for first read, and the sheet fills most of the card with little floor around it.",
+   "fix": "Show the map smaller with clear wood floor all round, or crop it boldly off one side. Do not let the corner just touch the edge. Make the magnifying glass the clear main object."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the chest is near-frontal and centered, with the padlock on the middle axis under a symmetrical sunburst. The margin of 0.102 is above the real range, so it reads as a safely contained icon, like the generated cameras. B: the tray is turned three-quarters and steps down toward the viewer, with table planks running off the corner. That placement is livelier and closer to the real cards.",
+   "fix": "Turn the chest three-quarters with one corner toward the viewer, shift it slightly off center, and bring it closer so it fills more of the card."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the book occupies 0.527, above the real range, and it fills the card nearly corner to corner with little wood showing. Its cover has about eight small stickers and pins, plus side tabs, which turn to speckle at thumbnail size and split the first read. B: the book has clear table around it (0.42) and one big star that reads instantly.",
+   "fix": "Make the book smaller, with more table visible around it. Replace the many little cover stickers with one large simple emblem in the middle of the cover."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both cards show one tilted object floating over a sunburst, with near-identical occupancy (0.247 vs 0.22) and similar margins. The flask is rounder and more compact, the bottle leans the other way, and both name themselves instantly at thumbnail size. Nothing in framing separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the skull is dead front and centered on a flat ledge, well clear of the edges (margin 0.16, above the real range). It is a stiff, passport-like pose, though it reads instantly. B: the shoes are small and low (height 0.487) with the top third empty orange, which is also weak, but they sit at a three-quarter angle like real product placements. Both have framing flaws, so the call is narrow.",
+   "fix": "Turn the skull three-quarters and tilt it slightly. Bring it closer so it fills more of the card and sits off the center line."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the bat is a wide, thin spread (width 0.953, height 0.421, both outside the real range). The wings nearly reach both side edges while the body is a small dark blob in the middle, and it has lots of empty yellow above and below. At thumbnail size the wings carry the shape and the body is tiny. A: the bracelet is a solid diagonal ring that fills the card evenly, with no such waste.",
+   "fix": "Make the bat's body and head much bigger, and fold the wings in and up so the shape is more compact. Fill the height of the card rather than stretching across its width."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the web is a flat, frontal disk dead center, made of thin pale lines on pink, with only 0.163 solid area, below the real range. At thumbnail size it thins into a faint mesh, the diamond background shows through and competes, and the droplet is too small to register. A: the whistle is a heavy, saturated diagonal mass that pops off its pale glow, even with its busy campfire pattern.",
+   "fix": "Draw the spider web with much thicker white strands, tilted in perspective, with a big glossy spider or large dew drops as a solid focal point. Use a plain darker background behind it so the web stands out."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the tree has thin branches spreading into the sky, so solid area is low (0.238, at the bottom of the real range). A bright moon in the top right and an orange leaf both compete with the trunk, and the moon is one of the first things seen at thumbnail size. Added props like this appear on the generated lighthouses. B: the topiary is one stacked green mass with the hedge kept dark behind it, so there is one clear read.",
+   "fix": "Remove the moon. Make the trunk bigger and thicker, with fewer, shorter branches, and move in closer so the tree fills the card."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the flower bed is a centered, symmetrical mound sitting low in the frame, with an empty pink band above it. Many similar-sized blooms give no single focus, so it reads as a patch of color at thumbnail size. A: the balloons form an off-center cluster with strings sweeping diagonally to lower right. The string reaches low (height 0.887, above the real range), but the first read is instant.",
+   "fix": "Bring the flower bed closer and turn it so the stone edge runs off one side. Make one or two flowers much larger than the rest."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the castle is complete and perfectly symmetrical, with the two towers mirrored about the gate, the whole thing kept inside the frame on a hill. This repeats the generated habit of keeping everything in, as with the lighthouse on its island. A: the door is cropped hard by the card with the ivy running off the edges, and the wreath is the clear focus (the 0.081 area is the wreath alone, not the door). That close crop matches real cards, although the ivy is busy.",
+   "fix": "Turn the castle to a three-quarter view with one tower near and large, and let the far tower or the hill run off the edge of the card. Break the mirror symmetry."
+  }
+ ],
+ "pattern": "Generated cards keep the whole object safely inside the frame. It is usually frontal or upright, centered and often symmetrical, with props or a base added around it (the lighthouse island, moon, candy, stickers). Real cards commit more: they crop hard off an edge or sit in a three-quarter or diagonal pose, and they keep one solid mass as the first read. The tells at thumbnail size are edges that barely touch instead of a clean crop (hearse, map), thin or sprawling forms with a weak core (web, bat wings, bare branches), and many equal small details with no single focus (book stickers, flower bed). Margins and occupancy overlap heavily with real cards, and the real hat itself falls outside the height range, so the numbers only support the eye. Most of these calls are low confidence."
+}

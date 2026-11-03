@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the awning underside and the shade under the counter sit clearly below the lit tops, and the cart body falls off to one side. B: the control panel's face is lit almost head-on, its slanted side barely darker, and the button tops carry the same soft pillow sheen. Light bias on B is 0.18, below the real range, while A is inside it.",
+   "fix": "Light the control panel from the upper left. Make the left slanted side and the right end clearly darker, and let a soft cool shadow fall across the lower right of the panel."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the shoes are lit almost frontally, with fine, even, photo-like modeling across mesh and sole. Only a hard cast shadow to the left states a direction; light bias is 0.019 and shading range 0.82, above the real range. B: the helmet shell turns slowly from a lit top into a soft darker lower right, with one broad sheen on the visor, though its bias of 0.174 is also a little low.",
+   "fix": "Light the shoes from one side. Keep one shoe side bright and let the far side and toe fall into soft shadow, with broad smooth shading instead of fine detail in every crease."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the orange case is a pillow form, its face evenly lit with only a thin darker band on the right and lower edges. The lens shows almost no light-to-shadow change across the face (bias 0.15). B: the saucer has a bright upper band turning into a dark underside, a clear lit and shadow side. Its bias of 0.766 runs slightly over the range, but in the direction real cards go.",
+   "fix": "Light the case from the upper left so the face grades from bright to deeper orange across its width. Make the lower right side wall clearly darker."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the submarine hull has a broad sheen and a smooth turn into a darker belly. B: the rocket body has a bright band and a dark side on the metal, with fins lit on one edge. Both turn smoothly from a one-sided light, and all three measures sit inside the real ranges.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the moon base dome and tube are gently and evenly lit, with shallow shadow sides, and only the crater holds real dark. Form contrast is 0.358, below the real range. B: the bar counter has a lit top and a deep dark band below it, the stools have dark undersides, and the thatch casts strong shade. Form contrast is 0.503.",
+   "fix": "Light the base from the upper left. Let the right side of the dome and tube fall into a clear cool shadow, and put a darker cast shadow on the ground beside the base."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the planet has a soft top-left highlight and a lower half that sinks into shadow, a clear single-sided turn on the sphere (bias 0.409). B: the flip-flops are broadly and evenly lit, with soles flat in value from heel to toe and only thin dark side edges (bias 0.179). Both sit inside the real ranges, so this is a weak call.",
+   "fix": "Light the sandals from the upper left. Let the soles grade darker toward the lower right, darken the shadow under the straps, and add a soft shadow under each sandal."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "A: the same rose arch appears in the real reference sheet, with matching rose positions, so its low bias of 0.14 reflects many small forms, not a flaw. B: the column has a lit right side of the capital, a deep shadowed left volute and a soft cast shadow on the plinth, the dramatic one-sided modeling real cards show. Nothing on my vector marks it as generated.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the scarf's folds are evenly soft and front-lit, with low-depth creases and no clear shadow side; form contrast 0.256 is below the real range. B: the asteroid has a lit upper left turning into a near-black lower right, with crater rims catching light. Its bias of 0.861 is slightly over the range, but it follows the strong side light of the real cards.",
+   "fix": "Light the scarf from the upper left. Make the folds on the right side and under the neck loop clearly darker, with deep soft creases at the knot and between the two tails."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the dish and base are pale and flatly modeled, with little fall-off across the dish bowl or the cone. Only the ground cast shadow is firm; shading range 0.545 is below the real range. B: the sandcastle towers have lit faces and deep shadowed sides and doorways, with dark cast shadows on the sand, and a shading range of 0.773.",
+   "fix": "Keep one side of the dish bowl bright and let the other fall into deep cool shadow. Darken the shaded side of the cone base and the shadow the dish throws onto its own stand."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the fountain's stone is front-lit and warm, with soft undersides and little difference between its left and right sides (bias 0.339). B: the bumper car has a bright glossy top, a dark cool right side and a dark base, plus reflected shapes on the floor (bias 0.773). The cool shadow side matches the real lesson cards; the fountain is still in range, so confidence is low.",
+   "fix": "Light the fountain from the upper left. Let the right side of each basin and pedestal fall into a cooler, darker shadow, and put deeper shade under each bowl."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the binoculars have bright barrel tops, dark undersides and a strong cast shadow on the boards; shading range 0.925 is slightly over the real limit. B: the telescope tube has a smooth lit band and a soft dark underside, with a long ground shadow. Both have a clear single light and a smooth turn, and the overshoot is too small to decide on.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the taxi has broad gloss on its roof and hood and a dark cast shadow beneath it. B: the rover is more matte, with a lit front and a dark shadow under the wheels. Both show strong directional light and dark contact shadows, and both overrun the real ranges on the lens, so it gives no way to separate them.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through frontal, even light. The face of the hero stays in one bright value, the side turned away drops only a little, and form is carried by thin dark edges and small pillow sheens, not by a real shadow side. Real cards commit to one side light, with a broad cool shadow side and a slow, deep turn across the whole form. The lens shows this most on simple large forms, such as the panel face, dish bowl, moon dome, scarf folds and sandal soles."
+}

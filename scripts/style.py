@@ -20,7 +20,7 @@ Redraw the draft with these changes and keep everything else: the object, its po
 PATTERNS = {
     "plain_gradient": "a smooth gradient", "concentric_rings": "tone-on-tone concentric rings",
     "rays": "tone-on-tone radial rays", "stripes": "tone-on-tone wide stripes", "waves": "tone-on-tone soft waves",
-    "diamonds": "tone-on-tone diamonds", "repeated_motif": "a faint tone-on-tone repeated motif",
+    "diamonds": "tone-on-tone diamonds", "repeated_motif": "a faint tone-on-tone repeated motif of small {topic} icons",
     "plain_wall": "a plain wall", "full_scene": "a simple scene",
 }
 

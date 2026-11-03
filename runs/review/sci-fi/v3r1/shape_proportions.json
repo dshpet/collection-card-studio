@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the capsule is one solid swollen cone with no openings. The base rim is a soft rounded lip, the nozzle is a stubby knob, and the silhouette has no real corners (corner_rate 0, solidity 0.991, above the real range). B: the envelope and postcards show several straight sheet edges with tight corners, stacked at different angles, and a thin gap at upper right. The sheets stay flat.",
+   "fix": "Draw the capsule with straight, flat-sided panels, a crisp hard edge where the wall meets a thin base rim, a narrower docking collar with a stepped profile, and tight small bevels instead of rounded lips."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the bounce house arches and tubes are fat and pillowy, which is correct for an inflatable. It keeps open arches and clear part relations; its high straight_share comes from the base. B: the asteroid is a lumpy, smooth, potato-like blob with a rounded contour and no chipped edges. Only the crystal breaks the outline, and solidity is high at 0.947.",
+   "fix": "Give the asteroid a jagged outline with broken, angular chips, sharp ridges between flat fractured faces, and deep notches in the contour instead of a smooth rounded lump."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the sandcastle has many separate towers with square crenellations and narrow gaps. Its corner_rate is high, but the parts are distinct, although the bucket is slightly warped. B: the observatory is a squat, fat mass. The dome is oversized for the drum, the rim is a swollen band, the plinth is a soft pad, and the telescope barely breaks the outline. Solidity 0.938 is above the real range.",
+   "fix": "Make the observatory taller and narrower, with a smaller dome on a higher drum, a thin sharp-edged dome rim, a wide open dome slit, and a telescope that clearly projects past the outline."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the comet rock and tail merge into one teardrop with a soft edge. Rock facets barely show in the contour, which has very few corners (0.412). B: the neckerchief is puffy, but it has clear parts: a collar band, an opening, a knot, and two separate tails with a gap between them, all with distinct contour turns.",
+   "fix": "Separate the comet rock from its tail: give the rock an angular outline with hard facet corners and make the tail a thin tapering streak that does not swell the head."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the beach ball is a true circle. Its out-of-range numbers (straight 0.885, corners 0, solidity 0.996) simply follow from a sphere. B: the tall tapered glass has a straight rim and sides, a thin straw, and normal proportions. Neither shows fattening or lost parts.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the station hull is one thick sausage, the ring is swollen, and the solar panels have soft rounded corners, with the arms joined to them as stubs. Everything is chunky and toy-like. B: the bike keeps a thin frame, spokes and cables at real proportions. The low solidity and high thin share come from the spokes and a noisy mask around the car.",
+   "fix": "Slim the station hull and ring, draw flat, thin solar panels with crisp square corners, and connect them with long thin struts and visible joints."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the bag is soft with a sagging trapezoid body and rather thick handles, which suits canvas. The two handles and the items keep clear gaps. B: the target has a round thick disc on a short easel, and the teddy is plush. All metrics are mid-range, and neither card gives a clear shape reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the plant stems are uniform fat tubes with curly spirals ending in round balls, and the pot is a bulging form with a thick rim. The contour is almost all curve (straight_share 0.099, below real) and thin_share 0.021 is above real. B: the book has flat boards, straight runs, a tight corner, and clear thin tabs. Its straight_share only just exceeds the real range.",
+   "fix": "Make the stems thin and tapering rather than even tubes, with fewer curls, pointed leaves with sharp tips, and a pot with straight walls and a thin crisp rim."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the rocket body is short and fat with a blunt nose and stubby swollen fins, which reads as a toy. The tower beside it has thin struts, but the rocket mass dominates. B: the pool bar stools, rings and drink stems have believable sizes and clear gaps. The extreme contour numbers come from a multi-part scene and a broken mask, not from swelling.",
+   "fix": "Draw the rocket longer and slimmer with a pointed nose and thin swept fins with sharp tips, keeping the body narrow against the tower."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the globe is oversized, the arc stand is a thick band, the axis tip is a heavy ball, and the foot is a soft swollen puddle. The orbit ring only stays thin where it clears the sphere. B: the balloons are true teardrops with small necks and thin strings at natural scale; the higher thin_share comes only from the strings.",
+   "fix": "Thin the arc stand into a narrow metal rail, shrink the axis knobs, and draw a slim stem on a flat disc base with a crisp edge."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the parchment outline is a soft pillow with rounded blob corners, thick swollen curls, and no sharp sheet edge (straight 0.761, above real; corners 0.755, below real). B: the scroll has a thin rolled sheet, a sharp cut corner at top right, an open spiral end, and narrow forked ribbons with pointed tips.",
+   "fix": "Draw the parchment as one thin sheet with sharp cut corners, narrow tight curls at two opposite ends, and visible paper thickness of only a hairline."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the vending machine is slightly short with soft corners, but its boxy flat faces, door, tray and small feet all relate correctly. B: the tube has straight tapered sides and a crisp crimp, but a bulky cap sits on it with a straw growing straight out, which is an odd relation of parts for a squeeze tube standing on its crimped end.",
+   "fix": "Keep the tube's slim, flat crimped end, make the cap small and low, and join the straw through a clear narrow spout at the right scale, or drop the straw."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through inflated mass: bodies are stout and short, rims and stands swell into soft lips, and corners go round. Thin parts turn into even tubes, and simple forms fill their outline with few real gaps or corners. Real cards keep straight runs, tight bevels, thin rails and clear gaps between parts. Metric outliers need a check against the object itself: spheres, inflatables and multi-part scenes with noisy masks can fall out of range without being flawed. Caveat: on the low-confidence picks, p02, p04, p10 and p12, the shape evidence alone is weak, and the sci-fi subject matter nudged those calls."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the hay bale has no drawn contour; its boundary is broken up by loose straw tips and the soft shadow, and outline darkness sits in the real range (-0.037). B: the book has a continuous dark line along the cover, and each sticker (castle, barn, tower) carries a thick double ring from its white die-cut border. Outline darkness of 0.165 is well above the real maximum of 0.097.",
+   "fix": "Remove the white sticker borders and print the icons directly on the cover with thin, clean edges. Let the cover's lit edge fade softly into the wood, with no dark line around the book."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the popcorn cart has thin, varied edges, and the red body and pale posts soften into the surroundings; only the awning scallops are firm. B: the barrel has an unbroken dark ring around the silhouette and double-line grooves between staves. Grain marks, rivet rings and cracked ground all compete at the same strength, so nothing reads as the sharpest area. The numbers are in range for both, so this rests on the eye.",
+   "fix": "Draw thin, tight seams between the staves, with few grain marks. Keep the sharpest edges on the metal bands, soften the barrel's lit side into the background, and make the ground smooth with only a few pebbles."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the vending machine has clean, thin panel lines and a light outer edge on its lit side; busy edges stay inside the window, and the background is almost empty (0.012). B: the lantern's handle and frame have heavy, even contours, and the wooden table adds long grain lines and a knot. Subject density of 0.222 is near the real top, and background density of 0.034 is above the real maximum of 0.021.",
+   "fix": "Thin the lantern's handle and frame edges and let them soften on the lit side. Make the tabletop smooth, with a few faint plank seams and no knots or dense grain."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the ice cream sign has a soft glow around its tube border, and the ring-like contour belongs to the neon subject; the wall grooves are strong (background 0.049, above the real range). B: the viewer has thick dark grooves around the lenses, body and bracket, in front of a crisp skyline and railing. Subject density of 0.172 exceeds the real maximum of 0.157, background density of 0.036 exceeds 0.017, and outline darkness of -0.126 falls below the real minimum of -0.087. Both backgrounds are too busy, but B is out of range on all three fields.",
+   "fix": "Replace the thick grooves on the viewer with thin, tight seams. Blur the skyline and railing into soft pale shapes so the sharpest edges stay on the lenses."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the stagecoach has double lines on every door, window, panel inset and wheel spoke, at much the same weight across the vehicle, plus edge marks across the sand. B: the coaster cars have rounded forms with soft interior transitions and few lines, and the distant hills and clouds fall away gently. Both are in the real numeric range, so this is a weak call from edge hierarchy.",
+   "fix": "Remove the double lines around the door and window panels and use one thin seam for each. Keep the crispest edges on the front wheel and make the sand smooth, with soft, simple shapes behind."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the hat has a firm but varying silhouette with a soft interior, and its brim edge thins along the lower right. B: the flip-flop soles nearly lose their edge on the lit side, while the strap undersides and tread dots stay sharp. All numbers are in range and both show the varying contour seen on real cards, so my vector gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the guitar has a dark contour around the whole body, with hard detail on the neck frets, pickups and strap. The truss and dark floorboard lines keep similar strength across the card. Subject density is 0.242, and outline darkness of 0.163 is above the real maximum of 0.148. B: the horse has a softer, lower-density body (0.099), with its contour concentrated at the head and legs and outline darkness of 0.032.",
+   "fix": "Soften the guitar's outer edge on the lit side and remove the dark rim line. Keep the sharpest detail at the pickups, and render the truss and floor seams thin and faint."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the cactus has simple soft contours and a quiet ground, though density is slightly below the real range (subject 0.074, background 0.007). B: the slide has doubled ridges along its lips, and a dense tile grid and water ripples fill the bottom of the card. Background density of 0.065 is above the real maximum of 0.046.",
+   "fix": "Make the pool deck a smooth surface with only a few faint tile seams and calm water. Use one soft rounded edge on the slide lip instead of doubled ridges."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the drink has thin, precise edges on the glass rim, ice and umbrella pleats, and a clear sharp focus against a quiet backdrop. B: the jug's own edge is soft, but the table carries wood-grain swirls and knots stronger than the hero's interior, and concentric rings add more edges. Background density of 0.024 is above the real maximum of 0.021, and subject density of 0.057 is below the real minimum of 0.087. Attention falls on the background, which is the table-grain tell from the computer lessons.",
+   "fix": "Paint the table as smooth wood with only a few faint plank seams and no knots or swirling grain. Give the jug's rim, handle and painted bands crisper edges than anything on the table."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the neck pillow has a hard black contour at the inner hole and lower edge, but almost no interior edges (subject 0.017, below the real minimum of 0.046). B: the door is packed with leaf outlines, flower petals, panel grooves and ghosted cut-out shadows behind the wreath. Subject density of 0.342 and background density of 0.107 are both far above the real maxima of 0.157 and 0.017. Both miss the range, but B misses it on two fields and by far more.",
+   "fix": "Remove most of the ivy, or simplify it into soft blurred masses at the card edges. Make the door panels thin, tight seams, keep the wood smooth, and let only the wreath carry sharp edges, with no pale cut-out shadow around it."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the bandana has a crisp silhouette with a fine knot and paisley edges in a clear hierarchy, and the fabric grain stays fine. B: the towel has a thick dark rim all the way round, and the whole surface turns into speckled noise in the edge map, so no area reads as sharpest. Outline darkness is 0.088 against 0.003 for A, and the noise reads more heavily than the measured subject density of 0.079 suggests.",
+   "fix": "Make the towel a smooth soft surface with only a hint of fabric texture and clean, simple stripe boundaries. Replace the thick rim with a thin stitched hem that softens on the lit side."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the oil lamp has crisp edges at the brass collar and handle, while the glass chimney nearly dissolves into the background with lost edges. B: the gold pan has a heavy double black line around the whole rim, plus concentric rings on the pan floor and strong outlines around the nuggets. Subject density of 0.157 is at the real maximum, and the edge weight is even around the silhouette. Both are in range, so this is a low-confidence call.",
+   "fix": "Use one thin rim highlight on the pan rather than a doubled dark line, and let the far rim soften. Remove the concentric rings on the pan floor so the sharpest edges stay on the gold nuggets."
+  }
+ ],
+ "pattern": "Generated cards spread strong edges too evenly. They tend to close the hero with a heavy, unbroken contour where real cards let the lit side thin out or disappear. Internal seams become thick doubled grooves instead of thin, tight lines. Backgrounds and props also add too many edges: wood grain and knots, tile grids, ripples, foliage, and textured noise. This flattens the edge hierarchy, so no single focus is clearly sharpest. Decals or small objects can also pick up pale cut-out rims or ghost shadows. Density numbers help most at the extremes, as on p01, p08 and p10. Pairs p05, p06 and p12 are close, and p06 gives no reason to choose."
+}

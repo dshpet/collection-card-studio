@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the jacket has a dark, nearly unbroken contour around sleeves, hem and sash, plus many hard internal seams on pockets, flaps and badges. Subject density of 0.159 sits just over the real ceiling of 0.157. B: the hat crown top and upper brim are thin, light edges that nearly get lost, and the only heavy line is the rolled brim front, close to the broken contour of the real glove.",
+   "fix": "Fewer seams on the jacket. Let the lit shoulder and sleeve edges melt softly into the background, with no dark line around the jacket. Keep the only crisp edges on the badges."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the wheel has an even, dark contour around every handle and the rim, and the floor planks are thick black grooves that compete with the hero. B: the bottles have thin, broken edges, with soft rims on the plastic and tent folds that stay lighter than the bottles. This reads closer to the real cards.",
+   "fix": "Remove the dark line around the wheel and handles, and separate them from the background by light and shadow only. Make the floor plank gaps thin and faint, fading with distance."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the scarf has long clean edges with a lost, faint top edge and almost empty cloth interiors, leaving the sharpest lines on the medal, which is a real-style focus. One caution is that the lower tails carry a hard, even contour. B: the rope is covered in dense hair-fine strand strokes on every coil, with detail spread evenly and no sharpest point.",
+   "fix": "Draw the rope as a few broad, smooth twists with thin gaps and no fine fibres. Keep the crispest lines only at the red binding."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the wagon canopy has a heavy unbroken contour, the clouds and hills are closed outlines, and the grass and spokes add many small hard edges, so it reads like a colouring-book drawing. A: the hull underside fades out and the ripples stay light, though the dock plank gaps are thick. Its contours vary more, as on the real cards.",
+   "fix": "Remove the dark outline around the canopy and clouds. Give the clouds soft edges with no line and let the far hills blur. Keep crisp edges only on the near wheel."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the fence wood is full of dark scratchy grain strokes, the buckle is a near-black heavy shape, and the saddle has thick doubled lines along its flaps, so the background prop fights the hero. B: the computer has thin, precise panel lines with quiet surfaces and matches the real computer card almost line for line, though its outline_darkness of -0.088 is just below the real range.",
+   "fix": "Paint the fence with faint, soft grain and few lines. Make the buckle edges thin and let the saddle flap seams be fine lines instead of doubled contours."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the barrel has thick dark stave grooves, grain strokes on each stave, ringed rivets, and the anchors repeated as outlined stamps across the background. A: the chest is busy, but its edges are softer and vary in weight, with the crispest lines at the coins and lock and a quiet sand area.",
+   "fix": "Make the stave gaps thin, reduce the grain to a few faint marks, and keep the anchors as pale tone with no edge."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the louvres are near-black thick bars, the posts carry doubled rim lines, and the floor has strong horizontal grooves, with background density of 0.031 above the real ceiling of 0.021. B: the sneakers have dense lines and a hard horizon, and outline_darkness of -0.1 is out of range. This is why confidence stays low, though its edges concentrate on the hero and the backdrop stays clean.",
+   "fix": "Make the gaps between louvres thin shadow lines instead of black bars. Soften the floor board lines so that they fade toward the back."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: every rose petal and leaf on the arch has a hard dark edge, giving subject density of 0.317, far over the real ceiling of 0.228, with no rest area for the eye. Faint concentric rings also show in the background of the lens. A: the mug has a crisp rim and handle with a soft, nearly lost body, which is clear edge hierarchy, although its density of 0.081 is slightly low.",
+   "fix": "Group the leaves into soft masses and fewer roses. Give hard edges only to the front roses and let the rest blur into shadow. Keep the backdrop perfectly smooth."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the boot has thick, doubled lines along the sole, flame panel and top straps, and a dark knotted spur, so the seams read as grooves. B: the cap board has clean, flat faces with a crisp corner, thin lines and very few internal edges, and the tassel is the only busy spot. The difference is small.",
+   "fix": "Make the boot seams thin single lines, with no double line along the sole or around the flame panel. Let the toe highlight side lose its edge softly."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both cards show doubled, embossed-looking contours, and both exceed the real outline_darkness range at 0.165 and 0.161. B: the sign adds a bright rim around each panel, a dotted halo in the sky around it, and background density of 0.053 over the real ceiling of 0.046 from the railings and fence. A: the same double lines stay on the stickers, and the wood background is simpler.",
+   "fix": "Remove the bright rim and glow around the sign panels. Keep the building and fence soft and low in contrast, with thin single lines on the sign shapes."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the train has clean, even, unbroken contours around the stack, cab and boiler, and crisp spokes and rivets everywhere, with no softer zone. A: the coaster edges are softer and broken, and the far track and supports lose sharpness, which is closer to the soft edges of the real lighthouse.",
+   "fix": "Remove the dark contour around the locomotive. Let the back of the cab and the far wheels go softer, and keep the sharpest edges at the front wheels and headlamp."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the cactus has wide soft rib grooves and dark-ringed spines on a very clean background, at 0.008 just under the real range. B: the cart has a strong awning edge and a dense paving grid, but with lost edges on the white stripes and glass. Both have some edge hierarchy and neither shows a decisive tell.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through even, unbroken contours around the hero, where real cards let lit edges fade and get lost. Other tells are thick or doubled internal grooves where real seams are thin, and small hard detail spread evenly across the hero with no sharpest focal area. Backgrounds also compete: plank grooves, wood grain, outlined clouds and repeated motifs carry too many edges. The numbers mostly confirm extreme cases, such as the p08 rose arch at 0.317 subject density, while most pairs sit inside the real ranges, so the calls for p03, p06, p07 and p09 to p11 are weak and p12 stays neither."
+}

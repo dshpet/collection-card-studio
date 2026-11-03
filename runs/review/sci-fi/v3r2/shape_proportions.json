@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the asteroid is one smooth rounded lump, solidity 0.946 near the top of the real range. Its outline has almost no notches, the craters are oversized and the crystals are stubby. B: the bouncy castle's fat tubes and pillowy deck suit a true inflatable, and its arches keep open gaps. B's straight_share of 0.725 is slightly high but fits the straight deck edge.",
+   "fix": "Draw a jagged, irregular rock with broken edges and deep notches in the outline. Use smaller, shallower craters and tall, slim crystals with sharp tips."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the swing ride has a scalloped canopy, a slim column and thin chains. Its thin_share of 0.09 is high, but the chains explain that, and thin parts staying thin is correct. B: the keyboard has a planar body, a tight corner bevel and a slim X stand. Neither card shows swelling or lost parts.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the station is a swollen capsule tube with a fat ring. Its stubby arms carry panels with soft rounded corners, in a tidy mirrored layout. B: the bike keeps thin spokes, a slim frame and true wheel proportions, though the lower area around the rack is muddled.",
+   "fix": "Make the station hull a slim cylinder with flat end caps. Use long, thin struts and flat solar panels with crisp square corners, and vary the modules so they are not mirrored."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the rolled diploma has a believable tube, a sharp paper edge and thin ribbon tails. B: the sheet has long straight edges and curled ends, and its soft corners and low corner_rate of 0.755 are fair for curled paper. Both forms are true to paper, so shape gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the rocket body is a fat bulging bullet with thick blunt fins. It looks toy-squat, and it stands as tall as its tower. The tower lattice does stay crisp. A: the pool bar's stools, glasses and curved counter have ordinary proportions. Its out-of-range numbers come from a cropped scene of many separate pieces.",
+   "fix": "Draw a tall, slender rocket with a narrow body and thin, swept, sharp-edged fins. Make the service tower clearly taller than the rocket."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a drinking straw comes out of a screw cap on a crimped metal tube, which is an odd relation of parts, though the crimp and straw are crisp. B: the vending machine is slightly squat with soft top corners, but it has a planar box, small feet and the expected door, slot and panel. The call is weak because the shape flaw on A is logic, not swelling.",
+   "fix": "Remove the bent straw. Draw a plain tube with a short nozzle cap and a flat crimped end."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the observatory is stout. The dome and drum merge into one swollen mass, solidity 0.939 is above the real range, and only a small lobe of telescope breaks the outline. The telescope is a tiny toy, and the rims are thick soft bands. B: the sandcastle has square crenellations, separate towers of varied height, and a clear gap around the bucket and spade.",
+   "fix": "Make the dome a thin shell with a clearly open slit. Show a long telescope tube sticking out past the dome outline. Use a taller, narrower drum with thin, crisp rims."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: this repeats the real rose arch in the reference sheet, with the same striped background. Rosebuds on stalks are spaced evenly around the outline, and the arch is wider and fuller. Measures are outside the real range: straight_share 0.068, corner_rate 16.6, thin_share 0.017, solidity 0.586. B: the backpack has a soft bag form with flat straps, buckles, pockets and a rolled mat in believable relation.",
+   "fix": "Keep the foliage in a compact mass close to the frame, with no rosebuds on stalks poking out. Keep the outline uneven, not evenly spiked, and show the straight wooden posts at the base."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the globe's arm is a thick crescent, and a Saturn ring wraps the ball where a globe expects none. The ball sits awkwardly in the arm, and the foot is a soft pad. A: the balloons are true round forms with small knots and thin strings tied in a bow. Their out-of-range numbers only reflect a smooth round contour with thin strings.",
+   "fix": "Use a thin, even meridian arm that holds the ball at two pins. Remove the ring, and give the base a crisp stepped foot."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the comet's rock has facets inside, but its outline is a soft blob, and it flows into a thick smooth tail with no separate head edge. B: the scarf is puffy, yet its neck loop, knot, two tails and central opening read correctly. The call is weak because B is swollen too.",
+   "fix": "Give the rock a hard, angular outline with sharp corners. Make the tail a thin, broken streak of separate wisps."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the stems are thick sausages curling into even spirals, with fat bulbs. The pot is swollen and small for the plant, thin_share of 0.018 is just above range, and the whole reads like a toy. B: the book keeps planar covers, a tight corner, a straight spine edge and thin ribbon tabs.",
+   "fix": "Draw thin, tapering stems with natural bends, not matching spirals. Use smaller buds, and a straight-walled pot with a thin, crisp rim."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the capsule is one smooth cone with a rounded rim and no corners at all, corner_rate 0.0 and solidity 0.99 above range. It is a plain lump in outline, with only the nub on top breaking it. B: the envelope and photos keep flat sheets, straight edges, small corner bevels and an overlapping stack.",
+   "fix": "Give the capsule a crisp, sharp base rim and a stepped top. Add panels and fittings that break the outline, such as a raised hatch frame or thrusters, and keep the cone sides straight."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through swelling. Bodies inflate into one smooth mass with a plain outline, such as the capsule, observatory and asteroid. Rims and corners go soft. Stems, struts and arms thicken into sausages or stubs. Proportions get squatter and more toy-like, and ornament is spaced too evenly and symmetrically. Thin parts are not a reliable tell, because lessons show generated cards can keep railings and cords. Most calls here are low confidence because the test pairs are not of the same object. Several out-of-range numbers also came from the subject type (foliage, strings, cropped scenes) rather than from a shape flaw."
+}

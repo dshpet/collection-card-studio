@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the cap's board has flat faces, long straight edges and tight corners, and the cord and tassel stay thin. B: the witch hat is one soft inflated form. Its brim is a thick, smooth pad with no thin edge, and the cone flows into a rubbery bent tip. The silhouette has almost no straight run or corner.",
+   "fix": "Draw the brim as a thin, stiff felt disc with a sharp edge, slightly wavy. Make the cone narrower with a crisp crease at the bend."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cauldron's ring handles and lugs are thick tubes, the legs are short fat stubs, and the rim is a soft rolled sausage on a balloon-round belly. B: the gloves are also a low-corner blob (corner_rate 0.392, below the real range), but padded gloves really are that shape, and the wrist cuffs are separate parts with their own edges. The evidence is weak.",
+   "fix": "Draw thin iron ring handles, a narrow rim with a hard flat lip, and slim tapered legs. Give the pot a heavier cast-iron profile."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the broom handle stays properly thin, but the bristles are fat, rounded noodles with blunt tips, and the head is oversized against the short handle. A: the scarf is puffy too, swollen like a cushion at the collar, but cloth tolerates that. The tie knot and two tails read clearly. The call is close.",
+   "fix": "Draw the broom head from many thin, stiff straw strands with sharp, uneven tips. Make the head smaller and the handle longer."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the envelope and photos keep flat planes, straight paper edges and small corners, with a slightly soft flap. B: the ship's wheel has a true rim, eight spokes with handles, and a flat-faced stand. Its solidity 0.569 and corner_rate 6.793 sit outside the real range only because the object is spoked. Neither form shows a shape flaw.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the candelabra's arms, stem and cups stay thin and well separated, and the low solidity 0.373 comes from the open three-arm form. B: the oil lamp has a correct chimney, burner, thin ring handle and footed base. Both have believable part counts and thin parts.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the crystal ball is oversized on a tiny stand. The stand's legs are short, thick curls that end in blobby scrolls, like a toy. A: the glass tapers with straight sides, the straw stays thin with a crisp bend, and the umbrella has sharp pleats and a thin stick.",
+   "fix": "Draw a smaller sphere seated in a taller, slimmer metal stand with thin legs and tight, fine scrolls."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cat is a plush toy, with an oversized head, a fat pear body, stubby paws and a thick sausage tail. B: the fountain's tiers keep true proportions, with flat stone rims, tight bevels and a stem that clearly narrows between bowls.",
+   "fix": "Draw a slimmer cat with a smaller head, longer thin legs, a narrow chest and a thin tapering tail."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the house's walls and roofs all bow and sag, with no straight wall run, and the roof eaves curl like soft rubber lips. The chimney bends like a tube. B: the lighthouse has straight tapered walls, thin gallery rails, a stepped balcony, and crisp brick and corbel edges.",
+   "fix": "Draw straight stone walls with hard corners, thin flat roof edges with small overhangs, and a rigid square chimney. Keep the lean only in the overall tilt."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the coffin is a wide, stumpy hull that fills its own convex shape (solidity 0.98 and corner_rate 1.149, both outside the real range). The lid is oversized and its long body is shortened. B: the chess table has a thin flat slab with straight runs and a clear pedestal, and its stools are separate parts with their own edges.",
+   "fix": "Draw a longer, narrower coffin with a clear shoulder angle. Make the lid thin and the same size as the box, with tight, sharp edges."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the gravestone is swollen like soap. Its corners are soft, the base is a pillowy slab with rounded ends, and the silhouette has very few corners (corner_rate 0.857, below the real range). B: the sneakers keep distinct parts, with the sole, collar, tongue and thin laces all separate, and the heel and toe profile is believable.",
+   "fix": "Draw the gravestone as a flat-faced stone slab with squared sides and tight chipped edges. Make the base a crisp rectangular block with hard corners."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the pumpkin's outline is almost a plain circle (solidity 0.961, above the real range), with lobes that barely notch the contour and only a short fat stem. B: the spring duck reads as a real rider toy, with a flat base plate, coil spring, handle bar and separate tail, each in clear relation.",
+   "fix": "Draw deep ribs that cut into the outline, a slightly squashed height, and a thin, angular twisted stem."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the balloons are correctly round, with small knots and hair-thin strings. Thin_share 0.038 is high only because of the strings. B: the buoy has flat-faced stacked drums and a tight-edged float, with a slightly thick hoop around the bell. Neither shows a clear shape flaw.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards give themselves away through inflated, one-piece forms. Hard objects such as stone, wood and felt lose their flat faces and thin edges and become soft pads. Silhouettes lose corners and straight runs, shown by low corner_rate and high solidity. Thin parts such as stems, legs, handles, tails and bristles become stubby sausages, and heads or main masses are enlarged like toys. The lessons also show this: real cards keep tighter corners and flatter planes on the same object. Round, spoked or padded objects give weak evidence on this vector, so outlier numbers on them mean little."
+}

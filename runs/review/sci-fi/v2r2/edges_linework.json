@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the robot arm has thin, even contours and the diagonal background bands are hairlines; the shadow on the floor stays soft. B: the plank gaps are thick black grooves that compete with the binoculars, with streaky grain lines along each plank and a hard dark crescent under the near lens rim. The background outweighs the hero's own edges, though the 0.036 density is still within the real range.",
+   "fix": "Draw the floorboard gaps as thin, faint lines with almost no grain, softer and lighter than the edges of the binoculars."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a continuous dark contour runs round the red box, heaviest along the base and right side of the lid, with little inside it except the coin. outline_darkness of 0.13 is above the real maximum of 0.122, so it reads as a drawn line. B: the tank edges are soft and the straps and back loops carry light double lines, with outline_darkness at -0.029.",
+   "fix": "Remove the dark line around the box. Let the red box edge meet the blue background directly, with the edge fading softly on the lit side of the lid."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the clouds at left and top carry dark, scalloped contours like the generated lighthouse clouds, and the plane has a wiry contour along its belly and tail. Background density of 0.018 is above the real 0.017. B: the satellite background is faint hairline diamonds at 0.004, and the hero holds the strongest edges, in the panel frames and grid.",
+   "fix": "Paint the clouds as soft white shapes with no edge line, so they melt into the sky. Keep the sharpest edges on the plane's cockpit and engine only."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: every thatch shingle is ringed by a dark line, and the pool tiles, ripples and curb all carry contours, so background density of 0.144 is far above the real 0.089. The fruit and glasses do not stand out from it. B: the keyboard has a thin outer contour and precise key gaps, and the notes and stars are simple shapes in a quiet background at 0.013.",
+   "fix": "Show the thatch as a few large soft masses, leave the pool tiles as faint tone with no lines, and keep crisp edges only on the fruit and cocktail glasses."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the backboard's frame and inner square are drawn with heavy, ruled black double lines, and outline_darkness of 0.201 is well above the real 0.122. Some of this is red on white contrast. B: the rings show dark double lines at 0.214 subject density, but those come from thin chrome tubes with highlights, while the sphere's edge is nearly lost against the pink.",
+   "fix": "Soften the red frame's edges with rounded bevels and a light rim, so there is no hard dark line between the red and the white board."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the reel window and control strip have thick grooved double borders and a uniformly strong contour round the rounded cabinet. Its outline_darkness of -0.061 is slightly below the real -0.054. B: the monitor and base have the same thin floppy slot, light key gaps and tapering contour as the real computer in the lessons. Its background of 0.046 and outline of -0.088 sit at or just beyond the range limits, but nothing there reads as drawn.",
+   "fix": "Replace the deep double borders round the window and strip with one thin, precise seam, and let the cabinet edge lighten on the lit side."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the car's edges vary, with bright rims and lost glass edges on the dome, and subject density of 0.133 is mid-range. B: the scarf has one wiry, even contour round the tails and collar, with almost nothing inside it at 0.053. The hard outer edge has no variation in width, unlike the tapering edges on the real cards.",
+   "fix": "Let the scarf's edge soften where the cloth rolls away from the light, and keep one crisp edge at the central badge."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the phone has soft body edges, faint floor tile lines and crisp rings only at the dial and keys. B: the frost is a mass of tiny dark speckles along the tray's base, the ice carries scattered specks, and the table gaps are thick black grooves. Subject density of 0.086 is just under the real 0.087, so the speckle is local noise over otherwise empty tray walls.",
+   "fix": "Replace the speckled frost with a few soft white patches, and draw the table gaps as thin faint lines."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the board, table cracks, tree crowns and grass tufts are all heavily contoured, and the tree crowns are dense with small marks. Dark lines fill the whole frame at 0.065, and every region has equal weight. B: the bracelet has a nearly lost edge along its top rim, and crisp edges only on the raised icons, with hairline rings behind. Its densities of 0.074 and 0.006 are slightly under the real minimums, but it is restrained, not artificial.",
+   "fix": "Paint the trees and grass as soft masses without outlined leaves or tufts, remove the dark crack lines, and keep sharp edges on the chessboard only."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: thick black double lines surround the bed icon, sign frames and motel windows, and outline_darkness of 0.161 is above the real 0.148. A rounded halo shape and horizontal banding around the sign also show in the sky, which is a glow edge not seen in the real cards. B: the dome has a steady, moderately dark contour and clean thin seams, but the sky is quiet at 0.011 and the hierarchy favors the building.",
+   "fix": "Draw the neon as soft light with no dark border, let the sky stay a smooth gradient around the sign, and lighten the window frames."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the capsule has precise thin seams, lost glass edges and faint wall panel lines, with an even contour at the metal base. B: the rope is densely edged but the posts and lifebuoy have light, varied contours, with thin water rings. All three measures sit inside the real range for both cards, and neither shows an outline or uneven hierarchy that sets it apart.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the soles carry a thick dark contour, the cast shadow has a hard drawn edge, and the laces and mesh are packed with fine marks at 0.227 subject density, which is near the real 0.228 limit. Thin dark lines also run down the card's sides in the edge map. B: the flask has fine, thin glass lines with bubbles as the only dense detail, and quiet surroundings. Both are under the real outline range at about -0.10, so that field does not separate them.",
+   "fix": "Simplify the mesh and laces into large shapes with few lines, soften the shadow's edge, and let the sole's edge lighten on the lit side."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through even edge weight: a continuous contour of constant width round the hero, where real cards let edges taper or get lost on the lit side. Dark grooves replace thin seams, and edges spread into secondary areas such as outlined clouds, thatch, plank gaps, grass and speckled frost, so the background competes with the focus. Pair evidence is modest overall: confidence is 3 at most, and p11 gives no reason to choose."
+}

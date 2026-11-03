@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the white backboard is one big light shape, with a pale halo behind it and a dark pole and under-rim shadow, so three clear value groups (rms 0.13). B: the pink background collapses to one mid grey, and the blue sphere sits at nearly the same grey, so the hero separates by hue, not value. Only thin white ring edges and one dark crescent on the sphere stand out. Its rms of 0.064 is below the real range.",
+   "fix": "Darken the lower third of the sphere into one large deep navy shadow shape, make the background a clearly lighter pink glow right behind the sphere, and give the rings a darker underside."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the red case reads as one continuous dark mass (lid plus base) around one light group (cushion and coin). Its corners are very dark for this set (vignette 0.162, above range), and that is the point against it. B: the silver tanks are cut into hard light and dark vertical streaks, with black caps and mid straps breaking the hero into many small steps. Its key of 0.57 is just under the real range. The call is weak because both cards have an out-of-range number.",
+   "fix": "Shade each tank as one soft light side and one soft dark side with a gradual turn, no hard white streaks, and let the straps and caps merge into a single dark group."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a bright dome and walls on mid sky, nearly all light and middle values, with almost no true dark accent; only the blue band and door step down. It is the even, fully lit look of the generated lighthouses. B: a night scene with big black sky and building masses and small white lit windows and neon. It is simply grouped, but its numbers are outliers (mean 0.487, gap 0.284), which counts against it. I went with the lesson direction over those numbers, so confidence is low.",
+   "fix": "Let one side of the dome and wall fall into a broad darker shadow, and put a small deep dark accent in the doorway and under the blue band."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the mid-dark bottle sits on clipped white rays in simple groups, like the real camera card. Its key of 0.815 is high but comes from the yellow field. B: a white goal frame on a mid-grey pool, with a dark shadow patch under the ball and busy caustic lines, all explained by the water scene. Neither shows a value fault that points one way.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the flowers are many small mid shapes over a dark soil ring, on a two-step flat background. Its rms of 0.108 is only slightly under range. B: dark book covers with black under-cover shadows against white page blocks, in large clean groups. A is busier, but that comes from the subject, and the margin is too small to call.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a near-white cabinet on a pale grey wall and clipped white floor, so hero and setting sit one step apart. The only real darks are the rectangular window and control strip, and the side panel shading breaks into speckle. B is the computer shown as REAL in the lessons: a white body on a mid orange wall, a big dark screen and a dark desk base give a firm light, middle and dark split.",
+   "fix": "Put the cabinet against a noticeably darker blue wall, shade the whole right side panel as one calm mid tone, and darken the floor near the base with a soft contact shadow."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the binoculars are one heavy dark mass with deep black lens rings on a light floor, and the shadow joins that mass. It runs hard (rms 0.2, gap -0.277, both slightly out of range) but in the same direction as the real camera. B: the yellow arm is as light as the background, held apart by bright rims, with small dark joints scattered along it. The floor clips to white, and the green stripes break into speckle at their edges.",
+   "fix": "Darken the shadow side of the yellow arm into a continuous deeper tone that joins the dark joints, and calm the floor to a light grey with a soft darker fall-off instead of white."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a very high key (0.817, above range). The teal body is split into many mid patches with bright rims, and it floats in a blotchy white glow patch torn at the edges. The darks are small slivers under the body. B: the scarf is one big dark shape on a light swirl, with a black accent inside the neck loop and a small light badge, so the hero separates clearly by value.",
+   "fix": "Remove the bright glow behind the car, lower the yellow background one step, and shade the whole underside of the body as one broad dark teal shape with a deep shadow between the wheels."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a darker tray over mid wood with a real dark pocket under it, though white frost speckle scatters small lights over the lower edges. B: the phone is a gentle, even mid value on a clipped white floor, with only tiny darks at the feet and under the body. Vignette is -0.039, below range, because the light floor fills the lower corners. B's hero has little local contrast, a soft version of the generated pattern, so the call is weak.",
+   "fix": "Lower the floor to a light grey with a soft dark pool under the phone, and shade the phone's lower front into a broader, deeper green with a dark gap under the handset."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a white plane on clipped white clouds with mid sky, and a dark belly and engine intakes that group into one shadow side. Vignette of -0.056 is out of range only because clouds fill the corners. B: a flat single-grey background with a torn pale glow patch behind the hero. The body is bright with crisp thin rims, and the dark solar panels sit as separate blocks away from it.",
+   "fix": "Remove the patchy light halo behind the satellite, keep the background one calm tone, and shade the lower half of the gold body into a broad darker gold that links to the dark panels."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: dark blue shoes against a white floor, with a large mid-grey cast shadow and clear dark and light masses (rms 0.159). B: the glass flask and green liquid sit almost in the same grey as the wall, held apart only by thin white lines. There is no dark accent inside the hero, and rms of 0.081 is below range. It separates by hue alone.",
+   "fix": "Deepen the liquid toward the bottom of the flask into a dark green, add a dark band at the glass edges and the cork underside, and darken the wall so the flask's rim reads against it."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: nearly everything is the same mid grey, with the glass tube matching the wall and floor. Darks are only thin lines at the base and cap, and rms of 0.087 is far below range. Light glow strips scatter small lights around the card instead of forming a group. B: dark posts, ring and water masses against a light beach corner and pale rope, with strong grouping and rms of 0.169.",
+   "fix": "Darken the room behind the tube to a deep teal, make the cap and base undersides strongly dark, and keep the bright glow only inside the tube so one light shape stands out from a dark surround."
+  }
+ ],
+ "pattern": "In the lessons, generated cards push the hero up in value and light it evenly. Real heroes carry one or two large dark masses, such as the glove interior, the camera body and the screen. In the test pairs, heroes tend to sit at the same grey as their background and separate by hue, with thin bright rims doing the edge work. Dark accents are scattered small pieces, not one connected shape, and pale glow patches behind the hero tear into speckled edges. Floors and backdrops can clip to near-white. Low rms_contrast (p01, p11, p12) is the most reliable number; lightness_mean and vignette outliers often come from a yellow field, night setting or cloud layout, so they prove little. p02, p03, p09 and p10 are weak calls, and p04 and p05 give no value reason to choose."
+}

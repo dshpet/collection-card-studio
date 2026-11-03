@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the hearse is shortened into a toy. Bonnet and cabin are stubby, the fenders and bumper are fat rolls, the wheels are oversized, and the roof line is one soft swollen arc in the silhouette. B: the dock keeps straight plank runs and a tight corner at the post, and the boat hull is a clean pointed form with flat thwarts. Only the rope is a little thick.",
+   "fix": "Draw a long, low vintage hearse with true car proportions: a long bonnet, a long flat-sided rear body, slim bumpers and thin fenders, wheels in scale, a straight roof line, and tight corners on the windows and doors."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: a beach ball is a plain sphere with one centre cap, so the silhouette is a circle and has no corners. The extreme straight_share and solidity come from the subject. B: the pumpkin bucket keeps a slim arched handle, proper lug attachments and a defined rim, though its body is plump. Neither shows an error of form that I can trust.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "B: the captain's cap has a slim peak, a thin chin strap and a clean crown curve. It matches the real cap in the reference sheet. A: the map keeps crisp sheet corners and straight fold creases, and the magnifier has a slim rim and a believable handle. The feathered silhouette edge at the right of A is a mask failure on the map, not a form flaw.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the chest is a squat lump with soft shoulders and a domed lid that melts into the sides. The straps are thick, the padlock is oversized like a toy, and solidity 0.964 sits above the real range with no measured corners. B: the tray has a straight rim run and four distinct wells with clear gaps between them in the silhouette. The wells are soft, but the parts read in the right relation.",
+   "fix": "Draw a wider treasure chest with flat plank faces, straight lid edges and tight bevelled corners. Use thin iron bands and a small padlock in true scale to the chest."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the purple book is fattened. The spine is a swollen rounded bulge, the top-left silhouette corner is a soft blob, the cover looks padded, and the spine bands are sausage-like rolls. A: the teal book has a flat thin cover board, long straight edges and tight corners, with thin ribbon tabs. Its straight_share of 0.633 is only just above the real range.",
+   "fix": "Draw the book with thin flat cover boards, a nearly straight spine with a slight curve, and sharp cover corners with small bevels. Use thin spine ridges and small flat metal corners."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the flask has a true round body, a narrow neck, a thin lip and a cork in scale. B: the sports bottle has a believable waist, cap and thin carry loop with its opening kept, though the body contour is slightly soft. All measures are in range and neither form is clearly wrong.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the skull is a swollen clay ball. The cranium is hugely inflated over a short jaw, the teeth are soft pillows, the brow and cheeks are blobby, and solidity 0.978 with zero corners gives an almost featureless outline. B: the sneakers keep a shoe's true length, heel, toe spring and collar notch, with thin laces and a stepped outline, although the sole is chunky.",
+   "fix": "Draw a skull with true proportions: a smaller cranium, defined cheekbones, a narrow upper jaw, angular eye sockets with tight edges, and separate slim teeth with crisp gaps."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the bracelet is a thick smooth band with a clean inner opening and low charms, and it has few contour features. B: the bat has a compact body, thin wing ribs and scalloped wing edges, and its high corner_rate comes from the wing cusps. A slightly chunky band and a chibi bat body are both normal for this subject range, so I have no reliable call.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the spider web is built like a rigid toy. Strands are uniform thick rods, a heavy hoop circles the rim, bead knobs sit on every junction, and the strands read as doubled wire. thin_share 0.423 and solidity 0.403 are far outside the real range, though a web is naturally open. A: the whistle has flat side faces, straight runs, a crisp mouth slot and tight bevels, and its key ring stays thin.",
+   "fix": "Draw a spider web as fine threads that taper between anchor points, with no solid outer hoop and no knobs at the junctions. Keep the spokes straight and the spirals thin and slightly sagging."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the bare tree has a twisted trunk with branches tapering to thin tips. Its low straight_share and high thin_share are natural for branches. B: the spiral topiary has a stacked bumpy mass on a flat kerb ring with straight edges. Both are organic subjects with believable part relations, so the silhouette gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the flower bed is a toy. The flowers are oversized relative to the bed, the kerb stones are swollen pillows with blobby corners, and the outline is one domed mass with solidity above the real range. A: the balloons have true rounded forms with small knots, and thin strings and a thin bow survive clearly in the silhouette.",
+   "fix": "Draw a low flower bed with small flowers in true scale to the border. Make the kerb stones flat-topped blocks with straight sides and tight bevelled corners, and leave slim stems and gaps between the flowers."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the castle is squat and swollen. The towers are fat and splay outward to a wide base, the battlements are soft rounded lumps, the stone blocks are pillowed, and the roofs are heavy. A: the door keeps flat recessed panels, straight frame runs and tight panel corners. Its extreme corner_rate only reflects the wreath leaves that the mask isolated.",
+   "fix": "Draw a taller castle with straight vertical tower walls, sharp-cut square battlements with tight corners, flat stone faces and a slimmer gate arch, with towers and curtain wall in true proportion."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through inflated form. Objects are shortened and fattened into toys, with flat boards and blocks swollen into pillows and real corners softened into blobs. Thin parts such as straps, bands and battlements thicken into rolls, while attached parts such as padlocks and flowers grow out of scale. In the lessons the same bias appears as larger bulky bodies, soft rounded masses and extra decorative parts. Real cards keep slimmer proportions, straight runs and tight bevels. The measures only help where solidity is high with zero corners. Spheres, webs, wreaths and trees push the numbers out of range because of the subject alone."
+}

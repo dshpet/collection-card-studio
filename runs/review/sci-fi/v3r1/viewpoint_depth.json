@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cone floats and tips toward us, so the dark underside is a huge ellipse across the lower third, as much area as a side panel. No lesson real card shows this much underside; the camera sits below a lifted object with no ground to explain it. B: the envelope and photos share one slight tilt, with clean overlaps front to back. Its planar_share of 0.855 is above the real range, but a flat stack explains that.",
+   "fix": "Show the capsule from slightly above at a calm three-quarter angle, resting on a simple ground. Show only a thin sliver of the base, with the window turned gently to one side."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the bouncy castle has a mild three-quarter view from slightly above, and the near and far arches and the floor agree. Its 0.002 planar_share is very low, but an inflated subject explains the smooth rainbow. B: the asteroid floats with no ground, and its faces and craters give little camera information. Nothing is broken in either view.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the green bucket is seen from well above, with its inside showing, while the sand towers just behind it show almost no top faces, so the two do not share a camera height. B: the dome collar and round base both fit one eye level near mid-building, and the low hills sit behind the base. B's centred, whole building resembles the generated lighthouses, which keeps confidence low.",
+   "fix": "Use one low camera for the whole scene: show the bucket's rim as a thin ellipse, with the tops of the towers just visible at the same angle."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the comet sits on a diagonal with no ground. The lens shows its tail as one soft swollen form and barely registers the ice facets, which is weak evidence on a glowing subject. B: the scarf hangs flat to the viewer with a slight look into the neck loop, which reads as one view. Neither has a depth or angle fault.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "A: the ball fills the card and is seen from above, with sand behind it and no horizon. Its valve position and its shadow on the sand agree. B: the glass stands at a low, level view on a table with a straight horizon, a thin rim ellipse and a shallow base. Both hold one view and sit firmly on their surfaces.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the tube is drawn almost side-on, but the ring is turned about three-quarters and the four solar panels each skew differently, so the lens gives them unrelated flat colors. The parts do not share one view, and the Earth arc is just a flat layer below. B: the bike, car and road hold one rear three-quarter view. The hero overlaps the car and the car is cropped by the card edge, like the cropped real cards.",
+   "fix": "Draw the whole station from one camera angle: tube, ring and all four panels turned the same way, with the near panels slightly larger than the far ones and the panels lying in one shared plane."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "A: the bag has a gentle three-quarter turn on a level floor with a straight horizon. B: the booth is seen square-on with its inner side walls showing evenly, and the target is turned slightly on its easel with the bear in front. Each uses mild perspective, one view and clear overlap.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the pot has a small look down into its rim, with the foot ellipse matching and a straight table horizon behind. B: the book is seen from high above on a tilted plane that fills the card, with spine and page edges agreeing. A's 0.044 falls just below the real range and B's 0.706 just above, and subject explains both. Each holds one view.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the rocket is drawn in flat side elevation, yet the launch pad below opens as a wide ellipse from above, and the tower platforms high above the low horizon still show their floors. The eye height changes up the image. B: the bar counter, stool tops, foot rings and pool all recede from one high camera, with the roof cropped overhead, so the scene reads as a single space.",
+   "fix": "Keep one low eye level: make the pad a thin ellipse, show the undersides of the tower's upper platforms, and let the rocket and tower narrow slightly toward the top."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the globe's base ellipse tilts up to the right and floats with no ground, so the object leans and the base gives no level plane, while the ball and orbit ring follow their own axes. B: the balloons overlap cleanly front to back in one view against simpler clouds. Its 0.006 planar_share is below the real range, but round balloons explain it.",
+   "fix": "Stand the base level on a simple surface with a horizontal ellipse, and draw the arm and ring from that same slightly raised camera."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the sheet lies on a tilted table seen from high above, with the curled ends and plank lines rising the same way. B: the scroll is seen low with strong narrowing toward its far end. Its spiral end looks nearly face-on and the seal faces us, but the blue ledge tilts with it. B is forced but no worse than the real camera lesson, so this gives no clear call.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the vending machine is turned with clear convergence to the right from a mid-height camera, and its top and bottom edges agree. B: the tube is almost dead frontal on a shelf with a level edge. The cap shows a slight look from above and the crimped base stays straight, a small mismatch. Both are within what the real cards do on this vector.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards are mainly given away when parts of one object or scene do not share a camera. Examples are a side-on body with a turned ring or skewed panels, or a ground disc or prop seen from above next to a level-view hero. Unexplained extreme angles, such as a large visible underside, are the other tell. Generated objects also tend to float or sit whole and centred, while real cards use a calm low three-quarter view, a single level ground and cropping. planar_share rarely decides a pair, because flat or inflated subjects push it out of range on their own. On this vector most pairs stayed weak, and only p06 was a strong call."
+}

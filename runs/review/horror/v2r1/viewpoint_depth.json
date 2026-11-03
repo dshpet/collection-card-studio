@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the hearse is seen from a low, close camera with forced perspective. The front wheel and grille swell to well over the rear wheel's size, and the roofline and sills converge hard toward the back. The road plane also tilts relative to the horizon of hills. B: a high three-quarter view with one consistent water plane. The dock top, boat rim and thwarts share one mild perspective and read as even flat patches in the normals (0.509, the top of the real range).",
+   "fix": "Draw the car from further away with a longer lens: front and rear wheels nearly the same size, roof and sill lines almost parallel, road flat and level under all four tyres."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the pumpkin pail's body and face are drawn nearly head-on, yet the rim and candy pile are tipped toward the camera. The table meets the wall in a dead-level line behind it, and the body bulges as a smooth rainbow. A: the ball sits in one continuous sand plane seen from above with no horizon, and its top patch and contact shadow agree with that camera.",
+   "fix": "Raise the camera slightly and use it for the whole pail: the face curves around the body, the rim is a matching shallow ellipse, and the table top shows the same tilt."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: a single tilted plane fills the card. Map and boards are one even patch in the normals (planar_share 0.848, above the real maximum 0.667) with no background layer, and the magnifier is the only raised form. B: the hat sits on a floor that recedes to a wall corner, giving floor, hero and back wall as three layers at clear angles, as on real cards.",
+   "fix": "Lower the camera to a three-quarter view and show a back edge or wall behind the table, so the floorboards recede and the map and magnifier stand on a ground plane instead of filling the card."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the chest front is almost head-on while the left side and the domed lid ends also open up, which is a wide-angle spread on a boxy object. The stone floor reads from a higher angle than the chest base suggests. B: the ice tray has one calm three-quarter view, with top face, two sides and plank lines agreeing on a mild perspective.",
+   "fix": "Turn the chest to a clear three-quarter view with mild perspective: one side and the front visible, vertical edges parallel, and the floor at the same tilt as the chest's base."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: a high view of the book on a board surface with no back edge; its planar_share of 0.706 is slightly above the real range, driven by the flat cover and table. B: a similar high view with a level table-wall line behind and a rounder spine. Both books hold one mild perspective, with cover and page block agreeing, so the camera gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: a tilted flask floating on a flat background, with the mouth slightly open to the camera and no ground. B: a tilted bottle floating the same way, with the cap top and base curve agreeing on a view from slightly above. Both are single-layer, floating hero views with no foreshortening fault.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the skull is drawn head-on from low and close. The face and jaw push toward the camera as a swollen rainbow form, and it fills the card over a shallow ledge whose top is only a thin strip, with the front blocks cut by the card edge. B: the pair of shoes sits at a mild three-quarter view on a clean floor with a level wall line, and both shoes share one camera with matching foreshortening.",
+   "fix": "Pull the camera back and raise it a little: turn the skull slightly to one side, reduce the bulge of the jaw, and show more of the ledge top so the skull clearly sits on it."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the wings lie spread flat toward the viewer with almost no foreshortening, only a slight rotation, while the head and body are stacked balls in smooth rainbow. There is one hero layer pasted on the rings. A: the bracelet has a clear tilted ellipse, a narrower far band, and icons that foreshorten as they wrap around the band, all in one view.",
+   "fix": "Turn the bat slightly so one wing comes forward and the other recedes and shortens, with the body turned to match."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the web is a thin tilted disc of tubes with no real faces. Planar_share is 0.0, below the real minimum 0.023, and the rim's ellipse is the only depth cue, with the web seeming to hover flat on the diamonds. A: the whistle has a confident three-quarter view, with top, side and round end as distinct, even planes that all converge mildly.",
+   "fix": "Give the web a clear tilt with a thicker frame showing a top and side edge, near spokes larger than far ones, and a soft shadow on the background to set it in space."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the tree is a side-on elevation, and the hills behind are flat stacked bands with little ground recession. The grass reads as a backdrop, and planar_share is 0.003, below the real minimum. B: the topiary stands on a planter whose ellipse agrees with the curved path, grass and hedge, giving foreground, hero and background at one height. Its 0.009 is also below the real minimum, so the numbers do not separate them.",
+   "fix": "Set the tree on a ground plane that visibly recedes: a slightly raised camera, roots spreading on the grass at the same tilt, and hills that shrink and soften with distance."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: floating balloons overlap in clear depth order in front of soft clouds. Their low planar_share (0.006) is explained by round forms and sky. B: the flower bed's stone ring holds one high three-quarter ellipse on a level floor, though the blooms turn to face the viewer, which is more a design choice than a camera fault. Neither card has a spatial break.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the door is drawn straight on with near zero perspective, cropped by the card, with the wreath and ivy as a front layer. That is plausible, like the frontal real clock, although 0.012 is low for a flat door. B: the castle has a low, slightly upward view, with towers tapering, rims seen from below, and flat-front windows on round towers. The evidence points in opposite directions, so neither is favoured.",
+   "fix": ""
+  }
+ ],
+ "pattern": "On the camera vector, generated cards give themselves away when the camera sits close with a wide-angle feel. The nearest part swells toward the viewer (wheels, grille, jaw), and parts of one object can disagree on the view, such as a head-on body with a tipped-up rim. Weak spatial setups also recur: flat spread poses with no foreshortening, and whole-card tilted planes with no background layer. The lessons show the same swelling, a higher camera than the real card, and round or high table planes, against real cards' calmer three-quarter views. Here planar_share is only a supporting signal. Values above the real range come from single flat planes, while values near zero come from round or leafy subjects. Pairs with mild perspective on both cards give no camera reason to choose."
+}

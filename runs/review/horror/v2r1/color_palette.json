@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the hearse body is near-black with almost no hue, and its shadows lose colour (shadow_chroma_kept 0.392, below the real floor of 0.612). The only colour on the hero is thin gold trim and the purple curtains, while the green hills and blue sky carry all the chroma. B: the boat and dock stay orange-red into their shadows, against loud cyan water, with a clear hero-versus-background hue role. B is pushed but stays in range on every field.",
+   "fix": "Paint the black body as deep blue-violet black, with plum shadows and cool blue sky reflections along the roof and doors. Do not leave it dead neutral black."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the pumpkin pail is one orange from rim to base, and the wood tabletop and its grain are also orange-brown. The hero and the table merge into one warm family, and only the small candies and the lime wall break it (hue_families 2.83, below the real floor of 2.972). This matches the lesson gloves, where generated leather went more orange. A: the beach ball has separate red, blue, green and lilac panels with pale neutral panels against the sand, though its red-orange sand shadow is strong.",
+   "fix": "Make the pumpkin a slightly muted natural orange with brown-red shadows. Make the table a dull grey-brown wood so it does not match the pumpkin, and keep the candies as the only bright mixed colours."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "B is the captain hat from the real sheet: navy, off-white and gold on brown wood. A: the map has a blue sea and tan land on similar orange-brown wood, with a grey metal ring and black handle as neutrals. Its chroma and hue counts sit beside B's, and nothing on it shows a colour fault.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: magenta bleeds through the card. In the lens the chest planks fall into pink-magenta and the grey floor into mauve, so hue_families is 2.62 (below the 2.972 floor) and warm_share is 0.857 (above the 0.853 ceiling). The thin acid-green line along the metal band is a stray accent with no local-colour reason. B: pink tray, blue ice, cyan background and orange wood stay separate masses with frost-white neutrals, and all fields are in range.",
+   "fix": "Keep the chest wood a natural brown and the iron bands a neutral grey, with no pink tint from the background. Make the floor plain cool grey stone and remove the green glow line."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: a teal cover on streaky orange wood with a saturated red-orange cast shadow, plus many small sticker accents (hue_families 6.22, slightly above the ceiling). B: a purple cover with gold fittings on an orange striped wall and wood, a simpler hero-versus-ground split, but the pages also go warm cream. Each has a small warm-bias flaw and neither fault decides the pair.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: pure neon green liquid sits in a fully saturated violet field. The background is louder than the hero (chroma_background 0.2467, above the 0.217 ceiling) and the card has almost no warm or neutral rest (warm_share 0.023, hue_families 1.75, both below real). Only the cork is warm. B: a blue bottle on a yellow-orange burst is also simple, but it uses a clean complementary split inside the real ranges for chroma and warm share.",
+   "fix": "Lower the purple background to a calmer, dustier violet and make the liquid a natural bottle green with darker olive depths. Show a warm glass highlight and a warmer cork so the card has some warm rest."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the skull is grey-white on grey stone, so the hero barely has a hue (chroma_subject 0.0233, against a real floor of 0.070). The whole card is cold (warm_share 0.016). Only a tiny orange mark and the cyan wall hold colour, and the shadows stay plain grey. B: blue shoes with many lime, teal and pink accents are busy (hue_families 5.49), but the hero has real chroma against an orange and cream ground.",
+   "fix": "Paint the skull as warm ivory bone with peach in the lit areas and soft violet-blue shadows. Tint the stone slab with warm brown-grey patches and make the orange ornament larger."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the bat's dusty purple turns grey-mauve in the lens, and its shadows lose richness (shadow_chroma_kept 0.682, below the 0.741 floor). The yellow rings fill the card with warm colour (warm_share 0.818, above the 0.727 ceiling). A: the band has a pink-to-orange shift and orange icons with lively hue changes against cyan. It is loud at chroma_subject 0.1921, just over the ceiling, but its colour stays rich into the shadow.",
+   "fix": "Make the bat a richer violet with saturated magenta-purple in the wing membranes and deep indigo shadows. Cool the yellow background slightly toward paler lemon."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the web is almost pure white-grey on flat pink, so the hero has virtually no hue of its own (chroma_subject 0.0304, far below the 0.082 floor). In the lens it dissolves into pale pink-grey. Shadow chroma is 1.99, well above real, and the only accent is one tiny orange drop. A: the whistle has a strong orange hero, red-orange shadow planes and a pale yellow pattern. It is very warm, but the hero clearly leads the background.",
+   "fix": "Give the web a clear colour, such as silvery lilac strands with blue-violet shadows, and add bigger coloured dew drops. Deepen the pink behind it so the web stands out."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the trunk is a pushed orange-brown while the branches turn a separate cold grey, so the tree has two unrelated colours on one object. The green hills and blue sky sit apart from it, and the chroma_subject of 0.0645 is low against its loud sky (chroma_background 0.1486, just above the ceiling). B: the topiary keeps one believable green family from lime highlights to deep green shadows, and the pale paving and stone ring give it neutral rest.",
+   "fix": "Paint the whole tree in one bark colour, a muted red-brown, from trunk to twig tips, with deep plum-brown shadows. Quieten the sky a little."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: red, orange, teal and purple balloons on sky blue with pale clouds as neutrals. B: a rainbow of flowers on a magenta wall and pink floor, with a warm tan stone ring. Both use many pure hues by design, and each misses one range slightly (A background 0.1071 low, B warm_share 0.852 high). Neither shows a decisive colour fault.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: a saturated blue door, orange frame and green ivy, all loud, with few neutrals but clear local colours. B: grey-mauve stone, a purple roof and a green hill, with a low subject chroma of 0.0583 and a slightly high shadow_chroma_kept of 1.448. The stone's calm grey balances the loud sky. The small out-of-range values are not enough to call either card.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards break down in how they handle colour on the hero rather than in loudness alone. Most often the hero loses its own colour story. It is either near-neutral with plain grey or black shadows (hearse, skull, web), or locked to one hue that merges with the ground (orange pumpkin on orange wood, chest planks tinted by the magenta background, purple potion field louder than the liquid). The lessons show the same habit in the other direction: whites drift to cream, wood and leather drift to orange, and real cards keep cooler neutrals and more muted brown-reds. Stray hue splits with no local-colour reason also appear, such as a green glow line on the chest and an orange trunk with grey branches."
+}

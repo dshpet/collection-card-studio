@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: many narrow, hard-edged orange rays run to every edge, tighter than the wide rays on the real glove and camera; background detail 0.0072 is under the real floor. B: wide, soft blue rays with a calm pale centre, like the real baseball-glove card. Neither card has props.",
+   "fix": "Use about half as many sunburst rays, wide and soft-edged, with only a small value step between light and dark rays."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: plain purple gradient with a soft floor and a dark shadow band at far left. B: pale tone-on-tone music notes and stars scattered on blue, quiet and on topic. Both measure in range and neither backdrop competes with the hero.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: whole station centred in frame, with a pinprick star field and an added Earth arc along the bottom, the tidy built-up stage seen in the generated lighthouses. B: bike cropped against a large car with road and hills, like the real cropped cards. B's 0.0443 detail is over range, but spoke gaps in the mask inflate it, so it is weak evidence.",
+   "fix": "Remove the planet and the star speckle; put the station on a plain deep-blue gradient, or crop into one large quiet shape behind it."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: scroll on a glossy blue ledge with a blotchy oval reflection under the ribbon, against an empty dark-blue field; detail 0.0072 is under the real floor. B: wood planks with a quiet tone-on-tone sparkle wall, which matches the real suitcase-on-planks staging.",
+   "fix": "Make the ledge matte with one soft contact shadow, drop the oval reflection, and add a faint tone-on-tone pattern to the wall."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: dozens of thatch shingles, a tiled pool, four stools, fruit and two cocktails spread across the frame with no central hero; detail 0.0569 and edges 0.144 are both over the real range. B: rocket with one large tower on a plain pad, with sky, field and a few bushes as large quiet shapes. The tower is a big secondary prop, but the load is in range.",
+   "fix": "Pick one hero, the drinks on the counter, and centre it. Reduce the roof and pool to a few large plain shapes and remove the stools and fruit."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: flat magenta field with almost no gradient and a hard-edged grey ledge across the bottom; detail 0.0064 is the lowest of the set. B: soft purple gradient with a gentle floor glow and no pattern. Both are very plain, and A only slightly more so than the real ledge staging.",
+   "fix": "Give the wall a soft light-to-dark gradient and a faint tone-on-tone pattern; soften the ledge front edge."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: centred observatory on one hill with clouds and a half sun, all large quiet shapes. B: sandcastle with bucket and spade, plus pebbles and sand ripples. B's props are purposeful and large, and the measures are near equal, so staging does not separate them.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: strong white-and-pink stripes behind the arch, with a bright central stripe through the opening; detail 0.0135 and edges 0.027 sit just over the real range, and the same subject on the real card is calmer. B: quiet tone-on-tone diamonds fading into a warm floor, in range, with no extra props.",
+   "fix": "Lower the contrast between the stripes so they read as one pink tone, and remove the buds that stick out past the arch outline."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: an evenly repeating green diamond pattern runs edge to edge, and the globe carries invented gold stars plus a decorative ring it would not need. A: open sky with a cloud bank, like the real lifeguard card, and no added decoration.",
+   "fix": "Remove the stars and the orbit ring, make the globe plain, and soften the diamonds so they fade toward the corners."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: dark purple diagonal waves with no props. B: blue concentric spiral with a bright centre behind the scarf and no props. Both are single-colour graphic fields of a kind found on real cards, and both measure in range.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: saturated blue stripes over streaky wood, with a pale glow halo around the three bulbs visible in the lens, and the bulbs themselves are invented whimsy. B: a single wood surface with a soft shadow and no backdrop. Its stickers and tabs belong to the object, though the grain is streaky too.",
+   "fix": "Remove the glow around the bulbs, calm the stripes to a near tone-on-tone, and use fewer, broader wood grain lines."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: pale yellow concentric rings with a floating capsule, slightly under the detail floor at 0.0070. B: green concentric rings with dark corners, like the real submarine card. Both are clean category 1 cards with quiet tone-on-tone rings.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through staging that is too tidy and too built-up. In the lessons the whole object sits in frame on an invented base (rocks, rope, life ring, round table), where real cards crop in and leave the scene out. Rays are denser and harder-edged, and halos sit behind the hero. On the test pairs this signal is weak: the backdrops mostly measure in range, and only p05 and p08 clearly stand apart on the numbers. Caveat: the test subjects skew toward a sci-fi theme, which may mark generated cards, but I did not use subject matter for any answer, so p05 and p07 rest on staging alone."
+}

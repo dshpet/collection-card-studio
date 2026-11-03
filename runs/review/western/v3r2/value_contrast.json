@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the submarine body is nearly one clipped-white mass on a very dark green field, with a pale halo ring and almost black corners. Its lightness_gap (0.322), rms_contrast and mean are all outside the real range. B: the feeder sits mid-grey between a black trunk and foliage and a white path. It is busy, but only rms_contrast and, marginally, vignette miss the range.",
+   "fix": "Lift the background to a medium value, remove the bright ring around the submarine, and let the yellow hull roll off from a mid tone into a soft shadow so that it is not nearly all white."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the dark values break into thin black truss pieces at the card edges and the spotlight cones cut hard light shapes, so the corners stay lit (vignette -0.1, outside the range). The floor also has a white pool. A: the horse is a calm mid-grey against a pale sky, with its black in the mane and tail. A's lightness_gap of -0.286 is also out of range, so the call is weak.",
+   "fix": "Merge the stage truss into one dark background shape, soften the spotlight beams, and darken the top corners gently."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the wooden table is broken into many alternating light and dark streaks that compete with the flat mid-grey book cover, and the page edge and sticker outlines are thin hard white lines. B: three simple groups: a light wall, a mid ground, and a bale with a light top and one dark contact shadow.",
+   "fix": "Paint the table as one calm, mid-toned surface with only faint grain, and give the book a soft gradient across its cover."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the base of the lamp breaks into small hard black and white flecks, and the dark ray wedges pile up in the corners (vignette 0.144, above the range). B: the pan is built from large soft grey reflections with one dark crescent, and vignette is within the range.",
+   "fix": "Shade the brass base with a few broad, soft tones instead of many small black and white reflections, and lighten the card's corners."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the glass and ice clip to large white areas with fine hard flecks, set against a near-black diamond wall with a lighter patch behind the hero (gap 0.257, above the range). B: the jug has three broad groups, with a soft highlight rolling into a large dark side and one soft cast shadow. Its rms of 0.101 is low, but the grouping matches the real cards.",
+   "fix": "Keep the drink in a warm mid tone with only a few small white highlights, and lighten the purple wall so that the glass does not jump out as pure white."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the towel is close in value to the field, so it separates mainly by hue. Its surface breaks into fine speckle in the lens, and rms_contrast of 0.076 is below the real range. Its darkest accents are only tiny corner squares. B: the bandana is a clear dark mass on a light rayed field, with broad folds and black at the knots.",
+   "fix": "Make the towel's stripes clearly lighter and darker than the green background, add a soft dark shadow under its folds, and remove the fine speckled grain."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cactus sits in the same middle value as the orange wall and sand, so hue does most of the separation. The right side of each limb cuts to a hard black strip, and the background shows blotchy patches (rms 0.104, below the range). B: the slide has larger light and dark sweeps, a white deck and a dark underside, so the groups read more clearly.",
+   "fix": "Make the wall a clearly darker or lighter value than the cactus, and turn the black strip on the cactus's right side into a soft, gradual shadow."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: a compact dark coach with light wheels sits on a pale sky and ground. B: a light seat train and dark rails sit under a blue sky that darkens at the top. Both are hero-darker-than-background cards with nearly the same lightness_gap (A -0.215, B -0.217), and B's vignette of 0.117 is only slightly high. Nothing on value decides it.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the barrel stays in the same middle grey as the wall, with patchy light streaks across the staves and only small dark accents at the rivets and seams (rms 0.105, below the range). B: the cart has a strong dark cabinet, a white awning, a light pavement and clear groups (rms 0.14).",
+   "fix": "Give the barrel a darker shaded side and deep dark gaps under the metal bands, so that it stands clearly apart from the lighter wall. Smooth the wood into broad, even tones."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the soles nearly match the bright background and dissolve in the lens, leaving only clipped white straps and thin dark rims. The mean of 0.795 is just above the real range. A: the hat is one light mass with a soft roll-off on a flat dark field, although its mean of 0.565 is just below the range.",
+   "fix": "Darken the sandal soles or the background so that the whole sandal shape separates from the background, and soften the white highlights on the straps."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the lantern's metal is cut into many hard black and white slivers, the same busy chrome-like local contrast seen on the generated gloves. It also has a thin white glow at the horizon. A: the vending machine body is a single broad dark mass, with its lights gathered in the window and tray.",
+   "fix": "Paint the lantern's metal with broad, soft grey shading and only one or two highlights, and keep the darkest values together in one shape."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the cabinet clips to a large white block, with a hard black hatch and dark wall shadows at the left edge. The corners do not darken (vignette -0.03, the bottom of the range). A: the sleeping bag is a simple dark mass with a soft bright dome behind it, on a mid-toned lawn, although its gap of -0.247 is slightly out of range.",
+   "fix": "Bring the pink cabinet down from white to a soft mid-light tone with gentle shading, soften the black hatch, and let the card's corners fall off a little."
+  }
+ ],
+ "pattern": "Generated cards still split value into many small, hard pieces instead of a few broad masses. Heroes show fragmented black and white chrome-like flecks and thin hard rims, and highlights clip to large whites. Darks are scattered in slivers rather than gathered into one shape. Backgrounds often carry either a halo or glow ring behind the hero with dark corners, or busy streaks and speckle that compete with it. When contrast is low, the hero sits in the same value as the background and separates by hue alone. Most calls here are low confidence, because several pairs were close on value and p08 gave no reason to choose."
+}

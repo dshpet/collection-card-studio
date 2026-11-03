@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the jacket is lit almost head-on. Its torso and sleeves stay at one mid value, with dark pushed only into cuff openings, the collar and pocket creases, so it reads as padded clay. B: the hat has a real light-to-shadow turn, with a lit left crown, a darker right crown, and a deep shadow under the brim on the right. A pale rim runs along the brim, like the real glove's edge. B's shading_range of 0.831 sits just above the real band, so the case is modest.",
+   "fix": "Light the jacket from the upper left. Let the right sleeve and right side of the torso fall into a clear, cool shadow, with a soft dark band where the form turns away."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the wheel is lit from the front. The ring and spokes carry the same soft value on both sides, with no shadow side. The only dark is a soft pool around the base, plus a sheen on the gold hub. B: the bottles have a clear side light, with shadowed flanks and long cast shadows on the planks. Both cards measure low on shading_range, but only B has a light direction you can follow.",
+   "fix": "Light the wheel from one upper side. Keep the top-left of the ring bright, turn the lower-right of the ring and spokes into a darker shadow side, and have the spokes and post cast shadows onto the post and deck."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the scarf has broad sheen along its edges and dark smudges down the folds, with little overall light direction. form_contrast is 0.256, below the real band, and light bias is weak. The lens shows the tails as dark streaks rather than turning planes. B: the rope coil has lit tops and shaded undersides on each loop, and form_contrast of 0.451 is inside the real band. The rope's shading is gentle, so this is a weak call.",
+   "fix": "Light the scarf from the upper left. Make the left folds bright and the right folds fall into deeper shadow, with each fold having one lit side and one dark side instead of glowing edges."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the wagon's lens stays warm brown across the canvas and frame, with a soft, clay-like turn. The dark sits mainly in the hood opening and in a flat cast shadow on the ground. Light bias of 0.674 is just above the real band. A: the boat has top-lit deck planes against a hull side that falls away, and the dock and post drop soft shadows onto the water, like the real planar cards. Both are plausible, so B is only a slight lean.",
+   "fix": "Add a cooler, clearly darker shadow side to the right of the canvas cover and the wagon body. Let the ground shadow fade softly toward its far edge."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the saddle has soft sheens spread across the seat and flaps, with little difference between its left and right. Light bias of 0.083 is below the real band. Only the fence shows a clear cast shadow. B: the computer has a bright front face against a blue-shadowed right side, the same plane-by-plane break as the real computer card, with a soft shadow behind the mouse.",
+   "fix": "Light the saddle from the upper left. Make the seat and left flap bright, drop the right flap and the underside of the seat into a clear cool shadow, and tighten the sheen to one or two spots."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the barrel is lit broadly from the front, with a gentle, clay-like roll across the staves in warm grey-brown. Only its edge is darkened, so form_contrast is a low 0.427. A: the chest has a bright lid top with a strong dark right end, a shadowed interior and side planes, and soft sea-floor shadows. Its form_contrast of 0.691 sits near the top of the real band. Its shading_range of 0.906 is marginally over, but its turn matches the real cards.",
+   "fix": "Move the light to the upper left of the barrel. Make the left staves bright and the right staves fall into a deep, cool shadow, with a narrow dark band where the bright side ends."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the saloon doors are lit square-on, so their faces and the posts are one flat value, with a soft horizontal shadow on the floor. B: the sneakers have a clear side light, a cooler shadow side and a dark cast shadow to the left. Both cards measure over the real shading_range and well under the real light bias, so the numbers do not separate them. A is chosen only for its frontal, shadow-side-free light.",
+   "fix": "Light the doors from the upper left at an angle. Put a dark side on the right of each post and let the slats and door frames cast small shadows onto the panels."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the rose arch has no overall light direction. Its leaves and roses carry similar values on both pillars, form comes from dark gaps between leaves, and the floor shadow is a faint soft patch. Light bias of 0.14 is below the real band. A: the cup has a clear left-to-right turn across its body, a dark right side, a lit inner rim and a firm cast shadow on the table. Light bias of 0.359 is inside the real band.",
+   "fix": "Light the arch from the upper left. Make the left pillar's leaves brighter and darken the right pillar's outer side, then let the arch cast a clear shadow onto the floor."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the boot has smooth sheen on the toe and a thin pale line tracing the sole, collar and strap, which matches the thin edge lines on generated gloves in the lessons. Its turn is even and gentle. B: the cap has a pale, flat board with a crisp corner, and the band beneath falls dark in a clear plane break. Its shading_range of 0.847 is just over the real band, so this is a weak lean.",
+   "fix": "Drop the thin bright lines along the boot's edges. Give the shaft a bright left side and a dark right side, and let the toe's highlight be one soft patch."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the book has a light from the upper right, a pale cover and a large soft cast shadow to the left on the table. B: the sign has neon as a practical light, a dark night scene and glow on the arrow, with some warm rim on the porch. All three fields sit in the real band for both cards, and each light setup holds together, so my vector gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the train has pale lines along nearly every edge and a smooth band across the boiler, with very little contact shadow on the rails. Its shading_range of 0.906 is the further over the real band. A: the coaster cars have broad soft top light, darker lower sides and a clear turn on each seat. Both cards sit under the real light bias, so the lean rests on B's edge lines and weak grounding.",
+   "fix": "Remove the bright lines around the train's edges. Light it from the upper left, leave the right of the boiler in shadow, and put a dark soft shadow under the wheels on the rails."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the popcorn cart is lit softly from the front, so the cart body, awning and wheels stay at close values in a warm grey. The shadow on the paving is faint. Light bias is 0.278. A: the cactus has a bright left, a dark right core down each rib, and a firm blue-violet cast shadow. Its light bias of 0.609 sits well inside the real band and looks like the real shadow side.",
+   "fix": "Light the cart from the upper left. Darken the right face of the cart body and the underside of the awning, and add a clear cool shadow on the paving beneath and to the right of the cart."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through soft, near-frontal light. Forms keep close values on both sides, without the cool, clearly darker shadow side and narrow core band seen on the real cards. Depth comes instead from dark crevices, thin pale lines along edges, and warm clay-like shadow, with no change of plane. Sheen spreads broadly, and cast shadows are faint or disconnected from any light direction."
+}

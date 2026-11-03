@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: submarine in a plain side-on three-quarter view with one continuous smooth body and no ground, and every part shares that view. B: the top of the feeder's roof reads as a broad up-facing green plane, as if seen from above. The park's pavement line sits at about y=320, through the feeder, which puts eye level below the roof. Roof and background do not share one camera height.",
+   "fix": "Lower the camera to feeder height: show only a thin sliver of the roof top, or match the park ground to a raised viewpoint so the horizon sits above the feeder."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: horse in near-profile on dirt ground, hooves planted at one consistent low angle, with simple fence and hills behind it. B: the guitar body faces the camera almost flat-on, while the stage boards are seen from well above and fan out strongly. The neck narrows sharply as it recedes. It stands on the floor without sitting on that plane.",
+   "fix": "Tilt the guitar back onto a visible stand at the same angle as the stage floor, keep the neck width nearly even, and calm the fan of the floorboards."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: book seen from high above. Cover and wooden table are nearly the same colour in the lens, so hero and ground merge into one plane, and only the lower and right edges give depth. planar_share 0.706 is above the real range. B: hay bale from a low three-quarter view with clear green top, blue end and pink side, and a horizon behind it that agrees.",
+   "fix": "Lower the camera so the book's page block and spine are clearly visible, and let the tabletop recede behind the book at a shallower angle."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: lamp seen nearly level, with a thin ellipse at the chimney top and base. The whole thing is one smooth rainbow with almost no flat patch (planar_share 0.003, below the real range), and no ground or depth layer. B: pan tilted toward the viewer, with rim and inner floor ellipses that agree and a clear flat floor patch. This call rests mostly on the number.",
+   "fix": "Raise the camera slightly so the base shows a clear flat top ring, and add a soft ground shadow under the foot."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: glass with thin rim ellipse and deeper base ellipse on a plain purple table, which is correct for a mild view. B: jug seen nearly front-on, with shallow ellipses and a straight plank table behind. Both have one horizon band and one consistent mild camera.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: towel floats tilted back with mild narrowing toward the far edge, and no ground. B: bandana floats front-on with a small view into the fold at the top, and no ground. Both are floating icons on flat backgrounds, each with one consistent view.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: cactus dead frontal on low dunes, with one simple low camera (though planar_share 0.005 falls below the real range). B: pool deck and water edge sit low, implying a low eye level around y=370, yet the slide's upper trough and platform at about y=150 still show their top faces. The spiral also swings hard toward the viewer, with a mixed view between top and bottom.",
+   "fix": "Keep one camera height for the whole slide: show the underside of the raised platform and trough, or raise the deck horizon. Keep the curve's near end only slightly larger than the far end."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: stagecoach in a calm three-quarter view, with wheels at matching ellipses on flat sand and mild perspective. B: forced wide-angle view. The front coaster car is far larger than the rear ones, cars shrink quickly up the loop, and the support legs converge sharply. Real cards use mild perspective.",
+   "fix": "Move the camera back and use a longer lens: draw the coaster cars nearly the same size, side-on on a gentle curve, with supports close to parallel."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: barrel with lid ellipse and hoop curves that agree, seen moderately from above, on a plain floor. B: cart in a mild three-quarter view with cobbles on a low ground plane and near-round wheels. Neither shows a clear break in view, and the planar shares match.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: hat floating at a low three-quarter angle with a tilted, swooping brim. B: flip-flops seen from above as a parallel pair with thick sole edges. Both are floating objects with one view each and mild perspective, and the planar shares match.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: vending machine's near corner is much taller than its far left and right edges, and the top and bottom edges pinch sharply toward each other. This is a stronger two-point squeeze than the mild perspective on real cards. The floor line is a soft blurred band. B: lantern frontal, with one mild view, a base ellipse seen from above and a straight table edge.",
+   "fix": "Use a longer lens: keep the top and bottom edges of the machine nearly parallel, with only slight narrowing to the far side, and draw a clear floor line behind it."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: sleeping bag's near round end looms over a shrinking far end, with large grass tufts in front. Almost no flat patch (planar_share 0.021, below the real range). B: claw machine's console top and the cabinet's inner ceiling agree on an eye level at mid-height, and clean flat wall and floor patches sit in one room corner.",
+   "fix": "Turn the roll more side-on so both ends are nearly the same size, make the grass shorter and even, and draw the ground at one calm angle."
+  }
+ ],
+ "pattern": "Generated cards are given away less by their rendering than by the camera. The hero sits closer and larger with stronger wide-angle convergence: the near part swells while far parts shrink fast. The lessons also show a higher camera than the real cards, with too much top face, and sometimes a curved or tilted ground plane. Some cards break the single-view rule, showing the top of a part (a roof or platform) that sits above the ground plane's eye level. Real cards hold one mild camera, one calm ground plane and flat planes in clean patches. Most test calls here are low confidence."
+}

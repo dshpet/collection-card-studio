@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the whole towel carries an even, pebbly terry grain, the same size across yellow and orange stripes and over the folds, while the rim is smooth rubber. B: the calculator has clean satin keys and a matte body with crisp numerals and no surface noise. Both measure above the real detail range (A 0.0995, B 0.0739), so this is a weak call. A's all-over noise is the larger departure from the quiet surfaces on the real cards.",
+   "fix": "Soft towel with only a faint, fine fabric nap that fades out on the folds, no pebbly noise, and a stitched fabric hem instead of a rubber rim."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: polished brass with narrow bright highlight strips and a sharper rim edge, set against frosted glass with soft window glints, so it mixes two clear finishes. B: stem, arms and base share one soft satin gold with blurred highlights (highlight share 0.005 against A's 0.045). The wax is equally soft, and the gold reads closer to painted resin than metal.",
+   "fix": "Polished brass candelabra with narrow, crisp bright reflections along the stem rings and arm edges, darker reflected bands, and matte wax beside the shiny metal."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the pumpkin rind is one waxy orange skin with scattered dimples and a few soft glints, and the stem has the same smooth finish. Gloss share 0.011 and detail 0.0152 are both below the real range. B: the duck reads as true moulded plastic with a satin sheen and a separate metal spring, and its numbers sit nearer the real range.",
+   "fix": "Pumpkin skin with a soft satin sheen on the ribs, a dry matte fibrous stem, and a few fine pale flecks instead of dimples."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: fountain stone is smooth and matte with clean moulded edges, and glossy water gives a clear gloss contrast. B: the cat's body is covered in a fine fuzzy felt-like grain with hair-scale noise on chest and tail, which is a texture layer the smooth real cards do not carry. Collar and bell are smooth by contrast.",
+   "fix": "Cat with smooth, softly shaded dark fur shown as a few large soft tufts, no fine fuzzy grain, and a brighter satin sheen along the head and back."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the cap has a smooth satin board with a crisp corner highlight, and a matte gold band and tassel. B: the hat cone has a soft mottled airbrushed shading, the fabric reads as rubbery clay, and the buckle has the same soft finish as the belt and has no metal shine. Both caps of fabric lack weave, so the difference is small.",
+   "fix": "Felt witch hat with a dry matte surface, soft creases at the bend, a fabric band with a fine stitched edge, and a shiny metal buckle with a sharp highlight."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "A is the lighthouse shown as REAL in the lessons, with plain bricks and smooth satin red paint. B: the facade has many more small marks, including tiled roof courses, inset stone blocks, chipped masonry and a cratered moon, spread over every surface at about the same density. The purple trim has a uniform glossy finish.",
+   "fix": "Fewer stones and tiles, larger plain wall areas with only a few blocks shown, smooth satin roof with broad simple shingles, and no marks on the moon."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cauldron's iron reads as lacquered blue plastic with one big soft highlight, and no casting texture or matte iron areas. B: the gloves are soft and low in detail (0.0118, below range) with no stitching, but their dull red sheen and thumb creases sit closer to the real glove lesson. This is a material-truth call that runs against the numbers, so confidence is low.",
+   "fix": "Dark cast iron cauldron with a matte, slightly rough body, a dull narrow highlight on the rim, and no large glossy bloom on the belly."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A is the lion from the real sheet, with smooth polished stone and thin marble veins. B: the canvas body has a visible even weave, the patch has a chunky dashed stitch line, and the handles are glossy plastic with no leather or fabric cues. The dashed stitches match the added stitching on the generated gloves in the lessons.",
+   "fix": "Bag with a smooth matte fabric and only a hint of weave, a patch with a thin, barely visible seam, and fabric or leather handles with soft low sheen."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the scarf is smooth and rubbery with no weave, like the quiet surfaces on real cards, and the badge has a crisp bevel. B: broom bristles are thick rounded strands like noodles, repeated across the head and in the red binding, which enlarges fine straw into chunky toy detail (detail 0.0407 against A's 0.0143). The handle is smooth with almost no grain.",
+   "fix": "Broom head of many thin dry straw fibres with fine tips, a matte finish, a dull twine binding, and a wooden handle with subtle grain."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the coffin wood carries a dense, even layer of fine scratch-like grain across every plank, and it stops abruptly at the smooth pale cross. This reads as a texture overlay, unlike the broad, quiet grain on the real barrel and podium. B: the stone is matte with sparse cracks and soft mottling, and the tiles have a slight sheen.",
+   "fix": "Coffin wood with a few long, soft, widely spaced grain lines, satin sheen on the lid edges, and the same wood finish on the cross."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the inside of the ball is an airbrushed cloud smear with no defined edges, and the surface glass only appears at the rim and a top-left glint (detail 0.0109, well below range). B: the glass has defined wall thickness and straight reflection bands, and the ice has faceted translucent edges, so its materials are better separated.",
+   "fix": "Crystal ball with clear thick glass, a crisp curved window reflection, sharp bright rim light, and defined swirling mist with visible soft edges inside."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: sneakers have smooth rubber soles, fine dot mesh on the toe and satin laces, a clear gloss mix within one object. Its gloss share of 0.267 sits at the top of the real range. B: the gravestone is near-photographic rough stone with fine pitting, mottled scratches and hair-thin moss. It has no smooth stylised planes and almost no gloss (0.052), so the surface is far from the smooth stone and marble on the real cards.",
+   "fix": "Stylised gravestone with smooth soft-edged stone, a few simple clean cracks, a light satin sheen on the top edge, and moss as simple rounded soft shapes."
+  }
+ ],
+ "pattern": "Generated cards mostly give themselves away by an even surface layer that the real cards do not have: all-over grain, fuzz, scratches or pitting at one mark size, applied across the object regardless of form or light. Dashed stitches and fine strands are enlarged into chunky toy details, or brick and tile marks are spread too densely. At the other extreme, some generated cards go airbrushed and single-finish, so metal, wood, iron and fabric all share one soft sheen with blurred highlights. Real cards stay quiet: broad smooth planes, few and small details, and clearly mixed matte and shiny areas with crisper highlights."
+}

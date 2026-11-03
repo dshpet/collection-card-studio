@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both are category 1 on tone-on-tone concentric rings. A's rings are broad and even across the card, and the hoop and pole run off the bottom edge. B's rings are tighter and darker, with a soft white-pink halo around the sphere like the glow on the generated glove. B's background detail (0.0064) is below the real range (0.008 to 0.015).",
+   "fix": "Flat pink backdrop of wide, soft tone-on-tone rings with little contrast. No glow or halo around the sphere. Keep the rings evenly lit right up to the object's edge."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both are category 1 on sunburst rays with no props. A's cyan rays are wide and run cleanly to the corners, with detail of 0.0138 inside the real range. B's purple field has soft rays and a blurry magenta bloom under and around the jetpack; its detail of 0.0067 is just below the range. The gap is small.",
+   "fix": "Purple sunburst with clear, wide, evenly spaced rays reaching the corners. Remove the pink glow around the tanks."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A is a clean blue sky with two cloud clusters, low hills and small grass tufts along the front edge. It is very empty, and its detail (0.008) and edges (0.01) are both below the real range. B is a busier night scene with a balcony railing, lit windows, fence, tree and stars, but it reads as one coherent place and sits inside the range. B has the heavier environment, yet A is the one that falls short of real cards here.",
+   "fix": "Crop in so the building runs off the bottom edge and sits on a real ground surface. Use larger, fuller clouds with soft shading and a sea or landscape band with some surface texture. Remove the scattered grass tufts."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A is category 1 with hard, high-contrast yellow and orange rays filling the whole card, stronger than the softer rays on the real camera card. B is a true category 4 pool scene with caustics, lane lines and reflection. It looks high against the listed range (detail 0.0168, edges 0.025), but that range is the flat-field one, and B fits the environment range seen in p03 and p12. The call rests mainly on A's ray contrast, so confidence is low.",
+   "fix": "Lower the contrast between the rays and soften them so they stay tone-on-tone behind the bottle."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A is a flower bed on a plain pink floor with a sharp horizon and a harlequin diamond wall. The same diamond backdrop appears on the p10 satellite, and A's detail (0.0068) and edges (0.007) are below the real range. B is above the range (0.016, 0.04) with a window, foliage and a drawer unit, all blurred and set back as large quiet shapes. Each card misses the range in the opposite direction, so this is a weak call.",
+   "fix": "Stand the flower bed on a simple real surface with slight variation and shading. Replace the diamond wall with a broad, soft backdrop."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 5,
+   "difference": "A's blue wall is covered in a faint repeated monitor icon, an invented motif that echoes the object's subject, above a generic white tile floor with a sheen. Detail is 0.0106 and edges 0.015. B is the orange gradient with a wooden desk and drawer, the same staging as the real computer card in the lessons.",
+   "fix": "Remove the monitor icons from the wall. Use a plain warm gradient behind the machine and stand it on a simple wooden desk."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B has green diagonal stripes above a grey-white tile floor with multiple grout lines, a sharp cast shadow and a blue light reflection. This is the same stock tile staging as the p06 reel machine, and no card in the real sheet has it. A puts the binoculars straight on wide wooden planks with no separate backdrop, so one material fills the card in a few large shapes.",
+   "fix": "Stand the arm on one simple real surface, such as wide concrete or wooden planks, with one soft shadow. Remove the tile grid and the blue floor reflection."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's wavy tone-on-tone field is very faint, with a yellow glow around the car, and it is below the real range on detail (0.006) and at the very bottom on edges (0.004). B's blue spiral has clear bands with defined edges and sits inside the range (0.0125, 0.016), like the wave pattern on the real sunscreen card.",
+   "fix": "Make the waves wider and more clearly defined in two yellow tones, reaching the corners. Remove the glow behind the car."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B combines purple rays with a white tile floor that has grout lines and pastel iridescent reflections, the same stock floor as the p06 and p07 cards. A's wide wooden boards with a warm shadow are simple and sit close to the real desk card. Both cards are in range, so the staging is the only evidence.",
+   "fix": "Stand the phone on a plain wooden table top with wide boards and a soft warm shadow. Remove the tile grid and coloured reflections."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B floats on a harlequin diamond field with a soft central brightening. Its detail (0.0065) is below the real range and its edges (0.004) are at the very bottom. A's plane is cropped by the card edge in a sky of large clouds, with small puffs along the bottom, and it has more background structure.",
+   "fix": "Use a wide, simple tone-on-tone sunburst or broad stripes in teal, with visible edges reaching the corners, instead of the faint diamond pattern."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both are category 2 on a plain orange backdrop. A has a pale yellow floor, a hard horizon and a long shadow, and sits inside the range. B has a stepped white ledge, a green glow on the ledge and a very smooth wall, with detail (0.0063) and edges (0.008) at or below the real minimum. The gap is small.",
+   "fix": "Keep the ledge plain but add a little soft variation to the backdrop. Remove the green glow on the ledge."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A is a category 4 lab with a neon-lined arch, a glowing cyan bar on the wall, panel seams and a reflective tiled floor. Everything is invented glowing trim in one teal tone, and it sits near the low end of the range (0.010, 0.019). B has a few large shapes: water, planks and a sand strip, with ripples and a couple of pebbles. It reads as a real place at similar values (0.0127, 0.027).",
+   "fix": "Replace the neon arch and glowing bars with a plain metal wall of a few large panels and one quiet floor. No glowing strips apart from the object itself."
+  }
+ ],
+ "pattern": "On this vector, generated cards now fail by being too clean and too stock, not too busy. Their backgrounds often sit at or below the bottom of the real detail range, with faint tone-on-tone fields and soft blooms around the hero. Recurring stock staging also gives them away: white tile floors with grout lines and sheen (p06, p07, p09), harlequin diamond walls (p05, p10) and invented neon trim (p12). The reel machine's repeated monitor-icon wall (p06) is the clearest invented motif. Real cards have wider, clearer patterns, one simple real material, and heroes cropped by the card edge in a coherent place."
+}

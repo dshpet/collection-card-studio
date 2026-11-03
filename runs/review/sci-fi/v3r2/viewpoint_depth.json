@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the asteroid floats tilted toward the viewer with no ground or depth layer. Crater bowls all face the camera like stamped dishes, and the crystals lean on their own axes. The blue patch at the right of the normal map is background, not form. B: the bounce house has a clear three-quarter turn, mild convergence between the front and rear arches, and a floor plane that reads at one angle. Weak call: an airborne object can have no ground anyway.",
+   "fix": "Turn the asteroid in one clear three-quarter view: craters on the side faces squeeze into narrow ovals, and crystals grow outward from the rock's surface along the same view."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the swing ride is seen from just above base height, with the canopy underside and base top both visible, which fits one mild camera. B: the keyboard is seen from high up on a diagonal, with the top face dominant and the X-stand legs foreshortened to match. Both hold a single view, and both planar_share values sit in range.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the hull tube is almost side-on with its end cap barely turned, while the ring is seen at a strong three-quarter. The four solar panels each tilt to a different plane, so upper-left and lower-right disagree in the normal map, and they splay like a flat diagram. The planet is a separate curved layer. B: the bike is tightly cropped against the car, with the road and hills dropping behind in overlapping layers at one eye level.",
+   "fix": "Draw the whole station from one three-quarter camera: hull, ring and all four solar panels turn the same way and shrink slightly toward the far end, with panels parallel in matching pairs."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the scroll is seen from a low three-quarter on a blue slab, with the slab's front edge giving a clean foreground and the horizon behind. B: the sheet is seen from high on a wood table, with plank lines converging mildly and the curled ends agreeing with the table plane. Both are consistent single views, with different but equally normal camera heights.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the rocket and tower stand dead frontal with no upward convergence and almost no side face, yet the launch pad under them is an open ellipse seen from well above. Hero and ground disagree. Grass, trees and sky stack as flat bands behind. The complete, isolated object on a tidy base matches the generated lesson cards. A: a cropped scene whose stools, bar counter and roof run deep from foreground to background under one high camera, with stool tops and water rings opening consistently.",
+   "fix": "Lift the camera slightly and turn the rocket a little: show curved ring lines around the body that match the pad's ellipse, let the tower's far side show, and let the rocket run off the card's top or bottom edge instead of sitting complete on a pad."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the tube is nearly orthographic, with a straight flat crimp at the base and only a sliver of cap top, sitting on a shelf drawn as flat horizontal stripes. There is little depth between hero and backdrop. B: the vending machine has a clear left side face, slight convergence and a soft floor at one angle. Weak call: frontal views also occur on real cards such as the clock and suitcase.",
+   "fix": "Turn the tube slightly so its side and cap top show, and draw the shelf as a surface receding behind it with a soft contact shadow."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the observatory is perfectly symmetric and frontal, and the eave's underside is visible while the plinth's top is also open. That pinches the eye level into the middle of the building, with a stronger stretch than real cards, and the hill reads as a stage for it. The telescope points off on its own. B: the sandcastle has towers overlapping at several depths, sand rising in front, and the sea horizon far behind in one mild view.",
+   "fix": "Turn the observatory a quarter to one side with the camera at mid-wall height and gentler curves, and sink its base into the hill rather than sitting it on a neat round plinth."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the rose arch is frontal on a floor band, its pillars both grounded at the same height, like the arch in the reference set. B: the backpack is a mild three-quarter on a flat floor, with the bedroll end and side pocket sharing one turn. Neither shows a split view or forced perspective.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the globe's round base sits tilted, rising to the right, while the post and stand above it read upright. The ring around the sphere and the crescent bracket each follow a different angle, so the parts do not share one view, and the card has no ground for it. A: the balloons are a simple overlapped cluster drifting in front of clouds, with no ground to contradict.",
+   "fix": "Stand the globe on a level round base seen from slightly above, with the base, ring and arm all tilted to fit that same camera."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the rock is seen from above with no clear facing, and its tail flows off as a flat ribbon on the patterned backdrop without receding. The normal map shows the tail swelling smoothly out of the rock, so it sits on the card instead of going into depth. B: the neckerchief is frontal, and the neck loop's back and inside show correctly behind the knot in one consistent view.",
+   "fix": "Draw the comet coming toward the viewer: a large near rock with its tail shrinking and passing behind it into the distance, overlapped by the rock, with one clear direction of travel."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the pot is seen from a low-to-mild height with an open rim, but the stems and spirals are flat frontal curves that show no turn. The wood grain runs in nearly parallel bands with no convergence toward the horizon. B: the book is seen from high on a three-quarter, with thickness, ribbon and table shadow all agreeing; its planar_share of 0.706 is just above range and comes from the flat cover. Weak call.",
+   "fix": "Have the stems curl toward and away from the viewer, overlapping each other, and make the wood grain narrow toward the back of the table to match the pot's view."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cone hangs in space seen from below, with its dark underside a very open ellipse, while the porthole and plates face the camera as if viewed straight on. The upward tilt is forced, and the normal map shows the wall as one even patch with no ground or depth layer. B: the envelope, with photos fanned behind it, reads as clean layers of overlap at one mild angle. Its 0.855 planar_share is above range because the lens almost blanks on this flat object, so it proves little.",
+   "fix": "Lower the tilt so only a thin sliver of the underside shows, and wrap the porthole and plates around the cone so they narrow toward its edges."
+  }
+ ],
+ "pattern": "Generated cards split the view between parts: the body stays side-on or frontal while the base or ground is seen from above (p05 rocket and pad, p09 globe base) or parts each tilt to their own angle (p03 solar panels). They favour a complete, isolated object on a tidy plinth or no ground at all, with backgrounds as flat stacked bands. Real cards crop harder, overlap more depth and hold one mild camera across all parts. Calls at confidence 2 (p01, p06, p11) have thin viewpoint evidence; the themed subject in those pairs (space, sci-fi-like objects) also nudged me, so treat them as leans. planar_share did not separate the pairs: real ranges are wide, and p11 B and p12 B exceed them only because of flat objects."
+}

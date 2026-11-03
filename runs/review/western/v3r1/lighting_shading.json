@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the hay bale's top and front planes sit close in value and the turn between them is soft and clay-like. Its shadow is warm brown with no cool side, and form_contrast of 0.387 is below the real floor of 0.415. Only the cast shadow behind it to the right has any weight. B: the book has a bright top-right light, a crisp lit edge along the cover and spine, and a long soft cast shadow to the left on the wood. Light and shadow are clearly separated.",
+   "fix": "Light the bale from the upper left. Keep the top bright, drop the front and right faces clearly darker with a cooler shadow tone, and make the corner turn quickly from light to shade."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the barrel is brightest down the centre and falls off evenly to both sides, so the light reads as frontal and symmetrical. A near-black, hard-edged cast shadow pools to the right, and the top carries a broad white sheen. A: the popcorn cart has gentle light from the upper left, soft shade under the awning, and light contact shadows at the wheels, close to the softness of the real cards.",
+   "fix": "Move the light to one side so one flank of the barrel stays lit and the other turns gradually into a cool shadow. Soften the cast shadow's edge and lighten it to a mid-tone."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the lantern has a very dark body and a hard, long cast shadow going left on the table, while the flame barely lights the metal around it. shading_range of 0.843 is above the real ceiling of 0.794. A: the vending machine has a clear lit front and darker left side, soft contact at the feet, and a soft floor shadow, all within the real range.",
+   "fix": "Let the flame throw warm light onto the inner frame and base. Open up the dark metal with soft reflected light, and shorten and soften the table shadow."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the ice cream sign is lit almost flat-on, with light_bias_strength of 0.035 below the real floor of 0.100. The swirl has small glossy streak highlights, a uniform halo-like glow and an even drop shadow, with no shadow side. B: the binocular barrel turns from bright metal sheen into a deep blue shadow side with a soft pink edge bounce. This is the directional cool shade seen on real cards, though form_contrast of 0.627 runs slightly high.",
+   "fix": "Light the swirl from the upper left so the right and lower bulges fall into a soft, darker blue shadow. Offset the drop shadow to one side, and replace the thin streak highlights with one broad soft sheen."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the coaster cars have glossy plastic yellow bodies with broad even sheen and a pale, frontal-looking lit area. light_bias_strength of 0.131 is under the real floor of 0.191 and shading_range of 0.851 is above the real ceiling, while the lens stays pale across the forms. A: the stagecoach has a clear sun direction, a shaded underside, and a firm but soft cast shadow on the sand under the wheels. All three fields are in range.",
+   "fix": "Pick one side for the sun. Leave the opposite side of each car in soft cool shadow, reduce the plastic shine to one sheen on the top curve, and add a shadow where each car overlaps the next."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the flip-flops are shaded in a warm, even, clay-like way with no cool shadow side and only low relief on sole and strap. shading_range of 0.553 sits near the real floor and light_bias_strength of 0.179 is low. A: the hat has a thin bright rim along the brim, a smooth turn over the crown, and a dark soft shadow under the brim, close to the real anchor and lesson cards.",
+   "fix": "Light the sandals from the upper left with a stronger drop to shade on the right edges of the soles. Make the strap shadows cooler and deeper, and add a thin brighter edge along the lit rim of each sole."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the horse's body is lit softly from the front with matte, low-contrast turns on barrel and legs. shading_range of 0.553 is below the real floor of 0.602, and the ground shadow is a thin faint strip. A: the guitar has glossy highlights on the body edge, a stage pool of light, and dark contact under the body, with range and bias in the real band.",
+   "fix": "Add a clear sun direction on the horse. Keep the back and shoulder bright, let belly and far legs drop into deeper cool shadow, and put a darker soft shadow right under the hooves."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cactus body is matte with both sides darkening evenly around a lit centre and little depth. shading_range of 0.645 and form_contrast of 0.325 are both under the real floor. Only the sand cast shadow on the left is firm. B: the water slide has a deep blue-grey shadow side against a near-white lit trough, with strong form turn around the curve, like the cool shaded sides on real cards. Its low bias of 0.149 fits several curved surfaces facing different ways.",
+   "fix": "Light the cactus from one side so the right edges of the trunk and arms fall into a deeper cooler shadow. Add one soft sheen on the lit ribs, and darken the contact where the trunk meets the sand."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the jug has one broad lit patch that slides to a very dark right flank, with light_bias_strength of 0.68 above the real ceiling of 0.601. A near-black, hard-edged cast shadow sits on the table, heavier than real cards. A: the glass has low numbers (range 0.588, form 0.312), but that is expected for a clear object, and it shows crisp small highlights on the ice and glass rim with a coloured glow in the shadow.",
+   "fix": "Lighten the jug's dark flank with warm reflected light from the table. Soften and lighten the cast shadow, and give the belly a smaller clean highlight instead of a wide smeared patch."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: hard, patchy ivy shadows cut across the door, panel grooves have bright edges, and shading_range of 0.831 slightly exceeds the real ceiling of 0.826. The busy mix of sharp light and dark does not read as one clean form. A: the neck pillow has one simple top-left to lower-right gradient, soft dimpled seams and a dark rounded lower edge, all within range.",
+   "fix": "Soften the leaf shadows on the door into a few gentle shapes along the top and left. Keep the wreath's shading simple, and let the panel grooves show soft darker recesses instead of sharp bright edges."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the towel has dark diagonal smudges with no clear light source, and much of the lens is the stripe pattern showing through. shading_range of 0.494 is below the real floor of 0.500 and bias is low. A: the bandana has smooth folds that turn cleanly into soft shadow, a dark inner fold at the top and a clear lit side, all within range.",
+   "fix": "Choose a light from the upper left. Make each wave of the towel bright on the facing side and softly shadowed on the far side, with shadows following the folds evenly, not as dark streaks."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the lamp has a warm practical glow in the chimney and glossy brass with small highlights. light_bias_strength of 0.745 is just over the real ceiling, which is explained by the flame. B: the steel pan has a broad soft sheen on its rim, a shaded interior and crisp highlights on the nuggets, with a soft edge underneath. Both model form consistently for their materials and neither shows a clear shading flaw.",
+   "fix": ""
+  }
+ ],
+ "pattern": "On my vector, the main tell is non-committal light. Generated cards are often lit from the front, with the brightest area in the centre and even falloff to both sides. Their shadow sides are warm and clay-like rather than cool and deep, and they lack the clear lit side, shadow side and quick form turn of the real cards. A second tell is shadows that don't suit the forms: near-black, hard cast shadows on the ground while the object's own shading stays soft. Measured low form contrast or low light bias often lines up with this. Shiny plastic sheen and small streak highlights also recur."
+}

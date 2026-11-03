@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A, saloon: every plank, baluster, window bar and porch post has a crisp dark line of the same weight, so the map reads like an inked colouring page, and the front door is no sharper than the far siding (subject 0.25, near the top of the range). B, motel sign: edges are soft double lines around the neon tubes and sign rims, and the building at left fades back. B's outline reading of 0.161 is slightly above the real range, but that comes from the bright sign rims against the dark sky, not from a drawn line.",
+   "fix": "Keep the saloon's outer shape, but merge the wall planks into broad painted panels. Leave only thin, faint seams on the far walls and railings, and keep the sharpest edges on the swing doors and front posts."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A, mine cart: firm contour on the rim and wheels, fine speckled edges across the rust, and soft sand ripples. B, scroll: a smooth form with a dark edge along the top flap and left roll that varies in width and fades along the shaft. All three readings are in range for both cards, and neither shows a halo or an even inked line.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A, ring box: a firm dark line runs along the lower box rim and right side of the lid, and the outline reading of 0.13 is just above the real range. It does thin out at the top of the lid, so this is a weak signal. B, star: pale, soft edges with little contour on the faces, and a crisp gem at the centre, which fits the real sharp-at-focus order.",
+   "fix": "Remove the dark line around the red box. Let the box edge come only from red against blue, soften it where the lid catches light, and keep the sharpest edge on the gold medal."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B, captain's cap: strong plank seams and wood grain fill the floor and wall, so the background carries nearly as many edges as the hero (background 0.035, twice the real maximum of 0.017). This matches the busy wood in the generated computer lessons. A, graduation cap: a quiet ring background, a clean board corner and few internal lines, all in range.",
+   "fix": "Paint the floor and wall as smooth, soft planks with only a few faint seams and no wood-grain lines, slightly blurred behind the cap, so the cap's edges are the sharpest thing on the card."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A, door with wreath: every ivy leaf, flower and panel moulding has a dark closed contour, with fine grain lines on the door and wobbly shadow edges across it. Subject 0.342 and background 0.107 are both above the real range, and the edge hierarchy is flat from corner to corner. B, windmill: firm lines on the blades and tower, but soft hills and clouds and a clear drop in edges away from the hero, in range.",
+   "fix": "Group the ivy into a few soft leafy masses at the card edges, with no line around each leaf. Keep the door panels smooth with thin seams and no grain, and make the wreath the only sharply detailed area."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B, twig ball: each branch has dark lines on both sides plus streaks along its length, so the whole ball is one even tangle of edges (subject 0.248, above the real maximum of 0.179), with no sharper focal area. Part of this is the subject itself. A, popcorn cart: the strongest lines sit on the awning scallops and wheel, the cart body has large open faces with thin seams, and the numbers are in range.",
+   "fix": "Draw fewer, thicker branches with smooth rounded sides and no streaks along them. Let the branches at the back go soft and low contrast, and keep crisp overlaps only at the front."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B, neck pillow: the interior is almost empty (subject 0.017, far below the real minimum of 0.046), yet a heavy black contour runs around the inner hole and lower right, and the seam is lost in fine fabric ripple noise. The hero is a flat shape with a line around it. A, horseshoe: edges follow the bevel, nail rings and groove, with thin precise inner lines and a crisp silhouette, in range.",
+   "fix": "Remove the dark rim around the pillow and the fine fabric ripples. Add a thin, clean stitched seam and a few broad smooth puffed folds, with the outer edge coming only from blue against pink."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A, rose arch: every petal and leaf is ringed with near-black lines at equal strength, the roses merge into a dark mass on the map, and no area is sharper than another (subject 0.317, well above the real maximum of 0.228). B, piano: a firm contour on the case and a busy floor (background 0.042, also above range), but the side panels and front are large and clean, with thin seams. Both miss on a number, and A's flat edge density is the stronger signal.",
+   "fix": "Show fewer, larger roses as soft rounded shapes with gentle petal folds. Group the leaves into smooth clumps without a line around each leaf, and keep the sharpest detail on two or three front roses."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B, column: heavy dark lines trace the capital scrolls, flutes and sign frame, and the crack is a thick black groove, so the map looks inked even though the numbers are in range. A, trophy: thin, precise edges on the rim and handles, broad lost edges inside the cup, and a soft spotlight, close to the real restraint.",
+   "fix": "Make the crack a thin fine line, and soften the flutes into gentle shaded grooves. Remove the dark line around the capital and the sign frame, so edges come from stone against the red wall."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "The signals conflict. A, teapot: a clean body silhouette, but strong table plank lines and grain (background 0.029, above the real maximum of 0.021). B, sneakers: dense panels, laces and mesh at the top of the subject range, a quiet background, and an outline reading of -0.1 below the real range. Each has one reading out of range in opposite directions, and my eye does not separate them.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "A, harmonica: thin precise lines on the holes and plate edges, a slightly firm top edge, and a quiet wavy background. B, scarf: a clear even silhouette, soft folds inside, and a crisp medallion at the focus. Both have the sharpest edges at the focus and sit in range on all readings, with no halo or grooved seams.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B, beach ball: hard black seams, but the panels are almost empty and the upper-left silhouette dissolves into the sand (subject 0.029 and background 0.003, both far below range). The map still shows scattered sand specks and smeared ripple rings, so the fine noise sits outside the hero. A, playing cards: clean double rims and thin suit contours, with wood lines behind and a pale, separated background pattern. Subject 0.079 is only slightly below range.",
+   "fix": "Keep a clear, even edge around the whole ball, with thin neat seams and a defined rim on the valve cap. Paint the sand as smooth soft dunes with no scattered grains or ripple rings."
+  }
+ ],
+ "pattern": "Generated cards spread edge strength evenly instead of ranking it. Every small part gets its own dark closed contour, so the edge map reads like an inked colouring page, with the focus no sharper than the corners. Wood grain, plank seams, water and foliage add edges behind the hero, where real cards stay quiet. The opposite failure also appears on soft objects: an almost empty interior inside a heavy silhouette line, with fine ripple or speckle noise replacing thin, precise seams. Real cards have fewer, thinner internal lines, broad lost edges, and contour that comes from colour separation rather than a drawn line."
+}

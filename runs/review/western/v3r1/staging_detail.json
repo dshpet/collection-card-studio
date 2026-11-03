@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: pale cyan stripes over plain red-brown dirt with a few faint pebbles, so the ground stays quiet; it even measures under the real edge range. B: the whole tabletop behind the book is wide wavy light and dark orange streaks with no plank seams, unlike the fine, calm boards under the real map card. The streaks run the full card and pull at the hero.",
+   "fix": "Lay the book on calm honey-colored wooden boards with a few thin straight seams and faint grain, no wide dark streaks."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: tone-on-tone blue diamonds over a pale paving floor; the small tiles are busy but within the real range. B: quiet purple diamonds over dirt with fine cracks and a few stones. Both are category 3 with a quiet backdrop and in-range numbers, and neither has a clear fault on this vector.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: plain purple gradient with a soft floor and no props, like the real camera cards; detail is at the bottom of the range. B: a wooden ledge with knots, ring grain and hard plank seams along the bottom of the card. Detail 0.0141 and edge 0.034 are both above the real range, and the real desk and ledge cards keep the surface much plainer.",
+   "fix": "Stand the lantern on a simple smooth wooden ledge with faint straight grain, no knots or swirls, and only one or two seams."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: green corrugated wall with dark vertical seams behind the neon cone, a single material with one repeat. B: a category 4 balcony with railing, glass panels, deck and a dense skyline of many towers with rows of windows at the lower left and right. That is many small objects where real environments use a few large quiet shapes. Both are over the edge range, so the numbers do not settle it.",
+   "fix": "Replace the city with two or three large pale hazy building shapes without windows, and keep only one plain railing."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: sky with clouds, two distant mesas and sandy ground with a few stones. B: sky with clouds, soft green hills and small grass tufts, with the track bleeding off the card. Both are category 4 with a similar load of large quiet shapes, and the numbers are near each other and in range.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: flat purple and magenta stripes with barely any variation (detail 0.0063, low) and no halo. B: teal stripes with a bright cyan bloom burning between and around the sandals and thin pale lines on the stripe edges. This is the same glow behind the hero that the generated glove lesson cards show, while real rays and stripes stay more even.",
+   "fix": "Keep the stripes even and tone-on-tone with a soft, dim center, no bright glow around the sandals."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a loud stage set, with truss towers on both sides, two lamps and crossing light beams behind the guitar, though the set makes sense for the object. B: a horse standing on a fanned plank deck in front of a fence, bush, hills and clouds, with edge 0.064. The wooden stage floor makes no sense for a paddock and the fence bars run across behind the legs. This call is weak, since A's beams are also busy.",
+   "fix": "Stand the horse on plain green grass or packed dirt, with one simple fence behind it and no wooden deck."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: soft orange waves over smooth sand with three stones, very quiet and even below the real edge range. B: three busy layers stacked up, with high-contrast pink and pale waves behind, a white tile grid, and a dark blue pool edge with bright ripple lines at the lower left. Edge 0.065 is above the real range, and the bright water fights the slide's foot.",
+   "fix": "Make the backdrop waves a low-contrast pink on pink, and use a plain pale pool deck with few tile lines and a calm flat strip of water."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: tone-on-tone purple diamonds and a plain lilac ledge, the same setup as the real flower-bed and basket cards. B: strong pink concentric rings plus a wooden tabletop with knots, ring grain and hard seams. Edge 0.024 is above the real range and detail sits at the top of it. It is the same over-grained wood as the p03 lantern.",
+   "fix": "Set the jug on a plain smooth ledge with faint grain and no knots, and make the rings low-contrast pink on pink."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: soft pink rings only, in range and quiet. B: a full door scene, with hundreds of small ivy leaves down both sides and across the top, dark leaf shadows, door panels, a brass handle and a cracked plaster wall. Detail 0.0353 and edge 0.107 are far over the real range, and the small wreath is outcompeted by its setting.",
+   "fix": "Show a plain blue door filling the card with a large wreath, no ivy, and at most one or two big simple leaf shapes at a corner."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a custom sky-blue backdrop of evenly spaced paisley shapes outlined in pale lines, copying the print on the bandana. None of the real cards shows a backdrop themed to the object; they use stripes, rays, rings and diamonds. B: a plain green checker with a soft center glow, close to that real kit. Both are in range, so this rests on the invented motif alone.",
+   "fix": "Replace the paisley with plain tone-on-tone blue rays or stripes that have nothing to do with the bandana's print."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A and B use the same green and yellow sunburst, with matching edge 0.006 and near-equal detail. A's center is a little hazier behind the glowing lamp, which the flame explains. Neither has props, and both float in category 1.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards give themselves away in the surface and backdrop, not the hero. Wood comes out over-grained, with knots, swirls and heavy streaks. Environments fill up with many small items such as leaves, windows, ripples and tiles, where real cards use a few large quiet shapes. Stacked patterns compete with each other, a bright glow burns behind the object, and backdrops or floors are chosen without regard to the object, such as a plank deck under a horse or a paisley backdrop echoing the bandana's print."
+}

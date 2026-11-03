@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the cart stands on cobbles that recede in clear rows to a far edge, and the wheels, shelf and awning all share one mild three-quarter view. B: the console sits on an empty floor split by a straight horizon. Its slanted panel is seen almost face-on while the side wedge and feet come from a lower eye level, and the floor plates give little sense of recession.",
+   "fix": "Turn the console a little further to one side and raise the camera slightly so panel, side wall and top edge share one view. Let the floor plate pattern shrink clearly toward the back."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the shoes are seen from a clear raised three-quarter angle, with toes larger than heels and the ground agreeing with the cast shadow. B: the helmet is nearly side-on and the visor bulges toward the viewer, but the collar ring at the base is a very thin ellipse. The floor is a blank band with a level horizon behind, so the sphere and its base read at different camera heights.",
+   "fix": "Raise the camera slightly so the collar ring shows a rounder oval that matches the turn of the visor. Add a faint floor detail or soft shadow falloff that recedes toward the back."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the player keeps one raised view, with front face, right side and bottom edge reading as even patches, and the wire falls in the same space. B: the saucer rim shows a wide top band and a wide underside at once, and the dome collar and the belly plate do not read as parallel ovals, so upper and lower halves look seen from different heights.",
+   "fix": "Tilt the whole saucer as one rigid disc: show mostly the top or mostly the underside, with the dome collar, light ring and belly plate drawn as parallel ovals."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the submarine is a clear three-quarter turn, with the nose swelling forward, the portholes foreshortening around the hull and the periscope turned to match. B: the rocket lies almost flat along the card diagonal. Portholes are near face-on and the fins spread like a flat cutout, so little of the body turns away. Only the tail ring hints at a view from below.",
+   "fix": "Turn the rocket slightly around its long axis: squeeze the portholes into ovals, let the far fin tuck behind the body, and make the tail rings clearly curved ovals."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the dome base is a shallow oval from a low camera, but the crater in the foreground opens as a much rounder oval, as if seen from higher. The tube mouth also faces the viewer more than the door does. The ground does not hold one angle under the hero. B: the bar counter, stools and pool share one raised view, with stools stepping back in size and cropped roof and pool edge giving layered depth.",
+   "fix": "Keep one camera height: make the crater ovals as flat as the dome's base ring, and turn the tube to follow the same ground direction as the base."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a smooth sphere with a tilted ring. The ring is the only thing stating a view, and the sphere's bands and crater do not follow its tilt closely. B: the flip-flops are a consistent high view, with soles as even patches and side walls showing along one edge on both shoes.",
+   "fix": "Bend the planet's stripes as ovals parallel to the ring, so the sphere and ring share one tilt."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "A: the arch is near-frontal with a level floor, and the shadows and post bases agree. B: the column has a raised three-quarter view of the capital top and plinth, a room corner behind, and a cropped plaque in front. Its layers agree and its planes read as even patches. The low planar_share on A comes from the leaves, not from a camera fault. Neither card shows a viewpoint error.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the scarf loop opens to a clear inside back band, so the top and the hanging tails read as one view. B: the rock is a rounded ball whose craters face different ways without a clear direction, while the flames sit like a flat shape in the card plane rather than trailing back in depth.",
+   "fix": "Make the flames shrink as they trail back behind the rock, partly hidden by it, so the tail recedes away from the viewer."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the dish looms large at the top and opens toward the viewer as if seen from below, yet the base shows its top steps from above and the dune horizon sits low. That is two camera heights plus a forced wide-angle swell. B: the castle, bucket and spade all sit on one sand surface, with towers overlapping in several steps and the sea far behind.",
+   "fix": "Lower the dish size and draw it at the same camera height as the base: a slightly raised view, with the dish rim a flatter oval and the base steps barely showing their tops."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "A: the fountain has a raised view, with basin rims as parallel ovals and paving radiating around it. B: the bumper car has a low three-quarter view, a rink edge curving behind it and floor lines receding past it, with a cropped pole. Both hold one ground angle and all parts share one view.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the binoculars are seen from above, lying on planks that converge strongly, and the barrels and planks agree. The perspective is strong but consistent. B: a near side-on telescope, with the tube widening toward the lens and tilted up while the tripod is seen level. A flat striped wall meets moon ground directly, so ground and backdrop read as two unrelated spaces with no distance between them.",
+   "fix": "Show the tripod feet at the same raised angle as the tube, spread into the ground, and let the ground fade away to a soft distant edge before the backdrop."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the taxi is a three-quarter view with the road tilted and its dashes running toward the back, tying car and ground to one direction. B: the rover is at a similar angle, but the lumpy ground ends in a raised curved edge with craters that do not track the body direction. The solar panel and dish show their tops more than the roof does, so the top parts read from a higher view.",
+   "fix": "Add wheel tracks running in the rover's direction, flatten the ground ovals to match the wheels, and keep the panel and dish at the same camera height as the roof."
+  }
+ ],
+ "pattern": "Generated cards tend to lose a single camera. Parts of one object or scene are drawn from different heights: rims and craters at different oval flatness, or a dish from below on a base from above. Ground is often a blank band or curved edge with a straight horizon, not a surface that recedes under the hero, so depth is hero plus backdrop with few overlapping steps. Real cards hold one mild three-quarter view, use repeated floor or road marks to tie the hero to the ground, and crop or overlap for layered depth. Most calls here are moderate confidence, and planar_share did not separate the pairs."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the awning, dark red cart body and dark blue corners form clear dark masses against a pale paving group. Key and contrast are in range. B: the grey panel sits in one mid-grey band, close to the orange wall in value, so it separates mostly by hue. A thin white rim runs along the panel edge and a pale diamond patch glows around it. rms 0.119 is just under the real range.",
+   "fix": "Darken the right and lower faces of the panel into one solid shadow shape, drop the thin white rim line, and remove the pale patch on the wall behind it."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: dark blue shoes are a compact mid-dark group on a light floor, with a clean cast shadow and no glow on the wall. B: the white shell is almost all top value and melts into a white floor. A pale bloom hugs both sides of the helmet on the pink wall. Corners go lighter than the centre (vignette -0.058, outside real cards).",
+   "fix": "Remove the glow around the helmet, keep the wall one even tone, darken the card corners slightly, and shade the lower shell a clear step darker than the floor."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a light orange case and white buds sit on dark violet rings, a clear hero-over-background value split, though gap 0.223 is on the high side. B: the whole card is very high key (0.833, above real cards). In the lens the saucer's top half dissolves into the white rings, so it separates by hue, and only a thin dark band under the rim anchors it.",
+   "fix": "Lower the yellow background a step, and make the saucer's metal body clearly darker than the rings, with one large shadow shape across the underside."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: green fades to near black at the corners, with the lens showing a black outer ring and a nearly one-value white hero. Mean 0.546 and gap 0.322 are both outside real cards. B: a mid-light ray background, with the rocket body in several steps and dark fins, all inside range, though the chrome streaks are hard.",
+   "fix": "Lighten the green background and stop the fade to black at the corners. Let the lower third of the yellow hull fall into a clear mid shadow."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a dark sky band sits over a broad mid-grey ground, and the white dome trim is clipped into bright bands, so gap 0.182 is above real cards. The dark accents are the sky and crater, away from the hero. B: the dark mass of the hut and the stool tops sits within a lighter pool, with darks across the subject area and all values in range.",
+   "fix": "Lift the night sky a step lighter, soften the white trim so it rolls off to a pale grey, and place the deepest shadow under the dome and tunnel."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a white, near-clipped ring crosses dark purple stripes, and most of the planet is light. Gap 0.197 is above real cards and vignette 0.007 is just below them. B: sandals sit in the same value as the teal background, with white only on the straps. That gap of -0.129 is in range, even though the key of 0.795 is at the top of it.",
+   "fix": "Lower the ring from white to a mid yellow with a shaded underside, and put a broad soft shadow across the lower part of the planet."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a high-key pink card with pale stripes, where the arch forms a dark textured mass against a white opening, the same value plan as the real arch card. B: near-black walls with a bright cream column, a tenebrist split. Mean 0.514, rms 0.201 and gap 0.295 are all outside real cards, and the upper corners crush to black.",
+   "fix": "Light the room: make the walls a mid-value wine colour with visible tone, keep no black area in the corners, and bring the column closer to the wall in value."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: a dark red scarf is one dark mass on a mid-blue swirl, with a black pocket in the neck loop and corners darkening at 0.115. B: the asteroid has a clean split into lit top and dark underside over mid-blue waves. All values on both are in range, and each has a value plan seen on real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both are above the real key range and below its contrast range. A: the dish is one huge clipped white shape with almost no inner steps, and the only darks are on the small base, at 0.793 key and 0.097 rms. B: the castle has several steps, with dark windows, bucket interior and shadows on the sand, at 0.118 rms.",
+   "fix": "Shade the inside of the dish in a soft gradient down to a mid grey, and darken the sky and sand a step."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: a high-key fountain (0.783, a little above range) with the hero close to the yellow stripes in value, and the lens stripes breaking up at a threshold. B: a large near-black bumper band and reflection give hard contrast, with rms 0.199 just over the top. Each misses on opposite sides by a little, so neither points clearly to generation.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a dark binocular mass on light boards with a strong shadow, slightly past range (rms 0.2, gap -0.277), but the same dark-on-light plan as the real camera card. B: the cream tube is clipped to a flat white with few steps, and a pale halo patch sits around the tripod on the wall and ground. Contrast is low at 0.108, below real cards.",
+   "fix": "Shade the tube with a soft band from cream to mid tan along its underside, remove the pale patch behind the tripod, and deepen the shadow under the legs."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the taxi is light on a mid-value road and sky, with one wide shadow beneath and rays only as a modest lift. B: the white body and dish merge into a large white bloom on the green, so top edges lose value separation, while tyres go hard black. The result is pale above and heavy black below, with rms 0.198 above real cards and vignette 0.095 above them too.",
+   "fix": "Remove the bright glow behind the rover, lower the green to a mid tone so the white body stands out, and lift the tyres from black to dark grey with soft highlights."
+  }
+ ],
+ "pattern": "Lessons: generated heroes carry harder local contrast than real ones, with white clipped highlights and black darks close together, plus a pale bloom hugging the silhouette in the background. In the test pairs the same signs recur: halos behind the hero, large areas clipped to flat white (dish, tube, helmet), and blacks pushed to the extreme. Key and hero/background gap also run past the real range on both sides, either very high key with hero separated by hue only, or light hero on near-black. Real cards keep one or two broad shadow shapes, soft roll-off, and a controlled dark group. Numbers settled several close calls; p04, p05, p06, p09 and p11 are low-confidence, and p08 and p10 gave no value reason to choose."
+}

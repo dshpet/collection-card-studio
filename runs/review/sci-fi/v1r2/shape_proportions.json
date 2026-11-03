@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the telescope tube tapers in long straight runs with stepped collars, though its tripod legs are thick with blunt ends. B: the binocular barrels are about as wide as they are long, with swollen sides and soft shoulders. The bridge is a chunky lump, and the silhouette merges into one blob (solidity 0.907, straight_share 0.288). B reads as the more fattened toy, but A's legs keep the margin small.",
+   "fix": "Draw longer, slimmer binocular barrels with straight parallel sides and tight bevels at the eyecups, joined by a thin hinged bridge with a visible gap between the barrels."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the neckerchief is inflated. The neck loop is a fat tube, the side folds bulge like balloons, and the two tails are swollen petals with no thin cloth edge. B: the meteor rock is a soft lump but has shallow facets and crater rims, and its flames end in sharp thin tips. A rock is allowed to be bulky; thin cloth is not.",
+   "fix": "Draw the scarf as thin flat cloth with crisp folded edges, a narrow neck band, and tails that taper to flat pointed corners."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the dish has a clean elliptical rim and thin straight feed struts, with a slightly heavy bell base and fork. B: the sandcastle has squared crenellations, straight tower walls, and a separate bucket and shovel. B's 10.315 corner_rate comes from the battlements and the merged props, not from a form fault. Both keep their thin parts and part counts.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the rover is a chibi toy. The wheels are nearly half the vehicle's height and bulge like balloons, the body is shortened, and every corner of the cab and fenders is a soft roll (straight_share 0.172, below the real range). B: the taxi is rounded too, but it keeps a recognisable hood, cabin and trunk, with long roof and sill runs (0.300).",
+   "fix": "Lengthen the rover body and draw flat side panels with straight edges and tight bevels. Make the wheels smaller and narrower, with separate suspension arms and visible gaps between wheels and body."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the running shoes have puffy soles, but the contour keeps real landmarks: heel collar, tongue, lacing steps and a toe spring. B: the helmet is one near-featureless ball on a ring. The side ear disc barely breaks the contour, the visor is oversized, and the outline has no corners at all (corner_rate 0.0, solidity 0.979, near the top of the range).",
+   "fix": "Give the helmet a defined shell with a crisp visor frame, flat-edged neck collar, separate hard side modules and small latches that break the outline."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the pool's fat tubes are correct, because it is an inflatable, and the high solidity (0.994) comes from that stacked form. B: the jacket is padded like foam. The sleeves are swollen, the cuffs are fat rolled sausages, and the collar is thick. The hem and shoulders have no thin fabric edges, so the cloth reads as a stuffed toy instead of cotton.",
+   "fix": "Draw the jacket as thin cotton: slim sleeves with sharp fold creases, narrow flat cuffs, a flat pointed collar, and crisp straight hems and pocket flaps."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the pool bar is a busy cropped scene whose stools have thin stems and foot rings. Its 10.206 corner_rate and 0.150 straight_share come from the fruit and glass clutter and a mask drop-out on the counter. B: the dome is a soft, toy-like form. The door frame and ribs are thick rolled trims, the tunnel is short and fat with a heavy tube rim, and the base corners are rounded. Its steps are the only thin part.",
+   "fix": "Slim the dome ribs and door frame to narrow straight bars, lengthen and narrow the tunnel, and give the base flat blocks with sharp bevelled corners."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the planet's ring should be a flat, thin band but is drawn as a fat rubbery tube with a round edge, thick enough to read as a hoop around the ball. B: the flip-flop soles keep flat tops and a straight slab edge. The straps are chunky, but the toe post stays thin. Both outlines measure zero corners, so the difference is in the ring and the sole.",
+   "fix": "Draw the ring as a thin flat disc seen edge-on, with sharp inner and outer edges and a narrow gap to the planet."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the open book has flat page blocks and straight outer edges, with some puffing at the gutter. B: the folding chair keeps thin tubes, a crossed X-frame and a sagging canvas seat, with sensible parts. Its low 0.438 solidity is just the open frame. Neither is fattened or missing parts.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the player body is a swollen pillow. A flat device has very large corner radii, puffy raised rings and a domed face, though the earbud wires stay thin. Its thin_share (0.083) and solidity (0.580) fall outside the real range because of those wires. B: the saucer has a true taper to a narrow rim, a clean straight seam under the dome and a flat underside disc, despite its 0.0 corner_rate.",
+   "fix": "Draw the player as a thin flat box with planar faces, tight bevelled corners and a shallow recessed dial, keeping the wires thin."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the popcorn cart has thin posts, a scalloped awning, spoked wheels and a full part count, with only the push handle running thick. B: the console's top-left corner is a big soft round, the base flows into the deck with no crisp edge, and the lever ball is oversized. The planar slope is kept, but the box is softer and its parts fewer.",
+   "fix": "Tighten the console corners to narrow bevels, separate the sloped deck from the base with a straight sharp edge, and shrink the lever ball and foot pads."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the rocket is stylised but keeps a tapered fuselage and fins that end in sharp points. B: the submarine is shortened into a fat egg, its hull nearly as tall as it is long, with a thick stubby periscope and a chunky conning tower. It is enlarged like a bath toy, though its propeller blades stay separate.",
+   "fix": "Stretch the submarine hull into a long narrow cylinder with a straight midsection, and draw a thin periscope tube and a lower, narrower conning tower."
+  }
+ ],
+ "pattern": "Generated cards still inflate form: thin or flat things (cloth, rings, device bodies, trims) become swollen tubes and pillows. Vehicles and devices get shortened into chibi toys with oversized wheels, balls and bezels, while corners become soft rolls and silhouettes merge into one smooth blob with fewer gaps and breaks. Real cards keep straight runs, tight bevels and thin edges even when simplified."
+}

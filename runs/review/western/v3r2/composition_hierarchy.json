@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the submarine floats alone on a dark green ray backdrop, tilted slightly, with clear space all round. The periscope and propeller make a quick silhouette. B: the feeder sits mid-card, but the trunk runs top to bottom behind it (box_height 1.0). Rope, branches, leaves and pale park buildings all surround it, so the thumbnail reads as a tree scene with a small house on it.",
+   "fix": "Show the bird feeder larger and closer, hanging from one rope against a soft blurred green backdrop. Remove the buildings and the thick trunk behind it."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the horse spans most of the card as one large warm mass, and the fence stays behind it, so it is named at once. B: the guitar is a thin diagonal with its body low on the card (area 0.169, below real cards). The two spotlight beams and the steel truss take more area than the guitar and pull the eye to the top corners.",
+   "fix": "Make the guitar much bigger, filling the card from top to bottom, with a wider red body in the centre. Drop the truss towers and soften the spotlights into a plain glow behind it."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the book almost fills the card (area 0.527, above real cards), leaving only slivers of wood around it. Its cover is crowded with stickers, pins and a route line, so the thumbnail reads as a teal slab of small icons and the object is slow to name. B: the hay bale sits in the middle with open striped wall and ground around it, and it is named at once.",
+   "fix": "Draw the book smaller with more wood table visible around it. Put one large emblem on the cover in place of many small stickers and pins."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the lamp is a narrow upright stack dead centre (area 0.17, width 0.426, both below real cards). Wide empty ray backdrop sits on both sides, and the pale glass top fades into the bright rays at thumbnail size. B: the pan is wide and tilted, takes most of the card width, and the gold nuggets in its middle give a clear focal point.",
+   "fix": "Enlarge the lamp so it fills more of the card width, and tilt it slightly. Darken the backdrop behind the glass so the top of the lamp stands out."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the glass is centred, with the straw and paper umbrella rising near the top edge (height 0.89). It is slightly tall, but the read is immediate. B: the jug is centred on a table with a generous margin (0.129) and a very clean read. Each card goes slightly outside the real range on one measure, in opposite directions, and neither has a framing flaw.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the towel runs corner to corner on a checker backdrop, wide (0.923) and diagonal, with a bold striped read. B: the bandana floats with its knots stretching wide (0.912) and its point down the centre, on a ray backdrop. Both are single heroes on clean backdrops with nothing competing, and both have similar margins.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cactus is a frontal, symmetrical upright in the exact centre, narrow (0.623) and tall (0.869), with the flower close to the top edge. Added rocks and a shadow fill the base. It reads fast but is posed like a stock emblem. B: the slide is seen at an angle and fills the card, with the deck and pool running off the bottom and right edges. That matches how real scene cards let the setting leave the frame.",
+   "fix": "Turn the cactus slightly and tilt it, and bring the camera a little lower and closer. Let the sand run off the edges and remove the small rocks."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the stagecoach is shown whole in a safe three-quarter view, with every wheel inside the frame and scattered rocks, mesas and clouds around it (area 0.444, just above real cards). B: the coaster cars curve up a track that bleeds off the left, right and bottom edges (width 1.0). This is a bold crop like the real cards in the lessons, with the cars clearly in front.",
+   "fix": "Move in closer on the stagecoach and let the back wheel or ground run off the edge of the card. Remove the small rocks and distant mesas."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the barrel is centred and frontal with a wide margin (0.14, above real cards) and reads instantly, much like the real barrel card. B: the popcorn cart fills the card tall (0.869), with the cup and machine competing a little inside the hero, but it still reads as one object. The small deviations point in opposite directions.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "A: the hat is a single wide shape floating mid-card on stripes, tilted, with an instant read. B: two flip-flops sit in a diagonal pair on stripes, framed like the real fins card. Both are low and wide (heights 0.512 and 0.573), with similar margins and nothing competing.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the vending machine is turned three-quarters and sits slightly left, a solid block that fills the card (area 0.422). B: the lantern is frontal, symmetrical and centred (width 0.479, area 0.226, both below real cards). Its thin handle and open frame add little mass, wide empty orange sits on both sides, and a flat table band crosses the bottom.",
+   "fix": "Turn the lantern three-quarters and move in closer so its body fills more of the card. Make the frame and handle thicker."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the bedroll lies low on the card (height 0.369, well below real cards). The top half is empty sun rings and the grass tufts in front add clutter, so the hero looks small and bottom-heavy. B: the claw machine stands tall and fills the card (area 0.476, height 0.86). It is busy inside, but the shape is named at once.",
+   "fix": "Stand the bedroll upright or raise it to the middle of the card and make it much larger. Remove the foreground grass tufts and shrink the sky area."
+  }
+ ],
+ "pattern": "Generated cards keep the whole hero safely inside the frame, usually frontal or dead centre, and rarely let it or its setting run off an edge the way real cards do. They shrink the hero to fit in added extras such as rocks, tufts, props, spotlights and background buildings, so the backdrop competes with it. Occupancy then drifts to the extremes: narrow or low heroes with too much empty card, or a crowded object that leaves almost no margin. The real cards use a tighter, turned crop with one dominant mass."
+}

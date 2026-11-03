@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (pumpkin bucket): body ribs stay faint, the outer silhouette thins out on the lit side, and the strongest edges sit on the face cut-outs, handle and candy. Subject density 0.100 is in range and outline 0.098 is at the top of it. B (beach ball): panel seams are thick dark grooves from the hub to the base, while the upper silhouette against the sand almost disappears. Subject density 0.029 is far below real cards. Sand is scattered dots with almost no connected edges, and background 0.003 is also below range.",
+   "fix": "Make the panel seams thin and shallow. Keep a clean, even-strength boundary around the whole ball against the sand, and add a few small crisp creases near the valve."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (garden gate): near-black lines of the same strength cover every scroll, brick joint, paving gap and the view through the bars, so the gate does not stand out from its surroundings. Subject 0.323 and background 0.122 are both above range. B (spyglass): thin contours, crisp brass rims and a quiet striped background, though background 0.004 and outline -0.147 are low.",
+   "fix": "Use fewer scrolls with thin joints. Keep the sharpest edges on the gate only, and make the bricks, paving and trees behind it soft, with faint mortar lines and few details."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A (castle): stone joints and battlements are moderate, sky and grass stay quiet, and subject 0.157 and background 0.014 sit at or near the real range, though the map shows slight smudging. B (door): dozens of outlined ivy leaves crowd the top and sides, and the wood grain and wreath petals add more strokes. Subject 0.342 and background 0.107 are above range. The wreath and handle also carry ghosted halo bands on the door panel, unlike the real sheets.",
+   "fix": "Reduce the ivy to a few large soft leaf clusters, with no hard edge on every leaf. Remove the wood grain lines from the door, and leave clean flat paint around the wreath with no glow or ghost edge."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (bare tree): strong dark contour along branches and trunk, with flowing grain lines and calm hills and sky behind. Subject 0.181 and background 0.028 are in range, though the line is quite inked. B (topiary): every leaf across all four tiers has its own hard edge, and subject 0.290 is above range. The hedge behind breaks into speckled edge noise, so the background competes with the hero.",
+   "fix": "Group the leaves into a few large soft masses, with crisp leaf edges only at the centre of each tier. Paint the back hedge as a smooth, blurred band with no individual leaves."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (chest): a dark, continuous contour wraps the lid, straps, lock and body, and every plank has its own grain lines and knots. The ground around it is nearly empty: background 0.006 is below range and subject 0.165 is high, so the hero looks inked onto a blank field. B (ice tray): the tray and cube edges are thinner and lighter, and they fade on the lit walls. Subject 0.086 is at the bottom of the range and background 0.018 is in range. Only the frost clusters and plank gaps are harsh.",
+   "fix": "Remove the dark contour around the chest and let lit edges fade into the background. Reduce plank grain to a few short thin marks, and add gentle surface variation to the ground."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (bag): clean silhouette, crisp handles, a stitched patch and fine fabric weave across the body. Subject 0.094 and background 0.019 are in range. B (seahorse): an airbrushed body with soft, faint ridge lines and a weak contour along the back and belly. Only the eye and spots are sharp. Subject 0.054 and background 0.002 are below range. The eye as the sharpest point is a good hierarchy, so this is a weak call based on too few edges.",
+   "fix": "Give the body plates, fin ribs and silhouette thin, crisp, clean edges. Keep the eye sharpest, and add a little more structure to the water behind."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (music wristband): the band's rim and inner edge fade out, and the strong edges sit on the raised icons, which is close to the real hierarchy. B (bat): a dark, nearly continuous contour runs around the ears, wings and feet like a sticker edge, while the belly and wing interiors stay almost empty. Measured values are in range for both, so this rests only on the even contour in the map.",
+   "fix": "Remove the dark rim around the bat. Let the upper wing edges and ears fade softly into the yellow, and keep the sharpest edges on the face."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (sports bottle): thin contour that weakens on the left and lit sides, a few simple internal lines, and subject 0.058 in range. B (potion flask): the round glass carries a heavy black double rim around its full circumference, plus a thick liquid line, dark rings on every bubble and a perforated cork. Subject 0.097 is in range, but the edge weight is uniformly high and the rim does not relax anywhere.",
+   "fix": "Draw the flask rim as a thin, pale line that fades in places and breaks at the highlights. Soften the liquid surface line and bubble edges, and simplify the cork."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (vintage car): heavy dark contours, grille bars, wheel spokes, gold trim and body hatching pack the hero, and subject 0.360 is far above range. Road, clouds and grass add more firm lines. B (boat and dock): subject 0.140 and background 0.053 are in range, with cleaner hull curves, though plank gaps are thick dark grooves and the water ripples are busy.",
+   "fix": "Remove outlines around the car body. Use fewer grille bars and spokes, keep seams thin, and sharpen only the front of the car while the road, clouds and grass stay soft."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (whistle): a thin, clean contour with very few internal lines and calm repeating flame shapes. Subject 0.039 is just below range, and the dark line stays fairly even around the body. B (web ornament): every strand and arc is a thick dark double line in the map, and subject 0.482 and background 0.025 are above range. Part of this comes from the thin-strand shape, but the same weight across the whole web leaves no focus.",
+   "fix": "Use fewer web strands and make them thinner. Draw soft edges along each strand, keep the sharpest edges at the centre knot only, and let the outer ring fade slightly."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (skull): soft outer dome that fades on the left, with crisp edges at the eye sockets, nose and teeth, a good focus hierarchy though subject 0.067 is low. B (sneakers): near-black contours around both shoes and panels, crowded laces and mesh, and the floor line and shadow are drawn as hard black edges. Subject 0.227 is at the top of range and outline -0.100 is low.",
+   "fix": "Remove the dark contours around the sneakers. Simplify the laces and side panels, make the mesh a faint texture, and soften the floor line and shadow edge."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (travel book): the map stickers and pins carry thick stacked contours from their die-cut borders, the cover and page block are firmly outlined, and wood streaks fill the background. Outline 0.165 is above the real maximum of 0.097. B (star book): stitching, corners and star are crisp, the cover contour is lighter, outline 0.026 is mid-range, and background 0.007 is slightly low.",
+   "fix": "Remove the white sticker borders and dark outlines around the map icons. Paint the icons flat on the cover with thin edges, and keep the wood grain soft and sparse."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through edge weight spread too evenly. A dark, closed contour runs around the hero, and details such as leaves, spokes, bricks and grain each get their own firm line, so nothing relaxes away from the focus. Real cards let lit edges fade, keep seams thin, sharpen only the focus and keep backgrounds quiet. Ghost halos and speckled edge noise also appear in some generated backgrounds. Some calls here are weak: p06 and p07 are low confidence, and a few real-looking pairs may both be real or both generated."
+}

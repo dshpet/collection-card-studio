@@ -1,0 +1,98 @@
+{
+ "issues": [
+  {
+   "issue": "The hero takes on the backdrop's hue, so the card loses its colour roles. The pod and room are all teal. The dome, sky and hills are all blue. The robot arm's shadows go grey. Real cards give the hero its own local colours and one accent, as the dock, hoop and medal box do.",
+   "specialists": [
+    "color_palette",
+    "value_contrast"
+   ],
+   "instruction": "Paint the hero in its own believable local colours, clearly different from the background, with one warm or contrasting accent. Keep colour in the shadows: yellow deepens to amber, red to deep crimson."
+  },
+  {
+   "issue": "Value is staged at the extremes. The tape cabinet is near-white on a near-black blue with a tall spotlight. The pod and flask sit on tones close to their surroundings, with few dark accents. Real cards use a medium background, a wide gentle glow behind the hero and one broad dark shape on it.",
+   "specialists": [
+    "value_contrast",
+    "lighting_shading",
+    "color_palette"
+   ],
+   "instruction": "Use a medium-toned background with a wide soft glow behind the hero. Keep the darkest tones to the hero's shadow side, its contact shadow and small accents."
+  },
+  {
+   "issue": "The hero's light does not roll around the form. Tanks carry repeated hard white streaks, the satellite and atom ball end in an abrupt dark crescent, and the cabinet front is one flat white plane. Real cards keep one upper-left light and a smooth turn into a single soft shadow side.",
+   "specialists": [
+    "lighting_shading",
+    "value_contrast"
+   ],
+   "instruction": "Light from the upper left: one broad soft sheen, then a smooth gradient into one deep soft shadow side at the lower right, with a soft shadow rooted at the contact point."
+  },
+  {
+   "issue": "Surfaces carry fine photographic grain or one even lacquer. The robot arm's floor and the cream casing show speckle, and the satellite body and dish share one thick gloss. Real cards stay smooth and quiet, and keep gloss to one or two parts.",
+   "specialists": [
+    "surface_finish"
+   ],
+   "instruction": "Keep surfaces smooth and softly painted with no speckle. Use mostly matte or satin materials, with gloss only on glass or one small trim."
+  },
+  {
+   "issue": "Settings are generic or invented: a bare grey floor, a plain hill, thin neon wall trim, and a flat backdrop with no glow on the hover car. Real settings use warm, specific surfaces or a clear graphic field with a lit centre.",
+   "specialists": [
+    "staging_detail",
+    "color_palette"
+   ],
+   "instruction": "Stage the hero on a warm, specific surface or a clear two-tone graphic field with a brighter centre. Use big quiet shapes, and only props that belong to the object."
+  }
+ ],
+ "style_text": "",
+ "cards": [
+  {
+   "pair": "p01",
+   "keep": false,
+   "note": "Replace the grey speckled floor with a smooth warm tan floor with a few faint large seams. Deepen the yellow arm's shadows slightly into rich amber."
+  },
+  {
+   "pair": "p02",
+   "keep": false,
+   "note": "Light the tanks from the upper left: one soft wide sheen on the left tank, with the right tank falling into a smooth shared shadow. Make the purple background slightly deeper and less saturated."
+  },
+  {
+   "pair": "p03",
+   "keep": false,
+   "note": "Change the body to low-sheen painted metal with a soft gradient from lit upper left to deep shadow lower right. Make the diamond pattern slightly clearer, with a visible step between two tones."
+  },
+  {
+   "pair": "p05",
+   "keep": false,
+   "note": "Shift the background slightly to a deeper dusty rose with a soft brighter centre behind the atom. Let the blue ball's sheen melt gently into its dark side. Add thin soft shadows from the rings across the ball."
+  },
+  {
+   "pair": "p06",
+   "keep": false,
+   "note": "Brighten the background to a medium blue with a wide soft glow. Make the casing smooth cool grey-white plastic with a gentle falloff toward the lower right and periwinkle shading on the side. Add a slim speaker grille on the blank lower front."
+  },
+  {
+   "pair": "p07",
+   "keep": false,
+   "note": "Give the yellow wave background a slightly brighter soft glow behind the car and slightly deeper orange-yellow edges."
+  },
+  {
+   "pair": "p08",
+   "keep": true,
+   "note": "Passes: most specialists could not pick it, and it matches the real cards in colour, ground and finish."
+  },
+  {
+   "pair": "p10",
+   "keep": false,
+   "note": "Repaint the door and trim bands warm brick red, keeping the walls cool grey-white. Add one large rounded tree to one side and a curved path leading to the door, both as big quiet shapes."
+  },
+  {
+   "pair": "p11",
+   "keep": false,
+   "note": "Paint the wall a deeper slate blue with a soft bright glow behind the tube. Use a plain wall with two or three large panel seams in place of the neon pipe and glowing dash. Make the cap and base neutral warm-grey metal with a clear dark shadow side."
+  },
+  {
+   "pair": "p12",
+   "keep": false,
+   "note": "Make the background slightly deeper orange with a soft glow near the centre. Darken the green liquid toward the bottom. Make the ledge a cool white with grey-lilac shading and a soft neutral shadow under the flask."
+  }
+ ],
+ "summary": "Yes, this is close. The cards share the real language of soft forms, simple backdrops and bold hues, and the phone passes as is. Most others need one to three small changes to colour, value or light, and the tape cabinet is the furthest off. Its near-black spotlit background and flat cream front are the strongest tell, followed by the single-hue pod and dome.\n\nI overruled some specialist reports:\n- **Control cards:** the keyboard, wristband and pool bar are real. Full-strength reds, hot pink, tone-on-tone patterns, soft low-contrast backgrounds and busy scenes therefore do not count as faults on their own.\n- **Real cards flagged as generated:** the sneakers are real, so the calls against them are dropped. The edges report mostly points at real cards, so it gives no action. Surface and lighting calls that landed on real cards are dropped too.\n- **Colour fixes:** I rejected the cream walls proposed for the dome, because cream drift is itself a tell. I also kept background changes slight, because the real cyan burst is just as loud.\n- **Out of scope:** form, proportion, camera and framing fixes are left out, even where the calls were right, because they cannot be judged across different objects or fall outside what the notes may change."
+}

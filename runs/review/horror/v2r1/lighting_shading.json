@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A hearse: the doors, hood and fenders stay one even mid grey in the lens, with no side of the body turning into a real shadow side. All the darkness sits under the chassis and in the windows. Shading_range 0.843 and form_contrast 0.636 are both above the real range, though black paint may inflate them. B boat: light falls into the hull interior, the benches throw soft shadows, and the outer hull turns darker towards the water, as the real cards do. Its numbers are in range.",
+   "fix": "Light the hearse from the upper left. Keep the near side of the body and the fenders in cool shadow that darkens as it curves under, with a narrow soft sheen on the roof and hood only. Add a soft shadow on the road under the car, falling away from the light."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B pumpkin pail: the light is nearly frontal. The ribs and face plate are lit almost equally from left to right in the lens, with only a soft darkening at the far edges, and light_bias_strength 0.127 is below the real range. The long cast shadow to the left implies a side light that the body does not show. A beach ball: there is a clear core shadow low on the left, warm bounce from the sand along the underside, and one broad soft highlight upper right. Its shading_range of 0.533 is low, but the form turn is believable.",
+   "fix": "Light the pumpkin pail from the right so the left third of the body falls into a deep cool shadow. Let the ribs catch light on one side only, and make the shadow on the table start at the base and match that direction."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "B captain's hat has the same layout as the hat in the real reference sheet, judged by eye. A crop comparison could not be run. Its strong side light, diagonal wall shadow and dark corner explain the high light_bias_strength of 1.249, and strong direction is a real-card trait here. A map: soft top light, gently faceted folds, a soft shadow under the sheet and a contained band of sheen on the magnifier rim. Its numbers are in range. Nothing in A's shading separates it from the real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A chest: frontal light. The lid and front face sit at nearly the same value in the lens, and every rivet and metal strap has its own bright edge, so the highlights describe parts rather than one light. B ice tray: one clear light from upper left, a bright top rim, soft darkening down the cups, and a soft shadow falling right across the boards. Its form_contrast of 0.378 is low, but the light logic is consistent.",
+   "fix": "Light the chest from the upper left so the lid is clearly brighter than the front and the right side falls into shadow. Keep highlights to a few soft glints on the metal facing the light, and leave rivets on the shadow side dull."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B purple book: soft pillowy edges all round. The spine, corners and star swell with an even soft gradient, and the corner studs all carry the same small glint. The form turn is doughy, with no crisp plane change. A teal book: a flat, bright cover with a crisp edge into the darker spine and page block, and a clean soft shadow to the left. The numbers are nearly identical, so this rests on the eye alone.",
+   "fix": "Make the cover a flat, firm board with a crisp edge where it meets the spine. Light the top face evenly and put the spine and page block in a distinct darker tone, with less puffy rounding on the corners and star."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B water bottle: a pale, even sheen with hardly any shadow side. The lens stays light across the whole body, and shading_range 0.459 is below the real range. A potion: strong range from dark upper glass to a glow in the liquid, with defined window-shaped highlights on the glass, in range. Translucent plastic could partly explain B's flatness, so confidence is low.",
+   "fix": "Give the bottle a clear shadow side: light from the upper left, the right edge and underside falling into deeper blue, and one long soft highlight down the lit side."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A skull: smooth clay surface with a very gradual, even turn and almost no surface sheen. The form reads as soft dough, close to the soft modelling of the generated lessons, and the darkest values are the sockets. Shading_range 0.847 is above the real range. B sneakers: crisper plane changes on the sole and upper, with a defined shadow left and under the shoes, though both shoes are lit very evenly (bias 0.019, below range). The eye and the numbers disagree in part, so confidence is low.",
+   "fix": "Make the skull's lit side firmer with a defined edge where the brow and cheekbone turn into shadow, and add one soft sheen on the upper dome. Darken the side facing away from the light."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B bat: a bright even rim follows every wing edge and the ears, and the lens shows the edges glowing on all sides rather than on a side facing a light. The body is an even soft ball with little shadow side. A bracelet: one direction reads clearly, with a brighter top and outer band, a darker inner wall, and raised icons shaded consistently. Its form_contrast of 0.315 is only just below range.",
+   "fix": "Light the bat from the upper left. Remove the glowing outline around the wings, let the far wing and the underside of the body fall into darker purple, and keep the edge light on the side facing the light only."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B cobweb: flat frontal light. The strands, knots and ring all share the same pale value, with no shadow on the background to give depth. Form_contrast 0.252 is below range and light_bias_strength 0.028 is the lowest in this pair. A whistle: a soft but directional turn from the lit top to the darker lower side, a dark interior in the slot, and one contained sheen.",
+   "fix": "Light the web from the upper left so each strand has a bright side and a dark side, the knots show a small highlight and a shaded underside, and the web casts a faint soft shadow on the background."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A dead tree: smooth flowing sheen along the trunk ridges with no single shadow side. The ridges are lit similarly around the trunk, the branches carry a soft edge glow, and the cast shadow at the base is small and vague. Form_contrast 0.365 is below range. B topiary: firm top-right light, dark undersides under every tier, and a long definite cast shadow across the lawn, with numbers in range.",
+   "fix": "Light the tree from one side so the far half of the trunk and the branch undersides go into deep cool shadow, and lay a long clear shadow across the grass going away from the light."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B flower bed: every petal and brick carries its own glossy white streak, so the surface reads as shiny plastic and the highlights repeat instead of following one light. The bed has little cast shadow on the pink ground. A balloons: one broad soft highlight in the same upper-left place on each balloon, with a darker turn lower right and consistent overlap shading.",
+   "fix": "Remove the shiny streaks from the bricks and petals. Use soft matte light from one side, brighter on the tops and darker on the far side of the bed, and add a soft shadow on the ground beside it."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B castle: even daylight from the front. Both towers are lit alike, each stone has the same small bevel of light and dark, and the towers throw no cast shadow on each other, the wall or the hill. Light_bias_strength 0.146 is below range. A door: leaves and wreath cast crisp dappled shadows across the door in one diagonal direction, and the frame steps into shade.",
+   "fix": "Light the castle from the upper left. Put the right side of each tower in clear shadow, let the left tower cast a shadow onto the centre wall, and lay a soft shadow on the grass at the base."
+  }
+ ],
+ "pattern": "Generated cards still tend to use frontal or wrap-around light. Forms are lit almost equally across the body, with no committed shadow side or core shadow, while real cards push one side into a deep, often cool shadow. Three related tells follow from that. Edges glow on all sides instead of only on the side facing the light. Highlights repeat on every small part (rivets, bricks, petals) instead of following one light. Forms swell like soft dough rather than turning crisply at a plane change. Cast shadows are also weak or missing, or they imply a light direction the hero's own shading does not show."
+}

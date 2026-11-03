@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: sneakers on a plain cream ledge with a hard horizontal horizon against an orange gradient field, category 2, no props. B: candle on a wood slab with a front lip and a plain cyan backdrop, category 3, no props. Both match real staging (apple basket, retro computer desk), and both backgrounds are quiet and in range.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: saturated purple tone-on-tone diamonds over a plain lilac ledge, matching the real flower-bed card, with only a small pink glow under the glass. B: the diamonds sit on a greyed, dusty mauve wall, and the rounded stone slab carries crack lines and mottling. It reads heavier and duller than real backdrops, which stay clean and saturated. This is a weak call.",
+   "fix": "Keep the backdrop a clean saturated purple-pink with soft tone-on-tone diamonds. Make the ledge a smooth plain slab with no cracks or blotches."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: yellow field with faint tone-on-tone pi symbols that stay behind the calculator, in range. B: the feeder hangs on a big tree trunk with leaf clusters at both top corners, plus park trees, hedges, lawn, kerb, paving and office towers. Detail 0.0216 and edge density 0.037 are above the real range, and the small shapes crowd the card edges. Real environments such as the lion card use a few large quiet shapes.",
+   "fix": "Simplify the park to three large soft shapes: blurred green lawn, pale sky and one soft tree mass. Remove the buildings, kerbs, paving and leaf clusters at the corners."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: moon on a blue two-tone sunburst. B: bugle on a cyan two-tone sunburst with its centre showing through the loop. Both are category 1 with no props and in range, like the real lamp and bounce-house cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: log cabin centred on a lawn with a few trees, clouds and small grass tufts, in range. B: no single central hero. Thatch fills the top, and a curved bar, pineapple, grapes, two cocktails, four stools, pool tiles and a pool edge all compete, with the bar cropped by the card edge. Detail 0.0569 and edge density 0.144 are far above the real range.",
+   "fix": "Show one small tiki bar, whole and centred, with stools at most. Remove the fruit and drinks. Make the water a plain soft turquoise with no tiles or pool edge."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the same crowded pool bar, with thatch, fruit, glasses, four stools, tiled water and a cropped counter. Its 0.0569 and 0.144 are above the real range. B: gate centred and symmetrical, with a moon, clouds, hills, gravestones, stepping stones and bar shadows. It is busy but in range and the hero holds the centre.",
+   "fix": "Show one small tiki bar, whole and centred, with stools at most. Remove the fruit and drinks. Make the water a plain soft turquoise with no tiles or pool edge."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: locker on a mottled, streaky purple wall with a large dark cast shadow, a skirting board and a plank floor. Detail 0.0218 is just over the real top. B: armchair on a flat, even mint wall with a skirting board and floor, in range and calmer. Both are the same category 3 setup, so the only real difference is the wall's busyness.",
+   "fix": "Paint the wall a smooth even purple with no streaks or blotches, and soften the shadow behind the locker to a light faint shape."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: oil lamp on a green sunburst with a yellow centre. B: map stack on pink diagonal stripes. Both are category 1 with quiet tone-on-tone fields, no props and similar in-range numbers.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: lantern on clean lime concentric rings, in range. B: pillow on pink rings with a grainy surface and a muddy dark mauve patch at the top right corner. Detail 0.0159 is just above the real top, and the field looks less clean than real flat fields.",
+   "fix": "Draw the rings as clean smooth flat pink bands, with no grain and no dark patches at the corners."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: candy corn on wood planks with a quiet purple diamond backdrop, and detail low at 0.010. B: full-bleed wood planks with no backdrop, a large glass plate, and loose water drops scattered on the rim. Those drops are invented extras around the fruit. Detail 0.0199 sits near the real top, and the plank seams run busily across the whole card.",
+   "fix": "Remove the loose water drops from the plate rim. Put the plate on a smooth plain surface with few faint plank lines."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: binoculars on full-bleed yellow planks, with no backdrop or horizon, dark seams converging across the card and streaky grain, at 0.0152 detail. No real anchor card fills the frame with material like this. B: rocking horse on a plain pink striped wall with a simple wood floor, a clear category 3 setup like the real arch and ship wheel cards, at 0.0103.",
+   "fix": "Add a simple flat colored backdrop behind a narrow wooden ledge, with few faint plank lines and no strong seams."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: spider on orange tone-on-tone waves. B: fan on yellow tone-on-tone waves. Both are category 1 fields with the same treatment, edge density is identical at 0.013, and there are no props.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards give themselves away by overfilling the environment. Examples are the lesson lighthouse's rocks, rope, lifebuoy and bushes, and the test pool bar's fruit, drinks and stools, or the feeder's skyline and leaf clusters. The hero stops being the one central thing, and background detail climbs above the real range. Smaller signs are surfaces that are not left plain: mottled walls, cracked slabs, grainy fields, strong plank seams, invented droplets, and glow pooled around the hero. Real cards use a few large quiet shapes and clean tone-on-tone fields. On simple category 1 cards, this vector gives little to separate real from generated."
+}

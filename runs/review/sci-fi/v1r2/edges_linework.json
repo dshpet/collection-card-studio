@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the telescope tube and gold rim carry a hard, even contour along their whole length, with streaky hatching in the tripod legs. Outline darkness is -0.068, below the real floor, and background density is at the real minimum. B: the binoculars' contour breaks on the lit barrels, the plank gaps are the darkest lines on the card and compete with the hero, but all its numbers are in range.",
+   "fix": "Let the telescope's edge fade softly on the lit top of the tube, keep the sharpest edge only at the gold lens rim, and draw the wooden legs as smooth forms without streaks."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the scarf has a clean, firm silhouette, thin fold lines and one crisp focus at the round badge. B: the asteroid has a mushy rim, no sharp focus, fuzzy mottled noise across the rock and flames that dissolve at their edges. Its subject density of 0.027 is well under the real floor of 0.046.",
+   "fix": "Give the asteroid a clear, firm silhouette and crisp crater lips on the side facing the viewer, and keep the rock surface smooth instead of grainy."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the dish rim is a hard double contour running unbroken around the bowl, and the plinth has sharp plates, rivets and base steps at equal strength, so nothing recedes. B: the sandcastle has crisp crenellations at the top and softer, lost edges where it meets the sand, which matches the hierarchy on real cards. Both sit at the background floor of 0.015.",
+   "fix": "Soften the dish's outer rim on the lit side so the edge disappears into the sky in places, keep only the feed tip sharp, and make the plinth seams thinner and quieter."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both exceed the real subject density (0.208 and 0.203 against a ceiling of 0.179), so that number does not separate them. A: the rover has crisp, evenly weighted contours on the body, wheels, solar panel and dish, plus a sharp ring where its shadow meets the ground. B: the taxi's hood and roof edges are softer and partly lost, with the strong edges gathered at the windows and grille.",
+   "fix": "Reduce the rover's panel lines and wheel rings, soften the body edge on the lit side, and fade the shadow edge under the wheels."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the shoes have a dense mesh and lace pattern near the top of the subject range, and a contour that breaks across the soles. B: the helmet has few, thin, precise seams and a clean visor rim. Both sit below the real outline floor (-0.1 and -0.078), and on edges each departs from the real cards in a different way, so neither stands out.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the pool has soft ring edges with strength gathered at the duck and grass tufts, though the fence planks are fairly dark and subject density is low at 0.045. B: the jacket has a firm but varied contour, thin seams and doubled rims on the badges, with a background of 0.007 under the floor. Each misses one range slightly, and neither shows a clear edge fault.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: every thatch shingle, floor tile, fruit and glass is outlined at nearly the same strength as the hero, so there is no edge hierarchy. Background density of 0.144 is far above the real ceiling of 0.089. B: the dome has clean contours, thin base-block seams and a quiet, soft ground, with a background of 0.014 almost exactly at the real floor.",
+   "fix": "Blur and simplify the thatch and pool tiles, drop their dark edges, and keep the sharpest edges only on the drinks and fruit at the center."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: a soft glowing halo surrounds the planet and shows as a smudge around its rim in the lens, a treatment absent from the real cards. The planet's bands are thin, fine lines, and both densities (0.04 and 0.003) fall below the real floors. B: the flip-flops have a crisp contour with varied weight and dented dots at the focus, against stripes at normal strength.",
+   "fix": "Remove the glow around the planet so its edge meets the purple stripes directly, make the edge firm on the shadow side, and strengthen the background stripes."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the book scene is dense, with leaves and fence strongly edged, but its background density of 0.089 is at the real ceiling, not beyond it, and the book stays clearly the focus. B: the chair has clean tube contours and a soft background curve. All numbers on both cards are in range, and neither shows a halo or heavy outline.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the music player has thin, precise grooves around its panel, and the rounded body and cables have clean contours. B: the UFO hull is covered in fine horizontal brush streaks, the underside has a heavy black contour and the top of the hull is much weaker, so the edges read as texture instead of form. Background density of 0.003 is under the floor of 0.004.",
+   "fix": "Paint the saucer hull as smooth metal with no brushed streaks, keep the seam under the dome thin and sharp, and lighten the dark line under the saucer."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the popcorn cart's numbers are all in range, and fine detail gathers at the popcorn and wheel while the awning and cart body stay simple. B: the control panel has thick doubled grooves around every button and gauge, and the button rows read as heavy repeated rims. Subject density of 0.204 is above the ceiling of 0.179, and background density of 0.005 is below the floor of 0.011.",
+   "fix": "Draw each button with one thin, tight seam instead of a thick double ring, simplify the panel frame, and keep the sharpest edges on the gauges and red joystick."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the rocket has a fairly even, unbroken contour around the body and fins, with the riveted bands drawn as stiff parallel lines. B: the submarine's contour is broken, lost along the lit hull and heaviest at the shadowed right seam and portholes, which matches the one-sided lines on real cards. All numbers are in range for both cards, so this rests on line quality alone.",
+   "fix": "Let the rocket's edge fade on the lit side of the body and fins, and keep the strongest edges at the portholes."
+  }
+ ],
+ "pattern": "Generated cards are most often given away by edge hierarchy. Contours stay evenly hard all the way around the hero, where real cards let the lit side go soft and keep the heavy line on the shadow side. Weaker tells include doubled grooves around small parts, streaky surface hatching, a glow around the hero, and detail spread at equal strength. Backgrounds fail in both directions: overly busy ones in the lessons, and near-empty ones below the real floor on the weakest test cards. Evidence here is thin: only p08 is strong, and p05, p06 and p09 give no edge-based reason to choose."
+}

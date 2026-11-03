@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the capsule's base is one even, near-black closed ellipse. Its panel seams are thin, but the shell has few other edges, and background density (0.003) sits just under the real range. B: the envelope and photos have heavy contours and paired lines at the photo borders, but the weight varies, with lighter folds and town detail. Density is in range. The call is weak because B's contour is the heavier one.",
+   "fix": "Let the rim of the capsule's base vary: soft and almost lost on the lit side, darker only where it turns under. Do not draw a uniform dark ring around it."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the inflatable's edges change weight, with hard pinches at the seams and softer lines along the tubes, and density is in range. B: the asteroid body has very few edges (0.035, below range). Its crater rims are soft blurred rings, while the crystals and sparkles are crisp closed outlines, so the edge language is split.",
+   "fix": "Give the rock small, sharp chips and broken facet edges along the crater rims and the ridge. Keep the crystal edges no harder than the rock around them."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the sandcastle's edges are soft and irregular, and the sand and base edges fade out. Background density is at the low end of real (0.015). B: the observatory has clean, even, closed contours around the dome, ledge and stones, like a coloring page. Stone joints read as uniform grooves, the background is too quiet (0.007) and outline_darkness is below range (-0.072).",
+   "fix": "Make the stone joints thin and uneven, with some fading out. Soften the dome's lit edge into the sky, and put a little more edge detail in the hills and clouds."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the comet rock has few strong edges overall (0.031, below range). There is a heavy dark arc along the lower left, scratchy crack lines inside, and the tail melts into a soft glow halo with no firm boundary. B: the scarf has one clean, confident contour, smooth folds and a sharp medal at the focus, so the edge hierarchy is clear and density is in range.",
+   "fix": "Give the ice rock crisp, clean facet edges with thin precise cracks. Remove the dark rim on its lower left, and give the tail a defined shape with less glow."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the beach ball has thin seams and an upper-left edge almost lost into the sand. Both densities are below range (0.029 and 0.003), which a big smooth sphere can explain. B: the drink has dark, dense linework around the ice, lime and glass, which is at the heavy end but in range. Each card has one point against it, and neither is decisive.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the station has even, heavy, closed contours, with double-ruled lines around the solar panels and modules. All parts have the same edge strength, with no softer zone, and outline_darkness is below range (-0.08). B: the bicycle has a dense scene (both densities slightly above range), but its lines vary, with hard spokes and frame at the focus, softened car and road edges, and some lost boundaries.",
+   "fix": "Make the solar panel grids hairline thin and fainter toward the far panels. Keep the sharpest edges on the ring, and soften the far panel frames and the planet."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the bag has a soft fabric contour, a crisp stitched patch and dense hatching on the green roll. B: the target has hard rings and busy wood-grain lines, with background density above range (0.058), but the bear's edges are soft and the focus sits clearly on the rings. Both have a readable hierarchy, and the one high number is explained by the booth's construction.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the plant's glowing bulbs have soft, blurred halos. The stems and leaves carry glassy double lines of the same weight, outline_darkness is low (-0.092) and background density is under range (0.008). B: the book has heavy double contours on the stickers, and its outline_darkness is high (0.165), but the die-cut sticker borders explain it. The book's own edges are thin and the wood grain falls away.",
+   "fix": "Keep the bulb edges firm with only a small glow. Use one thin edge along the stems, and sharpen the leaf tips and the pot rim."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the rocket and tower have an even, unbroken dark contour, and even the clouds and bushes are traced as closed lines, like a coloring page. B: the tiki bar is very busy (background 0.144, above range), which counts against it, but the line quality is more natural, with soft stool edges and lost boundaries in the water. The eye evidence and the number disagree, so this is a low-confidence call.",
+   "fix": "Remove the traced look. Let cloud and bush edges dissolve softly, fade the rocket's lit side into the sky, and keep the hardest edges at the porthole and fins."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the globe has hard double lines on the gold arm, ring and base, and every star and dot is ringed in dark. Subject density is at the top of range (0.16) and outline_darkness is below range (-0.109). B: the balloons have thin, soft, partly lost edges and clouds that dissolve, though subject density is low (0.028), which round balloons can explain. A has the more mechanical edge treatment, but gold metal can also produce those double lines.",
+   "fix": "Make the stars and dots sit in the surface with soft edges and no ring around them. Use a single clean edge along the gold arm, softening toward the back."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the paper has a firm outer contour with heavy marks from the drawn shapes, while the desk and background stars stay light. B: the scroll has a clean contour, a sharp wax seal at the focus and soft reflections. All three measures are in range on both cards, and A's heavy lines come from the printed diagram rather than from an outline.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the vending machine's edges fit the card style, with a thin left silhouette, a firmer window frame and busy droplets and cans at the focus. B: the tube has dark contours along both sides and hard, thin ribbing on the cap and crimp, plus fine wrinkle lines and a straight razor edge at the table. The edge quality is photographic, not the rounded, soft-cornered edges of the real cards.",
+   "fix": "Draw the tube with rounded, simple edges and a few broad folds instead of fine wrinkles. Reduce the cap ribs to a few soft grooves, and let the lit side fade into the background."
+  }
+ ],
+ "pattern": "Generated cards tend to have even, closed contours that trace every form at the same weight, like a coloring page, including clouds, stars and panel grids. Real cards vary line weight and let lit edges go lost, with the sharpest edges at the focus. Weaker tells: seams drawn as uniform grooves, and glow or blur replacing a defined boundary (comet tail, bulbs). This vector is weak on some pairs. Smooth subjects push density out of range on their own, and p09's number disagrees with the eye, so several calls here are low confidence."
+}

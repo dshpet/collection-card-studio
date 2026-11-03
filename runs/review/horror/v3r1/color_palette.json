@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the purple wall and table are as loud as the orange drink and cyan umbrella. Background chroma 0.24 is above the real maximum of 0.214, and almost nothing is muted to rest the eye. B: the yellow frame sits on a yellow wall, but the grey-mauve stone counter gives a real neutral mass and background chroma stays at 0.13.",
+   "fix": "Make the purple wall a dusty, softer violet, clearly quieter than the drink. Make the table a pale greyish lilac. Keep the only strong color in the drink."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the horse wood, floor and pink stripes all pull orange-pink, with warm share 0.999 against a real maximum of 0.853. There is no cool mass, and only the charcoal mane is neutral. B: the plank floor is also warm, but the green body and blue lenses give a real cool counterweight, with warm share 0.787.",
+   "fix": "Paint the wall stripes a cooler, bluish pink. Make the wood a paler natural beech instead of orange. Keep a clean cool tone in the floor shadows."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the spider's black drifts to warm brown in the lens, and the whole card sits in orange with warm share 0.999. Subject chroma is 0.027, below the real 0.082 minimum, and shadow chroma is 0.45, also below range. The real lessons keep neutrals clean or cool on warm grounds, as on the computer. B: the purple fan is loud at subject chroma 0.226, above range, but it is a clear hero-versus-ground hue role and its shadows stay rich purple.",
+   "fix": "Make the spider body a cool blue-black with cool grey-blue highlights on the legs and abdomen. Do not tint it brown from the orange background."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: roof, logs and door are all pushed to saturated red-orange, and the sky and grass are equally loud, with background chroma 0.154 above the real 0.147. Hero and background compete. A: the bar has many hue families at 7.05, above range, but the pale concrete counter and tan thatch are large muted masses, and the object colors stay local.",
+   "fix": "Paint the logs a muted grey-brown timber and the roof a dusty brick red. Soften the sky to a paler blue and the grass to a quieter green so the cabin stands out."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a violet wash covers sky, path, grass edges and stone, so the pillars lose a local stone color and turn lavender-khaki in the lens. Subject chroma 0.045 is below the real 0.051 minimum. B: the pool bar keeps separate local colors for water, concrete, thatch and fruit, though its 7.05 hue families are high.",
+   "fix": "Keep the pillars a true pale grey stone and the iron gate neutral dark. Keep the path a natural earth tone. Limit the purple to the sky."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the pump's white band and the sand drift to warm cream, and the sky turns peach and mauve, so warm share reaches 0.799, above the real 0.727. Whites are the same warm neutral shift seen on the generated computers and lighthouses. A: the card is cool, with warm share 0.041, and the metal keeps a blue-steel neutral, but the background is muddy, so this is only a weak call.",
+   "fix": "Paint the pump's band clean white with cool grey shadow. Make the sky a clear pale blue fading to a soft warm horizon, and reduce the orange cast over the sand."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the white tip of the candy corn turns cream and merges with the yellow base in the lens, so the card has no true light neutral. The floor is pushed orange against the purple, though the violet shadow is rich and related. All measures are in range. B: the fruit stays in natural local colors on tan wood, with pale glass as rest. Subject chroma 0.170 is only slightly above range.",
+   "fix": "Make the candy tip a clean milk white with cool shadow, clearly separate from the yellow band. Make the table a paler, less orange wood."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the moon is cream-yellow with an orange rim glow against a very saturated blue. The glowing halo around the object matches the generated glove lesson, and the cream hero has little neutral beyond the craters. B: the bugle is one gold-orange mass with a red rope accent on cyan, a simple hue role that matches the real lamp card's economy.",
+   "fix": "Remove the orange glow around the moon. Paint the moon surface a pale, slightly grey ivory with cool grey craters. Make the blue background a little deeper and less neon."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: crimson chair with brown wood legs on a muted mint wall, with deep, rich red shadows. B: orange locker on a muted purple wall, with white sneakers keeping cool lavender shadows. Subject and background chroma are nearly the same in both, and each has a clear hero-versus-ground hue role. Color gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A is the same lamp card as the real one in image 1, so its flat single-hue teal and dark green-black metal are real traits. Its out-of-range measures do not count against it. B: the feeder wood is pushed to pure orange-red and yellow instead of natural timber, and the tree trunk runs to red-brown. Shadow chroma 0.61 is below range and the background is washed out at 0.08.",
+   "fix": "Paint the feeder in natural weathered pine with a muted brown-red roof, not bright orange and yellow. Make the trunk a greyer bark brown with cool, deep shadows."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the shoes carry neon green, teal, magenta and orange accents on saturated blue, giving 5.49 hue families, above the real 4.78, with no single accent. The small details are pushed to pure hue. B: the candle is held to three roles of ivory wax, orange wood and cyan wall, with 4.21 hue families. The cream is natural for wax.",
+   "fix": "Use one accent color on the shoes: white laces and soles, with a single lime trim on the blue upper. Remove the magenta and orange details."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the acid lime background floods the glass and flame, so nearly the whole card is one hue, with 1.56 hue families. Lantern shadows are dead taupe-black, with shadow chroma 0.23, far below the real 0.74 minimum. B: the blue pillow is a pure hue on pink, but its shadows move to rich indigo at 1.09, and hero and background have separate roles.",
+   "fix": "Make the background a softer, deeper green. Make the flame warm yellow-orange so it contrasts with the wall. Paint the metal a blue-tinted iron with color kept in its shadows."
+  }
+ ],
+ "pattern": "Generated cards still lose clean neutrals: whites, greys and blacks drift warm toward cream or brown, where real cards keep cool grey-blue shadows on them. Wood and other mid-tone materials get pushed to saturated orange. Color also floods the whole card as one wash, so the background is as loud as the hero and there are few muted masses to rest the eye. Small details tend to add extra pure-hue accents, and glow halos sometimes ring the object."
+}

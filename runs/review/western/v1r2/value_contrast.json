@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the corners fall to the darkest grey in a tight ring around the jacket (vignette 0.134, above the real range) and the jacket body sits as light scattered patches, with the sash the only dark mass. B: the hat sits on wide light and mid rays that reach the edges with little corner falloff (0.071), and its brim underside and crown form one calm dark group.",
+   "fix": "Keep the green background nearly the same brightness out to the corners, with wide rays and no dark ring. Give the jacket one large shaded side instead of many small light patches."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the sky and deck fall almost entirely in the two lightest greys (mean 0.761, above range), and the wheel is only mid-grey with a dark post, so the hero is darker than the card by more than the real range allows (gap -0.282). B: the black tent opening, mid-grey drapes and light tabletop make three clear masses, with the bottles lighter than the dark behind them.",
+   "fix": "Lower the sky to a deeper mid-tone purple and darken the deck toward the corners. Add one large deep shadow behind the wheel so the card has a real dark mass."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the scarf is one dark mass with a black inner collar, set on a mid-grey and light swirl, so the value groups are large and simple. B: the background is one flat grey, and the rope breaks into small light and dark twist marks with no large shadow group (rms 0.086, at the real floor). All figures are in range, so this rests on grouping only.",
+   "fix": "Put the underside of the coils and the inside of the loop in one continuous deep shadow, keep light on the top only, and let the background rise brighter behind the rope."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the canvas cover and dusty road clip into large white areas with speckled ground (mean 0.729, above range), and the wagon's shadow is thin, so there is little dark mass. A: the card holds at light-mid, with the water as a mid-grey field and the dark side of the hull and the dock's shadow forming a clear dark group.",
+   "fix": "Bring the canvas and road down from white to soft cream with shaded folds. Lay a wide dark shadow under the wagon and darken its wheels and bed as one group."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the saddle is almost one black shape against a clipped white-and-light sky and pale fence (gap -0.318, rms 0.198, both past the real range), so the separation is abrupt with few steps between. B: the white monitor reads against a mid orange with a light glow, the dark screen and desk underside are compact accents, and the gap stays moderate at -0.009.",
+   "fix": "Lighten the saddle to a warm mid brown with broad lit leather on the seat and flap, and keep the darkest tone only in the folds. Lower the sky and fence so they no longer hit near-white."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the bright lid and trim sit on a dark blue with a light sand corner, with some blotchy grey in the water. B: the barrel sits in a soft light halo with dark hoops and a compact floor shadow. Both cards have clear value groups, and all four figures are in range on both, so value gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the floor clips to one large white plane (mean 0.762, above range), meets a flat grey wall at a hard line, and the shoes are lit with white soles and strong dark uppers (gap -0.222). A: the card stays in one quiet light-mid grey, and the doors are a modest mid-dark with restrained shadow. A is also flat, so this is a weak call driven by B's overbright floor.",
+   "fix": "Lower the floor from near-white to warm yellow mid-tone and soften the wall-floor change with a gradient, so the white stays only on the soles."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the background stripes clip to white around a hero broken into tiny dark leaves and light roses, so the arch is a dark speckled texture against a very bright card (gap -0.278, outside range; mean 0.749 at the ceiling). A: the mug is a broad mid-grey form with large light reflections, a dark table edge and a single contact shadow.",
+   "fix": "Lower the pale stripes to a mid pink. Group the leaves on the shaded side of the arch into one dark mass, and keep the small light marks to the top of the roses."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the background is a dim, flat, single grey with no glow or corner change (mean 0.568, below range; vignette -0.002, below range), and the boot is dark on that dull mid field. B: the dark cap sits on a bright circular glow behind the hero, in a stepped light-to-mid background, though the hero is very dark (gap -0.312).",
+   "fix": "Raise the teal background to a brighter, cleaner tone with a visible soft glow directly behind the boot and slightly deeper corners."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the card is low key, with a nearly black sky and building and the sign as the lightest group, so the hero is far lighter than its surroundings (mean 0.487, gap 0.284, both outside range). A: the book is a mid-grey mass on a light striped table, with values in the real range and a moderate gap.",
+   "fix": "Change the night scene to a bright dusk or day sky in a medium-light blue, and light the building so it sits in the mid-tones, leaving the darkest tone only for small shadows."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the locomotive is a near-solid black mass against a light sky and clipped sand (rms 0.229, gap -0.372, both beyond range), with only small highlights on the boiler. A: the coaster cars carry light and mid planes with dark accents only in seats and track, on a sky and clouds of light to mid values. A's vignette at 0.117 is slightly high.",
+   "fix": "Lift the locomotive body to a dark blue-grey mid-tone with broad soft highlights along the boiler and cab, and leave true black only under the running board and in the chimney. Lower the sand from white."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the sky and sand sit in the two lightest greys, with the sand clipping toward white (mean 0.778, above range, and vignette 0.0), and the cactus has a thin dark side but no strong dark group on the card. B: dark corners, a mid wall and light paving form three clear bands, and the dark cart body anchors the card.",
+   "fix": "Deepen the sky to a richer medium blue with slightly darker corners, bring the sand down to a mid tan, and put the cactus's whole right side in a darker green."
+  }
+ ],
+ "pattern": "Generated cards most often give themselves away by overall key and value grouping. The clearest sign is a lifted, overbright card, with sky, floor or canvas clipping into large white planes. Other signs are heroes split into many small light and dark marks instead of a few large masses, and a hero-to-background gap pushed to an extreme, either a near-black hero on a clipped ground or a low-key night card. Real cards keep the mean around mid-light, hold one simple dark group, and step down through mid-tones around the hero."
+}

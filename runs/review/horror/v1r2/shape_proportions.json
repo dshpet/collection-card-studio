@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the towel has a wavy outline, a thin piped hem and believable cloth proportions. B: the calculator is a thick slab with a tilted display step, and its contour is almost all straight runs with soft corners. It reads B straight_share 0.805, corner_rate 0.0 and solidity 0.969, all outside the real range, but a tilted rectangle gives those numbers naturally. Both objects keep their expected parts, so the shape gives no clear reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the oil lamp has a slim chimney, a shallow font and a thin ring handle, so its parts sit in believable relation. B: the candelabra has stubby, oversized candles on swollen cups, a bulbous stem and arms thick enough to read as tubes. Its solidity of 0.384 only reflects the open form. The call rests on B's fattened parts and is weak.",
+   "fix": "Draw taller, slimmer candles, thin curved metal arms of even width and a narrower turned stem with crisp collars."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the pumpkin is an inflated, near-round ball with very shallow ribs. Its lobes barely dent the outline (solidity 0.961, just over the real maximum), and the stem is a fat stub. B: the spring rider has a clear neck, tail, handle, thin coil and flat square base with tight corners, so its parts separate cleanly.",
+   "fix": "Draw deep rib grooves that notch the outline, a slightly squat, uneven body and a thinner, twisted stem."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the cat has a toy build, with an enlarged head on a short body, swollen paws and a thick sausage tail ending in a blunt curl. A: the fountain keeps thin bowl rims, a narrow pedestal, stacked tiers and open gaps between the falling water and the stem.",
+   "fix": "Draw a smaller head on a longer neck and body, slim front legs, small paws and a thin tapering tail."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the witch hat's cone flows in one soft blob into a swollen, thick-lipped brim, and the tip bends to a blunt rounded end. A: the graduation cap has a planar board with straight edges and crisp corners, plus a thin cord and a separate tassel, matching the real cards' flat-stays-flat behaviour.",
+   "fix": "Draw a thin flat brim with a sharp edge, a crisp crease at the bend and a narrow pointed tip."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: this is the real lighthouse from the lessons, with a straight tapered tower, a thin railing and a fine spire. B: the house has bulging, bowed walls, drooping swollen roof eaves with rolled edges and a thick bent chimney. Its contour is soft and melted, with no straight wall run, and the proportions lean toy-like.",
+   "fix": "Draw straight wall lines, thin roof edges with sharp eave corners and a narrower, cleanly stepped chimney."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cauldron is a ballooned sphere with a fat tube rim, sausage ring handles and stubby tapered legs. B: the gloves are also a soft mass (corner_rate 0.392, below the real range, solidity 0.951), but padded gloves are blobby in reality and the cuffs still separate. A's thickened thin parts are the stronger fault, but only slightly.",
+   "fix": "Draw a thin flat rim, slim forged ring handles and short angular iron legs on a less inflated pot."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: compared with the real lion on the reference sheet, the head and mane are enlarged and crowd the body, the forelegs are fattened, and the plinth steps have softer corners. B: the bag's body sags plausibly, its handles stay fairly slim, and the bottle, tube and roll are distinct parts that break the outline.",
+   "fix": "Draw a smaller head and tighter mane on a longer, lower body with slimmer legs, on a plinth with flat faces and crisp stepped edges."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the broom's head is built from fat noodle-like strands with rounded tips, swollen into a heavy lump under a thick binding. Only the handle stays thin. A: the neckerchief is plump too, but its cloth folds taper to points, and the knot and open neck loop read clearly.",
+   "fix": "Draw many thin straight straw bristles ending in sharp, uneven tips, fanning out from a narrow bound neck."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the coffin is one solid wedge with thick lid slabs and little break in its outline (solidity 0.979 and straight_share 0.692 above the real maximum, corner_rate 1.149 below the real minimum). The lid is oversized and the body is stubby. B: the stone table has a thin top, a pedestal, a separate stool and open gaps between the parts, all within range.",
+   "fix": "Draw a longer, narrower coffin with a thin lid, a clear shoulder angle and a visible gap where the lid is lifted off."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the crystal ball is a huge perfect circle on a tiny stand, and the short curled feet are stubby with fat scroll ends. The stand reads undersized and toy-like. B: the glass keeps straight tapered sides, a thin straw with a fine bend and a thin paper umbrella with ribs.",
+   "fix": "Draw a smaller sphere seated in a taller, wider stand with slim metal legs and fine scroll feet."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the gravestone's arched top and base slab have soft, slightly swollen edges, and the plinth corners are rounded off, though its faces stay mostly planar. A: the sneakers have fat ballooned soles, yet the collar, tongue and heel notches give a varied, believable outline. Both are within range, so the shape evidence is thin and the call is weak.",
+   "fix": "Draw flat stone faces with tight chipped corners on a thin, square-edged base slab."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through inflation. Bodies swell toward ball or pillow shapes, and thin parts such as handles, rims, arms, legs, tails and bristles thicken into tubes or sausages. Corners and hard edges melt into one soft contour, and heads or main masses are enlarged like toys against undersized supports. Real cards keep planar faces, tight bevels, thin rims and clear separation between parts."
+}

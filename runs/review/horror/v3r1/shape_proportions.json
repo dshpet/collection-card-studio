@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the glass keeps straight tapered walls, and the straw and parasol stay thin, which suits a simplified real object. B: the mirror's frame is a thick swollen band, the scrolls are round knobs, and the feet are stubby lumps. Its corner_rate of 8.05 is above the real range.",
+   "fix": "Draw the mirror frame as a slim moulded band with fine, crisp scrollwork and slender, tall feet. Keep ornaments small and flat against the frame, not round knobs."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the rocking horse has thick legs and rockers, but it is a wooden toy, so that is true to the object, and its rails and rockers are clear. B: the binoculars have short, fat barrels with soft ends, but the bridge and hinge are correct and the part count is complete. Neither card shows a clear flaw on this vector, and all measured fields are in range.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the spider's legs are thick sausages with rounded blunt tips and bulging joints, on an inflated ball body, and corner_rate 4.83 is just above the real range. B: the fan keeps flat pleats, straight radial edges and thin separated ribs.",
+   "fix": "Draw the spider's legs thin and tapering to fine points, with sharp angular joints, and a smaller, narrower body."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the pool bar's stools and rings are clean, and the broken silhouette comes from the scene crop. B: the log cabin is squat and short, with bulging log ends, a fat rounded roof ridge and chunky toy shingles. Its proportions read as a fattened toy house.",
+   "fix": "Draw the cabin taller and less squat, with slimmer logs, thin straight roof edges and a tight, sharp ridge line."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the gate is a dense lattice of bars and spikes, with thin_share 0.203 far above the real range and solidity 0.569 just below it. Its stone pillars are heavy and swollen, with ball caps oversized against the fine ironwork. B: the pool bar has the same contained, simple part relations as in p04.",
+   "fix": "Draw fewer, simpler gate bars with a little more thickness, and slimmer stone pillars with small caps, so both parts carry a similar visual weight."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the stage light's barrel is fat, but the yoke, bracket and mount relate logically as a real fixture. B: the gas pump's top is an oversized pillow-shaped cap balanced on a tiny stem, wider than the body, and the body corners are soft. The part relation is unlike a real pump.",
+   "fix": "Draw the pump head as a flat-topped box or a small glass globe in line with the body width, with straight sides and tight corners and no neck."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the candy corn is one inflated blob with a rounded top and very soft bottom corners. Corner_rate is 0, and solidity of 0.995 and straight_share of 0.738 are above the real range. B: the fruit plate has a varied contour, with a crisp watermelon wedge point and several distinct parts.",
+   "fix": "Draw the candy corn as a slimmer tapered wedge with a narrower tip, a flatter base and tighter bottom corners, not a swollen dome."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the moon is a plain filled disc with no contour event. Corner_rate is 0, and solidity of 0.996 and straight_share of 0.892 are outside the real range, though a moon is naturally round. B: the bugle keeps thin tubing, a clear loop opening, a fine rope and separated tassels, and its solidity of 0.51 comes from those true openings.",
+   "fix": "Break the moon's edge slightly with shallow crater rims that notch the outline, so it is not a perfect smooth disc."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the armchair's plump arms and wings suit upholstery, and the legs stay slender and curved. B: the locker should be flat sheet metal, but its edges are thick and soft, its corners are blobby, its vents are swollen sausages and its feet are stubs. Solidity of 0.961 and straight_share of 0.682 are above the real range, and the door is as thick as a plastic slab.",
+   "fix": "Draw the locker as thin flat sheet metal with sharp tight corners, a thin door panel, narrow pressed-in vent slits and low flat feet."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the lamp repeats the real street-lamp subject, with a wider, rounder balloon glass and a heavier cap than the slimmer real lamp in the reference. B: the bird feeder has flat roof boards, straight runs and tight corners, and its corner_rate of 7.57 comes from the rope and trunk in the mask.",
+   "fix": "Draw the lamp glass slimmer with straighter sides and a smaller, flatter cap, and keep the scroll arm thin."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the sneakers have chunky soles but stay true to the object, with a defined toe, heel and collar steps and thin laces. B: the candle is short and fat, with drips like thick sausages, a swollen melted top edge and a fat dish rim. It reads as a stubby toy candle.",
+   "fix": "Draw the candle taller and slimmer, with thin narrow drips and a sharper top rim, on a thin flat dish."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the lantern is mostly crisp, but the ring is thick, with thin_share 0.03 above the real range, and the base is a heavy slab with soft corners. B: the neck pillow is an inflated object, so its puffiness is true to the object, with a believable small valve and opening.",
+   "fix": "Draw a thinner hanging ring and a thin base plate with tight corners, with slim frame posts around the glass."
+  }
+ ],
+ "pattern": "Generated cards still tend to inflate form. Parts are fattened and shortened into squat toys, and corners go soft where real cards keep tight bevels. Thin parts such as legs, drips, vents, rings and feet thicken into sausages or stubs, and flat sheet surfaces such as lockers and frames gain thick, swollen edges. Parts can also relate implausibly, like a pillow cap on a tiny stem. Simple forms lose contour detail, so solidity approaches 1 with corner_rate at 0. These are weak signals on most pairs: the best calls here are only confidence 3, and soft or naturally round objects (pillow, armchair, moon) cannot be judged by puffiness alone."
+}

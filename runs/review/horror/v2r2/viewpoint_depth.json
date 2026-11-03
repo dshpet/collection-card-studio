@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the bucket faces the camera almost dead-on. The table is a thin strip with a straight back edge, yet the rim opens enough to show the candy from above, so the table and rim suggest different camera heights. Normals show a swollen body and a two-band stage. B: the ball sits in sand that fills the card with no horizon, seen from one consistent high angle; its cast shadow and the sand's foreshortening agree. planar_share 0.613 is within the real range.",
+   "fix": "Lower the camera slightly so the bucket rim is a narrow ellipse, matching the shallow tabletop; turn the bucket a few degrees off front so one side rounds away."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the gate has three clear layers: paving, gate and pillars, then a simpler garden. The paving converges fairly strongly, but pillars, gate and path share one view. B: the spyglass floats on a flat pattern, turned three-quarter with a clean taper, and its lens ellipse agrees with the barrel axis. Neither shows a view break, and both fit the real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the castle is a near-flat front elevation with symmetrical towers. The tower bases and door sit square to the camera, while the grass swells into a dome with no true ground angle, so the hero stands on a curved stage rather than a plane. B: the door is also frontal but is tightly cropped, with vines overlapping the frame as a real foreground layer and the wreath sitting clearly in front of the panels. The depth order is clear and consistent.",
+   "fix": "Turn the castle about 20 degrees so one tower comes forward and its side wall recedes; set it on flat ground with a consistent shallow angle, not a rounded hill."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the tree stands side-on with no clear turn. The hills behind are flat stacked bands and the grass has no consistent receding angle. Normals show the trunk as a smooth rainbow with no flat faces, and planar_share is 0.005. B: the topiary sits on a round plinth whose ellipse agrees with the curved path and the hedge line behind, so ground, middle distance and background share one camera height.",
+   "fix": "Put the tree on one flat lawn seen from a low consistent angle, with a path or ground ring that recedes behind the trunk; remove the stacked hill bands."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the chest is near-frontal, but both rounded ends show at once as if wrapped around the camera, and the iron bands splay outward. It sits on a grey floor with a curved back edge, the rounded stage seen on the generated lessons' tables. B: the ice tray has a steady three-quarter view from above, with the top face, two sides and table planks converging mildly and in agreement. Flat faces read as even patches.",
+   "fix": "Turn the chest three-quarter so only one end shows, keep the front edges nearly parallel, and replace the curved grey disc with a straight-edged floor."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the bag has a low camera, a clear floor-to-wall line and overlapping layers: bottles behind the handles, handles over the body. Its base curve agrees with the floor. B: the seahorse is a pure side profile with no turn. Normals read as low relief pressed into a flat sheet, with no overlap depth beyond the fins and a background that gives no space. planar_share is 0.053, at the bottom of the real range.",
+   "fix": "Turn the seahorse slightly toward the viewer so the far fin and far side of the head show, with clear overlap of the near fin over the body."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the wristband is tilted in real space. The inner wall, top edge and raised icons all foreshorten around one ellipse, and the normals sweep cleanly around the ring. B: the bat is square to the camera, with the wings spread in one flat plane and only the body round. Near and far wing are the same size, and it has no turn or foreshortening.",
+   "fix": "Turn the bat three-quarter so the near wing is larger and the far wing narrows and sweeps back behind the body."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the tilted bottle, cap and loop share one rotation; the cap ellipse and base curve agree with the bottle's axis. B: the flask sphere is front-on and its liquid line runs like a side view, yet the cork top leans toward the camera as a visibly open ellipse, so the neck and body do not share one view. Normals show one smooth rainbow ball.",
+   "fix": "Show the liquid surface as a thin ellipse matching the cork's top ellipse, so the flask and cork are seen from the same slightly raised camera."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the car has wide-angle forcing: the grille and nearest wheel are large while the rear shrinks fast. The road slants against a flat hill horizon, so ground and backdrop read at different angles. B: the dock and boat share one high camera. Plank lines, post tops and boat rim agree, and the water fills the card with no conflicting horizon. planar_share 0.509 is at the top of the real range but reads as true flat planks.",
+   "fix": "Pull the camera back and flatten the perspective so front and rear wheels are close in size; keep the road parallel to the car and level with the horizon."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the whistle has a firm three-quarter view: flat top, flat side disc and mouth end each read as even colour patches, and the ring recedes correctly. B: the web circle is slightly squashed, as if tilted, while the diamonds behind stay upright and front-on and the shadow sits close underneath as on a flat wall. Object and background do not share a plane or angle. planar_share is 0.0, far below the real minimum of 0.023.",
+   "fix": "Draw the web as a solid hoop turned at a clear angle, floating in front of the pattern, with a thick rim that shows its side edge."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the skull is close to the camera, almost dead-front, and bulges into the card like a wide-angle shot. The stone ledge is a thin strip with a flat front wall, and the skull sits on it without a turn. Normals show a swollen rainbow form. B: the sneakers sit on a clear floor with a straight wall line; a moderate camera height and three-quarter turn are shared by both shoes and the shadows agree.",
+   "fix": "Step the camera back and turn the skull about 20 degrees so one eye socket and the cheek recede; show more of the ledge top at the same angle as the skull's base."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the book is seen from high above on tabletop that fills the card, with no horizon, and the cover, page edges and spine share one view. planar_share 0.706 is above the real maximum, but the cover really is one flat board. B: the cover is seen from far above, yet the table's back edge and a wall appear in the upper card, as if the camera were lower. Book and background disagree on camera height.",
+   "fix": "Remove the wall line and let the wooden table fill the card, or lower the camera so less of the cover shows and it agrees with the table's horizon."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through staging, not single objects: (1) near-frontal heroes with no committed three-quarter turn, sometimes showing both ends at once; (2) stages that disagree with the hero, such as curved discs, domed hills, thin ledges or flat stacked bands instead of one consistent ground plane; (3) mismatched camera heights, such as a top ellipse seen from above on a body seen side-on, or a backdrop at a different angle from the hero; (4) swollen rainbow forms with very low planar_share, plus close wide-angle bulge. Real cards commit to one mild view and let flat faces read as even patches. Caveat: the most-themed subjects (bat, skull, potion, hearse) also clustered as my picks, which nudged the low-confidence calls, so confidence 2 calls are weak on geometry alone."
+}

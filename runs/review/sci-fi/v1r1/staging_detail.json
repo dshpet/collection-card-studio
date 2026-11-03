@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both are category 3. A: a red-and-gold cart stands on large pale paving slabs in front of a soft blue harlequin wall, and the slabs are big, quiet shapes. B: a grey control panel stands on a metal tread-plate floor. The whole foreground is covered in small repeated embossed dashes, a fine texture the real floors do not have, and it sits under a harlequin field with no transition between them. B's numbers are lower than A's and both are in range, so this rests on the look of the floor.",
+   "fix": "Replace the tread plate with a plain, smooth brushed-metal floor with a soft shadow under the panel. No small repeated bumps on the ground."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both are category 2, a plain ledge against a flat wall. A: the yellow ledge has warm tonal falloff and a glow on the orange wall, with detail in the real range. B: the helmet sits on a near-white, empty floor against an even magenta wall. Background detail is 0.0063, below the real range of 0.008 to 0.013, and the shadow is the only event in the background.",
+   "fix": "Add a soft glow on the wall behind the helmet and a gentle tone change across the ledge, with the floor tinted toward the wall color instead of blank white."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both float on concentric rings. A: wide violet rings with clear tone steps, like the caravan card's ring field, and detail in range. B: the yellow rings behind the UFO are narrower and melt into each other. Detail 0.0059 and edge density 0.003 are both below the real floor of 0.008 and 0.004, so the field reads as a smooth blur rather than drawn bands.",
+   "fix": "Draw the background rings as fewer, wider bands with clean, visible edges, two close yellow tones, slightly lighter at the center."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both float on a sunburst, so the category matches. A: a dark green burst with a center glow, with detail in range. B: pale blue rays with very soft steps, detail 0.0067 below the real floor and edge density at the floor of 0.004. The rays are less defined than on the real lamp and baseball-glove cards. This is a weak difference.",
+   "fix": "Make the sunburst rays crisp, wide wedges with a clear step between two blues and a brighter center."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "The numbers point the other way. B's tiki bar is far over the real range at 0.0569 and 0.144, with fruit, drinks, stools, thatch, tiled pool and water ripples. Its mask is also poor, merging pineapple, stools and counter into one blob. But B's tight crop running off the card matches the real bike and fan cards. A shows the whole dome, centered, with stage-dressing around it: a large foreground crater, sprinkled small craters and stars, and purple clouds. This echoes the generated lighthouse lessons, where the real close crop became a whole object on a dressed base. Low confidence, because B's load is a genuine fault under the guide.",
+   "fix": "Move in close so the dome crops at the card edge. Remove the big crater, the small craters and the stars, leaving smooth grey ground and a plain purple sky."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "Both are category 1 on vertical stripes. A: purple stripes are even, with little glow, and detail 0.006 is below the real floor of 0.008. B: teal stripes carry a strong bright glow behind the sandals, with detail 0.0146 inside the real range, as on the anchor and clock stripe cards.",
+   "fix": "Add a soft bright glow behind the planet and let the stripes lighten toward the center and darken toward the corners."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "A matches the rose arch in the real anchor sheet: pink stripes, a plain ledge and a central hero. B is a category 4 room with a few large quiet shapes: dark walls, a corner, a skirting line and a pedestal. A blank gold plaque is the only secondary prop. It is large but purposeful for a museum, and B's numbers are in or just at the real range. Nothing in the staging points to generation.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both are category 1 on tone-on-tone patterns, with numbers in range. A: a wide blue spiral with broad, simple bands and a bright center. B: many thin diagonal waves run across the whole field at an even pitch, with no center glow to gather them behind the asteroid. This makes the pattern busier and less focused. Weak evidence.",
+   "fix": "Use fewer, wider wave bands in two close blues, fading into a soft bright glow behind the asteroid."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both are category 4 outdoors, and both are slightly below the real range. A: dune bands, two cloud groups and small pebbles strewn evenly across the sand, with a shadow, around a dish that has no reason to be there. B: the beach, waterline and sky are simple. The bucket and spade are large and purposeful, and they sit in carved sand. A's scattered pebbles read as filler; B's props belong to the object.",
+   "fix": "Remove the scattered pebbles and keep two or three large smooth dune shapes. Give the sand soft contact with the base."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "A: a fountain on curved paving with a yellow stripe wall. It sits at the top of the real edge range (0.046) because of the slab joints, but the slabs are large and it is still central. B: a bumper car on a reflective arena floor with a yellow line, an arena rim and a ring backdrop, with quiet large shapes and in-range numbers. Both stage the object in a way the real cards do.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: binoculars lie on wide warm planks, one real material filling the card, as in the barrel card. B: a telescope stands on grey lunar soil with craters and little rocks scattered on it, backed by flat teal stripes. The ground is sprinkled with small detail, and it stops at a hard horizon against a graphic field. The soil's small rocks look like filler, and the telescope, a wood-and-brass object, does not belong to this ground.",
+   "fix": "Stand the telescope on plain, smooth ground in a single material with one soft shadow. Remove the rocks and craters, and keep the stripes quiet."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a taxi on a dark road with two big white lane marks, a few large shapes that explain the car, under a sunburst. B: a rover on grainy grey moon soil with evenly sprinkled pebbles, boulders and a small crater, under a lime sunburst. The ground has fine speckle and filler objects where the real ground is smooth and simple.",
+   "fix": "Make the ground a smooth, simple grey surface with one or two large soft mounds. Remove the pebbles, the crater and the grainy speckle."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away in three ways. First, ground dressing: small rocks, pebbles, craters, tread texture and speckle are sprinkled evenly where real cards use a few big, quiet shapes. Second, graphic fields that are too smooth and even: bands and rays lose their crisp tone steps (background detail below the real floor) or lack the central glow. Third, staging: the whole object is shown centered on a dressed base, where real cards crop in tight, and materials are paired without logic, such as flat stripes over realistic lunar soil. Caveat: the low-confidence calls (p04, p05, p08, p09) are thin on this vector, and they lean partly on the sci-fi subject matter of one card in each pair, so they are not purely visual findings. p05 goes against its measurement."
+}

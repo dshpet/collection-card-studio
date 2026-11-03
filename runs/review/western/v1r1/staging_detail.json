@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both are category 1 cards on concentric rings. A has wide, soft cyan rings with an even, low-contrast fall-off. B has tighter rings around a hot yellow centre behind the boot shaft, close to the over-bright halo on the generated glove lessons. Its detail_background of 0.0073 sits just under the real range. This is a weak lead, because both fields are quiet and neither competes with the hero.",
+   "fix": "Plain orange background with three or four wide, soft rings of almost the same tone. No bright yellow glow behind the boot."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A is a floating coil on soft purple tone-on-tone waves, very quiet at 0.0069, just under the real range. B is a floating neckerchief on a bolder cyan spiral whose bands read more strongly, but it stays in range at 0.0125. Both are clean category 1 fields with no added props, so my vector gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's green sunburst has many thin, tightly packed rays that darken to near-black green in the corners. This matches the dense-ray backgrounds on the generated glove lessons. B has a few wide, clean blue rays with a soft centre, like the real lamp and camera cards.",
+   "fix": "Green background with eight to ten wide, soft rays of similar green. Keep the corners mid-green, not dark."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A is a floating anchor on broad, quiet orange stripes with nothing else on the card. B puts the caravan on a lawn with rows of small, evenly spaced, stamp-like grass tufts across the bottom third, against a flat purple ring backdrop. Those tufts lift edge_density_background to 0.019, above the real 0.017, and the lawn is small repeated detail rather than one large quiet shape.",
+   "fix": "Draw the ground as one smooth green grass shape with soft light and shadow. No scattered tufts or repeated small leaves."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A is the real computer card from the lessons: an orange gradient with a desk edge and a drawer. B hangs the saddle on a fence whose two rails and post cross the full card over a flat cyan gradient. The fence is purposeful and made of large, quiet shapes, so this is a weak finding. The choice rests mostly on A being a known real card. Both exceed the edge range, so that number does not separate them.",
+   "fix": "Show only one thick fence rail under the saddle, with simple wood and very little grain."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A sets lime and dark green stripes at full contrast behind the cup. Above the plank, they fight the silver hero for attention. The plank adds knots and grain, and edge_density_background is 0.046, the top of the real range. B's pink stripes are close in tone, fade toward the middle, and sit over a plain, empty pink floor, which is the quieter real behaviour.",
+   "fix": "Make the wall stripes two very close shades of green with soft edges. Draw the shelf as plain warm wood with faint grain and no knots."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A's pink gradient wall is quiet, but the plank floor has long grain lines and a hard front edge across the bottom third, pushing edge_density_background to 0.031, above the real 0.021. B has a plain orange wall and a plain cream floor with one horizon line and a soft shadow, at 0.015.",
+   "fix": "Draw the floor as a simple pale wood surface with two or three faint plank lines and no strong grain."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A has a blue diamond backdrop over a real paved floor, where the pavers carry the edges (0.041) but read as one quiet ground. B sets the cactus on sand with three added pebbles and small dot specks around the base. These are the kind of invented small props the generated lessons add. Its backdrop and dunes are otherwise very quiet at 0.0082, just under the real range.",
+   "fix": "Sand as one smooth dune shape with a soft shadow. No pebbles or small specks."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B adds about fifteen floating bubbles, a shell and two loose coins around the chest, the same prop-adding direction as the lighthouse lesson with its rope and life ring. A has only a plank floor, though its literal anchor-icon wallpaper is also unlike the abstract patterns on the real cards, so the evidence is mixed.",
+   "fix": "Keep the chest on smooth sand in calm blue water, with two or three large soft bubbles. No shell or loose coins."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A places the wagon in a landscape with hills, bushes, clouds, a dirt road, pebbles and grass tufts. B has a dock, two lily pads and many ripple rings around the boat. Both carry secondary detail in the same range (0.042 and 0.053), and each keeps the hero central and large. Neither is clearly busier, so my vector gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A surrounds the train with dunes, a sunset band, rocks, pebbles and high-contrast sleepers running through the foreground. Its edge_density_background of 0.07 is near the top of the range, and that small foreground detail exceeds the few quiet shapes on real environment cards. B's blue sky, soft clouds and pale hills stay large and quiet behind the track, at 0.04.",
+   "fix": "Plain sand ground with one soft dune behind and simple dark rails. No rocks or pebbles, and low-contrast sleepers."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A has a blue plank wall with lit seams over a wood ledge, a simple category 3 setting. B is a real environment with a dock, sparkling water and a rope-wrapped post in the corner, more detailed but purposeful and pushed to the edges. Both are in range (0.04 and 0.031), and neither hero is crowded.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards still show up mainly through extra small background detail. The tells are thin, densely packed sunburst rays with dark corners or hot central glows, full-contrast stripes, and stamped ground scatter such as tufts, pebbles and specks. They also add small invented props, and they run strong wood grain on ledges where real cards use a few large, quiet shapes. Validity note: the folder is named 'western', and most test pairs contain one western-themed object, which could reveal the generated side regardless of staging. These calls ignore that cue. p05 also relies on A being a known real lesson card. Confidence is low overall because several pairs were not separable on this vector."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the mortarboard shows a broad, even top face turned about 30 degrees, and the band below shares that view from mildly above. B: the brim shows its green top at the front right and its pink underside at the front left, so the hat is rolled and the camera has no clear height. The cone reads from the side, and the brim is one smooth rainbow sweep with no flat plane.",
+   "fix": "Show the hat from slightly above with one level brim: only the brim's top surface is visible as an even ellipse, and the cone sits upright on it. Do not show the underside of the brim."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cauldron body and legs read near eye level, but the rim and liquid open up as if seen from higher, and the cobbled floor tilts up steeply with a band of wall behind it. B: the gloves sit low on the wooden shelf, with the horizontal plank line and the wall meeting at one mild, low angle.",
+   "fix": "Use one low camera for everything: flatten the rim to a thin ellipse, show the floor as a narrow receding strip, and plant the three legs firmly on that same plane."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the neckerchief loop opens from the front and above, and the tails hang down; form depth comes from the overlap at the badge. B: the broom lies on a flat diagonal with no ground and no clear turn; the bristles are a fan of swollen ridges in the lens, and planar_share of 0.011 sits below the real range. The evidence is weak because both are floating objects.",
+   "fix": "Turn the broom slightly in space: make the binding band a clear ellipse and have the bristle head overlap the handle in depth, with broad, simple bristle clumps."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the envelope is a flat object turned and tilted as a whole, with cleanly stacked photo layers and one shared rotation. Its high planar_share fits a flat paper object. B: the wheel is dead frontal and flat as a cutout, the stand is a flat trapezoid in the lens, and the deck is seen from above with a bulging curved horizon. Wheel and floor do not share a view.",
+   "fix": "Turn the wheel about 20 degrees so its rim shows thickness, draw the stand as a solid block seen from the same angle, and make the deck edge a straight horizontal line with planks receding mildly."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the candle cups show pink undersides as if seen from below, the base shows its green top, and a dark underside ellipse sits at the front, so the top and bottom imply opposite camera heights. B: the chimney mouth, burner and foot all open consistently from slightly above, in a stable stacked view.",
+   "fix": "Set the camera slightly above: show the top ellipse of each candle cup and of the base, with ellipses opening gradually toward the bottom. Do not show the underside of the base."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the glass rim is a thin ellipse, the base a slightly rounder one, and it stands on a table plane with a straight horizon, a correct mild perspective. B: the ball is an unforeshortened circle above a stand seen at eye level, with a narrow shelf and front edge giving a shallow, stage-like depth. Its high planar_share is mostly a glass artifact, so this leans on the stand and shelf only.",
+   "fix": "Show more of the table top receding behind the stand, and draw the stand's feet resting on it with slight ellipses seen from above."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cat faces the camera near eye level and is a swollen, all-round form (planar_share 0.017, below the real range), while the floorboards fan out strongly from a higher viewpoint, so the hero and floor do not agree. B: the fountain tiers and paving share one raised view, with ellipses tightening with height and flat stone planes.",
+   "fix": "Lower the camera to match the cat: make the floor a shallow receding strip with planks converging gently, and seat the cat with paws and tail on that plane."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 5,
+   "difference": "A: the house is mostly a flat frontal elevation, yet the storeys lean and turn differently, the roof planes tip toward the viewer unevenly, and the chimney bends off on its own axis. The hill has a curved ground with no clear standing plane. B: the lighthouse keeps one low view, with the rings curving together up the tower and a straight horizon.",
+   "fix": "Draw the house from one three-quarter view with walls on two visible sides, vertical corners sharing a single gentle convergence, and every storey turned the same way, seated on a level grassy base."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the coffin is seen steeply from above with forced convergence toward the head end, and the lid has large flat faces (planar_share 0.685, above real range), yet the tombstones behind sit in plain frontal view with a high horizon. Hero and background use different cameras. B: table, stool and lawn all share one raised angle, with even flat planes and a background that recedes consistently.",
+   "fix": "Lower the camera and ease the perspective: keep the coffin's edges nearly parallel, show less of the lid top, and draw the background tombstones and lawn from that same height."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the floor fills a large area as if seen from fairly high, but the base's top is only a thin sliver and the slab is almost frontal, so the object sits lower than the ground implies. B: the shoes show their tops and toes from a raised three-quarter view that agrees with the ground plane and cast shadow.",
+   "fix": "Raise the view slightly so the base's top surface shows wider, and turn the slab a little so one side face is visible, matching the floor's angle."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the pumpkin is nearly frontal at low eye level, while the planks tilt up and skew across the card and the table reads as a curved horizon in the lens, so the table is not at the hero's angle. B: the duck is side-on and the base is angled, but the sand, base and stones all read from a mild raised view on one plane.",
+   "fix": "Keep the table level with a straight back edge and shallow receding planks, and show the pumpkin slightly from above with its stem seat visible, on that same surface."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the balloons float with overlaps giving clear layering; there is no ground, and the sky is a simple backdrop. B: the buoy has ellipses opening gradually toward the water and a level horizon, in one low view. Both hold together spatially; A's very low planar_share comes from balloons being round, not from a viewpoint error.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards tend to mix cameras: the hero is shown frontal or near eye level while the floor or background is seen from higher, or the top and bottom of one object imply different camera heights. Ground planes bulge into curved horizons or tilt up too steeply, and perspective can be forced, as on the coffin. Real cards keep one mild view across hero, ground and background, with flat faces that read as even patches instead of swollen rainbow forms."
+}

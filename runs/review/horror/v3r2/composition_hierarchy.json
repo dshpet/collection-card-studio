@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the shoe pair is wide and sits low, with the top third empty orange (box height 0.487, below real). B: the candle and dish sit dead centre with even clearance on all sides (margin 0.127, above real). A is also out of range, so this is a lean only.",
+   "fix": "Draw the candle larger and closer, with the dish nearly touching the left and right edges and the table cropped by the bottom edge."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the straw and paper umbrella break out diagonally and make the silhouette uneven. B: the mirror stands upright, frontal and symmetrical on the centre line, its top ornament close to the top edge (margin 0.031). Both are slightly tall for real cards.",
+   "fix": "Turn the mirror a little to one side and tilt it, so it no longer stands perfectly straight on the centre line."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the calculator is tilted with wide clearance (margin 0.144, above real). B: the feeder hangs on a trunk and the trunk, rope and foliage are cropped by the edges (margin 0.0, below real). They miss the real range in opposite directions, and both tilt and crop occur on real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the moon is a round disc in the exact centre with an even ring of clearance (margin 0.123, above real). B: the bugle runs diagonally, bell upper left and tassels hanging, using the card unevenly. It is thin (area 0.171, below real), but the placement is less formulaic.",
+   "fix": "Draw the moon larger and shifted off centre, with one side nearly touching or slightly cut by the card edge."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the whole cabin is packed in from eave to eave, with the full base, steps and lawn included (area 0.495, above real). It is complete and reads instantly as a cabin. B: the hut roof is cropped by the top edge and the bar runs off the right edge, as real cards crop the lighthouse and desk, though its fruit, drinks and stools share the focus.",
+   "fix": "Move in closer on the cabin and let the bottom of the wall and the steps run off the bottom edge, so the building is not shown whole."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the same pool bar card as p05 B, with the roof and bar cropped by the card edges. B: the gate is frontal and mirror-symmetric with both posts inside the frame, and the moon at upper right competes as a second bright focus at thumbnail size.",
+   "fix": "Remove the moon, and turn the gate to a three-quarter angle with one post running off the card edge."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the open locker fills the card (area 0.496, above real), with the door and interior contents splitting attention. B: the armchair sits centred with a clean, instantly named silhouette on a wall and floor. Placement and height are nearly equal, and neither departs from real cards in a telling way.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a narrow upright lamp stands on the centre line with wide empty columns either side (width 0.426 and area 0.17, both below real). It is the small, safely framed hero seen on generated lesson cards. B: the tilted map stack fills the card to the corners (area 0.51, above real).",
+   "fix": "Draw the lamp much bigger and tilted slightly, with the chimney and base reaching close to the top and bottom edges, and make the brass body wider."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the lantern hangs tilted with its ring near the top and reads instantly. B: the pillow is a large blue U filling the card, a slower read but within real occupancy. All measures are in range, and both have one hero on a plain ring background.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the candy corn sits centred on a table with even clearance all round (margin 0.14, above real) and a horizontal wall/floor split behind it. B: the plate is seen from above at an angle, filling the width and spreading diagonally across the card (margin 0.063).",
+   "fix": "Draw the candy much closer and tilted to one side, with its base nearly touching the bottom edge and its sides close to the card edges."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the binoculars lie diagonally across a plank floor, with no horizon. B: the rocking horse stands in side view with its rockers spanning the width, on a stripe wall and floor. Both are in range, readable and free of competing elements.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the spider is near-symmetric and centred, legs spread evenly. B: the fan is asymmetric, its weight lower left of a wide arc. Both are in range and instantly named, and the spider's symmetry alone is not enough, since real cards also use centred heroes.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards tend to show one complete object placed safely inside the frame: centred and upright, with even clearance on all sides and rarely cropped by an edge. Margins or narrow widths then fall outside the real range (candle, moon, candy corn, oil lamp). Real cards commit more: the hero is larger or tilted, and the scene or object runs off an edge, as with the lighthouse and the desk. Caveat: the leaning-generated cards also share a spooky or antique subject set, and the folder is named horror. I noticed this but gave it no weight, because subject is outside this vector. It may still have biased close calls, so the low-confidence picks are weak evidence."
+}

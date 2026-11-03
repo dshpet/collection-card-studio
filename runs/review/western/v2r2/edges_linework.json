@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: every plank, baluster, window bar and post on the saloon carries a dark, even line of about the same weight, and hero edge density is 0.289, above the real ceiling of 0.270. Nothing recedes, so the far side and the desert rocks are nearly as hard as the doorway. A: the motel sign has hard edges on its frame and icons, while the building on the left stays lighter and softer. Its outline_darkness of 0.161 is slightly high, but that comes from the dark frame against the night sky.",
+   "fix": "Simplify the saloon into large clean wooden shapes: fewer planks and thinner railings. Keep crisp edges only around the swing doors and let boards on the side wall and upper storey melt together with soft, faint gaps."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the neck pillow has almost no internal edges (hero density 0.017, real floor 0.046). A heavy black contour runs along the inner hole and lower rim, while the top edge fades out. The ribs are fuzzy, combed ripples and the map shows fine noise across the surface, not a clean seam. A: the horseshoe has precise thin bevel lines, clean rings around the studs, and a contour that thins on the lit side, as on real cards.",
+   "fix": "Give the pillow one thin, precise seam and a few clean, smooth puffy folds. Keep a consistently crisp silhouette around the whole pillow with no fuzzy ripples or surface grain."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the sneakers have dense hard linework on laces, mesh and sole panels (hero density 0.227, at the real ceiling), and outline_darkness of -0.1 falls below the real range. The hard straight horizon line also sits right behind the shoes. A: the teapot contour is thin and soft on the lit side, but the wood grain raises background density to 0.028, above the real 0.021. Both cards miss by small amounts, so this is a weak call.",
+   "fix": "Reduce the shoes to fewer big panels and simple chunky laces, with no fine mesh pattern. Keep crisp edges on the front shoe and soften the rear shoe and the floor line."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the door is covered in edges (hero density 0.342, real ceiling 0.270; background 0.107, ceiling 0.089). Each ivy leaf is tightly contoured, door grain is scratched in as lines, and wobbly ghost edges from cast shadows surround the wreath and handle. The ivy frame is as sharp as the wreath. A: the windmill has clear structural edges against a calm sky and hills, and its density stays in range.",
+   "fix": "Make the ivy a few large soft leaf clusters with blurred edges at the card borders. Make the door a smooth plain surface with no grain lines, and keep crisp edges only on the wreath and bow. Use a soft cast shadow with no hard rim."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the twig ball is packed with hatched grain lines along every branch and dark crossings throughout (hero density 0.313, real ceiling 0.179). There is no quiet area and no sharper focus. B: the popcorn cart has clean, sparse panel edges with a dense cluster only at the popcorn (0.138, in range). Its awning contour is firm but its surfaces stay open.",
+   "fix": "Draw fewer, thicker smooth branches with no scratched bark lines. Keep clean gaps between them and sharpen only the front branches, letting the back branches go soft."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the book is the quietest part of its own card (hero 0.087, near the floor), while the foliage, railing and table boards are at the background ceiling (0.089). The hedge leaves have black contours as strong as the book's, so edges pull attention away from the hero. B: the lamp has crisp edges on a plain sunburst, with a clear hero-to-background gap. Its outline_darkness of 0.149 is just past the range but follows the dark metal.",
+   "fix": "Blur and simplify the hedge, railing and plant into soft shapes with no dark outlines. Keep the sharpest edges on the open book's pages and ribbon, and make the table a smooth plain surface."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: fence boards, shrubs, flagstones, planter and clouds are all outlined at similar weight (background 0.073), so edge hierarchy is flat and paving joints read as drawn dark lines. B: the backpack has firm contours and strap seams on a quiet background (0.017), though its rolled mat has grainy texture and the flap lines are fairly thick. Numbers for both cards are in range, so this rests on the flat hierarchy.",
+   "fix": "Keep crisp edges on the planter and tools. Soften the fence, bushes and stone paving into broad shapes with no drawn joints, so the background is clearly softer than the planter."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the mine cart has a firm rim contour and clean facets on the nuggets. Its outline_darkness of -0.074 is slightly below range. B: the scroll has a fairly dark upper contour but soft interior edges and a clean seal, with density in range. Neither card has a defect on this vector that the other lacks.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the harmonica has a dark contour doubled around the cover and hole plate, with every hole and rivet hard-edged. Hero density of 0.178 is above the real ceiling of 0.157, and the line weight barely changes around the form. A: the scarf has a firm contour but very few internal edges, with soft folds and a precise badge (0.053, in range). It keeps the sparse edge count of real cards, though the closed contour keeps this call weak.",
+   "fix": "Show the harmonica as a simple smooth metal cover with one thin clean seam. Avoid a doubled rim line, and let the top edge dissolve into the highlight on the lit side."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the beach ball has very few edges for its size (hero 0.029, real floor 0.087; background 0.003, floor 0.011). The upper silhouette dissolves into a sand-coloured glow, while the panel seams are the only hard lines, and sand speckle is scattered as tiny dots. A: the cards have clear rims, sharp suit shapes and readable wood seams, with density in range, although the card rims read as doubled lines.",
+   "fix": "Give the ball a crisp clean silhouette all the way round, with no glowing or melting edge at the top. Add thin precise seams and a smooth sand surface with no scattered specks."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a continuous heavy dark line runs around the whole ring box, including the lid and base. Its outline_darkness of 0.13 is above the real ceiling of 0.122, and this closed contour is the lesson cards' generated tell. A: the star's contour is broken and varies in weight, thinning out along lit sides and around the gold balls, with edges concentrated on the central gem.",
+   "fix": "Remove the dark contour around the box. Let the red lid edge fade softly into the lit side, with a thin crisp edge only where shadow meets the background, and focus sharpness on the coin."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the rose arch is a solid mass of tight dark lines on every petal and leaf (hero density 0.317, real ceiling 0.228). There is no resting place or focus, and faint ring artefacts appear in the background of the map. A: the piano has clean panel lines and only a small dense zone at the keys (0.154). Its background of 0.042 is high only because of plank lines.",
+   "fix": "Draw fewer, larger roses and leaves as simple soft shapes with only a few petal folds. Keep the sharpest edges on the top roses, soften foliage toward the base, and leave the wall smooth."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through uneven edge budgeting. They over-contour with a dark, even-weight, closed line and detail every small form (planks, leaves, petals, bark, mesh) to the same hardness, so hero density exceeds the real ceiling and nothing is sharpest at a focus. Backgrounds are often outlined as hard as the hero. The opposite failure also appears on smooth objects: too few internal edges, with fuzzy ripples or a melting silhouette. Real cards use thin precise seams, sparse interiors, and a contour that thins or is lost on lit sides."
+}

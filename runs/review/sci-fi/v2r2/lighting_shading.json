@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the arm's yellow tubes are lit almost evenly from the front, with little shadow side, yet a crisp shadow sits on the grey floor to the right, weakly tied to the base. B: the binocular barrels turn steadily from a lit upper left to a dark lower right, and a soft dark shadow pools under them on the boards. B's shading_range of 0.925 is slightly high, but its light is consistent.",
+   "fix": "Light the arm from the upper left so each tube has a clear dark side on the lower right. Let the base's floor shadow start dark at the base and soften as it stretches away."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the two tanks are shaded like pillows, a central sheen falling off to both edges, so no side reads as the shadow side. The lens shows them near-symmetric, and shading_range and form_contrast both sit just above the real range. A: the ring box has a one-sided light, with the lid's outer right face and the box's lower right falling into a soft dark side.",
+   "fix": "Light the tanks from one upper side: a soft sheen on the left of each tank, a smooth turn into a deep dark band on the right, and the left tank casting a soft shadow onto the right one."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the fuselage has a broad soft sheen turning into a cool shaded belly, with engines darkening underneath. B: the satellite body goes from a lit top to a dark underside, with flat panels. All measures are in range and both follow the top-left light of the real floating cards, so lighting gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the keyboard's top is lit flat and even, with thin bright lines on the bevels and no cast shadow anchoring the stand. Its form_contrast of 0.714 is above range, though the black keys inflate that. A: the bar counter, thatch and stools share a soft direction, with a shaded counter wall and darkening under the thatch.",
+   "fix": "Let the light fall from the upper left across the keyboard, with the front edge turning into a soft dark side. Add soft shadow under the case on the stand, and a soft pool of shadow behind it."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the sphere has a large airbrushed sheen and a strong dark lower right, like a plastic ball. form_contrast of 0.637 is above range, and the orbit bands cross the ball without casting a shadow on it. A: the backboard face is gently lit, with a soft shaded thickness on the right and a soft shadow behind the frame, inside the real range.",
+   "fix": "Have each orbit ring drop a thin soft shadow across the blue ball, and ease the ball's dark side so the sheen melts gently into it."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cream front face is one flat even plane, with almost no falloff or sheen and only a slight dark band at the feet. form_contrast of 0.719 is above range, driven by the hard jump to the dark side. B: the monitor bezel and base have soft falloff, a gentle glass sheen on the screen, and a cool shadowed side, matching the real computer card closely.",
+   "fix": "Add a soft falloff across the cream front, brighter at the top left and gently darker toward the bottom right, and soften the corner where the front turns into the blue side."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the scarf folds are gentle airbrushed swells with faint, evenly spread sheen and no defined shadow side. form_contrast of 0.256 is well below real. A: the car splits clearly into a lit upper body and dark underside, with sharp dome and headlight highlights. Its light_bias_strength of 0.949 is extreme, but it has real one-sided light.",
+   "fix": "Light the scarf from the upper left. Make the fold valleys dark and deep, with the lower-right sides of the tails falling into shadow and a soft shadow from the badge onto the cloth."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the phone is lit nearly head-on, with an even grey body and glossy streak highlights on the handset. light_bias_strength of 0.086 is below real, and the floor shadow is pale. B: the tray has a clear lit top and darker sides, with a dark soft shadow falling lower right across the table, although its frost makes the lens mottled.",
+   "fix": "Move the light to the upper left so the phone's right side and the front below the keypad go into soft shadow, and darken the floor shadow right under the feet."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the stone table and stools throw hard-edged dark shapes on the grass, and the pedestal goes almost navy, with a cut-out flat-shaded look. light_bias_strength of 0.971 is well above real. B: the bracelet turns softly around the band into a gentle shaded inner wall. It is pale, with form_contrast of 0.315 below real, but the turn is smooth like the real soft cards.",
+   "fix": "Soften the edges of the shadows on the grass, and lift the shaded table sides so they keep soft bounce light from the ground rather than going near-black."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the signs glow from within, with light spilling onto the frames, and the building has warm window light against dusk. B: the dome has a soft sheen turning to a cool blue right side, with a gentle shaded band under the eave. All measures are in range and each lighting setup is coherent for its scene.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the glass tube reads as a dull flat grey column and the cap has only a thin soft turn. shading_range of 0.549 is below real, so the hero has little depth, with the base's shadow only faint on the floor. B: the posts, planks and life ring have strong low warm light, dark shaded posts and soft shadows on the water, in the real range.",
+   "fix": "Give the tube a bright thin highlight down one side with a darker opposite edge, deepen the shadow under the cap, and lay a clear soft shadow from the base across the floor."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the sneakers have fine photographic shading across mesh and sole, with a hard dark shadow pushed left. shading_range of 0.82 is above real and light_bias_strength of 0.019 is far below it. B: the flask has a soft shelf shadow with a green glow and gentle glass sheen, though its lens is poorly estimated on glass and its numbers are also low.",
+   "fix": "Simplify the shoes into big soft-shaded shapes lit from the upper left, with one broad sheen on the toe and a soft shadow that stays close under the sole."
+  }
+ ],
+ "pattern": "Generated cards tend to light the hero from the front or shade it symmetrically, like a pillow, so no clear shadow side or core sits on one side. Real cards keep one upper-left key, with a smooth turn into a cool, deep shadow side and a soft shadow rooted at the contact point. The giveaways are even faces, edge-to-edge sheen, cast shadows disconnected from the form, and shadows that are too hard or too pale. The p06 B computer matches the real lesson card almost exactly. Confidence is low overall: most calls are 2, and p03 and p10 give no lighting reason to choose."
+}

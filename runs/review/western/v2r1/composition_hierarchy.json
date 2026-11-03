@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the whole saloon is shown frontally and packed edge to edge, with only a thin strip of sky and sand around it. Subject area 0.676 is far above the real ceiling of 0.442, so there is almost no breathing room. B: the neon sign stands on the right with the motel cropped by the left edge. This is an off-center crop like the real fan card, though the motel competes a little with the sign and box width 0.458 is under the real range.",
+   "fix": "Show the saloon smaller, at a slight three-quarter angle, or let one side crop off the card, with open sky around the roofline."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the mine cart sits centrally and fills the middle, with height 0.621 in range. It names itself at thumbnail size. B: the scroll lies as a low diagonal band, nearly touching the right edge, under an empty dark top third. Its height of 0.463 is below the real minimum of 0.522, so the hero reads thin and low on the card.",
+   "fix": "Raise the scroll toward the card center, turn it steeper and draw it larger so it fills more of the height, leaving less empty dark space above."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the tilted open box is centered on rays and reads clearly, though the red box outranks the gold medal inside it. B: the frontal star is centered on rays with even margins. Both measure inside the real ranges and both match real centered cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the mortarboard is centered on rings with clear space all round. B: the captain's hat sits slightly right on a plank floor, with wood walls behind it that are busier but stay subordinate. Heights are 0.506 and 0.492, both a little under the real range because both objects are wide. Nothing separates them on framing.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the wreath is a small ring in the middle of a large blue door, with subject area 0.081 and margin 0.279, both far outside the real ranges. At thumbnail size the door and ivy border read first and the wreath second. B: the windmill is one clear silhouette, very tall at height 0.956 with the blades near the top edge, but it is instantly named.",
+   "fix": "Move in close so the wreath fills most of the card, and crop the door to a plain backdrop with no ivy framing the edges."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the popcorn cart fills the card with a strong silhouette; height 0.869 is slightly over range but it reads immediately. B: the tumbleweed ball is centered on sand with even space around it, margin 0.109 slightly over range. Each misses the range by a small amount and neither has a framing problem.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the horseshoe is centered on rings with generous margins. B: the blue neck pillow is centered on rings, larger and slightly tilted, with area 0.418 at the top of the range. Both are single heroes with no competing focus and match the real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the rose arch spans nearly the full width (0.9) and stands alone on stripes. B: the piano is big and solid on a floor, with area 0.452 slightly over the real range. Each exceeds one limit slightly and both read at once, so framing does not decide it.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the trophy stands alone and centered, under a spotlight that points to it, with clean margins. B: the column runs down to its plinth, which is cropped by the bottom edge at margin 0.0. A bright gold plaque at lower right pulls the eye off the hero, and area 0.484 and height 0.887 both exceed the real limits. The added prop is the same habit as the extra props on the generated lighthouses.",
+   "fix": "Remove the gold plaque and its post. Show only the column, slightly smaller and centered, with space below the plinth."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the teapot sits large in the center and reads as one silhouette at thumbnail size, margin 0.112 only marginally over range. B: the pair of sneakers sits low on the card, with height 0.487 below the real minimum of 0.551 and only 0.033 clearance on one side. The upper part of the card is empty orange, so the hero looks small and its weight sinks to the bottom.",
+   "fix": "Draw one sneaker large and centered, tilted up, filling most of the card height, with no empty band above it."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the harmonica lies on a diagonal across the card like the real spyglass, with height 0.404 low only because the object is long. B: the red scarf is centered and tall, inside the real ranges. Both have one clear hero and no competing focus.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the fanned cards sit a little left of center over a table, with space around them, though the suit pattern behind them is fairly active. B: the beach ball nearly fills the card, with area 0.493 above the real ceiling of 0.475. Its sand ground almost matches the backdrop in tone, leaving little breathing room.",
+   "fix": "Draw the ball smaller, about two thirds of the card width, with more open sand around it."
+  }
+ ],
+ "pattern": "On framing, generated cards rarely differ much from real ones, and the signal is weak on most pairs. What still gives them away: the whole object is fitted into the card with extra props or scene around it, such as the plaque and the lighthouse islands. This makes focus compete or leaves the hero shrunken inside its scene. The hero is also sometimes placed low under an empty band, or oversized past the real area ceiling. Real cards commit to one hero, tilted or cropped close by an edge."
+}

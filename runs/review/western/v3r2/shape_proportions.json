@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the submarine hull is a short, swollen egg with no straight run, and the periscope and fins are stubby, so it reads as a bath toy. B: the feeder keeps flat plank faces, a straight roof edge, crisp board corners and a thin rope. B's high corner_rate comes from the knots and the tree cut-off, not from soft form.",
+   "fix": "Draw a long, slim submarine hull with a straight cylindrical midsection and a tapered tail. Add a narrow conning tower, a thin periscope and thin, sharp fins."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the guitar body is plump, with short rounded horns, and the strap is a wide fat band looping out from the body as a heavy lobe in the silhouette. A: the horse has believable proportions, with slim legs, narrow hocks, small hooves and a clean neck line. The numbers do not separate them.",
+   "fix": "Draw a slimmer guitar body with sharper, longer horns. Make the strap a thin flat band lying close to the body, not a fat loop."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the bale's block has soft pillowed edges and no clean corner, and the straws are thick noodle ribbons standing off the contour, which pushes thin_share and corner_rate past the real range. A: the book cover is planar with long straight edges and tight corners, and the ribbons are flat with crisp notches.",
+   "fix": "Draw a square hay bale with flat faces and firm edges. Use many fine, thin straws lying tight against the block, with only a few short loose ends."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the lamp has a slim chimney, a thin ring handle, a narrow stem and a stepped foot, all in believable relation; its corner_rate is high only because of small burner parts. B: the pan has a thin wall, a crisp rim and a slim riveted handle. Neither has fattened parts or blobbed corners.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the glass has straight tapered walls, a thin bendy straw and a sharp umbrella. B: the jug has a very round belly, but its narrow neck, stepped foot and even handle loop suit a real clay jug. The solidity gap comes from the two object types. Neither shows a swollen flat or a thickened thin part.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the towel's corners are big soft blobs, its long edges wobble with no straight run, and the rim is a thick rolled border, so a flat sheet reads as a puffed mat. Its corner_rate of 0.366 sits just below the real range. B: the bandana has a sharp bottom point, a straight top edge, tight tied knots and pointed ends.",
+   "fix": "Draw a flat, thin towel with straight hems and small tight corners. Add only one or two gentle folds, and make the edge a thin flat band, not a padded roll."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the chute is a very fat tube, the ladder rails and posts are thick, and the parts relate badly: a tiny platform, and a column that runs into the chute. A: the cactus is puffy, but a rounded column with two arms is true to the plant, and the part count is right.",
+   "fix": "Draw a slide with a slimmer chute of constant width, thin ladder rails and slim support posts. Each post should sit under the chute it holds up, and the platform should be large enough to stand on."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the coaster cars are fat pillowed tubs with stub wheels, and the track and supports are heavy bands. The silhouette merges into one mass with solidity 0.495 and thin_share 0.075, both outside the real range. A: the stagecoach keeps tall thin-spoked wheels, a thin roof rail, slim window posts and a believable body-to-wheel ratio.",
+   "fix": "Draw slim, angular coaster cars with flat side panels and tight corners. Use thin twin rails, thin cross ties, slender support posts and small but properly proportioned wheels."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the barrel is short and squat with a pillowed lid, and its contour is near-convex with solidity 0.99 and corner_rate 0.0, both outside the real range. The wide hoops barely register. The real barrel in the anchor is taller, with an open rim, thin hoops and a clear stave taper. B: the cart keeps slim posts, a scalloped awning, thin handles and spoked wheels, with all its parts in relation.",
+   "fix": "Draw a taller barrel with a gentle belly that tapers to narrower ends. Add a flat recessed top inside a raised stave rim, and thin metal hoops that step out of the contour."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the flip-flop soles are thick and puffed, with no corners (corner_rate 0.0, below the real range). The straps are wide fat ribbons and the toe post is a sausage, closing the gap under the strap to a sliver. A: the hat has a soft crown but a thin brim edge, a true curled brim sweep and a slim band.",
+   "fix": "Draw flip-flops with thin flat soles and a crisp edge. Add narrow thin straps and a slim toe post, leaving a clear open gap under each strap."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the lantern's thin_share of 0.042 is far above the 0.004 ceiling. The thick side guards are looped, and unexplained crossing wires sit around the flame inside the globe, so the parts relate oddly. A: the vending machine has planar faces, long straight runs, tight corners, small feet and the expected door and slot. The evidence is modest because the lantern's outline is otherwise believable.",
+   "fix": "Draw a lantern with slim side guards that follow the globe and a clear empty glass globe around the flame, with no wires crossing inside it."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the claw machine has no claw at all, which is a missing key part. The marquee is a swollen pillow with a domed top, the cabinet corners are soft, and the machine is squat and toy-like. A: the sleeping bag is puffy, but that is true of the object, and the two thin-buckled straps and rolled end are all present.",
+   "fix": "Add a metal claw on a thin cable hanging from a rail at the top of the glass case. Draw a taller, narrower cabinet with flat panels, tight corners and a flat-faced sign."
+  }
+ ],
+ "pattern": "Generated cards still fatten objects. Bodies get shorter and rounder, flat panels swell into pillows, corners become soft blobs, and thin parts (straps, rails, hoops, toe posts, straws) thicken into sausages or ribbons. They also slip on part logic: key parts go missing (no claw in the claw machine), or parts connect implausibly (a column running into a slide chute, stray wires in a lantern globe). In the silhouette this shows as a near-convex, low-corner lump, or as thick merged shapes where real cards keep open gaps and thin lines."
+}

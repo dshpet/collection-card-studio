@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the upper arm goes near-white while the lower arm drops into the same light grey as the pale background stripe, so its edge is lost. A speckled white ring of glow sits on the floor around the base, and the darks are split between the joints and the plinth. B: the binoculars hold one big dark mass of barrels, eyecups and cast shadow on a mid-light floor, with hero-against-background separation by value. B's gap (-0.277) and rms (0.200) sit just past the real range, so this call rests on A's scattered grouping and floor glow, not the numbers.",
+   "fix": "Put the arm's left side and underside in one continuous soft shadow so it stands darker than the background stripes. Remove the bright glowing patch on the floor around the base and let the floor fall off smoothly into one soft cast shadow."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: each tank carries the same hard vertical white band beside a dark band, repeated across both cylinders and the end caps, cut into pieces by black straps. There is no large shadow side, and the mean of 0.561 is below the real range. A: the lid and tray rim form one broad dark shape around a light cushion, on a stepped glow like the real cards. Its vignette of 0.162 is high, but the grouping reads like the real glove card.",
+   "fix": "Light the tanks from one side only: a soft, wide highlight on the left tank and the right tank falling into one shared shadow. Drop the repeated white stripes and lift the purple background a little brighter."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the yellow body flattens to near-white, with an abrupt dark crescent under it instead of a roll-off. Dark grey panels sit as isolated tiles, and a ragged pale halo hugs the hero against a single grey background. A: the fuselage has one long continuous dark belly shadow under a light top, against broad white cloud masses. The clouds lift the corners (vignette -0.056), but the value groups are large and simple.",
+   "fix": "Shade the body as a soft gradient from a lit upper left to a deep shadow lower right, with no hard dark crescent. Let the background glow spread wide and fade gently instead of hugging the outline."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the red body becomes a hard dark frame around white keys with pure black key accents, and the hero's local contrast is hard. Ragged dark corners give a vignette of 0.109, past the real range, around a mid-grey field. A: a busy scene with small pieces, but it has large dark hut and stool groups, and the vignette of -0.071 is at the edge of the real range. Weak evidence either way.",
+   "fix": "Soften the corners so the blue background barely darkens toward the edges. Keep the shadow side of the keyboard body a broad smooth tone rather than a hard black outline."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the card sits almost entirely in one mid grey (rms 0.084, below the real range), with thin light rings. All the darks are packed into the sphere, which steps abruptly from highlight to a black crescent, and ragged banding appears in the corners. A: a huge simple white board against mid cyan, a pale halo behind it and one dark pole, giving broad clear groups.",
+   "fix": "Lighten the pink background behind the atom into a wide soft glow, and let the blue sphere's shadow fade softly with no black area at its lower edge. Keep the corners a clean, even tone."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: a near-white cabinet is slammed against a near-black blue background with a tall glow behind it. Rms 0.217 and vignette 0.109 are both past the real range. The window is a cluster of hard black pieces. The cabinet front is flat white with no mid tones. B: mid-light orange background, soft dome of light behind a pale monitor, and darks confined to the screen and desk underside, matching the real computer card in the lessons.",
+   "fix": "Brighten the blue background to a medium blue with only a soft lighter glow behind the cabinet. Shade the cream cabinet front with a gentle gradient instead of flat white, and keep very dark tones only inside the tape window."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the background is one flat light value with no glow or stepped shapes in the lens, and the mean of 0.800 is above the real range. The hero is a mid-toned body broken by many small white highlights on dome, headlights and trim, with a hard black streak under the belly. B: the scarf is one broad dark red mass with a single black fold, on a light-centred swirl with darker corners, the same big-group design as the real cards.",
+   "fix": "Give the yellow background a soft brighter centre behind the car and slightly deeper edges. Reduce the small white glints to one or two, and let the underside fall into a single soft shadow."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: a mid-valued phone with gentle local contrast on a white tiled floor, which lifts the bottom corners (vignette -0.039). B: a mid-valued tray with fine white frost specks, a stepped glow behind and one soft shadow. Both have a clear glow behind a mid hero, and the small flaws cancel out: A's bright floor against B's speckle.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: hero and background share the same two light greys (rms 0.068, far below the real range; mean 0.765, above it). The band is separated by hue alone, with only one small dark patch inside the ring and no dark accents. A: the table has white top, black squares and a dark shadow on mid grass, with clear value separation and big groups inside the real range.",
+   "fix": "Deepen the blue background to a medium blue and make the band's far inside fall into a real shadow. Add a soft dark shadow under the bracelet so it stands out in black and white, not just by color."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a true night low key (mean 0.487, gap 0.284, both outside the real range). The card is near black with glowing signs and windows as isolated light patches. The real cards never go this dark. B: a white dome and tower with a dark blue band against a mid sky and pale clouds sits inside every real range, though a generated bright-tower look can match that too. The motel could be an unusual real card, so confidence is low.",
+   "fix": "Change the night to early evening: lift the sky and building to a medium blue-violet so only the deepest shadows stay dark, with a soft lighter glow behind the signs."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the glass tube is the same mid to light grey as the room behind it (rms 0.087, below the real range). The hero is separated mostly by thin highlights and hue, and the only darks are small lines in the base. B: the dock has big dark posts, ring and water against a pale sand corner, with strong broad groups (rms 0.169).",
+   "fix": "Make the wall behind the tube darker teal with a soft bright glow right behind it, and put a clear dark shadow side on the metal cap and base. Add one soft dark pool of shadow on the floor."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a clear flask in light grey on light grey (rms 0.081, below the real range; mean 0.770, above it). Only thin white lines outline it, the liquid is a single mid band, and there are no dark accents other than the shelf edge. A: the dark uppers and laces of the shoes and a broad cast shadow sit against a white floor, giving a strong hero-versus-background value gap, though its mean of 0.762 is also a little high.",
+   "fix": "Darken the orange background to a deeper orange behind the flask, with a soft glow only near the centre. Make the green liquid darker toward the bottom and give the flask a soft dark shadow on the shelf."
+  }
+ ],
+ "pattern": "Generated cards break the card into many small, evenly distributed light and dark pieces rather than a few large groups: repeated hard highlights, hero faces that flatten to near-white with an abrupt dark crescent instead of a roll-off, and ragged halos hugging the outline. Real cards keep one broad shadow side on the hero and a wide, gentle glow behind it. The other tell is hero separation by hue alone, where hero and background land on the same grey (bracelet, tube, flask), or the opposite extreme of near-white on near-black (tape machine)."
+}

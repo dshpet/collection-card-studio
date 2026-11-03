@@ -1,0 +1,99 @@
+{
+ "issues": [
+  {
+   "issue": "Dark heroes go too hard: near-black paint or fur with thin white glints and bright rim lines, so the object looks varnished. The hearse is the strongest giveaway on the sheet, and the bat is a milder case. The real spyglass and sneakers keep rich color inside their darks.",
+   "specialists": [
+    "value_contrast",
+    "surface_finish",
+    "lighting_shading",
+    "color_palette"
+   ],
+   "instruction": "Paint dark objects in a rich mid color with one broad soft sheen. Keep near-black to small creases and the shadow beneath."
+  },
+  {
+   "issue": "Dull materials are tinted instead of keeping their own color: plum road, rust bark, peach bone, mauve stone, orange wood. The real cards are saturated too, but real brass, leather, stone and wood still read as those materials.",
+   "specialists": [
+    "color_palette",
+    "value_contrast"
+   ],
+   "instruction": "Keep each material's natural color: gray road, gray-brown bark, ivory bone, gray stone. Tint shadows soft cool violet and leave bright color on the painted parts and the background."
+  },
+  {
+   "issue": "Light does not commit on some cards. The castle, chest and web are lit evenly from the front, with no clear shadow side and a weak shadow on the ground. The real door has crisp shadows from one direction. This does not apply to every card: the real sneakers are lit evenly too.",
+   "specialists": [
+    "lighting_shading",
+    "viewpoint_depth"
+   ],
+   "instruction": "Use one light from the upper left, a cool shadow side on the object, and a soft shadow on the ground that matches."
+  },
+  {
+   "issue": "One finish covers the whole object on some cards: the skull is plain clay and the web is pearly plastic. Real cards separate materials, as the spyglass does with brass, leather and glass. The opposite complaint, that generated cards are too detailed, is overruled.",
+   "specialists": [
+    "surface_finish"
+   ],
+   "instruction": "Give the main material a quiet, believable surface and add a second, slightly glossier finish on one small part."
+  },
+  {
+   "issue": "One stage surface looks unfinished: the chest's mottled gray-violet floor has no clear material. The real cards' floors are clean and readable, like the wood on the ice tray card and the purple floor on the bag card.",
+   "specialists": [
+    "staging_detail",
+    "viewpoint_depth"
+   ],
+   "instruction": "Replace it with a clean, smooth surface in a color related to the backdrop."
+  }
+ ],
+ "style_text": "",
+ "cards": [
+  {
+   "pair": "p01",
+   "keep": true,
+   "note": ""
+  },
+  {
+   "pair": "p03",
+   "keep": false,
+   "note": "Light the castle from the upper left, with the right side of each tower in soft cool shadow. Add a soft shadow on the grass at the base. Make the stone a slightly truer cool gray with less pink."
+  },
+  {
+   "pair": "p04",
+   "keep": false,
+   "note": "Change the trunk from red-orange to a duller gray-brown bark with soft cool violet shadows. Remove the pale glossy streaks along the ridges. Make the sky slightly paler."
+  },
+  {
+   "pair": "p05",
+   "keep": false,
+   "note": "Replace the mottled gray floor with a clean smooth surface, slightly deeper than the pink backdrop, with a soft shadow beneath the chest. Keep color in the wood's shadows, using deep red-brown instead of near-black. Remove the thin white scratches from the planks."
+  },
+  {
+   "pair": "p07",
+   "keep": false,
+   "note": "Lighten the bat's body slightly to a mid purple with broad soft shading. Keep the darkest values to the mouth and wing creases."
+  },
+  {
+   "pair": "p08",
+   "keep": true,
+   "note": ""
+  },
+  {
+   "pair": "p09",
+   "keep": false,
+   "note": "Repaint the car body in a mid navy with one broad soft sheen on the roof and doors, and remove the white streaks along the curves. Make the road a plain neutral gray with a soft cool shadow under the car. Make the gold trim slightly duller."
+  },
+  {
+   "pair": "p10",
+   "keep": false,
+   "note": "Light the web from the upper left, with each strand casting a slim shadow toward the lower right. Change the pearly sheen to soft matte white with pale lilac shading. Darken the pink corners slightly."
+  },
+  {
+   "pair": "p11",
+   "keep": false,
+   "note": "Change the bone from peach to a slightly cooler ivory with gray-violet shadows. Add faint fine pits and a few small cracks to the bone. Give the teeth and orange marks a slight glossy sheen."
+  },
+  {
+   "pair": "p12",
+   "keep": true,
+   "note": ""
+  }
+ ],
+ "summary": "Yes, this is close. Three of the ten generated cards can stay as they are (Candy Bucket, Bottle, Travel Book), and the Bat, Castle and Tree need only small touch-ups. The Hearse is the clear outlier, with varnished near-black paint and a plum road; the Chest's floor and the Skull's clay finish come next.\n\nI overruled several reports. The real controls show that dense detail is normal: the real Gate drew confidence-4 flags for finish and linework, and the real door, topiary and sneakers drew similar complaints. So the claims about over-detail, lacquer, busy settings and extra props are rejected as general rules, including the note to remove the Door's ivy. Calls that singled out real cards as the fake are also dropped, such as the Bottle's lighting and the Skull's versus the Sneakers' lighting.\n\nAll form, proportion and thickness fixes are excluded as instructed, along with framing and camera-turn fixes. Those reports do suggest generated cards run slightly puffy, but that can't be judged across different objects. Every generated card here is a Halloween-themed object, so some specialist picks may reflect the subject rather than the art."
+}

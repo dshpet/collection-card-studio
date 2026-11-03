@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the jacket body is a yellowish cream, the collar and cuffs are clean saturated orange, and the only other hue mass is the green sash on a green burst. The lens shows a narrow orange-and-green palette (2.53 hue families). B: the hat is a muted tan-brown with a dulled red band, close to the real glove's leather, and its underside shadow stays a related red-brown. All numbers are in range, so this is a weak call based on the pushed orange trim and cream body.",
+   "fix": "Make the jacket a dusty khaki with a slightly grey tint. Make the collar and cuffs a muted rust-brown leather instead of bright orange."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the wheel repeats the real wheel card but is pushed to a brighter, more uniform orange-brown, and the floor is peach-orange. The sky washes out to pale cream and lilac (background chroma 0.076, below the real 0.099 minimum). B: blue labels, a green tent and a yellow table are distinct local colors. The table shadows are slightly high in chroma (1.719), but the hue separation looks natural.",
+   "fix": "Paint the wheel in darker, walnut-brown wood with some dull grey-brown in the grain. Make the background a clearer, stronger lavender-pink, not a pale cream wash."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the scarf is almost pure red from light to shadow (subject chroma 0.2165, above the real 0.189 maximum), the badge is orange-yellow, and it sits on loud cyan. Hero and background are equally loud and nothing neutral rests the eye. B: the rope is also on a loud purple field (0.2313), but its yellow ochre drops to a dusty rose in shadow, so it has a real muted step.",
+   "fix": "Make the scarf a slightly deeper cloth red, with darker wine-colored folds and some dull fabric tone. Soften the cyan background so the scarf is the loudest thing on the card."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the whole card is pulled warm (warm share 0.699, above the real 0.664 maximum). The canvas is cream rather than neutral white, the dirt is peach, and the wood is orange. In the lens the grass mostly collapses into orange-brown. A: the orange dock and boat are held against a large cool cyan water mass, and the green lily pads add a separate hue role.",
+   "fix": "Make the canvas a neutral off-white with soft grey-blue shadows in the folds. Make the dirt a dull grey-tan and the grass a clear fresh green, so the wagon's wood is the only strong orange."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the saddle is a rich red-brown with an orange seat, and the fence is grey with sky-cyan leaking into it in the lens. Background chroma 0.0956 is just under the real range. B: the computer keeps truly neutral plastic with a cool blue side plane against the orange wall. This is the neutral, cool-shadow behavior of the real cards, and not the cream drift of the generated computers. B's numbers are extreme only because the subject is neutral (0.0364).",
+   "fix": "Make the saddle a darker, duller saddle brown, and the seat a muted tan instead of bright orange. Keep the fence a neutral weathered grey."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the barrel, lid and floorboards all use the same orange, so object and ground merge into one warm mass. The only relief is grey hoops and pale blue, with 2.98 hue families at the bottom of the range. A: yellow gold, red-brown planks, violet-tinted shade inside the lid, deep blue water and pale sand each hold a separate role, and the shadows stay rich.",
+   "fix": "Make the floor a cooler, greyer wood, clearly different from the barrel. Give the barrel a darker red-brown oak and let its shadows go deep plum-brown instead of orange."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the doors are one flat pure orange against a dull grey-teal wall (background chroma 0.0615, far below the real 0.138 minimum). The hero is loud and the background is nearly dead, unlike the strong colored backgrounds on real cards. B: the sneakers have many accent hues (5.49 families, slightly high), but the blue shoe sits on a warm yellow-orange set with neutral grey shadows, and the relationship reads as natural.",
+   "fix": "Paint the doors in a browner, varied wood with darker shadow panels. Use a brighter, cleaner turquoise wall so the background carries the same strength as the doors."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the pink roses sit on a pale pink wall and floor with the background washed out (0.0954, below the real 0.138 minimum). The card is strongly warm (0.788), and the only hue contrast is the leaf green. A: the mug keeps a truly neutral grey metal local color (subject 0.0337) against strong lime stripes and orange wood. That is a clear hero/background role split, with the neutral resting the eye.",
+   "fix": "Set the arch on a stronger, cooler backdrop such as a clear sky blue or deep rose, and keep the wall out of the same pale pink as the flowers. Let the arch metal and wood stay neutral grey-brown."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the boot is a hot orange-to-rust on a dull grey-teal field (background 0.0992, below the real 0.117 minimum), and shadow chroma falls to 0.637, below the real 0.741 minimum, as a near-flat maroon. B: navy cap, gold trim and bright cyan have clean roles. The violet-tinted lit plane on the cap keeps its color, and the cap remains a dark, believable local color.",
+   "fix": "Make the boot a deeper natural saddle brown with less orange. Use a bright, clean sky-blue or turquoise background, and keep richly colored warm browns in the shadows instead of flat maroon."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: hue families are 6.22, above the real 5.829 maximum: teal cover, orange wood, red, pink, blue, yellow and green stickers. The wood is pushed to orange with red-brown shadows. B: the deep navy night holds the card together, and the neon pink, amber and green are limited accents on a large muted mass. This is a weak call because the colors in both are believable.",
+   "fix": "Reduce the sticker colors to two or three. Make the table a quieter, duller brown so the teal book is the only strong color mass."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cars are pure yellow and red, and the track is pure cobalt on a bright sky (subject 0.1729, above the real 0.153 maximum). Everything is near full hue, with no neutral on the hero except the small wheels. B: the near-black engine gives the card a big neutral mass, the red is reserved for the accents, and the desert is a muted peach. Its low shadow chroma comes from the black paint.",
+   "fix": "Deepen the car yellow to a warmer golden paint and the red to a darker enamel. Give the track a less pure, slightly steel blue, and add grey metal on the rails and wheels."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cactus is an almost uniform pure lime green with subject chroma 0.1663, above the real 0.164 maximum. The background is washed pale blue (0.0987, under the range) and warm share 0.225 is below the real range, so a loud hero sits on a weak backdrop. B: red, gold and white are spread over a stronger blue, with pale stone giving a neutral rest, and all its numbers are in range.",
+   "fix": "Make the cactus a cooler, deeper natural green with blue-green shadows and duller ribs. Use a stronger, richer sky-blue background."
+  }
+ ],
+ "pattern": "Generated cards push the hero's local color to a pure, uniform hue, especially orange wood, leather and pure primaries. Whites and neutrals drift to cream, while real cards keep true neutral greys with cool blue or violet shadow planes. The hero-to-background chroma balance also breaks: a loud subject sits on a washed-out or dull grey-teal background, or the ground takes the same orange as the object, so hue roles collapse and the card pulls warm."
+}

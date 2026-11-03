@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the asteroid's upper-left mass is broadly and evenly lit, with soft clay-like crater shading. Only a thin purple shadow sits at the lower right, and light_bias_strength of 1.165 is far above the real range, partly from the glow around the rock in the lens. B: the bouncy castle has soft wraparound shading and a gentle vinyl sheen along the tubes. It has no cast shadow but stays within all real ranges.",
+   "fix": "Light the rock from one upper side and let a full cool shadow side wrap across the lower third, with a clear darker band where it turns. Remove the glow around the rock."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the swing ride has a lit canopy top, a shaded underside and a soft cast shadow running left across the backdrop. B: the keyboard has a bright top plane, darker front edge and small keycap shadows, with form_contrast 0.714 barely above the range. Both are coherent, so shading gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the station's pale cylinders turn gently with even, clean gradients, and the shadow on the ring and hull stays shallow. Its orange ring band adds no visible light to nearby surfaces. B: the bike has low-sun warm light on the scene with cool blue shadow sides on the frame and car, like the real cards' cool shadow sides, though shading_range of 0.549 is slightly low. The measure favours B being off, so this call is weak.",
+   "fix": "Let one side of each cylinder fall into a deeper cool shadow, with a clear shadow line along the hull. Darken the ring's inner face and add a cast shadow from the ring onto the hull."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the scroll has a strong side light, a clear dark inside the roll, a glossy table reflection and a soft contact shadow. Light bias of 0.924 is only just high. B: the sheet is almost uniformly pale across its centre, with light turning only at the curled corners. Shading_range of 0.545 and light_bias_strength of 0.045 both fall below the real range, despite a dark cast shadow along the left edge.",
+   "fix": "Make light fall across the sheet from one side, so each ripple has a lit face and a soft darker face. Darken the underside of the curls and tighten the shadow where the paper touches the table."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the bar scene has soft top light, shaded stool sides and gentle water shadows, all within the real ranges. B: the rocket has a dark metal body with a hard bright streak down its left edge. The tower throws sharp lattice shadows across the pad. Shading_range of 0.882 and form_contrast of 0.661 are both above the real range.",
+   "fix": "Soften the rocket's edge highlight into a broad sheen, lift the dark side of the body, and blur the tower's lattice shadow into a soft pool on the pad."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the tube has photographic metal creases with long sharp streaks, and only a thin dark contact line at the base rather than a soft cast shadow. Light_bias_strength of 0.858 is above the real range. B: the vending machine has a matte front, shaded left side, small soft contact shadow and gentle sheen on the handle and tray, within the real ranges.",
+   "fix": "Replace the sharp metal streaks with a broad soft sheen and a rounded shaded side, and add a soft shadow on the shelf next to the tube."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the dome has a soft central sheen with both sides darkening, a frontal wrap that ignores the low sun behind it, with no rim on the dome and no long shadow on the grass. B: the sand castle has consistent side light, with soft shadows from towers, bucket and shovel into the sand. Numbers do not separate them.",
+   "fix": "Light the dome from the sun side with a warm edge along that rim, push the opposite side into shadow, and cast a long soft shadow across the grass."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the arch is lit almost flat from the front, each rose and leaf shaded alike, with only a pale soft shadow at the feet. Light_bias_strength of 0.14 is below the real range. B: the backpack has a clear lit left side, deep form shadow to the right, and shaded pockets and straps, within range.",
+   "fix": "Light the arch from one upper side so one column falls darker, shade leaves deeper under the roses, and darken the inner arch and floor shadow."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the balloons have soft round highlights at the same upper left spot, with gentle turn into the shadow and form_contrast of 0.363. B: the globe has a broad upper-left sheen, a darker lower right and a metal stand with specular bands. Both are consistent and within all ranges.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the comet's facets step in flat bands from pale to dark blue, with sharp white glints on the upper faces and a smooth, nearly unshaded tail. Shading_range of 0.478 is below and light_bias_strength of 1.004 far above the real range. B: the scarf has smooth cloth folds and a broad soft sheen, with deep red in the neck loop. Its form_contrast of 0.256 is low, though the folds read clearly.",
+   "fix": "Blend the facets with soft transitions, replace the white glints with a broad gentle sheen, and shade the tail so it turns from light to shadow along its length."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the plant has glossy stems and pot with a tight highlight, plus a dark hard-ish cast shadow to the right. Shading_range of 0.929 is above the real range. Its glowing bulbs throw no visible light onto the leaves. B: the book has a soft top light, gently shaded page block and a soft cast shadow to the left, within range.",
+   "fix": "Lift the darks on the pot and soften its cast shadow. Replace tight plastic highlights with a broad sheen and add a soft yellow glow from the bulbs onto nearby leaves."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the capsule has a sharp crescent highlight in the porthole, thin bright edges on the plates, and a near-black underside against a pale body. Light_bias_strength of 1.027 and form_contrast of 0.636 are both above the real range. B: the envelope has soft matte paper shading with small fold shadows and gentle shadows between photos, within range.",
+   "fix": "Soften the porthole highlight and metal edges into a broad sheen, shade the cone gradually around its side, and lift the base's dark interior with some bounced light."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through lighting that does not settle on one clear direction. Real cards commit a whole side of the form to a cool, deep shadow with a soft turn. Generated cards tend to use either soft frontal clay shading or the opposite failure: hard metal streaks, sharp glints and near-black undersides. Soft glow around the hero, shading that stays clean and even, and practicals (lamps, glowing bands) that light nothing nearby are also tells. Cast shadows are often either faint or too crisp."
+}

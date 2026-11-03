@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the asteroid's contour is dark along the bottom, but fades on the right flank and upper left, so the edge is partly lost, as on real cards. Crater rims vary in strength. B: the bounce house has a nearly continuous dark contour, doubled under the base, plus hard black dashes at the arch seams and strongly lined rays. All measures are in range for both, so this rests on the eye.",
+   "fix": "Let the inflatable's silhouette fade where it turns from the light. No continuous dark line around the base. Make the seams shallow soft creases instead of dark notches."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the top of the swing ride's canopy and the column have soft, thin, partly lost edges, and the chains are the only dense area. B: every note and star in the background has a closed, even contour, and the keyboard keys and body carry heavy lines. Subject density of 0.233 is above the real range and outline 0.106 sits at its top.",
+   "fix": "Make the background notes and stars faint tone-on-tone shapes with soft edges. Reduce the lines between keys to thin gaps, and let the keyboard's shadow side melt into its shadow."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the solar panels have thick, even, closed frames and grid lines, and the same line weight repeats on all four panels, the ring and the hull grooves. B: the car and landscape edges are thin and broken, with weight changing along them and the car outline partly lost. B's bike is busy and its density runs slightly high, but its lines are varied.",
+   "fix": "Make the solar panel grid hairline thin and low contrast. Remove the heavy frame around each panel, and keep the sharpest edges on the central ring only."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the scroll has a hard edge along the top flap, which fades along its lower body, and the shelf lines are faint. B: the paper has a dark contour doubled at the bottom edge, the drawn figures show as heavy double bars, and plank gaps are strongly lined right across the table.",
+   "fix": "Let the paper's lower edge fade softly into its shadow. Draw the figures as thin flat ink. Make plank gaps faint, narrow and broken."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: background density of 0.144 is well above the real range. Thatch shingles, pool tiles and stool rims all have heavy dark edges, so nothing separates focus from surroundings. B: the rocket and tower are sharp, while clouds and hills are soft, so the hierarchy is clear, although the rocket's contour is quite heavy.",
+   "fix": "Blur and simplify the thatch and pool tiles. Remove dark lines between shingles, and keep crisp edges only on the fruit and glasses."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the tube's folds are broad soft transitions, with crisp edges only at the crimp and straw, though the shelf line is hard. B: the window has a thick double-grooved frame, the tray and door handle have heavy closed contours, and speckled droplets add noise. The outer body edge is much thinner than these internal lines. Outline 0.088 against A's 0.022.",
+   "fix": "Make the frame around the glass door a thin, precise seam rather than a deep double groove. Remove the droplet speckle."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the dome, drum, base and doorway have even, unbroken dark contours, and stone joints are thick double-lined grooves of the same weight. Background density of 0.011 is below the real range. B: the sandcastle's edges break up into sand, and the left tower's base and mound are lost edges. The strongest lines stay at the crenellations and bucket.",
+   "fix": "Draw stone joints as thin shallow lines that fade in and out. Let the base and the dome's shadow side soften instead of keeping one even edge all the way round."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: subject density of 0.317 is far above the real range, and background 0.027 is also over it. Every petal and leaf has a dark closed edge at the same strength, so there is no edge hierarchy. B: the backpack has heavy double lines on its straps and flaps, but large soft areas on the body and a density of 0.13.",
+   "fix": "Simplify the foliage into larger leaf clusters with soft interior edges. Keep crisp edges only on a few roses at the top of the arch."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the balloons have thin edges that weaken on their shadow sides, with soft clouds, though the density of 0.028 is below the real range because the subject is so simple. B: density of 0.163 is above the real range. The ring and stand carry heavy double dark lines, each star and dot has a closed contour, and the diamond pattern is strongly lined behind it.",
+   "fix": "Thin the ring and stand edges, and let the rim of the sphere fade on the shadow side. Make the stars sit softly on the surface, and turn the background diamonds into low-contrast tone shifts."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the comet's facets are thin lines and the rock's lower right fades out, although the tail's upper edge is heavy. B: the scarf has an even, closed dark contour all the way round, with a hard line at the split between the tails, while its interior is soft. This reads as a drawn outline over a soft form. The spiral lines are also stronger, with background 0.016 against 0.006.",
+   "fix": "Remove the even edge line around the scarf. Let the cloth's edge vary, sharp where light hits and soft where it turns away into the blue."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the plant's stems and leaves have double lines from rim highlights, density of 0.198 is above the real range, and outline of -0.123 is below it, so edges are bright, not dark. B: outline of 0.165 is well above the real range. The sticker shapes have thick triple contours, the cover edge is a heavy line, and wood grain is strongly lined across the card. Both are out of range, but B's dark contour is the fault the lessons show.",
+   "fix": "Remove the thick border around the stickers, leaving them as thin white-edged flat decals. Soften the book's contour and fade the wood grain."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the capsule has a heavy dark ellipse at the base and thick closed plates and porthole rings. B: the envelope has heavy photo frames and busy little houses inside the picture. Both measure in range, and each shows similar contour weight, so my vector gives no reason to choose.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards give themselves away through even line weight. Dark contours run unbroken around the hero, with no lost edges where the form turns into shadow. Internal seams are as heavy as the silhouette, and often appear as thick double grooves on frames, straps, panels and stone joints. Secondary detail gets the same edge strength as the focus: every leaf, sticker, star or background pattern is a closed shape, so edge hierarchy flattens and density runs high. Real cards vary edge strength along a line, let shadow-side edges fade, and keep seams thin and backgrounds faint."
+}

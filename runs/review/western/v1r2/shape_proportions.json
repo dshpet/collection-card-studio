@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the hat brim is one swollen roll with no thin edge. Both sides balloon into fat lobes, and the crown is a smooth dome with only a shallow dent, so the silhouette reads as inflated. A: the jacket is also puffy at the cuffs, but the collar, shoulder, sleeve taper and hem still make a recognisable garment contour with tighter steps. Metrics do not separate them (solidity 0.891 on both).",
+   "fix": "Draw the cowboy hat brim as a thin, flat felt sheet with a crisp edge that curls up only at the sides. Give the crown a sharp centre crease and two pinched dents."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a wheel very close to the real ship's wheel on the reference sheet but not the same drawing, with fatter club-shaped handles, thicker spokes crowding the hub, and a heavy flared pedestal. Solidity 0.569 and corner_rate 6.793 fall outside the real range, though any spoked wheel pushes these numbers. B: the bottles have believable proportions, straight label bands, and a thin neck and cap. Low straight_share 0.198 comes from the overlapping group and the lobed bases.",
+   "fix": "Keep the spokes and handle necks slim, with small turned grips. Make the wheel rim narrower and the pedestal a slim straight post on a thin flat base."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the rope is a very thick sausage relative to its loop, and the coil merges into one solid ovoid with no gaps between turns (corner_rate 0.694, near the low end). The loop has no real lasso slip knot, only a red band. A: the neckerchief is also inflated, but it has clear parts in the right relation: neck band, knot and two tapering tails, plus an open neck gap. Weak call, because softness runs both ways here.",
+   "fix": "Draw the rope thin, about a quarter of the current thickness, in loose separate coils with gaps showing between turns. Add a wide open loop running through a small tied honda knot."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the wagon is shortened and toy-like. The canvas swells into a fat pillow past the wagon bed, the bed is stubby, and the wheels are thick-rimmed and oversized for the body. Straight_share 0.238 is near the bottom of the range. A: the dock and boat hold long straight plank edges, a clean pointed hull and a tight dock corner (straight_share 0.546).",
+   "fix": "Lengthen the wagon bed into a long narrow box with straight plank sides. Stretch the canvas tautly over visible thin hoops. Make the wheels tall with thin rims and slender spokes."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "B matches the card labelled REAL in the lessons: monitor, base and keyboard with planar faces and tight corners, thin mouse cable, straight_share 0.582. A: the saddle seat and skirt are swollen, leathers are thick and rounded, the stirrup is a heavy tube, and the horn is a blob. Straight_share 0.193 is below the real range, with no flat run anywhere on the contour.",
+   "fix": "Draw the saddle with thin flat leather skirts with crisp cut edges, narrow flat straps, a slim metal stirrup, and a low seat instead of a swollen cushion."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the barrel bulges into a squat pot shape, with a lid and knob like a cookie jar and an oversized belly. Staves are wide and few. Solidity 0.983 is above the real range and corner_rate 0.826 is near the bottom, so the contour is one fat blob. A: the chest has box faces, straight rims, a tight base corner and a clearly separate open lid (solidity 0.885, corner_rate 3.359).",
+   "fix": "Draw a taller barrel with a gentle bulge, many narrow straight staves, thin flat iron hoops and a flat recessed top with a sharp rim. Remove the knob."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the saloon doors are chunky. Posts are thick with mushroom caps and blobby feet, the door frames are heavy, and the top arches are soft, making it read as a toy gate. The doors fill most of the span and there are no thin hinge details in the silhouette. B: the sneakers keep a believable shoe proportion with a stepped collar and laces breaking the contour, though the sole is thick. Metrics are inside range for both.",
+   "fix": "Use slim square door posts without bulb caps or swollen feet. Draw thin flat door panels with narrow frames, crisp square corners and thin louvre slats."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the mug is a fat rounded pot with a swollen rolled rim and a thick tube handle, with no straight wall. The base curves into the belly. Corner_rate 0.449 is below the real range, so the outline is almost cornerless. B: the arch has busy, varied leaves and thin trellis detail. Corner_rate 16.613 and thin_share 0.017 exceed the range, but that follows from the foliage, not a form flaw, and the structure stays correct.",
+   "fix": "Draw a tin cup with straight vertical walls, a thin sharp rim, a flat base with a tight corner and a thin flat strip handle."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the boot is thickened. Pull straps are chunky tabs, the shaft is wide, the heel is a heavy block, and the spur is an oversized simplified star on a fat shank. B: the cap board keeps flat faces, straight runs and a tight corner, with a thin cord and slim tassel in true proportion. Metrics are in range for both, so this rests on the eye.",
+   "fix": "Narrow the boot shaft and make the pull straps thin flat leather loops. Draw a slimmer stacked heel and a small spur with a thin neck and fine points."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the sign panels are thick pillows with soft blob corners and a bloated bevel, and the arrow tip is rounded, while the two posts are heavy for a roadside sign. Straight_share is lower at 0.532. A: the book holds a flat cover, long straight runs and tight corners, with thin ribbon tips (straight_share 0.633, solidity 0.94).",
+   "fix": "Draw the sign boards as thin flat metal panels with tight corners and a sharp pointed arrow, mounted on slim straight poles."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the locomotive is shortened like a toy, with a stubby boiler, oversized funnel stack, a big cab for its length, and wheels fused into the body in the silhouette. A: the coaster's rails, ties and supports remain thin and open (thin_share 0.075, slightly above range), though the cars are swollen. Solidity 0.495 is out of range for A, but that comes from the open track structure.",
+   "fix": "Stretch the locomotive into a long slim boiler with a narrow stack, a smaller cab, and thin side rods and wheel rims with visible gaps below the body."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cactus is an inflated balloon form. Arms are fat rounded sausages of nearly constant width, and ribs do not break the contour. Spines are small nubs and the base is a cut-off flat stump. Corner_rate 6.012 is above range, but it only comes from those nubs. B: the popcorn cart retains thin posts, handle, spoked wheel and many parts in correct relation, with a straight counter.",
+   "fix": "Draw the saguaro with a slim trunk and narrower upturned arms, ribbed edges that notch the outline, and long thin spines. Let the base meet the sand naturally."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through inflation. Forms swell into pillows and sausages (hat brim, saddle skirts, barrel belly, cactus arms, rope). Flat runs turn into soft rolled edges, thin parts such as straps, rims, spokes and handles get thickened, and objects are shortened into toy proportions (wagon, locomotive, barrel). The real cards keep planar faces, tight corners and slim parts. Caveats: the metrics only clearly back p05, p06 and p08, and most other calls rest on the eye. Picks were also partly swayed by non-silhouette clues: western-themed objects looked like the generated set, and p05 B is the known real card. Treat confidence on the theme-aligned calls as inflated."
+}

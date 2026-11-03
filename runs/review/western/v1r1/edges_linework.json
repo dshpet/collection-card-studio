@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the boot has one unbroken dark contour of even weight from cuff to toe and around the heel, and the leather shaft and toe are filled with speckled grain marks. A: the cap board has a clean contour, but the crown and gold band fade on the left into a lost edge, and the faces are almost empty, as on the real glove. A's outline_darkness (-0.096) sits just under the real range, but its edges vary like a real card's.",
+   "fix": "Remove the dark line around the boot. Let the lit side of the shaft and toe melt softly into the background, keep the sharpest edge only at the spur and strap, and make the leather smooth with no grainy speckle."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the scarf is enclosed by a clean, even, dark contour around the collar and both tails, like an ink line, with only soft folds inside. The sharpest detail is the medallion ring. A: the rope's contour varies, strong on the upper-left of the coils and weaker on the lower right, and the strand twists carry the internal edges. A has some fibre hatching, but all measurements are in range for both cards.",
+   "fix": "Remove the even line around the scarf. Let the edge go soft and lighter where the cloth turns toward the light, and keep the crispest edge only at the badge and knot."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the jacket has dark, thick grooves around every pocket, flap, collar, cuff, badge ring and along the sash, all at similar weight, so no area leads. Its subject density of 0.159 is just above the real maximum. B: the hat has few edges. The crown's top edge and dents are soft, and the sharpest lines are at the brim and star. B's outline_darkness of -0.089 is only marginally under range.",
+   "fix": "Use far fewer lines on the jacket. Make the seams and pocket edges hair-thin, drop the dark grooves around the pockets and collar, and keep the crispest edges only on the badges."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the caravan has heavy doubled lines around the door, windows and body, a bold outer contour, and dark marks on every grass tuft. Subject density 0.169 and background density 0.019 are both above the real range. A: the anchor has a broken contour that thins along the shank and arms, and its background has only faint stripe edges. A's values are in range.",
+   "fix": "Replace the thick doubled door and window frames with single thin panel seams. Drop the dark contour around the caravan body, and make the grass soft, low-contrast shapes with no dark marks."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: every rose petal and leaf on the arch has its own dark edge at equal strength, forming a dense tangle with no focal hierarchy. Subject density 0.317 is far above the real maximum of 0.228, and the background also shows ring texture. A: the cup has a strong rim and handle edges and a soft body, though its subject density of 0.081 is slightly low. The arch's excess is much larger.",
+   "fix": "Group the leaves and flowers into a few larger soft masses. Keep crisp petal edges only on two or three front roses, and let the rest of the foliage blur together with no dark separation."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: this is the same computer shown as REAL in the lessons, with thin precise seams and a broken outer contour. B: the saddle has a dark contour around the seat and flaps, a doubled stitch line of many small marks along each panel, grainy leather texture, and a heavy black buckle. Its fence also has dark shadow contours and grain. The evidence is from the eye only; measurements are in range.",
+   "fix": "Make the stitching a faint, thin single line or leave it out. Smooth the leather with no grain marks, soften the outer edge of the flaps, and keep the crispest edge at the buckle."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the sneakers have strong dark contours around the soles and uppers, tiny dot mesh on the toes and tangled laces, all sharp at one level. Subject density 0.227 is at the real limit and outline_darkness -0.1 is under range. A: the doors have thick black gaps between the louvres and a background density of 0.031 above range from plank grain, so A is also not clean. B is only slightly the worse.",
+   "fix": "Drop the mesh dots and most of the shoe panel lines. Soften the sole's outer edge against the floor, and keep the sharpest edges at the laces at the front only."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the awning has very dark, thick contours on the stripes and scallops, and the wheels, posts and popcorn add more lines, with a dense paving grid around it (background 0.041, within range). B: the cactus has soft contours with lost edges on the ribs and flower, and only faint background lines. Its background density of 0.009 is slightly under range. The call is weak because A's values are all in range.",
+   "fix": "Thin the awning lines to fine seams, remove the black edge along the stripes, and turn the paving into soft low-contrast tiles with barely visible joints."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the barrel has fairly thick stave grooves and doubled edges on the bands, with grain marks in the planks. B: the chest has dark rings on the bubbles and coins, but soft lost edges on the lid's right side. Both have comparable edge weight and both are in range on all fields, so my vector gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the dock's plank gaps are thick black grooves, the boat has a heavy rim line, and the water carries many hard ripple rings and stray dots, so edges compete across the whole card. A: the wagon's canvas has soft folds and a soft top contour, and the dark edge is concentrated at the canvas opening and wheels, so there is a clearer hierarchy. A's terrain is fine and light. Measurements for both are in range.",
+   "fix": "Make the plank gaps thin and precise, and reduce the water to a few soft, low-contrast ripples with no dark rings or dots. Keep the crispest edge on the boat's near rim."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the locomotive has doubled lines around almost every part, including the boiler bands, rivets, wheel spokes, cowcatcher slats and sleepers. Subject density 0.236 and background density 0.07 are both in the upper part of the real range. B: the coaster has fewer, larger edges. The cars have soft shoulders and the clouds and hills fade into low contrast, so hierarchy runs from near car to soft distance.",
+   "fix": "Merge the small parts into larger simple shapes with thin single seams. Cut the rivets and repeated lines, and fade the desert, rails and sleepers into soft low-contrast shapes."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the gloves have very few edges. Their outer boundary is faint and blurred, only a small fan of creases is crisp, and the lens shows ripple rings on the smooth surface. Subject density 0.037 is far under the real minimum of 0.087, while the wall stripes are the strongest lines on the card. B: the snorkel has crisp strap, frame and tube edges at the focus and softer glass, with density 0.114 in range, although its water cells and deck are busy.",
+   "fix": "Give the gloves a clean, crisp boundary against the wall and table where they turn from the light, add thin precise seams on the cuff and thumb, and make the wall stripes softer than the gloves."
+  }
+ ],
+ "pattern": "Generated cards give themselves away by treating all edges alike. An even dark contour wraps the whole hero like an ink line, every small part gets its own doubled groove instead of a thin seam, and fine grain, mesh or stitching is sharp across the entire surface, so there is no focal hierarchy. Real cards break the contour with lost edges on lit sides, keep internal seams thin and few, and keep background edges quiet. A smaller failure in the other direction is an over-blurred hero with no crisp boundary, weaker than its own background stripes."
+}

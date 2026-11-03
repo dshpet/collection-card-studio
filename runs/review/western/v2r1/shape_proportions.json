@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the saloon keeps straight roof lines, thin balcony rails, slim posts and tight corners on its false front. B: the three motel sign boards have large soft corners and thick puffy rims, and the top board reads as a cushion. The arrow is fattened in the same way.",
+   "fix": "Draw the sign boards as flat, thin metal panels with straight edges and tight small corners, a narrow rim, and slim posts."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the mine cart has a straight rim, flat tapered sides, a thin D-handle and believable wheels. B: the scroll has a thin paper edge, a true spiral end and thin ribbon tails. Both keep true proportions and both metrics sit in range, so shape gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the box lid and base have very large soft corners, and the silhouette is two rounded cushions with no straight run or crisp hinge edge. The rim is thick and padded. B: the star has straight tapered arms, sharp facet ridges and small, clean ball tips.",
+   "fix": "Draw the ring box as a rigid square case with flat lid and base faces, straight edges, tight small corners and a thin, visible hinge line."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the graduation cap board is a flat, thin plane with straight edges and tight corners, and the tassel cord stays thin. B: the captain's hat crown is swollen and sagging into a lopsided blob that droops at the back, with no firm top ring. The visor is a short, soft flap.",
+   "fix": "Draw the crown as a firm, wide, round top on a straight band, with a crisp edge at the top ring and a stiff, thin visor with a clean curve."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the wreath's spiky outline comes from flowers and leaves, and the door panels stay flat. Its off-range corner rate and straight share reflect the foliage. B: the windmill has separate blades, thin spokes and a braced tower, with slightly heavy beams. Neither shows a clear shape flaw.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the popcorn cart has thin awning poles, a slim handle, spoked wheels and a straight counter. All expected parts are there. B: the twig ball is built from thick, smooth, even-width noodles rather than tapering twigs. The tips are stubby and the outline is lumpy, and corner rate sits above the real range.",
+   "fix": "Draw the tumbleweed from many thin, dry twigs that taper to fine points, with varied thickness and small forks."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the horseshoe arms end in fat clubbed knobs, and the bar is swollen and rounded with no flat face, so the outline is a soft U. A real shoe is a flat band with tapered heels, and corner rate is 0. B: the neck pillow is meant to be inflated, so its puffy tube and small valve tab are true to the object.",
+   "fix": "Draw the horseshoe as a flat, even metal band with a planar face, crisp edges and heels that end in small squared tips, with no bulbs."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the rose arch has a busy leaf outline, which explains its off-range corner rate, thin share and straight share. The wooden posts and metal arch stay plausible. B: the piano has flat panels, straight runs, tight corners and all expected parts, including keys, pedals and music desk. Nothing on this vector separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the trophy has thin flat strap handles with neat curled ends, a slim stem and a stepped base. B: the column capital's volutes are fat round bolsters and the slab above is soft-edged. The base moulding is a swollen ring, so the stone reads as inflated.",
+   "fix": "Draw the capital with a thin square slab, slim tight spiral scrolls and crisp, shallow mouldings at the base, with straight stone edges."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the teapot has a straight tapered body, a clean spout, a slim handle and a flat base, in believable proportion. B: the sneakers have swollen, balloon-like midsoles, short stubby uppers and rope-thick laces. The silhouette is a soft double lump.",
+   "fix": "Draw the sneakers longer and lower, with a thin firm sole, a clear heel and toe shape, and thin flat laces."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the harmonica's top cover is swollen into a pillow with no flat plate or crisp seam, and the red end caps are soft blobs. Solidity is above the real range and corner rate is 0. The lower comb is the only crisp part. B: the neckerchief is puffy, but it has a real collar gap, a knot and tapered tails, as soft cloth should.",
+   "fix": "Draw the harmonica as a thin, long box with a flat metal cover plate, straight edges, tight bevelled corners and small square end caps."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the playing cards have large soft corners and thick rounded edges, so they read like tiles, and the fan merges into one rounded mass. Solidity is above the real range and corner rate below it. B: the beach ball is a true sphere with flat-looking panels and a cap. Its high straight share and solidity are only the circle.",
+   "fix": "Draw the cards as paper-thin flat sheets with small tight corners and straight edges, fanned so each card's edge stays distinct."
+  }
+ ],
+ "pattern": "Generated cards still inflate objects: flat panels swell into cushions (sign boards, ring box, harmonica cover), corners turn into large soft radii, and thin parts thicken into tubes (laces, twigs, moulding bands, card edges). Bars and rims get fat, and ends turn clubbed instead of tapered or squared. Silhouettes lose straight runs and crisp junctions, which shows as soft lumps where the real cards keep planar faces, tight corners and slim parts. Objects that are soft by nature, such as inflatables and foliage, give no reliable signal, and their metrics reflect the subject rather than the drawing."
+}

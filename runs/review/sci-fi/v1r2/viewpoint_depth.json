@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the telescope is seen almost side-on from a low camera, on a thin grey mound with a wavy top edge. That strip is a shallow stage in front of a flat striped wall, so the card has two close layers, and the tripod feet barely describe a ground angle. B: the binoculars are seen from a high camera on floorboards that fill the card. The planks converge steadily and the near barrel is larger than the far one, so hero and ground share one angle, as on the real barrel-deck card. B's convergence is fairly strong but consistent. planar_share does not separate them.",
+   "fix": "Stand the telescope on a wide flat ground seen from slightly above, running back to a clear far edge, with all three tripod feet resting on that same surface."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the scarf floats frontally; the collar loop and tails read as one soft view from slightly above. B: the asteroid is a three-quarter ball with craters wrapping around its surface, but the flames behind it are flat cut-outs lying in the card plane and do not recede from the rock. Neither card has a ground plane, so the evidence is thin.",
+   "fix": "Make the flames stream backward away from the viewer behind the rock, getting smaller and partly hidden by it, instead of lying flat beside it."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: one hero fills the card, with a huge dish tipped toward the viewer on a small base, which exaggerates the near-to-far scale. The sand is a low, simple strip with a far horizon and the hero does not interact with it. B: the sandcastle has clear stacked layers, with bucket and spade in front, castle in the middle, then beach, sea and sky. The towers overlap and share one slightly raised view, and the sand rises around them, so the hero is set into the ground.",
+   "fix": "Show the dish with mild perspective and a less extreme tilt, keep the base in proportion, and sink the base into the sand with drifts around it."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the rover is turned three-quarters from a raised camera, and its wheels shrink quickly front to back in a compressed toy view. It sits on a vague grey mound with only a dark shadow blob to tie it down, and the normals show the ground rolling with no single angle. B: the taxi is also three-quarter with an enlarged nose, but the road and lane stripes give one flat ground angle that matches the wheels.",
+   "fix": "Put the rover on a flat ground plane with clear markings or tracks running in the direction it faces, with wheels sized for mild perspective and each touching the ground."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the sneakers are seen from a raised three-quarter camera, and both shoes and the floor agree in showing their top faces. B: the helmet is nearly head-on with a very shallow collar ellipse, floating dead-square against a hard floor seam, and the visor bulges as one swollen smooth rainbow in the normals. The difference is mild because the seam-and-floor setup appears on both cards.",
+   "fix": "Turn the helmet about a quarter toward the side and raise the camera a little, so the collar shows a clearer oval matching the floor angle."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the pool is seen from a high camera, with stacked rings, a lawn, and a fence corner that gives two wall directions, all at one consistent angle. B: the jacket floats in a slight three-quarter view with sleeves that read in the same view as the body and no ground. Both are consistent within their own type of card.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a tightly cropped scene from a high camera with many layers: stools in water in front, bar and drinks in the middle, hut and pool edge behind. All ellipses agree. B: a full, centred object on smooth mounds. The dome is seen near eye level, while the ladder treads are seen from above and splay out from the door. The tube mouth turns toward a different direction from the door, so the parts do not quite share one view, and the ground has no markings to fix an angle.",
+   "fix": "Draw the steps from the same low view as the dome, straight down from the door, and add a clear flat ground with marks that recede behind the dome."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the planet floats as a perfect ball with a ring of nearly even thickness all the way around, so near and far sides show little depth difference; the card reads as a flat diagram with a glow behind it. B: the flip-flops are seen from one high angle, with the same side edge on both soles, overlapping straps, and a slightly larger near sole. planar_share is the same for both.",
+   "fix": "Tilt the ring so its near side is visibly wider and thicker than its far side, and let the planet clearly cover the far part of the ring."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the book is cropped close from a high camera, with table, rail and hedge behind and everything sharing one receding angle. Its planar_share of 0.53 is just above the real range but comes from the flat table. B: the chair is seen from a mild three-quarter view on a round floor with a curved far edge. The seat and frame read a little more from above than the near-frontal backrest, but the gap is small. Neither gives a firm reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the player is tilted and seen from above, with its side wall shown along one edge and the earbud cord in the same view. B: the saucer's upper hull is seen from above, with a band of up-facing colour in the normals, while the pod on its underside is also shown with its rim from below. The disc shows both top and bottom at once, and the row of lights tilts without matching the dome.",
+   "fix": "Pick one view of the saucer: seen slightly from above, with the top of the disc showing and the underside hidden, or slightly from below, with the dome partly hidden by the rim."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the cart is seen in a raised three-quarter view, and its roof, counter, wheels and cobbled ground recede together, with the handle and big wheel overlapping for depth. B: the console's base runs flat across the card as if head-on, yet its left side is visible and the top panel's right edge leans sharply inward. The sloped panel looks sheared against the base rather than sharing one view, and the backdrop is a plain seam and floor.",
+   "fix": "Turn the whole console a quarter to one side so the base, the sloped panel and the side wall recede in the same direction with gentle perspective."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the rocket flies diagonally, its nozzle cup open to the viewer as if seen from behind, while the hull bands curve as if seen from the nose end. The portholes sit almost face-on and the fins are flat shapes, so its parts do not fully agree. B: the submarine has a strong bulging nose and a shrinking tail, which is wide-angle and contrary to mild real perspective, though it is applied consistently across hull, rivets and portholes. This is a close call.",
+   "fix": "Show the rocket from one clear side view: hull bands and the nozzle rim curve the same way, portholes narrow slightly as the hull turns, and the far fin is partly hidden by the body."
+  }
+ ],
+ "pattern": "Generated cards most often give themselves away through weak spatial grounding rather than extreme perspective. The hero stands centred on a vague stage, such as a smooth mound or a plain floor seam, so the ground has no marks that fix its angle (p01, p04, p07), and the depth is two shallow layers where real cards often crop in and stack foreground, hero and background. Parts of one object also drift out of a single view: the saucer shows both top and underside (p10), the console panel shears against its base (p11), the ladder is seen from above while the dome is near eye level (p07). In the lessons, generated cards also enlarge the near end and swell forms into smooth rainbows, but real cards here sometimes do that too, so it is weak evidence alone. planar_share separated almost nothing. Caveat: the review folder is named sci-fi and nearly every card I picked has a sci-fi subject, so that may have tilted the close calls, especially p01, p02, p05, p08 and p12. No verdict cites subject matter, but those five should be treated as weak."
+}

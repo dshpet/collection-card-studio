@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the popcorn cart has thin posts, a scalloped awning and open gaps between its parts, like the real cards. B: the console is one swollen wedge with a large soft radius at the top-left shoulder and along the base, stubby feet, and a contour with only the lever ball breaking it.",
+   "fix": "Draw the console as a sheet-metal box with flat faces, straight edges and tight small bevels at each corner. Keep the feet slim and make the lever a thin rod."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the shoes have a broken contour with collar, heel and sole steps. B: the helmet is a near-perfect balloon (solidity 0.979, corner_rate 0.0). The side ear disc and neck ring barely break the outline, and the shell has no flat panel or hard seam.",
+   "fix": "Give the helmet a hard shell with distinct panels, a crisp raised visor frame and a narrow, sharp-edged neck ring. Make the side fittings stick out from the outline."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the player box is soft-cornered and pillowy, but the cable stays thin and the earbuds are correctly slim. B: the saucer is one blended lens that merges with the dome, with no hard rim step, and the lights only make small bumps on the edge. This call is weak because both forms are simple and smooth.",
+   "fix": "Draw the saucer with a thin, sharp outer rim, a stepped hull with clear flat bands, and a distinct collar where the dome sits."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the submarine has a chubby hull, but its periscope, propeller blades and tail fin stay clear separate parts. B: the rocket hull bulges and the heavy curved fins flow into the body with no joint, so the contour reads as one poured shape. The rear fin and flame also merge in the silhouette.",
+   "fix": "Make the rocket body a straighter, slimmer tube with a clear nose section. Attach thin flat fins with a visible joint, and separate the nozzle from the flame."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the dome is a squat, swollen mass and the connecting tube is short and fat with a thick ring. The base corners are soft, and the steps are the only thin part. B: the bar scene keeps slim stool posts, glass stems and ring gaps, with many separated shapes. Its silhouette is broken by the cropped mask, not by inflated forms.",
+   "fix": "Make the base a low flat-sided plinth with tight corners. Give the dome thin ribs and draw the tunnel longer and narrower with a slim collar ring."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the planet's ring is a thick, inflated band like a rubber sausage, with blunt rounded ends and only small gaps against the sphere. B: the sandals have flat slab soles and a tapered strap. The strap is still fairly thick, but the sole stays a flat plate.",
+   "fix": "Draw the ring as a thin, flat disc with a sharp outer edge and a wide clear gap between ring and planet."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "A: the rose arch has the busy leaf-and-bud contour and open arch of the matching reference card. B: the column keeps a flat slab abacus, straight shaft, separate plinth and thin sign post. Its forms are heavy but not inflated beyond the real cards. Neither card shows a clear form flaw.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the scarf has tapered tails and a clear knot and neck opening. B: the meteor is a soft lumpy potato with no sharp facets or fractures, and its bulges are smooth and even. The flame fingers are the only sharp part of the contour.",
+   "fix": "Draw the rock with hard angular facets, sharp broken edges and irregular chips along the outline, not smooth bumps."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the dish is a thick, smooth oval on a heavy cone. The fork arms are thickened and the feed sits on a fat cap, though the three struts stay thin. B: the sandcastle has crisp crenellations, straight tower sides and a thin spade handle and bucket rim (corner_rate 10.3 comes from those battlements).",
+   "fix": "Make the dish a thin shell with a sharp rim. Use slim, straight fork arms and draw the mount as flat steel plates with tight corners."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the fountain has stacked basins with clean rims and clear gaps under each tier. B: the bumper car is a rounded blob, but that suits the object, and the flat bumper skirt and thin pole stay true. There is no reason on form to pick either card.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the binoculars are short and chunky, but their barrels, bridge and eyecups stay separate with hard-edged steps. B: the tripod legs are fat rounded sausages with blob ends, oversized against the tube, and the yoke is a thick soft ring. The tube has smooth, barely stepped joints.",
+   "fix": "Draw thin, straight tripod legs that taper to narrow feet, a slim metal yoke, and telescope tube sections with sharp steps at each joint."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the taxi is chubby and shortened, yet its roof sign, mirrors, bumper and wheel arches read as a coherent car. B: the rover's body is a short rounded loaf with oversized wheels pressed together and little gap between them. The dish and solar panel sit on small stubs like toy add-ons.",
+   "fix": "Make the rover body longer and boxier with flat side panels and tight corners. Space the wheels apart on visible thin suspension arms and mount the dish on a slim mast."
+  }
+ ],
+ "pattern": "Generated cards inflate the object into one smooth poured mass. Flat panels swell, corners become wide soft radii, and thin parts such as fins, legs, rings and arms thicken into sausages or blend into the body without a joint. Real cards keep flat plates, tight bevels, thin structural parts and visible steps between parts, so their silhouettes stay more articulated."
+}

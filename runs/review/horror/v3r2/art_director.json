@@ -1,0 +1,109 @@
+{
+ "issues": [
+  {
+   "issue": "Some backdrops are duller or darker than the clean, bright fields on real cards. The mirror wall is a dusty mauve, and the gate card is the only low-key card in the set.",
+   "specialists": [
+    "color_palette",
+    "value_contrast",
+    "staging_detail"
+   ],
+   "instruction": "Paint the backdrop as one clean, bright, saturated color field. Night and dusk scenes stay light and colorful, with a pale lilac sky."
+  },
+  {
+   "issue": "The hero has no clear lit side, or its finish is airbrushed. The candy corn is soft all over with almost no sheen, and the armchair falls into one dark red with soft photographic shading. Real cards have crisp focus and a readable light-to-shadow turn.",
+   "specialists": [
+    "lighting_shading",
+    "surface_finish",
+    "edges_linework",
+    "value_contrast"
+   ],
+   "instruction": "Keep the hero in sharp focus with one soft key light from the upper left: a bright lit side, a clear sheen on top of each form, and the deepest shadow only in the creases."
+  },
+  {
+   "issue": "Shadows stay warm brown or orange, so whole cards lean warm with no cool relief. This shows on the rocking horse, the cabin and the moon.",
+   "specialists": [
+    "color_palette",
+    "lighting_shading"
+   ],
+   "instruction": "Tint shaded sides and cast shadows slightly cool, toward plum or blue-grey, and keep true blacks and greys neutral."
+  },
+  {
+   "issue": "Table and ledge edges bend into a soft arc, as with the mirror's stone slab and the candy corn's table, while real cards have one straight, level ground line. The arc comes with cracks and mottling on the mirror's slab.",
+   "specialists": [
+    "viewpoint_depth",
+    "staging_detail"
+   ],
+   "instruction": "Set the object on a smooth surface with one straight, level horizontal edge."
+  },
+  {
+   "issue": "Dark, even outlines and deep grooves read as drawn lines rather than painted form. This is clearest on the mirror scrolls and the iron gate.",
+   "specialists": [
+    "edges_linework",
+    "surface_finish"
+   ],
+   "instruction": "Show edges with light and shadow: thin and soft on lit sides, crisp only at the focal point."
+  },
+  {
+   "issue": "Over-resolved or noisy surface marks break the quiet finish of real cards: scratchy gold on the mirror, stippled crater floors on the moon, and ghost diamond marks on the candy corn.",
+   "specialists": [
+    "surface_finish",
+    "edges_linework"
+   ],
+   "instruction": "Keep each material smooth, with broad soft reflections and only a few small highlights."
+  }
+ ],
+ "style_text": "",
+ "cards": [
+  {
+   "pair": "p01",
+   "keep": true,
+   "note": "Candle could pass: clear light, clean cyan backdrop, believable wax."
+  },
+  {
+   "pair": "p02",
+   "keep": false,
+   "note": "Change the wall to a clean, saturated purple-pink with soft tone-on-tone diamonds. Make the ledge a smooth plain slab with one straight, level front edge. Paint the gold frame smoother, with broad soft reflections and slightly lighter grooves."
+  },
+  {
+   "pair": "p04",
+   "keep": false,
+   "note": "Slightly cool the moon's shadow side to a soft blue-grey in place of orange. Make the crater floors smooth, with gentle tonal shading."
+  },
+  {
+   "pair": "p05",
+   "keep": false,
+   "note": "Let the right side of the cabin fall into a slightly cooler, darker shade, with the logs brightest at the upper left. Slightly lighten the dark gaps between the logs. Make the sky a clean blue in the upper left corner."
+  },
+  {
+   "pair": "p06",
+   "keep": false,
+   "note": "Raise the whole card to a bright, pale lilac dusk sky with lighter hills. Paint the iron a dark slate grey with a soft sheen along each bar. Let the warm lantern light spread softly across the pillar faces."
+  },
+  {
+   "pair": "p07",
+   "keep": false,
+   "note": "Lift the red slightly to a brighter mid crimson. Light the chair from the upper left, with a soft bright sheen on the left wing, the arm rolls and the seat top. Keep the deepest dark only under the seat and between the tufts."
+  },
+  {
+   "pair": "p09",
+   "keep": true,
+   "note": "Lantern could pass: crisp, clean glass and metal on a calm ring field. Its dark-on-bright contrast matches the real calculator and binoculars."
+  },
+  {
+   "pair": "p10",
+   "keep": false,
+   "note": "Bring the candy into sharp focus with crisp, clean boundaries between the color bands. Give it a smooth waxy surface with one soft sheen along the side, and clear the small diamond marks away. Make the back edge of the table a straight, level line."
+  },
+  {
+   "pair": "p11",
+   "keep": false,
+   "note": "Paint the mane and tail a true cool charcoal black. Tint the floor shadows a cool plum, and make the floor a slightly paler natural wood."
+  },
+  {
+   "pair": "p12",
+   "keep": true,
+   "note": "Spider could pass: clean wave field, quiet surface, instant read. Its dark slate body on a bright field matches the real calculator's contrast."
+  }
+ ],
+ "summary": "Yes, this is close. Most generated cards pass at a glance, and three (candle, lantern, spider) need no edit. The other seven need small changes only. The candy corn and gate stand out most, followed by the armchair and mirror, and the moon, cabin and rocking horse need only light touches.\n\nThree specialist conclusions are overruled because the real cards contradict them:\n- **Crowded staging:** the pool bar, bird feeder and fruit plate are all real and busy, and the binoculars' full-frame floor is real too. Crowding and full-bleed planks are not tells.\n- **Value and shading limits:** the real calculator, binoculars and drink break the stated contrast limits, and the binoculars break the shading limit too. Those numbers alone cannot justify changes to the lantern or spider.\n- **Loud color:** the pool bar and fan are real, so high hue count and strong saturation are not faults.\n\nBoth control pairs drew confident false alarms, including a confidence-4 call on the real map, so a high-confidence call alone does not settle a pair. Only calls I could see on the generated cards went into the notes. Shape and composition fixes are left out as instructed, and framing fixes are outside the allowed note types."
+}

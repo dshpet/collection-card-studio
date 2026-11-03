@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the towel's folds are soft, blurred dark smears across the middle, with no clear lit side or shadow side and no cast shadow under it. Its shading_range of 0.494 is just under the real floor and form_contrast of 0.33 is at the bottom of the range. B: the calculator has a bright top plane, a darker lower side wall, crisp bevels on every key and a soft shadow offset to the right, which matches how the real cards turn planes.",
+   "fix": "Light the towel from the upper left: raised folds catch a clear light edge, the far side of each fold falls into a deeper shadow, and a soft dark shadow sits under the lower right edge."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the candelabra's gold is evenly lit with long, soft sheen down the stem and arms. The flames have a halo but put no local light on the arms or cups, and the stem has little dark core. A: the brass bowl has a sharper dark core with tight highlight bands and the flame warms the glass from inside. Its light_bias_strength of 0.745 is only slightly over the real top, and the lighthouse in p06 shows real cards can exceed that field.",
+   "fix": "Let each candle flame throw warm light onto its own cup and arm, keep a dark band down the shadow side of the stem, and tighten the gold highlights into thin bright streaks."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the duck's body wraps smoothly with small plastic hot spots. Its shadow is a separate pale patch far back on the sand, with weak contact under the blue base. A: the pumpkin has a dark lower right side and ribs that step from light to shadow, and a dark cast shadow touches its base and runs right. The measured fields are almost equal, so this rests on the shadow and contact reading alone.",
+   "fix": "Put a dark soft contact shadow directly under the blue base and connect the duck's cast shadow to it, and darken the duck's lower back so the body has a clear shadow side."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the cat's fur is lit almost evenly from the front, darkening only near the outline like soft clay, and then a hard dark floor shadow appears that the body shading does not support. A: the fountain's bowls have soft top light with shadowed undersides and a warm side shadow, though it has little cast shadow on the paving. Lens numbers do not separate them.",
+   "fix": "Light the cat from the upper left: the left of the head and chest catches light, the right side of the body and tail base sink into a clear shadow side that lines up with the floor shadow."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the witch hat turns in one long soft airbrushed gradient with no crisp plane change, and the brim underside is a dark mass with no bounce. A: the cap's board has a broad pale sheen on a flat top, a crisp bevel and a sharply darker side and skull cap, close to the plane-based light on real cards. A's shading_range of 0.847 is slightly over the real top, but its form reading is the stronger of the two.",
+   "fix": "Give the hat clear planes: a light side on the upper left of the cone, a defined core shadow where it turns right, a crisp pale edge on the brim, and some reflected light under the brim."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the lighthouse shown as REAL in the lessons, despite its light_bias_strength of 0.93: the tower's left side falls into a deep cool shadow and the bricks turn from warm light to blue-grey shade. B: the house is evenly lit from the front, the walls keep similar value on both sides, and shadow appears only as dark outlines under the eaves. The windows glow without lighting the surrounding wall.",
+   "fix": "Light the house from one side: one wall bright and warm, the opposite wall in a deep cool shadow, with broad shadows from the eaves falling across the walls."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the gloves have a gentle, milky turn with soft sheen, no firm core shadow, a low form_contrast of 0.461 and only a faint contact shadow. A: the cauldron has a broad highlight at upper left, a dark core low on the belly, orange underlight from the fire and a firm cast shadow to the right, a clearer stack of light roles.",
+   "fix": "Add a dark core shadow along the lower right of each glove, a tighter highlight on the top curve, and a darker contact shadow where the gloves touch the wood."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the lion and plinth are soft top-lit marble with stepped light on the plinth faces and little cast shadow. B: the bag has gentle studio light, a soft shadow to the right and low contrast on the cloth. Both form_contrast values, 0.331 and 0.319, sit below the real floor, and neither card shows a lighting fault the other lacks.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the scarf's red folds shade softly and blotchily, with only the inner neck going dark and no clear light direction across the tails. Its form_contrast of 0.256 is below the real floor. B: the broom's bristles each have a lit upper edge and a dark underside, and the handle has a clean highlight stripe with a dark side. Its light_bias_strength of 0.989 is high, but the shading reads as organized.",
+   "fix": "Light the scarf from the upper left: each fold gets a lit ridge and a deep shadow on its lower right, and the two tails cast a soft shadow onto each other under the badge."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the coffin has a flat, evenly lit lid, a darker side and a hard shadow falling right. B: the chess table has flat tops, dark sides and hard shadows falling left. Both use the same flat planes with crisp shadows, and each is internally consistent. B's light_bias_strength of 0.971 is high, but p06 shows real cards can exceed that field.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the crystal ball hardly turns as a sphere, with even misty interior, a thin bright rim and one crescent highlight. The dark shadow under the stand is separate from that even ball. Its form_contrast of 0.355 and light_bias_strength of 0.115 are both below the real floors. B: the drink is also below the floor on shading_range and form_contrast, but the ice cubes have lit and shaded faces and the glass base throws a coloured glow onto the table.",
+   "fix": "Make the ball darker toward its lower right edge with a bright reversed glow inside the opposite side, and let it throw a soft blue tint into the shadow on the wood."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the shoes are evenly lit across both pairs of sides, with little left-right change and light_bias_strength of 0.019, far under the real floor, yet they have a hard dark shadow on the left. B: the gravestone has a lit front and a dark left side with a firm turn, similar to the real monitor's side plane, and its cast shadow matches, with light_bias_strength of 0.576 in range.",
+   "fix": "Light the shoes from the right so the left inner side panels fall into shadow, matching the cast shadow on the left, and darken the gap between the two shoes."
+  }
+ ],
+ "pattern": "The most consistent tell in the lessons is frontal, evenly wrapped light. The form darkens only near its outline, like soft clay, and has no committed shadow plane. Real cards put a whole side into deep, cool shadow, as on the monitor, the camera body and the lighthouse tower. They also keep crisp plane changes and contact shadows that belong to the form. On generated cards, hard floor shadows often don't match the even body shading, and glowing light sources often don't light the surfaces next to them. The test pairs were much closer than the lessons, and most calls are low confidence. Out-of-range numbers are weak evidence, because the known-real lighthouse exceeds the light_bias_strength range."
+}

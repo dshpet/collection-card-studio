@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the pumpkin body is one mid-grey mass, with black in the mouth and eyes and a dark cast shadow; streaky wood fragments the lower band. B: the ball has broad panel masses and soft transitions, and its white panels merge into the light sand at top right. Every field on both cards is inside the real range, and each card has a broad, readable grouping, so value gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the card is very bright (0.79, above real) and the hero is much darker than the background (gap -0.287, below real). The neon cyan field sits against hard bands of near-black leather and white-hot brass rims on the telescope. A: the gate is fragmented by small darks in the brick and ironwork but stays in range, with mid sky, dark pillars and light paving. The gate's busy scatter counts against it, so the call is weak.",
+   "fix": "Lower the cyan background to a calmer mid blue with darker corners. Shade the brass and leather softly, without white rims next to near-black bands."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the door card is a low-key dark mass (0.552, just under real). Random light streaks mottle the door panels, the frame breaks into scattered leaf darks, and one lone white patch sits at lower right. A: the castle has clear groups of light sky, mid stone and a single black band under the roofs, with a soft transition across the ground.",
+   "fix": "Paint the door as one smooth mid-value blue with soft shading and no streaks. Keep the leaves in one calm mid value, with the lightest light on the wreath."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the trunk and branches drop to an almost solid black shape on light sky (gap -0.316, well below real). The darkest accent takes far more area than on real cards. B: the topiary is busy, with a dark gap around every leaf and a blown white strip above the hedge, but it stays much closer to the real gap (-0.189). Both cards have flaws, and A's is the larger measured one.",
+   "fix": "Lift the trunk to a middle brown with soft light down one side, and keep pure dark only inside the hollow and at the root creases."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the chest sits in a flat mid-dark range overall (rms 0.116, just under real). Inside the hero, thin hard white scratches on the planks and rims fight black seams. B: the tray has broad soft mid masses on a high-key field with a calm glow behind the ice, and only the frost grit is speckled.",
+   "fix": "Shade the wood planks in broad soft steps without thin white scratches, and lighten the seams from black to dark brown."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the seahorse shares the grey levels of its background (gap 0.016), so it separates by hue only, and its tail sinks into the dark lower corner. The vignette (0.106) is above the real range. A: the bag is one bright mass on dark purple with a clear value separation, inside the real range but at its top edge.",
+   "fix": "Reduce the dark corners and keep the background a steady light-to-mid blue, so the seahorse's tail stays lighter than what is behind it."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the bat is near solid black on a bright yellow field with white rings around it. Its gap (-0.427) and rms (0.184) are both well beyond real, so hero separation is extreme. A: the wristband is the opposite, nearly merged with the blue rings at very low contrast (rms 0.068), but it is a small miss and its grouping is gentle and broad.",
+   "fix": "Make the bat's body a lighter mid purple with soft broad shading, keep near-black only in the mouth and wing creases, and calm the rings behind it."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the flask is low key (0.573) with a gap (0.168) beyond real. Inside the hero, hard thin white rim lines cut against a black band in the liquid. A: the bottle has gentle mid shading like the real cards, but its background has clipped white spiky rays, which pushes the mean up to 0.815. Both cards miss, so the call is weak.",
+   "fix": "Soften the flask's rim highlights, lift the dark band in the liquid to a mid green, and raise the purple background slightly."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the hearse is a solid black shape with hard white chrome and trim lines, the sky has white clouds, and the road is mid grey. Rms 0.212 and gap -0.266 are both beyond real. Local contrast inside the hero is very hard. B: the boat sits in calm mid and light groups with soft steps, and its darks stay near the hull waterline, within range.",
+   "fix": "Paint the car body in a mid navy with broad soft reflections, not black. Keep chrome highlights small, and let the shadow under the car be the only dark area."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the card is close to clipped, with a pale yellow field (mean 0.868, far above real), a white glow pressed around the whistle, and a black slot as the sole deep accent. B: the web is white on one flat mid-grey field, slightly too flat (rms 0.079) with no vignette, but the miss is much smaller and it has no clipped area.",
+   "fix": "Darken the background to a richer mid yellow with slightly deeper corners, and remove the white halo behind the whistle."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the floor is clipped almost white, meeting a flat background at a hard horizon line. The shoes carry hard dark mesh against blown white soles, and the mean (0.762) and vignette (-0.009) sit just past real. A: the skull has clear broad groups, with a soft bright dome, black sockets and a mid stone ledge, all in range.",
+   "fix": "Lower the floor to a warm mid yellow with a soft falloff into the background, and shade the soles gently without blown white."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the wooden table breaks into horizontal streaks across several grey levels over the whole card, with no darkening at the corners (vignette -0.019). The cover is a mid value with hard white sticker outlines. B: the dark cover reads as one clean mass, with light metal corners and a table held to two levels.",
+   "fix": "Paint the table as one calm light-to-mid wood tone with faint grain, and darken the corners slightly so the book sits in a quieter field."
+  }
+ ],
+ "pattern": "Generated cards give themselves away by pushing value to extremes: heroes dropped to near-solid black, hard white rims or trim beside black inside the hero, backgrounds pushed to clipped near-white or neon brightness, and streaky, mottled secondary surfaces that scatter small darks and lights. Real cards hold broader masses, softer transitions and smaller, more sparing black accents. Most calls on this sheet are weak, because several real-looking cards also sit at the edges of the range."
+}

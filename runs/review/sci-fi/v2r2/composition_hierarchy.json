@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the robot arm is thin. Its base sits lower left, the claw reaches right, and the grey floor and the green upper right stay empty, so only 0.252 of the card is filled. It reads as a small object staged in a set. B: the binoculars run corner to corner, fill the card (0.324) and sit 0.04 from the edges, with the planks simply supporting them. The mass and closeness of B match the real camera and glove.",
+   "fix": "Move in closer on the robot arm so its base and claw fill the card. Tilt it across the card, let the base run off the bottom edge, and leave no bare floor at lower right."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the ring box is angled, with its lid leaning upper right and its base lower left, which gives an off-axis mass like the real glove. The gold medal is a clear focal point. B: the jetpack faces straight on, perfectly centered and mirror-balanced under the twin flames, on a centered purple ray burst, like the generated glove staged dead center. The measurements alone do not separate the two; this rests on placement.",
+   "fix": "Turn the jetpack three-quarters and tilt it off the vertical, so one tank comes forward and the straps sit asymmetrically. Move the ray center off the middle of the card."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the plane is big and diagonal, with its wing cut off by the right edge (margin 0.0). The crop is confident, and clouds wrap the hero. B: the satellite floats whole in the center, panels spread nearly the full width (0.953, above the real 0.896) yet only 0.254 of the area. The body is small, there are wide empty gaps above and below, and the hero reads as a spread diagram.",
+   "fix": "Bring the satellite much closer and turn it at a steep angle, so the near solar panel runs off the card edge and the gold body takes up most of the card."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the bar is a tight scene crop, with the thatch cut by the top edge and the counter cut by the right. Fruit, drinks and stools share attention, so there is no single hero, but that cropped-in-a-place framing matches real cards such as the bike rack and bumper car. B: the keyboard floats whole in the middle with even margins. Scattered notes and stars around it add small competing bright marks at thumbnail size, a backdrop treatment unlike the real rays and stripes.",
+   "fix": "Remove the scattered notes and stars and use simple broad rays behind the keyboard. Enlarge it so one end nearly touches the card edge."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the backboard is large and tilted, leaning to the right, and the pole is cut by the bottom edge (margin 0.0). It reads at once as a hoop. B: the atom sits dead center on centered rings, with a compact blue ball and thin orbit lines. Solid coverage is only 0.197, just under the real low end, and the wires thin out to almost nothing at thumbnail size.",
+   "fix": "Make the blue sphere and orbit rings much thicker and larger so they nearly reach the card edges. Tilt the whole atom and shift it off the center of the ring pattern."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the tape machine is a tall flat slab facing almost straight on, wider gap at both sides (width 0.605, under real 0.661) and heavy in area (0.477, over real 0.475). A large blank cream panel fills the lower half, drawing the eye to nothing. B: this is the same computer framing as the REAL lesson card, with the unit and keyboard at the same positions, so it is the reference for real here.",
+   "fix": "Turn the tape machine three-quarters, and make it wider and lower. Fill the blank lower front with a control deck, and set a small accessory beside it so the group spreads across the desk."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the hover car is a wide, shallow shape (height 0.537, under real 0.581) floating mid-card, with empty wave pattern above and below, and its tail fins float off to the right. B: the red scarf fills the card's height (0.833) with a gold badge at the center as a clear focal point, and it is bold at thumbnail size. Only A falls outside the real measurements.",
+   "fix": "Bring the hover car closer and raise the camera so the glass dome and body take up more card height. Let the nose or fins nearly touch the card edge."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the telephone is whole, near center, on a tiled floor, with the handset as the clear top shape and the card fairly open around it. B: the pink ice tray is wide (0.921) on a wooden table, with the top cube as the peak of the mass. Both are full objects seated on a simple ground, read at once, and fall within the real range, so nothing separates them on framing.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the stone game table sits inside a park, with grass, trees and a path adding detail, but it is wide (0.9), and cropped trees in the corners frame it like the real fountain scene. B: the wristband is centered on centered rings with margin 0.116, above the real 0.085. The hollow oval leaves blue showing through, so the mass is thin (0.25), and at thumbnail size it reads only as a pink ring until the icons are recognized.",
+   "fix": "Enlarge the wristband so its curve almost touches the card edges and shift it off the ring center. Bring the near side forward so the music symbols are large and read first."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the neon sign is off to the right with the motel cut by the left edge. The lit building competes somewhat, but the sign stays brightest, and the cropping feels like a slice of a place. B: the dome is whole, centered and symmetrical on a grass strip, top to bottom (0.883), with mirrored clouds. This is the same stiff staging as the generated lighthouses, whereas the real lighthouse is cropped and off-balance.",
+   "fix": "Move in on the dome and cut off its base with the bottom edge. Turn the building slightly so the door sits off-center, and keep clouds on one side only."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the glass pod stands alone as a narrow upright column in the middle (width 0.451, under real 0.524), with wide teal space on both sides, and the neon wall pipe at upper left pulls some attention. B: the dock runs out of the card at the right and two posts share the focus, but the buoy and ropes fill the card (0.879 wide, 0.371 area) and it reads as a cropped real-card scene.",
+   "fix": "Widen and shorten the pod, turn it slightly, and bring it closer so it fills the card's width. Add a large machine arm or cable beside it, and dim the neon wall line."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the two sneakers form a wide low group (height 0.487, under real 0.551) with a big empty orange band above, weak but a heavy colored mass at thumbnail size. B: the flask sits centered on a plain shelf, narrow and small (width 0.479, area 0.204, both under real), leaving empty orange on both sides, and the thin clear neck fades at small size. B is further from the real numbers, though both look under-scaled.",
+   "fix": "Make the flask much larger and rounder so the green liquid fills most of the card width, tilt it slightly, and crop the shelf out of the bottom third."
+  }
+ ],
+ "pattern": "Generated cards stage a whole, complete object in the middle of the card: centered, upright or mirror-balanced, with even gaps on all sides and a backdrop centered behind it. Real cards crop, tilt and sit off-axis. They let forms run off the edge and fill the card with solid mass. Thin or narrow generated heroes (atom wires, pod column, flask, satellite panels) also fall outside the real width or area range and thin out at thumbnail size."
+}

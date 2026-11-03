@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: sneakers in a 3/4 view from above, on a level floor with a straight horizon line, and both shoes share one angle. B: candle from a slightly raised camera, with similar openness on the top ellipse and saucer ellipse, standing on a straight table with a level front edge. Both have one consistent ground plane and mild perspective.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the mirror stands on a stone top whose front edge bends as a wide arc across the bottom of the card. The normals show the same arc, and it matches the round tables on the generated computer lessons. The frame shows a thick left side while its face reads almost flat-on. Planar share of 0.59 is just above the real range. A: the glass sits on a straight, level surface, with rim and base ellipses that agree.",
+   "fix": "Stand the mirror on a straight, level shelf with one horizontal front edge, and show the frame from one gentle angle."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the calculator lies tilted in a mild view, with only right and bottom thickness showing, on a flat backdrop. B: the feeder is in a mild view with the left wall and inner right wall agreeing, and roof, tray and pavement read as one view. The park behind is simpler but not blurred. Neither shows forced perspective or mixed views.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: moon craters flatten correctly toward the edge of the sphere, on a plain backdrop. B: the bugle turns its bell toward the camera, with the tube tapering back and a smooth roll of the normals. Each holds one view with no ground plane to test.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the cabin has mild two-point convergence and a level ground, with simplified trees behind. The chimney cap top shows although the horizon sits low, but this is slight. B: the bar is seen from a high camera, and stool tops, counter and pool all open by a matching amount. It is tightly cropped, as the real lighthouse is. Neither view clearly breaks.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the same pool bar scene holds one high camera, with stool ellipses opening steadily toward the front. B: the gate is dead frontal with no side faces on the pillars and a level ground, with a low-detail graveyard layer behind. The gate is stiff but matches real frontal cards such as the ship wheel and arch.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the locker mixes views. The left vented panel reads as a side turned away, as blue as the open door in the normals, yet the interior is seen almost straight on. The ceiling underside shows inside while the camera looks down on the feet and floor. The baseboard climbs steeply to the right. B: the armchair holds one low, mild view, with level baseboard and floor and all four legs agreeing.",
+   "fix": "Draw the locker from one gentle front-three-quarter camera at chest height, with the baseboard nearly level and the inside, side panel and door all turned the same way."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the map sheet outlines narrow noticeably toward the top, as if tipped back in strong perspective, yet their faces match the background in the normals, so the surface reads flat. Planar share of 0.741 is above the real top of 0.679. A: the lamp has rim and base ellipses that all open from the same slightly raised camera, with a smooth roll of form.",
+   "fix": "Show the map sheets lying at one gentle tilt with almost parallel side edges, and a visible soft bend in the paper so the surface does not read as a flat cutout."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the lantern tips to show a large underside slab with a bowed bottom edge, while its posts barely converge, so a from-below view is drawn without matching perspective. B: the neck pillow is swollen but holds a single tilted view, with a soft continuous form and no conflicting faces.",
+   "fix": "Show the lantern upright or gently tilted from slightly above eye level, with a straight-edged base and only a thin hint of the bottom."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the table's far edge bends as a soft arc behind the candy, clear in the normals, and matches the round table in the generated computer lessons. The hero is blown up close to the camera with a swollen base. B: the plate sits on a tabletop filling the card, with one high camera, and the plate ellipse agrees with the plank directions.",
+   "fix": "Set the candy on a straight table with a level back edge, at a smaller size, from a slightly raised camera."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the floor fills the card with no horizon, and the planks fan hard toward the top in a wide-angle spread, yet the two barrels show almost no size change, so object and floor use different lenses. B: the rocking horse has a low, mild view with a level floor line, and the rockers sit on the planks at the same angle.",
+   "fix": "Lay the binoculars on a floor with near-parallel planks and a mild camera, or show a level back edge, so floor and barrels share one perspective."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the spider is seen from a raised front view, with body, head and all legs agreeing, on a flat backdrop. B: the fan is near flat-on with thin edge thickness and crisp even pleat patches. Each holds one view with no ground to test.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards still show themselves through space, not object design: ground planes that bend as a soft arc (round table edges) instead of one straight level line; a higher or closer camera that enlarges the hero and shows more top face; object and ground drawn with different lenses (fanned floor planks behind unconverging objects); and box-like forms whose parts do not share one view (locker side and interior disagree, flat map faces inside perspective outlines). Real cards keep mild perspective and one straight, level ground. Many pairs give no spatial signal when the object floats on a flat backdrop."
+}

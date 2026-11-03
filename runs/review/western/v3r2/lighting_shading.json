@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the submarine hull has one broad soft sheen at upper left that turns slowly to a cool grey-lavender shadow at lower right, as on the real glove. B: the feeder is lit nearly head-on. Its side and front walls sit at similar values, the only real dark is the cast shadow under the roof, and the shading lens stays warm brown with no cool shadow side.",
+   "fix": "Light the feeder from the upper left: left wall bright, right-facing planks clearly darker with a cool blue-grey tint, and a soft shadow where the feeder sits against the trunk."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the horse is evenly lit with a soft top-down wash and a low, gentle belly darkening. The lens stays warm brown throughout, with little cool shadow, and the ground shadow is a soft smear. B: the guitar body reads neutral grey with a clear edge turn and a tight contact shadow on the stage, though it barely responds to the coloured spots.",
+   "fix": "Keep one clear sun at upper left, let the far side of the neck, belly and hindquarters fall into a deeper cooler shadow, and give each hoof a small dark contact shadow."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the book has a crisp, dark cast shadow running along its left side and a bright sheen on the cover, so the light direction is clear. B: the bale's top and front stay close in value and the form turn is weak (form_contrast 0.387, below the real band). Shading breaks into strand-level noise instead of a clear lit plane and shadow plane, and the lens stays warm.",
+   "fix": "Make the bale's top a bright lit plane and its front face one clearly darker plane, with a darker cool core at the lower corner, while the straws stay small inside those big light and dark shapes."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the brass lamp has tight bright streaks on the bowl and a blurred flame glow in the chimney. B: the pan has broad soft white sheens on the steel, and the nuggets have soft contact shadows. Both models read within what real metal cards do. A's light_bias (0.745) sits just over the real band, but that is too little to choose on, and neither card breaks the lighting logic.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the glass gives a flat pale lens with little core shadow and the lowest shading range of the pair (0.588, below the real band). Its soft shadow and pink glow pool at the left of the base. B: the jug has a confident smooth turn from a soft shoulder sheen into a deep lower-right shadow side, plus a dark contact line and a soft cast shadow to the right.",
+   "fix": "Give the glass a clear light side and dark side: a bright soft streak down one edge, the opposite edge of the drink noticeably deeper, and a small dark contact shadow right under the base."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the towel's folds are blurred dark diagonal smears with no clear lit crest, the lens stays yellow, and shading_range 0.494 falls below the real band. B: the bandana has neat fold modeling in cool grey, with lit ridges, a dark inner opening and clear turns at the knots, close to how the real glove reads.",
+   "fix": "Draw the towel folds as soft ridges with a bright lit crest on the light side and a defined darker valley behind each one, and add a soft shadow beneath the lifted edges."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cactus is lit from the left with a hard dark band down its right side, yet its long cast shadow also falls to the left on the sand, so form shadow and cast shadow disagree. The lens stays yellow-brown. B: the slide's tube turns from a bright top to a cool blue under-side, and shadows fall consistently under the deck and curve.",
+   "fix": "Cast the cactus shadow to the right, away from the lit left side, and put a small dark contact shadow at the base. Soften the right-side dark into a smoother cool shadow."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the stagecoach is evenly front-lit, with door panels and body at nearly one value. The lens is warm tan throughout and the cast shadow underneath is broad and soft, the pattern of the generated lessons. B: the coaster cars have cool grey shadows, deep seat wells and a glossy turn on the noses, though its light bias (0.131) is below the real band and its range slightly above, so this is a weak call.",
+   "fix": "Light the coach from the upper left so one side panel falls into a cool, clearly darker shadow, deepen the shadow under the roof overhang, and make contact shadows dark under the wheels."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the barrel darkens almost equally at both sides, so the wrap is symmetric with a flat, even centre and no off-centre core shadow. form_contrast 0.408 sits just below the real band, and only the cast shadow at right shows a direction. B: the cart has a clear soft turn on the awning scallops, shadow under the canopy and a wider shading range (0.859).",
+   "fix": "Move the barrel's brightest strip to the left third and let the staves roll into a real dark core on the right, with a cool shadow under the top rim and upper band."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the hat has a dark underside of the brim, a deep crown dent and a bright rim along the brim edge, with a wide range (0.784). B: the flip-flops are lit flat and evenly, with a pale beige lens, a shallow turn on the straps, almost no shadow from straps onto soles and only a faint edge shadow (range 0.553).",
+   "fix": "Light the sandals from one side: drop a clear darker shadow from each strap onto the sole, deepen the sole's side wall into a cool dark band, and add a soft shadow under the sandals."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the vending machine has a bright front and a clearly darker left side in cool lavender, with a soft grounded shadow, the real cards' pattern. B: the lantern has a white-hot pool of light on the table around the base and a warm brown lens. Its shading range (0.843) is above the real band, and the metal arms stay broadly pale rather than responding to the flame inside.",
+   "fix": "Reduce the bright pool at the lantern's base to a gentle warm glow, let the metal arms fall darker on the side away from the flame, and put a small dark contact shadow under the base."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the sleeping bag has a bright halo along its top edge against the background and dark ground around the bottom. Light bias (1.19) is far beyond the real band, and the lens stays blue, with soft puffy highlights repeated on every segment. B: the claw machine has cool planar shading, a clear side plane, an interior practical light and a grounded contact shadow (form_contrast 0.601).",
+   "fix": "Remove the glow behind the bag. Light it from the upper left, with a soft sheen on the top of each puffy roll, a cool darker lower half and a dark contact shadow on the grass."
+  }
+ ],
+ "pattern": "Generated cards still light the hero too evenly from the front. Both sides of a form often darken alike, or the light side and shadow side stay too close in value, so there is no committed core shadow. Real cards pick a side, with a clear off-centre light and a deep, cool shadow plane, while generated shadow lenses stay warm and carry the object's colour. Tells that recur: blurred fold or strand shading in place of clear lit planes, glow halos and light pools standing in for real direction, cast shadows that disagree with the form shadow, and weak contact shadows."
+}

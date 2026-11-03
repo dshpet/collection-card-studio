@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the robot arm is shown almost side-on from a low camera. The elbow and shoulder caps are near-perfect face-on circles, while the base shows a shallow ellipse. It stands on a flat grey floor with a dead-level horizon across the middle and only two depth layers, so nothing recedes. B: the binoculars are seen from above and turned, the near barrel clearly larger than the far one. The floor planks converge in step with the barrels, so hero and ground share one strong view.",
+   "fix": "Turn the arm three-quarters to the camera so the near joint overlaps the far one and the upper arm shortens as it recedes. Raise the camera a little so the base and joint caps show matching ellipses, and let floor lines run toward the same vanishing point as the base."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the ring box is seen from above at a clean three-quarter turn. The top of the base, the lid interior and the coin all agree on one camera, and the lid overlaps the depth behind it. B: the jetpack is nearly face-on and only rolled in the frame. The tanks show their bottom caps as if seen from below, while the backpack and straps sit flat behind them with no readable top or side. The normals are smooth rainbow cylinders with no flat faces setting the view.",
+   "fix": "Draw the jetpack turned three-quarters, seen slightly from above, so the tank shoulders show on top. Show the side thickness of the back plate, and make the tank ends, strap loops and nozzles all follow that same tilt."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the plane is strongly foreshortened along the fuselage, the nose near and the tail small. Wings and engines overlap in order, and clouds step back in several layers. B: the satellite body shows its underside as if seen from below, the dish is tipped toward the viewer as if seen from above, and each solar panel sits at its own angle. Parts do not share one view. The diamond backdrop is flat, so there is no depth behind the hero.",
+   "fix": "Show the whole satellite from one camera slightly below it. Make the two solar panels parallel, with the far panel smaller and overlapped by the body, and turn the dish so its ellipse agrees with that same camera."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "A: the pool bar is a high-camera scene. The counter ellipse, the stool tops and the rings in the water all open by the same amount, and foreground stools step back to the thatch roof. B: the keyboard is seen from above with a clear three-quarter turn. Its top, its side edge and the X-stand all agree, and its feet land on one implied plane. Neither card breaks its own view.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the hoop is seen from below with strong but coherent convergence. The board edges narrow to the right, the rim is a thin ellipse from underneath, the pole crops off the card, and all parts share that view. B: the atom has a frontal sphere with a flat-on radial background, and three orbit rings sit at unrelated tilts. There is no ground and no receding direction, so the card has no real camera, only a diagram-like arrangement. A's flat-share of 0.699 comes from the big flat board.",
+   "fix": "Tilt the whole atom as one object seen from slightly above. Make the rings thicker and thinner as they pass near and far, with the near ring segments and electrons larger and the far ones smaller, clearly passing behind the sphere."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the tape cabinet's front is nearly flat to the camera, yet its side wall shows at a hard angle and the top edge slopes while the bottom edge stays almost level. The top face barely appears, and the table edge runs dead horizontal, not following the cabinet's turn. B: the computer shows matching tops on the monitor base, case and keyboard, all receding at one rate. The table has a front edge and drawers below, giving extra depth layers.",
+   "fix": "Turn the cabinet the same way as its side wall and raise the camera so a band of the top face shows. Make top and bottom edges converge gently toward the same point, and angle the table edge and tabletop to match, with a little foreground below it."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the hover car's seats and dashboard are seen from above through the dome, but the thruster discs open as ellipses seen from underneath. The body is a soft swollen rainbow in the normals with no flat face to fix its turn, and it floats with no ground. B: the scarf is a simple frontal view with folds overlapping logically around the neck loop, a soft form that needs no strict camera.",
+   "fix": "Pick one camera slightly above the car. Show the top of the hood and doors as flatter planes, make the thrusters thin ellipses just peeking below the body, and add a soft shadow on a surface beneath it to fix the height."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "A: the phone sits on a tiled floor seen from above, the base and tile lines receding together. B: the ice tray is seen from above at a three-quarter turn, the tray rim, the cups and the plank lines agreeing. Both have one ground plane at one angle with the hero planted on it, and flat shares are almost equal.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "A: the stone game table is seen from a high three-quarter camera. The tabletop, plinth and stools share one tilt, and the scene steps back through grass, path and trees that get simpler with distance. B: the bracelet is a single tilted ring whose near band is larger and whose far inner wall shows correctly, a coherent ellipse with no conflict. Neither shows a viewpoint fault.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the motel sign is seen from below and turned, its boards converging. The building recedes hard on the left, and depth runs through foreground posts, the fence, the tree and the hills. B: the dome is dead-centre and frontal, with the door, window and spire stacked on the mirror line. No side is turned to the camera, and the whole building is on show from a low eye level, with little depth between hero and backdrop.",
+   "fix": "Turn the dome so the door sits off-centre and the near wall curves away to one side. Bring the camera closer and let the base or the top crop against the card edge, and add a foreground element overlapping the base with hills well behind."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the glass pod is an upright frontal cylinder. The base shows an open ellipse from above, but the cap and tube read as almost straight-on, so the tilt changes up its height. The wall behind is a flat panel, parallel to the card, with a level floor line. B: the dock is seen from high at an angle. Planks recede diagonally, posts, rope and ring all share that tilt, and the shoreline adds a far layer.",
+   "fix": "Keep one camera height: show a thin ellipse on the tube's top rim and glass that matches the base ellipse. Turn the room slightly so floor tiles and wall panels recede diagonally behind the pod, not flat across the card."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the sneakers are turned three-quarter from above, the near shoe overlapping the far one and clearly larger, with soles sitting on a flat floor. B: the flask is a dead-frontal silhouette with no turn. The shelf shows a broad top surface, implying a raised camera, while the flask's foot and liquid line show almost no ellipse. Hero and ground therefore disagree on height, with only a level band of shelf behind.",
+   "fix": "Raise the camera to match the shelf so the flask's foot, liquid surface and neck rim show clear ellipses, or lower the shelf to a thin strip. Angle the shelf edge slightly off horizontal so it recedes."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away by weak or conflicting cameras. Heroes sit frontal or merely rolled in frame instead of truly turned, with little receding foreshortening. Parts disagree on the view, such as undersides shown beside tops seen from above, or base ellipses that do not match the top rims. Ground and backdrop are level bands that ignore the hero's turn, with few depth layers between them. Normals show soft swollen rainbows with too few flat faces to fix the angle. Real cards commit to one view, overlap near over far, and let the ground recede with the object, often cropping into the card."
+}

@@ -134,7 +134,7 @@ def pick_references(card, cards, used, rng):
 
 
 def card_brief(card, fixes=()):
-    backdrop = PATTERNS[card["pattern"]]
+    backdrop = PATTERNS[card["pattern"]].format(topic=card.get("topic", "simple"))
     lines = [STYLE, f"Subject: {card['subject']}", f"Hero colors: {card['hero_colors']}.",
              f"Staging: {CATEGORY_RULES[card['category']]}",
              f"Backdrop: {backdrop} in {card['backdrop_colors']}."]
@@ -151,7 +151,7 @@ def make_briefs(plan, cards, seed):
     for variant, entry in enumerate(plan["variants"], 1):
         for index, card in enumerate(entry["cards"], 1):
             picks = pick_references(card, cards, used, rng)
-            briefs.append({"id": f"v{variant}_{index:02d}", "variant": variant, "card": card,
+            briefs.append({"id": f"v{variant}_{index:02d}", "variant": variant, "card": {**card, "topic": plan["title"]},
                            "references": [c["id"] for c in picks]})
     return briefs
 
