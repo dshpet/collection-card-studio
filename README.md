@@ -16,6 +16,8 @@ It plans the set, picks reference cards and draws three candidates per card. It 
 
 To see a set in the game's window, run `scripts/screen.py western --color blue`.
 
+To rate cards by hand, run `scripts/rate_ui.py` and open http://127.0.0.1:8765. It has blind twins (pick the generated card) and every set card beside its references (grade 1-5), each with a comment box. Answers go to `runs/ratings.json`. `--summary` prints the results.
+
 ## Setup
 
 This needs a GPU with PyTorch, the Codex and Claude CLIs logged in, and the board images in `materials/`, which are not in git. The model weights and reference data below are not in git either. The first two commands take a while and download weights.
