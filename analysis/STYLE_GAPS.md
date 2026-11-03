@@ -28,6 +28,25 @@ For 36 of the forty twins, the user picked the redraw closest to the real card a
 - **No measure follows the user.** The classifier ranks r3 farthest, and its subject scores are flat, so it reacts to backgrounds and framing. Silhouette area and fill pick the user's choice 10 of 36 times, about chance.
 - **Construction is not a style problem.** Seven of ten comments name objects that could not work or sit wrong, in every style: the duck ride's handle and seat, the waterslide, the phone in the booth, the earbud cable, the map folds, spotlights hanging in space, the topiary on the path. r9's "every cable, rope, leg and hinge attaches where it should" did not prevent them. Several come from briefs that name parts but not how they connect: "a red saddle seat and red handle" became a bag handle on the saddle three times, and a setting with "a curving paved path" put the planter on the path three times.
 
+## Construction trial, 2026-11-03
+
+Six twins (spotlights, calculator, chair, clock, chess table, pier), two draws each, four arms, made by `scripts/trial.py`. The user rated all 48 blind, arm hidden: does it work as built, and a grade 1-5 against the real card.
+
+| Arm | Works / slightly off / broken | Mean grade |
+|---|---|---:|
+| control, the brief as drawn | 4 / 3 / 5 | 2.2 |
+| how, one line on how it works | 2 / 7 / 3 | 2.2 |
+| blockout, Blender model restyled | 6 / 5 / 1 | 3.1 |
+| blockout2, the models fixed | 10 / 2 / 0 | 3.7 |
+
+- **A blockout fixes construction.** blockout2 had no broken card against 5 of 12 for control (Fisher p 0.04). The gain is on multi-part structures: chair, clock and pier rose by 3 to 3.5 grades. Spotlights rose 0.5, and calculator and chess table fell 0.5, as control drew them fairly well already.
+- **blockout2 is not a clean test.** Its models were fixed after seeing the six real cards. The first blockout arm was built before that look and still beat control, 1 broken against 5 (p 0.15) and 3.1 against 2.2.
+- **A line on how the object works did nothing.** Words do not hold construction. Geometry does.
+- **The restyle copies the model, flaws included.** It drops what the model lacks: the calculator keys came out blank ("no numbers there"). Printed marks need to be in the model or named in the prompt.
+- **The checkers have no signal here.** A major flag fell on 10 of 22 working drawings and 5 of 9 broken ones. Any flag fell on 17 of 22 and 8 of 9. As a gate on any error, they would pass over most good cards.
+
+Six objects and one rater make this a small sample.
+
 The first run looked off to a human, yet every automatic check passed it. This file records what was wrong, why the checks missed it, and what fixed it.
 
 ## How the gap was measured
