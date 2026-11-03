@@ -1,0 +1,26 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "problems": [
+   "The foot is a row of separate balls, so it reads as a bare, lumpy human foot with toes rather than a leather boot vamp. It needs one smooth form that tapers to a pointed toe, built from many closely overlapping balls.",
+   "The sole is a wide flat plank that does not follow the foot's outline. Its width should follow the foot taper and come to a point with the toe.",
+   "The shaft is a separate tube sitting on top of the heel ball, with a visible step where they meet. The scalloped top reads only as a slanted cut. The shaft should sink into the heel counter, and the V dips at the front and back of the top edge should be deeper.",
+   "The spur band sits low, where the heel ball is narrow, so it barely touches the boot. It should wrap the heel counter higher up, at its full width.",
+   "The leather renders orange, not saddle brown. Use a darker saddle brown and a darker brown for the sole and heel."
+  ]
+ },
+ {
+  "round": 2,
+  "error": null,
+  "problems": [
+   "The spur band is buried inside the heel counter. At z = 0.25 the foot blob reaches out to about x = 0.12 and y = 0.11, and the merged balls swell past that, so the band (rx 0.124, ry 0.11) sits inside it. In the render the shank and rowel stick out of bare leather with nothing holding them. The band needs a larger radius so it visibly wraps the back of the heel.",
+   "The toe lifts off the sole and the sole runs past it. The 0.018 upturn raises the toe tip off the forefoot sole, and the sole reaches X = 0.45 while the foot ends at 0.42. The result is a bare flat plate sticking out past a floating toe point. The sole should end at the toe and the toe should sit on it."
+  ]
+ }
+]

@@ -1,0 +1,21 @@
+{
+ "survey": "A saloon-door frame standing on a wooden plank floor in front of a pink wall. The frame has two square wooden posts on block feet, with a horizontal lintel beam across their tops. Two slatted half-doors hang between the posts on gold hinges: the left door on the left post, the right door on the right post. The floor is seen from above at an angle. The planks and the floor-wall line slope down to the right, so the right side of the scene is nearer the camera. The post feet agree with that: the right foot sits about 90 px lower in the enlarged view than the left foot, so the right post is the nearer one. The lintel is drawn dead level and front-on, and both posts start from the same height under it. The right door is drawn flat and front-on. The left door is swung slightly toward the viewer: its free edge is a little taller than its hinge edge, and its top and bottom rails slope down to the right.",
+ "errors": [
+  {
+   "where": "Whole frame: lintel and post tops compared with the post feet and floor",
+   "what": "The frame's top and bottom are drawn from two different views. At the bottom it is turned with the floor: the right foot sits much lower, so the right post is nearer and longer. At the top it is flat-on to the camera: the lintel is perfectly level and both post tops are at the same height. If the frame is angled, the lintel should slant to match the floor line and the planks, and the nearer right post should rise higher at the top as well. Instead the lower half recedes and the upper half faces the viewer.",
+   "severity": "major"
+  },
+  {
+   "where": "Right door, between the posts",
+   "what": "The right door is a flat front-facing rectangle: its hinge edge and free edge are the same height and its rails are level. It ignores the frame's turn shown by the floor and post feet, and it does not match the left door, which is drawn swung toward the viewer.",
+   "severity": "minor"
+  },
+  {
+   "where": "Left door",
+   "what": "The left door looks rotated a little within the picture, as if tilted, rather than swung on its vertical hinges. Its free edge leans slightly off vertical, and its bottom rail slopes much more steeply than its top rail, which a hinge swing does not produce.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the whole saloon-door frame from one three-quarter view that matches the floor planks. The frame is turned with the floor, so the right post is nearer: it stands taller and its top sits higher than the left post's. The lintel beam slants to follow the same vanishing direction as the floor-wall line and the plank edges. Both posts stay vertical. Both half-doors hang on vertical hinges with vertical side edges, and their top and bottom rails converge toward the same vanishing point as the lintel and the floor."
+}

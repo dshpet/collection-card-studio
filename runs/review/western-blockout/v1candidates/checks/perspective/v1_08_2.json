@@ -1,0 +1,11 @@
+{
+ "survey": "A single upright wooden barrel standing on a plank floor against a yellow wall. Parts: (1) the top lid, a recessed disc with planks running left to right, seen from slightly above as a fairly narrow ellipse (about 0.17 height to width); (2) four dark iron hoops wrapped around the body, whose front edges curve downward in the middle, slightly more at the bottom than the top, as they should for a camera a little above the barrel; (3) vertical staves that narrow and bunch toward the left and right edges, following the curved body, with the barrel bulging at the middle and narrowing to top and bottom; (4) the base, which rests on the floor along the bottom hoop's curve, with a cast shadow to the right and behind; (5) the floor, made of planks running diagonally from lower left toward upper right and converging slightly, meeting the wall in a back edge well behind the barrel. The barrel's verticals stay vertical, and the lid, hoops and base ellipses agree with each other on one low, slightly high-angle camera.",
+ "errors": [
+  {
+   "where": "Floor planks vs. barrel top and hoops",
+   "what": "The barrel is seen from only a little above its lid: the top ellipse is narrow and the hoops curve gently. The floor is drawn as if seen from a noticeably higher camera. It is spread out, with a lot of visible depth between the barrel's base and the wall, and the plank lines are steep and widely spaced rather than squeezed flat as a low camera would show them. The object and its ground do not quite share one viewpoint.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Match the floor to the barrel's low camera: show the wooden floor planks squeezed flatter toward the back, with the floor's far edge closer behind the barrel. Keep one slightly high-angle eye level for both the barrel lid and the floor, so the barrel's base ellipse and the floor plane agree."
+}

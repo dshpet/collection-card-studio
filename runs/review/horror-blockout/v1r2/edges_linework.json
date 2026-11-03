@@ -1,0 +1,89 @@
+{
+ "pattern": "In the lessons, the generated cards draw an even, dark, closed contour all the way around the hero, with every window, brick and slot inked at that same weight. They add busy texture to the background, like wood grain, tiles or a city skyline, and keep the hero small in the middle with empty space around it. The real cards let the edge show only where the form turns. Their seams are thin and they leave edges lost against the background. Background edges are few: soft clouds and broad sun rays. Some hero edges get lost against the background, and there is never a glow or halo along the silhouette.",
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (mojito): crisp glass contour, thin precise ice-cube and lime edges, soft concentric rings behind it. All three numbers sit inside the real range. B (binocular viewer): the city skyline and railing fill the background with many hard window and building edges (background 0.036, above the real 0.021). The viewer's outer edge is lighter than its inside (-0.126, below range).",
+   "fix": "Blur the city behind the viewer into soft pale shapes with no window lines. Give the viewer one clean silhouette edge and keep fine edges for the eyepieces only."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (witch hat): dark, even contour along the brim, soft cone, crisp buckle. B (graduation cap): crisp board edge and a fine tassel. Both have soft ring backgrounds and every number is inside the real range. Neither card has edges that set it apart.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A (seahorse): soft silhouette, fine rib lines, almost no background edges, like the real cards. B (guitar): heavy black contour around the body and strap (outline 0.163, above range). Frets and strings are dense (subject 0.242). The stage truss and floorboards fill the background with hard lines (0.039, above range).",
+   "fix": "Draw the guitar body without a dark rim: let the red meet the background through shading. Turn the truss and floorboards into soft, out-of-focus shapes with few hard lines."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (black cat): its edge is a fuzzy band of fur strands, not a clean form edge. The silhouette is lighter than its inside (outline -0.191, far below range). The wood planks behind are crisp and grainy. B (fountain): clean bowl rims and thin tile seams, with all numbers inside the real range.",
+   "fix": "Model the cat as a smooth toy-like form with one clean, soft silhouette edge and no individual fur strands. Keep the floor planks simple, with no grain lines."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (coffin): an even, dark contour all around the hexagon and the cross, but almost nothing inside the faces (subject 0.068, below range). B (chess table): crack lines and busy tree foliage, but its densities fall inside the real range.",
+   "fix": "Give the coffin thin plank seams and a soft bevel along the lid edge instead of an even dark outline. Let the far side of the silhouette soften against the grass."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (spring duck): crisp toy edges and a thin spring coil, inside the real range. B (pumpkin): the inside is nearly empty with mushy rib lines (subject 0.038, below range), but a dark contour rims the whole pumpkin and the carved face (0.11, above range). Wood grain lines streak the table.",
+   "fix": "Draw clear but thin rib grooves on the pumpkin and drop the dark rim around the silhouette. Keep the table surface smooth, with only a few broad plank seams."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (oil lamp): thin, precise rims on the glass chimney and brass base. B (candelabra): a glowing halo traces each flame and runs along the brass arms, and the doubled highlight lines push subject density to 0.229, far above the real 0.157.",
+   "fix": "Remove the glow along the arms and around the flames. Draw the brass arms with one clean edge per side and small, tight highlights."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "B is the same lighthouse as the REAL card in the lessons: soft clouds and crisp, thin brick seams. A (cottage): every window, brick, roof tile and chimney gets the same heavy black outline (subject 0.263, at the top of the range). The trees and clouds behind are outlined just as firmly.",
+   "fix": "Draw thin, light seams between bricks and tiles and save the strongest edges for the roof silhouette. Paint the trees and clouds behind as soft shapes without dark outlines."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (tombstone): a dark, even contour around the slab and cross, broad flat faces with only speckle dots (subject 0.061, below range). B (sneakers): laces, mesh and sole seams give dense but thin internal lines, inside the real range.",
+   "fix": "Add a softly bevelled chamfer along the tombstone's rim and a few thin chips and cracks on the face. Let the outer contour soften on the lit side instead of a uniform dark line."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (scarf): a hard black outline runs around the whole silhouette, especially the hanging tails, with smooth, almost empty fabric inside (subject 0.053). B (broom): dense bristle lines on the head and a clean handle. The wave stripes push background density a little high (0.024).",
+   "fix": "Drop the dark outline around the scarf. Let the red cloth meet the background through shading, and add a few thin fold creases at the knot."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (cauldron): a crisp dark contour around the pot and handles, with hard ruled floor-tile lines in the background. B (boxing gloves): very soft, partly lost edges with fine wrinkle lines at the cuffs, the same soft treatment as the real cards. Both have low subject density.",
+   "fix": "Soften the cauldron's silhouette where the shadow side meets the dark floor. Fade the floor tile seams into thin, faint lines."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (iced drink): thin glass rims and clean ice-cube edges, in the same style as the p01 mojito. Its subject density is slightly low (0.074). B (crystal ball): a heavy dark rim around the sphere and dense swirl lines inside it. Wood grain lines on the shelf repeat the background texture seen on the generated lesson cards.",
+   "fix": "Draw the crystal ball's rim as a thin, bright edge rather than a dark ring, and soften the swirls into smooth gradients. Make the shelf a smooth surface with no wood grain lines."
+  }
+ ]
+}

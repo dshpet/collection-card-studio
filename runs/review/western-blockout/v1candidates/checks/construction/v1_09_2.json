@@ -1,0 +1,21 @@
+{
+ "survey": "A two-wheeled covered cart on a dirt road, seen in three-quarter view from the front-left. The wooden box body has a red top rim, and a canvas cover is nailed to the rim with brass studs. The cover is an arch with a stitched-seam pattern and an open front, so the inside of the arch is visible. A small driver's bench sits on the front wall of the box, outside the canvas. There are two spoked wheels, one on each side near the middle of the box: the near wheel has a red hub and a steel cap, and the far wheel shows behind it. Both wheels rest on the ground and cast shadows. A single straight pole (tongue) runs from the lower front-right corner of the box down to the ground, where it ends in a flat crosspiece lying on the dirt.",
+ "errors": [
+  {
+   "where": "Pole/tongue where it meets the box (front lower right corner)",
+   "what": "The pole comes out of the outer corner of the box side. It is not centered under the front and is not fixed to an axle or undercarriage. Pulling on it would drag the cart sideways at one corner, so it could not steer or pull the cart straight.",
+   "severity": "major"
+  },
+  {
+   "where": "Undercarriage / wheel hubs",
+   "what": "No axle or frame is visible connecting the two wheels to each other or to the box. The hubs just sit against the side panel, so nothing shows how the box carries its load onto the wheels.",
+   "severity": "minor"
+  },
+  {
+   "where": "Pole end on the ground and driver's bench",
+   "what": "The pole ends in a T-shaped hand-pull crosspiece, but the cart also has a driver's bench, which means an animal pulls it. A horse-drawn cart would have two shafts or a tongue with a yoke. The pulling gear doesn't match what the cart is for.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Attach a pair of straight wooden shafts (or one central tongue) underneath the front of the cart, centered between the wheels and fixed to a visible wooden axle beam that runs under the box between both wheel hubs; the shafts extend forward and rest on the ground at their tips, with no T-shaped crosspiece."
+}

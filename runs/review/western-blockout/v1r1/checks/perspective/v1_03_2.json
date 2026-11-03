@@ -1,0 +1,11 @@
+{
+ "survey": "The object is a cowboy lasso lying against a purple wavy backdrop. It casts soft shadows on the backdrop, so the backdrop works as its ground. Left: a coil of about five rope turns. The turns are offset sideways toward the right, which shows the coil's depth, so the coil is seen at a three-quarter angle. Its front face is a slightly narrowed ellipse. Top of the coil: a red cord tied around all the turns, with two short cut ends sticking up. Bottom of the coil: the rope crosses over the front of the turns and drops into a straight tail with a cream end cap, lying on the backdrop. Right side of the coil: a strand comes out from behind the coil, runs to a cream ring (the honda) seen from the side, and passes through it. From the honda the rope forms a large open loop. The loop is drawn as a nearly perfect circle, slightly wider than tall, with no visible thickness or side, so it faces the camera head-on.",
+ "errors": [
+  {
+   "where": "Large loop (right) compared with the rope coil (left)",
+   "what": "The two parts are seen from different angles. The coil is seen at a three-quarter angle: its turns step sideways to the right, so its face should look narrowed side to side. The loop beside it lies on the same backdrop and casts the same kind of shadow, yet it is a full, face-on circle, even slightly wider than tall, with no narrowing in the direction the coil shows. If both lie on one surface seen by one camera, the loop should be a matching ellipse, narrowed the same way as the coil.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the whole lasso from one camera angle. The coil and the open loop lie flat on the same surface, and the open loop is narrowed into an ellipse at the same angle as the coil's turns, not drawn as a face-on circle."
+}

@@ -1,0 +1,16 @@
+{
+ "survey": "A stylized ringed planet, seen from slightly above with a three-quarter tilt. Main parts:\n1. **Body.** An orange sphere with craters. It has an orange top cap, a raised cream band tilted to match the ring, an orange middle band, and more cream and orange stripes below the ring.\n2. **Porthole.** A small blue window with an orange rim. It sits on the upper-left of the sphere, just above the cream band, and faces the camera.\n3. **Ring.** A flat yellow ring with crater dots, tilted around the body. Its front half passes in front of the lower body. Its back half goes behind the sphere at the upper right. Purple background shows through the gap between ring and body on both sides, which is correct: a planetary ring does not touch the planet.\n\nNothing rests on a surface. The object floats in space, which is expected for a planet.",
+ "errors": [
+  {
+   "where": "Right side of the body, between the cream band and the bottom of the sphere (behind and below the ring)",
+   "what": "The body is not round. It looks like stacked slices that are slightly misaligned. The lower part below the ring is shifted right relative to the top cap. Cream and orange bands stick out past the sphere's outline as stepped lips (clearest at the right edge under the ring and at the left just under the ring). The silhouette is jagged and stepped instead of one smooth circle.",
+   "severity": "major"
+  },
+  {
+   "where": "Upper-left of the body, on the edge of the cream band",
+   "what": "The porthole is an added part a planet does not have. Its rim also crowds into the raised cream band instead of sitting cleanly on the curved surface. This is acceptable only if the object is meant to be a planet-shaped station or ship.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "A perfectly round, smooth sphere with one continuous circular silhouette. Draw the stripes as flat painted latitude bands that follow the sphere's curve and never stick out past its outline. Keep the upper and lower halves of the sphere aligned. The yellow ring encircles the planet evenly, with a clean gap, passing behind the sphere at the top and in front of it at the bottom. Drop the porthole, or place it cleanly on the orange surface well clear of the bands if the object is meant to be a space station."
+}

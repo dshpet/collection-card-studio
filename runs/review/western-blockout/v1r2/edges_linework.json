@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (lasso): the rope coils carry dense, evenly spaced twist grooves along their whole length. Subject edge density is 0.173, above the real maximum of 0.157. The coil silhouettes have a crisp dark contour of the same weight all the way round, with no softening on the lit top. A (scarf): the outer contour is soft and varies in weight. Inner folds are faint, and the only strong edges sit at the badge and the knot, which is where the focus is.",
+   "fix": "Make the rope twist faint and only suggest it on the shadowed undersides; leave the lit tops of the coils smooth. Let the outer edge of the rope blend softly into the background on the light side, with no dark rim line."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (boot): a dark, even contour runs round the whole boot, including the lit front of the shaft and the toe. The heel and sole show stacked double lines, and the shaft carving has groove-like outlines. B (grad cap): the top board has a crisp corner edge, but the brim's underside and the sides of the cap fade softly into shadow. That gives a clear edge hierarchy, though its outline_darkness of -0.096 is slightly outside the real range.",
+   "fix": "Keep the boot's outer edge crisp only where it is in shadow, on the back of the shaft and under the heel. Let the lit front edge fade into the background. Draw the stitched carving as shallow shading, not cut lines."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the computer card already shown as REAL in the lessons. Its contours vary in weight and are lost on the lit side of the monitor. B (saddle): one even dark contour wraps the seat, the skirt and both stirrups. The leather has wavy streak edges inside it, and the buckle is drawn as a box with thick dark outlines.",
+   "fix": "Draw the saddle's silhouette without a dark rim; let the lit top of the seat merge into the bright sky. Keep the leather surface smooth with no streaky lines, and draw the buckle as a small crisp shape with no heavy outline."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (map): every sheet edge has a hard, even double line, the path dashes are each outlined, and outline_darkness is -0.137, well outside the real range. Crisp edges are everywhere, with no softer areas. A (book): the edges get softer as they go back toward the railing and bushes. The pages have thin, precise lines, and background edge density is at the real maximum, in line with the real scene cards.",
+   "fix": "Draw the map sheets with thin, light page edges rather than dark borders. Keep the crispest edges on the red X and the front sheet, and soften the edges of the sheets stacked behind."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (barrel): the silhouette has one uniform hard contour. Every stave gap is a crisp groove of the same weight from top to bottom, and the iron hoops have dark double outlines. Edges are equally sharp everywhere on the barrel. A (chest): the lid and the coins carry the sharpest edges, the wood planks are softer, and the bubbles fade out.",
+   "fix": "Draw the stave seams as fine hairlines that fade out toward the lit centre of the barrel. Let the right-hand silhouette soften into the background, and keep the hard edges only on the hoop rivets and the top rim."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (train): subject edge density is 0.256, near the top of the real range. Boiler, cab and cowcatcher are wrapped in heavy, uniform dark contours, and each cowcatcher bar is outlined separately. The rails and ties are drawn just as crisply as the locomotive. B (coaster): the car edges are crisp, but the track and the background fade softly.",
+   "fix": "Keep the sharp edges on the front of the boiler and the red wheels. Make the far cab, the coal tender and the rails toward the back progressively softer, and draw no dark outline round the engine body."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (cactus): the arms and trunk have a single even contour, and each rib is a long crisp groove from top to bottom. Every spine is a small dark dot of the same weight. The rocks have hard rims. A (popcorn cart): the awning edges vary in weight, the glass shows lost edges, and the cobbles soften as they recede.",
+   "fix": "Make the cactus ribs soft shaded valleys instead of drawn lines. Draw the spines as light highlights rather than dark dots, and let the lit side of the trunk fade gently into the orange background."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (saloon doors): the posts, the beam and every door slat are drawn with the same thin crisp line. The slats look like even grooves, and there is no edge hierarchy between the doors and the frame. B (sneakers): the silhouette contour is heavy and the cast-shadow edge is hard, with outline_darkness of -0.1 just outside the real range. The edges are still sharpest at the laces and logo panel, the focus. Both cards are ambiguous.",
+   "fix": "Put the crispest edges on the door hinges and slats, and let the posts and beam soften toward the edges of the card. Shade the slat gaps softly instead of drawing them as uniform cut lines."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (star): every point has a doubled bevel contour, and the ball tips have hard dark rims of the same weight. outline_darkness is 0.127, slightly above the real maximum. The star has no lost edges anywhere, even where gold meets the light purple. A (ring box): the lid rim is crisp, but the cushion and the inside of the lid fade softly.",
+   "fix": "Let the lit upper edges of the star points blend into the purple glow, with no double rim line. Keep the hard edges only on the red gem and the shadowed undersides of the ball tips."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (wagon): the wheel spokes and rim are outlined evenly, and the dirt road is full of small noisy texture edges. The cover's seams are soft streaks. The hitch pole has a hard contour all along, with no clear edge hierarchy, and outline_darkness is 0.114. A (boat): the hull rim is strongly outlined, but the water ripples and lily pads soften, and the strongest edges stay at the front of the boat.",
+   "fix": "Keep the wheel's front rim crisp and let the far wheel, the hitch pole and the road edges go soft. Paint the dirt as smooth tone with no speckled marks."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A (lion statue): edges inside the lion are sparse (0.05) because white marble gives little contrast, while the trees and path carry dense edges (0.068). B (air conditioner): the casing contour is crisp, the airflow is soft, and the wall stripes are faint. Neither card shows a uniform dark outline or groove-like seams that would mark it as generated.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (cowboy hat): the brim is circled by a hard double ring of even weight all the way round, the crown is covered in fine streaky texture edges, and the band has crisp outlines. outline_darkness is -0.087, at the edge of the real range, and subject density is low apart from that hard rim. A (jacket): seams and pockets are thin and precise, with the crispest edges at the sash badges, the focus.",
+   "fix": "Remove the double line round the brim: let the brim's lit top edge blend softly into the blue background, with a gentle shadow only on its underside. Keep the felt crown smooth, without streak lines."
+  }
+ ],
+ "pattern": "Generated cards wrap the hero in one crisp contour of the same weight all the way round, including the lit side where real cards let the edge fade into the background (no lost edges). They draw surface detail as evenly spaced hard grooves (rope twist, stave gaps, cactus ribs, door slats, brim rings), so edges are equally sharp everywhere instead of sharpest at the focus and softer toward the back."
+}

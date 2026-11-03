@@ -1,0 +1,11 @@
+{
+ "survey": "A cartoon flying saucer seen from slightly above and in front, floating on a plain yellow radial background. It flies, so floating needs no support. Parts: (1) a wide teal upper hull that domes gently toward the middle. (2) A thick dark-grey rim around the hull's edge, wrapping the outer edge as one continuous band. (3) A green glass dome sitting in a silver collar ring. The collar sits flush on the hull, slightly toward the back, which fits the viewing angle. The dome is a clean hemisphere. (4) Ten orange glowing light bulbs set into the rim. On the front they sit on the rim's outer face, and on the sides and back they sit along its top edge. All parts are seated and none pass through each other. The saucer looks round and the dome and collar are concentric ellipses that match the perspective.",
+ "errors": [
+  {
+   "where": "Rim lights along the back edge, between the light at upper-left (behind the dome's left side) and the light at the top right",
+   "what": "The rim lights are spaced unevenly. Around the front and sides they are fairly close together, but the visible back stretch of rim has no light for about twice the usual gap, as if one or two lights are missing. A real saucer would have evenly spaced lights all the way round. Nothing hides that part of the rim, so the gap reads as missing parts, not as something covered up.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Space the orange rim lights evenly around the whole saucer rim, including the back edge behind the dome, so the gaps between lights are the same all the way round in perspective."
+}

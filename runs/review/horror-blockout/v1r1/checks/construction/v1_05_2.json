@@ -1,0 +1,21 @@
+{
+ "survey": "An upright wooden coffin stands on grass, turned three-quarters to the camera. The front is the lid: a hexagonal wooden panel with a raised cross. Behind it is the box. The camera sees the box's right side wall, which has the same hexagonal bends. Between the lid's right edge and the side wall is a narrow vertical gap, and padded purple lining shows through it, so the lid reads as open a crack. The lid and the box both rest their bottoms on the grass. Across the top is a single smooth, rounded cap that spans both the lid and the box wall, as if they were one solid piece. No hinges, handles or fasteners are shown, which is an acceptable simplification.",
+ "errors": [
+  {
+   "where": "Top of the coffin, where the lid and box meet",
+   "what": "The gap and the top contradict each other. The lid stands apart from the box down its full height and shows the lining, yet one continuous cap covers the top of both, so the lid looks open and joined at the same time. No real coffin lid could open like this: it would have to pass through the top.",
+   "severity": "major"
+  },
+  {
+   "where": "The lid's right edge and the box side wall, full height",
+   "what": "The lid has no hinge or other attachment to the box. It stands upright and parallel to the side wall with an even gap, held by nothing. A real lid ajar would be tilted on hinges or resting on the box rim.",
+   "severity": "major"
+  },
+  {
+   "where": "Top end of the coffin",
+   "what": "The top cap is a soft, rounded, almost cylindrical slab. It does not follow the hexagonal outline of the lid and side walls below it, so the head end is the wrong shape for a six-sided coffin.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Upright hexagonal wooden coffin. Either close the lid fully, with no gap and no lining showing, or show it clearly ajar: the lid tilts open on visible metal hinges along one side edge, and its top edge separates from the box so the purple lining shows at the top as well as down the side. The head end is a flat, six-sided panel that matches the lid's outline, with no rounded cap spanning the lid and the box."
+}

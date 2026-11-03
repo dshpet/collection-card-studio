@@ -1,0 +1,11 @@
+{
+ "survey": "A black cartoon cat sits upright on a wooden plank floor, turned three-quarters to the left. The head rests directly on the body and has two upright pointed ears, two large yellow eyes, a small brown nose and a mouth line. A red fabric collar wraps all the way round the neck, between the head and the fluffy chest. Two front legs come down from the chest and end in two paws flat on the floor. The rear haunch forms the right side of the body. The tail comes out from behind, curls forward round the haunch and rests on the floor, hiding the hind paw. The body touches the floor and casts a shadow, so it is properly supported. The collar has no buckle, which is an acceptable simplification.",
+ "errors": [
+  {
+   "where": "The cat's far eye (left in the image)",
+   "what": "The far eye sits right on the edge of the head and bulges past its outline, as if it were on the side of the skull. It is about the same size as the near eye and not foreshortened, so the two eyes do not sit on one forward-facing face plane in this three-quarter view.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Place both eyes on the front of the face, facing forward. Draw the far eye slightly smaller and foreshortened, and keep it fully inside the outline of the head, not bulging past the side of the skull."
+}

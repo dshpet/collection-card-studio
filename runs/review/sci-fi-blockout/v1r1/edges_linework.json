@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (telescope): a continuous dark contour runs round the tube, eyepiece and tripod legs, and every crater rim and pebble in the ground is ringed with a dark line. Outline darkness is 0.121, above the real maximum of 0.097. B (binoculars): the barrels have soft, light silhouette edges, and the inner rings are thin precise seams. Only the board lines carry strength in the background.",
+   "fix": "No dark outline around the telescope; let the cream tube separate from the backdrop through value only. Keep crater rims soft and low-contrast, and leave the ground mostly quiet."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (moon dome): the dome ribs and ladder rails are drawn as heavy double black lines, the airlock tube has a dark contour, and crater rims plus scattered rocks are each outlined crisply, so the hero and ground carry the same edge weight. B (pool bar): its background is busy at 0.144, but the stools, fruit and glasses have thin internal seams and soft silhouettes, the way the real lesson cards do.",
+   "fix": "Draw the dome ribs and ladder as thin, light seams, not thick dark grooves. Soften the crater rims and rocks so the dome holds the sharpest edges."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (rover): the wheels have thick black rims, the body panel and vent slots are cut as heavy grooves, and the dish and solar panel have crisp dark outlines. Outline darkness is 0.124, above the real range. Crater dimples across the ground are outlined. B (taxi): it has many internal edges at the grille and windows, but the outer body edge is soft and light.",
+   "fix": "Remove the dark outline round the rover body and wheels. Make the panel lines thin hairline seams, and keep the moon ground soft with few outlined craters."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (control console): the top panel, gauges and each button are ringed by doubled dark contours, the drawer is a deep groove, and the floor plates and rivets are crisp lines. B (popcorn cart): the awning scallops have a dark edge, but the posts, glass and wheel are thin and light. The numbers are similar, so this rests on A's doubled contours alone.",
+   "fix": "Draw the buttons and gauges with soft rounded edges instead of ringed outlines. Make the floor seams faint and sparse."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (asteroid): the inside of the rock is a mottled, noisy edge texture with no clean seams, and the flame tails have soft, glowing, lost edges against the background. Subject edge density is 0.027, below the real minimum of 0.046. A (scarf): clean silhouette, crisp folds and a sharp medallion. The edges are sharpest at the badge, the focal point, which matches the real edge hierarchy.",
+   "fix": "Give the rock a crisp, clean silhouette and a few sharp crater rims instead of an all-over speckle. Draw the flames as solid shapes with clear edges, without a glow."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (planet): the ring has an even dark outline all the way round, and there is a heavy dark line where it meets the sphere. Inside the sphere, edges are sparse except the porthole. A (flip-flops): soft silhouettes, with the dense small dimples on the soles as the internal detail, which looks like real-card texture density.",
+   "fix": "Separate the ring from the planet with a light-value change, not a dark line round its rim. Add a few thin, precise seams on the planet body."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (flower bed): every petal and border stone has a medium contour, which is busy but within the real range. B (camp chair): the tubes have dark crisp outlines, and there is a hard ground horizon line. Both sit inside the real ranges, and the lessons give no clear direction here.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (helmet): the visor rim is a stack of heavy dark concentric rings, the base has doubled dark bands, and the sphere has a single uniform outline. The table edge is a hard line, and edge weight is the same everywhere. B (sneakers): dense, fine mesh and lace edges with soft outer edges. Its edge density is high but its outline darkness is low (-0.10), with no drawn contour.",
+   "fix": "Draw the visor rim as one soft metallic edge, not multiple dark rings. Let the white helmet's silhouette fade softly against the background, and lighten the table edge."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (dish antenna): the dish rim, struts and pillar have crisp dark contours, and every desert tuft, pebble and distant mesa is outlined. Background edge density is 0.014, just under the real minimum. B (sandcastle): crenellations and windows are crisp at the focus, while the beach, sea and sky fall off to soft, lost edges, which is the real edge hierarchy.",
+   "fix": "Remove the dark line round the dish and pillar. Keep the dish rim as the sharpest edge, and paint the desert ground and mesas softly, with few outlined pebbles."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (UFO): a dark contour runs round the saucer rim, each orange light is ringed, and the dome has a thin drawn edge, while the interior of the saucer is almost edge-free. B (music player): the cords and casing show strong edges, but these come from the white-on-purple value contrast, and the button and screen seams are thin.",
+   "fix": "Drop the dark outline around the saucer. Separate it with a light rim against the yellow, and add a couple of thin panel seams on the hull."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (rocket): the fins and nose cone carry a heavy dark outline that thickens at the fin tips, and the body has few internal seams apart from the porthole rings. A (submarine): it also has dark contours, but the internal seams and rivets are thin and precise, and the edges are sharpest at the portholes.",
+   "fix": "Soften the outer edge of the rocket fins and nose so they read through value, not a black line. Add thin panel seams and small rivets on the silver body."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (golf club): outline darkness is 0.15, above the real maximum of 0.148. Every grass tuft and cloud lobe is individually outlined, so the background competes with the club face. B (umbrella): a clean dark canopy silhouette with few internal edges; subject density is low (0.042), but there is no busy background. I lean towards A because its background is uniformly outlined.",
+   "fix": "Paint the grass and clouds as soft masses without drawn edges. Keep the crispest edges on the club face grooves and the golf ball."
+  }
+ ],
+ "pattern": "Generated cards draw the hero with an even, dark contour all the way round: double rings on rims and visors, black wheel and fin edges. They also outline background detail like craters, pebbles, grass tufts and clouds at nearly the same weight as the hero, so there is no edge hierarchy. Real cards separate the silhouette through value with a soft, light edge. They keep their crispest edges at the focal point and let the background fall away into soft, lost edges."
+}

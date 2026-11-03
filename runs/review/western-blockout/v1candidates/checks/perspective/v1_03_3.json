@@ -1,0 +1,11 @@
+{
+ "survey": "A cowboy lasso lying on a flat purple surface, seen from almost straight on with a slight top-down tilt. Parts: (1) A thick coil of rope on the left. It reads as a nearly round ring, with its turns stacked and shifted toward the right, like a short cylinder seen a little from the left. A red tie wraps the top of the coil, and the tie's two ends stick up. (2) One rope runs out of the coil's lower right into a cream honda ring. The honda is seen from the side, with the rope passing left to right through its opening. (3) The open loop on the right is a wide ellipse, slightly squashed top to bottom, as if it lies flat and tilts back from the viewer. Its left side passes through the honda. (4) A tail crosses over the front of the coil and runs straight down to a cream end cap. The cap shows a small ellipse seen from slightly above. The rope stays the same thickness throughout, and its twisted strands follow the curve of each section. Both the coil and the loop cast soft contact shadows on the ground, which fits rope lying flat.",
+ "errors": [
+  {
+   "where": "Left coil compared with the right loop",
+   "what": "The two parts suggest slightly different viewpoints. The open loop is a horizontal ellipse, squashed top to bottom, as if it lies on the ground and tilts back from the viewer. The coil's opening is an almost perfect circle, as if seen straight on, yet its turns slide sideways as if seen from the left. The two rings lie on the same ground, so they should be foreshortened the same way. This is mild and fits the stylized look, but it shows on a close look.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Show the whole lasso lying flat on the ground from one slightly elevated camera. Make the coil's opening the same squashed horizontal ellipse as the open loop, and stack the coil's turns upward, toward the viewer, so they show their thickness instead of sliding sideways."
+}

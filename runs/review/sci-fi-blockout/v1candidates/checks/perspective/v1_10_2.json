@@ -1,0 +1,11 @@
+{
+ "survey": "A moon-base card seen in three-quarter view from slightly above. The ground is a flat cratered plain, and its crater ellipses show a moderately high camera. The main body is a short white cylinder standing flat on the ground. Its top rim is a wide, shallow ellipse seen from above, and its bottom edge curves a little more, which is correct for a camera above it. A glass dome sits on that rim. Its vertical ribs curve around the dome and meet at a small top cap, which is also seen as an ellipse from above, so the dome agrees with the base. A segmented tunnel tube comes out of the left side of the cylinder and runs toward the viewer's left. It gets wider as it comes closer and rests on two small block feet that sit flat on the ground. The near end of the tube is a round cap shown as an upright ellipse, with a yellow rectangular door that is foreshortened to match the cap. A metal ladder leans against the front of the cylinder, where the wall faces the camera. Its top sits under the rim lip and both feet rest on the ground in front of the wall. Its rails and rungs are nearly front-facing, which suits that spot. Overall the image reads as one camera and one ground plane.",
+ "errors": [
+  {
+   "where": "Tunnel tube, the ring joints between the end cap and the base",
+   "what": "The end cap is a fairly full ellipse, which says the tube points partly toward the viewer. But the raised ring bands along the tube are drawn as almost straight vertical stripes with very little curve. Rings parallel to the end cap should curve as half-ellipses with the same narrowness as the cap, so the tube's sections do not quite agree with its end face.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the ring joints on the tunnel tube as curved elliptical bands that match the narrowness of the round end cap and wrap around the tube, curving toward the viewer the same way the end cap does."
+}

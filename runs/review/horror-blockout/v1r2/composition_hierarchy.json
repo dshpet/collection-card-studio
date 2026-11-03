@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the mojito glass sits dead center, straight-on and fully inside the frame, with an even gap all round (margin 0.073) and an empty blue floor below it. B: the binocular viewer is turned three-quarters, sits high and left, and its pole runs off the bottom edge (margin 0.0), like the real lighthouse.",
+   "fix": "Draw the glass larger and turned slightly to one side, filling more of the card, with the base close to the bottom edge instead of floating in the middle of an empty floor."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the witch hat tilts on a diagonal, its tip and brim spanning most of the card height (0.744). B: the mortarboard is a short, wide slab (height 0.506, below the real minimum), floating in the middle with wide empty rings of background above and below it.",
+   "fix": "Tilt the cap more toward the viewer so the board and skull-cap stack taller, and make it bigger so it fills more of the card height."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the seahorse alone fills the card height on a plain water gradient. B: the guitar is small (area 0.169, below range) inside a busy stage set, and the truss towers, two spotlight beams and plank floor pull the eye away from it at thumbnail size.",
+   "fix": "Make the guitar much larger and nearer, filling most of the card; drop the truss towers and strong spotlight beams, keeping a soft plain backdrop behind it."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cat is a narrow upright shape (width 0.484, far below the real 0.661) set in the middle of a large empty floor, with wide gaps on both sides (margin 0.121). B: the fountain spreads almost edge to edge (width 0.916) with its basin close to the sides, the way real cards fill the frame.",
+   "fix": "Bring the cat closer and draw it bigger, with the tail curled out to one side, so it fills most of the card width and nearly touches the edges."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the coffin is a thin upright slab (width 0.426) dead center and front-on, with large equal strips of grass on each side (margin 0.133, above the real range). B: the chess table and stool spread wide across the card at an angle, with tree branches cropping the top-left corner.",
+   "fix": "Show the coffin at a three-quarter angle, tipped or lying diagonally, larger in the card, so it fills most of the width and comes close to the edges."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the spring-rider duck sits in the middle with small props (pebbles, a sand patch) scattered around its base, and its width (0.649) falls just short of the real range. B: the pumpkin is one big round mass filling the card width on a plain board floor. The difference is small.",
+   "fix": "Draw the duck larger so it fills more of the card width, and remove the scattered pebbles around the base."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both are tall, thin, centered objects that fill too little of the card. A: the oil lamp (area 0.17) is a solid bowl shape under a glass chimney. B: the candelabra is a front-on, mirror-symmetric thin frame (area 0.121, width 0.509) with lots of purple showing through it, so it reads weaker at thumbnail size.",
+   "fix": "Turn the candelabra to a slight angle and bring it closer so the candles and base fill more of the card; thicken the arms and base so the silhouette holds up when small."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 5,
+   "difference": "A: the whole house is shown small in the middle on a hill, with a tree on each side as symmetric props (width 0.5, margin 0.121). B: the lighthouse is cropped by the bottom edge and fills the card height, matching the real card.",
+   "fix": "Draw the house closer and larger, cut off by the bottom edge, with no flanking trees, so the building fills the card."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the tombstone at a three-quarter angle fills most of the card (area 0.368). B: the sneaker pair is a low, wide band (height 0.487, below the real minimum) in the lower half, with a large empty orange wall taking up the top third.",
+   "fix": "Bring the sneakers closer and stagger them, one in front and higher, so together they fill more of the card height with little empty wall above."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the neckerchief fills the card as a bold red mass. B: the broom is a thin diagonal stick covering only 0.085 of the card, and the high-contrast wavy stripe background competes with it at thumbnail size.",
+   "fix": "Draw the broom much bigger and thicker, with the bristle head large in the lower half, on a calmer background with softer stripes."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cauldron sits centered with an even gap all round, and a large empty tiled floor takes up the bottom of the card. B: the boxing gloves crowd the frame and press against the right edge (width 0.951), like the real basket and computer cards.",
+   "fix": "Draw the cauldron larger and closer, filling the card width, so its base and the fire sit near the bottom edge instead of on an empty floor."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the juice glass runs nearly top to bottom, and its straw and umbrella reach close to the top corners (margin 0.05). B: the crystal ball on its stand is centered, symmetric and front-on, with wide even gaps of green wall around it (margin 0.123, above the real range).",
+   "fix": "Draw the crystal ball larger and closer, at a slight angle, so the ball and stand nearly reach the card edges; let the shelf edge run off the sides."
+  }
+ ],
+ "pattern": "Generated cards show the whole object small, dead center and straight-on, with even empty margins around it. Real cards push the hero to fill the frame, often cropped by an edge or crowding a side, at a three-quarter angle. Generated cards also add side props (trees, rocks, a stage set) that compete with the hero."
+}

@@ -1,0 +1,11 @@
+{
+ "survey": "Image 4 is a space helmet on a display stand. Main parts: (1) a white helmet sphere; (2) an orange visor in a silver rim, set into the sphere's left-front so the helmet looks turned a little to the viewer's left; (3) a silver neck ring where the sphere sits in the base; (4) a short white cylindrical base with a red stripe; (5) a pale table or shelf the base stands on, against a pink wall. The camera sits a little above the object. The top of the neck ring and the top of the base both read as ellipses whose near edges curve downward. The red stripe and the bottom edge of the base curve the same way, a little more strongly, which is correct for parts further below eye level. The table top is seen from above, and its back edge recedes diagonally toward the right. Because the base is round, a turned table does not conflict with its level ellipses. The base's bottom ellipse sits flat on the table and its shadow falls onto the table plane, so the contact is believable. The sphere sits inside the neck ring at the right angle.",
+ "errors": [
+  {
+   "where": "Visor and silver rim on the helmet sphere",
+   "what": "The visor is not foreshortened consistently around the sphere. Its left rim reaches all the way to the sphere's outline, so the visor would have to wrap about 90° around the side. Its right edge, though, sits only about a quarter of the way in from the centre. The rim is also the same thickness all the way round and is not squeezed on the left where it turns away. The visor reads as a nearly front-facing oval pasted onto the sphere, not an opening that curves with the surface. It should be narrower and more compressed on the left, or shifted toward the middle of the sphere.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the visor follow the curve of the helmet sphere. The helmet is turned slightly to the left, so the visor's oval opening sits a little left of centre on the sphere. Its left side should foreshorten and narrow as it wraps around the curve. The silver rim should be visibly thinner on the far left side and stay inside the sphere's outline. The right side stays fuller and faces the camera."
+}

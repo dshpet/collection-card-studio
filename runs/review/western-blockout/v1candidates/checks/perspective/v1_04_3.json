@@ -1,0 +1,16 @@
+{
+ "survey": "The object is a saloon-door gate standing on a wooden plank floor. Two square posts stand on block base caps. A horizontal beam rests on top of them, and its right end face and the right side faces of both posts are visible, so the camera is slightly to the right and above. The posts' feet step down to the right (left base around y≈810, right base around y≈930 in the enlarged view), so the right post is nearer and the frame plane turns away to the left. The floor planks run in the same diagonal, so the floor and the frame agree. The left half-door hangs from two gold hinges on the left post. It is swung slightly toward the viewer: its thick free edge shows, and its top and bottom rails slope down to the right like the frame's base. The right half-door hangs from two gold hinges on the right post and is drawn straight-on, with level top and bottom rails and evenly spaced upright slats. The shadow falls on the floor behind the frame.",
+ "errors": [
+  {
+   "where": "Right half-door",
+   "what": "The right door faces the camera flat: its top rail, bottom rail and middle rail are level, and its slats are equal and straight-on. The frame it hangs in is turned, with the base line sloping down to the right, and the left door follows that slope. So the two doors read as two different views: the left one in perspective, the right one pasted on front-on. The right door's rails should slope down toward the near post like the bases and floor planks, and its slats should widen slightly toward the near side.",
+   "severity": "major"
+  },
+  {
+   "where": "Top beam vs. post bases",
+   "what": "The top beam is perfectly level, while the post feet step down sharply to the right, which makes the right post noticeably taller than the left. The frame becomes a trapezoid whose top ignores the turn shown at the bottom. A beam this high would at least slope slightly the same way, and its top face, seen faintly from above, conflicts with treating it as sitting on the horizon.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Keep one consistent three-quarter view of the saloon-door frame, turned so the right post is nearer. Draw both swinging half-doors in that same perspective: their top, middle and bottom rails should slope down toward the near right post, parallel to the post bases and floor planks, with the vertical slats spaced slightly wider on the nearer side. Do not draw the right door flat and front-facing. Tilt the top beam slightly so it follows the frame's turn and the two posts converge consistently, with the posts' verticals still vertical."
+}

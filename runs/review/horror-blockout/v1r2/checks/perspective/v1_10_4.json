@@ -1,0 +1,11 @@
+{
+ "survey": "A single broom floats diagonally on a flat wavy-stripe background, with no ground plane. A straight wooden handle runs from a rounded knob at the upper right down to the lower left. Near the bottom it passes into a binding collar: one yellow band over two red cord rings, wrapped around the handle. The rings are drawn as ellipses whose short axis roughly follows the handle, so they read as wrapping the shaft. Below the collar, a bundle of straw bristles fans out and ends in a scalloped, rounded tip. The camera sees the whole broom from roughly side-on, slightly above. The knob, collar and handle agree on that view, so there is no clash between seeing one part from above and another from below. The only question is whether the bristle bundle continues the handle's line. The handle runs at about 37° from vertical. The bristle bundle hangs more upright, at about 24° from vertical, so the head looks slightly kinked away from the shaft line where it meets the collar.",
+ "errors": [
+  {
+   "where": "Bristle head where it meets the binding collar",
+   "what": "The bristle bundle's centre line does not continue the handle's straight line. It hangs about 13° more upright than the shaft, so the head looks slightly bent at the collar instead of sitting square on the end of the handle.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Keep the broom one straight rigid object: the bristle bundle fans out evenly on both sides of the handle's axis and its centre line continues the handle's exact diagonal through the binding collar, with the collar rings sitting perpendicular to the handle."
+}

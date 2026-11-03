@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the scarf is soft matte cloth with broad, quiet folds, and the badge has a small satin sheen. B: the lasso rope has a large, regular twisted-strand pattern along every coil and a lacquered yellow sheen everywhere. Its gloss (0.41) and micro texture (0.022) are both above the real range. The rope reads as glossy plastic, not fiber.",
+   "fix": "matte hemp rope with soft, barely visible twist, no shine, fibers too fine to see at icon size"
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the boot shaft and toe carry a fine mottled grain, like leather noise. The shaft has a broad satin highlight, and the tooled flourish is crisp. B: the cap's board and band are clean and evenly matte with no surface noise, like the real computer and camera lessons.",
+   "fix": "smooth soft-matte leather boot with no grain or mottling, one soft broad highlight, clean flat color areas"
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the real computer card: smooth off-white plastic with soft gradients. B: the saddle seat and flap have blotchy, mottled leather noise and a broad wet-looking sheen across the seat. The buckle is crisp metal. The surface looks smeared rather than cleanly modeled.",
+   "fix": "saddle in smooth, evenly colored soft-matte leather, no blotches or grain, one gentle highlight on the seat rim"
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the table and fence have fine, quiet wood grain, the pages are matte paper and the bookmark has a satin sheen. Its highlight share (0.45) is high. B: the map sheets are one uniform satin slab with crisp plastic-like edges and flat color shapes. The paper has no material cues. Weak evidence either way.",
+   "fix": "map sheets drawn as thin matte paper with soft folded edges, not thick plastic slabs"
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the chest wood has soft, sparse grain, the gold trim and coins are smooth and glossy, and the gem is faceted. The matte wood and shiny gold mix like the real cards. B: every barrel stave has fine, dense vertical grain streaks, and the iron hoops have even rivets and a uniform satin metallic sheen. The texture is denser and more uniform than on real wood props.",
+   "fix": "barrel staves with only a few soft, faint grain lines, mostly smooth warm wood; plain dark hoops with few rivets"
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the locomotive boiler and cab are dark blue metal with a brushed, streaky sheen. The red wheels and rods are crisp and glossy. Gloss (0.19) and micro texture (0.026) are near the top of the real range, and the desert ground has fine noise. B: the coaster cars are clean glossy plastic with soft highlights and no surface marks.",
+   "fix": "locomotive in smooth painted metal with soft, simple shading, no brushed streaks, fewer sharp specular edges"
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the popcorn cart mixes clear glass, matte popcorn, a satin red cart and a striped canvas awning, much like the real cards. B: the cactus is one uniform glossy plastic with evenly spaced, toy-like spine bumps. Its gloss (0.134) is just above the real range. There is no plant-skin variation.",
+   "fix": "cactus with a soft matte waxy skin, slight color variation between ribs, small, thin spines instead of round bumps"
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the saloon doors and frame carry fine, dense vertical wood-grain streaks on every plank. The brass hinges are tiny and crisp, and the lighting is flat. B: the sneakers have small mesh dots and glossy laces. Both measures sit at the top of the real range, but the details stay small and the sneakers mix matte mesh with a shiny sole.",
+   "fix": "saloon doors in smooth warm wood with only faint, sparse grain, soft rounded edges, a gentle highlight on the top rail"
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the ring box is matte velvet-like red with a soft cream lining and a glossy coin, so it mixes matte and shiny. B: the sheriff star is entirely lacquered gold with sharp bevel highlights on every facet. The ball tips and red gem are equally shiny. Nothing on it is matte.",
+   "fix": "sheriff star in softer brushed gold with a broad soft highlight, matte inner face and a glossy gem only"
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the boat and dock planks have soft, sparse grain, and the rope twist is moderate, like real wood props. B: the wagon canvas has a fine mottled noise. The bed and wheels carry fine grain streaks, and the dirt road and grass have painterly speckle noise. The texture is busier and smeared rather than cleanly modeled.",
+   "fix": "wagon canvas as smooth soft cream cloth with a few gentle folds, clean wood with faint grain, smooth ground without speckles"
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the lion is smooth polished marble with sparse fine veins, which reads clearly as stone. B: the air conditioner is glossy white plastic with an embossed metal badge and soft light rays. Its highlight share (0.44) is high, but the material reads correctly. My vector gives no clear reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the scout jacket is smooth matte fabric with clean seams, a satin sash and glossy badges, like the real cards. B: the cowboy hat crown and brim have a visible fuzzy, noisy felt grain, and the red band has a velvet-like speckle. It is the kind of fine micro-noise real cards smooth away.",
+   "fix": "cowboy hat in smooth, clean soft-matte felt with no fuzzy grain or speckle; plain smooth band"
+  }
+ ],
+ "pattern": "Generated cards give themselves away on surface by having too much fine micro-texture: mottled leather noise (boot, saddle), dense wood-grain streaks on every plank (barrel, saloon doors, wagon), fuzzy felt grain (hat), and regular twisted rope strands. Many also have one uniform lacquer over the whole object (cactus, sheriff star, lasso) instead of the real cards' clean, smooth surfaces that mix matte and shiny."
+}

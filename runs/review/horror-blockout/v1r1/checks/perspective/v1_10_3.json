@@ -1,0 +1,11 @@
+{
+ "survey": "A single broom floats against a flat wavy blue background, with no ground plane. The straight wooden handle runs diagonally from a rounded knob at the upper right down to the lower left. The knob is a domed cap seen slightly from its top end. At the lower end the handle goes into a straw bundle. A collar of straw wrapped with three red cord rings joins the two, and the collar's top end is visible as an ellipse, so we see it slightly from above along the handle. Below the collar the straw flares into a fan-shaped head whose tips end in a scalloped fringe. The handle's edges stay parallel along its length. The knob, collar and cord rings all read as one camera looking slightly down the handle toward its lower end, and the bristles follow the flare of the head.",
+ "errors": [
+  {
+   "where": "Red cord rings and straw head where they meet the handle",
+   "what": "The cord rings are drawn closer to horizontal than they should be. They are not quite at right angles to the diagonal handle, and the head flares out on an axis a little more upright than the handle, so the head looks slightly bent off the handle's straight line. It is only noticeable on a close look.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Keep the broom head on the same straight axis as the diagonal handle. Draw the red cord rings and the collar opening as ellipses at right angles to the handle, tilted to match its slant, and make the straw head fan out evenly around that same axis."
+}

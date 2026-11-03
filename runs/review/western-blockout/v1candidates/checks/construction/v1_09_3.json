@@ -1,0 +1,21 @@
+{
+ "survey": "A two-wheeled covered cart on a dirt road, seen in three-quarter view from the front-left. Main parts: (1) A plank box body with a red top rim and metal rivets. Its long side faces the camera and its front panel faces right. (2) A cream canvas bonnet that sits on the red rim and covers the rear two-thirds of the box. Its front arch is open and shows the tan inside. (3) A small wooden bench on two blocks at the front of the box, just ahead of the bonnet opening. (4) Two large spoked wheels with red hubs on the side of the box. The near wheel is fully visible and the far wheel shows below and behind the box. Both rest on the ground with contact shadows. (5) A single wooden tongue that runs from the lower front of the box down to the ground on the right and ends in a short flat crossbar lying in the dirt. The cart stands on its two wheels and the tongue tip, which is a believable resting pose.",
+ "errors": [
+  {
+   "where": "Tongue/draft pole, where it joins the box at the lower front corner on the near side",
+   "what": "The pole starts at the near bottom corner of the front panel and runs out at a diagonal, off the cart's centerline. A tongue has to sit centered under the front of the box and be fixed to the axle or undercarriage so an animal can pull straight. Pulled from one corner, the cart would yaw, and no frame member is shown under the box for the pole to attach to.",
+   "severity": "major"
+  },
+  {
+   "where": "End of the tongue on the ground",
+   "what": "The pole ends in a short flat block lying on the dirt instead of a yoke or singletree/doubletree with hitch points. Nothing on it could connect to a draft animal, so the cart has no working way to be pulled.",
+   "severity": "minor"
+  },
+  {
+   "where": "Near wheel hub and axle",
+   "what": "The red hub is mounted straight onto the box side and no axle or axle bed shows under the body. The far wheel has no visible link to the near one either, so the wheels look stuck onto the box rather than carried on an axle.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Attach a single wooden tongue to the center of the front of the cart, under the box, fixed to a visible wooden axle bed that runs between the two wheels. Run the tongue straight forward along the cart's centerline and let its tip rest on the ground, ending in a wooden yoke crossbar with metal hitch rings. Show a short stretch of wooden axle under the box joining both wheel hubs."
+}

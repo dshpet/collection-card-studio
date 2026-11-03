@@ -1,0 +1,16 @@
+{
+ "survey": "A saloon swing-door set on a wooden floor. Two square wooden posts stand on plinth blocks that rest on the floor planks. The right post is nearer the camera, so the frame turns slightly away to the left. A thick lintel beam sits across the tops of both posts. Two half-height louvered doors hang between the posts at about waist-to-chest height. Each door has two brass barrel hinges on its outer edge: the left door's hinges are on its left stile, and the right door's are on its right stile. The doors meet at the centre with a small gap, and each has spindles on top and a panel below. The floor shadow places the whole set on the floor, so nothing floats.",
+ "errors": [
+  {
+   "where": "Left door and left post junction",
+   "what": "The left door's outer stile overlaps the front face of the left post instead of sitting in the opening beside it. The door is in front of the post, and its hinges are on the door's own edge, not between door and post. As drawn, the door could not swing on that post.",
+   "severity": "minor"
+  },
+  {
+   "where": "Both doors relative to the frame",
+   "what": "The doors are drawn flat to the camera, while the posts and lintel turn away in perspective. The lintel slopes, but the door tops are level. Both doors are the same height even though the right post is nearer. The doors do not sit in the plane of the frame they hang in.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Hang both saloon doors inside the opening, in the same plane and perspective as the posts and lintel, so the door tops run parallel to the sloping lintel. Fix each door's outer edge just inside its post with a small gap, and put the brass hinges on the seam so each one joins the door stile to the inner face of the post. No door part should overlap the front of a post."
+}

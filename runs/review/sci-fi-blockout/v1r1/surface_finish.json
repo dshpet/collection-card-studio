@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the moon ground is covered edge to edge in fine grey speckle and grit, with dozens of tiny pebbles and craters that all have the same sandpaper grain. The cream tube carries a hard lacquered streak of highlight (highlight 0.174, at the top of the real range). B: the green binocular barrels are smooth, semi-matte rubber. The wood floor has quiet, broad grain and soft, even sheen, like the real barrel and deck.",
+   "fix": "Draw the moon ground as smooth, softly shaded grey with only a few large, simple craters. No fine speckle or grit. Give the telescope tube a soft satin sheen instead of a sharp glossy streak."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the ground is stippled with fine noise and scattered micro-pebbles. The white base ring and tunnel have a faint concrete-pore grain. The glass dome has hard, bright window-reflection highlights (gloss 0.219 and highlight 0.215, both above the real range). B: the bar top, stools and fruit are smooth, simple painted surfaces. The thatch is drawn as large, clean shingles, not noise.",
+   "fix": "Paint the ground as smooth, flat lilac-grey with a few soft craters and no speckle. Make the white base clean, smooth plastic with no pores. Keep the glass dome softer, with one gentle highlight."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the regolith under the rover is a dense field of fine grit and tiny stones. The white body is evenly lacquered, with crisp screw dots and vent slots (highlight 0.253, well above the real max of 0.171). B: the taxi's yellow paint has a soft sheen, the chrome bumper and headlights are the only shiny parts, and the road is flat and quiet. This is a mix of matte and gloss like the real caravan.",
+   "fix": "Make the ground smooth grey with a few big, soft craters and no grit. Give the rover body a soft satin finish and keep strong shine only on the metal axles."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the floor is brushed steel plates with fine directional scratch lines and many tiny rivets. The console's grey metal and the buttons all carry the same glossy candy shine. B: the popcorn kernels have soft lumpy texture, the cart's red paint is semi-matte, and only the glass case reflects. The paving is quiet.",
+   "fix": "Draw the floor as plain, softly shaded grey panels with no brushed scratches and only a few rivets. Make the console body matte painted metal so the buttons are the only shiny parts."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the asteroid is a single dull clay-like material with uniform fine pitting and pinholes across the whole surface. It has almost no sheen (gloss 0.007, below the real min of 0.010). The flame tails are glossy jelly with no transition between the two materials. A: the red scarf is soft, satin fabric with gentle folds. The badge has a mild metal rim, so there is a matte/sheen mix within the object.",
+   "fix": "Paint the asteroid as smooth, softly shaded rock with a few large craters and no fine pinhole noise. Add a faint soft sheen on its lit side."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the orange planet surface is peppered with tiny random pinholes. The ring, bands and gem are all one candy-plastic finish. A: the flip-flop soles have regular, deliberate nub dots at a sensible scale. The rubber sole is matte and the yellow strap has a satin sheen, so the materials are clearly separated.",
+   "fix": "Remove the small dents and pinholes from the planet so the orange body is clean and smooth. Make the ring a slightly different, softer sheen from the body."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the flower petals are puffy, semi-glossy clay, the leaves are smooth and the border stones are matte, similar to the real rose arch. B: the green chair fabric is matte with a seam, and the frame tubes have a soft metal sheen. The whole card is slightly soft-focus with faint background noise. Neither card shows a clear surface tell.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the helmet shell is flawless, equally lacquered white plastic. The visor is a mirror-glossy amber dome with large hard reflections (highlight 0.197). The shelf has fine brushed streaks. Nothing on the helmet is matte. B: the sneakers mix fine mesh dot texture, matte foam soles and glossy laces. This gloss variety within one object matches the real cards, even though the shoe is busy.",
+   "fix": "Make the helmet shell a soft matte white with a gentle sheen, and keep the strong shine only on the visor. Give the shelf a plain, smooth surface with no brushed lines."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the grey pedestal has fine scuffs and scratch grain, small screw heads and a riveted collar. The dish and bolts have sharp specular glints (highlight 0.238, above the real max of 0.229). B: the sand castle is soft, uniform, matte sand with simple brick lines. The bucket and shovel are smooth plastic with mild sheen.",
+   "fix": "Paint the pedestal as smooth, clean grey with no scratches or grain and only a couple of simple bolts. Soften the glints on the dish to a gentle highlight."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the saucer's top is covered in fine concentric brushed-metal streaks, a strong decorative micro-pattern. The green dome and orange lights are glossy jelly with hot glows. B: the yellow player is matte rubbery plastic, and the white earbuds have a soft satin sheen. Both are quiet surfaces, like the real fan and clock.",
+   "fix": "Draw the saucer as smooth, softly shaded silver metal with no brushed or circular streaks, and give it one broad soft highlight."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the submarine is glossy yellow paint with small copper rivets and porthole rims, comparable to the real drum kit's hardware. B: the rocket is smooth silver with soft reflections, and the red nose cone and fins are satin. Both have plausible gloss mixes and no surface noise, so this vector gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the umbrella canopy reads as soft, rubbery clay rather than fabric. It has no seams, no stitching and no ribs showing through, and the finish is completely flat (gloss 0.001, micro-texture 0.0048, both below the real range). The pole is a featureless tube. A: the golf club has brushed metal with crisp face grooves, the ball has fine, regular dimples, and the grass is matte. This mixes materials like the real bicycle card.",
+   "fix": "Draw the umbrella canopy as fabric panels joined by thin seams, with the spokes faintly showing under the cloth and a soft satin sheen. Add a small metal tip and joint on the pole."
+  }
+ ],
+ "pattern": "Generated cards break from the real cards in two ways. Most often they add a fine, uniform micro-texture that real cards never paint: speckle, grit and pebbles on moon or desert ground, brushed or circular metal streaks, and pinholes on rock or planets. They also put hard lacquered highlights on everything, with highlight share above the real range. The rarer opposite failure is surfaces smoothed to one flat material: a clay-like asteroid, a seamless rubbery umbrella. Real cards stay quiet and soft, and they separate matte from shiny within one object."
+}

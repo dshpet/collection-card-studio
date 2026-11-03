@@ -1,0 +1,16 @@
+{
+ "survey": "A satellite dish on a pedestal, standing in a desert. Ground: a square stone slab lies flat on the sand, turned about 3/4 to the camera. We see its top face and its front and left side faces from moderately above, which fits the high horizon (about 245 of 480 on the card). Pedestal: a grey truncated cone rises straight up from the centre of the slab. It has an access panel on its front, and its bottom edge sits flush on the slab. Collar: a riveted ring caps the cone at roughly eye level, a little above the horizon. Yoke: a box-shaped bracket sits on the collar. We see its front face with a round pivot bolt and a little of its left side, which matches how the slab is turned. Dish: a shallow white bowl hangs off the pivot behind the bracket. It tilts up and to the left, and we see its concave inside as an open ellipse whose short axis points upper-left. Feed: a small housing with a red tip is held up and to the left of the dish by three struts. Two short struts come down onto the lower-left inside of the bowl, and a long horizontal arm reaches the far upper-right rim. Overall the slab, cone, collar and bracket share one 3/4 view from slightly above, and the verticals stay vertical.",
+ "errors": [
+  {
+   "where": "Feed struts of the dish (upper left)",
+   "what": "The three supports don't form a believable tripod in this view. Two struts land close together on the lower-left inside of the bowl, away from the rim, while the third runs flat across to the far upper-right rim. Struts spread evenly around the rim would show up as points spread around the ellipse, and all three would meet at one feed point above the dish's centre axis. Here the feed looks bolted to the edge of the dish rather than held up in front of its centre.",
+   "severity": "minor"
+  },
+  {
+   "where": "Collar ring on top of the cone",
+   "what": "The collar sits at or slightly above the horizon, yet its top surface and the dark inner gap are drawn as a fairly open ellipse, as if seen from above. That matches the view of the slab far below eye level, not where the collar actually is. At this height the ring should look almost edge-on, with little or none of its top showing.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the dish feed on three evenly spaced struts that start at points spread around the dish rim and meet at one feed housing on the dish's centre axis, in front of the middle of the bowl. Draw the riveted collar on top of the pedestal nearly edge-on, as it is at eye level, so its top surface barely shows, while the stone base slab stays seen from above."
+}

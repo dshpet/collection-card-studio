@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: mojito glass seen nearly at eye level. The rim is a shallow ellipse that matches the table edge, and there is one simple tabletop plane. B: binoculars turned three-quarters and cropped at the bottom edge, with a softer, simpler city skyline behind. Both use one consistent mild view, as the real cards do.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the witch-hat brim is a wide, tilted ellipse seen from well above, but the cone and buckle face the camera almost flat-on. Two camera heights are mixed on one object. B: the graduation cap's board and band share one three-quarter view from slightly above, and the board's flat top reads as one even patch.",
+   "fix": "Draw the witch hat from one slightly raised camera so the cone leans with the brim: the band ellipse curves around the cone the same way the brim does, and the buckle turns slightly to the side."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the seahorse is a flat side profile on a soft underwater gradient with no ground. B: the guitar leans on a stage floor whose planks recede gently, with a truss and spotlights as a simpler background layer. Both views are internally consistent.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the floorboards run steeply to a corner, as if the camera were high, yet the cat's face, eyes and collar are drawn straight on at eye level, so the cat does not sit in the floor's view. The normal map shows an almost uniform rainbow body with no planes (planar_share 0.005, below the real range). B: fountain tiers and the paved ring share one raised three-quarter view, with ellipses that tighten consistently from basin to top bowl.",
+   "fix": "Lower the camera to just above the cat's back so the floorboards recede gently, and turn the cat slightly three-quarters with its head seen from a little above, matching the floor."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the coffin's front face is dead flat to the camera with only one side strip visible and no top face, while the grass plane behind is seen from above. It stands like a cut-out on the meadow, and the normal map is almost all flat patches (planar_share 0.854, far above the real range). B: chess table, stools and plinth share one raised three-quarter view, with the board's top face clearly visible, and the trees and path behind are simplified.",
+   "fix": "Turn the coffin three-quarters and raise the camera slightly so its top edge and lid bevel show, with the base sinking into the grass on the same angle as the ground."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the spring duck is turned in profile-to-three-quarters, and its base plate and sand mound are seen from one gentle raised angle. B: the pumpkin's carved face is square-on and centered, the floorboards recede in a strong horizontal band, and the stem shows almost no top. It is a frontal straight-on view, like the generated lesson cards.",
+   "fix": "Turn the pumpkin about 30 degrees so one side of the face wraps away, and raise the camera a little so the top and stem are seen from above, matching the angle of the floorboards."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the oil lamp's foot, body rim and chimney opening all show matching top ellipses from one slightly raised view. B: the candelabra is perfectly symmetric and frontal. The foot is a clear top-down ellipse, but the arms and candle tops read flat and straight-on, so the parts do not share one view.",
+   "fix": "Rotate the candelabra slightly so one arm comes forward and the other goes back, and draw small top ellipses on each cup and candle that match the foot's ellipse."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the house is seen from a high corner with a strong downward look onto a domed hill, but the two trees beside it are flat, frontal and the same size as if at the same depth, which mixes views. B: the lighthouse is seen at low eye level and cropped at the bottom, with the horizon low behind it. That is a real-card framing.",
+   "fix": "Lower the camera toward eye level so the house sits on a gentle ground plane, and place the trees clearly behind it, smaller and simpler."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the tombstone slab faces the camera almost dead-on, with a thin side strip only on the right, while the base slab shows its top face from above. It reads as a flat cut-out, and the normal map is nearly all even flat patches (planar_share 0.805, above the real range). B: the sneakers are turned three-quarters on a floor seen from a gentle raised angle, and both shoes share one view.",
+   "fix": "Turn the tombstone three-quarters so its thickness shows on one side, and let the top edge and base share one slightly raised camera on a softly receding floor."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the scarf's neck loop is seen from slightly above, so the inner back of the loop shows, and the knot and tails hang forward in the same view. B: the broom lies as a flat diagonal sticker on a pattern with no ground and no foreshortening. The shaft is an even tube and the bristles are a flat fan.",
+   "fix": "Tilt the broom so the bristle end comes toward the camera and looks larger, with the handle shrinking slightly as it goes back."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the floor tiles converge sharply into a room corner, as from a high wide-angle camera, but the cauldron's rim ellipse is shallow and its legs and handles are seen near eye level, so the pot and floor disagree. B: the boxing gloves fill the frame at a low camera on a table edge, with the wall behind simplified, in one consistent view.",
+   "fix": "Use a mild-perspective camera with gentler floor-tile lines, and open the cauldron's rim ellipse so its top is seen from the same height as the floor."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the juice glass is at eye level on a simple purple table, with a rim ellipse matching the base. B: the crystal ball sits dead center and frontal. The shelf front edge runs perfectly horizontal and the stand's foot is a top-down ellipse, but the brackets and sphere read straight-on, and the normal map has large flat areas (planar_share 0.593, above the real range).",
+   "fix": "Turn the stand slightly three-quarters so one bracket comes forward, and set the shelf at a gentle angle so its top surface recedes on the same angle as the stand's foot."
+  }
+ ],
+ "pattern": "Generated cards are drawn frontal, centered and fully framed. The object's face is square to the camera, often over a ground plane seen from a noticeably different, higher angle (steep floorboards or tiles), so the object and the ground do not share one camera. Flat-faced generated props (coffin, tombstone) read as cut-outs, with planar_share above the real range. Real cards turn the object three-quarters, use one mild camera for object and ground, crop boldly, and keep backgrounds simpler rather than strongly receding."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (lasso): in the lens the whole rope sits in the top white level against a mid-grey field with dark wavy patches. There is almost no middle value inside the hero and little roll-off. rms 0.079 is below the real range and the gap of +0.146 is above it. B (scarf): a dark red mass sits on a light swirl with graded mid tones in the folds, like the real cards.",
+   "fix": "Shade the rope coil with mid-tone shadow on its lower and inner turns so it is not uniformly pale. Keep the purple waves close in value to each other."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (hat): the crown and brim fall in the same mid grey as the background rays. Only the thin cream brim rim and the band separate the hat by value. The card reads flat, with rms 0.084 just under the real range. A (jacket): a light jacket against a dark sash and dark green corners. The vignette is strong (0.134) but the value groups are clear.",
+   "fix": "Darken the underside of the brim and the shadow side of the crown to a deep brown, and lighten the top of the crown. That way the hat stands apart from the blue rays in value, not just in hue."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B (locomotive): a huge near-black boiler and cab fill the card centre against a bright, pale desert and sky. The darkest accent covers a very large area. rms 0.229 and a gap of -0.337 are both beyond the real range. A (coaster): mid-value cars and track against a light sky, with balanced groups.",
+   "fix": "Paint the locomotive in a lighter charcoal-blue with clear highlights along the boiler top, and keep true black only for small accents like the wheel hubs and smokestack rim."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (barrel): a dark mid-grey barrel with black hoops stands against an almost white yellow wall and floor. The hero is far darker than its surround, with a gap of -0.318 and rms 0.207, both outside the real range. B (chest): gold and red-brown on deep blue, with mid groups and dark accents kept to the keyhole and the chest's interior.",
+   "fix": "Lighten the barrel staves to a warm mid orange with a bright highlight down the lit side, and make the wall a deeper yellow so the barrel does not read as a dark cutout."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (book): a white open book against black gaps behind the railing at mid-card, with bright corners (vignette -0.152, gap +0.19, both outside the real range). B (stone chess table): light stone on mid-grey grass with dark cast shadows, within range.",
+   "fix": "Fill the gaps in the railing with mid-green foliage instead of near-black. Let the card's corners settle slightly darker than the book."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (cactus): the lens shows the cactus, the diamond wall and the sand all in two neighbouring light-mid greys. There is no dark group, and the hero barely separates by value. The key is too high (0.743) and rms too low (0.092). B (popcorn cart): a dark cart body, a white awning and a dark blue top give clear light, mid and dark masses.",
+   "fix": "Give the cactus a deep green shadow side and dark grooves between its ribs, and make the orange wall a deeper, darker orange so the cactus stands out in value."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (star): the star is almost entirely the top white level, with a bright glow ring right behind it and dark purple rays at the edges. The hero is lighter than the background (gap +0.176, above the real range). A (ring box): a dark red box with a pale cream interior against cyan rays. The corners are dark (0.162) but the hero holds both dark and light groups.",
+   "fix": "Shade the star's points with warm mid-gold on their shadow facets so it is not uniformly bright. Calm the light burst directly behind it."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (wagon): the grass, the dirt road and the wagon box all sit in one mid-grey band. The canvas top is the only light shape and there is no strong dark group. The key is high (0.728, above the real range). A (boat): an orange boat and dock with dark interior shadows against mid cyan water.",
+   "fix": "Darken the wagon's wheels and the shadow under the box to a deep brown, and make the grass a richer, darker green so the wagon pops."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (drink): a pale glass and ice against a dark blue backdrop, with a light glow on the table behind it. The hero is much lighter than its surround (gap +0.2, above the real range). A (feeder): dark tree canopy at the top corners and a mid-value feeder. It is contrasty, but the groups are coherent.",
+   "fix": "Tint the drink a deeper green-teal with darker lower layers, and lift the backdrop toward a mid blue so the glass is not a bright cutout."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (sneakers): the floor is almost white, the wall is light, and the dark blue shoes cluster as a mid-dark mass. The overall key is too high (0.762). B (saloon doors): dark posts, cream doors and a mid-grey pink wall, within the real ranges, though the floor shows streaky grain noise.",
+   "fix": "Bring the floor down to a warm mid yellow and add a soft shadow under the shoes, lowering the overall brightness of the card."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "A (computer) is a lesson card marked REAL. B (saddle): a dark brown leather mass against a bright, flat cyan field, with a very large value drop (gap -0.281, below the real range) and a light halo behind it.",
+   "fix": "Light the saddle seat and flaps with warm tan highlights so the leather sits in middle values, and drop the glow behind it."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (boot): the background collapses to a single flat light-grey level with no ring separation, and the boot is a near-black silhouette (gap -0.343, the most extreme in the set). A (grad cap): also a dark hero, but it sits on rings with a light disc behind it, giving the card three value steps.",
+   "fix": "Paint the boot in a lighter tan-brown with a bright highlight down the shaft, and make the orange rings alternate light and dark so the background has value steps."
+  }
+ ],
+ "pattern": "Generated cards break the real cards' value balance in two ways. The hero becomes an extreme value cutout: a near-black mass on a pale field (train, barrel, boot, saddle) or a pale shape on a dark field (lasso, star, drink). Or the hero and background merge into one flat grey band (cactus, wagon, hat). In the real cards the hero is a middle-value mass with its own light and dark groups, set against a background only a step or two away."
+}

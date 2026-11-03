@@ -1,0 +1,16 @@
+{
+ "survey": "A round black cauldron of green bubbling liquid, standing on visible stubby legs (front-left and back-right; the third is hidden) on a stone-tile floor, with a small fire beneath. The camera looks down from moderately high: the floor tiles recede steeply toward a pink wall near the top of the card, and the tile grid runs diagonally to the cauldron. The cauldron faces the camera almost straight on. Its rim is a wide, fairly narrow ellipse showing the liquid surface. The bulbous body sits on the legs, and each leg ends in a round foot ring that is drawn as a more open ellipse resting flat on the tiles. The fire glows between the legs. There are two side handles. The left one is a loop on a small lug just under the rim, drawn as a narrow, nearly edge-on oval. The right one is a large ring hanging from a square block lower on the body, drawn almost face-on with a wide round hole.",
+ "errors": [
+  {
+   "where": "Left vs right side handles",
+   "what": "The cauldron is seen almost head-on, so its two opposite handles should look like mirror images. Instead the left ring is a thin, nearly edge-on oval set high near the rim, and the right ring is a wide, face-on circle on a block much lower on the body. Each handle looks as if it was drawn from a different angle and height.",
+   "severity": "major"
+  },
+  {
+   "where": "Rim ellipse vs floor plane and foot rings",
+   "what": "The rim and liquid surface are drawn as a fairly flat ellipse, as if seen from only slightly above. The floor tiles and the foot rings are seen from clearly higher up. So the top of the pot reads as more level than the ground it stands on.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Front three-quarter view from slightly above, one consistent camera. Two matching handles on opposite sides of the cauldron at the same height just below the rim: identical lugs and identical rings, each drawn as the same mirrored oval. Rim and liquid surface drawn as a rounder ellipse that matches the downward viewing angle of the stone floor and the round feet."
+}

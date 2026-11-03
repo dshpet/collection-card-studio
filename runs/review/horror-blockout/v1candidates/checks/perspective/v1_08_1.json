@@ -1,0 +1,11 @@
+{
+ "survey": "A glass crystal ball sits in a gold stand on a wooden tabletop, seen from slightly above and roughly level. The stand has a wide round foot, a narrow ringed stem and a shallow cup. The ball rests in the cup. Two curved gold prongs with ball tips rise from the left and right of the cup to hold the sphere. The ellipses of the foot, stem rings and cup rim are all seen from above. The lower ones are more open than the upper ones, which is correct for one camera above the object. The foot sits flat on the tabletop, and its shadow falls to the right on the table plane. The table's back and front edges both slope gently down to the right, which agrees with a slightly turned table. The ball itself is a true circle.",
+ "errors": [
+  {
+   "where": "The two gold prongs holding the sphere",
+   "what": "The prongs should be a matching pair on opposite sides of the cup, but they are placed differently. The left prong rises from the cup rim and its tip sits on the sphere's outer edge. The right prong starts outside and below the cup's right side, and its tip sits well inside the sphere's outline, in front of the glass. If they were a pair on opposite sides of a ball seen almost level, both tips would sit at the same depth near the silhouette. Instead one reads as beside the ball and the other as in front of it.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the two gold prongs a mirror-image pair. Both should start at the cup rim on opposite sides, curve up the same way, and end at the same height with their ball tips just touching the sphere's left and right edges. Neither prong should cross in front of the glass."
+}

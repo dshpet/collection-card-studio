@@ -1,0 +1,11 @@
+{
+ "survey": "The card shows a single rounded-top tombstone on a rectangular plinth, standing on a flat pale-yellow floor against an orange wall. The camera is slightly above and to the right of the stone. The upright slab faces the viewer almost square-on: its arched left shoulder shows no side thickness, and its right side shows a narrow side face. The broken notch at the upper right shows the tops of its steps, which fits a viewpoint a little above the stone. The raised cross is a shallow relief on the front face, seen straight on, and its thickness and shading agree with the slab. The slab sits a little back from the front edge of the plinth, and its bottom edge slopes gently down to the right. The plinth shows a front face, a thin strip of its top, and a short right end face, all seen from above and to the right. The plinth rests flat on the floor, its shadow falls behind it to the right, and the floor meets the wall in a level line. Overall the stone and its ground read as one viewpoint.",
+ "errors": [
+  {
+   "where": "Plinth front face, from its left end to its right end",
+   "what": "The top and bottom edges of the plinth's front face do not run to the same vanishing point. The top front edge is almost level, but the bottom edge slopes clearly down to the right, so the face grows from about 85 px tall on the left to about 120 px on the right and looks like a wedge. The slab above it tapers only slightly and its sides stay vertical, so the plinth looks like it is seen at a stronger angle than the stone on top of it.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the plinth as a true rectangular block of even height. Make the top and bottom edges of its front face run parallel to each other and to the slab's bottom edge, all sloping at the same gentle angle. Show the plinth's top surface as a strip of even depth in front of the slab."
+}

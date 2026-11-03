@@ -1,0 +1,21 @@
+{
+ "survey": "Moon-base habitat on a cratered grey surface. Main parts: (1) a low round concrete-like base cylinder sitting flat on the ground, with a lip at its top edge; (2) a clear blue glass dome on that lip, with white ribs running from the rim to a round cap at the top; (3) a horizontal tunnel module coming out of the base's left side toward the camera. The tunnel has a collar ring where it joins the base, two block cradles under it on the ground, and a round end cap with a yellow rectangular door and knob facing the camera; (4) a metal ladder with two rails and four rungs. Its feet are on the ground and it leans against the base wall, with its top at the lip just below the dome glass. The dome, base and tunnel all rest on the ground and are seen from a three-quarter angle above.",
+ "errors": [
+  {
+   "where": "Ladder on the front of the base cylinder, right of center",
+   "what": "The ladder leads nowhere. Its rails end at the narrow lip right against the dome glass, and there is no hatch, platform or walkway at the top. It is also only leaned against the wall, with no brackets holding it. Nothing explains why it is there.",
+   "severity": "major"
+  },
+  {
+   "where": "Yellow door on the tunnel end cap",
+   "what": "The door does not match the ladder's scale. It is only about half the ladder's height, too small for a person in a suit to walk through. It also sits off-center toward the left edge of the round end cap, not centered as an airlock door would be.",
+   "severity": "minor"
+  },
+  {
+   "where": "Joint between the tunnel collar and the base",
+   "what": "The tunnel's collar ring blends into the base's top lip and wall. There is no clear seam or flange showing where the two modules connect.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Either remove the ladder or give it a purpose: fix it to the base wall with brackets and have it reach a small hatch or a railed platform at the dome rim. Make the yellow airlock door on the tunnel end cap person-sized, centered on the round cap and filling most of its height. Show the tunnel joining the base cylinder with a clear round flange where it meets the wall, below the dome lip."
+}

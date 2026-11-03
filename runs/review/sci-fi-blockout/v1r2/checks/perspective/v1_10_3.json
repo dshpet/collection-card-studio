@@ -1,0 +1,11 @@
+{
+ "survey": "A lunar outpost on cratered ground, seen from a raised three-quarter view with the horizon high in the frame. Main parts: (1) A low white cylindrical base standing flat on the ground. Its top rim and bottom edge are shallow ellipses seen from slightly above. (2) A glass dome on the base, with white ribs that curve over it and meet at a small flat cap on top. The cap is a thin ellipse seen from above, and the floor ring inside the dome is visible through the glass. (3) A tube-shaped tunnel that comes off the base's left side and runs toward the front-left. Its body rests on two small block supports on the ground. Its ring seams are curved and parallel to its end. The end is a tall, narrow ellipse facing front-left and carries a yellow rectangular door. (4) A metal ladder that leans on the front-right of the base wall, with its top near the rim and its feet on the ground a little in front of the wall. Its rails are straight and its rungs are level. (5) The ground: a large crater at the back left, several small craters and rocks scattered around, all drawn as ellipses on a plane that runs back to the horizon.",
+ "errors": [
+  {
+   "where": "Base and dome compared with the surrounding ground and craters",
+   "what": "The ground and the structure are seen from slightly different heights. The craters are fairly round ellipses (about 1:2.5 to 1:3), and the far crater is rounder than the near ones. Together with the high horizon, this means the camera is looking down steeply. But the base's top rim and bottom edge are much flatter ellipses (about 1:5), and the tunnel's end faces almost straight sideways, so the structure is seen from a lower, more level angle. Also, in true perspective the far crater should look flatter than nearer round shapes, not rounder. As a result the base looks as if it is tipped slightly back on its ground.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Use one raised camera angle for everything. Draw the base's top rim and bottom edge as rounder ellipses that match the craters around it, so the base sits flat on the same ground plane. Make craters flatter the farther back they are, so the large far crater is a narrower ellipse than the near ones."
+}

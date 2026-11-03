@@ -1,0 +1,16 @@
+{
+ "survey": "Free-standing saloon doorway on a wooden plank floor, seen at three-quarter view from the front left. Two square wooden posts stand on block plinths that rest flat on the floor. A heavy lintel beam sits across the tops of both posts and overhangs a little on each side. Two short louvered leaves (open slats above, a solid panel below) hang at mid-height in the opening, clear of the floor the way saloon doors do. The left leaf hangs from the left post on two gold hinges and the right leaf from the right post on two gold hinges, with a small gap where the leaves meet in the centre. The left leaf is drawn slightly swung, with its free edge showing thickness. The right leaf sits flat in the plane of the frame.",
+ "errors": [
+  {
+   "where": "The two door leaves",
+   "what": "The mirrored leaves don't match. The left leaf is shorter and hangs higher: its top and bottom rails sit well above the right leaf's, and its bottom edge slopes down toward the centre. When closed, the two halves don't line up, which a real pair of saloon doors would.",
+   "severity": "minor"
+  },
+  {
+   "where": "Hinges of the left leaf on the left post",
+   "what": "The left leaf is drawn swung slightly toward the viewer, but its hinge leaves stay flat on the post face and don't rotate with the door. The leaf's stile also overlaps the front of the post instead of hanging inside the opening, so a two-way swinging door mounted like this would hit the post when pushed inward.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the two saloon door leaves identical mirror images: same height, with top and bottom rails level with each other and both hanging at the same height in the opening. Mount each leaf inside the opening on hinges fixed to the inner face of its post, so the hinges line up with the leaf's edge and turn with the door."
+}

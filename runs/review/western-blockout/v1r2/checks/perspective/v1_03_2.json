@@ -1,0 +1,16 @@
+{
+ "survey": "Card 4 shows a cowboy lasso on a purple wavy background, with no drawn ground. The soft shadows below and to the right suggest it lies just in front of a flat backdrop. It has four parts. (1) A coil of rope on the left, shown as about five stacked windings. The windings step off toward the right, so the coil reads as a short cylinder seen from the front-left, with its axis turned to the right and away from the viewer. Its centre hole is a narrow, upright oval. (2) A red tie wrapped over the top of the coil, seen slightly from above and in front, which matches the coil. (3) A tail end that crosses over the front of the coil, bends and drops straight down, ending in a cream cap. (4) A connecting length of rope that leaves the coil's lower right, passes through a cream eyelet (the honda), and becomes the large open loop on the right. The eyelet is a short cylinder seen from the side, and the rope enters it from both sides along its axis, which works. The large loop is almost a circle, so it is seen nearly face-on, flat to the picture plane, and it has only a thin, even rope thickness.",
+ "errors": [
+  {
+   "where": "Left coil compared with the large loop on the right",
+   "what": "The coil and the loop are seen from different viewpoints. The coil is drawn from an oblique front-left angle: its windings fan out sideways and its centre hole is squeezed into a narrow oval. The open loop next to it is drawn almost face-on as a near-circle. Both are one rope lying on the same backdrop, so one camera should foreshorten them both: either the loop should also be a narrower ellipse turned the same way, or the coil should be seen face-on, with its windings stacked mostly toward the viewer and a rounder hole.",
+   "severity": "minor"
+  },
+  {
+   "where": "The coil where it meets the backdrop",
+   "what": "The shadows suggest the rope lies flat on the backdrop, but the coil's windings are shown from the side like an upright cylinder standing out from that surface. It is unclear whether the coil lies on the surface or stands on its edge, so its contact does not match the flat-lying loop.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Show the whole lasso from one camera angle, lying flat on the surface. Draw the coiled rope from the same front view as the open loop: its windings stack toward the viewer as nearly concentric circles, its centre hole is round like the loop, and only a slight offset shows the coil's thickness. Alternatively, keep the angled view of the coil and draw the open loop as an ellipse narrowed and tilted the same way, so the coil and the loop share one plane and one viewpoint."
+}

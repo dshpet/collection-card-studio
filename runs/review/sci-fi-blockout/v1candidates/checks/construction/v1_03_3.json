@@ -1,0 +1,21 @@
+{
+ "survey": "A stylized ringed planet seen at a three-quarter tilt, floating in space against a purple striped background. Floating is correct for a planet, so support is not an issue. Main parts: (1) An orange cratered sphere, the planet body. It is split into horizontal bands: a lighter orange cap, a wide cream band, an orange middle, and a cream-and-orange lower section. (2) A flat yellow ring tilted down toward the lower left. Its front arc crosses in front of the lower body, and its back arc passes behind the upper right of the body. The purple gap between ring and body shows on the right. The over/under order is consistent. (3) A round blue porthole with an orange rim. It sits on the upper-left of the sphere, half over the cream band, and faces the camera.",
+ "errors": [
+  {
+   "where": "Blue porthole on the upper-left of the planet body",
+   "what": "Invented part: a planet has no window or porthole. The rimmed blue lens is a gadget stuck onto a natural body, so the object reads as neither a real planet nor a clear spaceship.",
+   "severity": "major"
+  },
+  {
+   "where": "Right and lower-left edges of the planet body, where the cream and orange bands meet the silhouette",
+   "what": "Shape fault: the bands do not wrap a round sphere. The cream band and the lower cream/orange slice jut past the sphere's outline as separate stepped discs, most clearly on the right side between the ring and the body and just above the front of the ring at lower left. The body looks like a stack of slices of different widths instead of one sphere.",
+   "severity": "minor"
+  },
+  {
+   "where": "Cream band across the upper body compared with the ring",
+   "what": "The band's tilt does not match the ring's plane. The band runs almost level while the ring tilts steeply, so the equator stripes do not line up with the ring the way a planet's bands would.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "A smooth, perfectly round orange planet with a tilted yellow ring. Do not add any porthole, window or device on the planet's surface. The cream and orange stripes are painted on the sphere's surface and curve with it. They stay inside its round outline with no stepped or protruding layers, and they run parallel to the ring's plane."
+}

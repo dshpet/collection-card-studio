@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the telescope tube is a plain uniform cylinder with a flat eyepiece stub, sitting in a boxy mount on three equal straight rods. It's a primitive assembly, and its solidity (0.36) is below the real range. B: the binoculars have two barrels of unequal depth, a stepped eyecup rim and a hinge bridge that holds its separate parts, like real cards' layered forms.",
+   "fix": "Draw a brass-and-wood telescope with a tapered tube, a focuser knob, a finder scope on top, and tripod legs with joints and a spreader brace. No plain uniform cylinder."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the base is a dome on a drum with a plain capsule tube attached. These are three primitive solids with soft blob ends, and the ladder is the only thin part. B: the swim-up bar has many distinct parts (stools with ring footrests, glasses with stems, fruit) and a busy, open silhouette like the real cards.",
+   "fix": "Break the moon base into real parts: a ribbed dome frame, a hatch door with a frame, antenna masts, support legs and a stepped airlock with a crisp edge. Keep the cylinder ends flat with tight bevels."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the rover body is a swollen white pillow box with rounded edges. The wheels are fat round blobs, the suspension struts are stubby tubes, and the dish is a disc on a stick. Straight_share is 0.15, below the real range. B: the taxi has a stepped roofline, a flat hood, a defined grille, and wheel arches that read as real proportions.",
+   "fix": "Give the rover a flat-faced chassis with tight bevelled corners, thin jointed suspension arms, and treaded wheels with visible rims. Use a mast-mounted camera head and a flat solar panel with straight edges."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the console is one plain slanted box, and its silhouette is almost a single block with nothing but the joystick ball sticking out. Straight_share is 0.765, above the real range, so it reads as a blockout primitive. B: the popcorn cart has a scalloped awning, thin posts, a handle and spoked wheels, so it has the real part count and thin parts.",
+   "fix": "Draw the console with a raised back panel, angled screen bezels, toggle switches and a kick-plate base with feet. Give the top a lip or overhang, and keep the joystick shaft thin."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the meteor is a single lumpy potato blob with three teardrop flame lobes and dots at the tips. It's a soft, swollen form with no defined facets. A: the scarf has a clear loop, a knot and two tapered tails, so its parts make sense together.",
+   "fix": "Draw the asteroid as a faceted rock with sharp broken planes and chipped edges, and a long streaked flame trail that tapers to a point. No round balls at the flame tips."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the planet is a ball with a thick ring like a flat donut and a stuck-on gem. The ring is chunky and uniform, like a toy. A: the flip-flops have flat soles of believable thickness and thin straps, matching the real proportions.",
+   "fix": "Draw Saturn's ring as a thin, wide band with banded subdivisions, much thinner than the planet's radius. Remove the gem button."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the flower bed has puffy balloon flowers and pillowed curb stones. B: the folding chair has thin tubular legs and flat fabric. Both match real-card shape handling, and there's no sci-fi blockout shape tell in either.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the helmet is a perfect sphere on a plain puck base, and the visor is a smooth oval cut. It's two primitives with no neck ring detail, hoses or side fittings, and a near-blob silhouette (solidity 0.971). B: the sneakers have a stepped sole, a tongue, a heel tab and lace bumps along the contour.",
+   "fix": "Draw a space helmet with a neck ring collar, side vents or lamp housings, a visor with a frame and hinge, and a rounded rectangular shape instead of a pure sphere. Put it on a stand with a defined flat-topped edge."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the dish is a plain disc on a simple cone tower with a square slab base. The feed arm is one rod, and the parts are a stack of primitives. B: the sandcastle has crenellations, arched doors, and a bucket and spade with thin handles, so it has many parts and a real-card silhouette.",
+   "fix": "Draw the satellite dish with a lattice of back-support ribs, a feed horn on three thin struts, a geared pivot mount and a tower with panel seams or a ladder."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the UFO is a smooth ellipse saucer with a hemisphere dome and lights stuck on as round bumps. It reads as a single soft blob outline. B: the music player has a flat-faced case, and its thin cables and earbuds stay thin.",
+   "fix": "Draw the saucer with a stepped rim, a defined edge ring with recessed lights, a panelled underside and a dome with a frame ring. Use crisp rim edges, not a soft blob ellipse."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the rocket is a bare cone plus cylinder with three flat fins and a tiny nozzle, which is a minimal primitive part count. A: the submarine has a periscope, a conning tower, a propeller with blades and rivets, so it has the full part count.",
+   "fix": "Draw the rocket with a nozzle bell, panel rings around the body, fins with leading-edge thickness and fin tips, and a hatch. Keep the fins thin and flat."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the golf iron has a heavy rounded clubhead and a thin shaft. B: the umbrella has a scalloped canopy and a thin pole. Both keep thin parts thin and match real-card shape handling, and I see no blockout tell.",
+   "fix": ""
+  }
+ ],
+ "pattern": "The generated cards are sci-fi blockouts. Each object is built from a few plain primitives (a sphere on a puck, an ellipse saucer, a slanted box, a disc on a cone, a pillow-box rover) with soft blob edges and too few parts. Real cards have stepped rims, thin struts, and fittings or details that break the silhouette."
+}

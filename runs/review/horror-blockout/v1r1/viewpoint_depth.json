@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the lighthouse is shot from low and close, cropped at the bottom edge, with the sea horizon low and the clouds behind as a simpler layer, like the real lighthouse lesson. B: the whole house is shown head-on and small on a round grass mound, with a tree on each side, so the camera sits back and up. The mound's curve and the house base don't agree on one ground angle.",
+   "fix": "Bring the camera down and in so the house fills the card and is cut off at the bottom edge. Turn the house about 30° so one side wall shows. Drop the matching trees on either side and keep the ground flat and level."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the seahorse is a pure side profile with a shallow, relief-like body and no ground. B: the balloon cluster floats at eye level with soft round forms and simplified clouds behind. Neither breaks a real-card camera rule.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: a low camera looks across a wooden tabletop at the gloves, which are cropped at the left and right edges, with a flat wall behind. B: a high camera looks down into the cauldron's rim. The stone floor tiles converge strongly toward a far corner, giving wide-angle depth, and the whole pot sits small in the middle.",
+   "fix": "Lower the camera to just above the rim so only a thin ellipse of the green liquid shows. Make the cauldron large in frame, with its legs near the bottom edge. Keep the floor tiles nearly parallel, with only mild convergence."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the spring duck is turned in three-quarter view, standing on a sand mound whose edge curves consistently, with the base plate seen slightly from above. B: the pumpkin's carved face looks straight at the camera, perfectly frontal and symmetric, and the table planks run in level horizontal bands behind it.",
+   "fix": "Turn the pumpkin about 30° so its face is angled away and one side bulges toward the viewer. Raise the camera a little so the stem and some of the top show. Run the table planks diagonally into the distance."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the fountain is seen from moderately high and is centered, with tiered basins that share one ellipse angle and a paving floor that curves consistently. B: the cat sits on a floor whose planks converge sharply toward the back corner, which reads as forced wide-angle depth, and the floor plane meets the striped wall at an odd tilt.",
+   "fix": "Use a gentle, mild-perspective view of the wooden floor, with planks running at a shallow diagonal. Make the cat larger in frame, turned three-quarters, and seen from slightly above."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the sneakers are seen in three-quarter view from above, sitting on a clear floor plane with a horizon line and cast shadow. B: the tombstone faces the camera almost flat-on, like an orthographic slab, with its side edge barely showing. The ground blends into the background haze with no clear floor line.",
+   "fix": "Turn the tombstone about 30° so its thick side face and the top of its base show clearly. Draw a distinct ground line behind it, with a soft shadow on the ground."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the witch hat is seen from fairly high, so the brim is a wide, tilted ellipse, while the cone stands almost upright and its tip curls toward the camera. B: the graduation cap is seen from above in three-quarter view, with its flat board and its band in one consistent view.",
+   "fix": "Lower the camera slightly so the brim ellipse is narrower, matching the angle of the cone's base band."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the candelabra is perfectly frontal and symmetric, with the three candles in one flat row, yet its round base is seen from above as a wide ellipse, which mixes two views. B: the oil lamp is seen at near eye level, and its base, bowl and chimney ellipses all share one shallow angle.",
+   "fix": "Turn the candelabra about 30° so the arms recede in depth and one candle sits behind the others. Make the base ellipse match the slight downward view of the candle cups."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the stone table and stools are seen from a raised three-quarter angle, with a flat grass ground, a path receding behind, and trees as a simpler back layer. B: the coffin stands upright facing the camera nearly flat-on, with only a sliver of side showing. Its bottom meets the grass without a clear contact angle, and the headstone and bushes are scattered at different scales.",
+   "fix": "Turn the coffin about 35° so its long side panel and the top edge show. Set it firmly on the grass with a contact shadow, viewed from slightly above."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the glass is seen from slightly above, with a floor line low behind it and the straw and umbrella overlapping in depth. B: the crystal ball sits dead-center and frontal at eye level. The table is a flat horizontal strip with its front edge parallel to the frame, so there is no receding ground.",
+   "fix": "Raise the camera a little and turn the stand so its arms are at an angle. Run the table top away diagonally so the stand's base ellipse sits on a plane that recedes."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the broom floats on a diagonal across a flat patterned background, with no ground and little foreshortening along the handle. B: the scarf is frontal and symmetric, with the neck loop seen from above. Both are floating icons, so the difference here is weak.",
+   "fix": "Tilt the broom so the bristles come toward the viewer and the handle gets shorter as it goes back, with a soft shadow below to suggest depth."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the flip-flops are seen from high above, with both soles at one shared angle and no ground. B: the book stack sits on a windowsill at mild three-quarter view, with the window behind as a simpler layer. Both are consistent.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Compared with the lessons, generated cards turn the hero to face the camera head-on and symmetric (pumpkin face, tombstone, coffin, crystal ball, candelabra) instead of the real cards' angled view. They pull the camera back so the whole object sits small and centered, where real cards crop it at the frame edge with a low, close camera. They also use forced, wide-angle floors (converging tiles and planks), or a flat table strip with no receding ground. Sometimes they mix views, such as a frontal body over a base seen from above."
+}

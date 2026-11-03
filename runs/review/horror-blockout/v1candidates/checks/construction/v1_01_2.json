@@ -1,0 +1,11 @@
+{
+ "survey": "A two-storey stone house on a grassy hill, seen in three-quarter view from the front left. Main block: a rectangular stone body with a gable end facing the camera. It has a round attic window, two lit windows on the upper floor and one on the ground floor, a small purple door with a knob, and a single stone step at the door. A cornice band runs around the walls between the floors. The whole block stands on a stone plinth that sits flat on the grass. Roof: a purple shingled gable roof. The ridge runs from front to back, the left slope meets the tower, and the right slope covers the receding side wall, which has one window on each floor. Tower: a round stone tower joined to the back-left corner of the main block and sharing its plinth. It has two windows and a conical purple roof with a ball finial, and the cone overhangs the tower wall properly. Chimney: a stone stack rising from the right roof slope near the ridge. Background: trees, hills and a full moon, none of which bear on construction. The walls, roof, tower and plinth all connect plausibly, nothing floats or passes through anything, and the window and door counts are reasonable.",
+ "errors": [
+  {
+   "where": "Chimney on the right roof slope",
+   "what": "The chimney stack is built from blocks that shift sideways and lean, so it bends partway up instead of rising straight. A masonry chimney built like that would not stand. Cartoon styling is allowed, but this reads as a crooked, unstable stack rather than a simplification.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the chimney a straight, vertical rectangular stone stack rising cleanly out of the right roof slope, with its courses aligned and a simple cap on top."
+}

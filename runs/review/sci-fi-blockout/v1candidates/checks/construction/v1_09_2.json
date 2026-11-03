@@ -1,0 +1,16 @@
+{
+ "survey": "A desert satellite dish on a pedestal. A square concrete slab rests flat on the sand. A tapered grey concrete tower stands on the slab and has a riveted access panel. A riveted metal ring at the top of the tower carries a turntable. On the turntable sits a single-sided rectangular yoke bracket with a pivot bolt. The white parabolic dish hangs from that pivot, tilted up and to the left so its concave face is toward the camera; the back connection is hidden but believable. A feed hub with a red domed cap sits above the upper-left of the dish on three struts: a long strut runs right to the far rim, and two short struts drop to points on the near-left part of the dish. The whole object is grounded, nothing floats, and the yoke-and-turntable mount could aim the dish.",
+ "errors": [
+  {
+   "where": "Feed support struts, upper left of the dish",
+   "what": "The three struts holding the feed are lopsided. One long strut reaches the far right rim, but the other two drop to points close together on the near-left inside of the bowl instead of being spaced evenly around the rim. That puts the feed off to the side, over the left edge, rather than centred in front of the dish, and such a tripod could not hold the feed steady.",
+   "severity": "minor"
+  },
+  {
+   "where": "Red dome on top of the feed hub",
+   "what": "A glossy red light-like cap sits on the feed. On a real dish the feed horn faces into the dish and carries no beacon on its back, so this looks like an invented part.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Place the feed horn at the dish's focal point, centred in front of the dish and pointing back into the bowl. Hold it on three equal struts spaced evenly around the rim, each ending at the rim edge. Remove the red light from the feed and make it a plain grey metal feed horn."
+}

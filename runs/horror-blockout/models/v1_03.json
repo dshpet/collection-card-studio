@@ -1,0 +1,24 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "problems": [
+   "The carved face has holes: orange skin shows through as ovals inside the grin and a sliver inside the right eye, and there is a seam in the left eye. Each glow plate is one flat quad laid across curved skin, so its middle sinks below the surface. Each plate is now cut into a fine grid of small plates and sits further out (0.01), so the openings stay solid and follow the curve.",
+   "The wooden table renders a pale orange close to the pumpkin's own color, so the pumpkin barely stands out from its surface and the table reads weakly as wood. The planks are now a darker, browner wood with darker gaps."
+  ]
+ },
+ {
+  "round": 2,
+  "error": null,
+  "problems": [
+   "The left eye is not a symmetric up-pointing triangle. Its inner half (toward the nose) is missing, so it reads as a thin slanted sliver, while the right eye is nearly whole. The glow plates sit only 0.01 above the skin and each eye spans the lobe groove at about ±0.19 arc, so parts of the plates sink under the ribbed surface. Fix: move each eye onto its own crest-side area (centers ±0.13, half-width 0.075, clear of the groove), raise the plates' front to 0.02 above the skin, and cut the eyes into finer plates.",
+   "The body skin shows a fine faceted grid because the profile has only 41 points. Use about 81 profile points so the surface reads as a smooth round pumpkin.",
+   "Raise the grin plates to the same 0.02 depth and cut them finer, so none of the teeth sink under the curved skin."
+  ]
+ }
+]

@@ -1,0 +1,16 @@
+{
+ "survey": "Six-wheeled rover on a grey lunar ground with a green sunburst sky. A rounded white box body is seen nearly straight on from a little above and to the right: the long front face, with vents and a plate, faces the viewer, the right side face with a panel turns away to the right, and a thin strip of the top face shows. On top, an orange dish sits on a vertical post on the left and a blue solar panel sits on a short post on the right, both seen from above. Metal suspension struts run from a hub in the middle of the front face down to the wheels. The three front wheels face the viewer, so their hubs are near-circles, which fits the flat-on front face, and their treads show on the right, which fits the view from the right. Three rear wheels show behind them, set higher on the image and a little smaller, which fits depth on a ground seen from above. The wheels touch the ground with soft shadows, and the ground is drawn from above, which matches the body. Overall the camera mostly agrees. Two smaller mismatches are listed below.",
+ "errors": [
+  {
+   "where": "Orange dish on top of the body",
+   "what": "The dish rim is a fairly open ellipse, about half as tall as it is wide, and shows its inside as if seen well from above. The body's top face beside it is seen almost edge-on, as a thin sliver. If the dish faces straight up on its vertical post, its rim should be a much narrower ellipse to match that top face. As drawn, it reads as seen from a higher camera, or tipped toward the viewer with no visible tilt in its mount.",
+   "severity": "minor"
+  },
+  {
+   "where": "Ground horizon behind the rover",
+   "what": "The camera is above the rover, since its top face, dish and panel are all seen from above. So the far edge of a flat ground should sit at eye level, above the top of the body. Instead the ground ends against the sky at about the height of the body's middle, as if seen from a lower viewpoint.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Keep the camera slightly above the rover. Draw the upward-facing orange dish rim as a narrow ellipse that matches the thin, foreshortened top face of the body, or show the dish clearly tilted forward on a hinged mount. Raise the lunar horizon so the far edge of the ground sits at eye level, above the rover's top surface, with the gravel ground rising up behind the rover to meet the sky."
+}

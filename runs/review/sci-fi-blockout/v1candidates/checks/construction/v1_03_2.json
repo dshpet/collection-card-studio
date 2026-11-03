@@ -1,0 +1,16 @@
+{
+ "survey": "A cartoon ringed planet floating in space against a purple striped background, seen from slightly above and tilted so it rises to the right. Main parts: (1) The orange sphere, with small crater dots and a wide cream band around its upper half. A second cream band and more orange show below the ring. (2) A flat yellow ring set at an angle. Its front arc crosses in front of the lower half of the planet, and its back arc goes behind the planet at the upper right. Purple background shows through the gap between ring and planet on the left. (3) A blue, glossy, gem-like porthole with a raised orange rim sits on the upper left of the sphere, set into the cream band. Nothing holds the planet up, which is correct for a body in space.",
+ "errors": [
+  {
+   "where": "Upper left of the sphere, on the cream band",
+   "what": "Invented part. A blue, glossy, rimmed porthole or jewel is stuck onto the planet's surface. A planet has no window or gem like this, so it reads as a gadget added to a natural body.",
+   "severity": "major"
+  },
+  {
+   "where": "Lower half of the planet, below and around the ring",
+   "what": "The sphere is not round. The part under the ring is shifted to the right of the upper half, and empty purple shows at the lower left where the sphere should continue inside the ring gap. Extra cream slices stick out between the band and the ring on the right and under the ring. The planet looks like stacked, offset discs instead of one continuous ball that the ring passes around.",
+   "severity": "major"
+  }
+ ],
+ "fix": "A single perfectly round orange planet, its sphere continuous and centered inside a tilted yellow ring. The ring passes in front of the lower half and behind the upper half. The lower hemisphere lines up with the upper one, with no offset or stacked slices. Cream stripes run parallel to the ring around the equator. The surface is smooth with only small craters: no porthole, window, gem or blue jewel."
+}

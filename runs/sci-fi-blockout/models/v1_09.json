@@ -1,0 +1,24 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "problems": [
+   "The base doesn't read as tall. The pedestal stops at z = 0.40 and the dish's lower rim drops to about z = 0.53, so the dish looks set straight onto a short, stubby cone.",
+   "The yoke arms and the elevation axle sit entirely behind the dish. Nothing visible holds the dish up or shows how it turns, so it looks glued onto the turntable.",
+   "The feed struts are thin, white-on-white and seen nearly flat against the shell. They read as grooves cut into the dish, not as supports standing off it to hold the feed."
+  ]
+ },
+ {
+  "round": 2,
+  "error": null,
+  "problems": [
+   "The dish faces the camera almost head-on, so from this low camera it reads as a flat white disc: no bowl depth or rim profile shows, and it looks aimed at the viewer rather than tilted up to the sky. Fix: tilt the dish further up (axis 55 degrees above the horizon) and turn the hero with k.turn(0, 0, -55) so the dish faces up and to the left and its concave bowl and rim edge show.",
+   "The gray base renders almost white and blends with the white dish, so the card's 'gray base' is lost. Fix: darker grays for the pedestal, yoke and turntable."
+  ]
+ }
+]

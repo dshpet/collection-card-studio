@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the control console sits dead centre in a plain 3/4 view, with the whole block inside the card and even clearance on every side. Its margin_min of 0.102 is above the real maximum of 0.098, and a wide empty steel floor fills the bottom third. B: the popcorn cart runs tall from the awning near the top edge down to the wheels on the paving, with tighter margins (0.05). It reads like the real drum-kit and caravan scene cards.",
+   "fix": "Draw the console bigger and closer to the camera, so its front corner and the floor run toward the bottom edge of the card. Shift it slightly off-centre, with less empty floor showing."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the red tower stands as a centred vertical stem, and the tilted dish crowds the top edge (box_height 0.915, above the real maximum of 0.895). Dunes fill the lower half. B: the sandcastle is centred, with a green bucket and a blue shovel as props in front. That echoes the extra-props habit of the generated lighthouse, so this pair is close on my vector.",
+   "fix": "Pull the dish down from the top edge so it has breathing room. Turn the tower to a 3/4 view and plant it lower in the card, with less flat dune around it."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the ringed planet is a thin horizontal band across the middle of the card (box_height 0.438, well below the real minimum of 0.581). Wide empty purple stripes sit above and below it, so the hero reads small at thumbnail size. A: the two flip-flops fill the card on a diagonal, from the upper right to the lower left, like the real anchor card.",
+   "fix": "Tilt the planet steeply so the ring runs diagonally from corner to corner. Draw it larger, filling most of the card's height, with little empty background above and below."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the rover is centred, square-on and symmetrical. The dish and solar panel sit on top like a stack, and an empty grey ground plane surrounds the whole body. A: the taxi is in a dynamic 3/4 view. It runs nearly the full width (0.926), the road lines lead off the bottom edge, and the scene is cropped like the real bicycle card.",
+   "fix": "Turn the rover to a three-quarter angle with the front wheels nearer the camera. Push it close to the left and bottom edges, with the ground running off the card."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the rocket is a narrow, upright, centred shape (box_width 0.512, below the real minimum of 0.558) with wide empty sunburst on both sides. Its margin_min of 0.121 is above the real maximum. A: the submarine fills the card from the propeller at the left edge to the nose at the right, and the periscope reaches near the top. It is a big, edge-to-edge hero like the real anchor.",
+   "fix": "Draw the rocket larger and tilted further, about 45 degrees, flying from the lower left to the upper right. Let the fins and flame come close to the card edges, leaving little empty sunburst on the sides."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the UFO is a flat, wide saucer centred at mid-height (box_height 0.477, below the real minimum of 0.581). The top third and bottom third of the card are empty yellow rings. A: the music player sits in the upper left and the earbud cable loops down to the lower right, so the hero fills the card diagonally.",
+   "fix": "Tip the saucer toward the viewer so the dome and the top of the disc show more. Draw it bigger, filling most of the card's height, angled from the lower left to the upper right."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the asteroid floats in the left-centre, with the flame tails off to the upper right. A wide strip of empty wavy background sits under it, and its margin_min of 0.098 is at the real maximum. B: the scarf fills the card vertically (box_height 0.833), symmetrical and centred, like the real clock and arch cards.",
+   "fix": "Draw the asteroid larger and lower, so the rock fills the centre of the card and the flames reach toward the upper-right corner. Leave less empty background below it."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the moon-base dome is small and centred on a wide, empty crater plain (box_height 0.458, below the real minimum of 0.527), under a strip of starry sky. At thumbnail size the hero is a small white blob. A: the tiki pool bar is cropped by the top and left edges, and the stools and drinks fill the frame, like the real desk-cropped computer and bicycle scenes.",
+   "fix": "Bring the camera close so the dome and tunnel fill most of the card. Crop the ground at the bottom edge and show only a thin strip of sky at the top."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the telescope spans the whole card. The lens barrel jams into the top-right corner (margin_min 0.002, box 0.96 × 0.969, beyond the real ranges), and the eyepiece pokes out at the left edge. That makes an awkward corner crop rather than a planned bottom-edge crop. B: the binoculars sit diagonally on the wood floor, with even clearance, inside the real ranges.",
+   "fix": "Pull back slightly so the telescope's lens has clear space from the top-right corner. Keep the tripod feet on the ground near the bottom edge."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the bouncy castle is centred and fully contained on a sunburst, like the real glove and camera cards. B: the water-polo goal runs off the left edge (box_width 1.0) as a cropped pool scene, like the real fan and bicycle cards. Both framings match real conventions.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the helmet is a large, centred ball on a stand. It fills the card (subject_area 0.446, above the real maximum of 0.427), and the shelf edge cuts across the lower left. B: the sneakers are low and small (box_height 0.487, below the real minimum of 0.551), with an empty orange wall in the upper half. Both are outside the real ranges, so the call is weak.",
+   "fix": "Draw the helmet a little smaller, turned to a 3/4 angle with the visor facing off to one side. Give it more space above and to the sides."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the neon ice cream is centred and tall on a green panelled wall, like the real clock card. B: the lion statue fills the width on its plinth, with the park path behind (box_width 0.935, just over the real range). That is a scene framing like the real caravan card. Neither pair shows the generated framing tells.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated sci-fi cards put the hero in the dead centre, fully contained, with even clearance all round and no planned crop by an edge. Flat or narrow sci-fi shapes (a planet ring, a saucer, a moon base, an upright rocket) come out as a thin band or a slim stem. That leaves empty background above and below or at the sides (box_height or box_width below the real minimum), so the hero reads small at thumbnail size. Real cards fill the card on a diagonal or crop the scene with the bottom edge."
+}

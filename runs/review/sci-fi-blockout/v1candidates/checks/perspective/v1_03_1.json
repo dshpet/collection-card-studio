@@ -1,0 +1,16 @@
+{
+ "survey": "A stylized ringed planet floating on a striped purple background, with no ground. Main parts: (1) An orange sphere. It has a wide cream band across its upper half, thinner cream and orange stripes on its lower half below the ring, small crater dots, and a round blue porthole near its upper-left edge. (2) A flat yellow ring tilted about 20–25° (rising to the right). It is seen clearly from above, with its top face showing and a wide elliptical outline (about 0.35–0.4 height to width). The ring's front arc passes in front of the lower half of the sphere. Its back arc goes behind the sphere at the upper right. On the left, purple background shows through the ring's hole between the sphere and the ring's inner edge. The porthole faces mostly toward the viewer and is slightly oval, which roughly fits where it sits on the curved surface. The stripes are meant to circle the sphere in the ring's plane, so they should share the ring's tilt and ellipse shape.",
+ "errors": [
+  {
+   "where": "Wide cream band on the upper half of the planet",
+   "what": "The band follows the ring's tilt but is drawn as an almost straight strip, with little downward curve at its front. The ring is seen clearly from above, so every stripe parallel to it should be an ellipse with the same proportions and sag in a clear smile toward the viewer. As drawn, the band looks seen edge-on while the ring is seen from above. The stripes below the ring curve more than this band, so the bands also disagree with each other.",
+   "severity": "major"
+  },
+  {
+   "where": "Ring hole, right side of the planet",
+   "what": "On the left, background shows through the ring's hole between the sphere and the inner edge. On the right, the yellow ring seems to run straight into the sphere's edge with no matching gap. That puts the planet off-center in its ring instead of centered in a symmetrical inner ellipse.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw every stripe on the planet as a band circling the sphere parallel to the ring, seen from the same slightly-above angle as the ring: each stripe is an ellipse with the ring's tilt and proportions, its front edge curving down toward the viewer like a smile, and stripes closer to the poles getting smaller but keeping the same ellipse shape. Center the planet in the ring so the inner hole shows an equal gap of background on both the left and right sides of the sphere."
+}

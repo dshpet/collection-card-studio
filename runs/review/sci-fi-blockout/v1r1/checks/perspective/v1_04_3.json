@@ -1,0 +1,11 @@
+{
+ "survey": "The card shows a rounded brown asteroid flying toward the lower left, slightly toward the viewer. We see it from a little in front and to its left. Its front-left face points at the camera. The right side curves away toward the silhouette, and the underside turns down and away. Three orange teardrop-shaped flames come out from behind the upper-right edge of the rock and trail up and to the right, roughly parallel and getting smaller with distance. The craters are a large one on the front-left face, a small one in the centre, one on the right flank close to the silhouette, one on the lower edge, and small pits scattered across the top. There is no ground: the rock floats over a flat wavy background. The flames attach behind the rock and are overlapped by it, which reads correctly. The large front crater and the centre crater are believable ellipses for surfaces facing mostly toward the camera.",
+ "errors": [
+  {
+   "where": "Crater on the right flank of the asteroid, near the right silhouette",
+   "what": "This crater is on a surface that curves away from the camera, so it should be a narrow ellipse squeezed toward the edge. Instead it is drawn almost round, with its opening angled toward the viewer, as if its patch of surface faced the camera like the large front crater. It does not follow the curve of the rock.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Foreshorten the crater on the right side of the asteroid so it follows the surface as it turns away: make it a narrow vertical ellipse near the right edge, with its far rim hidden and its opening facing right and away from the viewer, not toward the camera."
+}

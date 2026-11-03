@@ -1,0 +1,16 @@
+{
+ "survey": "A six-wheeled planetary rover on grey regolith, seen from the front-left at three-quarter view. Body: a rounded white box with a raised top lid, vent slots on the front-left of the long side, a bolted oval plate, and a bolted access panel on the right end face. On top: an orange dish antenna on a steel mast set into the lid at the left, and a blue solar panel on a short post at the right. Both are properly seated. Suspension: on the near side, one steel rocker arm comes out of a round pivot hub on the body's lower edge and bends into a V. One leg goes down-left through an elbow joint to the front wheel, and the other goes down-right to the rear wheel. On the far side, a single strut runs from the body's rear corner to the hub of the far rear wheel. The other far-side wheels are mostly hidden under the body. Wheels: six black tyres with silver hub caps, three on the near side (front, middle, rear) and three on the far side. They sit on the ground with contact shadows. The near-side arm ends meet the front and rear tyres high on the tyre or rim, not at the hub caps.",
+ "errors": [
+  {
+   "where": "Near-side middle wheel (centre-bottom, in front of the rocker arm)",
+   "what": "No arm, bogie or axle connects this wheel to anything. The V-shaped rocker arm goes from the body pivot straight to the front and rear wheels and passes over the middle wheel, which just sits under the arm with no attachment. A rover could not carry or drive a wheel that has no axle.",
+   "severity": "major"
+  },
+  {
+   "where": "Near-side rocker arm ends at the front and rear wheels",
+   "what": "Each arm stops at the upper edge of its tyre, near the rim, instead of at the wheel's hub or axle. Nothing visibly holds the wheels on to turn them.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Give the rover a working rocker-bogie suspension on each side. A main rocker arm pivots on the body and holds the front wheel on its axle at one end. At the other end, a smaller bogie arm pivots on the rocker and carries the middle and rear wheels. Every steel arm ends in an axle that goes into the centre of a wheel's silver hub cap, so that all six wheels are clearly mounted, and no wheel stands alone without an arm."
+}

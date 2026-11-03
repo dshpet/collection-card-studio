@@ -1,0 +1,91 @@
+{
+ "issues": [
+  {
+   "issue": "Close-up realistic surface detail on leather and wood: rows of dashed stitches, pebbled leather grain, painterly wood grain and stray stains, where real cards use smooth soft surfaces with broad shading. You can see it clearly on the saddle, the boot, the wagon canvas, the saloon doors and floor, and the barrel staves. surface_finish and edges_linework describe this one root cause from two sides. I overrule them on the lasso: the real dock rope (p08 A) and the real bird-feeder rope (p09 A) show the same twisted-strand texture, so rope twist is in style. I also overrule surface_finish on p05: that entry describes the cactus, so its p05 and p06 are swapped.",
+   "specialists": [
+    "surface_finish",
+    "edges_linework"
+   ],
+   "instruction": "Paint leather as smooth, soft, slightly satin material with broad gentle shading, and show seams as simple soft grooves. Paint wood as clean smooth planks with only a faint straight grain."
+  },
+  {
+   "issue": "Hero painted as an extreme value block: the locomotive is a huge near-black mass, and the boot and saddle are dark saturated brown on bright fields. On the real cards the hero holds middle values with its own light side and dark side (the navy grad cap still shows a bright top face). I overrule the warm-on-warm complaint from color_palette. The real computer sits cream on orange, and the real book sits cream on an orange table, so warm hero on warm backdrop and cream neutrals are in style. I also overrule the value_contrast calls on the control cards p05, p09 and p10 A, which are real.",
+   "specialists": [
+    "value_contrast",
+    "color_palette"
+   ],
+   "instruction": "Keep the hero in mid tones with a clear lit side: dark metals become charcoal-blue with bright highlights along the top, and leather becomes a warm mid brown with tan highlights. Keep true black for small accents only."
+  },
+  {
+   "issue": "Weak directional light on some heroes: a frontal, centered sheen, and little cast shadow from one part onto another. This is a minor tell. The hat, cactus and star are within reach of the real cards, so I am not sending notes for them, only for cards already being redrawn.",
+   "specialists": [
+    "lighting_shading"
+   ],
+   "instruction": "Light from the upper left, with a clearly darker shadow side and a soft shadow where one part overlaps another."
+  },
+  {
+   "issue": "Overruled and out of scope. The staging specialist's glow-halo claim is overruled: the real jacket, ring box and grad cap backdrops all brighten behind the hero. So is the deep-scene claim: the real chess table and bird feeder sit in full park scenes with trees, paths and grass blades. The staging calls on control and real cards (p01 B, p04 B, p05 B) are wrong. Viewpoint, framing and form problems are out of scope for edit notes: the lasso drawn as two rings, the two-wheeled wagon, the free-standing door frame, the flat star and the side-on boot. These are the biggest remaining giveaways, and they need a fresh draw or a prompt change, not an edit.",
+   "specialists": [
+    "staging_detail",
+    "viewpoint_depth",
+    "composition_hierarchy",
+    "shape_proportions"
+   ],
+   "instruction": "No change from these reports."
+  }
+ ],
+ "style_text": "",
+ "cards": [
+  {
+   "pair": "p01",
+   "keep": true,
+   "note": "Rope texture and finish match the real ropes on p08 and p09. The odd two-ring shape is a form problem, which an edit note cannot fix."
+  },
+  {
+   "pair": "p02",
+   "keep": true,
+   "note": "Rendering, color and backdrop could pass."
+  },
+  {
+   "pair": "p03",
+   "keep": false,
+   "note": "Repaint the locomotive body in a lighter charcoal-blue with bright highlights along the top of the boiler and cab, and keep true black only for the smokestack rim and wheel hubs. Slightly fewer grass tufts and pebbles on the sand."
+  },
+  {
+   "pair": "p04",
+   "keep": false,
+   "note": "Remove the orange splat stain on the barrel. Make the stave grain slightly fainter and straighter."
+  },
+  {
+   "pair": "p06",
+   "keep": true,
+   "note": "Glossy toy finish and backdrop could pass."
+  },
+  {
+   "pair": "p07",
+   "keep": true,
+   "note": "Gold finish and ray backdrop match the real medal card."
+  },
+  {
+   "pair": "p08",
+   "keep": false,
+   "note": "Paint the canvas cover as smooth soft cloth with plain seam folds and no stitch dots. Make the grass slightly smoother and simpler, with a few soft tufts. Soften the edge of the wagon's cast shadow slightly."
+  },
+  {
+   "pair": "p10",
+   "keep": false,
+   "note": "Paint the doors and posts as smooth warm wood with only a faint grain. Make the floor planks slightly plainer and lower in contrast, with a soft dark contact shadow under the post feet."
+  },
+  {
+   "pair": "p11",
+   "keep": false,
+   "note": "Paint the saddle as smooth soft leather in a warm mid brown with broad tan highlights on the seat and flaps, with no pebbled grain and no stitch rows. Make the fence rails plain smooth wood with no knots or grain marks."
+  },
+  {
+   "pair": "p12",
+   "keep": false,
+   "note": "Paint the boot as smooth soft leather in a lighter warm tan-brown with a broad highlight down the shaft. Show the shaft decoration as a soft raised shape with no dashed stitching. Make the spur a simple rounded star."
+  }
+ ],
+ "summary": "Close. The rendering, palette families and backdrop types match the real cards, and five of the ten generated cards could pass as they are: lasso, hat, barrel after one tiny fix, cactus and star. The strongest material tells are the saddle and boot, which have photoreal leather grain and stitching, and the black locomotive. Close behind are the wood grain on the saloon doors and the stitch dots and grass hatching on the wagon. All of these are fixable with light edit notes. The biggest giveaway left is object structure, and edit notes can't fix that: the lasso as two rings, the two-wheeled wagon, the free-standing door frame, the flat star and the side-on boot. Several specialist claims are overruled because the real cards show the same thing: bright glow behind the hero, full scene backgrounds, rope twist, cream neutrals and warm hero on warm backdrop."
+}

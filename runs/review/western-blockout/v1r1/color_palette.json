@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the gold-orange rope sits on a loud violet wave background. The background is the louder mass (0.227, above the real maximum), and in the lens the whole rope flattens to one salmon-tan mass with no separate shadow color. B: the red scarf is pure red with a darker red shadow mass and a gold badge on cyan swirls. That red is very loud (0.217) but behaves like the real boxing gloves. The call is weak: both cards go past the real range on one field.",
+   "fix": "Calm the purple background to a softer, dustier violet so the rope is the brighter thing. Give the rope cool, brownish-violet shadows in the coil gaps instead of one even golden tan."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the cowboy hat is one even saturated tan-orange from crown to brim, with a cream rim and a red band. In the lens the whole hat is a single orange mass with no shadow hue. This matches the lesson gloves, where the generated leather was pushed from brown to orange. A: the scout jacket mixes beige, orange cuffs, a deep green sash and colored badges, and its shadows shift toward a darker brown-olive. It reads as believable local color.",
+   "fix": "Paint the hat as dusty medium-brown felt, not orange. Make the underside of the brim and the crown dent a cooler, darker brown, and make the rim a muted brown edge instead of cream."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the locomotive is flat black with only grey highlights, and its shadows lose almost all color (shadow_chroma 0.32, far below the real 0.61). It sits on an all-orange desert floor, so the card is warm sand plus dead black. A: the coaster is loud primary yellow, red and blue (subject chroma above the real range), but the sky and clouds are cool neutrals and the shadows stay blue and red. That is closer to the real cards.",
+   "fix": "Make the locomotive a deep blue-black or dark green-black with blue reflections on the boiler. Let shadows under the cab and boiler stay a rich cool blue-grey. Cool the sand to a paler beige, and add a light blue cast in the ground shadows."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the whole card is warm. The yellow wall, orange plank floor and orange barrel give warm_share 0.99, and in the lens it is all one hue family of orange and brown. Shadows under the hoops and on the floor drop to dull brown (shadow_chroma 0.38, below range). The generated computer and glove lessons ran the same way. B: the chest is gold and brown against a deep blue sea, a clear hero/background hue split with cool bubbles.",
+   "fix": "Put the barrel on a cool background, such as a light blue or teal wall. Make the iron hoops cool blue-grey, and make the floor shadows a cool violet-brown instead of dark orange."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the book has cream-yellow pages on a warm orange table, with a red cover and ribbon. The neutrals are warm cream, and the shadow colors are overly saturated (1.75, above the real maximum). This matches the cream-instead-of-grey shift in the generated computer lessons. B: the stone table is cool lavender-grey on green grass, the same cool-neutral handling as the real computer.",
+   "fix": "Make the book pages a cool off-white with light grey-blue shadows between the pages. Make the table a more muted brown, so the red cover is the only warm accent."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a saturated green cactus stands on orange diamonds and yellow sand. The cactus is louder than any real subject (0.167), the card is 81% warm, and in the lens the cactus goes olive with only one darker green shadow. B: the popcorn cart is red and white on blue, with cool grey-beige tiles giving the eye a rest. Its hero/background roles look like the real cards.",
+   "fix": "Paint the cactus a slightly muted sage-green with blue-green shadows on its shaded side. Make the background a calmer, less orange sand color, or a cool sky blue."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the sheriff star is one flat gold mass in the lens, with no shadow hue on the shaded facets. It sits on purple rays that are louder than any real background (0.243). There is little neutral anywhere. A: the red ring box with a beige interior and a gold coin on cyan has a cool shadow on the red (purple-maroon) and beige neutrals. That matches the real handling.",
+   "fix": "Give the star's shaded facets a deeper amber-brown, and let a little purple reflect into them. Tone the purple rays down to a softer, greyer violet so the star stands out."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the wagon canvas is warm cream, and the clouds turn cream-yellow in the lens. That is the same tell as the generated lighthouse clouds, where real clouds stay cool grey-white. Wood, dirt road and grass are all yellow-orange, so the card is pulled warm. A: the orange boat on cyan water is a strong complementary split, with red-brown shadows on the hull.",
+   "fix": "Make the canvas a cool off-white with soft blue-grey shadows in its folds. Make the clouds white with light blue-grey undersides, and make the grass a cleaner, cooler green."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the bird feeder's orange roof and yellow box sit against a muted park, with the background chroma low (0.08). B: the mojito is almost all one blue-green family (warm 0.01), with only the orange straw as an accent. Each is off the range on a different field, and neither shows the cream or orange-shadow tell from the lessons. My vector gives no clear reason to pick either.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: every mass is warm (warm_share 1.0). The background is hot pink, the posts and floor are orange-brown wood, and the doors are pale yellow wood. Shadows under the doors go dull brown, and there is no cool or neutral area. A: the blue sneakers with green and teal accents sit on an orange-and-cream set, so hero and background are clearly cool against warm, even if many hues appear.",
+   "fix": "Set the saloon doors against a cool background, such as a dusty blue or teal wall. Make the floor shadows a cool violet-brown, and paint the hinges as grey iron instead of gold."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "A is the real computer from the lessons: cool lavender-grey plastic on an orange background, with cool shadows. B: the saddle leather is saturated orange-brown with orange-tan stirrups, and the fence wood is the same orange. The only cool mass is the cyan background, and the leather shadows are just darker orange.",
+   "fix": "Paint the saddle as deep, slightly muted chestnut-brown leather with cool, dark brown shadows under the flaps. Make the stirrups a darker brown than the seat, and give the fence a weathered grey-brown."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "B: an orange-brown boot with a gold spur sits on orange-yellow rings. The whole card is one warm family (warm 1.0, hue families 1.93, below the real minimum), and the boot shadows are just darker red-brown. A: the navy cap with a gold tassel on cyan rings has a clear cool hero and one warm accent, the way the real cards set hue roles.",
+   "fix": "Put the boot on a cool background such as teal or light blue rings. Paint the leather a muted brown with cool, deep brown shadows on the heel and shaft, and make the spur grey steel."
+  }
+ ],
+ "pattern": "Generated cards pull the whole card warm. Neutrals that are cool grey-white on the real cards (plastic, clouds, canvas, pages) become cream. Leather and wood go from brown to saturated orange. The hero is often set on a background of the same warm family, which leaves one or two hue families and no cool area to rest the eye. Shadows are a darker copy of the local hue (orange to brown) instead of moving cool or violet the way the real cards do."
+}

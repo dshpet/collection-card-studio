@@ -1,0 +1,11 @@
+{
+ "survey": "A cartoon refractor telescope on a short wooden stand, sitting on grey, cratered moon-like ground in front of a teal striped wall. The camera looks from slightly above and to the front-left. The cream tube runs from a small dark eyepiece at the lower left up to a large copper-ringed objective lens at the upper right. A grey metal yoke grips the tube in its middle. The yoke sits on a grey base plate, and we see that plate's top from above. The base plate rests on a round orange wooden platform with a gold band, which also reads as seen from above. Four orange wooden legs splay down from under the platform to grey rubber feet on the ground. The feet meet the ground convincingly: the far leg's foot sits higher and further back, the near feet lower and larger. The bands around the tube and the objective ring are ellipses set at right angles to the tube's axis, and the round parts are otherwise consistent.",
+ "errors": [
+  {
+   "where": "Both ends of the telescope tube: the eyepiece cap at lower left and the objective lens at upper right",
+   "what": "Both end faces of one straight cylinder are visible at once. The objective's blue lens faces the viewer, as if the tube points toward the camera at the upper right. The eyepiece also shows its dark round end face, as if the tube points toward the camera at the lower left. A straight tube can only show one of its two end faces, so the two ends are drawn from opposite viewpoints.",
+   "severity": "major"
+  }
+ ],
+ "fix": "Keep the large objective lens at the upper right turned toward the viewer. Show the eyepiece at the lower left as the far end of the tube: seen from behind and to the side, with only its cylindrical side visible and no end face showing. Both ends of the tube should agree on a single camera angle, slightly above and to the front-left."
+}

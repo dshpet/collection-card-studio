@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: a thin rope lasso spread sideways across the middle band of the card. It fills only 0.117 of the area, below every real card, and the open purple field above and below dominates at thumbnail size, so the coil reads as a squiggle. B: the scarf fills the card top to bottom with a clear central medallion, the way the real neck pillow and bracelet do.",
+   "fix": "Draw the coiled lasso big and close: one thick, chunky coil filling most of the card, tilted toward the viewer, with the loop overlapping the coil, not a thin rope stretched sideways across empty background."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the cowboy hat is a wide, flat shape across the middle, only 0.523 of the card tall, with large empty blue bands above and below. A: the jacket fills most of the card height at a 3/4 angle, like the real camera and boxing gloves.",
+   "fix": "Draw the cowboy hat larger and tipped toward the viewer so the crown and brim fill the card from near the top to near the bottom, with the brim close to the side edges."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the train sits whole in the middle of a staged desert scene with track, rocks, mesas and clouds, and the scenery takes a lot of the read. A: the coaster cars are pushed up close and the track runs off the left, top and bottom edges, the confident crop of the real lighthouse.",
+   "fix": "Push in on the locomotive: let the front of the engine and the cowcatcher fill the card and run off one side edge. Show less desert floor and no background props."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the barrel stands dead center, straight-on and upright. It is a narrow column (box_width 0.581, below the real range) with empty yellow wall on both sides and a plain floor. B: the open chest fills the width at a 3/4 angle, with a lid and coins spilling out, like the real cooler.",
+   "fix": "Turn the barrel to a 3/4 view, slightly tilted or lying, and draw it larger so it fills most of the card's width. Have it overlap the floor line rather than standing small in the middle."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the open book on a table, cropped by the right edge where the plant pot is cut off. B: a stone chess table centered on grass, with a park behind it. Both are scene cards in a framing the real cards use, and neither breaks the measured ranges in a telling way.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the cactus is a thin, symmetric, straight-on figure standing in the middle of the card, only 0.502 of the width, with large empty orange areas on both sides and a flat sand floor. B: the popcorn cart fills the card at a 3/4 angle, with the awning near the top edge.",
+   "fix": "Draw the cactus closer and larger, at a slight 3/4 turn, with its arms reaching toward the side edges of the card and the top near the upper edge. Add no empty desert floor."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the sheriff star is a flat, front-facing shape floating in the center. It fills only 0.189 of the card, below the real range, and the purple rays between its points take up most of the area. A: the medal box is at a 3/4 angle with depth and fills the card, like the real bracelet.",
+   "fix": "Draw the sheriff badge large and tilted in 3/4 perspective so it has thickness, with its points close to the card edges and less empty background between them."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the covered wagon is small in a wide landscape of a dirt road, grass, hills and sky. It is 0.22 of the area, and the scenery competes for the first read. A: the boat and dock are pushed in close and cropped by the card edges.",
+   "fix": "Push in on the covered wagon so it fills most of the card at a 3/4 angle, with the canvas top near the upper edge and the wheel large in the foreground. Use only a hint of road."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the bird feeder hangs from a tree, with the trunk and rope cropped at the top and bottom, in real-style scene framing. B: the drink glass is upright and centered on a plain backdrop, like real single-object cards. Both fall inside the real ranges on my vector.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the saloon doors are drawn straight-on and symmetric in the middle. The open frame leaves a lot of empty pink wall inside and around it, so at thumbnail size it reads as a thin outline. A: the sneakers at a 3/4 angle carry dense mass in the lower middle, like the real binoculars.",
+   "fix": "Show the swinging saloon doors at a 3/4 angle, close up, with the doors larger and taking up most of the frame. Cut the empty space inside and around the posts."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the beige computer setup on a desk is an exact match for the real computer card in the lessons. B: the saddle hangs centered on a fence rail that runs off the left and right edges. The rail adds a strong horizontal bar that competes with the saddle at thumbnail size.",
+   "fix": "Draw the saddle larger and at a 3/4 angle so it fills the card. Show the fence rail as a short, soft element behind it instead of a full-width bar across the card."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the cowboy boot is a strict side profile with the toe pointing right. It is only 0.202 of the area, with a tall, narrow shaft and large empty orange rings around it. A: the grad cap is wide and tilted and fills the width, with the tassel near the right edge.",
+   "fix": "Turn the cowboy boot to a 3/4 view and draw it bigger so the shaft is near the top of the card and the toe reaches toward the side edge. Fill the card instead of leaving open rings around it."
+  }
+ ],
+ "pattern": "The generated cards here are all the western items: lasso, cowboy hat, train, barrel, cactus, sheriff star, wagon, saloon doors, saddle and boot. On framing they give themselves away in the same few ways. The object is small or thin (subject_area or box size below the real range) and sits dead center in a straight-on or side view. Open, empty background is left around it. Sometimes a staged scene (landscape, fence rail, floor) competes with the object for the first read. The real cards push the object in close, turn it to a 3/4 angle, fill the card, and accept edge crops."
+}

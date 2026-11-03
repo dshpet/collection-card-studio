@@ -1,0 +1,11 @@
+{
+ "survey": "A crystal ball rests in a gold stand on a wooden shelf, with a green diamond-pattern wall behind it. The camera is a little above the shelf. You can see the shelf's top surface running back to the wall, and the wide round base is an open ellipse seen from above. Moving up the stand, the neck and cup rims become flatter ellipses, which is right for parts closer to eye level. The ball is a clean sphere. Its lower part sits in the cup, and the cup rim crosses it as a shallow curve. Two curved arms rise from the cup and end in knobs that hold the ball's sides. The base sits flat on the shelf top at the angle the shelf is drawn, and its shadow agrees with that. Overall the view is consistent: the base, neck, cup and shelf all agree on one slightly-high camera.",
+ "errors": [
+  {
+   "where": "The two gold arms holding the ball",
+   "what": "The arms are not placed evenly around the round cup. The left arm starts at the far left end of the cup rim and runs along the ball's outline, so it sits at the side. The right arm starts well inside the rim and stands in front of the ball, about 100 px inside its right edge in the enlarged view. Its knob is also clearly lower than the left knob. Arms spaced evenly on a round cup should both sit on the cup's rim ellipse, mirrored for this nearly front-on view. As drawn, one arm is at the side and the other is turned toward the viewer, so the stand reads as slightly twisted.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the two gold arms mirror each other: both start at opposite ends of the cup's rim ellipse, curve up along the left and right edges of the ball, and end in knobs at the same height. Keep the current slightly-high camera, the base ellipse and the shelf unchanged."
+}

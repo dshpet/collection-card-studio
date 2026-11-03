@@ -1,0 +1,16 @@
+{
+ "survey": "A crystal ball on a gold pedestal stand, sitting on a wooden shelf, seen from the front and slightly above. The glass sphere is round and its smooth outline reads correctly. Its lower part sits down inside a shallow gold cup, and the flat line of light at the cup rim shows the contact. The cup sits on a short waisted stem. The stem rises from a wide, stepped round foot that rests flat on the shelf and casts a soft contact shadow. Two curved gold prongs with ball-tip finials rise from the cup rim on the left and right to steady the sphere. The left prong curves outward and lines up with the ball's left edge. The right prong is straighter and sits inside the ball's outline, so it reads as being in front of the glass. The swirling mist and sparkle are inside the glass and are not physical parts. Two prongs instead of three or four is an acceptable simplification, since the cup carries the weight.",
+ "errors": [
+  {
+   "where": "Left and right gold prongs",
+   "what": "The prongs are meant to be mirror images but are not. The left one bows outward and follows the ball's edge, while the right one is straighter, leans inward and crosses in front of the glass. They also rise from different depths of the cup rim, so the stand looks lopsided.",
+   "severity": "minor"
+  },
+  {
+   "where": "Lower end of the left prong, where it meets the cup rim",
+   "what": "The prong's foot ends in a blunt cut against the side of the ball and does not clearly join the cup rim, so it seems to hang beside the ball instead of rising from the stand.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the two gold prongs exact mirror images, rising from opposite points on the cup rim with the same curve and height. Both should hug the outside of the sphere, and each prong's base should merge smoothly into the cup rim."
+}

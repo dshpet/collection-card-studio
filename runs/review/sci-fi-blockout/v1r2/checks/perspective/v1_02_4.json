@@ -1,0 +1,11 @@
+{
+ "survey": "A flying saucer floats against a radial yellow background. There is no ground for it to touch. The main hull is a wide disc seen from above: its teal top deck is a broad ellipse, tipped a little clockwise so the left end sits lower than the right. A dark grey bumper ring runs around the rim. It looks thick at the front and thin at the back, which is right for this view. About twelve orange lights sit on the bumper. The front ones are larger and spaced wider, and the side and back ones are smaller and closer together, so they follow the ellipse correctly. At the centre of the deck, a silver collar ring holds a green glass dome. The collar sits a little behind the deck's centre, which fits its raised position.",
+ "errors": [
+  {
+   "where": "Silver collar ring at the base of the green dome, compared with the hull's top deck",
+   "what": "The collar's ellipse is much flatter (height about a quarter of its width) than the deck ellipse it sits on (height about half its width). It also lies almost level, while the hull is tipped clockwise. So the dome is seen from a lower, more level angle than the saucer beneath it, and looks pasted on instead of sitting flat on the deck.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the dome's silver base ring as an ellipse with the same proportions and tilt as the saucer's top deck: rounder (height about half its width) and tipped clockwise along the same axis as the hull rim. Then the dome sits flat on the deck and the whole saucer is seen from one high three-quarter angle."
+}

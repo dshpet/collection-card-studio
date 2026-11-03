@@ -1,0 +1,16 @@
+{
+ "survey": "A satellite dish on a pedestal, standing in desert sand. The base is a red tapered tower sunk into the dune. It has a riveted access panel on the front, and a riveted turntable ring at the top. A red yoke bracket with a large pivot bolt sits on that ring. The dish is white, tilted up and to the right, and attached at its back to the yoke. Its concave face is turned toward the camera and the sky, with its thick lower-left lip nearest the viewer. A feed head with a red dome cap sits above the upper-left part of the dish. Three grey struts hold it. A long one runs almost horizontally to the far right rim. Two shorter ones drop and land close together on the left side of the dish face. The yoke, turntable and tower stack up in a plausible way, with the tower standing upright and grounded.",
+ "errors": [
+  {
+   "where": "Feed head with red cap, upper left above the dish",
+   "what": "The feed head sits off to one side, above the upper-left rim, not on the dish's axis in front of its centre. With the dish tilted up and right, a working dish would have its receiver out in front of the middle of the bowl, pointing into it. Here it hangs beside the dish, and its dome points up at the sky instead of into the bowl.",
+   "severity": "minor"
+  },
+  {
+   "where": "Feed support struts",
+   "what": "The struts are lopsided. Two short struts land almost side by side on the left part of the dish face, not on the rim. The third makes a long, nearly flat reach to the far right rim. Real feed supports are spaced evenly around the rim, or come from the centre, so they can hold the receiver steady. This layout would let it sag and twist.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Put the feed horn on the dish's central axis, out in front of the middle of the bowl, with its opening pointing down into the dish. Hold it with three or four equal struts that rise from points spaced evenly around the dish rim and meet at the feed horn."
+}

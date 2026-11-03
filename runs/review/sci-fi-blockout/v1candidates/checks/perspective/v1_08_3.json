@@ -1,0 +1,16 @@
+{
+ "survey": "A refractor telescope on a wooden tripod, standing on grey moon ground with craters, against a striped teal backdrop. The cream tube runs diagonally from the eyepiece at the lower left, which leads away from the viewer, up to the lens hood at the upper right, which leans toward the viewer. You can see the dark front lens as a moderately open ellipse, and the tube gets wider toward the near end, which matches a tube pointing partly at the camera. A grey yoke bracket clamps the tube with a ring and a pivot bolt. The bracket stands on a dark base plate on a round wooden disc. We see the top of the disc as an open ellipse, so the camera is above it. Three wooden legs splay down from under the disc: one in front on the left, one at the back on the left, and one on the right. Each ends in a grey rubber foot on the ground, and the leg shadows fall to the back right. The ground recedes to a ridge at about the disc's height. The craters flatten into thin ellipses toward the back, which suggests a fairly low camera.",
+ "errors": [
+  {
+   "where": "Wooden mount disc and yoke base compared with the moon ground",
+   "what": "The craters and ground in the middle and back are thin, flattened ellipses, which puts the eye level near the far ridge. That ridge is about level with the disc. But the top of the disc and the bracket's base plate are seen clearly from above, as if the camera were much higher. Seen from that low, the disc should look almost edge-on.",
+   "severity": "minor"
+  },
+  {
+   "where": "Yoke bracket and pivot bolt holding the tube",
+   "what": "The bracket's side plate and its pivot bolt face the camera almost head-on, so the pivot axis points at the viewer. But the open lens ellipse shows the tube also leans clearly toward the viewer. A tube that tilts on that pivot should lie across the view, so the bracket and the tube don't quite agree on one angle.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Show the whole scene from one slightly raised three-quarter camera. Draw the moon ground with crater ellipses that match the slightly open ellipse of the wooden disc's top, and place the horizon well above the telescope mount. Turn the yoke bracket so its pivot bolt sits at right angles to the telescope tube, with the bolt's side plate seen at an angle, matching the tube's lean toward the viewer."
+}

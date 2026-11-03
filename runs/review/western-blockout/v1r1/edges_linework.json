@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (lasso): every rope coil carries dense twisted-strand lines plus a crisp, even dark contour on both sides of each coil. Subject edge density is 0.173, above the real range. B (scarf): a clean silhouette with soft fold edges and only the badge drawn sharply, the sparse internal edges the real cards show.",
+   "fix": "Draw the rope as smooth soft tubes with only a faint hint of twist on the lit side, and let the coil edges soften where coils overlap instead of outlining each one."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (cowboy hat): the whole brim is traced by a uniform doubled hard rim line of the same weight all the way around, and the crown has scratchy fibrous micro-edges. A (jacket): edge weight varies, sharp at the badges and sash, softer at the sleeves and folds.",
+   "fix": "Make the brim edge a soft rounded rollover that fades on the shadow side, and keep the crown felt smooth without scratchy texture."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (train): the desert background is busy with crisp mesas, shrubs, rocks and every railroad tie sharply bounded (background density 0.083). The engine edges are uniformly hard everywhere, with no softer edges away from the focus. A (coaster): crisp track and cars, with softer clouds and hills.",
+   "fix": "Blur and simplify the desert behind the train into soft shapes with few details, keep the sharpest edges on the engine front, and let the far wagon and tracks go soft."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (barrel): there is wood-grain line work on every stave, hard plank seams across the floor, and a dark uniform contour around the silhouette and each hoop. B (chest): edges are mostly at the lid, lock and coins, with softer sand and water.",
+   "fix": "Paint the staves as smooth satin wood with only faint grain, make the floor planks soft and low-contrast, and keep the barrel outline as a light-to-shadow edge rather than a dark line."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (book): a busy hedge and railing behind, and a crisp book edge. B (stone table): a busy foliage texture in the trees, and crack lines on the stone. Both have background clutter at the upper end of the real range, and neither shows a clear generated edge signature.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (cactus): rib lines run evenly from top to base with dotted spine bumps of uniform crispness, and the backdrop is nearly edgeless (0.010, just below the real range). B (popcorn cart): edge weight varies naturally, crisp at the awning and wheel and softer at the glass.",
+   "fix": "Let the cactus ribs fade into soft shading toward the shadow side and base, and give the sand a little soft modulation."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (sheriff star): every arm is traced by a doubled hard bevel line, and each ball tip has a ringed hard highlight edge. The contour is even all the way around, with no lost edges. A (ring box): a hard lid contour, but the cushion and the coin interior go soft.",
+   "fix": "Round the star bevels softly so the arm edges melt into the shading on the shadow side, and drop the hard rim lines around the ball tips."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B (wagon): the grass field is covered in dense hatching-like edges, the canvas has dotted stitch lines, and the wheel spokes are all equally sharp. Edges are spread evenly, with no hierarchy. A (boat): crisp hull and dock, and the water ripples are simple soft rings.",
+   "fix": "Paint the meadow as smooth soft green with a few simple tufts, remove the stitching on the canvas, and keep the sharpest edges on the front wheel and wagon box only."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (bird feeder): a busy city-and-tree background, and crisp plank edges. B (mojito): crisp fine lines throughout the glass and fruit, with a smooth background. Both stay within the real ranges, and edge treatment gives no clear tell.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (saloon doors): wood-grain line work on the posts, lintel and every floor plank, and slat gaps cut as hard dark lines. Edge sharpness is the same front to back. A (sneakers): a dense mesh texture on the shoe, but a plain backdrop and a soft shadow edge.",
+   "fix": "Make the posts and doors smooth painted wood with only a faint grain, and soften and simplify the floor planks behind so the doors hold the crispest edges."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "A (computer) matches the real lesson card, with clean bevels and soft desk edges. B (saddle): dotted stitch lines run around every leather panel, the fence rails carry wood-grain marks and knots, and the leather has scratchy texture. A dark even contour wraps the whole silhouette.",
+   "fix": "Draw the saddle as smooth rounded leather without stitching, use soft broad highlights instead of grain texture, and make the fence rails plain soft wood."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B (boot): dotted stitching traces the shaft ornament, the spur rowel is drawn with fine hard spikes, the leather has a scratchy texture, and the silhouette has a uniform dark rim. A (grad cap): smooth faces with a few clean bevel edges and a soft lower band.",
+   "fix": "Replace the stitched pattern with a simple smooth embossed shape, keep the leather glossy and smooth, and let the boot outline soften on the shadow side."
+  }
+ ],
+ "pattern": "Generated cards spread fine detail edges evenly over the whole image: dotted stitching, wood grain on every board, rope twist, grass hatching, and busy backgrounds. They also wrap the silhouette in a uniform hard contour of the same weight all the way around. Real cards keep the hero's insides smooth, with few internal lines, let edges go soft or lost on the shadow side, and keep the background low in detail."
+}

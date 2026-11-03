@@ -1,0 +1,11 @@
+{
+ "survey": "A two-wheeled covered cart on a dirt road, seen in three-quarter view from slightly above. The camera sees the long left side of the wooden box, which recedes gently to the left, and the short front face, which turns to the right. A red rim runs along the top edge of the box. The canvas cover is an arched hood on the box. Its front opening faces right, the same way as the front face. A small wooden seat sits on the front end of the box, and its top board is seen from slightly above. The near wheel is fixed to the left side at mid-length. Its rim is a tall ellipse, slightly narrow from side to side, which fits the mild angle of the side face. The red hub faces the viewer. The far wheel shows only below and to the right of the box, partly hidden by the near wheel. A single shaft comes out of the bottom of the front face and slopes down to the right, ending in a crossbar that lies flat on the road. The near wheel and the far wheel both touch the road. The road and grass run down and to the right, the same way as the cart's long side. The planks on the side and front faces follow the edges of their faces. The top and bottom edges of each face converge only slightly, which fits one camera. Overall the space reads as one view.",
+ "errors": [
+  {
+   "where": "Far (right-hand) wheel, behind and below the front of the box",
+   "what": "The far wheel is not directly across from the near wheel on a shared axle. The two wheels should be separated along the direction of the front face's edges, by about the width of the box. Instead the far wheel is shifted roughly twice that distance to the right, so it sits under the front end and the seat rather than across from the near wheel's hub. It is also drawn noticeably smaller than the small depth difference allows, so the two wheels do not read as a pair on one axle.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Put the far wheel directly opposite the near wheel on the same axle. It should be offset from the near wheel only by the width of the cart, in the same direction as the front face's horizontal edges, and stay about the same size as the near wheel. Only its lower right arc should show beneath the box, just behind the near wheel's rim. It should not sit forward under the seat."
+}

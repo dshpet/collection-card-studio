@@ -1,0 +1,16 @@
+{
+ "survey": "Image 4 is a cowboy hat in three-quarter view, floating over a blue sunburst. The brim is a wide oval with a cream piped edge. Its front-left half lies open, and we look down onto its upper face, so the camera sits fairly high. Toward the back right the brim narrows into a thin upturned wing that ends in a point. The crown rises from the middle of the brim as a slightly tapered cylinder, with a pinched dent in front and a red stitched band at its base. The band curves down at the front, which agrees with a camera above. The hat has no ground; its only base is the brim. The crown sits plausibly centred, and the brim's back edge passes behind it on both sides.",
+ "errors": [
+  {
+   "where": "Crown versus brim",
+   "what": "The brim's upper face is seen steeply from above: its oval is open, about half as tall as it is wide. The crown is drawn close to eye level. Its top shows only a side silhouette of the front pinch, with no view down into the crease that runs front to back, and the band's ellipse is flatter than the brim's. Those two parts read as two slightly different camera heights.",
+   "severity": "minor"
+  },
+  {
+   "where": "Right side of the brim",
+   "what": "The left and front brim is wide and seen face-up. The right side shrinks to a narrow, nearly edge-on wing that sweeps up to a point. On a symmetric brim seen from one three-quarter view, the left side should curl to match. As drawn, one side looks flat from above and the other looks seen from the side, so the brim's outline is not one consistent ellipse.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Cowboy hat seen from one consistent high three-quarter view. The crown's top crease is visible from slightly above, matching how open the brim is. The hatband follows the same elliptical curve as the brim. Both side brims curl up symmetrically, and the brim's outline forms a single smooth ellipse in perspective."
+}

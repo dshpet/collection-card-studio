@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the rope coil and the open loop are both drawn face-on to the camera, like they stand upright, but the tail and shadow suggest the rope lies flat on the ground. The view doesn't match itself and no top face shows. B: the neckerchief is turned slightly, the collar ring shows its inside from a little above, and the forms overlap front to back.",
+   "fix": "Show the coiled lasso lying on the ground seen from slightly above at a three-quarter angle: the coil and the loop look like flattened ovals, with the top of the coil visible."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the hat crown is seen almost from the side, while the brim is shown from well above and flares up hard on the right. The crown and brim don't share one camera. A: the jacket has a gentle three-quarter turn, and the sleeves and collar all recede the same way.",
+   "fix": "Draw the cowboy hat from one gentle three-quarter view a little above: brim as an even oval ring around the crown, with the crown's top dent visible at the same angle."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: high camera with strong rail convergence into a deep desert with distant mesas, so there are three layers far apart. The boiler front is seen nearly head-on while the cab side recedes sharply. A: low camera looking up, cropped tightly by the frame like the real lighthouse lesson, with a soft, simple background.",
+   "fix": "Crop closer on the locomotive at a mild three-quarter angle at about wheel height, with weaker rail convergence and a simple soft sky behind instead of a deep desert scene."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the barrel is centered and front-on at eye level, with a thin top ellipse, while the floor planks below recede steeply as if seen from much higher. The barrel and the ground don't match. B: the chest is turned three-quarters from slightly above, and the lid, coins and sand sit at one angle.",
+   "fix": "Turn the barrel slightly three-quarter and raise the camera a bit so the top lid shows as a fuller oval that matches the slope of the floorboards."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the book is seen from high and close, cropped by the frame, with the table and fence at one consistent angle. B: the chess table is seen from high at a three-quarter angle with a deeper park background. Both are plausible real setups.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cactus is a perfectly front-on, symmetric view at eye level, with no turn and no top face, standing on a nearly flat-on dune band. B: the popcorn cart is turned three-quarters, its wheels are ovals, and the paving recedes consistently under it.",
+   "fix": "Turn the cactus slightly so one arm comes toward the viewer and the other goes back, with the camera a little above so the sand around its base shows as a ground plane."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the sheriff star is drawn perfectly flat-on to the camera like a sticker, with no turn and no visible edge thickness. A: the medal box is seen three-quarter from above, and the lid, cushion and coin share one view.",
+   "fix": "Tilt the sheriff star back and turn it slightly so it is seen at a three-quarter angle from above, showing the thickness of its rim and the near ball tips larger than the far ones."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the wagon is a near side view at low height, set in a wide landscape with a dirt road, rolling hills and a far horizon, so it has deep scenic layers. A: the boat is seen from high, close and cropped by the pier and the frame, with the water as one flat ground plane.",
+   "fix": "Move closer to the covered wagon and raise the camera to a three-quarter view from above, cropping into the wagon with simple grass behind instead of a distant horizon."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the bird feeder is roughly front-on at its own height, with the tree and city background softly simplified. B: the glass is front-on, slightly above eye level, on a simple tabletop. Both views are mild and consistent.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the saloon door frame is front-on and flat, with the posts and beam barely receding, while the floor planks run in strong perspective. A: the sneakers are a three-quarter view from slightly above, standing on one ground plane with a contact shadow.",
+   "fix": "Turn the saloon doors to a three-quarter angle, with one post nearer and larger and the door panels angled, so the floorboards and the frame recede toward the same side."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the saddle on the rail is a near side view at eye level, with no ground plane and the fence rail running flat across. A: the computer is the known real three-quarter view of a desk from slightly above.",
+   "fix": "Show the saddle on the fence from a three-quarter angle slightly above, so the seat's top surface and the far stirrup show, with the rail receding away from the viewer."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the cowboy boot is a pure side profile, flat to the camera, with no turn and no view into the boot opening. A: the cap is seen three-quarter from above, the board's top face is clearly visible, and the band sits under it at the same angle.",
+   "fix": "Turn the boot to a three-quarter view from slightly above, so the toe points toward the viewer at an angle and the top opening shows as an oval."
+  }
+ ],
+ "pattern": "Generated cards tend to show a flat front or side view, like the star, boot, saddle, cactus and saloon doors. Some also mix views within one object, such as the hat crown and brim or the lasso coil and its tail, or a barrel at eye level on a floor seen from above. Others place the object in a deep scene with a far horizon, like the wagon and train. Real cards use one gentle three-quarter view from slightly above, crop close, and keep the background soft and simple."
+}

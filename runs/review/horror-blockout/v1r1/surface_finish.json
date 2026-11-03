@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the real lighthouse from the lessons: soft, lightly blurred brick faces, a quiet satin finish on the red rail, no surface noise. B, the purple-roofed house: every stone wall carries small cut-in brick rectangles in sharp outline, the roof shingles each have crisp edge lines, and the window frames are crisply beveled wood. Small hard detail is spread evenly over the whole wall, the same over-detailing the generated lighthouses in the lessons show.",
+   "fix": "Fewer brick outlines: only a few faint brick shapes on the wall, soft and low contrast. Smooth shingle edges, a soft satin finish, with gentle blur on surfaces facing away from the light."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A, the seahorse, has soft painted spots and ridges with a matte satin skin and slight brush softness. B, the balloons, are smooth latex with one soft window highlight each and a blurred, quiet surface. Both fall within the real range, and neither shows lacquer or crisp over-detail.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A, the boxing gloves, are a smooth satin leather with soft crease lines and wood grain under them that is fine and quiet. B, the cauldron: the iron body is covered in a mottled noise texture, the floor slabs have hairline cracks and chipped edges drawn at a decorative scale, and the green brew has glassy bubble highlights. That surface noise and the sharp crack marks are not found on real cards.",
+   "fix": "Draw the cauldron as smooth, matte dark iron with only one soft broad highlight and no speckle. Plain floor tiles with soft edges, no hairline cracks."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A, the spring duck, is a smooth molded-plastic toy with a soft gloss on the yellow body and quiet edges, matching the real plastic toys. B, the pumpkin: the orange skin is covered in fine vertical streak strokes and has a waxy sheen. The planks have strong grain lines, and the glowing cut edges are crisp. That directional streak texture on the skin is visible marking the real cards don't have.",
+   "fix": "Draw the pumpkin skin smooth and softly matte with gentle shading between the ribs, no streaky lines. Floor planks with faint, quiet grain."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A, the fountain, is soft sandstone with a satin finish and blurred pavers, like the real cards. B, the black cat: the whole body is one uniform matte clay with no fur and no sheen variation, a rubbery red collar, and glossy plastic eyes. It reads as a vinyl figurine rather than an animal, and its micro texture is near the bottom of the real range.",
+   "fix": "Give the cat soft fur: a slight sheen along the back and head, gentle tufts at the chest and ears, and a fabric collar. Avoid uniform clay matte."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A, the sneakers, have fine mesh dots on the upper, a glossier sole and matte laces, a believable mix of finishes. B, the tombstone: the grey stone has hairline vein cracks and scattered pinhole dots across the face, plus a sharp jagged crack. The moss is a fuzzy blob. This speckle-and-crack noise across the face is the generated stone signature.",
+   "fix": "Draw a smooth, softly matte grey stone with a few gentle chips at the edges. No hairline veins or pinholes on the face, and the moss as soft painted clumps."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A, the witch hat: the black felt is a uniform smooth matte with no weave or nap, and the purple band and buckle have the same rubbery satin. One finish covers the whole object. B, the graduation cap, has a smooth board with crisp corners, a satin finish, and a tassel with fine strands, mixing finishes more like the real cards. The numbers are nearly identical, so this is a weak call.",
+   "fix": "Give the hat brim a soft felt look with a faint nap and dull sheen. Make the buckle shiny metal against the matte fabric band."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A, the candelabra: the gold is lacquered everywhere, with strong mirror streaks on every arm, and its gloss share of 0.23 is above the real maximum. The wax candles have a waxy sheen. B, the oil lamp: the brass is glossy but has softer broad reflections, and the frosted glass chimney is translucent and matte, a real mix of finishes.",
+   "fix": "Tone the gold down to a soft brushed brass with one broad highlight per arm, not mirror streaks everywhere. Matte, slightly translucent candle wax."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A, the stone chess table, has soft stone with a few painted chips and smooth satin tiles, close to the real lion statue's finish. B, the coffin: big, dark, sketchy wood-grain lines and splits run down the lid at a decorative scale. The cross is a smooth plastic-looking butter yellow, and the purple lining is puffy. The highlight share of 0.264 is above the real range.",
+   "fix": "Draw the coffin wood with fine, faint, quiet grain and soft satin varnish, no dark split lines. Make the cross carved wood with the same grain as the lid."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A, the juice glass, has clean translucent glass and soft ice cubes, close to the real magnifier lens. B, the crystal ball: the inside is filled with wispy smeared smoke strokes and scattered sparkle dots, which is AI smear inside the glass. There is a hard white window highlight, and the gold stand is evenly lacquered.",
+   "fix": "Keep the crystal ball clear with a soft, gentle blue glow inside and one soft highlight. No smoky swirl strokes or sparkle dots, and a satin gold stand."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A, the broom: the straw head is drawn as many fine individual strand lines and the handle has visible streaky grain. Its detail share of 0.0758 and gloss share of 0.168 are both above the real maximum, so the fine detail is enlarged and glossed. B, the scarf, is a smooth matte fabric with soft folds and a medallion, all within the real range.",
+   "fix": "Draw the broom straw as soft grouped bundles with only a few strand lines, and a smooth satin handle with faint grain. Less shine overall."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A, the flip-flops, are a matte rubber sole with small soft nubs and a glossier strap, a good finish mix. B, the books, are soft satin covers with fine page lines on the edges and a gentle blur. Both sit within the real ranges and show no noise or lacquer.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards give themselves away through surface noise and marks drawn too large: hairline crack veins and pinhole speckle on stone, mottled noise on iron, big sketchy wood-grain splits, streaky strokes on pumpkin skin, smeared smoke inside glass, and overly sharp edges on bricks and shingles. They also tend to cover a whole object in one finish, either lacquered mirror gold or uniform clay matte, where real cards mix soft, slightly blurred satin surfaces with one or two glossy parts and keep fine detail faint and low in contrast."
+}

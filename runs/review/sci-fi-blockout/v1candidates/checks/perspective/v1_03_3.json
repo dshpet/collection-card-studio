@@ -1,0 +1,11 @@
+{
+ "survey": "A stylized ringed planet (sci-fi blockout) floating on a striped purple background, with no ground plane. Main parts: (1) An orange cratered sphere. (2) A wide cream band wrapping the upper half of the sphere. It runs diagonally from lower-left to upper-right, roughly parallel to the ring's long axis. (3) Thinner cream and orange bands below the ring. They show as lips between the sphere and the ring's inner edge on the left and right, and as a smile-shaped curve under the ring at the bottom. That curve is consistent with a camera slightly above the ring plane. (4) A flat yellow ring, seen from above as a tilted ellipse with its top face visible. Its near edge passes in front of the sphere's lower half, and its far edge disappears behind the sphere at upper right. The inner hole shows purple on both sides. The ring's centre lines up with the sphere's centre. (5) A round porthole with an orange rim and a blue lens. It sits near the sphere's left edge, partly overlapping the top cream band. The sphere, ring and lower bands all agree on one slightly-above, tilted view. Since nothing rests on a ground, contact is not an issue.",
+ "errors": [
+  {
+   "where": "Porthole (orange rim and blue lens) near the left edge of the sphere",
+   "what": "The porthole sits close to the sphere's left edge, where the surface turns well away from the viewer. Yet it is drawn as an almost front-facing, nearly round oval. At that spot the rim and lens should be noticeably narrower side to side, a tall thin ellipse turned toward the edge of the sphere. Instead it reads as stuck flat on the picture rather than following the curve of the sphere.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the porthole as if it follows the curve of the sphere. Near the planet's left edge, its orange rim and blue lens should be squashed into a narrow vertical ellipse, about two-thirds as wide as it is tall, turned toward the edge of the sphere. Keep the rest of the planet, bands and ring unchanged."
+}

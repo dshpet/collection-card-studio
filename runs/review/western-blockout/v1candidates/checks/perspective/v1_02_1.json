@@ -1,0 +1,16 @@
+{
+ "survey": "A single cowboy boot in side view, toe pointing right, floating with no ground drawn. The tall shaft leans slightly back to the left. Its scalloped top opening is a fairly open ellipse that shows the lining, so the camera is a little above the boot. The decorative stitching sits flat on the shaft's side, facing the camera. A seam band joins the shaft to the foot. The foot and toe are in pure profile. The sole is a thin flat strip seen edge-on. Under the back of the sole is a stacked block heel. The block shows a wide, slanted back face as well as its side, as if turned toward the viewer. A gold spur shank curves around the back of the heel counter, and its spiked rowel faces the camera. That suits a profile view, because the rowel turns in the same plane as the boot's length.",
+ "errors": [
+  {
+   "where": "Block heel under the back of the sole",
+   "what": "The heel is drawn in three-quarter view. Its back face shows as a wide slanted parallelogram, and its bottom edge drops below the sole line. The sole and toe beside it are pure side-on profile, so the heel is seen from a different camera angle than the rest of the foot.",
+   "severity": "major"
+  },
+  {
+   "where": "Shaft top opening compared with the sole",
+   "what": "The top opening is an open ellipse that shows the inside lining, as if seen from above. The sole is a flat edge-on line at eye level with no top or bottom surface showing. With a single slightly-high camera, the sole and heel should show a hint of their top planes and turn in the same direction.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Cowboy boot in clean side profile from a single slightly elevated camera. Draw the block heel in the same profile as the sole and toe: its back edge is a straight line in line with the boot's heel counter, no slanted back face showing, and its bottom sits on the same flat line as the sole's tread. Keep the shaft's top opening a gentle ellipse that matches the slight elevation, and let the sole show a thin sliver of its top edge so the whole boot reads as one view."
+}

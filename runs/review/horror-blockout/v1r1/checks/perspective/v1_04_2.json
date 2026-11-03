@@ -1,0 +1,16 @@
+{
+ "survey": "A round black cauldron on a stone-tile floor, seen from slightly above and a little left of centre. Rim and liquid: a level, fairly open horizontal ellipse, matching a camera a bit above the rim. Body: bulging pot below the rim, whose lower outline curves correctly for a downward view. Legs: two visible, front-left and back-right; their round feet are ellipses slightly more open than the rim, as expected lower down, and they stand flat on the floor. Fire: small crossed logs under the pot, lying flat on the floor. Floor: tiles recede at an angle consistent with the downward view. Handles: the left one is a lug and loop attached at rim height on the left side; the right one is a square lug with a ring, attached on the shoulder below the rim and facing the camera fully.",
+ "errors": [
+  {
+   "where": "Handles on the left and right sides of the cauldron",
+   "what": "The two handles on opposite sides of the pot are at different heights. The left handle attaches at the rim, while the right lug and ring attach noticeably lower on the shoulder. The rim ellipse is level, so matching handles should appear at the same height, and the pot looks twisted or lopsided.",
+   "severity": "major"
+  },
+  {
+   "where": "Left handle loop compared with right handle ring",
+   "what": "The left loop is drawn narrow and partly turned, while the right ring is a full, open ring facing the camera. Handles sticking out on opposite sides of a pot seen from the front should be turned the same amount toward the viewer.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Give the cauldron two identical, mirror-symmetric ring handles, one on each side, both attached just below the rim at exactly the same height, so a straight horizontal line joins them. Both rings stick straight out from the sides and are seen at the same slight angle from the same camera. Keep the level rim ellipse, the three legs standing flat on the tiled floor, and the small fire underneath."
+}

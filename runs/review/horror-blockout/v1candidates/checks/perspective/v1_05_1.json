@@ -1,0 +1,16 @@
+{
+ "survey": "An upright wooden coffin stands on a grass field. The ground is seen from fairly high up: the lawn recedes toward a high horizon, and the shadow falls back and to the right. The coffin has three readable parts. In front is a flat hexagonal lid with a raised cross, its face turned straight at the camera. Behind it, offset to the right, is the box: its right side wall shows as a second hexagonal strip running parallel to the lid, and a back panel peeks out above the lid's top edge. Between the lid and the right wall is a band of purple padded lining. The lid's bottom edge is a straight horizontal line on the grass. The box's right wall comes down a little lower and further right, and a small tuft of grass hides where it meets the ground.",
+ "errors": [
+  {
+   "where": "Lid versus box body",
+   "what": "The lid is drawn as a flat, symmetrical, front-on shape with no foreshortening, but the box behind it shows its right side wall turning away from the viewer as if seen from the front-right. The lining band between them is drawn at a similar angle. The lid and the box look as if they were drawn from two different cameras, so the lid reads as a flat panel pasted beside the box rather than sitting on it or sliding off it. The way the lid connects to the box is also unclear.",
+   "severity": "major"
+  },
+  {
+   "where": "Top and bottom of the coffin against the ground",
+   "what": "The ground is seen from well above, but the coffin is drawn almost at eye level. Its top shows only a thin strip, and the lid's foot is a straight horizontal edge with no depth to its footprint. From this camera height we should look down onto the head end and see the base's depth on the grass. Instead the coffin seems to stand on a single edge line rather than on the receding ground.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Upright wooden coffin standing on grass, seen in one consistent three-quarter view from slightly above: the lid sits on the box, both share the same front-right angle, and the lid's hexagon is foreshortened to match the box's side wall. The lid is slid slightly open, and its edge rests on the box rim so a strip of purple lining shows. The head-end top face is visible from above, and the coffin's flat base sits on the receding lawn with its footprint drawn in depth and a contact shadow."
+}

@@ -1,0 +1,11 @@
+{
+ "survey": "A felt cowboy hat in three-quarter view from the front left, floating as an icon over a blue sunburst. The tall crown has a single pinched crease at the top and sits on the brim. A red stitched hatband wraps the base of the crown, closes on itself and lies flush where the crown meets the brim. The brim is one continuous felt piece with a cream bound edge running all the way round, so no edges are loose. The left side of the brim is broad and rounded and turns up gently. The right side narrows, sweeps upward and ends in a sharp pointed tip, like a wing. The crown, the band and the brim join cleanly and nothing passes through anything else.",
+ "errors": [
+  {
+   "where": "Brim, right side vs left side",
+   "what": "The two sides of the brim should be mirror images, but they differ. On a real cowboy hat both sides curl up the same way and keep a rounded oval edge. Here the left side is wide and rounded, while the right side tapers into a sharp upswept point, like a horn or wing. Felt brims cannot form a point like that, and the three-quarter view cannot explain it: the far side of the brim would look shorter, but it would still be rounded.",
+   "severity": "major"
+  }
+ ],
+ "fix": "Cowboy hat with a symmetrical brim: both sides curl up equally into smooth rounded rolls, and the brim keeps an even oval outline all the way round. No pointed or wing-like tip on either side. Keep the same crown, red hatband and cream edge binding."
+}

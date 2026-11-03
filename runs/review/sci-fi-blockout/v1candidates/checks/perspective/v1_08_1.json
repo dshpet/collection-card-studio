@@ -1,0 +1,11 @@
+{
+ "survey": "A toy refracting telescope on a wooden tripod, standing on flat grey lunar ground in front of a striped teal backdrop. The camera sits a little above the object in a three-quarter view. The cream tube runs from the eyepiece at lower left up to the objective at upper right. The objective end is wider and points partly toward the viewer, so its blue lens shows as an ellipse. A grey U-clamp holds the tube. The clamp's front plate, with a bolt, faces the viewer. The clamp sits on a small grey base block, and the block's top face shows slightly from above. The block rests on a round orange tripod head, also seen from above as a flattened ellipse. Three round legs splay out from the head: one front leg comes down toward the viewer at lower centre, one goes to the right and one goes back to the left. Each leg ends in a grey rubber foot on the ground. The feet sit at believable depths for a ground seen from above, and the shadows fall across the same ground plane. The verticals, the head ellipse, the base block and the ground all agree on one raised viewpoint.",
+ "errors": [
+  {
+   "where": "Objective end of the tube (blue lens, upper right) compared with the length of the tube",
+   "what": "The lens and the rim of the wide barrel are drawn as a fairly open ellipse, as if the tube pointed well toward the camera. Yet the tube is drawn long and barely shortened, as if it were seen side-on. These two views do not match. Also, the rounded grey eyepiece cap at lower left seems to turn its end toward the viewer as well, which a single straight tube cannot do: if one end faces the viewer, the other faces away.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Keep the telescope tube seen mostly from the side: draw the objective lens at the upper-right end as a narrow ellipse that matches a tube angled only slightly toward the viewer, and have the eyepiece end at lower left point away from the viewer so its end face is hidden. Keep the tripod head, base block and ground at the same slightly raised three-quarter view."
+}

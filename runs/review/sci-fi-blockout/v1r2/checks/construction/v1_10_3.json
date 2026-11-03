@@ -1,0 +1,11 @@
+{
+ "survey": "A small moon base sitting on grey cratered ground, seen from a three-quarter view above. Main parts: (1) A thick, low cylindrical base that sits flat on the ground. Its top forms a ledge around the dome. (2) A glass dome set inside that ledge, with about nine white ribs that rise from a ring at the dome's foot and meet at a round cap on top. (3) A horizontal tunnel module made of two cylinder segments. It joins the side of the base at the back, rests on two rectangular blocks on the ground, and ends in a flat round cap facing the camera. (4) A yellow rectangular door with a knob on that end cap. (5) A metal ladder whose feet stand on the ground and whose top rails lean against the base wall, reaching the ledge around the dome. Everything touches the ground or another part. Nothing floats, and the ribs, tunnel joint and blocks all attach believably.",
+ "errors": [
+  {
+   "where": "Yellow door on the tunnel end cap",
+   "what": "The door is pushed to the left edge of the round end cap instead of sitting in its flat center. Its outer edge runs into the cap's rim, so a real hatch there would hit the curved tunnel wall and could not frame or open cleanly.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Center the yellow hatch door on the flat round end cap of the tunnel, with a clear border of white cap all around it, so it sits fully inside the cap's rim."
+}

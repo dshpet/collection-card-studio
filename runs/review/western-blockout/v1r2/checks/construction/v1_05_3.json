@@ -1,0 +1,16 @@
+{
+ "survey": "A gold five-pointed sheriff's star badge, seen from the front and tilted slightly clockwise, floating on a purple sunburst background. Each point is bevelled, with a raised rim running around the outline. A solid gold ball sits on each of the five tips and joins the point cleanly. In the centre is a round raised bezel holding a domed red stone. The back and pin are not shown, which is fine for a front view. It is a single solid piece, so it needs no other supports.",
+ "errors": [
+  {
+   "where": "Star outline: the right point and the bottom point",
+   "what": "The star is not regular. The angle between the bottom point and the right point is clearly narrower (about 50°) than the angle between the right point and the top point (about 85°). The bottom-left point is also shorter than the others. A tilted view does not explain the difference, so the five points look unevenly spaced.",
+   "severity": "minor"
+  },
+  {
+   "where": "Centre of the badge",
+   "what": "A domed red jewel sits in a bezel at the centre. Real sheriff's stars have a flat engraved centre or a stamped seal, not a gemstone. This is an invented part.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "A symmetrical gold sheriff's star badge with five points of equal length, evenly spaced 72° apart, each tipped with an identical gold ball. The centre is a flat round gold disc with a simple engraved ring or a small stamped emblem instead of a gem."
+}

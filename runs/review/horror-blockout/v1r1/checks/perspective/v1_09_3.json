@@ -1,0 +1,11 @@
+{
+ "survey": "A black cat figurine sits on a wooden plank floor in front of a wall with vertical stripes. The camera is a little above the cat and to its front-left, so we see the floor from above. The planks run in parallel diagonals that recede toward the upper right. The wall stripes stay vertical, and the line where the floor meets the wall is nearly horizontal. The cat's body is shown in three-quarter view. Its haunch bulges toward the right rear, and the two front paws rest flat on the planks, with the nearer paw drawn larger and lower. The head turns slightly toward the viewer's left, and the ears point up and back with the head. The red collar wraps the neck as a slightly curved band. It sits a little below eye level, so it shows only a shallow ellipse, which fits the camera height. The tail lies on the floor and curls forward around the paws, matching the floor's angle. A soft shadow falls to the right. The cat, the floor and the wall all agree on one viewpoint.",
+ "errors": [
+  {
+   "where": "Eyes on the head",
+   "what": "The head is turned three-quarters to the left, but both eyes are drawn as nearly equal, round, front-facing discs. The eye on the viewer's left should be narrower and a little smaller as the head turns away. Instead it bulges past the outline of the head like a sticker facing the camera.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Turn the eyes with the head: make the eye on the viewer's left narrower and slightly smaller, follow the curve of the face, and keep it inside the outline of the head. The nearer eye stays rounder and larger."
+}

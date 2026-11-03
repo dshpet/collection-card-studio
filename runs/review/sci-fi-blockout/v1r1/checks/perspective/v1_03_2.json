@@ -1,0 +1,16 @@
+{
+ "survey": "A stylized ringed planet floats on a flat purple striped background, so there is no ground plane. The orange sphere is seen from slightly above. A wide cream band wraps its upper half, and a second, thinner cream band sits low on the sphere, partly hidden by the ring. A flat yellow ring circles the sphere, tilted so that it rises to the upper right. It reads as an open ellipse seen from above: its front edge passes in front of the lower sphere and shows its thickness, its back passes behind the sphere at the upper right, and purple background shows through the hole at the left. A small blue porthole with an orange rim sits on the upper band near the sphere's left edge, facing mostly toward the viewer. The ring is centred on the sphere, and its front and back halves agree on one view from above.",
+ "errors": [
+  {
+   "where": "Upper cream band compared with the yellow ring",
+   "what": "The band and the ring should both circle the planet's equator direction, so they should be parallel ellipses with the same tilt and openness. Instead the band is flatter and tilts less steeply than the ring (about 17° against about 27°). It curves much less than the ring's ellipse, as if seen from a lower camera. As a result the band and the ring visibly close in on each other toward the upper right instead of running parallel.",
+   "severity": "minor"
+  },
+  {
+   "where": "Blue porthole near the sphere's left edge",
+   "what": "The porthole sits close to the sphere's left edge, where the surface turns well away from the viewer, yet it is drawn as an almost round, upright ellipse facing the camera. It should be squeezed into a narrower ellipse, with its long axis tilted to follow the curve of the sphere's edge.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the cream bands on the planet exactly parallel to the ring: give them the same tilt as the ring and the same elliptical curve, as seen from slightly above. Draw the porthole near the sphere's edge as a narrower foreshortened ellipse that follows the sphere's curve and turns away from the viewer, not facing the camera."
+}

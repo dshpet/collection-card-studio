@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the telescope is a thin diagonal tube on spindly tripod legs. It sits in the middle of the card with lots of empty moon ground around it and covers little of the card (area 0.123, below the real range; margin 0.119, above it). At thumbnail size the legs disappear and you mostly see grey ground. B: the binoculars fill the card corner to corner and nearly touch the right and bottom edges (margin 0.04). The big lenses are the first thing you see.",
+   "fix": "Push the camera in so the telescope fills most of the card. Let the tube run nearly corner to corner and come close to the edges. Show less ground."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the moon base is a small, squat dome and tube in the middle of the card, with wide empty crater ground above and below it (box height 0.458, below the real range). Next to it the big crater at upper left gets nearly as much attention. B: the pool bar is cropped by the top and left edges, and the roof bleeds off the frame. The fruit and drinks on the counter make a clear focal band, like the real cards that crop their scene.",
+   "fix": "Bring the dome base much closer and raise it so it fills the lower two-thirds of the card. Let part of the tube run off the left edge, and remove the large empty crater."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the rover stands whole in the middle of the card, with every wheel inside the frame and an even band of grey ground and green sky around it (margin 0.098, at the top of the real range). B: the taxi sits in three-quarter view, low and to the right, and its rear bumper nearly reaches the right edge (margin 0.035). The headlights and grille make the first read.",
+   "fix": "Turn the rover to a three-quarter view and move the camera in until the back wheels nearly touch the right edge of the card. Make the rover fill the card's width."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the control panel is a boxy unit seen from the front in the middle of the card. Its gap to the card edge is a little above the real range all round (margin 0.102), and the riveted floor takes up the whole bottom quarter. B: the popcorn cart's awning nearly touches the top edge, and the cart fills almost the full height (0.869). The red and white awning is the first thing you see.",
+   "fix": "Push in on the control panel so the lever's red knob nearly touches the top edge and the cabinet fills the bottom. Show less floor."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the scarf is a tall, symmetric knot centred on the card, running from near the top edge to near the bottom. The gold badge at the knot is a clear focal point. B: the asteroid is a low lump sitting on the left side, and the orange flame tails at upper right compete with it for attention. Its gap to the card edge is a safe ~0.1 on every side, and it reads as a lumpy blob more than a named object.",
+   "fix": "Enlarge the asteroid and tilt it on a strong diagonal from the lower left to the upper right. Make the flame trail longer and let it run toward the top right corner. Bring the rock closer to the edges."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the pair of flip-flops runs diagonally across most of the card. The soles come within about 0.035 of the bottom and left edges. B: the planet is a short, wide ring shape floating in the middle of the card, with empty striped background above and below it (box height 0.435, below the real range). At thumbnail size it looks small and leaves a lot of space.",
+   "fix": "Draw the ringed planet bigger and tilt the ring more steeply, so that the planet and ring together fill most of the card's height. The ring tips should nearly touch the side edges."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the flowerbed is a wide, round mound in the middle of the card. The flowers are a clear focal cluster. B: the folding chair is a thin frame in the middle of the card with a lot of open red background around it (area 0.202). Both sit within the real measurements, and neither gives a clear framing tell.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the helmet is a big sphere set left of centre on a ledge, and the ledge runs off the left edge. Even so, the helmet itself stays clear of every edge, with more gap than any real card (margin 0.123). The orange visor is a strong first read. B: the sneakers are a low pair in the lower middle of the card, and the toe of the right shoe nearly touches the right edge (margin 0.033). The flat orange wall above them is a large empty field.",
+   "fix": "Bring the helmet closer so the dome nearly touches the top edge and the base sits close to the bottom. Turn the visor slightly toward the viewer."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the satellite dish is a narrow upright pole with a dish on top, standing in the middle of a big empty desert (area 0.164, width 0.451, both well below the real range). Sky and sand take up most of the card, and the dish is tiny at thumbnail size. B: the sandcastle fills the card's width, and the bucket and spade in the foreground support it. It reads as a crowded, full scene.",
+   "fix": "Move the camera close and low so the dish is huge and fills the upper half. Let the pole and base fill the lower part, and crop some of the desert away. Tilt the dish toward the viewer."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the UFO is a flat, wide saucer that hovers in the middle of the card. There is empty concentric background above and below it (box height 0.417, below the real range). Seen nearly edge-on, it reads as a thin oval at thumbnail size. B: the music player sits upper left, and its earbud cable loops down to the lower right, so the composition fills the card on a diagonal.",
+   "fix": "Tilt the saucer so the top of the dome and the disc face the viewer, and draw it bigger, filling about two-thirds of the card's height. Add a short light beam beneath it so it fills the lower area."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the submarine is a wide shape that fills the card from the propeller at the left edge (margin 0.053) to the bow at the right. The periscope reaches near the top. B: the rocket is a narrow diagonal shape in the middle of the card, with wide empty blue on both sides (width 0.512, below the real range; margin 0.121, above it). It is small and slim at thumbnail size.",
+   "fix": "Draw the rocket larger and tilted more steeply, from the lower left to the upper right, so the nose nearly touches the top right corner and the fins come near the lower left. Make the flame bigger so it fills the bottom."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the golf club shaft runs off the top right edge (margin 0), and the club head and ball sit low on the left. That crop is real-style. B: the umbrella is a tilted canopy across the top, with its pole going down to the lower middle and empty swirl background below it. Both match real framing habits, and neither is clearly generated on this vector.",
+   "fix": ""
+  }
+ ],
+ "pattern": "The generated cards (all the sci-fi subjects: telescope, moon base, rover, control panel, asteroid, planet, helmet, satellite dish, UFO, rocket) show the whole object in the middle of the card. Every edge stays clear of the frame by a cautious, even gap that often goes past the real range (0.1 to 0.12). The object also often covers too little of the card: a thin, narrow shape, or a flat, wide one that is too short. The real cards crop or nearly touch an edge and fill the card on a strong diagonal or in three-quarter view. They also give less of the card to empty ground or sky."
+}

@@ -1,0 +1,21 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "problems": [
+   "Arm joints are broken: where each ribbed arm column meets the smooth elbow tube there is a jagged seam. The outward rib warp pushes the column's bottom rim past the tube, so the ribs flare out over the elbow like a separate collar instead of growing out of it. Fix: the arm ribs now cut inward only, so the ribs never stick out past the elbow. The column is now as wide as the elbow and starts down inside the tube. The ribbed arm now rises cleanly out of the elbow."
+  ]
+ },
+ {
+  "round": 2,
+  "error": null,
+  "problems": [
+   "Both arms show a visible collar where the smooth elbow tube meets the ribbed upright column. The tube (r 0.07) runs on to low+0.2 inside a grooved column whose grooves sink to about 0.061, so the tube's rim sticks out through the grooves and reads as a sleeve joint, not one growing limb. Fix: end the elbow tube lower (low+0.13), start the column a little wider (r 0.071) below that point so it covers the tube's end, and fade the arm grooves in with height so the column starts smooth and becomes ribbed above the joint."
+  ]
+ }
+]

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the lighthouse that the lessons label REAL. Its brick seams are thin and its cloud edges are soft and lost. On B, a dark ring runs around every window frame and the chimney, the outer contour of the house and tower is heavy and even, and the moon has a halo edge. The roof tiles and the grass tufts are drawn as dark grooves.",
+   "fix": "No dark outline around the house. Window frames meet the wall with thin, soft seams. The moon has a soft edge with no ring around it. The grass and the background trees are soft and out of focus."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A's seahorse has soft, partly lost edges, and its crisp detail stays in the eye and the fin ridges. On B, the top balloon has a dark, even, sticker-like contour all the way around. The balloon bodies have almost no internal edges (subject density 0.028, below the real range), so the outline is doing all the work.",
+   "fix": "No contour line around the balloons. Each balloon separates from the sky by color and light only, and the rim on the shadow side is soft."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A's boxing gloves have soft, lost silhouettes against the wood and only a few thin crease lines. On B, the cauldron rim, the handles and the feet carry uniform dark contours. The floor tiles are cut by thick dark grooves that compete with the cauldron.",
+   "fix": "Draw the floor tiles with faint, thin seams. The cauldron's outer edge is crisp only at the lit rim and goes soft at the base and the shadow side, with no dark outline."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A's duck has a fairly firm contour, which is still within the range of the real cards. B's pumpkin has a very soft, washed-out silhouette and few internal edges (0.036, below the real range). The carved face is the only hard edge and has a glowing halo around it, and the outline darkness of 0.104 sits above the real range.",
+   "fix": "Give the pumpkin ribs clear, thin grooves and a crisp lit edge on the top contour. Draw the carved face cut cleanly, without a glow bleeding past its edges."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A's fountain has many thin, precise internal seams, and the water edges are soft. B's cat is a flat black blob outlined by one even, dark sticker contour. There is almost no internal edge on the body, and the floorboard lines are as strong as the cat's own edges.",
+   "fix": "No outline around the cat. Add a soft rim light on the back and ears so the silhouette separates by light, and draw fur shapes inside the body with faint edges. Make the floorboard seams thinner and fainter."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A's sneakers have dense, thin mesh and lace edges, which is busy but precise. B's tombstone has a thick, dark crack groove that reads as a drawn line, a hard dark contour around the cross, and speckle noise across the flat face.",
+   "fix": "Draw the crack as a thin, shallow fissure, not a black stroke. Keep the stone face clean, and edge the cross with light rather than a dark line."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "On A, a heavy, uniform black line runs around the witch hat's brim, and the cone has a dark contour of the same weight from tip to base, so there is no hierarchy. B's graduation cap has a firm edge on the board, but its tassel and band edges soften.",
+   "fix": "No black outline on the brim. The brim edge is lit on top and goes soft on the shadow side, and the cone tip blends softly into the background."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's candelabra is filled with dense, scratchy hatching on the brass arms and base (subject density 0.277, above the real range), and every part has the same strong edge. B's oil lamp has clean glass contours, sparse internal seams, and soft highlights.",
+   "fix": "Polish the brass smooth, with a few broad highlights instead of many small reflections. Keep the crisp edges at the candle flames and soften the base."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "On A, the chess table has thin stone cracks, and the busy background foliage is within the real range. On B, the coffin's outer contour is heavy and even, the cross has a dark outline groove, the moon has a dark ring, and the tombstone in the background has an edge as hard as the hero's.",
+   "fix": "No dark outline on the coffin or the cross. Raise the cross from the lid with light and a soft shadow. Make the moon a soft glow, and make the background gravestone and bushes soft and out of focus."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A's glass has thin, precise rim lines, and its ice cubes have soft internal edges. B's crystal ball has a thick dark ring around the whole sphere and a hard-edged square highlight. Its swirl is drawn with dense, wispy strokes, and the wood grain below adds busy edges.",
+   "fix": "Separate the glass sphere from the background by refraction and a thin bright rim, with no dark ring. Draw the highlight as a soft window reflection and keep the smoke inside soft."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "On A, the broom's bristles are packed with dark stroke hatching, the outline darkness of 0.104 is high, and the background is almost edgeless (0.002, below the real range). B's scarf has a firm contour, but its internal fold edges are soft and its background rings are within range.",
+   "fix": "Draw the bristles as a few soft clumps with light between them, not many dark strokes. Let the handle's shadow side melt softly into the background."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A's flip-flops have soft silhouettes and small, precise dot holes. B's books have doubled dark contours on every cover edge, and the window foliage and shelf lines in the background are busy and hard (background density 0.040, well above the real range of 0.004 to 0.017).",
+   "fix": "Make the window, the plant and the shelf soft and simple, with few edges. Give the book covers thin, crisp edges only where light catches them, with no doubled lines."
+  }
+ ],
+ "pattern": "The generated cards give themselves away with one even, dark outline around the whole hero and the same edge strength everywhere, from focus to base. They draw seams and cracks as thick dark grooves and put moons and glowing objects inside a ring or halo. Their backgrounds carry hard edges (wood grain, tiles, foliage) as strong as the hero's. On the real cards, the silhouette separates by light, outer edges soften on the shadow side, and backgrounds stay soft and sparse."
+}

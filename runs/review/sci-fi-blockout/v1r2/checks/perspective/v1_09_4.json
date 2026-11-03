@@ -1,0 +1,21 @@
+{
+ "survey": "A satellite dish on a red tapered tower, standing in desert sand under a low horizon. Parts from bottom to top: (1) a red cone-shaped tower buried in the sand, with a bolted access panel on its front-right face; (2) a riveted red collar ring at the top of the cone, drawn with its top face visible as if seen from above; (3) a red U-shaped yoke rising from the collar, its side plate facing the camera with a round pivot bolt; (4) a large white dish fixed to the yoke at its lower right, tilted up and to the left so its concave face is toward the viewer, with a thick rim band showing along its lower edge; (5) a feed head (grey cylinder with a red dome cap) held in front of the dish by a horizontal rod to the far rim and two struts down to the dish face; its cap is drawn from above. The sand horizon sits at about the height of the collar, roughly 60% of the way down the object.",
+ "errors": [
+  {
+   "where": "Horizon vs. collar ring and feed-head cap",
+   "what": "The horizon is drawn low, level with the collar, which puts the camera at about tower-top height. Yet the collar ring shows its top face and its rivets curve downward as if seen from above, and the feed cap at the very top of the frame also shows its top. Parts at or well above eye level should be seen level or from below (bottom ellipse showing). So the object and the landscape come from two different cameras.",
+   "severity": "minor"
+  },
+  {
+   "where": "Base of the cone where it meets the sand",
+   "what": "The cone's bottom edge is almost a straight horizontal line. The collar above it is drawn as a clearly curved ellipse. Since the base sits below eye level, its edge should curve downward at least as much as the collar does. As drawn, the tower reads as flat cut-out where it enters the sand.",
+   "severity": "minor"
+  },
+  {
+   "where": "Access panel on the cone",
+   "what": "The bolted panel is drawn as a flat, front-facing rectangle with vertical sides. It sits off-centre on a tapering round surface, so it should bend slightly with the curve and lean with the cone's tilted right edge.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Use one consistent camera slightly above the tower: raise the desert horizon to about the height of the dish, or show the collar ring and feed cap from slightly below if the low horizon stays. Curve the bottom of the cone into a downward ellipse where it sinks into the sand, matching the collar's curve. Wrap the bolted access panel around the curve of the cone and lean its sides to follow the cone's taper."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "A: the lasso floats on a quiet purple wave pattern, tone on tone, even all over. B: the neckerchief sits on a cyan spiral that gets brighter toward a glowing middle behind the hero, like the halo in the generated glove lessons. Both are category 1, so the difference is small.",
+   "fix": "Keep the spiral backdrop the same brightness all over, with no bright glow behind the scarf."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the jacket sits on green rays that darken toward the corners, with an even middle. B: the cowboy hat sits on blue rays with a pale glowing hot spot right behind the brim. That matches the halo the generated glove and camera lessons add.",
+   "fix": "Draw evenly toned blue rays with no bright glow behind the hat."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the coaster fills the frame and runs off the edges. Behind it are a few big soft clouds and a plain band of hills, like the real lighthouse. B: the train sits in a full desert scene: far mesas, several grass tufts, scattered pebbles, a long sleeper track and small clouds. That is a busy category 4, like the generated lighthouse islands.",
+   "fix": "Crop in close on the locomotive. Leave only a plain sandy ground and a soft sky, with no mesas, tufts or pebbles."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the barrel stands on wide wooden planks in front of a faint yellow wallpaper of tone-on-tone suns and waves (category 3). B: the chest is underwater with many sizes of bubbles, a seashell, loose coins and a light shaft. The hero would not come with these invented extra props.",
+   "fix": "Put the chest on a plain sandy floor against a smooth blue backdrop. Leave out the bubbles, seashell and loose coins."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the book lies on a cropped table. Behind it are a rail, a hedge and a pot cut off by the frame, all big flat shapes close to the camera. B: the stone chess table stands in a wide park with three trees, a winding path, distant bushes and grass blades drawn across the whole lawn. That is too many objects for a real environment.",
+   "fix": "Move the camera closer to the table. Use plain, soft grass and one blurred green backdrop, with no trees or path."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the cactus stands in sand dunes with a few pebbles, in front of an orange diamond pattern. B: the popcorn cart stands on paving tiles in front of a blue diamond pattern. Both use a quiet tone-on-tone pattern over a real ground, at similar busyness.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the medal box sits on crisp cyan rays with an even middle. B: the sheriff star sits on purple rays that fade into a bright glow right behind the star. Its background edge density is 0.003, below the real range, because the rays blur into the glow.",
+   "fix": "Draw crisp, evenly lit purple rays all the way to the middle, with no bright glow behind the star."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the boat and dock fill the frame on cyan water. The only extras are two lily pads and ripples, all large and quiet. B: the wagon stands on a long dirt road with rolling hills, several bushes, clouds, small flowers and pebbles. That is a busy landscape like the generated lessons.",
+   "fix": "Crop close on the wagon on plain dirt, with a soft green field and sky behind it. No flowers, pebbles or distant bushes."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the birdhouse hangs on a cropped tree trunk, in front of a soft park and city backdrop, like the real fan-and-window card. B: the drink stands on a plain ledge in front of concentric blue rings (category 2). Both are within the real ranges.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the sneakers stand on a plain cream ledge against an orange gradient (category 2, quiet). B: the saloon doors stand on a full wooden plank floor against flat pink. The plank seams and the gaps in the frame push background detail (0.0164) and edge density (0.033) above the real ranges.",
+   "fix": "Stand the doors on a plain smooth ledge with no plank lines, against a soft pink gradient."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: this is the real computer card from the lessons, on a desk against an orange gradient. B: the saddle hangs on a fence rail and post that cross the frame, against a flat cyan field. A real-material prop is set against a flat graphic backdrop, a mix of categories the real cards don't use.",
+   "fix": "Either float the saddle alone on a blue ray backdrop, or show the fence with a matching simple outdoor backdrop."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "A: the graduation cap sits on blue concentric rings with a mild light middle. B: the boot sits on orange rings with a hot yellow glow at the middle behind the shaft. The halo is slightly stronger, as in the generated lessons.",
+   "fix": "Keep the rings the same orange all over, with no bright yellow centre."
+  }
+ ],
+ "pattern": "Generated cards give themselves away through the background. On flat fields (rays, spirals, rings) they put a bright glowing hot spot right behind the hero. In real environments they build out a wide, full landscape full of small things (mesas, tufts, pebbles, flowers, trees, paths, bubbles, shells) rather than cropping close on a few big quiet shapes. They also mix a real prop or a plank floor with a flat graphic backdrop."
+}

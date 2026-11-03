@@ -1,0 +1,11 @@
+{
+ "survey": "A round space helmet sits in a short white cylindrical base, which stands on a purple shelf in front of a pink wall. The camera is a little above the object. The base's top (the silver collar) shows as a shallow ellipse, and its bottom edge and red stripe curve downward to match, so the base is seen from above. The helmet dome is turned slightly to the viewer's left. The visor opening sits on the front-left of the dome. A white stripe edged in orange runs over the crown toward the visor, and a curved white panel wraps the right side of the dome. Both bands bend around the sphere convincingly. The dome sits down into the collar. The base stands flat on the shelf top, which is also seen from above with its back edge running behind the object, and the shadow falls to the right. The base, the shelf and the stripes all agree on one slightly high camera.",
+ "errors": [
+  {
+   "where": "Visor and its orange rim, front-left of the helmet dome",
+   "what": "The visor sits on the left-turned part of the dome, but it is drawn almost face-on. The rim is nearly the same thickness all the way round, and its left edge pushes out past the dome's outline. Because of this the visor reads as a flat badge stuck on facing the camera. It should be squashed sideways, with the rim's far (left) side thinner, as it curves around the sphere with the rest of the helmet.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the visor as an opening that follows the curve of the helmet dome, turned slightly left with the dome. Make the visor oval a little narrower from side to side, and make the orange rim thinner on its far left side and wider on its near right side. Keep the rim inside the helmet's round outline and seen from the same slightly high camera as the base."
+}

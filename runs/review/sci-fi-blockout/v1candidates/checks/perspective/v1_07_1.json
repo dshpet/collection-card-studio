@@ -1,0 +1,21 @@
+{
+ "survey": "A six-wheeled toy rover on a grey cratered ground, seen from slightly above in a three-quarter view. Body: a rounded white box. Its long side, with a riveted panel, orange light and vent slots, faces the viewer almost straight on. The top face is seen from above and a short end face shows on the right. Its bottom edge runs nearly level across the image. On top: a satellite dish on a post, seen from above with its inside showing, and a solar panel on a short post whose cell grid follows the panel's tilt. Both fit the high camera. Below: a bent grey suspension leg comes from a hub under the middle of the long side and goes down to the near wheels. Near side: three black wheels with grey hubs, drawn almost face-on. Further back are two partly hidden far wheels, plus one wheel at the right end with its tread showing.",
+ "errors": [
+  {
+   "where": "Near row of three wheels, lower left to lower centre",
+   "what": "The body's long side faces the camera with its bottom edge nearly level, so the wheels on that side should sit in a row parallel to it. Instead the row runs diagonally: the left wheel is highest and furthest back, and each wheel to the right sits lower and closer to the viewer. The left wheel also sticks out past the body's left end. The wheels look as if they belong to a chassis turned at a different angle from the body.",
+   "severity": "major"
+  },
+  {
+   "where": "Suspension leg under the middle of the body",
+   "what": "Only one bent leg is shown, attached to the body's middle. Its joints don't line up with the axles of the near wheels, and the left and middle wheels have no visible rod reaching their hubs. The wheels look like they float under the body instead of hanging from it.",
+   "severity": "minor"
+  },
+  {
+   "where": "Wheel at the right end, and the far wheels",
+   "what": "The right-end wheel shows mostly tread and a narrow, angled hub, as if turned toward the end face, while the near wheels show round hubs facing the viewer. On a rover all wheels should be parallel and equally foreshortened. The far wheels also don't form a row parallel to the near wheels or the body.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Six-wheeled rover in a three-quarter view from slightly above. All six wheels are parallel to each other and to the body's long side. The three near wheels sit in one straight row along the body's bottom edge, evenly spaced and the same distance from the viewer, with none sticking out past the body's ends. The three far wheels form a matching parallel row behind them, partly hidden by the body. Every wheel has the same slightly narrowed elliptical hub that matches the side-on view. Each wheel hangs from its own suspension arm attached under the body, with the arm meeting the wheel's hub. All wheels rest flat on the ground plane at the same camera angle as the body's top face."
+}

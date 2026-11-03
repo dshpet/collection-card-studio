@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the glass is a clean tapered tumbler with straight sides and a tight flat base, a thin straw and a small leaf cluster. All in range. B: the coin binocular head is a rounded slab with soft barrel ends. The post and collar are straight cylinders and the side arm stays thin enough. Both cards keep plausible proportions, and the numbers sit inside the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the witch hat cone curls into a long horn. It sits on an oversized oval brim, and the brim's right edge smears into a blurred, ragged contour where the tip of the brim should be a clean edge (straight_share 0.73, above the real maximum). B: the mortarboard has a flat square board with crisp, slightly bevelled corners. The skull cap is straight-sided and the tassel cord is thin. It reads like the real cards.",
+   "fix": "Witch hat with a moderate cone that bends slightly at the tip, a brim only a little wider than the crown with a clean, sharp outer edge all the way round, and a thin hatband."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the seahorse has a ridged back, a thin snout and a tight spiral tail. Parts are in sensible relation, though the corner rate is high from the ridges. B: the guitar has a long thin neck and a correct double-cutaway body, with the strap as a thin loop behind it. Neither card shows swollen or toy-like form on the silhouette.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the black cat's head is very large against a short, bean-shaped body. The outline is soft and fuzzy, with no clear leg or paw separation, and the collar line is lost (straight_share 0.219, below the real range). B: the fountain has three stacked tiers with flat rims and straight pedestals, and a wide circular basin with a crisp lip. The parts stack correctly.",
+   "fix": "Sitting black cat with a head about a third of body height, a visible chest, separate front legs and paws, a crisp outer contour and a thin tail curling round the feet."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the coffin is one solid hexagonal slab, with almost no other parts in the silhouette (solidity 0.986, above the real maximum; straight_share 0.78, above range). The lid has no rim or edge step, and it is a flat cut-out shape standing upright. B: the stone chess table has a slab top with bevelled corners, a pedestal, a base plate and two stools. That is the expected part count and relation.",
+   "fix": "Wooden coffin with a visible lid rim and side boards, a slight bevel step around the lid edge, and a thin base plinth, so the outline shows the lid sitting on the box."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the spring rider duck has a distinct head, beak, handle peg, a thin coil spring and a flat square base plate. All the expected parts are there and the parts that should be thin stay thin. B: the jack-o'-lantern is a single swollen blob with a stub stem (solidity 0.971, above the real maximum; corner_rate 0.875, low). It has no lobe dips along the outline, so the pumpkin reads as a pillow.",
+   "fix": "Pumpkin with clear vertical lobes that make shallow dips along the top and bottom outline, slightly squat, with a thin curved stem."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the oil lamp has a chimney glass, a burner collar, a round font, a thin loop handle and a stepped foot. The part count and relation are correct. B: the candelabra's three candles are thick, even rods. The U-shaped arms are fat tubes of equal width, the drip cups are oversized discs, and the base is a heavy dome. The thin metalwork has been thickened (solidity 0.404).",
+   "fix": "Candelabra with slim, tapering candles, thin elegant arms that narrow towards the cups, small drip pans and a modest flat base."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the house's tower, roof and chimney are crammed into a narrow, tall block. The roof ridge and tower cone merge into a lumpy top, and the base outline is bumpy rather than a straight footing. B: this lighthouse matches the real lesson card exactly, with a domed lantern, a thin railing, a corbel ring and a straight tapered tower.",
+   "fix": "Haunted house with a wide main block, a steep roof with straight eaves, a separate narrow tower with a pointed cone, a thin chimney, and a straight, level ground line at the base."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the tombstone is a plain slab with a rounded top and a notch bitten out of the shoulder. It stands on a rectangular plinth, and the faces are flat with a soft bevel (straight_share 0.646, high but in range). B: the sneaker pair has an organic outline, a chunky sole and laces, as expected for shoes. On form alone, A is the simpler, block-out-like card.",
+   "fix": "Tombstone with a slight taper, a crisp bevelled edge around the arched top, a carved border step on the face, and a plinth with a tight corner bevel."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the neckerchief has a looped collar, a knot and two tails. The cloth is puffy but the parts are correctly related. B: the broom has a long thin handle with a knob, a wrapped binding and a small, short bristle head. The head is undersized compared with the handle, and its bottom is a scalloped blob rather than splayed straw (solidity 0.534).",
+   "fix": "Witch broom with a longer bristle bundle about a third of the total length, the straws flaring out to a ragged, spiky end, tied with a thin cord binding."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cauldron has a round belly, a rolled rim, two thin ring handles and three short stub legs. The parts are correct but very clean and symmetrical. B: the boxing gloves are heavy, rounded padded forms with cuffs, which suits gloves (solidity 0.951). Weak call, based on A's stamped, symmetrical, block-out-like regularity.",
+   "fix": "Cauldron with a slightly flattened belly, a thicker lip, ring handles hung from small lugs, and three tapered legs set slightly splayed."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the glass has straight tapered sides, a thin bent straw and a paper umbrella. Those are the expected thin parts. B: the crystal ball is an oversized perfect circle on a short, wide disc base. The two holder prongs barely break the outline, and the stand is small next to the ball (solidity 0.876, corner_rate 1.452).",
+   "fix": "Crystal ball sitting in a taller stand with a visible neck, a stepped round base, and thin curved claw prongs that clearly grip the sides of the ball."
+  }
+ ],
+ "pattern": "Generated cards are the horror props (hat, cat, coffin, pumpkin, candelabra, house, tombstone, broom, cauldron, crystal ball). On silhouette they give themselves away through block-out simplification. Swollen single-mass forms have no lobe or edge steps, like the pumpkin and coffin. Some parts are missing or merged, like the coffin lid rim, the cat's legs and the house roofline. Thin parts are thickened into tubes, like the candelabra arms and candles. And some proportions are skewed: the oversized cat head and crystal ball, and the undersized broom head. Real cards keep thin parts thin and separate their parts with crisp steps."
+}

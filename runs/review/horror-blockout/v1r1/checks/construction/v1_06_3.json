@@ -1,0 +1,11 @@
+{
+ "survey": "A cartoon gravestone, seen at a three-quarter angle from front-left. Main parts: (1) an upright grey stone slab with an arched top and visible thickness on its right side; (2) a wider rectangular plinth under it, which the slab stands on squarely with full contact along its bottom edge; (3) a raised cross carved on the upper front face, part of the slab; (4) damage at the top-right: the arch ends in a jagged, stepped break, a crack runs down the face from it, and the right part of the top sits lower and flat; (5) moss clumps stuck to the top-left corner of the arch and resting on the plinth against the bottom-left of the slab; (6) a small orange flower with a stem lying flat on the plinth at the bottom-right. Nothing floats. Each part touches the surface it rests on, and the counts are right (one cross, one slab, one base). Nothing has been added that a real headstone would not have.",
+ "errors": [
+  {
+   "where": "Top-right corner of the slab, where the arch breaks off",
+   "what": "The broken corner doesn't read as a real fracture. Below the jagged step, the lower right top is flat with smooth, rounded edges, like the stone's original finished edge, not a break. A shoulder that sits lower and squarer than the arch could never have been part of one continuous arched slab, so the outline looks like a carved step with a jagged bit added, not a missing piece of stone.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "At the top-right of the gravestone, make the arch curve down continuously to the right edge, then show one clean missing chunk with rough, angular, freshly broken stone where it came off. Don't leave a flat, smooth-edged lower shoulder. The crack running down the face should start from the edge of that break."
+}

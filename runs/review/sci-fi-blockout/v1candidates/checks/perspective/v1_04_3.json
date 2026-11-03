@@ -1,0 +1,11 @@
+{
+ "survey": "A single lumpy grey asteroid floats over a wavy blue background with no ground. We see it in three-quarter view from slightly above and to the left. Its rounded front face points down-left toward the viewer, and its upper-right back turns away. Three orange teardrop flames come out from behind its upper-right back edge and trail up and to the right, away from the direction of travel. They taper to tips with small droplet balls, and the nearest flame overlaps the rock's right side correctly. There are four main craters. The large one on the upper-left front face is a fairly open ellipse, which fits a surface that faces the camera. The small central crater is a slightly flattened ellipse. The bottom crater is cut off by the lower silhouette edge as it wraps under. The fourth crater sits at the right edge of the silhouette, where the surface turns sideways. Lighting and overlap agree on one camera, and the flames' direction fits the rock's implied motion.",
+ "errors": [
+  {
+   "where": "Right-side crater on the asteroid, at the right edge of its silhouette next to the lowest flame",
+   "what": "This crater sits where the rock's surface turns away from the camera, so it should be a narrow ellipse squashed sideways. Instead it is drawn almost as round and open as the large crater that faces the camera on the left. Only the silhouette cutting off its right side hints that the surface wraps away.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the crater on the asteroid's right side as a narrow vertical ellipse, foreshortened because it sits on a surface turning away from the viewer. It should be clearly thinner than the large, round crater on the front-left face, with its inner wall visible on one side only."
+}

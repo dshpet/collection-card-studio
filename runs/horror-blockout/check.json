@@ -1,0 +1,2058 @@
+{
+ "v1_01": [
+  {
+   "try_id": "v1_01_1",
+   "brief_id": "v1_01",
+   "card": {
+    "name": "Haunted House",
+    "subject": "A tall crooked mansion with a pointed roof, a round attic window and a crooked chimney.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "gray-brown walls, dark purple roof, yellow glowing windows",
+    "backdrop_colors": "bright sky blue with a big yellow moon",
+    "surface_or_setting": "grassy hilltop"
+   },
+   "style": 0.77,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Crooked stone house",
+     "object_class": "building_place",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The chimney shaft bends: the lower section rises straight out of the roof, then the upper section kinks and leans left with its bricks out of line. A masonry chimney this thin could not hold up an off-balance top section, so it reads as a bent tube rather than stacked brick. This could pass as cartoon whimsy, but it is still the only structurally questionable part."
+    },
+    {
+     "severity": "minor",
+     "what": "The chimney stack is not a straight vertical. It bends partway up and leans to the right, while every other vertical on the house stays upright. Its cap also tilts away from the roof's viewpoint."
+    },
+    {
+     "severity": "minor",
+     "what": "The window frames are slightly rotated on a flat face seen head-on. Their sills and tops do not run parallel to the ledge and the stone courses, unlike the lower front window and the door."
+    },
+    {
+     "severity": "minor",
+     "what": "The windows on the curved tower are drawn as flat, front-facing rectangles. They do not narrow or curve as the cylinder turns away, which the house's side windows do."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_01_2",
+   "brief_id": "v1_01",
+   "card": {
+    "name": "Haunted House",
+    "subject": "A tall crooked mansion with a pointed roof, a round attic window and a crooked chimney.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "gray-brown walls, dark purple roof, yellow glowing windows",
+    "backdrop_colors": "bright sky blue with a big yellow moon",
+    "surface_or_setting": "grassy hilltop"
+   },
+   "style": 0.768,
+   "misses": [
+    "color_palette.hue_gap"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Whimsical stone house",
+     "object_class": "building_place",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The chimney stack is built from blocks that shift sideways and lean, so it bends partway up instead of rising straight. A masonry chimney built like that would not stand. Cartoon styling is allowed, but this reads as a crooked, unstable stack rather than a simplification."
+    },
+    {
+     "severity": "major",
+     "what": "The chimney is crooked. Its sides lean left as they rise and its cap tilts, so its edges are not vertical like every other vertical edge on the house. It looks bent instead of standing upright on the roof."
+    },
+    {
+     "severity": "minor",
+     "what": "The tower's brick rows are almost straight horizontal lines. Seen from above, as the plinth and cone base show, the rows on a cylinder should curve down toward the edges like the cone's base ellipse does. Here the wall looks flat instead of round."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_01_3",
+   "brief_id": "v1_01",
+   "card": {
+    "name": "Haunted House",
+    "subject": "A tall crooked mansion with a pointed roof, a round attic window and a crooked chimney.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "gray-brown walls, dark purple roof, yellow glowing windows",
+    "backdrop_colors": "bright sky blue with a big yellow moon",
+    "surface_or_setting": "grassy hilltop"
+   },
+   "style": 0.767,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Whimsical crooked house",
+     "object_class": "building_place",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The chimney is crooked. Its lower part leans and its upper part bends back to vertical, giving a kinked stack. Its base also does not sit squarely in the roof plane, so it looks more stuck onto the slope than built up through the roof."
+    },
+    {
+     "severity": "minor",
+     "what": "The window is pushed right up against the roof overhang, and the eave line slightly crowds or overlaps its top frame. A real wall leaves room between a window head and the eave."
+    },
+    {
+     "severity": "minor",
+     "what": "The chimney shaft leans to the right and bends partway up, so its sides are not vertical while every other vertical on the house stays upright."
+    },
+    {
+     "severity": "minor",
+     "what": "These windows sit near the cylinder's edge, where the wall curves away from the viewer. They are drawn as flat, fairly wide rectangles facing the camera, instead of narrowed and wrapped around the curve."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_01_4",
+   "brief_id": "v1_01",
+   "card": {
+    "name": "Haunted House",
+    "subject": "A tall crooked mansion with a pointed roof, a round attic window and a crooked chimney.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "gray-brown walls, dark purple roof, yellow glowing windows",
+    "backdrop_colors": "bright sky blue with a big yellow moon",
+    "surface_or_setting": "grassy hilltop"
+   },
+   "style": 0.771,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Whimsical stone house",
+     "object_class": "building_place",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true,
+   "chosen": true
+  },
+  {
+   "try_id": "v1_01_5",
+   "brief_id": "v1_01",
+   "card": {
+    "name": "Haunted House",
+    "subject": "A tall crooked mansion with a pointed roof, a round attic window and a crooked chimney.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "gray-brown walls, dark purple roof, yellow glowing windows",
+    "backdrop_colors": "bright sky blue with a big yellow moon",
+    "surface_or_setting": "grassy hilltop"
+   },
+   "style": 0.748,
+   "misses": [
+    "edges_linework.edge_density_background"
+   ],
+   "issues": [
+    "art_category"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Crooked fantasy house",
+     "object_class": "building_place",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "exterior_scene",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v1_02": [
+  {
+   "try_id": "v1_02_1",
+   "brief_id": "v1_02",
+   "card": {
+    "name": "Witch Hat",
+    "subject": "A tall pointed hat with a wide curved brim and a buckled band.",
+    "object_class": "clothing",
+    "category": "1",
+    "pattern": "concentric_rings",
+    "hero_colors": "black hat, purple band, small yellow buckle",
+    "backdrop_colors": "bright orange",
+    "surface_or_setting": ""
+   },
+   "style": 0.72,
+   "misses": [
+    "composition_hierarchy.center_y",
+    "color_palette.chroma_subject",
+    "color_palette.shadow_chroma_kept"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Witch hat",
+     "object_class": "clothing",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The band's edges are circles lying flat, parallel to the brim, so they should curve like the brim's ellipse, with about half as much height as width. Instead they curve only slightly, as if seen almost level. The band, and the cone's base under it, read as seen from a lower viewpoint than the brim they sit on."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_02_2",
+   "brief_id": "v1_02",
+   "card": {
+    "name": "Witch Hat",
+    "subject": "A tall pointed hat with a wide curved brim and a buckled band.",
+    "object_class": "clothing",
+    "category": "1",
+    "pattern": "concentric_rings",
+    "hero_colors": "black hat, purple band, small yellow buckle",
+    "backdrop_colors": "bright orange",
+    "surface_or_setting": ""
+   },
+   "style": 0.727,
+   "misses": [
+    "composition_hierarchy.center_y",
+    "color_palette.chroma_subject",
+    "color_palette.shadow_chroma_kept"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Witch hat",
+     "object_class": "clothing",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The band's top and bottom edges are almost flat, like an ellipse seen nearly level, with very little downward curve at the front. The brim under it is drawn as a wide-open ellipse seen clearly from above. Both are circles in the same horizontal plane, so the band should curve as much as the brim does. As drawn, the cone and band are seen from a lower camera than the brim."
+    },
+    {
+     "severity": "minor",
+     "what": "The brim's ellipse is rotated, with its long axis sloping up to the right. The band's ellipse stays roughly level, and the cone's axis stays straight up. If the brim were really tilted, the band would tilt with it and the cone would lean the same way. If it isn't tilted, the brim's ellipse should be level. The brim's plane and the cone's plane don't agree."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_02_3",
+   "brief_id": "v1_02",
+   "card": {
+    "name": "Witch Hat",
+    "subject": "A tall pointed hat with a wide curved brim and a buckled band.",
+    "object_class": "clothing",
+    "category": "1",
+    "pattern": "concentric_rings",
+    "hero_colors": "black hat, purple band, small yellow buckle",
+    "backdrop_colors": "bright orange",
+    "surface_or_setting": ""
+   },
+   "style": 0.699,
+   "misses": [
+    "composition_hierarchy.center_y",
+    "color_palette.chroma_subject",
+    "color_palette.shadow_chroma_kept"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Witch hat",
+     "object_class": "clothing",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The band's bottom edge, where the cone meets the brim, is a much flatter curve than the brim. The brim's oval is about half as tall as it is wide, so we see it from well above. The band curves only slightly, as if seen almost at eye level. The cone and brim seem to be drawn from two different camera heights, so the cone looks pasted onto the brim rather than sitting in it."
+    },
+    {
+     "severity": "minor",
+     "what": "The brim's long axis rises toward the right, but the band's oval sits level and the cone's base rises straight up. If the brim really is tilted, the band and the cone's base should tilt with it, since the cone should stand at a right angle to the brim. Instead the brim seems to tilt on its own beneath an upright cone."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_02_4",
+   "brief_id": "v1_02",
+   "card": {
+    "name": "Witch Hat",
+    "subject": "A tall pointed hat with a wide curved brim and a buckled band.",
+    "object_class": "clothing",
+    "category": "1",
+    "pattern": "concentric_rings",
+    "hero_colors": "black hat, purple band, small yellow buckle",
+    "backdrop_colors": "bright orange",
+    "surface_or_setting": ""
+   },
+   "style": 0.707,
+   "misses": [
+    "composition_hierarchy.center_y",
+    "value_contrast.lightness_p1",
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Witch hat",
+     "object_class": "clothing",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false,
+   "chosen": true
+  }
+ ],
+ "v1_03": [
+  {
+   "try_id": "v1_03_1",
+   "brief_id": "v1_03",
+   "card": {
+    "name": "Pumpkin",
+    "subject": "A round orange pumpkin carved with triangle eyes and a zigzag grin, with a short green stem.",
+    "object_class": "plant_nature",
+    "category": "3",
+    "pattern": "rays",
+    "hero_colors": "orange pumpkin, green stem, yellow glowing face",
+    "backdrop_colors": "purple",
+    "surface_or_setting": "wooden table"
+   },
+   "style": 0.718,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Jack-o'-lantern",
+     "object_class": "plant_nature",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The face is drawn like a flat front-facing sticker and does not wrap around the round, ribbed body. The ends of the mouth come close to the side edges of the pumpkin, where the surface turns sharply away. They should get narrower and bend around the form there, but they stay full height and evenly spaced. The cut edges also do not bend where they cross the rib grooves."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_03_2",
+   "brief_id": "v1_03",
+   "card": {
+    "name": "Pumpkin",
+    "subject": "A round orange pumpkin carved with triangle eyes and a zigzag grin, with a short green stem.",
+    "object_class": "plant_nature",
+    "category": "3",
+    "pattern": "rays",
+    "hero_colors": "orange pumpkin, green stem, yellow glowing face",
+    "backdrop_colors": "purple",
+    "surface_or_setting": "wooden table"
+   },
+   "style": 0.725,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Jack-o'-lantern",
+     "object_class": "plant_nature",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The two eyes do not match. The left eye is a narrow triangle leaning left with its tip pointing up-left. The right eye is a wider, upright triangle with a level base. On an otherwise symmetric carved face this looks like a mistake rather than a deliberate choice. It is noticeable only on a close look."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_03_3",
+   "brief_id": "v1_03",
+   "card": {
+    "name": "Pumpkin",
+    "subject": "A round orange pumpkin carved with triangle eyes and a zigzag grin, with a short green stem.",
+    "object_class": "plant_nature",
+    "category": "3",
+    "pattern": "rays",
+    "hero_colors": "orange pumpkin, green stem, yellow glowing face",
+    "backdrop_colors": "purple",
+    "surface_or_setting": "wooden table"
+   },
+   "style": 0.719,
+   "misses": [
+    "color_palette.chroma_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Jack-o'-lantern",
+     "object_class": "plant_nature",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "errors": []
+  },
+  {
+   "try_id": "v1_03_4",
+   "brief_id": "v1_03",
+   "card": {
+    "name": "Pumpkin",
+    "subject": "A round orange pumpkin carved with triangle eyes and a zigzag grin, with a short green stem.",
+    "object_class": "plant_nature",
+    "category": "3",
+    "pattern": "rays",
+    "hero_colors": "orange pumpkin, green stem, yellow glowing face",
+    "backdrop_colors": "purple",
+    "surface_or_setting": "wooden table"
+   },
+   "style": 0.705,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Jack-o'-lantern",
+     "object_class": "plant_nature",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "chosen": true
+  }
+ ],
+ "v1_04": [
+  {
+   "try_id": "v1_04_1",
+   "brief_id": "v1_04",
+   "card": {
+    "name": "Cauldron",
+    "subject": "A round black pot with three short legs, two side handles and bubbling liquid at the top.",
+    "object_class": "container",
+    "category": "3",
+    "pattern": "stripes",
+    "hero_colors": "black iron, bright green bubbling potion, small orange flame",
+    "backdrop_colors": "pink",
+    "surface_or_setting": "stone floor"
+   },
+   "style": 0.677,
+   "misses": [
+    "color_palette.chroma_subject",
+    "color_palette.chroma_background",
+    "color_palette.hue_gap"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Bubbling potion cauldron",
+     "object_class": "container",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The two handles should be a mirrored pair but do not match. The left one is a loop attached just under the rim. The right one is a ring on a square block set lower down the side of the body, and its lug and loop are a different shape and size. A cast cauldron has two identical handles at the same height."
+    },
+    {
+     "severity": "major",
+     "what": "The rim ellipse is level, so the pot is seen straight on with no sideways tilt. The two handles sit on opposite sides of it, so they should appear at the same height. Instead the left lug is right under the rim and the right lug is about a third of the way down the body. No single view puts matching handles at such different heights, and the right lug's block is seen from a different angle than the left one."
+    },
+    {
+     "severity": "minor",
+     "what": "The rim ellipse is very flat, as if seen from a camera only slightly above. The floor tiles, the horizon high in the card and the fire sticks all look seen from a much higher camera, steeply from above. From that camera the cauldron's opening should be a noticeably rounder ellipse showing more of the liquid. The pot and the ground it stands on use two different camera heights."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_04_2",
+   "brief_id": "v1_04",
+   "card": {
+    "name": "Cauldron",
+    "subject": "A round black pot with three short legs, two side handles and bubbling liquid at the top.",
+    "object_class": "container",
+    "category": "3",
+    "pattern": "stripes",
+    "hero_colors": "black iron, bright green bubbling potion, small orange flame",
+    "backdrop_colors": "pink",
+    "surface_or_setting": "stone floor"
+   },
+   "style": 0.694,
+   "misses": [
+    "color_palette.chroma_subject",
+    "color_palette.chroma_background",
+    "color_palette.hue_gap"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Bubbling potion cauldron",
+     "object_class": "container",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The two handles should be a mirrored pair but differ. The left one is a slim upright loop on a small lug at rim height, seen edge-on. The right one is a heavy ring on a big square block, set lower on the shoulder and turned to face the camera. Matching handles on opposite sides could not look this different from one viewpoint."
+    },
+    {
+     "severity": "major",
+     "what": "The cauldron is seen almost head-on, so its two opposite handles should look like mirror images. Instead the left ring is a thin, nearly edge-on oval set high near the rim, and the right ring is a wide, face-on circle on a block much lower on the body. Each handle looks as if it was drawn from a different angle and height."
+    },
+    {
+     "severity": "minor",
+     "what": "The rim and liquid surface are drawn as a fairly flat ellipse, as if seen from only slightly above. The floor tiles and the foot rings are seen from clearly higher up. So the top of the pot reads as more level than the ground it stands on."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_04_3",
+   "brief_id": "v1_04",
+   "card": {
+    "name": "Cauldron",
+    "subject": "A round black pot with three short legs, two side handles and bubbling liquid at the top.",
+    "object_class": "container",
+    "category": "3",
+    "pattern": "stripes",
+    "hero_colors": "black iron, bright green bubbling potion, small orange flame",
+    "backdrop_colors": "pink",
+    "surface_or_setting": "stone floor"
+   },
+   "style": 0.683,
+   "misses": [
+    "color_palette.chroma_subject",
+    "color_palette.chroma_background",
+    "color_palette.hue_gap",
+    "color_palette.shadow_chroma_kept"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Bubbling potion cauldron",
+     "object_class": "container",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false,
+   "errors": [
+    {
+     "severity": "major",
+     "what": "The two handles should be mirror copies but are built differently. The left ring hangs from a small lug tucked right under the rim. The right ring hangs from a large square block that sticks out lower on the body. They differ in mount shape, size and height, so the pot would hang crooked if lifted by them."
+    },
+    {
+     "severity": "minor",
+     "what": "Only two legs can be seen, and their spacing leaves it unclear where a third would be. Unless a back leg is hidden, the pot would not stand on two. This is only a question on a close look."
+    },
+    {
+     "severity": "major",
+     "what": "The handles sit on opposite sides of the pot at the same distance from the camera, so they should look like mirror images: same height and same foreshortening. Instead, the left ring is attached at rim level and drawn as a narrow, foreshortened loop. The right ring is attached noticeably lower on a boxy lug and drawn as an almost full circle facing the viewer. The two rings are seen from different angles, and the line between their mounting points tilts even though the rim is level."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_04_4",
+   "brief_id": "v1_04",
+   "card": {
+    "name": "Cauldron",
+    "subject": "A round black pot with three short legs, two side handles and bubbling liquid at the top.",
+    "object_class": "container",
+    "category": "3",
+    "pattern": "stripes",
+    "hero_colors": "black iron, bright green bubbling potion, small orange flame",
+    "backdrop_colors": "pink",
+    "surface_or_setting": "stone floor"
+   },
+   "style": 0.724,
+   "misses": [
+    "color_palette.hue_gap"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Bubbling potion cauldron",
+     "object_class": "container",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true
+  },
+  {
+   "try_id": "v1_04_5",
+   "brief_id": "v1_04",
+   "card": {
+    "name": "Cauldron",
+    "subject": "A round black pot with three short legs, two side handles and bubbling liquid at the top.",
+    "object_class": "container",
+    "category": "3",
+    "pattern": "stripes",
+    "hero_colors": "black iron, bright green bubbling potion, small orange flame",
+    "backdrop_colors": "pink",
+    "surface_or_setting": "stone floor"
+   },
+   "style": 0.752,
+   "misses": [
+    "color_palette.chroma_subject",
+    "color_palette.hue_gap"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Potion cauldron",
+     "object_class": "container",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "one"
+    }
+   },
+   "passed": true,
+   "chosen": true
+  }
+ ],
+ "v1_05": [
+  {
+   "try_id": "v1_05_1",
+   "brief_id": "v1_05",
+   "card": {
+    "name": "Coffin",
+    "subject": "A six-sided wooden coffin with a slightly open lid and a cross on the front.",
+    "object_class": "furniture",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "brown wood, tan cross, small purple cloth lining",
+    "backdrop_colors": "clear cyan sky with a yellow moon",
+    "surface_or_setting": "graveyard with green grass"
+   },
+   "style": 0.737,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Wooden coffin",
+     "object_class": "container",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "major",
+     "what": "The coffin stands on its end, but the lid is shown slid sideways and ajar with no hinge, latch, nails or other support. Gravity cannot hold a lid against an upright box, so this lid, shifted half off, would fall forward. Nothing explains how it stays there."
+    },
+    {
+     "severity": "minor",
+     "what": "The lining bulges out through the gap, level with the lid's edge, as if it were a separate cushion pressed between lid and wall. It does not sit inside the box behind the lid. Lining should be fixed to the inside of the box and sit back from the opening."
+    },
+    {
+     "severity": "major",
+     "what": "The lid is drawn as a flat, symmetrical, front-on shape with no foreshortening, but the box behind it shows its right side wall turning away from the viewer as if seen from the front-right. The lining band between them is drawn at a similar angle. The lid and the box look as if they were drawn from two different cameras, so the lid reads as a flat panel pasted beside the box rather than sitting on it or sliding off it. The way the lid connects to the box is also unclear."
+    },
+    {
+     "severity": "minor",
+     "what": "The ground is seen from well above, but the coffin is drawn almost at eye level. Its top shows only a thin strip, and the lid's foot is a straight horizontal edge with no depth to its footprint. From this camera height we should look down onto the head end and see the base's depth on the grass. Instead the coffin seems to stand on a single edge line rather than on the receding ground."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_05_2",
+   "brief_id": "v1_05",
+   "card": {
+    "name": "Coffin",
+    "subject": "A six-sided wooden coffin with a slightly open lid and a cross on the front.",
+    "object_class": "furniture",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "brown wood, tan cross, small purple cloth lining",
+    "backdrop_colors": "clear cyan sky with a yellow moon",
+    "surface_or_setting": "graveyard with green grass"
+   },
+   "style": 0.761,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Wooden coffin",
+     "object_class": "container",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "major",
+     "what": "The lid stands open along its whole right edge, showing a gap with lining from shoulder to foot. Yet at the top, a single flat top surface runs straight across the lid and the gap and joins the side wall. An opened lid cannot stay joined to the box at the top; the lid and body merge there. The six-sided taper of the lid is also not carried into this top surface, which reads as a flat, near-rectangular slab."
+    },
+    {
+     "severity": "minor",
+     "what": "The lid is shown open by an even, door-like gap with no hinge, latch or pivot. The left edge is flush and seamless with the body, so nothing explains how the lid opens or what holds it in this half-open position."
+    },
+    {
+     "severity": "minor",
+     "what": "At the bottom, the gap narrows and the lid edge melts into the side wall instead of meeting it at a clear seam or corner."
+    },
+    {
+     "severity": "minor",
+     "what": "The coffin's top is well above the horizon line set by the receding grass and the bushes. From that eye level the top face should be hidden, or seen slightly from below. Instead it is drawn as a strip seen from above, flat with the lid's top edge. The head of the coffin and the ground suggest slightly different camera heights."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_05_3",
+   "brief_id": "v1_05",
+   "card": {
+    "name": "Coffin",
+    "subject": "A six-sided wooden coffin with a slightly open lid and a cross on the front.",
+    "object_class": "furniture",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "brown wood, tan cross, small purple cloth lining",
+    "backdrop_colors": "clear cyan sky with a yellow moon",
+    "surface_or_setting": "graveyard with green grass"
+   },
+   "style": 0.744,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Wooden coffin",
+     "object_class": "container",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "major",
+     "what": "The lid does not close onto the box, and it has not swung open on a hinge either. It is shifted sideways as one flat slab, leaving an even gap filled with bulging purple lining. The lining sits where the box's side wall and the lid edge should meet. Nothing holds the lid in this position (no hinge, and no box wall on the left to match), so the lid and box do not add up to a container that could close."
+    },
+    {
+     "severity": "minor",
+     "what": "The top of the lid and the top of the box blend into one continuous cap, while lower down the lid and side are separate parts with a gap between them. The part that should be separate at the top is fused, so the lid could not open."
+    },
+    {
+     "severity": "major",
+     "what": "The top plank is drawn as one unbroken surface across both the lid and the box, even though the purple strip below shows the lid standing apart from the box. The lid cannot be both open and sealed into the same top face, so the gap and the top do not describe one solid shape."
+    },
+    {
+     "severity": "minor",
+     "what": "The front face is drawn flat-on with no shrinking: it is symmetrical, its sides are vertical and its top and bottom edges are level. Yet the side wall shows at a steep angle, as wide as half the front, which only happens when the coffin is turned well away from the camera. The front should narrow toward its right edge and its top and bottom edges should slope toward the side's vanishing point."
+    },
+    {
+     "severity": "minor",
+     "what": "The coffin's top reaches above the horizon in the grass, so it sits above eye level, yet its top face is shown from above. For the top to be visible, the camera must be higher and the horizon must be above the coffin."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_05_4",
+   "brief_id": "v1_05",
+   "card": {
+    "name": "Coffin",
+    "subject": "A six-sided wooden coffin with a slightly open lid and a cross on the front.",
+    "object_class": "furniture",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "brown wood, tan cross, small purple cloth lining",
+    "backdrop_colors": "clear cyan sky with a yellow moon",
+    "surface_or_setting": "graveyard with green grass"
+   },
+   "style": 0.753,
+   "misses": [
+    "composition_hierarchy.box_width",
+    "color_palette.chroma_background",
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Wooden coffin",
+     "object_class": "container",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v1_05_5",
+   "brief_id": "v1_05",
+   "card": {
+    "name": "Coffin",
+    "subject": "A six-sided wooden coffin with a slightly open lid and a cross on the front.",
+    "object_class": "furniture",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "brown wood, tan cross, small purple cloth lining",
+    "backdrop_colors": "clear cyan sky with a yellow moon",
+    "surface_or_setting": "graveyard with green grass"
+   },
+   "style": 0.751,
+   "misses": [
+    "composition_hierarchy.box_width",
+    "color_palette.chroma_background"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Wooden coffin",
+     "object_class": "container",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "many"
+    }
+   },
+   "passed": true,
+   "chosen": true
+  }
+ ],
+ "v1_06": [
+  {
+   "try_id": "v1_06_1",
+   "brief_id": "v1_06",
+   "card": {
+    "name": "Tombstone",
+    "subject": "A rounded gray gravestone with a cracked corner and a small cross carved on top.",
+    "object_class": "building_place",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "light gray stone, green moss patch, small orange accent",
+    "backdrop_colors": "sunny yellow",
+    "surface_or_setting": "stone ledge"
+   },
+   "style": 0.702,
+   "misses": [
+    "color_palette.chroma_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Cracked gravestone",
+     "object_class": "other",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "major",
+     "what": "The break does not make physical sense. The right part of the slab sits lower than the arch, as if it had slid down. Yet the crack is only a shallow groove that stops halfway down, so that part is still solid with the slab and could not have dropped. The notch is built from neat stacked steps, and the lower part has a smooth rounded corner of its own. A fracture would leave a jagged, uneven edge on one continuous outline. What we see reads as two different headstone outlines merged into one."
+    },
+    {
+     "severity": "minor",
+     "what": "The crack stops partway down the front, so the upper arch and the lower right part are still one slab. Their right side faces should line up as one vertical plane of the same thickness. Instead, the arch's right side face is set clearly to the left of the lower shoulder's side face, and the lower one looks thicker. The slab's right edge jumps sideways at the notch, so the two sections don't read as one solid block."
+    },
+    {
+     "severity": "minor",
+     "what": "The ledges in the notch are drawn as flat, level horizontal stripes seen from the front. They don't follow the slab's right side face or the slightly-from-above view. Their top surfaces should show a little, and they should run back along the side face the way the base's top does."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_06_2",
+   "brief_id": "v1_06",
+   "card": {
+    "name": "Tombstone",
+    "subject": "A rounded gray gravestone with a cracked corner and a small cross carved on top.",
+    "object_class": "building_place",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "light gray stone, green moss patch, small orange accent",
+    "backdrop_colors": "sunny yellow",
+    "surface_or_setting": "stone ledge"
+   },
+   "style": 0.699,
+   "misses": [
+    "color_palette.chroma_subject",
+    "value_contrast.lightness_mean"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Cracked gravestone",
+     "object_class": "other",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The broken edge is cut into three neat, flat, evenly spaced steps, like stairs or a stack of layers. Solid stone does not break into regular terraces, so on a close look the break reads as built rather than broken."
+    },
+    {
+     "severity": "minor",
+     "what": "The slab shows a clearly visible right side face (its thickness), but the plinth under it, which is deeper than the slab, is drawn almost front-on. Its right end face is barely visible and its front edge stays fully horizontal. In the same three-quarter view the plinth's right side should show at least as much as the slab's, and its edges should recede the same way."
+    },
+    {
+     "severity": "minor",
+     "what": "The line where the floor meets the wall falls gently toward the right, while the gravestone's front edges are level and its side edges rise as they go back to the right. The ground plane is slightly out of step with the object's orientation, so the stone looks a little rotated against its floor."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_06_3",
+   "brief_id": "v1_06",
+   "card": {
+    "name": "Tombstone",
+    "subject": "A rounded gray gravestone with a cracked corner and a small cross carved on top.",
+    "object_class": "building_place",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "light gray stone, green moss patch, small orange accent",
+    "backdrop_colors": "sunny yellow",
+    "surface_or_setting": "stone ledge"
+   },
+   "style": 0.652,
+   "misses": [
+    "color_palette.chroma_subject",
+    "value_contrast.lightness_mean"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Cracked gravestone",
+     "object_class": "other",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true,
+   "errors": []
+  },
+  {
+   "try_id": "v1_06_4",
+   "brief_id": "v1_06",
+   "card": {
+    "name": "Tombstone",
+    "subject": "A rounded gray gravestone with a cracked corner and a small cross carved on top.",
+    "object_class": "building_place",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "light gray stone, green moss patch, small orange accent",
+    "backdrop_colors": "sunny yellow",
+    "surface_or_setting": "stone ledge"
+   },
+   "style": 0.681,
+   "misses": [
+    "color_palette.chroma_subject",
+    "surface_finish.detail_subject",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Stone gravestone",
+     "object_class": "other",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v1_06_5",
+   "brief_id": "v1_06",
+   "card": {
+    "name": "Tombstone",
+    "subject": "A rounded gray gravestone with a cracked corner and a small cross carved on top.",
+    "object_class": "building_place",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "light gray stone, green moss patch, small orange accent",
+    "backdrop_colors": "sunny yellow",
+    "surface_or_setting": "stone ledge"
+   },
+   "style": 0.703,
+   "misses": [
+    "color_palette.chroma_subject",
+    "surface_finish.detail_subject",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Gravestone",
+     "object_class": "other",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false,
+   "chosen": true
+  }
+ ],
+ "v1_07": [
+  {
+   "try_id": "v1_07_1",
+   "brief_id": "v1_07",
+   "card": {
+    "name": "Candelabra",
+    "subject": "A golden candle holder with three curved arms, a tall stem and a round base, each arm holding a lit candle.",
+    "object_class": "tool",
+    "category": "1",
+    "pattern": "rays",
+    "hero_colors": "gold holder, cream candles, small orange flames",
+    "backdrop_colors": "deep bright purple",
+    "surface_or_setting": ""
+   },
+   "style": 0.707,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "value_contrast.lightness_mean",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Three-arm candelabrum",
+     "object_class": "furniture",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false,
+   "errors": []
+  },
+  {
+   "try_id": "v1_07_2",
+   "brief_id": "v1_07",
+   "card": {
+    "name": "Candelabra",
+    "subject": "A golden candle holder with three curved arms, a tall stem and a round base, each arm holding a lit candle.",
+    "object_class": "tool",
+    "category": "1",
+    "pattern": "rays",
+    "hero_colors": "gold holder, cream candles, small orange flames",
+    "backdrop_colors": "deep bright purple",
+    "surface_or_setting": ""
+   },
+   "style": 0.713,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "value_contrast.lightness_mean",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Golden candelabrum",
+     "object_class": "furniture",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false,
+   "errors": []
+  },
+  {
+   "try_id": "v1_07_3",
+   "brief_id": "v1_07",
+   "card": {
+    "name": "Candelabra",
+    "subject": "A golden candle holder with three curved arms, a tall stem and a round base, each arm holding a lit candle.",
+    "object_class": "tool",
+    "category": "1",
+    "pattern": "rays",
+    "hero_colors": "gold holder, cream candles, small orange flames",
+    "backdrop_colors": "deep bright purple",
+    "surface_or_setting": ""
+   },
+   "style": 0.722,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "value_contrast.lightness_mean",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [
+    "art_category"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Golden candelabrum",
+     "object_class": "furniture",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false,
+   "errors": []
+  },
+  {
+   "try_id": "v1_07_4",
+   "brief_id": "v1_07",
+   "card": {
+    "name": "Candelabra",
+    "subject": "A golden candle holder with three curved arms, a tall stem and a round base, each arm holding a lit candle.",
+    "object_class": "tool",
+    "category": "1",
+    "pattern": "rays",
+    "hero_colors": "gold holder, cream candles, small orange flames",
+    "backdrop_colors": "deep bright purple",
+    "surface_or_setting": ""
+   },
+   "style": 0.697,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "color_palette.chroma_background",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Golden candelabrum",
+     "object_class": "accessory",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false,
+   "chosen": true
+  },
+  {
+   "try_id": "v1_07_5",
+   "brief_id": "v1_07",
+   "card": {
+    "name": "Candelabra",
+    "subject": "A golden candle holder with three curved arms, a tall stem and a round base, each arm holding a lit candle.",
+    "object_class": "tool",
+    "category": "1",
+    "pattern": "rays",
+    "hero_colors": "gold holder, cream candles, small orange flames",
+    "backdrop_colors": "deep bright purple",
+    "surface_or_setting": ""
+   },
+   "style": 0.701,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "color_palette.chroma_background",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [
+    "art_category"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Three-arm gold candelabra",
+     "object_class": "furniture",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v1_08": [
+  {
+   "try_id": "v1_08_1",
+   "brief_id": "v1_08",
+   "card": {
+    "name": "Crystal Ball",
+    "subject": "A clear glass sphere with a swirl of mist inside, sitting on a small curved stand.",
+    "object_class": "container",
+    "category": "2",
+    "pattern": "diamonds",
+    "hero_colors": "clear blue glass, white mist, gold stand, small pink sparkle",
+    "backdrop_colors": "grass green",
+    "surface_or_setting": "wooden ledge"
+   },
+   "style": 0.786,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Crystal ball",
+     "object_class": "other",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "These two arms should mirror each other but don't. The left arm bows outward and meets the ball at its outer edge near mid-height. The right arm is straighter and lower, and its knob sits inside the ball's outline, in front of the glass. In this almost-front view the arms should match. As drawn they sit at different depths and heights, so only one of them really grips the side of the ball."
+    },
+    {
+     "severity": "minor",
+     "what": "The prongs should be a matching pair on opposite sides of the cup, but they are placed differently. The left prong rises from the cup rim and its tip sits on the sphere's outer edge. The right prong starts outside and below the cup's right side, and its tip sits well inside the sphere's outline, in front of the glass. If they were a pair on opposite sides of a ball seen almost level, both tips would sit at the same depth near the silhouette. Instead one reads as beside the ball and the other as in front of it."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_08_2",
+   "brief_id": "v1_08",
+   "card": {
+    "name": "Crystal Ball",
+    "subject": "A clear glass sphere with a swirl of mist inside, sitting on a small curved stand.",
+    "object_class": "container",
+    "category": "2",
+    "pattern": "diamonds",
+    "hero_colors": "clear blue glass, white mist, gold stand, small pink sparkle",
+    "backdrop_colors": "grass green",
+    "surface_or_setting": "wooden ledge"
+   },
+   "style": 0.767,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Crystal ball",
+     "object_class": "other",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The two prongs should mirror each other but don't. The left one leans out further, rises higher (its tip is near the sphere's equator) and follows the curve of the glass. The right one is shorter, stands straighter and ends lower, with its tip in front of the glass instead of against its side. With an almost frontal camera, perspective can't explain the difference, so they look like two different parts rather than a matched pair of holding arms."
+    },
+    {
+     "severity": "minor",
+     "what": "There are only two prongs, and both are on the front side of the ball, with nothing matching them at the back. A real cradle spaces three or four arms evenly around the ball. Two front arms add no grip. The cup still holds the ball, so the stand works, but the arms don't make sense as a holding structure."
+    },
+    {
+     "severity": "minor",
+     "what": "The prongs do not sit on the cup rim's ellipse as one matched pair. The left root is high on the far outer edge of the rim and the right root is lower, nearer the front. That points to a stand turned toward the viewer, so one prong would be nearer the camera and the other farther away. Yet both are drawn in front of the ball, at about the same size, and their knobs sit at different heights. Up close the pair reads as two prongs drawn from slightly different views, not a symmetric pair turned in space."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_08_3",
+   "brief_id": "v1_08",
+   "card": {
+    "name": "Crystal Ball",
+    "subject": "A clear glass sphere with a swirl of mist inside, sitting on a small curved stand.",
+    "object_class": "container",
+    "category": "2",
+    "pattern": "diamonds",
+    "hero_colors": "clear blue glass, white mist, gold stand, small pink sparkle",
+    "backdrop_colors": "grass green",
+    "surface_or_setting": "wooden ledge"
+   },
+   "style": 0.777,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Crystal ball",
+     "object_class": "other",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The paired prongs do not match. The left prong is a flat, wide band that starts at the outer edge of the cup rim, and its knob sits higher on the sphere. The right prong is a thinner round rod that starts further in from the rim edge, and its knob sits lower. On a symmetrical turned stand these two parts should be identical."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_08_4",
+   "brief_id": "v1_08",
+   "card": {
+    "name": "Crystal Ball",
+    "subject": "A clear glass sphere with a swirl of mist inside, sitting on a small curved stand.",
+    "object_class": "container",
+    "category": "2",
+    "pattern": "diamonds",
+    "hero_colors": "clear blue glass, white mist, gold stand, small pink sparkle",
+    "backdrop_colors": "grass green",
+    "surface_or_setting": "wooden ledge"
+   },
+   "style": 0.744,
+   "misses": [
+    "surface_finish.detail_subject"
+   ],
+   "issues": [
+    "identity"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Tabletop mirror",
+     "object_class": "accessory",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v1_08_5",
+   "brief_id": "v1_08",
+   "card": {
+    "name": "Crystal Ball",
+    "subject": "A clear glass sphere with a swirl of mist inside, sitting on a small curved stand.",
+    "object_class": "container",
+    "category": "2",
+    "pattern": "diamonds",
+    "hero_colors": "clear blue glass, white mist, gold stand, small pink sparkle",
+    "backdrop_colors": "grass green",
+    "surface_or_setting": "wooden ledge"
+   },
+   "style": 0.749,
+   "misses": [
+    "surface_finish.detail_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Crystal ball",
+     "object_class": "other",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "chosen": true
+  }
+ ],
+ "v1_09": [
+  {
+   "try_id": "v1_09_1",
+   "brief_id": "v1_09",
+   "card": {
+    "name": "Black Cat",
+    "subject": "A sitting black cat with pointed ears, a curved tail and big round eyes.",
+    "object_class": "animal",
+    "category": "3",
+    "pattern": "stripes",
+    "hero_colors": "black fur, yellow eyes, small red collar",
+    "backdrop_colors": "bright orange-yellow",
+    "surface_or_setting": "wooden table"
+   },
+   "style": 0.701,
+   "misses": [
+    "composition_hierarchy.box_width",
+    "composition_hierarchy.margin_min",
+    "color_palette.chroma_subject",
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Black cat",
+     "object_class": "animal",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The nose shows the head turned about 30–45° to the viewer's left, but both eyes are drawn as nearly full, front-facing circles of almost the same size. The far eye should be narrowed and partly tucked behind the curve of the cheek. Instead it sits on the edge of the head and bulges past the outline as if seen face-on, so the eyes and the nose disagree about which way the face points."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_09_2",
+   "brief_id": "v1_09",
+   "card": {
+    "name": "Black Cat",
+    "subject": "A sitting black cat with pointed ears, a curved tail and big round eyes.",
+    "object_class": "animal",
+    "category": "3",
+    "pattern": "stripes",
+    "hero_colors": "black fur, yellow eyes, small red collar",
+    "backdrop_colors": "bright orange-yellow",
+    "surface_or_setting": "wooden table"
+   },
+   "style": 0.715,
+   "misses": [
+    "composition_hierarchy.box_width",
+    "composition_hierarchy.margin_min",
+    "color_palette.chroma_subject",
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Black cat",
+     "object_class": "animal",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The head is turned to the viewer's left, as the off-center nose and the ears show, but both eyes are drawn as full, front-facing circles of about the same size. The far eye even bulges out past the outline of the head. On a turned head the far eye should be narrower and partly tucked behind the curve of the face. Drawn this way, the eyes look pasted on flat rather than wrapping around the head."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_09_3",
+   "brief_id": "v1_09",
+   "card": {
+    "name": "Black Cat",
+    "subject": "A sitting black cat with pointed ears, a curved tail and big round eyes.",
+    "object_class": "animal",
+    "category": "3",
+    "pattern": "stripes",
+    "hero_colors": "black fur, yellow eyes, small red collar",
+    "backdrop_colors": "bright orange-yellow",
+    "surface_or_setting": "wooden table"
+   },
+   "style": 0.689,
+   "misses": [
+    "composition_hierarchy.box_width",
+    "composition_hierarchy.margin_min",
+    "color_palette.chroma_subject",
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Black cat",
+     "object_class": "animal",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false,
+   "errors": []
+  },
+  {
+   "try_id": "v1_09_4",
+   "brief_id": "v1_09",
+   "card": {
+    "name": "Black Cat",
+    "subject": "A sitting black cat with pointed ears, a curved tail and big round eyes.",
+    "object_class": "animal",
+    "category": "3",
+    "pattern": "stripes",
+    "hero_colors": "black fur, yellow eyes, small red collar",
+    "backdrop_colors": "bright orange-yellow",
+    "surface_or_setting": "wooden table"
+   },
+   "style": 0.698,
+   "misses": [
+    "composition_hierarchy.box_width",
+    "composition_hierarchy.margin_min",
+    "color_palette.chroma_subject",
+    "color_palette.shadow_chroma_kept",
+    "value_contrast.lightness_p1",
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Black cat",
+     "object_class": "animal",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v1_09_5",
+   "brief_id": "v1_09",
+   "card": {
+    "name": "Black Cat",
+    "subject": "A sitting black cat with pointed ears, a curved tail and big round eyes.",
+    "object_class": "animal",
+    "category": "3",
+    "pattern": "stripes",
+    "hero_colors": "black fur, yellow eyes, small red collar",
+    "backdrop_colors": "bright orange-yellow",
+    "surface_or_setting": "wooden table"
+   },
+   "style": 0.716,
+   "misses": [
+    "composition_hierarchy.box_width",
+    "composition_hierarchy.margin_min",
+    "color_palette.chroma_subject",
+    "color_palette.shadow_chroma_kept",
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Black cat",
+     "object_class": "animal",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false,
+   "chosen": true
+  }
+ ],
+ "v1_10": [
+  {
+   "try_id": "v1_10_1",
+   "brief_id": "v1_10",
+   "card": {
+    "name": "Broom",
+    "subject": "A long wooden stick with a bundle of straw bristles tied with a cord at the end.",
+    "object_class": "tool",
+    "category": "1",
+    "pattern": "waves",
+    "hero_colors": "brown stick, golden straw, small red cord",
+    "backdrop_colors": "sky blue",
+    "surface_or_setting": ""
+   },
+   "style": 0.771,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.center_x",
+    "composition_hierarchy.center_y",
+    "value_contrast.rms_contrast",
+    "surface_finish.detail_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Straw broom",
+     "object_class": "tool",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The collar and head do not share the handle's axis. The handle slopes at about 53°, but the straw head's centre line slopes at about 65°. The binding rings run nearly horizontal (about 15° slope) when they should lie square to the handle (about 37°). The result is a visible bend at the binding: the head looks rotated toward vertical, as if hinged, rather than continuing the straight shaft."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_10_2",
+   "brief_id": "v1_10",
+   "card": {
+    "name": "Broom",
+    "subject": "A long wooden stick with a bundle of straw bristles tied with a cord at the end.",
+    "object_class": "tool",
+    "category": "1",
+    "pattern": "waves",
+    "hero_colors": "brown stick, golden straw, small red cord",
+    "backdrop_colors": "sky blue",
+    "surface_or_setting": ""
+   },
+   "style": 0.771,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.center_x",
+    "composition_hierarchy.center_y",
+    "value_contrast.rms_contrast",
+    "surface_finish.detail_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Straw broom",
+     "object_class": "tool",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false,
+   "errors": [
+    {
+     "severity": "major",
+     "what": "The bristle head does not continue the handle's line. The handle leans about 37° from vertical, but the collar and the bristle fan hang about 15–20° closer to vertical, so the broom looks bent at the collar. A real broom is one straight object."
+    },
+    {
+     "severity": "minor",
+     "what": "The rope bands and the collar rim are drawn as nearly level ellipses, as if the collar stood upright. Rings around a tilted handle should be at right angles to it, which means tilted about 37°, running down to the right. Here they are tilted only about 15°, so the rings belong to a more upright collar than the handle they wrap."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_10_3",
+   "brief_id": "v1_10",
+   "card": {
+    "name": "Broom",
+    "subject": "A long wooden stick with a bundle of straw bristles tied with a cord at the end.",
+    "object_class": "tool",
+    "category": "1",
+    "pattern": "waves",
+    "hero_colors": "brown stick, golden straw, small red cord",
+    "backdrop_colors": "sky blue",
+    "surface_or_setting": ""
+   },
+   "style": 0.763,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.center_x",
+    "composition_hierarchy.center_y",
+    "value_contrast.rms_contrast",
+    "edges_linework.edge_density_background"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Straw broom",
+     "object_class": "tool",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The ring ellipses are not at right angles to the handle. Their long axis runs nearly horizontal, about 15° down to the right. For rings wrapped around a handle that slopes about 53° from horizontal, the long axis should run about 37° down to the right, at right angles to the handle. So the binding looks twisted on the shaft rather than wrapped around it."
+    },
+    {
+     "severity": "minor",
+     "what": "The bristle bundle's center line hangs closer to vertical, about 66° from horizontal, than the handle's line, about 53°. The head looks slightly bent away from the handle instead of continuing along it, so handle and head do not share one straight axis."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_10_4",
+   "brief_id": "v1_10",
+   "card": {
+    "name": "Broom",
+    "subject": "A long wooden stick with a bundle of straw bristles tied with a cord at the end.",
+    "object_class": "tool",
+    "category": "1",
+    "pattern": "waves",
+    "hero_colors": "brown stick, golden straw, small red cord",
+    "backdrop_colors": "sky blue",
+    "surface_or_setting": ""
+   },
+   "style": 0.753,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.center_x",
+    "composition_hierarchy.center_y",
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Broom",
+     "object_class": "tool",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v1_10_5",
+   "brief_id": "v1_10",
+   "card": {
+    "name": "Broom",
+    "subject": "A long wooden stick with a bundle of straw bristles tied with a cord at the end.",
+    "object_class": "tool",
+    "category": "1",
+    "pattern": "waves",
+    "hero_colors": "brown stick, golden straw, small red cord",
+    "backdrop_colors": "sky blue",
+    "surface_or_setting": ""
+   },
+   "style": 0.749,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.center_x",
+    "composition_hierarchy.center_y",
+    "value_contrast.rms_contrast",
+    "edges_linework.edge_density_background"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Straw broom",
+     "object_class": "tool",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false,
+   "chosen": true
+  }
+ ]
+}

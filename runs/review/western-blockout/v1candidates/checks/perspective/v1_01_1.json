@@ -1,0 +1,11 @@
+{
+ "survey": "A tan cowboy hat shown in three-quarter view from slightly above and to the front-left, floating on a blue sunburst background. Parts: (1) The crown is a tall, rounded block with a pinched crease on top. We see the top from above, which fits a raised camera. (2) A red hatband wraps the base of the crown. Its lower edge sags in the middle, as the front of a ring seen from above should, and the ring rises slightly to the right, following the hat's tilt. (3) The wide brim leaves the bottom of the crown at the band. Its upper surface faces up toward the viewer. The left side curls up into a broad, high wall. The right side sweeps up and back to a narrow point. The front edge drops well below the band, and a thin strip of the back brim shows behind the crown on both sides. (4) A cream piping trim runs around the whole brim edge as one continuous band of even width. Nothing touches a ground. The hat floats, so contact does not apply. The crown, the crease and the brim all agree on one raised three-quarter camera, and the asymmetric brim curl reads as a normal cowboy-hat shape, not a second viewpoint.",
+ "errors": [
+  {
+   "where": "Red hatband and the base of the crown, where they meet the brim",
+   "what": "The hatband's ring is drawn too flat for the angle the brim is seen from. The brim is seen well from above: its front edge drops far below the band and we see a lot of its upper surface. So the round base of the crown and its band should look clearly oval, with a deeper downward curve at the front. Instead the band's lower edge bows only slightly, almost like a ring seen at eye level. As a result the crown looks a little more side-on than the brim it sits on.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Seen from slightly above in three-quarter view, the hatband and the base of the crown form a clearly curved oval ring that matches the brim's viewing angle. The front of the band dips noticeably lower than its sides, as if seen from the same height as the brim's upper surface."
+}

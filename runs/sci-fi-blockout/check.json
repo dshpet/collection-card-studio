@@ -1,0 +1,1975 @@
+{
+ "v1_01": [
+  {
+   "try_id": "v1_01_1",
+   "brief_id": "v1_01",
+   "card": {
+    "name": "Rocket",
+    "subject": "A classic finned rocket with a pointed nose cone, round porthole windows and three tail fins.",
+    "object_class": "vehicle",
+    "category": "1",
+    "pattern": "rays",
+    "hero_colors": "silver, red nose and fins, small yellow flame",
+    "backdrop_colors": "sky blue",
+    "surface_or_setting": ""
+   },
+   "style": 0.771,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Rocket",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "errors": []
+  },
+  {
+   "try_id": "v1_01_2",
+   "brief_id": "v1_01",
+   "card": {
+    "name": "Rocket",
+    "subject": "A classic finned rocket with a pointed nose cone, round porthole windows and three tail fins.",
+    "object_class": "vehicle",
+    "category": "1",
+    "pattern": "rays",
+    "hero_colors": "silver, red nose and fins, small yellow flame",
+    "backdrop_colors": "sky blue",
+    "surface_or_setting": ""
+   },
+   "style": 0.756,
+   "misses": [
+    "color_palette.hue_gap"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Rocket",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The body leans to the right, so its round cross-sections should tilt up toward the right, at right angles to the body's axis. Both ellipses tilt the other way instead: the rim's right end (around x1030, y345) sits well below its left end (around x715, y265), and the nozzle ring does the same. The rings are drawn for an upright rocket seen from above, while the body around them is tilted. This makes the cylinder look slightly sheared or twisted."
+    },
+    {
+     "severity": "minor",
+     "what": "The fins sit on the same wrongly tilted cross-section as the rings. The right fin's root starts about 75 px lower than the left fin's. With the body leaning right, the right fin should attach slightly higher than the left. The right fin's outer edge also flares out and down instead of running parallel to the body's axis like the left fin's outer edge does, so the pair do not read as one symmetric fin set around the tilted body."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_01_3",
+   "brief_id": "v1_01",
+   "card": {
+    "name": "Rocket",
+    "subject": "A classic finned rocket with a pointed nose cone, round porthole windows and three tail fins.",
+    "object_class": "vehicle",
+    "category": "1",
+    "pattern": "rays",
+    "hero_colors": "silver, red nose and fins, small yellow flame",
+    "backdrop_colors": "sky blue",
+    "surface_or_setting": ""
+   },
+   "style": 0.769,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Rocket",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "errors": [],
+   "chosen": true
+  }
+ ],
+ "v1_02": [
+  {
+   "try_id": "v1_02_1",
+   "brief_id": "v1_02",
+   "card": {
+    "name": "Flying Saucer",
+    "subject": "A round flying saucer with a glass dome on top and a ring of small lights around the rim.",
+    "object_class": "vehicle",
+    "category": "1",
+    "pattern": "concentric_rings",
+    "hero_colors": "silver gray, green glass dome, small orange lights",
+    "backdrop_colors": "sunny yellow",
+    "surface_or_setting": ""
+   },
+   "style": 0.769,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "color_palette.chroma_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Flying saucer",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The disc is seen clearly from above and rolled to one side. The dome's collar ellipse is much flatter (about 1:4) than the rim ellipse (about 1:2.2) and sits almost level. Because of this the dome looks as if it is seen from closer to eye level and stands straight up instead of leaning with the disc's tilt. Its axis does not quite match the disc's axis."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_02_2",
+   "brief_id": "v1_02",
+   "card": {
+    "name": "Flying Saucer",
+    "subject": "A round flying saucer with a glass dome on top and a ring of small lights around the rim.",
+    "object_class": "vehicle",
+    "category": "1",
+    "pattern": "concentric_rings",
+    "hero_colors": "silver gray, green glass dome, small orange lights",
+    "backdrop_colors": "sunny yellow",
+    "surface_or_setting": ""
+   },
+   "style": 0.76,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "color_palette.chroma_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Flying saucer",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "errors": []
+  },
+  {
+   "try_id": "v1_02_3",
+   "brief_id": "v1_02",
+   "card": {
+    "name": "Flying Saucer",
+    "subject": "A round flying saucer with a glass dome on top and a ring of small lights around the rim.",
+    "object_class": "vehicle",
+    "category": "1",
+    "pattern": "concentric_rings",
+    "hero_colors": "silver gray, green glass dome, small orange lights",
+    "backdrop_colors": "sunny yellow",
+    "surface_or_setting": ""
+   },
+   "style": 0.765,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "color_palette.chroma_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Flying saucer",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The rim's ellipse leans clearly, rising toward the right (about 6°), but the collar's ellipse is nearly level (about 2–3°). The dome also stands straight up instead of leaning with the saucer's roll. So the top section looks very slightly turned against the hull it sits on. This is only visible on a close look."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_02_4",
+   "brief_id": "v1_02",
+   "card": {
+    "name": "Flying Saucer",
+    "subject": "A round flying saucer with a glass dome on top and a ring of small lights around the rim.",
+    "object_class": "vehicle",
+    "category": "1",
+    "pattern": "concentric_rings",
+    "hero_colors": "silver gray, green glass dome, small orange lights",
+    "backdrop_colors": "sunny yellow",
+    "surface_or_setting": ""
+   },
+   "style": 0.818,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "color_palette.shadow_chroma_kept"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Flying saucer",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  },
+  {
+   "try_id": "v1_02_5",
+   "brief_id": "v1_02",
+   "card": {
+    "name": "Flying Saucer",
+    "subject": "A round flying saucer with a glass dome on top and a ring of small lights around the rim.",
+    "object_class": "vehicle",
+    "category": "1",
+    "pattern": "concentric_rings",
+    "hero_colors": "silver gray, green glass dome, small orange lights",
+    "backdrop_colors": "sunny yellow",
+    "surface_or_setting": ""
+   },
+   "style": 0.811,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "color_palette.shadow_chroma_kept"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Flying saucer",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "chosen": true
+  }
+ ],
+ "v1_03": [
+  {
+   "try_id": "v1_03_1",
+   "brief_id": "v1_03",
+   "card": {
+    "name": "Ringed Planet",
+    "subject": "A round planet with a wide tilted ring around its middle.",
+    "object_class": "other",
+    "category": "1",
+    "pattern": "stripes",
+    "hero_colors": "orange and cream planet, pale yellow ring, small blue crater",
+    "backdrop_colors": "bright purple",
+    "surface_or_setting": ""
+   },
+   "style": 0.805,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "color_palette.chroma_background"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Ringed planet",
+     "object_class": "plant_nature",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "major",
+     "what": "The body is not round. It looks like stacked slices that are slightly misaligned. The lower part below the ring is shifted right relative to the top cap. Cream and orange bands stick out past the sphere's outline as stepped lips (clearest at the right edge under the ring and at the left just under the ring). The silhouette is jagged and stepped instead of one smooth circle."
+    },
+    {
+     "severity": "minor",
+     "what": "The porthole is an added part a planet does not have. Its rim also crowds into the raised cream band instead of sitting cleanly on the curved surface. This is acceptable only if the object is meant to be a planet-shaped station or ship."
+    },
+    {
+     "severity": "major",
+     "what": "The band follows the ring's tilt but is drawn as an almost straight strip, with little downward curve at its front. The ring is seen clearly from above, so every stripe parallel to it should be an ellipse with the same proportions and sag in a clear smile toward the viewer. As drawn, the band looks seen edge-on while the ring is seen from above. The stripes below the ring curve more than this band, so the bands also disagree with each other."
+    },
+    {
+     "severity": "minor",
+     "what": "On the left, background shows through the ring's hole between the sphere and the inner edge. On the right, the yellow ring seems to run straight into the sphere's edge with no matching gap. That puts the planet off-center in its ring instead of centered in a symmetrical inner ellipse."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_03_2",
+   "brief_id": "v1_03",
+   "card": {
+    "name": "Ringed Planet",
+    "subject": "A round planet with a wide tilted ring around its middle.",
+    "object_class": "other",
+    "category": "1",
+    "pattern": "stripes",
+    "hero_colors": "orange and cream planet, pale yellow ring, small blue crater",
+    "backdrop_colors": "bright purple",
+    "surface_or_setting": ""
+   },
+   "style": 0.8,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "color_palette.chroma_background"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Ringed orange planet",
+     "object_class": "plant_nature",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "major",
+     "what": "Invented part. A blue, glossy, rimmed porthole or jewel is stuck onto the planet's surface. A planet has no window or gem like this, so it reads as a gadget added to a natural body."
+    },
+    {
+     "severity": "major",
+     "what": "The sphere is not round. The part under the ring is shifted to the right of the upper half, and empty purple shows at the lower left where the sphere should continue inside the ring gap. Extra cream slices stick out between the band and the ring on the right and under the ring. The planet looks like stacked, offset discs instead of one continuous ball that the ring passes around."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_03_3",
+   "brief_id": "v1_03",
+   "card": {
+    "name": "Ringed Planet",
+    "subject": "A round planet with a wide tilted ring around its middle.",
+    "object_class": "other",
+    "category": "1",
+    "pattern": "stripes",
+    "hero_colors": "orange and cream planet, pale yellow ring, small blue crater",
+    "backdrop_colors": "bright purple",
+    "surface_or_setting": ""
+   },
+   "style": 0.809,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "color_palette.chroma_background"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Ringed planet",
+     "object_class": "plant_nature",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "major",
+     "what": "Invented part: a planet has no window or porthole. The rimmed blue lens is a gadget stuck onto a natural body, so the object reads as neither a real planet nor a clear spaceship."
+    },
+    {
+     "severity": "minor",
+     "what": "Shape fault: the bands do not wrap a round sphere. The cream band and the lower cream/orange slice jut past the sphere's outline as separate stepped discs, most clearly on the right side between the ring and the body and just above the front of the ring at lower left. The body looks like a stack of slices of different widths instead of one sphere."
+    },
+    {
+     "severity": "minor",
+     "what": "The band's tilt does not match the ring's plane. The band runs almost level while the ring tilts steeply, so the equator stripes do not line up with the ring the way a planet's bands would."
+    },
+    {
+     "severity": "minor",
+     "what": "The porthole sits close to the sphere's left edge, where the surface turns well away from the viewer. Yet it is drawn as an almost front-facing, nearly round oval. At that spot the rim and lens should be noticeably narrower side to side, a tall thin ellipse turned toward the edge of the sphere. Instead it reads as stuck flat on the picture rather than following the curve of the sphere."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_03_4",
+   "brief_id": "v1_03",
+   "card": {
+    "name": "Ringed Planet",
+    "subject": "A round planet with a wide tilted ring around its middle.",
+    "object_class": "other",
+    "category": "1",
+    "pattern": "stripes",
+    "hero_colors": "orange and cream planet, pale yellow ring, small blue crater",
+    "backdrop_colors": "bright purple",
+    "surface_or_setting": ""
+   },
+   "style": 0.785,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "color_palette.chroma_background"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Ringed planet",
+     "object_class": "plant_nature",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "chosen": true
+  }
+ ],
+ "v1_04": [
+  {
+   "try_id": "v1_04_1",
+   "brief_id": "v1_04",
+   "card": {
+    "name": "Meteor",
+    "subject": "A lumpy round rock with a few craters and a short tail of flames behind it.",
+    "object_class": "plant_nature",
+    "category": "1",
+    "pattern": "waves",
+    "hero_colors": "brown gray rock, small bright orange flames",
+    "backdrop_colors": "cyan",
+    "surface_or_setting": ""
+   },
+   "style": 0.701,
+   "misses": [
+    "color_palette.chroma_subject",
+    "color_palette.shadow_chroma_kept",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Flaming meteor",
+     "object_class": "plant_nature",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false,
+   "errors": []
+  },
+  {
+   "try_id": "v1_04_2",
+   "brief_id": "v1_04",
+   "card": {
+    "name": "Meteor",
+    "subject": "A lumpy round rock with a few craters and a short tail of flames behind it.",
+    "object_class": "plant_nature",
+    "category": "1",
+    "pattern": "waves",
+    "hero_colors": "brown gray rock, small bright orange flames",
+    "backdrop_colors": "cyan",
+    "surface_or_setting": ""
+   },
+   "style": 0.704,
+   "misses": [
+    "color_palette.chroma_subject",
+    "color_palette.shadow_chroma_kept"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Flaming meteor",
+     "object_class": "plant_nature",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "This crater sits where the rock's surface is turning away from the viewer, so its rim should look like a clearly narrowed, sideways-squashed ellipse. Instead it is drawn almost as a circle, as if it faced the camera like the big front crater. The two craters then seem to face nearly the same way on differently angled parts of the surface."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_04_3",
+   "brief_id": "v1_04",
+   "card": {
+    "name": "Meteor",
+    "subject": "A lumpy round rock with a few craters and a short tail of flames behind it.",
+    "object_class": "plant_nature",
+    "category": "1",
+    "pattern": "waves",
+    "hero_colors": "brown gray rock, small bright orange flames",
+    "backdrop_colors": "cyan",
+    "surface_or_setting": ""
+   },
+   "style": 0.708,
+   "misses": [
+    "color_palette.chroma_subject",
+    "color_palette.shadow_chroma_kept"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Flaming meteor",
+     "object_class": "plant_nature",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "This crater sits where the rock's surface turns away from the camera, so it should be a narrow ellipse squashed sideways. Instead it is drawn almost as round and open as the large crater that faces the camera on the left. Only the silhouette cutting off its right side hints that the surface wraps away."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_04_4",
+   "brief_id": "v1_04",
+   "card": {
+    "name": "Meteor",
+    "subject": "A lumpy round rock with a few craters and a short tail of flames behind it.",
+    "object_class": "plant_nature",
+    "category": "1",
+    "pattern": "waves",
+    "hero_colors": "brown gray rock, small bright orange flames",
+    "backdrop_colors": "cyan",
+    "surface_or_setting": ""
+   },
+   "style": 0.752,
+   "misses": [
+    "color_palette.shadow_chroma_kept"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Flaming meteor",
+     "object_class": "plant_nature",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  },
+  {
+   "try_id": "v1_04_5",
+   "brief_id": "v1_04",
+   "card": {
+    "name": "Meteor",
+    "subject": "A lumpy round rock with a few craters and a short tail of flames behind it.",
+    "object_class": "plant_nature",
+    "category": "1",
+    "pattern": "waves",
+    "hero_colors": "brown gray rock, small bright orange flames",
+    "backdrop_colors": "cyan",
+    "surface_or_setting": ""
+   },
+   "style": 0.759,
+   "misses": [
+    "color_palette.shadow_chroma_kept"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Flaming meteor",
+     "object_class": "plant_nature",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "chosen": true
+  }
+ ],
+ "v1_05": [
+  {
+   "try_id": "v1_05_1",
+   "brief_id": "v1_05",
+   "card": {
+    "name": "Space Helmet",
+    "subject": "A round helmet with a big curved glass visor and a collar ring at the bottom.",
+    "object_class": "accessory",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "white helmet, gold tinted visor, small red collar stripe",
+    "backdrop_colors": "pink",
+    "surface_or_setting": "white metal ledge"
+   },
+   "style": 0.738,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Astronaut helmet",
+     "object_class": "clothing",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The rim is not one closed loop. There is a visible step where its two ends meet slightly out of line, like a ring that has been cut and its ends overlapped. A sealed helmet visor frame should be continuous."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_05_2",
+   "brief_id": "v1_05",
+   "card": {
+    "name": "Space Helmet",
+    "subject": "A round helmet with a big curved glass visor and a collar ring at the bottom.",
+    "object_class": "accessory",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "white helmet, gold tinted visor, small red collar stripe",
+    "backdrop_colors": "pink",
+    "surface_or_setting": "white metal ledge"
+   },
+   "style": 0.701,
+   "misses": [
+    "color_palette.chroma_subject",
+    "color_palette.hue_gap"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Astronaut helmet",
+     "object_class": "clothing",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The rim tube is not continuous there. It shows a cut or notch, and the visor's edge lines seem to slip past each other instead of closing into one smooth seal. There is no hinge or latch to explain the break, so the rim looks like it was joined wrong rather than built."
+    },
+    {
+     "severity": "major",
+     "what": "The visor sits well to the left on the sphere, so it should face away to the left: its left half should be squeezed into a narrower curve and stay inside the helmet's outline. Instead it is drawn as a broad, almost face-on oval. Its left rim bulges out past the sphere's outline, and both sides look equally wide, so it reads as a flat sticker on the helmet rather than an opening that wraps around the ball. This view does not match the slightly-from-above, three-quarter view that the base and table agree on."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_05_3",
+   "brief_id": "v1_05",
+   "card": {
+    "name": "Space Helmet",
+    "subject": "A round helmet with a big curved glass visor and a collar ring at the bottom.",
+    "object_class": "accessory",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "white helmet, gold tinted visor, small red collar stripe",
+    "backdrop_colors": "pink",
+    "surface_or_setting": "white metal ledge"
+   },
+   "style": 0.728,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Astronaut helmet",
+     "object_class": "clothing",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The rim tube is not a continuous ring. It has a visible cut where the two ends meet slightly out of line, as if the loop was never closed. A real visor seal is one unbroken ring, or it shows a clear hinge or clamp at that point."
+    },
+    {
+     "severity": "minor",
+     "what": "The visor's centre sits well left of the sphere's centre, and its left edge wraps to the sphere's left outline and pushes past it. Even so, the rim has the same thickness all the way round and the glass is a full, open oval, as if seen face-on. The left part of the rim, where the surface turns away, should narrow and bunch up, and the oval should be compressed on that side. As drawn, the visor looks like a flat front-facing sticker on a turned sphere, not an opening that follows the sphere's curve."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_05_4",
+   "brief_id": "v1_05",
+   "card": {
+    "name": "Space Helmet",
+    "subject": "A round helmet with a big curved glass visor and a collar ring at the bottom.",
+    "object_class": "accessory",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "white helmet, gold tinted visor, small red collar stripe",
+    "backdrop_colors": "pink",
+    "surface_or_setting": "white metal ledge"
+   },
+   "style": 0.775,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Space helmet",
+     "object_class": "clothing",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  },
+  {
+   "try_id": "v1_05_5",
+   "brief_id": "v1_05",
+   "card": {
+    "name": "Space Helmet",
+    "subject": "A round helmet with a big curved glass visor and a collar ring at the bottom.",
+    "object_class": "accessory",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "white helmet, gold tinted visor, small red collar stripe",
+    "backdrop_colors": "pink",
+    "surface_or_setting": "white metal ledge"
+   },
+   "style": 0.752,
+   "misses": [
+    "color_palette.chroma_background",
+    "color_palette.hue_gap",
+    "value_contrast.boundary_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Space helmet",
+     "object_class": "clothing",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "one"
+    }
+   },
+   "passed": false,
+   "chosen": true
+  }
+ ],
+ "v1_06": [
+  {
+   "try_id": "v1_06_1",
+   "brief_id": "v1_06",
+   "card": {
+    "name": "Control Panel",
+    "subject": "A slanted console with rows of round buttons, a lever and two round dials.",
+    "object_class": "electronics",
+    "category": "3",
+    "pattern": "diamonds",
+    "hero_colors": "light gray console, red and yellow buttons, small green dial",
+    "backdrop_colors": "orange",
+    "surface_or_setting": "white metal floor"
+   },
+   "style": 0.762,
+   "misses": [
+    "color_palette.chroma_subject",
+    "value_contrast.boundary_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Joystick control console",
+     "object_class": "electronics",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "errors": []
+  },
+  {
+   "try_id": "v1_06_2",
+   "brief_id": "v1_06",
+   "card": {
+    "name": "Control Panel",
+    "subject": "A slanted console with rows of round buttons, a lever and two round dials.",
+    "object_class": "electronics",
+    "category": "3",
+    "pattern": "diamonds",
+    "hero_colors": "light gray console, red and yellow buttons, small green dial",
+    "backdrop_colors": "orange",
+    "surface_or_setting": "white metal floor"
+   },
+   "style": 0.75,
+   "misses": [
+    "color_palette.chroma_subject",
+    "value_contrast.boundary_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Control console",
+     "object_class": "electronics",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "errors": []
+  },
+  {
+   "try_id": "v1_06_3",
+   "brief_id": "v1_06",
+   "card": {
+    "name": "Control Panel",
+    "subject": "A slanted console with rows of round buttons, a lever and two round dials.",
+    "object_class": "electronics",
+    "category": "3",
+    "pattern": "diamonds",
+    "hero_colors": "light gray console, red and yellow buttons, small green dial",
+    "backdrop_colors": "orange",
+    "surface_or_setting": "white metal floor"
+   },
+   "style": 0.73,
+   "misses": [
+    "color_palette.chroma_subject",
+    "color_palette.hue_gap",
+    "value_contrast.boundary_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Control console",
+     "object_class": "electronics",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false,
+   "errors": []
+  },
+  {
+   "try_id": "v1_06_4",
+   "brief_id": "v1_06",
+   "card": {
+    "name": "Control Panel",
+    "subject": "A slanted console with rows of round buttons, a lever and two round dials.",
+    "object_class": "electronics",
+    "category": "3",
+    "pattern": "diamonds",
+    "hero_colors": "light gray console, red and yellow buttons, small green dial",
+    "backdrop_colors": "orange",
+    "surface_or_setting": "white metal floor"
+   },
+   "style": 0.781,
+   "misses": [],
+   "issues": [
+    "identity"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Arcade control console",
+     "object_class": "electronics",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v1_06_5",
+   "brief_id": "v1_06",
+   "card": {
+    "name": "Control Panel",
+    "subject": "A slanted console with rows of round buttons, a lever and two round dials.",
+    "object_class": "electronics",
+    "category": "3",
+    "pattern": "diamonds",
+    "hero_colors": "light gray console, red and yellow buttons, small green dial",
+    "backdrop_colors": "orange",
+    "surface_or_setting": "white metal floor"
+   },
+   "style": 0.781,
+   "misses": [
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Control console",
+     "object_class": "electronics",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "chosen": true
+  }
+ ],
+ "v1_07": [
+  {
+   "try_id": "v1_07_1",
+   "brief_id": "v1_07",
+   "card": {
+    "name": "Moon Rover",
+    "subject": "A small six-wheeled rover with a boxy body, a dish antenna and a tiny solar panel.",
+    "object_class": "vehicle",
+    "category": "3",
+    "pattern": "rays",
+    "hero_colors": "white body, black wheels, small orange antenna",
+    "backdrop_colors": "lime green",
+    "surface_or_setting": "gray moon dust"
+   },
+   "style": 0.676,
+   "misses": [
+    "color_palette.chroma_subject",
+    "color_palette.shadow_chroma_kept"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Lunar rover",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "major",
+     "what": "The rocker rod does not reach the wheel hubs. Its front branch ends at a joint on the upper edge of the front wheel, not at its axle. The back branch goes behind the middle wheel and ends without joining the middle or the rear wheel. The middle and rear near wheels have no visible axle, arm or bogie holding them, so they are not attached to the rover."
+    },
+    {
+     "severity": "major",
+     "what": "The two sides do not match. The near three wheels are bunched forward and stick out past the front of the body. On the far side, one wheel sits under the middle of the body and another sits out at the rear corner on its own arm. A rover's wheelbase should be the same on both sides, but these wheel positions do not line up."
+    },
+    {
+     "severity": "minor",
+     "what": "The near wheels are packed so tightly that their tyres almost touch or overlap. With no gap between them they could not turn or flex over terrain."
+    },
+    {
+     "severity": "major",
+     "what": "The body's long side faces the camera with its bottom edge nearly level, so the wheels on that side should sit in a row parallel to it. Instead the row runs diagonally: the left wheel is highest and furthest back, and each wheel to the right sits lower and closer to the viewer. The left wheel also sticks out past the body's left end. The wheels look as if they belong to a chassis turned at a different angle from the body."
+    },
+    {
+     "severity": "minor",
+     "what": "Only one bent leg is shown, attached to the body's middle. Its joints don't line up with the axles of the near wheels, and the left and middle wheels have no visible rod reaching their hubs. The wheels look like they float under the body instead of hanging from it."
+    },
+    {
+     "severity": "minor",
+     "what": "The right-end wheel shows mostly tread and a narrow, angled hub, as if turned toward the end face, while the near wheels show round hubs facing the viewer. On a rover all wheels should be parallel and equally foreshortened. The far wheels also don't form a row parallel to the near wheels or the body."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_07_2",
+   "brief_id": "v1_07",
+   "card": {
+    "name": "Moon Rover",
+    "subject": "A small six-wheeled rover with a boxy body, a dish antenna and a tiny solar panel.",
+    "object_class": "vehicle",
+    "category": "3",
+    "pattern": "rays",
+    "hero_colors": "white body, black wheels, small orange antenna",
+    "backdrop_colors": "lime green",
+    "surface_or_setting": "gray moon dust"
+   },
+   "style": 0.697,
+   "misses": [
+    "color_palette.chroma_subject",
+    "color_palette.shadow_chroma_kept"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Lunar rover",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "major",
+     "what": "The near-side middle wheel has no axle or arm. The rocker has only two branch ends for three wheels, and none of them reaches the middle hub, so the wheel just stands next to the others without being attached."
+    },
+    {
+     "severity": "major",
+     "what": "The arm ends do not reach the wheel hubs. The rear branch stops in a joint above and behind the rear tyre's top edge, well away from its hubcap. The front branch hits the front tyre's upper tread instead of its centre. The linkage could not hold or turn the wheels."
+    },
+    {
+     "severity": "major",
+     "what": "The body's long side runs level across the picture, as if seen side-on, but the three near wheels step down and forward from left to right, as if the rover were turned about 45° toward the viewer. The wheel row does not follow the body's bottom edge, so the wheels and the body seem to be seen from two different angles."
+    },
+    {
+     "severity": "major",
+     "what": "All the wheels are drawn as round, face-on discs with face-on hubs, even though the near row recedes on a diagonal and the rear-right wheel sits beside the turned-away end face. Wheels on a receding side should narrow into ellipses that match that side's turn. Instead they all face the camera the same way."
+    },
+    {
+     "severity": "minor",
+     "what": "The dish bowl is seen clearly from above as an open ellipse. Yet the body's top face is only a thin strip and the craters are very flat, which means a low, near-level camera. The dish seems to be seen from a higher viewpoint than the body it sits on."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_07_3",
+   "brief_id": "v1_07",
+   "card": {
+    "name": "Moon Rover",
+    "subject": "A small six-wheeled rover with a boxy body, a dish antenna and a tiny solar panel.",
+    "object_class": "vehicle",
+    "category": "3",
+    "pattern": "rays",
+    "hero_colors": "white body, black wheels, small orange antenna",
+    "backdrop_colors": "lime green",
+    "surface_or_setting": "gray moon dust"
+   },
+   "style": 0.712,
+   "misses": [
+    "color_palette.chroma_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Space rover",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "major",
+     "what": "No arm, bogie or axle connects this wheel to anything. The V-shaped rocker arm goes from the body pivot straight to the front and rear wheels and passes over the middle wheel, which just sits under the arm with no attachment. A rover could not carry or drive a wheel that has no axle."
+    },
+    {
+     "severity": "minor",
+     "what": "Each arm stops at the upper edge of its tyre, near the rim, instead of at the wheel's hub or axle. Nothing visibly holds the wheels on to turn them."
+    },
+    {
+     "severity": "minor",
+     "what": "The dish rim is a fairly open ellipse, about half as tall as it is wide, and shows its inside as if seen well from above. The body's top face beside it is seen almost edge-on, as a thin sliver. If the dish faces straight up on its vertical post, its rim should be a much narrower ellipse to match that top face. As drawn, it reads as seen from a higher camera, or tipped toward the viewer with no visible tilt in its mount."
+    },
+    {
+     "severity": "minor",
+     "what": "The camera is above the rover, since its top face, dish and panel are all seen from above. So the far edge of a flat ground should sit at eye level, above the top of the body. Instead the ground ends against the sky at about the height of the body's middle, as if seen from a lower viewpoint."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_07_4",
+   "brief_id": "v1_07",
+   "card": {
+    "name": "Moon Rover",
+    "subject": "A small six-wheeled rover with a boxy body, a dish antenna and a tiny solar panel.",
+    "object_class": "vehicle",
+    "category": "3",
+    "pattern": "rays",
+    "hero_colors": "white body, black wheels, small orange antenna",
+    "backdrop_colors": "lime green",
+    "surface_or_setting": "gray moon dust"
+   },
+   "style": 0.785,
+   "misses": [
+    "color_palette.shadow_chroma_kept"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Space rover",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  },
+  {
+   "try_id": "v1_07_5",
+   "brief_id": "v1_07",
+   "card": {
+    "name": "Moon Rover",
+    "subject": "A small six-wheeled rover with a boxy body, a dish antenna and a tiny solar panel.",
+    "object_class": "vehicle",
+    "category": "3",
+    "pattern": "rays",
+    "hero_colors": "white body, black wheels, small orange antenna",
+    "backdrop_colors": "lime green",
+    "surface_or_setting": "gray moon dust"
+   },
+   "style": 0.714,
+   "misses": [
+    "color_palette.shadow_chroma_kept"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Space rover",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "chosen": true
+  }
+ ],
+ "v1_08": [
+  {
+   "try_id": "v1_08_1",
+   "brief_id": "v1_08",
+   "card": {
+    "name": "Telescope",
+    "subject": "A long tube telescope on a three-legged stand, with an eyepiece at the back.",
+    "object_class": "tool",
+    "category": "3",
+    "pattern": "stripes",
+    "hero_colors": "cream tube, brown wood legs, small brass ring",
+    "backdrop_colors": "bright teal",
+    "surface_or_setting": "gray moon dust"
+   },
+   "style": 0.7,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.margin_min",
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Telescope on tripod",
+     "object_class": "tool",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The lens and the rim of the wide barrel are drawn as a fairly open ellipse, as if the tube pointed well toward the camera. Yet the tube is drawn long and barely shortened, as if it were seen side-on. These two views do not match. Also, the rounded grey eyepiece cap at lower left seems to turn its end toward the viewer as well, which a single straight tube cannot do: if one end faces the viewer, the other faces away."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_08_2",
+   "brief_id": "v1_08",
+   "card": {
+    "name": "Telescope",
+    "subject": "A long tube telescope on a three-legged stand, with an eyepiece at the back.",
+    "object_class": "tool",
+    "category": "3",
+    "pattern": "stripes",
+    "hero_colors": "cream tube, brown wood legs, small brass ring",
+    "backdrop_colors": "bright teal",
+    "surface_or_setting": "gray moon dust"
+   },
+   "style": 0.744,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.margin_min",
+    "color_palette.chroma_background",
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Tripod telescope",
+     "object_class": "tool",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The lens face is drawn as a fairly open ellipse, so the front of the tube seems to point well toward the viewer. But the tube body barely changes in width along its length, and the pivot bolt on the yoke is a front-on circle, which places the tube's swing axis pointing straight at the camera. With that bolt, the tube should lie nearly flat across the picture and the lens would be seen almost edge-on. The lens opening and the rest of the tube suggest two different camera angles."
+    },
+    {
+     "severity": "minor",
+     "what": "The eyepiece cap also shows its rounded end toward the viewer. If the objective end comes toward the camera, the eyepiece end goes away from it, so its end face should be hidden. A cylinder cannot show both of its end faces at once."
+    },
+    {
+     "severity": "minor",
+     "what": "The horizon line sits at about the height of the tripod head, which reads as eye level. Even so, the tops of the wooden disc and the base plate are drawn clearly from above. A flat disc at eye level would look almost edge-on. This is mild, and many viewers would accept it as stylization."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_08_3",
+   "brief_id": "v1_08",
+   "card": {
+    "name": "Telescope",
+    "subject": "A long tube telescope on a three-legged stand, with an eyepiece at the back.",
+    "object_class": "tool",
+    "category": "3",
+    "pattern": "stripes",
+    "hero_colors": "cream tube, brown wood legs, small brass ring",
+    "backdrop_colors": "bright teal",
+    "surface_or_setting": "gray moon dust"
+   },
+   "style": 0.705,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.margin_min",
+    "color_palette.chroma_background",
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Tripod telescope",
+     "object_class": "tool",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The craters and ground in the middle and back are thin, flattened ellipses, which puts the eye level near the far ridge. That ridge is about level with the disc. But the top of the disc and the bracket's base plate are seen clearly from above, as if the camera were much higher. Seen from that low, the disc should look almost edge-on."
+    },
+    {
+     "severity": "minor",
+     "what": "The bracket's side plate and its pivot bolt face the camera almost head-on, so the pivot axis points at the viewer. But the open lens ellipse shows the tube also leans clearly toward the viewer. A tube that tilts on that pivot should lie across the view, so the bracket and the tube don't quite agree on one angle."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_08_4",
+   "brief_id": "v1_08",
+   "card": {
+    "name": "Telescope",
+    "subject": "A long tube telescope on a three-legged stand, with an eyepiece at the back.",
+    "object_class": "tool",
+    "category": "3",
+    "pattern": "stripes",
+    "hero_colors": "cream tube, brown wood legs, small brass ring",
+    "backdrop_colors": "bright teal",
+    "surface_or_setting": "gray moon dust"
+   },
+   "style": 0.835,
+   "misses": [
+    "composition_hierarchy.box_width",
+    "composition_hierarchy.box_height"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Tripod telescope",
+     "object_class": "tool",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  },
+  {
+   "try_id": "v1_08_5",
+   "brief_id": "v1_08",
+   "card": {
+    "name": "Telescope",
+    "subject": "A long tube telescope on a three-legged stand, with an eyepiece at the back.",
+    "object_class": "tool",
+    "category": "3",
+    "pattern": "stripes",
+    "hero_colors": "cream tube, brown wood legs, small brass ring",
+    "backdrop_colors": "bright teal",
+    "surface_or_setting": "gray moon dust"
+   },
+   "style": 0.832,
+   "misses": [
+    "composition_hierarchy.box_height",
+    "composition_hierarchy.center_x",
+    "composition_hierarchy.center_y"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Tripod telescope",
+     "object_class": "tool",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false,
+   "chosen": true
+  }
+ ],
+ "v1_09": [
+  {
+   "try_id": "v1_09_1",
+   "brief_id": "v1_09",
+   "card": {
+    "name": "Radio Dish",
+    "subject": "A big white satellite dish on a tall base, tilted up to the sky.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "white dish, gray base, small red light",
+    "backdrop_colors": "clear sky blue",
+    "surface_or_setting": "sunny desert plain"
+   },
+   "style": 0.735,
+   "misses": [
+    "color_palette.chroma_subject",
+    "value_contrast.lightness_mean",
+    "value_contrast.lightness_p1",
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Satellite dish",
+     "object_class": "electronics",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "many"
+    }
+   },
+   "passed": false,
+   "errors": [
+    {
+     "severity": "major",
+     "what": "The feed hub is not over the middle of the dish. It sits beyond the upper-left rim, held by two short legs that land near the left edge of the bowl and one long arm stretched across to the right rim. A dish only works with its receiver at the focal point, centered in front of the bowl and held by evenly spaced struts from the rim. This lopsided rig would miss the signal the dish collects and could not support itself evenly."
+    },
+    {
+     "severity": "minor",
+     "what": "There is a glossy red dome where the feed horn should be, and no horn points back into the dish. A real dish's receiver faces the reflector, so the dome is an invented part that replaces the working one."
+    },
+    {
+     "severity": "minor",
+     "what": "The slab top is seen from well above; its depth is about half its width. Yet the bottom edge of the cone is an almost flat, shallow curve. A round base sitting on that slab should be an ellipse about as open as the slab, so its front should dip much lower than its sides. As drawn, the cone looks seen from a lower camera than the slab it stands on, and it does not sit firmly on that surface."
+    },
+    {
+     "severity": "minor",
+     "what": "The collar sits at or just above the horizon, so it should look nearly edge-on, with at most a sliver of its underside showing. Instead it shows an open top face, about as open as the ellipses lower down. The round shapes do not get more open further below eye level, as they should, so the pedestal's round sections do not share the scene's single eye height."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_09_2",
+   "brief_id": "v1_09",
+   "card": {
+    "name": "Radio Dish",
+    "subject": "A big white satellite dish on a tall base, tilted up to the sky.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "white dish, gray base, small red light",
+    "backdrop_colors": "clear sky blue",
+    "surface_or_setting": "sunny desert plain"
+   },
+   "style": 0.739,
+   "misses": [
+    "color_palette.chroma_subject",
+    "value_contrast.lightness_mean",
+    "value_contrast.lightness_p1",
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Satellite dish",
+     "object_class": "electronics",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The three struts holding the feed are lopsided. One long strut reaches the far right rim, but the other two drop to points close together on the near-left inside of the bowl instead of being spaced evenly around the rim. That puts the feed off to the side, over the left edge, rather than centred in front of the dish, and such a tripod could not hold the feed steady."
+    },
+    {
+     "severity": "minor",
+     "what": "A glossy red light-like cap sits on the feed. On a real dish the feed horn faces into the dish and carries no beacon on its back, so this looks like an invented part."
+    },
+    {
+     "severity": "minor",
+     "what": "The three supports don't form a believable tripod in this view. Two struts land close together on the lower-left inside of the bowl, away from the rim, while the third runs flat across to the far upper-right rim. Struts spread evenly around the rim would show up as points spread around the ellipse, and all three would meet at one feed point above the dish's centre axis. Here the feed looks bolted to the edge of the dish rather than held up in front of its centre."
+    },
+    {
+     "severity": "minor",
+     "what": "The collar sits at or slightly above the horizon, yet its top surface and the dark inner gap are drawn as a fairly open ellipse, as if seen from above. That matches the view of the slab far below eye level, not where the collar actually is. At this height the ring should look almost edge-on, with little or none of its top showing."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_09_3",
+   "brief_id": "v1_09",
+   "card": {
+    "name": "Radio Dish",
+    "subject": "A big white satellite dish on a tall base, tilted up to the sky.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "white dish, gray base, small red light",
+    "backdrop_colors": "clear sky blue",
+    "surface_or_setting": "sunny desert plain"
+   },
+   "style": 0.732,
+   "misses": [
+    "color_palette.chroma_subject",
+    "value_contrast.lightness_mean",
+    "value_contrast.lightness_p1",
+    "value_contrast.rms_contrast",
+    "edges_linework.edge_density_background"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Satellite dish",
+     "object_class": "electronics",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false,
+   "errors": [
+    {
+     "severity": "major",
+     "what": "The feed is not held in front of the dish's centre where it would catch the reflected signal. It sits out past the upper-left rim. The struts are lopsided: two bunch together on the lower-left of the face and one stretches flat to the far right rim. That is not a tripod or boom any real dish uses, and it would not hold the feed steady or aimed. The feed housing also stands upright with its red dome pointing at the sky instead of facing into the dish."
+    },
+    {
+     "severity": "minor",
+     "what": "A shiny red ball cap is an invented part. A real feed horn has an open throat or a flat cover facing the dish, not a decorative dome on the back."
+    },
+    {
+     "severity": "minor",
+     "what": "The feed head is the highest part of the object, far above the horizon, so it should be seen from below like the dish rim. Instead its top face shows as an open ellipse with the red dome sitting on it, as if seen from above. It does not match the low camera used for the dish and pedestal."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_09_4",
+   "brief_id": "v1_09",
+   "card": {
+    "name": "Radio Dish",
+    "subject": "A big white satellite dish on a tall base, tilted up to the sky.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "white dish, gray base, small red light",
+    "backdrop_colors": "clear sky blue",
+    "surface_or_setting": "sunny desert plain"
+   },
+   "style": 0.754,
+   "misses": [
+    "edges_linework.edge_density_background"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Satellite dish",
+     "object_class": "electronics",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "chosen": true
+  }
+ ],
+ "v1_10": [
+  {
+   "try_id": "v1_10_1",
+   "brief_id": "v1_10",
+   "card": {
+    "name": "Moon Base",
+    "subject": "A glass dome house with a round tunnel and a small ladder, sitting beside a crater.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "white dome, light blue glass, small yellow door",
+    "backdrop_colors": "bright violet sky with stars",
+    "surface_or_setting": "gray moon surface"
+   },
+   "style": 0.64,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Lunar dome base",
+     "object_class": "building_place",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The ladder climbs to the narrow ledge around the dome, but there is no hatch, door or platform up there. It leads to a ledge with nowhere to go, so its purpose is unclear (a maintenance ladder is the most charitable reading)."
+    },
+    {
+     "severity": "minor",
+     "what": "The door is small for the tunnel's size, only about half the end cap's height, and is set into a curved cap. It looks too small for a suited person to pass through as the habitat's airlock entrance."
+    },
+    {
+     "severity": "minor",
+     "what": "The ladder is drawn straight-on to the viewer: rails upright and parallel, rungs level and the same width all the way up. But it leans on a part of the round wall that is already turning away to the right, and the camera looks down on it. Its rungs should tilt slightly and its rails should narrow a little toward the far side to sit flat against that turned surface. As drawn, it looks pasted flat onto the picture rather than resting against the curved wall."
+    },
+    {
+     "severity": "minor",
+     "what": "The hatch is a near-frontal rounded rectangle. The tunnel end cap around it is a narrowed, angled ellipse, so the hatch should be squeezed and angled the same way. It reads as slightly more face-on than the cap it sits on."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_10_2",
+   "brief_id": "v1_10",
+   "card": {
+    "name": "Moon Base",
+    "subject": "A glass dome house with a round tunnel and a small ladder, sitting beside a crater.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "white dome, light blue glass, small yellow door",
+    "backdrop_colors": "bright violet sky with stars",
+    "surface_or_setting": "gray moon surface"
+   },
+   "style": 0.678,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Moon base",
+     "object_class": "building_place",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "major",
+     "what": "The ladder leads nowhere. Its rails end at the narrow lip right against the dome glass, and there is no hatch, platform or walkway at the top. It is also only leaned against the wall, with no brackets holding it. Nothing explains why it is there."
+    },
+    {
+     "severity": "minor",
+     "what": "The door does not match the ladder's scale. It is only about half the ladder's height, too small for a person in a suit to walk through. It also sits off-center toward the left edge of the round end cap, not centered as an airlock door would be."
+    },
+    {
+     "severity": "minor",
+     "what": "The tunnel's collar ring blends into the base's top lip and wall. There is no clear seam or flange showing where the two modules connect."
+    },
+    {
+     "severity": "minor",
+     "what": "The end cap is a fairly full ellipse, which says the tube points partly toward the viewer. But the raised ring bands along the tube are drawn as almost straight vertical stripes with very little curve. Rings parallel to the end cap should curve as half-ellipses with the same narrowness as the cap, so the tube's sections do not quite agree with its end face."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_10_3",
+   "brief_id": "v1_10",
+   "card": {
+    "name": "Moon Base",
+    "subject": "A glass dome house with a round tunnel and a small ladder, sitting beside a crater.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "white dome, light blue glass, small yellow door",
+    "backdrop_colors": "bright violet sky with stars",
+    "surface_or_setting": "gray moon surface"
+   },
+   "style": 0.638,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Moon base",
+     "object_class": "building_place",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true,
+   "errors": [
+    {
+     "severity": "minor",
+     "what": "The ladder leads to the flat ledge around the dome, but nothing is up there: no hatch, door or handrail. Its rails also stop below the ledge edge instead of rising above it, so a person could not step off safely. It is a ladder that goes nowhere useful."
+    },
+    {
+     "severity": "minor",
+     "what": "The door is pushed off-center toward the left edge of the round end cap, almost into the rim. It is also very small and narrow for the tube's diameter, so it does not read as a working airlock door."
+    }
+   ]
+  },
+  {
+   "try_id": "v1_10_4",
+   "brief_id": "v1_10",
+   "card": {
+    "name": "Moon Base",
+    "subject": "A glass dome house with a round tunnel and a small ladder, sitting beside a crater.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "white dome, light blue glass, small yellow door",
+    "backdrop_colors": "bright violet sky with stars",
+    "surface_or_setting": "gray moon surface"
+   },
+   "style": 0.749,
+   "misses": [],
+   "issues": [
+    "art_category"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Sci-fi dome habitat",
+     "object_class": "building_place",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 2,
+     "secondary_objects": "one"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v1_10_5",
+   "brief_id": "v1_10",
+   "card": {
+    "name": "Moon Base",
+    "subject": "A glass dome house with a round tunnel and a small ladder, sitting beside a crater.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "white dome, light blue glass, small yellow door",
+    "backdrop_colors": "bright violet sky with stars",
+    "surface_or_setting": "gray moon surface"
+   },
+   "style": 0.69,
+   "misses": [
+    "color_palette.chroma_background",
+    "color_palette.shadow_chroma_kept"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Lunar dome base",
+     "object_class": "building_place",
+     "real_world_scale": "building_or_larger",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "chosen": true
+  }
+ ]
+}

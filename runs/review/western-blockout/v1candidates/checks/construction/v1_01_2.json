@@ -1,0 +1,11 @@
+{
+ "survey": "A felt cowboy hat seen in three-quarter view from the front-left, floating over a sunburst background. It has three main parts. (1) The crown is tall and tapers slightly, with a pinched top: a centre crease and side dents. It rises from the middle of the brim. (2) A red woven hatband wraps all the way around the base of the crown and sits flush against it where the crown meets the brim. (3) The brim is wide with cream piping along its whole edge. The front dips down toward the viewer, and the left side curls up in a broad, rounded arc. The right side stretches far out and narrows to a sharp, upturned point. The hat is shown on its own as an icon, so it is not expected to rest on anything.",
+ "errors": [
+  {
+   "where": "Brim, right side vs left side",
+   "what": "The two sides of the brim do not match. On a real cowboy hat they are mirror images that curl up the same way. Here the left side is a short, rounded curl, while the right side runs about twice as far from the crown and ends in a sharp, wing-like point. A felt brim cannot hold that shape, and the three-quarter view does not explain the difference. As a result the crown sits well off-centre on the brim.",
+   "severity": "major"
+  }
+ ],
+ "fix": "Cowboy hat with a symmetrical brim: the left and right sides are mirror images, both curling up evenly into rounded edges, and neither ends in a point. The crown sits in the centre of an oval brim. Keep the pinched crown, the red hatband and the cream edge piping."
+}

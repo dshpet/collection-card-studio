@@ -1,0 +1,11 @@
+{
+ "survey": "A white spherical space helmet sits in a short white cylindrical collar base, which stands on a pale metal tabletop with rivets along the front edge. We see it from slightly above and a little to the right. The base's top and bottom rims are level ellipses with their long axes horizontal. They are moderately open, so the top face shows, and the red stripe and chrome ring bow downward to match. That fits a camera looking slightly down. The tabletop's back and front edges are parallel and both slope down to the right, as they should for a slab turned away from the camera. The base's ellipses stay level, which is right for a horizontal circle. The base sits flat on the tabletop, and its bottom curve matches its top, so the contact is correct. The sphere drops into the collar's chrome ring, and the ring's ellipse agrees with the base. The amber visor, with its chrome rim, sits on the left-front of the sphere, facing toward the camera's left.",
+ "errors": [
+  {
+   "where": "Visor and its chrome rim, on the left side of the helmet sphere",
+   "what": "The visor sits well to the left on the sphere, so it should face away to the left: its left half should be squeezed into a narrower curve and stay inside the helmet's outline. Instead it is drawn as a broad, almost face-on oval. Its left rim bulges out past the sphere's outline, and both sides look equally wide, so it reads as a flat sticker on the helmet rather than an opening that wraps around the ball. This view does not match the slightly-from-above, three-quarter view that the base and table agree on.",
+   "severity": "major"
+  }
+ ],
+ "fix": "Wrap the visor around the curve of the helmet sphere. Keep the camera at a slight three-quarter view from above. The visor faces front-left, so its left side turns away and is foreshortened into a narrower curve, and the chrome rim stays fully inside the sphere's outline. Draw the visor rim as a true ellipse that follows the sphere's surface, not a flat front-facing oval."
+}

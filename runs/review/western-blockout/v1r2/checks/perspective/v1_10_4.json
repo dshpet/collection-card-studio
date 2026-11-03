@@ -1,0 +1,21 @@
+{
+ "survey": "A cartoon steam locomotive in a desert, seen in three-quarter view from the front left, from slightly above. The track runs from the bottom left to the upper right. The boiler's round front faces the viewer at the left. A smokestack, headlamp, steam dome and bell sit on top of the boiler, and the smokestack's top rim is seen slightly from above. The boiler rests on a flat running board. A red buffer beam is at the front, with a cowcatcher of slanted bars below it that reaches toward the ties. One red leading wheel sits under the front. Three large red driving wheels, joined by side rods to a cylinder, sit under the middle of the running board. A tall cab with windows and a coal tender with two small wheels are at the rear. The wheels are drawn as narrowed ellipses that face to the side. They sit in a row that runs back along the track, and the track's rails and ties recede toward the right.",
+ "errors": [
+  {
+   "where": "Running board and body compared with the wheel row and the track",
+   "what": "The running board's long edge rises only gently to the right (about 80 px over 680 px). The bottoms of the wheels and the rails below rise much more steeply (about 0.4–0.5 slope). So the body is drawn more side-on than its own wheels and the track. The two sets of edges point to different vanishing points, and the locomotive looks slightly twisted, or set at an angle across the rails instead of along them.",
+   "severity": "major"
+  },
+  {
+   "where": "Cab roof compared with the running board and boiler",
+   "what": "The cab's top edge slopes slightly down to the right, toward a third, different vanishing point. It agrees with neither the running board nor the track, so the cab's box does not clearly share the body's perspective.",
+   "severity": "minor"
+  },
+  {
+   "where": "Cowcatcher (pilot) and leading wheel",
+   "what": "The cowcatcher bars splay down and out toward the viewer as if seen more from the front than the rest of the engine. Their bottom ends do not clearly sit at the track's angle, so the front end looks a little detached from the rails.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the whole locomotive line up with the track in one three-quarter view from the front left. The running board, boiler, cab roof and tender edges should all run parallel to the rails and meet at the same vanishing point as the track. The row of wheels should sit right under the running board, and all wheels should rest squarely on the near rail. The cowcatcher should be centered between the rails, with its bottom edge running parallel to the ties."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (control panel): soft, nearly frontal light. The front drawer face and the right side face sit at almost the same value, the core shadow is weak and the contact shadow on the floor plates is faint, so the box looks lit from all sides. B (popcorn cart): a clear key from the upper left. The awning underside goes dark, there is a sharp specular streak on the glass, and the wheels drop a dark contact shadow onto the tiles, as the real cards do.",
+   "fix": "Light the console from the upper left so the right side face is clearly darker than the front, add a dark core shadow along the bottom edge, and put a soft dark contact shadow on the floor under the box."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (satellite dish): the red cone has an even left-to-right gradient with a glossy rim sheen, the dish face is lit flat and white, and the cone barely darkens the sand where it meets it (light_bias 0.53, form_contrast 0.55, the higher of the two). B (sandcastle): soft warm light, a shadow from the bucket and dark recesses in the windows and gate, with gentle turn on the towers, matching the real coral and barrel cards.",
+   "fix": "Let the sand darken around the base of the cone as a contact shadow, cast the dish's shadow onto the sand, and give the dish face a darker lower half so it reads as a turned bowl."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (Saturn): the sphere is almost flat in the lens, with no core shadow band and only a small glossy hot spot at the upper left. The ring is evenly lit all the way round and casts no shadow on the planet (form_contrast 0.28 and light_bias 0.10, below and at the bottom of the real range). A (flip-flops): clear side light, a darker inner strap, soft cast shadows under the straps onto the soles, and the soles shadow the background.",
+   "fix": "Add a soft dark shadow side on the lower right of the planet, cast the ring's shadow as a curved dark band across the sphere, and darken the back half of the ring."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (rover): hard top light. The body top is bright, the wheels are near-black, and the light falls off abruptly (light_bias 1.03, above every real card). There is no defined cast shadow under the chassis, just a general dark mass. A (taxi): also strong, but the light comes from the front left, with a soft dark cast shadow under the car on the road and a smooth turn over the hood and roof, closer to the real bike and caravan cards.",
+   "fix": "Soften the top light so the wheels show a lit upper rim and a darker lower half instead of solid black, and put a soft oval cast shadow under the chassis on the ground."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (rocket): chrome body with a hard near-black stripe down the left and bright white on the right. The value range is very wide (shading_range 0.85, above the real range) and the banding is sharp instead of a soft form turn. A (submarine): broad soft sheen on the yellow hull, a gradual turn into the shadowed lower right, and moderate highlights on the portholes, matching the real anchor and lamp cards.",
+   "fix": "Make the rocket body a softer satin metal with one broad highlight and a gradual turn into a mid-gray shadow side, with no black reflection stripe."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (UFO): sharp white plastic hot spots on the green dome and a large glare on the left of the saucer top. Every rim light glows like a small orb with its own highlight, and the saucer casts no shadow on the background. A (music player): soft, gentle modeling, a mild shadow side on the right of the case, and the cable and earbuds cast soft shadows on the backdrop, like the real clock card.",
+   "fix": "Replace the hot spots on the dome and saucer with one soft broad sheen, darken the underside of the saucer, and add a soft shadow below the saucer on the background."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (asteroid): very strong one-sided light. The upper left is lit, the lower right falls almost to black, and the craters are carved with hard dark interiors (light_bias 0.95 and shading_range 0.84, both above the real range). The flame tails are lit independently of the rock. B (scarf): soft, gentle folds with a mild shadow under the knot and a modest turn, within the real range.",
+   "fix": "Lift the shadow side of the asteroid to a mid-dark tone so the lower right still shows form, give the craters softer interiors, and let the flames throw a warm glow onto the back of the rock."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (moon base): the white habitat and tube are evenly lit with little turn across the cylinder. A long, crisp cast shadow falls to the right on the ground, and the dome glass reads black in the lens. A (tiki bar): warm, soft light with gradual turn on the stools and counter, contact shadows where the stools meet the water, and a dark underside to the thatch roof.",
+   "fix": "Shade the tube and the dome base as round forms, lit on the left and turning darker on the right. Soften the cast shadow on the ground and keep a little light in the dome glass."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (binoculars): hard side light with deep shadow sides on both barrels and a long, very dark cast shadow on the floorboards (shading_range 0.93, above the real range). It reads as a photographic product shot. A (telescope): a smooth soft turn along the tube from the upper left, soft leg shadows on the ground, and moderate highlights on the brass ring.",
+   "fix": "Soften the key light on the binoculars, lift the shadow sides to mid tones, and shorten the floor shadow into a soft contact shadow under the barrels."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (bouncy castle): soft, even, glossy sheen on the inflatable tubes and a gentle darker underside, floating over a burst background. B (water polo goal): soft top light, a contact ring where the ball meets the water and soft posts. Both sit within the real ranges, and neither shows a lighting tell.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (sneakers): diffuse studio light with almost no directional bias (light_bias 0.02, far below the real range) and a wide value range (0.82, above it). The shoes are lit evenly front to back while a separate hard shadow falls to the left, so it reads as a photo render. A (helmet): a clear key from the upper left, a darker right side of the dome, a glossy visor sheen and a soft cast shadow from the plinth onto the shelf.",
+   "fix": "Light the sneakers from one side so the near shoe has a clear lit side and a darker side, and keep a soft contact shadow directly under the soles instead of a hard offset shadow."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (neon ice cream): almost no directional light (light_bias 0.035, below the real range). The form is flat and emissive, with only a pink and orange glow around the outline and a dark halo on the wall. B (marble lion): a clear key from the upper left, the mane and paws modeled with soft core shadows, and a darker side face on the plinth, as the real cards show.",
+   "fix": "Add a soft key from the upper left so the cream swirl has a lit top and a shaded underside, and give the cone a darker right edge in addition to the neon glow."
+  }
+ ],
+ "pattern": "Generated cards miss the real cards' single soft key from the upper left, which gives gradual form turn and soft contact shadows. They go one of two ways. Either the light is flat or ambient with no core shadow (Saturn, neon cone, control panel, sneakers), or it is overdriven, with near-black shadow sides, hard chrome banding and sharp white plastic hot spots (asteroid, rover, rocket, UFO dome). Cast and contact shadows tend to be missing, or hard and detached from the object."
+}

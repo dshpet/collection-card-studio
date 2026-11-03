@@ -1,0 +1,16 @@
+{
+ "survey": "A single broom floating on a wavy blue background, with no ground plane. A long wooden handle runs diagonally from a rounded knob at the upper right down to the lower left. Its two sides stay parallel and taper only slightly. At the lower end the handle goes into a cylindrical collar of gathered straw, which is tied with two red rope bands. The collar's top rim is drawn as an ellipse seen slightly from above. Below the collar the yellow bristle head fans out into a flared bundle with a ragged lower edge. The bristle strands run from the collar to the tips. The view is a three-quarter view, roughly side-on, slightly from above. The knob is a dome seen side-on, which agrees with the handle's tilt.",
+ "errors": [
+  {
+   "where": "Bristle head and collar where they meet the handle",
+   "what": "The bristle head does not continue the handle's line. The handle leans about 37° from vertical, but the collar and the bristle fan hang about 15–20° closer to vertical, so the broom looks bent at the collar. A real broom is one straight object.",
+   "severity": "major"
+  },
+  {
+   "where": "Red rope bands and the collar's top rim",
+   "what": "The rope bands and the collar rim are drawn as nearly level ellipses, as if the collar stood upright. Rings around a tilted handle should be at right angles to it, which means tilted about 37°, running down to the right. Here they are tilted only about 15°, so the rings belong to a more upright collar than the handle they wrap.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the broom one straight object: the bristle head, the straw collar and the handle share a single straight center line. Tilt the collar and bristle fan to the same diagonal as the handle, so the bristles flare out evenly along that line. Draw the red rope bands and the collar rim as ellipses at right angles to the handle, so they tilt with the diagonal axis and are not level."
+}

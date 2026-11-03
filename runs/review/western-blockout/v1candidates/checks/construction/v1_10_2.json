@@ -1,0 +1,21 @@
+{
+ "survey": "A western-style steam locomotive in three-quarter front view, running on a single track in the desert. The boiler is a black cylinder lying on a flat running board. Its round smokebox door, with a centre knob, faces the camera. A flared smokestack rises from the top front of the boiler, with a round headlamp fixed to the left side of the stack. A steam dome and a brass bell sit on top of the boiler farther back. The boiler runs into a boxy cab with a round side window and an open side, and the cab roof overhangs. A low black tender is coupled behind the cab on two small red wheels. Under the running board are a red buffer beam at the front and a cowcatcher of slanted vertical bars hanging from it, with its bottom bar at rail level. Behind it are two small red leading wheels, then a black cylinder on the near side. Three large red driving wheels sit on the near rail, joined by a piston rod from the cylinder and a side rod. Wheels, tender and cowcatcher all rest on or over the near rail and ties.",
+ "errors": [
+  {
+   "where": "Headlamp, front top of the engine",
+   "what": "The headlamp is bolted to the side of the smokestack and juts out past the boiler front, with no bracket or smokebox mount under it. On a real locomotive the lamp sits on the smokebox top or front.",
+   "severity": "minor"
+  },
+  {
+   "where": "Rods between the cylinder and the driving wheels",
+   "what": "The side rod runs diagonally from low on the first driver up to the hub of the third driver. It skips the middle driver and crosses the piston rod in a V. A real side rod joins the crankpins of every driver at the same height, parallel to the rail, and the main rod runs from the crosshead to a single crankpin.",
+   "severity": "minor"
+  },
+  {
+   "where": "Cowcatcher under the red buffer beam",
+   "what": "The pilot is a cage of near-vertical bars hanging straight down from the beam, with its bottom bar resting at rail and tie level. A real cowcatcher is a forward-sloping wedge that clears the rails. This one would catch on the track.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Mount the round headlamp on a bracket on top of the smokebox, in front of the smokestack, not on the side of the stack. Draw a horizontal side rod that links the crankpins of all three red driving wheels at the same height, parallel to the rail. Run one main rod from the cylinder's crosshead to the middle driver's crankpin. Shape the cowcatcher as a forward-sloping wedge of bars that angles down from the buffer beam to a point just above the rails, clear of the track."
+}

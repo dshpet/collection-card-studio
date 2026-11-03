@@ -1,0 +1,16 @@
+{
+ "survey": "Image 4 is a cowboy hat with no ground plane, floating on a blue sunburst background. Its parts are: (1) A wide felt brim, seen from above and in front. Its top surface is broadly visible, and a cream piping runs around the edge. (2) A tall pinched crown that rises from the brim behind its centre. The front faces the camera, and the centre crease runs front to back, so the hat is turned almost straight toward the viewer. (3) A red hatband wrapped around the base of the crown. Its lower edge curves downward in a moderate ellipse, which reads as a view from somewhat above. The crown's sides are close to vertical and its top crease is seen mostly in silhouette, so the crown and band read as seen from slightly above. The brim on the left reads as seen from much higher. The left half of the brim is a wide, flat, open surface. The right half narrows into a thin, upswept, pointed tip seen nearly edge-on.",
+ "errors": [
+  {
+   "where": "Brim, left half vs right half",
+   "what": "The crown faces the camera almost straight on, so the two sides of the brim should look about the same. Instead the left half is a broad, flat surface seen from well above, and the right half is a thin, upturned, pointed edge seen almost edge-on. The two halves read as two different views, or two different brim shapes, rather than one symmetric brim under one camera.",
+   "severity": "minor"
+  },
+  {
+   "where": "Hatband and crown base vs brim",
+   "what": "The hatband's curve is fairly shallow and the crown's sides are drawn nearly level. Together they suggest a lower viewpoint than the left brim, which is drawn widely open from high above. If the brim were seen from that high, the band would curve more strongly and more of the crown top would show.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Cowboy hat seen from one slightly elevated three-quarter front view. The brim is symmetric left and right, with both sides curling up by the same amount and narrowing the same way in perspective. The hatband is a smooth ellipse whose curve matches the tilt of the brim, and a little of the pinched crown top shows from that same viewpoint."
+}

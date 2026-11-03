@@ -1,0 +1,21 @@
+{
+ "survey": "A cartoon 4-6-0 style steam locomotive on a desert track, seen in three-quarter view from front-left. The round smokebox front faces the camera, with a centre hinge knob. A tall funnel smokestack stands on top of the smokebox, and a headlamp is attached to the left side of the stack. The boiler lies along a flat black running board. A steam dome and a brass bell sit on top of the boiler near the cab. The boxy cab has a round front window, open side bars and an overhanging roof. A short coal tender behind it shows a heap of coal. Under the running board are a red buffer beam with a slatted pilot (cowcatcher) hanging from it, a cylinder ahead of the drivers, one small leading wheel, three large red drivers and two small trailing/tender wheels. The wheels stand on the near rail. A piston rod runs from the cylinder to the first driver, and a coupling rod links the drivers. The wheels are plain discs without spokes or flanges, which is an acceptable simplification.",
+ "errors": [
+  {
+   "where": "Headlamp at the top left of the smokebox",
+   "what": "The headlamp is stuck to the side of the smokestack, off-centre. On a real locomotive it sits on a bracket centred on the smokebox, in front of the stack. Here it looks bolted onto the chimney.",
+   "severity": "minor"
+  },
+  {
+   "where": "Pilot (cowcatcher) under the red buffer beam",
+   "what": "The pilot bars do not form a consistent wedge. The leftmost bar drops straight down, and the others lean at growing angles until the right ones are almost diagonal. The bottom frame sticks out past the near rail instead of sitting centred between the rails just above them, so the pilot looks skewed rather than like a symmetric plough.",
+   "severity": "minor"
+  },
+  {
+   "where": "Rods between the cylinder and the drivers",
+   "what": "The piston rod from the cylinder ends at the first driver's face. A separate rod starts again at the middle driver, so there is no continuous main rod and crosshead linking the cylinder to one driver crankpin and the coupling rod to all three drivers. The drive linkage does not fully connect.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Mount the round headlamp on a small bracket centred on top of the smokebox, in front of the smokestack, not on the stack's side. Make the cowcatcher a symmetric V-shaped wedge of evenly spaced, evenly angled bars that meet at a centre point, sitting centred between the two rails just above them. Show one continuous main rod from the cylinder's crosshead to a crankpin on a driver, and one coupling rod joining the crankpins of all three red driving wheels."
+}

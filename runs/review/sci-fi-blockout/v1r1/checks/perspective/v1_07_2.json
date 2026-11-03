@@ -1,0 +1,16 @@
+{
+ "survey": "A six-wheeled rover on grey lunar ground. The white box body is seen from slightly above. Its long side faces the camera almost straight on, its top and bottom edges are close to horizontal, and a thin strip of the right end face shows. The side panel with rivets and the three vents sit flat on that front face. A pole on the top-left carries an orange dish, drawn as a fairly open ellipse seen from above. On the top-right, a solar panel on a short post is also seen from above. Under the body, a bent silver suspension arm on a round hub joins three near wheels and three far wheels. The near wheels sit in a row that slopes down to the right and get bigger toward the right. Their hubcaps face front-right and their treads show on their left sides. The far wheels peek out behind. Every wheel rests on flat ground that is seen from above.",
+ "errors": [
+  {
+   "where": "Wheels and suspension compared with the body",
+   "what": "The wheels use a different camera from the body. The body is seen almost side-on: its bottom edge is level and its panel and vents are front-on. But the near wheels run in a row that drops steeply to the right and grow toward the right, as if seen from a strong three-quarter angle. Their faces also turn toward the front-right, showing tread on the left. On one camera, the row of wheels would run parallel to the body's bottom edge, and each wheel would be foreshortened the same way the body's sides are.",
+   "severity": "major"
+  },
+  {
+   "where": "Far-side wheels, especially the rear-right one",
+   "what": "The far wheels sit at heights and spacing that don't match a wheel row parallel to the near row under one box body. The rightmost far wheel pokes out past the body's right end, so the wheelbase looks rotated relative to the body.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Show the whole rover in one consistent three-quarter view from slightly above. Draw the two rows of three wheels parallel to the body's bottom edges and lined up straight under the body. Make the wheels' faces and treads foreshortened at the same angle as the body's side and end faces. Make the wheels recede toward the same vanishing point as the body. The dish, solar panel and ground stay seen from the same high angle."
+}

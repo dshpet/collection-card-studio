@@ -1,0 +1,16 @@
+{
+ "survey": "A witch hat floating over an orange spiral background. Main parts: (1) a wide, flat, oval brim seen from fairly high above, so its top surface is clearly visible. Its long axis rises a little toward the right. (2) A tall cone that rises from the middle of the brim, curves to the right and ends in a curled tip. (3) A purple band around the base of the cone, where the cone meets the brim. (4) A square gold buckle on the front of the band, facing the viewer. The cone sits centred on the brim, and the hat floats with no ground or shadow to rest on. The lighting and the curl of the cone are stylized but readable.",
+ "errors": [
+  {
+   "where": "Purple band and cone base compared with the brim",
+   "what": "The band's bottom edge, where the cone meets the brim, is a much flatter curve than the brim. The brim's oval is about half as tall as it is wide, so we see it from well above. The band curves only slightly, as if seen almost at eye level. The cone and brim seem to be drawn from two different camera heights, so the cone looks pasted onto the brim rather than sitting in it.",
+   "severity": "minor"
+  },
+  {
+   "where": "Tilt of the brim compared with the cone and band",
+   "what": "The brim's long axis rises toward the right, but the band's oval sits level and the cone's base rises straight up. If the brim really is tilted, the band and the cone's base should tilt with it, since the cone should stand at a right angle to the brim. Instead the brim seems to tilt on its own beneath an upright cone.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the hat from one viewpoint, slightly above. Make the cone stand at a right angle to the brim. The purple band and the cone's base should be ovals with the same narrowness and the same tilt as the brim, curving downward at the front just as much as the brim's front edge does. Keep the buckle centred on the front of the band, following the band's curve."
+}

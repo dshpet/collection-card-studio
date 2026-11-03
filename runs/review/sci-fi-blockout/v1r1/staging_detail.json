@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A puts a striped graphic wall behind grey lunar ground. The ground is evenly peppered with small pebbles and five or six craters right up to the frame edges, so a category-1 field and a category-4 environment are mixed together. B is a plain category 3: binoculars on broad wooden planks with a soft shadow and no props.",
+   "fix": "Stand the telescope on a few large, smooth grey ground shapes with one or two big shallow craters. Drop the scattered pebbles, or replace the striped wall with a plain soft gradient sky."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A has invented sparkle stars in the purple sky, a large crater at upper left, and small rocks and pits spread evenly over the whole lunar ground. B is a busy category-4 pool bar with a thatched roof, stools and drinks, but each element is a large, purposeful shape and they are grouped around the hero. Its numbers are high but it reads like real cards.",
+   "fix": "Plain deep purple sky with no stars. Smooth grey ground with one large crater far behind, and no scattered pebbles."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A pairs a green sunburst with lunar ground sprinkled with pebbles and several craters, which mixes a flat field with an environment. B puts the taxi on a clean road with two lane dashes, and the sunburst sits above a simple horizon.",
+   "fix": "Keep the rover on smooth grey ground made of two or three large soft shapes, with no small rocks or crater clusters."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A puts the panel on metal floor plates with rivets and seams that run across the whole lower half, which is a lot of small repeated detail. B uses pale paving that fades out quickly into a quiet blue diamond wall.",
+   "fix": "Put the panel on a plain, softly lit metal floor with at most one or two wide seams and no rivets."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both are category 1. A's spiral rings are wide and tone-on-tone. B's wavy stripes are also quiet, and neither background gives much reason to choose. B leans generated only slightly, because the backdrop is very regular and very low-contrast.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both are category 1 with vertical stripes. B's purple stripes show a faint grainy texture and slightly uneven stripe tones. A's teal stripes are clean and smooth, like the anchor and clock cards.",
+   "fix": "Clean flat purple vertical stripes in two close tones, with no grain."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A puts a flower bed on a plain pink floor in front of a quiet diamond wall. B puts a camp chair on a plain round tan floor in front of a red radial wall. Both are plain category-2 ledges with quiet backdrops.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A sets the helmet on a glossy white shelf with a strong reflective sheen and a pink gradient wall, so the ledge shine competes slightly with the hero. B sets the sneakers on a flat cream ledge with a plain orange wall.",
+   "fix": "Make the ledge a matte pale surface with a soft shadow only, and no glossy reflections."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's desert has dozens of small pebbles and grass tufts sprinkled evenly over the sand, distant mesas and clouds, and the dish stands on an invented square slab. B's beach is a few large sand mounds with the sea behind. Its bucket and spade are large, purposeful props.",
+   "fix": "Stand the dish directly on a few large smooth sand dunes and remove the scattered pebbles and grass tufts."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's yellow concentric rings fade into a soft bright glow right behind the UFO, the same halo seen in the generated lesson cards, and the background detail is below the real range. B's purple rings have even, crisp tone steps with no halo.",
+   "fix": "Even concentric rings in two close yellow tones, with no bright glow behind the saucer."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B's blue sunburst blooms into a white-cyan glow centred behind the rocket, like the generated glove lesson. A's green sunburst darkens evenly toward the corners and has no halo.",
+   "fix": "Blue sunburst with even rays and a gentle darkening toward the corners, and no bright glow around the rocket."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A is a category-4 golf scene: large rolling hills, clouds and grass tufts that stay grouped near the bottom. B floats an umbrella on quiet concentric rings, a category 1. Both read like real cards, and the low numbers for B fit its flat field.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards give themselves away in the background. They mix a flat graphic field (stripes, sunburst) with real ground. They scatter small pebbles, craters and tufts evenly across the floor instead of using a few large, quiet shapes. They add invented sparkle stars or extra bases under the object. And they put a bright glow halo behind the hero on flat fields."
+}

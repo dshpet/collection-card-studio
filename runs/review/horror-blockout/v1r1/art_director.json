@@ -1,0 +1,101 @@
+{
+ "issues": [
+  {
+   "issue": "Invented story props and spooky set dressing around the hero: a full moon in a daytime sky (p01, p09), a side gravestone and scattered yellow flowers (p09), moss clumps, a flower and a crack on the tombstone (p06), a sparkle star and dots in the crystal ball (p10), pebbles and grass tufts (p01). The real cards show the object on a plain, purposeful backdrop; trees and park scenery are fine (real chess table), but the extras that tell a horror story are not.",
+   "specialists": [
+    "staging_detail",
+    "composition_hierarchy",
+    "edges_linework",
+    "value_contrast"
+   ],
+   "instruction": "Show only the hero object on a calm daytime backdrop. Use a clear blue sky with soft clouds, or one plain floor and wall. Put nothing else on or around the object."
+  },
+  {
+   "issue": "Drained, near-black heroes. The cat, cauldron and witch hat are flat black or grey-black with colourless shadows, and the tombstone takes on a khaki-grey warm cast. Real dark objects keep rich colour in their darks, like the navy grad cap with its blue shadows. Value, colour and lighting all reported this from different sides.",
+   "specialists": [
+    "color_palette",
+    "value_contrast",
+    "lighting_shading"
+   ],
+   "instruction": "Paint dark objects as a deep saturated colour (blue-violet, navy, plum) with a soft lighter sheen on the lit side. Paint grey stone as a cool blue-grey with blue-violet shadows."
+  },
+  {
+   "issue": "Decorative wear drawn too large: hairline cracks and chipped edges on the floor tiles (p03), a crack and vein lines on the tombstone (p06), dark split lines in the coffin wood (p09), and smeared smoke inside the glass (p10). Real cards keep surfaces clean satin with faint, quiet detail.",
+   "specialists": [
+    "surface_finish",
+    "edges_linework"
+   ],
+   "instruction": "Draw stone, wood and glass as clean, smooth satin surfaces with faint, soft grain and one broad highlight."
+  },
+  {
+   "issue": "The whole hero sits small and centred with an even gap on every side (house, cauldron, cat, tombstone, coffin, crystal ball, broom). Real cards often move in close and let the object or its ground run off an edge. Notes cannot fix this because it is a matter of form and scale, so flag it for the style rules.",
+   "specialists": [
+    "composition_hierarchy",
+    "viewpoint_depth"
+   ],
+   "instruction": "Frame the object close and large, with its base or ground running off the bottom edge."
+  },
+  {
+   "issue": "A black vignette at the card edges (p08). Its purple rays fade to near-black at the corners, while real sunburst cards keep the rays bright out to every corner.",
+   "specialists": [
+    "value_contrast",
+    "staging_detail"
+   ],
+   "instruction": "Run the background rays out to the corners at a medium, even brightness."
+  }
+ ],
+ "style_text": "",
+ "cards": [
+  {
+   "pair": "p01",
+   "keep": false,
+   "note": "Replace the moon with a clear daytime blue sky and soft clouds. Paint the house walls a cool light grey stone with blue-grey shadows. Remove the pebbles and grass tufts and keep one smooth grass field."
+  },
+  {
+   "pair": "p03",
+   "keep": false,
+   "note": "Draw the floor as large smooth slate slabs with thin, quiet seams and no cracks or chips, slightly lighter than now. Paint the cauldron a deep blue-violet iron with one soft broad sheen on the upper left. Let the green brew cast a soft green glow on the rim."
+  },
+  {
+   "pair": "p04",
+   "keep": false,
+   "note": "Make the wooden table a slightly cooler, greyer brown so the orange pumpkin is the only strong orange on the card."
+  },
+  {
+   "pair": "p05",
+   "keep": false,
+   "note": "Paint the cat as deep charcoal fur with a cool blue-grey sheen along its back, head and ears, and soft fur tufts at the chest. Make the collar a soft fabric band. Make the floor shadow a cool brown-violet."
+  },
+  {
+   "pair": "p06",
+   "keep": false,
+   "note": "Remove the moss, the flower and the crack. Paint the stone a clean cool blue-grey, slightly darker on the right side. Stand it on a plain floor with a clear horizon line against the warm wall."
+  },
+  {
+   "pair": "p07",
+   "keep": false,
+   "note": "Paint the hat a deep blue-violet black with saturated purple in its shadows and a soft cool sheen along the cone and the top of the brim. Make the orange rings slightly softer and closer in tone."
+  },
+  {
+   "pair": "p08",
+   "keep": false,
+   "note": "Brighten the purple rays to a medium violet all the way to the corners, with no dark vignette. Slightly soften the gold to one broad highlight per arm."
+  },
+  {
+   "pair": "p09",
+   "keep": false,
+   "note": "Replace the moon with a clear blue sky, and remove the side gravestone and the small yellow flowers. Draw the coffin wood with fine, faint grain and no dark split lines, and make the cross the same wood as the lid."
+  },
+  {
+   "pair": "p10",
+   "keep": false,
+   "note": "Fill the crystal ball with a soft, even blue glow and one small soft highlight on the upper left, with no sparkle star or dots. Make the shelf a smooth satin wood with faint grain."
+  },
+  {
+   "pair": "p11",
+   "keep": false,
+   "note": "Give the wave background slightly more contrast between two clear shades of blue. Shade the straw as soft grouped bundles with darker gaps and a shadow under the binding."
+  }
+ ],
+ "summary": "Close. The rendering, saturation and backdrop types already match the real cards, and the pumpkin, witch hat, candelabra and broom could nearly pass. Three things give the generated cards away. First, story props in a horror theme: daytime moons, gravestones, moss, cracks and sparkles. Second, flat near-black or drained-grey heroes. Third, decorative cracks and grain drawn too large. Loose, centred framing is a smaller tell that notes cannot fix. I overruled the shape specialist, since form is out of scope. I also overruled most of the outline and frontal-view claims, because I can't see them on the cards. Every complaint about the control cards was dropped too: the balloon hues, the books and the flip-flops are all real. The trees and the sunburst-plus-floor staging are also real-card habits (the chess table and the duck), so I left them in."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the control console is one swollen box. The top slab, sloped front and drawer face have soft pillowed edges, and the silhouette is a nearly convex block (solidity 0.955, straight_share 0.765, above the real range). Only the joystick knob breaks the outline. B: the popcorn cart has thin canopy posts, open gaps between the posts, a scalloped awning edge, spoked wheels and a thin handle rail. That part count and openness match the real cards (ferris wheel, drum kit).",
+   "fix": "Draw the console as a hard-edged metal cabinet with tight beveled corners and a flat panel face. Add thin separate parts that break the outline: a slim lever shaft, raised bezels around the gauges, and short legs or a plinth with a visible gap underneath."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the dish is an oversized toy plate on a fat tapered cone with no taper detail. The feed struts are thick rods, and the base plunges into the sand with no foot. The silhouette is three stacked blobs. B: the sandcastle has crenellated towers with crisp notches, an arched gate, and a separate bucket and shovel with a thin handle. Many parts sit in the right relation.",
+   "fix": "Make the dish thinner with a crisp rim. Draw the feed arms as thin metal struts, and draw the mount as a slender mast with a bracket and visible bolts rather than a fat cone. Keep the dish smaller relative to the base."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the planet is a plain sphere with a thick, swollen ring band. Its outline is two smooth blobs with no secondary parts. A: the flip-flops have flat soles with an even thickness, and the toe-post straps leave clear openings. Their proportions are true to the object.",
+   "fix": "Draw the ring as a thin flat band with a sharp outer edge, much thinner than the planet's radius, and break it into two or three concentric bands with narrow gaps."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the rover body is a single pillowed orange box with soft blob corners. Six oversized balloon wheels merge into one lumpy mass, the suspension is a few thick rods, and the dish and solar panel are toy-sized props on stubs. A: the taxi has true car proportions, a crisp roof sign, a thin bumper line, and wheels sized to the body.",
+   "fix": "Draw the rover chassis as a flat-topped box with tight beveled edges. Use smaller wheels with visible gaps between them, thin jointed suspension arms, and a mast that is a slim pole with a small dish."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the rocket is a smooth capsule with a swollen nose cone, and the fins are two thick slabs. The outline is almost a convex bullet with few parts and no nozzle detail (straight_share 0.605). A: the submarine has a thin periscope pipe, a multi-blade propeller with separate blades, and a fin. More parts, in the right relation.",
+   "fix": "Give the rocket a slimmer body with a distinct nozzle bell at the base and three thin swept fins with sharp tips. Add a narrow band ring between the body and the nose cone."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the UFO is one swollen ellipse with small bead bumps on the rim, and the dome is only a low hump (solidity 0.961, at the top of the real range). There are no thin parts or openings. A: the player has a flat-faced, tight-cornered body and thin earbud wires that loop and leave open gaps. The thin wires are real.",
+   "fix": "Draw the saucer with a thin, sharp rim edge and a flatter disc. Make the glass dome taller and distinct, and add small landing legs or antennae that stick out from the outline."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the asteroid is a soft potato blob, and the flame trail is three inflated balloon teardrops ending in dots. Nothing is angular. B: the scarf has a clear loop, a knot, and two tapered tails with a negative gap at the neck.",
+   "fix": "Draw the rock with faceted, chipped planes and sharper broken edges. Draw the flame trail as a long, thin streak that tapers away from the rock, not as puffy lobes."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the moon base is a fat dome on a swollen cylinder with a stubby tube module. The silhouette is one lump with tiny stub legs, and the ladder and ribs are lost in the outline. A: the pool bar has many separate parts: stools with ring bases and gaps, glasses with thin stems, and fruit.",
+   "fix": "Draw the habitat with a crisp flat-topped base ring, a dome with thin raised ribs, a long corridor tube with flat end caps, and thin landing struts and antennae that break the outline."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the telescope's tripod legs are thick sausages with ball feet. The tube is fat, with oversized bulging end caps, and the mount is a chunky block, so it reads as a toy. B: the binoculars have two barrels with true proportions, a bridge, and flat lens rims.",
+   "fix": "Draw the tripod legs as thin straight rods with small feet. Make the tube slimmer with a thin eyepiece, and draw the mount as a narrow fork bracket."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the bounce house is swollen tubes and arches, which is correct for an inflatable, and the arch openings are clear. B: the water polo goal has thin straight posts and a net mesh. Its high thin_share comes from the net. Both have true proportions for their objects.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the helmet is a near-perfect ball on a puck base, with almost no corners (corner_rate 0.758, below the real range) and solidity 0.968. The visor is an inflated bubble, and there is no neck ring or fittings. B: the sneakers have a true shoe profile with a sole step, a heel tab and lace bumps.",
+   "fix": "Draw the helmet with a defined neck ring collar, a flat-edged visor frame, and small side fittings or hoses. Draw the stand as a thin stepped plinth with crisp edges."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the neon cone sign has a swirled top and a tapering cone, and the soft outline suits a sign. B: the lion statue sits on a stepped plinth with crisp tiers. Its high corner_rate comes from the grass fringe. Neither shows a shape flaw.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated sci-fi props are built as inflated blockouts. They are one or two swollen convex masses with pillowed corners: a console box, a dome-and-tube base, a capsule rocket, a ball helmet, a saucer ellipse, a potato asteroid. Thin parts are thickened into sausages (tripod legs, struts, suspension arms) or left out (masts, antennae, nozzles, neck rings), and toy-sized props sit on stubs. Real cards keep thin rods, gaps between parts and many separate parts in the outline."
+}

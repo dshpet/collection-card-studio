@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (lasso): the coils are lit softly from the front and upper left. The left coil and the right loop turn at the same slow rate, the shadow side barely drops, and a small soft cast shadow sits under the coils. shading_range 0.851 is above the real maximum. B (scarf): the collar band is lit from the top and darkens into the inner fold, and the tails go darker toward the tips. It reads gentle but organized. Its form_contrast of 0.256 is low, so this call is weak.",
+   "fix": "Light the rope from the upper left so the right side of each coil and the underside of the big loop fall into a clearly darker core shadow. Put a tighter dark contact shadow where the coils touch the background."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (cowboy hat): the crown and brim are lit almost straight on. The brim is evenly bright from left to right, the crown has a broad soft sheen with no core shadow, and there is no cast shadow from the crown onto the brim. A (jacket): a clear key from the upper left. The left shoulder and sleeve are lit, the right sleeve and lower hem drop into shadow, and the sash pockets have contact darkening.",
+   "fix": "Light the hat from the upper left. Let the crown's right side turn into a darker core shadow, cast a soft shadow from the crown onto the back of the brim, and darken the underside of the far brim edge."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (locomotive): the boiler front and smokebox face are lit flat and frontally. The cylinder turns little and the side panels match the front in value. The cast shadow on the sand to the right is hard-edged, like real sunlight. A (coaster cars): soft top light. Each seat's inner bowl is darker and the track underside is shaded. The lighting is gentle but turns form.",
+   "fix": "Light the boiler from one side so the cylinder turns from a bright side through a darker core band. Make the ground shadow softer and closer to the wheels."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (barrel): the staves are almost one even brown across the front, and the cylinder only darkens a little at the far right edge. The iron hoops have no clear light-to-dark turn. A long cast shadow falls onto the deck to the right. B (chest): strong top light. The lid top is bright, the open interior and front face under the lid are deep, the gold trim catches highlights, and the base has contact shadow in the sand.",
+   "fix": "Light the barrel from the upper left so its left third is bright and the right third rolls into a clear dark core shadow. Add a bright sheen line on the left of each iron hoop and a dark contact shadow at the base."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (stone chess table): hard midday sun. The cast shadows under the table and stool are sharp and black, and the lit top is near white against dark sides. light_bias_strength 0.971 is far above the real maximum of 0.641. A (book): soft top-left light, a gentle page curl into shadow, and a soft contact shadow under the cover.",
+   "fix": "Soften the sunlight. Make the shadows under the table and stool lighter and blurred at the edges, and lift the shadow sides of the stone blocks so they stay mid-tone."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (cactus): lit nearly symmetrically from the front. Both arms and the trunk get the same centered highlight stripe and darken equally at both edges, with no side lit more than the other. Contact at the sand is a faint ring. form_contrast 0.39 is below the real minimum. B (popcorn cart): a directional key. The awning underside is shaded, the cart body darkens under the counter, and the wheels have core shadows.",
+   "fix": "Light the cactus from the upper left so the left side of the trunk and arms is bright and the right side falls into a clear darker shadow. Add a soft shadow on the sand to the lower right."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (sheriff star): the bevel facets are lit almost evenly all around the center gem, like radial frontal light. The ball tips have matching small hot spots, and there is no cast shadow on the background. A (ring box): key from the upper left. The left wall of the lid is lit, the right outer wall and front base go deep, and the medal sits in a darker cushion recess.",
+   "fix": "Light the star from the upper left so the facets facing up-left are bright and the facets facing down-right are clearly darker. Put a single highlight on each ball tip on the same side and a soft drop shadow behind the star."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B (covered wagon): photographic low sun. A hard dark cast shadow of the wheel and tongue lies on the dirt, and the canvas cover is lit in a near-realistic gradient. light_bias_strength 0.954 is far above the real maximum. A (boat): soft top light. The hull interior and seats step down gently, and the dock has soft shadow on the water.",
+   "fix": "Use soft, even top lighting. Make the wagon's ground shadow a soft blurred patch under the wheels instead of a long sharp silhouette, and lift the shadow side of the wheel and box."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A (bird feeder): key from the upper left, dark underside of the roof, seeds shaded in the tray. B (drink): the glass shading map is washed out because it is transparent, which explains its low shading_range. The ice cubes and lime still show top-left light with sharp small highlights. Neither card breaks the real pattern on my vector.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (saloon doors): the door panels and posts are lit flat. The panel fronts barely differ from the edges, and the cast shadow on the floor behind them is weak and wide. A (sneakers): light from the right, with a clear dark cast shadow to the left and darkened soles. light_bias_strength is near zero only because the light is very frontal-right.",
+   "fix": "Light the doors from the upper left. Darken the right edges of the posts and the recessed slats, and add tight dark contact shadows under the post feet."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B (saddle): glossy leather with frontal light. A broad sheen along the seat, a uniform mid-tone on the flaps, and no shadow cast onto the rail or the post behind. A (computer): real. Key from the left, a deep blue-grey shadow side on the monitor's right, and a contact shadow under the keyboard and mouse.",
+   "fix": "Light the saddle from the upper left so the right flap and the underside of the seat roll into a deep cool shadow. Cast a dark shadow from the saddle onto the rail beneath it and drop the shiny sheen to a small soft highlight."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B (boot): the shading map shows soft warm overall lighting. The shaft has a slow even gradient, the foot has a broad leather sheen, and the spur has only a faint shadow. A (graduation cap): strong top light. The board top is bright, the skull cap underneath drops into a deep shadow, and a crisp shadow falls under the board edge.",
+   "fix": "Light the boot from the upper left so the back of the shaft and the heel fall into a clearly darker core shadow. Cast a shadow from the spur onto the heel and keep highlights small and soft."
+  }
+ ],
+ "pattern": "Generated cards light the hero almost head-on: both sides of a form get the same centered sheen, the shadow side never drops into a clear dark core, and parts cast little or no shadow on each other (hat crown onto brim, saddle onto rail, spur onto heel). The opposite failure is photographic hard sun with long sharp black cast shadows (wagon, chess table). Real cards use one consistent upper-left key: a clearly darker, slightly cool shadow side, soft but definite contact shadows, and small soft highlights."
+}

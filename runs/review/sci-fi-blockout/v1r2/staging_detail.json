@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the control panel sits whole and centred on a riveted steel floor. Every plate seam and rivet stays visible around it, and an orange diamond wall runs behind. Nothing is cropped. B: the popcorn cart's awning nearly touches the top and right edges. It stands on soft pale paving in front of a tone-on-tone blue diamond wall, a quieter floor. The background numbers are equal, so this rests on the eye.",
+   "fix": "Make the floor a few large, plain steel plates with almost no rivets, and let the object fill the frame so it nearly touches the edges."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the dish rises from rippled dunes, with distant mesas and clouds along the horizon, an invented desert vista. Background edge density is 0.010, below the real range. B: the sandcastle sits on a beach with a sea band, and the bucket and spade are purposeful props of the kind the real lifeguard card uses.",
+   "fix": "Plant the base in one smooth, quiet sand surface with a simple sky. No ridged dunes and no distant rock formations."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both cards are category 1 on vertical tone-on-tone stripes. A's teal stripes fall off softly toward the corners. B's purple stripes are flatter and carry a faint grain, and B's detail (0.0066) sits at the very bottom of the real range. Weak evidence.",
+   "fix": "Use smooth, clean stripes with a soft light fall-off toward the corners and no surface grain."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the taxi is on a road with lane markings in front of a blue sunburst. That mix of real road and graphic sky matches the real bike card. B: the rover stands on invented lumpy grey mounds under a green sunburst. The ground is a made-up surface, neither a real material nor a plain ledge.",
+   "fix": "Stand the vehicle on one flat, real ground material such as a dusty road, or float it on the sunburst with no ground. No rounded grey mounds."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the submarine floats on a dark green sunburst that darkens evenly to the corners. B: the rocket's sunburst has a bright cyan halo glowing right behind the hero. That central glow is the pattern the generated glove and camera lessons show.",
+   "fix": "Keep the sunburst even, with no bright glow or halo behind the object."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both cards use concentric rings. A's purple rings are flat and tone-on-tone. B's yellow rings brighten toward the centre behind the saucer and darken in the corners, the same centre-glow pattern. B's detail (0.0069) is lower, though, so this is weak.",
+   "fix": "Draw flat tone-on-tone rings of even brightness, with no glow behind the saucer and no dark corners."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "A: the asteroid floats on quiet diagonal teal waves, tone-on-tone and low in edges (0.005). B: the scarf sits on a spiral of rings with a bright centre. Both are category 1 with no props. My vector gives almost no reason to choose, so this is a low-confidence lean.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a busy, cropped pool bar with a thatched roof, stools, fruit and drinks, cut off at every edge. It is over the real range (edge density 0.144), but it is cropped the way the real environment cards are. B: the dome sits whole and centred on a crater-pocked plain, with many small rocks and craters and invented twinkle sparkles in the purple sky. Uncropped central staging plus decorative sparkles matches the generated lighthouse lessons.",
+   "fix": "Crop the scene closer so the structure fills the frame, use a few large quiet ground shapes instead of many small craters and pebbles, and remove the sparkle stars."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the telescope stands on invented lumpy grey mounds with a crater, in front of a flat teal striped backdrop. It mixes a graphic field with a made-up terrain. B: the binoculars lie on plain wooden planks, one real material, like the real barrel card.",
+   "fix": "Stand the telescope on a single real surface such as wooden floorboards or a plain ledge, or float it on the stripes with no ground."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the bouncy castle floats on an even blue sunburst (category 1). B: the water-polo goal sits in a real pool, cropped at the edges, with quiet water caustics (category 4). Both stagings match real cards. B's edge density (0.025) is from the water ripples.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both are category 2 on a plain ledge against a gradient wall. A: the helmet sits on its own invented white display pedestal on a lilac ledge, an extra stand the object would not have. B: the sneakers rest directly on a pale yellow ledge.",
+   "fix": "Rest the helmet directly on the ledge, with no display stand under it."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the neon ice cream hangs on a flat green corrugated wall, quiet but with strong vertical grooves. B: the lion statue sits in a park with trees and a curving path, a real category 4 environment with the hero central and cropped scenery. Both edge densities are above the reference, but the staging matches real cards on both.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards stage the hero whole and centred with clear space all round, where real cards crop it and let it fill the frame. They invent a ground the object would not stand on: lumpy grey mounds, rock islands, rippled dunes. They mix a graphic backdrop with a fake terrain, add a bright glow right behind the hero on sunbursts and rings, and add decorative extras like sparkle stars and display pedestals."
+}

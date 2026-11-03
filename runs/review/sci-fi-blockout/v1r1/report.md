@@ -1,0 +1,42 @@
+# Review: sci-fi-blockout/v1r1
+
+| Specialist | Caught | Wrong | Abstained | False alarms |
+|---|---:|---:|---:|---:|
+| shape_proportions | 10/10 | 0 | 0 | 0/2 |
+| viewpoint_depth | 10/10 | 0 | 0 | 0/2 |
+| lighting_shading | 10/10 | 0 | 0 | 0/2 |
+| value_contrast | 9/10 | 1 | 0 | 0/2 |
+| color_palette | 9/10 | 1 | 0 | 1/2 |
+| surface_finish | 9/10 | 0 | 1 | 1/2 |
+| edges_linework | 10/10 | 0 | 0 | 1/2 |
+| composition_hierarchy | 10/10 | 0 | 0 | 0/2 |
+| staging_detail | 10/10 | 0 | 0 | 0/2 |
+
+## Art director
+
+This round is partly close. The three generated cards on flat graphic backgrounds (Saturn, rocket, asteroid) could pass as real or nearly so. The seven sci-fi cards set in a scene give themselves away for one shared reason: a colorless white or grey hero, small in the frame, sitting in a busy, realistic moon or desert field full of scattered pebbles and craters, sometimes with brushed-metal finishes. The real cards show a saturated hero, cropped close, on quiet ground.
+
+I overruled several specialists:
+- **shape_proportions:** set aside entirely, because form can't be judged across different objects.
+- **edges_linework:** I don't see the heavy dark outlines it describes on the cards.
+- **Controls:** I ignored calls against the real golf club, umbrella and submarine (from color_palette, edges_linework, surface_finish and value_contrast).
+- **Asteroid and rocket lighting:** the "dramatic" lighting calls are weak, so I didn't act on them.
+
+The edit notes change only color, value, finish, ground and how close the camera is, with no more than three changes per card.
+
+1. **The hero is painted in near-neutral white or grey with almost no local color, and it sits on a floor or shelf of the same light value. The rover, console, helmet, dish, UFO saucer and moon base all show this. Real cards always give the hero one strong local color against a contrasting background, with darker colored accents in and under it. This is the biggest giveaway.** Paint the main body of each object in one bold saturated color (orange, teal, blue, red), with white or metal only as trim. Keep the floor or shelf a different, darker or cooler value, and put a soft darker contact shadow under the object.
+2. **Moon and desert ground is a realistic field of evenly scattered pebbles, small craters, grit speckle and grass tufts that runs to the frame edges, often behind a flat graphic wall. Real cards with ground use a few large, smooth, grouped shapes.** Draw the ground as a few large, smooth, softly shaded shapes with one or two big shallow craters or dunes. Keep the ground surface clean and quiet.
+3. **The camera is pulled back, so the object stands small and whole in the middle of a wide landscape with a distant horizon. Real cards crop close, and the object fills most of the card and nearly touches an edge.** Move the camera closer so the object fills most of the card and comes near one or two edges, with only a short strip of ground under it.
+4. **Industrial micro-finish: brushed or circular metal streaks, riveted steel floor plates and glossy reflective shelves compete with the hero. Real cards keep surfaces smooth with soft satin sheen.** Paint metal as smooth, softly shaded color with one broad soft highlight. Make floors and shelves plain, matte and softly lit.
+5. **On flat graphic fields, a bright white glow halo sits right behind the hero (UFO).** Keep the concentric rings or rays in even, close tones right behind the object, darkening gently toward the corners.
+
+- p01: Move the camera closer so the telescope fills most of the card and the tube nearly reaches the top right corner. Make the moon ground a few large smooth blue-grey shapes with one big shallow crater. Give the tube a stronger warm brass-orange trim.
+- p02: Move the camera closer so the base fills the lower two-thirds of the card. Paint the base and tube with bold orange panels or stripes and a warm glowing window. Make the ground smooth large grey-blue shapes with a plain purple sky.
+- p03: Paint the rover body a bold orange or yellow, and make the tires dark blue-grey with a soft sheen. Make the ground a few large smooth grey shapes. Bring the camera slightly closer.
+- p04: Paint the console body a bold teal or blue with a cream top panel. Make the floor plain, cool, softly lit panels with one or two wide seams. Add a darker soft contact shadow under the console.
+- p05: Paint the rock a slightly warmer purple-brown with cool violet shadows, so the shadow side keeps its color.
+- p06: keep
+- p08: Give the helmet shell bold colored panels and trim (blue or orange) and keep the white secondary. Make the shelf a matte mid-toned surface with a soft shadow. Move the camera slightly closer.
+- p09: Move the camera closer so the dish and post fill the card. Stand it directly on a few large smooth sand dunes in place of the slab, pebbles and tufts. Paint the post and frame a bold color (red or blue).
+- p10: Paint the saucer body smooth teal or purple metal with one broad soft highlight. Keep the yellow rings even right behind the saucer, darkening slightly toward the corners. Make the saucer slightly larger in the card.
+- p11: keep

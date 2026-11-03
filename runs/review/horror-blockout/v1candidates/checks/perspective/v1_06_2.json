@@ -1,0 +1,16 @@
+{
+ "survey": "Cartoon stone gravestone on a stone floor in front of a flat orange wall. Parts: (1) an upright slab with an arched top and a broken notch at the upper right, seen in a slight three-quarter view from the front-right and a little above, so the right side face and the thickness along the top are visible; (2) a raised cross in relief on the front face; (3) a crack running down the right half; (4) a wide rectangular plinth that the slab stands on, showing its front face and top face, with the slab set back from the front edge; (5) moss blobs on the top-left shoulder and at the bottom-left corner on the plinth, and a small orange flower lying on the plinth's top face; (6) a floor plane seen from above that meets the back wall in a horizontal line and ends in a front ledge. Overall the camera holds together: the slab's side, the slab's top thickness and the plinth's top all read as seen from slightly above and to the right, and the plinth sits flat on the floor. The flower and the moss lie on the top surfaces correctly.",
+ "errors": [
+  {
+   "where": "Plinth right end compared with the slab's right side",
+   "what": "The slab shows a clearly visible right side face (its thickness), but the plinth under it, which is deeper than the slab, is drawn almost front-on. Its right end face is barely visible and its front edge stays fully horizontal. In the same three-quarter view the plinth's right side should show at least as much as the slab's, and its edges should recede the same way.",
+   "severity": "minor"
+  },
+  {
+   "where": "Floor line against the back wall, behind the gravestone",
+   "what": "The line where the floor meets the wall falls gently toward the right, while the gravestone's front edges are level and its side edges rise as they go back to the right. The ground plane is slightly out of step with the object's orientation, so the stone looks a little rotated against its floor.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Keep one three-quarter view from slightly above and to the right for the whole object: show the plinth's right end face clearly, at least as deep as the slab's side thickness, with its top and bottom edges receding in parallel with the slab's side edges. Draw the line where the floor meets the back wall level, parallel to the plinth's front edge, so the gravestone sits squarely on the floor."
+}

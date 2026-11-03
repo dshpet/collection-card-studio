@@ -1,0 +1,16 @@
+{
+ "survey": "A cartoon steam locomotive in three-quarter front view, running on a straight track that goes from lower left to upper right. A black cylindrical boiler with a round smokebox door sits on a flat black running board. A flared smokestack rises from the front top of the boiler, with a headlamp mounted on the side of the stack. A steam dome and a brass bell sit on top of the boiler. A boxy cab with a round side window and barred rear openings is at the back, followed by a low tender box. A red buffer beam spans the front of the running board, and a barred cowcatcher hangs from it down toward the rails. Below the deck, one small pilot wheel is at the front, a black cylinder sits ahead of three large red driving wheels, and two small red trailing wheels are under the cab. Silver rods run from the cylinder across the drivers. All the wheels sit on the near rail, and the body lines up with the track.",
+ "errors": [
+  {
+   "where": "Side rods on the near-side driving wheels, between the cylinder and the third driver",
+   "what": "The two silver rods cross each other in an X instead of forming a working linkage. One runs from the cylinder to the second driver. The other runs from near the hub of the first driver to the hub of the third. A real main rod goes from the crosshead to an off-centre crank pin, and a coupling rod links the drivers at matching crank pins. Rods fixed at or near the axle centres and crossing each other could not turn the wheels.",
+   "severity": "minor"
+  },
+  {
+   "where": "Bottom of the cowcatcher at the front",
+   "what": "The cowcatcher's bottom bar reaches down to the rails and seems to sit on or below rail height. A real pilot stays a few inches above the rails; this one would drag on the track and the ties.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw a proper steam locomotive drive: one main rod from the cylinder's crosshead to an off-centre crank pin on the middle driving wheel, and one straight coupling rod linking matching off-centre crank pins on all three driving wheels, parallel to the rail with no crossing rods. Raise the cowcatcher so its bottom edge sits just above the rails, clear of the track and ties."
+}

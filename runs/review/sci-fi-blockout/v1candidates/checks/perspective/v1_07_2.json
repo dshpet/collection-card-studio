@@ -1,0 +1,21 @@
+{
+ "survey": "A small six-wheeled lunar rover on grey cratered ground. The white box body is seen almost straight side-on: its long side with the riveted panel and vents faces the viewer, the right end face turns away slightly, and only a thin strip of the top face shows. On top, a post holds an orange dish whose bowl is seen clearly from above, and a short post holds a solar panel tilted toward the viewer. A metal suspension arm leaves a hub on the body's side and bends down to the near wheels. The three near wheels are drawn as near-round discs with face-on silver hubs, but they sit on a diagonal: the left wheel is highest and furthest back, the right wheel lowest and closest. More wheels show under and behind the body, and the one behind the right end also has its hub facing the camera. The craters are flat ellipses, which means a low camera, close to ground level.",
+ "errors": [
+  {
+   "where": "Near row of three wheels against the body",
+   "what": "The body's long side runs level across the picture, as if seen side-on, but the three near wheels step down and forward from left to right, as if the rover were turned about 45° toward the viewer. The wheel row does not follow the body's bottom edge, so the wheels and the body seem to be seen from two different angles.",
+   "severity": "major"
+  },
+  {
+   "where": "Wheels and hubs, near row and the rear-right wheel",
+   "what": "All the wheels are drawn as round, face-on discs with face-on hubs, even though the near row recedes on a diagonal and the rear-right wheel sits beside the turned-away end face. Wheels on a receding side should narrow into ellipses that match that side's turn. Instead they all face the camera the same way.",
+   "severity": "major"
+  },
+  {
+   "where": "Dish on top versus the body's top face and the ground",
+   "what": "The dish bowl is seen clearly from above as an open ellipse. Yet the body's top face is only a thin strip and the craters are very flat, which means a low, near-level camera. The dish seems to be seen from a higher viewpoint than the body it sits on.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Six-wheeled lunar rover in one consistent three-quarter view from slightly above. The box body's long side and the row of three near wheels run parallel along the same receding line toward one vanishing point. Each wheel and hub is an ellipse narrowed to match the angle of the body side it is mounted on, with the far wheels smaller and partly hidden. The dish's top ellipse matches how much of the body's top face shows. All wheels rest flat on the cratered ground, with crater ellipses that agree with the same camera height."
+}

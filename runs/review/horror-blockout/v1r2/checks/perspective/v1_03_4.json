@@ -1,0 +1,11 @@
+{
+ "survey": "A carved jack-o'-lantern sits on a wooden tabletop in front of a purple ray background. The camera is a little above the pumpkin, looking slightly down. The pumpkin is a squat sphere with vertical ribs. The ribs curve toward a green stem that rises from the top crown, and a little of the top surface shows behind the stem, which fits the slightly high view. The carved face (two triangle eyes and a zigzag mouth) is turned a little to the viewer's left: the face sits left of centre and the left eye is narrower than the right. The eye holes show their lower inner walls, which fits looking down into them. The tabletop planks run left to right, slope gently downward toward the right, and get wider toward the viewer. The back edge of the table, where it meets the background, runs parallel to the planks. The pumpkin's flattened base rests on the planks, with a soft contact shadow cast to the right that lies along the table surface. The table and the pumpkin read as seen from the same viewpoint.",
+ "errors": [
+  {
+   "where": "Left end of the carved mouth, near the pumpkin's left edge",
+   "what": "The mouth reaches almost to the left edge of the pumpkin, but its left teeth and its outline are as tall and wide as the ones in the middle. Because the pumpkin is round, carving near the side edge should look narrower and more bunched up. Here the mouth looks flat, as if pasted on rather than wrapping around the curve. The eyes do narrow a little on the left, so the mouth is slightly out of step with them.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Wrap the jack-o'-lantern's mouth around the round pumpkin: as the mouth nears the pumpkin's left edge, make the teeth and the mouth outline narrower and more bunched up, to match the face turning slightly to the left, the way the left eye already does."
+}

@@ -1,0 +1,21 @@
+{
+ "survey": "A six-wheeled cartoon planetary rover on grey regolith, seen at three-quarters from the front-left. Main parts: (1) A white rounded box body with a grey lower trim, an orange lamp on the front, a riveted side hatch, vent slots and a small panel at the rear. (2) A yellow dish antenna with an orange feed knob, on a grey mast that rises from the roof near the front. (3) A blue solar panel, slightly tilted, on a short post at the rear of the roof. (4) Suspension: one bent grey rocker rod. It pivots at a single ball joint on the near lower side of the body. One branch runs down and forward toward the front wheel. The other runs down and back behind the middle wheel. On the far side a separate short arm reaches out from the rear corner of the body to the far rear wheel. (5) Wheels: three black treaded wheels with grey hubs on the near side, all in a tight row that sits forward of the body, from below the front lamp to below the hatch. Two far-side wheels are visible: one under the body's middle and one out at the rear corner. All wheels touch the ground.",
+ "errors": [
+  {
+   "where": "Near-side suspension and the three near wheels",
+   "what": "The rocker rod does not reach the wheel hubs. Its front branch ends at a joint on the upper edge of the front wheel, not at its axle. The back branch goes behind the middle wheel and ends without joining the middle or the rear wheel. The middle and rear near wheels have no visible axle, arm or bogie holding them, so they are not attached to the rover.",
+   "severity": "major"
+  },
+  {
+   "where": "Wheel layout, near side compared with far side",
+   "what": "The two sides do not match. The near three wheels are bunched forward and stick out past the front of the body. On the far side, one wheel sits under the middle of the body and another sits out at the rear corner on its own arm. A rover's wheelbase should be the same on both sides, but these wheel positions do not line up.",
+   "severity": "major"
+  },
+  {
+   "where": "Front and middle near wheels",
+   "what": "The near wheels are packed so tightly that their tyres almost touch or overlap. With no gap between them they could not turn or flex over terrain.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Six-wheeled rover with matching rocker-bogie suspension on both sides: on each side a grey rocker arm pivots on the side of the body and splits into short bogie arms, and each arm ends exactly at the centre hub of a wheel. Three evenly spaced wheels per side with clear gaps between the tyres, placed under the body from the front corner to the rear corner. The far-side wheels line up with the near-side wheels."
+}

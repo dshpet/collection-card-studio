@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "A is the real lighthouse from the lessons. Its sea and cloud bank are quiet, and the tower is cropped off the bottom edge. B sets the house on a domed grass hill with two lollipop trees, a glowing full moon in a daytime sky, scattered grey pebbles and grass tufts. That is a category-4 scene with many small props around the hero, and the moon is invented storytelling.",
+   "fix": "Crop the house so its base runs off the bottom edge. Remove the moon, the pebbles and the grass tufts. Keep one soft grass field and one low line of distant bushes against a plain blue sky."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A is a seahorse floating on a deep blue field with soft light rays. B is a balloon bunch over a soft cloud bank cropped at the bottom. Both are quiet category-1 or category-3 backdrops with no invented props, so nothing on my vector separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A shows gloves on a broad wood plank against a blue panelled wall, cropped off the left edge, which matches the real ledge cards. B shows a cauldron on a floor of many cracked stone tiles that fills the card, plus a pink striped wall strip and a small invented campfire under the pot. The floor is busy with grout lines and has the highest detail in the pair (0.023, above the real range).",
+   "fix": "Put the cauldron on a plain dark stone ledge with two or three large, smooth slabs and no cracks. Use a soft single-colour wall behind it and leave out the fire."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A shows a duck spring-rider on a sand mound with a few pebbles against a green sunburst, a staging the real cards use. B puts a pumpkin on a wood-plank table but backs it with a purple sunburst, so a category-3 floor is mixed with a category-1 graphic field. The plank seams also double the background edge density (0.031 vs 0.011).",
+   "fix": "Back the pumpkin with a soft plain wall in one colour, or drop the planks and float it on the purple sunburst. Use wide, quiet planks with few seams."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A shows a fountain on a round brick paving circle against a yellow striped wall, and the paving is cropped by the card edges. B shows a black cat on a perspective plank floor in a room corner with the same striped wall. The staging is simple, but it reads as a generic room corner rather than a purposeful ledge, and the cat sits small in the middle of a lot of floor.",
+   "fix": "Bring the cat closer so it fills the card, on a short plank ledge cropped at the bottom edge, with the striped wall directly behind it."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A shows sneakers on a plain yellow floor meeting an orange wall at a clean horizon, the real category-2 ledge. B shows a tombstone on a gradient with no floor line. It carries invented decoration: moss clumps on the top-left corner and at the base, a small orange flower on the plinth, and a cracked corner.",
+   "fix": "Remove the moss, the flower and the crack. Stand the tombstone on a plain ledge with a clear horizon line against a flat warm backdrop."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "Both float on concentric-ring fields. A's orange rings are high-contrast and saturated around the hat. B's blue rings are softer and tone-on-tone. A's backdrop competes more with the hero.",
+   "fix": "Make the rings behind the witch hat a soft tone-on-tone orange with low contrast between neighbouring rings."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both float on sunbursts. A's purple burst has a hot glowing centre right behind the candles, and its background detail is below the real range (0.0064). B's green burst is evenly lit. The glow halo behind the hero is the generated tell seen in the glove and camera lessons.",
+   "fix": "Light the purple sunburst evenly, with no bright glow spot behind the candles. Use wide rays in two close shades of purple."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is a park scene: a few large tree masses, a path and grass, cropped by the edges, like the real lion-statue card. B is a coffin on a lawn with a yellow moon in a daytime sky, a small grey gravestone cropped at the left edge, scattered tiny yellow flowers and grass tufts. The moon and gravestone are invented story props.",
+   "fix": "Remove the moon, the side gravestone and the small flowers. Keep the coffin central on a plain lawn with a few soft bushes and an empty blue sky."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A shows a drink on a plain lilac ledge against a tone-on-tone diamond wall. B shows a crystal ball on a wood shelf with knots and grain against a green harlequin wall. The ball holds an invented sparkle star and swirling mist, and both background detail numbers are above the real range.",
+   "fix": "Put the crystal ball on a smooth plain ledge with no wood grain, in front of a soft one-colour diamond wall. Leave out the sparkle star."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A shows a broom floating on a very low-contrast wave field with no shadow. Its background numbers are below the real range (detail 0.0064, edges 0.002), so the field is too empty and the broom looks pasted on. B's scarf sits on a swirl field with the usual ring contrast.",
+   "fix": "Give the wave pattern behind the broom a bit more contrast, two clear shades of blue, and draw the broom larger so it fills the card diagonally."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A shows flip-flops floating on a clean vertical-stripe field. B shows books on a sill with a window, potted leaves outside, a drawer unit on the left and reflections on the shelf. Its edge density is above the real range (0.040), so there is a lot of small environment detail around the hero.",
+   "fix": "Keep the books on the ledge but blur the window into one soft shape and remove the drawer unit. Use a plain wall with one large window block."
+  }
+ ],
+ "pattern": "Generated cards add story props the object would not have: a moon in a daytime sky, moss, flowers, a gravestone, a fire, a sparkle. They also bring in busy small-detail floors (tile grout, wood grain, grass tufts, pebbles) or a glowing halo behind the hero, and they mix a graphic sunburst with a real floor. Real cards crop the hero or its environment off the card edge and keep the backdrop to a few large, quiet, tone-on-tone shapes."
+}

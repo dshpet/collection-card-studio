@@ -1,0 +1,11 @@
+{
+ "survey": "A two-storey stone house with a round tower joined on the left. The tower stands on a round plinth that merges with the house's rectangular plinth. It has two windows and a conical purple shingle cap with a gold finial on top. The house's gabled front faces the camera at three-quarter view. It has a round attic window under the ridge, two upper windows, a ledge between floors that wraps the front and right side and stops at the tower wall, a purple door with a knob on the left of the ground floor, a two-step stoop at the door, and one window beside it. The right side wall has one window per floor, sheltered by the right roof slope. The left roof slope runs down into the tower wall and ends there, which works as a building joint. A grey brick chimney rises from the right roof slope and is seated on the shingles. Everything rests on the plinth, which sits flat on the grass hill.",
+ "errors": [
+  {
+   "where": "Chimney on the right roof slope",
+   "what": "The chimney is crooked. Partway up, the upper section jogs sideways and leans at a different angle from the lower section, so the flue would not line up. A brick stack built like that could not stand. It reads as a modelling glitch, not a deliberate simplification.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the chimney a single straight, upright rectangular brick stack that rises vertically from the right roof slope, with a cap on top and no sideways jog or bend."
+}

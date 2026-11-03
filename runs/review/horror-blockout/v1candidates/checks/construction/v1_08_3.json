@@ -1,0 +1,11 @@
+{
+ "survey": "A crystal ball on a gold stand, sitting on a wooden shelf. The camera looks at it from the front and slightly above. The stand has a wide round foot resting flat on the shelf, with a contact shadow behind it. A turned, waisted stem rises from the foot to a shallow cup. The glass sphere sits in the cup, and the bottom of the sphere meets the cup rim all the way round. Two curved prongs rise from the cup rim, one on each side, and lean in against the sphere. Each ends in a ball knob that touches the glass, so the prongs steady the sphere from the sides. The sphere reads as round. The swirling mist and the small sparkle inside are normal for a fortune-teller's crystal ball, not invented parts. The stand could hold the ball: the foot is wide, the stem is centred under the cup, and the ball's weight sits in the cup.",
+ "errors": [
+  {
+   "where": "the two side prongs of the cup",
+   "what": "The paired prongs do not match. The left prong is a flat, wide band that starts at the outer edge of the cup rim, and its knob sits higher on the sphere. The right prong is a thinner round rod that starts further in from the rim edge, and its knob sits lower. On a symmetrical turned stand these two parts should be identical.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the two prongs identical mirror images: the same thickness and profile, both rising from opposite points on the outer edge of the cup rim, both ending in ball knobs that touch the sphere at the same height."
+}

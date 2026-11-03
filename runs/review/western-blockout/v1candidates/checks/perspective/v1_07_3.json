@@ -1,0 +1,16 @@
+{
+ "survey": "A western saddle sits on a horizontal wooden fence rail, with a vertical post at the right end of the rail in the card view. The camera is slightly above and to the right. The rail recedes gently to the left: its top and bottom edges converge leftward and it gets a little thicker toward the right. The saddle's long axis runs left-right along the rail. The horn rises at the left, and its round cap is seen from above as a shallow ellipse. The seat's top surface and the tan seat panel are seen from above. The cantle at the right is slightly larger, which matches the right end being nearer. The near-side skirt and fender hang flat over the front face of the rail. The far-side skirt peeks out behind the rail on the right, shifted correctly for the far side. A strap with a metal buckle drops from the near fender to a stirrup. A second stirrup hangs behind it, a little higher and to the right. Both stirrup treads are seen from above. The saddle meets the rail at a believable angle: the seat underside sits on the rail top, and the skirts drape down both faces.",
+ "errors": [
+  {
+   "where": "Both stirrups, below the front fender",
+   "what": "The saddle is seen from the side, but both stirrup arches face the camera square-on as full D shapes, as if turned 90° from the saddle. On a saddle seen side-on, the stirrup arches should be turned with the fender and seen partly edge-on, as narrow ellipses, with the treads running across the fender.",
+   "severity": "minor"
+  },
+  {
+   "where": "Rear (far-side) stirrup",
+   "what": "The far stirrup hangs just behind the near one, under the middle of the near fender, almost the same size and at the same angle. It does not hang from the far-side skirt behind the rail, so both stirrups read as hanging on the near side instead of one on each side of the saddle.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the stirrups turned with the saddle: since the saddle is seen from its side, show each stirrup arch partly edge-on as a narrow loop, with the tread running across the fender. Hang the far stirrup from the far-side fender behind the fence rail, partly hidden by the rail, smaller and set back so it clearly belongs to the far side."
+}

@@ -1,0 +1,16 @@
+{
+ "survey": "A saloon doorway frame stands on a plank floor in front of a pink wall. Two square posts sit on square footings. The right post is nearer the viewer: it is bigger and its footing sits lower in the picture. The left post is farther away and its footing sits higher, so the frame turns away from the viewer toward the left. A top beam rests on both posts. It slopes down toward the left, and its right end cap shows, which agrees with that turn. Two half-height swinging doors hang between the posts on brass hinges, the left door from the left post and the right door from the right post. Each door has a row of vertical spindles above a solid lower panel. The floor planks and the line where the floor meets the wall slope down to the right, roughly parallel to the line through the two footings. The floor, the posts and the beam agree on one three-quarter view from the right.",
+ "errors": [
+  {
+   "where": "Both swinging doors and their spindles, between the posts",
+   "what": "The doors are drawn flat to the viewer while the frame around them turns away. Their top and bottom edges are level, and both doors are the same height and width. The spindles are evenly spaced and the same width across both doors. In the frame's plane, the doors' top and bottom edges should slope like the beam and the footings. The left door should be shorter and narrower than the right one, and the spindles should get thinner and closer together toward the left. As drawn, the doors read like a flat front-view cutout pasted into a frame seen at an angle.",
+   "severity": "major"
+  },
+  {
+   "where": "Where the doors meet the posts (hinge sides)",
+   "what": "The left door's outer edge and hinges sit on the post's front face as if it faced the viewer squarely, while the post itself shows an angled side face. The doors do not sit in the same receding plane as the inside faces of the posts.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the two swinging saloon doors in the same receding plane as the doorframe. Their top and bottom edges should slope down toward the left, parallel to the top beam and the line through the footings. Make the left door slightly shorter and narrower than the right door. Make the vertical spindles thinner and more closely spaced toward the far (left) side. Mount the hinges on the inside faces of the posts, following the same three-quarter view from the right."
+}

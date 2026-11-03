@@ -1,0 +1,11 @@
+{
+ "survey": "A single broom floats on a wavy blue background, with no ground plane. A straight wooden handle runs diagonally from a rounded knob at the upper right down to the lower left, at roughly 53° from horizontal. At its lower end the handle goes into a yellow straw collar, which is wrapped by two red braided bindings. The collar's top ellipse is visible, so it is seen slightly from above. A fan-shaped straw head flares out below the collar and ends in a scalloped, rounded tip. The straw strands run lengthwise down the head and spread apart as the head widens. Shading and the collar's top ellipse suggest a three-quarter view from slightly above, which fits the handle and knob. There is no contact surface to check.",
+ "errors": [
+  {
+   "where": "Collar, red bindings and straw head, where they join the handle",
+   "what": "The collar and head do not share the handle's axis. The handle slopes at about 53°, but the straw head's centre line slopes at about 65°. The binding rings run nearly horizontal (about 15° slope) when they should lie square to the handle (about 37°). The result is a visible bend at the binding: the head looks rotated toward vertical, as if hinged, rather than continuing the straight shaft.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the broom one straight rigid object: the straw head, collar and red bindings sit on the same straight axis as the wooden handle, continuing its diagonal line with no bend. The binding rings are ellipses lying square to the handle's direction, and the straw fans out evenly on both sides of the handle's centre line."
+}

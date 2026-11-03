@@ -1,0 +1,16 @@
+{
+ "survey": "A cartoon headstone stands upright on a rectangular base slab, which sits on a grey stone ledge. The camera is a little above the stone and to its right-front. You see the front face, a narrow strip of the right side face, and the thin top faces of the base and the arched top. The base shows its top, its front face and its right end. Its front edges slope gently down to the right, and the headstone's bottom edge and the ledge follow the same slope. The headstone's left and right edges stay vertical. Its bottom meets the top of the base squarely, and the shadow falls left onto the ledge. The cross on the front is a raised relief seen almost straight on, which fits the front face. Moss clumps sit on the top-left corner and on the base at the left. A small flower lies on the top of the base at the right. The top-right corner is broken. The arched top ends in a stepped notch, and below it is a lower, flat-topped right shoulder. A crack runs from the notch down the front face and stops about two-thirds of the way down.",
+ "errors": [
+  {
+   "where": "Top-right break: the arched top's right side compared with the lower right shoulder",
+   "what": "The crack stops partway down the front, so the upper arch and the lower right part are still one slab. Their right side faces should line up as one vertical plane of the same thickness. Instead, the arch's right side face is set clearly to the left of the lower shoulder's side face, and the lower one looks thicker. The slab's right edge jumps sideways at the notch, so the two sections don't read as one solid block.",
+   "severity": "minor"
+  },
+  {
+   "where": "Stepped notch between the arch and the right shoulder",
+   "what": "The ledges in the notch are drawn as flat, level horizontal stripes seen from the front. They don't follow the slab's right side face or the slightly-from-above view. Their top surfaces should show a little, and they should run back along the side face the way the base's top does.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Keep the headstone as one slab of even thickness. Its right side face is one continuous vertical plane from the base up to the arched top, with the same width all the way up. The chipped top-right corner is a broken notch cut into that same block. The broken surfaces are seen slightly from above, the same view as the top of the base, with their upper faces showing a little and following the side face back in depth."
+}

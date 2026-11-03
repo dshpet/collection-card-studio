@@ -1,0 +1,11 @@
+{
+ "survey": "A black cast-iron cauldron on a purple stone-tile floor, seen from a slightly high front-left angle. Body: a round, bulging pot with a thick rolled rim. It is full of bubbling green brew, which sits inside the rim. Handles: there is one on each side. The left one is a C-shaped loop that comes off a small lug just under the rim. We see it edge-on, standing up beside the body. The right one is a thick ring hanging from a square block lug. The lug sits lower, on the shoulder of the body, and we see the ring almost face-on, pointing outward toward the viewer. Legs: two short, round legs with flared feet are visible, one at front-left and one at back-right. Both join the underside of the body and stand flat on the tiles. A third leg would be hidden at the back. Fire: a small campfire of crossed sticks with a glowing flame sits on the floor between the legs, under the base of the pot. That is plausible for a cauldron, and it touches neither the pot nor the legs. The pot is fully supported, nothing floats, and it could hold liquid over the fire.",
+ "errors": [
+  {
+   "where": "Side handles (left vs. right of the body)",
+   "what": "The two handles should be a mirrored pair but differ. The left one is a slim upright loop on a small lug at rim height, seen edge-on. The right one is a heavy ring on a big square block, set lower on the shoulder and turned to face the camera. Matching handles on opposite sides could not look this different from one viewpoint.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Give the cauldron two identical, mirrored side handles. Each is a matching iron ring hanging from the same small lug, both set at the same height just below the rim, opposite each other, and both seen from the same angle."
+}

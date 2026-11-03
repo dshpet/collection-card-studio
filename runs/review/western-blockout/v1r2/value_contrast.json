@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (scarf): the red cloth drops to deep dark masses, with the darkest black inside the collar loop. It sits against a lighter swirl that spirals around it, and the medallion is the light accent at the centre. It reads clearly dark-on-light, like real cards. B (lasso): the rope is one pale near-white band with almost no internal shading, laid on a uniform mid-grey wave field. The hero is lighter than the background (gap +0.146, above the real range) and the whole card is flat (rms 0.079, below the real range). There is no dark anchor except the small red knot.",
+   "fix": "Shade the rope coils with clear darker undersides and a dark cast shadow under the loops. Darken the purple background behind the rope so the rope stands out as a mid-tone shape with deep shadow accents, not a flat pale outline."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "B (grad cap): a near-black board and band on a mid-grey field, with a clear lighter disc of glow behind it. The value grouping is strong, as on real cards. A (boot): in the lens the background collapses to one flat light-grey slab, and the concentric rings vanish except for a faint arc behind the shaft. The boot is mostly mid-light leather with dark only on the heel and sole, so the hero barely separates from the background by value and relies on hue.",
+   "fix": "Make the boot leather a richer, deeper brown with dark shadow down the back of the shaft and under the foot. Let the orange rings step clearly from a pale centre glow to darker outer rings so the boot sits as a darker shape on a lit backdrop."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the real computer card, with a light monitor against a mid-grey wall and a darker desk below. B (saddle): the card is very high key overall (mean 0.742, above the real range). Cyan fills nearly everything as one light-grey mass, with an even pale oval glow behind. The saddle's darks are mottled mid-dark patches with no deep anchor. The rail reads as a white bar slicing through at the same value as the background.",
+   "fix": "Lower the brightness of the cyan backdrop and add a soft darker edge toward the corners. Give the saddle a clear dark underside where the flaps fold and a deep shadow under the seat, so the hero reads as one solid dark-mid shape against a lighter centre."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (book on table): a mid-dark scene with dark railing gaps and bushes framing a bright white book. That is a strong value hierarchy, though the corners are lighter than usual (vignette -0.152). B (maps): high key (mean 0.739, above the real range) with low contrast (rms 0.105). Pale paper edges and mid-grey green faces sit on pink stripes of almost the same mid value, and there is no darkest accent anywhere except thin dashes.",
+   "fix": "Darken the pink background toward its edges. Give the map stack a clear dark shadow underneath and darker edges on the lower sheets, so the top map reads as the lightest shape over deeper layers."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (treasure chest): a dark blue water field with a lighter sand floor, a light gold frame and mid-grey coins. The hero sits as a light-mid shape on a dark setting, and the darkest values are inside the open lid. B (barrel): the wall and floor are almost white (the floor is near-white planks), and the barrel is a mid-grey body cut by hard near-black hoop bands. The hero is much darker than its background (gap -0.30, below the real range) with harsh banded contrast (rms 0.201, above the real range).",
+   "fix": "Tone down the yellow wall and wood floor to a mid value so the barrel isn't a dark cut-out on white. Soften the iron hoops to a dark grey with highlights instead of solid black stripes."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "B (roller coaster): a mid-grey sky with white clouds, and light cars on a mid-dark track. The values step gradually, and there is some darkening toward the edges. A (locomotive): one big near-black engine mass slammed against a nearly white desert and sky. Contrast is harsher than any real card (rms 0.219) and the hero is far darker than its background (gap -0.303). The dark body has almost no mid-tone roll-off.",
+   "fix": "Paint the locomotive in a lighter slate blue with visible mid-tone shading and highlights along the boiler. Bring the desert ground down to a warmer mid tone so the engine isn't a black silhouette on white."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A (popcorn cart): a dark blue backdrop and a dark red cart body, against light popcorn, white awning stripes and a pale tiled floor. The light, mid and dark groups are clear. B (cactus): the cactus is the same mid-grey as the orange backdrop, so it separates only by hue. The sand is near-white, the card is high key (mean 0.743) with low contrast (rms 0.092, below the real range), and there is no deep dark accent anywhere.",
+   "fix": "Make the cactus a deeper green with dark shading on the sides of each arm and the trunk. Add a darker cast shadow on the sand, and dim the orange backdrop toward the corners so the cactus pops as a darker shape on a lit centre."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "B (sneakers): dark mid-grey uppers with white soles on a pale floor. There is good local contrast and clear dark accents at the laces and in the shadow. A (saloon doors): the doors, posts and floor all sit in one light-mid grey with almost no dark anywhere. Contrast is very low (rms 0.079, far below the real range), and the only separation from the magenta wall is a single grey step.",
+   "fix": "Add strong shading to the wooden frame: dark shadowed sides on the posts, deep dark gaps between the door slats, and a dark shadow on the floor under the doors. Darken the magenta wall toward the corners."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (ring box with medal): a near-black red box against a light sunburst, with the bright cream interior and gold medal glowing inside. The darkest dark frames the light centre, like the real cards. B (sheriff star): a pale, almost white star sits on dark purple rays. The hero is lighter than its background (gap +0.176, above the real range), the star faces are nearly flat white, and the only dark is the small red gem.",
+   "fix": "Give the gold star deeper amber shading on one side of each point and darker grooves along the bevels, so it has a mid-tone body. Lighten the purple rays near the star so it isn't a pale cut-out on dark."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (boat at dock): a mid-dark water field with a light boat rim, dark shadow under the pier, and darker interior planks. Its value groups are strong. B (covered wagon): high key (mean 0.734, above the real range). A white canvas top sits on light-grey grass and road, and the wagon wood is mid-grey with thin spokes. There is no large dark mass and low separation (rms 0.114).",
+   "fix": "Put a deep shadow under the wagon bed and on the inside of the canvas opening. Paint the wheels and frame darker brown, and lower the brightness of the grass and road around it."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A (lion statue): a white marble statue against dark trees and a mid-grey lawn. It reads as a very strong light-hero-on-dark setup (gap +0.211). B (air conditioner): a white unit on a light green striped wall, with pale light beams below and a slightly high key. Both are plausible; neither shows a clear generated value pattern.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (scout jacket): a light jacket against a dark green sunburst, with a near-black sash crossing it and dark cuff openings. The light and dark groups are bold. B (cowboy hat): the hat is mid-grey on a mid-grey and light-grey sunburst, with the same value as the background. Only the white brim rim outlines it, and the hard white ridge on the crown is the main contrast. The card is low contrast overall (rms 0.079, below the real range) and has no deep dark accent.",
+   "fix": "Shade the hat crown and the underside of the brim much darker brown, with a dark shadow where the brim meets the crown. Keep the blue rays bright behind it so the hat reads as a darker solid shape."
+  }
+ ],
+ "pattern": "The generated cards (here, the western props) get their value structure wrong in one of two ways. Either the hero melts into the background at the same mid value and separates only by hue, with a high-key, low-contrast card and no deep dark anchor (cactus, saloon doors, hat, wagon, saddle). Or it overshoots into harsh banding: a near-black hero on a near-white ground, or a pale cut-out on dark (locomotive, barrel, sheriff star, lasso). Real cards keep a clear light/mid/dark hierarchy: a lit background with steps that read in greyscale, a hero with a mid-tone body, and a few deep darks tucked into folds and undersides."
+}

@@ -1,0 +1,11 @@
+{
+ "survey": "A black cartoon cat sits on a wooden plank floor in front of a wall with vertical yellow stripes. The camera is a little above the cat and sees it in three-quarter view, with the body and head turned toward the viewer's left. The floor planks run diagonally toward the upper right. They narrow and close up with distance, and their seams roughly converge with the line where the floor meets the wall. The wall stripes stay vertical. The haunches, both front paws and the curled tail rest flat on the planks, and a shadow falls to the right on the floor. The red collar wraps the neck as an ellipse whose lower edge curves down, which agrees with a camera slightly above. The nose sits off-center toward the viewer's left, which agrees with the head's turn. The two big yellow eyes are both drawn as almost full, front-facing circles of about the same size. The far eye (viewer's left) sits right on the edge of the head and bulges past its outline.",
+ "errors": [
+  {
+   "where": "Cat's far eye (viewer's left, at the edge of the head)",
+   "what": "The head is turned toward the viewer's left, so the far eye sits on a surface turning away from the camera. It should be a narrower, smaller ellipse partly hidden behind the curve of the head. Instead it is a full front-facing circle about the size of the near eye, and it sticks out past the head's outline, as if pasted on flat rather than following the turn of the head.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the far eye (viewer's left) foreshortened to match the three-quarter head turn: a narrower, slightly smaller oval that wraps around the curve of the head and stays inside its outline, partly hidden behind the cheek. Keep the near eye larger and rounder."
+}

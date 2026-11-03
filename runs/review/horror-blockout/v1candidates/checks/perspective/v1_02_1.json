@@ -1,0 +1,11 @@
+{
+ "survey": "A witch hat on a concentric orange background. Main parts: (1) a wide, flat, oval brim, seen from above at a moderate angle (about 30°). Its top surface shows, and its thickness shows along the front edge. The ellipse's height is about half its width. (2) A tall cone that rises from near the brim's center and bends to the right near the tip. The cone stands roughly vertical on the brim. (3) A purple band around the base of the cone, where it meets the brim. (4) A yellow square buckle on the front of the band, facing the viewer. The cone is centered on the brim and sits flat on it. The tip's curl is a deliberate stylized bend, not a perspective error. The brim's ellipse, its front thickness and where the cone meets the brim all agree on one raised viewpoint. The exception is the band's curvature, described below.",
+ "errors": [
+  {
+   "where": "Purple hatband at the base of the cone (its top and bottom edges)",
+   "what": "The band's edges are circles lying flat, parallel to the brim, so they should curve like the brim's ellipse, with about half as much height as width. Instead they curve only slightly, as if seen almost level. The band, and the cone's base under it, read as seen from a lower viewpoint than the brim they sit on.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the purple hatband follow the same high, three-quarter overhead view as the brim. Its top and bottom edges should curve down clearly in front, as ellipses with the same narrowness as the brim's outline. The cone's base should look like a circle lying flat on the brim. Keep the buckle centered on the front of the band and turned slightly to follow its curve."
+}

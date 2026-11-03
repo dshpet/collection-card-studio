@@ -1,0 +1,21 @@
+{
+ "survey": "A covered wagon on a dirt road, seen from slightly above and to the front-right. Parts: (1) A wooden box body. Its long left side faces the camera and its short front end, with the driver's seat, shows at the right. (2) A white canvas arch on top of the box, with the front opening seen at an angle on the right. (3) A red rim along the top edge of the box. (4) A seat block on the front end, with its top seen from above. (5) A large near wheel on the visible long side. It is drawn almost as a full circle with a face-on hub and rests on the road. (6) A far wheel seen under the box, shifted well to the right of the near wheel. (7) A single tongue that comes out from under the front end and runs down and to the right toward the viewer. Its crossbar lies flat on the road. The ground is a road plane seen from slightly above. Both wheels and the crossbar meet it.",
+ "errors": [
+  {
+   "where": "Box body: long side face vs. front end face",
+   "what": "The two faces disagree on which end is nearer. The long side is taller at its left end (about 145 px) than at its right end (about 100 px), and its top and bottom edges close together toward the right, so it is drawn as if the left end is nearer and the side recedes to the right. Yet the right (front) end face with the seat is also visible, and the tongue runs from that end toward the viewer. Both only make sense if the right end is nearer. The box is two views joined at the front corner.",
+   "severity": "major"
+  },
+  {
+   "where": "Far wheel under the box",
+   "what": "The far wheel is shifted about 250 px to the right of the near wheel, while the front end face, which shows the cart's full width, is only about 100 px wide. Wheels on a shared axle should be offset by about the width the end face shows. This offset also points the axle along a different direction than the box edges do, so the wheels do not sit on one axle across the body.",
+   "severity": "major"
+  },
+  {
+   "where": "Near wheel vs. box side",
+   "what": "The near wheel is drawn as an almost perfect circle with a face-on hub, while the box side it is mounted on is clearly foreshortened. The wheel should be a slightly narrower ellipse that matches how far the side face is turned.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the wagon in one consistent three-quarter view from the front-right, slightly above. Make the front corner of the box (by the seat) the nearest vertical edge. Make the long side face recede to the LEFT: it should be tallest at the front corner and shorter toward the back, with its top and bottom edges closing together toward the left. Mount both wheels on one straight axle that runs across the box, parallel to the front end's bottom edge. Place the far wheel behind the near wheel and offset only by the width the front end shows. Draw both wheels as matching vertical ellipses, slightly narrow to follow the side face's angle, with both resting flat on the road. Keep the tongue coming straight forward from the center of the front end, with its crossbar flat on the ground."
+}

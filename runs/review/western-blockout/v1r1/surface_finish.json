@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the lasso rope has a sharp, regular twisted-strand pattern on every coil, a waxy sheen along the coil tops and a separately lit cream ring at the hondo. Micro-texture (0.022) and gloss (0.41) both sit above the real range. B: the scarf is soft, matte red cloth with almost no surface marks, which matches the real cards.",
+   "fix": "Draw the rope as soft matte fibre with only a faint, quiet twist. Remove the shine along the coil tops and keep the hondo ring the same matte finish as the rope."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the cowboy hat crown and brim have a fine mottled, leathery noise grain all over, and there are small wrinkle marks at the crown pinch. Real cards never put that kind of surface noise on felt. A: the scout jacket is smooth, soft matte fabric with clean badges, as on the real cards.",
+   "fix": "Paint the hat as smooth, even matte felt with no speckled or leathery grain. Shade it with soft broad tone only, and make the band a clean matte strip."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the locomotive boiler and cab are one flat satin black with almost no variation. Rods and wheels share that sheen, the rail ties have a faint painterly grain, and metal reads as plastic. A: the coaster cars are clean candy plastic with crisp, separate highlights, typical of the real cards.",
+   "fix": "Make the boiler a darker matte iron with a few small, crisp highlights on the rims and rivets. Make the rods brighter polished steel so they look different from the body."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the barrel staves carry large, decorative swirling wood-grain lines and a stray orange splat stain. The iron hoops have a soft, smeared sheen. B: the chest has quiet plank lines, and its gold trim and coins have clean, separate highlights, matching the real cards.",
+   "fix": "Draw the barrel staves with only faint, fine, straight grain. Remove the stain splotch, and give the iron hoops a crisp highlight on their edges."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cactus is one glossy green plastic over the whole body. The rib edges have long continuous highlights (highlight share 0.45, above the real range) and the spines are tiny glossy beads. B: the popcorn cart mixes glass reflections, matte popcorn, a painted metal cart and wooden wheels.",
+   "fix": "Make the cactus skin a soft matte green with only gentle shading on the ribs. Draw the spines as small pale matte prickles, not shiny beads."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: matte paper pages, a satin ribbon and lightly grained table planks. B: a matte stone table with drawn cracks, and the checker tiles have a light sheen. Both mix finishes the way the real cards do, so this vector gives no clear signal.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the sheriff star is one uniform lacquered gold. Every facet carries the same soft sheen and the ball tips match it, with no change of finish anywhere except the red gem. A: the ring box mixes matte velvet-like red, a soft cream cushion, a shiny gold medal and a satin blue ribbon, the range of finishes seen on real cards.",
+   "fix": "Give the star brushed, slightly matte metal faces with crisp bright highlights only on the bevel edges and ball tips. Keep the gem as the single glossiest spot."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the wagon canvas has rows of tiny stitch dots along its seams. The wood box and wheel have fine painterly grain, and the grass and dirt are drawn with noisy brush marks. That is finer marking than the real cards use. A: the boat and dock have soft, simple plank lines and clean rope twists.",
+   "fix": "Draw the canvas cover as smooth, soft cloth with plain seam folds and no stitch dots. Make the wood clean with very faint grain, and keep the ground simple and smooth."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the bird feeder has faint plank grain and matte seeds. B: the glass has clean reflections and droplets on it. Both use the soft finishes of the real cards, with no stray noise or chunky marks, so this vector gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the saloon doors have a pale, plywood-like grain painted evenly across every slat, and the gold hinges have a soft, smeared sheen. A: the sneakers show a fine mesh dot pattern and glossy laces. Its detail measures high, but it uses mixed finishes the way real cards do.",
+   "fix": "Paint the doors as warm, smooth, matte wood with only faint grain, and darken the edges slightly. Give the hinges a crisp, small highlight."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "B: the saddle has fine pebbled leather grain all over, rows of tiny dashed stitches along every edge, and wood grain on the rail. That is close-up detail the real cards never show. A: the computer is the real card, with smooth, soft matte plastic.",
+   "fix": "Draw the saddle as smooth, soft leather with broad, gentle shading. Leave out the pebbled grain and the stitch rows, and keep any seam as a simple groove."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "B: the boot shaft has embossed decorative stitch lines made of tiny dashes and a fine leather grain, and the spur is a sharp, metallic little gear. A: the graduation cap is smooth, clean matte fabric with a simple tassel, like the real cards.",
+   "fix": "Paint the boot as smooth, soft leather with no stitch dashes or grain. Draw the decoration as a soft, raised shape, and make the spur a simple rounded star."
+  }
+ ],
+ "pattern": "The generated cards add close-up surface detail that the real cards leave out: pebbled leather grain, rows of tiny dashed stitches, painterly wood grain, and speckled noise on felt, canvas and ground. They also tend to use one lacquered finish across a whole object. The real cards use smooth, soft matte surfaces with broad shading, and they mix finishes, with glossy accents on gems, metal edges and glass only."
+}

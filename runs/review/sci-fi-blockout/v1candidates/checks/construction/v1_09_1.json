@@ -1,0 +1,16 @@
+{
+ "survey": "A satellite dish stands in desert sand. A square concrete slab sits flat on the sand. On it is a tapered grey pedestal with a riveted access panel, topped by a dark turntable ring. A box-shaped yoke bracket rises from the ring and holds the dish on a side pivot bolt. The dish's back is hidden behind the bowl. The white parabolic dish tilts up and to the left, and its concave face is turned toward the camera. A feed hub with a red dome on top is held by three struts. Two short legs drop into the left side of the bowl, and one long, nearly horizontal arm runs to the top-right rim. The slab, pedestal, ring and yoke stack properly, and the base rests on the sand.",
+ "errors": [
+  {
+   "where": "Feed hub and its struts, upper left of the dish",
+   "what": "The feed hub is not over the middle of the dish. It sits beyond the upper-left rim, held by two short legs that land near the left edge of the bowl and one long arm stretched across to the right rim. A dish only works with its receiver at the focal point, centered in front of the bowl and held by evenly spaced struts from the rim. This lopsided rig would miss the signal the dish collects and could not support itself evenly.",
+   "severity": "major"
+  },
+  {
+   "where": "Top of the feed hub",
+   "what": "There is a glossy red dome where the feed horn should be, and no horn points back into the dish. A real dish's receiver faces the reflector, so the dome is an invented part that replaces the working one.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Put the feed horn at the dish's focal point, centered in front of the bowl, and point its opening back into the reflector. Hold it with three or four equal-length struts spaced evenly around the dish rim. Remove the red dome, or replace it with a small feed horn cap."
+}

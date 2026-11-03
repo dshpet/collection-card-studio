@@ -1,0 +1,11 @@
+{
+ "survey": "A single brown cowboy boot, shown in side profile with the toe pointing right, floating over a radial orange background with no ground plane. Shaft: a tall upright cylinder, tilted slightly. Its top opening is an ellipse seen a little from above, so the back lining shows. The stitched decoration lies flat on the side of the shaft, and the ankle seam curves downward, which agrees with a slightly high camera. Foot: a pure side profile that narrows to a pointed toe. Sole: a dark strip running along the bottom edge, seen edge-on. Heel: a dark block under the back of the foot, drawn with a front face and a small side face. Spur: a gold bar that comes out from the side of the ankle and runs back. Its star-shaped rowel is seen face-on, which is correct, because in a side view the rowel's plane lines up with the boot's length. The object stands on no ground, so there is no contact to check.",
+ "errors": [
+  {
+   "where": "Heel block under the back of the boot",
+   "what": "The rest of the boot is a straight side profile: the sole is a single flat edge and the toe is in pure profile. The heel block, though, shows its slanted front face as a wide plane, as if seen from a front three-quarter angle. That puts the heel on a different camera from the sole and foot.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the heel from the same side-profile view as the rest of the boot: a stacked block whose front and back edges show in silhouette, with no wide front face turned toward the viewer, sitting flush under the sole line."
+}

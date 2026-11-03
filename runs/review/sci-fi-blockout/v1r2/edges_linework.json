@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (control panel): every button, dial and the drawer has a thick double groove around it, and a dark contour runs along the whole top lip of the panel. The floor rivets are evenly spaced crisp dots, so the edges are equally strong everywhere. B (popcorn cart): the awning scallops have a dark edge, but the glass case and wheel spokes go soft, and the tiles fade into the distance. That is closer to the real cards' hierarchy.",
+   "fix": "Draw the button rims and drawer seam as thin, shallow seams, not deep double grooves. Let the panel's lit top edge melt into the background with no dark line, and keep the floor tiles faint and soft."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (satellite dish): a crisp dark contour runs all the way around the dish rim and the struts, and the collar has a row of hard rivet dots. Background edges are below the real range (0.010): the dunes are almost edgeless next to the sharply drawn hero. B (sandcastle): the tower edges are soft where they meet the sand, the sand grain is spread evenly, and nothing reads as a drawn line.",
+   "fix": "Remove the dark line around the dish rim. Let the lit top of the dish fade into the sky. Make the rivets small, soft bumps, and give the dunes gentle ripples behind the tower."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (planet): one even, dark, ink-like contour runs around the whole ring ellipse and the sphere, about the same weight everywhere, including the lit top. A (flip-flops): the soles' lit side edges are lost against the background, and only the strap undersides and tread dots carry dark edges, the way the real cards do.",
+   "fix": "Draw no outline around the planet and ring. Let the lit upper edge of the ring and sphere dissolve softly into the purple, and keep the only crisp edge where the ring crosses in front of the planet."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (rover): every wheel, leg link and the body box has the same thick dark contour, and the nameplate and vents are crisp inset rectangles, so all the edges have equal weight. A (taxi): the subject is dense (0.203, above the real range) because of the grille and windows, but the roof and hood edges are soft on the lit side. This is a weak call because the numbers lean the other way.",
+   "fix": "Thin the contours around the wheels and leg joints, and let the top edge of the orange body fade softly into the green. Keep the sharpest edges only at the front wheel hub and dish."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (rocket): the fins and nose cone have a heavy dark edge, and a bright glow sits behind the hero. The measured outline darkness, though, is low (-0.054), which weakens the call. A (submarine): the porthole rings are thick doubled grooves, but the hull's lit top fades out softly.",
+   "fix": "Remove the dark edge along the fins and nose. Let the lit side of the silver body blend into the sky, and drop the glow behind the rocket."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (UFO): a continuous dark contour runs all the way around the saucer rim and the dome base, and the evenly spaced bulbs each have a crisp ring. The outline value is clearly higher (0.037 vs -0.017). A (player with earbuds): the box edges are soft on the lit side, and the cable is a light tube with no dark line.",
+   "fix": "Don't outline the saucer. Let its upper lit rim fade into the yellow background, and make the bulbs soft glowing dots, not ringed beads."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (asteroid): both subject edge density (0.031) and outline darkness (-0.095) fall below the real range. The silhouette is mostly lost, and the body is covered in gritty, noisy speckle edges, with jagged dark spikes on the crater rims. B (scarf): a dark contour runs around the cloth, but the folds are clean and the edge weight is consistent, within the real range.",
+   "fix": "Give the rock a clear, smooth silhouette against the sky. Replace the gritty surface noise with a few clean, rounded crater rims, and give the flames soft but definite edges."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (moon base): the dome ribs are hard dark lines, and craters and pebbles are scattered as evenly sharp marks over the whole ground. The stars are hard dots, so the background competes with the hero. A (pool bar): very busy (background 0.144) because of the thatch and pool tiles, but the edges soften toward the foreground stools, matching a real scene card.",
+   "fix": "Draw the dome ribs as thin, light seams. Soften the moon ground into gentle smooth shapes with only two or three soft craters, and make the stars faint."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (telescope): crisp double contours run along the whole tube and every band, and the tripod legs have streaky line marks. Edges are equally hard from eyepiece to feet. B (binoculars): the barrels have dark edges too, but the lit tops go soft and the plank lines recede. The numbers are almost identical, so this is weak.",
+   "fix": "Use single thin seams on the tube bands, not doubled lines. Let the lit top of the tube fade, and soften the far tripod legs."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (water polo goal): heavy dark contours on the frame posts, and a dense web of net and water-caustic lines everywhere. Background density (0.025) is above the real range. A (bouncy castle): soft, rounded lit edges, thin seams between the tubes, and a clean background.",
+   "fix": "Draw the goal frame without dark edges. Make the net lines thin and faint, and let the pool water be smooth with only a few soft ripples."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (helmet): the visor has stacked concentric thick ring contours, and the base has evenly ruled parallel grooves, so the hard line work looks mechanical. B (sneakers): very dense mesh and lace edges (0.227, at the top of the range) and a very low outline value (-0.100). That is also unusual, so this is a weak call.",
+   "fix": "Make the visor rim one soft rounded edge, not several hard rings. Turn the base stripes into thin painted bands, not cut grooves, and let the helmet's lit top fade into the background."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (lion statue): a bold dark contour runs around the mane and pedestal, and trees, path bricks and grass blades fill the background with edges (0.068, far above the real 0.017 maximum). A (neon cone): doubled glowing outlines with a halo, but neon is the subject itself, and its background is calmer.",
+   "fix": "Remove the dark line around the lion and pedestal. Blur the trees and path into soft, simple shapes with few edges, and keep crisp detail only on the face and paws."
+  }
+ ],
+ "pattern": "Generated cards draw one even, dark contour around the whole hero, lit side included, where real cards lose the lit edge into the background. Seams and rims are doubled or deep grooves instead of thin seams. Small mechanical details (rivets, bulbs, craters, stars) are scattered with equal crispness, so there is no edge hierarchy: edges are as sharp at the feet and background as at the focus."
+}

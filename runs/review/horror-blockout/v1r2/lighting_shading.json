@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (mojito): in the shading lens the glass is an almost flat pale column. The ice and lime read as soft blobs with no light side or shadow side, and the table has only a faint cast shadow. B (binocular): the metal head turns smoothly from a lit left side to a darker right side, with core shadows under the eyepieces and on the post.",
+   "fix": "Light the glass from the upper left so its right side and the ice cubes' right faces fall into a clear, smoothly graded shadow, and put a soft darker contact shadow under the base on the table."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (witch hat): the cone turns gradually from a lit left side to a soft shadow, and the brim has a gentle underside shadow, like the real cards. B (grad cap): the board top is evenly lit with a razor-crisp bright front edge, the skullcap under it drops abruptly to near-black, and the shading range is above the real range.",
+   "fix": "Soften the board's front edge highlight into a narrow, gently rounded sheen, and let the skullcap under the board go into a medium soft shadow rather than near-black."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (seahorse): the body is lit almost evenly from the front. Light bias is low (0.13), the belly segments barely turn into shadow, and the far side has no clear shadow. B (guitar): the stage spots give a clear key from the upper left, the body has a shadow side on the right, and the guitar casts a shadow on the floor.",
+   "fix": "Light the seahorse from the upper left so its back and the right side of each belly ring turn smoothly into a deeper shadow, with a soft rim of light along the left edge."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (cat): a clear side key, a dark shadow side on the right of the body, and a long, soft cast shadow on the boards. B (fountain): the basins are lit evenly from the front, the bowl undersides get only mild shading, and the pool rim has a weak contact shadow on the tiles.",
+   "fix": "Light the fountain from the upper left so the right side of each basin and the underside of each bowl fall into soft, clearly darker shadow, and add a soft cast shadow from the basin rim across the paving."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (coffin): flat planes split into a lit front and a darker side face, with a soft cast shadow on the grass. Form contrast is low, but it reads as a stylized flat box. B (chess table): the shadows under the table, stool and tree are very dark and hard-edged, and light bias (0.97) is far above the real range. That is harsher than the gentle outdoor shadows on the real lion and flowerbed cards.",
+   "fix": "Make the shadows under the table and stool lighter and softer at the edges, let the grass bounce light up into the undersides, and keep the light side of the stone only moderately brighter than its shadow side."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (spring duck): smooth form turn on the body with broad glossy sheen and a soft cast shadow on the sand. B (pumpkin): smooth turn across the ribs, a soft cast shadow on the boards and an inner glow as a practical. Both sit within the real ranges, and neither shows a shading tell.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (oil lamp): the flame lights the chimney from inside, and the brass turns from warm light to shadow toward the edges. Its high light bias mostly comes from the dark vignette. B (candelabra): the gold is lit evenly from the front with small, sharp white hot spots on the arms. The column has little side-to-side shadow, and the base barely grounds the piece.",
+   "fix": "Give the candelabra a clear light side on the left and a darker gold shadow side on the right of the arms and column, use broad soft sheen on the gold instead of small white spots, and add a soft contact shadow under the base."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "B (lighthouse): a real card from the lessons. It has a strong shadow under the gallery and a tower that turns to a dark right side. A (house): the walls are lit fairly evenly, the glowing windows flatten the facade, the shadow side on the right is only mildly darker, and the shadow on the hill is a vague soft pool.",
+   "fix": "Light the house from the upper left so the right wall is clearly in shadow, put a dark shadow under the roof eaves and the tower overhang, and cast a defined soft shadow from the house onto the grass to the right."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (tombstone): soft side light with a gentle cast shadow to the right and rounded edges catching light. B (sneakers): flat, almost directionless light on the shoes (light bias 0.02), a hard dark cast shadow to the left that doesn't match the shading on the shoes, and an even, studio-render look.",
+   "fix": "Light the sneakers from the upper right so their left sides and the inside of the collars fall into a soft shadow, and make the cast shadow softer and consistent with that light."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (scarf): puffy cloth with soft, gradual turns into folds and gentle shadow inside the collar loop. B (broom): the handle and bristles are strongly one-sided (light bias 1.28, far above the real range). The handle has a dark, hard core and the bristle head has a flat dark fan, with no ground or cast shadow to explain the light.",
+   "fix": "Light the broom more gently: a soft lit side and a mid-tone shadow side on the round handle, bristles that turn gradually from lit tips to darker roots, and a little bounce light on the shadow side."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (cauldron): a side key with a smooth turn on the pot, warm fire light under it and a soft floor shadow. B (gloves): broad soft turns with a dark crevice between the gloves and a soft contact shadow. Both look plausible under the lens, and both sit inside the real ranges.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (iced drink): shading range and form contrast are both below the real range. The glass reads as a flat, evenly lit column, the ice has no shadow faces, and the only grounding is a faint glow on the table. B (crystal ball): a clear window highlight, a darker lower half of the sphere, and a defined cast shadow from the stand on the shelf.",
+   "fix": "Light the glass from the upper left: a bright vertical highlight strip on its left edge, a darker right side, ice cubes with shadowed lower-right faces, and a soft contact shadow under the base."
+  }
+ ],
+ "pattern": "On the lighting vector, generated cards usually fall to one of two extremes. Some are lit flat from the front: the shadow side is barely darker than the light side, there is no core shadow where the form turns, and the cast shadow is vague (glassware, seahorse, fountain, house). Others are overcooked: very dark, hard shadows or a one-sided light that the scene doesn't explain, plus small sharp white plastic hot spots (chess table, broom, candelabra). The real cards use one clear key from the upper left. Form turns smoothly into a medium-dark shadow side, the sheen is broad and soft, and a soft cast or contact shadow grounds the object and agrees with the light."
+}

@@ -1,0 +1,16 @@
+{
+ "survey": "A saloon doorway standing on a plank floor. Two square wooden posts stand on block bases. A long beam rests across their tops. Two short swinging half-doors hang between the posts, each on two gold hinges: the left door on the left post, the right door on the right post. The floor planks run diagonally and recede to the upper left, seen from above. That puts the frame in a three-quarter view with the right post nearer: the right base sits much lower in the picture than the left base, and the base blocks show their top faces. The left door is turned slightly. Its top and bottom rails slope down to the right, and its free edge shows a thick side face. The right door is drawn square to the picture, with level rails and level hinges. The beam is drawn level and the same thickness end to end. Its right end shows a small end face.",
+ "errors": [
+  {
+   "where": "Right swinging door",
+   "what": "The right door is drawn flat and front-on. Its top rail, middle rail and bottom rail are level, its slats are equal in width, and its two hinges sit at matching heights. But the floor, the post bases and the left door all show the doorway receding to the left, so this door's rails should slope like the left door's. The two doors read as seen from two different cameras.",
+   "severity": "major"
+  },
+  {
+   "where": "Frame: top beam versus post bases",
+   "what": "The post bases step down to the right: the right post starts about 100 px lower and looks clearly longer than the left one. Yet the beam above is perfectly level and the same thickness across. The doorway is a rectangle, so its top edge should slope toward the same vanishing point as its bottom edge, a little less steeply. Drawn this way, the frame reads as a skewed trapezoid instead of one plane turned away from the viewer.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the whole saloon doorway in one consistent three-quarter view, with the right side nearer the viewer. Make the top beam, the post bases and both doors' rails all slope toward the same vanishing point on the left, matching the direction of the floor planks. Make the right door turn with the frame like the left door, not face the camera flat: its rails slope, its slats narrow slightly toward the left, and its hinges follow the angle of the post. Make both posts look the same height in perspective, with the top beam's slope matching the slope of the post bases."
+}

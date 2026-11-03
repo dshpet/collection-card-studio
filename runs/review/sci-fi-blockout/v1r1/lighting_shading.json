@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A telescope: the cream tube is lit almost evenly along its length, with no clear core shadow on its underside. The tripod's cast shadow is a pale, soft smear on the moon ground, and the lens shows the whole scene at one flat middle value. B binoculars: a strong warm key from the upper left, a clear shadow side on the near barrel's right, and a dark cast shadow on the planks toward the lower right. That matches the directional falloff in the real cards. B's shading_range (0.925) is a little over the real range, so confidence is low.",
+   "fix": "Light the telescope from the upper left so the bottom of the tube turns into a clear darker shadow band. Give the tripod legs a darker, firmer contact shadow where they touch the ground."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A moon dome: the round base and the tunnel are lit flat and frontal, with almost no shadow side. The cast shadow is a short pale patch to the right. In the lens the glass dome reads as a solid black blob, with no curved light running across it. B tiki bar: the stools have lit tops and darker bases, and the bar counter's front turns gradually into shade under the thatch overhang. That is a believable layered falloff.",
+   "fix": "Light the dome from the upper left so the right side of the round base falls into soft shade. Put a curved soft highlight across the glass dome and a darker contact shadow where the base meets the ground."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A rover: the white body is lit flat from the front, while the tires drop almost to black. Its light_bias (1.287) and form_contrast (0.734) are both well outside the real range. The wheel hubs and the box body have no gradual turn from light to shadow. B taxi: soft top light, a rounded hood and roof with gentle falloff into the side panels, and a soft cast shadow under the car on the road.",
+   "fix": "Light the rover softly from the upper left. Let the side of the body turn gently into a mid-gray shadow, and keep the tires dark gray with a soft sheen instead of solid black."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A control panel: the top, front and side faces sit at almost the same value. The buttons have small, even, plastic hot spots, and the contact shadow on the metal floor is faint and soft. B popcorn cart: the scalloped awning has lit tops and shaded undersides, the cart box is darker under the counter, and the wheel has a shaded inner rim. Forms are clearly modeled by a single key.",
+   "fix": "Light the console from the upper left so the right side face is clearly darker than the front. Add a firm dark contact shadow where the base meets the floor plates."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B asteroid: one hard key from the left falls off to near black across the right half of the rock. Its light_bias (1.077) and shading_range (0.867) are above the real range. The flames are lit flat and pale, with no shared light. A scarf: gentle, smooth falloff with soft folds and shade under the knot. Its form contrast is low, but it is consistently lit.",
+   "fix": "Soften the light on the asteroid. Keep the right side a medium shadow with some bounce light, not black, and let the flame tails pick up the same light from the upper left."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B Saturn: the sphere is lit softly and evenly, with very little turn into a core shadow. Its form_contrast (0.314) is below the real range. The ring is the same pale value all the way around and casts no shadow on the planet. A flip-flops: top light, clear cast shadows from the straps onto the soles, and darker sole edges, all grounded and directional.",
+   "fix": "Light the planet from the upper left with a clear darker crescent on the lower right. Have the ring cast a thin dark shadow band across the sphere, and make the back half of the ring darker than the front."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A flower bed: soft top light, each flower slightly domed, and the stone border has a lit top with a shaded front face. B camping chair: side key from the left, the fabric seat sags into soft shade, and a soft cast shadow falls on the floor. Both metrics sit inside the real range, and neither shows a lighting break.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A helmet: the white sphere has a broad, even gradient. In the lens the visor reads as one large bright blob with no curved highlight structure, and the stacked base rings are nearly flat. B sneakers: a hard key, a sharp cast shadow to the left and a crisp floor-and-wall split, almost photographic. Its light_bias (0.019) is anomalously low, so this call is uncertain.",
+   "fix": "Give the helmet a clear key from the upper left with a darker shadow side on the lower right. Put a curved window-shaped highlight on the visor and a darker band of shade under each base ring."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A satellite dish: a strong one-sided key. The pole and mount drop hard into a dark right side, and a long, dark, fairly crisp cast shadow runs right on the sand. Its light_bias (0.661) is above the real range. B sandcastle: soft, warm, wrapping light, towers gently shaded on their right, and soft contact darkening where the bucket and shovel sit in the sand.",
+   "fix": "Soften the light on the dish. Make the shadow side of the pole a medium shade with some sand-colored bounce light, and make the cast shadow shorter and softer at the edges."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A UFO: the disc's top surface is one flat lit plane in the lens, with no shadow side. A streaky brushed-metal sheen replaces form shading. The dome's highlight is small and hard, and the underside rim has no core shadow. B music player: soft key from the upper left, a rounded box turning gently into shade on the right, and shaded earbuds with soft contact on the background.",
+   "fix": "Light the saucer from the upper left so the top of the disc darkens toward the back right edge. Put a darker shadow band along the underside of the rim and one soft, broad highlight on the green dome."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B rocket: the hull has a hard vertical split, a bright left half against a dark chrome right half, instead of a gradual turn. Its shading_range (0.847) is above the real range. The fins are evenly lit and don't match the hull's falloff. A submarine: a broad, smooth gradient from the lit top to the shaded belly, with soft highlights on the portholes.",
+   "fix": "Shade the rocket body with one smooth gradient from the lit left side to a medium shadow on the right, with no sharp chrome band. Shade the right fin darker than the left to match."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A golf iron: soft top light, a broad sheen on the club face, and a soft contact shadow under the ball in the grass. B umbrella: the canopy has lit white tops and dark undersides with a steep value jump, and its light_bias (0.716) is slightly above the real range. The light is still consistent with a top key, and the umbrella floats as an icon. There isn't enough on this vector to call it.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards miss the real cards' single soft upper-left key with a gradual turn into a medium shadow. They fail in two directions. Some are lit flat from the front, with even faces, pale and diffuse cast shadows, and no core shadow (dome, control panel, Saturn, UFO top). Others swing to an overly dramatic one-sided falloff: hard light/dark splits, near-black shadow sides, and chrome bands in place of form shading (rover, asteroid, rocket, dish). Those show up as light_bias or shading_range outliers. Attached parts like flames, fins and rings often don't share the main object's light."
+}

@@ -1,0 +1,21 @@
+{
+ "survey": "A saloon doorway made of two upright square posts, each on a block foot, joined by a thick horizontal lintel on top. Two short swinging half-doors hang between the posts. Each has a slatted upper panel and a solid lower panel. The left door hangs on two gold hinges on the left post's front face, and the right door hangs the same way on the right post. Both doors look mostly front-on. The left door shows a strip of its free edge, as if swung slightly open, and the right door sits flat. The frame stands on a plank floor seen from above. The planks run diagonally and recede toward the upper left. The right foot block sits much lower in the picture and is drawn larger than the left one, so the frame is turned with its right side nearer the viewer.",
+ "errors": [
+  {
+   "where": "Whole frame: lintel and post tops compared with the feet and floor",
+   "what": "The bottom of the frame is seen turned at an angle, but the top is seen straight on. The right foot is about 80 px lower and noticeably bigger than the left, so the right side is nearer. Yet the lintel is perfectly level, the same thickness at both ends, and seen square-on. Both post tops sit at exactly the same height, and both posts are the same width. As a result the right post is drawn longer than the left, and the line through the feet does not run parallel to the lintel, even though those edges are parallel on the real object. The top and bottom of the doorway come from two different cameras.",
+   "severity": "major"
+  },
+  {
+   "where": "Right post and lintel compared with the floor planks",
+   "what": "The floor is seen clearly from above. The posts and lintel show almost none of their top or side faces, as if seen level and straight on. This leaves the frame looking pasted onto the turned floor instead of standing on it.",
+   "severity": "minor"
+  },
+  {
+   "where": "The two half-doors",
+   "what": "The two doors are not lined up with each other. The right door hangs clearly lower than the left: its bottom rail sits about 30 px below the left door's. The left door's top and bottom rails tilt in ways that don't match a door swinging on its hinges. The right door is completely flat and front-on, and its bottom does not follow the lower-on-the-right slope that the feet set up.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Show the whole saloon doorway from one consistent three-quarter view, slightly from above. If the right post is nearer the viewer, draw it a little taller and wider than the left post, top and bottom. Slope the lintel to match, with its near right end slightly larger and its top face and right end visible. Keep the line along the top of the lintel parallel to the line through the two foot blocks, with both lines heading to the same vanishing point as the floor planks. Show a sliver of each post's side face. Hang both half-doors at the same height so their top and bottom rails follow the angle of the frame. Draw both doors either closed and flat in the frame's plane, or both swung open the same small amount."
+}

@@ -1,0 +1,16 @@
+{
+ "survey": "A desert satellite-dish card. From the bottom up: (1) A square concrete slab lies flat on the sand. We see its top face clearly from above, and its side edges narrow evenly toward the back, which agrees with a camera standing a little above the ground. (2) A grey cone-shaped pedestal stands upright on the slab. Its two sides taper evenly, so its verticals are sound. A riveted panel sits flat on the front of the cone. (3) A dark round collar caps the cone. It is drawn as a fairly open ellipse with its top face showing. The horizon line runs just below this collar. (4) Above the collar, a box-shaped yoke bracket faces the viewer almost head-on, with a round pivot bolt seen face-on. (5) The white dish is held by the yoke and tilts up toward the upper left. We see into its bowl, and its rim is a clean, wide ellipse that agrees with that tilt. (6) A feed arm holds a red-tipped feed horn over the upper-left of the dish. Two struts run down into the bowl and one long strut runs to the far right rim. The dish, yoke and arm all agree with one raised view of the dish.",
+ "errors": [
+  {
+   "where": "Where the cone's base meets the slab",
+   "what": "The slab top is seen from well above; its depth is about half its width. Yet the bottom edge of the cone is an almost flat, shallow curve. A round base sitting on that slab should be an ellipse about as open as the slab, so its front should dip much lower than its sides. As drawn, the cone looks seen from a lower camera than the slab it stands on, and it does not sit firmly on that surface.",
+   "severity": "minor"
+  },
+  {
+   "where": "The dark collar ring on top of the cone",
+   "what": "The collar sits at or just above the horizon, so it should look nearly edge-on, with at most a sliver of its underside showing. Instead it shows an open top face, about as open as the ellipses lower down. The round shapes do not get more open further below eye level, as they should, so the pedestal's round sections do not share the scene's single eye height.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Keep one camera slightly above the ground, with the horizon at the height of the dish mount. Draw the cone's base where it meets the slab as a clearly curved ellipse as open as the slab's top face, so its front edge dips well below its sides and it sits flat on the slab. Draw the collar ring at the top of the pedestal almost edge-on, as a thin flat ellipse with no top face showing, because it is at eye level. Round sections of the pedestal get gradually more open toward the ground."
+}

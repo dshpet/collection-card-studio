@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A mojito: smooth glass, soft ice cubes, small round droplet highlights, lime pulp drawn as fine quiet lines. B binoculars: even satin metal with soft sheen and no grain. Both stay inside the real range for gloss and fine detail, and neither has noise or smear.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A witch hat: smooth matte felt with a soft sheen on the cone and a plain gold buckle. B mortarboard: smooth matte board with crisp edges and a cord with a slight sheen. Both have the same quiet clay finish, and the numbers are almost identical.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A seahorse: matte, softly painted skin with quiet spots and ridges. B guitar: the body is uniformly lacquered red plastic. The fretboard and strings are full of tiny noisy marks, and the strap pattern smears at the zoom. Its micro-texture and gloss are above the real range.",
+   "fix": "Paint the guitar body with one soft broad highlight, and make the pickguard matte. Draw the fretboard as plain smooth wood with only a few clean fret lines, and give the strap a simple flat stripe with no busy pattern."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A cat: the body is covered in photoreal fur strands, the collar has a fuzzy felt surface, and the board under the cat has its own wood grain. That fine texture runs all over the subject, which real cards never do. B fountain: smooth clay stone with soft, clean water.",
+   "fix": "Paint the cat as a smooth, softly shaded figure with no individual hairs. Suggest fur only with a few soft tufts at the chest and tail tip, and make the collar a plain smooth band."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A coffin: flat orange faces with a faint, even streaky grain, almost no sheen (gloss_share 0.006, below the real range), and a flat cross. B chess table: matte stone with drawn-on hairline cracks and painted grass. Compared with the real barrel's soft sheen and plank depth, the coffin reads as flat paper rather than wood.",
+   "fix": "Give the coffin's wooden planks a soft satin sheen along the top edges, with a few quiet grain lines and a slight highlight on the raised cross."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A duck rider: glossy yellow plastic, a satin red seat, and a chrome spring, so the gloss varies across the object. B pumpkin: the skin is covered in fine scratchy streak noise and is all one dull finish (gloss 0.004, detail below the real range). The wood planks underneath are muddy.",
+   "fix": "Paint the pumpkin skin smooth, with a soft waxy sheen on each rib and no scratchy streaks. Keep the stem matte and fibrous, and draw the floor planks as clean boards with quiet grain."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A oil lamp: frosted, translucent glass chimney over a brass base with mixed sheen. B candelabra: every part is the same evenly lacquered mirror gold (gloss 0.236, above the real range), the candles are slightly blurred, and there is no contrast between matte and shiny.",
+   "fix": "Make the candelabra brushed brass: a soft satin finish with highlights only on the curves of the arms, and darker matte areas in the recesses. Make the candles matte wax."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 5,
+   "difference": "B is the real lighthouse from the lessons: smooth soft bricks and a satin red rail. A house: chunky stone blocks scattered on the walls, a heavily tiled roof, and every window frame carved in the same way. Detail and micro-texture are at the top of the real range.",
+   "fix": "Paint the house walls as a smooth plaster surface with only a few soft stone blocks at the corners. Make the roof shingles shallow and quiet, and give it one soft highlight."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A tombstone: a uniform matte grey surface sprinkled with tiny pinhole dots, like a generator's stone noise. Detail and gloss are below the real range. B sneakers: glossy rubber soles, a fine mesh upper, and satin laces, with materials that clearly differ.",
+   "fix": "Paint the tombstone as smooth carved stone with a soft satin sheen on the top curve and edges, and a few faint chips at the corners instead of pinhole dots."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A scarf: smooth satin fabric with soft fold highlights and a clean badge. B broom: the handle has streaky grain marks, and the straw head is a dense cluster of sharp strands. Detail and gloss are above the real range, so the texture reads as decorative and too loud.",
+   "fix": "Paint the broom handle as smooth polished wood with one soft highlight and only faint grain. Draw the straw as a few soft bundled clumps instead of many sharp strands."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A cauldron: the iron is a uniform matte purple with a faint mottled noise at the zoom, there is no metal sheen on the rim or handles, and detail is below the real range. B boxing gloves: shiny leather with soft wrinkle creases on a streaky wood table.",
+   "fix": "Paint the cauldron as dark cast iron, with a sharper bright highlight along the rim and handles and a soft sheen on the belly. Keep the goo glossy and the floor tiles plain."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A juice: smooth glass, soft translucent ice, and a few fine bubbles, similar in finish to p01's mojito. B crystal ball: the smoke inside is a painterly swirl with soft smeary edges, there are scattered sparkle dots, the gold stand is uniformly mirror-glossy, and the shelf has large decorative wood grain.",
+   "fix": "Fill the crystal ball with a simple soft glow and one clean highlight, without swirly painted smoke or sparkles. Make the stand satin brass, and draw the shelf as smooth wood with only faint grain."
+  }
+ ],
+ "pattern": "Generated cards give themselves away on the surface in two opposite ways. Sometimes they add too much: photoreal fur, scratchy or speckled noise on smooth surfaces (pinhole dots on stone, streaks on pumpkin skin), and large decorative wood grain or straw strands. Sometimes they flatten everything to one finish: an all-matte surface with no sheen, or uniform mirror gold or lacquer with no matte-vs-shiny mix. Real cards keep one quiet, smooth clay finish with soft broad highlights, and only a few fine details placed where the object needs them."
+}

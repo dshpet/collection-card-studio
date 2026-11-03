@@ -1,0 +1,11 @@
+{
+ "survey": "A crystal ball on a gold stand, on a wooden shelf in front of a green diamond-pattern wall. The camera is slightly above the object and nearly level with it. The shelf top is seen from above, between a horizontal back edge and a horizontal front edge, with a thin front face showing. The round foot of the stand sits flat on the shelf. It is a fairly open ellipse, which fits a view from slightly above. The stem's rings and the cup rim get narrower going up, so the cup rim is almost edge-on. That is the right progression for one camera above the object. The sphere sits in the cup, and the front of the cup rim crosses its lower part in a nearly straight, slightly curved line. Two curved prongs rise from the cup's left and right sides and end in ball knobs. The left prong starts high on the outer left edge of the cup, with its knob at the ball's left outline at about y≈410. The right prong starts lower and further toward the front of the cup, rises across the front of the ball, and its knob sits lower, at about y≈455. Both prongs are drawn in front of the ball.",
+ "errors": [
+  {
+   "where": "The two gold prongs holding the ball, where they leave the cup rim",
+   "what": "The prongs do not sit on the cup rim's ellipse as one matched pair. The left root is high on the far outer edge of the rim and the right root is lower, nearer the front. That points to a stand turned toward the viewer, so one prong would be nearer the camera and the other farther away. Yet both are drawn in front of the ball, at about the same size, and their knobs sit at different heights. Up close the pair reads as two prongs drawn from slightly different views, not a symmetric pair turned in space.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the gold stand's two prongs a symmetric pair on opposite sides of the cup rim's ellipse, both starting at the same height on the rim. They should rise in matching curves to knobs at equal height that just touch the left and right edges of the ball's outline, both seen from the same slightly-above front view."
+}

@@ -1,0 +1,16 @@
+{
+ "survey": "A lunar habitat sits on grey regolith, seen from a three-quarter angle above. The main module is a low white cylindrical base resting flat on the ground. On top is a clear blue glass dome held by white ribs. The ribs rise from a ring at the dome's base and meet at a round cap on top. A ribbed white tunnel module comes out of the base's left side and joins its wall flush. Its far end is a rounded cap with a small yellow door, which faces the camera at left. The tunnel is held just above the ground by two small block feet under its outer section; the inner end is carried by the joint with the base. A metal ladder leans against the front of the base. Its feet are on the ground and its rail tops rest on the rim of the ledge around the dome.",
+ "errors": [
+  {
+   "where": "Ladder on the front of the cylindrical base",
+   "what": "The ladder climbs to the narrow ledge around the dome, but there is no hatch, door or platform up there. It leads to a ledge with nowhere to go, so its purpose is unclear (a maintenance ladder is the most charitable reading).",
+   "severity": "minor"
+  },
+  {
+   "where": "Yellow door on the end cap of the tunnel",
+   "what": "The door is small for the tunnel's size, only about half the end cap's height, and is set into a curved cap. It looks too small for a suited person to pass through as the habitat's airlock entrance.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the yellow airlock door larger and more prominent, filling most of the tunnel's flat round end cap, with a clear frame and handle. Either end the ladder at a small hatch or platform on the dome's ledge, or remove the ladder."
+}

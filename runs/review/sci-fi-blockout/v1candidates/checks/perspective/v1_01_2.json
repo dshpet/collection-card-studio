@@ -1,0 +1,16 @@
+{
+ "survey": "A cartoon rocket floats against a blue sunburst, with no ground. Its silver body is a tapering cylinder that leans to the right, with the top toward the upper right, at roughly 20° from vertical. A red nose cone sits on top, and a thick red rim ring marks where it meets the body. Two round blue portholes with steel bezels are stacked along the body's front, near its center line, and seen almost face-on. Two red swept fins attach low on the body, one on the left and one on the right, both seen side-on. Below the body is a short black nozzle ring with a small yellow flame under it. The rim ring and the nozzle ring curve downward, so the rocket is seen slightly from above.",
+ "errors": [
+  {
+   "where": "Red rim ring at the base of the nose cone, and the black nozzle ring",
+   "what": "The body leans to the right, so its round cross-sections should tilt up toward the right, at right angles to the body's axis. Both ellipses tilt the other way instead: the rim's right end (around x1030, y345) sits well below its left end (around x715, y265), and the nozzle ring does the same. The rings are drawn for an upright rocket seen from above, while the body around them is tilted. This makes the cylinder look slightly sheared or twisted.",
+   "severity": "minor"
+  },
+  {
+   "where": "Left and right fins where they join the body",
+   "what": "The fins sit on the same wrongly tilted cross-section as the rings. The right fin's root starts about 75 px lower than the left fin's. With the body leaning right, the right fin should attach slightly higher than the left. The right fin's outer edge also flares out and down instead of running parallel to the body's axis like the left fin's outer edge does, so the pair do not read as one symmetric fin set around the tilted body.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Keep the rocket leaning to the right, and draw every round cross-section at right angles to the body's long axis. The red rim under the nose cone and the black nozzle ring should be ellipses whose long axis tilts up toward the right, perpendicular to the body. Attach the left and right fins at the same height along the body, matching that tilt, so the right fin's root sits slightly higher than the left's. Both fins' outer edges should run parallel to the body's axis."
+}

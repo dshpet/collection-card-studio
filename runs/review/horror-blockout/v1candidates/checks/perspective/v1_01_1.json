@@ -1,0 +1,21 @@
+{
+ "survey": "A two-storey stone cottage on a grassy hill, seen from slightly above and to the front-right. The front face, with the gable, round attic window, door and four windows, faces the camera almost head-on. The right side face turns away, and its two windows are correctly narrowed into slanted shapes. A ledge runs around the house between the floors and turns the corner correctly. A round tower with a purple cone roof and a ball finial is attached at the back left. Its base plinth curves as if seen from above, which matches the house plinth and the front step, whose top surfaces are visible. The purple tiled roof has its gable on the front face and its right slope runs down over the side face. A stone chimney rises from the right slope. The plinth sits flat on the grass, matching the ground's angle. Overall the building agrees on one view from slightly above.",
+ "errors": [
+  {
+   "where": "Chimney on the right roof slope",
+   "what": "The chimney stack is not a straight vertical. It bends partway up and leans to the right, while every other vertical on the house stays upright. Its cap also tilts away from the roof's viewpoint.",
+   "severity": "minor"
+  },
+  {
+   "where": "Upper-floor windows on the front face, mainly the left one",
+   "what": "The window frames are slightly rotated on a flat face seen head-on. Their sills and tops do not run parallel to the ledge and the stone courses, unlike the lower front window and the door.",
+   "severity": "minor"
+  },
+  {
+   "where": "Tower windows",
+   "what": "The windows on the curved tower are drawn as flat, front-facing rectangles. They do not narrow or curve as the cylinder turns away, which the house's side windows do.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the chimney a straight, upright stone stack rising vertically from the roof slope, parallel to the house's corner edges, with its cap seen from the same slightly-high angle as the roof. Make the upper front windows sit square, with sills parallel to the stone ledge. Make the tower windows narrow and curve slightly with the round wall as it turns away."
+}

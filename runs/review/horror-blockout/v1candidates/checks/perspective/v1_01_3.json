@@ -1,0 +1,16 @@
+{
+ "survey": "A stone cottage on a grassy hill, seen from slightly above and a little to the right. The main block shows a gabled front face almost straight on. Its right side wall recedes to the right, and its horizontal edges (the base plinth, the ledge between the floors, the roof eave) rise slightly as they recede, which fits a camera above the house. The purple roof shows its right slope from above, with shingles in rows along the rake. The ridge runs back to the right. A round attic window sits flat on the front-facing gable, so a full circle is correct there. The front windows and the door are drawn front-on, which suits the frontal face. The windows on the side wall are narrowed, so they are foreshortened correctly. A round tower is attached to the front-left corner. Its cone roof's lower rim and its base, where it curves into the plinth, both bow downward, so both are seen from above, as the rest of the house is. A brick chimney rises from the right roof slope, and its cap's top face is visible. The house sits on a thick plinth with a step in front. The step's top face is visible and meets the grass at the ground's angle, so contact is consistent. Overall there is one camera, with small local slips.",
+ "errors": [
+  {
+   "where": "Chimney on the right roof slope",
+   "what": "The chimney shaft leans to the right and bends partway up, so its sides are not vertical while every other vertical on the house stays upright.",
+   "severity": "minor"
+  },
+  {
+   "where": "Windows on the round tower's left side (upper and lower)",
+   "what": "These windows sit near the cylinder's edge, where the wall curves away from the viewer. They are drawn as flat, fairly wide rectangles facing the camera, instead of narrowed and wrapped around the curve.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the chimney a straight, perfectly vertical brick column, parallel to the house's wall corners. Wrap the round tower's windows around its curved wall: narrow and slightly curved where the cylinder turns away from the viewer, following the same high three-quarter view as the rest of the house."
+}

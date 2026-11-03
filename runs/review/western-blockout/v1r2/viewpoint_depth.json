@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the scarf is seen from slightly above at three-quarters. The neck loop, knot and tails all share that one view, and the normals change smoothly with the cloth. B: the big lasso loop is seen almost face-on, as if lying flat and viewed from straight above. The coil on the left is turned sideways with its rings stacked edge-on, so the two parts don't share one view. There is no ground or shadow, so the rope floats on a flat pattern.",
+   "fix": "Draw the coiled lasso lying on the ground and seen from slightly above at a three-quarter angle. Show the coil and the open loop from that same angle, and put a soft shadow under the rope."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the boot is a pure flat side profile, like a drawing of a side view. There is no top face, no sign of the far side, and the sole is a straight horizontal line. B: the graduation cap is seen from about 30° above at three-quarters. The board's top face and the skull cap's side read together, the way the real camera and computer cards do.",
+   "fix": "Turn the boot about 30 degrees toward the viewer and raise the camera a little. Show the top opening of the shaft and a hint of the toe's far side, with the heel standing on a soft shadow."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A is the real computer card from the lessons: three-quarter view from slightly above, with the desk receding. B: the rail is shown dead straight-on and runs off both edges as a flat band. The saddle seat is seen from above, but the flaps and stirrups hang flat toward the viewer. There is no ground, and the flat cyan background gives no depth layer.",
+   "fix": "Show the saddle at a three-quarter angle on a wooden fence rail that goes back into the scene. Draw the rail's top face from slightly above, and add a soft, simple background behind it."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the open book lies on a table seen from above at one steady angle. Behind it are a railing and simpler bushes, and the plant pot is cropped at the edge, giving clear foreground, hero and background layers. B: three map sheets float on a striped background with no ground. They are almost flat to the image, and each sheet's tilt is slightly different. The edge-on folds at the bottom don't match how flat the top faces read.",
+   "fix": "Lay the folded map on a wooden table seen from slightly above at a three-quarter angle. Give all the sheets the same tilt, add a soft shadow under them, and put a simpler, softer background behind."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the chest is at three-quarters from slightly above, and its lid, body and the sand under it share one view. B: the barrel is shown almost straight-on, with only a small slice of its top showing. The floorboards are seen from much higher up and converge steeply, so the barrel and the floor don't share one camera height.",
+   "fix": "Turn the barrel slightly to three-quarters and show more of its round top, so it matches the camera height of the floorboards. Keep the floor at a gentle, even angle under the barrel."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the locomotive is shot low and wide. The track converges hard toward the right, and the boiler front swells toward the viewer, which reads as forced wide-angle perspective. The desert ground is seen from higher up than the engine. B: the coaster cars follow the curved track at one consistent angle, with hills and clouds behind as a simpler background layer.",
+   "fix": "Draw the locomotive at a three-quarter view from slightly above with mild perspective. Make the track recede gently rather than sharply, and keep the desert ground at the same angle as the engine's base."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the popcorn cart is at three-quarters, and its awning top, side and wheels share one slightly raised view on a tiled floor. B: the cactus is perfectly frontal and symmetric, with no top face showing. Its base cuts straight into sand that is seen from above, so the hero and the ground don't agree.",
+   "fix": "Turn the cactus slightly to three-quarters and raise the camera a little so its rounded top shows. Give it a small sand mound and a contact shadow at the base, and draw the sand at the same angle."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the saloon doors face the viewer almost flat, while the frame posts and floorboards are turned. The floor tilts in from the left at an angle that doesn't match the frame. The normals show large flat patches (planar_share 0.59, above the real range). B: the sneakers sit at three-quarters from above on a floor seen at the same angle, with a clean wall-and-floor split.",
+   "fix": "Show the saloon doors and frame at the same three-quarter angle, viewed from slightly above. Have the floorboards run back under the doors at that angle, and swing one door open a little to show depth."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the ring box is at three-quarters from about 35° above. The tray's top face, the lid's inside and the box sides all read in one view. B: the sheriff star faces the camera dead-on, with no thickness edge or top face showing. It floats on rays with no shadow, so it has no depth layer.",
+   "fix": "Tilt the sheriff star back and turn it slightly, so its thick side edge shows. Add a soft shadow behind it so it sits off the background."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the boat and dock are seen from high above at three-quarters, and the water plane, dock top and boat interior share one view. B: the wagon is nearly side-on at eye level. Only one wheel is shown properly, and the shaft runs forward at a different angle from the box. The dirt road is seen from higher above than the wagon body.",
+   "fix": "Show the covered wagon at a three-quarter view from slightly above, with both wheels visible and the shaft going back at the same angle. Make the road recede at that same angle."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the lion statue is at three-quarters from slightly above. Its plinth top faces read as flat patches, and the trees and path behind are softer and simpler, giving clear depth layers. B: the air conditioner is seen from slightly below at three-quarters, and the wall, corner and ceiling all agree with that one view. Both cards keep a consistent camera, so the viewpoint gives no reason to pick either.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the jacket is at a slight three-quarter turn, and the collar opening, sleeves and hem share one view. B: the cowboy hat is front-on and symmetric. The brim is seen from well above, showing its whole top surface, but the crown is drawn almost side-on, so the brim and crown disagree on camera height. It floats with no shadow.",
+   "fix": "Show the cowboy hat at a three-quarter angle from slightly above. Draw the crown from that same height so its top dent shows, and put a soft shadow under the brim."
+  }
+ ],
+ "pattern": "Generated cards give themselves away by viewpoint. They tend to show the hero dead-on or in pure profile (boot, star, cactus, barrel), with little or no top face and no thickness edge. Often the ground or floor is seen from a higher camera than the hero, so the two don't share one view, or the object floats on a flat pattern with no ground and no shadow. Different parts of one object switch view (lasso coil vs loop, saddle seat vs flaps, saloon doors vs frame, hat brim vs crown). Real cards keep one gentle three-quarter view from slightly above, with mild perspective and the ground at the same angle."
+}

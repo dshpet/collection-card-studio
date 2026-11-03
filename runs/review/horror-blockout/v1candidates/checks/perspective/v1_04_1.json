@@ -1,0 +1,16 @@
+{
+ "survey": "A black, round-bellied cauldron stands on a stone-tile floor, and a small campfire glows underneath it. The thick rolled rim is an ellipse with a level long axis and is quite flat, so it is seen from only slightly above. Green liquid fills the rim, with domed bubbles. There are two side handles. The left one is a loop on a square lug just under the rim, drawn as a C-shaped side view. The right one is a ring on a square lug, attached well down on the belly at about mid-height. Stubby legs with round, flared feet sit on the floor: a large front-left leg and a smaller back-right one. The fire sticks sit between them. The floor tiles run diagonally toward a horizon high in the card, below a pink striped wall. That means the floor is seen from a fairly high camera, steeply from above.",
+ "errors": [
+  {
+   "where": "Side handles (left at the rim, right on the mid-belly)",
+   "what": "The rim ellipse is level, so the pot is seen straight on with no sideways tilt. The two handles sit on opposite sides of it, so they should appear at the same height. Instead the left lug is right under the rim and the right lug is about a third of the way down the body. No single view puts matching handles at such different heights, and the right lug's block is seen from a different angle than the left one.",
+   "severity": "major"
+  },
+  {
+   "where": "Rim and liquid compared with the floor tiles and the foot discs",
+   "what": "The rim ellipse is very flat, as if seen from a camera only slightly above. The floor tiles, the horizon high in the card and the fire sticks all look seen from a much higher camera, steeply from above. From that camera the cauldron's opening should be a noticeably rounder ellipse showing more of the liquid. The pot and the ground it stands on use two different camera heights.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make both side handles identical and place them at the same height, just below the rim, mirrored on the left and right of the cauldron. Show both ring handles from the same angle. Draw the cauldron from the same raised three-quarter camera as the floor: make the rim opening a rounder ellipse that shows more of the green liquid surface, and make the round feet ellipses match the floor's angle so the legs rest flat on the tiles."
+}

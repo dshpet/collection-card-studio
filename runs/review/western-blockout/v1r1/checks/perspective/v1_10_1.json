@@ -1,0 +1,16 @@
+{
+ "survey": "A toy-style steam locomotive in a three-quarter view from the front left. The camera is a little above deck height, and the horizon (the desert mesas) sits at about the height of the cab windows. The locomotive faces toward the lower left, and its long side goes back toward the upper right along a railway track that runs diagonally across the sand. Main parts: (1) a round boiler with a flat round front plate and a centre bolt, with a headlamp and a funnel-shaped smokestack on top and a steam dome and gold bell behind them. (2) A flat black deck under the boiler, with a red buffer beam across the front whose front face and side face both show. (3) A cowcatcher of slanted bars hanging from the buffer beam down to the rails. (4) A black cylinder on the near side, with its round end toward the viewer and a piston rod and coupling rod running back to the wheels. (5) Red wheels: a small front wheel, three large driving wheels on the near side, a far-side wheel showing behind the cowcatcher, and two small tender wheels. All of them stand on the near rail. (6) A boxy cab with a round porthole, window posts and a thin roof slab. The roof's underside shows, which fits a roof above the horizon. (7) A coal tender behind the cab, with the top of the coal seen from slightly above. The track's sleepers and rails go back to the right, and the wheels touch the rails in a believable way.",
+ "errors": [
+  {
+   "where": "Boiler front plate compared with the near-side wheels",
+   "what": "The boiler's front plate is drawn as an almost perfect circle, as if seen straight on. The wheels on the locomotive's side are also only slightly squashed, nearly round, as if that side faces the camera too. In a three-quarter view, the side the camera sees more squarely should look nearly round and the other should be a clearly narrower ellipse. Here both look face-on, so the front and the side seem to be seen from two different angles.",
+   "severity": "minor"
+  },
+  {
+   "where": "The locomotive's long side edges compared with the rails",
+   "what": "The deck edge and the running board along the locomotive's side are almost level. The rails directly below them climb steeply toward the upper right. These lines should meet at the same vanishing point on the horizon, but extended they meet it far apart. The locomotive therefore looks slightly turned on the track rather than lined up with it.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Keep the three-quarter front-left view and make the locomotive's rounds match it. Draw the boiler front plate, headlamp and cylinder end as ellipses that are slightly narrower than they are tall. Draw the side wheels as clearly narrower vertical ellipses that all have the same narrowness. Line the locomotive up exactly with the rails, so that its deck edge, running board and cab base meet the rails' vanishing point on the horizon."
+}

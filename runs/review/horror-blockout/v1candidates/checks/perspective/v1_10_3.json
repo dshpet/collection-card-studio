@@ -1,0 +1,16 @@
+{
+ "survey": "A single broom floats on a wavy blue background with no ground plane. A long, round wooden handle runs diagonally from a rounded knob at the upper right down to the lower left. Near the bottom, the handle goes into a straw collar wrapped with three red cord rings, drawn as ellipses whose top faces are visible. Below the collar, a fan of straw bristles flares out and ends in a scalloped, uneven bottom edge. The handle is seen from the side, slightly from above, and its width tapers evenly. The knob cap reads as a rounded end seen from the same side view. Because the broom floats, there is no ground contact to check.",
+ "errors": [
+  {
+   "where": "Red cord rings and straw collar where the handle meets the bristles",
+   "what": "The ring ellipses are not at right angles to the handle. Their long axis runs nearly horizontal, about 15° down to the right. For rings wrapped around a handle that slopes about 53° from horizontal, the long axis should run about 37° down to the right, at right angles to the handle. So the binding looks twisted on the shaft rather than wrapped around it.",
+   "severity": "minor"
+  },
+  {
+   "where": "Bristle head below the collar",
+   "what": "The bristle bundle's center line hangs closer to vertical, about 66° from horizontal, than the handle's line, about 53°. The head looks slightly bent away from the handle instead of continuing along it, so handle and head do not share one straight axis.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Keep the broom as one straight object: the bristle head's center line continues the handle's diagonal exactly, flaring evenly on both sides of that line. Draw the red cord rings and the straw collar as ellipses at right angles to the handle, wrapping evenly around the shaft, with their long axis perpendicular to the handle's direction."
+}

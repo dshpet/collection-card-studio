@@ -1,0 +1,16 @@
+{
+ "survey": "A moon-base habitat on a cratered plain, seen from a raised three-quarter view. 1) Main body: a short, wide white cylinder sitting flat on the ground. Its top rim is an ellipse whose narrowness matches the raised camera, and its bottom edge follows the same curve along the ground. 2) Glass dome: sits on the rim on a ring that matches the rim's ellipse. Its white ribs run up to a small elliptical cap and bend around the dome's form as they should. The water/floor line inside the dome is a matching ellipse. 3) Connecting tunnel: a horizontal ribbed cylinder that leaves the left side of the body and points toward the lower left, toward the viewer. Its end cap is a tall ellipse, its ring bands are similar ellipses, and a yellow hatch sits on the end cap. Two small block feet hold it up and touch the ground, with shadows. 4) Ladder: a metal ladder leans on the body's front-right wall. Its top reaches the rim and its feet stand on the ground just in front of the base. The ground plane, crater ellipses and contact shadows all agree with the same raised camera.",
+ "errors": [
+  {
+   "where": "Metal ladder on the front-right of the cylindrical body",
+   "what": "The ladder is drawn straight-on to the viewer: rails upright and parallel, rungs level and the same width all the way up. But it leans on a part of the round wall that is already turning away to the right, and the camera looks down on it. Its rungs should tilt slightly and its rails should narrow a little toward the far side to sit flat against that turned surface. As drawn, it looks pasted flat onto the picture rather than resting against the curved wall.",
+   "severity": "minor"
+  },
+  {
+   "where": "Yellow hatch on the tunnel end cap",
+   "what": "The hatch is a near-frontal rounded rectangle. The tunnel end cap around it is a narrowed, angled ellipse, so the hatch should be squeezed and angled the same way. It reads as slightly more face-on than the cap it sits on.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the metal ladder leaning against the curved wall of the cylinder and turned with it: rungs angled slightly to follow the wall as it turns away to the right, rails narrowing a little toward the far side, the same raised camera angle as the base, and both feet planted on the ground at that angle. Make the yellow hatch on the tunnel end follow the angle of the end cap, squeezed and angled like the cap's ellipse rather than facing the viewer."
+}

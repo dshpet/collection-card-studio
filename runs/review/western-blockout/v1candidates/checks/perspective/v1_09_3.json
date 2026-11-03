@@ -1,0 +1,16 @@
+{
+ "survey": "A small covered wagon on a dirt road, seen in a three-quarter view from slightly above and to the front-right. The box's long left side faces the viewer almost head-on, and its plank lines run level. The front end face, with a bench seat on top, turns away to the right; its top and bottom edges rise only slightly toward the back of the picture, so the box is shallow from front to back. A canvas hood arches over the box, and its open front end shows as a curved opening behind the seat. The near wheel is a large, almost circular wheel on the left side, centered under the back half of the box, and it touches the road. A far wheel shows behind and below the box, toward the front end. A long tongue runs from under the front end down and to the right, and its crossbar lies flat on the road. The road and grass are seen from above, which roughly matches the slight downward view of the box.",
+ "errors": [
+  {
+   "where": "Far wheel (behind the box, lower middle-right)",
+   "what": "The far wheel should sit on the same axle as the near wheel, so it should appear just behind it, shifted by the box's shallow depth (about the width of the front end face). Instead it is shifted about 250px forward toward the front end and sits much higher on the ground. That matches a cart far deeper than the box is drawn, or a second axle out of line with the first. The two wheels do not share one axle in one view.",
+   "severity": "major"
+  },
+  {
+   "where": "Far wheel vs near wheel ground contact",
+   "what": "The far wheel's bottom touches the road well above the near wheel's bottom, by much more than the slight rise of the box's front end edges. The two wheels sit on ground planes seen at different angles.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Place the far wheel directly behind the near wheel on the same axle. It should be shifted only slightly up and to the right, by the same small depth as the wagon's front end face. Show it partly hidden behind the near wheel, as a slightly narrower ellipse, touching the road just above the near wheel's contact point."
+}

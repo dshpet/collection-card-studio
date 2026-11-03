@@ -1,0 +1,16 @@
+{
+ "survey": "A small six-wheeled planetary rover on grey regolith, seen in three-quarter view from the front-left. The camera faces its long left side, and the front is the short end on the right. Body: a rounded white box with a riveted side panel and three vent slots. On top, a yellow dish antenna with an orange feed knob sits on a short chrome mast, and a blue solar panel sits on a short post. Both are fixed to the roof, so that part is fine. Wheels: there are six black tyres with silver hubcaps. Three are on the near side (rear, middle, front, left to right). On the far side, the front wheel is visible at the right, joined by a strut to the body's front corner and ending at its hub, which is correct. The other two far wheels are mostly hidden behind the body. All six tyres touch the ground and cast shadows. Near-side suspension: one bent chrome rocker arm comes from a ball pivot on the lower body side. It splits into a rear branch that ends in a joint above the gap between the rear and middle wheels, and a front branch that ends against the upper tread of the front wheel. The near-side wheels are where the faults are.",
+ "errors": [
+  {
+   "where": "Near-side suspension, middle wheel",
+   "what": "The near-side middle wheel has no axle or arm. The rocker has only two branch ends for three wheels, and none of them reaches the middle hub, so the wheel just stands next to the others without being attached.",
+   "severity": "major"
+  },
+  {
+   "where": "Near-side suspension, ends of the rocker arm at the rear and front wheels",
+   "what": "The arm ends do not reach the wheel hubs. The rear branch stops in a joint above and behind the rear tyre's top edge, well away from its hubcap. The front branch hits the front tyre's upper tread instead of its centre. The linkage could not hold or turn the wheels.",
+   "severity": "major"
+  }
+ ],
+ "fix": "Redraw the near-side rocker-bogie suspension so each of the three near-side wheels has its own chrome axle that goes into the centre of its silver hubcap. The rocker arm runs from the pivot on the body side to the front wheel's hub, and a bogie arm from the rocker carries the middle and rear wheels at their hubs. Arms should never end on the tyre tread or in empty space. Match the far-side front wheel, whose strut meets the hub correctly."
+}

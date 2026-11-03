@@ -1,0 +1,16 @@
+{
+ "survey": "A witch hat floating over an orange background of concentric rings. Main parts: (1) a wide, flat oval brim seen from above at a moderate angle. Its outline is an ellipse with a height-to-width ratio of about 0.45, and its long axis slopes up to the right, so the lower-left edge is closer and lower. (2) A tall cone that rises straight up from the brim, a little left of and in front of the brim's center, with its tip curling to the right. (3) A purple band around the base of the cone, where it meets the brim. (4) A square gold buckle on the front-left of the band, facing the camera. There is no ground plane, and the hat floats with no contact shadow.",
+ "errors": [
+  {
+   "where": "Purple hat band and the base of the cone where it meets the brim",
+   "what": "The band's top and bottom edges are almost flat, like an ellipse seen nearly level, with very little downward curve at the front. The brim under it is drawn as a wide-open ellipse seen clearly from above. Both are circles in the same horizontal plane, so the band should curve as much as the brim does. As drawn, the cone and band are seen from a lower camera than the brim.",
+   "severity": "minor"
+  },
+  {
+   "where": "Brim compared with the cone and band",
+   "what": "The brim's ellipse is rotated, with its long axis sloping up to the right. The band's ellipse stays roughly level, and the cone's axis stays straight up. If the brim were really tilted, the band would tilt with it and the cone would lean the same way. If it isn't tilted, the brim's ellipse should be level. The brim's plane and the cone's plane don't agree.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the whole hat from one three-quarter view from above. The hat band at the base of the cone is a ring lying in the same plane as the brim, so its top and bottom edges curve down at the front as strongly as the brim's oval does, with the same ellipse proportions. Keep the brim's oval level, its long axis horizontal and parallel to the band's ellipse, with the cone rising straight up from the brim's center, at right angles to it. Turn the buckle slightly so it follows the curve of the band."
+}

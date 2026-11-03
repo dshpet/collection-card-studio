@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A is very high key (0.766, above the real range). The light-grey console sits on a near-white riveted floor, so the hero's body and the floor fall into the same light group. Only the button tops and the joystick base give dark accents. B has a clear dark mass in the cart body and wheels against a mid-dark blue wall and a light paving floor, which matches the real three-group split.",
+   "fix": "Darken the floor to a mid-grey metal and put a soft darker shadow under the console so its pale body stands clear of the ground. Keep a few deep dark shapes in the panel recess."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the white dish is the lightest shape on the card, but it sits against a light sky and pale sand. The dark red tower is the only dark mass, so the hero splits into a white top and a dark bottom with no middle step. B is uniformly light too (sand castle on sand), but it is grouped gently, like the real beach-style cards. Both cards are above the real lightness range, so the evidence is weak.",
+   "fix": "Give the dish's underside a mid-grey shadow and add a slightly deeper sky toward the top corners, so the white dish reads against a middle value instead of near-white."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a white ring and a pale planet sit on a background of near-black and mid purple stripes. The hero-to-background gap is 0.242, far above any real card, and the corners show no darkening (vignette -0.006). A: the flip-flops sit on light teal stripes with gentle separation and a slight corner falloff, like the real striped cards (anchor, clock).",
+   "fix": "Lighten the purple stripes so the dark stripes become mid purple, and let the corners darken softly. Shade the ring's far side into a middle tone so the hero is not a flat white cut-out."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the rover's wheels go to solid near-black, while the orange body and the dish turn nearly white against a bright, washed sunburst. That gives hard, poster-like local contrast (rms 0.2, above range) with a white halo hugging the body. A: the taxi is mid-light on a mid-grey road, with soft rays and graded dark tones under the car.",
+   "fix": "Lift the tyres to a dark grey with visible rounded highlights, keep the body orange in a middle-light value, and remove the white glow directly behind the rover."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the silver rocket body and the light-blue sunburst sit in the same middle-light values, and contrast across the card is low (rms 0.097). Only the nozzle band and the fin undersides give dark accents, so the hero barely separates by value. A: a bright yellow sub on a deep green radial background, with a strong value gap and darkened corners. That gap is stronger than on real cards, but its grouping is clear.",
+   "fix": "Deepen the blue toward the card corners and keep a lighter glow only behind the rocket. Shade the rocket's right side into a clear mid-dark so the body reads as a round form."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the UFO's teal saucer reads as a dark mass, its rim is a near-black band with a black underside line, and a white halo ring wraps tightly around the hero on a flat light-yellow field. That is the tight bright halo seen on generated lesson cards. A: a light player and earbuds on alternating dark and mid purple rings. Its grouping is simple, and the hero is the lightest shape.",
+   "fix": "Remove the white ring hugging the saucer, lift the rim from black to dark grey-blue, and let the yellow background fall off gradually toward the corners."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the asteroid is a large dark mass with near-black crater holes and a black shadow under the bottom, set on light cyan waves. The orange flames are almost the same light value as the waves, so they merge with the background. B: the red scarf is a mid-dark shape on a light swirl, with a stronger corner falloff (vignette 0.115) like the real cards.",
+   "fix": "Lighten the crater interiors to deep brown instead of black, and push the flame tips brighter than the background waves so the trail reads as its own light shape."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a dark flat band of sky with white star dots sits above a uniform mid-grey ground, and the white base is the only light mass. The card is one broad middle value with a dark strip on top. A: a full scene with dark pool water, light counter and white glasses, with its value steps spread across the card the way the real scene cards (barrel, bike) spread theirs.",
+   "fix": "Add soft darker crater shadows and a gentle falloff toward the bottom corners, and give the dome glass a mid-dark interior so the hero has a dark accent inside it, not only in the sky."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the white telescope tube is the brightest shape, the mount is a dark block, and the lower half is a flat mid-grey ground with almost no value change. The background stripes read as middle values. B: the binoculars are hard dark-on-light (rms 0.2, gap -0.277, both past the real range) with bright floor streaks. Those numbers argue for B, so this call is weak.",
+   "fix": "Give the grey ground a soft gradient from lighter near the hero to darker at the bottom corners, and shade the tube's underside to a clear middle grey."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: a light inflatable on a blue sunburst, with a soft glow behind and darker corners, like the real glove card. B: a white goal frame over mid-dark pool water with no corner falloff (vignette 0.006). Its grouping is still clear, a white frame against dark water. Neither card shows a value pattern that separates it from the real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the helmet visor is a big mid-value disc framed by hard near-white stripes and a white base with a sharp dark band, on a flat purple wall and ledge. Local contrast inside the hero is hard and graphic. B is high key (0.762) with a near-white floor, but the shoes form one coherent mid-dark group with soft roll-off on the soles.",
+   "fix": "Soften the white stripes on the helmet into light grey on the shaded side, and let the visor's lower half fall into a deeper value. Add a soft darker falloff to the wall corners."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: a neon cone outlined by a uniform white band on a flat mid-green wall, with no vignette. B: a white lion and plinth against dark trees and grass, with a large gap (0.211). Both are outliers in different ways, and neither matches the generated look seen in the lessons.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards break real value grouping in three ways. A tight bright halo or white ring hugs the hero on a flat background (UFO, rover). Accents are pushed to solid black (tyres, saucer rim, crater holes) next to near-white highlights, so inside the hero the contrast is hard and poster-like, not rolled off. And backgrounds are flat, either washed light or a single dark band (moon-base sky, Saturn stripes), with little corner darkening. Real cards keep the hero in a clear light or middle group with gentle falloff to darker corners."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the bandana fills the frame on a concentric spiral, like the real pillow and bracelet cards. The campfire badge is a game emblem, like the bracelet's music notes. B: the lasso is small and pushed upward. It floats in a large empty purple wave field, and the lower third of the card is empty.",
+   "fix": "Make the coiled lasso larger and centered so it fills most of the card, with the purple wave pattern visible only around the edges."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both are category 1. Each object sits centered on a quiet tone-on-tone ring field, the boot on orange and the cap on blue. Neither has extra props. The boot's spur belongs to the object.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the real computer card: a real desk with its front edge and drawer, on a plain warm backdrop. B: a short wooden beam crosses a flat cyan field and stops at both card edges. It is not attached to a fence, a floor or any ground. The saddle hangs on a beam floating in the air, so the card is half category 1 and half category 3.",
+   "fix": "Rest the saddle on the top rail of a wooden fence that stands on a dirt ground, with a simple soft sky behind. Or drop the rail and let the saddle float on a quiet ray or spiral field."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a category 4 table scene with a hedge, a fence and a plant pot. The detail is near the top of the real range (0.030), but the shapes are large, and the house icon matches the real cards. B: three stacked maps float on pink diagonal stripes. The staging is acceptable, and the stripe band is plain and a little flat.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the chest sits on sand under water, with bubbles, a shell and loose coins as props. B: the barrel stands on a plank floor in front of a wall covered in a repeating pattern of sun and wave icons. No real card has a pictogram wallpaper like this. The real wall behind the boxing gloves uses plain vertical panels.",
+   "fix": "Replace the sun and wave icon wallpaper with a plain wall of soft vertical wooden boards in one warm tone."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the desert ground is scattered with many small pebbles and grass tufts. Far mesas sit on the horizon, and the track runs off the corner. The background detail (0.034) is above the real range. B: the coaster has large quiet shapes: soft hills, a few clouds and plain sky.",
+   "fix": "Make the desert floor a smooth, plain sand plane with no pebbles or grass tufts. Keep one soft mesa band far behind, and keep the track short under the engine."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the cart stands on a plain tile floor, with a quiet diamond backdrop behind. B: the cactus stands in sand dotted with five or six small pebbles and rocks, plus tiny specks. A pink flower is added on top. These are small scattered props, unlike the quiet grounds on the real cards.",
+   "fix": "Draw the cactus on a smooth sand dune with no pebbles or rocks, in front of a plain orange diamond backdrop, and remove the flower on top."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the swinging-door frame stands alone in the middle of a plank floor. No wall or doorway holds it, so the object has no believable placement. B: the sneakers sit on a plain ledge in front of a plain wall, a clean category 2 card.",
+   "fix": "Set the saloon doors into a simple wooden wall or doorway, or float them on a quiet flat ray field."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both are category 1 objects on a soft ray field with no props: the medal box on cyan and the star on purple. B's rays are very soft (edge density 0.003, just below the real range), but the eye cannot separate them from the real ray cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the boat is large and fills the card. The dock and two lily pads are big, purposeful shapes on calm water. B: the wagon is small in the frame on a dirt road, with tiny white flowers, small grass tufts, pebbles and distant bushes scattered around it. That is a lot of small detail, unlike the quiet environments on the real cards.",
+   "fix": "Make the wagon larger so it fills the card. Put it on a smooth dirt road with plain green grass and no flowers, pebbles or tufts, and add one or two soft clouds."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: a category 4 park with trees, a path and hedges. The shapes are large, and the detail (0.028) is inside the real range. B: the unit hangs on a plain striped wall, like the real striped clock backdrop. Both read as real staging.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both are category 1 objects centered on a tone-on-tone ray field: the jacket on green and the hat on blue. Neither has invented props. The jacket's badges belong to the object.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards give themselves away in the staging around the object, not in the backdrop pattern. They scatter small props across the ground, such as pebbles, grass tufts, tiny flowers and extra shells or rope. They shrink the object so it no longer fills the frame. They place objects on supports that attach to nothing, like a beam crossing a flat field or a door frame standing alone. They add invented decoration such as icon wallpapers and flowers on top. Real environments use a few large, quiet shapes, and the hero fills the card."
+}

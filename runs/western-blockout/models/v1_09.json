@@ -1,0 +1,25 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "problems": [
+   "The canvas cover is a low, squat loaf that rises only about 0.3 above the bed. It reads as a cart carrying a white lump, not a covered wagon. A covered wagon's tall rounded bonnet rises about the bed's width above the sides, so the top half of the cover should be raised about 1.8x.",
+   "The cover stops well short of the bed's front and back, and its front end is a flat round face. It should run nearly the full bed length and flare a little at the gathered ends.",
+   "The driver's bench blocks start at z 0.64, about 0.2 above the bed floor (top at 0.44), so the blocks hang in mid-air inside the bed. The bench also pushes into the cover. The blocks should stand on the floor, and the bench should sit in front of the cover's end.",
+   "The tongue starts at x 0.3 and only grazes the underside of the floor. It should start at the front bolster so it is fixed to the running gear."
+  ]
+ },
+ {
+  "round": 2,
+  "error": null,
+  "problems": [
+   "The canvas cover is wider than the bed. Its half-width is 0.27 × 0.92 ≈ 0.248, and the side boards end at 0.25 on the outside, so the canvas sits flush with the outer face of the sides instead of tucking inside the bed (inner face at 0.22).",
+   "The bottom edge of the cover is ragged. The warp clamps the lower half with min(x, 0.05), which turns the lathe's lower rows into a saw-tooth, and white teeth hang over the side boards below the red trim. Squash the lower half smoothly instead of clamping it, and make the cover narrow enough to sit inside the side boards."
+  ]
+ }
+]

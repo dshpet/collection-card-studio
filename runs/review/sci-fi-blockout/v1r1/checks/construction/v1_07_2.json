@@ -1,0 +1,16 @@
+{
+ "survey": "A six-wheeled toy-style planetary rover, seen in three-quarter view on grey cratered ground. The white rounded box body has a side panel with four screws and a three-slot vent. On top, an orange dish antenna with a feed-horn tip sits on a short metal mast, and a six-cell solar panel tilts on a short post. Below the body, a ball hub on the near side holds a bent metal rocker arm: one leg goes down-left and ends in a horizontal rod with a joint, the other goes down-right toward the front wheel. Three wheels on the near side and three on the far side all rest on the ground and cast shadows. The far-right wheel has a clear strut from the body's end to its hub. The other far-side wheels are mostly hidden.",
+ "errors": [
+  {
+   "where": "Near-side suspension, left and front wheels",
+   "what": "The rocker arm does not reach the wheel axles. The left leg's horizontal rod stops at the top rim of the rear-left wheel instead of its hub. The right leg runs behind the top of the front wheel and ends there, with no joint at the hub. The wheels look stuck on behind the arm rather than mounted on it.",
+   "severity": "major"
+  },
+  {
+   "where": "Near-side middle wheel",
+   "what": "The middle wheel on the near side has nothing holding it: no arm, axle or strut reaches its hub. It floats beside the body, and the two-legged rocker arm only accounts for two of the three near-side wheels.",
+   "severity": "major"
+  }
+ ],
+ "fix": "Show a clear rocker-bogie suspension on the near side. A metal arm pivots on the body hub and ends at the axle hub of each of the three near-side wheels: front, middle and rear. Each arm meets its wheel at the center hub cap, not the rim, so every wheel is visibly mounted on its own arm."
+}

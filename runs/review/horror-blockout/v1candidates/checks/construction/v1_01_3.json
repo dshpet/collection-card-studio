@@ -1,0 +1,16 @@
+{
+ "survey": "A cartoon two-storey stone house on a grassy hill, seen from the front-right at three-quarter view. Main parts: (1) The main block is a rectangle on a stone plinth. A cornice ledge separates the two floors. The front has a door with a small stone step, two upper windows and one lower window, and the right side wall has one window on each floor. (2) A front-facing gable roof with purple shingles. The front gable holds a round attic window, and the right slope runs back toward the rear. (3) A cylindrical round tower set into the house's left-rear corner. It shares the plinth, has two windows, and is capped by a purple shingled cone with a ball finial. The cone rises above the house roof and runs into its left side, which is a normal junction for a real building. (4) A brick chimney sitting on the right roof slope near the ridge, with a cap on top. The moon behind the chimney is background, not part of the object. The door sits on its step, the plinth sits on the grass, and the tower and house share one foundation, so everything is supported.",
+ "errors": [
+  {
+   "where": "Chimney on the right roof slope",
+   "what": "The chimney is crooked. Its lower part leans and its upper part bends back to vertical, giving a kinked stack. Its base also does not sit squarely in the roof plane, so it looks more stuck onto the slope than built up through the roof.",
+   "severity": "minor"
+  },
+  {
+   "where": "Upper window on the right side wall, just under the eave",
+   "what": "The window is pushed right up against the roof overhang, and the eave line slightly crowds or overlaps its top frame. A real wall leaves room between a window head and the eave.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the chimney one straight vertical brick stack that rises cleanly out of the right roof slope, with a flat flashing joint where it meets the shingles and a level cap on top. Move the upper window on the right side wall down slightly so there is a clear strip of stone wall between its top frame and the roof eave."
+}

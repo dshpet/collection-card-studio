@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: scarf has a crisp loop, a narrow knot band and two tapered tails. The parts read as cloth. B: the lasso rope is a single even sausage thickness everywhere. The coil at left merges into one solid ring with a stub tail, the right loop is an even donut, and solidity 0.397 is below the real range.",
+   "fix": "Draw the lasso as a thin twisted rope with separate visible coils stacked on top of each other, one larger open loop with a small honda knot, and a long thin trailing end."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the boot shaft is a swollen tube with a pillowy rolled top. The toe and heel are soft and the spur is a toy star. Solidity 0.621 is just under the real range. B: the cap board is a flat plate with straight edges and tight corners, the skull is a simple drum and the tassel is thin.",
+   "fix": "Draw the boot shaft slimmer and straight-sided with a crisp scalloped top edge, a pointed narrow toe, a sharp-cornered stacked heel and a thin spur strap."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "A is the real computer card from the lessons, with a boxy monitor, a flat keyboard slab and a thin cable. B: the saddle seat is an inflated pillow with blobby cantle and horn ends. The stirrups are thick rubbery loops, and the skirt is a soft rounded slab with no straight runs.",
+   "fix": "Draw the saddle with a thin leather seat, a narrow horn, flat skirt panels with straight cut edges and tight corners, and thin stirrup straps holding slim metal or wooden stirrups."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the open book has curved page fans, a thin cover edge under them and a ribbon. Its silhouette is irregular, like the real cards. B: three map sheets are near-identical rigid rectangles stacked with even offsets and bent-plastic folded edges. Straight_share 0.701 and solidity 0.951 are both above the real range.",
+   "fix": "Draw a single map sheet of thin paper with slightly curled, irregular edges and one or two soft folds. Do not draw a stack of identical stiff boards."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the chest has a boxy body with straight trim bands, a domed lid on a hinge, and coins spilling out, so it has many parts. B: the barrel silhouette is a single smooth capsule. The hoops barely break the contour, corner_rate is 0 and solidity 0.983 is above the real range.",
+   "fix": "Draw the barrel with a visible top rim lip, metal hoops that stand slightly proud of the staves, and a crisper bulge-to-rim transition at top and bottom."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the locomotive is shortened into a toy. It has a stubby boiler, an oversized smokestack and cab, chunky wheels and a thick slab running board. B: the coaster has thin, evenly spaced rails, ties and support legs, and the cars sit in sequence along the track.",
+   "fix": "Draw the locomotive with a long slim boiler, a taller thinner smokestack, a smaller cab at the back, thin connecting rods and a thin running board."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the cart has thin posts, a scalloped awning, a flat counter, spoked wheels and many separate parts. B: the cactus is three even sausage tubes with rounded blob ends and a flat cut-off base. Its arms are the same thickness as the trunk and its ribs do not show in the contour.",
+   "fix": "Draw the saguaro with a thicker trunk and thinner arms that bend up at a sharper elbow. Show slightly ribbed, uneven edges and let the base widen into the sand."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the saloon frame is a rigid toy gate. It has an overhanging beam, chunky block feet on the posts and evenly spaced slats, and the doors fill the frame like a fence panel. Straight_share 0.708 is above the real range. B: the sneakers have a natural sole, toe spring and lace bumps.",
+   "fix": "Draw the saloon doors as two short swinging half-doors hung at chest height in a doorway with a gap above and below. Use thin hinges and no block feet or freestanding beam frame."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the ring box is a soft rounded case whose lid and base share the same corner radius. It is coherent, like the anchor's soft objects. B: the star has oversized ball tips on thin uneven arms, so the arm lengths and angles vary. Solidity 0.487 is below the real range.",
+   "fix": "Draw the sheriff star with five equal, evenly spaced points, small round tips at the ends of the points and a flat badge plate with a thin raised rim."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the dock has flat plank edges and posts, and the boat hull tapers to a pointed bow. B: the covered wagon is shortened into a toy. A tall canvas hood sits on a tiny box bed, it has only two wheels, and the long thin tongue ends in a block.",
+   "fix": "Draw the covered wagon with a long, low rectangular bed, four spoked wheels with larger wheels at the back, and a wide canvas hood stretched over evenly spaced hoops."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the lion sits on flat stepped slabs with straight edges, and the lion's mane and paws read correctly. B: the air conditioner is a flat box with straight runs. It measures above the range (solidity 0.99), but that is right for a wall unit, and its house logo matches the real cards' motif.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the jacket has collar, sleeves, cuffs, pockets and sash, all in the right relation, with a slightly pillowy volume. B: the cowboy hat brim is a huge flat ellipse blob with a puffy rolled rim, and the crown is short. Corner_rate is low and solidity is 0.951, near the top of the range.",
+   "fix": "Draw the cowboy hat with a taller pinched crown, a narrower brim curled up at the sides, and a thin brim edge with no puffy rolled rim."
+  }
+ ],
+ "pattern": "Generated cards inflate their objects: thin parts (rope, cactus arms, stirrups, hat brim rims) become even-thickness sausages, and boxy or rigid objects lose their real proportions and turn into stubby toys (locomotive, wagon, saloon frame). Smooth capsule silhouettes with almost no corners (barrel, hat) show up as solidity at or above the top of the real range. Repeated parts are drawn in identical copies (map sheets, slats, wagon hoops)."
+}

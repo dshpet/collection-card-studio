@@ -1,0 +1,21 @@
+{
+ "survey": "A toy-style steam locomotive on a desert track, seen in three-quarter view from the front-left and a little above. The track runs from the lower left to the upper right, and its ties lie across the rails. The locomotive has: a red buffer beam with a slatted cowcatcher hanging below it; a flat running board with a cylindrical boiler on top; a round smokebox door on the front of the boiler; a headlight, smokestack, steam dome and bell on top; a boxy cab with a round side window and a roof that sticks out at the back; and a tender behind the cab. Red wheels are lined up along the near side, sitting on the near rail: one small leading wheel, three drive wheels joined by a side rod from the cylinder, and two small trailing wheels. A second leading wheel shows on the far side under the cowcatcher. The wheels are drawn as upright ellipses, narrowed to suit the side seen at an angle. The tops of the running board, cab roof and boiler are visible, so the camera is above the locomotive.",
+ "errors": [
+  {
+   "where": "Boiler front / smokebox door",
+   "what": "The front of the boiler is drawn as a full, face-on circle (about as wide as it is tall), yet the whole length of the boiler's side is visible going back to the right. At this three-quarter angle the round front should be an upright ellipse, clearly narrower than it is tall, like the side wheels. Instead it reads as pasted flat toward the viewer.",
+   "severity": "major"
+  },
+  {
+   "where": "Locomotive body against the track",
+   "what": "The running board and the bottom edge of the boiler recede at a much shallower angle than the rails below them. Extended, these lines meet well below the horizon instead of sharing the rails' vanishing point. The body seems turned away from the direction of the track, so it does not run along the rails its wheels stand on.",
+   "severity": "major"
+  },
+  {
+   "where": "Cowcatcher (pilot) under the red buffer beam",
+   "what": "The cowcatcher's bars fan out at different angles, and its bottom bar does not run parallel to the buffer beam above it. The pilot does not read as one frame lying across the track in the same view as the beam.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the locomotive in one consistent three-quarter view from the front-left, seen slightly from above. The body runs exactly parallel to the rails: the running board, boiler and cab edges point to the same vanishing point on the horizon as the track. The round front of the boiler is an upright ellipse, narrowed to match the angle of the front face, as the side wheels are. The cowcatcher is a symmetric wedge of evenly spaced bars hanging square under the red buffer beam, with its bottom edge parallel to the beam and lying across the rails."
+}

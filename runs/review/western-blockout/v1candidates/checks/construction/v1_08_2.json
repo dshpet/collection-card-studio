@@ -1,0 +1,16 @@
+{
+ "survey": "A single wooden barrel stands upright on a plank floor, seen from slightly above and three-quarters on. The body is made of vertical staves with a gentle bulge: narrower at the top and bottom, widest across the middle. Four dark iron hoops wrap the body: one just under the top rim, one at the upper shoulder, one at the lower shoulder and one near the base. Each hoop follows the barrel's curve at its own height, and the hoops get wider toward the middle, which matches the bulge. The top is a flat round head made of boards that runs across the stave ends, with a slight rim at the edge. The base rests flat on the floor and casts a contact shadow, so the barrel is supported. A small orange splash or mark is painted on one upper stave. It is surface decoration, not an added part. The object reads as a real cooper's barrel: the hoops could hold the staves together, and the head could close the top.",
+ "errors": [
+  {
+   "where": "Staves crossing the second hoop from the top, right half of the barrel",
+   "what": "The stave seams above the hoop do not line up with the seams below it. A real stave runs unbroken from top to bottom under the hoops, but here, on the right side especially, the seam spacing changes across the hoop, as if different boards start above and below it.",
+   "severity": "minor"
+  },
+  {
+   "where": "Top head and rim",
+   "what": "The head looks like a lid laid on top of the staves, level with or slightly above their ends. On a real barrel the staves stand a little above the head, which sits in a groove inside them. This is acceptable as a simplification and only shows on a close look.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Each wooden stave runs as one continuous vertical board from the top rim to the bottom, passing unbroken under every iron hoop, with stave seams that line up above and below each hoop. The round top head sits slightly recessed inside the raised top edge of the staves."
+}

@@ -1,0 +1,11 @@
+{
+ "survey": "A stone house with two floors and a three-quarter view from slightly above. The front gable wall faces the camera almost straight on. The right side wall turns away, and its windows are correctly narrowed. A purple gable roof sits on the walls: its front edge rises to a peak, the ridge runs back to the right, and the right slope shows shingle rows that follow its edges. A stone chimney rises from the right slope, with its cap top visible, which fits a camera above the roof. A round tower is attached on the left, half behind the house. Its cone roof has a downward-curving base edge and a ball finial, also consistent with viewing from above. A stone ledge between the floors wraps from the front wall around the right side, with its top surface visible. At the bottom, a stone base and front step both show their top faces and sit flat on the grassy hill. The base curves under the tower and runs straight under the house. The round gable window is a true circle on a wall that faces the camera, which is correct. Overall, the house, tower, roof, chimney and ground all agree on one high three-quarter camera.",
+ "errors": [
+  {
+   "where": "Round tower on the left, brick courses and window frames",
+   "what": "The tower is a cylinder seen from slightly above, so its horizontal brick rows and window tops and bottoms should curve gently downward and narrow toward the tower's sides. Instead, the bricks are flat rectangles in straight rows, and the windows are flat frames as if on a flat wall. As a result, the tower's surface reads as flat, which clashes with its curved base and roof edge.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "On the round tower, make the stone brick rows and window frames wrap around the cylinder: horizontal rows curve gently downward like the tower's base and roof edge, and bricks and windows get narrower toward the tower's left and right edges, matching the slightly high three-quarter camera."
+}

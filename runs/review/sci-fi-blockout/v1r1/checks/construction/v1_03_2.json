@@ -1,0 +1,16 @@
+{
+ "survey": "A stylized ringed planet seen at a three-quarter angle, tilted to the upper right. Main parts: (1) An orange sphere with small crater dimples. (2) A cream equatorial band wrapped around the upper half. (3) A second cream band and the orange lower cap, seen below the ring. (4) A wide, flat yellow ring tilted across the sphere. The back of the ring passes behind the sphere at the upper left and right, and the front crosses in front of the lower half. The overlap order is consistent and the ring floats freely around the body, as planetary rings do. (5) A blue domed lens set in an orange bezel on the upper-left face, sitting on top of the cream band.",
+ "errors": [
+  {
+   "where": "Upper-left face of the planet, on the cream band",
+   "what": "Invented part: a blue lens or porthole in a raised orange bezel is mounted on the planet. A planet has no such part. It looks like a gem or window bolted onto a natural body, so the object reads as neither a planet nor a clearly built station.",
+   "severity": "major"
+  },
+  {
+   "where": "Body of the sphere around and below the ring, especially the right edge and the lower band",
+   "what": "Shape fault: the sphere does not read as one continuous ball. The upper cream band sticks out past the silhouette like a separate collar, with a stepped orange lip under it at the right. The lower cream band and the orange cap below the ring are not parallel to the upper band and look shifted, so the planet looks like stacked, misaligned slices instead of a round body.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Remove the blue lens and its orange bezel from the planet's surface. Make the planet one smooth, perfectly round sphere. Paint the cream stripes flush on the surface as parallel latitude bands that follow the same tilt as the ring, with no raised collars, steps or offset slices above or below the ring."
+}

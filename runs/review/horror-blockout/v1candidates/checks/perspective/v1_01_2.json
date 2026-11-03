@@ -1,0 +1,16 @@
+{
+ "survey": "A small stone house on a grassy hill, seen from slightly above and a little to the right. The front gable wall faces the camera almost head-on: its brick courses, the ledge between floors, the plinth and the door step are all horizontal, and we see the tops of the plinth and the step, which fits a raised camera. The right side wall turns away. Its two windows are narrower than the front ones and lean back with the wall, which is correct. The purple gable roof has its ridge running back from the front gable. The right roof slope is visible, with shingle rows running along the slope. A brick chimney rises from the right roof slope. A round tower with a cone roof joins the house on the back left. Its windows sit on the curved wall, and its cone base is a downward-curving ellipse. The whole building stands on a flat plinth that sits level on the hill.",
+ "errors": [
+  {
+   "where": "Chimney on the right roof slope",
+   "what": "The chimney is crooked. Its sides lean left as they rise and its cap tilts, so its edges are not vertical like every other vertical edge on the house. It looks bent instead of standing upright on the roof.",
+   "severity": "major"
+  },
+  {
+   "where": "Brick courses on the round tower (left)",
+   "what": "The tower's brick rows are almost straight horizontal lines. Seen from above, as the plinth and cone base show, the rows on a cylinder should curve down toward the edges like the cone's base ellipse does. Here the wall looks flat instead of round.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the brick chimney stand perfectly upright, with vertical sides parallel to the house's wall corners and a level cap seen slightly from above, sitting straight on the roof slope. On the round tower, draw the brick courses as gentle downward-curving elliptical bands that wrap around the cylinder and match the curve of the cone roof's base, seen from the same slightly raised viewpoint."
+}

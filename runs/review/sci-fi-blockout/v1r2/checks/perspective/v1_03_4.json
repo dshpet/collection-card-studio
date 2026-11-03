@@ -1,0 +1,11 @@
+{
+ "survey": "Ringed planet floating on a striped background, with no ground. The sphere is orange with a cream band on its upper half and more bands showing below the ring. Its silhouette is a consistent circle, and the part below the ring fits that circle. The flat yellow ring is tilted up to the right and seen from slightly above: we see its top face, and its thickness shows only along the front (lower) edge. The front of the ring passes over the lower-middle of the sphere. The back of the ring is hidden behind the sphere and comes out again on the right. On both sides, background shows through the gap between sphere and ring where it should. The inner and outer edges are matching ellipses that are equally narrow. The bands run roughly parallel to the ring's long axis. The lower bands curve downward in the middle, which is correct for a view from above. The tiny crater dots are too small to judge.",
+ "errors": [
+  {
+   "where": "Upper half of the sphere, cream band",
+   "what": "The ring is drawn fairly open, about one-third as tall as it is wide. A band circling the sphere at that view should sag clearly in the middle, like the bands below the ring do. This band is nearly straight from edge to edge, so it reads as a flat stripe painted on rather than a line wrapping around a ball seen from above.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Curve the cream band on the upper half of the planet into an ellipse arc that dips downward in the middle, curved the same amount as the ring and the lower bands, so that every band wraps around the sphere parallel to the ring as seen from slightly above."
+}

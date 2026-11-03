@@ -1,0 +1,11 @@
+{
+ "survey": "Image 4 is a flying saucer floating in front of a yellow concentric-ring background, with no ground. The camera looks down at it from somewhat above, and the saucer is rolled slightly so its right side sits higher than its left. Main parts: (1) A wide brushed-metal hull that slopes up from the rim toward the middle. Its top is seen from above as an ellipse about 0.4 times as tall as it is wide. (2) A dark tube-shaped rim around the edge. The near (front) side shows more of its thickness and the far side less, which is correct for a view from above. (3) A metal collar on top of the hull, shown as a smaller ellipse, roughly centred left to right and raised because the hull rises toward the middle. (4) A green glass dome sitting in the collar, seen almost from the side, which is fine for a rounded dome. (5) About ten orange bulbs evenly spaced along the top of the rim. The far ones (top back) are smaller and the near ones (front) are larger. They bunch closer together at the left and right ends of the ellipse. The gap at the back fits bulbs hidden behind the dome. The hull, rim and bulbs all agree on one view from above.",
+ "errors": [
+  {
+   "where": "Collar and green dome relative to the saucer rim",
+   "what": "The rim's ellipse leans clearly, rising toward the right (about 6°), but the collar's ellipse is nearly level (about 2–3°). The dome also stands straight up instead of leaning with the saucer's roll. So the top section looks very slightly turned against the hull it sits on. This is only visible on a close look.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Keep the dome and its metal collar exactly centred on the saucer and tilted with it. The collar's ellipse should lean at the same angle as the outer rim's ellipse, and the dome's central axis should lean at right angles to the saucer's top surface, so the whole craft reads as one rigid object rolled slightly to the left."
+}

@@ -1,0 +1,11 @@
+{
+ "survey": "A cartoon gravestone in three-quarter view from slightly above, turned so its right end is nearer the viewer. Parts: (1) An upright tablet with a rounded top. Its front face looks left-front, its right side shows a narrow thickness strip, and its top-right corner is broken off in stepped chunks, with a crack running down the front face from the break. (2) A raised cross on the upper front face, seen nearly straight on with slight relief on its right and lower sides. (3) A rectangular base slab that the tablet stands on. It shows a thin strip of top surface in front of the tablet, a long front face and a short right end face. (4) Decoration: moss blobs on the top-left shoulder and the lower-left corner, and an orange flower lying on the base's top surface. The base sits on a flat yellow ground with a soft shadow behind it. The tablet's verticals are upright and parallel. Its bottom edge and the base's top edges slope gently down toward the nearer right end, which matches a viewpoint slightly above. The moss, flower and cross follow their surfaces.",
+ "errors": [
+  {
+   "where": "Base slab, front face",
+   "what": "The base's front face is shaped like a wedge. It is about twice as tall at the right end as at the left, because its bottom edge drops much more steeply than its top edge. That implies very strong perspective toward the left. The tablet directly above it shows almost no such shrinking: its left and right vertical edges are nearly the same height, and its top and bottom edges are close to parallel. So the base and the tablet look like they were drawn with two different perspective strengths, and the base reads as thicker at one end instead of as an even slab.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the base slab an even rectangular block of the same thickness along its whole length. Its front top edge and front bottom edge should be nearly parallel and slope gently toward the right, matching the tablet's bottom edge, so the base and the headstone share one mild three-quarter view from slightly above."
+}

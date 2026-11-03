@@ -1,0 +1,11 @@
+{
+ "survey": "A lumpy brown asteroid floating against a wavy blue background, seen from slightly in front and to the left. Its front-left face points at the camera. That face carries a large, deep crater whose rim opens toward the viewer and lower left, plus a small pocked crater in the middle. A second crater sits on the right part of the body, where the surface starts to curve away, and a third crater is on the lower edge, seen as a squashed opening. Three orange flame trails come out from behind the upper-right back of the rock. They all point up and to the right, each ending in a small droplet, so the rock reads as flying toward the lower left. Nothing touches a ground; it floats. The shading and the overlaps (the flames are hidden behind the rock's silhouette) agree with a single camera.",
+ "errors": [
+  {
+   "where": "Right-hand crater, on the asteroid's right side next to the flames",
+   "what": "This crater sits where the rock's surface is turning away from the viewer, so its rim should look like a clearly narrowed, sideways-squashed ellipse. Instead it is drawn almost as a circle, as if it faced the camera like the big front crater. The two craters then seem to face nearly the same way on differently angled parts of the surface.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the crater on the right side of the asteroid a narrower ellipse that is squashed sideways, so it follows the rock's surface as it curves away from the viewer. Show more of its inner wall on the side nearest the camera, and keep the big front crater as it is."
+}

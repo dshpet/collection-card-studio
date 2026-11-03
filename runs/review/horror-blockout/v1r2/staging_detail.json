@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the glass stands on a plain blue ledge in front of quiet tone-on-tone rings (category 2), like the real mojito-style cards. B: the binocular viewer stands in front of a full city skyline with dozens of small window-gridded towers and a railing with glass panels. That is a lot of small detail for a category 4 card, and background edge density is 0.036, above the real range of up to 0.021.",
+   "fix": "Put the viewer on a plain rooftop ledge with soft sky behind it and only two or three large, pale, blurred building shapes. No window grids, no crowded skyline."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both float on concentric tone-on-tone rings (category 1). A: the rings are smoothed into a bright yellow-orange glow right behind the hat brim, and background detail is under the real range (0.0072). B: the rings are evenly banded and quiet, as on the real cards. This is a weak call.",
+   "fix": "Draw evenly spaced flat orange rings without a glowing hotspot behind the hat."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the seahorse floats over soft underwater light shafts with nothing else in the frame, very sparse (detail 0.0052). B: the guitar sits on a stage with metal truss towers on both sides, a truss across the top, two spotlight cans and crossing beams, plus a plank floor. Many small structural parts, edge density 0.039, above the real range. Real stage cards use one curtain and a floor.",
+   "fix": "Stand the guitar on a plain wooden stage floor in front of a single dark curtain or soft wall. No truss towers, no visible spotlight fixtures."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both use the same yellow striped wall over a floor. A: the cat sits on large wooden planks and is framed whole with margin, with a heavy purple cast shadow. B: the fountain basin runs off the bottom edge on a brick ring, a closer crop like the real cards.",
+   "fix": "Crop the cat closer so the planks run off the bottom edge, and soften the cast shadow to a short contact shadow."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the coffin stands upright in the center of a lawn, with identical grass tufts sprinkled evenly over the whole field and a row of round bushes and clouds on the horizon. B: the stone chess table sits in a park with a few large tree masses and a curving path, matching the real lion park card.",
+   "fix": "Put the coffin on a plain grass patch with smooth tone-shaded grass, not scattered tufts. Behind it, one or two large soft tree shapes and a path."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the spring rider sits on a sand mound with a green ray burst behind it, plus three pebbles as small props. B: the pumpkin fills most of the frame on a wooden plank table in front of a purple ray burst. Rays and visible plank seams together make a busier backdrop (detail 0.022, above the real range).",
+   "fix": "Set the pumpkin on a plain ledge or soft floor with a quiet purple ray burst. No plank seams behind it, and leave more margin around it."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both float on ray bursts (category 1). A: the green-to-yellow rays fan out from the flame and tie the glow to the lamp. B: the purple rays are evenly spread, the candelabra base floats with no shadow, and each flame has a pink halo bleeding into the field. This is a weak call.",
+   "fix": "Plain purple ray burst, and a soft contact shadow under the candelabra base."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "B is the real lighthouse: a tight crop with the tower running off the bottom, sea and clouds as large quiet shapes. A: the whole house is framed on a green hill, flanked by two matching round trees, bush clumps and several clouds. These are added symmetrical props, the same pattern as the generated lighthouse lessons with their island and extras.",
+   "fix": "Crop in on the house so its base runs off the bottom edge. Remove the flanking trees and bushes, and keep sky and one soft hill line."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both are category 2: the object on a plain pale-yellow ledge in front of an orange gradient wall, with a soft cast shadow. Backgrounds are equally quiet and both measure inside the real range. Nothing on my vector separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the scarf floats over soft tone-on-tone spiral rings. B: the small diagonal broom floats over high-contrast wavy stripes, alternating dark and light blue bands that compete with the thin handle. Edge density is 0.024, above the real range.",
+   "fix": "Use a low-contrast tone-on-tone blue pattern (soft rings or rays) behind the broom, and draw the broom larger in the frame."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cauldron is framed whole on a purple tile floor with a visible grid of tile seams in perspective, a pink striped wall strip, and a small campfire with glow under it. That is an added prop and busy floor lines. B: the gloves are cropped off the right edge on plain planks in front of a blue paneled wall, matching the real barrel and plank cards.",
+   "fix": "Put the cauldron on a plain smooth floor with no tile grid and crop it a bit closer. Drop the fire under it, or make it only a faint glow."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the glass sits on a plain purple ledge in front of a tone-on-tone diamond pattern (category 2, as in the real cards). B: the crystal ball sits on a wooden shelf with grain and knots in front of a green diamond pattern, so material and pattern are stacked. It also carries an invented sparkle star and swirling mist inside the glass (whimsy).",
+   "fix": "Put the crystal ball on a plain ledge with the quiet diamond backdrop, and remove the sparkle star and starry specks inside the glass."
+  }
+ ],
+ "pattern": "On staging, generated cards give themselves away in four ways. They frame the whole object with margin, while real cards crop it off the bottom or sides. They add symmetrical filler props: flanking trees, bushes, pebbles, an island base, a fire under the pot. They stack a real material on top of a patterned backdrop, such as planks with rays, or a wood shelf with a diamond pattern. And their environments are made of many small repeated parts (grass tufts, tile grids, skyline windows, stage trusses) where real cards use a few large, quiet shapes."
+}

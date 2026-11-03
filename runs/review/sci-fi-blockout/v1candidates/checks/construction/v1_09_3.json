@@ -1,0 +1,16 @@
+{
+ "survey": "A satellite dish on a pedestal in a desert. A square stone slab sits flat on the sand. On it stands a tapered grey concrete column, topped by a round metal turntable. A U-shaped metal yoke sits on the turntable, with a round pivot knob on its side. A short hub runs from the yoke into the back of the dish, below the dish's centre. The dish is a round white bowl tilted up and to the left, with its concave face turned toward the camera. Three thin metal struts hold a small cylindrical feed housing with a red dome on top. The feed sits above the upper-left rim. One strut runs nearly level to the far right rim. The other two run down in a narrow V: one lands on the dish face just inside the left rim, the other near the bottom rim. The pedestal, turntable, yoke and hub all connect believably, and the slab rests on the sand.",
+ "errors": [
+  {
+   "where": "Feed housing and its three struts, upper left of the dish",
+   "what": "The feed is not held in front of the dish's centre where it would catch the reflected signal. It sits out past the upper-left rim. The struts are lopsided: two bunch together on the lower-left of the face and one stretches flat to the far right rim. That is not a tripod or boom any real dish uses, and it would not hold the feed steady or aimed. The feed housing also stands upright with its red dome pointing at the sky instead of facing into the dish.",
+   "severity": "major"
+  },
+  {
+   "where": "Red dome on top of the feed housing",
+   "what": "A shiny red ball cap is an invented part. A real feed horn has an open throat or a flat cover facing the dish, not a decorative dome on the back.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Put the feed horn in front of the dish's centre, on the dish's axis, with its opening facing into the bowl. Hold it with three evenly spaced struts that attach to the rim at equal intervals, or with one straight boom from the bottom rim. Replace the red dome with a plain grey feed horn cap."
+}

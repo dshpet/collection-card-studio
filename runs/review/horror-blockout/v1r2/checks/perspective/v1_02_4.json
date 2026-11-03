@@ -1,0 +1,11 @@
+{
+ "survey": "A witch hat floating at three-quarter view, seen from somewhat above. The wide oval brim shows its top surface clearly, with a thin rim edge visible along the front and bottom. Its long axis is tipped, running from low on the left to higher on the right. The cone stands up from the middle of the brim, with its lower half close to vertical and its tip curling to the right. A purple band wraps the base of the cone where it meets the brim. A square gold buckle sits on the front of the band, facing roughly toward the camera. There is no ground plane, only a radial background, so contact is judged only between the cone and the brim.",
+ "errors": [
+  {
+   "where": "Cone base and purple band where they meet the brim",
+   "what": "The band's ellipse and the brim do not look like the same view. The brim is seen from well above, an oval roughly 0.4 times as tall as it is wide, and its long axis is tipped down to the left. The band's lower edge, where the cone meets the brim, curves much more shallowly, about 0.2. It is also nearly level instead of tipped like the brim, and the cone's axis stays vertical instead of standing at a right angle to the tipped brim. As a result, the cone looks seen more level than the brim it stands on, as if it were stuck on rather than rising out of the brim's surface.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the cone stand at a right angle to the brim's surface, and tip its axis to match the brim. Draw the band at the cone's base as an ellipse as open as the brim's oval, viewed from the same height above and tipped at the same angle. The band's lower edge should curve clearly downward at the front where it meets the brim, and the buckle should sit flush on the curved band."
+}

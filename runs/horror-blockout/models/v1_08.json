@@ -1,0 +1,25 @@
+[
+ {
+  "round": 0,
+  "error": "00:02.481  cycles           | WARNING CUEW initialization failed: Error opening the library\n/home/dshpet/Dev_Projects/playrix_testtask/scripts/blockout.py:38: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0\n  m.use_nodes = True\n/home/dshpet/Dev_Projects/playrix_testtask/scripts/blockout.py:252: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0\n  world.use_nodes = True\nMemory access fault by GPU node-2 (Agent handle: 0x7fe9334d6b00) on address 0x7fe7ba9ff000. Reason: Page not present or supervisor privilege.\nFailed to write segment data to pipe: Broken pipe\nGPU coredump: handler exited with error (status: 1)\nGPU core dump failed\n",
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "problems": [
+   "Blender crashed with a GPU memory access fault in the Cycles/HIP driver, not a Python error. The model geometry is valid, so this crash may come from the render device itself. If it happens again with this file, render on CPU.",
+   "To make the scene lighter and safer to render, I removed the dense mist tube nested inside the glass. It was a 41-point curved tube refracted through glass.",
+   "The mist ribbon also broke the 'leave effects to the image model' rule, which bans modelling mist. The image model will paint the swirl inside the clear sphere.",
+   "There were two glowing sparkles inside the glass. I cut them to one small glow part, the only effect-like part the rules allow."
+  ]
+ },
+ {
+  "round": 2,
+  "error": null,
+  "problems": [
+   "The ledge's front edge crosses the bottom-left corner of the card, so a wedge of green backdrop shows under the ledge. The ledge looks like a thin floating shelf instead of a surface that runs off the card. Fix: bring the ledge's front edge well forward, to y = -1.3, so it runs off the bottom of the card as well as the sides.",
+   "The ledge renders as pale peach, not wood. Fix: use a darker wood brown so the restyle reads it as a wooden ledge."
+  ]
+ }
+]

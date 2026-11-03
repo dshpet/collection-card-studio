@@ -1,0 +1,11 @@
+{
+ "survey": "A satellite dish on a pedestal in a desert, with the camera at about the height of the pedestal collar. The horizon sits just above the collar, at roughly the top of the bracket. The square stone slab lies flat on the sand and is seen from above; its edges agree on a three-quarter view. The tapered concrete cone stands straight up from the slab, and its base curve is seen from above, which matches the slab. The dark collar ring on top of the cone sits just below eye level and shows a thin top face, which is also correct. The metal yoke bracket rises from the collar and its pivot goes into the back of the dish. That pivot point sits down and to the right of the dish centre, which is where the back of a dish facing up-left toward the viewer would be. The dish rim is a clean, fairly narrow ellipse. The concave inside faces up-left toward the viewer, and the rim's thickness shows along its lower edge, as it should for a dish above eye level. Three struts run from the rim and dish face to a feed head at the top left. The feed head is a small grey cylinder with a red dome on top, set roughly on the dish's axis.",
+ "errors": [
+  {
+   "where": "Feed head at the top of the struts (grey cylinder with red dome, top left of the dish)",
+   "what": "The feed head is the highest part of the object, far above the horizon, so it should be seen from below like the dish rim. Instead its top face shows as an open ellipse with the red dome sitting on it, as if seen from above. It does not match the low camera used for the dish and pedestal.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the feed head at the end of the struts from slightly below, matching the dish: show the underside and side of the grey cylinder, with its top face hidden or barely showing as a very thin ellipse, and the red dome only partly visible above the cylinder's edge. Keep the dish, bracket, cone and slab as they are."
+}

@@ -1,0 +1,26 @@
+{
+ "survey": "Cartoon steam locomotive in a three-quarter front view, seen slightly from above, sitting on a railway track in a desert. Main parts: a black cylindrical boiler whose round smokebox face points front-left toward the camera, topped by a funnel smokestack, a headlamp, a steam dome and a brass bell. Behind the boiler is a boxy cab with a round porthole and window slats, then a small tender box at the back right. Everything sits on a flat black deck plate. A red buffer beam crosses the front, with a slatted cowcatcher hanging below it. Along the near side are a black cylinder, red driving wheels joined by silver connecting rods, and small red leading and trailing wheels. The track runs steeply from the lower left to the upper right. Its sleepers are drawn foreshortened and the wheels roughly ride the near rail.",
+ "errors": [
+  {
+   "where": "Whole locomotive body (deck, boiler, cab) against the track",
+   "what": "The body is not lined up with the rails. The deck edge and boiler axis rise at a shallow angle toward the upper right, while the rails rise much more steeply. The front of the body (buffer beam, smokebox face) is drawn almost square to the camera rather than square to the track. The wheels follow the rail line but the body above them does not, so the locomotive looks twisted on its own chassis and does not run along the track.",
+   "severity": "major"
+  },
+  {
+   "where": "Boiler front (smokebox face) and the red buffer beam",
+   "what": "The smokebox face is drawn as an almost full circle and the buffer beam as a flat horizontal rectangle, as if seen straight on. But the long side of the body is shown strongly receding, which calls for a clearly narrowed ellipse and a beam that slants with the side. The front face and the side face look like they come from two different viewpoints.",
+   "severity": "minor"
+  },
+  {
+   "where": "Red driving and trailing wheels on the near side",
+   "what": "The wheels are fairly open, almost front-facing ellipses that differ in roundness from wheel to wheel. On a side plane receding this steeply they should all be narrower ellipses of matching proportion, shrinking toward the back.",
+   "severity": "minor"
+  },
+  {
+   "where": "Cowcatcher bars under the front beam",
+   "what": "The slats fan out at different angles instead of running parallel and converging consistently with the front face's perspective.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Three-quarter front view of a cartoon steam locomotive standing straight on the railway track, seen from one camera slightly above. The locomotive's long axis runs exactly parallel to the rails, and the deck, boiler and cab edges converge to the same vanishing point as the rails. The buffer beam and cowcatcher sit square to the track. The round smokebox face is a narrowed ellipse matching the angle of the front face. The side wheels are consistently narrow ellipses that shrink evenly toward the back and sit on the near rail. The cowcatcher bars are parallel and evenly spaced."
+}

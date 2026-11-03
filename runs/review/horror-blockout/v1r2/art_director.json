@@ -1,0 +1,94 @@
+{
+ "issues": [
+  {
+   "issue": "Surface finish leaves the house look. Real cards are smooth, glossy toy-vinyl with soft broad highlights (duck, gloves, scarf, grad cap). Some generated props switch to another material: felted fur strands on the cat, matte speckled clay on the tombstone, flat paper-matte on the coffin, and one even mirror gold on the candelabra. Merges the surface_finish, edges (cat's fuzzy edge) and lighting (flat coffin and tombstone) reports.",
+   "specialists": [
+    "surface_finish",
+    "edges_linework",
+    "lighting_shading"
+   ],
+   "instruction": "Paint every prop as smooth glossy vinyl or lacquer, with soft broad highlights on the curves and a clearly darker shadow side."
+  },
+  {
+   "issue": "The horror props pull the value key dark and dull: a near-black cat, a dusky purple-grey cauldron floor, a mid-grey tombstone. The real cards stay bright and saturated, even on dark subjects (navy grad cap, red gloves). The witch hat is dark too, but it keeps sheen and passes.",
+   "specialists": [
+    "value_contrast",
+    "color_palette"
+   ],
+   "instruction": "Keep dark subjects mid-dark and saturated, with bright lit planes, and keep floors and walls clean and light."
+  },
+  {
+   "issue": "Staging extras. The house is framed whole on a hill between two matching trees, and the crystal ball has an invented sparkle star and wispy smoke. The real cards use one hero and a plain field or simple set, with no symmetrical filler props.",
+   "specialists": [
+    "staging_detail",
+    "composition_hierarchy"
+   ],
+   "instruction": "Per-card notes only: remove the flanking props and the decorative sparkles."
+  },
+  {
+   "issue": "Overruled: busy backgrounds are not a tell. The real guitar (stage trusses), binoculars (city skyline), chess table (park) and gloves (wood grain) all have detailed sets, so plank floors, wood shelves and grass tufts on the generated cards are in range. Also overruled: the lighting calls of 'flat' on the real mojito and seahorse, and every shape or viewpoint fix, since form is not judged across objects.",
+   "specialists": [
+    "staging_detail",
+    "edges_linework",
+    "lighting_shading",
+    "shape_proportions",
+    "viewpoint_depth"
+   ],
+   "instruction": "No change."
+  }
+ ],
+ "style_text": "",
+ "cards": [
+  {
+   "pair": "p02",
+   "keep": true,
+   "note": "Passes. A glossy dark-violet hat on a ring backdrop, like the navy grad cap."
+  },
+  {
+   "pair": "p04",
+   "keep": false,
+   "note": "Paint the cat as smooth glossy vinyl with no individual fur strands, and make the collar a smooth shiny band. Lift the black slightly to charcoal, with cool blue-grey highlights on the head, back and chest."
+  },
+  {
+   "pair": "p05",
+   "keep": false,
+   "note": "Paint the coffin as glossy lacquered wood in a slightly richer red-brown orange, with a soft highlight along the top edges and the cross. Shade the side face clearly darker."
+  },
+  {
+   "pair": "p06",
+   "keep": true,
+   "note": "Passes. A glossy pumpkin with a glowing face on rays and planks, within the real range."
+  },
+  {
+   "pair": "p07",
+   "keep": false,
+   "note": "Give the gold slightly deeper bronze shadows on the right side of the arms and column. Add a soft contact shadow under the base."
+  },
+  {
+   "pair": "p08",
+   "keep": false,
+   "note": "Remove the two flanking trees and the bushes, leaving sky and soft clouds behind the house. Light only a few windows warm yellow, and make the rest slightly darker panes."
+  },
+  {
+   "pair": "p09",
+   "keep": false,
+   "note": "Paint the tombstone as smooth glossy blue-grey stone with no speckle dots. Add a soft bright highlight on the arched top and edges, and a slightly darker side face."
+  },
+  {
+   "pair": "p10",
+   "keep": false,
+   "note": "Make the wavy background stripes slightly lower in contrast, with two close blues, so the broom stands out."
+  },
+  {
+   "pair": "p11",
+   "keep": false,
+   "note": "Make the floor a lighter, plain lavender with faint tile seams. Paint the cauldron a slightly more saturated violet with a bright glossy highlight on the rim and belly."
+  },
+  {
+   "pair": "p12",
+   "keep": false,
+   "note": "Remove the sparkle star and specks, and soften the smoke into one gentle blue-white glow inside the ball."
+  }
+ ],
+ "summary": "Close. The generated cards share the real palette, the backdrop vocabulary (rings, rays, diamonds, stripes, park, planks) and the rendering, and the pumpkin and witch hat could pass. The main giveaway is material: the cat's fur, the tombstone's matte speckled clay, the flat coffin and the uniform gold break the glossy toy-vinyl finish. After that come a darker key on the horror props and a few extras (the house's flanking trees, the crystal ball's sparkles). All of these are small per-card fixes, and the style text doesn't need to change."
+}

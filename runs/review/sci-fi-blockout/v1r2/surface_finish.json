@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the floor is brushed steel with straight streaks and evenly spaced rivet dots at every tile corner, and the console body is one even satin grey with crisp, lacquered button caps. Detail is spread evenly over the whole card. B: the popcorn cart has soft painted wood and plastic, the popcorn is soft and lumpy, and the glass has one broad streak. B looks quieter overall, the way real cards do.",
+   "fix": "Plain matte floor tiles with no rivets or brushed streaks. Make the console body softly matte and keep the shine to the button tops."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the red mast has fine scratch lines and a ring of chrome rivet heads, and the dish has faint panel seams. Every surface is equally glossy, with a strong highlight on the bolt (highlight 0.184). B: the sandcastle has soft, matte sand with a light grain and few marks, which matches the real cards.",
+   "fix": "Smooth, matte red paint with no scratches. Use fewer, larger, softer bolts, and give the dish a soft matte white with no seam lines."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the planet is glossy orange with small dimples dotted over it, a cream band and a rim highlight. The dents are decoration added on top, not a material. A: the flip-flop soles are matte rubber with even, soft-edged dots, and the straps are softly shiny. That mix of matte and gloss in one object matches the real cards.",
+   "fix": "Remove the dots from the planet. Use a smooth, softly matte surface with gentle bands and one soft highlight."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the rover body is lacquered orange plastic with rivets at the panel corners, three cut vent slots, and chrome joints. Metal and plastic share the same shine. A: the taxi has glossy paint, but the chrome, glass and tyres each read as their own material. A's detail numbers run high, so this call is weak.",
+   "fix": "Give the rover body a satin painted-metal finish, less glossy than the chrome joints. Drop the corner rivets."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the rocket's silver body is one smooth chrome gradient with no seams, and the red nose and fins are equally lacquered, so the card has no matte areas. A: the submarine has glossy yellow paint, matte copper rings around the portholes, and small rivets along the seam. Both cards are glossy, so this is a weak call.",
+   "fix": "Make the rocket body softly brushed silver with one faint panel seam, and keep the fins matte red paint."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the UFO dome is glassy green with sharp window reflections, the teal hull is glossy, and the orange lights glow like candy. Everything on it is equally shiny. A: the player is softly matte orange plastic, and the earbuds are satin white with gentle highlights. That restraint matches the real cards.",
+   "fix": "Give the hull a matte painted-metal finish, keep only the dome glossy, and draw the lights as small, dim bulbs."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the asteroid surface is covered in fine pits, small chips and scratch marks, which is the fine-noise detail the lessons show on generated cards. Its craters have sharp, chipped rims. B: the scarf is smooth, soft matte cloth with broad folds.",
+   "fix": "Smooth, soft matte rock with a few large rounded craters and no small pits or scratches."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the white habitat modules and the moon ground have a gritty speckle, like concrete, over every surface, and the dome is glassy with sharp reflections. That is AI-like noise on what should be clean plastic. A: the bar counter is plain matte plaster, and the fruit and stools are softly glossy, which reads closer to the real cards.",
+   "fix": "Give the habitat walls a clean, smooth matte white with no speckle. Keep the ground soft grey with only a few pebbles."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the tripod legs have streaky wood grain, the brass bands have hard specular stripes, and the tube is uniformly glossy cream (highlight 0.081). B: the binocular rubber is soft and matte and the floor boards are painted simply, though some smearing shows on the floor.",
+   "fix": "Give the tripod quiet, fine wood with a soft satin finish. Make the brass bands matte gold with one soft highlight."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the bounce house is glossy inflatable vinyl with fine stitched seams along the tubes, which reads true for an inflatable. B: the pool goal is matte white tubing with a thin net, and the ball has soft leather panels. Both materials read true, and my vector gives no clear reason to pick either.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the helmet visor, the blue and white shell, and the chrome base are all equally lacquered. Nothing on it is matte, and the visor edge has a crisp seam line. B: the sneakers have a fine mesh weave on the upper, matte rubber soles and rope-like laces, so it mixes materials the way real cards do.",
+   "fix": "Make the helmet shell matte painted plastic and the base softly brushed metal. Keep the gloss only on the visor."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the neon ice cream has soft glowing tubes and a matte wall with ribs. B: the lion statue is polished marble with faint grey veins. Both materials read true at their scale, and my vector gives no reason to choose.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards scatter decorative detail evenly over every surface: rivets, scratches, small dimples, speckled grit and seam lines. They also coat every material in the same lacquer gloss, with no matte areas. Real cards stay softer and quieter, with simple, mostly matte surfaces and gloss kept to one or two parts."
+}

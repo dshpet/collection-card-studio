@@ -1,0 +1,23 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "problems": [
+   "The right door's two gold hinge leaves are on its back face. Turning the door by 198 degrees flips its local v axis, so v=-0.021 puts them at +y, and the post's inner face hides the barrels from this camera. The card shows gold hinges on only one door. The leaf offset now follows the door's turn so both doors carry their leaves on the front face, and the leaves are a little larger so they read on a small card."
+  ]
+ },
+ {
+  "round": 2,
+  "error": null,
+  "problems": [
+   "The two stiles of each door don't match. The hinge stile runs from z 0.28 to 0.92, but the latch stile and rails run from 0.30 to 0.86. So the hinge stile sticks up above the top rail and down below the bottom rail like a loose stake (you can see it on both doors). A real door frame has both stiles flush with the top and bottom rails.",
+   "Because of that, the bottom rail doesn't line up with the bottom of the hinge stile, so the bottom edge of the door looks stepped instead of square.",
+   "Fix: both stiles now run from 0.28 to 0.88, with rails at 0.28-0.36, 0.54-0.60 and 0.80-0.88. The panel and slats fill the spaces between the rails. The gold hinges are moved to z 0.36 and 0.82 so they sit on the rails. The ledge, posts, header, swing angles and camera are unchanged."
+  ]
+ }
+]

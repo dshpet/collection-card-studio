@@ -1,0 +1,16 @@
+{
+ "survey": "A cartoon steam locomotive on desert track, seen from the front-left at three-quarter view. The front is the round smokebox face of a horizontal boiler that rests on a flat running board. On top of the boiler sit a flared smokestack with a headlamp on its front, a steam dome and a brass bell. A boxy cab with windows and a round porthole joins the rear of the boiler, and a coal-filled tender is coupled behind the cab. Under the running board, from front to back, are a red buffer beam with a slatted cowcatcher, one small red pilot wheel, a cylinder whose piston rod drives a crosshead, three large red driving wheels, and two small trailing or tender wheels. All the wheels sit on the near rail. The rods run from the crosshead to the driving wheels.",
+ "errors": [
+  {
+   "where": "Side rods on the driving wheels",
+   "what": "The running gear could not turn the wheels. Two separate rods leave the crosshead. One goes to a crank pin on the first driver. The other pins straight onto the hubs (axle centres) of the second and third drivers, not onto offset crank pins. A rod fixed at the axle centres cannot transmit motion, and nothing couples the first driver to the other two.",
+   "severity": "minor"
+  },
+  {
+   "where": "Cowcatcher (pilot) under the red buffer beam",
+   "what": "The bottom ends of the pilot bars reach right down onto the rails and ties. A real pilot has clearance above the track, so this one would drag along the rails and catch on the sleepers.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Single connected running gear: the piston rod drives a crosshead, one main rod runs from the crosshead to an offset crank pin on a driving wheel, and one coupling rod links offset crank pins on all three driving wheels, set away from the wheel hubs. Cowcatcher bars end a little above the rails, with a clear gap between the pilot and the track."
+}

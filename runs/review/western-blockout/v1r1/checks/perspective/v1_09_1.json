@@ -1,0 +1,11 @@
+{
+ "survey": "A two-wheeled covered cart on a dirt road, seen from front-left at a three-quarter angle, slightly from above. It has a wooden plank box with a red top rim. The long side faces the viewer, and the front end face (with the seat) shows on the right, turning away. The box edges recede consistently: top and bottom edges spread slightly toward the nearer front end, and the end face's edges recede up and to the right. A canvas cover sits on the box. Its seams are hoop-shaped arcs, and its open front arch shows the inside, as expected for a view from front-right. The seat board's top is seen from slightly above, which matches the camera. The near wheel is mounted on the outside of the near long side. It is a slightly narrowed ellipse that suits a side face turned only a little away. Its spokes radiate evenly and the hub cap faces the same way. A far wheel shows under the box, behind and to the right. A single tongue comes out of the front underside and slopes down and forward to rest on the ground on a crosspiece. The slope fits a drop from axle height to the ground while pointing along the cart's length. Both wheels and the tongue's end meet the road plane, and the cast shadows lie on it consistently.",
+ "errors": [
+  {
+   "where": "Far (right-side) wheel under the box",
+   "what": "The far wheel is shifted too far forward and right compared with the near wheel. Its sideways offset is larger than the box's width as the narrow end face shows it, so it reads as sitting near the front of the cart rather than straight across from the near wheel on the same axle. It also looks somewhat smaller than distance alone would explain.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Place the far wheel directly opposite the near wheel on the same axle. Offset it only by the cart's width, in the same direction the front end face recedes (slightly up and to the right). Keep it the same size as the near wheel, shrunk only a little for distance, with its hub on the shared axle line."
+}

@@ -1,0 +1,21 @@
+{
+ "survey": "Upright wooden coffin standing on a grassy graveyard slope. The camera is high: the ground recedes to a horizon roughly a third of the way down the card. The front lid is a flat six-sided slab with a raised cross, drawn almost straight-on (symmetrical, vertical sides, level top edge). Behind it is the box, whose right side wall is visible at a steep angle, about half the width of the front. A strip of purple lining shows between the lid's right edge and the box wall, so the lid reads as pulled slightly open. The top end is seen from above as a thin plank that runs continuously across both lid and box. The base sits in the grass, with a cast shadow to the right that agrees with the ground plane.",
+ "errors": [
+  {
+   "where": "Top end of the coffin, over the lid and the purple gap",
+   "what": "The top plank is drawn as one unbroken surface across both the lid and the box, even though the purple strip below shows the lid standing apart from the box. The lid cannot be both open and sealed into the same top face, so the gap and the top do not describe one solid shape.",
+   "severity": "major"
+  },
+  {
+   "where": "Front lid compared with the right side wall",
+   "what": "The front face is drawn flat-on with no shrinking: it is symmetrical, its sides are vertical and its top and bottom edges are level. Yet the side wall shows at a steep angle, as wide as half the front, which only happens when the coffin is turned well away from the camera. The front should narrow toward its right edge and its top and bottom edges should slope toward the side's vanishing point.",
+   "severity": "minor"
+  },
+  {
+   "where": "Top face compared with the horizon",
+   "what": "The coffin's top reaches above the horizon in the grass, so it sits above eye level, yet its top face is shown from above. For the top to be visible, the camera must be higher and the horizon must be above the coffin.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Upright wooden coffin standing on grass, seen in a three-quarter view from slightly above. The front lid face and the right side wall both recede toward the same vanishing point, so the front narrows slightly toward its right edge. The horizon is above the top of the coffin, consistent with its top face being visible. Either the lid is fully closed and flush with the box, with one continuous top, or the lid is clearly swung open on a hinge with its own separate top edge and the box's open top rim visible behind it."
+}

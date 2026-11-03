@@ -1,0 +1,16 @@
+{
+ "survey": "A western saddle hangs over a wooden fence rail that runs left to right, with a fence post at the far right of the card. The seat runs along the rail, with the horn on the left and the cantle on the right. The camera is a little above the saddle: you can see the top of the horn cap as an ellipse, and the seat's suede inlay is foreshortened. The front skirt hangs flat and faces the camera. A second skirt is visible behind the rail on the right, so the saddle straddles the rail correctly. A centre strap with a buckle comes down from the front skirt to a stirrup that faces the camera. The far stirrup hangs behind it, a little higher and to the right, which fits the raised camera. The rail goes in behind the front skirt on the left and comes out between the two skirts on the right.",
+ "errors": [
+  {
+   "where": "Fence rail, left and right of the saddle",
+   "what": "The rail does not continue as one straight beam behind the saddle. Each visible piece is drawn level, but the right piece sits clearly lower than the left (its top edge is well below the left piece's top edge) and also looks a little thicker. A straight horizontal rail would come out on the right at the same height it went in on the left. Like the broken pole in the umbrella example, the two pieces don't line up.",
+   "severity": "major"
+  },
+  {
+   "where": "Fence rail and post compared with the saddle top",
+   "what": "The saddle is seen from slightly above (horn cap, top of the seat), but the rail is drawn almost purely from the front, with very little of its top face showing. So the rail looks slightly flatter on than the object resting on it.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the wooden fence rail one straight, level beam that passes behind the saddle at a single constant height and thickness, so the parts showing on the left and right of the saddle line up exactly. Use the same slightly high camera for the rail as for the saddle, so a thin strip of the rail's top face shows on both sides."
+}

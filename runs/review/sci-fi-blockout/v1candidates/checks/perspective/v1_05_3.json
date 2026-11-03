@@ -1,0 +1,11 @@
+{
+ "survey": "Image 4 is a white astronaut helmet: a large sphere sitting on a short cylindrical collar, which stands on a pale grey tabletop against a pink wall. The camera is a little above the object. The collar's top ring and its red stripe are shallow ellipses that curve downward at the front. That matches the slight top-down view and the tabletop, which is seen from above and recedes toward the right. The sphere sits in the collar's chrome ring, and the collar rests flat on the table with its shadow falling right and back. The orange visor, framed by a chrome rim, is set on the left-front of the sphere, so it should face somewhat to the viewer's left. The sphere, collar ellipses, table and contact all agree on one camera. The one weak spot is how the visor is drawn on the sphere's curve.",
+ "errors": [
+  {
+   "where": "Visor and its chrome rim, left side of the helmet sphere",
+   "what": "The visor's centre sits well left of the sphere's centre, and its left edge wraps to the sphere's left outline and pushes past it. Even so, the rim has the same thickness all the way round and the glass is a full, open oval, as if seen face-on. The left part of the rim, where the surface turns away, should narrow and bunch up, and the oval should be compressed on that side. As drawn, the visor looks like a flat front-facing sticker on a turned sphere, not an opening that follows the sphere's curve.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the visor follow the sphere's curve and match the camera: a three-quarter view of the helmet turned slightly to the left. The visor opening faces left-front, so its oval is foreshortened, narrower on the left where it wraps around the sphere. The chrome rim gets thinner and more edge-on toward the left side, and the left edge of the rim stays inside the sphere's outline."
+}

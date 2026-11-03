@@ -1,0 +1,16 @@
+{
+ "survey": "A two-storey stone house sits on a raised stone plinth on a grassy hill. The camera is slightly above it and a little to the right. The front gable wall faces the viewer almost straight on, and a thin strip of the right side wall shows, with narrower, foreshortened windows. That matches the view. A round tower with a purple cone roof is joined to the front-left corner, and the plinth wraps around its base. A horizontal stone ledge divides the two floors. The gable roof's ridge runs back to the right, and its right slope is seen from above, showing rows of shingles. A round attic window sits in the gable, drawn face-on, which fits the front wall. A brick chimney rises from the right roof slope. The front door, the step (its top face visible) and the plinth sit flat on the grass, which agrees with the raised camera. The trees and the moon in the background have no perspective conflicts.",
+ "errors": [
+  {
+   "where": "Chimney on the right roof slope",
+   "what": "The chimney leans clearly to the right and its cap tilts with it. The house's other verticals (wall corners, tower, door) are upright, so the chimney does not share their vertical direction and looks bent off the roof rather than standing on it.",
+   "severity": "minor"
+  },
+  {
+   "where": "Windows and bricks on the round tower (left)",
+   "what": "The tower is a cylinder, but its two windows near its left edge are drawn almost face-on, about as wide as the front-wall windows. Its bricks are flat rectangles that don't curve around the surface. Windows and bricks this close to the tower's edge should be narrower and should follow its curve.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the chimney stand straight up from the roof slope, parallel to the house's wall corners and the tower, with its top cap level. On the round tower, make the windows and brick rows follow the cylinder's curve: windows near the tower's left edge should be narrower and turned away, and brick courses should curve gently around the tower."
+}

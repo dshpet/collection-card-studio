@@ -1,0 +1,16 @@
+{
+ "survey": "A clear crystal ball with swirling mist and a sparkle inside, sitting on a gold pedestal stand on a wooden shelf. The stand has a wide stepped round foot on the shelf, a narrow neck, and a shallow cup with a rim. The ball rests in the cup, and the cup rim shows through the glass as a light band near the bottom. Two curved gold prongs with ball tips come up from the cup rim, one on the front-left and one on the front-right, and both pass in front of the sphere. The view is close to straight-on, a little from above. The foot sits flat on the shelf and casts a shadow, and the ball is carried by the cup, so nothing floats.",
+ "errors": [
+  {
+   "where": "Gold prongs on the left and right of the cup",
+   "what": "The two prongs should mirror each other but don't. The left one leans out further, rises higher (its tip is near the sphere's equator) and follows the curve of the glass. The right one is shorter, stands straighter and ends lower, with its tip in front of the glass instead of against its side. With an almost frontal camera, perspective can't explain the difference, so they look like two different parts rather than a matched pair of holding arms.",
+   "severity": "minor"
+  },
+  {
+   "where": "Prong count and placement around the cup",
+   "what": "There are only two prongs, and both are on the front side of the ball, with nothing matching them at the back. A real cradle spaces three or four arms evenly around the ball. Two front arms add no grip. The cup still holds the ball, so the stand works, but the arms don't make sense as a holding structure.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Gold crystal ball stand with three identical curved prongs spaced evenly around the cup rim (120 degrees apart). Each prong rises the same height and touches the side of the glass sphere at the same latitude, the front two mirroring each other exactly, and the third is partly visible behind the sphere."
+}

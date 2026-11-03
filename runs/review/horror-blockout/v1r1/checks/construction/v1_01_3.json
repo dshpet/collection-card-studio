@@ -1,0 +1,11 @@
+{
+ "survey": "A two-storey stone cottage on a grassy hill, seen at three-quarter view from the front left. Main block: two floors split by a projecting stone band. The ground floor has a plank door with a knob and one stone step in front of it, a lit window on the front and one on the right side. The upper floor has two front windows and one on the right side. Roof: a purple shingled gable faces the camera with a rounded ridge cap and a round cross-paned attic window in the gable. Its right slope runs back and to the right, and its left slope is hidden behind the tower. Tower: a round stone tower is joined to the left side of the main block. It has two lit windows, one per floor, and a conical shingled roof topped with a ball finial. Its base merges into a shared stone plinth that runs around both the tower and the house, and the plinth sits flat on the grass. Chimney: a brick chimney with a cap rises from the right roof slope. Its base is set into the shingles, but the shaft has a kink partway up, so the top section tilts back to the left over the ridge. The moon and trees are background and not part of the structure. Every wall, roof and opening rests on or attaches to something real. The door and windows sit in the walls at sensible floor heights, and the step lines up with the door.",
+ "errors": [
+  {
+   "where": "Chimney on the right roof slope",
+   "what": "The chimney shaft is bent: the lower part rises from the slope, then the top section and cap jut sideways to the left. A brick chimney is a straight vertical stack and cannot kink in mid-air. It may be meant as a whimsical crooked chimney, but as built it would not stand.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the brick chimney a straight vertical stack, rising plumb from the right roof slope, with its cap centered on top of the shaft."
+}

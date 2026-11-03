@@ -1,0 +1,16 @@
+{
+ "survey": "A two-wheeled covered cart, seen in three-quarter view from the left rear. The front faces right. Body: an open wooden plank box with a red top rail. Cover: a cream canvas tilt arching over the rear two-thirds of the box, sitting on the side rails, with the front opening visible as an arch. Driver's seat: a board on two upright blocks on top of the box's front end, just ahead of the canvas. Wheels: one pair of spoked wheels with rims, about 14 spokes each and red hubs. The near wheel is mounted on the near side, with its hub level with the bottom of the box. The far wheel shows below the box on the other side. Draft gear: a single straight pole starts under the front end of the box near the near-side corner, slopes forward and down, and ends on the ground in a short crossbar block. That block rests the cart level when parked. The cart stands on a dirt road and both wheels touch the ground.",
+ "errors": [
+  {
+   "where": "Draft pole (tongue) at the front of the box, bottom right",
+   "what": "The single pole is fixed at the near-side front corner of the box instead of at the centre line. Nothing connects it to an axle, bolster or frame; it simply comes out from under the box corner. Hitched this way, the animal would pull the cart sideways. A real two-wheeled cart would have either a centred tongue fixed to the frame or a pair of shafts, one on each side. As drawn, the pole reads as a prop stick rather than working draft gear.",
+   "severity": "major"
+  },
+  {
+   "where": "Far-side wheel, under the box behind the near wheel",
+   "what": "The far wheel is shifted well forward of the near wheel, much more than the depth of the box seen in the front face can explain. The two wheels therefore don't sit on one straight axle across the box, and the hidden axle would have to run diagonally.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Attach the draft pole at the centre of the cart's front end, fixed to the underframe or axle, and running straight forward along the cart's centre line. Alternatively, use two parallel shafts, one fixed to each side rail. Line the far wheel up exactly opposite the near wheel on one straight axle running across under the box."
+}

@@ -1,0 +1,16 @@
+{
+ "survey": "A small moon base on cratered ground. Main body: a squat white cylinder sitting flat on the regolith. It has a wide flat ledge around its top, and a clear blue glass dome sits on that ledge. White ribs run up the outside of the dome from a ring at the ledge to a round cap at the top, all evenly spaced. Airlock: a white tube with a raised band joins the cylinder wall on the left side and runs toward the camera-left. Two small block feet hold it off the ground, and its round end cap faces the camera at an angle with a yellow door and a round knob. Ladder: a straight metal ladder with two rails and four rungs. Its feet stand on the ground and its top leans against the cylinder wall, just below the ledge. The shadows sit under the body, the tube feet and the ladder, so everything rests on the ground.",
+ "errors": [
+  {
+   "where": "Metal ladder on the front-right of the main cylinder",
+   "what": "The ladder leads to the flat ledge around the dome, but nothing is up there: no hatch, door or handrail. Its rails also stop below the ledge edge instead of rising above it, so a person could not step off safely. It is a ladder that goes nowhere useful.",
+   "severity": "minor"
+  },
+  {
+   "where": "Yellow door on the airlock end cap",
+   "what": "The door is pushed off-center toward the left edge of the round end cap, almost into the rim. It is also very small and narrow for the tube's diameter, so it does not read as a working airlock door.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Center the yellow airlock door on the round end cap of the tube and make it taller, as a hatch a person could walk through. Have the ladder rails rise above the top ledge and lead to a small roof hatch on the ledge next to the dome, or remove the ladder."
+}

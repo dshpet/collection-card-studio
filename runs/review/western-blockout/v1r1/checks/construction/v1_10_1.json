@@ -1,0 +1,16 @@
+{
+ "survey": "A cartoon steam locomotive, seen at three-quarter view from the front left, on a desert track. At the front, a red buffer beam sits across the footplate, and a barred cowcatcher hangs from it down toward the rails. The boiler lies along the footplate. Its round smokebox door, with a centre knob, faces the camera. The funnel smokestack rises from the top of the smokebox, with a headlight mounted on its front. A steam dome and a brass bell sit on top of the boiler. Behind the boiler is the cab: a box with a round window in the front panel and an open side with vertical bars. Its flat roof runs forward over the boiler. A coal tender is coupled behind the cab. Running gear, near side: a cylinder under the front of the footplate, a small leading wheel, three large red driving wheels, and two small wheels under the tender. Two rods run from the cylinder area across the drivers. The near wheels sit on the near rail.",
+ "errors": [
+  {
+   "where": "Cab roof, top middle of the locomotive",
+   "what": "The cab roof sticks far forward past the cab's front wall and hangs over the steam dome and bell. Nothing holds up that front part: no posts and no wall. A flat slab floats above the boiler.",
+   "severity": "major"
+  },
+  {
+   "where": "Rods across the driving wheels",
+   "what": "The rods make no sense mechanically. A coupling rod should run level and join the same crank point on every driver. Instead, one rod slopes from a low pin on the first driver up to a higher pin on the second. The other rod runs from the cylinder past the second driver to the third, with no crosshead, so the two rods cross each other's paths. They could not turn the wheels.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "End the cab roof at the cab's front wall, just behind the steam dome and bell, so it rests on the cab walls and does not overhang the boiler. Redraw the running gear: one level coupling rod joining matching crank pins on all three driving wheels, and a piston rod from the back of the cylinder to a crosshead, with a main rod from the crosshead to the middle driver's crank pin."
+}

@@ -1,0 +1,16 @@
+{
+ "survey": "Saloon swinging doors set in a freestanding wooden frame. Frame: two square posts on block bases standing on a plank floor, joined at the top by a lintel beam that rests across both post tops. Left door leaf: hung on the left post's inner face by two brass hinges, swung slightly open toward the camera (its free edge comes forward and its rails slope down). Right door leaf: hung on the right post by two brass hinges, closed and square to the camera. Both leaves hang above the floor, as saloon doors do, and each has a spindle top section over a solid lower panel. The two leaves meet near the middle with a small gap.",
+ "errors": [
+  {
+   "where": "Left door leaf compared with right door leaf",
+   "what": "The pair is supposed to be mirrored, but the leaves don't match. The left leaf is about 15% shorter than the right one. Its bottom rail sits well above the right leaf's, and its hinges are at different heights from the right leaf's hinges. The left leaf is swung toward the camera, so perspective should make it look the same size or larger, not smaller. As drawn, the leaves could not close flush as a pair.",
+   "severity": "major"
+  },
+  {
+   "where": "Left door's hinge edge against the left post",
+   "what": "The left leaf's hinge stile overlaps the front face of the post instead of hanging inside the opening, at the post's inner face. The leaf looks pasted in front of the post rather than pivoting beside it, which a real hinge would not allow.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the two saloon door leaves an identical mirrored pair: the same height and width, the top and bottom rails aligned at the same heights, and the hinges at the same heights on both posts. Hang each leaf inside the opening, with its hinge edge on the inner face of its post rather than in front of the post. Leave a small even gap where the two leaves meet in the middle. If one leaf is shown swung open, keep its true size in perspective."
+}

@@ -1,0 +1,11 @@
+{
+ "survey": "An upright hexagonal wooden coffin stands on its foot in a grassy graveyard. The lid faces the camera almost straight on, with a raised cross sitting flat on it. The coffin's right side wall turns away from the viewer. The lid's shoulder bend and the side wall's shoulder bend are at the same height, and the coffin narrows evenly toward the foot. The lid is slightly ajar on the right, and purple lining shows in the gap between the lid edge and the side wall. The top of the coffin shows as a thin rounded strip, as if seen from slightly above. The foot is buried in grass tufts. The bottom of the side wall sits a little higher than the bottom of the lid, which is right for a side that goes back from a camera above the ground. The grass is seen from fairly high up, with the horizon (behind the bushes) about a third of the way down the card. The shadow falls back and to the right, lying flat on the ground. The camera is slightly above and to the right. The lid, the side wall and the ground mostly agree with that view.",
+ "errors": [
+  {
+   "where": "top end of the coffin (head)",
+   "what": "The coffin's top is well above the horizon line set by the receding grass and the bushes. From that eye level the top face should be hidden, or seen slightly from below. Instead it is drawn as a strip seen from above, flat with the lid's top edge. The head of the coffin and the ground suggest slightly different camera heights.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Upright wooden coffin standing on grass, seen from slightly above eye level and to the right. Keep the horizon low enough, or the coffin short enough, that its flat top face is seen from above at the same angle as the ground plane. Alternatively, hide the top face entirely so the head edge reads as seen from level or below."
+}

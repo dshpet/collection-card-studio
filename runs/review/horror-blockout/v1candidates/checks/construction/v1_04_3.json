@@ -1,0 +1,16 @@
+{
+ "survey": "A black cast-iron cauldron seen from a high three-quarter angle, standing on a stone-tile floor. The pot has a round, bulging body with a thick rolled rim, and it is filled to the brim with bubbling green liquid. It has two side handles. The left one is a ring that hangs from a small lug right under the rim. The right one is a ring that hangs from a large square block set lower on the body. Two short, flared legs are visible, front-left and right, each ending in a round foot that sits on the tiles. A third tripod leg would be hidden at the back. A small fire of crossed sticks with an orange glow sits on the floor under the pot, between the legs. The fire is a normal cauldron setup, not an invented part.",
+ "errors": [
+  {
+   "where": "Side handles, left vs right",
+   "what": "The two handles should be mirror copies but are built differently. The left ring hangs from a small lug tucked right under the rim. The right ring hangs from a large square block that sticks out lower on the body. They differ in mount shape, size and height, so the pot would hang crooked if lifted by them.",
+   "severity": "major"
+  },
+  {
+   "where": "Legs",
+   "what": "Only two legs can be seen, and their spacing leaves it unclear where a third would be. Unless a back leg is hidden, the pot would not stand on two. This is only a question on a close look.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Give the cauldron two identical, mirrored ring handles: both hanging from the same small lug at the same height just below the rim, on opposite sides of the pot. Stand the pot on three evenly spaced tripod legs, with all three feet clearly resting on the floor, and keep the small fire centered underneath."
+}

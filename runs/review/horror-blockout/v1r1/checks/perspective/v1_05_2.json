@@ -1,0 +1,16 @@
+{
+ "survey": "An upright wooden coffin stands on a grass lawn, with bushes and the horizon behind it. The lid is a long hexagon seen almost straight on and carries a raised cross. The lid stands slightly open toward the right, so a strip of purple quilted lining shows between it and the box. The box's right side wall turns away to the right, and its shoulder and taper line up with the lid's. The top shows a thin flat cap with a gently curved front edge. The base rests flat on the grass and casts a shadow to the right and back. The ground is seen from moderately above, with the horizon (bush line) about a third of the way down the enlarged view. The coffin's top sits far above that eye level.",
+ "errors": [
+  {
+   "where": "Top of the coffin (cap above the lid and side wall)",
+   "what": "The top face is drawn as a thin surface seen from slightly above, with a soft front edge that bows upward. But the coffin's top is far above the horizon and eye level set by the grass and bushes, so the camera should be looking up at it. The top face should be hidden and its edges should slope like the underside of the shoulders. Two eye levels are used on one object, the same kind of mistake as the umbrella example, though smaller here.",
+   "severity": "minor"
+  },
+  {
+   "where": "Top outline of the coffin",
+   "what": "The top edge is a smooth curved arc running across both the lid and the side wall. A hexagonal box should have a top made of straight edges that meet at a corner where the front turns into the side.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Upright hexagonal wooden coffin seen from a low eye level matching the horizon. Keep the top face hidden, with the top edges drawn as straight lines meeting at a sharp corner where the front lid turns into the right side wall. Keep the same viewpoint for the lid, side wall, base and grass."
+}
