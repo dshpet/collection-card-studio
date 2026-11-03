@@ -1,0 +1,16 @@
+{
+ "survey": "A yellow duck spring rider on a sandy ground disc. The duck body faces left in a near-side view, seen slightly from above, with a wing on the near flank and a red seat on its back. A red handle peg goes through the neck. On the near side it comes out of a round yellow collar and points right, toward the duck's back. Its other end shows as a small red nub on the far side of the neck, to the left. Under the body, a blue cap sits on a metal coil spring. The coils are drawn as open ellipses, seen from above. The spring stands on a square blue base plate, which is drawn as a fairly open shape, as if seen from well above. The plate sits flat on the sand. Two pebbles lie beside it.",
+ "errors": [
+  {
+   "where": "Red handle through the duck's neck",
+   "what": "The collar on the near side of the neck is drawn as a round ring facing the camera, so the handle's axis should point at the viewer and its end should look short. Instead the handle is drawn at full length, pointing right along the duck's body. The far nub sticks out on the left of the neck, so the handle seems to run front to back through the neck instead of straight across it. The collar and the handle do not share one direction.",
+   "severity": "major"
+  },
+  {
+   "where": "Blue base plate and spring compared with the duck body",
+   "what": "The square base plate and the lower spring coils are seen from well above. The duck body and the thin blue cap under it are seen nearly level. The bottom of the toy uses a higher camera than the top.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the red handle go straight across the duck's neck, from side to side. On the near side, show it coming toward the viewer out of the round collar, short and foreshortened with its round end visible. Show the opposite end only as a matching short stub on the far side. Draw the whole spring rider from one slightly raised camera. The square base plate should be only a little flattened, matching how open the spring coils and the cap under the body look."
+}

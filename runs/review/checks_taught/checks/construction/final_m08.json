@@ -1,0 +1,11 @@
+{
+ "survey": "A cream paper envelope, puffy and rounded, turned slightly toward the camera with its opening up. The open triangular flap stands up behind the contents and is attached along the envelope's top back edge. Three photo prints with white borders stick out of the opening. The front print, a coastal village with a boat, sits in front of two prints that are slightly offset to the right. All three sit inside the pocket between the back panel and the front V-shaped panel. The front V panel cuts off the bottom of the front photo, which is correct for something inside a pocket. A pink stamp with a house on it is on the lower right of the visible face, partly covered by a pink postmark with wavy cancellation lines. The photos are held by the pocket, and the envelope's folds and seams are consistent with a real envelope.",
+ "errors": [
+  {
+   "where": "Pink stamp and postmark on the lower right of the visible face",
+   "what": "The face we see has the opening, the raised flap and the V-shaped pocket panel, so it is the back of the envelope. Real envelopes carry the stamp and postmark on the plain front, the address side, not on the flap side.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Move the postage stamp and postmark off the flap side of the envelope, or leave the flap side without a stamp. The open envelope's back, with the flap and the V-shaped pocket, should have no stamp."
+}

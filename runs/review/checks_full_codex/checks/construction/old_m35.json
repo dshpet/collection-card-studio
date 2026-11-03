@@ -1,0 +1,11 @@
+{
+ "survey": "A square stone game table has a recessed checkerboard on its thick tabletop. The tabletop rests on a central pedestal attached to a broad base on the grass. Two round stools face the table, each with a seat supported by a short pedestal and a circular base touching the ground. The elevated camera shows the playing surface and the fronts of the supports.",
+ "errors": [
+  {
+   "where": "Checkerboard on the tabletop",
+   "what": "The board has nine rows and nine columns instead of the eight-by-eight grid required for chess or checkers.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Replace the playing surface with an accurate 8-by-8 checkerboard containing 64 alternating squares, preserving the tabletop's perspective and stone border."
+}

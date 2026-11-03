@@ -1,0 +1,21 @@
+{
+ "survey": "The object is a DJ controller: a rounded, light-blue rectangular deck on short dark-blue feet, standing on a flat orange floor, with a pair of headphones resting on the floor in front of its right corner. The camera looks down from a raised three-quarter front view, so the deck's top face is foreshortened and its front side face is visible. On the top face are two purple jog wheels, one at each end, set into the deck as raised discs. A recessed centre panel between them holds two slider tracks with green fader caps. Three yellow-capped knobs sit on a small raised block behind the centre panel. Rows of square pads (yellow, green, pink) run along the front edge on both sides, with wider pink pads in front of the centre panel. The feet carry the body onto the floor. The headphones sit upright on the floor: the headband arches up and back toward the deck, and the near ear cup faces the viewer at a slight angle.",
+ "errors": [
+  {
+   "where": "Both jog wheels (left and right purple discs on the top face)",
+   "what": "The wheels are drawn as almost round circles, as if their tops faced the camera, but they lie flat on the deck's top face. That face is clearly foreshortened: the centre panel and the deck outline are squashed vertically far more than the wheels. So the wheels look tipped up toward the viewer instead of lying in the deck surface. Their ellipses should be as flat as the top face.",
+   "severity": "major"
+  },
+  {
+   "where": "The three yellow-capped knobs on the raised block behind the centre panel",
+   "what": "The knobs are seen almost level from the side: tall cylinders with only a thin sliver of top showing. The deck around them is seen clearly from above. They should show more of their round tops, at the same angle as the jog wheels and pads.",
+   "severity": "minor"
+  },
+  {
+   "where": "Pad rows along the front edge (yellow/green/pink pads on left and right, pink pads in the centre)",
+   "what": "The pads are drawn mostly front-on, with their faces turned toward the viewer, rather than lying on the receding top face. Their tops show little foreshortening compared with the deck surface they sit on.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Seen from one raised three-quarter view looking down at the DJ controller. The two jog wheels lie flat in the top deck surface and are drawn as flattened ellipses matching the deck's foreshortening, not as near-circles facing the camera. The three knobs behind the centre panel show their round tops from the same downward angle. The square pads lie flat on the top face, with foreshortened tops and rows parallel to the deck's front edge."
+}

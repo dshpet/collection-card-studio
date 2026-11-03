@@ -1,0 +1,11 @@
+{
+ "survey": "A toy-like DJ controller lies flat on an orange floor, seen from a high three-quarter view looking down and to the right. It has three joined modules. The left deck sits in front with a large jog platter, a red display, a 2×4 block of colored pads and a row of yellow/green buttons along its front edge. The right deck sits further back with the same layout. The center mixer joins them and has a small screen that leans toward the camera, a row of knobs and two or three fader slots. The deck tops are flat, and both platters are horizontal ellipses with matching flatness, so they agree with the high camera. The pad grids and button rows run parallel to each deck's front and side edges and shrink slightly toward the back. Each module's side wall is visible under its top and has a soft contact shadow on the floor. Blue over-ear headphones rest on the floor in front and to the right. The headband arcs upward, both cups stand on their rims and face the viewer at an angle, and the contact shadows match the same floor plane.",
+ "errors": [
+  {
+   "where": "Center mixer, fader slots and fader caps between the two decks",
+   "what": "The fader slots are drawn nearly straight up and down on screen with front-facing caps. On the rest of the deck surface, the depth direction recedes diagonally (up and to the right, parallel to the decks' side edges). So the faders do not quite follow the surface they sit on and look a little pasted on. The tilt is small and stylized, so this is only noticeable on a close look.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the mixer's fader slots parallel to the deck's side edges so they recede diagonally into the surface with the same tilt as the pad rows, and show the fader caps from the same high three-quarter angle as the knobs and platters."
+}

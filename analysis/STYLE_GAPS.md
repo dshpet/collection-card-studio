@@ -1,5 +1,16 @@
 # Style mismatches and fixes
 
+## Human rating, 2026-11-03
+
+The user rated all 80 blind twins with `scripts/rate_ui.py`. They found the generated card 31 of 32 times in the old style and 24 of 32 in the final style, choosing a side each time. Model reviewers were at chance on the same final style. **So the final style is closer, but a person still sees through most of it, and the models do not.** Every model result below should be read with that in mind.
+
+What the user named:
+- **Style:** too round, glossy and toy-like, short of the real cards' grounded realism. The real cards look like rendered 3D models, while ours look like illustrations of 3D.
+- **Construction:** objects that could not exist, such as headphone cables ending in three strands, a folding chair that could not fold, a pier that leads nowhere, ropes ending in the air.
+- **Perspective:** parts seen from different cameras, such as calculator keys drawn front-on on a tilted body.
+
+None of the nine style specialists judged construction or perspective, so two checkers were added. Taught with the user's marked cards and shown a full-size crop, they catch 11 of 16 held-out construction errors and 6 of 6 perspective errors the user flagged. They also flag 3 and 5 of 20 real cards. Without the full-size crop they caught 5 of 16, and GPT-6.1 caught 1 of 16, so it is not used.
+
 The first run looked off to a human, yet every automatic check passed it. This file records what was wrong, why the checks missed it, and what fixed it.
 
 ## How the gap was measured

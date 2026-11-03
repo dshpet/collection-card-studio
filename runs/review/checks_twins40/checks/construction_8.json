@@ -1,0 +1,83 @@
+{
+ "cards": [
+  {
+   "card": "c028",
+   "errors": [
+    {
+     "where": "lower end of the rope wrapped around the shank, near the crown",
+     "what": "The rope's lower end stops against the shank with no knot, splice or tie, so it is a loose end with nothing holding it",
+     "severity": "minor"
+    }
+   ],
+   "fix": "Finish the lower end of the rope with a visible knot or a tied-off whipping around the anchor shank so it is clearly fastened"
+  },
+  {
+   "card": "c026",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c037",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c013",
+   "errors": [
+    {
+     "where": "keypad, right column and bottom row",
+     "what": "The calculator has digits, a decimal point and ÷ × − + keys but no equals (=) key, so it could not give a result",
+     "severity": "major"
+    }
+   ],
+   "fix": "Add an equals (=) key to the calculator keypad, for example by making the bottom-right key '=' and placing '+' above it"
+  },
+  {
+   "card": "c049",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c008",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c075",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c109",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c016",
+   "errors": [
+    {
+     "where": "the stack of layers under the top map panel",
+     "what": "The map is drawn as three separate curled sheets stacked on top of each other, with open edges on both sides and no folded edge joining them. Real paper folded like this would be joined at the fold edges, and the flat top sheet with 2x2 creases does not match the curled layers under it",
+     "severity": "major"
+    }
+   ],
+   "fix": "Draw a single paper map folded accordion-style, with the layers joined at visible folded edges, or show the map simply lying flat with light fold creases"
+  },
+  {
+   "card": "c014",
+   "errors": [
+    {
+     "where": "bottom row, key between 0 and +",
+     "what": "One key is completely blank with no symbol (where the decimal point belongs)",
+     "severity": "minor"
+    },
+    {
+     "where": "keypad, right column and bottom row",
+     "what": "The calculator has no equals (=) key, so it could not give a result",
+     "severity": "major"
+    }
+   ],
+   "fix": "Put a decimal point on the blank key next to 0 and add an equals (=) key to the keypad, for example at the bottom right with '+' above it"
+  }
+ ]
+}

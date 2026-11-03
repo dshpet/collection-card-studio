@@ -1,0 +1,11 @@
+{
+ "survey": "A DJ controller seen from the front and above (about 35–40°), with a pair of headphones resting on the floor in front of its right end. The controller is a rounded slab standing on four short feet that meet the orange floor and cast shadows on it. Its top face is foreshortened, and on it sit two jog platters on the left and right, a central fader panel with two sliders, three knobs on a raised strip at the back, and rows of square pads: one along the front-left edge, one along the front-center and one at mid-depth on the right. The pads and knobs show their top faces foreshortened and their front faces visible, which matches the camera. The headphones stand upright on their ear cups. The cups face front-right and are drawn as ellipses that suit a vertical surface turned partly away. The headband arcs up and back, and the cups sit flat on the floor. The verticals stay vertical, and the front and back edges of the controller are close to parallel, which is acceptable for a mild stylized view.",
+ "errors": [
+  {
+   "where": "Both jog platters, most visibly the left one",
+   "what": "The platters' top ellipses are rounder than the controller's top face allows. Their height-to-width ratio is about 0.75–0.85, but the pads, fader panel and deck outline show the top face squashed to roughly 0.6–0.65. As a result, the platters look tipped up toward the viewer instead of lying flat in the deck surface.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw both jog platters lying flat in the controller's top surface, with ellipses flattened to the same degree as the top face. They should be noticeably wider than tall, about 0.6 height to width, with their front rim walls only slightly visible, so they match the pads and fader panel."
+}

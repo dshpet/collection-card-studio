@@ -1,0 +1,16 @@
+{
+ "survey": "Coin-operated tower viewer on a rooftop with a city behind. Parts: (1) a horizontal binocular head shaped like a rounded capsule; two eyepiece lenses sit at its left end and face front-left toward the viewer as near-perfect circles, and the body stretches back to the right. (2) A round hub or cap at the right end of the head, drawn as a wide ellipse that also faces the viewer. (3) A U-shaped yoke: a squarish block under the head with a coin slot on a flat face pointed straight at the camera, and two curved arms rising to the head's sides (the left arm is behind the block, the right arm hooks into the right hub). (4) A cylindrical pedestal with a collar ring; its top ellipse is seen slightly from above. The pedestal stands vertical, and the railing and horizon put the camera at about head height.",
+ "errors": [
+  {
+   "where": "Binocular head: left eyepieces and right end hub",
+   "what": "The head is one horizontal cylinder, but both ends face the camera. The lenses on the left end are near-circles seen face-on, and the hub on the right end is also a wide ellipse facing the viewer. With the body running back to the right, the right end should be hidden or show only as a thin edge. The two round ends are drawn from two different viewpoints.",
+   "severity": "major"
+  },
+  {
+   "where": "Yoke block with coin slot",
+   "what": "The block and its coin-slot plate face the camera squarely, while the head above is turned three-quarters to the left. The block shows no turning side face and does not line up with the head's axis.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Coin-operated binocular tower viewer seen from one consistent three-quarter front-left view at eye level. The two eyepieces face the viewer as slightly narrowed ellipses. The binocular body recedes back to the right, so its far end is hidden and the right-side pivot hub shows only as a thin ellipse on the side. The yoke block under the head turns with the head, showing its front face with the coin slot and a narrower side face. The pedestal stays vertical with collar ellipses seen slightly from above."
+}

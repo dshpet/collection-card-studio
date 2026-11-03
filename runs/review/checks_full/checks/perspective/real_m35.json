@@ -1,0 +1,16 @@
+{
+ "survey": "A stone chess table in a park, seen from a raised three-quarter view. The thick slab tabletop has a near-horizontal front edge, and its side edges run back and up. A dark inset board with cream and navy square tiles is set into the top surface. The top sits on a square box pedestal, seen almost front-on, and the pedestal stands on a thin rectangular base slab lying flat in the grass. A round, mushroom-shaped stool stands at the front right; its top is an open ellipse that roughly matches the angle of the tabletop. A second stool at the back left is mostly hidden by the table. The stools, base slab and pedestal all rest on the same flat ground, and their contact matches it.",
+ "errors": [
+  {
+   "where": "Checkerboard tiles on the tabletop",
+   "what": "The rows of tiles do not run parallel to the board's frame. The frame's front edge is nearly horizontal, but the tile rows tilt diagonally down to the right, so the grid looks rotated inside its frame instead of lying flat in the same receding plane. The tiles are also drawn at about the same size and shape from front to back, with no shrinking towards the back edge, and the grid does not fill the inset evenly.",
+   "severity": "major"
+  },
+  {
+   "where": "Pedestal vs tabletop",
+   "what": "The box pedestal is drawn almost straight-on, showing only a flat front face. The tabletop above it is seen from well above, with its sides clearly running back. The pedestal's top and side faces don't recede in the same way, so it looks a little flatter and more frontal than the slab it holds up.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Stone chess table seen from one raised three-quarter view: an 8x8 checkerboard of alternating cream and navy squares fills the inset board. The rows and columns of squares run exactly parallel to the board frame's edges, and the squares get gradually smaller and more foreshortened towards the back edge. The square pedestal and base slab are seen from the same angle as the tabletop, with their side faces running back to the same vanishing direction."
+}

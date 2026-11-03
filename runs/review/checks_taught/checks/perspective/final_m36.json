@@ -1,0 +1,11 @@
+{
+ "survey": "A small wooden pier seen from slightly above and to the front-left, with the sea horizon high in the frame (about y≈158 in the card). The plank deck is a near-parallelogram. Its front edge and planks run horizontally, and its left rail and right edge recede up and to the right. The planks narrow toward the back, and their ends step to the right along the receding right edge, so they follow the deck surface. Four round posts mark the corners. The front-left post stands on wet sand with a rope coil wrapped around it. The front-right post stands in the shallows with a lifebuoy hanging flat toward the camera from a rope on its top. The two back posts stand in deeper water behind the deck. Short support legs under the front edge go down into the water. A rail joins the front-left post to the back-left post, and a short rail runs along the back-right side. The post tops are ellipses seen from above, and the waterlines at the posts sit lower toward the front, which matches the receding ground.",
+ "errors": [
+  {
+   "where": "Top of the back-left post (and nearly the back-right post), at the sea horizon",
+   "what": "The post's top is drawn as a visible ellipse seen from above, but it reaches up to or just past the horizon line, which is the camera's eye level. At that height its top face should collapse to a near-flat line, or not show at all. Here it uses the same downward view as the front posts. This is a slight second viewpoint for the far posts.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Keep one eye-level camera: the back posts' tops sit at the sea horizon, so draw their top faces as very thin, nearly flat ellipses (or hidden), while the front posts, which sit lower, show rounder top ellipses."
+}

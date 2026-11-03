@@ -1,0 +1,16 @@
+{
+ "survey": "A stage spotlight hangs from a lattice truss at the top. A dark round clamp grips the truss's lower chord. Under it, a short pipe drops and bends 90° in an elbow into the top bar of a U-shaped yoke. The yoke's two arms run down both sides of a cylindrical lamp body. The near (right) arm pivots on a round knob in the middle of the body's side. The far arm is hidden behind the body. The body turns toward the lower left, and its front face has a rim holding three round lenses (yellow, cyan, red) that throw a coloured beam. A short open-ended pipe stub sticks out of the underside of the body, below the yoke pivot.",
+ "errors": [
+  {
+   "where": "Underside of the lamp body, below the pivot knob",
+   "what": "A short cylindrical pipe stub with an open end comes out of the bottom of the housing. It connects to nothing and has no purpose. It looks like a second copy of the hanging elbow pipe, and real stage fixtures have no such part.",
+   "severity": "minor"
+  },
+  {
+   "where": "Where the elbow pipe meets the yoke's top bar",
+   "what": "The hanging pipe joins the yoke at its left corner instead of the middle of the top bar. That puts the light's weight off-centre on the clamp, and the fixture would hang crooked instead of being balanced under the truss.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Remove the pipe stub under the spotlight body so the bottom of the housing is a smooth, closed cylinder. Mount the yoke from the centre of its top bar, with a straight short pipe going up to the truss clamp so the light hangs balanced under the truss."
+}

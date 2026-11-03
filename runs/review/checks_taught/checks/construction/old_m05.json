@@ -1,0 +1,11 @@
+{
+ "survey": "A handheld calculator seen from the front at a slight tilt, floating as an icon on a yellow π background. Main parts: (1) a rounded dark-blue plastic body with a thick bevelled rim; (2) a red four-cell solar strip set into the top edge, flush with the rim; (3) a recessed grey LCD screen below it, with no digits shown; (4) the keypad, set into the body face: white number keys in rows 7-8-9, 4-5-6 and 1-2-3, a wide 0 key, and a blank white key next to it; (5) a column of cyan operator keys on the right: ÷, ×, − and a larger + key in the bottom right corner. All keys sit in the face and look pressable. They are evenly spaced, with no overlaps or merges. The rounded body corners match.",
+ "errors": [
+  {
+   "where": "Bottom row of the keypad, the white key between 0 and the + key",
+   "what": "The key is blank, and the calculator has no '=' key anywhere. Without an equals key the calculator cannot give a result, so it cannot do its job. The empty key reads as a missing part, not a simplification.",
+   "severity": "major"
+  }
+ ],
+ "fix": "Put an '=' symbol on the blank white key between the 0 key and the + key, in the same dark-blue rounded font as the number keys, so the calculator has a working equals key."
+}

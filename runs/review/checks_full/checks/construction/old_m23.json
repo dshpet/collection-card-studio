@@ -1,0 +1,21 @@
+{
+ "survey": "A poolside water slide. A single thick yellow column stands on a round foot on the tiles. It holds up a square yellow platform, with one diagonal brace from the column to the platform's underside. Yellow post-and-rail railings run along the back and sides of the platform. The front-right edge is open, and a blue ladder there runs from the platform edge down to two feet on the tiles. A green open chute filled with running water leaves the platform's left side. It first arches up into a raised loop above the deck, drops on the left, then winds through an S-curve and a wide loop to the right around the column. Its last stretch runs down past the column and pours over the pool edge into the water. The chute faces the camera at three-quarter view. No brackets or struts are visible between the chute and the column or platform.",
+ "errors": [
+  {
+   "where": "Top of the chute, where it leaves the platform",
+   "what": "The chute climbs from the platform into an arch that sits higher than the deck before it starts to descend. Water and riders would have to go uphill, so the slide could not work from its start.",
+   "severity": "major"
+  },
+  {
+   "where": "Middle coils, around the column",
+   "what": "The chute's path cannot be followed. The S-curve and the wide right-hand loop cross and merge into each other with no clear over/under order, and stretches seem to pass through one another. A rider could not trace one continuous downhill channel from the platform to the exit.",
+   "severity": "major"
+  },
+  {
+   "where": "Between the chute coils and the column/platform",
+   "what": "Apart from where it leaves the platform, the winding chute touches nothing. No brackets or struts connect it to the column, so a long water-filled chute is floating in the air.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the green chute one continuous channel that only goes downhill. It starts level with the platform deck at the platform's edge, never rises above the deck, and spirals down around the yellow column in clear, evenly spaced turns. Each turn passes cleanly above or below the next, with no crossing or merging. Connect the chute to the column with short support brackets at each turn, and end it at the pool edge, pouring into the water."
+}

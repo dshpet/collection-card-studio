@@ -1,0 +1,16 @@
+{
+ "survey": "A cartoon fuel pump in a desert. The orange body is a rounded box seen in near-front three-quarter view: the front face is almost square to the camera, a narrow right side face turns away, and only a thin sliver of the top shows, so the eye level is just above the pump. The front face holds a counter window and a round gauge, both drawn almost front-on, which suits a face that turns only slightly. On the right side a grey holster holds the nozzle, and its hose loops down to the ground. A short dark stem on top supports a wide red cap with a white band. The cap is drawn symmetric and front-on, with its top only slightly visible. The pump stands on a small grey step on a flat sand-and-concrete slab. The slab's top is shown large and steeply foreshortened, its edges rotated relative to the pump, and its left edge runs sharply down-left to the bottom corner of the card.",
+ "errors": [
+  {
+   "where": "Ground slab and plinth under the pump",
+   "what": "The slab is seen from much higher than the pump. Its top face is shown wide open, as if from a high bird's-eye view, and its edges run off at a steep diagonal. The pump body above it shows almost no top face, and its bottom edge sits nearly level. The pump and the ground it stands on use two different cameras, so the pump looks pasted onto the slab rather than standing on it.",
+   "severity": "major"
+  },
+  {
+   "where": "Red cap on top of the pump",
+   "what": "The cap is drawn symmetric and straight front-on, with level edges and no visible right end. The body below it is turned to show its right side face. The cap does not turn with the body it is mounted on.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the ground slab from the same slightly-above eye level as the pump: a thin, shallow top face whose front edge runs parallel to the pump's front face and whose side edges recede toward the same vanishing point as the pump's right side. Turn the red cap with the pump body so its right end shows a narrow side face, with its edges parallel to the body's top edges."
+}

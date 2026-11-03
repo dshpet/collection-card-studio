@@ -1,0 +1,16 @@
+{
+ "survey": "A red British telephone box, seen in three-quarter view. It stands on a purple plinth that touches the floor. On top is a domed roof, with a crown and a blank sign panel on the front face and the side face. The front is a single glazed door with a red frame and a grid of glazing bars. Its yellow pull handle is on the right edge and is fixed to a horizontal glazing bar. The side wall is a fixed glazed panel. A blue payphone with a keypad, a small screen and a handset on its right hangs in the middle of the front door. A coiled cord hangs below it. Roof, walls and plinth stack and join correctly, and the box stands level on the ground.",
+ "errors": [
+  {
+   "where": "Payphone in the centre of the front door",
+   "what": "The payphone is drawn on top of the door's glazing. It covers the vertical glazing bar instead of sitting behind the glass on the back wall. So it seems stuck to the outside of the door or floating in the window, and nothing holds it up. A real payphone is mounted on the inside back wall and is seen through the glass.",
+   "severity": "major"
+  },
+  {
+   "where": "Payphone handset cord",
+   "what": "The coiled cord drops from the bottom of the phone body and loops back up toward it. It does not clearly run from the handset to the body.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Mount the payphone inside the booth on the back wall, seen through the glass of the front door, with the door's glazing bars passing in front of it. Run a coiled cord from the bottom of the handset to the side of the phone body."
+}

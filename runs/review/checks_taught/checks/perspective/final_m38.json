@@ -1,0 +1,11 @@
+{
+ "survey": "Coin-operated tower viewer seen almost frontally from about head height. The rounded-triangle head faces the camera: twin lenses are near-circular rings and the coin plate is a flat front rectangle. A U-shaped yoke holds the head by pivot hubs on the left and right sides, with a crank handle out to the right. The yoke's bottom wraps a short neck above a silver collar and a round post. The collar and post rings curve downward, so they are seen slightly from above, matching the tiled floor and the railing receding behind. Overall one consistent, mostly frontal view, with one inconsistency at the side pivots.",
+ "errors": [
+  {
+   "where": "Right pivot hub where the yoke meets the head (top right, by the crank)",
+   "what": "The two side pivots share one horizontal axle, so in this frontal view both should look like narrow side-on stubs. The left hub does, but the right hub shows a nearly round cap face to the viewer, as if seen in a three-quarter view.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw both side pivot hubs of the binocular viewer as mirror images in the same frontal view: short cylinders sticking out sideways, each end cap a narrow vertical ellipse seen nearly edge-on. The crank handle comes out of the right hub along that same axle."
+}

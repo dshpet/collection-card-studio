@@ -1,0 +1,16 @@
+{
+ "survey": "A pool water slide seen from a fairly high three-quarter view, on a tiled deck beside a curved pool. A yellow square platform with a railing sits on one thick yellow pole. The pole's round base rests on the deck, and its ellipse matches the high view. A diagonal yellow brace joins the pole to the platform. A blue ladder runs from the platform's right front corner down to the deck. Its rails stay parallel, its rungs are seen slightly from above, and its feet sit flat on the tiles. The railing posts stay vertical. The platform top and the deck tiles share the same high viewpoint, and the tile rows follow the curve of the pool edge. A green open-channel slide leaves the platform's left edge, turns in a tight hairpin to the upper left, comes back right, and wraps in a loop around the pole. It then runs down toward the viewer and pours water over the pool edge. The water inside the channel is seen from above throughout, which matches the camera.",
+ "errors": [
+  {
+   "where": "Middle of the green slide, where the band coming back from the upper hairpin crosses the lower loop around the pole (center of the object)",
+   "what": "The overlaps don't describe one continuous track in 3D. The band coming back from the hairpin passes in front of the lower loop and then blends into that loop's front edge. Meanwhile, the back rim of the lower loop appears from behind that band without starting anywhere. The front and back layers don't agree, so the loop reads as a closed ring with a second channel merging into it, not as one spiral going down around the pole. You can't trace a single path from the platform to the pool.",
+   "severity": "major"
+  },
+  {
+   "where": "Lower green loop around the yellow pole",
+   "what": "The loop is meant to wrap around the pole, but the pole shows only in the gap between the two bands. Nowhere does the loop clearly pass behind the pole on one side and in front of it on the other, so the spiral's depth around the pole is unclear.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the green slide as one continuous open channel that you can trace with no breaks. It starts at the left edge of the yellow platform, spirals down once around the yellow pole, and ends over the pool edge. Where it goes around the pole, the back part of the turn is hidden behind the pole and the front part passes in front of it. Each turn sits lower than the one above it, so no section merges into or crosses through another. Keep the same high three-quarter camera for the platform, the ladder, the slide and the tiled deck."
+}

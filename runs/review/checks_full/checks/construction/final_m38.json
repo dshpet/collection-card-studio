@@ -1,0 +1,21 @@
+{
+ "survey": "This is a coin-operated tower viewer (sightseeing binoculars) on a rooftop. A blue post rises from the floor to a silver collar ring. Above the collar, a short neck holds a U-shaped yoke. The yoke's two arms curve up to round silver pivot discs on each side of the rounded triangular head. The head faces the camera and shows two large blue lenses in silver rims. Below the lenses is a riveted coin plate with a slot and a round button. A crank handle sticks out to the right from the yoke's right arm, below the pivot disc. The neck also runs straight up into the bottom of the head.",
+ "errors": [
+  {
+   "where": "Bottom of the head, between the yoke arms",
+   "what": "The neck joins the underside of the head solidly, and the yoke also holds the head at two side pivots. If the head is rigidly mounted on the neck, the side pivots do nothing and the head cannot tilt. On a real viewer the head hangs only from the yoke pivots and has clearance underneath.",
+   "severity": "minor"
+  },
+  {
+   "where": "Crank handle on the right yoke arm, below the pivot disc",
+   "what": "The handle comes out of the middle of the fixed yoke arm with no hub, so turning it could not tilt or pan the head. On real viewers the handles are fixed to the head at or next to the pivot.",
+   "severity": "minor"
+  },
+  {
+   "where": "Front face of the head (lenses and coin plate)",
+   "what": "The large blue lenses read as objective lenses facing the view, but the coin plate is on that same face. Coin plates sit on the user's side under the eyepieces, so either the lenses or the coin plate is on the wrong side. The lenses also have no eye cups.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Coin-operated tower viewer: the head hangs only from the two side pivots at the top of the U-shaped yoke, with a clear gap between the bottom of the head and the yoke's central stem. The crank handle comes out of the head at the right pivot hub, not from the yoke arm. The binocular eyepieces have rubber eye cups and sit on the same side as the coin plate."
+}

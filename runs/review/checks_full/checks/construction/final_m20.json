@@ -1,0 +1,21 @@
+{
+ "survey": "The card shows a cartoon three-masted sailing ship in waves, seen from the front-left quarter.\n- **Hull:** one wooden hull with a high curved bow on the left, a raised stern deck with a railing on the right, a low waist railing between them and three brass portholes on the side. It sits in the water, cut off at the waterline with spray at the bow.\n- **Masts:** three masts (fore, main, mizzen) stand up from the deck behind the railings. The main mast has a collar at deck level. Each mast ends in a ball-topped pole with a pennant flag.\n- **Yards:** each mast carries one horizontal yard near its top. Rope lifts run from knots at the mast top down to both yard ends, wrapped at several points along the yard.\n- **Sails:** one billowing square sail hangs from each yard and curves forward in the wind. The main sail overlaps the fore and mizzen sails.\n- **Ropes to the deck:** a few lines run from the lower sail corners or masts down to the deck inside the bulwarks.\n- **Simplifications, not errors:** there is no bowsprit, no standing shrouds and no rudder.\n\nOverall the ship is coherent: the masts stand on the deck, the yards hang from the masts, the sails hang from the yards, and the hull floats.",
+ "errors": [
+  {
+   "where": "Fore sail (left), outer lower corner near the bow",
+   "what": "The lower corner pointing out over the bow hangs free with no sheet rope. The sail's inner corner and the other sails do have lines down to the deck, so this one corner is just loose cloth with nothing holding it.",
+   "severity": "minor"
+  },
+  {
+   "where": "Fore mast, between the yard and the deck",
+   "what": "The part of the fore mast below the sail does not line up with the part above the yard. It is shifted sideways, so it looks like two separate poles rather than one straight mast through the sail.",
+   "severity": "minor"
+  },
+  {
+   "where": "Ropes between the fore and main sails, running down to the deck",
+   "what": "Some of the lines going down to the deck between the fore and main masts start from no clear point. One appears out of the sail overlap mid-air instead of from a sail corner or the mast, and these lines cross each other without any clear purpose.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the fore mast one straight continuous pole from the deck, through the sail, to the top. Give every lower corner of each sail a sheet rope running down to a cleat on the deck or railing, including the fore sail's outer corner over the bow. Every rope should start at a sail corner, a yard end or the mast, and end at the deck or bulwark, with no lines starting in mid-air."
+}

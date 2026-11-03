@@ -1,0 +1,16 @@
+{
+ "survey": "A wooden pier runs from the beach out to sea and is seen from the front-left at three-quarter view. There are four round corner posts. The front-left post stands in the sand at the waterline and has a rope coiled around it near the top. The front-right post stands in shallow water, and a red-and-white life ring hangs from a peg on its front face by a short rope loop. The two back posts stand in the water at the far end. The deck is made of planks running across the pier, held by side beams that butt into the corner posts. Under the deck, one pile goes down into the water at mid-span. Two short block stubs also hang under the front edge of the deck. Low railings run along both sides, from the front-left post to the back-left post and from the right front area to the back-right post. Each railing has one short upright post in the middle that stands on the deck edge. The near end of the deck starts at the left post on the shoreline, so you can walk onto the pier from the beach.",
+ "errors": [
+  {
+   "where": "Under the front edge of the deck, the two short blocks at the left (near the front-left post) and at the right (near the front-right post)",
+   "what": "These look like piles or cross-beam ends, but they stop in mid-air above the water. They neither reach the seabed nor connect to a crossbeam, so they support nothing.",
+   "severity": "minor"
+  },
+  {
+   "where": "Rope coiled around the front-left post",
+   "what": "The rope is three closed rings with no start or end. It isn't tied off, it isn't attached to anything, and it does no job (no mooring line comes off it), so as a rope it could not exist.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Extend the support blocks under the front edge of the deck into full wooden piles that go down into the water and sand, or replace them with one crossbeam running between the two front posts. Show the rope on the front-left post as a coil tied off with a knot, with one loose end hanging down or a mooring line running from it."
+}

@@ -1,0 +1,16 @@
+{
+ "survey": "An open pirate treasure chest sits on sand under water. The box is a wooden crate with gold corner bands, a gold top rim and a gold lock plate with a keyhole on the front. It sits flat on the sand, and its corner feet touch the ground. Gold coins are heaped inside with a blue and a pink gem, and two loose coins and a shell lie on the sand in front. The domed lid has gold bands, a semicircular gold end cap on the right and a hasp tab at the centre of its front edge. The lid is raised above the box, but its domed outer face and the hasp face up and toward the viewer, and its dark underside faces down onto the coins. No hinge, strap or back edge connects it to the box. The lid is also wider than the box and sticks out past the box's right side.",
+ "errors": [
+  {
+   "where": "Lid, where it meets the box (back and right side)",
+   "what": "The lid doesn't swing open from a hinge at the back. It floats above the coins tilted toward the viewer: the outer dome and hasp face the camera and the inside faces down, as if someone lifted it off. If it were hinged at the back, the hasp would point up and back and the inside of the lid would face the viewer. No hinge or back edge attaches it to the box, so nothing holds it up.",
+   "severity": "major"
+  },
+  {
+   "where": "Lid, right end",
+   "what": "The lid is wider than the box. Its right end cap sticks out well past the box's right wall, so it could not close flush onto the rim.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Show the lid opened backward on visible hinges along the box's back edge. The inside of the lid faces the viewer, the hasp points up and back, and the lid rests open at about 100 degrees. Make the lid exactly as wide and deep as the box, with its rim lining up with the box's gold top rim."
+}

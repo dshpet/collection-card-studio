@@ -1,0 +1,16 @@
+{
+ "survey": "An open treasure chest sitting on sand, viewed from slightly above the front. Body: a wooden box with plank sides, gold corner bands and gold feet at the bottom corners, all resting on the sand. The front has a gold lock plate with a keyhole. The box is filled with a heap of gold coins, a blue gem and a pink gem. Lid: a half-round barrel lid with gold end bands and a gold hasp tab at the middle of its front edge. It is drawn raised above the back of the box. Its outer planks and the hasp face the camera, and the hollow inside shows only through the right end. No hinge is visible where the lid should join the back edge of the box. Props: a seashell at the left and two loose coins on the sand in front. They rest on the ground. Bubbles float around the chest as underwater scenery.",
+ "errors": [
+  {
+   "where": "Lid, where it should join the back of the box",
+   "what": "The lid does not open the way a hinged lid can. A lid that swings back on rear hinges should show its hollow inside and the underside of its front edge to the viewer. Here it still shows its outer planks and the hasp facing forward, as if it were lifted and tipped toward the camera, yet the inside shows through the right end. Its back edge has no visible hinge or contact with the back rim of the box, so the lid seems to hover above the chest instead of pivoting on it.",
+   "severity": "major"
+  },
+  {
+   "where": "Lid hasp versus the front lock plate",
+   "what": "Because of the lid's pose, the hasp tab sits high on the curved top of the lid and faces forward. It could never swing down to meet the keyhole plate on the front of the box, so the closing mechanism does not line up.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Open treasure chest with the barrel lid swung back on two visible metal hinges fixed to the back rim of the box. The lid's back edge touches the box at the hinges, and the lid tilts back past vertical so its hollow wooden inside faces the viewer. The gold hasp hangs from the lid's front edge, which is now the top edge, in line with the keyhole plate on the front of the box."
+}

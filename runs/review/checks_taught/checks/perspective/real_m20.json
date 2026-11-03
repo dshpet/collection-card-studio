@@ -1,0 +1,21 @@
+{
+ "survey": "A cartoon sailing ship sits in choppy water against a purple sunburst. The wooden hull is seen in three-quarter view from slightly above. You can see into the deck at the raised left end, and two round portholes sit on the side facing the camera. Two upright masts rise from the deck, one near the left and one near the centre. Each carries horizontal yards with billowing white sails, and the masts continue as poles with caps above the top sails. Two rope ladders (ratlines) lean against the masts on deck. At the right, two diagonal spars stick up and out toward the bow at different angles. The upper one starts inside the deck behind the sails, and a rope runs from it to the main mast top. The sea is a narrow band with a low horizon line, and the hull meets it with a splash at the waterline.",
+ "errors": [
+  {
+   "where": "Sails and yards compared with the hull",
+   "what": "The hull is shown from the side and runs left to right, but every yard also runs left to right, parallel to the keel. All the sails face the camera flat and full width, with no foreshortening. On a ship seen from the side, the yards cross the hull and the sails should look narrow and turned. Here the rig is drawn as if seen from the front, on top of a hull seen from the side.",
+   "severity": "major"
+  },
+  {
+   "where": "Two diagonal spars at the right (bow)",
+   "what": "There are two bowsprit-like spars at clearly different angles. The upper one rises out of the middle of the deck behind the sails instead of coming out of the bow. Neither one lines up with the hull's long axis or with the other spar, so they do not belong to one consistent structure or direction.",
+   "severity": "minor"
+  },
+  {
+   "where": "Sea horizon compared with the hull",
+   "what": "The camera looks down into the deck, so it is above the deck rim, and the horizon should be at or above that height. Instead the sea is a thin, almost edge-on band with its horizon below the deck rim. The sea is drawn from a lower eye level than the ship.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Cartoon sailing ship in three-quarter view from slightly above. Yards cross the hull at right angles to the keel, and the sails are foreshortened to match the hull's angle instead of facing the camera flat. A single bowsprit comes straight out of the bow, in line with the hull's long axis. The sea is seen from the same raised viewpoint, with the horizon above the deck rim and the water surface spreading out toward the viewer."
+}

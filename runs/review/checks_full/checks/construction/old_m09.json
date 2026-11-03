@@ -1,0 +1,11 @@
+{
+ "survey": "A square yellow music player with rounded corners, angled about 20° toward the camera. On its front face: a large white round play button with an orange triangle, three small indicator lights (red, orange, green), and a small white round button below them. A white plug sits in a socket on the top edge. Its cable arcs up and right, runs down the player's right side, and bends left near the lower-right corner. There it seems to split in two: one strand S-curves down to the left earbud, and the other loops right and down to the right earbud. Both earbuds are white with open, hollow tips, and each cable enters an earbud through a short stem. The player floats against a purple ring background, as icon objects usually do, so that is acceptable.",
+ "errors": [
+  {
+   "where": "Cable junction beside the lower-right corner of the player",
+   "what": "There is no clear Y-splitter where the single cable becomes two. Near the corner the cable seems to dip behind the player body, and the strand to the right earbud comes out from there rather than branching from the main cable. You can't tell where one cable becomes two.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the earphone cable one continuous white line from the plug on top of the player down the right side to a small visible Y-splitter just right of the player's lower-right corner. Two separate strands leave the splitter, one to each earbud. No cable passes behind the player body."
+}

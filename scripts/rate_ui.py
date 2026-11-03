@@ -1,7 +1,8 @@
 """A local page for human ratings. Answers go straight to runs/ratings.json.
 
 Twins: a real card and its redraw, sides shuffled. Pick the generated one. Old-style redraws are mixed in as a control.
-Cards: every set card beside its three reference cards, graded 1-5.
+Closest: a real card and its redraws in every style drawn so far, shuffled. Pick the closest.
+Cards: every set card beside its three reference cards, all at the same size, graded 1-5.
 
     rate_ui.py              then open http://127.0.0.1:8765
     rate_ui.py --summary    what the ratings say so far
@@ -37,6 +38,15 @@ def items():
             twins.append({"id": f"twin/{style}/{brief['id']}", "kind": "twin", "name": brief["card"]["name"],
                           "images": [drawn, real] if first else [real, drawn], "generated": "A" if first else "B"})
     rng.shuffle(twins)
+    closest = []
+    for brief in load_json(ROOT / "runs" / "twins40" / "briefs.json"):
+        drawn = [(folder.name, f"runs/twins40/{folder.name}/tries/{brief['id']}_1.png")
+                 for folder in sorted((ROOT / "runs" / "twins40").iterdir())
+                 if (folder / "tries" / f"{brief['id']}_1.png").exists()]
+        rng.shuffle(drawn)
+        closest.append({"id": f"closest/{brief['id']}", "kind": "closest", "name": brief["card"]["name"],
+                        "images": [f"materials/card_examples/{brief['real']}.png"] + [path for _, path in drawn],
+                        "styles": [style for style, _ in drawn]})
     final = load_json(ROOT / "runs" / "final.json")
     cards = []
     for run in SETS:
@@ -48,7 +58,7 @@ def items():
                           "images": [f"runs/{run}/tries/{best['try_id']}.png"]
                           + [f"materials/card_examples/{i}.png" for i in brief["references"]]})
     cards.sort(key=lambda card: not card["final"])
-    return twins + cards
+    return twins + closest + cards
 
 
 def ratings():
@@ -88,12 +98,16 @@ class Page(BaseHTTPRequestHandler):
 
 def summary():
     data = ratings().values()
-    picks, grades = defaultdict(list), defaultdict(list)
+    picks, grades, closest = defaultdict(list), defaultdict(list), defaultdict(int)
     for entry in data:
         if entry["kind"] == "twin" and entry["answer"] != "neither":
             picks[entry["id"].split("/")[1]].append(entry["correct"])
         elif entry["kind"] == "card":
             grades[entry["set"]].append(entry["grade"])
+        elif entry["kind"] == "closest":
+            closest[entry["style"]] += 1
+    for style, count in sorted(closest.items(), key=lambda item: -item[1]):
+        print(f"closest: {style} chosen {count} times")
     for style, hits in sorted(picks.items()):
         print(f"twins, {style} style: found the generated card {sum(hits)} of {len(hits)} (chance is half)")
     for group, values in sorted(grades.items()):
@@ -117,18 +131,19 @@ main { max-width: 1200px; margin: 0 auto; padding: 16px; }
 figure { margin: 0; text-align: center; }
 img { display: block; max-width: 100%; border-radius: 10px; }
 .big img { width: 430px; }
-.refs { display: flex; flex-direction: column; gap: 8px; }
-.refs img { width: 140px; }
+.same img { width: 270px; }
+.same figure:first-child img { outline: 3px solid var(--accent); }
 .row { display: flex; gap: 8px; justify-content: center; margin: 14px 0; flex-wrap: wrap; }
 textarea { display: block; width: 100%; max-width: 876px; height: 56px; margin: 0 auto; box-sizing: border-box; }
 #result { text-align: center; min-height: 22px; font-weight: 600; }
 </style></head><body>
-<header><b>Card ratings</b><button id="tab-twin">Twins</button><button id="tab-card">Cards</button>
+<header><b>Card ratings</b><button id="tab-twin">Twins</button><button id="tab-closest">Closest</button><button id="tab-card">Cards</button>
 <span id="progress"></span><label style="margin-left:auto">Rater <input id="rater" size="10"></label></header>
 <main id="main"></main>
 <script>
 let items = [], ratings = {}, mode = "twin";
-const position = { twin: 0, card: 0 };
+const position = { twin: 0, closest: 0, card: 0 };
+const kinds = ["twin", "closest", "card"];
 const rater = document.getElementById("rater");
 try { rater.value = localStorage.getItem("rater") || "me"; } catch (e) { rater.value = "me"; }
 rater.onchange = () => { try { localStorage.setItem("rater", rater.value); } catch (e) {} show(); };
@@ -153,19 +168,25 @@ function move(step) {
 
 function show() {
   const item = current(), entry = ratings[key(item)];
-  for (const kind of ["twin", "card"]) document.getElementById("tab-" + kind).className = kind === mode ? "on" : "";
+  for (const kind of kinds) document.getElementById("tab-" + kind).className = kind === mode ? "on" : "";
   const counts = kind => list(kind).filter(i => ratings[key(i)]).length + "/" + list(kind).length;
-  document.getElementById("progress").textContent = "Twins " + counts("twin") + " · Cards " + counts("card");
+  document.getElementById("progress").textContent = "Twins " + counts("twin") + " · Closest " + counts("closest") + " · Cards " + counts("card");
   let html;
   if (mode === "twin") {
     html = `<p class="hint">One card is real, one was generated from a text brief. Which one is generated? Keys: A, B, N for can't tell, arrows to move.</p>
       <div class="cards">${item.images.map((src, i) => `<figure class="big"><img src="/${src}"><figcaption>${"AB"[i]}</figcaption></figure>`).join("")}</div>
       <div class="row">${["A", "B", "neither"].map(a => `<button data-answer="${a}" class="${entry && entry.answer === a ? "on" : ""}">${a === "neither" ? "Can't tell" : a + " is generated"}</button>`).join("")}</div>`;
+  } else if (mode === "closest") {
+    const [real, ...drawn] = item.images;
+    html = `<p class="hint">The outlined card is real. Which redraw is closest to it in look? Keys: 1 to ${drawn.length}, arrows to move.</p>
+      <div class="cards same"><figure><img src="/${real}"><figcaption>real · ${item.name}</figcaption></figure>
+      ${drawn.map((src, i) => `<figure><img src="/${src}"><figcaption>${i + 1}</figcaption></figure>`).join("")}</div>
+      <div class="row">${drawn.map((_, i) => `<button data-pick="${i}" class="${entry && entry.style === item.styles[i] ? "on" : ""}">${i + 1} is closest</button>`).join("")}</div>`;
   } else {
     const [card, ...references] = item.images;
-    html = `<p class="hint">Could this card sit next to the real ones on the right? Keys: 1 to 5, arrows to move.</p>
-      <div class="cards"><figure class="big"><img src="/${card}"><figcaption>${item.name} · ${item.set}${item.final ? " · final set" : ""}</figcaption></figure>
-      <div class="refs">${references.map(src => `<figure><img src="/${src}"><figcaption>real</figcaption></figure>`).join("")}</div></div>
+    html = `<p class="hint">Could the outlined card sit next to the real ones beside it? Keys: 1 to 5, arrows to move.</p>
+      <div class="cards same"><figure><img src="/${card}"><figcaption>${item.name} · ${item.set}${item.final ? " · final set" : ""}</figcaption></figure>
+      ${references.map(src => `<figure><img src="/${src}"><figcaption>real</figcaption></figure>`).join("")}</div>
       <div class="row">${[1, 2, 3, 4, 5].map(g => `<button data-grade="${g}" class="${entry && entry.grade === g ? "on" : ""}">${g} · ${grades[g]}</button>`).join("")}</div>`;
   }
   const result = mode === "twin" && entry ? (entry.answer === "neither" ? "Skipped" : (entry.correct ? "Right" : "Wrong")) +
@@ -174,6 +195,7 @@ function show() {
     <div id="result">${result}</div><div class="row"><button id="back">← Back</button><button id="next">Next →</button></div>`;
   document.querySelectorAll("[data-answer]").forEach(b => b.onclick = () => save({ answer: b.dataset.answer, correct: b.dataset.answer === item.generated }));
   document.querySelectorAll("[data-grade]").forEach(b => b.onclick = () => save({ grade: Number(b.dataset.grade) }));
+  document.querySelectorAll("[data-pick]").forEach(b => b.onclick = () => save({ style: item.styles[Number(b.dataset.pick)] }));
   document.getElementById("comment").onchange = () => { if (ratings[key(item)]) save({}); };
   document.getElementById("back").onclick = () => move(-1);
   document.getElementById("next").onclick = () => move(1);
@@ -188,11 +210,12 @@ document.onkeydown = event => {
     const answer = press === "n" ? "neither" : press.toUpperCase();
     save({ answer, correct: answer === item.generated });
   } else if (mode === "card" && "12345".includes(press) && press) save({ grade: Number(press) });
+  else if (mode === "closest" && Number(press) >= 1 && Number(press) <= item.styles.length) save({ style: item.styles[Number(press) - 1] });
 };
-for (const kind of ["twin", "card"]) document.getElementById("tab-" + kind).onclick = () => { mode = kind; show(); };
+for (const kind of kinds) document.getElementById("tab-" + kind).onclick = () => { mode = kind; show(); };
 fetch("/data").then(r => r.json()).then(data => {
   items = data.items; ratings = data.ratings;
-  for (const kind of ["twin", "card"]) position[kind] = Math.max(0, list(kind).findIndex(i => !ratings[key(i)]));
+  for (const kind of kinds) position[kind] = Math.max(0, list(kind).findIndex(i => !ratings[key(i)]));
   show();
 });
 </script></body></html>"""

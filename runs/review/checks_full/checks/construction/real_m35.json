@@ -1,0 +1,11 @@
+{
+ "survey": "A stone park game table with two stools. The table has a thick square stone slab top with a recessed checkerboard of raised dark and cream tiles, viewed from above at three-quarters. The top rests on one central square pedestal. The pedestal stands on a thin stone base slab lying flat in the grass. One drum-shaped stool with a mushroom-cap seat stands on the grass at the front right, sitting firmly with grass tufts around its foot. A second stool is partly hidden behind the back left corner of the table and also stands on the grass. Everything is supported and touches the ground. The single pedestal is wide enough to carry the slab, and nothing floats or passes through anything else.",
+ "errors": [
+  {
+   "where": "Checkerboard inset in the table top",
+   "what": "The board is only about 6 squares per side instead of the 8×8 a real chess or checkers board needs, so it isn't a playable board. The rows also don't clearly add up to a square grid. You only see this if you count the squares, so it is minor.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the inset on the stone table top a proper square 8×8 checkerboard of alternating dark and cream squares, with the same number of rows and columns, set evenly inside the stone border."
+}

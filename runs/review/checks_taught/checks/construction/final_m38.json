@@ -1,0 +1,16 @@
+{
+ "survey": "Coin-operated tower viewer on a rooftop terrace, facing the camera. Head: a rounded triangular steel housing with two blue-glass eyepieces side by side on the front face, and a riveted plate with a coin slot and round push-button below them. Yoke: a blue U-shaped bracket wraps around the head and meets it at round pivot caps on the left and right sides (meant to let the head tilt). Neck: a short blue column runs from the bottom of the head straight down into the base of the yoke. Pedestal: the yoke sits on a steel collar on top of a tall blue post standing on the terrace floor, properly grounded. Handle: a crank handle sticks out to the right and back from the right yoke arm. Counts are correct: two eyepieces, two pivots, one handle, one post.",
+ "errors": [
+  {
+   "where": "Neck between the bottom of the head and the base of the yoke",
+   "what": "The head hangs on the side pivots but is also fixed to the yoke base by a solid neck column. Locked to the yoke from below, the head can't tilt, so the side pivots do nothing. A real viewer uses either side pivots in a yoke or a tilting neck, not both.",
+   "severity": "minor"
+  },
+  {
+   "where": "Crank handle on the right side",
+   "what": "The handle comes out of the middle of the fixed right yoke arm, below the pivot cap, not from the pivot hub. Turning it could not move or aim the head.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the gap between the bottom of the viewer head and the base of the U-shaped yoke empty, so the head hangs only on the two side pivots. Attach the crank handle to the outside of the right pivot hub, in line with the pivot axis. Keep everything else the same."
+}

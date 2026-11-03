@@ -1,0 +1,16 @@
+{
+ "survey": "The card shows a pocket calculator tilted about 20° clockwise, seen from the front and slightly above, floating as an icon. Its parts:\n- **Body:** a thick, rounded navy shell.\n- **Solar strip:** four red cells set into the top bezel.\n- **Display:** a grey LCD window recessed below the solar strip.\n- **Keypad:** a 3×3 grid of white digit keys (7-8-9, 4-5-6, 1-2-3), then a bottom row with a wide 0 key and a blank white key.\n- **Operator column:** four cyan keys on the right (÷, ×, −, and a larger +).\n\nEvery key sits in the face and could be pressed. The display and solar strip sit flush in the bezel. Nothing hangs loose or floats apart from the body.",
+ "errors": [
+  {
+   "where": "Bottom row of the keypad, the white key between 0 and +",
+   "what": "The key has no label, and the keypad has no '=' key or decimal point. A calculator without '=' cannot give a result, so the device cannot do its main job. The blank key looks like a missing '=' or '.'.",
+   "severity": "major"
+  },
+  {
+   "where": "Outline of the body, lower-left corner and left edge compared with the right edge",
+   "what": "The shell is uneven. The lower-left corner bulges out more than the other corners, and the left and right sides do not mirror each other. The body looks lumpy rather than like a rigid moulded case.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Label the blank key next to 0 with '.', and make the large cyan key at the bottom right '=' (move '+' up into the operator column), so the keypad has digits 0–9, a decimal point, ÷ × − + and =. Make the calculator body a clean, symmetric rounded rectangle with four equal corner radii and straight parallel sides, like a rigid moulded plastic case."
+}

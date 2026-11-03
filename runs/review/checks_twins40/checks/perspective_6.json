@@ -1,0 +1,94 @@
+{
+ "cards": [
+  {
+   "card": "c058",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c117",
+   "errors": [
+    {
+     "where": "roof of the feeder",
+     "what": "The left end of the roof shows a gable triangle seen from the side, but the right end has none. The roof planks also read as a flat top seen from above, not two pitched slopes. The roof's viewpoint doesn't match the box below, which is seen almost straight from the front.",
+     "severity": "major"
+    },
+    {
+     "where": "feeder box sides and base tray",
+     "what": "The left side wall shows its outer face, as if the camera is to the left. The base tray is seen level, with almost no top surface, yet the floor of the box and the seeds are seen from above.",
+     "severity": "minor"
+    }
+   ],
+   "fix": "Bird feeder seen from slightly above and to the left, one consistent viewpoint: pitched gable roof with both slopes visible and the gable end shown on the left side only, tray and box floor with the same top-down tilt"
+  },
+  {
+   "card": "c027",
+   "errors": [
+    {
+     "where": "crossbar (stock) ends",
+     "what": "The round end caps are drawn facing outward at both the left and right ends of the cylindrical crossbar. A single camera can only see one end face of a cylinder.",
+     "severity": "major"
+    }
+   ],
+   "fix": "Anchor crossbar as a cylinder with only the near end cap visible as an ellipse; the far end shows only the rounded side of the bar"
+  },
+  {
+   "card": "c091",
+   "errors": [
+    {
+     "where": "target board vs easel",
+     "what": "The target board is turned toward the left, with its edge thickness and elliptical rings showing on the right side. The easel holding it is drawn straight from the front, so the board doesn't sit on its support in the same direction.",
+     "severity": "minor"
+    }
+   ],
+   "fix": "Target board and its easel both facing the viewer squarely, rings drawn as circles, or both turned the same angle to the left"
+  },
+  {
+   "card": "c003",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c115",
+   "errors": [
+    {
+     "where": "vent slots under the front panel",
+     "what": "The unit is seen from the right, and its top edge converges toward the left. The vent openings are still all the same width instead of narrowing toward the far left end.",
+     "severity": "minor"
+    }
+   ],
+   "fix": "Vent slots on the air conditioner gradually narrowing toward the far left end, following the unit's perspective"
+  },
+  {
+   "card": "c062",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c099",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c007",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c052",
+   "errors": [
+    {
+     "where": "two jog wheels",
+     "what": "The jog wheels are drawn almost as full circles. The top of the controller they sit on is strongly foreshortened, about 0.4 depth to width, so the wheels look tilted up toward the viewer instead of lying flat in the deck.",
+     "severity": "major"
+    },
+    {
+     "where": "color pads and knob rows",
+     "what": "The pads are equal front-facing rectangles across the whole width. They don't foreshorten with the tilted top surface.",
+     "severity": "minor"
+    }
+   ],
+   "fix": "DJ controller seen from above at a 45 degree angle, jog wheels as flattened ellipses lying flat on the top surface, pads and knobs foreshortened to match the tilted deck"
+  }
+ ]
+}

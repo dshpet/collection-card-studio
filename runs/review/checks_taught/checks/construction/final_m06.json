@@ -1,0 +1,16 @@
+{
+ "survey": "A treasure map shown as a folded paper stack floating at an angle over a pink striped background. The top panel faces the camera: green land, two blue lakes, small mountains, a dashed yellow path and a red X, with crease lines dividing it into four panels. Below it are two more layers of map paper, each showing a bit of green land and blue water at the edge. The front edge of each layer curls down and under like a rounded lip. The right side edges are rounded too. No layer connects to the next one at any edge, so the stack reads as three separate sheets lying on top of each other rather than one folded sheet. The map floats with no surface, which is normal for an icon.",
+ "errors": [
+  {
+   "where": "The layered stack below the top panel, at the front and right edges",
+   "what": "The fold cannot exist in paper. A folded map is one sheet that zig-zags, so each layer must join the next at alternating edges. Here each of the three layers curls under on its own at the front and stays open at the side, and none of them connects to the layer below. It looks like three separate maps stacked on each other, or one sheet bent in a way paper cannot fold.",
+   "severity": "major"
+  },
+  {
+   "where": "The top panel",
+   "what": "The top panel shows the full map with a 2×2 grid of creases, as if the map were unfolded flat. Yet it sits on top of a stack of folded layers. The visible panel and the folded state contradict each other: a map folded into layers would only show one panel on top, not the whole map with all its crease lines.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "A single sheet of paper treasure map folded accordion-style into neat panels, with each layer joined to the next by a clean crisp fold on alternating edges (zig-zag). The top panel shows only part of the map. No separate loose sheets and no edges curled under. Alternatively, show one map sheet lying open and flat with soft crease lines and slightly lifted corners."
+}

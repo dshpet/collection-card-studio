@@ -1,0 +1,16 @@
+{
+ "survey": "A stylised admiralty anchor floating on its own in front of a striped orange background, turned slightly toward the viewer. A round ring (shackle) sits at the top of the shank. Just below the ring, a horizontal stock with ball ends passes through a collar on the shank. The stock lies in the same plane as the arms, which is a common icon simplification. The straight shank runs down to a pointed crown. Two curved arms rise from the crown, each ending in an arrow-shaped fluke. The left fluke looks a little shorter because of the angle. A rope comes down from the ring, appearing to pass through its opening, then winds around the shank about two and a half times below the stock. Its lower end runs into the joint where the left arm meets the shank.",
+ "errors": [
+  {
+   "where": "Lower end of the rope, where the shank meets the left arm at the crown",
+   "what": "The rope's bottom end has no tie-off, knot or attachment. It runs into the metal of the crown and vanishes, as if it passes through the solid anchor. The rope is left as a loose end that ends inside the object.",
+   "severity": "major"
+  },
+  {
+   "where": "Rope at the stock collar, just under the ring",
+   "what": "The rope comes down the front of the shank and disappears into the tight stock collar, then comes out below it on the other side. A rope cannot pass under a solid collar that is clamped to the shank, so the two parts pass through each other.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the rope clearly tied through the top ring with a visible knot or loop. Have it wrap around the shank fully outside the stock collar, passing in front of or around the collar, never through it. End the rope in a visible frayed or whipped tail hanging free below the last wrap, or tie it off around the shank above the crown. The rope must not merge into the crown or the arms."
+}

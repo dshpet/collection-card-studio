@@ -1,0 +1,11 @@
+{
+ "survey": "Image 4 is a cartoon fuel pump in a desert. It has five parts. (1) The orange cabinet stands upright. Its front face is almost square to the camera, its vertical edges are vertical, and a narrow right side face turns away, so the camera is slightly to the right and a little above. (2) The front face holds a rectangular counter window and a round gauge. Both lie flat on the face, and the gauge is close to a true circle, which fits a face that points nearly at the viewer. (3) A holster panel sits on the right side face, holding an orange nozzle and a black hose that loops down to the base. The panel is a bit wide for such a narrow side face, but it reads as a rounded box standing out from the side, so it is acceptable. (4) A grey collar joins the cabinet to a wide cap. The cap's white front band is level, and a little of its top shows, which fits a camera slightly above. (5) The cabinet stands on a low grey plinth whose front edge is level and whose top shows as a thin strip. The plinth rests on a large flat pad laid on the sand. The pump stands upright on both and makes good contact.",
+ "errors": [
+  {
+   "where": "The concrete pad under the pump (bottom of the card)",
+   "what": "The pad is drawn from a higher camera than the pump, and it is turned at an angle the pump does not share. The plinth and cabinet show their top faces only as thin strips with level edges, so the camera is close to eye level and facing them square on. The pad, at about the same height, shows a broad top surface, and its edges run at a steep diagonal from lower left up to behind the pump. So the ground reads as seen from above and rotated, while the object on it reads as seen nearly level and straight on.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the concrete pad with the same camera as the pump: near eye level and slightly to the right. Make its front edge run level and parallel to the pump's plinth. Show its top surface only as a thin, foreshortened strip, like the top of the plinth, with its side edges going back toward the same vanishing point as the cabinet's right side face."
+}

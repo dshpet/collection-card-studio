@@ -1,0 +1,16 @@
+{
+ "survey": "A stage spotlight hangs from a lattice truss across the top of the card. A black clamp cylinder grips the underside of the truss bar. An elbow pipe comes down from the clamp and joins the top of a U-shaped yoke. The yoke's arms straddle the cylindrical lamp can. The near arm ends at a round pivot knob on the right side of the can. The far arm drops behind the can's top and is hidden. The can lies roughly horizontal and is turned toward the viewer's left, so its front face reads as a tilted ellipse with a thick rim. Three round lenses (yellow, cyan, red) sit inside that face. Two ring grooves wrap the barrel, and a short cylindrical stub sticks down from the can's underside. The camera sits slightly below and to the left of the lamp. Overall the can, yoke and stub agree on one view. Most of the build is consistent.",
+ "errors": [
+  {
+   "where": "Front face of the can: the three coloured lenses",
+   "what": "The front rim is drawn as a clearly foreshortened ellipse because the face is turned toward the left. The three lenses inside it are nearly perfect circles, drawn face-on at full width. They should be squashed horizontally and tilted to match the rim's angle, and the lens on the side turned farther away should be slightly narrower.",
+   "severity": "minor"
+  },
+  {
+   "where": "Clamp under the truss at the top",
+   "what": "The truss and the lamp hanging below it are seen from slightly below. The clamp cylinder, though, shows its upper rim as an open ellipse, as if seen from above. That rim should be hidden against the truss. From this low camera only the underside of the clamp should show, where it meets the elbow.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the three lenses as ellipses squashed horizontally to the same ratio and tilt as the front rim of the can, with the lens on the side turned away slightly narrower, so they lie flat on the turned face. Draw the clamp under the truss from below to match the rest of the scene: hide its top rim against the truss and show only its underside where the elbow pipe joins."
+}

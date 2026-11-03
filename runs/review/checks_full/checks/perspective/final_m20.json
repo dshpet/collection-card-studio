@@ -1,0 +1,16 @@
+{
+ "survey": "A three-masted wooden sailing ship in rough water, seen from slightly above in a near-broadside three-quarter view. The bow curls up at the far left and the raised stern deck with its railing is at the right. The hull's long side faces the viewer and turns slightly away toward the stern. You can see the deck from above: the far railings and the mast bases inside the hull show past the near gunwale. Three vertical masts rise from the deck: the tall mainmast in the middle with a collar at the gunwale, the foremast at left and the mizzenmast at right. Each mast carries a horizontal yard with a square sail hanging from it and a pennant at the top. The sails are drawn flat-on to the camera, fully spread across the frame. Three brass-rimmed portholes sit in a row along the near hull side, and the hull planks run along the gunwale line. The hull sits in the waves with spray at the waterline.",
+ "errors": [
+  {
+   "where": "All three yards and square sails (foremast, mainmast, mizzenmast)",
+   "what": "The hull is seen nearly broadside, with the ship pointing left. Yet every yard runs left-right along the hull, and every sail faces the camera fully open as if seen from dead ahead or astern. On a square-rigged ship the yards cross the keel, so from this view they and their sails should be strongly foreshortened, seen almost edge-on and angled. The rig and the hull are drawn from two different viewpoints.",
+   "severity": "major"
+  },
+  {
+   "where": "The three portholes on the near hull side",
+   "what": "All three portholes are perfect circles of equal size, facing straight at the camera. The hull side turns slightly away toward the stern, so they should be slight vertical ellipses that narrow and shrink a little from bow to stern.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Keep the three-quarter side view of the hull, bow to the left. Turn the yards so they cross the hull at right angles, the way they would on a real square-rigged ship. Draw each yard foreshortened and angled in the same perspective as the deck, so the square sails appear narrow and turned, seen partly edge-on and billowing toward the bow, not spread flat at the camera. Draw the portholes as slightly narrow vertical ellipses that get a little smaller toward the stern, following the curve of the hull side."
+}

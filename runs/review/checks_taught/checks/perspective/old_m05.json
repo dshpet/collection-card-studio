@@ -1,0 +1,16 @@
+{
+ "survey": "A single blue calculator floats against a yellow π background with no ground plane. The body is a thick rounded slab, tilted back and turned slightly, so its top edge is narrower and further away than its bottom edge and its side wall shows on the lower right. A red solar strip and a grey display sit near the top of the face. Below them is a 4-column keypad: 3 columns of white number keys (7-8-9, 4-5-6, 1-2-3, then a wide 0 and a blank key) and a cyan operator column (÷, ×, −, +, with a tall +). The display and solar strip roughly follow the face's tilt. The keys look like they are seen straight on.",
+ "errors": [
+  {
+   "where": "Keypad (all number and operator keys) against the calculator face",
+   "what": "The face is tilted away from the viewer: it narrows toward the top and its side edges lean inward. The keys don't follow that tilt. Every key is drawn front-on at nearly the same size and shape, the top row is barely smaller than the bottom row, and the rows run almost horizontal instead of following the face's top and bottom edges. The column lines also don't lean toward the face's vanishing point. The keypad looks pasted flat over a tilted body. This is the same error as in the first example.",
+   "severity": "major"
+  },
+  {
+   "where": "Key tops versus the body's side wall",
+   "what": "The body's thick side wall shows that we look down at an angle. The key caps, however, show their tops almost head-on with even bevels on every side. Each key should show more of its lower side and a shorter top.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the keypad in the same perspective as the tilted calculator face. Keys get smaller and more foreshortened toward the top of the calculator. Key rows run parallel to the face's top and bottom edges, and key columns lean in line with the face's side edges toward one shared vanishing point. Each key cap shows its foreshortened top and a bit of its front side, matching the viewing angle of the body."
+}

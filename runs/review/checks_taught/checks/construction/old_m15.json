@@ -1,0 +1,11 @@
+{
+ "survey": "A red K6-style phone box standing on a purple plinth. The domed roof sits on the box and has gold crowns over cream sign panels on the front and side. The left side wall is a red frame with a grid of glass panes. The front is a glazed door with the same grid and a yellow pull handle on its right edge. The four corner posts rest on the plinth. A blue payphone with a keypad, a screen and a handset on a coiled cord sits in the middle of the front door. It covers the glazing bars and shows no glass tint, so it reads as mounted on the outside of the door glass, not on the back wall inside the box.",
+ "errors": [
+  {
+   "where": "Payphone in the centre of the front door",
+   "what": "The phone is drawn in front of the door's glass and glazing bars, as if fixed to the outside of the glass pane. Nothing behind it could hold it: there is no backing panel or mount, only thin glass and bars. It would also swing out with the door. In a real phone box the phone is fixed to the solid back wall inside and is seen through the glass. Here it neither sits behind the glass nor has anything to mount on.",
+   "severity": "major"
+  }
+ ],
+ "fix": "Put the payphone inside the booth, mounted on the solid back wall, and show it through the door's glass panes with the glazing bars and the glass tint crossing in front of it. Keep the door glass and its bars whole, with no phone attached to the door."
+}

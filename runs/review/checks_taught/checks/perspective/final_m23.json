@@ -1,0 +1,11 @@
+{
+ "survey": "Water slide on a tiled pool deck, seen from slightly above. A yellow square platform with a railing sits on a central blue pole, held by diagonal braces; we see a thin strip of its top face. A blue ladder leans from the platform's front-right corner down to the deck. Its rails curve over into handrails at the top. The rungs stay level, and its two feet sit at slightly different depths, which fits its angle. A green tube slide starts at the platform's left edge and swings out left. It then crosses the pole, swings out right, comes back left, and ends over the pool coping, where water pours into the pool. A second, thinner blue pole holds up the lower part of the slide. Both pole bases are flattened ellipses on the deck that match the deck's viewing angle. The deck tiles and the curved pool edge are seen from the same high angle as the platform top. The railing, ladder and poles are vertical and consistent with each other.",
+ "errors": [
+  {
+   "where": "Green slide where it crosses the central support pole, middle and lower loops (center of the card)",
+   "what": "The slide's path around the pole doesn't hold together. The top loop passes behind the pole. The next loop passes in front of it, then turns back at the right side while still in front of the pole instead of going behind it. The loop after that passes in front of the pole again, which only works if the slide is a flat zigzag, not a spiral around the pole. The turns are drawn with the steep curves of a spiral, so the slide's depth can't be read as one consistent 3D shape.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the green slide a true spiral around the central pole, seen from slightly above: each loop alternates behind and in front of the pole. The loops are evenly spaced, slightly flattened ovals that match the deck's viewing angle. The slide ends at the pool edge."
+}

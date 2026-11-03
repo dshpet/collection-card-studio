@@ -1,0 +1,11 @@
+{
+ "survey": "A stone park chess table on grass, seen from a raised three-quarter view. A thick square top slab carries an inset checkerboard; its top face is seen from above, with the front and right side faces showing. A square pedestal sits centered under the slab and faces the camera nearly front-on. The pedestal stands on a thin square base slab lying flat on the grass, whose top face is clearly visible from above. Two round stone stools stand beside it, one behind on the left and one in front on the right. Their top rims are ellipses that open about as much as the table top's foreshortening. The checkerboard tiles get shorter toward the back, and their rows run parallel to the slab's front and side edges, so the board agrees with the top face. The pedestal's verticals stay vertical. The table, stools and ground all read as seen from one elevated camera.",
+ "errors": [
+  {
+   "where": "Base slab under the pedestal (lower middle)",
+   "what": "The base slab looks turned on the ground compared with the table above it. Its front edge slopes down to the right, while the table top's front edge and the pedestal's front face are nearly level and face the camera. So the base doesn't line up with the pedestal it supports and seems to use a slightly different yaw. This is a small mismatch that you only see on a close look.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Stone chess table with a square base slab aligned exactly with the pedestal and table top: the base slab's front edge is parallel to the table top's front edge, all seen from the same raised three-quarter view."
+}

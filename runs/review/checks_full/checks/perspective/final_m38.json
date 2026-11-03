@@ -1,0 +1,21 @@
+{
+ "survey": "Image 4 is a coin-operated tower viewer on a rooftop deck. A wide head with two round lenses and a coin plate sits on a short neck. A U-shaped yoke holds the head, joining it at pivot hubs on the left and right sides, with a crank handle sticking out on the right. The yoke's base meets a round post with a metal collar ring. Behind it are a glass railing and a tiled floor, both seen slightly from above and receding toward one vanishing point. The head is drawn turned toward the viewer's left: its whole right side face is visible as a wide band. But the front face, both lenses, the coin plate and the yoke are all drawn straight-on and mirror-symmetric. The post, collar and floor agree with a camera at about head height looking slightly down.",
+ "errors": [
+  {
+   "where": "Viewer head: front face, lenses and coin plate",
+   "what": "A wide strip of the head's right side is visible, so the head is turned toward the viewer's left. Yet the front face is drawn straight-on: both lenses are perfect circles of the same size, and the coin plate and the face outline are mirror-symmetric. On a turned face, the lenses should be slightly narrow ellipses, the far lens should be slightly smaller, and the face features should shift off center. The front and the side read as two different camera angles.",
+   "severity": "major"
+  },
+  {
+   "where": "Right pivot hub on the side of the head, where the yoke attaches",
+   "what": "The hub sits on the right side face, which is turned well away from the viewer, but it is drawn as an almost full circle as if seen head-on. It should be a narrow ellipse that matches the angle of the side face. The left hub is drawn nearly edge-on, so the two hubs on the same pivot axis disagree.",
+   "severity": "minor"
+  },
+  {
+   "where": "U-shaped yoke",
+   "what": "The yoke's two arms are drawn as a flat, symmetric, front-facing U. But they hold a head that is turned to show its right side. The arm on the right should turn toward the viewer, and the left arm should shorten as it turns away, following the head's rotation.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the whole viewer from one camera that is turned slightly to the right. The front face of the head turns with the head: both lenses become slightly narrow vertical ellipses, the left lens is a little smaller than the right one, and the coin plate is shifted off center and narrowed to match. The U-shaped yoke turns with the head as well, so its left arm looks shorter and its right arm shows more of its side. The right pivot hub on the side of the head is a narrow ellipse that matches that side's angle, not a full circle. The post, collar ring, railing and tiled floor stay seen slightly from above, as they are now."
+}

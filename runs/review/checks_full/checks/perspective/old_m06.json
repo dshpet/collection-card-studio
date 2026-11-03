@@ -1,0 +1,16 @@
+{
+ "survey": "Image 4 is a stack of three folded paper maps with cream rims, seen from above and in front at roughly 45°. The top map shows its green and blue face with a yellow dashed path and a raised red X. Its surface is folded into panels by creases that run from the back edge to the front edge, so both edges should zigzag with the same pattern. The two lower maps sit under it, shifted a little down and to the right. Their front edges copy the top map's front zigzag, and their right edges run parallel to the top map's right edge. The stack floats with no ground plane, and the rim thickness is consistent across all three sheets.",
+ "errors": [
+  {
+   "where": "Top map, the back (upper) edge compared with the front (lower) edge, especially the central fold",
+   "what": "The two edges zigzag out of step. The back edge has peaks at the left and right and a valley in the centre (just left of the red X). At the same crease, the front edge has a small peak, and its valley sits further left. A fold has to bend the same way along its whole length, so the creases cannot join the two edges consistently. The panels read as twisted rather than as flat panels folded along straight creases.",
+   "severity": "minor"
+  },
+  {
+   "where": "Red X marker and yellow dashed path on the top map's face",
+   "what": "The red X is drawn almost front-on, as an even, symmetrical cross. It is not squashed along the map face, which tilts away from the viewer. The dashes near the front edge and the dashes near the back are also about the same size, so the path does not shrink with distance.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Fold the map into straight vertical panels. Each crease runs as a straight line from the back edge to the front edge and bends the same way along its whole length, so the back and front edges zigzag in matching, parallel profiles. Lay the red X and the dashed path flat on the tilted map face: squash the X along the face, and make the dashes smaller toward the back edge. Give the lower maps the same zigzag profile as the top map."
+}

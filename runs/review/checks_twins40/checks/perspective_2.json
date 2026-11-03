@@ -1,0 +1,107 @@
+{
+ "cards": [
+  {
+   "card": "c087",
+   "errors": [
+    {
+     "where": "handle on the left side of the cooler",
+     "what": "The handle is drawn almost face-on and full width, but the left side face it sits on is turned sharply away. It should be narrow and foreshortened like that face.",
+     "severity": "minor"
+    }
+   ],
+   "fix": "Foreshorten the left-side handle so it is narrow and angled along the receding left side face of the cooler, matching that face's perspective."
+  },
+  {
+   "card": "c063",
+   "errors": [
+    {
+     "where": "open locker door on the right",
+     "what": "The open door shows its outside face (vents and keyhole) as a flat rectangle facing the viewer. A door swung open on the right hinge would show its inside face, and at this angle it would be strongly foreshortened.",
+     "severity": "major"
+    },
+    {
+     "where": "vent slots on the door",
+     "what": "The vent slots are equal, front-facing rows that do not follow the door's turned plane.",
+     "severity": "minor"
+    }
+   ],
+   "fix": "Show the open locker door from its inside face: a plain inner panel, hinged on the right edge of the cabinet and foreshortened to match its swing angle. Do not show the vents or lock facing the viewer."
+  },
+  {
+   "card": "c018",
+   "errors": [
+    {
+     "where": "bottle cap top and bottle base",
+     "what": "The top of the cap is seen from above and the bottom of the bottle is also shown as a visible ellipse. One camera cannot see both ends of a cylinder.",
+     "severity": "minor"
+    }
+   ],
+   "fix": "Use one consistent viewpoint for the bottle. If the top of the cap is visible, hide the bottom face so the base edge curves the same way as the cap ellipse."
+  },
+  {
+   "card": "c029",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c114",
+   "errors": [
+    {
+     "where": "air vent slats under the air conditioner",
+     "what": "The slats are evenly spaced and equal in size along the whole length of the unit, even though the unit recedes toward the left. They should shrink and bunch up toward the far end.",
+     "severity": "minor"
+    }
+   ],
+   "fix": "Make the vent slats gradually smaller and closer together toward the far left end of the air conditioner, following its perspective."
+  },
+  {
+   "card": "c079",
+   "errors": [
+    {
+     "where": "anchor badge on the front of the cap",
+     "what": "The badge is drawn as a perfect front-facing circle, but the crown it sits on curves and turns slightly away. It should be a slightly squashed ellipse that follows that surface.",
+     "severity": "minor"
+    }
+   ],
+   "fix": "Draw the anchor badge as a slight ellipse that wraps onto the curved front of the cap crown, matching its angle."
+  },
+  {
+   "card": "c019",
+   "errors": [
+    {
+     "where": "bottle base and cap top",
+     "what": "The bottom face of the bottle is clearly visible as a full ellipse, while the top of the cap and spout are also seen from above. Both ends of the cylinder are visible from one camera.",
+     "severity": "major"
+    }
+   ],
+   "fix": "Keep one camera angle. With the cap top visible from above, the bottle base should show only its curved lower edge, not its flat bottom face."
+  },
+  {
+   "card": "c112",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c065",
+   "errors": [
+    {
+     "where": "open locker door on the right",
+     "what": "The open door shows its outside face (vents and lock) facing the viewer, even though it has swung open on the hinges on the cabinet's right edge. Its inside face should be visible, foreshortened to its swing angle.",
+     "severity": "major"
+    }
+   ],
+   "fix": "Show the open door's inner panel, attached to the hinges and foreshortened to its opening angle. Do not show the outer vents and lock facing the viewer."
+  },
+  {
+   "card": "c061",
+   "errors": [
+    {
+     "where": "fruit on the glass plate",
+     "what": "The plate and table are seen from noticeably above, but the strawberries, blueberries and orange slices are drawn almost at eye level, with the blueberry crowns facing the viewer.",
+     "severity": "minor"
+    }
+   ],
+   "fix": "Show the fruit from the same raised viewpoint as the plate: the tops of the blueberries and strawberries visible and the orange slices seen slightly from above."
+  }
+ ]
+}

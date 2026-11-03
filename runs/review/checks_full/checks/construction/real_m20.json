@@ -1,0 +1,21 @@
+{
+ "survey": "A cartoon three-masted sailing ship sits upright in waves, seen in three-quarter view from the front right. The hull is open like a rowboat: there is no deck, and the masts stand inside it. It has two portholes on the side and rests in the water with a little splash at the bow. The rear (left) mast carries two square sails on yards. The main (centre) mast carries a large lower sail and a smaller top sail, with a crow's-nest disc between them. On the right a forward sail hangs from a long yard, but no foremast stands behind it. Instead, a long pole rises steeply out of the hull's mid-front at about 60° and passes behind the sails. A single rope runs from the top of the main mast and is wrapped and tied around the top of this pole. A shorter, flatter bowsprit sticks out from the bow below it. Two small wooden ladders stand inside the open hull and lean up toward the bottoms of the sails. Apart from that one rope there is no rigging, and the sail corners are not tied down.",
+ "errors": [
+  {
+   "where": "Right side, the long diagonal pole rising from mid-hull to the top right with the rope tied to it",
+   "what": "An invented spar. It leans out of the middle of the hull at a steep angle like a toppled mast and carries no sail. The bow already has its own bowsprit below it, so the ship has two bow spars. The one rope from the main mast is tied to this pole, so the only rigging holds nothing up. No real ship has a spar like this.",
+   "severity": "major"
+  },
+  {
+   "where": "Forward (rightmost) sail and its yard",
+   "what": "The sail and its yard have no mast. Nothing stands behind them, so they float in the air or seem to hang off the leaning pole that passes behind them. A yard has to cross a mast.",
+   "severity": "major"
+  },
+  {
+   "where": "Two wooden ladders inside the hull, under the main and rear sails",
+   "what": "The ladders lead nowhere. They rise from inside the open hull and stop at the bottom edge of the sails, with no deck, mast or fighting top to reach. Real ships use rope ratlines running from the ship's side up to the mast top.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "A cartoon three-masted sailing ship with a proper deck. The foremast stands straight up near the bow and carries the forward square sail on a yard that crosses it. Only one bowsprit, angled low and forward from the bow. No leaning pole rising from the middle of the hull. A rope stay runs from the main mast top down to the foremast top or the bowsprit tip. Rope ratlines run from the hull sides up to the mast tops, with no free-standing ladders."
+}

@@ -1,0 +1,16 @@
+{
+ "survey": "A stone chess table with two round stools on a grassy park lawn. The table has a thick square top with a raised rim and an inset checkerboard. It sits on a flared square pedestal and a wide square plinth on the grass. The top is seen from fairly high up and turned about 30° to the viewer. Its nearest corner points down toward the bottom centre, and its left and right edges run off diagonally to two vanishing points. The pedestal and plinth below are drawn almost square to the camera: you see one flat front face with near-horizontal top and bottom edges and almost no side face. Both stools are round drums with open elliptical tops, seen from about the same height as the table top. They stand flat on the grass, and their ellipses agree with that view. Shadows fall on the lawn under each piece, so contact with the ground reads fine.",
+ "errors": [
+  {
+   "where": "Table top versus pedestal and plinth (centre of the card)",
+   "what": "The top and its base don't share one rotation. The top is turned diagonally, corner toward the viewer, with its edges going to two side vanishing points. The pedestal and plinth under it face straight on, with level front edges and no visible side planes. The top looks twisted on its stand rather than being one solid table.",
+   "severity": "major"
+  },
+  {
+   "where": "Plinth at the bottom of the table",
+   "what": "The plinth's top surface is shown as a thin sliver, which suggests a camera close to its level. The table top above it, and the stool tops beside it, are seen from well above. Because the plinth sits lower, it should show at least as much top surface as they do, not less.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the stone chess table as one solid object from one three-quarter high-angle view. Rotate the flared pedestal and the square plinth to match the square table top, so their corners line up under its corners. Show two side faces of the pedestal and plinth, with their edges running to the same vanishing points as the table top's edges. Show the plinth's top face clearly from above, at the same viewing angle as the table top and the round stool tops."
+}

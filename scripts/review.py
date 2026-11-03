@@ -3,7 +3,7 @@
     review.py study                 specialists read real cards and describe the style
     review.py twins r2              blind pairs: a run's twins against the real cards
 
-make_set.py calls choose() and review_variant() for new cards.
+make_set.py calls choose() and review_variant() for new cards. Both run the construction and perspective checkers.
 """
 
 import argparse
@@ -58,6 +58,21 @@ DIRECTOR_SCHEMA = strict({
     "style_text": text(),
     "cards": array(strict({"pair": text(), "keep": {"type": "boolean"}, "note": text()})),
     "summary": text()})
+CHECKS = ("construction", "perspective")
+
+
+def check_schema():
+    error = strict({"where": text(), "what": text(), "severity": {"type": "string", "enum": ["minor", "major"]}})
+    return strict({"survey": text(), "errors": array(error), "fix": text()})
+
+
+def check_lessons(check):
+    """Cards a human reviewer marked, with what is wrong, plus real cards that are right."""
+    lessons = load_json(AGENTS / "lessons.json")[check]
+    return [({"id": item["id"], "file": item["file"], "derived": ROOT / item["derived"],
+              "full": ROOT / item["full"] if item.get("full") else None}, item["note"]) for item in lessons]
+
+
 PICK_SCHEMA = strict({"picks": array(strict({"card": text(), "pick": {"type": "integer"}, "why": text()}))})
 
 
@@ -324,6 +339,82 @@ def score(pairs, reports):
     return rows
 
 
+def check_sheet(card, out):
+    """The card beside its object, cut from the full-size drawing when there is one."""
+    box = mask_of(card).point(lambda v: 255 if v > 127 else 0).getbbox() or (0, 0, *SIZE)
+    source = Image.open(card["full"]).convert("RGB") if card.get("full") else card_image(card)
+    scale = source.width / SIZE[0]
+    pad = 12
+    crop = source.crop(tuple(round(v * scale) for v in (max(box[0] - pad, 0), max(box[1] - pad, 0),
+                                                         min(box[2] + pad, SIZE[0]), min(box[3] + pad, SIZE[1]))))
+    crop.thumbnail((SIZE[0] * 2, SIZE[1] * 2), Image.LANCZOS)
+    sheet = Image.new("RGB", (SIZE[0] + 12 + SIZE[0] * 2, SIZE[1] * 2), "white")
+    sheet.paste(card_image(card), (0, 0))
+    sheet.paste(crop, (SIZE[0] + 12, 0))
+    sheet.save(out)
+    return out
+
+
+def check_cards(name, cards, rater="claude-opus-5-5", checks=CHECKS):
+    """Mistakes a viewer would spot, one card per call: {check: {card key: report}}.
+
+    Cards are records with derived maps. An optional "key" names a card when ids repeat across runs.
+    """
+    folder = ROOT / "runs" / "review" / name / "checks"
+    (folder / "sheets").mkdir(parents=True, exist_ok=True)
+    key = lambda card: card.get("key", card["id"])
+    sheets = {key(card): check_sheet(card, folder / "sheets" / f"{key(card)}.png") for card in cards}
+    taught = {}
+    for check in checks:
+        lessons = check_lessons(check)
+        paths = [check_sheet(card, folder / "sheets" / f"lesson_{check}_{i}.png") for i, (card, _) in enumerate(lessons)]
+        notes = "\n".join(f"Image {i + 1}: {note}" for i, (_, note) in enumerate(lessons))
+        taught[check] = (paths, notes)
+
+    def one(job):
+        check, card = job
+        out = folder / check / f"{key(card)}.json"
+        if out.exists():
+            return check, key(card), load_json(out)
+        paths, notes = taught[check]
+        prompt = (f"You check mobile-game card art for mistakes.\n\n{(AGENTS / f'{check}.md').read_text('utf-8')}\n"
+                  "Each image shows a card whole on the left and its object enlarged on the right. The first "
+                  f"{len(paths)} images are examples from a human reviewer, with their notes:\n{notes}\n\n"
+                  f"Now check image {len(paths) + 1}. First write a survey: the object's main parts and how each one "
+                  "attaches, rests or faces the camera. Then list every error on your topic with where it is, what is "
+                  "wrong and its severity: major if a viewer would notice it at once, minor if only on a close look. "
+                  "Return no errors if there are none. In fix, give wording an image generator could use to correct "
+                  "it, or leave it empty.")
+        result = ask(rater, prompt, [*paths, sheets[key(card)]], check_schema())
+        if result:
+            save_json(out, result)
+        return check, key(card), result
+
+    with ThreadPoolExecutor(8) as pool:
+        results = list(pool.map(one, [(check, card) for check in checks for card in cards]))
+    found = {check: {} for check in checks}
+    for check, card_key, result in results:
+        if result:
+            found[check][card_key] = result
+    return found
+
+
+def major_errors(name, records):
+    """{record id: (major errors, fix wording)} from both checkers."""
+    found = check_cards(name, records)
+    result = {}
+    for record in records:
+        reports = [found[check].get(record["id"]) or {} for check in CHECKS]
+        errors = [e["what"] for report in reports for e in report.get("errors", []) if e["severity"] == "major"]
+        result[record["id"]] = (errors, " ".join(r.get("fix", "") for r in reports if r.get("errors")).strip())
+    return result
+
+
+def try_record(run, try_id, **extra):
+    return {"id": try_id, "file": str((run / "tries" / f"{try_id}.png").relative_to(ROOT)), "derived": run / "derived",
+            "full": run / "full" / f"{try_id}.png", "real": False, **extra}
+
+
 def candidate_sheet(real, paths, out):
     """A real card and the numbered candidates of a new card, two to a row."""
     tiles = [labelled(card_image(real), "REAL")]
@@ -346,9 +437,14 @@ def choose(run, briefs, history, rater="claude-opus-5-5"):
     (folder / "sheets").mkdir(parents=True, exist_ok=True)
     real = {c["id"]: c for c in real_cards()}
     lessons = lesson_sheets(lessons_for(), "staging_detail", folder)
+    candidates = [try_record(run, t["try_id"]) for brief in briefs for t in history[brief["id"]]]
+    errors = major_errors(f"{run.name}/v{briefs[0]['variant']}candidates", candidates)
     sheets, options = [], {}
     for brief in briefs:
-        tries = [t for t in history[brief["id"]] if t["passed"]] or history[brief["id"]]
+        for t in history[brief["id"]]:
+            t["errors"] = errors[t["try_id"]][0]
+        passed = [t for t in history[brief["id"]] if t["passed"]] or history[brief["id"]]
+        tries = [t for t in passed if not t["errors"]] or passed
         options[brief["id"]] = tries
         paths = [run / "tries" / f"{t['try_id']}.png" for t in tries]
         sheets.append(candidate_sheet(real[brief["references"][0]], paths, folder / "sheets" / f"{brief['id']}.png"))
@@ -378,9 +474,7 @@ def review_variant(run, variant, round_number, briefs, history, rater):
     entries, ids = [], {}
     for brief in briefs:
         best = best_try(history[brief["id"]])
-        record = {"id": best["try_id"], "file": str((run / "tries" / f"{best['try_id']}.png").relative_to(ROOT)),
-                  "derived": run / "derived", "name": brief["card"]["name"], "real": False}
-        entries.append((record, real[brief["references"][0]]))
+        entries.append((try_record(run, best["try_id"], name=brief["card"]["name"]), real[brief["references"][0]]))
         ids[best["try_id"]] = brief["id"]
     write_marigold([e[0] for e in entries], "cuda", run / "derived")
     for record, _ in entries:
@@ -392,6 +486,7 @@ def review_variant(run, variant, round_number, briefs, history, rater):
     rng.shuffle(entries)
 
     name = f"{run.name}/v{variant}r{round_number}"
+    errors = major_errors(name, [record for record, _ in entries if not record["real"]])
     pairs = blind_pairs(entries, name)
     reports = specialists(name, pairs, lessons_for(), used, rater, list(ROLES))
     direction = direct(name, pairs, reports, None, rater)
@@ -399,8 +494,12 @@ def review_variant(run, variant, round_number, briefs, history, rater):
         raise RuntimeError("the art director gave no notes. Rerun to continue")
     report(name, pairs, reports, direction)
     by_pair = {p["pair"]: p[p["odd"]]["id"] for p in pairs if p["odd"] != "neither"}
-    return {ids[by_pair[card["pair"]]]: card["note"] for card in direction["cards"]
-            if card["pair"] in by_pair and not card["keep"] and card["note"]}
+    notes = {by_pair[card["pair"]]: card["note"] for card in direction["cards"]
+             if card["pair"] in by_pair and not card["keep"] and card["note"]}
+    for try_id, (found, fix) in errors.items():
+        if found:
+            notes[try_id] = " ".join(filter(None, (notes.get(try_id), fix or "Fix: " + " ".join(found))))
+    return {ids[try_id]: note for try_id, note in notes.items()}
 
 
 def direct(name, pairs, reports, style_text, rater):

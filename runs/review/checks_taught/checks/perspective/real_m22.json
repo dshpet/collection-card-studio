@@ -1,0 +1,16 @@
+{
+ "survey": "An orange school locker stands on a light wooden floor against a purple wall with a white baseboard. The camera is slightly left of the locker and a little above the floor. The front face is seen almost straight on, and a narrow strip of the left side face shows three vent slots at the top and three at the bottom. The locker rests on four short feet on floorboards that run left to right, so the base contact agrees with the floor. Inside the open cabinet is an upper shelf holding a stack of books and two upright books. Under the shelf, a grey hanging rod runs from wall to wall, with a round end cap visible at its right end. On the cabinet floor are a pair of blue sneakers with a basketball resting behind and partly on them. The door is attached at the right edge of the opening and swung all the way out to the right. It is drawn flat and front-on, almost in the same plane as the front face, showing six horizontal vents and a keyhole latch.",
+ "errors": [
+  {
+   "where": "Open door on the right",
+   "what": "The door is hinged at the right edge of the opening and swung open, so the viewer should see its inner face, foreshortened and turned toward the camera. Instead it shows the outer face, with vents and a keyhole latch, square to the camera and at full width, like a closed door slid sideways. Its plane and the face shown do not match a door swung on that hinge.",
+   "severity": "major"
+  },
+  {
+   "where": "Vents on the left side face",
+   "what": "The side face is turned sharply away from the viewer, but its vent slots are drawn almost as wide and as front-facing as the ones on the front. They hang over the corner instead of narrowing and tilting with the side face.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Show the open locker door swung outward on its right-hand hinge at about 100–120 degrees. Draw it foreshortened and angled toward the viewer, showing its plain inner face rather than the vents and keyhole of the outer face. Make the vent slots on the left side panel narrow and slant with that panel's perspective, following its top and bottom edges."
+}

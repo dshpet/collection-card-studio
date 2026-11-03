@@ -1,0 +1,11 @@
+{
+ "survey": "A short wooden pier runs from the beach out into the sea, seen from a high camera. The horizon sits near the top of the frame, so we look down on everything. The deck is made of planks laid across the pier, and they get thinner toward the back, which is correct foreshortening. The front edge of the deck is a level board facing the viewer. There are four thick round posts with their top ellipses showing. The front-left post stands in the sand and has rope coiled around it. The front-right post stands in the water with a lifebuoy hung from a nail on its front, facing the viewer. The two back posts stand in the water. Handrails run along both sides from the front posts to the back posts, held up by short uprights. Shorter support posts under the deck reach into the water. All the posts stay vertical, and their top ellipses and the rope coils agree with the downward view. The water lines on the posts are drawn flat, matching the water.",
+ "errors": [
+  {
+   "where": "Right side of the deck and the right handrail, from the front-right post to the back-right post",
+   "what": "The left and right sides of the pier should meet at one vanishing point on the horizon, but they don't. Both side edges lean up and to the right at about the same angle. The right edge and right rail swing out so far that the back-right post stands well to the right of the front-right one, and the back planks stick out past the line set by the front-right corner. This looks wrong next to the planks, which shrink strongly with depth. The deck looks skewed and slightly wider at the far end instead of narrowing as it goes back.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the wooden pier in one-point perspective from a high view. The left and right deck edges and both handrails should meet at one vanishing point on the horizon behind the middle of the pier. The far end of the pier should be narrower than the front, and the back-right post should stand inside the line of the front-right post, not out to the right of it. Keep the planks running across the pier and getting thinner with distance, and keep all posts vertical."
+}

@@ -1,0 +1,16 @@
+{
+ "survey": "A stack of three folded paper maps seen from above at about a three-quarter angle, slightly turned to the right. The top map is accordion-folded into panels. Its fold creases run front to back across the surface, and its front edge shows a zigzag that matches the folds. The two maps underneath repeat the same zigzag and are offset slightly downward. A bit of each lower map's top surface (green land, blue water) shows between the layers, which fits viewing from above. Printed on the top surface are blue lakes, green land bands and a yellow dashed path. A raised red X sits near the upper-right corner. The cream border has a consistent thickness around the whole stack, and the stack has no drawn ground beneath it.",
+ "errors": [
+  {
+   "where": "Red X marker on the top map, upper right",
+   "what": "The X is drawn almost face-on: both arms look about the same length and its front face points at the viewer. The map surface under it is tilted well away from the camera, as the squashed lakes and the angled crease lines show. A flat X lying on that surface should be shortened from front to back and lean back with the paper. As drawn, it looks propped upright instead of lying on the map.",
+   "severity": "minor"
+  },
+  {
+   "where": "Yellow dashed path on the top map",
+   "what": "The dashes stay about the same size and thickness across the whole surface, and the back curves are as round as the front ones. On the tilted face, the back dashes should be a little smaller and flatter. The effect is slight and reads as stylization.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Lay the red X marker flat on the tilted map surface, shortened from front to back to match the map's angle, as if printed or embossed on the paper rather than facing the camera. Make the yellow dashes of the treasure path slightly smaller and flatter as the path moves toward the back of the map."
+}

@@ -1,0 +1,16 @@
+{
+ "survey": "Red British phone box seen in three-quarter view from a little above and to the left. The left side face goes back to the left, and the front face (the door) faces the viewer and turns slightly to the right. A domed roof with a crown and sign panel on each face sits on a cornice band that wraps both faces. Both faces have glazing bars in a window grid. The side grid narrows correctly as it turns away, and its rows run with the face's top and bottom edges. A purple plinth runs under both faces, and its top surface is visible, which fits the raised camera. The vertical edges stay vertical. The base edges slope more steeply than the roof edges, which fits a horizon above the box. Mounted inside are a wall phone with a keypad and handset that faces straight to the front, and a yellow pull handle on the right side of the door. Overall the box's shape, roof, plinth and window grids agree on one viewpoint.",
+ "errors": [
+  {
+   "where": "Yellow door handle at the right edge of the front door",
+   "what": "The handle's grip sits to the right of its two mounting posts, so we see the handle from the right. The rest of the box is seen from the left, where the left side face shows. From this camera, a grip that stands out from the door should shift slightly left of its mounts and show its left side.",
+   "severity": "minor"
+  },
+  {
+   "where": "Payphone in the middle of the front door",
+   "what": "The phone is drawn flat and front-on at the plane of the door glass, as if stuck to the outside of the pane. If it were mounted inside on the back wall, it would show through the glass, set back and partly behind the glazing bars. Its depth inside the box doesn't read.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Keep the same three-quarter view from above and to the left. Draw the yellow door handle so its grip stands out toward the viewer: the grip shifts slightly left of its mounting posts and its left side shows, matching the left side face of the box. Mount the payphone on the back wall inside the box, seen through the door glass and partly behind the glazing bars, with a faint reflection over it so it reads as set back."
+}

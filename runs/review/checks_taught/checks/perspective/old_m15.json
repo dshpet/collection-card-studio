@@ -1,0 +1,16 @@
+{
+ "survey": "A red British phone box seen in three-quarter view from slightly above and to the left. A purple base sits flat on the green floor, with its top face showing, which fits the high camera. The tall box rises from the base with vertical corner posts. The front face, a glazed door with a yellow handle on its right edge, faces the viewer almost square-on. The left side face turns away, and its window panes are narrowed to match. The domed roof sits on top, with a cream sign panel and a gold crown on both the front and the left side. A blue payphone with a keypad and a handset on a cord is mounted inside the door glazing and faces front, the same way as the door. The box casts a shadow to the left on the floor.",
+ "errors": [
+  {
+   "where": "Gold crown above the left side sign panel",
+   "what": "The side sign panel is narrowed to follow the side face as it turns away, but the crown above it is drawn almost front-on, like the front crown only smaller. It should be squeezed and turned to match the side face.",
+   "severity": "minor"
+  },
+  {
+   "where": "Horizontal glazing bars on the left side face",
+   "what": "With the camera slightly above and the side face turning away, the horizontal bars should slope gently towards the same vanishing point as the side face's top and base edges. They read as almost level instead, so the side windows look a little flatter than the box around them.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Keep the camera and the three-quarter view. Draw the crown on the left side face foreshortened and turned with that face, so it is narrower and angled like the side sign panel beneath it. Make the horizontal glazing bars on the left side face slope slightly so they converge with the side face's top and base edges."
+}

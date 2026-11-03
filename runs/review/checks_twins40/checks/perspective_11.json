@@ -1,0 +1,83 @@
+{
+ "cards": [
+  {
+   "card": "c043",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c000",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c086",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c110",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c023",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c017",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c034",
+   "errors": [
+    {
+     "where": "right side pocket on the side panel",
+     "what": "The pocket is drawn turned toward the viewer at nearly full width, but the side panel it sits on turns away. It should be narrowed and angled with that side, like the bedroll end above it.",
+     "severity": "minor"
+    }
+   ],
+   "fix": "Foreshorten the right side pocket so it follows the receding side panel of the backpack: narrower, angled away, its top edge parallel to the side panel's edges."
+  },
+  {
+   "card": "c047",
+   "errors": [
+    {
+     "where": "X-shaped leg frame and feet",
+     "what": "The feet stand at heights that don't fit one rectangular footprint on the floor. The front centre foot sits far lower than the others, so the leg frame and floor don't share one view.",
+     "severity": "minor"
+    }
+   ],
+   "fix": "Redraw the folding legs as two clean X-frames whose four feet sit at the corners of one rectangle on the floor, seen from the same slightly high three-quarter view as the seat."
+  },
+  {
+   "card": "c078",
+   "errors": [
+    {
+     "where": "white crown of the cap versus visor and floor",
+     "what": "The floor and the visor are seen from clearly above, but the white crown is drawn as a side profile. Its oval top surface, which should be visible from this height, is missing, so the cap doesn't match the camera.",
+     "severity": "major"
+    }
+   ],
+   "fix": "Show the captain's cap from the same high three-quarter view as the wooden floor: the white crown's oval top is visible as a wide ellipse, and the band and visor curve around it in matching ellipses."
+  },
+  {
+   "card": "c059",
+   "errors": [
+    {
+     "where": "sails and yards on all three masts",
+     "what": "The masts are lined up along a hull seen mostly from the side, but every square sail and yard faces the viewer straight on. They aren't turned with the hull.",
+     "severity": "minor"
+    },
+    {
+     "where": "three portholes on the hull side",
+     "what": "The portholes are equal front-facing circles on a hull side that turns away toward the stern. They should be ellipses that get smaller toward the stern.",
+     "severity": "minor"
+    }
+   ],
+   "fix": "Turn the yards and sails to match the ship's three-quarter angle so they are foreshortened and overlap slightly, and draw the portholes as ellipses that shrink toward the stern."
+  }
+ ]
+}

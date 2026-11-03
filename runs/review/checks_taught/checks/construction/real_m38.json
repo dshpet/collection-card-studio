@@ -1,0 +1,11 @@
+{
+ "survey": "A coin-operated tower viewer on a rooftop terrace. The head is a rounded box with two round lens barrels side by side, facing camera-left, and a cylindrical cap on its right side. Under the head is a squarer block with a coin slot on the front face. Two curved handles connect the head to this block: the left one comes out from under the lens housing and runs down into the block's left side, and the right one comes off the side cap and runs down into the block's right side. The block sits on a short neck with a wider collar, and the collar sits on a tall round post that stands behind the glass railing. Every part is joined to the next; nothing floats or ends loose.",
+ "errors": [
+  {
+   "where": "The two side handles between the viewer head and the coin-box block",
+   "what": "Both handles are fixed at both ends, to the head and to the block below it. That locks the head rigidly to its base, so it could not tilt up or down the way a real tower viewer does on its side pivots. The two sides also don't match: the left handle comes out from under the lens body, while the right one comes off the side cap.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Give the coin-operated viewer a short handle on each side, sticking out from the head's pivot caps and ending in free grips, not joined to the coin box. Mount the head in a U-shaped yoke on matching round pivot caps on both sides, so it can visibly tilt."
+}

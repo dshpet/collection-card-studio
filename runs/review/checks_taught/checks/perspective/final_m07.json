@@ -1,0 +1,11 @@
+{
+ "survey": "A blue sports water bottle floats at a diagonal, with its top toward the upper right and its base toward the lower left. The body is a cylinder with a pinched waist and finger-grip hollows on both sides, and water drops sit on its surface. A dark ring at the shoulder joins the body to a light-blue ridged screw cap. On top of the cap is a short spout with a round opening. A carry loop is pinned to the right side of the cap and arcs up and to the right. At the bottom-left end, the base is shown as a wide ellipse with a rim, so the base disc faces the viewer. At the top, the spout opening and the top of the cap are also drawn as visible ellipses, as if seen from above. The shoulder ring and cap ridges are drawn as ellipses too, but there is no ground to check how the bottle rests.",
+ "errors": [
+  {
+   "where": "Both ends of the bottle: the base ellipse at the bottom left and the cap and spout top at the upper right",
+   "what": "Both ends of the bottle face the camera at once. The base shows its flat bottom disc, so the bottom end is tilted toward the viewer. The spout opening and the top of the cap are also drawn from above. On a straight cylinder only one end can show its face. If the base faces the viewer, the top should turn away and show only its side, and the cap rings should curve the same way as the base ellipse. The two ends are drawn from different camera angles.",
+   "severity": "major"
+  }
+ ],
+ "fix": "Draw the bottle as one straight cylinder seen by one camera. Show the round base disc at the bottom-left end, tilted toward the viewer. Turn the cap end away from the viewer so the top of the cap and the spout opening are hidden. Make the shoulder ring and cap ridges curve the same way as the base ellipse, and make them narrower than the base."
+}

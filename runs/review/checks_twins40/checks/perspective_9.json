@@ -1,0 +1,71 @@
+{
+ "cards": [
+  {
+   "card": "c006",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c030",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c098",
+   "errors": [
+    {
+     "where": "concrete base slab under the pump",
+     "what": "The slab is drawn turned at an angle and seen steeply from above, with diagonal receding edges. The pump on it faces the viewer square-on and almost at eye level: its base and the bottom of its plinth are flat horizontal lines and its top face barely shows. The pump's footprint does not line up with the slab's edges, so the two look like they come from different cameras.",
+     "severity": "minor"
+    }
+   ],
+   "fix": "Draw the fuel pump and its concrete base from the same slightly high three-quarter view. Align the pump's plinth with the slab's edges, so both recede to the same vanishing points, and show as much of the pump's top face as of the slab's top surface."
+  },
+  {
+   "card": "c020",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c054",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c092",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c057",
+   "errors": [
+    {
+     "where": "yards and sails on all masts",
+     "what": "The hull is in a three-quarter view with its length running roughly left to right. The yards should cross the hull, so they should come toward or go away from the viewer and look foreshortened. Instead every yard is a wide horizontal bar parallel to the hull, and every sail faces the viewer flat.",
+     "severity": "major"
+    },
+    {
+     "where": "hull interior / deck opening",
+     "what": "The inside of the hull is shown from well above, like an open bowl with the far inner wall and deck visible. The hull side and the water are seen almost at eye level.",
+     "severity": "minor"
+    }
+   ],
+   "fix": "Keep the ship in one three-quarter view. Set the yards across the hull, angled and foreshortened toward the viewer, with the sails turned to match. Show the deck from the same low angle as the hull side and the waterline."
+  },
+  {
+   "card": "c090",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c021",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c048",
+   "errors": [],
+   "fix": ""
+  }
+ ]
+}

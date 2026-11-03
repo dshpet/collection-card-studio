@@ -1,0 +1,11 @@
+{
+ "survey": "An inflatable beach ball sits on rippled sand, with orange dunes behind it. The camera is a little above the ball, looking slightly down at it and the ground. The colour panels (red, white, blue, white, green) run from a purple valve cap at the top down toward a bottom point hidden where the ball touches the sand. The front blue panel faces the camera, and the side panels squeeze correctly as they curve away at the left and right edges. The ball sits slightly sunk into the sand, and its shadow falls to the right along the ground. The panel edges bend consistently toward the top, and the contact with the ground is believable.",
+ "errors": [
+  {
+   "where": "Purple valve cap at the top of the ball",
+   "what": "The cap is drawn as a fairly open oval, about 0.6 times as tall as it is wide, as if seen from roughly 35-40 degrees above. But it sits almost on the ball's top outline with only a thin strip of white panel behind it, which fits a view only about 10 degrees above level. The cap's shape and its position on the ball imply two different camera heights.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the beach ball from one consistent, slightly raised viewpoint. Either make the purple valve cap a narrower, flatter oval that fits its position near the top edge of the ball, or move the cap down onto the visible top of the ball so it is seen clearly from above, with the colour panels meeting at it and more of the back panels visible behind it."
+}

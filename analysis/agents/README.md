@@ -16,6 +16,8 @@ Nine specialists, one per art vector, and an art director. `scripts/review.py` r
 
 [art_director](art_director.md) reads every report and turns them into instructions for the generator.
 
+Two checkers judge each card alone, for mistakes rather than style: [construction](construction.md), whether the object could exist and work, and [perspective](perspective.md), whether it is one consistent space. They see the card beside its object cut from the full-size drawing, and learn from [lessons.json](lessons.json): cards a human marked, with notes. Candidates with a major error are not chosen, and errors on a chosen card become edit notes.
+
 ## Rules for every specialist
 
 Evidence and its limits: [TOOLS.md](../TOOLS.md). Each specialist also receives its section of [VOCABULARY.md](../VOCABULARY.md).

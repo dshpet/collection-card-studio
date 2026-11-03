@@ -1,0 +1,16 @@
+{
+ "survey": "A stack of three treasure maps seen from above at a three-quarter angle. Each map is accordion-folded into three vertical panels with two creases. Each has a thick, rounded cream border that runs along every edge and bends with the folds. The top map shows a green land area, blue lakes in the upper-left and lower-right, a dashed yellow path and a raised red X near the upper-right corner. The two lower maps sit directly under the top one. They copy its outline and zigzag profile exactly and nest inside each other like moulded trays, with small even gaps between them. The pile rests on nothing; it floats against the pink striped background, which is normal for a card icon.",
+ "errors": [
+  {
+   "where": "Edges and creases of all three maps, clearest on the front edge of the top map",
+   "what": "The map does not fold the way paper folds. Each sheet has a thick, puffy, rounded border that bends around the creases like moulded plastic or clay. Paper has no rim and makes sharp creases. On the top surface the creases are soft, shaded ridges that do not clearly line up with the peaks and valleys of the zigzag front edge, so the sheet reads as a solid sculpted tile, not a folded sheet.",
+   "severity": "major"
+  },
+  {
+   "where": "The two lower maps in the stack",
+   "what": "The lower maps are exact copies of the top one, with the same zigzag, the same lake shapes and the same rim. They nest inside each other with equal gaps, like stacked trays. Real folded maps in a pile would lie flat on one another and would not keep identical floating gaps between sheets.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "A small stack of thin paper treasure maps, accordion-folded with sharp, crisp creases. Each crease lines up with a peak or valley in the zigzag edge. The paper is thin, with plain edges, no thick rounded rim or border. The sheets lie directly on top of each other, slightly offset, with no gaps between them."
+}

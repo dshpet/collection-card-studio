@@ -1,0 +1,11 @@
+{
+ "survey": "A stage spotlight hangs from a short flat truss. The truss has two horizontal tube chords joined by diagonal braces and short end posts. It is seen mostly front-on and slightly from below. Its right end is a little nearer the viewer: the chords spread a little to the right and the right tube ends show flat end faces. A rectangular clamp sits at the middle of the truss. A short vertical stem drops from the clamp to a swivel, which holds a U-shaped yoke. The yoke is drawn almost face-on, with both arms showing at nearly full width. Its right arm ends in a round pivot disc on the right side of the lamp can. Its left arm goes behind the top of the can. The can is a cylinder whose front points down and to the left, toward the viewer. Its front rim is an ellipse that is close to a circle, and the inside of the rim shows three round lenses (yellow, cyan, red). The upper-right side of the can carries three vent slots that follow its curve. Coloured beams leave the lenses down and to the left, along the can's axis. The background is plain, so there is no floor contact to check.",
+ "errors": [
+  {
+   "where": "Yoke and lamp can, at the pivot",
+   "what": "The yoke and the can do not agree on the pivot axis. The yoke is drawn almost face-on, so the pivot axis between its arms runs left to right across the picture. But the can is turned so its front points strongly to the left and toward the viewer. A can that swings on that pivot can only tilt up or down, so its front cannot turn sideways. Either the yoke should be turned and foreshortened with the can, or the can should face more straight down and forward. The right pivot disc shows the problem: it faces right and back, in line with the can, not with the face-on yoke.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Turn the U-shaped yoke together with the lamp body. The pivot axis between the yoke arms should run at a right angle to the can's axis. Draw the yoke arms foreshortened, with the near arm larger, and show both pivot discs on opposite sides of the can, lined up on one axis. Alternatively, keep the yoke face-on and turn the can so it points straight down and toward the viewer, tilting only up or down on the pivot."
+}

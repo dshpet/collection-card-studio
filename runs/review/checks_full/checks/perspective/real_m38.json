@@ -1,0 +1,11 @@
+{
+ "survey": "Coin-operated tower viewer on a rooftop, seen in three-quarter view from about eye level. Head: a rounded housing whose front face with the two eyepieces points toward the camera on the left. Its right side shows a large cylindrical pivot cap with a smaller grey knob on it. A U-shaped handle on the right attaches the pivot to the coin box below. The coin box faces the camera with its slot, and its right side is slightly visible. The box sits on a collar whose top ellipse is seen slightly from above. The collar sits on a straight vertical column that leaves the bottom of the frame. Background: a glass railing whose top and bottom rails rise gently to the right toward a high city horizon. This fits a camera a little above railing height looking slightly down, and agrees with the collar ellipse and the viewer's right side receding. The column is vertical and the railing lines run consistently toward the right.",
+ "errors": [
+  {
+   "where": "Eyepieces on the front face of the viewer head",
+   "what": "The head is turned to three-quarter view: its right-side pivot cap shows as a fairly wide ellipse. The two eyepiece rims are still drawn as almost perfect, equal-sized circles, as if the front face looked straight at the camera. They should be squeezed sideways into ellipses, with the far eyepiece slightly smaller.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the two eyepiece rims as horizontally squeezed ellipses that match the three-quarter turn of the viewer head, with the farther eyepiece slightly smaller and narrower than the nearer one. Their long axes should be vertical and parallel to the front edges of the housing."
+}

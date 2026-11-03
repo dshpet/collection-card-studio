@@ -1,0 +1,16 @@
+{
+ "survey": "The object is a stack of three folded treasure maps, seen from above at a three-quarter angle and tilted toward the lower right. Each sheet has a thick, rounded cream border. The top map is fully visible: green land, blue water at the top-left and bottom-right, a yellow dashed path and a raised red X. The sheet is meant to be folded into panels, like a concertina. The two maps below rest directly under the top one, slightly offset, and only their cream edges and a little of their surface show. All three sheets have the same wavy outline, so they nest together and touch each other properly. Nothing floats and nothing is invented: the X is a thick decal on the paper. The problem is the folds.",
+ "errors": [
+  {
+   "where": "Top map, the fold creases across the sheet (top edge compared with bottom edge)",
+   "what": "The folds could not exist in paper. The top edge bends only once, at a single peak just right of center, but the bottom edge steps twice, at about one third and two thirds of the width. The creases on the map face are curved and slanted and do not join the bends on the top edge to the bends on the bottom edge. A real fold runs straight across the whole sheet and shows the same bend on both edges, so this sheet is shaped in a way paper cannot fold.",
+   "severity": "major"
+  },
+  {
+   "where": "The two lower maps in the stack",
+   "what": "The lower sheets copy the same impossible outline: their bottom edges step twice while their surfaces do not show matching creases. Their folds do not line up with any straight crease either.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw each map as a sheet folded concertina-style into three equal panels. Both fold creases run as straight, parallel lines from the top edge to the bottom edge, so the top and bottom edges show the same mountain and valley bends at the same points. Stack the three folded maps neatly, each with the same straight fold lines lined up with the map above it."
+}

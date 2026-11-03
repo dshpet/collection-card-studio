@@ -1,0 +1,16 @@
+{
+ "survey": "A spiral pool slide with four main parts. A yellow square platform sits on one blue central post, held by two diagonal braces under the deck. A yellow railing with ball-topped posts runs along the back and left edges of the platform, and the front edge is open. A blue ladder leans against the right edge of the platform; its rails continue upward as curved handrails, and its feet rest on the tiles. The green slide trough snakes left and right in an S-shape, down in front of the central post. A second short blue post holds up the lowest bend and stands on the tiles. The slide runs out over the pool edge, and water pours from its end into the pool. The view is a three-quarter front view. The ladder faces right, and the slide's open trough faces the camera.",
+ "errors": [
+  {
+   "where": "Top of the slide, at the left and back edge of the yellow platform",
+   "what": "The slide's top end starts below and behind the platform deck instead of opening onto the deck surface. That stretch of the deck edge is also closed off by the railing. A rider standing on the platform has no way into the slide, so the slide does not connect to the platform.",
+   "severity": "major"
+  },
+  {
+   "where": "Upper-left bend and the right-hand U-turn of the slide",
+   "what": "The slide does not wrap around the central post like a real spiral. It zigzags back and forth on one side of the post. Its far left and right bends stick out a long way with no post, bracket or brace under them. Only the lowest bend has a support, so most of the trough hangs in the air.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Have the slide's entrance meet the top surface of the yellow platform, flush with the deck, through a gap in the railing, so a rider can step from the platform straight into the trough. Wind the slide around the central blue post as a true helix. Hold up each turn with short blue brackets running from the trough to the post, plus an extra floor post under the widest outer bends."
+}

@@ -74,3 +74,11 @@ The first run looked off to a human, while every check passed it. Details are in
 - Rebuilt the specialists around current tools, with a lens per vector, and replaced correction rounds with candidates, selection and targeted edits.
 - Tested on forty twins no style decision had seen: reviewers went from 71% to 47% against the old style, which is chance. A content-matched DINOv3 classifier moved less, from 0.86 to 0.84, and can still tell.
 - Drew three variants of Western, Sci-Fi and Horror, chose the final sets and placed them in the game window.
+
+## 2026-11-03: Human rating
+
+- Built a local rating page. The user found 31 of 32 old-style twins and 24 of 32 final-style ones, while model reviewers were at chance. The models were blind again, one level up.
+- The user named what gives cards away: toy-like roundness and gloss, broken construction and inconsistent perspective.
+- Added construction and perspective checkers, taught with the user's marked cards. Full-size crops took construction recall from 5 to 11 of 16.
+- Drew the forty twins in two more styles for the user to pick the closest.
+

@@ -1,0 +1,72 @@
+{
+ "cards": [
+  {
+   "card": "c028",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c026",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c037",
+   "errors": [
+    {
+     "where": "glass base vs rim",
+     "what": "The camera looks down onto the table, so the base ellipse should be at least as open as the rim ellipse. Instead the base is drawn as a nearly flat ellipse under a clearly open rim.",
+     "severity": "minor"
+    }
+   ],
+   "fix": "Draw the glass from a slightly high camera so the round base is a wider ellipse than the rim opening, matching the tabletop seen from above."
+  },
+  {
+   "card": "c013",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c049",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c008",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c075",
+   "errors": [
+    {
+     "where": "blue base plate and sand vs duck body",
+     "what": "The square base plate and the sand are seen steeply from above, but the duck body and the spring's top cap are seen almost level from the side. The rider looks pasted onto a ground drawn with a different camera.",
+     "severity": "minor"
+    }
+   ],
+   "fix": "Use one slightly high three-quarter camera for the whole spring rider: show the duck's back and the top of the seat a little from above, make the spring coils and top cap clear ellipses, and keep the base plate at the same angle as the sand."
+  },
+  {
+   "card": "c109",
+   "errors": [
+    {
+     "where": "round bar counter",
+     "what": "The inner opening of the counter reads as a wide-open ellipse seen from above, but the outer front edge of the same ring is almost a straight, flat curve. The two edges of the same round counter don't match.",
+     "severity": "minor"
+    }
+   ],
+   "fix": "Draw the circular bar counter as concentric ellipses with the same proportions, so the outer front edge curves around as much as the inner opening."
+  },
+  {
+   "card": "c016",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c014",
+   "errors": [],
+   "fix": ""
+  }
+ ]
+}

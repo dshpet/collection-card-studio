@@ -1,0 +1,11 @@
+{
+ "survey": "The calculator has a thick rounded body with a tilted front face. The display and red solar panel are recessed into its upper section; raised number and operator keys sit on the lower section. Its bottom and right edges show the body's thickness.",
+ "errors": [
+  {
+   "where": "Number and operator keys across the calculator face",
+   "what": "The keys look too front-facing and nearly equal in size despite the body receding strongly toward the top. Their broad faces flatten the keypad into a different viewpoint from the casing.",
+   "severity": "major"
+  }
+ ],
+ "fix": "Draw the entire calculator from one consistent elevated viewpoint. Project the keypad onto the tilted casing: make distant keys smaller and more foreshortened, and align their faces, rows and columns with the casing's perspective."
+}

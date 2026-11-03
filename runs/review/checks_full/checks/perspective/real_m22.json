@@ -1,0 +1,21 @@
+{
+ "survey": "An orange school locker stands on a wooden plank floor against a purple wall with a white baseboard. The camera is a little to the left of the locker and about at its middle height. We see the front opening almost straight on, and the left side face is visible as a narrow strip with two sets of three vent slots. Inside, a shelf holds a stack of books and two upright books. Under the shelf is a hanging rod with a bracket on its right end, and on the floor of the locker sit a basketball and a pair of sneakers. The locker stands on short round feet on the floor. The door is hinged on the right edge of the opening and stands open to the right. It is drawn as a full-width flat panel facing the camera, almost in the same plane as the locker front, with its own vent slots and a keyhole plate. The baseboard and the floor planks rise a little toward the right, which means the room recedes to the right.",
+ "errors": [
+  {
+   "where": "Open door (right half of the object)",
+   "what": "The door is shown as open, but it is drawn flat, facing the camera at full width. Its vent slots and keyhole plate are also drawn straight on and are not foreshortened. A door swung partly open would be turned toward the viewer, so it would look narrower and its top and bottom edges would slope toward a vanishing point. It could instead be swung all the way back (180°), lying flat beside the front. Then we would see its inner face, and a strip of the locker's right frame and side wall would show at the hinge. The drawing shows neither of these. The door just sits flat in the front plane, butted against the opening, so it does not belong to the same space as the box.",
+   "severity": "major"
+  },
+  {
+   "where": "Vent slots on the locker's left side face",
+   "what": "The side face turns sharply away from the viewer. Its vent slots are still drawn as long, level, front-facing bars. They should get shorter and tilt to follow the slope of the side face's top and bottom edges.",
+   "severity": "minor"
+  },
+  {
+   "where": "Locker base vs. floor and baseboard",
+   "what": "The baseboard and the floor planks rise noticeably toward the right. The locker's bottom edge and feet are almost level. So the locker front does not recede the same way as the wall it stands against.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Show the locker door swung open about 60–90 degrees toward the viewer, turned in perspective on its right-hand hinge. The door should look narrower, and its top and bottom edges should slope toward the same vanishing point as the room. Its vent slots and keyhole should be foreshortened on the angled door face. Draw the vent slots on the left side face shorter, sloping along the side's receding edges. Line up the locker's bottom edge and feet with the slope of the floor planks and the baseboard so the locker sits squarely against the wall."
+}

@@ -1,0 +1,21 @@
+{
+ "survey": "A cartoon sailing ship, seen from the front-right three-quarter view. It floats upright in the water. Hull: a wooden hull with a raised stern on the left, two round portholes near the bow, and a rim around the deck. Masts: a rear mast on the left with two stacked square sails, and a taller main mast in the centre with a large lower sail and a smaller top sail. All of these hang from yards crossing the masts. Bow: a steep pole rises out of the hull at the front right. A rope runs from the main mast top to the end of this pole and is tied at both ends. A second, shorter pole sticks out low over the bow rail. Front right sail: a yard with a sail hanging from it sits in front of the main sail. Ladders: two rigid wooden ladders lean against the masts from the deck. There are no shrouds or ratlines.",
+ "errors": [
+  {
+   "where": "Front right sail and its yard, in front of the main sail at mid-height",
+   "what": "The yard does not cross or attach to any mast. Its inner end stops on the face of the main sail, and the steep bow pole only passes behind it. The sail and yard hang in the air with nothing holding them up.",
+   "severity": "major"
+  },
+  {
+   "where": "Bow, front right of the hull",
+   "what": "There are two bowsprit-like poles. A steep one rises from inside the hull, and a second shorter one sticks out low over the rail. A ship has one bowsprit, so this is an extra, duplicated part. The steep pole also starts inside the hull behind the bow instead of at the stem.",
+   "severity": "minor"
+  },
+  {
+   "where": "Ladders against the rear mast and the main mast",
+   "what": "Rigid wooden ladders lean against the masts and run up into the sails, where they end with nowhere to go. Ships climb the rigging on rope ratlines fixed to the hull sides. These ladders are not fixed at the top and lead to no platform.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Mount the front right sail on a proper foremast: a vertical mast standing on the foredeck, with the yard crossing it at the centre. Give the bow a single bowsprit that sticks out forward from the stem, and tie the forestay rope from the main mast top to its tip. Replace the leaning wooden ladders with rope shrouds and ratlines running from the hull sides up to the masts."
+}

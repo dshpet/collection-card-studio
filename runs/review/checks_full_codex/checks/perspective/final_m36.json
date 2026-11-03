@@ -1,0 +1,11 @@
+{
+ "survey": "The pier's plank deck recedes toward the upper right, supported by four upright wooden posts. Rails connect the near and far posts along both sides. Rope wraps around the near-left post; a lifebuoy hangs against the near-right post. The posts extend into the water beside the beach.",
+ "errors": [
+  {
+   "where": "Side rails, especially the left rail, compared with the deck's receding edges",
+   "what": "The rails recede at a much shallower angle than the deck beneath them. The left rail nearly meets deck level at the far post despite standing well above it at the near post, making the railing and deck suggest different vanishing points.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Align each side rail with the perspective of the deck beneath it. Make the rails maintain a consistent height above the deck in three-dimensional space, with their receding edges converging toward the same vanishing point as the deck's side edges."
+}

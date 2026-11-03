@@ -1,0 +1,21 @@
+{
+ "survey": "A stone park chess set on grass, seen from above at about three-quarters. Parts: (1) A square stone tabletop with a thick rounded rim and an inset 8×8 checkerboard. It is drawn turned about 30° to the camera, so it reads as a diamond: one corner points toward the viewer (around the lower middle), and its edges run diagonally up-left and up-right. Its top is seen from fairly high. (2) A tapered square pedestal under the top, with a collar where it meets the slab. (3) A stepped square plinth sitting on the grass. (4) Two round mushroom-shaped stools, one front-left and one back-right. Their seat tops and foot rings are ellipses about a third as tall as they are wide, which fits the high view. The stools and the plinth sit flat on the grass, and their contact matches the ground plane. The checker rows run parallel to the tabletop's edges, so they agree with the top.",
+ "errors": [
+  {
+   "where": "Pedestal, collar and stepped plinth under the tabletop",
+   "what": "The tabletop is turned at an angle, with a corner toward the viewer and diagonal edges, but the pedestal, collar and plinth below it are drawn straight-on. Their front faces are flat rectangles with level top and bottom edges, the sides are symmetric, and no second side face shows. The top and its own support use two different camera angles, so the slab looks twisted about 30° on its column.",
+   "severity": "major"
+  },
+  {
+   "where": "Pedestal collar where it meets the underside of the tabletop",
+   "what": "The collar's front edge is level, while the slab edges it supports run diagonally. The join does not line up with the table's corners, so the top seems to float rotated on the column instead of being fixed to it.",
+   "severity": "minor"
+  },
+  {
+   "where": "Checkerboard squares on the tabletop",
+   "what": "The squares are nearly the same size from front to back. The rows follow the edges, but the far squares barely shrink compared with the near ones, so the board reads flatter than the strongly receding slab around it.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Stone chess table on grass, seen from one consistent high three-quarter view. The square tabletop, the square pedestal and the stepped square plinth are all turned at the same angle: a corner of the pedestal and of the plinth points toward the viewer directly below the tabletop's near corner, and two side faces of each are visible and shaded differently. The pedestal edges are parallel to the tabletop edges and recede toward the same vanishing points. The checkerboard squares shrink gradually toward the far corner. The round stools have elliptical seat tops matching the same viewing angle."
+}

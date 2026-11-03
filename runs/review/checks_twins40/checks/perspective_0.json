@@ -1,0 +1,83 @@
+{
+ "cards": [
+  {
+   "card": "c022",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c102",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c097",
+   "errors": [
+    {
+     "where": "stone base slab under the pump",
+     "what": "The slab's top face is seen from well above, but the pump body standing on it is seen almost level: its bottom edge and lower white band are nearly straight lines instead of curves that match the top ellipse.",
+     "severity": "minor"
+    },
+    {
+     "where": "lower white band on the pump body",
+     "what": "The band runs flat across the cylinder while the top band curves, so the round body doesn't read as one consistent cylinder.",
+     "severity": "minor"
+    }
+   ],
+   "fix": "Draw the pump body and its stone base from the same slightly high viewpoint. Curve every horizontal band and the bottom edge of the cylinder downward, as ellipse arcs that match the curve of the top rim."
+  },
+  {
+   "card": "c100",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c041",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c105",
+   "errors": [
+    {
+     "where": "left front end of the dock deck",
+     "what": "The plank ends step down like stairs, as if each plank sat at a different height, instead of lying flush in one flat deck plane.",
+     "severity": "minor"
+    }
+   ],
+   "fix": "Make all the deck planks lie flush in one flat plane, with their front ends lined up along one straight edge that runs parallel to the dock's side."
+  },
+  {
+   "card": "c084",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c083",
+   "errors": [],
+   "fix": ""
+  },
+  {
+   "card": "c015",
+   "errors": [
+    {
+     "where": "folded bottom edges of the stacked maps",
+     "what": "The bottom folds show their underside and thickness as if seen from below, while the map faces are seen straight on or slightly from above.",
+     "severity": "minor"
+    }
+   ],
+   "fix": "Show the stacked folded maps from one slightly high viewpoint, so only the top faces and the top edges of the paper thickness are visible, with no underside at the bottom folds."
+  },
+  {
+   "card": "c096",
+   "errors": [
+    {
+     "where": "square base plate under the pump",
+     "what": "The plate's top face is seen from a steep high angle, but the pump body above it is seen nearly level: its front face is flat-on and its bottom edge and feet are drawn straight.",
+     "severity": "minor"
+    }
+   ],
+   "fix": "Draw the pump and its base plate from the same slightly elevated camera. Show a little of the pump's top surface and foreshorten the base plate less, so the pump sits flat on it."
+  }
+ ]
+}

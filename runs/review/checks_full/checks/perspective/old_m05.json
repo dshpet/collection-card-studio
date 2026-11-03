@@ -1,0 +1,16 @@
+{
+ "survey": "A chunky blue rounded calculator floats at an angle on a yellow π background. Its body is tilted away from the viewer and rotated: the lower-left corner is nearest, there is a thick side wall along the left and bottom, and the top edge slopes down to the right. On the top face are a red four-cell solar strip, a grey display window and a 4×4 key grid: white number keys, a wide 0 key, a blank key, and cyan ÷ × − + keys in the right column. The solar strip and display sit on the face, but both are drawn almost front-on. The keys are all drawn facing the camera at the same size, as raised rounded blocks, in rows that run nearly level and only drift a little down to the right. There is no ground; the object floats.",
+ "errors": [
+  {
+   "where": "Key grid on the top face (all number and operator keys)",
+   "what": "The body is tilted away from the viewer and turned, yet every key is drawn front-on at the same size and shape. Keys near the far top edge (7, 8, 9, ÷) are as big and as square as the near keys (0, +). The rows and columns do not run parallel to the body's edges: rows stay close to level while the top and bottom edges of the body slope much more steeply, and columns do not lean with the left and right sides. The keys look pasted flat over a tilted body. This is the same fault as the reviewer's Image 1.",
+   "severity": "major"
+  },
+  {
+   "where": "Display window and red solar strip",
+   "what": "The display and solar strip are near-rectangles seen almost front-on. Their edges do not follow the slope of the body's top edge, and they do not narrow with distance the way the tilted face does. They read as flat stickers that are not set into the angled surface.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the calculator's top face in one consistent 3/4 perspective. Every key, the display and the solar strip lie flat on that tilted face: rows run parallel to the body's top and bottom edges, columns run parallel to its side edges, and keys get smaller and more foreshortened toward the far top edge. Each key shows the same tilt and visible side thickness as the body, so the keypad sits in the surface rather than facing the camera."
+}

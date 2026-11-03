@@ -1,0 +1,16 @@
+{
+ "survey": "An open envelope with a stack of photos inside. The envelope body is a cream pocket seen from the flap side. Its top edge dips into a V, and the open flap stands up behind the photos, joined along the back top edge. There are three or four photos: the front one shows a seaside village and its lower edge sinks into the pocket below the V. The back photos stick up behind it on the right, each slightly offset, and all of them fit inside the envelope's sides. A pink house stamp and a wavy postmark sit on the lower right of the front panel. One diagonal fold seam runs from the lower-left corner up toward the bottom of the V. The flap is attached along the back edge, the photos rest inside the pocket without passing through its walls, and nothing floats or ends loose.",
+ "errors": [
+  {
+   "where": "Front panel of the envelope, fold seams",
+   "what": "There is a fold seam from the lower-left corner toward the centre, but no matching seam on the right. A real envelope's side flaps fold the same way on both sides, so the seams should mirror each other; this panel looks folded on one side only.",
+   "severity": "minor"
+  },
+  {
+   "where": "Stamp and postmark, lower right",
+   "what": "The stamp and postmark are on the flap side of the envelope, the side with the seams and the opening. Real mail is stamped and franked on the plain address side.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Open envelope seen from the flap side, with symmetrical fold seams running from both bottom corners to the centre point of the V-shaped pocket. Leave the flap side plain or move the stamp and postmark to the front face of the envelope."
+}

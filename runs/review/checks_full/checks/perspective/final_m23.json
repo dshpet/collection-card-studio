@@ -1,0 +1,16 @@
+{
+ "survey": "A water slide beside a pool, seen from slightly above and to the front-left. A yellow square platform with a railing and ball-topped posts sits on one blue central column. Two diagonal braces join the column to the underside of the platform. A blue ladder runs from the platform's front-right corner down to its feet on the tiled deck behind and to the right. A green open-trough slide winds down around the column in about two S-turns. It crosses in front of the column and behind it, then ends on the pool coping at front-left, where water pours out. The deck tiles recede toward the back right, and the pool edge curves along the bottom. The platform's top face, the deck tiles and the inside of the slide trough are all seen from the same raised viewpoint. The ladder's rungs and the deck's tile rows mostly agree with that view.",
+ "errors": [
+  {
+   "where": "Blue central column, between and below the slide turns",
+   "what": "The column does not stay one straight line. Under the platform it stands to the right of center. The piece showing between the middle turns of the slide, and the post rising from the lower turn, sit clearly further left. Below the slide there are two separate bases, one further back and one further forward and left. The column seems to jump sideways where the slide hides it, so the parts cannot be one vertical support seen from one camera.",
+   "severity": "major"
+  },
+  {
+   "where": "Top end of the slide at the platform's left edge",
+   "what": "The top of the slide climbs above the platform's floor and disappears behind the railing on its left side. It never meets the platform at floor height. Its start floats behind the platform instead of opening onto the deck the platform is drawn with.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw a single straight vertical blue column from the platform's underside to one round base on the tiled deck. Every part of the column that shows between the turns of the slide must sit on that same vertical line. Remove the second offset post and its base. Join the top of the slide flush to the edge of the yellow platform at floor height, with a clear opening in the railing where the slide begins."
+}

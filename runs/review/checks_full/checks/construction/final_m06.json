@@ -1,0 +1,21 @@
+{
+ "survey": "The object is a folded paper treasure map, seen from above at an angle. The top sheet lies open and flat. It shows four panels split by a cross-shaped crease, with green land, two blue lakes, hills, a yellow dashed path and a red X. Under it are two more layers, each a little offset down and to the right. At the front-left edge, each layer curls under in a rounded fold into the layer below, so all three folds are on the same edge. At the back-right edge, the layers end as separate open sheets with wavy edges and no folds. Each lower layer also shows printed map content on its upper face, with green land and a blue lake. The stack is shown floating, with no surface under it.",
+ "errors": [
+  {
+   "where": "Front-left edge of the stack, where the three layers curl into each other",
+   "what": "The folds cannot happen with paper. All three layers are joined by rounded folds along the same front edge, while the back-right edges are all open. One sheet folded like an accordion must switch sides, folding at the front, then the back, then the front. A fold that repeats on the same edge would need the paper to be cut or to pass through itself. As drawn, it reads as three separate sheets glued together at one edge, so the map could not be unfolded into one sheet.",
+   "severity": "major"
+  },
+  {
+   "where": "Upper faces of the second and third layers, on the right side",
+   "what": "The lower layers show their own green land and blue lakes along their exposed edges, as if they were extra copies of the map. On a real folded map, the panels underneath would be the back or the continuation of the same sheet, lined up with the top panels' creases. Here they look like duplicate maps stacked up.",
+   "severity": "minor"
+  },
+  {
+   "where": "Top sheet: the cross crease and the stack beneath it",
+   "what": "The top sheet has a cross crease, which means it was folded into quarters. Yet it lies on top of a front-edge fold stack that does not match those quarter creases. The fold lines and the layering come from two different folding schemes.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "A treasure map folded like an accordion, with the folds alternating sides: the top panel folds under at the front edge, the next panel folds back at the back edge, and the third folds at the front edge again. One continuous sheet of paper, with every fold edge joining two neighbouring panels. The lower panels show the plain beige back of the paper or a continuation of the same map, not repeated copies. Crease lines on the top panel line up with the fold edges."
+}

@@ -1,0 +1,11 @@
+{
+ "survey": "An open, puffy cream envelope seen nearly face-on and turned about 5° counter-clockwise in the picture plane: its top and bottom edges both rise toward the right at about the same slope, and its left and right sides are nearly the same height. The back flap stands up behind and faces the camera. A stack of photo cards sits inside: the front card is slightly rotated with its lower part tucked behind the V-shaped front pocket, and two more cards behind it are offset to the right with their side edges showing. A pink stamp and a round postmark with wavy lines are printed on the front face, toward the lower right. The envelope floats, so there is no ground to check. The V-fold, flap and stacked cards agree with one nearly frontal camera; the postmark circle is a true circle, which suits a face seen straight on.",
+ "errors": [
+  {
+   "where": "Stamp and postmark on the envelope's front face, lower right",
+   "what": "The front face is rotated about 5°, so its top and bottom edges slope up to the right, but the stamp is drawn as a perfectly upright rectangle and the wavy postmark lines are perfectly horizontal. They don't turn with the paper they're printed on, so they look pasted on top of the picture rather than printed on the surface.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Rotate the stamp and the postmark so they line up with the envelope's front face: the stamp's top and bottom edges and the wavy postmark lines should rise to the right at the same angle as the envelope's bottom edge, so they look printed flat on the paper."
+}

@@ -1,0 +1,16 @@
+{
+ "survey": "A blue sports water bottle floats at a tilt, with its top leaning to the upper right and its base swinging toward the lower left. There is no ground. The main parts are: (1) the body, a cylinder with a waist and grip recesses on both sides; (2) a ribbed screw cap that sits on a collar ring at the neck; (3) a small spout on top of the cap, with its opening shown as an ellipse facing up toward the viewer; (4) a carry strap that pivots on a round button on the right side of the cap and loops up and over to the right; (5) the base, shown as a wide ellipse with an inner ring. That means the underside of the bottle faces the viewer. The cap's top ledge and the spout opening are both seen from above, and the collar band curves like a ring seen from above. The base is seen from below. The ribs on the cap shrink and crowd together toward the right edge, so they follow the round surface correctly.",
+ "errors": [
+  {
+   "where": "Spout opening and cap top compared with the base of the bottle",
+   "what": "The two ends of the bottle are drawn from opposite camera positions. The spout's opening, the cap's top ledge and the collar band are all seen from above, as if the top tilts toward the viewer. But the base is drawn as a wide open ellipse showing its underside and inner ring, as if seen from below. A rigid cylinder cannot show both its top and its bottom face to one camera, so the ends contradict each other the same way the umbrella's canopy and pole tip do.",
+   "severity": "major"
+  },
+  {
+   "where": "Base ellipse compared with the body's side outlines",
+   "what": "The base ellipse is too wide for how the body is drawn. The side outlines barely narrow from cap to base, which suggests the bottle is seen almost from the side, yet the base opens almost face-on. Its curve also does not line up with the cross-sections at the waist and collar.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the tilted bottle from one viewpoint, slightly above, so that the top of the cap and the spout opening are visible as gentle ellipses. Do not show the base: the bottom should be just the curved lower edge of the cylinder, with no visible underside or inner ring. Every circle along the bottle (spout rim, cap, collar, waist, bottom edge) should bulge the same way and get a little rounder toward the end farther from the camera."
+}

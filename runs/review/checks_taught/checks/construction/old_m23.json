@@ -1,0 +1,16 @@
+{
+ "survey": "A water slide on a pool deck. A yellow platform with a corner-post railing sits on one thick yellow central pillar with a round base. A diagonal yellow brace runs from the pillar up to the underside of the platform. A blue ladder leans against the front-right edge of the platform, and its feet rest on the tiles. A green open channel with water in it starts at the top-left of the platform. It drops left in an S-bend, then swings right toward the pillar and coils around it in a lower loop. It comes out at the front-left and pours into the pool past the tiled edge. The camera sees the slide from a three-quarter view from above.",
+ "errors": [
+  {
+   "where": "Middle of the slide, where the descending S-bend meets the lower loop beside the pillar",
+   "what": "The channel does not follow one continuous path. The descending section runs into the lower loop and its walls merge with the loop's walls. Water seems to pass from one trough to the other through the side wall, and there is no real turn connecting them. Parts of the slide melt into and pass through each other, so you cannot trace a single route from the top to the exit.",
+   "severity": "major"
+  },
+  {
+   "where": "Lower loop of the slide around the yellow pillar",
+   "what": "The coil wraps around the pillar but nothing connects it to the pillar: no brackets, arms or posts. The lower loop and the S-bend hang in the air without support, and the pillar seems to pass through the middle of the loop without holding it.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the slide a single continuous open channel. It starts at the platform edge, curves down in one clean spiral around the yellow pillar without crossing or merging into itself, and exits over the pool. Each turn should sit clearly above the one below with a visible gap between them. Attach the spiral to the central pillar with short horizontal support arms, and add one or two thin posts under the lower curve that stand on the deck."
+}

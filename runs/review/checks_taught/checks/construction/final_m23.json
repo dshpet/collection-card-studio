@@ -1,0 +1,16 @@
+{
+ "survey": "Image 5 shows a pool waterslide. There is a yellow platform with a yellow guard rail on the back and left sides. A single thick blue column holds it up, with four diagonal braces under the platform, and the column stands on a round foot on the tiled pool deck. A blue ladder goes from the deck up to the right edge of the platform, and its handrails curve over at the top, which is correct. The green open slide starts at the front-left edge of the platform. It swings out to the left and comes forward across the front of the column. It then loops right, around the back, and returns in an S-curve down the left side. It ends at the pool edge, where a stream of water pours into the pool. Two thinner blue posts stand on the deck: one behind the slide's lower turns on the left, and one under the exit on the far left. The slide is shown in three-quarter view with its open channel facing the camera.",
+ "errors": [
+  {
+   "where": "Left half of the slide, where the upper turn comes down and meets the lower S-curve (about mid-height, left of the central column)",
+   "what": "The spiral can't be followed as one continuous channel. The descending upper turn and the lower S-curve run into each other: their walls merge into one shared wall, and the channels overlap instead of passing cleanly above and below each other. A rider's path through this section is impossible to trace.",
+   "severity": "major"
+  },
+  {
+   "where": "Where the slide passes in front of the central blue column, and at the two thin blue posts on the left",
+   "what": "The slide turns have no brackets or arms linking them to the column or the posts. The upper turn passes in front of the column without touching it. The thin posts stop under the channel with no visible saddle or bracket, so large parts of the slide hang in the air with no support.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the green slide one continuous, clearly readable spiral. It starts at the platform edge, makes evenly spaced descending turns with clear vertical gaps between them, and no turn merges with or passes through another. Its exit ends over the pool. Add short blue support arms or brackets that connect each turn of the slide to the central blue column. Make the thin blue posts end in saddles bolted under the slide channel."
+}

@@ -1,0 +1,11 @@
+{
+ "survey": "A stone park chess table with two round stools on grass. The table has a thick square slab top with an inset checkerboard. Below it is a square cap block, then a tapered square pedestal, then a stepped square plinth that sits flat on the grass. We see the top from slightly above, and the board's rows shrink and narrow toward the back edge, following the slab's edges. The pedestal and plinth face us almost straight on, with their top ledges just visible. That matches a camera a little above the table. The two stools stand to the left and right on the same ground. Each has a round seat seen from above as an ellipse, a narrow waist with a ring, and a round flared foot. All parts stand upright and meet the flat lawn evenly. Both the board grid and the slab follow one viewpoint.",
+ "errors": [
+  {
+   "where": "Both stool seats (left and right) compared with the table top",
+   "what": "The stool seats look noticeably more open, as if seen from higher above, than the table's square top. The slab and checkerboard are squashed to a shallow strip, which suggests a low camera. The round seats beside it show much rounder ellipses at about the same height. The stools and the table were not quite drawn from the same camera height.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Render the table and both stools from one camera height: make the stool seat tops flatter, narrower ellipses that match how shallow the square chess-table top looks. Alternatively, show the table top and checkerboard a bit deeper so all three surfaces read as seen from the same slight elevation."
+}
