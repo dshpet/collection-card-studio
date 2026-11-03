@@ -1,0 +1,16 @@
+{
+ "survey": "A wooden pier seen from a raised three-quarter view, looking down at the deck. The deck planks run from front to back. Their cut ends line the near edge, which is held up by a beam underneath. Round posts stand in the water. The two front posts go up through the near edge of the deck and stick out above it, with their tops drawn as ellipses seen from above. Back-row posts show as short stubs above the deck, and their lower parts meet the water higher up the picture, which correctly reads as farther away. A tall post stands alone in the water off the right end of the deck, and a side beam runs out to it from behind the front-right post. A rope is coiled around the front-right post and runs left along the deck. A red-and-white life ring hangs on a metal peg on the front-left post and faces almost straight at the viewer. Each post makes an elliptical ripple where it enters the water, and the ripples agree with the downward view. Overall the camera is consistent: the post tops, the deck surface and the ripples all share the same raised view.",
+ "errors": [
+  {
+   "where": "life ring and its peg on the front-left post",
+   "what": "The peg is drawn running sideways from the post, parallel to the deck's near edge. A ring hung on that peg would face sideways and be seen almost edge-on. Instead it is drawn nearly as a full circle facing the camera, so the ring and the peg it hangs on disagree about which way they face.",
+   "severity": "minor"
+  },
+  {
+   "where": "side beam to the right of the front-right post, under the rope coil",
+   "what": "The beam stubs out from behind the post above the level of the deck's edge beam. It does not line up with the deck's edges or with the near edge beam, so it reads as floating at the wrong height and angle instead of joining the tall back-right post.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Hang the life ring on a peg that points straight out of the front face of the post toward the viewer, so the ring lies flat against the post and faces the camera as a slightly narrowed ellipse. Draw the right-hand side beam at the same height as the deck's edge beam, running parallel to the deck's side edge and joining the tall back-right post."
+}

@@ -1,0 +1,16 @@
+{
+ "survey": "A stone chess table set in a park, seen in three-quarter view from above. Tabletop: a thick square slab with rounded edges and an inset checkerboard on top. The slab sits centered on a single square pedestal, and the pedestal stands on a wider square plinth flat on the grass, so the table is stable. Two cylindrical stools, each a drum with a slightly wider round cap, stand on the grass on either side. The left stool is further back and partly hidden behind the tabletop's left corner. The right stool is in the foreground. Both stools touch the ground and cast shadows. Nothing floats, passes through anything else or ends loose. The construction is simple and mostly sound.",
+ "errors": [
+  {
+   "where": "Both stools compared with the table",
+   "what": "The stools are almost as tall as the table: the seat caps reach about 85% of the tabletop height. A real seat is about 60% of table height, so a seated player would sit nearly level with the board and could not lean over it to play.",
+   "severity": "minor"
+  },
+  {
+   "where": "Checkerboard on the tabletop",
+   "what": "The board seems to have more than 8 squares across (about 9–10 per row), so it may not be a real 8×8 chess or checkers board. I could not zoom in to count exactly, so treat this one as tentative.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make both round stone stools clearly lower than the table, with their seats at about knee height (roughly 60% of the table's height). Draw the inset board as an exact 8×8 grid of alternating squares."
+}

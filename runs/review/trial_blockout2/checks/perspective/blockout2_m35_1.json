@@ -1,0 +1,11 @@
+{
+ "survey": "A stone chess table in a park, seen from a raised three-quarter camera looking down at about 35–40°. It has three stacked parts. At the top is a thick square tabletop with an inset checkerboard; the board's grid follows the tabletop's edges, and the top face is seen from above. Under it is a square pedestal column, centred beneath the top, showing its front face and a thin right side face. At the bottom is a wider square base slab lying on the grass, showing its top face, front face and right side face. Two cylindrical stools stand on the grass, one on each side. Their round seat tops are ellipses about half as tall as they are wide, which matches the downward view of the tabletop. Their bottoms curve to match. All parts meet the flat grass consistently, and their verticals stay vertical.",
+ "errors": [
+  {
+   "where": "Pedestal column compared with the base slab and the tabletop",
+   "what": "The three box parts of the table are turned by different amounts. The column is drawn almost front-on: its bottom front edge is nearly level and its right side is a thin sliver. The base slab right under it is turned clearly further, with its front edge falling steeply to the right and a broad right side face. The tabletop sits at yet another angle. These parts are square and stacked on one axis, so their matching edges should run parallel or meet at the same vanishing points. Here the column looks twisted relative to the slab it stands on.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the square tabletop, the square pedestal column and the square base slab all share one rotation, as one solid stacked object seen from a single three-quarter view from above. The front edges of all three should run parallel and slope by the same amount, and their right side faces should show the same proportion of width. Keep the checkerboard grid lined up with the tabletop edges. Keep both round stool tops as ellipses matching the same downward view."
+}

@@ -1,0 +1,11 @@
+{
+ "survey": "The object is a folding camp chair in three-quarter view, with the front-left corner nearest the camera. The backrest is a green canvas panel stretched between two straight aluminium uprights joined by a top tube. The seat is a canvas sling wrapped around a front cross tube that has end caps. Its rear edge meets the uprights at seat height. On the right side, the back upright bends at the seat's rear corner and carries on down and forward as the front-right leg, ending in a grey foot. A second tube runs from the right end of the front seat tube down and back to the rear-right foot. The two tubes cross at a grey collar pivot, forming a scissor X. The left side mirrors this: the left upright goes behind the seat and comes out below it as the tube to the front-left foot. A tube from the left end of the front seat tube runs to the rear-left corner, and the two cross at a matching collar pivot. A bottom bar joins the two front feet, and another joins the two rear corners, so the chair rests on the floor at four points. The frame lines up from side to side, the pivots sit where a scissor chair folds, and the seat sling hangs between tubes that can carry it. Overall the chair could stand and fold.",
+ "errors": [
+  {
+   "where": "Rear-left bottom corner of the frame, where the left scissor tube meets the rear floor bar",
+   "what": "Three corners end in rounded grey ball feet, but the rear-left corner is a plain elbow joint with no foot. The mirrored parts don't match, and that corner looks less clearly planted on the floor.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Give the rear-left bottom corner of the chair frame the same rounded grey ball foot as the other three corners, resting flat on the floor, so all four feet match."
+}

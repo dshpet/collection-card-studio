@@ -1,0 +1,21 @@
+{
+ "survey": "Stage spotlight hanging from a lighting truss. The truss runs across the top of the frame, seen from slightly below, and recedes gently to the right. A square clamp block sits on the truss's front lower tube, and a short vertical stem drops from it into a U-shaped yoke. The yoke is drawn as a flat rectangle facing the camera directly, with straight vertical arms and no side faces showing. The cylindrical lamp body is in three-quarter view. Its rounded rear end is up and to the right, and its front points down-left toward the viewer, so the front rim reads as a tilted ellipse. The only pivot shown is on the right arm, drawn as a short cylinder seen from the side with its axis running left-right. The left arm ends behind the lamp body and no pivot is visible there. Three coloured lenses (yellow, cyan, red) sit inside the front rim and cast soft beams down-left.",
+ "errors": [
+  {
+   "where": "Yoke and lamp body, at the pivot",
+   "what": "The yoke is drawn flat and facing the camera, and the right pivot shows a left-right axis. A lamp that can only swing about that axis would have to point straight toward or away from the viewer, or up and down. Instead the lamp is turned in three-quarter view and points diagonally down-left, so the yoke and the lamp are seen from two different camera angles. The yoke shows no foreshortening or side thickness to match the turned lamp, and the left arm ends behind the lamp body with no pivot connecting them.",
+   "severity": "major"
+  },
+  {
+   "where": "Clamp block on the truss",
+   "what": "The clamp block shows its top face, as if seen from above, while the truss tubes and the lamp are seen from slightly below.",
+   "severity": "minor"
+  },
+  {
+   "where": "Lenses inside the front rim",
+   "what": "The three lenses are nearly round and almost face-on. They are not narrowed and tilted to match the rim's ellipse, so they look pasted flat onto the opening instead of lying in the same tilted face.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Use one consistent low three-quarter camera. Turn the U-shaped yoke together with the lamp so its arms are foreshortened and show their side thickness. Attach the yoke to the lamp with a visible pivot on both sides, on a shared axis that runs through the lamp body at right angles to its length, so the lamp's down-left aim is a swing about that axis. Draw the clamp block from slightly below, matching the truss, so its underside shows instead of its top. Draw the three lenses as ellipses that are as narrow as the front rim and tilted the same way, so they lie in the plane of the lamp's front face."
+}

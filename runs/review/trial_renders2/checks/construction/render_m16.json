@@ -1,0 +1,21 @@
+{
+ "survey": "A folding camp chair at three-quarter view, facing front-left. Backrest: a green fabric panel with a rolled top edge, hung between two metal back uprights. Seat: a green fabric sling between a front roller tube and the bottom of the backrest. The ends of the front tube stick out past the frame on both sides. Legs: one X-frame on each side with a pivot sleeve where the tubes cross. The feet are joined by a front floor rail (front-left foot to front-right foot) and a rear floor rail (the two rear feet). On the right side, the back upright bends forward at seat height and carries on down as one tube of the right X, ending at the front-right foot. The other right tube runs from the right end of the seat's front tube to the rear-right foot. On the left side, the back upright stops at seat height, behind the seat. The left X tubes run from the seat's front tube to the rear-left foot, and from the front-left foot up to the underside of the seat. The chair stands on the floor on four feet with ground shadows.",
+ "errors": [
+  {
+   "where": "left back upright, where it meets the seat (left rear corner of the seat)",
+   "what": "The left back upright stops at seat height and does not join any leg or pivot. The right upright carries on down as a leg of the right X, so the left side of the backrest has nothing holding it to the base. The two sides do not mirror each other.",
+   "severity": "major"
+  },
+  {
+   "where": "left X-frame, the tube rising from the front-left foot",
+   "what": "The tube from the front-left foot rises past the pivot and ends under the seat sling. It should continue into the left back upright, as the matching tube does on the right. As drawn, the left X and the right X are built differently, so the frame could not fold evenly.",
+   "severity": "major"
+  },
+  {
+   "where": "right side pivot sleeve vs left side pivot",
+   "what": "The right pivot is a large sleeve clamped on the bent back upright, while the left pivot is a small joint between two straight legs. The hinge hardware does not match from side to side.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the folding chair frame mirror-symmetric. On both sides, the back upright runs straight down past the seat and becomes one tube of that side's X-shaped leg pair, ending at a front foot. The other tube of each X runs from the end of the seat's front tube to a rear foot. Join the two tubes on each side with matching pivot bolts at the crossing point. Connect the two front feet with one floor rail and the two rear feet with another. The backrest and seat fabric hang between the two uprights."
+}

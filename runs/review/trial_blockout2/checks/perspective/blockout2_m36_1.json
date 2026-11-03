@@ -1,0 +1,16 @@
+{
+ "survey": "A wooden pier over shallow water, seen from a high camera with the horizon near the top of the frame. The plank deck sits on a front stringer beam held up by round posts. From left to right: a post at the far left edge, a post under the deck at the back, a front post that rises through the deck and holds a red-and-white life ring on a peg, a short bollard on the deck, a front-right corner post with coiled rope wrapped around it, and a taller post at the back right. A stub of side beam links the corner post to the tall post. The front edge of the deck slopes down to the right, so the pier's length runs back toward the upper left. The right-side connection to the tall post makes the deck's depth run back toward the upper right. Post tops are ellipses and every post meets the water with a ripple. Posts closer to the viewer are drawn longer, which fits the view. The life ring hangs nearly face-on against the front post, which is acceptable.",
+ "errors": [
+  {
+   "where": "Right end of the pier: the front-right rope post, the tall back-right post and the beam stub between them",
+   "what": "The deck stops at the rope post and has no side edge running back to the tall post. The planks there run back toward the upper left, but the side beam and the tall post run back toward the upper right. The right end of the deck therefore has two depth directions, and the tall post looks like it stands beside the pier rather than at its back corner.",
+   "severity": "major"
+  },
+  {
+   "where": "Deck planks, left half compared with right half",
+   "what": "On the left, the plank seams run lengthwise along the pier, nearly horizontal. On the right, they run across the pier from the front edge toward the back. The planks change direction partway along one flat deck instead of following a single set of deck edges.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the pier deck as one flat rectangle seen from a single high three-quarter view. Every plank runs across the pier's width, parallel to its short side edges, and all plank seams recede toward the same vanishing point. Give the right end of the deck a visible side edge that runs straight back from the front-right rope post to the tall back-right post, so the tall post stands at the deck's back corner and the side beam lines up with that edge."
+}

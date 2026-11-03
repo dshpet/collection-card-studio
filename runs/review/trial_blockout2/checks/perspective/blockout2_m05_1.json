@@ -1,0 +1,16 @@
+{
+ "survey": "A navy calculator floats on a yellow pi-pattern background, with no ground plane. The body is a rounded slab turned about 15° clockwise. Its thick rounded side shows along the left and bottom edges, so it reads as seen slightly from the lower-left front, with the face turned a little away. On the face, from top down: a red solar strip at the top right, a grey display window in a raised light frame, and a 4×4 keypad. The keypad has three columns of blue square keys and a right column of four cyan keys. The keys are raised rounded squares, each with a small visible thickness on its lower edge. The display and the key rows roughly follow the body's slant. The top row runs at about 13° and the bottom row at about 19°, close to the body's top edge (about 11°) and bottom edge (about 21°).",
+ "errors": [
+  {
+   "where": "Keypad (all 16 keys)",
+   "what": "The body shows its side thickness, so the face is turned away from the viewer. Yet every key is the same size and shape, drawn as a front-on square, with no shrinking or squashing across the face. The rows fan out to match the body edges, but the keys themselves do not foreshorten.",
+   "severity": "minor"
+  },
+  {
+   "where": "Calculator body outline vs. its side thickness",
+   "what": "The outline gets narrower toward the bottom (top about 510 px wide, bottom about 470 px), which would mean the bottom is farther away. But the visible thick bottom and left sides mean the top is turned away. These two cues give opposite tilts, so the slab's shape is slightly off.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the calculator body as one rigid slab in consistent perspective, tilted slightly back with its top edge farther away. The face should be a bit narrower at the top than at the bottom, matching the visible thickness on the bottom and left sides. The keys should follow that face: rows parallel to its top and bottom edges, keys slightly smaller and more squashed toward the top and right, and each key's side thickness seen from the same angle as the body's."
+}

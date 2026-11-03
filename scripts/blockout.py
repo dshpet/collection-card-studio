@@ -132,11 +132,18 @@ def turn(x=0, y=0, z=0):
     ROOT.rotation_euler = Euler([math.radians(a) for a in (x, y, z)])
 
 
+def unframed(*parts):
+    """Hero parts left out of the framing, such as a truss that may run off the card."""
+    for part in parts:
+        part["unframed"] = True
+    return parts
+
+
 def hero_points():
     graph = bpy.context.evaluated_depsgraph_get()
     points = []
     for obj in bpy.context.scene.objects:
-        if obj.type in {"MESH", "CURVE"} and obj.parent == ROOT:
+        if obj.type in {"MESH", "CURVE"} and obj.parent == ROOT and not obj.get("unframed"):
             evaluated = obj.evaluated_get(graph)
             mesh = evaluated.to_mesh()
             points += [evaluated.matrix_world @ v.co for v in mesh.vertices]
@@ -209,7 +216,7 @@ def render(model, out):
     exec(compile(open(model, encoding="utf-8").read(), model, "exec"), namespace)
     spec = namespace["SCENE"]
     helpers = types.SimpleNamespace(mat=mat, box=box, cyl=cyl, cone=cone, sphere=sphere, torus=torus, tube=tube,
-                                    floor=floor, turn=turn)
+                                    floor=floor, turn=turn, unframed=unframed)
     namespace["build"](helpers)
     bpy.context.view_layer.update()
 

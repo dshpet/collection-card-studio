@@ -1,0 +1,11 @@
+{
+ "survey": "A park chess table set on grass. The square white tabletop has a blue-and-white checkerboard inlaid on top. It sits on one thick square pedestal, and the pedestal stands on a wider square base plate that rests flat on the ground, with a contact shadow under it. Two round stools stand on either side, each a cylinder with a slightly wider round cap. Both stools touch the grass and cast shadows. The table faces the camera at about three-quarters from above, so the board's top surface is visible. The structure holds up: the top is centered on the pedestal, the pedestal is centered on the base, and nothing floats or passes through anything else. The seats are at a sensible height and distance for two players.",
+ "errors": [
+  {
+   "where": "Chessboard on the tabletop, mainly the lower rows and the right edge",
+   "what": "The checkerboard is not a clean, even grid. The blue squares drift out of line from row to row, the spacing is uneven, and near the bottom-right some squares look missing or merged. You cannot clearly count 8×8 alternating squares, so the board would not work for chess.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the tabletop a precise 8x8 chessboard: 64 equal squares in straight rows and columns, blue and white alternating evenly, with a thin even white border on all four sides."
+}

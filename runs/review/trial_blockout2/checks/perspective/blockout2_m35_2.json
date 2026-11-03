@@ -1,0 +1,16 @@
+{
+ "survey": "A park scene with a stone chess table and two round stools on grass, seen from a raised three-quarter view. Tabletop: a thick square slab with an inset checkerboard. Its top face is seen from above, and its back and front edges run nearly level, sloping slightly down to the right. Pillar: a square column under the centre of the slab, seen almost straight on. Its front face is a level-edged rectangle with vertical sides. Base: a square plinth on the grass under the pillar, with its top face and two side faces showing. Stools: two cylinders, one behind the table on the left and one in front on the right. Their round tops are drawn as open ellipses that match a view from above, their bottom curves sit on the grass, and they cast shadows. The checker rows mostly run parallel to the slab's edges.",
+ "errors": [
+  {
+   "where": "Stone base under the table pillar",
+   "what": "The base is turned to a different angle from the pillar and tabletop. Its front edge slopes steeply down to the right to a corner pointing at the viewer, and its right face climbs back up and to the right. That makes the base look rotated about 20–30° from the square pillar it holds up. The pillar's bottom edge and the slab's edges are nearly level, so the three parts of one square stack don't share vanishing points. The pillar seems to stand twisted on its base.",
+   "severity": "major"
+  },
+  {
+   "where": "Checkerboard on the tabletop",
+   "what": "The squares hardly shrink from front to back across the board. The back rows are almost as large as the front rows, while the slab's top face is clearly receding. The grid lies flat on the picture instead of going back into depth with the board.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the square stone base lined up with the square pillar and the tabletop. The base's front and side edges should run parallel to the tabletop's edges and meet at the same vanishing points, so the base, pillar and top read as one square stack seen from a single three-quarter camera. Make the checkerboard squares shrink gradually toward the back edge of the board, with every row parallel to the tabletop's front and back edges."
+}

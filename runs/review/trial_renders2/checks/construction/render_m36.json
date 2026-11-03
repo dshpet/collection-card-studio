@@ -1,0 +1,16 @@
+{
+ "survey": "A small wooden pier over shallow turquoise water, with the shore (sand) at the top left. The deck is made of planks laid crosswise on a stringer frame, held up by round posts standing in the water. Several post tops poke up through or beside the deck as short stubs. At the front right, a post rises above the deck edge with a thick rope coiled around its top, and a taller post stands behind it at the far right. At the front left, a red-and-white life ring hangs upright, facing the camera, at the deck edge. A small metal hook or clip sits inside the top of its hole, and a post rises straight up behind and through the ring's opening. The loose end of the rope leaves the coil, runs flat across the planks and ends at the lower right of the life ring.",
+ "errors": [
+  {
+   "where": "Life ring and the front-left post",
+   "what": "The life ring hangs upright, facing the camera, but the vertical post runs straight up through its hole. An upright ring cannot be threaded onto a vertical post, so the post passes through the ring. Nothing holds the ring there either: the tiny clip inside the hole is not attached to the post or the deck.",
+   "severity": "major"
+  },
+  {
+   "where": "Rope running from the coiled post to the life ring",
+   "what": "The rope's free end runs across the deck and melts into the outer edge of the life ring. It has no knot, eye or grab-line, so it ends with no real attachment.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Hang the red-and-white life ring flat against the side of a wooden post, on a visible hook or peg in the post, with the post behind the ring and not through its hole. Tie the rope from the coiled post to the ring's grab-line with a clear knot, or leave the rope only coiled on its post with its end tucked in."
+}

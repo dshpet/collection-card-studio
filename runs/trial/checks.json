@@ -429,6 +429,149 @@
    }
   ]
  },
+ "blockout2": {
+  "m04_1": [
+   {
+    "check": "construction",
+    "severity": "minor",
+    "what": "The yoke pivot sits near the back third of the can, not near its centre of mass. A real yoke pivots a can close to its balance point so the tilt holds. Here the heavy front end would tip the light straight down. You only notice this on a close look."
+   },
+   {
+    "check": "perspective",
+    "severity": "major",
+    "what": "The yoke is drawn flat and facing the camera, and the right pivot shows a left-right axis. A lamp that can only swing about that axis would have to point straight toward or away from the viewer, or up and down. Instead the lamp is turned in three-quarter view and points diagonally down-left, so the yoke and the lamp are seen from two different camera angles. The yoke shows no foreshortening or side thickness to match the turned lamp, and the left arm ends behind the lamp body with no pivot connecting them."
+   },
+   {
+    "check": "perspective",
+    "severity": "minor",
+    "what": "The clamp block shows its top face, as if seen from above, while the truss tubes and the lamp are seen from slightly below."
+   },
+   {
+    "check": "perspective",
+    "severity": "minor",
+    "what": "The three lenses are nearly round and almost face-on. They are not narrowed and tilted to match the rim's ellipse, so they look pasted flat onto the opening instead of lying in the same tilted face."
+   }
+  ],
+  "m04_2": [
+   {
+    "check": "construction",
+    "severity": "major",
+    "what": "The left yoke arm has no pivot. It runs straight into the top of the can and blends into it, while the right arm ends at a clear pivot knob on the can's side. A yoke has to hold the fixture at two matching pivots on opposite sides, so with one arm fused into the body the light could not tilt. The two sides of the yoke also do not match."
+   },
+   {
+    "check": "perspective",
+    "severity": "major",
+    "what": "The yoke is drawn flat and front-on, so its pivot axis runs straight left to right across the picture. The cylinder hangs from that axis but points to the lower left and toward the viewer, which a left-right pivot cannot allow. The left arm also has no pivot. It just ends at the cylinder's top edge, as if it passes behind the cylinder, while the right arm's pivot sits on the cylinder's side. The bracket and the body are drawn as if seen from two different angles."
+   },
+   {
+    "check": "perspective",
+    "severity": "minor",
+    "what": "The rim and lens face form a near-circular ellipse, as if the front points almost straight at the camera. But a long stretch of the cylinder's side is also visible, which means the front face should be turned well away and look like a clearly narrower ellipse. The three LED circles share the same too-round look."
+   },
+   {
+    "check": "perspective",
+    "severity": "minor",
+    "what": "The clamp block shows a lit top face, as if seen from above. The truss hangs above eye level and is seen level or from slightly below, so the clamp's top face should be hidden or only barely visible."
+   }
+  ],
+  "m05_1": [
+   {
+    "check": "perspective",
+    "severity": "minor",
+    "what": "The body shows its side thickness, so the face is turned away from the viewer. Yet every key is the same size and shape, drawn as a front-on square, with no shrinking or squashing across the face. The rows fan out to match the body edges, but the keys themselves do not foreshorten."
+   },
+   {
+    "check": "perspective",
+    "severity": "minor",
+    "what": "The outline gets narrower toward the bottom (top about 510 px wide, bottom about 470 px), which would mean the bottom is farther away. But the visible thick bottom and left sides mean the top is turned away. These two cues give opposite tilts, so the slab's shape is slightly off."
+   }
+  ],
+  "m05_2": [],
+  "m16_1": [
+   {
+    "check": "perspective",
+    "severity": "major",
+    "what": "The seat and base are drawn turned three-quarters: their left-right edges slope down to the right and their side edges recede. The backrest is drawn front-on: its top tube and bottom hem are level, and the top edge even rises slightly to the right. The badge is a frontal, undistorted shape. Since the backrest sits above the seat's back edge and parallel to it, its horizontal edges should slope the same way. Instead it looks like a flat front view pasted onto a turned chair."
+   },
+   {
+    "check": "perspective",
+    "severity": "minor",
+    "what": "The backrest's right edge sits further right than the seat's back-right corner. The right upright has to kink inward at seat height to reach the leg, so the backrest is wider than the frame it stands on, and the upright and leg don't form one straight member."
+   }
+  ],
+  "m16_2": [
+   {
+    "check": "construction",
+    "severity": "minor",
+    "what": "Three corners end in rounded grey ball feet, but the rear-left corner is a plain elbow joint with no foot. The mirrored parts don't match, and that corner looks less clearly planted on the floor."
+   }
+  ],
+  "m17_1": [],
+  "m17_2": [],
+  "m35_1": [
+   {
+    "check": "construction",
+    "severity": "minor",
+    "what": "The stools are almost as tall as the table: the seat caps reach about 85% of the tabletop height. A real seat is about 60% of table height, so a seated player would sit nearly level with the board and could not lean over it to play."
+   },
+   {
+    "check": "construction",
+    "severity": "minor",
+    "what": "The board seems to have more than 8 squares across (about 9–10 per row), so it may not be a real 8×8 chess or checkers board. I could not zoom in to count exactly, so treat this one as tentative."
+   },
+   {
+    "check": "perspective",
+    "severity": "minor",
+    "what": "The three box parts of the table are turned by different amounts. The column is drawn almost front-on: its bottom front edge is nearly level and its right side is a thin sliver. The base slab right under it is turned clearly further, with its front edge falling steeply to the right and a broad right side face. The tabletop sits at yet another angle. These parts are square and stacked on one axis, so their matching edges should run parallel or meet at the same vanishing points. Here the column looks twisted relative to the slab it stands on."
+   }
+  ],
+  "m35_2": [
+   {
+    "check": "perspective",
+    "severity": "major",
+    "what": "The base is turned to a different angle from the pillar and tabletop. Its front edge slopes steeply down to the right to a corner pointing at the viewer, and its right face climbs back up and to the right. That makes the base look rotated about 20–30° from the square pillar it holds up. The pillar's bottom edge and the slab's edges are nearly level, so the three parts of one square stack don't share vanishing points. The pillar seems to stand twisted on its base."
+   },
+   {
+    "check": "perspective",
+    "severity": "minor",
+    "what": "The squares hardly shrink from front to back across the board. The back rows are almost as large as the front rows, while the slab's top face is clearly receding. The grid lies flat on the picture instead of going back into depth with the board."
+   }
+  ],
+  "m36_1": [
+   {
+    "check": "construction",
+    "severity": "minor",
+    "what": "The rope's free end goes behind the life ring and never comes out. It isn't clearly tied to the ring, the peg or a bollard, so the line has no visible end attachment. It reads as a rope that just stops."
+   },
+   {
+    "check": "perspective",
+    "severity": "major",
+    "what": "The deck stops at the rope post and has no side edge running back to the tall post. The planks there run back toward the upper left, but the side beam and the tall post run back toward the upper right. The right end of the deck therefore has two depth directions, and the tall post looks like it stands beside the pier rather than at its back corner."
+   },
+   {
+    "check": "perspective",
+    "severity": "minor",
+    "what": "On the left, the plank seams run lengthwise along the pier, nearly horizontal. On the right, they run across the pier from the front edge toward the back. The planks change direction partway along one flat deck instead of following a single set of deck edges."
+   }
+  ],
+  "m36_2": [
+   {
+    "check": "construction",
+    "severity": "minor",
+    "what": "The rope's free end runs along the deck and just stops where it touches the lifebuoy. There is no knot, loop or tie to the ring's grab line, so the rope does not clearly attach to anything at that end. It reads as a loose end."
+   },
+   {
+    "check": "perspective",
+    "severity": "minor",
+    "what": "The peg is drawn running sideways from the post, parallel to the deck's near edge. A ring hung on that peg would face sideways and be seen almost edge-on. Instead it is drawn nearly as a full circle facing the camera, so the ring and the peg it hangs on disagree about which way they face."
+   },
+   {
+    "check": "perspective",
+    "severity": "minor",
+    "what": "The beam stubs out from behind the post above the level of the deck's edge beam. It does not line up with the deck's edges or with the near edge beam, so it reads as floating at the wrong height and angle instead of joining the tall back-right post."
+   }
+  ]
+ },
  "renders": {
   "render_m04": [
    {
@@ -497,6 +640,53 @@
     "check": "perspective",
     "severity": "minor",
     "what": "This support ends in a sharp point hanging in the air at the bank's edge. It does not go down into the sand or the water, so the deck's land end has no clear contact with its ground. It reads as floating over the sloped bank instead of resting on it."
+   }
+  ]
+ },
+ "renders2": {
+  "render_m04": [
+   {
+    "check": "construction",
+    "severity": "minor",
+    "what": "The two yoke arms do not hold the can on one shared tilt axis. The right arm pivots on a knob near the rear of the can, but the left arm comes down near the front rim and fades into the top of the can, with no matching pivot on the opposite side. A real yoke clamps both sides of the can at the same point across its diameter, so this can could not tilt on the yoke."
+   }
+  ],
+  "render_m05": [],
+  "render_m16": [
+   {
+    "check": "construction",
+    "severity": "major",
+    "what": "The left back upright stops at seat height and does not join any leg or pivot. The right upright carries on down as a leg of the right X, so the left side of the backrest has nothing holding it to the base. The two sides do not mirror each other."
+   },
+   {
+    "check": "construction",
+    "severity": "major",
+    "what": "The tube from the front-left foot rises past the pivot and ends under the seat sling. It should continue into the left back upright, as the matching tube does on the right. As drawn, the left X and the right X are built differently, so the frame could not fold evenly."
+   },
+   {
+    "check": "construction",
+    "severity": "minor",
+    "what": "The right pivot is a large sleeve clamped on the bent back upright, while the left pivot is a small joint between two straight legs. The hinge hardware does not match from side to side."
+   }
+  ],
+  "render_m17": [],
+  "render_m35": [
+   {
+    "check": "construction",
+    "severity": "minor",
+    "what": "The checkerboard is not a clean, even grid. The blue squares drift out of line from row to row, the spacing is uneven, and near the bottom-right some squares look missing or merged. You cannot clearly count 8×8 alternating squares, so the board would not work for chess."
+   }
+  ],
+  "render_m36": [
+   {
+    "check": "construction",
+    "severity": "major",
+    "what": "The life ring hangs upright, facing the camera, but the vertical post runs straight up through its hole. An upright ring cannot be threaded onto a vertical post, so the post passes through the ring. Nothing holds the ring there either: the tiny clip inside the hole is not attached to the post or the deck."
+   },
+   {
+    "check": "construction",
+    "severity": "minor",
+    "what": "The rope's free end runs across the deck and melts into the outer edge of the life ring. It has no knot, eye or grab-line, so it ends with no real attachment."
    }
   ]
  }

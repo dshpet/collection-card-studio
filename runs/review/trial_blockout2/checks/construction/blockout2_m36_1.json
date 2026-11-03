@@ -1,0 +1,11 @@
+{
+ "survey": "A wooden pier runs from the left edge of the frame (cropped) out over shallow water, roughly parallel to the camera. Planks sit across a side beam held up by round wooden piles standing in the water. Two tall piles stand at the near edge: the left one holds a red-and-white life ring on a metal peg, and the right one, at the deck's end corner, has a thick rope coiled around it. A taller pile behind the deck end rises above the planks. Two short round bollards stand on the deck between them. From the coil, the rope runs left along the deck surface and goes behind the right edge of the life ring. The beach is at lower left, so the hidden end of the pier can reasonably reach it. The ring hangs from its peg through the inner hole and touches the pile, so it is supported.",
+ "errors": [
+  {
+   "where": "Rope running from the coiled pile on the right, along the deck, to behind the life ring",
+   "what": "The rope's free end goes behind the life ring and never comes out. It isn't clearly tied to the ring, the peg or a bollard, so the line has no visible end attachment. It reads as a rope that just stops.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the rope's free end clearly attached: either tie it to one of the short deck bollards with a visible knot, or run it into a visible loop tied to the life ring's grab line. Keep the coil around the corner pile as it is."
+}

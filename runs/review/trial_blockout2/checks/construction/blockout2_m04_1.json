@@ -1,0 +1,11 @@
+{
+ "survey": "A stage spotlight (PAR-style can) hangs under an aluminium lattice truss. The truss runs across the top of the frame with tubular chords and zig-zag diagonal lacing, and reads as a normal triangular or box truss. A dark square clamp grips the lower front chord. A short vertical stem drops from the clamp into the middle of the top bar of a U-shaped yoke. The yoke's two arms point down. The right arm ends in a silver pivot knob fixed to the side of the can. The left arm goes behind the can, where its matching pivot would be hidden on the far side. The navy cylindrical can is tilted down and to the left toward the camera. It has a thick bezel ring, and inside the bezel sit three round lenses (yellow, cyan, red), each giving off a short coloured beam. No power cable is shown; on a game card that is an acceptable simplification. Everything attaches: truss to clamp, clamp to stem, stem to yoke, yoke to can. Nothing floats or ends loose.",
+ "errors": [
+  {
+   "where": "Right yoke arm and pivot knob on the can",
+   "what": "The yoke pivot sits near the back third of the can, not near its centre of mass. A real yoke pivots a can close to its balance point so the tilt holds. Here the heavy front end would tip the light straight down. You only notice this on a close look.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Move the yoke pivot knobs to the middle of the can's length, one on each side, so the U-shaped yoke arms hold the cylinder at its balance point."
+}

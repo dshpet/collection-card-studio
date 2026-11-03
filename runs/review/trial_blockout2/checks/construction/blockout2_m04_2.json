@@ -1,0 +1,11 @@
+{
+ "survey": "A stage spotlight hanging from an overhead aluminium truss. The truss runs diagonally across the top: long chord tubes joined by zig-zag diagonal braces. A square black clamp grips one chord tube. A short round stem drops from the clamp to an upside-down U yoke. The yoke's right arm comes down the right side of the navy can and ends at a round pivot knob on the can's side. The yoke's left arm comes down in front of the can and ends at the top surface of the can. The can is a cylinder tilted so its front points down-left toward the camera. A thick black rubber bezel rings the front, and inside it sit three coloured LED lenses (yellow, cyan, red) with soft light beams coming out.",
+ "errors": [
+  {
+   "where": "Left arm of the U yoke, where it meets the top of the can",
+   "what": "The left yoke arm has no pivot. It runs straight into the top of the can and blends into it, while the right arm ends at a clear pivot knob on the can's side. A yoke has to hold the fixture at two matching pivots on opposite sides, so with one arm fused into the body the light could not tilt. The two sides of the yoke also do not match.",
+   "severity": "major"
+  }
+ ],
+ "fix": "Make the U yoke symmetrical. Both arms come down on opposite sides of the cylindrical spotlight, and each ends at a matching round pivot knob at the middle of the can's side, so the can hangs between the two pivots and can tilt. Neither arm touches or passes into the top of the can."
+}

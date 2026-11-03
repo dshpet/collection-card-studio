@@ -1,0 +1,21 @@
+{
+ "survey": "A metal box truss runs across the top of the card, rising slightly from left to right. We see its side face with the diagonal braces, and the top and bottom tubes run roughly parallel. A dark clamp block grips the bottom tube in the middle, and a short stem drops from it to a U-shaped yoke. The yoke is drawn flat and square to the camera: a top bar and two straight down-arms in the picture plane. A navy cylinder hangs in the yoke and points toward the viewer and to the lower left. The pivot knob shows only on the right arm. The left arm comes down and stops at the cylinder's top edge, with no visible pivot. The front of the cylinder has a thick black rim around a lens face with three LEDs (yellow, cyan, red), and colored light streaks go off to the lower left. The cylinder's back end is rounded and partly hidden behind the right arm. There is no ground; the object hangs from the truss.",
+ "errors": [
+  {
+   "where": "Yoke and spotlight body (the U-bracket's two arms and the cylinder)",
+   "what": "The yoke is drawn flat and front-on, so its pivot axis runs straight left to right across the picture. The cylinder hangs from that axis but points to the lower left and toward the viewer, which a left-right pivot cannot allow. The left arm also has no pivot. It just ends at the cylinder's top edge, as if it passes behind the cylinder, while the right arm's pivot sits on the cylinder's side. The bracket and the body are drawn as if seen from two different angles.",
+   "severity": "major"
+  },
+  {
+   "where": "Front rim and lens face of the spotlight",
+   "what": "The rim and lens face form a near-circular ellipse, as if the front points almost straight at the camera. But a long stretch of the cylinder's side is also visible, which means the front face should be turned well away and look like a clearly narrower ellipse. The three LED circles share the same too-round look.",
+   "severity": "minor"
+  },
+  {
+   "where": "Clamp block on the truss's bottom tube",
+   "what": "The clamp block shows a lit top face, as if seen from above. The truss hangs above eye level and is seen level or from slightly below, so the clamp's top face should be hidden or only barely visible.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the yoke in the same 3/4 view as the spotlight. The U-bracket should turn with the fixture, so its two arms sit on opposite sides of the cylinder with a matching pivot knob on each side, both on one axis perpendicular to the cylinder's length. Draw the far arm's pivot partly hidden behind the cylinder. Make the front rim and lens face a narrower ellipse that matches how much of the cylinder's side shows, and set the three LEDs on that same tilted face. Since the truss is above eye level, show the clamp block from slightly below, with its top face hidden."
+}

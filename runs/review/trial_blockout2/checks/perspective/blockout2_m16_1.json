@@ -1,0 +1,16 @@
+{
+ "survey": "A folding camp chair on a beige floor, seen from slightly above and to the front-left. The floor recedes toward the back and its far edge runs down to the right. The green seat sling hangs between a front tube and a back tube. Its side edges run up and to the right into depth, and both its front and back edges slope down to the right, so the seat is turned about three-quarters. On each side the legs cross in an X with a grey hinge in the middle. One leg goes from a seat corner to the opposite foot, and the legs end in a front base bar and a rear base bar. All four feet rest on the floor. Those bars slope and converge the same way as the seat edges, and the shadow falls on the floor plane. Two vertical uprights carry the backrest. The left upright comes out of the left rear leg. The right upright comes down to the back-right of the seat and turns into the right rear leg. The backrest is a flat green panel with a top roller tube and a tent-and-campfire badge, and it faces the camera almost square-on.",
+ "errors": [
+  {
+   "where": "Backrest panel and its top tube, compared with the seat",
+   "what": "The seat and base are drawn turned three-quarters: their left-right edges slope down to the right and their side edges recede. The backrest is drawn front-on: its top tube and bottom hem are level, and the top edge even rises slightly to the right. The badge is a frontal, undistorted shape. Since the backrest sits above the seat's back edge and parallel to it, its horizontal edges should slope the same way. Instead it looks like a flat front view pasted onto a turned chair.",
+   "severity": "major"
+  },
+  {
+   "where": "Right backrest upright where it meets the seat's back-right corner",
+   "what": "The backrest's right edge sits further right than the seat's back-right corner. The right upright has to kink inward at seat height to reach the leg, so the backrest is wider than the frame it stands on, and the upright and leg don't form one straight member.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the backrest turned at the same three-quarter angle as the seat. Its top tube and bottom hem should slope down to the right, parallel to the seat's back tube and heading to the same vanishing point. Shorten the right side of the panel slightly as it turns away, and foreshorten the tent-and-campfire badge to match. Make the backrest exactly as wide as the seat's back edge, so each upright rises straight from its seat corner and continues the rear leg in one straight line, with no kink."
+}

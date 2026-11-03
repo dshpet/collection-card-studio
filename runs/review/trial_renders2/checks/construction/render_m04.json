@@ -1,0 +1,11 @@
+{
+ "survey": "A stage spotlight (LED PAR can) hangs under a metal box truss. A dark clamp block wraps the truss's lower front chord. A short vertical stem drops from the clamp to the top bar of a rectangular U-yoke. The yoke's right arm runs down the right side of the can and ends in a visible pivot knob near the rear of the can body. The left arm runs down the left side and disappears behind or into the top of the can, near the front. The cylindrical can is tilted toward the camera and down-left, with a rolled front rim. Behind the rim is a lens plate with three colored LEDs (yellow, cyan, red). There is no power cable, which is an acceptable simplification. The truss chords and diagonal lacing read as continuous.",
+ "errors": [
+  {
+   "where": "Yoke left arm / can pivot",
+   "what": "The two yoke arms do not hold the can on one shared tilt axis. The right arm pivots on a knob near the rear of the can, but the left arm comes down near the front rim and fades into the top of the can, with no matching pivot on the opposite side. A real yoke clamps both sides of the can at the same point across its diameter, so this can could not tilt on the yoke.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Stage spotlight hung from a U-shaped yoke whose two arms come down on opposite sides of the can and fix to it with matching pivot knobs at the same point along the can's length, on one shared horizontal tilt axis. The far-side arm and knob should be partly visible behind the can, not merging into its top."
+}
