@@ -16,7 +16,20 @@ It plans the set, picks reference cards and draws three candidates per card. It 
 
 To see a set in the game's window, run `scripts/screen.py western --color blue`.
 
-It needs the Codex and Claude CLIs logged in, the board images in `materials/`, and `analysis/embeddings/` from `scripts/embed.py`.
+## Setup
+
+This needs a GPU with PyTorch, the Codex and Claude CLIs logged in, and the board images in `materials/`, which are not in git. The model weights and reference data below are not in git either. The first two commands take a while and download weights.
+
+```sh
+python -m venv .venv
+.venv/bin/pip install -r requirements.txt
+.venv/bin/python -B scripts/embed.py
+.venv/bin/python -B scripts/estimate.py masks marigold
+```
+
+`scripts/drift.py` also needs DINOv3, which is gated on Hugging Face: put `HUGGING_FACE_API_KEY` in `.env`, then run `.venv/bin/python -B scripts/embed.py --models dinov3`.
+
+## Change the generator or the style
 
 `scripts/draw.py` holds the generator, so another model replaces one function. After changing the generator or the style text, redraw the twins, then judge them:
 
@@ -52,16 +65,16 @@ It needs the Codex and Claude CLIs logged in, the board images in `materials/`, 
 Run from the project root. Each step skips finished work where it can.
 
 ```sh
-python scripts/map_sets.py
-python scripts/rate.py cards --rater codex    # also: claude, qwen3.8:27b-q4_K_M, gemma4:31b
-python scripts/rate.py sets --rater codex
-python scripts/estimate.py masks depth attention marigold
-python scripts/embed.py
-python scripts/measure.py
-python scripts/summarize.py
-python scripts/cluster.py
-python scripts/knowledge.py
-python scripts/build_report.py
+.venv/bin/python -B scripts/map_sets.py
+.venv/bin/python -B scripts/rate.py cards --rater codex    # also: claude, qwen3.8:27b-q4_K_M, gemma4:31b
+.venv/bin/python -B scripts/rate.py sets --rater codex
+.venv/bin/python -B scripts/estimate.py masks depth attention marigold
+.venv/bin/python -B scripts/embed.py
+.venv/bin/python -B scripts/measure.py
+.venv/bin/python -B scripts/summarize.py
+.venv/bin/python -B scripts/cluster.py
+.venv/bin/python -B scripts/knowledge.py
+.venv/bin/python -B scripts/build_report.py
 ```
 
 The forms are defined in `scripts/form.py`. `.env` needs `HUGGING_FACE_API_KEY` only for gated models.
@@ -84,7 +97,7 @@ The review scanned all 295 fetched Python files, read the code that actually run
 Board images go in `materials/` at the paths in `sources/image_manifest.json`. Check them with:
 
 ```sh
-python -m unittest discover -s tests
+.venv/bin/python -B -m unittest discover -s tests
 ```
 
-To refresh from the board, update `sources/board.svg` and `sources/original_images.json`, then run `python scripts/export_materials.py`.
+To refresh from the board, update `sources/board.svg` and `sources/original_images.json`, then run `.venv/bin/python -B scripts/export_materials.py`.

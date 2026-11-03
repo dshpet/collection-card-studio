@@ -359,7 +359,9 @@ def choose(run, briefs, history, rater="claude-opus-5-5"):
               f"{listing}\nFor each new card, pick the candidate that could sit beside the real card unnoticed: true "
               "proportions, no invented extras, instantly read as the object. Reply with the card id and the number.")
     answer = ask(rater, prompt, [*lessons, *sheets], PICK_SCHEMA)
-    picks = {p["card"]: p["pick"] for p in answer["picks"]} if answer else {}
+    if not answer:
+        raise RuntimeError("the art director gave no picks. Rerun to continue")
+    picks = {p["card"]: p["pick"] for p in answer["picks"]}
     for brief in briefs:
         tries = options[brief["id"]]
         tries[min(max(picks.get(brief["id"], 1), 1), len(tries)) - 1]["chosen"] = True
@@ -393,9 +395,9 @@ def review_variant(run, variant, round_number, briefs, history, rater):
     pairs = blind_pairs(entries, name)
     reports = specialists(name, pairs, lessons_for(), used, rater, list(ROLES))
     direction = direct(name, pairs, reports, None, rater)
-    report(name, pairs, reports, direction)
     if not direction:
-        return {}
+        raise RuntimeError("the art director gave no notes. Rerun to continue")
+    report(name, pairs, reports, direction)
     by_pair = {p["pair"]: p[p["odd"]]["id"] for p in pairs if p["odd"] != "neither"}
     return {ids[by_pair[card["pair"]]]: card["note"] for card in direction["cards"]
             if card["pair"] in by_pair and not card["keep"] and card["note"]}

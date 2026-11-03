@@ -7,7 +7,7 @@ description: Produce a collection card set for a theme and free-form producer wi
 
 The theme is required. Wishes are optional. Do not ask about anything else.
 
-1. Run this from the project root. It takes about an hour and continues where it stopped if interrupted:
+1. Run this from the project root, in the background, because it takes about an hour. If it stops, the same command continues where it left off:
 
    ```sh
    .venv/bin/python -B scripts/make_set.py "<Theme>" --wishes "<wishes>" --variants 3
@@ -23,4 +23,4 @@ The theme is required. Wishes are optional. Do not ask about anything else.
 
    Colors are blue, orange, magenta and purple. The result is `runs/<slug>/screen_N.png`.
 
-The run needs the Codex and Claude CLIs logged in. If a card is wrong, edit `runs/<slug>/plan.json` and delete that card's files in `runs/<slug>/tries/` before rerunning.
+The run needs the Codex and Claude CLIs logged in. To start a topic over, delete both `runs/<slug>` and `runs/review/<slug>`.

@@ -133,14 +133,13 @@ def pick_references(card, cards, used, rng):
     return picks
 
 
-def card_brief(card, fixes=()):
+def card_brief(card):
     backdrop = PATTERNS[card["pattern"]].format(topic=card.get("topic", "simple"))
     lines = [STYLE, f"Subject: {card['subject']}", f"Hero colors: {card['hero_colors']}.",
              f"Staging: {CATEGORY_RULES[card['category']]}",
              f"Backdrop: {backdrop} in {card['backdrop_colors']}."]
     if card["surface_or_setting"]:
         lines.append(f"Surface or setting: {card['surface_or_setting']}.")
-    lines += fixes
     return "\n".join(lines)
 
 
@@ -156,20 +155,20 @@ def make_briefs(plan, cards, seed):
     return briefs
 
 
-def draw_card(run, brief, attempt, fixes, use_references, edit=None):
+def draw_card(run, brief, attempt, notes, use_references, edit=None):
     """Draw a card from its brief, or with edit set to a draft, change only what the notes name."""
     try_id = f"{brief['id']}_{attempt}"
     out, full = run / "tries" / f"{try_id}.png", run / "full" / f"{try_id}.png"
     if out.exists():
         return try_id
-    references = [ROOT / f"materials/card_examples/{i}.png" for i in brief["references"]]
-    prompt = EDIT.format(notes="\n".join(fixes)) if edit else card_brief(brief["card"], fixes)
+    references = [ROOT / f"materials/card_examples/{i}.png" for i in brief["references"]] if use_references else []
+    prompt = EDIT.format(notes="\n".join(notes)) if edit else card_brief(brief["card"])
     references += [edit] if edit else []
     (run / "prompts").mkdir(exist_ok=True)
     (run / "prompts" / f"{try_id}.txt").write_text(prompt, "utf-8")
     for tries_left in (1, 0):
         try:
-            draw(prompt, references if use_references else [], full)
+            draw(prompt, references, full)
             out.parent.mkdir(exist_ok=True)
             Image.open(full).convert("RGB").resize(SIZE, Image.LANCZOS).save(out)
             return try_id
@@ -215,6 +214,7 @@ def check_tries(run, tries, knowledge, workers):
         ratings = list(pool.map(lambda r: rate_blind(ROOT / r["file"]), records))
     same = judge_names([(t["card"]["subject"], r["identity"]["subject"] if r else "nothing")
                          for t, r in zip(tries, ratings)])
+    same += [True] * (len(tries) - len(same))  # a short answer must not drop cards
 
     for entry, record, score, rating, named in zip(tries, records, nearest, ratings, same):
         category = entry["card"]["category"]
@@ -262,7 +262,7 @@ def deliver(run, plan, briefs, history):
         for brief in [b for b in briefs if b["variant"] == variant]:
             tries = history[brief["id"]]
             best = best_try(tries)
-            name = re.sub(r"[^a-z0-9]+", "_", brief["card"]["name"].lower()).strip("_")
+            name = re.sub(r"\W+", "_", brief["card"]["name"].lower()).strip("_")
             path = folder / f"{brief['id'][-2:]}_{name}.png"
             Image.open(run / "tries" / f"{best['try_id']}.png").save(path)
             paths.append(path)
@@ -289,7 +289,7 @@ def main():
     parser.add_argument("--no-references", action="store_true", help="draw from text alone, as a control")
     args = parser.parse_args()
 
-    slug = re.sub(r"[^a-z0-9]+", "-", args.theme.lower()).strip("-") + ("-noref" if args.no_references else "")
+    slug = re.sub(r"\W+", "-", args.theme.lower()).strip("-") + ("-noref" if args.no_references else "")
     run = ROOT / "runs" / slug
     run.mkdir(parents=True, exist_ok=True)
     knowledge = load_json(ANALYSIS / "knowledge.json")

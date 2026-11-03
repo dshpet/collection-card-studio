@@ -18,7 +18,7 @@ TEMPLATES = {"purple": "3458764679659989297", "blue": "3458764679659989298", "or
 SLOTS = [(x, 782) for x in (1410, 1973, 2534, 3096, 3657)] + [(x, 1559) for x in (1410, 1973, 2534, 3096, 3655)]
 SLOT = (413, 470)
 TITLE_BOX = (2240, 120, 3260, 320)
-FONT = "/usr/share/fonts/TTF/DejaVuSans-Bold.ttf"
+FONT = "DejaVuSans-Bold.ttf"
 
 
 def erase(window, box):

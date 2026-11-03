@@ -1,6 +1,6 @@
 """Test the pipeline itself. Rerun after changing the generator or the check.
 
-off-style: can the check reject images that are plainly the wrong style?
+off-style: can the check reject images that are plainly the wrong style? Delete its tries to redraw them.
 acceptance: can vision models pick out one generated card hidden among nine real ones?
 twins: redraw real cards with the card itself hidden, so style can be compared with content held equal.
 """

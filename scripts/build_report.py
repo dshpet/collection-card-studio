@@ -43,7 +43,8 @@ def generated_runs():
         folder = report.parent
         plan = load_json(folder / "plan.json")
         history = load_json(folder / "check.json")
-        best = [min(t, key=lambda x: (not x["passed"], len(x["issues"]), len(x["misses"]))) for t in history.values()]
+        best = [min(t, key=lambda x: (not x.get("chosen"), not x["passed"], len(x["issues"]), len(x["misses"])))
+                for t in history.values()]
         runs.append({"slug": folder.name, "title": plan["title"], "story": plan.get("story"),
                      "variants": len(plan["variants"]), "cards": len(best),
                      "passed": sum(b["passed"] for b in best),

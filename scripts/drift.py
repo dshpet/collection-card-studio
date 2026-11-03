@@ -90,14 +90,14 @@ def matched(image):
     return image.resize((width // 2, height // 2), Image.BOX).resize((width, height), Image.BICUBIC)
 
 
-def classifier(cards, real, derived_of):
+def classifier(cards, real):
     encode = load_hf(MODELS["dinov3"], torch.float32)
     labels = np.array([1] * len(real) + [0] * len(cards))
     result = {}
     vectors = defaultdict(list)
     with torch.inference_mode():
         for card in real + cards:
-            for view, image in views(card, derived_of(card)):
+            for view, image in views(card, card.get("derived", DERIVED)):
                 for name, prepared in (("native", image), ("matched", matched(image))):
                     vectors[view, name].append(prepared)
         for (view, name), images in vectors.items():
@@ -178,14 +178,14 @@ def main():
         return
 
     real = real_cards()
-    cards, derived = [], {}
+    cards = []
     for run in args.runs:
         folder, records = picked(run)
         write_masks(records, "cuda", folder / "derived" / "masks")
         write_marigold(records, "cuda", folder / "derived")
         for record in records:
             record["measured"] = measure_card(record, folder / "derived")
-            derived[record["id"]] = folder / "derived"
+            record["derived"] = folder / "derived"  # try ids repeat across runs
         save_json(folder / "measured.json", {r["id"]: r["measured"] for r in records})
         cards += records
 
@@ -194,7 +194,7 @@ def main():
         print(f"{row['field']:48} percentile {row['percentile']:.2f}  z {row['z']:+.1f}")
     result = {"runs": args.runs, "cards": len(cards), "fields": fields}
     if not args.no_classifier:
-        result["auc"] = classifier(cards, real, lambda card: derived.get(card["id"], DERIVED))
+        result["auc"] = classifier(cards, real)
         print(result["auc"])
     result["real_likeness"] = real_likeness(cards, real)
     result["mean_drift"] = round(float(np.mean([abs(row["percentile"] - 0.5) for row in fields])), 3)
