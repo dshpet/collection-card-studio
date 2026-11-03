@@ -1,0 +1,16 @@
+{
+ "survey": "Stage spotlight hung from a short box truss. Truss: two top and two bottom aluminum tubes joined by diagonal lacing; it hangs free with both ends inside the frame, an acceptable card crop. A square clamp block sits on the front bottom tube, with a short vertical stem dropping to a U-shaped yoke. The yoke's right arm ends in a pivot knob on the side of the can; the left arm comes down behind the can (pivot hidden, plausible). Lamp: a dark cylinder tilted down-left toward the camera, with three LEDs (yellow, cyan, red) in the front face, plausible for an LED light; the coloured beams spread from the lens. The load path from truss to clamp, yoke, pivot and lamp is sound.",
+ "errors": [
+  {
+   "where": "Truss lacing between top and bottom chords",
+   "what": "Diagonals don't form a regular zigzag: some cross mid-span, the ends don't meet the chords at matching joints, and the front and back faces don't line up",
+   "severity": "minor"
+  },
+  {
+   "where": "Left arm of the yoke",
+   "what": "Left arm ends against the top of the can with no pivot knob to match the right side, and its length doesn't quite match the right arm",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Aluminum box truss with a regular, evenly spaced zigzag of diagonal braces; each diagonal meets the top and bottom tubes at shared joints, and the front and back faces mirror each other. The U-shaped yoke has two arms of equal length, each ending in a matching pivot knob on opposite sides of the spotlight can."
+}

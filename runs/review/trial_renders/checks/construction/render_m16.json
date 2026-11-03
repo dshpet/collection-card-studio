@@ -1,0 +1,26 @@
+{
+ "survey": "A folding camp chair in three-quarter view, facing front-left. Seat: a green canvas sheet held by a round front rail. The rail is wider than the seat and shifted left of the backrest. There is no visible side or rear seat rail, and the back edge of the seat meets the bottom bar of the backrest. Backrest: a rectangular tube frame (two uprights, a top bar and a bottom bar) with a green canvas panel over its upper half and a tent emblem printed on it. Legs: one X of tubes on each side, in the side planes, each with a pivot sleeve at the crossing. Two floor rails run left to right, one joining the front feet and one joining the back feet, with round foot caps at the corners. The chair stands on four feet on the floor.",
+ "errors": [
+  {
+   "where": "Backrest uprights / right side frame",
+   "what": "The two sides of the frame are not mirror images. The right backrest upright bends at seat level and carries on down as one leg of the right X to the front-right foot. The left upright stops at the seat, and the left X is a separate pair of legs that never joins the backrest. One side cannot be built like the other, and the backrest is only held up on one side.",
+   "severity": "major"
+  },
+  {
+   "where": "Left X legs, top ends under the seat",
+   "what": "The rear leg of the left X ends under the middle of the seat canvas, where there is no seat rail or joint to hold it. The leg attaches to nothing and could not carry the seat.",
+   "severity": "major"
+  },
+  {
+   "where": "Seat front rail vs seat canvas and backrest",
+   "what": "The front rail sticks out well past the seat canvas on the left, and the canvas covers only part of it. The seat is skewed: the front rail and the backrest are offset sideways, so the seat is not a proper rectangle stretched between matching side rails.",
+   "severity": "minor"
+  },
+  {
+   "where": "Backrest top bar / canvas panel",
+   "what": "A thin gap shows between the top edge of the backrest canvas and the top bar, so the canvas does not hang from the bar. Nothing clearly holds the panel at its top.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Folding camp chair with a symmetric metal tube frame. Each side has the same X of crossed legs, joined by a pivot bolt at the crossing. The top end of every leg is fixed to a side seat rail, and the left and right seat rails match. The two backrest uprights rise from the back ends of the seat rails, mirror images of each other. The canvas seat is stretched between the seat rails and spans the full width of the front rail. The backrest canvas is wrapped around the top bar and both uprights with no gaps. Front and back floor rails join the feet."
+}

@@ -1,0 +1,11 @@
+{
+ "survey": "A handheld pocket calculator, floating at a slight tilt and facing the camera; the floating is an accepted icon convention and is not counted as an error. The body is a rounded dark-blue slab. At the top edge sits a red solar strip, set into the body. Below it is a grey LCD window, recessed into the face. The keypad sits below the display: digits 7-8-9, 4-5-6 and 1-2-3 in three rows, then a bottom row with a double-width 0 key and a decimal point key. A right-hand column of cyan operator keys holds ÷, ×, − and an enlarged + at the bottom. All keys sit in the face, are evenly spaced, and look like they could be pressed. No keys overlap or melt together. The body is symmetric and has no invented parts.",
+ "errors": [
+  {
+   "where": "Keypad, bottom-right corner and operator column",
+   "what": "The calculator has no equals (=) key. It has digits, a decimal point and four operators, but no key to get a result, so it cannot finish a calculation. Every real basic calculator has one. Leaving it out is a missing functional part, not a simplification. The enlarged + key sits where = usually goes.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Add an equals (=) key to the keypad, for example a cyan '=' key in the bottom row next to the decimal point, or replace the enlarged '+' key with '=' and move '+' into the operator column, so the calculator has 0-9, a decimal point, ÷, ×, −, + and =."
+}

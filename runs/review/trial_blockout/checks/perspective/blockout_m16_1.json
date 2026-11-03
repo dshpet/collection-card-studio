@@ -1,0 +1,16 @@
+{
+ "survey": "A folding camp chair on a tabletop, seen in three-quarter view from the front left and a little above. The ground is a flat slab seen from above, and its back edge runs down to the right. The seat is a thin green sling stretched between two tube rails. Its front rail runs down to the right, and its top surface shows as a narrow sliver, so the eye is only a little above the seat. Each side has a crossed X pair of tubes, with a pivot cap partway down, running from the seat rails to a rectangle of floor tubes. The four foot caps sit on the slab and the shadow falls behind. The rail lines on the floor and the seat agree on one viewpoint, with the vanishing point to the left. The backrest is a rectangular tube frame with a green panel. Its left upright comes down onto the seat's back edge and stops there. Its right upright comes down to the back-right corner of the seat and carries on as one of the right X-leg tubes to the floor.",
+ "errors": [
+  {
+   "where": "Backrest frame where it meets the seat",
+   "what": "The backrest does not sit on the seat's back edge at the same width and angle. The right upright lands on the seat's back-right corner. The left upright lands well inside the seat's back-left corner, partway along the back edge. The backrest looks narrower than the seat and turned more toward the viewer than the seat and legs, as if the two were drawn from slightly different angles.",
+   "severity": "major"
+  },
+  {
+   "where": "Two side tubes of the backrest",
+   "what": "The two uprights are not parallel. The left one is vertical. The right one leans out to the right toward the top and lines up with the slanted X-leg below it, so the backrest flares and looks twisted instead of being a flat rectangle standing upright.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the backrest a flat rectangular frame standing straight up from the seat's back edge, with both uprights vertical and parallel. Each upright should rise exactly from the seat's back-left and back-right corners, and the backrest should be the same width as the seat. Its top bar should be parallel to the seat's back edge and run toward the same vanishing point as the seat and floor rails, so the whole chair is seen from one three-quarter angle from slightly above."
+}

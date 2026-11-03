@@ -1,0 +1,21 @@
+{
+ "survey": "A stage spotlight hangs from a short section of metal truss. The truss is two horizontal tubes joined by diagonal cross-bracing, shown from slightly below and cut off at both ends. A small clamp block sits under the bottom tube, and a short stem runs from it down to a U-shaped yoke. The yoke's right arm reaches a pivot knob on the right side of the can. The left arm runs down behind the can and has no visible pivot. The can is dark blue and tilted down to the left so its front lens faces the viewer at three-quarter angle. The back of the can is plain, with no cap or cable, which is an acceptable simplification. Inside the front bezel are three colored emitters: yellow at top left, pale cyan in the middle and red at bottom right. Each one sends out its own translucent beam cone toward the lower left.",
+ "errors": [
+  {
+   "where": "Front lens, red and yellow emitters",
+   "what": "The red emitter runs past the bezel rim at the lower right, and the yellow one sits on the rim at the upper left. The emitters are not inside the lens opening, so they look stuck on the outside of the housing.",
+   "severity": "major"
+  },
+  {
+   "where": "Light beams below and left of the lens",
+   "what": "The three beams are drawn as solid, overlapping glass-like cones that pass through each other. There are crumpled shapes inside them, and each cone ends in a hard, capped edge, like a physical object instead of light that fades out. Their edges also fan out in different directions instead of forming one beam along the can's axis.",
+   "severity": "major"
+  },
+  {
+   "where": "Left arm of the yoke",
+   "what": "The left arm runs down into the top of the can and stops there, with no pivot knob to match the one on the right. The yoke holds the can on one side only, and the left arm is a loose end.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Put all three colored LED emitters (yellow, cyan, red) fully inside the round front lens, set within the bezel rim. Draw one soft beam of light along the can's axis that fades out gradually: no solid cones, no hard end caps and no shapes inside it. Give the U-shaped yoke a matching pivot knob on each side of the can at the same height, with both arms attached to them."
+}

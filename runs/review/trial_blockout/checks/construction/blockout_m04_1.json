@@ -1,0 +1,16 @@
+{
+ "survey": "A stage spotlight hangs from a short piece of metal truss. The truss has two upper and two lower round tubes, and diagonal braces zigzag between the front pair. A small square clamp sits on the front lower tube. A short rod drops from the clamp to the middle of a black U-shaped yoke. The yoke's right arm ends in a round pivot knob on the side of the can, about halfway along it. The left arm goes down behind the can, where its matching pivot would be hidden. The dark blue can tilts down toward the lower left and faces the viewer at three-quarters. Its front has a black rim holding three coloured LEDs (yellow, cyan and red), each casting a soft beam. There is no power cable, which is an acceptable simplification. The truss is shown whole, with capped tube ends at both sides inside the frame, and nothing holds it up.",
+ "errors": [
+  {
+   "where": "Truss beam, both ends",
+   "what": "The truss is a short, finished piece with capped tube ends on both sides inside the frame. It does not run out of the picture and is not hung or mounted on anything, so the beam and the light float in mid-air.",
+   "severity": "minor"
+  },
+  {
+   "where": "Truss, right end and back tubes",
+   "what": "The back upper and lower tubes only show past the right end of the front pair, and nothing braces them to the front tubes. The diagonals only make sense for the front face, so the truss is not clearly a solid box or a flat ladder truss.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the truss run out of the frame on both sides as one straight box truss: four parallel tubes with diagonal bracing on every face, with no capped ends showing. Keep the clamp on the lower tube, the U-shaped yoke and the pivot knobs on both sides of the spotlight can."
+}

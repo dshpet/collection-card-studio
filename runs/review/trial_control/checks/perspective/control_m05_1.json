@@ -1,0 +1,21 @@
+{
+ "survey": "One object: a rounded blue pocket calculator floating at an angle on a yellow background with a pi pattern. Main parts: (1) a thick rounded body. Its left and bottom side walls show, so the face reads as tilted back and turned to the right. The top edge runs almost level, but the bottom edge drops steeply from lower left to lower right. (2) A red solar strip and a grey display set into the upper face, both drawn as almost level, front-facing rectangles. (3) A 4×4 keypad of cream number keys and cyan operator keys (÷ × − +), with a wide 0 key and a large + key, raised from the face. The keys are drawn as front-on rounded squares of about the same size. Their rows slope slightly but follow neither the level top edge nor the steep bottom edge, and the columns don't lean with the body's side edges. This is nearly the same layout as reviewer example 1, which was marked major.",
+ "errors": [
+  {
+   "where": "Keypad (all 16 keys) against the calculator face",
+   "what": "The body is drawn tilted away and turned, with thick side walls showing and a steeply slanted bottom edge. Yet every key is drawn front-on with no foreshortening. The keys don't shrink, tilt or bunch toward the far side, and the far top-right keys (9, ÷) are about the same size as the near ones. The key rows and columns don't run parallel to the face's edges, so the keypad looks pasted flat onto the tilted body. This is the same fault as reviewer example 1.",
+   "severity": "major"
+  },
+  {
+   "where": "Calculator body outline: top edge against bottom edge, and the left and right sides",
+   "what": "The top edge is almost level while the bottom edge slants down steeply to the right. The edges of the rectangular face should meet at one vanishing point or stay parallel, but they don't agree. The face looks like a skewed trapezoid rather than a rectangle in perspective.",
+   "severity": "major"
+  },
+  {
+   "where": "Display window and red solar strip",
+   "what": "Both are drawn as level, front-facing rectangles, as if seen straight on. The surrounding body is seen at an angle, so they don't follow the tilt of the face they sit in.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the calculator as one rigid rectangular slab seen from a single camera, tilted back about 30° and turned slightly to the right. All four edges of the front face should converge consistently: the top and bottom edges should slope by the same perspective angle, and the left and right edges should lean together. Lay out the solar strip, display and 4×4 keypad in strict rows and columns that run parallel to the face's edges. Foreshorten every key with its surface: keys near the top and far side should be smaller and more squashed, keys near the bottom and front a little larger. Each key should show the same small top face and side thickness, in the same direction as the body's own side walls. No key, the display or the solar strip should face the viewer straight on."
+}

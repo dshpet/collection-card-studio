@@ -1,0 +1,11 @@
+{
+ "survey": "Stage spotlight hanging from a truss. The truss is two parallel tubes joined by diagonal struts. It runs from the lower left to the upper right, seen almost side-on and slightly from below, and the tubes come a little closer together toward the right, so it recedes correctly. A clamp grips the upper tube, and a vertical stem drops past the lower tube to the top of a U-shaped yoke. The yoke's U is drawn almost square to the camera, with its arms hanging straight down. The right arm ends in a yellow pivot knob on the side of the light's body. The left arm disappears behind the body. The body is a cylinder aimed down and to the left, toward the viewer. Its front rim is a wide, tilted ellipse seen nearly head-on, and the yellow band and the vents on the upper back curve around the cylinder in agreement with that rim. The three lenses (yellow, cyan, red) sit in the front face as ellipses that roughly match the rim's tilt, and coloured beams spread out to the lower left. The truss and the light agree well on a single low camera, and the vertical stem and the straight yoke arms are consistent with each other.",
+ "errors": [
+  {
+   "where": "Yellow pivot knob where the right yoke arm meets the side of the light body",
+   "what": "The knob sits on the side of the cylinder, so it faces 90° away from the front lens face. Yet both are drawn almost facing the camera: the knob is a nearly round, front-on disc, just like the front rim. Its axle is the yoke's pivot, so it should point along the line between the two yoke arms. That puts it close to the picture plane, and the knob should show as a narrow ellipse seen almost edge-on, not a round disc. The knob therefore disagrees with both the body and the yoke.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the yellow pivot knob on the side of the spotlight as a narrow ellipse seen nearly edge-on. Its face should point sideways along the yoke's pivot axis, at right angles to the front lens face, and stay consistent with the U-yoke's arms and the cylinder's front rim."
+}

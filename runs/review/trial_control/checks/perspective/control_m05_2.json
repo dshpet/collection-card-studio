@@ -1,0 +1,16 @@
+{
+ "survey": "A dark-blue handheld calculator floats on its own against a yellow pi-pattern background, with no ground. The body is a rounded slab turned away from the viewer. Its left edge slants sharply from upper-middle to lower-left, its bottom edge drops to the right, and a thick side wall shows along the left and bottom, so the face is seen from above at an angle. On that face are a red solar strip and a grey display window at the top, then a 4-row keypad: three columns of navy number keys (7-8-9, 4-5-6, 1-2-3, a wide 0 and a dot key) and a right-hand column of cyan operator keys (÷, ×, −, +). The keys are raised blocks set into the face. The display and the keys face the camera almost square-on, while the body around them is strongly turned.",
+ "errors": [
+  {
+   "where": "Keypad (all number and operator keys)",
+   "what": "The body is turned away from the viewer: its left edge leans strongly and its bottom edge drops steeply to the right. Yet the keys are drawn almost front-on, as nearly square rectangles of the same size. Their rows run close to horizontal instead of parallel to the body's bottom edge, and their columns lean much less than the body's left edge. The keys don't shrink, tilt or bunch toward the far side, so the keypad reads like a flat sticker that doesn't sit on the tilted face. This is the same fault as the first example.",
+   "severity": "major"
+  },
+  {
+   "where": "Display window and solar strip",
+   "what": "The grey display and the red solar strip are near-perfect front-facing rectangles with level top and bottom edges. They don't follow the slanted face around them, so the top of the face disagrees with how the body is drawn.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the whole calculator face in one perspective that matches the tilted body. Key rows, the display window and the solar strip run parallel to the body's top and bottom edges, and key columns run parallel to its left and right edges. The keys are foreshortened into slanted shapes that get slightly smaller and closer together toward the far side of the face. Each key's side shows at the same angle as the body's side wall, and the display is a foreshortened rectangle that lies flat on the tilted face."
+}

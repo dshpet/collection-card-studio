@@ -1,0 +1,16 @@
+{
+ "survey": "The object is a folding camp chair in three-quarter view from the front-left, with the camera a little above it. Two vertical aluminium posts at the back rise from the seat's rear corners. They carry a curved green canvas backrest with the tent-and-campfire logo, and grey caps sit on the post tops. The green canvas seat hangs between two side rails. Its front edge runs from a joint at front-left up to a joint at front-right, and we see its top surface from above. Under the seat, each side has an X-frame of two crossed tubes joined by a pivot bolt. The left X-frame faces the viewer and the right one is partly hidden. Four grey rubber feet stand on a flat beige floor; the front-left foot is lowest in the frame and the back-right foot is highest. The X-frames, the posts and the four feet agree on one ground plane that is turned at about the same angle as the seat. Contact shadows fall to the left.",
+ "errors": [
+  {
+   "where": "Backrest panel compared with the seat",
+   "what": "The seat and legs are turned well into three-quarter view: the seat's front and back edges climb steeply to the right. The backrest is drawn almost flat to the camera. Its top edge is nearly horizontal and both of its ends are about the same height. It reads as a front view laid onto a chair that is turned to the side, so the backrest does not share the seat's rear edge direction.",
+   "severity": "minor"
+  },
+  {
+   "where": "Seat front edge compared with its back edge",
+   "what": "The near front edge of the seat, between the two front joints, comes out slightly shorter than the far back edge between the two back posts. Perspective should make the nearer edge equal or longer. This slight reverse perspective makes the seat look a little wedge-shaped.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Turn the backrest with the rest of the chair: its top and bottom edges should run parallel to the seat's back edge, with the left end slightly larger and lower than the right, as in the seat's three-quarter view. Make the seat's front edge as long as or slightly longer than its back edge, so the nearer side looks larger."
+}

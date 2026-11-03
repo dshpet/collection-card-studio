@@ -1,0 +1,16 @@
+{
+ "survey": "A wooden pier seen head-on from the beach end, looking out to sea. Main parts: (1) Two tall front posts stand in shallow water right at the shoreline, one on each side. (2) A plank deck runs away from the viewer. Its front edge is a crossbeam bolted near both front posts. Two short posts in the water support it partway along, and side rails run along both edges to the far end. (3) At the far end, two pairs of posts stick up above the deck, one pair on each side. (4) A thick rope is wound three times around the top of the left front post. (5) A lifebuoy hangs from a short rope on a metal hook screwed into the right front post. The sand and surf line are in the foreground. The deck front sits about a post-height above the water and ends at the posts, with clear water between it and the sand.",
+ "errors": [
+  {
+   "where": "Near end of the deck, between the front posts and the beach",
+   "what": "The pier leads nowhere. The deck's front edge is raised over the water and stops at the front posts. It never reaches the sand, and no step or ramp comes down to the beach. Nobody could walk onto it from shore, which is a pier's whole job.",
+   "severity": "major"
+  },
+  {
+   "where": "Rope coil around the left front post",
+   "what": "The rope is three closed rings with no free end and no tie-off. It is not a wound rope that starts or ends anywhere, and nothing ties it to the pier or to a boat.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Extend the near end of the pier deck all the way onto the dry sand so the first planks rest on the beach, or add a short wooden ramp or step from the deck down to the sand. Make the rope on the left post one continuous rope wrapped around the post, with one end tucked under the wraps and the other end hanging down or tied off, rather than separate closed rings."
+}

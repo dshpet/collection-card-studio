@@ -1,0 +1,16 @@
+{
+ "survey": "A wooden pier drawn in one-point perspective from a slightly raised, centred camera, running straight out to sea. Parts: (1) Two large front corner posts stand in shallow water at the shoreline, with their tops drawn as open ellipses seen from above. A rope coil wraps the left post. A metal hook on the front of the right post holds a red-and-white life ring, seen face-on like the post's front. (2) A thick front beam with two bolts runs between the front posts and faces the camera squarely. (3) The deck is made of crosswise planks that get thinner and closer together as they go back, and its edges meet near the horizon. (4) Low side rails run along both deck edges and follow those same lines back. (5) Two short support posts stand in the water under the front beam, and their water contact is higher in the frame because they are further back. (6) Four smaller posts stand at the far end of the pier, with their tops as ellipses close to eye level. Overall the camera, the plank spacing, the side rails and the post-top ellipses agree on one view.",
+ "errors": [
+  {
+   "where": "Bases of the two front posts at the waterline",
+   "what": "The two front posts hold up the same front beam, so they are the same distance from the camera. Even so, the right post meets the water noticeably lower than the left one, and it is also a little wider and taller. That puts one post closer to the viewer than the other, which does not fit the squarely front-facing beam between them.",
+   "severity": "minor"
+  },
+  {
+   "where": "Far-end posts at the back of the pier",
+   "what": "The far-end posts are drawn only slightly smaller than the front posts. Compared with how much the deck narrows (about 0.4 of its front width), they should be smaller still. Their top ellipses are also nearly as open as the front posts' tops, even though they sit just under the horizon and should be flatter.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the two front corner posts match exactly: same width, same height, and both meeting the water on the same horizontal line, level with the front beam between them. Shrink the posts at the far end of the pier in proportion to how much the deck narrows, and draw their tops as flatter ellipses, since they are close to eye level."
+}

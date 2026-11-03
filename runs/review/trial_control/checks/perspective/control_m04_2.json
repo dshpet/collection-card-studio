@@ -1,0 +1,16 @@
+{
+ "survey": "A stage spotlight hangs from a two-tube truss. The truss is a flat ladder of two parallel round tubes joined by diagonal braces. It runs across the top of the card and rises slightly to the right. It is drawn almost side-on, with braces of equal size along its length. Two clamps grip the lower tube. A U-shaped yoke hangs from them, and its two arms come down to round pivot knobs on the left and right sides of the lamp. The lamp is a cylinder aimed down and to the left, toward the viewer, so its front face is seen nearly head-on as a near-round rim. The top of the barrel, with its vent slots, curves away up and to the right, and a seam ring runs around the body. Three round lenses (yellow, cyan, red) sit on the front face, and light beams spill out to the lower left. There is no ground. The background is an even blue gradient. Overall the lamp, yoke and truss read as one plausible low-angle view of a hanging fixture. The truss is flatter and less foreshortened than the lamp, but that is acceptable stylisation.",
+ "errors": [
+  {
+   "where": "Lenses on the lamp's front face (yellow, cyan, red)",
+   "what": "The three lens circles are drawn as flatter, more tilted ellipses than the front rim around them. The rim reads as nearly face-on, but the lenses read as if seen at a steeper angle, so the lenses and the rim don't agree on how the front face is turned.",
+   "severity": "minor"
+  },
+  {
+   "where": "Ends of the truss tubes, left and right",
+   "what": "Both ends of the two truss tubes show round end-caps facing the viewer. The right ends show clear circular caps, and the left ends are also drawn capped and rounded. A straight tube seen from one viewpoint can show only one of its end faces, so at least one pair of ends contradicts the camera.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the three lenses on the spotlight's front face as circles that lie flat in the same plane as the front rim, so their ellipses have the same narrowness and tilt as the rim. Show an end-cap on only one end of each truss tube, the end turned toward the viewer, and draw the far ends as plain tube silhouettes."
+}

@@ -1,0 +1,16 @@
+{
+ "survey": "A short wooden pier runs from the sandy shore out into shallow water, seen from a three-quarter angle. Parts: (1) a plank deck of about eight boards crossing the width, held down with grey bolt heads; (2) a longitudinal beam under the deck, with short stub legs under it standing in the water; (3) four tall round posts, two at the shore end (front-left, front-right) and two at the far end (back-left, back-right), all standing in the water or at the waterline; (4) a rope wrapped about three times around the front-left post; (5) a red-and-white life ring hanging from a peg near the top of the front-right post on a looped rope. The deck's front edge is roughly at the shoreline, so the pier does reach land. The deck rests on its own beam and stub legs. The four posts stand next to the deck edges, and none of them has a beam, bolt or notch joining it to the deck.",
+ "errors": [
+  {
+   "where": "Front-left post, rope coil",
+   "what": "The rope is three closed rings stacked around the post with no free end, knot or tie-off. A real rope wound around a bollard has ends, so this is rings, not a wrapped rope.",
+   "severity": "minor"
+  },
+  {
+   "where": "All four tall posts where they meet the deck",
+   "what": "The posts stand next to the deck instead of carrying it. No crossbeam, bolt or notch joins any post to the deck or its beam. The deck is held up only by short stub legs, so the posts are decorative and do no structural work. The front-right post overlaps the deck edge without visibly joining it.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the rope on the front-left post one continuous rope wrapped around it, with a visible knot and a short loose end hanging down. Join the deck to the four tall posts: run a cross-beam under each end of the deck and bolt it to the inside faces of the posts, so the posts clearly hold the deck up."
+}

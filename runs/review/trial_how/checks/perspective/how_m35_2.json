@@ -1,0 +1,21 @@
+{
+ "survey": "A park scene with a stone chess table and two round stone stools on grass. The table has a thick square top with an inset 8x8 checkerboard. The top sits on a collar and a flared square pedestal, which stands on a stepped square plinth resting on the lawn. The camera looks down strongly on the tabletop, so the board fills most of its top face. The pedestal and plinth are drawn almost square-on and near eye level: their front faces are flat rectangles, and only a thin strip of the plinth's top shows. Each stool is a drum: an elliptical top that is fairly open, a waisted column, and a ringed base. The base rings have nearly flat front edges. The stools rest on the grass on either side of the table, and their tops are roughly level with the table's collar.",
+ "errors": [
+  {
+   "where": "Tabletop and checkerboard versus the pedestal and plinth below",
+   "what": "The tabletop is seen from high above: a deep top face with the whole board laid out. The pedestal and plinth under it are seen almost level and front-on: flat front faces, the plinth's top barely visible, and no side planes receding with the top's edges. The upper and lower halves of the table read as two different camera heights.",
+   "severity": "major"
+  },
+  {
+   "where": "Checkerboard inset on the tabletop",
+   "what": "The board does not follow the tabletop's edges. Its left edge runs at a clearly different angle from the tabletop's left edge, so the border is wide at the front-left and thin at the back-right. The squares stay nearly the same size from front to back instead of shrinking and bunching toward the far edge. The grid looks pasted on and slightly rotated rather than lying in the table's plane.",
+   "severity": "major"
+  },
+  {
+   "where": "Both stools, top versus base rings",
+   "what": "The stool tops are fairly open ellipses, but the base rings below them are drawn almost flat. Because the bases sit further below eye level, their ellipses should be at least as open as the tops, or more.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the whole stone chess set from one consistent three-quarter view from above. The square tabletop, collar, flared pedestal and stepped plinth share the same vanishing points, so the pedestal and plinth show their receding side faces and visible top ledges at the same angle as the tabletop. The 8x8 checkerboard is centered in the tabletop with an even stone border, its grid lines parallel to the tabletop's edges, and the squares shrinking evenly toward the far side. The round stools' bases are ellipses at least as open as their tops, and every part sits flat on the grass in the same perspective."
+}

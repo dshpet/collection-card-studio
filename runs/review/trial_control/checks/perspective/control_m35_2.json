@@ -1,0 +1,16 @@
+{
+ "survey": "A stone park chess set on grass with three parts. (1) A square tabletop slab with an inset checkerboard. It is seen from above and almost straight-on: its front edge is close to horizontal, its left and right edges recede symmetrically toward the back, and only its front thickness face shows. (2) A square pedestal under the slab, with a collar under the top, a tapering shaft and a stepped plinth on the grass. (3) Two round, drum-like stools, one on each side, standing on the same lawn. Their tops are open ellipses, more open than the slab's top, which fits their lower height below eye level. Their bases are rounded flares sitting on the grass. The checkerboard squares shrink toward the back, and the grid rows follow the slab's edges, so the board agrees with its surface. The ground plane is seen from above, matching the slab and stools.",
+ "errors": [
+  {
+   "where": "Pedestal (collar, shaft and plinth) under the tabletop",
+   "what": "The tabletop is seen square-on: it is symmetric and shows no side face. The pedestal directly under it is turned about 30° to the camera and shows a broad front face plus a clearly lit right side face, on the collar, shaft and plinth alike. On a solid table the pedestal's faces should line up with the slab's edges, so the top and its support look as if they come from two different viewpoints.",
+   "severity": "major"
+  },
+  {
+   "where": "Top step of the pedestal's plinth, near the grass",
+   "what": "The plinth is the lowest flat surface in the scene, so it should show the most open top face. Instead its top ledge is drawn as an almost edge-on sliver. Meanwhile the higher slab and the stool tops are both seen clearly from above. The plinth reads as seen from eye level, which disagrees with the high camera used everywhere else.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Stone chess table seen from one slightly high three-quarter-front camera. The square pedestal is aligned with the square tabletop, so its front face is parallel to the tabletop's front edge: show the same faces at the same angle, with no extra side face visible on the pedestal alone. The plinth's top step should show a clearly visible top face seen from above, more open than the tabletop's, consistent with the round stool tops. All parts sit flat on the same grass plane."
+}

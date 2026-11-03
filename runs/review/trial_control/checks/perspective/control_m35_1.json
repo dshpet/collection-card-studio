@@ -1,0 +1,16 @@
+{
+ "survey": "A stone chess table on a lawn with two round stools, seen from a raised three-quarter-front camera, close to one-point perspective. The square tabletop is a thick slab with rounded corners. Its top face shows a lot of depth, and the inset checkerboard grid narrows toward the back edge along with the slab. The slab sits on a flared square pedestal, which stands on a two-step square plinth on the grass. The pedestal's front face is drawn almost flat to the viewer, with a slight right side face showing. Each stool is a round drum seat on a waisted column with a ringed round foot. The left stool is in the foreground and the right one sits farther back, beside the table. The seat tops are moderately open ellipses (height about 0.3 of width). All three pieces stand on flat ground, and their shadows fall to the right.",
+ "errors": [
+  {
+   "where": "Table pedestal base (two-step plinth) compared with the tabletop",
+   "what": "The tabletop is seen from well above, with a deep top face, yet the plinth steps at grass level show only thin slivers of top face, as if seen almost level. With a raised camera, surfaces lower down should show at least as much top face as the tabletop, not less. So the bottom of the table looks like it was drawn from a lower viewpoint than the top.",
+   "severity": "minor"
+  },
+  {
+   "where": "Both stools: seat-top ellipses compared with the foot rings at the bottom",
+   "what": "The ellipses at the foot of each stool are as flat as the seat tops, or flatter. They sit farther below eye level, so they should be slightly rounder. This makes the stool bases look seen from eye level while the seats are seen from above, and the feet look a little less firmly planted on the ground plane.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Use one consistent raised three-quarter camera for the whole set. Show the pedestal's two-step plinth with clearly visible top faces, at least as deep as the tabletop's foreshortening suggests. Draw the round foot rings at the bottom of each stool as slightly rounder ellipses than the seat tops, so every piece rests flat on the same ground plane seen from above."
+}

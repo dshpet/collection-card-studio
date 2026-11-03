@@ -1,0 +1,11 @@
+{
+ "survey": "A short wooden pier on the beach. The camera is a little above the deck, and the horizon sits high near the top of the card. The plank deck runs back and to the right into the water. Its planks lie across the pier and get narrower toward the far end, as they should. The deck rests on four round posts: front-left on the sand with a rope coiled around it, front-right in the shallows with a life ring hanging from a peg, and two far posts at the back corners. A shorter post stands under the middle of the front edge, and two diagonal braces run from the deck to the front posts. Every post top is an open ellipse seen from above, and the rope coils curve the same way, so they match the deck view. The life ring hangs against the front of its post and is seen nearly face-on, which fits a post facing the viewer. Each post stands upright and goes straight into the sand or water.",
+ "errors": [
+  {
+   "where": "Front edge of the deck, where the board with two bolts meets the end block on the right, just left of the life-ring post",
+   "what": "The front edge is not one straight line. The left part (the board with bolts) sits higher, and the right end block sits lower and further forward. Its top and bottom edges do not continue the board's lines, so the deck's front corner looks broken or offset instead of being one square edge that recedes to the same point as the planks.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the deck's front edge one continuous straight board from the left post to the right corner. Its top and bottom edges should stay parallel to the plank lines and recede toward the same vanishing point, with no step or offset block at the right end."
+}

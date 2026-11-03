@@ -1,0 +1,26 @@
+{
+ "survey": "A wooden pier going out from a sandy shore into the sea, seen from slightly above with the horizon high in the frame. The deck is made of crosswise planks that run from a thick front plank back toward the horizon on the upper right. A cross-beam under the front plank rests on four round posts. The front-left post stands at the waterline with rope coiled around it. The front-right post stands in the water, in front of the deck's right side, with a red-and-white lifebuoy hanging on its front from a peg. Two back posts rise near the horizon at the far corners. All four post tops show as open ellipses, as if seen from above. The pier's two side edges run up and to the right, almost parallel.",
+ "errors": [
+  {
+   "where": "Deck planks, from the front plank back to the far end",
+   "what": "Each plank sits on its own row, shifted right of the one before it, and shows a thick front edge, like the risers of a staircase. The deck reads as stepping up toward the back rather than as one flat surface seen from above. The plank rows do not lie on one plane that follows the pier's side edges.",
+   "severity": "major"
+  },
+  {
+   "where": "Front edge of the deck compared with the two front posts",
+   "what": "The front plank and the beam under it run perfectly level. The bases of the two front posts that hold them are at different heights: the right post meets the water clearly lower and nearer than the left post meets the sand. Either the front edge should slope down to the right to match the diagonal pier, or the posts should stand at the same depth. As drawn, the deck's front and its supports come from different views.",
+   "severity": "minor"
+  },
+  {
+   "where": "Left and right side edges of the deck",
+   "what": "The two long sides of the pier stay almost parallel as they go back, while the planks get shorter and closer together with distance. The side edges should meet toward one vanishing point to match how much the planks foreshorten.",
+   "severity": "minor"
+  },
+  {
+   "where": "Tops of the two back posts near the horizon",
+   "what": "The back posts sit almost at eye level (the horizon), yet their tops are drawn as fairly open ovals, nearly as round as the tops of the front posts that are well below eye level. They should flatten into thin ellipses.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Wooden pier in consistent three-quarter perspective seen from slightly above: the deck is one flat continuous plane of evenly laid planks, with no steps or offsets between planks and only thin gaps between them. The plank rows run perpendicular to the pier's side edges, and both side edges converge toward a single vanishing point on the horizon. The front edge of the deck runs parallel to the line between the bases of the two front posts, and both posts stand on the same ground or water plane at matching depth. The post tops show as ellipses that grow thinner the closer they are to the horizon."
+}

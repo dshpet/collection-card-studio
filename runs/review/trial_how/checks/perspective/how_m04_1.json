@@ -1,0 +1,16 @@
+{
+ "survey": "A stage spotlight hangs from a lighting truss. The truss is two parallel metal tubes joined by a zig-zag web. It runs across the top of the card and rises slightly toward the right, and it is drawn as a flat ladder facing the viewer. A dark clamp block grips both tubes near the centre. Its face is front-on and its edges stay upright. A short vertical stem drops from the clamp to a U-shaped yoke. The yoke's top bar is level, and its arms come down to two pivot knobs on either side of the lamp. The left knob sits just behind the front rim and the right knob sits at mid-body. The lamp is a cylinder seen from slightly below in a three-quarter view. Its lens end turns toward the lower-left, so the top (with three vent slots that follow the curve) and the right side of the body are visible. The front rim is a broad, nearly round ellipse holding three round coloured LEDs (yellow, cyan, red). Their light beams stream out toward the lower-left, the way the lens faces. There is no ground plane, so no contact to check. Overall the view mostly holds together: the vents follow the curved top, the seam ring around the body curves with it, and the beams leave in the direction the lens faces.",
+ "errors": [
+  {
+   "where": "Truss and clamp at the top of the card",
+   "what": "The lamp below is seen from underneath at a three-quarter angle, but the truss is a flat, front-on ladder. None of its underside or depth shows, and the tubes have no foreshortening. The rails slope upward to the right and spread slightly apart there, yet the clamp block that grips them is square to the frame and front-on, so it does not turn with the rails.",
+   "severity": "minor"
+  },
+  {
+   "where": "Front lens face and the three LEDs",
+   "what": "The front rim is drawn almost as a full circle and the three LEDs as perfect front-on circles. At the same time, a long stretch of the cylinder's side and top is visible, which means the body is turned well away from the camera. With that much body showing, the rim ellipse and the LEDs should be noticeably narrower and foreshortened in the same direction.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Show the lighting truss from the same low three-quarter camera as the spotlight: draw it as a 3D box-section truss with its underside visible and its tubes converging slightly as they recede. Turn the clamp block to match the slope of the rails. Draw the spotlight's front rim as a clearly narrower ellipse that matches how far the cylinder is turned, and draw the three LED lenses as matching foreshortened ellipses on that tilted face."
+}

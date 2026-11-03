@@ -1,0 +1,11 @@
+{
+ "survey": "A 3D-rendered wooden pier seen from slightly above and in front, three-quarter view, sticking out from a raised sand bank into flat turquoise water. The deck is made of planks laid across the pier. Each plank shrinks and tilts as the deck goes back toward the sand, and its rows run parallel to the deck's long edges. Round piling posts hold up the deck. Their tops come up through the deck as short cylinders, and each cap is an ellipse that matches the high viewpoint. Their lower ends meet the water at heights that fit their distance from the camera. A red and white life ring stands upright on the front edge of the deck around a post top, mostly facing the camera. That fits the camera angle for a ring standing on its edge. A cream rope coil is wrapped around the front right post. A taller separate post stands behind the far right end of the deck and is attached by a bracket. The verticals stay vertical, and the deck's edges, the sand bank's edges and the plank rows all agree on one vanishing direction. The reflections in the water (the ring and the deck outline) sit about where they should below the objects. At the land end, the deck runs out over the sand bank, and the leftmost support is a short pointed stake that hangs under the deck.",
+ "errors": [
+  {
+   "where": "Left (land) end of the pier, the pointed stake under the deck beside the sand bank",
+   "what": "This support ends in a sharp point hanging in the air at the bank's edge. It does not go down into the sand or the water, so the deck's land end has no clear contact with its ground. It reads as floating over the sloped bank instead of resting on it.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the pier's land end rest on the sand bank: either lay the first deck boards flat on top of the sand, or run the leftmost support post straight down into the sand like the other round pilings, with no hanging pointed stake."
+}

@@ -1,0 +1,16 @@
+{
+ "survey": "Folding camping chair seen at three-quarter view from the front left, standing on a floor. Back: one inverted-U tube makes the top bar and the two back posts. A green fabric panel with a tent-and-campfire logo hangs between the posts, a little below the top bar. Seat: one horizontal front tube carries the front edge of the green seat fabric; the back edge of the fabric meets the back posts. Legs: each side has a crossed pair of tubes joined at a pivot with a grey hub. On the right, the back post carries on below the seat as one straight tube, crosses at the pivot and ends at the front-right foot. The second tube runs from the right end of the front seat tube to the back-right foot. On the left, a tube runs from the left end of the front seat tube through the pivot to the back-left foot. A second tube runs from the pivot to the front-left foot and should carry on up into the left back post. Floor: one bar joins the two front feet and one joins the two back feet, each with grey end caps. All four feet touch the floor and cast shadows. The frame logic is sound and matches real X-fold camp chairs.",
+ "errors": [
+  {
+   "where": "Left side, between the bottom of the left back post (just above the seat's back-left corner) and the left pivot",
+   "what": "The left back post stops at the seat. The tube from the front-left foot stops at the pivot. The piece of tube that should join them below the seat is missing, so the left back post is not tied to the legs, unlike the right side, where the back post runs down through the pivot to the foot. As drawn, the left side of the back has no support below the seat.",
+   "severity": "minor"
+  },
+  {
+   "where": "Back edge of the seat fabric, between the two back posts",
+   "what": "The front of the seat hangs from a tube, but no matching tube or bar runs across the back. The back edge of the seat fabric is stretched between the posts with nothing holding it, so it could not carry a sitter's weight.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the left back post one straight tube that runs down behind the seat, through the left pivot and on to the front-left foot, matching the right side. Add a metal tube across the back of the seat between the two back posts, with the back edge of the seat fabric wrapped around it."
+}

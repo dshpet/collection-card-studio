@@ -1,0 +1,16 @@
+{
+ "survey": "Image 5 is a folding camp chair with no armrests, seen at three-quarter view from the front left. Parts: a green fabric backrest slung between two grey vertical back posts with dark end caps; a green fabric seat wrapped around tubes at its corners; and grey tube legs crossed in X pairs with round pivot bolts, ending in four dark rubber feet on the floor. The left back post runs down past the seat's rear-left corner and becomes one leg of the left-side X, which pivots at mid-height and ends at the front-centre foot. The other leg of that X rises from the left-rear foot to the seat's front-left corner. The second X is not on the right side, though. One leg runs from the same front-left corner, through a pivot under the front edge of the seat, to the far-right foot. Its partner runs from the front-right seat corner to the right-rear foot. That puts the second X across the front of the chair. The right back post stops at the seat's rear-right edge and no leg continues below it. The fabric itself attaches sensibly: the backrest sleeves go over the posts and the seat wraps the front tubes.",
+ "errors": [
+  {
+   "where": "Leg frame: the left X and the second X under the front of the seat",
+   "what": "The frame does not add up. The left X runs along the side of the chair, but the second X spans the front, from the front-left seat corner to the far-right foot. The front-left corner has two tubes running down to different feet. A real folding chair has two matching side X's linked by cross rails, so this frame could not fold, and its four feet do not form a proper rectangle.",
+   "severity": "major"
+  },
+  {
+   "where": "Right back post at the seat's rear-right corner",
+   "what": "The right back post ends at the seat with no leg or X under it. The left post continues down into a leg, so the two sides do not match, and the rear-right of the seat and backrest has nothing underneath to hold it.",
+   "severity": "major"
+  }
+ ],
+ "fix": "Folding camp chair with a symmetric frame: two identical X-shaped leg pairs, one on the left side and one on the right side, each crossing at a pivot bolt at mid-height. On each side the rear leg continues straight up into a backrest post. Each X's upper ends meet the front and rear corners of the seat on that side. Straight cross tubes join the left and right frames under the front and back edges of the seat. Four feet sit on the floor at the corners of a rectangle."
+}

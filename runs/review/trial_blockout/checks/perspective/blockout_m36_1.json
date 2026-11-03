@@ -1,0 +1,16 @@
+{
+ "survey": "A small wooden pier on a beach, seen from a moderately high three-quarter camera looking down at about 30–40°. The horizon sits high in the frame, which fits that height. The plank deck is a long rectangle. Its left end rests over the sand and its right end reaches out over shallow water. The planks run across the deck, and their seams lean consistently with the deck's turn, with no front-on grid problem. Short cylindrical bollards stand along the back edge, and their tops are ellipses that agree with the downward view. Round piles hold the deck up from beneath, along the front and back edges. Three front piles go into the water with ripple rings at their bases, and the front-left pile stands on the sand. At the front-right corner, a pile with a coil of rope rises above the deck. A tall post stands at the back-right corner. A red-and-white lifebuoy hangs on a peg on the middle front pile, facing the viewer, and its reflection shows in the water below. Overall the view is consistent. Two things disagree slightly with the one camera: the pile lengths and the lifebuoy's shape.",
+ "errors": [
+  {
+   "where": "Front row of piles under the deck's front edge (left sand pile → middle buoy pile → right rope pile)",
+   "what": "These piles all hang from the same straight front edge, so they should look about the same length and their bases should sit on one water line. Instead they get steadily longer from left to right, by roughly 75 → 110 → 135 → 155 px in the enlarged view. Their bases also drop toward the viewer about twice as fast as the deck edge above them. The water surface and the deck therefore don't agree on one ground plane, and the right end of the pier seems raised higher above the water than the left.",
+   "severity": "minor"
+  },
+  {
+   "where": "Lifebuoy on the middle front pile",
+   "what": "The ring is drawn as a full, slightly tall circle facing the camera straight on. Hanging upright on the pier's front face and seen from above, it should look a little squashed from top to bottom. It should also turn slightly with the front face, which recedes to the right. As drawn, it looks pasted flat onto the picture rather than lying in the pier's space.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make all the front piles the same visible length, with their bases on one level waterline that runs parallel to the deck's front edge, so the deck sits level at an even height above the water. Draw the lifebuoy as a slightly flattened ellipse lying flat against the pier's front face and turned with it, matching the downward three-quarter view."
+}

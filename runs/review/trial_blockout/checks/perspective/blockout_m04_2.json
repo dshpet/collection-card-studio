@@ -1,0 +1,16 @@
+{
+ "survey": "Stage spotlight card. A metal box truss runs across the top: two front tubes, top and bottom, joined by zigzag diagonals, with a second pair of tubes behind them that shows only at the right end. A square clamp sits on the bottom front tube, and a short stem drops from it to a rectangular U-yoke. The yoke is drawn flat and square to the camera. Its arms are meant to hold the spotlight's sides at pivot points, but only the right pivot knob is drawn. The spotlight body is a cylinder pointing down-left and toward the viewer. Its front rim is an open ellipse that fits that angle, and it holds yellow, cyan and red lenses. A coloured beam spreads from the lenses toward the lower left, roughly along the cylinder's axis.",
+ "errors": [
+  {
+   "where": "U-yoke and spotlight body",
+   "what": "The yoke faces the camera straight on, so the axis between its two arms runs flat across the picture. A lamp turning on that axis can only tilt toward or away from the viewer. This lamp instead swings diagonally toward the lower left. The two arms also end at different heights: the left arm stops on top of the can with no pivot, and the right arm drops to a knob at mid-body. The holder and the lamp are seen from two different angles, and the lamp is not mounted on the axis the yoke shows.",
+   "severity": "major"
+  },
+  {
+   "where": "Truss, right end",
+   "what": "The back tubes stick out past the front tubes at the right end, offset sideways only. No diagonals or cross-ties are shown in the back or side faces. So the truss reads as a flat front ladder with longer tubes behind it, not one solid box seen from a single viewpoint.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Rotate the U-shaped yoke so it turns with the spotlight. Both yoke arms end at matching pivot knobs on opposite sides of the can, and the pivot axis runs straight across the lamp body. Draw the truss as a solid box seen from the same three-quarter view: the back tubes recede to the same vanishing point as the front ones, and diagonal braces are visible on the top and side faces."
+}

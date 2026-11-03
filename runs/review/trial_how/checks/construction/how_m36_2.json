@@ -1,0 +1,11 @@
+{
+ "survey": "A short wooden pier runs out to sea from a sandy beach, seen from the shore end at a three-quarter angle. Main parts: (1) Two thick round front posts stand in the shallow surf at the waterline, and both reach down into the water and sand. (2) A front cross-beam is bolted across the faces of both front posts, with two visible bolts. Its left end sticks out slightly past the left post, which is a normal detail. (3) The plank deck rests on that beam. Planks run across the pier and butt against the posts. Wooden knee braces under the deck and a middle post standing in the water under the left side give extra support. (4) Four posts at the far end flank the deck in pairs on the left and right sides. The visible ones go down into the water. The deck ends among them, as a pier end should. (5) A rope is coiled twice around the top of the front-left post. (6) A red-and-white life ring hangs from an eye bolt in the front-right post, on a rope looped through the bolt that splits into two strands around the ring. The deck starts at the waterline where the front posts stand, so the pier does connect to the shore. Every load path goes from plank to beam to post to the ground.",
+ "errors": [
+  {
+   "where": "Rope coiled around the top of the front-left post",
+   "what": "The rope has no ends. It forms two closed rings that merge into each other around the post, with no tail and no knot. A real wrapped rope has to start and finish somewhere, for example a tail hanging down or tied off, or a knot. This is a smaller version of the rope fault in the reference pier.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Show the rope on the front-left post as a real mooring line: wrap it twice around the post and finish it with a visible tied knot, plus a short tail end that hangs down the side of the post and ends in a frayed or whipped tip. Do not draw the rope as closed seamless rings."
+}

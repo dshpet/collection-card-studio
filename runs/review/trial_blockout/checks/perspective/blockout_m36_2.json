@@ -1,0 +1,16 @@
+{
+ "survey": "A small wooden pier seen from a raised three-quarter view, about 30° above. The plank deck is a long rectangle running from the beach on the left out over the water on the right. Its top is seen from above, and its front beam faces the camera. The planks run across the deck, and their seams lean progressively as they recede, which reads as one perspective. The deck rests on round vertical posts. The front-left posts stand on sand and the rest stand in flat, shallow water. Each post top is an open ellipse that matches the downward view, and each post meets the water with a foam ring. A tall mooring post stands at the back-right corner. A coil of rope wraps the front-right post, and its coils are drawn as ellipses that agree with the post tops. A red-and-white lifebuoy hangs by a rope from a front post, facing the camera, and its reflection sits straight below it in the water. Verticals stay vertical throughout, and the beach, water and deck share one horizon and one camera height.",
+ "errors": [
+  {
+   "where": "Front row of posts, from the post at the sand's edge to the front-right post with the rope coil",
+   "what": "The waterlines of the front posts drop much faster to the right than the deck's front beam does. In the enlarged view, the deck edge falls only about 50 px from the second front post to the right corner, but the post bottoms fall about 80 px. The posts therefore get visibly longer below the deck toward the right, as if the flat water tilted or the right corner stood closer to the camera than the deck edge shows. The bases should sit on a line parallel to the deck edge.",
+   "severity": "minor"
+  },
+  {
+   "where": "Lifebuoy on the front post",
+   "what": "The ring hangs on a vertical face but is drawn as a full circle, even slightly taller than wide. The camera looks down about 30°, as the post-top ellipses and the deck show, so a ring hanging upright should look slightly squashed top-to-bottom (a wide ellipse).",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Keep the same raised three-quarter camera. Put the bases of the front posts where they meet the water on one straight line parallel to the deck's front beam, so every post shows the same length between the deck and the flat water surface. Draw the lifebuoy hanging upright on the post as a slightly flattened ellipse, a bit wider than tall, to match the downward view seen on the post tops."
+}

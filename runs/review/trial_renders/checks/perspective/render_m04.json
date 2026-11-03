@@ -1,0 +1,11 @@
+{
+ "survey": "Image 4 is a stage spotlight hanging from a truss. At the top is a horizontal grey lattice truss: two long chords joined by diagonal braces, seen from slightly below and almost side-on. A short dark post drops from the middle of the truss to a rectangular yoke shaped like an upside-down U. The cylindrical lamp housing sits inside the yoke on a side pivot knob, visible on the right arm. The housing is tilted so its back end points up and to the right and its front rim faces down, to the left and partly toward the viewer. Its front rim is a nearly round ellipse. Three coloured lenses (yellow, white, red) sit inside the rim, and from them three overlapping see-through light cones spread down and to the left along the housing's axis. The camera is a little below and in front of the lamp. The truss, yoke and housing all agree with that view: the yoke arms stay vertical, the truss chords stay parallel, and the beam direction matches the housing's axis. There is no ground plane.",
+ "errors": [
+  {
+   "where": "The three coloured lenses inside the front rim of the lamp housing",
+   "what": "The yellow, white and red lenses are drawn as flat, wide ellipses tilted their own way, while the rim around them is an almost round ellipse. Lenses that sit flush in that face should be ellipses with the rim's narrowness and tilt, so they look flatter and turned differently from the face they are set in.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the coloured lenses as ellipses with the same proportions and tilt as the round front rim of the spotlight, so they sit flush in the lamp's front face. Keep the light cones coming straight out along the housing's axis."
+}

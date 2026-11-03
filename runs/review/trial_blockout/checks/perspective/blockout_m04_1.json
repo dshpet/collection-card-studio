@@ -1,0 +1,21 @@
+{
+ "survey": "The object is a stage spotlight hanging from a truss. The truss is a box truss with two rails on top and two on the bottom, joined by X-bracing. Its front face is seen almost straight on and rises slightly to the right. At the right end, the back rails stick out up and to the right, so the truss's depth runs toward the upper right. A small square clamp sits on the front bottom rail, and a short stem drops from it to a U-shaped yoke. The yoke is drawn flat and square to the viewer: one horizontal bar and two vertical arms, with no depth or thickness turning away. A pivot knob on the right arm points to the right, so the tilt axis runs left to right across the picture. The spotlight body is a dark blue cylinder held between the arms. It is angled so the lens end faces the viewer and points down and to the left, and the rounded back end goes up and to the right. The front rim is a tilted, fairly open ellipse. Inside it are three round lenses (yellow, cyan and red), and coloured beams shine out to the lower left.",
+ "errors": [
+  {
+   "where": "Yoke and spotlight body",
+   "what": "The yoke lies flat in the picture plane, and its pivot knob shows the tilt axis runs straight left to right. A lamp held that way can only tilt up and down, so the body's axis should look vertical on screen, pointing straight down or toward the viewer. Instead the body swings strongly to the lower left, which needs the yoke to be turned too. The yoke and the body are drawn from two different viewpoints.",
+   "severity": "major"
+  },
+  {
+   "where": "Yoke width compared with the body",
+   "what": "The yoke has no depth, yet the body fills it edge to edge and its back end bulges past the right arm. The body looks pasted over the bracket rather than held between two arms that sit on either side of it in depth.",
+   "severity": "minor"
+  },
+  {
+   "where": "The three lenses inside the front rim",
+   "what": "The lenses are drawn as roughly level, near-circular ovals. They do not follow the tilt and squash of the rim ellipse around them, so they face the camera more directly than the face they sit on.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Show the U-shaped yoke in three-quarter view, turned the same way as the spotlight. Give it visible depth, and put its arms on the left and right sides of the cylinder, with the pivot knobs on the cylinder's tilt axis, so the lamp body pointing down and to the left follows from how the yoke is turned. Draw the lenses inside the front rim as ellipses with the same tilt and squash as the rim, so they lie flat on the lamp's face. Keep the truss, yoke and lamp in one consistent three-quarter view from slightly below and to the left."
+}

@@ -1,0 +1,11 @@
+{
+ "survey": "One object: a navy handheld calculator floating on a yellow π-pattern background. It is rotated about 20° clockwise in the picture plane and turned slightly so its right side is farther away. The left side wall and lower-left rim show thickness, and the top and bottom edges of the front face get a little closer together toward the right, so the camera sits slightly to the left of the face and the face recedes toward the right. The red solar strip and the grey display window sit flush in the upper part of the face, with their edges roughly parallel to the face's top edge. Below them is a 4×4 grid of raised square keys: three navy columns and one cyan column on the right. Each key shows a little extruded thickness on its lower-left, which matches the body's view. The key rows tilt with the face, getting slightly steeper toward the bottom, which follows the face's converging top and bottom edges. There is no ground plane, so contact does not apply.",
+ "errors": [
+  {
+   "where": "Key grid, especially the right-hand cyan column against the left navy column",
+   "what": "The face's top and bottom edges get closer together toward the right, and the right edge is shorter than the left, so the right side recedes. The keys ignore this. The cyan keys on the far right are as wide and tall as the near-left navy keys, or slightly bigger, and the gaps between keys do not tighten toward the right. Size foreshortening across the face is missing, although the rows do roughly follow the face's tilt.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Calculator face turned slightly away to the right: keys get gradually smaller and narrower from the left column to the right column, the cyan operator keys on the far right are the smallest and most compressed, and the gaps between keys tighten toward the right edge. Keep each key row parallel to the calculator's top and bottom edges."
+}

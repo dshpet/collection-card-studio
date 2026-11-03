@@ -1,0 +1,16 @@
+{
+ "survey": "One object, a chunky blue handheld calculator floating on a yellow pi-pattern background with no ground plane. The parts: (1) the rounded rectangular body, tilted so that its face leans back toward the upper left, with a thick side wall showing along the bottom and right edges, so the lower-right corner is nearest the viewer; (2) a red solar strip and a grey display window set into the top of the face; (3) a 4×5 keypad of cream number keys with cyan operator keys (÷ × − = +) on the right column and the bottom row, sitting on the face. The rows of keys slope down to the right roughly as the body's top edge does, and the columns lean with the left edge. But every key keeps the same frontal, nearly square, rounded shape and almost the same size. There is no foreshortening from the near corner (+) to the far corner (7), and no key shows a side wall on the same sides where the body shows its thickness. The display and solar strip are close enough to the face's slope. The object floats, so there is no ground contact to check. This is the same case as example image 1.",
+ "errors": [
+  {
+   "where": "Keypad (all 20 keys) against the tilted calculator face",
+   "what": "The body is clearly turned away from the viewer, with thick side walls showing at the bottom and right and the face leaning back toward the upper left. Yet the keys are drawn front-on as equal, nearly square caps. The far keys (7, 8, 9, ÷) are hardly smaller or flatter than the near ones (0, ., =, +). No key shows its bottom or right side wall the way the body does. The keypad reads as a flat front-view sticker pasted onto a tilted object.",
+   "severity": "major"
+  },
+  {
+   "where": "Key grid spacing and rows",
+   "what": "The rows slope with the body's top edge, but the gaps and key widths stay even across the whole face instead of tightening toward the far upper-left corner. The bottom row also tilts a little more steeply than the top row, so the rows do not converge in a steady way toward one vanishing point.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Keep the calculator body at the same three-quarter tilt, with its face leaning back toward the upper left and the thick edges showing at the bottom and right. Redraw the keypad in the same perspective as the face. Keys near the lower-right corner (+, =) should be largest. Keys should get steadily smaller, more squashed and more tightly spaced toward the far upper-left corner (7, 8, 9). Each key should show a thin side wall on its bottom and right edges, matching the body's visible sides. Rows and columns of keys should run parallel to the face's edges and converge toward the same vanishing points as the body. The display and solar panel should be foreshortened the same way."
+}

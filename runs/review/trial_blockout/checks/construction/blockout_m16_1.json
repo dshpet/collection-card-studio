@@ -1,0 +1,21 @@
+{
+ "survey": "A folding camp chair at three-quarter view, facing front-left. Back: a rectangular metal tube frame with a green canvas panel stretched between its two uprights. Seat: a green canvas sheet with one metal tube along its front edge. That tube sticks out past the left side of the seat. No tube shows along the back edge of the seat. Legs: an X of crossed tubes on each side, joined by a pivot hub halfway down. Floor: two tubes run left to right on the ground, one joining the front feet and one joining the back feet, with dark end caps at the feet. The right back upright runs straight down past the seat and becomes the right rear leg. The left back upright stops at seat height behind the canvas and does not carry on into any leg. The tops of the rear X legs meet the back of the seat, but there is no tube there for them or the canvas to fix to.",
+ "errors": [
+  {
+   "where": "Back frame where it meets the legs, left side against right side",
+   "what": "The two sides are built differently. The right back upright carries straight down to the back-right foot as one leg, but the left upright ends at the seat. The back frame is attached to the base on one side only, so the chair could neither hold together nor fold the same way on both sides.",
+   "severity": "major"
+  },
+  {
+   "where": "Back edge of the seat, where the rear X legs end",
+   "what": "There is no rear seat tube. The back edge of the canvas and the tops of the rear X legs have nothing to fix to. The seat hangs from the front tube alone and could not hold a sitter's weight.",
+   "severity": "major"
+  },
+  {
+   "where": "Front seat tube, left end",
+   "what": "The front tube runs past the leg joint on the left side and ends in mid-air, with no leg or joint holding that end.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Folding camp chair with a symmetric, working frame: both back uprights carry straight down into matching rear legs on the left and right. Add a metal tube along both the front and back edges of the seat. Fix the canvas to both tubes and set the top of each X leg into a joint on a seat tube, with no tube ends sticking out. Each side has an X of legs crossing at a visible pivot bolt, with floor tubes joining the front feet and the back feet."
+}

@@ -1,0 +1,11 @@
+{
+ "survey": "A handheld calculator, tilted toward the camera and floating in front of a yellow pi-pattern background (a normal icon pose, not a support fault). A rounded navy body holds everything. A red four-cell solar strip is set into the top edge. Below it, a grey LCD sits in a recessed bezel. The keypad is a 4×4 grid set into the body face: three rows of grey digit keys (7-8-9, 4-5-6, 1-2-3), then a bottom row with a double-width 0 and a decimal point. A right-hand column of cyan operator keys holds ÷, ×, − and an enlarged +. Every key sits flush in the face with clear gaps between keys, and nothing overlaps, melts together or passes through anything. The body outline is symmetrical and evenly rounded. There are no loose parts and no invented parts.",
+ "errors": [
+  {
+   "where": "keypad, bottom-right corner (operator column)",
+   "what": "There is no equals (=) key. The four operator keys are there, but no key can finish a calculation and show the result, so the calculator cannot fully do its job. The bottom-right spot, where = usually sits, is taken by an oversized + key. Leaving out minor keys (C, %, memory) would be a fair simplification, but = is the one key a basic calculator cannot work without.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Add an equals (=) key to the calculator keypad: make the bottom-right key a cyan '=' key, and move '+' to a normal-size key in the operator column (for example, put a fifth operator key above it or shrink '+' to one row), so the keypad has ÷, ×, −, + and =."
+}

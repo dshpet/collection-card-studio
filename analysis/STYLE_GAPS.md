@@ -11,6 +11,23 @@ What the user named:
 
 None of the nine style specialists judged construction or perspective, so two checkers were added. Taught with the user's marked cards and shown a full-size crop, they catch 11 of 16 held-out construction errors and 6 of 6 perspective errors the user flagged. They also flag 3 and 5 of 20 real cards. That counts any error. Major errors alone catch 5 of 16 and 4 of 6, with 2 false alarms each. Together, the two checkers flag 18 of the 21 cards the user marked when any error counts, against 10 on major errors only, with 7 false alarms on 20 real cards instead of 4. So any error now passes a candidate over, while edit notes still come only from major errors, since edits are obeyed strongly. Without the full-size crop they caught 5 of 16, and GPT-6.1 caught 1 of 16, so it is not used.
 
+## Closest style, 2026-11-03
+
+For 36 of the forty twins, the user picked the redraw closest to the real card among old, final, r3 and r9. One draw per style, so draw luck is part of every pick. The test forced one choice, though the user found several close to a tie, and the real cards themselves vary in style. So final, r3 and r9 count as one band, and style rounds stop here.
+
+| Style | Picked | Matched classifier AUC, whole / subject / background |
+|---|---:|---|
+| r3 | 15 | 0.89 / 0.83 / 0.79 |
+| final | 10 | 0.84 / 0.80 / 0.76 |
+| r9 | 10 | 0.82 / 0.82 / 0.70 |
+| old | 1 | 0.86 / 0.82 / 0.83 |
+
+- **Old is out.** r3 is the only style picked above chance (p 0.02), but its lead over final and r9 is weak: odds 1.5 and 1.2 to 1 after screen position, and r3 beats final in 79% of bootstrap resamples.
+- **Position bias.** Redraw 4 sat alone on a second row and was picked 17 times where 9 were expected. It was spread across styles, so the order holds. A repeat should fit one row.
+- **Reviewers had the direction wrong.** They said r3 went past the target into realism. The user prefers it, so the target is at r3 or beyond, not between r2 and r3.
+- **No measure follows the user.** The classifier ranks r3 farthest, and its subject scores are flat, so it reacts to backgrounds and framing. Silhouette area and fill pick the user's choice 10 of 36 times, about chance.
+- **Construction is not a style problem.** Seven of ten comments name objects that could not work or sit wrong, in every style: the duck ride's handle and seat, the waterslide, the phone in the booth, the earbud cable, the map folds, spotlights hanging in space, the topiary on the path. r9's "every cable, rope, leg and hinge attaches where it should" did not prevent them. Several come from briefs that name parts but not how they connect: "a red saddle seat and red handle" became a bag handle on the saddle three times, and a setting with "a curving paved path" put the planter on the path three times.
+
 The first run looked off to a human, yet every automatic check passed it. This file records what was wrong, why the checks missed it, and what fixed it.
 
 ## How the gap was measured
@@ -74,4 +91,4 @@ Below 50% means reviewers mistook the real card for the fake: r3 went past the t
 
 ## Limits
 
-Eight blind pairs per role is a small sample, and rounds are noisy. Reviewers are models, and on pairs of different objects they also raise false alarms on hidden real controls, so they guide edits and are not a gate. No human has rated these cards yet.
+Eight blind pairs per role is a small sample, and rounds are noisy. Reviewers are models, and on pairs of different objects they also raise false alarms on hidden real controls, so they guide edits and are not a gate. The human ratings come from one rater.

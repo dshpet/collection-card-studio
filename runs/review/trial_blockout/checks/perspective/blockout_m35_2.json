@@ -1,0 +1,21 @@
+{
+ "survey": "A park scene seen from a raised, front-on camera looking down at the grass, with the path curving away behind. In the centre is a stone chess table: a square slab top with an inset checkerboard, standing on a square pillar, which rests on a wider square plinth on the grass. The table is set square to the camera: the front edges of the slab and plinth are horizontal, the side edges lean in slightly toward a central vanishing point, and only the front face of the pillar shows. Two round stone stools stand on either side, one back-left and one front-right. Each is a cylinder with a wider disc seat, and both seat tops are seen clearly from above as fairly open ellipses, about half as deep as they are wide. Every piece rests on the grass with a shadow cast to the right.",
+ "errors": [
+  {
+   "where": "Table top slab and its checkerboard, compared with the stool seats",
+   "what": "The table top is squashed far more than the stools. The square slab's top face is only about 15–18% as deep as it is wide, as if seen from almost eye level, but the stool seats beside it are about 45% as deep as they are wide, seen clearly from above. The table is a little higher, which allows a slightly flatter view, but not a difference this big. The table top looks tipped up toward the viewer and doesn't share one camera with the stools and the ground.",
+   "severity": "major"
+  },
+  {
+   "where": "Checkerboard squares on the table top",
+   "what": "The board squares are drawn as wide, flat bars in uneven rows. The board shows clearly more columns than rows (it looks like about 10 across and 6 deep) instead of an 8×8 grid foreshortened evenly toward the back edge, so the grid doesn't follow a square surface.",
+   "severity": "minor"
+  },
+  {
+   "where": "Top face of the plinth under the pillar",
+   "what": "The plinth's top face is also very thin (about 30 px deep for 240 px wide) for something so close to the ground, where the high camera should show it fairly open, like the stool seats. It has the same too-low view as the table top.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Show the whole scene from one raised three-quarter-overhead camera. Draw the square stone table top seen clearly from above, so its top face looks as open as the round stool seats (about half as deep as it is wide). Put a regular 8×8 checkerboard on it, with rows that shrink evenly toward the back edge and columns that converge with the table's side edges. Make the plinth's top face just as open, matching the stools and the grass."
+}

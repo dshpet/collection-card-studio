@@ -1,0 +1,11 @@
+{
+ "survey": "A stone park chess table and two round stools on grass. The camera is slightly above and turned about three-quarters to the set. The square tabletop sits on a square pillar. The pillar stands on a square base slab lying flat on the grass. The tabletop, pillar and base are all turned to the same angle: we see a long left-front face, a nearest corner at the lower right, and a short right face going back. The checkerboard is set into the tabletop. Its rows run parallel to the top's edges, and the squares shrink and bunch up toward the back, so the board follows its surface. Each stool is a cylinder with a wider round seat cap. The left stool stands beside the table at about the same depth; the right stool is nearer the viewer. Both seat tops are ellipses, both stools stand upright on the grass, and their shadows fall to the back-left like the table's. The verticals of the pillar and stools stay vertical, and the path and background recede in a way that fits the same raised view.",
+ "errors": [
+  {
+   "where": "Both stool seat tops compared with the tabletop and the base slab",
+   "what": "The stool seats are drawn as fairly round ellipses, about 0.4 as tall as they are wide, as if seen from well above. The table's top surface and its base slab are much flatter, about 0.2–0.25, as if seen from closer to level. The base slab lies on the ground, below the seats, so with one camera its top should look at least as open as the seats, not flatter. As drawn, the stool tops look tipped toward the viewer compared with the table.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the whole set from one slightly raised three-quarter camera. Make the round stool seats flatter ellipses, close to the foreshortening of the square tabletop. Make the top of the table's base slab, which lies on the ground, at least as open as the stool seats."
+}

@@ -1,0 +1,21 @@
+{
+ "survey": "A wooden pier running from a sand bank out over flat water, seen from the front at three-quarter view. The deck is about 14 cross planks on two long side beams. Round piles hold it up: a front row and a back row. The front piles reach down into the water. Several piles stick up through the planks as short stubs, which is normal for a pier. At the shore end, the leftmost front pile hangs off the deck and ends in a sharp point at the bank face. The deck's left end hangs over the top of the sand bank. A red-and-white lifebuoy hangs on a hook on a pile stub near the middle of the front edge. Its lower half overlaps the front edge of the deck. The front-right corner pile has a stack of pale rope rings around it above the deck. A taller separate pile stands behind the far-right end, joined to the deck by a short crossbeam. The far end of the pier stops over open water, which is normal.",
+ "errors": [
+  {
+   "where": "Shore end, leftmost front pile under the deck's left corner",
+   "what": "The pile hangs from the deck and ends in a sharp point in mid-air in front of the sand bank. It does not reach the sand or the water, so it supports nothing. The deck's shore end just hangs over the bank with no footing or ramp onto the sand, so the pier is not properly tied to the shore.",
+   "severity": "major"
+  },
+  {
+   "where": "Lifebuoy at the middle of the front edge",
+   "what": "The ring hangs from a pile stub that rises out of the walkway, and its lower half passes into the front edge of the deck instead of hanging clear of it. A real lifebuoy hangs on the outside face of a post or railing, clear of the planks.",
+   "severity": "minor"
+  },
+  {
+   "where": "Rope around the front-right corner pile",
+   "what": "The 'rope' is three closed, separate rings stacked on the pile, with no running end and no tie-off. A rope wrapped around a post is one continuous strand with at least one end hanging or knotted.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Rest the pier's shore end on the sand bank, either on a wooden sill or on piles driven into the sand. Every pile should go straight down into the sand or the water; none should end in a point in mid-air. Hang the lifebuoy on the outer face of a front pile below deck level, clear of the planks. Wrap the front-right pile with one continuous rope coil and leave a short tail hanging down or knotted."
+}
