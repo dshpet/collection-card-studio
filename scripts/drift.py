@@ -4,6 +4,7 @@ Field drift: each generated card's percentile among real cards of its category. 
 Classifier: can DINOv3 tell the batch from real cards, on the whole card, the subject or the background alone?
 Both sides pass through the same preprocessing. "matched" also drops the finest octave, where resampling differs.
 Real-likeness: how real the batch looks to a classifier that learned real cards against the first run.
+Matched classifier: real cards against their own redraws, which holds content equal.
 
     drift.py western sci-fi horror
 """
@@ -21,7 +22,7 @@ import torch
 from PIL import Image
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import roc_auc_score
-from sklearn.model_selection import StratifiedKFold, cross_val_predict
+from sklearn.model_selection import StratifiedGroupKFold, StratifiedKFold, cross_val_predict
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 
@@ -134,11 +135,47 @@ def real_likeness(cards, real):
             "held_out_real": round(float(model.predict_proba(stored["real"][~keep])[:, 1].mean()), 3)}
 
 
+def matched_classifier(name):
+    """Each real card against its own redraw. A pair stays in one fold, so only style is left to learn."""
+    root = ROOT / "runs" / name
+    briefs = load_json(root / "briefs.json")
+    encode = load_hf(MODELS["dinov3"], torch.float32)
+    originals = [{"id": b["real"], "file": f"materials/card_examples/{b['real']}.png"} for b in briefs]
+    groups = np.tile(np.arange(len(briefs)), 2)
+    labels = np.array([1] * len(briefs) + [0] * len(briefs))
+    result = {}
+    for label in sorted(p.name for p in root.iterdir() if p.is_dir()):
+        folder = root / label
+        drawn = [{"id": f"{b['id']}_1", "file": str((folder / "tries" / f"{b['id']}_1.png").relative_to(ROOT))} for b in briefs]
+        write_masks(drawn, "cuda", folder / "derived" / "masks")
+        scores = {}
+        for view in ("whole", "subject", "background"):
+            images = [dict(views(r, DERIVED))[view] for r in originals]
+            images += [dict(views(r, folder / "derived"))[view] for r in drawn]
+            with torch.inference_mode():
+                chunks = [encode(images[i:i + 16]).float().cpu().numpy() for i in range(0, len(images), 16)]
+            features = np.concatenate(chunks)
+            aucs = []
+            for seed in range(20):
+                model = make_pipeline(StandardScaler(), LogisticRegression(C=0.01, max_iter=2000))
+                folds = StratifiedGroupKFold(5, shuffle=True, random_state=seed)
+                predicted = cross_val_predict(model, features, labels, groups=groups, cv=folds, method="predict_proba")[:, 1]
+                aucs.append(roc_auc_score(labels, predicted))
+            scores[view] = round(float(np.mean(aucs)), 3)
+        result[label] = scores
+        print(label, scores, flush=True)
+    save_json(ROOT / "runs" / "drift" / f"{name}.json", result)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("runs", nargs="+")
+    parser.add_argument("runs", nargs="*")
     parser.add_argument("--no-classifier", action="store_true")
+    parser.add_argument("--matched", help="a folder of twins drawn in several styles, such as twins40")
     args = parser.parse_args()
+    if args.matched:
+        matched_classifier(args.matched)
+        return
 
     real = real_cards()
     cards, derived = [], {}

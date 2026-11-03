@@ -1,0 +1,117 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the ball's seams are thin and hard, the outer rim fades on the lit top right, and the sand is a fine even texture. B: the seams carry a soft blurred band beside the hard line, especially at the top-right red panel and the lower right. The sand is scattered with hard dot speckles and ring-shaped dune edges. Both hero densities are far below the real range, so this is weak.",
+   "fix": "Draw the seams between panels as one thin clean line with no soft glow beside it. Keep the sand as smooth, fine grain with no scattered dots."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the frame has simple edges, the wall behind is plain, and the bear's fur edge is broken. B: brick courses, a scalloped sign, plank lines and extra props all add closed contours behind the hero, and the target rings and arrow fletching have thick rounded grooves. A separates hero from background more clearly.",
+   "fix": "Remove the brick lines and extra props. Use a plain wall behind the target, and draw the target rings as thin, sharp colour changes rather than raised grooves."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a dark continuous contour runs around the whole unit. The curtain, window, plant, books and sofa are all sharp and compete with it, and background density is 0.073. B: the top-left corner is crisp, the right end softens, and the panel seam is thin. Its wall is very plain at 0.005, which is below the real range, so the call is only tentative.",
+   "fix": "Remove the plant, books and window detail, or blur them softly. Let the unit's outer edge soften on the side away from the light, with no even dark line around it."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the straps, coins, gem facets and lid rim are all hard, thick grooves, the contour around the chest never breaks, and outline_darkness is -0.107, outside the real range. B: the coins are the sharpest area, and the lid's right rim and interior lose their edge. Its bubbles do have dark rings.",
+   "fix": "Keep the sharpest edges on the coins and lock. Let the back of the lid and the outer strap edges soften into the shade, and use thin seams rather than deep grooves on the metal bands."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: wood grain whorls, bolts and plank lines are sharp across the whole background at 0.066, above the real range, and hero density is at the low end. The crown has a hard dark rim all round, and the badge and band are thick and embossed. B: the crown edge is strongest on the shadow side, the cap's right edge softens, and the background recedes at 0.035.",
+   "fix": "Soften the wood grain and remove the swirling knots so the background sits quiet. Let the cap's crown edge fade on the lit side instead of a full dark rim."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a heavy, even contour runs around the roof, base and every window bar, the glazing bars read as thick grooves, and hero density is 0.222, at the top of the real range. B: the left panel's edges fall away softly, the lines are thinner, and the sharpest detail is on the door side, though its suitcase pattern is clearly drawn.",
+   "fix": "Draw the booth's silhouette from colour change alone with no dark line around it, and make the window bars slim. Let the far side panel go softer than the front door."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the gloves have thin, broken contours, crisp cuff edges and plain background lines. B: the gloves dissolve into smooth airbrushed surfaces with almost no inner edges, at 0.037, well below the real range, while the wall stripes and table edge are the darkest, hardest lines. Edge hierarchy is inverted, with the background sharper than the hero.",
+   "fix": "Make the glove cuffs, seams and strap edges the sharpest lines on the card. Turn the wall stripes into soft, low-contrast bands."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: broad soft rims with thin panel lines, and the contour varies in strength. B: hard black lines trace the blade inserts and fin tips, reading like a drawn contour, with a sharp tight rim around the foot pockets. Hero density of 0.155 is at the top of the real range. Both are clean, so the lean is slight.",
+   "fix": "Remove the black line along the fin tips and insert edges. Separate the grey insert from the yellow by colour alone, with a soft rounded rim."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the rope and post are sharpest while water ripples are sparse and faint, so hero edges dominate. B: every caustic cell, foam line, palm frond, cloud, shell and rock is a closed sharp contour at 0.052, double A's background density and above the real range. There is no drop in sharpness from the pier to the horizon.",
+   "fix": "Remove the palm, clouds and shells. Paint the water as smooth colour with a few soft ripples, and keep the sharp edges only on the post, rope and ring."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: leaf edges are slim with varied weight, the frond ribs and notches are precise, and the trunk has fine grain. B: heavy swelling dark contours run around the fronds, trunk segments and ground line, with few internal edges inside the fat shapes. Hero density is 0.097 against 0.146 in A.",
+   "fix": "Thin the edges on the fronds and drop the dark line along the top of each leaf. Add a fine central rib and grain on the trunk, and let the far fronds soften."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: an even dark line wraps the whole locker, door and roof, and the vents and hinges are thick grooves with shoes equally sharp. B: the outer left side of the locker softens into the wall, and the sharpest detail gathers on the door interior, although the vents are still grooved.",
+   "fix": "Let the locker's outer side soften towards the wall, and keep the sharpest lines on the shoes and shelf. Make the vents thin slots, not raised rings."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: tile lines are thin and even, the slide's rim is clear, and the strongest lines sit on the hero. B: dense pool-edge tile grids, wavy backdrop lines and water rings give 0.065 background density, above the real range. The slide surface has smeared streaky edges rather than clean form lines.",
+   "fix": "Reduce the tiles to a few thin soft lines at the pool edge and make the backdrop waves faint. Keep the slide's tube smooth with one clean rim line."
+  },
+  {
+   "pair": "p13",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a thin precise inset seam runs around the player face, with crisp small buttons and slim earbud details. B: the player body has only a few wide soft rims, the edge along the tilted case is lost, and thick dark contours hug the cable and bulbous earbuds. Hero density is 0.053 against 0.098 and 0.152 in A, below most of the real range.",
+   "fix": "Add one thin inset seam around the player's face and small crisp buttons. Slim the cable and earbuds, and remove the dark line along them."
+  },
+  {
+   "pair": "p14",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the envelope has sharp thin flap creases and small crisp houses, with the postmark rings as thin marks. B: the postmark, stamp and envelope edge are thick puffy grooves, the flap fold is a broad soft bevel, and the background is almost edgeless at 0.003, below the real range. A does have a dark rim around its envelope.",
+   "fix": "Draw the postmark and stamp as thin flat printed lines rather than raised tubes. Make the flap folds thin sharp creases."
+  },
+  {
+   "pair": "p15",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the plate rim is thin and the plank lines are simple, with fruit detail in a limited focus. B: dense dark double lines ring the bowl, every berry, strawberry seed and grape has a hard contour, and the stripes and plank lines stay crisp behind. outline_darkness of -0.111 is outside the real range, and focus is spread evenly with no resting edges.",
+   "fix": "Leave the sharpest detail on the watermelon only. Let the berries and grapes at the side soften, and draw the bowl's rim as a single thin highlight."
+  },
+  {
+   "pair": "p16",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: every leaf, flower, brick and pot has a bold closed contour, so background density of 0.162 is far above the real range and the wreath does not stand out. B: subject density of 0.342 is also out of range, with heavy grain and small leaves, but the door panels are thin and clear, though soft ghost bands circle the wreath. Both fail, and A's line-drawn look is the stronger miss.",
+   "fix": "Remove the dark line around each leaf and flower. Soften and thin the vines and paving, and keep the crisp edges only on the wreath and door panels."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away by treating every boundary the same. A strong, even contour runs all the way around the hero instead of fading on the lit side, and seams become thick raised grooves rather than thin lines. Background clutter (water cells, wood grain, tiles, leaves, bricks) is often as sharp as the hero, so there is no edge hierarchy or lost edge. A second failure is the reverse: airbrushed heroes with too few internal edges, sitting against harder background lines."
+}

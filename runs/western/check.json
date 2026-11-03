@@ -281,7 +281,45 @@
      "secondary_objects": "none"
     }
    },
-   "passed": true,
+   "passed": true
+  },
+  {
+   "try_id": "v1_02_10",
+   "brief_id": "v1_02",
+   "card": {
+    "name": "Cowboy Boot",
+    "subject": "A brown leather cowboy boot with a tall shaft, pointed toe, angled heel and a small spur.",
+    "object_class": "clothing",
+    "category": "1",
+    "pattern": "concentric_rings",
+    "hero_colors": "saddle brown, dark brown, small gold spur",
+    "backdrop_colors": "sunny yellow, orange",
+    "surface_or_setting": ""
+   },
+   "style": 0.699,
+   "misses": [
+    "composition_hierarchy.center_x",
+    "color_palette.hue_gap"
+   ],
+   "issues": [
+    "art_category"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Cowboy boot",
+     "object_class": "clothing",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false,
    "chosen": true
   }
  ],
@@ -953,7 +991,44 @@
      "secondary_objects": "none"
     }
    },
-   "passed": true,
+   "passed": true
+  },
+  {
+   "try_id": "v1_06_10",
+   "brief_id": "v1_06",
+   "card": {
+    "name": "Cactus",
+    "subject": "A tall green saguaro cactus with two upturned arms and a small pink flower on top.",
+    "object_class": "plant_nature",
+    "category": "3",
+    "pattern": "diamonds",
+    "hero_colors": "green, light green, small pink flower",
+    "backdrop_colors": "bright orange, peach",
+    "surface_or_setting": "desert sand"
+   },
+   "style": 0.732,
+   "misses": [
+    "color_palette.chroma_background",
+    "value_contrast.lightness_p1",
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Flowering cactus",
+     "object_class": "plant_nature",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false,
    "chosen": true
   }
  ],
@@ -1323,6 +1398,42 @@
    "style": 0.883,
    "misses": [
     "composition_hierarchy.margin_min"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Wooden barrel",
+     "object_class": "container",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  },
+  {
+   "try_id": "v1_08_10",
+   "brief_id": "v1_08",
+   "card": {
+    "name": "Barrel",
+    "subject": "A round wooden barrel with dark metal hoops and a flat lid.",
+    "object_class": "container",
+    "category": "3",
+    "pattern": "repeated_motif",
+    "hero_colors": "wood brown, dark gray hoops, small orange stain",
+    "backdrop_colors": "sunny yellow, light blue",
+    "surface_or_setting": "wooden plank floor"
+   },
+   "style": 0.78,
+   "misses": [
+    "composition_hierarchy.margin_min",
+    "value_contrast.rms_contrast"
    ],
    "issues": [],
    "seen": {
@@ -1765,6 +1876,41 @@
    "seen": {
     "identity": {
      "subject": "Gold sheriff badge",
+     "object_class": "accessory",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  },
+  {
+   "try_id": "v2_01_11",
+   "brief_id": "v2_01",
+   "card": {
+    "name": "Star Badge",
+    "subject": "A gold five-pointed star badge with a small ball on each tip.",
+    "object_class": "accessory",
+    "category": "1",
+    "pattern": "rays",
+    "hero_colors": "gold, yellow, small red gem",
+    "backdrop_colors": "purple, violet",
+    "surface_or_setting": ""
+   },
+   "style": 0.717,
+   "misses": [
+    "color_palette.chroma_background"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Sheriff star badge",
      "object_class": "accessory",
      "real_world_scale": "handheld",
      "subject_count": "one"

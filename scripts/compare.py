@@ -1,9 +1,5 @@
-"""Compare delivered sets with the real character-free sets, on the same definitions.
+"""Compare the final sets in runs/final.json with the real character-free sets, on the same definitions."""
 
-    compare.py western:2 sci-fi:1 horror:1      run:variant, one per delivered set
-"""
-
-import argparse
 import os
 
 os.environ.setdefault("HF_HUB_OFFLINE", "1")
@@ -31,11 +27,12 @@ def real_rows():
     return rows
 
 
-def set_row(run, variant, encode):
+def set_row(run, picks, encode):
     folder = ROOT / "runs" / run
     plan, history = load_json(folder / "plan.json"), load_json(folder / "check.json")
-    cards = plan["variants"][variant - 1]["cards"]
-    tries = [best_try(history[f"v{variant}_{index:02d}"]) for index in range(1, 11)]
+    briefs = {brief["id"]: brief for brief in load_json(folder / "briefs.json")}
+    cards = [briefs[pick]["card"] for pick in picks]
+    tries = [best_try(history[pick]) for pick in picks]
     paths = [folder / "tries" / f"{t['try_id']}.png" for t in tries]
     records = [{"id": t["try_id"], "file": str(path.relative_to(ROOT))} for t, path in zip(tries, paths)]
     measured = [measure_card(record, folder / "derived") for record in records]
@@ -55,12 +52,9 @@ def set_row(run, variant, encode):
 
 
 def main():
-    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("sets", nargs="+")
-    args = parser.parse_args()
     encode = load_csd(MODELS["csd"])
     rows = real_rows()
-    ours = [set_row(*(lambda run, variant: (run, int(variant)))(*item.split(":")), encode) for item in args.sets]
+    ours = [set_row(run, picks, encode) for run, picks in load_json(ROOT / "runs" / "final.json").items()]
     print("| Set | Title words | Name words | Object classes | Scales | Backdrop hues | Categories 1/2/3/4 | Style similarity |")
     print("|---|---:|---:|---:|---:|---:|---|---:|")
     for row in rows + ours:

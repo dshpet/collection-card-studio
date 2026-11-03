@@ -1,6 +1,7 @@
-"""Place a finished variant into the game's collection window. The window is Playrix art, so results stay out of git.
+"""Place a finished set into the game's collection window. The window is Playrix art, so results stay out of git.
 
     screen.py western --variant 1 --color blue
+    screen.py western --cards v1_01 v2_01 ... --color blue      any ten cards of a run
 """
 
 import argparse
@@ -35,20 +36,22 @@ def fitted(text, width, size):
     return ImageFont.truetype(FONT, size)
 
 
-def compose(run, variant, color):
+def compose(run, variant, color, cards=None):
     folder = ROOT / "runs" / run
     plan, history = load_json(folder / "plan.json"), load_json(folder / "check.json")
+    briefs = {brief["id"]: brief for brief in load_json(folder / "briefs.json")}
+    cards = cards or [f"v{variant}_{index:02d}" for index in range(1, 11)]
     window = Image.open(ROOT / f"materials/result_templates/{TEMPLATES[color]}.png").convert("RGBA")
     window = erase(window, TITLE_BOX)
     canvas = Image.new("RGBA", window.size, (0, 0, 0, 0))
     labels = []
-    for index, (card, (x, y)) in enumerate(zip(plan["variants"][variant - 1]["cards"], SLOTS), 1):
-        best = best_try(history[f"v{variant}_{index:02d}"])
+    for card, (x, y) in zip(cards, SLOTS):
+        best = best_try(history[card])
         art = Image.open(folder / "tries" / f"{best['try_id']}.png").convert("RGBA").resize(SLOT, Image.LANCZOS)
         canvas.paste(art, (x, y))
         plate = (x + 24, y + 484, x + SLOT[0] - 24, y + 570)
         window = erase(window, plate)
-        labels.append((card["name"].upper(), plate))
+        labels.append((briefs[card]["card"]["name"].upper(), plate))
     canvas.alpha_composite(window)
     draw = ImageDraw.Draw(canvas)
     font = fitted(plan["title"].upper(), TITLE_BOX[2] - TITLE_BOX[0], 150)
@@ -67,8 +70,9 @@ def main():
     parser.add_argument("run")
     parser.add_argument("--variant", type=int, default=1)
     parser.add_argument("--color", choices=TEMPLATES, default="blue")
+    parser.add_argument("--cards", nargs=10, help="ten card ids instead of a variant")
     args = parser.parse_args()
-    print(compose(args.run, args.variant, args.color))
+    print(compose(args.run, args.variant, args.color, args.cards))
 
 
 if __name__ == "__main__":

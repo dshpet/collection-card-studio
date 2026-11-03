@@ -72,3 +72,5 @@ The first run looked off to a human, while every check passed it. Details are in
 - Blind specialists called the real card fake 12 of 12 times on color and surface. Models expect game art to be glossier than it is, which is also how "chunky, toy-like" got into the style text. Four labelled lessons fixed this.
 - Eight rounds of twins brought reviewers from 89% to chance, and showed where the style overshoots in each direction.
 - Rebuilt the specialists around current tools, with a lens per vector, and replaced correction rounds with candidates, selection and targeted edits.
+- Tested on forty twins no style decision had seen: reviewers went from 71% to 47% against the old style, which is chance. A content-matched DINOv3 classifier moved less, from 0.86 to 0.84, and can still tell.
+- Drew three variants of Western, Sci-Fi and Horror, chose the final sets and placed them in the game window.
