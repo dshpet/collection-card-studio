@@ -1,0 +1,11 @@
+{
+ "survey": "A green hiking backpack stands upright on an orange floor, seen from slightly above and a little to the right. Its front panel faces the camera almost straight on. Two vertical brown straps with silver buckles run down the top flap, and two more run down the lower front pocket. A pocket on the right side panel is visible because the bag is turned slightly, and a smaller pocket sticks out from the left side. A brown shoulder strap curves down behind the bag on the right. A blue sleeping-mat roll lies across the top. Two brown straps hold it on, its axis runs parallel to the front panel, and it sticks out past the bag on the right. Its right end shows rings that fit true ellipses with a shared horizontal short axis, so they agree as one cylinder end (width ratio about 0.5, seen from the right). The top flap and the pocket flaps show a little of their upper surfaces, which matches a camera slightly above. The bag's base rests flat on the floor, and the floor's angle agrees with the view.",
+ "errors": [
+  {
+   "where": "Bedroll and front panel together (top edge of the roll, the bag's top and bottom edges, the roll's right end)",
+   "what": "Mixed view. The roll's right end is drawn wide open (width ratio about 0.5), and the bag's right side panel shows broadly, so the object looks turned toward the right. Yet the front panel and the roll's long edges stay perfectly level and parallel, with no convergence. The straps and buckles on the left and right of the front are also the same width. So the front is drawn flat-on while the side and the roll end are drawn turned. This is a mild oblique cheat and only shows on a close look.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Show the backpack in a consistent three-quarter view from slightly above and to the right. Have the front panel's top and bottom edges and the bedroll's long edges converge gently toward the right. Make the straps and buckles on the right half slightly narrower than those on the left. Keep the bedroll's end circle about as open as the side panel is wide, so the side panel and the bedroll's end show the same amount of turn."
+}

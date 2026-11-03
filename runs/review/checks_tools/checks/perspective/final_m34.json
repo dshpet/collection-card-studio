@@ -1,0 +1,11 @@
+{
+ "survey": "A spiral topiary bush in a round stone planter on a curved paved path, with a lawn and a hedge behind. The planter is a ring of curved stone blocks seen from moderately above. The back rim is thin, the soil inside shows as a flat ellipse, and the front face is a band whose top and bottom edges curve the same way. The block joints are near-vertical and get closer together toward the sides of the ring. The ring sits flat on the paving, and the paving and planter agree on one high-ish view. The bush rises out of the soil as four stacked, shrinking spiral tiers. Its lowest tier overhangs the soil at the front, which reads as correct contact. The lawn horizon and the base of the hedge sit at about the middle of the bush's height, roughly level with the third tier. Every tier, including the top two well above that line, is drawn with its top surface and upward-facing leaves showing. The grooves between the tiers dip toward the viewer, as if each tier were seen from above.",
+ "errors": [
+  {
+   "where": "upper two tiers of the topiary (above the hedge/lawn horizon)",
+   "what": "The horizon places the eye level at about mid-height of the bush, so the tiers above it should show their undersides, with the grooves between tiers curving upward. Instead they are drawn like the planter, seen from above: top surfaces visible and grooves dipping toward the viewer. The upper bush and the ground use two different camera heights.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Keep a single camera height. Either lower the horizon (lawn line and hedge) to near the planter's top so the whole topiary is seen from slightly above, or draw the upper spiral tiers from slightly below, with the grooves between them curving upward and the undersides of the leaves showing."
+}

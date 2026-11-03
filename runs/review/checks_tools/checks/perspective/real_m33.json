@@ -1,0 +1,11 @@
+{
+ "survey": "A stylised fuel pump on a square concrete slab in a desert. The rectangular orange body stands upright on a grey plinth. Its front face is turned almost square to the camera and holds an odometer window and a round gauge. Its right side face turns away to the right and holds the nozzle holster, with the hose looping down beside it. A short neck on top carries a wide box-shaped canopy: a white band with a rounded red top. The camera is a little above the object, so we see the top of the canopy and the slab. The body's verticals are consistently vertical (all near 91°). The plinth's side edges rise toward the right (near 16°), which fits a view from slightly above. The odometer and gauge sit flat on the front face. The gauge is a clean ellipse (ratio 0.82, short axis horizontal), which is plausible for a face turned slightly to the side.",
+ "errors": [
+  {
+   "where": "Canopy (white band and red top) compared with the body and plinth below it",
+   "what": "The canopy's right side face does not follow the body's view. The plinth's receding side edges rise to the right (near 16°), as they should when seen from above. The canopy band's receding top and bottom edges instead fall to the right (near 161°), as if its side were seen from below, yet its red top surface is drawn as seen from above. So the canopy looks twisted against the body and seen by a different camera. Its side edges should rise gently toward the same vanishing point as the plinth.",
+   "severity": "major"
+  }
+ ],
+ "fix": "Fuel pump seen from one viewpoint slightly above. The box-shaped canopy on top is lined up with the pump body, and its right side face recedes in the same direction as the body's right side and base. The canopy's receding top and bottom edges rise gently toward the same vanishing point as the base edges, and its top surface is seen from above."
+}

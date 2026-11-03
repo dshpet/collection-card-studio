@@ -1,4 +1,4 @@
-"""Specialist reviewers and the art director. Roles and rules are in analysis/agents/.
+"""Specialist reviewers and the art director. Roles and rules are in analysis/agents/, what they see in lenses.py.
 
     review.py study                 specialists read real cards and describe the style
     review.py twins r2              blind pairs: a run's twins against the real cards
@@ -14,13 +14,14 @@ from concurrent.futures import ThreadPoolExecutor
 from common import ANALYSIS, DERIVED, ROOT, load_json, save_json
 
 import numpy as np
-from PIL import Image, ImageDraw, ImageFont, ImageOps
+from PIL import Image, ImageDraw, ImageFont
 
+from lenses import (PANELS, SIZE, background_alone, card_image, edge_map, flat_colors, grey_groups, hero_crop, normals,
+                    object_crop, shading, silhouette, thumbnail)
 from make_set import contact_sheet
 from rate import ask_claude, ask_codex
 
 AGENTS = ANALYSIS / "agents"
-SIZE = (430, 480)
 STUDY_CATEGORIES = "1234"
 LESSONS = ("t02", "t04", "t09", "t11")  # one twin per category, shown with its answer
 LESSON_ROUNDS = ("baseline", "r3", "r7")  # too toy, too realistic, closest
@@ -74,59 +75,6 @@ def check_lessons(check):
 
 
 PICK_SCHEMA = strict({"picks": array(strict({"card": text(), "pick": {"type": "integer"}, "why": text()}))})
-
-
-def card_image(card):
-    return Image.open(ROOT / card["file"]).convert("RGB").resize(SIZE, Image.LANCZOS)
-
-
-def mask_of(card):
-    return Image.open(card["derived"] / "masks" / f"{card['id']}.png").convert("L").resize(SIZE)
-
-
-def grey_groups(card):
-    grey = ImageOps.grayscale(card_image(card))
-    return grey.point(lambda v: min(v // 51, 4) * 63).convert("RGB")
-
-
-def flat_colors(card):
-    return card_image(card).quantize(8, method=Image.Quantize.MEDIANCUT, dither=Image.Dither.NONE).convert("RGB")
-
-
-def silhouette(card):
-    return Image.composite(Image.new("RGB", SIZE, "black"), Image.new("RGB", SIZE, "white"), mask_of(card))
-
-
-def normals(card):
-    return Image.open(card["derived"] / "normals" / f"{card['id']}.png").convert("RGB").resize(SIZE)
-
-
-def shading(card):
-    return Image.open(card["derived"] / "shading" / f"{card['id']}.png").convert("RGB").resize(SIZE)
-
-
-def edge_map(card):
-    grey = np.asarray(ImageOps.grayscale(card_image(card)), dtype=float)
-    strength = np.hypot(*np.gradient(grey))
-    return Image.fromarray(255 - np.clip(strength * 6, 0, 255).astype(np.uint8)).convert("RGB")
-
-
-def hero_crop(card):
-    box = mask_of(card).point(lambda v: 255 if v > 127 else 0).getbbox() or (0, 0, *SIZE)
-    x, y = min((box[0] + box[2]) // 2, SIZE[0] - 108), min((box[1] + box[3]) // 2, SIZE[1] - 120)
-    x, y = max(x, 107), max(y, 120)
-    return card_image(card).crop((x - 107, y - 120, x + 108, y + 120)).resize(SIZE, Image.LANCZOS)
-
-
-def thumbnail(card):
-    canvas = Image.new("RGB", SIZE, (128, 128, 128))
-    small = card_image(card).resize((129, 144), Image.LANCZOS)
-    canvas.paste(small, ((SIZE[0] - 129) // 2, (SIZE[1] - 144) // 2))
-    return canvas
-
-
-def background_alone(card):
-    return Image.composite(Image.new("RGB", SIZE, (128, 128, 128)), card_image(card), mask_of(card))
 
 
 ROLES = {
@@ -339,20 +287,14 @@ def score(pairs, reports):
     return rows
 
 
-def check_sheet(card, out):
-    """The card beside its object, cut from the full-size drawing when there is one."""
-    box = mask_of(card).point(lambda v: 255 if v > 127 else 0).getbbox() or (0, 0, *SIZE)
-    source = Image.open(card["full"]).convert("RGB") if card.get("full") else card_image(card)
-    scale = source.width / SIZE[0]
-    pad = 12
-    crop = source.crop(tuple(round(v * scale) for v in (max(box[0] - pad, 0), max(box[1] - pad, 0),
-                                                         min(box[2] + pad, SIZE[0]), min(box[3] + pad, SIZE[1]))))
-    crop.thumbnail((SIZE[0] * 2, SIZE[1] * 2), Image.LANCZOS)
+def check_images(card, check, folder, name):
+    """The card beside its object, cut from the full-size drawing when there is one, then the checker's panel."""
     sheet = Image.new("RGB", (SIZE[0] + 12 + SIZE[0] * 2, SIZE[1] * 2), "white")
     sheet.paste(card_image(card), (0, 0))
-    sheet.paste(crop, (SIZE[0] + 12, 0))
-    sheet.save(out)
-    return out
+    sheet.paste(object_crop(card)[0], (SIZE[0] + 12, 0))
+    sheet.save(folder / f"{name}.png")
+    PANELS[check](card).save(folder / f"{name}_{check}.png")
+    return [folder / f"{name}.png", folder / f"{name}_{check}.png"]
 
 
 def check_cards(name, cards, rater="claude-opus-5-5", checks=CHECKS):
@@ -361,14 +303,14 @@ def check_cards(name, cards, rater="claude-opus-5-5", checks=CHECKS):
     Cards are records with derived maps. An optional "key" names a card when ids repeat across runs.
     """
     folder = ROOT / "runs" / "review" / name / "checks"
-    (folder / "sheets").mkdir(parents=True, exist_ok=True)
+    sheets = folder / "sheets"
+    sheets.mkdir(parents=True, exist_ok=True)
     key = lambda card: card.get("key", card["id"])
-    sheets = {key(card): check_sheet(card, folder / "sheets" / f"{key(card)}.png") for card in cards}
     taught = {}
     for check in checks:
         lessons = check_lessons(check)
-        paths = [check_sheet(card, folder / "sheets" / f"lesson_{check}_{i}.png") for i, (card, _) in enumerate(lessons)]
-        notes = "\n".join(f"Image {i + 1}: {note}" for i, (_, note) in enumerate(lessons))
+        paths = [path for i, (card, _) in enumerate(lessons) for path in check_images(card, check, sheets, f"lesson_{check}_{i}")]
+        notes = "\n".join(f"Images {2 * i + 1} and {2 * i + 2}: {note}" for i, (_, note) in enumerate(lessons))
         taught[check] = (paths, notes)
 
     def one(job):
@@ -378,14 +320,15 @@ def check_cards(name, cards, rater="claude-opus-5-5", checks=CHECKS):
             return check, key(card), load_json(out)
         paths, notes = taught[check]
         prompt = (f"You check mobile-game card art for mistakes.\n\n{(AGENTS / f'{check}.md').read_text('utf-8')}\n"
-                  "Each image shows a card whole on the left and its object enlarged on the right. The first "
-                  f"{len(paths)} images are examples from a human reviewer, with their notes:\n{notes}\n\n"
-                  f"Now check image {len(paths) + 1}. First write a survey: the object's main parts and how each one "
+                  "Each card comes as two images: the card whole on the left with its object enlarged on the right, "
+                  f"then your tools' marks on the enlarged object. The first {len(paths)} images are examples from a "
+                  f"human reviewer, with their notes:\n{notes}\n\nNow check images {len(paths) + 1} and "
+                  f"{len(paths) + 2}. First write a survey: the object's main parts and how each one "
                   "attaches, rests or faces the camera. Then list every error on your topic with where it is, what is "
                   "wrong and its severity: major if a viewer would notice it at once, minor if only on a close look. "
                   "Return no errors if there are none. In fix, give wording an image generator could use to correct "
                   "it, or leave it empty.")
-        result = ask(rater, prompt, [*paths, sheets[key(card)]], check_schema())
+        result = ask(rater, prompt, [*paths, *check_images(card, check, sheets, key(card))], check_schema())
         if result:
             save_json(out, result)
         return check, key(card), result

@@ -1,0 +1,16 @@
+{
+ "survey": "Underwater treasure chest on sand, seen from slightly above and to the right. The box shows its front face almost square to the camera. Its right side face recedes toward the right, and its top opening is seen from above, with a heap of coins and gems inside. The coins in the heap are ellipses of about 0.5 width ratio, which fits that higher camera. The gold corner trims and wooden planks follow the front and side faces, and those edges agree with one view: the front edges run in one direction (red) and the side and top receding edges in another (blue). The barrel lid is open and floats above the back of the box. We see its curved outer planks from the front, its gold latch tab hangs down toward the viewer, its inner underside shows beneath, and its right end cap is a half-disc. In front, one coin leans upright against the chest at a 0.79 ratio, another coin and a shell lie flat on the sand, and the chest's feet sit on the sand at the angle the ground is drawn.",
+ "errors": [
+  {
+   "where": "Open barrel lid (the whole upper part) and where it should join the back of the box",
+   "what": "The lid is drawn as if it were still closed and facing the viewer: its curved outer planks face us and its latch tab hangs down at the front. Yet it is lifted up and tipped back, with its inner underside also showing. A lid that swings open on back hinges would turn its outer planks away and put the latch at its top edge, pointing up. The lid is also not attached to the back rim of the box at any visible hinge, so it reads as hovering, not swung open.",
+   "severity": "major"
+  },
+  {
+   "where": "Right end of the lid compared with the box's back-right corner",
+   "what": "The lid's half-disc end cap sticks out to the right past the box's right side and doesn't line up with the back edge it should hinge from. The lid looks wider than the box and shifted sideways, not sitting over the same footprint.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Open treasure chest seen from slightly above and front-right. The barrel lid is attached to the back top edge of the box by visible hinges and swung open backward. Its inner wooden underside faces the viewer, its curved outer planks face away, and the gold latch tab is at the lid's top edge, pointing up. The lid's half-round end caps line up exactly with the left and right sides of the box, at the same width as the box."
+}

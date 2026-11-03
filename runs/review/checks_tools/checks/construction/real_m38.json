@@ -1,0 +1,16 @@
+{
+ "survey": "Coin-operated sightseeing viewer on a rooftop terrace. Main parts: (1) the viewing head, a rounded capsule with two eyepieces on its front face toward the camera and a wider cylinder running back toward the city, with a round pivot cap on its right side; (2) a yoke whose arms come down from the head to the coin box. The right arm hangs from the side pivot cap, bends and hooks into the right side of the box. The left arm comes out from under the head and curves into the left side of the box; (3) the coin box under the head, with a vertical coin slot on its front. The head's underside sits right on top of the box; (4) a collar ring and a round pole that carry the box, rising from the deck in front of a glass railing. The eyepieces are seen at a slight angle (ratios 0.68 to 0.83, all close to true ellipses). Nothing floats, and there are no cables or loose ends; the tools found no thin-part ends.",
+ "errors": [
+  {
+   "where": "Yoke arms on the left and right sides of the head",
+   "what": "The two arms that should be mirror images do not match. The right arm hangs from a round pivot cap on the side of the head, but the left arm has no pivot and grows out from under the head. The head also sits directly on top of the coin box, so it could not tilt on the yoke. The look-up/look-down mechanism does not work as drawn, though it still reads as a viewer.",
+   "severity": "minor"
+  },
+  {
+   "where": "The two eyepieces on the front face",
+   "what": "The eyepieces are on the same flat face but are drawn differently. The left one is squashed more (ratio 0.68 against 0.79 for the right one), and its lens hole sits off-centre in its rim, while the right one is centred.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the yoke symmetric: each arm rises from the coin box and joins a matching round pivot cap on each side of the viewing head. Leave a clear gap between the head and the top of the coin box so the head can tilt. Draw both eyepieces as identical round rings with the lens centred in each, foreshortened the same way."
+}

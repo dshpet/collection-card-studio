@@ -1,0 +1,16 @@
+{
+ "survey": "A stage light (par-can type) hangs under a grey lattice truss. A round clamp grips the truss bar. Below it, a short elbow pipe drops and bends to the right, where it joins the top of an upside-down U bracket. The bracket's left leg comes down onto the top of the light's body. Its right leg runs down the side of the body and ends at a round pivot knob. The body is a dark blue cylinder turned toward the camera at an angle, down and to the left. Its front ring holds three round coloured lenses (yellow, blue, red). The front face and all three lenses have the same ellipse ratio (about 0.6) and the same axis angle (about 30°), and each is less than 1.5% off a true ellipse. So the front is round and faces the same way as the cylinder. A short open tube sticks down from the bottom of the body. A soft coloured beam comes out of the lenses. The tools found no thin parts with loose ends.",
+ "errors": [
+  {
+   "where": "Bracket between the elbow pipe and the body (upper right)",
+   "what": "The bracket is not a working yoke. On a real stage light, a U-shaped yoke holds the body by pivots on both sides so the light can tilt. Here one leg rests flat on top of the body and only the other leg reaches a side pivot. The light has a pivot on one side only and could not tilt.",
+   "severity": "minor"
+  },
+  {
+   "where": "Tube under the body (lower right)",
+   "what": "An open pipe sticks straight down from the underside of the housing. Par cans have no such part, and nothing connects to it, so it looks like an invented part.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Hang the light from a U-shaped yoke whose two arms come down both sides of the cylinder and attach at matching round pivot knobs on the left and right. Put the clamp pipe at the centre of the yoke's top bar. Remove the open tube under the body and keep the underside of the cylinder smooth."
+}

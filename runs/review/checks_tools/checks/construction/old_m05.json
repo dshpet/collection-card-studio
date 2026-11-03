@@ -1,0 +1,11 @@
+{
+ "survey": "A pocket calculator lying in a single rounded dark-blue body, tilted about 20° and seen from the front and slightly above. The four-cell solar strip sits in a recess at the top edge. Below it the grey display window is set flush into the face. The keypad is a 4-column grid of raised rounded keys sitting in the face: the digits 7-8-9, 4-5-6 and 1-2-3 in three rows, then a bottom row with a double-width 0 and one blank white key. The right column holds the operator keys ÷, ×, − and a taller +. All keys stand proud of the body at the same height and could be pressed. The body is one solid piece with even rounded edges and nothing loose or floating. The tools found no thin parts or ellipses, which fits an object with no cables, legs or round parts.",
+ "errors": [
+  {
+   "where": "Bottom row of the keypad, the white key between 0 and the cyan + key",
+   "what": "This key has no label, and the keypad has no '=' key anywhere (it also has no decimal point). A calculator with digits and four operators but no equals key cannot give a result, so the device cannot do its job. Leaving out buttons is an acceptable simplification, but this is the one key a calculator always needs, and here it is shown as a blank, unlabeled key.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Label the white key between 0 and + with a clear '=' sign, in the same dark-blue rounded font as the other keys, so the keypad reads 7 8 9 ÷ / 4 5 6 × / 1 2 3 − / 0 = +."
+}

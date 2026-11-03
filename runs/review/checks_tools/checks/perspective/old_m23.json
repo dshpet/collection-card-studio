@@ -1,0 +1,16 @@
+{
+ "survey": "A water slide on a pool deck, seen from slightly above and front-left. A square yellow platform sits on one central yellow post. A diagonal brace runs from the post up to the platform's underside, and a round base disc sits flat on the tiled deck. The disc is drawn as an ellipse that matches the deck's angle. Four railing posts with round caps stand at the platform corners. The posts are vertical and parallel to the central post, and their caps are seen from above, like the platform top. A blue ladder leans against the platform's front-right corner. Its rungs run parallel to one set of the platform's edges and shrink as they recede, and its flat feet rest on the deck. A green slide leaves the platform's left side, curls into an S and wraps around the post: the middle band passes in front of the post and the lower loop passes behind it. It ends over the curved pool coping, and its channel interior is seen from above everywhere. The deck tiles and coping follow the same two horizontal directions as the platform edges. Overall it reads as one camera.",
+ "errors": [
+  {
+   "where": "Central yellow post, in the gap between the middle and lower slide bands (about mid-height, left of the post's line)",
+   "what": "The bit of yellow post seen between the two slide bands sits about half a post-width to the left of the post above and below it. The post does not read as one straight vertical column through the slide.",
+   "severity": "minor"
+  },
+  {
+   "where": "Top entrance of the slide at the platform's left side",
+   "what": "The slide's top curl rises clearly above the platform floor and is pressed against the side of the platform, not opening from deck level. The slide has no believable contact with the platform at the height it is drawn.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the central support post one straight, vertical cylinder, with its visible pieces above, between and below the slide bands all on the same line. Start the slide level with the platform floor, so its entrance opens directly from the platform deck."
+}

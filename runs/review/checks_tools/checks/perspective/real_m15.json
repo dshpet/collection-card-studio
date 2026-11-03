@@ -1,0 +1,16 @@
+{
+ "survey": "A red British phone box in three-quarter view. Two faces show: a narrow left side face and a wider front face with the door, which holds the payphone behind its glass. The near vertical corner is between them, a little left of centre. Above both faces sit header panels with crowns and a curved roof cap. The box stands on a dark plinth that rests on a flat green floor. The plinth's bottom edges converge strongly, which reads as a camera above the box looking down at the near corner: the left face's base edge drops toward the corner, and the front face's base edge climbs away from it. The verticals lean very slightly (about 85°) together, which is acceptable.",
+ "errors": [
+  {
+   "where": "Window grids on both faces (left side window and front door glazing), compared with the plinth below them",
+   "what": "The plinth's edges clearly recede toward vanishing points, sloping about 15–17° on each face. Every glazing bar on both faces is drawn perfectly horizontal (about 179°), including the lowest rails, which sit just above the sloped plinth edges. On a box seen from above, the lower rails should slope almost as much as the plinth and flatten gradually toward eye level. The grids are drawn front-on, as if the body used a flat camera while the plinth uses a high, angled one.",
+   "severity": "major"
+  },
+  {
+   "where": "Top of the box: header panels, cornice and roof cap",
+   "what": "The header strips and the roof arches are almost flat and front-on on both faces. The left-face header shows the same height and flat edges as the front one even though that face turns away more sharply. They do not converge toward the same vanishing points as the plinth edges, so the box seems to twist between top and bottom.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Red British telephone box in a consistent three-quarter view from slightly above, one camera for the whole object. On each face, all horizontal lines (plinth, window glazing bars, door frame, header sign and roof cornice) converge toward that face's vanishing point. Lower bars slope like the plinth edges, and the slope eases gradually higher up. The narrow side face is foreshortened, so its window panes and header grow narrower as they recede. Vertical edges stay vertical. The box sits flat on its plinth on the floor."
+}

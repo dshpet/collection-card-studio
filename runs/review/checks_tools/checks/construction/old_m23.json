@@ -1,0 +1,16 @@
+{
+ "survey": "Pool water slide on a tiled deck at the pool edge. A yellow square platform sits on one thick yellow column with a round foot plate and a diagonal brace under the platform. A yellow railing with round-capped posts runs along the back and right of the platform. A blue ladder leans from the deck up to the platform's front-right corner, and its two rails rest on the tiles with foot pads. The green flume starts at the platform's front-left edge with a tight hairpin. It swings left, then sweeps right toward the column, and a lower loop wraps behind the column and comes back around the front. The last stretch runs down-left to an open exit over the deck edge, where water pours into the pool. The camera sees everything from the front-left at about three-quarter view. The tools found no thin parts, ends or branches to mark.",
+ "errors": [
+  {
+   "where": "Middle of the flume, where the S-bend coming down from the top hairpin meets the lower loop around the column (centre of the enlarged view, just left of the column)",
+   "what": "The flume runs into itself. The S-bend's outer wall bends down into the lower loop's front wall. The back of the lower loop ends at the S-bend instead of passing under it. The two troughs and their water merge into one, so the path can't be traced as a single channel from top to exit. A rider or the water would hit a wall or drop between levels. A real slide passes above itself with a gap and support.",
+   "severity": "major"
+  },
+  {
+   "where": "Upper and lower stretches of the flume, away from the central column",
+   "what": "The long sweeping stretches hang well out from the single column, with no struts or legs under the turns. Only the diagonal brace under the platform is visible. A simplified card may leave out some supports, but this much cantilevered flume full of water looks under-supported.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make one continuous slide trough that never crosses or merges with itself. Start it at the platform edge and spiral it once around the central column, going down steadily. Each turn should pass clearly above the turn below with a visible gap. Hold the turns up with a few short support struts from the yellow column. End with a single open exit over the pool edge."
+}

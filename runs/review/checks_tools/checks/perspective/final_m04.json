@@ -1,0 +1,11 @@
+{
+ "survey": "A stage spotlight hangs from a short piece of ladder truss. The truss is two parallel tubes joined by end posts and diagonal braces. Its left end is drawn smaller than its right end (about 110 px between the tubes on the left against about 165 px on the right), so the left end is farther away. The tubes come together toward a vanishing point at lower left, which means we are looking up at it from below. The vertical posts stay vertical (about 94°). A box clamp sits on the middle of the truss. A vertical stem runs from the clamp down to the top bar of a U-shaped yoke. The yoke's top bar rises at about the same angle as the truss, so it hangs in the truss's plane. The yoke's arms come down both sides of the lamp. The right arm ends in a round pivot knob, and the left arm goes behind the lamp body. The lamp is a cylinder whose axis points down-left toward the viewer at about 45° on the page. That is roughly at right angles to the receding truss and pivot line, which fits a lamp tilted in its yoke. The front rim and the three lenses are true ellipses with matching short axes (41–47°) and similar width ratios (about 0.72–0.74; the red lens's outline is rounder at 0.85 because it is a dome). The vent slots and the sides of the cylinder run parallel to the lamp's axis. Overall the object is consistently seen from below and slightly to the left.",
+ "errors": [
+  {
+   "where": "Coloured light beams coming out of the lenses (lower left)",
+   "what": "The beams point different ways and none follows the lamp's axis. The yellow beam leaves the side of the yellow lens almost horizontally to the left, and the red beam drops nearly straight down, while the lamp points down-left at about 45°. Beams from lenses on one flat face should come out parallel to the lamp's axis.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make all three coloured light beams come straight out of the front of their lenses, parallel to each other and along the lamp's barrel axis, pointing down-left toward the viewer. They can spread slightly into soft cones but should share one direction."
+}

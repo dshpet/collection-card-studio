@@ -1,0 +1,16 @@
+{
+ "survey": "The object is a chunky handheld calculator floating at an angle against a pi-pattern background. Body: a rounded dark-blue slab whose face tilts away from the viewer, with the far (top) end smaller; the thick side wall shows along the left and bottom edges. Top of the face: a red solar strip and a grey display window, both set into the face. Keypad: a 4-row by 4-column grid of white and cyan keys, with a wide 0 key, a blank key and a tall + key in the bottom row; the keys sit on the face and each shows its thickness only along its bottom edge. In the marks, the key rows (red, about 168°) and columns (blue, about 67°) run parallel to the body's edges, so the keypad is skewed to follow the body's outline, but the keys themselves are not foreshortened with the face.",
+ "errors": [
+  {
+   "where": "Keypad on the calculator face",
+   "what": "The body is tilted away from the viewer, yet every key is drawn front-on as a flat, upright rounded rectangle with the same bottom-edge thickness. The far top row (7 8 9 ÷) is about as big and as tall as the near rows; the keys don't shrink or flatten toward the far end of the face the way the body and display do, and near the bottom they grow faster than the body narrows. The keys don't sit in the same perspective as the face they're on, as in example 1.",
+   "severity": "major"
+  },
+  {
+   "where": "Display window and solar strip",
+   "what": "Both are drawn nearly face-on, with almost no narrowing toward the far end. This doesn't match how strongly the body's side wall shows the tilt, so the upper face looks flattened and sticker-like.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Calculator lying tilted away from the viewer, all in one consistent perspective. The keys are set into the tilted face and foreshortened with it: keys near the top are smaller and squashed vertically, keys near the bottom are larger, and the gaps between keys narrow toward the far edge. Each key's side thickness shows on the same side as the body's visible side wall. The display window and solar strip narrow toward the far edge in the same way."
+}

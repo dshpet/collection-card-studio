@@ -1,0 +1,11 @@
+{
+ "survey": "A stack of three folded paper maps with thick cream rims, seen from above and to the front-left. Each sheet is folded like an accordion into three panels. The top sheet carries the artwork: water patches, a dashed yellow path and a raised red X, all lying flat on the green surface. Its two fold lines (one valley, one peak) run from the back edge to the front edge at about 63–67°, parallel to the left and right side edges, so the folds and sides share one direction. The back edge zigzags down, up, down (about 155°, 21°, 155°), and the front-left part of the zigzag matches it. The two lower sheets sit under the top one, shifted slightly right and down. Their rims show the same side and front faces, seen from the same high viewpoint. The stack floats with no ground plane. The red X stands up from the surface, and its sides are seen from the same raised view. Overall the camera is consistent, and the fold lines and side edges agree.",
+ "errors": [
+  {
+   "where": "Top map, right-hand panel, front (near) edge below the lower-right water patch",
+   "what": "The right panel's back edge is one straight segment running down-right at the same angle as the other down-sloping zigzag segments. Its front edge does not match: it drops steeply from the peak fold, then bends and runs almost flat to the right corner. This adds a kink that no fold line on the surface explains, and the near edge is no longer parallel to the far edge. The lower sheets repeat the same bend. So the panel reads as warped rather than a flat facet of the accordion fold.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make each folded panel a flat parallelogram: on the right-hand panel of every map sheet, draw the front edge as one straight line parallel to that panel's back edge, running from the peak fold to the right corner with no extra bend. The zigzag front edge should have exactly the same number of segments and fold points as the back edge, with every fold line running straight from back to front."
+}

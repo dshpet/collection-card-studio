@@ -1,0 +1,11 @@
+{
+ "survey": "Stage spotlight hanging from a truss. The truss crosses the top edge and is seen almost level, with its lattice face-on. A short round mount cup hangs from the truss, and a vertical pipe drops from it to an elbow. From the elbow, an L-shaped yoke arm runs right and then straight down the near side of the lamp drum, ending at a round pivot knob. The drum is a cylinder that leans down-left toward the viewer. Its round front face holds three lenses (yellow, cyan, red), and the body runs back to the right. A short round stub sticks out under the drum. Every vertical (mount pipe, yoke arm) stays vertical. The front rim and all three lenses are true ellipses with almost the same narrowness (0.59–0.62) and short axis (28–33°), so the lenses sit flat in the face. The mount cup, the stub and the truss all read as seen from about level, slightly above. That is one camera.",
+ "errors": [
+  {
+   "where": "Lamp drum body versus its front lens face",
+   "what": "The front rim's ellipse puts the drum's axis at about 30°, rising to the right. The barrel's top and bottom outlines run back at only about 10°. The ring seams behind the rim also lean further over (about 127–147°) than the rim does (about 118°). On a close look, the lens face seems turned toward the camera a little more than the barrel behind it, so the drum looks slightly twisted.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the spotlight drum as one straight cylinder: the barrel's top and bottom outlines run along the same axis the round front face points along, and every ring seam on the barrel is an ellipse parallel to the front rim, getting slightly narrower toward the back."
+}

@@ -1,0 +1,16 @@
+{
+ "survey": "A blue plastic sports bottle, tilted about 30° to the right and floating as a stylised hero object, so floating is fine. Main parts: (1) The body is a cylinder pinched at the waist, with a recessed grip panel on each side. Its base is turned toward the camera, so the hollow bottom shows as an ellipse at lower left. (2) A light-blue screw cap with vertical ridges sits on a darker ring at the bottle neck. (3) A short push-pull spout rises from the top of the cap, and its open hole faces the camera from above. (4) A carry loop is fixed by a round pivot button on the right side of the cap. It arches up and over, and its other end comes down onto the top of the cap just right of the spout. The tool marks find no loose thin-part ends and no branches. The water drops are surface decoration, not parts.",
+ "errors": [
+  {
+   "where": "Ends of the bottle: spout opening at the top and hollow base at lower left",
+   "what": "The camera sees both end faces at once: the spout hole and cap top from above, and the hollow bottom from below. A rigid tilted cylinder can show only one of its end faces, so the bottle's two ends contradict each other.",
+   "severity": "minor"
+  },
+  {
+   "where": "Carry loop, left/top end next to the spout",
+   "what": "The right end of the loop has a clear pivot button. The other end blends into the top of the cap with no lug, pin or matching mount. The two ends of one loop are attached in different ways, and the second attachment is unclear.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Keep the tilted bottle but make the viewpoint consistent: show either the cap top with the spout opening, or the bottom of the bottle, not both. If the cap faces the viewer, hide the base, so the bottom edge appears only as a curved outline. Attach both ends of the carry loop to the cap the same way: each end on a matching round pivot button, on opposite sides of the cap rim, with the loop arching over the spout."
+}

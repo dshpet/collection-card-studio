@@ -1,0 +1,21 @@
+{
+ "survey": "A cartoon sailing ship seen from the front-left, three-quarter view, sitting in waves. Hull: a round wooden tub with two portholes on the side facing the camera and an open interior with no visible deck. A raised rail curves up to the bow on the right. Masts: a rear mast on the left carries two square sails on two yards. A tall main mast in the centre carries a top sail, with a mast band at E1 (seen nearly edge-on, ratio 0.28, which fits). Below that sits a large main sail on a long yard. On the right of the bow are two long spars. A low bowsprit runs along the bow rail. A second, steeper spar rises at about 45° from behind the main sail to the upper right. A fourth square sail on the right hangs from a yard that runs from just right of the main mast out past the steep spar. Rigging: one rope runs from the main mast top, wrapped at both ends, to the tip of the steep spar. Two short rope ladders (the clusters of squares and circles) stand inside the hull: one left of the main mast and one under the right sail.",
+ "errors": [
+  {
+   "where": "Right side of the ship: the right-hand sail and its yard (enlarged view, about x 400–670, y 330–460)",
+   "what": "The yard holding the right sail does not meet any mast. It starts to the right of the main mast and crosses the steep raked spar partway along. A square sail's yard has to hang across a vertical mast, so this sail has nothing holding it up.",
+   "severity": "major"
+  },
+  {
+   "where": "Bow: the steep spar rising to the upper right (about x 440–680, y 150–500) beside the low bowsprit",
+   "what": "The bow has two bowsprit-like spars, one low and one steep. The steep one has no sail of its own and its foot is hidden behind the main sail, so it does not clearly rise from the hull. It is an extra, duplicated spar that only exists to hold the stay rope and to cross the loose yard.",
+   "severity": "major"
+  },
+  {
+   "where": "Rope ladders inside the hull (green clusters at about x 220–270 and x 385–425, y 470–550)",
+   "what": "Both short ladders stop in mid-air just under the sail bottoms; the tools mark their top ends with circles and nothing meets them there. Real ratlines run from the hull side up to the mast top. These ladders lead nowhere.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Ship with exactly two spars of the usual kind: one vertical foremast and one vertical main mast, plus a single low bowsprit at the bow. Hang every square sail from a horizontal yard that crosses its mast; put the front sail on the foremast and leave no sail on a slanted spar. Remove the extra steep diagonal spar. Run the forestay rope from the main mast top to the foremast top or the bowsprit tip. Draw the rope ladders as shrouds that run from the hull rail up to the mast tops."
+}

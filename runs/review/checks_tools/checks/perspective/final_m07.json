@@ -1,0 +1,16 @@
+{
+ "survey": "A blue sports bottle floats tilted, with its long axis leaning about 65° on the page and the top toward the upper right. Parts: a body with finger grips; a light-blue screw cap with vertical ridges that run along the bottle's axis; a narrow spout on top of the cap; and a strap loop pinned to one side of the cap. The cap rim, collar band and bottom rim all lie at about 165° on the page, so their ellipses share one short axis along the bottle's axis. At the top, the cap and the spout opening are seen from above, with the hole looking into the spout. At the bottom, the base is also shown as an open ellipse with a recessed underside, so it is seen from below.",
+ "errors": [
+  {
+   "where": "The bottle's two ends: cap/spout top versus base",
+   "what": "One camera cannot see both ends of the same straight cylinder. The cap top and spout opening are seen from above, while the base is also turned toward the viewer as if seen from below. The bottle looks bent toward the camera at both ends.",
+   "severity": "major"
+  },
+  {
+   "where": "Bottom rim ellipse",
+   "what": "The base ellipse is drawn about as open as the cap and collar ellipses. On a tilted cylinder seen by one camera, the far end should look narrower or be hidden, so the roundness of the base does not match the body's tilt.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Tilted blue sports water bottle seen from slightly above. The cap top and spout opening are visible as ellipses. The bottom of the bottle is hidden, shown only as a rounded curved lower edge, with no visible underside or base recess. All rims are parallel ellipses that follow one consistent camera angle."
+}

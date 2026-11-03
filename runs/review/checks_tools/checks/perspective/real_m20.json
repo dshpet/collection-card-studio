@@ -1,0 +1,11 @@
+{
+ "survey": "A cartoon wooden sailing ship in the water. The hull is drawn in a three-quarter view from slightly above. Its long side runs across the page, the stern is at the left, and the bow rises at the right. You can see into the open deck at the stern. The hull planks follow the hull's curve, and the two portholes on the side face are nearly round. Two masts stand vertical on the deck: the left (rear) mast and the taller main mast with a crow's nest. The crow's nest is a thin ellipse (width ratio 0.28), seen from slightly above, which agrees with the deck view. Each mast carries horizontal yards with white square sails. A second sail hangs on the forward spar on the right. A long diagonal spar rises from the bow area to the upper right, with a rope running from it to the main masthead. A shorter bowsprit sticks out below it, and two small ladders lean against the masts on deck. The hull sits in the water with splashes along the waterline, and its contact with the water matches the slightly-above view.",
+ "errors": [
+  {
+   "where": "All yards and square sails on both masts and on the right spar",
+   "what": "The yards (the red ~174° edges) all run flat across the page, parallel to the hull's long side, and every sail shows its full face to the camera. Square sails hang across the keel. With the hull seen almost side-on, the sails should be turned nearly edge-on and the yards should be shortened and angled toward the viewer. Right now the rig is drawn from a front camera and the hull from a side camera.",
+   "severity": "major"
+  }
+ ],
+ "fix": "Keep the hull in the same three-quarter side view and turn the rigging to match it. The yards should cross the hull at right angles, shortened and angled toward the viewer. The square sails should be seen at an angle, narrower and partly edge-on, following the same camera as the hull and deck."
+}

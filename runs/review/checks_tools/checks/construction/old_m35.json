@@ -1,0 +1,11 @@
+{
+ "survey": "A stone park chess set: one square table and two round stools. The table top is a thick square slab seen corner-on, with an inset 8x8-style checkerboard whose near corner lines up with the slab's near corner. The slab sits on a flared square pedestal, and the pedestal stands on a wider square plinth that rests flat on the grass. Both are seen from the same corner. Each stool has a round cushion-like seat on a faceted, waisted column, set on a round base that sits on the grass. The left stool is in the foreground and the right stool is further back. All parts touch the ground or each other. Nothing floats, there are no thin parts or loose ends, and the counts make sense: one table and two stools facing each other across it.",
+ "errors": [
+  {
+   "where": "Left face of the table-top slab, just left of the checkerboard's left corner (about x 630 on the enlarged view)",
+   "what": "A vertical seam splits the slab's left face partway along its length, as if the top were made of two pieces. It doesn't match the slab's real corner, and the other faces have no such seam. The solid stone top looks broken or badly joined.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the table top one solid stone slab with continuous, unbroken side faces. Its only vertical edges should be at the slab's four corners. Remove the stray vertical seam on the left side face."
+}

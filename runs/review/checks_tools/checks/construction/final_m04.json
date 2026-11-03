@@ -1,0 +1,11 @@
+{
+ "survey": "Stage spotlight on a truss. The truss has two parallel horizontal tubes joined by short vertical end posts and diagonal braces. It is seen at an angle, rising to the right. A rectangular clamp with a bolt wraps both tubes at the centre. A short stem runs down from under the clamp to the top of a U-shaped yoke. The right arm of the yoke ends in a round pivot knob on the side of the can, at about the middle of its length. The left arm goes down behind the can, where its pivot would be hidden, so there is no visible fault. The cylindrical can points down and to the left, toward the viewer. It has a vent slot grille on top and a front ring around a lens face. Three lenses (yellow, cyan and red) sit in a triangle on the face, and coloured light beams fan out down and to the left, the way the can is aimed. The front face ellipse (E2) has a width ratio of 0.73. The yellow lens (0.74) and the cyan lens (0.72) are foreshortened the same way. The red lens (E5) is noticeably rounder at 0.85. The structure is sound: the truss is braced, the clamp grips both tubes, the stem joins the yoke, and the yoke pivots on the can. Nothing is loose and nothing floats.",
+ "errors": [
+  {
+   "where": "Lens face, lower-right red lens (E5)",
+   "what": "The red lens is foreshortened less than the face it sits on. Its width ratio is about 0.85, against about 0.73 for the face and the other two lenses, so it looks turned toward the camera rather than lying flat in the same plane.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the three lenses lie flat in the front face, all foreshortened alike: the red lower-right lens should be the same oval shape and tilt as the yellow and cyan lenses, matching the angle of the front ring."
+}

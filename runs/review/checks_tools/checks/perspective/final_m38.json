@@ -1,0 +1,11 @@
+{
+ "survey": "A coin-operated tourist binocular viewer on a rooftop terrace with a city behind it. The head is a rounded-triangle housing whose front face points almost straight at the camera. It is turned slightly to the viewer's left, so a band of its blue right side and a little of its top show. Two round lens barrels sit on the front face as near-circles (width ratio about 0.9, short axis horizontal), which fits a small turn. A rectangular coin plate with a slot and a button sits front-on below them. A U-shaped yoke holds the head at pivot hubs on both sides. The left hub shows only as a thin sliver on the far side. The right hub is a round cap on the near side, with a crank handle sticking out to the right below it. The yoke joins a short neck, which sits on a silver collar ring. The top of the collar is seen slightly from above, an ellipse that matches the camera being a little higher than the collar. Below it, a vertical cylindrical post stands with straight, parallel sides. Behind, a glass railing with a nearly level top rail and floor tiles that recede away from the camera place the eye level at about the height of the head. The floor, collar, post and head all agree on one camera that is roughly level and slightly above.",
+ "errors": [
+  {
+   "where": "Right pivot hub where the yoke meets the right side of the head",
+   "what": "The hub cap points along the head's side-to-side axis. With the head turned only a little (the lenses are near-circles at a ratio of about 0.9, and the left hub shows only as a thin sliver), this cap should look like a narrow, upright ellipse. Instead it is drawn as a fairly round disc that almost faces the viewer, as if the right side were turned much more toward the camera than the rest of the head shows.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the right pivot hub on the yoke as a short cylinder whose round cap points to the right, along the head's side axis. Seen from this nearly front-on view, the cap should be a narrow upright ellipse, matching the slight turn of the head and the thin sliver of the left hub."
+}

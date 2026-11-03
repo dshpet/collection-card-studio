@@ -1,0 +1,16 @@
+{
+ "survey": "A yellow duck spring-rider, toy-style. The duck body is shown in near-pure side profile facing left. The camera is slightly above it, so a little of the red saddle top shows. A red handle bar sits at the neck. It is drawn as a horizontal cylinder running toward the tail, with a round red disc poking out at the front of the neck. A blue cap under the belly sits on a steel coil spring. The coils are ellipses seen slightly from above, which matches the camera height. The spring stands on a square blue base plate that lies flat on sand. The plate's top face is visible, so it is seen from above. Pebbles lie on the sand around it. The duck body, the spring and the sand all agree on one slightly raised, side-on camera. The base plate and the handle are the parts that don't fit that view.",
+ "errors": [
+  {
+   "where": "Blue base plate under the spring",
+   "what": "The plate mixes two views. Its back edge runs straight across the page, as for a plate seen square-on, matching the duck's profile. Its front, though, is built from two slanted edges that meet at a corner pushed toward the viewer, near front-left of centre, as for a plate turned to a 3/4 view. A square seen from one camera cannot have a level back edge and an angled front corner, so the plate reads as a skewed five-sided slab rather than a square lying flat.",
+   "severity": "minor"
+  },
+  {
+   "where": "Red handle at the duck's neck",
+   "what": "The handle is drawn as a long side-on cylinder running front-to-back along the page. Yet its far end at the front of the neck shows as an almost round disc facing the viewer. If the bar ran front-to-back, that end would be seen edge-on as a narrow ellipse. If it ran side-to-side, like a normal rider handle, the bar would be strongly foreshortened toward the viewer instead of shown at full length. Either way, the disc and the cylinder don't share one axis.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the blue base plate as a true square seen from the same slightly raised side view as the duck: front and back edges both horizontal and parallel, side edges converging slightly, with no corner jutting toward the viewer. Draw the neck handle as a side-to-side bar pointing at the viewer, foreshortened, with its near end shown as a round cap and only a little of the barrel visible. Alternatively keep it as a front-to-back bar, but draw both of its end caps as narrow edge-on ellipses."
+}

@@ -1,0 +1,11 @@
+{
+ "survey": "An orange school locker stands on a wooden floor against a purple wall, seen from slightly front-left with the eye at about mid-height. The front face is drawn almost straight-on: its top and bottom edges are near-horizontal and its verticals are near-vertical. The left side face recedes to the left. Its top edge falls toward the back and its bottom edge rises toward the back, so they meet at a vanishing point on the left, and the three side vents tilt with those edges (the top vents follow the top edge, the bottom vents follow the bottom edge). Inside the open locker there is a shelf with books in the upper part, a horizontal hanging rod, and a basketball and sneakers resting on the locker floor, which is seen from above. The door is hinged on the right edge of the opening and swung wide open, so its outer face, with vents and a keyhole, faces the viewer, almost in line with the front face. Four short feet rest on the floor planks, which run along the wall at the angle the floor is drawn.",
+ "errors": [
+  {
+   "where": "Open door, right side (top edge versus bottom edge and vents)",
+   "what": "The door's top edge rises toward its free (right) edge, but its bottom edge and all six vents stay horizontal. A rising top edge would mean the free edge swings toward the viewer, but then we would see the inside of the door, not the outer face with the keyhole. The door's top edge disagrees with its own bottom edge and with the front face of the body.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the open door swung fully open, in the same plane as the locker front: its top and bottom edges parallel to the locker's front top and bottom edges, its vents running parallel to those edges, and its outer face with the keyhole facing the viewer."
+}

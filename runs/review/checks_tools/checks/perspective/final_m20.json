@@ -1,0 +1,16 @@
+{
+ "survey": "A cartoon three-masted wooden ship sailing right-to-left in choppy water. The camera is slightly above and to the front-left, and the bow (left) is the nearest part. The hull's long side is mostly broadside to the viewer. Its plank lines tilt toward each other to the right, which is mild but consistent foreshortening. The top of the bulwark lets us see onto the deck, so the camera is a little above the deck. Three upright masts rise from the deck. The fore mast is behind the bow rail, the main mast stands in the middle on a collar, and the mizzen mast is near the raised stern. Each mast holds a horizontal yard tied with rope and a billowing square sail. All three sails face the camera fully, their yards stretched along the length of the ship, and the yards slope gently up to the right. Each masthead has a ball and a pennant. Three brass portholes sit in a row along the hull side. They are almost perfect circles (ratio 0.95) and almost the same size. The hull sits in the waves with foam at the waterline, and its contact with the water reads correctly.",
+ "errors": [
+  {
+   "where": "Yards and square sails on all three masts",
+   "what": "The hull is seen almost side-on, but all three square sails are drawn flat and facing the camera, as if seen from directly ahead or astern. Their yards run along the ship's length instead of across it. In this view the yards should be shortened, pointing roughly toward the viewer, and the sails should be narrow or turned at an angle. The yards also slope up to the right while the hull's rail and plank lines slope down to the right. The rig and the hull are drawn from two different cameras.",
+   "severity": "major"
+  },
+  {
+   "where": "Three portholes on the hull side",
+   "what": "The hull side turns away toward the stern, as the converging planks show. Yet the portholes are near-perfect circles (ratio 0.95) facing the camera at almost the same size. On this foreshortened side they should be upright ellipses that get narrower and smaller toward the stern.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Show the ship in a consistent three-quarter view from slightly above the bow. Turn the yards across the ship so they point partly toward the viewer and appear shortened. Show the square sails at an angle, narrower in width, following the same perspective as the hull, with yard lines sloping the same way as the deck rail. Draw the portholes as upright ellipses that get gradually narrower and smaller toward the stern, following the line of the hull planks."
+}

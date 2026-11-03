@@ -1,0 +1,16 @@
+{
+ "survey": "The object is a folded paper treasure map lying flat, seen from above at about three-quarters. The top layer faces the camera. It shows a green island with two lakes, mountain shapes, a dashed yellow path and a red X, on a cream border. Two creases cross at its centre and split it into four panels, and its top edge dips where the vertical crease meets it. Under it are two more layers stacked like an accordion. Each layer is a little lower and shifted to the right, and each shows some printed map along its right edge. All three layers bend over in a rounded fold along the same front-left edge. Their right and back edges are open sheet edges. The stack rests on the pink background. The tools found no thin parts, ends, branches or round parts on this object.",
+ "errors": [
+  {
+   "where": "Front-left edge of all three layers",
+   "what": "Each of the three layers bends over in a rolled fold along the same front-left edge, and the right edges are open on every layer. A single map folded like an accordion must alternate its folds, one at the front edge and the next at the back edge. Three folds stacked on the same side cannot come from one sheet of paper. It reads as three separate sheets each folded in half, so the map could not be unfolded.",
+   "severity": "major"
+  },
+  {
+   "where": "Top layer, crease grid and front fold",
+   "what": "The top layer shows a full map divided by a 2×2 crease grid, as if the whole sheet were spread open. Yet the same layer also wraps over the front edge into the layers below. The front fold is not one of the crease lines, so the creases do not match how the sheet is folded. The dip in the top edge at the vertical crease also makes it look like an open book rather than a map.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "A folded paper treasure map as one continuous sheet folded like an accordion. The folds alternate sides: the first fold is at the front edge, the next at the back edge, then the front edge again, so the zigzag of paper is visible from the side. Only the top panel shows the island, path and red X. Its creases line up with the real fold lines, and the edges are straight with no book-like dip."
+}

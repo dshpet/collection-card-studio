@@ -1,0 +1,11 @@
+{
+ "survey": "A pool water slide on a tiled pool deck, seen from a little above and to the front-left. A yellow square platform with a railing sits on a central blue pole, held by two diagonal braces. Its nearest corner is at the right, where the front edge rises to the right and the right-side edge drops to the right. The rail posts are vertical. The top face is just visible, so the camera is slightly above the platform. A blue ladder with two hoop handrails hangs from the platform's right corner. It leans out to the lower right and stands on two round feet on the deck. The green slide leaves the platform's left side and zigzags down in three passes in front of the central pole. A second, nearer blue pole holds up the lower passes. The slide ends over the pool curb, where water pours into the pool. The deck tiles and the pool curb are seen from a moderate height. The round pole bases and ladder feet are flat ellipses that match that ground angle. The platform edges, the back rail and the front edge all agree with each other, and the verticals stay vertical.",
+ "errors": [
+  {
+   "where": "Ladder rungs, right side, top to bottom",
+   "what": "The rungs are not parallel to each other. The top rungs slope down to the right, following the platform's right-side edge. The bottom rungs slope up to the right, following the line between the two ladder feet. The rungs fan through about 20° over a short ladder, so the ladder looks twisted instead of being one flat frame attached to one face of the platform.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Draw the ladder as one flat, rigid frame: all rungs parallel and evenly spaced, at the same angle as the platform edge the ladder hangs from. Line up the two ladder feet on the deck at that same angle."
+}

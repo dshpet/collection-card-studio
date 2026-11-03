@@ -1,0 +1,16 @@
+{
+ "survey": "A short wooden pier seen from the front-left and a little above. Four round posts: two front posts (the left one in sand, wrapped in rope; the right one in shallow water, with a life ring hanging on its front) and two back posts standing in the sea. Between the posts is a deck of horizontal planks. The front face of the deck faces the camera directly, and the deck runs back and up to the right. Side rails join each front post to the back post behind it, and short legs hold the deck up from the water. The planks get thinner and their left ends move right as they recede. The post tops are ellipses seen from above, the rope coils bow downward (also seen from above), and the life ring lies flat on the post's front face. Every post is vertical and the deck is level. The waterlines around the posts are ellipses that match the flat sea. The sea horizon is high in the frame, close to the tops of the back posts.",
+ "errors": [
+  {
+   "where": "side rails and deck edges against the sea horizon",
+   "what": "The two side rails (about 14° on the left, about 28° on the right) and the line of plank ends do meet up and to the right. But they meet well above the sea horizon. A level deck's receding lines should meet on the horizon, so the pier looks slightly tilted uphill toward the back, or seen from higher than the horizon allows. The rail on the left also runs a little flatter than the deck edge below it.",
+   "severity": "minor"
+  },
+  {
+   "where": "tops of the two back posts",
+   "what": "The back post tops sit at about the height of the horizon, so they should look almost edge-on. Instead they show a rounded top face seen from above, about as open as the front posts' tops. This is the same view-height mismatch as the rails.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Keep the pier level. Make the side rails and the deck's side edges meet at one vanishing point on the sea horizon. Draw the tops of the back posts as thin, nearly edge-on ellipses, because they are at eye level. Alternatively, lower the horizon line so the camera height matches the high view of the deck."
+}

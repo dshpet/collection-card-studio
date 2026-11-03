@@ -1,0 +1,11 @@
+{
+ "survey": "The object is a coin-operated tower viewer, the kind of binoculars found on an observation deck. Its parts:\n- **Head:** a rounded triangular housing with its front facing the camera, turned slightly so its right side shows some depth.\n- **Lenses:** two round lenses in silver bezels near the top of the face. They are almost exactly round (width ratios 0.89–0.91, off a true ellipse by under 1%) and match each other.\n- **Coin plate:** a riveted plate below the lenses with a coin slot and a round button. It is flush with the face and could be used.\n- **Yoke:** a U-shaped fork that rises from the top of the post and ends in a round pivot hub on each side of the head. Both hubs sit at the same height and match.\n- **Crank:** a handle that comes out of the right yoke arm, just below the right hub.\n- **Neck:** a short cylinder that runs from the bottom of the head down to the base of the yoke.\n- **Post:** a silver collar sits on top of a thick round post, which goes down out of frame toward the deck floor.\nNothing floats. There are no loose cables, no invented parts, and the counts are right: two lenses, two hubs, one crank, one coin slot.",
+ "errors": [
+  {
+   "where": "Short neck between the bottom of the head and the base of the yoke, centre of the image",
+   "what": "The head is held twice: by the side pivot hubs and by a rigid neck joining its bottom to the yoke base. With the neck fixed in place, the head could not tilt on its pivots, so the yoke and hubs would do nothing. On a real viewer the head hangs only on the side pivots, with clear space between the head and the yoke.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "The binocular head hangs only on the two side pivot hubs of the U-shaped yoke, with a clear gap between the bottom of the head and the base of the yoke. No neck or column joins the head to the yoke or the post."
+}

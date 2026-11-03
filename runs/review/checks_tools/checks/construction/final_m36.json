@@ -1,0 +1,16 @@
+{
+ "survey": "A small wooden pier seen from a three-quarter front view, running from the sand out into the sea. Four round piles stand at the corners. The front-left pile is buried in the sand at the waterline, and the other three stand in the water. The deck is made of planks running across the pier. Its front plank butts against the two front piles, and its back end reaches the two back piles. Short blocks hang under the deck: one in the middle reaches the water, and two under the front edge (near x≈195 and x≈535 in the marked image) stop above it. A side rail runs along each edge. The left rail runs from the front-left pile to the back-left pile, with one upright on the deck edge. The right rail runs from behind the front-right pile to the back-right pile. A rope is wound three times around the front-left pile. A lifebuoy hangs on the front face of the front-right pile from a rope looped over a peg, and both strands of that rope reach the ring. The tool found no thin-part ends or branches to check.",
+ "errors": [
+  {
+   "where": "Under the front edge of the deck, the two short blocks next to the front-left and front-right piles",
+   "what": "These blocks look like support legs, but they hang down from the deck and stop well above the water and the sand. The front piles reach the water much lower in the picture. The blocks hold nothing and stand on nothing, and the deck is not shown fixed to the piles either.",
+   "severity": "minor"
+  },
+  {
+   "where": "Rope around the front-left pile",
+   "what": "The rope is drawn as three closed rings stacked around the pile, with no start, no end and no knot. A real rope wound around a pile has to begin and end somewhere.",
+   "severity": "minor"
+  }
+ ],
+ "fix": "Make the short support legs under the front of the deck run all the way down into the water and sand like the piles, or replace them with crossbeams bolted to the front piles. Wrap the rope around the front-left pile as one continuous rope that spirals around it, with a visible knot and a short tail end tucked against the pile."
+}

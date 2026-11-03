@@ -1,0 +1,11 @@
+{
+ "survey": "Image 9/10: a yellow, rounded-square music player floats at an angle. It has a large white play button (E1 ratio 0.88, matching the body's tilt), three LEDs and a small white button (E2 0.95) on its front face. A white plug sticks out of the top-right corner and a single cable leaves it. The cable arches right and runs down the right side of the body. Around the body's lower-right corner, roughly level with the green LED, the cable meets a second cable that seems to come out from behind the body. From there one cable snakes down and left to the left earbud's stem. The other runs right and down to the right earbud's stem. Both earbuds have stems and open nozzles. Their ellipses (E3 0.36, E4 0.48) suit the side-on view. The tool found no thin-part ends or branch points, so the cable path was judged by eye.",
+ "errors": [
+  {
+   "where": "Cable at the lower-right edge of the player body, where the right earbud's cable begins",
+   "what": "There is only one cable from the plug, but two earbud cables leave this spot. The right earbud's cable appears out from behind the body with no Y-splitter or visible split point. The single cable just becomes two, so its routing makes no sense. This is the same fault as the human reviewer's earbud example.",
+   "severity": "major"
+  }
+ ],
+ "fix": "One white cable runs from the plug at the top corner of the music player down the right side to a small white Y-splitter below the player. From the splitter, two separate thin cables run to the two earbuds. No cable passes behind or comes out from behind the player body."
+}
