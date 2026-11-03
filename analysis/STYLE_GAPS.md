@@ -9,7 +9,7 @@ What the user named:
 - **Construction:** objects that could not exist, such as headphone cables ending in three strands, a folding chair that could not fold, a pier that leads nowhere, ropes ending in the air.
 - **Perspective:** parts seen from different cameras, such as calculator keys drawn front-on on a tilted body.
 
-None of the nine style specialists judged construction or perspective, so two checkers were added. Taught with the user's marked cards and shown a full-size crop, they catch 11 of 16 held-out construction errors and 6 of 6 perspective errors the user flagged. They also flag 3 and 5 of 20 real cards. Without the full-size crop they caught 5 of 16, and GPT-6.1 caught 1 of 16, so it is not used.
+None of the nine style specialists judged construction or perspective, so two checkers were added. Taught with the user's marked cards and shown a full-size crop, they catch 11 of 16 held-out construction errors and 6 of 6 perspective errors the user flagged. They also flag 3 and 5 of 20 real cards. That counts any error. The pipeline acts only on major errors, which catch 5 of 16 and 4 of 6, with 2 false alarms each. Without the full-size crop they caught 5 of 16, and GPT-6.1 caught 1 of 16, so it is not used.
 
 The first run looked off to a human, yet every automatic check passed it. This file records what was wrong, why the checks missed it, and what fixed it.
 
@@ -69,6 +69,8 @@ Below 50% means reviewers mistook the real card for the fake: r3 went past the t
 - **Softening the export.** Real and generated spectra already match in every band, so a blur would add a mismatch.
 - **Reference-only study.** Specialists working from real cards alone wrote "clay-like toy" and "never stitching", though the real Baseball Mitt has stitching.
 - **The old correction rounds.** They rescued 8 of 24 cards. Edit mode replaced them.
+- **Geometry for the reviewers.** A panel of measured geometry beside each card made both checkers worse. It showed straight edges grouped by direction, curves fitted to true ellipses and the skeleton of thin parts. On the same labelled cards, construction caught 9 of 16 instead of 11, and perspective 2 of 6 instead of 6, with 8 false alarms on real cards instead of 5. Models read the marks as proof that the drawing is right. "Ratio 0.95, a near-circle at a slight angle" passed the clock the user called not round, and "parallel edges drawn parallel" passed both chess tables. New lenses for four specialists did no better than the old ones on the sixteen held-out twins, 26 caught and 31 wrong against 31 and 28. Those lenses were normals with the outline's bends, edges and ellipses, lines of equal shading, and a vectorscope. The panel code is in commit 3efa3bf.
+- **Outline measures of roundness.** Straight share, corner rate, corner radius and planar share do not separate real cards from their twins. In both styles the twin scores higher 16 to 24 times in 40, and 8 times in the 16 with normals. The roundness a person sees is not in the outline at 430×480.
 
 ## Limits
 

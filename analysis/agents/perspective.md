@@ -10,5 +10,3 @@ Look for:
 - **Contact.** The object meets its ground at the angle the ground is drawn.
 
 Mild stylized perspective is fine. Report only what a careful viewer would see once it is pointed out.
-
-Tools: a panel marks geometry measured on the enlarged object. Straight edges are coloured by their direction on the page, so edges of one colour are parallel in the picture. Black ellipses are curves that fit a true ellipse, with their width ratio and short axis: circles on one axle or one cylinder share that axis, and their ratios change gradually along it. Marks show where to look, not errors. Report only what you can see on the drawing.

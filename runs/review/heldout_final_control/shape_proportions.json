@@ -1,0 +1,117 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both silhouettes are near-perfect circles. A is a ball with a seam-lined dome and B is the same ball tilted. The outlines give no basis to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A's target is a thick puck-like disc on a chunky easel, with a bulging arched lamp board. B's disc is thinner and the frame has straighter runs. The difference is small.",
+   "fix": "Draw the target as a thin flat board with a crisp rim, thin easel legs, and a straight-edged frame."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's body is a soft pillow with rounded corners and no vent opening in the silhouette. B has a crisp top edge, a hard vent cut-out and tight corners.",
+   "fix": "Draw the air conditioner as a flat-faced box with tight bevelled corners, a straight top edge, and a clear gap under the vent flap."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A has a swollen lid, fat gold bands and oversized coins and feet that blur into the chest outline. B has a squarer body, thin corner brackets and a tighter lid.",
+   "fix": "Make the chest a box with planar wood faces, thin metal straps and tight corners. Keep the coins small."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's cap is a fat, bulbous dome with a thick, heavy visor. B has a thinner, flared visor and a lower crown.",
+   "fix": "Draw a thinner, slightly curved visor and a lower crown with a tighter band."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A has a bulbous dome and chunky feet bulging at the base. B has a flatter roof and a straighter, plainer base. Both are mostly straight-sided.",
+   "fix": "Use a flatter roof, straight vertical walls and a slim plinth with crisp corners."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B's two gloves merge into one lumpy mass with no visible cuff or thumb gap. A keeps a separate glove and a defined cuff. Both are rounded, but B is more swollen.",
+   "fix": "Show two distinct gloves with narrower cuffs and a visible gap between them."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B's fins are fat, wide-bladed paddles with soft round tips. A's blades are tapered and pointed with a slimmer foot.",
+   "fix": "Draw longer, narrower tapered blades with a thin edge and a slim foot pocket."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B has an oversized lifebuoy, a swollen bollard and sausage-thick rope. The dock planks are lost in the blob. A has thin rails, thin planks and a small ring.",
+   "fix": "Draw the ring and rope at realistic scale, with thin rope coils and slim posts, and keep the plank edges and rails visible."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A has a thick, tapered trunk and fat, curved fronds that merge. B has a slender trunk and thinner, separated fronds.",
+   "fix": "Draw a slender trunk and thin, pointed fronds with gaps between them."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's locker has a soft rounded top, thick door rim and fat louvers. B has crisper straight edges and an angled top.",
+   "fix": "Draw flat metal faces, tight corners and thin, shallow louvers."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B has a fat, tube-like chute and a thick pipe. The platform rail is missing and the ladder is simple. A has a railed platform, a ladder, thin struts and a spiral with gaps.",
+   "fix": "Draw the slide with a thin-walled channel, a railed platform and thin support struts, keeping the gaps between loops."
+  },
+  {
+   "pair": "p13",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B has a plump squircle body with soft corners and thick cords bunched together. A's body is tighter and the cord is thin and separate.",
+   "fix": "Draw the player with tighter corners and a thin single cord with small earbuds."
+  },
+  {
+   "pair": "p14",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B is a pillowy, bulging envelope with soft corners and a rounded flap. A is tilted with flatter paper edges and stacked photos.",
+   "fix": "Draw flat paper with straight edges, crisp folds and corners, and thin photo borders."
+  },
+  {
+   "pair": "p15",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B's fruit is oversized and lumpy and hides the plate. A has a wide flat plate with smaller fruit and a straight watermelon edge.",
+   "fix": "Use a clearly visible flat plate with smaller fruit pieces and a straight watermelon cut."
+  },
+  {
+   "pair": "p16",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "The silhouette mask is unreliable. A is a wreath only, and B is a door with a smeared edge, so the two can't be compared.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards look swollen on this vector. Boxes become soft pillows, and tubes, fins and ropes get fat, with tight corners and thin rails or struts lost. Real cards keep slimmer parts and flat faces. The pairs differ only slightly, so most calls are low confidence."
+}

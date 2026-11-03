@@ -81,4 +81,5 @@ The first run looked off to a human, while every check passed it. Details are in
 - The user named what gives cards away: toy-like roundness and gloss, broken construction and inconsistent perspective.
 - Added construction and perspective checkers, taught with the user's marked cards. Full-size crops took construction recall from 5 to 11 of 16.
 - Drew the forty twins in two more styles for the user to pick the closest.
+- Gave the checkers measured geometry: edge directions, fitted ellipses, thin-part skeletons. Four specialists got new lenses. Nothing improved and the checkers got worse, because models read the marks as proof that the drawing is right. The old reviewers stay.
 

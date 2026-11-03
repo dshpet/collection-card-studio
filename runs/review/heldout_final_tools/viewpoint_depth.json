@@ -1,0 +1,117 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: ball sits low on rippled sand with a flat banded dune backdrop. The camera is modest and the ball has margin around it. B: ball is tilted so the cap is off-axis, and it nearly fills the frame. The sand is softly blurred and the camera is higher.",
+   "fix": "Keep the ball smaller in frame with clear margin. Use a modest camera height and a clearly defined ground and backdrop."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: shelf with brackets, a flat curved marquee and a plank wall. The layers are few and cleanly stacked. B: box frame with visible side pillars, a vignette, and the target and bear overlapping into a deeper stack of layers.",
+   "fix": "Use fewer, flatter depth layers with no vignette. Keep frame and shelf at the same mild perspective as the target."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the air-flow streaks and vent slats have scattered, inconsistent directions. The wall stripes, ceiling corner and unit converge at different rates. B: the unit, vent and moulding share one calm perspective.",
+   "fix": "Make vent slats and wall stripes follow the same vanishing directions as the unit's edges. Draw the airflow as a few clean streaks."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: strongly top-down chest with the lid ellipse, bubbles overlapping the front, and a flat blue backdrop with sand only in the corner. B: sand runs back to a soft horizon, with a frontal chest face and a lid interior seen from a higher angle.",
+   "fix": "Keep the chest front and lid interior at one camera height. Keep the background simple rather than adding a full receding sand ground."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: low camera, the cap rests on the planks, and the floor lines converge consistently. B: wall corner plus floor, and the visor brim flares up at the left edge so the cap looks half-floating. The badge is frontal while the body turns away.",
+   "fix": "Rest the cap flat on the floor with the visor touching it. Use one clear camera angle for the badge, band and brim."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "A: booth with a cast shadow on a floor-wall split and a crown pattern behind. B: booth with soft grounding and a luggage pattern. Both show two faces at similar angles, and I see no clear viewpoint tell.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: top-down view over wood planks that converge strongly, with striped wall behind. B: low camera with gloves filling the full width, overlapped in a tight, frontal crop. The cuffs are hidden or inconsistent.",
+   "fix": "Show both gloves smaller in the frame with space around them. Keep one consistent camera height for both gloves and the table."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: fins foreshortened toward the viewer, with foot pockets and blades at the same tilt. B: large, near-parallel blades seen almost from above with pockets seen from the front, so the two parts don't share one view.",
+   "fix": "Draw the foot pockets and blades from the same high three-quarter angle, with the fins foreshortened and smaller in frame."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: full scene with horizon, sky, water and beach, and a coherent dock. B: extreme close crop. The lifebuoy hangs in front of the post that passes through it, which confuses front-back depth.",
+   "fix": "Show the whole dock at a moderate distance, with the lifebuoy hanging clearly in front of or beside the post."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: leaning trunk and fronds seen from the side, consistent with the dune. B: fronds splay out radially as if seen from above, while the trunk is seen from the side, so the view is mixed.",
+   "fix": "Draw the crown from the same side-on angle as the trunk, with the fronds arching out and down."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "A: locker turned with a wall corner and baseboard, and planks that match its angle. B: a more frontal locker with wide fanning floor planks. I see only a weak tell.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: spiral slide with a platform, a ladder in strong but consistent perspective, and a splash into the pool. B: the slide sweeps through the platform and ends in an open lip over the pool edge. The coil's depth doesn't resolve.",
+   "fix": "Make the slide a clear spiral around the support. It should start at the platform top and end at the pool with water flowing out."
+  },
+  {
+   "pair": "p13",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: tilted device with a readable top-and-front thickness and small earbuds. B: oversized, nearly frontal squircle with large foreground earbuds, which exaggerates the depth between them and the device.",
+   "fix": "Make the earbuds smaller and in the same plane as the player. Show a clear top face and side thickness at one angle."
+  },
+  {
+   "pair": "p14",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: flat, rotated top-down envelope with almost no perspective, like the real flat ticket card. B: a volumetric envelope with a thick body and an open flap seen in soft perspective.",
+   "fix": "Draw the envelope as a flat top-down object, rotated in the plane, with minimal thickness and no perspective."
+  },
+  {
+   "pair": "p15",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: low camera with a shallow plate ellipse, a striped wall behind, and a table: two backdrop layers like the real basket card. B: higher three-quarter view with a very large plate filling the frame and diagonal planks.",
+   "fix": "Use a lower camera with a shallow plate rim. Add a wall-and-table backdrop and leave margin around the plate."
+  },
+  {
+   "pair": "p16",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "A: door with a left jamb thickness, a wall sliver and dense foreground ivy. It has almost no straight edges detected, which fits painterly texture. B: arched door on a stone step with a clean frontal read.",
+   "fix": "Reduce the foreground ivy overlap and keep the door face flat and frontal, with a clear step beneath."
+  }
+ ],
+ "pattern": "Generated cards pick a camera angle for the whole hero and then break it in parts. Fins, palm crowns, slides and earbuds each show a different view. They also come out larger and tighter in frame than real cards, with a deeper or invented set of layers. Real cards keep one mild angle, simple layers and margin around the object."
+}

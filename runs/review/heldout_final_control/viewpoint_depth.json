@@ -1,0 +1,117 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: low front view of the ball, with dune bands behind it forming a horizon and a back layer. B: high, tilted view where sand fills the whole frame and there is no horizon. The ball's panel seams twist around the cap in a loose way.",
+   "fix": "Keep one consistent camera height. Show a clear ground plane meeting a simple soft background. Use mild perspective."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the target face turns left on a steep angle while the shelf and bear are seen front-on, so the views disagree. B: the target, bear and shelf share a similar slight turn.",
+   "fix": "Turn the target only slightly, to match the shelf and bear. Use the same mild perspective on every object."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the unit sits on a flat wall with a corner on the left. B: the unit sits on a flat wall with a ceiling line. Both have a similar mild angle, and I see no clear difference in view or depth.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the lid is big and swings wide, with a stronger perspective flare, and bubbles are spread across the front. B: tighter perspective, with a sand ground that sits flat under the chest.",
+   "fix": "Open the lid less. Use a milder perspective with consistent top-face visibility."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: low frontal view against a wall, with floor planks at a gentle angle. B: room corner with steep floor-plank convergence and a long, thin brim, so the perspective is stronger and more layered.",
+   "fix": "Use a plain wall behind the hat and floor planks at a gentle angle. Keep the brim short and the view mild."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the booth keeps near-parallel sides, and a cast shadow grounds it. B: the booth narrows toward the top and the background carries large suitcase shapes. The wide-angle feel is stronger.",
+   "fix": "Keep the booth's vertical edges nearly parallel and add a clear contact shadow on the floor."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the gloves sit on planks at one consistent angle, with the wall and floor in simple bands. B: the gloves are huge and close, at a wide-angle scale, and the back glove is crowded behind the front one with a crude overlap.",
+   "fix": "Pull the camera back so the gloves sit fully inside the frame on the floor. Use mild perspective and a clear front-to-back separation."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the fins are viewed at a clear top-down tilt, and the straps and heel pockets read separately. B: the blades are even, flat, long and smooth, and the view is a uniform tilt.",
+   "fix": "Show the foot pockets and straps clearly, and vary the blade tilt and thickness."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a full scene with a horizon, sky, water, sand and many depth layers. B: a tight close-up with a steep downward view, and the water and sand fill the background.",
+   "fix": "Use a tighter crop with a simpler background, and drop the horizon and the extra depth layers."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "A: the trunk bends with a cast shadow and the sand mound sits at a low angle. B: the fronds fan out toward the viewer and rocks sit in front. The camera heights are similar.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the locker sits in a wall corner with a baseboard, and the door turns away at an angle. B: the locker is front-on and symmetrical on a deep wood floor with a long ground plane, so it reads as a tidy staged diorama.",
+   "fix": "Turn the locker a little more off-axis and shorten the floor."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the scene is full of depth layers — tiled deck, pool edge, water splash, a ladder in the back and a wavy backdrop. B: a bigger, closer slide with fewer layers.",
+   "fix": "Drop the water splash and the extra floor detail. Keep the slide large with a simple deck."
+  },
+  {
+   "pair": "p13",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the player is tilted, with the earbuds at their own depth. B: the player is a puffy, rounder block seen from above, with the cables fanning toward the camera.",
+   "fix": "Use a flatter top face and keep the cables close to the body."
+  },
+  {
+   "pair": "p14",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the flat paper envelope has a very high planar share (0.855), and the cards stack in a shallow, flat way. B: the puffy envelope has real thickness, a rounded body and a pillowy edge.",
+   "fix": "Draw the envelope as flat paper with thin, crisp edges and a simple flat fold."
+  },
+  {
+   "pair": "p15",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a low frontal view of the plate with a wall and a table horizon behind it, and a table that recedes. B: a high view, with planks filling the whole background.",
+   "fix": "Use one camera height. Fill the back with a plain background and avoid a table horizon behind the plate."
+  },
+  {
+   "pair": "p16",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the door fills the frame frontal, with a flat wall and no ground. B: an arched door with a step, a paved ground strip and a wall, so it adds a ground plane and more layers.",
+   "fix": "Fill the frame with the door and drop the ground strip and the step."
+  }
+ ],
+ "pattern": "Generated cards add scene context: a visible horizon, a long receding floor, steep plank or tile convergence, or a puffy, rounded volume where real cards stay flat or simple. The camera feels more layered and wide-angle than real cards, which use a mild, shallow view. My picks are weak guesses on most pairs."
+}
