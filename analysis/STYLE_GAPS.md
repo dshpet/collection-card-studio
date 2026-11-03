@@ -30,7 +30,7 @@ Below 50% means reviewers mistook the real card for the fake: r3 went past the t
 
 **Held-out objects.** The twelve twins steered every style decision, so forty more real cards were redrawn in the old and the final style. On sixteen of them, reviewers caught the old style 97 of 144 times and the final style 64 of 144. When they chose a side, that is 71% against 47%. So the final style holds on objects it was never tuned on, and the reviewers can still see the difference when there is one. Slight tells remain on color and shape, at 11 and 10 of 16.
 
-**Content-matched classifier.** On all forty, with each real card and its redraw kept in one fold, DINOv3 separates the old style at AUC 0.86 whole, 0.82 subject and 0.83 background, and the final style at 0.84, 0.80 and 0.76. Style moved less here than for reviewers and by eye, and a classifier can still tell. Without twins this test misleads: summer against genre content gave 0.95 and 0.94.
+**Content-matched classifier.** On all forty, with each real card and its redraw kept in one fold, DINOv3 separates the old style at AUC 0.86 whole, 0.82 subject and 0.83 background, and the final style at 0.84, 0.80 and 0.76. Style moved less here than for reviewers and by eye, and a classifier can still tell. Without twins this test misleads: summer against genre content gave 0.95 for both the first run and the final sets.
 
 **Second vendor.** With the same lessons, GPT-6.1 specialists caught baseline 46 times and missed 6, abstaining 20 times. On r8 they caught 11 and missed 39, abstaining 22. So an unrelated model also fails to separate r8, and leans slightly toward calling the real card the fake.
 

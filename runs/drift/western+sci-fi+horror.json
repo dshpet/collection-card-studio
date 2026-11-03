@@ -8,21 +8,21 @@
  "fields": [
   {
    "field": "surface_finish.detail_background",
-   "percentile": 0.206,
+   "percentile": 0.212,
    "n": 90,
-   "z": -9.7
+   "z": -9.4
   },
   {
-   "field": "edges_linework.edge_density_background",
-   "percentile": 0.331,
+   "field": "color_palette.hue_families",
+   "percentile": 0.329,
    "n": 90,
    "z": -5.6
   },
   {
-   "field": "color_palette.hue_families",
-   "percentile": 0.337,
+   "field": "edges_linework.edge_density_background",
+   "percentile": 0.345,
    "n": 90,
-   "z": -5.3
+   "z": -5.1
   },
   {
    "field": "composition_hierarchy.center_x",
@@ -31,28 +31,28 @@
    "z": -5.1
   },
   {
-   "field": "color_palette.chroma_subject",
-   "percentile": 0.364,
-   "n": 90,
-   "z": -4.5
-  },
-  {
-   "field": "value_contrast.lightness_p95",
-   "percentile": 0.363,
-   "n": 90,
-   "z": -4.5
-  },
-  {
    "field": "color_palette.chroma_background",
-   "percentile": 0.634,
+   "percentile": 0.641,
    "n": 90,
-   "z": 4.4
+   "z": 4.6
+  },
+  {
+   "field": "color_palette.chroma_subject",
+   "percentile": 0.365,
+   "n": 90,
+   "z": -4.4
   },
   {
    "field": "edges_linework.outline_darkness",
    "percentile": 0.371,
    "n": 90,
-   "z": -4.2
+   "z": -4.3
+  },
+  {
+   "field": "value_contrast.lightness_p95",
+   "percentile": 0.377,
+   "n": 90,
+   "z": -4.0
   },
   {
    "field": "composition_hierarchy.margin_min",
@@ -64,19 +64,19 @@
    "field": "color_palette.shadow_chroma_kept",
    "percentile": 0.392,
    "n": 90,
-   "z": -3.6
+   "z": -3.5
   },
   {
    "field": "lighting_shading.light_azimuth",
-   "percentile": 0.603,
+   "percentile": 0.601,
    "n": 90,
-   "z": 3.4
+   "z": 3.3
   },
   {
    "field": "value_contrast.lightness_gap",
-   "percentile": 0.41,
+   "percentile": 0.403,
    "n": 90,
-   "z": -3.0
+   "z": -3.2
   },
   {
    "field": "shape_proportions.holes",
@@ -92,7 +92,7 @@
   },
   {
    "field": "surface_finish.dark_share",
-   "percentile": 0.574,
+   "percentile": 0.573,
    "n": 90,
    "z": 2.4
   },
@@ -104,19 +104,13 @@
   },
   {
    "field": "value_contrast.lightness_p1",
-   "percentile": 0.433,
+   "percentile": 0.437,
    "n": 90,
-   "z": -2.2
+   "z": -2.1
   },
   {
    "field": "shape_proportions.corner_rate",
    "percentile": 0.439,
-   "n": 90,
-   "z": -2.0
-  },
-  {
-   "field": "value_contrast.lightness_p5",
-   "percentile": 0.44,
    "n": 90,
    "z": -2.0
   },
@@ -133,16 +127,10 @@
    "z": 1.9
   },
   {
-   "field": "lighting_shading.shading_range",
-   "percentile": 0.558,
-   "n": 90,
-   "z": 1.9
-  },
-  {
    "field": "surface_finish.micro_texture",
    "percentile": 0.444,
    "n": 90,
-   "z": -1.8
+   "z": -1.9
   },
   {
    "field": "composition_hierarchy.box_width",
@@ -151,8 +139,14 @@
    "z": -1.7
   },
   {
+   "field": "value_contrast.lightness_p5",
+   "percentile": 0.453,
+   "n": 90,
+   "z": -1.6
+  },
+  {
    "field": "surface_finish.form_contrast",
-   "percentile": 0.546,
+   "percentile": 0.545,
    "n": 90,
    "z": 1.5
   },
@@ -175,28 +169,40 @@
    "z": -1.4
   },
   {
+   "field": "lighting_shading.shading_range",
+   "percentile": 0.542,
+   "n": 90,
+   "z": 1.4
+  },
+  {
    "field": "shape_proportions.straight_share",
-   "percentile": 0.46,
+   "percentile": 0.461,
    "n": 90,
    "z": -1.3
-  },
-  {
-   "field": "lighting_shading.light_bias_strength",
-   "percentile": 0.535,
-   "n": 90,
-   "z": 1.2
-  },
-  {
-   "field": "value_contrast.color_gap",
-   "percentile": 0.534,
-   "n": 90,
-   "z": 1.1
   },
   {
    "field": "composition_hierarchy.box_fill",
    "percentile": 0.532,
    "n": 90,
    "z": 1.1
+  },
+  {
+   "field": "lighting_shading.light_bias_strength",
+   "percentile": 0.533,
+   "n": 90,
+   "z": 1.1
+  },
+  {
+   "field": "color_palette.warm_share",
+   "percentile": 0.531,
+   "n": 90,
+   "z": 1.0
+  },
+  {
+   "field": "value_contrast.color_gap",
+   "percentile": 0.526,
+   "n": 90,
+   "z": 0.9
   },
   {
    "field": "composition_hierarchy.subject_area",
@@ -206,31 +212,25 @@
   },
   {
    "field": "lighting_shading.light_elevation",
-   "percentile": 0.525,
+   "percentile": 0.527,
    "n": 90,
-   "z": 0.8
-  },
-  {
-   "field": "value_contrast.lightness_mean",
-   "percentile": 0.482,
-   "n": 90,
-   "z": -0.6
+   "z": 0.9
   },
   {
    "field": "surface_finish.detail_subject",
-   "percentile": 0.485,
+   "percentile": 0.484,
    "n": 90,
    "z": -0.5
   },
   {
-   "field": "surface_finish.gloss_share",
-   "percentile": 0.514,
+   "field": "color_palette.hue_gap",
+   "percentile": 0.484,
    "n": 90,
-   "z": 0.5
+   "z": -0.5
   },
   {
-   "field": "surface_finish.vignette",
-   "percentile": 0.485,
+   "field": "value_contrast.boundary_contrast",
+   "percentile": 0.484,
    "n": 90,
    "z": -0.5
   },
@@ -241,7 +241,7 @@
    "z": -0.4
   },
   {
-   "field": "color_palette.warm_share",
+   "field": "surface_finish.gloss_share",
    "percentile": 0.513,
    "n": 90,
    "z": 0.4
@@ -254,27 +254,27 @@
   },
   {
    "field": "surface_finish.highlight_share",
-   "percentile": 0.49,
+   "percentile": 0.491,
    "n": 90,
    "z": -0.3
   },
   {
-   "field": "value_contrast.rms_contrast",
-   "percentile": 0.509,
+   "field": "surface_finish.vignette",
+   "percentile": 0.491,
    "n": 90,
-   "z": 0.3
+   "z": -0.3
   },
   {
-   "field": "value_contrast.boundary_contrast",
-   "percentile": 0.493,
-   "n": 90,
-   "z": -0.2
-  },
-  {
-   "field": "color_palette.hue_gap",
+   "field": "value_contrast.lightness_mean",
    "percentile": 0.497,
    "n": 90,
    "z": -0.1
+  },
+  {
+   "field": "value_contrast.rms_contrast",
+   "percentile": 0.502,
+   "n": 90,
+   "z": 0.1
   },
   {
    "field": "edges_linework.edge_density_subject",
@@ -290,16 +290,16 @@
   }
  ],
  "auc": {
-  "whole/native": 0.94,
+  "whole/native": 0.939,
   "whole/matched": 0.948,
-  "subject/native": 0.936,
+  "subject/native": 0.929,
   "subject/matched": 0.944,
-  "background/native": 0.924,
-  "background/matched": 0.931
+  "background/native": 0.891,
+  "background/matched": 0.904
  },
  "real_likeness": {
-  "batch": 0.394,
+  "batch": 0.393,
   "held_out_real": 0.723
  },
- "mean_drift": 0.064
+ "mean_drift": 0.063
 }

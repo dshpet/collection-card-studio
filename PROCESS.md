@@ -67,7 +67,7 @@ Decisions:
 The first run looked off to a human, while every check passed it. Details are in [STYLE_GAPS](analysis/STYLE_GAPS.md).
 
 - Found Codex's LLM rewriting prompts and adding its own style words. `draw()` now forces them verbatim.
-- DINOv3 told first-run cards from real ones at AUC 0.95, on whole card, subject and background alike, so the "hidden among nine" test had simply been too weak.
+- DINOv3 told first-run cards from real ones at AUC 0.92-0.95, on whole card, subject and background, so the "hidden among nine" test had simply been too weak.
 - Built twins: real cards redrawn with the card hidden, to compare style with content held equal.
 - Blind specialists called the real card fake 12 of 12 times on color and surface. Models expect game art to be glossier than it is, which is also how "chunky, toy-like" got into the style text. Four labelled lessons fixed this.
 - Eight rounds of twins brought reviewers from 89% to chance, and showed where the style overshoots in each direction.

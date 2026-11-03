@@ -1,8 +1,8 @@
 {
  "runs": [
-  "western",
-  "sci-fi",
-  "horror"
+  "first/western",
+  "first/sci-fi",
+  "first/horror"
  ],
  "cards": 90,
  "fields": [
@@ -292,9 +292,14 @@
  "auc": {
   "whole/native": 0.945,
   "whole/matched": 0.95,
-  "subject/native": 0.952,
-  "subject/matched": 0.955,
-  "background/native": 0.939,
-  "background/matched": 0.945
- }
+  "subject/native": 0.926,
+  "subject/matched": 0.929,
+  "background/native": 0.91,
+  "background/matched": 0.922
+ },
+ "real_likeness": {
+  "batch": 0.106,
+  "held_out_real": 0.723
+ },
+ "mean_drift": 0.087
 }
