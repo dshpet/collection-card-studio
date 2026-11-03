@@ -1,6 +1,6 @@
 """Turn a theme and producer wishes into ten-card set variants, with no manual steps.
 
-Stages: plan, brief, draw candidates, check, choose, review, edit, deliver.
+Stages: plan, brief, model, draw candidates, check, choose, review, edit, deliver.
 Results land in runs/<slug>/ and finished work is kept.
 """
 
@@ -9,6 +9,7 @@ import json
 import os
 import random
 import re
+import subprocess
 from collections import Counter, defaultdict
 from concurrent.futures import ThreadPoolExecutor
 
@@ -25,10 +26,11 @@ from estimate import write_masks
 from form import CARD_FORM, card_schema
 from measure import measure_card
 from rate import ask_claude, ask_codex, card_prompt
-from style import CATEGORY_RULES, EDIT, PATTERNS, STYLE
+from style import BLOCKOUT, CATEGORY_RULES, EDIT, PATTERNS, STYLE
 
 SIZE = (430, 480)
 CANDIDATES = 3
+MODEL_ROUNDS = 2
 REVIEW_ROUNDS = 2
 ALLOWED_MISSES = 2
 RATED = ["identity", "staging"]
@@ -55,6 +57,8 @@ PLAN_SCHEMA = strict({
     "title": text(), "story": text(),
     "variants": {"type": "array", "items": strict({"cards": {"type": "array", "items": CARD_SCHEMA}})},
 })
+MODEL_SCHEMA = strict({"model": text()})
+LOOK_SCHEMA = strict({"ok": {"type": "boolean"}, "problems": {"type": "array", "items": text()}, "model": text()})
 
 
 def plan_prompt(theme, wishes, variants, knowledge):
@@ -144,6 +148,74 @@ def card_brief(card):
     return "\n".join(lines)
 
 
+def blockout_brief(card):
+    """The brief for restyling a blockout. Staging comes from the blockout itself."""
+    backdrop = PATTERNS[card["pattern"]].format(topic=card.get("topic", "simple"))
+    lines = [BLOCKOUT, f"Subject: {card['subject']}", f"Hero colors: {card['hero_colors']}.",
+             f"Backdrop: {backdrop} in {card['backdrop_colors']}."]
+    if card["surface_or_setting"]:
+        lines.append(f"Surface or setting: {card['surface_or_setting']}.")
+    return "\n".join(lines)
+
+
+def render_model(source, out):
+    """Render a model file with scripts/blockout.py. Returns Blender's error, or None."""
+    out.unlink(missing_ok=True)
+    done = subprocess.run(["blender", "-b", "--factory-startup", "--python-exit-code", "1", "--python",
+                           str(ROOT / "scripts" / "blockout.py"), "--", str(source), str(out)],
+                          capture_output=True, text=True, timeout=600)
+    return None if out.exists() and not done.returncode else (done.stdout + done.stderr)[-1500:]
+
+
+def model_card(run, brief, rater):
+    """Write a Blender blockout of the card's object, render it and fix what the render shows.
+
+    Returns the render, or None when no model rendered, and the card is drawn from its brief alone."""
+    folder = run / "models"
+    source, render = folder / f"{brief['id']}.py", folder / f"{brief['id']}.png"
+    if render.exists():
+        return render
+    folder.mkdir(exist_ok=True)
+    card = brief["card"]
+    examples = "\n\n".join(f"```python\n{(ROOT / 'runs/trial/models2' / f'{name}.py').read_text('utf-8')}```"
+                           for name in ("m16", "m36"))
+    task = (f"{(ANALYSIS / 'agents' / 'modeller.md').read_text('utf-8')}\n\nTwo models from the trial, as examples of the "
+            f"file:\n{examples}\n\nThe card: {card['name']}. {card['subject']}\nCategory {card['category']}: "
+            f"{CATEGORY_RULES[card['category']]}\nHero colors: {card['hero_colors']}.\nBackdrop colors: "
+            f"{card['backdrop_colors']}.\nSurface or setting: {card['surface_or_setting'] or 'none'}.")
+    references = [ROOT / f"materials/card_examples/{i}.png" for i in brief["references"]]
+    answer = ask_claude(f"{task}\n\nThe images are real cards of the same category, of other objects. Match their camera, "
+                        "framing and how much setting shows. Write the model file.", references, MODEL_SCHEMA, rater)
+    log, good = [], None
+    for round_number in range(MODEL_ROUNDS + 1):
+        candidate = folder / f"{brief['id']}_{round_number}.py"
+        candidate.write_text(answer["model"], "utf-8")
+        error = render_model(candidate, folder / f"{brief['id']}_{round_number}.png")
+        log.append({"round": round_number, "error": error, "problems": answer.get("problems", [])})
+        if not error:
+            good = round_number
+        if round_number == MODEL_ROUNDS:
+            break
+        if error:
+            answer = ask_claude(f"{task}\n\nYour model file:\n```python\n{answer['model']}```\nBlender failed:\n{error}\n"
+                                "Fix it and return the whole file. ok is false.", None, LOOK_SCHEMA, rater)
+            continue
+        answer = ask_claude(f"{task}\n\nYour model file:\n```python\n{answer['model']}```\nThe image is its render, from the "
+                            "card's camera. Check it against every rule above: could the object be built and work, does "
+                            "every part attach or rest where it should, are the counts and proportions true, is it framed "
+                            "on its main body and read at once as the named object? If all is right, ok is true and model "
+                            "is empty. Otherwise list the problems and return the whole fixed file.",
+                            folder / f"{brief['id']}_{round_number}.png", LOOK_SCHEMA, rater)
+        if answer["ok"]:
+            break
+    save_json(folder / f"{brief['id']}.json", log)
+    if good is None:
+        return None
+    source.write_text((folder / f"{brief['id']}_{good}.py").read_text("utf-8"), "utf-8")
+    (folder / f"{brief['id']}_{good}.png").replace(render)
+    return render
+
+
 def make_briefs(plan, cards, seed):
     rng = random.Random(seed)
     used = Counter()
@@ -163,8 +235,15 @@ def draw_card(run, brief, attempt, notes, use_references, edit=None):
     if out.exists():
         return try_id
     references = [ROOT / f"materials/card_examples/{i}.png" for i in brief["references"]] if use_references else []
-    prompt = EDIT.format(notes="\n".join(notes)) if edit else card_brief(brief["card"])
-    references += [edit] if edit else []
+    blockout = run / "models" / f"{brief['id']}.png"
+    if edit:
+        prompt = EDIT.format(notes="\n".join(notes))
+        references.append(edit)
+    elif blockout.exists():
+        prompt = blockout_brief(brief["card"])
+        references.append(blockout)
+    else:
+        prompt = card_brief(brief["card"])
     (run / "prompts").mkdir(exist_ok=True)
     (run / "prompts" / f"{try_id}.txt").write_text(prompt, "utf-8")
     for tries_left in (1, 0):
@@ -288,6 +367,7 @@ def main():
     parser.add_argument("--rater", default="claude-opus-5-5")
     parser.add_argument("--plan", help="reuse the plan.json of an earlier run")
     parser.add_argument("--no-references", action="store_true", help="draw from text alone, as a control")
+    parser.add_argument("--no-blockouts", action="store_true", help="draw from the brief without a Blender model first")
     args = parser.parse_args()
 
     slug = re.sub(r"\W+", "-", args.theme.lower()).strip("-") + ("-noref" if args.no_references else "")
@@ -308,6 +388,11 @@ def main():
     if not briefs_path.exists():
         save_json(briefs_path, make_briefs(plan, cards, seed=args.theme))
     briefs = load_json(briefs_path)
+
+    if not args.no_blockouts:
+        with ThreadPoolExecutor(args.workers) as pool:
+            renders = list(pool.map(lambda brief: model_card(run, brief, args.rater), briefs))
+        print(f"models: {sum(r is not None for r in renders)} of {len(briefs)} rendered", flush=True)
 
     history = defaultdict(list, load_json(run / "check.json") if (run / "check.json").exists() else {})
 

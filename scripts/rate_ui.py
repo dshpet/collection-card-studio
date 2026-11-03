@@ -4,6 +4,8 @@ Twins: a real card and its redraw, sides shuffled. Pick the generated one. Old-s
 Closest: a real card and its redraws in every style drawn so far, shuffled. Pick the closest.
 Cards: every set card beside its three reference cards, all at the same size, graded 1-5.
 Trial: each drawing of scripts/trial.py beside its real card, arm hidden: does it work as built, and a grade 1-5.
+Redraw: each final card, as chosen before and as redrawn from a blockout, mixed and unlabelled, beside its
+reference cards: does it work as built, and a grade 1-5.
 
     rate_ui.py              then open http://127.0.0.1:8765
     rate_ui.py --summary    what the ratings say so far
@@ -66,7 +68,24 @@ def items():
         trial.append({"id": f"trial/{path.parent.parent.name}/{path.stem}", "kind": "trial", "name": brief["card"]["name"],
                       "images": [f"materials/card_examples/{brief['real']}.png", str(path.relative_to(ROOT))]})
     rng.shuffle(trial)
-    return twins + closest + cards + trial
+    redraw = []
+    for run in final:
+        new_run = ROOT / "runs" / f"{run}-blockout"
+        if not (new_run / "check.json").exists():
+            continue
+        old_briefs = {brief["id"]: brief for brief in load_json(ROOT / "runs" / run / "briefs.json")}
+        old_history, new_history = load_json(ROOT / "runs" / run / "check.json"), load_json(new_run / "check.json")
+        for brief in load_json(new_run / "briefs.json"):
+            if not new_history.get(brief["id"]):
+                continue
+            old_id = brief["source"].split("/")[1]
+            for arm, folder, try_id in (("old", run, best_try(old_history[old_id])["try_id"]),
+                                        ("new", new_run.name, best_try(new_history[brief["id"]])["try_id"])):
+                redraw.append({"id": f"redraw/{arm}/{run}/{old_id}", "kind": "redraw", "name": brief["card"]["name"],
+                               "images": [f"runs/{folder}/tries/{try_id}.png"]
+                               + [f"materials/card_examples/{i}.png" for i in old_briefs[old_id]["references"]]})
+    rng.shuffle(redraw)
+    return twins + closest + cards + trial + redraw
 
 
 def ratings():
@@ -115,8 +134,8 @@ def summary():
             grades[entry["set"]].append(entry["grade"])
         elif entry["kind"] == "closest":
             closest[entry["style"]] += 1
-        elif entry["kind"] == "trial":
-            arm = entry["id"].split("/")[1]
+        elif entry["kind"] in ("trial", "redraw"):
+            arm = entry["kind"] + "/" + entry["id"].split("/")[1]
             if entry.get("works"):
                 works[arm][entry["works"]] += 1
             if entry.get("grade"):
@@ -124,7 +143,7 @@ def summary():
     for arm in sorted(set(works) | set(trial)):
         counts = ", ".join(f"{works[arm][w]} {w}" for w in ("yes", "slight", "no"))
         grade = f", mean grade {mean(trial[arm]):.1f} from {len(trial[arm])}" if trial[arm] else ""
-        print(f"trial, {arm}: works {counts}{grade}")
+        print(f"{arm}: works {counts}{grade}")
     for style, count in sorted(closest.items(), key=lambda item: -item[1]):
         print(f"closest: {style} chosen {count} times")
     for style, hits in sorted(picks.items()):
@@ -156,13 +175,13 @@ img { display: block; max-width: 100%; border-radius: 10px; }
 textarea { display: block; width: 100%; max-width: 876px; height: 56px; margin: 0 auto; box-sizing: border-box; }
 #result { text-align: center; min-height: 22px; font-weight: 600; }
 </style></head><body>
-<header><b>Card ratings</b><button id="tab-twin">Twins</button><button id="tab-closest">Closest</button><button id="tab-card">Cards</button><button id="tab-trial">Trial</button>
+<header><b>Card ratings</b><button id="tab-twin">Twins</button><button id="tab-closest">Closest</button><button id="tab-card">Cards</button><button id="tab-trial">Trial</button><button id="tab-redraw">Redraw</button>
 <span id="progress"></span><label style="margin-left:auto">Rater <input id="rater" size="10"></label></header>
 <main id="main"></main>
 <script>
 let items = [], ratings = {}, mode = "twin";
-const position = { twin: 0, closest: 0, card: 0, trial: 0 };
-const kinds = ["twin", "closest", "card", "trial"];
+const position = { twin: 0, closest: 0, card: 0, trial: 0, redraw: 0 };
+const kinds = ["twin", "closest", "card", "trial", "redraw"];
 const works = [["yes", "Y · Works"], ["slight", "S · Slightly off"], ["no", "X · Broken"]];
 const rater = document.getElementById("rater");
 try { rater.value = localStorage.getItem("rater") || "me"; } catch (e) { rater.value = "me"; }
@@ -190,7 +209,7 @@ function show() {
   const item = current(), entry = ratings[key(item)];
   for (const kind of kinds) document.getElementById("tab-" + kind).className = kind === mode ? "on" : "";
   const counts = kind => list(kind).filter(i => ratings[key(i)]).length + "/" + list(kind).length;
-  document.getElementById("progress").textContent = "Twins " + counts("twin") + " · Closest " + counts("closest") + " · Cards " + counts("card") + " · Trial " + counts("trial");
+  document.getElementById("progress").textContent = "Twins " + counts("twin") + " · Closest " + counts("closest") + " · Cards " + counts("card") + " · Trial " + counts("trial") + " · Redraw " + counts("redraw");
   let html;
   if (mode === "twin") {
     html = `<p class="hint">One card is real, one was generated from a text brief. Which one is generated? Keys: A, B, N for can't tell, arrows to move.</p>
@@ -205,6 +224,13 @@ function show() {
   } else if (mode === "trial") {
     html = `<p class="hint">The outlined card is real. Does the generated object work as built, and could the card sit beside the real one? Keys: Y, S, X and 1 to 5, arrows to move.</p>
       <div class="cards trial">${item.images.map((src, i) => `<figure class="big"><img src="/${src}"><figcaption>${i ? "generated" : "real · " + item.name}</figcaption></figure>`).join("")}</div>
+      <div class="row">${works.map(([w, label]) => `<button data-works="${w}" class="${entry && entry.works === w ? "on" : ""}">${label}</button>`).join("")}</div>
+      <div class="row">${[1, 2, 3, 4, 5].map(g => `<button data-grade="${g}" class="${entry && entry.grade === g ? "on" : ""}">${g} · ${grades[g]}</button>`).join("")}</div>`;
+  } else if (mode === "redraw") {
+    const [card, ...references] = item.images;
+    html = `<p class="hint">Does the outlined object work as built, and could the card sit next to the real ones beside it? Keys: Y, S, X and 1 to 5, arrows to move.</p>
+      <div class="cards same"><figure><img src="/${card}"><figcaption>${item.name}</figcaption></figure>
+      ${references.map(src => `<figure><img src="/${src}"><figcaption>real</figcaption></figure>`).join("")}</div>
       <div class="row">${works.map(([w, label]) => `<button data-works="${w}" class="${entry && entry.works === w ? "on" : ""}">${label}</button>`).join("")}</div>
       <div class="row">${[1, 2, 3, 4, 5].map(g => `<button data-grade="${g}" class="${entry && entry.grade === g ? "on" : ""}">${g} · ${grades[g]}</button>`).join("")}</div>`;
   } else {
@@ -235,15 +261,15 @@ document.onkeydown = event => {
   else if (mode === "twin" && "abn".includes(press) && press) {
     const answer = press === "n" ? "neither" : press.toUpperCase();
     save({ answer, correct: answer === item.generated });
-  } else if ((mode === "card" || mode === "trial") && "12345".includes(press) && press) save({ grade: Number(press) });
-  else if (mode === "trial" && "ysx".includes(press) && press) save({ works: { y: "yes", s: "slight", x: "no" }[press] });
+  } else if (["card", "trial", "redraw"].includes(mode) && "12345".includes(press) && press) save({ grade: Number(press) });
+  else if ((mode === "trial" || mode === "redraw") && "ysx".includes(press) && press) save({ works: { y: "yes", s: "slight", x: "no" }[press] });
   else if (mode === "closest" && Number(press) >= 1 && Number(press) <= item.styles.length) save({ style: item.styles[Number(press) - 1] });
 };
 for (const kind of kinds) document.getElementById("tab-" + kind).onclick = () => { mode = kind; show(); };
 fetch("/data").then(r => r.json()).then(data => {
   items = data.items; ratings = data.ratings;
   for (const kind of kinds) position[kind] = Math.max(0, list(kind).findIndex(i => !ratings[key(i)]));
-  if (list("trial").length) mode = "trial";
+  mode = list("redraw").length ? "redraw" : list("trial").length ? "trial" : mode;
   show();
 });
 </script></body></html>"""

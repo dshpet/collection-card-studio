@@ -19,16 +19,11 @@ from common import ROOT, load_json, save_json
 from PIL import Image
 
 from draw import draw
-from make_set import SIZE, card_brief
-from style import PATTERNS
+from make_set import SIZE, blockout_brief, card_brief
 
 RUN = ROOT / "runs" / "trial"
 ARMS = ("control", "how", "blockout", "blockout2")
 MODELS = {"blockout": "models", "blockout2": "models2"}
-BLOCKOUT = """The attached images are real cards from the game, except the last one, which is a 3D blockout of a new card. The blockout is right about the object's shape, its parts, where each part attaches and what it rests on, and about the camera and the framing.
-Redraw the blockout as a finished card that could sit beside the real cards unnoticed: the same rendering, lighting, finish, color and level of detail. Keep every part, every connection, the pose, the camera and the framing exactly. Change only the surfaces: materials, bevels, shading and small details, and draw the backdrop and setting.
-Each material looks like itself, with a little quiet detail and natural local color. Shiny materials carry one soft highlight. Cloth, cord and wood stay matte.
-Draw only what the subject names. No text, letters, numbers, frame, border or watermark."""
 
 
 def briefs():
@@ -50,11 +45,7 @@ def prompt(arm, brief):
         return card_brief(card)
     if arm == "how":
         return card_brief(card).replace(f"Subject: {card['subject']}", f"Subject: {card['subject']}\nHow it works: {brief['how']}")
-    lines = [BLOCKOUT, f"Subject: {card['subject']}", f"Hero colors: {card['hero_colors']}.",
-             f"Backdrop: {PATTERNS[card['pattern']].format(topic='simple')} in {card['backdrop_colors']}."]
-    if card["surface_or_setting"]:
-        lines.append(f"Surface or setting: {card['surface_or_setting']}.")
-    return "\n".join(lines)
+    return blockout_brief(card)
 
 
 def draw_one(job):

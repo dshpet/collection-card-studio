@@ -23,4 +23,4 @@ The theme is required. Wishes are optional. Do not ask about anything else.
 
    Colors are blue, orange, magenta and purple. The result is `runs/<slug>/screen_N.png`.
 
-The run needs the Codex and Claude CLIs logged in. To start a topic over, delete both `runs/<slug>` and `runs/review/<slug>`.
+The run needs the Codex and Claude CLIs logged in, and Blender on the PATH for the blockouts. To start a topic over, delete both `runs/<slug>` and `runs/review/<slug>`.

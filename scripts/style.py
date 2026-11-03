@@ -13,6 +13,11 @@ CATEGORY_RULES = {
     "4": "A close view of the object in its real place, central and large. The setting is open and calm: a few large soft shapes, with nothing added around the object.",
 }
 
+BLOCKOUT = """The attached images are real cards from the game, except the last one, which is a 3D blockout of a new card. The blockout is right about the object's shape, its parts, where each part attaches and what it rests on, and about the camera and the framing.
+Redraw the blockout as a finished card that could sit beside the real cards unnoticed: the same rendering, lighting, finish, color and level of detail. Keep every part, every connection, the pose, the camera and the framing exactly. Change only the surfaces: materials, bevels, shading and small details, and draw the backdrop and setting.
+Each material looks like itself, with a little quiet detail and natural local color. Shiny materials carry one soft highlight. Cloth, cord and wood stay matte.
+Draw only what the subject names. No text, letters, numbers, frame, border or watermark."""
+
 EDIT = """The last attached image is a draft of a new card. The other images are real cards from the game.
 Redraw the draft with these changes and keep everything else: the object, its pose, the backdrop and the colors.
 {notes}"""

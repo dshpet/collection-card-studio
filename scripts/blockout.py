@@ -123,6 +123,63 @@ def tube(points, r, m=None, curved=False, setting=False):
     return _finish(obj, (0, 0, 0), (0, 0, 0), m, 0, setting)
 
 
+def lathe(profile, at=(0, 0, 0), rot=(0, 0, 0), m=None, setting=False, verts=64):
+    """A solid of revolution about the local z: profile is (radius, z) from bottom to top. A radius of 0 closes the end."""
+    points = [(r * math.cos(2 * math.pi * i / verts), r * math.sin(2 * math.pi * i / verts), z)
+              for r, z in profile for i in range(verts)]
+    faces = [(a * verts + i, a * verts + (i + 1) % verts, (a + 1) * verts + (i + 1) % verts, (a + 1) * verts + i)
+             for a in range(len(profile) - 1) for i in range(verts)]
+    for end in (0, len(profile) - 1):
+        if profile[end][0] > 0:
+            ring = [end * verts + i for i in range(verts)]
+            faces.append(tuple(ring if end else reversed(ring)))
+    mesh = bpy.data.meshes.new("lathe")
+    mesh.from_pydata(points, [], faces)
+    obj = bpy.data.objects.new("lathe", mesh)
+    bpy.context.collection.objects.link(obj)
+    bpy.context.view_layer.objects.active = obj
+    obj.select_set(True)
+    bpy.ops.object.mode_set(mode="EDIT")
+    bpy.ops.mesh.remove_doubles(threshold=1e-5)
+    bpy.ops.mesh.normals_make_consistent(inside=False)
+    bpy.ops.object.mode_set(mode="OBJECT")
+    obj.select_set(False)
+    return _finish(obj, at, rot, m, 0, setting)
+
+
+def blob(balls, m=None, setting=False):
+    """One soft organic form from merged balls: each is (x, y, z, radius) or (x, y, z, radius, (sx, sy, sz)).
+
+    A lone ball shows its radius. Balls that overlap or nearly touch melt together with a soft neck."""
+    name = f"blob{len(bpy.data.objects)}"  # metaballs that share a base name melt together
+    data = bpy.data.metaballs.new(name)
+    data.resolution = data.render_resolution = max(0.003, min(ball[3] for ball in balls) / 6)
+    for ball in balls:
+        element = data.elements.new(type="ELLIPSOID" if len(ball) > 4 else "BALL")
+        element.co, element.radius = ball[:3], ball[3] / 0.575  # the surface sits at 0.575 of a metaball's radius
+        if len(ball) > 4:
+            element.size_x, element.size_y, element.size_z = ball[4]
+    obj = bpy.data.objects.new(name, data)
+    bpy.context.collection.objects.link(obj)
+    bpy.context.view_layer.update()
+    for other in bpy.context.selected_objects:
+        other.select_set(False)
+    bpy.context.view_layer.objects.active = obj
+    obj.select_set(True)
+    bpy.ops.object.convert(target="MESH")
+    obj = bpy.context.object
+    obj.select_set(False)
+    return _finish(obj, (0, 0, 0), (0, 0, 0), m, 0, setting)
+
+
+def warp(part, fn):
+    """Move every vertex of a mesh part through fn((x, y, z)) -> (x, y, z), in the part's own coordinates."""
+    for vertex in part.data.vertices:
+        vertex.co = fn(tuple(vertex.co))
+    part.data.update()
+    return part
+
+
 def floor(color, finish="matte", size=40, z=0.0):
     return box((size, size, 0.02), at=(0, 0, z - 0.01), m=mat(color, finish), bevel=0, setting=True)
 
@@ -216,7 +273,7 @@ def render(model, out):
     exec(compile(open(model, encoding="utf-8").read(), model, "exec"), namespace)
     spec = namespace["SCENE"]
     helpers = types.SimpleNamespace(mat=mat, box=box, cyl=cyl, cone=cone, sphere=sphere, torus=torus, tube=tube,
-                                    floor=floor, turn=turn, unframed=unframed)
+                                    lathe=lathe, blob=blob, warp=warp, floor=floor, turn=turn, unframed=unframed)
     namespace["build"](helpers)
     bpy.context.view_layer.update()
 
