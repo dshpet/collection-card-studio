@@ -399,15 +399,19 @@ def check_cards(name, cards, rater="claude-opus-5-5", checks=CHECKS):
     return found
 
 
-def major_errors(name, records):
-    """{record id: (major errors, fix wording)} from both checkers."""
+def checker_errors(name, records):
+    """{record id: (errors as {severity, what}, fix wording)} from both checkers."""
     found = check_cards(name, records)
     result = {}
     for record in records:
         reports = [found[check].get(record["id"]) or {} for check in CHECKS]
-        errors = [e["what"] for report in reports for e in report.get("errors", []) if e["severity"] == "major"]
+        errors = [{"severity": e["severity"], "what": e["what"]} for report in reports for e in report.get("errors", [])]
         result[record["id"]] = (errors, " ".join(r.get("fix", "") for r in reports if r.get("errors")).strip())
     return result
+
+
+def major(errors):
+    return [e["what"] for e in errors if e["severity"] == "major"]
 
 
 def try_record(run, try_id, **extra):
@@ -438,13 +442,14 @@ def choose(run, briefs, history, rater="claude-opus-5-5"):
     real = {c["id"]: c for c in real_cards()}
     lessons = lesson_sheets(lessons_for(), "staging_detail", folder)
     candidates = [try_record(run, t["try_id"]) for brief in briefs for t in history[brief["id"]]]
-    errors = major_errors(f"{run.name}/v{briefs[0]['variant']}candidates", candidates)
+    errors = checker_errors(f"{run.name}/v{briefs[0]['variant']}candidates", candidates)
     sheets, options = [], {}
     for brief in briefs:
         for t in history[brief["id"]]:
             t["errors"] = errors[t["try_id"]][0]
         passed = [t for t in history[brief["id"]] if t["passed"]] or history[brief["id"]]
-        tries = [t for t in passed if not t["errors"]] or passed
+        # Minor errors count too: majors alone found 10 of the 21 cards the user flagged, any error 18
+        tries = [t for t in passed if not t["errors"]] or [t for t in passed if not major(t["errors"])] or passed
         options[brief["id"]] = tries
         paths = [run / "tries" / f"{t['try_id']}.png" for t in tries]
         sheets.append(candidate_sheet(real[brief["references"][0]], paths, folder / "sheets" / f"{brief['id']}.png"))
@@ -486,7 +491,7 @@ def review_variant(run, variant, round_number, briefs, history, rater):
     rng.shuffle(entries)
 
     name = f"{run.name}/v{variant}r{round_number}"
-    errors = major_errors(name, [record for record, _ in entries if not record["real"]])
+    errors = checker_errors(name, [record for record, _ in entries if not record["real"]])
     pairs = blind_pairs(entries, name)
     reports = specialists(name, pairs, lessons_for(), used, rater, list(ROLES))
     direction = direct(name, pairs, reports, None, rater)
@@ -497,8 +502,8 @@ def review_variant(run, variant, round_number, briefs, history, rater):
     notes = {by_pair[card["pair"]]: card["note"] for card in direction["cards"]
              if card["pair"] in by_pair and not card["keep"] and card["note"]}
     for try_id, (found, fix) in errors.items():
-        if found:
-            notes[try_id] = " ".join(filter(None, (notes.get(try_id), fix or "Fix: " + " ".join(found))))
+        if major(found):
+            notes[try_id] = " ".join(filter(None, (notes.get(try_id), fix or "Fix: " + " ".join(major(found)))))
     return {ids[try_id]: note for try_id, note in notes.items()}
 
 
