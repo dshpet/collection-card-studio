@@ -61,6 +61,28 @@ The 30 final cards, as chosen before and as redrawn from a modeller's blockout (
 - **Measures miss it.** Gloss share, highlight share and micro texture sit at the real median in both arms (percentiles 0.47 to 0.51, micro texture 0.40). The gloss the user sees is in the kind of highlight, not its area.
 - **Topic.** A coffin and a tombstone with a cross may upset players. The planner should avoid death and religious symbols.
 
+## Soft render and photos, 2026-11-04
+
+`scripts/trial2.py`, rated blind against the old card. Finish cards, models rendered matte: soft beat old 2 times and lost 4. The cards lost designed shape with the gloss: the cat's face, the boot's tooling, the hat's curl. Matte primitives give primitive charm ("texture and color is better, but form is somewhat lacking"). Built objects: remodel 2/1/4 wins/losses/ties, photo 2/2/3, photo_style 3/2/2. The saddle rose from 2 to 5 and the cauldron stayed at 1 in every arm. Photos taught real construction that reads as wrong, such as smaller front wagon wheels and a raised dome entry with a ladder. The target is iconic logic, not engineering truth.
+
+## Uniform scores against the user, 2026-11-04
+
+`scripts/score.py` puts every graded card on one list (129 graded, 80 twins, 24 hidden real cards). It scores each card by embeddings, the classifier, the nine specialists (1-10 on their vector) and the art director (1-10 overall). All reviewers saw the same real cards and six graded lessons. Results are in `runs/score/summary.json`.
+
+| Measure | Spearman with grade | Real vs drawn AUC | Predicts twins that fooled the user |
+|---|---:|---:|---:|
+| Specialists, mean | 0.00 | 0.40 | 0.40 |
+| Art director | 0.00 | 0.38 | 0.42 |
+| Best specialist (composition) | 0.16, p 0.08 | 0.45 | 0.47 |
+| CSD, nearest real cards | 0.06 | 0.59 | 0.38 |
+| DINOv3 classifier | 0.00 | 0.61 | 0.59 |
+| CSD, own real twin | | | **0.65** |
+
+- **The user is the ceiling.** 22 images graded twice matched 13 times, mean gap 0.55, Spearman 0.68.
+- **Model reviewers rank real cards lowest,** even with graded lessons. They call them painterly, flat, pillowy or "a different style". Their idea of the game is narrower than the real set. Paired on the same object, only the director leans the right way, final above old 19 to 13 (p 0.06).
+- **Distance to the real cluster measures content.** Whole-card embeddings put old twins as close as final ones or closer, and new-topic cards far from all real cards whatever their style.
+- **With content held equal there is signal.** CSD puts the final twin nearer its real card than the old one in 29 of 40 (Wilcoxon p 0.0001), agrees with the user's closest pick 15 of 36 against 9 by chance (p 0.02), and predicts which twins fooled the user at AUC 0.65. It needs a real card of the same object, so it cannot score new set cards.
+
 The first run looked off to a human, yet every automatic check passed it. This file records what was wrong, why the checks missed it, and what fixed it.
 
 ## How the gap was measured
