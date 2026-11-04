@@ -20,9 +20,8 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from statistics import mean
 from urllib.parse import unquote
 
-from common import ROOT, load_json, save_json
+from common import ROOT, best_try, load_json, save_json
 
-from make_set import best_try
 
 RATINGS = ROOT / "runs" / "ratings.json"
 SETS = ("western", "sci-fi", "horror")
@@ -286,7 +285,10 @@ def main():
         return
     ITEMS = items()
     print(f"open http://127.0.0.1:{args.port}", flush=True)
-    ThreadingHTTPServer(("127.0.0.1", args.port), Page).serve_forever()
+    try:
+        ThreadingHTTPServer(("127.0.0.1", args.port), Page).serve_forever()
+    except KeyboardInterrupt:
+        pass
 
 
 if __name__ == "__main__":

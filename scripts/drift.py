@@ -37,7 +37,7 @@ FIELDS = ("shape_proportions", "surface_finish", "color_palette", "value_contras
 
 def picked(run):
     """The best try of every card in a run."""
-    from make_set import best_try
+    from common import best_try
 
     folder = ROOT / "runs" / run
     records = []

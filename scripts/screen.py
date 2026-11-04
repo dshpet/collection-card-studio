@@ -6,12 +6,11 @@
 
 import argparse
 
-from common import ROOT, load_json
+from common import ROOT, best_try, load_json
 
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
-from make_set import best_try
 
 TEMPLATES = {"purple": "3458764679659989297", "blue": "3458764679659989298", "orange": "3458764679659989299",
              "magenta": "3458764679659989300"}

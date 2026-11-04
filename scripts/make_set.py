@@ -15,7 +15,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 os.environ.setdefault("HF_HUB_OFFLINE", "1")  # every local model is already cached
 
-from common import ANALYSIS, ROOT, load_json, save_json
+from common import ANALYSIS, ROOT, best_try, load_json, save_json
 
 import numpy as np
 import torch
@@ -315,10 +315,6 @@ def check_tries(run, tries, knowledge, workers):
         entry.update(style=round(float(score), 3), misses=misses, issues=issues, seen=rating,
                      passed=not issues and len(misses) <= ALLOWED_MISSES)
     return tries
-
-
-def best_try(tries):
-    return min(tries, key=lambda t: (not t.get("chosen"), not t["passed"], len(t["issues"]), len(t["misses"])))
 
 
 def contact_sheet(paths, out, columns=5):

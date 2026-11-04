@@ -39,3 +39,7 @@ def save_json(path, value):
 
 def load_json(path):
     return json.loads(path.read_text("utf-8"))
+
+
+def best_try(tries):
+    return min(tries, key=lambda t: (not t.get("chosen"), not t["passed"], len(t["issues"]), len(t["misses"])))

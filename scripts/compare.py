@@ -4,14 +4,13 @@ import os
 
 os.environ.setdefault("HF_HUB_OFFLINE", "1")
 
-from common import ANALYSIS, ROOT, load_json, save_json
+from common import ANALYSIS, ROOT, best_try, load_json, save_json
 
 import numpy as np
 import torch
 from PIL import Image
 
 from embed import MODELS, load_csd
-from make_set import best_try
 from measure import measure_card
 from summarize import hue_bin
 

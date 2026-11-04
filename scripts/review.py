@@ -472,7 +472,7 @@ def choose(run, briefs, history, rater="claude-opus-5-5"):
 def review_variant(run, variant, round_number, briefs, history, rater):
     """Blind review of a variant with hidden real controls. Returns {brief id: edit note}."""
     from estimate import write_marigold
-    from make_set import best_try
+    from common import best_try
     from measure import measure_card
 
     real = {c["id"]: c for c in real_cards()}
