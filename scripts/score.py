@@ -1,6 +1,7 @@
 """One uniform score for every card the user rated, checked against the user's grades.
 
 Each card gets, on one shared list:
+    twins        each twins40 redraw against its own real card, so content is equal (runs/score/pair_similarity.json)
     embeddings   how real it looks to CSD (a style model), DINOv3 and SigLIP 2: mean similarity to its ten nearest
                  real cards, as a percentile among real cards scored the same way. 0.5 means like a real card.
                  A card's own twin and its reference cards are left out of its neighbours, so content does not count.
@@ -152,6 +153,32 @@ def embed(rows):
     for row, value in zip(rows, p_real):
         scores[row["key"]]["classifier"] = round(float(value), 3)
     save_json(OUT / "embeddings.json", scores)
+
+
+def pair_similarity():
+    """Content held equal: each twins40 redraw against its own real card, per style."""
+    import torch
+
+    from embed import MODELS, load_csd, load_hf
+
+    briefs = load_json(ROOT / "runs" / "twins40" / "briefs.json")
+    styles = sorted(p.name for p in (ROOT / "runs" / "twins40").iterdir() if p.is_dir())
+    result = {}
+    for name in EMBEDDERS:
+        encode = load_csd(MODELS[name]) if name == "csd" else load_hf(
+            MODELS[name], torch.float32 if name == "dinov3" else torch.float16)
+        result[name] = {}
+        for brief in briefs:
+            paths = [ROOT / f"materials/card_examples/{brief['real']}.png"] + [
+                ROOT / f"runs/twins40/{s}/tries/{brief['id']}_1.png" for s in styles]
+            present = [s for s, p in zip(styles, paths[1:]) if p.exists()]
+            with torch.inference_mode():
+                v = torch.nn.functional.normalize(encode(
+                    [Image.open(p).convert("RGB") for p in paths if p.exists()]).float(), dim=-1).cpu().numpy()
+            result[name][brief["id"]] = {s: float(v[0] @ v[i + 1]) for i, s in enumerate(present)}
+        del encode
+        torch.cuda.empty_cache()
+    save_json(OUT / "pair_similarity.json", result)
 
 
 def score_schema(keys):
@@ -325,6 +352,7 @@ def main():
     save_json(OUT / "dataset.json", rows)
     if args.mode == "embed":
         embed(rows)
+        pair_similarity()
     elif args.mode == "specialists":
         specialists(rows, args.rater, args.director, args.workers)
     report(rows)
