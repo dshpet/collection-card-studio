@@ -31,6 +31,8 @@ def reached_tool(thread):
 
 def draw(prompt, references, out):
     """Draw one card with Codex's image tool and save it to out. The last reference is the most recent image."""
+    if len(references) > 5:
+        raise ValueError("Codex's image tool takes at most 5 images")
     attachments = [flag for path in references for flag in ("-i", str(path))]
     images = f", with num_last_images_to_include set to {len(references)}" if references else ""
     request = INSTRUCTION.format(images=images, prompt=prompt)

@@ -6,6 +6,7 @@ Cards: every set card beside its three reference cards, all at the same size, gr
 Trial: each drawing of scripts/trial.py beside its real card, arm hidden: does it work as built, and a grade 1-5.
 Redraw: each final card, as chosen before and as redrawn from a blockout, mixed and unlabelled, beside its
 reference cards: does it work as built, and a grade 1-5.
+Soft: the cards of scripts/trial2.py, each arm and the old card mixed and unlabelled, rated as in Redraw.
 
     rate_ui.py              then open http://127.0.0.1:8765
     rate_ui.py --summary    what the ratings say so far
@@ -84,7 +85,18 @@ def items():
                                "images": [f"runs/{folder}/tries/{try_id}.png"]
                                + [f"materials/card_examples/{i}.png" for i in old_briefs[old_id]["references"]]})
     rng.shuffle(redraw)
-    return twins + closest + cards + trial + redraw
+    soft = []
+    for path in sorted((ROOT / "runs" / "trial2").glob("*/*/tries/*_1.png")):
+        arm, run, card_id = path.parts[-4], path.parts[-3], path.stem[:-2]
+        brief = next(b for b in load_json(ROOT / "runs" / run / "briefs.json") if b["id"] == card_id)
+        references = [f"materials/card_examples/{i}.png" for i in brief["references"]]
+        old = f"runs/{run}/tries/{best_try(load_json(ROOT / 'runs' / run / 'check.json')[card_id])['try_id']}.png"
+        for name, image in ((arm, str(path.relative_to(ROOT))), ("old", old)):
+            if not any(item["id"] == f"soft/{name}/{run}/{card_id}" for item in soft):
+                soft.append({"id": f"soft/{name}/{run}/{card_id}", "kind": "soft", "name": brief["card"]["name"],
+                             "images": [image] + references})
+    rng.shuffle(soft)
+    return twins + closest + cards + trial + redraw + soft
 
 
 def ratings():
@@ -133,7 +145,7 @@ def summary():
             grades[entry["set"]].append(entry["grade"])
         elif entry["kind"] == "closest":
             closest[entry["style"]] += 1
-        elif entry["kind"] in ("trial", "redraw"):
+        elif entry["kind"] in ("trial", "redraw", "soft"):
             arm = entry["kind"] + "/" + entry["id"].split("/")[1]
             if entry.get("works"):
                 works[arm][entry["works"]] += 1
@@ -174,13 +186,13 @@ img { display: block; max-width: 100%; border-radius: 10px; }
 textarea { display: block; width: 100%; max-width: 876px; height: 56px; margin: 0 auto; box-sizing: border-box; }
 #result { text-align: center; min-height: 22px; font-weight: 600; }
 </style></head><body>
-<header><b>Card ratings</b><button id="tab-twin">Twins</button><button id="tab-closest">Closest</button><button id="tab-card">Cards</button><button id="tab-trial">Trial</button><button id="tab-redraw">Redraw</button>
+<header><b>Card ratings</b><button id="tab-twin">Twins</button><button id="tab-closest">Closest</button><button id="tab-card">Cards</button><button id="tab-trial">Trial</button><button id="tab-redraw">Redraw</button><button id="tab-soft">Soft</button>
 <span id="progress"></span><label style="margin-left:auto">Rater <input id="rater" size="10"></label></header>
 <main id="main"></main>
 <script>
 let items = [], ratings = {}, mode = "twin";
-const position = { twin: 0, closest: 0, card: 0, trial: 0, redraw: 0 };
-const kinds = ["twin", "closest", "card", "trial", "redraw"];
+const position = { twin: 0, closest: 0, card: 0, trial: 0, redraw: 0, soft: 0 };
+const kinds = ["twin", "closest", "card", "trial", "redraw", "soft"];
 const works = [["yes", "Y · Works"], ["slight", "S · Slightly off"], ["no", "X · Broken"]];
 const rater = document.getElementById("rater");
 try { rater.value = localStorage.getItem("rater") || "me"; } catch (e) { rater.value = "me"; }
@@ -208,7 +220,7 @@ function show() {
   const item = current(), entry = ratings[key(item)];
   for (const kind of kinds) document.getElementById("tab-" + kind).className = kind === mode ? "on" : "";
   const counts = kind => list(kind).filter(i => ratings[key(i)]).length + "/" + list(kind).length;
-  document.getElementById("progress").textContent = "Twins " + counts("twin") + " · Closest " + counts("closest") + " · Cards " + counts("card") + " · Trial " + counts("trial") + " · Redraw " + counts("redraw");
+  document.getElementById("progress").textContent = "Twins " + counts("twin") + " · Closest " + counts("closest") + " · Cards " + counts("card") + " · Trial " + counts("trial") + " · Redraw " + counts("redraw") + " · Soft " + counts("soft");
   let html;
   if (mode === "twin") {
     html = `<p class="hint">One card is real, one was generated from a text brief. Which one is generated? Keys: A, B, N for can't tell, arrows to move.</p>
@@ -225,7 +237,7 @@ function show() {
       <div class="cards trial">${item.images.map((src, i) => `<figure class="big"><img src="/${src}"><figcaption>${i ? "generated" : "real · " + item.name}</figcaption></figure>`).join("")}</div>
       <div class="row">${works.map(([w, label]) => `<button data-works="${w}" class="${entry && entry.works === w ? "on" : ""}">${label}</button>`).join("")}</div>
       <div class="row">${[1, 2, 3, 4, 5].map(g => `<button data-grade="${g}" class="${entry && entry.grade === g ? "on" : ""}">${g} · ${grades[g]}</button>`).join("")}</div>`;
-  } else if (mode === "redraw") {
+  } else if (mode === "redraw" || mode === "soft") {
     const [card, ...references] = item.images;
     html = `<p class="hint">Does the outlined object work as built, and could the card sit next to the real ones beside it? Keys: Y, S, X and 1 to 5, arrows to move.</p>
       <div class="cards same"><figure><img src="/${card}"><figcaption>${item.name}</figcaption></figure>
@@ -260,15 +272,15 @@ document.onkeydown = event => {
   else if (mode === "twin" && "abn".includes(press) && press) {
     const answer = press === "n" ? "neither" : press.toUpperCase();
     save({ answer, correct: answer === item.generated });
-  } else if (["card", "trial", "redraw"].includes(mode) && "12345".includes(press) && press) save({ grade: Number(press) });
-  else if ((mode === "trial" || mode === "redraw") && "ysx".includes(press) && press) save({ works: { y: "yes", s: "slight", x: "no" }[press] });
+  } else if (["card", "trial", "redraw", "soft"].includes(mode) && "12345".includes(press) && press) save({ grade: Number(press) });
+  else if (["trial", "redraw", "soft"].includes(mode) && "ysx".includes(press) && press) save({ works: { y: "yes", s: "slight", x: "no" }[press] });
   else if (mode === "closest" && Number(press) >= 1 && Number(press) <= item.styles.length) save({ style: item.styles[Number(press) - 1] });
 };
 for (const kind of kinds) document.getElementById("tab-" + kind).onclick = () => { mode = kind; show(); };
 fetch("/data").then(r => r.json()).then(data => {
   items = data.items; ratings = data.ratings;
   for (const kind of kinds) position[kind] = Math.max(0, list(kind).findIndex(i => !ratings[key(i)]));
-  mode = list("redraw").length ? "redraw" : list("trial").length ? "trial" : mode;
+  mode = list("soft").some(i => !ratings[key(i)]) ? "soft" : list("redraw").length ? "redraw" : mode;
   show();
 });
 </script></body></html>"""

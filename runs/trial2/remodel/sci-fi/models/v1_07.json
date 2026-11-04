@@ -1,0 +1,22 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "problems": [
+   "The solar panel is almost hidden. It sits straight behind the mast and dish along the camera's line of sight, so only a sliver shows and the card doesn't show it as a solar panel. Move the dish to the front-left of the top and the panel to the back-right, and raise the panel a little so it is fully visible.",
+   "The moon dust slab renders nearly white, so it reads as a white floor and not gray moon dust. It also blends with the white body. Darken it to a clear mid gray."
+  ]
+ },
+ {
+  "round": 2,
+  "error": null,
+  "problems": [
+   "The solar panel is tilted with rot (-15, 0, 0), which turns its face toward the back (+y), away from the camera. From the low camera it shows almost edge-on as a thin blue sliver, so the 'tiny solar panel' barely reads. Tilt it toward the front (rot (22, 0, 0)), make it a little larger, and raise its post a little so the face shows above the body top."
+  ]
+ }
+]

@@ -1,0 +1,26 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "problems": [
+   "The crater, which the card names, is almost entirely off the right edge. Only a sliver of its rim shows. Move it into the empty foreground at the front right of the base.",
+   "The tunnel (top at z 0.43) rises above the 0.35 wall and pushes into the glass dome, which leaves a blue blob where they meet. Raise the wall to 0.42 and lower the tunnel so it joins the wall cleanly.",
+   "The moon ground renders almost white rather than gray. Darken the floor, crater and hills.",
+   "The dome is empty, so the glass reads black. Add a white floor disc at the wall top so the dome reads as a house."
+  ]
+ },
+ {
+  "round": 2,
+  "error": "00:04.278  cycles           | WARNING CUEW initialization failed: Error opening the library\n/home/dshpet/Dev_Projects/playrix_testtask/scripts/blockout.py:44: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0\n  m.use_nodes = True\n/home/dshpet/Dev_Projects/playrix_testtask/scripts/blockout.py:263: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0\n  world.use_nodes = True\nMemory access fault by GPU node-2 (Agent handle: 0x7f7f797af580) on address 0x7f7de99ff000. Reason: Page not present or supervisor privilege.\nFailed to write segment data to pipe: Broken pipe\nGPU coredump: handler exited with error (status: 1)\nGPU core dump failed\n",
+  "problems": [
+   "The glass dome has visible steps: its lathe profile uses only 18 points at 5-degree spacing, so it renders as rings and terraces instead of one smooth glass shell. Use 1-degree steps.",
+   "The tunnel runs 60 degrees away from the camera, toward the front left. Its end cap and the small yellow door are seen almost edge-on as a thin yellow strip, so the door does not read at once. Turn the tunnel toward the front, about 40 degrees off the camera, so the door shows its face while the tunnel's length still shows.",
+   "The crater is cut off by the bottom-right corner and pushed up against the frame. Move it a little right and back so it reads as a crater lying beside the base."
+  ]
+ }
+]

@@ -174,24 +174,25 @@ def blockout_brief(card):
     return "\n".join(lines)
 
 
-def render_model(source, out):
+def render_model(source, out, look="plain"):
     """Render a model file with scripts/blockout.py. Returns Blender's error, or None."""
     out.unlink(missing_ok=True)
     done = subprocess.run(["blender", "-b", "--factory-startup", "--python-exit-code", "1", "--python",
-                           str(ROOT / "scripts" / "blockout.py"), "--", str(source), str(out)],
+                           str(ROOT / "scripts" / "blockout.py"), "--", str(source), str(out), look],
                           capture_output=True, text=True, timeout=600)
     return None if out.exists() and not done.returncode else (done.stdout + done.stderr)[-1500:]
 
 
-def model_card(run, brief, rater):
+def model_card(run, brief, rater, look="plain", photos=()):
     """Write a Blender blockout of the card's object, render it and fix what the render shows.
 
+    photos: real photos of the object, shown to the modeller for its construction only.
     Returns the render, or None when no model rendered, and the card is drawn from its brief alone."""
     folder = run / "models"
     source, render = folder / f"{brief['id']}.py", folder / f"{brief['id']}.png"
     if render.exists():
         return render
-    folder.mkdir(exist_ok=True)
+    folder.mkdir(parents=True, exist_ok=True)
     card = brief["card"]
     examples = "\n\n".join(f"```python\n{(ROOT / 'runs/trial/models2' / f'{name}.py').read_text('utf-8')}```"
                            for name in ("m16", "m36"))
@@ -200,13 +201,17 @@ def model_card(run, brief, rater):
             f"{CATEGORY_RULES[card['category']]}\nHero colors: {card['hero_colors']}.\nBackdrop colors: "
             f"{card['backdrop_colors']}.\nSurface or setting: {card['surface_or_setting'] or 'none'}.")
     references = [ROOT / f"materials/card_examples/{i}.png" for i in brief["references"]]
-    answer = ask_claude(f"{task}\n\nThe images are real cards of the same category, of other objects. Match their camera, "
-                        "framing and how much setting shows. Write the model file.", references, MODEL_SCHEMA, rater)
+    seen = (f"The first {len(references)} images are real cards of the same category, of other objects. Match their camera, "
+            "framing and how much setting shows.")
+    if photos:
+        seen += (f" The last {len(photos)} are photos of the real object. Take from them only how it is built: its parts, "
+                 "their counts and proportions, and how they connect and rest. Simplify it as the game does.")
+    answer = ask_claude(f"{task}\n\n{seen} Write the model file.", references + list(photos), MODEL_SCHEMA, rater)
     log, good = [], None
     for round_number in range(MODEL_ROUNDS + 1):
         candidate = folder / f"{brief['id']}_{round_number}.py"
         candidate.write_text(answer["model"], "utf-8")
-        error = render_model(candidate, folder / f"{brief['id']}_{round_number}.png")
+        error = render_model(candidate, folder / f"{brief['id']}_{round_number}.png", look)
         log.append({"round": round_number, "error": error, "problems": answer.get("problems", [])})
         if not error:
             good = round_number

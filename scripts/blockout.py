@@ -1,6 +1,9 @@
 """Render a 3D blockout of a card's object in Blender, for the image model to restyle.
 
-    blender -b --factory-startup --python scripts/blockout.py -- runs/trial/models/m16.py runs/trial/blockout/m16.png
+    blender -b --factory-startup --python scripts/blockout.py -- runs/trial/models/m16.py runs/trial/blockout/m16.png [soft]
+
+"soft" renders a smoother, stylized look: no clear coat, broad highlights, beveled edges in the shading, a larger
+light and more fill.
 
 A model file sets SCENE and defines build(k), where k holds the helpers below. Parts are the hero unless made
 with setting=True. The hero is framed to the real cards' median box, about 80% by 75% of the card.
@@ -21,7 +24,10 @@ BOX = (0.80, 0.75)
 FINISHES = {"satin": dict(rough=0.45), "matte": dict(rough=0.8), "gloss": dict(rough=0.25, coat=0.6),
             "metal": dict(rough=0.3, metal=1.0), "glass": dict(rough=0.05, glass=1.0), "glow": dict(rough=0.5, glow=4.0),
             "beam": dict(rough=0.5, beam=0.15)}
+SOFT = {"satin": dict(rough=0.6), "matte": dict(rough=0.85), "gloss": dict(rough=0.45),
+        "metal": dict(rough=0.5, metal=1.0)}
 ROOT = None
+LOOK = "plain"
 
 
 def linear(hex_color):
@@ -33,7 +39,7 @@ def mat(color, finish="satin"):
     name = f"{color}_{finish}"
     if name in bpy.data.materials:
         return bpy.data.materials[name]
-    spec = FINISHES[finish]
+    spec = {**FINISHES[finish], **(SOFT.get(finish, {}) if LOOK == "soft" else {})}
     m = bpy.data.materials.new(name)
     m.use_nodes = True
     shader = m.node_tree.nodes["Principled BSDF"]
@@ -53,6 +59,10 @@ def mat(color, finish="satin"):
         links.new(clear.outputs[0], mix.inputs[1])
         links.new(glow.outputs[0], mix.inputs[2])
         links.new(mix.outputs[0], nodes["Material Output"].inputs["Surface"])
+    if LOOK == "soft" and finish not in ("glow", "beam", "glass"):
+        bevel = m.node_tree.nodes.new("ShaderNodeBevel")
+        bevel.inputs["Radius"].default_value, bevel.samples = 0.02, 8
+        m.node_tree.links.new(bevel.outputs["Normal"], shader.inputs["Normal"])
     return m
 
 
@@ -241,7 +251,8 @@ def stage(scene, spec, center, distance):
     a = math.radians(spec.get("azimuth", 30) + side * 70)
     direction = Vector((math.sin(a) * 0.6, -math.cos(a) * 0.6, 0.8)).normalized()
     light = bpy.data.lights.new("key", "AREA")
-    light.size, light.energy = distance * 0.8, 60 * distance ** 2
+    soft = LOOK == "soft"
+    light.size, light.energy = distance * (1.6 if soft else 0.8), 60 * distance ** 2
     key = bpy.data.objects.new("key", light)
     scene.collection.objects.link(key)
     key.location = center + direction * distance * 1.2
@@ -254,7 +265,7 @@ def stage(scene, spec, center, distance):
     out = nodes["World Output"]
     fill, seen = nodes.new("ShaderNodeBackground"), nodes.new("ShaderNodeBackground")
     fill.inputs["Color"].default_value = [0.5 + 0.5 * c for c in linear(spec["backdrop"])[:3]] + [1]
-    fill.inputs["Strength"].default_value = 0.3
+    fill.inputs["Strength"].default_value = 0.6 if soft else 0.3
     seen.inputs["Color"].default_value = linear(spec["backdrop"])
     path, mix = nodes.new("ShaderNodeLightPath"), nodes.new("ShaderNodeMixShader")
     links.new(path.outputs["Is Camera Ray"], mix.inputs[0])
@@ -300,5 +311,6 @@ def render(model, out):
 
 
 if __name__ == "__main__":
-    model_file, out_file = sys.argv[sys.argv.index("--") + 1:][:2]
+    model_file, out_file, *rest = sys.argv[sys.argv.index("--") + 1:]
+    LOOK = rest[0] if rest else "plain"
     render(model_file, out_file)

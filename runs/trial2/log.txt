@@ -1,0 +1,148 @@
+soft sci-fi v1_05 done
+soft horror v1_09 done
+soft western v1_08 done
+western v1_09: 3 photos
+soft sci-fi v1_02 done
+western v1_10: 3 photos
+western v1_03: 3 photos
+soft western v1_02 done
+soft horror v1_02 done
+western v1_07: 2 photos
+horror v1_04: 3 photos
+sci-fi v1_10: 3 photos
+sci-fi v1_07: 3 photos
+Traceback (most recent call last):
+  File "/home/dshpet/Dev_Projects/playrix_testtask/scripts/trial2.py", line 105, in <module>
+    main()
+    ~~~~^^
+  File "/home/dshpet/Dev_Projects/playrix_testtask/scripts/trial2.py", line 101, in main
+    job.result()
+    ~~~~~~~~~~^^
+  File "/usr/lib/python3.14/concurrent/futures/_base.py", line 447, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/concurrent/futures/_base.py", line 396, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "/home/dshpet/Dev_Projects/playrix_testtask/scripts/trial2.py", line 86, in build_job
+    plain = model_card(RUN / "remodel" / run, brief, rater, look="soft")
+  File "/home/dshpet/Dev_Projects/playrix_testtask/scripts/make_set.py", line 195, in model_card
+    folder.mkdir(exist_ok=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/pathlib/__init__.py", line 1011, in mkdir
+    os.mkdir(self, mode)
+    ~~~~~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dshpet/Dev_Projects/playrix_testtask/runs/trial2/remodel/western/models'
+nanobind: leaked 2 instances!
+ - leaked instance 0x7f33a4a25068 of type "OpenImageIO.OpenImageIO.TypeDesc"
+ - leaked instance 0x7f33a4a24fc8 of type "OpenImageIO.OpenImageIO.TypeDesc"
+nanobind: leaked 3 types!
+ - leaked type "OpenImageIO.OpenImageIO.TypeDesc"
+ - leaked type "OpenImageIO.OpenImageIO.ImageSpec"
+ - leaked type "BASETYPE"
+nanobind: leaked 114 functions!
+ - leaked function ""
+ - leaked function "elementtype"
+ - leaked function ""
+ - leaked function "metadata_val"
+ - leaked function "attribute"
+ - leaked function ""
+ - leaked function "unarray"
+ - leaked function "is_box3"
+ - leaked function ""
+ - leaked function "is_vec3"
+ - ... skipped remainder
+nanobind: this is likely caused by a reference counting issue in the binding code.
+See https://nanobind.readthedocs.io/en/latest/refleaks.htmlwestern v1_10: 3 photos
+western v1_09: 3 photos
+western v1_03: 3 photos
+western v1_07: 2 photos
+remodel western v1_09 done
+photo western v1_09 done
+photo_style western v1_09: RuntimeError no image was generated
+remodel western v1_07 done
+photo_style western v1_09: RuntimeError no image was generated
+horror v1_04: 3 photos
+photo western v1_07 done
+remodel western v1_03 done
+photo_style western v1_07: RuntimeError no image was generated
+photo_style western v1_07: RuntimeError no image was generated
+sci-fi v1_07: 3 photos
+photo western v1_03 done
+photo_style western v1_03: RuntimeError no image was generated
+photo_style western v1_03: RuntimeError no image was generated
+sci-fi v1_10: 3 photos
+remodel western v1_10 done
+photo western v1_10 done
+photo_style western v1_10: RuntimeError no image was generated
+photo_style western v1_10: RuntimeError no image was generated
+remodel horror v1_04 done
+photo horror v1_04 done
+photo_style horror v1_04: RuntimeError no image was generated
+remodel sci-fi v1_07 done
+photo_style horror v1_04: RuntimeError no image was generated
+photo sci-fi v1_07 done
+photo_style sci-fi v1_07: RuntimeError no image was generated
+photo_style sci-fi v1_07: RuntimeError no image was generated
+remodel sci-fi v1_10 done
+photo sci-fi v1_10 done
+photo_style sci-fi v1_10: RuntimeError no image was generated
+photo_style sci-fi v1_10: RuntimeError no image was generated
+nanobind: leaked 2 instances!
+ - leaked instance 0x7f7be2674788 of type "OpenImageIO.OpenImageIO.TypeDesc"
+ - leaked instance 0x7f7be2675068 of type "OpenImageIO.OpenImageIO.TypeDesc"
+nanobind: leaked 3 types!
+ - leaked type "OpenImageIO.OpenImageIO.TypeDesc"
+ - leaked type "OpenImageIO.OpenImageIO.ImageSpec"
+ - leaked type "BASETYPE"
+nanobind: leaked 114 functions!
+ - leaked function ""
+ - leaked function ""
+ - leaked function ""
+ - leaked function "scanline_bytes"
+ - leaked function "get_string_attribute"
+ - leaked function ""
+ - leaked function "serialize"
+ - leaked function "default_channel_names"
+ - leaked function ""
+ - leaked function ""
+ - ... skipped remainder
+nanobind: this is likely caused by a reference counting issue in the binding code.
+See https://nanobind.readthedocs.io/en/latest/refleaks.htmlwestern v1_09: 3 photos
+western v1_10: 3 photos
+western v1_03: 3 photos
+western v1_07: 2 photos
+photo_style western v1_03 done
+horror v1_04: 3 photos
+photo_style western v1_10 done
+sci-fi v1_07: 3 photos
+photo_style western v1_09 done
+sci-fi v1_10: 3 photos
+photo_style western v1_07 done
+photo_style horror v1_04 done
+photo_style sci-fi v1_10 done
+photo_style sci-fi v1_07 done
+nanobind: leaked 2 instances!
+ - leaked instance 0x7f871c97db88 of type "OpenImageIO.OpenImageIO.TypeDesc"
+ - leaked instance 0x7f871c97d068 of type "OpenImageIO.OpenImageIO.TypeDesc"
+nanobind: leaked 3 types!
+ - leaked type "OpenImageIO.OpenImageIO.TypeDesc"
+ - leaked type "OpenImageIO.OpenImageIO.ImageSpec"
+ - leaked type "BASETYPE"
+nanobind: leaked 114 functions!
+ - leaked function ""
+ - leaked function "attribute"
+ - leaked function ""
+ - leaked function ""
+ - leaked function ""
+ - leaked function "c_str"
+ - leaked function ""
+ - leaked function "default_channel_names"
+ - leaked function ""
+ - leaked function "serialize"
+ - ... skipped remainder
+nanobind: this is likely caused by a reference counting issue in the binding code.
+See https://nanobind.readthedocs.io/en/latest/refleaks.html

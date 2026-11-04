@@ -1,0 +1,23 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "problems": [
+   "The pilot (cowcatcher) reads as a plain gray block hanging below the buffer beam, and its top sticks out past the beam. It should be a wedge: the back face upright under the beam, and the front face sloping from the beam's bottom edge down and forward to just above the rails.",
+   "The main rod at x=0.405 (r 0.02) doesn't reach the middle driver's crank pin, which ends at x=0.38. It floats on a small gap, so the middle crank pin needs to be longer to carry the rod."
+  ]
+ },
+ {
+  "round": 2,
+  "error": null,
+  "problems": [
+   "The leading axle floats. It is at z 0.2 (top 0.23), but the frame only reaches down to z 0.31, so nothing holds the leading wheel pair. The frame now runs down to z 0.17 so both the leading and driving axles pass through it.",
+   "The frame top was at z 0.49 and the running board bottom at z 0.50, leaving a small gap so the running board, boiler and cab did not sit on the frame. The frame top now meets the running board at z 0.51."
+  ]
+ }
+]
