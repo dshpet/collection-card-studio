@@ -47,6 +47,20 @@ Six twins (spotlights, calculator, chair, clock, chess table, pier), two draws e
 
 Six objects and one rater make this a small sample.
 
+## Redraw from blockouts, 2026-11-04
+
+The 30 final cards, as chosen before and as redrawn from a modeller's blockout (commit 8a46e06), 60 blind and mixed.
+
+| Arm | Works / slightly off / broken | Mean grade |
+|---|---|---:|
+| old | 23 / 6 / 1 | 3.4 |
+| blockout | 23 / 5 / 2 | 3.0 |
+
+- **The blockout lost on these cards.** Old won 15, blockout 7, 8 tied. It won on built things (saddle, lasso, badge, telescope) and lost on simple forms (boot, witch hat, candelabra, crystal ball, cat, barrel). These briefs had already been chosen as the best of several old draws, so the old arm had a head start.
+- **The blockout carries a rendered finish.** Comments: "too glossy, looks like a statue", "too texture-y", "too 3D modelled", "a little too realistic". Real cards are smoother and more stylized, satin rather than gloss. The Blender render's clearcoat, metal reflections and raking light pass through the restyle.
+- **Measures miss it.** Gloss share, highlight share and micro texture sit at the real median in both arms (percentiles 0.47 to 0.51, micro texture 0.40). The gloss the user sees is in the kind of highlight, not its area.
+- **Topic.** A coffin and a tombstone with a cross may upset players. The planner should avoid death and religious symbols.
+
 The first run looked off to a human, yet every automatic check passed it. This file records what was wrong, why the checks missed it, and what fixed it.
 
 ## How the gap was measured
