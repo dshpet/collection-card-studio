@@ -58,6 +58,7 @@ PLAN_SCHEMA = strict({
     "variants": {"type": "array", "items": strict({"cards": {"type": "array", "items": CARD_SCHEMA}})},
 })
 MODEL_SCHEMA = strict({"model": text()})
+SENSITIVE_SCHEMA = strict({"flagged": {"type": "array", "items": strict({"name": text(), "why": text()})}})
 LOOK_SCHEMA = strict({"ok": {"type": "boolean"}, "problems": {"type": "array", "items": text()}, "model": text()})
 
 
@@ -78,6 +79,7 @@ Rules learned from the game's real sets:
 - Pick the first things anyone would name for the topic: instantly recognizable objects with a simple, distinctive silhouette.
 - Every object must belong to this specific topic, not to the wider collection. A film genre set shows that genre's world, not generic cinema items such as film reels or popcorn.
 - Each card alone must make someone name the topic. Skip ordinary objects that fit only next to the others, such as an armchair in a horror set.
+- The audience is wide and casual, of every age and faith. Nothing morbid, sad or divisive: no death or burial objects (coffins, graves, tombstones, skulls, bones), no religious symbols (crosses, holy books, altars), no illness, injury, drugs or politics. Haunted-house fun is fine: a pumpkin, a cauldron, a friendly ghost sheet.
 - No characters or people, no brands, logos or real franchises. An animal may appear as an object, at most once in a set. No weapons of any kind, toy or sci-fi ones included. No blood or gore. Keep dark topics playful.
 - Cards carry no text, so skip objects that need readable words to make sense.
 - Real sets use {knowledge['set_ranges']['object_classes'][0]}-{knowledge['set_ranges']['object_classes'][1]} object classes and {knowledge['set_ranges']['scale_classes'][0]}-{knowledge['set_ranges']['scale_classes'][1]} real-world sizes, from handheld things to vehicles and buildings.
@@ -123,7 +125,21 @@ def make_plan(theme, wishes, variants, knowledge):
         plan = ask_claude(f"{prompt}\n\nYour last answer had these problems, fix them: {problems}\n"
                           f"Last answer: {json.dumps(plan)}", None, PLAN_SCHEMA)
     plan["problems"] = plan_problems(plan)
+    flagged = sensitive_cards(plan)
+    if flagged:
+        plan = ask_claude(f"{prompt}\n\nThese cards may upset players, replace them with other objects and keep every "
+                          f"rule: {flagged}\nLast answer: {json.dumps(plan)}", None, PLAN_SCHEMA)
+        plan["problems"] = plan_problems(plan)
+        plan["sensitive"] = sensitive_cards(plan)
     return plan
+
+
+def sensitive_cards(plan):
+    """A separate check that no card could offend or upset a wide, casual audience."""
+    names = sorted({card["name"] for variant in plan["variants"] for card in variant["cards"]})
+    answer = ask_claude(f"""A cozy mobile game for a wide, casual audience of every age, culture and faith shows these collection cards for the set "{plan['title']}": {names}.
+Flag every card that could offend, upset or sadden some players: death and burial (coffins, graves, tombstones, skulls), religious symbols, illness or injury, drugs, weapons, politics, national or cultural stereotypes, or anything a parent would not want a child to see. Playful spooky or fantasy objects are fine. Give the card name and a short reason. Flag nothing if all are fine.""", None, SENSITIVE_SCHEMA)
+    return answer["flagged"]
 
 
 def pick_references(card, cards, used, rng):
