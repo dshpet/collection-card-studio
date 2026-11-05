@@ -26,6 +26,8 @@ Findings on the references: [SYNTHESIS](analysis/SYNTHESIS.md). What was wrong w
 
 Rerunning continues where it stopped; `--run <name>` starts a theme fresh in a new folder. `--plan <file>` draws a plan a producer has checked or edited first, such as the drafts in `runs/plans/`. `--candidates 1 --review-rounds 0` gives a quick draft. `--cast 1` adds one character card per variant, drawn with the game's cast. To place a variant in the game's window: `scripts/screen.py western --variant 1 --color blue`.
 
+Several sets can run at once. One run peaks at about 5 GB of GPU memory and each Blender render adds about 2 GB, so on a 24 GB card three runs at a time fit with `--workers 2`.
+
 ## Teach it
 
 - **Lessons.** [analysis/lessons.md](analysis/lessons.md) holds the rules learned from the producer's ratings, in plain words the planner reads. Edit it to teach the tool. `scripts/experience.py propose` drafts new lessons from rating comments and lost edits, under Proposed, for a person to accept.
