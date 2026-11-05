@@ -1,0 +1,47 @@
+{
+ "tuning": 115,
+ "held": 103,
+ "notes": "- Don't reward extra gloss, bright saturation or smooth plastic polish. When the two are close, prefer the more matte, softer, slightly textured drawing with calmer colour, even if it's less tidy.\n- Don't decide on small details such as printed labels, ring order, camera angle or item placement. Judge the overall colour masses and look first; matching the real card's main colours outweighs correct markings.",
+ "held_untouched": {
+  "confidence>=1": [
+   68,
+   103
+  ],
+  "confidence>=3": [
+   43,
+   68
+  ],
+  "confidence>=4": [
+   10,
+   13
+  ]
+ },
+ "held_tuned": {
+  "confidence>=1": [
+   65,
+   101
+  ],
+  "confidence>=3": [
+   41,
+   59
+  ],
+  "confidence>=4": [
+   12,
+   13
+  ]
+ },
+ "held_first_run": {
+  "confidence>=1": [
+   65,
+   102
+  ],
+  "confidence>=3": [
+   47,
+   69
+  ],
+  "confidence>=4": [
+   19,
+   24
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+<frozen site>:101: RuntimeWarning: Unexpected value in sys.prefix, expected /home/dshpet/Dev_Projects/playrix_testtask/.venv, got /home/dshpet/Dev_Projects/playrix_testtask/scripts/../.venv
+<frozen site>:101: RuntimeWarning: Unexpected value in sys.exec_prefix, expected /home/dshpet/Dev_Projects/playrix_testtask/.venv, got /home/dshpet/Dev_Projects/playrix_testtask/scripts/../.venv
+start: 65 of 115
+round 1: 73 kept: Added one note telling the director to stop rewarding gloss, bright saturation and smooth plastic polish, and to prefer the more matte, softer, slightly textured drawing when the two are close.
+round 2: 71 dropped: Added a note: don't pick on small construction details, labels, camera angle or literal realism; prefer the drawing with the bolder, more solid main shape that fills the frame.
+round 3: 84 kept: Added a note telling the director to stop deciding on small details (printed labels, ring order, camera angle, item placement) and to judge the overall colour masses and look first.
+round 4: 74 dropped: I added a third note, because the director picked drawings that looked flimsy or broken (the two thin-framed chairs, the duck with the misplaced handle, the misshapen calculator) just because they copied the real object's build or colours.
+round 5: 73 dropped: Rewrote the first note so it stops rewarding soft, painterly, less tidy or chunky, bulked-up drawings and instead favours crisp, cleanly built drawings in proportion, while still penalising gloss.
+round 6: 76 dropped: Added a note to prefer a clean, compact, instantly readable silhouette and stop rewarding rivets, bolts, seams or faithful mechanical construction.
+{'tuning': 115, 'held': 103, 'notes': "- Don't reward extra gloss, bright saturation or smooth plastic polish. When the two are close, prefer the more matte, softer, slightly textured drawing with calmer colour, even if it's less tidy.\n- Don't decide on small details such as printed labels, ring order, camera angle or item placement. Judge the overall colour masses and look first; matching the real card's main colours outweighs correct markings.", 'held_untouched': {'confidence>=1': (68, 103), 'confidence>=3': (43, 68), 'confidence>=4': (10, 13)}, 'held_tuned': {'confidence>=1': (65, 101), 'confidence>=3': (41, 59), 'confidence>=4': (12, 13)}, 'held_first_run': {'confidence>=1': (65, 102), 'confidence>=3': (47, 69), 'confidence>=4': (19, 24)}}
+nanobind: leaked 2 instances!
+ - leaked instance 0x7efb9f90b948 of type "OpenImageIO.OpenImageIO.TypeDesc"
+ - leaked instance 0x7efb9f90bf88 of type "OpenImageIO.OpenImageIO.TypeDesc"
+nanobind: leaked 3 types!
+ - leaked type "OpenImageIO.OpenImageIO.TypeDesc"
+ - leaked type "OpenImageIO.OpenImageIO.ImageSpec"
+ - leaked type "BASETYPE"
+nanobind: leaked 114 functions!
+ - leaked function ""
+ - leaked function "to_xml"
+ - leaked function ""
+ - leaked function ""
+ - leaked function "channelindex"
+ - leaked function ""
+ - leaked function ""
+ - leaked function "tile_pixels"
+ - leaked function "get_int_attribute"
+ - leaked function "image_pixels"
+ - ... skipped remainder
+nanobind: this is likely caused by a reference counting issue in the binding code.
+See https://nanobind.readthedocs.io/en/latest/refleaks.html

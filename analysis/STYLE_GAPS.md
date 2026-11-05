@@ -103,6 +103,10 @@ A lone 1-10 score failed, so `scripts/prefer.py` asks a different question: of t
 - **Clear preferences are still hard.** On graded pairs two or more grades apart, often construction, CSD agrees 20 of 49 times, the director 29 of 49 and shape 30 of 46.
 - **No judge reaches the bar.** Agreement is at most 63% over all pairs, against the user's own retest of 0.68 on grades.
 
+**Automatic tuning did not generalize.** `scripts/tune.py` split the pairs by object into tuning and held-out halves. In six rounds an editor proposed one note at a time from the director's mistakes and the user's comments. Two notes were kept: prefer matte and calm over glossy, and judge overall color masses over small details. Tuning agreement rose from 65 to 84 of 115. On the held-out half the tuned director agreed 65 of 101 times, the untouched one 68 of 103 and the first run 65 of 102. The gain was fitting and run noise: one prompt varies by about 5 pairs between runs. So the notes were not installed. The second note also contradicts the user, whose comments are mostly about construction. Closest picks, half the pairs, reward overall look.
+
+**Confidence held up.** On held-out pairs the untouched director at confidence 4 was right 10 of 13 times in a fresh run and 19 of 24 in the first, about 78%. `choose()` now asks for confidence and lists picks below 4 for a human look. The cut was set on data that includes these pairs, so it was not chosen blind.
+
 The first run looked off to a human, yet every automatic check passed it. This file records what was wrong, why the checks missed it, and what fixed it.
 
 ## How the gap was measured

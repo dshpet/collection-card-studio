@@ -73,7 +73,9 @@ def check_lessons(check):
               "full": ROOT / item["full"] if item.get("full") else None}, item["note"]) for item in lessons]
 
 
-PICK_SCHEMA = strict({"picks": array(strict({"card": text(), "pick": {"type": "integer"}, "why": text()}))})
+PICK_SCHEMA = strict({"picks": array(strict({"card": text(), "pick": {"type": "integer"},
+                                            "confidence": {"type": "integer", "minimum": 1, "maximum": 5}, "why": text()}))})
+SURE = 4  # the director agreed with the user 76% of the time at this confidence, against 61% overall (prefer.py)
 
 
 def card_image(card):
@@ -454,11 +456,14 @@ def choose(run, briefs, history, rater="claude-opus-5-5"):
         paths = [run / "tries" / f"{t['try_id']}.png" for t in tries]
         sheets.append(candidate_sheet(real[brief["references"][0]], paths, folder / "sheets" / f"{brief['id']}.png"))
     listing = "\n".join(f"{brief['id']} ({brief['card']['name']}) is image {i + len(lessons) + 1}" for i, brief in enumerate(briefs))
-    prompt = (f"{(AGENTS / 'art_director.md').read_text('utf-8')}\n\nThe first {len(lessons)} images are lessons: the label "
+    notes = AGENTS / "director_notes.md"
+    notes = f"\n{notes.read_text('utf-8')}\n" if notes.exists() else ""
+    prompt = (f"{(AGENTS / 'art_director.md').read_text('utf-8')}{notes}\n\nThe first {len(lessons)} images are lessons: the label "
               "shows which card is REAL and which was GENERATED, with a lens below. Study which way the differences run. "
               "Each later image shows one REAL card, of another object, and numbered candidates for a new card:\n"
               f"{listing}\nFor each new card, pick the candidate that could sit beside the real card unnoticed: true "
-              "proportions, no invented extras, instantly read as the object. Reply with the card id and the number.")
+              "proportions, no invented extras, instantly read as the object. Reply with the card id, the number and your "
+              "confidence 1-5 that the art lead would pick the same.")
     answer = ask(rater, prompt, [*lessons, *sheets], PICK_SCHEMA)
     if not answer:
         raise RuntimeError("the art director gave no picks. Rerun to continue")
@@ -467,6 +472,9 @@ def choose(run, briefs, history, rater="claude-opus-5-5"):
         tries = options[brief["id"]]
         tries[min(max(picks.get(brief["id"], 1), 1), len(tries)) - 1]["chosen"] = True
     save_json(folder / f"picks_{briefs[0]['variant']}.json", answer)
+    unsure = [p["card"] for p in answer["picks"] if p.get("confidence", 0) < SURE and len(options.get(p["card"], [])) > 1]
+    if unsure:
+        print(f"unsure picks, worth a human look: {', '.join(unsure)}", flush=True)
 
 
 def review_variant(run, variant, round_number, briefs, history, rater):
