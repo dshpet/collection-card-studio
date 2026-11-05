@@ -7,7 +7,6 @@ Results land in runs/<slug>/ and finished work is kept.
 import argparse
 import json
 import os
-import random
 import re
 import subprocess
 from collections import Counter, defaultdict
@@ -22,6 +21,7 @@ import torch
 from PIL import Image
 
 from draw import draw
+from experience import collect as collect_experience, lessons
 from estimate import write_masks
 from form import CARD_FORM, card_schema
 from measure import measure_card
@@ -99,19 +99,20 @@ Rules learned from the game's real sets:
 - Card names: 1-2 plain words.
 - Pick the first things anyone would name for the topic: instantly recognizable objects with a simple, distinctive silhouette.
 - Every object must belong to this specific topic, not to the wider collection. A film genre set shows that genre's world, not generic cinema items such as film reels or popcorn.
-- Each card alone must make someone name the topic. Skip ordinary objects that fit only next to the others, such as an armchair in a horror set.
-- The audience is wide and casual, of every age and faith. Nothing morbid, sad or divisive: no death or burial objects (coffins, graves, tombstones, skulls, bones), no religious symbols (crosses, holy books, altars), no illness, injury, drugs or politics. Haunted-house fun is fine: a pumpkin, a cauldron, a friendly ghost sheet.
 - No characters or people, no brands, logos or real franchises. An animal may appear as an object, at most once in a set. No weapons of any kind, toy or sci-fi ones included. No blood or gore. Keep dark topics playful.
 - Cards carry no text, so skip objects that need readable words to make sense.
 - Real sets use {knowledge['set_ranges']['object_classes'][0]}-{knowledge['set_ranges']['object_classes'][1]} object classes and {knowledge['set_ranges']['scale_classes'][0]}-{knowledge['set_ranges']['scale_classes'][1]} real-world sizes, from handheld things to vehicles and buildings.
 - Every version uses all four art categories: 1 floating object, 2 object on a plain ledge, 3 object on a real surface, 4 object in an environment. Use 2-4 of category 1, 1-2 of category 2, 2-4 of category 3 and 1-5 of category 4.
 - For category 4 use pattern full_scene. Otherwise pick a graphic pattern.
-- subject: one plain sentence on what to draw, with the two or three features that make it recognizable. Name the object and its parts only, with no mood, style or props. Give counts as the whole real object has them, not as one side shows them: a covered wagon has four wheels.
+- subject: one plain sentence on what to draw, with the two or three features that make it recognizable. Name the object and its parts only, with no mood, style or props.
 - hero_colors are the object's natural colors plus one small accent in another hue, which nearly all real cards have. Give every card a backdrop whose color contrasts with the hero, and use at least six different backdrop hues across a set.
 - backdrop_colors are bright and clean, as in the real cards: sky blue, cyan, yellow, orange, purple, pink, grass green. Never dusty, muted, dull or dark. Skies stay clear and bright, even on dark topics.
 - surface_or_setting: the surface for categories 2-3 and the place for category 4, empty for category 1. Real sets reuse one or two ground materials across their cards, so reuse them too.
 - Versions may share at most 5 objects.
 - {MODEL_RULE}
+
+Lessons from the producer's ratings:
+{chr(10).join(lessons('Planning'))}
 
 Real sets from the game, as examples:
 {examples}"""
@@ -162,18 +163,6 @@ def sensitive_cards(plan):
     answer = ask_claude(f"""A cozy mobile game for a wide, casual audience of every age, culture and faith shows these collection cards for the set "{plan['title']}": {names}.
 Flag every card that could offend, upset or sadden some players: death and burial (coffins, graves, tombstones, skulls), religious symbols, illness or injury, drugs, weapons, politics, national or cultural stereotypes, or anything a parent would not want a child to see. Playful spooky or fantasy objects are fine. Give the card name and a short reason. Flag nothing if all are fine.""", None, SENSITIVE_SCHEMA)
     return answer["flagged"]
-
-
-def pick_references(card, cards, used, rng):
-    pool = [c for c in cards if c["form"]["staging"]["art_category"] == card["category"]
-            and "staging.art_category" not in c["disputed"]]
-    ranked = sorted(pool, key=lambda c: (
-        c["form"]["backdrop"]["pattern"] != card["pattern"],
-        c["form"]["identity"]["object_class"] != card["object_class"],
-        used[c["id"]], rng.random()))
-    picks = ranked[:3]
-    used.update(c["id"] for c in picks)
-    return picks
 
 
 def card_brief(card):
@@ -258,16 +247,16 @@ def model_card(run, brief, rater, look="plain", photos=()):
     return render
 
 
-def make_briefs(plan, cards, seed):
-    rng = random.Random(seed)
-    used = Counter()
-    briefs = []
-    for variant, entry in enumerate(plan["variants"], 1):
-        for index, card in enumerate(entry["cards"], 1):
-            picks = pick_references(card, cards, used, rng)
-            briefs.append({"id": f"v{variant}_{index:02d}", "variant": variant, "card": {**card, "topic": plan["title"]},
-                           "references": [c["id"] for c in picks]})
-    return briefs
+def make_briefs(plan, cards):
+    """Each card with its three real reference cards, found by search.py from the card's subject."""
+    from search import Search, pick_references
+
+    planned = [(variant, index, card) for variant, entry in enumerate(plan["variants"], 1)
+               for index, card in enumerate(entry["cards"], 1)]
+    likeness = Search().confidence([card["subject"] for _, _, card in planned])
+    return [{"id": f"v{variant}_{index:02d}", "variant": variant, "card": {**card, "topic": plan["title"]},
+             "references": [c["id"] for c in pick_references(card, cards, chance)]}
+            for (variant, index, card), chance in zip(planned, likeness)]
 
 
 def draw_card(run, brief, attempt, notes, use_references, edit=None):
@@ -359,6 +348,16 @@ def check_tries(run, tries, knowledge, workers):
     return tries
 
 
+def record_edits(run, round_number, edited, before, notes, kept):
+    """Every edit and whether it beat its draft, for experience.py."""
+    path = run / "edits.json"
+    rows = [r for r in (load_json(path) if path.exists() else []) if r["edit"] not in {e["try_id"] for e in edited}]
+    rows += [{"run": run.name, "card": e["brief_id"], "name": e["card"]["name"], "round": round_number,
+              "note": notes[e["brief_id"]], "draft": before[e["brief_id"]], "edit": e["try_id"],
+              "kept": e["try_id"] in kept} for e in edited]
+    save_json(path, rows)
+
+
 def contact_sheet(paths, out, columns=5):
     tile = (258, 288)
     rows = (len(paths) + columns - 1) // columns
@@ -430,7 +429,7 @@ def main():
 
     briefs_path = run / "briefs.json"
     if not briefs_path.exists():
-        save_json(briefs_path, make_briefs(plan, cards, seed=args.theme))
+        save_json(briefs_path, make_briefs(plan, cards))
     briefs = load_json(briefs_path)
 
     if not args.no_blockouts:
@@ -489,10 +488,12 @@ def main():
                         for old in history[entry["brief_id"]]:
                             old.pop("chosen", None)
                         entry["chosen"] = True
+                record_edits(run, round_number, edited, before, notes, kept)
                 print(f"variant {variant} review {round_number}: kept {len(kept)} of {len(edited)} edits", flush=True)
                 save_json(run / "check.json", history)
 
     deliver(run, plan, briefs, history)
+    collect_experience()
     print("done:", run / "report.md")
 
 

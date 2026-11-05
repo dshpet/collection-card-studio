@@ -2,7 +2,6 @@
 
 from common import ANALYSIS, DERIVED, ROOT, cards, save_json
 
-import colour
 import numpy as np
 from PIL import Image
 from scipy import ndimage
@@ -13,8 +12,17 @@ SAMPLE = 20000
 PLANAR = 0.012
 
 
+# sRGB to Oklab (Ottosson 2020). Matches colour-science's sRGB_to_XYZ and XYZ_to_Oklab within 0.0002.
+LMS = np.array([[0.4122214708, 0.5363325363, 0.0514459929], [0.2119034982, 0.6806995451, 0.1073969566],
+                [0.0883024619, 0.2817188376, 0.6299787005]])
+OKLAB = np.array([[0.2104542553, 0.7936177850, -0.0040720468], [1.9779984951, -2.4285922050, 0.4505937099],
+                  [0.0259040371, 0.7827717662, -0.8086757660]])
+
+
 def to_oklab(rgb):
-    return colour.XYZ_to_Oklab(colour.sRGB_to_XYZ(rgb))
+    rgb = np.asarray(rgb, dtype=float)
+    linear = np.where(rgb <= 0.04045, rgb / 12.92, ((rgb + 0.055) / 1.055) ** 2.4)
+    return np.cbrt(linear @ LMS.T) @ OKLAB.T
 
 
 def palette(rgb, lab, k):

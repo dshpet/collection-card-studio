@@ -29,12 +29,16 @@ def reached_tool(thread):
     return prompts[-1] if prompts else None
 
 
-def draw(prompt, references, out):
-    """Draw one card with Codex's image tool and save it to out. The last reference is the most recent image."""
+def draw(prompt, references, out, transparent=False):
+    """Draw one card with Codex's image tool and save it to out. The last reference is the most recent image.
+
+    transparent: a figure alone on a transparent ground, for pasting onto a card."""
     if len(references) > 5:
         raise ValueError("Codex's image tool takes at most 5 images")
     attachments = [flag for path in references for flag in ("-i", str(path))]
-    images = f", with num_last_images_to_include set to {len(references)}" if references else ""
+    options = ([f"num_last_images_to_include set to {len(references)}"] if references else []) + (
+        ["transparent_background set to true"] if transparent else [])
+    images = f", with {' and '.join(options)}" if options else ""
     request = INSTRUCTION.format(images=images, prompt=prompt)
     with tempfile.TemporaryDirectory() as folder:
         command = ["codex", "exec", "--skip-git-repo-check", "--ignore-user-config",

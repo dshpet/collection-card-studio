@@ -19,6 +19,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 
 from make_set import contact_sheet
+from experience import edit_examples
 from rate import ask_claude, ask_codex
 
 AGENTS = ANALYSIS / "agents"
@@ -498,7 +499,8 @@ def direct(name, pairs, reports, style_text, rater):
     style_ask = ("Return style_text: a full replacement for the current text, at most 110 words. " if style_text else
                  "The style text is settled: leave style_text empty. Each pair shows different objects, so the real card "
                  "shows the look, not the object. Form cannot be judged across objects: never ask to change a card's "
-                 "proportions, thickness or roundness. Notes may change color, value, backdrop, light, finish and extras. ")
+                 "proportions, thickness or roundness. Notes may change color, value, backdrop, light, finish and extras. "
+                 f"{edit_examples()}\n")
     prompt = (f"{(AGENTS / 'art_director.md').read_text('utf-8')}\n\nEach image is one pair of cards, A and B on top.\n"
               f"Answer key:\n{unblinded}\n\n{style_part}"
               f"Specialist reports:\n{json.dumps(reports, ensure_ascii=False)}\n\n"
