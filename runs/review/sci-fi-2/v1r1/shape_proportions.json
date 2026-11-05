@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the planet is a perfect ball, and its ring is a thick, even, rubbery band with rounded ends. It reads as a simple toy shape with no surface parts. B: each fin's blade tapers to a flat, thin tip, and the foot pockets keep crisp openings, the true proportions of a real fin.",
+   "fix": "Draw the planet ring as a thin, flat disc seen at an angle, with a sharp outer edge and thin, tapering ends at the left and right. Do not draw a thick rubber hoop."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the target is a flat disc on thin easel legs, and the bear has normal plush proportions. B: the ice-tray rim is a flat plate with straight edges, and its cells are boxy with fairly tight corners. Neither silhouette shows the swollen, toy-like build seen in the lessons.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the rocket body is a short, fat, squat capsule. The fins are thick slabs with rounded ends, the nozzle is a stubby cup, and there is only one porthole. B: the submarine hull is bulbous too, but its periscope, propeller blades and tail fins stay thin and keep distinct parts.",
+   "fix": "Make the rocket body a longer, slimmer cylinder. Draw the fins as thin, flat, swept plates with sharp tips, and give the engine nozzle a flared bell shape."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the robot is made of soft, rounded blocks, with a pillowy head box and chest box. The ball hands are oversized, and the stubby legs end in rounded block feet, so it reads like a toy. B: the boxing gloves have correct glove proportions, with a thumb lobe and a cuff strap, and their bulk is true to the object.",
+   "fix": "Give the robot crisp, flat-sided metal boxes with tight beveled edges and slimmer jointed limbs. Draw real claw or pincer hands instead of balls."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the alien is one swollen sphere with four stubby, sausage-like legs and ball-tipped antennae, all blob forms. B: the computer has a flat-faced monitor box, a thin keyboard slab, a thin cable and tight corners, the same silhouette as the real computer card in the lessons.",
+   "fix": "Give the creature a defined body shape with distinct parts. Make the legs jointed and tapered, not short tubes, and the antennae thin stalks. Avoid a perfect inflated ball."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the slide keeps a thin tube rail, a thin ladder with rungs and a flat deck. B: the beach ball is a true sphere, which is correct for the object. Neither shows an inflated or stubby distortion.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the capsule is a near-perfect inflated sphere on three short, stubby legs with puck feet, a toy pod with few parts. A: the bus keeps flat side panels, straight roof runs, a thin railing on the upper deck and mirror arms on thin stalks.",
+   "fix": "Draw the capsule with a flat-bottomed, faceted hull and panel seams. Make the landing legs longer and thinner, angled struts with flat pads."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the control console is one soft slab with rounded vertical edges. The levers are thick, with big ball knobs, and the buttons are oversized domes. A: the vending machine keeps a flat front, a straight cabinet edge and a thin door handle.",
+   "fix": "Make the console's metal faces flat, with tight beveled corners. Draw the levers as thin rods with small knobs and the buttons as low, flat caps."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the helmet is an inflated ball with a thick, pillowy collar ring and a big swollen ear disc, and its solidity of 0.983 is above the real range. A: the jacket keeps separate sleeves, a collar point and pocket flaps, with garment-true proportions.",
+   "fix": "Draw the helmet with a flatter visor plate and a slimmer neck ring with a hard edge. Make the side fittings small and flat, not a bulging disc."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the rover rides on oversized, fat balloon wheels under a thin deck slab, toy proportions. The seats are boxy cushions, and the antenna dish sits on a thick post. B: the boat hull tapers correctly to a pointed bow, the dock planks are flat and the rope stays thin.",
+   "fix": "Make the rover wheels smaller relative to the deck, with open wire-mesh rims and thin suspension arms. Make the antenna mast a thin rod."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the saucer is a smooth, swollen lens with a plain dome and a ring of bead lights. Its outline is simple and blobby, with no rim detail or struts. A: the player is a rounded slab, but its earbud cables stay thin and the earbuds have correct proportions. The metrics flag A only because of the thin cables, which are a real feature of the object.",
+   "fix": "Give the saucer a thin, sharp outer rim with a flat underside, a stepped top deck and small, tight light housings, not a puffy lens."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the station's truss is short, stubby cylinders around a ball core, and the solar panels are thick slabs with a rigid symmetry, a simplified toy. B: the pool bar has a flat counter, thin stool posts, thin glass stems and many parts in believable relation.",
+   "fix": "Make the station's truss a long, thin lattice beam. Draw the solar panels as very thin, flat sheets on thin arms, and use several cylindrical modules instead of one ball."
+  }
+ ],
+ "pattern": "Generated cards draw objects as inflated toys: a perfect sphere or swollen lens for the main body, stubby sausage limbs and legs, ball-tipped antennae and levers, and thick slab fins and panels in place of thin, sharp plates. Corners are soft, and there are few distinct parts. Real cards keep flat faces, tight bevels and thin parts at true proportions."
+}

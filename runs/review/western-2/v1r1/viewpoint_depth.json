@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the hat floats in a near-pure side view with the camera just above the brim. The brim rolls in a smooth rainbow of normals with almost no top-of-crown reading, and the object is centred with no ground. B: the jacket is in a mild 3/4 front view with both cuffs turned toward camera, floating on a sunburst. Both views are plausible. The hat's flat, centred side-on staging is the more generator-like of the two.",
+   "fix": "Turn the hat a quarter toward the viewer and raise the camera slightly so the top of the crown and the inside of the brim both show, at a 3/4 angle like a product shot."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the rope coil sits on a sand plane seen from a low angle, but the lasso loop stands upright in the air with no support. The sand rolls into dunes up to a high horizon, so the ground angle is unclear, and planar_share is 0.0, below the real range. B: the mower is in a clean 3/4 front view on a flat grass plane, and the wheels, deck and handle share one view.",
+   "fix": "Lay the lasso loop down on the sand or lean it against the coil. Show the sand as one flat ground plane seen from slightly above, with a simple background behind it."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the umbrella is tilted in 3/4 so both the top of the canopy and the underside of its rim show. The view is consistent, and the pole recedes along the same axis. B: the sheriff star is perfectly frontal and symmetric, with the ring and balls flat-on. Nothing turns, so there is no depth cue beyond the bevel.",
+   "fix": "Turn the badge about 20–30° and tilt it back so the ring reads as an ellipse and the star's points show their side bevels and thickness."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cactus faces the camera dead-on, with symmetric arms and a centred trunk. It stands in a sand mound with a curved horizon, and only the pebbles give depth. B: the spring duck is in a 3/4 side view on a base seen from about 25° above, with the sand plane matching the base. B has the turned 3/4 camera the real cards use.",
+   "fix": "Turn the cactus slightly so one arm comes forward and the other goes back, and raise the camera a little so the sand reads as a flat floor seen from above."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the ice tray is seen from about 35° above, front face square to the camera, while the table planks run diagonally. B: the fruit plate is seen from about 45° above, and the plate ellipse matches the diagonal planks. Both use a single high camera with mild perspective. The tray's square-on front against diagonal planks is a slight mismatch, but too small to call.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the sneakers are in a 3/4 view from slightly above on a floor plane, with toes receding and a consistent horizon. B: the horseshoe stands perfectly frontal on a wooden shelf. The shelf top is seen from above, but the horseshoe shows no top or bottom face, and planar_share is 0.554, just above the real range.",
+   "fix": "Lay the horseshoe flat on the wood or turn it to a 3/4 angle so its thickness and top edge show, matching the downward view of the shelf."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the tripod and pot are perfectly frontal and symmetric, with distant mesas forming a separate backdrop layer. The fire logs sit on ground seen from slightly above, while the tripod is straight-on. planar_share is 0.006. B: the gas pump is turned 3/4 on a slab, and the slab's top plane and the pump's side agree.",
+   "fix": "Rotate the campfire scene to a 3/4 view with one tripod leg in front of the others. Bring the camera closer and drop the far mesa layer to a simple soft backdrop."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the saloon is a whole building in a nearly frontal view, small in frame. It sits on wide ground with fences and mesas behind, making three or four depth layers, like the generated lighthouse on its island. B: the dock is cropped tight from a high 3/4 angle, and the post tops, planks and water all share one downward view.",
+   "fix": "Move the camera closer and turn the saloon to a 3/4 corner view. Crop part of the ground and replace the mesas and fences with a simple plain background."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the boat and dock are cropped tight from a high angle on a single water plane, with consistent normals. B: the wagon is a complete object, centred in a wide landscape with a path, a grass field, distant hills and sky. It has several depth layers, the same staging as the generated lighthouse lessons.",
+   "fix": "Bring the camera in close so the wagon fills the card and may crop at an edge. Remove the distant hills and sky and keep only a simple ground under the wheels."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the saddle sits on a rail that runs straight across the frame in pure side view, while the saddle seat is seen slightly from above. The stirrups hang flat to camera, with no ground and a striped wall behind. B: the fountain is in a 3/4 view from above, and the basin ellipses and paving all agree. The side-on rail is the weaker view.",
+   "fix": "Turn the rail and saddle to a 3/4 angle so the rail recedes into the card and the saddle's far flap is partly hidden behind the near one."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the two boots float side by side in an almost pure side profile, with toes pointing left, no ground, and the second boot a copy offset down-right. B: the flip-flops are seen from a high 3/4 angle, and both soles share one plane. A's flat profile with a duplicated offset is the generator tell.",
+   "fix": "Stand the boots on a floor seen from slightly above and turn them 3/4 toward the viewer, with one boot in front of the other and overlapping it."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the guitar leans on a stage floor seen from slightly above, with trusses and spotlights as a background layer. B: the camper trailer is in a near-side 3/4 view on a grass strip against a plain backdrop. Both camera setups are consistent, and planar shares are equal (0.49 and 0.50).",
+   "fix": ""
+  }
+ ],
+ "pattern": "The generated cards still give themselves away in three ways. First, the camera is often dead-frontal or pure side-on with a centred, symmetric object instead of the turned 3/4 view the real cards use. Second, the hero is shown whole and small inside a wide staged scene (distant mesas, hills, fences) with three or more depth layers, where real cards crop close against a simple background. Third, the ground plane is sometimes seen from above while the object itself is shown flat-on."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the planet sits dead-centre, with the ball in the middle of the concentric rings and the ring tilted evenly, so it reads as a symmetric emblem. Its box is very wide (0.909) but short (0.521, below the real range). B: the flippers run diagonally from lower-left to upper-right as a staggered pair, like the angled racket and anchor in the real cards.",
+   "fix": "Push the planet off centre toward the upper left and make it bigger, so the ring nearly touches the right edge and the ball's bottom drops into the lower third. Tilt the ring more steeply."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the target fills the centre-left inside a wooden booth that is cropped by the card edges, and a teddy bear sits lower-right as a secondary focus. B: the ice tray is a 3/4 view on a table cropped at the bottom and right, with a large hero. Both use edge-cropped settings like the real taxi and computer cards, and the numbers are inside the real ranges.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a thin diagonal rocket floats in the middle with wide sky on every side. Its subject area is 0.194 and its margin 0.121, both just outside the real range, so at thumbnail it is a small sliver. B: the submarine fills the card side to side (width 0.863), and the periscope reaches near the top edge.",
+   "fix": "Make the rocket much bigger and fatter so it fills the card corner to corner, with the nose cone almost touching the top-right edge and the fins near the bottom-left edge."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: a small, upright, front-facing robot stands in the exact centre of a floor-and-wall room. It is narrow (width 0.433, far below the real minimum of 0.661) and has a lot of empty floor around it. B: two boxing gloves overlap and fill the card, cropped at the right edge, with the hero dominant.",
+   "fix": "Draw the robot much larger and turned three-quarters, filling most of the card width. Let its feet sit near the bottom edge and its antennae near the top, with only a strip of floor and wall showing."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 5,
+   "difference": "A: the alien is a symmetric front-facing blob, centred with even space all round (margin 0.158, far above the real maximum of 0.098) and sitting on an empty metal floor. B is the real computer card: the desk is cropped by the left and right edges and the hero fills the frame.",
+   "fix": "Draw the alien bigger and slightly turned, filling the card so its antennae nearly touch the top edge. Crop the metal floor at the bottom and side edges."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the slide is off-centre and cropped by the left and bottom edges, with the pool running out of frame. B: the beach ball is large and centred in sand and fills the card (area 0.493, slightly over the real range). Both are big, readable heroes, and composition alone gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the bus is a 3/4 view cropped by the left edge, and the street and buildings run out of frame. B: the pod sits dead-centre on a round platform with even space around it (margin 0.117, above the real maximum of 0.085). Glowing lab consoles and a tube on both sides compete for attention.",
+   "fix": "Make the pod much larger and turn it three-quarters so it fills the card, with its top near the top edge. Drop the side consoles and the glowing tube, and leave a plain purple glow behind it."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the vending machine is centred, upright and whole, sitting in a soft purple field, which matches the real lantern and clock cards. B: the control box sits low-right on a grey shelf, with a large empty yellow area at the upper left, and the lever knobs are cramped near the top edge. The weight feels lopsided rather than deliberately cropped. This is a weak signal.",
+   "fix": "Centre the control panel and make it larger, angled three-quarters so it fills the card. Shrink the shelf to a short base under it, and fill the background with a yellow radial burst."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the jacket fills the card, with its sleeves spreading near the side edges and the sash running diagonally. B: the helmet is centred and seen almost head-on, with wide even orange margins (0.144, above the real maximum of 0.116), so it floats small in the sunburst.",
+   "fix": "Make the helmet much bigger and tilt it three-quarters so it fills the card. Let the side ear-disc almost touch the right edge and the neck ring sit near the bottom edge."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the rover is small and wide (height 0.492, area 0.197, both below the real ranges), parked mid-card in a wide lunar landscape. Craters and rocks scatter attention, and the sky takes up the top third. B: the boat and dock are cropped by the top, left and bottom edges and the boat fills the card diagonally.",
+   "fix": "Bring the camera close so the rover fills the card, seen three-quarters from the front, with its wheels touching the bottom edge. Show only a little grey ground and no separate craters in the foreground."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the player sits upper-left and the earbud cable loops down-right, giving a diagonal, off-centre layout. B: the saucer is a flat, symmetric ellipse in the exact centre (height 0.415, far below the real minimum of 0.581), with wide empty purple above and below, so it reads as a thin sliver.",
+   "fix": "Tilt the saucer steeply toward the viewer and make it much bigger, so the dome and the underside lights fill the card from top to bottom. Place it slightly off centre on a diagonal."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the space station is a perfectly symmetric front view in the centre, with four solar panels mirrored left and right and an even margin (0.112, above the real maximum of 0.085). The Earth curve at lower-right is the only asymmetry. B: the tiki bar is cropped on the top, left and right edges, with the stools and drinks spilling out of frame.",
+   "fix": "Turn the space station three-quarters and bring it closer, so one panel wing is cut off by the right edge and the near panel reaches the bottom-left corner. Keep it off centre on a diagonal."
+  }
+ ],
+ "pattern": "Generated cards place the hero dead-centre, upright and whole, usually seen front-on and symmetric, with even empty space on every side. Margins often go above the real maximum and the box gets thin on one axis (flat saucer, narrow robot, short planet). Generated scenes add props or scenery that scatter focus (lab consoles, craters, island rocks). Real cards fill the card, angle the hero three-quarters or on a diagonal, and let the hero or its setting be cut off by the card edges."
+}

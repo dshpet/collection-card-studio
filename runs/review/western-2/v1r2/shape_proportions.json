@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A, the popcorn cart, has a puffy scalloped awning, a short, fat red body and an oversized rear wheel. The thin posts hold up as thin rods. B, the station clock, is a clean disc on thin hanger rods with crisp bracket ends. Both fall inside the real-card ranges, and the silhouettes give no clear reason to pick one.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B, the cactus: the trunk and both arms have the same sausage thickness, round blob tips, a cylinder trunk with no taper and no ribs breaking the contour. straight_share is 0.299. A, the duck spring rider, is also soft, but it reads like a real toy: a flat square base plate, a thin coil spring and a thin handle bar.",
+   "fix": "Draw the saguaro with a slightly tapering trunk, arms thinner than the trunk that bend upward at a tight elbow, and visible vertical ribs that notch the outline."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A, the saddle: the seat is a swollen pillow, the horn is a fat mushroom stub, and the fenders and skirt are rounded slabs with blobby lower corners. corner_rate is 5.687, above the real range. B, the fountain, keeps flat rims, straight pedestal runs and crisp tier edges. Its solidity is 0.832.",
+   "fix": "Draw the saddle with a thin, shaped leather seat, a slim horn with a small flat cap, flat fenders with straight edges and tight corners, and thin stirrup straps."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B, the horseshoe: the arms are swollen into a thick, puffy U, the tips are soft rounded blobs, and the nail holes are tiny dots. corner_rate is 0.0, outside the real range. It reads like an inflated toy, not a flat iron bar. A, the sneakers, has believable shoe proportions, with a sole, upper and collar in the right relation.",
+   "fix": "Draw the horseshoe as a flat, narrow iron bar bent into a U, about as wide as a nail hole is spaced, with squared-off heel ends and flat faces."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A, the sheriff badge: the star points are rounded blobs, the star body is pillowed, and the ring is a thick tube with oversized ball studs. corner_rate is 0.0, outside the real range. B, the umbrella, has a lobed canopy and a thin straight pole, both in true proportion.",
+   "fix": "Draw a flat metal star with sharp, straight-edged points and a flat face, a thin outer ring, and small ball tips on the points."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A, the covered wagon: the bed is short and boxy under a lumpy canvas top, and the wheels are oversized next to the bed. Thin spokes and the tongue survive. B, the rowboat and dock: the dock planks are flat with straight edges, and the hull has a clean pointed outline.",
+   "fix": "Draw the wagon bed longer than it is tall, with the canvas hoops making an even arched cover, rear wheels slightly larger than front wheels, and wheels sized to the bed."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B, the cowboy boots: the shafts are very tall and stiff, and spurs plus pull tabs are added. The silhouette has crisp heels and squared shaft tops. This is the more boxy, accessorized build that the lessons tie to generated cards. A, the flip-flops: thick soles and fat straps, soft but consistent with the real cards' soft style. Solidity is 0.953. Low confidence.",
+   "fix": "Draw the boots with a shaft about as tall as the foot is long, slightly flared at the top, and a modest heel."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B, the cowboy hat: the crown is a swollen dome with only a faint pinch, and the brim is a thick, soft blob with no thin edge. The whole silhouette is one inflated mass. A, the jacket, has a believable garment outline: collar, sleeves, cuffs and a straight hem.",
+   "fix": "Draw the hat with a tall crown pinched into a center crease and side dents, and a thin brim that curls up sharply at the sides with a crisp edge."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B, the phone booth: a plain, straight-sided upright box. straight_share is 0.733 and solidity is 0.969, both above the real range. The roof dome is the only break, and the outline has no tilt or overhang. A, the scroll, is a soft rolled cylinder with ribbon tails, inside the ranges.",
+   "fix": "Show the booth at a three-quarter angle, with the stepped roof cornice overhanging the sides and the base plinth wider than the body."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B, the saloon: rigid flat boxes stacked up, with a thick slab porch roof and a heavy footprint that reads as a block massing model. A, the dock posts: fat round posts, thick rope coils and a ring tube, typical of the soft real style.",
+   "fix": "Draw the saloon with a thin porch roof on slim posts, a tall false-front facade that is taller than the building behind it, and thin board trim."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A, the lasso: the rope is a uniform fat sausage, the coil merges into one lumpy blob, and the loop is as thick as the coil. Solidity is 0.583, at the bottom edge of the real range. B, the lawnmower, keeps a thin tubular handle with crisp bends, a deck and wheels in true relation.",
+   "fix": "Draw the lasso as a thin rope about one finger wide, with clearly separate stacked coils and a wide open noose loop with a small honda knot."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B, the gas pump: the top is a swollen pillow cap, the body is a rounded box with soft blob corners, and the hose is fat. A, the campfire tripod: the poles are straight and thin-ish, there is a thin chain and a pot handle, and the stones are lumpy but plausible.",
+   "fix": "Draw the pump with a flat rectangular body, tight beveled corners, a flat-topped head with straight edges, and a thin hose."
+  }
+ ],
+ "pattern": "On the shape vector, generated cards give themselves away in two ways. First, western props (horseshoe, hat, badge, saddle, lasso) are inflated into toy-like pillows: blobby points, thick tubes for parts that should be thin, and brims and bars with no crisp edge. Second, as in the lessons, objects get a boxier, more accessorized build with extra parts (spurs, porch slabs). Real cards keep flat faces, thin rods and straps, and true part proportions."
+}

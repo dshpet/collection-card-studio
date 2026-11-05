@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the popcorn cart is whole and sits slightly left of center on a tiled floor. Its awning nearly touches the top edge (margin 0.05). B: the station clock is large and hangs from a beam that runs off the top edge (margin 0.006), and the platform runs off the sides. Both framings fall inside the real-card range, and each reads at once at thumbnail size. Nothing on my vector separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the duck spring rider is seen from a side 3/4 angle and leans into the frame, with its base low on the sand. B: the cactus stands upright, dead center and mirror-symmetric, with a flower at the top and pebbles spaced evenly on the sand. Its box is narrow (0.619, below the real range). The frontal, centered pose matches the generated lighthouse and computer in the lessons.",
+   "fix": "Turn the cactus to a 3/4 view and tilt it slightly. Make it larger so the arms nearly reach the card sides and the flower comes close to the top edge."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the saddle sits front-on in the center with wide even margins (0.093). The rail crosses the card from edge to edge, and the stirrups hang below with a lot of empty blue stripe under them. B: the fountain is shown 3/4 from above, fills the width (0.916), and its plaza runs off the bottom edge. This is a weak call: A's framing is stiffer, but it is not outside the real range.",
+   "fix": "Draw the saddle larger at a 3/4 angle so it fills more of the card. Let the rail and stirrups run close to the bottom edge instead of floating in empty background."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the horseshoe is small, front-on and symmetric in the center. Its box width (0.658) and area (0.208) are below the real range, and its margin (0.165) is far above it, leaving a wide empty pink band on top. A: the sneakers are seen at a 3/4 angle and span most of the width.",
+   "fix": "Make the horseshoe much bigger so it fills about 80% of the card height. Tilt it at an angle in 3/4 view, and let it come close to the top and side edges."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the sheriff star badge is front-on, perfectly centered and symmetric inside rings that echo its shape. Its margins are wide and even (0.109, at the top of the real range). B: the beach umbrella is tilted diagonally and reaches close to the right edge, like the tilted water bottle among the real cards.",
+   "fix": "Tilt the badge about 20 degrees in a 3/4 view and make it larger so the ring nearly touches the card edges."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the covered wagon is shown whole in the middle of a full landscape with sky, clouds, hills and a dirt path. That is the same scene-building the generated lighthouse showed in the lessons, and the hero fills only 0.567 of the height. B: the rowboat is seen from a high diagonal angle, with the dock cropped by the top and left edges and the boat filling the card's height.",
+   "fix": "Bring the camera closer to the wagon so it fills most of the card and its wheels nearly touch the bottom edge. Drop most of the landscape and keep a simple background."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the two cowboy boots stand upright side by side, centered and front-on, with even margins (0.107) and a narrow box (0.549). A: the flip-flops are seen from above at a diagonal and reach close to the left edge (margin 0.035).",
+   "fix": "Show the boots at a dynamic angle, with one boot tilted or overlapping the other. Make them larger so they fill the width of the card."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the cowboy hat sits flat in the center as a wide, low shape (box height 0.496, below the real range), with empty sky above and below it. A: the jacket fills the card at a 3/4 angle with its sleeves spread wide.",
+   "fix": "Tilt the hat up toward the viewer at a 3/4 angle so the crown and the underside of the brim both show, and make it fill more of the card's height."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the scroll lies diagonally on a tabletop that runs off the left and bottom edges (box height 0.463). B: the phone booth stands centered and upright at a 3/4 angle (box width 0.512). Each one falls outside the real range on a different measure, and both read at once at thumbnail size, so my vector gives no clear lean either way.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the saloon is front-on and centered, shown whole with wide even margins (0.123, above the real range), with a full mesa landscape behind it. That is the same whole-object-in-a-scene framing as the generated lighthouse. A: the dock posts are cropped hard by the right and bottom edges, the shot is at a close diagonal, and the life ring is pushed toward the corner.",
+   "fix": "Move the camera in close on the saloon at an angle so the building is cut off by the bottom or side edges. Remove the distant mesas and keep a simple background."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the coiled lasso sits low and left on the sand, with a loop rising on the right. The hero is small (area 0.217, below the real range), with a large empty green area above it. B: the lawnmower is seen at a 3/4 angle, and its handle reaches close to the top edge. Its area is low too, but the frame looks filled.",
+   "fix": "Make the lasso coil bigger so it fills the card, and lift the loop up into the empty space at the top."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the campfire tripod is a perfect mirror-symmetric triangle in the dead center, with even margins and a pot exactly on the center line. B: the gas pump sits slightly off center, with its hose hanging to the right and its base running off the bottom edge. A's frontal symmetry matches the generated framing in the lessons.",
+   "fix": "Show the campfire from a 3/4 angle with the tripod tilted, and push it closer to the viewer so the logs reach the bottom edge."
+  }
+ ],
+ "pattern": "The generated cards keep showing the hero front-on, symmetric and in the dead center, whole and with wide, even margins. In the lessons the camera on the generated cards moves back to show the whole object and adds a full setting around it (island, landscape, desk). The real cards use 3/4 or tilted angles, crop the object or its base at an edge, and let the hero push close to one or two sides."
+}

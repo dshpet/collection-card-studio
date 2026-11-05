@@ -6,12 +6,16 @@ Fetches twenty candidates, then a model keeps up to three clear photos of the wh
 Photos are untrusted downloads: each is opened as an image and re-saved as PNG, and nothing else is kept.
 """
 
+import sys
+from pathlib import Path
+
+sys.path.insert(1, str(Path(__file__).resolve().parents[1] / "scripts"))  # the pipeline's modules
+
 import argparse
 import io
 import json
 import urllib.parse
 import urllib.request
-from pathlib import Path
 
 from PIL import Image
 

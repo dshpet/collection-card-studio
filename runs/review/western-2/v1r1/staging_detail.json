@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the hat floats on a blue sunburst, with a bright cyan hot spot right under the brim and the rays fading into it. Its background detail is just below the real range. B: the jacket floats on a green sunburst with a similar glow in the middle. Both are category 1, so this is a weak call: A's glow sits tight under the object, like the generated glove lesson.",
+   "fix": "Plain blue sunburst with even, wide rays and no bright glow spot behind the hat."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the lasso sits on a sand ground with small invented pebbles scattered in front, under a green ring backdrop. B: the mower stands on grass with a few small flowers under a teal ring backdrop. Both are category 3. A's pebbles are filler props, the same habit as the generated lighthouse's added rocks.",
+   "fix": "Rope coil on smooth sand with no pebbles or stones; keep the ground plain."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the umbrella floats on even cyan rings. B: the star badge floats on magenta rings that brighten to a hot pink glow right behind the badge. That centered glow is the generated tell from the lessons. A's background detail is slightly below the real range, so confidence stays low.",
+   "fix": "Even magenta concentric rings with no bright glow behind the badge."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both stand on a sand mound with scattered pebbles. A: three pebbles laid out around the cactus base under a strong orange sunburst. Its background edge density is below the real range. B: the same kind of setup with the duck on a blue plate. A's evenly spaced pebbles look placed for decoration.",
+   "fix": "Cactus on a plain sand mound, one soft shadow, no scattered pebbles."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the ice tray sits on a wood plank table that is cut off by the frame, with a blue sunburst behind it. B: a top-down plate on wood planks that fill the whole frame. Both stage on a real material the way the real desk card does, and both background numbers are in the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the sneakers sit on a plain yellow floor against an orange wall, with a quiet backdrop. B: the horseshoe stands upright on a wood shelf whose front edge shows, against a magenta gradient. Both are category 2–3. B balancing the horseshoe on its curve on a ledge is posed staging, so this is a weak call.",
+   "fix": "Horseshoe lying or leaning naturally on a plain plank, with a simple gradient behind it."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both are full desert scenes with mesas on both sides, small shrubs and a dusk sky. A: the campfire with stones and logs, whole in frame. B: the pump on a concrete slab, whole in frame. The environment load is the same, so there is nothing to separate them.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the whole saloon is shrunk into a busy desert. There are mesas both sides, a fence, clouds, shrub tufts, rocks and pebbles. Background detail is 0.0255, the high end of the range, and edge density is 0.06. B: the dock posts are cropped by the frame edges, over quiet water with one shoreline curve, like the real lifeguard and bike cards. This matches the lighthouse lesson, where the generated card pulled back and added scatter.",
+   "fix": "Move close on the saloon front so it fills the frame and is cropped at the edges; behind it only a plain sky and one quiet ground plane, no fence, rocks or shrubs."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the whole wagon on a dirt path in a field, with a cartoon sun disc, clouds, distant hedges, daisies and grass tufts. That is many small elements. A: the boat and dock are cropped off the frame edges over open water with two lily pads, a few large quiet shapes.",
+   "fix": "Move close on the wagon so the wheels touch the frame edges; plain sky and a flat grass field, no sun disc, flowers or tufts."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the saddle hangs on a wood beam that runs through a flat striped field. The beam is an added prop that mixes a floating category-1 field with a real support. B: the fountain stands on a round paved floor against yellow stripes, close to the real rose-arch card. B's edge density 0.046 comes from the paving tiles but is within the real range.",
+   "fix": "Saddle floating alone on the blue striped field with no beam, or resting on a plain ledge."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "Both pairs of footwear float on soft vertical stripes with no ground, which is category 1. A: orange stripes with a slightly brighter middle. B: even teal stripes. My vector gives almost no reason to choose; A's lower background detail is the only lean.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the guitar sits on a stage between two steel truss towers, with a truss bar overhead, two spotlights with beams and a plank floor. The frame-like trusses compete with the hero. The real drum card uses only a plain curtain and one soft spotlight. B: the caravan stands on a grass strip against plain purple rings, a quiet category-3 setup.",
+   "fix": "Guitar on a plain wooden stage with a dark curtain behind it and one soft spotlight; no truss towers or lamp fixtures."
+  }
+ ],
+ "pattern": "Generated cards pull the camera back to show the whole object plus its base, then fill the space with small scatter: pebbles, shrub tufts, mesas, fences, a sun disc, flowers, truss rigs. Real cards move in close, crop the object or its support at the frame edge, and keep the environment to a few large, quiet shapes. On flat fields, generated cards also put a bright glow spot directly behind the hero."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A, popcorn cart: light comes from the front-left. The red box and canopy get soft, gentle shading, with a mild cast shadow under the wheels. B, station clock: light comes from the left. The right side of the clock's rim drops into a deep, dark band, and the bench and posts cast shadows on the platform. B's shading_range is below the real range, but that is because the scene is dark overall. Nothing in the shading sets either card apart.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A, duck spring rider: the plastic body turns smoothly from a lit top-left to a darker belly. The cast shadow is soft and falls to the left, and the spring and base are grounded. B, cactus: the trunk and ribs are lit almost the same all over, with no clear shadow side on the body. Yet a hard, dark cast shadow runs to the right, so the cast shadow is much stronger than the shading on the form, like the generated lessons. B's light_bias is 0.714.",
+   "fix": "Light the cactus from the upper left so the right side of the trunk and each arm turns into a clearly darker side. Soften the edge of the ground shadow and make it lighter so it matches how strongly the body is shaded."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A, saddle: lit from the front, with shiny plastic hot spots on the horn, the seat rim and the flaps. Shading is even across the faces, and the shadow side is weak on the skirt and the stirrup straps. B, fountain: gentle light from the left, with a soft shadow side on each bowl and soft contact darkening where it meets the pavers.",
+   "fix": "Light the saddle from the upper left so the right side of the seat and skirt falls into a matte leather shadow. Make the highlights on the horn and seat edge small and soft instead of shiny. Add a soft shadow where the saddle sits on the rail."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A, sneakers: soft studio light from the right, a clear soft cast shadow to the left, and the soles turn gradually from lit to shaded. Its light_bias of 0.019 is far below the real range, so the light is nearly even. B, horseshoe: strong orange rim along the left edge, sharp metal highlights on the tips of both arms, and a hard, deep shadow inside the curve. Its shading_range of 0.918 is above the real range. B is the harder, overdramatic of the two.",
+   "fix": "Use gentler light on the horseshoe. Drop the bright orange rim on the left edge, soften the highlights on the tips into a broad dull sheen, and lighten the shadow inside the curve."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A, sheriff star: lit from straight in front and symmetrical. Every point of the star and every ball gets the same rounded, puffy sheen with a white hot spot, and no side of the star is clearly in shadow. Its shading_range of 0.831 is just above the real range. B, beach umbrella: lit from the top, the underside of the canopy falls into a deep shadow, and each panel turns from light to dark one by one.",
+   "fix": "Light the star from the upper left so the bevels on the lower-right points fall into shadow. Keep only one or two small highlights instead of a hot spot on every ball. Add a soft drop shadow down and to the right on the background."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A, covered wagon: harsh, one-sided light. The wheels and undercarriage go nearly black under the cover, with dark, sharp cast shadows on the dirt. Its light_bias of 1.08 and form_contrast of 0.651 are both above the real range. B, rowboat at the dock: gentle light from above, with a moderate shadow inside the hull and under the dock.",
+   "fix": "Open up the shadows under the wagon. Let warm light bounce from the dirt road into the wheels and undercarriage, and make the cast shadow softer and lighter."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B, cowboy boots: very dark soles and heels, deep shadow inside the shafts, and sharp shiny highlights on the toe caps. Its shading_range of 0.914 is above the real range. A, flip-flops: soft, even light from above, with gentle shading on the straps and a light contact shadow.",
+   "fix": "Use softer light on the boots. Lighten the shadow on the soles and heels, and replace the shiny hot spots on the toes with a broad matte leather sheen."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B, cowboy hat: the crown is lit almost evenly from the front with a smooth, airbrushed gradient. The underside of the brim is dark, a glowing edge runs along the brim from the background, and there is no clear shadow side on the crown. A, scout jacket: the folds turn from light to dark, with a darker side on the right sleeve and a clear shadow under the sash.",
+   "fix": "Light the hat from the upper left so the right side of the crown and the dent turn into a clearly darker side. Drop the glow along the edge of the brim."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A, scroll: strong one-sided light from the upper left, with a shiny reflection on the tabletop and a dark lower half of the roll. Its light_bias of 0.924 is above the real range. B, phone booth: light from the front-right. The left face is in moderate shadow and the base has soft contact darkening.",
+   "fix": "Use gentler, more even light on the scroll. Lighten the shadow under the roll and drop the mirror reflection on the table."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B, saloon: the front is lit flat from straight on, while the right side wall and the shadow under the porch go quite dark. Its form_contrast of 0.623 is above the real range. A, dock posts: warm light from the left, with gradual shading around each post and the coiled rope.",
+   "fix": "Light the saloon from the upper left so the front shades gently from top to bottom. Keep the right side wall a middle tone instead of near-dark, and soften the shadow under the porch."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A, lasso: every twist of the rope gets the same even, shiny highlight, and the loop casts a soft, round shadow onto the backdrop behind it. The coil itself shows little difference between its lit and shadow sides. B, lawnmower: a clear dark side on the right of the body and wheels, and the deck is in shadow underneath.",
+   "fix": "Light the lasso from the upper left so the lower-right side of the coil goes darker, and give the rope a matte fiber surface instead of a shine on every twist."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A, campfire: symmetrical, front-lit composition. The fire's glow lights the stones and pot evenly, with no directional shadow side. Its light_bias of 0.176 is below the real range. B, gas pump: clearly lit from the right, with a dark left side and a cast shadow on the pad. Its light_bias of 0.641 is at the top of the real range.",
+   "fix": "Add sunset light from one side so one leg of the tripod and one side of the pot are in shadow, while the fire adds a warm glow on the stones and the underside of the pot."
+  }
+ ],
+ "pattern": "The generated cards don't model form with light the way the real cards do. Many are lit from straight in front, with an even sheen and no clear shadow side on the main object: the star, hat, cactus, lasso and campfire. Others swing to the opposite extreme, with near-black shadows, glowing edges and shiny white hot spots: the horseshoe, boots, wagon and saloon. On the real cards the light is directional but gentle. One side turns smoothly into a moderate shadow, highlights are soft and broad, and contact shadows are soft."
+}

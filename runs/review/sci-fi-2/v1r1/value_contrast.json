@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (planet): high-key and soft. The ring is a near-clipped white band and the planet body sits in one middle-grey mass, with low local contrast (rms 0.08, just under the real range). The lighter concentric rings behind the planet act like a halo. B (fins): low key with a dark purple field, deep black accents in the foot pockets and fin tips, and hard light/dark separation of the yellow blades. Its mean lightness of 0.548 is slightly below the real range. It is a weak call either way.",
+   "fix": "Give the planet a clear dark side: a deep shadow band across the lower-right half and a darker underside to the ring. Keep the ring cream, not pure white. Make the background rings even in brightness, with no lighter halo behind the planet."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (target and bear): a medium-dark red booth with bright bulbs and a white target, giving real-like light/middle/dark grouping and dark corners. B (ice tray): over-bright (0.735, above the real range). A big white ray-burst glow sits right behind the tray, and the hero is middle grey against a lighter halo, so it is separated more by hue than by value. Speckled white frost breaks up the large shapes.",
+   "fix": "Tone the sky rays down to an even mid-blue, with no white glow behind the tray. Make the pink tray read as one clean, slightly darker shape, with a soft shadow on the table. Keep the frost to a few small edges."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (submarine): a near-black green field with a white-hot yellow hull. The lightness gap is 0.322 and rms 0.185, both far outside the real range. The hero glows against a dark ground like a spotlit object. A (rocket): mid-light blue rays with a lighter centre, and a silver/red hero with middle-value grouping, inside the real range.",
+   "fix": "Lift the background to a medium, saturated green with soft rays, not a dark vignette. Shade the yellow hull down so its lower half is mid-tone and only the top carries a highlight."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (robot): a pure-white hero on a mottled grey metal floor. The yellow stripe wall breaks into blotchy white patches. The hero is separated purely by its whiteness, and the corners are not darker (vignette -0.128). B (gloves): large dark red masses with one clean highlight each, and a dark shadow wedge under them. Its vignette is also out of range. Both are off, so this is a weak call.",
+   "fix": "Shade the robot's body to a warm light grey with a clear shadow side. Make the floor tiles one even mid-grey without streaky reflections. Keep the yellow wall stripes even in brightness."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "B is the real retro-computer card: a white hero, a deep screen-black accent and a darker desk front. A (alien): an even mid-light green body that sits in the same grey level as the pink wall. Only the eyes give dark accents, the local contrast is soft throughout, and a soft glow sits behind the head.",
+   "fix": "Give the alien a clear shadow side and a darker underside, and cast a firm dark shadow on the floor. Keep the pink wall flat, with no glow behind the head."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "A (slide): green hero in middle and dark grey steps on a mid-pink wall, with light tile floor. B (beach ball): light panels against mid sand, with one large dark shadow under the ball. Both use broad, clean value groups and in-range numbers, so value and contrast give no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (pod): the whole card is a busy middle grey. The background machines, a ring light and floor reflections are as bright as the hero, which breaks the large groups into a mottled pattern. Many small hot dots (the orange lights) are scattered around the hero. A (bus): a dark red hero mass against a bright sky and clouds, a clear two-group design, with real-like hard local contrast at the windows.",
+   "fix": "Make the room behind the pod a calm, darker purple with no lit machines. Keep the floor one even tone. Let the pod be the lightest large shape, with the glowing lights small and few."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (control panel): a dark grey box on a near-white yellow wall and a light steel shelf. Hard contrast everywhere (rms 0.199, above the real range), with crisp black lever knobs and a sharp shelf edge. A (vending machine): a dark blue body on mid violet with a lighter window, and softer, in-range contrast.",
+   "fix": "Make the panel body a lighter steel grey, closer to the wall's value. Soften the wall to a mid orange-yellow and keep the black only on the two lever knobs."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (helmet): an almost all-white hero inside a bright ray-burst halo, with soft middle-grey rays out to the corners. The visor is a single mid-grey block. This is the generated 'light halo behind hero' pattern from the glove and camera lessons. A (jacket): a dark green field with mid rays, a light jacket and a dark sash, giving strong grouping. Its vignette (0.134) is high but reads like the real glove card's dark corners.",
+   "fix": "Remove the bright burst right behind the helmet. Keep the orange rays even and mid-dark. Shade the white shell so its lower and right sides drop to a light grey."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (rover): low-separation grey on grey. The white rover sits on a light grey crater field with scattered small dark rocks and craters peppered across the whole ground, so no large dark group anchors the card. B (boat): a light dock and a mid-dark hull on mid water, with clear big value shapes.",
+   "fix": "Make the ground a darker, simpler grey plain with only a few large craters. Cast one solid dark shadow under the rover so it stands out as the lightest shape."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (UFO): the saucer is a middle grey that matches the lighter background rings, so it is separated mostly by hue. A hot white patch on the saucer belly and a ring of small bright orbs scatter the highlights. A (player): a bright white hero on dark/mid rings with clear separation; its lightness gap is high, but its grouping is clean.",
+   "fix": "Darken the saucer rim to a solid dark steel band and keep the body a light, even silver. Remove the white hot spot on the underside and make the orange lights smaller and dimmer."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (space station): low-key navy sky with a near-black top edge (vignette 0.124 and lightness 0.552, both outside the real range). Dark solar panels the same value as the sky, scattered white star specks, and a noisy mottled planet surface. B (pool bar): light counter and roof, mid water and dark stools, with clean, in-range grouping.",
+   "fix": "Lift the sky to a medium, bright blue with no dark corners. Make the solar panels lighter than the sky, and show the planet as a smooth, light curve with few cloud blotches."
+  }
+ ],
+ "pattern": "Generated cards push the hero's value away from the background with a lit backdrop: either a bright white burst or halo right behind the hero (helmet, ice tray), or a dark field with a white-hot hero (submarine, space station). Real cards keep backgrounds at an even middle value. Generated cards also break the large value groups with scattered small hot spots and dark specks (stars, craters, lamp dots, frost), and often leave the hero's own shading soft and single-toned."
+}

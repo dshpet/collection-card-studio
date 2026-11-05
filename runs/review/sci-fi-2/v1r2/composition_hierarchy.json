@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the bottle is tilted on a diagonal, sits a little right of center, and its cap reaches toward the top edge (margin 0.098). That matches the anchor's tilted heroes, like the anchor and the racket. B: the map is cropped by the top and right edges (margin 0.0) and the magnifier is the clear first read, which matches real crop-to-edge cards like the Ferris wheel and the taxi. Both cards fall inside the real ranges, and neither shows the generated habit of a small, centered object with even space all around.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the UFO is a flat, wide ellipse placed dead center, with an even purple band above and below it (box_height 0.415, far under the real 0.581 minimum). At thumbnail size it is a small floating disc lost in the rings. A: the music player is tilted and pushed to the upper left, and its earbud cords loop down to the lower right, so the object fills the card on a diagonal like real cards do.",
+   "fix": "Draw the flying saucer large and tilted toward the viewer at a steep three-quarter angle, so the dome and rim fill most of the card height. Push it off-center and let one edge of the rim nearly touch the card border."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the space station is laid out flat and symmetric, shown straight-on. The hub sits at the exact center and four panels spread out evenly, with a wide gap of starfield on every side (margin 0.112, above the real maximum of 0.085). It reads like a diagram rather than an object pushed into the frame. B: the tiki bar is cropped hard by the top and right edges (margin 0.03) and the drinks on the counter are the first read. Real cards in this group use that crop.",
+   "fix": "Show the space station at a dramatic three-quarter angle, close to the viewer, with one solar panel running off the edge of the card and the hub large and off-center."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "B: the robot stands small, upright, and facing straight ahead in the center of the card, with wide striped wall on both sides (box_width 0.428, far under the real 0.661 minimum; margin 0.119, above the 0.098 maximum). At thumbnail size it is a little figure on a big shelf. A: the boxing gloves fill the width and are cut by the left and right edges (margin 0.021), the close crop that real cards use.",
+   "fix": "Draw the robot much bigger and closer, turned three-quarters, so its head and body fill most of the card from top to bottom and its arm nearly touches a side edge. Show less shelf and wall."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the rocket is a thin diagonal shape in the middle of a wide sunburst. It covers little of the card (subject 0.194, under the real 0.198 minimum) and leaves wide blue gaps on every side (margin 0.121, above the 0.116 maximum). B: the submarine is chunky and fills the width (box_width 0.863), and its periscope pushes close to the top edge, so it reads big at thumbnail size, as real heroes do.",
+   "fix": "Draw the rocket much larger and closer, tilted, with its nose cone almost touching the top-right corner and its fins near the bottom-left. The body should be fat enough to fill most of the card."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the control panel is a boxy block that fills the card (subject 0.451, above the real 0.427 maximum), with a glossy reflection pooling under it. The row of five red buttons and the levers compete as many equal small accents, and no single feature leads the read. B: the vending machine is a tall upright block a little left of center, inside the real ranges. Its lit shelf of cans is the clear first read. The evidence is weak and both cards are close.",
+   "fix": "Turn the control panel to a three-quarter view and make one big lever or one big glowing screen the clear centerpiece. Use fewer, larger buttons, and leave a little background visible around the top."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the pod sits dead center and faces straight ahead on a round platform, with lab props (a monitor on the left, a glowing tube on the right) framing it evenly on both sides (margin 0.117, above the 0.085 maximum). The background props pull the eye away from the hero at thumbnail size. A: the bus is in three-quarter view, large, and close to the left edge (margin 0.03), with a simple street behind it.",
+   "fix": "Draw the pod large and close, in three-quarter view, filling most of the card. Cut the background down to a soft purple glow with no monitors or tubes beside it."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the scarf is centered and symmetric, and its knot badge is the first read. B: the book sits on a slight angle on a wooden table and fills most of the width (subject 0.527, above the real range). Both are bold, clear reads, and neither has the small, floating, padded hero that marks generated cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the planet sits exactly centered inside centered rings, with its ring band set on a near-symmetric tilt. The cyan ring background echoes the planet's outline, so the whole image reads like a target, and the hero is short (box_height 0.521, under the real 0.581 minimum). B: the flippers are also short (0.531), but they sit on a diagonal and the pair overlaps, so they read more like a placed object.",
+   "fix": "Draw the planet larger and closer, filling most of the card, with the ring tilted steeply so it sweeps toward the edges. Shift it off the exact center."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the rover is small and wide on a flat grey plain, with a lot of empty crater ground below it and sky above it (subject 0.202, box_height 0.492, both under the real ranges; margin 0.107, above the 0.085 maximum). At thumbnail size it shrinks to a toy in a landscape. B: the boat fills the card on a diagonal and the dock is cut by the top and left edges (margin 0.0), the close crop of real cards.",
+   "fix": "Show the moon rover close up in three-quarter view, filling most of the card. Let a front wheel nearly touch the bottom edge and the antenna dish reach toward the top, with only a thin band of crater ground showing."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the helmet is a compact rounded block floating in the center of the sunburst, with an even orange gap around it (margin 0.144, well above the real 0.116 maximum). B: the jacket fills the width (box_width 0.84), and its cuffs reach close to the side edges, within the real margins.",
+   "fix": "Draw the space helmet larger and closer, tilted three-quarters, so its visor and rim nearly touch the card edges on two sides."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the alien is centered and faces straight ahead, sitting low on a metal floor with wide pink wall on both sides (margin 0.158, far above the real 0.098 maximum; box_width 0.598, under the 0.661 minimum). A: the computer is the real lesson card. It fills the card edge to edge (box_width 0.96, margin 0.016) and is cropped by the desk at the bottom.",
+   "fix": "Draw the alien much bigger and closer, turned slightly, with its body filling most of the card width and its antennae almost touching the top edge. Show less floor and wall."
+  }
+ ],
+ "pattern": "Generated cards place the object small, centered, and seen straight-on, with an even gap of background on every side (margin_min often above the real maximum, and box width or height under the real minimum). Real cards push the hero big and close, tilt it or show it at three-quarters, and let it run near or past an edge. Generated scenes also add side props or a flat diagram layout that pulls attention from the hero."
+}

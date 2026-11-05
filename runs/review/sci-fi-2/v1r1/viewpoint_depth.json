@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the planet sits dead-centre and floats with no ground. The ring is a flat ellipse tilted only in the picture plane, and the sphere and ring show no shared camera height, so it reads as a sticker. B: the flippers are seen from a clear high three-quarter angle, with both toe pockets turned the same way and the blades foreshortened toward the viewer, like the lessons' real cameras.",
+   "fix": "Show the planet from slightly above and turned to the side, so the ring's far half passes behind the ball and its near half is wider and closer to the viewer, with a soft shadow below that hints at a floor."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the target booth is seen straight on, with a shelf ground plane at one level and the bear overlapping the target stand. B: the ice tray is seen from a high three-quarter angle and sits on a wooden table that is cropped at the card edge, with the table planks converging consistently. Both have one consistent view and mild perspective.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the rocket is a diagonal, front-on silhouette with no ground and no turn. The fins are flat cut-outs facing the camera, so the body has no visible depth axis. B: the submarine is turned slightly away, with its round nose closer and bigger than the tail and the periscope overlapping the hull, so it reads as a 3D object in space.",
+   "fix": "Turn the rocket three-quarters toward the viewer so that one fin points toward the camera and one fin is hidden behind the body, with the nose slightly closer and larger than the exhaust."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the robot stands frontal and centred, shown full-length in a room corner. The floor tiles converge strongly like a wide-angle lens, and the wall corner adds a deep box, which matches the lessons' 'whole object on a stage' generated look. B: the gloves are cropped close by a low camera, with the table edge cut by the frame and mild perspective.",
+   "fix": "Bring the camera closer and lower so the robot fills the card and its feet are cropped near the bottom edge. Turn it a little to one side, use gentle perspective on the floor tiles, and leave out the room corner."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 5,
+   "difference": "A: the alien faces the camera dead-on and centred, with its whole body shown, on a metal floor plate seen from slightly above. B: the computer is the real reference, turned slightly and cropped by a desk edge that runs off the card.",
+   "fix": "Turn the alien a little to one side and move the camera closer so the floor plate is cut by the card edges. Let one leg overlap the next, and let the antennae lean toward the viewer at different depths."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the slide is seen from a low three-quarter angle on a tiled pool deck that recedes consistently, with the ladder overlapping the platform. B: the beach ball is seen from above at close range on sand, and it fills the card. Both views are consistent, with mild perspective.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the pod is shown frontal and symmetric, centred on a round glowing platform that works like a display pedestal (like the lessons' generated lighthouse island). Machines fill a deep, busy background at the same sharpness. A: the bus is turned three-quarters with mild convergence, and the street and buildings are cropped at the card edges.",
+   "fix": "Turn the pod three-quarters so that one leg comes forward and one leg hides behind it. Drop the round platform, crop the floor at the card edge, and simplify the background lab into soft shapes."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the console's top face and front face are both large flat slabs (planar share is above the real range). The camera is high, and the sloped top looks tilted toward the viewer more than the table it sits on. A: the vending machine is turned gently three-quarters, and its side and front share one mild perspective.",
+   "fix": "Lower the camera a little so the console's top shows less, and make the table and the console's sides recede toward the same point. Round the box edges so the faces are less like flat panels."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the helmet floats centred and nearly frontal. The visor is a big flat opening facing the viewer, and the neck ring is seen from below while the dome is seen from the side. A: the jacket is turned three-quarters, and its sleeves come forward at different depths.",
+   "fix": "Turn the helmet three-quarters so that one side ear-disc is close to the viewer and the other is hidden. Put the camera slightly above, so the top of the dome and the neck ring are seen from the same height."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the rover is a long side view on a wide ground plane that recedes to a horizon. Craters scatter across foreground, middle and background at equal sharpness, which spreads the depth thin and makes the vehicle small. B: the boat is seen from a high angle and cropped close, with the pier cut by the card edge.",
+   "fix": "Move closer so the rover fills the card. Turn it toward the viewer so the front wheels are bigger than the back ones, crop the ground at the card edges, and remove the far horizon."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the saucer's top is one big flat disc seen from above, but the dome on it is seen almost from the side, so the two parts disagree on camera height. It floats centred with no ground. A: the music player is tilted three-quarters, and its earbud cable loops forward and overlaps itself in consistent depth.",
+   "fix": "Show the flying saucer from one camera height: if the disc's top is visible, draw the dome from slightly above too. Tilt the saucer a little toward the viewer, so the near rim is thicker than the far rim."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the station is drawn perfectly frontal and flat, like a technical drawing. All four solar panels face the camera head-on with no foreshortening, while the curved planet behind implies depth. B: the tiki bar is seen from a high three-quarter angle, with stools receding along the curved counter and the roof cropped by the top edge.",
+   "fix": "Turn the space station three-quarters, so the solar panels on the near side are bigger and the far ones shrink and narrow into thin angled shapes. Let the near module overlap the central sphere."
+  }
+ ],
+ "pattern": "The lessons show real cards turned three-quarters and cropped close by the card edge. Generated cards show the object frontal and centred, whole and floating, or on a pedestal or stage (island, round platform, room corner). In the generated cards, parts often disagree on camera height, the ground is wide-angle or spread out, and the background is deep and equally sharp instead of simplified."
+}

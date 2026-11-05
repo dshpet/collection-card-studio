@@ -18,6 +18,11 @@ and perspective checkers tested there, at chance, were removed (commit 8bee565 h
     prefer.py report
 """
 
+import sys
+from pathlib import Path
+
+sys.path.insert(1, str(Path(__file__).resolve().parents[1] / "scripts"))  # the pipeline's modules
+
 import argparse
 import itertools
 import os
@@ -30,7 +35,9 @@ os.environ.setdefault("HF_HUB_OFFLINE", "1")
 from common import ROOT, load_json, save_json
 
 import numpy as np
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image
+
+from review import judge_sheet as sheet
 
 OUT = ROOT / "runs" / "prefer"
 BATCH = 8
@@ -159,28 +166,6 @@ def numeric_judges(rows):
         for row in [r for r in test if r["object"] == held]:
             answers["probe"][row["pair"]] = "A" if model.predict_proba([pair_vector(row)])[0, 1] > 0.5 else "B"
     save_json(OUT / "numeric.json", answers)
-
-
-def sheet(row, out, labels=("A", "B")):
-    font = ImageFont.load_default(30)
-    references = row["references"]
-    width = 430 * 2 + 12
-    small = (width - 12 * (len(references) - 1)) // len(references)
-    small_height = min(round(small * 480 / 430), 480)
-    small = round(small_height * 430 / 480)
-    canvas = Image.new("RGB", (width, small_height + 12 + 480), "white")
-    for i, path in enumerate(references):
-        canvas.paste(Image.open(ROOT / path).convert("RGB").resize((small, small_height), Image.LANCZOS),
-                     (i * (small + 12), 0))
-    draw = ImageDraw.Draw(canvas)
-    draw.rectangle((0, 0, 150, 40), fill="white")
-    draw.text((8, 4), "REAL", fill="black", font=font)
-    for i, (path, label) in enumerate(zip((row["A"], row["B"]), labels)):
-        canvas.paste(Image.open(ROOT / path).convert("RGB").resize((430, 480), Image.LANCZOS), (i * 442, small_height + 12))
-        draw.rectangle((i * 442, small_height + 12, i * 442 + 60 + 200 * (len(label) > 1), small_height + 56), fill="white")
-        draw.text((i * 442 + 8, small_height + 16), label, fill="black", font=font)
-    canvas.save(out)
-    return out
 
 
 def reviewers(rows, rater, director_rater, workers):

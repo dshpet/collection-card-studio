@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the popcorn cart is seen almost straight from the side at mid height. The whole cart sits centered on a flat tiled floor, with a plain wall behind it and nothing cut by the frame. B: the station clock is a close shot. The clock, beams and platform run off the card edges, and the platform and rails recede at a mild angle, like the cropped bike and fan cards.",
+   "fix": "Turn the cart about 30° into a three-quarter view and move the camera closer so the awning and one wheel are cut by the card edge. Let the street recede behind it."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the cactus is dead frontal and mirror symmetric, with both arms flat to the camera and no turn. It stands centered on a sand mound with a flat back wall. A: the spring-rider duck is turned toward three-quarter, the base plate shows its top face in perspective, and the spring is foreshortened.",
+   "fix": "Turn the cactus about 30° so one arm comes toward the viewer and the other goes back. Show a little of the sand's top surface receding behind it."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the saddle is a flat side profile, and the wooden rail crosses the card as a level band with no recession. Only the horn shows any top. The normal map is mostly one even front-facing color. B: the fountain is seen from above in three-quarter view. The bowls and basin show elliptical tops, and the paving recedes and is cut by the frame.",
+   "fix": "Raise the camera and turn the saddle to three-quarter so the seat's top and the rail's end recede into depth. Let the rail go back at an angle instead of lying flat across the card."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the horseshoe stands dead frontal on a shelf, seen from straight ahead. The shelf is a level strip with almost no top face, and the background shows again below it, so the ground plane does not read. A: the sneakers are seen from a raised three-quarter camera. The floor recedes, and the two shoes overlap in depth.",
+   "fix": "Lay the horseshoe on a wooden table seen from above at three-quarter, with the table top receding and running off the card edges."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the sheriff star is seen straight on from the front like a flat emblem, with no turn and no depth beyond the bevels. B: the umbrella is tilted and turned. Its canopy underside shows, and the pole recedes diagonally.",
+   "fix": "Tilt the star badge back and turn it about 25° so its thickness and rim edge show on one side, as if it lies on a surface viewed in three-quarter."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the wagon sits in a generic three-quarter view, fully inside the card. A flat strip of hills sits far behind with no midground, and the dirt path's angle does not match the wheels. B: the boat and dock are seen from a high camera, cropped by the frame. The dock planks recede consistently, and the boat sits in the same water plane.",
+   "fix": "Move the camera closer and higher so the wagon fills the card with a wheel cut by the edge. Run the dirt path under the wheels at the same angle as the wagon body."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the cowboy boots are a pure side profile from eye level, floating with no ground. The soles show no bottom or top face, and both boots share one flat silhouette angle. A: the flip-flops are seen from above at three-quarter, with the soles' top faces and thickness showing.",
+   "fix": "Stand the boots on a wooden floor seen from slightly above. Turn them to three-quarter so the boot openings and the floor plane recede."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the cowboy hat is seen from slightly below eye level with a symmetric side view of the crown, floating with no ground. A: the jacket is turned three-quarter, with the sleeves foreshortened and the collar interior visible. The camera difference is weak.",
+   "fix": "Raise the camera so the top of the hat brim and the crown's dent are seen from above at three-quarter."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the phone booth is centered and fully inside the card from mid height. It shows two faces with mild perspective, on a flat floor band before a wallpaper backdrop. A: the scroll is close and three-quarter on a glossy tabletop whose edge recedes and is cut by the frame.",
+   "fix": "Move closer and lower the camera slightly so the booth fills the card and its roof is cut by the top edge. Show the pavement receding at the base."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the saloon is near frontal and centered, fully inside the card. The mesas sit on a separate far layer, the porch floor shows almost no top, and the side wall is a thin sliver. A: the dock posts are a close, high, cropped view. The planks converge, and the water plane is consistent.",
+   "fix": "Turn the saloon to a clear three-quarter view from a higher camera, close enough that the roof or porch is cut by the card edge. Show the porch floor's top surface."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the lasso coil is seen from near ground level and sits fully inside the card. The sand plane is barely visible, and the loop stands up flat to the camera. B: the lawnmower is seen from above at three-quarter. The grass recedes, and the handle is foreshortened back into depth.",
+   "fix": "Raise the camera so you look down into the rope coil. Show the sand receding and lay the loop on the ground in perspective."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the campfire tripod is dead frontal and mirror symmetric, with the stones and legs flat to the camera. The desert mesas are a flat backdrop with no midground. B: the gas pump is turned slightly. Its base slab recedes and is cut by the bottom edge, with a mild three-quarter view.",
+   "fix": "Turn the tripod and fire about 30°, with one leg toward the viewer, from a higher camera. Show the ground and stones receding into depth."
+  }
+ ],
+ "pattern": "Generated cards tend to use a dead-frontal or pure side camera at eye level. The hero is centered and fully inside the card, with almost no top face showing and a flat backdrop behind. Real cards turn the object to three-quarter from a higher camera, crop it with the card edge, and run the ground plane back under it at one consistent angle."
+}

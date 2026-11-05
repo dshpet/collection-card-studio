@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the bottle is one soft, translucent blue plastic. It has a single broad sheen and no fine marks, like the real cards. B: the map paper has crisp printed coastlines, wave squiggles and an island. The magnifier rim is chrome with a hard white ring highlight, and the wood planks show visible grain. Its detail and highlight numbers are above the real range.",
+   "fix": "Soft matte paper map with only a few simple shapes, a gentle satin sheen on the lens rim, and plain wood planks with almost no grain"
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the music player is matte yellow plastic with soft bevels, and the earbuds are plain white with a soft sheen. B: the saucer body has a faint brushed-metal streak texture and a bright lacquered rim. The glass dome carries sharp window-shaped reflections, and every rim bulb has a hot specular dot. The whole object reads as one uniform polished finish.",
+   "fix": "Smooth soft-grey saucer body with no brushed streaks, one soft highlight on the dome, and rim lights as simple warm dots"
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the station core and arms are covered in small panel seams, screw dots and bolted plates. The solar panels carry a dense fine grid, and the background is scattered with star sparkles. Detail and micro-texture are above the real range. B: the bar counter is a plain soft concrete-like surface, and the stools are smooth matte green. The texture is only on the thatch and the pineapple.",
+   "fix": "Smooth white station modules with only two or three large seams and no screws, and solar panels with a few broad cells instead of a fine grid"
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the gloves are soft red leather with a few broad crease folds and a dull sheen. The wood below is soft and slightly blurred, like the real desk cards. B: the robot is uniformly smooth white-grey plastic with bright white highlights on every ball joint and edge. Its highlight share is 0.34, about twice the real maximum.",
+   "fix": "Matte painted-metal robot with soft dull highlights only on the head top and the chest button, not on every joint"
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the rocket has a satin metal body with soft streaks and matte red fins. B: the submarine hull is high-gloss yellow, with every porthole ringed in shiny copper with hot specular dots. Small rivets are spread evenly across the hull. Everything has the same lacquered gloss.",
+   "fix": "Semi-matte yellow hull with no rivets, and portholes with plain dull rims and one soft reflection each"
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the console box is one evenly lacquered teal metal with mirror reflections on the floor and chrome rings around each button. Small screws sit in the corners and side plate. B: the vending machine is matte blue with soft-edged cans. The condensation dots on the glass are small and quiet.",
+   "fix": "Matte painted-metal console without corner screws, plain dark rims on the buttons, and no mirror reflection on the floor"
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the bus is soft painted red with gentle sheen, and the windows are simple flat tones, consistent with the real cards. B: the pod sphere has many tiny rivets, panel seams and screwed hatch plates. A string of bulbs each carries a hot highlight. Floor reflections and glowing lab props add more busy glossy detail.",
+   "fix": "Smooth soft-grey sphere with just one hatch seam, no rivets, a few dim lights, and a plain matte floor"
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the scarf is soft matte fabric with broad, quiet folds, and the badge is the only glossy part. B: the book cover carries crisp sticker icons with white die-cut edges. The wood under it has large, high-contrast decorative grain streaks. Detail and micro-texture are both above the real range.",
+   "fix": "Plain soft cloth book cover with one or two simple emblems, and a table of smooth wood with faint, fine grain"
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the planet and ring are one featureless smooth plastic with no surface variation at all, and the gloss share is 0. B: the flippers mix matte dark rubber shoes with satin yellow blades, a believable material split.",
+   "fix": "Give the planet a faint soft banding texture and a gentle sheen on the upper left, with the ring slightly matte and chalky"
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the rover deck is covered in small screw heads, panel seams and vent slots. The tyres have sharp tread grooves, and the regolith has fine grainy noise and crater rims. B: the boat has broad soft plank grooves, and the rope is chunky but simple, in line with the real wooden signpost card.",
+   "fix": "Smooth orange rover deck with no screws and only one or two seams, simple soft rubber tyres, and smooth grey ground"
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the helmet shell has fine panel seam lines and studded rivets on the collar. The gold visor is mirror-glossy with hard streak reflections, and highlight share is 0.086. B: the jacket is matte cloth, with soft folds on the pockets and collar and no highlights. The badges carry only a slight sheen.",
+   "fix": "Soft white helmet shell without panel lines or studs, and a visor with one broad soft reflection instead of sharp streaks"
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "A: this is the real computer card. It has soft off-white plastic, a dull screen sheen and gentle blur. B: the alien's skin is high-gloss rubber with a bright highlight on every bump and eye. It stands on a brushed-metal floor plate with fine streaks and screw heads at the seams.",
+   "fix": "Soft matte green alien skin with only a gentle highlight on top, standing on a plain smooth floor with no brushed streaks or screws"
+  }
+ ],
+ "pattern": "The generated cards are filled with small mechanical detail that the real cards leave out: screws, rivets, panel seams, vent slots, brushed-metal streaks and decorative wood grain. They also put the same lacquered gloss on the whole object, with a hot white highlight on every rim, bulb and joint. The real cards keep surfaces soft and slightly blurred, use a few broad shapes, and mix matte areas with one gentle sheen. The sci-fi metal props (station, pod, rover, helmet, alien floor) show this most."
+}

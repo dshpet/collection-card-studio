@@ -8,6 +8,7 @@ make_set.py calls choose() and review_variant() for new cards. Construction and 
 """
 
 import argparse
+import itertools
 import json
 import random
 from concurrent.futures import ThreadPoolExecutor
@@ -137,6 +138,39 @@ ROLES = {
     "staging_detail": (background_alone, "Rhythm and staging", (
         "surface_finish.detail_background", "edges_linework.edge_density_background")),
 }
+
+
+def judge_sheet(row, out, labels=("A", "B")):
+    """Real cards on top, marked REAL, and two drawings of the same object below, A and B."""
+    font = ImageFont.load_default(30)
+    references = row["references"]
+    width = SIZE[0] * 2 + 12
+    small = (width - 12 * (len(references) - 1)) // len(references)
+    small_height = min(round(small * SIZE[1] / SIZE[0]), SIZE[1])
+    small = round(small_height * SIZE[0] / SIZE[1])
+    canvas = Image.new("RGB", (width, small_height + 12 + SIZE[1]), "white")
+    for i, path in enumerate(references):
+        canvas.paste(Image.open(ROOT / path).convert("RGB").resize((small, small_height), Image.LANCZOS),
+                     (i * (small + 12), 0))
+    draw = ImageDraw.Draw(canvas)
+    draw.rectangle((0, 0, 150, 40), fill="white")
+    draw.text((8, 4), "REAL", fill="black", font=font)
+    for i, (path, label) in enumerate(zip((row["A"], row["B"]), labels)):
+        left, top = i * (SIZE[0] + 12), small_height + 12
+        canvas.paste(Image.open(ROOT / path).convert("RGB").resize(SIZE, Image.LANCZOS), (left, top))
+        draw.rectangle((left, top, left + 60 + 200 * (len(label) > 1), top + 44), fill="white")
+        draw.text((left + 8, top + 4), label, fill="black", font=font)
+    canvas.save(out)
+    return out
+
+
+def judge_lessons(folder):
+    """Pairs the user decided, with their note, shown to the director before it judges (analysis/judge_lessons.json)."""
+    taught = []
+    for index, row in enumerate(load_json(ANALYSIS / "judge_lessons.json")):
+        labels = ("A, preferred", "B") if row["user"] == "A" else ("A", "B, preferred")
+        taught.append((judge_sheet(row, folder / f"lesson_{index:02d}.png", labels), row["lesson"]))
+    return taught
 
 
 def labelled(image, label):
@@ -338,20 +372,15 @@ def judge_pairs(run, label, contests, rater="claude-opus-5-5"):
     orders, is the framing that agreed with the user (61% on 216 decided pairs, scripts/prefer.py) and cancels
     position: shown three candidates at once, the director picked whatever sat in the second slot, ten of ten.
     """
-    from concurrent.futures import ThreadPoolExecutor
-
-    from prefer import pairs as decided_pairs, sheet
-    from tune import lessons as lesson_images
-
     folder = run / "choose" / label
     (folder / "sheets").mkdir(parents=True, exist_ok=True)
-    taught = lesson_images(decided_pairs())
+    taught = judge_lessons(folder / "sheets")
     rows = []
     for card, first, second, references in contests:
         references = [f"materials/card_examples/{i}.png" for i in references]
         for a, b in ((first, second), (second, first)):
             row = {"pair": f"q{len(rows):03d}", "card": card, "A": a, "B": b}
-            sheet({"references": references, "A": str((run / "tries" / f"{a}.png").relative_to(ROOT)),
+            judge_sheet({"references": references, "A": str((run / "tries" / f"{a}.png").relative_to(ROOT)),
                    "B": str((run / "tries" / f"{b}.png").relative_to(ROOT))}, folder / "sheets" / f"{row['pair']}.png")
             rows.append(row)
     batches = [rows[i:i + 8] for i in range(0, len(rows), 8)]
@@ -398,9 +427,7 @@ def judge_pairs(run, label, contests, rater="claude-opus-5-5"):
 
 
 def choose(run, briefs, history, rater="claude-opus-5-5"):
-    """Mark each card's best candidate: most pairwise wins, ties to the earliest draw."""
-    import itertools
-
+    """Mark each card's best candidate: most pairwise wins, ties to the earliest draw. A close win is marked unsure."""
     options = {b["id"]: [t for t in history[b["id"]] if t["passed"]] or history[b["id"]] for b in briefs}
     contests = [(b["id"], x["try_id"], y["try_id"], b["references"])
                 for b in briefs for x, y in itertools.combinations(options[b["id"]], 2)]
@@ -410,6 +437,7 @@ def choose(run, briefs, history, rater="claude-opus-5-5"):
         tries = sorted(options[brief["id"]], key=lambda t: -wins.get(t["try_id"], 0))
         tries[0]["chosen"] = True
         if len(tries) > 1 and wins[tries[0]["try_id"]] - wins[tries[1]["try_id"]] <= 1:
+            tries[0]["unsure"] = True
             unsure.append(brief["id"])
     if unsure:
         print(f"unsure picks, worth a human look: {', '.join(unsure)}", flush=True)

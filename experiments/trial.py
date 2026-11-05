@@ -9,6 +9,11 @@ blockout2  the same with models2: framed on the main body, sturdier thin parts, 
     trial.py draw [--arms control how blockout blockout2] [--draws 2]
 """
 
+import sys
+from pathlib import Path
+
+sys.path.insert(1, str(Path(__file__).resolve().parents[1] / "scripts"))  # the pipeline's modules
+
 import argparse
 import subprocess
 from concurrent.futures import ThreadPoolExecutor

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (bottle): soft, light outer edge against the rays. Seams on the cap and the body bulge are thin. Background is just the clean ray lines. B (map): every continent coastline has a thick dark contour, the compass rose and lens rim are heavily ringed, and the wood planks behind carry dense grain lines. Both edge densities are above the real range (subject 0.18, background 0.077).",
+   "fix": "Draw the map's coastlines as soft color changes with no dark border line. Keep the wooden table plain and slightly blurred, with only a few faint plank seams."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (player and earbuds): crisp body contour, thin button rings, cable edges clean and even. It reads like the real cards. B (UFO): the rim lights are each ringed with a dark bead outline and the saucer rim has fine hatched streaks. Hero and rim are equally sharp all around, against an almost edgeless background (0.003, below the real range).",
+   "fix": "Let the saucer's far rim and back lights soften and fade. Keep the sharpest edge only on the glass dome. Draw the lights as glowing blobs with no dark ring."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (space station): each solar panel is a hard double-framed grid with uniform dark cell lines. The module plates have embossed outlines and the starfield scatters dozens of crisp speckles. Edges are equally sharp from panels to planet clouds, with no focus. B (tiki bar): dense thatch edges, but the stools and drinks soften into the water. The pool background is lower contrast than the bar.",
+   "fix": "Draw solar panels as smooth blue sheets with faint thin cell seams and no heavy frame. Use fewer, softer stars. Keep the crispest edges on the central sphere and let the far panels and the planet go soft."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (boxing gloves): very soft, lost outer edges. Only the thumb crease lines are sharp, and that matches the soft real cards. B (robot): every block of the toy has an even crisp contour, and the feet sit on a dark outline line where they meet the shelf. Antenna balls, eye rings and chest button are all edged the same way, so there is no hierarchy.",
+   "fix": "Soften the robot's outer edges where they turn away from the light, especially the legs and back of the head. Remove the dark line under the feet and use a soft contact shadow instead."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (rocket): the fins carry a bold, doubled dark contour like an outline stroke. The window ring and the nose band are equally hard, and the body edge is uniformly crisp from nose to exhaust. B (submarine): dark edge on the hull's right side, but the propeller and the back fin fade softer. The rivets are small and light.",
+   "fix": "Draw the rocket fins with a soft shaded edge and no dark rim line. Let the lower body and exhaust nozzle soften, and keep the sharpest edge on the porthole."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (control panel): heavy dark contour along the front bottom edge and base strip. Each button has the same thick double ring, there are crisp rivets at every corner, and the panel's side door is edged as hard as the front. B (vending machine): clean thin seams on the door and the tray. The glass shows small condensation speckle, but the outer silhouette is soft against the purple.",
+   "fix": "Make the panel's bottom and side edges soft, rounded highlights with no dark border. Give the front buttons the crisp edges and draw the side door seam as a faint thin line."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (bus): window frames and grille are crisp, while the buildings and clouds behind are softer and simpler. B (pod): the lab background (wall consoles, tube coil, floor rings, ceiling arches) is drawn as crisp as the pod itself, so there is no edge hierarchy. The pod's leg feet and light beads have dark ringed contours.",
+   "fix": "Blur the lab background into soft shapes with no sharp console or tube details. Keep crisp edges only on the pod's hatch and glass."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (scarf): soft cloth folds, a clean single outer edge and a thin ring on the badge. B (book): every sticker has a thick, doubled embossed border, and the outline darkness of 0.165 is above the real range. The wood grain behind is dense parallel lines and the cover edge is uniformly hard. It may simply be a stylized real card.",
+   "fix": "Draw the stickers as flat color shapes with a thin white border and no dark rim. Simplify the tabletop to a soft warm surface with few grain lines."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (planet): the sphere has almost no internal edges (density 0.046, the bottom of the real range). The ring underside carries a strong dark contour line along its whole length, the same weight front and back. B (flippers): crisp foot-pocket and blade edges, with the far tips slightly softer. That fits the real cards.",
+   "fix": "Let the far side of the ring soften and thin as it passes behind the planet. Remove the dark line under the ring and add subtle soft surface banding on the sphere."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (rover): the base plate and fenders have an even dark contour all around, and every wheel tread, seat seam and vent slot is equally sharp. The crater rims and clouds in the background are also outlined crisply. B (boat): the plank seams are thin and the ripples are light and broken. The rope and the dock edge are sharper than the water.",
+   "fix": "Draw the rover's base edge as a soft rounded highlight with no dark border. Make the craters and clouds soft blurry shapes, and keep the crisp detail on the seats and front wheel."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (helmet): the visor rim and collar ring are traced by thick double contours. The ear disc has concentric hard rings and the visor interior is nearly edgeless. The silhouette is uniformly crisp, like an inked outline. B (jacket): the many stitches, pocket flaps and badges have thin seams, and the sleeves soften toward the back.",
+   "fix": "Draw the helmet rims as soft rounded highlights rather than dark ring lines. Let the back of the shell and the far side of the collar fade softer than the visor's front edge."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the real computer card from the lessons: thin precise seams and a soft desk. B (alien): the three eyes have heavy concentric dark rings, the antennae and legs have a uniform crisp contour, and the floor panels are bordered by hard lines with sharp rivets. The background floor seams are as hard as the hero.",
+   "fix": "Draw the eyes with soft-shaded lids and no dark rings. Blur the metal floor into soft tones with faint seams, and let the alien's legs soften where they meet their shadow."
+  }
+ ],
+ "pattern": "Generated cards draw every edge equally sharp, with no edge hierarchy. Hero rims, background props and floor seams are all crisp. Rims and rings are traced by dark doubled contours, like an inked outline (fins, ring undersides, eye rings, light beads). Generated cards also add repeated crisp micro-detail (rivets, grids, star speckle, grain) where real cards let far edges get lost and soften."
+}

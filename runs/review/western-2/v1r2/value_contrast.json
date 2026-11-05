@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A, the popcorn cart, has three clear value groups: a light awning and popcorn, a mid-grey wall, and a dark cart body. Its darkest accents stay on the wheels. B, the station clock, scatters near-black accents over the whole card: roof beams, bench, rails and hard black tick marks on a near-white dial. Its rms_contrast (0.205) and vignette (0.101) are both above the real range.",
+   "fix": "Keep the clock face soft cream rather than pure white. Push the station roof, bench and rails into one even mid-tone, and save the darkest values for the clock hands only."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A shows a light duck against dark green rays, the usual real pattern of a light hero on a darker field. B shows a mid-dark cactus with a hard black right side, set against a bright white glow right behind it, so the hero reads darker than its background (lightness_gap -0.193). The overall key (0.742) is at the top of the real range.",
+   "fix": "Make the cactus a lighter green with soft shading, and calm the white glow behind it so the hero is the brightest shape on the card."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A puts a heavy dark-brown saddle on a flat, even light-blue stripe field with no corner falloff (vignette 0.009). Hard black seams sit under the flaps, and the hero is much darker than the ground (gap -0.258, below the real range). B, the fountain, is very high key, almost all light tones, but its stone hero and its background stay in related values.",
+   "fix": "Lighten the saddle leather to a warm mid-orange with soft roll-off into the shadows. Darken the background a little toward the corners, and drop the black lines under the flaps."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A, the sneakers, is high key with a flat background: a pale floor and a plain orange wall. B, the horseshoe, has a bright pink glow placed right behind the hero, dark corners, and a hard black cast shadow on the table. This is the halo-behind-hero pattern from the generated lessons.",
+   "fix": "Remove the spotlight glow behind the horseshoe and use an even pink wall. Soften the black cast shadow into a mid-brown one."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A, the badge, is an almost white star on a perfectly flat mid-grey disc pattern, with no corner darkening (vignette -0.015, below the real range). The hero is far brighter than the field (gap 0.171, above the real range), and the only dark accent is the hard dark gem. In B, the umbrella has graded light-to-dark panels and the rings fade toward the edges.",
+   "fix": "Tone the gold star down to a warm mid-yellow with deeper shading on the far arms. Add soft darkening toward the card corners."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "In A, the wagon's canvas is a pure-white block next to near-black wheels, so the hero's local contrast is hard and the overall key (0.712) is slightly above the real range. B, the boat, keeps one mid-tone family across the dock and the hull, and its darkest values are grouped under the dock.",
+   "fix": "Make the canvas a warm off-white with a soft shaded underside. Draw the wheels in mid-brown instead of black."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B, the boots, reads as a dark hero mass with pure-white specular streaks on the toes and black soles, on a bright stripe background with a glow behind it. Its gap (-0.308) and rms_contrast (0.177) are both outside the real range. A, the flip-flops, is a light, gentle hero on light stripes, with soft local contrast.",
+   "fix": "Lighten the boot leather to a warm mid-tan and soften the toe highlights into broad gentle sheens. Remove the glow patch behind the boots."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B, the hat, sits on a bright halo of light rays right behind it, and has a crisp white rim line and a black slot under the brim. A, the jacket, has dark green corners (vignette 0.134, above the real range), but its value groups are broad: a light jacket, a dark sash and a dark field.",
+   "fix": "Spread the ray light evenly instead of concentrating a bright glow behind the hat. Replace the black underside of the brim with a warm mid-brown shadow."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A is low key: near-black navy upper corners and a black backdrop behind a near-white scroll. Its key (0.547) is below the real range, and its rms_contrast (0.213) and gap (0.313) are above it. Nothing like this appears in the real cards. B, the phone booth, is a dark-red hero on a light green field, with values inside the real ranges.",
+   "fix": "Brighten the background to a mid-blue with lighter rays or a gradient. Keep the scroll cream rather than white so the card stays mid-to-light key."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B, the saloon, breaks into speckled noise in the lens. Light ground, grey sky and hard white trim lines are scattered with small dark accents in the windows and doorway, so the card has no large value groups. A, the dock, has broad masses: dark water, mid-tone deck and light rope and buoy.",
+   "fix": "Draw the desert ground as one smooth light-tan area and the building as one mid-tone wooden mass. Use soft window shading instead of crisp white frames."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "In A, the light rope lasso sits on equally light sand with a pale glow behind it, so the hero barely separates by value. Its rms_contrast (0.113) is below the real range. In B, the lawnmower is a dark mass on a light circle, with clear grouping.",
+   "fix": "Shade the rope a deeper golden-brown with dark gaps between the coils. Make the sand a slightly darker mid-tan so the lasso stands out."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "A has white-hot fire and a black pot in the center, a hard local accent inside a mid-light dusk scene. Its gap (-0.185) is just under the real range. B, the gas pump, is a dark hero with a white roof slab against a light sky. Both cards are close to the real ranges, so this is a weak call.",
+   "fix": "Turn the fire glow down to warm orange and lighten the pot to a dark grey with a soft rim light."
+  }
+ ],
+ "pattern": "Generated cards light the hero with a bright halo or glow right behind it, or they leave the background flat with no corner darkening. Inside the hero they use hard local contrast: pure-white specular streaks and black seams or undersides where real cards roll off softly. They also break the card into many small scattered dark accents instead of a few broad light, middle and dark groups. As a result, the hero-to-background value gap often falls outside the real range, either a dark hero on a lit field or a near-white hero on a flat ground."
+}

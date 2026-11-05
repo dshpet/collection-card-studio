@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the bottle has a plausible tapered body, a thin loop handle with a clear hole, and a cap with stepped flat sides. B: the map sheet has straight folded edges and the magnifier has a thin, correctly sized handle. Neither silhouette is swollen or toy-scaled, and all fields are inside the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the UFO is one fat oval saucer with a dome. Its rim is lumpy with oversized bulb nubs, and there is no thin rim edge or separate underside. Solidity is 0.944, close to a convex blob. A: the player body is a soft rounded slab, but the earbud wires stay thin and long (thin_share 0.083) and the earbuds are true to size.",
+   "fix": "Draw the saucer with a thin, sharp outer rim edge and a flat underside step. Keep the lights small and set into the rim, not bulging out of the outline. Make the dome smaller than the saucer width."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the satellite core is a toy ball with a stubby antenna. The truss arms are thick sausage cylinders, and the four solar panels are chunky slabs joined by short fat stubs, with no thin booms. B: the pool bar has thin stool posts, rings and glass stems, all at believable scale.",
+   "fix": "Make the satellite body a long, narrow cylinder module, not a ball. Connect the solar panels on long, thin metal booms. Keep the panels as thin flat sheets with crisp square corners."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the robot is chibi-proportioned. Its head is as large as its torso, its legs are short blocky stubs, its hands are round balls, and every box has soft pillowed corners. A: the gloves are naturally bulbous objects, with a cuff and thumb in the right relation.",
+   "fix": "Draw the robot with a smaller head than its body, longer legs, and thin jointed arms. Give the boxy parts crisp, tightly bevelled corners."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the rocket is short and stubby, and its fins are thick swollen wedges. The nozzle is a small round blob, and the body tapers like a toy. B: the submarine is rounded too, but the periscope is a thin bent tube and the propeller blades are separate.",
+   "fix": "Make the rocket body longer and slimmer. Draw the fins as thin, flat, sharp-edged plates and the engine nozzle as a distinct flared bell."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the console is one rounded lump with a soft, pillowy slanted top. The lever knob is the only thing sticking out, and the base feet are round blobs. B: the vending machine is a straight upright box with tight corners and long straight runs (straight_share 0.788).",
+   "fix": "Give the console flat planar faces and tight, crisp bevelled edges where the slanted top meets the front. Draw the levers as thin rods rising clearly above the outline."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the pod is a near-perfect ball sitting on three short, thick legs with round pucks for feet, which reads like a toy. A: the bus is a long box with thin rails on the open top deck and thin mirror arms, all in true proportion.",
+   "fix": "Make the pod taller and less ball-like, with a flat-bottomed base ring. Draw the landing legs as thin, longer struts with small flat foot pads."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the scarf is a soft fabric loop with a knot and two tails. Its puffiness suits cloth. B: the book has a straight rectangular cover, a spine and thin ribbon tabs. Both have plausible part counts and proportions.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the planet is a plain ball with a thick, soft ring band, about as thick as a tube, with rounded ends. The silhouette has almost no corners (corner_rate 0.422). B: the fins have a long, flat blade with a straight edge and a tapered foot pocket, in the right relation.",
+   "fix": "Draw the planet's ring as a thin, flat, wide disc seen at an angle, with a crisp outer edge, not a thick rounded band."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the rover's wheels are huge balloon tyres almost as tall as the chassis. The deck is a thin plate with stubby boxes on top, the seats are toy-sized, and the dish mast is a short stick. B: the boat hull and dock have true proportions, with a thin rope.",
+   "fix": "Make the rover wheels smaller relative to the chassis, with visible suspension arms. Give the chassis more height, and make the boxes on deck crisp-edged with flat faces."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the helmet's outline is one swollen round blob with no corners (corner_rate 0.0, solidity 0.983, above the real range). The neck ring and side ear pod melt into the dome. B: the jacket has distinct sleeves, cuffs and a collar, with a stepped outline.",
+   "fix": "Draw the helmet with a clearly separate neck ring that steps out from the dome. Make the side fittings stand off the shell, and keep a flat visor edge."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: this is the real computer card, with flat monitor and case faces, a thin keyboard slab and a thin mouse cable. B: the alien is a ball body with four stubby sausage legs and ball-tipped antennae. It is all rounded blobs, with no straight runs or crisp corners.",
+   "fix": "Give the alien a less spherical body and longer, thinner legs with distinct feet. Make the antennae thin stalks with small tips."
+  }
+ ],
+ "pattern": "On shape, generated cards still draw objects as chubby toys. Bodies swell into balls or pillows (pod, alien, helmet, satellite core, planet), and limbs, struts, fins and booms shrink into short, thick stubs. Wheels and heads are oversized. Corners melt into soft blobs where a real card keeps flat faces and tight bevels. Generated cards also add or merge parts rather than keeping thin connectors (booms, legs, rims) at true thinness."
+}

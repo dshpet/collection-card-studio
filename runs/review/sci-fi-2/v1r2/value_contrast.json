@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the whole card sits in the top two grey bands. White sunburst rays fill most of the frame, and a mid-grey bottle with few darks sits on them. Key 0.815 is above the real range. B: a mid-key map on wood. The table corners are darker, the magnifier handle gives the darkest accent, and the light and dark groups are distributed evenly.",
+   "fix": "Darken the sunburst so its rays alternate between warm mid-orange and golden yellow rather than near-white. Give the bottle a deeper navy shadow side down its right edge."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the white player and earbuds stand clearly above the dark and mid rings, a strong light-on-dark separation. B: the silver saucer body falls into the same mid grey as the ring behind it. Separation comes only from the white dome highlight and the orange lights. The top corners are lighter than the centre, a reversed vignette (−0.042).",
+   "fix": "Make the saucer rim a darker gunmetal on its underside so the disc reads as a dark shape against the lavender rings. Keep the card corners a deeper purple than the area behind the saucer."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the top of the card is near-black starfield and the solar panels are dark blocks. A white central hub is the only light mass, giving a low key (0.552) and the strongest corner darkening of any card here (0.124, above the real range). B: a mid-light key with the thatch, pool and bar in large groups and no corner darkening.",
+   "fix": "Brighten the space to a saturated mid-blue, with no black at the top. Make the solar panels a lighter cobalt with pale frames so the card stays mid-to-light overall."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: high key (0.799, above the real range) and low contrast (0.114). A white robot stands on pale yellow stripes and a light table, so hero and background share the top grey band. Only the eyes and a small cast shadow are dark. A: red gloves sit as a darker mid mass against a lighter floor, with a firm shadow beneath them.",
+   "fix": "Make the background stripes a deeper golden orange and the table a richer brown. Shade the robot's right side and legs in a cool mid grey so its white body separates from the background."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the corners are almost black green and a near-white submarine floats in a spotlight. The hero-to-background gap (0.322) and contrast (0.185) are both far above the real range, which reads as tenebrism. A: a mid-blue sunburst whose pale rays sit behind a silver and red rocket, with balanced mid values like the real cards.",
+   "fix": "Use a bright emerald-to-mint background with light sunburst rays and no dark corners. Give the yellow hull an orange shadow side rather than letting it glow white."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a dark teal box on a bright orange background. The hero is much darker than the background (gap −0.254, below the real range) and contrast is high (0.181). A bright cyan reflection pools on the floor below it. B: a dark blue vending machine on purple, with a moderate gap and a soft floor shadow.",
+   "fix": "Lighten the console body to a brighter turquoise with a pale top face. Drop the glossy floor reflection and replace it with a soft darker shadow."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a dark purple interior with many small hard highlights: glowing bulbs, neon rings and floor reflections. In the lens the background breaks into speckled light and dark patches, and no broad value group forms. A: a dark red bus sits against a light sky and clouds, with clean large groups.",
+   "fix": "Simplify the room into one even mid-lavender wall and floor with no neon rings or tube. Let the silver pod be the only area with light and dark contrast."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the dark red scarf sits on a mid and light blue swirl, and its darkest accent is inside the neck loop. B: a teal book on wood grain that has light streaks. Both fall within the real ranges for key, contrast and vignette. My lens gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: contrast is low (0.08, below the real range). The orange planet body falls into the same mid grey as the cyan rings behind it, so only the cream ring and a top highlight separate it. B: dark purple background with bright yellow fins and black foot pockets, a clear light-on-dark split.",
+   "fix": "Shade the lower half of the planet in deep red-orange and lighten the background rings to pale sky blue, so the planet reads as a darker ball against the light background."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: pale grey moon dunes and sky fill the card in one light-mid band, and the rover's white deck merges into it. The only dark mass is the row of black tyres. B: an orange dock and boat over mid-light water, with a dark hull shadow side and rope accents giving distinct groups.",
+   "fix": "Make the lunar ground a deeper blue-grey and the sky a stronger blue. Give the rover's deck sides a darker shadow so the vehicle stands out from the dunes."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: an almost all-white helmet with a mid-grey visor sits on a mid orange sunburst. Contrast inside the hero is gentle (0.091) and there is no dark accent apart from a small visor spot. B: a light jacket with a dark green sash. The darker green corners give a strong vignette (0.134), and the cuffs and collar hold the dark accents.",
+   "fix": "Add a darker amber shadow on the lower half of the visor and a grey shade on the helmet's right side, so the hero has a clear dark accent against the orange rays."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the real computer card from the lessons: a light hero with a near-black screen on a mid orange background. B: the lime alien is a light-mid value close to the pink background. The top corners darken into a vignette and a spotlight pools on a grey metal floor.",
+   "fix": "Use a flat, evenly lit warm pink background with no dark corners and no spotlight. Give the alien a deeper green shadow side so it separates from the background by value."
+  }
+ ],
+ "pattern": "The generated sci-fi cards miss the real cards' simple mid-key layout in one of two ways. Some are washed out (robot, rover, planet, helmet), so the hero falls into the same grey band as the background and has no dark accent. Others swing into dark tenebrism (station, submarine, pod, alien), with near-black or vignetted corners and scattered glints and neon highlights instead of broad light, middle and dark shapes."
+}

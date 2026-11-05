@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A bottle: lit almost evenly from the front. The body goes from pale to mid-blue with no real core shadow down the right side, and its shading range (0.459) is below the real cards' range. B map: a clear key light from upper left, and the magnifier casts a soft shadow onto the paper. The folds also turn light and dark.",
+   "fix": "Light the bottle from the upper left. Give the right side of the body a clear darker band of core shadow, put a narrow highlight down the left edge, and add a soft shadow under the cap."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B UFO: a broad bright hot spot sits on the middle of the saucer top, lit from the front. The underside drops straight to a dark band, and the dome has a big, sharp, plastic-looking highlight. A player: soft light from the upper left, the right and bottom faces sit gently in shadow, and the earbud cable turns smoothly.",
+   "fix": "Light the saucer from the upper left. Let the shine slide toward the left side and the far right side fall into a soft shadow. Make the dome highlight a small soft streak, not a big white spot."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A satellite: the solar panels are lit flat with almost no shift across them. The hub sphere and the arm cylinders have only a faint top-left gradient and no clear shadow side (light_bias 0.148, below the real range). B pool bar: strong sun from one side, dark undersides under the bar counter, and stools that turn clearly from lit to shadow.",
+   "fix": "Light the station from the upper left. Make the lower right of the sphere and cylinders clearly darker, tilt the panels so the far ones are a little darker, and add a dark core line along each tube."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B robot: lit from the front. Every box face has nearly the same value, the side faces are only slightly darker, and the cast shadow falls softly behind to the right. A gloves: strong side light, deep shadow in the folds and on the right glove's underside, and a firm contact shadow on the wood.",
+   "fix": "Light the robot from the upper left. Make the side faces of the head and body clearly darker than the front faces, and put a darker contact shadow under the feet."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A rocket: glossy banded sheen down the body, a sharp white streak, and flat fins shaded like separate panels. The light is set up in one clean pass. B submarine: the body turns softly into a dark underside, and a rim light glows along the back against the dark background.",
+   "fix": "Turn the rocket body smoothly from a lit left side to a darker right side. Shade the fins with the same light direction, and add a faint cool rim light along the shadow edge."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A control panel: very glossy, with hard white highlights along the top edges and a mirror-like reflection on the floor. Its shading range (0.812) is above the real range. B vending machine: soft light from the left, the right side face sits in gentle shadow, and the contact shadow is soft.",
+   "fix": "Use a soft satin shine instead of hard white edge highlights. Make the right side face a calm, darker shadow, and replace the floor reflection with a soft contact shadow."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B pod: the metal sphere is shaded fairly evenly, with only a small light-to-dark shift. Most of the light comes from the orange practical lights and the floor glow, so the main light has no clear direction. A bus: strong directional sunlight, a clearly shadowed left side, and a hard cast shadow on the road.",
+   "fix": "Light the pod from one clear key at the upper left. Give the sphere a bright left side and a darker core shadow on the right, and place a defined shadow under the legs on the platform."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A scarf: soft shading with low contrast (form_contrast 0.256, below the real range). The folds barely darken and the knot has no deep shadow. B book: a clear key light from the upper left, a darker spine and page side, and a cast shadow on the table.",
+   "fix": "Deepen the shadows inside the scarf folds and under the knot, and make one side of each hanging tail clearly darker than the other."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A planet: a smooth, even gradient from upper left with a mild shadow side and no clear core shadow. The ring is lit almost flat and casts no shadow onto the ball. B fins: a strong key with rim light along the edges and dark shoe openings. Its measured values sit above the real range, but the shading still reads as one coherent light.",
+   "fix": "Give the planet a clear core shadow on the lower right, make the ring cast a thin shadow band across the ball, and darken the ring's underside."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A rover: a hard, dark cast shadow under the chassis, and the wheels are lit flat from the side. light_bias (1.184) is far above the real range, so the light is pushed hard to one side without a smooth turn. B boat: a soft key light, smooth turns on the hull and dock, and gentle shadows on the water.",
+   "fix": "Soften the rover's ground shadow and lighten it a little. Shade each wheel as a rounded form with a light top edge and a darker bottom, and give the deck sides a gentle gradient."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A helmet: lit from the front, with a huge glossy visor highlight. The white shell turns only softly and has a weak shadow side on the right. B jacket: a clear upper-left key, a darker right sleeve and side, and deep shadows in the pocket flaps.",
+   "fix": "Light the helmet from the upper left. Push the right side of the shell into a clear darker shadow, and shrink the visor shine to one soft curved streak."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A computer: this exact card appears as REAL in the lessons, with side-lit faces and a cool shadow side on the monitor. B alien: a frontal, centered key light, so the ball body is lit fairly evenly with only a gentle darkening at the bottom. The cast shadow spreads behind it, and the legs show little form turn.",
+   "fix": "Light the alien from the upper left. Make the right half of the body clearly darker, put a core shadow under the eyes and on the legs, and add a tighter contact shadow under the feet."
+  }
+ ],
+ "pattern": "Generated cards tend to be lit from the front with a weak, gentle shadow side and no clear core shadow. Real cards put one directional key on the object, often from the upper left, give it a deliberately darker side (often with a cool tint), and add rim or bounce light. Generated cards also lean on glossy hot spots or edge highlights, or on glow from lights in the scene, instead of a clear turn from light to shadow."
+}

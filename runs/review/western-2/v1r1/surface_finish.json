@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the cowboy hat has a soft felt surface with a faint, quiet grain. It is evenly matte and the red band has a soft sheen, which is close to the real cards. B: the scout jacket has crisp, sharp-edged badges with fine icons. The fabric has a slightly grainy speckle and the buttons are small and crisp. Its detail measure (0.046) is just above the top of the real range.",
+   "fix": "Soft, smooth cotton jacket with no surface speckle. Simple flat badges with softened edges. Keep the fabric quietly matte."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the lasso rope has fine, crisp fibre twist lines along every strand, and the sand has a grainy speckle. B: the lawnmower is smooth red plastic with soft highlights and a plain metal handle, close to the real cards' smooth plastic.",
+   "fix": "Rope drawn as soft, broad twisted strands with no fine fibre lines. Smooth sand without speckle."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the umbrella has smooth matte canvas panels and a soft pole. B: the sheriff star is smooth yellow with a faceted red gem. Both are clean and soft with no micro texture, and both sit at the low end of the measures. My vector gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the cactus has smooth ribs and small, crisp spines. B: the spring duck is smooth glossy plastic and the spring is soft metal. Both have quiet surfaces with no visible noise, and the measures are similar and inside the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the ice tray has a frost speckle along its pink edges and bubbles inside the ice. The speckle is busy, but it is tied to the subject. B: the fruit plate has heavy wood-plank grain lines and many water droplets on the watermelon, grapes and plate. The strawberry seeds and orange pulp are dense, crisp detail, with a slightly painterly smear across the fruit flesh. Its detail and gloss measures are higher.",
+   "fix": "Fewer water droplets. Smooth, soft fruit surfaces. A quiet, faint wood grain on the table. Simple orange segments without fine pulp lines."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the sneakers have a fine mesh dot pattern and saturated glossy trims. The image is somewhat soft overall. B: the horseshoe has a brushed-metal streak texture with fine scratch noise across its faces, and the wood has visible grain. In the lessons, this kind of fine surface noise was what showed on the generated cards.",
+   "fix": "Smooth, softly shaded silver horseshoe with no brushed streaks or scratches. A broad, soft highlight. Plain wood with faint grain."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the campfire scene has a soft, matte iron pot with gentle highlights and smooth logs, close to the real cards. B: the gas pump has a mottled, grungy paint surface and scuffs on the base. The gauge and counter are very crisp, and the base slab is blotchy. Its micro-texture and gloss measures are higher.",
+   "fix": "Clean, smooth orange-red painted pump with no scuffs or grime. Soft, simple gauge faces. A plain, even base slab."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the saloon has crisp, dense wood grain on every plank, with knots, fine crack lines and sharp glass reflections. Its detail and gloss measures are near the top of the real range. B: the pier has broad wood grain and the rope is softer, though there is some painterly noise on the water.",
+   "fix": "Wooden saloon with smooth planks and only faint, sparse grain lines. No knots or cracks. Soft, simple window glass."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the rowboat has smooth wood with broad, quiet grain and soft rope. B: the covered wagon has a canvas weave texture, many small brass grommets, rivets and studs along the boards, and spoked wheels with crisp edges. The grass is noisy. Its detail measure (0.067) is near the top of the real range. This matches the dense fine detail on the generated lesson cards.",
+   "fix": "Smooth cream canvas cover without weave texture. Remove the small rivets and grommets. Soft, simple wooden boards and wheels. Softer grass."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the saddle has dashed stitch lines along every edge and a pebbled leather-pore grain over the whole surface. The rings are crisp metal. This is the same stitching-and-grain addition as the generated lesson gloves. Its detail measure (0.053) is above the real range. B: the stone fountain is smooth and soft, with gentle water.",
+   "fix": "Smooth, soft brown leather saddle with no visible pores and no stitching lines. Broad, gentle highlights. Simple, soft metal rings."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the cowboy boots have dotted turquoise stitch patterns, a fine leather grain on the shafts and a detailed spur rowel. Its detail measure (0.049) is above the real range. B: the flip-flops are smooth matte rubber with simple, soft dimples, quiet like the real cards.",
+   "fix": "Smooth brown leather boots with no fine grain. Replace the dotted stitching with a few soft, solid decorative lines. Simple spur."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the guitar has a lacquered, very glossy body with sharp, bright specular highlights. The fret dots and strings are crisp, and the stage floor has strong wood grain. Its gloss (0.211) is just above the real range. B: the caravan is soft matte cream panelling with gentle shading and only faint surface grain.",
+   "fix": "Red guitar with a softer satin sheen and one broad, gentle highlight. Softer strings and frets. A quieter stage floor with faint grain."
+  }
+ ],
+ "pattern": "Generated cards add fine surface detail that the real cards smooth away: dashed stitch lines, leather pores, canvas weave, rivets and grommets, brushed-metal scratches, dense wood grain with knots, frost and droplet speckle. They also push gloss into sharp, lacquered highlights. Real cards keep materials soft and quiet: broad, gentle shading, faint or absent grain, and few small parts."
+}

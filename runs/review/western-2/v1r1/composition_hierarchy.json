@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the hat is shown in flat side profile, a wide, squat band through the middle of the card. Box height is 0.496, below the real range, which leaves empty blue sky above and below. B: the jacket fills the card top to bottom at a slight three-quarter angle, and the sleeves reach near both edges, like the real glove and bottle cards.",
+   "fix": "Tilt the cowboy hat toward the viewer at a three-quarter angle from slightly above so the crown and brim opening show. Make the hat larger so it fills about two-thirds of the card's height."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the rope coil sits low and left, and its loop rises into empty green space. Scattered pebbles on the sand pull the eye to the lower corners, the same set dressing the generated lighthouse lessons add. B: the mower is a single three-quarter mass that runs from edge to edge across the lower half, with the handle filling the top right.",
+   "fix": "Draw the lasso larger and centered, filling most of the card. Remove the loose pebbles, and let the coil and loop form one compact shape."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the sheriff star is dead center, straight-on and mirror-symmetric, with the ring sitting evenly inside the card. This is the head-on, centered pose the generated camera and glove lessons use. A: the umbrella is tilted diagonally, its canopy nearly touches the left edge, and its pole runs off toward the lower left, like the real tilted water bottle.",
+   "fix": "Turn the sheriff badge to a three-quarter angle and tip it about 20 degrees so one star point reaches toward a corner. Let the ring come close to one edge."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cactus stands perfectly upright, front-on and symmetric down the center line. Pebbles sit evenly on both sides, and box width is 0.619, below the real range. B: the spring-rider duck is turned in three-quarter view, with the beak pushing toward the left edge and the tail toward the right.",
+   "fix": "Turn the cactus slightly to a three-quarter view with one arm nearer the viewer, and make it larger so the arms reach close to both side edges. Remove the pebbles."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the ice tray is a three-quarter block in the center, cropped by the table at the bottom, with the raised cube as the clear first read. B: the fruit plate is seen from above at an angle and fills the width, with the watermelon wedge leading. Both have real-like scale and crop.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the horseshoe stands upright, front-on and centered, with wide empty pink space on all sides. Margin_min is 0.167 and area is 0.206, both outside the real range, so the card reads as small and posed. A: the sneakers are a three-quarter pair that fills the lower two-thirds, and their shadow runs to the left edge.",
+   "fix": "Draw the horseshoe much larger, filling about 80% of the card's height. Tilt it in three-quarter view, leaning at an angle on the wood, and bring it close to the card edges."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the campfire tripod is a mirror-symmetric triangle centered on the card, front-on. The pot, fire and stones are stacked on the center line, and mesas sit evenly on both sides. B: the gas pump is turned in three-quarter view, sits off-center to the left, and the hose and nozzle break the right side.",
+   "fix": "View the campfire and tripod from a three-quarter angle slightly above. Shift the tripod off-center and let one leg run past the card edge."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the saloon is a whole building, centered and front-on, inside a full diorama of sky, clouds, mesas, fences and shrubs. Margin_min is 0.123, above the real range, so it reads small with lots of scenery around it. B: the dock posts and life ring are cropped by the right and bottom edges on a strong diagonal, and the life ring is the clear focus.",
+   "fix": "Push in close on the saloon front at a three-quarter angle and let the roof and porch run off the card edges. Remove the distant mesas, clouds and fences."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the covered wagon is shown complete in the middle distance, with the sun, clouds, hills, grass, flowers and a dirt path all competing. Box height is only 0.575. A: the rowboat runs on a strong diagonal, with the dock cropped at the top left and lily pads cropped at the edges, which matches the real cropped framing.",
+   "fix": "Move in close on the covered wagon so the canvas top and front wheel fill the card and run off one edge. Remove the sun, clouds and distant hills."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the saddle is a flat side profile hung on a rail that runs through both side edges, and the stirrups dangle into empty space below. B: the fountain is a three-quarter view from above, with the plaza cropped on three sides and the tiers stacked as one tall focus. The difference on this vector is weak.",
+   "fix": "Turn the saddle to a three-quarter view from slightly above so the seat curve and horn read in depth. Make it larger so the skirt fills the lower card."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the two boots stand upright in side profile, staggered but parallel. Box width is 0.556, below the real range, which leaves wide empty orange margins left and right. B: the flip-flops are tipped on a diagonal and spread across the card from corner to corner.",
+   "fix": "Show the cowboy boots from a three-quarter angle, one lying tipped over in front of the other on a diagonal, and spread them across the full card width."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the guitar takes up little of the card (area 0.169, below the real range). The stage truss, two spotlight beams and the floorboards compete with it, so at thumbnail size the stage is read before the guitar. B: the camper is a large three-quarter mass that spans the full width on a plain radial background.",
+   "fix": "Make the electric guitar large and tilted diagonally across the whole card on a plain radial background. Remove the stage truss and spotlights."
+  }
+ ],
+ "pattern": "Generated cards stage the object like a product shot: dead center, upright, often front-on and symmetric, and shown whole with even space on all sides. They also surround it with a small scene (pebbles, mesas, clouds, sun, spotlights) that competes with it at thumbnail size. Real cards use a bolder three-quarter or tilted pose, run the object close to or off the card edges, and keep the background simple so the hero is read first."
+}

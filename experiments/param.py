@@ -13,6 +13,11 @@ readings agree with themselves.
     param.py compare final p1              which parameters moved, and how far toward the real cards
 """
 
+import sys
+from pathlib import Path
+
+sys.path.insert(1, str(Path(__file__).resolve().parents[1] / "scripts"))  # the pipeline's modules
+
 import argparse
 import random
 from concurrent.futures import ThreadPoolExecutor

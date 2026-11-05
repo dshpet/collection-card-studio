@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B (station clock): black contour lines around the clock rim, hands, tick marks and every pillar and roof beam. The background platform, bricks, bench and rails are busy with hard lines, and all three measures fall above the real range (outline 0.186, background 0.089). A (popcorn cart): soft outer edge, thin seams on the awning, and a quiet tiled floor, all within the real range.",
+   "fix": "Remove the dark outline around the clock and its hands. Separate shapes by light and color only. Blur and simplify the station behind it into soft shapes with no drawn bricks, rails or beams."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (cactus): a hard dark contour runs down the left side of each arm and the trunk. The spines add many small sharp marks, and the cast shadow is traced as a crisp line. A (duck rider): outline is soft except at the beak, and the inside is sparse (subject density 0.082, slightly below the real range). That points away from the generated cards, which ran busier in the lessons.",
+   "fix": "Let the cactus edges turn softly into shadow instead of drawing a dark line along them. Use fewer, smaller spines. Give the ground shadow a soft edge."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (saddle): an even dark contour wraps the seat, the skirt and the red blanket. The stirrup and rings are drawn as heavy doubled outlines, and the wooden beam carries drawn grain lines. B (fountain): thin, precise lines on the bowl rims and water, and the tiles are dense but light.",
+   "fix": "Remove the dark outline around the saddle and blanket. Show the leather panel joins as thin, faint seams. Draw the rail as plain smooth wood with no grain lines."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (horseshoe): a heavy dark rim traces the two caps and the outer arc, and the nail holes are hard black rings. The table has drawn wood grain. A (sneakers): dense detail from the mesh and laces (subject density 0.227, at the top of the range) but no outline (-0.1). Real lesson cards also carried dense internal detail.",
+   "fix": "Let the horseshoe's edge read only as a change in light, with no dark rim line. Make the nail holes soft shallow dents. Show the tabletop as a smooth surface with no drawn grain."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (sheriff star): double dark rings trace the outer hoop and the star's arms, and the jewel setting is a hard black circle. Every edge has the same strength, so the gem at the focus is no sharper than the rim. B (umbrella): sparse (subject density 0.042, below range), with a dark line only along the top of the canopy.",
+   "fix": "Draw the star and hoop without outline rings. Keep the sharpest edge on the red gem and let the hoop's edges go softer."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (covered wagon): black contours on every spoke and wheel rim, speckled texture across the canvas, and drawn grass tufts and clouds give the background many hard edges. Subject density 0.254 and outline 0.135 are both near the top of the real range. B (dock and boat): ripples and planks are lighter, with no wrap-around outline.",
+   "fix": "Remove the dark lines around the wheels and spokes. Make the canvas cover smooth with no speckle. Simplify the meadow and clouds into soft, blurred shapes with no tufts."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (cowboy boots): a crisp dark outline wraps each boot, the sole edge has a drawn black welt line, and the decorative stitching is drawn as thick dark grooves. Subject density 0.161 is just above the real range. A (flip-flops): soft rims, with the dimple dots as the only fine detail.",
+   "fix": "Show the boot stitching as a thin, light-colored pattern stitched into the leather, not dark carved lines. Remove the dark outline around the boots and the black line at the sole edge."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (scout jacket): a dark contour runs around the whole garment, with many heavy seam lines on the pockets, cuffs and collar and hard rings around each badge. Subject density 0.159 is just above the real range. B (cowboy hat): one smooth silhouette with a single band edge and soft brim shading.",
+   "fix": "Make the jacket seams thin and faint. Show the pockets and cuffs as raised forms, not drawn lines. Remove the dark outline around the jacket and the badge rims."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (scroll): a strong dark line traces the curled paper edge and the wax seal, and the glossy table's reflection adds a second set of contours. Outline 0.083 is near the top of the range. B (phone booth): the window bars are bold but read as frame geometry, and the suitcase pattern behind it is light, like the patterned backgrounds on real cards.",
+   "fix": "Let the paper edge of the scroll show as a light rim, not a dark line. Soften the table reflection into a faint blur."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (saloon): hard edges on every plank, window frame and fence rail, and a fully drawn desert with mesas, shrubs and rocks. Subject density 0.237 and background 0.067 are high, so the building has no edge hierarchy against the background. A (dock): rope twists and plank seams on the subject, with only light ripples behind.",
+   "fix": "Blur the desert, mesas and fence into soft, low-detail shapes. Cut the plank lines on the building down to a few thin seams."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (lasso): the rope is covered in dense, even, hatch-like twist lines, and a dark contour runs under every coil, so the knot at the focus is no sharper than the coils. B (lawn mower): the body is clean, and the edges are mostly at the wheels and on the small grass tufts.",
+   "fix": "Show the rope twist as soft, broad ridges rather than many fine dark lines. Keep the crispest detail at the knot and let the lower coils soften."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "B (fuel pump): dark contours on the cap and body edges, and the counter digits are drawn as hard black marks. A (campfire): dark outlines on the poles and the pot. Both have similar busy mesa backgrounds and both measure inside the real range. My vector gives almost no reason to choose.",
+   "fix": "Remove the dark outline around the pump's cap and body. Separate parts by color and light."
+  }
+ ],
+ "pattern": "Generated cards show dark contour lines wrapped around the hero, like an inked outline; real cards separate forms with light and color. Decorative detail such as stitching, seams, wood grain, spokes and rope twists is drawn as thick, evenly dark grooves. Every edge has the same strength, so the focus is no sharper than the rest. Backgrounds are busy and hard-edged, with drawn grass tufts, fences, mesas and bricks."
+}

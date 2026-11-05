@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: water bottle tilted diagonally, mild 3/4 turn, floating with no ground plane, like the real anchor card. B: map on a wooden table seen from a high three-quarter angle. The board lines and the map recede together at one consistent angle and the magnifier lies flat on the map. B's high planar_share comes from the flat paper, not from a camera error.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: player tilted and turned, cord loops toward the viewer, so there is clear front-to-back depth. B: UFO dead-centred and symmetric, seen from a slightly raised camera. The saucer top is one even green patch in the normals and the rim beads sit evenly around it. The rig is posed and generic, the same frontal centred-object look as the generated lessons.",
+   "fix": "Turn the saucer about 30° so one side comes toward the viewer, tilt it slightly off-axis, and let part of the rim overlap the dome."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: space station drawn almost orthographic and dead frontal. The solar panels are flat even patches with no foreshortening and all four sit in one plane, so the image reads like a diagram. The planet behind is just a flat curve. B: bar seen from a high 3/4 view. Stools recede and shrink, and the roof overlaps in the foreground, giving several depth layers.",
+   "fix": "Show the station from a 3/4 angle above: near solar panels larger, far panels foreshortened and partly hidden behind the hub, with the planet clearly far behind."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: gloves cropped big, overlapping each other, low camera on a table edge, like the real cropped cards. B: robot small, centred and nearly frontal, standing on a flat table strip. The head, body and legs all face the camera squarely and nothing overlaps in depth. This is the generated lessons' frontal, centred, full-object pattern.",
+   "fix": "Turn the robot three-quarters, bring the camera lower and closer so it fills the card, and let the near arm overlap the body."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: rocket on a diagonal but nearly flat in profile. In the normals the fins are flat side-on plates and the body barely turns toward the viewer, so the side view reads as a cutout. B: submarine in 3/4 view with the nose bulging toward the viewer and the periscope overlapping above, giving clear volume and turn.",
+   "fix": "Turn the rocket so the nose points slightly toward the viewer, with the near fin larger and overlapping the body and the far fin partly hidden."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: control console seen from high and slightly off-axis. The front and slanted top are large flat patches (planar_share 0.638, above the real range), and the levers and buttons stand in strict even rows. B: vending machine at a mild 3/4 angle on a soft floor, with consistent mild perspective.",
+   "fix": "Lower the camera to just above the console top, turn it 3/4, and soften the box into rounded chunky forms so it is not built from flat slabs."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: bus with strong but consistent street perspective, with buildings receding behind and the road plane matching the wheels. B: pod centred on a round platform. The platform ellipse looks seen from higher up than the pod body, which is shown almost frontally, so the two parts don't share one view. The lab props behind are stage-set filler.",
+   "fix": "Match the pod's view to the platform: show a little of the pod's top, set its legs on the same ellipse angle, and reduce the background to a simple soft backdrop."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: scarf seen frontally, floating, simple volume. B: book from a high 3/4 view on a table, with the cover a flat even patch. Its planar_share is only slightly above the real range, which flat book faces explain. Both views are consistent.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: planet's ring is a thin, nearly edge-on ellipse that doesn't pass convincingly behind and in front of the sphere at a matching tilt, so the ring and ball read as two different views. B: fins seen from above at a consistent angle, with the pair foreshortened together.",
+   "fix": "Tilt the ring so more of its top face shows, pass it clearly behind the planet at the top and in front at the bottom, and keep the ring's tilt matched to the planet's band."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: rover almost side-on with a small, toy-like top. The wheels are nearly flat discs while the ground craters are seen from higher above, so the rover and terrain disagree on camera height. B: dock and boat from one high 3/4 view, with the planks and the boat interior matching.",
+   "fix": "Show the rover from a 3/4 angle with the camera above, the wheels as ellipses and the deck top visible, matching the angle of the crater rims."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: helmet almost frontal with a slight low view. The visor is a big flat dome face to the viewer and the neck ring is seen from below while the top is seen level, so the parts don't quite share one view. B: jacket in a gentle 3/4 view, with the sleeves foreshortened consistently.",
+   "fix": "Turn the helmet 3/4 with the camera slightly above, so the neck ring shows as a matching ellipse and the side ear-piece overlaps the shell."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: computer at a mild 3/4 from slightly above, with the desk edge and keyboard sharing one angle (matches the real lesson card). B: alien centred and frontal on a metal floor. Its body is a smooth rainbow ball facing the viewer, and the floor plates are seen from higher than the creature, which is shown at eye level.",
+   "fix": "Turn the alien slightly 3/4, show a bit of its top, and draw the floor plates at the same camera height, with the near legs overlapping the far ones."
+  }
+ ],
+ "pattern": "The generated cards are frontal, centred and symmetric, with the whole object shown small and posed. Different parts are drawn from different camera heights: the ground or platform is seen from above while the hero is seen at eye level. Flat side-on parts like panels, fins and wheels get no foreshortening. Real cards use a mild 3/4 turn with consistent foreshortening, often crop the object large, and let near forms overlap far ones."
+}

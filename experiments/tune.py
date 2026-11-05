@@ -9,6 +9,11 @@ choose() in review.py reads.
     tune.py --rounds 6
 """
 
+import sys
+from pathlib import Path
+
+sys.path.insert(1, str(Path(__file__).resolve().parents[1] / "scripts"))  # the pipeline's modules
+
 import argparse
 import random
 from collections import defaultdict

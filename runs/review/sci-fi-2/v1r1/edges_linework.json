@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (planet): the ring's lower rim carries one dark contour of even weight all the way round, and the band edges on the sphere are just as crisp. Inside the ball there are almost no edges (0.046, the bottom of the real range), so the hero reads as a few even lines over an empty fill. B (flippers): the doubled dark contours around the fin blades are heavy, but they change weight along the foot pocket and blade tips, as the real cards do. The call is weak. B's outline is heavier, so the edges alone barely separate these two.",
+   "fix": "Let the planet's ring edge go soft and lighter where it turns away from the light. Keep the crispest edge only where the ring crosses in front of the sphere. Add soft shading transitions across the sphere instead of clean hard band lines."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A (target booth): the frame, bulbs, target rings and bear have crisp edges, the target rings are sharpest, and the wood behind is soft. B (ice tray): the tray rim and cubes are crisp, the frost speckle is fine, and the table planks and rays are faint. Both measurements sit inside the real ranges, and neither card shows the even, heavy contour seen in the lessons.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (rocket): the fins and the nozzle have a dark contour of the same width all the way round. It is as strong as the edge at the porthole, which is the focus, so the edge map looks like a coloring-book outline with a smooth, empty body inside. B (submarine): edges are strongest at the portholes and the hull seam ring, and the tail and propeller fade off with lighter, broken contours. That matches the softer-elsewhere hierarchy of the real cards.",
+   "fix": "Keep the porthole rim the sharpest edge. Let the far fin and the nozzle edges soften and lose contrast into the blue background. Do not trace every silhouette with the same dark line."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (robot): the floor is a grid of metal plates, and every seam and rivet is a crisp dark line all the way to the card edge. Background edge density is 0.054, above the real maximum of 0.046, and the floor competes with the robot. The robot itself has uniform crisp contours on every limb. This is the same move as the wood grain added in the computer lessons. B (gloves): the edges are soft and broad, the creases are few and soft, and the wall and planks are simple.",
+   "fix": "Make the floor a plain smooth surface with only a few faint, blurred plate seams that fade out with distance. No rivets in the background. Keep the robot's face and chest panel the crispest area and soften the limb edges."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "B is the real computer card from the lessons, and its edges match: a crisp monitor bezel and keyboard, and a soft desk. A (alien): the floor plates in the foreground have crisp seams and rivet dots, and the eyes get stacked concentric ring contours. Meanwhile the body silhouette goes soft, so the edge weight is spread over the floor and the eyes instead of the body outline.",
+   "fix": "Remove the riveted floor-plate seams, or blur them heavily, and use a smooth floor with a soft contact shadow. Give each eye one clean rim edge instead of several nested rings, and keep a clear, firm body silhouette."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A (slide): the wavy wall stripes and the tiled pool edge add a lot of background edges (0.065, above the real range), but the slide tube's lip and rails are still the sharpest edges. B (beach ball): there are very few edges inside the ball (0.029, below the range), the panel seams are thin and precise, and the sand has fine speckle. Each card is an outlier in a different direction, and neither shows the even, heavy outline seen in the generated lessons.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (space pod): the lab background is drawn with crisp contours as strong as the hero's: screen bezels, a glowing coil tube, the arch, floor rings. The hatch ring and leg joints are traced with even dark double lines, so there is no softening away from the focus. A (bus): the hero is crisp, the buildings behind are lighter and simplified, and the road is grainy but low-contrast. That is the real-card hierarchy.",
+   "fix": "Blur and simplify the lab background into soft shapes and glows with no crisp outlines on the consoles or tubes. Keep the sharpest edge on the pod's hatch rim, and let the far legs and the platform rings fade softly."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (control panel): every button sits inside an even double ring contour, and the side hatch, base seam and screws are all sharp. The tabletop edges and stripes run crisply across the frame, giving 0.029 background density, above the real maximum of 0.021. A (vending machine): the edges are concentrated on the door frame and bottles, and the purple background is almost edge-free.",
+   "fix": "Let the tabletop dissolve into a soft blurred surface with no hard edge lines. Keep the screen and the front buttons crisp, and soften the side panel, screws and base seam so they read as quieter secondary detail."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (helmet): the visor, the ear disc and the collar ring are all traced with uniform, dark, doubled contours, so it reads like an outlined icon, and outline_darkness sits at the light extreme (-0.092). Its interior is sparse apart from those parallel rim lines. A (jacket): the edges vary. Stitched seams, pocket flaps and badges are thin and precise, and the shoulders and sleeves soften.",
+   "fix": "Draw the helmet's rim and collar as rounded forms that blend into the shell with soft shading, not as parallel hard bands. Keep one crisp highlight edge on the visor and let the back of the helmet soften into the background."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (rover): the whole ground is covered in crisp crater rims and pebbles drawn as sharply as the rover, all the way to the card corners. Every wheel tread and seat seam is outlined with equal weight, so nothing marks the focus. This matches the busy textured backgrounds of the generated lesson cards. B (boat): the hull rim and the rope are the sharpest edges, the dock planks are clean, and the water ripples are light.",
+   "fix": "Make the ground a smooth soft gray surface with two or three blurry craters at most and no scattered pebbles. Keep crisp edges only on the rover body and the front wheel, and soften the far wheels and the dish."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (UFO): every bulb on the rim gets its own crisp dark ring, the saucer edge is a double dark contour of even weight, and the dome has a hard stacked collar line. The same edge strength runs all round the silhouette, including the far side. A (music player): the edges are strongest at the front bezel and dial, and the cable and earbuds are drawn with lighter, tapering contours.",
+   "fix": "Soften the far half of the saucer rim and the rear bulbs so they glow into the background without hard rings. Keep the crispest edge where the dome meets the saucer at the front."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (space station): each solar-panel cell is boxed in thick double dark lines of equal weight, there are hard star sparkles everywhere, and the cloud edges on the planet are as crisp as the hero. B (tiki bar) has even more background edges (0.144, above the range), from thatch strands and pool tiles, but it is a full scene whose bar counter and glasses keep the sharpest edges. The call is weak.",
+   "fix": "Draw the solar panels as smooth blue sheets with only faint thin cell divisions. Reduce the stars to a few soft dots, and blur the planet's clouds so the station body has the only crisp edges."
+  }
+ ],
+ "pattern": "Generated cards spread crisp, equal-weight edges across the whole card. The hero's silhouette and every sub-part (rivets, bulbs, panel cells, button rings) get dark doubled contours of even width, with no softening away from the focus. The background is usually filled with sharp texture as strong as the hero: wood grain, floor-plate seams, crater pebbles, lab machinery. Real cards keep the strongest edges at the focal area, let far edges and silhouettes go soft or lost, and leave the background nearly edge-free."
+}

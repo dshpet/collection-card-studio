@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (hat): mid-key sunburst with light rays, the hat body in soft mid tones and one large dark group under the brim. Dark areas are few and grouped, like the real glove's dark pocket. B (jacket): heavy dark-green corners (vignette 0.134, above the real range) around a bright cream jacket split up by many small white highlights. A near-black sash runs across it, so the hero turns into a busy light/dark patchwork instead of one light mass.",
+   "fix": "Keep the green background evenly lit and only slightly darker at the corners. Shade the jacket as one soft light shape with a single broad shadow side, and make the sash a mid green instead of near-black."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (lasso): very high key (0.76, above range) with low contrast (0.112, below range). The rope, sand and green background all fall in the same two light greys. The coil has no dark core, only a thin cast shadow, so the hero barely separates from the background. B (mower): a clear dark mass in the tyres and body sits against a light lawn and a halo. Contrast and grouping are in the real range.",
+   "fix": "Darken the sand and the inside of the rope coil. Give the coil a deep shadowed center and a strong cast shadow, and make the green background a slightly darker middle tone so the tan rope reads as the lightest shape."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (umbrella): mid background. The canopy splits into a white top panel and dark underside panels, so the dark group sits inside the hero, as on real cards. B (sheriff star): the star and ring are one flat near-white shape on a flat mid-purple field. The hero is much lighter than the background (gap 0.168, above range), there is no vignette (0.003), and the only dark accent is the small gem.",
+   "fix": "Shade the star with a darker gold on the lower and right arms and on the ring's underside, and add a soft cast shadow. Darken the purple background a little toward the corners."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (cactus): too bright overall (0.749) and too flat (0.100). The sunburst, the sand and most of the cactus fall in the same pale greys, and the cactus never gets a real dark side, only a mid-grey shadow. B (duck): dark green rays in the corners and a bright duck with a defined shadow under the body and on the spring base. The value groups are clearer.",
+   "fix": "Make the sunburst rays deeper orange toward the edges. Give the cactus a clearly darker green shadow side and a dark cast shadow on the sand, so the cactus stands out as a mid-dark shape against a lighter center glow."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (ice tray): light glow behind the cubes, with a mid-dark pink tray body against light wood. B (fruit plate): a mid-key wooden table with no glow. The dark accents (seeds, blueberries) are small and scattered, and contrast is slightly low (0.115). Both stay within the real ranges for brightness and hero gap, and neither shows the bright, washed-out look of the generated lesson cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (sneakers): bright high-key floor, but the shoes hold a clear mid-dark group with white soles, close to how the real cards separate the hero. B (horseshoe): a near-black magenta backdrop with heavy corner darkening (0.104, above range). The horseshoe is a smooth, single-tone silver mid-grey with low internal contrast (rms 0.106, below range). Its lit edge is a narrow white rim, and there is no shaped shadow side.",
+   "fix": "Light the background more evenly with only mild corner darkening. Shade the horseshoe with a clear bright top face and a darker side face so the metal has distinct light and dark planes."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (campfire): the black pot is a large near-black mass in the middle of a pale desert. The hero-to-background gap is -0.209, below the real range, and the fire itself reads as a washed-out light patch, not a bright center. B (gas pump): a dark red body against a mid sky, with gap and contrast in range, though the roof band is almost pure white.",
+   "fix": "Make the pot dark grey with a visible lit rim instead of solid black. Let the fire be the brightest spot, with warm light falling on the logs and stones, and put a slightly darker dusk tone on the sky and ground at the card edges."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (saloon): the whole card sits in middle greys. The building, the desert and the mesas all share the same tone, so the hero is separated only by hue. The darkest accents are scattered small window and door holes, not one grouped dark shape. B (dock): large dark water fills the frame, with light posts, rope and ring buoy laid over it, giving clear light, middle and dark groups.",
+   "fix": "Push the desert background lighter and hazier, and give the saloon one clear shadowed side and a deep shadow under the porch roof, so the building reads as a darker shape against a pale backdrop."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (boat): the dark water and dock shadow form big dark groups, with a mid-light boat and gentle shading inside it. B (wagon): high key (0.713, above range). The white canopy, white sun and white clouds compete as the brightest shapes, the grass is evenly mid-light with busy specks, and the darkest accents are only the thin wheel rims.",
+   "fix": "Tone the canopy down to a warm off-white with a soft shadow side. Drop the bright sun or make it small and dim, and make the grass a darker even green so the wagon is the clear light shape."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (saddle): a dark brown hero on a light striped background, with a clear value gap and gentle shading inside, like the real camera card. B (fountain): very high key (0.783, well above range). The stone, the water and the yellow stripes all sit in the two lightest greys, and the light is almost clipped on the basins, so the hero barely separates from the background.",
+   "fix": "Make the background stripes a deeper orange-yellow and darken the paving at the edges. Shade the fountain basins with clear shadow undersides and a darker inner water area, so the fountain reads as a light shape over a middle-tone ground."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "A (boots): the boots read as one flat near-black shape with tiny scattered stitch and spur highlights and no broad lit side. They sit in a pale oval glow inside dark edge stripes. B (flip-flops): very high key (0.795), with the yellow straps nearly white, but the soles have a clear light top and dark side, which matches how the real cards shade. On value alone this is weak in both directions.",
+   "fix": "Light the boots from one side so the toe and shaft each have a broad lighter brown face and a darker side. Keep the background glow subtle instead of an obvious oval."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (guitar): a staged spotlight look like the real drum card, with dark truss corners, beams of light and a mid-dark guitar picked out by its white pickguard. B (caravan): high key (0.717). The caravan body is one large near-white shape, with only mid-grey for the windows and stripe, inside a pale circular halo on purple. Internal contrast is soft, and the darkest accents are small (the tyre and windows).",
+   "fix": "Shade the caravan body with a clearly darker cream on the side and underside and a solid dark shadow under the chassis. Reduce the bright ring glow behind it so the corners stay an even middle purple."
+  }
+ ],
+ "pattern": "Generated cards are often brighter overall than the real ones, or the hero falls into the same light greys as the background (lasso, cactus, fountain, wagon, sheriff star). The other giveaway is the darks. On real cards they form one large connected shape inside the hero, such as the glove pocket, the camera body or the umbrella underside. On generated cards they are scattered small spots, or the whole card is one middle grey (saloon). Generated cards also lean on obvious glow halos or heavy corner darkening, and the lit faces come close to clipping to white."
+}

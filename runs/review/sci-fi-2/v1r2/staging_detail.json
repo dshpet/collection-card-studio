@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: bottle floats on an orange-yellow sunburst. The rays are even and there is nothing else in the field, which is category 1 as on the real cards. B: map and magnifier lie flat on wooden planks, which is category 3. The planks have broad, quiet grain. B's high background numbers come from the mask leaving most of the map uncovered, not from clutter in the backdrop. Neither card shows an invented prop or extra glow.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both cards sit on the same purple concentric-ring field, quiet and tone-on-tone. A: player and earbud cable spread loosely, nothing added. B: the rim bulbs on the UFO throw an orange-magenta halo onto the rings around the saucer edge. This is the kind of added glow the generated lessons show. The difference is small.",
+   "fix": "Flat purple rings with no glow from the lights spilling onto the background; the bulbs light only themselves."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: station over a cloudy Earth curve, with four-point twinkle sparkles scattered across the navy sky. These are invented sparkle decoration. B: tiki bar with many props: pineapple, grapes, two cocktails, three stools, a pool edge and a thatch roof. B is very busy (0.057 detail), but the props make up the hero itself, which reads as a staged real scene. A's sparkle stars and decorative planet backdrop are the generator habit.",
+   "fix": "Plain deep-blue space with a few tiny soft dots for stars, no twinkle sparkles; keep the planet as one large, smooth, quiet curve with little cloud detail."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both are category 2: the object stands on a wooden ledge in front of a striped wall. A: gloves lean on the ledge in front of blue planks. B: robot on an orange ledge, with yellow stripes and a soft cast shadow. Both look clean. B is the theme subject and its ledge front is a little glossier, but my vector gives only a weak reason to choose.",
+   "fix": "Keep the ledge matte with soft wood grain and no glossy reflection; plain even stripes behind."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: rocket on a blue sunburst. The rays are blurred to near nothing and a bright white-cyan glow pools in the center behind the rocket (detail 0.0068, below the real range). B: submarine on a green sunburst whose rays stay readable out to the dark corners, like the real lamp card.",
+   "fix": "Draw clear, even sunburst rays reaching the card edges with no bright glow pooled behind the rocket."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: control desk on an orange gradient. The floor is glossy and mirrors the cyan dial and the desk's feet in a bright reflection under the object. B: vending machine on a plain purple gradient with only a soft shadow. A's mirror floor is an added effect that the real ledge and floor cards do not use.",
+   "fix": "Matte floor with a soft contact shadow only, no mirror reflection under the panel."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: bus on a street. A few large quiet shapes: road, two pastel buildings, clouds. This is a category-4 setting like the real taxi card. B: pod in a lab packed with secondary props: a console with a waveform screen and buttons, a glowing coil tube, neon ring lines on the floor, light strips on the walls, and orange light reflections on the platform. The environment competes with the hero.",
+   "fix": "Put the pod on a simple round metal platform against a plain soft purple wall; no consoles, tubes or neon rings, one or two large quiet shapes at most."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: scarf floats on a blue spiral field, tone-on-tone, category 1. B: book lies on wooden planks with strong dark grain streaks, category 3, plus a long drop shadow. B's grain is slightly busy (0.0164 detail), but it is within what real material cards show. Neither card has invented props.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: planet on cyan concentric rings. The rings are very soft and low contrast, almost a plain gradient (edge density 0.003, below the real range), with a lighter glow behind the planet. B: flippers on purple rings with readable steps, like the real ring cards.",
+   "fix": "Draw the concentric rings as clear, flat, evenly spaced tone steps with no glow behind the planet."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: rover on a grey lunar ground full of small craters and dunes. Above it is a bright blue sky with white clouds, which does not belong to that ground. A satellite dish and a cooler box are added on the deck. B: boat at a dock with rope and two lily pads, a few large shapes on calm water. These are purposeful props, as on the real cards.",
+   "fix": "Plain dark space or a soft gradient sky above the grey ground, with no clouds; two or three large shallow craters only; no extra dish or box on the rover."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both cards use a sunburst. A: helmet on an orange sunburst. The rays are fine and low contrast (detail 0.0064, below the real range), with a brighter glow behind the visor. B: jacket on a green sunburst with wider rays and a darker edge, closer to the real lamp card. The difference is slight.",
+   "fix": "Use wide, clearly separated sunburst rays reaching the corners; no extra glow behind the helmet."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the same computer card shown as REAL in the lessons. It sits on a real wooden desk with a quiet warm gradient behind. B: alien on riveted steel floor plates with seams and bolt heads spread across the floor (category 3, with busier small detail), in front of a pink glow gradient. The steel plates and rivets are the invented setting.",
+   "fix": "Stand the alien on one plain smooth floor surface with no rivets or plate seams, in front of a flat pink backdrop without a bright glow."
+  }
+ ],
+ "pattern": "Generated cards add things to the background that the real cards do not have. Behind the hero they put a bright glow, and the sunburst rays or rings blur away, so the background measures below the real range. Real environments are a few large, quiet shapes. Generated environments are filled with themed props and small detail: lab consoles, glowing tubes, neon rings, rivets, scattered craters. They also add effects that do not fit the setting, such as twinkle sparkle stars, clouds above the moon, and mirror-like reflective floors."
+}

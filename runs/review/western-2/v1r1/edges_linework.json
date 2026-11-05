@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "In A, the cowboy hat has a soft outer edge. The only internal lines are the brim fold and the band, and edge density is low. In B, the jacket has a continuous dark contour around the collar, sleeves and hem. The pockets, flaps, buttons, sash and four badges with icons each have their own ring of edges, so the subject is crowded with crisp lines and every edge has the same strength.",
+   "fix": "Fewer small parts on the jacket: one or two plain patches, no button rows or flap seams. Let the outer edge of the jacket meet the background through light and shade, not a dark line."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "In A, the rope edges come from its twist texture, and the outer edge goes soft where the coils meet the sand. In B, the mower's wheels and handle have heavy black contours. Rows of small crisp grass tufts and flowers are scattered over the ground, which adds hard edges away from the subject.",
+   "fix": "Remove the scattered grass tufts and flowers. Make the ground a smooth, softly shaded lawn. Let the wheel rims be dark through shading, without a drawn black ring."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "In A, the umbrella has a dark edge along the top of the canopy, but the panel seams below it fade softly. In B, the outer ring of the badge is drawn as a doubled dark band. The gem setting has a hard ring and a faceted center, and the star tips have crisp beads. The edges are uniformly hard, and outline darkness is higher.",
+   "fix": "Draw the badge ring as a rounded gold tube with soft highlights and no dark rim line. Let the star's edges fade where they turn away from the light."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "In A, the cactus has soft outer edges. Its internal lines are the rib grooves and small spines. In B, the duck has a continuous dark contour all around the head, back and tail, plus a drawn eye ring and a hard wing outline. Outline darkness is 0.078 against −0.023 for A.",
+   "fix": "No dark line around the duck's body. Separate it from the green background with shading only, and keep the wing as a soft raised shape."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "In A, the edges on the ice tray are mostly frost specks and the cube rims, and the outer contour is fairly soft. In B, the fruit plate is packed with crisp small edges: watermelon seeds, water droplets, orange segments, strawberry seeds, grape outlines and the rim of the glass plate. The wood planks also carry strong grain lines, so the background is dense too (0.037).",
+   "fix": "Fewer, larger fruit pieces with no scattered water droplets. Draw the seeds as soft dark spots. Make the table a plain, smooth wood surface with faint planks."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "In A, the sneakers' subject edge density sits at the top of the real range (0.227). The mesh texture, laces, eyelets and panel outlines are all drawn at the same crisp strength, and a hard horizon line cuts behind them. In B, the horseshoe has a few strong edges: the outer rim, the nail holes and the plank lines. Its outer contour is darker, but it is simple.",
+   "fix": "Simplify the shoes. Use smooth uppers without mesh texture, fewer and thicker laces, and soft panel seams. Blend the wall into the floor with no hard horizon line."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "In A, the campfire's edges are moderate. The logs and stones have soft bottoms, and the background mesas are faint. In B, the gas pump has a dark continuous contour on the cap, body and hose. Its digit window, gauge dial and the chipped paint at the base are all crisply lined, and outline darkness is 0.07 against 0.012 for A.",
+   "fix": "Let the pump's outer edge be defined by light and shadow, not a dark border. Use a simple gauge face, and remove the chipped-paint edge at the base."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "In A, the saloon has a dense edge map everywhere. Every plank, window frame, cloud, fence post, shrub and pebble is outlined, and background density is 0.06. In B, the dock has strong contours on the rope coils and posts, but the water and sand stay open and quiet.",
+   "fix": "Keep the background soft and quiet. Show the mesas and clouds as soft color shapes without line detail, use fewer shrubs and pebbles, and give the building only a few strong edges at the doors."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "In A, the boat and dock have strong plank lines, and the water ripples are drawn as rings, but the subject density is moderate. In B, the wagon has dense wheel spokes. The canvas cover, sun and clouds are outlined, and the whole foreground is filled with crisp grass strokes and flowers, so there are hard edges everywhere and no softening away from the wagon.",
+   "fix": "Paint the meadow as a soft, smooth green field without individual grass blades or flowers. Make the sun and clouds soft and blurred, and keep the crisp detail on the wagon wheels only."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "In A, the saddle is outlined by a dark contour, and every panel edge is traced by a dotted stitching line. The rings, stirrups and wood grain on the rail are crisp too, so the subject is busy with lines (0.159). In B, the fountain has a dense brick floor in the background, but its tiers have softer edges.",
+   "fix": "Remove the stitching lines along the saddle edges. Make the leather smooth with soft rounded edges, and paint the rail as plain wood with no grain lines."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "In A, the boots have a dark sole and toe contour, dotted decorative stitching across both shafts, and toothed spur wheels, so subject density is high (0.141). In B, the flip-flops have soft outer edges. The only internal edges are the hole dots and the strap edges.",
+   "fix": "Use plain leather boots with no stitched patterns on the shafts, and soften the dark line along the sole into a shaded underside."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "In A, the guitar's outline darkness is 0.163, above the real range. It has a hard black contour around the body, every fret and string is drawn, and the stage trusses and floor boards fill the background with crisp lines. In B, the camper has strong contours and grass tufts, but its outline is within the real range.",
+   "fix": "Remove the dark line around the guitar body and show its edge through color and shading. Draw the neck without individual frets. Make the stage trusses soft and dark, falling out of focus behind the guitar."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away on edges in three ways. First, there is a uniform dark contour around the hero, the same weight all the way round, where real cards let the edge fade on the shadow side. Second, small parts are over-drawn: stitching, lacing, seeds, droplets, mesh, frets, vents and grass tufts each get their own crisp outline. Third, every edge has the same strength. Real cards keep fewer, softer internal seams, a soft outer edge, and a quieter background."
+}

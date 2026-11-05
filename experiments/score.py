@@ -14,6 +14,11 @@ Each card gets, on one shared list:
     score.py report         how each score tracks the user's grades and twin picks
 """
 
+import sys
+from pathlib import Path
+
+sys.path.insert(1, str(Path(__file__).resolve().parents[1] / "scripts"))  # the pipeline's modules
+
 import argparse
 import os
 import random

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: popcorn cart stands on a pale cobbled floor in front of a quiet tone-on-tone blue diamond wall (category 3). One purposeful prop, a popcorn tub. B: the clock hangs in a full station scene with a bench, green pillars, roof trusses, a tiled wall, sky, track rails and a yellow platform stripe. The background has many small objects and hard edges (edge density 0.089, real cards top out at 0.046).",
+   "fix": "Hanging station clock on a simple softly blurred backdrop: one large plain wall or platform shape, no bench, no rails, no pillars"
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both are on a sand mound with a few pebbles. A: the green sunburst has broad, soft rays that darken toward the edges. B: the cyan sunburst has many thin, high-contrast rays and a bright white glow right behind the cactus. That matches the generated cards in the glove and camera lessons.",
+   "fix": "Fewer, wider sunburst rays in close tones, with no bright glow halo behind the object"
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the saddle sits on a single wooden rail in front of plain blue stripes. That is a clean, purposeful support. B: the fountain stands on a ring of small paving bricks with many joints and highlights in front of yellow stripes. The floor's brick grid adds small detail (edge density 0.046, at the top of the real range).",
+   "fix": "Fountain on a smooth plain stone floor with only a few large slabs, no small brick grid"
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: sneakers on a plain pale floor against a flat orange wall. B: horseshoe on a wooden shelf against a flat magenta wall. Both are quiet category 2–3 setups with no props, and the measurements are nearly identical.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both use concentric tone-on-tone rings with no props. A: badge centered on purple rings. B: umbrella floating over cyan rings. B's background is a little flatter (0.005), but staging gives no clear reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: covered wagon on a dirt path with a grass field, distant hills and two clouds. These are a few large, quiet shapes. B: the boat is cropped by a dock that fills the top-left. Bonus props are added: a mooring post, coiled rope, two lily pads and ripple rings on the water. This is the same habit as the generated lighthouse cards gaining rocks, a life ring and bollards.",
+   "fix": "Rowboat alone on calm water with one simple dock edge, no lily pads, no extra posts or rope coils"
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both use teal vertical stripes with no props. A: flip-flops float. B: cowboy boots float. The backdrops are equally quiet.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the jacket sits on a green sunburst made of many thin, tightly packed rays with a dark vignette. This is the dense ray pattern of the generated glove and camera lessons. B: the hat sits on a blue sunburst with fewer, wider, calmer rays, like the real cards.",
+   "fix": "Green sunburst with fewer, wider rays in soft close tones, no dark vignette"
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the scroll lies on a glossy blue ledge with mirror reflections, against a dark plain gradient. Its background reads as a stock 3D render, and its detail (0.0072) is below the real range. B: the phone booth stands on a flat green floor against a tone-on-tone suitcase motif wall, which matches the game's patterned-field style.",
+   "fix": "Scroll on a soft matte ledge in front of a lighter backdrop with a quiet tone-on-tone motif pattern"
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a tight crop on the dock post and life ring. The water and beach are a few large smooth shapes. B: the saloon sits in a wide desert scene with mesas, fences on both sides, shrubs, a rock, many scattered pebbles, a step board and clouds. The scene has lots of small detail (edge density 0.067), and the hero is not filling the frame.",
+   "fix": "Closer framing on the saloon front; desert ground as one smooth sandy plane with distant soft mesas, no fences, no scattered pebbles or shrubs"
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "Both are on a ground mound in front of concentric rings. A: the rope coil on smooth sand has two pebbles. B: the lawnmower sits on grass with many separate blade tufts and small white daisies scattered across the foreground. That is extra small decoration, but it is weak evidence.",
+   "fix": "Lawnmower on a smooth, simple grass mound with no scattered flowers or individual blade tufts"
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Both use the same soft desert-sunset backdrop with distant mesas and a sparse sand floor. A: campfire with ring stones that belong to it. B: gas pump on a plain slab. The environment load is matched and quiet.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards betray themselves in the background in three ways. Sunburst fields have too many thin, high-contrast rays plus a bright glow halo behind the hero. Scenes gain invented secondary props (rocks, lily pads, rope coils, bollards, life rings, scattered pebbles, flowers and grass tufts). And full category-4 environments fill with many small hard-edged objects (benches, rails, fences, brick grids) instead of a few large, quiet shapes with the hero cropped close."
+}

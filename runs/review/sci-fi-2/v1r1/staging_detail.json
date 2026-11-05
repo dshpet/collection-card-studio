@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both are category 1: the object floats on a concentric-ring field. A's rings (planet) are lower contrast and softer, and its background edge density, 0.003, is below the real range. B's rings (flippers) are as crisp as the real ring fields and sit inside the range. The staging is nearly the same, so this is a weak call.",
+   "fix": "Draw the concentric rings behind the planet with clear, even tone-on-tone steps from the center out. No soft glow."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A shows a target in a carnival booth with a row of bulbs and a teddy bear prop on the shelf. B shows an ice tray on wooden planks with a blue sunburst behind. Both are within the real range for detail and edges, and each staging fits its object, like the real cooler-on-sand and rose-arch cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both float on a sunburst. A has the whole rocket small and centered, with clean, even rays and a background at the low end of the range. B has the submarine large, filling the card edge to edge, on dark green rays with a light center. The real cards are framed tighter, closer to B.",
+   "fix": "Frame the rocket larger so its nose and fins nearly touch the card edges, on plain even rays with no bright halo."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "In A, the robot stands small in a room corner. The floor is a grid of riveted steel plates with many seams, bolts and reflections, under a striped yellow wall, and the background is above the real range for both detail (0.0237) and edges (0.054). In B, the gloves fill the card on a plain wood ledge in front of a few large blue planks, like the real ledge cards.",
+   "fix": "Put the robot on one plain ledge of smooth grey metal with no plate seams or rivets. Keep the plain striped wall and frame the robot larger."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "In A, the alien stands on riveted metal floor plates with seams, bolts and glare, an invented sci-fi floor that adds small detail. B is the real computer card: a simple wooden desk and an orange gradient.",
+   "fix": "Set the alien on a plain smooth surface or float it on the pink gradient, with no floor plates, rivets or bolts."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A shows a slide on pool tiles and water in front of a wavy pink pattern, with background edges above the range. B shows a beach ball cropped tight on rippled sand, with background edges below the range. The two miss the range in opposite directions, and both stagings look like real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "In B, the pod sits on a glowing ring platform in a lab with a monitor console, a glowing tube with a coil, arches and neon strips. These are many purposeful-looking props and lights that compete with the hero. In A, the bus sits on a street with a few large, quiet buildings and clouds, a typical real category 4.",
+   "fix": "Place the pod on a plain metal floor in front of one large soft wall. Remove the console, the glowing tube and the neon ring."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "In B, the control panel sits on a glossy steel ledge with strong reflections, and the background edge density, 0.029, is above the real range. In A, the vending machine stands on a plain purple gradient with a soft floor reflection, within range.",
+   "fix": "Stand the control panel on a matte grey ledge with soft shading and no bright streaks, in front of a plain warm gradient."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "In B, the helmet floats on an orange sunburst with a bright glow pooled in the center. Its background detail (0.0064) and edges (0.003) are both below the real range, a smoothed, haloed field like the generated glove lesson. A's green sunburst has crisp, even rays within range.",
+   "fix": "Draw crisp, even sunburst rays from edge to edge with no bright glow behind the helmet."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "In A, the rover stands small on a moon surface packed with dozens of craters, pebbles and rocks, with distant crater ridges and clouds. The environment carries a lot of small detail. In B, the boat fills the card next to a dock with a rope and two lily pads. These are a few large shapes, as in the real cards.",
+   "fix": "Show the rover larger on smooth grey ground with only one or two large soft craters. No scattered pebbles or small rocks."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both float on violet concentric rings. In B, the UFO sits on a softened, washed field, and its background edge density, 0.003, is below the real range. A's rings are crisp and in range. A's earbuds are a functional secondary prop that belongs with the player.",
+   "fix": "Draw the purple concentric rings crisp and evenly stepped behind the saucer, with no soft haze."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A has the space station on a starfield scattered with twinkle sparkles, with Earth's curve, clouds and continents in the corner. These are invented sparkles around a floating object. B is a dense tiki pool bar with a thatched roof, fruit, drinks and stools. It is very busy (edges 0.144), but the props belong to the subject, as in real bar or shop scenes.",
+   "fix": "Float the space station on a plain deep-blue tone-on-tone field. No twinkling stars and no planet in the corner."
+  }
+ ],
+ "pattern": "Generated cards invent a sci-fi setting instead of using the real cards' quiet categories. They add riveted metal floor plates, glowing lab props and neon rings, crater fields full of pebbles, and starfields with sparkles. On flat fields (sunbursts and rings) they swap the crisp, even pattern for a soft central glow or haze, so background edge density drops below the real range. They also tend to show the whole object small, with a base, instead of cropping it large."
+}

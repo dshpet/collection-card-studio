@@ -34,6 +34,7 @@ MODEL_ROUNDS = 2
 REVIEW_ROUNDS = 2
 ALLOWED_MISSES = 2
 RATED = ["identity", "staging"]
+EXAMPLE_MODELS = ANALYSIS / "agents" / "models"  # two models from the construction trial
 GROUPS = {"1": "floating", "2": "standing", "3": "standing", "4": "environment", "5": "environment"}
 OBJECT_CLASSES = [c for c in CARD_FORM["identity"]["object_class"]["options"] if c != "character"]
 
@@ -215,8 +216,7 @@ def model_card(run, brief, rater, look="plain", photos=()):
         return render
     folder.mkdir(parents=True, exist_ok=True)
     card = brief["card"]
-    examples = "\n\n".join(f"```python\n{(ROOT / 'runs/trial/models2' / f'{name}.py').read_text('utf-8')}```"
-                           for name in ("m16", "m36"))
+    examples = "\n\n".join(f"```python\n{path.read_text('utf-8')}```" for path in sorted(EXAMPLE_MODELS.glob("*.py")))
     task = (f"{(ANALYSIS / 'agents' / 'modeller.md').read_text('utf-8')}\n\nTwo models from the trial, as examples of the "
             f"file:\n{examples}\n\nThe card: {card['name']}. {card['subject']}\nCategory {card['category']}: "
             f"{CATEGORY_RULES[card['category']]}\nHero colors: {card['hero_colors']}.\nBackdrop colors: "
@@ -378,7 +378,11 @@ def deliver(run, plan, briefs, history):
         lines += [f"## Variant {variant}", "", "| Card | Category | Tries | Style | Status | Open issues |",
                   "|---|---|---:|---:|---|---|"]
         for brief in [b for b in briefs if b["variant"] == variant]:
-            tries = history[brief["id"]]
+            tries = history.get(brief["id"])
+            if not tries:
+                lines.append(f"| {brief['card']['name']} | {brief['card']['category']} | 0 | | missing | every draw failed, rerun |")
+                counts["missing"] += 1
+                continue
             best = best_try(tries)
             name = re.sub(r"\W+", "_", brief["card"]["name"].lower()).strip("_")
             path = folder / f"{brief['id'][-2:]}_{name}.png"
@@ -387,8 +391,9 @@ def deliver(run, plan, briefs, history):
             counts.update(best["misses"] + best["issues"])
             open_issues = ", ".join(best["issues"] + [m.split(".")[1] for m in best["misses"]]) or "none"
             lines.append(f"| {brief['card']['name']} | {brief['card']['category']} | {len(tries)} | {best['style']} | "
-                         f"{'pass' if best['passed'] else 'review'} | {open_issues} |")
-        contact_sheet(paths, run / f"variant_{variant}.png")
+                         f"{'unsure pick' if best.get('unsure') else 'pass' if best['passed'] else 'review'} | {open_issues} |")
+        if paths:
+            contact_sheet(paths, run / f"variant_{variant}.png")
         lines.append("")
     lines += ["## Most common open issues", ""] + [f"- {key}: {value}" for key, value in counts.most_common(8)]
     (run / "report.md").write_text("\n".join(lines) + "\n", "utf-8")
@@ -460,7 +465,9 @@ def main():
         from review import better_edits, choose, review_variant
 
         for variant in range(1, len(plan["variants"]) + 1):
-            chosen = [b for b in briefs if b["variant"] == variant]
+            chosen = [b for b in briefs if b["variant"] == variant and history[b["id"]]]  # a card with no drawing waits
+            if not chosen:
+                continue
             if not any(t.get("chosen") for b in chosen for t in history[b["id"]]):
                 choose(run, chosen, history)
             save_json(run / "check.json", history)
