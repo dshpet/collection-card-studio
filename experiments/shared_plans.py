@@ -13,6 +13,7 @@ from pathlib import Path
 
 sys.path.insert(1, str(Path(__file__).resolve().parents[1] / "scripts"))  # the pipeline's modules
 
+import argparse
 from concurrent.futures import ThreadPoolExecutor
 
 from common import ANALYSIS, ROOT, load_json, save_json
@@ -25,6 +26,9 @@ SHARED = ("- Every version keeps the topic's three to five most iconic objects, 
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("themes", nargs="+")
+    themes = parser.parse_args().themes
     original = make_set.plan_prompt
 
     def shared(*args, **kwargs):
@@ -42,7 +46,7 @@ def main():
         return theme, plan
 
     with ThreadPoolExecutor(3) as pool:
-        for theme, plan in pool.map(one, sys.argv[1:]):
+        for theme, plan in pool.map(one, themes):
             print(f"== {theme}: problems {plan['problems']}")
             for i, variant in enumerate(plan["variants"], 1):
                 print(f"  v{i}:", "; ".join(c["name"] for c in variant["cards"]))
