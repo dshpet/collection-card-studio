@@ -83,3 +83,22 @@ The first run looked off to a human, while every check passed it. Details are in
 - Drew the forty twins in two more styles for the user to pick the closest.
 - Gave the checkers measured geometry: edge directions, fitted ellipses, thin-part skeletons. Four specialists got new lenses. Nothing improved and the checkers got worse, because models read the marks as proof that the drawing is right. The old reviewers stay.
 
+
+## 2026-11-03: Construction trial
+
+- The user's main complaint became construction, in every style. Several errors came from briefs that name parts but not how they connect.
+- Six twins, two draws each, four arms, rated blind. Blender blockouts restyled by Codex fixed construction. The second blockout arm had no broken card against 5 of 12 for the plain brief, and graded 3.7 against 2.2. One line on how the object works did nothing.
+- Added a modeller stage to `make_set.py`: Opus writes a Blender model, looks at its render and fixes it, then the image model restyles it.
+
+## 2026-11-04: Blockouts on the final sets
+
+- Redrew the 30 final cards from blockouts. Old draws won 15, blockouts 7, 8 tied. Blockouts helped built objects (saddle, badge, telescope) and hurt simple forms, which came out glossy and "too 3D modelled".
+- A matte render lost on simple forms too, 2 to 4: the cat, boot and hat lost their designed shape with the gloss. Photos of real objects taught engineering truth that reads as an error, such as smaller front wagon wheels.
+
+## 2026-11-04 to 05: Measuring against the user
+
+- Scored every rated card on one list with embeddings, a classifier, nine specialists and the art director (`scripts/score.py`). No score tracked the user's grades. Reviewers scored hidden real cards lowest, and whole-card embeddings measured content, not style.
+- Held content equal instead. CSD puts the final style nearer the real card than the old one in 29 of 40 twins, the only objective style measure that agrees with the user.
+- Asked which of two drawings of one object is closer, on 218 pairs the user had decided (`scripts/prefer.py`). Every reviewer beat chance. The director agreed 61% of the time and 76% when confident, so `choose()` now flags its unsure picks for a human.
+- Tuned the director's notes automatically on half the pairs (`scripts/tune.py`). Tuning agreement rose from 65 to 84 of 115, but held-out agreement did not move, so the notes were dropped.
+- Asked the same of construction, on 93 pairs the user labelled works or broken. Every judge was at chance, confident or not. Construction is secured by the Blender model and a human look, not by a checker.

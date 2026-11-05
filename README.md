@@ -12,7 +12,7 @@ Findings: [analysis/SYNTHESIS.md](analysis/SYNTHESIS.md). Style mismatches and f
 .venv/bin/python -B scripts/make_set.py "Western" --wishes "A set for a Movie collection" --variants 3
 ```
 
-It plans the set, picks reference cards and draws three candidates per card. It checks each one against the reference analysis, chooses the best by eye, reviews the variant with nine specialists and an art director, and edits what they flag. Results land in `runs/<slug>/`: the cards in `variant_N/`, a sheet per variant, and `report.md`. Rerunning continues where it stopped. Three variants take about an hour. `--candidates 1 --review-rounds 0` gives a quick draft.
+It plans the set, picks reference cards, models each object in Blender and draws three candidates per card from the model. It checks each one against the reference analysis, chooses the best by eye and lists the picks it is unsure of, reviews the variant with nine specialists and an art director, and edits what they flag. Results land in `runs/<slug>/`: the cards in `variant_N/`, a sheet per variant, and `report.md`. Rerunning continues where it stopped. Three variants take about an hour. `--candidates 1 --review-rounds 0` gives a quick draft.
 
 To see a set in the game's window, run `scripts/screen.py western --color blue`.
 
@@ -39,6 +39,17 @@ python -m venv .venv
 .venv/bin/python -B scripts/validate.py twins --label r9
 .venv/bin/python -B scripts/drift.py twins/r9 --no-classifier
 .venv/bin/python -B scripts/review.py twins r9 --rater claude-opus-5-5 --lessons baseline r3 r8
+```
+
+## Measure against the user
+
+Ratings in `runs/ratings.json` are the ground truth: model raters misjudge this style ([STYLE_GAPS](analysis/STYLE_GAPS.md)).
+
+```sh
+.venv/bin/python -B scripts/score.py embed          # every rated card on one list, against the user's grades
+.venv/bin/python -B scripts/prefer.py reviewers     # which of two drawings is closer, on pairs the user decided
+.venv/bin/python -B scripts/prefer.py reviewers --target works   # which is built right
+.venv/bin/python -B scripts/tune.py                 # tune the director's notes, check on held-out pairs
 ```
 
 ## How the analysis feeds generation

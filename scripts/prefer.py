@@ -9,6 +9,10 @@ Judges, each scored on pairs the user decided:
     probe      logistic regression on CSD and DINOv3 differences, trained on the user's pairs, one object held out at a time
     reviewers  the nine specialists and the art director, asked A or B beside the real card(s)
 
+With --target works the truth is the user's works / slightly off / broken label instead of the grade, closest picks
+drop out, and the judges are the construction and perspective checkers and the director, asked which drawing is
+built right, against the old one-card checker reports as a baseline (trial pairs only). Results go to runs/prefer_works.
+
     prefer.py embed       features and the two numeric judges
     prefer.py reviewers   about 270 model calls
     prefer.py report
@@ -35,6 +39,16 @@ TRIAL_PER_OBJECT = 10
 LESSONS = {"set/horror/v1_09": "too glossy, looks like a statue",
            "set/western/v1_09": "too texture-y; real cards are smoother, but not ultra-smooth",
            "set/western/v1_07": "the preferred saddle is built right and reads like the real cards"}
+WORKS = {"yes": 2, "slight": 1, "no": 0}
+WORKS_LESSONS = {"set/sci-fi/v1_10": "the other dome's ladder leads nowhere and its raised entry makes no sense",
+                 "set/horror/v1_04": "the other pot looks broken and its fire is laughable"}
+TARGET = "look"
+
+
+def value(rating):
+    if TARGET == "works":
+        return WORKS.get(rating.get("works"))
+    return rating.get("grade")
 
 
 def versions():
@@ -48,7 +62,7 @@ def versions():
         if not rating:
             continue
         parts = item["id"].split("/")
-        if item["kind"] == "closest":
+        if item["kind"] == "closest" and TARGET == "look":
             group = objects[f"closest/{parts[1]}"]
             group["references"] = item["images"][:1]
             for style, path in zip(item["styles"], item["images"][1:]):
@@ -58,11 +72,13 @@ def versions():
         elif item["kind"] == "trial":
             group = objects[f"trial/{parts[2].split('_')[0]}"]
             group["references"] = item["images"][:1]
-            group["versions"][item["images"][1]].append(rating["grade"])
+            if value(rating) is not None:
+                group["versions"][item["images"][1]].append(value(rating))
         elif item["kind"] in ("redraw", "soft"):
             group = objects[f"set/{parts[2]}/{parts[3]}"]
             group["references"] = item["images"][1:]
-            group["versions"][item["images"][0]].append(rating["grade"])
+            if value(rating) is not None:
+                group["versions"][item["images"][0]].append(value(rating))
     return objects
 
 
@@ -83,7 +99,7 @@ def pairs():
             first = rng.random() < 0.5
             result.append({"object": key, "references": group["references"], "A": better if first else worse,
                            "B": worse if first else better, "user": "A" if first else "B",
-                           "lesson": LESSONS.get(key)})
+                           "lesson": (WORKS_LESSONS if TARGET == "works" else LESSONS).get(key)})
     for index, pair in enumerate(result):
         pair["pair"] = f"p{index:03d}"
     return result
@@ -193,7 +209,8 @@ def reviewers(rows, rater, director_rater, workers):
         listing = ", ".join(f"{r['pair']} is image {i + first}" for i, r in enumerate(batch))
         return (f"Each image shows real cards from the game on top, marked REAL, and below them two drawings of the same "
                 f"object, A and B, made by an image model. Images 1 to {first - 1} are lessons: the art lead marked the "
-                f"drawing they found closer to the real cards ({lesson_list}). Learn which way the differences run "
+                f"drawing they found {'built more correctly' if TARGET == 'works' else 'closer to the real cards'} "
+                f"({lesson_list}). Learn which way the differences run "
                 f"from them, and trust them over any idea of what game art should look like. Then judge the test "
                 f"pairs ({listing}).")
 
@@ -203,7 +220,14 @@ def reviewers(rows, rater, director_rater, workers):
         if out.exists():
             return
         batch = batches[index]
-        if role == "art_director":
+        built = ("Which drawing is built right: could the object exist and do its job, with every part attached, "
+                 "resting on something and drawn from one consistent camera? Real cards simplify objects but never get "
+                 "them wrong. Answer A, B or neither, with confidence 1-5, and say why in one sentence, naming the part.")
+        if TARGET == "works":
+            brief = (ROOT / "analysis" / "agents" / f"{role}.md").read_text("utf-8")
+            prompt = f"{brief}\n{preamble(batch)} {built}"
+            model = director_rater
+        elif role == "art_director":
             brief = (ROOT / "analysis" / "agents" / "art_director.md").read_text("utf-8")
             prompt = (f"{brief}\n{preamble(batch)} Which drawing is closer in look to the real cards above it: "
                       "rendering, shape, color, light, finish, and whether it is built like a real object? Answer A, B "
@@ -219,19 +243,44 @@ def reviewers(rows, rater, director_rater, workers):
             save_json(out, result)
             print(role, index, flush=True)
 
-    jobs = [(role, i) for role in [*ROLES, "art_director"] for i in range(len(batches))]
+    roles = ("construction", "perspective", "art_director") if TARGET == "works" else (*ROLES, "art_director")
+    jobs = [(role, i) for role in roles for i in range(len(batches))]
     with ThreadPoolExecutor(workers) as pool:
         list(pool.map(one, jobs))
+
+
+def checker_baseline(rows):
+    """The old one-card checkers: the drawing with fewer flagged errors, majors counting double. Trial pairs only."""
+    def errors(path):
+        parts = path.split("/")
+        if parts[1] != "trial":
+            return None
+        arm, stem = parts[2], parts[-1][:-4]
+        total = 0
+        for check in ("construction", "perspective"):
+            report_path = ROOT / "runs" / "review" / f"trial_{arm}" / "checks" / check / f"{arm}_{stem}.json"
+            if not report_path.exists():
+                return None
+            total += sum(2 if e["severity"] == "major" else 1 for e in load_json(report_path)["errors"])
+        return total
+
+    answers = {}
+    for row in rows:
+        a, b = errors(row["A"]), errors(row["B"])
+        if a is not None and b is not None and not row["lesson"]:
+            answers[row["pair"]] = "A" if a < b else "B" if b < a else "neither"
+    save_json(OUT / "numeric.json", {"old_checkers": answers})
 
 
 def report(rows):
     from scipy.stats import binomtest
 
     key = {r["pair"]: r for r in rows if not r["lesson"]}
+    sources = ("trial", "set") if TARGET == "works" else ("closest", "trial", "set")
     judges = load_json(OUT / "numeric.json") if (OUT / "numeric.json").exists() else {}
     for folder in sorted((OUT / "reviewers").glob("*")) if (OUT / "reviewers").exists() else []:
         judges[folder.name] = {p["pair"]: p["closer"] for path in folder.glob("*.json") for p in load_json(path)["pairs"]}
-    if any(name not in ("csd", "probe") for name in judges):
+    if TARGET == "look" and any(name not in ("csd", "probe") for name in judges):
         votes = defaultdict(list)
         for name, answers in judges.items():
             if name not in ("csd", "probe", "art_director"):
@@ -242,18 +291,18 @@ def report(rows):
             a, b = answers.count("A"), answers.count("B")
             judges["specialist_vote"][pair] = "A" if a > b else "B" if b > a else "neither"
     summary = {}
-    print(f"{'judge':22} {'agree':>7} {'decided':>8} {'rate':>6} {'p':>6}   closest  trial  set")
+    print(f"{'judge':22} {'agree':>7} {'decided':>8} {'rate':>6} {'p':>6}   " + "  ".join(sources))
     for name, answers in judges.items():
         decided = [p for p, a in answers.items() if a != "neither" and p in key]
         agree = sum(answers[p] == key[p]["user"] for p in decided)
         by_source = {}
-        for source in ("closest", "trial", "set"):
+        for source in sources:
             these = [p for p in decided if key[p]["object"].startswith(source)]
             by_source[source] = f"{sum(answers[p] == key[p]['user'] for p in these)}/{len(these)}"
         p_value = binomtest(agree, len(decided), 0.5, alternative="greater").pvalue if decided else 1
         summary[name] = {"agree": agree, "decided": len(decided), "of": len(key), "p": round(p_value, 4), **by_source}
         print(f"{name:22} {agree:>7} {len(decided):>8} {agree / max(len(decided), 1):>6.2f} {p_value:>6.3f}   "
-              f"{by_source['closest']:>7} {by_source['trial']:>6} {by_source['set']:>5}")
+              + "  ".join(by_source.values()))
     save_json(OUT / "summary.json", summary)
 
 
@@ -263,10 +312,16 @@ def main():
     parser.add_argument("--rater", default="claude-sonnet-5-5")
     parser.add_argument("--director", default="claude-opus-5-5")
     parser.add_argument("--workers", type=int, default=6)
+    parser.add_argument("--target", choices=("look", "works"), default="look")
     args = parser.parse_args()
+    global OUT, TARGET
+    if args.target == "works":
+        OUT, TARGET = ROOT / "runs" / "prefer_works", "works"
     rows = pairs()
     save_json(OUT / "pairs.json", rows)
-    if args.mode == "embed":
+    if args.mode == "embed" and TARGET == "works":
+        checker_baseline(rows)
+    elif args.mode == "embed":
         embed(rows)
         numeric_judges(rows)
     elif args.mode == "reviewers":

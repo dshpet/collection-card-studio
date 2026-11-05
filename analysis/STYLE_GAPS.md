@@ -107,6 +107,8 @@ A lone 1-10 score failed, so `scripts/prefer.py` asks a different question: of t
 
 **Confidence held up.** On held-out pairs the untouched director at confidence 4 was right 10 of 13 times in a fresh run and 19 of 24 in the first, about 78%. `choose()` now asks for confidence and lists picks below 4 for a human look. The cut was set on data that includes these pairs, so it was not chosen blind.
 
+**Construction cannot be judged by these models, even pairwise.** `prefer.py --target works` gives 93 pairs of one object whose works / slightly off / broken labels differ. Construction checker: 42 of 86. Perspective checker: 45 of 87. Director: 39 of 83. The old one-card checkers: 26 of 53. All are at chance, and confidence does not help: 3 of 8 and 11 of 23 at confidence 4. On works-against-broken pairs the construction checker gets 11 of 23. Its reasons look at local hardware ("the lifebuoy hangs from a peg", "X-legs join at clear pivots") and prefer the drawing with more of it. The user judges whether the whole object could work, and mostly preferred the plainer blockout drawings of the chair and pier. So construction has to come from geometry, the Blender blockout, and from a human look. A checker cannot guard it.
+
 The first run looked off to a human, yet every automatic check passed it. This file records what was wrong, why the checks missed it, and what fixed it.
 
 ## How the gap was measured
