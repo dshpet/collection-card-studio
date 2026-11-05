@@ -1,0 +1,351 @@
+{
+ "title": "Horror",
+ "story": "A playful night of spooky fun, with friendly frights from a haunted hilltop.",
+ "variants": [
+  {
+   "cards": [
+    {
+     "name": "Jack-o-Lantern",
+     "subject": "A round carved pumpkin with a green stem, a triangle-eyed face and a jagged grinning mouth.",
+     "object_class": "plant_nature",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "orange pumpkin, green stem, small yellow glow in the carved eyes",
+     "backdrop_colors": "bright purple and lilac",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Witch Hat",
+     "subject": "A tall pointed black hat with a wide curved brim and a band around the base.",
+     "object_class": "clothing",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "black hat, small orange band",
+     "backdrop_colors": "sunny yellow and light yellow",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Potion Bottle",
+     "subject": "A round glass bottle with a long narrow neck, a cork stopper and liquid inside.",
+     "object_class": "container",
+     "category": "1",
+     "pattern": "waves",
+     "hero_colors": "clear glass, purple potion, small green cork",
+     "backdrop_colors": "lime green and bright cyan",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Candelabra",
+     "subject": "A gold candle holder with a round base, a curving stem, three arms and three tall candles with flames.",
+     "object_class": "furniture",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "gold holder, cream candles, small orange flames",
+     "backdrop_colors": "bright pink",
+     "surface_or_setting": "plain ledge",
+     "build_model": true
+    },
+    {
+     "name": "Black Cat",
+     "subject": "A sitting cat with pointed ears, a long curled tail and round eyes.",
+     "object_class": "animal",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "black fur, small yellow eyes",
+     "backdrop_colors": "grass green",
+     "surface_or_setting": "plain ledge",
+     "build_model": false
+    },
+    {
+     "name": "Cauldron",
+     "subject": "A round iron pot with two side handles, three short legs and bubbling liquid on top.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "black iron, small bright green bubbling potion",
+     "backdrop_colors": "bright orange and yellow",
+     "surface_or_setting": "stone floor",
+     "build_model": true
+    },
+    {
+     "name": "Broomstick",
+     "subject": "A long wooden stick with a bundle of straw bristles tied at the bottom.",
+     "object_class": "tool",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "brown wood, golden straw, small red twine",
+     "backdrop_colors": "bright cyan and sky blue",
+     "surface_or_setting": "wooden table",
+     "build_model": false
+    },
+    {
+     "name": "Candy Pail",
+     "subject": "An orange pumpkin-shaped bucket with a curved black handle and a carved smile.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "repeated_motif",
+     "hero_colors": "orange pail, black handle, small green stem on the front",
+     "backdrop_colors": "lilac purple and pink",
+     "surface_or_setting": "wooden table",
+     "build_model": false
+    },
+    {
+     "name": "Haunted House",
+     "subject": "A tall crooked mansion with a pointed roof, a round tower, a front door and many windows.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "gray walls, dark purple roof, small yellow lit windows",
+     "backdrop_colors": "bright sky blue with a big yellow moon",
+     "surface_or_setting": "grassy hilltop",
+     "build_model": true
+    },
+    {
+     "name": "Creepy Gate",
+     "subject": "An iron gate with two curved doors between two stone pillars, with pointed bars.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "black iron, gray stone pillars, small orange lanterns on top of the pillars",
+     "backdrop_colors": "clear bright blue sky",
+     "surface_or_setting": "stone path with green grass",
+     "build_model": true
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Pumpkin",
+     "subject": "A round carved pumpkin with a green stem and a wide toothy grin with two triangle eyes.",
+     "object_class": "plant_nature",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "orange pumpkin, green stem, small yellow glow in the mouth",
+     "backdrop_colors": "bright cyan",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Witch Hat",
+     "subject": "A tall pointed hat with a bent tip, a wide brim and a band with a buckle.",
+     "object_class": "clothing",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "deep purple hat, small yellow buckle",
+     "backdrop_colors": "lime green",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Ghost Sheet",
+     "subject": "A white sheet draped over a floating shape, with two round black eye holes and a wavy lower hem.",
+     "object_class": "clothing",
+     "category": "1",
+     "pattern": "waves",
+     "hero_colors": "white sheet, small light blue hem",
+     "backdrop_colors": "bright orange",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Bat",
+     "subject": "A flying bat with two wide scalloped wings, small pointed ears and a small round body.",
+     "object_class": "animal",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "dark brown fur, small pink ears",
+     "backdrop_colors": "sunny yellow",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Candelabra",
+     "subject": "A brass candle holder with a round base, a tall stem, five arms and five candles with flames.",
+     "object_class": "furniture",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "brass gold holder, white candles, small orange flames",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "plain ledge",
+     "build_model": true
+    },
+    {
+     "name": "Cauldron",
+     "subject": "A big round iron pot with two ring handles, three legs and a bubbling brew with bubbles.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "black iron, small purple bubbling brew",
+     "backdrop_colors": "bright yellow and lime",
+     "surface_or_setting": "stone floor",
+     "build_model": true
+    },
+    {
+     "name": "Standing Mirror",
+     "subject": "A tall oval mirror in an ornate carved wooden frame, held on two curved feet.",
+     "object_class": "furniture",
+     "category": "3",
+     "pattern": "plain_gradient",
+     "hero_colors": "dark brown wood frame, pale silver glass, small gold trim on the frame",
+     "backdrop_colors": "bright purple",
+     "surface_or_setting": "wooden table",
+     "build_model": true
+    },
+    {
+     "name": "Haunted Mansion",
+     "subject": "A big crooked mansion with two pointed towers, a wide front door, a porch and many windows.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "gray stone walls, dark teal roof, small orange lit windows",
+     "backdrop_colors": "bright blue sky with a pale yellow moon",
+     "surface_or_setting": "grassy hilltop",
+     "build_model": true
+    },
+    {
+     "name": "Bare Tree",
+     "subject": "A big tree with a thick twisted trunk and many bare curving branches.",
+     "object_class": "plant_nature",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "brown trunk, small orange pumpkin at its roots",
+     "backdrop_colors": "bright pink and peach sky",
+     "surface_or_setting": "grassy hill",
+     "build_model": false
+    },
+    {
+     "name": "Rowboat",
+     "subject": "A small wooden rowboat with a pointed front, two plank seats and two long oars.",
+     "object_class": "vehicle",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "brown wood, small red stripe along the side",
+     "backdrop_colors": "bright turquoise sky and teal water",
+     "surface_or_setting": "calm pond with reeds",
+     "build_model": true
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Pumpkin",
+     "subject": "A round carved pumpkin with a curly green stem, two eyes, a nose and a wide jagged mouth.",
+     "object_class": "plant_nature",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "orange pumpkin, green stem, small yellow glow in the eyes",
+     "backdrop_colors": "bright pink",
+     "surface_or_setting": "wooden table",
+     "build_model": false
+    },
+    {
+     "name": "Witch Hat",
+     "subject": "A tall pointed black hat with a wide wavy brim and a band around the base.",
+     "object_class": "clothing",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "black hat, small orange band",
+     "backdrop_colors": "grass green",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Iron Lantern",
+     "subject": "A square iron lantern with glass sides, a pointed top, a ring handle and a candle inside.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "black iron, pale glass, small orange flame",
+     "backdrop_colors": "bright purple",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Spider",
+     "subject": "A round spider with eight long bent legs and a big round body.",
+     "object_class": "animal",
+     "category": "1",
+     "pattern": "waves",
+     "hero_colors": "black body and legs, small purple dots on the back",
+     "backdrop_colors": "sunny yellow",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Cauldron",
+     "subject": "A round iron pot with two handles, three short legs and green liquid bubbling over the rim.",
+     "object_class": "container",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "black iron, small bright green potion",
+     "backdrop_colors": "bright orange",
+     "surface_or_setting": "plain ledge",
+     "build_model": true
+    },
+    {
+     "name": "Candy Pail",
+     "subject": "A round bucket shaped like a pumpkin with a curved handle and a carved smile.",
+     "object_class": "container",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "orange pail, black handle, small green stem on the front",
+     "backdrop_colors": "bright cyan",
+     "surface_or_setting": "plain ledge",
+     "build_model": false
+    },
+    {
+     "name": "Candelabra",
+     "subject": "A silver candle holder with a round base, a curving stem, three arms and three candles with flames.",
+     "object_class": "furniture",
+     "category": "3",
+     "pattern": "plain_gradient",
+     "hero_colors": "silver holder, cream candles, small orange flames",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "stone floor",
+     "build_model": true
+    },
+    {
+     "name": "Haunted House",
+     "subject": "A tall crooked house with a steep roof, a chimney, a front door, a round window and a leaning tower.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "purple walls, dark gray roof, small yellow lit windows",
+     "backdrop_colors": "bright blue sky with a white moon",
+     "surface_or_setting": "grassy hilltop",
+     "build_model": true
+    },
+    {
+     "name": "Stone Bridge",
+     "subject": "A short stone arch bridge with low side walls, spanning a stream.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "gray stone, small green moss on the walls",
+     "backdrop_colors": "bright lilac and pink sky",
+     "surface_or_setting": "stream with grassy banks",
+     "build_model": true
+    },
+    {
+     "name": "Creepy Gate",
+     "subject": "An iron gate with two doors between two stone pillars, with pointed bars and curled tops.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "black iron, gray stone pillars, small orange lanterns on top of the pillars",
+     "backdrop_colors": "bright yellow-orange sunset sky",
+     "surface_or_setting": "stone path with green grass",
+     "build_model": true
+    }
+   ]
+  }
+ ],
+ "problems": [],
+ "sensitive": [],
+ "cast": 0
+}

@@ -26,6 +26,6 @@ Every generated card and every measurement, oldest first. Full-size drawings, re
 | `smoke/`, `smoke-2/` | Three cards through the changed pipeline, before and after the second review's fixes, one with the cast. Not sets | `make_set.py --plan` |
 | `plain_check/` | The sheriff star's invented jewel: subject wording against the colors line | `experiments/plain_check.py` |
 | `shape_check/` | The clock twin with and without "a perfect circle", with measured roundness | `experiments/shape_check.py` |
-| `plans/` | Draft plans for the final film sets, for the producer to approve before drawing | `make_set.make_plan` |
+| `plans/` | Draft plans for the final film sets, for the producer to approve before drawing; `*-shared` keep the most iconic objects in every variant | `make_set.make_plan`, `experiments/shared_plans.py` |
 
 A set run folder holds `plan.json` and `briefs.json`, the drawings in `tries/`, prompts in `prompts/`, Blender models in `models/`, pairwise judgements in `choose/`, `check.json` with every try's checks, and `edits.json` with every edit and whether it was kept.
