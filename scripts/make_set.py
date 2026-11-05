@@ -406,10 +406,11 @@ def main():
     parser.add_argument("--plan", help="reuse the plan.json of an earlier run")
     parser.add_argument("--no-references", action="store_true", help="draw from text alone, as a control")
     parser.add_argument("--no-blockouts", action="store_true", help="draw from the brief without a Blender model first")
+    parser.add_argument("--run", help="folder name under runs/, by default the theme")
     args = parser.parse_args()
 
     slug = re.sub(r"\W+", "-", args.theme.lower()).strip("-") + ("-noref" if args.no_references else "")
-    run = ROOT / "runs" / slug
+    run = ROOT / "runs" / (args.run or slug)
     run.mkdir(parents=True, exist_ok=True)
     knowledge = load_json(ANALYSIS / "knowledge.json")
     cards = load_json(ANALYSIS / "cards.json")

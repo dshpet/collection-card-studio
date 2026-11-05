@@ -1,0 +1,24 @@
+<frozen site>:101: RuntimeWarning: Unexpected value in sys.prefix, expected /home/dshpet/Dev_Projects/playrix_testtask/.venv, got /home/dshpet/Dev_Projects/playrix_testtask/scripts/../.venv
+<frozen site>:101: RuntimeWarning: Unexpected value in sys.exec_prefix, expected /home/dshpet/Dev_Projects/playrix_testtask/.venv, got /home/dshpet/Dev_Projects/playrix_testtask/scripts/../.venv
+drew 40 of 40
+nanobind: leaked 2 instances!
+ - leaked instance 0x7f3878b9b188 of type "OpenImageIO.OpenImageIO.TypeDesc"
+ - leaked instance 0x7f3878b9bec8 of type "OpenImageIO.OpenImageIO.TypeDesc"
+nanobind: leaked 3 types!
+ - leaked type "OpenImageIO.OpenImageIO.TypeDesc"
+ - leaked type "OpenImageIO.OpenImageIO.ImageSpec"
+ - leaked type "BASETYPE"
+nanobind: leaked 114 functions!
+ - leaked function ""
+ - leaked function ""
+ - leaked function "channelformat"
+ - leaked function ""
+ - leaked function "__init__"
+ - leaked function ""
+ - leaked function "get_float_attribute"
+ - leaked function ""
+ - leaked function "image_bytes"
+ - leaked function ""
+ - ... skipped remainder
+nanobind: this is likely caused by a reference counting issue in the binding code.
+See https://nanobind.readthedocs.io/en/latest/refleaks.html
