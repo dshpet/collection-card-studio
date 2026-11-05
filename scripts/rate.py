@@ -1,4 +1,4 @@
-"""Fill the universal forms with independent vision raters. Finished records are skipped."""
+"""Fill the universal forms with independent vision raters. Finished cards and sets are skipped."""
 
 import argparse
 import base64
@@ -140,8 +140,9 @@ def main():
         if args.target == "cards":
             jobs = [job for job in (card_job(args.rater, r, folder) for r in records) if job]
         else:
-            jobs = [(args.rater, SET_PROMPT, shrunk(r, scratch), set_schema(),
-                     ANALYSIS / "ratings" / f"sets_{name}" / f"{r['id']}.json") for r in records]
+            done = ANALYSIS / "ratings" / f"sets_{name}"
+            jobs = [(args.rater, SET_PROMPT, shrunk(r, scratch), set_schema(), done / f"{r['id']}.json")
+                    for r in records if not (done / f"{r['id']}.json").exists()]
         results = list(pool.map(lambda job: run_one(*job), jobs))
     print({state: results.count(state) for state in set(results)})
 

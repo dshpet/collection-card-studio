@@ -5,7 +5,7 @@ import json
 import re
 from pathlib import Path
 
-from common import ANALYSIS, ROOT, load_json
+from common import ANALYSIS, ROOT, best_try, load_json
 
 from form import CARD_FORM
 
@@ -43,8 +43,7 @@ def generated_runs():
         folder = report.parent
         plan = load_json(folder / "plan.json")
         history = load_json(folder / "check.json")
-        best = [min(t, key=lambda x: (not x.get("chosen"), not x["passed"], len(x["issues"]), len(x["misses"])))
-                for t in history.values()]
+        best = [best_try(tries) for tries in history.values() if tries]
         runs.append({"slug": folder.name, "title": plan["title"], "story": plan.get("story"),
                      "variants": len(plan["variants"]), "cards": len(best),
                      "passed": sum(b["passed"] for b in best),

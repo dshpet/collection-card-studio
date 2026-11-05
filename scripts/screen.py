@@ -39,6 +39,7 @@ def compose(run, variant, color, cards=None):
     folder = ROOT / "runs" / run
     plan, history = load_json(folder / "plan.json"), load_json(folder / "check.json")
     briefs = {brief["id"]: brief for brief in load_json(folder / "briefs.json")}
+    shown = "cards" if cards else variant
     cards = cards or [f"v{variant}_{index:02d}" for index in range(1, 11)]
     window = Image.open(ROOT / f"materials/result_templates/{TEMPLATES[color]}.png").convert("RGBA")
     window = erase(window, TITLE_BOX)
@@ -59,7 +60,7 @@ def compose(run, variant, color, cards=None):
     for name, box in labels:
         draw.text(((box[0] + box[2]) / 2, (box[1] + box[3]) / 2), name, font=fitted(name, box[2] - box[0] - 12, 44),
                   anchor="mm", fill="white")
-    out = folder / f"screen_{variant}.png"
+    out = folder / f"screen_{shown}.png"
     canvas.crop((900, 0, 4600, 2529)).convert("RGB").resize((1850, 1264), Image.LANCZOS).save(out)
     return out
 

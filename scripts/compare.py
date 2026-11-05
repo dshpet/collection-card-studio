@@ -47,7 +47,7 @@ def set_row(run, picks, encode):
             "scale_classes": len({item["real_world_scale"] for item in seen}),
             "background_hues": len({hue_bin(m["color_palette"]["palette_background"][0]["hex"]) for m in measured}),
             "categories": {key: value for key, value in categories.items() if value},
-            "style_similarity": round(float(similarity[np.triu_indices(10, 1)].mean()), 3)}
+            "style_similarity": round(float(similarity[np.triu_indices(len(picks), 1)].mean()), 3)}
 
 
 def main():

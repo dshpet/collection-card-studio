@@ -25,7 +25,7 @@ def bands(cards):
         for category, members in groups.items()}
 
 
-def style_floor(cards):
+def style_floor():
     """How close a card must be to its nearest real neighbour in the style space.
 
     The floor sits between the best off-style control (0.54) and the worst good card on new topics (0.62).
@@ -51,7 +51,7 @@ def main():
     metrics = [s["metrics"] for s in character_free]
     save_json(ANALYSIS / "knowledge.json", {
         "bands": bands(cards),
-        "style": style_floor(cards),
+        "style": style_floor(),
         "example_sets": examples,
         "set_ranges": {key: [min(m[key] for m in metrics), max(m[key] for m in metrics)]
                        for key in ("object_classes", "scale_classes", "background_hues")},

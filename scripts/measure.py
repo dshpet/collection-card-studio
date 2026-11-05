@@ -118,7 +118,6 @@ def measure_card(record, derived=DERIVED):
 
     regions = measure.regionprops(measure.label(mask))
     main = max(regions, key=lambda region: region.area)
-    filled = main.image
     y0, x0, y1, x1 = main.bbox
     convex_perimeter = measure.perimeter(main.image_convex)
     ys, xs = np.nonzero(mask)
@@ -192,7 +191,7 @@ def measure_card(record, derived=DERIVED):
             "eccentricity": round(float(main.eccentricity), 3),
             "compactness": round(float(min(1, 4 * np.pi * main.area / max(main.perimeter, 1) ** 2)), 3),
             "boundary_roughness": round(float(main.perimeter / max(convex_perimeter, 1)), 3),
-            "holes": int(max(0, 1 - measure.euler_number(filled, connectivity=2))),
+            "holes": int(max(0, 1 - measure.euler_number(main.image, connectivity=2))),
             "straight_share": round(straight, 3),
             "corner_rate": round(corners, 3),
             "thin_share": round(float(1 - morphology.opening(mask, morphology.disk(5)).sum() / mask.sum()), 3),

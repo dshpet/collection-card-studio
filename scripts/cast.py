@@ -15,7 +15,7 @@ import os
 
 os.environ.setdefault("HF_HUB_OFFLINE", "1")
 
-from common import ANALYSIS, ROOT, cards, load_json, save_json
+from common import ANALYSIS, ROOT, cards, load_json, load_token, save_json
 
 import numpy as np
 import torch
@@ -47,6 +47,7 @@ def segmenter():
     """SAM 3 with a text prompt: (image, word) -> [(score, boolean mask)]."""
     from transformers import Sam3Model, Sam3Processor
 
+    load_token()  # SAM 3 is gated; it loads through transformers, with no remote code
     model = Sam3Model.from_pretrained("facebook/sam3", dtype=torch.float32).cuda().eval()
     processor = Sam3Processor.from_pretrained("facebook/sam3")
 

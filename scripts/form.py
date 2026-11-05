@@ -166,8 +166,8 @@ def _sections(form):
             for section, fields in form.items()}
 
 
-def card_schema(sections=None):
-    form = {name: CARD_FORM[name] for name in sections or CARD_FORM}
+def card_schema(sections):
+    form = {name: CARD_FORM[name] for name in sections}
     return _object(_sections(form))
 
 

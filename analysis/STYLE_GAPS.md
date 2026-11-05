@@ -243,10 +243,10 @@ The reference collection has one cast, cut out by `scripts/cast.py`: the man, th
 
 ## A geometric construction check, 2026-11-05 night
 
-No model judges construction, but a Blender blockout is real geometry, so loose parts can be found without a judge. `scripts/blockout.py` now reports the hero parts that touch nothing holding them: with a floor, ledge or setting, every group of touching parts must reach it, and a floating object must hang together. Two parts touch when their surfaces cross or come within 1% of the hero's height.
+No model judges construction, but a Blender blockout is real geometry, so loose parts can be found without a judge. `scripts/blockout.py` now reports each group of hero parts that touches nothing holding it: with a floor, ledge or setting, every group of touching parts must reach it, and a floating object must hang together. Two parts touch when their surfaces cross or come within 1% of the hero's height.
 
 - **Over the 200 model files so far it flagged 14.** Early rounds had real gaps the modeller fixed later, such as a steam train's tender set apart from the engine and a wagon's loose hoops. Three final models float by design: a planet's ring, a station in orbit and mist inside a crystal ball. No final model had an unintended loose part, because the modeller's look at its render already catches what the camera shows.
-- **So it is a guard, not a measured gain.** The modeller now gets the loose parts' positions with each render and keeps a part that floats by design. The user's remaining complaints on blockout cards are about function, such as a ladder that leads nowhere, which no contact test sees.
+- **So it is a guard, not a measured gain.** The modeller now gets each loose group's position and size with each render, and keeps a group that floats by design, such as a station in orbit with a planet far behind. The user's remaining complaints on blockout cards are about function, such as a ladder that leads nowhere, which no contact test sees.
 
 ## Limits
 

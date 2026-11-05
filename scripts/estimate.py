@@ -1,7 +1,8 @@
 """Model estimates per card: subject mask, depth, attention, normals and shading, in analysis/derived.
 
-BiRefNet, Depth Anything 3 and DeepGaze run external code, pinned here to the reviewed revisions.
-None of these models needs the Hugging Face key. See README.md for the two source checkouts.
+BiRefNet, Depth Anything 3 and DeepGaze run external code, pinned to reviewed revisions: the BiRefNet and DA3 weights
+here, the DA3 and DeepGaze sources by the checkouts in README.md. None of these models needs the Hugging Face key.
+Each write function skips cards whose output exists, and loads its model only when one is missing.
 """
 
 import argparse
@@ -24,6 +25,8 @@ def run_deform_conv_on_cpu():
     """The CPU torchvision wheel has no GPU kernel for this op, which BiRefNet needs."""
     import torchvision.ops as ops
 
+    if getattr(ops.deform_conv2d, "on_cpu", False):
+        return
     original = ops.deform_conv2d
 
     def wrapped(input, offset, weight, bias=None, mask=None, **options):
@@ -31,6 +34,7 @@ def run_deform_conv_on_cpu():
         result = original(move(input), move(offset), move(weight), move(bias), mask=move(mask), **options)
         return result.to(input.device)
 
+    wrapped.on_cpu = True
     ops.deform_conv2d = wrapped
 
 
@@ -38,6 +42,9 @@ def write_masks(records, device, folder=DERIVED / "masks"):
     from torchvision import transforms
     from transformers import AutoModelForImageSegmentation
 
+    records = [r for r in records if not (folder / f"{r['id']}.png").exists()]
+    if not records:
+        return
     run_deform_conv_on_cpu()
     model = AutoModelForImageSegmentation.from_pretrained(
         "ZhengPeng7/BiRefNet", revision=BIREFNET_REVISION, code_revision=BIREFNET_REVISION,
@@ -47,8 +54,6 @@ def write_masks(records, device, folder=DERIVED / "masks"):
     folder.mkdir(parents=True, exist_ok=True)
     for record in records:
         out = folder / f"{record['id']}.png"
-        if out.exists():
-            continue
         image = Image.open(ROOT / record["file"]).convert("RGB")
         with torch.inference_mode():
             mask = model(prepare(image)[None].to(device))[-1].sigmoid()[0, 0].cpu().numpy()
@@ -118,27 +123,30 @@ def write_marigold(records, device, derived=DERIVED):
     def pipeline(kind, repo):
         return kind.from_pretrained(repo, variant="fp16", torch_dtype=torch.float16).to(device)
 
-    normals = pipeline(MarigoldNormalsPipeline, "prs-eth/marigold-normals-v1-1")
     for name in ("normals", "shading"):
         (derived / name).mkdir(parents=True, exist_ok=True)
-    for record in records:
-        out = derived / "normals" / f"{record['id']}.npy"
-        if not out.exists():
+    todo = [r for r in records if not (derived / "normals" / f"{r['id']}.npy").exists()]
+    if todo:
+        normals = pipeline(MarigoldNormalsPipeline, "prs-eth/marigold-normals-v1-1")
+        for record in todo:
+            out = derived / "normals" / f"{record['id']}.npy"
             image = Image.open(ROOT / record["file"]).convert("RGB")
             result = normals(image, num_inference_steps=4, ensemble_size=1, output_type="np").prediction
             np.save(out, result[0].astype(np.float16))
             Image.fromarray(((result[0] + 1) * 127.5).astype(np.uint8)).save(out.with_suffix(".png"))
-    del normals
-    torch.cuda.empty_cache()
+        del normals
+        torch.cuda.empty_cache()
 
-    intrinsics = pipeline(MarigoldIntrinsicsPipeline, "prs-eth/marigold-iid-lighting-v1-1")
-    for record in records:
-        shading_path = derived / "shading" / f"{record['id']}.png"
-        if shading_path.exists():
-            continue
-        image = Image.open(ROOT / record["file"]).convert("RGB")
-        result = intrinsics(image, num_inference_steps=4, ensemble_size=1, output_type="np").prediction
-        Image.fromarray((np.clip(result[1], 0, 1) * 255).astype(np.uint8)).save(shading_path)
+    todo = [r for r in records if not (derived / "shading" / f"{r['id']}.png").exists()]
+    if todo:
+        intrinsics = pipeline(MarigoldIntrinsicsPipeline, "prs-eth/marigold-iid-lighting-v1-1")
+        for record in todo:
+            image = Image.open(ROOT / record["file"]).convert("RGB")
+            result = intrinsics(image, num_inference_steps=4, ensemble_size=1, output_type="np").prediction
+            Image.fromarray((np.clip(result[1], 0, 1) * 255).astype(np.uint8)).save(
+                derived / "shading" / f"{record['id']}.png")
+        del intrinsics
+        torch.cuda.empty_cache()
 
 
 def main():

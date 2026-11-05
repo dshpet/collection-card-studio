@@ -61,6 +61,8 @@ def items(sets=SETS):
     for run in sets:
         history = load_json(ROOT / "runs" / run / "check.json")
         for brief in load_json(ROOT / "runs" / run / "briefs.json"):
+            if not history.get(brief["id"]):  # every draw of this card failed
+                continue
             best = best_try(history[brief["id"]])
             cards.append({"id": f"card/{run}/{brief['id']}", "kind": "card", "name": brief["card"]["name"],
                           "set": f"{run} v{brief['variant']}", "final": brief["id"] in final.get(run, []),
@@ -174,8 +176,8 @@ def summary():
             picks[entry["id"].split("/")[1]].append(entry["correct"])
         elif entry["kind"] == "card":
             grades[entry["set"]].append(entry["grade"])
-        elif entry["kind"] == "closest":
-            closest[entry["style"]] += 1
+        elif entry["kind"] in ("closest", "param"):
+            closest[f"{entry['kind']}: {entry['style']}"] += 1
         elif entry["kind"] in ("trial", "redraw", "soft", "cast"):
             arm = entry["kind"] + "/" + entry["id"].split("/")[1]
             if entry.get("works"):
@@ -187,7 +189,7 @@ def summary():
         grade = f", mean grade {mean(trial[arm]):.1f} from {len(trial[arm])}" if trial[arm] else ""
         print(f"{arm}: works {counts}{grade}")
     for style, count in sorted(closest.items(), key=lambda item: -item[1]):
-        print(f"closest: {style} chosen {count} times")
+        print(f"{style} chosen {count} times")
     for style, hits in sorted(picks.items()):
         print(f"twins, {style} style: found the generated card {sum(hits)} of {len(hits)} (chance is half)")
     for group, values in sorted(grades.items()):
@@ -235,6 +237,7 @@ const grades = ["", "Clearly off", "Noticeably off", "Close", "Very close", "Can
 
 function save(fields) {
   const item = current();
+  if (!item) return;
   const entry = { ...ratings[key(item)], ...fields, id: item.id, kind: item.kind, rater: rater.value,
                   set: item.set, comment: document.getElementById("comment").value, time: new Date().toISOString() };
   ratings[key(item)] = entry;
@@ -248,8 +251,9 @@ function move(step) {
 }
 
 function show() {
-  const item = current(), entry = ratings[key(item)];
+  const item = current(), entry = item && ratings[key(item)];
   for (const kind of kinds) document.getElementById("tab-" + kind).className = kind === mode ? "on" : "";
+  if (!item) { document.getElementById("main").innerHTML = "<p class=\"hint\">Nothing to rate here.</p>"; return; }
   const counts = kind => list(kind).filter(i => ratings[key(i)]).length + "/" + list(kind).length;
   document.getElementById("progress").textContent = "Twins " + counts("twin") + " · Closest " + counts("closest") + " · Cards " + counts("card") + " · Trial " + counts("trial") + " · Redraw " + counts("redraw") + " · Soft " + counts("soft") + " · Param " + counts("param") + " · Cast " + counts("cast");
   let html;

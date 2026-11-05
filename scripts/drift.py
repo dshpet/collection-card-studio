@@ -5,8 +5,10 @@ Classifier: can DINOv3 tell the batch from real cards, on the whole card, the su
 Both sides pass through the same preprocessing. "matched" also drops the finest octave, where resampling differs.
 Real-likeness: how real the batch looks to a classifier that learned real cards against the first run.
 Matched classifier: real cards against their own redraws, which holds content equal.
+Each run's measured fields go to runs/<run>/measured.json, which review.py reads for twins: run drift first.
 
     drift.py western sci-fi horror
+    drift.py --matched twins40
 """
 
 import argparse
@@ -15,7 +17,7 @@ from collections import defaultdict
 
 os.environ.setdefault("HF_HUB_OFFLINE", "1")
 
-from common import ANALYSIS, DERIVED, ROOT, load_json, save_json
+from common import ANALYSIS, DERIVED, ROOT, best_try, load_json, save_json
 
 import numpy as np
 import torch
@@ -26,7 +28,7 @@ from sklearn.model_selection import StratifiedGroupKFold, StratifiedKFold, cross
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 
-from embed import MODELS, NEUTRAL, load_hf
+from embed import MODELS, load_hf, views
 from estimate import write_marigold, write_masks
 from measure import measure_card
 
@@ -37,8 +39,6 @@ FIELDS = ("shape_proportions", "surface_finish", "color_palette", "value_contras
 
 def picked(run):
     """The best try of every card in a run."""
-    from common import best_try
-
     folder = ROOT / "runs" / run
     records = []
     for tries in load_json(folder / "check.json").values():
@@ -75,13 +75,9 @@ def field_drift(cards, real):
     return sorted(rows, key=lambda row: -abs(row["z"]))
 
 
-def views(record, derived):
-    image = Image.open(ROOT / record["file"]).convert("RGB")
-    yield "whole", image
-    mask = Image.open(derived / "masks" / f"{record['id']}.png").convert("L")
-    grey = Image.new("RGB", image.size, NEUTRAL)
-    yield "subject", Image.composite(image, grey, mask)
-    yield "background", Image.composite(grey, image, mask)
+def encoded(images, encode):
+    with torch.inference_mode():
+        return np.concatenate([encode(images[i:i + 16]).float().cpu().numpy() for i in range(0, len(images), 16)])
 
 
 def matched(image):
@@ -95,26 +91,21 @@ def classifier(cards, real):
     labels = np.array([1] * len(real) + [0] * len(cards))
     result = {}
     vectors = defaultdict(list)
-    with torch.inference_mode():
-        for card in real + cards:
-            for view, image in views(card, card.get("derived", DERIVED)):
-                for name, prepared in (("native", image), ("matched", matched(image))):
-                    vectors[view, name].append(prepared)
-        for (view, name), images in vectors.items():
-            chunks = [encode(images[start:start + 16]).float().cpu().numpy() for start in range(0, len(images), 16)]
-            features = np.concatenate(chunks)
-            model = make_pipeline(StandardScaler(), LogisticRegression(C=0.01, max_iter=2000, class_weight="balanced"))
-            folds = StratifiedKFold(5, shuffle=True, random_state=0)
-            scores = cross_val_predict(model, features, labels, cv=folds, method="predict_proba")[:, 1]
-            result[f"{view}/{name}"] = round(float(roc_auc_score(labels, scores)), 3)
+    for card in real + cards:
+        for view, image in views(card, card.get("derived", DERIVED)):
+            for name, prepared in (("native", image), ("matched", matched(image))):
+                vectors[view, name].append(prepared)
+    for (view, name), images in vectors.items():
+        features = encoded(images, encode)
+        model = make_pipeline(StandardScaler(), LogisticRegression(C=0.01, max_iter=2000, class_weight="balanced"))
+        folds = StratifiedKFold(5, shuffle=True, random_state=0)
+        scores = cross_val_predict(model, features, labels, cv=folds, method="predict_proba")[:, 1]
+        result[f"{view}/{name}"] = round(float(roc_auc_score(labels, scores)), 3)
     return result
 
 
 def whole_features(records, encode):
-    images = [matched(Image.open(ROOT / r["file"]).convert("RGB")) for r in records]
-    with torch.inference_mode():
-        chunks = [encode(images[start:start + 16]).float().cpu().numpy() for start in range(0, len(images), 16)]
-    return np.concatenate(chunks)
+    return encoded([matched(Image.open(ROOT / r["file"]).convert("RGB")) for r in records], encode)
 
 
 def real_likeness(cards, real):
@@ -146,15 +137,16 @@ def matched_classifier(name):
     result = {}
     for label in sorted(p.name for p in root.iterdir() if p.is_dir()):
         folder = root / label
+        if not all((folder / "tries" / f"{b['id']}_1.png").exists() for b in briefs):
+            print(label, "skipped: not every twin has a first draw", flush=True)
+            continue
         drawn = [{"id": f"{b['id']}_1", "file": str((folder / "tries" / f"{b['id']}_1.png").relative_to(ROOT))} for b in briefs]
         write_masks(drawn, "cuda", folder / "derived" / "masks")
         scores = {}
         for view in ("whole", "subject", "background"):
             images = [dict(views(r, DERIVED))[view] for r in originals]
             images += [dict(views(r, folder / "derived"))[view] for r in drawn]
-            with torch.inference_mode():
-                chunks = [encode(images[i:i + 16]).float().cpu().numpy() for i in range(0, len(images), 16)]
-            features = np.concatenate(chunks)
+            features = encoded(images, encode)
             aucs = []
             for seed in range(20):
                 model = make_pipeline(StandardScaler(), LogisticRegression(C=0.01, max_iter=2000))
@@ -170,7 +162,7 @@ def matched_classifier(name):
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("runs", nargs="*")
-    parser.add_argument("--no-classifier", action="store_true")
+    parser.add_argument("--no-classifier", action="store_true", help="skip the real-or-generated AUC classifier")
     parser.add_argument("--matched", help="a folder of twins drawn in several styles, such as twins40")
     args = parser.parse_args()
     if args.matched:

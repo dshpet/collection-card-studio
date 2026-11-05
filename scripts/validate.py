@@ -1,16 +1,23 @@
 """Test the pipeline itself. Rerun after changing the generator or the check.
 
-off-style: can the check reject images that are plainly the wrong style? Delete its tries to redraw them.
-acceptance: can vision models pick out one generated card hidden among nine real ones?
+off-style: can the check reject images that are plainly the wrong style? Drawn for the first card of a run's plan.
+acceptance: can vision models pick out one generated card hidden among nine real ones? A weak test: see STYLE_GAPS.
+The first run's results of both are in runs/first; new ones go to runs/off-style and runs/acceptance.
 twins: redraw real cards with the card itself hidden, so style can be compared with content held equal.
 """
 
 import argparse
 import random
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor
 
-from make_set import (ANALYSIS, ROOT, SIZE, Image, ThreadPoolExecutor, ask_claude, ask_codex, best_try,
-                      check_tries, contact_sheet, draw, draw_card, load_json, save_json, strict, text)
+from common import ANALYSIS, ROOT, best_try, load_json, save_json
+
+from PIL import Image
+
+from draw import draw
+from make_set import SIZE, check_tries, contact_sheet, draw_card, strict, text
+from rate import ask_claude, ask_codex
 
 STYLES = {"photo": "a real studio photograph, photorealistic, natural materials",
           "vector": "flat vector illustration with solid colors and no shading",
@@ -25,7 +32,7 @@ Which slot is the odd one out? Give your best guess even if unsure."""
 
 
 def off_style(run_name):
-    run = ROOT / "runs" / "first" / "controls-off-style"
+    run = ROOT / "runs" / "off-style" / run_name
     card = load_json(ROOT / "runs" / run_name / "plan.json")["variants"][0]["cards"][0]
 
     def one(name):
@@ -54,7 +61,7 @@ def off_style(run_name):
 
 
 def acceptance(run_names, trials):
-    run = ROOT / "runs" / "first" / "acceptance"
+    run = ROOT / "runs" / "acceptance" / "+".join(run_names)
     (run / "sheets").mkdir(parents=True, exist_ok=True)
     rng = random.Random(7)
     real = [c for c in load_json(ANALYSIS / "cards.json") if c["form"]["staging"]["art_category"] != "5"]
@@ -67,7 +74,7 @@ def acceptance(run_names, trials):
     schema = strict({"odd_slot": {"type": "integer"},
                      "confidence": {"type": "string", "enum": ["low", "medium", "high"]}, "reason": text()})
     jobs = []
-    for index, (genre, name, path) in enumerate(rng.sample(generated, trials)):
+    for index, (genre, name, path) in enumerate(rng.sample(generated, min(trials, len(generated)))):
         slot = rng.randrange(10)
         paths = [ROOT / f"materials/card_examples/{c['id']}.png" for c in rng.sample(real, 9)]
         paths.insert(slot, path)
@@ -103,9 +110,10 @@ def twins(label):
     save_json(run / "check.json", {brief["id"]: [{"try_id": try_id, "card": brief["card"], "passed": True,
                                                   "issues": [], "misses": []}]
                                    for brief, try_id in zip(briefs, done) if try_id})
-    paths = [ROOT / f"materials/card_examples/{b['real']}.png" for b in briefs]
-    paths += [run / "tries" / f"{t}.png" for t in done if t]
-    contact_sheet(paths, run / "sheet.png", columns=len(briefs))
+    drawn = [(brief, try_id) for brief, try_id in zip(briefs, done) if try_id]
+    paths = [ROOT / f"materials/card_examples/{brief['real']}.png" for brief, _ in drawn]
+    paths += [run / "tries" / f"{try_id}.png" for _, try_id in drawn]
+    contact_sheet(paths, run / "sheet.png", columns=max(len(drawn), 1))
     print("drew", sum(bool(t) for t in done), "of", len(briefs))
 
 
@@ -113,9 +121,11 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("test", choices=("off-style", "acceptance", "twins"))
     parser.add_argument("--label", default="baseline")
-    parser.add_argument("--runs", nargs="+", default=["western", "sci-fi", "horror"])
+    parser.add_argument("--runs", nargs="+", help="runs to test, for off-style and acceptance")
     parser.add_argument("--trials", type=int, default=24)
     args = parser.parse_args()
+    if args.test != "twins" and not args.runs:
+        parser.error(f"{args.test} needs --runs")
     if args.test == "off-style":
         off_style(args.runs[0])
     elif args.test == "twins":

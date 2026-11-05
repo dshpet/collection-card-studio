@@ -25,10 +25,11 @@ def square(image, size):
     return ImageOps.pad(image.convert("RGB"), (size, size), Image.BICUBIC, color=NEUTRAL)
 
 
-def views(record):
+def views(record, derived=DERIVED):
+    """The whole card, and with a mask, the subject and the background alone on neutral grey."""
     image = Image.open(ROOT / record["file"]).convert("RGB")
     yield "whole", image
-    mask_path = DERIVED / "masks" / f"{record['id']}.png"
+    mask_path = derived / "masks" / f"{record['id']}.png"
     if mask_path.exists():
         mask = Image.open(mask_path).convert("L")
         grey = Image.new("RGB", image.size, NEUTRAL)
@@ -94,13 +95,13 @@ def main():
     records = cards()
     output = ANALYSIS / "embeddings"
     output.mkdir(parents=True, exist_ok=True)
+    by_view = {}
+    for record in records:
+        for view, image in views(record):
+            by_view.setdefault(view, []).append(image)
     for name in args.models:
         dtype = torch.float32 if name == "dinov3" else torch.float16  # DINOv3 returns NaNs at half precision
         encode = load_csd(MODELS[name]) if name == "csd" else load_hf(MODELS[name], dtype)
-        by_view = {}
-        for record in records:
-            for view, image in views(record):
-                by_view.setdefault(view, []).append(image)
         for view, images in by_view.items():
             if len(images) != len(records):
                 continue

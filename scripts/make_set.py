@@ -238,12 +238,14 @@ def render_model(source, out, look="plain"):
 
 
 def loose_note(loose):
-    """The geometry check, in words for the modeller. Parts are named by their center and size."""
+    """The geometry check, in words for the modeller: each loose group by its helpers, center and size."""
     if not loose:
         return ""
-    parts = "; ".join(f"a {p['part'].lower()} centered at {tuple(p['at'])}, size {tuple(p['size'])}" for p in loose)
-    return (f" A geometry check of the file found parts that touch nothing holding them: {parts}. Attach each to what "
-            "should hold it, unless it floats by design, such as a planet's ring or mist inside glass.")
+    groups = "; ".join(f"{g['parts']} part{'s' if g['parts'] > 1 else ''} ({', '.join(g['kinds'])}) centered at "
+                       f"{tuple(g['at'])}, size {tuple(g['size'])}" for g in loose)
+    return (f" A geometry check of the file found groups of parts that touch nothing holding them: {groups}. Attach "
+            "each group to what should hold it, unless it floats by design, such as a planet's ring, a ship in space or "
+            "mist inside glass.")
 
 
 def model_card(run, brief, rater, look="plain", photos=()):
@@ -557,7 +559,7 @@ def main():
         rounds = load_json(rounds_path) if rounds_path.exists() else {}
         for variant in range(1, len(plan["variants"]) + 1):
             chosen = [b for b in briefs if b["variant"] == variant]
-            waiting = [b["id"] for b in chosen if not history[b["id"]]]
+            waiting = [b["id"] for b in chosen if not history.get(b["id"])]
             if waiting:  # picks and reviews are made for the whole variant at once
                 print(f"variant {variant} waits for a drawing of {', '.join(waiting)}: rerun to continue", flush=True)
                 continue

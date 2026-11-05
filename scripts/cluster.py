@@ -9,8 +9,7 @@ from sklearn.decomposition import PCA
 from sklearn.metrics import adjusted_mutual_info_score, silhouette_score
 
 
-def merged_field(records, section, field):
-    joined = {card["id"]: card for card in load_json(ANALYSIS / "cards.json")}
+def merged_field(joined, records, section, field):
     return [joined[r["id"]]["form"][section][field] for r in records]
 
 
@@ -28,12 +27,13 @@ def best_kmeans(vectors):
 
 def main():
     records = cards()
+    joined = {card["id"]: card for card in load_json(ANALYSIS / "cards.json")}
     set_map = load_json(ANALYSIS / "set_map.json")
     targets = {
         "set": [set_map[r["id"]]["set_index"] for r in records],
-        "art_category": merged_field(records, "staging", "art_category"),
-        "background": merged_field(records, "staging", "background_type"),
-        "object_class": merged_field(records, "identity", "object_class"),
+        "art_category": merged_field(joined, records, "staging", "art_category"),
+        "background": merged_field(joined, records, "staging", "background_type"),
+        "object_class": merged_field(joined, records, "identity", "object_class"),
     }
 
     maps = {}

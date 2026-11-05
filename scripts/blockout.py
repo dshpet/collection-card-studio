@@ -1,13 +1,13 @@
 """Render a 3D blockout of a card's object in Blender, for the image model to restyle.
 
-    blender -b --factory-startup --python scripts/blockout.py -- runs/trial/models/m16.py runs/trial/blockout/m16.png [soft]
+    blender -b --factory-startup --python scripts/blockout.py -- model.py render.png [soft | check]
 
 "soft" renders a smoother, stylized look: no clear coat, broad highlights, beveled edges in the shading, a larger
-light and more fill. "check" renders nothing and prints only the construction check.
+light and more fill (experiments/trial2.py). "check" renders nothing and only prints the construction check.
 
-Every run prints a construction check as a line starting with LOOSE: the hero parts that touch nothing holding them.
-With a floor, ledge or setting, each group of touching hero parts must reach it. A floating object, with no setting,
-must be one group. Two parts touch when their surfaces cross or come within 1% of the hero's height.
+Every run prints a construction check as a line starting with LOOSE: each group of touching hero parts that touches
+nothing holding it. With a floor, ledge or setting, every group must reach it; a floating object must be one group.
+Two parts touch when their surfaces cross or come within 1% of the hero's height.
 
 A model file sets SCENE and defines build(k), where k holds the helpers below. Parts are the hero unless made
 with setting=True. The hero is framed to the real cards' median box, about 80% by 75% of the card.
@@ -28,8 +28,7 @@ from mathutils.bvhtree import BVHTree
 SIZE = (860, 960)
 BOX = (0.80, 0.75)
 FINISHES = {"satin": dict(rough=0.45), "matte": dict(rough=0.8), "gloss": dict(rough=0.25, coat=0.6),
-            "metal": dict(rough=0.3, metal=1.0), "glass": dict(rough=0.05, glass=1.0), "glow": dict(rough=0.5, glow=4.0),
-            "beam": dict(rough=0.5, beam=0.15)}
+            "metal": dict(rough=0.3, metal=1.0), "glass": dict(rough=0.05, glass=1.0), "glow": dict(rough=0.5, glow=4.0)}
 SOFT = {"satin": dict(rough=0.6), "matte": dict(rough=0.85), "gloss": dict(rough=0.45),
         "metal": dict(rough=0.5, metal=1.0)}
 ROOT = None
@@ -57,15 +56,7 @@ def mat(color, finish="satin"):
     if "glow" in spec:
         shader.inputs["Emission Color"].default_value = linear(color)
         shader.inputs["Emission Strength"].default_value = spec["glow"]
-    if "beam" in spec:
-        nodes, links = m.node_tree.nodes, m.node_tree.links
-        glow, clear, mix = (nodes.new(kind) for kind in ("ShaderNodeEmission", "ShaderNodeBsdfTransparent", "ShaderNodeMixShader"))
-        glow.inputs["Color"].default_value, glow.inputs["Strength"].default_value = linear(color), 2.0
-        mix.inputs[0].default_value = spec["beam"]
-        links.new(clear.outputs[0], mix.inputs[1])
-        links.new(glow.outputs[0], mix.inputs[2])
-        links.new(mix.outputs[0], nodes["Material Output"].inputs["Surface"])
-    if LOOK == "soft" and finish not in ("glow", "beam", "glass"):
+    if LOOK == "soft" and finish not in ("glow", "glass"):
         bevel = m.node_tree.nodes.new("ShaderNodeBevel")
         bevel.inputs["Radius"].default_value, bevel.samples = 0.02, 8
         m.node_tree.links.new(bevel.outputs["Normal"], shader.inputs["Normal"])
@@ -224,12 +215,16 @@ def hero_points():
     return points
 
 
+HELPERS = {"Cube": "box", "Cylinder": "cyl", "Cone": "cone", "Sphere": "sphere", "Torus": "torus", "tube": "tube",
+           "lathe": "lathe", "blob": "blob"}  # Blender's object names, as the model file's helpers
+
+
 def surfaces():
-    """Every visible part as world-space vertices, a BVH tree and a bounding box. Light beams are effects, not parts."""
+    """Every part as world-space vertices, a BVH tree and a bounding box."""
     graph = bpy.context.evaluated_depsgraph_get()
     parts = []
     for obj in bpy.context.scene.objects:
-        if obj.type not in {"MESH", "CURVE"} or any(m and m.name.endswith("_beam") for m in obj.data.materials):
+        if obj.type not in {"MESH", "CURVE"}:
             continue
         evaluated = obj.evaluated_get(graph)
         mesh = evaluated.to_mesh()
@@ -260,7 +255,7 @@ def touching(a, b, tolerance):
 
 
 def loose_parts():
-    """Hero parts that touch nothing holding them, as described above."""
+    """Groups of hero parts that touch nothing holding them, as described above."""
     parts = surfaces()
     hero = [p for p in parts if p["hero"]]
     if not hero:
@@ -285,12 +280,17 @@ def loose_parts():
         for i, p in enumerate(parts):
             sizes[root(i)] = sizes.get(root(i), 0) + len(p["verts"])
         held = {max(sizes, key=sizes.get)}
-    loose = []
+    groups = {}
     for i, p in enumerate(parts):
         if p["hero"] and root(i) not in held:
-            center, size = (p["low"] + p["high"]) / 2, p["high"] - p["low"]
-            loose.append({"part": p["obj"].name.split(".")[0].rstrip("0123456789"), "at": [round(c, 2) for c in center],
-                          "size": [round(c, 2) for c in size]})
+            groups.setdefault(root(i), []).append(p)
+    loose = []
+    for members in groups.values():
+        low = Vector([min(p["low"][i] for p in members) for i in range(3)])
+        high = Vector([max(p["high"][i] for p in members) for i in range(3)])
+        kinds = sorted({HELPERS.get(p["obj"].name.split(".")[0].rstrip("0123456789"), "part") for p in members})
+        loose.append({"parts": len(members), "kinds": kinds, "at": [round(c, 2) for c in (low + high) / 2],
+                      "size": [round(c, 2) for c in high - low]})
     return loose
 
 
