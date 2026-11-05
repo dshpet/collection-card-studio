@@ -69,14 +69,15 @@ def write_depth(records, device):
     sys.modules["depth_anything_3.utils.pose_align"] = MagicMock()
     from depth_anything_3.api import DepthAnything3
 
+    folder = DERIVED / "depth"
+    records = [r for r in records if not (folder / f"{r['id']}.png").exists()]
+    if not records:
+        return
     model = DepthAnything3.from_pretrained("depth-anything/DA3MONO-LARGE", revision=DEPTH_REVISION)
     model = model.to(device).eval()
-    folder = DERIVED / "depth"
     folder.mkdir(parents=True, exist_ok=True)
     for record in records:
         out = folder / f"{record['id']}.png"
-        if out.exists():
-            continue
         image = Image.open(ROOT / record["file"]).convert("RGB")
         depth = model.inference([image]).depth[0]
         near = 1 / np.maximum(depth, 1e-6)  # near is bright
@@ -94,17 +95,18 @@ def write_attention(records, device):
     sys.modules.setdefault("clip", MagicMock())  # only other DeepGaze models need it
     import deepgaze_pytorch
 
+    folder = DERIVED / "attention"
+    records = [r for r in records if not (folder / f"{r['id']}.npy").exists()]
+    if not records:
+        return
     bias_path = MODELS / "centerbias_mit1003.npy"
     if not bias_path.exists():
         urlretrieve(CENTER_BIAS, bias_path)
     template = np.load(bias_path)
     model = deepgaze_pytorch.DeepGazeIIE(pretrained=True).to(device).eval()
-    folder = DERIVED / "attention"
     folder.mkdir(parents=True, exist_ok=True)
     for record in records:
         out = folder / f"{record['id']}.npy"
-        if out.exists():
-            continue
         image = np.asarray(Image.open(ROOT / record["file"]).convert("RGB"), dtype=np.float32)
         height, width = image.shape[:2]
         bias = zoom(template, (height / template.shape[0], width / template.shape[1]), order=0, mode="nearest")

@@ -14,13 +14,18 @@ os.environ.setdefault("HF_HOME", str(MODELS / "hf"))
 os.environ.setdefault("TORCH_HOME", str(MODELS / "torch"))
 
 
-def load_token():
-    """Expose the Hugging Face key from .env to the hub client."""
+def hf_key():
+    """The Hugging Face key from .env, or None. It is never printed, and only gated downloads get it."""
     env = ROOT / ".env"
-    if env.exists():
-        match = re.search(r"^\s*HUGGING_FACE_API_KEY\s*=\s*(.+?)\s*$", env.read_text(), re.M)
-        if match:
-            os.environ.setdefault("HF_TOKEN", match.group(1).strip("\"'"))
+    match = env.exists() and re.search(r"^\s*HUGGING_FACE_API_KEY\s*=\s*(.+?)\s*$", env.read_text(), re.M)
+    return match.group(1).strip("\"'") if match else None
+
+
+def load_token():
+    """Expose the key to the hub client through the environment. Only for scripts that start no other program."""
+    key = hf_key()
+    if key:
+        os.environ.setdefault("HF_TOKEN", key)
 
 
 def manifest(group):

@@ -59,7 +59,7 @@ python -m venv .venv
 .venv/bin/python -B scripts/estimate.py masks marigold
 ```
 
-DINOv3 and SAM 3 are gated on Hugging Face: put `HUGGING_FACE_API_KEY` in `.env`, then run `scripts/embed.py --models dinov3` and `scripts/cast.py find`.
+DINOv3 and SAM 3 are gated on Hugging Face: put `HUGGING_FACE_API_KEY` in `.env`, then run `scripts/embed.py --models dinov3` and `HF_HUB_OFFLINE=0 .venv/bin/python -B scripts/cast.py find`, then `cast.py label`. The key goes only to these downloads.
 
 ## Change the generator or the style
 

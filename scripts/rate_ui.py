@@ -253,7 +253,11 @@ function move(step) {
 function show() {
   const item = current(), entry = item && ratings[key(item)];
   for (const kind of kinds) document.getElementById("tab-" + kind).className = kind === mode ? "on" : "";
-  if (!item) { document.getElementById("main").innerHTML = "<p class=\"hint\">Nothing to rate here.</p>"; return; }
+  if (!item) {
+    document.getElementById("progress").textContent = "";
+    document.getElementById("main").innerHTML = "<p class=\"hint\">Nothing to rate here.</p>";
+    return;
+  }
   const counts = kind => list(kind).filter(i => ratings[key(i)]).length + "/" + list(kind).length;
   document.getElementById("progress").textContent = "Twins " + counts("twin") + " · Closest " + counts("closest") + " · Cards " + counts("card") + " · Trial " + counts("trial") + " · Redraw " + counts("redraw") + " · Soft " + counts("soft") + " · Param " + counts("param") + " · Cast " + counts("cast");
   let html;
@@ -304,6 +308,7 @@ function show() {
 document.onkeydown = event => {
   if (["TEXTAREA", "INPUT"].includes(event.target.tagName)) return;
   const press = event.key.toLowerCase(), item = current();
+  if (!item) return;
   if (event.key === "ArrowRight") move(1);
   else if (event.key === "ArrowLeft") move(-1);
   else if (mode === "twin" && "abn".includes(press) && press) {

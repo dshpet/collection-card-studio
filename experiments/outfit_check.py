@@ -2,7 +2,8 @@
 
 runs/cast-check drew the three character cards of runs/plans/western-cast.json. The cow came out in the red life vest
 and sunglasses of the jet-ski card its cutout came from, and the man in the hiker's backpack. This redraws the same
-cards, with the same references, with one sentence added to the cast prompt.
+cards, with the same references, with one sentence added to the cast prompt. The sentence has since joined the
+pipeline's prompt (scripts/style.py), so a rerun keeps it once; runs/cast-check stays the arm without it.
 
     outfit_check.py
 """
@@ -25,8 +26,9 @@ SENTENCE = " The cutouts show who each character is, not what it wears: dress it
 
 def main():
     RUN.mkdir(parents=True, exist_ok=True)
-    first, rest = make_set.CAST_STYLE.split("\n", 1)
-    make_set.CAST_STYLE = first + SENTENCE + "\n" + rest
+    if SENTENCE.strip() not in make_set.CAST_STYLE:
+        first, rest = make_set.CAST_STYLE.split("\n", 1)
+        make_set.CAST_STYLE = first + SENTENCE + "\n" + rest
     briefs = load_json(ROOT / "runs" / "cast-check" / "briefs.json")
     with ThreadPoolExecutor(3) as pool:
         done = [d for d in pool.map(lambda brief: draw_card(RUN, brief, 1, [], True), briefs) if d]

@@ -32,7 +32,7 @@ Which slot is the odd one out? Give your best guess even if unsure."""
 
 
 def off_style(run_name):
-    run = ROOT / "runs" / "off-style" / run_name
+    run = ROOT / "runs" / "off-style" / run_name.replace("/", "_")
     card = load_json(ROOT / "runs" / run_name / "plan.json")["variants"][0]["cards"][0]
 
     def one(name):
@@ -61,7 +61,7 @@ def off_style(run_name):
 
 
 def acceptance(run_names, trials):
-    run = ROOT / "runs" / "acceptance" / "+".join(run_names)
+    run = ROOT / "runs" / "acceptance" / "+".join(run_names).replace("/", "_")
     (run / "sheets").mkdir(parents=True, exist_ok=True)
     rng = random.Random(7)
     real = [c for c in load_json(ANALYSIS / "cards.json") if c["form"]["staging"]["art_category"] != "5"]
@@ -113,7 +113,8 @@ def twins(label):
     drawn = [(brief, try_id) for brief, try_id in zip(briefs, done) if try_id]
     paths = [ROOT / f"materials/card_examples/{brief['real']}.png" for brief, _ in drawn]
     paths += [run / "tries" / f"{try_id}.png" for _, try_id in drawn]
-    contact_sheet(paths, run / "sheet.png", columns=max(len(drawn), 1))
+    if drawn:
+        contact_sheet(paths, run / "sheet.png", columns=len(drawn))
     print("drew", sum(bool(t) for t in done), "of", len(briefs))
 
 

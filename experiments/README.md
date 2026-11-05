@@ -4,7 +4,7 @@ One-off studies behind the pipeline's decisions. Each ran once, its results are 
 
 | Script | Question | Answer |
 |---|---|---|
-| `trial.py` | Does a Blender blockout fix construction? | Yes: no broken card against 5 of 12 from the brief |
+| `trial.py` | Does a Blender blockout fix construction? | Yes: no broken card against 5 of 12 from the brief. One first-arm model, m04, used a light-beam finish since removed, so it no longer renders |
 | `trial2.py`, `photos.py` | Does a soft render or a real photo help the blockout? | No: soft lost designed shape, photos taught engineering truth that reads as wrong |
 | `score.py` | Can any score of a lone card follow the user's grades? | No. Only CSD against the same object's real card tracks the user |
 | `prefer.py` | Can a judge pick the closer of two drawings? | Yes, 61% for the director, 76-78% when confident. Construction: no judge beats chance |

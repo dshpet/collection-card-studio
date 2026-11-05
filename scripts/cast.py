@@ -15,7 +15,7 @@ import os
 
 os.environ.setdefault("HF_HUB_OFFLINE", "1")
 
-from common import ANALYSIS, ROOT, cards, load_json, load_token, save_json
+from common import ANALYSIS, ROOT, cards, hf_key, load_json, save_json
 
 import numpy as np
 import torch
@@ -47,9 +47,11 @@ def segmenter():
     """SAM 3 with a text prompt: (image, word) -> [(score, boolean mask)]."""
     from transformers import Sam3Model, Sam3Processor
 
-    load_token()  # SAM 3 is gated; it loads through transformers, with no remote code
-    model = Sam3Model.from_pretrained("facebook/sam3", dtype=torch.float32).cuda().eval()
-    processor = Sam3Processor.from_pretrained("facebook/sam3")
+    # SAM 3 is gated. The key goes to the download alone, never into the environment, which programs this process
+    # starts would inherit. Downloading needs HF_HUB_OFFLINE=0; afterwards the cached model loads offline.
+    token = hf_key() if os.environ.get("HF_HUB_OFFLINE") == "0" else None
+    model = Sam3Model.from_pretrained("facebook/sam3", dtype=torch.float32, token=token).cuda().eval()
+    processor = Sam3Processor.from_pretrained("facebook/sam3", token=token)
 
     def find(image, word, threshold=THRESHOLD):
         inputs = processor(images=image, text=word, return_tensors="pt").to("cuda")
