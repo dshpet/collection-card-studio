@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the cowboy pig's lasso stays a thin, continuous rope loop above the head and around the belly. The hat brim, ears and hooves read as separate parts. The silhouette is open, with solidity 0.609, just under the real range, because of the rope. B: the train mask is a blurred blob and can't be trusted. On the card, the pig's head and hat almost fill the carriage window, so the carriage looks shrunk around it. The locomotive is squashed into a short toy body with oversized wheels and a fat chimney.",
+   "fix": "Draw the train carriage and locomotive at true proportions, long and boxy with a straight roofline and wheels much smaller than the carriage height. The character sits inside the window with space around them, not filling it."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the cowboy hat has a pinched crown and a wide, thin brim curling up at both sides, in believable proportions. B: the jacket's torso is short and wide. The sleeves are stubby and end in thick rolled cuffs like sausages. The collar is a fat rolled tube, and the pocket flaps and shoulders are swollen rather than flat panels.",
+   "fix": "Draw the jacket at real garment proportions: longer torso, sleeves reaching past the hem, thin flat cuffs and a flat folded collar. Pockets are flat panels with crisp edges."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: each umbrella canopy panel bulges like a pillow, and the rim is a row of lumpy rounded scallops instead of tight points at the rib tips. The pole is thin and straight, which is fine. B: the bottles have straight cylindrical sides, tight square caps and narrow necks, with believable bottle proportions. The low straight_share comes from the overlapping group and the ridged bottle bases.",
+   "fix": "Draw the umbrella canopy as taut, flat fabric panels stretched between straight ribs, with sharp points at each rib tip and a thin straight hem. No puffy bulges between ribs."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the boxing gloves are fat, smooth forms. That is true to the object, and the thumb and cuff band read as separate parts. Corner_rate 0.392 is low but suits padded gloves. B: the saddle's skirt is a flat rectangular box like a satchel, with the seat sitting on top like a cushion. The horn is a long, separate mushroom-shaped stalk. The stirrup straps hang straight down through the fence rail, so the parts don't relate the way a real saddle's do. Thin_share 0.016 is just above the real range.",
+   "fix": "Draw a real western saddle draped over the rail. A curved seat flows into a short, low horn at the front. Leather fenders curve down both sides of the rail, with stirrups hanging below on long thin straps. No boxy flat skirt."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the rowboat hull is a long tapered shape with a pointed bow, straight plank seats and a flat dock with crisp plank edges. The mooring ropes are somewhat thick. B: the station clock is a round drum on two straight hanging rods with hook brackets. The lumpy cloud-like crown on top is the only blobby part. Every field is inside the real range, and neither silhouette clearly shows the swollen or toy-like proportions the lessons show.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards draw soft, puffed-up toy versions of the object. Garment cuffs and collars become sausages, canopy and leather panels bulge like pillows, and edges turn into lumpy rounded scallops instead of tight points. Parts are rearranged or added in ways the real object wouldn't have: a saddle drawn as a box with a stalk horn, extra bases and props. The main subject is enlarged against the things around it. Real cards keep flat panels, thin straps and edges, and true part relations."
+}

@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both are category-4 scenes. A's ranch background is a few large, quiet shapes: one fence along the middle, flat mesas and a plain sky. Its small detail is limited to pebbles and dust puffs near the feet. B's background is busier. Behind the train it stacks a winding track, rolling hills, a row of pine trees, a sun disc and a large billow of steam. The train fills the left two-thirds and runs off the frame, so the setting crowds the hero rather than sitting behind it. B's edge density (0.082) is at the top of the real range.",
+   "fix": "Show the pig in the train window against a simple background: one smooth green hill and a plain warm sky. Remove the winding track, the pine trees and the sun. Make the steam a single small puff, and keep the train fully inside the frame and centered."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both are category-1 cards: the object floats on a tone-on-tone sunburst. A's cyan rays have strong contrast but no other elements. B's green rays are a little darker at the corners, with a soft glow behind the jacket. Neither card has props or decoration in the background, and both sit inside the real range on both measures.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A is a clean category-1 card: the umbrella floats on quiet tone-on-tone blue rings, with no props. B places five bottles on a plank table in front of a tent. The background holds the green tent flaps, a dark opening, grass tufts, a metal pole and wood grain with visible plank seams. That is the extra setting that generated cards add in the lessons, like the lighthouse's rock island and the computer's grained desk. B's edge density (0.044) is far above the real range (≤0.017), and its detail (0.018) is above the real range too.",
+   "fix": "Draw the water bottles on a plain light wooden ledge with very faint grain, in front of a soft, smooth green backdrop. Leave out the tent, the tent opening, the grass and the pole."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both are category-3 cards on a simple backdrop. A shows the gloves on a wood ledge with a soft knot in the grain, in front of vertical blue planks. B shows the saddle on a fence rail, with a second rail below, in front of tone-on-tone blue stripes. Each card has one purposeful support and a quiet backdrop. A's wood grain is a little busier (edge 0.040 against B's 0.022), but both are in the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A's setting is a dock and open water: one big plank deck, ripples and two lily pads. That is a few large shapes, though the lily pads are small extra props. B builds a full station around the clock: a canopy with brackets and girders, two pillars, a brick wall, a bench, a yellow platform edge, the tracks and a patch of sky. That is many objects and much small detail, and the clock competes with all of it. B's edge density (0.089) is at the very top of the real range.",
+   "fix": "Hang the station clock under a plain green canopy beam, in front of a soft, blurred pale-teal wall. Leave out the bench, the pillars, the bricks, the tracks and the platform stripe."
+  }
+ ],
+ "pattern": "Generated cards add setting the object doesn't need, such as a rock island, a lifebuoy, rope, bushes, tent flaps, grass, benches, pillars and train tracks. They fill real materials with fine texture: grain swirls and knots in wood, sparkling ripples in water. The real cards keep to one support and a few large, quiet background shapes, with the hero centered and fully inside the frame."
+}

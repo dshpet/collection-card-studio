@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the camera sits at about the pig's chest height. The fence runs nearly parallel to the picture, the ground is a gently receding plane and the pig's feet sit on it. The background mesas are simply drawn, a clear third layer, and the perspective is mild. B: the red car comes at the camera from the top-left corner, cropped and leaning, as if shot with a wide lens. The locomotive behind it is seen more from the side than the car is, and the rails curve off to a high horizon at the right. That gives strong, forced convergence and a tilted scene. Planar_share is 0.30 for B against 0.021 to 0.184 on the real cards; A is 0.073.",
+   "fix": "Show the train car and engine from a gentle three-quarter side view at eye level, with the whole car in frame and level, not tilted toward the camera. Use one mild perspective for the car and the engine, and keep the track behind them low and calm."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the hat is seen from a low camera slightly above the brim, turned about a quarter, with mild perspective. The brim reads as one sweeping curve, a smooth rainbow in the normal map. B: the jacket floats, seen nearly from the front and slightly from above. The collar opening and both cuff openings show, and the bottom hem curves down, which agrees with the raised camera. Each card keeps one consistent view, with no ground and a flat ray background. The camera gives no reason to pick either.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the umbrella floats tilted toward the viewer. The top of the canopy and the drooping undersides of the panel edges show, and the pole comes forward to the lower left, all in one mild view over a flat ring background. B: the camera looks moderately down onto a table. The bottle caps and the planks share that downward angle, the back bottles are slightly smaller, and the tent curtain behind is simpler. B's planar_share of 0.009 is just under the real range even though the tabletop is flat, but the table, bottles and curtain read consistently by eye. Both match real card setups (a floating tilted object, and an object on a surface with a backdrop).",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the camera is low, at tabletop height. The table edge is level, the gloves fill the frame and are cropped at the left, and the front glove overlaps the back one with mild size falloff, close to the low cropped real lighthouse. B: the fence rails recede on a diagonal and their top faces show from above, but the saddle's side flap and stirrups face the viewer almost straight on instead of lining up with the rail they hang over. The striped background stays flat and vertical while the rails converge, so the saddle and the fence don't share one view.",
+   "fix": "Turn the saddle so its side flap and stirrups run along the fence rail at the same angle as the rail, all seen from the same slightly-high three-quarter camera."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the camera looks steeply down on the dock and boat, with almost no convergence. The planks, the post top, the inside of the boat, the lily pads and the water ripples all share one top-down angle, close to the high-camera real water polo card. B: the clock face is drawn as an almost perfect front-on circle, yet the right side of its drum shows thickness as if the clock were turned. The beam overhead is seen from below while the platform and wall behind recede toward the right with stronger convergence, so the hero clock and the station sit in slightly different views.",
+   "fix": "Turn the clock a little, so the face becomes a slight oval matching the visible side of its case, and use the same mild eye-level perspective for the beam, the platform and the back wall."
+  }
+ ],
+ "pattern": "Generated cards tend to put the hero in a flatter, front-facing view while the setting behind it uses a different, often stronger perspective (forced wide-angle diagonals, a fast-receding track or wall), so the object and its ground plane don't share one camera. Real cards keep one mild three-quarter view for everything, and when they crop or tilt they do it as one consistent camera move."
+}

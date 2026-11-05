@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (lasso pig): the light comes mostly from the front. Belly, snout and legs are lit almost evenly, the shadow side down the pig's right flank is shallow, and the feet barely darken the dirt (only soft dust puffs). That matches the even lighting on the generated lessons. B (pig in train): light comes clearly from the upper left. The red car's face is lit, the area under the car and the wheel well go deep, and the pig's face turns into shadow on its right cheek. The lens tint is very warm, though, so this lean is weak.",
+   "fix": "Light the pig from the upper left: put a clear darker shadow side down its right flank and under the belly and hat brim, and add a dark contact shadow under each hoof on the dirt."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (cowboy hat): the lit side is the top left of the crown. The underside of the brim goes clearly dark, the band drops a cast shadow onto the crown, and the lens stays cool and neutral like the real glove and camera. B (scout jacket): the light is broad and nearly frontal. The torso and sash are lit evenly, the shadow is mostly just the dark cuff openings, there is little core shadow where the sleeves turn, and the lens is warm olive-tinted, which is the same drift seen in the generated lessons.",
+   "fix": "Light the jacket from the upper left: make the right sleeve and the right side of the torso turn into a clear darker shadow side, put a soft core shadow along each sleeve's curve, and darken under the collar and under the sash."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (beach umbrella): the top panels are lit and soft, and the underside drops very dark. That gives a strong top-down bias, but it is a believable form split. B (water bottles): light comes from the back right, the bottles cast soft directional shadows toward the front left on the table, and the clear plastic has small soft highlights. Both cards read as one consistent light, so my vector gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (boxing gloves): the light comes from the upper left. The front glove's knuckle dome turns smoothly into a darker right side and underside, and there is soft contact darkening where the gloves rest on the wood. B (saddle on rail): the lighting is flat and frontal (low light bias). The seat and flap are lit almost evenly, the stirrups and straps throw no shadow onto the rail or the flap, and there is little darkening where the saddle sits on the beam.",
+   "fix": "Light the saddle from the upper left: shade the right side of the flap and the underside of the seat darker, have the stirrups and straps cast soft shadows onto the flap, and darken the beam where the saddle rests on it."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (rowboat at dock): the soft light comes from above, and the lens has a warm beige tint across the hull and dock. The hull's outer side turns only gently, and the boat throws almost no shadow onto the water. That matches the soft, warm-tinted generated lessons. B (station clock): there is a clear lit front face and a deep, cool dark band on the right side of the clock rim and the post, like the cool shadow sides on the real computer and camera. Its form contrast is a little above the real range, so this lean is weak.",
+   "fix": "Light the rowboat from the upper left: shade the hull's right outer side clearly darker, put a darker band inside the boat below the gunwale on the lit side, and add a soft shadow on the water along the boat's right side and under the dock."
+  }
+ ],
+ "pattern": "The generated cards are lit softly from the front. The shadow side stays shallow, and the shading lens tints warm, which shows the base color leaking into it. Small parts (stirrups, hooves, hulls) don't drop clear cast or contact shadows. The real cards have one clear upper-left light, a darker, cooler shadow side with a visible core shadow, and contact darkening where the object rests."
+}

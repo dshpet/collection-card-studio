@@ -119,7 +119,7 @@ Producer wishes: {wishes or "none"}
 Design {variants} clearly different versions of one ten-card set for this theme.
 
 Rules learned from the game's real sets:
-- title: the topic itself, in 1-2 plain words, like "Beach" or "Road Trip". A story behind the set is optional. Give it in one line or leave it empty.
+- title: the topic itself, in 1-2 plain words, like "Beach" or "Road Trip", without the collection's name: "Horror", not "Horror Movie". A story behind the set is optional. Give it in one line or leave it empty.
 - Card names: 1-2 plain words.
 - Pick the first things anyone would name for the topic: instantly recognizable objects with a simple, distinctive silhouette.
 - Every object must belong to this specific topic, not to the wider collection. A film genre set shows that genre's world, not generic cinema items such as film reels or popcorn.

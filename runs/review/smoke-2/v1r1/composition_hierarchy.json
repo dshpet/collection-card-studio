@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the lasso pig stands whole and square to the viewer in the middle of the card. The figure runs top to bottom (box_height 0.965), with the hat and lasso loop pressed against the top edge, and the fence is an even band behind it. B: the pig leans out of a train window, and the carriage is cut off by the top and left edges. The train runs diagonally into the background, and the face is the first read in the upper-left third. B's off-center, edge-cropped diagonal is like the real cards (spotlight, scroll). A is the centered, whole-figure, front-facing staging the generated lesson cards use.",
+   "fix": "Tilt the pig into a three-quarter diagonal and let one edge of the card crop the body or lasso. Move the head off-center toward the upper third, and leave a clear patch of sky around the face."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the cowboy hat floats centered at three-quarter view, and its brim nearly touches the left and right edges (box_width 0.898, low box_height 0.463 from the flat shape). B: the scout jacket floats centered with even margins of about 0.07 on all sides, against a green sunburst. Both are single floating heroes on a radial background with no competing focus, like the real glove and camera cards. The hat's out-of-range numbers come from its shape, not its framing.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: one umbrella tilted on a strong diagonal, canopy upper-left to pole lower-center. It fills the width, and its shape reads instantly at thumbnail size, like the real calculator and scroll cards. B: five bottles bunch in the center of a table and tent scene. They stay well away from every edge (margin_min 0.135, above the real 0.116 maximum). The table planks and green tent cover more of the card than the bottles do, and at thumbnail size the bottles are a small cluster. This matches the generated lighthouse lessons: the hero is shrunk and fenced in by its setting.",
+   "fix": "Bring the camera closer so the front bottle is large and nearly touches the bottom edge, and let the outer bottles be cut off by the side edges. Show less tabletop and less tent."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the pair of boxing gloves sits low and wide on a wooden shelf, nearly touching the left and right edges (box_width 0.951). A plain blue wall fills the top. It is heavy and close, like the real scroll-on-table card. B: the saddle hangs on a fence rail in the upper middle with wide clearance (margin_min 0.119, box_width 0.6, both outside the real ranges). Two diagonal fence rails cross the whole card and pull the eye to the edges, and the stirrups dangle into empty space below. The hero is small, framed by props, and competes with the rails.",
+   "fix": "Draw the saddle much larger so it fills most of the card width and comes close to the edges. Show only one short piece of the fence rail under it, and remove the second rail across the bottom."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the rowboat runs diagonally from lower-left to upper-right. The dock is cut off by the top-left corner, and the bow touches the left edge (subject_area 0.48, just above range). The dock and lily pads take attention, but the boat reads first. B: a station clock hangs dead center, face-on, with bench, columns and track pushed to the edges. It reads instantly, like the real binocular-viewer-on-balcony card. Each card has one framing trait like the real set and one like the generated lessons, so this vector gives no reliable split.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards give themselves away by staging the hero whole, centered and facing the viewer. The full object, base included, sits in the middle with even clearance on every side. Often a scene element is added around it (island, table, fence rails) that shrinks the hero and pushes the margins past the real range. Real cards push the hero close to the camera, put it on a diagonal or three-quarter tilt, and let it touch or be cut off by at least one edge."
+}

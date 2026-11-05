@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (cowboy pig): the edge map is busy all over the subject. The rope is a twisted, high-frequency texture, the hat brim and belly carry many internal strokes, and the ground has a scatter of pebbles and dust-puff edges. Subject density is 0.158, just above the real maximum. The fence posts are about as crisp as the pig, so there is little edge hierarchy. B (train pig): the pig's face and hat are the sharpest area, the train side is broad with fewer internal lines, the motion streaks are soft, and the hills and sky fall away into faint edges. B's background density is high (0.082) but still inside the real range. Both are scene cards, so this is a weak call.",
+   "fix": "Keep the pig's silhouette and face crisp. Draw the rope as a smooth band with only a few twist marks, remove the scattered pebbles and dust specks, and soften the fence and mesas so they are clearly less sharp than the pig."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (cowboy hat): one clean silhouette. The brim has a soft rolled edge, the only internal line is the band, and the crown folds are soft, lost edges. This matches the low-detail, smooth real cards. B (scout jacket): every part gets its own dark closed contour, including the collar, both chest pockets with flaps, the lower pocket, the cuffs, the sash border, each badge rim, the badge icons, and the snap buttons. Panel seams read as grooves rather than hairlines. Subject density is 0.159, just over the real maximum. This matches the lesson pattern where generated cards add panel detail and outline each piece.",
+   "fix": "Simplify the jacket into a few big soft shapes. Leave out the pocket flaps and snaps, or make them faint shallow seams, and let the sash and badges blend into the cloth with soft shading instead of dark rims around every piece."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A (beach umbrella): crisp outer silhouette, a few precise panel seams, and only faint concentric rings in the background. Background density is 0.005, typical of the real cards. B (water bottles): the background is full of drawn edges, including the tent fold lines, grass blades, plank gaps, and wood-grain streaks across the table. Background density is 0.044, about 2.5 times the real maximum of 0.017. Each bottle also has stacked contour rings at the cap, the label edges, and the bottom lobes. Edges are as sharp in the background as on the subject, so there is no hierarchy, the same pattern as the wood-grain tables in the generated computer lessons.",
+   "fix": "Make the tent and table soft, out-of-focus color shapes with no wood grain or grass blades. Keep crisp edges only on the front bottle's silhouette and label, and drop the extra ridge lines on the caps and bottle bases."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (boxing gloves): the silhouettes are very soft and partly lost, the left glove melts into the right one, and there are almost no internal lines apart from a few thumb creases. Subject density is 0.037, well below the real minimum of 0.087. Meanwhile the wood-grain floor and the wall slats carry more edges than the hero, so the hierarchy is reversed. B (saddle): firm silhouette, thin precise strap and stirrup edges, and stitching along the seat and skirt. Subject density is 0.171, inside the real range, and the blue stripes and rails in the background are kept simple. This is uncertain because B's outline is also fairly uniform.",
+   "fix": "Give the gloves a clean, firm outer edge with a clear separation where one glove overlaps the other, add the cuff seam and thumb seam as thin lines, and make the wooden floor plain with only faint grain so it stays softer than the gloves."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B (station clock): a thick, uniformly dark contour runs around the clock case, the hanger brackets, the bench, the pillars, and every tick mark. Outline darkness is 0.186, above the real maximum of 0.148, and background density is at the real ceiling (0.089). The roof beams, brick wall, bench, and rails are drawn with the same hard lines as the clock, so nothing recedes. It reads as an inked cartoon, not a soft-rendered card. A (rowboat): the boat rim and the pier planks have sharp edges, but the ripples and lily pads are lighter, and the contour weight varies with lighting instead of being one constant ink line.",
+   "fix": "Remove the dark ink outline around the clock and everything else, and let the edges come from light and shadow only. Keep the clock face rim and hands crisp, and soften the station background into simple blurred shapes without drawn bricks or beam lines."
+  }
+ ],
+ "pattern": "Generated cards draw a closed, uniform-weight contour around every part, such as pockets, cuffs, badge rims, and stacked rings on caps and lenses. They also give the background as much crisp detail as the hero: wood grain, tent folds, grass, bricks, pebbles. Real cards keep the strongest edge at the hero's silhouette and focal detail, use thin seams instead of grooves, and let the background fall into soft or lost edges."
+}

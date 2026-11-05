@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the pig's skin moves from pink to peach, the desert ground and fence are dusty orange-brown, and a plain blue sky balances them. It is warm overall but has believable local colors. B: the train car is pure red and the locomotive is pure green. The sky is washed yellow-peach, so the background warms too and leaves no cool area for the eye to rest. Subject chroma (0.156) is above the real range, and in the lens the pig's face and the hat merge into one cream-yellow mass.",
+   "fix": "Paint the train car a slightly muted brick red and the engine a soft sage green. Make the sky a clear light blue with no golden haze. Keep the pig pink, not peach."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the hat is a natural tan-brown leather with one red band as its only accent. Its shadows stay a related darker red-brown, set against a cyan ray background, similar to the real glove card. B: the jacket's neutral is a creamy beige that the lens reads as yellow-green. On top of it sit saturated orange collar and cuffs and glossy gold badges, all inside one green field (2.5 hue families). This cream-tinted neutral with an orange accent matches the generated cards in the computer and lighthouse lessons.",
+   "fix": "Paint the jacket a muted khaki with grey-brown shadows, not cream. Make the collar and cuffs a dull brown instead of bright orange, and keep the badges matte."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the umbrella panels are flat red, yellow and orange on a single cyan field, and the grey pole is a true neutral. This is a simple, readable palette like the real calculator and sunscreen cards. B: the bottle labels glow electric blue and cyan against a saturated green tent and orange wood, giving 5.8 hue families, above the real range. Shadows on the table pick up olive-green in the lens (shadow chroma 1.72, above the real range). This is the glowing-cyan accent seen on the generated camera lenses.",
+   "fix": "Make the labels a plain medium blue with no glow. Give the tent a darker, duller green and cast soft grey-brown shadows on the wood."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the gloves are one pure, loud red (subject chroma 0.182, above the real range). The highlights turn orange-peach in the lens instead of pinkish-white, and the shadows are deep maroon. The orange floor and saturated blue wall are just as loud, so nothing rests the eye. B: the saddle is a natural brown leather with a small red trim and silver stirrups that stay neutral, against a cyan background. Its chroma is within range.",
+   "fix": "Paint the gloves a slightly deeper, less glowing red, with pale pinkish-white highlights and dark wine-purple shadows. Make the floor a muted honey wood."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the dock and boat are warm orange wood on bright cyan water, with green lily pads as the accent. This is a saturated two-role palette like the real treasure-chest and pool cards. B: the whole card is a muted teal-green with a cream clock face and a dusty grey case. Subject chroma (0.051) sits at the bottom of the real range and shadows lose their color (0.58, below range), so the card reads washed out compared with every real card.",
+   "fix": "Give the clock a clean white face and a polished blue-steel case. Paint the station a brighter, clearer green with a blue sky, and keep color in the shadows."
+  }
+ ],
+ "pattern": "The generated cards drift neutrals toward cream or beige: the real cards' white plastic, stone and grey metal become yellowish cream. They push wood and leather to one saturated orange, and add glowing electric-cyan accents. Their shadows are the same hue made darker, where real shadows shift toward a muted purple-brown or grey. On a few cards the palette goes the other way and the whole scene turns washed out."
+}

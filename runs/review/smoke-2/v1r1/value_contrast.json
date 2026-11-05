@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (cowboy pig): the whole card sits in one pale middle band. The fence, ground, pig body and rope all quantize to the same two light-mid greys. The only dark accents are small: hat brim, hooves and rope knots. The pig is barely separated from the fence by value and relies on hue (pink vs brown). rms 0.125 is below the real range. B (train pig): clear big groups. The dark red and green train mass fills the left and bottom, the bright sky and steam block sits top right, and the pig's face is a light shape framed by the dark window, so it reads by value.",
+   "fix": "Push the background fence and ground a full step darker than the pig, and add a deeper shadow pool under the pig's feet. Let the hat and the shorts' shadow side go clearly dark so the pig's pale body stands out as the lightest big shape."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (scout jacket): dark green corners with a jagged, lighter mid-grey halo hugging the jacket outline. This is the same tight glow ring the generated gloves have in the lessons. Inside the jacket, near-white cream panels sit hard against a near-black sash and black cuff openings, so local contrast is very hard. Vignette 0.134 is above the real range. A (cowboy hat): a broad light background with mid-grey rays reaching the corners, like the real camera's ray pattern. The hat is a single middle-dark mass, gently shaded from a lit crown to a shadowed brim underside.",
+   "fix": "Remove the bright glow ring around the jacket. Let the green rays run evenly from centre to corners without darkening the corners. Shade the jacket cream into a soft mid tone on its shadow side, and lift the sash from black to a deep green so it does not punch so hard against the cream."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (water bottles): a near-black tent opening sits directly behind the bottles, and the bright table fills the bottom half, so the card splits hard into black top centre and white bottom. rms 0.192 is above the real range, and the vignette is negative because the centre is darker than the edges. The bottle labels are dark bands on near-white bodies. A (beach umbrella): a quiet, even mid background with faint rings. The umbrella reads as a light yellow top against darker red underside panels. It is low contrast (0.086) but within range.",
+   "fix": "Fill the tent opening behind the bottles with a mid-dark green instead of black. Keep the table a warm mid-light wood tone rather than nearly white, so the bottles become the lightest, clearest shapes in the centre."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (boxing gloves): the background stripes go from mid on the left to deep dark at top right, while the table bottom left is bright. Corners are lighter than the centre (vignette -0.103, well outside real). The gloves are a middle-dark mass with small hard white hot spots and a black contact shadow, so the hero is separated mostly by hue (red on blue) rather than by value. B (saddle): even alternating light and mid stripes across the whole card, and the saddle as one darker leather shape with a clear value gap (-0.235). This matches the real stripe-background cards.",
+   "fix": "Keep the blue wall stripes at an even middle value from corner to corner, without the dark top-right side. Lighten the gloves' lit side to a bright red with a soft roll-off into shadow instead of small white hot spots, and soften the black shadow under them to a mid-dark tone."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (station clock): the clock face is a large nearly clipped white disc with black ticks and hands, framed by a dark roof band at the top and a dark pillar at the right. This is the hardest local contrast in the set (rms 0.205, above the real range), and its strong dark-frame vignette (0.101) sits at the top of the range. A (rowboat): light dock and boat against mid water, with moderate dark accents only under the dock and in the ripples. The groups are gentle and in range.",
+   "fix": "Tint the clock face a soft cream that sits one step below pure white, and draw the hands and ticks in dark grey-brown instead of black. Lighten the station roof and pillars to a mid green so the frame does not go near-black around the clock."
+  }
+ ],
+ "pattern": "Generated cards organize value around the hero rather than across the card. They wrap a tight light halo or glow ring around the silhouette, then let the corners drop dark or go uneven. Inside the hero they set near-white panels hard against near-black accents (sashes, shadows, clock ticks) with little roll-off. Real cards keep the background's value pattern (rays, stripes) evenly spread out to the corners. They separate the hero with a single broad value step and shade it with softer, wider gradations."
+}

@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the cowboy hat is smooth felt with no surface marks, the twisted rope is drawn at a moderate scale, and the skin has a soft satin sheen with a small blush highlight. B: the straw hat shows a fine woven texture, the skin has the same satin sheen, and the train's red and green paint is semi-gloss with soft highlights. Both cards mix matte and shiny surfaces in a similar way, and every measured value is inside the real range. Nothing about the surfaces separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the hat reads as soft matte felt. Its surface is smooth and even, with a slightly brighter satin band and no seams or stitching, which matches how the real glove and computer cards smooth detail away. B: the jacket has many small, sharp details: pocket flap seams, piping, snap buttons, and four glossy badges with raised icons on the sash. This is the same added micro-detail the generated gloves and cameras show in the lessons. Its gloss share (0.118) and detail (0.0459) sit at the top of the real range.",
+   "fix": "Soft, smooth matte canvas jacket with only the main pocket shapes. No piping or seam lines, and no small snaps. Badges are simple soft discs with a gentle sheen, not shiny enamel."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the umbrella panels are smooth, soft matte fabric, and the pole is a plain satin tube. There are almost no surface marks, which is as clean as the real cards and even below the real range on gloss and detail. B: the bottles have scattered small bubble dots, sharp streaked highlights and a crisp label. The tabletop has busy wood grain, and the tent fabric is painterly. This added small-scale detail is the pattern the lessons show on generated cards.",
+   "fix": "Clear plastic bottles with one soft broad highlight each and no scattered droplet dots. Plain smooth wooden tabletop with very faint grain."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the boxing gloves are smooth, satin red leather. The only marks are a few soft crease lines at the thumb, with one broad highlight, and the table grain is faint. This is like the real glove lesson card. B: the saddle has dashed contrast stitching along every edge of the seat and skirt, darker strap leather, crisp metal buckles and shiny stirrups. That is the same thin dashed stitch line that gives away the generated baseball gloves in lessons 4 and 7.",
+   "fix": "Smooth soft brown leather saddle with rounded edges and no dashed stitch lines. Straps blend gently into the seat. Stirrups are a soft satin grey rather than shiny chrome."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the boat and dock show painted plank lines and a twisted rope, with flat satin wood and soft water ripples. The marks are moderate in scale and in range. B: the clock face has a fine ring of minute dots, a glossy bezel with sharp streak highlights, and slight grainy noise on the cream face and the brick wall behind it. Its micro_texture (0.0311) is at the top edge of the real range. Neither card has the smooth rendered finish of the anchor set, so this is a weak call.",
+   "fix": "Smooth clean clock face with no grain or speckle. A soft satin metal rim with one gentle highlight. Plain wall without fine brick texture."
+  }
+ ],
+ "pattern": "Generated cards add fine detail that the real cards smooth away: dashed stitch lines along leather edges, small seams, piping and snaps, scattered droplet dots and busy wood grain. They also put sharp streaked highlights on materials that real cards render as soft, broad satin. Real cards keep surfaces smooth and slightly soft, and limit marks to a few big creases or plank lines."
+}
