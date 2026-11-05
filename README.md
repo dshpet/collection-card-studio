@@ -24,7 +24,7 @@ Findings on the references: [SYNTHESIS](analysis/SYNTHESIS.md). What was wrong w
 | Edit | Codex applies the notes. An edit stays only if it beats its draft, and every outcome is saved for later runs |
 | Deliver | `runs/<slug>/variant_N/`, a sheet per variant and `report.md` |
 
-Rerunning continues where it stopped; `--run <name>` starts a theme fresh in a new folder. `--candidates 1 --review-rounds 0` gives a quick draft. `--cast 1` adds one character card per variant, drawn with the game's cast. To place a variant in the game's window: `scripts/screen.py western --variant 1 --color blue`.
+Rerunning continues where it stopped; `--run <name>` starts a theme fresh in a new folder. `--plan <file>` draws a plan a producer has checked or edited first, such as the drafts in `runs/plans/`. `--candidates 1 --review-rounds 0` gives a quick draft. `--cast 1` adds one character card per variant, drawn with the game's cast. To place a variant in the game's window: `scripts/screen.py western --variant 1 --color blue`.
 
 ## Teach it
 
