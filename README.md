@@ -14,7 +14,7 @@ Findings on the references: [SYNTHESIS](analysis/SYNTHESIS.md). What was wrong w
 
 | Stage | What happens |
 |---|---|
-| Plan | Opus plans the variants by rules taken from the real sets and by the producer's [lessons](analysis/lessons.md). A second call flags cards that could upset players |
+| Plan | Claude Sonnet plans the variants by rules taken from the real sets and by the producer's [lessons](analysis/lessons.md). A second call flags cards that could upset players |
 | References | Each card gets three real cards: the same art category, backdrop pattern and object class, and among equals the most likely same kind of object, by text search over the card images (`search.py`) |
 | Model | For built objects of several parts, Opus writes a Blender model, looks at its render and fixes it, up to two rounds. Simple forms skip this |
 | Draw | Codex draws three candidates per card, restyling the model's render where there is one |
