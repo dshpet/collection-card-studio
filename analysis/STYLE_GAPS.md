@@ -111,6 +111,15 @@ A lone 1-10 score failed, so `scripts/prefer.py` asks a different question: of t
 
 **Changes, 2026-11-05.** The construction and perspective checkers are removed from the pipeline: no candidate is passed over and no edit note is written on their word. A Blender model is now optional per card, and the planner decides with one rule: built objects of several rigid parts get a model, simple and organic forms do not. On the 30 final cards it chose a model for 18. Against the user's ratings it matched 16 of the 22 cards where one side won. It modelled candelabra, crystal ball, coffin and wagon, where the old draw won, and skipped badge and lasso, where the model won. The rule was not tuned on these cards.
 
+## Parameter loop, 2026-11-05
+
+The production pattern: split the style into parameters, measure each on the output, give concrete feedback, then measure again. `scripts/param.py` reads 69 parameters on the forty twins, each against its own real card. 55 come from pixels and 14 from Opus readings asked twice with sides swapped. Opus says only which card has more of a parameter, never which is right, so its taste cannot invert the result.
+
+- **What the final style gets wrong.** It is lighter: 29 of 40 twins, p 0.0002, mostly the background (31 of 40). It has shallower darks on the object (27 of 40) and lower contrast (28 of 40). Backgrounds are more saturated (30 of 40) and less detailed (29 of 40). By eye the objects have more small details (24 to 11) and are more inflated (22 to 10).
+- **What it does not get wrong.** Gloss, highlight size and tint, bevels and surface texture, by pixels and by eye. The user's "glossy" is not in any of these readings.
+- **No parameter separates the twins the user caught from those that fooled them** (24 against 16). Caught twins leaned lighter, with shallower darks.
+- **One change.** "turns the form smoothly into shade" became "into deep, colorful shade, so the shaded side is clearly darker than the lit side", drawn as `twins40/p1`. The object's 5th-percentile lightness went from +0.024 above its real card to 0.000, and the shallow darks dropped out of the deviation list. The deepest 1% now overshoots (-0.015). Per twin the redraw came closer only 17 to 23 times in 40, because draw-to-draw variation is as large as the shift. One side effect: shadows went greyer. Shadow chroma kept fell from -0.025 to -0.067 below real, now lower in 28 of 40, though the line said "colorful". The background stayed light, as it was not targeted.
+
 The first run looked off to a human, yet every automatic check passed it. This file records what was wrong, why the checks missed it, and what fixed it.
 
 ## How the gap was measured

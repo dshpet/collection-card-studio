@@ -67,7 +67,7 @@ def dataset():
 
     for item in items():
         rating = ratings.get(item["id"])
-        if not rating or item["kind"] == "closest":
+        if not rating or item["kind"] not in ("twin", *GRADED):
             continue
         reals = {p.split("/")[-1][:-4] for p in item["images"] if p.startswith("materials/")}
         used_real |= reals

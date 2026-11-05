@@ -7,6 +7,8 @@ Trial: each drawing of scripts/trial.py beside its real card, arm hidden: does i
 Redraw: each final card, as chosen before and as redrawn from a blockout, mixed and unlabelled, beside its
 reference cards: does it work as built, and a grade 1-5.
 Soft: the cards of scripts/trial2.py, each arm and the old card mixed and unlabelled, rated as in Redraw.
+Param: a real card with its final-style twin and the twin redrawn with one changed style line (scripts/param.py),
+shuffled. Pick the closer one, or same.
 
     rate_ui.py              then open http://127.0.0.1:8765
     rate_ui.py --summary    what the ratings say so far
@@ -27,6 +29,8 @@ from common import ROOT, best_try, load_json, save_json
 RATINGS = ROOT / "runs" / "ratings.json"
 SETS = ("western", "sci-fi", "horror")
 SERVED = ("materials/card_examples/", "runs/")
+CLOSEST_STYLES = ("final", "old", "r3", "r9")
+PARAM = "p1"  # the scripts/param.py variant under test
 LOCK = threading.Lock()
 
 
@@ -43,9 +47,8 @@ def items():
     rng.shuffle(twins)
     closest = []
     for brief in load_json(ROOT / "runs" / "twins40" / "briefs.json"):
-        drawn = [(folder.name, f"runs/twins40/{folder.name}/tries/{brief['id']}_1.png")
-                 for folder in sorted((ROOT / "runs" / "twins40").iterdir())
-                 if (folder / "tries" / f"{brief['id']}_1.png").exists()]
+        drawn = [(style, f"runs/twins40/{style}/tries/{brief['id']}_1.png") for style in sorted(CLOSEST_STYLES)
+                 if (ROOT / "runs" / "twins40" / style / "tries" / f"{brief['id']}_1.png").exists()]
         rng.shuffle(drawn)
         closest.append({"id": f"closest/{brief['id']}", "kind": "closest", "name": brief["card"]["name"],
                         "images": [f"materials/card_examples/{brief['real']}.png"] + [path for _, path in drawn],
@@ -96,7 +99,16 @@ def items():
                 soft.append({"id": f"soft/{name}/{run}/{card_id}", "kind": "soft", "name": brief["card"]["name"],
                              "images": [image] + references})
     rng.shuffle(soft)
-    return twins + closest + cards + trial + redraw + soft
+    param = []
+    for brief in load_json(ROOT / "runs" / "twins40" / "briefs.json"):
+        drawn = [(style, f"runs/twins40/{style}/tries/{brief['id']}_1.png") for style in ("final", PARAM)]
+        if all((ROOT / path).exists() for _, path in drawn):
+            rng.shuffle(drawn)
+            param.append({"id": f"param/{PARAM}/{brief['id']}", "kind": "param", "name": brief["card"]["name"],
+                          "images": [f"materials/card_examples/{brief['real']}.png"] + [path for _, path in drawn],
+                          "styles": [style for style, _ in drawn]})
+    rng.shuffle(param)
+    return twins + closest + cards + trial + redraw + soft + param
 
 
 def ratings():
@@ -186,13 +198,13 @@ img { display: block; max-width: 100%; border-radius: 10px; }
 textarea { display: block; width: 100%; max-width: 876px; height: 56px; margin: 0 auto; box-sizing: border-box; }
 #result { text-align: center; min-height: 22px; font-weight: 600; }
 </style></head><body>
-<header><b>Card ratings</b><button id="tab-twin">Twins</button><button id="tab-closest">Closest</button><button id="tab-card">Cards</button><button id="tab-trial">Trial</button><button id="tab-redraw">Redraw</button><button id="tab-soft">Soft</button>
+<header><b>Card ratings</b><button id="tab-twin">Twins</button><button id="tab-closest">Closest</button><button id="tab-card">Cards</button><button id="tab-trial">Trial</button><button id="tab-redraw">Redraw</button><button id="tab-soft">Soft</button><button id="tab-param">Param</button>
 <span id="progress"></span><label style="margin-left:auto">Rater <input id="rater" size="10"></label></header>
 <main id="main"></main>
 <script>
 let items = [], ratings = {}, mode = "twin";
-const position = { twin: 0, closest: 0, card: 0, trial: 0, redraw: 0, soft: 0 };
-const kinds = ["twin", "closest", "card", "trial", "redraw", "soft"];
+const position = { twin: 0, closest: 0, card: 0, trial: 0, redraw: 0, soft: 0, param: 0 };
+const kinds = ["twin", "closest", "card", "trial", "redraw", "soft", "param"];
 const works = [["yes", "Y · Works"], ["slight", "S · Slightly off"], ["no", "X · Broken"]];
 const rater = document.getElementById("rater");
 try { rater.value = localStorage.getItem("rater") || "me"; } catch (e) { rater.value = "me"; }
@@ -220,18 +232,19 @@ function show() {
   const item = current(), entry = ratings[key(item)];
   for (const kind of kinds) document.getElementById("tab-" + kind).className = kind === mode ? "on" : "";
   const counts = kind => list(kind).filter(i => ratings[key(i)]).length + "/" + list(kind).length;
-  document.getElementById("progress").textContent = "Twins " + counts("twin") + " · Closest " + counts("closest") + " · Cards " + counts("card") + " · Trial " + counts("trial") + " · Redraw " + counts("redraw") + " · Soft " + counts("soft");
+  document.getElementById("progress").textContent = "Twins " + counts("twin") + " · Closest " + counts("closest") + " · Cards " + counts("card") + " · Trial " + counts("trial") + " · Redraw " + counts("redraw") + " · Soft " + counts("soft") + " · Param " + counts("param");
   let html;
   if (mode === "twin") {
     html = `<p class="hint">One card is real, one was generated from a text brief. Which one is generated? Keys: A, B, N for can't tell, arrows to move.</p>
       <div class="cards">${item.images.map((src, i) => `<figure class="big"><img src="/${src}"><figcaption>${"AB"[i]}</figcaption></figure>`).join("")}</div>
       <div class="row">${["A", "B", "neither"].map(a => `<button data-answer="${a}" class="${entry && entry.answer === a ? "on" : ""}">${a === "neither" ? "Can't tell" : a + " is generated"}</button>`).join("")}</div>`;
-  } else if (mode === "closest") {
+  } else if (mode === "closest" || mode === "param") {
     const [real, ...drawn] = item.images;
-    html = `<p class="hint">The outlined card is real. Which redraw is closest to it in look? Keys: 1 to ${drawn.length}, arrows to move.</p>
+    const same = mode === "param" ? `<button data-same="1" class="${entry && entry.style === "same" ? "on" : ""}">Same</button>` : "";
+    html = `<p class="hint">The outlined card is real. Which redraw is closest to it in look? Keys: 1 to ${drawn.length}${mode === "param" ? ", N for same" : ""}, arrows to move.</p>
       <div class="cards same"><figure><img src="/${real}"><figcaption>real · ${item.name}</figcaption></figure>
       ${drawn.map((src, i) => `<figure><img src="/${src}"><figcaption>${i + 1}</figcaption></figure>`).join("")}</div>
-      <div class="row">${drawn.map((_, i) => `<button data-pick="${i}" class="${entry && entry.style === item.styles[i] ? "on" : ""}">${i + 1} is closest</button>`).join("")}</div>`;
+      <div class="row">${drawn.map((_, i) => `<button data-pick="${i}" class="${entry && entry.style === item.styles[i] ? "on" : ""}">${i + 1} is closest</button>`).join("")}${same}</div>`;
   } else if (mode === "trial") {
     html = `<p class="hint">The outlined card is real. Does the generated object work as built, and could the card sit beside the real one? Keys: Y, S, X and 1 to 5, arrows to move.</p>
       <div class="cards trial">${item.images.map((src, i) => `<figure class="big"><img src="/${src}"><figcaption>${i ? "generated" : "real · " + item.name}</figcaption></figure>`).join("")}</div>
@@ -258,6 +271,7 @@ function show() {
   document.querySelectorAll("[data-answer]").forEach(b => b.onclick = () => save({ answer: b.dataset.answer, correct: b.dataset.answer === item.generated }));
   document.querySelectorAll("[data-grade]").forEach(b => b.onclick = () => save({ grade: Number(b.dataset.grade) }));
   document.querySelectorAll("[data-pick]").forEach(b => b.onclick = () => save({ style: item.styles[Number(b.dataset.pick)] }));
+  document.querySelectorAll("[data-same]").forEach(b => b.onclick = () => save({ style: "same" }));
   document.querySelectorAll("[data-works]").forEach(b => b.onclick = () => save({ works: b.dataset.works }));
   document.getElementById("comment").onchange = () => { if (ratings[key(item)]) save({}); };
   document.getElementById("back").onclick = () => move(-1);
@@ -274,13 +288,14 @@ document.onkeydown = event => {
     save({ answer, correct: answer === item.generated });
   } else if (["card", "trial", "redraw", "soft"].includes(mode) && "12345".includes(press) && press) save({ grade: Number(press) });
   else if (["trial", "redraw", "soft"].includes(mode) && "ysx".includes(press) && press) save({ works: { y: "yes", s: "slight", x: "no" }[press] });
-  else if (mode === "closest" && Number(press) >= 1 && Number(press) <= item.styles.length) save({ style: item.styles[Number(press) - 1] });
+  else if (mode === "param" && press === "n") save({ style: "same" });
+  else if ((mode === "closest" || mode === "param") && Number(press) >= 1 && Number(press) <= item.styles.length) save({ style: item.styles[Number(press) - 1] });
 };
 for (const kind of kinds) document.getElementById("tab-" + kind).onclick = () => { mode = kind; show(); };
 fetch("/data").then(r => r.json()).then(data => {
   items = data.items; ratings = data.ratings;
   for (const kind of kinds) position[kind] = Math.max(0, list(kind).findIndex(i => !ratings[key(i)]));
-  mode = list("soft").some(i => !ratings[key(i)]) ? "soft" : list("redraw").length ? "redraw" : mode;
+  mode = list("param").some(i => !ratings[key(i)]) ? "param" : list("soft").some(i => !ratings[key(i)]) ? "soft" : list("redraw").length ? "redraw" : mode;
   show();
 });
 </script></body></html>"""
