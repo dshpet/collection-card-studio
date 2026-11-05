@@ -1,0 +1,390 @@
+{
+ "title": "Western",
+ "story": "Saddle up for a sunny trip through the Wild West.",
+ "variants": [
+  {
+   "cards": [
+    {
+     "name": "Cowboy Hat",
+     "subject": "A tan cowboy hat with a wide curled brim and a tall creased crown.",
+     "object_class": "clothing",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "tan brown with a small red band",
+     "backdrop_colors": "sky blue and cyan",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Sheriff Star",
+     "subject": "A silver five-pointed star badge with a small ball on each point and a round center.",
+     "object_class": "accessory",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "silver with gold ball tips",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Cowboy Boots",
+     "subject": "A pair of brown leather cowboy boots with pointed toes, tall shafts and low heels.",
+     "object_class": "clothing",
+     "category": "1",
+     "pattern": "stripes",
+     "hero_colors": "brown leather with a small yellow stitched pattern",
+     "backdrop_colors": "bright yellow and orange",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Saddle",
+     "subject": "A brown leather horse saddle with a high front horn, a curved seat and two stirrups hanging on straps.",
+     "object_class": "other",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "brown leather with small silver stirrups",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "wooden fence rail ledge",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Lasso",
+     "subject": "A coiled rope lasso with a loop at one end.",
+     "object_class": "tool",
+     "category": "3",
+     "pattern": "diamonds",
+     "hero_colors": "golden tan rope with a small red tie",
+     "backdrop_colors": "grass green",
+     "surface_or_setting": "weathered wooden planks",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Coffee Pot",
+     "subject": "A dented blue enamel camp coffee pot with a curved handle, a spout and a lid.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "waves",
+     "hero_colors": "deep blue with a black handle and a small white speckle",
+     "backdrop_colors": "warm orange",
+     "surface_or_setting": "weathered wooden planks",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Cactus",
+     "subject": "A green saguaro cactus with a tall trunk and two upward arms.",
+     "object_class": "plant_nature",
+     "category": "3",
+     "pattern": "rays",
+     "hero_colors": "green with a small pink flower on top",
+     "backdrop_colors": "lilac purple",
+     "surface_or_setting": "desert sand",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Water Tower",
+     "subject": "A wooden water tower with a round barrel tank, a cone roof and four tall crossed-brace legs.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "warm brown wood with dark grey hoops and a small red roof",
+     "backdrop_colors": "clear bright sky blue",
+     "surface_or_setting": "dusty desert railroad stop",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Covered Wagon",
+     "subject": "A wooden wagon with four spoked wheels and a white arched canvas cover.",
+     "object_class": "vehicle",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "brown wood and white canvas with a small red wagon tongue",
+     "backdrop_colors": "bright sky blue",
+     "surface_or_setting": "sunny desert trail",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Piano Duet",
+     "subject": "The man in a cowboy hat plays an upright piano while the cow in a cowboy hat sits beside him and nibbles his hat.",
+     "object_class": "character",
+     "category": "5",
+     "pattern": "full_scene",
+     "hero_colors": "brown piano, tan hats, and a small red bow on the cow",
+     "backdrop_colors": "bright yellow wall",
+     "surface_or_setting": "wooden plank floor",
+     "build_model": false,
+     "cast": [
+      "man",
+      "cow"
+     ]
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Spurs",
+     "subject": "A silver cowboy spur with a curved heel band, a short neck and a round star-shaped wheel.",
+     "object_class": "accessory",
+     "category": "1",
+     "pattern": "stripes",
+     "hero_colors": "silver with a small brown leather strap",
+     "backdrop_colors": "turquoise",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Horseshoe",
+     "subject": "A curved iron horseshoe with seven nail holes and open ends.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "dark grey iron with a small bright gold shine",
+     "backdrop_colors": "bright orange",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Horse",
+     "subject": "A brown horse standing sideways with a dark mane, a long tail and four slim legs.",
+     "object_class": "animal",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "chestnut brown with a white blaze on the face",
+     "backdrop_colors": "sunny yellow",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Barrel",
+     "subject": "A round wooden barrel with a bulging belly and three metal hoops.",
+     "object_class": "container",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "warm brown wood with dark grey hoops and a small red stripe",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "wooden porch ledge",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Wagon Wheel",
+     "subject": "A big wooden wagon wheel with a center hub, twelve spokes and an iron rim.",
+     "object_class": "vehicle",
+     "category": "3",
+     "pattern": "diamonds",
+     "hero_colors": "brown wood with a dark grey rim and a small yellow painted hub",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "desert sand",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Harmonica",
+     "subject": "A small silver harmonica with a row of square holes and rounded ends.",
+     "object_class": "music_instrument",
+     "category": "3",
+     "pattern": "waves",
+     "hero_colors": "silver with a small blue end cap",
+     "backdrop_colors": "grass green",
+     "surface_or_setting": "wooden porch planks",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Stagecoach",
+     "subject": "A red stagecoach with a box cabin, two small windows, a luggage rail on top and four wheels.",
+     "object_class": "vehicle",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "red cabin with yellow wheels and a small brown seat",
+     "backdrop_colors": "bright sky blue",
+     "surface_or_setting": "dusty road with desert hills",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Steam Train",
+     "subject": "A black steam locomotive with a tall funnel, a round front boiler, a cow catcher and red wheels.",
+     "object_class": "vehicle",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "black body with red wheels and a small gold bell",
+     "backdrop_colors": "bright cyan sky",
+     "surface_or_setting": "railroad track across desert",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Windmill",
+     "subject": "A tall wooden windmill tower with a round wheel of many blades and a tail fin.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "silver blades on a brown tower with a small red tail fin",
+     "backdrop_colors": "clear bright blue sky",
+     "surface_or_setting": "dry grassy prairie",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Barrel Rodeo",
+     "subject": "The pig in a cowboy hat tries to ride a barrel like a bucking horse while the rooster in a bandana watches and cheers.",
+     "object_class": "character",
+     "category": "5",
+     "pattern": "full_scene",
+     "hero_colors": "pink pig, orange rooster, brown barrel and a small red bandana",
+     "backdrop_colors": "bright purple sky",
+     "surface_or_setting": "dusty corral",
+     "build_model": false,
+     "cast": [
+      "pig",
+      "rooster"
+     ]
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Cactus Pot",
+     "subject": "A round barrel cactus with ridged sides in a small clay pot.",
+     "object_class": "plant_nature",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "green cactus with an orange clay pot and a small yellow flower",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Tumbleweed",
+     "subject": "A round ball of tangled dry twigs.",
+     "object_class": "plant_nature",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "light tan twigs with a few small green leaves",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Banjo",
+     "subject": "A banjo with a round white drum body, a long neck, a headstock with four tuning pegs and strings.",
+     "object_class": "music_instrument",
+     "category": "1",
+     "pattern": "stripes",
+     "hero_colors": "white drum head, brown wood neck, small red strap",
+     "backdrop_colors": "turquoise",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Campfire",
+     "subject": "A small campfire with crossed logs, orange flames and a ring of stones.",
+     "object_class": "other",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "brown logs, orange and yellow flames, grey stones with a small red ember",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "flat red rock ledge",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Gold Pan",
+     "subject": "A shallow round metal gold panning dish with a pile of gold nuggets in the center.",
+     "object_class": "tool",
+     "category": "3",
+     "pattern": "diamonds",
+     "hero_colors": "grey metal with shiny gold nuggets and a small brown rim stain",
+     "backdrop_colors": "grass green",
+     "surface_or_setting": "desert sand",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Bandana",
+     "subject": "A red triangular neck scarf folded in a loose knot.",
+     "object_class": "clothing",
+     "category": "3",
+     "pattern": "repeated_motif",
+     "hero_colors": "red with small white dots and a blue edge",
+     "backdrop_colors": "bright yellow",
+     "surface_or_setting": "red rock",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Canteen",
+     "subject": "A round flat metal canteen with a screw cap and a short strap.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "waves",
+     "hero_colors": "silver grey metal with a tan cloth cover and a small blue cap",
+     "backdrop_colors": "warm orange",
+     "surface_or_setting": "red rock",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Desert Mesa",
+     "subject": "Tall flat-topped red rock mesas with layered stripes and a few round cacti at the base.",
+     "object_class": "plant_nature",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "red and orange rock with small green cacti",
+     "backdrop_colors": "bright clear sky blue",
+     "surface_or_setting": "sandy desert valley",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Mine Cart",
+     "subject": "A rusty mine cart with four small wheels sitting on a rail track, filled with gold nuggets.",
+     "object_class": "vehicle",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "brown cart, grey wheels, gold nuggets and a small blue handle",
+     "backdrop_colors": "bright cyan",
+     "surface_or_setting": "wooden mine tunnel entrance",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Sheriff Sheep",
+     "subject": "The sheep wearing a star badge and a cowboy hat tips the hat to the man, who has his own hat stuck on a cactus.",
+     "object_class": "character",
+     "category": "5",
+     "pattern": "full_scene",
+     "hero_colors": "white fleece, dark grey face, silver star, tan hats and a green cactus",
+     "backdrop_colors": "bright lilac sky",
+     "surface_or_setting": "desert sand",
+     "build_model": false,
+     "cast": [
+      "sheep",
+      "man"
+     ]
+    }
+   ]
+  }
+ ],
+ "problems": [],
+ "sensitive": [],
+ "cast": 1
+}

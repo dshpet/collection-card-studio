@@ -204,7 +204,7 @@ Western and Sci-Fi went through the current pipeline into `runs/western-2` and `
 - **Literal counts.** "A covered wagon with two large spoked wheels" became a two-wheeled cart. The planner and the modeller now count parts as the whole real object has them.
 - **The three-up pick followed screen position.** The director picked the second slot for ten of ten cards, always as "the largest", while subject areas differed by under 2 points. Shuffling only changed which candidate sat there. Picks are now pairwise, both orders, the framing that agreed with the user. The result is honest: candidates of one card are nearly identical, and most picks are close (8 of 10 and 6 of 10 unsure).
 - **Edits mostly made cards worse.** Judged pairwise against the drawing they replaced, Western's edits lost 7 of 10, each 2-0 in both orders. Sci-Fi kept 3 of 5 in round 1 and 0 of 5 in round 2. An edit now stays only if it beats its draft.
-- **Invented extras survive "draw only what the subject names".** Every sheriff star had a red jewel, which the user rejected before. It was removed by hand, which counts against autonomy. The planner now writes "plain" for parts an image model likes to decorate, a lesson in `analysis/lessons.md`.
+- **Invented extras survive "draw only what the subject names".** Every sheriff star had a red jewel, which the user rejected before. It was removed by hand, which counts against autonomy. The cause was the colors line, fixed by a lesson the same night (below).
 - **Characters slip in.** Sci-Fi planned a "friendly robot" and an "Alien Pet" with a face and a smile. The rule allows one animal as an object, and an alien counted as one. The movie-style reference sets have no characters.
 
 ## Reference search, 2026-11-05 night
@@ -232,9 +232,10 @@ The reference collection has one cast, cut out by `scripts/cast.py`: the man, th
 - **Direct is best for the director, and by eye on par with figure.** The figure arm keeps an asked outfit better (the green hoodie), and direct composes more freely. Direct takes one step instead of three.
 - **So character cards are drawn directly.** `make_set.py --cast N` plans N character cards per variant with the cast's cutouts attached. The default is 0, since the movie brief asks for no gold cards, though Music Fest shows that character cards without gold frames exist. Cards showing the cast stay out of git. The user has not yet rated these arms: the rating page has them, blind, under Cast.
 
-## Two smaller checks, 2026-11-05 night
+## Three smaller checks, 2026-11-05 night
 
 - **Five references instead of three.** Codex takes up to five images. The forty twins drawn with the same three references plus two more came out nearer the real card on 26 of 40 by CSD (p 0.24), and the director preferred them 21 to 17. A lean, not a clear gain, so cards keep three references.
+- **Invented extras come from the colors line.** The sheriff star's jewel was in its hero colors, "golden yellow with a small red gem in the center", put there to meet the rule of one accent hue. Writing "plain ... and no gem" in the subject left the jewel in 3 of 3 draws. Moving the red onto a part the subject names, the ring, removed it in 3 of 3 (`experiments/plain_check.py`). The planner's lesson now says the accent colors a named part and never adds one.
 - **One review round is enough.** Across every run so far, edits from a first review round were kept 6 of 11 times and from a second round 0 of 11. The second round costs nine specialist calls, the director, the edits and their judging per variant, so `make_set.py` now reviews once by default.
 
 ## Limits
