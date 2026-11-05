@@ -97,13 +97,13 @@ The first run looked off to a human, while every check passed it. Details are in
 
 ## 2026-11-04 to 05: Measuring against the user
 
-- Scored every rated card on one list with embeddings, a classifier, nine specialists and the art director (`scripts/score.py`). No score tracked the user's grades. Reviewers scored hidden real cards lowest, and whole-card embeddings measured content, not style.
+- Scored every rated card on one list with embeddings, a classifier, nine specialists and the art director (`experiments/score.py`). No score tracked the user's grades. Reviewers scored hidden real cards lowest, and whole-card embeddings measured content, not style.
 - Held content equal instead. CSD puts the final style nearer the real card than the old one in 29 of 40 twins, the only objective style measure that agrees with the user.
-- Asked which of two drawings of one object is closer, on 218 pairs the user had decided (`scripts/prefer.py`). Every reviewer beat chance. The director agreed 61% of the time and 76% when confident, so `choose()` now flags its unsure picks for a human.
-- Tuned the director's notes automatically on half the pairs (`scripts/tune.py`). Tuning agreement rose from 65 to 84 of 115, but held-out agreement did not move, so the notes were dropped.
+- Asked which of two drawings of one object is closer, on 218 pairs the user had decided (`experiments/prefer.py`). Every reviewer beat chance. The director agreed 61% of the time and 76% when confident, so `choose()` now flags its unsure picks for a human.
+- Tuned the director's notes automatically on half the pairs (`experiments/tune.py`). Tuning agreement rose from 65 to 84 of 115, but held-out agreement did not move, so the notes were dropped.
 - Asked the same of construction, on 93 pairs the user labelled works or broken. Every judge was at chance, confident or not. Construction is secured by the Blender model and a human look, not by a checker.
 - Removed the checkers. A Blender model is now optional per card: the planner models built, multi-part objects and draws simple forms from the brief. On the final cards that matches the user's ratings 16 of 22 times.
-- Tried the production loop of parameters, feedback and measurement (`scripts/param.py`). On the forty twins the final style is lighter, with shallower darks and lower contrast, while gloss and highlights match. One line on deeper shade moved the darks onto the real cards on average, but not card by card, and greyed the shadows. A second line restored shadow color but read as glossier. In a blind check the user preferred neither round to the final style (final 11, p2 9, p1 4, same 16). Their comments were about construction, which tone cannot fix.
+- Tried the production loop of parameters, feedback and measurement (`experiments/param.py`). On the forty twins the final style is lighter, with shallower darks and lower contrast, while gloss and highlights match. One line on deeper shade moved the darks onto the real cards on average, but not card by card, and greyed the shadows. A second line restored shadow color but read as glossier. In a blind check the user preferred neither round to the final style (final 11, p2 9, p1 4, same 16). Their comments were about construction, which tone cannot fix.
 
 ## 2026-11-05: Pipeline test run
 

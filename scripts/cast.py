@@ -1,6 +1,6 @@
 """The recurring cast of the reference cards, cut out as a library to reuse on new cards.
 
-The collection has one cast: a man with glasses and a mustache, a pig, a sheep, a cow and a rooster. They appear on 29
+The collection has one cast: a man with glasses and a mustache, a pig, a sheep, a cow and a rooster. They appear on 30
 of its 31 character cards, in many outfits and from many angles.
 
     cast.py find     SAM 3 cuts every cast member out of every reference card
@@ -208,17 +208,30 @@ def draw_figure(name, action, out):
                 transparent=True)
 
 
+def body_box(path, name, find):
+    """The character's own body inside a pre-drawn figure, without the props it holds, from SAM 3."""
+    figure = Image.open(path).convert("RGBA")
+    ground = Image.new("RGB", figure.size, GREY)
+    ground.paste(figure, (0, 0), figure)
+    found = find(ground, CAST[name])
+    if not found:
+        return None
+    ys, xs = np.nonzero(max(found, key=lambda f: f[1].sum())[1])
+    return [int(xs.min()), int(ys.min()), int(xs.max()) + 1, int(ys.max()) + 1]
+
+
 def paste(plate, figures, size=(430, 480)):
-    """Figures on a setting, at the real cards' layout. figures: (RGBA path, center across, height share)."""
+    """Figures on a setting. Each figure: path, center across, height share and bottom, all of the card, and the body
+    box inside the figure (body_box). The body, not the props it holds, is scaled to the height."""
     card = Image.open(plate).convert("RGB").resize(size, Image.LANCZOS)
-    for path, center, height in figures:
-        figure = Image.open(path).convert("RGBA")
-        figure = figure.crop(figure.getchannel("A").point(lambda a: 255 if a > 16 else 0).getbbox())
-        scale = min(height * size[1] / figure.height, LAYOUT["width"] * size[0] / figure.width)
-        figure = figure.resize((round(figure.width * scale), round(figure.height * scale)), Image.LANCZOS)
-        left = round(center * size[0] - figure.width / 2)
-        top = round(LAYOUT["bottom"] * size[1] - figure.height)
-        card.paste(figure, (left, top), figure)
+    for figure in figures:
+        image = Image.open(figure["path"]).convert("RGBA")
+        x0, y0, x1, y1 = figure.get("body") or image.getchannel("A").point(lambda a: 255 if a > 16 else 0).getbbox()
+        scale = figure["height"] * size[1] / (y1 - y0)
+        image = image.resize((round(image.width * scale), round(image.height * scale)), Image.LANCZOS)
+        left = round(figure["center"] * size[0] - (x0 + x1) / 2 * scale)
+        top = round(figure.get("bottom", LAYOUT["bottom"]) * size[1] - y1 * scale)
+        card.paste(image, (left, top), image)
     return card
 
 

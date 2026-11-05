@@ -1,9 +1,12 @@
 """Cast trial: can the game's own characters appear on new cards and stay themselves?
 
-Six character cards for the film genres, each drawn two ways, two draws per arm:
+Six character cards for the film genres, two draws per arm:
     direct   the card in one go, with real cutouts of the character as references
     paste    the character pre-generated alone in its outfit and pose (scripts/cast.py), the setting drawn empty, the
              character pasted in at the real cards' layout, then redrawn once with small corrections
+    paste2   the same figures and settings, the body (not its props) scaled to the real cards' size and cut by the
+             bottom edge, and the redraw allowed to adjust the pose where it touches the setting
+    figure   the card in one go, with the pre-generated figure as the character reference
 Identity is measured by cutting the character out of each result with SAM 3 and comparing it with the real cutouts
 in DINOv2, against the other cast members as a baseline.
 
@@ -23,7 +26,7 @@ from common import ANALYSIS, ROOT, load_json, save_json
 
 from PIL import Image
 
-from cast import BLEND, CAST, LIBRARY, PLATE, draw_figure, identity_references, paste
+from cast import BLEND, CAST, LIBRARY, PLATE, body_box, draw_figure, identity_references, on_grey, paste
 from draw import draw
 
 RUN = ROOT / "runs" / "cast_trial"
@@ -73,6 +76,16 @@ CARDS = [
      "interaction": "the flashlight lights the man's face from below and the rooster stands on the ground beside him."},
 ]
 DRAWS = 2
+BLEND2 = """The first images are real cards from the game. The last one is a draft of a new card: a character was pasted onto a drawn setting. Redraw the draft as one finished card that could sit beside the real cards unnoticed.
+Make the character belong in the setting: light and color from the setting's light, a soft contact shadow, clean edges, and {interaction} You may adjust the pose a little where the character touches the setting.
+Keep the character's face, body, proportions, colors and outfit, and keep it this large. Keep the setting and the camera."""
+FIGURE_DIRECT = """The first image shows {who} as approved for this card: its face, body, outfit and pose. The last images are real cards from the game. Draw one new card that could sit beside the real cards unnoticed: the same rendering, lighting, finish, color and level of detail. {same} stays exactly as approved.
+Subject: {subject}
+Setting: {setting}
+The characters are central and large. The setting is a real place, simple and calm: a few large soft shapes. Draw only what is named. No text, letters, numbers, frame, border or watermark."""
+# paste2: body height and bottom edge of the card, from analysis/cast.json (median one-character box 68% high, its
+# bottom cut by the card edge on 10 of 23 cards). Pairs keep their own sizes.
+PASTE2 = {"height": 0.74, "bottom": 1.03}
 
 
 def scene_references(card):
@@ -113,7 +126,7 @@ def pasted(card, n):
         if not figure.exists():
             figure.parent.mkdir(parents=True, exist_ok=True)
             draw_figure(name, part["action"], figure)
-        figures.append((figure, part["center"], part["height"]))
+        figures.append({"path": figure, "center": part["center"], "height": part["height"]})
     plate = RUN / "plates" / f"{card['id']}_{n}.png"
     if not plate.exists():
         draw(PLATE.format(setting=card["setting"]), scene_references(card), plate)
@@ -125,9 +138,63 @@ def pasted(card, n):
     saved(out)
 
 
-def draw_all(workers):
+def pasted2(card, n, bodies):
+    out = RUN / "full" / f"{card['id']}_paste2_{n}.png"
+    if out.exists():
+        return
+    figures = []
+    for name, part in card["cast"].items():
+        path = LIBRARY / "drawn" / f"{card['id']}_{name}_{n}.png"
+        single = len(card["cast"]) == 1
+        figures.append({"path": path, "center": part["center"], "body": bodies[str(path)],
+                        "height": PASTE2["height"] if single else part["height"] * 0.95,
+                        "bottom": PASTE2["bottom"] if single or name == "man" else 0.97})
+    composite = RUN / "composites" / f"{card['id']}_paste2_{n}.png"
+    paste(RUN / "plates" / f"{card['id']}_{n}.png", figures).save(composite)
+    references = scene_references(card) + [identity_references(name, 1)[0] for name in card["cast"]]
+    draw(BLEND2.format(interaction=card["interaction"]), references[:4] + [composite], out)
+    saved(out)
+
+
+def figured(card, n):
+    out = RUN / "full" / f"{card['id']}_figure_{n}.png"
+    if out.exists():
+        return
+    grey = []
+    for name in card["cast"]:
+        path = RUN / "figures" / f"{card['id']}_{name}_{n}.png"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        on_grey(LIBRARY / "drawn" / f"{card['id']}_{name}_{n}.png").save(path)
+        grey.append(path)
+    who = " and ".join(f"the {name}" for name in card["cast"])
+    same = "The character" if len(card["cast"]) == 1 else "Each character"
+    draw(FIGURE_DIRECT.format(who=who, same=same, subject=card["subject"], setting=card["setting"]),
+         grey + scene_references(card), out)
+    saved(out)
+
+
+def draw_all(workers, arms):
     (RUN / "tries").mkdir(parents=True, exist_ok=True)
-    jobs = [(arm, card, n) for card in CARDS for n in range(1, DRAWS + 1) for arm in (direct, pasted)]
+    bodies = {}
+    if "paste2" in arms:
+        from cast import segmenter
+
+        find = segmenter()
+        for card in CARDS:
+            for name in card["cast"]:
+                for n in range(1, DRAWS + 1):
+                    path = LIBRARY / "drawn" / f"{card['id']}_{name}_{n}.png"
+                    if path.exists():
+                        bodies[str(path)] = body_box(path, name, find)
+        save_json(RUN / "bodies.json", bodies)
+
+    def paste2(card, n):
+        return pasted2(card, n, bodies)
+
+    functions = {"direct": direct, "paste": pasted, "paste2": paste2, "figure": figured}
+    jobs = [(functions[arm], card, n) for card in CARDS for n in range(1, DRAWS + 1) for arm in arms
+            if arm not in ("paste2", "figure") or all((LIBRARY / "drawn" / f"{card['id']}_{name}_{n}.png").exists()
+                                                       for name in card["cast"])]
 
     def one(job):
         arm, card, n = job
@@ -136,7 +203,8 @@ def draw_all(workers):
                 arm(card, n)
                 return
             except Exception as error:
-                print(card["id"], arm.__name__, n, attempt, type(error).__name__, str(error)[:160], flush=True)
+                print(card["id"], arm.__name__, n, attempt, type(error).__name__, str(error)[:160],
+                      flush=True)
 
     with ThreadPoolExecutor(workers) as pool:
         list(pool.map(one, jobs))
@@ -157,7 +225,7 @@ def measure():
         for path in sorted((RUN / "tries").glob(f"{card['id']}_*.png")) + sorted(
                 (LIBRARY / "drawn").glob(f"{card['id']}_*.png")):
             image = Image.open(path).convert("RGB")
-            arm = "figure" if path.parent.name == "drawn" else path.stem.split("_")[-2]
+            arm = "drawn" if path.parent.name == "drawn" else path.stem.split("_")[-2]
             for name in card["cast"]:
                 if path.parent.name == "drawn" and f"_{name}_" not in path.name:
                     continue
@@ -204,7 +272,7 @@ def measure():
                      "best_other": round(other, 3), "margin": round(own - other, 3)})
     save_json(RUN / "identity.json", {"real_margin_median": round(float(np.median(baseline)), 3), "rows": rows})
     print("real cutouts, own minus best other, median:", round(float(np.median(baseline)), 3))
-    for arm in ("figure", "direct", "paste"):
+    for arm in ("drawn", "direct", "paste", "paste2", "figure"):
         mine = [r for r in rows if r["arm"] == arm]
         found = [r for r in mine if r["found"]]
         if found:
@@ -217,9 +285,10 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("mode", choices=("draw", "measure"))
     parser.add_argument("--workers", type=int, default=4)
+    parser.add_argument("--arms", nargs="+", default=["direct", "paste", "paste2", "figure"])
     args = parser.parse_args()
     if args.mode == "draw":
-        draw_all(args.workers)
+        draw_all(args.workers, args.arms)
     else:
         measure()
 

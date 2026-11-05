@@ -2,9 +2,9 @@
 
 Turn a theme and free-form producer wishes into 3–5 complete ten-card sets that could sit next to the [reference collection](materials/02_collection_explanation.md). Full brief: [task](materials/01_task_description.md), [art guide](materials/03_art_guide.md), [Miro board](https://miro.com/app/board/uXjVEUZR5u0=/).
 
-**Status:** the pipeline runs end to end. The three final film-genre sets are in `runs/final/`, and every variant is in `runs/western`, `runs/sci-fi` and `runs/horror`.
+**Status:** the pipeline runs end to end. The final film-genre sets are still to be drawn with the current pipeline. Earlier sets are in `runs/final/` and every run is listed in [runs/README.md](runs/README.md).
 
-Findings: [analysis/SYNTHESIS.md](analysis/SYNTHESIS.md). Style mismatches and fixes: [analysis/STYLE_GAPS.md](analysis/STYLE_GAPS.md). Our sets against the references: [analysis/COMPARISON.md](analysis/COMPARISON.md). Dashboard: open `analysis/report.html`, which reads images from `materials/` and `runs/`.
+Findings on the references: [SYNTHESIS](analysis/SYNTHESIS.md). What was wrong with our cards and what fixed it: [STYLE_GAPS](analysis/STYLE_GAPS.md). Our sets against the references: [COMPARISON](analysis/COMPARISON.md). How it got here: [PROCESS](PROCESS.md).
 
 ## Make a set
 
@@ -12,15 +12,33 @@ Findings: [analysis/SYNTHESIS.md](analysis/SYNTHESIS.md). Style mismatches and f
 .venv/bin/python -B scripts/make_set.py "Western" --wishes "A set for a Movie collection" --variants 3
 ```
 
-It plans the set, picks reference cards, models each object in Blender and draws three candidates per card from the model. It checks each one against the reference analysis, chooses the best by eye and lists the picks it is unsure of, reviews the variant with nine specialists and an art director, and edits what they flag. Results land in `runs/<slug>/`: the cards in `variant_N/`, a sheet per variant, and `report.md`. Rerunning continues where it stopped. Three variants take about an hour. `--candidates 1 --review-rounds 0` gives a quick draft.
+| Stage | What happens |
+|---|---|
+| Plan | Opus plans the variants by rules taken from the real sets and by the producer's [lessons](analysis/lessons.md). A second call flags cards that could upset players |
+| References | Each card gets three real cards: the same art category and backdrop pattern, then the most likely same kind of object, by text search over the card images (`search.py`) |
+| Model | For built objects of several parts, Opus writes a Blender model, looks at its render and fixes it, up to two rounds. Simple forms skip this |
+| Draw | Codex draws three candidates per card, restyling the model's render where there is one |
+| Check | Each candidate is measured like the references: per-category ranges, distance to the real cards in a style embedding, and a blind look at what it shows and how it is staged |
+| Choose | The art director compares candidates two at a time, both orders. Close wins are marked for a human look |
+| Review | Nine specialists and the art director review each variant blind, with hidden real cards as controls, and write edit notes |
+| Edit | Codex applies the notes. An edit stays only if it beats its draft, and every outcome is saved for later runs |
+| Deliver | `runs/<slug>/variant_N/`, a sheet per variant and `report.md` |
 
-To see a set in the game's window, run `scripts/screen.py western --color blue`.
+Rerunning continues where it stopped. `--candidates 1 --review-rounds 0` gives a quick draft. To place a variant in the game's window: `scripts/screen.py western --variant 1 --color blue`.
 
-To rate cards by hand, run `scripts/rate_ui.py` and open http://127.0.0.1:8765. It has blind twins (pick the generated card) and every set card beside its references (grade 1-5), each with a comment box. Answers go to `runs/ratings.json`. `--summary` prints the results.
+## Teach it
+
+- **Lessons.** [analysis/lessons.md](analysis/lessons.md) holds the rules learned from the producer's ratings, in plain words the planner reads. Edit it to teach the tool. `scripts/experience.py propose` drafts new lessons from rating comments and lost edits, under Proposed, for a person to accept.
+- **Experience.** Every edit and whether it beat its draft goes to `analysis/experience.json`. The art director sees past notes that worked and failed.
+- **Ratings.** `scripts/rate_ui.py` serves a rating page at http://127.0.0.1:8765: blind twins, set cards beside their references, trials. Answers go to `runs/ratings.json`, the only measure that tracks the producer.
+
+## The cast
+
+The reference collection has one cast: a man with glasses and a mustache, a pig, a sheep, a cow and a rooster. `scripts/cast.py find` cuts them out of the reference cards with SAM 3, `label` records view, pose and outfit, and `sheet` shows them. The cutouts stay out of git. `experiments/cast_trial.py` tests drawing the cast on new cards.
 
 ## Setup
 
-This needs a GPU with PyTorch, the Codex and Claude CLIs logged in, and the board images in `materials/`, which are not in git. The model weights and reference data below are not in git either. The first two commands take a while and download weights.
+This needs a ROCm or CUDA GPU with PyTorch, the Codex and Claude CLIs logged in, Blender on the PATH, and the board images in `materials/`, which are not in git. Model weights and reference data are not in git either.
 
 ```sh
 python -m venv .venv
@@ -29,11 +47,11 @@ python -m venv .venv
 .venv/bin/python -B scripts/estimate.py masks marigold
 ```
 
-`scripts/drift.py` also needs DINOv3, which is gated on Hugging Face: put `HUGGING_FACE_API_KEY` in `.env`, then run `.venv/bin/python -B scripts/embed.py --models dinov3`.
+DINOv3 and SAM 3 are gated on Hugging Face: put `HUGGING_FACE_API_KEY` in `.env`, then run `scripts/embed.py --models dinov3` and `scripts/cast.py find`.
 
 ## Change the generator or the style
 
-`scripts/draw.py` holds the generator, so another model replaces one function. After changing the generator or the style text, redraw the twins, then judge them:
+`scripts/draw.py` holds the generator, so another model replaces one function. Style wording is high-gain: change one thing, redraw the twins and judge them against the real cards.
 
 ```sh
 .venv/bin/python -B scripts/validate.py twins --label r9
@@ -41,37 +59,20 @@ python -m venv .venv
 .venv/bin/python -B scripts/review.py twins r9 --rater claude-opus-5-5 --lessons baseline r3 r8
 ```
 
-## Measure against the user
-
-Ratings in `runs/ratings.json` are the ground truth: model raters misjudge this style ([STYLE_GAPS](analysis/STYLE_GAPS.md)).
-
-```sh
-.venv/bin/python -B scripts/score.py embed          # every rated card on one list, against the user's grades
-.venv/bin/python -B scripts/prefer.py reviewers     # which of two drawings is closer, on pairs the user decided
-.venv/bin/python -B scripts/prefer.py reviewers --target works   # which is built right
-.venv/bin/python -B scripts/tune.py                 # tune the director's notes, check on held-out pairs
-```
-
-## How the analysis feeds generation
-
-- **Planning:** real character-free sets are the examples, and their ranges set the rules (`knowledge.json`).
-- **Prompts:** the style text and category rules come from the findings (`scripts/style.py`).
-- **References:** each card gets three real cards with the same category and backdrop, and a similar object where possible (`cards.json`).
-- **Checks:** every card is measured like the references and compared with per-category ranges, the style embedding and a blind rater.
-- **Review:** calibrated specialists compare each card with a real one, blind, with hidden real controls. The art director turns their reports into edit notes ([analysis/agents/](analysis/agents/README.md)).
+Model raters misjudge this style without labelled lessons, and no automatic score tracks the producer on a lone card. Pairwise judgements and CSD against the same object's real card do: see [STYLE_GAPS](analysis/STYLE_GAPS.md). The studies behind these choices are in [experiments/](experiments/README.md).
 
 ## Layout
 
 | Path | Contents |
 |---|---|
-| `materials/` | Task documents and board images. Images are not in git. |
-| `sources/` | Board export and image manifests with hashes. |
-| `research/` | Research reports and per-vector notes. |
-| `analysis/` | Analysis outputs. `knowledge.json` is what the generator reads. |
-| `analysis/agents/` | Specialist art reviewers, one per vector, plus the art director. `VOCABULARY.md` and `TOOLS.md` are their language and evidence. |
-| `runs/` | Final sets in `final/`, their variants beside it, twins in `twins/` and `twins40/`, reviews in `review/`, drift in `drift/`, early runs in `first/` and `pilot/`. |
-| `scripts/` | Pipeline scripts. |
-| `PROCESS.md` | What was tried and why. Draft. |
+| `scripts/` | The pipeline and the reference analysis |
+| `experiments/` | One-off studies behind the pipeline's decisions |
+| `analysis/` | Analysis outputs. `knowledge.json`, `cards.json`, `lessons.md` and `cast.json` are what the pipeline reads |
+| `analysis/agents/` | The specialists, the art director and the modeller. `VOCABULARY.md` and `TOOLS.md` are their language and evidence |
+| `runs/` | Every generated card and measurement, indexed in `runs/README.md` |
+| `library/` | Cast cutouts and pre-drawn figures. Not in git |
+| `materials/`, `sources/` | Task documents, board export and image manifests. Board images are not in git |
+| `research/` | Research reports on measuring style and on image generation |
 
 ## Reference analysis
 
@@ -87,10 +88,10 @@ Run from the project root. Each step skips finished work where it can.
 .venv/bin/python -B scripts/summarize.py
 .venv/bin/python -B scripts/cluster.py
 .venv/bin/python -B scripts/knowledge.py
-.venv/bin/python -B scripts/build_report.py
+.venv/bin/python -B scripts/build_report.py    # analysis/report.html, opened from disk
 ```
 
-The forms are defined in `scripts/form.py`. `.env` needs `HUGGING_FACE_API_KEY` only for gated models.
+The forms are defined in `scripts/form.py`.
 
 ## External code
 
@@ -103,7 +104,7 @@ git clone https://github.com/matthias-k/DeepGaze.git .models/src/deepgaze
 git -C .models/src/deepgaze checkout c7db17e
 ```
 
-The review scanned all 295 fetched Python files, read the code that actually runs, and checked every pickled checkpoint with PyTorch's restricted loader. Short test runs under a Python audit hook showed no network connections, subprocesses or writes outside the project and temp folders. It was not a line-by-line audit, and the hook cannot see inside compiled code. Review again before changing a revision.
+The review scanned all 295 fetched Python files, read the code that actually runs, and checked every pickled checkpoint with PyTorch's restricted loader. Short test runs under a Python audit hook showed no network connections, subprocesses or writes outside the project and temp folders. It was not a line-by-line audit, and the hook cannot see inside compiled code. Review again before changing a revision. SAM 3, SigLIP 2, DINOv2, DINOv3 and CSD load through `transformers` and `open_clip`, with no remote code.
 
 ## Materials
 

@@ -24,7 +24,7 @@ Rater counts below are what models said, not what the cards are. Blind tests lat
 - **Category 2 (20):** upright on a plain coloured ledge (17 of 20) with a cast shadow. Backdrops are the most saturated. Raters never fully agree on this category, so the surface field below is the reliable test.
 - **Category 3 (32):** on a real material such as wood, sand or grass (23 of 32). The backdrop stays graphic.
 - **Category 4 (42):** a real environment, usually outdoors, with a few supporting objects.
-- **Category 5 (31):** characters in dynamic poses with comic timing. Ten of these are the all-gold grand set, Summer Party. The rest come from one recurring cast and sit late in their sets.
+- **Category 5 (31):** characters in dynamic poses with comic timing. Ten of these are the all-gold grand set, Summer Party. The rest sit late in their sets, mostly in gold frames, though Music Fest shows two without. 30 of the 31 show one cast: a stocky man with glasses and a mustache (14 cutouts), a pig (9), a sheep (5), a cow (4) and a rooster (5), in a new outfit on almost every card. A one-character card's figure spans about 70% × 68% of the card, centred, and the bottom edge cuts it on 10 of 23 (`analysis/cast.json`).
 
 ## How a set is built
 
@@ -43,6 +43,7 @@ Rater counts below are what models said, not what the cards are. Blind tests lat
 - **CSD:** staging, not style differences (0.43 with category).
 - **Subject only:** SigLIP 2 and CSD density clusters simply split characters from objects.
 - **No natural families:** the best silhouette is 0.24. The cards form a continuum, not distinct groups.
+- **No outliers to drop:** within each category, local outlier factors stay at or below 1.44 in CSD, DINOv2 and SigLIP 2, and the spaces disagree on which cards are odd. The most flagged (Aircon, Rock Guitar, Podium) are on-style cards with unusual staging. Off-style work is caught one level up: a drawn card must sit near some real card in CSD, a floor that rejected all six wrong-style controls.
 
 ## How far to trust this
 

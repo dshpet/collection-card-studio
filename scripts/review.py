@@ -370,7 +370,7 @@ def judge_pairs(run, label, contests, rater="claude-opus-5-5"):
     """Wins per try from pairwise judgements, each pair shown in both orders.
 
     contests: (card id, try id, try id, reference card ids). Two drawings under the card's real references, both
-    orders, is the framing that agreed with the user (61% on 216 decided pairs, scripts/prefer.py) and cancels
+    orders, is the framing that agreed with the user (61% on 216 decided pairs, experiments/prefer.py) and cancels
     position: shown three candidates at once, the director picked whatever sat in the second slot, ten of ten.
     """
     folder = run / "choose" / label

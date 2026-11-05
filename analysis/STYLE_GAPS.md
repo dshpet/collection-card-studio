@@ -1,5 +1,74 @@
 # Style mismatches and fixes
 
+The first run looked off to a human, yet every automatic check passed it. This file records what was wrong, why the checks missed it and what fixed it, in date order. Ratings are the user's unless a model is named.
+
+## What holds now
+
+- **The user is the measure.** They still spot 24 of 32 final-style twins, where model reviewers are at chance. No score of a lone card follows their grades.
+- **Style is settled as a band.** The final style, r3 and r9 are near ties for the user, and no tone round beat the final style.
+- **Construction is the main complaint.** Blender blockouts fix built, multi-part objects and take the charm out of simple forms, so the planner models only built objects. No model judges construction above chance.
+- **Comparison works where scores fail.** The art director picks the user's side of a pair 61% of the time, about 77% when confident. CSD against the same object's real card agrees with the user's closest pick above chance.
+- **Edits by note mostly hurt.** 14 of 20 lost to their drafts, so an edit stays only if it wins.
+
+## How the gap was measured, 2026-11-02
+
+**Twins.** Twelve real cards were redrawn from a text brief, with the card itself hidden from the generator. Content is equal, so what remains is style.
+
+**Blind pairs.** Specialists see a real card and its twin in random order and name the generated one. 50% is chance.
+
+**Reviewers were calibrated first.** Without lessons, they picked the real card as the fake 12 of 12 times on color and surface. They could see the difference, but they expected game art to be glossier and more saturated than it is. Four labelled twins flipped this to 7 of 8 on held-out pairs.
+
+Lessons changed between rounds, so reviewers got sharper as cards improved. Catch rates are not strictly comparable across rounds. Drift and likeness are.
+
+| Round | Style text change | Reviewers caught | Field drift | Real-likeness |
+|---|---|---:|---:|---:|
+| baseline | "Chunky, toy-like, very saturated, no small details" | 89% | 0.086 | 0.50 |
+| r1 | True proportions, fine real detail | 61% | 0.075 | 0.65 |
+| r2 | Few main parts, calm surfaces | 50% | 0.065 | 0.61 |
+| r3 | Long lens, low camera | 36% | 0.077 | 0.69 |
+| r4 | Close framing, side light | 47% | 0.115 | 0.58 |
+| r5 | r4 without close framing | 44% | 0.066 | 0.59 |
+| r6 | Distant camera, natural color | 58% | 0.092 | 0.68 |
+| r7 | Hero spans four fifths of the card | 60% | 0.067 | 0.65 |
+| r8 | Low camera, one soft side light | 54% | 0.063 | 0.67 |
+
+Field drift is the mean distance from the real median, 0 to 0.5. Real-likeness comes from a DINOv3 classifier of real cards against the first run. Held-out real cards score 0.72.
+
+Below 50% means reviewers mistook the real card for the fake: r3 went past the target, into realism. That bracket located the target between r2 and r3. The real look is simplified but not inflated.
+
+**Held-out objects.** The twelve twins steered every style decision, so forty more real cards were redrawn in the old and the final style. On sixteen of them, reviewers caught the old style 97 of 144 times and the final style 64 of 144. When they chose a side, that is 71% against 47%. So the final style holds on objects it was never tuned on, and the reviewers can still see the difference when there is one. Slight tells remain on color and shape, at 11 and 10 of 16.
+
+**Content-matched classifier.** On all forty, with each real card and its redraw kept in one fold, DINOv3 separates the old style at AUC 0.86 whole, 0.82 subject and 0.83 background, and the final style at 0.84, 0.80 and 0.76. Style moved less here than for reviewers and by eye, and a classifier can still tell. Without twins this test misleads: summer against genre content gave 0.95 for both the first run and the final sets.
+
+**Second vendor.** With the same lessons, GPT-6.1 specialists caught baseline 46 times and missed 6, abstaining 20 times. On r8 they caught 11 and missed 39, abstaining 22. So an unrelated model also fails to separate r8, and leans slightly toward calling the real card the fake.
+
+## Mismatches found, 2026-11-02
+
+| Vector | Mismatch | Cause | Fix |
+|---|---|---|---|
+| Pipeline | Prompts reached the image tool rewritten, with added "smooth rounded shapes" | Codex's LLM rewrites prompts. `--ephemeral` hid it | `draw()` forces verbatim text and fails if it changed |
+| Shape | Objects inflated, thin parts became sausages | Style text said chunky, toy-like, no thin parts | True proportions, named slim parts, small soft bevels |
+| Shape | Rigid objects swollen like pillows | Same | Same |
+| Viewpoint | Wide-angle view, near parts balloon, openings gape | No camera in the text. "Close" made it worse | Low camera, mild perspective, rims as thin ovals |
+| Composition | Hero too big, then too small | Words like "close" and "distant" are high-gain | A measured value: spans about four fifths of the card |
+| Surface | One candy lacquer on every material | "Clean surfaces with soft highlights" | Each material looks like itself. Cloth, cord and wood are matte |
+| Surface | Then too much detail: rivets, tread, grain | "Fine real detail" overshot (r1) | "A little quiet detail" |
+| Lighting | Each part got its own sheen, even frontal light | No light in the text | One soft light from one side |
+| Color | Every hue pushed pure, shadows hot orange | "Very saturated, bright colors" | Natural local color. Saturation words removed |
+| Color | Dull backdrops on new sets | Planner chose dusty, muted colors. Twins inherited real ones, so only new sets showed it | Planner rule, from the hues real backdrops use |
+| Staging | Invented props, dioramas, little islands | Environment rule invited "a few supporting objects" | "Draw only what the subject names", close view of the object in its place |
+| Staging | Environment cards too detailed | Same, plus no limit on scene size | Hero large and central, setting of a few large soft shapes |
+| Identity | A poster needing the word WANTED came out blank | Style forbids text | Planner skips objects that need readable words |
+
+## What did not help, 2026-11-02 to 11-03
+
+- **More wording.** Each sentence is high-gain: "nearly touching the edges" took hero area from percentile 0.56 to 0.91. The art director's rewrites swung between too toy and too realistic, so the final text was settled by hand from the evidence.
+- **Softening the export.** Real and generated spectra already match in every band, so a blur would add a mismatch.
+- **Reference-only study.** Specialists working from real cards alone wrote "clay-like toy" and "never stitching", though the real Baseball Mitt has stitching.
+- **The old correction rounds.** They rescued 8 of 24 cards. Edit mode replaced them.
+- **Geometry for the reviewers.** A panel of measured geometry beside each card made both checkers worse. It showed straight edges grouped by direction, curves fitted to true ellipses and the skeleton of thin parts. On the same labelled cards, construction caught 9 of 16 instead of 11, and perspective 2 of 6 instead of 6, with 8 false alarms on real cards instead of 5. Models read the marks as proof that the drawing is right. "Ratio 0.95, a near-circle at a slight angle" passed the clock the user called not round, and "parallel edges drawn parallel" passed both chess tables. New lenses for four specialists did no better than the old ones on the sixteen held-out twins, 26 caught and 31 wrong against 31 and 28. Those lenses were normals with the outline's bends, edges and ellipses, lines of equal shading, and a vectorscope. The panel code is in commit 3efa3bf.
+- **Outline measures of roundness.** Straight share, corner rate, corner radius and planar share do not separate real cards from their twins. In both styles the twin scores higher 16 to 24 times in 40, and 8 times in the 16 with normals. The roundness a person sees is not in the outline at 430×480.
+
 ## Human rating, 2026-11-03
 
 The user rated all 80 blind twins with `scripts/rate_ui.py`. They found the generated card 31 of 32 times in the old style and 24 of 32 in the final style, choosing a side each time. Model reviewers were at chance on the same final style. **So the final style is closer, but a person still sees through most of it, and the models do not.** Every model result below should be read with that in mind.
@@ -9,7 +78,7 @@ What the user named:
 - **Construction:** objects that could not exist, such as headphone cables ending in three strands, a folding chair that could not fold, a pier that leads nowhere, ropes ending in the air.
 - **Perspective:** parts seen from different cameras, such as calculator keys drawn front-on on a tilted body.
 
-None of the nine style specialists judged construction or perspective, so two checkers were added. Taught with the user's marked cards and shown a full-size crop, they catch 11 of 16 held-out construction errors and 6 of 6 perspective errors the user flagged. They also flag 3 and 5 of 20 real cards. That counts any error. Major errors alone catch 5 of 16 and 4 of 6, with 2 false alarms each. Together, the two checkers flag 18 of the 21 cards the user marked when any error counts, against 10 on major errors only, with 7 false alarms on 20 real cards instead of 4. So any error now passes a candidate over, while edit notes still come only from major errors, since edits are obeyed strongly. Without the full-size crop they caught 5 of 16, and GPT-6.1 caught 1 of 16, so it is not used.
+None of the nine style specialists judged construction or perspective, so two checkers were added, taught with the user's marked cards. On a full-size crop they caught 11 of 16 held-out construction errors and 6 of 6 perspective errors, and also flagged 3 and 5 of 20 real cards. They were removed on 2026-11-05, when pairs the user had labelled showed them at chance (below).
 
 ## Closest style, 2026-11-03
 
@@ -30,7 +99,7 @@ For 36 of the forty twins, the user picked the redraw closest to the real card a
 
 ## Construction trial, 2026-11-03
 
-Six twins (spotlights, calculator, chair, clock, chess table, pier), two draws each, four arms, made by `scripts/trial.py`. The user rated all 48 blind, arm hidden: does it work as built, and a grade 1-5 against the real card.
+Six twins (spotlights, calculator, chair, clock, chess table, pier), two draws each, four arms, made by `experiments/trial.py`. The user rated all 48 blind, arm hidden: does it work as built, and a grade 1-5 against the real card.
 
 | Arm | Works / slightly off / broken | Mean grade |
 |---|---|---:|
@@ -63,11 +132,11 @@ The 30 final cards, as chosen before and as redrawn from a modeller's blockout (
 
 ## Soft render and photos, 2026-11-04
 
-`scripts/trial2.py`, rated blind against the old card. Finish cards, models rendered matte: soft beat old 2 times and lost 4. The cards lost designed shape with the gloss: the cat's face, the boot's tooling, the hat's curl. Matte primitives give primitive charm ("texture and color is better, but form is somewhat lacking"). Built objects: remodel 2/1/4 wins/losses/ties, photo 2/2/3, photo_style 3/2/2. The saddle rose from 2 to 5 and the cauldron stayed at 1 in every arm. Photos taught real construction that reads as wrong, such as smaller front wagon wheels and a raised dome entry with a ladder. The target is iconic logic, not engineering truth.
+`experiments/trial2.py`, rated blind against the old card. Finish cards, models rendered matte: soft beat old 2 times and lost 4. The cards lost designed shape with the gloss: the cat's face, the boot's tooling, the hat's curl. Matte primitives give primitive charm ("texture and color is better, but form is somewhat lacking"). Built objects: remodel 2/1/4 wins/losses/ties, photo 2/2/3, photo_style 3/2/2. The saddle rose from 2 to 5 and the cauldron stayed at 1 in every arm. Photos taught real construction that reads as wrong, such as smaller front wagon wheels and a raised dome entry with a ladder. The target is iconic logic, not engineering truth.
 
 ## Uniform scores against the user, 2026-11-04
 
-`scripts/score.py` puts every graded card on one list (129 graded, 80 twins, 24 hidden real cards). It scores each card by embeddings, the classifier, the nine specialists (1-10 on their vector) and the art director (1-10 overall). All reviewers saw the same real cards and six graded lessons. Results are in `runs/score/summary.json`.
+`experiments/score.py` puts every graded card on one list (129 graded, 80 twins, 24 hidden real cards). It scores each card by embeddings, the classifier, the nine specialists (1-10 on their vector) and the art director (1-10 overall). All reviewers saw the same real cards and six graded lessons. Results are in `runs/score/summary.json`.
 
 | Measure | Spearman with grade | Real vs drawn AUC | Predicts twins that fooled the user |
 |---|---:|---:|---:|
@@ -85,7 +154,7 @@ The 30 final cards, as chosen before and as redrawn from a modeller's blockout (
 
 ## Pairwise against the user, 2026-11-05
 
-A lone 1-10 score failed, so `scripts/prefer.py` asks a different question: of two drawings of one object, beside its real card or cards, which is closer? Truth is 218 pairs the user already decided. 108 come from closest picks, 60 from the trial and 50 from set cards. The bar set before the run was about 70% agreement.
+A lone 1-10 score failed, so `experiments/prefer.py` asks a different question: of two drawings of one object, beside its real card or cards, which is closer? Truth is 218 pairs the user already decided. 108 come from closest picks, 60 from the trial and 50 from set cards. The bar set before the run was about 70% agreement.
 
 | Judge | Agrees with the user | Closest / trial / set |
 |---|---:|---|
@@ -103,7 +172,7 @@ A lone 1-10 score failed, so `scripts/prefer.py` asks a different question: of t
 - **Clear preferences are still hard.** On graded pairs two or more grades apart, often construction, CSD agrees 20 of 49 times, the director 29 of 49 and shape 30 of 46.
 - **No judge reaches the bar.** Agreement is at most 63% over all pairs, against the user's own retest of 0.68 on grades.
 
-**Automatic tuning did not generalize.** `scripts/tune.py` split the pairs by object into tuning and held-out halves. In six rounds an editor proposed one note at a time from the director's mistakes and the user's comments. Two notes were kept: prefer matte and calm over glossy, and judge overall color masses over small details. Tuning agreement rose from 65 to 84 of 115. On the held-out half the tuned director agreed 65 of 101 times, the untouched one 68 of 103 and the first run 65 of 102. The gain was fitting and run noise: one prompt varies by about 5 pairs between runs. So the notes were not installed. The second note also contradicts the user, whose comments are mostly about construction. Closest picks, half the pairs, reward overall look.
+**Automatic tuning did not generalize.** `experiments/tune.py` split the pairs by object into tuning and held-out halves. In six rounds an editor proposed one note at a time from the director's mistakes and the user's comments. Two notes were kept: prefer matte and calm over glossy, and judge overall color masses over small details. Tuning agreement rose from 65 to 84 of 115. On the held-out half the tuned director agreed 65 of 101 times, the untouched one 68 of 103 and the first run 65 of 102. The gain was fitting and run noise: one prompt varies by about 5 pairs between runs. So the notes were not installed. The second note also contradicts the user, whose comments are mostly about construction. Closest picks, half the pairs, reward overall look.
 
 **Confidence held up.** On held-out pairs the untouched director at confidence 4 was right 10 of 13 times in a fresh run and 19 of 24 in the first, about 78%. `choose()` now asks for confidence and lists picks below 4 for a human look. The cut was set on data that includes these pairs, so it was not chosen blind.
 
@@ -113,7 +182,7 @@ A lone 1-10 score failed, so `scripts/prefer.py` asks a different question: of t
 
 ## Parameter loop, 2026-11-05
 
-The production pattern: split the style into parameters, measure each on the output, give concrete feedback, then measure again. `scripts/param.py` reads 69 parameters on the forty twins, each against its own real card. 55 come from pixels and 14 from Opus readings asked twice with sides swapped. Opus says only which card has more of a parameter, never which is right, so its taste cannot invert the result.
+The production pattern: split the style into parameters, measure each on the output, give concrete feedback, then measure again. `experiments/param.py` reads 69 parameters on the forty twins, each against its own real card. 55 come from pixels and 14 from Opus readings asked twice with sides swapped. Opus says only which card has more of a parameter, never which is right, so its taste cannot invert the result.
 
 - **What the final style gets wrong.** It is lighter: 29 of 40 twins, p 0.0002, mostly the background (31 of 40). It has shallower darks on the object (27 of 40) and lower contrast (28 of 40). Backgrounds are more saturated (30 of 40) and less detailed (29 of 40). By eye the objects have more small details (24 to 11) and are more inflated (22 to 10).
 - **What it does not get wrong.** Gloss, highlight size and tint, bevels and surface texture, by pixels and by eye. The user's "glossy" is not in any of these readings.
@@ -126,7 +195,6 @@ The production pattern: split the style into parameters, measure each on the out
 - **Hardware round, p3, judged by readers only.** Added to the final style: "Hardware is simplified into a few broad, smooth parts: wide bands and plain caps instead of rivets, bolts, brackets and seams." Detail moved to the real cards. By eye "more small details" went from 20-10 to 13-17, and subject detail from +0.0034 to -0.0016 (closer in 24 of 40, p 0.04). The treasure chest lost its rivets and brackets. Inflation and bevels did not move. But cards got lighter (gap +0.022 to +0.033, p 0.006), with fewer darks (lower in 29 of 40) and less contrast, since rivets and seams were dark marks. The rule set before the run was to keep a change only if nothing else got worse, so p3 is not adopted. Small tone shifts were invisible to the user in the p1/p2 check, so p3 is the first candidate if another round is wanted.
 - **Rater fatigue.** The user reports growing blind to differences, and 16 of 40 answers were "same". The one measure that tracks the user is wearing out.
 
-
 ## Pipeline test run, 2026-11-05
 
 Western and Sci-Fi went through the current pipeline into `runs/western-2` and `runs/sci-fi-2`, one variant each, as a test. They are not the final sets. Horror was stopped at planning.
@@ -134,69 +202,8 @@ Western and Sci-Fi went through the current pipeline into `runs/western-2` and `
 - **Literal counts.** "A covered wagon with two large spoked wheels" became a two-wheeled cart. The planner and the modeller now count parts as the whole real object has them.
 - **The three-up pick followed screen position.** The director picked the second slot for ten of ten cards, always as "the largest", while subject areas differed by under 2 points. Shuffling only changed which candidate sat there. Picks are now pairwise, both orders, the framing that agreed with the user. The result is honest: candidates of one card are nearly identical, and most picks are close (8 of 10 and 6 of 10 unsure).
 - **Edits mostly made cards worse.** Judged pairwise against the drawing they replaced, Western's edits lost 7 of 10, each 2-0 in both orders. Sci-Fi kept 3 of 5 in round 1 and 0 of 5 in round 2. An edit now stays only if it beats its draft.
-- **Invented extras survive "draw only what the subject names".** Every sheriff star had a red jewel, which the user rejected before. It was removed by hand, which counts against autonomy, so it needs a pipeline rule.
+- **Invented extras survive "draw only what the subject names".** Every sheriff star had a red jewel, which the user rejected before. It was removed by hand, which counts against autonomy. The planner now writes "plain" for parts an image model likes to decorate, a lesson in `analysis/lessons.md`.
 - **Characters slip in.** Sci-Fi planned a "friendly robot" and an "Alien Pet" with a face and a smile. The rule allows one animal as an object, and an alien counted as one. The movie-style reference sets have no characters.
-
-The first run looked off to a human, yet every automatic check passed it. This file records what was wrong, why the checks missed it, and what fixed it.
-
-## How the gap was measured
-
-**Twins.** Twelve real cards were redrawn from a text brief, with the card itself hidden from the generator. Content is equal, so what remains is style.
-
-**Blind pairs.** Specialists see a real card and its twin in random order and name the generated one. 50% is chance.
-
-**Reviewers were calibrated first.** Without lessons, they picked the real card as the fake 12 of 12 times on color and surface. They could see the difference, but they expected game art to be glossier and more saturated than it is. Four labelled twins flipped this to 7 of 8 on held-out pairs.
-
-Lessons changed between rounds, so reviewers got sharper as cards improved. Catch rates are not strictly comparable across rounds. Drift and likeness are.
-
-| Round | Style text change | Reviewers caught | Field drift | Real-likeness |
-|---|---|---:|---:|---:|
-| baseline | "Chunky, toy-like, very saturated, no small details" | 89% | 0.086 | 0.50 |
-| r1 | True proportions, fine real detail | 61% | 0.075 | 0.65 |
-| r2 | Few main parts, calm surfaces | 50% | 0.065 | 0.61 |
-| r3 | Long lens, low camera | 36% | 0.077 | 0.69 |
-| r4 | Close framing, side light | 47% | 0.115 | 0.58 |
-| r5 | r4 without close framing | 44% | 0.066 | 0.59 |
-| r6 | Distant camera, natural color | 58% | 0.092 | 0.68 |
-| r7 | Hero spans four fifths of the card | 60% | 0.067 | 0.65 |
-| r8 | Low camera, one soft side light | 54% | 0.063 | 0.67 |
-
-Field drift is the mean distance from the real median, 0 to 0.5. Real-likeness comes from a DINOv3 classifier of real cards against the first run. Held-out real cards score 0.72.
-
-Below 50% means reviewers mistook the real card for the fake: r3 went past the target, into realism. That bracket located the target between r2 and r3. The real look is simplified but not inflated.
-
-**Held-out objects.** The twelve twins steered every style decision, so forty more real cards were redrawn in the old and the final style. On sixteen of them, reviewers caught the old style 97 of 144 times and the final style 64 of 144. When they chose a side, that is 71% against 47%. So the final style holds on objects it was never tuned on, and the reviewers can still see the difference when there is one. Slight tells remain on color and shape, at 11 and 10 of 16.
-
-**Content-matched classifier.** On all forty, with each real card and its redraw kept in one fold, DINOv3 separates the old style at AUC 0.86 whole, 0.82 subject and 0.83 background, and the final style at 0.84, 0.80 and 0.76. Style moved less here than for reviewers and by eye, and a classifier can still tell. Without twins this test misleads: summer against genre content gave 0.95 for both the first run and the final sets.
-
-**Second vendor.** With the same lessons, GPT-6.1 specialists caught baseline 46 times and missed 6, abstaining 20 times. On r8 they caught 11 and missed 39, abstaining 22. So an unrelated model also fails to separate r8, and leans slightly toward calling the real card the fake.
-
-## Mismatches
-
-| Vector | Mismatch | Cause | Fix |
-|---|---|---|---|
-| Pipeline | Prompts reached the image tool rewritten, with added "smooth rounded shapes" | Codex's LLM rewrites prompts. `--ephemeral` hid it | `draw()` forces verbatim text and fails if it changed |
-| Shape | Objects inflated, thin parts became sausages | Style text said chunky, toy-like, no thin parts | True proportions, named slim parts, small soft bevels |
-| Shape | Rigid objects swollen like pillows | Same | Same |
-| Viewpoint | Wide-angle view, near parts balloon, openings gape | No camera in the text. "Close" made it worse | Low camera, mild perspective, rims as thin ovals |
-| Composition | Hero too big, then too small | Words like "close" and "distant" are high-gain | A measured value: spans about four fifths of the card |
-| Surface | One candy lacquer on every material | "Clean surfaces with soft highlights" | Each material looks like itself. Cloth, cord and wood are matte |
-| Surface | Then too much detail: rivets, tread, grain | "Fine real detail" overshot (r1) | "A little quiet detail" |
-| Lighting | Each part got its own sheen, even frontal light | No light in the text | One soft light from one side |
-| Color | Every hue pushed pure, shadows hot orange | "Very saturated, bright colors" | Natural local color. Saturation words removed |
-| Color | Dull backdrops on new sets | Planner chose dusty, muted colors. Twins inherited real ones, so only new sets showed it | Planner rule, from the hues real backdrops use |
-| Staging | Invented props, dioramas, little islands | Environment rule invited "a few supporting objects" | "Draw only what the subject names", close view of the object in its place |
-| Staging | Environment cards too detailed | Same, plus no limit on scene size | Hero large and central, setting of a few large soft shapes |
-| Identity | A poster needing the word WANTED came out blank | Style forbids text | Planner skips objects that need readable words |
-
-## What did not help
-
-- **More wording.** Each sentence is high-gain: "nearly touching the edges" took hero area from percentile 0.56 to 0.91. The art director's rewrites swung between too toy and too realistic, so the final text was settled by hand from the evidence.
-- **Softening the export.** Real and generated spectra already match in every band, so a blur would add a mismatch.
-- **Reference-only study.** Specialists working from real cards alone wrote "clay-like toy" and "never stitching", though the real Baseball Mitt has stitching.
-- **The old correction rounds.** They rescued 8 of 24 cards. Edit mode replaced them.
-- **Geometry for the reviewers.** A panel of measured geometry beside each card made both checkers worse. It showed straight edges grouped by direction, curves fitted to true ellipses and the skeleton of thin parts. On the same labelled cards, construction caught 9 of 16 instead of 11, and perspective 2 of 6 instead of 6, with 8 false alarms on real cards instead of 5. Models read the marks as proof that the drawing is right. "Ratio 0.95, a near-circle at a slight angle" passed the clock the user called not round, and "parallel edges drawn parallel" passed both chess tables. New lenses for four specialists did no better than the old ones on the sixteen held-out twins, 26 caught and 31 wrong against 31 and 28. Those lenses were normals with the outline's bends, edges and ellipses, lines of equal shading, and a vectorscope. The panel code is in commit 3efa3bf.
-- **Outline measures of roundness.** Straight share, corner rate, corner radius and planar share do not separate real cards from their twins. In both styles the twin scores higher 16 to 24 times in 40, and 8 times in the 16 with normals. The roundness a person sees is not in the outline at 430×480.
 
 ## Limits
 

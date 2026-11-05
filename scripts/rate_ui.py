@@ -3,11 +3,11 @@
 Twins: a real card and its redraw, sides shuffled. Pick the generated one. Old-style redraws are mixed in as a control.
 Closest: a real card and its redraws in every style drawn so far, shuffled. Pick the closest.
 Cards: every set card beside its three reference cards, all at the same size, graded 1-5.
-Trial: each drawing of scripts/trial.py beside its real card, arm hidden: does it work as built, and a grade 1-5.
+Trial: each drawing of experiments/trial.py beside its real card, arm hidden: does it work as built, and a grade 1-5.
 Redraw: each final card, as chosen before and as redrawn from a blockout, mixed and unlabelled, beside its
 reference cards: does it work as built, and a grade 1-5.
-Soft: the cards of scripts/trial2.py, each arm and the old card mixed and unlabelled, rated as in Redraw.
-Param: a real card with its final-style twin and the twins redrawn by scripts/param.py rounds, shuffled. Pick the
+Soft: the cards of experiments/trial2.py, each arm and the old card mixed and unlabelled, rated as in Redraw.
+Param: a real card with its final-style twin and the twins redrawn by experiments/param.py rounds, shuffled. Pick the
 closest, or same when none is.
 
     rate_ui.py              then open http://127.0.0.1:8765
@@ -30,7 +30,7 @@ RATINGS = ROOT / "runs" / "ratings.json"
 SETS = ("western", "sci-fi", "horror")
 SERVED = ("materials/card_examples/", "runs/")
 CLOSEST_STYLES = ("final", "old", "r3", "r9")
-PARAM = ("p1", "p2")  # scripts/param.py rounds under test
+PARAM = ("p1", "p2")  # experiments/param.py rounds under test
 LOCK = threading.Lock()
 
 

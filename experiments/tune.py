@@ -1,6 +1,6 @@
 """Tune the art director's judging notes on pairs the user already decided, and check them on pairs it never saw.
 
-The pairs of scripts/prefer.py split by object into a tuning half and a held-out half. Each round the director judges
+The pairs of experiments/prefer.py split by object into a tuning half and a held-out half. Each round the director judges
 the tuning half with the current notes, an editor sees its mistakes with the user's own comments and proposes one
 change, and the change stays only if agreement rises by more than MARGIN pairs. At the end the tuned notes and the
 untouched prompt each judge the held-out half once. Notes that win there go to analysis/agents/director_notes.md, which
@@ -180,7 +180,7 @@ def main():
     print(result, flush=True)
     tuned, untouched = result["held_tuned"]["confidence>=1"], result["held_untouched"]["confidence>=1"]
     if notes.strip() and tuned[0] / max(tuned[1], 1) > untouched[0] / max(untouched[1], 1):
-        NOTES.write_text("# Director notes\n\nLearned by `scripts/tune.py` from the user's past choices. Read by "
+        NOTES.write_text("# Director notes\n\nLearned by `experiments/tune.py` from the user's past choices. Read by "
                          "`choose()`.\n\n" + notes.strip() + "\n", "utf-8")
 
 

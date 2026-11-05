@@ -14,9 +14,9 @@ Nine specialists, one per art vector, and an art director. `scripts/review.py` r
 | [composition_hierarchy](composition_hierarchy.md) | Scale, placement, thumbnail read | Thumbnail |
 | [staging_detail](staging_detail.md) | Support, props, how busy the card is | Background alone |
 
-[art_director](art_director.md) reads every report and turns them into instructions for the generator.
+[art_director](art_director.md) reads every report and turns them into edit notes for the generator, with past notes that won and lost against their drafts as examples (`analysis/experience.json`). It also picks between candidates, two at a time in both orders, beside the card's real references and the user's labelled pairs (`analysis/judge_lessons.json`).
 
-Before any drawing, the [modeller](modeller.md) builds each card's object as a Blender blockout, looks at the render and fixes it, up to two rounds. The image model restyles that render, so construction comes from geometry rather than words. The planner decides per card whether a model is worth it: built, multi-part objects gain, simple forms lose charm.
+Before any drawing, the [modeller](modeller.md) builds each card's object as a Blender blockout, looks at the render and fixes it, up to two rounds. Two models from the construction trial, in `models/`, are its examples. The image model restyles that render, so construction comes from geometry rather than words. The planner decides per card whether a model is worth it: built, multi-part objects gain, simple forms lose charm.
 
 No model judges construction. Construction and perspective checkers were tried and removed: on pairs the user labelled works or broken they were at chance ([STYLE_GAPS](../STYLE_GAPS.md)). The director's unsure picks go to a human instead.
 

@@ -1,6 +1,6 @@
 # Our sets against the references
 
-The three final sets are in `runs/final/`, one folder per set with a sheet beside it. Evidence for the style is in [STYLE_GAPS.md](STYLE_GAPS.md). Set numbers come from `scripts/compare.py`, on the definitions used for the real sets.
+The three sets chosen on 2026-11-03 are in `runs/final/`, one folder per set with a sheet beside it. They will be redrawn with the current pipeline, and this comparison redone. Evidence for the style is in [STYLE_GAPS.md](STYLE_GAPS.md). Set numbers come from `scripts/compare.py`, on the definitions used for the real sets.
 
 ## Idea
 
@@ -47,4 +47,4 @@ Our sets sit inside or at the edge of the real ranges. Horror is the least unifi
 - **By eye:** real cards look a little softer and quieter than ours. Ours are slightly tidier.
 - **Classifier:** a DINOv3 classifier still separates real cards from their redraws, at AUC 0.84 on the whole card. The old style scored 0.86. Style moved less on this measure than by eye, so part of the gap may be a generator fingerprint no viewer would see, but that is not proven.
 - **Blind review:** on unseen same-object pairs, specialists are at chance: right 47% of the time when they choose a side, against 71% for the old style. On pairs of different objects they pick the generated card 75% of the time, but they also accuse a real card on 59-69% of hidden real controls, so that number is weak.
-- **Rating:** no human has judged these cards. Every number above comes from models, which were wrong about this style once already.
+- **Rating:** the user graded these 30 cards 3.4 of 5 on average beside their references, and still spots 24 of 32 final-style twins ([STYLE_GAPS](STYLE_GAPS.md)). The other numbers above come from models.

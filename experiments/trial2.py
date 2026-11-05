@@ -4,7 +4,7 @@ Finish cards lost on gloss and texture. Their existing models are rendered in th
     soft         existing model, soft render
 Construction cards lost on how they are built. Each gets two fresh models, both rendered soft:
     remodel      modelled from the brief, as make_set.py does
-    photo        modelled with real photos of the object (scripts/photos.py)
+    photo        modelled with real photos of the object (experiments/photos.py)
     photo_style  the photo model, restyled with its best photo also shown, labelled as an object reference
                  (Codex takes at most 5 images: 3 real cards, 1 photo, the blockout)
 
