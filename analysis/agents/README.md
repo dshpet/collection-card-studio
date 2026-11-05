@@ -16,9 +16,9 @@ Nine specialists, one per art vector, and an art director. `scripts/review.py` r
 
 [art_director](art_director.md) reads every report and turns them into instructions for the generator.
 
-Before any drawing, the [modeller](modeller.md) builds each card's object as a Blender blockout, looks at the render and fixes it, up to two rounds. The image model restyles that render, so construction comes from geometry rather than words.
+Before any drawing, the [modeller](modeller.md) builds each card's object as a Blender blockout, looks at the render and fixes it, up to two rounds. The image model restyles that render, so construction comes from geometry rather than words. The planner decides per card whether a model is worth it: built, multi-part objects gain, simple forms lose charm.
 
-Two checkers judge each card alone, for mistakes rather than style: [construction](construction.md), whether the object could exist and work, and [perspective](perspective.md), whether it is one consistent space. They see the card beside its object cut from the full-size drawing, and learn from [lessons.json](lessons.json): cards a human marked, with notes. A candidate with any error is passed over when another has none, and failing that one with a major error. Major errors on a chosen card become edit notes.
+No model judges construction. Construction and perspective checkers were tried and removed: on pairs the user labelled works or broken they were at chance ([STYLE_GAPS](../STYLE_GAPS.md)). The director's unsure picks go to a human instead.
 
 ## Rules for every specialist
 

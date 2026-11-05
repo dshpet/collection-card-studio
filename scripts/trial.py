@@ -7,14 +7,13 @@ blockout2  the same with models2: framed on the main body, sturdier thin parts, 
            no modelled light beams. Drawn after seeing the six real cards, so not fully blind
 
     trial.py draw [--arms control how blockout blockout2] [--draws 2]
-    trial.py check      construction and perspective checkers on every drawing
 """
 
 import argparse
 import subprocess
 from concurrent.futures import ThreadPoolExecutor
 
-from common import ROOT, load_json, save_json
+from common import ROOT, load_json
 
 from PIL import Image
 
@@ -71,38 +70,13 @@ def draw_one(job):
             print(f"{arm} {try_id}: {type(error).__name__} {str(error)[:160]}", flush=True)
 
 
-def check():
-    from estimate import write_masks
-    from review import CHECKS, check_cards, try_record
-
-    groups = {arm: [try_record(RUN / arm, p.stem, key=f"{arm}_{p.stem}") for p in sorted((RUN / arm / "tries").glob("*.png"))]
-              for arm in ARMS}
-    # The blockout renders themselves. Their flags are checker false alarms or flaws in the models.
-    for arm, group in (("blockout", "renders"), ("blockout2", "renders2")):
-        groups[group] = [{"id": f"render_{b['id']}", "file": f"runs/trial/{arm}/{b['id']}.png", "real": False,
-                          "derived": RUN / arm / "derived", "full": RUN / arm / f"{b['id']}.png"} for b in briefs()]
-    found = {}
-    for group, records in groups.items():
-        write_masks(records, "cuda", records[0]["derived"] / "masks")
-        reports = check_cards(f"trial_{group}", records)
-        found[group] = {r["id"]: [{"check": c, "severity": e["severity"], "what": e["what"]}
-                                  for c in CHECKS for e in (reports[c].get(r.get("key", r["id"])) or {}).get("errors", [])]
-                        for r in records}
-        errors = [e for card in found[group].values() for e in card]
-        print(f"{group}: {sum(1 for e in found[group].values() if e)} of {len(records)} flagged, {len(errors)} errors, "
-              f"{sum(e['severity'] == 'major' for e in errors)} major", flush=True)
-    save_json(RUN / "checks.json", found)
-
-
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("mode", choices=("draw", "check"))
+    parser.add_argument("mode", choices=("draw",))
     parser.add_argument("--arms", nargs="+", default=list(ARMS), choices=ARMS)
     parser.add_argument("--draws", type=int, default=2)
     parser.add_argument("--workers", type=int, default=4)
     args = parser.parse_args()
-    if args.mode == "check":
-        return check()
     jobs = [(arm, brief, n) for n in range(1, args.draws + 1) for arm in args.arms for brief in briefs()]
     with ThreadPoolExecutor(args.workers) as pool:
         list(pool.map(draw_one, jobs))

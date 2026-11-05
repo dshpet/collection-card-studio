@@ -109,6 +109,8 @@ A lone 1-10 score failed, so `scripts/prefer.py` asks a different question: of t
 
 **Construction cannot be judged by these models, even pairwise.** `prefer.py --target works` gives 93 pairs of one object whose works / slightly off / broken labels differ. Construction checker: 42 of 86. Perspective checker: 45 of 87. Director: 39 of 83. The old one-card checkers: 26 of 53. All are at chance, and confidence does not help: 3 of 8 and 11 of 23 at confidence 4. On works-against-broken pairs the construction checker gets 11 of 23. Its reasons look at local hardware ("the lifebuoy hangs from a peg", "X-legs join at clear pivots") and prefer the drawing with more of it. The user judges whether the whole object could work, and mostly preferred the plainer blockout drawings of the chair and pier. So construction has to come from geometry, the Blender blockout, and from a human look. A checker cannot guard it.
 
+**Changes, 2026-11-05.** The construction and perspective checkers are removed from the pipeline: no candidate is passed over and no edit note is written on their word. A Blender model is now optional per card, and the planner decides with one rule: built objects of several rigid parts get a model, simple and organic forms do not. On the 30 final cards it chose a model for 18. Against the user's ratings it matched 16 of the 22 cards where one side won. It modelled candelabra, crystal ball, coffin and wagon, where the old draw won, and skipped badge and lasso, where the model won. The rule was not tuned on these cards.
+
 The first run looked off to a human, yet every automatic check passed it. This file records what was wrong, why the checks missed it, and what fixed it.
 
 ## How the gap was measured

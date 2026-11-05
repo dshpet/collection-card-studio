@@ -10,8 +10,8 @@ Judges, each scored on pairs the user decided:
     reviewers  the nine specialists and the art director, asked A or B beside the real card(s)
 
 With --target works the truth is the user's works / slightly off / broken label instead of the grade, closest picks
-drop out, and the judges are the construction and perspective checkers and the director, asked which drawing is
-built right, against the old one-card checker reports as a baseline (trial pairs only). Results go to runs/prefer_works.
+drop out, and the director is asked which drawing is built right. Results go to runs/prefer_works. The construction
+and perspective checkers tested there, at chance, were removed (commit 8bee565 has them).
 
     prefer.py embed       features and the two numeric judges
     prefer.py reviewers   about 270 model calls
@@ -224,7 +224,7 @@ def reviewers(rows, rater, director_rater, workers):
                  "resting on something and drawn from one consistent camera? Real cards simplify objects but never get "
                  "them wrong. Answer A, B or neither, with confidence 1-5, and say why in one sentence, naming the part.")
         if TARGET == "works":
-            brief = (ROOT / "analysis" / "agents" / f"{role}.md").read_text("utf-8")
+            brief = (ROOT / "analysis" / "agents" / "art_director.md").read_text("utf-8")
             prompt = f"{brief}\n{preamble(batch)} {built}"
             model = director_rater
         elif role == "art_director":
@@ -243,33 +243,10 @@ def reviewers(rows, rater, director_rater, workers):
             save_json(out, result)
             print(role, index, flush=True)
 
-    roles = ("construction", "perspective", "art_director") if TARGET == "works" else (*ROLES, "art_director")
+    roles = ("art_director",) if TARGET == "works" else (*ROLES, "art_director")
     jobs = [(role, i) for role in roles for i in range(len(batches))]
     with ThreadPoolExecutor(workers) as pool:
         list(pool.map(one, jobs))
-
-
-def checker_baseline(rows):
-    """The old one-card checkers: the drawing with fewer flagged errors, majors counting double. Trial pairs only."""
-    def errors(path):
-        parts = path.split("/")
-        if parts[1] != "trial":
-            return None
-        arm, stem = parts[2], parts[-1][:-4]
-        total = 0
-        for check in ("construction", "perspective"):
-            report_path = ROOT / "runs" / "review" / f"trial_{arm}" / "checks" / check / f"{arm}_{stem}.json"
-            if not report_path.exists():
-                return None
-            total += sum(2 if e["severity"] == "major" else 1 for e in load_json(report_path)["errors"])
-        return total
-
-    answers = {}
-    for row in rows:
-        a, b = errors(row["A"]), errors(row["B"])
-        if a is not None and b is not None and not row["lesson"]:
-            answers[row["pair"]] = "A" if a < b else "B" if b < a else "neither"
-    save_json(OUT / "numeric.json", {"old_checkers": answers})
 
 
 def report(rows):
@@ -319,9 +296,7 @@ def main():
         OUT, TARGET = ROOT / "runs" / "prefer_works", "works"
     rows = pairs()
     save_json(OUT / "pairs.json", rows)
-    if args.mode == "embed" and TARGET == "works":
-        checker_baseline(rows)
-    elif args.mode == "embed":
+    if args.mode == "embed" and TARGET != "works":
         embed(rows)
         numeric_judges(rows)
     elif args.mode == "reviewers":

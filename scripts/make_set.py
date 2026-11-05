@@ -51,8 +51,15 @@ CARD_SCHEMA = strict({
     "name": text(), "subject": text(), "object_class": {"type": "string", "enum": OBJECT_CLASSES},
     "category": {"type": "string", "enum": ["1", "2", "3", "4"]},
     "pattern": {"type": "string", "enum": list(PATTERNS)},
-    "hero_colors": text(), "backdrop_colors": text(), "surface_or_setting": text(),
+    "hero_colors": text(), "backdrop_colors": text(), "surface_or_setting": text(), "build_model": {"type": "boolean"},
 })
+# From the user's ratings: a Blender model fixed the chair, clock, pier and saddle, and took the charm out of the cat,
+# boot and witch hat (analysis/STYLE_GAPS.md).
+MODEL_RULE = ("build_model: true for a built object of several rigid parts that must connect or stand, such as furniture, "
+              "clocks, vehicles, machines, buildings, piers, frames, or anything with legs, hinges, wheels, straps or "
+              "rigging. false for a simple or organic form: an animal, plant, food, garment, hat, boot, a single solid "
+              "or a soft object. A 3D model fixes how parts connect but strips the charm from simple forms.")
+DECIDE_SCHEMA = strict({"cards": {"type": "array", "items": strict({"id": text(), "build_model": {"type": "boolean"}})}})
 PLAN_SCHEMA = strict({
     "title": text(), "story": text(),
     "variants": {"type": "array", "items": strict({"cards": {"type": "array", "items": CARD_SCHEMA}})},
@@ -60,6 +67,19 @@ PLAN_SCHEMA = strict({
 MODEL_SCHEMA = strict({"model": text()})
 SENSITIVE_SCHEMA = strict({"flagged": {"type": "array", "items": strict({"name": text(), "why": text()})}})
 LOOK_SCHEMA = strict({"ok": {"type": "boolean"}, "problems": {"type": "array", "items": text()}, "model": text()})
+
+
+def decide_models(briefs):
+    """For plans made before build_model existed: one call decides every card."""
+    listing = "\n".join(f"c{i:02d}: {b['card']['name']}, {b['card']['subject']}" for i, b in enumerate(briefs))
+    answer = ask_claude(f"For each card of a mobile game, decide whether to build a 3D model before drawing it.\n"
+                        f"{MODEL_RULE}\n\nCards:\n{listing}\nAnswer for every card, by its key.", None, DECIDE_SCHEMA)
+    decided = {c["id"]: c["build_model"] for c in answer["cards"]}
+    missing = [f"c{i:02d}" for i in range(len(briefs)) if f"c{i:02d}" not in decided]
+    if missing:
+        raise RuntimeError(f"no model decision for {missing}. Rerun to continue")
+    for i, brief in enumerate(briefs):
+        brief["card"]["build_model"] = decided[f"c{i:02d}"]
 
 
 def plan_prompt(theme, wishes, variants, knowledge):
@@ -90,6 +110,7 @@ Rules learned from the game's real sets:
 - backdrop_colors are bright and clean, as in the real cards: sky blue, cyan, yellow, orange, purple, pink, grass green. Never dusty, muted, dull or dark. Skies stay clear and bright, even on dark topics.
 - surface_or_setting: the surface for categories 2-3 and the place for category 4, empty for category 1. Real sets reuse one or two ground materials across their cards, so reuse them too.
 - Versions may share at most 5 objects.
+- {MODEL_RULE}
 
 Real sets from the game, as examples:
 {examples}"""
@@ -407,9 +428,14 @@ def main():
     briefs = load_json(briefs_path)
 
     if not args.no_blockouts:
+        if any("build_model" not in brief["card"] for brief in briefs):
+            decide_models(briefs)
+            save_json(briefs_path, briefs)
+        built = [brief for brief in briefs if brief["card"]["build_model"]]
         with ThreadPoolExecutor(args.workers) as pool:
-            renders = list(pool.map(lambda brief: model_card(run, brief, args.rater), briefs))
-        print(f"models: {sum(r is not None for r in renders)} of {len(briefs)} rendered", flush=True)
+            renders = list(pool.map(lambda brief: model_card(run, brief, args.rater), built))
+        print(f"models: {sum(r is not None for r in renders)} of {len(built)} rendered, "
+              f"{len(briefs) - len(built)} cards drawn from the brief alone", flush=True)
 
     history = defaultdict(list, load_json(run / "check.json") if (run / "check.json").exists() else {})
 

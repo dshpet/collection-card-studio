@@ -102,3 +102,4 @@ The first run looked off to a human, while every check passed it. Details are in
 - Asked which of two drawings of one object is closer, on 218 pairs the user had decided (`scripts/prefer.py`). Every reviewer beat chance. The director agreed 61% of the time and 76% when confident, so `choose()` now flags its unsure picks for a human.
 - Tuned the director's notes automatically on half the pairs (`scripts/tune.py`). Tuning agreement rose from 65 to 84 of 115, but held-out agreement did not move, so the notes were dropped.
 - Asked the same of construction, on 93 pairs the user labelled works or broken. Every judge was at chance, confident or not. Construction is secured by the Blender model and a human look, not by a checker.
+- Removed the checkers. A Blender model is now optional per card: the planner models built, multi-part objects and draws simple forms from the brief. On the final cards that matches the user's ratings 16 of 22 times.
