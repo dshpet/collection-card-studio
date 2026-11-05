@@ -13,6 +13,7 @@ from pathlib import Path
 
 sys.path.insert(1, str(Path(__file__).resolve().parents[1] / "scripts"))  # the pipeline's modules
 
+import argparse
 from concurrent.futures import ThreadPoolExecutor
 
 from common import ROOT, load_json
@@ -25,6 +26,7 @@ ACCENT = "golden yellow, with the ring around the edge in red."
 
 
 def main():
+    argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter).parse_args()
     RUN.mkdir(parents=True, exist_ok=True)
     star = next(b for b in load_json(ROOT / "runs" / "western-2" / "briefs.json") if b["card"]["name"] == "Sheriff Star")
     arms = {"before": star, "plain": {**star, "card": {**star["card"], "subject": PLAIN}},

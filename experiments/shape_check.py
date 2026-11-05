@@ -15,6 +15,7 @@ from pathlib import Path
 
 sys.path.insert(1, str(Path(__file__).resolve().parents[1] / "scripts"))  # the pipeline's modules
 
+import argparse
 from concurrent.futures import ThreadPoolExecutor
 
 from common import ROOT, load_json, save_json
@@ -39,6 +40,7 @@ def roundness(path, find):
 
 
 def main():
+    argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter).parse_args()
     from cast import segmenter
 
     RUN.mkdir(parents=True, exist_ok=True)

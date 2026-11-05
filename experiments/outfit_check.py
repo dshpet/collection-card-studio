@@ -13,6 +13,7 @@ from pathlib import Path
 
 sys.path.insert(1, str(Path(__file__).resolve().parents[1] / "scripts"))  # the pipeline's modules
 
+import argparse
 from concurrent.futures import ThreadPoolExecutor
 
 from common import ROOT, load_json
@@ -25,6 +26,7 @@ SENTENCE = " The cutouts show who each character is, not what it wears: dress it
 
 
 def main():
+    argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter).parse_args()
     RUN.mkdir(parents=True, exist_ok=True)
     if SENTENCE.strip() not in make_set.CAST_STYLE:
         first, rest = make_set.CAST_STYLE.split("\n", 1)
