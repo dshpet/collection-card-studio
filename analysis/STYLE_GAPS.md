@@ -232,6 +232,11 @@ The reference collection has one cast, cut out by `scripts/cast.py`: the man, th
 - **Direct is best for the director, and by eye on par with figure.** The figure arm keeps an asked outfit better (the green hoodie), and direct composes more freely. Direct takes one step instead of three.
 - **So character cards are drawn directly.** `make_set.py --cast N` plans N character cards per variant with the cast's cutouts attached. The default is 0, since the movie brief asks for no gold cards, though Music Fest shows that character cards without gold frames exist. Cards showing the cast stay out of git. The user has not yet rated these arms: the rating page has them, blind, under Cast.
 
+## Two smaller checks, 2026-11-05 night
+
+- **Five references instead of three.** Codex takes up to five images. The forty twins drawn with the same three references plus two more came out nearer the real card on 26 of 40 by CSD (p 0.24), and the director preferred them 21 to 17. A lean, not a clear gain, so cards keep three references.
+- **One review round is enough.** Across every run so far, edits from a first review round were kept 6 of 11 times and from a second round 0 of 11. The second round costs nine specialist calls, the director, the edits and their judging per variant, so `make_set.py` now reviews once by default.
+
 ## Limits
 
 Eight blind pairs per role is a small sample, and rounds are noisy. Reviewers are models, and on pairs of different objects they also raise false alarms on hidden real controls, so they guide edits and are not a gate. The human ratings come from one rater.

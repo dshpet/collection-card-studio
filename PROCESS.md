@@ -118,3 +118,5 @@ The first run looked off to a human, while every check passed it. Details are in
 - **Reference search.** SigLIP 2 links text to the card images with a confidence. References picked by likeness were nearer hidden real cards, but the drawings came out no closer on forty twins, so search only breaks the label rule's ties.
 - **Outliers.** None worth dropping: the most atypical reference cards are on-style cards with unusual staging.
 - **Experience.** Lessons from the producer's ratings moved from code to `analysis/lessons.md`, which a producer can edit. Every edit and whether it beat its draft is saved, and the director sees past notes. A model can propose new lessons for a person to accept.
+- Two smaller checks. Five references instead of three leaned better but not clearly, so cards keep three. A second review round never produced a kept edit, 0 of 11 against 6 of 11 for the first, so the pipeline reviews once.
+- A three-card smoke test of the changed pipeline, with one cast card, ran end to end (`runs/smoke`).

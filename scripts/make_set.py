@@ -32,7 +32,7 @@ from style import BLOCKOUT, CAST_STYLE, CATEGORY_RULES, EDIT, PATTERNS, STYLE
 SIZE = (430, 480)
 CANDIDATES = 3
 MODEL_ROUNDS = 2
-REVIEW_ROUNDS = 2
+REVIEW_ROUNDS = 1  # a second round kept 0 of 11 edits, the first 6 of 11 (analysis/experience.json, 2026-11-05)
 ALLOWED_MISSES = 2
 RATED = ["identity", "staging"]
 EXAMPLE_MODELS = ANALYSIS / "agents" / "models"  # two models from the construction trial
