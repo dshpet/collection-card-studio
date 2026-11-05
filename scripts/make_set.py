@@ -457,7 +457,7 @@ def main():
         print(f"candidates {attempt}: drew {len(tries)}, passed {sum(t.get('passed', False) for t in tries)}", flush=True)
 
     if args.review_rounds:
-        from review import choose, review_variant
+        from review import better_edits, choose, review_variant
 
         for variant in range(1, len(plan["variants"]) + 1):
             chosen = [b for b in briefs if b["variant"] == variant]
@@ -469,14 +469,20 @@ def main():
                 print(f"variant {variant} review {round_number}: {len(notes)} of {len(chosen)} cards need edits", flush=True)
                 if not notes:
                     break
-                drafts = {b["id"]: run / "tries" / f"{best_try(history[b['id']])['try_id']}.png" for b in chosen}
+                before = {b["id"]: best_try(history[b["id"]])["try_id"] for b in chosen}
                 attempt = args.candidates + round_number
-                jobs = [(b, [notes[b["id"]]], drafts[b["id"]]) for b in chosen if b["id"] in notes]
-                for entry in draw_and_check(jobs, attempt):
-                    if entry.get("passed") or not entry.get("issues"):
+                jobs = [(b, [notes[b["id"]]], run / "tries" / f"{before[b['id']]}.png") for b in chosen if b["id"] in notes]
+                edited = [e for e in draw_and_check(jobs, attempt) if e.get("passed") or not e.get("issues")]
+                # An edit is obeyed strongly and can make a card worse, so it stays only if it beats its draft
+                kept = better_edits(run, f"edit_{variant}_{round_number}",
+                                    [(e["brief_id"], before[e["brief_id"]], e["try_id"]) for e in edited],
+                                    {b["id"]: b["references"] for b in chosen}, args.rater)
+                for entry in edited:
+                    if entry["try_id"] in kept:
                         for old in history[entry["brief_id"]]:
                             old.pop("chosen", None)
                         entry["chosen"] = True
+                print(f"variant {variant} review {round_number}: kept {len(kept)} of {len(edited)} edits", flush=True)
                 save_json(run / "check.json", history)
 
     deliver(run, plan, briefs, history)

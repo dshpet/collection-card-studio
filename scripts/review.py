@@ -331,36 +331,29 @@ def lessons_for():
     return [entry for label in LESSON_ROUNDS for entry in twin_entries(label)[0] if entry[0]["twin"] in LESSONS]
 
 
-def choose(run, briefs, history, rater="claude-opus-5-5"):
-    """Mark each card's best candidate by pairwise judgement, every pair in both orders.
+def judge_pairs(run, label, contests, rater="claude-opus-5-5"):
+    """Wins per try from pairwise judgements, each pair shown in both orders.
 
-    Shown three candidates at once, the director picked whatever sat in the second slot, ten cards of ten, and
-    explained it by size. Two drawings under the card's real references, both orders, is the framing that agreed with
-    the user (61% on 216 decided pairs, scripts/prefer.py) and cancels position.
+    contests: (card id, try id, try id, reference card ids). Two drawings under the card's real references, both
+    orders, is the framing that agreed with the user (61% on 216 decided pairs, scripts/prefer.py) and cancels
+    position: shown three candidates at once, the director picked whatever sat in the second slot, ten of ten.
     """
-    import itertools
     from concurrent.futures import ThreadPoolExecutor
 
     from prefer import pairs as decided_pairs, sheet
     from tune import lessons as lesson_images
 
-    folder = run / "choose"
+    folder = run / "choose" / label
     (folder / "sheets").mkdir(parents=True, exist_ok=True)
     taught = lesson_images(decided_pairs())
-    variant = briefs[0]["variant"]
-    rows, options = [], {}
-    for brief in briefs:
-        tries = [t for t in history[brief["id"]] if t["passed"]] or history[brief["id"]]
-        options[brief["id"]] = tries
-        references = [f"materials/card_examples/{i}.png" for i in brief["references"]]
-        for first, second in itertools.combinations(tries, 2):
-            for a, b in ((first, second), (second, first)):
-                row = {"pair": f"q{len(rows):03d}", "card": brief["id"], "A": a["try_id"], "B": b["try_id"],
-                       "references": references}
-                sheet({"references": references, "A": str((run / "tries" / f"{a['try_id']}.png").relative_to(ROOT)),
-                       "B": str((run / "tries" / f"{b['try_id']}.png").relative_to(ROOT))},
-                      folder / "sheets" / f"{row['pair']}.png")
-                rows.append(row)
+    rows = []
+    for card, first, second, references in contests:
+        references = [f"materials/card_examples/{i}.png" for i in references]
+        for a, b in ((first, second), (second, first)):
+            row = {"pair": f"q{len(rows):03d}", "card": card, "A": a, "B": b}
+            sheet({"references": references, "A": str((run / "tries" / f"{a}.png").relative_to(ROOT)),
+                   "B": str((run / "tries" / f"{b}.png").relative_to(ROOT))}, folder / "sheets" / f"{row['pair']}.png")
+            rows.append(row)
     batches = [rows[i:i + 8] for i in range(0, len(rows), 8)]
     first_image = len(taught) + 1
     lesson_list = "; ".join(f"image {i + 1}: {note}" for i, (_, note) in enumerate(taught))
@@ -369,7 +362,7 @@ def choose(run, briefs, history, rater="claude-opus-5-5"):
     notes = f"\n{notes.read_text('utf-8')}\n" if notes.exists() else ""
 
     def one(index):
-        out = folder / f"pairs_{variant}_{index:02d}.json"
+        out = folder / f"pairs_{index:02d}.json"
         if out.exists():
             return load_json(out)
         batch = batches[index]
@@ -395,21 +388,39 @@ def choose(run, briefs, history, rater="claude-opus-5-5"):
     if any(r is None for r in results):
         raise RuntimeError("the art director gave no answer for some pairs. Rerun to continue")
     by_pair = {r["pair"]: r for r in rows}
-    wins = {t["try_id"]: 0 for tries in options.values() for t in tries}
+    wins = {t: 0 for _, a, b, _ in contests for t in (a, b)}
     for result in results:
         for answer in result["pairs"]:
-            row = by_pair[answer["pair"]]
             if answer["closer"] in ("A", "B"):
-                wins[row[answer["closer"]]] += 1
+                wins[by_pair[answer["pair"]][answer["closer"]]] += 1
+    save_json(folder / "wins.json", wins)
+    return wins
+
+
+def choose(run, briefs, history, rater="claude-opus-5-5"):
+    """Mark each card's best candidate: most pairwise wins, ties to the earliest draw."""
+    import itertools
+
+    options = {b["id"]: [t for t in history[b["id"]] if t["passed"]] or history[b["id"]] for b in briefs}
+    contests = [(b["id"], x["try_id"], y["try_id"], b["references"])
+                for b in briefs for x, y in itertools.combinations(options[b["id"]], 2)]
+    wins = judge_pairs(run, f"pick_{briefs[0]['variant']}", contests, rater) if contests else {}
     unsure = []
     for brief in briefs:
-        tries = sorted(options[brief["id"]], key=lambda t: -wins[t["try_id"]])
+        tries = sorted(options[brief["id"]], key=lambda t: -wins.get(t["try_id"], 0))
         tries[0]["chosen"] = True
         if len(tries) > 1 and wins[tries[0]["try_id"]] - wins[tries[1]["try_id"]] <= 1:
             unsure.append(brief["id"])
-    save_json(folder / f"picks_{variant}.json", {"wins": wins, "unsure": unsure})
     if unsure:
         print(f"unsure picks, worth a human look: {', '.join(unsure)}", flush=True)
+
+
+def better_edits(run, label, edits, references, rater="claude-opus-5-5"):
+    """Edited try ids that beat the draft they were made from. edits: (card id, draft try id, edited try id)."""
+    if not edits:
+        return set()
+    wins = judge_pairs(run, label, [(card, draft, edited, references[card]) for card, draft, edited in edits], rater)
+    return {edited for _, draft, edited in edits if wins[edited] > wins[draft]}
 
 
 def review_variant(run, variant, round_number, briefs, history, rater):
