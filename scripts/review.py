@@ -59,13 +59,6 @@ DIRECTOR_SCHEMA = strict({
     "style_text": text(),
     "cards": array(strict({"pair": text(), "keep": {"type": "boolean"}, "note": text()})),
     "summary": text()})
-PICK_SCHEMA = strict({"picks": array(strict({"card": text(), "pick": {"type": "integer"},
-                                            "confidence": {"type": "integer", "minimum": 1, "maximum": 5}, "why": text()}))})
-# On two drawings the director agreed with the user 76% of the time at confidence 4 (prefer.py). Choosing among three,
-# it says 3 for nearly every card, so only 2 and below are flagged. That cut is not validated.
-SURE = 3
-
-
 def card_image(card):
     return Image.open(ROOT / card["file"]).convert("RGB").resize(SIZE, Image.LANCZOS)
 
@@ -334,54 +327,87 @@ def try_record(run, try_id, **extra):
             "full": run / "full" / f"{try_id}.png", "real": False, **extra}
 
 
-def candidate_sheet(real, paths, out):
-    """A real card and the numbered candidates of a new card, two to a row."""
-    tiles = [labelled(card_image(real), "REAL")]
-    tiles += [labelled(card_image({"file": str(path.relative_to(ROOT))}), str(i)) for i, path in enumerate(paths, 1)]
-    rows = (len(tiles) + 1) // 2
-    sheet = Image.new("RGB", (SIZE[0] * 2 + 12, rows * (SIZE[1] + 12)), "white")
-    for index, tile in enumerate(tiles):
-        sheet.paste(tile, (index % 2 * (SIZE[0] + 12), index // 2 * (SIZE[1] + 12)))
-    sheet.save(out)
-    return out
-
-
 def lessons_for():
     return [entry for label in LESSON_ROUNDS for entry in twin_entries(label)[0] if entry[0]["twin"] in LESSONS]
 
 
 def choose(run, briefs, history, rater="claude-opus-5-5"):
-    """Mark each card's best candidate, judged by eye beside a real card."""
+    """Mark each card's best candidate by pairwise judgement, every pair in both orders.
+
+    Shown three candidates at once, the director picked whatever sat in the second slot, ten cards of ten, and
+    explained it by size. Two drawings under the card's real references, both orders, is the framing that agreed with
+    the user (61% on 216 decided pairs, scripts/prefer.py) and cancels position.
+    """
+    import itertools
+    from concurrent.futures import ThreadPoolExecutor
+
+    from prefer import pairs as decided_pairs, sheet
+    from tune import lessons as lesson_images
+
     folder = run / "choose"
     (folder / "sheets").mkdir(parents=True, exist_ok=True)
-    real = {c["id"]: c for c in real_cards()}
-    lessons = lesson_sheets(lessons_for(), "staging_detail", folder)
-    sheets, options = [], {}
+    taught = lesson_images(decided_pairs())
+    variant = briefs[0]["variant"]
+    rows, options = [], {}
     for brief in briefs:
         tries = [t for t in history[brief["id"]] if t["passed"]] or history[brief["id"]]
-        # Shuffled: in order, the director picked candidate 2 for nine of ten western cards, by position
-        tries = random.Random(f"{run.name}{brief['id']}").sample(tries, len(tries))
         options[brief["id"]] = tries
-        paths = [run / "tries" / f"{t['try_id']}.png" for t in tries]
-        sheets.append(candidate_sheet(real[brief["references"][0]], paths, folder / "sheets" / f"{brief['id']}.png"))
-    listing = "\n".join(f"{brief['id']} ({brief['card']['name']}) is image {i + len(lessons) + 1}" for i, brief in enumerate(briefs))
+        references = [f"materials/card_examples/{i}.png" for i in brief["references"]]
+        for first, second in itertools.combinations(tries, 2):
+            for a, b in ((first, second), (second, first)):
+                row = {"pair": f"q{len(rows):03d}", "card": brief["id"], "A": a["try_id"], "B": b["try_id"],
+                       "references": references}
+                sheet({"references": references, "A": str((run / "tries" / f"{a['try_id']}.png").relative_to(ROOT)),
+                       "B": str((run / "tries" / f"{b['try_id']}.png").relative_to(ROOT))},
+                      folder / "sheets" / f"{row['pair']}.png")
+                rows.append(row)
+    batches = [rows[i:i + 8] for i in range(0, len(rows), 8)]
+    first_image = len(taught) + 1
+    lesson_list = "; ".join(f"image {i + 1}: {note}" for i, (_, note) in enumerate(taught))
+    brief_text = (AGENTS / "art_director.md").read_text("utf-8")
     notes = AGENTS / "director_notes.md"
     notes = f"\n{notes.read_text('utf-8')}\n" if notes.exists() else ""
-    prompt = (f"{(AGENTS / 'art_director.md').read_text('utf-8')}{notes}\n\nThe first {len(lessons)} images are lessons: the label "
-              "shows which card is REAL and which was GENERATED, with a lens below. Study which way the differences run. "
-              "Each later image shows one REAL card, of another object, and numbered candidates for a new card:\n"
-              f"{listing}\nFor each new card, pick the candidate that could sit beside the real card unnoticed: true "
-              "proportions, no invented extras, instantly read as the object. Reply with the card id, the number and your "
-              "confidence 1-5 that the art lead would pick the same.")
-    answer = ask(rater, prompt, [*lessons, *sheets], PICK_SCHEMA)
-    if not answer:
-        raise RuntimeError("the art director gave no picks. Rerun to continue")
-    picks = {p["card"]: p["pick"] for p in answer["picks"]}
+
+    def one(index):
+        out = folder / f"pairs_{variant}_{index:02d}.json"
+        if out.exists():
+            return load_json(out)
+        batch = batches[index]
+        listing = ", ".join(f"{r['pair']} is image {i + first_image}" for i, r in enumerate(batch))
+        prompt = (f"{brief_text}{notes}\nEach image shows real cards from the game on top, marked REAL, and below them "
+                  f"two drawings of the same object, A and B, made by an image model. Images 1 to {first_image - 1} are "
+                  f"lessons: the art lead marked the drawing they found closer to the real cards ({lesson_list}). Learn "
+                  "which way the differences run from them, and trust them over any idea of what game art should look "
+                  f"like. Then judge the test pairs ({listing}). Which drawing is closer in look to the real cards above "
+                  "it: rendering, shape, color, light, finish, and whether it is built like a real object? Answer A, B "
+                  "or neither, with confidence 1-5, and say why in one sentence.")
+        schema = strict({"pairs": array(strict({"pair": {"type": "string", "enum": [r["pair"] for r in batch]},
+                                                "closer": {"type": "string", "enum": ["A", "B", "neither"]},
+                                                "confidence": {"type": "integer", "minimum": 1, "maximum": 5},
+                                                "why": text()}))})
+        result = ask(rater, prompt, [p for p, _ in taught] + [folder / "sheets" / f"{r['pair']}.png" for r in batch], schema)
+        if result:
+            save_json(out, result)
+        return result
+
+    with ThreadPoolExecutor(4) as pool:
+        results = list(pool.map(one, range(len(batches))))
+    if any(r is None for r in results):
+        raise RuntimeError("the art director gave no answer for some pairs. Rerun to continue")
+    by_pair = {r["pair"]: r for r in rows}
+    wins = {t["try_id"]: 0 for tries in options.values() for t in tries}
+    for result in results:
+        for answer in result["pairs"]:
+            row = by_pair[answer["pair"]]
+            if answer["closer"] in ("A", "B"):
+                wins[row[answer["closer"]]] += 1
+    unsure = []
     for brief in briefs:
-        tries = options[brief["id"]]
-        tries[min(max(picks.get(brief["id"], 1), 1), len(tries)) - 1]["chosen"] = True
-    save_json(folder / f"picks_{briefs[0]['variant']}.json", answer)
-    unsure = [p["card"] for p in answer["picks"] if p.get("confidence", 0) < SURE and len(options.get(p["card"], [])) > 1]
+        tries = sorted(options[brief["id"]], key=lambda t: -wins[t["try_id"]])
+        tries[0]["chosen"] = True
+        if len(tries) > 1 and wins[tries[0]["try_id"]] - wins[tries[1]["try_id"]] <= 1:
+            unsure.append(brief["id"])
+    save_json(folder / f"picks_{variant}.json", {"wins": wins, "unsure": unsure})
     if unsure:
         print(f"unsure picks, worth a human look: {', '.join(unsure)}", flush=True)
 
