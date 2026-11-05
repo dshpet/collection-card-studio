@@ -8,8 +8,8 @@ The first run looked off to a human, yet every automatic check passed it. This f
 - **Style is settled as a band.** The final style, r3 and r9 are near ties for the user, and no tone round beat the final style.
 - **Construction is the main complaint.** Blender blockouts fix built, multi-part objects and take the charm out of simple forms, so the planner models only built objects. No model judges construction above chance.
 - **Comparison works where scores fail.** The art director picks the user's side of a pair 61% of the time, about 77% when confident. CSD against the same object's real card agrees with the user's closest pick above chance.
-- **Edits by note mostly hurt.** 14 of 20 lost to their drafts, so an edit stays only if it wins.
-- **Better-matched references do not make better drawings.** Search-picked references were nearer hidden cards but drew no closer, so search only breaks ties.
+- **Edits by note mostly hurt.** 16 of 22 lost to their drafts, and a second round kept none, so an edit stays only if it wins and the pipeline reviews once.
+- **The brief decides the drawing.** Search-picked references, and five instead of three, drew no clearly closer to hidden cards. Within the brief, the colors line outweighs the subject: an accent named as a gem draws a gem even when the subject says no gem. Words do not hold a shape or a camera; a Blender model does.
 - **The game's cast can be drawn on new cards and stay itself,** best in one go with its cutouts attached.
 
 ## How the gap was measured, 2026-11-02
