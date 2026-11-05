@@ -12,6 +12,16 @@ Findings on the references: [SYNTHESIS](analysis/SYNTHESIS.md). What was wrong w
 .venv/bin/python -B scripts/make_set.py "Western" --wishes "A set for a Movie collection" --variants 3 --run western-final
 ```
 
+```mermaid
+flowchart LR
+    T[Theme and wishes] --> P[Plan] --> R[References] --> M[Blender model] --> D[Draw candidates]
+    D --> C[Check] --> CH[Choose pairwise] --> RV[Review and edit] --> V[Variants]
+    A[(Reference analysis)] --> P & R & C
+    L[(Lessons)] --> P
+    RV -- edit outcomes --> X[(Experience)] --> RV
+    U[Producer ratings] -- proposed lessons --> L
+```
+
 | Stage | What happens |
 |---|---|
 | Plan | Claude Sonnet plans the variants by rules taken from the real sets and by the producer's [lessons](analysis/lessons.md). A second call flags cards that could upset players |
