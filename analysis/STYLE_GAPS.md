@@ -232,10 +232,11 @@ The reference collection has one cast, cut out by `scripts/cast.py`: the man, th
 - **Direct is best for the director, and by eye on par with figure.** The figure arm keeps an asked outfit better (the green hoodie), and direct composes more freely. Direct takes one step instead of three.
 - **So character cards are drawn directly.** `make_set.py --cast N` plans N character cards per variant with the cast's cutouts attached. The default is 0, since the movie brief asks for no gold cards, though Music Fest shows that character cards without gold frames exist. Cards showing the cast stay out of git. The user has not yet rated these arms: the rating page has them, blind, under Cast.
 
-## Three smaller checks, 2026-11-05 night
+## Smaller checks, 2026-11-05 night
 
 - **Five references instead of three.** Codex takes up to five images. The forty twins drawn with the same three references plus two more came out nearer the real card on 26 of 40 by CSD (p 0.24), and the director preferred them 21 to 17. A lean, not a clear gain, so cards keep three references.
 - **Invented extras come from the colors line.** The sheriff star's jewel was in its hero colors, "golden yellow with a small red gem in the center", put there to meet the rule of one accent hue. Writing "plain ... and no gem" in the subject left the jewel in 3 of 3 draws. Moving the red onto a part the subject names, the ring, removed it in 3 of 3 (`experiments/plain_check.py`). The planner's lesson now says the accent colors a named part and never adds one.
+- **No topic checker.** A text check of whether each card alone names its topic flagged 60 to 76% of the cards in draft plans for the film sets, and 77 of 123 cards in the game's own sets, such as Bottle and Sneakers in Sports and Tea Cup in Countrystead. It cannot tell a weak set from a real one, so it was not added. Real sets use plenty of everyday objects that read through the set, so the planner's lesson on this, which came from the user's ratings, is not made stricter.
 - **One review round is enough.** Across every run so far, edits from a first review round were kept 6 of 11 times and from a second round 0 of 11. The second round costs nine specialist calls, the director, the edits and their judging per variant, so `make_set.py` now reviews once by default.
 
 ## Limits
