@@ -26,7 +26,8 @@ from estimate import write_masks
 from form import CARD_FORM, card_schema
 from measure import measure_card
 from rate import ask_claude, ask_codex, card_prompt
-from style import BLOCKOUT, CATEGORY_RULES, EDIT, PATTERNS, STYLE
+from cast import LOOKS, identity_references
+from style import BLOCKOUT, CAST_STYLE, CATEGORY_RULES, EDIT, PATTERNS, STYLE
 
 SIZE = (430, 480)
 CANDIDATES = 3
@@ -61,10 +62,20 @@ MODEL_RULE = ("build_model: true for a built object of several rigid parts that 
               "rigging. false for a simple or organic form: an animal, plant, food, garment, hat, boot, a single solid "
               "or a soft object. A 3D model fixes how parts connect but strips the charm from simple forms.")
 DECIDE_SCHEMA = strict({"cards": {"type": "array", "items": strict({"id": text(), "build_model": {"type": "boolean"}})}})
-PLAN_SCHEMA = strict({
-    "title": text(), "story": text(),
-    "variants": {"type": "array", "items": strict({"cards": {"type": "array", "items": CARD_SCHEMA}})},
-})
+
+
+def plan_schema(cast=0):
+    """The plan's form. With cast cards, a card may be category 5 and names the cast members it shows."""
+    card = CARD_SCHEMA
+    if cast:
+        card = strict({**CARD_SCHEMA["properties"],
+                       "object_class": {"type": "string", "enum": OBJECT_CLASSES + ["character"]},
+                       "category": {"type": "string", "enum": ["1", "2", "3", "4", "5"]},
+                       "cast": {"type": "array", "items": {"type": "string", "enum": list(LOOKS)}}})
+    return strict({"title": text(), "story": text(),
+                   "variants": {"type": "array", "items": strict({"cards": {"type": "array", "items": card}})}})
+
+
 MODEL_SCHEMA = strict({"model": text()})
 SENSITIVE_SCHEMA = strict({"flagged": {"type": "array", "items": strict({"name": text(), "why": text()})}})
 LOOK_SCHEMA = strict({"ok": {"type": "boolean"}, "problems": {"type": "array", "items": text()}, "model": text()})
@@ -83,7 +94,19 @@ def decide_models(briefs):
         brief["card"]["build_model"] = decided[f"c{i:02d}"]
 
 
-def plan_prompt(theme, wishes, variants, knowledge):
+def cast_rule(cast):
+    if not cast:
+        return "No characters or people"
+    looks = "; ".join(f"the {name}, {look}" for name, look in LOOKS.items())
+    count = "one card in each version shows" if cast == 1 else f"{cast} cards in each version show"
+    return (f"Exactly {count} the game's own cast, as the real sets' "
+            f"late character cards do: {looks}. A character card is category 5 with pattern full_scene and "
+            "object_class character. cast names the one or two who appear, subject is a small, funny moment from this "
+            "topic in one sentence, and they may wear the topic's outfit. Every other card shows no character or person "
+            "and has an empty cast")
+
+
+def plan_prompt(theme, wishes, variants, knowledge, cast=0):
     examples = "\n".join(
         f"{example['title']}: " + "; ".join(
             f"{card['name']} [{card['object_class']}, cat {card['category']}, {card['pattern']}]"
@@ -99,10 +122,10 @@ Rules learned from the game's real sets:
 - Card names: 1-2 plain words.
 - Pick the first things anyone would name for the topic: instantly recognizable objects with a simple, distinctive silhouette.
 - Every object must belong to this specific topic, not to the wider collection. A film genre set shows that genre's world, not generic cinema items such as film reels or popcorn.
-- No characters or people, no brands, logos or real franchises. An animal may appear as an object, at most once in a set. No weapons of any kind, toy or sci-fi ones included. No blood or gore. Keep dark topics playful.
+- {cast_rule(cast)}. No brands, logos or real franchises. An animal may appear as an object, at most once in a set. No weapons of any kind, toy or sci-fi ones included. No blood or gore. Keep dark topics playful.
 - Cards carry no text, so skip objects that need readable words to make sense.
 - Real sets use {knowledge['set_ranges']['object_classes'][0]}-{knowledge['set_ranges']['object_classes'][1]} object classes and {knowledge['set_ranges']['scale_classes'][0]}-{knowledge['set_ranges']['scale_classes'][1]} real-world sizes, from handheld things to vehicles and buildings.
-- Every version uses all four art categories: 1 floating object, 2 object on a plain ledge, 3 object on a real surface, 4 object in an environment. Use 2-4 of category 1, 1-2 of category 2, 2-4 of category 3 and 1-5 of category 4.
+- Every version uses all four art categories: 1 floating object, 2 object on a plain ledge, 3 object on a real surface, 4 object in an environment. Use 2-4 of category 1, 1-2 of category 2, 2-4 of category 3 and 1-5 of category 4{' besides the character cards' if cast else ''}.
 - For category 4 use pattern full_scene. Otherwise pick a graphic pattern.
 - subject: one plain sentence on what to draw, with the two or three features that make it recognizable. Name the object and its parts only, with no mood, style or props.
 - hero_colors are the object's natural colors plus one small accent in another hue, which nearly all real cards have. Give every card a backdrop whose color contrasts with the hero, and use at least six different backdrop hues across a set.
@@ -118,7 +141,7 @@ Real sets from the game, as examples:
 {examples}"""
 
 
-def plan_problems(plan):
+def plan_problems(plan, cast=0):
     problems = []
     if len(plan["title"].split()) > 3:
         problems.append("the title must be 1-3 words")
@@ -128,8 +151,13 @@ def plan_problems(plan):
         names.append({card["name"].lower() for card in cards})
         if len(cards) != 10:
             problems.append(f"version {index} must have exactly ten cards")
-        if {card["category"] for card in cards} != {"1", "2", "3", "4"}:
+        if {card["category"] for card in cards} - {"5"} != {"1", "2", "3", "4"}:
             problems.append(f"version {index} must use all four categories")
+        characters = [card for card in cards if card["category"] == "5"]
+        if len(characters) != cast or any(not card.get("cast") for card in characters):
+            problems.append(f"version {index} must have exactly {cast} character cards, each naming its cast")
+        if any(card.get("cast") for card in cards if card["category"] != "5"):
+            problems.append(f"version {index}: only category 5 cards may show the cast")
         if len(names[-1]) != len(cards):
             problems.append(f"version {index} repeats a card")
         problems += [f"card name too long: {c['name']}" for c in cards if len(c["name"].split()) > 2]
@@ -140,20 +168,22 @@ def plan_problems(plan):
     return problems
 
 
-def make_plan(theme, wishes, variants, knowledge):
-    prompt = plan_prompt(theme, wishes, variants, knowledge)
-    plan = ask_claude(prompt, None, PLAN_SCHEMA)
-    problems = plan_problems(plan)
+def make_plan(theme, wishes, variants, knowledge, cast=0):
+    prompt = plan_prompt(theme, wishes, variants, knowledge, cast)
+    schema = plan_schema(cast)
+    plan = ask_claude(prompt, None, schema)
+    problems = plan_problems(plan, cast)
     if problems:
         plan = ask_claude(f"{prompt}\n\nYour last answer had these problems, fix them: {problems}\n"
-                          f"Last answer: {json.dumps(plan)}", None, PLAN_SCHEMA)
-    plan["problems"] = plan_problems(plan)
+                          f"Last answer: {json.dumps(plan)}", None, schema)
+    plan["problems"] = plan_problems(plan, cast)
     flagged = sensitive_cards(plan)
     if flagged:
         plan = ask_claude(f"{prompt}\n\nThese cards may upset players, replace them with other objects and keep every "
-                          f"rule: {flagged}\nLast answer: {json.dumps(plan)}", None, PLAN_SCHEMA)
-        plan["problems"] = plan_problems(plan)
+                          f"rule: {flagged}\nLast answer: {json.dumps(plan)}", None, schema)
+        plan["problems"] = plan_problems(plan, cast)
         plan["sensitive"] = sensitive_cards(plan)
+    plan["cast"] = cast
     return plan
 
 
@@ -165,7 +195,17 @@ Flag every card that could offend, upset or sadden some players: death and buria
     return answer["flagged"]
 
 
+def cast_brief(card):
+    """The brief for a character card: the cast cutouts come first among the attached images."""
+    who = " and ".join(f"the {name}" for name in card["cast"])
+    same = "The character" if len(card["cast"]) == 1 else "Each character"
+    return "\n".join([CAST_STYLE.format(who=who, same=same), f"Subject: {card['subject']}",
+                      f"Staging: {CATEGORY_RULES['5']}", f"Setting: {card['surface_or_setting']}, under {card['backdrop_colors']}."])
+
+
 def card_brief(card):
+    if card["category"] == "5":
+        return cast_brief(card)
     backdrop = PATTERNS[card["pattern"]].format(topic=card.get("topic", "simple"))
     lines = [STYLE, f"Subject: {card['subject']}", f"Hero colors: {card['hero_colors']}.",
              f"Staging: {CATEGORY_RULES[card['category']]}",
@@ -254,9 +294,23 @@ def make_briefs(plan, cards):
     planned = [(variant, index, card) for variant, entry in enumerate(plan["variants"], 1)
                for index, card in enumerate(entry["cards"], 1)]
     likeness = Search().confidence([card["subject"] for _, _, card in planned])
-    return [{"id": f"v{variant}_{index:02d}", "variant": variant, "card": {**card, "topic": plan["title"]},
-             "references": [c["id"] for c in pick_references(card, cards, chance)]}
-            for (variant, index, card), chance in zip(planned, likeness)]
+    torch.cuda.empty_cache()  # SigLIP is done; the GPU is needed for masks and shading later
+    briefs, firsts = [], defaultdict(set)
+    for (variant, index, card), chance in zip(planned, likeness):
+        brief = {"id": f"v{variant}_{index:02d}", "variant": variant, "card": {**card, "topic": plan["title"]}}
+        if card["category"] == "5":
+            # Codex takes five images: cutouts of the cast first, then two real character cards
+            each = 3 if len(card["cast"]) == 1 else 2
+            cutouts = [str(p.relative_to(ROOT)) for name in card["cast"] for p in identity_references(name, each)][:3]
+            if not all((ROOT / path).exists() for path in cutouts):
+                raise RuntimeError("cast cutouts are missing: run scripts/cast.py find, then label")
+            brief["cast_references"] = cutouts
+            brief["references"] = [c["id"] for c in pick_references(card, cards, chance, 5 - len(cutouts), firsts[variant])]
+        else:
+            brief["references"] = [c["id"] for c in pick_references(card, cards, chance, taken=firsts[variant])]
+        firsts[variant].add(brief["references"][0])
+        briefs.append(brief)
+    return briefs
 
 
 def draw_card(run, brief, attempt, notes, use_references, edit=None):
@@ -266,6 +320,8 @@ def draw_card(run, brief, attempt, notes, use_references, edit=None):
     if out.exists():
         return try_id
     references = [ROOT / f"materials/card_examples/{i}.png" for i in brief["references"]] if use_references else []
+    if brief.get("cast_references") and not edit:
+        references = [ROOT / path for path in brief["cast_references"]] + references
     blockout = run / "models" / f"{brief['id']}.png"
     if edit:
         prompt = EDIT.format(notes="\n".join(notes))
@@ -348,13 +404,13 @@ def check_tries(run, tries, knowledge, workers):
     return tries
 
 
-def record_edits(run, round_number, edited, before, notes, kept):
-    """Every edit and whether it beat its draft, for experience.py."""
+def record_edits(run, round_number, drawn, before, notes, kept):
+    """Every edit drawn and whether it beat its draft, for experience.py. An edit that failed its checks was not kept."""
     path = run / "edits.json"
-    rows = [r for r in (load_json(path) if path.exists() else []) if r["edit"] not in {e["try_id"] for e in edited}]
-    rows += [{"run": run.name, "card": e["brief_id"], "name": e["card"]["name"], "round": round_number,
-              "note": notes[e["brief_id"]], "draft": before[e["brief_id"]], "edit": e["try_id"],
-              "kept": e["try_id"] in kept} for e in edited]
+    rows = [r for r in (load_json(path) if path.exists() else []) if r["edit"] not in {e["try_id"] for e in drawn}]
+    rows += [{"run": str(run.relative_to(ROOT / "runs")), "card": e["brief_id"], "name": e["card"]["name"],
+              "round": round_number, "note": notes[e["brief_id"]], "draft": before[e["brief_id"]], "edit": e["try_id"],
+              "kept": e["try_id"] in kept} for e in drawn]
     save_json(path, rows)
 
 
@@ -411,6 +467,7 @@ def main():
     parser.add_argument("--no-references", action="store_true", help="draw from text alone, as a control")
     parser.add_argument("--no-blockouts", action="store_true", help="draw from the brief without a Blender model first")
     parser.add_argument("--run", help="folder name under runs/, by default the theme")
+    parser.add_argument("--cast", type=int, default=0, help="character cards per variant, drawn with the game's cast")
     args = parser.parse_args()
 
     slug = re.sub(r"\W+", "-", args.theme.lower()).strip("-") + ("-noref" if args.no_references else "")
@@ -423,7 +480,7 @@ def main():
     if args.plan:
         save_json(plan_path, load_json(ROOT / args.plan))
     if not plan_path.exists():
-        save_json(plan_path, make_plan(args.theme, args.wishes, args.variants, knowledge))
+        save_json(plan_path, make_plan(args.theme, args.wishes, args.variants, knowledge, args.cast))
     plan = load_json(plan_path)
     print("plan:", plan["title"], "|", plan.get("problems") or "no problems", flush=True)
 
@@ -436,7 +493,7 @@ def main():
         if any("build_model" not in brief["card"] for brief in briefs):
             decide_models(briefs)
             save_json(briefs_path, briefs)
-        built = [brief for brief in briefs if brief["card"]["build_model"]]
+        built = [brief for brief in briefs if brief["card"]["build_model"] and brief["card"]["category"] != "5"]
         with ThreadPoolExecutor(args.workers) as pool:
             renders = list(pool.map(lambda brief: model_card(run, brief, args.rater), built))
         print(f"models: {sum(r is not None for r in renders)} of {len(built)} rendered, "
@@ -463,34 +520,54 @@ def main():
     if args.review_rounds:
         from review import better_edits, choose, review_variant
 
+        # Each round's drafts and outcome, so a rerun neither redoes a finished round nor mistakes a kept edit for a draft
+        rounds_path = run / "rounds.json"
+        rounds = load_json(rounds_path) if rounds_path.exists() else {}
         for variant in range(1, len(plan["variants"]) + 1):
-            chosen = [b for b in briefs if b["variant"] == variant and history[b["id"]]]  # a card with no drawing waits
-            if not chosen:
+            chosen = [b for b in briefs if b["variant"] == variant]
+            waiting = [b["id"] for b in chosen if not history[b["id"]]]
+            if waiting:  # picks and reviews are made for the whole variant at once
+                print(f"variant {variant} waits for a drawing of {', '.join(waiting)}: rerun to continue", flush=True)
                 continue
             if not any(t.get("chosen") for b in chosen for t in history[b["id"]]):
                 choose(run, chosen, history)
             save_json(run / "check.json", history)
             for round_number in range(1, args.review_rounds + 1):
+                key = f"{variant}_{round_number}"
+                state = rounds.setdefault(key, {})
+                if "kept" in state:
+                    if not state["notes"]:
+                        break
+                    continue
                 notes = review_variant(run, variant, round_number, chosen, history, args.rater)
                 print(f"variant {variant} review {round_number}: {len(notes)} of {len(chosen)} cards need edits", flush=True)
+                kept = set()
+                if notes:
+                    state.setdefault("before", {b["id"]: best_try(history[b["id"]])["try_id"] for b in chosen})
+                    save_json(rounds_path, rounds)
+                    before = state["before"]
+                    attempt = args.candidates + round_number
+                    jobs = [(b, [notes[b["id"]]], run / "tries" / f"{before[b['id']]}.png") for b in chosen if b["id"] in notes]
+                    draw_and_check(jobs, attempt)
+                    drawn = [t for b in chosen if b["id"] in notes for t in history[b["id"]]
+                             if t["try_id"] == f"{b['id']}_{attempt}"]
+                    edited = [e for e in drawn if e.get("passed") or not e.get("issues")]
+                    # An edit is obeyed strongly and can make a card worse, so it stays only if it beats its draft
+                    kept = better_edits(run, f"edit_{variant}_{round_number}",
+                                        [(e["brief_id"], before[e["brief_id"]], e["try_id"]) for e in edited],
+                                        {b["id"]: b["references"] for b in chosen}, args.rater)
+                    for entry in edited:
+                        if entry["try_id"] in kept:
+                            for old in history[entry["brief_id"]]:
+                                old.pop("chosen", None)
+                            entry["chosen"] = True
+                    record_edits(run, round_number, drawn, before, notes, kept)
+                    print(f"variant {variant} review {round_number}: kept {len(kept)} of {len(drawn)} edits", flush=True)
+                    save_json(run / "check.json", history)
+                state.update(notes=len(notes), kept=sorted(kept))
+                save_json(rounds_path, rounds)
                 if not notes:
                     break
-                before = {b["id"]: best_try(history[b["id"]])["try_id"] for b in chosen}
-                attempt = args.candidates + round_number
-                jobs = [(b, [notes[b["id"]]], run / "tries" / f"{before[b['id']]}.png") for b in chosen if b["id"] in notes]
-                edited = [e for e in draw_and_check(jobs, attempt) if e.get("passed") or not e.get("issues")]
-                # An edit is obeyed strongly and can make a card worse, so it stays only if it beats its draft
-                kept = better_edits(run, f"edit_{variant}_{round_number}",
-                                    [(e["brief_id"], before[e["brief_id"]], e["try_id"]) for e in edited],
-                                    {b["id"]: b["references"] for b in chosen}, args.rater)
-                for entry in edited:
-                    if entry["try_id"] in kept:
-                        for old in history[entry["brief_id"]]:
-                            old.pop("chosen", None)
-                        entry["chosen"] = True
-                record_edits(run, round_number, edited, before, notes, kept)
-                print(f"variant {variant} review {round_number}: kept {len(kept)} of {len(edited)} edits", flush=True)
-                save_json(run / "check.json", history)
 
     deliver(run, plan, briefs, history)
     collect_experience()

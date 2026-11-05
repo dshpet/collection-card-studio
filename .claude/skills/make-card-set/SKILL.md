@@ -25,4 +25,4 @@ The theme is required. Wishes are optional. Do not ask about anything else.
 
 4. If the producer names a problem that will recur, such as an object type to avoid, add it as a line under Planning in `analysis/lessons.md`.
 
-The run needs the Codex and Claude CLIs logged in and Blender on the PATH. To start a topic over, delete both `runs/<slug>` and `runs/review/<slug>`.
+The run needs the Codex and Claude CLIs logged in and Blender on the PATH. A theme that was run before continues in its old folder, so to start a topic fresh, give a new folder name with `--run <name>` and never delete an earlier run.

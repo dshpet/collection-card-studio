@@ -20,12 +20,16 @@ EXPERIENCE = ANALYSIS / "experience.json"
 
 def lessons(section):
     """The rules of one section of lessons.md, without their sources."""
-    part = LESSONS.read_text("utf-8").split(f"## {section}\n", 1)[1].split("\n## ", 1)[0]
+    text = LESSONS.read_text("utf-8")
+    if f"## {section}\n" not in text:
+        print(f"warning: no ## {section} section in {LESSONS.name}, so no lessons are used", flush=True)
+        return []
+    part = text.split(f"## {section}\n", 1)[1].split("\n## ", 1)[0]
     return [re.sub(r"\s*\*\(.*\)\*$", "", line) for line in part.splitlines() if line.startswith("- ")]
 
 
 def collect():
-    rows = [row for path in sorted((ROOT / "runs").glob("*/edits.json")) for row in load_json(path)]
+    rows = [row for path in sorted((ROOT / "runs").rglob("edits.json")) for row in load_json(path)]
     save_json(EXPERIENCE, rows)
     print(f"{len(rows)} edits, {sum(r['kept'] for r in rows)} kept")
     return rows
@@ -66,10 +70,14 @@ def propose(rater):
         "repeat a current lesson or a rule about rendering style. For each, give the evidence, citing the comments.\n\n"
         "Current lessons:\n" + "\n".join(lessons("Planning")) + "\n\nComments:\n" + "\n".join(comments)
         + "\n\nEdits:\n" + "\n".join(edits), None, PROPOSE_SCHEMA, rater)
-    text = LESSONS.read_text("utf-8").rstrip("\n") + "\n"
-    for lesson in answer["lessons"]:
-        text += f"- {lesson['rule']} *({date.today()}: {lesson['evidence']})*\n"
-    LESSONS.write_text(text, "utf-8")
+    text = LESSONS.read_text("utf-8")
+    if "## Proposed\n" not in text:
+        text = text.rstrip("\n") + "\n\n## Proposed\n"
+    head, tail = text.split("## Proposed\n", 1)
+    section, rest = (tail.split("\n## ", 1) + [""])[:2]
+    added = "".join(f"- {lesson['rule']} *({date.today()}: {lesson['evidence']})*\n" for lesson in answer["lessons"])
+    section = section.rstrip("\n") + ("\n" if section.strip() else "\n") + added
+    LESSONS.write_text(head + "## Proposed\n" + section + (f"\n## {rest}" if rest else ""), "utf-8")
     print(f"proposed {len(answer['lessons'])} lessons in {LESSONS.relative_to(ROOT)}")
 
 

@@ -141,6 +141,17 @@ ROLES = {
 }
 
 
+def fresh_cache(folder, key):
+    """Cached answers in folder belong to one set of pairs. When the pairs change, a rerun drops them, so an answer
+    can never land on a different card."""
+    folder.mkdir(parents=True, exist_ok=True)
+    path = folder / "key.json"
+    if path.exists() and load_json(path) != key:
+        for old in folder.glob("*.json"):
+            old.unlink()
+    save_json(path, key)
+
+
 def judge_sheet(row, out, labels=("A", "B")):
     """Real cards on top, marked REAL, and two drawings of the same object below, A and B."""
     font = ImageFont.load_default(30)
@@ -201,9 +212,9 @@ def real_record(card):
             "measured": card["measured"]}
 
 
-def real_cards():
+def real_cards(characters=False):
     return [real_record(c) for c in load_json(ANALYSIS / "cards.json")
-            if c["form"]["staging"]["art_category"] != "5"]
+            if characters or c["form"]["staging"]["art_category"] != "5"]
 
 
 def anchor(folder, exclude, seed=5):
@@ -242,7 +253,7 @@ def field(measured, path):
 
 def evidence(role, pairs):
     """Measured numbers for the role's fields, per pair, with the real range for that category."""
-    real = [c for c in load_json(ANALYSIS / "cards.json") if c["form"]["staging"]["art_category"] != "5"]
+    real = load_json(ANALYSIS / "cards.json")
     lines = []
     for pair in pairs:
         category = next(c["category"] for c in (pair["A"], pair["B"]) if c.get("category"))
@@ -384,6 +395,7 @@ def judge_pairs(run, label, contests, rater="claude-opus-5-5"):
             judge_sheet({"references": references, "A": str((run / "tries" / f"{a}.png").relative_to(ROOT)),
                    "B": str((run / "tries" / f"{b}.png").relative_to(ROOT))}, folder / "sheets" / f"{row['pair']}.png")
             rows.append(row)
+    fresh_cache(folder, rows)
     batches = [rows[i:i + 8] for i in range(0, len(rows), 8)]
     first_image = len(taught) + 1
     lesson_list = "; ".join(f"image {i + 1}: {note}" for i, (_, note) in enumerate(taught))
@@ -458,7 +470,7 @@ def review_variant(run, variant, round_number, briefs, history, rater):
     from common import best_try
     from measure import measure_card
 
-    real = {c["id"]: c for c in real_cards()}
+    real = {c["id"]: c for c in real_cards(characters=True)}  # a character card's first reference is one
     entries, ids = [], {}
     for brief in briefs:
         best = best_try(history[brief["id"]])
@@ -468,13 +480,15 @@ def review_variant(run, variant, round_number, briefs, history, rater):
     for record, _ in entries:
         record["measured"] = measure_card(record, run / "derived")
     used = {i for brief in briefs for i in brief["references"]}
-    spare = [c for c in real.values() if c["id"] not in used and c["id"] not in twin_entries("baseline")[1]]
+    spare = [c for c in real.values() if c["id"] not in used and c["id"] not in twin_entries("baseline")[1]
+             and c["category"] != "5"]
     rng = random.Random(f"{run.name}{variant}{round_number}")
     entries += [tuple(rng.sample(spare, 2)) for _ in range(CONTROLS)]
     rng.shuffle(entries)
 
     name = f"{run.name}/v{variant}r{round_number}"
     pairs = blind_pairs(entries, name)
+    fresh_cache(ROOT / "runs" / "review" / name, [[p["pair"], p["A"]["id"], p["B"]["id"]] for p in pairs])
     reports = specialists(name, pairs, lessons_for(), used, rater, list(ROLES))
     direction = direct(name, pairs, reports, None, rater)
     if not direction:

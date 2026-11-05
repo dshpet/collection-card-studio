@@ -11,7 +11,12 @@ CATEGORY_RULES = {
     "2": "The object stands on a plain colored ledge and casts a soft shadow, large on the card. Behind it is a simple graphic backdrop.",
     "3": "The object stands on a real material surface and casts a soft shadow, large on the card. The backdrop behind it stays simple and graphic, not a full scene.",
     "4": "A close view of the object in its real place, central and large. The setting is open and calm: a few large soft shapes, with nothing added around the object.",
+    "5": "The characters are central and large. The setting is a real place, simple and calm: a few large soft shapes.",
 }
+
+# Character cards. Tested in experiments/cast_trial.py: the cast stays itself when its cutouts are attached first.
+CAST_STYLE = """The first images show {who} from the game, cut out of real cards. The last images are real cards from the game. Draw one new card that could sit beside the real cards unnoticed: the same rendering, lighting, finish, color and level of detail. {same} stays exactly the same: face, body, proportions and colors.
+Draw only what the subject names. No text, letters, numbers, frame, border or watermark."""
 
 BLOCKOUT = """The attached images are real cards from the game, except the last one, which is a 3D blockout of a new card. The blockout is right about the object's shape, its parts, where each part attaches and what it rests on, and about the camera and the framing.
 Redraw the blockout as a finished card that could sit beside the real cards unnoticed: the same rendering, lighting, finish, color and level of detail. Keep every part, every connection, the pose, the camera and the framing exactly. Change only the surfaces: materials, bevels, shading and small details, and draw the backdrop and setting.

@@ -44,15 +44,18 @@ class Search:
         return [dict(zip(self.ids, column.tolist())) for column in chance.T]
 
 
-def pick_references(card, cards, likeness, count=3):
+def pick_references(card, cards, likeness, count=3, taken=()):
     """Real cards to attach to a new card's prompt: the same art category, the same backdrop pattern first, then the
     cards most likely to show the same kind of object (likeness, from Search).
 
     On 129 hidden real cards this keeps the backdrop pattern as often as matching labels did, and brings the references
-    nearer the hidden card (search.py test, analysis/search_test.json)."""
+    nearer the hidden card (search.py test, analysis/search_test.json). The first pick is the real card a blind review
+    sets beside this one, so it avoids taken: the first picks of the other cards in the variant."""
     pool = [c for c in cards if c["form"]["staging"]["art_category"] == card["category"]
             and "staging.art_category" not in c["disputed"]]
-    return sorted(pool, key=lambda c: (c["form"]["backdrop"]["pattern"] != card["pattern"], -likeness[c["id"]]))[:count]
+    ranked = sorted(pool, key=lambda c: (c["form"]["backdrop"]["pattern"] != card["pattern"], -likeness[c["id"]]))
+    first = next((c for c in ranked if c["id"] not in taken), ranked[0])
+    return [first] + [c for c in ranked if c is not first][:count - 1]
 
 
 def label_picks(card, cards, rng, count=3):

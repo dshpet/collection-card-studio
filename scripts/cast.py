@@ -94,7 +94,9 @@ def on_grey(path, size=None):
 
 
 def find_all():
+    """Cut out every figure. A figure found again with the same name and box keeps its labels."""
     find = segmenter()
+    known = {(r["id"], r["character"], tuple(r["box"])): r.get("labels") for r in load_json(CATALOG)} if CATALOG.exists() else {}
     records = []
     for card in cards():
         image = Image.open(ROOT / card["file"]).convert("RGB")
@@ -109,6 +111,9 @@ def find_all():
                             "area": round(float(mask.mean()), 3), "box": [int(v) for v in box],
                             "cut_by_edge": [side for side, cut in zip(("left", "top", "right", "bottom"), edges) if cut],
                             "file": str(path.relative_to(ROOT))})
+            labels = known.get((entry, name, tuple(records[-1]["box"])))
+            if labels:
+                records[-1]["labels"] = labels
         print(card["id"], [r["character"] for r in records if r["card"] == card["id"]], flush=True)
     save_json(CATALOG, records)
 
