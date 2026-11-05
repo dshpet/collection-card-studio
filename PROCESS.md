@@ -104,3 +104,7 @@ The first run looked off to a human, while every check passed it. Details are in
 - Asked the same of construction, on 93 pairs the user labelled works or broken. Every judge was at chance, confident or not. Construction is secured by the Blender model and a human look, not by a checker.
 - Removed the checkers. A Blender model is now optional per card: the planner models built, multi-part objects and draws simple forms from the brief. On the final cards that matches the user's ratings 16 of 22 times.
 - Tried the production loop of parameters, feedback and measurement (`scripts/param.py`). On the forty twins the final style is lighter, with shallower darks and lower contrast, while gloss and highlights match. One line on deeper shade moved the darks onto the real cards on average, but not card by card, and greyed the shadows. A second line restored shadow color but read as glossier. In a blind check the user preferred neither round to the final style (final 11, p2 9, p1 4, same 16). Their comments were about construction, which tone cannot fix.
+
+## 2026-11-05: Pipeline test run
+
+- Ran Western and Sci-Fi through the current pipeline as a test, not as final sets. It found literal part counts (a two-wheeled wagon), a director pick that followed screen position, review edits that lost to their drafts 7 times in 10, an invented jewel, and characters in a movie set. Picks and edits are now pairwise in both orders, and an edit stays only if it wins.

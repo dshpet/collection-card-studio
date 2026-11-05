@@ -127,6 +127,16 @@ The production pattern: split the style into parameters, measure each on the out
 - **Rater fatigue.** The user reports growing blind to differences, and 16 of 40 answers were "same". The one measure that tracks the user is wearing out.
 
 
+## Pipeline test run, 2026-11-05
+
+Western and Sci-Fi went through the current pipeline into `runs/western-2` and `runs/sci-fi-2`, one variant each, as a test. They are not the final sets. Horror was stopped at planning.
+
+- **Literal counts.** "A covered wagon with two large spoked wheels" became a two-wheeled cart. The planner and the modeller now count parts as the whole real object has them.
+- **The three-up pick followed screen position.** The director picked the second slot for ten of ten cards, always as "the largest", while subject areas differed by under 2 points. Shuffling only changed which candidate sat there. Picks are now pairwise, both orders, the framing that agreed with the user. The result is honest: candidates of one card are nearly identical, and most picks are close (8 of 10 and 6 of 10 unsure).
+- **Edits mostly made cards worse.** Judged pairwise against the drawing they replaced, Western's edits lost 7 of 10, each 2-0 in both orders. Sci-Fi kept 3 of 5 in round 1 and 0 of 5 in round 2. An edit now stays only if it beats its draft.
+- **Invented extras survive "draw only what the subject names".** Every sheriff star had a red jewel, which the user rejected before. It was removed by hand, which counts against autonomy, so it needs a pipeline rule.
+- **Characters slip in.** Sci-Fi planned a "friendly robot" and an "Alien Pet" with a face and a smile. The rule allows one animal as an object, and an alien counted as one. The movie-style reference sets have no characters.
+
 The first run looked off to a human, yet every automatic check passed it. This file records what was wrong, why the checks missed it, and what fixed it.
 
 ## How the gap was measured
