@@ -184,11 +184,12 @@ def sheet():
 
 
 def identity_references(name, count=3):
-    """The clearest real cutouts of a character, on grey: clean, as much body as possible, largest first."""
+    """The clearest real cutouts of a character, on grey: clean, in no outfit where there is one, as much body as
+    possible, largest first. A costume in a cutout tends to come along onto the new card."""
     order = {"full": 0, "most": 1, "upper": 2, "head": 3}
     mine = [r for r in load_json(CATALOG) if r["character"] == name and r.get("labels", {}).get("is_character")
             and r["labels"]["clean"]]
-    mine.sort(key=lambda r: (order[r["labels"]["body"]], -r["area"]))
+    mine.sort(key=lambda r: (r["labels"]["outfit"].lower() != "none", order[r["labels"]["body"]], -r["area"]))
     return [LIBRARY / "grey" / f"{r['id']}.png" for r in mine[:count]]
 
 

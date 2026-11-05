@@ -15,7 +15,8 @@ CATEGORY_RULES = {
 }
 
 # Character cards. Tested in experiments/cast_trial.py: the cast stays itself when its cutouts are attached first.
-CAST_STYLE = """The first images show {who} from the game, cut out of real cards. The last images are real cards from the game. Draw one new card that could sit beside the real cards unnoticed: the same rendering, lighting, finish, color and level of detail. {same} stays exactly the same: face, body, proportions and colors.
+# The outfit line, from experiments/outfit_check.py: without it, cutouts lent their costumes to new cards.
+CAST_STYLE = """The first images show {who} from the game, cut out of real cards. The cutouts show who each character is, not what it wears: dress it only as the subject says. The last images are real cards from the game. Draw one new card that could sit beside the real cards unnoticed: the same rendering, lighting, finish, color and level of detail. {same} stays exactly the same: face, body, proportions and colors.
 Draw only what the subject names. No text, letters, numbers, frame, border or watermark."""
 
 BLOCKOUT = """The attached images are real cards from the game, except the last one, which is a 3D blockout of a new card. The blockout is right about the object's shape, its parts, where each part attaches and what it rests on, and about the camera and the framing.

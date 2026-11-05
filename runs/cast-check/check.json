@@ -1,0 +1,129 @@
+{
+ "v1_01": [
+  {
+   "try_id": "v1_01_1",
+   "brief_id": "v1_01",
+   "card": {
+    "name": "Lasso Mix-up",
+    "subject": "The man in a cowboy hat swings a rope lasso and has accidentally caught the cow around her horns, who looks surprised.",
+    "object_class": "character",
+    "category": "5",
+    "pattern": "full_scene",
+    "hero_colors": "brown hat and mustache, white and black spotted cow, tan rope with a red knot",
+    "backdrop_colors": "bright blue sky",
+    "surface_or_setting": "sunny dusty prairie",
+    "build_model": false,
+    "cast": [
+     "man",
+     "cow"
+    ],
+    "topic": "Western"
+   },
+   "style": 0.854,
+   "misses": [
+    "surface_finish.detail_subject",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Cowboy roping cow",
+     "object_class": "character",
+     "real_world_scale": "body_sized",
+     "subject_count": "pair"
+    },
+    "staging": {
+     "art_category": "5",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_02": [
+  {
+   "try_id": "v1_02_1",
+   "brief_id": "v1_02",
+   "card": {
+    "name": "Rooster Rodeo",
+    "subject": "The rooster in a tiny cowboy hat crows on a hay bale while the sheep sits nearby wearing a red bandana.",
+    "object_class": "character",
+    "category": "5",
+    "pattern": "full_scene",
+    "hero_colors": "orange rooster, white fleece sheep, tan hat, red bandana",
+    "backdrop_colors": "bright pink and yellow sky",
+    "surface_or_setting": "sunny ranch yard",
+    "build_model": false,
+    "cast": [
+     "rooster",
+     "sheep"
+    ],
+    "topic": "Western"
+   },
+   "style": 0.839,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Rooster and sheep",
+     "object_class": "animal",
+     "real_world_scale": "body_sized",
+     "subject_count": "pair"
+    },
+    "staging": {
+     "art_category": "5",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 4,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true
+  }
+ ],
+ "v1_03": [
+  {
+   "try_id": "v1_03_1",
+   "brief_id": "v1_03",
+   "card": {
+    "name": "Gold Find",
+    "subject": "The pig in a prospector hat holds up a giant gold nugget and grins while a pickaxe-free pan sits at its feet.",
+    "object_class": "character",
+    "category": "5",
+    "pattern": "full_scene",
+    "hero_colors": "pink pig, brown hat, shiny gold nugget",
+    "backdrop_colors": "bright sky blue and yellow",
+    "surface_or_setting": "sunny desert creek",
+    "build_model": false,
+    "cast": [
+     "pig"
+    ],
+    "topic": "Western"
+   },
+   "style": 0.839,
+   "misses": [
+    "composition_hierarchy.center_y"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Gold prospecting pig",
+     "object_class": "character",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "5",
+     "support": "in_environment",
+     "background_type": "exterior_scene",
+     "background_detail": 4,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true
+  }
+ ]
+}

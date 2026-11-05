@@ -241,6 +241,10 @@ The reference collection has one cast, cut out by `scripts/cast.py`: the man, th
 - **A third candidate rarely matters.** Over 146 cards in ten runs, the first draw failed its checks 46 times. A second candidate passed for 12 of those and only the third for 2 more. Candidates of one card are near-identical, so the pick between them is close too. Cards keep three candidates for the final sets; `--candidates 2` costs a third fewer drawings and loses about 1 card in 70.
 - **One review round is enough.** Across every run so far, edits from a first review round were kept 6 of 11 times and from a second round 0 of 11. The second round costs nine specialist calls, the director, the edits and their judging per variant, so `make_set.py` now reviews once by default.
 
+## Character outfits, 2026-11-05 night
+
+The three character cards of the Western cast plan, drawn through the pipeline (`runs/cast-check`), kept the outfits of the cutouts they were drawn from: the cow wore the red life vest and sunglasses of the jet-ski card, the man the hiker's backpack, the pig the straw hat of its train card. One sentence in the cast prompt, "the cutouts show who each character is, not what it wears: dress it only as the subject says", removed the backpack and the sunglasses but not the vest (`experiments/outfit_check.py`). With cutouts in no outfit ranked first as well, the cow came out plain and the pig in the asked prospector's hat (`runs/cast-check-2`). The man has no cutout without an outfit, and still borrowed overalls. One draw per card.
+
 ## A geometric construction check, 2026-11-05 night
 
 No model judges construction, but a Blender blockout is real geometry, so loose parts can be found without a judge. `scripts/blockout.py` now reports each group of hero parts that touches nothing holding it: with a floor, ledge or setting, every group of touching parts must reach it, and a floating object must hang together. Two parts touch when their surfaces cross or come within 1% of the hero's height.

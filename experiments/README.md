@@ -15,3 +15,4 @@ One-off studies behind the pipeline's decisions. Each ran once, its results are 
 | `plain_check.py` | Where does the invented jewel on the sheriff star come from? | From the colors line: an accent hue named as a gem. Saying "no gem" does not help |
 | `shape_check.py` | Does naming the canonical shape keep a front-on clock round? | No: roundness 0.95 either way, against 0.995 on the real card |
 | `shared_plans.py` | Do variants drift less if they share the most iconic objects? | Plans only, for the producer: `runs/plans/*-shared.json` |
+| `outfit_check.py` | Do character cards borrow the outfits of their cutouts? | Yes; a prompt line and outfit-free cutouts first fix it for the animals |
