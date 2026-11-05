@@ -121,3 +121,4 @@ The first run looked off to a human, while every check passed it. Details are in
 - Smaller checks. The invented jewel on the sheriff star came from the planned colors, "with a small red gem": saying "no gem" in the subject kept it in 3 of 3 draws, putting the red on the ring removed it in 3 of 3, and the lesson now says so. Five references instead of three leaned better but not clearly, so cards keep three. A second review round never produced a kept edit, 0 of 11 against 6 of 11 for the first, so the pipeline reviews once.
 - A three-card smoke test of the changed pipeline, with one cast card, ran end to end (`runs/smoke`).
 - Tried a planning check that each card alone names its topic. It flagged 77 of 123 cards in the game's own sets as well, so it was not added.
+- Measured whether naming a shape keeps it: "a perfect circle" left the clock face's roundness at 0.95 against 0.995 on the real card. Words do not hold the camera either; the Blender model does.
