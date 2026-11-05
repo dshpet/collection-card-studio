@@ -11,7 +11,8 @@ Identity is measured by cutting the character out of each result with SAM 3 and 
 in DINOv2, against the other cast members as a baseline.
 
     cast_trial.py draw
-    cast_trial.py measure
+    cast_trial.py measure     identity, by SAM 3 cutouts against the real cutouts in DINOv2
+    cast_trial.py judge       the art director's pairwise preference between arms
 """
 
 import sys
@@ -24,12 +25,62 @@ from concurrent.futures import ThreadPoolExecutor
 
 from common import ANALYSIS, ROOT, load_json, save_json
 
+import numpy as np
 from PIL import Image
 
-from cast import BLEND, CAST, LIBRARY, PLATE, body_box, draw_figure, identity_references, on_grey, paste
+from cast import CAST, GREY, LIBRARY, LOOKS, identity_references, on_grey
 from draw import draw
 
 RUN = ROOT / "runs" / "cast_trial"
+
+# Where one character stands on a real card, from analysis/cast.json: the median box of the 23 one-character cards
+# spans 70% of the width and 68% of the height, centred at 47% across, its bottom at 97% (cut by the edge on 10).
+LAYOUT = {"height": 0.70, "width": 0.75, "center": 0.47, "bottom": 0.97}
+FIGURE = """The attached images show one character from a mobile game, cut out of real cards. Draw the same character again, unchanged: the same face, eyes, {look}, body shape, proportions, colors and rendering.
+{action}
+Full body, alone, on a transparent background. Draw only what is named. No shadow, no ground, no text."""
+PLATE = """The attached images are real cards from the game. Draw the setting of one new card that could sit beside them unnoticed: the same rendering, lighting, finish, color and level of detail.
+Setting: {setting}
+There is no character in it. Keep the middle of the card open, where a character will stand. The setting is a real place, simple and calm: a few large soft shapes. Draw only what is named. No text, letters, numbers, frame, border or watermark."""
+BLEND = """The first images are real cards from the game. The last one is a draft of a new card: a character was pasted onto a drawn setting. Redraw the draft as one finished card that could sit beside the real cards unnoticed.
+Make only small corrections: light and color on the character from the setting's light, a soft contact shadow where it touches the ground, clean edges, and {interaction}
+Keep the character exactly: its face, body, proportions, colors and outfit. Keep the setting, the camera and the framing."""
+
+
+def draw_figure(name, action, out):
+    """Pre-generate a character in a new pose or outfit, alone on a transparent ground."""
+    from draw import draw
+
+    return draw(FIGURE.format(look=LOOKS[name].split(" with ", 1)[-1], action=action), identity_references(name), out,
+                transparent=True)
+
+
+def body_box(path, name, find):
+    """The character's own body inside a pre-drawn figure, without the props it holds, from SAM 3."""
+    figure = Image.open(path).convert("RGBA")
+    ground = Image.new("RGB", figure.size, GREY)
+    ground.paste(figure, (0, 0), figure)
+    found = find(ground, CAST[name])
+    if not found:
+        return None
+    ys, xs = np.nonzero(max(found, key=lambda f: f[1].sum())[1])
+    return [int(xs.min()), int(ys.min()), int(xs.max()) + 1, int(ys.max()) + 1]
+
+
+def paste(plate, figures, size=(430, 480)):
+    """Figures on a setting. Each figure: path, center across, height share and bottom, all of the card, and the body
+    box inside the figure (body_box). The body, not the props it holds, is scaled to the height."""
+    card = Image.open(plate).convert("RGB").resize(size, Image.LANCZOS)
+    for figure in figures:
+        image = Image.open(figure["path"]).convert("RGBA")
+        x0, y0, x1, y1 = figure.get("body") or image.getchannel("A").point(lambda a: 255 if a > 16 else 0).getbbox()
+        scale = figure["height"] * size[1] / (y1 - y0)
+        image = image.resize((round(image.width * scale), round(image.height * scale)), Image.LANCZOS)
+        left = round(figure["center"] * size[0] - (x0 + x1) / 2 * scale)
+        top = round(figure.get("bottom", LAYOUT["bottom"]) * size[1] - y1 * scale)
+        card.paste(image, (left, top), image)
+    return card
+
 SIZE = (430, 480)
 DIRECT = """The first images show {who} from a mobile game, cut out of real cards. The last images are real cards from the game. Draw one new card that could sit beside the real cards unnoticed: the same rendering, lighting, finish, color and level of detail. {same} stays exactly the same: face, body, proportions and colors.
 Subject: {subject}
@@ -146,7 +197,7 @@ def pasted2(card, n, bodies):
     for name, part in card["cast"].items():
         path = LIBRARY / "drawn" / f"{card['id']}_{name}_{n}.png"
         single = len(card["cast"]) == 1
-        figures.append({"path": path, "center": part["center"], "body": bodies[str(path)],
+        figures.append({"path": path, "center": part["center"], "body": bodies[str(path.relative_to(ROOT))],
                         "height": PASTE2["height"] if single else part["height"] * 0.95,
                         "bottom": PASTE2["bottom"] if single or name == "man" else 0.97})
     composite = RUN / "composites" / f"{card['id']}_paste2_{n}.png"
@@ -185,7 +236,7 @@ def draw_all(workers, arms):
                 for n in range(1, DRAWS + 1):
                     path = LIBRARY / "drawn" / f"{card['id']}_{name}_{n}.png"
                     if path.exists():
-                        bodies[str(path)] = body_box(path, name, find)
+                        bodies[str(path.relative_to(ROOT))] = body_box(path, name, find)
         save_json(RUN / "bodies.json", bodies)
 
     def paste2(card, n):
@@ -281,14 +332,45 @@ def measure():
                   "margin>0", sum(r["margin"] > 0 for r in found))
 
 
+def judge():
+    """The art director compares arms two at a time, both orders, beside real cards with the same characters."""
+    import itertools
+    from collections import Counter
+
+    from review import judge_pairs
+
+    arms = ("direct", "paste", "paste2", "figure")
+    contests = []
+    for card in CARDS:
+        references = [path.stem for path in scene_references(card)]
+        for n in range(1, DRAWS + 1):
+            drawn = [arm for arm in arms if (RUN / "tries" / f"{card['id']}_{arm}_{n}.png").exists()]
+            contests += [(card["id"], f"{card['id']}_{a}_{n}", f"{card['id']}_{b}_{n}", references)
+                         for a, b in itertools.combinations(drawn, 2)]
+    wins = judge_pairs(RUN, "arms", contests)
+    duels = Counter()
+    for _, a, b, _ in contests:
+        if wins[a] != wins[b]:
+            duels[(a.split("_")[-2], b.split("_")[-2], "first" if wins[a] > wins[b] else "second")] += 1
+    total = Counter()
+    for try_id, count in wins.items():
+        total[try_id.split("_")[-2]] += count
+    save_json(RUN / "judged.json", {"wins_by_arm": dict(total), "duels": {" ".join(k): v for k, v in duels.items()}})
+    print("wins by arm:", dict(total))
+    for (a, b, side), count in sorted(duels.items()):
+        print(f"{a} vs {b}: {side} won {count}")
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("mode", choices=("draw", "measure"))
+    parser.add_argument("mode", choices=("draw", "measure", "judge"))
     parser.add_argument("--workers", type=int, default=4)
     parser.add_argument("--arms", nargs="+", default=["direct", "paste", "paste2", "figure"])
     args = parser.parse_args()
     if args.mode == "draw":
         draw_all(args.workers, args.arms)
+    elif args.mode == "judge":
+        judge()
     else:
         measure()
 

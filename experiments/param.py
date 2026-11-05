@@ -221,7 +221,7 @@ def summarize(label):
 
 
 def draw_variant(label, replace, workers):
-    from make_set import card_brief, draw_card
+    from make_set import draw_card
     import make_set
 
     old, new = replace

@@ -15,7 +15,7 @@ Findings on the references: [SYNTHESIS](analysis/SYNTHESIS.md). What was wrong w
 | Stage | What happens |
 |---|---|
 | Plan | Opus plans the variants by rules taken from the real sets and by the producer's [lessons](analysis/lessons.md). A second call flags cards that could upset players |
-| References | Each card gets three real cards: the same art category and backdrop pattern, then the most likely same kind of object, by text search over the card images (`search.py`) |
+| References | Each card gets three real cards: the same art category, backdrop pattern and object class, and among equals the most likely same kind of object, by text search over the card images (`search.py`) |
 | Model | For built objects of several parts, Opus writes a Blender model, looks at its render and fixes it, up to two rounds. Simple forms skip this |
 | Draw | Codex draws three candidates per card, restyling the model's render where there is one |
 | Check | Each candidate is measured like the references: per-category ranges, distance to the real cards in a style embedding, and a blind look at what it shows and how it is staged |
@@ -24,7 +24,7 @@ Findings on the references: [SYNTHESIS](analysis/SYNTHESIS.md). What was wrong w
 | Edit | Codex applies the notes. An edit stays only if it beats its draft, and every outcome is saved for later runs |
 | Deliver | `runs/<slug>/variant_N/`, a sheet per variant and `report.md` |
 
-Rerunning continues where it stopped. `--candidates 1 --review-rounds 0` gives a quick draft. To place a variant in the game's window: `scripts/screen.py western --variant 1 --color blue`.
+Rerunning continues where it stopped; `--run <name>` starts a theme fresh in a new folder. `--candidates 1 --review-rounds 0` gives a quick draft. `--cast 1` adds one character card per variant, drawn with the game's cast. To place a variant in the game's window: `scripts/screen.py western --variant 1 --color blue`.
 
 ## Teach it
 
@@ -34,7 +34,7 @@ Rerunning continues where it stopped. `--candidates 1 --review-rounds 0` gives a
 
 ## The cast
 
-The reference collection has one cast: a man with glasses and a mustache, a pig, a sheep, a cow and a rooster. `scripts/cast.py find` cuts them out of the reference cards with SAM 3, `label` records view, pose and outfit, and `sheet` shows them. The cutouts stay out of git. `experiments/cast_trial.py` tests drawing the cast on new cards.
+The reference collection has one cast: a man with glasses and a mustache, a pig, a sheep, a cow and a rooster. `scripts/cast.py find` cuts them out of the reference cards with SAM 3, `label` records view, pose and outfit, and `sheet` shows them. These real cutouts are the approved library: a character card attaches the clearest ones, and the cast stays itself. Pre-drawing a character and pasting it in looked pasted, and the art director preferred the direct drawing ([STYLE_GAPS](analysis/STYLE_GAPS.md)). Cutouts and cards showing the cast stay out of git.
 
 ## Setup
 

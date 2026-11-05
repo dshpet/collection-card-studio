@@ -9,6 +9,8 @@ The first run looked off to a human, yet every automatic check passed it. This f
 - **Construction is the main complaint.** Blender blockouts fix built, multi-part objects and take the charm out of simple forms, so the planner models only built objects. No model judges construction above chance.
 - **Comparison works where scores fail.** The art director picks the user's side of a pair 61% of the time, about 77% when confident. CSD against the same object's real card agrees with the user's closest pick above chance.
 - **Edits by note mostly hurt.** 14 of 20 lost to their drafts, so an edit stays only if it wins.
+- **Better-matched references do not make better drawings.** Search-picked references were nearer hidden cards but drew no closer, so search only breaks ties.
+- **The game's cast can be drawn on new cards and stay itself,** best in one go with its cutouts attached.
 
 ## How the gap was measured, 2026-11-02
 
@@ -204,6 +206,31 @@ Western and Sci-Fi went through the current pipeline into `runs/western-2` and `
 - **Edits mostly made cards worse.** Judged pairwise against the drawing they replaced, Western's edits lost 7 of 10, each 2-0 in both orders. Sci-Fi kept 3 of 5 in round 1 and 0 of 5 in round 2. An edit now stays only if it beats its draft.
 - **Invented extras survive "draw only what the subject names".** Every sheriff star had a red jewel, which the user rejected before. It was removed by hand, which counts against autonomy. The planner now writes "plain" for parts an image model likes to decorate, a lesson in `analysis/lessons.md`.
 - **Characters slip in.** Sci-Fi planned a "friendly robot" and an "Alien Pet" with a face and a smile. The rule allows one animal as an object, and an alien counted as one. The movie-style reference sets have no characters.
+
+## Reference search, 2026-11-05 night
+
+`scripts/search.py` links text to the 160 card images with SigLIP 2, and gives a confidence for each match. Asked for "a wooden barrel" it finds Cargo Barrel at 0.75, and for a new topic's object, such as a cowboy hat, its closest real cards with a confidence near 0.
+
+- **Hidden cards.** Each of 129 real cards was hidden and its references picked from its own description. Ranking by likeness within the backdrop pattern brought the references nearer the hidden card than matching labels did: DINOv2 subject similarity 0.124 against 0.106, CSD 0.650 against 0.627, with random picks at 0.100 and 0.598. The backdrop pattern matched as often, 0.80.
+- **Drawings did not change.** The forty twins were drawn with each rule's references (`experiments/search_trial.py`). CSD put the search arm nearer the real card on 19 of 40 (p 0.35), and the director preferred the label arm 24 to 16. The mean difference, 0.003, is a sixth of the draw-to-draw spread. The brief decides the drawing, and references this similar move it little.
+- **So search breaks ties only.** References keep the label rule, category then backdrop pattern then object class, and search orders the equals, which were random before. On hidden cards that keeps class and pattern as before and brings the references nearer (DINOv2 0.117).
+- **No outliers to drop.** Within each category no reference card is an outlier in CSD, DINOv2 or SigLIP 2 (local outlier factor 1.44 at most), and the spaces disagree on which cards are odd. The most flagged are on-style cards with unusual staging, such as Aircon and Rock Guitar.
+
+## The cast on new cards, 2026-11-05 night
+
+The reference collection has one cast, cut out by `scripts/cast.py`: the man, the pig, the sheep, the cow and the rooster, 38 figures from 30 cards. Six character cards for the film genres, such as the pig lassoing its own tail or the cow in a ghost sheet, were drawn four ways, two draws each (`experiments/cast_trial.py`, 45 of 48 drawn):
+
+| Arm | How | Director's wins against the others |
+|---|---|---|
+| direct | The card in one go, real cutouts of the character attached first | 31 of 32 decided duels |
+| figure | The character pre-drawn alone, then the card drawn with that figure attached | 18 of 32 |
+| paste2 | The pre-drawn figure pasted on a drawn setting at the real cards' size, then redrawn with small corrections | 8 of 28 |
+| paste | The same, scaled by the figure's outline | 3 of 28 |
+
+- **Identity holds in every arm.** Cut out of each result by SAM 3, every figure found was nearer its own cast member than any other in DINOv2, by a margin of 0.21 to 0.22, as the real cutouts are to each other (0.22).
+- **Pasting looks pasted.** The redraw keeps the pasted size and pose, so characters stay small and stand in front of the setting rather than in it. A figure drawn without its setting cannot know the counter it should lean on: the man came out lying on the saloon bar in every arm that used his figure. One figure could not be drawn at all, twice.
+- **Direct is best for the director, and by eye on par with figure.** The figure arm keeps an asked outfit better (the green hoodie), and direct composes more freely. Direct takes one step instead of three.
+- **So character cards are drawn directly.** `make_set.py --cast N` plans N character cards per variant with the cast's cutouts attached. The default is 0, since the movie brief asks for no gold cards, though Music Fest shows that character cards without gold frames exist. Cards showing the cast stay out of git. The user has not yet rated these arms: the rating page has them, blind, under Cast.
 
 ## Limits
 

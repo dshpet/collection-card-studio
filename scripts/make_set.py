@@ -440,7 +440,8 @@ def deliver(run, plan, briefs, history):
                 continue
             best = best_try(tries)
             name = re.sub(r"\W+", "_", brief["card"]["name"].lower()).strip("_")
-            path = folder / f"{brief['id'][-2:]}_{name}.png"
+            cast = "_cast" if brief["card"]["category"] == "5" else ""  # the game's characters stay out of git
+            path = folder / f"{brief['id'][-2:]}{cast}_{name}.png"
             Image.open(run / "tries" / f"{best['try_id']}.png").save(path)
             paths.append(path)
             counts.update(best["misses"] + best["issues"])
@@ -448,7 +449,7 @@ def deliver(run, plan, briefs, history):
             lines.append(f"| {brief['card']['name']} | {brief['card']['category']} | {len(tries)} | {best['style']} | "
                          f"{'unsure pick' if best.get('unsure') else 'pass' if best['passed'] else 'review'} | {open_issues} |")
         if paths:
-            contact_sheet(paths, run / f"variant_{variant}.png")
+            contact_sheet(paths, run / f"variant_{variant}{'_cast' if any('_cast_' in p.name for p in paths) else ''}.png")
         lines.append("")
     lines += ["## Most common open issues", ""] + [f"- {key}: {value}" for key, value in counts.most_common(8)]
     (run / "report.md").write_text("\n".join(lines) + "\n", "utf-8")

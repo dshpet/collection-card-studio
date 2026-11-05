@@ -182,20 +182,6 @@ def sheet():
         print(name, len(mine))
 
 
-# Where one character stands on a real card, from analysis/cast.json: the median box of the 23 one-character cards
-# spans 70% of the width and 68% of the height, centred at 47% across, its bottom at 97% (cut by the edge on 10).
-LAYOUT = {"height": 0.70, "width": 0.75, "center": 0.47, "bottom": 0.97}
-FIGURE = """The attached images show one character from a mobile game, cut out of real cards. Draw the same character again, unchanged: the same face, eyes, {look}, body shape, proportions, colors and rendering.
-{action}
-Full body, alone, on a transparent background. Draw only what is named. No shadow, no ground, no text."""
-PLATE = """The attached images are real cards from the game. Draw the setting of one new card that could sit beside them unnoticed: the same rendering, lighting, finish, color and level of detail.
-Setting: {setting}
-There is no character in it. Keep the middle of the card open, where a character will stand. The setting is a real place, simple and calm: a few large soft shapes. Draw only what is named. No text, letters, numbers, frame, border or watermark."""
-BLEND = """The first images are real cards from the game. The last one is a draft of a new card: a character was pasted onto a drawn setting. Redraw the draft as one finished card that could sit beside the real cards unnoticed.
-Make only small corrections: light and color on the character from the setting's light, a soft contact shadow where it touches the ground, clean edges, and {interaction}
-Keep the character exactly: its face, body, proportions, colors and outfit. Keep the setting, the camera and the framing."""
-
-
 def identity_references(name, count=3):
     """The clearest real cutouts of a character, on grey: clean, as much body as possible, largest first."""
     order = {"full": 0, "most": 1, "upper": 2, "head": 3}
@@ -203,41 +189,6 @@ def identity_references(name, count=3):
             and r["labels"]["clean"]]
     mine.sort(key=lambda r: (order[r["labels"]["body"]], -r["area"]))
     return [LIBRARY / "grey" / f"{r['id']}.png" for r in mine[:count]]
-
-
-def draw_figure(name, action, out):
-    """Pre-generate a character in a new pose or outfit, alone on a transparent ground."""
-    from draw import draw
-
-    return draw(FIGURE.format(look=LOOKS[name].split(" with ", 1)[-1], action=action), identity_references(name), out,
-                transparent=True)
-
-
-def body_box(path, name, find):
-    """The character's own body inside a pre-drawn figure, without the props it holds, from SAM 3."""
-    figure = Image.open(path).convert("RGBA")
-    ground = Image.new("RGB", figure.size, GREY)
-    ground.paste(figure, (0, 0), figure)
-    found = find(ground, CAST[name])
-    if not found:
-        return None
-    ys, xs = np.nonzero(max(found, key=lambda f: f[1].sum())[1])
-    return [int(xs.min()), int(ys.min()), int(xs.max()) + 1, int(ys.max()) + 1]
-
-
-def paste(plate, figures, size=(430, 480)):
-    """Figures on a setting. Each figure: path, center across, height share and bottom, all of the card, and the body
-    box inside the figure (body_box). The body, not the props it holds, is scaled to the height."""
-    card = Image.open(plate).convert("RGB").resize(size, Image.LANCZOS)
-    for figure in figures:
-        image = Image.open(figure["path"]).convert("RGBA")
-        x0, y0, x1, y1 = figure.get("body") or image.getchannel("A").point(lambda a: 255 if a > 16 else 0).getbbox()
-        scale = figure["height"] * size[1] / (y1 - y0)
-        image = image.resize((round(image.width * scale), round(image.height * scale)), Image.LANCZOS)
-        left = round(figure["center"] * size[0] - (x0 + x1) / 2 * scale)
-        top = round(figure.get("bottom", LAYOUT["bottom"]) * size[1] - y1 * scale)
-        card.paste(image, (left, top), image)
-    return card
 
 
 def main():

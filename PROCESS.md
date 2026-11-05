@@ -108,3 +108,13 @@ The first run looked off to a human, while every check passed it. Details are in
 ## 2026-11-05: Pipeline test run
 
 - Ran Western and Sci-Fi through the current pipeline as a test, not as final sets. It found literal part counts (a two-wheeled wagon), a director pick that followed screen position, review edits that lost to their drafts 7 times in 10, an invented jewel, and characters in a movie set. Picks and edits are now pairwise in both orders, and an edit stays only if it wins.
+
+## 2026-11-05 night: Clean-up and the producer's notes
+
+- Moved the one-off studies to `experiments/` and cut the pipeline's imports of them. Brought the docs up to date and indexed every run.
+- An independent review of the changes found rerun hazards: after a failed draw, a rerun could apply review notes to the wrong cards, and a crash mid-round lost that round's edits. Both were fixed, and a simulated crash and rerun now recovers.
+- Checked the producer's notes against the pipeline. Measured parameters with deterministic tools, checked after drawing: done since 2026-11-02. Embedding space and clusters: done. Self-validation and iteration: done. Missing were an approved library, smart reference search and saved edit experience.
+- **Cast library.** SAM 3 cut the game's cast out of the reference cards: the man, pig, sheep, cow and rooster, 38 figures from 30 cards. Six film-genre character cards were drawn four ways. Drawn in one go with real cutouts attached, the cast stayed itself and the director preferred it in 31 of 32 duels. Pre-drawn figures pasted onto a setting looked pasted. `make_set.py --cast N` now adds character cards.
+- **Reference search.** SigLIP 2 links text to the card images with a confidence. References picked by likeness were nearer hidden real cards, but the drawings came out no closer on forty twins, so search only breaks the label rule's ties.
+- **Outliers.** None worth dropping: the most atypical reference cards are on-style cards with unusual staging.
+- **Experience.** Lessons from the producer's ratings moved from code to `analysis/lessons.md`, which a producer can edit. Every edit and whether it beat its draft is saved, and the director sees past notes. A model can propose new lessons for a person to accept.

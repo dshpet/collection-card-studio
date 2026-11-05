@@ -2,7 +2,7 @@
 to look at the cards at query time.
 
     search.py "a wooden barrel" "a pig"     the cards most likely to show each phrase
-    search.py test                           hidden-card test of reference picks: random, labels, search
+    search.py test                           hidden-card test of reference picks: random, labels, labels then search
 
 The card images were embedded once by embed.py (analysis/embeddings/siglip2_whole.npy). The confidence is SigLIP's own
 sigmoid: the chance that the phrase describes the card. It is low for a partial match and near 0 for no match.
@@ -45,15 +45,18 @@ class Search:
 
 
 def pick_references(card, cards, likeness, count=3, taken=()):
-    """Real cards to attach to a new card's prompt: the same art category, the same backdrop pattern first, then the
-    cards most likely to show the same kind of object (likeness, from Search).
+    """Real cards to attach to a new card's prompt: the same art category, then the same backdrop pattern and object
+    class, as labelled, and among equals the cards most likely to show the same kind of object (likeness, from Search).
 
-    On 129 hidden real cards this keeps the backdrop pattern as often as matching labels did, and brings the references
-    nearer the hidden card (search.py test, analysis/search_test.json). The first pick is the real card a blind review
-    sets beside this one, so it avoids taken: the first picks of the other cards in the variant."""
+    Ranking by likeness alone brought references nearer hidden real cards (search.py test) but made no difference to
+    the drawings (experiments/search_trial.py), so likeness only breaks the label rule's ties, which were random.
+    The first pick is the real card a blind review sets beside this one, so it avoids taken: the first picks of the
+    other cards in the variant."""
     pool = [c for c in cards if c["form"]["staging"]["art_category"] == card["category"]
             and "staging.art_category" not in c["disputed"]]
-    ranked = sorted(pool, key=lambda c: (c["form"]["backdrop"]["pattern"] != card["pattern"], -likeness[c["id"]]))
+    ranked = sorted(pool, key=lambda c: (c["form"]["backdrop"]["pattern"] != card["pattern"],
+                                         c["form"]["identity"]["object_class"] != card.get("object_class"),
+                                         -likeness[c["id"]]))
     first = next((c for c in ranked if c["id"] not in taken), ranked[0])
     return [first] + [c for c in ranked if c is not first][:count - 1]
 

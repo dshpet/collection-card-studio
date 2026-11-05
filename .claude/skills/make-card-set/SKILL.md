@@ -5,7 +5,7 @@ description: Produce a collection card set for a theme and free-form producer wi
 
 # Make a card set
 
-The theme is required. Wishes are optional. Do not ask about anything else.
+The theme is required. Wishes are optional. Do not ask about anything else. If the wishes ask for characters, add `--cast 1` (or 2): character cards show the game's own cast.
 
 1. Run this from the project root, in the background, because it takes about 40 minutes per variant. If it stops, the same command continues where it left off:
 
@@ -13,7 +13,7 @@ The theme is required. Wishes are optional. Do not ask about anything else.
    .venv/bin/python -B scripts/make_set.py "<Theme>" --wishes "<wishes>" --variants 3
    ```
 
-2. Show each variant's sheet, `runs/<slug>/variant_N.png`, and name the cards that `runs/<slug>/report.md` marks as `review`, `unsure pick` or `missing`.
+2. Show each variant's sheet, `runs/<slug>/variant_N.png` (`variant_N_cast.png` when it has character cards), and name the cards that `runs/<slug>/report.md` marks as `review`, `unsure pick` or `missing`.
 
 3. For a variant the producer likes, show it in the game's window:
 

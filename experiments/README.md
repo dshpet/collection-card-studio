@@ -10,5 +10,5 @@ One-off studies behind the pipeline's decisions. Each ran once, its results are 
 | `prefer.py` | Can a judge pick the closer of two drawings? | Yes, 61% for the director, 76-78% when confident. Construction: no judge beats chance |
 | `tune.py` | Can the director's notes be tuned automatically? | No: gains on the tuning half did not hold on held-out pairs |
 | `param.py` | Which measured style parameters are off, and does one line fix them? | Tone is off, but no tone round beat the final style for the user |
-| `cast_trial.py` | Can the game's characters appear on new cards and stay themselves? | See `runs/cast_trial/` |
-| `search_trial.py` | Do search-picked references bring drawings closer to the real card? | See `runs/search_trial/` |
+| `cast_trial.py` | Can the game's characters appear on new cards and stay themselves? | Yes, best drawn in one go with real cutouts attached. Pre-drawn and pasted figures look pasted |
+| `search_trial.py` | Do search-picked references bring drawings closer to the real card? | No measurable change, so search only breaks ties |
