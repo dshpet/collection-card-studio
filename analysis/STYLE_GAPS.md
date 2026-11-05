@@ -83,6 +83,26 @@ The 30 final cards, as chosen before and as redrawn from a modeller's blockout (
 - **Distance to the real cluster measures content.** Whole-card embeddings put old twins as close as final ones or closer, and new-topic cards far from all real cards whatever their style.
 - **With content held equal there is signal.** CSD puts the final twin nearer its real card than the old one in 29 of 40 (Wilcoxon p 0.0001), agrees with the user's closest pick 15 of 36 against 9 by chance (p 0.02), and predicts which twins fooled the user at AUC 0.65. It needs a real card of the same object, so it cannot score new set cards.
 
+## Pairwise against the user, 2026-11-05
+
+A lone 1-10 score failed, so `scripts/prefer.py` asks a different question: of two drawings of one object, beside its real card or cards, which is closer? Truth is 218 pairs the user already decided. 108 come from closest picks, 60 from the trial and 50 from set cards. The bar set before the run was about 70% agreement.
+
+| Judge | Agrees with the user | Closest / trial / set |
+|---|---:|---|
+| Art director (Opus) | 132/216, 61%, p 0.001 | 72/108, 32/59, 28/49 |
+| when its confidence is 4 of 5 | 37/49, 76% | |
+| Shape specialist | 128/204, 63%, p <0.001 | 68/105, 35/57, 25/42 |
+| Director and shape agree | 98/144, 68% | |
+| Specialist majority | 121/208, 58% | |
+| CSD similarity, no training | 128/218, 59%, p 0.006 | 73/108, 29/60, 26/50 |
+| Probe trained on the user's pairs | 129/218, 59% | 71/108, 27/60, 31/50 |
+
+- **Comparison works where a lone score did not.** Every reviewer is above chance on pairs, and below chance when scoring a lone card. `choose()` in `make_set.py` already compares, so it picks the user's side about 6 times in 10.
+- **Confidence carries information.** The director is right 76% of the time when it says 4 of 5, on a quarter of the pairs. This cut was chosen after seeing the results, so it needs fresh pairs to confirm.
+- **Viewpoint and composition are at chance.** Shape, finish, staging and value carry the signal.
+- **Clear preferences are still hard.** On graded pairs two or more grades apart, often construction, CSD agrees 20 of 49 times, the director 29 of 49 and shape 30 of 46.
+- **No judge reaches the bar.** Agreement is at most 63% over all pairs, against the user's own retest of 0.68 on grades.
+
 The first run looked off to a human, yet every automatic check passed it. This file records what was wrong, why the checks missed it, and what fixed it.
 
 ## How the gap was measured
