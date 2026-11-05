@@ -105,7 +105,7 @@ Rules learned from the game's real sets:
 - Real sets use {knowledge['set_ranges']['object_classes'][0]}-{knowledge['set_ranges']['object_classes'][1]} object classes and {knowledge['set_ranges']['scale_classes'][0]}-{knowledge['set_ranges']['scale_classes'][1]} real-world sizes, from handheld things to vehicles and buildings.
 - Every version uses all four art categories: 1 floating object, 2 object on a plain ledge, 3 object on a real surface, 4 object in an environment. Use 2-4 of category 1, 1-2 of category 2, 2-4 of category 3 and 1-5 of category 4.
 - For category 4 use pattern full_scene. Otherwise pick a graphic pattern.
-- subject: one plain sentence on what to draw, with the two or three features that make it recognizable. Name the object and its parts only, with no mood, style or props.
+- subject: one plain sentence on what to draw, with the two or three features that make it recognizable. Name the object and its parts only, with no mood, style or props. Give counts as the whole real object has them, not as one side shows them: a covered wagon has four wheels.
 - hero_colors are the object's natural colors plus one small accent in another hue, which nearly all real cards have. Give every card a backdrop whose color contrasts with the hero, and use at least six different backdrop hues across a set.
 - backdrop_colors are bright and clean, as in the real cards: sky blue, cyan, yellow, orange, purple, pink, grass green. Never dusty, muted, dull or dark. Skies stay clear and bright, even on dark topics.
 - surface_or_setting: the surface for categories 2-3 and the place for category 4, empty for category 1. Real sets reuse one or two ground materials across their cards, so reuse them too.

@@ -7,7 +7,7 @@ In the construction trial (`analysis/STYLE_GAPS.md`) a blockout cut broken cards
 ## Rules
 
 - **Build it as an engineer would.** Every part attaches to something or rests on something. Legs and supports reach the ground or a mount. Hinges, axles and pivots have the part they turn on. Cables, ropes and straps start and end at a real attachment, or end free and lie on a surface.
-- **True proportions and true counts.** Four legs where four belong, three fins, eight by eight squares. The game simplifies objects, so model the few main parts and leave out the small ones.
+- **True proportions and true counts.** Four legs where four belong, three fins, eight by eight squares. Build the whole real object even when the subject names only what one side shows: a covered wagon has four wheels, though a side view shows two. The game simplifies objects, so model the few main parts and leave out the small ones.
 - **Sturdy thin parts.** Legs, rails, handles, rims and cords are at least about 1/40 of the object's height across, or they vanish on a small card.
 - **Soft parts have weight and real ends.** Cloth hangs or wraps around a bar. A rope coil has a free end.
 - **Only what the card names.** Model the object and the named surface or place. No props.
