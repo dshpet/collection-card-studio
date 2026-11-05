@@ -121,3 +121,7 @@ The first run looked off to a human, while every check passed it. Details are in
 - **Cost.** A second review round never produced a kept edit, 0 of 11 against 6 of 11 for the first, so the pipeline reviews once. A third candidate rescued 2 of 146 cards, and stays for the final sets.
 - **Robustness.** Two independent reviews found rerun hazards: review notes landing on the wrong cards, lost edits after a crash, a changed candidate count passing a candidate off as an edit. All were fixed and checked with simulated crashes. Two three-card smoke tests, each with a cast card, ran end to end.
 - Draft plans for the three film sets wait in `runs/plans` for the producer.
+
+## 2026-11-06 night: Construction by geometry
+
+- Added a geometric check to the Blender blockouts: hero parts that touch nothing holding them. Over 200 model files it found early-round gaps the modeller had fixed later and three parts that float by design, and no loose part in a final model. The modeller now sees its result with each render.

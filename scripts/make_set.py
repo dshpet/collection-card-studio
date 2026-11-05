@@ -228,12 +228,22 @@ def blockout_brief(card):
 
 
 def render_model(source, out, look="plain"):
-    """Render a model file with scripts/blockout.py. Returns Blender's error, or None."""
+    """Render a model file with scripts/blockout.py. Returns Blender's error or None, and the parts that touch nothing."""
     out.unlink(missing_ok=True)
     done = subprocess.run(["blender", "-b", "--factory-startup", "--python-exit-code", "1", "--python",
                            str(ROOT / "scripts" / "blockout.py"), "--", str(source), str(out), look],
                           capture_output=True, text=True, timeout=600)
-    return None if out.exists() and not done.returncode else (done.stdout + done.stderr)[-1500:]
+    loose = next((json.loads(line[7:]) for line in done.stdout.splitlines() if line.startswith("LOOSE: ")), [])
+    return (None if out.exists() and not done.returncode else (done.stdout + done.stderr)[-1500:]), loose
+
+
+def loose_note(loose):
+    """The geometry check, in words for the modeller. Parts are named by their center and size."""
+    if not loose:
+        return ""
+    parts = "; ".join(f"a {p['part'].lower()} centered at {tuple(p['at'])}, size {tuple(p['size'])}" for p in loose)
+    return (f" A geometry check of the file found parts that touch nothing holding them: {parts}. Attach each to what "
+            "should hold it, unless it floats by design, such as a planet's ring or mist inside glass.")
 
 
 def model_card(run, brief, rater, look="plain", photos=()):
@@ -263,8 +273,8 @@ def model_card(run, brief, rater, look="plain", photos=()):
     for round_number in range(MODEL_ROUNDS + 1):
         candidate = folder / f"{brief['id']}_{round_number}.py"
         candidate.write_text(answer["model"], "utf-8")
-        error = render_model(candidate, folder / f"{brief['id']}_{round_number}.png", look)
-        log.append({"round": round_number, "error": error, "problems": answer.get("problems", [])})
+        error, loose = render_model(candidate, folder / f"{brief['id']}_{round_number}.png", look)
+        log.append({"round": round_number, "error": error, "loose": loose, "problems": answer.get("problems", [])})
         if not error:
             good = round_number
         if round_number == MODEL_ROUNDS:
@@ -276,8 +286,8 @@ def model_card(run, brief, rater, look="plain", photos=()):
         answer = ask_claude(f"{task}\n\nYour model file:\n```python\n{answer['model']}```\nThe image is its render, from the "
                             "card's camera. Check it against every rule above: could the object be built and work, does "
                             "every part attach or rest where it should, are the counts and proportions true, is it framed "
-                            "on its main body and read at once as the named object? If all is right, ok is true and model "
-                            "is empty. Otherwise list the problems and return the whole fixed file.",
+                            f"on its main body and read at once as the named object?{loose_note(loose)} If all is right, "
+                            "ok is true and model is empty. Otherwise list the problems and return the whole fixed file.",
                             folder / f"{brief['id']}_{round_number}.png", LOOK_SCHEMA, rater)
         if answer["ok"]:
             break

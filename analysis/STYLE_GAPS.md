@@ -241,6 +241,13 @@ The reference collection has one cast, cut out by `scripts/cast.py`: the man, th
 - **A third candidate rarely matters.** Over 146 cards in ten runs, the first draw failed its checks 46 times. A second candidate passed for 12 of those and only the third for 2 more. Candidates of one card are near-identical, so the pick between them is close too. Cards keep three candidates for the final sets; `--candidates 2` costs a third fewer drawings and loses about 1 card in 70.
 - **One review round is enough.** Across every run so far, edits from a first review round were kept 6 of 11 times and from a second round 0 of 11. The second round costs nine specialist calls, the director, the edits and their judging per variant, so `make_set.py` now reviews once by default.
 
+## A geometric construction check, 2026-11-06
+
+No model judges construction, but a Blender blockout is real geometry, so loose parts can be found without a judge. `scripts/blockout.py` now reports the hero parts that touch nothing holding them: with a floor, ledge or setting, every group of touching parts must reach it, and a floating object must hang together. Two parts touch when their surfaces cross or come within 1% of the hero's height.
+
+- **Over the 200 model files so far it flagged 14.** Early rounds had real gaps the modeller fixed later, such as a steam train's tender set apart from the engine and a wagon's loose hoops. Three final models float by design: a planet's ring, a station in orbit and mist inside a crystal ball. No final model had an unintended loose part, because the modeller's look at its render already catches what the camera shows.
+- **So it is a guard, not a measured gain.** The modeller now gets the loose parts' positions with each render and keeps a part that floats by design. The user's remaining complaints on blockout cards are about function, such as a ladder that leads nowhere, which no contact test sees.
+
 ## Limits
 
 Eight blind pairs per role is a small sample, and rounds are noisy. Reviewers are models, and on pairs of different objects they also raise false alarms on hidden real controls, so they guide edits and are not a gate. The human ratings come from one rater.

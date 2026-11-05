@@ -3,7 +3,11 @@
     blender -b --factory-startup --python scripts/blockout.py -- runs/trial/models/m16.py runs/trial/blockout/m16.png [soft]
 
 "soft" renders a smoother, stylized look: no clear coat, broad highlights, beveled edges in the shading, a larger
-light and more fill.
+light and more fill. "check" renders nothing and prints only the construction check.
+
+Every run prints a construction check as a line starting with LOOSE: the hero parts that touch nothing holding them.
+With a floor, ledge or setting, each group of touching hero parts must reach it. A floating object, with no setting,
+must be one group. Two parts touch when their surfaces cross or come within 1% of the hero's height.
 
 A model file sets SCENE and defines build(k), where k holds the helpers below. Parts are the hero unless made
 with setting=True. The hero is framed to the real cards' median box, about 80% by 75% of the card.
@@ -11,6 +15,7 @@ SCENE: backdrop as hex, azimuth (0 is front-on, positive puts the camera to the 
 and light "left" or "right".
 """
 
+import json
 import math
 import sys
 import types
@@ -18,6 +23,7 @@ import types
 import bpy
 from bpy_extras.object_utils import world_to_camera_view
 from mathutils import Euler, Vector
+from mathutils.bvhtree import BVHTree
 
 SIZE = (860, 960)
 BOX = (0.80, 0.75)
@@ -218,6 +224,76 @@ def hero_points():
     return points
 
 
+def surfaces():
+    """Every visible part as world-space vertices, a BVH tree and a bounding box. Light beams are effects, not parts."""
+    graph = bpy.context.evaluated_depsgraph_get()
+    parts = []
+    for obj in bpy.context.scene.objects:
+        if obj.type not in {"MESH", "CURVE"} or any(m and m.name.endswith("_beam") for m in obj.data.materials):
+            continue
+        evaluated = obj.evaluated_get(graph)
+        mesh = evaluated.to_mesh()
+        verts = [evaluated.matrix_world @ v.co for v in mesh.vertices]
+        polygons = [tuple(p.vertices) for p in mesh.polygons]
+        evaluated.to_mesh_clear()
+        if not verts or not polygons:
+            continue
+        low = Vector([min(v[i] for v in verts) for i in range(3)])
+        high = Vector([max(v[i] for v in verts) for i in range(3)])
+        parts.append({"obj": obj, "hero": obj.parent == ROOT, "verts": verts, "tree": BVHTree.FromPolygons(verts, polygons),
+                      "low": low, "high": high})
+    return parts
+
+
+def touching(a, b, tolerance):
+    if any(a["low"][i] - tolerance > b["high"][i] or b["low"][i] - tolerance > a["high"][i] for i in range(3)):
+        return False
+    if a["tree"].overlap(b["tree"]):
+        return True
+    for first, second in ((a, b), (b, a)):
+        step = max(1, len(first["verts"]) // 600)
+        for vertex in first["verts"][::step]:
+            hit = second["tree"].find_nearest(vertex, tolerance)
+            if hit[0] is not None:
+                return True
+    return False
+
+
+def loose_parts():
+    """Hero parts that touch nothing holding them, as described above."""
+    parts = surfaces()
+    hero = [p for p in parts if p["hero"]]
+    if not hero:
+        return []
+    height = max(p["high"].z for p in hero) - min(p["low"].z for p in hero)
+    tolerance = max(height, 0.01) * 0.01
+    group = list(range(len(parts)))
+
+    def root(i):
+        while group[i] != i:
+            group[i] = group[group[i]]
+            i = group[i]
+        return i
+
+    for i in range(len(parts)):
+        for j in range(i + 1, len(parts)):
+            if (parts[i]["hero"] or parts[j]["hero"]) and root(i) != root(j) and touching(parts[i], parts[j], tolerance):
+                group[root(i)] = root(j)
+    held = {root(i) for i, p in enumerate(parts) if not p["hero"]}
+    if not held:  # a floating object: everything must hang together with its largest group
+        sizes = {}
+        for i, p in enumerate(parts):
+            sizes[root(i)] = sizes.get(root(i), 0) + len(p["verts"])
+        held = {max(sizes, key=sizes.get)}
+    loose = []
+    for i, p in enumerate(parts):
+        if p["hero"] and root(i) not in held:
+            center, size = (p["low"] + p["high"]) / 2, p["high"] - p["low"]
+            loose.append({"part": p["obj"].name.split(".")[0].rstrip("0123456789"), "at": [round(c, 2) for c in center],
+                          "size": [round(c, 2) for c in size]})
+    return loose
+
+
 def frame(camera, scene, azimuth, elevation, points):
     center = sum(points, Vector()) / len(points)
     a, e = math.radians(azimuth), math.radians(elevation)
@@ -287,6 +363,9 @@ def render(model, out):
                                     lathe=lathe, blob=blob, warp=warp, floor=floor, turn=turn, unframed=unframed)
     namespace["build"](helpers)
     bpy.context.view_layer.update()
+    print("LOOSE: " + json.dumps(loose_parts()), flush=True)
+    if LOOK == "check":
+        return
 
     scene.render.resolution_x, scene.render.resolution_y = SIZE
     camera = bpy.data.objects.new("camera", bpy.data.cameras.new("camera"))
