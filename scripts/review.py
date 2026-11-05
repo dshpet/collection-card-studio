@@ -61,7 +61,9 @@ DIRECTOR_SCHEMA = strict({
     "summary": text()})
 PICK_SCHEMA = strict({"picks": array(strict({"card": text(), "pick": {"type": "integer"},
                                             "confidence": {"type": "integer", "minimum": 1, "maximum": 5}, "why": text()}))})
-SURE = 4  # the director agreed with the user 76% of the time at this confidence, against 61% overall (prefer.py)
+# On two drawings the director agreed with the user 76% of the time at confidence 4 (prefer.py). Choosing among three,
+# it says 3 for nearly every card, so only 2 and below are flagged. That cut is not validated.
+SURE = 3
 
 
 def card_image(card):
@@ -357,6 +359,8 @@ def choose(run, briefs, history, rater="claude-opus-5-5"):
     sheets, options = [], {}
     for brief in briefs:
         tries = [t for t in history[brief["id"]] if t["passed"]] or history[brief["id"]]
+        # Shuffled: in order, the director picked candidate 2 for nine of ten western cards, by position
+        tries = random.Random(f"{run.name}{brief['id']}").sample(tries, len(tries))
         options[brief["id"]] = tries
         paths = [run / "tries" / f"{t['try_id']}.png" for t in tries]
         sheets.append(candidate_sheet(real[brief["references"][0]], paths, folder / "sheets" / f"{brief['id']}.png"))
