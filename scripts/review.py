@@ -18,7 +18,7 @@ from common import ANALYSIS, DERIVED, ROOT, load_json, save_json
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 
-from make_set import contact_sheet
+from make_set import contact_sheet, run_name
 from experience import edit_examples
 from rate import ask_claude, ask_codex
 
@@ -146,7 +146,8 @@ def fresh_cache(folder, key):
     can never land on a different card."""
     folder.mkdir(parents=True, exist_ok=True)
     path = folder / "key.json"
-    if path.exists() and load_json(path) != key:
+    stale = load_json(path) != key if path.exists() else any(folder.glob("*.json"))  # answers with no key: unknown pairs
+    if stale:
         for old in folder.glob("*.json"):
             old.unlink()
     save_json(path, key)
@@ -486,7 +487,7 @@ def review_variant(run, variant, round_number, briefs, history, rater):
     entries += [tuple(rng.sample(spare, 2)) for _ in range(CONTROLS)]
     rng.shuffle(entries)
 
-    name = f"{run.name}/v{variant}r{round_number}"
+    name = f"{run_name(run)}/v{variant}r{round_number}"
     pairs = blind_pairs(entries, name)
     fresh_cache(ROOT / "runs" / "review" / name, [[p["pair"], p["A"]["id"], p["B"]["id"]] for p in pairs])
     reports = specialists(name, pairs, lessons_for(), used, rater, list(ROLES))

@@ -11,6 +11,7 @@ import re
 import subprocess
 from collections import Counter, defaultdict
 from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
 
 os.environ.setdefault("HF_HUB_OFFLINE", "1")  # every local model is already cached
 
@@ -154,10 +155,11 @@ def plan_problems(plan, cast=0):
         if {card["category"] for card in cards} - {"5"} != {"1", "2", "3", "4"}:
             problems.append(f"version {index} must use all four categories")
         characters = [card for card in cards if card["category"] == "5"]
-        if len(characters) != cast or any(not card.get("cast") for card in characters):
-            problems.append(f"version {index} must have exactly {cast} character cards, each naming its cast")
-        if any(card.get("cast") for card in cards if card["category"] != "5"):
-            problems.append(f"version {index}: only category 5 cards may show the cast")
+        if len(characters) != cast or any(not 1 <= len(set(card["cast"])) == len(card["cast"]) <= 2 for card in characters):
+            problems.append(f"version {index} must have exactly {cast} character card{'' if cast == 1 else 's'}, "
+                            "each naming one or two of the cast")
+        if any(card.get("cast") or card["object_class"] == "character" for card in cards if card["category"] != "5"):
+            problems.append(f"version {index}: only category 5 cards show the cast or have object_class character")
         if len(names[-1]) != len(cards):
             problems.append(f"version {index} repeats a card")
         problems += [f"card name too long: {c['name']}" for c in cards if len(c["name"].split()) > 2]
@@ -301,11 +303,15 @@ def make_briefs(plan, cards):
         if card["category"] == "5":
             # Codex takes five images: cutouts of the cast first, then two real character cards
             each = 3 if len(card["cast"]) == 1 else 2
-            cutouts = [str(p.relative_to(ROOT)) for name in card["cast"] for p in identity_references(name, each)][:3]
-            if not all((ROOT / path).exists() for path in cutouts):
+            found = {name: identity_references(name, each) for name in card["cast"]}
+            if not all(found.values()) or not all(p.exists() for paths in found.values() for p in paths):
                 raise RuntimeError("cast cutouts are missing: run scripts/cast.py find, then label")
+            cutouts = [str(p.relative_to(ROOT)) for paths in found.values() for p in paths][:3]
             brief["cast_references"] = cutouts
-            brief["references"] = [c["id"] for c in pick_references(card, cards, chance, 5 - len(cutouts), firsts[variant])]
+            # the cards the cutouts come from would repeat them, and the review would pair the card with its source
+            sources = {Path(path).stem.rsplit("_", 1)[0] for path in cutouts}
+            pool = [c for c in cards if c["id"] not in sources]
+            brief["references"] = [c["id"] for c in pick_references(card, pool, chance, 5 - len(cutouts), firsts[variant])]
         else:
             brief["references"] = [c["id"] for c in pick_references(card, cards, chance, taken=firsts[variant])]
         firsts[variant].add(brief["references"][0])
@@ -404,11 +410,21 @@ def check_tries(run, tries, knowledge, workers):
     return tries
 
 
+def run_name(run):
+    """A run's folder under runs/, nested ones included."""
+    return str(run.relative_to(ROOT / "runs")) if run.is_relative_to(ROOT / "runs") else run.name
+
+
+def number(try_id):
+    """The attempt number at the end of a try id: candidates first, then one number per review round."""
+    return int(try_id.rsplit("_", 1)[1])
+
+
 def record_edits(run, round_number, drawn, before, notes, kept):
     """Every edit drawn and whether it beat its draft, for experience.py. An edit that failed its checks was not kept."""
     path = run / "edits.json"
     rows = [r for r in (load_json(path) if path.exists() else []) if r["edit"] not in {e["try_id"] for e in drawn}]
-    rows += [{"run": str(run.relative_to(ROOT / "runs")), "card": e["brief_id"], "name": e["card"]["name"],
+    rows += [{"run": run_name(run), "card": e["brief_id"], "name": e["card"]["name"],
               "round": round_number, "note": notes[e["brief_id"]], "draft": before[e["brief_id"]], "edit": e["try_id"],
               "kept": e["try_id"] in kept} for e in drawn]
     save_json(path, rows)
@@ -440,8 +456,8 @@ def deliver(run, plan, briefs, history):
                 continue
             best = best_try(tries)
             name = re.sub(r"\W+", "_", brief["card"]["name"].lower()).strip("_")
-            cast = "_cast" if brief["card"]["category"] == "5" else ""  # the game's characters stay out of git
-            path = folder / f"{brief['id'][-2:]}{cast}_{name}.png"
+            # The game's characters stay out of git: "-cast" marks them, and no card name can hold a hyphen here
+            path = folder / f"{brief['id'][-2:]}{'-cast' if brief['card']['category'] == '5' else ''}_{name}.png"
             Image.open(run / "tries" / f"{best['try_id']}.png").save(path)
             paths.append(path)
             counts.update(best["misses"] + best["issues"])
@@ -449,7 +465,8 @@ def deliver(run, plan, briefs, history):
             lines.append(f"| {brief['card']['name']} | {brief['card']['category']} | {len(tries)} | {best['style']} | "
                          f"{'unsure pick' if best.get('unsure') else 'pass' if best['passed'] else 'review'} | {open_issues} |")
         if paths:
-            contact_sheet(paths, run / f"variant_{variant}{'_cast' if any('_cast_' in p.name for p in paths) else ''}.png")
+            cast = any(b["card"]["category"] == "5" for b in briefs if b["variant"] == variant)
+            contact_sheet(paths, run / f"variant_{variant}{'-cast' if cast else ''}.png")
         lines.append("")
     lines += ["## Most common open issues", ""] + [f"- {key}: {value}" for key, value in counts.most_common(8)]
     (run / "report.md").write_text("\n".join(lines) + "\n", "utf-8")
@@ -489,6 +506,12 @@ def main():
     if not briefs_path.exists():
         save_json(briefs_path, make_briefs(plan, cards))
     briefs = load_json(briefs_path)
+    history = defaultdict(list, load_json(run / "check.json") if (run / "check.json").exists() else {})
+    rounds_path = run / "rounds.json"
+    if args.review_rounds and not rounds_path.exists() and any(
+            number(t["try_id"]) > args.candidates for tries in history.values() for t in tries):
+        raise SystemExit(f"{run.name} was reviewed by an older make_set.py, which kept no record of its rounds. Continue "
+                         "it with --review-rounds 0, or start fresh with --run <new name>.")
 
     if not args.no_blockouts:
         if any("build_model" not in brief["card"] for brief in briefs):
@@ -499,8 +522,6 @@ def main():
             renders = list(pool.map(lambda brief: model_card(run, brief, args.rater), built))
         print(f"models: {sum(r is not None for r in renders)} of {len(built)} rendered, "
               f"{len(briefs) - len(built)} cards drawn from the brief alone", flush=True)
-
-    history = defaultdict(list, load_json(run / "check.json") if (run / "check.json").exists() else {})
 
     def draw_and_check(jobs, attempt):
         """jobs: (brief, notes, draft). Finished tries stay in the history."""
@@ -521,8 +542,8 @@ def main():
     if args.review_rounds:
         from review import better_edits, choose, review_variant
 
-        # Each round's drafts and outcome, so a rerun neither redoes a finished round nor mistakes a kept edit for a draft
-        rounds_path = run / "rounds.json"
+        # Each round's notes, drafts, edit number and outcome, so a rerun neither reviews a round twice nor mistakes
+        # one drawing for another
         rounds = load_json(rounds_path) if rounds_path.exists() else {}
         for variant in range(1, len(plan["variants"]) + 1):
             chosen = [b for b in briefs if b["variant"] == variant]
@@ -534,20 +555,21 @@ def main():
                 choose(run, chosen, history)
             save_json(run / "check.json", history)
             for round_number in range(1, args.review_rounds + 1):
-                key = f"{variant}_{round_number}"
-                state = rounds.setdefault(key, {})
+                state = rounds.setdefault(f"{variant}_{round_number}", {})
                 if "kept" in state:
                     if not state["notes"]:
                         break
                     continue
-                notes = review_variant(run, variant, round_number, chosen, history, args.rater)
-                print(f"variant {variant} review {round_number}: {len(notes)} of {len(chosen)} cards need edits", flush=True)
+                if "notes" not in state:
+                    notes = review_variant(run, variant, round_number, chosen, history, args.rater)
+                    print(f"variant {variant} review {round_number}: {len(notes)} of {len(chosen)} cards need edits",
+                          flush=True)
+                    state.update(notes=notes, before={b["id"]: best_try(history[b["id"]])["try_id"] for b in chosen},
+                                 attempt=1 + max(number(t["try_id"]) for b in chosen for t in history[b["id"]]))
+                    save_json(rounds_path, rounds)
+                notes, before, attempt = state["notes"], state["before"], state["attempt"]
                 kept = set()
                 if notes:
-                    state.setdefault("before", {b["id"]: best_try(history[b["id"]])["try_id"] for b in chosen})
-                    save_json(rounds_path, rounds)
-                    before = state["before"]
-                    attempt = args.candidates + round_number
                     jobs = [(b, [notes[b["id"]]], run / "tries" / f"{before[b['id']]}.png") for b in chosen if b["id"] in notes]
                     draw_and_check(jobs, attempt)
                     drawn = [t for b in chosen if b["id"] in notes for t in history[b["id"]]
@@ -565,7 +587,7 @@ def main():
                     record_edits(run, round_number, drawn, before, notes, kept)
                     print(f"variant {variant} review {round_number}: kept {len(kept)} of {len(drawn)} edits", flush=True)
                     save_json(run / "check.json", history)
-                state.update(notes=len(notes), kept=sorted(kept))
+                state["kept"] = sorted(kept)
                 save_json(rounds_path, rounds)
                 if not notes:
                     break

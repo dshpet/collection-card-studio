@@ -70,7 +70,7 @@ def propose(rater):
         "repeat a current lesson or a rule about rendering style. For each, give the evidence, citing the comments.\n\n"
         "Current lessons:\n" + "\n".join(lessons("Planning")) + "\n\nComments:\n" + "\n".join(comments)
         + "\n\nEdits:\n" + "\n".join(edits), None, PROPOSE_SCHEMA, rater)
-    text = LESSONS.read_text("utf-8")
+    text = LESSONS.read_text("utf-8").rstrip("\n") + "\n"
     if "## Proposed\n" not in text:
         text = text.rstrip("\n") + "\n\n## Proposed\n"
     head, tail = text.split("## Proposed\n", 1)

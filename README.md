@@ -9,7 +9,7 @@ Findings on the references: [SYNTHESIS](analysis/SYNTHESIS.md). What was wrong w
 ## Make a set
 
 ```sh
-.venv/bin/python -B scripts/make_set.py "Western" --wishes "A set for a Movie collection" --variants 3
+.venv/bin/python -B scripts/make_set.py "Western" --wishes "A set for a Movie collection" --variants 3 --run western-final
 ```
 
 | Stage | What happens |
@@ -30,7 +30,7 @@ Rerunning continues where it stopped; `--run <name>` starts a theme fresh in a n
 
 - **Lessons.** [analysis/lessons.md](analysis/lessons.md) holds the rules learned from the producer's ratings, in plain words the planner reads. Edit it to teach the tool. `scripts/experience.py propose` drafts new lessons from rating comments and lost edits, under Proposed, for a person to accept.
 - **Experience.** Every edit and whether it beat its draft goes to `analysis/experience.json`. The art director sees past notes that worked and failed.
-- **Ratings.** `scripts/rate_ui.py` serves a rating page at http://127.0.0.1:8765: blind twins, set cards beside their references, trials. Answers go to `runs/ratings.json`, the only measure that tracks the producer.
+- **Ratings.** `scripts/rate_ui.py` serves a rating page at http://127.0.0.1:8765: blind twins, set cards beside their references, trials. Answers go to `runs/ratings.json`, the only measure that tracks the producer. `--sets <run> ...` shows the cards of other runs, such as the final ones.
 
 ## The cast
 

@@ -13,7 +13,7 @@ The theme is required. Wishes are optional. Do not ask about anything else. If t
    .venv/bin/python -B scripts/make_set.py "<Theme>" --wishes "<wishes>" --variants 3
    ```
 
-2. Show each variant's sheet, `runs/<slug>/variant_N.png` (`variant_N_cast.png` when it has character cards), and name the cards that `runs/<slug>/report.md` marks as `review`, `unsure pick` or `missing`.
+2. Show each variant's sheet, `runs/<slug>/variant_N.png` (`variant_N-cast.png` when it has character cards), and name the cards that `runs/<slug>/report.md` marks as `review`, `unsure pick` or `missing`.
 
 3. For a variant the producer likes, show it in the game's window:
 

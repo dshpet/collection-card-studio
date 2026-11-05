@@ -14,6 +14,7 @@ does the scene work, and a grade 1-5.
 
     rate_ui.py              then open http://127.0.0.1:8765
     rate_ui.py --summary    what the ratings say so far
+    rate_ui.py --sets western-final sci-fi-final horror-final    rate the cards of other runs
 """
 
 import argparse
@@ -36,7 +37,7 @@ PARAM = ("p1", "p2")  # experiments/param.py rounds under test
 LOCK = threading.Lock()
 
 
-def items():
+def items(sets=SETS):
     rng = random.Random(3)
     twins = []
     for brief in load_json(ROOT / "runs" / "twins40" / "briefs.json"):
@@ -57,12 +58,12 @@ def items():
                         "styles": [style for style, _ in drawn]})
     final = load_json(ROOT / "runs" / "final.json")
     cards = []
-    for run in SETS:
+    for run in sets:
         history = load_json(ROOT / "runs" / run / "check.json")
         for brief in load_json(ROOT / "runs" / run / "briefs.json"):
             best = best_try(history[brief["id"]])
             cards.append({"id": f"card/{run}/{brief['id']}", "kind": "card", "name": brief["card"]["name"],
-                          "set": f"{run} v{brief['variant']}", "final": brief["id"] in final[run],
+                          "set": f"{run} v{brief['variant']}", "final": brief["id"] in final.get(run, []),
                           "images": [f"runs/{run}/tries/{best['try_id']}.png"]
                           + [f"materials/card_examples/{i}.png" for i in brief["references"]]})
     cards.sort(key=lambda card: not card["final"])
@@ -324,11 +325,12 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--summary", action="store_true")
     parser.add_argument("--port", type=int, default=8765)
+    parser.add_argument("--sets", nargs="+", default=list(SETS), help="runs whose cards the Cards tab shows")
     args = parser.parse_args()
     if args.summary:
         summary()
         return
-    ITEMS = items()
+    ITEMS = items(args.sets)
     print(f"open http://127.0.0.1:{args.port}", flush=True)
     try:
         ThreadingHTTPServer(("127.0.0.1", args.port), Page).serve_forever()

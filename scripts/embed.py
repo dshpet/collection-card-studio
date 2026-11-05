@@ -60,8 +60,10 @@ def load_csd(repo):
     from huggingface_hub import hf_hub_download
 
     logging.disable(logging.WARNING)  # open_clip warns that the bare model is random; CSD's weights load next
-    clip = open_clip.create_model("ViT-L-14", pretrained=None, force_quick_gelu=True)
-    logging.disable(logging.NOTSET)
+    try:
+        clip = open_clip.create_model("ViT-L-14", pretrained=None, force_quick_gelu=True)
+    finally:
+        logging.disable(logging.NOTSET)
     weights = load_file(hf_hub_download(repo, "model.safetensors"))
     visual = {k.removeprefix("backbone."): v for k, v in weights.items() if k.startswith("backbone.")}
     visual = {k: v for k, v in visual.items() if k != "proj"}
