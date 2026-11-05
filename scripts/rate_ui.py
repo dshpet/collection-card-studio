@@ -7,8 +7,8 @@ Trial: each drawing of scripts/trial.py beside its real card, arm hidden: does i
 Redraw: each final card, as chosen before and as redrawn from a blockout, mixed and unlabelled, beside its
 reference cards: does it work as built, and a grade 1-5.
 Soft: the cards of scripts/trial2.py, each arm and the old card mixed and unlabelled, rated as in Redraw.
-Param: a real card with its final-style twin and the twin redrawn with one changed style line (scripts/param.py),
-shuffled. Pick the closer one, or same.
+Param: a real card with its final-style twin and the twins redrawn by scripts/param.py rounds, shuffled. Pick the
+closest, or same when none is.
 
     rate_ui.py              then open http://127.0.0.1:8765
     rate_ui.py --summary    what the ratings say so far
@@ -30,7 +30,7 @@ RATINGS = ROOT / "runs" / "ratings.json"
 SETS = ("western", "sci-fi", "horror")
 SERVED = ("materials/card_examples/", "runs/")
 CLOSEST_STYLES = ("final", "old", "r3", "r9")
-PARAM = "p1"  # the scripts/param.py variant under test
+PARAM = ("p1", "p2")  # scripts/param.py rounds under test
 LOCK = threading.Lock()
 
 
@@ -100,11 +100,15 @@ def items():
                              "images": [image] + references})
     rng.shuffle(soft)
     param = []
-    for brief in load_json(ROOT / "runs" / "twins40" / "briefs.json"):
-        drawn = [(style, f"runs/twins40/{style}/tries/{brief['id']}_1.png") for style in ("final", PARAM)]
+    for index, brief in enumerate(load_json(ROOT / "runs" / "twins40" / "briefs.json")):
+        drawn = [(style, f"runs/twins40/{style}/tries/{brief['id']}_1.png") for style in ("final", *PARAM)]
         if all((ROOT / path).exists() for _, path in drawn):
-            rng.shuffle(drawn)
-            param.append({"id": f"param/{PARAM}/{brief['id']}", "kind": "param", "name": brief["card"]["name"],
+            # Rotated, not shuffled, so every style sits in every position equally often
+            shift = index % len(drawn)
+            drawn = drawn[shift:] + drawn[:shift]
+            if (index // len(drawn)) % 2:
+                drawn.reverse()
+            param.append({"id": f"param/{'+'.join(PARAM)}/{brief['id']}", "kind": "param", "name": brief["card"]["name"],
                           "images": [f"materials/card_examples/{brief['real']}.png"] + [path for _, path in drawn],
                           "styles": [style for style, _ in drawn]})
     rng.shuffle(param)

@@ -119,6 +119,9 @@ The production pattern: split the style into parameters, measure each on the out
 - **What it does not get wrong.** Gloss, highlight size and tint, bevels and surface texture, by pixels and by eye. The user's "glossy" is not in any of these readings.
 - **No parameter separates the twins the user caught from those that fooled them** (24 against 16). Caught twins leaned lighter, with shallower darks.
 - **One change.** "turns the form smoothly into shade" became "into deep, colorful shade, so the shaded side is clearly darker than the lit side", drawn as `twins40/p1`. The object's 5th-percentile lightness went from +0.024 above its real card to 0.000, and the shallow darks dropped out of the deviation list. The deepest 1% now overshoots (-0.015). Per twin the redraw came closer only 17 to 23 times in 40, because draw-to-draw variation is as large as the shift. One side effect: shadows went greyer. Shadow chroma kept fell from -0.025 to -0.067 below real, now lower in 28 of 40, though the line said "colorful". The background stayed light, as it was not targeted.
+- **Second round, p2.** p1's line plus "The shade keeps the object's own color, richer and deeper, never grey." Shadow chroma went back to the final style's level (-0.028). The object's 5th percentile stayed on the real cards (-0.005), and its shadows overshoot a little, darker in 27 of 40. A new side effect appeared: by eye p2 is more saturated (22 to 3, p 0.0002) and glossier (24 to 6, p 0.001), probably from "richer". Gloss is the user's main complaint. Pixel gloss share did not move, so again the gloss a viewer sees is not in the pixel measures.
+- **Open.** Measures disagree on which round is closest, so the user rates final, p1 and p2 blind (Param tab, positions balanced).
+
 
 The first run looked off to a human, yet every automatic check passed it. This file records what was wrong, why the checks missed it, and what fixed it.
 
