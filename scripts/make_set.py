@@ -1,7 +1,7 @@
 """Turn a theme and producer wishes into ten-card set variants, with no manual steps.
 
-Stages: plan, brief, model, draw candidates, check, choose, review, edit, deliver.
-Results land in runs/<slug>/ and finished work is kept.
+Stages: plan, references, model, draw candidates, check, choose, review, edit, deliver. README.md describes each.
+Results land in runs/<slug>/, or the folder named by --run. Finished work is kept, so a rerun continues where it stopped.
 """
 
 import argparse
@@ -20,13 +20,13 @@ import numpy as np
 import torch
 from PIL import Image
 
+from cast import LOOKS, identity_references
 from draw import draw
-from experience import collect as collect_experience, lessons
 from estimate import write_masks
+from experience import collect as collect_experience, lessons
 from form import CARD_FORM, card_schema
 from measure import measure_card
 from rate import ask_claude, ask_codex, card_prompt
-from cast import LOOKS, identity_references
 from style import BLOCKOUT, CAST_STYLE, CATEGORY_RULES, EDIT, PATTERNS, STYLE
 
 SIZE = (430, 480)
