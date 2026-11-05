@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the grey lens shows a pale halo around the glass. It fades the dark diamond pattern near the hero, while the corners stay dark. The glass and ice sit almost entirely in the top two grey levels against a dark purple field, so the hero-to-background gap of 0.257 is well above the real maximum of 0.158. This matches the glow behind the hero in the generated glove and camera lessons. A is also off: its sky rays are close to clipped white, which puts its mean of 0.792 above the real range, but the mid-grey suitcase reads as one solid mass against the light field, the way the real lessons do.",
+   "fix": "Keep the purple diamond background at an even mid-dark value right up to the glass, with no bright glow or halo behind it. Shade the glass and ice with more mid-tones so only small highlights reach white."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the rays disappear into a broad, flat light-grey disc behind the hat and show only at the edges. The corners don't darken (vignette 0.0, below the real minimum of 0.008). The hat is one even mid-tone with soft, low-contrast shading. In the real glove lesson, the rays run right in behind the hero. A also has a lighter zone behind the jacket, but it keeps dark corners, and the dark sash is a strong dark shape running diagonally across the jacket.",
+   "fix": "Run the sunburst rays all the way in to the center behind the hat, with no bright glow disc. Darken the four corners slightly. Give the hat a clear dark underside below the brim and a lit crown."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the plank wall shades from light on the left to near-black on the right, and the gloves cast pitch-black contact shadows on the table. The darkest values sit in large off-center areas (vignette -0.103, far below the real minimum of -0.030), and the light reads like a photo. A: the striped background stays mid-value and the saddle sits as a dark mass in the middle. Its numbers are all inside the real ranges.",
+   "fix": "Light the background wall evenly from left to right in a mid-blue, with no dark right side. Replace the black shadows under the gloves with a soft, mid-dark shadow, and keep the gloves the darkest-to-lightest shapes in the middle of the card."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: concentric rings brighten into a strong glow right behind the envelope, while the corners fall to dark grey. Its vignette of 0.101 is at the top of the real range, and its mean of 0.727 is above the real maximum of 0.707. The envelope is almost all in the top grey level, so most of the card is very light. This is the same glow behind the hero seen in the generated lesson cards. A: the bus is a dark mass against a light sky and street, with no glow behind it, and its values are inside the real ranges.",
+   "fix": "Remove the bright glow behind the envelope and keep the green background one even mid-tone, with only gentle corner darkening. Add mid-tone shading on the envelope's flaps and paper edges so it isn't flat white."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the grey lens puts the pig, the fence, the dirt ground and the canyon mostly in the same middle grey. The pig separates from the background only by hue, and contrast is flat across the card (rms 0.114, below the real minimum of 0.139). The darkest accents are just the small hooves and hat. B has a full spread of values: a dark car body, a light sky and a mid-tone pig. Its gap is somewhat negative, but it has clear light, middle and dark groups.",
+   "fix": "Make the pig the lightest large shape on the card. Push the fence and ground darker, toward a medium-dark warm brown, and keep the sky light, so the card has three clear groups: light sky, light pig, darker ground and fence."
+  }
+ ],
+ "pattern": "Generated cards most often give themselves away with a bright halo behind the hero. Background rays or rings fade into a flat light disc around the object, while the corners stay dark or don't darken at all. Real cards keep the background value even right up to the hero. Two other tells: photo-style directional darkness (one side of the background going near-black, pitch-black contact shadows) and heroes rendered almost entirely in the lightest values. Single-scene illustrations can also go the other way, with hero and setting flattened into the same mid-grey and separated only by hue."
+}

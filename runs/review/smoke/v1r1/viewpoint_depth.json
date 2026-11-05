@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the suitcase is seen dead-on from the front at eye level, with almost no top face and a flat, even front patch in the normals (planar_share 0.67, the top of the real range). The green floorboards below it converge hard toward a point, as if seen from higher up and through a wider lens than the suitcase. So the floor and the hero don't share one view. B: the glass is also near eye level, but its rim and base ellipses agree with the purple tabletop line, giving one mild camera.",
+   "fix": "Turn the suitcase about 30 degrees so one side panel shows, raise the camera slightly so a sliver of the top and the handle base are visible, and make the floorboards recede gently at the same angle the suitcase sits on."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the jacket floats in three-quarter view, seen slightly from above with the collar opening visible. B: the hat floats in three-quarter view from slightly above, with the crown and brim agreeing. Both have one consistent view, no ground plane and a simple background. Nothing on my vector separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the saddle sits on a wooden rail cropped at both card edges, seen from a little above. The rail top and the seat top both read as up-facing, so the view is consistent. B: the gloves rest on a table seen from a low camera and are cropped at the right. The near glove is larger than the far one, a mild depth step, and the table plane is consistent. Both match real-card camera habits.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the envelope and photos are drawn almost flat to the camera. The normals are a nearly uniform single patch (planar_share 0.855, above the real maximum of 0.509). There is no ground plane and almost no depth between the envelope and the photos. A: the bus is in a low three-quarter view with fairly strong perspective, but the street, kerb and background buildings recede consistently with it. Real tilted flat objects like the calculator and diploma show clear tilt and thickness.",
+   "fix": "Tilt the envelope back about 30 degrees so its bottom edge is nearer and the top recedes, show the paper thickness along the edges, and fan the photos so they visibly stand out of the envelope in depth with soft shadows between the layers."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the pig is shown from a low three-quarter view. The fence recedes behind it, the mesas sit far back and the dirt ground is at one mild angle. B: the car is seen nearly straight from behind and the pig in three-quarter view on the same road plane, with the bushes and sky behind. Both scenes hold one ground plane and a clear foreground/hero/background split.",
+   "fix": ""
+  }
+ ],
+ "pattern": "In the lessons, generated cards turn the object to face the camera head-on and centre it whole on a little base or plinth (the island under the lighthouse, the round desk under the computer). Real cards use a three-quarter turn, often let the object or the ground run off the card edge, and keep the ground at one mild angle. In these test pairs the leftover signs are a frontal hero with almost no top or side face (very high planar_share) and a floor that recedes more steeply than the object on it."
+}

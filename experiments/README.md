@@ -11,4 +11,5 @@ One-off studies behind the pipeline's decisions. Each ran once, its results are 
 | `tune.py` | Can the director's notes be tuned automatically? | No: gains on the tuning half did not hold on held-out pairs |
 | `param.py` | Which measured style parameters are off, and does one line fix them? | Tone is off, but no tone round beat the final style for the user |
 | `cast_trial.py` | Can the game's characters appear on new cards and stay themselves? | Yes, best drawn in one go with real cutouts attached. Pre-drawn and pasted figures look pasted |
-| `search_trial.py` | Do search-picked references bring drawings closer to the real card? | No measurable change, so search only breaks ties |
+| `search_trial.py` | Do search-picked references, or five instead of three, bring drawings closer to the real card? | No clear change, so search only breaks ties and cards keep three |
+| `plain_check.py` | Where does the invented jewel on the sheriff star come from? | From the colors line: an accent hue named as a gem. Saying "no gem" does not help |

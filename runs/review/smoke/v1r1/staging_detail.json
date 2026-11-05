@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A puts the suitcase in a mixed setting. A pale yellow sunburst fills the upper wall, and below it are a mint skirting board and a saturated green plank floor with streaky reflections. That makes it a radial graphic field and a room floor at once, and it does not settle into one category. Its background edge density is 0.030, against 0.012 for B. B uses a single category: the glass stands on a plain purple ledge, and behind it is a tone-on-tone diamond pattern of the same kind as the calculator's pi field. B's cocktail umbrella and straw are props the drink would really have.",
+   "fix": "Choose one setting. Either float the suitcase on a plain soft yellow sunburst with no floor, or stand it on a simple wooden floor in front of a plain flat wall with no rays. Keep the floor quiet, with a few wide planks and no streaky shine."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A's green sunburst has many thin, closely spaced rays, a bright glow behind the jacket and dark vignette corners. That is the hot-centre burst the generated glove and camera lessons showed. B's cyan sunburst has a few wide, soft rays with low contrast, like the real glove card. Both backgrounds measure low, so this is a weak lean.",
+   "fix": "Use a calm green sunburst with fewer, wider rays and little contrast between them. Keep the brightness even, with no glowing halo behind the jacket and no dark corners."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A is a saddle hung on one wooden rail that crosses the card, in front of quiet blue vertical stripes. That is one purposeful support on a simple backdrop. B is boxing gloves on a wooden tabletop in front of a blue panelled wall with soft vertical highlights. That is category 3 with a simple backdrop, close to the real computer-on-desk card. Neither card adds stray props or decoration. B's higher edge density (0.040) comes from the plank seams and wall panel lines, which is still inside the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A is a category 4 street with clouds, pink and teal buildings full of small window grids, a curb, and finely speckled asphalt. The bus runs off the left and bottom edges. Its background edge density, 0.051, is high but inside the real range. Most of that busyness is small repeated detail (windows, asphalt grain) rather than a few large, quiet shapes. B is category 1: the envelope floats on tone-on-tone green concentric rings, a quiet field like the real cards. This is a weak lean, because the real binoculars card also has a busy city.",
+   "fix": "Simplify the street: a few large soft building blocks with only a handful of windows, smooth asphalt with no speckle, and a couple of big clouds. Pull the bus fully into frame and centre it."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Both are busy category 4 story scenes. A has a pig with a lasso in front of a fence and mesas, with scattered pebbles, grass tufts and motion streaks. B has a pig pushing luggage onto a purple car that fills the left half, plus a chicken on the roof, a rope, bushes and clouds. B carries more secondary props and a second character, and its pig is pushed off-centre to the right. A scatters more small ground detail. Their measurements are almost identical (0.046 vs 0.043), and the real cards in the anchor set don't include character scenes to compare against, so this vector gives no clear call.",
+   "fix": ""
+  }
+ ],
+ "pattern": "In the lessons, generated cards add things to the background that the real cards leave out. They add support props: an island with rocks, a lifebuoy, rope and bollards under the lighthouse, and a round table in place of a plain desk edge. They light sunbursts with a hot glow right behind the object and use more, thinner rays with darker corners. They make floors more saturated, with heavier grain, and they fill environments with small repeated detail such as windows, speckle and pebbles where real cards use a few large, quiet shapes. They also mix categories, for example a sunburst wall above a real floor. Real cards pick one category and keep the backdrop tone-on-tone and calm."
+}

@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (iced drink): the purple backdrop and its magenta glow behind the glass are as loud as the orange drink (bg chroma 0.24 vs real max 0.178). The diamond pattern and the floor are both pure violet, with no muted area for the eye to rest on. Shadows inside the glass stay fully saturated orange (1.45, above real range). A (suitcase): pale yellow rays and a mid green floor sit behind a muted rust-orange case. The scuffed brown corners and handle give neutral rest, and the stickers are small accents. Its warmth is within real range.",
+   "fix": "Make the background a softer, slightly greyed lavender with gentle light rays. Drop the hot magenta glow behind the glass. Let the shadowed side of the drink deepen to a darker amber-brown instead of staying bright orange."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (scout jacket): the jacket body is a creamy warm beige, and the collar and cuffs are saturated orange. In the lens, the beige shadows slide straight to orange-brown. That matches the cream-instead-of-neutral drift seen on the generated computers in the lessons. The green backdrop also has a bright glowing halo at its center. B (cowboy hat): a tan-orange felt against cyan rays, close to the real glove's hue roles. Its shadows deepen to a related brown, and the red band is the single accent. All measures for both cards are in range, so this call is weak.",
+   "fix": "Paint the jacket a slightly greyish khaki rather than creamy beige. Make the shadow folds a cooler olive-grey, not orange-brown. Calm the bright glow in the green background into even rays."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B (boxing gloves): the gloves are pure, fully saturated red (subject chroma 0.18, above real max 0.164). The highlights flip to peach-orange in the lens, and the wood table is a hot orange too, so hero and floor are both loud warm hues. The only rest is the blue wall. A (saddle): a mid rust-brown leather with a greyed wood rail and grey steel stirrups. Those give neutral rest, and the red saddle pad is a small accent against the blue stripes.",
+   "fix": "Make the gloves a deep, slightly darker cherry red with soft pinkish-white highlights, not orange ones. Make the table a muted honey-brown wood with grey-brown grain so it is quieter than the gloves."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (envelope of photos): a pure, glowing lime-green spiral background (bg chroma 0.22, far above real max 0.147) is louder than the cream envelope. The card holds very few hue families (2.5, below real min). Background shading stays at full green (shadow 1.6, above real range). A (bus): red bus, blue sky, a pink building and a grey-lavender road give a broad but believable palette. Its road shadows go grey, which is slightly low but close to real.",
+   "fix": "Make the green background a softer, darker leaf green with a gentle vignette instead of a glowing neon spiral. Let the photos carry the bright colors, and keep the envelope a neutral off-white paper with cool grey shadows."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (pig with lasso): the whole card is pulled warm (warm share 0.75, above real max 0.57). There is an orange dirt ground, orange mesas, a brown fence and hat, and a peach-pink pig. In the lens almost everything falls into one orange-tan family, and only a strip of sky is cool. B (pig loading car): a purple car, green luggage and bush, a yellow bag, blue sky and a grey road. The pink pig sits among cool and neutral masses, with a hue count in real range.",
+   "fix": "Add cool and neutral areas: a larger clear blue sky, grey-green sagebrush, and weathered grey wooden fence posts. Make the ground a paler, dusty grey-beige instead of orange, so the pink pig and brown hat stand out as the warm hero."
+  }
+ ],
+ "pattern": "Generated cards push everything warm and saturated. Neutral whites and greys turn cream or beige (computer casing, lighthouse stone, clouds). Shadows slide to orange-brown instead of cool grey-lavender. Leather and fabric become pure orange or red. Backgrounds become neon and glowing (cyan, purple, lime halos) as loud as the hero, which leaves no muted area to rest the eye. Real cards keep true neutrals, cool related shadows, and a background slightly calmer than the subject."
+}

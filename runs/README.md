@@ -24,5 +24,7 @@ Every generated card and every measurement, oldest first. Full-size drawings, re
 | `cast_trial/` | The game's characters on new cards: drawn directly, or pre-drawn, pasted and blended | `experiments/cast_trial.py` |
 | `search_trial/` | The forty twins with label-picked, search-picked and five references | `experiments/search_trial.py` |
 | `smoke/` | Three cards through the changed pipeline, one with the cast. Not a set | `make_set.py --plan` |
+| `plain_check/` | The sheriff star's invented jewel: subject wording against the colors line | `experiments/plain_check.py` |
+| `plans/` | Draft plans for the final film sets, for the producer to approve before drawing | `make_set.make_plan` |
 
 A set run folder holds `plan.json` and `briefs.json`, the drawings in `tries/`, prompts in `prompts/`, Blender models in `models/`, pairwise judgements in `choose/`, `check.json` with every try's checks, and `edits.json` with every edit and whether it was kept.

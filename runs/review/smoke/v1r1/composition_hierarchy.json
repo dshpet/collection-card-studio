@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the suitcase sits dead centre, seen flat from the side, with an even band of empty space on all four sides. Its smallest margin is 0.121, above the real maximum of 0.098, and the case is short (box_height 0.569), so the top third of the card is empty sunburst. B: the glass is slightly left of centre. The straw and umbrella rise close to the top edge (margin 0.05), and the tall shape fills the card vertically (0.89). This matches the lessons: generated cards (lighthouse, computer, glove) shrink the hero into a centred, front-on box with margin all round, while real cards push the hero toward the edges at an angle.",
+   "fix": "Turn the suitcase to a three-quarter view and bring the camera closer, so the case fills most of the card. Let the handle almost touch the top edge and the left corner come close to the left edge. Keep only a thin strip of floor below."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the jacket floats in a three-quarter view and fills the card top to bottom (box_height 0.648). The collar is near the top and the cuffs are near the sides, much like the real glove card. B: the hat is wide and flat (box_height 0.485, below the real minimum of 0.581). It sits in a horizontal band through the middle, leaving large empty sunburst areas above and below. At thumbnail size it reads as a small strip on a big field. The case is weak, because the low height partly comes from the hat's shape.",
+   "fix": "Tilt the hat upward toward the viewer so the crown and the brim's underside both show. Scale it up until the crown nearly reaches the top third and the brim almost touches both side edges, which cuts the empty sky above and below."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the saddle hangs centred and front-on on a rail that runs edge to edge. It is symmetric, with clear margins all round (0.119, above the real range), much like the centred, contained framing of the generated lighthouse. B: the boxing gloves sit low and to the right. The right glove nearly touches the right edge (margin 0.021, box_width 0.951), and the camera is close and low, like the real cards' bold crops. B's width is slightly over the real range, so this call is weak.",
+   "fix": "Show the saddle at a three-quarter angle from slightly above, closer to the camera. Let the seat and horn nearly touch the top edge and a stirrup come close to the bottom edge, with the saddle pushed slightly off centre instead of mirrored left to right."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the bus is in three-quarter view and fills the frame (area 0.465, slightly above the real maximum). The roof is near the top edge, and pink buildings and clouds fill the sides without pulling focus from the red bus. B: the envelope is tilted and centred, and the stacked photos break out above it; the concentric green background points the eye toward it. Both cards use an angled, close framing like the real cards, and neither shows the generated habit of a centred, front-on view with margin all round.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: one pig is centred and fills the height. The lasso loop frames the head, so at thumbnail size the pig reads first. B: the subject spread is too large (area 0.558, above the real maximum of 0.489). A purple car, a cropped green suitcase at top left, a yellow bag, a chicken and the pig all compete for attention. The pig is pushed to the right edge and, at thumbnail size, the yellow bag and purple car pull the eye before the pig.",
+   "fix": "Make the pig the single large figure near the centre, filling most of the card's height. Shrink the car to a partial shape at one side and drop the extra suitcase on the roof. Keep the chicken small and behind the pig, so the pig's face is the brightest and largest thing on the card."
+  }
+ ],
+ "pattern": "Generated cards frame the hero in a 'safe catalogue' way. The object sits centred, front-on and symmetric, fully inside the card with even margins all round, and gaps are often filled with extra props (rocks, a life ring, a desk, a second figure). Real cards bring the camera closer at a three-quarter angle, push the hero off centre toward or against an edge, crop boldly, and keep a single clear focus."
+}

@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (suitcase): the hero is covered in small painted chips and scuffs: rust-brown flecks along the top edge, by the corners and near the bottom. A fine noisy speckle also runs across the orange body in the 2× crop. The stickers have crisp white die-cut borders and their own glossy shine, so the case reads as one lacquered plastic shell rather than worn leather. Three measures sit above the real range: detail_subject 0.050, micro_texture 0.022 and gloss 0.139. B (juice glass): smooth glass with soft, broad highlights. The ice cubes are softly frosted and the only fine detail is a few small bubble dots. Its numbers sit at the low end of the real range, like the soft real cards in the lessons.",
+   "fix": "Plain smooth matte brown leather suitcase body with a soft, even surface. No scratches, chips or speckle. Stickers flat and matte, sitting flush on the case. Keep the shine only on the small metal corners and the handle."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (scout jacket): it is dense with small hard-edged detail. There are stitched pocket flaps, a metal snap button, a raised sash edge and four badges with glossy rims and crisp icons. In the 2× crop, the fabric folds and the sash have sharp creases and shiny edges. That is more fine detail than the real cards carry: detail_subject 0.046 is above the range and micro_texture 0.021 is at the top. B (cowboy hat): soft, even felt that reads as smooth clay, with a broad soft sheen and one plain red band. It has the low detail and quiet surface of the real lesson cards (glove, monitor).",
+   "fix": "Soft matte cotton jacket with broad gentle folds and no visible stitching. The sash is plain matte felt. Badges are simple flat discs with a single soft highlight, not shiny embossed rims."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (saddle): pale dashed stitch lines run along every leather edge: the seat rim, the fender and the skirt. There is also mottled leather grain and crisp polished highlights on the seat. This is the same generated habit as the dashed seams added to the glove webbing in lessons 4 and 7. The real glove had no running stitches. Detail_subject 0.046 is high. B (boxing gloves): smooth, soft red with broad soft highlights and a few gentle crease lines at the fingers. Its detail and texture measure below the real range, so it is very soft, but that runs the same way as the real lesson cards, which were softer than the generated ones.",
+   "fix": "Smooth brown leather saddle with soft broad shading. No dashed stitch lines along the edges and no mottled grain. One soft, wide highlight on the seat. The stirrups are plain brushed metal."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (bus): the red body is one even lacquered plastic with uniform soft shading. The road and pavement in the crop are covered in noise-like stipple speckle, and the seats and mirror are smeared and soft-edged. It looks more like an AI soft-render than the clean, hand-placed finish of the real cards. B (envelope): matte paper with a faint fibrous edge, a glossy photo print and a crisp stamp and postmark. Matte and glossy surfaces are mixed sensibly within one object, as on the real cards. All of the measures for both cards are within the real range, so this is a weak call.",
+   "fix": "Remove the speckled noise from the asphalt and pavement and paint them as clean flat tones. Give the bus body a crisp painted metal finish with a sharp highlight along the roof edge. Draw the windows and seats with clean edges, not soft smears."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (cowboy pig): smooth matte pig skin with soft blush, a rope with a fine regular twist and a felt hat with a plain matte brim. B (pig loading a car): a glossy yellow duffel with seams and metal buckles, a twisted rope knot, feathered chicken texture and a matte pig skin. Both mix matte and gloss in a believable way and have fine detail at a modest scale. Their measures sit at the low end (A) and the middle (B) of the real range. My vector gives no reason to pick one.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards carry more small, crisp surface detail than the real cards. They add dashed stitch lines along leather edges, embossed badge rims, vents and panel seams, chips and scuffs, and noise-like speckle. They also put a shinier lacquer over everything, including fabric and leather. The real cards are softer and quieter: broad smooth shading, few seams, gloss kept to one or two places. When the measures run high (detail_subject or micro_texture at or above the top of the real range, gloss above about 0.12), that usually points to the generated card."
+}

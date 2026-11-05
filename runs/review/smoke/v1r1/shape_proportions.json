@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (suitcase): the outline is swollen like a pillow. The long bottom edge sags and wobbles instead of running straight, the four corner caps are soft round lumps rather than tight bevels, and the handle is a thick rounded loop. Its corner_rate of 0.78 is below the real range, which fits soft corners. B (iced drink): the glass tapers in straight walls and the straw stays a thin rod with a crisp bend. The umbrella ribs and pick are thin, which matches real cards like the lamp post and the goal net.",
+   "fix": "Draw the suitcase as a rigid box: dead-straight top, bottom and sides, flat front panel, and small tight metal corner caps. Use a thin, narrow carry handle and a straight bottom edge with no sag."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (scout jacket): the sleeves are short and thick, the cuffs are chunky rolls and the collar is puffy. That is a little toy-like, but it is a clothing card with no flat faces to check. B (cowboy hat): the crown is pinched and the brim curls up in a smooth, even sweep, with sensible thickness and no obvious inflation. Both have solidity 0.891 and all four fields sit inside the real range. My vector gives no clear reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (boxing gloves): the two gloves merge into one swollen blob. The thumb, fist and cuff hardly separate in the outline, and there is no crisp break where the wrist cuff starts. Solidity is 0.951 and corner_rate is 0.39, well below the real minimum of 0.82, so the contour is all inflated curves. A (saddle): the parts are clearly separate. It has a horn, a seat, a flat skirt panel with straight cut edges, a thin hanging strap and two stirrups with open holes, so the part count and the thin parts are kept. Its corner_rate of 6.69 is above the real range, so this call is weak.",
+   "fix": "Draw two distinct gloves with a clear gap or overlap line between them. Each glove needs a defined thumb pressed against the fist and a straight, firm wrist cuff that meets the padded fist at a visible crease. The fist should be less ballooned."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (double-decker bus): the proportions are toy-like. The body is short and tall, about as long as it is high. The front is enlarged with a bulging windscreen and a big rounded roof cap, the wheels are stubby and the mirror is oversized. That is the same squat, enlarged look the generated camera and computer have in the lessons. B (envelope with photos): the envelope and the photo cards are flat, with long straight edges and tight corners. Solidity of 0.956 and straight_share of 0.663 are slightly above the real range, but that is expected for a stack of flat cards.",
+   "fix": "Draw the bus long and low like a real double-decker: the body at least twice as long as it is tall, a flat vertical front with a straight roofline and tight corners, normal-size wheels and a small, thin mirror arm."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (pig with lasso): the body is very rounded, with wide hips, short legs and a thin rope loop. B (pig loading a car): a busy scene in which the car body, the chicken and the luggage merge into one large mass, while the pig itself has ordinary chubby proportions and a thin curly tail. Both are character scenes with no flat parts to test. The fields point both ways: A's straight_share and thin_share are above the real range and B's straight_share is below it. Nothing on my vector separates them.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards give themselves away by inflated, toy-like form. Bodies come out squatter and fuller, as with the taller camera, the bigger monitor and the oversized mouse. Rigid boxes get pillowy edges and soft corner blobs instead of straight runs and tight bevels. Separate parts fuse into one rounded mass. They also add unrequested parts, such as extra glove webbing holes and islands or rocks under the lighthouse, where real cards keep a lean, true part count with thin straps, rails and handles."
+}

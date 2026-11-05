@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (suitcase): the key comes from the upper left. The front face darkens gently toward the lower right, the brass corners have a lit top and a darker underside, and there is a soft dark contact shadow along the base on the floorboards. B (drink): the glass is lit almost evenly from the front. The two sides of the glass barely differ, the ice cubes read as soft glowing blobs with no lit side or shadow side, and under the base there is a pinkish glow instead of a dark contact shadow. B's form_contrast (0.31) and shading_range (0.59) are both below the real range. A sits inside it.",
+   "fix": "Light the glass from the upper left. Make the right side of the glass and the liquid clearly darker, give each ice cube a bright top-left face and a darker lower-right face, and put a small dark shadow on the table right under the base of the glass instead of a glow."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (scout jacket): the jacket is lit softly from the front. The torso, sleeves and collar have no clear side that turns away from the light, and the shading lens keeps a yellow-olive cast, the same albedo leak seen on the generated lesson cards. B (cowboy hat): the light clearly comes from the upper left. The crown is lit on the left and darker on the right, the underside of the brim is in deep shadow, and a crisp light rim runs along the brim edge, much like the real glove and camera. B's shading_range (0.84) is slightly above the real maximum, but its light organization matches the real cards.",
+   "fix": "Light the jacket from the upper left. Make the right sleeve, the right side of the torso and the undersides of the pocket flaps and collar clearly darker, and give the edges of the cuffs and collar a thin light rim."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (saddle): the saddle is lit flat from the front. The skirt and fender are an even mid-grey from left to right, the seat has only a faint sheen, the shadow of the saddle on the wooden rail is weak, and the stirrups are no darker than the leather. Its light_bias_strength (0.18) is below the real minimum. B (boxing gloves): a strong key comes from the upper left. The right and lower sides of both gloves fall into deep, soft core shadow, and there is a dark contact shadow where they rest on the table, the same committed one-sided light as the real lighthouse and camera.",
+   "fix": "Light the saddle from the upper left. Let the right half of the skirt and the fender fall into clearly darker shadow, cast a dark shadow from the saddle onto the wooden rail, and darken the undersides of the stirrups."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (bus): there is clear sunlight from the left. The side panel is lit while the front face and windshield are darker, and the road and kerb carry hard-edged cast shadows. B (envelope): lit straight from the front. The flap and the photos are almost the same value, there is only a thin dark edge where the photos tuck into the envelope, and the envelope drops almost no shadow on the background. Its light_bias_strength (0.11) is below the real minimum.",
+   "fix": "Light the envelope from the upper left. Make the lower-right part of the envelope and the right-hand photos clearly darker, put a soft dark shadow under the photos where they sit inside the envelope, and cast a soft shadow from the whole envelope down and to the right onto the green background."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (lasso pig): the pig's body is lit evenly from the front. The belly, back and legs are all the same soft peach tone, with almost no darker side and only small dark shadows under the hooves. Its light_bias_strength (0.07) and form_contrast (0.41) are both below the real range. B (pig at the car): the light comes from the upper right. The pig's left side and arm are darker, the car's rear and the bags are shaded underneath, and both the pig and the car drop clear shadows onto the road.",
+   "fix": "Light the pig from the upper left with sunlight. Make the pig's right side, belly underside and inner legs clearly darker, keep a bright edge on the lit shoulder and head, and cast a firm dark shadow from the pig to the lower right across the dirt."
+  }
+ ],
+ "pattern": "Generated cards light the object almost evenly from the front, so the light never clearly comes from one side. The side turned away from the light is barely darker, cast and contact shadows are faint or replaced by a glow, and the shading lens often keeps the object's own colour (warm, yellow) instead of a neutral grey. Real cards commit to a key from the upper side. They show a clearly darker, often cool shadow side, deep shadow on undersides, and a firm contact shadow where the object meets a surface."
+}

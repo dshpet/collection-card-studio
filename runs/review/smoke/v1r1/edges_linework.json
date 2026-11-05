@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (suitcase): a dark contour runs all round the case and handle. Every sticker (palm, sun, plane, house, mountain) has a doubled dark ring, so the case reads as inked die-cut shapes. The floorboards add grain lines. outline_darkness is 0.128, above the real range. B (glass): the rim and sides are thin, precise edges, and the glass edge fades into the purple wall and floor with no drawn contour (outline_darkness -0.006). The edges are sharpest on the ice and straw, with few lines elsewhere. That matches the real lessons.",
+   "fix": "No dark outline around the suitcase or the stickers. Let the case edge show only through its shading against the background. Stickers sit flat with a thin, soft white border, not a dark ring. Smooth floor with faint, soft board gaps and no wood-grain lines."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (jacket): an even, crisp dark contour runs round the whole silhouette, collar, cuffs, pockets and sash. Every pocket flap, seam and badge rim is a hard line of the same weight, so the subject edge density (0.159) is at the top of the real range. That is the same busy, evenly weighted line structure as the generated glove and camera lessons. B (hat): broad, soft edges on the crown and brim, with the sharpest edge only at the brim rim and the band. Internal lines are few, and the outline is lighter than its surroundings (-0.076). That matches the real lessons.",
+   "fix": "Fewer drawn seams: merge the pockets and flaps into soft folds. No uniform dark outline around the jacket. Keep crisp edges only on the badges and the sash, and let the sleeves and hem soften into shadow."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (saddle): stitching shows as dotted lines along every panel, the rail carries wood-grain lines, and a crisp contour runs round each strap and stirrup. Edges are hard everywhere, with no hierarchy, like the over-detailed generated lessons. B (gloves): very soft, partly lost edges (the left glove's edge against the wall). The only internal lines are a few thin knuckle creases, and the subject density (0.037) is below the real range. B is unusually soft, but the lessons always show the generated card as the crisper, busier one, so I lean A.",
+   "fix": "Stitching as faint, barely visible seams, not dotted lines on every panel. Plain smooth wooden rail with no grain lines. Strongest edge only on the seat and stirrups, and let the lower flaps soften into shadow."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (bus): the asphalt and pavement fill the lower edge map with fine speckle, and the buildings, windows and clouds add many background lines (background density 0.051). The bus body has a darkish contour, and every window and seat back is lined. Edge strength is spread across the whole frame, with no focus. B (envelope): clean, even edges with a clear hierarchy, crisp on the photo and stamp and simple on the envelope folds. The background has only smooth concentric rings, and the outline is lighter than its surroundings (-0.066).",
+   "fix": "Plain, smooth road surface with no grain or speckle. Background buildings simplified to soft, out-of-focus blocks. Keep the crispest edges on the bus front and headlights, and soften the far side and rear of the bus."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (cowboy pig): a crisp contour runs round the pig and rope, with textured rocks, grass and fence posts behind. B (pig and chicken loading a car): the chicken's feathers and the bush are dense with edges, and the luggage edges are soft. Both are busy scenes, and their measurements are almost identical and inside the real range. Nothing on my vector separates them.",
+   "fix": ""
+  }
+ ],
+ "pattern": "In the lessons, generated cards draw a uniform dark contour around the whole silhouette and turn every seam, stitch, sticker rim and wood-grain line into a hard line of the same weight. They have no edge hierarchy and often add textured floors and backgrounds. Real cards let the outer edge come from shading, sometimes losing it against the background, and keep internal lines few and thin."
+}
