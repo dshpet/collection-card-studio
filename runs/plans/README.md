@@ -98,3 +98,26 @@ As `*-shared-cast`, with the four lessons accepted on 2026-11-06 and the planner
 - **Variant 1:** Jack-o'-Lantern [3], Witch Hat [1], Cauldron [4], Ghost Sheet [1], Bat [1], Crystal Ball [2], Haunted Door [4], Spooky Tree [4], Potion [3], Boo Surprise [5]
 - **Variant 2:** Jack-o'-Lantern [2], Cauldron [3], Witch Hat [1], Ghost Sheet [1], Broomstick [1], Black Cat [3], Spell Book [3, from above], Castle Tower [4], Candlestick [4], Pumpkin Peek [5]
 - **Variant 3:** Ghost Sheet [2], Jack-o'-Lantern [4], Cauldron [3], Witch Hat [1], Owl [1], Vampire Cape [1], Full Moon [1], Old Key [3, from above], Wall Lantern [4], Spooky Cape [5]
+
+## *-shared-3.json: all three genres, 2026-11-06 night
+
+As `*-shared-cast-2`, but with no character cards, since the brief asks for no gold cards; the producer has yet to confirm. The planner adds the producer's three calls: no landforms or sky bodies (a single plant, such as the cactus, stays), night and dusk skies for dark topics, and the game's emblem on one object per set (`experiments/shared_plans.py <Theme> --suffix=-3`). Horror was planned again after a rule that keeps dark objects, such as the bat, on the dusk sky rather than the night one. Tags show the night or dusk sky and the emblem.
+
+**Western**
+
+- **Variant 1:** Cowboy Hat [1], Boots [3], Sheriff Star [2], Saloon Doors [4], Cactus [3], Covered Wagon [3], Hand Pump [4], Campfire [2], Lasso [1], Horseshoe [1]
+- **Variant 2:** Cowboy Hat [1], Boots [2], Sheriff Badge [3, from above], Saloon Doors [4], Cactus [2], Tumbleweed [3], Canteen [1], Barrel [3, emblem], Harmonica [1], Hitching Post [4]
+- **Variant 3:** Cowboy Hat [1], Boots [3], Jail Door [4], Saloon Doors [4], Cactus [2], Saddle [1], Horse [3], Guitar [3, from above], Campfire [2], Bandana [1]
+
+**Sci-Fi**
+
+- **Variant 1:** Rocket [1], Flying Saucer [1], Space Helmet [1], Glow Flask [2], Moon Rover [3], Star Map [3, from above], Space Boots [3], Radar Dish [4], Airlock [4], Control Desk [4]
+- **Variant 2:** Retro Rocket [1], Saucer [1], Satellite [1], Microscope [2], Jetpack [3], Space Capsule [3], Plasma Ball [3], Launch Pad [4], Slide Door [4], Wall Screen [4]
+- **Variant 3:** Rocket [1], Flying Saucer [1], Satellite [1], Space Helmet [2], Mars Rover [3], Access Card [3, from above], Flight Stick [3], Observatory [4], Porthole [4], Airlock [4]
+
+**Horror**
+
+- **Variant 1:** Bat [1, dusk], Jack-o-Lantern [3], Cauldron [2], Witch Hat [1], Haunted Door [4, night], Candelabra [3], Potion [1], Iron Gate [4, dusk], Grandfather Clock [3], Ghost Sheet [2]
+- **Variant 2:** Bat [1, dusk], Old Key [1], Lantern [1], Crystal Ball [3], Broom [3, from above], Candlestick [2], Jack-o-Lantern [4, night], Cauldron [4, dusk], Bare Tree [4, dusk], Ghost Sheet [3]
+- **Variant 3:** Bat [1, dusk], Pumpkin [3], Witch Hat [1], Flashlight [1], Cauldron [2], Old Phone [3], Tall Mirror [3], Dark Tower [4, night], Door Knocker [4], Ghost Sheet [2]
+

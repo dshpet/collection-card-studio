@@ -66,7 +66,12 @@ How they are drawn:
 - **Detail (measured).** Category 1 subjects are the plainest. The art guide says category 2 has no small details, but its subjects are the most detailed.
 - **Data note (eye).** Some card names do not match their pictures: Poolside's Swim Ring shows flip-flops, its Lifeguard Tower shows sunscreen, and Beach's Sunblock shows a lifeguard chair.
 
-Not adopted, for the producer: night and sunset skies on 13 of 73 scenes, against the planner's "clear sky even on dark topics". No wild nature, against the producer's grades: Cactus, Mesa, Ringed Planet and Comet got 5. The game emblem on one object per set. Close framing of character cards, from only three of ours.
+The producer's calls, 2026-11-06:
+- **No wild nature, as on the real sets.** A single plant or animal with a clear silhouette may stay, so the Cactus is kept. Mesa, Ringed Planet and Comet are dropped, though they were graded 5.
+- **Night and dusk skies are allowed for dark topics such as horror.** Real evening scenes (13 of 73, eye) use a rich royal blue sky with small stars and a crescent moon, or violet turning pink at the horizon. They are never black, and a warm light in the scene carries them: lit windows or a glowing sign.
+- **One object per set may carry the game's emblem, as on 8 of 15 real sets.** It goes where a brand or stamp would sit and is drawn from words alone: a house or cow-face pictogram. The brief neither asks for it nor rules it out.
+
+Not adopted: close framing of character cards, which rested on only three of our cards.
 
 ## How far to trust this
 
