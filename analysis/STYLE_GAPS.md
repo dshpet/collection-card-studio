@@ -252,6 +252,14 @@ No model judges construction, but a Blender blockout is real geometry, so loose 
 - **Over the 200 model files so far it flagged 14.** Early rounds had real gaps the modeller fixed later, such as a steam train's tender set apart from the engine and a wagon's loose hoops. Three final models float by design: a planet's ring, a station in orbit and mist inside a crystal ball. No final model had an unintended loose part, because the modeller's look at its render already catches what the camera shows.
 - **So it is a guard, not a measured gain.** The modeller now gets each loose group's position and size with each render, and keeps a group that floats by design, such as a station in orbit with a planet far behind. The user's remaining complaints on blockout cards are about function, such as a ladder that leads nowhere, which no contact test sees.
 
+## Fire, 2026-11-06
+
+The producer called the drawn fires weak: the cauldron's tiny flame was "laughable", and the meteor's tail did not read as fire. The proposed lesson said the reference set has no fire, but it has the Campfire Cook card, a bright fire under a cauldron, and a lantern's flame. `experiments/fire_check.py` drew the horror cauldron and the western campfire three times in each of three arms: as planned, with the subject describing the real card's fire, and with that plus the two real fire cards as references.
+
+- **Wording fixes it.** As planned, "small orange flame" in the colors drew a tiny flame under the cauldron in 3 of 3. Described as "big and bright: a yellow-white glowing core, orange flame tips curling upward, glowing orange ends on the logs, and warm orange light" on the pot, it drew a bright campfire with lit logs in 3 of 3, for both objects. The share of bright fire-colored pixels on the cauldron went from 0.010 to 0.076, against 0.034 on the real card, so "big" overshoots. On the desert campfire the sand falls in the same color range, so there the change is judged by eye only.
+- **References add nothing.** With the real fire cards attached the fires look the same as with words alone, and the lantern card's sunburst rays replaced the cauldron's stripes.
+- Rated by the author's eye and one pixel measure, not yet by the producer.
+
 ## Limits
 
 Eight blind pairs per role is a small sample, and rounds are noisy. Reviewers are models, and on pairs of different objects they also raise false alarms on hidden real controls, so they guide edits and are not a gate. The human ratings come from one rater.
