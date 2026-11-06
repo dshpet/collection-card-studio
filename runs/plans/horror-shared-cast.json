@@ -1,0 +1,389 @@
+{
+ "title": "Horror",
+ "story": "A friendly spooky night where everything glows, bubbles and goes boo.",
+ "variants": [
+  {
+   "cards": [
+    {
+     "name": "Jack-o-Lantern",
+     "subject": "A round orange pumpkin with vertical ribs, a short green stem on top and a carved face of two triangle eyes, a triangle nose and a wide zigzag grin.",
+     "object_class": "plant_nature",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "orange pumpkin with a small green stem",
+     "backdrop_colors": "bright purple",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Witch Hat",
+     "subject": "A tall black pointed cone hat with a wide round flat brim and a band around the base of the cone with a square buckle in the front.",
+     "object_class": "clothing",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "black hat with a yellow buckle on the band",
+     "backdrop_colors": "lime green",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Bat",
+     "subject": "A real brown bat with wings spread wide and symmetrical, two pointed ears, a small furry body and tiny feet.",
+     "object_class": "animal",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "dark brown bat with small pink inner ears",
+     "backdrop_colors": "bright orange",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Candlestick",
+     "subject": "A round brass candlestick with a wide flat base, a straight stem, a cup holding one tall white candle, and a ring handle attached to the base.",
+     "object_class": "tool",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "golden brass with a white candle and a small orange flame",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "flat grey stone ledge",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Cauldron",
+     "subject": "A round black iron cauldron with a wide open top rim, two small side handles, three short legs standing on the ground, and green bubbling potion filling it.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "concentric_rings",
+     "hero_colors": "black iron with glowing green potion and a small purple bubble",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "green grass",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Candy Corn",
+     "subject": "A single candy corn, a triangular sweet with a rounded tip, three stripes: white tip, orange middle and yellow base, sitting on its flat base.",
+     "object_class": "food_drink",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "yellow, orange and white candy with a small pink shine",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "wooden table",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Potion",
+     "subject": "A round glass flask with a narrow neck and a cork stopper, filled with glowing purple liquid, standing on its flat bottom.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "waves",
+     "hero_colors": "purple liquid in clear glass with a small green label-free cork",
+     "backdrop_colors": "sunny yellow",
+     "surface_or_setting": "wooden table",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Haunted House",
+     "subject": "A tall crooked mansion with a steep dark roof, a pointed tower on the left, a front door, four lit windows and a chimney, standing on a grassy hill.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "grey-purple walls, dark roof, glowing yellow windows",
+     "backdrop_colors": "clear bright blue sky with a pale full moon",
+     "surface_or_setting": "grassy hill",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Spooky Tree",
+     "subject": "A big old tree with a thick trunk, a hollow knot and bare twisting branches that grow from the trunk, rooted in grass.",
+     "object_class": "plant_nature",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "dark brown tree with a small orange leaf on one branch",
+     "backdrop_colors": "bright turquoise sky",
+     "surface_or_setting": "grassy meadow",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Ghost Sheep",
+     "subject": "The sheep, wearing a white bedsheet with two eye holes over its fleece, bumps into a carved pumpkin and the sheet slips sideways.",
+     "object_class": "character",
+     "category": "5",
+     "pattern": "full_scene",
+     "hero_colors": "white sheet, grey face and legs, orange pumpkin",
+     "backdrop_colors": "bright purple and sky blue",
+     "surface_or_setting": "grassy yard",
+     "build_model": false,
+     "cast": [
+      "sheep"
+     ]
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Lantern",
+     "subject": "An old black iron lantern with a square glass body, a pointed cap on top, a ring handle on the cap and a flat base, glowing inside.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "black iron with glowing yellow-orange glass and a small red cap top",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Black Cat",
+     "subject": "A real black cat sitting upright seen from the front with an arched tail curled up behind it, two pointed ears and round eyes.",
+     "object_class": "animal",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "black fur with yellow-green eyes and a pink nose",
+     "backdrop_colors": "sunny yellow",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Broom",
+     "subject": "A witch broom: a long straight wooden handle with a bundle of straw bristles tied tightly to its end with a cord.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "stripes",
+     "hero_colors": "brown wood and golden straw with a red cord",
+     "backdrop_colors": "lime green",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Crystal Ball",
+     "subject": "A perfectly round glass ball glowing inside, resting on a small gold stand with a round base.",
+     "object_class": "other",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "clear blue-purple glass ball with a golden stand and small pink swirl",
+     "backdrop_colors": "orange",
+     "surface_or_setting": "purple stone ledge",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Jack-o-Lantern",
+     "subject": "A round orange pumpkin with vertical ribs, a green stem and a carved face of triangle eyes, triangle nose and a toothy grin, sitting on a straw bale.",
+     "object_class": "plant_nature",
+     "category": "3",
+     "pattern": "rays",
+     "hero_colors": "orange pumpkin with a green stem",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "straw hay bale",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Witch Hat",
+     "subject": "A tall black pointed cone hat with a wide round brim and a band with a buckle around the base, lying flat on the floor.",
+     "object_class": "clothing",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "black hat with a purple band",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "wooden plank floor",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Candle",
+     "subject": "A tall white candle in a round brass holder with a flat base and a ring handle, with one small flame.",
+     "object_class": "tool",
+     "category": "3",
+     "pattern": "waves",
+     "hero_colors": "white candle in brass holder with an orange flame",
+     "backdrop_colors": "teal",
+     "surface_or_setting": "wooden table",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Witch Cauldron",
+     "subject": "A round black iron cauldron with two side handles resting on three logs over a small campfire, filled with bubbling green potion.",
+     "object_class": "container",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "black iron, green potion, orange flames",
+     "backdrop_colors": "bright blue sky with green forest trees",
+     "surface_or_setting": "forest clearing",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Haunted Mansion",
+     "subject": "A tall crooked mansion with a steep roof, two pointed towers, a front door, five lit windows and a chimney, on a hill beside a fence-free path.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "grey-blue walls, dark purple roof, yellow windows",
+     "backdrop_colors": "bright sky blue with a pink sunset glow",
+     "surface_or_setting": "grassy hill",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Vampire Pig",
+     "subject": "A pig wearing a black vampire cape with a high collar tries to hide behind a pumpkin while a rooster in a small pointed witch hat crows beside it.",
+     "object_class": "character",
+     "category": "5",
+     "pattern": "full_scene",
+     "hero_colors": "pink pig, black cape with red lining, orange rooster, orange pumpkin",
+     "backdrop_colors": "bright yellow and sky blue",
+     "surface_or_setting": "grassy yard",
+     "build_model": false,
+     "cast": [
+      "pig",
+      "rooster"
+     ]
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Cauldron",
+     "subject": "A round black iron cauldron with a wide open rim, two side handles, three short legs and green bubbling potion at the top.",
+     "object_class": "container",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "black iron with green potion and a small yellow bubble",
+     "backdrop_colors": "sunny yellow",
+     "surface_or_setting": "",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Witch Hat",
+     "subject": "A tall black pointed cone hat with a wide round brim and a band with a buckle at the base of the cone.",
+     "object_class": "clothing",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "black hat with an orange band",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Owl",
+     "subject": "A real brown owl with a round body, two ear tufts, a big round face with large round eyes and a small hooked beak, folded wings.",
+     "object_class": "animal",
+     "category": "1",
+     "pattern": "waves",
+     "hero_colors": "brown feathers, cream belly and yellow beak",
+     "backdrop_colors": "bright purple",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Manor",
+     "subject": "A small tall crooked mansion with a steep roof, a tower on the left, a front door, three lit windows and a chimney.",
+     "object_class": "building_place",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "grey walls, dark roof, glowing yellow windows",
+     "backdrop_colors": "orange",
+     "surface_or_setting": "flat stone ledge",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Potion",
+     "subject": "A round glass flask with a narrow neck and cork stopper, filled with glowing green liquid, standing on its flat bottom.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "green liquid in clear glass with a brown cork and a small pink bubble",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "wooden table",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Candy Corn",
+     "subject": "A single candy corn, a triangular sweet with a rounded tip, with white tip, orange middle and yellow base stripes.",
+     "object_class": "food_drink",
+     "category": "3",
+     "pattern": "diamonds",
+     "hero_colors": "yellow, orange and white candy with a faint pink shine",
+     "backdrop_colors": "grass green",
+     "surface_or_setting": "wooden table",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Crystal Ball",
+     "subject": "A perfectly round glass ball glowing inside, resting on a small gold stand with a round base.",
+     "object_class": "other",
+     "category": "3",
+     "pattern": "rays",
+     "hero_colors": "blue-purple glass, golden stand, small pink swirl",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "wooden table",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Pumpkin Field",
+     "subject": "A big carved orange pumpkin with a green stem, triangle eyes and a toothy grin sitting among ripe pumpkins on the ground.",
+     "object_class": "plant_nature",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "orange pumpkins with green stems and a small green leaf",
+     "backdrop_colors": "bright blue sky",
+     "surface_or_setting": "autumn pumpkin field",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Spooky Tree",
+     "subject": "A big old tree with a thick trunk, a hollow knot and bare twisting branches that grow from the trunk, rooted in grass, with a round full moon behind.",
+     "object_class": "plant_nature",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "dark brown tree with a small orange leaf",
+     "backdrop_colors": "bright turquoise sky with a pale yellow moon",
+     "surface_or_setting": "grassy hill",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Ghost Man",
+     "subject": "A stocky man in a white bedsheet with eye holes, round glasses poking through, tiptoes after a sheep who looks back startled.",
+     "object_class": "character",
+     "category": "5",
+     "pattern": "full_scene",
+     "hero_colors": "white sheet, brown mustache, white fleece, grey face",
+     "backdrop_colors": "bright purple and orange",
+     "surface_or_setting": "garden path with grass",
+     "build_model": false,
+     "cast": [
+      "man",
+      "sheep"
+     ]
+    }
+   ]
+  }
+ ],
+ "problems": [],
+ "cast": 1,
+ "edited": "by hand 2026-11-06: Ghost Sheep subject rewritten, the planner had left a self-correction in it"
+}

@@ -5,7 +5,8 @@ versions drift to weak ones (an old car, a Ferris wheel in Horror). This plans t
 keep the three to five most iconic objects in every version and vary the rest. Plans only, for the producer to compare
 with runs/plans/<genre>.json.
 
-    shared_plans.py Horror Sci-Fi
+    shared_plans.py Horror Sci-Fi                   -> runs/plans/<theme>-shared.json
+    shared_plans.py Western --cast 1                -> runs/plans/western-shared-cast.json
 """
 
 import sys
@@ -28,7 +29,9 @@ SHARED = ("- Every version keeps the topic's three to five most iconic objects, 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("themes", nargs="+")
-    themes = parser.parse_args().themes
+    parser.add_argument("--cast", type=int, default=0, help="character cards per variant")
+    args = parser.parse_args()
+    themes, cast = args.themes, args.cast
     original = make_set.plan_prompt
 
     def shared(*args, **kwargs):
@@ -41,8 +44,8 @@ def main():
     knowledge = load_json(ANALYSIS / "knowledge.json")
 
     def one(theme):
-        plan = make_set.make_plan(theme, "A set for a Movie collection", 3, knowledge)
-        save_json(ROOT / "runs" / "plans" / f"{theme.lower()}-shared.json", plan)
+        plan = make_set.make_plan(theme, "A set for a Movie collection", 3, knowledge, cast)
+        save_json(ROOT / "runs" / "plans" / f"{theme.lower()}-shared{'-cast' if cast else ''}.json", plan)
         return theme, plan
 
     with ThreadPoolExecutor(3) as pool:
