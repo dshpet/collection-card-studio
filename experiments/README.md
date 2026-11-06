@@ -16,5 +16,6 @@ One-off studies behind the pipeline's decisions. Each ran once, its results are 
 | `shape_check.py` | Does naming the canonical shape keep a front-on clock round? | No: roundness 0.95 either way, against 0.995 on the real card |
 | `fire_check.py` | Can the model draw a convincing fire? | Yes, when the subject describes the real card's fire. References add nothing |
 | `wording_check.py` | Does the batch's plainness come from the subject wording? | Yes, in 4 of 4 objects: the earlier wording brings back the badge, spur, bent tip and lever |
+| `colors.py` | Which backdrop colors do the real cards use, and do ours follow them? | Mostly cool, loosely opposite the hero, surface often in the backdrop's hue. Ours are more saturated and more contrasting |
 | `shared_plans.py` | Do variants drift less if they share the most iconic objects? | Plans only, for the producer: `runs/plans/*-shared.json` |
 | `outfit_check.py` | Do character cards borrow the outfits of their cutouts? | Yes; a prompt line and outfit-free cutouts first fix it for the animals |

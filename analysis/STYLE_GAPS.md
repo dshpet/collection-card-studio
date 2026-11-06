@@ -230,7 +230,8 @@ The reference collection has one cast, cut out by `scripts/cast.py`: the man, th
 - **Identity holds in every arm.** Cut out of each result by SAM 3, every figure found was nearer its own cast member than any other in DINOv2, by a margin of 0.21 to 0.22, as the real cutouts are to each other (0.22).
 - **Pasting looks pasted.** The redraw keeps the pasted size and pose, so characters stay small and stand in front of the setting rather than in it. A figure drawn without its setting cannot know the counter it should lean on: the man came out lying on the saloon bar in every arm that used his figure. One figure could not be drawn at all, twice.
 - **Direct is best for the director, and by eye on par with figure.** The figure arm keeps an asked outfit better (the green hoodie), and direct composes more freely. Direct takes one step instead of three.
-- **So character cards are drawn directly.** `make_set.py --cast N` plans N character cards per variant with the cast's cutouts attached. The default is 0, since the movie brief asks for no gold cards, though Music Fest shows that character cards without gold frames exist. Cards showing the cast stay out of git. The user has not yet rated these arms: the rating page has them, blind, under Cast.
+- **So character cards are drawn directly.** `make_set.py --cast N` plans N character cards per variant with the cast's cutouts attached. The default is 0, since the movie brief asks for no gold cards, though Music Fest shows that character cards without gold frames exist. Cards showing the cast stay out of git.
+- **The producer agrees, blind (2026-11-06).** Graded in the Cast tab with the arms hidden: direct works in 8 of 12 with a mean grade of 3.8, figure 2 of 11 and 2.4, paste2 4 of 11 and 1.8, paste 0 of 11 and 1.5. The comments on figure and paste name wrong limb counts ("3 legs", "3 fingers") and arms out of place. Direct got one such comment ("Limbs placement may be off"). By eye, figure had looked on par with direct; the producer puts it well below. Two direct draws got a 1, so drawing several and choosing still matters.
 
 ## Smaller checks, 2026-11-05 night
 
@@ -269,7 +270,32 @@ Variant 1 of each `runs/plans/*-shared-cast.json` plan, drawn through the full p
 - **Author's read, not rated: more correct, but plainer.** Beside the earlier finals of the same 16 objects, the batch drops the details that gave them character: the hat's star badge, the boot's spur and flame inlay, the witch hat's bent tip, the rocket in flight, the control panel's gauges and lever, the moon base's glass dome. The new subjects are longer and geometric ("a tall black pointed cone hat with a wide round flat brim"), which the shape lesson asks for. The producer graded those earlier hat, boot and witch hat 5, 5 and 5 in the blind Redraw tab. The haunted house came out a tidy cottage: its Blender model was built straight, though the plan said crooked.
 - **Cast cards.** All three read as scenes with the game's characters. The man again wears his own overalls, in a space cabin where the brief asked for a space suit.
 - **The plainness comes from the wording.** `experiments/wording_check.py` drew the hat, boot, witch hat and console from their batch briefs three times each, with the batch's subject and colors, then with the earlier finals' (same staging, backdrop and references, no blockout). The batch wording drew plain objects in 12 of 12; the earlier wording brought back the badge, the spur and flame inlay, the bent tip and the lever with colored buttons in 12 of 12. The hat's badge was never in its old subject: it came from "cream" in the colors, the effect the accent lesson removes. A lesson asking for signature details, with symmetry only where the real object has it, is proposed.
-- Waiting for the producer's grades in the Cards tab.
+- **Rated by the producer in the Cards tab, not blind: mean 3.6 from 30.** Western 4.1, Sci-Fi 3.6, Horror 3.2. On the 16 objects also graded in the blind Redraw tab: batch 3.69, earlier finals 3.44, blockout redraws 2.88, with 5 better, 8 the same and 3 worse. Better: flying saucer 2 to 5, ringed planet 3 to 5, space helmet, cactus and lasso by one. Worse: haunted house 3 to 1 ("Shape is jagged in a bad way"), cowboy hat and moon rover by one. The tabs differ (blind and mixed against labelled), so this is suggestive.
+- **The plainness cost little.** Hat 4, boot 5, witch hat 5, console 3, against 5, 5, 5 and 3 before. The author's read that plain is worse did not hold.
+- **Low grades name the plan more than the style.** Candy corn 2 ("unrecognizable. The art style if fine though") and teleport pod 2 ("I wouldn't know what it is without the title"). The cauldron 1 again, now for its legs ("One leg of the pot is missing"). The rocket 2 ("a toy rocket for a child"): it is small on a blank pad, while real vehicles and buildings on a surface fill the frame and stand on their own ground. The horseshoe 2 for its placement, the moon base 3 ("Too 3d render feel").
+- **Cast cards:** Campfire Pals 5 ("Very good"). Ghost Sheep 3: kicking the pumpkin "may look like violence", and the sheep alone would be better. Zero Gravity 2: the man has a helmet and the pig has none, "some sort of animal cruelty".
+- **Potion 4:** the cork should be cork-colored, where the plan's accent made it green, and the backdrop "reminiscent of sand". See Backdrop colors.
+- Lessons proposed from these comments: no harm in cast scenes, objects named without their title, natural materials keep their color.
+
+## Backdrop colors, 2026-11-06
+
+The producer, on the batch potion: "The background is maybe off, reminiscent of sand. Run analysis of the colours that are being used: are there any patterns to it?" `experiments/colors.py` measures each card's backdrop (the background above the subject), its surface (the bottom of the card, for categories 2 and 3) and its main hero color, for the 160 real cards, the 30 earlier finals and the 30 batch cards. Swatches: `runs/colors/sheet.png`.
+
+Measured patterns in the real cards:
+- **Mostly cool.** Cyan 26%, blue 19%, green 14%, orange 11%, purple 9%, yellow 7%, pink 7%, red 3%, near-grey 4%.
+- **By category.** Floating objects sit on cyan, blue or green. Ledges take purple, green, red or pink, the most saturated backdrops (Oklab chroma 0.187). Objects on a real surface favor orange. Scenes have cyan and blue skies, the least saturated (0.123).
+- **Loosely opposite the hero.** The median hue gap from hero to backdrop is 110°, not a full complement. Red and orange heroes, the most common, sit on blue or cyan in 41 of 74 cards.
+- **The surface often shares the backdrop's hue.** In 25 of 52 cards on a ledge or surface it is in the backdrop's color family, with a median hue gap of 27°.
+- **Sets repeat.** A real set uses 5.8 color families over ten cards, and its most used family covers 3.7 cards.
+
+Ours against them:
+- **More saturated.** Mean backdrop chroma 0.180 for the earlier finals and 0.174 for the batch, against 0.143. The gap is widest in green (0.21 against 0.15), pink (0.22 against 0.17) and purple (0.21-0.24 against 0.18). The planner is told "bright and clean... never dusty, muted, dull or dark".
+- **More opposite.** A median hue gap of 125° for the earlier finals and 148° for the batch, against 110°. The planner is told to contrast the backdrop with the hero.
+- **Surfaces contrast with the backdrop.** The surface shares the backdrop's family in 1 of 13 earlier finals and 3 of 10 batch cards, with median gaps of 73° and 123°, against 27° on real cards.
+- Spread per set matches: 6.7 and 6.0 families against 5.8. One backdrop falls outside the real range: the earlier Candelabra's dark purple.
+- **The potion's sand is not its color.** Its backdrop, #fdbf33, sits between two real wave backdrops: Fan Fold #fbc212 and Beach Ball #fbc554. Author's read: the Beach Ball's waves sit over real sand, and Fan Fold's lemon waves are crisp, with no surface. The potion's soft amber waves over a warm table look like the Beach Ball's dunes. That is one card, not a rule.
+
+These are measured differences, not yet rated. The saturation and contrast come from the planner's color rules, which are style wording, so any change is one round, measured and shown to the producer.
 
 ## Limits
 
