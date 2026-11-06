@@ -15,7 +15,7 @@ from collections import Counter
 
 os.environ.setdefault("HF_HUB_OFFLINE", "1")
 
-from common import ANALYSIS, cards as manifest_cards, load_json, save_json
+from common import ANALYSIS, cards as manifest_cards, load_json, pattern, save_json
 
 import numpy as np
 import torch
@@ -54,7 +54,7 @@ def pick_references(card, cards, likeness, count=3, taken=()):
     other cards in the variant."""
     pool = [c for c in cards if c["form"]["staging"]["art_category"] == card["category"]
             and "staging.art_category" not in c["disputed"]]
-    ranked = sorted(pool, key=lambda c: (c["form"]["backdrop"]["pattern"] != card["pattern"],
+    ranked = sorted(pool, key=lambda c: (pattern(c) != card["pattern"],
                                          c["form"]["identity"]["object_class"] != card.get("object_class"),
                                          -likeness[c["id"]]))
     first = next((c for c in ranked if c["id"] not in taken), ranked[0])

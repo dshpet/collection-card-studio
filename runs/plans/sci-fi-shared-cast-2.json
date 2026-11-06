@@ -1,0 +1,389 @@
+{
+ "title": "Sci-Fi",
+ "story": "Lights down, the big screen glows, and the farm heads off to the stars.",
+ "variants": [
+  {
+   "cards": [
+    {
+     "name": "Flying Saucer",
+     "subject": "A round silver flying saucer, perfectly symmetrical, with a smooth clear dome on top, a flat disc rim with a ring of eight yellow lights and three small round feet underneath, flying in a clear sky.",
+     "object_class": "vehicle",
+     "category": "1",
+     "pattern": "full_scene",
+     "hero_colors": "silver, grey, pale green dome, small yellow lights",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Ringed Planet",
+     "subject": "A round orange planet with soft cream stripes and one wide flat ring circling its middle at a tilt, the ring symmetrical with a thin pink stripe on it.",
+     "object_class": "other",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "orange, cream, small pink stripe on the ring",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Satellite",
+     "subject": "A gold box-shaped satellite body with two rectangular blue solar panels fixed on opposite sides by short arms and a small white round dish on top.",
+     "object_class": "electronics",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "gold, white, blue solar panels",
+     "backdrop_colors": "green",
+     "surface_or_setting": "",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Space Helmet",
+     "subject": "A round white space helmet with a wide curved gold visor and a thick ring collar at the neck, with an orange stripe on the collar and two small hose connectors on its sides.",
+     "object_class": "clothing",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "white, gold visor, small orange stripe on the collar",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Glow Flask",
+     "subject": "A conical glass flask with a round body and narrow neck, a tan cork stopper and bright green glowing liquid with three yellow bubbles.",
+     "object_class": "container",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "green liquid, clear glass, tan cork, small yellow bubbles",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Moon Rover",
+     "subject": "A white six-wheeled rover with a flat boxy body, a small round dish on a short mast fixed on top and a front camera box with a blue lens, standing on grey dust.",
+     "object_class": "vehicle",
+     "category": "3",
+     "pattern": "plain_gradient",
+     "hero_colors": "white, grey, black wheels, small blue lens",
+     "backdrop_colors": "orange",
+     "surface_or_setting": "grey moon dust",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Star Map",
+     "subject": "A round dark blue star chart lying flat, with white dots joined by thin lines and one small orange ringed planet icon.",
+     "object_class": "paper_document",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "navy blue, white, small orange planet icon",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "light wood desk",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Rocket",
+     "subject": "A tall white rocket with a pointed red nose cone, two round yellow windows and four red fins at its base, standing upright on a flat concrete launch pad.",
+     "object_class": "vehicle",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "white, red, small yellow windows",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "a flat concrete launch pad",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Control Panel",
+     "subject": "A grey rectangular control panel mounted on a wall, with a blue screen showing a planet icon, three rows of round yellow buttons and two sliding levers fixed in slots.",
+     "object_class": "electronics",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "grey, blue screen, small yellow buttons",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "a spaceship cabin wall",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Space Farm",
+     "subject": "The cow and the rooster wear matching silver space jumpsuits and stand in a grassy field while a small flying saucer hovers above them with a pale light, and the rooster points up with its wing.",
+     "object_class": "character",
+     "category": "5",
+     "pattern": "full_scene",
+     "hero_colors": "white, black, orange, silver",
+     "backdrop_colors": "sky blue, grass green",
+     "surface_or_setting": "a grassy field under a clear sky",
+     "build_model": false,
+     "cast": [
+      "cow",
+      "rooster"
+     ]
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Copper Saucer",
+     "subject": "A round copper flying saucer, symmetrical, with a smooth green glass dome on top, a flat disc rim with six round yellow windows and a small round beacon under the middle, flying in a clear sky.",
+     "object_class": "vehicle",
+     "category": "1",
+     "pattern": "full_scene",
+     "hero_colors": "copper, green dome, small yellow windows",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Retro Rocket",
+     "subject": "A retro red rocket flying upward with a rounded nose, three cream fins and one round green porthole, with a bright fire with a yellow-white glowing core, orange flame tips curling downward under the engine, and warm orange light cast on the rocket's base.",
+     "object_class": "vehicle",
+     "category": "1",
+     "pattern": "full_scene",
+     "hero_colors": "red, cream, orange fire, small green porthole",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Blue Planet",
+     "subject": "A round blue planet with white swirls and one wide flat ring circling its middle at a tilt, the ring symmetrical, with a pink stripe on the planet.",
+     "object_class": "other",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "blue, white, small pink stripe",
+     "backdrop_colors": "yellow",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Crystal",
+     "subject": "A cluster of three tall pointed blue crystals with flat hexagonal faces, the tallest in the middle, joined at one common base, with one small yellow crystal at the foot.",
+     "object_class": "other",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "blue, white highlights, small yellow crystal",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Orange Helmet",
+     "subject": "A round orange space helmet with a dark wide visor and a thick white ring collar, resting on grey metal floor plates.",
+     "object_class": "clothing",
+     "category": "3",
+     "pattern": "plain_gradient",
+     "hero_colors": "orange, dark grey visor, small white collar",
+     "backdrop_colors": "blue",
+     "surface_or_setting": "grey metal floor plates",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Blueprint",
+     "subject": "A flat rectangular blue sheet lying on a desk, with a white outline drawing of a rocket and a few white dots, and a small orange triangle ruler lying on one corner.",
+     "object_class": "paper_document",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "blue, white, small orange ruler",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "light wood desk",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Jetpack",
+     "subject": "A silver jetpack with two upright round tanks side by side fixed to a flat back plate, two nozzles at the bottom of the tanks and two orange shoulder straps fixed to the plate, standing on the floor.",
+     "object_class": "tool",
+     "category": "3",
+     "pattern": "plain_gradient",
+     "hero_colors": "silver, grey, small orange straps",
+     "backdrop_colors": "green",
+     "surface_or_setting": "grey metal floor plates",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Radio Dish",
+     "subject": "A big white round dish tilted upward, on a short thick grey pedestal bolted to a concrete block, with a short arm holding a small red receiver at the dish center.",
+     "object_class": "electronics",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "white, grey, small red receiver",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "a concrete block on a grassy field",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Airlock",
+     "subject": "A perfectly round grey hatch door set in a wall, with a round hand wheel in the center, six bolts around the frame and a yellow ring around the edge.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "grey, small yellow ring",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "a grey spaceship wall",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Cockpit Crew",
+     "subject": "The man in a silver jumpsuit sits at a spaceship console pressing a big green button, while the pig beside him in a silver jumpsuit proudly holds up a tiny toy rocket.",
+     "object_class": "character",
+     "category": "5",
+     "pattern": "full_scene",
+     "hero_colors": "silver, pink, brown, green button",
+     "backdrop_colors": "purple, yellow",
+     "surface_or_setting": "a spaceship cockpit",
+     "build_model": false,
+     "cast": [
+      "man",
+      "pig"
+     ]
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Saucer",
+     "subject": "A round silver flying saucer, symmetrical, with a smooth yellow glass dome on top and a flat disc rim with a band of red lights, flying in a clear sky.",
+     "object_class": "vehicle",
+     "category": "1",
+     "pattern": "full_scene",
+     "hero_colors": "silver, yellow dome, small red lights",
+     "backdrop_colors": "blue",
+     "surface_or_setting": "",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Purple Planet",
+     "subject": "A round purple planet with pale lilac stripes and one wide flat ring circling its middle at a tilt, the ring symmetrical and yellow.",
+     "object_class": "other",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "purple, lilac, small yellow ring",
+     "backdrop_colors": "green",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Space Shuttle",
+     "subject": "A white space shuttle with a pointed black nose, two swept wings, one upright tail fin with a red stripe and three round engine nozzles at the back, flying level in a clear sky.",
+     "object_class": "vehicle",
+     "category": "1",
+     "pattern": "full_scene",
+     "hero_colors": "white, black nose, small red stripe",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Yellow Rocket",
+     "subject": "A tall yellow rocket with a rounded nose, one round green porthole and three orange fins at its base, standing upright on them.",
+     "object_class": "vehicle",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "yellow, orange fins, small green porthole",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Lab Flask",
+     "subject": "A flat-bottomed conical glass flask with a narrow neck, a tan cork stopper and glowing blue liquid with three yellow bubbles, standing on a lab bench.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "plain_gradient",
+     "hero_colors": "blue liquid, clear glass, tan cork, small yellow bubbles",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "white lab bench",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Gold Rover",
+     "subject": "A golden yellow four-wheeled rover with black wheels, a flat boxy body and a small white round dish on a short mast fixed on top, standing on grey dust.",
+     "object_class": "vehicle",
+     "category": "3",
+     "pattern": "plain_gradient",
+     "hero_colors": "golden yellow, black wheels, small white dish",
+     "backdrop_colors": "blue",
+     "surface_or_setting": "grey moon dust",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Moon Helmet",
+     "subject": "A round white space helmet with a wide curved gold visor and a thick ring collar with a red stripe, resting on grey dust.",
+     "object_class": "clothing",
+     "category": "3",
+     "pattern": "plain_gradient",
+     "hero_colors": "white, gold visor, small red stripe",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "grey moon dust",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Porthole",
+     "subject": "A perfectly round porthole window with a thick grey metal frame and eight bolts around it, the glass showing a small orange ringed planet and white stars.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "grey, small orange planet",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "a grey spaceship wall",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Sliding Door",
+     "subject": "A closed grey metal sliding door set in a wall, with a small round window at the top and a small green light panel with an arrow icon fixed beside it.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "grey, small green light",
+     "backdrop_colors": "orange",
+     "surface_or_setting": "a grey spaceship corridor wall",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Zero Gravity",
+     "subject": "The sheep in a silver jumpsuit floats upside down inside a spaceship cabin, its fleece puffed up, while the pig in a silver jumpsuit holds its hoof and laughs.",
+     "object_class": "character",
+     "category": "5",
+     "pattern": "full_scene",
+     "hero_colors": "white, dark grey, pink, silver",
+     "backdrop_colors": "purple, yellow",
+     "surface_or_setting": "a spaceship cabin",
+     "build_model": false,
+     "cast": [
+      "sheep",
+      "pig"
+     ]
+    }
+   ]
+  }
+ ],
+ "problems": [],
+ "cast": 1
+}

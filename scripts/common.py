@@ -48,3 +48,13 @@ def load_json(path):
 
 def best_try(tries):
     return min(tries, key=lambda t: (not t.get("chosen"), not t["passed"], len(t["issues"]), len(t["misses"])))
+
+
+# Flat objects lying on a surface that fills the card, seen from above. Raters labelled most of them stripes (the
+# planks), so they were attached as references to upright stripes cards, such as a rocket. Checked by eye, 2026-11-06.
+SURFACE_FROM_ABOVE = {"Fruit Plate", "Tennis", "Binoculars", "Travel Book", "Map"}
+
+
+def pattern(card):
+    """A real card's backdrop pattern: the raters' label, corrected for the cards seen from above."""
+    return "surface_from_above" if card["name"] in SURFACE_FROM_ABOVE else card["form"]["backdrop"]["pattern"]

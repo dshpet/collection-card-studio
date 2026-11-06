@@ -30,6 +30,7 @@ Every generated card and every measurement, oldest first. Full-size drawings, re
 | `western-batch/`, `sci-fi-batch/`, `horror-batch/` | Variant 1 of each `*-shared-cast` plan: the producer's lessons, iconic objects and one character card. Not final | `make_set.py` |
 | `wording_check/` | Hat, boot, witch hat and console from their batch briefs, with the batch's and the earlier finals' wording | `experiments/wording_check.py` |
 | `colors/` | Measured backdrop, surface and hero colors of the real cards, the earlier finals and the batch, with a swatch sheet | `experiments/colors.py` |
+| `western-batch2/`, `sci-fi-batch2/`, `horror-batch2/` | Variant 1 of each `*-shared-cast-2` plan: the reference color logic and the second reference pass. Not final | `make_set.py` |
 | `cast-check/`, `cast-check-2/`, `outfit_check/` | The Western cast plan's character cards, before and after the outfit fix | `make_set.py --plan`, `experiments/outfit_check.py` |
 | `plans/` | Draft plans for the final film sets, for the producer to approve before drawing; `*-shared` keep the most iconic objects in every variant | `make_set.make_plan`, `experiments/shared_plans.py` |
 

@@ -30,6 +30,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("themes", nargs="+")
     parser.add_argument("--cast", type=int, default=0, help="character cards per variant")
+    parser.add_argument("--suffix", default="", help="added to the file name, so earlier plans are kept")
     args = parser.parse_args()
     themes, cast = args.themes, args.cast
     original = make_set.plan_prompt
@@ -45,7 +46,7 @@ def main():
 
     def one(theme):
         plan = make_set.make_plan(theme, "A set for a Movie collection", 3, knowledge, cast)
-        save_json(ROOT / "runs" / "plans" / f"{theme.lower()}-shared{'-cast' if cast else ''}.json", plan)
+        save_json(ROOT / "runs" / "plans" / f"{theme.lower()}-shared{'-cast' if cast else ''}{args.suffix}.json", plan)
         return theme, plan
 
     with ThreadPoolExecutor(3) as pool:

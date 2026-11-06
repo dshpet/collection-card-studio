@@ -1,16 +1,18 @@
 """What the reference analysis says about the art, written for the generator."""
 
 STYLE = """The attached images are real cards from the game. Draw one new card that could sit beside them unnoticed: the same rendering, lighting, finish, color and level of detail.
-Draw the object with its true proportions and mild perspective, from a low camera, so openings and rims are thin ovals. It spans about four fifths of the card. Forms are smooth, with small soft bevels. Rims, handles, cords, bands and posts stay slim, and small parts stay small.
+Draw the object turned about 20-30 degrees into a three-quarter view, even when it is symmetric; only a face meant to be read, such as a clock or a sign, faces the camera. Keep its true proportions and mild perspective, from a low camera, so openings and rims are thin ovals. It spans about four fifths of the card. Forms are smooth, with small soft bevels. Rims, handles, cords, bands and posts stay slim, and small parts stay small.
 One soft light from one side turns the form smoothly into shade.
 Each material looks like itself, with a little quiet detail and natural local color. Shiny materials carry one soft highlight. Cloth, cord and wood stay matte.
 Draw only what the subject names. No text, letters, numbers, frame, border or watermark."""
 
 CATEGORY_RULES = {
-    "1": "The object floats in the air, usually slightly tilted, large on the card. The background is flat and graphic.",
-    "2": "The object stands on a plain colored ledge and casts a soft shadow, large on the card. Behind it is a simple graphic backdrop.",
-    "3": "The object stands on a real material surface and casts a soft shadow, large on the card. The backdrop behind it stays simple and graphic, not a full scene.",
-    "4": "A close view of the object in its real place, central and large. The setting is open and calm: a few large soft shapes, with nothing added around the object.",
+    "1": "The object floats in the air, usually slightly tilted, large on the card; a big object may run past the card's edge. The background is flat and graphic, or the sky or water the object flies or swims in.",
+    "2": "The object stands on a plain floor in the backdrop's color, a shade lighter, running out of the bottom of the card, and casts a soft shadow, large on the card. No shelf edge, wood or stone. Behind it is a simple graphic backdrop, with a soft pool of light behind the object, darker toward the corners.",
+    "3": "The object stands on a real material surface and casts a soft shadow, large on the card. The backdrop behind it stays simple and graphic, not a full scene, with a soft pool of light behind the object, darker toward the corners.",
+    "4": "A close view of the object in the exact spot where it is used, central and large: only a few metres of that place show, and the card's edge may cut the object. A building or landmark shows by its recognizable part, close.",
+    # A flat object lying down (pattern surface_from_above), as on the real Map, Travel Book, Fruit Plate and Tennis.
+    "flat": "The object lies on a real material surface that fills the whole card, seen from high above: no wall, no horizon and no backdrop. It casts a soft shadow and is large on the card.",
     "5": "The characters are central and large. The setting is a real place, simple and calm: a few large soft shapes.",
 }
 
@@ -32,7 +34,7 @@ PATTERNS = {
     "plain_gradient": "a smooth gradient", "concentric_rings": "tone-on-tone concentric rings",
     "rays": "tone-on-tone radial rays", "stripes": "tone-on-tone wide stripes", "waves": "tone-on-tone soft waves",
     "diamonds": "tone-on-tone diamonds", "repeated_motif": "a faint tone-on-tone repeated motif of small {topic} icons",
-    "plain_wall": "a plain wall", "full_scene": "a simple scene",
+    "plain_wall": "a plain wall", "full_scene": "a simple scene", "surface_from_above": "none: the surface fills the card",
 }
 
 # Measured fields checked against the real range of each category.

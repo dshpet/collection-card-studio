@@ -76,3 +76,25 @@ Planned with the producer's accepted lessons, variants keeping the most iconic o
 - **Variant 1:** Jack-o-Lantern [1], Witch Hat [1], Bat [1], Candlestick [2 M], Cauldron [3 M], Candy Corn [3], Potion [3], Haunted House [4 M], Spooky Tree [4], Ghost Sheep [5]
 - **Variant 2:** Lantern [1], Black Cat [1], Broom [1], Crystal Ball [2], Jack-o-Lantern [3], Witch Hat [3], Candle [3], Witch Cauldron [4], Haunted Mansion [4], Vampire Pig [5]
 - **Variant 3:** Cauldron [1], Witch Hat [1], Owl [1], Manor [2], Potion [3], Candy Corn [3], Crystal Ball [3], Pumpkin Field [4], Spooky Tree [4], Ghost Man [5]
+
+## *-shared-cast-2.json: all three genres, 2026-11-06 evening
+
+As `*-shared-cast`, with the four lessons accepted on 2026-11-06 and the planner's new rules from the reference color logic and the second reference pass (`analysis/SYNTHESIS.md`): backdrop against the hero's temperature, places shown by their signature object, partner objects and pairs, the category following how the object exists, flat objects seen from above (`surface_from_above`), plain floors for category 2 and close spots for category 4 (`experiments/shared_plans.py <Theme> --cast 1 --suffix=-2`). Variant 1 of each is drawn as `runs/<genre>-batch2`. Western variant 3 came back without its character card.
+
+**Western**
+
+- **Variant 1:** Cowboy Hat [1], Cactus [2], Harmonica [1], Cowboy Boots [3], Saloon Doors [4], Lasso [1], Wagon [3], Horseshoe [3, from above], Campfire [4], Hat Tip [5]
+- **Variant 2:** Lantern [1], Harmonica [1], Lasso [1], Root Beer [2], Cowboy Hat [3], Cowboy Boots [3], Gold Pan [3, from above], Saloon Doors [4], Hitching Post [4], Saloon Hello [5]
+- **Variant 3:** Cowboy Hat [1], Spurs [1], Canteen [1], Lasso [1], Barrel [2], Cowboy Boots [3], Stagecoach [3], Saloon Doors [4], Saddle [4], Sunrise Ranch [5]
+
+**Sci-Fi**
+
+- **Variant 1:** Flying Saucer [1], Ringed Planet [1], Satellite [1], Space Helmet [2], Glow Flask [2], Moon Rover [3], Star Map [3, from above], Rocket [4], Control Panel [4], Space Farm [5]
+- **Variant 2:** Copper Saucer [1], Retro Rocket [1], Blue Planet [1], Crystal [2], Orange Helmet [3], Blueprint [3, from above], Jetpack [3], Radio Dish [4], Airlock [4], Cockpit Crew [5]
+- **Variant 3:** Saucer [1], Purple Planet [1], Space Shuttle [1], Yellow Rocket [2], Lab Flask [3], Gold Rover [3], Moon Helmet [3], Porthole [4], Sliding Door [4], Zero Gravity [5]
+
+**Horror**
+
+- **Variant 1:** Jack-o'-Lantern [3], Witch Hat [1], Cauldron [4], Ghost Sheet [1], Bat [1], Crystal Ball [2], Haunted Door [4], Spooky Tree [4], Potion [3], Boo Surprise [5]
+- **Variant 2:** Jack-o'-Lantern [2], Cauldron [3], Witch Hat [1], Ghost Sheet [1], Broomstick [1], Black Cat [3], Spell Book [3, from above], Castle Tower [4], Candlestick [4], Pumpkin Peek [5]
+- **Variant 3:** Ghost Sheet [2], Jack-o'-Lantern [4], Cauldron [3], Witch Hat [1], Owl [1], Vampire Cape [1], Full Moon [1], Old Key [3, from above], Wall Lantern [4], Spooky Cape [5]

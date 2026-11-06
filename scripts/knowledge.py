@@ -2,7 +2,7 @@
 
 from collections import defaultdict
 
-from common import ANALYSIS, load_json, save_json
+from common import ANALYSIS, load_json, pattern, save_json
 
 import numpy as np
 
@@ -45,9 +45,10 @@ def main():
     character_free = [s for s in sets if "5" not in s["metrics"]["categories"]
                       and not any(by_id[i]["gold_frame"] for i in s["cards"])]
     examples = [{"title": s["title"], "cards": [
-        {"name": by_id[i]["name"], "object_class": by_id[i]["form"]["identity"]["object_class"],
+        {"name": by_id[i]["name"], "subject": by_id[i]["form"]["identity"]["subject"],
+         "object_class": by_id[i]["form"]["identity"]["object_class"],
          "category": by_id[i]["form"]["staging"]["art_category"],
-         "pattern": by_id[i]["form"]["backdrop"]["pattern"]} for i in s["cards"]]} for s in character_free]
+         "pattern": pattern(by_id[i])} for i in s["cards"]]} for s in character_free]
     metrics = [s["metrics"] for s in character_free]
     save_json(ANALYSIS / "knowledge.json", {
         "bands": bands(cards),

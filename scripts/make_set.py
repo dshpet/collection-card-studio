@@ -110,7 +110,7 @@ def cast_rule(cast):
 def plan_prompt(theme, wishes, variants, knowledge, cast=0):
     examples = "\n".join(
         f"{example['title']}: " + "; ".join(
-            f"{card['name']} [{card['object_class']}, cat {card['category']}, {card['pattern']}]"
+            f"{card['name']}: {card['subject']} [{card['object_class']}, cat {card['category']}, {card['pattern']}]"
             for card in example["cards"]) for example in knowledge["example_sets"])
     return f"""You are the lead producer of card collections for a cozy mobile game.
 Theme: {theme}
@@ -124,16 +124,19 @@ Rules learned from the game's real sets:
 - Pick the first things anyone would name for the topic: instantly recognizable objects with a simple, distinctive silhouette.
 - Every object must belong to this specific topic, not to the wider collection. A film genre set shows that genre's world, not generic cinema items such as film reels or popcorn.
 - {cast_rule(cast)}. No brands, logos or real franchises. An animal may appear as an object, at most once in a set. No weapons of any kind, toy or sci-fi ones included. No blood or gore. Keep dark topics playful.
-- Cards carry no text, so skip objects that need readable words to make sense.
+- Cards carry no text. An object that would carry words, such as a sign, ticket or book, shows a simple icon instead, and the subject names it: a bed on a motel sign.
+- Show a place by the one object that stands for it, close: its sign, door, clock or pump, not the whole building. At most one whole structure in a set, tall and simple, like a lighthouse.
 - Real sets use {knowledge['set_ranges']['object_classes'][0]}-{knowledge['set_ranges']['object_classes'][1]} object classes and {knowledge['set_ranges']['scale_classes'][0]}-{knowledge['set_ranges']['scale_classes'][1]} real-world sizes, from handheld things to vehicles and buildings.
-- Every version uses all four art categories: 1 floating object, 2 object on a plain ledge, 3 object on a real surface, 4 object in an environment. Use 2-4 of category 1, 1-2 of category 2, 2-4 of category 3 and 1-5 of category 4{' besides the character cards' if cast else ''}.
+- Every version uses all four art categories: 1 floating object, 2 object on a plain floor, 3 object on a real surface, 4 object in its place. Use 2-4 of category 1, 1-2 of category 2, 2-4 of category 3 and 1-5 of category 4{' besides the character cards' if cast else ''}.
+- The category follows how the object exists. A thing that flies or swims is category 1 in its own element: pattern full_scene with a clear sky for a flyer, rays as light shafts in blue water for a swimmer. A flat object lying down, such as a map, a book or a plate, is category 3 with pattern surface_from_above. Food and drink stand on a surface. Vehicles stand on their own ground, in category 3 or 4. Built or installed things are category 4. One or two category 4 cards show a small object in the exact spot where it is used, such as a ball on the pitch.
 - For category 4 use pattern full_scene. Otherwise pick a graphic pattern.
-- subject: one plain sentence on what to draw, with the two or three features that make it recognizable. Name the object and its parts only, with no mood, style or props.
+- subject: one plain sentence on what to draw, with the two or three features that make it recognizable. Name the object and its parts, with no mood or style. It may add what a container holds, such as a cooler with cans, or one partner object that shows the hero in use and where it sits, such as a ball in the mitt: about a quarter of real cards do. Things used in pairs are drawn as a pair: boots, gloves, flippers.
 - hero_colors are the object's natural colors plus one small accent in another hue, which nearly all real cards have.
 - backdrop_colors go against the hero's color temperature, as on the real cards. A warm hero (red, orange, yellow, brown, wood or gold) gets a cool backdrop: cyan, sky blue, blue, grass green or purple. A cool hero (blue, cyan, green or purple) gets a warm backdrop, yellow, orange or pink, or a distant cool one, such as pink behind green. A white, grey or silver hero takes any color. Never use a hue that is on the hero, accent included.
-- By category: a floating object mostly sits on cyan, sky blue or green; a ledge takes the richest purple, green or pink; scenes have a clear cyan or blue sky, even on dark topics.
+- By category: a floating object mostly sits on cyan, sky blue or green; a floor takes the richest purple, green or pink; where a sky shows, it is clear cyan or blue, even on dark topics.
 - Use about six backdrop colors across a set. Backdrops are rich and clean, like a clear sky or fresh grass: never dusty, dull, dark or neon.
-- surface_or_setting: the surface for categories 2-3 and the place for category 4, empty for category 1. Real sets reuse one or two ground materials across their cards, so reuse them too.
+- surface_or_setting: empty for categories 1 and 2; a category 2 object stands on a plain floor in the backdrop's color. For category 3, the real material it stands on: real sets reuse one or two ground materials across their cards, so reuse them too. For category 4, the exact spot where the object is used, a few metres of it, such as the wall it hangs on, the deck it stands on or the water it floats in, not a landscape.
+- List the cards so the categories mix, with character cards last.
 - Versions may share at most 5 objects.
 - {MODEL_RULE}
 
@@ -211,9 +214,11 @@ def card_brief(card):
     if card["category"] == "5":
         return cast_brief(card)
     backdrop = PATTERNS[card["pattern"]].format(topic=card.get("topic", "simple"))
-    lines = [STYLE, f"Subject: {card['subject']}", f"Hero colors: {card['hero_colors']}.",
-             f"Staging: {CATEGORY_RULES[card['category']]}",
-             f"Backdrop: {backdrop} in {card['backdrop_colors']}."]
+    lines = [STYLE, f"Subject: {card['subject']}", f"Hero colors: {card['hero_colors']}."]
+    if card["pattern"] == "surface_from_above":
+        lines.append(f"Staging: {CATEGORY_RULES['flat']}")
+    else:
+        lines += [f"Staging: {CATEGORY_RULES[card['category']]}", f"Backdrop: {backdrop} in {card['backdrop_colors']}."]
     if card["surface_or_setting"]:
         lines.append(f"Surface or setting: {card['surface_or_setting']}.")
     return "\n".join(lines)
@@ -222,8 +227,9 @@ def card_brief(card):
 def blockout_brief(card):
     """The brief for restyling a blockout. Staging comes from the blockout itself."""
     backdrop = PATTERNS[card["pattern"]].format(topic=card.get("topic", "simple"))
-    lines = [BLOCKOUT, f"Subject: {card['subject']}", f"Hero colors: {card['hero_colors']}.",
-             f"Backdrop: {backdrop} in {card['backdrop_colors']}."]
+    lines = [BLOCKOUT, f"Subject: {card['subject']}", f"Hero colors: {card['hero_colors']}."]
+    if card["pattern"] != "surface_from_above":
+        lines.append(f"Backdrop: {backdrop} in {card['backdrop_colors']}.")
     if card["surface_or_setting"]:
         lines.append(f"Surface or setting: {card['surface_or_setting']}.")
     return "\n".join(lines)
