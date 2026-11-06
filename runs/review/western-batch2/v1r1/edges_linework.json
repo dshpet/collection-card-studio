@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (campfire): the edge map is soft and smudgy. The logs, rocks and tent have fuzzy boundaries, the flames have almost no boundary, and subject edge density is 0.063, below the real range. B (binocular viewer): the viewer has crisp, closed contours with a clear focus on the twin lenses and a moderately busy skyline behind.",
+   "fix": "Give the logs, rocks and kettle crisp, clean silhouettes against the ground, with sharp separation at the rock and log ends. Keep the flames as the only soft edge."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (music player): an even dark contour runs around the body, the buttons and the earbud cables. B (harmonica): crisp outer edges, a doubled line along the top cover and a dense row of hole edges, so subject density is slightly above the real range. Both match the real cards' clean edges, and my vector gives no reason to pick one.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (cowboy hat): the crown top fades to a soft, lost edge and the sharpest edge is under the brim, which is the kind of edge hierarchy the real cards show. B (scout jacket): a uniform dark contour encloses the whole silhouette, the pocket flaps and collar are outlined, and each badge has a heavy double ring. The edges look drawn rather than rendered, as in the GENERATED lesson cards.",
+   "fix": "Remove the dark line around the jacket silhouette. Separate the sleeves and collar from the background with lighting only, let the badge rims be thin, and let the shadow-side edges soften."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (pig and cow on stage): the cow's head and horns carry a thick dark contour (outline darkness 0.115, above the real range). The crowd and stage truss behind are mushy yet dense. B (pig and farmer): also busy, but the contours follow form, with sharpest edges on the faces and hat.",
+   "fix": "Drop the dark outline around the cow's head. Keep the stage and crowd behind as soft, low-detail shapes so the two faces hold the sharpest edges."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (seahorse): subject and background densities are both below the real range. The belly and fins have soft, lost boundaries, only the eye and spots carry edges, and the background is an empty gradient. A (fruit plate): crisp edges on the fruit and plate rim, matching the edge density of the real cards.",
+   "fix": "Give the seahorse a crisp, clean silhouette, with sharp edges along the ridged back, snout and fin tips. Keep the belly separated from the water by clear lighting."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (cactus): rounded ribs with soft edges, many tiny dot marks for spines, and a near-empty background. B (vending machine): a crisp cabinet silhouette with a heavy doubled frame line around the glass. Each card leans slightly off on edges, and neither clearly.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (saloon doors): thick, dark plank grooves run across the entire wall and floor (background density 0.167, far above the real range). They compete with the dark slats of the doors, so there is no edge hierarchy. A (gate): also dense, but the scrollwork is the focus and the paving lines are lighter.",
+   "fix": "Make the wall planks smooth, with faint, thin seams, and keep the floor boards soft. Keep the strongest, sharpest lines only on the swinging doors and the red frame."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (covered wagon): a dark contour traces the canopy, the box and both wheel rims (outline darkness 0.119, above the real range), and the ground carries scattered pebble edges. B (popcorn cart): crisp edges on the awning scallops and wheels, with the outline within the real range.",
+   "fix": "Remove the dark outline around the canopy and wheels. Separate the wagon from the ground and the sky with light and shadow, and keep the ground smooth with only a few soft pebbles."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (horseshoe): a thick, dark groove runs around the whole horseshoe and its inner channel (outline darkness 0.124, above the real range). The wood grain behind is dense and as sharp as the subject. B (map with magnifier): the continent outlines are drawn map art, but the magnifier's edges sit within the real range.",
+   "fix": "Soften the dark rim around the horseshoe into a lit bevel. Make the wood planks behind smooth, with faint grain, so the horseshoe has the sharpest edges."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (lasso): every rope twist is a deep, dark groove, repeated evenly around both coils (subject density 0.206, above the real range), and the knot has no edge priority. A (neckerchief): the outer contour is clean, the folds have soft, lost edges, and the badge gives one crisp focus.",
+   "fix": "Draw the rope with shallow, thin twist lines that fade on the shaded side. Make the red knot the crispest spot."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (towel): the interior is filled with noisy terry texture rather than shape edges. A thick, raised rim reads as an outline band around the whole towel, and the background is nearly empty (0.008, below range). A (target and bear): the edges follow form, with the target rings and the bear's face as the sharpest edges.",
+   "fix": "Make the towel surface smooth, with soft fabric folds and only a faint weave. Replace the thick border band with a slim hem edge."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (boxing gloves): subject edge density is 0.037, far below the real range. The silhouettes of both gloves are soft and lost against the wall, and only the thumb creases carry edges. B (cowboy boots): crisp contours with stitching detail and a textured ground, within the real ranges.",
+   "fix": "Give both gloves a crisp, clean silhouette against the blue wall and the table. Sharpen the thumb seam and the cuff edges."
+  }
+ ],
+ "pattern": "On edges, generated cards miss the real cards' edge hierarchy in one of two ways. Either they put a uniform dark outline around the whole silhouette, with heavy double rims and deep, evenly repeated grooves (rope twists, planks, wood grain), so the background is as sharp as the subject. Or they go the other way, with mushy, lost silhouettes and few edges on the hero. Real cards have crisp silhouettes without drawn lines and thin internal seams, with the sharpest edges at the focal point."
+}

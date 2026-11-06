@@ -310,6 +310,24 @@ The producer asked to match the real cards' color logic, "complementary colours 
 
 **Change (2026-11-06):** the planner's color lines now state the temperature rule, no hue that is on the hero, the colors by category, and "rich and clean... never neon" in place of "bright". Checked on plans for the three genres with the new rule against the current plans, 81 cards each, colors read from the planned text: warm heroes on cool backdrops 27 of 29 against 25 of 31, floating objects on cyan, blue or green 21 of 29 against 11 of 28 (real 25 of 35), a backdrop repeating a hero hue 2 against 7. A clause asking neighbours to differ cut shared neighbours to 2 of 72, below the real 11% that the current plans already matched, so it was dropped. Saturation can only be measured on drawings. The flat backdrops on ledges and surfaces belong to the drawing prompt, a separate round.
 
+## Second batch, after the color logic and the second reference pass, 2026-11-06
+
+Variant 1 of each `runs/plans/*-shared-cast-2.json` plan, drawn through the full pipeline as `runs/<genre>-batch2`, after the planner learned the real backdrop color logic and the findings of the second reference pass (SYNTHESIS.md). Its Blender models were built from the modeller brief as it stood before that pass. `experiments/batch2_check.py` measures the delivered cards of both batches and the real cards the same way, categories 1-4:
+
+| Measured | Real | Batch | Batch2 |
+|---|---|---|---|
+| Near-mirror silhouette, categories 1 and 3 | 13 of 67 | 9 of 17 | 2 of 16 |
+| Floating on cyan, blue or green | 25 of 35 | 4 of 10 | 8 of 9 |
+| Mean backdrop chroma (Oklab) | 0.153 | 0.178 | 0.160 |
+| Warm hero on a cool backdrop | 60 of 72 | 13 of 15 | 11 of 12 |
+| Light pool behind the object, categories 2 and 3 | 39 of 52 | 5 of 10 | 4 of 11 |
+| Category 4 object cut by a card edge | 17 of 42 | 2 of 7 | 0 of 7 |
+| Candidates inside the real bands | | 47 of 90 | 50 of 90 |
+
+- **What moved.** Objects turn into three-quarter view, floating objects take the real cards' cool backdrops, and saturation fell to near the real level.
+- **What did not.** The light pool and the edge crop are drawing words the image model ignored.
+- **Author's read, not rated.** The staging is closer to the real cards. Category 2 objects stand on plain floors in the backdrop's color (cactus, helmet, flask). The saloon doors, haunted door and control panel are close spots on their walls. The horseshoe and star map lie flat, seen from above. The saucer and bat fly in a sky with clouds. The campfire has its coffee pot and tent. The potion has a cork-brown stopper and a star tag. Misses: the lasso became a double loop, the spooky tree gained a castle tower nobody asked for, and the rocket on its pad is still plain. On the cast card, the man again wears his overalls. Neither character card shows harm, and both characters wear the same gear.
+
 ## Limits
 
 Eight blind pairs per role is a small sample, and rounds are noisy. Reviewers are models, and on pairs of different objects they also raise false alarms on hidden real controls, so they guide edits and are not a gate. The human ratings come from one rater.

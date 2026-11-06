@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the pink music bracelet is tilted on a diagonal and swings from the lower left up to the upper right, so it reads as a dynamic 3/4 view. B: the planet sits dead center, front-on and symmetric, with the ring flattened into a level band that reaches almost to both side edges (margin 0.042). It reads as a stock planet icon with no tilt toward the viewer.",
+   "fix": "Tilt the ringed planet so the ring cuts diagonally across the card, lower left to upper right. Push the planet slightly off center and let the near side of the ring come toward the viewer."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the seahorse is a single figure, slightly left of center, in light rays, and reads at once. B: the sandcastle is the hero, with a green bucket and blue shovel in front and a sea horizon behind. The bucket draws the eye, but it stays secondary, and both crops are within the real range. On framing alone, nothing reliably marks either card.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the satellite is small, flat and front-on, a cube with two panels stuck straight out sideways, floating in the middle of the sunburst. Its height is only 0.40 of the card and it fills 0.167 of it, both below the real range, so most of the card is empty rays. B: the medal box is a large 3/4 view and fills the card from top to bottom (height 0.77), with the lid near the top edge, like the real cards.",
+   "fix": "Draw the satellite larger and closer to the viewer, turned 3/4 with one solar panel coming toward the camera, so it fills about three quarters of the card's height."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "A: this is the real computer from the lessons. The desk is cut off at the bottom and left edges, and the monitor fills the upper half. B: the rover is small, side-on and set in the middle of a flat grey ground plane. It fills 0.21 of the card, and a wide band of orange sky sits above it with nothing in it.",
+   "fix": "Bring the rover up close in a 3/4 front view so it fills most of the card, with the front wheels near the bottom edge and the dish near the top. Show less empty sky."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the airplane is large and banking on a diagonal, with its right wing cut off by the right edge, like the real cards that cross the frame. B: the UFO is small and perfectly level in the middle of the sky (height 0.42, area 0.16, both below the real range). It has clouds at the top and bottom and a lot of empty blue around it.",
+   "fix": "Draw the flying saucer much larger, tilted on a diagonal and swooping toward the viewer, with one side of the rim cut off by the card edge."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the map runs off the left edge and the magnifying glass sits off center over it, so the crop is active. B: the star-chart disc is one round plate, laid flat and centered on the wood, and fully contained with an even margin on every side. It is a neat, static placement with no overlap and no crop.",
+   "fix": "Push the star-chart plate closer so it runs off one edge of the card, and lay a second object such as a brass pointer or a small telescope across it."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the drum kit is the known real card. B: the iron gate stands front-on between two brick pillars, with a path in the foreground. The scene is wide and the gate itself is small (area 0.157), but the pillars run off the side edges in the way of real environment cards. Not sci-fi and not clearly generated on framing.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the astronaut helmet sits isolated in the middle of a plain purple backdrop. It has the widest margin in the set (0.167, above the real range) and empty space on all sides. B: the pair of sneakers spreads almost edge to edge on a 3/4 floor, and the toe of the right shoe nearly touches the side.",
+   "fix": "Draw the helmet bigger and turned 3/4, with the visor facing a little to one side. Let it fill the card almost to the edges."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the control panel is a flat front-on rectangle in the middle of a purple wall. Its screen and button grid are evenly spaced, the frame is symmetric, and it fills 0.486 of the card, above the real range. B: the fan head is cut by the top edge and the stand is cut by the bottom edge (margin 0). It is off center against a curtain, which matches the real cards' habit of cropping.",
+   "fix": "Show the control panel at a 3/4 angle with one corner coming toward the viewer, and let the panel's edge run off one side of the card."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the vending machine is tall and fills the card's height in a 3/4 view. B: the flask is small and centered, low on a plain pink backdrop (area 0.19, width 0.48, margin 0.163). Most of the card is empty pink, and at thumbnail size the flask shrinks to a small icon.",
+   "fix": "Draw the flask much larger, filling most of the card's height. Tilt it slightly and place it near the bottom edge, with less empty pink above."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the rocket is a thin vertical shape, perfectly centered and front-on on a wide concrete plaza. It is only 0.33 of the card wide and fills 0.126 of it, so both sides are empty sky and ground. B: the coaster cars sweep diagonally through a loop that runs off every edge, and the composition is dynamic.",
+   "fix": "Draw the rocket bigger and tilted, launching upward on a diagonal with flame and smoke trails. Let it fill the card from the bottom corner to near the top edge."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: one hero, the hitchhiker with the rooster, is cropped at the bottom and right edges and fills the card. B: two characters stand side by side at equal weight, with a UFO above them. The three compete for first read, and the group is held inside the frame with the cow's feet clear of the bottom edge.",
+   "fix": "Make the cow in the spacesuit the single large hero, cropped at the waist by the bottom edge. Put the rooster smaller on its shoulder, and push the UFO small into a top corner."
+  }
+ ],
+ "pattern": "The generated cards present the object in full, small, centered and front-on or level, with an even margin of empty background all around. On the real cards the hero is large, tilted 3/4, and often cut off by the card edge, filling the height of the card. Generated cards also add secondary props or extra figures that compete with the hero."
+}

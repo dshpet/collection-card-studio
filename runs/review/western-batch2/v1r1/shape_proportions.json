@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the campfire is a crowded pile of rounded blobs. The stones are puffy pillows, the logs are short fat cylinders, and a kettle on its own stone base is an extra part. The outline has few straight runs (straight_share 0.167, below the real range). B: the coin-op binocular viewer has a clear part count (two-eyed head, side yoke arm, neck collar, post), and the post and collar edges run straight.",
+   "fix": "Draw a simple campfire: a few thin, long logs crossed in a teepee inside a low ring of flat-topped stones. Leave out the kettle and its rock. Stones should have flat faces and crisp edges, not round pillows."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the music player body is a swollen pillow. Its corners are big soft blobs, the front face bulges, and the play button is a fat donut. The earbud cords make up a large share of the outline (thin_share 0.083, solidity 0.58, both outside the real range). B: the harmonica is a long, flat bar with straight top and side runs and tight bevelled ends. The cover plate stays planar.",
+   "fix": "Draw the player as a thin, flat rectangular slab with straight sides and tight, small-radius corners and a flat front face. Make the button a shallow disc, not a puffy dome, and keep the cords short and thin."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the cowboy hat has a creased crown and a curled brim of believable thickness. B: the scout jacket's sleeves and cuffs look slightly puffed and the collar is thick, but the garment proportions read correctly. Both sets of numbers sit inside the real range. On shape I have no clear reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cow has an oversized head and a huge round orange muzzle, and both characters raise stubby arms with mitten hands. The outline is jagged with many small corners (corner_rate 9.31, above the real range), and there is a stray blob at bottom left. B: the pig and the farmer have coherent body proportions: the farmer's arm raised to his hat brim, his belly under the overalls, the pig's hooves.",
+   "fix": "Give the cow a normal head-to-body ratio with a modest muzzle, slimmer arms and defined hooves. Keep the outline clean, without stray fragments."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the fruit plate is a flat glass disc with a large watermelon wedge and oversized grapes merged into one silhouette mass. B: the seahorse has a natural curled tail, snout and dorsal fin. Its low straight_share is expected for an organic animal. Neither card shows a shape fault I can tie to the lessons.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the cactus has rounded sausage arms and a soft, toy-like trunk, which is plausible for a cactus. B: the vending machine is a box with flat faces, straight runs and moderately tight corners, and its feet are present. Neither card shows a clear shape fault.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the gate is surrounded by extra scene parts: brick pillars with ball finials, a path and hedges. The silhouette caught only the ironwork plus stray fragments (thin_share 0.389 and solidity 0.552, both outside the real range). The scrollwork bars are uniformly thick. B: the saloon doors sit in a frame with straight posts and a flat header board with crisp corners, and the two louvered leaves are in a believable relation.",
+   "fix": "Draw the iron gate alone as the hero object, with thin, even bars and fine scrolls, and leave out the brick pillars, path and garden."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the popcorn cart's part count is confused. There are two small black casters at the front, a large spoked wheel at the back and another wheel peeking behind, plus a stubby, sausage-like push handle. The scalloped awning is swollen. A: the covered wagon has four spoked wheels, a tongue, a plank box with straight runs and a canvas top. Its parts relate plausibly.",
+   "fix": "Give the cart two matching large spoked wheels on one axle and a single small support leg or caster pair, drawn consistently. Make the push handle a thin rail and the awning a thin, flat sheet edge."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the horseshoe is a fat, thick slab. Its arms are swollen and wide with blobby, squared heel caps, and the whole contour is soft with almost no corners (corner_rate 0.572, below the real range). A real shoe is a thin, narrow band. B: the folded map keeps flat panels with straight edges and crisp fold corners, and the magnifier's thin handle and rim are correct.",
+   "fix": "Draw the horseshoe as a thin, narrow, flat iron band of even width, with small, crisp heel ends and recessed nail holes. No puffy edges and no thick slab."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the neckerchief is inflated like a balloon. The collar loop is a thick tube, the two tails are puffy, rounded leaves, and the knot ring is fat. Thin cloth has become pillows. B: the lasso rope stays a consistently thin cord in clean loops, with a small bandana knot. Its low solidity is natural for a rope loop.",
+   "fix": "Draw the neckerchief as thin, flat cloth: a narrow folded band around the neck, two flat triangular tails with sharp points, and a small, tight slide ring."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the towel is a single outline with wavy, swollen edges and large blob corners (corner_rate 0.366 below the real range, solidity 0.955 above it). It reads like a soft cushion more than a flat sheet. A: the archery target has a round board on a thin A-frame stand next to a teddy bear, and the stand legs stay thin.",
+   "fix": "Draw the towel as a flat rectangle of thin cloth with straight hemmed edges, small, tight corners and only gentle folds, not a puffy, wavy cushion."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the boxing gloves are swollen, overlapping blobs. The thumbs merge into the fists, the cuffs are short, and there are no crisp transitions (corner_rate 0.392, below the real range). B: the cowboy boots have a crisp stacked heel, a pointed toe, pull tabs and straight shaft edges, with correct shaft-to-foot proportions.",
+   "fix": "Draw the boxing gloves with a distinct thumb separated from the fist by a clear crease, a longer straight cuff with a defined edge, and a firmer padded shape, not inflated balloons."
+  }
+ ],
+ "pattern": "The cards I picked as generated draw objects swollen like inflatables. Thin, flat things (cloth, iron bands, slabs) become thick pillows with blob corners and almost no straight runs, and the contours come out soft and low in corners. They also pad the object with extra scene parts or muddled part counts, such as an extra kettle, pillars, or mismatched wheels."
+}

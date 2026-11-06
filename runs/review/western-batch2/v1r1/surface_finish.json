@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the log ends carry painted ring and grain lines, the stones are speckled, and the earth has scattered pebble dots. That is extra fine surface detail, the same way the generated cards ran in the lessons. B: the viewer's blue metal is smooth and soft, with broad soft highlights and no fine marks, like the real cards' finish.",
+   "fix": "Smooth, soft-shaded logs with only one or two quiet grain lines. Plain matte stones with no speckle. Bare ground without scattered pebbles."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the yellow player is soft, even, matte-satin plastic, and the earbuds are plain white. B: the harmonica has crisp chrome edges and sharp-edged gold screw heads, and its gloss share (0.161) sits just above the real range. Weak evidence, since both read like real cards.",
+   "fix": "Soft satin silver cover with gentle broad highlights and no hard chrome edge lines. Small plain screws without crisp slots."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the hat felt is soft and nearly uniform, and the red band is plain. B: the jacket has crisp pocket flaps, seam lines and a sharp snap, and the badges are hard-edged and enamel-like with tiny inner icons. Its detail and micro-texture sit at the top of the real range.",
+   "fix": "Fewer seams and pocket edges, and soft cloth with no crisp stitch lines. Badges as simple soft discs with one bold icon each."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the pig skin and cow face are soft and blurred, with faint brush streaks in the cow fur. B: the overall buckles and rivets, the glasses rim and the moustache strands are crisper and sharpened, with clean hard edges. The lessons showed the generated card as the sharper one. Weak call.",
+   "fix": "Soften the overall buckles and rivets into simple shapes. Draw the moustache as one soft mass, not strands. Gentle blur on small edges."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: water droplets on the melon and grapes, a pitted melon surface, fine orange pulp lines, strawberry seeds and visible wood grain. That is dense small-scale texture everywhere. B: the seahorse has smooth soft skin with a few large spots, like the soft real finish.",
+   "fix": "Remove the water droplets. Smooth melon flesh with a few simple seeds, and orange segments as plain soft wedges. Quiet tabletop without grain lines."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the cactus is smooth soft rubber with tiny regular dots, a simple finish. B: the vending glass is covered in smeary condensation specks, the cans have blurred labels, and its gloss share (0.197) is high. The droplet noise reads as AI smear.",
+   "fix": "Clean clear glass with one soft diagonal reflection and no droplets. Cans and bottles with simple flat labels."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the gate scrolls are smooth painted metal, and the bricks are plain. B: the plank wall and floor carry strong, high-contrast grain streaks, the louvers are crisp, and the hinges are sharp black. Micro-texture 0.041 is above the real range. The wood grain is big and decorative.",
+   "fix": "Plank wall and floor in smooth warm wood with only faint, sparse grain. Softer louver edges. Simple hinges."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the wagon canvas shows visible woven-cloth texture, the boards have grain streaks, and there are crisp rivets and a pebbled dirt ground. Highlight share 0.256 is above the real range. B: the popcorn cart is smooth lacquer with simple shapes.",
+   "fix": "Smooth plain canvas with no weave. Soft wooden boards with almost no grain. Fewer rivets. Plain soft ground."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the horseshoe has brushed-metal streaks, and the planks underneath have chipped, weathered paint scratches and knots. That is heavy distressed micro-texture. B: the map and magnifier are clean and soft, with simple flat colour areas.",
+   "fix": "Smooth satin-silver horseshoe without brush streaks. Clean wooden table with soft, faint grain, no chips, scratches or knots."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the scarf is smooth soft cloth with broad folds and a simple medallion. B: the rope is drawn strand by strand with a fuzzy fibre surface along the whole coil, and micro-texture 0.024 is above the real range. That is fine material detail at a scale the real cards smooth away.",
+   "fix": "Rope as a smooth, soft tube with a few large, gentle twist bands and no fibre fuzz."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the target and teddy are smooth, with soft plush and plain painted rings. B: the whole towel is covered in grainy terry-loop noise at pixel scale, a dense random speckle no real card shows.",
+   "fix": "Towel as smooth soft cloth with clean stripes and gentle broad folds, no terry or loop texture."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the boxing gloves are smooth red leather with a few soft creases, and the table is quiet. B: the boots have dashed stitch lines around the stars, collar and toe, a leather grain sheen, and cracked dirt with pebbles. Detail is at the top of the real range, while A sits at its bottom.",
+   "fix": "Boots in smooth soft brown leather. Stars as plain raised shapes without dashed stitching. Simple soft ground without cracks or pebbles."
+  }
+ ],
+ "pattern": "Generated cards add fine surface detail that the real cards smooth away: dashed stitch lines, strong wood grain, chips and scratches, cloth weave or terry noise, rope fibres, water droplets, speckled stones and crisp small rivets. The real cards stay soft, slightly blurred and mostly plain at 2×, with only a few large, gentle marks."
+}

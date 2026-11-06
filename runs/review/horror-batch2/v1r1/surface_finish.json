@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: wood planks have even streak grain, the iron straps have small round rivets, and the stone is matte with soft chips. That matches the gloss of the real cards. B: the blue door panels are covered in a lacquer-like sheen with long streaky grain marks painted across them, and the ivy and wreath leaves carry fine noisy specks. Gloss share is 0.51 against a real maximum of 0.21, and micro texture is 0.045 against a real maximum of 0.031.",
+   "fix": "Matte painted wooden door with a soft satin finish and no streaky grain on the paint, simple smooth leaves on the wreath, and a gentle highlight only on the brass handle."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the felt hat is smooth and soft, with a quiet satin band and no visible weave, as soft as the real cards. B: the jacket fabric has a fine noisy weave all over the chest and pockets, and the badges are crisp and enamel-shiny with sharp rims. That is the extra small-scale finish the lessons attribute to generated cards.",
+   "fix": "Smooth soft cloth jacket with no visible fabric weave, softly shaded badges with a low sheen, and slightly soft edges."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the bike-on-car card from the real set: smooth red paint and clean metal spokes. B: the boat and dock carry dense dark grain lines on every plank, the rope has sharply carved twist fibres, and the hull has a varnished lacquer sheen throughout.",
+   "fix": "Smooth warm wooden boat and dock with only a few faint grain lines, a soft matte finish, and a simple rounded rope without carved fibres."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the barrel staves have a few broad scratch-like grain marks, and the hoops are brushed metal with a soft band highlight. This matches the real computer-desk wood. B: the pumpkin skin has a fine speckled photo-like pore texture, and the table under it is photoreal weathered wood with peeling paint, grime and nail heads. That is the same distressed-surface tell as the generated desks in the lessons.",
+   "fix": "Smooth glossy-soft pumpkin skin without pores, on a clean simple wooden table with smooth planks, no peeling paint, grime or nails."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the pig skin and sheep fleece are smooth, soft-shaded and toy-like, with no fine marks. B: the scene is full of micro texture, including cracked plaster, a weathered blue door with peeling paint, scuffed porch boards, crisp overall buckles and sheet folds. Gloss share (0.10) and detail are both near the top of the real range.",
+   "fix": "Keep surfaces clean and smooth: plain painted door and wall without cracks or peeling, simple soft porch boards, and a smooth white sheet with soft folds."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the binoculars have smooth green plastic, faint brushed rims and glossy blue lenses, on a floor with painted streak grain. B: the roller coaster cars are uniform glossy toy plastic with clean rails. Both stay within the real gloss and texture ranges, and neither shows a clear generated surface tell.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the ghost sheet is covered edge to edge in a pearly satin sheen, with fine streaky brush-like marks running down the folds. Highlight share is 0.366 against a real maximum of 0.17, so the whole cloth reads as lacquer instead of cotton. B: the jellyfish is glossy but uses localized sparkle dots and rim light, which suits a translucent creature.",
+   "fix": "Matte soft white cotton sheet with gentle shading in the folds, highlight only on the top of the head, and no streaky sheen across the cloth."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the balloons are smooth rubber with one soft highlight each, very low micro texture and real-card softness. B: the bat body has fine fur-like noise, the wings have membrane mottling, and the ear interiors are crisp. That added fine surface grain matches the lesson pattern for generated cards.",
+   "fix": "Smooth soft-shaded bat body without fur texture, plain smooth wing membranes, and a gentle soft finish."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the chest has smooth gold trim, simple coins with soft rims and plain wood planks. B: the potion sits on a photoreal weathered table with mossy grime, scratches and metal nails, and the twine has crisply carved fibres. This is the same distressed-wood tell seen on the generated pumpkin and cauldron.",
+   "fix": "Clean smooth wooden tabletop with soft simple planks, no moss, grime or nails, and a simple rounded string around the bottle neck."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the tree bark is smooth with broad flowing grooves and a soft matte finish. B: the topiary is hundreds of identical stamped leaves, each with a waxy glossy highlight. Gloss share is 0.44 against a real maximum of 0.21, and micro texture is 0.039 against a real maximum of 0.031, so the bush reads as glossy plastic, not foliage.",
+   "fix": "Matte leafy topiary drawn as soft clusters with only a few individual leaves on the edges and no shiny highlight on each leaf."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the cooler is smooth matte-satin plastic, the cans have clean metal tops, and the ice is soft translucent. B: the cauldron iron is covered in fine scratches and pitted dents, the logs have carved grain rings, and the floor stones have cracks. That accumulated wear micro-detail is absent from the real cards.",
+   "fix": "Smooth dark iron cauldron with a soft satin sheen and no scratches or dents, simple smooth logs, and clean flagstones without cracks."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the vending machine is soft-edged, with blurry droplets on the glass and quiet matte blue panels, as soft as the real cards. B: the purple smoke inside the crystal ball is made of smeared, wispy brush strokes, and the gold stand carries hard mirror-chrome highlights on every ring.",
+   "fix": "Soft simple purple swirl inside the glass ball with clean shapes instead of wispy smears, and a warm gold stand with softer highlights."
+  }
+ ],
+ "pattern": "Generated cards add too much fine surface detail. They show photoreal weathering such as peeling paint, grime, moss, nails, scratches and pitting, mostly on tables, doors and iron. They also add fine noise like fur, pores and fabric weave. Repeated small shapes, such as leaves or grain lines, each get their own glossy highlight, which pushes gloss share far above the real range. Real cards stay soft and slightly blurred, with smooth satin surfaces and only a few quiet marks."
+}

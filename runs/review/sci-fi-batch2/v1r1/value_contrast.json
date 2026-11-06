@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the planet body sits at the same mid grey as the cyan rings behind it (gap -0.002), so only the clipped-white ring and stripes separate it. The bottom half of the sphere has almost no darker core. A: the bracelet's inner wall has a real dark-grey pocket, and the hero reads darker than the field (gap -0.10). Both cards are flat (rms below the real range), so this is a weak call.",
+   "fix": "Make the planet's lower half and the side away from the light clearly darker than the background rings, with a dark cast shadow under the ring. Leave white only on the ring's top edge."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: a dark lower-right corner mass, light shafts at upper left and a mid-value seahorse. B: a high-key sand field with mid-grey towers and soft shadows. Both sit inside the real ranges and group cleanly into a few masses. Nothing on value marks either card.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a small satellite floats in a big pale ray burst, with the white body against light rays. The only dark accents are the small solar-panel cells, and contrast is low (0.092). B: a dark box rim makes a large near-black mass around a light coin, and the corners darken (vignette 0.162, slightly high), but the hero fills the card the way real cards do. A's small hero lost in a bright halo matches the generated lessons.",
+   "fix": "Make the satellite fill most of the card. Give the box a shaded darker side and a soft shadow, and calm the bright burst behind it so the hero is the lightest shape."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the real computer card from the lessons: a light desk, an orange backdrop, a big white hero and a single dark screen. B: the lower half is a uniform speckled mid-grey ground, and the near-black tyres are the darkest accents, spread in a row along the bottom. The white body is a thin slab sitting on the ground value, and the grain gives busy local contrast with no large grouped shapes.",
+   "fix": "Make the ground a smooth, lighter, warm surface without gritty speckle. Make the rover bigger with shaded sides, and soften the tyres to dark grey rather than black."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a small saucer sits mid-card. Its hull is the same mid grey as the sky, and its rim lights clip to pure white dots. Corners are lighter than the centre (vignette -0.08), and the clouds dominate the light group. A: the plane fills the frame, with a white fuselage against a mid sky and dark engine and window accents grouped on the hero.",
+   "fix": "Draw the saucer much larger and filling the card. Make its top dome and upper hull clearly lighter than the sky and the underside darker, and keep the lamps soft yellow, not blown white."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: a large near-black disc covers half the card (mean 0.533, gap -0.32, both outside the real range), with hard white star dots on it, so local contrast is extreme. A: the map is a light hero on a mid-grey wood table, with dark accents limited to the magnifier handle and compass.",
+   "fix": "Make the star-chart face a medium blue, not black. Add a soft lighter glow across its upper half and a clearly lit rim, so the disc reads as a mid-value object on the wood."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "A is the real drum card from the anchor: a dark purple stage with a spotlight cone and a white bass-drum head. B: a mid-grey brick gate under a light sky with a light paved floor. Its value grouping falls within the real range and shows nothing wrong.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a near-white helmet shell sits inside a lighter halo of background, with darker top corners. The visor is one large dark mass with hard white reflections, which is the halo-behind-hero pattern from the generated lessons. B: the sneakers are darker than the background (gap -0.22) on a flat light floor and wall, with no glow.",
+   "fix": "Remove the bright halo behind the helmet and keep the background an even purple. Shade the shell's lower side mid grey and make the visor amber with a soft gradient instead of a black block."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the panel, wall and buttons all sit in the same mid-to-light grey, with many tiny dark rivets, slot edges and outlines scattered evenly. There is no big dark or light group, and the hero barely separates from the wall. B: a dark curtain strip, a light window and a light fan grille form clear large masses.",
+   "fix": "Make the panel clearly lighter than a darker purple wall behind it, and drop most of the small dark rivets and edge lines. Let the screen and button cluster be the brightest spots."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the clear glass flask is almost the same value as the pink field, with a lighter glow patch behind it. Overall contrast is very low (0.08, below the real range), and only thin white rims define the hero. A: a dark blue cabinet against a mid-light field, with a light window insert, gives strong grouped separation.",
+   "fix": "Give the flask a darker shaded side and a solid dark-green lower half. Darken the background evenly with no glow behind the flask, so the hero stands apart by value."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A is too light and flat (mean 0.766, rms 0.091, both outside the real range): a white rocket body stands on a pale concrete plaza under a pale sky. The hero is a thin vertical shape, and the only darker accents are the nose and fins. B: a mid-dark track arch and cars against a lighter sky, with dark undercarriage grouped under the hero.",
+   "fix": "Make the rocket bigger and fill the card. Shade its body from white to a mid grey on the far side, and set it against a richer, deeper blue sky with a darker ground."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: silver suits read light-mid grey against equally mid grass and sky, so the characters are not grouped by value. The UFO beam adds a second bright glow focus above the heroes, and specular streaks spread across the suits. A: a dark blue shirt and backpack form one strong dark mass against a light sky and desert. That is out of range dark (gap -0.28), but it is a single clear grouping.",
+   "fix": "Darken the grass and sky behind the characters, shade one side of each suit mid grey, and dim the UFO beam so the two faces are the brightest areas."
+  }
+ ],
+ "pattern": "Generated cards break the real value design in one of two ways. One is a washed-out card: low overall contrast, a small hero at the same grey as its background inside a lighter halo, and accents that clip to white dots. The other is a single huge near-black mass with hard white details on it. Real cards have a large hero with one grouped dark side and an even background."
+}

@@ -1,0 +1,34 @@
+# Review: western-batch2/v1r1
+
+| Specialist | Caught | Wrong | Abstained | False alarms |
+|---|---:|---:|---:|---:|
+| shape_proportions | 2/10 | 6 | 2 | 1/2 |
+| viewpoint_depth | 9/10 | 1 | 0 | 0/2 |
+| lighting_shading | 3/10 | 6 | 1 | 2/2 |
+| value_contrast | 9/10 | 1 | 0 | 2/2 |
+| color_palette | 8/10 | 2 | 0 | 2/2 |
+| surface_finish | 8/10 | 2 | 0 | 2/2 |
+| edges_linework | 5/10 | 3 | 2 | 2/2 |
+| composition_hierarchy | 6/10 | 4 | 0 | 2/2 |
+| staging_detail | 3/10 | 5 | 2 | 2/2 |
+
+## Art director
+
+Close. The rendering, softness, character and object design already match the real cards, and Cowboy Hat can pass as it is. What gives the rest away is consistent and fixable: (1) one warm orange mass with same-hue shadows and nothing cool, (2) fine surface noise such as scratchy grain, pebbles, cracked dirt, stitching and fibres, and (3) backdrop values that flatten, go light on light, or vignette. The most reliable specialists were viewpoint (9/10), value (9/10), color (8/10) and surface (8/10). Viewpoint's cue is that generated cards stage the whole object centred on visible ground while real cards crop and tilt; that is out of scope for edit notes and should go into future generation prompts. I overruled shape (form can't be compared across objects, and most of its picks were the real cards), lighting (6 of 10 picks against the key) and the 'glow behind hero' claim (real cards have it too). The notes stay small, avoid the recipes that lost before (canvas recolor, hat relight, matte rope fibre), and reuse the patterns that were kept.
+
+1. **Warm orange wash. Wood, dirt, leather, skin and canvas all fall into one orange-brown mass. Shadows are the same hue, only darker, or they go muddy olive-grey. Nothing cool gives the eye a rest. Visible on Campfire, Pig & Farmer, Saloon Doors, Wagon, Horseshoe and Boots. The real cards always keep a cool counter-mass, such as blue sky, a blue-grey stone or a violet shadow.** Keep orange for the fire, accents and one hero material. Paint ground, walls and tables a slightly greyer brown with cool blue-grey or plum shadows. Include one clear cool area: sky, foliage, steel or stone.
+2. **Fine surface noise that the real cards smooth away: scratchy wood grain with knots and chips, cracked dirt, scattered pebbles and grass tufts, dashed stitching, rope fibres, brushed-metal streaks. This is the main tell on Horseshoe, Saloon Doors, Boots, Wagon, Campfire and Lasso. The finish specialist also flagged the real fruit plate and towel, so this is a matter of degree. Don't ask for plastic.** Draw wood as smooth broad boards with faint, sparse grain. Draw the ground as one smooth even tone. Draw seams as a few soft solid lines and rope as soft twist bands. Remove pebbles and debris.
+3. **The value structure of the background drifts. The lasso is light on light. The harmonica rings go dark and blotchy. The wagon diamonds flatten to one mid tone. The farm scene has edges brighter than the centre and the boots have dark vignette corners. Real cards run crisp graphic rays, rings and stripes out to the edges, and the hero is the clearest value contrast.** Make backdrop patterns clean, evenly lit light and dark bands that run to the card edges. Keep the corners at the brightness of the centre. Make the hero the strongest value step.
+4. **The generated cards stage the whole object centred, often frontal or symmetric, and fully inside the frame on a visible ground. The real cards crop closer and tilt the object. The viewpoint specialist picked 9 of 10 correctly with this cue. It is a composition and camera matter, so per-card edits can't fix it. It belongs in future generation prompts, not in these notes.** For new generations, use a closer, slightly lower camera with the hero turned three-quarters and large enough that the frame edges cut into it or its ground.
+5. **Overruled. The shape specialist picked mostly real cards (harmonica's partner, pig/cow, gate, popcorn cart, scarf, gloves), and form can't be compared across different objects. The lighting specialist's picks went against the answer key on 6 of 10 pairs. The staging specialist's 'glow behind hero' tell also appears on real cards (jacket, scarf). None of these are applied.** Don't change proportions, thickness or roundness. Don't remove sunburst or swirl centre glows on principle.
+
+- p01: Campfire: Remove the tent and the scattered pebbles and grass tufts, and make the ground a smoother, slightly greyer brown. Make the stones cool blue-grey with violet shadows on the side away from the fire. Keep the fire, logs, kettle and trees.
+- p02: Harmonica: Make the background rings slightly lighter and crisper, as evenly spaced light and dark violet bands out to the edges. Give the silver cover a faint cool blue tint in its shadows. Keep the harmonica otherwise.
+- p03: keep
+- p04: Pig & Farmer: Make the sky a clearer blue and add a few green bushes along the building's base. Remove the pebbles and make the dirt smooth and slightly greyer. Give the wooden porch and wall slightly cooler, plum-brown shadows. Keep the characters as is.
+- p06: Cactus: Make the cactus a slightly deeper, natural green with a clearer dark side down the left of the trunk and arms. Turn its cast shadow on the pink floor a deeper rose-violet instead of grey. Keep the flower and backdrop.
+- p07: Saloon Doors: Paint the wall and floor planks as smooth boards with only faint, sparse grain, in a slightly greyer weathered brown with cool blue-grey shadows. Make the view through the doorway a brighter blue sky with greener bushes. Keep the red frame and the doors.
+- p08: Wagon: Make the background diamonds alternate slightly more clearly between light and mid blue. Make the dirt a smooth, slightly greyer tan with no pebbles. Keep the wagon as is.
+- p09: Horseshoe: Make the table smooth planks with soft, faint grain and no scratches, chips or knots, in a slightly deeper, greyer brown. Make the horseshoe smooth satin metal without brush streaks, with a faint cool blue tint on its shadow side. Keep the gold nails.
+- p10: Lasso: Make the background a slightly deeper blue with clearer light and dark wave bands. Draw the rope twists as soft broad bands without fibre fuzz. Keep the red bandana and the loops.
+- p12: Boots: Replace the dashed stitching with a few soft solid seam lines. Make the ground a smooth, even tan with no cracks or pebbles. Light the purple stripes evenly so the corners are not darkened. Keep the boots otherwise.

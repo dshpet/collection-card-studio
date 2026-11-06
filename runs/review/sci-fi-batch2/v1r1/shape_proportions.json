@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the bracelet band is an even ellipse with a cleanly cut inner opening, and the clasp blocks on its rim show crisp steps. B: the planet is a plain disc. The ring is a thick, uniform sausage with round blob ends, and only tiny gaps show between ring and sphere, so the ring reads as a pool float rather than a thin flat disc.",
+   "fix": "Draw the planet's ring as a thin flat band seen at a steep angle, with crisp edges and a clear gap between ring and planet on both sides."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the seahorse has a proportioned body with a crisp spiral tail, a spiky crest and a thin snout. B: the sandcastle's towers have crisp crenellations and straight walls. The bucket and spade are extra props that add bulk at the base, but their parts stay in plausible relation. Neither silhouette is clearly toy-swollen.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the satellite body is a stubby cube that is too big for its solar panels. The panels are short rounded slabs, the arm stubs are thick, and the dish is oversized and blobby, so the whole thing looks like a toy. B: the ring box lid and base have soft rounded corners, but the lid and base keep the proportions of a real box with a clear hinge gap.",
+   "fix": "Draw a satellite with a small compact body and long, thin, flat solar panel wings on thin rods. Make the panels much wider than the body, with straight edges and tight corners, and a small dish on a thin mast."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: this is the known real computer. Monitor, case, keyboard and a thin mouse cable keep true proportions. B: the rover body is a plain slab with a flat top plate. The wheels are oversized fat discs on spindly struts, and the dish sits on a thin stalk. The wheel-to-body scale is toy-like and the chassis has no structure.",
+   "fix": "Draw the rover with a detailed chassis and visible suspension arms. Make the wheels proportionate to the body, with treads, and the body planar with crisp bevelled corners."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the airplane is chunky but has a full part count: wings, tail fin, stabilizers and engines in correct relation. B: the saucer is a flat ellipse with a dome. The rim is lined with bead blobs, and the landing legs are thin sticks ending in ball feet. It is a simple symmetric icon with little structure.",
+   "fix": "Give the saucer a defined layered rim with a crisp edge, and landing legs with a jointed strut and flat foot pads in proportion to the hull."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the map has straight folded edges with fold-creases, and the magnifier has a thin handle that breaks the outline. B: the star-chart disc is a perfect plain ellipse (solidity 0.996, no corners) with a uniform thick rim. Nothing breaks the silhouette, so it reads as a generic plate.",
+   "fix": "Draw the star chart as a thin flat disc with a narrow rim, and add a part that breaks the outline, such as a pointer arm, a rotating outer ring with notches or a stand."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "A: this drum kit matches the real reference set, with thin cymbal stands, a crisp tripod and correct drum proportions. B: the wrought-iron gate has thin bars and scrolls, straight posts and correct part relations. The mask breaks on the brick pillars, but the drawn parts are not toy-swollen.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the astronaut helmet is a swollen near-sphere sitting on a squashed puffy collar, with blob ear-discs on the sides and thick sausage hoses. It is fattened like a toy and its solidity of 0.961 is near the top of the real range. B: the sneakers have sharp lace and heel notches and believable shoe proportions.",
+   "fix": "Draw the helmet slightly taller than wide, with a flat thin neck ring, crisp-edged side fittings and thin ribbed hoses. Keep the visor edge a sharp line rather than a soft bulge."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the control panel silhouette is a near-perfect rectangle (solidity 0.99, straight_share 0.889). It is just a flat plate with no protruding parts: the levers sit flush and nothing breaks the outline. B: the fan has a thin cage of wires, a thin pole and neck joint, and a full part count.",
+   "fix": "Give the console depth: an angled top desk, raised levers and knobs that stick out past the panel edge, and a frame with stepped bevels. It should not be a single flat rectangle."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the vending machine is a squat, nearly featureless block (solidity 0.981) with softly rounded top corners and tiny stub feet. It is shorter and fatter than a real machine. B: the flask has a clean conical body, a straight neck, a lip and a cork in correct proportion.",
+   "fix": "Draw the vending machine tall and narrow, about twice as tall as wide, with crisp boxy corners, a protruding coin panel and a recessed delivery slot."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the rocket is a plain capsule tube with a rounded nose and three stubby fins. It is a minimal toy silhouette with straight sides and little part detail. B: the roller coaster has thin rails and ties, thin support legs and cars in correct relation. Its high thin_share matches the object.",
+   "fix": "Give the rocket stepped stages, a tapered nose cone with a crisp tip, and swept fins with sharp edges and a visible nozzle bell."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the hiker is one figure with a thin thumbs-up arm, and the rolled bedroll, backpack and rooster on the shoulder form one integrated silhouette. B: the cow and rooster in spacesuits are swollen, pillowy suit bodies with stumpy limbs, and the floating UFO is a separate plain dome-ellipse. That makes three disconnected blobs, and the corner_rate of 7.44 sits near the top of the real range.",
+   "fix": "Fit the characters' spacesuits closer to the body with defined joints and slimmer limbs, and connect the composition so the figures overlap rather than standing as separate blobs."
+  }
+ ],
+ "pattern": "Generated cards show up as toy-swollen, plain-icon silhouettes. Bodies are inflated, as in the helmet, the vending machine and the spacesuits. Flat objects become perfect plain shapes with nothing breaking the outline, like the console plate and the star disc. Thin parts become stubby or sausage-like, like the planet ring, the satellite panels and the rocket fins. Part counts are low compared with real cards, whose silhouettes stay interrupted by thin, crisp, correctly scaled sub-parts."
+}

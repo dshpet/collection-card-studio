@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the whole arched door is shown, with its full stone arch and a separate stone doorstep, centred on an even grid of big stone blocks. It reads as a staged display piece rather than a few metres of a real wall. B: the card edge cuts the blue door at the top and bottom, and it has a real frame and wall. Its ivy is busy, but it frames the door the way a real place would. Both have the same high background numbers (0.035 / 0.11).",
+   "fix": "Move in close so the card edge cuts the door at the top and bottom. Show only a little of the plain stone wall on each side, and drop the separate doorstep."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the witch hat floats on cyan rays with very hard, high-contrast edges between light and dark rays from corner to corner. B: the jacket sits on softer green rays that fade toward the edges, which is closer to the real glove and camera rays. My vector gives only a weak reason to choose.",
+   "fix": "Soften the rays so they are tone-on-tone cyan with gentle edges that fade toward the corners."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the bike on the car rack matches a real anchor card, with a few large, quiet shapes (car, road, hills). B: the rowboat comes with a jetty, a post wrapped in rope, a second rope, two lily pads and many ripple rings. The lily pads and ripples are invented props and small detail.",
+   "fix": "Show the rowboat on plain calm water with just one large edge of the jetty. No lily pads and no ripple rings."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the barrel stands on smooth ship-deck planks with a simple rail and a plain sky, all broad quiet shapes. B: the pumpkin sits on dark, weathered planks with peeling grain, cracks and nail heads across the lower third. This is the same busy plank texture as the generated computer desks in the lessons.",
+   "fix": "Put the pumpkin on smooth, warm wooden planks with only a few soft grain lines. No cracks, peeling or nail heads."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the donkey and pig selfie has one backdrop of waterfalls and hills in large soft masses. B: the porch is crowded with a rocking chair, a farmer drinking tea with steam rising, a pumpkin, ivy leaves at the top right and bottom left, a studded door with a ring knocker, and a sky with trees. Its background edge density of 0.141 is far above the real range.",
+   "fix": "Keep the pig in its ghost sheet and the farmer on a simple porch: plain boards and one wall. Remove the pumpkin, ivy, steam and door hardware."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the binoculars lie on wide wooden floorboards that fill the card, with only soft grain. B: the coaster is shown in its real place, cropped by the card edge, with sky, a few clouds and low hills. Both backgrounds are quiet and within range.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the ghost floats on green rays with hard, high-contrast edges and a bright bloom in the middle, like the glow behind the generated glove. B: the jellyfish is in deep blue water with soft light shafts and a few bubbles, which suits something that swims. The bubbles raise B's edge number, but they belong to the water.",
+   "fix": "Use calm tone-on-tone green rays with soft edges and no bright bloom behind the ghost."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the balloons rise past one soft bank of cloud at the bottom of the card. B: the bat flies against a sky with four separate crisp cloud groups spread into every corner, so it reads more like a scene than a quiet sky.",
+   "fix": "Show the bat in an open blue sky with one soft bank of cloud low on the card."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the chest sits on the sandy sea floor with bubbles, which suits its underwater place. The shell is a small extra. B: the potion stands on the same weathered, nailed, mossy planks as the pumpkin, under a pink backdrop with a glow. It also has an invented tag with a star hanging from the neck.",
+   "fix": "Stand the potion on a plain, smooth wooden table top. Remove the tag with the star and the nail heads, cracks and moss."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the twisted bare tree stands on a hill with an invented castle tower and flag cut off at the right edge, plus bushes and clouds. B: the topiary stands in a garden with one hedge, a curved path and grass, which are large quiet bands.",
+   "fix": "Show the tree on a grassy hill with a plain sky and soft distant bushes. No castle tower."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the cooler sits on a beach, with a strip of sea and a sky with a few clouds, all broad bands. B: the cauldron sits on a paved floor, with every stone outlined and lit orange, in front of a purple brick wall that fills the top half. Its lines are dense (edge 0.039 against 0.015 for A).",
+   "fix": "Put the cauldron on a dark stone floor with only a few large, faint slabs, in front of a plain dim purple wall with no visible bricks."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the vending machine stands on a plain purple floor that matches the backdrop, a clean category 2. B: the crystal ball sits on a green floor in front of concentric rings with a bright glow behind the ball. The rings are a real backdrop style, so this is a weak call.",
+   "fix": "Keep the green rings tone-on-tone and remove the bright glow behind the ball."
+  }
+ ],
+ "pattern": "Generated cards add busy texture and extras to the background. Wooden surfaces become weathered planks with peeling grain, cracks and nail heads (pumpkin, potion, as on the generated desks). Stone becomes fully outlined bricks and slabs (cauldron, dungeon door). The model adds props the subject never named: lily pads, a castle tower, a star tag, porch clutter. It shows the whole object centred, even with its base or doorstep, instead of letting the card edge cut it. Ray backdrops get hard, high-contrast edges or a bright glow behind the object, where real cards use a few large, quiet, tone-on-tone shapes."
+}

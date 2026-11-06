@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (bracelet): soft, nearly frontal light. The top inner band is lit and the lower outer band turns gently darker. The relief icons are modeled softly and there is no hard specular. B (Saturn): the sphere uses a stock top-left-to-bottom-right gradient. The lower right half drops into a broad smooth dark zone with a faint rim, and the ring is evenly lit with no shadow cast onto the sphere. It reads like a default airbrushed ball and does not match how the real cards turn form. A's measured form contrast is slightly below the real range, so this call is weak.",
+   "fix": "Light the planet from the upper left. Have the ring cast a thin, curved, darker shadow band across the sphere just below it. Make the shadow side of the sphere turn darker over a shorter distance near the edge. Add a small soft highlight on the upper left of the sphere."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (seahorse): soft frontal light on rounded, banded segments. Each segment has a gentle darker underside and the light shafts are faint. B (sandcastle): a clear key light from the left. The right faces of the towers are shaded and soft cast shadows fall to the right on the sand. Both fall within the real ranges and neither shows a clear generated tell on light.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (satellite): the body is lit from the front. Its front face is the brightest area, the side faces are barely darker and there is no real core shadow. A glow halo sits behind the object instead of a light direction, and the panels are flat with no form turn. B (ring box): a consistent key from the upper left. The right outer wall of the box and the inside of the lid fall into shadow, and there is clear contact darkening under the medal. That matches the real cards' side-lit modeling.",
+   "fix": "Light the satellite from the upper left. Make the right side face of the gold box clearly darker than the front, with a darker strip where the two faces meet. Tilt the solar panels so one panel is brighter than the other. Remove the glow behind the object."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the real computer from the lessons. It has a strong side key from the left, and the right side of the monitor drops into a deep, cool shadow with a clear core. B (rover): a dull, even, overcast light. The white body has low-contrast faces, the wheels are flat grey discs, and the soft contact shadows on grey ground carry little direction. The measured light bias is far outside the real range.",
+   "fix": "Light the rover strongly from the front left. Put the right side of the body and the inner faces of the wheels in a clearly darker, slightly cool shadow. Add a bright, crisp edge where the top meets the side. Cast a darker shadow under the chassis onto the ground."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (plane): a soft key from above left. The fuselage turns smoothly into a darker blue underside, and the engine nacelles have core shadows and darker intakes, as on the real cards. B (UFO): the saucer is lit evenly from the top, with a dark rim band underneath and no side-to-side light direction. The glowing bulbs add point lights that do not shade anything nearby, and the dome lights up evenly.",
+   "fix": "Light the saucer from the upper left so its right side falls into a darker shadow. Let the yellow lights cast a small warm glow onto the hull right next to them. Put one soft highlight on the dome toward the upper left and leave the rest of the dome darker."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (map and magnifier): a directional key. The magnifier casts a shadow onto the map, the map folds alternate between lit and shaded panels, and the handle shows a clear turn from light to dark. B (star chart): the disc face is lit flat and evenly with no gradient, and only a thin dark rim appears at the edge. The measured light bias (0.069) is below the real range.",
+   "fix": "Light the star disc from the upper left. Make the face slightly brighter toward the upper left and darker toward the lower right. Make the raised rim bright on the top-left edge and shadowed on the lower right. Cast a soft shadow from the rim onto the table at the lower right."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A is the real drum set from the reference cards. A spotlight from above gives bright drum tops, shaded fronts, and dark contact under the stands on the stage. B (gate): flat, even daylight. The brick pillars show only a slight face change, the ironwork has almost no shadow, and the gate casts no shadow onto the paving. Its shading range is below the real range.",
+   "fix": "Use sunlight from the left. Shade the right faces of the brick pillars clearly darker. Have the iron gate cast a patterned shadow onto the paving stones, and darken the ground where the pillars meet the path."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (helmet): soft frontal light. The shell has a broad, even sheen and the visor carries big, glossy, plastic-looking hot spots. The cast shadow to the left is a soft smudge. B (sneakers): a strong side light with a hard cast shadow on the floor. The look is photographic, but the forms turn consistently. The helmet's soft, glowy plastic sheen matches the generated lesson cards better.",
+   "fix": "Light the helmet from the upper left. Make the right side of the shell clearly darker, with a visible core shadow before a faint rim. Keep a single small, sharp highlight on the visor in place of the big glossy smears. Cast a firmer shadow under the helmet."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (control panel): every button is lit the same way from the front with an identical soft dome sheen. The panel plate is lit evenly, and the bevels are outlined rather than lit from one side. Form contrast measures above the real range. B (fan): backlight from the window, a consistent rim on the cage, and a believable falloff on the curtain.",
+   "fix": "Light the panel from the upper left. Make the bevels bright on the top and left edges and dark on the bottom and right. Give each button its highlight at the upper left and a small shadow at the lower right. Cast a soft shadow from the plate onto the wall at the lower right."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (vending machine): a clear side key. The left side face is lit, the right front edge turns darker, and the glass door shows a soft reflection. B (flask): the glass and liquid are lit as a glowing, evenly luminous mass. The hard cast shadow to the left does not match the soft frontal fill on the object. Form contrast (0.312) is below the real range.",
+   "fix": "Light the flask from the upper right so it matches its cast shadow. Make the left side of the glass and the liquid darker. Add one sharp, narrow highlight streak on the right shoulder of the glass, and darken the cork on its shadow side."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (rocket): the white body is lit almost flat from the front, with only a faint darkening along the right edge. A long, hard cast shadow on the pavement points to a strong low sun that the body itself does not show. Light bias (0.85) is above the real range. B (coaster): the cars have consistent top light, shaded inner seats, and darker undersides.",
+   "fix": "Light the rocket from the upper left, matching the shadow on the ground. Turn the right half of the cylinder into a clear, darker core shadow, with a thin cool bounce light along the right edge. Shade the fins on their right faces and darken the base where it meets the pavement."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (hitchhiker): a warm key from the upper right that models the face, arm, and shirt folds with clear core shadows. The chicken and backpack are lit from the same direction. B (cow and rooster): the spacesuits are lit flat and evenly with a metallic sheen everywhere. The UFO's beam lights the ground but not the characters, and the ground shows almost no contact shadow under their feet.",
+   "fix": "Light the characters from the sun at the upper left. Shade the right sides of the bodies and the spacesuit folds darker. Add a faint glow from the UFO beam on their heads and shoulders, and put dark contact shadows under their feet on the grass."
+  }
+ ],
+ "pattern": "Generated cards are lit from the front and evenly. The faces facing the viewer are the brightest, the side faces barely darken, and few forms show a real core shadow. Real cards use a clear side key that drops one side of the hero into a deep, often cool shadow. Generated cards also replace a light direction with glow halos and glossy plastic sheen. Their cast shadows are often hard or long and do not agree with the soft light on the object. Contact darkening is weak, and practical lights (bulbs, beams, screens) are drawn but do not light anything around them."
+}

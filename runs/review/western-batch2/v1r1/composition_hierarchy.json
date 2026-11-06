@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the campfire sits lower-left, and the kettle on its stone (right) and the tent (top-left corner) pull attention away from it. At thumbnail size the card reads as a campsite scene, not one object. B: the binocular viewer is a single close-up hero. It is cropped by the bottom edge, like the real lighthouse, and the skyline stays soft behind it.",
+   "fix": "Draw only the campfire: a ring of stones with crossed logs and a big flame, large and centered and filling most of the card. No kettle, no tent, and a plain soft ground behind it."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the harmonica is a thin diagonal bar across the middle. Its height is 0.47, below the real range, so the top and bottom thirds are empty purple rings and the hero looks small as a thumbnail. A: the yellow player is tilted, with earbud cables looping down to fill the lower half, so the card is filled more evenly.",
+   "fix": "Show the harmonica larger and tilted more steeply, from a higher three-quarter angle, so its top face and holes fill more of the card's height and reach close to the edges."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the jacket is centered and nearly frontal, like a garment laid flat, with even purple-green space on all sides. A: the hat is tilted dynamically, and its brim reaches almost the full card width.",
+   "fix": "Turn the jacket to a three-quarter angle and tilt it slightly. Make it bigger, so the sleeves nearly touch the left and right edges."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: behind the pig and cow there are confetti, rainbow stage spotlights, string lights and a crowd. At thumbnail size the colorful background competes with the faces. B: the pig and farmer are cropped at the top and bottom against a calmer saloon front, and the two characters read first.",
+   "fix": "Keep the pig and cow large in front, and turn the stage into a soft, simple glow behind them. Remove the confetti and the crowd."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the seahorse is a narrow upright shape in the center, with wide empty blue on both sides. Its width (0.55) and area (0.21) are below the real ranges. A: the fruit plate spreads across nearly the full width at a tilted angle and fills the card.",
+   "fix": "Draw the seahorse bigger and leaning diagonally, with its curled tail sweeping toward a lower corner and its snout reaching toward the upper right, so it fills more of the card's width."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cactus is centered, frontal and perfectly symmetric, a narrow upright shape on an empty pink backdrop. Its width (0.535) and area (0.228) are below the real ranges, and a lot of empty space sits on both sides. B: the vending machine is turned to three-quarter view and fills the card with even margins.",
+   "fix": "Show the cactus at a slight three-quarter turn, with its arms at different heights, and larger, so its arms reach close to the side edges."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the swinging doors take up only about a third of the card's width, set inside a doorway in a large plank wall. The wall and floor take up most of the card and dilute the first read. A: the gate and its brick pillars are frontal but fill the width, so the gate reads at once.",
+   "fix": "Zoom in on the swinging saloon doors so they fill most of the card. Show them at a slight angle, with only a thin strip of wall frame around them."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the whole popcorn cart is shown frontal-ish, with its base and floor included, and the canopy nearly touches the top edge (box height 0.87, above the real range). A: the wagon is at a three-quarter angle and its pole is cropped by the right edge, a crop real cards use too.",
+   "fix": "Lower the camera slightly and let one wheel or the handle be cropped by the card's edge, so the cart doesn't sit as a complete object on a stage."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the horseshoe is centered and seen straight from above, perfectly symmetric, with even wood margins (0.093, at the top of the real range). B: the map runs off the edges with the magnifier placed diagonally across it, so the hero fills the card.",
+   "fix": "Tilt the horseshoe diagonally and seen at an angle, larger, with one arm reaching close to the card's edge."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the scarf is centered, frontal and mirror-symmetric, with its badge exactly in the middle, a symmetric front-on pose like the generated lessons. B: the lasso loops sit off-center and diagonal. Its area is small (0.15), but it is placed dynamically.",
+   "fix": "Show the neckerchief at a three-quarter angle, with one tail swinging to the side, so it is not mirror-symmetric around the badge."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the teddy bear in the lower right competes with the target. Lightbulbs and a booth frame add more focal points, so the thumbnail reads as a fairground stall. B: one striped towel lies diagonally, filling the card on a quiet checker background.",
+   "fix": "Remove the teddy bear and the booth. Draw the target with its arrow large, tilted slightly and filling the card on a simple background."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the two boots stand side by side, centered, frontal and symmetric, shown complete with ground and pebbles. A: the boxing gloves are large, sit low and are cropped by the left and right edges, like the real cards' cropping.",
+   "fix": "Draw the boots bigger and angled, one lying tipped over against the other, with the toes cropped by the card's lower edge. No pebbles."
+  }
+ ],
+ "pattern": "Generated cards stage the hero as a complete object: centered, frontal or mirror-symmetric, with even breathing room on all sides and often a base or ground below it. Real cards crop boldly, tilt the object and let it press against the edges. Generated cards also add props or set dressing that fight the hero (kettle and tent, teddy bear, stage confetti, island rocks)."
+}

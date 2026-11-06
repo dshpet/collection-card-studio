@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the stone arch and door sit in the same mid grey as the brick wall (gap 0.0), so the hero has no value separation. The darkest accents are thick, hard-edged black hinges and a black ring placed in the middle of the door, and every brick has a crisp light top and dark underside, so contrast is spread evenly across the whole card. B: a darker middle-value door with a lighter wreath on top of it, and the ivy frame breaks up the edges. It reads as a large dark centre with light edges, closer to the real scene cards.",
+   "fix": "Make the arched door clearly lighter and warmer than the wall. Push the brick wall back into a soft, darker mid-tone with low detail, and draw the iron hinges dark grey, not pure black."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the hat is one big near-black shape against a pale cyan sunburst. Contrast between hero and background is extreme (gap -0.54, rms 0.25, both far outside the real range), and the dark accent covers most of the hero instead of a small spot. B: the jacket is a light-to-mid hero with one dark sash, against a mid-dark green burst with a soft halo. That matches how the real cards separate hero from background.",
+   "fix": "Draw the hat in a lighter dusky purple-grey with clear light planes on the crown and brim, and keep pure black only for thin crease shadows. Make the background rays a slightly deeper teal so the hat is not a black cut-out on a pale field."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A is the bike-on-car card shown among the reference cards. Its dark lower corners come from the road and the car's underside, not an added vignette. B: the boat and dock are an even mid-light key with soft shadows under the dock and a light water field. Its key, contrast and vignette are all inside the real range, and nothing in its value pattern points to generation.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the lens shows a bright round halo behind the pumpkin, like a spotlight on the wall, plus small, very bright carved-face shapes inside a mid-dark body. The weathered deck in front is broken into many small dark grain marks. A: the barrel's value is set by the deck and wall it stands on, with no halo. Its darks are limited to the gaps between staves and the shadow under the barrel.",
+   "fix": "Remove the bright glow behind the pumpkin and keep the background sky an even blue. Keep the carved face a soft warm yellow, not a hot white, and draw the table planks smooth with fewer dark scratches."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the corners are pulled clearly darker than the centre (vignette 0.19, far above the real maximum of 0.086). The porch floor and door are covered in fine black and white wood-grain specks, and dark accents are scattered everywhere: the farmer's boots, the chair and the pumpkin. A: large soft value groups, with light fleece and water against a mid sky. Its darkest accents are small shapes at the face and hooves.",
+   "fix": "Light the whole porch evenly with no darkened corners. Draw the floorboards and door as smooth, simple planks without scratchy grain, and group the shadows into a few large soft shapes."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: dark binoculars on a light plank floor with a cast shadow. The hero is slightly darker than the real range allows, but that fits a black-rubber object. B: a mid-value coaster against a light sky with a slight glow at the centre. Both deviations are small and point in opposite directions.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: low key (mean 0.515, below the real range). A bright glassy hero sits on a deep navy field that goes nearly black in the bottom-left corner, which is a tenebrist look none of the real cards use. A: a light ghost on mid-green rays. Its key, contrast and halo match the sunburst reference cards.",
+   "fix": "Raise the whole background to a brighter, clearer ocean blue with light rays from the top, keep the bottom corners light, and soften the bright rims on the jellyfish bell."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the bat is a solid dark-purple mass that is much darker than the mid-blue sky (gap -0.315, outside the real range). Its darkest accents are spread across both wings. A: the balloons sit in the middle values with small bright highlights against an even sky, and soft light clouds anchor the bottom.",
+   "fix": "Draw the bat in a lighter, warmer mauve, with sunlit tops on the wings and head and darker purple only in the wing folds, so it reads as a mid tone against the blue sky."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the background is a flat, low-contrast pink (rms 0.103, below the real range), with a pale halo ring around the bottle in the lens. The table is broken into busy dark grain specks. A: a mid-dark underwater field with a clearly lighter gold chest. Its darks gather inside the open chest, which gives clean value groups.",
+   "fix": "Remove the glow behind the bottle. Make the table a few large smooth planks, and give the bottle a clear dark side and a light side so it holds more contrast than the background."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the twisted trunk and branches form a large dark-brown mass against a light sky and grass (gap -0.29, darker than any real hero). Hard dark crevices run through the bark. B: the topiary is a middle-value hero with light rim tops on each tier, and the darks sit at the hedge base.",
+   "fix": "Draw the tree in a lighter, warm caramel brown with a sunlit side on the trunk and soft rounded bark, and keep the dark brown only in the deep folds."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: low key (mean 0.485, far below the real range). The cauldron is a big near-black mass and the purple stone fills the background in dark tones. The only light areas are the potion surface and the fire, which is a spotlit, tenebrist arrangement. A: a bright beach card with a mid-value red cooler and light sand. Its darks are only small accents.",
+   "fix": "Light the whole scene brightly. Make the stone wall and floor a light lavender, draw the pot in a mid charcoal with a broad soft highlight, and keep black only for the rim shadow."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the lens shows a pale ring-shaped halo behind the orb, with the card's corners darker. Overall contrast is low (rms 0.106, below the real range). The darkest shapes are a hard cast shadow and the base rim. A: the vending machine is a darker blue mass against an even light-purple wall with a soft floor shadow. Its glass front supplies the light value group.",
+   "fix": "Use an even green backdrop without a glowing circle behind the orb, and give the gold stand a clear dark underside, so the orb and stand carry more contrast than the background."
+  }
+ ],
+ "pattern": "The generated horror cards stand out because they are darker in the wrong places. The hero becomes a large near-black mass (hat, bat, cauldron, tree), or the whole card drops into a low key, outside the real cards' bright, mid-value range. The other tells are a pale spotlight halo right behind the hero and darkened corners. The background also gets busy with scratchy dark grain while its overall contrast stays flat. The real cards keep a bright key, a mid-value hero separated mostly by hue, and dark accents kept small."
+}

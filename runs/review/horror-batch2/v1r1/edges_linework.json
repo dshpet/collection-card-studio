@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the ivy frame is a dense mass of small leaf contours on both sides and across the top, and the wreath has packed petal edges. The edge map also shows a grey smeared halo around the wreath and down the door. Subject density is 0.342, above the real range. A: the edges are heavy too, but they are the regular contours of stone blocks and planks.",
+   "fix": "Plain blue door with clean panel lines and a simple wreath with a few large flowers. Leave out the climbing ivy, or keep a few large leaves at one corner. No glow around the wreath."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the hat is a near-empty silhouette with a hard dark line along the underside of the brim. The crown is full of fine speckled fabric noise instead of clean form edges. Subject density is low (0.06) and outline darkness is below the real range. B: the jacket has crisp, thin seams, pocket flaps and badge rims, close to the real cards' internal-line detail.",
+   "fix": "Witch hat with a smooth, clean surface and no fuzzy fabric grain. Add a few clear folds in the crown and a clean stitched edge on the band. The brim edge should come from light and shade, not a dark line."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A is the bike-on-car card from the real anchor set. B: the dock planks are cut by thick dark grooves, the rope is a busy braid of edges, and the water is covered in many ripple rings and lily-pad veins. Background edges are heavy for a hero card.",
+   "fix": "Calm, smooth water with one or two soft ripples. Narrow, shallow plank seams on the dock and boat. A simple rope with few twists."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the pumpkin has only a few soft rib lines (subject density 0.045, below the real range). The weathered table behind it is full of scratchy grain, cracks and peeling-paint edges (background 0.056, above the real range). A: the barrel has crisp stave seams and hoops, with simple plank lines in the background.",
+   "fix": "Clean, smooth wooden table with a few simple plank lines and no peeling paint or scratches. Give the pumpkin clear, crisp rib grooves and a sharp-edged carved face."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the porch scene is edge-dense everywhere. There are porch planks, vine leaves, door boards with a knocker, chair spindles, the farmer's clothing folds, and the ghost-sheet ruffles. Background density is 0.141, about twice the real maximum. A: the waterfall background is soft and lower in contrast, and the edges concentrate on the two characters.",
+   "fix": "Simplify the porch into a soft, blurred backdrop with few lines. No vines, door hardware or plank grain. Keep crisp edges only on the farmer and the ghost pig."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the binoculars have crisp barrel rings with a soft shadow, on evenly spaced floorboard lines. B: the coaster has clean double rail lines and soft clouds. Both are in range on all three measures, and neither shows an outline or halo that the lessons tie to generated cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the jellyfish bell and every tentacle have a thick, doubled dark contour, like a tube drawn in ink. The bubbles have heavy dark rings, and the light rays add edges to the background (0.033, above the real range). A: the ghost is a smooth sheet with a thin contour and few internal lines on a plain sunburst, like the real sunburst cards.",
+   "fix": "Show the jellyfish's edges through soft colour and light, with no dark line around the bell or tentacles. Make the bubbles faint, thin-rimmed circles. Plain dark water behind, with no light shafts."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the cloud tops have a crisp, dark drawn contour along each bump, the same cloud treatment as the generated lighthouse lessons. The bat's eyes are heavy ringed shapes. A: the balloons and clouds are soft edges with gradual tone changes and no drawn line.",
+   "fix": "Soft, fluffy clouds whose edges fade into the sky, with no dark line along their tops. Keep the bat's silhouette crisp but without a dark outline, and draw simple eyes."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the table under the potion is a field of scratchy grain lines, knots and nail heads with strong edges, the same busy wood the generated computer lessons show. The cork is speckled. A: the chest has crisp board seams and coin rims on a smooth sand and water backdrop. Its bubble rings are the only background edges.",
+   "fix": "Smooth, plain wooden surface with two or three soft plank seams and no grain scratches or nails. A smooth cork top."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the topiary is packed with small repeated leaf-scale contours (subject density 0.29, above the real range). The hedge behind is dotted with leaf speckle, so background and subject have the same texture. A: the tree has strong branch contours and bark lines, but they are long, flowing strokes with clear hierarchy.",
+   "fix": "Spiral topiary drawn as smooth, rounded green tiers with only a few leaf shapes along the rims. A soft, blurred hedge behind with no leaf detail."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the brick wall and floor stones are covered in crack lines and chipped edges. The cauldron body has blotchy, mottled internal edges, and the fire and logs add more glow-ringed contours. Everything competes with the pot. A: the cooler has clean, thin panel lines and a simple sand and sky backdrop.",
+   "fix": "Smooth, clean stone blocks with simple thin joints and no cracks or chips. Make the cauldron body a smooth, glossy black surface with one clear highlight and no blotches."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the purple swirl inside the orb is smeared, mushy texture with no clear boundaries. The orb's lower edge and the base rim fade into soft, lost edges (outline darkness -0.107, below the real range), and faint concentric rings fill the background. A: the vending machine has crisp, consistent body and door contours and clean shelf lines.",
+   "fix": "Crystal ball with a crisp, clean glass rim. The swirl inside should be smooth ribbons with defined edges. Give the gold stand sharp, well-defined edges where it meets the base."
+  }
+ ],
+ "pattern": "Generated cards misplace their edges. They put hard, busy edges into the background (weathered wood grain, cracked bricks, porch planks, water ripples, ivy and hedge speckle). Their subjects are either packed with repeated small contours (leaves, petals) or nearly empty inside and wrapped in a thick, doubled dark contour. Clouds get crisp drawn top lines, and soft lost edges or smeared glow halos appear where real cards keep a clean boundary."
+}

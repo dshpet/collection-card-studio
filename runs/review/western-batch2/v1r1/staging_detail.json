@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the campfire sits in a full camp scene: a tent cut by the top-left corner, three pine trees, bushes, a kettle on its own rock, about 15 scattered pebbles and grass tufts in the corners. That is many small objects and only one is a partner prop. B: the viewer is close and cropped by the bottom edge, with a quiet skyline and a balcony rail made of a few large shapes, like the fan-by-the-window anchor card.",
+   "fix": "Show only the campfire ring of stones and logs, close up and filling the card, on a plain packed-earth ground. No tent, trees, kettle or scattered pebbles."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the concentric rings behind the player are crisp, high-contrast lilac bands that compete with the earbud cable loops. B: the harmonica's rings are soft and tone-on-tone, darkening toward the corners. The earbuds in A count as a legitimate partner object.",
+   "fix": "Make the background rings soft and close in tone to the purple field, with low contrast between the bands."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the green sunburst has a bright glowing hotspot behind the jacket's chest, the same halo the generated baseball mitt cards show. A: the blue sunburst is even, with no glow behind the hat, like the real mitt card.",
+   "fix": "Use an even sunburst with no bright glow behind the jacket. Keep the rays the same brightness from the center to the edges."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the backdrop is crowded with invented festivity: confetti scattered across the sky, string lights, multicoloured stage beams, a truss and a small crowd of people at the right and left edges. B: the barn has a wall, a window, a barrel and saloon doors, a few large shapes, though the floor still has pebbles.",
+   "fix": "Behind the pig and cow, show a plain stage backdrop with two or three soft light beams. No confetti, no string lights, no crowd."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: water droplets are sprinkled on the glass plate around the fruit as invented sparkle, and the wood table has busy plank lines. B: the water is a quiet blue gradient with soft light rays, close to the real jellyfish card, though it has no bubbles.",
+   "fix": "Remove the water droplets from the plate. Draw the table as a few wide, softly grained planks."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both are category 2 on plain studio floors. A: the cactus casts a long, hard shadow to the left on a plain pink gradient. B: the vending machine sits on a purple gradient with a soft contact shadow. Neither background shows invented props or clutter.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the gate is surrounded by many things: brick pillars with ball finials, every brick drawn, round hedges, trees, a paved path with each tile outlined and grass at both bottom corners. B: the saloon doors sit in a wood wall made of long planks, with only a small view outside. Both measure above the real range, but A packs in more separate objects.",
+   "fix": "Show the gate close up, with pillars cut by the card edges. Behind it, show only a plain green lawn and sky. Draw the pillars as smooth brick masses without individual bricks, and leave out the trees, hedges and patterned paving."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both are on a diamond-pattern backdrop with a ground plane. A: a dirt floor with a few scattered pebbles. B: a tiled floor, with the popcorn bucket as its one partner prop. The clutter is comparable and neither is clearly off.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the planks under the horseshoe are weathered, with dense grain, knots, cracks and scratches across the whole card, well above real detail. B: the planks under the map are smooth and softly grained, like the real binoculars floor.",
+   "fix": "Lay the horseshoe on smooth, warm wooden planks with faint, soft grain. No knots, cracks or scratches."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the swirl backdrop has high-contrast bands and a bright glow at the center behind the scarf, competing with the hero. B: the wave pattern is a quiet tone-on-tone cyan.",
+   "fix": "Make the background swirl soft, close in tone to the blue, and evenly lit, with no bright center glow."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the target is staged in a carnival booth with a row of glowing bulbs, a wooden shelf and an invented teddy-bear prize sitting beside it, a story prop the subject doesn't name. B: the towel floats on a quiet green checker, tone-on-tone.",
+   "fix": "Show the target with its arrow alone on a simple stand against a plain backdrop. No teddy bear, no light bulbs, no booth frame."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: a purple striped studio wall meets a cracked dirt ground scattered with pebbles, so a graphic backdrop is mixed with invented outdoor debris. A: the gloves are cropped by the left edge on a smooth wooden shelf against a quiet striped wall.",
+   "fix": "Stand the boots on a plain, smooth floor in a matching tone. No cracks or scattered pebbles."
+  }
+ ],
+ "pattern": "Generated cards give themselves away in the background. They add invented clutter: scattered pebbles and debris, water droplets, confetti and string lights, and extra props such as a teddy bear, tent or kettle. They also add a bright glow hotspot behind the hero on sunburst and swirl backdrops, and use busy textures like knotted wood grain or brick-by-brick walls. In category-4 scenes they show many objects and the whole setting, instead of a few large, quiet shapes with the card's edges cutting the hero."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: arched door shown straight on, dead center, the whole stone arch and doorstep inside the frame with an even brick border on all sides. It reads like a centered diagram. B: blue door cropped by the top, bottom and right edges, ivy spilling in from the corners. The wreath sits off-center, like a close crop of a real scene.",
+   "fix": "Move in close and turn the door slightly to three-quarter view. Let the frame cut off the bottom of the door and one side of the arch, and push the door off-center."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: witch hat tilted on a diagonal, sitting left of center, with the brim almost touching the left edge. This dynamic tilt matches the real glove and camera cards. B: jacket floats perfectly centered and front-on, with both sleeves spread symmetrically and even margins.",
+   "fix": "Turn the jacket to three-quarter view and tilt it. Make it larger, so a sleeve nearly touches one side edge, and set it slightly off-center."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: bike on the car rack, cropped by every edge (this is a real card from the reference set). B: rowboat on a diagonal with the dock cut off at the top-left. The boat fills almost the full height (0.93, above the real range), and two lily pads at the right compete for attention.",
+   "fix": "Remove the lily pads. Make the rowboat the clear center of attention, and leave a little water visible above and below it."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: barrel in the middle of a ship deck, slightly turned. The rail cuts the background and the barrel fills most of the height. B: jack-o'-lantern shown straight on, placed centrally on a plank table. It is smaller, with wide even sky and table margins (0.135, more space than any real card).",
+   "fix": "Make the pumpkin bigger and closer to the camera so it nearly touches the bottom edge. Turn it slightly to three-quarter view and set it a little off-center."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: sheep and pig cropped at the chest by the bottom edge, as in a tight selfie, with the waterfall behind. B: full-body scene with two equal centers of attention: the farmer in the rocking chair on the left and the ghost pig dancing on the right. A pumpkin and a door add clutter at the edges.",
+   "fix": "Make the ghost pig the only hero, large and cropped at the bottom edge. Push the farmer into a soft, partial background, or remove him."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: binoculars lie on a diagonal in three-quarter view on a wood floor. B: coaster cars sweep up through the frame, with the track cropped by the left and bottom edges. Both use the off-center, cropped framing of the real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: ghost sits centered on the sunburst, with an even clearance between the sheet and the edges, like the generated glove. B: jellyfish set left of center, with tentacles trailing toward the lower right and bubbles scattered around it.",
+   "fix": "Make the ghost larger and tilt it on a diagonal, with one corner of the sheet almost touching the edge. Shift it slightly off-center."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: balloon bunch placed high and left, with the strings trailing off toward the lower right. The arrangement is asymmetric. B: bat placed dead center and front-on, with both wings spread in a mirror image and an even sky all around.",
+   "fix": "Turn the bat to three-quarter view, tilted as if banking. Make it larger, with one wing cut off by the frame edge, and move the body off-center."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: treasure chest fills the card at three-quarter view, with coins and a shell spilling toward the bottom-left edge. B: potion bottle is small and centered on a table. A big empty pink wall sits above it (margin 0.115, subject area 0.27), so the bottle reads as small on the thumbnail.",
+   "fix": "Make the potion bottle much larger, filling most of the height. The cork should come close to the top edge and the bottle should sit low on the table."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the twisted bare tree fills the card from top to bottom (0.91, above the real range). A red-roofed castle tower on the right competes for attention. B: spiral topiary sits centered on a round stone base, with the hedge as a quiet backdrop.",
+   "fix": "Remove the castle tower, or make it small and soft. Leave a little sky above the top branches."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: cooler at three-quarter view with the lid open, filling the frame, and the beach horizon behind it. B: cauldron placed centrally with even margins (0.11, above the real range). The fire and logs spread at the bottom, and the glowing fire competes with the green brew for first read.",
+   "fix": "Bring the cauldron closer so it fills more of the card and nearly touches one edge. Keep the fire small under the pot."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: vending machine at three-quarter view, slightly left of center. B: crystal ball on its stand, perfectly symmetric, front-on and centered in concentric rings, with a wide even margin of green (0.125, above the real range).",
+   "fix": "Turn the stand to three-quarter view and tilt it slightly. Make it larger so the base nearly reaches the bottom edge, and move it a little off-center."
+  }
+ ],
+ "pattern": "Generated cards show the hero dead center, front-on and mirror-symmetric, smaller than on real cards, and entirely inside the frame with even, generous margins (often above the real range). Extra props or a second figure are added and compete with the hero. Real cards tilt the object, crop it by an edge, and let it fill the card."
+}

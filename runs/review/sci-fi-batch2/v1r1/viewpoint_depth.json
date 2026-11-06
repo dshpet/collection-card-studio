@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the bracelet is tilted steeply toward the camera, with its inner rim and the band receding in mild perspective, and its left end is cut off by the card edge. B: Saturn sits dead-centre at eye level. The ring is a flat side-on ellipse and the whole object floats with no depth cue beyond the target rings.",
+   "fix": "Turn the planet so we look slightly down onto the ring, with the ring tilted toward the camera. Push in closer so the ring's edge runs off one side of the card."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the seahorse is a tight side profile, close to the camera, on a plain underwater backdrop. B: the camera is pulled back to show the whole sandcastle, with the bucket and spade added as a foreground layer and the sea horizon as a third layer. This is the same pull-back-and-add-props move as the generated lighthouse on its island in the lessons.",
+   "fix": "Move the camera closer so the castle fills the card, with its sides cut by the frame. Drop the bucket and spade in front, and keep the background a soft simple beach."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the satellite is seen almost dead-on from the front at eye level. The body and panels are flat rectangles with little side face, and the object is small in the centre of the card. B: the ring box is seen from a three-quarter view above. Its top, front and side faces all show, and the open lid recedes consistently.",
+   "fix": "Turn the satellite three-quarters and look down slightly, so the top and one side of the gold box show and the panels recede. Make it larger in the frame."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "A is the real computer from the lessons: a close camera, the desk edge cropped at the bottom, a single desk plane. B: the rover is small and centred, side-on at low height, on a wide grey ground plane that runs back to a bare horizon. There is a lot of empty floor and sky, and no crop.",
+   "fix": "Bring the camera close and slightly above, in a three-quarter front view, so the rover fills the card and its wheels touch the bottom edge. Show only a strip of ground."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the plane is close in a three-quarter front view, with the wing and tail cut by the frame and the engines overlapping the fuselage. Clouds sit both behind it and in front, low on the card. B: the UFO is small and centred, seen almost side-on from a slightly high angle. It floats in empty sky with cloud bands only along the edges.",
+   "fix": "Push the UFO closer and tilt it toward the camera so more of the top dome and rim shows. Let the rim run off one side, and put a cloud in front of its lower edge."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "Both cards look down steeply onto a wooden tabletop, and the floorboards run at a similar angle in both. A layers the magnifier over a folded map, with clear overlap and a cast shadow. B: a single flat disc with a consistent ellipse and no overlap. There is little on this vector to choose between them.",
+   "fix": "Add a second object resting on the star disc or overlapping it, so it reads as more than one layer at the same tabletop angle."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the real drum kit: a mild perspective, a low stage disc and a single plain backdrop. B: the gate is shot with a wide-angle feel. The paved path converges hard toward the bottom-right, and the brick pillars and walls splay outward. A deep garden background stacks three or more depth layers behind the gate.",
+   "fix": "Use a flatter, more distant lens with the gate seen square-on. Keep the path short and only gently receding, and simplify the background to one soft green band."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the helmet is near-frontal and centred at eye level. Very little of its top dome shows, and it sits on a featureless gradient with only a soft shadow suggesting a floor. B: the sneakers are in a three-quarter view from slightly above. Both shoes share one floor plane that meets the wall at a clear horizon line, and the front shoe overlaps the back one.",
+   "fix": "Turn the helmet three-quarters and raise the camera so the top of the dome shows. Add a visible floor edge behind it so it stands on a surface."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the control panel is seen perfectly square-on, like a flat orthographic face on a wall. There is no perspective on the panel or the wall seams, and planar_share is 0.605, above the real maximum. B: the fan is close and cropped at the bottom. The cage is slightly turned, and a curtain and window form a separate background layer.",
+   "fix": "Turn the panel slightly so the wall recedes to one side and the panel's thickness shows along one edge. Bring the camera close enough that the panel runs off the card."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "A: the vending machine is in a three-quarter view with its top face just visible, small and whole in the centre on a soft floor; planar_share 0.509 is at the real maximum. B: the flask is centred at slightly high eye level with a cast shadow on the floor. Both use one consistent view, so there is weak evidence either way.",
+   "fix": "Move the camera closer and lower so the machine fills the card height."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the rocket stands dead-centre, straight-on and upright, small on a wide flat concrete pad. A long horizon line runs straight across behind it, and there is a lot of empty foreground. B: the roller coaster is shot from a low, dynamic angle with the cars overlapping one another, and the track loops out of the frame over a soft hill background.",
+   "fix": "Turn the rocket slightly and lower the camera so it looks up at the nose. Fill the card height with it and show only a small patch of ground."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the hitchhiker is cropped at the thighs and close to the camera. The road converges behind him to a desert horizon, which gives clear foreground and background layers. B: the cow and rooster stand full-body, side by side at the same depth, on a flat meadow. The UFO is pasted at the top with no overlap, so the layers feel stacked rather than receding.",
+   "fix": "Bring the camera close so the characters are cropped at the knees, with one overlapping the other. Place the UFO partly behind the cow's raised arm."
+  }
+ ],
+ "pattern": "The generated cards pull the camera back. They show the whole object small and centred, and fill the extra space with ground, horizon or props. They also tend to use near-frontal, eye-level views with little top face showing (UFO, rocket, satellite, panel). The real cards sit close, crop the object at the frame edge, use a mild three-quarter view from slightly above, and keep the background as one simple soft layer."
+}

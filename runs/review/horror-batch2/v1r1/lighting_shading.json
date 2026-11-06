@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the arched door and the brick wall get even, head-on light. The stone voussoirs are lit the same on both sides, there is no cast shadow under the arch, and only a thin uniform darkening sits under the step (light_bias 0.156, below the real range). B: a clear key comes from the upper left and throws dappled ivy shadows across the blue door and the frame. The wreath casts a soft shadow on the door, and the panels have a lit edge on one side and a dark edge on the other.",
+   "fix": "Light the door from the upper left. Let the arch stones throw shadows down onto the wooden planks, keep the right side of each stone darker, and put a soft cast shadow from the door frame across the boards."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the witch hat has a clear key from the upper left. The cone darkens steadily toward the right, a deep core shadow sits under the brim, and the band has a soft sheen. B: the jacket is lit almost straight from the front. Both sleeves turn to shadow the same way, the torso has a flat middle value, and a radial glow sits behind the center like in the generated lessons. The only deep darks are inside the cuffs.",
+   "fix": "Light the jacket from one side. Make the far sleeve and that side of the torso clearly darker, and drop a soft shadow from the sash across the chest."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the bike rack scene has a low sunset key from the left. The bike frame and the car show warm lit sides and cool shadow sides, and the wheels cast shadows on the car body. B: the boat and pier are lit evenly from above. The inside of the boat and the planks have almost no direction to their light. The only marked shadow is a fixed dark band under the pier edge, and the lily pads and rope have no cast shadows on the water.",
+   "fix": "Bring the light in low from one side. Shade one side of the boat hull darker, let the thwarts cast shadows into the boat, and put a soft shadow of the pier and the boat onto the water."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the barrel is lit almost head-on. The staves turn to shadow evenly on the left and right, the metal hoops get the same band of shine all the way around, and there is only a faint contact shadow on the deck. B: the pumpkin has a key from the left, a darker right side, and a long soft cast shadow to the right on the planks. The glowing face adds light from inside.",
+   "fix": "Light the barrel from the upper left. Put the right third of the barrel clearly in shadow, give the hoops a highlight only on the lit side, and draw a soft shadow on the deck going right."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the pig and the sheep-cloud are lit from the front with no clear shadow side. The faces and bodies keep even mid-values, and there are almost no cast shadows between the figures (light_bias 0.127, at the bottom of the real range). B: a warm key from the right models the man and the ghost pig. The far sides are deeply shaded, and the rocking chair and the pig cast shadows on the porch boards.",
+   "fix": "Light the pig and the sheep from one side. Make the far side of the pig's body and of the wool puffs noticeably darker, and let the pig's raised arm cast a shadow on its body."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the binoculars have a strong key from the upper left. The barrels have bright tops and dark undersides, and a long dark cast shadow falls across the floorboards. B: the coaster cars and track get flat, even light. Each car is lit about the same, the tubes on the track hardly turn into shadow, and nothing casts a shadow on the track (light_bias 0.131, below the real range).",
+   "fix": "Light the coaster from the upper left. Shade the right side and underside of each car and each track tube clearly darker, and let each car cast a shadow onto the rails below it."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the ghost's sheet has a soft key from the upper left. The fold shadows are clear, the head has a broad sheen, and the hem turns to shadow on the underside. B: the jellyfish is dim and low in contrast (shading_range 0.416, below the real range). The bell and tentacles have almost no lit side or shadow side, and the forms come from glow and color, not from light.",
+   "fix": "Light the jellyfish from the top. Make the top of the bell brighter, darken its underside and the inner folds, and keep a soft highlight on the dome."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: each balloon has a clear lit side at the upper left and a darker side at the lower right, with a soft highlight, like the real cards. B: the bat is lit from the front. The body and face are flat mid-values, and the wings have only thin edge highlights with no shadow side. The shading range runs high, but that comes from the dark color, not from form.",
+   "fix": "Light the bat from the upper left. Shade its round body darker toward the lower right, and darken the far wing and its membrane folds."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the chest has a key from the upper left. The right side panel is darker, the lid throws a shadow over the coins, and the chest has contact shadow in the sand. B: the potion has a staged spotlight look. A glowing green cast shadow falls to the right, but the bottle form in the lens is a soft, low-contrast blob (form_contrast 0.397, light_bias 0.187, below the real range).",
+   "fix": "Model the bottle as a solid sphere. Make the left side brighter, darken the right side, and put a small, soft highlight on the glass instead of an overall glow."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the tree trunk gets even, head-on light. The twisted trunk has value from its carved grooves, not from a lit side and a shadow side, and the trunk casts no real shadow on the grass (form_contrast 0.365 and light_bias 0.153, both below the real range). B: the topiary has a clear key from the left. Each tier has a dark right side, and the topiary casts a sharp shadow on the grass and the paving.",
+   "fix": "Light the tree from the upper left. Keep the right side of the trunk and of the roots clearly in shadow, and put a soft tree shadow across the grass to the right."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the cooler has a soft key from the upper left. The right face is a little darker, and the cooler has soft contact shadow in the sand, like the real cards. B: the cauldron has strong up-light from the fire. The underside of the pot is hot orange while the body stays near black, and the jump from lit to dark is too large (form_contrast 0.683, above the real range).",
+   "fix": "Add a soft key light from the upper left to the cauldron, so its top and its left side read lighter. Keep the fire glow as a small warm accent on the underside only."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the vending machine has a soft key from the left. The side face is shaded, and there is a soft contact shadow under the feet. B: the crystal ball has one hard white window-shaped highlight. The sphere itself is barely shaded, and a symmetric radial glow sits behind it. The gold stand gets the same light from the front (light_bias 0.204, near the bottom of the real range).",
+   "fix": "Light the ball from one side. Darken the far side of the glass sphere, replace the sharp white window highlight with a small soft one, and shade one side of the stand."
+  }
+ ],
+ "pattern": "Generated cards are lit from straight ahead with even light. Their hero objects turn to shadow the same amount on both sides, have weak cast shadows or none, and often sit in front of a centered radial glow. Some show odd extremes instead: one hard white window highlight, or a fire or glow lighting the object in place of a real key light. Real cards keep one clear key from the upper left, a distinctly darker shadow side, and soft contact shadows."
+}

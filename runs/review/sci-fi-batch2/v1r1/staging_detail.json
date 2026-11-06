@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both sit on the same quiet tone-on-tone ring field (category 1). A: the pink wristband fills the card on a diagonal, and its rim reaches close to the left and right edges. B: the planet is small and centred with a wide empty margin of rings on every side, the way the generated lessons leave more backdrop around the hero. B's background edge density (0.002) falls below the real range.",
+   "fix": "Draw the planet large and slightly off-centre, with its ring almost touching the left and right edges of the card, so little backdrop shows around it."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the seahorse floats in plain blue water with soft light rays (category 1), like the real jellyfish. B: the sandcastle stands on sand with sea and sky behind it (category 4). The bucket and spade are plausible partner objects for a sandcastle. Neither card shows an invented setting or busy clutter strong enough to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the satellite is small and sits in the middle of a green ray burst, with large empty ray areas above and below, so the hero takes up maybe a third of the card. B: the medal box is large and fills the card on blue rays, like the real mitt and camera cards.",
+   "fix": "Draw the satellite large, filling most of the card, with the solar panels almost touching both side edges and only a little ray backdrop showing."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the real computer card: it stands on a desk that the card's edge cuts off, with a plain orange wall behind. B: the rover sits fully inside the frame on a grey dust plain scattered with pebbles and rocks, under an orange-sky backdrop borrowed from A. That gives an invented ground with lots of small specks and no edge cropping.",
+   "fix": "Show the rover close up so the card's edges cut its wheels and its side. Put it on smooth plain grey ground with no pebbles or rocks."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the airplane is big, banking, and cut by the right and bottom edges, with clouds wrapping around it, like the real Ferris wheel card. B: the UFO is small and complete in the centre, with empty sky above and a cloud band below. It also adds glowing yellow lights along the rim.",
+   "fix": "Draw the flying saucer large and close, tilted, with one side cut off by the card edge, and clouds passing in front of and behind it."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both lie flat on wooden planks seen from above (category 3, flat object). A: the map fills the card and runs off the left edge, and the magnifier is a true partner object in use. B: the star-chart dish is a complete oval with a margin of plank on all sides, so it reads as a staged product shot rather than an object filling its surface.",
+   "fix": "Show the star chart close up from above so it fills the card and its rim runs off one or two edges of the card."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A is the real drum kit card: a plain stage disc under a soft spotlight, with a few large quiet shapes. B: the gate is fully framed between two brick pillars, with tiled path, lawn, hedges, trees and a distant garden behind. Many small bricks, tiles and leaves crowd the background (edge density 0.122, far above the real range).",
+   "fix": "Show the gate close up so the card edges cut off the pillars. Keep the background to a plain sky and one soft green hedge shape, and leave out the separate bricks, tiles and trees."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the helmet stands on a seamless purple field with no floor line, centred, with a soft shadow. B: the sneakers stand on a pale floor meeting an orange wall at a clear horizon, like the real sunscreen card's floor-and-wall staging. A's background detail (0.0057) is below the real range.",
+   "fix": "Put the helmet on a plain floor with a visible line where the floor meets a slightly darker back wall, both in shades of purple."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the control panel sits on a purple spaceship wall with a porthole showing a planet, a glowing light strip at the top, and seams and rivets along the bottom. These are invented setting details around the hero. B: the fan stands in a real corner, with a green curtain, a window and a plain orange wall, and the card edge cuts off its stand. That matches the real air-conditioner card.",
+   "fix": "Show the control panel mounted on a plain smooth wall in one soft colour, with no window, light strip or rivets around it."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both are category 2: the object stands on a plain floor in the backdrop's colour. A: the vending machine is large and fills most of the card height. B: the flask is smaller and sits low, with a big empty pink area above it. B's background numbers (0.0051, 0.007) fall below the real range.",
+   "fix": "Draw the flask larger so it fills most of the card height, standing on a pink floor with a slightly darker back wall and a gentle light pool behind it."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the rocket stands whole and centred on a large empty concrete plaza, with a grass strip and a sky band behind. Most of the card is bare paving, like the generated lighthouse's full-object framing. B: the coaster cars are close up on a looping track that the card edges cut, with hills and clouds behind, so it sits exactly where it is used.",
+   "fix": "Show the rocket close up so the card edges cut off its nose or fins. Stand it on a launch pad with only a hint of sky behind it, and no wide empty paving."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the hiker and rooster are close up and cut off at the bottom, on a desert road that leads into the distance. B: the cow and rooster in spacesuits are fully framed on a meadow, with an invented UFO and its glowing light beam hovering in the sky above. That is an extra prop and a sparkle effect that the subject does not name.",
+   "fix": "Remove the flying saucer and light beam. Frame the cow and rooster close, cut off at the knees by the bottom edge, with a plain meadow and sky behind them."
+  }
+ ],
+ "pattern": "The generated cards show the whole object, centred, with room around it. Real cards push the object close and let the card edge cut it (lighthouse, Ferris wheel, desk). The generator also invents setting clutter and props the subject does not name, such as an island with a lifebuoy, a porthole, rivets and a light strip, pebble-strewn ground, or a UFO with a light beam. Real environments use a few large, quiet shapes."
+}

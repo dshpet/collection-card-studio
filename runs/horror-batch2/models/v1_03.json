@@ -1,0 +1,45 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "loose": [
+   {
+    "parts": 1,
+    "kinds": [
+     "cone"
+    ],
+    "at": [
+     -0.12,
+     -0.13,
+     0.12
+    ],
+    "size": [
+     0.07,
+     0.07,
+     0.1
+    ]
+   }
+  ],
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The flame cone at (-0.12, -0.13) floats. Its base is at z = 0.07, outside the glowing core (horizontal reach about 0.12 from the centre) and on no log. The other flame cones also stand away from the core and the logs. All flames now rise from the top of the glowing core, their bases sunk into it, and they reach up toward the pot's bottom.",
+   "Some flames stood out past the pot's footprint and read as loose yellow spikes on the floor. They are now grouped under the pot, between the legs."
+  ]
+ },
+ {
+  "round": 2,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The camera is too low (11°), so the green potion is seen edge-on. Only the tops of the bubbles show above the rim, and the card doesn't read at once as a pot full of bubbling potion. Raise the elevation to 20°.",
+   "The pot sits too low on its legs: its bottom is at z = 0.16, so it covers the fire. The flame tips are tiny and hidden under the pot, and the fire reads as one glowing ball. Raise the pot on longer legs and give the fire visible flame tongues that rise toward the pot's bottom.",
+   "The fire core is a large, round, bright blob that takes over the fire. Make it a smaller, flatter bed of embers between the logs.",
+   "The pot's lathe profile has too few points, so the belly shows flat facet bands. Generate a smooth curve with many points."
+  ]
+ }
+]

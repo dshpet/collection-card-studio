@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the pink bracelet reads as soft matte rubber, with a gentle sheen along the top rim and slightly softened raised yellow icons, like the real cards. B: the planet and ring are one uniform plastic, with no gloss anywhere (gloss_share 0.0), razor-clean stripe edges and a hard rim on the ring. The material reads as modelling clay, not a body with its own surface.",
+   "fix": "soft painted planet surface with gentle sheen on the lit side, faint soft banding inside the stripes, ring slightly glossier than the planet, edges softly blended"
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the seahorse has soft painted spots and ridges with low-contrast transitions, close to the real cards' softness. B: the sandcastle carries an even, crisp sand-grain stipple over every surface, plus a sharply cut brick pattern on the towers. This is the over-sharp micro texture the lessons show on generated cards (the glove's stitch dashes, the lighthouse brick speckle). Weak call: both are within the measured range.",
+   "fix": "smooth soft sand surfaces with only faint quiet grain, fewer carved brick lines, softer edges on the battlements"
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the satellite body is lacquered gold-chrome with hot white specular streaks (highlight_share 0.204, above the real range). Its four corner screws are evenly spaced and crisp, and the solar cells have a sharp fine grid. Everything is equally shiny. B: the ring box has quiet fine velvet on the red lid and a matte cream insert, and only the medal shines. That is a real mix of matte and gloss.",
+   "fix": "satin painted metal box instead of mirror chrome, soft broad highlight rather than hot white streaks, screws small and understated, solar panels soft matte blue"
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "A is the real computer card: soft, slightly blurred plastic and gentle gradients. B: the rover's white body is crisp plastic, its top plate is a hard brushed-metal slab, and the ground has photographic grey regolith grain with scattered pebbles. Highlights hit 0.28, far above the real range. The surface reads as a 3D render, not a painted card.",
+   "fix": "soft painted off-white plastic body with gentle shading, matte rubber tyres, smooth simple ground with only a few soft stones and no fine gravel noise"
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the airplane has softly painted white paint and windows with soft edges, the same softness as the real cards. B: the UFO is uniform brushed chrome with a ring of identical crisp rivets, glowing bulbs with hard bloom, and a glass dome with a sharp window highlight. The rivets and sharp-edged rings are the clean repeated detail the lessons mark as generated.",
+   "fix": "softer painted metal saucer with fewer, smaller rivets blended into the surface, lights as soft warm dots without hard glow halos"
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the paper map has soft folds and a painterly ocean, and the magnifier glass is soft. B: the star chart plate is clean matte navy with perfectly crisp thin white lines and dots, and its rim is an even satin. The disc has no surface variation at all: vector-crisp graphics on a lacquered tray.",
+   "fix": "softly painted dark-blue disc with slight surface shading and wear, star lines softer and slightly glowing, rim with gentle varied sheen"
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A is the real drum card: soft gold lugs and gently glossy blue shells. B: the gate's scrolls are evenly lacquered bronze, and the bricks have crisp dark outlines and a sharp speckle. Gloss_share is 0.333 and micro_texture is above the real range, with every metal curl equally shiny.",
+   "fix": "matte dark wrought-iron gate with only small soft highlights on the curls, bricks with soft edges and quiet surface, no outlined mortar lines"
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the helmet shell is one even satin plastic and the visor is a hard amber mirror with crisp reflection bands. The neck ring and hoses are toy-smooth, and the whole object is equally clean. B: the sneakers mix fine mesh dots, rubber sole and glossy laces, a real material mix, though somewhat noisy. Weak call on surface alone.",
+   "fix": "helmet shell as soft painted matte fabric-plastic with faint seams, visor glossy but with a soft blurred reflection, hoses with subtle ribbing"
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: on the spaceship control panel, twelve identical glossy yellow buttons each have the same crisp highlight. Screws sit evenly at the plate corners, and wall rivets are spaced in neat rows. The repeated, equally shiny, cleanly cut detail matches the generated lessons. B: the fan's soft blades and slightly blurred wire guard look like real card painting.",
+   "fix": "buttons with varied soft highlights, fewer corner screws, matte painted panel with gentle wear, soft edges on the screen bezel"
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the vending machine is soft and slightly blurry, with condensation dots on the glass and painted cans, like the real cards' softness. B: the flask glass is clean and lacquered with crisp bright edge lines, the green liquid has perfectly round glossy bubbles with hard highlights, and the cork has an even speckle. Micro texture is low (0.0089): a smooth CG-glass finish.",
+   "fix": "softer painted glass with gentle edge highlights, bubbles of varied size with soft highlights, cork with quiet matte texture"
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the rocket body is uniformly clean white with rings of crisp evenly spaced rivets at the nose seam and portholes, and glossy red fins all with the same sheen. The concrete ground has fine photographic tile grain. B: the roller-coaster cars are soft glossy plastic with gentle transitions, like the real cards.",
+   "fix": "softly painted rocket with gentle shading, few small understated rivets, fins satin rather than lacquered, smooth simple ground"
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the hiker's shirt, skin and backpack are soft and painterly, with matte fabric. B: the spacesuits are bright silver with hard specular streaks and fold lines across the whole body, plus crisp badges and buckles. Gloss_share is 0.244 and detail is 0.072, both well above the real range. The fabric reads as chrome.",
+   "fix": "spacesuits as soft matte white-grey fabric with gentle folds and only small sheen, badges simple and soft-edged"
+  }
+ ],
+ "pattern": "Generated cards show over-crisp, evenly repeated micro detail: rows of identical rivets and screws, identical glossy buttons, perfectly sharp thin lines, even sand or gravel stipple. They also have one uniform lacquered or chrome gloss with hot specular streaks across the whole object, so metal, fabric and glass read as the same polished CG material. Real cards are softer and slightly blurred, with gentle gradients, a mix of matte and gloss, and quiet, sparse fine detail."
+}

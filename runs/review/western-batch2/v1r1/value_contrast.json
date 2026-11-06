@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (campfire): middle key. Darks are spread over the kettle, tent shadow and stone ring, and the brightest shape is the flame at the centre. B (viewer): the whole top half and the right-hand city are near-white sky and buildings. The mid-grey viewer is darker than everything around it, so B has the brightest overall value (0.759) and the most negative hero gap (-0.246), both outside the real range.",
+   "fix": "Darken the sky and skyline to a mid blue so the viewer is the lightest, cleanest shape. Keep the darkest values at the eyepieces only."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (music player): crisp alternating light and mid rings that read as clean bands in the lens, with a near-white hero in the middle. B (harmonica): almost all the background is one flat dark value. In the lens its rings break into faint, blotchy arcs, and only the bright metal hero stands out. The mean (0.562) is below the real range. The real cards keep their background pattern as crisp graphic bands.",
+   "fix": "Lighten the purple background to a mid value and draw the concentric rings as clean, evenly spaced light and dark bands from edge to edge."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (hat): a light field fills most of the card. A lighter halo sits right behind the hat and the darker rays appear only at the corners, which is the same layout as the generated glove lessons. The mid-dark hat is set off mainly by hue. B (jacket): dark corners, lighter rays close to the hero and a near-white jacket, which matches the real glove's dark-field, light-ray layout.",
+   "fix": "Make the background rays alternate clearly between deep and bright blue all the way out to the corners, without a pale glow patch behind the hat. Light the hat's crown and brim so they read lighter than the rays behind them."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (stage): a dark truss and roof mass at the top, bright spotlights and light figures below. The darks group into one band. B (cowboy and pig): bright sky, a sunlit ground and bright card edges, with the mid-dark building and characters in the middle. That gives a reversed vignette (-0.106) outside the real range, and many small dark accents are scattered across the porch and window.",
+   "fix": "Keep the card edges at or below the brightness of the centre. Put the strongest light on the two characters and let the porch and building fall to a calm mid value."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (fruit plate): the wood fills the card as one even mid-grey with streaky grain. The hero is mostly middle values with many small white sparkles and droplets, so contrast is low (0.115) and broken up. B (seahorse): a clear diagonal light beam, darker corners, and an orange hero set off mainly by hue, which is the same kind of value structure as the real jellyfish card.",
+   "fix": "Make the plate and fruit one clearly lighter mass against a darker, calmer table. Cut the small white droplet highlights to a few."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (cactus): a flat pink field with a soft lighter halo directly behind the cactus and darker grey at the edges. The cactus is all middle values with little internal contrast, and rms contrast (0.092) is below the real range. B (vending machine): a dark body against a lighter field, with a crisp light glass panel inside it. Its local contrast is in range.",
+   "fix": "Remove the soft glow behind the cactus. Give the cactus a clear light side and a deep shadow side, and add a stronger dark under the flower and arms."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (gate): a balanced card with a mid sky, dark bricks and dark ironwork against a light path, and the gate as the main value contrast. B (saloon doors): the wooden wall makes a large mid-dark frame filled with streaky light and dark grain noise, and the bright doorway in the middle draws more attention than the doors. This matches the noisy dark wood table in the generated computer lessons.",
+   "fix": "Paint the wall planks as smooth, even mid-brown boards with little grain. Make the swinging doors the lightest, highest-contrast shape in the frame."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (wagon): the background diamonds and the dirt ground merge into one even mid-grey, so the only strong value step is the white canvas cover. This flattened background matches the generated camera lessons, where the bright rays were lost. B (popcorn cart): darker upper corners, a bright floor, and dark-to-white contrast inside the hero on the awning stripes and cart body.",
+   "fix": "Make the background diamonds alternate clearly between light and darker blue, and darken the ground under the wagon so the wheels and canvas stand out as the light shapes."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (horseshoe): the wood fills the frame as mid-dark planks with heavy scratchy light-and-dark grain all over, and the light metal hero sits in that noise. B (map): the hero is a large bright map against calmer mid wood planks, with clear value groups.",
+   "fix": "Make the wood planks smooth, with soft broad grain and no scratchy streaks, so the horseshoe is the only high-contrast shape."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (scarf): a strong spiral of light and mid blue, a deep red hero with a dark inner neck, and a bright badge accent. B (rope): almost the whole card is one light value. The light rope sits on a light background with only the small red bandana dark. The mean (0.796) is above the real range and contrast (0.077) is below it.",
+   "fix": "Darken the background waves to a deeper blue with clear light and dark bands. Give the rope coils darker shaded undersides so the hero stands out by value, not just by color."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (target booth): a dark booth interior and floor with a bright white target and a light bear in the middle, giving strong value grouping. B (towel): a flat mid-green field with a faint lighter blotch behind the towel. The towel's stripes break into speckled, noisy greys. Contrast (0.076) is well below the real range and the card has no real darks.",
+   "fix": "Use clearly alternating light and dark squares in the background. Shade the towel with a deep shadow under its edge and on its folds, and paint the stripes as smooth flat bands, not speckled texture."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (boxing gloves): the dark wall stripes and light wood floor form two clean value bands, and the gloves are mid values with crisp highlights. B (boots): very dark corners with a lighter oval glow directly behind the boots, which matches the generated glow-behind-hero pattern. The ground below is speckled noise. The overall key (0.517) is below the real range.",
+   "fix": "Remove the dark corners and the spotlight glow behind the boots. Light the purple stripes evenly to a mid-light value and make the ground a smooth, lighter tan."
+  }
+ ],
+ "pattern": "Generated cards most often give themselves away in the background. They set the hero against a soft glow or halo patch instead of crisp graphic rays, stripes or rings that run to the edges, and they let that background flatten into one mid value or break into blotches. They often add dark corners or a reversed edge brightness, and fill wood, dirt or texture with scratchy light-and-dark noise. Overall key and contrast also drift outside the real range: the image is either too light and flat or too dark."
+}

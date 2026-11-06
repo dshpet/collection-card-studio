@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the door is drawn straight on and centred, with the whole stone arch, the wall and the step slab all in frame. The step's top shows from a little above, but the wall bricks look flat, like a pasted-on layer, and planar_share is 0.54, above the real range. B: also straight on, but the ivy is cropped by the card edges and stands in front as a foreground layer, and the door fills the card the way real cards fill the frame.",
+   "fix": "Turn the door slightly to a three-quarter view, crop it so the arch runs past the top edge, and make the step and the wall share one eye height."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the hat floats with no ground. The brim is tilted so you see its underside, while the cone leans and is seen from the side, so the view is ambiguous. B: the jacket is in a steady three-quarter view, a little from above, with the sleeves and collar in one consistent view.",
+   "fix": "Show the hat from slightly above at a three-quarter angle, so the top of the brim shows as an even oval, and rest it on a surface or give it a clear shadow."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "A matches a real reference card exactly: the bike on the car rack, cropped, with layered road and hills. B: a high, almost top-down view of the pier and boat, with consistent foreshortening of the planks and the boat hull. Neither card shows a viewpoint inconsistency.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the pumpkin is centred and seen straight on at eye level, the whole object shows, and it sits on a table plane that tilts up more steeply than the pumpkin's own view (you see little of its top). That matches the generated lessons: full object, frontal and centred. A: the barrel is cropped by the deck rails and seen from slightly above, so the top-rim oval and the deck lines agree.",
+   "fix": "Raise the camera to a three-quarter view from above so the pumpkin's top and stem show, have the table boards run off at the same angle, and let the pumpkin fill and crop the frame."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a deep staged scene with three separate layers (the pumpkin in front, the ghost pig, the man in the rocking chair behind) on a porch floor seen from above, with the door and wall in the background. That is many more depth layers than real cards use. A: a close selfie crop with two characters and a simplified waterfall background.",
+   "fix": "Bring the ghost pig close to the camera so it fills the card, and drop the background figure to a simple, softened backdrop."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: binoculars seen from above at a three-quarter angle on floorboards; the boards converge to match. B: a low view up at the coaster loop, with the cars in front. Each card holds one view, and neither gives a clear reason to call it generated.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the ghost is centred and symmetric, seen straight on, and floats with no ground. The left hem curls so you see its underside while the body faces forward, which mixes two views. B: the jellyfish is seen at an angle from below, and the bell and tentacles agree with each other.",
+   "fix": "Turn the ghost into a three-quarter view with its sheet trailing to one side, and add a shadow or ground cue below it."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the bat is perfectly frontal and symmetric, with its wings spread flat across the card, so the wings show no foreshortening, and the clouds are only a flat backdrop. A: the balloons overlap one another in depth, at varied turns, and the strings converge.",
+   "fix": "Turn the bat about 30 degrees, with one wing nearer and larger and the far wing foreshortened behind its body."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the potion is seen at eye level, straight on and centred, with the whole flask on a wooden plank plane whose boards run off at an angle that doesn't match the frontal flask. A: the chest is seen from slightly above at a three-quarter angle, so the lid, the box and the sand floor share one view.",
+   "fix": "Raise the camera so you see down into the flask's neck and the top of the cork, and run the planks at the same three-quarter angle."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the bare tree is centred with its whole root flare on a domed hill, and a castle is inserted as a separate background layer, so there are several layers spread far apart. B: the topiary is frontal on its plinth, and the plinth's oval and the path agree on a camera slightly above. The evidence is weak for both.",
+   "fix": "Crop the tree tighter, so the branches run past the top edge, and soften the castle into a simple blurred backdrop."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a high camera with strongly converging floor tiles and a brick wall corner behind gives forced perspective. The cauldron's top opening is wide open (seen from high) while its legs and logs read nearer eye level. A: the cooler is a mild three-quarter view from above on the sand, cropped low.",
+   "fix": "Use a milder perspective: lower the camera to just above the cauldron's rim, flatten the floor tiles, and drop the wall corner."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the crystal ball is perfectly frontal, centred and symmetric at eye level, and the base's ovals barely open. That is the generated-lesson pattern. A: the vending machine is in a clear three-quarter view; its side face and its floor contact share one mild perspective.",
+   "fix": "Turn the stand to a three-quarter view from slightly above so the top of the base shows as an open oval and one claw sits in front of the ball."
+  }
+ ],
+ "pattern": "Generated cards put the whole object in the middle of the card, seen straight on and symmetric at eye level, often floating or on a ground plane at a different angle from the object. Real cards use a three-quarter turn from slightly above, crop the object at the card edges, and use few depth layers. Generated scenes also either stack extra staged depth layers or push into forced, high-angle perspective."
+}

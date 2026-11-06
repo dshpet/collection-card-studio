@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a high camera looks down on a whole campsite. The ring of stones, the logs, the kettle on its rock, the tent and the trees are all fully inside the frame, and the ground tilts up toward a far treeline. B: a close, low camera on the viewer. The pole runs off the bottom edge, the railing cuts across the frame, and the city behind is a simpler, pale layer, like the cropped close-ups in the real lighthouse and desk cards.",
+   "fix": "Lower the camera to just above the stones and move in close so the fire ring runs past the bottom and side edges. Show only one simple, pale band of trees behind, with no tent."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the harmonica floats centered, seen from a standard high three-quarter view. The lid is an even planar patch and the whole object sits inside the frame with nothing overlapping it. A: the player is tilted toward the viewer and its cable loops in front of the body, which gives a little more depth. The difference is weak.",
+   "fix": "Turn the harmonica more strongly to one side so one end comes toward the viewer and looks bigger, and lower the camera so less of the lid shows."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the hat floats at nearly eye level, turned to the side. The brim curls into one smooth rainbow on the normal map. B: the jacket is seen almost straight-on, with a mild three-quarter turn of the sleeves. Both views are plausible for real cards, so this is a weak call.",
+   "fix": "Tilt the camera a little higher so the top of the crown and the inside of the brim show, and let the near brim edge come toward the viewer."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the camera is pulled back to show the pig and the farmer full-length, standing on a dirt ground plane in front of a fully drawn saloon facade. Every layer is sharp. A: the camera is close and the figures are cut off at the chest by the bottom edge. Behind them, the stage and crowd are a separate, simpler layer.",
+   "fix": "Move the camera in so both characters are cut off at the waist by the bottom edge. Make the building behind simpler and softer."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the plate is seen from a consistent high three-quarter view, with the planks receding at the same angle. B: the seahorse is a clean side profile on a flat backdrop. Both camera setups appear on real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cactus is seen dead-on and symmetric at eye level. There is no visible top face, and its shadow falls sideways onto a floor you cannot see. Its planar share (0.005) is below the real range. B: the vending machine is turned three-quarters, showing the side and front, with its feet on a clear floor.",
+   "fix": "Turn the cactus slightly and raise the camera a little so the top of the stem and the arms show. Set it on a visible floor, with the shadow touching its base."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a flat, one-point view straight at a wall. The doorway is centered, the saloon doors hang inside it, and the floor planks run to a single point. It reads as a stage set with no turn. A: the gate is seen slightly from one side. The pillars overlap the wall, and the path curves back into a softer garden.",
+   "fix": "Turn the wall about 30 degrees so one door frame comes closer and the far frame shrinks. Let the floor boards run diagonally off the corner."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the wagon is seen from the side at a low three-quarter view. The whole cart sits inside the frame on a flat dirt plane with an empty backdrop, and only the shaft runs off the edge. B: the popcorn cart has a similar view, but the awning crowds the top edge and the paving recedes clearly. The difference is weak.",
+   "fix": "Move the camera closer and lower, so the front wheel looms large and is cut off by the bottom edge."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the map is strongly foreshortened, seen at about 45 degrees, but the magnifier ring on it is nearly a full circle, as if seen from above. Two views are mixed in one card. Its planar share (0.848) is far above the real maximum (0.667). A: the horseshoe and the planks share one tilted top-down view.",
+   "fix": "Draw the magnifier lens as a flattened oval matching the map's tilt, lying flat on the paper, with its handle receding along the same angle."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the open loop of the lasso faces the viewer as a full circle, while the coil next to it is seen almost edge-on, so the two parts do not share one view. The rope floats with no plane under it, and its planar share (0.002) is below the real range. A: the neckerchief is a symmetric, frontal view, consistent in itself.",
+   "fix": "Draw the whole lasso from one slightly high three-quarter view: the open loop as a tilted oval and the coil as stacked ovals at the same tilt."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: a frontal booth with the shelf top showing and the bear overlapping the target stand, a consistent eye-level view. B: the towel floats, seen from above. Both are plausible real setups.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the pair of boots stands whole and centered on a dirt plane, seen from a mid-height three-quarter view. Both boots are fully inside the frame, against an evenly striped back wall. This matches the generated lessons' pulled-back, fully contained object. A: the gloves fill the frame close up and are cut off by the left and right edges. The camera is low on the table, and the back wall is a simpler layer.",
+   "fix": "Move the camera in and lower so the boots fill the card and the near toe and heel are cut off by the frame edges. Make the back wall a simple, soft band."
+  }
+ ],
+ "pattern": "Generated cards pull the camera back so the whole object sits centered and fully inside the frame on a visible ground. Real cards crop the object at the edges with a closer, lower camera. Generated cards also tend toward dead-frontal or symmetric views, or mix two views in one object: a circular ring or loop facing the viewer on a foreshortened base. Their backgrounds are as detailed and sharp as the hero instead of a simpler, separate layer."
+}

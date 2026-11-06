@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the stone arch blocks are swollen into rounded pillows with soft blob corners, and the sill slab has puffed edges; the mask is mushy at the top-left block and the bottom-right. B: the door panels are flat with crisp rectangular bevels, the frame runs straight, and the wreath has a spiky leaf contour. B's metrics are out of range only because the mask caught just the wreath.",
+   "fix": "Cut the arch stones as flat-faced blocks with tight bevelled corners and straight joints. Make the threshold a thin flat slab with sharp edges."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the hat cone is a smooth inflated tube with a rubbery curled tip, and the brim is a perfect thick ellipse with no flat run. B: the jacket has a collar, pocket flaps, cuffs and a sash, every part in correct relation. The sleeves are puffy but the hem runs straight.",
+   "fix": "Make the hat brim thin and flat with a slightly uneven, wavy edge. Give the cone creased fabric folds and a narrower bent tip instead of a smooth inflated tube."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the bike has thin tubes and spokes and correct frame geometry, and it matches the real anchor card. B: the rowboat hull is one smooth pod with no keel line or plank steps, the dock post is a chunky cylinder, and the rope is a thick sausage.",
+   "fix": "Draw the rowboat hull with visible plank strakes and a pointed bow. Make the mooring rope thinner and the dock post narrower than the planks are wide."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the barrel has straight staves, and its metal hoops step out of the contour as crisp ledges. B: the pumpkin is an almost perfectly symmetric round blob with a smooth contour, a thick stubby stem and no lobe indentations at the outline.",
+   "fix": "Give the pumpkin an uneven, slightly lopsided outline with visible lobe dips at the top and sides. Make the stem thinner, twisted and dry."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the pig and cow characters are simple stacked masses. B: the ghost sheet flares into a puffy blob, the farmer's limbs are thick tubes, and the pig's trotters poke out stubby. The silhouette is cluttered with a second character and props.",
+   "fix": "Keep the ghost sheet thin with sharp hem points and fewer puffed folds. Focus on one character and drop the extra props."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the binocular barrels are fattened and shortened into toy cylinders. The eyepieces are stubby, the hinge bridge is thick, and the whole contour is one rounded lump (solidity 0.907). B: the coaster rails and ladder ties stay thin and the supports are straight; only the cars are rounded.",
+   "fix": "Make the binocular barrels longer and slimmer, with a narrow hinge bridge and distinct, thinner eyepieces. Use flat ends with tight bevelled rims."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the ghost sheet is a thick inflated blob. The arms are stubby pillow lobes, and the hem is a soft wavy sausage edge with no thin cloth tips. B: the jellyfish bell is a clean dome, the tentacles stay thin, and the oral arms are frilled.",
+   "fix": "Draw the ghost as a thin draped cloth with sharp pointed hem tips and narrow arm folds, not a puffed rounded mass."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the balloon bunch has round bodies with small knots, and the strings stay thin. B: the bat body is a round toy ball with oversized ears and stubby feet. The wing membranes have soft, thick scallops, with no thin finger bones reaching the wing tips.",
+   "fix": "Give the bat a smaller body, thin bony wing fingers running to sharp points, and a crisp scalloped membrane between them."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the chest has flat box faces, straight trim bands and a crisp-cornered lid, and the coins sit as separate parts. B: the potion bulb is a perfect sphere, the neck and cork are a chunky block stack, and the lip ring is swollen.",
+   "fix": "Make the bottle neck slimmer with a thin glass lip, and the cork a tapered plug. Draw the flask bulb as a slightly squat round glass shape, not a perfect inflated ball."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the bare tree has an extreme branch count and spidery forked twigs (corner_rate 9.25, thin_share 0.116, solidity 0.406, all outside the real range), and the roots spread like tentacles. B: the topiary is a compact stacked mass on a flat plinth with a straight-edged base.",
+   "fix": "Reduce the tree to fewer, thicker main limbs with simple forks. Keep the trunk and roots compact rather than a web of thin twisting twigs."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the cooler has a flat box body with straight sides and tight corners, and the lid is a flat panel. B: the cauldron legs and firewood logs are thick rounded sausages. The handles are fat rings, and the rim is a swollen torus.",
+   "fix": "Draw thin iron legs with flat feet, slimmer handle loops and a thin rolled rim. Make the logs split wood with flat cut ends."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the vending machine is a tall box with long straight sides, flat panels and small feet. B: the crystal ball is a perfect circle on a stubby stand. The prongs are blob nubs, and the base is a thick rounded puck.",
+   "fix": "Give the stand a slender stem with thin claw prongs gripping the ball. Make the base a flatter stepped disc with crisp edges."
+  }
+ ],
+ "pattern": "The generated cards are the horror props (witch hat, pumpkin, ghost, bat, potion, cauldron, crystal ball, bare tree). They show three things. Thin parts get thickened into sausages: cauldron legs, logs, stems, handles, prongs. Organic or cloth forms get inflated into smooth symmetric blobs with no sharp tips: the ghost hem, the pumpkin, the perfect-sphere flask and ball. In the lessons, the generators also add extra scene parts (rocks around the lighthouse, extra glove webbing) or overgrow detail (spidery branches). Real cards keep flat faces, tight corners and thin parts thin."
+}
