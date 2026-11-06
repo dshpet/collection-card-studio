@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both float on concentric-ring fields (category 1). A's green rings brighten to a hot yellow-green core right behind the hat brim, the lit halo the generated lessons show (glove, camera). B's blue rings stay even in tone, apart from a soft center.",
+   "fix": "Plain concentric rings in two close greens, even brightness, no bright glow behind the hat."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A puts the candlestick on a grey stone slab cutting diagonally across the lower left, against a flat cyan field (category 2). It is plausible, but the slab takes up almost half the card and has a fine speckled texture. B's vending machine stands on a seamless purple sweep with only a soft floor shadow. Weak evidence either way.",
+   "fix": "Plain smooth ledge across the bottom quarter only, no speckle texture, simple cyan backdrop."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the bottle sits on a wooden plank tabletop with wavy orange stripes behind it, and purple light spills onto the wood under it. B: the beach ball nearly fills the card on soft dimpled sand, with a very quiet background (edge density 0.003, below the real range). B is unusually quiet, but A's colored light spill is an added effect.",
+   "fix": "Bottle on plain wooden boards with a soft grey contact shadow, no purple glow on the table."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both put the object on a grass patch with tiny white daisies against concentric rings, staged almost identically. A's pink ring field brightens behind the cauldron, and the grass has more scattered blades and flowers in front. On staging alone, the two are nearly the same.",
+   "fix": "Plain grass patch with a few large tufts, no small flowers, even pink rings."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the bare tree stands on a meadow with low bushes. One orange leaf hangs alone off the top-right branch, an invented story touch. B: the topiary sits in a stone planter with a hedge wall and a curved path behind. That is a busier setting but quiet in shape.",
+   "fix": "Remove the single falling leaf; plain bare branches against the sky."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: behind the lion statue sits a busy park, with a leafy canopy at the top left, a row of conifers, a second tree at the top right, and a winding brick path (edge density 0.068). That is many objects for category 4. B: the bottle floats on a clean yellow sunburst.",
+   "fix": "Garden backdrop of two or three large soft shapes: one lawn, one blurred hedge, sky. No rows of trees, no winding path."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both float on sunbursts. B has many fine, narrow purple rays meeting at a glowing center right behind the pumpkin, like the dense rays in the generated glove lessons. Its background detail is 0.006, below the real range. A's green rays are similar but darker at the corners.",
+   "fix": "Fewer, wider purple rays of close tone, no bright glow behind the pumpkin."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the coaster car on a blue track is cropped by the card, with hills and clouds in the distance (category 4, large shapes). B: the scroll lies on a glossy blue ledge against a dark blue field (category 2). Both fit real staging.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the sheep lies on a pool float, with a ladder, tiled edge and dense tropical leaves behind (busy, edge density 0.1). B: the sheep in a ghost sheet comes with a second hero-sized prop, a grinning jack-o-lantern at the bottom right, plus motion squiggles near its hoof. That is invented story and prop load.",
+   "fix": "Remove the jack-o-lantern and motion lines; sheep alone on a plain lawn with soft bushes and sky."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the jellyfish swims in deep blue water with light shafts and a few bubbles. B: the bat floats on an orange sunburst with a hot glowing center right behind its body, the halo the generated lessons show.",
+   "fix": "Even orange sunburst with wide rays, no bright glow behind the bat."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the plate sits on a wooden tabletop shown at an angle, with water drops on the plate. B: the candy corn stands on a wooden plank shelf against a wall of blue vertical stripes. That is a two-material setup, but quiet. On this vector alone it is weak. B is chosen mainly because its stripes and plank pairing is less like the real single-surface cards than A.",
+   "fix": "Candy corn on one simple ledge with a plain tone-on-tone backdrop."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a full moon sits in a bright daytime blue sky above the house, an invented story element. Small daisies are scattered on the grass. B: the gate between brick pillars over a paved path is busy (edge density 0.122), but every element belongs to the gate scene.",
+   "fix": "Remove the moon; plain sky with a couple of soft clouds over a lawn."
+  }
+ ],
+ "pattern": "Generated cards add invented story details the object would not have: a moon in a daytime sky, a lone falling leaf, an extra jack-o-lantern, motion squiggles, tiny scattered daisies. They also put a bright glowing halo in the backdrop right behind the hero. Real backdrops keep an even tone and use a few large, quiet shapes."
+}

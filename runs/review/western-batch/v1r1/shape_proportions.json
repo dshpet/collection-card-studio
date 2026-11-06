@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the bandana is a flat cloth triangle with a thin knotted band and two thin flat ear-tips at the top, much like real cloth. B: the neckerchief collar is a fat round tube, and the two hanging tails are swollen, puffy lobes. The cloth reads as inflated rubber, not a thin scarf.",
+   "fix": "Draw the neckerchief as thin, flat fabric: a narrow folded band around the neck and two flat, tapering tails with crisp edges and creases. No puffed tube collar."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the coaster cars are oversized, chunky toy tubs stacked up the loop and nearly as wide as the track is tall. The track rails and supports are thick, and solidity (0.495) is below the real range. B: the wagon box has straight plank runs, the canvas cover is a plain arc, and the wheels have thin, separate spokes in true proportion.",
+   "fix": "Draw smaller, lower coaster cars that sit inside the track width, on thin rails with thin cross-ties and slender support legs."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cactus arms are short, sausage-like tubes with blob ends, and the flower is a separate puffed cap. Corner rate (6.71) is above the real range because of the spine nubs. B: the binoculars have two simple straight barrels and a bridge in the expected relation. They are chunky but plausible. This is a weak call.",
+   "fix": "Draw the saguaro with a tall, straight, ribbed trunk and narrower arms that bend up at a right angle with flat-ish tops, plus a small flower."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "B is the real lighthouse from the lessons: a straight tapered tower, a thin gallery rail and a dome. A: the windmill sits on a thick, squat masonry pylon instead of a lattice tower, and its blade wheel is oversized against that base. The tail vane is a flat slab on a thick rod.",
+   "fix": "Put the windmill wheel on a slender, open steel-lattice tower with thin legs, and keep the wheel in scale with the tower."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the lasso is two disconnected loops, a small coil with a fat red wrap and a big thin ring, joined by a short rope strand. The parts don't relate the way a coiled rope does, and solidity (0.314) is far below the real range. B: the cap board is flat with crisp corners, and the skull cap and thin tassel cord are in the right relation.",
+   "fix": "Draw one coiled lasso: several stacked rope loops held by a single wrap, with the running noose loop coming off it through a small honda knot. Keep the rope thickness even."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the cowboy, pot and pig form a coherent grounded scene with readable separate parts. B: the pig and cow are fused into one mass with raised stubby arms and hand-like hooves. Corner rate (9.311) is above the real range because of the cut-off edges.",
+   "fix": "Draw the pig and cow as separate figures with animal proportions: short legs and hooves, not raised human arms with hands."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the jacket sleeves are short and fat with puffed cuffs, the collar is a swollen roll, and the body looks inflated. B: the cowboy hat's crown and curled brim are simple but in true proportion. This is a weak call.",
+   "fix": "Draw the shirt with full-length, slimmer sleeves and thin flat cuffs and a flat folded collar, with straight seams on the body panels."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the mesa has a flat top, near-vertical walls and a sloping talus, which is true butte proportion. B: the topiary is a stack of swollen balls rather than a spiral ribbon cut into a cone, and the outline is uniformly bumpy. Both are below the real straight_share range, so this is a weak call.",
+   "fix": "Draw the topiary as a tapered cone with a narrow spiral groove wound around it, a tight cut edge and a straight-sided planter."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the popcorn cart has flat panels, thin canopy posts and spoked wheels in plausible relation. B: the horseshoe is a thick, pillow-swollen band with blob ends. Corner rate is 0.0, below the real range, and gold studs replace the nail holes.",
+   "fix": "Draw a flatter, thinner horseshoe with a flat top face, crisp squared edges and slightly flared heel ends, with recessed nail holes in a groove."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the sneakers are stubby and swollen with oversized puffy soles, and solidity (0.903) is high. They look like toy shoes. B: the boot has a true tall shaft, pull straps, a stacked heel and a pointed toe in real proportion.",
+   "fix": "Draw the sneakers longer and lower, with a thinner sole, a defined toe cap and a flat, straight outsole edge."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the popsicle has a straight rectangular bar and a thin stick in true proportion. B: the box lid and base are pillowy with soft, blob-like rounded corners, and a coin medal sits in a ring box, which is an odd pairing of parts.",
+   "fix": "Draw the jewelry box with flat lid and base faces, tight beveled corners and straight edges."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the bird feeder has flat planks, straight roof runs and a thin rope, as a real card would. B: the motel sign boards have thick, rounded, slightly bulging rims. The posts are fine. This is a weak call.",
+   "fix": "Draw the sign boards as flat panels with thin rims, tight corners and straight edges on straight posts."
+  }
+ ],
+ "pattern": "Generated cards give themselves away by inflated, toy-like volume: cloth, metal and boards swollen into pillows, soft blob corners, and stubby, fat parts such as oversized soles, puffed sleeves, chunky coaster cars and thick horseshoes. Parts are also related wrongly or added: extra bases, odd item pairings and disconnected loops. Real cards keep flat faces, tight bevels, thin straps and rails, and true proportions."
+}

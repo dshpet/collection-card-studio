@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: polka-dot bandana dead-center, front-on and mirror-symmetric, floating with a wide even gap on all sides (margin 0.119, above the real maximum of 0.116). B: neckerchief is also front-on, but it fills more of the height (0.833) and sits closer to the edges, closer to the real cards' tight fill.",
+   "fix": "Draw the bandana larger and turned three-quarter, tilted about 15 degrees, with its knot and tips reaching close to the card edges."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: coaster cars run diagonally up a loop, and the track is cropped by the top, left and bottom edges, so the hero reads as dynamic. B: covered wagon sits whole and level in the middle band, with a flat horizon behind it, and only the tongue leaves the frame on the right. A lot of flat dirt foreground goes unused.",
+   "fix": "Push in on the wagon so its wheels and canvas top run off the bottom and side edges. Tilt the camera slightly and remove the empty dirt foreground."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: cactus is frontal, centered and symmetric, standing upright with both arms mirrored. It is narrow (box_width 0.64, below the real minimum of 0.661), with empty orange stripes on both sides. B: binoculars lie on a diagonal in three-quarter view and fill the width of the card, like the real tilted heroes (spyglass, bottle).",
+   "fix": "Turn the cactus three-quarter, lean it slightly, and scale it up so its arms nearly touch the left and right edges, with less empty sand below."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "B is the real lighthouse card from the lessons: the tower is large, cropped by the bottom edge, with its lamp in the upper third. A copies that crop, but the windmill wheel is a frontal disc stuck in the upper-left with a separate red vane. The small stone tower leaves the right half as empty sky and grass, so the hero splits into two weights.",
+   "fix": "Draw the windmill bigger and closer, with the wheel turned three-quarter and filling the upper card. Let the tower run off the bottom edge, and keep the vane tucked close to the wheel."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: lasso is thin rope loops scattered diagonally, covering only 0.099 of the card, far below the real minimum of 0.198. Most of the card is purple rings, and at thumbnail size it reads as two circles rather than a named object. B: the grad cap is a solid mass, tilted three-quarter, with its tassel to the right. It reads instantly.",
+   "fix": "Draw the lasso as a thick, tightly coiled rope bundle filling the center of the card, with one loop swinging out toward an edge. Make the rope chunky so it reads as a solid shape at small size."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: wide scene with no clear hero. The cowboy, steaming pot, fire and pig all compete across the card, and a cactus and mesas add more detail at the edges. B: two characters are cropped at the waist in a tight shot, with faces in the upper middle. They dominate, and the stage behind is clearly background.",
+   "fix": "Push in on one hero, the bean pot or the cowboy, and crop the others at the card edges. Remove the cactus and mesas from the corners."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: jacket is turned slightly, with the sash on a diagonal and the sleeves reaching toward both edges. B: cowboy hat is dead-frontal and perfectly symmetric, a flat side-on brim floating mid-card with a large empty blue band below. Its height is only 0.481, below the real minimum of 0.581.",
+   "fix": "Show the hat from a three-quarter top view, tilted, so the crown and the inside of the brim are visible. Scale it up to fill most of the card height."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: mesa is centered, frontal and symmetric, a plain landscape block with small desert bushes in the foreground and distant mesas on both sides. Its silhouette is centered and static. B: topiary is also centered, but it is a single stacked object on a plinth, with a clear figure against the hedge.",
+   "fix": "Frame the mesa from a low three-quarter angle and push it off-center, cropping one side at the edge. Remove the scattered foreground bushes."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: popcorn cart is three-quarter, fills the card top to bottom and is slightly cropped, like the real heroes. B: horseshoe is shown flat and frontal, a symmetric U centered on a pink backdrop with a flat sand floor. It sits inside an even margin (0.1, above the real maximum of 0.098) and has a low-angle, sticker-like read.",
+   "fix": "Tilt the horseshoe in three-quarter view, leaning into the sand, and enlarge it until its arms nearly reach the top and side edges."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: sneakers are a three-quarter pair in the lower half, with a lot of empty orange wall above (height 0.487, below the real minimum of 0.551). B: boot is a pure side profile standing upright and centered on a shelf, symmetric in its framing, with even green space on both sides. Both are weak, but B's flat catalog profile matches the generated lessons.",
+   "fix": "Turn the boot three-quarter toward the viewer and tilt it slightly. Enlarge it so the toe and shaft come close to the card edges."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: popsicle is on a strong diagonal and fills the card, like the real water-bottle card. B: medal box is three-quarter, with the lid open in the upper area and the box filling the card. Both match the real framing ranges and are read instantly.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: bird feeder hangs centered on a trunk, cropped at the top by the rope, and is the clear first read. B: motel sign stack is pushed to the right third and is narrow (width 0.458, below the real minimum of 0.524). The motel building fills the left half and competes for attention, so at thumbnail size the hero is small and the scene dilutes it.",
+   "fix": "Make the motel sign the large centered hero, filling most of the card height. Reduce the building to a soft, dim shape cropped at one edge."
+  }
+ ],
+ "pattern": "Generated cards show the object front-on, centered and symmetric, kept whole inside the frame with an even margin and no tilt. Examples: the cactus, cowboy hat, horseshoe and boot. Real cards tilt the object, turn it three-quarter, crop it at an edge and let it fill the card. Generated cards also scatter extra props or scenery that compete with the hero (the chili scene, motel building, windmill vane), or use thin, low-occupancy shapes (the lasso)."
+}

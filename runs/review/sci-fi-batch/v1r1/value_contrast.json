@@ -1,0 +1,89 @@
+{
+ "pattern": "On value, the generated sci-fi cards show three tells. (1) Grey metal or white heroes sit on a mid-grey ground with matching value: the moon dust in p01B and p08B, the concrete floor in p02B, the steel floor in p11B. The hero separates by hue or by a black shadow under it, not by a planned light-against-dark mass. On the real cards the background's value bands (rays, stripes) frame the hero. (2) Hard black accents get scattered across small parts: black tyres, a black screen, a black base slab, black cast shadows. The real cards keep one large dark mass inside the hero and let the shading roll off softly. (3) The key goes to an extreme. Some cards are near-flat and high-key (the meteor in p09B, mean 0.83 and RMS 0.055), and some are dark with a hero much lighter than the background (the UFO in p07B, the helmet in p04B). The helmet's lightness gap of +0.15 is above the real range of -0.29 to 0.13. The real cards keep the hero within a moderate step of a mid-to-light background.",
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (bike on car): the sky in the upper left is light, and the dark car body and black tyres fill the lower right. The value design is strong and runs diagonally. Its vignette and RMS fall outside the real range, but the grouping is deliberate. B (moon rover): the ground and sky are flat mid-grey, and the white box body barely separates from the light dust. All the dark value goes into evenly spread black tyres and the black window strip. There is no light or dark framing behind the hero.",
+   "fix": "Put a softly darker backdrop or radial light band behind the rover so the white body stands against a darker middle tone. Lift the tyres from pure black to dark grey with soft highlights. Let the ground fade lighter toward the edges."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (binoculars): bright wood planks form one light group, and the dark green barrels and black eyecups make one compact dark mass. The separation is clear. B (rocket): a large flat mid-grey concrete floor fills two-thirds of the card. The white body is the only light shape, and the darks are thin slivers on the fins and a black nozzle. The low RMS (0.112) and high mean put B outside the real range: flat and washed.",
+   "fix": "Replace the grey concrete with a warm backdrop that has darker and lighter bands. Shade the fins and nose cone with a clear darker side so the rocket has its own value range."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (vending machine): one big dark blue body against a mid-tone magenta background, with a lit glass panel as the light group inside. The value structure is clean. B (control console): grey metal body on a white table against a mid-blue wall. Hero and table are close in value, and the darkest accents are a black screen and a black base slab. Its lightness gap of -0.21 comes from those scattered blacks rather than one mass.",
+   "fix": "Set the grey console against a darker, saturated background with a soft glow behind it. Give the metal box one clear shadow side instead of a pure black base and screen."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (scout jacket): a mid-tone beige jacket with a dark green sash as the anchor dark, on a green ray background of similar value. Separation is mostly by hue, as on the real cards. B (space helmet): a near-white shell and a bright gold visor on a dark magenta background. The hero is far lighter than the background (gap +0.151, above the real maximum of 0.128), and the vignette is strong.",
+   "fix": "Brighten the pink background toward a lighter mid tone with paler rays behind the helmet. Add a soft mid-grey shadow side to the white shell so it is not uniformly near-white."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (beach man and pig): high-key sand, sky and water, with the man's hair and moustache as the main darks. The mean is above the real range, but the key is consistent. B (astronaut in cockpit): the corners and cockpit frame are darker, the vignette (0.132) is above the real range, and dark seat and boot masses are scattered in the lower half. The values in the porthole sky and the cockpit interior compete.",
+   "fix": "Brighten the cockpit walls and corners so the card doesn't darken at the edges. Make the window sky the single light area behind the character and the pig."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (ringed planet): concentric cyan rings of nearly the same value, with an orange sphere and a pale ring that barely step away from them. The card is near-uniform and high-key, with mean 0.784 and RMS 0.068, below the real minimum of 0.085. B (neck pillow): a dark blue hero against a light pink background, with a clear dark shadow side. Strong figure–ground separation by value.",
+   "fix": "Darken the background rings toward the edges and put a brighter glow directly behind the planet. Give the sphere a deeper shadow side under the ring so the hero has a real dark group."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (submarine): a bright yellow body against a dark green ray background. The hero is far lighter than the background, but the rays give a mid-tone halo behind it. B (UFO): a thin grey saucer on a dark purple background. The hero is a light rim with a mid-grey interior, and the magenta glow sits under the saucer rather than framing it. Both fall outside the real key, but B's hero is a fragmented ring of small highlights with no solid light mass.",
+   "fix": "Lighten the purple background toward a mid tone with clear lighter rays behind the saucer. Give the saucer disc a solid light top face and one dark underside band."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "A is the real lighthouse from the lessons: blue sky mid tone, white clouds as the light group, and the red band and gallery as the dark accents. B (moon habitat): mid-grey dust covers most of the card, and the white dome sits only a step above it. The darks are a crater rim and a grey tube, and a thin orange sky band at the top is the only colour key. The value groups are flat and evenly mid-grey.",
+   "fix": "Set the white dome against a darker, cleaner background with bright sky behind it. Reduce the expanse of grey ground, and give the dome one clear shadow side and a soft contact shadow."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A (scout scarf): a dark red scarf as one big dark mass on a mid-blue swirl, with the bright badge as the focal light. Clean value grouping. B (meteor): almost the whole card sits in one light value. The yellow wavy background, the pale blue tail and the rock all merge, with mean 0.831 above the real range and RMS 0.055 well below the real minimum. There is no dark group at all.",
+   "fix": "Make the background a deeper orange with darker wave bands at the edges. Shade the rock with a strong dark underside and craters, and keep only the tail light."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "A (tote bag): a light yellow bag on dark purple stripes, with a lighter floor plane. The hero is lighter than the background and its shading is gentle. B (wall clock): this matches the real clock in the reference sheet, with a white face, an orange rim and light green stripes. Both sit within the real ranges, and neither shows a value tell.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (bumper car): a green body with a dark black bumper as the anchor dark, and an orange radial background lighter than the hero. The dark base is a deliberate grounding mass. B (glass stasis tube): the hero is a transparent cylinder with almost no mass of its own. The values come from the background seen through it, and only the steel cap and base read. Hero and background are nearly the same value (gap -0.03), so figure–ground separation fails.",
+   "fix": "Give the tube a tinted, partly opaque glass with a glowing interior. Put a darker background band behind it so the cylinder reads as one light shape, and add a solid dark base ring."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A (polaroid): a white card on a dark crimson ray background, with a black guitar silhouette as the central dark. The value design is strong and deliberate. B (birdhouse): the dark tree trunk and foliage frame a mid-tone birdhouse, with a light park background behind it. RMS is slightly above the real range, but the grouping is coherent. Neither card shows the generated value pattern.",
+   "fix": ""
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "loose": [],
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The wheel (0.88 across) is almost as wide as the 1.0-tall tower is high, so the card reads as a big fan on a short stubby pedestal instead of a farm windmill on a tall tower. A real windmill wheel is about a quarter to a third of the tower's height.",
+   "The tower is two stacked blocks with an open seam and a ledge where they meet. It looks like two parts instead of one tapering tower. The fix uses one continuous taper with a band covering the joint.",
+   "The red tail vane, one of the card's hero colors, is almost entirely hidden behind the wheel. Only a small red sliver shows. The head housing and the boom are hidden too. At azimuth 28, with a wheel this large, the tail does not read.",
+   "The blade-widening warp uses fixed constants (0.16, 0.32) instead of the blade's real length, so the blade taper is off."
+  ]
+ },
+ {
+  "round": 2,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The tail vane is too small. At 0.28 by 0.2 it reads as a small red flag mostly hidden behind the wheel. On a farm windmill the vane is a large panel on a long boom, and the brief names it as one of the three main parts. Fix: make the vane bigger and lengthen the boom so the vane sits clear of the wheel.",
+   "The back hills render as a dark, flat-topped olive wall right behind the wheel. They squeeze the sky into a thin strip and look darker than the golden prairie. Fix: make the hills lower, lighter in color and farther back, so they read as soft, distant shapes."
+  ]
+ }
+]

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the witch hat sits dead-center and almost front-on. The cone points straight up and the brim is a flat, even ellipse with roughly equal green margins left and right. B: the mortarboard is turned three-quarters and tilted, and the tassel hangs off the right side, so the card reads with some movement, like the real headphone and sunscreen cards. Both scales are inside the real range. The only signal is A's static, centered pose, so this is a weak call.",
+   "fix": "Turn the witch hat three-quarters and tilt the brim about 15 degrees. Let the tip of the cone lean toward the upper-right corner. Make the hat larger so the brim nearly touches both side edges."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: a thin candlestick fills about 10% of the card (subject_area 0.099, below the real minimum of 0.264). It stands in the lower-left half on a big grey tabletop, and the empty cyan wall and the table plane take most of the card. At thumbnail size the hero is a thin sliver. B: the vending machine fills the height of the card with a firm silhouette, as the real cards do.",
+   "fix": "Draw the brass candlestick much larger and closer, filling about two-thirds of the card height. Let the dish base nearly reach both side edges. Show only a narrow strip of tabletop, and keep the flame below the top edge with little empty wall around it."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the potion bottle stands small in the lower middle (box_width 0.626, below the real range). There is a wide band of wood table and a wavy wall above it, with even empty margins on all sides. B: the beach ball is large and close, fills the card nearly edge to edge, and sits at an angle, matching the real cards' scale.",
+   "fix": "Bring the potion bottle closer so the round flask fills most of the card width. Tilt the bottle slightly toward the viewer, and crop away most of the table and back wall."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cauldron is shown straight from the front and centered left to right, with two legs set evenly on the grass. The bubbling top is a level ellipse and the handles stick out on both sides. This is the head-on, centered staging of the generated computer and lighthouse lesson cards. B: the lawnmower is turned three-quarters and its handle rises diagonally into the upper right, giving the card a directional read.",
+   "fix": "Turn the cauldron three-quarters and view it slightly from above, so the green brew inside shows as a tilted oval. Place it a little off-center and let one handle come toward the viewer."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the dead tree is a fully frontal, symmetric silhouette planted dead-center. The roots flare evenly on the grass and the branches spread to fill the top. A single orange leaf in the top-right is a small second point of interest. B: the topiary is also centered, with a garden path and hedge band behind it. Both are within the measured ranges, so this is a weak lean based on A's rigid symmetry.",
+   "fix": "Show the tree trunk turned slightly and leaning, larger in frame, with the roots cut off by the bottom edge. Remove the stray falling leaf."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the lion statue fills the lower two-thirds of the card at three-quarter view. A busy park with a path and trees sits behind it, but the white statue still separates clearly. B: the water bottle floats diagonally on a sunburst with a clear single read, like the real fan and clock cards. Neither framing breaks from the real cards in a way I can call.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the jack-o'-lantern is perfectly frontal and symmetric, centered with the stem on the center line. Its margins are even and wider than the real cards' (margin_min 0.133, above the 0.116 maximum), and it floats static on a purple sunburst. A: the scout jacket is angled three-quarters, and the sash runs diagonally across it, giving direction, like the real cards' tilted heroes.",
+   "fix": "Turn the pumpkin three-quarters and tilt it slightly. Make it larger so it nearly touches the left and bottom edges, and let the stem lean toward a corner."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the rolled diploma lies flat and low on a blue shelf, and the hero is a short horizontal band (box_height 0.463, below the real minimum of 0.527). The upper half of the card is empty dark-blue gradient. A: the coaster cars and track loop fill the card and bleed off the top and bottom edges, an edge-cropping the real fan and lighthouse cards also use.",
+   "fix": "Stand the diploma scroll diagonally, rising from the lower-left to the upper-right, and make it fill most of the card height. Remove the empty space above it."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the ghost-costume sheep shares the card with a large glowing jack-o'-lantern in the lower right. At thumbnail size the bright orange pumpkin pulls the eye away from the white sheep, so there are two competing focal points. A: the floating sheep is the only focus, and the yellow float leads diagonally up to its face.",
+   "fix": "Remove the pumpkin or shrink it to a small, dim prop half-hidden behind the sheep's leg. Keep the ghost-sheet sheep as the only bright, central figure."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the bat is spread-winged, mirror-symmetric and dead-center, a flat horizontal band across the middle (box_height 0.394, well below the real minimum of 0.581). The body is a small brown blob, and the sunburst fills the top and bottom thirds. A: the jellyfish drifts diagonally, with the bell in the upper left and the tentacles trailing toward the lower right, filling the card height.",
+   "fix": "Draw the bat larger and closer, in a three-quarter swooping pose with one wing raised high and one low, so the card is filled top to bottom. Keep the head and body big enough to read at thumbnail size."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the candy corn is a frontal, symmetric cone standing dead-center, narrow and small (box_width 0.563, below the real minimum of 0.661). It has wide side margins (margin_min 0.16, above the 0.098 maximum) on a striped wall and table. A: the fruit plate is seen from above at an angle and spreads across most of the card width.",
+   "fix": "Draw the candy corn much larger, tipped on its side or tilted about 20 degrees with the white tip pointing toward the upper-right corner. Let it fill most of the card width."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the small purple house sits centered in an open grass field, with even margins all round. The glowing moon in the top-right corner is a second bright point that competes with the hero. B: the gate is wide-framed, but its brick pillars run into the side edges, cropped the way the real lighthouse and fan cards are, and the path leads straight to the gate. Both cards have margins above the real range, and B's smaller measured area weakens the call.",
+   "fix": "Bring the house much closer so it fills about three-quarters of the card, with the tower tip near the top edge. Crop the grass, and remove the moon or tuck it behind the roof."
+  }
+ ],
+ "pattern": "Generated cards often show the hero head-on, mirror-symmetric and dead-center, standing still with even margins all round. Real cards tilt or turn the hero and let it fill the card or run off an edge. Generated heroes also come out too small or too flat, either a thin sliver or a wide low band, with large empty background. Some add a second bright prop, like a pumpkin or a moon, that competes with the hero at thumbnail size."
+}

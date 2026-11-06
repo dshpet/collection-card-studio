@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A (bike on car): a warm key light comes from the left. The frame tubes turn smoothly into gentle cool shadow, and the shadow side stays open. B (moon rover): the box body has flat faces that are evenly lit and a hard dark cast shadow pooled under it. The wheels get the same uniform falloff. Light bias is 1.50, far outside the real range of 0.19 to 0.64, and form contrast is 0.72, above the real range.",
+   "fix": "Light the rover from the upper left with one soft key. Let the right faces of the body fall into a cool blue-grey shadow with a gradual turn at the edges. Make the ground shadow lighter and softer."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (binoculars): a strong key from the upper right. The barrels show a clear light side, a core shadow and a soft shadow on the wood floor, like the real camera and glove cards. B (rocket): the white body is lit almost flat from the front. The cone and fins show almost no core shadow, and a hard photographic shadow falls on a realistic concrete floor.",
+   "fix": "Give the rocket body a clear lit side and a cool shadow side with a visible core shadow down the cylinder. Use a soft, stylized contact shadow, not a photographic hard shadow on concrete."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (vending machine): the key comes from the front left, the right side panel steps down into cooler shadow and a soft contact shadow sits at the feet. B (console box): broad matte grey faces with an even metallic sheen. The front and side faces are nearly the same value and the edges are soft and rubbery, so the box reads as lit from everywhere. Shading range is 0.82, above the real maximum of 0.79.",
+   "fix": "Light the console from the upper left so the front face is clearly brighter than the right side face. Add a cool core shadow where the faces meet and a darker contact shadow under the base."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (scout jacket): the light comes from the upper right. The folds of the sleeves and the sash turn gradually and the lower-left body sinks into soft shadow. B (space helmet): lit from the front and evenly round. The visor carries one large glossy white hot spot, the shell is nearly the same brightness everywhere and there is little core shadow on the dome.",
+   "fix": "Shift the helmet's key light to one side. Let the far side of the dome fall into a cool shadow. Make the visor highlight a smaller, softer streak instead of a large glossy blob."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (beach man): warm sunlight from the upper left with soft core shadows on the arms, torso and pig, and the wet lower body in shadow. B (astronaut man): the light is spread out by the glowing cabin fixtures. Most of the figure gets even pinkish fill, the cyan glows act as extra lights and the shadow side of the legs and body is shallow.",
+   "fix": "Use one key light from the window side on the astronaut. Let the side of the body away from the window and the seat go into deeper cool shadow, and keep the cabin glows as small accents."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (planet): a smooth, clean, CG-looking falloff on the sphere from the upper left. There is a broad sheen, the ring has the same flat even light and the shading is almost textbook-clean. B (neck pillow): soft frontal light with many small fold shadows and a gentle darker side on the right. Both are plausible, and the evidence is weak.",
+   "fix": "Make the planet's shading less airbrushed: a clear core shadow band on the lower right of the sphere, the ring casting a soft shadow onto the planet body and a cooler bounce on the dark edge."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (submarine): a key from the upper left, a glossy hull turning gradually to a darker lower right and a clear core shadow under the belly. B (UFO): the metal disc is evenly bright with brushed streaks. The orange beads and the magenta under-glow light it from many directions and there is no clear shadow side on the rim or dome.",
+   "fix": "Light the saucer from one upper-left key. Darken the far and lower edge of the disc into a cool shadow and keep the bead glows small, without lighting the hull."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "A (lighthouse): matches the real lesson card, with a key from the left, a darker cool right side on the tower and soft modeling. B (moon igloo): the dome and the tube are lit almost evenly. Hard dark cast shadows lie on a photographic ground and the crater rims are sharp, with no warm sunset light on the hero despite the orange sky. Light bias is 1.38, far above the real range.",
+   "fix": "Light the igloo from the low warm sunset side. Give the dome a cool shadowed side and softer, lighter shadows on the ground in a painted style, not hard photographic ones."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (scarf): a soft key from above. The fabric folds turn smoothly and the knot and tails shade gently into cool shadow. B (meteor): the rock sphere is evenly lit with a glowing rim on all sides. The craters are shaded from inconsistent directions, the trail glows and there is no clear light side versus shadow side.",
+   "fix": "Light the meteor rock from the front, with the trail behind it. Keep its trailing side in deep shadow with craters shaded from one consistent direction. Keep the rim glow only on the leading edge."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (beach bag): a soft left key, the canvas bulges turn gently and there is a soft contact shadow on the floor. Form contrast is low, but it reads as fabric. B (wall clock): head-on and evenly lit. The orange rim has almost the same brightness all the way round, and a broad drop shadow falls to the lower left. In the real anchor clock the rim turns more and the shadow sits to the right.",
+   "fix": "Turn the clock slightly and light it from the upper left. Make the rim brighter on top left and darker lower right, with a soft shadow on the wall to the lower right."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (bumper car): a key from above front. The glossy green body turns into darker sides, reflects in the floor and has a dark contact shadow under the bumper. B (cryo tube): the glass cylinder is evenly lit, and the main light comes from the cyan glow at the base. The metal cap is flat, the shadow side is shallow and there is only a faint contact shadow.",
+   "fix": "Light the tube and its metal cap from one side so one side of the cylinder is darker. Add a firm dark contact shadow where the base meets the floor, and keep the cyan glow as a small accent."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (polaroid): a flat card with a uniform frame, lit mostly by the light rays in the background. It has a simple offset drop shadow to the lower right and form contrast of 0.75, above the real range. B (bird feeder): a key from the left, the wooden planks have soft shaded sides and the inside of the box sits in shadow, consistent with the real cards.",
+   "fix": "Tilt the polaroid slightly and give the frame a soft gradient from the lit top left to the shaded bottom right. Make the drop shadow softer and lighter."
+  }
+ ],
+ "pattern": "Generated cards light the hero evenly from the front or from many directions, often glow-driven. The shadow side is shallow and not cooled, so there is no clear core shadow band. This shows up on flat matte faces (rover, console, igloo) and evenly lit spheres (helmet, meteor, planet). They also tend toward hard photographic cast shadows on realistic ground, or glowing elements acting as extra lights. Real cards use one soft key, usually from the upper left, with a gradual turn into cool blue-grey shadow and soft painted contact shadows."
+}

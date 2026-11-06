@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (witch hat): the brim is a thick, soft-edged oval disc, the band reads as a swollen ring, and the cone's curled tip is rubbery. Its straight_share of 0.737 is above the real range. B (graduation cap): the mortarboard has flat faces and tight corners, the tassel cord stays thin, and the skull cap is plain.",
+   "fix": "Draw the witch hat brim as a thin, flat felt disc with a crisp edge. Make the band a narrow strip lying flat against the cone, and give the cone a slight bend instead of a rubbery curl."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (candlestick): realistic, slim proportions with a pencil-thin stem, a thin dish and a ring handle. Its solidity of 0.445 is below the real range, and the cards elsewhere use chunkier simplified forms. B (vending machine): a boxy body with flat front panels, tight bevelled corners and small feet. This matches the real cooler and fan cards.",
+   "fix": "Draw the candlestick a little chunkier and simplified: a thicker stem, a wider drip dish and a sturdier finger loop. Keep the base plate flat with a crisp rim."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (potion flask): a squat bulb with a short, stubby neck and a fat, plug-like cork and lip ring, so it reads as a toy. B (beach ball): a true sphere with only the valve cap. Its zero corner_rate is simply what a ball looks like, not a flaw.",
+   "fix": "Draw the potion flask with a longer, narrower neck, a thin glass lip and a slimmer cork that sits inside the neck."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (cauldron): the rim is a swollen tube wider than the pot, the side handles are thick loops, and the three legs are stubby cylinders with puffy feet. The whole shape reads as an inflated toy. B (lawn mower): the handle rails stay thin and straight, the wheels are proportionate, and the deck has a believable shape.",
+   "fix": "Draw the cauldron with a thin lip that is only slightly flared, slim iron ring handles, and short tapered legs instead of round stumps."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (dead tree): a thick, melting trunk with root flares splayed like a skirt and many spindly branch tips. straight_share (0.107) and solidity (0.463) are below the real range, and thin_share (0.078) is above it. B (topiary): a stacked spiral on a flat round planter with a crisp rim. The planter's straight edges are intact.",
+   "fix": "Draw a simplified tree with a narrower trunk and fewer, thicker main branches ending in a few short twigs. Keep the roots compact at the base instead of spreading out like a skirt."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (lion statue): a stepped plinth with mostly flat faces and slightly soft edges, and a lumpy mane mass. B (sports bottle): a curved body with a thin ring handle on the cap. Both silhouettes are in the real range, and neither is clearly swollen or missing parts.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (jack-o'-lantern): an almost perfect round blob with soft, faint ribs, so the outline barely shows the lobes. Its solidity of 0.965 is above the real range, and the stem is a thick, short stub. A (scout jacket): open cuffs, a collar and a sash that cuts across the body, with all the expected parts in the right relation.",
+   "fix": "Draw the pumpkin slightly squat with deep vertical ribs that dent its outline into lobes. Give it a thinner, twisted stem."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (roller coaster): the cars are oversized like toys, about as wide as the loop. They stack up the vertical loop on top of each other, so the track and supports are hidden. Its solidity of 0.495 is below the real range and its thin_share of 0.075 is above it. B (scroll): a rolled cylinder with a visible spiral end, a flat ribbon band and thin ribbon tails, in plausible proportions.",
+   "fix": "Draw smaller coaster cars in a single row sitting on the track. Keep the rails and ties thin and continuous, and keep the support pillars straight and slim."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (ghost sheep): a costume sheet over a lumpy wool mass with stubby limbs. An extra pumpkin prop is added at its feet, which is the same added-scenery pattern as the generated lighthouse island in the lessons. A (pool sheep): a single figure on a float with a flat, regular mattress outline. Its straight_share is a little above the real range because of that flat float.",
+   "fix": "Draw the ghost sheep alone without the extra pumpkin. Let the sheet hang with a clear hem and keep the legs slim and visible below it."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (bat): perfectly symmetric, flat-on wings with evenly scalloped edges, a big round head with large ears, and tiny feet. Its corner_rate (7.873) is above the real range and straight_share (0.126) is below it. A (jellyfish): a dome bell, a few thin tentacles and a ruffled oral arm. The thin parts stay thin.",
+   "fix": "Draw the bat in a three-quarter view with the wings slightly asymmetric and partly folded. Show thin finger bones running to the wing tips, and keep the head smaller relative to the body."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (candy corn): a smooth cone that swells into a puffy, rounded base, like a pillow. corner_rate is 0, and straight_share (0.724) and solidity (0.994) are above the real range. A (fruit plate): a flat glass plate with a thin rim, holding many distinct fruit pieces with straight wedge cuts.",
+   "fix": "Draw the candy corn as a flatter, wedge-like triangle with straight sides and a flat base with small, tight rounded corners, not a puffed-out bottom."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (haunted house): the walls lean, the roof sags, and the tower and cone are drawn chunky. The house sits as one heavy block. B (gate): thin ironwork bars and scrolls with flat brick pillars. Its lens mask is broken, picking up a pillar finial and a fragment of a pillar, so its metrics (thin_share 0.389) are unreliable rather than a sign of generation.",
+   "fix": "Draw the cottage with straight walls, a straight roof ridge and crisp eave edges. Keep the tower as a slim cylinder with a narrow cone roof."
+  }
+ ],
+ "pattern": "Generated cards tend to draw the object as one smooth, inflated mass: rims, brims and bases swell into tubes or pillows (cauldron rim, witch hat brim, candy corn base), and round objects become featureless spheres (pumpkin). Limbs and legs come out as stubby cylinders. Scale relations break: parts are oversized like toys (coaster cars) and extra props are added (a pumpkin beside the ghost sheep, like the island in the lessons). Real cards keep flat faces, tight corners, thin rails and handles, and only the parts the object needs."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the bike has thin tube frame, thin spokes, a thin chain stay and handlebar, and the car's rear edges run straight. B: the rover is a pillowy white box with softened top edges. Its six wheels are fat rubber drums, oversized next to the body. The dish mast is a stubby post, and there are no thin struts, rails or suspension arms.",
+   "fix": "Draw the rover body as a flat-sided metal box with tight bevelled edges. Use narrower wheels on visible thin suspension arms, and give the dish a thin mast and thin support struts."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the binocular barrels keep straight cylinder runs with a crisp eyepiece step and a separate hinge bridge. B: the rocket is a single smooth capsule with a blunt rounded nose. Its fins are flat slabs pushed out at a toy angle, the nozzle is a small stub, and there are no panel seams or part breaks in the outline.",
+   "fix": "Draw a slimmer, longer rocket body with a sharper nose cone. Make the fins thin, swept back and joined to the body with a visible root, and add a flared engine nozzle."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the vending machine has a tall, real-looking ratio, a slight top bevel, small feet and a handle. B: the console is a heavy squat box with a sloped face. Its outline is almost all straight (straight_share 0.837, above the real range), with a thick plinth slab and no small protruding parts. The knobs and buttons sit inside the outline as toy-sized bumps.",
+   "fix": "Break up the console outline: add a raised display hood, side handles or vents and small feet. Make the base plate thinner and keep the knobs smaller compared with the panel."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the jacket has sleeves, cuffs, a collar and a pocket that each read as separate parts in the outline. B: the helmet is one swollen sphere with two round ear discs and a collar ring. The visor fills almost the whole front, and the helmet is inflated like a toy bubble, with no neck ring step or hardware breaking the contour.",
+   "fix": "Draw the helmet less round: a slightly taller shell, a smaller visor set into a defined frame, a stepped neck ring, and small side fittings with straight edges."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the man and pig overlap in one compact mass, with readable limbs, a ball and a water splash. B: the figure is cut by the frame edge, the helmet is a perfect round blob, and the boots are oversized ovals. The outline is mostly smooth curves (straight_share 0.103 and corner_rate 3.705, both below the real range), with the pig floating as a separate rounded blob.",
+   "fix": "Keep the boots and helmet at real size. Draw the chair and harness with straight frame edges, and keep the character whole inside the frame."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the planet is a plain sphere crossed by a thick, slab-like ring with a blunt rounded rim. The ring is as thick as a toy part and has no inner gap or separate bands. B: the neck pillow is soft and swollen, but that is true for that object, and its U opening is kept.",
+   "fix": "Draw the ring as a thin flat disc with a crisp edge, separate concentric bands and a visible gap between the ring and the planet."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the submarine has a periscope with a thin pipe, a separate conning tower, a propeller with distinct blades and fins. B: the UFO is one plain lens shape with a smooth dome and a thick tube rim. Its round lamp bumps are evenly spaced and break the outline like beads, and there are no landing legs, antennae or thin parts.",
+   "fix": "Give the saucer a thin, sharp outer rim and a stepped hull. Add small thin details such as an antenna or landing legs, and set the lights flush with the rim instead of beads sitting on it."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the lighthouse is the known real card, with a thin railing, a spire and a crenellated gallery. B: the igloo base is a smooth half-dome with a fat cylinder tunnel. The tunnel is as wide as half the dome, with rounded ends, and the door and step are soft. The outline is two plain blobs with no thin parts.",
+   "fix": "Make the habitat dome panels and door frame show straight edges. Use a narrower connecting tube with crisp flanged ends, and add thin antennae or a ladder."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the scarf has a ring collar, a knot and two tails with crisp pointed tips, and an open gap at the neck. B: the meteor is a ball with a soft, fuzzy comet tail whose edge dissolves on the upper left. The rock is a smooth round lump with no jagged edge.",
+   "fix": "Draw the rock with an irregular, chipped outline and a few sharp facets. Give the tail a defined edge with clean tapering streaks instead of a blurred smear."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "B: the clock matches the real reference clock, a clean circle with a thick rim. A: the bag has two thin handles, a swollen body and protruding items with plausible proportions. The handles are somewhat thick, but within what the real cards show. There is no clear shape tell.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the bumper car has a thin pole, a steering-wheel loop, a fat rubber bumper ring and a pod body, all true to the object. B: the tube is a plain straight cylinder between two stacked discs. The cap and base are thick rounded slabs and there are no fittings, pipes or thin parts. It reads as a simple primitive rather than a device.",
+   "fix": "Add visible hardware to the stasis tube: thin support rails or rods along the glass, pipes or cables at the base, and stepped bolted rings at the cap and base with tight edges."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the photo card is a flat rectangle with crisp corners, which is right for the object, even though its numbers sit above the real range. B: the bird feeder has thin rope, a gabled roof slab and a tray, with plausible parts. Neither card shows a shape tell on this vector.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards draw sci-fi objects as single smooth primitives: domes, capsules, cylinders and boxes with swollen faces. Wheels, rims, tunnels and caps are made fat, and the thin parts the real cards keep are missing: struts, rails, antennae, legs and pipes. Real cards break the outline with many small, true-scale parts and tight corners. Generated ones give a few oversized, rounded parts, so the outline is either nearly all curves or a single plain block."
+}

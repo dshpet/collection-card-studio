@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a dark red bandana on a flat, evenly lit wavy cyan field. The background holds two close light greys with no centre glow, and the corners stay as light as the middle (vignette 0.036). B: the neckerchief sits in the bright core of a spiral that darkens toward all four corners (vignette 0.115). A near-black wedge sits inside the collar, and the light ring behind the knot works as a halo. This spotlit-centre layout matches the generated gloves and cameras in the lessons.",
+   "fix": "Keep the background swirl one even mid-blue from centre to corners, with no bright patch behind the scarf. Make the shadow inside the collar a soft dark red, not black."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the coaster splits into clear groups: a mid sky, light clouds, a dark blue track and light yellow cars. B: the wagon's canvas is a large near-white block. The dirt and grass below are a speckled mid-grey full of tiny white scratches and dark flecks, so the lower half shows texture noise instead of one calm value shape. The key is also above the real range (0.722).",
+   "fix": "Paint the dirt road and grass as smooth, broad, even colour areas with no fine speckles or scratches. Tone the canvas down from pure white to a warm cream."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: in the grey lens the cactus and the orange stripes fall on the same middle greys. Only hue separates the hero, and its inner contrast is soft and flat (rms 0.091, below every real card). B: the binoculars have firm dark eyecups and lenses against a light floor, so value alone separates the hero, as on the real camera card.",
+   "fix": "Make the cactus clearly darker than the background, using deeper green shadows down its ribs, and light the wall stripes a step brighter so the cactus reads as a darker shape on light."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "B is the real lighthouse from the lessons. Its value design is a dark red gallery band and stripe on a light tower against a mid sky. A: the windmill is a near-white wheel and a pale stone tower against a light sky and a light golden field. Almost everything sits in the top two greys, with no dark accent except a small vane (key 0.748, contrast 0.115, both outside the real range).",
+   "fix": "Give the windmill some dark accents: a dark iron hub and rim on the wheel and a deeper shadow side on the tower. Make the grass field a mid-tone gold, not pale."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the lasso is a thin light rope on a dark purple ring pattern. The whole card is low key (0.575), contrast is very low (0.076) and the hero is lighter than its ground (gap +0.183). All of these fall outside the real range, and no glow sits behind the hero. B: a dark cap sits on a light cyan disc with clean middle-grey corners, which is the real-card pattern of a dark hero on a light field.",
+   "fix": "Lighten the purple background to a bright lavender with softer rings, and make the rope a richer, darker tan so it reads against the light background."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cowboy, the pig and the desert all share busy light and middle greys. Hat, shirt and sand merge, the only strong dark is the pot, and the dunes are grainy. B: the pig and cow form one big light mass under a dark stage roof, a clear light-on-dark grouping, though the dark top pushes the lightness gap beyond the range (0.159).",
+   "fix": "Make the desert behind the cowboy one smooth, lighter sand tone without speckles or ripples, and give the cowboy's hat and clothes a darker, simpler shadow side so he stands out as one shape."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the jacket is light against a background with darker corners and ray tips, like the real glove card. B: the hat sits inside a big pale halo of light rays, so the background is lighter overall. A hard near-black stripe runs under the brim. This is the generated glove pattern: a lifted background and a glow behind the hero.",
+   "fix": "Darken the outer blue rays toward the card edges and remove the bright glow right behind the hat. Soften the black under the brim into a warm brown shadow."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the butte sits in one dull middle grey, close to the sky and the sand, with weak inner contrast (0.116, below the real range). No dark accent anchors it. B: the topiary is a dark, crisp mass against a light sky and lawn, with clear value separation.",
+   "fix": "Put the butte's shaded side into deep red-brown and keep the sunlit faces bright orange, so the rock has a strong light side and dark side against a pale sky and pale sand."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the cart has a dark red body and a white and red awning against a darker blue wall, so the value groups are clear. B: in the lens the grey horseshoe lies on the same middle grey as the sand and the pink wall. Contrast is low (0.104, below the real range), and only the gold studs and a thin rim highlight separate it.",
+   "fix": "Make the horseshoe a darker steel grey with a deep shadow underneath, and make the sand and the pink wall lighter, so the shoe reads as a dark shape on a light background."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: flat two-tone ground under sneakers that are mid to dark, with no glow and no corner darkening. B: a pale dome of light sits right behind the boot, and the corners and the table's front edge drop to dark (vignette 0.095, above the real range). The boot is a near-black mass with hard local contrast. This is the generated spotlight look.",
+   "fix": "Light the green wall evenly with no bright halo behind the boot and no dark corners. Make the boot a mid brown with gentle shading instead of near-black."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the popsicle is a mid-dark shape on even green rays with a soft light halo. Inner contrast is gentle and the corners are not darkened. B: the ring box has near-black red walls with hard edges. Strong dark corners frame a bright cyan centre (vignette 0.162, beyond the real range), so the card has a heavy spotlight vignette.",
+   "fix": "Keep the blue rays the same brightness out to the corners, and make the red box a medium crimson with softer shading instead of near-black walls."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a daylight feeder scene in a middle key with a dark trunk and canopy. B: a night scene with a near-black sky. The sign panels are the only light shapes, so the card is low key (0.487) and the hero is much lighter than its ground (gap +0.284), both outside the real range. No real card uses this dark-setting, glowing-object look.",
+   "fix": "Set the scene in bright daytime with a light blue sky and sunlit building, so the sign is a mid-tone shape against a light background instead of a glowing shape on black."
+  }
+ ],
+ "pattern": "Generated cards break the real cards' value design in two ways. Some lift the background and spotlight the hero: a pale glow sits right behind the object, the corners or bottom edge go dark, and the object gets near-black masses with hard edges (the generated glove, camera, cowboy hat, boot and ring box). Others go flat: the hero and background land on the same middle greys, so only hue separates them (cactus, butte, horseshoe, windmill). Real cards keep even background light with mild corners and separate the hero by a clear but gentle value step."
+}

@@ -1,0 +1,27 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "loose": [],
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "Proportions read as a jar or battery, not a teleport pod: the pod is about as wide (0.82) as it is tall (1.0). A pod a person steps into should be clearly taller than it is wide. Fix: make the glass slimmer and taller (r 0.235, h 1.0) and scale the base and cap to match, for an overall height to width ratio of about 1.85.",
+   "The small knob on top of the dome makes the cap read as a jar lid. Remove it so the cap reads as a flat machine cap with a dome.",
+   "The base and cap are oversized for the slimmer glass, so their radii are reduced. The cap lip still overhangs the glass rim and the glow ring still sits on the base's top deck around the foot of the glass."
+  ]
+ },
+ {
+  "round": 2,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The glass is a solid cylinder, so it renders as a solid block of glass, like a filled jar, and not as a chamber a person could stand in. A teleport pod's glass is a hollow tube with thin walls, open inside down to the floor pad.",
+   "The inner floor pad has the same radius as the inside of the glass, so the pad and the wall overlap. The pad should be a little smaller so it sits clearly inside the tube."
+  ]
+ }
+]

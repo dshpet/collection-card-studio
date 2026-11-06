@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the bicycle fills the card edge to edge. The car behind it is cropped by the top and right edges, the wheels nearly touch both sides, and the margin is 0. This matches the cropped, close framing of the real cards (taxi, fan, lighthouse). B: the rover sits small in the middle-lower area with an even band of empty moon ground all round (margin 0.095, above the real maximum of 0.085). There is a large empty crater at the bottom right and a lot of sky at the top. The rover reads as a small object set in a scene, not as the card's hero.",
+   "fix": "Push the camera in so the rover fills most of the card. Let the wheels and the dish run close to or past the card edges, and leave only a thin strip of moon ground under it. No empty crater in the foreground."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the binoculars are set at a diagonal and fill the card from left to right (box width 0.907), with the eyepieces near the left edge. B: the rocket is a narrow, upright, centered column (box width 0.449, below the real minimum of 0.661). Wide empty stripes of wall and concrete floor are left on both sides (margin 0.125). At thumbnail size it reads as a small toy on a big floor.",
+   "fix": "Tilt the rocket diagonally and draw it large, so the nose cone and fins reach toward opposite corners of the card. Crop the floor and wall to a thin backdrop."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the vending machine is upright, slightly turned, and complete with its feet, against a plain purple backdrop. It is narrow but within the real range. B: the console sits high and to the right on a large pale slab, and the slab's bright top face is a second big shape that takes the eye at thumbnail size. Its subject area of 0.442 is just above the real range. The evidence is weak on both sides.",
+   "fix": "Remove the large white platform. Draw the console bigger and centered, sitting on a simple floor line, so nothing pale competes with it."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the scout jacket fills the card, its sleeves almost touching the left and right edges (margin 0.072). B: the helmet floats dead center as a round blob with an even ring of pink sunburst around it (margin 0.137, above the real maximum of 0.116). The thumbnail reads as a centered sticker with extra air, like the floating generated glove in the lessons.",
+   "fix": "Draw the helmet larger and turned three-quarters, with the visor and ear pieces nearly touching the card sides and the neck ring close to the bottom edge."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the man and the pig form one overlapping group in the lower center, and the beach props stay at the edges. B: the man is in the lower left and the pig floats on its own in the upper right in front of the porthole, so the thumbnail splits into two focal points. The figures plus the chair fill 0.575 of the card, above the real maximum, so it feels crowded.",
+   "fix": "Put the pig close to the man, overlapping his shoulder, so they read as one group. Pull the camera back a little so the chair and boots do not fill the lower right."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the planet and its ring are a thin, wide shape floating in the middle of a large blue ripple field (box height 0.442, well below the real minimum of 0.581; area 0.203, at the bottom of the range). There is a lot of empty background above and below it. B: the neck pillow fills the card vertically and nearly reaches the sides.",
+   "fix": "Draw the planet much larger and tilt the ring more steeply, so the sphere fills most of the card height and the ring ends nearly touch the left and right edges."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the submarine fills the card, with the periscope near the top and the propeller near the left edge. B: the saucer is a thin flat lens across the middle (box height 0.39, far below the real minimum of 0.581), with big empty purple glow areas above and below. At thumbnail size it is a small sliver.",
+   "fix": "Tilt the saucer toward the viewer and draw it larger, so the dome and the underside are both visible and the craft fills most of the card height."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "A is the real lighthouse from the lessons: tall, cropped by the bottom edge, filling the card height. B: a small dome and tube are placed in the center of a wide moon landscape (box height 0.356, margin 0.093). There is sky across the top, an empty crater in the lower right, and scattered rocks, so the background takes up more of the card than the hero.",
+   "fix": "Bring the camera close so the dome base fills most of the card, cropped by the bottom edge. Leave only a strip of moon ground, and no foreground crater."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the scarf is centered, frontal, and fills the card height with a calm swirl behind it. B: the meteor's rock sits in the lower left and the tail sweeps to the top-right corner. It fills the card diagonally and reads well. The only thing that stands out is that the soft glow of the tail blends into the busy wavy backdrop. My choice of B is barely above a guess.",
+   "fix": "Make the rock larger and give the tail a crisper edge against the background, so the meteor separates cleanly from the wave pattern."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "B is the real wall clock from the reference set. A: the bag fills the card, with its props poking up near the top edge. Its area of 0.467 is slightly above the range, but its framing (big, slightly cropped feel, floor plane) matches the real cards. Nothing on my vector separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the bumper car fills the lower card, the pole runs off the top edge and the yellow track line runs off the corner (margin 0). This is the cropped, close framing of the real cards. B: the glass tube is a narrow, upright, centered column (box width 0.421, below the real minimum of 0.661). Wide empty floor and green wall fill both sides (margin 0.121).",
+   "fix": "Draw the tube larger and closer at a three-quarter angle, letting the cap run near the top edge and the base close to the bottom. Crop the floor so there are no wide empty sides."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "B: the tree trunk runs the full card height (box height 1.0, margin 0) and the feeder fills the middle, giving the cropped, filled framing of the real cards. A: a small, tilted polaroid floats in the center of an empty pink burst (box width 0.56, below the real minimum; margin 0.16, well above the real maximum of 0.108). At thumbnail size the card is mostly background.",
+   "fix": "Draw the polaroid much larger and tilted, so its corners nearly touch the card edges and the photo area takes up most of the card."
+  }
+ ],
+ "pattern": "The generated cards are framed like a small object placed in the middle of a stage. They show the complete hero, centered, with an even band of empty background or ground all round. Their margins are above the real cards' maximum, and they are often a thin sliver (UFO, planet, moon dome) or a narrow upright column (rocket, glass tube) far below the real width or height range. The real cards push in close: the hero fills the card and is often cropped by an edge, with only a thin strip of floor or sky. Extra scene features (craters, slabs, a second figure set apart) compete with the hero at thumbnail size."
+}

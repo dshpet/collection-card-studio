@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the witch-hat cone is covered in a fine, even felt-grain noise from tip to brim, and the buckle is a smooth plastic ring. B: the mortarboard and band are clean, smooth and softly blurred at 2x, with no surface noise, like the real cards.",
+   "fix": "Smooth matte black hat cone with a soft gradient and no fabric grain or noise; keep the surface clean and slightly soft."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the brushed gold candlestick sits on a photographic concrete slab with speckle grain, and the brass shows fine directional brushing. B: the vending machine has stylized condensation dots and soft cans, but the blue body is smooth and in the house finish.",
+   "fix": "Place the candlestick on a simple smooth colored surface with no stone speckle; draw the brass as smooth polished gold with broad soft highlights and no brushed lines."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: crisp glass edges, many sharp bubbles in the liquid, and visible plank grain lines on the table. B: the beach-ball vinyl is smooth and soft, with fine sand dots only in the background, and the 2x crop is soft like the real crops.",
+   "fix": "Fewer, softer bubbles; smooth table with little or no grain; keep the glass soft-edged and clean."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the cauldron's iron belly has scratch lines and mottled, blotchy noise across the dark surface at 2x, the same kind of added wear as the generated lesson computers. B: the mower's red plastic shell is smooth and evenly glossy, with soft clean edges.",
+   "fix": "Smooth, clean black cauldron with soft broad highlights; no scratches, scuffs or mottled texture."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the tree trunk is matte, with soft painted bark grooves and a quiet texture. B: the topiary is hundreds of crisp, identical glossy leaves stacked edge to edge, a dense decorative repeat with a gloss share far above the real range.",
+   "fix": "Draw the topiary as smooth rounded green masses with only a few soft leaf shapes at the edges; matte foliage, no repeated glossy leaf pattern."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the marble lion has drawn vein cracks on the plinth and a smeary, painterly mane, with brushy background trees. B: the frosted water bottle is a clean, smooth translucent plastic with a soft gradient.",
+   "fix": "Smooth white stone lion with soft simple shading; no vein cracks or painted strokes in the mane."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the scout jacket's fabric is soft and smooth, and the badges are clean enamel discs. B: the pumpkin rind has an orange-peel stipple of fine pits over its whole surface at 2x, a noise layer the real cards do not have.",
+   "fix": "Smooth, clean pumpkin skin with soft rib shading and no pitted or speckled texture."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the coaster cars are evenly lacquered plastic and the rails are clean. B: the scroll paper is smooth and matte, and the wax seal and ribbon are clean. Both finishes sit in the real range, so this vector gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both sheep have the same swirled wool and smooth hooves. A has clear pool water. B has a smooth matte cloth sheet. Both have highlight shares slightly above the real range, and the finish gives no reason to separate them.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the jellyfish is a smooth, glossy translucent bell with clean gradient tentacles. B: the bat's chest is rendered as many fine fur strands, and the wing membranes are leathery and finely shaded. That is strand-level micro detail the real cards smooth away.",
+   "fix": "Draw the bat's body fur as a smooth, soft fuzzy mass with only a few broad tufts; no individual hair strands."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the watermelon flesh carries a grainy stipple noise, there are many water droplets on the fruit and plate, and the plank grain is busy. B: the candy corn is a smooth, softly glossy sugar surface, though its texture measures below the real range.",
+   "fix": "Smooth, clean fruit surfaces with soft highlights; remove the water droplets and grain noise on the watermelon; plain smooth table."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the house's slate shingles and stone blocks are soft and chunky, and the 2x crop is softly blurred like the real crops. B: the gate's bricks and background bushes show painterly brush marks and smear, and the copper scrollwork is high-gloss, with a gloss share well above the real range.",
+   "fix": "Clean, smooth bricks and matte copper gate with soft shading; background as soft smooth shapes with no brush strokes."
+  }
+ ],
+ "pattern": "Generated cards add a layer of surface information that the real cards leave out. Examples are felt grain, scratches and mottling on iron, pitted pumpkin rind, individual fur strands, stone veins, droplets and stipple on fruit, and painterly brush smear. They also sometimes repeat crisp glossy leaves edge to edge. Real cards keep each material smooth and softly shaded, with fine detail limited to a few deliberate seams or features, and their 2x crops look soft."
+}

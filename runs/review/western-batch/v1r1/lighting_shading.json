@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A bandana: light from upper right, the left flap and the left side of the knot fall into a moderate shadow, and the triangle turns gradually down to its tip. B scarf: the collar loop is lit almost evenly across the top, the two lower lobes just darken toward the bottom, and the medallion is a flat, evenly lit disc. The lens shows a top-to-bottom fade with no side turn. B's form_contrast (0.256) is below the real range.",
+   "fix": "Light the scarf from the upper left. Put a clear darker side on the right half of the collar loop and on the right lobe, add a soft core shadow down each fold, and let the medallion cast a small shadow onto the cloth."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A coaster: the yellow seats are lit almost straight on, with the same brightness on every car and only thin dark inner rims. Light_bias (0.131) is below the real range and shading_range (0.851) is above it. B wagon: low sun from the left, the canvas top turns into a darker right side, and the wheels cast soft shadows on the dirt. It reads as one directional key light, like the real lighthouse.",
+   "fix": "Light the coaster cars from one side so each seat has a lit left face and a clearly darker right face. Put a soft darker underside on each car where it meets the track, and darken the track's inner side."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A cactus: the trunk and arms are rounded mostly by a centre-bright, edge-dark gradient. The ridges barely turn and both arms get similar light. Form_contrast (0.368) is below the real range. B binoculars: clear key from the upper left, the right faces of the barrels go into deep shadow, and a long soft cast shadow falls on the floorboards.",
+   "fix": "Light the cactus from the upper left. Keep the left side of the trunk and the left arm bright and put the right arm and right side of the trunk into a clear, deeper shadow. Give each ridge a lit edge and a shaded groove."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "B is the real lighthouse from the lessons, with a dark left side on the tower and a lit right side. A windmill: the brick tower has the same kind of darker left face and lit right face. The blades are lit evenly but keep soft separation, and light_bias and form_contrast are within the real range. My lens gives no clear reason to call A generated.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A lasso: seen top-down under even, frontal-feeling light. The coils have the same brightness all the way round, with only a faint soft contact shadow on the backdrop and no lit side versus shadow side on the loops. B cap: the board is bright on top, the skull below falls into a deep shadow, and there is a crisp rim along the board edge. That light placement and shadow depth match the real cards.",
+   "fix": "Light the rope from the upper left. Make the lower-right half of each loop clearly darker than the upper-left half, and put a soft but visible darker cast shadow offset to the lower right under the coils."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A cowboy: warm sun from the upper left, shadowed undersides under the hat brim and arms, and an orange glow from the fire on the pot and hands. B pig and cow: the coloured stage lights are behind them, yet both faces are lit flat and frontally. There is no coloured rim along the shoulders or ears and almost no core shadow on their bodies.",
+   "fix": "Light the pig and cow from behind with the stage spotlights. Add coloured rim light along their heads, ears and raised arms, and let the front of their bodies fall into a softer, darker fill."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A jacket: a clear key from the upper left. The right sleeve and right body panel turn into a deep shadow and the cuffs have dark openings. B hat: lit symmetrically from the front and above, with both brim curls equally bright and a glossy white edge highlight all round. Shading_range (0.871) is above the real range.",
+   "fix": "Light the hat from the upper left. Make the right side of the crown and the right brim curl clearly darker, keep the sheen broad and soft rather than a white plastic edge, and put a darker shadow under the brim on the band."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A mesa: soft, low-contrast light. The left cliff faces are only slightly brighter than the right ones and the right flank never goes deep. Shading_range (0.549) and form_contrast (0.320) are both below the real range. B topiary: strong key from the left, each tier turns to a dark right side, and the base casts a clear shadow to the right on the lawn.",
+   "fix": "Light the rock from the left with strong sun. Make the right-facing cliff walls and the vertical grooves clearly darker, add crisp light on the top ledges, and put a shadow from the butte onto the sand on the right."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A popcorn cart: lit almost evenly from the front. The red box and the awning stripes have the same brightness across their width and there is only mild darkening under the awning. B horseshoe: lit from the upper left, with a clear shadow side on the right arm's inner wall and a cast shadow on the sand and backdrop.",
+   "fix": "Light the cart from the upper left. Make the right face of the red box and the right posts clearly darker, put a deeper shadow under the awning onto the glass and popcorn, and add a cast shadow from the cart onto the tiles."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A sneakers: both shoes are lit almost straight on and the uppers have nearly the same brightness on both sides. Light_bias is about 0.02, far below the real range, and shading_range is above it. Only the cast shadow to the left hints at a direction. B boot: strong side light from the right, the left face of the shaft turns dark, and a long shadow falls on the plank.",
+   "fix": "Light the sneakers from the right. Put the left side of each upper and the side of the sole into a clear, darker shadow, and darken the inside of the collar and the gap between the two shoes."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A popsicle: wrapped in a soft overall glow. The two grooves are only shallow dips, the left and right edges are about equally lit, and the frost drops carry many small wet hotspots. B ring box: clear light from the upper left, a dark lid interior and right outer wall, and the medal sits in a shaded cushion.",
+   "fix": "Light the popsicle from the upper left. Make the right edge and the floor of each groove clearly darker, cut the shine down to a few soft sheen spots, and darken the stick where it enters the ice."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "A bird feeder: daylight that is mostly frontal. The roof top and front plank are evenly bright, with moderate shade only under the roof and inside the box. B motel sign: night scene with neon on the signs and window glow on the building. The sign frames are a little flat, but the light stays consistent with the emitters. This is weak evidence either way.",
+   "fix": "Light the feeder from the upper left. Make the right gable and right side of the box clearly darker, and cast the roof's shadow down onto the seeds and the back wall."
+  }
+ ],
+ "pattern": "Generated cards are lit flat and from the front: the object's two sides get almost the same brightness. The real cards pick one key light from the side, usually upper left. They let the far side of the form turn into a clear, deeper shadow, keep the sheen broad and soft, and darken edges and contact points. The generated cards rely on a centre-bright, edge-dark gradient, an even glossy edge highlight, and a top-to-bottom fade instead of a turn from one side to the other."
+}

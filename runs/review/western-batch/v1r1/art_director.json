@@ -1,0 +1,102 @@
+{
+ "issues": [
+  {
+   "issue": "Scattered small ground clutter. Pebbles, a stray rock, grass tufts and shrubs dot the ground on the wagon, cactus, mesa, horseshoe and campfire cards, and the windmill's field is made of separate blade strokes. The real cards (coaster, popcorn cart, sneakers, topiary lawn) keep the ground as broad, smooth, even areas. This is the most common tell, and earlier kept edits (Moon Rover, Pig Roper, Wagon) fixed exactly this.",
+   "specialists": [
+    "staging_detail",
+    "surface_finish",
+    "edges_linework",
+    "value_contrast"
+   ],
+   "instruction": "Paint the ground as one smooth, even surface (dirt, sand or field) in broad soft tones. Leave the space around the hero clear."
+  },
+  {
+   "issue": "Flat front lighting. On the cowboy hat, the mesa and the cactus, both sides of the hero are almost equally bright, and the form rounds only through a centre-bright gradient. The real cards (binoculars, jacket, topiary, lighthouse) use one side key light and let the far side fall into a clearly darker shade with a cast shadow.",
+   "specialists": [
+    "lighting_shading",
+    "value_contrast"
+   ],
+   "instruction": "Light the hero from the upper left so its right side is clearly darker, and cast a soft shadow onto the ground to the lower right."
+  },
+  {
+   "issue": "The hero colour is washed out or sinks into the ground colour. The windmill is nearly colourless cream and grey, the horseshoe is dull grey between hot pink and orange, and the mesa is orange-red on orange sand. The real cards give the hero one clear, saturated local colour that stands apart from its backdrop (red and white lighthouse, yellow coaster cars, red popcorn cart).",
+   "specialists": [
+    "color_palette",
+    "value_contrast"
+   ],
+   "instruction": "Give the hero one clean, saturated local colour, with a backdrop in a different hue family."
+  },
+  {
+   "issue": "Fine dashed stitching and grain. This shows on the boot only. I overrule the general 'make everything smooth' push from surface_finish and edges_linework: the real cards carry plenty of fine detail (the topiary's separate leaves, the bird feeder's plank grain and twisted rope, the popsicle's frost droplets, the popcorn heap). Only the dashed stitch lines are a confirmed tell, and the Cowboy Boots edit that fixed them was kept.",
+   "specialists": [
+    "surface_finish"
+   ],
+   "instruction": "Card-level only. Change dashed stitching to a few soft solid seam lines, and keep the rest of the detail."
+  },
+  {
+   "issue": "Overruled findings. Shape_proportions, edges_linework (outline darkness) and composition picked the real card on most pairs: the neckerchief, coaster, motel sign and jacket are all real. Value_contrast's claim that no real card uses a dark night scene is wrong, because the motel sign is real. Form, pose, frontal symmetry and thin silhouettes (lasso, hat, horseshoe) are visible tells, but the rules don't let edits change form, so these are left alone.",
+   "specialists": [
+    "shape_proportions",
+    "edges_linework",
+    "composition_hierarchy",
+    "viewpoint_depth",
+    "value_contrast"
+   ],
+   "instruction": "No action: do not change form, pose or framing in the edits."
+  }
+ ],
+ "style_text": "",
+ "cards": [
+  {
+   "pair": "p01",
+   "keep": true,
+   "note": "Bandana: keep. Its clean red with white dots, soft folds and calm wave field read as a real card."
+  },
+  {
+   "pair": "p02",
+   "keep": false,
+   "note": "Wagon: Remove the pebbles, the rock and the grass tufts at the bottom corners, and make the dirt road one smooth, even warm tone. Make the canvas cover a slightly whiter off-white with cool grey folds. Keep the wagon as is."
+  },
+  {
+   "pair": "p03",
+   "keep": false,
+   "note": "Cactus: Remove the pebbles around the base and make the sand smooth and slightly paler than the orange wall. Light from the upper left so the right arm and the right side of the trunk are slightly darker."
+  },
+  {
+   "pair": "p04",
+   "keep": false,
+   "note": "Windmill: Paint the wheel rim and hub a dark iron red so the wheel has strong accents, and keep the blades white. Give the stone tower a clearer, darker shadow side. Make the wheat field a smooth, slightly deeper gold with only a few blade tips."
+  },
+  {
+   "pair": "p05",
+   "keep": true,
+   "note": "Lasso: keep. Its weak point is the thin, split silhouette, which an edit may not change. A colour or finish edit lost on the earlier Lasso card, so redraw it from scratch instead of editing."
+  },
+  {
+   "pair": "p06",
+   "keep": true,
+   "note": "Campfire Pals: keep. The warm fire light, the characters and the busy scene match the real character cards. If it is redrawn anyway, only remove the scattered pebbles on the sand."
+  },
+  {
+   "pair": "p07",
+   "keep": false,
+   "note": "Cowboy Hat: Light from the upper left so the right side of the crown and the right brim curl are clearly darker. Make the felt a slightly deeper, less orange brown with a deep umber shadow under the brim. Keep the background rays."
+  },
+  {
+   "pair": "p08",
+   "keep": false,
+   "note": "Mesa: Remove the shrubs, grass tufts and pebbles and make the sand smooth and even. Light from the left with strong sun so the right cliff faces turn deep red-brown and the top ledges catch bright light."
+  },
+  {
+   "pair": "p09",
+   "keep": false,
+   "note": "Horseshoe: Change the pink diamond wall to a soft sky-blue diamond pattern. Remove the pebbles and make the sand smooth. Give the horseshoe a bright silver highlight along its upper-left edge."
+  },
+  {
+   "pair": "p10",
+   "keep": false,
+   "note": "Cowboy Boot: Replace the dashed stitching with a few soft solid seam lines. Light the green wall evenly so its corners and the shelf edge are not darkened. Keep the boot otherwise."
+  }
+ ],
+ "summary": "This batch is close to the real cards. The bandana, campfire scene and lasso can stay, and the boot and cactus need only light touches. The remaining tells are about staging and light, not style: ground scattered with pebbles, tufts and shrubs; front lighting with no darker side (hat, mesa, cactus); and a hero whose colour is washed out or sinks into the background (windmill, horseshoe, mesa). Several specialists repeatedly picked the real card, and I overrode those findings: form and outline calls, the 'make everything smooth' push, and the claim against night scenes. The real cards carry plenty of fine detail, so the edits only remove clutter and set the lighting and colour roles, and add no smoothing."
+}

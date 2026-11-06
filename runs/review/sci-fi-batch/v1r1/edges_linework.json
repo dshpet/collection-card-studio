@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (bike on car): painterly edges of varied weight. The far hills and bushes go soft, the hard edges sit on the spokes and frame, and nothing is outlined. B (moon rover): every part has the same crisp dark contour. The box body, the panel seams with screw dots, the wheels and dish all have it, and so do every pebble and crater rim spread across the ground. Background and hero are equally sharp.",
+   "fix": "Keep the rover's silhouette sharp and let the ground fade: craters and pebbles soft and low contrast toward the back, panel seams as faint thin lines, no dark rim around the wheels."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (binoculars): edges are carried by tone. The barrels' rims are hard, but the body edges turn softly, and the floorboard gaps are clean value changes. B (rocket): an even dark contour runs around the nose cone, body and fins. The concrete floor is covered in speckled grit edges, and the inside of the body is almost empty apart from the porthole ring.",
+   "fix": "Draw the rocket's silhouette without a dark rim, using only the light-to-dark change of the paint. Make the floor a smooth surface with soft seams and no gritty speckle."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (vending machine): edges are concentrated at the focus, the glass door with its bottles and droplets, while the cabinet sides turn softly. B (control box): a single uniform hard contour runs around the whole metal block and base plate. Large faces have no edges inside them, and every button gets the same dark ring, so nothing leads.",
+   "fix": "Make the front panel with the dials and buttons the sharpest area. Let the back edges and base plate soften into the shadow, and draw no dark outline around the box."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (scout jacket): soft fabric edges, with stitching and badge rims as thin precise lines and no contour around the silhouette. B (astronaut helmet): a thick dark line wraps the outer shell, heaviest on the right side and the ear disc. The visor rim and the collar rivets have the same weight, so it reads as an outline, not a lit edge.",
+   "fix": "Remove the dark rim around the helmet shell. Let the shell's lit side meet the background with a clean value change, and keep the line weight heavy only at the visor rim."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (beach man and pig): fine, varied painterly edges, with soft hair and splash and lost edges where the arm meets the ball. B (space man and pig): heavy dark contours around the boots, the seat ring, the helmet bubble and the harness buckle. Chrome rings stack many concentric hard edges, and the background porthole and ceiling lamp are as sharp as the hero.",
+   "fix": "Thin out the contours on the seat, boots and harness. Soften the porthole frame and ceiling fixtures behind the character, and keep the crispest edges on the face and hands."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (Saturn): very sparse edges inside the subject, below the real range. The sphere is almost edgeless, and one uniform dark line runs under the ring and around the planet. B (neck pillow): edge weight varies. The left side is a lost, soft edge and the hole and right side are hard, with wrinkle texture inside. That is closer to how real cards mix hard and lost edges.",
+   "fix": "Give the planet some surface detail, such as soft band boundaries and a crisp terminator. Let the ring's far side soften, and don't trace a dark line under the ring."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (submarine): the hardest edges are at the portholes, the rear hull seam is thin with small rivets, and the fins soften. B (UFO): an even dark line circles the rim, and every orange bulb and rivet gets an identical hard ring. The rim edge is as strong as the dome, so there is no focal hierarchy.",
+   "fix": "Make the glass dome the crispest edge. Draw the rim lights as soft glowing blobs without dark rings, and let the far side of the saucer rim soften."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "A is the real lighthouse card from the lessons, with soft cloud edges, bricks as precise thin seams and no outline. B (moon igloo): crisp uniform contours on the dome panel seams, the door ring and the tube. Dozens of hard-edged pebbles and crater rims fill the background, and the clouds have dark outlines.",
+   "fix": "Fade the crater field and pebbles into a soft, low-detail ground. Give the clouds no outlines, and make the dome panel seams faint thin grooves."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (scarf): a clean silhouette with a hard edge, a crisp badge rim, and soft fabric folds inside. B (comet): almost no edges anywhere, with subject density 0.002, far below real. The rock has a glowing halo and blurred rim, the tail is a smudged haze, and only the crater pits register as edges.",
+   "fix": "Give the rock a clean, sharp silhouette against the background, with no glowing haze around it. Draw the tail as defined smooth ribbons with crisp edges."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A (bag): fabric texture and a stitched patch, with soft handles and no outline. B (clock): a near copy of the real anchor clock, but every tick, hand and the inner dial ring are drawn as dark outlined shapes. Outline darkness is 0.204, above the real maximum. The dot ring adds extra edges and a heavy drop-shadow edge sits on the wall.",
+   "fix": "Draw the ticks and hands as solid dark shapes with no outline around them. Remove the minute-dot ring, and make the case's shadow on the wall soft."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (bumper car): edges vary, with the hard focus on the seat and headlights and the floor reflections soft. B (glass capsule): the tube is drawn with long, perfectly even thin lines. The cap and base are stacked concentric hard rings, and the floor planks and reflection are as crisp as the object.",
+   "fix": "Put soft highlights on the glass instead of even line-like edges, keep the sharpest edge on the metal cap, and blur the floor reflection and plank seams."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (polaroid): one clean rectangular edge with a light border (strong negative outline darkness) and a simple inner photo. B (bird feeder): drawn cartoon contours on the roof boards, the rope and the tree leaves. The background buildings, trees and path are full of crisp lines, with background density 0.037, above the real range, so the hero does not stand out.",
+   "fix": "Blur the park, trees and buildings behind into soft shapes with no lines. Drop the dark contour lines on the roof and tray, and let the edges come from color and light."
+  }
+ ],
+ "pattern": "Generated cards give everything the same hard edge: a dark contour around the silhouette and around every sub-part (rivets, bulbs, buttons, rings). Background detail (craters, pebbles, grit, trees) is as sharp as the hero, so there is no edge hierarchy. Real cards make the focus sharpest, let back edges and backgrounds go soft or lost, and show seams as thin precise lines rather than outlined grooves. Sometimes it flips: a generated card is a soft haze with almost no defined edges at all (the comet)."
+}

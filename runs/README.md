@@ -27,6 +27,7 @@ Every generated card and every measurement, oldest first. Full-size drawings, re
 | `plain_check/` | The sheriff star's invented jewel: subject wording against the colors line | `experiments/plain_check.py` |
 | `shape_check/` | The clock twin with and without "a perfect circle", with measured roundness | `experiments/shape_check.py` |
 | `fire_check/` | Cauldron and campfire fires: as planned, worded as the real fire, and with the real fire cards as references | `experiments/fire_check.py` |
+| `western-batch/`, `sci-fi-batch/`, `horror-batch/` | Variant 1 of each `*-shared-cast` plan: the producer's lessons, iconic objects and one character card. Not final | `make_set.py` |
 | `cast-check/`, `cast-check-2/`, `outfit_check/` | The Western cast plan's character cards, before and after the outfit fix | `make_set.py --plan`, `experiments/outfit_check.py` |
 | `plans/` | Draft plans for the final film sets, for the producer to approve before drawing; `*-shared` keep the most iconic objects in every variant | `make_set.make_plan`, `experiments/shared_plans.py` |
 

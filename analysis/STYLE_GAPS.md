@@ -260,6 +260,16 @@ The producer called the drawn fires weak: the cauldron's tiny flame was "laughab
 - **References add nothing.** With the real fire cards attached the fires look the same as with words alone, and the lantern card's sunburst rays replaced the cauldron's stripes.
 - Rated by the author's eye and one pixel measure, not yet by the producer.
 
+## Batch with the producer's lessons and the cast, 2026-11-06
+
+Variant 1 of each `runs/plans/*-shared-cast.json` plan, drawn through the full pipeline: ten cards per genre, one with the cast (`runs/<genre>-batch`). 114 drawings: 90 candidates and 24 edits.
+
+- **Measured.** Candidates inside the real cards' bands: Western 23 of 30, Sci-Fi 11 of 30, Horror 13 of 30. The misses are framing and color bands on thin or black objects, as before. The judge kept 12 of 24 edits; it rejected the reviewers' plum witch hat, the blue-violet cauldron and a note that removed the ghost sheep's pumpkin.
+- **The lessons show in the plans.** The lasso gets a Blender model and is drawn as a coil ending in an open loop. The wagon has four wheels, the windmill a solid tower, and subjects name shapes ("perfectly round", "symmetrical from the front").
+- **Author's read, not rated: more correct, but plainer.** Beside the earlier finals of the same 16 objects, the batch drops the details that gave them character: the hat's star badge, the boot's spur and flame inlay, the witch hat's bent tip, the rocket in flight, the control panel's gauges and lever, the moon base's glass dome. The new subjects are longer and geometric ("a tall black pointed cone hat with a wide round flat brim"), which the shape lesson asks for. The producer graded those earlier hat, boot and witch hat 5, 5 and 5 in the blind Redraw tab. The haunted house came out a tidy cottage: its Blender model was built straight, though the plan said crooked.
+- **Cast cards.** All three read as scenes with the game's characters. The man again wears his own overalls, in a space cabin where the brief asked for a space suit.
+- Waiting for the producer's grades in the Cards tab.
+
 ## Limits
 
 Eight blind pairs per role is a small sample, and rounds are noisy. Reviewers are models, and on pairs of different objects they also raise false alarms on hidden real controls, so they guide edits and are not a gate. The human ratings come from one rater.

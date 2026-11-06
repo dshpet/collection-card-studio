@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the witch-hat cone faces the camera square-on with the buckle dead centre, while the brim is drawn as a wide tilted oval seen from above. The cone and brim don't share one view. B: the mortarboard is in a consistent high 3/4 view, with the top board, skullcap and tassel all turned the same way.",
+   "fix": "Turn the hat a little to 3/4 so the buckle sits off-centre and the cone leans with the brim, all seen from one slightly high camera."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the candlestick is drawn straight-on and upright, but the stone ledge under it runs on a steep diagonal. The object isn't turned to match the surface it stands on. B: the vending machine is in a clean 3/4 view with its front and side faces converging gently, and its feet sit on the floor.",
+   "fix": "Turn the candlestick and its ring handle to match the angle of the ledge, with a mild 3/4 view from slightly above."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the potion bottle is dead-frontal at eye level, the table planks run perfectly horizontal and the background is flat. That's a stacked, staged layout. B: the beach ball is cropped close on sand that recedes in perspective, giving a natural camera.",
+   "fix": "Raise the camera slightly and turn the table so the planks recede at an angle. Crop the bottle closer."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the cauldron is perfectly symmetric and frontal. The rim shows a wide top opening as if seen from above, but the body and legs are seen from straight on. B: the lawn mower is in a consistent 3/4 view, its wheels foreshortened in step with the body, and it sits on the grass.",
+   "fix": "Show the cauldron in a 3/4 view from slightly above so the rim oval, the round body and the three legs all share one camera, with one leg in front of the others."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the tree is frontal and symmetric, with roots fanning evenly left and right on flat, horizontal hills. B: the topiary stands on a planter whose curved path recedes, giving a believable ground plane.",
+   "fix": "Turn the trunk so the hollow faces partly sideways, with roots overlapping toward the viewer and the ground receding behind."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the lion statue is in a 3/4 view on a stepped plinth, with a receding path. B: the bottle tilts and floats in a mild 3/4 view. Both views hold together.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the jack-o'-lantern is square-on and mirror-symmetric with the stem straight up, so it reads like a front elevation with no turn. A: the jacket is turned 3/4, with the sleeves and sash foreshortened consistently.",
+   "fix": "Turn the pumpkin about 20° and look down slightly so the face wraps around the curve and some of the top and stem shows."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the roller coaster uses a dramatic low angle, but the track and cars converge consistently. B: the scroll lies on the table at an angle that matches the table edge. I can't separate them on viewpoint.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the ghost sheep is at eye level, with the pumpkin and sheep spread across the frame on a flat lawn. A: a high camera looks down onto the float and pool, so the ground plane reads clearly.",
+   "fix": "Raise the camera slightly so the lawn recedes, and overlap the pumpkin with the sheep's legs."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the bat is dead-frontal with both wings spread flat across the frame like a sticker, with no foreshortening on either wing. A: the jellyfish is tilted 3/4, with its bell and tentacles receding.",
+   "fix": "Tilt the bat 3/4 so one wing comes toward the viewer and the far wing is shorter and partly hidden behind the body."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the candy corn is frontal at eye level, the table planks run horizontal and the background is a flat wall, so it's a staged front view. A: the fruit plate is seen from a high 3/4 angle, with the plate oval and the fruit overlapping in depth.",
+   "fix": "Raise the camera so the candy corn is seen slightly from above, with the table receding diagonally and the piece cropped closer."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the house sits small on a round hill. The tower and the gable wall are drawn at slightly different turns, and the horizon is low and generic. B: the gate is frontal but the paved path recedes consistently into the scene.",
+   "fix": "Put the tower and the house on one 3/4 view, from a slightly high camera, cropped closer."
+  }
+ ],
+ "pattern": "Generated cards often place the object square-on and mirror-symmetric (pumpkin, cauldron, bat, candy corn, potion). Some parts show a top view (rims, brims) while the body is seen side-on, and the ground runs flat and horizontal or at an angle that doesn't match the object. Real cards commit to one mild 3/4 camera, slightly high, and crop close."
+}

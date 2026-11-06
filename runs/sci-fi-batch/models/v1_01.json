@@ -1,0 +1,17 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "loose": [],
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The nose cone is upside down: the ogive radius is computed from (length - z), so it is 0 at the body top and full at the top. The cone stands on its point with a flat face upward and doesn't connect to the body. It should be full radius at the body top and come to a point at the top.",
+   "The concrete pad renders almost white-cream and doesn't read as concrete. It needs a darker, cooler grey."
+  ]
+ }
+]

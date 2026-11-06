@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (bike on car rack): soft, slightly blurred paint on the red frame and car body. Fine detail stays quiet, like the real cards. B (rover): the whole body is one even matte white plastic with crisp tiny screw heads at the panel corners and a sharp-edged vent plate. The lunar ground is covered in uniform speckle noise. That is the crisp, evenly spread small-hardware look of the generated lesson cards.",
+   "fix": "Soften the rover body. Let the white shell carry a broad soft sheen on the top face and keep only two or three readable bolts, slightly blurred. Make the ground a smooth soft gradient with a few large craters and no fine speckle."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (binoculars): smooth green rubber-plastic with soft highlights. The wood planks have quiet, broad grain, like the real wooden cards. B (rocket): the white body is chalky and dead-matte. The concrete floor has photographic grain and mottling, and the fins are flat red with no sheen. The material breaks from the soft toy finish of the real set.",
+   "fix": "Give the rocket body a soft glossy toy-plastic sheen with one broad highlight down the side. Make the floor a smooth painted surface with no concrete grain."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (vending machine): soft blue lacquer with blurred cans and drink bottles, and condensation drops rendered softly. B (console): the box is one even sheet of brushed gray metal with a uniform sheen everywhere. The red buttons are identical glossy beads with crisp rims. One finish covers the whole object.",
+   "fix": "Break up the console's finish. Make the main box a softer painted metal, the screen dark glass with one soft reflection, and the knobs a different finish. Soften the button rims."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (scout jacket): matte fabric with soft folds and quiet button details. The badges are slightly glossy, so the card mixes finishes the way real cards do. B (helmet): the gold visor is a mirror-smooth lacquered dome. The white shell has small crisp gold rivet beads on the neck ring. Everything is equally polished toy plastic.",
+   "fix": "Make the helmet shell a softer satin white with gentle shading. Give the visor one broad window reflection instead of an all-over golden lacquer. Drop the tiny rivet beads or blur them into the ring."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both cards are painterly character scenes. A (beach man): skin, striped fabric and pig are soft and even. B (space man): the bubble helmet and seat have crisp glossy rims and glowing cyan rings. The harness buckle is a sharp chrome disc. That small, crisp, glossy hardware is what the generated lesson cards add.",
+   "fix": "Soften the seat and harness hardware. Use one dull metal buckle without a glowing ring, and a faint, barely visible helmet glass with a single soft highlight."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (planet): the sphere and ring are one smooth plastic with a faint even grain on the orange ball. Real cards never show that grain. B (neck pillow): fine fabric weave and soft puckered seams read as true fabric at a quiet scale. Both measure low on gloss.",
+   "fix": "Render the planet as a clean, smooth glossy toy ball with a soft highlight upper-left and no surface grain. Give the ring a slightly different, more matte finish."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (submarine): glossy yellow hull with copper porthole rims and a few rivets. The highlights are broad and soft. B (UFO): the saucer has streaky brushed-metal reflections across the whole disc and many crisp small rivets. The orange lights are identical glassy beads. That is high-contrast, evenly spread metal detail.",
+   "fix": "Paint the saucer as smooth soft gray metal with one wide soft highlight and no brushed streaks. Use fewer rivets, and give the dome a single soft reflection."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the real lighthouse from the lessons: soft bricks, gentle blur, large brick scale. B (moon dome): the white panels are one even matte plastic with crisp seam lines and a riveted plate. The ground carries uniform fine speckle and pockmark noise.",
+   "fix": "Smooth the lunar ground into soft broad shading with a few large craters. Give the dome a gentle satin sheen and soft seam grooves without the riveted plate."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A (scarf): soft matte cloth folds with a glossy badge, which mixes finishes like the real cards do. B (meteor): the icy tail is wispy and smeared with streaky, unresolved strokes. The rock has mottled, noisy texture inside the craters. The background is also smeared. That is visible AI smear and noise.",
+   "fix": "Draw the meteor as a clean solid rock with smooth shading and a few crisp soft-edged craters. Draw the tail as a smooth, simple gradient trail with clean edges and no wispy streaks."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (bag): heavy, sharp canvas weave over the whole bag, plus a dashed stitched patch. The texture is large and decorative, like the stitched seams the generator added in the glove lessons. B (clock): close to the real clock in the reference set, with a soft blurred face and plain matte rim.",
+   "fix": "Make the bag a smooth soft-yellow material with only a faint hint of fabric. Remove the dashed stitching around the patch, and keep the handles as smooth glossy plastic."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (bumper car): glossy green body, a matte dark seat and a soft white stripe. The finishes are mixed and the detail is quiet. B (glass tube): a clear glass cylinder with a glowing cyan base ring and a chrome cap. The floor has streaky glossy reflections and plank seams. The glass-and-glow finish is evenly slick everywhere.",
+   "fix": "Give the tube cap and base a soft painted metal with one broad highlight. Make the floor a matte soft surface without streaky reflections, and keep the glass to a few clear soft highlights."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (photo card): the white paper border carries visible fibrous grain and noise in the crop. The signature is a dry-brush stroke with ragged edges. B (bird feeder): wood planks with quiet, broad grain lines, and seeds and rope at a readable toy scale. B's finish is closer to the real wooden cards.",
+   "fix": "Make the photo border clean smooth white card with a soft sheen and no paper grain. Draw the signature as a smooth even ink line."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away up close. Small hardware is too crisp and too evenly spread: rivets, screw heads, stitched dashes, button beads. One finish covers the whole object, such as all brushed metal, all lacquer or all chalky matte, instead of mixed soft finishes. Fine surface noise shows up where real cards have smooth gradients: grainy ground, paper or concrete, and canvas weave. Glows and trails are wispy and smeared. Real cards are softer and slightly blurred, with large quiet texture and only a few small details."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the bike sits on a car's rear rack and the background is a few large, quiet shapes: the car body, a road and soft sunset hills. It reads as a real category-4 scene, though its detail measures above the range. B: a rover is centred and fully in frame on a grey moon plain. The ground is covered in dozens of small craters and pebbles of even size, scattered like confetti, so the environment has a lot of small, uniform detail.",
+   "fix": "Put the rover on a smooth grey plain with only two or three large, soft craters. Remove the scattered pebbles and small pits. Let the rover fill the frame and crop off one edge."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the binoculars lie on warm wooden planks with a few long, quiet grain lines (category 3). B: the rocket stands on a grey concrete slab with seam lines and speckled grit. Behind it are bold, saturated orange and yellow diagonal stripes, so a ledge and a loud graphic wall are stacked in one card. The hero is small and centred.",
+   "fix": "Stand the rocket on one plain, smooth surface. Make the backdrop soft tone-on-tone stripes with low contrast. Make the rocket larger so it fills most of the card."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the vending machine stands on a soft purple floor that fades into a purple wall, a quiet category 2. B: the console sits on a large white slab that cuts diagonally across the lower half. The slab's hard, bright edge competes with the hero against the blue gradient.",
+   "fix": "Rest the console on a ledge in a slightly darker shade of the backdrop colour, with a soft edge rather than a bright white slab."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the jacket sits on a green sunburst with broad, low-contrast rays. B: the helmet sits on a pink sunburst with thinner, denser rays and a brighter magenta hot spot behind it. This matches the glowing burst seen on the generated glove and camera cards in the lessons.",
+   "fix": "Use wide, soft sunburst rays in two close shades of pink, with no bright glow behind the helmet."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both are busy character scenes. A: the beach scene has palm trees, an umbrella and waves at the edges, all as large shapes. B: the spaceship interior adds ceiling lamps, a glowing porthole rim, purple neon strips and a console with blinking lights. That is many small glowing accents behind the figures.",
+   "fix": "Simplify the cabin to one big porthole and plain curved walls. Drop the neon strips and the small blinking lights."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a small Saturn floats in the centre of evenly spaced, crisp concentric blue rings, with wide empty margins all round. B: the neck pillow fills the frame over soft, low-contrast pink rings, like the real cards, where the hero fills the card.",
+   "fix": "Make the planet much larger so the ring tips nearly touch the card edges. Soften the concentric rings to two very close shades of blue."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the submarine sits on a dark green sunburst with an even, soft centre. B: the UFO sits on a purple sunburst with a strong magenta halo glowing around the saucer, the same backlight glow the generated lesson cards show.",
+   "fix": "Remove the glow behind the saucer. Use an even purple sunburst with wide, low-contrast rays and no bright centre."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "A is the real lighthouse card from the lessons: a cropped tower against large, quiet clouds and sea. B: the moon base is small and fully in frame. The grey ground is scattered with many craters and pebbles, under an orange sky with puffy clouds.",
+   "fix": "Make the dome large and crop it at the card edge. Keep the ground as a smooth grey plain with one or two large craters and no scattered pebbles."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the neckerchief sits on a soft blue swirl with broad, low-contrast bands. B: the comet sits on a repeating wavy pattern of yellow and orange ribbons. It is an invented motif that does not appear on the real cards, and its long glowing tail adds a whimsical motion effect.",
+   "fix": "Replace the wavy ribbons with a plain orange sunburst or soft stripes in two close tones. Shorten the tail to a simple soft streak."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the bag stands on a plain purple ledge in front of soft purple stripes (category 2). B: the clock sits on green stripes, like the real clock card. The stripes are slightly more uniform and the clock is centred rather than offset, but staging gives no clear reason to pick either card.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the bumper car sits low and large on a rink floor with yellow lane lines and reflections, against concentric orange rings. B copies that rink-and-rings setup for a glass tube. A cyan glow pools on the floor under its base, and the tube stands small and centred with empty floor around it.",
+   "fix": "Make the tube larger and set it lower in the frame. Remove the cyan glow on the floor. Use a plain ledge rather than an amusement-park rink floor."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the photo card sits on a red sunburst made of a few quiet rays. B: the bird feeder hangs on a tree trunk in a park full of small elements: several trees, bushes, a paved path, a lamp-post and city buildings. Background detail measures 0.0216, above the real range, a busy environment rather than a few large shapes.",
+   "fix": "Keep the tree trunk and one big leafy canopy, and blur the rest into soft green and blue shapes. Remove the buildings, path and bushes."
+  }
+ ],
+ "pattern": "Generated cards stage the hero smaller, centred and fully inside the frame, where real cards fill the frame and often crop the hero. Their environments are covered in uniform small detail: scattered craters and pebbles, park clutter, neon accents. Their backdrops add a glow behind the hero, denser or invented patterns (wavy ribbons) or a loud stripe wall, where real cards use a few large, low-contrast shapes."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the camera is close and low behind the car. The bike fills the frame and is cropped at the edges, the road and hills fall away behind it, and there are clear foreground, hero and background layers, like the cropped real lighthouse and desk. B: the rover is small and centred, seen from a mid-height three-quarter angle. Its whole body sits inside the frame on a crater floor that runs evenly back to a flat sky, and the far ground is no simpler than the near ground. In the normal map the box is made of tidy flat panels.",
+   "fix": "Bring the camera low and close so the rover fills the card and its front wheels run off the bottom edge. Let the crater ground fall away into a soft, simpler distance behind it."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the binoculars are seen from above and tilted across the frame on a plank floor whose lines converge, so the floor reads as one consistent ground plane. B: the rocket faces the camera almost straight on at eye level. It stands in a flat room corner, with a grey floor meeting a striped wall at a hard horizontal edge. The fins are flat and set symmetrically, and there is little top face or turn.",
+   "fix": "Turn the rocket three-quarters and raise the camera so the top of the nose cone and one fin's top edge show. Replace the room corner with one floor plane that recedes behind it."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the vending machine is turned three-quarters with a mild top view, and it stands on a floor that fades softly into the backdrop. B: the console sits on a white slab that is cut off by the frame. The top, front and side planes are huge, flat, even areas (planar_share 0.672, above the real range), and the slab edge runs at a different angle from the box's base, so the ground does not match the object.",
+   "fix": "Show the console on the same floor angle as its base, turned three-quarters with mild perspective. Drop the cut-off slab and let the floor fade softly into the background."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the jacket is turned three-quarters, and the sleeves, collar and body overlap in depth. B: the helmet is nearly frontal. The visor is a flat disc facing the camera, the neck ring is seen from slightly below, and the side ear pods are symmetric, so the object barely turns.",
+   "fix": "Rotate the helmet three-quarters with the camera slightly above, so the visor turns away to one side and the top of the dome and the inside of the neck ring show."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the man and the pig are pushed close to the camera and overlap, the beach props sit softly behind them, and the waterline gives one ground plane. B: the seated man, the floating pig and the porthole are spread across the frame at similar sharpness. The chair is foreshortened toward the camera with a wide-angle feel (the boots look oversized), and there is no clear ground plane.",
+   "fix": "Use a normal lens with no oversized boots. Keep the man and the pig as one overlapping group close to camera, and make the cabin wall softer and simpler behind them."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the planet is a centred sphere with a ring tilted at a generic three-quarter angle, floating in front of concentric rings, with one depth layer and no anchor. B: the pillow is seen at a turned, slightly top-down angle with clear overlap at the clasp. Both are floating icons, so the difference is weak.",
+   "fix": "Tilt the ring more steeply so its near edge clearly overlaps the sphere and the far edge hides behind it. Turn the planet off-centre with a mild camera-from-above view."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the submarine is turned three-quarters, the nose comes toward the camera and the periscope overlaps the hull. B: the saucer is a flat disc seen from above at a tilt. Its top plate is one large flat patch in the normal map (planar_share 0.452), with the dome sitting dead centre, so it reads as a tilted plate with little sense of volume or a consistent view of the underside.",
+   "fix": "Show the saucer from a lower three-quarter angle so its rim thickness and a sliver of the underside show, with the near rim larger than the far rim."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the real lighthouse: a low camera, cropped at the bottom, with a sea horizon low behind it. B: the moon base sits small in the mid-ground, seen from a high three-quarter angle. The cratered ground recedes evenly to a horizon at the top of the frame, and the whole object floats in a wide landscape, like the generated lighthouse on its island in the lessons.",
+   "fix": "Bring the camera low and close so the dome fills the card and is cropped at the bottom. Put the horizon low behind it and make the far ground simpler."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the scarf is seen frontally with a slight top view into the neck loop, and its overlaps (knot over the tails) are clear. B: the meteor ball is three-quarter, but its tail sweeps in a wide-angle curve to the upper right, and the curve has no consistent relationship to the ball's view. The ball and tail share one sharpness, with no depth separation from the background.",
+   "fix": "Keep the comet tail in the same view as the rock: a straight trail that recedes behind the ball and thins away toward the back."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the bag sits on a floor plane meeting a back wall, turned slightly, with the bottles overlapping behind the handles. B: the clock is drawn straight on as a flat disc. The normal map is almost entirely one flat patch (planar_share 0.675, above the real range), and the rim has no visible side thickness. The real clock in the anchor is turned so that its orange rim depth shows.",
+   "fix": "Turn the clock slightly so the orange rim's side thickness shows on one side and the face is a slight oval, and let it cast a soft shadow on the wall behind it."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the bumper car is seen from a low, close three-quarter angle, cropped at the bottom, and the arena floor lines converge. B: the glass tube stands dead centre, frontal and symmetric, on the same floor. The camera is at mid-height with no turn, the top cap is barely visible, and it is a large flat-faced form (planar_share 0.681, above the real range).",
+   "fix": "Lower the camera and move it closer at a slight three-quarter angle so the base ring is larger in front and the tube is cropped near the bottom edge, with the floor lines running toward it."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the photo card lies almost flat to the camera with only a slight rotation, and the normal map is uniform (planar 1.0), but that matches a flat object. B: the bird feeder is seen at eye level and slightly from below, with a blurred park and city layers behind it and a clear separation between hero and background. Neither card shows a viewpoint error that separates generated from real.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards keep the camera at a safe middle distance, so the whole object sits small and centred in the frame. They turn objects frontal and symmetric (rocket, helmet, tube, clock) or float them as tilted plates (saucer). The ground is a flat corner or slab, or a landscape that recedes evenly into the distance. Real cards use a closer, lower three-quarter camera, crop the hero at the edges, set a low horizon, and make the background simpler than the hero rather than as detailed."
+}

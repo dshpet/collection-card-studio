@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "A: the bandana is seen from slightly above and in front. The inside of the neck loop and the knot behind it are seen from the same height, so the whole piece holds one view. B: the collar ring is seen steeply from above, showing its whole inner back surface, but the badge and the two hanging tails face the camera flat-on, as if from eye level. The two views are close, so this is only a weak lean.",
+   "fix": "Draw the whole neckerchief from one gentle three-quarter view from slightly above. Show only a thin sliver of the collar's inner back, and tilt the badge and tails slightly so they recede with the collar."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a low camera looks up the coaster track. The cars and rails narrow evenly toward the top and run off the frame, which matches the close crop of the real lighthouse. B: the wagon box is turned three-quarters, but all the wheels are drawn as near-round side-on circles, including the front pair, which should be squashed into narrow ovals by that turn. The ground also shows a lot of top surface, like the high camera on the generated computer cards.",
+   "fix": "Draw the wheels as ovals squashed to the same turn as the wagon box. Make the front wheels narrower ovals than the side wheels, and lower the camera so less dirt ground shows."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cactus faces the camera dead-on and perfectly symmetric, standing in the centre on sand at eye level against a flat striped wall. This matches the head-on framing of the generated lesson cards, and its planar share of 0.002 is below every real card. B: the binoculars sit three-quarters on floorboards that narrow evenly toward the top. The two lens rims shrink correctly from the near barrel to the far one.",
+   "fix": "Turn the cactus about 30 degrees so one arm comes toward the viewer and the other goes back. Raise the camera slightly so the top of the sand shows as a gentle slope."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "B is the real lighthouse from the lessons: a low, close camera, the tower cut off at the bottom edge, and one consistent view. A: the windmill wheel faces the camera almost flat-on, as a full circle, while the brick tower below is turned three-quarters and the tail vane points sideways to the back. The wheel and the tower do not share one view.",
+   "fix": "Turn the windmill wheel to match the tower, so the wheel reads as an oval seen at an angle and the tail vane points straight back, away from the viewer."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the lasso loops are drawn as perfect circles seen straight down, flat on the background. The red wrap at the top, though, is shown from the side as a stack of coils, so two views are mixed and there is no ground or depth. Its planar share of 0.0 is below every real card. B: the grad cap's square board is seen at a mild three-quarter angle from above, with its top face and front edge consistent with the band below.",
+   "fix": "Show the coiled lasso from a three-quarter view from slightly above. Draw the loops as ovals squashed by the tilt, with the near rope thicker than the far rope, all in the same view as the wrap at the top."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: a desert scene with the camera slightly above. The pot opening shows as an oval, there is a sand ground plane, and distant mesas are lighter. B: an eye-level crowd scene with the stage frame behind and small crowd figures in the middle distance. Both build depth in the same way, and neither breaks the view, so I have no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the jacket floats three-quarters from slightly above, with both cuff openings and the collar seen in the same view. B: the cowboy hat is head-on and perfectly symmetric. The front brim dips to show its underside, as if seen from below, while the crown dent is visible from above, which matches the generated lesson cards' habit of facing the camera.",
+   "fix": "Turn the hat three-quarters and view it from slightly above. Show the top of the brim curling up at the sides, so the brim's underside does not show."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the butte is seen at eye level with no top face showing. Its base sits on a ground plane, and distant mesas are paler, so the layers are clear. B: the spiral topiary sits centred and symmetric in a planter seen fairly high from above. The curved path and the hedge band behind it are stacked rather than receding, and the leaf surface has the lowest planar share (0.009), below every real card.",
+   "fix": "Lower the camera so the planter rim shows as a thin oval. Turn the spiral so it climbs visibly around the back, and let the garden path run back toward the hedge."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the popcorn cart is seen side-on at a mild angle. Its wheels are round, as they should be on a side-on cart, and the tiled floor narrows evenly. B: the horseshoe shows its full un-squashed U shape to the camera, as if standing upright, while the sand under it is seen at a steep angle from above. It reads as pasted onto the ground instead of lying on it.",
+   "fix": "Lay the horseshoe flat on the sand and squash its U shape to match the angle of the sand, or stand it clearly upright with its lower edge sunk into the sand and a contact shadow behind."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the pair of sneakers is seen from a high three-quarter camera on a large floor area that meets the wall high in the frame. This matches the generated computer cards, which show more ground from a higher camera. B: the boot is in near side profile at eye level, on a shelf whose top surface is seen at a gentle angle. The view is consistent and the camera is low, like the real cards.",
+   "fix": "Lower the camera toward table height so only a thin strip of floor shows, and move the wall line down behind the shoes."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the popsicle floats at a tilt, and its side thickness shows consistently along the lower left edge, like the floating bottle among the real cards. B: the ring box is seen three-quarters from above, with the open lid and the base in the same view and the medal tipped up in its slot. Neither breaks one view.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the camera is just above the bird feeder, so the roof planks and the seed tray are both seen from slightly above. It is cropped close by the tree, with a simpler park behind it. B: a low, worm's-eye camera gives forced perspective. The motel balcony lines converge sharply to the left, but the sign panels face the camera almost flat. Its planar share of 0.519 is above every real card.",
+   "fix": "Raise the camera to about eye level so the motel's walls stay nearly upright. Turn the signs slightly so they recede in the same view as the building, and keep the perspective gentle."
+  }
+ ],
+ "pattern": "Generated cards break the single view. One part faces the camera flat (a wheel, a badge, a horseshoe, a coin) while the body or the ground around it is seen at a three-quarter angle or from above. They also tend toward centred, symmetric head-on framing, higher cameras that show too much ground, and the whole object placed on an added base. Real cards use one mild three-quarter view, usually lower and closer, often cropped."
+}

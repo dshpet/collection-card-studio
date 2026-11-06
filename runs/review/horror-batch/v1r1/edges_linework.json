@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (witch hat): the cone and brim carry a grainy fabric-noise texture in the edge map, the brim's lower rim has a heavy dark contour, and the cone's right side fades into a lost edge. Nothing is sharpest at the buckle. B (graduation cap): crisp, even silhouette on the board, clean thin seam where the skull meets the band, and a tassel with a few precise strands. That matches the real cards.",
+   "fix": "Smooth matte black felt with no surface grain. The hat's silhouette is crisp all the way round, with no dark rim line under the brim. The sharpest edges are on the gold buckle; the cone's edges are clean but softer."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (candlestick): the gray ledge is covered in speckle edges and the brass has many thin ring lines; the dish and handle are drawn with doubled hairline contours. The scene reads photographic rather than chunky. B (vending machine): bold rounded panel grooves and a clean outer contour. Some droplet speckle on the glass, but the edge pattern is otherwise card-like.",
+   "fix": "A plain smooth tabletop with no stone speckle. A chunky brass candlestick with a few broad rounded rims instead of many thin rings. The candle's edges are crisp, the table soft."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (potion bottle): the outer glass wall is a thin doubled hairline, there are many tiny bubble circles, and dense wood-grain lines run through the background. Dark-outline value is below the real range. B (beach ball): very few internal edges, just the panel seams and the cap ring. Panel boundaries are soft and the sand has dot speckle, so it is under-dense, but it has no fussy micro-detail.",
+   "fix": "A thick rounded glass bottle with one bold smooth rim, only a few large bubbles, and a softly blurred tabletop with no fine grain lines. The cork and liquid line are the crispest edges."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (cauldron): subject edge density is below the real range. The pot's belly is a soft blur with streaky scratch marks, the rim and legs have uniform thin contours, and the grass is filled with small outlined daisies. Edge hierarchy is weak. B (lawn mower): crisp wheel rims and a clean handle tube, with the deck seams sharp and the grass soft. That fits the real cards.",
+   "fix": "A cauldron with crisp, clearly separated rim, handles and legs. A smooth body with no scratch streaks. A few bright bubbles with sharp edges at the top as the focus. Soft grass with no outlined flowers."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (dead tree): a continuous heavy dark contour runs around every branch and the trunk, like an inked outline, and the bark is filled with fine streak lines. Real cards have no drawn outline. B (topiary): very dense, with subject density above the real range and repetitive leaf scallops. Its boundaries are formed by shading, not ink lines.",
+   "fix": "Paint the tree with no dark outline around the branches. Separate the bark from the sky with light and shadow only. A few broad, deep bark grooves instead of many thin streaks."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A (lion statue): a fairly strong contour around the mane and busy foliage and path edges in the background, though still within the real range. B (sports bottle): a clean, sparse silhouette with one wave groove; subject density is a little low. Neither card shows a clear generated edge signature.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (pumpkin): subject edge density is far below the real range. The rib grooves are nearly lost, and the outer silhouette is dark on the left but fades on the right. The only crisp edges are the carved eyes and mouth, cut with thin bevel lines. A (scout jacket): clear, consistent seams, pocket flaps and badge rims at the density real cards show.",
+   "fix": "A pumpkin with deep, clearly visible rounded rib grooves running top to bottom and a crisp silhouette all the way around. A thick, chunky stem with sharp edges, and carved face cuts with broad rounded bevels."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A (roller coaster): rounded car rims and track ties are evenly crisp and the clouds are softer. That is a real-like hierarchy. B (diploma scroll): a clean, sparse scroll silhouette, a crisp wax-seal scallop, and soft table reflections. Both sit inside the real ranges with no outline or halo.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (ghost sheep): heavy dark contour lines around the sheet hem, eyes and hooves; drawn motion-line strokes beside the pumpkin; and hatched grass texture across the whole ground. Dark-outline value is high. A (pool sheep): busy pool and foliage edges in the background, but the sheep's boundaries come from shading, with no ink lines.",
+   "fix": "No dark outlines around the sheet or face. The cloth's folds are shown by soft shading, with no motion lines drawn beside the pumpkin. Smooth, softly blurred grass behind."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (bat): dense fine hair-strand edges in the chest fur and thin hairline wing ribs. A bright rim instead of a dark boundary puts outline darkness below the real range. The micro-detail is finer than real cards carry. A (jellyfish): a bold, smooth bell contour and broad tentacle bands. The light rays add background edges, but the form is chunky.",
+   "fix": "A bat with soft, chunky clumps of fur instead of individual hairs. Thick rounded wing bones with smooth membranes. A clean, solid silhouette with no bright glowing rim."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B (candy corn): subject edge density is 0.01, far below the real range. The color-band boundaries are soft blurs and the surface is grainy speckle. Only the base and silhouette register, so the form reads as a blurred blob. A (fruit plate): crisp slice rims, seeds and plate edge at real-card density.",
+   "fix": "Candy corn with a crisp, smooth outer silhouette and clean, sharp boundaries between the white, orange and yellow bands. A glossy surface with no grain. A clear highlight edge along the rounded tip."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (witch house): a dark contour line traces the tower and roof outline, and roof shingles and wall stones are cut as even thin grooves. The grass carries outlined flower doodles and the moon has crater scribbles. B (gate): very dense ornate scrollwork with subject and background density above the real range. The bricks and scrolls are bold, rounded and chunky rather than hairline.",
+   "fix": "No dark line around the house silhouette; separate it from the sky by value only. Fewer, larger roof tiles with broad rounded gaps. Smooth grass without small outlined flowers, and a plain soft moon."
+  }
+ ],
+ "pattern": "In the lessons, generated cards differ from real ones mainly in edge hierarchy and in how small the detail gets. Real cards use bold, rounded grooves and a few large parts. Generated cards add many small hairline features, like stitching, buttons, fur strands, bubbles, wood grain and scribbled flowers. They also keep everything equally sharp or equally soft, and either ink dark contour lines around the silhouette or let whole forms blur. Under-dense blobs (candy corn, pumpkin, cauldron body) are also a tell: soft band and rib boundaries with grainy surface speckle in place of crisp sculpted edges."
+}

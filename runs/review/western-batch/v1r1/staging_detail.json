@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the bandana floats on a quiet tone-on-tone wave pattern (category 1). B: the neckerchief floats on concentric rings that glow slightly brighter behind it. Both are flat graphic fields with no props. B's campfire badge is a plausible part of the object, not added decoration. Nothing in the staging separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the coaster car is cropped by the track and sits in a few large, quiet shapes (sky, clouds, soft hills), like the real lighthouse card. B: the wagon is shown whole on a dirt road scattered with pebbles, a rock, grass tufts at both bottom corners, and distant trees and hills. That is a lot of small detail, and background detail of 0.036 is above the real range.",
+   "fix": "Covered wagon close up and slightly cropped by the frame, on a smooth plain dirt ground with no pebbles, rocks or grass tufts, under a simple blue sky with one or two soft clouds"
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cactus stands on sand in front of a striped backdrop, with small pebbles scattered around its base and to the right. These are small props it doesn't need. B: the binoculars lie on wide wooden planks with no props, like the real book-on-wood card. The difference is weak.",
+   "fix": "Cactus standing in smooth, clean sand with no pebbles or stones around it, in front of a plain soft striped wall"
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "B matches the real cropped lighthouse from the lessons: few large shapes, cropped at the bottom. A: the windmill is shown whole and set back in a golden field, with a grass-tuft texture across the whole bottom band and cloud banks on both sides. It is staged as a whole scene rather than a close crop.",
+   "fix": "Windmill drawn large and close, its tower cut off by the bottom edge of the frame, with a plain smooth field and a simple blue sky"
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the lasso floats on purple concentric rings and casts a soft drop shadow onto the flat field. The ring centre does not line up with the hero, and the lasso sits off to the upper left. B: the cap sits centred on blue rings. Both fields are quiet. The difference is weak.",
+   "fix": "Coiled lasso centred in the frame, floating on the plain ring pattern without a cast shadow on the background"
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both are busy character scenes. A adds western story props around the cook: a cactus top left, a mesa, a column of steam, a campfire ring of rocks, and pebbles across the sand. B is a concert stage with confetti, string lights and a crowd, which is busier still. A's set dressing reads as invented storytelling.",
+   "fix": "Cut the cactus, the distant mesa and the scattered pebbles. Keep only the cook, the pig and the pot over the fire on plain smooth sand under an open sky"
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the jacket sits on a green sunburst that darkens evenly toward the edges, like the real cards. B: the hat sits on a blue sunburst with a bright glowing hotspot directly under the brim. This is the same halo-behind-the-hero the generated glove and camera lessons show.",
+   "fix": "Cowboy hat floating on an evenly lit blue sunburst, no bright glow or light spot behind the hat"
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the mesa is surrounded by scattered small props: three to four shrubs at its base, grass tufts, and many pebbles across the foreground sand, plus distant buttes on both sides. B: the topiary sits on a clean plinth with a hedge, a path and lawn, all large quiet shapes, though the lawn has some leaf tufts.",
+   "fix": "Desert mesa large and central on smooth, empty orange sand, with no shrubs, grass tufts or pebbles, and a plain blue sky"
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the popcorn cart stands on a tiled floor in front of a quiet tone-on-tone diamond wall (category 3). B: the horseshoe stands upright, half-buried in a sand dune with pebbles scattered at the left and right, in front of a pink diamond wall. The sand ridge and pebbles are added dressing, and edge density of 0.010 sits at the low edge of the real range.",
+   "fix": "Horseshoe standing on a plain smooth ledge of sand with no pebbles, in front of the quiet pink diamond-pattern wall"
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the sneakers stand on a plain cream ledge against an orange wall (category 2), clean and real-like. B: the boot stands on a wood plank shelf with visible knots and grain, against a green gradient. That is the same wood-surface staging the generated computer lessons used, and it gives the bottom third more texture.",
+   "fix": "Cowboy boot standing on a plain smooth light ledge, no wood grain or plank lines, against a soft green gradient wall"
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the popsicle floats on a green sunburst. B: the medal box floats on a blue sunburst with a slightly brighter centre. Both are category 1 with no props and quiet fields. A's low numbers just mean a very quiet field, which is not a flaw.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the bird feeder is cropped and close against a tree trunk, with a soft-focus park and buildings behind it, all large shapes. B: the sign is placed in a full night scene: a motel building with a balcony and lit windows, a fence, a tree, stars and distant mountains. That is many separate objects, and edge density is higher at 0.053.",
+   "fix": "Motel sign large and central against a plain night-blue sky with a few stars, with no building, fence or tree beside it"
+  }
+ ],
+ "pattern": "Generated cards place the hero inside a whole little scene where real cards would crop close. They scatter small invented dressing: pebbles, grass tufts, shrubs and rocks around the base, or extra buildings, fences and distant buttes. They show the full object with its base or island rather than a tight crop. They also add a bright glow hotspot in the sunburst or ring field right behind the hero, and swap a plain ledge for textured wood planks or a sand ridge."
+}

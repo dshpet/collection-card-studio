@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the witch hat is one near-black mass (cone and brim fall into the darkest grey level) on a light-green ring field with a bright glow right behind the cone. Only the buckle breaks it. rms 0.216 and gap -0.436 are both well outside the real range. B: the cap is dark navy too, but its board and band step through mid and dark greys, and the gold trim and tassel add light accents. Its rms 0.165 and gap -0.312 are near the real edge.",
+   "fix": "Make the hat a medium charcoal-purple, not black. Put a soft lighter sheen along the left side of the cone and the top of the brim so the hat reads in two or three grey steps. Shrink the bright glow behind the hat so the background stays an even mid-tone."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the candle card is washed out. Light cyan wall, pale grey counter and a white candle all sit in the two lightest levels. The brass holder is the only mid-tone and there is no real dark accent. rms 0.098 is below the real minimum and the mean of 0.753 is above the maximum. B: the vending machine has a clear dark blue body against a mid purple field, with a bright glass panel as the light group. That is a normal three-group layout.",
+   "fix": "Darken the counter to a clear mid-grey stone. Give the brass holder a deep shadow on its far side and a dark cast shadow on the counter. Make the wall a richer, medium-deep blue so the white candle stands out against it."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both cards are light overall and near the top of the real range. A: the purple liquid makes one dark-mid oval inside a glass outline that almost vanishes into the light table and wall, so the hero has very little edge. B: the beach ball has big, simple dark panels (blue and green) against white panels and a bright sand field, which is closer to the real value grouping. The difference is slight.",
+   "fix": "Give the glass bottle a darker rim and a shadowed right side so its outline separates from the wall. Darken the table planks a step so the bottle sits on a mid-tone base."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the cauldron is a huge near-black mass taking about half the card, with one hot white highlight on the belly and a black cast shadow under it. rms 0.215 and gap -0.355 are outside the real range. B: the lawnmower is a mid-grey red body with darker wheels on a light glow and mid grass. Its values are moderate, like the real cards.",
+   "fix": "Paint the cauldron as dark grey-violet iron with a broad, soft lighter band across the upper belly instead of solid black. Keep the darkest black only for the opening rim and the shadow under the legs."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the dead tree's trunk and branches are one dark-mid silhouette with black cracks and a black hollow, set against a pale sky and light grass. The hero is much darker than its surroundings (gap -0.32, outside the real range). B: the topiary is mid-dark green on a mid-light field. Its gap of -0.189 is just inside the real range.",
+   "fix": "Lighten the trunk to a warm mid-brown with lighter tops on the roots and branches. Keep the black only inside the hollow, so the tree reads as a medium value against the sky rather than a dark cut-out."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the water bottle is a mid-grey shape on a blazing near-white starburst. The whole card is very high-key (mean 0.815, above the real maximum) and a white glow sits directly behind the bottle. A: the white lion sits on a mid and dark garden with dark tree corners. Its gap of 0.211 is also high, but its structure (light hero on a darker set) appears in the real cards. Both cards are somewhat off.",
+   "fix": "Tone the starburst down to a medium orange with only the rays near the centre turning light yellow. Darken the outer corners slightly so the bottle is not floating in white."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the pumpkin sits on a deep violet field that reads as the darkest level almost everywhere. The card is low-key (mean 0.533, below the real minimum) and the hero is lighter than the background (gap 0.156, above the real maximum). The only bright accents are the glowing carved face. A: the jacket is a light hero on a mid-green ray field, with the dark sash as the accent. That is a normal layout, though its vignette is slightly strong.",
+   "fix": "Make the background a bright, medium-light violet with lighter rays near the centre. Let the pumpkin's orange body be the mid-tone, with the carved face as the warm bright accent."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the scroll is a pale cream shape set against a navy back wall that falls to black across the top third, and against a dark glossy table. The hero is far lighter than its setting (gap 0.313) and contrast is high (rms 0.213). A: the coaster sits in a light-key sky with a mid-blue track. Its numbers are only slightly past the real edges.",
+   "fix": "Lift the back wall to a medium bright blue with a soft lighter area behind the scroll. Make the tabletop a lighter cyan so the card does not have black corners."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the white ghost sheet is the brightest mass, cut hard against dark green grass, black hooves and hands, and a darkened pumpkin. The local contrast inside the hero is harsh (white folds next to near-black limbs). A: the pool sheep is busy but its values spread across mid levels, with the white wool as a soft light group. On the numbers A's gap is the marginal one, so this call is weak.",
+   "fix": "Brighten the grass to a lighter yellow-green and soften the shadows in the sheet's folds to light grey. Lighten the hooves and hands to dark brown-grey so they do not punch out as black spots."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the jellyfish card is low-key. The deep navy field fills the card and drops to black along the bottom edge, and only the glowing bell is light (mean 0.515, gap 0.286, both outside the real range). B: the dark bat sits on a bright orange starburst with a light glow behind it. That is a strong dark-on-light layout, but its numbers stay inside the real range.",
+   "fix": "Make the water a bright, medium-light blue with soft light rays from the top. Keep the bottom edge from going black, so the pink jellyfish is a mid-light shape on a mid-tone background."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the candy corn card is flat. The blue striped wall, the wooden table and the candy all fall into the two light-middle levels, with only a thin dark shadow under the candy (rms 0.078, well below the real minimum). A: the fruit plate has dark seeds, berries and plate shadows giving real dark accents across a light table.",
+   "fix": "Add a soft darker shadow along the right side of the candy corn and a clear dark cast shadow on the table. Deepen the wall stripes a step so the white tip stands out as the brightest spot."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both cards sit inside the real range on every measure. A: the house has a dark slate roof as its darkest mass with glowing windows and a light moon. B: the gate has dark brick pillars and ironwork against a light paved path. Both have ordinary value grouping, and nothing on this vector separates them.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards break the real cards' moderate, light-key value layout in one of two ways. Some put the hero in a dark mass far darker than its light field: the black witch hat, black cauldron and dark tree, with lightness gap below -0.3 and rms above the real range. Others go low-key, with dark navy or violet backgrounds dropping to black at the edges and a glowing hero (the pumpkin, jellyfish and scroll). A smaller group goes flat and washed out with no dark accent at all (the candle and candy corn). Real cards keep the hero within about one value step of a bright mid-tone background, with small dark accents and soft gradients."
+}

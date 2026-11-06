@@ -54,3 +54,25 @@ Variants keep the most iconic objects.
 - **Variant 1:** Jack-o-Lantern [1], Witch Hat [1], Potion Bottle [1], Candelabra [2 M], Black Cat [2], Cauldron [3 M], Broomstick [3], Candy Pail [3], Haunted House [4 M], Creepy Gate [4 M]
 - **Variant 2:** Pumpkin [1], Witch Hat [1], Ghost Sheet [1], Bat [1], Candelabra [2 M], Cauldron [3 M], Standing Mirror [3 M], Haunted Mansion [4 M], Bare Tree [4], Rowboat [4 M]
 - **Variant 3:** Pumpkin [3], Witch Hat [1], Iron Lantern [1 M], Spider [1], Cauldron [2 M], Candy Pail [2], Candelabra [3 M], Haunted House [4 M], Stone Bridge [4 M], Creepy Gate [4 M]
+
+## *-shared-cast.json: all three genres, 2026-11-06
+
+Planned with the producer's accepted lessons, variants keeping the most iconic objects, and one character card per variant (`experiments/shared_plans.py <Theme> --cast 1`). Variant 1 of each was drawn as `runs/<genre>-batch`; M is known only for those.
+
+**Western** (by hand 2026-11-06: Chuck Wagon Chef renamed Pancake Flip (name rule))
+
+- **Variant 1:** Cowboy Hat [1], Lasso [1 M], Bandana [1], Cowboy Boot [2], Cactus [3], Horseshoe [3], Covered Wagon [4 M], Windmill [4 M], Mesa [4], Campfire Pals [5]
+- **Variant 2:** Cowboy Boot [1], Lasso [1], Lantern [1], Gold Pan [2], Cowboy Hat [3], Tumbleweed [3], Cactus [4], Stagecoach [4], Horse [4], Dawn Crow [5]
+- **Variant 3:** Cowboy Hat [1], Lasso [1], Horseshoe [1], Cowboy Boot [2], Cactus [3], Hay Bale [3], Campfire [3], Covered Wagon [4], Rock Arch [4], Pancake Flip [5]
+
+**Sci-Fi**
+
+- **Variant 1:** Rocket [3 M], Flying Saucer [1 M], Ringed Planet [1 M], Space Helmet [1], Comet [1], Control Panel [2 M], Teleport Pod [3 M], Moon Rover [4 M], Moon Base [4 M], Zero Gravity [5]
+- **Variant 2:** Flying Saucer [4], Retro Rocket [1], Ringed Planet [1], Space Helmet [3], Lab Flask [2], Satellite [1], Radio Dish [3], Space Capsule [3], Observatory [4], Barn Visitors [5]
+- **Variant 3:** Toy Rocket [2], Flying Saucer [3], Ringed Planet [1], Space Helmet [1], Jetpack [1], Control Console [2], Teleport Pod [3], Space Shuttle [4], Mars Rover [4], Button Pusher [5]
+
+**Horror** (by hand 2026-11-06: Ghost Sheep subject rewritten, the planner had left a self-correction in it)
+
+- **Variant 1:** Jack-o-Lantern [1], Witch Hat [1], Bat [1], Candlestick [2 M], Cauldron [3 M], Candy Corn [3], Potion [3], Haunted House [4 M], Spooky Tree [4], Ghost Sheep [5]
+- **Variant 2:** Lantern [1], Black Cat [1], Broom [1], Crystal Ball [2], Jack-o-Lantern [3], Witch Hat [3], Candle [3], Witch Cauldron [4], Haunted Mansion [4], Vampire Pig [5]
+- **Variant 3:** Cauldron [1], Witch Hat [1], Owl [1], Manor [2], Potion [3], Candy Corn [3], Crystal Ball [3], Pumpkin Field [4], Spooky Tree [4], Ghost Man [5]

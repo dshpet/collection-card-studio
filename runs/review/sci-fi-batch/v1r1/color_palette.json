@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: red bike against a sky-blue car and a warm peach sky. The red stays red in shadow, and the card has several separate hue families, like the real cards. B: the rover body, the wheels and the moon ground all share one lavender-grey. The yellow dish is the only colored thing. Subject chroma (0.034) is below the real range, and the warm share is almost zero, so the card is a single cool grey mass.",
+   "fix": "Paint the rover body a clear color, such as a saturated white with a bright orange or blue panel and colored trim. Make the ground warm grey-brown, not lavender. Keep the blue sky, and let the rover's color stand out against it."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: green binoculars on warm wood, with cool blue lenses as the counter accent and dark green-brown shadows. B: red rocket on an orange and yellow wall. The floor and the rocket's white body both pick up a warm pink-grey. In the lens, the shadow under the fins is the same red as the fins. Warm share (0.987) is above the real range, and the card has fewer hue families than real ones.",
+   "fix": "Keep the rocket body pure cool white with blue-grey shading. Draw the floor shadow as a cool grey, not red. Add a second cool color to the card, such as a blue floor or blue window trim."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: blue vending machine on magenta, with candy-colored cans inside. The palette is loud and varied, like the real cards. B: a grey metal console on a pale blue shelf against a blue background. The red buttons are the only chroma. Subject chroma (0.053) is below the real range, and the whole object reads as a desaturated grey mass.",
+   "fix": "Give the console a colored body, such as a bright orange or teal casing with silver trim. Keep the red buttons and use a contrasting saturated background."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: tan jacket with orange cuffs and a dark green sash on a green burst. The jacket's neutrals stay sandy, and the green background contrasts with them. B: the helmet's white shell goes cream and peach, and the gold visor and orange trim pull everything warm. In the lens, the subject is a single tan-orange mass on magenta. Warm share (0.947) is above the real range, which matches the cream-whites drift in the lessons.",
+   "fix": "Paint the helmet shell clean cool white with light blue-grey shadows. Make the visor reflective blue or dark teal instead of gold, and keep the blue collar ring."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: beach scene with cream sand, blue water and stripes, and pink pig skin. The local colors are believable. B: a lavender-purple cast covers the walls, the seat, the man's shirt, his skin shadows and the pig. In the lens, nearly every shadow turns the same violet, so local colors are lost under one tint.",
+   "fix": "Keep the spaceship walls light neutral grey-white with a few small purple lights. Shade skin with warm brown, and give the yellow pants and blue shirt their own shadows instead of purple."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the planet is a single flat orange ball with a cream ring on a cyan swirl. The lens shows almost only two masses, orange and cyan, and the hue-family count (2.2) is at the real minimum. The orange has no related shadow hue. B: blue pillow on pink, with a dark navy shadow side, like the real two-color cards.",
+   "fix": "Add color bands to the planet: deep red-brown, sand and orange stripes, with darker rust-colored shading on the shadow side. Make the ring pale blue or lilac so it isn't the same warm cream."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: yellow submarine on deep green, with copper rims and cyan portholes, and amber-orange shadows. B: magenta-purple glow everywhere. The silver saucer turns lilac and the dome is pale cyan. Background chroma (0.228) is above the real range, and there are 1.9 hue families, below the real range.",
+   "fix": "Darken and calm the purple background with less glow. Keep the saucer metal a neutral grey with a few cool blue reflections, and add a second accent color, such as green lights."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "A: real lighthouse card with red, white and blue roles. B: a white dome, grey pipe and grey moon ground. The only chroma is the orange door and the orange sky strip. Subject chroma (0.028) is far below the real range, and the subject merges with the ground in the lens.",
+   "fix": "Give the moon base colored panels, such as a white dome with a teal or red stripe and a yellow pipe. Make the ground darker blue-grey so the dome separates from it."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: red scarf on a cyan swirl with a gold badge, the classic real opposite pairing. B: the rock is tinted icy blue-white with a pale blue trail on orange-yellow waves. The lens reduces it to one pale blue mass. The rock has no local stone color, and its shadow edge goes brown-olive.",
+   "fix": "Paint the meteor as grey-brown stone with darker brown craters. Make the trail warm white and orange fire, and keep the background a contrasting cooler color."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: yellow bag on purple stripes, with green and blue items as accents. B: orange-rimmed clock on green stripes with navy hands. Both keep believable local colors and complementary hero/background roles. B's face is slightly cream and its rim shadow is red-brown, but both are within real behavior.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: green bumper car on an orange sunburst, with a white stripe and a yellow floor line. Warm and cool are balanced. B: a clear glass tube with a steel cap on a blue-grey floor, against acid green. Warm share is 0.006 and there are 2.4 hue families, both below the real range. The hero has no color of its own and is see-through grey.",
+   "fix": "Fill the capsule with glowing colored liquid, such as orange or magenta, and give the base a colored trim. Make the floor warmer grey so the card isn't all cold blue-green."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: white polaroid on magenta. The photo inside is also pink-purple, so there are few hue families, but the white frame stays clean neutral. B: orange and yellow birdfeeder on a brown trunk against green park leaves, with natural wood colors and brown shadows. Neither breaks a real pattern clearly.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated sci-fi cards give themselves away in two opposite ways. (1) The hero has no local color. Metal, glass and moon surfaces come out as grey or lavender, so subject chroma falls below the real range and the object merges with a grey ground (rover, console, moon base, stasis tube). (2) One tint takes over the card. Whites drift to cream or peach under warm light (helmet, rocket), or a purple or magenta glow tints every surface and shadow (UFO, cockpit), which leaves too few hue families. Real cards keep whites cool and clean, give the hero one saturated local color against a contrasting background, and shade with related darker hues instead of the background tint."
+}
