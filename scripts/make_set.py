@@ -132,13 +132,13 @@ Rules learned from the game's real sets:
 - The category follows how the object exists. A thing that flies or swims is category 1 in its own element: pattern full_scene with a clear sky for a flyer, rays as light shafts in blue water for a swimmer. A flat object lying down, such as a map, a book or a plate, is category 3 with pattern surface_from_above. Food and drink stand on a surface. Vehicles stand on their own ground, in category 3 or 4. Built or installed things are category 4. One or two category 4 cards show a small object in the exact spot where it is used, such as a ball on the pitch.
 - For category 4 use pattern full_scene. Otherwise pick a graphic pattern.
 - subject: one plain sentence on what to draw, with the two or three features that make it recognizable. Name the object and its parts, with no mood or style. It may add what a container holds, such as a cooler with cans, or one partner object that shows the hero in use and where it sits, such as a ball in the mitt: about a quarter of real cards do. Things used in pairs are drawn as a pair: boots, gloves, flippers.
-- hero_colors are the object's natural colors plus one small accent in another hue, which nearly all real cards have.
+- hero_colors are the object's natural colors. Nearly all real cards also show one small accent in another hue, on a part the object really has, such as a hat's band.
 - backdrop_colors go against the hero's color temperature, as on the real cards. A warm hero (red, orange, yellow, brown, wood or gold) gets a cool backdrop: cyan, sky blue, blue, grass green or purple. A cool hero (blue, cyan, green or purple) gets a warm backdrop, yellow, orange or pink, or a distant cool one, such as pink behind green. A white, grey or silver hero takes any color. Never use a hue that is on the hero, accent included.
 - By category: a floating object mostly sits on cyan, sky blue or green; a floor takes the richest purple, green or pink; where a sky shows, it is clear cyan or blue by day. A dark topic, such as horror, may set some cards at night or dusk, as the real evening scenes do: a rich royal blue sky with a few small stars and a crescent moon, or violet turning pink at the horizon, never black or grey, with a warm light in the scene, such as lit windows, a lantern or a glowing sign. A dark object, such as a bat, takes the dusk sky, not the night one, so it stands out.
 - Use about six backdrop colors across a set. Backdrops are rich and clean, like a clear sky or fresh grass: never dusty, dull, dark or neon. A night sky is the one deep backdrop, and it stays a rich blue.
 - surface_or_setting: empty for categories 1 and 2; a category 2 object stands on a plain floor in the backdrop's color. For category 3, the real material it stands on: real sets reuse one or two ground materials across their cards, so reuse them too. For category 4, the exact spot where the object is used, a few metres of it, such as the wall it hangs on, the deck it stands on or the water it floats in, not a landscape.
 - List the cards so the categories mix, with character cards last.
-- Versions may share at most 5 objects.
+- Every version keeps the topic's three to five most iconic objects, and the versions differ in the rest, in staging and in colors.
 - {MODEL_RULE}
 
 Lessons from the producer's ratings:
@@ -171,8 +171,8 @@ def plan_problems(plan, cast=0):
         problems += [f"card name too long: {c['name']}" for c in cards if len(c["name"].split()) > 2]
     for first in range(len(names)):
         for second in range(first + 1, len(names)):
-            if len(names[first] & names[second]) > 5:
-                problems.append(f"versions {first + 1} and {second + 1} share too many objects")
+            if len(names[first] & names[second]) > 6:
+                problems.append(f"versions {first + 1} and {second + 1} share too many objects: keep only the most iconic")
     return problems
 
 

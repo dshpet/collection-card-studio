@@ -328,6 +328,20 @@ Variant 1 of each `runs/plans/*-shared-cast-2.json` plan, drawn through the full
 - **What did not.** The light pool and the edge crop are drawing words the image model ignored.
 - **Author's read, not rated.** The staging is closer to the real cards. Category 2 objects stand on plain floors in the backdrop's color (cactus, helmet, flask). The saloon doors, haunted door and control panel are close spots on their walls. The horseshoe and star map lie flat, seen from above. The saucer and bat fly in a sky with clouds. The campfire has its coffee pot and tent. The potion has a cork-brown stopper and a star tag. Misses: the lasso became a double loop, the spooky tree gained a castle tower nobody asked for, and the rocket on its pad is still plain. On the cast card, the man again wears his overalls. Neither character card shows harm, and both characters wear the same gear.
 
+**The producer's grades** (`runs/ratings.json`, 30 cards per batch): mean 3.97, against 3.63 for the first batch. Batch2 has 16 fives against 11, but the same seven cards at 2 or below. All three character cards got 5, against 5, 2 and 3.
+- **The gain came from object choice, not drawing.** The 18 objects drawn in both batches moved by +0.11 on average: the hat, wagon, control panel, bat, potion and tree gained a point, the lasso and saucer lost one, the witch hat two. The rest of the gain came from swapped objects (Teleport Pod 2 to Glow Flask 5, Candy Corn 2 to Crystal Ball 4) and the character cards. The turn and the color logic did not lift the grades of the same objects.
+- **Most failures trace to the plan.**
+  - The accent rule pushed the planner to invent parts that carried an accent. A planet icon on the star map got 2: "The planet on the map looks out of place". Stars on the boots: "Star alignment is off. Maybe remove the stars altogether". A red cloth appeared on the lasso.
+  - The plan said nothing about a working part's place:
+    - The saucer has landing feet in flight (4): "Why the landing legs are shown though?"
+    - The haunted door has a ring in the middle and no handle (1): "Handle placement is not logical".
+    - The saloon doors are seen from inside (2): "They lead to where? Better to have the nature outside and the saloon behind the doors".
+- **Four objects failed twice.** Lasso 3 then 2, horseshoe 2 and 2, rocket on the ground 2 and 2 ("toy", "cheap looking"), and cauldron over a fire 1 and 1 ("Fire is off").
+- **Changes for the final runs.**
+  - The planner's accent line now asks for a part the object really has.
+  - Two lessons were written from these comments: working parts in their working state and viewpoint, and a list of objects to skip. The author applied them before the producer reviewed the wording.
+  - The planner now keeps the three to five most iconic objects in every version, as the producer asked, in place of "share at most 5".
+
 ## Limits
 
 Eight blind pairs per role is a small sample, and rounds are noisy. Reviewers are models, and on pairs of different objects they also raise false alarms on hidden real controls, so they guide edits and are not a gate. The human ratings come from one rater.

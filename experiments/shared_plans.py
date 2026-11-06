@@ -7,6 +7,9 @@ with runs/plans/<genre>.json.
 
     shared_plans.py Horror Sci-Fi                   -> runs/plans/<theme>-shared.json
     shared_plans.py Western --cast 1                -> runs/plans/western-shared-cast.json
+
+Adopted into make_set.py on 2026-11-06, after the producer asked that the iconic objects be tried, so this script
+no longer finds the rule it replaces; it is kept as the record of the plans it made.
 """
 
 import sys
