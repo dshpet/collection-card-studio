@@ -129,8 +129,10 @@ Rules learned from the game's real sets:
 - Every version uses all four art categories: 1 floating object, 2 object on a plain ledge, 3 object on a real surface, 4 object in an environment. Use 2-4 of category 1, 1-2 of category 2, 2-4 of category 3 and 1-5 of category 4{' besides the character cards' if cast else ''}.
 - For category 4 use pattern full_scene. Otherwise pick a graphic pattern.
 - subject: one plain sentence on what to draw, with the two or three features that make it recognizable. Name the object and its parts only, with no mood, style or props.
-- hero_colors are the object's natural colors plus one small accent in another hue, which nearly all real cards have. Give every card a backdrop whose color contrasts with the hero, and use at least six different backdrop hues across a set.
-- backdrop_colors are bright and clean, as in the real cards: sky blue, cyan, yellow, orange, purple, pink, grass green. Never dusty, muted, dull or dark. Skies stay clear and bright, even on dark topics.
+- hero_colors are the object's natural colors plus one small accent in another hue, which nearly all real cards have.
+- backdrop_colors go against the hero's color temperature, as on the real cards. A warm hero (red, orange, yellow, brown, wood or gold) gets a cool backdrop: cyan, sky blue, blue, grass green or purple. A cool hero (blue, cyan, green or purple) gets a warm backdrop, yellow, orange or pink, or a distant cool one, such as pink behind green. A white, grey or silver hero takes any color. Never use a hue that is on the hero, accent included.
+- By category: a floating object mostly sits on cyan, sky blue or green; a ledge takes the richest purple, green or pink; scenes have a clear cyan or blue sky, even on dark topics.
+- Use about six backdrop colors across a set. Backdrops are rich and clean, like a clear sky or fresh grass: never dusty, dull, dark or neon.
 - surface_or_setting: the surface for categories 2-3 and the place for category 4, empty for category 1. Real sets reuse one or two ground materials across their cards, so reuse them too.
 - Versions may share at most 5 objects.
 - {MODEL_RULE}

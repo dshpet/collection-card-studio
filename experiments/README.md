@@ -17,5 +17,6 @@ One-off studies behind the pipeline's decisions. Each ran once, its results are 
 | `fire_check.py` | Can the model draw a convincing fire? | Yes, when the subject describes the real card's fire. References add nothing |
 | `wording_check.py` | Does the batch's plainness come from the subject wording? | Yes, in 4 of 4 objects: the earlier wording brings back the badge, spur, bent tip and lever |
 | `colors.py` | Which backdrop colors do the real cards use, and do ours follow them? | Mostly cool, loosely opposite the hero, surface often in the backdrop's hue. Ours are more saturated and more contrasting |
+| `color_logic.py` | What logic picks the real backdrop color? | Opposite temperature to the hero (84% for warm heroes) and never the hero's own hue; not strict complements. Real backdrops carry more light-dark pattern than ours on ledges and surfaces |
 | `shared_plans.py` | Do variants drift less if they share the most iconic objects? | Plans only, for the producer: `runs/plans/*-shared.json` |
 | `outfit_check.py` | Do character cards borrow the outfits of their cutouts? | Yes; a prompt line and outfit-free cutouts first fix it for the animals |

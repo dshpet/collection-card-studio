@@ -297,6 +297,19 @@ Ours against them:
 
 These are measured differences, not yet rated. The saturation and contrast come from the planner's color rules, which are style wording, so any change is one round, measured and shown to the producer.
 
+### The logic behind the backdrop color
+
+The producer asked to match the real cards' color logic, "complementary colours or whatever logic they are having". `experiments/color_logic.py` tests each idea on the real cards against the same cards with their backdrops shuffled:
+- **Not complementary, but never the same hue.** A backdrop within 30° of the hero's hue is rare: 4% of cards, against 14% when shuffled. Past that, the gap is spread almost evenly, with a slight lean to the far side (48% beyond 120°, against 42%).
+- **Temperature is the rule.** A warm hero sits on a cool backdrop on 84% of cards (n 94). A cool hero gets a warm backdrop half the time (n 46), against 28% warm backdrops overall: green heroes take pink or red, blue ones cyan, orange or yellow. The 20 grey or white heroes take any color.
+- **No echo, no value rule.** The backdrop avoids the hero's secondary colors too (18% within 20°, against 24% shuffled). Lightness has no fixed relation (median difference 0.18, against 0.17 shuffled).
+- **By category, for warm heroes.** Floating: cyan, green or blue on 18 of 21. Ledge: purple or green on 6 of 8. Real surface: spread out. Scenes: cyan or blue skies.
+- **Neighbours differ.** Neighbouring slots share a backdrop family on 11% of pairs, against 16% shuffled within the set. Set-level tint stays weak, as found before, except where the topic is a color, such as Diving's sea.
+- **The backdrop is a real pattern.** Light-dark spread in the backdrop (90th minus 10th percentile of Oklab lightness) is 0.12-0.13 in every category, with a hue drift of 3-8°. Ours match on floating cards (0.124) but are flat on ledges (0.083) and real surfaces (0.059).
+- Planned and drawn backdrops agree: 52 of 60 of our cards came out in the planned family and 3 in a neighbouring one, so the planner's rule reaches the drawing.
+
+**Change (2026-11-06):** the planner's color lines now state the temperature rule, no hue that is on the hero, the colors by category, and "rich and clean... never neon" in place of "bright". Checked on plans for the three genres with the new rule against the current plans, 81 cards each, colors read from the planned text: warm heroes on cool backdrops 27 of 29 against 25 of 31, floating objects on cyan, blue or green 21 of 29 against 11 of 28 (real 25 of 35), a backdrop repeating a hero hue 2 against 7. A clause asking neighbours to differ cut shared neighbours to 2 of 72, below the real 11% that the current plans already matched, so it was dropped. Saturation can only be measured on drawings. The flat backdrops on ledges and surfaces belong to the drawing prompt, a separate round.
+
 ## Limits
 
 Eight blind pairs per role is a small sample, and rounds are noisy. Reviewers are models, and on pairs of different objects they also raise false alarms on hidden real controls, so they guide edits and are not a gate. The human ratings come from one rater.
