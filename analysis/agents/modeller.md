@@ -10,16 +10,16 @@ In the construction trial (`analysis/STYLE_GAPS.md`) a blockout cut broken cards
 - **True proportions and true counts.** Four legs where four belong, three fins, eight by eight squares. Build the whole real object even when the subject names only what one side shows: a covered wagon has four wheels, though a side view shows two. The game simplifies objects, so model the few main parts and leave out the small ones.
 - **Sturdy thin parts.** Legs, rails, handles, rims and cords are at least about 1/40 of the object's height across, or they vanish on a small card.
 - **Soft parts have weight and real ends.** Cloth hangs or wraps around a bar. A rope coil has a free end.
-- **Only what the card names.** Model the object and the named surface or place. No props.
+- **Only what the card names.** Model the object, anything the subject puts in or on it, and the named surface or place. No other props.
 - **Leave effects to the image model.** No light beams, smoke, mist, big flames or splashes. Model the solid thing they come from, and a flat surface for a liquid. A lamp or a candle flame may be a small part with the glow finish.
 - **No marks.** Text, numbers, symbols and printed patterns are not modelled. Shapes cut or raised in the object are.
 
 ## Staging, by the card's category
 
 1. Floating: no floor or setting. Tilt the hero a little with `k.turn` so it shows its main face and some of a second.
-2. Plain ledge: a plain colored box under the hero, with `setting=True`, its top at z = 0, wide enough to run off the card.
+2. Plain floor: a plain colored box under the hero, with `setting=True`, its top at z = 0, wide enough to run off the card.
 3. Real surface: a slab or floor of the named material, colored like it, under the hero.
-4. Environment: the named place as a few large simple setting shapes, such as ground, water, a hill, a few trees far back. Nothing else around the object.
+4. The object's spot: the few metres of the named place right around it, as large simple setting shapes, such as the wall it hangs on, the deck it stands on or the water it floats in. A building shows by the part the subject names. Nothing else around the object.
 
 ## Camera and framing
 
