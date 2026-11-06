@@ -255,7 +255,7 @@ function show() {
   for (const kind of kinds) document.getElementById("tab-" + kind).className = kind === mode ? "on" : "";
   if (!item) {
     document.getElementById("progress").textContent = "";
-    document.getElementById("main").innerHTML = "<p class=\"hint\">Nothing to rate here.</p>";
+    document.getElementById("main").innerHTML = '<p class="hint">Nothing to rate here.</p>';
     return;
   }
   const counts = kind => list(kind).filter(i => ratings[key(i)]).length + "/" + list(kind).length;
@@ -323,7 +323,7 @@ for (const kind of kinds) document.getElementById("tab-" + kind).onclick = () =>
 fetch("/data").then(r => r.json()).then(data => {
   items = data.items; ratings = data.ratings;
   for (const kind of kinds) position[kind] = Math.max(0, list(kind).findIndex(i => !ratings[key(i)]));
-  mode = list("param").some(i => !ratings[key(i)]) ? "param" : list("soft").some(i => !ratings[key(i)]) ? "soft" : list("redraw").length ? "redraw" : mode;
+  mode = ["card", "param", "soft"].find(kind => list(kind).some(i => !ratings[key(i)])) || (list("redraw").length ? "redraw" : mode);
   show();
 });
 </script></body></html>"""
