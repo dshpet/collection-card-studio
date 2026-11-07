@@ -25,3 +25,4 @@ One-off studies behind the pipeline's decisions. Each ran once, its results are 
 | `csd_plus.py` | Does hubness-corrected CSD follow the producer's pairs better? | A lean: 128 to 132 of 218, within noise |
 | `grade.py` | Does a measured backdrop grade bring twins closer to their real cards? | No: CSD 0.910 to 0.909, 21 of 40 closer |
 | `generators.py` | Does another image model draw closer than Codex? | No: the director preferred Codex to Nano Banana Pro 11 to 0 (11 twins) and to Qwen-Image-2.1 39 to 1 (40 twins); CSD agrees for Qwen |
+| `outside_rating.py` | Does an outside artist find our pre-final cards among real ones, and how do they grade them? | Pending. A page in Ukrainian: a blind real-or-AI test first, then the brief, the sets and the cards beside their references |
