@@ -38,7 +38,7 @@ from style import BLOCKOUT, CAST_STYLE, CATEGORY_RULES, EDIT, PATTERNS, STYLE
 CANDIDATES = 3
 MODEL_ROUNDS = 2
 PLAN_FIXES = 2  # repair rounds for a plan that breaks a rule or has a card that may upset players
-REVIEW_ROUNDS = 1  # first-round edits were kept 35 of 82 times, second-round 0 of 11 (analysis/experience.json)
+REVIEW_ROUNDS = 1  # first-round edits were kept 36 of 85 times, second-round 0 of 11 (analysis/experience.json)
 ALLOWED_MISSES = 2
 RATED = ["identity", "staging"]
 EXAMPLE_MODELS = ANALYSIS / "agents" / "models"  # two models from the construction trial

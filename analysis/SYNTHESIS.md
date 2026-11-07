@@ -47,7 +47,7 @@ Rater counts below are what models said, not what the cards are. Blind tests lat
 
 ## Second pass, 2026-11-06
 
-Two model reviewers went over all 160 cards, one for object choice and one for art logic, against the planner's rules and our 60 cards; the main claims were checked against the card list and by eye. Tags: measured from pixels, rated by the models' labels, or read by eye.
+Two model reviewers went over all 160 cards, one for object choice and one for art logic, against the planner's rules and our 60 cards; the main claims were spot-checked against the card list. Tags: measured from pixels, rated by the models' labels, or eye, read by those reviewers and spot-checked, not by the producer.
 
 What the sets choose:
 - **Made things at object size (eye).** Wild nature appears on 4 of 129 object cards (Palm Tree, Coral Reef, Jellyfish, Seahorse), and no card shows a landform or a sky body. Our plans had about one in six.
@@ -55,12 +55,12 @@ What the sets choose:
 - **Contents and partners (eye).** 15 of 19 containers are open and filled, and about 22 more cards pair a tool with what completes it: mitt and ball, map and magnifier. Pairs are drawn as pairs: sneakers, flip-flops, flippers, gloves.
 - **Category follows how the object exists (eye, 74 of 129).** Fliers and swimmers float in their own sky or water, food and drink stand on a surface, vehicles stand on their own ground, built things sit in place. A quarter of category 4 cards show a small object where it is used, such as a ball on the pitch.
 - **Words become pictograms (eye).** About 16 cards keep sign, ticket and book objects, with icons for the words.
-- **Slot order is rarity (in-game screenshots).** Stars rise with the slot in 15 of 16 sets, gold cards come last, and categories are mixed. Rarity does not change the art: slot does not predict category (Spearman -0.06, p 0.48) or subject detail (-0.11, measured).
+- **Slot order is rarity (in-game screenshots).** Stars rise with the slot in 15 of 16 sets, gold cards come last, and categories are mixed. Rarity does not change the art: among the 129 object cards, slot does not predict category (Spearman -0.06, p 0.48) or subject detail (-0.11, measured).
 - **The game's emblem (eye).** A house icon or a cow head sits where a label would be on 9 cards in 8 sets.
 
 How they are drawn:
 - **Category 4 is the object's exact spot, close (eye).** About 20 of 42 show no sky. 17 of 42 are cut by the card's edge, against 2 of 13 of ours (measured).
-- **Three-quarter view, even when symmetric (measured).** A near-mirror silhouette occurs on 14 of 67 real cards in categories 1 and 3, against 9 of 17 in our batch.
+- **Three-quarter view, even when symmetric (measured).** A near-mirror silhouette occurs on 13 of 67 real cards in categories 1 and 3, against 9 of 17 in our first batch (`experiments/batch2_check.py`).
 - **A pool of light behind the object (measured).** On ledges and surfaces the backdrop beside the object is brighter than the corners by more than 5 L* on 39 of 52 real cards, against 11 of 23 of ours.
 - **Flat objects seen from above (eye).** Map, Travel Book, Fruit Plate, Tennis and Binoculars lie on a surface that fills the card. Raters labelled most of them stripes, so they were attached as references to upright cards: the batch rocket got three.
 - **Detail (measured).** Category 1 subjects are the plainest. The art guide says category 2 has no small details, but its subjects are the most detailed.

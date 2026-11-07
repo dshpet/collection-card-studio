@@ -30,7 +30,7 @@ Our sets sit inside or at the edge of the real ranges. Horror is the least unifi
 
 ## Art
 
-Measured rows count our earlier cards: these sets and the first batch, as in [SYNTHESIS](SYNTHESIS.md#second-pass-2026-11-06) and `experiments/batch2_check.py`.
+Measured rows count our earlier cards, as in [SYNTHESIS](SYNTHESIS.md#second-pass-2026-11-06) and `experiments/batch2_check.py`: backdrop chroma on these sets, near-mirror silhouettes on the first batch.
 
 | Principle in the references | In our earlier cards | Since |
 |---|---|---|
@@ -48,7 +48,7 @@ Measured rows count our earlier cards: these sets and the first batch, as in [SY
 ## Where we still differ
 
 - **Objects:** Coffin and Tombstone are in the Horror set; the producer has since ruled out death and religious symbols. The third variants of Horror and Sci-Fi were weaker in idea (Armchair, Rocking Horse and Space Food fit only beside the others), which became a planning lesson.
-- **By eye:** real cards look a little softer and quieter than ours; ours are slightly tidier.
+- **By eye (model reviewers, not the producer):** real cards look a little softer and quieter than ours; ours are slightly tidier.
 - **Classifier:** a DINOv3 classifier still separates real cards from their redraws (AUC 0.84 whole card; old style 0.86). Whether a viewer sees what it sees is untested.
 - **Blind review:** on unseen same-object pairs, specialists are at chance: right 47% of the time when they choose a side, against 71% for the old style.
 - **Rating:** the producer graded these 30 cards 3.4 of 5 beside their references and still spots 24 of 32 final-style twins ([STYLE_GAPS](STYLE_GAPS.md)). The other numbers above come from models or measurement.

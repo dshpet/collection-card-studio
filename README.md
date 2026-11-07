@@ -4,7 +4,7 @@ A tool that turns a theme and a producer's free-form wishes into 3–5 versions 
 
 ![Batch 2: Western, Sci-Fi and Horror, one version each, object cards only](runs/batch2.png)
 
-*Batch 2, one version per film genre, graded 3.97 of 5 by the producer. The final sets are being redrawn with the current pipeline; the earlier ones are in `runs/final/`.*
+*Batch 2, one version per film genre, object cards only: graded 3.85 of 5 by the producer, beside their references and not blind. The final sets are being redrawn with the current pipeline; the earlier ones are in `runs/final/`.*
 
 | The brief asks for | Here |
 |---|---|
@@ -16,11 +16,11 @@ A tool that turns a theme and a producer's free-form wishes into 3–5 versions 
 
 ## Results
 
-- **Style:** blind, the producer finds our drawing in 24 of 32 final-style twins, down from 31 of 32. Calibrated model reviewers are at chance on the same pairs, so the human stays the measure.
-- **Construction:** a Blender blockout of each built object took broken cards from 5 of 12 to none (grade 3.7 against 2.2).
-- **Sets:** the producer's grades rose from 3.63 to 3.97 between two batches, from better object choice. Most low grades trace to the plan, and each became a lesson the planner reads.
-- **Robustness:** 19 odd or hostile requests produced valid plans: non-English and emoji themes, real brands, franchises, weapons, gore, prompt injection. Forbidden wishes are declined and named in the report. Kitchen, Pirates and a Star Wars request ran end to end ([experiments/robustness.py](experiments/robustness.py)).
-- **Generators:** Codex against Qwen-Image-2.1 (open weights, local) and Nano Banana Pro on the forty twins: see [STYLE_GAPS](analysis/STYLE_GAPS.md#generator-bake-off-2026-11-07).
+- **Style:** blind, the producer finds our drawing in 24 of 32 final-style twins, down from 31 of 32. Calibrated model reviewers are at chance on 16 of the same twins, so the human stays the measure.
+- **Construction:** in a six-object trial, Blender blockouts cut broken cards from 5 of 12 to 1, and to none once the models were fixed after seeing the real cards (grade 3.7 against 2.2). So the planner models built objects; simple forms are drawn from words.
+- **Sets:** the producer's grades (not blind) rose from 3.63 to 3.97 between two batches: half from the three character cards, the rest mostly from better object choice. Most low grades trace to the plan, and each became a lesson the planner reads.
+- **Robustness:** 19 odd or hostile requests all produced plans, with forbidden wishes declined and named in the report: non-English and emoji themes, real brands, franchises, weapons, gore, prompt injection. After two repairs, War and Gangsters kept three cards still flagged for the producer, and Elections stayed a voting set. Kitchen, Pirates and a Star Wars request ran end to end ([experiments/robustness.py](experiments/robustness.py)).
+- **Generators:** Codex against Nano Banana Pro on 11 twins and Qwen-Image-2.1 (open weights, local): see [STYLE_GAPS](analysis/STYLE_GAPS.md#generator-bake-off-2026-11-07).
 
 ## Make a set
 
@@ -40,7 +40,7 @@ flowchart LR
 
 | Stage | What happens |
 |---|---|
-| Plan | Claude Sonnet plans the variants by rules taken from the real sets and the producer's [lessons](analysis/lessons.md). A second call flags cards that could upset players, and the plan is repaired until it passes. Wishes the rules forbid are listed in the report |
+| Plan | Claude Sonnet plans the variants by rules taken from the real sets and the producer's [lessons](analysis/lessons.md). A second call flags cards that could upset players, and the plan is repaired, at most twice. Wishes the rules forbid, and anything still flagged, are listed in the report |
 | References | Each card gets three real cards: same art category, backdrop pattern and object class, ties broken by text search over the card images (`search.py`) |
 | Model | For built objects of several parts, Claude Opus writes a Blender model, looks at its render and fixes it, up to two rounds. Simple forms skip this |
 | Draw | Codex's image model draws three candidates per card, restyling the model's render where there is one |
@@ -62,11 +62,11 @@ One run peaks at about 5 GB of GPU memory and each Blender render adds about 2 G
 
 ## Tried and dropped
 
-- Correction rounds, then a second review round: it kept 0 of 11 edits.
+- Correction rounds (they rescued 8 of 24 cards), replaced by candidates and edits; a second review round, which kept 0 of 11 edits.
 - Construction and perspective checkers: at chance on 93 pairs the producer labelled.
 - Automatic tuning of the director's notes: gains on the tuning half did not hold out.
 - Tone rounds that moved measured darks onto the real cards: the producer preferred neither.
-- Pre-drawn characters pasted onto cards: graded 1.5–2.4 against 3.8 for drawing them in one go.
+- Pre-drawn characters, pasted (1.5–1.8) or attached (2.4), against 3.8 for drawing them in one go with real cutouts.
 - Measured geometry for reviewers, search-picked references, five references, a backdrop grade: no gain.
 
 Each has its numbers in [STYLE_GAPS](analysis/STYLE_GAPS.md) and its script in [experiments/](experiments/README.md).
@@ -75,10 +75,10 @@ Each has its numbers in [STYLE_GAPS](analysis/STYLE_GAPS.md) and its script in [
 
 - **Producer:** the author, playing the brief's producer. Every human grade in `runs/ratings.json` is theirs, blind unless noted.
 - **Twin:** a real card redrawn from a text brief with that card hidden from the generator. Content is held equal, so what differs is style.
-- **Style rounds:** versions of the style text: `baseline` and `r1`–`r9` on 12 twins, `old`, `final` and `p1`–`p3` on 40 (`runs/twins`, `runs/twins40`).
+- **Style rounds:** versions of the style text. On 12 twins, `baseline` and `r1`–`r8` (`runs/twins`). On 40, `old` (the first run's style), `final` (the text settled after r8), `r3`, `r9` (final plus a line on how parts attach) and `p1`–`p3` (`runs/twins40`). The current text is in `scripts/style.py`.
 - **Blockout:** a Blender model of the object, rendered and restyled by the image model.
 - **Category 1–5:** the art guide's staging: floating, plain floor, real surface, in its place, characters.
-- **CSD:** a style embedding. Its similarity to the same object's real card is the one automatic measure that tracked the producer.
+- **CSD:** a style embedding. Its similarity to the same object's real card is the one embedding measure that tracked the producer.
 - **Specialists and director:** nine model reviewers, one per art vector, and an art director, in [analysis/agents/](analysis/agents/README.md).
 
 ## The cast

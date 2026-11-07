@@ -1,6 +1,6 @@
 # Draft plans
 
-Plans the producer reviewed before drawing, oldest first. The card lists are in each JSON. Draw one with `make_set.py "<Theme>" --plan runs/plans/<file>.json`.
+Draft plans, oldest first; the producer did not confirm every one. The card lists are in each JSON. Draw one with `make_set.py "<Theme>" --plan runs/plans/<file>.json`.
 
 | Files | Made | What changed |
 |---|---|---|

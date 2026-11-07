@@ -14,14 +14,14 @@ One-off studies behind the pipeline's decisions. Each ran once, its results are 
 | `search_trial.py` | Do search-picked references, or five instead of three, bring drawings closer to the real card? | No clear change, so search only breaks ties and cards keep three |
 | `plain_check.py` | Where does the invented jewel on the sheriff star come from? | From the colors line: an accent hue named as a gem. Saying "no gem" does not help |
 | `shape_check.py` | Does naming the canonical shape keep a front-on clock round? | No: roundness 0.95 either way, against 0.995 on the real card |
-| `fire_check.py` | Can the model draw a convincing fire? | Yes, when the subject describes the real card's fire. References add nothing |
+| `fire_check.py` | Can the model draw a convincing fire? | Yes by eye, when the subject describes the real card's fire. References add nothing. In batch 2 the campfire got 5, the cauldron 1 |
 | `wording_check.py` | Does the batch's plainness come from the subject wording? | Yes, in 4 of 4 objects: the earlier wording brings back the badge, spur, bent tip and lever |
 | `colors.py` | Which backdrop colors do the real cards use, and do ours follow them? | Mostly cool, loosely opposite the hero, surface often in the backdrop's hue. Ours are more saturated and more contrasting |
 | `color_logic.py` | What logic picks the real backdrop color? | Opposite temperature to the hero (84% for warm heroes) and never the hero's own hue; not strict complements. Real backdrops carry more light-dark pattern than ours on ledges and surfaces |
 | `batch2_check.py` | Did the second batch move toward the real cards? | Yes on turn, backdrop colors and saturation; the light pool and edge crops did not take |
 | `shared_plans.py` | Do variants drift less if they share the most iconic objects? | The producer asked for it; the rule is now a lesson. Its plans are in `runs/plans/` |
 | `outfit_check.py` | Do character cards borrow the outfits of their cutouts? | Yes; a prompt line and outfit-free cutouts first fix it for the animals |
-| `robustness.py` | Does the planner hold its rules on odd, risky and hostile requests? | Yes on 19 of 19: brands, weapons, vices, text and injected instructions are declined. The sensitivity check is a model call and varies between runs |
+| `robustness.py` | Does the planner hold its rules on odd, risky and hostile requests? | Mostly: all 19 gave plans with brands, weapons, vices, text and injected instructions declined. After two repairs War and Gangsters kept three cards still flagged, and Elections stayed a voting set. The sensitivity check is a model call and varies between runs |
 | `csd_plus.py` | Does hubness-corrected CSD follow the producer's pairs better? | A lean: 128 to 132 of 218, within noise |
 | `grade.py` | Does a measured backdrop grade bring twins closer to their real cards? | No: CSD 0.910 to 0.909, 21 of 40 closer |
-| `generators.py` | Does another image model draw closer than Codex? | Qwen-Image-2.1 and Nano Banana Pro on the forty twins: see STYLE_GAPS |
+| `generators.py` | Does another image model draw closer than Codex? | Nano Banana Pro on 11 twins loses to Codex 11 to 0 with the director; Qwen-Image-2.1: see STYLE_GAPS |

@@ -4,12 +4,12 @@ Why the first cards looked off, how that was measured, and what fixed it. Human 
 
 ## What holds now
 
-- **The producer is the measure.** Blind, they find our drawing in 24 of 32 final-style twins (31 of 32 in the old style). Model reviewers are at chance on the same pairs.
+- **The producer is the measure.** Blind, they find our drawing in 24 of 32 final-style twins (31 of 32 in the old style). Calibrated model reviewers are at chance on 16 of the same twins.
 - **Style rounds stopped.** The producer rates the final style, r3 and r9 about equal, and no tone change beat the final style.
-- **Construction is the main complaint, and geometry fixes it.** A Blender blockout took broken cards from 5 of 12 to none. No model judges construction above chance, so the planner models built objects and a human checks the rest.
+- **Construction is the main complaint, and geometry fixes it.** In a six-object trial a Blender blockout cut broken cards from 5 of 12 to 1, and to none once the models were fixed. No model judges construction above chance, so the planner models built objects and a human checks the rest.
 - **Compare, never score.** No score of a lone card follows the producer's grades. The art director picks the producer's side of a pair 61% of the time, 76% when confident; CSD against the same object's real card agrees above chance.
-- **The plan decides most of the card.** Batch grades rose from 3.63 to 3.97 through object choice; the same objects redrawn moved by +0.11. Words do not hold a shape or a camera; a Blender model does.
-- **Edits by note are a gamble.** First-round edits beat their drafts 35 of 82 times and second-round ones 0 of 11, so an edit stays only if it wins and the pipeline reviews once.
+- **The plan decides most of the card.** Batch grades rose from 3.63 to 3.97 (not blind): half from the character cards, most of the rest from swapped objects; the same objects redrawn moved by +0.11. Words do not hold a shape or a camera; a Blender model does.
+- **Edits by note are a gamble.** The director judged first-round edits better than their drafts 36 of 85 times and second-round ones 0 of 11, so an edit stays only if it wins and the pipeline reviews once.
 - **The game's cast stays itself on new cards** when drawn in one go with its real cutouts attached.
 - **Another generator was tried.** See the generator bake-off below.
 
@@ -91,8 +91,8 @@ A blockout fixes construction (0 broken against 5, Fisher p 0.04), mostly on mul
 - **References move drawings little.** Search-picked references were nearer the hidden card, yet the drawings came out no closer (CSD 19 of 40, director 16 to 24 against), and five references instead of three were a lean, not a gain (26 of 40, p 0.24). So search only breaks ties in the label rule, and cards keep three (`experiments/search_trial.py`).
 - **The colors line outweighs the subject.** Every sheriff star got a red jewel from "with a small red gem" in its colors. "No gem" in the subject left it in 3 of 3 draws; moving the red onto the ring removed it in 3 of 3 (`experiments/plain_check.py`). The planner's accent lesson now puts the accent on a part the object has.
 - **Words do not hold a shape.** "A perfect circle" left the clock twin's roundness at 0.95 against 0.995 on the real card (`experiments/shape_check.py`). A Blender model at azimuth 0 fixes the camera instead.
-- **Fire takes the real card's words.** "A small orange flame" drew a tiny flame 3 of 3 times; the real Campfire Cook card's description drew a bright fire 3 of 3 (`experiments/fire_check.py`). The real fire cards as references added nothing.
-- **Geometric subjects make plain objects.** The shape lesson's wording dropped the hat's badge, the boot's spur and the witch hat's bent tip in 12 of 12 draws; the earlier wording brought them back in 12 of 12 (`experiments/wording_check.py`). The producer graded the plain versions about the same (4.25 against 4.5), so a signature-details lesson waits under Proposed.
+- **Fire takes the real card's words.** "A small orange flame" drew a tiny flame 3 of 3 times; the real Campfire Cook card's description, with "big", drew a bright fire 3 of 3, judged by eye and one pixel measure (`experiments/fire_check.py`). The lesson drops "big"; with it, batch 2's campfire got 5 and its cauldron 1 ("Fire is off"). The real fire cards as references added nothing.
+- **Geometric subjects make plain objects.** The shape lesson's wording dropped the hat's badge, the boot's spur and the witch hat's bent tip in 12 of 12 draws, read by eye; the earlier wording brought them back in 12 of 12 (`experiments/wording_check.py`). The producer graded the plain versions about the same (4.25 against 4.5), so a signature-details lesson waits under Proposed.
 - **Cutouts lend their outfits.** Character cards copied the cutouts' costumes. One prompt line and outfit-free cutouts first fixed it for the animals; the man has no outfit-free cutout (`experiments/outfit_check.py`).
 
 ## Backdrop color, 2026-11-06
@@ -115,7 +115,7 @@ Variant 1 of each film genre, drawn with the producer's lessons, graded in the C
 | Batch 2: color logic and the second reference pass | 4.0 | 4.1 | 3.8 | 3.97 |
 
 - **Batch 2 measured closer** (`experiments/batch2_check.py`): objects turn into three-quarter view (near-mirror silhouettes 2 of 16 against 9 of 17; real 13 of 67) and floating objects take the real cards' cool backdrops. The light pool behind objects and the card edge cropping scenes did not take: the image model ignored those words.
-- **The gain came from object choice.** The 18 objects drawn in both batches moved by +0.11; swaps did the rest (Teleport Pod 2 to Glow Flask 5, Candy Corn 2 to Crystal Ball 4).
+- **The gain came from the plan, not the drawing.** Of the 10 points gained over 30 cards, the three character cards brought 5 (5, 2, 3 to 5, 5, 5), swapped objects 3 (Teleport Pod 2 to Glow Flask 5, Candy Corn 2 to Crystal Ball 4) and the 18 objects drawn in both batches 2, +0.11 each. Object cards alone went from 3.67 to 3.85.
 - **Low grades name the plan.** An invented planet icon on a star map, landing legs on a flying saucer, a door handle in the middle of a door, saloon doors seen from inside, and four objects that failed twice (lasso, horseshoe, grounded rocket, cauldron over a fire). Each became a lesson in `analysis/lessons.md`.
 
 ## The cast on new cards, 2026-11-05
@@ -133,7 +133,15 @@ Identity held in every arm (each figure nearest its own cast member in DINOv2). 
 
 ## Generator bake-off, 2026-11-07
 
-Results pending; see `experiments/generators.py`.
+Every style result above came from one generator, so two others drew the twins from the same prompts and the same three references (`experiments/generators.py`). Codex's arm is its final-style draws. Judged by CSD against each twin's own real card and by the art director, pairwise in both orders with the real card shown; the producer's blind pick waits in the rating page's Generators tab.
+
+| Arm | Twins | CSD to own real card, Codex / arm | Arm closer by CSD | Director: Codex / arm |
+|---|---:|---|---:|---|
+| Nano Banana Pro, through the Antigravity CLI | 11 | 0.914 / 0.897 | 5 (p 0.46) | 11 / 0 (p 0.001) |
+| Qwen-Image-2.1, open weights on this GPU | | | | |
+
+- **Nano Banana Pro loses.** Its cards are darker, less saturated and more photographic: a realistic folded map, a flat calculator, a dim jellyfish. Antigravity's image agent rewrites the prompt, so this tests the system, not only the model; its daily image quota stopped the arm at 11 twins.
+- **Qwen-Image-2.1:** pending.
 
 ## Limits
 
