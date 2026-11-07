@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the candy bucket has a dark contour around the rim, handle and body, and outline_darkness (0.103) sits just above the real range. The wooden table is full of plank grooves and grain lines that compete with the hero. B: the mower body and wheels have even, moderate edges, and the background is limited to soft rings and small grass tufts.",
+   "fix": "Remove the dark rim line around the pumpkin bucket and let its edge come from the orange-against-wood value change. Paint the table planks as soft wide bands with few visible grooves."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the palm fronds have jagged dark edges, but the trunk rings and sand stay light, much like the real cards. B: every spider leg has a crisp, uniform dark contour, and the stone pedestal's rim is cut with many small crack lines. The edge weight is spread evenly instead of gathering at the face.",
+   "fix": "Soften the leg silhouettes away from the head, reduce the cracks on the stone base to two or three broad chips, and keep the sharpest edges around the eyes and fangs."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the hourglass has soft, slightly sketchy edges. The wood grain and sand are noisy, and the glass outline is faint. B: the vending machine has a ruler-straight, even-weight contour around the cabinet, window, panel and tray, with double-line grooves at every panel gap (outline_darkness 0.088).",
+   "fix": "Draw the cabinet panel gaps as single thin seams, not doubled grooves, and let the cabinet's back edge fade softly into the purple background."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the pumpkin hero is edge-sparse (0.067, below the real range), while the ivy, door panels, moon and stars behind it carry more edges (0.065). The pumpkin also has a dark outline (0.091). The edge hierarchy is inverted. B: the topiary is very busy (0.29), but its edges sit inside the hero, which keeps the hierarchy the right way round.",
+   "fix": "Thin out the ivy leaves and door details into soft, low-contrast shapes. Give the pumpkin crisp carved-face edges and rib creases, without a dark line around its silhouette."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the witch hat's silhouette has a hard dark contour, heaviest along the curled tip. Inside the cone there is almost nothing (subject 0.067, below the real range), so the brim and buckle carry all the edges. B: the fountain's edges are spread across its tiers, the water and the paving, in the same way as real cards.",
+   "fix": "Add soft fabric folds and creases inside the hat cone, and drop the dark line along the hat's tip and brim so the black felt meets the green background through a value change only."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the bag has a fabric-texture edge field, stitched patch seams, and objects poking out, which gives a varied hierarchy. B: the neckerchief has one even, sticker-like dark outline around the whole silhouette and almost no internal edges (subject 0.053, below the real range). Only the badge is crisp.",
+   "fix": "Remove the uniform dark outline around the scarf. Add soft cloth folds and knot creases inside the fabric, and let the outer edge soften where the scarf turns away."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the bird feeder's planks and rope have crisp edges, the park background is softer, and the outline is weak. B: the twisted trunk is filled with long, stroke-like grain lines that read as hand-drawn hatching. A dark contour runs down the trunk's right side and along the branch tips.",
+   "fix": "Replace the bark hatching with a few broad, soft twist grooves, and let the trunk's silhouette come from light against the purple sky, without a dark edge line."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the ring box lid and base have a heavy dark contour all the way around, and outline_darkness (0.13) is above the real range. B: the mask's gold rim has a thin double edge and the feather fades into the yellow rays. Its outline is weak (-0.114).",
+   "fix": "Lighten the box silhouette so the red velvet meets the cyan rays without a dark rim line, and keep the crisp edges for the coin emblem."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both books carry an outline above the real range. A: the map stickers have doubled die-cut borders, but the book block and the wood behind it stay soft. B: the star and clasp have thick black double contours, the cover edge has a heavy dark line, and the dark wood planks have deep, hard grooves.",
+   "fix": "Draw the star as a raised shape with a soft shadow, not a thick black border. Remove the dark line around the cover and make the plank gaps soft and shallow."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the viewer has chrome highlight edges, and the city background is soft and hazy (outline -0.126). B: this is a near copy of the real music-player card. Its body, buttons and cable have a crisp, even, dark-inked contour, the earbud cable is drawn as a double dark line, and the extra slot and buttons add uniform grooves.",
+   "fix": "Let the orange body's outer edge come from value contrast only. Draw the cable as one pale tube with a soft shadow, not dark doubled lines, and remove the extra slot groove."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the clouds have hard dark outlines on their upper edges, and the bristles are many thin, stroke-like lines. Both are hand-inked graphic treatments. B: the balloons have soft, smooth edges, sparse internal lines and soft cloud masses.",
+   "fix": "Make the clouds soft white masses with no dark rim, and draw the broom straw as a few chunky clumps instead of many thin lines."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the ivy and wreath make the card dense, but the edges vary from soft to crisp. B: every wall brick and arch stone has its own crisp, dark, uniform contour. Background edge density (0.191) is about twice the real maximum, so the wall competes with the door.",
+   "fix": "Paint the wall bricks as soft, low-contrast blocks with faint mortar lines, and keep the crisp edges for the arch stones, door planks and brass ring."
+  }
+ ],
+ "pattern": "Generated cards give themselves away through even edge treatment. They have a dark ink-like contour around the whole hero (sticker look), doubled groove lines at seams and emblems, and background elements (bricks, planks, clouds, ivy) inked as crisply as the hero. Many also have a sparse interior inside a hard silhouette, which flattens or inverts the edge hierarchy. Real cards let silhouettes come from value contrast, keep seams thin, and soften the background."
+}

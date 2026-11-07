@@ -1,0 +1,17 @@
+[
+ {
+  "round": 0,
+  "error": "Info: Removed 126 vertices\nInfo: Removed 126 vertices\nInfo: Removed 62 vertices\nInfo: Removed 62 vertices\nInfo: Removed 62 vertices\nInfo: Removed 126 vertices\nInfo: Removed 126 vertices\nLOOSE: []\n00:01.363  cycles           | WARNING CUEW initialization failed: Error opening the library\n/home/dshpet/Dev_Projects/playrix_testtask/scripts/blockout.py:49: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0\n  m.use_nodes = True\n/home/dshpet/Dev_Projects/playrix_testtask/scripts/blockout.py:339: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0\n  world.use_nodes = True\nMemory access fault by GPU node-2 (Agent handle: 0x7f8660749600) on address 0x7f84fc475000. Reason: Page not present or supervisor privilege.\nFailed to write segment data to pipe: Broken pipe\nGPU coredump: handler exited with error (status: 1)\nGPU core dump failed\n",
+  "loose": [],
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The render crashed in the GPU compute driver (HIP memory access fault), not because of the model. Re-run it, or render with Cycles on the CPU if it crashes again.",
+   "Wood used the satin finish; changed it to matte, as the rules require for wood."
+  ]
+ }
+]

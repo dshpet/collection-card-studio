@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A beach ball: a broad, flat, near-frontal light. One white hot spot sits on the upper-right white panel, and the lower-left half turns only gently into shadow. Shading range is 0.533, below the real band. B twig ball: clear upper-left key, deep shadow inside the tangle and on the lower right, and a dark contact shadow on the sand.",
+   "fix": "Light the ball from the upper left so the lower-right third turns into a clearly darker shadow side. Replace the white hot spot with a softer, smaller sheen, and put a dark contact shadow under the ball where it touches the sand."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B belt: the metal buckle has a sharp white chrome rim highlight and mirror-like hot spots. The leather coil has crisp, contrasty grooves, which reads as rendered plastic and metal. A book: soft upper-left key, a gentle cast shadow to the lower left, and a slightly darker spine side, like the real painted cards.",
+   "fix": "Make the buckle satin metal with one soft broad sheen instead of a bright white ring. Give the coiled belt a gentle upper-left light, with a soft shadow falling onto the wood to the lower right."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B sneakers: almost no light direction (bias 0.019). Both shoes are evenly lit from the front, the only darkness is a hard black cast shadow on the left floor, and the shoes have no shadow side of their own. A boots: upper-left key, the boot shafts darken toward the right, and the heels have soft contact shadows.",
+   "fix": "Light the sneakers from the upper left so the right side of each shoe and the inside of the far shoe fall into a soft, darker shadow. Make the floor shadow softer and attach it under the soles."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A, the iced drink, is a real card from the reference set. B ice cream sign: lit mostly by its own glow, with a coloured halo around the outline and a flat, even scoop. Form shading is weak (form contrast 0.354, light bias 0.035).",
+   "fix": "Light the ice cream from the upper left so the scoop swirls have lit tops and darker undersides. Keep any glow thin, and add a soft drop shadow on the wall to the lower right."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B campfire: the fire is the visible light source, but the rocks around it are cool grey with dark tops on the fire side, and the kettle is lit evenly from the front. The fire light doesn't match. A binoculars: one consistent soft upper-left key, a cool shadow side on the right barrel, and soft rounded metal sheen.",
+   "fix": "Make the fire light the scene: warm orange light on the fire-facing sides of the rocks, logs and kettle, with their far sides dropping into dark blue night shadow."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A cowboy hat: soft, low-range shading (0.6). The crown and brim are lit almost evenly, only a mild darkening sits under the right brim, and nothing anchors the hat. B grad cap: clear top-lit board with a darker front edge, a deep shadow under the board onto the cap, and a crisp tassel shadow.",
+   "fix": "Light the hat from the upper left. Make the right side of the crown and the underside of the brim clearly darker, and put a firm shadow from the brim onto the crown band."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "B lighthouse is a real card from the lessons: upper-left key, the right side of the tower turning to a cool blue shadow, a glowing lamp. A windmill: orange tower lit evenly on both faces, plus a long dark cast shadow on the ground that is stronger than the shading on the object itself.",
+   "fix": "Shade the windmill tower so its right-facing beams fall into a cool darker shadow, matching the direction of the ground shadow. Soften the ground shadow's edges."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A cactus: warm, frontal light, low form contrast (0.389). The ribs are evenly lit with no clear shadow side, and there is barely any contact shadow where it meets the sand. B topiary: upper-left sun, darker right flank on each tier, and a hard cast shadow on the grass to the right.",
+   "fix": "Light the cactus from the upper left so the right-hand arm and the right side of the trunk fall into a cooler, darker shadow. Add a soft dark contact shadow where it enters the sand."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A, the suitcase, is a real card from the reference set. B lawnmower: glossy red body with sharp white highlights. The shadow side of the hood is shallow, and the grass shows only a soft, vague shadow.",
+   "fix": "Turn the mower's red hood into a darker shadow on its far side, use a broad soft sheen instead of white hot spots, and put dark contact shadows under each wheel."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B boxing gloves: even, front-on lighting. Each glove has a broad glossy red sheen, with shading only in creases and between the gloves, so the outer forms barely turn. A saddle: top-lit leather, a darker apron underside, a shadow under the seat and on the wooden bar.",
+   "fix": "Light the gloves from the upper left so the right and lower parts of each glove turn into a deeper red shadow. Add a soft dark contact shadow on the wood under them."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B lantern: very high form contrast (0.742). The iron is near-black with crisp white edge highlights, and the flame does not light the cage or the base. A oil lamp: the chimney glows, warm light spreads onto the brass bowl, and the brass has a soft sheen with a gentle shadow on the far side.",
+   "fix": "Let the flame cast warm orange light onto the inside of the cage bars and the top of the base. Lift the iron's shadow side to a dark grey instead of black."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B submarine: glossy yellow body lit almost from the front, with bright hot spots on the hull and portholes. The underside darkens only slightly. A wheel: clear upper-left key, darker iron tyre on the lower right, spokes shaded where they turn away.",
+   "fix": "Light the submarine from the upper left so the lower half of the hull rolls into a deeper, cooler shadow. Make the highlights fewer and softer instead of white plastic spots."
+  }
+ ],
+ "pattern": "Generated cards light the hero almost from the front: little or no shadow side on the object itself, and glossy white hot spots on plastic or metal. The cast or contact shadow is often stronger than the shading on the object, or points a different way. Light from a visible source such as a fire or flame doesn't land on nearby surfaces. Real cards use one consistent upper-left key: the right and lower sides of the form turn to a cooler, darker shadow, the sheen is broad and soft, and soft contact shadows sit under the object."
+}

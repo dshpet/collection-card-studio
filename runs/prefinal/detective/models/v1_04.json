@@ -1,0 +1,27 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "loose": [],
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The house pictogram is broken. The 3-sided cylinder roof renders rotated and offset from the walls, with a flat edge on top and the apex pointing down-right, so it doesn't read as a gable. It also shows black z-fighting where the chimney and walls share faces with it. The roof is now a box with its top corners warped together into a triangle that sits right on the walls. The chimney and door sit at their own heights so no faces overlap.",
+   "The shield's top edge has a deep V notch, and the 64-point rim tube kinks at it, so the outline reads as a lumpy heart-like shape. The top is now a gentle arch, giving a clean shield with a pointed bottom.",
+   "The gold back plate is almost hidden under the rim. The rim's tube has a visible seam on the lower right, and the bottom point looks doubled and stepped. The rim is now a closed curved tube placed over the face edge, and the plate shows as a thin gold border outside it."
+  ]
+ },
+ {
+  "round": 2,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The gold rim tube is closed with rim + rim[:3] and curved=True, so the curve runs over its own start and leaves a dark doubled band on the right side of the rim, which the restyle would keep as a crack or joint.",
+   "The smooth curve on the rim rounds off the shield's pointed bottom and its top corners, so the badge reads less like a shield. Close the loop with one extra point and straight segments: 64 points still look smooth, and the point stays sharp."
+  ]
+ }
+]

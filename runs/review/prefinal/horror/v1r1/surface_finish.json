@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the mortarboard has flat matte faces with crisp soft edges, and the tassel is one smooth simple shape, as on the real cards. B: the witch hat's cone has fine fabric-like mottling and many soft wrinkles. The gold buckle is a chunky, uniformly glossy toy part that adds a prong detail.",
+   "fix": "Draw the hat as one smooth matte surface with two or three broad folds and no fabric grain. Make the band a wide flat strip with a simple, low-gloss square buckle."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the plane's body is smooth, satin-white plastic with broad soft highlights, and its windows are simple insets, in line with the real cards. B: the bat's chest is built from many small feathery fur clumps, and the wing membranes have faint vein streaks. Those small marks are an added texture the real cards don't have.",
+   "fix": "Draw the bat's body fur as a few large smooth tufts, keep the wing membranes clean and matte, and add no fine fur strands."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the boxing-glove leather is smooth, with broad satin highlights and a few creases at the thumb, like the leather of the real baseball glove. B: the trunk is covered in long, dense flowing grain lines that run over the whole surface, and a big carved knot hole sits on it. The grain is large and decorative, not fine and quiet.",
+   "fix": "Paint the trunk as smooth brown bark with only a few faint, broad grooves that follow its twist. Leave out the decorative grain lines all over it."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: every layer of the topiary is covered in hundreds of small leaf shapes with bright edge highlights. That busy, noisy texture is the most detailed on the sheet (gloss 0.437, well above the real range). B: the slide is smooth, softly glossy plastic and the ladder is a simple tube, which fits the real cards.",
+   "fix": "Draw each topiary layer as a smooth rounded green mass with a few large, soft leaf clusters at the edges. Make it matte, with no tiny bright leaf highlights."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the mirror frame is evenly lacquered gold everywhere, with no matte areas, and the glass has stock diagonal white streaks. B: the vending machine mixes matte blue metal, clear glass with small condensation drops, and glossy cans. That range of finishes on one object matches the real cards.",
+   "fix": "Give the gold frame satin, low-shine faces with only one soft highlight band. Show the mirror glass as a soft pale reflection, not diagonal streaks."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the motel sign's panels are smooth glossy plastic with clean neon-tube edges and simple posts. B: the house walls are scattered with small raised brick marks, each slate shingle is drawn separately with an edge highlight, and the chimney has block seams. That is fine masonry detail added everywhere, like the generated lighthouse lesson.",
+   "fix": "Draw the walls as smooth matte grey stone with only a few faint block lines near the corners. Make the roof three or four broad rows of soft shingles with no per-tile highlights."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the gate's scrolls are thick, smooth, rounded copper-brown bars, and the bricks are simple soft blocks. B: the black iron gate has many small sharp spikes, a chain made of separate links, and a padlock. The path is fine cobblestone noise and the stone posts have hairline cracks. These are small hardware parts and fine noise the real cards leave out.",
+   "fix": "Draw the gate as a few thick, smooth, satin black bars with broad scrolls. Leave out the separate chain links, use a simple smooth path, and make the stone posts plain with no cracks."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the sneakers have a perforated mesh area, glossy laces and matte rubber soles, so the finishes vary within one object, as on the real flip-flops. B: the pumpkin skin is one even orange material with a faint mottled grain, and the glow inside smears softly into the skin. Its detail sits below the real range.",
+   "fix": "Make the pumpkin skin smooth and slightly waxy, with one soft highlight on each rib and a clean, crisp edge around the carved openings. Add no speckled grain."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the fountain stone is a smooth matte clay-like surface, and the water is simple translucent ribbons. B: the candelabra is chrome-like and evenly shiny everywhere, with many turned rings and a spike finial. The table behind it has large, dark, noisy wood grain, and the candles have small drips.",
+   "fix": "Paint the candelabra as soft satin silver with broad smooth parts and fewer rings. Make the table wood a smooth warm surface with only faint, fine grain."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the palm leaves are smooth, satin-green, simple shapes, and the trunk segments are plain bands with a few small cut marks, like the real cards. B: the crystal ball has a hard window-shaped reflection and painterly swirling smoke inside. The gold stand is lacquered all over, and the table has photographic, noisy wood grain. That is the most AI smear and gloss on the sheet.",
+   "fix": "Fill the ball with smooth, softly graded teal glass and one small round highlight, with no painted smoke texture. Make the stand satin gold with broad shapes, and the table smooth with quiet grain."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the broom bristles are many separate straw strands with fine line grain, and the red twine is drawn as several wrapped cords with a bow. The handle has a wood-grain sheen. B: the balloons are smooth, simple, satin rubber with one soft highlight each. Their detail is very low (0.007), but that is consistent with plain balloons.",
+   "fix": "Draw the bristles as a few broad, smooth straw bundles with no thin strand lines. Make the binding one wide red band, and the handle smooth with a low shine."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the clock is a smooth, glossy, simple plastic rim with clean flat hands, much like the real clock card. B: the marble lion has thin grey crack veins drawn across the plinth and body, and the mane has many fine carved strands. The trees and path behind it are painterly and smeared.",
+   "fix": "Draw the statue as smooth matte pale stone with the mane in a few large soft locks. Leave out the vein cracks and keep the plinth faces clean and flat."
+  }
+ ],
+ "pattern": "Generated cards add fine surface detail the real cards simplify away. That shows up as separate strands of fur, straw or mane, per-brick and per-shingle marks, cracks and veining, cobblestone noise, chain links and many small hardware parts. Glossy metal and glass are evenly lacquered all over, and the wood grain is large and noisy. Real cards use broad smooth parts with satin finishes and only a few quiet marks."
+}

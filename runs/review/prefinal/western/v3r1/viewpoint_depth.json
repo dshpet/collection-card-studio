@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: beach ball cropped tight with a high camera looking down onto the sand. The ball fills the card, and the normals show even panel patches. B: tumbleweed sits on a low dune with a hard ridge. The camera is near eye level and the background is flat purple. The tumbleweed reads as a tangle of tubes with rainbow normals and almost no flat area (planar 0.001, below the real range). Little depth beyond one ridge.",
+   "fix": "Raise the camera slightly so you look down onto the sand, and crop closer so the tumbleweed fills the card. Draw the sand as one gently tilted ground plane, not a hard dune ridge."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the book is seen almost top-down at a steep angle. The large flat cover dominates (planar 0.706, just above the real range), and the page block and spine show on the lower and right edges. B: the coiled belt on planks is also seen from a high angle, and the plank lines recede evenly. The view is a bit more consistent and planar share is mid-range.",
+   "fix": "Lower the camera a little so less of the cover's top face shows. Turn the book a little so the spine side and the cover share the view more evenly."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: boots at a low 3/4 view over a soft gradient floor, with the near boot overlapping the far one. B: sneakers at a similar low 3/4 view, with a hard wall-to-floor seam in the upper third. Both have one ground plane, mild perspective and two depth layers. Neither shows a clear viewpoint flaw.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the drink glass at a slight high angle. The table top edge and the glass rim ellipse match. It is a known real card. B: the ice cream sign is seen dead-on and flat against a slatted wall, with no ground plane. It is a pure front view with no turn or top face, unlike the 3/4 turn on real cards.",
+   "fix": "Turn the ice cream sign a little to one side and view it slightly from above, so its thickness shows on one edge. Let the wall slats recede gently."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the binocular viewer is seen from a low 3/4 view and cropped close. The blurred city sits behind the railing: clean hero, simpler background. B: the campfire ring is seen from high above, but the cabin at top left shows its log ends almost at eye level. The two parts disagree on camera height. The card also stacks many layers: grass, stones, logs, kettle stand, cabin and trees.",
+   "fix": "Use one camera for the whole scene: view the fire ring and the cabin from the same slightly raised angle. Drop the cabin or push it far back as a simple shape, and crop closer on the fire."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the cowboy hat is tilted and turned in a lively 3/4 view, with the brim curving toward the camera, like the real tilted bottle card. B: the graduation cap is nearly front-on and symmetric. It is seen from above with the board as one large flat lit plane, which is the stiffer centered view seen in generated lessons.",
+   "fix": "Tilt and turn the graduation cap so one corner of the board points toward the viewer. Show the board at a slanted angle, not as a flat lid seen from the front."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the windmill is seen from a raised 3/4 camera. The whole object, stone base and a wide stretch of ground all fit in frame, like the generated lighthouse lessons that add a full base and ground. B: the lighthouse is cropped tight from a low camera with the horizon low. It is a known real card.",
+   "fix": "Lower the camera toward eye level and crop in on the windmill's tower and wheel, letting the base run off the bottom of the card. Keep the horizon low and the ground minimal."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cactus is seen from a low camera and sunk into sand. Behind it sit mesas plus a building cut off at the right edge: several depth layers competing at different distances. B: the topiary stands on a lawn with a hedge behind at one eye-level angle. The base ring's ellipse matches the ground plane, like the real sleeping bag lawn card.",
+   "fix": "Remove the building and the mesas, or reduce them to one soft distant band. Keep a single sand ground plane under the cactus and show its base sitting on the sand."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the saddle is centered on a rail that runs straight left to right with no convergence. The seat top is seen from above while the flaps and stirrups hang flat and front-on, a near-orthographic mix. B: the boxing gloves sit on a table at a low angle, with the table edge and wall behind forming one ground plane. They are cropped at the right like the real computer card.",
+   "fix": "Turn the saddle and rail into a 3/4 view so the rail recedes into the distance. Show the stirrups and flaps turned to match the seat."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the suitcase is seen front-on at a low camera, standing on floorboards that recede toward the back. It is a known real card. B: the lawnmower is seen from a raised 3/4 view with the whole object centered, swollen deck forms and large near wheels, the stronger high-camera product view typical of generated lessons.",
+   "fix": "Lower the camera toward the grass and turn the mower more to the side. Crop closer, letting the handle run off the top edge."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the oil lamp's chimney mouth shows an open ellipse as if seen from above, while the base and handle read at eye level. The parts don't share one camera height, and the forms are all smooth rainbow normals (planar 0.003, below real). B: the lantern is seen consistently from slightly above, and the top cap, cage ring and base ellipses all agree.",
+   "fix": "Draw the oil lamp from one slightly raised camera: show the chimney top, the reservoir rim and the foot as matching thin ellipses that grow a little rounder from top to bottom."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "A: the wheel is tilted in a strong 3/4 view, with the rim thickness and every spoke in one plane. B: the submarine body turns toward the right, but the two side portholes are drawn as almost full circles facing the viewer, not foreshortened with the hull. The conning tower is seen slightly from above while the body is seen at eye level.",
+   "fix": "Squash the side portholes into ovals that follow the curve of the hull as it turns away. Show the hull and the tower from the same slightly raised angle."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away by fitting the whole object into the card from a raised, centered product-shot camera. They show a full base and wide ground (windmill, lawnmower, island-style bases), where real cards crop tighter from a low camera, with a low horizon and only a sliver of ground. Generated cards also mix camera heights within one card: rims and tops seen from above while sides or background props sit at eye level. And they pile up extra depth layers (buildings, mesas, cabins) where a real card would use one simple background."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: an open locker on a wooden floor against a purple wall with a white baseboard. The books, basketball and sneakers are things a locker holds, so they are allowed. B: a joystick on a brushed-steel counter with a lit front edge, set in a green box-room with a visible wall corner and baseboard at the left. That is a staged shelf-and-room set, not the plain floor or few large quiet shapes the real cards use.",
+   "fix": "Stand the joystick on a plain floor the same green as the wall, with no counter edge and no room corner, and put a soft pool of light behind it."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a jetpack floating on a green sunburst with a hot glow in the centre and dark vignetted corners, which matches the over-lit sunbursts on the generated lesson cards. B: a medal box on an even blue sunburst like the real glove card.",
+   "fix": "Make the sunburst rays even and low-contrast, with no bright halo behind the jetpack and no dark corners."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a small rocket sits whole in the middle of the sky with clouds around it, and its background detail is below the real range. B: a large plane fills the card and the frame cuts its wing and tail, like the real bike and fan cards.",
+   "fix": "Make the rocket bigger so its nose or flame runs off the card edge. Use a few large soft clouds behind it."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: boxing gloves on a real wood shelf in front of a blue panelled wall, cropped by the left and right card edges, like the real desk and binocular cards. B: a silver pouch standing on a white floor that is neither a real material nor the backdrop's colour, with a cyan glow behind it on bright stripes.",
+   "fix": "Put the pouch on a plain floor the same cyan as the striped wall, or on a real surface such as a wood shelf. Keep a soft shadow and nothing else."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: a phone booth on a green floor with a quiet tone-on-tone suitcase pattern behind it. B: a seahorse swimming in plain blue water with soft light rays. Both follow the category rules and neither adds props.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "A is the real bike-on-car card from the reference sheet, so it is not the generated one. B: a hoop on a bright cyan field of concentric rings. That is a backdrop pattern no real card uses, but this is weak evidence.",
+   "fix": "Replace the concentric rings with soft vertical stripes or quiet sunburst rays in two close blues."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both are on a plain purple floor that blends into the wall. A: two astronaut gloves stand side by side, with a bright hot spot behind them. B: a vending machine whose drinks are the things it holds, under an even light. The evidence is weak.",
+   "fix": "Show one glove, or the pair overlapping, with an even soft light behind them and no bright hot spot."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the real lighthouse card from the lessons. B: a porthole on a pink hull wall full of invented small detail: rivet panels, glowing light strips at the left edge, seam lines and screw plates. The background edge density is higher than the hero needs.",
+   "fix": "Set the porthole in a smooth pink hull wall with one or two faint panel seams. Remove the glowing light strips and the riveted plates."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: sneakers on a cream floor with a clear horizon against an orange wall, like the real cards. B: a helmet on a pink floor that fades into the wall with no horizon, and its background detail is below the real range. It reads as an empty studio gradient.",
+   "fix": "Show a clear line where the pink floor meets a darker pink wall, and add a quiet tone-on-tone pattern such as soft stripes on the wall."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: a gate seen close, with the pillars, hedges and paving cut by the card edges, like the real bike card. B: the whole observatory stands small in a lawn with flowers, bushes and clouds, pulled back like the generated lighthouse on its rock island.",
+   "fix": "Move in close: show the observatory's dome and door large and let the card edges cut the sides. Use plain grass and sky with no flower specks."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a submarine on an even green sunburst. B: a UFO on a yellow sunburst with a glow around its rim lights and an invented light beam pouring down to the bottom edge. The rays are washed out, with background detail below the real range.",
+   "fix": "Remove the light beam and the glow around the rim. Draw the UFO on a plain, even yellow sunburst with clear rays."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a space capsule floats whole and tilted in the middle of the sky with clouds around it, like a generated cut-out. B: a balloon bunch fills the card, with the clouds cropped at the edges and the string running off the bottom, as on the real cards.",
+   "fix": "Draw the capsule larger and drifting so one edge of the card cuts it, with a few big soft clouds behind it."
+  }
+ ],
+ "pattern": "Generated cards pull back to show the whole object, small and centred, instead of moving in close and letting the card edge cut it. They add a glow or hot spot behind the object, light beams, and small invented background detail such as rivets, light strips and flower specks. On plain-floor cards they lose the line where floor meets wall."
+}

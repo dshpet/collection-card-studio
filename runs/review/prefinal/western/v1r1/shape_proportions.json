@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the gold pan's silhouette is one smooth elliptical blob. The rim is a thick rounded roll with no flat lip or bevel, and the outline has almost no corners (solidity 0.986, above the real range). B: the oil lamp has separate parts: a narrow chimney neck, a thin ring handle, a small knob and a stepped foot with crisp tiers.",
+   "fix": "Draw the pan as a shallow metal dish with a thin flat rim, a crisp edge where the rim meets the sloped wall, and a visible flat bottom; keep the rim narrow, not a rolled tube."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the harmonica body is swollen into a soft bar. The top cover bulges like a pillow and the blue end caps are round blobs, so the silhouette has no real corners (corner_rate 0, solidity 0.988, both outside the real range). B: the folding fan has straight, tapered ribs with clear gaps and straight pleat edges.",
+   "fix": "Draw the harmonica as a flat rectangular metal box with a flat top plate, straight long sides and tight, slightly beveled corners; end caps are thin flat plates, not rounded bumpers."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the cowboy hat has a pinched crown and a curled brim, which is the real proportion of a hat. B: the jacket's sleeves are inflated tubes and the cuffs are thick rounded rings. The collar is a padded roll, so the garment reads as stuffed rather than cloth.",
+   "fix": "Draw the jacket in thin fabric: slimmer sleeves that hang straight, flat narrow cuffs, and a thin folded collar with crisp points."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the gas pump's top sign is a swollen pillow slab with blobby rounded corners, and the cabinet edges are soft. B: the buoy is built from flat-topped cylinders with crisp stepped rims. Its handle loop is thick, but the tiers are planar.",
+   "fix": "Draw the pump's top sign as a flat rectangular board with straight edges and tight corners, and give the cabinet flat sides with crisp vertical edges."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the popcorn cart has thin canopy poles, a scalloped awning and spoked wheels, with sensible part sizes. B: the saddle has a flat skirt, a stirrup and a horn on a hay bale cropped by the card edge. Both silhouettes are plausible, and the numbers sit inside the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the rocking chair has thin spindles, rails and runners with open gaps, like a real chair. B: the barrel is one fat smooth capsule. The hoops barely break the contour, and there are no stave edges or a top chime lip (solidity 0.983, corner_rate 0.798, both outside the real range).",
+   "fix": "Draw the barrel with a visible top rim lip, slightly flat stave sides, and iron hoops that stand out as thin raised bands at the contour."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the cowboy boots have a tall straight shaft, a pointed toe, a stepped heel and small thin spurs. B: the sneakers are swollen. The soles are puffy rounded slabs and the uppers are lumpy, with no crisp sole line, so they read as inflated toys.",
+   "fix": "Draw the sneakers with a thinner sole that has a straight edge, a lower slimmer upper, and a clear crisp line where the upper meets the sole."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the cactus has rounded sausage arms and a ribbed trunk, which is typical of the style. B: the spring-rider duck has a chunky body, a thick coil spring and a flat base plate. Both are toy-like by nature, and the numbers are in range on both cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the fountain's tiers are flat discs with straight rims and stepped pedestals. B: the wagon cover bulges like stacked pillows, the wheels have fat red rubber tires instead of thin iron rims, and the tongue pole is a thick rod (thin_share 0.023, straight_share 0.192, both outside the real range).",
+   "fix": "Draw the covered wagon with a canvas top stretched tight over thin hoops, wooden wheels with thin metal rims and thin spokes, and a slim flat-sided wooden bed."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "B: this is the same lighthouse as the real card in the lessons, cropped by the card edge, with a thin railing. A: the windmill is fully contained and sits on an added stone base slab, the same added-base pattern seen on the generated lighthouses. The lattice legs are fairly thick and the vane wheel is a dense disc.",
+   "fix": "Show the windmill with a slim lattice tower of thin straight struts. Let it be cropped by the card edge and drop the stone platform base."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the campfire scene has irregular stones and logs, and the kettle has a thin handle and spout; the low straight share (0.136) comes from organic content. B: the coin-operated binocular viewer's head is a swollen pillow. The eyepieces are rounded blobs, and the side arm and post collars are thick and soft-cornered.",
+   "fix": "Draw the binocular viewer with a boxy head with flat faces and tight beveled edges, short cylindrical eyepieces with crisp rims, and a slim straight side bracket."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the neck pillow is a fat U whose inner opening is squeezed into a narrow teardrop, and the contour is almost featureless. It is oversized for its object. B: the water bottle has a waisted body, a stepped cap and a thin carry loop with a clear hole.",
+   "fix": "Draw the neck pillow with slimmer arms and a wider, rounder opening, so the U is clearly readable with a gap between its tips."
+  }
+ ],
+ "pattern": "Generated cards inflate objects. Planar boxes and rims turn into pillows or capsules with blobby corners (solidity near 0.98, corner rate near 0). Thin parts such as tires, handles, cuffs and soles are thickened into sausages. Objects are fully contained and often sit on an added base or platform, where real cards crop the object and keep flat faces and crisp edges."
+}

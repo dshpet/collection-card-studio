@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the chip lies on a plain off-white paper surface with faint grain and nothing else. The background is very quiet: edge density 0.007, below the real range, and the off-white is unlike the saturated fields on the real cards. B: the book lies on a warm orange wood surface that fills the card, with long grain streaks. That matches the category-3 flat-object staging in the real cards.",
+   "fix": "Lay the chip flat on a saturated coloured surface that fills the card, such as a deep teal mat with a soft tone-on-tone texture, seen slightly from above, with a soft pool of light under the chip."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the helmet sits on a seamless purple sweep. There is no floor line and the fade has no structure; background detail is 0.0059, below the real range. B: the sneakers stand on a pale yellow floor with a clear horizontal break to an orange wall. That is a readable category-2 floor, like the real cards.",
+   "fix": "Put a clear horizontal floor line behind the helmet: a lighter purple floor meeting a darker purple wall, with a soft light pool on the wall behind the helmet."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the flask stands whole and centred on a brushed-steel counter whose front edge runs across the bottom, against a plain pink wall. It is the same stock 'steel counter + flat wall' setup that recurs in p09 A. B: the locker stands in a room corner with a baseboard and plank floor. Its contents (books, ball, sneakers) are things a locker holds, so they are allowed props.",
+   "fix": "Show the flask close up on a lab bench that the card's bottom and side edges cut, with one or two large, quiet lab shapes behind it instead of a flat pink wall."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the plane fills the card and its right wing and tail are cut by the card edge, among big cloud masses. That matches the close crop on the real lighthouse. B: the UFO is small and complete in the middle, with an even margin of sky and clouds placed symmetrically in the corners. That is the 'whole object with margin' framing seen in the generated lessons.",
+   "fix": "Draw the UFO larger and closer, so the card edge cuts the end of its rim, with one big soft cloud bank behind it instead of small clouds in each corner."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: a close category-4 crop. The bike on the car rack is cut by the card edges, and the background is a few large shapes (car, hills, road). B: the rover is complete and fairly small. The ground is covered in craters, scattered rocks and pebbles, with stars and a moon behind, plus an invented orange case on the back. Too many small background objects, like the generated lighthouse island with its rocks and props.",
+   "fix": "Show the rover close up, cut by the card's bottom and side edges, on smooth grey ground with one or two large soft craters. No scattered rocks, no case, at most one faint planet."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the rocket is complete and centred with clear sky all around it. The clouds sit evenly in the corners, so the composition looks generic. B: the balloon bunch is big, the strings run down into a large cloud bank that the bottom edge cuts, and a cloud is cropped at the right edge. That is closer to the real cards' crop.",
+   "fix": "Draw the rocket larger and diagonal, so the card edge cuts its flame, rising through one large cloud bank at the bottom instead of separate puffs in each corner."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the column stands in place in a museum room, on its plinth with a plaque, cut by the bottom edge. The room is a few large, quiet wall planes. B: the rose arch stands on a plain pink floor against a tone-on-tone striped wall, which matches the real striped clock card. Both follow the real staging.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the vault door is close and cut by the card edges. Behind it are large smooth white wall panels with a few glowing strips, all quiet shapes. B: the gate scene has two brick pillars with many small bricks, cap balls, trees, a hedge, lawn and a paved path. Background edge density is 0.122, above the real range, so the place is too busy.",
+   "fix": "Move in close on the gate so the card edges cut it. Keep the brick pillars as two big simple blocks with few brick lines, and behind it only one soft green hedge shape and the sky."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the control panel stands whole on the same brushed-steel counter, against a flat blue wall, as the flask in p03 A. It is a repeated stock setup, not the place where the object is used. B: the claw machine stands in a teal room corner with a soft floor. The bears and balls inside are things the machine holds, so they are allowed.",
+   "fix": "Set the control panel into a console wall, close and central, with the card edges cutting the console. Behind it, use one or two big dim panel shapes instead of a steel counter and a flat wall."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the stone chess table and stools stand in a park with trees and a path, all as large rounded shapes. B: the target stands in a fairground booth with a row of bulbs and a teddy bear beside it. The bear is a booth prize, so it belongs in that place. Both are busy category-4 scenes within the real range (0.065 and 0.058).",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the fan is close up in its room, cut by the card edges, with a big curtain mass and a window. That is real category-4 framing. B: the dish is complete and centred on an empty grey concrete plane under a plain gradient sky. The background has almost no edges (0.008, below the real range) and gives no real place.",
+   "fix": "Show the dish close up on a rooftop, cut by the card's bottom edge, with one large railing or roof-edge shape and a soft cloud behind it, not an empty grey slab."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the ring box fills most of the card on cyan rays, with a soft brighter area low in the centre, like the real glove card. B: the satellite is small and floats in the middle with wide empty margins. Behind it is a strong bright yellow-green hotspot in the ray burst, the glowing centre seen on the generated glove and camera lessons.",
+   "fix": "Draw the satellite larger, so its solar panels almost reach the card edges. Use even, soft green rays with no bright glowing spot behind it."
+  }
+ ],
+ "pattern": "Generated cards show the whole object small and centred with an even margin, while real cards crop close and let the card edge cut the subject. The same stock settings come back: a brushed-steel counter against a flat wall, or an empty concrete slab under sky. Category-4 scenes get scattered small detail (craters, pebbles, stars, moon, extra cases). Ray backdrops get a bright glowing spot behind the hero."
+}

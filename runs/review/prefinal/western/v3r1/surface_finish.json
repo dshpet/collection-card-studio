@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the beach ball has smooth vinyl panels, one soft highlight and no surface marks, like the real cards. B: every branch of the tumbleweed has fine bark streaks, split ends and grain lines. The 2× crop is full of crisp micro-detail, and the measured texture and gloss are far above the real range.",
+   "fix": "Draw the tumbleweed as a few thick, smooth, rounded brown branches with soft matte shading. No bark streaks, grain lines or splintered tips."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the book cover is flat, smooth teal with clean sticker shapes, like the real cards. B: every coil of the belt has a dashed stitch line on both edges and pebbled leather grain, and the buckle is chrome-shiny. That is dense fine detail with high gloss, well outside the real range.",
+   "fix": "Draw the belt as smooth, soft brown leather with one simple groove along each edge instead of stitch dashes, a soft satin sheen and no leather grain. Make the buckle a broad, softly shaded grey metal disc."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the boot shafts carry dashed yellow stitch patterns, the leather wrinkles at the ankle, and the spur strap has small rivets and a spiked rowel. That is the stitch-and-rivet build-up the generated lesson cards show. B: the sneakers have a perforated mesh-dot texture, but the uppers are otherwise broad, smooth plastic shapes. The measured values are close, so this is a weak call.",
+   "fix": "Draw the boots as smooth, satin red leather with the star and swirl as broad raised shapes, not dashed stitching. Use a plain wide strap without rivets, and keep the leather free of creases."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the iced drink is one of the real reference cards, with clear glass, smooth ice cubes and soft matte highlights. B: the ice cream is drawn as a glossy neon tube with glowing bloom. The whole surface is lacquered, gloss is above the real range, and the ribbed green wall adds repeating fine texture.",
+   "fix": "Draw the ice cream as a soft matte scoop with one gentle highlight on a plain wafer cone. No neon tube outline, no glow and no ribbed wall behind it."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the binoculars are broad, smooth, satin blue metal parts with simple bevels, like the real cards' simplified hardware. B: the logs have bark grain lines and glowing ring ends, and the stones and kettle stand have speckled, pitted micro-texture. That surface noise is finer and busier than anything on the real cards.",
+   "fix": "Draw the stones as smooth, rounded grey pebbles with soft shading and no speckles, and the logs as simple brown cylinders with a few broad bark bands. Keep the stone under the kettle smooth."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the hat crown and brim carry an even, fine felt grain and noise across the whole surface, which shows clearly in the 2× crop. Real cards have no noise like this. B: the graduation cap is a clean, smooth matte board with crisp edges and a simple tassel, like the real cards.",
+   "fix": "Draw the cowboy hat as a smooth, clean beige surface with soft matte shading and no felt grain or noise. Keep the red band as a plain smooth strip."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 5,
+   "difference": "B: the lighthouse is a real reference card, with smooth bricks, broad parts and soft finish. A: the windmill tower is covered in bolt heads at every joint, the beams have streaky wood grain, and the fan blades have brushed-metal texture with a riveted rim. This is the classic generated build-up of hardware and grain.",
+   "fix": "Draw the windmill tower as smooth orange-brown beams with no bolts or wood-grain streaks, and the fan as plain, smooth grey blades with soft shading and no rivets."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the cactus is a smooth, matte green body with a few small bumps and broad ribs. B: every tier of the topiary is packed with hundreds of crisp, glossy leaves, and the background hedge repeats the same fine texture. Detail, texture and gloss all measure above the real range.",
+   "fix": "Draw the topiary tiers as smooth, rounded green masses with a few large, soft leaf clusters suggested on the edges. Use matte foliage and a plain soft hedge behind it."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the saddle has dashed stitching along every edge of the seat, flap and strap, plus visible pebbled leather grain and shiny metal stirrup plates. B: the boxing gloves are smooth, satin red shapes with a few broad creases, like the real cards.",
+   "fix": "Draw the saddle as smooth brown leather with a soft satin sheen. Use simple raised edges instead of stitch dashes, no leather grain, and plain grey stirrups."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the suitcase is a real reference card, with smooth stickers and soft wear marks. B: the lawn mower is a broad, smooth glossy red plastic body with matte rubber tyres and simple steel handles. Its gloss mix and level of detail fall inside the real range, so there is nothing on my vector to flag.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the oil lamp is smooth, warm brass with broad soft highlights and frosted glass, simple like the real cards. B: the iron cage has a fine brushed, speckled metal surface, the glass is crisply clear with sharp reflections, and the ribs carry small cap details. Its texture sits at the top of the real range. This is a weak call.",
+   "fix": "Draw the lantern frame as smooth, dark grey metal with soft broad shading and no speckle, and the glass with one soft highlight."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: every spoke and the felloe of the wagon wheel have streaky wood-grain lines, and the iron tyre has a ring of bolt heads. Texture measures above the real range. B: the submarine is a glossy yellow hull with a few rivets and copper portholes, but its surfaces are broad and smooth.",
+   "fix": "Draw the wagon wheel as smooth orange-brown wood with soft shading and no grain lines. Make the rim a plain, wide dark metal band with no bolts."
+  }
+ ],
+ "pattern": "Generated cards cover their surfaces in small detail. Leather gets dashed stitch lines and pebbled grain, wood gets streaky grain, metal gets bolt heads and brushed speckle, and felt and stone get fine noise. Real cards keep materials as broad, smooth, softly shaded shapes and simplify hardware into wide bands. Generated cards also tend toward uniform high gloss, with neon or chrome, instead of the real cards' quiet satin finish."
+}

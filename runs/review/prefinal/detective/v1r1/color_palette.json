@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the orange-wood chair and lime cushion sit against a saturated blue striped wall, so a warm hero meets a cool backdrop. The floor repeats the chair's wood hue, but its shadows stay a rich orange-brown. B: the orange hound's shadows sink into dark olive-brown and near-black (shadow chroma 0.457, below the real range). The grass is an even, loud yellow-green that competes with the dog.",
+   "fix": "Make the dog's shadows a deeper, saturated orange-brown, not grey-black. Make the grass a softer, less saturated green so the warm dog stays the loudest color."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a navy cap with a gold tassel on cyan rings. The cap repeats the background's blue family, but the gold accent keeps it chromatic. B: the fedora is an almost colorless grey felt (subject chroma 0.035) on a very loud lime-green ring backdrop (0.234). Only the crimson band carries color, and the shadows read purple-maroon (shadow chroma 2.2). The card has about one hue family.",
+   "fix": "Give the hat a real color, such as a warm brown or tan felt with a red band, and make the green rings a little less neon."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: an orange-red pump in a peach-and-lavender desert dusk. The card is pulled warm almost everywhere (warm share 0.80, above the real range), and the backdrop is dull (0.086), so the hero has no cool field to sit against. B: a gold and brown chest on a deep blue underwater field, the warm-hero/cool-backdrop pattern of the real cards.",
+   "fix": "Put the red pump against a clear, saturated blue sky or a cool turquoise backdrop. Keep the sand small and pale, and drop the peach haze."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the typewriter's green body falls to a muddy olive-black (subject chroma 0.044, below the real range). It sits on a dark brown desk in front of an orange wall, so the whole card is warm and murky with few hue families. B: a red and white cart with gold trim on a saturated blue diamond backdrop. The local colors read clearly and contrast in temperature.",
+   "fix": "Paint the typewriter a clear, bright emerald green with lighter green planes, and make the backdrop or desk less dark and brown."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a dark chocolate door on a flat cyan wall with pale tiles. The palette is sparse, a warm hero on a cool field. B: a saturated blue door framed by an orange jamb, cream wall and dense ivy, with a multicolor flower wreath. The ivy shadows go olive-brown, the wall around the door is warm, and many accent hues compete with the hero.",
+   "fix": "Remove the ivy and reduce the wreath to one or two colors. Set the blue door against a simple, plain backdrop of a contrasting temperature."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a dark bottle-green lamp on a turquoise sunburst. The hero and backdrop share the same green-teal family (1.58 hue families, below the real range), and the dark iron shadows lose chroma (0.54). B: a black and silver camera on a blue burst with a small red button accent. It is neutral, but the accent and the blue reflections on the steel keep the color roles clear.",
+   "fix": "Paint the lamp in warm brass or gold metal with a glowing yellow glass, so it contrasts with the teal background."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a brass oil lamp on a yellow-green sunburst. The hero's warm gold sits right next to the backdrop's hue, so there is no temperature split, and the glow pushes the shadows extra saturated. B: a gold magnifier on a clean cyan burst, the warm-on-cool pairing seen on most real cards.",
+   "fix": "Put the brass lamp on a cool blue or deep teal sunburst background instead of yellow-green."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: blue sneakers with lime, teal, pink and orange trim on an orange-and-cream set. There are about 5.5 hue families, above the real range, and a scatter of neon accents. B: a grey steel safe with a gold dial on magenta. The neutral hero has one warm accent, and its shadows keep a magenta cast.",
+   "fix": "Limit the sneakers to blue and white, with one accent color on the laces. Put them on a plain backdrop without the cream floor."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: red gloves on a blue paneled wall over light wood, a hot hero against a cool backdrop. B: a black phone on orange-yellow stripes and a dark mahogany desk. The card is entirely warm (warm share 1.0), the hero has almost no chroma (0.023), and its shadows go brown-black (0.39).",
+   "fix": "Make the phone a colored plastic, such as glossy red or cream, and set it against a cool blue striped wall instead of orange."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a silver shield with a gold rim on a violet field. The neutral hero has a warm accent that opposes the purple. B: a cobalt-blue vending machine on violet. The hero and backdrop are neighboring cool hues, so nothing breaks the temperature (warm share 0.026), and only the tiny can colors add warmth.",
+   "fix": "Paint the vending machine bright red or orange so it stands out against the purple background."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: a blue bottle on a yellow sunburst. B: a cyan ticket on orange stripes. Both use the real cards' cool-hero/warm-backdrop pattern, with similar chroma and few hue families. The ticket's pale mint panel and the bottle's flat blue mass give no clear sign on hue or chroma.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a teal book on orange wood with multicolor stickers. It is busy (6.2 hue families), but the cool hero contrasts with the warm table. B: a manila folder, brown fingerprint and red clip on dark walnut. Everything is orange-brown (warm share 1.0) and the backdrop is muted (0.086), so the hero has no contrasting field.",
+   "fix": "Put the folder on a cool, saturated backdrop, such as a blue or teal table or wall, and drop the dark brown wood."
+  }
+ ],
+ "pattern": "Generated cards give themselves away by pulling the whole card warm. Neutrals become cream or beige, and wood or desert backdrops share the hero's hue, so the hero loses the cool-against-warm split the real cards keep. Generated heroes also tend to be either muddy dark neutrals with brown-black shadows or neon multi-accent palettes, where real cards keep one clear local color."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the umbrella canopy is soft and matte with gentle fabric folds, and the pole has one soft sheen. This matches the soft finish of the real cards. B: the saucer hull is photographic brushed chrome with a crisp, mirror-like rim, the red dome has hard specular hotspots, and the rim bulbs glow like real lamps. It reads as a render, not a painted card.",
+   "fix": "Paint the saucer as soft, satiny grey metal with one broad soft highlight. No mirror reflections. Make the rim lights simple flat-lit dots and give the dome a single soft gleam."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the rocket has a row of small raised rivets around the nose cone and a bolted ring around the porthole. These are small hardware bits that the real cards leave out. The silver body is streaky chrome. B: the airplane fuselage is smooth, satiny white with broad soft shading, and the windows are simple dark slots.",
+   "fix": "Remove the rivets and the bolted porthole ring. Join the nose cone to the body with one smooth wide band, and give the porthole a plain thick rim. Make the silver body soft satin with one broad highlight."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the balloons are soft latex with one soft highlight each. They are slightly blurry but consistent. B: the yellow saucer has tiny screw dots on the hull, a hairline seam at the dome collar and a very clear glass dome with sharp reflections. That is extra small hardware on an otherwise lacquered toy.",
+   "fix": "Drop the tiny screws and seam lines on the hull. Keep the yellow body to one smooth, satin-finish surface, and give the dome one soft curved reflection."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the paper map has soft fold creases and a thick magnifier rim with a soft lens. B: the star chart is a flat glossy plate whose thin grid lines glow and blur into the blue. At 2× the stars and lines smear, and the wood grain behind it is large and decorative.",
+   "fix": "Draw the star chart as matte printed paper or board with crisp, non-glowing lines. Make the table's wood grain fine and quiet."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the ice tray is covered in speckled frost noise along its bottom and rim, the ice cubes are full of scattered bubble dots, and every surface is glossy. This is decorative grain the real cards don't have. B: the pool's inflatable rings are smooth and satiny and the duck is soft, although the water has some smeared ripples.",
+   "fix": "Remove the frost speckle and bubble dots. Make the pink tray soft matte plastic and the ice glassy with one or two broad highlights."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the battery has a clean glass tube, a soft glowing core and plain metal caps. B: the vending machine's glass is covered in scattered condensation dots, the cans and bottles behind it are smeared and blurry with muddy labels, and every surface has the same plastic gloss.",
+   "fix": "Remove the condensation droplets. Paint the cans and bottles behind clean glass as simple, clearly shaped items, and keep the blue cabinet satin with one broad sheen."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the sandcastle walls have carved brick-outline marks, and there is grainy sand stipple and clumps across the ground. That is decorative surface texture spread over every face. B: the bumper car is smooth green lacquer next to a matte black bumper, which gives it a clear gloss range.",
+   "fix": "Make the sandcastle walls smooth, packed sand with only a few soft dents. Leave out the brick outlines, and keep the ground sand fine and quiet."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the drone is a soft matte white body with smooth black rotors and a simple vent row. B: the street lamp is painted metal with a soft glass globe and simple scrollwork. Both finishes are close to the real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the real lighthouse: chunky soft bricks and smooth red metal. B: the antenna mast sits on a near-photographic concrete floor with seam lines and fine grain, there are small clamps and bolts on the brackets, and the plastic is all one slick white.",
+   "fix": "Paint the rooftop as a soft, simple surface with no concrete grain. Show the mast clamps as wide smooth bands, and add a soft matte contrast between the base and the pole."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the rover has broad soft panels and only a few panel lines, with soft dust on the ground. B: the bike has many hairline spokes, a toothed chain ring and pedals with small brackets, and the frame is high-gloss red throughout. It is dense, crisp fine detail beyond the real cards' scale.",
+   "fix": "Show the wheels with a few thick soft spokes or a solid disc, and simplify the chain and rack to broad smooth shapes. Make the frame satin, not lacquered."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the book cover is soft cloth with glossy sticker decals, giving a matte–gloss mix, although the wood grain is fairly bold. B: the tablet sits on brushed metal full of fine streaky noise, and the screen and bezel are flat with almost no gloss.",
+   "fix": "Replace the brushed-metal noise with a soft, plain surface. Give the tablet's glass one soft diagonal sheen and its bezel a satin edge highlight."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the sneakers are covered in a dense dotted mesh-perforation texture across the uppers, and the laces have small bead tips. That is fine repeated texture spread over large areas. B: the helmet has smooth matte white shell panels and a glossy gold visor, which gives a clear gloss range, with a few simple vent slots and buttons.",
+   "fix": "Make the sneaker uppers smooth soft fabric with at most a faint mesh suggestion. Remove the dot grid and drop the small lace-tip beads."
+  }
+ ],
+ "pattern": "Generated cards spread small repeated surface marks over whole objects: rivets, screws, bolted rings, brick outlines, frost speckle, condensation dots, mesh perforations, hairline spokes. They also tend to give every material the same lacquered gloss, or to drift into photographic surfaces (mirror chrome, concrete or brushed-metal noise). Real cards keep surfaces broad and soft, use a few wide bands instead of hardware, and set matte against one glossy accent."
+}

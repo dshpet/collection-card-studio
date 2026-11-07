@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the chair's wood is a smooth orange material with only a few soft, faint grain streaks on the arms and back slats, and the cushion is matte. That fits the real podium and suitcase. B: in the crop, the hound's coat is velvety and finely rendered, and the grass is drawn as thousands of crisp single blades. That is denser micro detail than the soft, simplified surfaces on the real cards.",
+   "fix": "Paint the grass as a smooth green mass with a few soft blade shapes instead of individual blades. Give the fur a smooth, soft surface with broad shading and no fine hair texture."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the cap's board and band are smooth satin plastic with clean bevels, the same simplified finish as the real cards. B: the fedora's crown and brim carry a photographic felt grain, a fine noise across the whole surface, and the red band has a fabric fuzz. The real cards never show this kind of material noise.",
+   "fix": "Make the hat a smooth, softly shaded surface with no felt fuzz or grain. Matte grey with gentle broad highlights, like a clay toy."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the pump body has chipped, worn paint at its base, and the counter digits are crisp and legible. The desert behind is soft and painterly with a slight brush feel. B: the chest's wood planks have quiet, fine grain, the gold bands are broad and smooth, and the coins are simple discs. Those match the real suitcase and ship.",
+   "fix": "Remove the chipped paint and wear at the pump base, and keep the body clean, smooth enamel. Simplify the counter to plain shapes."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the typewriter is crowded with dozens of separate chrome key stems and caps, each with its own sharp specular highlight. The green body is fully lacquered, and gloss and highlight shares are both above the real range. B: the popcorn cart has broad, smooth parts. The red body is satin and the glass has a single soft streak, as on the real cards.",
+   "fix": "Draw the keys as a few rows of simple rounded caps without separate chrome stems. Make the green body a soft satin finish, and keep the chrome highlights to a few small soft spots."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the blue door shows large visible brush streaks of wood grain across every panel. The ivy is a dense mass of crisp leaves, the wreath is crowded with flowers, and gloss and micro-texture are far above the real range. A: the brown door has quiet grain, simple brass hinges, a soft frosted glass pane and one round knob, which fits the real cards.",
+   "fix": "Paint the door as smooth blue panels with very faint, fine grain and no brush streaks. Reduce the ivy to a few large simple leaf clusters with soft shading."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the camera body has a photographic leatherette grain across its black faces. The flash reflector shows brushed-metal radial streaks, and the bellows and red button are rendered like a product photo. A: the street lamp is smooth dark-green painted metal with soft glass and broad, simple forms, as on the real fan and spyglass.",
+   "fix": "Make the camera body smooth satin black with no leather grain. Draw the flash as a plain, softly shaded silver dish without brushed streaks."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the oil lamp is smooth polished brass with soft highlights and a frosted glass chimney. B: the magnifier has a smooth gold rim, clear glass with a single highlight streak and a matte wooden handle. Both have the simplified glossy-and-matte mix seen on the real spyglass, and on this vector there is no reason to pick either.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the sneakers carry a dotted mesh texture over the uppers, many small colored lace tips and crisp seams, with gloss at the top of the real range. The rubber sole is equally shiny, and the surface reads smeared and plasticky. B: the safe is smooth matte grey metal with broad hinges, a gold dial with simple tick marks and one handle. That is simplified hardware, as on the real cards.",
+   "fix": "Make the sneaker uppers smooth matte fabric with no dotted mesh pattern. Draw simple laces with no colored tips, and keep the sole soft satin rather than glossy."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the phone is all lacquered black with hard, sharp reflections on every face. It sits on a photographic dark wood table with fine realistic grain, and detail, micro-texture and gloss are all above the real range. A: the boxing gloves are smooth red leather with a few soft creases and a soft sheen, and the table has quiet wood stripes. That is closer to the real cards' simplified finish.",
+   "fix": "Give the phone a soft satin black finish with a few broad, soft highlights instead of sharp lacquer reflections. Paint the table as warm smooth wood with faint, quiet grain."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the shield's silver face is covered in brushed-metal streaks, and the purple background shows a speckled noise. The streaks are a photographic material cue that the real cards do not use. B: the vending machine has a smooth blue satin body, glass with small droplets and simple bottles and cans. It is soft but simplified.",
+   "fix": "Make the shield face smooth, softly shaded silver with one or two broad highlights and no brushed streaks. Keep the background clean and free of noise."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the ticket is a flat vector graphic with no material surface at all. Its dotted line has uneven, wobbly dots, and the light paper area pushes highlight share above the real range. A: the bottle is a smooth, translucent-looking blue plastic with soft internal glow and broad highlights, which matches the real cards' rendered materials.",
+   "fix": "Render the ticket as a thick card object with soft shading, a slightly raised edge and evenly spaced perforation dots. Use a matte paper face and a satin blue border."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the table under the book is painted with big, decorative wood-grain stripes, and the micro-texture is just above the real range. The stickers have crisp white die-cut borders and the cover is evenly glossy. B: the folder is matte card stock with a fine, quiet paper surface. The dark wood table has a fine grain and the red clip is a single smooth glossy piece.",
+   "fix": "Paint the table as smooth warm wood with fine, faint grain instead of big decorative stripes. Give the book cover a soft satin finish."
+  }
+ ],
+ "pattern": "The generated cards give themselves away by over-rendering the surface. They use photographic material texture: felt fuzz, leatherette grain, brushed-metal streaks, sneaker mesh and brush-streaked wood. They also break hardware into many small crisp parts (chrome key stems, single grass blades, dense ivy) and apply an even lacquer gloss across a whole object. The real cards keep surfaces smooth, with broad hardware, quiet fine grain and a mix of matte and satin."
+}

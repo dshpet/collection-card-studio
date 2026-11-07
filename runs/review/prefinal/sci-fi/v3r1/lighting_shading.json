@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A umbrella: clear upper-left key, canopy top lit, scalloped underside drops into a deep warm shadow, soft turn on each panel. B UFO: the saucer rim is lit almost evenly all the way round, the dome has a sharp white hot spot, and the ring of glowing bulbs acts as a set of practical lights. No core shadow under the disc and no light/shadow side.",
+   "fix": "Light the saucer from the upper left: top of the disc bright, lower right rim and underside in a soft darker shadow, one broad soft sheen on the dome instead of a sharp white dot."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A rocket: light bias 1.0 is above the real range. The body is split hard into a lit left half and a dark right half, with one bright stripe down the middle like chrome. The flame has no glow on the fins. B airplane: gentle, even top-light, soft turn on the fuselage and engines, matching the real lighthouse and camera.",
+   "fix": "Soften the rocket's shading: a gradual turn from the lit left to a medium shadow on the right, no hard chrome stripe, and a warm orange glow from the flame on the lower fins and nozzle."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A balloons: each sphere has a classic upper-left soft highlight and a smooth turn into a darker lower right, like the real beach ball. B yellow UFO: the body is mostly flat bright yellow with a sharp glossy streak on the left end. The glass dome has hard white reflections, and the magenta thruster glow throws no light onto the hull.",
+   "fix": "Give the UFO hull a soft rounded turn: lit top left, darker belly and right end, with a pink glow from the thrusters on the underside of the hull."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A map: directional light from the upper left, fold creases shade in and out, and the magnifier casts a soft shadow onto the paper. B star board: shading range 0.54, below the real cards. The board face is evenly lit with no falloff, the edge gets only a thin even shadow, and the contact shadow on the table is faint.",
+   "fix": "Light the star board from the upper left: a slight falloff across the board face toward the lower right, a darker right and bottom edge, and a soft but clear shadow on the wood under the lower right side."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A ice tray: the pink tray is lit nearly evenly front-on. The cube has a bright edge glow on every side, and the tray casts only a faint contact shadow on the table. B pool: a clear directional sun throws a large soft fence shadow across the grass, and the rings shade darker on the shadow side. Both have low form contrast, so this is a weak call.",
+   "fix": "Light the ice tray from the upper left: a darker right side on the tray walls, a soft shadow cast to the lower right on the table, and a highlight on the ice cube on the lit side only."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A battery: a symmetric studio light on the metal caps with even sheen bands. The cyan core glows but puts no light on the caps, and a long soft shadow falls to the right. B vending machine: a lit front face against a darker side face, with a soft contact shadow under the feet. Both measure in range, so the call is weak.",
+   "fix": "Let the battery's cyan core glow onto the inner faces of the metal caps, and darken one side of the cylinder so the light side and shadow side read clearly."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B bumper car: form contrast 0.71 and light bias 0.77, both above the real range. The green shell has hard, glossy plastic reflections, the bumper base is near black, and the floor carries a mirror reflection. A sandcastle: soft upper-left sun, towers turn gently into warm shadow, soft shadows cast in the sand.",
+   "fix": "Soften the bumper car's shading: a broad soft sheen on the green shell, a dark grey rubber bumper rather than black, and a soft contact shadow on the floor instead of a mirror reflection."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A drone: shading range 0.53 and light bias 0.12. The drone is lit flat from the front, the rotors and body are nearly the same grey, and there is no shadow side and no cast shadow. B street lamp: a clear left-to-right turn on the pole and hood, and the glowing bulb lights the inside of the glass.",
+   "fix": "Light the drone from the upper left: tops of the body and rotors bright, the right side and underside in a clear soft shadow, and a small dark shadow under the camera."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A lighthouse is the real lesson card: a soft left key with the tower turning gradually into a cool shadow. B antenna: a photographic hard sun, crisp dark cast shadows of the mast and dish on the roof, and thin poles with almost no turn. The shadows are much harder and darker than anything in the real cards.",
+   "fix": "Use soft, painted lighting on the antenna: gentle rounded shading on the pole, and a short, soft, pale shadow on the roof instead of a long hard-edged one."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A rover: form contrast 0.65 and light bias 0.80, both above the real range. A strong side sun leaves the right faces and wheels very dark, and it casts a hard black shadow block under the rover on the moon dust. B bike on car: backlit sunset with low shading range (0.55), soft, and painterly. Both are outside the range, so this is a weak call.",
+   "fix": "Soften the rover's light: lift the shadow sides of the wheels and seats with a cool fill, and make the ground shadow softer-edged and lighter."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B tablet: shading range 0.43, far below the real cards. The bezel is a flat dark frame with almost no turn, the screen is a uniform glow, and there is only a faint shadow on a brushed-metal plate. A book: a clear upper-left key, the cover edge and page block turn into shadow, and a soft, warm shadow is cast on the table.",
+   "fix": "Model the tablet as a rounded object: a lit top-left bezel edge, a darker bottom-right edge, and a soft clear shadow on the surface to the lower right."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A sneakers: light bias near 0 (0.02). Frontal, photographic product lighting with evenly lit uppers and a dark, hard shadow strip under the soles. B helmet: a clear key, the shell turns smoothly into shadow, a broad soft sheen on the visor, and a soft cast shadow. Weak call.",
+   "fix": "Light the sneakers from one side: a bright toe and upper on the left, the right shoe's side in a soft shadow, and a soft, lighter contact shadow under the soles."
+  }
+ ],
+ "pattern": "Generated cards break from the real cards' single soft upper-left key in two directions. Some are lit flat from the front (low shading range or light bias: drone, star board, tablet, UFO rim). Others swing to the opposite extreme of photographic or chrome lighting, with hard dark cast shadows, mirror floors and split hot stripes (antenna, rover, rocket, bumper car). Glowing practicals (bulbs, cores, thrusters) rarely put any light on nearby surfaces."
+}

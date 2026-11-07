@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the fan's leaf is a flat panel with straight pleat edges, thin separate ribs and a plain pivot disc, which reads like a real card. B: each opera-glass barrel bulges into a swollen bell with a thick rounded gold rim, and the bridge and handle stub are short and chunky, like a toy.",
+   "fix": "Opera glasses with slim straight-sided barrels, thin gold rims, a narrow bridge, and a long thin handle rod below."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the basket has a flat lid, straight sides and a thin rope handle. Its corners are a bit soft, but within real range. B: the boxing gloves are rounded by nature. The low corner_rate fits a glove, not a swollen box. Neither silhouette gives a clear reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the parasol canopy is swollen into a puffy dome. Its ribs are thick tubes ending in oversized ball tips, and the lace hem scallops the whole rim (corner_rate 8.1, above the real range). The handle hook is thick. B: the beach umbrella has a thin straight pole and a clean, evenly scalloped canopy edge, like the real cards.",
+   "fix": "Parasol with a shallow, taut canopy, thin pencil-line ribs with small tips, a narrow lace trim, and a slim cane shaft with a thin crook."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the swing has a straight A-frame, thin chains and a flat canopy. B: the bench has straight slats, square legs and scrolled arms. Both keep flat planes and thin rails, so neither silhouette stands out from the real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the coaster has thin rails and ladder track, with chunky cars that are cropped by the frame. That causes its low solidity and high thin_share. B: the keyboard is a straight-edged box on a thin X-stand. Both look like real game cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the jacket is puffy, but in a way that matches the real cards' soft clothing. B: the top hat's crown is a plain straight cylinder. The brim is a thick, swollen oval plate with a rolled lip, and the band is a thick strap that sits proud of the crown.",
+   "fix": "Top hat with a slightly flared crown, a thin flat brim curled only at the sides, and a narrow ribbon band."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the teacup has a true cup-to-saucer ratio and a thin loop handle. B: the fountain's tiers have thick rounded rims, but the basin proportions are plausible. Neither shows a clear shape tell.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "The masks failed on both cards: A is smeared at the steps, and B captured only the wreath. A: a Georgian door with a semicircle fanlight and a deep stone surround and steps. The surround pilasters and step block are thick and chunky. B: a flat door with straight panels and a wreath. This is a weak call.",
+   "fix": "Thinner door surround with crisp flat pilasters, shallow stone steps with sharp edges."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the golf club has a flat blade face and a thin straight shaft, matching the real cards. B: every spyglass draw-tube is bulged, with fat rounded collar rings, so the outline steps like stacked beads. Solidity 0.934 is at the top of the real range, and the object is shortened like a toy.",
+   "fix": "Long slim spyglass with straight cylindrical tubes, thin flat brass collars, and the tubes stepping down in clean straight segments."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the vending machine is a straight-edged box with tight corners and small feet. B: the teapot body is a swollen sphere, the handle a thick loop and the spout short and stubby, and the lid knob is oversized. It reads as a toy.",
+   "fix": "Teapot with a slightly squat pear-shaped body, a slender curved spout as long as the body is wide, a thin handle, and a small lid knob."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the neckerchief has tapered tails and an open loop, with corners within real range. B: the bonnet brim is one thick, swollen elliptical disc with no thin edge, and the crown is a smooth dome. Solidity 0.961 is above the real range and corner_rate 0.41 is at the bottom, so the whole outline reads as a blob.",
+   "fix": "Straw bonnet with a thin wavy brim edge that tilts down at the front, a defined crown, and a ribbon bow with crisp separate loops and tails."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the taxi is a chunky toy body, in line with the real cards. B: the pram frame is wire-thin. The handle rods, chassis struts and many fine spokes push thin_share to 0.103, far above the real maximum of 0.014. The small hood and bassinet sit on a spindly skeleton.",
+   "fix": "Pram with a sturdy, thicker tube frame, fewer and thicker wheel spokes, a deep basket body with a larger hood, and a short, chunky push handle."
+  }
+ ],
+ "pattern": "The generated cards are the period-drama props: the parasol, top hat, spyglass, teapot, bonnet and pram. Their shape tells go two ways. Round parts get swollen: bulging spyglass tubes, a balloon teapot with a stubby spout, a thick disc brim on the bonnet, and big ball tips on the parasol. Fine parts get scaled wrong: the pram's spindly wire frame and spokes, and the lace scallops on the parasol. Both push the silhouette numbers outside the real range in opposite directions: solidity too high or thin_share too high, and corner_rate too low or too high."
+}

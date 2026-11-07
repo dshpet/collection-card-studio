@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the key's bow and shaft are covered in fine, gritty, pitted iron noise with photographic speckle along the whole shaft, like scanned metal. A: the brass lamp has smooth, broad gradients with a few clean highlights, and its glass chimney is a soft frosted blur, the same smooth, simple finish as the anchor and trophy.",
+   "fix": "smooth stylized dark iron key, broad soft gradients, one or two clean highlight bands, no pitting, no speckle or rust grain"
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the vending machine glass is covered in a field of tiny condensation dots, and the cans and bottles behind it are smeared and blurry. A: the clock case has quiet wood grain and one simple glass reflection on the pendulum door, closer to the real cards. Both show some softness, so confidence is low.",
+   "fix": "clean glass front with one soft diagonal reflection, no water droplets, cans and bottles drawn as simple crisp shapes"
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the sneaker uppers carry a dense regular grid of perforation dots, and the laces are broken into many small multicolored glossy segments. That is fine repeated detail at a scale the real cards don't use. A: the witch hat is a matte felt cone with soft folds and a plain glossy buckle, a sensible matte-and-shiny mix.",
+   "fix": "sneaker upper as smooth matte fabric with no perforation dots, laces as a few thick simple loops in one color"
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the stone ledge under the cat is mottled with gritty speckled noise and pits, and the cat's body is a uniform clay-like matte. A: the rocking chair has light, fine wood grain and a smooth cushion, in the same register as the anchor-sheet signpost.",
+   "fix": "stone ledge drawn as smooth flat-shaded blocks with soft edges, no speckle or pitting"
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the purple face of the mask has a satiny, faintly mottled sheen, and the feather is drawn with many fine barbs. A: the ring box is soft matte velvet with a smooth, simplified gold coin, close to the real cards' broad-part hardware.",
+   "fix": "mask face as smooth flat-lit purple with one soft highlight, feather as a few broad soft lobes"
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the grass ground is a dense field of individually drawn blades, micro_texture is above the real range, and the broom straw is split into many fine strands. A: the binoculars are broad smooth rubber and plastic parts on quiet wood planks.",
+   "fix": "background grass as a soft smooth green gradient with only a few blade hints, broom bristles as a few broad bundled clumps"
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the table under the candy jar is weathered planks with chipped paint, scratches and nail heads, a gritty realistic texture. The same grunge wood appears under the generated-looking pumpkin in p10. B: the caravan is smooth cream panels with simple trim.",
+   "fix": "table as clean smooth warm wood planks with faint quiet grain, no chipped paint, no scratches, no nail heads"
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the topiary is tiled with hundreds of small glossy leaves, all equally lit. gloss_share is 0.437, far above the real maximum of 0.209, and the texture is busy and decorative. B: the snorkel mask has clean translucent plastic with one broad reflection band.",
+   "fix": "topiary as a few large soft leafy masses with broad shading, only a hint of leaf edges on the silhouette, matte foliage"
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "B: the plaza is filled edge to edge with repeated cobblestones, each with its own grainy surface, and the busy floor texture dominates the card. A: the motel sign is smooth glossy panels with clean neon strokes. The evidence is weak.",
+   "fix": "ground as a few large soft paving shapes fading out, low-contrast and blurred, no per-stone grain"
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the pumpkin sits on gritty weathered planks with chipped paint and nails, and its skin has fine scratchy streaks. A: the fountain is smooth matte stone with simple, broadly drawn water ribbons, like the real cards.",
+   "fix": "smooth glossy-to-matte pumpkin skin without scratches, sitting on clean simple wood with quiet grain"
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the wrought-iron gate is lacquered all over in the same copper gloss (gloss_share 0.333, above the real range), and the brick pillars have soft smeary edges. A: the window has a matte stone wall, wood frames with modest grain, and a single glossy candle accent, so a better gloss mix.",
+   "fix": "gate as matte dark painted iron with only small highlights, bricks with clean edges and matte surface"
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the marble lion and plinth carry realistic grey veining and crack lines, and the mane is carved into many fine strands, a photoreal stone texture. A: the snorkel is smooth translucent plastic with one broad reflection.",
+   "fix": "lion statue as smooth soft white stone, no veins or cracks, mane as a few large rounded locks"
+  }
+ ],
+ "pattern": "Generated cards give themselves away through surface texture that is too busy or realistic for the style. The usual signs are weathered wood with chipped paint and nail heads, pitted or speckled iron and stone, marble veining, and fine repeated fields: perforation dots, grass blades, cobblestones, hundreds of leaves. Some also have uniform lacquer gloss over the whole object. Real cards use broad smooth parts, quiet fine grain, and a mix of matte and shiny."
+}

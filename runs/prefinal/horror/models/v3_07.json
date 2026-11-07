@@ -1,0 +1,18 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "loose": [],
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The gold star renders as a three-armed Y shape, not a five-point star. The cylinder's rim vertices sit at half-steps of 36°, so round() hits ties (banker's rounding) and the in/out pattern breaks. Fix: classify each vertex with round(q - 0.25), which alternates correctly whether the vertices sit on whole steps or half-steps.",
+   "The table reads as a light pinkish-brown, not dark oak. Darken the plank colors.",
+   "The clasp strap under the bottom board is centered at z = 0, so half of it sinks into the table. Move it up so its underside sits on the table top, inside the board's bevel."
+  ]
+ }
+]

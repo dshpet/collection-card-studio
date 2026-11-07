@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (grad cap): crisp contour around the board top and the gold band, with flat faces and few internal lines. This matches the reference style. B (witch hat): the brim's lower rim is a dark continuous ellipse line, and the cone has soft, mottled fabric texture with lost edges along the crease. The buckle is the only sharp focus. Both measure in range, so this is a weak call.",
+   "fix": "Keep the hat's outer rim as a light-to-dark value change, with no dark line along the brim underside. Give the cone a few clean fold edges instead of fuzzy cloth texture."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (airplane): clean, firm contour around the fuselage, wings and engines, and precise window and door seams. The cloud texture is busy (bg 0.018). B (bat): the silhouette is fuzzy at the fur on the chest and head, and outline_darkness of -0.129 is below the real range. The wing membranes have soft edges, and the clouds are blurred with lost edges.",
+   "fix": "Give the bat's body a clean, crisp silhouette with fur shown as a few sculpted tufts, not soft fuzz. Give the clouds defined rounded edges."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (boxing gloves): the subject has very few edges (0.037, far below the real 0.087–0.179). The glove surfaces are mushy, with almost no seam or panel lines, and the overlapping gloves blur into each other. The table grain is smeared. B (tree): bark streaks and branch tips are crisp and in range, with clear separation from the background.",
+   "fix": "Draw clear stitched seams and the cuff/thumb panel lines on the gloves. Give each glove a crisp outer edge where it overlaps the other, and give the wooden table clean plank edges."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (topiary): the subject is extremely busy (0.29, above the real max of 0.27). Every leaf has its own dark outline, and the hedge background is a noisy dot field. There is no edge hierarchy. B (water slide): clean tube edges, precise ladder rungs and tile seams, and density in range.",
+   "fix": "Shape the topiary as smooth sculpted tiers with a few large leaf clusters, not hundreds of outlined leaves. Make the background hedge a soft simple band."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (mirror): outline_darkness is 0.163, above the real range. Thick dark contours trace every scroll, the frame rims and the base ellipse, all at the same weight. B (vending machine): crisp but thinner panel lines, with internal seams precise and in range.",
+   "fix": "Remove the dark contour around the gold frame and scrolls. Separate the frame from the green background with light and shade only, and keep the inner bevel lines thin."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (motel sign): soft neon glow edges, with a double border on the sign panels. outline_darkness is high (0.161), but the glow causes it. B (haunted house): every window has the same thick black frame, roof tiles and grass tufts are uniformly outlined, and the moon has a dark rim and shadow halo. The fine detail all sits at one edge strength, so there is no focus hierarchy.",
+   "fix": "Make the window frames thin and light. Show the roof tiles as soft shading steps, not outlined shapes, and draw the moon as a soft glowing crescent with no dark rim."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both are dense. A (brick gate) has busy swirls and brick seams, but its contours are moderate (outline 0.035). B (night gate): outline_darkness is 0.312, far above the real max of 0.148. The stone pillars have heavy black contours, the gravel path is a noise field of edges, and the moon is outlined black.",
+   "fix": "Draw the pillars with soft lit faces and no dark border. Show the gravel path as a smooth gradient with a few stones, and make the moon a soft glow with no outline."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (sneakers): crisp panel seams, lace lines and a sole edge, with density at the top of the real range. B (jack-o'-lantern): subject density is 0.038, far below the real 0.087. The rib grooves are nearly lost, the silhouette fades softly into the shadow, and only the carved face has firm edges.",
+   "fix": "Give the pumpkin clearly defined rib grooves and a crisp outer silhouette against the purple background. Keep the carved-face edges clean and thin."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (fountain): clean basin rims and thin tile seams, with density in range. B (candelabra): subject density is 0.283, far above the real 0.179. The chrome reflections break the arms into many hard edges, the candles and flames have dark contours, and the wood floor grain competes with the hero.",
+   "fix": "Render the candelabra metal with broad, simple highlights and few reflections. Remove the dark lines around the candles, and make the floor a smooth surface with faint grain."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (palm): even crisp leaf contours and trunk segment rings, typical of the references. B (crystal ball): the highlight is a hard, black-edged trapezoid. Swirling smoke fills the inside of the sphere with edges, the gold stand scrolls carry dark contours, and the wood grain is busy. Both are in range, so this is a weak call.",
+   "fix": "Make the ball's highlight a soft white curved reflection with no hard border. Show the smoke inside as soft color wisps, and the table as a smooth gradient."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (broom): crisp bristle strands, a defined ribbon knot and a clean handle contour, in range. B (balloons): subject density is 0.028, far below the real 0.046. The balloon bodies have almost no internal edges, the overlapping balloons lose separation, and the background clouds are blurry with lost edges.",
+   "fix": "Give each balloon a crisp outer edge where it overlaps its neighbor, plus a clear highlight shape. Give the clouds defined rounded edges instead of blur."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A (clock) is a real card that appears in the reference sheet. Its high outline value comes from the clean orange rim against the stripes. B (lion statue): background density is 0.068, far above the real 0.021. The tree foliage, path bricks and grass tufts are all outlined, the marble veins are drawn as dark cracks, and a heavy contour runs around the plinth.",
+   "fix": "Make the park background a soft, simple green field and path with few details. Draw the marble veins as faint color streaks, and separate the plinth with lighting instead of a dark border."
+  }
+ ],
+ "pattern": "Generated cards give themselves away by not having an edge hierarchy, in one of two directions. (1) Over-edged: a uniform dark contour around every part, down to tiny details like window frames, leaves, gravel, wood grain, grass tufts and outlined moons, and busy backgrounds with as many edges as the hero. (2) Over-softened: mushy surfaces with lost seams and soft silhouettes (gloves, pumpkin, balloons, bat fur). Real cards keep a crisp but thin outer edge, a few precise seams, and a quiet, simple background."
+}

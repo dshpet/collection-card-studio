@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the chair has smooth, even contours on the rails and spindles, and the only background edges are soft wall stripes and floorboards. B: the dog's back and ears have a dark, heavy outer contour. Inside the body, fur wrinkles are drawn as many small scratchy lines, and the grass is a dense field of hatching. The real cards use smooth, clean surfaces, not fine texture strokes.",
+   "fix": "Smooth, toy-like vinyl dog with soft rounded folds and no individual fur strands; the edges come only from form and lighting, with no dark outline around the back; plain soft-blurred grass with no blade detail."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the mortarboard has crisp, clean board edges and a smooth tassel, like the hard plastic in the real cards. B: the fedora crown is covered in speckled felt-grain noise, and a hard dark line runs along the underside of the brim. Both are within the measured range, so this is a weak call.",
+   "fix": "Smooth, matte, toy-like hat with clean surfaces and no fabric grain; separate the brim edge from the background with light, not a dark line."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the pump cap and body contours wobble and look sketchy. The gauge ring is jittery, and the desert mesas and sand carry busy, noisy hatching. B: the chest planks, gold trim and coins have clean, firm contours with crisp edges, and the bubbles are clean rings.",
+   "fix": "Draw the pump with clean, smooth, confident silhouettes and crisp panel seams; keep the desert background soft and simple, with few details."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the edge density on the subject (0.278) is far above the range of the real cards. The typewriter is crowded with dozens of separate key stems that each have their own hard edge, and a hard dark line marks the table edge. B: the awning scallops, cart and wheel spokes have a moderate number of clean edges.",
+   "fix": "Fewer, larger, chunky keys merged into simple rows; keep the soft key edges away from the focal point, and drop the hard line on the table edge."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the door has clean, precise panel seams and a crisp frame against a quiet wall. B: the edge density is above the real range for both subject (0.342) and background (0.107). Ivy leaves fill the frame with hundreds of small contours, and the wreath has wavy ghost lines around it, like a halo. Nothing in the image is softer than the focus.",
+   "fix": "Remove the ivy border, or make it a few large, soft-focus leaves; keep the wreath to a few big flowers with clean edges, with no glow or ghost lines around it; keep the plain door panels as the sharpest edges."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the lamp has a dark, strong contour on the globe and the curled arm (outline darkness 0.149, slightly above the real range), but the internal surfaces are clean. B: the camera box and flash dish are filled with streaky lines like brushed metal, so the flat faces carry many small internal edges that the real cards do not have.",
+   "fix": "Smooth, satin, toy-like camera body with clean flat faces and no brushed-metal streaks; give the flash dish a simple soft gradient."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the oil lamp's contours are moderate, and the glass edges stay soft, which fits the real cards. B: the magnifier rim and handle have a heavy, dark outline all around (outline darkness 0.149, above the real range), and the lens shows thin radial lines.",
+   "fix": "Let the magnifier's gold rim separate from the sky by light and color alone, with no dark contour line around the rim and handle."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the sneakers have mesh texture, many fine lace and trim edges, and a cast shadow with a hard edge. A hard horizontal line marks where the wall meets the floor, and the outline darkness (-0.1) is below the real range. B: the safe's door seam, hinges and dial have clean, precise lines with a sensible hierarchy.",
+   "fix": "Chunky, smooth, toy-like sneakers with no mesh pattern and few, bold seams; a soft shadow under the shoes and a soft, blurred line where the wall meets the floor."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the edge density on the subject (0.037) is far below the real range. The glove silhouettes melt into the background with lost, mushy edges, and only a few crease marks are visible. B: the phone's handset, dial ring and base have firm, crisp contours that sit within a normal range.",
+   "fix": "Give the boxing gloves a crisp, clear silhouette against the wall, with defined cuff seams and thumb separation; make the glove the sharpest thing in the image."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the shield rim is a stack of several parallel contours, with a soft glow along the bottom-left. The background is almost free of edges (0.006, below the real range). B: the vending machine has clean panel seams; only the bottle shelves and droplets are busy.",
+   "fix": "A single, clean gold rim with one crisp outer edge and no glow; add light depth to the background so the shield is not floating on a flat gradient."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the bottle's edges are soft and clean, and the internal ridges are subtle. B: the ticket is a flat graphic with dark outlines around every element (outline darkness 0.164, above the real range). The perforation is drawn as a row of hard dots, and the bars and plane are all outlined boxes.",
+   "fix": "Thick, rounded, 3D ticket with beveled edges; the printed details are embossed shapes that read through light and shade, not through dark outlines; a soft row of perforation dents."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the book's stickers each have doubled, thick, dark contours (outline darkness 0.165, above the real range). The cover edge, page block and bookmarks are all outlined with the same weight, so there is no edge hierarchy. B: the folder has clean edges, and the fingerprint lines are the only busy area.",
+   "fix": "Stickers with a slim white border and no dark outline around each one; keep the book's outer edges soft and let the main sticker carry the crispest edge."
+  }
+ ],
+ "pattern": "Generated cards give themselves away through edges in three ways: (1) an even, dark contour drawn around the silhouette and around each sticker or part, with no edge hierarchy; (2) too much micro-detail inside the subject or background (key stems, ivy, fur or grass hatching, mesh, brushed-metal streaks), which pushes edge density above the real range; (3) mushy, lost silhouettes, or flat graphic outlines with no 3D bevel. Real cards use a few clean seams, separate the form from the background with light rather than lines, and keep the crispest edges at the focus."
+}

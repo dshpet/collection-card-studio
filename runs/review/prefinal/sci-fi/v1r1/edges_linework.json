@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (chip): crisp, thin trace lines and pin edges spread evenly over the board. The edges are hard everywhere, and the white surface around it is nearly empty (bg 0.007). B (travel book): every sticker (skyline, barn, castle, pins) is ringed by a thick, dark double contour, and the book's outer edge is a heavy drawn line. The wood background is covered in evenly spaced grain strokes. Outline darkness is 0.165, above the real-card range. This matches the lessons, where generated cards carry darker outer contours than the real ones.",
+   "fix": "No dark outline around the stickers or the book. Separate the shapes with color and light only, keep the sticker borders thin, and keep the wood grain soft and sparse."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (helmet): soft, rounded silhouette edges with a few clean panel seams. The visor rim is the sharpest edge, which gives a clear focus. B (sneakers): a hard, ruler-straight horizon line cuts across the background, the cast shadow has a hard outlined edge, and the mesh is covered in fine stippled texture. Laces and sole stripes are all drawn with equal weight, so nothing reads as the focus.",
+   "fix": "Blend the floor into the wall with a soft gradient and no hard horizon line. Give the shadow a soft edge, show the mesh as smooth color without fine dots, and keep the sharpest edges on the laces and toe only."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (flask): thin glass rims with soft, lost edges inside the liquid. The bench has some streaks, but the hero edges stay light. B (locker): the body and the open door are wrapped in a thick, dark, uniform contour. Every vent slot and the keyhole have a double outline, and the floorboards run as evenly spaced hairlines. Edge weight is the same at the focus and at the periphery.",
+   "fix": "Remove the dark rim around the locker and its door. Shape the vents with soft shading instead of outlined slots, and make the floorboards faint and soft."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (airplane): the fuselage and tail carry a heavy dark outline, and the clouds behind are filled with dense swirling contour texture. Background edge density is 0.018, above the real range, so the background competes with the hero. B (UFO): clean rim edges and fine rivets. The clouds have simple outer contours with soft insides, which gives a clearer hierarchy.",
+   "fix": "Paint the clouds as soft, smooth puffs with no inner swirl lines. Drop the dark outline around the plane and let the silhouette read through light against the sky."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (bike on car): every spoke, frame tube, rack bar and car panel is drawn as a hard line. The mountains and road also carry contours, so subject density (0.273) and background density (0.094) are both above the real range, with no edge hierarchy. B (moon rover): chunky forms with a few clean seams. Edges in the background stay small (pebbles and crater rims).",
+   "fix": "Simplify the bike to fewer, thicker spokes and soften the car and landscape behind it. Make the background a soft, low-detail blur so the bike frame holds the only crisp edges."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (rocket): crisp silhouette, a clean porthole ring and tidy fin edges, with soft clouds. That is the real-card pattern. B (balloons): the balloon edges are very soft and smeary, and the overlapping balloons lose their separation. Subject edge density is 0.028, far below the real range, and the clouds bleed into the hero with no clear edges.",
+   "fix": "Give each balloon a clean, crisp silhouette with a defined edge where it overlaps the next balloon. Keep the clouds soft behind them."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (Ionic column): the strongest edges sit on the volutes and the crack. The flutes are thin and the room behind is barely drawn, which gives a clear hierarchy. B (rose arch): every rose petal and leaf is outlined, so the hero is a dense mass of small edges (0.317, above the real range). There is no focal area, and the striped backdrop adds hard vertical lines.",
+   "fix": "Use fewer, larger roses and leaves, grouped into clumps with soft shading inside. Keep only a few crisp petal edges, and make the backdrop stripes soft and faint."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (vault door): thin, precise seams and rivets on a clean wall. The focus edges are on the ring and the handle. B (garden gate): the scrollwork, every brick joint, the paving slabs and the grass tufts are all equally sharp. Subject density (0.323) and background density (0.122) both exceed the real range, so the background has as much linework as the hero.",
+   "fix": "Show the bricks and paving as soft color blocks with faint joints, blur the trees and grass, and keep the crisp edges on the gate's ironwork only."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "A (control panel): a fairly heavy outer contour on the console body, and brushed-metal streak lines across the desk surface. The gauges and toggles are well defined. B (claw machine): similar contour weight, with stars and the cabinet window outlined and the floor tiles faintly ruled. The metrics for both are within the real range, so this is only a slight lean toward A because of the streaky desk texture.",
+   "fix": "Make the metal desk a smooth gradient with no brushed streaks, and lighten the outer edge of the console."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (chess table in park): busy foliage and grass edges in the background, but the table's checkers and cracks are the crispest marks, which matches the real park-scene cards. B (archery booth): the target rings and the teddy bear have thick, dark, even contours, and the bear's fur edge is outlined all round. Outline darkness is 0.067 against A's -0.006, with uniform edge weight across the booth frame and the bulbs.",
+   "fix": "Remove the dark line around the bear and the target rings. Separate the colors by value only, and soften the wooden frame edges."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (desk fan): very dense, crisp grille wires (0.302 subject), but they are concentrated on the hero and the curtain folds stay soft. B (satellite dish): a sparse hero (0.087) on a ground covered in uniform speckled noise, with a hard, outlined cast shadow and a ruled horizon edge. This matches the lessons' generated tell of fine even texture over the background.",
+   "fix": "Paint the ground as a smooth surface with no speckle, give the shadow a soft edge, and add a few crisp seams and bolts on the dish mount so the hero carries the detail."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (medal in ring box): one strong outer contour on the box with soft inner forms, consistent with the sunburst real cards. B (satellite): the solar panels have a fine grid with hairline sub-grids, and the gold foil is covered in crinkle lines. Subject density is 0.26, well above the real range, and these tiny edges on a small hero are finer than real cards draw.",
+   "fix": "Show the solar panels as a few large cells with no fine inner grid, and make the gold foil smooth with just two or three broad folds."
+  }
+ ],
+ "pattern": "Generated cards give themselves away by edge weight that is even all over, with no hierarchy. Thick dark contours wrap the hero and its sub-parts (stickers, bear, locker door), and backgrounds and fine surfaces get ruled hairline texture: wood grain, cloud swirls, concrete speckle, brushed metal, foil crinkles, panel sub-grids. That pushes edge density outside the real range, either far too dense (rose arch, gate, bike) or smeared too soft (balloons). Real cards keep their crisp edges on the focal object, use few internal seams, and keep backgrounds soft and quiet."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the mailbox is turned three-quarter and pushed close to the viewer. Its post runs off the bottom edge and the flag nearly touches the right edge, a bold crop like the real cards. B: the bird feeder hangs dead-center, seen straight on and symmetric under a centered rope. The trunk runs through the whole height, so the hero is boxed in a frontal, mirror-like layout, the same way the generated lessons sit.",
+   "fix": "Turn the bird feeder three-quarter, tilt it slightly, bring it closer so its roof corner crops past the right edge, and let the tree trunk fall out of focus behind it."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the glass plate of fruit sits a little left of center, the whole rim is visible, and the fruit pieces form a busy cluster. B: the round bowl of beans with a spoon is centered and fills about 46% of the card. Both are top-down three-quarter dishes, fully contained, with similar margins. On framing alone I have no reason to pick either.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the jacket fills the card top to bottom (box height 0.65), with sleeves near both side edges and the sash running diagonally as one clear read. B: the cowboy hat is a wide, flat shape floating in the middle. The empty green band above and below leaves the box height at 0.49, below the real range, so the hero reads small at thumbnail size.",
+   "fix": "Draw the cowboy hat larger and tilted up toward the viewer so the crown and brim fill most of the card height, with the brim tips close to the side edges."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the station clock is pushed left and cropped at the top by the canopy beams, so it fills the frame like the real bicycle and fan cards. B: the graduation cap is small, centered and floating on concentric rings, with wide empty margins on every side (margin 0.093, height 0.51). It is the fully contained, centered layout the generated lessons share.",
+   "fix": "Draw the graduation cap much bigger and tilted toward the viewer so its board corners nearly touch the left and right edges and the tassel hangs near the bottom edge."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the covered wagon is three-quarter and fully visible, with the tongue running off the bottom-left. B: the roller-coaster cars curve up an arc and the track crosses every edge. Both crop with the frame the way real scene cards do, so framing gives no clear tell.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the guitar is a small diagonal object in the lower-middle of a large, empty wooden floor (occupancy 0.16, margin 0.10, both outside the real range). At thumbnail size it reads as a little sliver. B: the racket and ball fill the width, the racket head almost reaches the left edge and the grip reaches the right. B is also below real occupancy, but its hero is clearly bigger.",
+   "fix": "Draw the guitar much closer and larger, tilted on the diagonal so the body fills the lower-left corner and the headstock crops past the top-right edge."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the pair of spurs is a thin, horizontal cluster floating in the middle of a huge empty blue ring field. Occupancy is 0.11 and box height 0.39, far below the real cards, so the hero is tiny at thumbnail size. B: the neck pillow fills the card top to bottom with tight margins, which matches the real occupancy.",
+   "fix": "Show one spur large and close up, tilted toward the viewer, filling most of the card, with the spiked rowel near one edge and the leather strap near the other."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the boxing gloves sit big and low, and the left glove is cropped by the left edge, a bold real-style crop. B: the cowboy boots are a symmetric pair standing side by side, centered and fully contained, with floor and wall margins all around. That frontal, whole-object staging matches the generated lessons.",
+   "fix": "Bring the boots closer and angle them three-quarter, overlapping, so one boot top crops past the top edge and the toe of the other runs close to the bottom-right corner."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the golf club head and ball sit bottom-left and the shaft runs off the top edge, so it reads instantly as golf. B: the cracked column fills the card (occupancy 0.48, above the real range). A big gold plaque on the right competes with the hero for attention, like the extra props the generated lighthouse added.",
+   "fix": "Remove the gold sign, or make it small and dim behind the column, so the column alone is the focus, slightly tilted, with its capital cropped by the top edge."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the potted cactus is a classic centered icon with a flower on top and a moderate margin, inside the real look. B: the sneakers sit in the lower half like a product photo. The orange wall above is an empty band about a third of the card tall (box height 0.49, below the real range), so the hero sits low and small.",
+   "fix": "Draw the sneakers bigger and closer, one shoe overlapping the other and tilted toward the viewer, so they fill the card from near the top edge down to the bottom."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the folding fan opens wide, filling the card on a diagonal with its tips near the top and left edges. B: the harmonica is a thin, horizontal bar floating in the middle, with wide empty bands above and below (height 0.46, below the real range), so the hero is weak at thumbnail size.",
+   "fix": "Turn the harmonica toward the viewer at a steep diagonal and draw it much bigger, so its ends nearly touch opposite corners and its holes face the camera."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the coin binocular viewer is huge and close, with its pole cropped by the bottom edge, filling the left two-thirds like the real cropped cards. B: the water pump is small and fully contained, standing on a stone slab with empty desert all around (occupancy 0.18, margin 0.098, above the real range). It shows the whole object plus its base, like the generated lighthouse on its island.",
+   "fix": "Move in close on the water pump so the stone base is cropped by the bottom edge and the red handle reaches near the top-right corner, and drop the empty ground around it."
+  }
+ ],
+ "pattern": "Generated cards keep the whole object inside the card, often with an added base, slab, island or prop. The hero sits centered, frontal and symmetric, with even margins all round. Elongated or small heroes float in a lot of empty background, so the occupancy or box height falls outside the real range. Real cards push the hero close, tilt it, and let it crop off one or more edges."
+}

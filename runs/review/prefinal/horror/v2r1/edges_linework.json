@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (oil lamp): the outer contour is clean and medium weight. The glass chimney edge fades on the highlight side, and the inner lines on the brass base are few and thin. B (key): a heavy dark line runs along the lower-right side of the shaft and the bit. The bow and shaft are filled with scratchy, noisy grain edges instead of a few clean form breaks.",
+   "fix": "Smooth metal key with only a few soft highlight edges and no scratchy grain texture. Let the silhouette soften on the lit side instead of a dark line along the shaft."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (grandfather clock): the edges are soft, with a mild outline around the case and a few panel lines. B (vending machine): one even, crisp contour runs all around the cabinet. Every shelf, bottle, door frame and the slot are cut with the same hard line weight, so nothing is softer than the rest.",
+   "fix": "Let the cabinet's back side melt softly into the purple wall. Keep crisp edges only on the glass door and the bottles, and blur the shelf lines at the back."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (witch hat): the soft brim edge is lost against its shadow, and the only crisp lines are on the buckle. B (sneakers): a hard dark contour runs around both shoes. Laces, mesh and sole stripes form a dense tangle of hard lines, and the far shoe is as sharp as the near one.",
+   "fix": "Make the far sneaker softer and less detailed than the near one. Use fewer, cleaner laces, and let the sole's bottom edge blend into its shadow instead of a dark line."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (rocking chair): the edges are firm but vary in weight, and the floor planks are lighter than the chair. B (cat): a dark, continuous, outline-like contour wraps the body and tail. The whiskers are thin hard strokes. The stone ledge and brick below are covered in many crisp edges that compete with the cat (outline darkness is outside the real range).",
+   "fix": "Black cat whose lit side blends softly into the background with no dark rim around the body. Draw the stone ledge as smooth, simple blocks with few cracks."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (ring box): the outer contour is fairly dark, but the inside is simple, with only the coin and cushion edges. B (mask): every rim is drawn as a double line at the same width. The feather is a dense comb of hard strokes, so subject edge density is above the real range and nothing is softer.",
+   "fix": "Gold mask trim as one soft, rounded edge instead of a double line. Feather with a few broad soft strands, softer than the mask's eye holes."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (binoculars): the strong edges sit on the lenses and barrels, and the long floorboard lines are simple. B (broom): the whole grass background is a uniform field of tiny crisp blade edges, as busy as the broom itself. The bristles are bundled in hard dark outlines.",
+   "fix": "Smooth, softly blurred green lawn with no individual grass blades. Draw the broom bristles as soft bundles without a dark edge around each strand."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (candy jar): the candies inside the glass smear into overlapping soft lines with no clear focus. The weathered table carries many scratchy crack and grain edges, and outline darkness is below the real range. B (camper): a clean, firm outer contour, precise thin panel seams, and a soft background.",
+   "fix": "Draw the candies with clear, simple edges through the glass. Use a smooth wooden table with a few clean plank lines and no cracks or scratches."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (topiary): every leaf on every tier is a hard little contour, so subject edge density (0.29) is above the real range. The hedge behind is also a noisy field of edges, which gives the image no focus. B (snorkel): edges are smooth and rounded, the tube rims are firm, and the dock and water have few soft lines.",
+   "fix": "Spiral topiary drawn as smooth rounded green tiers with only a few leaf shapes on the edges. Make the hedge behind a soft, blurred band."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (motel sign): the strongest edges are concentrated on the neon sign frames, and the building is softer. B (lamp post): the whole cobblestone plaza is outlined stone by stone with the same crisp weight as the lamp. The background competes with the hero, and outline darkness is above the real range.",
+   "fix": "Cobblestone plaza that blurs and loses its stone outlines away from the lamp. Keep crisp edges only on the lantern glass and the post."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "A (fountain): firm, even contours on the basins with simple tile lines. B (pumpkin): the pumpkin interior is soft, with lost rib edges (subject density 0.044, below the real range). The weathered table carries more scratchy grain and crack edges than the pumpkin, so the edge focus sits on the background.",
+   "fix": "Pumpkin ribs drawn as clear, smooth creases, sharper than the table. Smooth wooden table with a few clean plank lines and no scratches or cracks."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (window): the edges are firm on the frame and stones, and the night background is quiet. B (gate): the ironwork is a tangle of scrolls with crisp edges, and every brick on both pillars plus every paving slab is outlined. Subject density (0.323) and background density (0.122) are both above the real range.",
+   "fix": "Simpler gate with a few large scrolls. Draw the brick pillars and paving as smooth color blocks with only faint joints, and soften the trees behind."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (snorkel): smooth, rounded contours and soft dock lines. B (lion statue): a dark outline-like contour traces the head and mane, and the mane is many hard strands. The trees, path and grass behind are drawn with crisp detailed edges, so background density (0.068) rivals the dull, low-density body.",
+   "fix": "Marble lion with a softly rounded mane in a few large locks and no dark outline around the head. Blur the trees and path behind into soft shapes."
+  }
+ ],
+ "pattern": "Generated cards keep the same crisp edge weight everywhere. A near-outline contour wraps the whole hero, and the background texture is just as sharply edged (grass blades, cobbles, bricks, cracked wood grain, leaves) as the hero. Real cards have one clear zone of sharp edges on the hero, soft or lost edges on its shadow side, and a quiet, low-edge background."
+}

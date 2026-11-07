@@ -1,0 +1,541 @@
+{
+ "title": "Movie cast",
+ "story": "Bonus character cards with the game's cast, two per film genre.",
+ "variants": [
+  {
+   "cards": [
+    {
+     "name": "Sheriff Pals",
+     "subject": "The man in a cowboy hat tips it politely while the pig, in a cowboy hat that fits over its ears, holds a tin mug of coffee beside him, both in front of a saloon.",
+     "object_class": "character",
+     "category": "5",
+     "pattern": "full_scene",
+     "hero_colors": "brown hats, pink pig, tin grey mug",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "a boardwalk in front of a saloon",
+     "build_model": false,
+     "cast": [
+      "man",
+      "pig"
+     ],
+     "topic": "Western"
+    },
+    {
+     "name": "Ranch Hands",
+     "subject": "The cow wears a red bandana, and the rooster wears a tiny cowboy hat with a hole for its comb, standing on a hay bale next to the cow and sharing a bucket of oats.",
+     "object_class": "character",
+     "category": "5",
+     "pattern": "full_scene",
+     "hero_colors": "white and black cow, orange rooster, red bandana, tan hat",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "a hay bale on a ranch yard",
+     "build_model": false,
+     "cast": [
+      "cow",
+      "rooster"
+     ],
+     "topic": "Western"
+    },
+    {
+     "name": "Bridge Crew",
+     "subject": "The cow and the rooster in shiny silver space jumpsuits stand at a ship's control desk, the cow happily pressing a big round button while the rooster flaps its wings in delight.",
+     "object_class": "character",
+     "category": "5",
+     "pattern": "full_scene",
+     "hero_colors": "silver jumpsuits, white cow with black spots, orange rooster",
+     "backdrop_colors": "deep purple-blue spaceship interior with a clear cyan window",
+     "surface_or_setting": "spaceship bridge",
+     "build_model": false,
+     "cast": [
+      "cow",
+      "rooster"
+     ],
+     "topic": "Sci-Fi"
+    },
+    {
+     "name": "Sky Watchers",
+     "subject": "The man and the pig stand on a green meadow at day, both pointing up and waving cheerfully at a small silver flying saucer high in the clear blue sky.",
+     "object_class": "character",
+     "category": "5",
+     "pattern": "full_scene",
+     "hero_colors": "brown mustache man in a blue coverall, pink pig, silver saucer",
+     "backdrop_colors": "clear sky blue and fresh green",
+     "surface_or_setting": "green meadow",
+     "build_model": false,
+     "cast": [
+      "man",
+      "pig"
+     ],
+     "topic": "Sci-Fi"
+    },
+    {
+     "name": "Trick Treat",
+     "subject": "The sheep wearing a white bed sheet ghost costume with two eye holes holds a glowing lantern, while the cow beside it wears a pointed witch hat and carries a candy bucket, both happily knocking on a door at night.",
+     "object_class": "character",
+     "category": "5",
+     "pattern": "full_scene",
+     "hero_colors": "white sheet, white cow with black spots, purple hat",
+     "backdrop_colors": "rich royal blue night sky with a few small stars and a crescent moon",
+     "surface_or_setting": "a porch with a lit window",
+     "build_model": false,
+     "cast": [
+      "sheep",
+      "cow"
+     ],
+     "topic": "Horror"
+    },
+    {
+     "name": "Vampire Night",
+     "subject": "The man in a black vampire cape with a high collar and plastic fangs peeks from behind a curtain while the rooster in a mummy wrap of white bandages waves cheerfully at him.",
+     "object_class": "character",
+     "category": "5",
+     "pattern": "full_scene",
+     "hero_colors": "black cape with red lining, white bandages, orange rooster",
+     "backdrop_colors": "violet turning pink at the horizon",
+     "surface_or_setting": "a cozy living room",
+     "build_model": false,
+     "cast": [
+      "man",
+      "rooster"
+     ],
+     "topic": "Horror"
+    }
+   ]
+  }
+ ],
+ "cast": 2,
+ "sources": [
+  {
+   "title": "Western",
+   "story": "Saddle up for a sunny frontier movie night.",
+   "declined": [],
+   "variants": [
+    {
+     "cards": [
+      {
+       "name": "Cowboy Hat",
+       "subject": "A brown cowboy hat with a wide curled brim, a creased crown and a red band around the base of the crown.",
+       "object_class": "clothing",
+       "category": "1",
+       "pattern": "rays",
+       "hero_colors": "warm brown with a red band",
+       "backdrop_colors": "sky blue",
+       "surface_or_setting": "",
+       "build_model": false,
+       "cast": []
+      },
+      {
+       "name": "Sheriff Star",
+       "subject": "A gold five-pointed star badge with a small ball on each point, a raised rim and a round red center disc.",
+       "object_class": "accessory",
+       "category": "1",
+       "pattern": "concentric_rings",
+       "hero_colors": "gold with a red center disc",
+       "backdrop_colors": "grass green",
+       "surface_or_setting": "",
+       "build_model": true,
+       "cast": []
+      },
+      {
+       "name": "Cactus",
+       "subject": "A tall saguaro cactus with a thick vertical trunk, two upturned arms, vertical ribs and a small flower on top.",
+       "object_class": "plant_nature",
+       "category": "2",
+       "pattern": "plain_gradient",
+       "hero_colors": "green with a yellow flower",
+       "backdrop_colors": "pink",
+       "surface_or_setting": "",
+       "build_model": false,
+       "cast": []
+      },
+      {
+       "name": "Cowboy Boots",
+       "subject": "A pair of brown leather cowboy boots with pointed toes, tall stitched shafts, angled heels and a silver spur with a round star-shaped wheel on each heel.",
+       "object_class": "clothing",
+       "category": "3",
+       "pattern": "stripes",
+       "hero_colors": "brown leather with silver spurs and red stitching",
+       "backdrop_colors": "purple",
+       "surface_or_setting": "weathered wooden boardwalk planks",
+       "build_model": false,
+       "cast": []
+      },
+      {
+       "name": "Wagon",
+       "subject": "A covered wagon with a wooden body, four big spoked wooden wheels with red hubs, a rounded white canvas cover over the bed and a wooden driver bench at the front, standing on a dirt trail.",
+       "object_class": "vehicle",
+       "category": "3",
+       "pattern": "plain_gradient",
+       "hero_colors": "white canvas and wood brown with red wheel hubs",
+       "backdrop_colors": "cyan",
+       "surface_or_setting": "packed dirt trail",
+       "build_model": true,
+       "cast": []
+      },
+      {
+       "name": "Saloon Doors",
+       "subject": "A pair of wooden swinging saloon half-doors with slatted tops, seen from the street, hinged on the outer sides of a wooden doorframe, with a lit saloon interior and a warm lamp glowing behind them.",
+       "object_class": "building_place",
+       "category": "4",
+       "pattern": "full_scene",
+       "hero_colors": "wood brown with a warm yellow glow and a green door trim",
+       "backdrop_colors": "sky blue",
+       "surface_or_setting": "the front of a wooden saloon on a boardwalk",
+       "build_model": true,
+       "cast": []
+      },
+      {
+       "name": "Campfire",
+       "subject": "A bright fire with a yellow-white glowing core, orange flame tips curling upward, glowing orange ends on the logs, and warm orange light cast on what stands near it, inside a ring of grey stones, with a black metal coffee pot with a handle resting on a stone beside the flames.",
+       "object_class": "other",
+       "category": "4",
+       "pattern": "full_scene",
+       "hero_colors": "orange and yellow flames, brown logs, grey stones, black coffee pot with a red handle grip",
+       "backdrop_colors": "clear blue sky",
+       "surface_or_setting": "dusty ground in a ring of stones",
+       "build_model": false,
+       "cast": []
+      },
+      {
+       "name": "Wanted Poster",
+       "subject": "A tan paper poster nailed at its four corners to a wooden plank wall, showing a simple black bandit mask icon in the middle.",
+       "object_class": "paper_document",
+       "category": "4",
+       "pattern": "full_scene",
+       "hero_colors": "tan paper with a black mask icon, grey nails",
+       "backdrop_colors": "purple",
+       "surface_or_setting": "a weathered wooden plank wall",
+       "build_model": false,
+       "cast": []
+      },
+      {
+       "name": "Sheriff Pals",
+       "subject": "The man in a cowboy hat tips it politely while the pig, in a cowboy hat that fits over its ears, holds a tin mug of coffee beside him, both in front of a saloon.",
+       "object_class": "character",
+       "category": "5",
+       "pattern": "full_scene",
+       "hero_colors": "brown hats, pink pig, tin grey mug",
+       "backdrop_colors": "cyan",
+       "surface_or_setting": "a boardwalk in front of a saloon",
+       "build_model": false,
+       "cast": [
+        "man",
+        "pig"
+       ]
+      },
+      {
+       "name": "Ranch Hands",
+       "subject": "The cow wears a red bandana, and the rooster wears a tiny cowboy hat with a hole for its comb, standing on a hay bale next to the cow and sharing a bucket of oats.",
+       "object_class": "character",
+       "category": "5",
+       "pattern": "full_scene",
+       "hero_colors": "white and black cow, orange rooster, red bandana, tan hat",
+       "backdrop_colors": "sky blue",
+       "surface_or_setting": "a hay bale on a ranch yard",
+       "build_model": false,
+       "cast": [
+        "cow",
+        "rooster"
+       ]
+      }
+     ]
+    }
+   ],
+   "problems": [],
+   "sensitive": [],
+   "cast": 2
+  },
+  {
+   "title": "Sci-Fi",
+   "story": "Lights down, the space adventure begins.",
+   "declined": [
+    "laser blaster: no weapons",
+    "robot and alien objects: creatures with faces count as characters"
+   ],
+   "variants": [
+    {
+     "cards": [
+      {
+       "name": "Rocket",
+       "subject": "A flying rocket with a white pointed nose cone, a red body with two round porthole windows, three red fins at the base and a bright fire trail below it, flying upward.",
+       "object_class": "vehicle",
+       "category": "1",
+       "pattern": "full_scene",
+       "hero_colors": "white and red, with yellow portholes",
+       "backdrop_colors": "clear sky blue",
+       "surface_or_setting": "",
+       "build_model": true,
+       "cast": []
+      },
+      {
+       "name": "Moon Rover",
+       "subject": "A six-wheeled moon rover with a boxy white body, a small round dish antenna on a short mast fixed to the roof and a camera on the front, standing on grey metal deck plates.",
+       "object_class": "vehicle",
+       "category": "3",
+       "pattern": "stripes",
+       "hero_colors": "white and silver, with orange wheel hubs",
+       "backdrop_colors": "rich purple",
+       "surface_or_setting": "grey metal deck plates",
+       "build_model": true,
+       "cast": []
+      },
+      {
+       "name": "Space Helmet",
+       "subject": "A round white astronaut helmet with a big curved gold visor, a ribbed neck ring at the bottom and a small air port on the side.",
+       "object_class": "clothing",
+       "category": "1",
+       "pattern": "rays",
+       "hero_colors": "white and gold, with an orange stripe on the neck ring",
+       "backdrop_colors": "fresh grass green",
+       "surface_or_setting": "",
+       "build_model": false,
+       "cast": []
+      },
+      {
+       "name": "Airlock",
+       "subject": "A round steel airlock hatch with a thick rim, a small round porthole in the middle and a spoked turning wheel on the side opposite the hinges, set into a bolted spaceship wall.",
+       "object_class": "building_place",
+       "category": "4",
+       "pattern": "full_scene",
+       "hero_colors": "steel grey, with a red wheel",
+       "backdrop_colors": "sunny yellow",
+       "surface_or_setting": "a riveted grey spaceship corridor wall",
+       "build_model": true,
+       "cast": []
+      },
+      {
+       "name": "Flying Saucer",
+       "subject": "A flying saucer with a wide silver disc body, a round glass dome on top and a ring of small round lights around the rim, flying in a clear sky.",
+       "object_class": "vehicle",
+       "category": "1",
+       "pattern": "full_scene",
+       "hero_colors": "silver and light grey, with yellow rim lights",
+       "backdrop_colors": "clear cyan sky",
+       "surface_or_setting": "",
+       "build_model": true,
+       "cast": []
+      },
+      {
+       "name": "Lab Flask",
+       "subject": "A round-bottom glass lab flask with a long neck, filled with glowing green liquid with a few bubbles, closed with a cork stopper.",
+       "object_class": "container",
+       "category": "2",
+       "pattern": "plain_gradient",
+       "hero_colors": "glowing green liquid in clear glass, with a light brown cork",
+       "backdrop_colors": "rich pink",
+       "surface_or_setting": "",
+       "build_model": false,
+       "cast": []
+      },
+      {
+       "name": "Star Map",
+       "subject": "A flat rectangular star map lying on a table, blue with white dots joined by thin lines into constellations and a small ringed-planet icon in one corner.",
+       "object_class": "paper_document",
+       "category": "3",
+       "pattern": "surface_from_above",
+       "hero_colors": "deep blue and white, with yellow dots",
+       "backdrop_colors": "warm orange",
+       "surface_or_setting": "grey metal deck plates",
+       "build_model": false,
+       "cast": []
+      },
+      {
+       "name": "Control Panel",
+       "subject": "A wall-mounted control panel with a slanted face, a square screen showing a wave icon, a row of round buttons, two sliders and a big lever, bolted to a spaceship wall.",
+       "object_class": "electronics",
+       "category": "4",
+       "pattern": "full_scene",
+       "hero_colors": "slate blue, with yellow buttons",
+       "backdrop_colors": "rich pink",
+       "surface_or_setting": "a riveted spaceship wall",
+       "build_model": true,
+       "cast": []
+      },
+      {
+       "name": "Bridge Crew",
+       "subject": "The cow and the rooster in shiny silver space jumpsuits stand at a ship's control desk, the cow happily pressing a big round button while the rooster flaps its wings in delight.",
+       "object_class": "character",
+       "category": "5",
+       "pattern": "full_scene",
+       "hero_colors": "silver jumpsuits, white cow with black spots, orange rooster",
+       "backdrop_colors": "deep purple-blue spaceship interior with a clear cyan window",
+       "surface_or_setting": "spaceship bridge",
+       "build_model": false,
+       "cast": [
+        "cow",
+        "rooster"
+       ]
+      },
+      {
+       "name": "Sky Watchers",
+       "subject": "The man and the pig stand on a green meadow at day, both pointing up and waving cheerfully at a small silver flying saucer high in the clear blue sky.",
+       "object_class": "character",
+       "category": "5",
+       "pattern": "full_scene",
+       "hero_colors": "brown mustache man in a blue coverall, pink pig, silver saucer",
+       "backdrop_colors": "clear sky blue and fresh green",
+       "surface_or_setting": "green meadow",
+       "build_model": false,
+       "cast": [
+        "man",
+        "pig"
+       ]
+      }
+     ]
+    }
+   ],
+   "problems": [],
+   "sensitive": [],
+   "cast": 2
+  },
+  {
+   "title": "Horror",
+   "story": "A spooky movie night where everything is friendly fun.",
+   "declined": [],
+   "variants": [
+    {
+     "cards": [
+      {
+       "name": "Jack Lantern",
+       "subject": "A round orange pumpkin with a short green stem, carved with triangle eyes, a nose and a jagged grinning mouth, glowing warm yellow from inside, sitting on weathered wooden porch planks.",
+       "object_class": "plant_nature",
+       "category": "3",
+       "pattern": "stripes",
+       "hero_colors": "orange pumpkin, warm yellow glow, green stem",
+       "backdrop_colors": "fresh grass green",
+       "surface_or_setting": "weathered wooden planks",
+       "build_model": false,
+       "cast": []
+      },
+      {
+       "name": "Witch Hat",
+       "subject": "A tall pointed witch hat with a wide round brim, a slightly bent tip and a band around the base of the crown.",
+       "object_class": "clothing",
+       "category": "1",
+       "pattern": "rays",
+       "hero_colors": "deep purple hat, small yellow band",
+       "backdrop_colors": "clean pink",
+       "surface_or_setting": "",
+       "build_model": false,
+       "cast": []
+      },
+      {
+       "name": "Bat",
+       "subject": "A bat flying with both wings spread wide, with scalloped wing edges, small pointed ears, a tiny face and a furry round body.",
+       "object_class": "animal",
+       "category": "1",
+       "pattern": "full_scene",
+       "hero_colors": "dark grey-brown fur and wings, small light tan belly",
+       "backdrop_colors": "dusk sky, violet turning pink at the horizon",
+       "surface_or_setting": "",
+       "build_model": false,
+       "cast": []
+      },
+      {
+       "name": "Candelabra",
+       "subject": "A silver candelabra with a round base, a central stem and three curved arms, each holding a cream candle topped with a bright fire with a yellow-white glowing core, orange flame tips curling upward, and warm orange light cast on the silver.",
+       "object_class": "other",
+       "category": "2",
+       "pattern": "plain_gradient",
+       "hero_colors": "silver candelabra, cream candles, orange flames",
+       "backdrop_colors": "rich purple",
+       "surface_or_setting": "",
+       "build_model": true,
+       "cast": []
+      },
+      {
+       "name": "Witch Broom",
+       "subject": "A witch broom lying flat seen from above, with a long straight wooden handle and a bundle of tan straw bristles tied tight to the handle's end with twine.",
+       "object_class": "tool",
+       "category": "3",
+       "pattern": "surface_from_above",
+       "hero_colors": "wood brown handle, tan straw bristles, small red twine binding",
+       "backdrop_colors": "clear cyan",
+       "surface_or_setting": "weathered wooden planks",
+       "build_model": false,
+       "cast": []
+      },
+      {
+       "name": "Crystal Ball",
+       "subject": "A round glass crystal ball filled with swirling teal mist, resting in a dark wooden stand with three curled feet that touch the ground.",
+       "object_class": "other",
+       "category": "3",
+       "pattern": "concentric_rings",
+       "hero_colors": "pale violet glass, teal mist swirl, dark brown wooden stand",
+       "backdrop_colors": "warm yellow",
+       "surface_or_setting": "weathered wooden planks",
+       "build_model": true,
+       "cast": []
+      },
+      {
+       "name": "Haunted Door",
+       "subject": "A tall arched old wooden front door seen from outside, with a big round iron knocker in the middle, a handle on the right with hinges on the left, a small round window glowing warm yellow, set in a stone wall with one stone step.",
+       "object_class": "building_place",
+       "category": "4",
+       "pattern": "full_scene",
+       "hero_colors": "dark wood brown door, grey stone wall, glowing yellow window",
+       "backdrop_colors": "rich royal blue night sky with a few small stars and a crescent moon",
+       "surface_or_setting": "the stone front wall of an old house with a stone doorstep",
+       "build_model": true,
+       "cast": []
+      },
+      {
+       "name": "Old Clock",
+       "subject": "A tall wooden grandfather clock with a perfectly round white face with numbers, two hands pointing to midnight, a glass door showing a swinging brass pendulum, and a pointed top.",
+       "object_class": "furniture",
+       "category": "4",
+       "pattern": "full_scene",
+       "hero_colors": "dark wood brown case, cream face, red clock hands, brass pendulum",
+       "backdrop_colors": "fresh green wall",
+       "surface_or_setting": "a wooden hallway floor against a plain wall",
+       "build_model": true,
+       "cast": []
+      },
+      {
+       "name": "Trick Treat",
+       "subject": "The sheep wearing a white bed sheet ghost costume with two eye holes holds a glowing lantern, while the cow beside it wears a pointed witch hat and carries a candy bucket, both happily knocking on a door at night.",
+       "object_class": "character",
+       "category": "5",
+       "pattern": "full_scene",
+       "hero_colors": "white sheet, white cow with black spots, purple hat",
+       "backdrop_colors": "rich royal blue night sky with a few small stars and a crescent moon",
+       "surface_or_setting": "a porch with a lit window",
+       "build_model": false,
+       "cast": [
+        "sheep",
+        "cow"
+       ]
+      },
+      {
+       "name": "Vampire Night",
+       "subject": "The man in a black vampire cape with a high collar and plastic fangs peeks from behind a curtain while the rooster in a mummy wrap of white bandages waves cheerfully at him.",
+       "object_class": "character",
+       "category": "5",
+       "pattern": "full_scene",
+       "hero_colors": "black cape with red lining, white bandages, orange rooster",
+       "backdrop_colors": "violet turning pink at the horizon",
+       "surface_or_setting": "a cozy living room",
+       "build_model": false,
+       "cast": [
+        "man",
+        "rooster"
+       ]
+      }
+     ]
+    }
+   ],
+   "problems": [],
+   "sensitive": [],
+   "cast": 2
+  }
+ ],
+ "request": {
+  "theme": "Movie cast",
+  "wishes": "",
+  "variants": 1,
+  "cast": 2,
+  "plan": "runs/plans/cast-bonus.json",
+  "references": true,
+  "alongside": []
+ }
+}

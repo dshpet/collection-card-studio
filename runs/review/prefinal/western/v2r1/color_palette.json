@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a pure-blue mailbox under an orange sunset sky, with an orange dirt road and orange-tinted grass. The whole backdrop is pulled warm, and background chroma (0.14) is as loud as the hero. B: an orange and yellow feeder against a cool green and blue park, with a muted grey sidewalk and buildings that give the eye somewhere to rest.",
+   "fix": "Daytime sky in pale blue, a muted beige-grey dirt road, and grass in natural mid-green rather than gold-lit."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: orange-red beans on an orange wood table, with warm-tinted grey on the pewter rim. The only cool note is a thin blue stripe, so the card is nearly one warm hue family (warm share 0.965, about 2.5 families). A: fruit in many hues (red, orange, green, blue) on a glass plate. It is loud, but hero and backdrop are clearly separated.",
+   "fix": "Use a cool, neutral grey-blue table or tablecloth behind the bowl. Keep the metal rim a cool silver grey, not warm."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the scout jacket's sash is the same saturated green as the sunburst backdrop, so the hero repeats the background hue. The orange collar and cuffs are pushed to pure orange. B: a tan hat with a red band on green, where the hero hue is clearly separate from the backdrop.",
+   "fix": "Make the sash a dark navy or deep red so it does not match the green background. Make the collar and cuffs a muted brown leather instead of bright orange."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the clock face is yellow cream, not white, and the whole station is teal-green with brown wood. There are many hue families (6.6) and the shadows are greyed out (shadow chroma kept 0.58). B: a navy cap with a gold tassel on cyan rings, a simple layout with a cool hero and one warm accent.",
+   "fix": "Paint the clock face clean white with cool grey shading. Use fewer colors in the station: one muted green structure against a pale blue sky."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: pure primary yellow and red cars on a saturated blue track, and the track's blue repeats the sky blue. Subject chroma (0.173) is above the real range, and nothing on the hero is neutral. A: a cream canvas, natural wood and red wheels on a cyan sky and tan dirt, with believable local colors and a warm hero against a cool sky.",
+   "fix": "Paint the track a bright red or white steel so it stands apart from the blue sky. Tone the cars to a slightly softer yellow with darker red-brown shadow sides."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: an orange guitar on an orange wood floor. The card is almost entirely one warm family (warm share 1.0, about 2 families), and the shadows go flat brown (shadow chroma kept 0.46). B: a blue racket and yellow ball on a green court, with clear hero and background separation.",
+   "fix": "Put the guitar on a cool backdrop, such as a blue-grey rug or teal wall. Make the cast shadow a deep violet-brown rather than plain dark orange."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the neck pillow is one pure, fully saturated blue (subject chroma 0.19, the top of the range) against hot pink rings, with no neutral fabric tones. A: grey steel spurs with brown leather straps on cyan, with believable metal neutrals like the real camera's grey body.",
+   "fix": "Make the pillow a softer, slightly dusty blue fabric with lighter grey-blue highlights. Calm the pink background toward a paler pink."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the boxing gloves are pure saturated red (subject chroma 0.18, above the real range), with orange highlights and crimson shadows, so everything is red-family. B: orange boots also sit on an orange floor, but the leather has brown shading and grey spurs, and the chroma stays within range.",
+   "fix": "Paint the gloves a deeper, slightly darker leather red with soft pink-white highlights. Give the shadow side a cool purple-red, not orange."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the marble column is yellow cream rather than white, in a maroon room with an orange pedestal and a gold sign. The whole card is pulled warm (warm share 0.96, out of range), matching the lesson pattern where generated white turns cream. A: a silver club and white ball on green grass under a blue sky, with neutral whites kept cool.",
+   "fix": "Paint the column cool white marble with blue-grey shadows, and use a cooler, darker wall color such as deep teal or slate."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: blue sneakers with neon green, teal, pink and orange laces and soles on an orange and cream set. That is 5.5 hue families, above the real range, with confetti-style accents everywhere. A: a green cactus and terracotta pot on purple, a limited three-family palette.",
+   "fix": "Use one accent color only: blue sneakers with white soles and white laces, and leave out the pink, orange and teal trims."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the fan's paper is pure, fully saturated purple (subject chroma 0.226, well above the range) on saturated yellow, so hero and background are equally loud. B: a neutral silver harmonica with red end caps on cyan, with believable metal greys.",
+   "fix": "Make the fan paper a softer violet with pale lilac highlights and darker plum folds, and soften the yellow background slightly."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a green pump and red handle on an orange desert and sky. The whole card is pulled warm (warm share 0.875, out of range), the stone base is tinted orange, and the shadows lose color (shadow chroma kept 0.55). A: a blue viewer against a pale blue city, cool on cool but within real metrics.",
+   "fix": "Use a pale blue daytime sky over the field, a grey stone base, and give the pump's shadow side a deep blue-green rather than brownish."
+  }
+ ],
+ "pattern": "Generated cards push the whole card warm: whites turn cream or yellow, and orange spreads into floors, skies and stone. Heroes get pure, fully saturated hues with no neutral resting areas. The hero often repeats the backdrop hue (orange on orange wood, green sash on green, blue track on blue sky). Shadows go flat brown or orange instead of a related cool purple or blue. Extra confetti accents raise the hue-family count."
+}

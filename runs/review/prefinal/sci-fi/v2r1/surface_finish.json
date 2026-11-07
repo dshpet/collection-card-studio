@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the locker door has many raised vent slats and a keyhole, a fine noisy grain over the books and wall, and every surface has the same orange lacquer shine. B: the joystick is built from a few broad smooth parts, a matte black base, a glossy red ball and one simple button. Only the table carries a fine brushed-metal streak.",
+   "fix": "Draw the locker as a few broad smooth panels with two or three wide vent bands. Make the paint semi-matte, put no grain on the books or wall, and keep the surfaces clean and quiet."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the tanks are plain satin grey cylinders with wide smooth bands and no surface marks. B: the ring box's red shell has a fine velvet-like stipple at the rim, and the coin's emblem has crisp embossing.",
+   "fix": "Paint the box shell as a smooth soft-matte surface with no fuzzy stipple. Keep the coin as a simple broad bevel."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the rocket is a smooth cream body with one porthole and broad orange bands, and the gloss is moderate. B: the airplane has many small cabin windows, door panel lines and engine rims, and a strong white highlight over most of the fuselage.",
+   "fix": "Cut the airplane to a few cabin windows, drop the door and panel seams, and make the fuselage a softer satin white with one small highlight."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the gloves are a soft, blurred red surface with smeared crease lines on the cuffs, and the table has big decorative wood-grain swirls. The detail numbers fall below the real range. B: the foil pouch has crisp metallic wrinkles and clean edges.",
+   "fix": "Give the boxing gloves a crisp leather surface: a few clear stitched seams, a satin sheen on top and a matte underside. Keep the table grain fine and faint."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the phone booth's glass panes and keypad are mushy and smeared, and the red paint has a soft noisy blur with no crisp edge on the window bars. B: the seahorse has clean painted spots and smooth ridge segments with a controlled satin sheen.",
+   "fix": "Draw the booth's window bars with crisp edges and give the red paint a clean satin finish. Make the glass smooth and clear with one soft reflection, and draw the phone keypad as a few clean buttons."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: this bike card matches the real reference set. It has a satin red frame, matte tires and simple broad rack parts. B: the hoop's backboard is a uniform, very bright glossy white, and the rim and frame have the same lacquer finish with no matte areas.",
+   "fix": "Make the backboard a soft-matte white with a gentle gradient, and keep the gloss only on the orange rim."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the space gloves are a smooth matte white with wide grey bands, a few broad parts and quiet surfaces. B: the vending machine's glass has scattered condensation droplets and fine noise, and there are many small labelled cans and bottles.",
+   "fix": "Remove the droplets from the vending-machine glass. Draw fewer, simpler cans as smooth shapes and make the glass clean with one soft reflection."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: this is the real lighthouse, with broad smooth brick blocks and simple satin red rails. B: a ring of chunky hex bolts surrounds the porthole, the wall has riveted access panels, and the steel rim is highly polished.",
+   "fix": "Replace the bolt ring with one wide smooth steel band around the porthole, remove the riveted plates, and make the rim satin instead of mirror chrome."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the sneakers have fine mesh-dot texture on the toe and side panels and a glossy lacquer over the laces and sole. The detail and gloss numbers sit at the top of the real range. B: the helmet is a smooth white shell with one glossy visor and broad simple trim.",
+   "fix": "Paint the sneaker uppers as smooth soft-matte fabric with no mesh dots. Keep the gloss only on the sole edge, and draw the laces as a few simple smooth cords."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the gate is busy with scroll ironwork, but the metal is a uniform satin brown and the bricks are smooth blocks. B: the observatory dome has fine scuffs and scratch marks over the white plaster, and a faint grainy noise on the stone ring.",
+   "fix": "Make the dome a clean, smooth matte white with no scratches or scuffs, and give the stone blocks flat, quiet faces."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the submarine has a glossy yellow body with a few copper rivets and porthole rims. B: the UFO has many small rivets around the saucer and a glossy jelly dome, and the glowing bulbs give it a higher gloss share.",
+   "fix": "Remove the rivets from the saucer and use one wide smooth band instead. Keep the purple body satin and the gloss only on the dome."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the capsule's white shell has rows of small rivets and a screwed-on hatch panel, and a large bright highlight covers the upper hull (highlight share far above the real range). B: the balloons are smooth satin rubber with one soft highlight each.",
+   "fix": "Remove the rivets and the screwed panel from the capsule. Use one or two wide smooth seams, and make the white hull satin with a single small highlight."
+  }
+ ],
+ "pattern": "Generated cards add small hardware and surface noise that real cards leave out: rows of rivets and bolts, panel seams, mesh dots, condensation droplets, scratches and velvet stipple. They also put one uniform lacquer gloss or large blown highlight across the whole object, where real cards mix matte and satin parts and draw hardware as a few broad, smooth bands."
+}

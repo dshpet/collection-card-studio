@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: high-key beach ball on light sand. Light and mid groups are broad, and the darkest value is the cast shadow under the ball's left side. B: the dark twig ball sits on a bright purple glow disk centred behind it, and the four corners drop to dark purple. In the lens, this reads as a bright halo around a dark hero, the halo pattern seen on the lesson fakes.",
+   "fix": "Keep the purple backdrop one even mid tone with no bright glow behind the twig ball. Darken the corners only slightly, and lighten the twigs so the ball sits in the mid value group."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the wood behind the book is cut by hard near-black streaks along the left and top edges, so the background breaks into many small dark slivers instead of one mid mass. B: the belt is a single dark mass on evenly lit light-mid planks, with clean value groups.",
+   "fix": "Draw the table as smooth light wood with soft, even grain. Remove the dark streaks around the book's edges and keep only one soft shadow under the book."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the card is darker than the real range (0.574). Dark red boots sit inside a lighter purple glow patch, and the corners go deep purple, a halo-behind-hero setup. B: the sneakers sit on a flat two-plane orange and cream backdrop. The floor is nearly white, but the value groups are simple and the shoe is darker than the floor. Both cards are unusual, and A's halo is the stronger tell.",
+   "fix": "Lighten the whole card. Make the purple background one even, medium-light tone with no bright patch behind the boots, and give the boots lighter red tops so they are not the darkest mass on the card."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A matches the real drink card: a light glass in front of a dark purple diamond wall, with a clear light, middle and dark split. B: the ice cream and the green wall are nearly the same middle grey (rms 0.098, below the real range). The only separation is a thin light neon outline, and there is no dark accent group.",
+   "fix": "Darken the green wall to a deep green. Make the ice cream scoop brighter, and add a soft dark shadow under the cone so the hero stands out by value, not just by its outline."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: pale, high-key city with a mid-grey viewer in front. It is a little above the real range but the value groups are simple. B: a night scene with near-black sky and trees taking more than half the card (mean 0.474, well below real cards). A bright fire core carries a hero gap of +0.231, which is chiaroscuro the real cards never use.",
+   "fix": "Set the scene in daylight or soft dusk with a medium-light sky. Keep the fire bright but surround it with mid-tone grass and stones instead of a black night."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a white hat on a mid-green background with soft rings, and only a faint lighter ring behind it. B: a near-black mortarboard sits on a strong bright circular disk centred behind it. The value gap is -0.312, darker than any real card, and it is the 'dark hero on a glow' setup from the lessons.",
+   "fix": "Make the cap a lighter navy with clear blue highlights on the top board. Keep the rings behind it the same even blue, without a bright disk around the cap."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "B is the real lighthouse from the lessons. A: the windmill's dark lattice is set against a busy band of bright clouds and a light grass field. The dark accents are scattered through the tower in small pieces instead of forming one grouped dark shape.",
+   "fix": "Group the windmill's shading into one darker side and one lit side. Keep the clouds small and low, and give the grass a calm mid tone with no bright speckles."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a hazy, washed-out desert (mean 0.751, above the real range). The sky and sand both sit in the top light group, the cactus is a soft mid grey, and there are almost no dark accents. B: a dark topiary mass on light grass and sky with clear light, middle and dark groups.",
+   "fix": "Darken the sand and sky slightly toward warm mid tones. Put a firm darker shadow on the cactus's shaded side and under its base."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a dark saddle on alternating light and mid blue stripes. The value groups are clean and the dark mass is the hero. B: the upper-right wall goes near-black while the lower floor is bright, so the darkening is lopsided (vignette -0.103, outside the real range). The red gloves sit in a muddy mid grey, close in value to the wall.",
+   "fix": "Light the blue wall evenly with no dark top-right corner. Make the gloves brighter red with clear highlights, and add a soft shadow under them on the table."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the real suitcase card from the reference sheet: a mid-value case against a bright ray burst and a light floor. B: a dark mower on a lighter circular glow disk centred behind it, with darker cyan corners. This is the halo-behind-a-dark-hero setup.",
+   "fix": "Make the cyan background one even tone with no bright circle behind the mower. Lighten the mower's red body so its darkest parts are only the tyres."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a light glass lamp on a green ray burst. The corners darken strongly (0.144, above the real range), but the hero is light and readable. B: a near-black iron lantern on a bright cyan ray burst that lightens around the hero. The value gap is -0.348, far darker than real cards, and the local contrast on the cage is hard black against white.",
+   "fix": "Paint the lantern frame a lighter gunmetal grey with soft highlights. Keep the cyan rays even in brightness, with no extra glow right behind the lantern."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a mid-value wheel on a light blue diamond background, with soft light and mid groups. B: a bright yellow submarine on near-black green corners (mean 0.546, below the real range). The hero gap of +0.322 and the hard spotlight-like edge come from tenebrist lighting the real cards do not use.",
+   "fix": "Make the green background a medium, even green with only gently darker corners. Soften the shading on the submarine so it does not look lit by a spotlight."
+  }
+ ],
+ "pattern": "Generated cards misplace the light and dark. Often a dark hero sits on a bright glow disk or halo centred behind it, or a bright hero sits on near-black corners. Either way the hero-to-background gap goes past the real range, and the overall key drifts out of range (night scenes, washed-out pale scenes). Real cards keep the background one even mid or light field, put the hero only moderately darker or lighter, and group dark accents into a few shapes."
+}

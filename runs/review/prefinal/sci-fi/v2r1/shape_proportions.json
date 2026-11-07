@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A, the locker, has rounded slab walls, stubby feet and an open door with fairly straight edges, within the range of real cards. B, the joystick, is a clean ball, a thin shaft and a flat disc base with true proportions. Neither silhouette shows the swelling seen in the lessons.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the two jetpack tanks are fat capsules with ballooned domes. The shoulder straps are thick loops and the nozzles are oversized stubby cups. Thin parts have become sausages, as with the generated camera grip in the lessons. B: the ring-box lid and base keep broad planar faces with tight edges.",
+   "fix": "Draw two slimmer metal cylinders with flat end caps, thin flat shoulder straps, and small narrow nozzles. Keep the backplate a thin flat board with crisp corners."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the rocket body is short and swollen with a blunt bulbous nose. The fins are thick wedges with soft blob corners and the engine bell is barely there, a toy proportion. B: the airplane is chubby but has a full set of parts: wings, tailplane, fin, two engines and a cabin window row.",
+   "fix": "Draw a longer, slender rocket body with a pointed nose cone, three thin flat fins with crisp tips, and a visible flared engine nozzle."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the pouch's flat foil face is crumpled and wavy, and its side seams bow outward unevenly, so the flat panel fails to stay flat. The cap and neck are a chunky stack. A: the boxing gloves are rounded by nature, with the cuff and thumb in correct relation.",
+   "fix": "Draw the pouch as a flat rectangular panel with straight crimped seams on each side, a thin flat bottom gusset, and a small narrow spout and cap."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the phone booth has straight vertical walls, a crisp plinth and a domed roof, with true proportions. B: the seahorse has a curled tail, a snout and spiky fins, with organic proportions in range. There is no shape cue on either card.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the bicycle has thin tubes, spokes and handlebars, matching the real anchor card. B: the hoop's backboard is a flat plate with straight runs, a thin rim and net, and a thin pole. The frame's corners are slightly soft but within the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the astronaut gloves have sausage-thick, equal-length fingers and an oversized splayed thumb. The cuffs are fat cylinders, giving a puffy toy proportion. B: the vending machine is a straight-sided box with tight bevels, flat faces and small feet.",
+   "fix": "Draw the gloves with slimmer, tapered fingers of different lengths, a thumb set lower at the side, and a cuff only slightly wider than the wrist with a thin ring band."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the real lighthouse from the lessons, with a thin railing, spire and correctly tapered tower. B: the porthole is a single swollen ring. The thick bulging chrome torus is pillowed, the bolts are oversized, and the wall panel's lines are wavy rather than straight.",
+   "fix": "Draw a thin flat metal flange ring with small evenly spaced bolts, a narrow inner frame around the glass, and a hull wall made of flat panels with straight seams."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the helmet is a near-sphere with an oversized visor and an ear disc that bulges past the shell. The neck ring is a fat soft collar, and the whole shape is inflated like a toy. A: the sneakers have sole, upper, tongue and laces in real proportion, with thin lace loops.",
+   "fix": "Draw a helmet shell that is slightly taller than wide, with a visor covering the front only, a small flat side fitting, and a thin metal neck ring with crisp edges."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the observatory is squat, with a dome as wide as the drum and a swollen ledge where they meet. The base flares into a pillowy rounded plinth. The silhouette is one soft blob with almost no corners (corner_rate 0.38, below the real range). A: the gate has thin bars, scrolls and pillars, many thin parts and crisp edges.",
+   "fix": "Draw a taller cylindrical tower with straight vertical walls, a slightly narrower dome on top, a thin flat ledge between them, and a crisp square-edged base."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the UFO saucer rim is a thick swollen torus, and its row of oversized bulb lights breaks the contour into lumps. The dome is a big soft hemisphere. A: the submarine is chubby, but its periscope, conning tower, propeller and fins all read as distinct parts.",
+   "fix": "Draw the saucer as a thin flat disc with a sharp outer edge, small lights set flush along the rim, and a smaller glass dome."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the capsule's cone is short and broad, and the heat-shield base is a thick rounded pad that swells past the cone. The top hatch is a soft lump. B: the balloons are correctly round, with thin strings and small knots (thin parts present).",
+   "fix": "Draw the capsule as a taller cone with straight sides, a thin flat heat shield only slightly wider than the cone, and a small crisp docking ring on top."
+  }
+ ],
+ "pattern": "Generated cards inflate the object. The main bodies are short and swollen, and the domes and rims are thick and pillowy (porthole ring, UFO rim, capsule shield, helmet). Thin parts such as straps, fingers, fins and cuffs become sausages, and flat panels bow or crumple instead of staying planar with tight bevels."
+}

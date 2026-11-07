@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the gold pan is tilted and turned on a diagonal, and you can see down into the bowl. This matches the dynamic three-quarter angle of the real telescope card. B: the oil lamp is shot straight on at eye level. It is perfectly symmetric, sits small in the centre, and the base shows almost no top face. That is the centred, straight-on staging the lessons' generated cards use.",
+   "fix": "Turn the lamp about 30 degrees and tilt it slightly toward the viewer so the top of the base and the burner collar show as ellipses. Make it larger so it fills more of the card."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the harmonica is a three-quarter view from a mild height. Its top cover and its front with the holes share one view, and perspective is mild. B: the fan is nearly flat to the camera, with a slight tilt, which is a natural view for a flat object, like the real clock card. Neither card breaks the camera rules.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the hat is turned three-quarters and tilted, and the brim curls toward the viewer with strong overlap. B: the jacket floats almost straight on and nearly symmetric, centred with empty space around it. The sleeves splay out sideways rather than receding in depth.",
+   "fix": "Turn the jacket about 30 degrees so one sleeve comes toward the viewer and overlaps the body. Move the camera slightly above and crop tighter."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the pump is a three-quarter view standing on a concrete slab. The slab's ground plane matches the desert floor, with mesas as a simpler background layer behind. B: the buoy is dead straight on, symmetric, and centred, and the camera barely shows the top of its base. It is the whole object posed in the middle of the frame, like the generated lighthouse.",
+   "fix": "Move the camera closer and slightly lower, and let the buoy's base run off the bottom edge of the card. Turn the bell frame a little so the ring is seen at an angle, not flat on."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the whole cart is fully inside the frame and centred, on a tiled floor seen from a mild height. This is the complete-object staging of the generated lessons. B: the camera is close and the hay bale runs off both the left and right edges, so the crop is tight, like the real lighthouse card.",
+   "fix": "Bring the camera closer so the cart's wheels and the right side of the awning are cut off by the card edges. Show less floor."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the rocking chair is in a strong three-quarter turn, and the floorboards recede toward a clear horizon. The rockers overlap each other in depth. B: the barrel is perfectly straight on and symmetric in the middle of the card. The camera is at a level height that shows a thin top ellipse, and the ground is a flat strip. This is the straight-on posing of the generated lessons.",
+   "fix": "Turn the barrel so the house emblem sits off-centre on a curving side, raise the camera a little to open the top lid, and crop closer."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both pairs of shoes are in similar three-quarter views at a mild height, with one shoe overlapping the other. A has soft gradient ground with no hard horizon. B has a hard wall-and-floor seam, but the floor angle is consistent with the shoes. Nothing on the camera clearly separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cactus faces the camera straight on and symmetric, with both arms laid out flat to the sides, centred on a sand mound. B: the duck rider is in profile and turned slightly, its spring base has a visible top face, and its ground plane is consistent. A matches the generated straight-on habit.",
+   "fix": "Turn the cactus so one arm comes toward the viewer and overlaps the trunk, and the other arm turns away. Raise the camera slightly so the sand mound shows its top."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the fountain is centred and symmetric, seen from a raised camera. The whole basin shows as a full ellipse fitted inside the frame, the same high, centred staging as the generated lighthouse. B: the wagon is a three-quarter view with its tongue running off the right edge and its wheels overlapping in depth, cropped like the real cards.",
+   "fix": "Lower the camera and move it closer, so the bottom basin is cut off by the bottom and side edges and the fountain sits slightly off-centre."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 5,
+   "difference": "B has the same low, close camera as the real lighthouse in the lessons, with its base cut off by the bottom edge. A: the windmill is the whole object seen from a raised three-quarter camera, standing small on a full plinth on a dirt patch. The camera is higher and further away than on the real cards.",
+   "fix": "Lower the camera toward eye level and move it closer, so the tower's legs and plinth run off the bottom edge and the wheel fills the upper half."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a high camera looks down at a full campfire ring. Many separate layers are stacked: the logs, a kettle on a rock, a cabin, and trees, all equally sharp. B: the binocular viewer is close and cropped, with its post running off the bottom, a railing as the middle ground, and a paler, simpler city behind. That is the tight crop of the real cards.",
+   "fix": "Move the camera closer and lower, focus on the kettle and fire filling the frame, and draw the cabin and trees paler and simpler behind them."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the neck pillow is shown almost face-on and fills the frame. B: the bottle is tilted on a diagonal, like the real telescope card. Both are floating single objects, the viewpoint is plausible for each, and neither has a conflicting view.",
+   "fix": ""
+  }
+ ],
+ "pattern": "The generated cards tend to stage the whole object straight on and symmetric, small in the centre with margin all around, often from a slightly raised camera that shows the complete base or ground ellipse (fountain, windmill, barrel, buoy). The real cards use a closer camera and a three-quarter turn, and they let the object or the ground run off the card edges."
+}

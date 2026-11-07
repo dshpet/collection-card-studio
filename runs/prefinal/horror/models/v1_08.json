@@ -1,0 +1,24 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "loose": [],
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The door's arched head renders as a black half-disc that looks like a mouth. The door arch cylinder's front face sits in the same plane as the door box's front face (both at y = front-0.027), so the two faces z-fight. The trim arch around the door has the same overlap. Fix: give each arch cylinder its own depth, slightly proud of the box it caps, so the faces no longer share a plane."
+  ]
+ },
+ {
+  "round": 2,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The front door's arched head is a disc that stands proud of the door box (and the surround's disc of its box), so it reads as a round plate stuck on the door rather than one arched door. Make the arch disc and the box share the same front plane and drop the box's top bevel so they merge."
+  ]
+ }
+]

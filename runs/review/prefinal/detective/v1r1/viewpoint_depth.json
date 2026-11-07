@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the rocking chair is turned three-quarters and seen from slightly above. The seat top, the armrests and the floor boards all recede toward the same vanishing direction, so the chair stands on the floor. B: the dog is shown almost side-on at ground level, with only a thin strip of grass as the ground plane. Its normals are one swollen rainbow from body to head, and planar_share (0.029) is below the real range.",
+   "fix": "Turn the dog three-quarters toward the camera and raise the camera slightly so the grass reads as a floor it sits on. Give the back and haunches broader, calmer surfaces instead of one continuous bulge."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the mortarboard is seen from above at a mild angle. Its top is an even flat patch, and the cap band below it is foreshortened to match. B: the fedora is three-quarters and slightly above, with the brim ellipse and crown in the same view. Both float with no ground, and both planar_share values are in the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the pump body faces the camera almost straight on, and the canopy above it shows its underside. The base slab is seen from much higher, as a wide receding top face. The mesas behind are a separate flat backdrop layer. B: the chest is three-quarters, and its lid, front, side and sand floor all share one raised camera.",
+   "fix": "Turn the gas pump three-quarters and use one camera height for the canopy, body and concrete slab. Let the slab's top face recede at the same gentle angle as the desert floor."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the typewriter is three-quarters from above on a desk. The key rows, the platen and the desk edge all recede consistently. B: the popcorn cart's body faces mostly forward, but the big right wheel shows an almost round face toward the viewer. A wheel mounted on the cart's side should be a narrow ellipse, so the wheel and the body do not share one view. The tile floor converges more strongly than the cart does.",
+   "fix": "Draw the cart wheel as a narrow ellipse turned the same way as the cart's side panel, and match the floor tiles' perspective to the cart."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the floor tiles recede steeply, but the baseboard runs almost flat. The door shows its right-side thickness as if it stood out from the wall, so the door, wall and floor use different angles. B: the door is a straight-on close crop with ivy in the foreground layer. It is flat but internally consistent.",
+   "fix": "Set the door into the wall plane. Use one camera angle for the floor tiles, the baseboard and the door frame, with gentle perspective on the floor."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the street lamp is cropped at the bottom and seen from slightly below, with the underside of the cap visible, like the cropped real lighthouse. B: the box camera floats whole and is turned three-quarters from above. Its top and front are big even flat patches, and the flash dish is shown almost face-on, so it does not share the body's turn.",
+   "fix": "Turn the flash reflector the same way as the camera body so its dish reads as an ellipse, and let the body sit on a soft floor shadow."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the oil lamp is perfectly frontal and symmetric at eye level, the same centred whole-object view as the generated lessons. Its normals are smooth rainbows everywhere, and planar_share (0.003) is below the real range. B: the magnifier is tilted diagonally. The ring thickness and handle are foreshortened consistently.",
+   "fix": "Turn the lamp slightly and lower the camera a little so the base ellipse and the chimney opening are seen at the same mild angle. Give the brass base a few flat bands."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the sneakers are three-quarters from above on a floor whose horizon is mid-card. Both shoes recede along the same direction. B: the safe's front face is perfectly square to the camera, yet its right side is visible at a wide angle. This is an oblique, cabinet-drawing projection with no convergence. planar_share (0.63) is above the real range.",
+   "fix": "Turn the safe a true three-quarters so the front door also narrows slightly toward the back edge. Use mild perspective on both faces."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the boxing gloves are a close, low, near-eye-level shot cropped at the left edge, sitting on a table in front of a wall. B: the rotary phone is three-quarters from above on a desk whose front edge is in the foreground. Both share one ground plane and each looks internally consistent.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the shield lies tilted on an undefined purple surface, seen obliquely from above. There is no ground plane, only a drop shadow, and the house emblem is a flat, even patch. planar_share (0.66) is above the real range. B: the vending machine is three-quarters at eye level on a floor, and its side and front recede together.",
+   "fix": "Stand the shield upright, turned slightly, at eye level, with real rim thickness, or show it resting on a visible floor at one clear angle."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the bottle floats tilted, with its cap, loop and body turning together. B: the ticket is a near-zero-thickness card seen almost straight down and laid diagonally. It reads as a flat sticker with no camera angle, and planar_share (0.957) is far above the real range.",
+   "fix": "Tilt the ticket toward the viewer at an angle, give it visible card thickness and a slight curl, and add a soft shadow below it."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the travel book lies on a table, seen from above at three-quarters. The thick page block and spine side recede consistently. B: the folder is seen nearly top-down with paper-thin edges, almost flat on the table. planar_share (0.873) is above the real range.",
+   "fix": "Lower the camera so the folder's front edge and stacked papers show real thickness, and turn the folder a bit more three-quarters."
+  }
+ ],
+ "pattern": "Generated cards give themselves away in three ways. Some are flat objects seen almost straight down with paper-thin edges, giving too many even flat patches. Some are frontal, symmetric, centred eye-level views. Others mix projections: a box face square to the camera with its side showing, or parts that are each turned their own way, like a wheel or dish facing the viewer while the body is three-quarters. Real cards use one mild three-quarter camera that every part and the ground plane share, and they often crop the object."
+}

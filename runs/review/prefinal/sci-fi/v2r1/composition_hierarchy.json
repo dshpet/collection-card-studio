@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the locker stands tall, filling most of the card's height, with the floor and wall around it. B: a small joystick sits centered, its ball top well below the top edge, with a large empty green wall and steel desk around it. Occupancy 0.197 is below the real range and the 0.123 margin is above it.",
+   "fix": "Move the camera close so the joystick fills about 80% of the card height, with the base nearly touching the bottom and side edges. Add a slight three-quarter tilt."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the twin tanks are a narrow upright column in the middle, with wide empty green sunburst on both sides (width 0.516, margin 0.121). B: the ring box sits wider, angled, and fills the card the way the real cards do.",
+   "fix": "Turn the jetpack to a three-quarter angle and scale it up so it spans most of the card width, with the straps and nozzles coming close to the edges."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: a small diagonal rocket floats in the center with lots of sky around it (area 0.169, width 0.521). B: the plane fills the card and is cropped by the right edge, which matches the real bike and fan cards.",
+   "fix": "Draw the rocket much larger so it spans corner to corner, with the nose cone and flame nearly touching the card edges. Let a fin or the flame be cut slightly by the edge."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the boxing gloves are large and cropped by the left edge, sitting on a table close to the camera. B: an upright pouch stands centered, square to the camera, with even empty space on both sides (width 0.502, margin 0.115). It looks like a product shot.",
+   "fix": "Draw the pouch bigger and tilted at a three-quarter angle, filling most of the card width, with its corner close to one side edge."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the phone booth is upright, centered, and contained on a floor. B: the seahorse is a tall, slim figure with a small area (0.206). Both are narrow, upright subjects in the real range for height. Neither framing departs clearly from the real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "A: the bike on the car is cropped by the left, right and bottom edges, like the real bike card. B: the backboard fills the card and the pole is cut by the bottom edge. Both use the edge-cropped, close framing of the real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: two gloves stand side by side in the middle, upright and frontal, with wide purple space on the left and right (width 0.381, margin 0.13). B: the vending machine is turned at three-quarters and fills the card height.",
+   "fix": "Show one glove large at a dynamic angle, or overlap the pair, so they fill most of the card width. Bring the cuffs close to the bottom edge."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the known real lighthouse: it is cropped by the bottom edge and fills the card. B: the porthole is a centered circle, fully contained, with an even band of pink wall around it. It is the generated tendency to keep the whole object in frame.",
+   "fix": "Move in on the porthole so its bolted rim is cut by the right and bottom edges, filling the card."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the sneakers spread wide across the card (width 0.849) near the side edges. B: the helmet is small and centered with even pink space all round (margin 0.181, well above the real range). It looks like a studio product shot.",
+   "fix": "Scale the helmet up so it fills about 85% of the card. Tilt it at a three-quarter angle with the visor close to one side edge."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the gate and pillars are cropped by the left and right edges, an immersive scene like the real arch and bike cards. B: the observatory is fully contained and centered, with lawn and sky margins on all sides. It is the same 'whole building on its plot' framing as the generated lighthouse.",
+   "fix": "Bring the camera closer so the dome is cut by the top edge and the base wall by the bottom and side edges, letting the building fill the card."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the submarine fills the card width, with the propeller near the left edge. B: the UFO is a thin, wide disc floating in the middle (height 0.404, below the real range), with large empty yellow areas above and below, and the beam takes up space without adding to the read.",
+   "fix": "Tilt the saucer toward the viewer and enlarge it, so the dome and rim fill most of the card height and the rim nearly touches the side edges."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the capsule is tilted but sits contained in the middle-left, with sky margins on all sides (margin 0.1). B: the balloon bunch runs from near the top edge down to the strings at the bottom (height 0.887), like the edge-reaching real cards.",
+   "fix": "Enlarge the capsule so the heat shield nearly touches the left and bottom edges and the top hatch nears the top edge."
+  }
+ ],
+ "pattern": "Generated cards show the whole object, centered and contained, often upright and square to the camera like a product shot, with even, generous empty space on every side. Margins are at or above the real maximum, or the subject is a narrow column well under the real width. Real cards push the hero to fill the card, angle it, and let edges crop it (lighthouse base, bike, gloves, plane)."
+}

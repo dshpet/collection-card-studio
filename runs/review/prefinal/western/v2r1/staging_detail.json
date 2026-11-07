@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the mailbox's front panel carries a house-and-bushes sticker the object would not have, and the post sits in a wide sunset field with a dirt road, pebbles and flowers. B: the feeder hangs close and central on a trunk the card edge cuts, against a soft park backdrop. The feeder holding seeds is its named content.",
+   "fix": "Plain blue mailbox with no picture on the door. Show it close up, with the card edge cutting the post and the flag. Behind it, a few soft grass and sky shapes, no pebbles or flowers."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both are top-down plates on wood planks that fill the card. A adds water droplets scattered on the glass plate rim, a sparkle the subject doesn't name. In B the spoon in the beans is a single partner object in use.",
+   "fix": "Fruit plate on wooden planks seen from above, with no water droplets on the plate or the fruit."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both float on green sunbursts. B's sunburst has a hot bright-green bloom under the hat brim at the bottom centre, a glow that draws the eye off the hero. A's sunburst is evenly lit and darkens quietly toward the corners.",
+   "fix": "Even green sunburst centred behind the hat, with no bright glow patch below it."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A's station clock comes with a bench, rail tracks, a yellow platform line, a brick wall, green pillars, a roof beam and sky. That is many small busy shapes, and its edge density of 0.089 is at the top of the real range. B's cap sits on quiet concentric rings.",
+   "fix": "Station clock close up with the card edge cutting it. Behind it, only a soft roof beam and a plain wall, with no bench or tracks."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A shows the whole wagon, uncropped, with pebbles, grass tufts, hills and clouds spread around it. B's coaster cars and track are cropped hard by the top and right edges, close and central, as on the real bike-rack card.",
+   "fix": "Covered wagon seen close, with the card edge cutting the canopy and a wheel. Plain dirt and sky behind it, with no scattered pebbles or grass tufts."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's guitar lies on diagonal planks with strong dark seams and a warm spotlight vignette. Background detail of 0.031 and edge density of 0.062 are both above the real range. B's racket and ball, its partner object, lie on a flat green court with one white line.",
+   "fix": "Guitar lying on smooth pale wooden boards with faint seams and even light, no spotlight."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B's pink rings have soft, smeared edges and a pale glow behind the pillow, and the corners darken into a magenta vignette. Detail of 0.016 is above the real range. A's cyan rings are crisp and evenly spaced.",
+   "fix": "Evenly spaced crisp pink rings, same brightness to the corners, no glow behind the pillow."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "In A the gloves are big, and the card edge cuts them on the left and right, on a shelf in front of a striped wall. In B the boots sit whole with space around them on a plank floor, and spurs were added that the subject doesn't name.",
+   "fix": "Cowboy boots without spurs, drawn large so the card edges cut the toes and the shafts."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B's column adds a gold plaque on a stand, a story crack and a separate plinth, all inside a room corner with a skirting board: invented props. A's club and ball, its partner object, sit close in grass, cut by the top edge.",
+   "fix": "Ionic column with no crack and no plaque, close up on a plain plinth, against a quiet dark wall."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A's cactus sits on a purple gradient with no pattern and no floor line. Detail of 0.005 and edge density of 0.006 are below the real range. B's sneakers stand on a pale floor under an orange wall, a simple staging that is within range.",
+   "fix": "Add a quiet tone-on-tone purple pattern, such as soft diagonal stripes, behind the cactus pot."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both float on tone-on-tone wave patterns with a mild centre glow. Fan on yellow, harmonica on cyan, with no invented props. Both are inside the real ranges.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B's pump stands whole on a stone slab with tufts, pebbles and a horizon, like the generated lighthouses on their rock islands. In A the viewer is close and the card edge cuts it, with a railing and skyline behind, as on the real bike-rack card.",
+   "fix": "Hand pump close up with the card edge cutting the handle and the base. No stone slab, just plain dirt and a little sky behind."
+  }
+ ],
+ "pattern": "Generated cards show the whole object at a distance, sitting on an invented base such as a rock island, stone slab or full desk. They scatter small props: pebbles, grass tufts, plaques, droplets, stickers. Their backdrops carry a hot glow or vignette. Real cards in category 4 crop the object at the card edge with a few quiet shapes, and real pattern backdrops stay crisp and evenly lit."
+}

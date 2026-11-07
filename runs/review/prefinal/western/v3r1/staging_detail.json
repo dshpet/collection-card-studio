@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the beach ball is drawn side-on, but the sand runs all the way to the top edge as a wall of rounded dimples, with no horizon and no backdrop. The floor and the camera angle disagree. B: the tumbleweed sits on a sand strip with a quiet purple wave backdrop and a soft glow behind it, the same setup as the real sleeping-bag card (grass floor, sunburst behind). A's background measures 0.003, below the real range.",
+   "fix": "Put the beach ball on a low strip of smooth sand in the lower third of the card. Behind it, add a plain warm sky-blue backdrop with a soft pool of light behind the ball. Leave out the dimpled sand above the ball."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the wood under the book is a dense field of wavy orange-and-brown stripes. The stripes run across the whole card and fight the book's edges. B: the belt lies on four broad diagonal planks with faint grain, which are large, quiet shapes. Both are flat objects seen from above, and both carry an invented emblem (map stickers on A, a house on B's buckle).",
+   "fix": "Lay the book on a few wide, smooth wooden planks with soft, low-contrast grain. No wavy stripes."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the boots stand on a plain purple gradient with a bright glow behind them. There is no tone-on-tone pattern and no floor line (0.0059, below the real range). B: the sneakers stand on a pale floor with a crisp horizon against an orange wall, like the real juice card's floor-and-wall split. Neither backdrop has a motif, so the call is weak.",
+   "fix": "Stand the boots on a lighter purple floor with a clear horizon line about a third of the way up. Behind them, add a quiet purple pattern of large diamonds in two close tones."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the real iced-drink card: a quiet purple diamond pattern and a plain lighter floor. B: the neon ice-cream sign hangs on green vertical panels. The panels have sharp dark grooves and bright highlight seams every few centimetres, and a coloured glow bleeds onto the wall. The busy stripes compete with the sign (edge density 0.049, above the real range).",
+   "fix": "Hang the sign on a smooth wall in one green tone with only two or three faint, wide vertical stripes. No deep grooves, no glow spill."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the coin binoculars are close up and cut off by the bottom edge, in front of a railing and a soft, blurred city. That is a few metres of the place, built from large, quiet shapes. B: the campfire is shown whole and crowded with extras: a log cabin with a lit window, pine trees, stars, a kettle on a stone, a ring of rocks, loose pebbles and grass tufts. The kettle and the cabin are invented props.",
+   "fix": "Show only the campfire, close up: logs and flames inside a ring of a few large stones on bare earth, with the stones cut off by the bottom edge. Behind it, a plain dark-blue night with soft, blurred tree shapes. No cabin, no kettle, no pebbles."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both float on a quiet pattern of concentric rings in two close tones: the cowboy hat on green, the graduation cap on blue. Neither has invented props, and both measure inside the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "B is the real lighthouse card: cut off by the bottom edge, close and central, with only sea and clouds behind it. A: the windmill is shown whole, standing on a stone plinth on a dirt patch with scattered pebbles and grass tufts. This is the same whole-object-on-a-base staging as the generated lighthouse-on-an-island lessons.",
+   "fix": "Bring the camera close so the windmill's tower runs off the bottom edge and the wheel fills the upper card. Show only blue sky and soft clouds behind it. No plinth, pebbles or ground patch."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the cactus rises from sand with soft, blurred mesas behind it and an adobe wall cut by the right edge. B: the topiary is shown whole on a round stone planter, with a hedge wall, a curved paved path and many scattered grass blades. That is more small detail spread over the background (edge density 0.037 against A's 0.022). Both include environment props.",
+   "fix": "Show the topiary close up, cut off by the bottom edge, on plain lawn. Put a soft, blurred hedge band behind it under a clear sky. No planter ring, no path, no scattered grass blades."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the saddle hangs on its one partner object, a wooden rail, in front of quiet blue vertical stripes, like the real clock card. B: the gloves lie on a wooden shelf with plank seams, in front of blue wall panels with sharp light-and-dark groove lines. The background has more crisp edges (0.040 against 0.017).",
+   "fix": "Lay the gloves on a plain floor in a lighter blue, in front of soft wide blue stripes in two close tones. No wooden shelf, no grooved panels."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the real suitcase card: a sunburst backdrop and a plain green plank floor. B: the mower is on grass full of small tufts and white daisies, under a ring backdrop with a bright glow. The daisies and grass tufts are invented small detail.",
+   "fix": "Stand the mower on a smooth lawn with only a few soft grass shapes along the bottom edge. No flowers. Keep the ring backdrop faint."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both float on a sunburst with a soft glow behind them: the oil lamp on green-yellow rays, the lantern on cyan rays. Both have quiet backdrops and no invented props.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the wagon wheel floats on a quiet blue diamond pattern in two tones. B: the submarine floats on dark-green rays with a glow behind it. Both fit category 1 and neither adds invented props. A's diamonds put its edge count slightly above the range, but they are tone-on-tone.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards pull back to show the whole object on a base (an island, a plinth, a planter, a ring of rocks) where real cards crop close and let the card edge cut the object. They also fill category-4 scenes with invented extras: a cabin, a kettle, daisies, pebbles, grass tufts, paths. Their backdrops have sharp, high-contrast grooves or stripes instead of quiet tone-on-tone motifs, and they put a strong spotlight glow behind the object."
+}

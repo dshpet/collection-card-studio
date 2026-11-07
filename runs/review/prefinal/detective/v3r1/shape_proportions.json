@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: three motel boards sit stacked on two thin posts. The top board is a tilted slab with slightly soft corners, and the arrow and fork boards are chunky but still planar. B: a round wall sign with a thin bracket, a diagonal strut and two thin hangers, all kept thin with crisp ends. Both read as simplified true forms, and every metric is inside the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the fedora keeps a thin, flat brim curling up at one side and a pinched crown, which reads as a true proportion. B: the jacket's sleeves are swollen into tubes, the cuffs are thick rolled rings, and the body is inflated like a puffer, so the fabric has no flat runs. The collar is also oversized.",
+   "fix": "Draw the jacket from thin, flat canvas: straight sleeves with narrow cuffs, a flat front panel and a collar at normal size, not puffed."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the lion's plinth keeps stepped, flat slabs with tight edges, and the mane is lumpy but true to a statue. B: the caravan closely matches the real caravan card but is boxier and more upright, with the shell's top corners rounded into a uniform loaf. The underside and wheel arch are blunted, the same drift toward chunky volume seen in the lesson re-generations.",
+   "fix": "Keep the caravan's teardrop profile: a long, low shell that slopes toward the tow end, with a tight radius at the roof edge and a visible, thin tow bar and jack stand."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the radio is one swollen block. The arched top melts into the sides, the base lip is a soft bump, and the hull is almost fully convex (solidity 0.983, corner_rate 0.41, both outside the real range). B: the rocking chair keeps thin spindles, rails and runners with open gaps, and the knobs on top are small.",
+   "fix": "Draw the radio cabinet with flat side panels, a crisp edge where the arched top meets the sides, and a thin, distinct plinth step with tight corners."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the popcorn cart is toy-like, with thick posts, a bulging red body, an oversized front wheel against tiny casters and a fat side handle. B: the bellows camera is a crisp box with flat faces, thin metal struts and a thin flash stem.",
+   "fix": "Give the cart thin corner posts, a flat-sided body box and wheels at realistic relative sizes, with a slim handle bar."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the briefcase body and flap bulge like a cushion, the front face is convex, and the corners are soft rolls. The handle and feet are fine. B: the vending machine is a near-perfect slab (solidity 0.981, near the real maximum) with flat faces and a tight top edge, which is consistent with a boxy real object.",
+   "fix": "Draw the briefcase with flat leather panels, tight boxed corners and a thin flap edge, not padded."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the double-decker bus is tall and boxy, with a thin top railing and a thin mirror arm. B: the taxi is short and toy-like, with large wheels and an oversized roof light. Both are stylised the way the real airplane card is, and the metrics are in range.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the shield is one smooth convex blob (solidity 0.99 and straight_share 0.842, both above the real range; corner_rate 0, below it). The rim is a puffed tube, the gold face is domed and the top corners are round lumps. B: the ring box is soft too, but the lid and base read as two separate hinged parts with a gap between them.",
+   "fix": "Draw the shield as a flat plate with a thin metal rim, sharp points at the top corners and a crisp pointed tip at the bottom."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the silhouette catches only the wreath, a leafy ring around an open center. The door behind it keeps flat recessed panels. B: the door is a flat slab with a thin frame, a lintel and a step with tight corners. Both doors keep planar faces, so the extreme metrics come from segmentation, not form.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the fingerprint pad is a thick slab with large round corners. Its top face swells, its contour is mostly smooth (corner_rate 0.66, below the real range; straight_share 0.707, above it), and the ink tin and lid are fat. B: the map is a thin folded sheet with crease breaks, and the magnifier handle stays slim.",
+   "fix": "Draw the fingerprint card as a thin, flat card with tight corners, and the ink tin as a shallow, low disc."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the magnifier's ring is a thick donut, and the handle is a swollen red sausage with a blunt rounded end, toy-scaled against the lens. B: the backboard is a flat panel with a tight inner square and edges, the net is thin cord, and the pole is a simple tube.",
+   "fix": "Draw the magnifying glass with a slim metal rim and a slender handle that tapers to a narrow end."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the popsicle is a rounded bar on a thin stick, with a believable proportion. B: the silhouette loses the glass plate, leaving a cluster of fruit; the watermelon wedge is large next to the berries but plausible. Neither shows a clear shape flaw.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards swell planar objects into cushions: plates, boards, cabinets and cases come out as one convex blob with domed faces and rolled corners (solidity near 1, almost no corner events). Thin parts such as rims, handles and posts thicken into tubes, and wheels and knobs are scaled up like a toy's."
+}

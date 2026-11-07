@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both float on tone-on-tone concentric rings. A: the umbrella fills the upper card, its pole runs toward the lower left, and the rings stay quiet. B: the saucer is small and centred, and its rim lights throw a soft glow halo onto the green field. That background is the least busy of the pair (edge 0.003, below the real range).",
+   "fix": "Draw the saucer larger, filling the card, with no glow halo spilling onto the rings; keep the rings flat and even."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a small whole rocket sits mid-card in an empty sky. Two cloud banks hug the corners, and the background is under-detailed (0.006). B: the airplane is close and cropped by the right edge, with clouds layered behind and below it, like the real close sky cards.",
+   "fix": "Bring the rocket close so its body is large and the card edge cuts the tail flame; fill the sky behind it with soft, layered cloud banks."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the balloon bunch is large, the strings run off toward the clouds, and big soft clouds are cut by the edges. B: a small whole saucer sits centred with lots of empty sky, and only small cloud puffs sit in the corners (background detail 0.0062, low).",
+   "fix": "Draw the saucer larger, nearly filling the card, with big soft cloud banks behind it, cut by the card edges."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both lie flat on wood planks that fill the card. A: a folded map with a magnifier as its one partner object. B: a rigid plate with a raised frame, ornamental corner pieces and an added compass rose; it is a thick tile with no clear use, not a sheet lying on the table.",
+   "fix": "Draw the star chart as a thin paper sheet lying flat on the wood, filling most of the card, with no raised frame, corner ornaments or compass rose."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the ice tray sits on a cropped tabletop with a quiet sunburst behind it, which matches the real desk card. B: a full backyard corner with a fence and evenly sprinkled grass tufts, plus a rubber duck added in the water. Its background edge density (0.055) is above the real range.",
+   "fix": "Cut the scene closer to the pool: plain short grass with no scattered tufts, a soft out-of-focus fence, and nothing in the water."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "Both are category 2 objects on a plain gradient floor. A: a slim energy cell sits small in the card on an almost empty pink field (detail 0.0048, below the real range). B: the vending machine fills the card, its stocked shelves count as contents, and it casts a grounded shadow.",
+   "fix": "Draw the energy cell larger, filling the card's height, on a pink floor with a soft shadow and a faint, quiet backdrop gradient."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the whole sandcastle is set back on a beach with sea and sky behind it, and an added bucket and spade sit in front. B: the bumper car is close, its pole is cut by the top edge, and the rink floor is cut by the card edges.",
+   "fix": "Bring the castle close so the card edges cut it; remove the bucket and spade, and keep the sand plain."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a small whole drone floats centred on rays, with wide empty margins (detail 0.0067, low). B: the lamp is large, and the post is cut by the bottom edge against even rays.",
+   "fix": "Draw the drone large, filling most of the card, with its rotors near the card edges, on even sunburst rays."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the real lighthouse: close, cut by the bottom edge, with big soft clouds. B: a thin antenna mast stands small and whole on a wide, empty rooftop that runs to the horizon. The view is long, not a few close metres, and the mast casts a long shadow; an added dish and red beacon sit on it.",
+   "fix": "Bring the mast close so the card's bottom edge cuts it, with a little roof at its base and soft clouds behind; drop the side dish."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: a whole rover sits small on a wide moonscape scattered with rocks, craters and stars. An orange cooler box and a dish are added to it. B: the bike is close on its car rack, cut by the bottom and right edges, and the road and hills behind it are simple.",
+   "fix": "Bring the rover close so the card edges cut its wheels; show a few large, smooth grey ground shapes with no scattered pebbles or stars, and nothing loaded on the seats."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the book lies on warm wood planks that fill the card, with ribbon bookmarks on it. B: the tablet lies on a cold brushed-metal sheet with streaky highlights. Its plain cyan screen shows a generic ring, and the background is under-detailed (edge 0.005).",
+   "fix": "Lay the tablet on a warm wooden desk that fills the card, with a soft pool of light behind it."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the sneakers stand on a plain cream floor against an orange wall. B: the helmet stands on a purple gradient with an almost empty background (detail 0.0058, low). An invented house badge on its ear cup acts as decoration.",
+   "fix": "Remove the house badge from the helmet's side and draw it larger, standing on a plain purple floor with a soft shadow."
+  }
+ ],
+ "pattern": "Generated cards pull the camera back: a small whole object is centred with empty margins, or set in a wide, open place (rooftop, moonscape, beach), where real cards come close and let the card edge cut the object. They also add props or decoration the subject doesn't name (bucket and spade, cooler box, dish, badge, compass rose, glow halos), and the backgrounds measure under-detailed, below the real range."
+}

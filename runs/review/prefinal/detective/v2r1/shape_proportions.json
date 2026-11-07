@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the oil lamp has believable parts: a slim chimney, a thin ring handle, a small knob and a flared foot. Its high corner_rate comes from these real small parts. B: the flashlight is fattened. The head flares into a wide bell, and the grip is a stubby tube with rounded ribs and a blunt, rounded end cap, like a bath toy.",
+   "fix": "Slim flashlight with a long straight tube body and a modest head only slightly wider than the tube. Shallow straight knurling, a flat end cap with a crisp edge."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the police car is squashed into a toy. The cabin is tall, the hood is short, the fenders bulge and the wheels are oversized. Every edge of the body is rounded. B: the bicycle keeps a thin frame, thin spokes and a thin handlebar in true proportion, cropped against the car behind it.",
+   "fix": "Draw the sedan at real proportions: a long hood and trunk, a low cabin, wheels sized to the body, straight body panels and tight edge bevels."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the vending machine's top-left corner is rounded into a soft blob and the body edges are slightly puffed. The silhouette is an almost featureless box with solidity 0.98, at the top of the real range. B: the tape roll is a clean cylinder with a thin, flat trailing strip, which reads true.",
+   "fix": "Vending machine with dead-flat side panels, tight beveled corners and a visible base plinth and top trim."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the wallet is a flat, open leather fold with a thin outline and tight corners. B: the guidebook has two ribbon tabs and a bookmark added at its edges, and the cover bulges over the page block. This matches the lessons, where generated cards add extra attached parts.",
+   "fix": "Draw the closed book with flat boards, crisp corners and a single thin bookmark ribbon. No extra flag tabs."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the bloodhound has a believable droop. The ears are long and thin, the tail is thin, and the paws are separate shapes. B: the boxing gloves are swollen into overlapping pillows with no cuff edge, and the lacing and wrist strap are buried in the shape. corner_rate is 0.39, below the real range.",
+   "fix": "Boxing gloves with a defined thumb, a distinct straight-edged wrist cuff and a firm, less inflated fist."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the magnifier has a thin round rim and a long, slim handle with a small end cap, in true proportion. B: the binocular barrels are shortened, fat drums with oversized eyecups, and the bridge is stubby. It reads as a toy.",
+   "fix": "Draw the binoculars with longer, slimmer barrels, thin eyecups and a slender hinge bridge between them, at real proportions."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the ship's hull is stubby and bathtub-like. The masts and bowsprit stick out at odd angles, and the sails are fattened. corner_rate is 6.1 and thin_share is 0.027, both above the real range. B: the spyglass is a clean set of stepped tubes with straight runs.",
+   "fix": "Draw the sailing ship with a long, low hull, upright parallel masts, a straight bowsprit and thin, taut rigging lines."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the camera body is a flat-faced box with straight top and side runs and tight corners. B: the music player is a swollen, rounded pillow with soft, blobby corners, and the earbud cable is thick.",
+   "fix": "Flat, thin music player with straight sides, tight corner radius and a thin earbud cable."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the fedora has a believable crown pinch and a thin, wide brim. B: the sneakers are chunky. The soles are swollen, and the uppers are puffed and shortened toward toy proportions.",
+   "fix": "Sneakers with a slim sole, a longer and lower upper, and thin laces."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the wreath silhouette is a leafy ring. Its very high corner_rate is natural for leaves. B: the doorknob is a round knob on a straight, flat backplate with tight corners. Neither card shows a clear proportion fault.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the planter stand has straight, thin legs and rails, flat shelves and a sensible part count. B: the sunscreen bottle is swollen into a fat capsule, and the sunglasses have thick, sausage-like frames and temples.",
+   "fix": "Slim sunscreen bottle with flat front and back faces and a crisp cap. Sunglasses with thin frames and thin temples."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the zip bag is puffed into a pillow with a swollen zip strip. straight_share is 0.84, above the real range, and corner_rate is 0.37, below it. B: the racket keeps a thin frame, a thin throat and an open string grid, and the ball is in proportion.",
+   "fix": "A flat, thin plastic zip bag lying flat with crisp straight edges, a thin zip strip and slight wrinkles, not inflated."
+  }
+ ],
+ "pattern": "Generated cards swell objects into toys: fat, shortened bodies, pillowy faces, blobby corner radii and thickened thin parts. They also tend to add extra attached parts, like the island bases, webbing and bookmark tabs in the lessons. Real cards keep long, thin parts, flat panels and tight bevels."
+}

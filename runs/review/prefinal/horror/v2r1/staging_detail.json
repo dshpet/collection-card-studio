@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the oil lamp is small and centred, with a bright yellow-white glow behind it that whitens the middle of the green sunburst. That matches the halo on the generated glove in the lessons. B: the key runs corner to corner, close to the card edges, over an even sunburst with no bloom.",
+   "fix": "Draw the lamp larger, filling most of the card. Keep the green sunburst even from centre to edge, with no bright glow patch behind the lamp."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the grandfather clock takes up only about a third of the card width. It stands in a large empty green field, and the background reads below the real range. B: the vending machine fills the card on a plain purple floor of the same colour, a normal category 2 setup.",
+   "fix": "Draw the clock much larger and closer, filling the card from top to bottom, on a plain green floor in the backdrop colour."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the sneakers stand on a cream-yellow floor with a hard, straight horizon line against an orange wall, so the shelf edge and the two colours break category 2. A: the witch hat sits on a plain purple floor that blends into the purple backdrop with no edge.",
+   "fix": "Draw the sneakers on a plain orange floor that fades smoothly into the orange backdrop, with no horizon line and no separate floor colour."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the rocking chair stands on wood planks in front of a quiet blue striped backdrop. B: the cat sits on a stone ledge in front of a purple striped backdrop with a pink glow behind it. Both are valid category 3 cards, and the backgrounds are in the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the ring box sits on a cyan sunburst with a strong, saturated glow right behind the box, and a medal coin has been added inside it. B: the carnival mask floats on an even yellow sunburst that stays quiet and has a lower background load.",
+   "fix": "Keep the blue sunburst even, with only a gentle light centre and no bright cyan glow behind the box."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the broom lies on grass made of fine blade-by-blade texture over the whole card, with small clover sprigs scattered in. Background detail is 0.0455, far above the real range. A: the binoculars lie on wide plain wood planks with a few long grain lines.",
+   "fix": "Lay the broom on a smooth, simple green lawn with soft broad shading, no single blades, and no clovers or other small plants."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the candy jar stands on weathered planks with nail heads in front of blue concentric rings. B: the camper stands on a grass strip with sprinkled tufts in front of purple rings. Both mix a graphic backdrop with a material floor, like the real slide card, and neither background is clearly heavier.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the camera pulls back to show the whole topiary on a stone ring, with a curving path, a long hedge, sky and scattered grass tufts. That is the zoomed-out look of the generated lighthouse on its island. B: the snorkel is close, with dock planks and water cut by the card edges. The same snorkel card appears in p11.",
+   "fix": "Move in close on the topiary so its leaves fill the card and the card edges cut through it. Show only a plain lawn and a soft sky behind it, with no path, no hedge row and no stone ring."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the lamppost is shown whole, base included, standing on a wide plaza of many small cobblestones, with a low wall, bushes and hills behind. Background detail is 0.0315, at the top of the real range. A: the motel sign is close and cut by the bottom edge of the card, with large dark shapes behind it.",
+   "fix": "Draw the lamppost close, with the card edge cutting its base. Make the ground a few large, soft paving stones in shadow, with only a plain dusk sky behind and no wall, bushes or hills."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the fountain stands on tiles that the card edges cut, in front of yellow stripes. B: the jack-o-lantern sits on weathered planks in front of blue stripes. Both are category 3 with similar background loads, and the carved face belongs to the subject.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the whole lion statue and its stepped plinth are shown, with trees on both sides, a winding brick path and a lawn full of tufts behind. Edge density is 0.122, above the real maximum of 0.089. A: the snorkel is close on dock planks, with water cut by the card edges.",
+   "fix": "Move in close on the lion statue so it fills the card and the card edge cuts the plinth. Put only a soft green lawn and a blurred hedge behind it, with no path, no trees and no grass tufts."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the gate is framed by two brick pillars with ball tops, and behind it are a paved path, trees on both sides, a hedge and a lawn, so the scene has many shapes. Edge density is 0.068. A: the window is close and centred in a stone wall that the card edges cut, with only a sliver of night sky.",
+   "fix": "Show only the gate and the parts of the two pillars nearest it, close and cut by the card edges. Behind the bars, show a plain soft green lawn and sky, with no path, trees or hedge."
+  }
+ ],
+ "pattern": "Generated cards pull the camera back. They show the whole object with its base, plinth, island or stone ring, and fill the space around it with extra setting: paths, hedges, trees, hills, cobble plazas. Their ground is covered in fine repeated texture such as grass blades, tufts, clovers and small cobbles. Real cards crop close and let the card edge cut the object and its surroundings, and keep the background to a few large, quiet shapes. A secondary tell is a bright glow patch right behind the hero on sunburst backdrops."
+}

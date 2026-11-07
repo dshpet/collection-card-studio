@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: cooler seen three-quarter from slightly above. The lid hinges back, the sand plane recedes to a sea horizon, and the box sits on it. B: paddling pool seen from high above. The fence corner and grass plane share one tilt and the rings stack consistently. Both use one mild camera with a ground plane.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the envelope is shot almost straight down and shows almost no edge thickness. The wood planks run diagonally, so the card reads as a flat top-down plan. B: the book sits in a three-quarter top view. The cover, the page block and the spine edge all show, and the table recedes under it.",
+   "fix": "Raise the camera only to a three-quarter angle so the envelope's front edge and its thickness show, and make the table planks recede gently behind it."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: we see the top of the parasol dome and the underside ribs at once, but the shaft and hook handle angle off down-right instead of following the canopy's centre axis. The canopy and the stick don't share one view. B: the beach umbrella's canopy and pole tilt together along one axis, at a three-quarter view from slightly below.",
+   "fix": "Draw the parasol tilted as one rigid object, with the handle running straight down from the centre of the canopy at the same tilt. Show either the top or the underside of the canopy, not both."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: lace gloves lying diagonally on a surface, seen from above, with cuffs and fingers foreshortened and a cast shadow. B: the folding fan is drawn perfectly flat and face-on, with no edge thickness and no ground or shadow. It reads like an orthographic sticker rather than an object in space.",
+   "fix": "Turn the open fan slightly so we see the thickness of its edges and the guard sticks. Lay it on a surface with a soft shadow under it, seen at a mild three-quarter angle."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the wing chair faces us almost square-on, but the floor planks and the wall-floor seam run at a steep diagonal, as if the room were turned more than the chair. B: the rocking chair, the floorboards and the horizontal wall line share one three-quarter view, and the rockers sit on the floor.",
+   "fix": "Turn the armchair to match the floor: a three-quarter view with one side panel clearly visible, the floorboards running the same way under it, and a gentle downward camera."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the jacket is a consistent three-quarter view with the sleeves foreshortened toward us. B: the top hat shows the top of its crown from above, yet the front brim shows its underside as if seen from below. In the normal map the brim's bottom edge is magenta, while the crown's top is green. The crown and the brim don't share one camera height.",
+   "fix": "Draw the top hat from one slightly high camera. Show the top of the crown as a shallow oval, and the brim's upper surface curving up at the sides; no underside visible at the front."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the camera sits at table height, so the inkwell is almost side-on with a sliver of top. The table edge is a flat horizontal band, and the quill is almost a cut-out with little depth. B: the fountain is seen from a raised three-quarter angle. The paving rings recede, and the basins show elliptical tops consistent with the floor.",
+   "fix": "Raise the camera to a gentle three-quarter view from above so the inkwell's round mouth and the table surface recede. Angle the quill so it points slightly toward the viewer."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the ship's wheel and its stand are perfectly face-on and symmetric, with no thickness on the rim. Yet the floor planks below spread out from a high angle and the horizon bows, so the floor and the object use different views. B: the gramophone box, the turntable top and the horn share one three-quarter camera, and the box stands on a receding floor.",
+   "fix": "Turn the wheel a little so the rim's thickness and the spokes' depth show. Match the floor to the same gentle three-quarter camera with a straight horizon."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the spotlight is a three-quarter cylinder with consistent foreshortening, hanging from a truss that recedes in the same view. B: coral on rocks seen from eye level, with the ground plane as a flat band. Both views are plain and self-consistent.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the open ring box is in a clear three-quarter view from above. The lid's inside, the cushion top and the box side are all foreshortened together. B: the watch dial is drawn almost face-on while the case shows a thick side rim on one edge only, and the chain floats with no plane. The dial and the case don't agree on the turn.",
+   "fix": "Tilt the whole pocket watch slightly so the dial becomes a gentle oval that matches the visible thickness of the case. Let the chain drape onto a surface behind it."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a wide view of the house front: a flat wall, steps seen from above and paving receding, plus foreground flowers. That makes several depth layers, and the door is small inside a scene. B: a tight crop on the door, almost face-on, with the jamb depth visible and leaves framing the edges. In the lessons, the generated cards tend to widen into a scene with an added base and surroundings.",
+   "fix": "Crop in tightly on the door so it fills the card. Use a slight three-quarter angle so the door frame's depth shows, and drop the wide street, paving and flower beds."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the vending machine stands three-quarter on a floor, with one side visible and a consistent eye-level camera. B: the cup's rim shows a wide oval of tea from fairly high, while the saucer and the cup body read lower and flatter, so the camera height wavers between the cup and the saucer.",
+   "fix": "Use one camera height for the cup and the saucer. The rim oval and the saucer oval should open by the same amount, at a mild three-quarter view from above."
+  }
+ ],
+ "pattern": "Generated cards break one shared camera. Parts of the object, or the object and its floor, are seen from different heights or turns: a brim seen from below under a crown seen from above, a face-on chair on a steeply angled floor, a face-on wheel over a bowed floor. They also swing to extremes: either flat face-on and orthographic, or widened into a full scene with an added base and surroundings. Real cards hold one mild three-quarter view from slightly above, with a tight crop."
+}

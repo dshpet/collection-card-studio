@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (cooler) matches the real cooler in the anchor sheet. The lid is a flat slab, the box has straight walls, and the handle is an open loop. B (paddling pool) reads as one solid puck in the silhouette: three fat tube rings merge into a single convex blob with no ring separation and almost no corners. Its solidity of 0.994 is above the real range, and its corner rate of 0.39 is below it.",
+   "fix": "Draw the paddling pool's three rings as separate, slightly narrower tubes, each with a visible step where it meets the next. Keep a crisp rim lip at the top edge and a firm, clearly defined base."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (envelope) is a soft rounded slab with blobby corners. The edges are puffed up like a cushion, and the flap creases are raised ridges instead of flat paper folds. Its straight-share of 0.85 and solidity of 0.991 are above the real range, and its corner rate is 0. B (book) has a flat cover board, tight corners and thin attached ribbon tabs, which matches the real cards.",
+   "fix": "Draw the envelope as thin flat paper with sharp, tight corners and crisp, flat folded flaps. Do not puff up the edges."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (parasol) has a smooth dome with a frilled hem and a crook handle; its solidity of 0.54 is low only because of the handle. B (beach umbrella) has slightly puffed panel lobes along the rim, but the pole is thin and correctly proportioned. Neither card is clearly toy-swollen compared with the real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A's gloves have long, correctly proportioned fingers and cuffs. B's fan has flat pleated leaves and thin ribs fanning from a pivot. Both silhouettes keep their thin parts and have believable proportions.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (armchair) has rolled sausage arms and turned legs. B (rocking chair) has spindles, finials and rockers in plausible proportions. Both use the same chunky style, so neither stands out on shape.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (jacket) is inflated like a puffer: the sleeves are short and stubby with fat, rolled cuffs, the torso is swollen, and the pocket flaps are pillowed. These are toy proportions. B (top hat) has a straight-sided crown and a thin, curled brim, with true proportions.",
+   "fix": "Draw the jacket as flat, thin cloth with full-length, slimmer sleeves and narrow cuffs. Keep the pocket flaps flat with crisp edges."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A's inkwell is a squat round bottle holding a feather with a few broad barb notches. B's fountain has three tiers with rounded rims. Both are stylized but consistent, and A's low straight-share comes from the organic shape of the feather.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (ship's wheel) has a thick rim and bulb-tipped handles on a pedestal; its high corner rate comes from the eight spokes. B (gramophone) has a large horn, a plain box and a thin crank. Both proportions are believable for the style.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (stage spotlight) has a swollen barrel body. Its yoke arm and mount pipe are thick tubes, and the lower collar bulges out from the body, so the parts read as inflated rubber. B (coral) is organic and branching; its extreme straight-share and corner-rate numbers are natural for coral.",
+   "fix": "Draw the spotlight as a straight-walled metal cylinder. Make the U-shaped yoke a thin flat bracket, and give the edges crisp, tight bevels."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (ring box) has a lid and base swollen into soft pillows with blobby rounded corners and no flat faces. It also holds a medal-like coin with a ribbon instead of a ring, so the part relation is wrong. B (pocket watch) has a flat round case, a crown, a bow, and a chain of distinct thin links, which matches the real cards.",
+   "fix": "Draw the jewelry box with flat lid and base faces, tight beveled corners and straight edges. Seat a slim ring upright in the slot of the cushion."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A's door is an upright slab with an arched fanlight and stepped stone sill, in proportion. B's silhouette isolates only the wreath because the door fills and is cropped by the card, so the lens gives no usable shape comparison.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (vending machine) is one solid slab with a swollen, rounded top edge, softly bulging sides and blobby corners. Its solidity of 0.981 sits at the very top of the real range. B (teacup) has a clean bowl, a thin open handle and a flat saucer, all correctly proportioned.",
+   "fix": "Draw the vending machine as a flat-sided box with straight vertical edges and tight, small corner bevels. Keep the top flat, not domed."
+  }
+ ],
+ "pattern": "Generated cards still swell objects that should be hard or flat (envelope, ring box, vending machine, pool rings, puffer-like jacket) into pillows with blobby corners. Thin parts (yokes, cuffs, rings) get thickened into tubes, and the silhouette closes into a near-convex mass with solidity at or above the top of the real range. The real cards keep flat faces, tight bevels and open negative spaces."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: pumpkin bucket on a weathered plank deck. The boards show nail heads, grain, worn grey streaks and a hard cast shadow (bg edge 0.038), and the concentric-ring backdrop sits on top of a real material floor, so it reads as a mix of category 1 and category 3. B: mower stands on grass that runs off the card edge, with a soft concentric backdrop behind it and only a few grass tufts and small flowers. It is staged like the real camper card.",
+   "fix": "Stand the bucket on a plain, smooth floor in the backdrop's blue, or on simple smooth wood with no nails, cracks or wear marks. Keep the backdrop as soft, quiet rings."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the spider stands on an invented round stone plinth with cracks and moss patches. This is the same 'island base' the generator added under the lighthouse in the lessons. A: the palm grows straight out of sand that fills the bottom of the card, with a few pebbles, which is real category-4 staging.",
+   "fix": "Remove the stone slab. Let the spider float on the cyan ring backdrop with only a soft shadow under it, or stand it on a plain floor in the backdrop's color."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both cards are category 2 on a plain floor in the backdrop's color. A: the hourglass has a strong spotlight pool and a long hard shadow to the right, and its background detail (0.0067) is below the real range. B: the vending machine sits on an even purple floor with a soft contact shadow, matching the real drink card. The difference is weak.",
+   "fix": "Use an even green floor with a soft, short shadow under the base, and no spotlight hotspot."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the pumpkin is placed among many props: the step, a blue door with a brass handle, climbing ivy with dozens of leaves, a crescent moon, stars, bushes and a brick path. The night sky and moon are invented mood, and bg edge is 0.065. B: the topiary stands on a plain lawn with one hedge band and a curved path, which is a few large, quiet shapes.",
+   "fix": "Show just the stone doorstep and a plain wall, cut by the card edge. Leave out the ivy, moon, stars and bushes."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the hat lies on a strongly grained wooden table in front of green stripes with a bright glow behind it. The heavy wood grain matches the generated computer lessons. B: the fountain stands on a ring of paving tiles in front of yellow stripes, which is real category-4 staging. The tile edges are dense, but each tile is plain.",
+   "fix": "Make the tabletop smooth wood with faint, soft grain, and keep the stripe backdrop even without a bright center glow."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: a bag on a plain purple floor in front of stripes, holding the things a beach bag would hold (towel, sunscreen, bottle). B: a scarf floating on a blue spiral. Both match real category 1 and category 2 staging.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the twisted tree is shown whole, roots to branch tips, in a park with a domed gazebo added on the right and a purple dusk sky. The gazebo is an invented landmark, and the spooky mood is invented. A: the feeder hangs on a trunk that is cut by the card edges, with a soft park and city behind it. This is the close crop of the real cards.",
+   "fix": "Frame the tree close so the card edges cut the crown and the trunk. Use a plain daytime park backdrop with no gazebo."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: a medal box on blue rays. B: a mask on yellow rays. Both are category 1, the ray fields are equally quiet, and there are no invented props.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the book lies on dark, glossy planks with deep grooves and dense fine grain, and background detail is 0.0299, above the real range. A: the orange wood is drawn as flat, soft stripes, a quiet surface that fills the card.",
+   "fix": "Lay the book on light, smooth wood with broad soft stripes and no deep plank grooves."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 4,
+   "difference": "B is the real music player card from the anchor sheet: concentric rings and no props. A: binoculars on a balcony with railing and a soft city, cut by the card edge, which is real category-4 staging.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the broom is shown whole and small, with crisp clouds framing it at the top and bottom, and background detail (0.006) is below the real range. B: the balloons fill the card and the strings are cut by soft clouds. The difference is weak.",
+   "fix": "Draw the broom larger so it fills the card, with soft, low clouds only."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the door is shown whole inside a full stone-brick wall with dozens of block edges, a doorstep, plants at both sides, and an invented night sky with a moon and stars. Background edge density is 0.191, far above the real range. A: the wreath on the door is cut close, and the ivy and frame are cut by the card edges.",
+   "fix": "Move in close so the door fills the card and the frame is cut by the edges. Use plain, smooth stone with only a few large blocks, and no moon, stars or plants."
+  }
+ ],
+ "pattern": "Generated cards add staging the subject doesn't name: island or plinth bases, a moon and stars, and atmosphere props such as a gazebo or ivy. They show the whole object small, where the real category-4 cards crop it close at the card edge. Their surfaces (wood grain, nails, brick) are drawn with more fine detail than the soft, large-shape real backdrops."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the orange locker sits in the light-middle group against a mid-grey purple wall. Its darkest values are small pockets inside the cabinet, and its light floor matches the real wood-floor cards. B: the joystick's round base and stick form one large near-black mass at the bottom centre. The brushed-steel floor goes from mid to dark grey with hard streaks, and the pale patch on the green wall reads as a stray glow. The darkest accent covers a lot more area than any real card shows.",
+   "fix": "Make the joystick base a medium charcoal grey with soft light along its top rim, not a solid black disc. Make the table surface a lighter, even grey with no harsh streaks."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the grey tanks are mid values, close to the ring of light-green burst around them, so the hero separates from its background mainly by a dark outline. The corners go very dark (vignette 0.142), and the overall key of 0.565 is below the range of real cards. B: the red box is a dark frame around a cream cushion and a bright gold medal, so the light hero centre sits clearly against the mid-blue burst, as on the real cards. Its corners are also dark.",
+   "fix": "Make the background a lighter, sunnier green burst with only slightly darker corners. Make the metal tanks brighter silver with white highlights, so they stand clearly lighter than the background."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cream rocket body is almost the same light value as the clouds below it, and there are almost no dark accents, only a small nozzle. The card reads flat (rms 0.099), and its edges are brighter than its centre. B: the white plane also sits high-key, but its dark engine intakes and cockpit windows give firm dark accents near the centre, more like the real cards.",
+   "fix": "Give the rocket a clear shadow side and a dark nozzle and window rim. Make the sky behind it a deeper blue so the white body stands out from the clouds."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the red gloves form a large mid-dark mass against mid-blue planks and a lighter wood floor, with clear shadow pockets under the gloves. It reads like the real wood-floor cards. B: the silver pouch, the white floor and the pale cyan stripes all fall in the light group. The key is very high (0.806, above the real range) with low contrast (0.102), and the only dark accent is the small cap.",
+   "fix": "Make the background stripes a deeper teal and the floor a warm mid tone. Give the pouch a clearly darker shadow side and a cast shadow so it does not blend into the white floor."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the dark red booth stands against a light-green wall, with a soft light glow behind it and a light floor. This is the same hero-dark, background-light separation as the real camera card. B: the orange seahorse is a middle value on a blue field that falls from light at the top left to near-black at the bottom right. The vignette (0.106) is above the real range, and the hero separates mostly by hue.",
+   "fix": "Keep the water background an even mid blue with only gently darker corners. Add a soft lighter glow directly behind the seahorse."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the bright sky and road at the top left and left edges are lighter than the centre, where the bike frame and car interior form large near-black areas. The vignette is inverted and extreme (-0.318), and local contrast is very hard (rms 0.232). The real bike card in the anchor keeps a softer mid-value car. B: a white backboard on a mid-cyan field with a soft lighter halo, and the corners darken slightly. That matches the real cards.",
+   "fix": "Light the car body and the rear window in soft mid tones instead of deep black. Keep the scenery at the edges slightly darker than the bike, not brighter."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the white gloves have only grey stripes inside them, so the hero is all light values with gentle local contrast (rms 0.106, below the real range). The top corners darken into a separate dark band. B: the blue vending machine is a dark mass with a light window, on a mid-purple background, with clear value groups like the real cards.",
+   "fix": "Give the gloves a real shadow side and darker grey palms with deeper creases between the fingers. Keep the purple background evenly toned, without a dark band across the top corners."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "A is the real lighthouse card from the lessons: dark red bands, a light tower and a mid-value sky. B: the porthole glass is a solid black disc with pure-white star dots, which is clipped at both ends. It sits inside an almost all-white pink hull, so the darkest accent is a large hard-edged hole in the centre (lightness gap -0.241, outside the real range).",
+   "fix": "Make the porthole window a deep navy blue with a soft reflection, not pure black. Make the stars pale blue, and shade the pink wall with gentle mid-tone curves."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: blue shoes form a dark mass on a near-white floor below a mid-orange wall. The card is bright (0.762) but has clear dark and light groups. B: the white helmet with a large mid-grey visor sits on a mid-pink field with a broad lighter halo behind it. The hero and the halo merge into one light group with little dark structure, and the local contrast is soft.",
+   "fix": "Give the helmet a darker shadow side and a deeper orange visor with one sharp highlight. Shrink the glow behind it so the helmet's edge stays clear against the pink."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the gate has dark brick pillars and dark ironwork against a mid sky and a light path, a busy but grouped value pattern. B: the white dome and wall are nearly all one light value with very little shading. Only the slit and the door give dark accents, and the overall key is above the real range (0.731).",
+   "fix": "Shade the observatory dome and the stone wall with a clear darker side facing away from the light. Make the grass a slightly deeper green so the white building is not the only light mass."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a bright yellow submarine on a near-black green background, with the corners crushed to black. The hero is much lighter than its surroundings (gap 0.322, far outside the real range), and contrast is high (0.185), so it reads as a spotlit low-key card. B: the purple UFO is a mid-dark disc on a bright yellow burst with a white beam. It is high-key, with dark accents only in the hull.",
+   "fix": "Make the green background a lighter, sunnier sea-green burst with only softly darker corners. Lower the brightness of the yellow hull's shadow side so it falls into the middle values."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the capsule body is nearly pure white, while its base ring is a near-black brown band, so two hard extremes stack inside the hero. The bright clouds at the corners make the edges lighter than the centre (vignette -0.072). B: the balloons are mid-to-dark masses with soft highlights against a mid-blue sky with lighter clouds, and the corners are slightly darker, as on the real cards.",
+   "fix": "Make the capsule's heat shield a medium brown with a lit top edge, not near-black, and give the white body a soft grey shadow side. Keep the clouds small at the edges so the corners are not brighter than the centre."
+  }
+ ],
+ "pattern": "Generated cards push values to both extremes inside the hero: near-white bodies with little mid-tone roll-off next to near-black bases, rims or windows (capsule base, porthole, joystick base). Around the hero, the vignette is either inverted (bright clouds or sky at the edges, lighter than the centre) or crushed to near-black corners (submarine, jetpack). Real cards stay in a middle key, with gently darker corners, a soft light patch behind the hero, and dark accents kept small."
+}

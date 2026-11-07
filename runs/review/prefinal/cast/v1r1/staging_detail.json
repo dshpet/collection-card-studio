@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: market stall with necklaces on hooks, one clay pot and sky with one cloud on the left, which is a few large shapes that belong to a shopping scene. B: a porch crowded with many small items, including a crescent moon and stars, a lit window, a pillar, a potted plant, a railing and a brass doorknob, plus invented yellow 'knock' spark lines next to the paw on the door. B's background edge density (0.087) is above the real range.",
+   "fix": "Show the porch as a few large, quiet shapes: the door and a dark wall. Remove the moon, stars, potted plant and the spark lines by the knocking paw."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a living room packed with small props the subject doesn't name: a table lamp, a potted plant, a mustard throw blanket over the sofa, a patterned rug and a window with a twilight view, all around the two characters. B: a backyard with a fence, one tree, a string of lights and the projection screen. The screen is the subject's partner object and the background is calmer (detail 0.0185 vs 0.0299).",
+   "fix": "Show only the curtain and a plain, dim wall behind the characters. Remove the lamp, houseplant, throw blanket and window."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cockpit background has a ceiling light, a red seat, a bright window, and glowing yellow and cyan button clusters plus blue light strips across the console. That is many small high-contrast details, with edge density at 0.09, above the real range. B: night garden with a bush, a chair and the table. It is quieter, though there are small flowers dotted in the bushes.",
+   "fix": "Keep one big window and the console with the single red button. Remove the extra glowing button panels, light strips and the ceiling lamp."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: an open meadow with a flying-saucer prop in the sky, clouds, tree leaves cutting into the top-left corner, fern leaves in the foreground corners and grass tufts scattered all over. B: a backyard fence, a few bushes and the shuttlecock, which is a partner object in use. B's background is quieter (detail 0.0175, at the bottom of the real range).",
+   "fix": "Show a plain lawn and sky behind the characters. Remove the corner fern leaves and the scattered grass tufts."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a concert stage with flying confetti and streamers across the whole sky, string lights, six colored spotlight beams, a truss and a small crowd on the right. This is invented sparkle decoration and many small shapes, with edge density at 0.124, far above the real range. A: a saloon front with a barrel, lantern, skull and swinging doors. These are larger, quieter shapes, near the top of the real range.",
+   "fix": "Show the stage as a dark roof shape with two or three soft light beams. Remove the confetti, streamers, string lights and background crowd."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the caravan stands on a grass floor in front of a tone-on-tone purple backdrop of concentric rings, like the sunscreen card's floor-plus-pattern staging. B: the drum kit stands on a round stage with a soft spotlight cone behind it, like the real trophy card on its podium. Both backdrops are quiet and both fall within the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "A: a radiating sunburst behind a curved wooden deck floor, with the wheel on a pedestal base. The floating sunburst backdrop is mixed with a real floor material. B: a top-down plate on wood planks that fill the card, which is correct staging for a flat object, though there are a few water drops on the plate rim and table. The numbers are equal, so this is a weak call.",
+   "fix": "Draw the wheel standing on a plain wooden deck in front of a simple soft-colored wall with a gentle light pool behind it, with no sunburst rays."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: farmyard with a barn, fence, hay bales, tree and clouds. B: sunset garden with a picnic table, bushes and tree branches. Both have several medium-sized background props, and the measured values are almost identical. On my vector, neither one is clearly heavier.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards fill the background with many small props the subject doesn't name and with invented decoration such as confetti, string lights, spark or knock lines, corner foliage, scattered tufts and glowing button clusters. Real cards show the place as a few large, quiet shapes. In the object lessons the giveaways run the same way: a bright halo behind the object, a full island or base added under a subject the real card crops, and a tabletop surface with no edge in place of a real desk front."
+}

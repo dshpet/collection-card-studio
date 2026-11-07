@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the rocking chair has separate spindles, curved rockers and a crest rail with ball finials. The parts are a bit chunky, but the open gaps read clearly (solidity 0.596, inside the real range). B: the bloodhound is a compact, blobby mass with big ears and a curled tail. It is a stylized character in the way the real teddy bear is. Neither card shows a clear proportion fault.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the mortarboard is a flat square plate with tight corners, a rounded skullcap below it and a thin cord and tassel. B: the fedora has a smooth brim and a pinched crown, which is a believable shape. Both keep true proportions, and B's low corner rate comes from a hat having no corners.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the gas pump's top sign is a swollen, pillow-like slab with soft, blobby ends. The pump body is a rounded box with no planar faces, and the hose is thick. B: the treasure chest keeps flat board faces, a crisp box corner at the lower right and a correctly curved lid. Its parts relate the way a real chest's do.",
+   "fix": "Draw the pump's top sign as a thin flat panel with straight edges and small bevelled corners. Give the pump body flat front and side faces with tight corners, and make the hose a slim rubber tube."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the typewriter body is a simple wedge and the keys are a flat grid of pin stalks. There are no type bars, no ribbon spools, and only a stub of a carriage lever, so the expected parts are missing. B: the popcorn cart has thin posts, a scalloped awning, spoked wheels and a handle, all in believable relation, with straight runs on the cart box.",
+   "fix": "Draw the typewriter with a visible fan of type bars behind the keys, ribbon spools on both sides of the carriage, and round keycaps on stems in stepped rows."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the door is flat, with straight stiles, a crisp lintel cap and tight corners. B: the door is cropped, with flat panels. The silhouette picked up only the wreath, whose leafy outline is jagged but plausible. Neither card shows swelling or toy proportions.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the street lamp has a slender post, a thin scroll bracket and a rounded glass head, cropped at the bottom like the real lighthouse. B: the bellows camera is a box with flat faces and crisp corners, a pleated bellows and a flash dish. Both keep thin parts thin and flat parts flat.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the magnifier's gold rim is a fat, swollen ring, and the lens is oversized next to a short, stubby handle with sausage-like segments, so it reads as a toy. A: the oil lamp has a slim glass chimney, a thin loop handle, a small knob and a stepped foot, all in real proportion.",
+   "fix": "Draw the magnifying glass with a thin metal rim around the lens and a long, slender handle about as long as the lens is wide. The collar where the handle meets the rim should be small."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the sneakers' soles are swollen into puffy, bulbous cushions, and the uppers are inflated and rounded, so the shoes read as toys. B: the safe keeps flat planar faces, tight corner bevels, a thin handle and small separate feet.",
+   "fix": "Draw the sneakers with a thinner, flatter sole that has a crisp edge where it meets the upper, a low toe, and a slim, tapered upper."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the two boxing gloves merge into one inflated blob. The back glove's thumb and cuff are lost and the corner rate is below the real range (0.392). B: the rotary phone has a flat base plate, a thin handset on cradle prongs and a coiled cord, all clearly separated.",
+   "fix": "Draw two boxing gloves with a clearly separate thumb on each, a distinct cuff with a strap, and a visible gap between the gloves."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the shield outline is lopsided and blobby. It has no real point, the corners are rounded away (corner rate 0.0, solidity 0.995, both outside the real range), and the face bulges like a pillow. B: the vending machine is a box with flat faces, small corner radii, a thin handle and small feet.",
+   "fix": "Draw a symmetric heater shield with a straight top edge, two crisp top corners, sides that taper evenly to a sharp bottom point, a flat face and a thin rim."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the ticket is a thick slab with large soft corner radii, and its edge reads as a swollen bevel, not a paper card (solidity 0.985 and straight share 0.7 are both above the real range). A: the sport bottle has a believable waisted body, a cap and a thin loop handle.",
+   "fix": "Draw the ticket as a thin paper card with tight small corner radii, straight edges and a barely visible edge thickness."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the book has thick boards, a page block and ribbon bookmarks, with plausible proportions. B: the folder has flat covers, a tab and a thin paperclip. Its rim is a little thick, but within what real cards show. Neither card gives a clear shape reason to choose.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards give themselves away by inflating forms. Flat things such as a sign plate, a shield face or a ticket swell into pillows with blob corners. Soft things such as sneaker soles, glove thumbs and a magnifier rim fatten into toys and lose their separate parts. Thin parts such as handles and rims thicken into sausages. In the lessons the generator also adds a full base or setting (rocks, a wider body) and makes the object squatter. Real cards keep flat faces, tight bevels, slender parts and true part counts."
+}

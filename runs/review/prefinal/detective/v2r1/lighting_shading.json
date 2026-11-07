@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (oil lamp): the brass body is lit from the front. Light rolls off softly to both edges, and the core shadow is gentle and centred under the bowl, within the real range. B (flashlight): the whole body is lit from the head. The head and left barrel are blown bright, the ribbed tail falls into a dark right side, and the chrome bezel has a crisp hot band. The lens shows a one-sided ramp from left to right (bias 1.02 against a real max of 0.73, range 0.85 against 0.83).",
+   "fix": "Light the flashlight from the upper left with a soft broad key. Keep the red body evenly modeled along its length, with a gentle darker underside, not a bright head fading into a dark tail. Make the chrome rim a soft sheen, not a hard white band."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (police car): a hard key from the upper left. The car's right side and underside go very dark, and it throws a dense, sharp-edged cast shadow across the road. Bias is 1.12 and form contrast 0.74, both well above the real ranges. B (bike on car): soft, warm, backlit sunset light with gentle form turn and muddy, low-contrast shadows, inside the real ranges.",
+   "fix": "Use soft, even daylight on the car. Make the shadow side only slightly darker than the lit side. Give it a soft, light contact shadow directly under the wheels instead of a long, dark, sharp cast shadow across the road."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (vending machine): a soft key from the upper left. The left side face is gently shaded, the front is lit and the floor shadow is faint, matching real cards. B (tape roll): a photographic spotlight with a dark vignette around the card. The roll has a glossy hot sheen on the upper left, and a long, darkish cast shadow runs off to the left. All of B's numbers are inside the real ranges, so this call rests on the studio look only.",
+   "fix": "Light the tape roll with flat, even, soft light. Drop the spotlight vignette from the background. Give it a small, soft contact shadow under the roll instead of a long shadow streak."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (wallet): a soft top-left key. The stitched leather panels have gentle raised modeling, there is mild contact darkening on the wood, and the shading is in range. B (travel book): the lens shows a nearly frontal light. The cover is a pale, flat plane with almost no turn across it, and only the right page block and a soft shadow on the left read as form. Bias is 0.26, at the low edge of the real range.",
+   "fix": "Light the book from the upper left. Let the cover fade slightly darker toward the lower right. Round the spine with a clear light side and shadow side. Add soft contact darkening where the book meets the table."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "A (bloodhound): diffuse, almost directionless light, with a faint rim on the back and dark vignetted edges. The ears and body turn softly, and bias is low at 0.23. B (boxing gloves): a clear key from the upper left. The right glove's knuckle is lit and its far side is in shadow, with soft contact on the wood. The evidence is weak either way.",
+   "fix": "Give the dog a clear key light from the upper left. Light its head and back, put a darker shadow side under the ears and belly, and add a soft contact shadow on the grass."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (magnifier on map): soft overhead light. The brass ring turns gently, and the lens has broad soft reflections and a light, soft shadow on the paper. B (binoculars): hard raking light from the upper left. The barrels turn quickly into dark shadow sides, and a long, dark, sharp cast shadow runs to the lower right on the planks. Range is 0.925, above the real max of 0.90.",
+   "fix": "Soften the light on the binoculars. Make the barrels turn gradually from light to medium, not to near black. Make the cast shadow short, soft and pale, sitting right under the barrels."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (ship): soft frontal light. The sails glow evenly, the hull gets gentle shading below the rail, and the numbers are in range. B (spyglass): a strong light from the left end. The bright brass front rim and lens give way to a dark brown tube and eyepiece, with a small sharp white hot spot on the glass. Bias is 0.93, above the real max of 0.91.",
+   "fix": "Light the spyglass evenly along its length with a soft upper-left key. Give the brass rings broad soft sheens instead of a tiny white spot. Keep the far end only a little darker than the near end."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (flash camera): a hard top-left key. The chrome flash dish and top plate have sharp bright highlights, and the black body falls to a deep shadow on its right. All three numbers are above the real max (range 0.88, contrast 0.72, bias 0.80). B (music player): soft, even, wraparound light with gentle rounded-edge shading. Bias is 0.15, inside the real range.",
+   "fix": "Use soft, even studio light on the camera. Give the chrome flash and lens ring broad soft sheens, not hard white streaks. Keep the right side of the body only moderately darker than the front."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (fedora): a clear light from the upper left. The crown is lit with its dent shaded on the right, the brim carries a soft cast shadow, and the numbers are in range. B (sneakers): frontal, nearly uniform light on both shoes, with no side of the forms consistently darker. Bias is 0.02, far below the real min of 0.20, although a small cast shadow appears at the left.",
+   "fix": "Light the sneakers from the upper left. Make the toes and left sides bright and the right sides and heels clearly darker, with a soft contact shadow under each sole."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "A (door with wreath): an upper-left key. The ivy throws cast shadows onto the door, and the panels have bevel shading, consistent with real cards. B (doorknob): a warm hot spot sits on the backplate, while the lens shows the knob itself as a dark ball and a soft round shadow on the door. The light reads as inconsistent between the knob and the plate. All numbers are in range, so the call is weak.",
+   "fix": "Light the brass knob from the same upper-left key as the plate. Put a soft bright sheen on the knob's upper left and a gentle shadow on its lower right, with a soft contact shadow on the door."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (planter bench): flat, front-on light. The red boards barely turn, the leaves and fence are evenly lit, and contact shadows are weak. Bias is 0.26, at the low end of the real range. B (sunscreen and sunglasses): a clear key from the upper left. The bottle rounds into a darker right side, and the glasses and bottle cast soft shadows.",
+   "fix": "Light the planter from the upper left. Make the left faces of the legs and box lighter and the right faces and the underside of the shelf clearly darker. Add soft contact shadows under the legs and the watering can."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (ring in zip bag): the lens is almost flat. The bag is an even pale sheet with no light side or shadow side, the ring has only faint shading, and the cast shadow is minimal. All three numbers are below the real minimums (range 0.65, contrast 0.34, bias 0.07). B (racket and ball): a clear upper-left key, with the ball shaded on its lower right and soft cast shadows from the frame and ball on the court.",
+   "fix": "Add a clear upper-left key light. Make the bag's puffed areas brighter on the left and darker on the right. Give the ring a lit top rim and a shaded inner side, and add a soft contact shadow under the bag edges and the ring."
+  }
+ ],
+ "pattern": "Generated cards miss the real cards' moderate, consistent upper-left key in one of two ways. Some are flat, front-lit and almost directionless, with planes that barely turn and weak contact shadows (light bias below about 0.2). Others have staged, theatrical light: hard raking keys, very dark shadow sides, long sharp cast shadows and small white hot spots (bias or range above the real max). Real cards sit in between, with a soft key, a gently darker shadow side and short soft contact shadows."
+}

@@ -1,0 +1,156 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "loose": [
+   {
+    "parts": 1,
+    "kinds": [
+     "box"
+    ],
+    "at": [
+     -0.39,
+     -0.33,
+     0.32
+    ],
+    "size": [
+     0.14,
+     0.07,
+     0.02
+    ]
+   },
+   {
+    "parts": 1,
+    "kinds": [
+     "box"
+    ],
+    "at": [
+     -0.39,
+     -0.51,
+     0.16
+    ],
+    "size": [
+     0.14,
+     0.02,
+     0.08
+    ]
+   },
+   {
+    "parts": 1,
+    "kinds": [
+     "box"
+    ],
+    "at": [
+     -0.39,
+     0.33,
+     0.32
+    ],
+    "size": [
+     0.14,
+     0.07,
+     0.02
+    ]
+   },
+   {
+    "parts": 1,
+    "kinds": [
+     "box"
+    ],
+    "at": [
+     -0.39,
+     0.15,
+     0.16
+    ],
+    "size": [
+     0.14,
+     0.02,
+     0.08
+    ]
+   },
+   {
+    "parts": 1,
+    "kinds": [
+     "box"
+    ],
+    "at": [
+     0.39,
+     -0.33,
+     0.32
+    ],
+    "size": [
+     0.14,
+     0.07,
+     0.02
+    ]
+   },
+   {
+    "parts": 1,
+    "kinds": [
+     "box"
+    ],
+    "at": [
+     0.39,
+     -0.51,
+     0.16
+    ],
+    "size": [
+     0.14,
+     0.02,
+     0.08
+    ]
+   },
+   {
+    "parts": 1,
+    "kinds": [
+     "box"
+    ],
+    "at": [
+     0.39,
+     0.33,
+     0.32
+    ],
+    "size": [
+     0.14,
+     0.07,
+     0.02
+    ]
+   },
+   {
+    "parts": 1,
+    "kinds": [
+     "box"
+    ],
+    "at": [
+     0.39,
+     0.15,
+     0.16
+    ],
+    "size": [
+     0.14,
+     0.02,
+     0.08
+    ]
+   }
+  ],
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The fender plates point the wrong way. Each plate's position uses y - r·sin(a) but its tilt is -a, so the plates sit at odd angles instead of forming an arc over the wheel. That is why the eight loose boxes float in the air.",
+   "The plates are too short for their spacing, so even if the angles were right the arc would have gaps.",
+   "Nothing connects the fenders to the chassis; they need a bracket."
+  ]
+ },
+ {
+  "round": 2,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The moon dust (#cfd0d4) renders almost pure white in the foreground, so the white rover body and fenders blend into the ground and the chassis outline is lost. The dust needs to be a slightly deeper pale grey so the white body stands out. The crater rim is darkened to match.",
+   "Everything else checks out: there are four wheels on stub axles, each fender is held by a bracket, the two seats sit on pedestals, the mast is clamped to the front panel with the dish on a joint at its top, the orange tool box rests on the rear deck, and the framing holds the rover's main body."
+  ]
+ }
+]

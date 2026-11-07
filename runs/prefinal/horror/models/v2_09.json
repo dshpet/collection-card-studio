@@ -1,0 +1,30 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "loose": [],
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The 28 thin wall slices that fill the corners above the arch show as a band of vertical stripes on both sides of the arch. Replace them with one stone piece: a ring around the arch whose outer edge is warped into a square, with its lower half flattened away.",
+   "The wall boxes have the default bevel, so their joins show as grooves around the opening. Give the wall boxes bevel=0 so the wall reads as one surface.",
+   "The upright bar and the crossbars are the same depth and sit at the same y, so their faces overlap where they cross and leave black flicker marks. Make the crossbars and arch spokes a little shallower.",
+   "The wall top and its capping fill the top of the card, so none of the night sky backdrop shows. Lower the wall top so a strip of sky shows above the capping.",
+   "The candle is small and sits low in the corner pane. Make it a little larger so the yellow glow reads behind the glass."
+  ]
+ },
+ {
+  "round": 2,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "Hardly any night sky shows: the wall runs past every edge of the card and caps out only just above the arch, so the royal blue sky with stars and moon is a sliver in one corner. End the wall at a house corner just right of the window so the sky shows beside and above it.",
+   "The stone piece above the arch reaches past the opening (to |x| = 0.35) and overlaps the side wall blocks in the same face plane, leaving thin seam lines across the wall at arch height and up at x = 0.5. Square it to exactly the opening width.",
+   "The dark room box behind the window is wider than the new wall end and would show past the corner; narrow it."
+  ]
+ }
+]

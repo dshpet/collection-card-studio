@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a beach ball on orange sand. The ball's white panels turn cream, its cast shadow is a loud red-orange slab in the lens (shadow chroma 1.32, above the real range), and the whole card leans warm (0.755). B: a brown tumbleweed against a cool purple backdrop, so a warm hero sits on a cool background, as on the real cards. Its shadow drops to a muted maroon.",
+   "fix": "Keep the white panels pure cool white. Make the shadow under the ball a muted cool brown-violet, not bright orange-red. Make the sand paler and less orange."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a brown leather belt on orange planks, with every mass in brown or orange (warm share 1.0, 2 hue families). The silver buckle picks up a tan cast in the lens, and the hero repeats the backdrop's hue. A: a teal book on warm wood, so the hero and backdrop are opposite in temperature, with small red, yellow and blue accents.",
+   "fix": "Put the belt on a cool background such as blue or teal, or make the wood grey-blue. Keep the metal buckle a cool neutral silver with no orange cast."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: blue sneakers with neon lime, teal, pink and orange trims all at full strength (5.5 hue families, above the real range), on a flat orange and cream backdrop. The sole's shadows turn a muddy olive. A: red boots on purple, with a limited red, brown and gold palette and plum shadows.",
+   "fix": "Limit the sneaker to blue with one accent color. Remove the pink, lime and orange trims. Make the sole a clean cool white."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the iced drink on purple diamonds that also appears among the real cards. B: a neon cyan ice cream on a teal-green board, so a cool hero sits on a cool backdrop. Its pink and orange neon outlines glow at full chroma (background chroma 0.24, above the range).",
+   "fix": "Use a warm background such as orange or yellow behind the cyan ice cream. Drop the glowing neon tubes and give the cone a plain biscuit tan."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: a campfire scene where orange glow covers the stones, the kettle and the ground. In the lens the grey rocks turn ochre and the shadows fall to muddy brown (shadow chroma 0.565, below the range), with orange-red everywhere. A: a steel-blue viewer against a pale blue city. It is cool on cool, but its local colors are believable and the neutrals stay clean.",
+   "fix": "Keep the rocks and the kettle a cool grey. Limit the orange firelight to the flames and log ends. Let the shadows go deep blue-green, not brown."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a cream cowboy hat on an acid-green ring backdrop. The green is very loud (0.227) and the palette is thin (1.7 hue families). The hat's shadow and band merge into one brown mass. B: a navy cap on cyan rings with a gold tassel accent and purple-navy shadows, all within the real ranges.",
+   "fix": "Tone the green background down to a softer, less acid green. Give the shadows under the hat brim a cool olive-grey, not a strong brown."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "B is the real lighthouse from the lessons. A: a windmill whose white clouds turn beige in the lens and whose ground is a saturated orange field. This is the same warm cast on neutrals as in the generated lighthouse lessons.",
+   "fix": "Make the clouds pure cool white with pale blue-grey shading. Keep the steel wheel a neutral grey. Make the ground a paler, less orange dry grass."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a cactus in a desert where the sky, sand, building and mesas are all washed in peach-orange haze (warm share 0.745, above the range). Even the green cactus reads olive-brown in the lens. B: a green topiary on grass under a clear blue sky. The green hero repeats the backdrop's green, but the neutrals stay clean.",
+   "fix": "Use a clear blue sky instead of peach haze. Keep the cactus a fresh green. Limit the warm sand to the ground only."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: pure fire-engine-red boxing gloves (subject chroma 0.18, above the range) with orange highlight blobs, on orange wood plus a blue wall. The hero is pushed to pure hue. A: a brown leather saddle with natural tan-to-brown shading against cyan stripes.",
+   "fix": "Make the gloves a deeper, slightly muted red leather, with soft pink-white highlights instead of orange ones and dark crimson shadows."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the sticker suitcase that also appears among the real cards. B: a red mower on a loud cyan backdrop plus loud lime grass. The wheels and handle shadows lose their color and turn olive-grey in the lens (shadow chroma 0.41, below the range).",
+   "fix": "Make the shadows under the mower a rich dark green-blue instead of grey. Calm the cyan background and choose a single backdrop color."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a nearly black lantern (subject chroma 0.042, below the range) on loud cyan rays. The hero is a near-neutral black mass whose shadows have almost no color (0.27). A: a brass oil lamp with warm gold local color on a yellow-green ray backdrop.",
+   "fix": "Paint the lantern in a colored metal such as deep red or green enamel with brass trim. Give its shadows a rich color instead of flat black."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: a saturated yellow submarine with glowing cyan portholes on a dark green vignette backdrop (background chroma 0.095, below the range), so the backdrop is dull and dark next to a loud hero. A: an orange wooden wheel on a light blue diamond backdrop, so the hero and backdrop are opposite in temperature, with chroma levels balanced.",
+   "fix": "Use a brighter, mid-light background, for example light blue, instead of the dark green vignette. Make the portholes a plain glassy blue rather than glowing cyan."
+  }
+ ],
+ "pattern": "Three color habits still mark the generated cards. They pull neutrals warm: white clouds, metal and stone turn cream or ochre. They let a glow or firelight tint the whole card orange. They push accent colors to full chroma, with neon trims and pure red. Their shadows go muddy brown or olive, or turn colorless black or grey, where the real cards use rich cool shadows. Their backdrops often repeat the hero's temperature or stack several loud hues, while the real cards set a warm hero on one cool backdrop."
+}

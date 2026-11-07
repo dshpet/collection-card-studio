@@ -1,0 +1,17 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "loose": [],
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The first chain link lies in the same plane as the ring loop (both flat in x-z), so the two just overlap side by side and the link does not thread through the loop. The chain is not really attached.",
+   "The chain rises above the loop before it falls (control point p1 is 0.12 above the ring), which ignores the chain's weight. It should leave the loop sideways and sag down to the T-bar."
+  ]
+ }
+]

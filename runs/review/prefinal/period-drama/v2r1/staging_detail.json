@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the fan floats on a yellow wave pattern, tone-on-tone, like the real wavy sunscreen card. B: the opera glasses float on a pink diamond pattern with a brighter glow in the centre behind the object. Its edge density (0.003) is below the real range, so the pattern is washed out under the glow.",
+   "fix": "Opera glasses floating on an even pink diamond pattern, tone-on-tone, with clear diamond lines across the whole card and no bright glow behind the object."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the basket stands on grass with a few tufts, in front of blue vertical stripes. This matches the real lawnmower card. B: the gloves lie on a wooden plank floor in front of a blue panelled wall, and the card edge cuts them on the right. Both read as real staging.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both float on the same blue concentric-ring field with similar contrast. Neither card adds props or decoration. The background numbers are almost the same.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the swing seat carries a lilac knitted throw and a yellow cushion that the subject does not name. Around it are a tree, clouds, bushes and scattered flowers, and the whole swing is shown from a distance. B: the bench stands on a gravel path with a tree and hedges. It is also busy, but it has no invented props on the object.",
+   "fix": "A garden swing seen up close in its spot on the lawn, with the card edge cutting the canopy. Empty plain cushions, no blanket or pillows. Behind it only a soft green hedge and sky as large quiet shapes."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the coaster car sits on its track, close up, with the card edge cutting the rails. This is real category-4 staging with large quiet hills and clouds. B: the keyboard floats on a blue sunburst covered in music notes and stars. These are theme decorations that real backdrops never use, since real patterns are plain stripes, rings or waves.",
+   "fix": "Keyboard on its stand floating on a plain blue sunburst. No music notes, no stars."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the jacket sits on a green sunburst that darkens evenly toward the corners. B: the top hat sits on a yellow sunburst with a near-white glow right behind the hat. The lessons show generated cards adding a hot glow behind the hero on sunbursts.",
+   "fix": "Top hat on an even yellow-orange sunburst with no bright white glow behind the hat."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the teacup stands on a linen cloth with a fine weave and many wrinkles that fill the lower half. Its background detail (0.0265) is above the real range, while its edge density (0.005) is below it. B: the fountain stands on round brick paving in front of yellow stripes, with fewer, larger shapes.",
+   "fix": "Teacup on a smooth white tablecloth with only a few soft folds and no visible weave, against plain green stripes with a soft pool of light behind the cup."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the whole door is shown from a distance, with a stone wall, ivy in both top corners, two flowering bushes, steps and paving. That is too many objects, and nothing is cut by the card edge. B: the camera is close on the wreath, the card edge cuts the door, and ivy is the only side element. That matches the lessons, where real category-4 cards crop close.",
+   "fix": "Close-up of the door filling the card, with the card edge cutting the frame and the step. Only a strip of plain stone wall at the sides. No bushes, no ivy, no paving."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the golf club and ball are close on the grass, the card edge cuts the shaft, and there are large quiet hills and sky. This is real category-4 staging. B: the spyglass floats on cyan diagonal stripes with a pale glow, and its edge density (0.004) is below the real range.",
+   "fix": "Spyglass floating on even cyan diagonal stripes with clear stripe edges and no bright glow behind it."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both are category 2: a plain purple floor and wall with a soft shadow. The teapot's backdrop is a little darker at the top, but neither card has invented props or a pattern.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the neckerchief floats on a blue spiral. B: the hat floats on green waves. Both backdrops are tone-on-tone with no extra props, so this vector gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the pram stands on cobblestones that fill the lower two-thirds with hundreds of small stones. Its edge density (0.089) is far above the real range, and the floor competes with the thin spokes. A: the taxi sits on a smooth dark road with three dash lines in front of a sunburst, a few large quiet shapes.",
+   "fix": "Pram standing on a smooth stone floor in a single tone, with a few faint large slabs, in front of the orange sunburst."
+  }
+ ],
+ "pattern": "Generated cards pull the camera back to show the whole object, then fill the scene with extras: throws and cushions, bushes, ivy, many small cobblestones, linen weave. Real category-4 cards crop close and keep a few large quiet shapes. On floating cards, generated backdrops add a bright glow behind the hero that washes out the pattern, or theme decorations such as music notes and stars instead of plain stripes, rings or waves."
+}

@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the cow's and ghost's heads, the witch hat and the lantern have a continuous dark contour (outline_darkness 0.121, above the real range). The sky is scattered with crisp star dots, and the subject edge density is 0.151, near the top of the real range. A: the sheep's fleece edge is soft and lumpy, and the outer silhouette fades into the shop background with no inked rim. Only the sunglasses and beads have hard edges.",
+   "fix": "Remove the dark contour line around the cow and the ghost. Let the white sheet and the fur meet the night background through a change in colour and light only. Soften the far edges and keep crisp edges only on the faces. Fewer tiny stars in the sky."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the mummy chicken's bandages are cut into many hard stripes with dark grooves, and the rug has dense stippled texture. The subject edge density is 0.165, above the real range. The curtain folds make a lot of parallel lines. B: the man's back and the purple blanket have broad, soft transitions. Edges are sparse inside the figures, at 0.074, with lost edges where the blanket meets the rug. The only busy area is the dotted night sky.",
+   "fix": "Draw the bandages as a few broad wraps with soft shading between them instead of many sharply cut strips. Show the rug as a smooth soft surface, not fine stippled texture."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the spacesuits are covered in ribbed seams, panel gaps and a hard rim on every segment. Subject and background edge densities are 0.207 and 0.09, both above the real range. The console buttons and vents are traced with doubled hard lines. B: the cow is mostly smooth with few internal lines and a soft body silhouette against the bushes. Only the stacked blocks give crisp rectangular edges, and the density of 0.12 is mid-range.",
+   "fix": "Make the spacesuits smooth and puffy with only two or three soft seams. Remove the many ribbed segments and hard panel lines. Keep the console simple, with soft rounded buttons and no doubled rims."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the man and the pig have a moderately firm silhouette and textured grass and trees, with background density 0.055. B: the man's back is softer and partly lost against the fence, and the racket strings give a crisp local mesh, with background density 0.034. All measurements are within the real ranges and outline darkness is nearly equal (-0.054 and -0.056). Edges give no reason to choose either card.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the plaid shirt is a dense grid of hard lines, and the saloon planks, doors, barrel and lantern each add many crisp edges. Background density is 0.124, far above the real maximum of 0.082. B: the crowd and stage at the back fall to soft, lost edges. The cow's head carries a dark rim (outline 0.115, slightly high), but the bodies inside are smooth with few lines.",
+   "fix": "Keep the background saloon simple and softly blurred, with fewer planks and less trim. Paint the shirt check as soft colour blocks rather than a sharp line grid."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: every drum has rows of small hard-edged lugs, and the cymbal stands and hardware are traced with thin dark lines. Subject density is 0.226, well above the real maximum of 0.179, and outline darkness of 0.098 is at the top of the range. A: the caravan has a firm but clean silhouette with few, broad internal seams such as the door, windows and stripe. Its density is within range.",
+   "fix": "Make the drum kit chunkier, with fewer and larger lugs and thicker stands. Remove the thin dark lines along the hardware and let the shapes separate by light and colour, with soft edges where they meet the dark backdrop."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the fruit plate is crowded with small hard edges: watermelon seeds, water droplets, strawberry seeds, orange segments and the glass rim. The table planks have dark grooves. Outline darkness is 0.061. A: the ship's wheel has a few clean, large contours, the spokes have smooth rounded edges, and the deck lines and background rays are faint. Both cards are within the measured ranges, so the call rests on the scattered micro-edges in B.",
+   "fix": "Remove the water droplets and reduce the seed and texture detail. Draw fewer, larger fruit pieces with smooth surfaces, and make the table planks soft with shallow seams."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the hay bale and chicken feathers are busy textures, and the cow has a firm silhouette. B: the cow's head has a slightly darker rim (outline 0.073 against 0.051), and the burgers and chips carry dense small edges. All values fall inside the real ranges and the two cards are close. Edges give no clear signal.",
+   "fix": ""
+  }
+ ],
+ "pattern": "The generated cards still give themselves away through extra small hard edges inside the subject: ribbed suit seams, rows of drum lugs, bandage strips, droplets and seeds, and plaid grids. Those push edge density above the real range. Many also have a continuous dark contour around heads and props (high outline_darkness), and background clutter is drawn as sharply as the subject. The real cards use fewer, broader internal seams and let silhouettes go soft or disappear where they meet the background."
+}

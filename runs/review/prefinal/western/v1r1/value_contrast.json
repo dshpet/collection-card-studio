@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the gold pan is a light silver oval on a mid-green ray field. The pale rays ring the pan unevenly and the dark corners are confined to the top. B: a large disc of light ray shapes sits directly behind the lamp like a halo, the corners go darker all round (vignette 0.144, above the real maximum of 0.123), and the glass chimney clips to white. The light halo behind the hero matches the generated baseball glove in the lessons.",
+   "fix": "Keep the green rays even in brightness across the card, with no bright disc behind the lamp and no darkening into the corners. Let the glass chimney keep some soft grey instead of pure white."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: in the grey lens the pink wave background flattens into one mid-grey sheet. Only the harmonica's silver top and black holes carry contrast, and rms contrast is 0.082, below the real range. B: a bright yellow field with a white glow around the fan and dark purple ribs. Its spread of light and dark sits inside the real range.",
+   "fix": "Give the pink wave pattern clear light and dark stripes so the background is not one flat tone, and let the harmonica's blue end caps and shadow side go a step darker."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the hat has a mid-dark brown felt against even blue rays, with only light corner darkening. B: the green rays fall to near black in all four corners (vignette 0.134, above the real maximum) and form a light ring around the jacket. The tan jacket body goes almost white against the black sash, so the hero is a hard light/dark split.",
+   "fix": "Keep the green ray background the same brightness out to the corners, with no dark edges, and soften the tan jacket to a light mid-tone instead of near-white."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the pump reads as a dark block against a light sky and sand. Its gauges are light spots, and value steps are even across the desert. B: the red buoy is a single dark mass against bright clouds (lightness gap -0.211, beyond the real limit). The bell is the only light spot on it, the corner darkening is at the real limit, and the water rings form high-contrast black and white bands.",
+   "fix": "Lighten the red buoy's sun-facing side so it is not one dark block, and calm the water ripples to soft mid-blue tones."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the popcorn cart's white awning stripes and popcorn make light accents, the red body is mid-dark, the floor is light and the upper corners are dark. B: the saddle is a big near-black leather shape over light straw (gap -0.254, outside the real range). The straw's fine streaks fill the lower half with busy light/dark noise.",
+   "fix": "Draw the saddle leather a warmer, lighter mid-brown with a soft highlight along the seat, and paint the hay as smooth broad bands with fewer bright streaks."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the rocking chair reads light against a dark top-left wall, with clear value separation. B: the barrel, the stripes and the dirt floor all fall into the same mid-grey groups in the lens. The barrel only separates by its dark iron bands, and the ground is a speckled noisy texture.",
+   "fix": "Make the background stripes clearly lighter than the barrel and keep the dirt floor a smooth even tone without speckles."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the boots are dark against a light purple spotlight disc, and the corners darken. B: the whole card is high-key (mean 0.762, above the real range). The floor clips to pure white, the wall is one flat light grey, there is no corner falloff, and the shoe midsoles merge into the white floor.",
+   "fix": "Bring the yellow floor down to a warm mid-tone so the white soles stand out, and add a soft shadow gradient near the card edges."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the card is very bright (mean 0.807, above the real range). White sun rays clip behind the cactus and the sand is a light block, so the green cactus is the only mid-dark mass. B: the duck is light against darker green rays, the corners are moderately dark, and the levels are balanced.",
+   "fix": "Tone the yellow ray background down to a warm mid-yellow, with no white burst behind the cactus, and keep the sand a medium orange."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the card is washed out (mean 0.783, above range). The cream fountain is near-white on light yellow stripes and a light tiled floor, so the hero barely separates by value. Only the pool interior is darker. B: the white wagon cover sits against mid-green stripes and a darker brown ground, with clear light, middle and dark groups.",
+   "fix": "Darken the yellow stripes and floor tiles to mid-tones so the cream stone fountain stands out as the lightest shape."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "B is the real lighthouse card from the lessons: a dark red gallery and stripe band, a light tower and clouds. A: the windmill tower and wheel are dark grey linework against a light sky and grass, the ground is a pale mid-grey with busy grass texture, and there is no clear dark mass.",
+   "fix": "Give the windmill's wooden tower a solid warm mid-tone and draw the field as smooth broad grass shapes instead of fine bright tufts."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a low-key night scene (mean 0.496, below range; hero lighter than surroundings, gap 0.188, above range). The bright fire sits in a near-black surround with a glow pool and hard light/dark breaks. B: a high-key city with a hazy white sky. The mid-grey binoculars sit against it, also slightly out of range on the gap.",
+   "fix": "Lift the night sky and forest to a deep blue mid-tone instead of black, and make the fire glow smaller so the logs and stones stay mid-grey."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the blue pillow is a mid-dark shape on soft pink rings, with gentle grouping and dark only inside the pillow's hole. B: bright (mean 0.815, above range). Big white ray wedges clip around the bottle like a glow burst, and the bottle is flat mid-grey inside.",
+   "fix": "Keep the yellow rays a warm mid-yellow without white flare behind the bottle, and add a soft darker side to the bottle body."
+  }
+ ],
+ "pattern": "Generated cards push the overall brightness to the edges of the real range: very bright white-clipped ray bursts or glow discs directly behind the hero, or a near-black surround around a glowing centre. They also darken the corners past the real cards' level. Inside the hero, values split hard between near-white and near-black instead of graded mid-tones, and the ground or background turns into busy speckled texture rather than broad, even value areas."
+}

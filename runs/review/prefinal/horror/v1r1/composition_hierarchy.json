@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the mortarboard is wide and squat, sits centered with even ring background around it and a clear gap on all sides. B: the witch hat is tilted, its brim reaches toward the right edge (margin 0.074), and the curled tip nearly touches the top right. It reads as a single object placed for show. Both fall inside the real ranges, so this is a weak call.",
+   "fix": "Draw the witch hat a little smaller and lower, with the brim fully inside the card and even space on the left and right."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the airplane is cropped by the right edge, with the wing and tail running off the card at a 3/4 angle. The real cards use edge crops like this (lighthouse, desk). B: the bat is fully contained and centered, wings spread almost from edge to edge, side-on and symmetric. Its body is a small dark mass in the middle, and at thumbnail size the thin wings take more of the card than the face does.",
+   "fix": "Draw the bat larger and closer, body turned three-quarters toward the viewer, one wing allowed to run off the card edge, so the face and body fill the middle of the card."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the boxing gloves sit low and big, with the left glove cut by the left edge and the table filling the bottom. B: the bare tree stands whole and centered on a strip of grass, its branches spread evenly to both sides with a gap to every edge. It is the complete, staged look seen on the generated lesson cards.",
+   "fix": "Bring the tree closer so the trunk fills the lower middle and the branch tips run off the top and side edges. Drop the wide grass strip."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the topiary is centered and upright with a hedge and path behind it. B: the water slide fills the card and runs off the top and right toward the pool. Both match real card framing, and the numbers are in range for both.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the mirror is upright and frontal, in the middle of an empty green field. It is narrow and small (area 0.236, box width 0.50, both below the real range) with wide empty margins (0.121, above the real range), so it shrinks to a thin gold oval at thumbnail size. B: the vending machine is a 3/4 view and fills the card height.",
+   "fix": "Draw the mirror bigger and turned three-quarters, filling about 80% of the card height, with the stand base near the bottom edge and less empty green around it."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the motel sign sits off-center to the right, with the building cropped by the left edge, and the composition runs off the card. B: the small haunted house is whole and centered on a lawn with a moon in the corner. It has the widest margins of the set (0.117, above the real range), so the house is a small block in the middle of the card at thumbnail size.",
+   "fix": "Draw the house much closer and larger, turned three-quarters, with the tower top near the top edge and one side cut off by the card edge. Leave out the moon and the wide lawn."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the gate is seen at an angle, and the brick pillars and the wall on the left are cut by the card edges. B: the gate is dead frontal and mirror-symmetric, with two stone pillars spaced evenly, a padlock in the exact center and a cobble path in the bottom third. This is the frontal, staged framing of the generated lessons.",
+   "fix": "Show the gate from a three-quarter angle, with the nearer pillar large and cut by the side edge and the gate swinging toward the viewer."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the sneakers sit at an angle, spread wide across the card (box width 0.85). B: the pumpkin is a frontal, centered ball on a plain purple backdrop with wide even margins (0.153, well above the real range). It is a small sphere floating in the middle, the generated habit of a fully contained, centered object.",
+   "fix": "Draw the pumpkin larger and slightly turned, filling most of the card, with the stem near the top edge and the base close to the bottom edge."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the fountain fills the card width (0.92), and its basin runs to the bottom. B: the candelabra is a thin, spindly shape (area 0.12, box width 0.44, both far below the real range) standing in the center of a large empty table and wall. At thumbnail size it reads as a few small flames on a stick, and the wood grain and glow pool compete with it for attention.",
+   "fix": "Draw the candelabra much closer and larger, with the flames near the top edge and the base near the bottom edge, filling the card width with its arms."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the palm tree leans, with its fronds reaching the left and right edges and the trunk off-center. B: the crystal ball on its stand sits centered and frontal, with even gaps to the sides (margin 0.123, above the real range), on a tilted tabletop that splits the background into two bands.",
+   "fix": "Draw the crystal ball larger and lower, slightly off-center, with the stand legs near the bottom edge and less empty space around it."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the broom is a thin diagonal line from the top left to a brush head on the right, filling only 0.136 of the card (below the real range). Most of the card is empty sky, and at thumbnail size the handle almost disappears. B: the balloons form a compact, heavy cluster in the upper middle, with strings leading down.",
+   "fix": "Draw the broom larger and steeper, with the brush head big in the lower right and the handle running off the top-left edge, so the bristles fill a third of the card."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the clock is dead frontal and centered, a flat circle with even margins on all sides. The real clock in the reference sheet is tilted at 3/4 and pushed toward the left edge. B: the lion statue fills the card (area 0.444) and its plinth runs near the bottom and right edges, like the real cards' near-edge framing.",
+   "fix": "Turn the clock three-quarters, so the rim shows as a thick oval band, and shift it slightly left, closer to the edge."
+  }
+ ],
+ "pattern": "Generated cards show the whole object, centered, frontal and symmetric, with even empty space on every side. Typical examples are the haunted house, pumpkin, crystal ball and candelabra, and the margins often go past the real maximum. Thin objects end up too small (candelabra, broom, mirror below the real area and width ranges). Real cards push the hero close or crop it with an edge, use a 3/4 tilt, and let the object rather than the scenery fill the card."
+}

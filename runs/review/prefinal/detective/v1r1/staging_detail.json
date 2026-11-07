@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: rocking chair on wide, quiet wood planks against a blue striped wall. The stripes are even and there is no hotspot. B: bloodhound on a grass floor made of thousands of fine blades, and the striped wall has a bright cyan glow sitting right behind the dog's back. The generated lessons (glove, camera) show the same centred halo.",
+   "fix": "Plain blue vertical-stripe wall with even tone and no glow behind the dog; a short, soft grass floor drawn as a few broad green shapes, not individual blades."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: graduation cap on blue concentric rings. B: fedora on green concentric rings. Both are category 1 on a quiet tone-on-tone ring field with a slightly lighter centre, and neither has props or decoration. Nothing on my vector separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: gas pump on a concrete pad cut by the card edge, with soft desert mesas behind. That is a few large quiet shapes. B: open chest on a sand mound underwater. Its coins and gems are fine because the chest holds them, but it adds a seashell at the lower left, loose coins rolling in front, and about ten bubbles across the backdrop. The lighthouse lessons show the same kind of invented scatter (rope, lifebuoy, plants).",
+   "fix": "Treasure chest on a plain sand floor under calm blue water, with coins and gems only inside the chest. No seashell, no loose coins on the sand, at most two or three soft bubbles."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: typewriter on a dark desk with the front edge showing, in front of an orange harlequin wall. This matches the real computer card's desk staging. B: popcorn cart on a pale cobblestone floor against a blue diamond wall, plus a popcorn bucket, which is a plausible partner object. The cobbles are busier (0.041) but still within the real range. Neither card is clearly off.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: door set into a plain cyan wall with a tile floor and baseboard. That is a few metres of the place in large, quiet shapes. B: the door is framed by dense ivy, with dozens of separate leaves down both sides and across the top, plus a flower wreath. Its background edge density is 0.107, above the top of the real range (0.089). This matches the generated lighthouses gaining plants and clutter.",
+   "fix": "Blue front door in a plain warm plaster wall with a simple wooden frame. No ivy or leaves around the door. Keep the wall as one calm colour."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: street lamp on an even teal sunburst with no hotspot, cut by the bottom edge. B: bellows camera floating on a cyan sunburst with a strong white-cyan glow behind the box. The generated glove and camera lessons have the same bright halo.",
+   "fix": "Even blue sunburst with the rays the same brightness all the way to the centre, and no glow behind the camera."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: oil lamp on a green-yellow sunburst. B: magnifier on a blue sunburst. Both are category 1 with a lighter centre and no props, and both detail values are in range. Nothing on my vector separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: sneakers on a pale yellow floor that meets an orange wall at a hard horizontal line, about halfway up. In a real category 2 card the floor is the backdrop's own colour (green suitcase floor on a green wall). B: safe on a seamless pink floor that blends into the pink wall, which matches the real cards.",
+   "fix": "Sneakers on a plain floor the same orange as the wall, blending softly into it, with no hard horizon line and no second floor colour."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: boxing gloves on a wood shelf against blue vertical planks, cropped at the left edge. B: rotary phone on a dark desk with the front edge showing, against an orange striped wall. Both are close category 3 stagings with quiet backdrops and both values are in range.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a flat shield lies at an angle on a plain purple gradient with no material and no pattern. Background detail is 0.0048, below the real range of 0.008 to 0.013. A real flat object lies on a surface that fills the card. B: vending machine on a seamless purple floor and wall, a standard category 2 card.",
+   "fix": "Shield lying flat on a surface that fills the whole card, seen from above, such as a soft purple fabric or painted wood with a broad, gentle grain."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: bottle on a yellow sunburst. B: ticket on orange vertical stripes. Both are category 1 graphic fields that are tone-on-tone and quiet, with no props. Nothing separates them on my vector.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: journal on a tabletop painted as broad, stylised orange wood stripes. B: folder on dark wood with fine, photo-like grain across the whole card. Its background detail is 0.0292, well above the real maximum of 0.021. The real cards paint materials as a few soft bands, not fine grain.",
+   "fix": "Folder lying on a warm brown wooden table painted as a few wide, soft grain bands in a simple cartoon style, with no fine photo-like wood texture."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away through the background. They put a bright glow behind the hero on graphic fields, add props the subject doesn't name (seashells, loose coins, bubbles, ivy, rocks, ropes), and paint materials with fine, photo-like grain or blade-level texture instead of a few broad, quiet shapes. They also show the whole object rather than letting the card edge crop the place it sits in."
+}

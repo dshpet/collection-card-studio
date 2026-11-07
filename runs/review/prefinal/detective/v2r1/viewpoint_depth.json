@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the oil lamp is shot dead-frontal at eye level and perfectly symmetric. The base ellipse is almost flat and the object has no turn at all, so it reads like a front elevation (planar_share 0.003, below the real range). B: the flashlight sits on a strong diagonal and is turned three-quarters, so the lens face foreshortens into an ellipse. That matches the turned bottle in the real cards.",
+   "fix": "Turn the lamp about 30 degrees and tilt it slightly. Raise the camera a little so the top of the base and the rim of the glass chimney show as clear ovals, not flat lines."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the police car is a small, whole object set in a full street scene. Sidewalk, road and buildings are all equally sharp and recede to a far horizon, which is the 'whole object on a staged base' look the generated lesson cards have. B: the bike is cropped tight, with the car rear filling the card. The bike's flat side profile matches the rack plane, so it holds one consistent view.",
+   "fix": "Move the camera closer and lower so the car fills the card. Drop the far buildings to a simple soft backdrop and keep only a strip of road under the wheels."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the vending machine is at eye level with a slight turn showing its left side and no top face, and it stands on a soft floor-to-wall sweep. B: the tape roll stands on edge in three-quarter view, with its loose tail lying flat on the same ground plane. Both hold one view with mild perspective. B's planar_share (0.62) is slightly high, but that comes from the flat side of the roll, not from a camera error.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the wallet lies flat under a near-overhead camera, and the wood planks run at one shallow angle, so it is consistent. B: the book is seen from high above, showing a huge cover face, while the page block and spine at the bottom-left are seen almost side-on. The bookmark tabs on the right stick out flat toward the viewer. Planar_share 0.706 is above the real range.",
+   "fix": "Lower the camera so the book cover is shorter and the spine and page edges show more. Keep the bookmark ribbons lying in the same tilted plane as the book."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "A: the dog is a complete figure centered at ground level, and its grass plane meets a flat striped backdrop at a horizon around mid-height. B: the boxing gloves are a tight, edge-cropped close-up on a wooden table, with the table edge and wall seam consistent. A weak call: A's fitted-whole-object staging leans toward the generated lessons.",
+   "fix": "Bring the camera slightly higher and closer so the dog fills more of the card. Make the grass a short foreground strip, not a wide field running to the backdrop."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the floor planks under the binoculars spread out sharply toward the bottom of the card, giving a wide-angle, forced-perspective floor. The barrels face the viewer head-on, while the floor is seen from high above. A: the magnifier and map lie on one top-down plane, and the wood planks run at a single mild angle.",
+   "fix": "Use a longer lens: draw the floor planks almost parallel, with only slight convergence. Turn the binoculars so they lie along the planks, seen from above at the same angle as the floor."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the ship's hull shows its open interior and ladder from above, but the portholes and side planks are drawn straight side-on. The masts lean in different directions and the bowsprit points up-right, so the parts do not share one view. B: the spyglass is a single three-quarter cylinder whose rings foreshorten evenly toward the eyepiece.",
+   "fix": "Draw the ship from one three-quarter angle, slightly above the waterline. Keep all masts upright and parallel, with the deck and hull side foreshortened together."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the camera floats at a mild three-quarter angle, with the top face (green in the normals) and the right side visible and the lens ellipse matching the body turn. B: the player floats tilted, with its front face and right edge visible, and the earbud cord trails in the same space. Both have mild perspective and one consistent view.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the sneakers are a side-by-side pair seen almost head-on, and the floor/wall seam sits high on the card at a hard horizon. Both shoes face the same way, posed like a symmetric product shot. A: the hat sits on a soft sweep at a mild three-quarter angle from slightly above, and its brim ellipse matches its crown.",
+   "fix": "Turn the shoes about 30 degrees and stagger them, one ahead of the other. Replace the hard wall line with a soft gradient floor."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the doorknob is a macro close-up. The backplate is drawn as a perfectly flat, front-on rectangle, but the knob sphere is shifted left and shows its rosette, as if seen from the left. A room in deep perspective is visible through the doorway on the right. Planar_share 0.53 is above the real range. A: the door is a frontal, flat elevation framed by ivy.",
+   "fix": "Show the knob and backplate from the same slight side angle, with the plate drawn as a narrow, slanted rectangle. Replace the deep room behind with a soft wall color."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "A: the planter table is a full garden scene. The paving runs in perspective, there is a sharp picket fence behind and side bushes, and the near and far legs show a slightly high camera. B: the sunscreen bottle stands frontal at eye level with the glasses in front on one floor line. Weak call, A's staged complete scene leans toward the generated lessons.",
+   "fix": "Move the camera closer so the planter fills the card. Simplify the fence and bushes into a soft background and keep just a small patch of paving under the legs."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the bag lies on the wood seen from above, but its outline is a skewed parallelogram. The zip strip at the top runs at a different tilt from the bottom edge, and the ring inside is seen more steeply than the bag around it. Planar_share 0.807 is well above the real range. B: the racket and ball lie on the court seen from a high three-quarter angle, and the court line recedes at the same angle.",
+   "fix": "Draw the bag as a clean rectangle lying flat, with its top zip edge parallel to its bottom edge. Draw the ring lying inside it at the same overhead angle."
+  }
+ ],
+ "pattern": "On viewpoint and depth, generated cards give themselves away in three ways. They stage the hero as a complete, centered object on a full scene base (street, garden, island). They lean on frontal or symmetric product-shot views. And their parts drift between views, such as a frontal plate with an oblique knob, or a hull drawn from above with portholes drawn side-on. Real cards crop tighter, use one mild three-quarter turn, and keep the backdrop simple."
+}

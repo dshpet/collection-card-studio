@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (mailbox): light comes from upper left. The barrel turns smoothly into a darker right side and front face, with a clear core shadow under the lid lip and a hot highlight on the top curve. B (bird feeder): flat, frontal light. The roof planks and yellow walls show almost no change from light to shadow, and the only darkness is the inside cavity. Its light bias (0.248) is weak.",
+   "fix": "Light the feeder from the upper left: make the right wall and the underside of the roof clearly darker, with a soft core shadow where the roof overhang meets the walls."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (fruit plate): directional light, with a strong cast shadow from the plate down and to the left onto the planks and rounded shadow sides on the grapes and berries. B (beans): the bowl and beans are evenly lit with no shadow side. The bowl's cast shadow is barely there, and light bias is 0.059, far below the real cards.",
+   "fix": "Light the bowl from one side, upper left: make the opposite rim and bean sides darker, and drop a soft dark shadow from the bowl onto the table to the lower right."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (jacket): left-side key light. The sleeves and the right side of the torso turn into deep shadow, and the folds and pockets have core shadows. B (hat): soft, even clay-like light. The brim and crown turn gently with shallow shadow (form contrast 0.395), and there is little cast shadow under the brim onto the crown.",
+   "fix": "Put a clear shadow under the brim on the crown, darken the far side of the crown, and add a thin bright sheen on the top edge of the brim facing the light."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (station clock): the shading range is low (0.58) but form contrast is too high (0.64). The bezel and side rim are dark and heavy on the right, the dial face is flat, and the light looks muddy and compressed. B (grad cap): clean top light. The bright board top has a crisp edge, and the skullcap below sits in darker shadow, which matches the real cards.",
+   "fix": "Lighten the clock's dark side rim and give the dial face a gentle gradient from the top left with a soft sheen on the glass, so light rolls around the bezel instead of cutting to dark."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (wagon): light bias is very high (0.749, above the real range), with a long, hard, dark cast shadow on the dirt. The canvas cover gets mostly flat light, and the lens shows a sepia-warm cast like the generated lesson cards. B (coaster): glossy cars with broad soft highlights on the seat rims and a clear shadow side under each car, in the real-card style.",
+   "fix": "Soften and shorten the wagon's cast shadow, keep it close under the wheels, and model the canvas bows with rounded light tops and darker folds between them."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (guitar): the whole card is darkened and vignetted. The guitar body is evenly flat with no sheen on the top, there is a heavy dark shadow along one edge, and the neck and headstock dissolve into murky shading. B (racket): crisp top-left light, a round shadow side on the tennis ball, a soft cast shadow under the frame and grip, and a clean highlight on the grip end.",
+   "fix": "Brighten the scene evenly and put a broad soft sheen across the guitar's top face. Add a short, soft contact shadow along its lower edge on the planks and keep the neck clearly lit."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (spurs): form contrast (0.654) and shading range (0.878) are above the real cards. The spiked rowels go almost black, and the steel loops cut hard from bright to dark. B (neck pillow): soft, even form turn with gentle shadow in the creases and on the inner curve, within the real range.",
+   "fix": "Lift the shadows on the spur rowels and steel loops to a mid-grey, with one soft highlight streak along each curved bar instead of black-and-white contrast."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (boxing gloves): top-left light, with a deep shadow side on the right glove's curl and a clear contact shadow on the wood. B (boots): flat, frontal light, as in the generated lessons. The boot shafts are evenly lit with weak shadow sides, the lens shows a warm beige wash, and the cast shadow on the floor is faint (light bias 0.279).",
+   "fix": "Light the boots from the upper left: make the right side of each shaft and toe clearly darker, add a core shadow down the back seam, and put soft contact shadows under the soles and heels."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (golf club and ball): top-left light, a round shadow side and contact shadow on the ball, and a metallic sheen on the club face. B (column): left key light, dark shadow sides on the volutes and flutes, and a warm wash. Both sit within the real ranges, and my vector gives no clear tell.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (cactus): strong side light (bias 0.7) with a long soft cast shadow to the left and rounded shadow sides on the ribs. It is stylized but readable. B (sneakers): light bias is 0.019, so the light has almost no direction, and shading range is above the real cards (0.82). The shoes get photographic studio light with even, flat soles and a smeared shadow.",
+   "fix": "Give the sneakers one clear key light from the upper left: make the right side of each shoe darker, add soft broad highlights on the toe caps, and put a compact soft contact shadow under each sole."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (fan): form contrast 0.213 and light bias 0.09, both below the real cards. The pleated panels alternate light and dark as flat color with no light direction, and the wooden ribs have no shadow side. B (harmonica): strong top-left light, a glossy metal cover with a bright sheen and darker front face, and shadowed reed holes.",
+   "fix": "Light the fan from the upper left: make the pleats facing the light brighter and the pleats turned away darker in a steady gradient across the fan, and put a soft shadow under the ribs and the pivot."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (viewer binoculars): strong form contrast. The barrels and post turn crisply into blue-dark shadow sides with bright rim sheen. B (water pump): soft, frontal, warm light. The lens shows a sepia wash, the body turns gently with shallow shadows, and the cast shadow on the slab is faint and diffuse (light bias 0.225), like the generated lesson cards.",
+   "fix": "Light the pump from the upper left: darken the right side of the body and spout to a clear shadow, add a bright sheen down the left edge of the cylinder, and drop a darker cast shadow from the pump onto the stone slab."
+  }
+ ],
+ "pattern": "Across the lessons and test pairs, generated cards tend to have frontal, even light with weak direction: the shadow side is shallow, the core shadow is missing, and cast or contact shadows are faint (the lens often shows a uniform warm or sepia wash). Less often they go the other way, with flat color pretending to be shading, or murky, over-dark contrast. Real cards commit to one upper-left key light, with a clear darker side, rounded form turn and a compact soft contact shadow."
+}

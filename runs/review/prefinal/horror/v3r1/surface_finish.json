@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the table under the pumpkin bucket has weathered planks with scuffs, paint flecks and nail holes, a fine worn texture that the lessons tie to generated cards. The candy wrappers are evenly lacquered. B: the mower body is a smooth, soft red with broad, simple highlights, and the grass is reduced to a few blade tufts, which matches the real cards.",
+   "fix": "Draw the table as smooth, clean wooden planks with a few soft, quiet grain lines. No scratches, flecks or nail holes."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the palm leaves and trunk segments are smooth and simplified, with soft gloss, like the real cards. B: the stone base under the spider has a gritty, speckled surface with hairline cracks and moss specks. That fine noise is the added surface detail generated cards show.",
+   "fix": "Draw the stone base as a smooth, rounded grey slab with soft shading. No grit, cracks or moss specks."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the hourglass frame has fairly realistic wood grain, and the glass is soft and slightly blurry. B: the vending machine glass is covered in small condensation droplets, a scatter of tiny decorative marks. The cans and bottles are uniformly glossy. The droplet speckle is the stronger generated cue, though A is not clean either.",
+   "fix": "Draw the vending machine glass as a clean, clear pane with one or two broad soft reflections. No droplets."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the pumpkin skin is smooth with broad ribs. Only the wall and the step carry mild texture. B: every tier of the topiary is packed with hundreds of small, separately lit leaves. This is busy, decorative micro detail, and its micro texture (0.039) and gloss share (0.44) are both above the real range.",
+   "fix": "Draw each topiary tier as a smooth, rounded green mass with a few soft leaf-clump bumps along the silhouette. No individual leaves across the surface."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the witch hat reads as matte felt with soft folds, and the buckle as smooth gold. The table grain is moderate. B: the fountain stone is smooth, with clean sculpted bowl flutes and simple translucent water. Both stay within the real cards' finish.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the whole bag has a visible canvas weave. The house patch has a dashed stitch border, and the patch surface is grainy. This is exactly the stitch-and-weave detail the generated glove cards add. B: the scarf is smooth, soft red cloth with broad folds and a simple glossy badge.",
+   "fix": "Draw the bag as smooth, soft yellow cloth with a plain, raised house patch. No weave texture and no dashed stitching."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the bird feeder planks have quiet grain and the seeds are smooth, close to the real wood signpost. B: the trunk is covered in many long, flowing bark lines. The grain is large and decorative, and the painterly strokes run up the whole trunk.",
+   "fix": "Draw the trunk as smooth brown bark with only a few broad, soft twists and quiet grain lines."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the ring box has matte velvet-like red, a soft cream cushion and one glossy gold medal, a clear matte/gloss mix. B: the purple mask face and the gold trim are both equally lacquered, and the purple has a faint grainy noise.",
+   "fix": "Make the purple mask face a soft satin with gentle shading, and keep the strong shine only on the gold trim and the bead."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the table under the guidebook is painted with big, streaky, decorative grain strokes, and micro texture is just above the real range. B: the purple cover has a fine leather grain and the planks are dark and quiet. Both carry some texture, but A's large painterly streaks are further from the real cards.",
+   "fix": "Draw the table as smooth warm wood with a few thin, quiet grain lines. No bold streaks."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the binocular viewer is brushed blue-grey metal with broad soft reflections, and the hardware is simplified into bands, as on the real cards. B is a near-copy of the real music-player card from image 1, but with a top slot and an extra yellow button added. The plastic has an even, waxy gloss everywhere, and the earbuds are as glossy as the case.",
+   "fix": "Draw the case as soft matte orange plastic with one gentle highlight. Keep the earbuds slightly shinier white."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the broom bristles have fine strand lines, and the handle shows soft wood grain and matte straw. B: the balloons are smooth and slightly blurry, with almost no surface detail (0.007, below the real range), as if smoothed away, plus a single soft highlight each.",
+   "fix": "Draw the balloons as crisp, glossy rubber, each with a sharp small highlight and a soft rim light, and give the knots clean edges."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the blue door is covered in mottled, painterly tone, and every wreath flower and leaf has its own shine. Gloss share (0.51) and micro texture are far above the real range. B: the plank door, the stone blocks and the iron hinges are simplified, with mostly matte faces.",
+   "fix": "Paint the door as a smooth, flat blue with soft panel shading, and give the wreath flowers a soft matte finish with only a few small highlights."
+  }
+ ],
+ "pattern": "Generated cards add fine surface detail that real cards smooth away: dashed stitching, canvas weave, droplets, grit and moss on stone, weathered scuffs, and dense separate leaves. They also paint wood grain as big decorative streaks and give everything the same lacquered gloss. Real cards keep surfaces soft and simple, make most faces matte, and save the shine for one or two parts."
+}

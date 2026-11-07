@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A lamp: brass base is lit from the upper left. It has a clear darker right flank, a broad warm sheen on the bowl and an inner glow in the chimney, so the form turns smoothly. B key: in the lens the ring and shaft are almost evenly lit along their whole length. There is only a thin pale rim on the top of the ring, no core shadow down the shaft and no cast shadow, so the key floats with flat, even light (bias 0.141, near the floor).",
+   "fix": "Light the key from the upper left. Put a clear darker band along the lower-right side of the shaft and the inside of the ring, add a soft highlight along the top edge, and give it a soft shadow falling down and to the right."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A grandfather clock: lit from the front left with a hard, dark cast shadow on the floor to the right. The lens shows a strong bright pool on the floor at lower left and a heavy dark falloff at the top (range 0.835, bias 0.688, both above the real cards). The case faces read flat inside that strong falloff. B vending machine: the front face is lit, the left side is a step darker, the floor gets a soft reflection, and the falloff is gentler, within the real range.",
+   "fix": "Use a softer, more even key on the clock. Make the side panels a mid-tone shadow, not black. Use a short, soft contact shadow instead of a long hard floor shadow, and avoid the bright spotlight pool on the ground."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A witch hat: soft key from the upper left, with a darker right side on the cone and a soft shadow under the brim. The form turns smoothly and the range sits mid-range. B sneakers: the shoes themselves are lit almost evenly from the front, with little turn on the uppers. A hard, photo-like black cast shadow goes off to the left on the floor (range 0.82, above the real cards; bias 0.019, nearly none).",
+   "fix": "Give the sneakers a clear key from one side. Put a soft core shadow down the far side of each shoe and under the toe, and make the cast shadow short and soft right under the soles instead of long and hard."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A rocking chair: light from the left, with the right sides of the legs and back slats a step darker, soft shadows under the seat and gentle floor shading. B cat: the black body reads as one flat dark mass in the lens, with little core shadow turning across the chest or haunch. There is a warm rim along the ears and back and a shadow cast behind on the ledge, but the overall shading range is compressed (0.596, below the real range).",
+   "fix": "Model the cat's body with a lighter top plane on the head, shoulders and haunch from the upper-left key. Put a clear darker core shadow under the chest and belly, keep a soft warm rim on the edges, and add a soft contact shadow under the paws."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A ring box: strong three-quarter light from the upper left. The lid's inner wall and the box's front-bottom side drop well into shadow, the medal has a clean bright top edge, and the form turns across rounded corners like the real camera and glove. B mask: flat front-on light. In the lens the whole mask sits at nearly one value, with only thin edge lines and a faint sheen. There is no shadow side, no core shadow on the cheek curve and no cast shadow (range 0.588, low).",
+   "fix": "Light the mask from the upper left. Make the right cheek and lower edge clearly darker, put a soft highlight along the top rim and the feather's upper side, and add a faint soft shadow under the mask so it reads as a 3D object."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A binoculars: strong side light with dark undersides on the barrels, bright tops and a crisp dark cast shadow on the planks to the lower right. The form turns clearly. B broom: the lens is mostly a vignette, bright at lower left and dark at upper right, rather than light on the object (bias 1.146, far above the real cards). The handle and bristles show almost no core shadow, and the cast shadow is a faint smudge.",
+   "fix": "Light the broom with a clear key from the upper left. Make the handle a lit top with a darker underside, put shadow inside the bristle bundle under the binding, and add a soft, defined cast shadow on the grass next to the broom, not a dark corner gradient."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A candy jar: the candies are lit fairly evenly with small glossy hot spots on each, and the jar body has little dark side. Form contrast is low (0.379, below the real cards). The cast shadow to the right is the main sign of light direction. B caravan: clear side light, with the front face lit and the right-rear curve falling into a soft, deep shadow, plus a shadow under the chassis. The form turns smoothly across the rounded body.",
+   "fix": "Give the candy pile a clear light side and shadow side. Candies on the right and bottom of the jar should sit in darker shadow, the jar glass should have a darker right edge, and the hot spots should be fewer and softer."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A topiary: every leaf clump has the same small bright top and dark bottom, repeated across all tiers. The shading is banded and stacked tier by tier rather than turning across the whole cone, with a hard dark cast shadow to the right. B snorkel mask: soft top-left light, a glossy streak on the lens and a gentle shadow under the strap and mouthpiece, all reading as one form (low bias, but the same card reappears in p12).",
+   "fix": "Shade the whole topiary as one rounded cone. Make the left side broadly lit and the right side broadly in shadow, with leaf clumps only softly picking up the light, and soften the cast shadow on the grass."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A motel sign: the neon panels glow and the building and posts are dimly lit from the ambient night sky, which is consistent with dusk practicals (in range). B lamppost: the post body is lit from the front by a source that is not the lamp. It has a cast shadow going right, while a warm glow pool also sits under the lantern. The lens shows extreme falloff (bias 1.276, contrast 0.709, both far above the real cards).",
+   "fix": "Make the lantern the main light. Warm light should spill down the post and onto nearby cobbles, the post should be darker on the side facing away from the sky, and there should be no second hard shadow from a different direction."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A fountain: soft, nearly shadowless front light. The basins have only faint dark undersides, there is no clear cast shadow on the paving, and the lens is uniformly pale with low contrast (0.432). B pumpkin: strong key from the left, deep shadow on the right lobes, a clear cast shadow on the table to the right and the inner glow in the cut-outs.",
+   "fix": "Light the fountain from the upper left. Put deep shadow under each basin lip and on the right side of the pedestal, and add a soft cast shadow on the paving to the right."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A window: the stone blocks and frame are lit flat and frontally. Every block has the same bevel, there is no falloff across the wall, and the candle casts no warm light on the frame (bias 0.157, below the real cards). B gate: sunlit from the left, with the right faces of the brick pillars darker, a soft shadow under the caps and the gate bars modeled.",
+   "fix": "Let the candle throw warm light onto the inner frame and sill. Darken the wall toward the edges and the bottom, put a clear shadow under the sill, and light the stone blocks from one side so their bevels are uneven."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A snorkel mask: top-left key, a glossy streak on the lens, a darker underside on the tube and a soft shadow on the deck. B lion statue: white marble lit almost evenly, with little core shadow on the mane, body or pedestal sides (form contrast 0.331, below the real cards). The pedestal steps have only thin edge shadows.",
+   "fix": "Light the lion from the upper left. Put clear shadow under the mane, chin and front paws, make the right side of the pedestal a darker mid-tone, and add a soft cast shadow onto the grass."
+  }
+ ],
+ "pattern": "Generated cards are often lit from the front with little shadow, so objects have no clear shadow side or core shadow and read at almost one value. When the light is strong, it is off in the other direction: the brightness change sits in the background as a spotlight or vignette rather than on the object. Other tells are repeated small hot spots, hard photo-like cast shadows, and a lit light source that doesn't light what's next to it. Real cards use a steady three-quarter light from the upper left, a smooth turn into a darker shadow side and a soft contact shadow."
+}

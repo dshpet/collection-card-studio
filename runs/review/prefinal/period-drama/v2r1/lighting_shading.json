@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A fan: the pleats are lit almost evenly. Alternate pleats change only in hue, there is no side of the fan that turns into shadow, and the lens shows only a faint shadow under the guard sticks. B opera glasses: a clear key from the upper left, dark barrels that turn into a core shadow on the right, a sharp lens highlight, and a soft drop shadow underneath.",
+   "fix": "Light the fan from the upper left so the left pleats are bright and the right pleats fall into a deeper cool shadow. Each pleat should have a light face and a dark face, and the fan should cast a soft shadow below the sticks and the guard."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A basket: lit from the front with a weak left-to-right falloff. The weave cells are all similarly bright and only a small shadow sits on the grass to the right. B gloves: a strong key from the upper left, a broad soft sheen on the leather, deep shadow in the gap between the gloves, and dark contact shadows on the table.",
+   "fix": "Turn the basket's right side clearly into shadow and darken the gaps under the lid lip and handle. Add a darker contact shadow where the basket meets the grass."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A parasol: the canopy is evenly bright across all its panels. The lace trim and the knobs have no shadow side, and the light direction is weak. B beach umbrella: a top light makes the canopy bright and the underside dark, and each scalloped panel turns into shadow at its edge.",
+   "fix": "Light the parasol from above left, darken the panels on the far right and the inside of the canopy, and put a shadow band under the lace trim."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B bench: the white wooden faces are lit flat from the front and the slats barely turn. The only depth comes from the sharp cast shadow on the path. A swing: the shading turns gradually across the cushions and canopy, with a darker shadow pool under the seat.",
+   "fix": "Give the bench backrest slats and armrests a shadow side and darken the gaps between the slats."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A coaster cars: glossy, with a key from the upper left and dark wheel wells. The light is fairly frontal, but the lighting is consistent across the cars. B keyboard: lit from the top, with a dark front edge and a soft shadow under the stand. Both read as consistent single-key lighting.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B top hat: in the lens, a halo glows behind the hat. The crown carries a broad metallic sheen with no clear shadow side, and the brim underside is only slightly darker. A jacket: lit from the left, with the right sleeve and the lower body falling into a deep shadow and dark cuff openings.",
+   "fix": "Light the hat from the upper left so the right side of the crown falls into a deep core shadow. Make the underside of the brim dark and cast its shadow onto the band."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A teacup: the lighting is soft and diffuse. The cup body and the saucer are almost the same value with no core shadow, and only a weak blurry shadow lies on the cloth. B fountain: each tier is lit from above, with dark undersides and a clear shadow under each bowl lip.",
+   "fix": "Light the cup from the upper left so its right side turns into a darker shadow. Make the inside wall of the cup darker than the rim, and put a firm dark contact shadow where the cup meets the saucer and where the saucer meets the cloth."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A door: harsh raking light with very dark shadows under the steps and from the ivy on the wall. The door panels are bevelled evenly with no overall falloff. B door: lit from one side, with the left edge of the door in shadow and soft ivy shadows across the panels.",
+   "fix": "Soften the cast shadows under the steps and make the light fall off across the door so one side is darker."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B spyglass: a sharp white plastic hot spot on the lens and bright specular rims on every gold ring. The light bias is extreme, with very dark barrel segments. A golf iron: the metal sheen is soft and the ball turns gradually from light to shadow, with a soft shadow on the grass.",
+   "fix": "Replace the white spot on the lens with a soft broad reflection, soften the shine on the brass rings, and give the leather barrel a gradual turn from light to shadow."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B teapot: the white porcelain body is lit flat with very little turn to a shadow side, and the roses glow without shading. The only real depth is a soft drop shadow. A vending machine: a clear key from the left and a darker right side panel.",
+   "fix": "Light the teapot from the upper left so its right half and the underside of the belly fall into a soft but clearly darker shadow. Put one small soft highlight on the shoulder and a dark contact shadow under the foot."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A neckerchief: the folds are shaded softly and evenly, and the two hanging tails are about the same value. There is little contrast between the lit and shadow sides. B straw hat: also gently lit, but the underside of the brim and the bow loops carry darker shadow.",
+   "fix": "Light the neckerchief from one side so the far tail and the inside of the collar loop sit in deeper shadow, with a darker crease under the badge."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B pram: the cobblestones are lit evenly, the basin is lit from the top with little side falloff, and the spokes are lit like shiny chrome. A taxi: a strong key from the upper left with a dark right side and dark windows. The contrast is high, but the shadow side and the cast shadow on the road are consistent.",
+   "fix": "Light the pram from one side so the far half of the basin and the hood turn darker, and put a firmer contact shadow under the wheels."
+  }
+ ],
+ "pattern": "The generated cards are lit softly from the front: the main object is evenly bright with little turn into a shadow side and weak or blurry contact shadows (fan, teacup, teapot, parasol, top hat). Some go the other way and have sharp white plastic hot spots on lenses and metal (spyglass). The real cards have one clear key from the upper left, a deeper shadow side on the right, and firm contact shadows."
+}

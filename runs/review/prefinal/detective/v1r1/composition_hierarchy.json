@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the rocking chair is turned three-quarters and stands whole on the floorboards. It fills most of the card height (0.80), and the rockers sit close to the bottom edge. B: the bloodhound sits low and wide on the grass, with its body near the right edge and empty sky across the top third. Both are inside the real range, and at thumbnail size both read at once with nothing fighting them.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the mortarboard floats centered on blue rings, and its tassel hangs toward the right edge. B: the fedora floats centered on green rings, and its brim stretches almost edge to edge. Both are short (box_height 0.51 and 0.54, just under the real range) and framed the same way. On composition, nothing separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the fuel pump stands dead-center and straight-on, like a front-view symmetric object, and it is narrow (box_width 0.505, under the real range). The desert ground plate and the mesas take up a lot of the side space. B: the chest is at three-quarters and fills the card (0.47, a bit over the range). The bubbles are small and stay out of the way. The lessons show generated cards turning the object to face the viewer squarely and pulling back. A matches that.",
+   "fix": "Turn the fuel pump three-quarters toward the viewer and move the camera closer, so the pump fills most of the card width. Drop the ground slab and let the bottom edge slightly cut off the pump base."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the typewriter sits in the lower-left half on a wide desk, with a lot of empty orange diamond wall above it. The sheet of paper is the brightest shape, at the top center, and it draws the eye before the machine does. B: the popcorn cart is tall and fills the card (box_height 0.87), with the awning near the top edge. It is busy, but it reads at once.",
+   "fix": "Bring the camera closer so the green typewriter fills the middle of the card, with less desk and less wall. Keep the paper sheet smaller and less bright than the keys."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a thin door stands centered against a large, empty cyan wall, and the floor tiles fill the bottom. The hero is narrow (box_width 0.467, under the real range) and small at thumbnail size, and the magnifier window is tiny. B: the blue door fills the card and the frame is cut by the top and bottom edges. The wreath sits in the middle as the focus, and the ivy frames it. Real cards cut the hero with the card edge like this (lighthouse, podium, fan).",
+   "fix": "Move the camera close so the door fills almost the whole card, with the frame cut by the top and bottom edges. Remove most of the empty wall and the floor, and make the magnifier window bigger in the upper center."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the street lamp is off-center and its post is cut by the bottom edge (margin 0), like the real cropped lighthouse and fan. B: the bellows camera floats fully inside the card, centered on rays, with even margins all around. That contained, centered placement is what the generated lesson cards did.",
+   "fix": "Push the camera closer and lower so the box body runs off the bottom-right edge. Tilt it more and let the flash reflector come near the top edge."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the oil lamp stands straight up, front view and symmetric, in the exact center of the rays. It is narrow (box_width 0.43) with wide empty green bands on both sides. B: the magnifier is tilted on a diagonal from the lower left to the upper right, which gives more motion. Both are under the real width range, but A has the frontal, centered stance from the generated lessons.",
+   "fix": "Tilt the oil lamp a little and show it from a three-quarter angle above. Move the camera closer so the lamp body and chimney fill more of the card width."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the pair of sneakers sits in the lower half on a flat cream floor. A plain orange wall fills the upper third, and the hero is short (box_height 0.49, under the real range). The two shoes split the focus, side by side. B: the safe fills the card front-on (0.50 occupancy, a bit high), and the gold dial and handle read at once.",
+   "fix": "Show a single sneaker, or two shoes overlapping tightly, larger and centered. Have it fill about two-thirds of the card height, with a soft background instead of a bare wall-and-floor split."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the boxing gloves fill the card edge to edge and nearly touch the left and right sides (box_width 0.95). They are big and bold at thumbnail size. B: the telephone sits small, in the upper-middle. Wide dark desk below it and striped wallpaper above leave a lot of dead space, and the desk edge cuts across the bottom like a separate shape. The pulled-back tabletop staging matches the generated computer lessons.",
+   "fix": "Move the camera closer and lower so the black telephone fills most of the card. Show only a thin strip of desk under it and drop the desk front edge."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the shield lies tilted on a flat purple ground, fills the card, and leaves a fairly even margin. B: the vending machine stands upright at three-quarters in the center, with purple gradient space around it. Both read at once and are within or just at the real range. My vector gives no clear tell.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the water bottle is tilted on a diagonal in the center of the rays. B: the plane ticket is tilted on the opposite diagonal on stripes. Both are clean single heroes with comfortable margins inside the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the travel book fills the card (0.53 occupancy, above the real range) and its corners come close to the edges. The cover is crowded with five or more stickers and pins, the ribbon tabs stick out on the right, and the bookmark hangs at the bottom. These all compete, so the first read is clutter rather than 'book'. B: the folder sits centered with room around it. One fingerprint and one red paperclip give a clear order of what to look at.",
+   "fix": "Pull the camera back so the book fills about 40% of the card with clear space around it. Reduce the cover to one large map symbol with a single pin, and remove the side tabs."
+  }
+ ],
+ "pattern": "Generated cards stage the hero like a product shot: whole, upright or facing the viewer, and centered with even margins. They often pull back to show a stretch of floor, desk or wall (typewriter, phone, door, sneakers) instead of moving in close or letting the card edge cut the object the way the real lighthouse, podium and fan cards do. A second tell is busy surface props that compete with the hero at thumbnail size."
+}

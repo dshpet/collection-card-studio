@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (sheep): soft daylight from upper left. The wool and hat brim turn gently into shadow on the right, the dark band under the brim is soft, and the shopping bags are lit evenly. B (night porch): the lantern and the window glow are strong light sources that pick out the ghost sheet in warm orange from below. The cow is still lit cleanly from the front like a daytime key that has no source in the night scene. Form contrast is 0.638 on B, above the real range of 0.442–0.598.",
+   "fix": "Light the cow and the ghost mostly from the cool moonlit night, with only a small warm pool from the lantern on the lower sheet. Let the cow's far side fall into a soft blue shadow, and stop the front-lit glow on the cow's face."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (vampire and mummy turkey): a table lamp sits behind the turkey, yet the turkey and the man are lit from the front, with even warm light on the bandages. The lamp does not rim them, the curtain folds sink into deep dark, and the forms read with high contrast (0.643; side bias 0.664, above the real cards). B (backyard movie): light is broad and soft, the man's back and shirt turn gently into shadow, and the screen and string lights add little. Its bias is also high, but its form contrast of 0.442 sits inside the real range.",
+   "fix": "Make the table lamp the main light. Add a warm glow along the turkey's back edge and the man's cheek from the lamp side, and keep the fronts in soft medium shadow instead of an even, frontal fill. Lighten the curtain's shadow folds."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (spaceship): a cool key from the window side, small sharp highlights on the metal suits, and red and cyan glow from the console onto the hands. B (Jenga at night): the scene is set under stars, but the cow's belly and face are modeled with a bright, round studio key and deep, even shadow on the far body side. Form contrast is 0.667, above the real range of 0.442–0.598. The blocks are lit like daylight.",
+   "fix": "Dim the key on the cow to soft, cool moonlight. Use a gentler turn from the lit side to the shadow side on the belly and face, and darken the blocks' shadow faces only slightly."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (UFO, man and pig): frontal daylight with soft cast shadows on the grass. B (badminton): the man is turned away with his back half in shade, and the pig is lit from the front. Both lean their light strongly to one side (0.534 and 0.461, above the real cards). Neither one's handling of form turn or shadows is clearly off the real pattern.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (cowboy): a clear key from upper left, a shadow under the hat brim across the eyes, and a darker right side on the shirt and the pig. B (concert): coloured stage spots sit behind the characters, yet the pig and cow are lit flat from the front. There is no coloured rim from the stage lights along their heads or shoulders, and B's shading range of 0.576 is at the very bottom of the real range.",
+   "fix": "Add pink, green and yellow rim light from the stage spots along the top of the pig's and cow's heads and shoulders, and let their front faces sit in softer, slightly darker fill."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (caravan): a clear key from front-left, the right end and back fall into a cool blue-dark shadow, and the wheel has a soft contact shadow, just like the real camera and computer cards. B (drum kit): a spotlight comes from directly above, but the bass drum head and shells are lit evenly from the front. The stage has only faint cast shadows, and the shading range of 0.902 overshoots the real cards.",
+   "fix": "Light the drums mainly from the overhead spotlight: brighten the tops of the drums and cymbals and let the front of the bass drum head fade darker downward. Drop soft dark cast shadows from the stands and drums onto the stage."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (ship's wheel): lit straight on and symmetric, with the same brightness on the left and right spokes. The core shadow is weak, and there is only a faint shadow under the base. The shading range of 0.573 is below the real range of 0.658–0.900. B (fruit plate): directional light from upper left, a soft cast shadow from the plate onto the table toward lower right, and small sharp highlights on the water drops and grapes.",
+   "fix": "Light the wheel from the upper left. Put the right-side spokes and rim in darker shadow with a visible core shadow along the ring, and drop a soft cast shadow from the wheel and its stand onto the deck toward lower right."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (farm, hay bale): broad, soft daylight. B (sunset picnic): broad frontal light on the cow, with the sunset doing little to the edges. Both cards fall below the real light-bias range (0.078 and 0.118) and have near-identical form contrast, so this vector does not separate them.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards still give themselves away with frontal, centered light that the scene does not motivate. Night, stage-light, lamp-lit and sunset scenes still light the hero with a clean daytime studio key from the front, with no coloured rim or bounce from the lights shown in the picture. Where real cards commit to one dark side (the cool blue shadow on the right of the camera, computer and caravan), generated cards light both sides evenly. Or they overshoot with a deep, high-contrast round body turn, and they drop weak or missing cast shadows onto the ground surface."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (beach ball): few, clean panel seams and a crisp outer edge. It is sparser than the real cards (0.029), but the edges it has are precise. B (twig ball): every twig carries hard double edges with blunt cut ends, and the sand is speckled. Subject density 0.221 is above the real range, which matches the over-detailed generated cards in the lessons.",
+   "fix": "Draw the twig ball as a few thick, smooth, rounded branches with simple soft-shaded surfaces. No bark grain, no many separate stick ends, and plain smooth sand with no speckles."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (book): its sticker icons have thick doubled die-cut contours (outline 0.165), but the cover and page block have few edges. B (belt): the coil carries dense dotted stitch lines on every loop, the buckle has a hard rim ring, and the floor has strong plank and grain lines. Subject density 0.34 is far above the real range. Over-stitching is the same tell as the generated mitts in the lessons.",
+   "fix": "Draw the coiled belt as smooth leather with soft rounded edges and no stitching. Make the floor planks simple, with faint gaps and no wood-grain lines."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both cards have dense internal detail. A (boots): dotted stitching on the shafts and a crisp spur. B (sneakers): tangled lace edges, a fine mesh texture on the toe, and a hard horizon line across the background. Its outline reads light (-0.1, below the real range), as if a pale rim sits around the shoes.",
+   "fix": "Draw the sneakers with a few large, smooth panels and simple chunky laces, and no mesh texture. Blend the floor softly into the wall with no sharp line."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the iced-tea card from the real set: crisp glass rim, clean ice-cube edges, light diamond pattern behind. B (neon ice cream): a glowing halo surrounds the whole hero, the tube sign has doubled contours, and the green wall has strong vertical groove lines. Background density 0.049 is above the real range.",
+   "fix": "Remove the glow around the ice cream so its outer edge is crisp against a plain wall. Draw the wall as a soft, even color with no deep vertical grooves."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (viewer binoculars): bold, clean contours on the eyepieces and body, and a simplified city behind. B (campfire): speckled noise texture on every rock and across the ground, scattered pebbles, and a fussy log cabin and trees in the background. The flames themselves have soft, lost edges, so the sharpest edges are not at the focus.",
+   "fix": "Draw smooth, rounded stones with no speckle texture and plain dirt ground. Give the flames a crisp outer shape, and simplify the cabin and trees into soft, out-of-focus shapes."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (cowboy hat): a dark, drawn-looking contour runs around the brim and crown. The inside is almost empty apart from a faint felt texture (density 0.028, below the real range). B (grad cap): crisp board corners and a clean button and tassel, with a light rim (outline -0.096). It reads closer to the real cards' clean edges.",
+   "fix": "Remove the dark line around the hat brim and let the brim edge come from shading alone. Add a clear crease line on the crown and a crisp edge where the band meets the hat."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 5,
+   "difference": "B is the lighthouse from the real lesson cards. A (windmill): very dense edges in the blade fan, the cross-braced tower and its bolts, every grass blade in the field, and the cloud interiors. Subject density 0.313 is above the real range.",
+   "fix": "Draw the windmill with fewer, wider blades and a simple tower with two cross braces and no bolts. Make the field a smooth golden ground with only a few grass tufts."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A (cactus): smooth ribs with clean grooves and sparse background. B (spiral topiary): hundreds of small leaf contours across the whole hero, plus a speckled hedge wall and grass tufts. Density 0.29 is above the real range.",
+   "fix": "Draw the topiary as smooth, rounded green spirals with soft shading and only a hint of leaf clusters on the outer edge. Make the hedge behind a plain soft band."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (saddle): crisp outer edge, dotted stitch lines and clean strap seams, all within the real range. B (boxing gloves): soft, smeared outer edges where glove meets glove, almost no internal edges (0.037, far below the real range), and strong vertical wall grooves behind. The background is sharper than the hero, so the edge hierarchy is inverted.",
+   "fix": "Give the boxing gloves a crisp outer silhouette, a clear seam where the thumb meets the glove, and a defined cuff edge. Make the wall behind soft and plain."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the suitcase card from the real set. B (lawnmower): the handle and deck edges are clean, but grass tufts and little flowers are spread evenly across the ground. The ring background is soft, and the mower deck seams are vague.",
+   "fix": "Draw a crisp panel line between the mower deck and the motor cover. Let the grass be a smooth lawn with only a few tufts near the wheels."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A (oil lamp): thin, precise contours on the chimney glass, and the brass base reads cleanly. B (lantern): a heavy dark contour runs around the handle loop, cage bars and base, and many doubled lines cross the glass. Subject density 0.231 is above the real range.",
+   "fix": "Draw the lantern with fewer cage bars, a smooth metal finish and no dark line around the handle and base. Let the edges come from light and shadow on the metal."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (wagon wheel): thick doubled dark contours on the iron rim, streaky wood-grain lines on every spoke, and many rivets. Subject 0.182 and background 0.02 are both above the real range. B (submarine): smooth hull with crisp porthole rings and few internal lines, within range.",
+   "fix": "Draw the wheel with smooth, softly shaded wooden spokes and no grain streaks, and a plain rounded iron rim with no double edge line. Use only a few rivets."
+  }
+ ],
+ "pattern": "Generated cards pile hard edges into the hero: extra stitching, wood grain, leaf clusters, bolts and mesh. They also carry heavy doubled dark contours around rims and handles, and speckled texture on ground, grass and rocks. That pushes edge density above the real range. Less often, the hero is over-soft, with lost or haloed outer edges while the background stays sharp."
+}

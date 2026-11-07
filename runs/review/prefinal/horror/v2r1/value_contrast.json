@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the lamp sits in a bright light-grey burst right behind it, and all four corners drop to the darkest grey. That is the glow-plus-dark-corners pattern from the generated gloves (vignette 0.144, above the real range). B: the key is a dark mass on an even mid-grey burst, and its corners darken only slightly.",
+   "fix": "Keep the green sunburst at an even brightness all the way to the corners. No bright halo behind the lamp and no dark corners."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a small mid-dark clock in a pool of light on a plain backdrop, with dark-grey corners all round. The light falls off like a spotlight, and the hero takes up little of the card. B: the dark vending machine fills the frame against a flat mid-grey backdrop, with a light front panel. The value groups are simpler and bolder.",
+   "fix": "Make the clock fill more of the card. Light the backdrop evenly, with no spotlight pool on the floor and no darkened corners."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a black hat on a light-centred purple with dark corners, in a dark key (0.565). B: the card splits hard along a horizon line, mid-grey wall above and a near-white floor below. The floor is a large clipped white field, and the bright key (0.762) is unlike the real cards, which have no half-card white plane.",
+   "fix": "Replace the split wall and floor with one continuous coloured backdrop. Darken the floor to a mid tone so the white soles stand out against it."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a large near-black cat sits against a glowing light patch behind it, and the top corners are dark. Key, gap and vignette all fall outside the real range (0.524, -0.259, 0.117). A: the light wooden chair is separated from the mid-grey stripes in a simple way, with no halo.",
+   "fix": "Light the stripes evenly behind the cat with no glow patch, and keep the top corners as bright as the centre. Add soft lighter grey-brown fur highlights so the cat is not a flat black mass."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a light burst sits close behind the ring box, and the corners go to the darkest grey (vignette 0.162, the highest in the set). The red box itself reads as a dark band. B: the mask sits on an even light-to-white burst and the corners stay light.",
+   "fix": "Keep the cyan rays the same brightness from the centre to the corners. No dark corner shading."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the broom and the grass both sit in the same mid-grey group, and the grass has a speckled texture. Overall contrast is low (0.095, below the real range). Only the bristles separate from the ground. A: dark binoculars on a light plank floor with a clear cast shadow, a strong separation of dark against light.",
+   "fix": "Use a lighter, smoother grass field without speckled texture. Give the broom a darker handle and a clear cast shadow so it stands out by brightness."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the clear jar's tones merge into the mid-grey backdrop, so the hero has almost no edge. A dark weathered tabletop fills the lower third, and contrast is low (0.109). That repeats the dark table seen under the generated computers. B: a white caravan stands out clearly against the mid-grey sky and grass.",
+   "fix": "Put the jar on a light, clean surface or none at all. Give the glass a bright rim and a darker inner edge so the jar stands out from the background."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the topiary is a mid-dark textured mass against a busy band of hedge, sky and path that is about the same value. The hero has no light-against-dark frame. B: a dark mask and tube sit on light planks and a mid-grey water area, with clear separation.",
+   "fix": "Simplify the background to a light sky and a lighter lawn. Make the bush's top surfaces lighter so it reads as one shape against the background."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a near-black night sky covers most of the card, with only the signs and windows light. Key 0.487 and gap 0.284 are both far outside the real range, giving tenebrism that the real cards never use. B: a dark lamp post on a mid-grey paved square, with an even middle key.",
+   "fix": "Use a dusk-blue sky that is medium-bright rather than black. Keep the signs as the brightest shapes, but lift the building and fence to mid tones."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: a dark weathered table fills the bottom third, the top corners darken, and a light stripe area glows behind the pumpkin. Vignette is 0.086, at the top of the range, and the dark table matches the generated computer cards. A: a high-key, nearly all-light fountain on even stripes. It is bright but has no vignette.",
+   "fix": "Remove the dark table and either use a light floor or let the pumpkin float. Keep the stripe backdrop at one brightness out to the corners."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a large black window opening in the middle and a black night sky at the left, against light stone, in a dark key (0.534). The darkest accent covers a large area rather than small touches. B: a mid-grey gate in front of light paving and a mid-grey sky, with a balanced middle key.",
+   "fix": "Make the window glass a deep blue mid tone with reflections instead of solid black. Lighten the night sky to a medium blue."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a near-white lion and base, clipped in large areas, set against a dark tree-and-grass background. The hero is far brighter than the background (gap 0.211, above the real range), a hard spotlight-like separation. A: a dark mask on mid-grey planks and water, within the real ranges.",
+   "fix": "Shade the marble statue down to light grey with soft shadow sides. Brighten the garden and trees to mid tones so the statue does not glow against a dark background."
+  }
+ ],
+ "pattern": "Generated cards push the dark-light design further than the real ones: dark corners with a bright patch right behind the hero, large near-black areas (night skies, black windows, black heroes), dark weathered tabletops filling the lower third, or a split white floor. Real cards keep an even, middle-to-light background that runs out to the corners. They separate the hero with a clear but moderate value step and use darks only as small accents."
+}

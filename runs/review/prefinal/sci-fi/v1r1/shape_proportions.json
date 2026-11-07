@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the chip board is a thick, swollen green slab with rounded corners. Its pins are fat yellow nubs, so the edge reads as a scalloped blob. Corner rate 8.9 and solidity 0.977 are both outside the real range. B: the book has flat cover planes, a straight spine, tight corners, and thin ribbon tabs that read as real parts.",
+   "fix": "Draw the chip as a thin, flat circuit board with straight edges and crisp, slightly bevelled corners. Make the pins thin metal legs in an even row, and keep the black die low and flat."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the helmet is one inflated sphere on a fat ring collar. The visor bulges past the shell, and the ear disc is a soft lump. It has almost no corners (corner rate 0.86, below the real range) and solidity 0.973. B: the sneakers keep a believable shoe length, a flat sole, and cut-in collar and lace notches.",
+   "fix": "Draw the helmet with real proportions: a slightly taller dome, a visor set into the shell instead of bulging out, a thin flat neck ring, and small crisp side fittings."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the flask has a short body and an oversized cork, and the lip ring is fattened into a thick donut. The rest of the contour is clean. B: the locker is a straight-sided box with a slab door and short feet. Its straight share of 0.68 is a little high, but the faces stay planar. The evidence is weak on both cards.",
+   "fix": "Draw the flask with a longer, thinner neck, a thin glass lip, and a cork no wider than the neck."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the UFO hull is a swollen lens. Fat, ball-like lights sit on the rim and make the edge lumpy, and the dome is a large, soft half-sphere. A: the airplane keeps a long fuselage, thin swept wings, a thin tail fin, and engines in proportion.",
+   "fix": "Draw the saucer as a thin, flat disc with a sharp outer rim edge. Use small lights set flush into the rim and a smaller dome."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the rover is toy-like. The wheels are oversized and the fenders are thick pillows, and the dish mast is a fat post with a big plate on top. Thin parts such as struts, frame and antenna are missing (thin share 0.016). A: the bicycle keeps a thin tube frame, spokes, and handlebars.",
+   "fix": "Draw the rover with a thin open tube frame, slim struts to the wheels, thin wire-mesh wheels, and a narrow antenna mast with a small dish."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the rocket is one smooth, inflated capsule with a short body. Its fins are thick, slab-like wedges, and the nose cone blends into the body with no seam. B: the balloons have correct ovals, thin strings and a small knotted bow.",
+   "fix": "Draw the rocket longer and slimmer, with a distinct pointed nose cone. Make the fins thin and sharp-edged and the nozzle ring narrow."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the column has a flat abacus slab, round volutes, and a straight shaft and plinth. B: the arch has a leafy, ragged contour, which explains its extreme corner rate, over a thin lattice arch. Both read as plausible game objects, so this vector gives no clear tell.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the vault door is a thick disc ringed by bolt bumps. The hinges are chunky blocks, and the wheel is a fat orange toy wheel with stubby spokes. B: the gate keeps thin wrought-iron bars and scrolls (thin share 0.39) between straight brick pillars.",
+   "fix": "Draw the vault door with a flat face, a thin bevelled rim and flush bolts. Use slim hinge arms and a wheel with thin spokes."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the console is a single pillowy block with very soft, large-radius corners (corner rate 0.70, below the real range). The back panel and desk slope merge into a swollen mass, and the levers are tiny stubs. B: the claw machine has a distinct roof cap, a glass box, and a base with feet, and its corners are tighter.",
+   "fix": "Draw the console with flat panels and tight bevelled corners. Make the sloped desk a clearly separate angled plane from the upright screen housing, and give it thin lever handles."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the stone chess table has a flat top slab, a pedestal and a round stool, and its rim corners are tight. B: the target is a round disc on a thin easel with a teddy bear beside it. Neither card shows swelling or missing thin parts.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the dish is a plain, solid ellipse with no rim depth. The feed arm is short and thick, and the mount is a fat cylinder on a wide flange, so the proportions are stubby. A: the fan keeps a thin wire cage, a thin pole and a narrow neck joint.",
+   "fix": "Draw the radar dish with a thin rim and a visible curved inner bowl. Use a long, thin feed arm on slim struts and a narrow mast."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the satellite body is a crumpled gold box, and the solar panels are thick slabs with rounded corners. The dish sits on a short, fat post. Its corner rate of 4.9 is above the real range. A: the medal box has a soft lid and base, but that matches how a velvet box really looks.",
+   "fix": "Draw the solar panels as thin, flat sheets with crisp corners on slim connecting rods. Make the body a clean box with straight edges, and mount the dish on a thin boom."
+  }
+ ],
+ "pattern": "Generated sci-fi cards still inflate their objects. Hulls, consoles and helmets swell into pillowy, toy-like masses with big-radius corners. Thin parts (struts, rims, booms, levers, spokes, fins) come out as fat stubs or slabs, or go missing. Rims and edges get lumpy add-ons such as ball lights and bolt bumps. Real cards keep flat planes, tight bevels and thin connecting parts."
+}

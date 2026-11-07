@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the umbrella canopy has scalloped panel edges with tight corners at each rib tip, and the pole is thin and straight. That matches the real cards. B: the UFO is one smooth lens-shaped blob. The dome sits on it with no flange or seam in the silhouette, and the rim lights are the only breaks in the outline (corner_rate 2.0 vs 4.0, solidity 0.947 near the top of the real range).",
+   "fix": "Draw the saucer with a crisp, thin outer rim edge and a distinct stepped collar where the dome meets the hull. Keep the rim flat, not a swollen pillow."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the rocket's fins are thick, inflated slabs and the body is a fat, smooth capsule. The flame adds jagged corners, so corner_rate is 5.58, above the real range. B: the airplane is chunky, but its wings and tail fin keep straight leading edges and tight tips, which matches the real-card simplification.",
+   "fix": "Make the rocket fins thin, flat plates with straight edges and sharp tips. Keep the body slimmer, with a straight-sided cylinder below the nose cone."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the balloons have round bodies, small knot tips and thin strings, which reads like a real card. B: the UFO is a swollen yellow egg with no straight runs and almost no corners (corner_rate 0.47, solidity 0.95). The dome and pods melt into one soft blob.",
+   "fix": "Give the saucer a thin, flat disc rim with a crisp edge. Set the dome on a distinct ring, and draw the thrusters as separate short cylinders under the hull."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the folded map has crisp fold corners and an attached magnifier handle, so the silhouette has parts and breaks. B: the star chart is a perfectly plain rounded slab with uniform soft corners and no part breaks at all (corner_rate 0, solidity 0.991, both outside the real range).",
+   "fix": "Draw the star chart as a thin flat board with tight beveled corners. Add something that breaks the outline, such as a raised frame lip, a corner clip or a small tool lying on it."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the ice tray has four cell walls with notches between them, a protruding rim lip and a cube on top, so the outline has several parts. B: the paddling pool is one smooth stacked oval with no corners (corner_rate 0.39, solidity 0.994, both outside the real range). This pool shape is plausible for an inflatable, so the call is weak.",
+   "fix": "Show the three rings as clearly separate tubes with visible pinches between them, and add a valve or a toy edge that breaks the outline."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the energy cell's caps bulge out as soft rounded discs and the glass body has slightly sagging sides (corner_rate 0.89, below the real range). B: the vending machine is a straight-sided box with tight top corners and small feet, which fits the real cards' flat faces.",
+   "fix": "Make the end caps flat discs with crisp edges and straight vertical sides. Keep the glass tube perfectly straight-sided."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the sandcastle silhouette is busy, with crenellations, a bucket and a spade crowded into one mass (corner_rate 10.3, above the real range). This matches the lessons, where generated cards add extra props. B: the bumper car has a single clean body, a thin pole and a flat bumper skirt.",
+   "fix": "Draw only the sandcastle, with fewer towers and no bucket or spade crowding the base."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the drone's rotors are thick, flat discs instead of thin blades, the arms are stubby and the camera pod is a ball. The whole thing reads like a toy. B: the street lamp keeps thin, consistent scroll and pole thickness with tight finials, as on real cards.",
+   "fix": "Draw thin two-blade propellers inside thin guard rings. Use slim straight arms and a compact flat body."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "A is the reference lighthouse from the lessons, labelled REAL. B: the antenna mast has a dish drawn as a flat round blob, and the stubby rods have soft ends. Its solidity is 0.486, below the real range.",
+   "fix": "Draw the dish as a shallow bowl with a visible rim edge and a feed arm. Make the antenna rods thin, with crisp square ends."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the lunar rover has fat, swollen wheels and fenders, pillowy seats, and a stubby dish on a thick post, so it reads like a toy. B: the bicycle keeps a thin frame, thin spokes and a thin handlebar, which matches real-card part thinness.",
+   "fix": "Draw the rover with a thin tubular frame, slimmer wire wheels and a flat seat panel. Put a thin mast under the dish."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the book has a straight spine, tight cover corners and ribbon bookmarks breaking the outline. B: the tablet is a perfectly uniform rounded rectangle with nothing attached (corner_rate 0, solidity 0.992, both outside the real range).",
+   "fix": "Draw the tablet as a thin slab with tighter corners and a visible edge thickness. Add a feature that breaks the outline, such as a stand, a stylus or a side button."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the sneakers have tongue, collar and sole steps that give the outline real corners. B: the astronaut helmet is an inflated sphere on a swollen collar ring, with soft blobby transitions (corner_rate 0.45, below the real range).",
+   "fix": "Give the helmet a flatter visor opening with a crisp rim edge, and draw a distinct stepped metal neck ring with tight bevels."
+  }
+ ],
+ "pattern": "Generated cards fill out the silhouette. Outlines become smooth swollen blobs with no part breaks (very high solidity, corner_rate near 0), thin parts such as blades, fins, rims and dish edges become thick slabs, and flat objects become uniform rounded slabs. The opposite failure is extra props crowding the outline."
+}

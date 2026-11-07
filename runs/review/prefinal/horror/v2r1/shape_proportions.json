@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the oil lamp's chimney, collar, flat foot and loop handle are in true proportion, and the handle and finial stay thin. Its high corner_rate comes from the many small parts, not from blobbing. B: the old key has a crisp collar, a straight shaft and a squared bit with clean notches. The ring is a little thick, and the low solidity comes from the diagonal pose. Neither card shows the swelling seen in the lessons.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the grandfather clock has flat side panels, a stepped cornice, a straight trunk and a stepped plinth with tight edges. B: the vending machine body is one swollen slab. The top edge bulges, the top corners are large soft radii, and the sides bow slightly. The door frame and coin tray are puffed into rounded tubes, and the feet are knobs. It reads as an inflated box.",
+   "fix": "Draw the vending machine as a hard rectangular cabinet with flat side and front panels, straight vertical edges and small tight bevels on the corners. Make the door frame and the dispenser slot thin and flat."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the witch hat has a thin, flat brim ellipse and a creased cone with a sharp bent tip. The band and buckle sit flat. B: the sneakers have overinflated midsoles, each a fat rounded cushion about a third of the shoe's height. The upper's panels and collar are puffed like pillows, and the laces are thick cords. The proportions are toy-like.",
+   "fix": "Draw the running shoes with a slimmer midsole that is no taller than the shoe's side panel. Keep the upper close-fitting with flat panels, and make the laces thin."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the rocking chair's back spindles, legs and stretchers are thick round dowels. The rockers are fat crescents, the finials are big balls, and the seat cushion is a swollen pillow. Thin rails have become sausages, which is the opposite of the real slide ladder's thin rails. B: the cat is a simple sitting silhouette with plausible ear, chest and tail proportions.",
+   "fix": "Draw the rocking chair with slender spindles and legs, thin flat rockers, small finials and a flat seat cushion. Leave clear gaps between the rails."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the ring box has no tight corners anywhere (corner_rate 0.77). The lid and base are pillows with big soft radii, the walls bulge, and the insert is a puffy cushion. The box is enlarged and squat around a large coin. B: the masquerade mask has crisp pointed brow peaks, clean almond eye holes and a feather with a defined tip.",
+   "fix": "Draw the jewelry box with flat lid and base faces, straight edges and small tight corner bevels. Make the walls thin and the lid a flat slab, and keep the insert slim."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the binoculars are stubby fat cylinders. The barrels are short and wide, the bridge is a chunky block, and the eyecups are thick rings. It is a compact toy-like mass (solidity 0.907) with no thin hinge or focus wheel. B: the broom has a long thin straight handle, a tight binding and a flared, frayed straw head, all in true proportion.",
+   "fix": "Draw the binoculars with longer, slimmer barrels, a thin hinge bridge between them and a small focus wheel. Give the eyepieces narrow rims instead of thick rubber rings."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the candy bowl is a round fishbowl with a slightly thick rolled rim and a short flat foot. Roundness is natural for this object, even though solidity is 0.993. B: the caravan has a rounded body as real teardrop trailers do, plus a thin hitch bar, a jack leg, an awning box and a wheel arch. No clear swelling on either card.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the topiary's stacked spiral tiers and flat stone ring base are plausible and the edges are leafy. B: the snorkel tube is a thick sausage the width of the mask strap. The mask frame is a fat swollen ring, the mouthpiece is a puffy blob, and the skirt bulges. The whole outline is soft and inflated with no thin parts.",
+   "fix": "Draw the snorkel as a thin tube about a third as thick, with a slim mouthpiece. Give the mask a narrow flat frame and a thin strap."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the motel sign panels are slabs with thick, softly rounded borders. The bed panel is skewed and swollen, and the arrow and fork-knife boards are chunky with blob corners. B: the street lamp has a thin post, a crisp lantern cap with sharp eaves, small collar rings and a flared base. Its thin parts stay thin.",
+   "fix": "Draw the sign boards as flat thin panels with straight edges and tight corners. Give them narrow frames and make the support poles thin."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the fountain has stacked basins with flat rims and a thick outer ring. The water jets read as thick ribbons but are plausible. B: the pumpkin is a round ribbed body (solidity 0.96, natural for a pumpkin) with a curled stem. No clear proportion or planarity flaw on either card.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the window's mask filled the whole opening, so the lens hides the frame. On the card, the arched frame and mullions are straight with crisp bevels. B: the wrought-iron gate's thin bars and scrolls are correctly thin. The high thin_share fits this object and is not a flaw, and the segmentation also picked up a pillar ball. No shape evidence favors either.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the same snorkel as p08. It has a fat sausage tube, a swollen mask frame, a blobby mouthpiece and a soft inflated outline with no thin parts (corner_rate 1.08). B: the lion statue sits on a stepped plinth with flat planar faces and crisp edges. The mane and paws are in believable proportion.",
+   "fix": "Draw the snorkel as a thin tube about a third as thick, with a slim mouthpiece. Give the mask a narrow flat frame and a thin strap."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away by inflation. Parts that should be thin are drawn as fat sausages: snorkel tubes, chair spindles and rockers, sign borders, sneaker soles, binocular barrels. Boxes and panels swell into pillows with big soft corner radii instead of flat faces and tight bevels: the ring box, vending machine and motel sign. Objects are squat and chunky like toys instead of keeping their true slenderness, and real thin details such as hinges, wheels and straps are dropped."
+}

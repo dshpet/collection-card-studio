@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (umbrella): the canopy's outer edge is soft and blends into the background, and the scallop folds show as broad, gentle transitions. B (UFO): the saucer rim and every bulb have a dark, even contour all the way round, and the dome has a doubled ring line where it meets the hull. That is the closed, sticker-like silhouette the generated lesson cards show.",
+   "fix": "Let the saucer's rim fade softly into the green background on the shadow side. No dark line around the hull or bulbs. Show the dome seam as a slight change in brightness, not a double ring."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (rocket): a small, complete silhouette in the middle of the card. The fins and window ring have clean, even contours and the clouds are simple shapes, like the generated lessons' neat isolated subjects. B (airplane): the plane runs off the frame, and the clouds have loose, painterly swirl edges, as on the real lighthouse lesson card. B's background density (0.018) is a little above the real range, but that comes from painted cloud texture, not drawn outlines.",
+   "fix": "Draw the rocket larger so the frame cuts it. Soften the far fin and the shadow side of the hull into the sky. Paint the clouds with loose, uneven brushwork."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (balloons): the balloon edges are soft and lost against the sky, and the strings are thin. Subject density (0.028) is below the real range, which comes from soft edges, not outlines. B (yellow saucer): a crisp, dark, even contour runs round the whole hull, the dome base and the thrusters, with a thin, precise seam line under the dome.",
+   "fix": "Remove the dark rim around the yellow hull. Let its lower edge melt into the bluish shadow and the clouds, and show the dome seam only as a change in brightness."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (map): the fold creases are soft, the continent edges are wobbly and hand-drawn, and the magnifier rim has varied edges. B (star board): a thick, doubled dark border goes round the whole board, and the grid, ring and constellation lines are all ruler-perfect, the same width and the same darkness. Its outline darkness (-0.28) is far outside the real range, and its background density (0.038) is within it.",
+   "fix": "Show the board's edge as a light bevel catching the light, with no dark double border. Let the grid lines fade toward the corners, and give the star links slight changes in thickness."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (ice tray): the frost speckles break up the rims, and the cube edges vary between hard and soft. B (pool): the rings have smooth, soft edges, but the grass and fence behind are full of evenly spread little tufts and plank lines. Its background density (0.055) is above the real range while its subject density (0.045) is below it, so the pool is busier behind than in the focus, which is the wrong way round.",
+   "fix": "Simplify the grass into broad, soft green areas with only a few tufts, and blur the fence planks. Give the pool rings and the duck crisper edges than the background."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (energy cell): the metal caps have stacked double contour rings, the glass tube has two even parallel edge lines, and the background is almost empty (0.006, below the real range). The whole thing reads as a neat isolated drawing. B (vending machine): a dark outer contour, but busier interior edges among the cans and bottles, and a background within the real range.",
+   "fix": "Let the glass tube's far edge fade into the pink background. Merge the stacked cap rings into one soft-shaded rounded edge, and add a soft floor shadow with a gradient."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A (sandcastle): soft, irregular sand edges, with crisp edges only at the tower tops. B (bumper car): a few firm grooves along the stripe and bumper, but the reflections and floor stay soft and the pole is cut by the frame. Both sit inside the real ranges on every field, so edges give no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (drone): each rotor disk has a thick, dark, even rim line. The body and the camera ball are closed by the same contour, and the whole drone floats small in the middle with an almost empty background. B (street lamp): strong contours too, outline darkness slightly above the real range, but the post is cut by the frame and the scroll has varied line weight. The evidence is mixed.",
+   "fix": "Remove the dark rims from the rotor disks and show their thickness with a light top edge and a soft shadow side. Draw the drone larger, partly cut by the frame."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the real lighthouse from the lessons, with soft, painterly cloud edges and chunky brick seams. B (antenna mast): a thin subject with even, crisp contours on every bracket, a ruler-straight rooftop grid, and a background density (0.010) below the real range.",
+   "fix": "Draw the mast big and cut by the frame. Give the rooftop slabs soft, irregular seams that fade with distance, and let the far side of the pole fade into the sky."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (rover): dark, even contours around the wheels, seats and dish, and evenly spread pebble dots across the ground. It is a complete, isolated object model. B (bike rack): the very dense edges come from the spokes, and the frame crops the car and bike. Its background density (0.094) and outline darkness (-0.145) are slightly outside the real ranges, but they come from painted scenery, not drawn outlines.",
+   "fix": "Soften the wheel and seat outlines into shaded rounded edges. Reduce the pebble dots to a few larger rocks, and let the distant crater edges fade out."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A (guidebook): the stickers have thick outlines, but the book edges and cloth bookmarks vary in edge weight. B (tablet): a heavy, even black bezel contour, doubled at the inner screen line. Its outline darkness (0.43) is far above the real range, while its subject density (0.065) is low. The brushed-metal background noise is the only other texture.",
+   "fix": "Draw the tablet body as a rounded, soft-shaded slab with a light edge catching the light, not a black border. Replace the brushed-metal noise with a smooth, softly lit surface."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (sneakers): the many lace, mesh and sole edges vary in strength and the shadows are soft. B (helmet): clean, even contours around the visor, ear disk and base rings, with doubled parallel lines on the collar bands. That is the uniform, ruler-precise linework of the generated lessons.",
+   "fix": "Let the helmet's shadow side fade softly into the purple background. Show the collar bands as rounded shaded rings without parallel dark lines, and keep the sharpest edge only on the visor's bright highlight."
+  }
+ ],
+ "pattern": "Generated cards close the hero with an even, dark contour that runs round the whole silhouette and stays the same weight in light and in shadow. Rims, bezels and collars get doubled parallel lines, and seams look ruler-made. The hero sits small and complete in the frame against a sparse background. Real cards let edges get lost on the shadow side and let the frame crop the subject. Their background edges are painterly and uneven."
+}

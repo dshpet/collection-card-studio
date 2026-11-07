@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A (cooler) is the same card as the anchor sheet. Its contours are firm and the background is quiet: sand speckle and soft cloud lines (bg 0.015). B (paddling pool): the subject's edges are weak and lost along the pool rings (0.045, below the real range). Meanwhile the background has many even-weight lines: a fence of vertical plank grooves, scattered grass tufts, and water-ripple loops around the duck. The background ends up busier than the hero (bg 0.055 vs subject 0.045), so the edge hierarchy is inverted.",
+   "fix": "Give the pool rings crisp, defined edges where each ring meets the next. Make the fence a soft, blurred backdrop with no sharp plank lines. Remove the scattered grass tufts and use only one or two gentle ripples around the duck."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (envelope): one clean outer contour with thin fold seams and an embossed wax seal. Its outline sits within the real range (0.062). B (book): every sticker on the cover has a thick, dark, doubled contour, as if drawn with a marker, and the map pins and bookmarks are ringed the same way. Its outline darkness of 0.165 is above every real card, and the cover is crowded with small closed shapes.",
+   "fix": "Draw the cover icons as flat printed shapes with no dark border around them. Let the book's edges come from light and shadow only, with no drawn line."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (parasol): a dark, continuous line runs along the top of the dome. The lace frill is packed with tiny eyelet flowers that are as sharp as the silhouette. Outline darkness is 0.15, above the real range. B (beach umbrella): panel seams are soft and the outer edge is defined by shading, with low internal density. The ring background is equally faint in both.",
+   "fix": "Remove the dark line along the top of the parasol and let the yellow dome meet the background by tone alone. Show the lace as a soft pattern, not dozens of sharp holes."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (gloves): a dark, uniform contour runs around both glove silhouettes. Inside, a very dense field of crisp lace flowers and scrolls is as sharp at the wrist as at the fingertips, so there is no hierarchy. B (fan): big simple pleats with thin, precise seams, a moderate outer edge, and sharpness concentrated at the rivet.",
+   "fix": "Keep the gloves' outer edge soft, with no dark border. Render the lace as a gentle tonal pattern that fades toward the fingers instead of crisp engraved lines everywhere."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (wingback chair): fine noisy texture runs across all of the velvet in the edge map, the button tufts radiate hatch-like creases, and the floor planks and reflections are drawn at full sharpness. Its outline value (-0.121) falls outside the real range. B (rocking chair): clean, thin, precise edges on the rails and slats, a simple floor, and a clear silhouette. Evidence is mixed.",
+   "fix": "Make the velvet smooth with broad soft shading and no fine fabric texture. Keep the floor reflections soft and blurred so the chair is the sharpest thing in the image."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (scout jacket): a continuous dark contour around the whole jacket, plus many internal seams such as pocket flaps, sash edges, badge rims and buttons, all at equal weight. Subject density of 0.159 is just above the real maximum. B (top hat): few edges; the crown top is soft, the brim edge is crisp and the band seams are thin, so the hierarchy is clear.",
+   "fix": "Remove the dark line around the jacket and use fewer seams. Keep the badges sharp as the focus and let the sleeves and hem soften."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (quill and inkwell): the feather has fine barb lines, the glass rim edges are thin, and the striped wall is faint. B (fountain): crisp tiers and water sheets, and paving lines fill the lower background (bg 0.046, at the top of the real range). Both fall within the real ranges and neither shows a drawn outline.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (ship's wheel): an even contour around the spokes and wood-grain lines on the base, with a quiet background. B (gramophone): the horn rim has a heavy dark edge, and there are stacked crisp lines on the record, the cabinet panel and the crank. Subject density of 0.192 is above the real maximum, and the floor reflection is drawn as hard streaks.",
+   "fix": "Soften the horn's rim so it meets the purple background by light and shadow, not a dark ring. Blur the floor reflection and simplify the cabinet panel lines."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (stage spotlight): the truss across the top is drawn with hard, dense lattice lines that are as sharp as the lamp. Background density of 0.061 is far above the real maximum of 0.017. B (coral): dark contours around every branch and dense pore dots. The background is also elevated (0.022), but its waves stay faint.",
+   "fix": "Push the overhead truss out of focus as a soft, simple bar with no sharp lattice. Keep the lamp lens rims the crispest edges in the image."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (medal box): a soft, rounded outer edge with few internal lines, and a clean embossed medal rim. B (pocket watch): heavy dark numerals and tick marks, a thick dark rim around the case, and every chain link outlined crisply. Subject density (0.239) and outline darkness (0.162) are both above the real maximum.",
+   "fix": "Make the watch case meet the green background by shading, with no dark border. Print the numerals in soft brown at a smaller size and let the chain soften away from the case."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (green door): every brick joint across the wall is drawn as a dark groove, and the flowers, steps and paving are just as sharp. Background density of 0.244 is far above real and the door does not stand out. B (blue door): also busy, with ivy leaf contours and a dense wreath (subject 0.342), but the door panels hold the focus and the wall area is small.",
+   "fix": "Paint the brick wall as soft, low-contrast blocks with faint joints, and blur the corner flowers. Keep the crisp edges on the door panels and knocker only."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (vending machine): a dark contour around the cabinet and a thick doubled line around the glass window and dispenser slot. Inside the window, every can and bottle is a small crisp closed shape. Outline darkness of 0.088 is near the top of the real range. B (teacup): thin rim lines, soft steam and a soft saucer edge, with no drawn contour.",
+   "fix": "Remove the dark border around the machine body and window frame. Show the drinks behind the glass slightly soft, with the glare dulling their edges."
+  }
+ ],
+ "pattern": "Generated cards keep the same edge sharpness across the whole image. The hero gets a continuous dark contour like a marker line, and decorative detail (lace, numerals, chain links, stickers, brick joints, paving) is rendered with crisp closed outlines at equal weight. Background structures (trusses, fences, brick walls, ripples, grass tufts) are drawn as sharply as the subject, which flattens or inverts the edge hierarchy. Real cards define the silhouette with tone rather than line, keep their seams thin, and stay quiet away from the focal area."
+}

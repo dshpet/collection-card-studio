@@ -1,0 +1,25 @@
+[
+ {
+  "round": 0,
+  "error": "LOOSE: []\n00:01.607  cycles           | WARNING CUEW initialization failed: Error opening the library\n/home/dshpet/Dev_Projects/playrix_testtask/scripts/blockout.py:49: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0\n  m.use_nodes = True\n/home/dshpet/Dev_Projects/playrix_testtask/scripts/blockout.py:339: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0\n  world.use_nodes = True\nMemory access fault by GPU node-2 (Agent handle: 0x7fd95fef5600) on address 0x7fd7ed55c000. Reason: Page not present or supervisor privilege.\nFailed to write segment data to pipe: Broken pipe\nGPU coredump: handler exited with error (status: 1)\nGPU core dump failed\n",
+  "loose": [],
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The render crashed in the graphics card driver ('Memory access fault by GPU node-2'), not because of the model. LOOSE is empty, so no parts are loose. Re-run, or force the renderer to use the CPU.",
+   "The model was re-checked: every part attaches to its neighbour, from the plinth and legs up to the head, wheel and tail. The wheel clears the tower. The file is returned unchanged."
+  ]
+ },
+ {
+  "round": 2,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The red tail vane is almost entirely hidden behind the wheel. At azimuth 30 and elevation 10, the short tail boom runs straight back behind the wheel disc, so only a thin red sliver shows. The card names the tail vane, so it must read at once. Lengthen the boom, enlarge the vane, and turn the camera a bit further round (azimuth 38) so the vane stands clear to the side of the wheel."
+  ]
+ }
+]

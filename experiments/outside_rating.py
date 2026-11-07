@@ -7,8 +7,9 @@ producer's runs/ratings.json.
     outside_rating.py summary    what the answers say
 
 Five candidate genres for three sets: every variant is shown whole in the sets part, and a random half of each variant
-is graded card by card, to keep the session near 60 minutes. The blind test comes first, before the rater knows the topics or has seen our cards labelled: the real cards are all
-from a summer collection and ours are film genres, so knowing either would give ours away by topic. Generated cards
+is graded card by card, to keep the session near 60 minutes. The blind test comes first, before the rater knows the
+topics or has seen our cards labelled: the real cards are all from a summer collection and ours are film genres, so
+knowing either would give ours away by topic. Generated cards
 are 430x480 like the real ones, with the same sharpness and no compression marks, so file traits give nothing away.
 Each generated card in the blind test faces a real card of the same art category.
 """
@@ -309,7 +310,7 @@ const views = {
   },
   cards() {
     const item = items.cards[position.cards], entry = answer(item.id) || {};
-    return `<p class="hint">У рамці — наша картка «${esc(item.name)}», поруч — три справжні картки з гри того ж типу. Чи могла б наша стояти поруч із ними? Якщо щось зламано (предмет так не збудуєш, деталі не з'єднуються, перспектива не сходиться), натисніть X. Оцінку ставте останньою: вона одразу переводить до наступної картки. Клавіші X, 1–5, стрілки.</p>
+    return `<p class="hint">У рамці — наша картка «${esc(item.name)}», поруч — справжні картки з гри того ж типу. Чи могла б наша стояти поруч із ними? Якщо щось зламано (предмет так не збудуєш, деталі не з'єднуються, перспектива не сходиться), натисніть X. Оцінку ставте останньою: вона одразу переводить до наступної картки. Клавіші X, 1–5, стрілки.</p>
       <div class="cards grade"><figure><img src="/${item.image}"><figcaption>наша · ${position.cards + 1} з ${items.cards.length}</figcaption></figure>
       ${item.references.map(src => `<figure><img src="/${src}"><figcaption>з гри</figcaption></figure>`).join("")}</div>
       <div class="row"><button id="broken" class="${entry.broken ? "on" : ""}">X · Щось зламано</button></div>

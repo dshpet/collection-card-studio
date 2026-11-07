@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the warm orange/pink motel sign stands against a deep navy night sky and the cool blue-grey building, so warm hero on cool backdrop, as on the real cards. B: the orange neon ring and the red-orange brick wall share one hue family. Almost the whole card is warm (warm_share 0.84, above the real max of 0.66), and the shadows on the bricks and the steel housing go to dull brown-grey (shadow_chroma 0.53).",
+   "fix": "Hang the sign against a cool slate-blue or dusk-teal stone wall instead of orange brick; keep the glow orange only on the sign itself; let the wall's shadows turn deep blue-violet, not brown."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a brown felt fedora with a cream band on a cyan ray backdrop. The muted brown hero sits on a cool, loud field, a typical real setup (its low hero chroma fits a natural felt color). B: the jacket's green sash repeats the green ray backdrop, so the hero and background share a hue, and the tan and orange body is pushed toward warm saturated orange at the collar and cuffs.",
+   "fix": "Put the jacket on a cool blue or violet ray backdrop so the green sash is the only green; tone the collar and cuffs to a natural khaki-brown instead of bright orange."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "B is the caravan from the real reference set: cream body, an orange stripe as the one accent, on a violet backdrop. A: the white marble lion is almost colorless (subject chroma 0.027, below the real min) and sits inside green lawn, trees and a warm pink path. The hero has no hue role, and the background carries all the color.",
+   "fix": "Give the lion statue a faint warm sandstone or ivory tint with cool blue-grey shadow sides, and simplify the park into one cool backdrop color so the statue reads as the warm hero."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: an orange wood radio against violet stripes, with the dark wood table pulled toward plum. Hero and backdrop are on opposite sides of the color wheel. B: the yellow-orange chair and the yellow-orange floorboards are the same saturated hue, and the lime cushion is a pure-hue accent. Hero and floor merge into one warm mass in the flat-color lens.",
+   "fix": "Make the floor a cooler, greyer wood or a blue-grey tile so it doesn't match the chair; make the cushion a softer sage or teal instead of pure lime."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a red and cream popcorn cart with gold trim on a blue diamond backdrop, so warm hero on cool field, with a near-neutral paved ground. B: a black bellows camera on an orange diamond wall and a red-brown wood table. The card is almost entirely warm (warm_share 0.999, only 2.1 hue families), the hero has nearly no chroma, and its chrome and shadows pick up orange.",
+   "fix": "Set the camera on a cool teal or blue patterned backdrop with a grey-blue tabletop; give the camera body a deep navy or burgundy leather tint so it holds a color of its own."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a brown leather briefcase on a violet backdrop, warm hero on cool field. B: a royal-blue vending machine on a magenta-violet backdrop. Both are cool and sit next to each other on the color wheel (warm_share 0.026, below the real min), and the glass interior shifts the same blue-violet.",
+   "fix": "Put the blue vending machine on a warm yellow-orange or coral ray backdrop, or recolor the machine red, so hero and background sit on opposite temperatures."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a red bus against a cyan sky with pastel buildings. It's busy, but the shadows under the bus stay blue-violet. B: a yellow taxi on a purple-pink dusk. The grey road and the car's underside shadow go dead grey-mauve (shadow_chroma 0.33, far below the real min), so the shadow areas lose color.",
+   "fix": "Make the road and the shadow under the taxi a rich deep indigo-violet instead of grey; keep the dusk sky but make it a cleaner blue-violet."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a gold shield with a silver rim on a mid-blue ray field, one warm hero and one neutral rim. B: a crimson box, cream lining, a gold medal and a blue ribbon on a cyan ray field with a bright cyan halo behind the object. That's 5.4 hue families, above the real range, the same glowing cyan center seen in the generated glove lessons.",
+   "fix": "Use a plain mid-blue ray backdrop with no glowing halo; drop the blue ribbon and keep the card to red box, cream lining and gold medal."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a blue door with an orange frame and green ivy, so a cool hero with warm and green surroundings. B: a dark brown wood door set in an orange-red brick wall on a cream step. Hero and backdrop share the same warm brown-orange family (warm_share 0.855, above the real max), and only a sliver of cool sky remains.",
+   "fix": "Set the brown door in a cool grey-blue stone wall or paint the door a teal-blue, so the door and wall are on opposite temperatures."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "B: a blue and cream map with a silver magnifier on light wood, where the blue sea is a strong cool mass. A: a cream fingerprint pad and a red ink lid on dark red-brown wood. Everything is warm (warm_share 0.999), there are only 2.6 hue families, and the background chroma is below the real range. The metal tin shadows go brown.",
+   "fix": "Place the fingerprint pad on a cool slate-blue or deep teal surface; give the ink tin a cool steel-blue shadow side; keep the red lid as the single warm accent."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a silver magnifier with a red handle on concentric green rings, red against green, with a neutral rim. B: a red and white backboard on a cyan ring field. The white board's shadow side and the net turn strong cyan (shadow_chroma 2.46, far above the real range), so the shadows take on the background color.",
+   "fix": "Shade the white backboard and net with soft neutral grey-blue shadows, not bright cyan; keep the cyan only in the background rings."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a pink popsicle on a green ray field, one hero hue against its complement. B: watermelon, orange, grapes, strawberries and blueberries on a glass plate over warm tan wood. That's many fruit hues, and the backdrop is warm like the fruit (warm_share 0.853, above the real max). The plate's shadows turn olive-brown in the lens.",
+   "fix": "Put the fruit plate on a cool blue or teal tablecloth; drop the grapes and blueberries to keep two or three fruit colors; shade the glass plate with cool blue tints."
+  }
+ ],
+ "pattern": "Generated cards pull the whole card warm. They put a warm hero on a warm wood, brick or orange backdrop, so the hero and background share a hue. They also tint neutrals cream and turn shadows dead grey or brown, or else flood them with the background's cyan. Some add a bright cyan glow behind the object and more hue families than the real cards. The real cards keep a warm hero on a cool field, use neutral grey-whites, and keep shadows in a related cool color."
+}

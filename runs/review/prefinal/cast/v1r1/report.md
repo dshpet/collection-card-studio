@@ -1,0 +1,45 @@
+# Review: prefinal/cast/v1r1
+
+| Specialist | Caught | Wrong | Abstained | False alarms |
+|---|---:|---:|---:|---:|
+| shape_proportions | 0/6 | 3 | 3 | 2/2 |
+| viewpoint_depth | 4/6 | 0 | 2 | 2/2 |
+| lighting_shading | 2/6 | 2 | 2 | 2/2 |
+| value_contrast | 5/6 | 1 | 0 | 2/2 |
+| color_palette | 5/6 | 1 | 0 | 2/2 |
+| surface_finish | 5/6 | 1 | 0 | 2/2 |
+| edges_linework | 4/6 | 0 | 2 | 2/2 |
+| composition_hierarchy | 6/6 | 0 | 0 | 1/2 |
+| staging_detail | 4/6 | 1 | 1 | 1/2 |
+
+## Art director
+
+Close. The character design, faces and rendering already look like this game, and the generated cards give themselves away through framing and finish, not through style.
+
+**What gives them away**
+- **Framing.** The characters are shown whole on a floor or base, while every real character card crops in tight. This is the strongest tell on p01, p02, p04 and p08, but edit notes can't change the camera, so it has to be fixed in generation.
+- **Surface detail.** There is too much fine detail with hard edges: hay strands, plaid grids, chrome suits, rug fuzz.
+- **Warm colour.** The backdrop repeats the hero's warm colour.
+- **Background.** There is too much small background clutter and the corners are darkened.
+
+**Which specialists I trusted**
+- **Overruled entirely: shape/proportions.** All three of its calls were wrong, and form is off-limits anyway.
+- **Ignored: every confident call on the control pairs.** The drum kit with its spotlight and the centred ship's wheel on a sunburst are both real cards. So centred objects, pedestals, spotlight cones and sunbursts are normal in this game for object cards, and only full-figure framing in character scenes is a tell.
+- **Other individual calls overruled:** lighting on p03 and p05, colour on p03, surface on p04, and staging and value on p05. The concert card is real.
+
+**Card by card**
+- **Closest to passing:** p04 and p01 B. Their notes are light.
+- **Need more work:** p02 A, p03 A and p08 A have the most to fix. Even after their notes, the full-figure framing on p02 and p08 will still show.
+
+1. **Character scenes show the whole figure or group, feet to head, standing on a visible floor or base (hay bale, rug, porch boards, open lawn) with air around it. Every real character card crops in tight: cut at the waist or chest by the bottom edge, often seen over the shoulder, with the hero running off one or two edges. Composition called all 6 generated pairs correctly, and viewpoint called all 4 it committed to. This is the strongest tell on p01 B, p02 A, p04 A and p08 A. It is a camera change, so it goes into the next generation, not into edit notes. It applies only to character scenes. The real object cards (the centred ship's wheel on a sunburst, the drum kit on a round stage) are shown whole and centred, so objects keep that framing.** For character scenes, frame the characters from the waist or chest up, large in the card, with their bodies running off the bottom edge and one character overlapping the frame edge or seen from behind at three-quarters.
+2. **Too much fine surface detail, drawn with hard internal edges: individual hay strands and feathers, crisp plaid line grids, chrome spacesuits with many seams, fuzzy rug fibres, bandages cut into many hard stripes, a mirror-shiny bucket. Real cards use broad, soft, mostly matte surfaces with a few wide seams and one focused highlight. Surface finish and edges are describing the same problem, and together they called it on p01, p02, p03, p05 and p08.** Paint materials as broad, soft, mostly matte surfaces with a few wide seams and one broad highlight. Draw hay, feathers and fabric patterns as large soft clumps and colour blocks.
+3. **Warm pull and hue repetition. The backdrop or foreground takes the hero's red-orange (red saloon behind red plaid, orange hay under an orange rooster, an orange porch, a magenta room), and whites drift cream or peach. Real cards set a warm hero on a cooler or more neutral backdrop and keep whites clean, with lilac or blue shadows.** Keep the strong warm colour on the hero only. Make walls, floors and big props cooler or greyer mid tones, and paint whites clean, with soft lilac-blue shadows.
+4. **Small invented props and darkened corners crowd the background: lamp, houseplant and throw blanket; extra glowing button panels and light strips; corner ferns and grass tufts; a dark leaf canopy framing the corner; knock spark lines. Real character cards show the setting as a few large, quiet shapes at an even mid value. Staging and value contrast described this from two sides. Real cards do allow a spotlight cone or a sunburst behind an object (the controls show both), so only the clutter and the corner darkening count here.** Show the setting as a few large, quiet shapes, keep the corners as light as the centre, and include only props the scene names.
+5. **Night and lamp-lit scenes light the hero with an even, frontal daytime key that nothing in the picture explains. This is clear only on p01 B (the cow is front-lit on a moonlit porch). The lighting calls on p03, p05, p06 and p07 were wrong, so this ranks low.** In night scenes, light the characters with cool moonlight and keep warm light to a small pool near its source.
+
+- p01: Shopping: Trick-or-Treat Porch: Make the door and porch boards a muted grey-brown and let slightly more deep blue night show, keeping the lantern glow small. Make the ghost sheet and the cow's white body a clean cool white with soft lilac-blue shadows. Remove the yellow knock lines by the door; keep the characters, the pumpkin bucket and the lantern.
+- p02: Vampire Night: Living Room: Make the walls a cool dusk blue and the rug a smooth soft grey-beige with no fuzzy fibres, keeping the red only on the curtain. Remove the table lamp, the houseplant and the mustard throw, leaving a plain dim wall and the window. Make the bandages a clean white with soft cool grey shadows and softer edges between the wraps.
+- p03: Bridge Crew: Cockpit: Make the spacesuits a soft matte white-grey fabric with a gentle sheen only on the top edges, in place of the chrome. Lighten the dark cabin corners to a mid lavender. Remove the yellow-and-cyan button panel and the blue light strips; keep the red button, the window and the characters.
+- p04: Sky Watchers: Meadow: Remove the fern leaves in the bottom corners and the scattered grass tufts, so the lawn is smooth. Make the grass a slightly deeper, less yellow green and the sky a slightly softer blue with a paler horizon. Keep the characters, the UFO and the trees.
+- p05: Sheriff Pals: Saloon: Make the saloon wall a faded grey-blue instead of red, keeping the red only on the plaid shirt. Paint the plaid as soft, broad colour blocks without crisp lines. Make the boardwalk planks smooth with faint grain; keep the characters, the mug and the hats.
+- p08: Ranch Hands: Farmyard: Draw the hay bale as a few broad, soft clumps in a slightly paler, duller straw colour. Make the bucket soft grey metal with one broad highlight. Lighten the leaf canopy in the top-left corner to the same mid green as the bushes; keep the cow, the rooster and the barn.

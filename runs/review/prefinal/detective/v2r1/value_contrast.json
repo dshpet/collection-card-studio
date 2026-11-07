@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (oil lamp): the green ray background goes dark in all four corners, and a bright yellow glow sits behind the lamp's chimney and base. That is the spotlight-and-dark-corners setup from the generated lesson cards. Vignette is 0.144, above the real range. B (flashlight): the cyan rays stay light almost to the edges. Its only dark accent is the red barrel, and the corners barely darken.",
+   "fix": "Keep the green rays at the same brightness all the way to the corners. Leave out the glow behind the lamp, so the lamp stands out by its gold color rather than a halo."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (bike on car): the value split runs from a bright sunset sky at the top to a large dark car body and road at the bottom. The hero's thin red frame sits against mid and dark greys. Contrast is 0.232 and vignette is -0.318, both outside the real range. A (police car): even mid-light key, with one compact black mass on the car body against a light street. That matches the real scene cards.",
+   "fix": "Make the whole scene brighter and more even. Use a light, soft sky and a light grey road, and make the car body behind the bike a pale blue with no deep shadow. Show the red bike against light shapes."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A shows a dark blue vending machine on an even purple field with a lighter floor. B shows a pale yellow tape roll on green, with slightly darker top corners and a lit floor. Both stay inside the real ranges on every field, and neither has a strong halo or a clipped area that settles it.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (badge wallet): almost the whole card is near-black wood boards, and the only light mass is the small wallet in the middle. Mean lightness is 0.331, far below every real card. B (map book): bright orange wood with a mid-teal book and light stickers. The overall key is high, like the real cards.",
+   "fix": "Put the wallet on a light, warm honey-colored wooden table in bright daylight, so the background is lighter than the brown leather and no area of the card goes near-black."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (bloodhound): a bright arch of glow sits behind the dog's head and back against the blue stripes, and the stripes darken toward the corners. That is the halo pattern from the generated lessons. Vignette is 0.099, just above the real range. B (boxing gloves): the corners are lighter than the middle, with a bright floor and a mid-dark stripe wall. That falls outside the real range the other way, so this call is weak.",
+   "fix": "Keep the blue stripes the same brightness from the edges to the center, with no light patch behind the dog."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (magnifier on map): the map paper forms one large near-white block and the corners are dark wood. That gives vignette 0.496 and contrast 0.229, both far outside the real range. B (binoculars): the near-black binocular body sits on a light plank floor. The hero is much darker than the background (gap -0.277), which is also a little out of range, so this is a low-confidence call.",
+   "fix": "Make the map paper a warm cream with soft grey folds instead of bright white, and use a mid-tone warm wooden table that stays light up to the corners."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (spyglass): flat, very light cyan diagonal stripes cover the whole card. The dark brown barrel is the only dark mass. Mean lightness is 0.79, above the real range, and the hero is much darker than the background (gap -0.287). A (ship): bright white sails against a mid purple sky with a darker sea at the bottom gives clear light, middle and dark groups that fit the real ranges.",
+   "fix": "Make the cyan background a slightly deeper mid-tone with soft rays, and give the spyglass's brown leather lighter tones so it doesn't read as one dark bar."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A shows a solid black camera body against light blue rings, with harsh contrast (0.185, slightly high). B shows a pale orange player and white earbuds on purple rings that darken outward (gap 0.223, high). Each one breaks a different limit, and on value alone neither card is clearly the odd one.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (fedora): the purple background is dark in the top corners, with a lighter oval glow behind and under the hat, like a studio spotlight. The generated lessons show this pattern. B (sneakers): a hard horizon between a mid orange wall and a very pale cream floor. The floor nearly clips to white (mean 0.762), which is also unusual, so confidence is low.",
+   "fix": "Light the purple background evenly with no spotlight pool behind the hat, and keep the corners as bright as the center."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (doorknob): a very dark green door covers about 70% of the card. The only light masses are the gold plate and a thin bright room strip at the right edge, which makes the card low-key overall (mean 0.525). A (wreathed door): also slightly dark, but the dark blue door is broken up by mid-tone vines and a light wreath, so it splits into more even groups.",
+   "fix": "Make the door a light, bright green with soft shading, so the gold knob sits on a mid-light field instead of a dark one."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (sunscreen): the dark green waves sit in the top corners and a lighter glow sits behind the bottle, which is the spotlight pattern from the lessons. The black-blue sunglasses are a hard dark band across the bottom. A (planter): even daylight, with a light sky and paving around a mid-dark red planter. Its corners are lighter than the middle (vignette -0.12), so this call is low-confidence.",
+   "fix": "Keep the green background the same brightness all the way to the corners, with no glow behind the bottle. Make the sunglasses frames a mid blue rather than near-black."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (ring in bag): dark reddish-brown wood fills the card and turns near-black in the lens. The clear bag and gold ring are the only light shapes. Mean lightness is 0.44, far below the real range. B (racket): a mid green court with a bright line, a light racket and a black handle. Its overall key and groups match the real cards.",
+   "fix": "Set the bag on a light, warm wooden table in bright daylight, so most of the card is mid-to-light and the background isn't darker than the bag."
+  }
+ ],
+ "pattern": "Three things still give generated cards away. First, dark wooden tabletops that drop the whole card into a low key (p04 and p12 average far below the real range). Second, a bright halo or spotlight behind the hero with darker corners, which the real cards don't have: their ray, stripe and color fields stay evenly lit to the edges. Third, near-black or clipped near-white masses taking up large areas instead of the real cards' even mid-light key."
+}

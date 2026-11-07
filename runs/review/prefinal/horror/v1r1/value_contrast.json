@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A (grad cap): mid-value background with one lighter ring behind the cap. The cap is the dark mass, and the gold band and tassel are the light accents, the same layout as the real cards. B (witch hat): the darkest grey takes the whole top band and the corners. The hat's crown and brim are one big near-black shape, so the card reads low-key (mean 0.551, below the real 0.581–0.793). Its rings are broken, and the vignette is flat (0.001).",
+   "fix": "Lighten the whole background to a clear mid-to-light magenta with even concentric rings and no dark top edge. Give the hat a dull purple-grey body with a lighter top plane on the brim, so only the shadow under the brim goes near-black."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A (airplane): high-key. A white fuselage and white clouds sit on a mid-light sky, and the darkest accents are small (windows, engine intakes). B (bat): a dark band across the top of the sky and a large dark bat body with dark wing membranes cover a big share of the card. The overall key falls to 0.595, and the hero is darker than everything around it (gap -0.221) with no lighter planes on it.",
+   "fix": "Make the sky an even, bright lavender to pink from top to bottom. Draw the bat in a mid-grey-purple with light top planes on its head and wing bones, and keep the near-black for the wing undersides and the eyes' pupils only."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (boxing gloves): mid-light wall and floor. The gloves are a mid-dark mass with bright specular spots, and the darkest accents are the shadows under the gloves. B (dead tree): a solid darkest-grey band across the top third of the sky creates a top-heavy vignette (0.093, above the real -0.030 to 0.088). The trunk sits in mid-grey close to the grass, so hero and ground merge in value.",
+   "fix": "Remove the dark band at the top of the sky and keep the purple stripes at one even mid-light value. Light the trunk's front with a clear light side so it stands lighter than the grass, and keep the darkest tone for the knot hole and the shadow at the roots."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A (topiary): a bright sky over a mid hedge band. The bush is mid-dark with fine leaf flicker, and the light plinth sits on top of its cast shadow. B (water slide): mid-value pink wave wall, light slide planes, and dark only inside the tube curl. Both use a broad light/mid/dark grouping like the real cards, and the key of each is inside the real range. Nothing on value marks either card as generated.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (mirror): the darkest grey fills both top corners, a lighter halo sits behind the frame, and the mirror glass is the lightest area. The result is a spotlight-on-hero layout with the hero lighter than its surroundings (gap 0.139), the halo the lessons show on generated cards. B (vending machine): an evenly lit mid-light purple wall and floor. The machine body is a dark block against it, with light accents in the glass, matching the real cards' dark-hero-on-lighter-ground pattern.",
+   "fix": "Make the green background one even mid-light value to the corners, with no glow behind the mirror. Let the frame read as mid gold, and keep the brightest white for small streaks on the glass."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both are night scenes below the real key range. A (motel sign): the large mid-light sign panels and lit windows break up the dark sky, so the card keeps many mid and light shapes. B (tower house): almost the whole sky and ground are the darkest grey. The house is a single mid-grey shape lit only by small bright windows and a moon, which is tenebrist, and the card has the lowest key of the pair (0.446).",
+   "fix": "Lift the sky to a medium dusk blue with lighter clouds and the grass to a mid green. Give the house walls a clearly light front face against them, and keep the darkest tone for the door and roof shadows."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A (brick gate): light sky and paving, mid bricks, and a mid-dark gate. This is a balanced mid-high key (0.680), typical of the real cards. B (iron gate at night): the sky, hedges and gate are all near-black (mean 0.439, far below the real minimum of 0.556). Only the stone pillars and globes read light, so the card is two bright columns on a dark field.",
+   "fix": "Set the scene in daylight with a light blue sky and mid-green hedges. Draw the gate in dark iron against that bright background, and give the cobble path a light top surface."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (sneakers): high-key cream floor and orange wall. The shoes are a dark-blue mass with light soles, and the only shadow is a dark cast shadow under them. B (pumpkin): dark corners all round and a lighter halo behind the pumpkin form a spotlight vignette. The pumpkin is an even mid value with almost no light planes except the glowing face, so contrast inside the hero is low (rms 0.104, below the real 0.114).",
+   "fix": "Make the purple background one even mid-light value with no dark corners and no glow ring. Shade the pumpkin with a bright top-left side, darker ribs toward the right and a crisp dark contact shadow, so the hero has a full light-to-dark range."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "A (fountain): high-key. Light stone, light stripes and light paving, with the darkest accents only inside the basin. B (candelabra): a near-black wall and table cover most of the card (mean 0.414). Only the candles and the silver stand read light, which is tenebrism. The hero is far lighter than its ground (gap 0.305, above the real maximum of 0.158).",
+   "fix": "Make the purple striped wall a bright mid-light purple and the table a mid warm brown in even daylight. Keep the candle glow small, and let the silver stand show a light top and a mid-grey shaded side."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A (palm): mid pink swirl background and light sand. The palm leaves are a mid-light mass with darker underside shapes, giving a mid-high key. B (crystal ball): the whole lower half is a near-black table, so the bottom of the card is darker than the centre (vignette -0.076, below the real -0.030). The globe interior is a dark mass, and only the gold stand carries light.",
+   "fix": "Make the table a medium warm wood with a light top plane, or replace it with the same light pink background. Give the globe a bright teal top half with a white highlight and darken it only toward the base."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (broom): the brightest values are the white clouds in the bottom-left corner and along the bottom edge, so the edges are lighter than the centre (vignette -0.098, below the real minimum of 0.008). The handle is a thin dark stroke, and the bristles are mid-light against the clouds. B (balloons): mid sky with clouds near the bottom, but the balloons carry big dark lower halves and bright highlight spots, so the hero has strong local contrast as on the real cards.",
+   "fix": "Keep the clouds small and away from the corners, and let the sky deepen slightly toward the edges. Shade the bristles with a darker underside so the head reads as a clear mid-dark shape against the light sky."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (clock): high-key green stripes. The clock face is the lightest shape with dark numerals and a darker rim shadow, which is the real-card layout. B (lion statue): a nearly white hero on a darkened garden. The trees and the top-left corner fall to the darkest grey, so the hero is much lighter than its ground (gap 0.211, near the real top of 0.216). The statue's inner shading is pale, with few dark accents.",
+   "fix": "Brighten the garden and trees to mid greens with light tops. Give the marble lion a mid-grey shaded side and darker crevices in the mane and under the paws, so it is not one flat white shape."
+  }
+ ],
+ "pattern": "Generated cards give themselves away by going low-key and spotlit. They have dark corners or whole dark bands (night skies, black tables, dark top edges) with a lighter halo or a pool of light behind the hero, so the hero reads as a lit shape on a dark field (lightness gap far positive, key below 0.55). Inside the hero, local contrast is often flattened into one mid or dark mass. The real cards keep a mid-to-high-key background that is even out to the corners. On them the hero is a mid-dark mass with bright top planes and only small near-black accents in contact shadows and openings."
+}

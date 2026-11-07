@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (locker): firm but not inky silhouette, louver slots drawn as thin double grooves, floorboard and baseboard lines in the background, the same busy-but-clean edge pattern as the real scene cards. B (joystick): soft photographic edges on the ball and stem. The only strong contour is a dark rim under the base. Below that is a featureless brushed-steel top with no edge hierarchy, so the hero is not the sharpest thing on the card.",
+   "fix": "Give the joystick crisp, clean silhouette edges on the red ball and stem, with the sharpest edge at the ball. Draw the base as a simple rounded plastic shape with thin seams, not brushed photographic steel."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (jetpack): two identical tanks, each with paired band grooves cut as doubled lines. Every edge has the same hard, even weight from top cap to orange nozzle, with no softening away from the focus. B (medal box): a darker continuous contour around the red case (outline 0.13, just above the real range), but the internal seams are few and soft and the coin emblem is sharpest, the kind of hierarchy the real cards have.",
+   "fix": "Draw the tank bands as shallow, thin seams rather than doubled grooves. Keep the crispest edges on the nozzles and caps and let the far tank and back plate edges soften."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (rocket): a soft hull contour, a flame with lost edges, smooth cloud masses. B (plane): a dark contour all around the fuselage and wings, the window row and door drawn as hard dark rings, and swirling contour texture inside the clouds (background density 0.018, above the real range). The busy background competes with the hero.",
+   "fix": "Make the clouds smooth, soft-edged puffs with no internal swirl lines. Draw the windows and doors as thin, light seams, and drop the dark rim around the plane's body."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (boxing gloves): broad, soft, lost edges on glossy red leather with a few crease lines at the thumb, and wood grain behind. B (pouch): a crisp double-line contour around the foil edge seal, with dense tiny crinkle lines across the whole body. That is photographic micro-edge texture, not the clean planes of the real cards.",
+   "fix": "Draw the pouch as a smooth, rounded, glossy cartoon shape with two or three broad folds. No fine foil crinkles, and a soft rim rather than a crisp double seam line."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (phone booth): crisp window muntins and panel edges, and a background suitcase pattern drawn as soft-edged shapes, as in the real patterned cards. B (seahorse): very soft painted edges and low edge density on both subject and background, but no outline or groove artifact that clearly marks it as generated.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (bike on car): matches the real bike card in the reference sheet, with dense spokes and a busy scene. B (basketball hoop): a heavy dark contour traced around the backboard frame and inner square (outline 0.20, well above the real max). The rings in the background read as drawn lines, and the edge weight is even across the whole board.",
+   "fix": "Remove the dark line around the backboard and let the red frame separate from the blue by color alone. Use soft tonal bands for the background rings instead of line-like rings."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (space gloves): every finger segment, palm pad and cuff band is traced with a dark, even contour. There are many stacked grooves (subject density 0.162) and the same edge weight on both gloves, with no focal hierarchy. B (vending machine): clean rectangular panel edges, with the busy detail confined to the glass front where the focus is.",
+   "fix": "Draw the gloves as soft, puffy fabric forms with only a few thin seams on the palm and cuff. Make the near glove's edges crisp and let the far glove soften, with no dark outline around the fingers."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "A is the real lighthouse card from the lessons. B (porthole): a thick doubled groove ring around the frame, every bolt drawn as a hard dark ring, and hard-edged wall panels, light strips and plates filling the background. It has strong edges everywhere and no soft falloff away from the window.",
+   "fix": "Draw the porthole frame as one smooth rounded rim with small, soft bolts. Keep the wall behind it a plain, softly shaded surface with at most one faint seam."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (sneakers): busy mesh and lace edges and a hard horizon line, but the edge weight follows the material. B (helmet): a uniform crisp contour around the dome and collar ring, an almost edge-free airbrushed visor interior, and evenly drawn vent slots and dots. That is a sticker-like silhouette with little internal hierarchy.",
+   "fix": "Show the visor's curvature with a soft reflection edge, add one or two thin panel seams on the white shell, and soften the outer silhouette where the dome turns away from the light."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (gate): very dense ironwork scrolls, bricks and paving, but it is a full scene like the real bike and lighthouse cards. B (observatory): an even dark contour around the dome and drum, regular panel lines on the dome, stamped grass tufts and flowers scattered evenly over the lawn, and a hard ring drawn around the shadow area.",
+   "fix": "Use soft shading to separate the dome from the sky instead of a dark rim. Leave the lawn as smooth soft green with no scattered tufts, and drop the drawn ring on the ground."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (submarine): crisp porthole rims and rivet dots, with the sharpest edges at the front portholes and a softer tail. B (UFO): each rim light is a blown-out dot with a glow halo that eats the edge. The beam below has no edges, and the rim seams are uniform rings all around the saucer.",
+   "fix": "Draw the rim lights as small solid bulbs with clean edges and no glow halo. Let the saucer's far rim soften, and drop or faintly suggest the light beam below."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (capsule): a dark contour traced around the whole hull and heat-shield base (outline 0.153, above the real max), the porthole drawn as a thick double ring, and an even weight on the panel lines and rivets. B (balloons): soft edges and lost overlaps between balloons, with the strings as thin, light lines, matching the real cards' soft hierarchy.",
+   "fix": "Remove the dark outline around the capsule, separating hull from sky by value only. Draw the porthole as one rounded rim and the panel seams as thin, light lines."
+  }
+ ],
+ "pattern": "Generated cards draw a near-black contour of even weight around the whole object, cut seams and rims as thick doubled grooves, and give every part the same sharpness, so nothing is sharper at the focus. They also add busy edge texture behind the hero, such as swirls in clouds, scattered grass tufts, wall plates and foil crinkles, and they put glow halos on lights. Real cards separate the object from the background by value, keep seams thin, and let edges go soft away from the focus."
+}

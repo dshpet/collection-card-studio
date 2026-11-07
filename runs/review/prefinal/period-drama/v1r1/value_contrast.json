@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (cooler): mid-dark red box against a light sand foreground and mid sky. The darkest areas sit inside the can gaps, and the corners darken a little (vignette 0.117), as on the real beach cards. B (pool): the whole card is one even middle-light value. The fence is the only dark group, a band across the top, and there is no corner falloff (vignette -0.002). The rings and the water merge into the same light grey, so the hero is told apart from the grass by hue, not by value.",
+   "fix": "Darken the grass toward the card's corners. Put a clear dark shadow under the pool, and make the inner water a step darker than the pink and yellow rings."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (envelope): almost the whole hero is a flat near-white mass on a mid-dark wood plank. The only dark accent is the seal. The hero sits far above its background (gap 0.212, real cards top out at 0.158), and the paper has almost no internal shading. B (book): the mid-dark teal cover sits on lighter streaky wood, with light stickers giving local accents. Its gap of 0.041 matches the real cards.",
+   "fix": "Shade the envelope paper to a warm mid-light at the bottom edge and the flap folds, keeping pure white only on the top bevel. Lighten the wood behind it so the paper isn't the only bright shape."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (parasol): the yellow canopy and pink frill are both one flat light mass. The darkest accent is only the small brown handle hook, and contrast across the card is very low (rms 0.079, below every real card). B (beach umbrella): the hero splits into clear groups, a light top panel and dark undersides of the red panels, which gives the hard local contrast seen on the real cards.",
+   "fix": "Give the parasol canopy a clearly darker underside and shadowed frill folds. Darken the rings around the edges of the background so the card isn't one pale value."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (gloves): two near-white shapes with almost no internal value change sit on a flat mid pink. The only dark accents are the thin ribbons, the hero stands far above the ground (gap 0.184, out of range), and the corners stay at full brightness (vignette -0.001). B (fan): dark and mid purple ribs alternate against a light yellow background with a soft glow. Its gap and vignette fall inside the real range.",
+   "fix": "Shade the lace gloves so the palms and lower fingers fall to a soft lilac-grey, with white kept to the knuckle highlights. Let the pink background deepen toward the corners."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (armchair): the whole chair reads as one near-black block (gap -0.31, darker than any real card) on light wall stripes and a bright reflective floor. The only light accents are small pinpoints on the buttons. B (rocking chair): the mid-light wood sits on a darker blue wall and a light floor, with lit tops on the arms and seat. Its gap is close to 0.",
+   "fix": "Light the red armchair from the top-left so the cushion tops, the arm rolls and the wing edges go to a bright red. Keep the deep red only for the crevices and the underside."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (top hat): the crown and brim are one large near-black mass that fills the middle of the card. The gap is -0.411 and rms is 0.216, both far outside the real range, and there is only a thin highlight rim. A (jacket): a light tan hero with a dark sash diagonal on a mid green burst. Its value groups are balanced and its gap of 0.023 is in range.",
+   "fix": "Render the top hat in charcoal grey rather than black. Put a broad soft highlight down the lit side of the crown and along the brim top, and keep the darkest black only inside the brim."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (quill): a pure-white feather and a glossy black ink bottle with a hard white specular create an extreme local jump in a small area. The rest of the card is a flat light yellow wall. B (fountain): the whole card is evenly pale stone, water and wall with soft, gentle contrast and no hard black. Both cards are high key. A's split into pure black and pure white inside the hero is the less real-like of the two.",
+   "fix": "Make the ink a deep green rather than black, with soft shading. Tone the feather down to cream with grey-beige vanes on its shadow side."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (gramophone): low key. The corners and upper background go almost black (mean 0.491, below every real card), and a mid-grey burst sits behind a light horn, so it reads as chiaroscuro. A (ship wheel): a pale, washed-out high-key background with a glow behind the wheel, and a mid-value hero. That is also beyond the real range (mean 0.761), but it is closer to the bright real cards.",
+   "fix": "Lighten the purple background to a medium violet with only a slight darkening at the corners. Raise the floor to a warm mid-brown so the card isn't mostly dark."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (spotlight): a dark navy fixture and truss against a dark-mid teal backdrop. Overall the card is darker than the real cards (mean 0.567), with a strong corner falloff (vignette 0.128). The light beam is the only light group. B (coral): mid coral against a green field with a soft light disc behind it. Its mean and vignette are in range.",
+   "fix": "Lift the stage backdrop to a bright mid teal and render the lamp housing in a mid slate-blue, so the dark accents shrink to the truss joints and the barrel's underside."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (ring box): a dark red box lid and rim frame a light interior. The sunburst corners go dark (vignette 0.162, above the real cards' 0.123), so the card reads as a spotlight. B (pocket watch): a light face with a mid gold rim on mid green, gentle local contrast, and a vignette of 0.093 that is in range.",
+   "fix": "Keep the blue sunburst evenly bright out to the corners, and lighten the box's outer walls to a medium red so the only dark is in the hinge and the base shadow."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (door): a near-white brick wall and pavement fill most of the card (mean 0.733, above range). The dark green door is a black slab in the middle, and the dark flower clusters fill all four corners (vignette 0.179, far above range). B (blue door): a mid-dark door fills the card with vines around the edges, and a vignette of -0.07 sits at the real edge.",
+   "fix": "Tone the brick wall down to a warm mid beige with soft shadows across it, and lighten the green door to a medium green with lit panel edges. Keep the corner flowers mid-value rather than dark."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (teacup): a large flat pure-white cup and saucer under a lighter glow dome, with dark top corners, so the white hero is set apart mostly by a halo. A (vending machine): a dark blue body around a light glass window on mid violet, with even falloff. Both cards are in range, so the lean toward B is weak and rests on the haloed white mass.",
+   "fix": "Shade the porcelain cup so its side away from the light falls to a soft grey-lilac. Remove the bright halo behind it and keep the violet background one even value."
+  }
+ ],
+ "pattern": "The generated cards tend to have value extremes. The hero is either a flat near-white mass with almost no shading (envelope, gloves, parasol, teacup) or a near-black block (armchair, top hat). The gap between the hero and its background falls outside the real range. Some cards pair this with a glow halo behind the hero or with heavy dark corners. Real cards keep the hero in the middle-to-light range, with shaded faces, and the corner darkening is mild."
+}

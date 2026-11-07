@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the orange pumpkin bucket sits on muted brown planks against cyan rings. That is a warm hero on a cool backdrop, and the planks give the eye a neutral rest. B: the flat red mower body sits between a loud cyan backdrop and lime grass. Under the lens the red's shadows drop to a dull maroon, and the grass green leaks into the handle. Warm share and shadow chroma are both below the real range.",
+   "fix": "Paint the mower a warm cherry red with shadows that deepen to crimson, not grey-maroon. Make the grass a softer olive-green strip so the red stays the loudest color."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a green palm and a sand dune on a magenta swirl give clear hue roles. B: the hero is a near-black spider on a grey rock, so almost all of the subject's color is neutral. The yellow spots are the only accent. Subject chroma (0.025) and hue families (1.67) are far below every real card.",
+   "fix": "Give the spider a deep purple-blue body with a glossy violet sheen. Make the spots warm orange and the rock a warm sandy stone, so the hero has real color against the cyan."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a warm orange-brown wooden hourglass and amber sand sit on a green field, so the warm hero is on a cool backdrop. B: a blue vending machine stands on a violet backdrop. That is cool on cool, and the hero's hue sits next to the backdrop's. Warm share is near zero (0.026).",
+   "fix": "Put the blue vending machine on a warm yellow-orange sunburst backdrop instead of purple."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a glowing orange pumpkin sits with a navy night sky, green ivy, a blue door, a tan wall and a grey step. That is six hue families crowded together, and the pumpkin is over-saturated (subject chroma 0.169, above the real range). The lens tints even the grey step yellow. B: a green topiary on grass under a blue sky. The palette is simple but reads as one green mass.",
+   "fix": "Cut the scene down to the pumpkin plus one cool backdrop, such as a plain deep-blue night wall. Lower the pumpkin's orange to a natural pumpkin tone with brown-red shadows, and keep the step a cool grey."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a charcoal-black witch hat makes the hero nearly neutral, with the orange band as the only color. Its shadows go to colorless black: subject chroma 0.041 and shadow chroma 0.31, both below the real range. B: a stone fountain on a yellow stripe backdrop with cyan water as the accent. Its color roles are clear.",
+   "fix": "Paint the hat a deep purple felt with violet-blue shadows instead of grey-black. Keep the orange band and gold buckle as the accent."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a yellow canvas bag on a violet stripe backdrop, with green, white and blue items as small accents. B: the scarf is one pure saturated red from edge to edge with no lighter or muted areas. Subject chroma (0.217) is well above every real card.",
+   "fix": "Paint the scarf a warm, slightly softer red with pinkish highlights on the folds and wine-colored shadows. Do not flood it all with one pure red."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the orange roof, yellow box and brown trunk are all warm, and they sit against a washed-out pale teal and green park. Background chroma (0.080) is below the real range, so the backdrop gives no saturated cool counterweight. B: a brown tree on a purple-pink sky over green grass. Its warm hero on a cool sky matches the real cards.",
+   "fix": "Replace the pale park with a saturated sky-blue backdrop. Make the trunk a cooler brown so the orange roof and yellow box stand alone as the warm hero."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a crimson box and a gold medal sit on cyan rays, with a cream interior as a neutral rest. B: a purple mask on yellow rays has gold trim the same hue as the backdrop, so the hero repeats the background's hue. Warm share is 0.905, above the real range.",
+   "fix": "Make the mask's trim silver or pale pink instead of gold, so it doesn't repeat the yellow backdrop."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a teal book on orange wood, with many small sticker accents. B: a uniformly saturated violet book on dark, low-chroma brown planks. The hero is pushed to one pure hue (subject chroma 0.185, above the range), and the backdrop is dull (0.077, below the range).",
+   "fix": "Make the book a softer plum-purple with lighter lilac edges. Make the table a warmer, brighter honey-brown wood."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a steel-blue viewer stands against a blue sky and blue city, so the hero repeats the backdrop's hue and the card is almost all one cool family. B: an orange player and white earbuds on violet rings give a clear warm hero on a cool backdrop. The same card appears among the real reference cards.",
+   "fix": "Paint the viewer a warm yellow or red-orange metal, and keep the blue city behind it."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a brown broom with yellow straw and a red twine accent on a blue sky. Warm hero, cool backdrop, one accent. B: four pure-hue balloons (red, orange, teal, purple) give 5.45 hue families, above the real range. The teal balloon repeats the sky's cyan.",
+   "fix": "Use two or three warm balloons, red, orange and pink, and drop the teal balloon so nothing repeats the sky color."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a blue door, an orange frame, green ivy and a flower wreath give saturated local colors. B: a lavender-grey stone wall fills most of the card, with only a brown door and a small navy sky strip. Background chroma (0.060) and shadow chroma (0.57) are both below the real range, so the card reads grey.",
+   "fix": "Paint the wall warm sandy stone with blue-violet shadows, give the door a richer red-brown, and make the night-sky strip a saturated deep blue."
+  }
+ ],
+ "pattern": "Generated cards show up on two extremes of chroma. Either the hero is flooded with one pure hue (the red scarf, the violet book, the pure-hue balloons), or it falls to near-neutral black or grey (the spider, the witch hat, the stone wall). They also often let the hero repeat the backdrop's hue (the blue viewer on a blue city, the gold trim on yellow rays, the blue machine on violet). Real cards keep a warm hero on a cool backdrop, use one accent, and have shadows that keep their hue."
+}

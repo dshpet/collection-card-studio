@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the candy pail is mid-grey and sits in a clean light disc of background, with darker top corners and a dark wooden table filling the lower third. That is the lessons' 'glow behind hero, darker frame' layout. B: the mower also has a halo behind it, but its lower half is light grass, so the frame stays more open. B's gap is out of range, so this call is weak.",
+   "fix": "Fill the background with even, flat bright color out to the corners with no spotlight disc behind the pail; make the table a lighter mid-tone."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the spider is almost black, and a bright halo sits right behind it with darker rings toward the corners. Its lightness gap of -0.345 is far outside the real range. A: the palm is a mid value on an evenly lit swirl, and the sand is light; no glow is centered on the hero.",
+   "fix": "Light the spider so its body reads as a mid-dark blue-grey with large lit planes, not a black blob; keep the background rings evenly bright with no glow patch behind it."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the hourglass stands in a spotlight. The top corners go dark grey and a bright floor pool sits under the base, like the studio glow in the lessons. B: the vending machine's purple field is fairly even with a soft floor highlight. Both sets of numbers are within range.",
+   "fix": "Remove the spotlight; keep the green background one even bright tone from corner to corner."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a night scene. The top-left is a near-black navy sky, the door is dark, and the brightest values are the glowing eyes and mouth. This low-key, tenebrist look does not appear on any real card. B: daylight; the dark-green topiary sits against a lighter sky and lawn, which is typical of the real cards.",
+   "fix": "Set it in bright daylight with a light sky; drop the inner glow and let the pumpkin read as a light-orange mid value against lighter surroundings."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the hat is a near-black mass taking up a large share of the card, set on a dark wood table. Its mean of 0.536 and vignette of 0.118 are both outside the real range, and the stripes are lighter behind the hat than at the edges. B: the fountain is high key and evenly lit, with no corner darkening.",
+   "fix": "Paint the hat as a lighter charcoal-purple with broad lit planes; make the table a mid tone and keep the striped wall evenly bright to the corners."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the dark red scarf sits on a light disc at the swirl's center, and the outer swirl darkens toward the corners. Its vignette of 0.115 is outside the range. A: the light bag sits against flat dark purple stripes with no centered glow.",
+   "fix": "Keep the swirl rings the same brightness from center to corners, with no bright disc behind the scarf."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the twisted trunk is one dark-brown mass against a lighter purple sky. Its gap of -0.202 is outside the range and the trunk has little internal light. A: the feeder is mid-light against a busy mid-value park, with dark foliage only at the top corners.",
+   "fix": "Give the trunk warm lit faces on its left side so it reads in two or three values, and darken the sky slightly so the tree does not stand as a silhouette."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the corners go deep blue, and the bright cyan burst is concentrated right behind the box. The box's crimson shell reads near-black in the lens. Its vignette of 0.162 is far above the real range. B: the yellow rays are bright out to the edges and the mask is a mid-dark purple, as on the real camera card.",
+   "fix": "Make the rays the same brightness out to the card edges with no darker corners; lighten the red box so its shell reads as a mid value."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: a low-key card. The plank background is almost black and the purple book is a mid-grey island, so the hero is lighter than its background. Its mean of 0.442 and gap of 0.24 are both far outside the real range. A: a light-orange wood background, with a mid-teal book that is darker than its surroundings, like the real cards.",
+   "fix": "Use light honey-colored wood for the table so the whole card is bright, and the book reads slightly darker than the surface."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the sky and city wash out nearly to white, and the binocular viewer is the only dark mass. Its mean of 0.759 and gap of -0.246 are both above or outside range. B: a bright player on alternating dark and light purple rings, which matches the anchor's player card closely.",
+   "fix": "Deepen the sky to a saturated mid blue and give the city mid-tone faces, so the viewer is not a dark cutout on a white field."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the corners are the brightest part, with white clouds along the bottom and upper left. Its vignette of -0.099 is outside the range. The broom is a thin dark diagonal on flat mid-blue. B: clouds are present but the corners are balanced, and the balloons hold a large light-to-dark range.",
+   "fix": "Keep the clouds small and mid-light, away from the corners, and make the sky slightly lighter toward the edges than behind the broom."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: a black night-sky band runs across the top, the plank door is nearly black at the center, and the stone wall is mid-grey. Its vignette of 0.158 is far outside the range, giving a dark, enclosed key. A: the blue door is a mid value, framed by mid-green ivy, with the white wreath as the light accent.",
+   "fix": "Use a daytime blue sky, light warm-grey stone, and a medium-brown door with lit plank faces; don't put a dark band along the top edge."
+  }
+ ],
+ "pattern": "On value, the generated cards give themselves away in two ways. First, a light or glowing zone sits right behind the hero while the corners go darker, so vignette rises above the real range. Second, they swing too far in key: night scenes, near-black heroes or dark grounds, or washed-out near-white skies, which push lightness_mean and lightness_gap outside the real bounds. Real cards keep the backgrounds bright and even to the edges, and the hero holds a mid value inside them."
+}

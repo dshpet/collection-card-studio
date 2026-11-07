@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the sign stands back in a street with lots of separate background objects: a two-storey motel with balcony railings and lit windows on the left, a long fence, a tree at the right edge, distant mountains, clouds and stars. B: one close, quiet place. A brick wall fills most of the card and is cut by the edges, with only a strip of night sky and a moon top-right. That matches the real category-4 cards, which show a few large shapes.",
+   "fix": "Bring the camera close so the sign fills the card. Behind it put only one large plain surface, such as a dark night sky or a wall, and let the card edges cut it. No buildings, no balconies, no fence, no trees, no mountains."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both cards float the object on a sunburst of rays in one color: cyan behind the hat, green behind the jacket. Each backdrop has the same quiet ray pattern, darker at the corners. The jacket's badge sash belongs to the object itself, so it is not a background prop. My vector gives no reason to pick either card.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A puts the lion statue in a busy park scene. Behind it are a large tree trunk on the left, a row of cone-shaped trees and bushes, a second tree top-right, and a curving brick path with edging. That is many small shapes, and the background edge density is near the top of the real range. B is the real caravan staging: purple concentric rings and a plain grass strip with sparse tufts, only two large quiet zones.",
+   "fix": "Stand the statue on a plain strip of grass in front of a simple backdrop in one color, such as soft concentric rings. Remove the trees, bushes and brick path."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the radio sits on a dark wooden table that the card edges cut, in front of tone-on-tone purple wall stripes. B: the rocking chair stands on a light plank floor in front of tone-on-tone blue stripes. Both are category 3 with a simple striped backdrop. Neither card has extra props.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A adds a striped popcorn bucket on the cart's counter next to the popcorn case, an extra prop beyond what the cart holds. It also pairs a diamond-patterned blue backdrop with a fairly busy paving-tile floor, which gives the background more edges. B: the camera stands on a plain dark wooden tabletop cut by the card edge, in front of a quiet orange diamond backdrop, with nothing else on the table.",
+   "fix": "Show only popcorn inside the glass case and take the bucket off the counter. Make the floor a plain smooth surface instead of many small tiles."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both are category 2, with the object standing on a plain purple floor that blends into the wall. A's backdrop is a completely flat gradient with no pattern, and its background detail measures below the real range. B has a soft pink glow behind the machine and a faint floor reflection, which is closer to the real cards' soft light pool. This is a weak signal.",
+   "fix": "Add a quiet tone-on-tone pattern to the purple backdrop, such as faint diamonds or soft rings, and a soft pool of light behind the briefcase."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the bus is close and central and fills the card. Its rear runs off the left edge, and only a few large shapes sit behind it: pink building blocks, clouds and the road. B: the taxi is small and far away in the middle of a wide empty road. Large areas of lane markings, curb and purple sky surround it, and the whole car is shown with lots of space around it, the way the generated lesson cards show whole objects.",
+   "fix": "Bring the camera close so the taxi fills most of the card and the card edge cuts its back end. Show only a little road and sky around it."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the shield sits on a blue sunburst with a darker, even vignette, like the real glove card. B: the box sits on a sunburst with a strong bright cyan glow right behind it. That bright glow behind the object is the same look as the generated glove lessons. B's background detail is also near the top of the real range.",
+   "fix": "Use an even blue sunburst with darker corners and only a gentle lighter center. Remove the bright cyan glow behind the box."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Both backgrounds are busier than the real cards. B is busier still, with edge density 0.16 against A's 0.107. B shows the whole door with frame and a stone step, set in a wide brick wall. Around it are bushes in the bottom-left, ivy top-right, sky with clouds, and paving stones. That is the generated habit of showing the whole object with an added base and many props. A stays close: the blue door fills the card and is cut by the edges, with ivy only around the frame.",
+   "fix": "Bring the camera close so the door fills the card and the card edges cut its frame. Show only a little brick wall. Remove the step, paving, bushes and sky."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the fingerprint card lies on dark wood planks that fill the card. Its one partner object is the ink pad, and the background is quiet. B: the map lies on light wood with strong plank lines. The map itself is full of small detail: continents, islands, waves, a compass rose and a decorative border. Background edge density is 0.077, above the real range for this category.",
+   "fix": "Lay the magnifier on a plain map with only a few large simple land shapes, and remove the compass rose, small islands and wave marks. Use a calm wood surface with soft, wide planks."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both float the object on concentric rings in one color: green behind the magnifier, cyan behind the hoop. Both patterns are tone-on-tone, and both detail values sit inside the real range. The hoop's pole cut by the bottom edge is acceptable. Nothing on my vector separates the two cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the popsicle floats on a quiet green sunburst, category 1. B: the fruit plate sits on bright plank wood with high-contrast grain lines, and water droplets are scattered on the glass rim. Both background measures are above the real range, at 0.0199 and 0.037.",
+   "fix": "Put the plate on a soft, low-contrast wood surface with wide planks and faint grain. Remove the water droplets from the plate rim."
+  }
+ ],
+ "pattern": "Generated cards stage the whole object from a distance with an added base, such as rocks, a doorstep or a full table, where real cards crop close and let the card edge cut the scene. Their category-4 settings fill up with small extra things: trees, paths, buildings, fences, bushes and ivy. They also put a bright glow straight behind the hero on rays backdrops, and they put busy, high-contrast patterns on surfaces, so background detail runs above the real range."
+}

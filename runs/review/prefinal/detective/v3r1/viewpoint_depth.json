@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the camera sits low, looking up at the motel sign on its posts. The building on the left, the sign, the fence and the trees step back in three clear layers, all at one mild angle. B: the brick wall recedes sharply to the right, and its top edge and mortar lines converge hard. The round sign and the bracket bar still face almost straight at the viewer, so the sign does not share the wall's turn.",
+   "fix": "Turn the hanging sign so its bracket arm sticks straight out from the wall and its round face is turned to match the wall's angle. Use a gentler, less sharply receding wall."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the fedora is seen in a mild three-quarter view from slightly above. The brim reads as one tilted ellipse and the crown sits on it. B: the jacket floats square to the viewer with both sleeves spread out. This is the straight-on, front-facing pose that the generated glove and camera lessons show.",
+   "fix": "Turn the jacket about 30 degrees so one sleeve and side panel go back into the picture. Look down at it slightly from above instead of straight from the front."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "B matches the real caravan card: a side three-quarter view from a low camera, with the grass ground plane at one angle. A: the lion's plinth is strongly foreshortened, with its stepped top faces tipping toward the viewer. A curved path and trees fill a deep, sharp middle ground, so the card has more depth layers than the real cards do.",
+   "fix": "Lower the camera to just above the plinth top so the steps show only thin top faces. Replace the deep park and path with a simple soft green backdrop close behind the statue."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the radio's front face is almost flat to the viewer and only a sliver of the right side shows. Underneath it, the table planks run at a steep diagonal, so the radio and the table read at different angles. B: the rocking chair is in a clear three-quarter view, and the floor planks converge toward the same low eye level.",
+   "fix": "Turn the radio to a clear three-quarter angle so its side and top show. Make the table plank lines recede in the same direction as the radio's base."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the popcorn cart is seen side-on from a slightly high camera, with the awning top, the counter and the tiled floor all at one mild angle. B: the folding camera is in a three-quarter view on a table, and the table's back edge and top face agree with the camera body. On viewpoint, both cards are consistent.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the briefcase is almost square to the viewer, with a flat front face, only a thin strip of the right side and almost no top showing. Its planar share of 0.719 is above the real range. B: the vending machine is turned to show its left side in a mild three-quarter view, which matches the real cards.",
+   "fix": "Turn the briefcase about 30 degrees and raise the camera slightly so its top and one end panel show clearly next to the front."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the bus is seen with a low, wide-angle camera. The front swells toward the viewer, the side windows converge hard toward the back, and the buildings lean in. B: the taxi is in a mild three-quarter view from slightly above, with straight road lines at one angle. Real cards use mild perspective like B.",
+   "fix": "Use a longer, flatter lens with the camera at about mid-bus height and further back, so the side windows stay nearly parallel and the front does not bulge toward the viewer."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the shield is near-frontal with a slight turn, like the real clock card. B: the ring box is in a three-quarter view from above, with the lid and base sharing one view. On viewpoint, neither card breaks.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a close, frontal crop of the door, filling the card the way the real lighthouse is cropped. B: the whole door is shown with its doorstep and paving, framed like the generated island-lighthouse lessons. The top face of the doorstep and the top of the wall coping both show, which no single eye height can produce.",
+   "fix": "Crop in close on the door so the step and wall top are cut off. Keep one eye level near the door handle so that horizontal ledges show either their tops or their undersides, never both."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both cards are steep top-down views, and both planar shares (A 0.904, B 0.848) are above the real range. A: the fingerprint card is foreshortened like a tabletop seen from high up, while the ink-tin lid stands up at its own tilt, out of step with the card plane. B: the magnifier lies flat on the folded map, and the map's folds follow the receding table boards.",
+   "fix": "Lower the camera to a three-quarter angle. Rest the ink-tin lid flat on the table beside the tin, and make the card, the tin and the lid follow one tabletop angle."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the magnifier floats in a flat, frontal icon view, like the real telescope. B: the backboard is turned and seen slightly from below, with its edge thickness showing on the right. The hoop rim is drawn as an open ellipse seen from above. The two parts do not share one camera height, and the planar share of 0.699 is above the real range.",
+   "fix": "Put the camera just below the hoop rim, so the rim reads as a thin ellipse seen from underneath with the net hanging toward the viewer, matching the backboard's angle."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the popsicle floats tilted on a flat backdrop with a slight side view, like the floating real icons. B: the fruit plate is seen from a high three-quarter view on the table, with the plate's ellipse and the plank lines reasonably matched. Neither card has a clear viewpoint break.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards often face the viewer squarely (briefcase, jacket) and show the whole object with its base or ground (doorstep, plinth, island). Some use a wide-angle camera that swells the near end (bus). Within one object, parts can disagree on camera height: tops of ledges show above and below eye level at once (door), or a hoop rim is seen from above while the backboard is seen from below. Real cards keep one mild three-quarter view, crop tighter, and use a simple, close background."
+}

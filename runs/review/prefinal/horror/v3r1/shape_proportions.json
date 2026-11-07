@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the pumpkin pail is one swollen ball. Its rim and ribs bulge, the base has no flat foot and the outline has no corner at all (corner_rate 0.0, below the real range). The handle is a thick tube. B: the lawnmower has thin straight handle rails, a deck with defined edges and wheels in correct proportion to the deck.",
+   "fix": "Draw the pumpkin pail with a flat base, a crisp lip around the opening and shallow ribs. Make the handle a thin wire bail with small side pivots."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the spider's legs are thick sausages of even width, with no thinning toward the tips. The abdomen is an over-inflated ball, and the outline has too many corners (corner_rate 6.07, above the real range). A: the palm has a tapering segmented trunk and pointed, notched fronds, matching the shapes on real cards.",
+   "fix": "Draw the spider legs thin and jointed, narrowing to sharp points at the tips. Make the abdomen smaller than the legs' span."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the vending machine is a near-solid block (solidity 0.981). The top-left corner is a soft rounded blob, and the side faces bulge slightly. A: the hourglass has thin turned posts, flat round plates and a correct glass-bulb waist. The evidence is weak.",
+   "fix": "Draw the vending machine cabinet with flat side panels and tight, beveled top corners."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the jack-o'-lantern is one round blob filling the card (solidity 0.962, above the real range; corner_rate 1.60, below it). Its lobes are barely separated and the stem is a short thick nub. B: the topiary has stacked spiral tiers and a flat stone ring underneath.",
+   "fix": "Draw the pumpkin with deep vertical grooves between distinct lobes, a slightly flattened top and bottom, and a narrower, longer twisted stem."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the witch hat's brim is a thick soft pad, not a thin flat disc. The cone is pillowed with rubbery folds, and the tip curls into a fat tube. Corners are low (1.36). B: the fountain has flat stacked basins, straight rims and crisp tier edges.",
+   "fix": "Draw the hat brim as a thin flat disc with a sharp edge. Draw the cone as stiff fabric that narrows to a slim pointed tip."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the neckerchief's collar is a fat inflated ring. The knot and both tails are swollen pillows with blunt round ends instead of thin cloth with pointed corners. A: the tote has a flat-bottomed body, thin strap handles, and items with defined bottle and roll shapes.",
+   "fix": "Draw the scarf as thin flat cloth: a narrow folded collar band and two flat triangular tails with pointed tips."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the dead tree's trunk is a swollen twisted mass. The branches end in curly tendrils, and both measures are far outside the real range (straight 0.125, solidity 0.40). A: the bird feeder has flat boards, straight roof edges, crisp plank corners and thin ropes.",
+   "fix": "Draw the bare tree with a straighter tapered trunk and fewer branches that narrow to fine twigs. No curled tendril tips."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the jewelry box lid and base are puffy cushions with big blob corners (corner_rate 0.77). There is no crisp edge where the faces meet. B: the mask has sharp eye openings, a pointed brow peak and a shaped feather, with tight contour changes.",
+   "fix": "Draw the ring box as a flat-sided case with straight edges and small beveled corners. The lid should be a thin flat panel hinged at the back."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the purple book is an overfilled slab (solidity 0.984, straight 0.765; both above the real range). The cover is padded, the spine is a fat rounded roll and the clasp is a chunky block. A: the travel book has a flat cover, a thin page block and ribbon bookmarks breaking the outline.",
+   "fix": "Draw the book with a thin flat hard cover, a squared spine and a narrow clasp strap."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: this is a near copy of the real player card in the anchor, but the body is a thicker, puffier block with rounder corners (corner_rate 0.94, below the real range). The earbud cable is thicker than the real card's (thin_share 0.083, above range). A: the coin viewer has a cylindrical post, collars and a yoke with defined steps.",
+   "fix": "Draw the music player as a thinner rounded-rectangle case with tighter corners. Make the earbud cord a fine thin wire."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the broom handle is an even thick rod with a bulbous rounded end. The bristle head is a fluffy swollen bunch, and the tie is fat looped cord. B: the balloons have correct teardrop shapes, small knots and thin strings. Both cards sit outside the real ranges, so the evidence is weak.",
+   "fix": "Draw the broom handle as a slim pole tapering slightly to a plain end. Bind the straw bristles tightly at the neck and fan them out into straight, thin straw ends."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the arched door's mask is an overfilled slab (solidity 0.965, above the real range). The surrounding stone blocks and step are pillowy, with soft rounded corners. A: the door has crisp, inset rectangular panels, and the wreath has jagged, pointed leaves.",
+   "fix": "Draw the stone blocks and step with flat faces and tight beveled edges. Make the door planks flat boards with straight seams."
+  }
+ ],
+ "pattern": "Generated cards swell the object. Flat parts (book covers, box lids, hat brims, stone blocks) become soft cushions with blob corners. Thin parts (spider legs, scarf tails, branch tips, cables, handles) thicken into even-width sausages. The silhouette is either over-filled (solidity above the real range) or broken into curly, swollen lobes."
+}

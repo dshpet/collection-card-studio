@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the brass lamp body has smooth, broad gold highlights and the glass chimney is soft and frosted, with no fine marks. B: the red flashlight is smooth glossy plastic, the steel bezel has a broad band of sheen, and the grip ribs are wide and simple. Both match the real cards' finish and all four measures sit inside the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the bike rack is full of small hardware (bolts, clamps, chain links, thin spokes, pedal parts), and the car's rear has fussy panel lines. The detail measure (0.104) is above the real range. A: the police car has broad smooth black and white panels and a simple chrome bumper. Only the asphalt carries a fine speckle.",
+   "fix": "Simplify the bike rack into two or three wide smooth bars with no bolts or clamps. Draw the wheels with fewer, thicker spokes and the chain as one smooth band."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the glass door is covered in tiny condensation dots, and the cans and bottles behind it are mushy and smeared, with soft, unclear edges. B: the yellow tape is clean, smooth plastic with crisp layer lines, and the cardboard core has a quiet, even finish.",
+   "fix": "Draw the vending-machine glass as a clean, smooth pane with one or two broad reflection streaks and no water droplets. Give the cans and bottles crisp, simple shapes."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: dashed stitching runs around every leather panel, the leather has a fine pebbled grain, and the dark wood board shows streaked grain. This matches the fine stitching that marked the generated gloves in the lessons. The detail measure (0.069) is above the real range. B: the teal book cover is a smooth flat surface with sticker-like icons, and the only texture is the stripy grain on the wood behind it.",
+   "fix": "Draw the wallet as smooth, softly shaded brown leather with no stitch dashes and no pebbled grain. Show the panels as raised pads with rounded edges, and keep the wood background plain and quiet."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the boxing gloves are smooth and blurry, and the creases at the thumb fold are smeared. The wood plank under them has loose painted streaks. Micro-texture (0.0053) is below the real range. A: the dog has fine but quiet fur and skin folds and a clean leather collar with a brass ring, all within range.",
+   "fix": "Draw the gloves as firm, glossy red leather with two or three clean, crisp creases at the thumb, a sharp edge to the wrist cuff, and a plain smooth wooden floor."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the map paper has crinkly fold noise and smudgy printed blocks, the glass lens is cloudy with a smeared reflection, and the wood under it shows dark streaked grain. Gloss share (0.144) is above the real range. B: the binoculars have smooth matte green barrels, rubbery black eyecups and glossy blue lenses, giving a clear mix of matte and shiny parts.",
+   "fix": "Draw the map as clean, smooth paper with two soft fold lines and crisp, simple road shapes. Draw the lens as clear glass with one curved white highlight."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the dark brown leather band on the spyglass is filled with a fine wavy, crumpled noise that real cards do not use, while the brass rings are lacquered gold. A: the sails are smooth matte cloth with a few broad folds, and the hull has quiet plank lines.",
+   "fix": "Paint the spyglass wrap as smooth, even, matte brown leather with soft shading and no wrinkle texture."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the flash reflector and the top plate show fine radial and linear brushed-metal streaks, the kind of machined detail that marked the generated cameras in the lessons. B: the yellow player is smooth, soft plastic with broad raised rims, and the earbuds are clean white.",
+   "fix": "Draw the flash dish and the top plate as smooth polished silver with broad soft highlights and no brushed streaks."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the sneaker uppers have a dot-grid mesh, the laces are tangled and smeared, and the sole has many small colored inserts. Detail and micro-texture are near the top of the real range. A: the fedora is soft, matte, even felt with a smooth ribbon band.",
+   "fix": "Draw the sneakers with smooth, solid uppers and no mesh dots. Give them a few thick, clean laces in simple criss-cross and a plain rounded white sole."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the blue door and orange frame are covered with visible painted wood-grain brush strokes, and the wreath is a dense pile of glossy flowers and leaves. Detail (0.088), micro-texture (0.045) and gloss share (0.51) are all far above the real range. B: the brass knob and plate are a smooth gold sheen. The fingerprint swirl is grainy, but the green door's brush streaks are only faint.",
+   "fix": "Paint the door as smooth, softly shaded blue panels with no visible wood-grain strokes. Draw fewer, larger flowers in a mostly matte finish."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the red planter boards carry painted grain streaks and dark outline strokes, and the fence and stone patio show busy brushed texture. B: the sunscreen bottle is smooth, matte, soft plastic with an embossed sun, and the sunglasses are clean.",
+   "fix": "Draw the red planter as smooth, painted wood with soft rounded edges and only a few faint grain lines. Keep the fence and paving plain."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the plastic bag has many smeared wavy highlights, the gold ring is glossy, and the dark wood floor has streaky grain, so most of the card reads as shiny. B: the racket frame is smooth blue plastic, the strings are a clean grid, and the ball has a quiet felt stipple, giving a clearer mix of matte and shiny.",
+   "fix": "Draw the bag as clear plastic with two or three broad, clean highlight bands. Make the wood background plain with faint grain."
+  }
+ ],
+ "pattern": "Generated cards add too much fine surface detail. They show stitch dashes, brushed-metal streaks, painted wood-grain strokes, mesh dots, condensation droplets and small bolted hardware. Some also smear the finish into blurry, mushy texture. Real cards keep surfaces smooth, with broad soft shading, quiet grain and a few large simple parts."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the motel sign stack sits right of center and runs off the bottom edge. The lit building is cropped by the left edge and competes a little, but the pink bed sign still reads first. B: a round magnifier sign hangs whole in the middle of the wall with an even gap of about 12% all round (margin 0.123, above the real maximum of 0.085). It is a neat, closed, fully contained icon.",
+   "fix": "Push the hanging sign closer and larger so its round face runs into the right edge of the card. Leave the bracket partly cut off at the top left."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the fedora is tilted in three-quarter view and its brim stretches nearly edge to edge, like the real telescope card. B: the scout jacket floats dead center, seen straight on and nearly symmetrical, with an even band of green rays around it, the same pattern as the generated lesson cameras.",
+   "fix": "Turn the jacket to a three-quarter angle and tilt it slightly. Make it bigger so the sleeves nearly touch the left and right edges."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the lion statue and its plinth fill the card and the plinth almost touches the left edge, like the real cards. B: the caravan matches the real caravan card, but here the tow hitch ends inside the frame with clear purple space on the right. On the real card the caravan runs off the right edge. Seeing the whole vehicle, neatly contained, is the generated pattern.",
+   "fix": "Draw the caravan larger and shifted right so the tow hitch and back corner are cut off by the right edge."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the radio fills the upper two-thirds and its right side nearly touches the edge. The table runs out of frame. B: the rocking chair is fully shown and centered, with both rockers inside the frame and a band of floor below. This complete, centered staging is what the lesson generated cards do.",
+   "fix": "Bring the chair closer and turn it more to three-quarter view. Let one rocker run off the bottom edge and the top knob get close to the top edge."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the popcorn cart fills the card from awning to wheels and touches the edges. B: the bellows camera is small on the table, with a wide empty orange wall above and to the left (margin 0.123, box width 0.586, both outside the real range). The table surface takes up a lot of the thumbnail.",
+   "fix": "Make the camera much larger, about 80% of the card's width, and shift it so the flash dish nearly touches the top edge. Crop the table at the bottom."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the briefcase is turned three-quarters and fills the width, with its handle near the top. B: the vending machine stands upright and narrow in the center (box width 0.581, at the bottom of the real range). Purple space fills the sides, so at thumbnail size it reads small.",
+   "fix": "Turn the vending machine more to the side and draw it larger, so its side panel takes up more width and its top nearly touches the top edge."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the double-decker bus fills the card and its left end is cut off by the left edge, like the real airplane card. B: the taxi is a small car in the upper middle (area 0.176, height 0.385, well below the real range). Empty road fills the lower half, and the sunset sky and buildings compete for attention.",
+   "fix": "Draw the taxi close-up and large, filling most of the card. Let the back bumper run off the left edge and show only a strip of road under it."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the shield faces almost straight on and sits upright in the center, with even blue margins (0.121, above the real range). B: the medal box is turned three-quarters and the open lid reaches toward the top. Its gaps to the edges are uneven, closer to the real cards. The difference is slight.",
+   "fix": "Tilt the shield to a three-quarter angle so its silver side rim shows, and draw it larger so the top corners nearly touch the edges."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the blue door fills the card from edge to edge, cut off at the top and bottom, with the wreath as the clear focal point. This is like the real lighthouse card, cut off by the frame. B: the whole door, frame and stone step sit in the middle of a brick wall with sky above. The extra brick wall and paving take attention from the door, like the lesson lighthouse shown whole on its island.",
+   "fix": "Move in close on the door so the frame is cut off by the top and bottom edges. Leave out the step and the strip of sky, and keep only a little brick at the sides."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the fingerprint card lies tilted across the wood, with the red ink pad near the top-right edge. B: the map lies tilted with its corner cut off by the top-right edge, and the magnifier is the clear focal point. Both are flat-lay views at a slant with similar occupancy, so composition gives no basis to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the magnifier is placed diagonally, whole, and centered, with even green rings around it. The lens is see-through, so the hero reads lighter. B: the backboard is large and off-center, and the pole is cut off by the bottom edge, which matches how real cards crop.",
+   "fix": "Draw the magnifier bigger and closer so the handle runs off the bottom-right corner and the rim nearly touches the top-left edge."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the popsicle is tilted diagonally and fills most of the card's height against the green rays, a bold single read. B: the fruit plate sits as a wide, low oval in the middle of a wood table (box height 0.565). It is a cluster of several fruits with no single hero, so the thumbnail reads as a busy pile.",
+   "fix": "Move in closer and make the watermelon slice the large hero in front. Tilt the plate so it fills more of the card's height, and crop the plate rim at the right edge."
+  }
+ ],
+ "pattern": "Generated cards stage the whole object, complete and centered, often head-on or symmetrical, with even margins all round. They also add a full base or scene: a step, an island, a table, a road. Real cards push the hero closer: it is tilted or in three-quarter view, larger, and cut off by one or more edges, with uneven gaps to the edges."
+}

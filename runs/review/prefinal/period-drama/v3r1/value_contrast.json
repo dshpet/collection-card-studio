@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (sneakers): the card is very light overall (0.762, above the real range). The background is two flat blocks, a pale grey wall over a near-white floor, with no glow behind the shoes and no darkening at the corners. The shoes sit as a mid-grey mass on a white floor. B (gift): a light glow sits behind the box, the corners fall off to mid-grey, and the dark box separates from the background by value. That matches the real cards.",
+   "fix": "Darken the floor to a mid tone, add a soft light glow behind the shoes, and let the corners of the card fall slightly darker."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "B (sunscreen and sunglasses) is the real card from the reference sheet: a light bottle on mid and dark green waves, with darker glasses at the base. A (soccer ball): the hero has the hardest local contrast in the pair, with pure-black patches next to clipped white panels (rms 0.202, at the top of the real range). The grass is dark mid-grey, and the field lines in the top-left corner are bright white, which draws the eye away from the ball.",
+   "fix": "Draw the ball's dark panels as deep navy-grey rather than pure black, soften the white highlights, and tone the field lines in the corner down to a muted light green."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (parasol): the card is washed out (lightness 0.848, above the real range, and contrast 0.076, below it). The lilac canopy and the white lace sit at the same value as the yellow diamond background, and the white diamonds break into the canopy edge. Only the handle reads as dark. B (fan): the purple pleats alternate dark and mid, and they stand out clearly against a light glow, with a darker yellow edge around the card.",
+   "fix": "Draw the canopy in a deeper violet with a clear shadow side, keep the background diamonds a mid-gold with no white patches, and darken the corners slightly."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (cake stand): the card splits hard into a near-black purple wall in the top half and a near-white tablecloth below (gap +0.241 and vignette -0.075, both outside the real range). The white stand disappears into the white cloth. There is no glow behind the hero; the light comes from the cloth instead. A (fountain) is also very light (0.783), but it has a soft, even light key that is closer to the real stage cards.",
+   "fix": "Lift the wall to a mid purple, darken the tablecloth to a soft mid lilac, and put a gentle light glow on the wall behind the stand so the white porcelain stands out by value."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (top hat): the hero is an almost solid near-black mass (gap -0.47, rms 0.236, both well outside the real range) with hard white rim highlights on the crown and brim. Dark and light are pushed to the extremes. A (graduation cap) is also dark against a light glow ring, but it stays inside the real range and has a dark corner falloff (vignette 0.095), like the real cards.",
+   "fix": "Paint the hat in dark charcoal-blue with soft mid-grey planes on the lit side of the crown and brim, rather than solid black with sharp white edges."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (teacup): the pale cup sits inside a large pale glow, so the hero and the background merge in the light value group (rms 0.10, below the real range). The only dark accents are the tea surface and the saucer shadow. A (vending machine): a dark blue body on a mid background, with a light glass panel inside it, gives clear value groups like the real camera card.",
+   "fix": "Shrink the glow behind the cup, deepen the pink background to a mid tone, and add a stronger shadow side on the cup and saucer."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 5,
+   "difference": "A (pearls): the card is low-key (lightness 0.377, far below the real range of 0.55 to 0.74). Navy velvet fills almost the whole card as a near-black mass, and the white pearls jump straight to the top level (gap +0.53), which is a dramatic photographic setup. No real card has a dark background like this. B (map and magnifier) is light, with mid-grey wood, and fits the real key.",
+   "fix": "Replace the dark velvet with a bright mid-blue background that has a soft light glow behind the bracelet, and keep the whole card light."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (fan): dark red pleats with black crease streaks on a light, wavy blue background, inside the real range. B (neckerchief): a dark red scarf with a black inner collar, set on a light center inside a swirl, with a stronger vignette (0.115, still in range). Both separate a dark hero from a lighter background the way the real cards do, so this vector gives no reason to pick one.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (suitcase): the sunburst background is blown out to near-white (lightness 0.792, above the real range). The orange case reads as one flat mid-grey slab, and only the corner caps and handle are dark. The floor is also light, so the card has no dark base. B (chest): a dark wooden chest on a mid wood floor, with a lighter sunburst behind it, gives clear light, middle and dark groups.",
+   "fix": "Tone the sunburst rays down to warm mid-yellows, darken the green floor, and give the suitcase a darker shadow side so it reads as a solid form."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (piano): a near-black piano against a near-white striped wall and a pale floor gives a hard, photographic split (gap -0.376 and rms 0.246, both above the real range). The inside of the piano is flat dark, with no mid-tone planes. B (guitar): a busy stage with light spotlight beams and bright corners (vignette -0.10), but the red guitar holds a mid value inside a pooled light on the floor.",
+   "fix": "Paint the piano in a warm mid-brown with lit top and front planes, and darken the wall to a mid cream so the piano does not read as a black silhouette."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (ring box): strong vignetting, with dark corners and a bright cyan glow pooled right behind the box (vignette 0.162, above the real range). The box itself is a dark maroon frame around a near-white cushion and coin, so the local contrast is very hard. B (gate): an even, light outdoor scene with dark bricks and ironwork spread across the card and no corner falloff.",
+   "fix": "Weaken the darkening at the corners and the glow behind the box, and lift the box's red to a mid tone so the cushion is not the only light shape."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (bugle): the card is very light (lightness 0.809, above the real range). The gold bell and tube sit at almost the same value as the pale cyan sunburst, and only the red cord forms a dark accent, so the hero barely separates by value. B (violin): a mid-dark violin on a light radial glow, with darker green corners, matches how the real cards separate the hero.",
+   "fix": "Darken the sunburst to a mid teal with deeper corners, and give the brass bugle a darker shadow side so it stands out against the background."
+  }
+ ],
+ "pattern": "On value, generated cards miss the real cards' balanced mid-key in one of two directions. Some are washed out: a pale background as light as the hero, so the hero does not stand out (parasol, suitcase, bugle, sneakers). Others are pushed to extremes: near-black heroes or backgrounds against clipped whites (pearls on velvet, top hat, piano), or a hard two-block split of the wall and floor (cake stand). Strong corner vignettes with a glow pooled right behind the hero (ring box) also give them away. Real cards keep a mid-tone background with a soft glow, a hero with clear light and shadow planes, and deep darks only in small accents."
+}

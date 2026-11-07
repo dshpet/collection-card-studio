@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the oil lamp stands upright, square to the viewer, in the exact center. It is a narrow column (box width 0.43, below the real range) with even empty rays on both sides, and the glass chimney top sits far from the top edge. B: the key runs corner to corner on a diagonal, its ring near the top-left and its bit near the right edge. It fills the card's width the way real heroes do (0.87).",
+   "fix": "Turn the lamp to a three-quarter view, tilted slightly, and make it larger so the brass base and handle almost reach the left and right edges and the chimney nearly touches the top."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the grandfather clock is a thin upright sliver in the middle (width 0.36, area 0.20, both below the real range) on a flat empty green backdrop. Large blank green areas on the left and right compete with nothing and say nothing. B: the vending machine fills about 60% of the width with a modest top margin, closer to real occupancy.",
+   "fix": "Draw the clock large and turned three-quarters so its hood and base reach close to the card edges, and fill the empty sides with a room setting such as a wallpapered wall and a wooden floor."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the witch hat is centered with nearly equal margins on a plain purple gradient. Its brim is a symmetric oval and nothing touches an edge, so it reads as a sticker floating mid-card. B: the sneakers sit in the lower half with a flat orange wall above (box height 0.49, below the real range), but they do run nearly edge to edge horizontally. Both are weak, and A's isolated centered placement matches the generated lessons more closely.",
+   "fix": "Make the hat larger and tilt it in a three-quarter view so the brim nearly touches both side edges, and set it on a surface such as a wooden table instead of an empty gradient."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the black cat sits upright, facing forward, centered, and narrow (width 0.53, below the real range). Empty purple stripes fill both sides, and the ledge crosses the full width under it. A: the rocking chair is turned three-quarters, and its rockers and back post run from the bottom-left to the top-right, close to the edges like real cards.",
+   "fix": "Make the cat larger and turn it three-quarters, perhaps with its tail curling out toward one edge, so the body spans most of the card's width. Crop the ledge with less empty background on the sides."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the mask floats flat in front of the sunburst, nearly frontal. Its feather tip is only 0.028 from the right edge while the left side and bottom stay loose, which reads as an off-balance float. A: the medal box is tilted three-quarters, sits low and fills the card, and the lid and base reach near the edges with weight at the bottom, as in real cards.",
+   "fix": "Turn the mask to a three-quarter angle, center its weight lower, and keep the feather inside the frame with a margin similar to the other sides."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the broom is a thin diagonal stick across a plain grass field (area 0.14, well below the real range). Most of the card is empty grass, and at thumbnail size the straw head is the only thing that reads. A: the binoculars are big and chunky, tilted three-quarters, and fill the card with lenses facing the viewer.",
+   "fix": "Draw the broom much larger and closer, with the bristle head filling the lower half and the handle going out the top corner. Leave less empty grass."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the candy bowl is centered and frontal, with a wide empty blue ring background above. Its margin (0.144) is above the real range, so it floats in the middle with even space all around. B: the camper fills the width almost edge to edge (0.88) at a three-quarter angle, with grass at the bottom.",
+   "fix": "Move closer to the bowl so it fills most of the card, seen at a slight three-quarter angle, with its rim nearly touching the side edges."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the topiary is centered and upright with its stone ring base fully shown and has open sky above. B: the snorkel mask is tilted diagonally on a dock with the pool cropped at the top. Both measurements fall inside the real range. The snorkel card also appears in p12, which points to it being real. The topiary's centered complete-object framing is the only weak hint, not enough to call.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the lamppost is a thin black pole in the middle of a large empty cobblestone plaza (area 0.08, width 0.25, far below the real range). At thumbnail size the plaza wins over the hero. A: the motel sign is large and pushed right, and the building is cropped by the left edge, giving a strong, cropped, real-style frame.",
+   "fix": "Bring the lamppost much closer and draw it large, with the glowing lantern head near the top of the card and the post cropped by the bottom edge. Turn it slightly three-quarters and show less ground."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the pumpkin sits dead center and faces forward on a plank shelf. Its margin is 0.15, above the real range, and it covers only about two-thirds of the width, with empty blue stripes above. A: the fountain's basin spans nearly the whole width (0.92), and the tiers rise close to the top, close to real occupancy.",
+   "fix": "Draw the pumpkin larger, turned slightly three-quarters, so it fills the card nearly edge to edge, with its stem close to the top edge."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the window is seen square-on, a narrow arch in the middle of a flat stone wall (width 0.44, below the real range). The surrounding wall texture takes up most of the card, so the hero reads small and flat. B: the gate is also small (area 0.16) and centered between pillars. It is weak as well, but it has a perspective path leading in. A's flat frontal view is the clearer generated tell.",
+   "fix": "Show the window at a three-quarter angle and much closer, so the arched frame fills most of the card and the sill reaches near both side edges, with less bare stone wall."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the snorkel mask is tilted diagonally, large, and cropped by the dock and pool at the edges (the same card as p08 B). B: the lion statue on its pedestal fills 0.94 of the width, sits in a three-quarter view, and has a park path behind it. Both are inside the real ranges and both are framed like real cards, so this vector gives no reason to pick one.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards give themselves away by framing a small, upright, front-facing hero in the dead center, with even empty margins on all sides (often above 0.11) and a narrow subject box. The rest of the card is plain background: a gradient, empty grass, bare wall or paving. Real cards push the hero big and turned three-quarters, let it run near or past the edges, and leave little dead background. At thumbnail size the generated hero reads as a small sticker floating in empty space."
+}

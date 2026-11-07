@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (cooler) matches the real set: soft, smooth matte red plastic and broad simple can tops with only a few highlights. B (paddling pool) has smeary painted ripple marks on the water and scattered noisy grass blades. Its vinyl rings are evenly lacquered with no material difference, and the duck has the same gloss as the pool.",
+   "fix": "Smooth matte vinyl rings with one soft broad highlight each. Calm water drawn as a few wide, soft light bands with no fine ripple strokes. Plain soft lawn without scattered blades."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (envelope) has soft, quiet paper and a broadly modelled wax seal, and its crop is soft like the real cards. B (travel book) has bold, decorative wood-grain stripes on the table and crisp sticker cut-out edges. The cover is one even satin with no cloth or leather surface.",
+   "fix": "Draw the table with fine, faint grain, not bold stripes. Give the book cover a soft matte cloth finish. Draw the stickers as simple flat shapes with soft edges."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (parasol) has a frill covered in tiny punched eyelet flowers and fine, crisp rib spokes, so a lot of small fabric detail stays sharp in the crop. B (beach umbrella) has broad smooth panels and a soft, simple pole, like the simplified real cards.",
+   "fix": "Draw the frill as a plain soft ruffle without punched lace holes. Make the canopy smooth matte fabric with broad shading and the handle simple smooth wood."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (gloves) is covered with a dense lace floral pattern and a fine mesh weave from cuff to finger. This much small, crisp detail is well above the real range. B (fan) has broad flat matte pleats and simple smooth wooden sticks, the way real cards simplify.",
+   "fix": "Draw smooth white satin gloves with at most a few large, soft lace motifs at the cuff. No mesh weave and no all-over pattern."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (armchair) has all-over crisp velvet noise, a fine speckle on every red surface, and a mirror-like lacquered floor. B (rocking chair) is softer, with broad painted wood and a smooth cushion.",
+   "fix": "Draw the upholstery as soft matte fabric with smooth broad shading and no fine speckle. Make the floor satin wood with faint grain, not a mirror."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (scout jacket) has a fine noisy fabric grain on the khaki, crisp small badge icons and small hardware buttons, so its texture density is above the real range. B (top hat) has a smooth felt crown with a broad soft sheen and a satin band with a clear matte-versus-sheen contrast.",
+   "fix": "Smooth matte khaki cloth without fine grain. Badges as simple broad discs with large symbols. Leave out the tiny buttons."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A has a smooth matte feather, translucent green glass and a softly grained table. B has a smooth matte stone fountain and glossy water. Both have a material range and detail scale within the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (ship's wheel) has soft wood with faint, quiet grain and one gold hub. B (gramophone) has brushed-metal radial streaks on the horn, gold lacquered everywhere and a mirror-gloss floor with streaky reflections, and its gloss is above the real range.",
+   "fix": "Draw the horn as smooth brass with one or two broad soft highlights and no brushed streaks. Give the box satin wood and the floor matte wood with faint grain."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (spotlight) has broad smooth dark metal bands and soft lens glows. B (coral) has crisp, enlarged stipple pores scattered over every branch, which acts as decorative surface texture at a large scale.",
+   "fix": "Draw the coral as smooth matte branches with soft shading. Leave out the pores, or use only a few faint, small dimples near the tips."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A (medal box) has soft matte velvet, a satin pad and one gold coin, so the gloss is varied and the crop is soft. B (pocket watch) is fully mirror-lacquered gold with a finely knurled crown, crisp chain links and dense tick marks, and its gloss and highlight are far above the real range.",
+   "fix": "Make the watch case satin gold with one broad soft highlight. Draw the crown as a simple smooth knob without knurling, the chain as a few large soft links and the dial with only the numbers."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A (green door) has quiet, soft brick and paint surfaces. B (blue door) has visible streaky brush and grain marks across the painted panels and a glossy lacquer over everything. The wreath leaves and flowers are crisp and dense, and gloss is far above the real range.",
+   "fix": "Make the door flat matte blue paint with no brush streaks and soft broad panel shading. Draw a wreath of a few large, simple flowers and leaves."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (vending machine) is soft in the crop like the real cards, with a broadly simplified cans and bottles. B (teacup) is crisp and porcelain-glossy all over, with a ring of fine foam bubbles on the tea and a strong highlight on the rim and saucer.",
+   "fix": "Give the porcelain a soft satin finish with one broad highlight. Draw the tea as a smooth surface without a foam bubble ring."
+  }
+ ],
+ "pattern": "Generated cards add small, crisp surface detail that real cards smooth away: lace and eyelet holes, knurling, coral pores, brush-streak grain, foam bubbles and velvet speckle. They also lacquer everything to one gloss, with mirror floors and brushed metal. Real cards are soft at 2× and keep wide matte areas with only a few broad highlights."
+}

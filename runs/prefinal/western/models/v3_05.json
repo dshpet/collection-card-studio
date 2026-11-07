@@ -1,0 +1,70 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "loose": [
+   {
+    "parts": 1,
+    "kinds": [
+     "blob"
+    ],
+    "at": [
+     0.03,
+     0.0,
+     1.12
+    ],
+    "size": [
+     0.54,
+     0.36,
+     0.05
+    ]
+   },
+   {
+    "parts": 4,
+    "kinds": [
+     "box",
+     "torus"
+    ],
+    "at": [
+     0.0,
+     -0.31,
+     0.75
+    ],
+    "size": [
+     0.17,
+     0.19,
+     0.57
+    ]
+   },
+   {
+    "parts": 4,
+    "kinds": [
+     "box",
+     "torus"
+    ],
+    "at": [
+     0.0,
+     0.31,
+     0.75
+    ],
+    "size": [
+     0.17,
+     0.19,
+     0.57
+    ]
+   }
+  ],
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The stitched seat panel blob (z 1.091-1.139) is buried inside the main saddle body (top ~1.153), so it is invisible and not attached; it must lie on top of the seat.",
+   "Fenders sit at y +/-0.29, tilted opposite to the skirts, and touch nothing, so each fender + stirrup group floats; each fender must start under the seat and lie on its skirt.",
+   "Skirts tilt with the bottom inward and read as flat boards stuck on the sides; they should hang from the seat edge and flare outward like a real saddle skirt.",
+   "Stirrups read as small rings with a loose silver block and cube; a western stirrup is an arch with a wide silver tread hanging from a silver crossbar held by the fender, in the fender's plane."
+  ]
+ }
+]

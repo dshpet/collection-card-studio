@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the sheep is framed close and cut off by the left, right and bottom edges. It is turned slightly, the bags in the foreground spill out of frame, and the shop wall sits right behind it, so there are only two shallow layers. This matches the tight crops on the real cards. B: two characters stand head to toe on a porch with floorboards running back. The camera is set back like a stage view, and the porch, door and night sky form a full set built around the figures. On the lessons, showing the whole subject on its own ground pad is how generated cards tend to read.",
+   "fix": "Move the camera in closer so the characters are cut off at the knees by the bottom edge. Turn them three-quarters toward the door, and let the door and porch post run off the edge of the frame instead of showing the whole porch."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the camera is at eye level and faces straight on. The chicken stands full length in the middle of a round rug that is seen from above, and the man and curtain are flat against the left edge. It reads as a stage with the props lined up across the frame. B: an over-the-shoulder view from behind the man, who is cut off at the bottom. The blanket goes back at one steady angle toward the screen and fence, giving three clear depth layers that share one view.",
+   "fix": "Put the camera lower and turn it so the rug runs off the bottom of the frame. Cut the chicken off at the shins, and have the man and chicken overlap at different depths instead of standing side by side facing the viewer."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the console in the foreground is cut off at the bottom, and the cow and chicken overlap at slightly different depths with the window behind them. The layers and the three-quarter view are consistent. B: the round table top is seen from above at a fairly steep angle while the cow's face is seen head-on at eye level. That is a mild mismatch, but the table running off the frame and the cow being cut off match the real cards. Neither card shows a clear viewpoint error.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: both figures stand full length, side by side and facing the viewer, on a flat lawn. The camera is at mid-height and frontal, and their feet sit on the same strip of ground, so the foreground, the figures and the trees read almost as one flat layer. B: a three-quarter over-the-shoulder view. The man fills the left foreground and is cut off at the waist, the pig is in the middle distance, and the fence and trees are behind. The grass recedes at one angle. That gives three distinct layers that overlap.",
+   "fix": "Put one character large in the foreground, cut off by the frame edge and seen from behind or the side, with the other character smaller and farther back on the lawn. Turn the camera three-quarters instead of having both characters face the viewer full length."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the man is cut off at the hips and the pig overlaps him slightly in front. The porch boards recede toward the saloon at a mild, consistent angle. B: the pig and cow are cut off at the chest in front of a stage frame, with a small crowd far behind, which separates the depth layers clearly. Both use close crops and a single eye-level view with mild perspective, so viewpoint gives no reason to pick either card.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the camper is seen from a low angle in three-quarters, with the front end turning away to the right. Its wheel sits on a grass plane whose horizon is low behind it, and the perspective is mild and consistent. B: the drum kit is centered, facing straight on, on a round stage pedestal under a spotlight. The front of the bass drum is a nearly perfect circle facing the viewer while the drums are seen from above. This is the head-on 'object on a round base' framing that the generated lighthouse (on an island) and computer (on a round table) used.",
+   "fix": "Turn the drum kit three-quarters so the bass drum front becomes an oval and the side of the drum shows. Lower the camera slightly, and drop the round pedestal, or let the stage floor run off the bottom and sides of the frame."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the ship's wheel is perfectly head-on and symmetrical, like a flat diagram. But the deck planks under it converge sharply and the top of the base shows, so the floor is seen from above while the wheel is not, and the two parts do not share one view. B: the plate is seen from a high three-quarter angle. The table planks run diagonally and off the frame, and the plate rim, fruit and table all share the same downward view.",
+   "fix": "Turn the wheel about 30 degrees so its rim becomes an oval and the thickness of the wood shows on one side. Match the deck to that angle, with planks receding gently and running off the edges, so the wheel and floor share one camera."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cow and chicken are shown head to toe, sitting and standing on a hay bale that works as a central pedestal. The camera is eye-level and frontal, with the barn and fence spread across behind them. B: the cow is cut off at the belly. The tray in the foreground is seen from above and pushes toward the viewer, and the picnic table and trees recede behind, so the foreground, the cow and the background layers are clearly separated.",
+   "fix": "Bring the camera in closer so the hay bale runs off the bottom of the frame and the characters are cut off at the waist. Turn the pair three-quarters, with the bucket pushed into the foreground nearer the viewer."
+  }
+ ],
+ "pattern": "Generated cards show the whole subject: framed head to toe, centered on its own ground pad (a pedestal, rug, island, round table or hay bale), and facing the camera nearly straight on. Real cards turn the subject three-quarters, crop it at the frame edges, and let a foreground layer or the ground plane run off the card. Generated cards also sometimes show the ground from above while the hero is seen head-on at eye level."
+}

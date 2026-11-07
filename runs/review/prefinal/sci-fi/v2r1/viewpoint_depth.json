@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the locker is turned slightly in 3/4 view and stands on a wood floor against a wall, with a mild, consistent ground plane like the real cards. B: the joystick sits on a steel desk whose front edge cuts across the bottom. The camera is fairly high and the base is a wide ellipse, while the green walls behind read at a different, more frontal angle. The room corner and desk edge look photographic rather than card-like.",
+   "fix": "Lower the camera slightly and turn the joystick base a little so the desk and the back wall share one gentle angle. Keep the background a simple soft wall, without a hard desk edge across the foreground."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the twin tanks float almost straight-on with no ground and no shadow. There is little top face on the domes, and the back plate is a thin sliver, so the form reads as a flat sticker. Planar share is 0.017, below the real range. B: the ring box is in a clear 3/4 view from above, with the lid's inner face, the cushion top and the box sides all agreeing on one view.",
+   "fix": "Turn the jetpack about 30 degrees so the side of the backplate and the straps show. Tilt the camera down slightly so the tops of the tanks read as domes, and add a soft contact shadow below."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the rocket is shown almost in pure side profile, tilted diagonally. Both fins sit flat to the picture plane and the porthole is a front-facing circle, so there is no foreshortening along the body. The clouds are flat cutouts at one depth. B: the airplane is in 3/4 view from slightly above. The near wing and engine are larger than the far ones, and the clouds are layered in front and behind.",
+   "fix": "Turn the rocket toward the viewer in 3/4 view so the nose foreshortens and one fin points toward the camera. Make the porthole an ellipse, and put a cloud partly in front of the flame to add a foreground layer."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the gloves are cropped close from a low camera, overlap each other and sit on a wood table with a wall behind, like the real binoculars and computer cards. B: the pouch stands dead-center in an almost frontal view. Only a sliver of its side shows, and the floor is a blank white plane meeting a striped wall, like a studio product shot.",
+   "fix": "Turn the pouch a quarter turn so its side gusset shows, and bring the camera closer and lower. Set it on a textured tabletop that recedes gently toward the back wall."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the phone booth is in a 3/4 view with mild perspective, two faces visible and a slight top. It stands on a green floor that meets the patterned wall at one horizon. B: the seahorse is in strict side profile against a gradient with no ground. In the normal map it reads like a relief panel, with little turning away from the camera. Planar share is 0.053, at the bottom of the real range.",
+   "fix": "Turn the seahorse slightly toward the viewer so its belly and the near side of its head show volume. Place soft out-of-focus seaweed or bubbles in front of and behind it for depth layers."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A is the real bicycle-on-car card from the reference sheet: a close crop with the car body behind, the road and hills further back, and three clear depth layers. B: the hoop is seen from below, with the backboard a large flat slab (planar share 0.699, above the real range). There is no ground at all, only a radial gradient, so the hero has nothing to stand on.",
+   "fix": "Show the hoop from closer to eye level, with the pole reaching down to a visible court floor. Add a blurred court or a wall behind it to give a middle and back layer."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the two gloves stand upright side by side, palms flat to the camera and mirrored. There is almost no turn between them, and the cuffs show only a thin top ellipse, so the pair reads as a frontal display. Planar share is 0.025, below the real range. B: the vending machine is in 3/4 view, with its side face and front sharing one mild perspective, standing on the floor with feet and a shadow.",
+   "fix": "Lay one glove on its side and turn the other in 3/4 view so they overlap. View them from slightly above so the cuff openings show as ovals, resting on a surface with contact shadows."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is the real lighthouse card from the lessons: a low camera, cropped tower and sea horizon low behind. B: the porthole is seen dead-on, its rim a perfect circle flat to the picture plane, on a wall that fills the frame. There is no ground plane and no separate background layer, so the stars are only a texture inside the glass.",
+   "fix": "Turn the wall so the porthole is seen at an angle, its rim an ellipse with the depth of the ring visible on one side. Show a bit of floor or a corridor receding beside it so there is a ground and a back layer."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the sneakers are in a clear 3/4 view from above, overlapping, with one shoe in front of the other. They stand on a floor plane meeting the back wall at a horizon and cast a shadow. B: the helmet is nearly front-on, with a round visor facing the camera and a seamless pink sweep instead of a floor. Only the shadow suggests ground, and there is no horizon.",
+   "fix": "Turn the helmet in 3/4 view so the visor becomes an angled oval and the side earpiece shows depth. Set it on a tabletop that meets a back wall, as in the real cards."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the gate is cropped by the frame, the stone path recedes from the foreground into the garden behind, and the trees at the sides are cut off, giving three clear depth layers. B: the observatory is a small, complete diorama centered on a lawn, seen from a raised camera. All of it is contained, with a distant flat tree line. This matches the lesson's generated lighthouse on its island.",
+   "fix": "Bring the camera closer and lower so the observatory is cropped by the frame edges. Let a path or grass tufts sit large in the foreground, with the dome rising against the sky."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the submarine is in a mild 3/4 side view, with its nose turned toward the viewer and the periscope foreshortened. B: the saucer floats on a radial burst, seen from a raised camera showing a large top face. The rim lights sit on an even ellipse with no foreground or ground, so it reads as a centered emblem. Both lack ground, so the evidence is weak.",
+   "fix": "Lower the camera so the saucer's underside and beam show more. Place it over a landscape or ground glimpse in the lower third to give the card a back layer."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the capsule hangs diagonally in the sky, its base an ellipse viewed from above while the cone body faces nearly side-on. The top face and the base disagree on camera height, and the clouds are flat cutouts at one depth. B: the balloons overlap front to back, the strings recede to one knot, and clouds sit both behind and below them, giving consistent layering.",
+   "fix": "Choose one camera angle: show the capsule from slightly above so both the cone top and the heat-shield base read as matching ellipses. Put a cloud partly in front of the base for a foreground layer."
+  }
+ ],
+ "pattern": "The generated cards present the hero almost straight-on, centered and fully inside the frame: circles stay circles, paired objects are mirrored, and the background is a gradient or radial burst with no ground plane. When there is a scene, it is a small complete diorama seen from a raised camera. The real cards turn the object in 3/4 view, crop it close from a low camera, set it on a floor or tabletop that meets a back wall at one horizon, and stack two or three overlapping depth layers."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: blue sneakers carry neon green collars, teal and magenta laces, and orange and pink sole flecks on an orange and cream backdrop, which makes about 5.5 hue families, above the real range. Many small pure-hue accents compete with each other. B: one crimson box with a cream ribbon on a green field, a clean hero-against-background hue pair with a single accent.",
+   "fix": "Draw the sneakers in one blue with white soles and white laces, with a single small accent color. No neon green, magenta or orange trims."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: a black and white ball on green grass. The card is nearly one hue family (1.45), the hero has almost no chroma, and its shadows sink to dark green-black. B: an orange bottle with blue glasses on a green field matches the real anchor card, with warm hero, cool accent and green rest.",
+   "fix": "Give the ball a warm color note, such as a cream-tinted white with a colored brand stripe, and put it on a cooler stylized backdrop instead of a photo-like green lawn."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the fan leaf is pushed to pure electric magenta-violet (subject chroma 0.23, above the real range), with flat pure-hue pleats and a salmon handle. A: the lavender parasol has white lace and a brown handle, so softer local colors with neutral rest areas on the yellow field.",
+   "fix": "Paint the fan leaf a softer violet with pale highlights and cream or wood-brown ribs, not a saturated neon magenta."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a nearly colorless white cake stand on a white tablecloth. The only color is the purple wall and small pink cupcakes, giving about 2 hue families. The cloth shadows go purple-grey and stay oversaturated relative to the neutral subject. A: a cream stone fountain with cyan water and terracotta tiles on yellow stripes, with clear warm, cool and accent roles.",
+   "fix": "Give the cake stand a colored glaze, such as pastel mint or gold trim, and replace the white tablecloth with a warm wooden table so the hero's color reads against the purple wall."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: a black top hat whose shadows fall to grey-black (shadow chroma 0.47, below the real range), with one red band as the only chroma on the subject. A: a navy cap with a gold band and tassel. The navy sits close to the blue backdrop, but the gold accent keeps a warm-cool split.",
+   "fix": "Draw the top hat in deep plum or dark navy instead of neutral black, with colored reflections in the shadows and a richer red band."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: a pale grey-blue teacup with a gold rim on a loud magenta-pink backdrop. The hero is almost neutral against a background that is far louder, with about 1.7 hue families. A: a saturated blue vending machine filled with multicolor cans on violet, where hero and backdrop are balanced in loudness.",
+   "fix": "Paint the teacup in a stronger porcelain color, such as cream with a pink or blue pattern, and calm the pink backdrop so the hero is the loudest element."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: off-white pearls on navy velvet, with subject chroma 0.025 (below the real range) and 1.3 hue families. It reads as a photo-like neutral object on one dark cool cloth with no warm hero. B: a cream and blue map with a steel magnifier on warm wood, a varied, readable palette.",
+   "fix": "Show the pearls with warm creamy-pink sheen and a gold clasp, on a brighter stylized backdrop rather than dark realistic velvet."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the scarf is one block of pure fire-engine red. Its shadows stay pure red, and the medallion is also red and orange, so there is no secondary hue on the hero (subject chroma 0.22, above the real range). A: the red fan is broken up by gold ribs and a gold handle against cyan.",
+   "fix": "Draw the scarf in a slightly deeper crimson with darker wine-colored folds, and give it a contrasting element such as a white or gold trim instead of more red."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "A: an orange suitcase on yellow sun rays, so warm hero on warm backdrop, plus a green floor and multicolored stickers. B: a brown chest on a warm wood deck with a blue sky, where wood dominates. Both are plausible on hue roles, and the call is weak.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the whole card is pulled warm (warm share 1.0). A mahogany piano, a cream striped wall and an orange floor form one brown-orange family with no cool counter-hue anywhere. B: a red guitar against blue and violet stage lights, with yellow spot beams, gives clear warm-against-cool roles.",
+   "fix": "Place the piano against a cool backdrop, such as a teal or blue wall, and keep the wood a rich red-brown so it stands out from the background."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a crimson box, a gold coin, a blue ribbon and a cream lining on cyan rays add up to about 5.4 hue families, above the real range, with the blue ribbon repeating the backdrop hue. B: a brick and copper gate with a green garden and blue sky. It is busy, but it is a believable scene palette with local colors.",
+   "fix": "Remove the blue ribbon and keep the box to crimson, cream and gold on the cyan backdrop."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the violin's dark areas (chinrest, fingerboard, strings) fall to neutral black-grey (shadow chroma 0.31, far below the real range), and the card is almost two hues, orange-brown on green. A: a gold bugle with a red cord on cyan, with warm shadows kept rich.",
+   "fix": "Paint the violin's chinrest and fingerboard as a dark warm brown instead of black, and keep its shadows a deep red-brown."
+  }
+ ],
+ "pattern": "Generated cards break the palette in one of two ways. Some collapse it: the hero becomes a near-neutral, photo-like object (pearls, white cake stand, black and white ball, black hat, piano) and the card ends up with one or two hue families. On these, shadows go grey-black, or the whole card is pulled into a single warm brown-orange. Others overshoot: the hero is pushed to one pure hue (neon magenta fan, all-red scarf), or scattered with too many small pure-hue accents (neon sneaker trims). Real cards keep a saturated but local-colored hero against an opposite-temperature backdrop, with one accent and colored shadows."
+}

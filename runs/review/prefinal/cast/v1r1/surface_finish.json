@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the sheep's wool is broad soft curls with even, quiet shading. The bead necklace is glossy and the hat weave is simple. B: the ghost sheet is covered in many thin crease lines and the lantern has fine metal edges and glow. The cow's muzzle has the same lacquered sheen as the sheet, so every material shares one finish. B's micro-texture (0.0208) sits just above the real range.",
+   "fix": "Draw the ghost sheet as a few large, soft folds with matte cloth shading and no thin creases. Keep the cow's muzzle soft and matte."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the round rug has a fuzzy, fibrous surface noise. The mummy bandages have crisp overlapping edges, the velvet curtain has fine sheen streaks, and the cape lining is shiny. All three measures are above the real range (detail 0.049, micro 0.022, gloss 0.165). B: the polo shirt is flat matte fabric, and the skin and blanket are soft with little surface detail, much like the quiet finish on real cards.",
+   "fix": "Paint the rug as a flat, smooth surface without fuzzy fibres. Draw the bandages as a few wide, soft strips. Make the curtain matte velvet with one broad highlight."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: both spacesuits are glossy chrome-silver all over, with many thin seam lines, badges and ribbed bands, and the console buttons are lacquered too. Almost nothing on the card is matte (gloss 0.19, detail 0.064, both far above range). B: the cow's hide is matte, the muzzle has a soft sheen, and the wooden blocks have quiet grain. B mixes matte and shiny the way real cards do.",
+   "fix": "Make the spacesuits soft matte white-grey fabric with a few wide padded bands and a gentle sheen only on top edges. Drop the small seams and the chrome look."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "The measures are nearly identical. A: smooth matte polo, simple belt buckle, and fine but quiet grass blades. B: the badminton racket strings carry a rainbow, smeared colour shimmer inside the mesh. The fence boards show drawn grain streaks, and the bush leaves are crowded with small highlights. The racket mesh is the clearest sign of AI smear.",
+   "fix": "Draw the racket strings as a clean, even white grid with no colour shimmer. Keep the fence boards smooth with only faint grain."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the plaid shirt has crisp, finely printed checks, small shiny buttons and a polished belt buckle. The tin mug has a metallic shine and steam, and the wooden boardwalk has visible plank grain. This is more crisp small detail than the soft, simplified real cards show. B: the skin and muzzle are smooth and soft with a blurred stage background. B is smoother than any real card (micro 0.0085), but its rendering is closer to the soft real finish.",
+   "fix": "Simplify the plaid into a few broad, soft colour blocks. Make the buttons small matte dots and the mug a plain, soft grey with one broad highlight."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the caravan body is broad and smooth, with one wide orange band, soft panel seams and simple rounded hardware. It is mostly matte with a gentle sheen, like the real cards. B: every drum shell carries many glossy gold lugs, bolts and tension rods, and the chrome stand joints are chunky. These are the enlarged toy-like hardware details that real cards leave out. The blue shells and gold rims are equally lacquered.",
+   "fix": "Draw each drum with two wide, smooth rim bands and only a few soft, simple lugs. Give the blue shells a satin finish and keep strong gloss to the cymbal edges only."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the wheel is flat, vector-like wood with almost no gloss (0.04) except the gold hub. The deck planks are covered in large, decorative crack and grain strokes, which is texture at too big a scale. B: the watermelon, grapes and berries are glossy with droplets, but the glass plate and wooden table read as separate materials. The table grain is fine and quiet. The droplets are a flourish, but the material mix is closer to real cards.",
+   "fix": "Render the wheel as soft 3D wood with a light satin sheen and faint, fine grain. Draw the deck planks smooth, with no large crack strokes."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the hay bale is packed with hundreds of fine strands, the rooster has crisp individual feathers, and the grain in the bucket is grainy. The galvanised bucket is highly reflective, and the bandana has a fine print. Detail (0.048), micro-texture (0.021) and gloss (0.171) are all above the real range. B: the muzzle, hide and burgers are smoothly shaded with broad, soft highlights and little micro-detail.",
+   "fix": "Draw the hay as a few broad, soft clumps instead of individual strands, and the rooster's feathers as large smooth shapes. Make the bucket a soft grey metal with one broad highlight."
+  }
+ ],
+ "pattern": "Generated cards pack in too much small surface detail: individual hay strands and feathers, fuzzy rug fibres, many seams on suits, rows of lugs and bolts on hardware, and fine printed plaid. They also apply one lacquered gloss across many materials (chrome suits, gold lugs, shiny buckets) and sometimes leave smeared, shimmering patches such as racket mesh. Real cards keep surfaces soft and broad, simplify hardware into wide smooth bands, and mix a mostly matte or satin body with a few focused highlights."
+}

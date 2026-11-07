@@ -1,0 +1,35 @@
+# Review: prefinal/detective/v3r1
+
+| Specialist | Caught | Wrong | Abstained | False alarms |
+|---|---:|---:|---:|---:|
+| shape_proportions | 5/10 | 2 | 3 | 1/2 |
+| viewpoint_depth | 5/10 | 3 | 2 | 1/2 |
+| lighting_shading | 8/10 | 2 | 0 | 2/2 |
+| value_contrast | 7/10 | 3 | 0 | 2/2 |
+| color_palette | 5/10 | 5 | 0 | 2/2 |
+| surface_finish | 7/10 | 2 | 1 | 2/2 |
+| edges_linework | 3/10 | 6 | 1 | 2/2 |
+| composition_hierarchy | 6/10 | 3 | 1 | 2/2 |
+| staging_detail | 3/10 | 4 | 3 | 2/2 |
+
+## Art director
+
+Close. Two of the ten generated cards (fedora, magnifier) pass as they are, and the rest fail on fixable surface choices, not on style. The biggest giveaway is the dark, glossy mahogany tabletop (radio, camera, fingerprint card), which drags the card to a low key that no real card has. Next come fussy micro-detail (stitching, bolts, brushed or radial metal, gritty asphalt), hot spots or blooms in place of one soft key with a cast shadow, and heavily grooved warm brick backdrops. Distant, whole-object staging (taxi, door) is also a tell, but I left scale out of the edit notes because an earlier 'draw it larger' edit lost. I overruled the dark-outline claims, because they pointed only at real cards. I also ignored the specialists' picks on the two controls: their busy parks, marble veins and frost show those features are within the real range.
+
+1. **Dark, glossy mahogany tabletops make the whole card low key. The radio, camera and fingerprint cards all sit on near-black red-brown wood with strong lacquer and busy grain. Every real wood surface in the set (rocking-chair floor, map table, fruit-plate table) is light honey wood with soft, broad planks.** Put objects on light, warm honey-coloured wood with wide planks, a matte-satin finish and faint, quiet grain. Light the tabletop evenly and warmly.
+2. **Fussy fine surface detail and hardware: dashed stitching and pebbled leather (briefcase), brushed or scratched gold with a glare bloom (shield), radial ribs in the flash dish (camera), gritty asphalt (taxi), bolted plate brackets (motel sign), mirror brass and decorative grain (radio). Real cards draw hardware as a few broad, smooth parts with satin highlights. Overruled: the marble veins on the lion and the frost and droplets on the ice pop are on real cards, so wear and wet detail are not wrong in themselves. Only the generic machined or stitched micro-detail is.** Paint materials as smooth, soft surfaces with one broad soft highlight each. Draw metal parts as plain rounded shapes with a satin sheen.
+3. **Hot spots and spotlight light in place of one soft key. Examples: the glow bloom on the shield face, the white hot spot in the camera flash dish, and the vignetted spotlight on the fingerprint table. Grounding is also weak: cast shadows are faint or missing (shield emblem, motel sign on its wall, briefcase).** Use a soft key from the upper left, a gently darker lower-right side and a soft cast shadow below and to the right.
+4. **The hero is staged small and whole with its base: the taxi is far off in a wide empty road, the door has its full step and paving, and the camera is small on a big tabletop. Real cards bring the hero closer and let the edges crop the scene. This is hard to fix with an edit (a 'draw it larger' note lost before), so the notes below fix the surroundings instead.** Make the surroundings quieter and smoother so the hero carries the card.
+5. **Warm hero on a same-hue, heavily grooved warm backdrop: the orange brick behind the motel sign and the door, and the orange wall with red-brown table behind the camera. Shadows go dull brown or grey. This is partly overruled: real cards also pair warm objects with warm floors (the rocking chair), so ask only for cooler shadows and quieter patterns, not a hue swap.** Shade warm backdrops with soft blue-violet shadows, and draw brick as large smooth blocks with thin, faint mortar.
+6. **Overruled claims. The edges specialist's 'even dark outline' pattern pointed only at real cards (ring box, backboard, vending machine, map). All form and proportion fixes are excluded by the brief. Most specialists also flagged both controls (lion, fruit plate) as fakes, which shows that busy category-4 parks and fruit detail are within the real range.** No change.
+
+- p01: Motel: Paint the brick wall as larger, smooth, soft orange blocks with thin, faint mortar lines and soft blue-violet shading toward the right. Make the wall bracket one smooth, plain rounded dark-steel bar with no bolts or plate screws. Add a soft cast shadow of the round sign on the wall below and to the right; keep the glowing magnifier icon, the night sky and the moon.
+- p02: keep
+- p04: Vintage Radio: Replace the dark mahogany table with a light, warm honey-wood tabletop with wide planks and faint, quiet grain. Paint the cabinet wood as smooth satin orange with only a few faint grain streaks, and give the brass knobs one soft, broad highlight each. Keep the purple stripes, the speaker grille and the dial.
+- p05: Popcorn: Make the tabletop light, warm honey wood with a matte finish and faint, quiet grain. Paint the camera body a soft satin charcoal with a few broad highlights, slightly lighter than black. Make the flash dish one smooth, soft silver gradient with no radial ribs or white hot spot; keep the orange diamond wall, the bellows and the lens.
+- p06: Briefcase: Make the leather a smooth, soft, slightly lighter tan with no pebble grain and no dashed stitch line along the flap. Light it from the upper left so the front face goes softly from bright at the top left to darker at the bottom right. Add a soft, slightly lighter violet glow on the backdrop behind the case; keep the gold clasps, the handle and the purple backdrop.
+- p07: Tour bus: Paint the road as smooth, soft blue-grey asphalt with no gritty speckle. Make the shadow under the taxi a soft, rich indigo-violet. Light the car from the left so its far side is slightly darker than the hood and roof; keep the yellow taxi, the checker band and the dusk sky.
+- p08: Gold Badge: Paint the gold face as a smooth, clean surface with no scratch or noise texture, bright at the upper left and turning slightly darker toward the lower right, with no glow bloom. Give the silver rim a soft satin sheen. Let the house emblem cast a small soft shadow down and to the right; keep the blue sunburst and the house emblem.
+- p09: Door Wreath: Paint the brick wall as large, smooth, soft blocks with thin, faint mortar lines that fade away from the door. Light the scene from the upper left so the door frame casts a short soft shadow on the bricks and the shadows turn slightly blue-violet. Keep the brown door, the frosted window with the magnifier and the step.
+- p10: Print Card: Replace the dark mahogany table with a light, warm honey-wood table with wide planks and faint, quiet grain, lit evenly and warmly. Draw the fingerprint as clean, smooth, deep-brown lines on a cream card. Make the ink pad a soft dark charcoal, slightly lighter than black; keep the red lid, the tin and the card.
+- p11: keep

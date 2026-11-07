@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (locker): the light is almost frontal. Both the side panel and the door face have the same soft value, and the lens has a pink-warm cast like the generated computer lessons. Light bias is 0.2, below the real range. B (joystick): the key comes clearly from the left, the dark side runs down the stick and base, and the base has a firm contact shadow on the counter.",
+   "fix": "Light the locker from the upper left so its right side panel and the inside of the door fall into a clearly darker cool shadow, with a short, soft contact shadow under the feet."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (jetpack): the twin cylinders carry identical, symmetric tube highlights. Shading range is 0.914, above the real range, because a dark vignette is wrapped around a flatly lit object, and the backplate has no clear core shadow. B (medal box): the lid's inner face is gently darker, the cushion turns smoothly, and the light comes from one side, within the real range.",
+   "fix": "Light the jetpack from one upper side so one tank is brighter than the other, with a soft core shadow running down each tank. Keep the background evenly lit instead of darkening its edges."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (rocket): the body turns softly and is mostly frontal, and the lens shows a brown tint over the hull, the same color leak as the generated lessons. The nose cone highlight is a broad, even sheen, and the fins have barely any shadow side. B (airplane): the fuselage has a clear lit top and a darker underside, and the engine nacelles have defined core shadows.",
+   "fix": "Light the rocket from the upper left so its right side and the undersides of the fins turn into a clear cool shadow, with a small bright highlight on the nose cone."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (foil pouch): the shading is a photographic studio wrinkle pattern spread evenly over the face, with no clear light side or shadow side. Form contrast is 0.372, below the real range, and the long cast shadow to the right reads as product photography. A (boxing gloves): the round forms are lit from the upper left and the shadow sides wrap around the cuffs.",
+   "fix": "Draw the pouch as a soft, rounded toy-like shape lit from the upper left, with its right edge clearly in shadow and a short, soft contact shadow, not a long photo-studio shadow."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (seahorse): it is lit almost evenly from the front. Shading range (0.51), form contrast (0.338) and light bias (0.132) are all below the real range, and the body segments look like low-relief bands with no side darker than the other. A (phone booth): the right side face is clearly darker than the front, the roof cap is lit, and the base has a contact shadow.",
+   "fix": "Light the seahorse from the upper left so its belly and back curve turn into a darker shadow side, with a soft bright highlight along the head and snout."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A is a known real card (bike on car), lit by a warm low sun with a soft-sided form. B (hoop): the backboard is lit from the upper left, its frame has a darker right edge, and the rim casts a soft shadow onto the board. Nothing in its shading falls outside the real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (space gloves): the two gloves are lit symmetrically from the front, and the palms and fingers have even, soft value. Light bias is 0.112 and shading range 0.573, both below the real range, and the fingers have no real core shadow. B (vending machine): the left side face is clearly darker than the front, and there are strong glass highlights and a defined contact shadow at the feet.",
+   "fix": "Light the gloves from the upper left so their right sides and the gaps between the fingers fall into clearly darker shadow, with a small sheen on each knuckle and a short contact shadow under the cuffs."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A is a known real card (lighthouse) with a clear left key and darker right brick. B (porthole): the bezel is a uniform ring of chrome sheen with no side darker than the other. Light bias is 0.115, far below the real range, and the wall panels are evenly lit with no shadow cast by the rim.",
+   "fix": "Light the porthole from the upper left: make the lower-right inside of the metal ring darker, add one bright highlight on the upper-left of the rim, and draw a soft shadow cast by the ring onto the wall below and to the right."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (astronaut helmet): the shell turns softly inside a dark vignette, and shading range is 0.569, below the real range. The visor carries a broad wraparound glossy reflection instead of a lit side and a shadow side. A (sneakers): directional light makes cast shadows to the left. Its light bias reads low, but the soles do show a lit side and a shadow side.",
+   "fix": "Light the helmet from the upper left so the right side of the shell is clearly darker, put one small, sharp highlight on the visor, and keep the background evenly lit."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (observatory): the dome and drum are lit almost head-on, so the stone block bands look the same all the way round the cylinder. There is only a gentle shadow side on the right, while the grass carries a long, sharp shadow that the form shading does not match. A (gate): the pillars have a clear lit face and a darker side, and the ironwork casts onto the paving.",
+   "fix": "Light the observatory from the left so the drum darkens steadily toward the right, with a core shadow down the right of the dome. Make its cast shadow on the grass softer and shorter, matching how strongly the building itself is shaded."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (UFO): the disc is backlit by a glow from below, and the lens shows a warm, tinted rim band with no clear key side. The underside fades into a halo instead of a shadow. A (submarine): it is lit from the upper left, with glossy hot spots on the hull and a darker underside on the right.",
+   "fix": "Light the saucer from the upper left so the top of the dome is bright and the underside of the rim is clearly in shadow. Keep any glow small, below the craft."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (capsule): the light is extremely one-sided. Light bias is 1.101 and form contrast 0.652, both above the real range, and the cone turns sharply from a bright left side to a dark right side. The heat shield's rim has a hard, bright band. B (balloons): each sphere has a soft highlight at the upper left and a moderate shadow side, within the real range.",
+   "fix": "Soften the light on the capsule: keep the left side lit, but lift the right side of the cone into a gentle mid-tone shadow with a soft transition, and make the bright band on the heat shield's rim less harsh."
+  }
+ ],
+ "pattern": "Generated cards don't place the light the way real cards do. Most are lit from the front with no clear direction: identical highlights on both sides, soft low-contrast form turns and no clear core shadow (gloves, porthole, seahorse, jetpack). The shading lens also picks up a warm tint where the object's color leaks in. A few overshoot the other way with extreme one-sided light (capsule). Real cards consistently use a moderate key from the upper left with a cooler, darker right side and short, soft contact shadows."
+}

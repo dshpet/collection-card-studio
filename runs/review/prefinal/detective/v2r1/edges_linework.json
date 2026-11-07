@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (oil lamp): thin, clean contour on the glass chimney, a slightly darker rim line around the brass base, and a sparse sunburst background. B (flashlight): crisp silhouette, ribbed grip drawn with even, precise grooves, and the beam soft and lost into the background. Both have edge densities and outline values inside the real range, and neither shows a drawn outline or halo.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (police car): soft building and tree edges in the background, with fine speckle noise on the asphalt. The car's contours are moderate. B (bike on SUV): the bike frame, tyres and every spoke have hard, near-black contours of uniform weight. The SUV and mountains behind are also hard-edged, so the background edge density (0.094) is above the real range. Nothing is softened away from the focus, which matches the generated side in the lessons.",
+   "fix": "Keep the bike frame and nearest wheel crisp. Let the spokes, the SUV body and the mountains fade into soft, low-contrast edges with no dark rim lines."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (vending machine): a dark, even contour runs around the whole cabinet and window frame. The glass is full of small speckle edges from condensation dots and bottle highlights, so the inside is busy. B (tape roll): very few internal edges, with the layer lines thin and precise. Its edge density is below the real range, but it reads as a simple, clean form. A's uniform rim line and clutter behind the glass point toward the generated side in the lessons.",
+   "fix": "Drop the dark line around the cabinet and let the blue body meet the purple background through shading only. Keep the glass mostly clear, with a few soft reflections instead of many small droplets."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both outline values are above the real range. A (wallet): doubled stitch lines and an embossed shield, but the wallet's outer edge is moderately soft, and the background (0.004) is sparser than real cards. B (travel book): every sticker (skyline, barn, map pins, route) has a thick, dark double contour like a die-cut border. The bookmark ribbons and cover edge carry strong dark rims, and the table grain is drawn as hard parallel strokes. Those heavy, uniform contours on flat shapes match the lessons' generated cards most closely.",
+   "fix": "Print the cover stickers flush with thin colour edges and no thick dark or white border. Keep the book's outer edge as a clean shading change with no drawn line, and soften the wood grain behind it."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (bloodhound): a firm dark contour along the back and the ears, with dense grass edges at the base, inside the real range. B (boxing gloves): the subject edge density (0.037) is far below the real range. The glove silhouettes melt into soft, blurry boundaries, and the only internal marks are smeared radial wrinkle streaks on the right glove's knuckles. The vertical background stripes are sharper than the gloves, which reverses the edge hierarchy.",
+   "fix": "Give the gloves a crisp outer silhouette and clear, clean seams at the cuff and thumb, with fewer, sharper wrinkle folds. Make the background stripes softer than the gloves."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (magnifier on map): every street block, the park outline, the paper edge and the lens ring carry dark, inked contours. The outline value (0.172) and background density (0.057) are both above the real range, and the board under the map is also lined. B (binoculars): clean silhouette with precise grooves at the barrel rings, and the plank seams are thin and even. All of B's values are inside the real range.",
+   "fix": "Draw the map's streets as flat, pale colour changes with no dark lines. Remove the dark rim around the paper and the lens ring, and let the wooden table go soft and low-contrast."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (sailing ship): heavy dark outlines on the hull, rails and sails, and the water foam is drawn as black squiggle strokes. Outline (0.121) and background density (0.049) are both above the real range. B (spyglass): crisp metal bands with a soft edge falloff, diagonal stripes as faint thin lines, and a negative outline value, inside the real range.",
+   "fix": "Remove the dark line around the hull and sails and separate them with light and shadow only. Paint the waves as soft colour shapes with no dark stroke edges."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (vintage camera): clean contour on the body and the flash dish, with thin, precise grooves on the lens rings. B (music player): a slightly darker rim around the player body and earbud cable, but within the real range. The button and lens recesses are thin and precise. The concentric background rings are sparse on both. Nothing on my vector separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (fedora): soft felt edges, a lightly defined hatband seam and very few internal edges. Its subject density is low, but the hierarchy is calm and nothing is outlined. B (sneakers): thick dark contours trace every panel, the sole, the window cutouts and the laces. The mesh is a dense grid of edges, the floor has a hard horizon line, and the dark shadow shape has a crisp boundary. The subject density is at the top of the real range, and the lines read as drawn rather than lit.",
+   "fix": "Lose the dark lines around the shoe panels and sole, and separate the colours with soft shading. Simplify the mesh to a light texture, and blend the wall and floor through a soft gradient instead of a hard line."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (door with wreath): each ivy leaf, flower petal and door panel has its own dark contour. Subject (0.342) and background (0.107) densities are both far above the real range, so the whole frame is evenly busy with no quieter area. B (doorknob): clean plate edges and screw holes, and the background room is soft. Its only noisy patch is the fingerprint swirl on the knob, and all its values are in the real range.",
+   "fix": "Keep the wreath crisp and let the ivy and door frame fade into soft, simplified leaf masses with no dark rims. Show the door panels as gentle bevels with no dark groove lines."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (raised planter): the fence pickets, every paving stone and the background bushes are drawn with even, dark contours, so the background density (0.073) is near the top of the real range. The planter itself is no sharper than the paving, which flattens the hierarchy. B (sunscreen and sunglasses): clean, crisp silhouettes, with the wavy background lines faint and thin and a quiet backdrop.",
+   "fix": "Make the fence and paving soft, low-contrast colour shapes with no dark joint lines. Keep the sharpest edges on the planter's front corners and the watering can."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (ring in a zip bag): the bag has a dark contour along its lower and right edges, and its wrinkles are soft. The densities are inside the real range, and the outline value is slightly below it. B (tennis racket): the strings make a dense grid of hard edges, pushing subject density (0.281) well above the real range. The court lines are razor-hard black lines, and the outline value (-0.167) is outside the real range. Every edge has the same hardness.",
+   "fix": "Show the racket strings as a light, simplified mesh with soft edges and fewer crossings. Make the court lines broad, soft-edged pale stripes, and keep the sharpest edge on the ball and the racket rim."
+  }
+ ],
+ "pattern": "Generated cards draw lines rather than letting lit forms meet. Dark, even contours wrap every sub-part: stickers, map blocks, shoe panels, ivy leaves, hull planks. Background props (paving, fences, foam, wood grain) are just as hard-edged as the subject, so the edge hierarchy goes flat and the background edge density rises. On real cards the hero's silhouette is crisp but unlined, internal seams are few and thin, and the background melts into soft, low-contrast shapes."
+}

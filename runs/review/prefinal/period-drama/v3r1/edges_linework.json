@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (sneakers): the edge map is busy. The uppers have mesh hatching, there are many lace and panel contours, and a hard ruled wall-floor horizon line cuts across the background. Subject density is 0.227, at the top of the real range. B (gift box): long clean silhouette edges, few internal lines, and a soft cast shadow, which is closer to the real barrel and podium.",
+   "fix": "Fewer small details: smooth sneaker panels without mesh texture, a soft blurred floor-to-wall transition instead of a sharp horizon line, and edges kept soft away from the laces."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "B is the sunscreen and sunglasses card from the real set, and its edges match it: soft silhouette and simple wavy background bands. A (soccer ball): every panel seam is a thick dark groove, and the grass has many small hard tufts plus ruled pitch lines, so the background is busier than the hero's surroundings should be.",
+   "fix": "Draw the ball's panel seams as thin soft creases, not dark grooves. Make the grass a soft, low-detail field with only a few blurred tufts."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (fan): one heavy, uniform dark contour runs around the whole fan and the guard sticks, like an inked outline, and the pleats are evenly ruled lines. A (parasol): edge weight varies between soft canopy panels and crisp ribs, but the lace trim adds a lot of small eyelet edges.",
+   "fix": "No dark outline around the fan. Let the fan's edge come from color and light against the background, with soft pleat folds instead of evenly ruled lines."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (cake stand): the plates and foot have a crisp dark contour of even weight, a hard ruled line marks the table edge against the wall, and the tablecloth carries fine fabric texture. A (fountain): tile and water edges vary in weight and the silhouette is softer. Its background density, 0.046, is at the real maximum but still inside it.",
+   "fix": "Soft, slightly lost edges where the plates meet the light background. A blurred table edge, not a ruled line, and a plain tablecloth without weave texture."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (top hat): a continuous dark line goes all the way around the brim and the crown top, like a sticker outline. Inside, the crown has flat faces with almost no edges. A (graduation cap): it also has a defined edge on the board, but the line weight varies, and the underside and tassel are softer.",
+   "fix": "Remove the dark rim around the brim. Shape the top hat with soft light and dark across the crown and brim, and keep the sharpest edge only at the front brim highlight."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (teacup): the edge map is very sparse (subject density 0.076, below the real range). The cup body is almost edgeless, while the gilt rims are thin hard lines and the steam is soft wisps. A (vending machine): edges are spread out more like the real cards, crisp at the door frame and on the cans inside.",
+   "fix": "Add some form edges inside the cup: a visible lip thickness, a curved handle joint, and a saucer well. Keep the gold rims soft-edged, not drawn as lines."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (pearls): every bead has its own closed dark contour, like a row of outlined circles. The velvet background has many soft fold edges, and the style is photographic rather than painted. B (map): the coastlines are thick, but the edges follow the illustrated real style. Its background density, 0.077, comes from the wood grain.",
+   "fix": "Let the pearls merge into each other with soft shared shadows instead of a dark ring around each bead. Use a simple, smooth stylized backdrop, not photographic velvet folds."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (fan): each rib is drawn as an outlined double-line tube with gaps between ribs, and the leaf's outer arc is a single crisp uniform line. B (scarf): it has a dark silhouette contour too, but the fold edges are soft and vary in weight.",
+   "fix": "Draw the fan ribs as thin solid sticks without outlined edges, and add soft fold shading on the leaf instead of a single crisp arc line."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (suitcase): outline darkness is 0.128, above the real range. Every sticker has a thick dark border ring, and the case silhouette is heavily lined. B (chest): wood grain and floor planks raise background density (0.067, above the real range), but the hero's edges vary in weight.",
+   "fix": "Stickers should sit on the case with thin soft edges and no dark border rings, and the suitcase silhouette should have no dark outline."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (piano): ruled wallpaper stripes, wood-grain hatching on the panels, and floorboard lines all carry the same edge weight as the piano, so there is no hierarchy. B (guitar): it has a strong outline (0.163, above the real range), but its stage scene matches the real drum-kit card.",
+   "fix": "Plain wall without pinstripes, and smooth wood without grain lines. Keep the crispest edges at the keyboard and the lid, and keep everything else soft."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B (gate): subject density is 0.323 and background density 0.122, both far above the real range. The wrought-iron scrolls, every brick joint, the paving joints, and the foliage are all hard edges, so the hero does not separate from the background. A (ring box): few edges, clean silhouette, soft interior.",
+   "fix": "Simplify the gate to a few bold scrolls, merge the bricks into soft blocks with faint joints, and blur the background garden into soft shapes with no edges."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B (violin): subject density is 0.293, far above the real range. The body has a heavy dark contour, the strings and fingerboard are dense ruled lines, and the top is covered in grain hatching. A (bugle): the brass has smooth, soft-edged tubes, with crisp detail only on the cord, which is within the real range.",
+   "fix": "No dark outline around the violin body. Smooth varnished wood without grain lines, and strings drawn as faint thin lines, with crisp edges only at the f-holes and bridge."
+  }
+ ],
+ "pattern": "Two things still give generated cards away on edges. First, a continuous dark contour of even weight around the hero (top-hat brim, fan arc, the ring around each pearl, sticker borders). Second, too many fussy edges: wood grain, brick and paving joints, mesh, lace, string hatching, ruled horizon lines. That pushes edge density above the real range and flattens the edge hierarchy. Real cards vary their edge weight, lose edges into soft shading, and keep backgrounds low in detail."
+}

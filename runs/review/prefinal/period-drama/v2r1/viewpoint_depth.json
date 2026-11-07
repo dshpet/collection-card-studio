@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the fan is drawn completely flat and face-on. The leaves are even planar patches (planar_share 0.649) with no thickness, no tilt and no cast shadow, so it reads as a cut-out laid on the wavy background. B: the opera glasses are at a clear 3/4 turn. The near barrel overlaps the far one, the eyepieces sit back in depth and the barrels curve smoothly.",
+   "fix": "turn the fan slightly toward the viewer in a 3/4 view, show the thickness of the folded leaves and the rib edges, and add a soft shadow under it"
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the basket is centered and seen from a moderately high 3/4 view. The whole object is shown, with a full top face and the grass plane running evenly behind it, which matches the complete, centered framing of the generated lesson cards. B: the gloves are seen from a low camera and cropped at the frame edges. The plank floor recedes and the wall sits behind, like the cropped real lighthouse.",
+   "fix": "lower the camera to near table height, let the basket nearly fill the frame and crop slightly at one edge, and show less of the lid's top"
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the parasol canopy is seen from above with its top dome fully shown, yet the shaft and crook come out of the lower right rim as if seen from the side. The canopy and handle do not share one tilt. B: the beach umbrella shows the top panels and the underside together at one consistent tilt, and the pole runs straight through the center.",
+   "fix": "tilt the parasol so the shaft runs through the center of the canopy and the handle points along the same axis as the dome"
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the swing is close to front-on, and its A-frame legs splay out of the frame at the bottom left. The canopy's top face and the seat's top face both show strongly, which suggests a slightly wide-angle view. B: the bench is at a clean 3/4 turn on a gravel path, the ground plane recedes evenly and the bench stands flat on it.",
+   "fix": "set the swing at a 3/4 turn with mild perspective, keep all four legs inside the frame on the grass, and show the canopy's top face less"
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the coaster is seen from a low camera and cropped by the frame. The track loop overlaps the hills, and the far landscape has a simpler layer, giving real depth. B: the keyboard floats over an empty patterned backdrop from a high top-down 3/4 view. The X-stand has no floor to stand on and its feet hang in space.",
+   "fix": "lower the camera, put the keyboard stand on a visible floor with contact shadows under its feet, and frame it larger so it crops slightly"
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the jacket is a frontal 3/4 floating item with consistent sleeves and collar. B: the top-hat crown is shown with its top face visible, but the crown sides are perfectly parallel. The brim's right side curls up so far that its underside shows, while the left brim shows its top. The single view reads as twisted.",
+   "fix": "draw the top hat from one slightly-above 3/4 view, with the brim an even oval tilted the same way all around and the crown narrowing slightly away from the camera"
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the teacup sits on a tablecloth from a fairly high view, and the cup rim and saucer ellipses open by nearly the same amount even though the saucer is lower. The cloth plane tilts more steeply than the saucer. B: the fountain's three tier ellipses grow steadily flatter toward the top, and the tiled ground recedes consistently.",
+   "fix": "make the saucer's oval slightly more open than the cup rim's, since the saucer is lower, and keep the tablecloth at the same tilt as the saucer"
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the wall and door are drawn perfectly flat and front-on (planar_share 0.52, above the real range), but the steps and paving show large top faces as if seen from well above. The facade and the ground use different views. B: the door is a tight, frontal crop with vines overlapping the frame edges, and the view is consistent.",
+   "fix": "show the doorway from a slight 3/4 angle with the wall receding a little to one side, and match the step tops to that same gentle camera height"
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the golf club is seen from grass level and cropped by the frame. Grass overlaps the foreground, the ball sits on the ground and the hills recede, as on the real cards. B: the spyglass floats diagonally over a flat striped backdrop with no ground or shadow. The large lens end is foreshortened strongly against a small eyepiece, a forced perspective.",
+   "fix": "rest the spyglass on a surface with a soft shadow, use milder perspective so the two ends differ less in size, and crop it slightly at the frame edge"
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the vending machine is seen from a low 3/4 view with crisp flat faces (planar 0.509) and stands on its feet. B: the teapot body is seen almost at eye level, yet the lid shows a wide top oval. The base ellipse and the lid ellipse do not match one camera height. The spout and handle are flattened into side view.",
+   "fix": "draw the teapot from one gentle above view so the lid oval and the base oval open by matching amounts, with the spout turning slightly toward the viewer"
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the neckerchief is frontal, with a smoothly rounded loop and knot in one view. B: the straw-hat brim is a wide flat oval seen from high above, but the crown and band read close to side-on. The bow is pasted flat and frontal, ignoring the tilt of the brim.",
+   "fix": "tilt the whole hat to one camera angle so the crown shows its top as much as the brim does, and turn the bow with the band around the crown"
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the taxi is at a 3/4 front view on a road whose lane lines recede consistently, with mild perspective. B: the cobblestone ground recedes steeply as if seen from high above, but the near wheel is drawn as an almost round circle facing the camera while the far wheels are ovals. The handlebar rises at a different angle, so the parts do not share one view.",
+   "fix": "draw the pram and the cobblestones from one moderate 3/4 camera height, with all four wheels shown as matching ovals and the handle following the same perspective"
+  }
+ ],
+ "pattern": "Generated cards show the whole object, centered or floating, from a slightly high 3/4 view. Real cards often use a lower camera and crop the object at the frame edges. The parts of a generated object also tend not to share one camera: top ovals open wider than base ovals, flat front-on elements (bows, facades) sit next to top-down ground, and props float with no ground plane."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the sneaker uppers carry a fine dot-mesh pattern, there are many small multicolored lace tips, and the soles show smeary, noisy shading. The surface reads as busy, wet-looking plastic. B: the gift box is smooth matte red card with satin ribbon that has one soft sheen. It matches the quiet finish of the real cards.",
+   "fix": "Simplify the sneaker into broad smooth panels of matte fabric. Drop the dotted mesh and the extra lace-tip colors, and use one soft highlight on the toe cap with no glossy streaks."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the black pentagons have a pebbled leather micro-texture and the white panels carry bright lacquer highlights (highlight share 0.256, above the real range). B: the sunscreen bottle is soft matte plastic with a gentle raised sun emblem. It is the same as the real anchor card.",
+   "fix": "Make the ball panels smooth and soft-matte with no pebble grain. Use one broad soft highlight on the upper-left white panel, not shiny edges on every panel."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the parasol canopy shows visible streaky brush marks, the eyelet lace trim is cut into tiny flower holes, and the ribs end in glossy beads (highlight share 0.215, above the real range). B: the fan is flat-shaded smooth paper with plain wooden ribs and a simple finish.",
+   "fix": "Paint the canopy as smooth matte fabric with no brush streaks. Show the lace as a simple scalloped white band with a few broad holes, and make the rib tips matte."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the fountain stone is soft clay-like matte and the water is the only shiny material. B: the porcelain stand, cupcake icing and pearl toppers are all equally glossy, and the tablecloth has a visible linen weave. Its highlight share is 0.32, well above the real range.",
+   "fix": "Keep the cake stand soft satin, not mirror-glossy. Make the cupcake sponge matte and the icing only slightly shiny, and draw the tablecloth as smooth cloth with no visible weave."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the mortarboard is soft matte felt with a simple tassel, in the same style as the real cards. B: the top hat crown has a photographic satin sheen with long vertical specular streaks, and the red band is a hard glossy satin. It reads closer to a product render.",
+   "fix": "Draw the top hat as soft matte felt with one broad dim highlight, and make the red band a flat, slightly soft ribbon."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the vending-machine glass is covered in small condensation-droplet noise, and the cans behind it are smeared with mushy edges. B: the teacup is clean porcelain with a gold rim and one soft sheen, and it is plausible as a real card.",
+   "fix": "Remove the droplet speckle from the glass. Show the cans and bottles behind a clean pane with a single diagonal glass reflection, and give the drinks crisp simple shapes."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: photoreal crushed-velvet backdrop with fine nap texture, pearls with realistic orient sheen, and a tiny detailed lobster clasp (highlight share 0.204, above the real range). B: a flat stylized map with a simple chrome-and-glass magnifier in the cartoon game finish.",
+   "fix": "Make the pearls stylized smooth spheres with one soft white highlight each. Replace the velvet with a smooth, simply shaded cloth with no nap texture, and simplify the clasp to a plain gold loop."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the red fan fabric has a soft satin sheen and smooth gold ribs. B: the scarf is soft matte cloth with a smooth gold medallion. Both mix matte cloth with a little shiny metal at the real cards' scale, and the numbers are in range.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the suitcase body has smeary painted scuff blotches and noisy brushwork, the stickers are glossy, and the leather corners are lacquered (gloss 0.139 and detail 0.050, both above the real range). B: the chest has quiet wood grain, a few small scratches, and broad simple gold corner plates and hasp, which is typical real hardware simplification.",
+   "fix": "Paint the suitcase as smooth matte leather with no blotchy scuffs. Make the stickers flat matte decals, and give the corner caps soft leather shading instead of gloss."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the piano panels show large, decorative, photographic mahogany figure, and the floor and fallboard have mirror reflections, so the wood reads as lacquered. B: the guitar has a glossy red body and a matte fretboard, a mixed gloss range like the real cards.",
+   "fix": "Draw the piano wood with a few faint long grain lines on a soft satin finish. Remove the swirling mahogany figure and the mirror reflections on the floor."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the ring box is soft matte velvet and suede, and the coin is the only glossy part, which is a real-card gloss split. B: the gate has busy brick texture, glossy lacquered scrollwork and a speckled stone path. Gloss is 0.333 and micro-texture 0.0315, both far above the real range.",
+   "fix": "Make the iron gate a soft matte painted metal with broad simple scrolls. Give the bricks flat faces with few mortar lines, and leave the paving smooth without speckle."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the bugle is smooth brass with broad highlights and a chunky, readable rope wrap. B: the violin has fine flame-grain wood, glossy varnish, many thin strings and crisp ebony pegs. Detail is 0.125 and micro-texture 0.039, far above the real range.",
+   "fix": "Paint the violin body as smooth warm-orange wood with one soft highlight and no visible grain. Simplify it to four thick strings, and make the pegs and chinrest matte dark shapes."
+  }
+ ],
+ "pattern": "Compared with the real cards, the generated cards add surface detail and shine. They show photographic material figure (mahogany, velvet nap, flame grain), tiny noisy texture (mesh dots, condensation, pebble leather, linen weave, scuff blotches) and lacquer-level gloss spread over every material at once. The real cards keep surfaces soft, mostly matte with one broad highlight, and simplify hardware and texture into a few broad, quiet shapes."
+}

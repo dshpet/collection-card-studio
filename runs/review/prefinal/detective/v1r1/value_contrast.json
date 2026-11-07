@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the rocking chair is mid-light against vertical mid and dark stripes, with a bright floor below. The chair is set apart from the wall mostly by hue, and the corners are even. B: a light halo glows behind the dog's back, while the dark saddle and ears sit against it. The grass breaks into fine, noisy light and dark specks. Vignette is 0.062. A glow behind the hero is the generated habit from the glove lessons.",
+   "fix": "Keep the blue stripes evenly lit with no bright halo behind the dog, and make the grass smooth broad mid-green with only soft shading."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cap's top board and crown are a near-black mass on a pale cyan ring background. Lightness gap is -0.312, past the real range. The only light accents are the thin gold rim and the tassel. B: the grey hat body sits in the middle values with a dark red band. A pale ring sits behind it but stays moderate.",
+   "fix": "Paint the cap a medium royal blue with a lighter top face so it is not a black silhouette. Keep the background rings close to the cap in brightness."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the whole card sits under a hazy mid-light veil, with a washed-out sky and desert. The pump is the only darker mass, and its local contrast is soft and muddy. B: a dark blue water field surrounds a bright gold and wood chest, with clear light, middle and dark groups and crisp highlights on the coins.",
+   "fix": "Use a clean, saturated sky gradient with no haze. Give the pump clear light top faces and darker sides, with crisp highlights on the gauge."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the lower half of the card is a near-black wood desk, and the green typewriter is a dark mass on it. The white paper is the only big light shape. RMS contrast is 0.245, far above the real cards. This matches the dark-wood-table lessons, where the generated computer cards had the same dark desk. B: a mid blue background and light cobbles, with the cart's red body at a moderate middle value. The value groups are balanced.",
+   "fix": "Put the typewriter on a light honey-colored wooden tabletop, with a soft, light shadow under it. Do not use a dark polished desk."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a near-black door slab sits against a very light cyan wall and a white tile floor. Lightness gap is -0.412 and RMS contrast is 0.225, both well past the real range. It reads as a hard black-and-white cut-out. B: a low-key card, with a mid-dark blue door, busy ivy at the edges, and a light wreath in the center. Its numbers stay near the real range.",
+   "fix": "Paint the door a warm medium brown with lighter lit panels. Tone the wall down to a softer, slightly darker teal so the door is not a black silhouette."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a dark green lamp post against light teal rays. The glass globe is a soft light area in the center, and the darks are spread through the thin frame. B: a solid black box camera on a bright glowing burst. A light halo sits right around the box, and the flash dish has hard chrome highlights. RMS contrast is 0.226 and lightness gap is -0.394, both beyond the real cards.",
+   "fix": "Make the camera body a dark brown leather with lighter worn edges, not jet black. Keep the background rays even, with no bright halo hugging the camera."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the lamp has a strong light halo of rays behind it, and the top-left and bottom-right corners drop to dark. Vignette is 0.144, above every real card. The glass chimney is near white. B: light blue rays with a gentle glow, a gold ring, and one dark handle. The corners stay mid.",
+   "fix": "Light the green rays evenly out to the corners with no dark corner falloff. Make the glow behind the lamp softer and smaller."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a flat high-key backdrop, with a plain light orange wall over a pale yellow floor. These are two flat value slabs with no gradient or glow. Mean is 0.762, above the real range. The darker blue shoes are lit flatly. B: a darker magenta field, with a mid-dark grey safe and a gold dial. The shading on the safe body and the wall gradient are coherent.",
+   "fix": "Give the backdrop a soft radial gradient that is a bit darker toward the edges. Shade the shoes with a clear light side and shadow side."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: a black telephone on a near-black polished wood desk that fills the lower half. Mean is 0.492, RMS contrast is 0.237 and vignette is -0.247, all out of range. This is the same dark-desk pattern as the generated computer lessons. A: red gloves in the middle values on a light wood shelf, against a mid blue wall. Moderate contrast.",
+   "fix": "Set the phone on a light warm wooden table. Make the phone a dark glossy red or cream with clear lighter top faces, not black on black."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: a bright silver shield with a gold rim on mid purple, with slightly darker top corners. B: a blue vending machine in the middle values, with a lighter glass front and a soft light pool on the floor. Both are within the real ranges and both have plausible light and dark grouping.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the ticket is a flat blue shape whose value is close to the orange striped background, so it separates almost only by hue. RMS contrast is 0.084, below the real range. Inside it, the light panel and dark bars are flat, with no roll-off. A: a mid-blue bottle against bright, nearly white sunburst rays, with clear value separation and soft shading on the bottle.",
+   "fix": "Shade the ticket with a lighter top edge and a darker bottom bevel, and put a soft light glow on the background behind it so it stands out by brightness."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: a light tan folder on a very dark brown wood desk that covers the whole background. Lightness gap is 0.403 and RMS contrast is 0.226, both far out of range. This is the dark-desk pattern from the generated lessons. A: a teal book on a mid-light orange wood surface, with balanced middle values and light sticker accents.",
+   "fix": "Place the folder on a light warm honey-wood surface with soft shading, so the background is in the light-to-middle values, not near black."
+  }
+ ],
+ "pattern": "Generated cards push value to extremes. The clearest tell is a near-black polished wood desk filling the lower half of the card (p04, p09, p12; also the generated computers in the lessons). Other signs: near-black hero masses set hard against a pale background (door, box camera, graduation cap), and bright halos hugging the hero. Some cards also show dark corner vignettes or flat, hazy high-key backdrops. Real cards keep the hero and background in moderate value steps, light the background evenly, and keep RMS contrast in the 0.12–0.19 band."
+}

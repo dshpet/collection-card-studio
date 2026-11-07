@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the fan's pleats are flat matte paper with no grain, and the ribs are plain smooth wood, as in the reference cards. B: the opera glasses have pebbled leather grain on the barrels, a finely knurled gold focus wheel and glassy black lenses. That fine detail is above the real-card range (detail 0.054).",
+   "fix": "Make the barrels smooth, soft matte black with no leather grain. Draw the focus wheel as a plain gold cylinder with no knurling. Use one soft highlight on each lens."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the green strap has a dashed stitch line along both edges, and the wicker weave is crisp everywhere. The basket is also glossier than real cards (detail 0.069, gloss 0.253), and dashed stitching is the generated tell from the glove lessons. B: the boxing gloves are soft, smooth matte-satin leather with a few broad creases.",
+   "fix": "Remove the dashed stitching from the strap and draw it as a plain smooth band. Simplify the weave into a few broad, soft strips with a matte finish."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the canopy has a visible fine fabric weave and streaky texture, the lace trim has punched eyelets, and the rib-tip knobs are glossy wood. B: the canopy panels are smooth, soft plastic-like cloth, and the pole is plain.",
+   "fix": "Make the canopy smooth, soft matte cloth with no weave texture. Simplify the lace into a plain scalloped white edge."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the slats show painted wood-grain streaks, the gravel path is a noisy stipple, and the white paint has a strong sheen (gloss 0.342, highlight 0.527, far above real cards). A: smoother cushions and wood, with the knit texture kept only on the blanket.",
+   "fix": "Make the slats smooth honey wood with only faint grain, and the white frame soft satin. Draw the path as a few broad, soft stones rather than noisy speckle."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the keyboard has hard, crisp edges, many small glossy buttons and very uniform lacquered red plastic (detail 0.084, micro 0.037, gloss 0.269, all above the real range). A: the coaster cars are soft, rounded plastic with broad, gentle highlights.",
+   "fix": "Soften all edges. Merge the small buttons into a few larger, soft rounded pads. Make the red body softer satin rather than lacquer."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the top hat's crown is covered in fine streaky brush marks and noisy mottling, a smeared felt texture that real cards never show. A: the jacket fabric is soft and smooth, and the badges are simple glossy discs.",
+   "fix": "Make the hat smooth, soft matte grey felt with one broad, gentle highlight on the crown and no streaks or speckle."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the tablecloth has a fine linen weave and the gold rims have sharp mirror highlights (highlight 0.175, just over the real range). B: the fountain stone is smooth and matte, and the water is simple and translucent.",
+   "fix": "Make the tablecloth a smooth, soft cloth with no weave. Give the gold rims a softer, broader sheen."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the blue door is covered in coarse vertical brush-streak grain, and the wreath is glossy clay (gloss 0.51, micro 0.045, far above real cards). A: also has streaky wood grain on the red door, but it is quieter and within the range.",
+   "fix": "Make the door smooth satin blue paint with no streaks. Make the flowers soft matte, with only gentle highlights."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the brown barrel sections have a fine wrinkled-leather texture, and the brass rings are hard and mirror-like. A: the golf iron is smooth brushed metal, and the ball has simple dimples.",
+   "fix": "Make the barrel sections smooth, soft matte brown with no leather grain. Make the brass bands broad, smooth and satin-gold."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the teapot has very crisp, finely rendered rose decals and a uniformly glassy glaze. A: the vending machine is soft and slightly blurry, and the cans and bottles are simplified, which matches the softness of the real cards.",
+   "fix": "Simplify the roses into a few soft, broad petal shapes. Keep the glaze satin, with one gentle highlight."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the straw hat has a dense, fine woven-straw texture over the whole crown and brim, and the ribbon is glossy (gloss 0.182, above the real range). A: the scarf is smooth matte cloth, and the badge is a plain glossy disc.",
+   "fix": "Show the straw as a few broad, soft concentric bands instead of a fine weave. Make the ribbon softer satin."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the hood has a dashed stitch line along its edge, the chrome frame has crisp mirror highlights and the cobblestones are noisy. A: the taxi has smooth, soft painted bodywork and simple chrome. Its texture numbers are higher, but it shows no stitch or grain tells.",
+   "fix": "Remove the dashed stitching from the hood and make it smooth, soft cream fabric. Turn the chrome into soft satin silver, and simplify the paving into a few broad, smooth stones."
+  }
+ ],
+ "pattern": "Generated cards add fine surface texture that real cards smooth away: dashed stitch lines, pebbled leather grain, fabric or straw weave, knurled wheels, brush-streak wood grain and noisy stippled ground. They also make metal and glaze crisp and mirror-like. Real cards keep surfaces soft and simple, with matte-to-satin finishes, a few broad parts and one gentle highlight."
+}

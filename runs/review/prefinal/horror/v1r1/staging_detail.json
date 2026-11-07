@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the graduation cap floats on blue concentric rings, and the rings have visible tonal steps like the real ring cards. B: the witch hat floats on magenta-violet rings that blend into a smooth gradient, with very little ring structure in the corners. Background detail is 0.0069, below the real range.",
+   "fix": "Concentric ring backdrop in two close shades of one color, with crisp, evenly spaced ring edges across the whole card and no glow gradient."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the airplane's wing and tail run off the right edge, and dense white cumulus fills the bottom and left like the real sky cards. B: the bat floats whole in the middle of an empty violet-pink gradient with a few thin pink cloud wisps. Background detail is 0.0059, below the real range.",
+   "fix": "Bat larger and close to the camera with one wingtip cut by the card edge, puffy soft clouds filling the lower third, and a plain blue-violet sky."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the gloves sit on a wooden shelf in front of a quiet blue plank wall, and the right glove touches the card edge, which matches category 3. B: the whole dead tree stands small on a strip of lawn with grass tufts and a long cast shadow, in front of a purple stripe backdrop. That mixes a graphic stripe field with a landscape ground, and the tree is shown whole instead of close up.",
+   "fix": "Choose one staging. Either put the tree on a plain floor the color of the backdrop with no grass, or move in close so the roots and branches are cut by the card edges."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the topiary sits on a stone ring in a garden with a hedge, a curved path and grass tufts. B: the slide stands on pool tiles with water in front of a pink wave backdrop, and the platform is cut by the right edge. Both are inside the real ranges for background load, and neither has extra props.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the mirror stands on a green field with a smooth gradient and a floor glow, and almost no backdrop structure. Detail is 0.0065, below the real range. B: the vending machine stands on a purple floor of the same color with a soft shadow, which is standard category 2.",
+   "fix": "Green backdrop with a quiet tone-on-tone stripe or ray pattern, and the mirror standing on a plain floor of the same green."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the motel sign is close and central, the motel balcony is cut by the left edge, and the street, fence and tree are a few metres of the real place. That matches category 4. B: a small, complete haunted house sits in the middle of a lawn with grass tufts, bushes, mountains, stars and an added crescent moon. It reads as a diorama, not as a close view of one place.",
+   "fix": "Move in close to the house so the walls and roof are cut by the card edges. Show only a dark sky and the house front, with no moon, mountains or scattered bushes."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the brick gate is cut by the left and right edges, with a quiet garden path behind it. B: the whole gate and both pillars are framed symmetrically, with an added crescent moon, stars and a padlock. Bushes on both sides and dense cobbles make the background very busy (edge density 0.114).",
+   "fix": "Show the gate close up with one pillar cut by the card edge, and use a plain night sky with no moon. Draw the path as a few large, smooth paving shapes instead of many small cobbles."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the sneakers stand on a pale yellow floor against an orange wall, a plain two-tone category 2 setting. B: the pumpkin sits on a featureless purple gradient with a glowing halo and no floor line or pattern. Background detail is 0.0048 and edge density 0.005, both below the real range.",
+   "fix": "Purple backdrop with a quiet tone-on-tone ray or stripe pattern, and a visible plain floor plane the same color as the backdrop under the pumpkin."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the fountain fills the card on round paving in front of a yellow stripe wall, and its base is cut by the bottom edge. B: the candelabra stands on a dark wood table in front of a purple stripe wall, with three flame glows and pools of warm light spread across the table. That is more lighting drama than the single soft light pool of the real category 3 cards.",
+   "fix": "One soft light pool behind the candelabra, and a calm wood surface with broad grain and no scattered flame reflections."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the palm stands on sand dunes with a few pebbles in front of a pink swirl backdrop, like the real caravan card. B: the crystal ball sits on a steeply tilted dark wood table with heavy grain, and the swirl backdrop shows only above it. Background detail is 0.0207, at the top of the real range.",
+   "fix": "Level wood surface with soft, broad grain, and a soft pool of light behind the ball against a quiet swirl backdrop."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the broom floats whole in an open sky, with small cloud clusters pushed into the corners and empty blue in between. Background detail is 0.0058, below the real range, and the red bow on the binding is invented decoration. B: the balloons fill the card with large, soft clouds behind them, and the right side is cut by the edge.",
+   "fix": "Draw the broom larger with its handle cut by the card edge, and fill the lower half with big, soft cloud masses. Tie the bristles with plain twine and no bow."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the clock sits flat on a quiet green stripe field, which matches the real clock card. B: the whole lion statue sits on a plinth in a park full of small detail: trees, conifers, a curving brick path and grass tufts. Background detail is 0.028 and edge density 0.068, both well above the real range for this category.",
+   "fix": "Show the lion statue close up on its plinth, cut by the card edges. Behind it, use one or two large, soft shapes, such as a hedge and sky, with no path or separate trees."
+  }
+ ],
+ "pattern": "Generated cards show the whole object, small and centred, in a full landscape diorama (lawn, moon, stars, mountains, bushes, cobbles) instead of a close view that the card edge cuts. Plain-field generated cards go the other way: smooth glowing gradients without the quiet tone-on-tone pattern, with background detail below the real range. They also add story extras such as moons, a bow on a broom and flame-light pools."
+}

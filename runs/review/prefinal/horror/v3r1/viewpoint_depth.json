@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the candy pumpkin faces the camera straight on. Its carved face is centered and symmetric, while the deck planks behind it recede at a mild angle, so the object and the floor read as two slightly different views. B: the mower is turned three-quarters with one clear ground plane. The wheels sit in the grass and the handle foreshortens back in a believable way, like the real taxi and camper.",
+   "fix": "Turn the pumpkin bucket about 30 degrees so its side bulge and rim show, with the camera slightly above. Seat it on the planks so the planks run under it at the same angle as the bucket's base."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the palm grows out of dune ground that runs off the card edges, with a low camera, like the real cards' grass and sand strips. B: the spider stands on a round stone slab seen from fairly high up, so the whole slab top shows. It looks like a toy on a display stand, the same island-base trick as the generated lighthouses.",
+   "fix": "Remove the stone pedestal. Put the spider on a ground surface that runs off the card edges, and use a lower camera so only a thin strip of ground shows under the legs."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the hourglass is dead-centered and seen nearly front-on and symmetric. The top and bottom discs both show their top faces as even ellipses, and the glass bulbs read as swollen rainbow forms with no turn to the object. B: the vending machine is turned three-quarters with flat even-colored front and side faces and gentle convergence, like the real camper and camera.",
+   "fix": "Rotate the hourglass slightly so one post sits in front of the glass and one behind, and drop the camera a little so the top disc shows only a thin ellipse."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the jack-o'-lantern is tucked against a door and step, and the frame crops the scene. The step, wall and door share one low eye level, like the real fan card cropped by its curtain. B: the spiral topiary is centered and shown whole on a round stone ring that you see the full top of. The hedge and path form a separate staged backdrop, like the generated lighthouse on its island.",
+   "fix": "Bring the camera closer and lower so the bottom of the topiary and its stone ring are cut by the bottom edge, and let a nearby hedge or path overlap it from the side."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the hat sits on a tabletop with a low camera, so the brim reads as a thin ellipse and the horizon edge of the table is close behind it. B: the fountain is seen from well above. The full inside of the basin and both tiers show their tops, and the paving circles out around it as a little diorama, matching the high whole-object camera in the generated lessons.",
+   "fix": "Lower the camera to about the lip of the basin so only a thin band of water shows, and crop the paving at the card edges instead of showing a full round plaza."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the tote bag is turned three-quarters, standing on a floor plane, with side and front faces readable and items overlapping inside. B: the neckerchief floats perfectly front-on and mirror-symmetric with no ground and no turn. The fabric shows only smooth rainbow swelling, so the camera relationship is undefined.",
+   "fix": "Tilt the neckerchief about 20 degrees so one tail comes toward the viewer and overlaps the other, and show the inside of the loop as if seen slightly from above."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the bird feeder is cut off by the frame. The trunk runs off the top and bottom, and the park and buildings sit at the same eye level, like the real lighthouse cropped at its base. B: the dead tree is centered and shown whole from roots to branch tips, with a gazebo placed as a far backdrop prop. The ground is a flat green band.",
+   "fix": "Move the camera closer so the tree's top branches leave the card, and drop the gazebo or push it partly behind the trunk."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "A: the ring box is seen from above at three-quarters. Its lid and base share one view, and the inner cushion shows its top face consistently. B: the mask floats almost front-on with only a slight tilt, and the feather and mask face read as one flat sheet. The view is weaker, but floating flat items do occur in the real set (the ticket).",
+   "fix": "Turn the mask about 30 degrees so the far eyehole narrows and the near cheek shows its curve, with the feather angled back."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "Both books are seen from high above, and both planar_share values sit above the real range. A: the bottom edge looks wider than the top, a stronger converging perspective, and the table stripes run horizontally, not matched to the book's turn. B: the planks run parallel to the book's edges, so it sits on one consistent plane. The evidence is weak.",
+   "fix": "Use milder perspective with the book's front and back edges nearly parallel, and run the table grain along the book's edges."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the coin binoculars are cropped by the bottom edge with a low eye level, and the railing and skyline recede consistently behind them. B: the music player floats with its top face tilted strongly toward the viewer and a thick side slab showing. The earbud cord loops flat on the card plane rather than in the device's space.",
+   "fix": "Tilt the player back so it sits more upright, like a card held toward the viewer, and let the cord loop in front of and behind the device so it reads in depth."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the broom flies diagonally in side view, with clouds as a simpler background layer. B: the balloon cluster is seen front-on, with overlapping spheres layered front to back. Both views are plausible for sky cards, and nothing in the camera or depth reading separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the door is a tight, cropped front view. Ivy and the frame run off every edge, and there is a flat front-on surface like the real clock. B: the arched door is shown whole inside a wall section. The step shows its full top face from above while the wall is perfectly front-on, so it reads as a small staged set (planar_share 0.613, above the real range).",
+   "fix": "Crop in closer so the wall and step leave the card edges, and either keep everything straight-on or turn the whole wall slightly so the step and wall share one angle."
+  }
+ ],
+ "pattern": "Generated cards show the whole object centered and staged as a diorama: a round base, island or plinth, seen from a raised camera that shows its full top. Real cards crop the object or set it on ground that runs off the card edges, use a lower, mild three-quarter view, and keep the object and ground at one shared angle. Generated items also tend toward a dead front-on, symmetric pose with smooth rainbow swelling instead of turned, flat-faced planes."
+}

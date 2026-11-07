@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: oil lamp floats on green rays with a bright yellow glow pooled right behind the chimney and base, so the center of the field washes out, like the glow in the generated mitt and camera lessons. B: flashlight on even cyan rays. The only light is its own beam, which belongs to the object.",
+   "fix": "Draw even, flat radiating stripes in two close greens with no bright glow behind the lamp; keep the stripes the same brightness behind the object as at the edges."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the whole police car is shown small, mid-street, with a pink house, a mint house, trees, a curb, sidewalk tiles and clouds around it. That is a staged diorama like the generated lighthouse on its island. B: the bike on the rack is close and cut off by the card's bottom and right edges, with only the car's back and a soft road and hills behind it.",
+   "fix": "Show the police car close and central, cut off by the card edges, on a plain asphalt road with one soft blurred wall behind; no houses, trees or clouds."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: vending machine on a plain purple floor that matches the backdrop. B: tape roll on a plain green floor that matches the backdrop. Both are clean category 2 with a quiet field and no added props.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the badge wallet sits small in the middle of dark wood planks with a wide empty border, and the background is nearly blank (edge density 0.004, below the real range). Real flat objects lie closer and fill more of the card. B: the guidebook fills the card on warm wood. The pins and stickers belong to its cover design.",
+   "fix": "Show the open badge wallet from above, larger, filling most of the card on warm wood planks, with the planks running to the card edges."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: bloodhound on a grass strip, with soft light behind it on a blue striped backdrop. B: boxing gloves on a wood shelf against a quiet blue slat wall, cut off by the right edge. Both use a real surface and a simple, quiet backdrop.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the magnifier lies on an invented city map with roads, blocks and tree clusters, on top of a wood table. That busy secondary prop raises background detail to 0.032, above the real range. B: binoculars alone on plain wood planks with one soft shadow.",
+   "fix": "Show the magnifying glass alone on plain warm wood planks seen from above, with no map or papers under it."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the ship sits in choppy foam-crested waves, with a strong pink glow and rays behind the sails. The water's small foam lines push edge density to 0.049, above the real range. B: spyglass floats on calm, even cyan diagonal stripes.",
+   "fix": "Put the ship on smooth water with a few large, quiet wave shapes, and remove the glowing halo behind the sails."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: camera on even cyan concentric rings. B: music player with its earbuds, the one partner object, on purple rings. Both are quiet tone-on-tone category 1 fields.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the sneakers stand on a pale yellow floor that meets a separate orange wall at a hard horizon line. The floor is not the backdrop's color, unlike the real juice card's purple-on-purple. A: the fedora sits on a seamless purple floor and wall with a soft pool of light.",
+   "fix": "Stand the sneakers on a plain floor in the same orange as the backdrop, blending softly into the wall with no hard horizon line."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the wreath is shown on a whole door, framed by dense ivy with dozens of small leaves down both sides and across the top. Edge density is 0.107, above the real range. B: an extreme close-up of the knob on a plain green door, cut off by the card edges, with a soft hint of the room.",
+   "fix": "Show the wreath close up on a plain painted door that fills the card, cut off by the card edges, with no ivy or leaves around the frame."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the planter table adds a watering can and a trowel on the lower shelf, plus a picket fence, bushes on both sides, paving stones and clouds. These are invented props and many small shapes. B: sunscreen with sunglasses, one partner object, on a quiet green wave field.",
+   "fix": "Show the raised planter with herbs close up on paving stones, against one plain wooden fence; no watering can, trowel, bushes or clouds."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: ring inside a zip bag (the bag holds it), on wood seen from above. B: racket with one ball, its partner object, on a green court that fills the card. Both are plain category 3 surfaces with a single named partner.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards give themselves away by over-staging. They show the whole object small in a diorama (island rocks, houses, fence, bushes), add props the subject doesn't name (life ring, map, watering can, trowel), crowd the scene with many small leaves and foam lines, and put a bright glowing halo behind the hero. Real cards crop close so the card edge cuts the object, keep the place to a few large quiet shapes, and keep the field evenly toned."
+}

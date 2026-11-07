@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the oil lamp faces the camera dead-on, centered and symmetric. It is shown whole down to the foot, with only a slim ellipse of top face on the base and burner. Its normals are smooth rainbow gradients with almost no flat patches (0.003, below the real range). B: the key lies on a diagonal across the card, cropped near the bow and bit. It is a simple, plausible flat-lay view.",
+   "fix": "Turn the lamp about 30 degrees so its handle swings toward the viewer, drop the camera slightly, and let the lamp fill the card more, with the chimney close to the top edge."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the grandfather clock is small in the frame and floats in an empty studio. The floor is only a soft green-to-blue gradient with no readable ground angle. B: the vending machine is in a clear 3/4 view and fills the card. Its side face is foreshortened consistently, and it stands on the floor line with feet and a contact shadow.",
+   "fix": "Bring the camera closer so the clock fills about 80% of the card height. Show a clear floor plane at one angle under its base."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the witch hat is seen from slightly above. The brim ellipse and band share one view, and the hat sits on a soft ground. B: the sneakers sit in a hard wall-and-floor corner with a sharp horizon across the middle of the card, a photo-studio set. The two shoes are turned at slightly different angles, and the near shoe is set noticeably larger.",
+   "fix": "Remove the wall/floor corner and use a plain radiant backdrop. Show one shoe, or a matched pair at the same 3/4 angle, from a slightly high camera."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the rocking chair is in a strong 3/4 turn. Floor planks recede toward one vanishing area, and the rockers sit on the floor. B: the cat is a frontal, symmetric pose facing the camera. The stone ledge is seen nearly straight-on with a flat front face, so there is almost no top plane under the cat. Planar share is 0.032, below the real range.",
+   "fix": "Turn the cat's body about 30 degrees to the side with the head toward the viewer. Raise the camera so the top of the ledge shows as a readable surface receding back."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the ring box is seen in 3/4 from above. The lid, tray and coin share one consistent view. B: the mask is turned about 3/4 and floats, with the feather in the same view. Both have mild perspective and similar flat-face share.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the binoculars sit on planks seen from a high 3/4 view. The plank lines converge and the object shares that angle. B: the broom is seen almost straight down onto a flat grass carpet with no horizon and no depth layers. Planar share is 0.019, below the real range.",
+   "fix": "Lower the camera to a 3/4 view so the grass recedes toward the top of the card. Prop the broom at an angle so its head shows thickness."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the candy jar is dead-centered and symmetric, seen at near eye level. The table planks recede behind it and the rim ellipse is thin. B: the caravan is in a 3/4 view with its side and front foreshortened consistently. It sits on grass with its hitch and wheel grounded.",
+   "fix": "Turn the jar slightly and raise the camera so more of the open top shows. Let the jar fill more of the card height."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the topiary is a frontal, centered, symmetric object shown whole on a plinth. Behind it are a mid-ground hedge, a path and sky, a full scene with three depth layers. Planar share is 0.009, below the real range. B: the snorkel mask lies on the deck in a close, cropped 3/4 view from above. The deck planks and the water share one ground angle.",
+   "fix": "Move closer and crop the topiary so it fills the card. Drop the hedge and path layers in favor of a simple soft backdrop, and turn the spiral slightly off-axis."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the motel sign is seen from a low camera looking up and cropped by the card edge, with the building receding at the left. B: the street lamp is centered and shown whole, standing on a wide cobblestone plaza. The plaza is seen from high above with a curved rim, while the lamp post is drawn almost at eye level, so the two views disagree.",
+   "fix": "Use one camera height: either lower it so the cobbles recede gently toward a horizon, or show the lamp head from above too. Move closer so the lamp fills the card."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the fountain is seen from a high 3/4 angle. Both tiers and the basin ellipses open up consistently, and it sits on the paving. B: the pumpkin faces the camera dead-on and is symmetric, on a table edge seen nearly level. Only a thin strip of tabletop shows.",
+   "fix": "Turn the pumpkin about 20-30 degrees and raise the camera so the top and stem area show, with the tabletop receding behind it."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the window is a straight-on, cropped wall view. It is flat and orthographic but consistent, and the sill shows a little top. B: the gate is a symmetric, centered frontal composition. Two pillars frame it, a path recedes in strong perspective, and a background garden adds extra depth layers.",
+   "fix": "Crop closer to the gate and turn it slightly to 3/4. Simplify the background layers and keep the paving at a gentle, single angle."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the snorkel mask is in a close, cropped 3/4 view from above on deck planks, with one consistent ground angle. B: the lion statue is shown whole and centered on a stepped plinth. Behind it are a winding path, trees and lawn, a full scene with many depth layers, and the plinth's front face is seen nearly straight-on.",
+   "fix": "Move closer and crop the plinth at the bottom. Turn the lion to a stronger 3/4 angle and replace the park scene with a simple soft backdrop."
+  }
+ ],
+ "pattern": "Generated cards keep the camera far back. They center the whole object, often frontal and symmetric, on a base or plinth inside a full little scene (path, hedge, plaza, trees). Real cards crop in tight with a decided 3/4 turn, and the camera height matches between the object and its ground."
+}

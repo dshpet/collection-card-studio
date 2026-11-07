@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (grad cap): clear key light from upper left. The top board is lit, its front edge turns over a crisp but soft corner, and the crown drops into a deep, cool core shadow under the board. B (witch hat): flat, matte modelling like clay. The cone and brim get an even, frontal wash, and the brim's underside is only slightly darker. There is no clear core shadow line, and the shading lens shows a pale band from frontal fill across the brim edge.",
+   "fix": "Light the hat from the upper left: bright top side of the brim, a clear darker core shadow running down the right side of the cone, and a deep shadow under the brim on the band."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (plane): directional light from upper left. The fuselage has a bright top, a cool darker belly and crisp engine highlights. B (bat): even, soft lighting. The body fur and wing membranes have little separation between lit and shadow sides, and form contrast is low (0.30). The wings read as flat with a faint rim and no real shadow side.",
+   "fix": "Give the bat one light from the upper left: lit top of the head and wing arms, a clearly darker underside of the body and wings, and a thin bright rim on the wing edges."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (gloves): broad, soft, rounded light. The left side of each glove is lit, the core shadow falls into the creases, and soft contact darkening sits on the table. B (dead tree): the trunk has a frontal lit centre stripe, the branches go uniformly dark, and a hard, separate cast shadow lies to the right on the grass. Light on the tree and its shadow do not agree well.",
+   "fix": "Light the trunk from one side so one half of the twisted trunk is lit and the other half is darker, and make the ground shadow soft and attached at the roots."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A (topiary): directional sun, with lit left tiers, shaded right tiers and a cast shadow on the grass. B (slide): even plastic shading. The tube has a soft gradient, light bias is low (0.149), and the shadow under the platform is mild. Both fall within the soft, rounded look of the real cards, and neither has a clear tell.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (mirror): a spotlight look. The lens shows a dark vignette around the top and a bright pool on the floor, the frame shading is even, and the cast shadow is hard and offset to the right. B (vending machine): consistent side light from the left, with a lit left side panel, a darker front face and soft contact at the feet, as on the real cooler and camera.",
+   "fix": "Remove the spotlight pool and the dark vignette. Light the mirror from the upper left with a soft, even studio light, and put a soft contact shadow under the base."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (motel sign): the signs give off light, and the building is lit by the window light and the sign glow, which is coherent. B (house): the stone walls are evenly lit as if by day under a night sky, and the shading lens shows a yellow glow pool on the grass around the base that isn't tied to any window. The tower has very little turn from light to shadow.",
+   "fix": "Make the moonlit side of the house cool and dim, let the window light spill only just below each window, and put a darker core shadow down the round tower."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (garden gate): sunlit from the left. The brick pillars have lit left faces and shaded right faces, and the balls have soft terminators. B (night gate): the stone pillars and balls are lit frontally and evenly, both pillars look identical, and a bright glow pool sits on the path. There is no consistent light direction for the night setting.",
+   "fix": "Light the gate from one side with moonlight: one side face of each pillar dim, the balls lit on one side only, and no bright spot on the path."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (sneakers): clear side light, with lit toe caps, shaded inner sides and a soft cast shadow to the left. B (pumpkin): the inner glow lights the face, while the outer rind gets a soft, even frontal wash. The ribs barely turn into shadow, and the cast shadow is a soft smudge.",
+   "fix": "Give the pumpkin a clear key from the upper left: lit left ribs, a darker right side with deeper shadow in each groove, and a darker contact shadow at the base."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A (fountain): soft top light, with lit bowl rims, shaded undersides of the tiers and gentle contact shadow. B (candelabra): lit by its own candles. A large warm pool of light glows on the tabletop, the metal is lit from the front, and the arms have chrome-like highlights. It is a dramatic practical-light setup, unlike the real cards.",
+   "fix": "Remove the glowing pool on the table. Light the candelabra with a soft daylight key from the upper left and a small soft shadow under the base."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (palm): soft, rounded leaves with lit tops and shaded undersides, plus a soft trunk turn. B (crystal ball): a sharp white window-shaped highlight at the top left, an inner glow lighting the stand from inside, a high-contrast dark tabletop, and a hard shadow falling away. That reads as glossy, practical-lit rendering.",
+   "fix": "Use a small, soft round highlight on the ball, light the stand from outside from the upper left, and keep the shadow under the stand soft and short."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (broom): strong one-sided light (light bias 0.79, above the real range). The bristles are bright on top and dark underneath, and the handle has a hard specular line. B (balloons): soft, rounded shading with a small soft highlight on each balloon and a gentle turn to a cooler shadow, which matches the real cards.",
+   "fix": "Soften the light on the broom: a gentle gradient from lit top to shaded bottom on the bristles, and a broad soft sheen on the handle instead of a sharp line."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (clock): matches the real clock card, with a soft rim light on the orange frame and a soft drop shadow on the wall. B (lion statue): flat, frontal lighting. The marble steps and lion get even light, form contrast is low (0.33), and the shadow side of the plinth is barely darker.",
+   "fix": "Light the statue from the upper left: lit top faces of the steps, clearly darker right faces, the lion's mane shaded on the right, and a soft contact shadow on the grass."
+  }
+ ],
+ "pattern": "Generated cards light the hero frontally and evenly, as if moulded from clay, with a weak core shadow. Or they use practical or moody light (glow pools on the ground, light from inside, spotlight vignettes, sharp window-shaped highlights). The real cards use one soft key light from the upper left with a cool shadow side and a gentle contact shadow."
+}

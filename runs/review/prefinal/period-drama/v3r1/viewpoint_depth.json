@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the sneaker pair sits at a low 3/4 view on a floor with a clear horizon, toes toward the viewer, and the soles meet the floor in one plane. That matches the real sunscreen card. B: the gift drum is square to the camera and centred with the whole object inside the frame. The lid shows a wide-open top ellipse, but the bottom rim curves no more than the lid edge. The bottom should curve more because it sits further below eye level, so the box has no single eye level. B's planar_share (0.606) is above the real range.",
+   "fix": "Turn the round gift box slightly to a 3/4 view from a little above eye level. Make the bottom edge curve more than the top lid edge, and let the box sit on a visible floor with a short soft shadow."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "B is the real sunscreen card from the reference sheet: an eye-level camera, a flat green floor strip and a wavy backdrop. A: the football is drawn almost side-on at eye level, but the pitch behind it is seen from high above. The white touchline runs steeply across the top, and the foreground grass blades are large. Ball and ground do not share one camera height.",
+   "fix": "Draw the grass at the same low camera height as the ball, with the pitch line nearly horizontal and far behind. Use small, even grass blades so the ball clearly rests on one flat lawn."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the parasol is tilted in a 3/4 view from above. The canopy ribs, frill and handle share one view. B: the folding fan is seen flat-on, almost orthographic, with even pleat facets and a pivot at the bottom right. Both fit how real cards treat flat or tilted props. Neither breaks a single viewpoint.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the fountain is seen from a moderately high angle on a tiled plaza that runs past the bottom edge of the card. The basin ellipses open up steadily toward the ground, like the real computer and barrel cards. B: the cake stand is centred and fully inside the frame, with blurred tablecloth below and a flat striped wall behind. The tier ellipses barely change in openness between the top plate, the lower plate and the foot, so the camera height feels undefined. This pulled-back, fully contained staging matches the generated lessons.",
+   "fix": "Move the camera closer and slightly lower. Make the top plate a thinner ellipse and the lower plate and foot progressively rounder, and let the table edge run out of the bottom of the frame."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the mortarboard is seen from above. The flat board is an even green-up patch in the normal map, and the skullcap below it uses the same view. B: the top hat is seen from slightly above, with an open crown-top ellipse and a brim that curls up on the right to show its underside. Both keep one consistent camera, and there is nothing to choose between them.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the vending machine shows a wide left side face, which suggests a strong turn. Its front face is drawn almost square-on, though, with door, shelves and slot as straight horizontals and no foreshortening. The top face is barely visible while the floor line sits at the very bottom. B: the teacup is seen from above, and the saucer ellipse opens more than the cup rim, which is consistent. Its soft shadow is on the pink ground.",
+   "fix": "Turn the vending machine to a gentle 3/4 view from slightly above. Make the front panel recede to the right like the side, and show a sliver of the top face so it stands firmly on the floor."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the pearl bracelet is shot straight down onto crumpled velvet that fills the whole card. There is no ground horizon or backdrop layer, only one textured surface, and planar_share is 0.0, below every real card. B: the map is seen from high above with planks receding, but the magnifier rim is drawn as a near-circle while the map under it is strongly foreshortened. B has a minor mismatch, but A's single-surface top-down framing is further from the real cards.",
+   "fix": "Show the bracelet from a 3/4 angle above, lying on a simple cushion or tray that sits on a flat surface. Add a plain stylised backdrop behind it so there is a clear ground and a background."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the red fan is pressed flat onto the backdrop. In the normal map the leaf shows almost no pleat relief, so it reads as a flat sticker (planar_share 0.854, far above the real range). Only the gold ribs are raised, and the guard stick runs past the leaf at its own angle. B: the neckerchief is seen from slightly above. The collar loop shows its inside, and the knot and tails fall forward in one view.",
+   "fix": "Tilt the fan slightly toward the viewer so the pleats fold in and out with visible light and dark sides. Keep the guard sticks lying along the outer pleats so the leaf and the sticks share one angle."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the suitcase is dead frontal at eye level, with no top face and only a sliver of side. Behind and under it, the floorboards converge hard to a central vanishing point, as if seen from well above. Object and floor use two different cameras. B: the chest is in a two-point 3/4 view from above, and its lid top, side face and plank floor all recede the same way.",
+   "fix": "Turn the suitcase to a 3/4 view from slightly above so its top edge and one side show. Run the floorboards at the same gentle angle as its base, with a soft contact shadow."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the upright piano sits in a room corner. Its body is seen nearly at eye level, so the lid top is barely visible, yet the floorboards and keyboard read from noticeably higher. Long flat panels give a planar_share of 0.689, well above the real range. B: the guitar leans on a stage floor with trusses and spotlights behind. This is a layered stage setup like the real drum kit card, and its planar_share is within range.",
+   "fix": "Raise the camera a little so the top of the piano and the keyboard are seen from the same height as the floor. Turn it slightly more to 3/4 so the side panel and floor recede together."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the ring box is in a high 3/4 view, with the lid, cushion and base sharing one angle. B: the gate scene uses a wider lens. The left pillar shows its right side and the right pillar shows its left side, the paving rushes toward the bottom edge, and there are four depth layers: path, gate, garden and trees. This is stronger perspective and deeper staging than the mild single-object real cards.",
+   "fix": "Use a narrower, flatter view of the gate: both pillars turned the same way, a short strip of paving in front, and a simple sky-and-hedge backdrop instead of a deep garden."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the bugle is in a 3/4 view, with the bell flaring toward the upper left and the coil and mouthpiece receding right. The tubes are smooth rounded forms in one view. B: the violin body reads as a flat plate tilted diagonally, with only a thin rim showing on the right in the normal map. The pegs stick out symmetrically as if seen frontally, while the body is angled, so it looks like a cut-out rather than one turned object.",
+   "fix": "Turn the violin to a gentle 3/4 view so the curved top, the side ribs and the scroll all lean the same way. Make the pegs foreshorten on the far side."
+  }
+ ],
+ "pattern": "Generated cards often pull the camera back and face the object square-on. The prop is centred and fits entirely inside the frame. They also mix two cameras: the object is seen at eye level while the floor or ground is seen from high above (suitcase, football, piano), or ellipses do not open up steadily toward the ground (gift, cake stand). Some objects look pressed flat like stickers (fan, violin). Real cards use one mild 3/4 view from slightly above, crop the ground at the card edge, and keep the object and its ground on the same plane."
+}

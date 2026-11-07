@@ -1,0 +1,28 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "loose": [],
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The lower half of the front door renders as a solid black half-disc. The door's arched cylinder and its rectangular box share the same front plane, so their coincident faces z-fight, and the restyle would read the black shape as an open hole. The back plate has the same overlap. Fix: make each box slightly thinner and set it back, so the arched disc is the only front face.",
+   "The dirt road the card names doesn't show. The grass verge reaches 0.5 units in front of the post, so only grass is visible. Fix: move the road edge closer to the post so the road shows in the near foreground."
+  ]
+ },
+ {
+  "round": 2,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The two braces are tilted the wrong way. Their outer ends hang down in the air instead of rising from the post to the underside of the mounting board, so they read as loose sticks.",
+   "The front door's full arched disc sits in front of the rectangular lower plate, so a whole circle shows on the door and the door doesn't read as one arched plate.",
+   "The blue 'metal' finish renders as near-black navy and loses the bright blue hero color. A mailbox is painted sheet metal, so the finish should be satin.",
+   "The dirt road the card names doesn't show. The camera is too low and close, and only grass shows under the box. Raise the elevation a little and bring the road edge closer to the post."
+  ]
+ }
+]

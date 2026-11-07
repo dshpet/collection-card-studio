@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the mailbox is seen close up from a low 3/4 angle and cropped at the post. The dirt road recedes behind it at a mild angle, which matches the low, close camera on the real lighthouse and caravan. B: the bird feeder is shown square to the camera at eye level and centered against the trunk, with a far park and city layer that adds a third depth plane. A's planar_share (0.645) is above the real range, so the evidence is mixed.",
+   "fix": "Turn the bird feeder about 30 degrees and drop the camera a little so the feeder fills more of the card. Crop the trunk and cut the far city buildings down to a soft green backdrop."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both are high three-quarter tabletop views. A: the glass plate is a wide ellipse with the fruit standing upright. B: the bean bowl is an ellipse at a similar tilt with the spoon lying in it. The table planks in both run at one consistent angle, and both planar_share values are inside the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both float on a sunburst at a mild three-quarter angle from slightly above. In A, the jacket's collar and cuffs share one view. In B, the hat brim's ellipse and the crown agree. Both planar_share values are in range, and nothing on my vector separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the station clock is near face-on, the platform and canopy recede consistently, and there are several depth layers (bench, rails, wall). B: the graduation cap's square board is seen from above with its front and back edges parallel and no convergence, centered on a flat ring background. The board reads as one large flat patch, and planar_share 0.593 is above the real range.",
+   "fix": "Show the graduation cap from a lower three-quarter angle with mild perspective, so the board's far edge is slightly shorter than its near edge. Let the band be the larger visible face."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the wagon is a consistent three-quarter view with mild perspective. Its wheels shrink naturally toward the back and its tongue lies on the dirt ground plane. B: the coaster cars go up the loop, each seen from behind and above, while the loop and supports are seen from below and inside. The parts don't share one camera, and planar_share 0.028 is below the real range.",
+   "fix": "Show the roller coaster from one side at eye level: a single short train of cars sitting on a gentle hill of track, with the track, the supports and the cars all seen from the same angle."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both are top-down shots of objects lying flat on a surface. In A, the guitar's floor planks run parallel with a side edge showing on the body. In B, the racket and ball lie on the court with the court line at one angle. Both planar_share values are in range, and the view logic is equally plausible in both.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the two spurs float small in the middle of a big empty ring background. They are staggered in depth but drawn at the same size, which is a flat, near-orthographic view. B: the neck pillow fills the card at a slight three-quarter angle, the way real cards fill the frame.",
+   "fix": "Move the camera closer so the spurs fill most of the card, at a slightly low three-quarter angle with the nearer spur clearly larger than the farther one."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the boxing gloves are seen at a low eye level, with the table edge horizontal and the gloves cropped close, like the real cards' low, close camera. B: the boots stand on a plank floor whose lines converge hard toward the back, a wide-angle look. The boots are square to the camera and centered.",
+   "fix": "Lower the camera to near floor level and use a gentle lens so the floor planks barely converge. Turn the boots slightly to a three-quarter angle and crop them closer."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the golf club and ball are a low, ground-level close-up cropped by the frame, with soft hills behind. B: the column is shown whole, from above, on a pedestal, with an added sign and a converging room corner. Both the full staging and the added side props match the generated lessons (the lighthouse's added island and props).",
+   "fix": "Crop in on the column's capital and upper shaft from a slightly low angle. Drop the pedestal and the sign, and keep the wall behind as a simple flat color."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cactus pot is centered and square to the camera at eye level, with a plain backdrop and a horizon line behind it, like the straight-on generated camera in the lessons. B: the sneakers sit at a natural three-quarter angle from above, standing on one consistent floor plane.",
+   "fix": "Turn the cactus pot a little and raise the camera slightly, so the rim shows as a clearer ellipse and the pot sits at a gentle three-quarter angle."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the fan is face-on and flat, like the real clock card. B: the harmonica is a three-quarter top view of a box with mild perspective. Both planar_share values are in range, and each object keeps a single consistent view.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the coin-op viewer is a low, close, cropped 3/4 view against a soft city skyline, like the real cards' camera. B: the pump stands whole and centered on a stone slab. The slab's top is seen steeply from above while the pump body and handle are seen at eye level, so the two parts don't share one view. planar_share 0.025 is below the real range.",
+   "fix": "Move the camera closer and lower so the pump's body and handle fill the card. Crop off the stone slab, and keep the ground and the pump at the same slight downward angle."
+  }
+ ],
+ "pattern": "Generated cards stage the whole object, centered and square to the camera, often on an added base (slab, island, pedestal), and sometimes mix camera heights. In p12 the slab is seen from above while the pump body is at eye level, and in p05 the coaster cars are seen from above while the loop is seen from below. Floors either converge too hard (wide-angle) or show no perspective at all. Real cards use one low-to-mild three-quarter camera, close and often cropped, with gentle convergence."
+}

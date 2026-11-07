@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a cool cyan sky and blue hat frame a sheep whose white wool stays a cool, neutral white. The pink, teal and orange beads are small accents. B: the whole porch is pulled toward orange. The door, floor, window glow, lantern and pumpkin share one orange-brown family, and even the ghost sheet and cow's white body turn cream-peach. Only the night sky in the corner stays cool. warm_share is 0.707, above the real range.",
+   "fix": "Keep the ghost sheet and the cow's body a clean cool white with soft blue-lilac shadows. Make the porch boards and door muted grey-brown, not orange. Let the lantern glow stay small, and fill more of the background with deep blue night."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the whole room is washed in magenta and pink. The curtain, rug, walls and the mummy's bandages all sit in one red-violet family, and the shadows sink into dull maroon. Shadow chroma (0.32) and hue families (4.99) are below the real range, and warm_share (0.82) is above it. B: a cool green-and-navy night garden behind a blue shirt, with separate warm accents (popcorn, chicken, rug) and some neutral greys.",
+   "fix": "Make the room walls a cool dusk blue and the rug a soft grey-beige. Make the mummy bandages a clean white with cool grey shadows. Keep the red only on the curtain, and let shadows stay rich purple-blue instead of muddy maroon."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: warm cow and rooster faces set against a cool violet-blue cockpit. The white suits take lilac shadows, the classic warm-hero-on-cool-backdrop split. B: the backdrop is cool, but the cow's white hide is a creamy peach. The table, blocks and muzzle all share one orange-wood hue, so the hero repeats the foreground's colour and the whites read warm-tinted.",
+   "fix": "Paint the cow's white hide a cooler, cleaner white with blue-grey shadows. Make the table a darker, desaturated brown so it doesn't match the orange muzzle and the pale wooden blocks."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the sky is pure saturated cyan-blue, and the grass is pure yellow-green, as loud as the hero. Background chroma is 0.157, above the real range, and very few muted areas rest the eye. B: a deeper, softer blue sky, a muted grey-brown fence and darker bushes give some neutral mass.",
+   "fix": "Tone down the sky to a softer mid-blue with a paler horizon. Darken the grass toward a deeper, less yellow green. Add a muted grey-brown element such as a fence or path so the purple shirt and pink pig stand out as the loudest colours."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: nearly every mass is red, orange or brown: the plaid shirt, red saloon wall, wood boards, hats, pig skin and skin tones. warm_share is 0.81 and hue families are 3.9, both outside the real range, and the only cool relief is a sliver of sky and the jeans. B: a violet-blue night stage behind a warm pig and cow, with multicoloured light accents. The palette is split between warm and cool.",
+   "fix": "Make the saloon wall a weathered grey-blue or faded teal instead of red. Make the boardwalk a cooler grey-brown, and show more blue sky behind. Keep the red only on the plaid shirt so the warm hero sits on a cool backdrop."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a flat, very saturated violet backdrop (chroma 0.199, above range) is louder than the hero. The caravan's whites are cream-yellow, and its shadow side turns olive-green in the lens, which is unrelated to either the violet or the cream. B: blue drums on a maroon-magenta stage, where the shadows stay in the related wine-red family and the gold trim is the one accent.",
+   "fix": "Lower the purple backdrop to a softer, slightly darker violet. Paint the caravan body a cleaner off-white, and shade its side with a cool lilac-grey instead of a greenish one."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a brown wooden wheel on pale lavender and peach rays. The colours are muted, though the deck repeats the wheel's wood hue. B: every fruit is pushed to pure hue: watermelon red, orange, lime-green grapes, blueberries and strawberries all at full chroma (subject 0.170, above the real range). They sit on a warm orange wood table with no cool or neutral backdrop, and warm_share is at the top of the range (0.85).",
+   "fix": "Put the fruit plate on a cool backdrop such as a pale blue cloth or a blue-grey table. Soften the fruit colours slightly so the watermelon and orange are the loudest, and let the grapes and plate go quieter and greyer."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the hay bale, rooster, cow muzzle, bucket of grain and red barn are all orange-red-yellow. The hero's orange is repeated across the foreground hay, and warm_share is 0.62, above range. The blue sky is the only cool area. B: a pink-violet sunset and green bushes are the backdrop, the cow and food tray sit warm in front, and the green dip and dark greens give more separation.",
+   "fix": "Make the hay bale a paler, duller straw colour, not orange, and push the background toward cooler greens and blue. Keep the strong orange only on the rooster and the cow's muzzle."
+  }
+ ],
+ "pattern": "Warm pull and hue repetition. Generated cards tint whites cream or peach where real cards keep them cool grey-white with lilac or blue shadows. They let the backdrop or foreground (wood, hay, walls) share the hero's orange-red hue instead of setting a warm hero on a cool backdrop. They push small objects to pure saturated hue with few muted areas, and their shadows go muddy brown, maroon or olive instead of rich related cool tones."
+}

@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B is a night card. Most of it is a dark navy-and-brown low-key field, with the white ghost and the lit window and lantern as hard pale islands, so the hero sits far above the background (gap 0.177, above the real range). A is a bright daylight card with a big white fleece mass against mid-value sky and wood. A's internal contrast is also high (bead necklaces, dark face and hands on white fleece), so the call is weak.",
+   "fix": "Raise the whole scene to early-evening blue-violet instead of near-black night. Light the porch and back wall in mid tones so the white ghost is not the only bright shape, and keep the lantern glow small and soft."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A is framed by large dark masses: the maroon curtain down the left edge, the black cape filling the left third, and dim corners around the window. That gives a strong vignette (0.111, above the real range) and a low overall key (0.501). The lamp glow sits as a bright spot behind the mummy-chicken. B is also below the real key, but its brightest shape is the projector screen on the right and its corners stay mid-dark rather than closing in.",
+   "fix": "Brighten the living room to a warm daytime light. Turn the curtain and cape into mid-value plum, not near-black, and keep the corners as bright as the center."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A darkens all four corners: the ceiling, the seat at left and the console at bottom-left fall to near-black. A pale cyan window acts as a glow panel directly behind the two heroes, and the silver suits carry hard specular white-on-black edges. Vignette is 0.108, above the real range. B has a darker night background, but its value falls off evenly and the cow's shading is softer.",
+   "fix": "Light the cabin evenly in mid lavender with no dark corners. Make the window a softer, smaller light area. Shade the spacesuits with gentle grey folds instead of chrome-white highlights against black creases."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "A is a high-key daylight card (mean 0.68) with darker leaf and grass clusters pushed into the top-left and bottom corners, giving vignette 0.105, slightly above real. B is similar, but its dark mass is the man's back filling the left edge rather than a corner frame. On value alone the two are close.",
+   "fix": "Keep the tree and grass corners in the same mid-green as the rest of the lawn so the corners do not darken around the characters."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B puts a bright stage-light fan and a pale cow and pig in the middle, against a dark violet sky and a black stage truss across the top corners. The heroes stand well above their surroundings in value (gap 0.159, above the real range), with a glow behind them, the same move the generated lesson cards make. A is evenly daylit: the dark plaid shirt sits mid-dark against a bright saloon, with no corner darkening.",
+   "fix": "Set the party at dusk in light violet so the sky and stage roof are mid tones, not near-black. Drop the spotlight glow behind the characters and light the pig and cow with the same soft light as the crowd around them."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B is a spotlight-in-the-dark card: deep maroon-black fills the corners, a pale spotlight cone stands behind the kit, and the white bass-drum head is the single brightest disc. Key is 0.48, gap 0.204 and vignette 0.123, all three outside the real range. A is a light cream trailer on mid-value violet, with only faint concentric rings behind it and no corner darkening.",
+   "fix": "Use a medium-bright magenta-to-violet backdrop with no black corners and no spotlight cone. Light the whole drum kit evenly and make the bass-drum head soft cream rather than glowing white."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A puts a mid-dark brown wheel on an almost white pastel sunburst and bright floor. The hero sits far below the background in value (gap -0.282, below the real range) and the overall key runs too high (0.761). B is low in contrast (0.115): wood, plate and fruit sit in close mid values. B's softness is a smaller departure than A's washed-out backdrop.",
+   "fix": "Darken the sunburst background to a medium lilac-peach so it is not near-white, and lighten the wheel's wood to a warm honey tone, so the wheel and the background sit closer in brightness."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A frames the cow and chicken with dark leaf canopy in the top-left corner and darker grass in both bottom corners, around a lighter center (vignette 0.132, well above real). Its black cow spots and hooves are punchy accents. B also has a dark tree corner at top-left, but the rest of its edges stay mid-green and pink sky, within the real vignette range.",
+   "fix": "Remove the dark leaf canopy from the top corner and keep the grass at the bottom edges as bright as the grass behind the hay bale."
+  }
+ ],
+ "pattern": "Generated cards on this vector darken the corners and put a glow behind the hero (spotlight cone, bright window, light fan). They also push the key away from the real cards' mid-bright range: either night or low-key scenes with large near-black masses, or washed-out near-white backdrops. Inside the hero, contrast is harder than on real cards, with chrome-white highlights against black creases and pure-white discs."
+}

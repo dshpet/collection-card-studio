@@ -1,0 +1,33 @@
+# Review: prefinal/western/v1r1
+
+| Specialist | Caught | Wrong | Abstained | False alarms |
+|---|---:|---:|---:|---:|
+| shape_proportions | 5/10 | 3 | 2 | 2/2 |
+| viewpoint_depth | 4/10 | 4 | 2 | 1/2 |
+| lighting_shading | 4/10 | 6 | 0 | 2/2 |
+| value_contrast | 6/10 | 4 | 0 | 2/2 |
+| color_palette | 4/10 | 6 | 0 | 2/2 |
+| surface_finish | 9/10 | 0 | 1 | 2/2 |
+| edges_linework | 5/10 | 5 | 0 | 2/2 |
+| composition_hierarchy | 5/10 | 4 | 1 | 2/2 |
+| staging_detail | 4/10 | 3 | 3 | 1/2 |
+
+## Art director
+
+Close to the real cards. In 7 of the 10 pairs with a generated card, most specialists picked the real card or saw no difference. Those 7 generated cards (gold pan, harmonica, hat, boots, cactus) pass as they are, or need only light work (barrel, wagon). Three cards give themselves away clearly. The windmill sits on an invented stone plinth and grass hill. The campfire has a cabin, moon and stars crowding it. The saddle's hay bale is drawn strand by strand. The common root cause is added setting, ground clutter and surface micro-detail: stitching, rivets, grain swirls and speckle. I overruled the light, saturation, centring and glow critiques because the real cards share those traits. Note: the kettle is the subject of the Campfire Pot card, so the specialists' advice to remove it was wrong.
+
+1. **Invented setting and ground clutter around the hero. Examples: the stone plinth and grass-tuft hill under the windmill; the cabin, moon and stars behind the campfire; the pebble-speckled dirt under the barrel and wagon; the hay bale drawn strand by strand under the saddle. The real cards keep the ground and backdrop as a few broad, quiet shapes, like the lighthouse's sea and clouds, the popcorn cart's plain tiles and the binocular viewer's hazy city. This is the biggest giveaway.** Stand the object on a smooth, plain floor or ground in one soft tone, in front of a simple backdrop of a few large soft shapes. Draw hay, grass and dirt as broad soft masses with only a few strokes.
+2. **Surface micro-detail is over-rendered: dashed stitching and domed rivets on the saddle, rivets around the windmill wheel, big swirling grain on the barrel staves, stitched canvas seams on the wagon, and speckled enamel and stone on the campfire scene. The real cards (hat, lighthouse, binocular viewer, buoy, fan) show smooth materials with broad soft highlights and plain hardware.** Paint materials smooth and simplified, with one or two broad soft highlights. Wood gets faint fine grain, leather and canvas are plain, and metal fittings are plain smooth bands.
+3. **Dark outlines on parts of some generated cards, mainly the wagon's wheels and hoops. Overruled as a general rule: the edges specialist's strongest examples (duck, fan, jacket, sneakers) are all real cards. This applies to the wagon only.** Separate parts with light and colour changes, as on the real cards.
+4. **Overruled. Several specialists called the generated cards front-lit, oversaturated, centred and symmetric, or too bright behind the hero. On most pairs they picked the real card instead. The lamp, fan, jacket, buoy, fountain and water bottle are all real, and they show the same centred staging, the same pure hero colours and glow-behind bursts. These are traits of the game, not tells, so no change is needed.** No change. Keep the current light, saturation, glow bursts and centred floating staging.
+
+- p01: keep
+- p02: keep
+- p03: keep
+- p05: Saddle: Draw the hay bale as a few broad, soft clumps in a slightly paler, duller straw colour. Make the leather smooth with a soft sheen, with one subtle seam in place of the stitch lines on every edge and no rivets. Keep the stirrup, the horn, the rope ties and the cyan backdrop.
+- p06: Barrel: Make the dirt floor a smooth, plain soft brown with no pebbles or specks, and make the cast shadow softer and shorter. Make the wood grain on the staves faint and fine in place of the big swirls. Keep the emblem, the iron hoops and the blue stripes.
+- p07: keep
+- p08: keep
+- p09: Covered Wagon: Make the dirt ground smooth and plain with no pebbles or specks. Paint the canvas as smooth cream with a few broad soft folds, with no stitched seams. Make the wheel rims a slightly muted brick red, shaped by light and shadow rather than dark outlines; keep the green stripes and the tongue.
+- p10: Windmill: Remove the stone base, so the tower legs stand straight on smooth, plain dry ground. Paint the grass as a few soft, broad straw-coloured clumps with no single blades or pebbles. Make the wheel rim a smooth metal ring with no rivets; keep the blades, the red tail vane, the sky and the clouds.
+- p11: Campfire Pot: Remove the cabin, the moon and the stars, leaving a soft, dark blue forest behind. Make the kettle smooth, softly shiny enamel and the stones smooth grey with no speckles. Keep the fire, the logs, the kettle on its rock and the stone ring.

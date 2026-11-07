@@ -1,0 +1,28 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "loose": [],
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The shaft is hidden: k.turn(14, ...) tips the canopy top toward the camera, so the shaft points away behind the canopy. The crook handle seems to come straight out of the ruffle, and the ribs, stretchers and runner can't be seen, so the object doesn't read as a parasol at once.",
+   "The ruffle renders as a spiky sawtooth like a cupcake liner: 40 waves over 256 vertices is only about 6 vertices per wave. It should be a soft lace flounce.",
+   "The canopy surface is lumpy: the profile has too few points, so the dome shows stair-step bands. Together with the scallop sag and the spiky ruffle, it looks more like a cake than a fabric dome."
+  ]
+ },
+ {
+  "round": 2,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The canopy renders almost white instead of pale yellow. #fbefa0 is so light that the lit dome washes out, so the brief's main color is lost. A more saturated pale yellow fixes it.",
+   "The small metal balls at the rib tips poke through the top of the canopy and show as grey dots on the dome. They are removed, so the ribs now end under the rim.",
+   "The pink lace ruffle is barely visible. It is a thin sliver tucked under the rim, and a jagged canopy lip covers most of it, so the lace edge does not read. It is now a deeper, wider flared band that hangs clearly below and outside the rim all the way round."
+  ]
+ }
+]

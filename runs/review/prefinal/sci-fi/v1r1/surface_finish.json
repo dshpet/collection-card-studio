@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the chip's board and gold pins share one even lacquer, the black die is a uniform satin slab, and the traces are thin glossy ridges. Gloss share is 0.194, above the real range. B: the book cover is a matte cloth-like teal, the stickers have flat print with a white die-cut edge, and the page block is soft. That is the real-card gloss mix.",
+   "fix": "Make the green board a matte, slightly soft surface. Keep shine only on the gold pins as one small highlight each. Make the black chip top dull with a soft edge highlight."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the helmet shell and visor are both high-polish, with a broad mirror sheen on the gold visor and a lacquered white shell. Very little of it is matte. B: the sneaker has a quiet fine mesh dot pattern on the toe and matte laces, and its gloss sits only on the sole rim. Its numbers are at the real-card edge.",
+   "fix": "Make the helmet shell matte white plastic with a soft rim light. Keep the strong reflection only on the visor, as one simple curved highlight."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the steel tabletop has fine brushed streaks and a mirror reflection of the green liquid. The glass flask and liquid are both wet-glossy, and the cork has speckle pores. B: the locker is a uniform satin orange, the vents are broad and smooth, and the books are matte. That fits the simplified real finish.",
+   "fix": "Draw the table as a plain smooth grey surface without brushed lines or a mirror reflection. Make the cork a smooth tan block with only a few pores."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the UFO's chrome rim is covered with small rivets and screw dots and engraved panel seams, and the yellow lights are glossy beads. That is the small-hardware detail real cards leave out. A: the plane's fuselage is a smooth, softly matte white with broad shapes.",
+   "fix": "Remove rivets and screws from the saucer. Show the rim as one wide smooth band with a soft satin sheen, and leave the lights as simple glowing dots."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the red bike frame is lacquer-glossy throughout. The spokes, chain, chainring and rack clamps add a dense field of fine hardware. Detail is 0.104 and gloss is 0.308, both far above the real range. B: the rover body is matte white, the seats are matte grey, and the ground has only quiet grain.",
+   "fix": "Reduce the spokes to a few thick lines and merge the rack hardware into broad smooth parts. Make the frame paint satin, not wet lacquer."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the rocket body, fins and porthole are all the same glossy plastic, with a hot highlight streak on the hull and a gem-like yellow window. Highlight share is 0.184, above the real range. B: the balloons have one soft sheen each and an otherwise velvety surface.",
+   "fix": "Make the rocket body soft matte white with one gentle highlight. Make the porthole rim matte red and keep only a small glint on the glass."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the rose arch is packed with dozens of small glossy leaves and petals, each with its own highlight. Gloss share is 0.416 and detail is high, both outside the real range. A: the marble column's fluting is broad and matte, and the crack is drawn as one simple groove.",
+   "fix": "Use fewer, larger leaves and rose clusters with matte surfaces. Let only a few petals catch light."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the vault door ring has a row of hex bolts, and the inner plate has small screws and panel seams. These are toy-hardware details at a small scale, which real cards replace with broad bands. B: the gate scrolls and brick pillars are glossy but built from broad smooth parts.",
+   "fix": "Drop the hex bolts and screws. Draw the door ring as one or two wide, smooth steel bands with a soft satin sheen."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the desk is brushed steel with streaky mirror reflections. The toggles are chrome balls, and the gauges have polished bezels, so most surfaces read as polished metal. Gloss share is 0.141, above the real range. B: the claw machine is soft matte pink and blue plastic, and its gloss is only on the balls.",
+   "fix": "Make the tabletop plain matte grey without reflections. Give the console a soft painted finish, with small highlights only on the red button and the gauge glass."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the stone table is a matte grey with a few hairline cracks, and the checker tiles are softly glossy. B: the target is satin paint, the teddy bear is soft matte fuzz, and the wood frame has quiet grain. Both have real-card gloss mixes, and the two cards' numbers are nearly identical.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the dish and mast have a photoreal grey-white render, and the concrete ground has fine noisy grain. There are small bolts on the base flange and a broad blown-out white highlight across the dish. Highlight share is 0.412, far outside the real range, while micro texture is below it. A: the fan has stylized satin-chrome and matte blue blades.",
+   "fix": "Paint the dish as a stylized cartoon object with soft color shading, no concrete noise and no flange bolts. Use one controlled highlight on the dish rim."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the satellite body is crinkled gold foil with dense small wrinkles and mirror sparkle, and the solar panels have fine grid lines. Micro texture is 0.032 and gloss is 0.195, both above the real range. A: the ring box is soft matte velvet red and cream, and only the coin is shiny.",
+   "fix": "Draw the satellite body as a smooth gold box with a few large soft folds at most. Give the solar panels a simple 2×3 grid of flat blue cells."
+  }
+ ],
+ "pattern": "Generated cards give themselves away through surfaces that are all equally lacquered, and through fine hardware and micro-texture that real cards simplify. The examples are rivets and screw dots on metal rims, hex bolts, brushed-steel streaks with mirror reflections, crinkled foil, dense spokes and leaves, and photoreal noisy ground. Real cards keep most surfaces soft and matte, use broad smooth bands for hardware, and limit shine to one or two accents per object."
+}

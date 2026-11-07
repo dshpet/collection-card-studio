@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: green chip with gold pins on a flat off-white/grey backdrop. The backdrop has almost no color (bg chroma 0.009, far below the real minimum of 0.099), so there's no hue role opposing the hero. B: teal book on a warm orange wood table, a cool hero on a warm ground, with rich red-brown shadows under the book.",
+   "fix": "Put the chip on a saturated warm backdrop, such as an orange-yellow sunburst. Keep the board a clear grass green and the pins gold, and make the shadow under the chip a deep olive green rather than grey."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: white helmet with a gold visor on a flat violet backdrop. The white shell takes on the violet, so the whole card reads as one purple family plus a gold patch (1.91 hue families, below the real range). B: blue sneakers with green and pink accents on an orange/cream ground, with clear hero-vs-backdrop contrast.",
+   "fix": "Keep the helmet shell a clean cool white with blue-grey shadows, not violet-tinted. Add a red stripe accent, and set it on a backdrop that is clearly a different hue from the shell's shadows."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: neon lime-green liquid that spills a green glow onto a grey steel shelf, against a hot pink wall. The subject chroma (0.177) is above the real range, so the liquid reads as pure hue with no local color. B: orange locker on a muted purple wall with a cream floor, a warm hero on a cool backdrop with muted shadows.",
+   "fix": "Make the liquid a rich but natural green with darker olive depths. Keep the glass mostly clear and grey, and use a softer rose-pink wall so the hero is louder than the backdrop."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: white-and-blue airliner in a blue sky, with deep blue shadows on the fuselage. B: grey steel saucer with a pale cyan dome in a blue sky. The hero is nearly colorless (subject chroma 0.068, below the real range), and the only accent is small yellow lights, so it blends into the sky.",
+   "fix": "Give the saucer a clear local color, such as a red or orange hull band with a silver top, so a warm hero sits against the blue sky. Keep the yellow lights as the one accent."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: white lunar rover on a lavender ground under a purple sky. Everything, including the seats and shadows, is pulled into one violet family (hue families 1.93, warm share 0.008, subject chroma 0.036). The only local color is a small orange crate. A: red bike on a light-blue car with a warm yellow sky, with distinct local colors and a warm/cool split.",
+   "fix": "Paint the rover with real local colors: white body, dark charcoal tires, orange cargo boxes, a gold-foil dish base. Make the ground a warm grey-beige dust under a deep blue-violet sky, so the hero doesn't share the backdrop hue."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: red-and-white rocket with an orange flame on a cyan sky. It has a clean warm-hero-on-cool-backdrop palette, but the white body shadows go bright sky-cyan, and the red is pure hue with little variation. B: orange, red, teal and purple balloons on a blue sky. The lens merges them into magenta and teal masses, a believable multi-hue cluster.",
+   "fix": "Shade the rocket's white body with soft grey-violet instead of sky blue. Darken the red nose and fins toward a deep crimson in shadow."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: cream marble column, orange plinth and gold sign in a maroon room. Almost the whole card is warm (warm share 0.962, above the real range), and the stone is cream rather than neutral, the same warm-bias pattern as the generated computers in the lessons. B: pink roses and green leaves on a pink striped backdrop, with green leaves giving a cool counter-mass.",
+   "fix": "Make the column a neutral cool white-grey marble with blue-grey shadows. Turn the wall a muted violet-blue so the warm plinth and gold sign are the only warm masses."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: steel vault door in a white-grey wall with small cyan light strips. Hero and backdrop are both near neutral (subject chroma 0.055 and bg chroma 0.057, both below the real range), and the only color is the orange wheel. B: red-brick posts, a copper gate, a green park and a blue sky, with rich local colors and red-brown shadows.",
+   "fix": "Set the vault in a strongly colored backdrop, such as a deep blue or teal sci-fi wall. Give the door warm brass rivets and hinges around the orange wheel, and shade the steel with blue-violet, not flat grey."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: grey control console on a grey steel counter against a blue wall. The hero has almost no chroma (0.033, below the real range) and warm share is 0.022. Only the red button and green radar screen carry color. B: pink-and-blue claw machine with multicolor balls on a teal room, a full local-color palette.",
+   "fix": "Paint the console body a clear color, such as warm orange or cream-yellow plastic with chrome dials. Keep the red button, and put it against the blue wall so there is a warm hero on a cool backdrop."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: grey stone chess table on green grass with trees, a neutral local-colored hero on a green ground, like the real soccer-ball card. B: target and teddy in an orange wooden booth on red, strongly warm (0.716) with a green top strip. Both show plausible local colors, so color gives no clear tell.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: white satellite dish on a grey concrete roof under a pale blue sky. The hero is almost colorless (subject chroma 0.022, warm share 0.002), its shadows are flat grey, and the only color is a tiny red tip. A: cyan fan blades and chrome grill against a burnt-orange wall and a green curtain, a cool hero on a warm backdrop.",
+   "fix": "Give the dish local color: a white dish with an orange-red base column and brass bolts. Make the roof warm sandstone, and add a deeper blue sky so the warm and cool masses separate."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: gold-foil satellite on a lime-green sunburst. The yellow-gold hero sits next to a yellow-green backdrop, so they share a hue neighborhood, and the lens shows the gold body merging into the green (1.54 hue families, below the real range). A: red box and gold medal on a cyan sunburst, a warm hero on a cool backdrop as on the real cards.",
+   "fix": "Put the gold satellite on a deep blue or violet sunburst so the warm gold body stands against a cool backdrop. Keep the solar panels navy, and shade the foil with warm amber, not green."
+  }
+ ],
+ "pattern": "Generated cards break the hue roles. Either the hero loses its local color and becomes grey, white or steel (UFO, rover, vault, console, dish), or it shares the backdrop's hue (white-to-violet helmet and rover, gold on lime-green satellite). Real cards keep a saturated, local-colored hero against an opposite-temperature backdrop. When generated cards do use color, it is a single neon pure hue (lime liquid) or an all-warm cream bias, and shadows go to the backdrop color instead of a related darker version of the local color."
+}

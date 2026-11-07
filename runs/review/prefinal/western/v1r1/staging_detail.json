@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: gold pan floats over a green sunburst. The nuggets sit in water inside the pan, which is a container holding its contents, so they are allowed. There is a small dark smudge under the pan's lower rim. B: oil lamp floats over the same kind of sunburst, with a bright center behind the flame. Both backdrops are quiet radial rays with no invented props.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: harmonica on a pink wavy tone-on-tone pattern, evenly lit with no halo. B: fan on a yellow wavy pattern with a bright yellow-white glow centered behind the fan. This is the same glow-behind-hero that the generated glove lessons show. B's background detail is also higher (0.0113 vs 0.0061).",
+   "fix": "Even, flat wavy pattern across the whole card with no bright glow or spotlight behind the fan."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: cowboy hat on a blue sunburst with wide, soft rays. B: jacket on a green sunburst with many thin, tightly packed rays that are busier behind the hero. B also adds a sash with paw, leaf and compass badges, which is decoration the jacket itself would not need.",
+   "fix": "Fewer, wider, softer sunburst rays. A plain jacket with no sash or badges."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: gas pump on a square concrete pad with a distant desert vista behind it: mesas, sand, dry tufts, sunset sky. That is a wide landscape rather than a few metres of the place where the pump is used, and the pad edges read as a display plinth. B: buoy sits in rippling water with clouds, a calm category 1 scene with no extra props.",
+   "fix": "Close view of the pump on a plain cracked-asphalt station ground, with a simple wall or sky behind it. No distant mesas and no square plinth."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: popcorn cart on light paving tiles in front of a quiet blue diamond backdrop. The popcorn bucket is what the cart holds, so it is allowed. B: saddle laid on a hay bale that fills the lower card. The bale is drawn with dense straw strokes and twine (edge density 0.076, above the real range), so the background is busier than the hero.",
+   "fix": "Saddle resting on a simple wooden rail or plain floor in the backdrop color. If hay is kept, draw it as a few large soft shapes instead of individual straws."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: rocking chair on wood planks in front of blue vertical stripes, a clean category 3 setup. B: barrel on a dirt floor scattered with small pebbles and specks, with a heavy dark cast shadow to the right. A house emblem is carved on the barrel, which is invented decoration.",
+   "fix": "Barrel on a smooth plain floor with no scattered pebbles, a soft short shadow, and plain staves with no emblem."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: boots on a purple gradient where the floor melts into the wall in the same color (category 2). B: sneakers on a pale yellow floor that meets an orange wall at a hard horizontal seam. The floor is a different color from the backdrop, which category 2 does not allow.",
+   "fix": "Floor in the same orange as the backdrop, blending softly into the wall with no hard horizon line."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: cactus on a sand mound with a few pebbles over a yellow sunburst. B: duck spring rider on the same kind of sand mound with pebbles over a green sunburst. Both use the same staging template with the same light ground load. B has a slightly odd reddish shadow patch on the sand.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: fountain on circular brick paving in front of yellow stripes. The many brick joints are busy, but they follow the real paved-floor style. B: covered wagon on a dirt floor with small specks in front of green stripes, cut by the right edge. Both follow the real category 3 stripe-plus-floor pattern.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 5,
+   "difference": "B is the real lighthouse: close, cropped by the bottom edge, only sea and clouds around it. A: windmill shown whole on an invented stone plinth on a grassy dirt hill with pebbles and grass tufts. This is the same added-island/base move as the generated lighthouses in the lessons.",
+   "fix": "Close, low view of the windmill tower cut off by the bottom edge of the card, with only sky and clouds around it. No stone base, pebbles or grass tufts."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: campfire packed with a log cabin with a lit window, pine trees, crescent moon, stars, ferns, ring stones, a separate rock and a kettle. Many small objects compete with the fire. B: binocular viewer cropped by the card edge on a balcony rail, with a hazy city behind. The background is a few large, quiet shapes.",
+   "fix": "Close view of the campfire on plain dirt with a ring of stones and a dark, soft forest backdrop. No cabin, moon, stars or kettle."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: neck pillow over soft pink concentric rings. B: water bottle over a yellow-orange sunburst with sharper rays. Both are category 1 floating objects with no props. Both have background detail slightly above the real range, which does not separate them.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards add setting the subject never names: stone plinths and rock islands under towers, distant vistas such as mesas, and night scenes with cabins, moons and stars. They spread dense ground clutter (pebbles, straw strokes, grass tufts) and put a glow or spotlight behind the hero. They show the whole object instead of cropping it close, and they set floors in a different color from the backdrop with a hard seam."
+}

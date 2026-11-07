@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the brass lamp sits on yellow-green rays that pick up its own yellow, so the hero and backdrop share one warm-yellow family and the glass chimney fades into the yellow glow. B: a red flashlight on a cyan burst is a clear warm-on-cool split, which is how the real cards work.",
+   "fix": "Put the brass oil lamp on a cool teal or blue ray background with no yellow in the rays, so the lamp is the only warm mass."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the whole scene is washed in sunset orange. The sky, hills and road highlights are all warm, the blue car turns lavender-grey, and the shadows go dull and grey-purple. The lens shows too many hue families, with orange, yellow, red, blue, purple and brown all competing. A: a black-and-white car on a blue-sky street with pastel houses, with steadier local colors.",
+   "fix": "Draw the red bicycle against a clear daytime blue sky and a plain grey road, keep the car body a clean light blue, and drop the orange sunset glow."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a blue vending machine on a magenta-violet backdrop. The hero and the background are both cool, so the card has almost no warm mass, and the only warm color is in the tiny cans. B: the yellow tape on green is close in hue, but it keeps a warm hero, and the brown cardboard core gives a neutral rest.",
+   "fix": "Keep the blue vending machine, but put it on a warm yellow or orange backdrop so the machine is the only cool mass."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a brown leather wallet with a gold badge on dark brown wood. In the lens, nearly the whole card is one brown-orange family. The background is dull and dark, and the hero has no contrasting hue apart from a thin green stripe on the card. B: a teal book on orange wood, a clear complementary split with small pink, blue and red accents.",
+   "fix": "Lay the brown wallet on a muted blue-grey or teal surface instead of dark brown wood, and keep the gold badge as the one bright accent."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the boxing gloves are pure, fully saturated red, and the shading only darkens red to a deeper red. The gloves sit on a strongly blue wall over orange wood, so the hero is as loud as the backdrop. A: the dog keeps natural tan and black coat colors with a red collar accent, set against blue sky and green grass.",
+   "fix": "Paint the boxing gloves a slightly deeper, less neon red with soft cool highlights, and tone the blue wall down so the gloves are the loudest thing on the card."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "A: a gold magnifier on a cream map on red-brown wood. The whole card is warm cream, brown and gold, with only a small green park patch, and the map paper leans toward beige, as the generated cream objects in the lessons do. B: green binoculars with blue lenses on yellow wood, giving at least a cool hero on a warm floor.",
+   "fix": "Make the map paper a cool off-white with pale blue-grey streets, and put it on a cooler, darker blue-grey table so the gold magnifier stands out as the warm accent."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: an orange wooden ship with cream sails on purple-pink rays over a blue sea. Five or more hue families compete, and the pink haze behind the sails tints them warm. B: a brass and brown spyglass on a plain cyan backdrop, a simple warm-on-cool split like the real cards.",
+   "fix": "Set the ship on a single blue sky-and-sea backdrop with no pink or purple rays, and keep the sails a clean white."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a black-and-silver camera on a cyan ring background. The hero is almost colorless and cool, and the only warm color is a tiny red button, so nothing warm stands against the cool backdrop. B: an orange device on violet rings, the real warm-hero-on-cool-backdrop pattern.",
+   "fix": "Give the camera a warm body color, such as tan leather or orange trim, against the blue rings, or put the black-and-silver camera on a warm yellow backdrop."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the sneakers are a mix of pure hues, with royal blue, lime green, teal laces, hot pink and orange accents on the soles, all at full strength. The orange and cream backdrop adds more, so the lens shows about five families with no rest areas. A: a tan fedora with a brown band on a purple field, a simple two-family split.",
+   "fix": "Draw the sneakers in one main color, such as blue with white soles and a single accent color on the laces, and remove the extra green, pink and teal details."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "B: a gold knob on a green door with a yellow wall behind it. The yellow wall repeats the knob's own hue, which weakens the hero. A: a blue door with an orange frame and a multicolor wreath, which is busy, but its hue roles are clearer. The difference is weak.",
+   "fix": "Paint the wall behind the door a cool grey-blue instead of yellow, so the brass knob is the only warm yellow on the card."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the yellow-orange bottle sits on a fully saturated green wave background. The backdrop is as loud as the hero, and the bottle's yellow edges fade into the yellow-green next to it. The blue glasses add a third loud family. A: a red planter on a wood fence with a blue can, with a more natural mix of colors.",
+   "fix": "Use a calmer, cooler backdrop behind the sunscreen bottle, such as soft sky blue or teal, toned down so the orange bottle is the loudest color."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "B: a blue racket on a green court. The hero and the backdrop are both cool, and the only warm note is a small yellow ball. A: a gold ring in a clear bag on dark wood, warm and low-chroma, but with a blue zip strip as a cool accent.",
+   "fix": "Give the racket a warm frame color, such as orange or red, against the green court, or put the blue racket on a warm clay-orange court."
+  }
+ ],
+ "pattern": "Generated cards break the hue roles of the real cards. Either the backdrop repeats or sits right next to the hero's hue (a yellow lamp on yellow-green, a yellow bottle on lime, a gold knob against a yellow wall), or the hero and backdrop share one temperature (a cool blue hero on cool violet, cyan or green; a brown wallet on brown wood). They also push objects to pure hue, such as neon red gloves and sneakers in many neon colors, and cast warm sunset or cream washes over whites and blues."
+}

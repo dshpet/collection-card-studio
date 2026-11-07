@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the sneaker soles are swollen into thick rounded slabs. The toe boxes are puffed up and the laces are fat tubes, so the shoes look like inflated toys. B: the round gift box keeps a straight vertical wall and a flat lid rim with a tight edge. Only the bow loops are soft.",
+   "fix": "Running shoes with a thin, flat midsole, a slim low toe and thin flat laces. Keep the sole edge straight and the upper close-fitting, not puffed up."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "B matches the sunscreen bottle and sunglasses on the real reference sheet: a straight cap, a slim bottle, and thin temple arms on the glasses. A: the soccer ball's panels each bulge like small pillows, so the round outline looks lumpy instead of a clean sphere.",
+   "fix": "A soccer ball as a clean round sphere. Draw the hexagon and pentagon panels flat on the surface, with thin seams and no puffy bulges."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the parasol's ribs are fat round tubes and the canopy panels bulge between them. The finial and rib tips are big beads, and the lace edge breaks the outline into many lumps (corner rate 6.2, above the real range). B: the fan has flat pleat faces, straight sticks and a straight outer edge.",
+   "fix": "A parasol with thin straight ribs lying flat on the canopy and small rib tips. Keep the canopy panels taut and gently curved, not puffed, and the lace trim narrow."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the fountain's tiered bowls and pedestals have plausible proportions. Only the water streams are thick. B: the cake stand has thin plates, a slim central rod and a correct foot. On shape alone, neither card clearly breaks proportions.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the top hat's brim is lopsided. It is flat and drooping at the front left but curls up into a large swoop on the right, and the crown flares out at the top. The outline is all soft curves (corner rate 0.75). A: the mortarboard is a flat square board with straight edges and tight corners, and the tassel cord is thin.",
+   "fix": "A top hat with a straight cylindrical crown, a flat top with a crisp edge, and an even brim curled up equally on both sides."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the vending machine's cabinet corners are large soft roundings. The window frame and dispenser slot are rounded like a toy, and the outline is an almost solid blob (solidity 0.98, at the top of the real range). B: the teacup has a thin handle, a thin saucer rim and a correct foot.",
+   "fix": "A vending machine as a tall box with flat sides and tight bevelled corners. Use a thin rectangular window frame and a slim, sharp-edged dispenser slot."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "A: the bracelet's pearls are identical perfect spheres in an even ring, with no graded sizes or thread. B: the folded map has flat panels with straight folds, and the magnifier has a thin rim and a slim handle. B's outline is noisy from masking. The evidence is weak.",
+   "fix": "A pearl bracelet with slightly varied pearl sizes on a visible thin thread and a small delicate clasp."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the fan is built wrong. One long gold rod runs across the whole base and sticks out on both sides, and the radial sticks show only inside a small half-circle. The fabric edge is wavy and puffed (thin share 0.065, above the real range). B: the scarf is soft but its knot and ends read correctly.",
+   "fix": "A folding fan whose sticks run from the pivot to the outer edge under the fabric, with two outer guard sticks ending at the pivot. Draw flat pleats and a crisp, even outer edge."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the suitcase has a flat front, small corner caps and a thin handle. B: the chest has plank bands, metal corner brackets and a domed lid with straight edges. Both outlines have mostly straight runs and believable proportions.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the upright piano's parts do not fit together. The keyboard shelf sticks out on chunky arm blocks, the lower case is narrower than the top, and there are too few keys for the width. B: the guitar has a slim neck, a correct headstock and a body of normal size. Only the strap loop is thick.",
+   "fix": "An upright piano with a straight, full-width case and a long keyboard of many thin keys between thin side cheeks. Keep the lid and lower panel flush."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the ring box is two swollen pillow shapes with blob corners, and its lid and base outline is soft all round (corner rate 0.77). A large coin sits where a ring belongs. B: the gate's ironwork is thin scrollwork with straight vertical bars.",
+   "fix": "A small ring box with flat sides and tight rounded corners, and a thin lid hinged straight at the back. Put a ring in the slot, not a coin."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the violin body is squat and wide for its length and the neck is short, so it reads as a toy. The lower bout bulges and the waist cut-outs are shallow. A: the bugle has a thin coiled tube, a correctly flared bell and a slim mouthpiece.",
+   "fix": "A violin with a long, narrow body that has deep C-shaped waist cut-outs and a long thin neck with a pegbox at the end. The body should be about 1.6 times as long as it is wide."
+  }
+ ],
+ "pattern": "Generated cards tend to inflate objects. Flat faces bulge, corners turn into big soft blobs, and thin parts such as ribs, laces and tubes become fat sausages, so whole objects read as squat toys. Parts also relate wrongly, as in the fan rod, the piano keyboard blocks and the coin in the ring box."
+}

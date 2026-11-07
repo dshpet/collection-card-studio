@@ -9,5 +9,6 @@ Draft plans, oldest first; the producer did not confirm every one. The card list
 | `*-shared-cast.json` | 2026-11-06 | The producer's first accepted lessons and one character card per variant; variant 1 drawn as `runs/<genre>-batch` |
 | `*-shared-cast-2.json` | 2026-11-06 | Backdrop color logic and the second reference pass; variant 1 drawn as `runs/<genre>-batch2` |
 | `*-shared-3.json` | 2026-11-06 | No character cards, as the brief asks; no landforms or sky bodies, night skies for dark topics, the game's emblem on one object |
+| `cast-bonus.json` | 2026-11-07 | Bonus character cards: the planner's two per genre (`--cast 2`), the object cards dropped; drawn as `runs/prefinal/cast` |
 
 The final runs plan afresh with the current planner and lessons, so these are a record of how the plans changed.

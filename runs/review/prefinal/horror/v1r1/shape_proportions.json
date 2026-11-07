@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the cap's mortarboard is a flat plate with straight edges and tight corners, and the tassel cord stays thin. B: the witch-hat brim is a thick, swollen oval disc with no thin edge, and the cone is a soft, floppy tube that ends in a fat hook. The whole contour is pillowy, with almost no straight run below the band.",
+   "fix": "Draw the brim as a thin, flat disc with a crisp outer edge. Make the cone a narrow, firm cone with a slight bend, and keep the buckle band a flat strip."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the plane runs off the right edge of the card. The wings and tail are flat, straight-edged slabs, and the fuselage keeps its real length. B: the bat sits whole in the middle of the card. The wings have even, rounded scallops, the head and ears are enlarged and toy-like, and the little feet are rounded stubs.",
+   "fix": "Draw the bat at real proportions: a small head, short ears, and long, thin wing fingers with taut membranes between them. Let one wingtip run off the card edge."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the gloves are two compact, solid masses, and the cuffs are cut off by the card edges. B: the tree is a twisted trunk with many thin, curling branch tips. Its solidity (0.389) and thin-part share (0.044) are both outside the real range. The branches end in even, decorative curls, and the root base spreads in a flat skirt.",
+   "fix": "Give the tree a thicker trunk and fewer, heavier branches that taper to blunt ends. Draw no curled tips, and let the crown fill more of the card."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the topiary is stacked, lumpy spheres with a fuzzy, notched edge all round, and almost no straight runs (straight_share 0.185, below the real range). The rim of the pot is a thin, soft ring. B: the slide keeps thin ladder rails, straight posts and a flat platform with crisp corners, which reads like the real cards.",
+   "fix": "Draw the topiary as a firm spiral cone with a clean, trimmed outline. Set it in a square planter with flat sides and sharp corners."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the mirror frame carries many chunky, even scroll curls at the top, sides and legs (corner_rate 7.87, above the real range). The legs are thick, rounded hooks, and the base is a fat oval slab. B: the vending machine is a straight-sided box with flat faces and tight top corners, and the feet stay small.",
+   "fix": "Draw a slim oval frame with only two or three small, thin scrolls. Give it thin, straight legs and a low, flat base."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the sign boards are flat panels with straight edges, the posts stay thin and parallel, and the sign is cropped by the card edge. B: the house is squashed into a toy. The tower is as tall as the whole house, the chimney is oversized, and the block is short and boxy with rounded bottom corners. The whole building sits shrunk in the middle of the card.",
+   "fix": "Draw the house at real proportions: a wider main building, a slimmer tower and a small chimney. Let the house fill the card and run off one edge."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the gate is cropped, with the pillars cut off at the card edges, and the bars and scrolls stay thin. B: the whole gate is framed symmetrically between two heavy stone pillars with large ball caps. The bars have many even spear tips and coin-like rings along the bottom rail. The pillars are fat, and the gate is small next to them.",
+   "fix": "Draw the gate wider than the pillars and make the pillars slimmer. Use fewer spear tips, and crop one pillar at the card edge."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the sneakers show distinct soles, toes and collars with notched outlines. B: the pumpkin is an inflated, almost perfect round ball with no visible ribs in its outline. The stem is a thick, tubular curl like a toy, and the base sits flat like a cushion.",
+   "fix": "Draw the pumpkin with deep ribs that dent its outline and a slightly squat, uneven body. Give it a short, woody, square-cut stem."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the fountain is stacked flat basins with straight rims and a solid mass. B: the candelabra has thin, curved arms and a narrow stem (thin share 0.015 and corner rate 7.75, both above the real range). The three candles are arranged unevenly, so one arm looks crowded, and the flames are tall teardrop spikes.",
+   "fix": "Draw a sturdier candelabra: thicker arms set evenly, a heavier base and a stockier stem. Draw short candles with small flames."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the palm has broad, flat fronds, and the trunk is cut by the bottom edge of the card. B: the crystal ball is oversized compared with its stand, and its solidity is low (0.526). The stand is a thin ring on spindly legs that end in curls and beads, so the gold parts read as wire against the huge sphere.",
+   "fix": "Draw a smaller ball on a solid, cup-shaped gold stand with short, thick feet, and make the stand about half the ball's height."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the broom handle is a thick, even, rounded rod with a ball end. The bristle head is a fat, fanned tuft with a jagged edge of many even notches (corner_rate 7.07, above the real range). B: the balloons are simple ovals with thin strings and small knots, which fits the real cards.",
+   "fix": "Draw a slimmer, slightly crooked broom handle, and bind the bristles into a long, narrow bundle with straight, separate twigs at the tip."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the clock is a clean disc that matches the clock in the real anchor set. B: the lion statue sits on a stepped plinth with flat faces and fairly crisp edges, but the mane is a swollen, lumpy mass. The head and mane are large compared with the body, and grass tufts break up the base outline.",
+   "fix": "Draw the lion with a smaller mane and a longer body, and keep the plinth edges clean and sharp."
+  }
+ ],
+ "pattern": "The generated cards are the spooky subjects, and on shape they give themselves away three ways. First, toy proportions: heads, manes, brims, balls and pillars are enlarged against their bodies. Second, the whole object is framed in the middle of the card, where real cards crop it at the card edges. Third, outlines carry many evenly repeated curls, scallops, spear tips or notches, while thin parts are either spindly wire or fattened tubes. Real cards keep flat, straight-edged panels and let the object fill and bleed off the card."
+}

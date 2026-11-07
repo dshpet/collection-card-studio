@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the motel sign boards have lit top-left bevels and darker lower edges, and the porch has a warm lit side against a cool shadow side, so the forms turn. B: in the lens, the round sign face is almost one flat value. The glow fills the disc evenly, with no shadow side on the housing. Only the rim catches a thin edge light. Its shading_range of 0.322 is far below the real minimum of 0.602.",
+   "fix": "Light the round sign from one side: the left half of the metal housing bright, the right half falling into a dark shadow side, and a dark cast shadow of the sign on the brick wall below and to the right."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the hat has a clear key light from the upper left. The crown's dent and the right side of the crown drop into deep shadow, and a dark band of shadow sits under the hatband on the brim. B: the jacket is lit almost head-on and stays warm and evenly bright across the chest, the pockets and both sleeves. Only the right cuff opening goes dark, and the folds barely turn.",
+   "fix": "Light the jacket from the upper left so the right sleeve and the right side of the torso fall into a clearly darker, cooler shadow, with dark creases under the collar and under the sash."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "B, the caravan, matches a real card: its back right end turns into a strong blue-grey shadow side and it has a dark contact shadow under the chassis. A: the lion and the plinth are evenly bright white all over. The mane, the chest and the plinth faces barely separate, and there is no real shadow side or cast shadow on the grass. Its form_contrast of 0.331 is below the real range.",
+   "fix": "Light the lion statue from the upper left. Put the right side of the mane, the body and the right face of the plinth in a clearly darker, cool grey shadow, and add a dark cast shadow on the grass to the right of the plinth."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the radio has a strong key from the left. The right side panel goes dark, and there is a deep cast shadow on the table to the right and a dark contact line under the base. B: the rocking chair is lit softly from the front. The seat, the slats and the arms are all pale, the inner sides of the legs are only slightly darker, and the floor shadow is faint.",
+   "fix": "Light the rocking chair from one side so the back sides of the posts and slats go clearly dark, and put a darker, sharper cast shadow of the rockers on the floor."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the popcorn cart has gentle top-left light. The awning scallops are shaded underneath and there are soft contact shadows under the wheels, all within the real range. B: the camera is lit like a spotlight. Its black body plunges to near black, there is a hard dark cast shadow on the table, and the flash reflector has a hot white center spot. Its form_contrast of 0.792 is above the real range.",
+   "fix": "Use softer, broader light on the camera: let the bellows and the body keep a readable mid-dark shadow side instead of black, keep the cast shadow on the table soft, and avoid a white hot spot in the flash dish."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the big front face of the briefcase is one dim, flat value. Only the top edge catches light, and the right end is a uniformly dark slab, so the box barely turns. Its form_contrast of 0.39 is below the real range. B: the vending machine has a bright front, a darker left side and a soft contact shadow, which reads as normal real modeling.",
+   "fix": "Light the briefcase from the upper left so the front face gradates from bright at the top left to darker at the bottom right, give the rounded corners a soft highlight, and put a soft contact shadow under the feet."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the bus is backlit, with a shadowed front face, a bright rim along the roof, and a long cast shadow toward the viewer, which is coherent. B: the taxi body is lit evenly in pink. Its sides, hood and roof are almost the same value, and the separation comes mostly from the dark windows and the dark sky. Its form_contrast of 0.637 is above the real range.",
+   "fix": "Light the taxi from one side so the side of the car facing away from the light is clearly darker than the hood and roof, and put a soft dark cast shadow on the road on the shadow side."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the gold face of the shield is a flat field with a blurry glow bloom at the upper left, and the face doesn't curve into shadow toward the lower right. Only the silver rim carries shading. B: the ring box has a clear top-left key. The inside of the lid and the front face are shaded, and the medal has a lit top edge.",
+   "fix": "Make the shield face curve like a dome: bright at the upper left, turning smoothly darker toward the lower right edge. Remove the glow bloom and have the house emblem cast a small shadow down and to the right."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the blue door has strong dappled cast shadows from the vines across the panels and a dark shadow under the frame, which gives clear form. B: the wall and the door are lit from the front. The bricks are evenly bright, the window glows as a soft warm practical, and the frame's shadow side is weak. Its form_contrast of 0.661 is above the real range.",
+   "fix": "Rake the light across the brick wall from one side so the brick edges and the door frame throw short dark shadows, and make the inset door darker than the wall face."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the scene is lit like a spotlight. The wood falls off to dark corners, and the ink pad has a hard black interior and a deep cast shadow. The fingerprint pad itself is flat and evenly lit. Its shading_range of 0.592 is below the real range and its form_contrast of 0.707 is above it. B: the map has soft, bright, even light and a soft cast shadow under the magnifier.",
+   "fix": "Light the whole tabletop evenly and warmly instead of with a spotlight. Give the pad a lit bevel at the top left and a soft cast shadow on the table, and keep the ink-pad tin mid-dark rather than black."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the magnifier's chrome ring is lit almost evenly all around, with a single sharp white tick highlight on the glass, little shadow side and a weak cast shadow. Its light_bias_strength of 0.193 is at the low edge of the real range. B: the backboard has a clear key from the upper left, a darker right edge and a shaded rim.",
+   "fix": "Light the magnifier from the upper left: the top-left arc of the ring bright, the lower-right arc darker, the handle shaded on one side, and a soft drop shadow on the background below and to the right."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the popsicle is lit mostly from the front, so the grooves read faintly. It is covered in many small sharp white droplet hot spots and has a glowing halo edge instead of a shadow side. Its form_contrast of 0.364 is low. B: the fruit plate has a top-left key, shaded undersides on the fruit, and a soft cast shadow on the wood to the right.",
+   "fix": "Light the popsicle from the upper left so the grooves have a dark side and a lit side and the right edge turns darker. Use fewer, smaller wet highlights and add a soft shadow behind it."
+  }
+ ],
+ "pattern": "Generated cards fall back to frontal, even light: big flat faces (shield, briefcase, lion plinth, jacket chest) hardly turn from a lit side into a shadow side. When contrast is present, it comes from spotlight-like vignettes or dark materials rather than from the form turning. Generated cards also have glow blooms or many tiny sharp hot spots in place of one clear key from the upper left with a cool shadow side and a grounded cast shadow."
+}

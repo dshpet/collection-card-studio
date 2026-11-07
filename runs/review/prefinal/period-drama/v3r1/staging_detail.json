@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the sneakers stand on a pale cream floor that meets a darker orange wall at a hard horizontal line about a third of the way down. The floor does not match the backdrop colour. B: the gift box stands on a seamless green gradient with no horizon, and the floor is the backdrop's colour, which is how the real category-2 cards are staged.",
+   "fix": "Place the sneakers on a plain floor in the same orange as the backdrop, with a soft, barely visible horizon and no change to a pale cream floor."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "B is the real sunscreen card from the reference sheet: a quiet tone-on-tone green wave wall and a plain green floor. A: the ball sits on a pitch with white field lines in the top band and many small grass tufts scattered across the foreground and right edge. That is a lot of small detail for a category-4 setting.",
+   "fix": "Show the ball on a smooth green lawn: large soft areas of grass with no individual blade tufts in the foreground, and at most one faint white line in the distance."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the parasol floats over a quiet yellow harlequin diamond pattern. B: the fan floats over tone-on-tone yellow waves with a soft glow behind it. Both are category 1 with quiet backdrops and no added props.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: an outdoor fountain stands on a ring of cobblestone paving with many tile seams, set against an indoor yellow striped wallpaper wall. The setting mixes two places, and the paving edges fill the lower third of the card. B: the cake stand rests on a white tablecloth in front of a quiet purple striped wall. That is a coherent category-3 setup, and the cupcakes are what the stand holds.",
+   "fix": "Place the fountain in a few metres of a garden plaza: a plain stone pavement made of a few large slabs and a soft sky or hedge behind it. No striped wallpaper."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both caps float on the same quiet blue concentric-ring field, with no floor and no props. Their staging is identical.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the vending machine stands on a seamless purple floor and wall. B: the teacup sits on a seamless pink floor and wall, with steam rising from the tea. Both are clean category 2 with nothing invented, since the steam belongs to the tea and the cans belong to the machine.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a pearl bracelet lies on deep blue velvet that fills the card, which is a category-3 flat-lay with large, soft folds. B: a magnifying glass lies on a printed map on wood planks, and the map adds islands, wave marks, a compass rose and a border across most of the card. Edge density is 0.077, well above the real range.",
+   "fix": "Lay the magnifying glass on a plain wooden table seen from above, using a few wide planks with soft grain. Leave out the detailed map, or draw it with only two or three large, flat colour areas."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the fan floats over low-contrast tone-on-tone blue waves. B: the neckerchief floats over a high-contrast blue spiral with a bright glow at its centre, which competes with the hero. It also wears an emblem badge with a campfire, a decoration the subject does not name.",
+   "fix": "Use a soft tone-on-tone blue wave backdrop with no bright centre glow. Tie the neckerchief with a plain ring, with no emblem."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the suitcase stands on green planks in front of a pale yellow sunburst wall. Its background is fairly quiet. B: the chest stands on a wooden deck dotted with many nail heads and plank seams, under a blue sky with strong rays. The floor carries much more small detail than the anchor's barrel deck, and edge density is 0.067, above the real range.",
+   "fix": "Stand the chest on a deck of a few wide plain planks with no nail heads, in front of a soft blue sky gradient without rays."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: an upright piano stands against a quiet striped wallpaper wall on a plain wood floor, a calm category-4 room. B: the guitar stands on a stage framed by metal truss towers and a top truss, with two spotlight fixtures and crossing coloured beams. That is many objects and lattice lines around a small hero, plus a patterned strap.",
+   "fix": "Show the guitar on a plain wooden stage floor in front of a dark curtain lit by one soft spotlight. No truss towers, no lamp fixtures, no crossing beams."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: an open ring box holding a medal floats on a plain blue sunburst. The medal is what the box holds. B: the gate is surrounded by brick pillars with ball finials, side walls, trees, a lawn, a distant garden seen through the bars, and a paved path with many slab seams. It is a full landscape, not a few metres of the place, and edge density is 0.122, far above the real range.",
+   "fix": "Show the gate close and central between two brick pillars. Behind it, use a plain soft green hedge and sky, with no visible garden. Put one plain stone threshold at the bottom, with no tree clusters or tiled path."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the bugle with its red cord floats on a cyan sunburst. B: the violin floats on a green sunburst. Both are plain category-1 ray fields with similar contrast, and neither adds props.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards give themselves away by overbuilding the setting. In category 4 they pull back to a whole landscape full of small detail: a gate with trees and a tiled path, a stage with truss towers and spotlight fixtures, a lighthouse on a rock island with a life ring. They also scatter fine texture across the floor (nail heads, grass tufts, map icons) and put a bright glow behind the hero on graphic backdrops. Some mix settings, such as indoor wallpaper behind an outdoor plaza. Real cards crop close, use a few large, quiet shapes, and add only the one partner object the subject names."
+}

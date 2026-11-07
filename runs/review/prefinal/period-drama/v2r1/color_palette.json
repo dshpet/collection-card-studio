@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a flat violet fan on a yellow wave backdrop. The hero sits opposite the backdrop on the color wheel, though the violet is very pure (subject chroma 0.226). B: black and gold opera glasses on a magenta diamond backdrop. Hero and backdrop are both warm (warm share 0.994), the card holds only about 1.5 hue families, and the gold rims go flat brown in the lens shadows (shadow chroma 0.41). Real cards rarely put a warm hero on a warm backdrop.",
+   "fix": "Put the gold opera glasses on a cool teal or blue patterned backdrop. Keep the gold rims a rich yellow-orange in the shaded parts."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: an orange wicker basket with a dark green strap on green grass under a blue sky. The local colors look believable. B: pure red boxing gloves with little variation in the red, on a saturated blue wall and an orange wooden floor. The subject chroma (0.182) is above the real range.",
+   "fix": "Make the gloves a slightly deeper, duller red leather with darker maroon shadows. Make the wooden floor less orange."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a red parasol with white lace trim and a brown handle on cyan rings. It has three calm hue roles. B: a beach umbrella in fully saturated yellow, red and orange panels. Every panel is pushed to pure hue, and the lens turns the yellow panel teal-gray, which shows uneven hue handling.",
+   "fix": "Draw the umbrella panels in two colors, red and cream white, with soft shading. Avoid neon yellow."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a wooden swing with cream cushions and lilac and yellow accents on green grass. The hue roles are varied. B: a cream bench with an orange seat on a warm beige gravel path. The hero is close to neutral (subject chroma 0.049), and the shadows under the bench are oversaturated olive-brown (shadow chroma 1.82, above the real range).",
+   "fix": "Paint the bench pure white with cool blue-gray shadows. Make the shadow on the path a soft gray-brown, not a saturated olive."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: roller coaster cars in pure yellow and red on a pure blue track and sky. This is a primary-color set with subject chroma 0.173, above the real range. B: a red keyboard with gray neutrals on a blue starry backdrop. It has more resting neutral area.",
+   "fix": "Tone the coaster cars down to a warm golden yellow with soft orange shadows. Add a few gray metal parts so the eye has a rest."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a tan scout jacket with a green sash on a green burst backdrop. The sash repeats the backdrop hue, which real cards almost never do. B: a gray-lilac top hat with a purple band on a yellow burst. A neutral, cool hero against a warm backdrop matches the real camera card.",
+   "fix": "Put the scout jacket on a blue or teal burst backdrop, or make the sash a deep red so it doesn't repeat the green."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a cream teacup with a pink flower and gold rim on a white cloth, against green stripes. The warm hero sits on a cool backdrop. B: a beige stone fountain on yellow stripes and an orange brick floor. The whole card is pulled warm (warm share 0.859, above the real range), and only the water is cool.",
+   "fix": "Make the fountain stone a light cool gray, and put it on a blue or teal striped backdrop."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a muted maroon door in a cream stone wall, with plenty of low-chroma area for the eye to rest. B: a pure saturated blue door with an orange frame and a rainbow wreath (yellow, pink, white, orange bow). Everything on the card is at full hue strength, with no neutral rest area.",
+   "fix": "Paint the door a dusty, deeper blue. Make the frame weathered brown wood. Limit the wreath to green leaves and white flowers."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a gray golf club and white ball on green grass under a blue sky. It has almost no warm color (warm share 0.002, below the real range), so the hero has no warm/cool contrast with the scene. B: a brass and leather spyglass on cyan stripes. The warm hero on a cool backdrop is the typical real setup.",
+   "fix": "Give the golf club a warm golden or brown leather grip, and light the scene with a warm sun tint so the hero stands out from the green."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a blue vending machine with colorful cans on a purple backdrop. The hue roles are distinct. B: a white teapot with pink roses on a purple backdrop. The pink roses and the purple backdrop share a hue family, so in the lens the roses merge into purple. The card has only about 1.45 hue families, and its shadows are oversaturated purple (shadow chroma 1.64).",
+   "fix": "Put the rose teapot on a mint green or soft teal backdrop. Keep the shadows on the white porcelain a light cool gray."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a neckerchief in uniform pure red on a cyan swirl. The red is pushed to full hue (subject chroma 0.217, above the real range), and its shadows are just a darker pure red. B: a straw hat with a blue ribbon on green waves. The tan straw is natural and the blue is the accent.",
+   "fix": "Make the neckerchief a slightly deeper cloth red with darker crimson folds and a little brown in the shadows."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a yellow taxi on a blue burst with a gray road. The warm hero sits on a cool backdrop. B: a navy pram on an orange burst over warm beige cobblestones with a cream hood. The whole card is pulled warm (warm share 0.896, above the real range), and the pram itself is low-chroma (0.050).",
+   "fix": "Make the cobblestones a cool gray. Give the pram body a richer royal blue, and make the hood off-white with cool shadows."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away in three ways. First, the whole card is pulled warm: whites turn cream, floors turn orange or beige, and the hero ends up on a warm backdrop. Second, the hero is pushed to one pure hue (flat red, flat yellow, saturated blue) with its shadows only darker in value, not shifted in hue. Third, the hero repeats the backdrop's hue family (a green sash on green, pink roses on purple), where real cards set a warm hero against a cool backdrop and keep neutral areas for the eye to rest."
+}

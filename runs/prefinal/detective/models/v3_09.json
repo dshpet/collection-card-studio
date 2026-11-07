@@ -1,0 +1,50 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "loose": [
+   {
+    "parts": 2,
+    "kinds": [
+     "box"
+    ],
+    "at": [
+     0.16,
+     -0.25,
+     0.27
+    ],
+    "size": [
+     0.03,
+     0.07,
+     0.04
+    ]
+   },
+   {
+    "parts": 2,
+    "kinds": [
+     "box"
+    ],
+    "at": [
+     0.16,
+     0.25,
+     0.27
+    ],
+    "size": [
+     0.03,
+     0.07,
+     0.04
+    ]
+   }
+  ],
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The side mirrors float. Each mirror arm sits at z 0.249-0.261, but the lower body's top is at z 0.24, so the arm and mirror head on each side touch nothing. Fix: move each arm down so it sits on the body's top edge at the base of the windshield (z 0.235-0.255, y 0.20-0.25), and put the mirror head on the arm's outer end.",
+   "Everything else passes: four wheels stand on the asphalt, the cabin and roof rest on the body, the roof lamp sits on its base, the bumpers and lights are joined to the body, the curb and pavement run off the card, and the framing holds the car as the main body."
+  ]
+ }
+]

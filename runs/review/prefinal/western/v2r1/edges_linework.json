@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the mailbox has a soft, even outer edge with few internal lines (lid seam, knob, decal), and the background is sparse. B: the bird feeder has crisp dark contours on the roof boards, rope and tray. The tree canopy behind it has heavy scalloped outline-like edges, and the city and park background is full of edges, so the background competes with the hero.",
+   "fix": "Keep the background trees and buildings soft and simplified, with no dark edges on the leaf clusters. Keep the sharpest edges on the feeder only."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the fruit plate is crowded with tiny edges: water droplets on the plate, watermelon seeds, strawberry seed dots, citrus segment lines and berry crowns. Small marks are spread evenly across the whole hero, with no focus. B: the bean bowl has a clean double rim line and repeated bean shapes. It is busy but regular, and its outer edge is softer.",
+   "fix": "Remove the water droplets and the tiny seed dots. Show the fruit as a few big smooth shapes with clean edges."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the jacket is at the top of the real range for edge density. It has many seams, pocket flaps, buttons, cuff rings and engraved badge icons along the sash, all drawn with similar crisp lines. B: the hat has a few soft folds, a single band edge and one star badge, with the crisp edge only on the brim rim. That matches the sparse real cards.",
+   "fix": "Use fewer seams and pocket flaps. Make the badges simple flat discs with one bold symbol, and let the jacket folds fade softly instead of being drawn as lines."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the station clock has a dark contour around the clock body and the bench. The background (canopy beams, brick wall, rails, pillars) is drawn with lines as strong as the hero's, so there is no edge hierarchy, and both background density and outline darkness are at or above the real maximum. B: the graduation cap has clean, crisp silhouette edges with no outline, and the background is soft concentric rings.",
+   "fix": "Blur and simplify the station background into soft shapes with no dark lines. Do not draw a dark outline around the clock, and keep crisp edges only on the clock face and rim."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the wagon canvas and the dirt ground are covered in fine grainy texture marks. Stitch dots run along the cover edge and the spokes are thin, giving a noisy edge map across both hero and ground. B: the coaster cars have smooth surfaces with crisp edges at the seat rims, and the track ladder is regular. The background hills are soft.",
+   "fix": "Make the canvas cover smooth with no fabric texture and no stitch dots, and make the dirt road a smooth gradient with only a few pebbles."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the wooden floor planks are drawn with long, dark, high-contrast lines and knot texture. The background is busier than any real card (0.062) and competes with the guitar, whose outer edge is softer than the plank lines. B: the racket strings make a dense grid, but the court background is a flat field with only the line edge, so the focus stays on the hero.",
+   "fix": "Make the floor planks low-contrast with faint seams and no knots or grain, so that the guitar's outline is the strongest edge in the image."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the spurs are dense with spiky rowel points and stitched leather straps. The detail is fine but the metal edges are clean. B: the neck pillow has almost no internal structure, apart from a fine ribbed fabric noise texture. A dark line-like contour runs only around the inner hole and the right side, and fades out on the left, so the outline treatment is inconsistent and has a halo feel.",
+   "fix": "Draw the pillow as a smooth soft cushion with a few broad wrinkles and no fine fabric ripple texture, and give it an even, clean silhouette with no dark line around the hole."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the boxing gloves are soft, with lost edges at the glove backs and only a few crease lines. They are below the real range, but the effect is softness, not drawn lines. B: the cowboy boots have dotted stitch lines along the flame inlays, outlined pull tabs, toothed spur rowels and dark contours around the soles. This is the same fine stitching and contour detail the lesson's generated glove showed, and the wood floor grain is also strongly lined.",
+   "fix": "Remove the dotted stitching and draw the boot pattern as smooth color shapes. Use softer edges on the soles, and make the floor smooth with faint plank seams."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a dark contour line runs around the club head, the shaft and the clouds and hills (outline darkness 0.15, above the real range). Grass tufts across the foreground each carry an outline. B: the column has crisp flutes and volutes with a clean silhouette, and the walls are plain planes with few edges.",
+   "fix": "Do not draw a dark outline around the club or the clouds. Separate the forms by light and color, and make the grass a soft gradient with only a few blades near the ball."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the cactus has a soft silhouette, rib grooves and spine dots, with a sparse plain background. B: the sneakers are at the top of the real range for edge density. They have mesh dot texture, many lace crossings, panel seams and sole stripes, all with dark crisp contours, and the shadow shape also carries a dark edge.",
+   "fix": "Make the sneakers simpler: a smooth upper with no mesh texture, two or three chunky laces, and one sole stripe. Keep the edges crisp but not outlined, and give the shadow a soft edge."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the fan has clean pleat edges and simple ribs, and its edge density is low. B: the harmonica has a dark outer contour around the red caps and body, with screw heads and a row of crisply boxed holes. Its edge density is slightly above the real range, and the cover carries strong reflection edges.",
+   "fix": "Draw the harmonica with fewer, larger holes and no screws. Use softer reflection edges on the metal cover, and do not draw a dark line around the red end caps."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the viewer has crisp glossy edges at the focus, and the city background is busy but light, with no outline. B: the pump body and the stone base are covered in grainy speckle texture, which creates scattered micro-edges across the hero. The desert ground is also full of small marks, so the edges come from texture noise rather than form.",
+   "fix": "Make the pump a smooth painted metal surface with no grain or speckle, with a smooth stone base slab, and keep the ground a soft gradient with only a few tufts."
+  }
+ ],
+ "pattern": "Generated cards spread crisp edges across too many small parts: dotted stitching, seed and droplet dots, mesh and fabric grain, screws and engraved icons. Their outer contours are dark and line-like, and some get a one-sided halo. The background (wood grain, scenery, foliage) is drawn with lines as strong as the hero's. Real cards keep internal lines few and chunky, give the hero a clean silhouette with no outline, and keep the background soft and low in edges."
+}

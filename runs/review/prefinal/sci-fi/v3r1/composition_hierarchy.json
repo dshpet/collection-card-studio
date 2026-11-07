@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the umbrella is tilted, its canopy runs nearly the full width and sits high, and the pole points to the lower left, so the card reads as active. B: a flat saucer floats in the middle third. The box is only 0.37 high, so the green rings take up the top and bottom thirds and the object looks small at thumbnail size.",
+   "fix": "Bring the saucer closer and tilt it toward the viewer so the dome and rim fill about 80% of the card's width and most of its height, with little empty background above and below."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a thin rocket stands in the centre on a diagonal and is fully inside the frame, with wide sky on both sides (width 0.47). B: the plane is large and in three-quarter view, and its right wing and tail are cropped by the right edge, which matches how the real cards crop.",
+   "fix": "Draw the rocket bigger and closer, filling the card corner to corner, and let the nose or fins run past the card edge."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the balloon cluster fills the upper two-thirds and the strings run down toward the bottom edge, so the card is tall and full. B: a squat yellow saucer floats in the centre band (height 0.49), with even sky and clouds above and below. It reads as a small object pasted in the middle.",
+   "fix": "Bring the craft closer at a low angle so the dome nearly reaches the top and the hull fills the lower half, and crop one side slightly at the edge."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the map spills off the left edge and the magnifier sits on it as a clear focal point, so there is a layered hierarchy. B: one flat rectangular board is laid squarely in the middle and nearly touches both sides. The star pattern is thin white lines, so at thumbnail size there is no single focal shape, only a blue slab.",
+   "fix": "Tilt the chart and let one corner run off the card. Put one large glowing star or compass in front as the clear focal point."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the ice tray is centred on a table edge with the raised cube on top as its focal point. B: the paddling pool fills the width, with the fence corner behind it and the duck as its focal point. Both match how the real cards frame an object.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: a narrow battery cylinder stands upright in the middle (width 0.37, below the real range), with wide empty pink space on both sides. It reads as small and stiff. B: the vending machine is in three-quarter view and fills much more of the card.",
+   "fix": "Show the battery in a tilted three-quarter view, larger, so it fills most of the card's width. Let the glowing core face the viewer."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the sandcastle fills the lower two-thirds and the bucket and spade are props in front. B: the bumper car is in three-quarter view and its pole is cropped by the top edge. Both use the crops and props found on the real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 5,
+   "difference": "A: a flat, symmetrical drone hovers in a thin band through the middle (height 0.33, area 0.13), with large empty sunburst above and below. At thumbnail size it is a small grey cross. B: the lamp post is large and its base is cropped by the bottom edge, like the real lighthouse.",
+   "fix": "Bring the drone much closer and tilt it toward the viewer, so the rotors almost touch the card edges and the camera faces forward big in the centre."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 5,
+   "difference": "A: the lighthouse is a real card. It is large and runs off the bottom edge. B: a thin white antenna mast stands small in the middle of a bare concrete rooftop (area 0.07). Its shadow and the empty floor compete with it, and at thumbnail size it is hard to name.",
+   "fix": "Draw the antenna close and large, filling the card height and cropped at the bottom. Make the mast thicker and the dish and red light big, and drop the empty rooftop."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the rover sits whole and small in the centre on open ground, with even margins all round (0.10) and a lot of empty lunar floor. B: the bike and car are cropped by the right and bottom edges, and the hero fills the card.",
+   "fix": "Bring the rover closer in low three-quarter view so it fills the width and its wheels touch the bottom edge. Crop the dish mast at the top."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the book fills the card at a tilt, with stickers and bookmarks giving a clear focal point. B: a dark tablet is tilted in the middle of brushed metal, and its screen is an empty cyan field with a plain ring. At thumbnail size it reads as a blank rectangle, with no focal detail to name.",
+   "fix": "Draw the tablet larger and closer, and show a clear, bold picture on its screen that names its purpose. Place it on a coloured surface."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the pair of sneakers sits low and wide, with a horizon split behind. B: the helmet is centred as a compact ball with wide even purple margins all round (0.16, above the real range). It looks small and static at thumbnail size.",
+   "fix": "Draw the helmet bigger and closer in three-quarter view, filling about 85% of the card, with the visor facing the viewer."
+  }
+ ],
+ "pattern": "The generated cards show the whole object, small, in the middle of an empty background, with even margins on every side. Some are thin bands (drone, saucers) and some are thin columns (battery, antenna). The real cards bring the hero close: it fills the card, often at a tilt, and is often cropped by an edge (lighthouse base, plane wing, bike). The generated cards rarely touch the card edge, and some have no clear focal point at thumbnail size (blank tablet screen, flat star board)."
+}

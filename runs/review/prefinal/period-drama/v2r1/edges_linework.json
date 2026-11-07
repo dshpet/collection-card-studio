@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (fan): one clean, mid-weight contour around the leaf and handle. The pleat lines are thin and evenly spaced, and the wavy background lines are faint. Its numbers sit inside the real range. B (binoculars): the gold rims are doubled, bright-edged rings, and the leather barrels carry a dense scratchy texture. Subject density is 0.175, above the real maximum. Outline darkness is -0.184, well below the real minimum, which fits a light rim halo rather than a body edge.",
+   "fix": "Plain matte leather barrels with no fine texture. Single simple gold rims without bright doubled edge highlights. A soft, even silhouette against the background with no light rim glow."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (picnic basket): every weave cell has its own hard edge, the strap has stitch dots and the handle has twist grooves. The grass is filled with small blade edges and there is a dark contour around the basket. Subject density is 0.241, far above the real maximum of 0.179. B (boxing gloves): broad soft forms with only a few crease lines and soft lost edges against the table. Its subject density of 0.037 is low, but that matches the simple real cards.",
+   "fix": "Draw the basket weave as a few large, soft bands instead of many tiny crisp cells. Drop the stitch dots. Smooth, plain grass with no individual blades. No dark line around the basket."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (red parasol): the lace trim is a chain of small, hard cut-out edges, the ribs are doubled lines and the canopy carries a fine fabric-grain noise. B (beach umbrella): a few clean panel edges, a smooth canopy and a plain pole, close to the real beach ball. Both cards' numbers are within or near the real range, so the call rests on A's fine detail.",
+   "fix": "Smooth canopy with no fabric texture. Simplify the lace into a soft wavy white band with no small holes. Single soft ribs."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (porch swing): dark contour lines run along the posts, the canopy edge and the cushions. Outline darkness is 0.166, above the real maximum of 0.148, and the leaves and blanket knit add many edges. B (bench): also a busy scene with a speckled gravel texture, but its contour reads lighter (-0.034) and its densities are in range.",
+   "fix": "Remove the dark contour lines around the wooden frame and canopy. Separate the forms with light and color only. Softer, simpler foliage and blanket."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "A (roller coaster): clean tube contours and a soft cloud and hill background. B (keyboard): every key, button and leg of the stand has the same crisp dark edge, so nothing at the focus is sharper than anything else. The outlined stars and notes in the background add more hard edges. Both cards' densities are in range, so this is a weak call.",
+   "fix": "Keep the edges crisp only on the front keys. Soften the stand legs and the far end of the keyboard. Draw the background notes and stars as soft, low-contrast shapes."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (scout jacket): seams, pocket flaps, a doubled sash edge, embossed badge rings and buttons give many internal lines. Subject density is 0.159, just above the real maximum. B (top hat): a large smooth crown and one hatband seam. The brim contour is crisp but the inside is quiet, closer to the real clock and ball cards.",
+   "fix": "Fewer seams and pockets on the jacket. Badges drawn as soft raised discs without rings. Keep the inside of the jacket broad and smooth."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (teacup): soft edges on the cup and saucer, a fine floral pattern and a soft tablecloth. B (fountain): hard dark lines on every bowl rim, and the paved floor is a grid of crisp tile edges. Background density is 0.046, at the top of the real range. This is the same busy-floor texture the generated computer cards showed in the lessons.",
+   "fix": "Draw the ground under the fountain as a soft, plain surface or a blurred circle without tile lines. Use soft shading instead of dark lines on the bowl rims."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both cards are full scenes with background density above the real range. A (red door): crisp, orderly stone blocks and door panels, with a light contour. B (blue door): the wreath is packed with small petal edges and the door shows wood-grain streaks and gray ghost edges around the wreath. Subject density is 0.342, far above the real maximum of 0.270.",
+   "fix": "Plain smooth painted door with no wood grain. A wreath of a few large, simple flowers. Fewer, larger ivy leaves at the frame edges."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (golf club): a dark contour runs around the club head and the outlined cloud and hill shapes. The foreground is covered in crisp grass tufts. Outline darkness is 0.15, just above the real maximum. B (spyglass): clean segmented tube on a plain striped background, close to the real anchor and flipper cards. Its light contour (-0.147) is a mild worry.",
+   "fix": "No dark line around the club head. Soft, blurred grass and sky behind it with no outlined tufts or clouds."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (vending machine): a crisp frame contour and some speckle from water droplets on the glass. B (teapot): soft body edges and finely drawn roses. Every number is inside the real range, and neither card shows a clear edge tell.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (scarf): soft cloth with a single clean contour and a simple badge. B (straw hat): regular woven rings across the crown and brim, and a soft bow. All numbers are inside or at the edge of the real range. There is no decisive edge cue.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (taxi): a medium contour, with internal lines only at the grille, windows and checker pattern. The background is a soft sunburst. B (pram): heavy, dark spoked wheels, and the whole cobblestone floor is a dense grid of crisp edges. Subject density is 0.319, background density 0.089 and outline darkness -0.103, all outside the real range.",
+   "fix": "Fewer, softer wheel spokes. Replace the cobblestone floor with a smooth, plain ground and a simple soft shadow. Keep the background soft and low-detail."
+  }
+ ],
+ "pattern": "Generated cards give themselves away through too many hard edges where the real cards keep forms broad and soft. They pack in crisp micro-detail: weave cells, lace, cobblestone and tile grids, wood grain, grass tufts, petals. They also draw dark contour lines around frames and rims. And they give the background or floor as many edges as the hero, so the edges are no sharper at the focus than anywhere else."
+}

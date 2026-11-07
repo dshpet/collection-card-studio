@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the pan rim and inner wall have fine brushed-metal streaks, and the gold nuggets are crumpled with many small faceted glints, so the surface has a lot of busy micro-texture. B: the brass body of the lamp is smooth with one broad highlight band, and the chimney is evenly frosted glass, which is the simplified finish the real cards use.",
+   "fix": "Make the pan smooth, softly polished metal with one broad highlight along the rim and no brushed streaks. Draw each nugget as a few large rounded lumps with one soft shine each."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the harmonica cover is brushed steel with streaky reflections, and there are round rivet heads on the blue end caps, the kind of small hardware the generated lessons add. B: the fan's paper is flat matte purple with soft folds and plain wooden ribs, with very little surface detail.",
+   "fix": "Draw the harmonica cover as smooth, softly shiny metal with one wide highlight and no brushed streaks. Leave out the rivets and make the end caps plain rounded blocks."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: in the 2x crop the red hatband shows a fine woven textile texture, and the brown felt crown has a grainy surface, which is photo-like material noise. B: the jacket is smooth, soft clay-like fabric, the badges are clean flat discs, and the sash is plain.",
+   "fix": "Make the hatband a smooth, plain red ribbon with no visible weave. Make the felt soft and smooth, with gentle broad shading and no grain."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the red pump body has mottled, brushy painted shading and chipped grey paint patches at the base, and the dial and counter edges are slightly smeared, giving it a painterly AI finish. B: the buoy is clean, smooth, satin red plastic with crisp edges, and the bell has one simple gold highlight.",
+   "fix": "Paint the pump as clean, smooth, satin red metal with even soft shading. Remove the chipped paint at the base and keep the gauge rims crisp and simple."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the saddle is covered in dashed stitch lines along every edge, has domed metal rivets on the flaps, and sits on a hay bale drawn as hundreds of chunky straw strands. That is exactly the over-detailed leather and hardware seen in the generated glove lessons. A: the popcorn cart has simple painted wood, smooth gold poles, and plain glass.",
+   "fix": "Draw the saddle as smooth, soft brown leather with broad shading and no stitch lines or rivets. Make the hay bale a soft yellow block with a few gentle straw strokes, not individual strands."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the barrel staves carry large, swirling, decorative wood-grain patterns, and the dirt ground is spotted with pebble specks. A: the chair has quieter, lighter grain and a smooth green cushion, though its arms are slightly soft and smeary. The barrel's metal hoops are wide smooth bands, which does match the real cards.",
+   "fix": "Make the wood grain on the barrel staves faint, fine and sparse instead of big swirls. Make the ground a smooth soft brown with no scattered specks."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the boots have dense dotted turquoise embroidery stitches, stitched seams along the shaft, and a spur with a rivet and a spiky star rowel, so there is a lot of tiny repeated stitch detail. Detail measures 0.095, above the real range. B: the sneakers are also busy, with perforated mesh and rope laces, but they are drawn as broader shapes.",
+   "fix": "Replace the dotted embroidery with a few smooth, solid turquoise swirl shapes. Remove the seam stitching and draw the leather as smooth, softly shiny brown with broad highlights."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the cactus is smooth green with simple ribs and small glossy spines, and the sand is soft. B: the duck is smooth glossy plastic, and the spring and base are plain. Both use the simplified, smooth finish of the real cards, and neither shows grain or stitch noise.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the wagon canvas has fine fabric wrinkles and stitched seams along the hoops, the wood side boards have visible grain, and the dirt is speckled with pebbles. Highlight measures 0.213, above the real range. A: the fountain is smooth matte stone with plain scalloped bowls and clean stylised water.",
+   "fix": "Make the wagon cover a smooth cream canvas with a few broad soft folds and no seam stitching. Make the wood boards plain with faint grain and the ground smooth."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 5,
+   "difference": "B is the real lighthouse from the lessons, with its smooth bricks and simple railing. A: the windmill wheel rim is lined with rivets, there are bolted metal brackets at the tower feet, the timbers show grain, and the grass is drawn as many individual strands. That is the generated habit of chunky hardware and busy detail.",
+   "fix": "Draw the windmill rim as a smooth metal ring with no rivets and the tower feet as plain blocks with no bolted brackets. Use soft, simple wood with no grain, and make the grass soft clumps."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the kettle has speckled enamel noise, the stones and stump top are covered in grainy stipple, and the logs have grain rings and rough bark, so the image is noisy and textured overall. B: the viewer is clean, smooth, satin blue metal with broad highlights.",
+   "fix": "Make the kettle smooth, softly shiny enamel with no speckles. Make the stones smooth rounded grey shapes with no grain, and simplify the logs to plain rounded wood."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the neck pillow's fabric shows a fine woven micro-texture and many crimped pleat ridges around the inner edge, a photo-like textile finish. B: the bottle is a smooth translucent plastic shape with one soft highlight and a clean cap.",
+   "fix": "Draw the pillow as smooth, soft blue fabric with gentle broad shading. Use just a few soft pleats along the inner edge and no visible weave."
+  }
+ ],
+ "pattern": "Generated cards over-render the surface. They add dashed stitching, rivets, bolts and bracket hardware, visible fabric weave, brushed-metal streaks, big decorative wood grain, speckled enamel and stone, and hay or grass drawn as individual strands. Real cards keep materials smooth and simplified, with broad soft highlights, faint or no grain, and hardware reduced to a few wide plain bands."
+}

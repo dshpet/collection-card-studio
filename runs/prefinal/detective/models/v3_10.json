@@ -1,0 +1,27 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "loose": [],
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The top corners of the casing render as black squares. Each side jamb runs up to z 1.17 and overlaps the head piece (z 1.105 to 1.175), and their outer faces sit in the same planes, so the overlap shows as dark artifacts. Stop the jambs at the bottom of the head and make the head span their full width.",
+   "The three brick-wall boxes have bevelled edges, which leave visible seam lines above the door and down both sides. The wall should read as one surface, so set the wall bevel to 0 and keep the edges butted together.",
+   "The hinge leaf on the casing sits flush with the casing's front face (y -0.08) and looks pasted on. Set it a little into the casing face so it is clearly mounted, and stand the barrel on the stile/casing joint at the door's front face.",
+   "Everything else checks out. The door stands on the stone step and the step rests on the pavement. The counts are right (two stiles, three rails, two panels, two hinges, one knob). The door is framed on its body and reads at once as a door."
+  ]
+ },
+ {
+  "round": 2,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "A thin blue line of backdrop shows across the top of the door. The door top (z=1.11) stops short of the casing head (z=1.115), and the wall opening behind the door is empty, so the sky shows through. Fix: raise the door and its top rail to meet the head, and close the opening behind the door with a dark interior wall."
+  ]
+ }
+]

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (sneakers): both shoes get almost the same light from the front. There is no clear lit side or shadow side across the uppers (light bias 0.019, far below the real range), and the soles have a photo-like white sheen. The only direction comes from the soft cast shadow on the floor to the left. Its shading range of 0.82 is above the real range. B (gift box): there is a clear key light from the upper right. The drum's left side turns into a gentle shadow, the lid has a lit top plane, and a soft cast shadow falls to the lower left. This matches how the real cards place their shadows.",
+   "fix": "Light the sneakers from the upper left so the left side of each shoe is bright and the right side and inner heel fall into a soft, clearly darker shadow. Use a simple, toy-like satin sheen, not photographic white highlights on the soles."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (soccer ball): the black panels go very deep, with a hard, dark core shadow at the lower left of the ball (form contrast 0.835, above the real maximum of 0.59; light bias 0.711, also above range). The modeling looks dramatic and photographic. B (sunscreen and sunglasses): the bottle has a broad soft sheen, its right side darkens gently, and the glasses leave a soft contact shadow. This matches the anchor card exactly.",
+   "fix": "Shade the soccer ball softly: keep the shadow side only moderately darker than the lit side, lighten the black panels on the shadow side, and use one broad soft highlight at the upper left. Draw a soft, light contact shadow under the ball instead of a deep black one."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (fan): every pleat gets almost the same light. The alternating purple bands come from the color, not from the pleats turning toward or away from the light. The shading lens shows only weak pleat modeling (form contrast 0.213, below the real minimum of 0.324), and there is no cast shadow on the background. A (parasol): the canopy turns smoothly from a lit top-left panel to darker lower panels, the ribs carry small highlights, and the handle is modeled round.",
+   "fix": "Light the fan from the upper left. Make each pleat facing the light bright and each pleat facing away clearly darker. Give the wooden ribs a lit edge and a shadow edge, and add a soft drop shadow under the fan."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (cake stand): the porcelain tiers are lit almost evenly. The only strong darkness is a big cast shadow on the photo-real linen to the right, while the stem and plates show little turn from light to shadow (form contrast 0.328, below the real minimum of 0.415). A (fountain): the stone bowls have a lit top rim and a shaded underside, and the pool rim darkens on the right. This is clear, toy-like form modeling.",
+   "fix": "Model the cake stand in clear toy-like shading: lit tops on each plate, clearly darker undersides and stem on the right, and a soft highlight on the knob. Keep the shadow on the tablecloth soft and short."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (top hat): the crown has glossy streak highlights and the underside of the brim drops to near black. Its shading range of 0.898 is well above the real maximum of 0.826, which reads as dramatic, glossy lighting. A (graduation cap): the board's flat top is evenly lit with a darker front edge, the skull cap is softly shaded, and the tassel is round. Its shading range of 0.847 is also high, but the cap reads as gentle.",
+   "fix": "Shade the top hat softly: matte satin with one broad soft sheen on the left of the crown. Let the brim's underside fall only to a medium-dark tone, not black."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (teacup): the cup and saucer get soft, almost frontal light with little turn from light to shadow (form contrast 0.327, below the real range). The darkest area is a vague cast shadow at the left, and the china looks photographic. A (vending machine): it has a clear lit front, a darker left side panel, a soft highlight on the glass door and a contact shadow under the feet. This is the real cards' clear plane-by-plane light.",
+   "fix": "Light the teacup from the upper right. Make the right side of the bowl bright and the left side noticeably darker in a smooth curve. Shade the inside of the cup darker on the lit side, and draw a soft contact shadow under the saucer."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (pearl bracelet): each pearl carries the same small highlight with no shared light direction across the strand (light bias 0.052, form contrast 0.263, and shading range 0.635, all below the real range). The velvet is lit like a photo with diffuse folds. B (map and magnifier): a clear raking light from the upper left. The folds of the map show lit and shaded panels, and the magnifier casts a soft shadow to the lower right.",
+   "fix": "Light the pearl bracelet from the upper left. Make pearls on the upper left of the loop brighter, and give each pearl a clear darker side facing away from the light. Draw soft contact shadows under the pearls on the cloth."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (scarf): the cloth looks puffy and evenly lit, rounded like clay, with only a soft darkening at the folds (form contrast 0.256 and light bias 0.162, both low). The badge is lit flat. A (red fan): the pleats alternate clearly between lit and shaded faces, and the gold sticks catch small highlights from the upper left. The light is clear and directional.",
+   "fix": "Light the scarf from the upper left. Make the left loop and the top of the knot bright, and put clearly darker shadow inside the folds and on the right tail. Add one soft sheen along each fabric curve."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (suitcase): the large front face is lit flat from the front, with little change from left to right, and the corners and handle get symmetric light (shading range 0.655, just below the real range). B (chest): the lid top is lit, the front face is medium and the right side face is darker. A clear soft cast shadow falls to the right on the planks.",
+   "fix": "Light the suitcase from the upper left. Make the left part of the front face brighter and let it fade to a darker right edge, add a darker band on the bottom edge, and draw a soft cast shadow to the right on the floor."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (piano): glossy wood lit like a photo, with mirror-like streaks on the floor. The front panels are lit fairly evenly, and the only turn is a darker right side. B (guitar): stage spotlights put a bright, glossy highlight on the red body and a soft pool of light on the floor. This matches the real drum-kit stage card.",
+   "fix": "Shade the piano as a toy-like object: a lit top and left side, a clearly darker right side, and soft broad sheen on the wood instead of sharp mirror reflections. Give the floor a soft contact shadow instead of a reflection."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (gate): the brick pillars and iron are lit almost evenly from the front, the bars show little rounding, and the background is a blurred, low-contrast scene. The shading lens mostly shows ambient darkening. A (ring box): a clear top-left key light. The lid's inner face is in shadow, the cushion is lit, and the coin has a rounded rim highlight.",
+   "fix": "Light the gate scene from the upper left. Make the left faces of the brick pillars and the ball finials bright and their right sides clearly darker. Give the iron bars a lit edge, and draw soft shadows from the pillars on the paving."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (violin): the shading lens shows a heavy dark vignette around a center glow, and the violin's face is lit almost flat, with only thin dark edges (shading range 0.843, above the real range). A (bugle): the bell is clearly lit on the left and darker inside, and the tubing turns from lit to shaded with soft highlights.",
+   "fix": "Light the violin from the upper left. Make the left side of the body bright and let it curve into a darker right edge. Add a broad soft sheen on the varnish, and keep the background evenly lit with no dark corners."
+  }
+ ],
+ "pattern": "Generated cards either flatten the light (an even, frontal key with almost no turn into shadow, as on the fan, scarf, teacup, suitcase and pearls) or push it into photographic drama (deep black core shadows, mirror reflections, vignettes, as on the soccer ball, top hat and piano). Real cards keep one clear upper-side key light with a moderate, smooth turn to a clearly darker side, broad soft sheen, and soft short contact shadows."
+}

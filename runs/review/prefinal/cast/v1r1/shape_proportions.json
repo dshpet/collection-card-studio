@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: sheep's hat brim is very wide over a puffy wool body, and the bag handles read as thin straps in the silhouette. B: the cow's arm holds the pumpkin bucket correctly, and the ghost sheet hangs in plausible folds with the hoof raised to the door. Both have the same chunky character proportions, and every metric is inside the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the vampire's cape is a clean cone, and the mummy turkey has separate thin legs, wings and a dangling bandage strip, so its part count reads clearly. B: the chicken at the man's side has dissolved into a lump. Its head, wing and the popcorn bucket merge under the blanket with no readable body or legs, and the man's back and arm are bulked up. A's corner and straight numbers are slightly outside the real range, but on the silhouette B's part relations are worse.",
+   "fix": "Draw the chicken as a full, readable bird sitting beside the man, with its head, both wings and feet clear of the blanket. Make the blanket a flat thin layer over its lap, and keep the popcorn bucket a separate object held in one wing."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the Jenga tower is badly stacked. Rows have 2 or 3 blocks that don't alternate direction and stick out unevenly, and the cow's hoof replaces a block in the middle of the tower. The cow is a big pear-shaped mass with only one arm showing. A: the cow and rooster in space suits have both arms and hands, and the suit segments match the limbs. A's corner_rate is high because of the suit padding, not because of broken parts.",
+   "fix": "Draw a straight Jenga tower of rows that each have three identical flat blocks, alternating direction on every level. Show the cow with both arms, one hoof pinching a single block it is pulling out halfway."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: man pointing up with an oversized hand and short legs, and a pig standing upright with a round belly. B: man seen from behind holding a long thin racket, and a pig in shorts with a second racket. The racket shafts push thin_share above the real range, but they are real thin parts drawn thin. Neither card shows inflated or missing parts beyond the shared cartoon style.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the pig and cow are squeezed into one merged mass with oversized heads. A small curly pig tail floats at the bottom left, separate from the pig's body, and the edge count is high (corner_rate 9.3, above the real range). A: the man tips his hat with a clear hand, and the pig holds the mug with its tail attached at the hip. The parts sit in the right relation.",
+   "fix": "Draw the pig and cow standing side by side with a small gap between their bodies. Keep the heads in proportion to the bodies, and attach the pig's curly tail to its rump, not floating in front."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the caravan has flat side panels, straight roof and floor lines, and tight corners. Window frames, door, hitch and wheel are all where expected (straight_share 0.42, solidity 0.90, both real-like). B: the drum kit's thin parts share is far above the real range (0.056). The stands branch into many thin legs, the gold lugs are fat blobs, and the left cymbal stand seems to grow out of a tom. The bass drum has no pedal.",
+   "fix": "Draw the drum kit with fewer, cleaner stands. Use one tripod per cymbal standing on the floor, small flat tension lugs on the drum shells, and a bass drum with a single foot pedal in front."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the ship's wheel has swollen, teardrop-shaped handles and thick spokes. The hub is a big gold dome, and the pedestal is a chunky wedge. Solidity (0.57) is below the real range and corner_rate (6.8) is above it. B: the glass plate stays a flat thin ellipse, and the fruit pieces have believable relative sizes and crisp wedge edges.",
+   "fix": "Draw the ship's wheel with slim, straight turned handles of even thickness, and thin spokes running from a small flat hub through the rim. Use a narrow, straight-sided wooden pedestal."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the hay bale has a flat top and straight sides, the chicken's tail and wing are distinct, and the cow holds the bucket. The high corner_rate and thin_share come from the straw fringe. B: the cow holds a wide flat tray with only one hoof visible, and the left end of the tray is unsupported. That is a small part-count doubt, but it is not strong enough to call.",
+   "fix": ""
+  }
+ ],
+ "pattern": "On this vector, generated cards give themselves away through how their parts relate rather than through surface quality. They add or clutter parts: extra lacing holes, rocks and bases, multi-leg stands, bulky lugs. Thin parts swell into bulbs, as with wheel handles and fat rims. Secondary figures and props merge into lumps: a chicken lost under a blanket, a Jenga tower with wrong stacking and a hoof in place of a block, tails floating loose. Bodies are inflated to toy proportions, and limbs go missing where an object is held."
+}

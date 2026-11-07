@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the pumpkin bucket sits whole and upright in the middle of the card. There is even clearance on every side (margin 0.138, above the real maximum), and the plank table is just a stage under it. B: the mower runs close to the left and right edges (box width 0.88), and its handle reaches up toward the top corner, which makes the frame feel full and active like the real cards.",
+   "fix": "Draw the candy bucket bigger and closer, tilted slightly, filling the card almost edge to edge, with the handle nearly touching the top edge and the bucket's side close to the right edge."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the spider stands on a round stone disc that floats in the middle of a plain swirl background. The whole group is a squat block in the centre, only about half the card tall (box height 0.535), with open background above and below. A: the palm's fronds spread to both side edges and its trunk goes down into sand that runs off the bottom of the card, the same scene-crop the real cards use.",
+   "fix": "Remove the stone base. Draw the spider large and close, filling the card, with its legs reaching to the side edges and the ground running off the bottom of the card."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the hourglass is a narrow upright shape in the centre of an empty green studio background. It is only about half the card wide (0.493) and has wide empty bands left and right (margin 0.119). B: the vending machine is also a single object on a plain background, but it is wider and taller and close to the real occupancy. Both are thin evidence.",
+   "fix": "Draw the hourglass larger and turned at a three-quarter angle, filling most of the card's height and width, with its base close to the bottom edge."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the jack-o'-lantern is small and sits low-left (subject area 0.21, margin 0.20). The blue door, the brass handle, the ivy and the moon all compete with it for the first read. B: the topiary is one clear tall form that fills the height of the card, and the garden setting stays secondary.",
+   "fix": "Bring the pumpkin much closer so it fills most of the card. Let the door and the step be cropped by the edges behind it, and drop the moon."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the witch hat is laid flat, centred and complete on a table, with the background split into two flat horizontal bands. The silhouette is wide and low, with an empty stripe above the brim on each side. B: the fountain fills the width almost edge to edge (box width 0.92), and the paved floor runs out of frame, which matches the real fill.",
+   "fix": "Draw the hat larger and tilted toward the viewer, with the brim almost touching both side edges and the tip near the top edge."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the bag fills the card, with the items in it reaching the top corners and the bag body close to the bottom. B: the scarf is centred and symmetric on a swirl background, with comfortable margins. Both match real framing, so nothing on this vector separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the dead tree is shown whole and centred on a lawn. Its roots end inside the frame, and the gazebo dome on the right edge pulls the eye away from the tree. A: the feeder is close up, and the trunk and rope are cut by the top and bottom edges (margin 0), the same crop as the real lighthouse.",
+   "fix": "Bring the twisted tree close so the trunk fills the card and the branches run off the top and side edges. Remove the gazebo."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the medal box is tilted and fills the card on a ray background. B: the mask runs nearly edge to edge, with the feather near the top-right corner. Both follow the real ray-background framing.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the purple book lies diagonally in the centre of dark planks, with roughly even clearance all round, and reads smaller at thumbnail size. A: the travel book fills the card corner to corner (area 0.53), and its bookmark ribbons hang toward the edges.",
+   "fix": "Draw the book larger and closer to the viewer, filling the card from corner to corner, with one corner nearly touching the edge."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "B: this card is the real music player from the reference set. A: the binocular viewer is cropped at the bottom by the post, with a skyline behind it, like the real lighthouse crop. Neither card breaks the real framing.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the broom is a thin diagonal stick across the middle of the card, and only its handle end is cut by the edge. It takes up very little area (0.109, about half the real minimum), with a large empty band of sky and cloud above and below, so at thumbnail size it nearly disappears. B: the balloon bunch fills the upper card and its strings lead down, giving a strong single read.",
+   "fix": "Draw the broom very large and close, angled steeply from the bottom-left corner to the top-right, with the straw head big and filling the right half of the card."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the arched door is small and centred in a wide brick wall, with a stone step under it and a night strip with a moon across the top. The bricks around it take more area than the door and compete with it. A: the blue door fills the full height and is cropped at the top and bottom, with the wreath at the centre as a clear focal point.",
+   "fix": "Bring the arched door close so it fills almost the whole card, cut off by the top and bottom edges, with only a thin edge of stone wall at each side and no sky."
+  }
+ ],
+ "pattern": "Generated cards show the whole object, centred and complete, with even empty margins. It often sits on a stage: a stone disc, plinth, step or table. Real cards push the object close. They tilt it and let edges cut it, so it fills the aperture. Generated cards also give away low occupancy (a thin broom, a small door in a wall) and side props that compete with the hero (a moon, a gazebo, brick walls)."
+}

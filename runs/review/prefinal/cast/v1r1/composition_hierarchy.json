@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the sheep is cut off at the waist and fills the card edge to edge. Shopping bags bleed off the left, right and bottom edges, and the hat nearly touches the top. This tight, bleeding crop matches how the real lighthouse and computer are cropped. B: two full-length figures, feet included, stand centered on the porch. The scene sits inside the card with even air on every side (margin 0.058, above the real maximum of 0.033). Like the generated lessons, it shows everything whole and adds staging (lantern, door, plant).",
+   "fix": "Move in close on the two characters and cut them off at mid-thigh by the bottom edge. Let the lantern and the door frame run off the card edges. Leave no strip of floor visible below their feet."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the vampire is squeezed against the left curtain. The mummy chicken is a full figure, feet to crest, standing in the middle of the rug with floor all around it. The subject is narrow (box width 0.488, far below the real minimum of 0.681) and has a wide margin (0.046). B: the man seen from behind and the chicken under the blanket together span the card. The blanket runs off the bottom-right edge. Its numbers sit inside the real range.",
+   "fix": "Show the vampire and the mummy chicken larger and closer together, filling most of the card's width. Crop the chicken at the knees with the bottom edge instead of showing its feet on the rug."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: two astronauts sit in the upper middle. The glowing red button and the console in the lower third compete with the faces for the first read. The subject is narrow (width 0.574, below the real range). B: one cow plus the block tower spans the full width (0.988). The cow is cut off by the left and bottom edges, giving a single clear hero.",
+   "fix": "Make the cow fill the card from the left edge to the right edge and cut its body off at the bottom edge. Make the console smaller and darker so that the faces read first."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the man and the pig are both shown head to boots. They stand apart on open grass with sky above, and the UFO floats as a separate third focal point. The subject is narrow (width 0.547) and has an air gap at the bottom. This is the generated lessons' 'show it whole and centered' framing. B: the man is cut off at the hip by the bottom and left edges and fills the left half, and the pig fills the right. The width is 0.972, a tight crop like the real cards.",
+   "fix": "Show the man from the waist up, larger, and touching the left and bottom edges. Bring the pig closer so that the two figures span the whole width. Make the UFO small or drop it."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "A: the cowboy and the pig together fill almost the whole card (area 0.542, above the real maximum of 0.489). The man is cut off at the thighs and his hat nearly touches the top. B: the pig and the cow are cut off at the chest by the bottom edge. The stage lights and confetti take up the upper third, and the subject height is 0.64. Both are tight crops, and only A's slight overfill points either way.",
+   "fix": "Pull back slightly so that the cowboy's hat has a little sky above it. Keep the thigh crop at the bottom."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the caravan sits slightly low and centered. Its tow hitch nearly touches the right edge, and there is purple air above it. B: the drum kit is centered on a round stage under a spotlight. The cymbals come close to the top-left and top-right corners. Both fall inside the real ranges for every field, and both use the hero-on-ground framing seen in real cards such as the trophy and the computer.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the ship's wheel stands perfectly centered and upright with a wide halo of empty sky on every side. The area is 0.245, below the real minimum, and the margin is 0.105, above the real maximum. This is the small, centered, fully shown hero with lots of breathing room that marks the generated lessons. B: the fruit plate is tilted and fills the card. The watermelon nearly touches the top and the plate rim nearly touches the right edge.",
+   "fix": "Draw the ship's wheel much bigger so that the handles nearly touch the left and right edges. Let the bottom of the stand run off the bottom edge, and turn the wheel a little to a three-quarter view."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the rooster and the cow are both full figures sitting on a hay bale. The whole group, bale included, fills the card (area 0.557, above the real range), and the barn and fence add a busy background. B: one cow is cut off at the belly by the bottom edge. The food tray is in front and runs nearly the full width, giving one hero and a clear first read.",
+   "fix": "Crop in so that the rooster and the cow are seen from the chest up, cut off by the bottom edge, and leave out the hay bale. Blur or simplify the barn so that the two faces read first."
+  }
+ ],
+ "pattern": "On my vector, generated cards show the hero whole, from head or top down to the feet or base. It sits centered on the ground with an even gap all round, so it ends up narrower or smaller than real cards, with wider margins. Generated cards also add extra staging (an island, plinths, side props, a second focal object). Real cards move in tight and let the hero bleed off one or two edges, especially the bottom."
+}

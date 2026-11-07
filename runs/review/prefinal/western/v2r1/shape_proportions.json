@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the mailbox has a domed lid and a flat door panel with a crisp lower edge. The flag is a little chunky, but a real mailbox has this shape. B: the feeder has flat board faces, a thin roof overhang, a thin tray lip and a thin rope. Both keep planar faces, and all fields are within the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the plate's silhouette is a near-perfect ellipse, and the spoon handle is only a short stub past the rim. Its straight_share of 0.773 is above the real range and its corner_rate of 0.722 is below it, so the contour has almost no breaks. A: the plate edge is broken by the watermelon wedge, the orange slices and the strawberry leaves. The fruit is oversized but still reads as separate parts.",
+   "fix": "Show more of the spoon handle as a thin metal bar extending well past the rim, and give the plate a visible thin flat rim edge instead of a smooth oval blob."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the jacket's sleeves are short and puffy, with rolled cuffs. B: the hat has a thick, rubbery brim with a soft crown crease. Both are equally soft, both are in range, and neither stands out on shape.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the clock is a round body hung from two thin hanger rods with crisp bracket ends. B: the mortarboard is a flat square board with tight corners, a cylindrical cap and a thin tassel cord. Both keep their thin parts and flat faces.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the coaster cars are swollen, pillow-like seat tubs stacked almost vertically up the loop. The blue rails and supports are thick tubes, and solidity of 0.495 is below the real range. A: the wagon has thin spokes in round wheels, a straight wooden box bed and a thin tongue pole, with a correct part count.",
+   "fix": "Draw the coaster cars as compact boxy carts with flat side panels and tight corners, sitting level on the track. Draw the rails as thin parallel steel bars with thin cross-ties."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the guitar body is a thick slab with swollen rounded edges, and the upper and lower bouts are nearly the same size. The soundhole and bridge are small for the body, so it reads like a toy. B: the racket has a thin oval frame, a thin throat split and a grip of correct length. Its high thin_share comes from the strings, which a real racket has.",
+   "fix": "Make the guitar's lower bout clearly wider than the upper bout, with a narrow waist. Give it a thin flat top with a crisp edge rather than a puffy rim, and a properly sized soundhole and bridge."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the spur heel bands are thick round tubes and the leather straps are fat loops. The rowels sit oddly where the bands join, and the corner_rate of 13.2 and solidity of 0.511 are both outside the real range. B: the neck pillow is soft by nature, a clean U shape with a small valve, and it fits its real object.",
+   "fix": "Draw each spur heel band as a thin flat metal U, with a slim shank ending in the rowel at the back. Make the straps flat thin leather bands with a small buckle."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the gloves merge into one lumpy blob, and the thumbs and cuffs are not separately readable. The corner_rate of 0.392 is below the real range. B: the boots have crisp pull tabs, a defined heel step, a pointed toe and small spur rowels, so all parts read in their right relation.",
+   "fix": "Separate the two gloves clearly. Give each a distinct thumb pressed against the fist and a straight cylindrical wrist cuff with a crisp edge."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the iron's clubhead is a fat, rounded pillow, and the hosel swells into the shaft. A real iron is a thin flat blade. B: the column has a flat abacus slab, round volutes and a flat pedestal, with a thin plaque post. Its planar parts stay flat.",
+   "fix": "Draw the iron head as a thin flat blade with a straight top line and a sharp toe. Use a slim tapering hosel joining the shaft."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the sneakers have a swollen, thick, rounded sole, and the lace and collar tops are lumpy. The two shoes merge into one blob. A: the cactus has a crisp tapered pot with a straight rim and thin spines, and its high corner_rate comes from those real spines.",
+   "fix": "Give the sneakers a thinner sole with a crisp edge line, a clear separation between the two shoes, and thin flat laces."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the whole harmonica is one rounded capsule. The cover plate is swollen like a pillow, the red end caps are soft blobs, and there are no flat planes or tight corners. Its corner_rate is 0.0 and its solidity of 0.981 is above the real range. A: the fan has crisp straight pleat edges and thin separate ribs, with clear negative gaps between them.",
+   "fix": "Draw the harmonica as a flat rectangular bar. Use a flat metal cover plate with a slightly bevelled edge, tight square corners and thin straight end caps."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the viewer's head is a bloated capsule, with fat rounded eyepieces and a thick loop handle, so it reads like a toy. B: the pump has a thin curved handle with a ball end, a thin spout, a slim pivot bracket and a flat flange base. Its low solidity comes from the long thin handle, which a real pump has.",
+   "fix": "Draw the viewer head as a boxy housing with flat side plates and tight bevels. Use short cylindrical eyepieces and a thin metal yoke holding it."
+  }
+ ],
+ "pattern": "Generated cards inflate objects: flat plates and housings swell into rounded capsules (harmonica, iron head, viewer head), and corners melt into soft blobs. Thin metal parts like spur bands, coaster rails and hosels thicken into tubes. Adjacent parts merge into one lump (gloves, sneakers). Real cards keep flat faces, tight bevels and slim structural parts."
+}

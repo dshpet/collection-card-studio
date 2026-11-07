@@ -37,5 +37,6 @@ Every generated card and every measurement, oldest first. Full-size drawings, re
 | `robustness/` | 19 odd, risky and hostile requests planned (`plans/`, then `plans2/` after the repair loop), and Kitchen, Pirates and Star Wars drawn end to end | `experiments/robustness.py`, `make_set.py` |
 | `grade/` | The forty final-style twins with a measured backdrop grade | `experiments/grade.py` |
 | `generators/` | Twins drawn by Nano Banana Pro (11) and Qwen-Image-2.1, against the Codex draws | `experiments/generators.py` |
+| `prefinal/` | Pre-final film sets for five candidate genres (`western`, `sci-fi`, `horror`, `period-drama`, `detective`, three variants each, five candidates per card) and six bonus character cards (`cast`); `outside/` holds an outside rater's sample and answers | `make_set.py`, `experiments/outside_rating.py` |
 
 A set run folder holds `plan.json` (with the request that made it) and `briefs.json`, the drawings in `tries/`, prompts in `prompts/`, Blender models in `models/`, pairwise judgements in `choose/`, `check.json` with every try's checks, `rounds.json` and `edits.json` with every edit and whether it was kept, and `report.md`.

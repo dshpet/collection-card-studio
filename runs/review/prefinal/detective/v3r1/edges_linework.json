@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the neon motel signs have bright glow halos around their frames, and the bed, arrow and cutlery icons have a thick dark contour of the same weight everywhere. The house, fence and tree behind them are drawn with almost as many crisp edges as the signs, so nothing is clearly the focus. Outline darkness 0.161 is above the real range. B: the round sign's rim has a firm dark edge and the brick grooves are dense, but the edges get stronger toward the sign, and outline darkness 0.124 is inside the real range.",
+   "fix": "Remove the glow halos around the sign frames and the dark outline around the icons. Keep the edges sharp only on the front sign, and draw the motel, fence and tree with soft, low-contrast edges."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the hat's silhouette is clean, with one firm edge under the brim, and the felt crown has very few internal edges. B: the jacket has a dark contour around the collar, the cuffs and every pocket flap, and each badge on the sash is ringed with a heavy line. The jacket's internal edge density is near the top of the real range (0.159), and the background has a dense fan of rays.",
+   "fix": "Show the pocket flaps, cuffs and badge rims with soft shading steps instead of dark rim lines, and use fewer, wider background rays."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the lion's mane and body are traced with a dark, outline-like contour, while the inside of the statue has almost no edges (0.05, below the real range). The background is busier than the subject: every tree crown, path brick and grass tuft has a crisp edge. B: the caravan has thin, precise seams around the door, windows and stripe and a clean silhouette, the background is quiet concentric rings, and it matches the real caravan card.",
+   "fix": "Draw the lion statue's carved details as crisp, thin seams and remove the dark line around its silhouette. Soften the park behind it into simple shapes with soft edges, without outlined leaves or bricks."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the radio body and tabletop are covered in sharp wood-grain lines, and a dark contour runs around the cabinet and speaker ring. Outline darkness is 0.1, just above the real range. B: the rocking chair has firm edges on its rails and spindles, and its floor grain is lighter. Outline darkness 0.041 is inside the real range.",
+   "fix": "Show the radio's wood as smooth, softly shaded surfaces with at most a faint grain, keep the tabletop almost plain, and drop the dark line around the cabinet."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: on the popcorn cart the awning scallops and wheel spokes have firm edges, and edge density is inside the real range. B: the camera's bellows folds, the ribs inside the flash reflector and the wood grain on the table are all sharp lines of equal weight. Internal edge density is 0.235, well above the real maximum of 0.179.",
+   "fix": "Merge the bellows folds into a few broad soft steps, show the reflector as a smooth gradient instead of many ribs, and keep the table surface nearly plain."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the briefcase has a lost, soft right edge, dashed stitching and a fine leather texture, and few strong edges inside it (0.069). B: a uniform dark contour runs around the whole vending machine cabinet, the window frame and the coin tray, and each bottle and can is ringed with a line. Outline darkness 0.088 is near the real maximum.",
+   "fix": "Remove the even dark line around the vending machine. Separate the cabinet from the background with a light-and-shadow change, and make the bottle edges soft behind the glass."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the bus has firm window and body edges against a moderately busy street. B: the taxi's checker band and body have clean edges, and the asphalt has a speckled texture. Every measurement for both cards is inside the real range, and their outlines are comparable.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the shield's silver rim separates from the background through shading, with no drawn line, and the house emblem has thin, precise edges. B: a thick, even black contour traces the whole ring box, around the lid and around the base, like an inked outline. Outline darkness 0.13 is above the real range.",
+   "fix": "Remove the dark outline around the ring box. Let the red velvet's silhouette come from its own shading against the blue rays, with a soft shadow underneath."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the ivy and wreath have many outlined leaves and petals, so subject density is high, but the door panels are soft. B: every brick is cut by a thick, dark groove of the same weight as the door frame, so the wall competes with the door and there is no clear focus. Its background density of 0.16 is far above the real maximum of 0.089. The door, step and hinges have heavy contours too.",
+   "fix": "Draw the brick wall with faint, thin mortar lines that fade away from the door. Keep the sharpest edges on the door and its window, and remove the dark outline around the frame and step."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the fingerprint ridges are bold dark strokes, but they are the subject itself, and the ink pad and board have clean silhouettes. B: every continent and island on the map is traced with a thick, even dark coastline, the fold creases are lines too, and the table has busy plank grain (background 0.077, above the real range).",
+   "fix": "Make the coastlines thin color boundaries instead of dark outlines, show the folds as soft shading changes, and quiet the wood grain on the table."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the magnifier's rim and handle have soft-to-firm edges with no line around them, and the background rings are faint. B: a heavy double black line traces the backboard frame, and the net strands and rim are sharp dark strokes. Outline darkness 0.201 is far above the real maximum of 0.122.",
+   "fix": "Remove the dark outline around the backboard. Show the red frame's thickness with light and shadow, and draw the net with soft, light edges."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the popsicle has a light frosty rim (outline darkness -0.157) with dense droplet edges, but the background rays are quiet. B: every grape, seed, strawberry seed and the plate rim is outlined. The table planks have long, sharp grain lines, so background density is 0.037, more than twice the real maximum of 0.017, and there is no edge hierarchy between the fruit and the table.",
+   "fix": "Show the wooden table as soft, out-of-focus planks with little grain, outline only the outer silhouette of the fruit softly, and keep the sharpest edges on the watermelon."
+  }
+ ],
+ "pattern": "Generated cards outline their objects with a dark, even line that is equally heavy all the way around (ring box, basketball backboard, vending machine, map coastlines), where real cards separate an object from the background with shading. They also put sharp, dense texture into the background (brick grooves, wood grain, ivy, table planks), so the background has as many edges as the subject and the edges do not get sharper toward the focus."
+}

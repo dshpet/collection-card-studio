@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (rocking chair): the key light comes from the upper left. The right faces of the posts and rockers fall into a cool grey shadow side, and a soft cast shadow sits on the floor. B (hound): the body is lit almost evenly, with a bright glow behind the back and a warm, low-direction read in the lens. The dark cast shadow under the belly is the only strong cue. B's light_bias is 0.185, below the real range.",
+   "fix": "Light the dog from the upper left so the left flank and head top are bright and the right haunch and chest turn into a cool, darker shadow side; keep the soft contact shadow under the paws."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (graduation cap): the board's top is one flat, bright plane with a crisp, glossy edge highlight, like smooth plastic. The skullcap below goes almost black, so the jump from lit to dark is abrupt. Its shading_range of 0.847 is above the real range. B (fedora): the felt turns gently. The crown dent has a soft shadow pocket and the underside of the brim darkens gradually.",
+   "fix": "Shade the cap's top board with a soft gradient from the upper-left corner to the lower-right, use a broad matte sheen instead of a crisp glossy edge, and lift the skullcap's shadow side to a mid-dark blue."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (fuel pump): warm sunset light comes from the left. The right side of the body turns into shadow softly, and the cap has a gentle rim. B (treasure chest): the lid is lit hard from the top, the front panel drops steeply into dark, and the gold trim has sharp glossy hot spots. B's shading_range of 0.906 and form_contrast of 0.691 are both above the real range.",
+   "fix": "Soften the chest's light: make the front panel only slightly darker than the lid, give the gold trim a broad soft sheen instead of sharp white hot spots, and lighten the shadow inside the lid."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (typewriter): hard, photographic side light. The body has a deep black shadow side, and the dark desk takes a heavy cast shadow. Each key cap has its own sharp specular hit. Its light_bias of 1.315 and form_contrast of 0.774 are far above the real range. B (popcorn cart): even upper-left light, a soft shadow under the awning, and gentle shading on the wheels and cart body.",
+   "fix": "Light the typewriter with a soft key from the upper left plus strong fill, so the shadow side is a medium green, not black. Use small soft highlights on the keys and a light, soft cast shadow on a lighter desk."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (door with magnifier window): the panels and frame are lit evenly. The frosted window glows from inside, and a soft, featureless shadow falls on the wall to the right. Its form_contrast of 0.674 is above the real range. B (wreath door): dappled cast shadows from the ivy fall across the blue door, and the panel bevels catch light from the upper left, so the shading looks clearly directional.",
+   "fix": "Light the door from the upper left so the left edges of the frame and panel bevels catch light and the right edges darken. Drop the inner glow on the window and keep a short, soft cast shadow at the base."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (street lamp): painterly, soft form turn on the iron, with a warm glow from inside the glass. B (box camera): near-black body with sharp metallic edge highlights, a mirror-like chrome flash dish and a deep shadow side. It reads like a photographic product render. Its shading_range of 0.918 is above the real range.",
+   "fix": "Lift the camera body to a mid charcoal with soft top-left light. Turn the chrome dish into a soft brushed sheen instead of a mirror, and open up the right side's shadow with cool blue fill."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (oil lamp): the lamp is lit head-on and almost symmetric. The flame and glass glow evenly from the centre, and the brass has sharp spots on both sides with no clear shadow side. Its light_bias of 0.745 is slightly above the real range. B (magnifier): the gold ring is lit from the left with a darker right side, and one soft streak sits on the glass.",
+   "fix": "Put the main light on the upper left of the brass lamp and let its right side turn into a warm brown shadow. Keep one soft highlight on the glass chimney instead of an even central glow."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (sneakers): the shoes are lit evenly over their whole surface, with no modelled light side or shadow side. Only a hard, separate cast shadow falls to the left on the floor. Its light_bias of 0.019 is far below the real range and its shading_range of 0.82 is above it. B (safe): the top and the left face are lit, the right side face turns darker, the door bevel catches an edge light, and a soft contact shadow sits under the feet.",
+   "fix": "Light the sneakers from the upper left so the toe caps and left sides are bright and the inner and right sides fall into a soft shadow. Join the cast shadow to the soles with contact darkening."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (boxing gloves): soft, rounded form turn on the padding, light from the upper left and gentle crease shadows. B (rotary phone): glossy black body with sharp white specular streaks, a dark desk and deep contrast, like a photograph. Its form_contrast of 0.708 is above the real range.",
+   "fix": "Paint the phone body as a lighter, matte charcoal with a soft top-left sheen. Use broad soft highlights instead of sharp white streaks, and keep the desk light enough that the cast shadow reads softly."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (shield): flat silver face with one diagonal brushed sheen, little turn into shadow, and a broad, blurry drop shadow below. Its form_contrast of 0.413 sits at the bottom of the real range. B (vending machine): clear upper-left key. The left side face is darker than the front, and soft contact shadows sit under the feet.",
+   "fix": "Give the shield face a gentle dome: bright at the upper left and turning darker toward the lower right edge. Add a thin light rim on the gold border and use a short, tight shadow under the shield instead of a wide blur."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (water bottle): soft, translucent plastic with a rounded light side on the left and gentle shadow on the right. B (plane ticket): almost no shading. It is a flat graphic slab with a faint edge glow. Its shading_range of 0.298 is far below the real range.",
+   "fix": "Give the ticket thickness: a bright upper-left edge and a darker lower-right edge, a soft shadow under it, and a slight curl so the paper face shades from light to mid tone."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A (travel book): cool, directional light from the upper left. The cover is lit, the page block and spine turn darker, and the cast shadow on the table is soft. B (fingerprint folder): almost even light over the whole folder, with only a faint shadow along the bottom edge. Its shading_range of 0.596 and light_bias of 0.146 are both below the real range.",
+   "fix": "Light the folder from the upper left so the front flap is bright at the top-left and falls off toward the lower right. Darken the edges of the layered pages and add a soft cast shadow on the desk to the lower right."
+  }
+ ],
+ "pattern": "Generated cards miss the real cards' moderate, consistent upper-left key light. That key turns softly into a cool grey shadow side. Generated cards fail in one of two ways: (1) flat, even, almost frontal light with weak direction (folder, ticket, sneakers, shield, centred oil lamp), or (2) a photographic product-render look with near-black shadow sides, glossy black or chrome surfaces, sharp white specular streaks and heavy cast shadows (typewriter, rotary phone, box camera, treasure chest)."
+}

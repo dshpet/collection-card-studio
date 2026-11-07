@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (pumpkin bucket): the light is nearly frontal and the orange body turns into shadow evenly all the way round, with no clear core shadow on the right side. The only strong dark is a long, hard cast shadow on the planks. form_contrast is 0.417, at the bottom edge of the real range. B (mower): the light comes from the upper left. The hood is lit on top, the side panel goes darker, and the wheels have dark contact shadows on the grass. That matches the left-key lighting on the real cards.",
+   "fix": "light the pumpkin bucket from the upper left, make its right side clearly darker with a soft core shadow, and keep the cast shadow short and soft under the bucket"
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (spider): the black body has glossy sheen spots on top of the abdomen and head. The legs are lit almost the same on both sides, and there is a dark pooled cast shadow on the stone. The light reads like a top studio spot, not a side key. A (palm): the fronds are lit from the upper left, their undersides are softly darker, and the trunk turns smoothly. light_bias is 0.223, at the low edge of the real range, but the shading looks real.",
+   "fix": "light the spider from the upper left so its right-side legs and body fall into a softer shadow, use one broad soft sheen instead of several shiny spots, and add a light blue bounce along the lower edges"
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (hourglass): shading_range is 0.91, above the real maximum. The lens shows a heavy dark vignette around the object, very dark shadow sides on the posts and a hard cast shadow to the right, which looks like an old stage-lit 3D render. B (vending machine): soft side light from the left, the right face gently darker, and a mild contact shadow under the feet. That is within the real range.",
+   "fix": "light the hourglass softly from the upper left with gentle shadows, no dark vignette around it, and a soft short shadow under the base"
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (jack-o-lantern): the main light is the glow inside the carved face. The pumpkin's outer skin is lit almost evenly from the front, and the step and door get warm spill light. shading_range is 0.847, above the real maximum of 0.831. B (topiary): clear sun from the upper left, a darker right side on each tier and a crisp cast shadow on the lawn to the right, which is consistent with the real outdoor cards.",
+   "fix": "light the pumpkin from the upper left with the right side clearly darker, keep the face glow small and inside the carving, and add a soft contact shadow where it sits on the step"
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (witch hat): one spotlight from above, a strong vignette that darkens the background corners, and a long, dark, hard-edged cast shadow on the table. The cone turns from light to dark in one smooth band with no bounce light. B (fountain): even soft daylight from the upper left, gently shaded basins and soft contact shadows under each tier.",
+   "fix": "replace the spotlight with soft daylight from the upper left, take away the dark vignette, make the shadow under the brim short and soft, and add a faint warm bounce under the brim"
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (scarf): the red cloth folds are lit almost evenly, with only soft darkening in the creases and no shadow on the background. light_bias is 0.162, below the real range, and form_contrast is 0.256, well below it, so it looks flat and sticker-like. A (bag): light from the upper left, a darker right panel and a soft shadow on the floor. Its form_contrast is also low, so I'm not very sure of this pick.",
+   "fix": "light the scarf from the upper left so the right-hand folds and the knot underside go clearly darker, deepen the shadows inside the folds, and add a faint soft shadow behind it"
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (twisted tree): warm glowing rim light along the left edges of the trunk and branches. The trunk's middle has low contrast (form_contrast 0.341) and light_bias is 0.19, at the very bottom of the real range, so the form reads from the edge glow, not from a light side and a shadow side. A (bird feeder): a clear lit front face, a darker inside and a dark underside under the roof.",
+   "fix": "light the tree trunk from the upper left with a clear lit side and a darker right side on each twist, and remove the glowing outline along the branch edges"
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (mask): the purple face is lit almost evenly from the front, with smooth sheen strips on the gold trim. The edges of the eye holes are hardly shadowed and the mask casts no shadow. A (medal box): a strong upper-left key, a deep shadow inside the lid, a darker right side and a blue bounce on the lower edges, matching the real cards.",
+   "fix": "light the mask from the upper left so the right cheek curves into shadow, shade the inner edges of the eye holes, and drop a soft shadow below the mask"
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (purple book): a dim, moody setting with a vignette on dark wood. The cover is lit evenly with little turn, and light_bias is 0.153, below the real range. A (map book): bright light from the upper left, a lit cover, a darker page block and a clear cast shadow on the wood.",
+   "fix": "put the book in bright light from the upper left, keep the right edge and the page block darker, add a soft cast shadow on the table, and don't darken the table edges"
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (viewer binoculars): chrome-style shading with sharp light and dark bands on the barrels and post. form_contrast is 0.627, above the real maximum of 0.590. B (music player): the same as the real anchor card, with soft upper-left light, a gently darker right edge and soft sheen on the earbuds.",
+   "fix": "make the binoculars a soft matte painted metal with gentle light from the upper left, one broad soft highlight per tube, and no sharp mirror-like bands"
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (broom): light_bias is 1.782, far outside the real range of 0.100 to 0.733. The handle is lit as a flat tube with one bright stripe, and the straw bristles are lit on one side only. B (balloons): soft upper-left key, a round highlight on each balloon and gentle shading down to the lower right, in line with the real cards.",
+   "fix": "light the broom softly from the upper left, shade the handle round with a gentle darker underside, and light the bristles evenly with soft darker gaps between the strands"
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (arched door at night): the light is spread evenly over the brick wall and door, with a warm glow from the round window and lavender light from the night sky. The arch stones barely change in brightness from left to right, and the step's shadow is soft and weak. A (wreath door): a clear upper-left key with dappled ivy shadows on the door and darker panel recesses. Its shading_range is 0.831, at the top edge of the real range.",
+   "fix": "light the door from the upper left so the arch stones and the door's right half go clearly darker, deepen the shadow under the step, and keep the window glow small"
+  }
+ ],
+ "pattern": "The generated cards don't use the real cards' main light from the upper left, where one side of the object is lit and the other side and the underside clearly go into shadow. Instead they use (1) near-frontal, even light so the form hardly turns (low form_contrast, low light bias: the scarf, mask, purple book and twisted tree), or (2) stagey light: one top spotlight with a dark vignette and long hard cast shadows (the hat and hourglass), glow from inside or from a window used as the key light (the jack-o-lantern and night door), glowing outlines along edges, or sharp chrome-like light and dark bands (the binoculars). The real cards keep a soft side key, a medium-dark shadow side, a short soft contact shadow and a faint colored bounce on the lower edges."
+}

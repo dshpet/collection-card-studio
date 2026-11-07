@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the beach ball is huge and close up. It fills about half the card, sits low and left, and its shadow runs off the left edge, so it reads at once. B: the ball of sticks sits whole and centred on a separate sand floor, with a large purple sky above it. It reads as a small object set into a staged scene.",
+   "fix": "Draw the ball of sticks larger and closer, filling most of the card. Let its lower edge come near the bottom of the card. Show only a thin strip of sand and no separate horizon line."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the travel book fills over half the card (0.527, above the real range) and its corners come close to the edges. The many stickers on the cover compete with each other at thumbnail size. B: the coiled belt lies on diagonal floorboards. It sits to the upper left with the buckle at the lower right, and has even space around it.",
+   "fix": "Shrink the book so it fills about 40% of the card, with clear space on every side. Use fewer, larger symbols on the cover so one shape reads first."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the pair of boots stands tall, centred, and fills the height of the card. B: the sneakers are short and wide (height 0.487, below the real range) and sit in the lower half. A flat orange wall fills the top third, and a hard line between floor and wall looks like a product photo setup.",
+   "fix": "Turn the sneakers at an angle and bring them closer so they fill most of the card's height. Replace the floor-and-wall split with a single soft radial background."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A matches the real iced-drink card: the glass is centred, with the straw and umbrella reaching up into the top corners. B: the neon ice cream runs nearly the full height of the card (0.877, above the real range), almost touching the top and bottom edges. The glowing pink outline and the vertical striped wall pull the eye as much as the cone does.",
+   "fix": "Draw the ice cream cone smaller, about 75% of the card's height, with space above and below. Drop the neon glow outline and use a plain soft background."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: one coin-operated viewer, cropped by the bottom edge in the same way as the real lighthouse card, with the city skyline kept soft behind it. B: a full campsite. The fire is in the centre, while a cabin wall with a lit window at top left and a kettle on a stone at right compete for attention.",
+   "fix": "Show only the campfire, larger and at a slight angle, with its logs cropped by the bottom edge. Remove the cabin and the kettle, and use a dark plain background."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the cowboy hat is tilted, spans almost the full width, and its brim comes close to the side edges. That gives it a lively three-quarter read. B: the graduation cap is centred, nearly front-on and symmetric, and short (height 0.506, below the real range), leaving even empty rings above and below.",
+   "fix": "Tilt the graduation cap about 20 degrees toward the viewer and enlarge it to fill more of the card's height. Let the tassel swing down toward the lower right corner."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "B is the real lighthouse card: big, cropped at the bottom, and filling the height of the card. A: the windmill is narrow and small (width 0.493, below the real range). It is shown whole on a stone plinth on a patch of dirt, with a wide prairie and clouds around it, which makes it read as a small diorama.",
+   "fix": "Draw the windmill close up so the wheel and tower fill the card, with the tower cut off by the bottom edge. Leave out the plinth and the ground patch."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the cactus is centred and buried in sand, so its base is cut off. B: the topiary is shown whole on a round stone planter, set in a garden with a hedge, a path and sky. It reads like the small staged scenes in the lessons (the lighthouse on a rock island).",
+   "fix": "Draw the spiral topiary closer, with its bottom cut off by the bottom edge of the card. Drop the planter and the path, and keep only a soft green hedge behind it."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the saddle hangs on a rail that runs off both side edges. The saddle itself is centred, with clear space around it and the stirrups at the bottom. B: the boxing gloves are wide and squat (width 0.951, above the real range; height 0.517, below it). The right glove is cut off by the right edge (margin 0.021), and a flat table edge splits the card.",
+   "fix": "Turn the pair of boxing gloves to an angle and stack them so they fill more of the card's height. Keep about 10% space from the side edges and use a soft radial background with no table."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A matches the real suitcase card: centred, filling the width, standing on a green floor with sun rays behind. B: the lawnmower's body sits low and to the lower left, and its long handle runs to the top right corner. The mower fills only about 0.21 of the card, and a large empty cyan area sits above the body.",
+   "fix": "Draw the lawnmower closer at a three-quarter angle so the body fills the centre of the card. Shorten or crop the handle at the top edge so it does not leave empty space."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both are narrow, upright lamps, centred on sun rays, with similar fill (0.17 vs 0.20) and similar margins. The brass oil lamp in A and the black lantern in B frame the same way, so composition gives no reason to pick one.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the wagon wheel is tilted at a steep angle and fills only part of the card, with wide margins (0.119, above the real range). It looks like a thin disc floating on a diamond pattern. B: the submarine fills the card in a three-quarter side view, with the propeller near the left edge and the periscope pointing toward the top right.",
+   "fix": "Turn the wagon wheel less edge-on so more of its face shows, and enlarge it to fill about 85% of the card's height."
+  }
+ ],
+ "pattern": "Generated cards show the whole object, centred and nearly front-on, often standing on a base or inside a small scene: a plinth, a planter, a rock island, a table edge or extra props. That leaves either a flat band of empty background or a second item that pulls the eye. The object's box also tends to fall outside the real range, either too short and wide or too tall. Real cards turn the object to a three-quarter view, bring it close, let an edge crop it (the lighthouse base, the rail ends), and keep a single hero with no competing props."
+}
