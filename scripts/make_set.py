@@ -248,8 +248,8 @@ def model_card(run, brief, rater, look="plain", photos=()):
     """Write a Blender blockout of the card's object, render it and fix what the render shows.
 
     photos: real photos of the object, shown to the modeller for its construction only.
-    Returns the render, or None when no model rendered, and the card is drawn from its brief alone. A failed card is
-    not modelled again on a rerun: its candidates were drawn without a model."""
+    Returns the render, or None when no model rendered, and the card is drawn from its brief alone. A model that
+    failed in Blender is not tried again on a rerun; one stopped by an error, such as a model call, is."""
     folder = run / "models"
     render, log = folder / f"{brief['id']}.png", folder / f"{brief['id']}.json"
     if render.exists() or log.exists():
@@ -257,9 +257,8 @@ def model_card(run, brief, rater, look="plain", photos=()):
     folder.mkdir(parents=True, exist_ok=True)
     try:
         return build_model(folder, brief, rater, look, photos)
-    except Exception as error:  # a model is optional: the card is drawn from its brief
+    except Exception as error:  # a model is optional: the card is drawn from its brief, and a rerun tries again
         print(f"{brief['id']}: no model, {type(error).__name__} {str(error)[:160]}", flush=True)
-        save_json(log, [{"error": f"{type(error).__name__}: {str(error)[:1500]}"}])
         return None
 
 
@@ -382,17 +381,21 @@ def rate_blind(path):
 
 
 def judge_names(pairs):
-    """For each (asked, seen): did the blind rater see the same kind of thing? A missing answer counts as yes."""
-    schema = strict({"answers": {"type": "array", "items": strict({"line": text(), "same": {"type": "boolean"}})}})
-    listing = "\n".join(f"l{i}. asked for: {asked} | seen: {seen}" for i, (asked, seen) in enumerate(pairs))
+    """For each (asked, seen): did the blind rater see the same kind of thing? A line left unanswered counts as yes;
+    a failed call stops the check, so a rerun checks these tries again."""
+    keys = [f"l{i}" for i in range(len(pairs))]
+    schema = strict({"answers": {"type": "array", "items": strict({"line": {"type": "string", "enum": keys},
+                                                                    "same": {"type": "boolean"}})}})
+    listing = "\n".join(f"{key}: asked for: {asked} | seen: {seen}" for key, (asked, seen) in zip(keys, pairs))
     prompt = ("A rater saw each image without knowing what it should show. For each line, is what they saw the same "
               f"kind of thing as what was asked for? Answer every line by its key.\n{listing}")
-    try:
-        answers = {a["line"]: a["same"] for a in ask_claude(prompt, None, schema)["answers"]}
-    except Exception as error:
-        print(f"name check failed, cards pass it: {type(error).__name__}", flush=True)
-        answers = {}
-    return [answers.get(f"l{i}", True) for i in range(len(pairs))]
+    for attempt in (1, 2):
+        try:
+            answers = {a["line"]: a["same"] for a in ask_claude(prompt, None, schema)["answers"]}
+            return [answers.get(key, True) for key in keys]
+        except Exception as error:
+            print(f"name check attempt {attempt}: {type(error).__name__}", flush=True)
+    raise RuntimeError("the name check failed twice. Rerun to continue")
 
 
 def check_tries(run, tries, knowledge, workers):
@@ -506,8 +509,8 @@ def run_folder(args):
     runs = ROOT / "runs"
 
     def ours(folder):
-        plan = folder / "plan.json"
-        return not folder.exists() or (plan.exists() and load_json(plan).get("request") == request)
+        record = folder / "request.json"
+        return not folder.exists() or (record.exists() and load_json(record) == request)
 
     if args.run:
         run = runs / args.run
@@ -540,6 +543,7 @@ def main():
 
     run, request = run_folder(args)
     run.mkdir(parents=True, exist_ok=True)
+    save_json(run / "request.json", request)
     print("run:", run_name(run), flush=True)
     knowledge = load_json(ANALYSIS / "knowledge.json")
     cards = load_json(ANALYSIS / "cards.json")

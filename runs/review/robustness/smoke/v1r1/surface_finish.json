@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "B (sunscreen bottle and sunglasses) is the same card as the real one in the reference sheet. Its bottle is smooth, semi-matte plastic with a soft sheen, the sun emblem is a clean raised decal, and the lenses get one broad glossy reflection. That is the real cards' mix of finishes. A (neck pillow) is one solid blue material with a soft, blurry fabric grain across the whole surface. The radial pleats on the inner rim are drawn as many small wrinkles, and the seam along the outer edge is soft and smeared. Its micro_texture (0.0047) is below the real range: the fabric is smeared, not given small crisp stitch and weave detail.",
+   "fix": "Neck pillow in smooth, slightly satin fabric with a soft sheen along the top curve. Draw one clean piped seam around the outer edge and a few broad, soft folds instead of many small wrinkles. Make the valve cap a separate glossy plastic part. No blurry fuzz texture."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (toaster) is smooth brushed chrome with broad, soft reflections. The matte black lever and feet and the glossy red knob set up a gloss contrast. The bread has fine pores. Its detail is low but simple, like the real cards' smooth hardware. B (vending machine) is lacquered blue plastic overall, and its glass door is sprinkled with tiny condensation droplets and specks. The cans and bottles are all equally shiny. That scattered decorative micro-detail on glass matches what the lessons show on generated cards (extra stitch dashes, scratches). Weak call: A's chrome is also a little soft and smeared.",
+   "fix": "Vending machine: a clear, clean glass door with one or two broad diagonal reflection streaks and no water droplets. A matte, satin blue body. Glossy reflections only on the cans and the metal handle."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (fruit plate) has painterly but simple surfaces: wet, glossy fruit with a few large droplets, and a matte plank tabletop with soft wide grain. The glass plate edge is translucent. B (cutting board) has fine streaky grain over the whole board, a woven fabric texture and fine wrinkles throughout the gingham cloth, and finely drawn seeds and rind on every vegetable slice. Its micro_texture (0.028) and gloss_share (0.35) are both above the real range. Every surface carries the same amount of fine detail and sheen.",
+   "fix": "Cutting board in smooth, warm wood with only a few faint, wide grain lines. Make the tablecloth flat matte gingham with soft broad folds and no weave texture. Give the vegetable slices simple flat cut faces with a light, wet shine on the tomato only."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (music player) is clean, satin orange plastic with soft broad highlights. The small glossy LED buttons and the white glossy earbuds give it a believable gloss range. B (lion statue) is marble with thin dark crack-like veins drawn across the plinth and body. The mane is a soft, smeared mass of wavy strokes, and the whole statue has one even waxy sheen. The veins read as surface cracks, not as stone, which is the same added-scratches tell as the generated computer lesson.",
+   "fix": "Lion statue in smooth, pale matte stone with a soft polished sheen only on the paws and face. No crack lines or veins. Shape the mane as a few large, clean, rounded locks with simple soft shading."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (bird feeder) has painted wood planks with quiet, fine grain streaks, a matte finish and simple plank seams. The rope is drawn as a few broad twists. B (pot) is a uniformly lacquered teal enamel pot scattered with small water droplets. The steel handle brackets have visible rivets and bolts, and the stove ring is glossy black. Both the droplets and the rivets are the decorative micro-detail and hardware that the real cards leave out. Low confidence: A's grain is also fairly busy.",
+   "fix": "Cooking pot in smooth, satin teal enamel with one soft broad highlight and no water droplets. Make the handles a single smooth metal loop with no rivets or bolts, and keep the lid knob simple."
+  }
+ ],
+ "pattern": "Generated cards add decorative micro-detail that the real cards leave out: water droplets on glass, enamel and fruit, scratch and crack lines (marble veins, plastic scratches), stitch dashes, and rivets or bolts on hardware. They also fill every surface with equally fine grain or weave and give it one even lacquered sheen. Real cards keep surfaces broad and smooth, simplify hardware into a few large parts, and mix matte and glossy areas within one object."
+}

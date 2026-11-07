@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "B, the sunscreen card from the real set, has broad value groups: a mid-dark green wave background with darker wave bands at the edges, a light bottle in the middle, and dark glasses as the main dark accent at the bottom. Its hero sits in the middle of the value range and the edges are only slightly darker. In A, the pink rings get lighter toward the centre, so the pale area behind the pillow works as a glow. The blue pillow then reads as one dark mid-grey mass against near-white. The darkest accents are a ragged black ring of creases around the inner hole and a black line along the bottom rim. A's lightness gap (-0.19) is close to the dark end of the real range. That pattern of a dark hero on a lit halo matches the generated glove in the lessons.",
+   "fix": "Keep the pink rings at the same brightness from corner to centre, with no lighter halo behind the pillow. Light the pillow more brightly from the top-left so its upper face is as light as the background. Keep the darkest shadow as one small soft area under the pillow, not a dark ring around the hole."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A, the toaster, is high key (0.713). The bottom of the background floor clips to white, so the edges are brighter than the centre (vignette -0.008). The chrome body falls into the same light grey as the background, and the toast is near-white, so the hero separates from the background mostly by hue, not by value. B, the vending machine, is a clear dark hero against a mid-grey purple wall. It has one light inner window and slightly darker top corners, which is closer to how real cards separate the hero from the background. The difference between the two is small.",
+   "fix": "Darken the floor below the toaster to the same mid pink as the wall, with no white hotspot. Let the corners of the card fall a little darker. Give the chrome a darker side face so the toaster stands out from the background by lightness as well as color."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B's gingham tablecloth runs full white-to-dark checks edge to edge, so the strongest local contrast on the card is in the background. The cutting board is a flat mid grey that the checks around it almost swallow, and only the cucumber and tomato slices make small dark accents. Its mean lightness (0.743) is above the real range. In A, the wood planks are a quiet light-to-middle group. The plate rim makes a light ring, and the dark accents gather inside the hero: the watermelon seeds, the blueberries and the shadow under the plate. That keeps the contrast on the object, as on the real map and tent cards.",
+   "fix": "Make the tablecloth pattern soft and low contrast, with pale blue checks on light blue and no pure white squares. Darken the cards' edges slightly. Give the cutting board a lit top face and a clearly darker side edge and cast shadow, so the board is the strongest light-against-dark shape on the card."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both cards have a hero much lighter than its background (lightness gap above 0.2, beyond the real range). In B, the whole lion and its plinth are one clipped near-white mass with very little roll-off into shadow; the mane and base faces are almost the same white. Behind it, the dark tree masses at the top-left and top-right corners are the darkest values, so the darkness sits in the scenery, not on the hero. In A, the orange player and the white earbuds are also light, but the concentric purple rings make an even pattern of mid and dark bands, like the real flowerbed and caravan backgrounds. The player body also has a mid-grey side face.",
+   "fix": "Shade the marble lion in warm light greys, not pure white. Give it a clearly mid-grey shadow side on the body and on the plinth's front face. Lighten the trees at the top corners to a middle green so the darkest accents are the shadows under the lion's paws and the plinth."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B has a strong vignette (0.195, far above the real top of about 0.10). A light tiled wall fills the top, while the stovetop and burner make a large near-black bottom third. A hot flame glow sits under the pot, the lit-from-below halo trope seen in the generated lessons. The teal pot is a single mid-dark mass with little difference between it and the dark stove. In A, the bird feeder has dark tree-trunk and leaf masses at the top corners. The hero roof and box are mid greys against a lighter park, and the seeds are the light accent. Its contrast is also high (0.204), but it has no edge-to-centre darkening pattern.",
+   "fix": "Show the stovetop in a mid grey, not near-black, and make the flame a small accent with no orange glow spreading across the stove. Light the pot from the upper left so its upper body is clearly lighter than the stove beneath it, and keep the corners only slightly darker than the centre."
+  }
+ ],
+ "pattern": "Across these pairs, the generated cards most often go wrong in where the light and dark sit, not in how bright the card is overall. They put a lit halo or glow behind or under the hero, like the pillow rings, the burner flame and the glove lessons. Their darkest values sit in the scenery or the corners, like the stove, the trees and the near-black edge vignette, instead of in small accents on the hero. The background often carries contrast as strong as the hero's or stronger, like the gingham, so value separation is lost and the hero stands out mostly by hue. Light heroes clip to one flat white with little roll-off."
+}

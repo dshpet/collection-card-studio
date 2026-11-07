@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "B, the sunscreen bottle with sunglasses, matches the real card in image 1: a straight-sided bottle, a crisp cap and thin sunglasses temples. A is a neck pillow drawn as a fat, closed ring. The two front ends swell together and touch at the bottom middle, so the opening is a small teardrop. Everything is one even, puffy tube with no flatter inner side or tapered ends. This is the overall swelling seen on the generated lesson cards.",
+   "fix": "Draw a U-shaped travel neck pillow with a clear gap between the two front ends. Make the tube a little slimmer, flatter on the inner side, and slightly narrower toward the tips."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A, the toaster: the metal body is a swollen block with large, soft rounded corners all round. The two toast slices are oversized; together they are about as tall as the body and as wide as the slot. The lever and dial are chunky stubs. B, the vending machine: a plain box with flat sides, straight vertical edges, tight top corners, and small feet that look right.",
+   "fix": "Draw the toaster body as a box with flat sides and small, tight corner bevels. Make the bread slices stick only about a third of their height out of the slots. Use a slim lever and a small dial."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A, the fruit plate: the watermelon wedge and orange wedges are large next to the plate, but the plate rim stays a thin, flat disc. Real cards also enlarge their main parts, like the flowers in the flower bed card. B, the cutting board: flat faces, a crisp beveled edge, a round handle hole and thin vegetable slices. The silhouette for B missed the board, so its numbers are not reliable. Neither card shows the swelling or blob corners that marked the generated lessons.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A, the music player: the body is a puffy rounded slab. Its corners are large soft blobs rather than tight bevels, and its front face bulges. The big round button and the small button are swollen domes. The earbuds are bulbous, and the wire comes out of a corner in a way that makes no sense. B, the lion statue: the plinth has flat stepped faces and straight edges, and the lion's body proportions read correctly.",
+   "fix": "Draw the player as a thin, flat rectangular device with straight edges and small, tight corner bevels. Use flat, low buttons set into the face, and a headphone cable that plugs into a small jack on the top edge."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A, the bird feeder: the roof and tray boards are planar with straight runs and crisp corners, and the hanging rope stays thin. B, the stock pot: straight walls, a flat lid with a small knob, thin metal handles, and a stove stand made of thin round rails. Both keep their thin parts thin and their flat parts flat. On shape alone, nothing marks either card as generated.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards swell objects. Box-like bodies turn into puffy slabs with big soft corners, small parts like buttons, knobs, toast and mice grow chunky, and secondary parts are oversized compared with the main body. Real cards keep flat faces, tight corner bevels and true part sizes."
+}

@@ -433,7 +433,8 @@ def judge_pairs(run, label, contests, rater=JUDGE):
 
 def choose(run, briefs, history, rater=JUDGE):
     """Mark each card's best candidate: most pairwise wins, ties to the earliest draw. A close win is marked unsure."""
-    options = {b["id"]: [t for t in history[b["id"]] if t["passed"]] or history[b["id"]] for b in briefs}
+    options = {b["id"]: [t for t in history[b["id"]] if t["passed"]]
+               or [t for t in history[b["id"]] if "unmeasured" not in t["issues"]] or history[b["id"]] for b in briefs}
     contests = [(b["id"], x["try_id"], y["try_id"], b["references"])
                 for b in briefs for x, y in itertools.combinations(options[b["id"]], 2)]
     wins = judge_pairs(run, f"pick_{briefs[0]['variant']}", contests, rater) if contests else {}

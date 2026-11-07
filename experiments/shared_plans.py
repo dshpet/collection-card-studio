@@ -44,7 +44,8 @@ def main():
         return prompt.replace(LIMIT, SHARED)
 
     make_set.plan_prompt = shared
-    make_set.plan_problems = lambda plan, cast=0: [p for p in original_problems(plan, cast) if "share too many" not in p]
+    make_set.plan_problems = lambda plan, cast=0, variants=None: [
+        p for p in original_problems(plan, cast, variants) if "share too many" not in p]
     knowledge = load_json(ANALYSIS / "knowledge.json")
 
     def one(theme):

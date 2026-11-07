@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "B, the sunscreen bottle and sunglasses, matches a real reference card. The light comes from the upper left. The bottle's right edge falls into a darker core, and the glasses cast a soft, dark contact shadow onto the green floor. A, the neck pillow, is lit almost from the front. The light turns into shadow evenly around the whole ring, with only a mild darkening at the lower right. Every tube gets the same pleated shading, so there is no clear core shadow line. Its shadow on the pink backdrop is a faint, even halo, not a directional cast shadow.",
+   "fix": "Light the pillow from the upper left. Keep the left and top of the tube bright, and put a clear darker band along the lower-right underside of each lobe. Add a soft, darker cast shadow falling down and to the right onto the backdrop."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A, the toaster, has studio-photo lighting. A large, smooth chrome sheen covers the front face, the right side and underside drop very dark, and a heavy dark falloff behind it pushes shading_range (0.843) above every real card. B, the vending machine, has a gentler, card-like setup. The front is lit, the left side face is moderately darker, and a soft contact shadow sits at the feet. Its numbers fall inside the real ranges.",
+   "fix": "Paint the toaster as a soft stylized object, not photographed chrome. Use a gentle light from the upper left with a moderately darker right side. Replace the mirror sheen with one or two small soft highlights. Use a light, soft contact shadow under the feet instead of a dark studio vignette."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A, the fruit plate, has soft overhead warm light. Each fruit gets a rounded form turn and small wet highlights, and the glass plate's rim casts a soft shadow to the lower left. B, the cutting board, is lit flat from the front. The board's top face is almost uniform, with only a thin darker right edge and a crisp, hard cast shadow at the lower right. The vegetable slices have no rounded modeling. shading_range 0.976 is far above the real maximum, partly because the red tomato leaks through as dark in the lens.",
+   "fix": "Light the board from the upper left. Let the board's top face shift slightly from light to darker across its length, and make the thick right and bottom edges clearly darker. Make the tomato, cucumber and carrot slices slightly domed, each with a lit top edge and a darker lower edge. Soften the board's shadow on the cloth."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A, the music player with earbuds, is lit softly from the front with almost no side bias (light_bias 0.15, near the bottom of the real range). The orange case shades the same on its left and right, and its shadow is a uniform glow around it. B, the lion statue, has a clear key light from the upper left. The right faces of the plinth and the lion's flank sit in a deeper shadow, and grounding on the grass matches the real outdoor scene cards.",
+   "fix": "Give the player a clear light from the upper left. Make the left and top bevel bright and turn the right and bottom sides noticeably darker. Drop a soft cast shadow down and to the right onto the backdrop. Give the earbud cords a darker underside."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A, the bird feeder, is lit by soft daylight. The roof top is lit and the eave underside dark, the seed tray's interior is shaded, and gentle light comes from the left, as on the real scene cards. B, the pot on the stove, is lit mainly by a glowing practical light, the flame. An orange glow spreads under the pot and across the stovetop, sharp white hot spots sit on the lid knob and handles, and the glossy teal body has a strong top sheen. This matches the glowing-lamp tendency in the generated lessons, such as the lit lighthouse lantern.",
+   "fix": "Light the pot mainly with soft daylight from the upper left. Make the flame glow small and local, just a faint warm tint at the pot's bottom. Replace the sharp white hot spots on the knob and handles with small soft highlights. Add a darker shadow side on the right of the pot."
+  }
+ ],
+ "pattern": "Generated cards are lit more from the front and more evenly. Their shadow sides are shallow and share the object's own color, with no deep, cooler core shadow on the side away from the light. Glowing practicals and glossy studio hot spots carry the lighting in place of one clear upper-left key with soft contact shadows."
+}

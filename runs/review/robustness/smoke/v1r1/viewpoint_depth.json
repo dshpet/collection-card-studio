@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "B (sunscreen and sunglasses) is the real card from the reference sheet. The camera is slightly low and frontal, with a clear green floor plane meeting the backdrop, and the glasses sit on that floor in front of the bottle. A (neck pillow) floats on a plain concentric backdrop with no ground plane. The pillow is tilted toward the camera, and the seam ripples and the valve stub at the bottom all follow that one tilted view. Floating objects with no ground also appear in the real cards (jacket, submarine). The low planar_share of 0.049 suits a fully inflated form and is inside the real range. On viewpoint I see no inconsistency in A.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (toaster) is a clear 3/4 view from slightly above. The top with its bread slots, the front and the right side are all visible. The feet stand on a soft floor that fades into the backdrop, and the slices lean back along the same view. B (vending machine) is close to straight-on at chest height. The front panel faces the camera almost flat, only a thin strip of the left side shows, and no top face is visible. It stands upright in the middle with a low, blurred floor line. The lessons show generated cards drifting toward this centred, frontal camera, while the real cards turn the object about 30–45°. planar_share is the same for both, so this rests on the camera turn alone.",
+   "fix": "Turn the vending machine about 35 degrees so its left side panel shows clearly next to the front, raise the camera a little so a strip of the top surface is visible, and let the cabinet fill more of the card height."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (fruit plate) is seen from about 45° above. The plate's ellipse, the wood planks running diagonally behind it and the upright fruit wedges all share that one view, and the plate fills the card the way the map card does. B (cutting board) is seen from high above, almost top-down, and is small in the frame, with a large empty area of gingham around it. The gingham squares show almost no shrinking with distance. Yet the tomato, cucumber and carrot slices are drawn as stacked, leaning coins whose faces turn toward the camera more than the board top does, so the slices and the board do not share one view. Real cards keep the hero large and the camera angle shared by every part.",
+   "fix": "Bring the camera in so the cutting board fills most of the card, at a 45-degree angle from above. Lay the vegetable slices flat on the board so they show the same angle as the board top, and make the checks shrink slightly toward the back."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (music player) is tilted toward the camera on a flat ring backdrop. The body's thickness shows along the right and bottom edges, and the earbud wires curl down in front of it on a consistent tilt. B (lion statue) has its pedestal in a 3/4 view from above, with the top step visible and the side receding to the right. The lion's head, though, faces the camera straight on at eye level. Behind it, the park path and trees recede toward a high horizon. The head and the base seem to come from slightly different camera heights. The real scene cards (motel, tent) have similar depth, so this is a weak call. planar_share is the same for both.",
+   "fix": "View the lion and its pedestal from one camera slightly above, with the head turned about three-quarters and seen a little from above, matching the pedestal top. Keep the park background simpler and softer."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "In B (pot on stove) the rim and lid ellipse of the pot is narrow, as if seen almost from the side. The burner ring and the stove top below it are seen from much higher, with a wide ellipse and a steeply tilted cooktop. The tile wall behind is perfectly straight-on. So the pot, the burner and the wall each have their own camera. B's planar_share of 0.589 is above the real maximum of 0.509, which fits the large flat tile and cooktop panels. A (bird feeder) also mixes views a little: the roof top and the seed tray are seen from above while the park horizon is low. But the feeder's own parts agree with each other, and its wooden boards are flat, as in the real cards.",
+   "fix": "Draw the pot and the stove from one camera slightly above: make the burner ring and the pot rim the same oval shape, tilt the cooktop only gently, and angle the tile wall a little so it recedes along with the stove."
+  }
+ ],
+ "pattern": "Generated cards tend to use a centred, frontal or eye-level camera and keep the whole object small inside a large backdrop or base. The real cards turn the object about 30–45°, crop in closer and fill the frame. The generated cards also mix camera heights across the scene: tops and supporting surfaces (burner rings, boards, pedestals) are drawn from higher above than the hero's body or face, so their ellipses and slants disagree. Large, perfectly flat backdrop panels raise planar_share above the real range."
+}

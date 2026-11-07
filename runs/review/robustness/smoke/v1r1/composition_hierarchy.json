@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "B matches the real sunscreen card in the anchor. The bottle sits slightly left of center and rises close to the top edge, the sunglasses run nearly to the right edge (margin 0.031), and it is set on a ground plane. A is a blue neck pillow floating dead-center on concentric pink rings. It has even, generous clearance on all sides (margin 0.112, at the top of the real range), no ground, and the rings frame it like a target. That matches the generated side of the lessons: centered, complete and padded.",
+   "fix": "Draw the neck pillow larger and in a three-quarter view, resting on a surface with a soft contact shadow. Let it reach close to one side edge instead of floating in the exact center with equal space all around."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A shows a toaster in a three-quarter view filling most of the width, with the toast slices reaching up toward the top edge. B shows a vending machine standing upright and narrow in the center (box_width 0.581, at the very bottom of the real range). Wide empty purple bands fill both sides and a bare floor sits below, so at thumbnail size the hero reads small inside a lot of flat gradient. The evidence is weak, because A's margin (0.112) is also slightly above the real range.",
+   "fix": "Draw the vending machine larger, filling the card top to bottom. Angle it more in three-quarter view and let its base or one side come close to the card edge so there are no wide empty purple strips beside it."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A's fruit plate fills the card (occupancy 0.308), tilted, with the watermelon reaching the top-left. B's cutting board is a small diagonal object (occupancy 0.061, far below the real minimum of 0.233; margins of 0.229 all around) floating in a sea of blue gingham. At thumbnail size the busy checkered cloth dominates, and the board with its thin vegetable slices hardly reads as the hero.",
+   "fix": "Zoom in so the cutting board with the sliced tomato, cucumber and carrot fills most of the card, coming close to the edges. Show only a little of the checkered tablecloth around it."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "B shows a lion statue in a park scene. The pedestal runs off near the right and bottom edges (box_width 0.935), the path and trees surround it, and the card crops the scene the way the real tent and lifeguard cards do. A shows an orange music player and white earbuds floating centered on concentric violet rings, small (occupancy 0.219, low end of the real range), with the earbud cord trailing into empty space. A is self-contained, uncropped and target-centered, which is the generated tendency in the lessons.",
+   "fix": "Draw the music player larger, in a three-quarter view, resting on a surface with a shadow. Let the earbuds and cord spill toward a card edge instead of floating centered on rings."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A is a bird feeder hung from a tree. The trunk runs through the full card height (box_height 1.0, margin 0, which is within the real range), and the feeder is centered with a park background. B is a teal pot centered on a gas stove, cropped at the bottom by the stovetop, with steam rising toward the top against a yellow tile wall. Both are frontal, centered and cropped by an edge, and both fill a similar share of the card. Framing gives no reason to choose.",
+   "fix": ""
+  }
+ ],
+ "pattern": "In the lessons, generated cards show the whole object, centered and frontal, with even padding on all sides, and often with extra scenery added around it (rocks around the lighthouse, a full computer setup). Real cards use a tilted three-quarter view, place the hero off-center, and let the card edge crop it, as with the lighthouse base and the desk. On the test pairs, what still gives generated cards away is a hero floating in the dead center of a flat backdrop or concentric rings with uniform margins, and a hero shrunk inside a busy background (p03 board) so the backdrop wins the first read."
+}

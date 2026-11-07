@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (neck pillow): the inside of the form is nearly edge-free, apart from a faint fine crinkle texture along the tube (subject density 0.017, far below the real 0.046–0.157). A continuous dark contour of even weight runs around the whole outer silhouette and the inner hole. It is the same weight on the lit and shadow sides, with no lost edges. The scalloped seam on the right rim is a row of soft blurred bumps, not a precise seam. B (sunscreen and sunglasses) matches the real reference card: thin, crisp seams at the cap and label oval, sharp sun-icon edges at the focus, and the glasses rims soften toward the back.",
+   "fix": "Remove the dark line around the pillow. Let the silhouette edge come only from the color change against the background, sharper on the lit top-left and softer where it turns into shadow. Add a few clean, defined seam lines and fabric folds on the tube, so its surface has visible structure instead of a smooth blur."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (toaster): subject edge density is low (0.065, below the real 0.087–0.228) and outline darkness is high (0.123, above the real maximum of 0.106). The chrome body is one broad smooth sweep with almost no internal panel lines. A heavy dark contour traces the whole body, the feet and the lever at one weight. The bread slices are the only busy area, with an even speckle of crumb dots. B (vending machine): thin, precise grooves around the window, the slot and the button. The silhouette edge is crisp but not inked, and density and background fall within the real range.",
+   "fix": "Remove the dark line around the toaster. Draw a few thin, precise seams on the chrome body: where the top plate meets the sides, around the bread slots and around the lever track. Make the edges sharpest on the bread and the front top corner, and let the back corner and feet fade softly into shadow."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (cutting board): subject density is 0.249, above the real 0.087–0.179. Every tomato, cucumber and carrot slice is ringed with a thick dark double edge at the same weight, and the board's long edges are soft and doubled, with no crisp corner. The gingham cloth puts an even grid of edges over the whole background, so the board does not stand out from it. A (fruit plate): the edges are sharpest on the watermelon seeds and orange segments, the glass rim is a thin, crisp ellipse, and the wood planks behind carry only a few long grain lines.",
+   "fix": "Give the board crisp, clean corners and one thin sharp top edge, with no doubled blurry outline. Separate the vegetable slices with simple light-to-dark color steps, not thick dark rings. Soften and blur the gingham cloth so its grid lines fade behind the board."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B (lion statue): background edge density is 0.068, four times the real maximum of 0.017. Tree leaves, every brick of the path and grass blades are drawn with sharp edges at full contrast, while the lion itself has few edges (0.05): the marble body is smooth, and the mane strands are the only detail. A dark contour wraps the mane and the plinth. Edge sharpness is reversed, with the scenery sharper than the hero. A (player with earbuds): the background is plain concentric rings, the device has crisp, thin bezel and button seams, and the cable is a clean single edge. This falls within the real range.",
+   "fix": "Blur and simplify the park behind the lion into soft green shapes and a pale path, with no individual bricks, leaves or grass blades. Put the sharpest detail on the lion's face, paws and plinth corners. Draw the marble veins as thin, precise lines and remove the dark line around the mane."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (bird feeder): the roof planks, the base board and the rope knots are traced with a dark brown cartoon contour of even weight. The trees behind have scalloped, inked foliage edges and the buildings have sharp window grids, so the background edges compete with the feeder. The measured outline darkness is low (-0.051), so this is a call by eye. B (pot on stove): one crisp rim highlight on the lid and pot, and thin handle edges. The tile grout grid is regular but low contrast, and the flame and steam edges are soft. This is closer to the real cards. Weak evidence: both sit within the real numeric ranges.",
+   "fix": "Remove the dark brown lines around the feeder's roof and boards. Separate the planks with thin shadow gaps and color changes only. Blur the trees and buildings behind into soft, out-of-focus shapes without inked leaf edges, so the feeder has the sharpest edges in the picture."
+  }
+ ],
+ "pattern": "On the edges vector, generated cards give themselves away in three ways. First, the whole silhouette is wrapped in a dark contour of even weight, with no lost edges on the shadow side. Second, edge sharpness is spread wrongly: the hero is either too smooth (big airbrushed surfaces without crisp seams) or over-detailed with doubled, thick grooves, while the background gets sharp, full-contrast detail (bricks, leaves, gingham, grout) that competes with the hero. Third, there are extra small parts (vents, buttons, bricks, slices), each cut with an identical crisp groove. Real cards keep thin, precise seams, put the sharpest edges at the focus, and keep the background low-contrast and simple."
+}

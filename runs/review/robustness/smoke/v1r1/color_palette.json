@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the neck pillow is one block of pure electric blue. Its shadow side turns a deeper, more saturated blue (shadow_chroma_kept 1.09), with no muted or neutral area anywhere on the object. The pink ring backdrop is almost as loud, so the hero and the background compete. B: the sunscreen bottle (it also appears among the anchor cards) has a believable orange-to-yellow local color, the sun label is a related orange, and the glasses are a navy accent. It sits on a green backdrop at moderate chroma.",
+   "fix": "Make the pillow a soft, slightly dusty blue fabric with muted grey-blue shading in the folds, and leave the blue less saturated than the pink background."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: a saturated royal-blue vending machine on a violet backdrop. The hero and the backdrop are neighboring hues, and the card is almost entirely cool (warm_share 0.03, below the real range). The only warm notes are the small cans. A: a neutral silver toaster picks up pink reflections from the magenta backdrop, with golden toast as the warm mass and a red knob as the single accent. That has the hero-to-backdrop contrast and the resting neutrals that real cards show.",
+   "fix": "Put the blue vending machine on a warm backdrop, such as a soft orange or yellow, or make the machine a warmer red, so that the hero and background are not both blue-violet."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: every fruit is pushed to its pure hue: saturated red watermelon, pure orange slices, lime-green grapes, and blue berries. That gives 4.4 hue families, and the whole card is pulled warm by the orange wood table (warm_share 0.85, the top of the real range). The glass plate goes greenish-cream in the lens. B: a warm brown cutting board on a cool blue gingham cloth. The warm hero on a cool backdrop matches the real cards, and the small tomato, cucumber and carrot accents stay inside the board.",
+   "fix": "Put the fruit plate on a cool backdrop, such as a light blue cloth or a blue-grey table, instead of orange wood. Tone the grapes and the orange down slightly so that the watermelon red leads."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the marble lion and its plinth are almost colorless (subject chroma 0.027, far below the real minimum of 0.08). The 'white' turns cream-beige in the lens, the same warm drift of whites that the generated computer and lighthouse showed in the lessons. The surrounding park is ordinary green and brick. A: an orange player on a purple ring backdrop is the real warm-hero-on-cool-backdrop pattern. Its background is very saturated and has few hue families, but the white earbuds stay neutral with cool lilac shading.",
+   "fix": "Draw the lion as cool white marble with blue-grey shadows, not cream, and give the statue or plinth a clearer local color, or put a colored accent on it so it reads as the hero against the green park."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: a teal pot on a loud saturated yellow tile wall. The burner pours orange glow across the dark stove, so the shadows on the stove top and under the pot go orange-brown, and both shadow chroma and the warm share are outside the real range. A: an orange and yellow birdhouse on a brown trunk against a cool green park and blue sky. That is the usual warm-hero-on-cool-backdrop split, though the roof and box are also near pure hue.",
+   "fix": "Tone the yellow tiles down to a pale, muted cream or grey-blue, and keep the stove top a neutral dark grey with only a small glow right under the flame."
+  }
+ ],
+ "pattern": "Two things still give generated cards away. Neutrals drift warm: whites go cream or beige, and shadows go orange-brown instead of a cool, related grey-blue. Heroes are pushed to pure, fully saturated hues with no muted resting areas. Generated cards also break the real hue roles: the hero and backdrop share a temperature (blue on violet, warm fruit on warm wood), or the backdrop is as loud as the hero."
+}

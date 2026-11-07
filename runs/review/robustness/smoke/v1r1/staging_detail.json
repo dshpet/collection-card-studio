@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "B: the sunscreen and sunglasses stand on a plain green floor under a quiet wave pattern in the same green. This is category 2, and the card appears in the reference sheet. A: the neck pillow floats on pink concentric rings. The rings have strong light and dark bands, and the corners darken into a vignette. Both pink and blue fill the card at full strength, so the rings compete with the hero more than the camper card's soft rings do. A's background detail (0.0159) is just above the real range. The difference is small.",
+   "fix": "Float the neck pillow on a soft pink field with faint concentric rings only slightly lighter than the base pink. Keep the tone even to the corners, with no dark vignette."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the toaster stands on a plain pink seamless floor with no pattern in the backdrop. Its background detail (0.0052) is below the real range, and real category-2 cards usually show a faint tone-on-tone motif. B: the vending machine stands on a plain purple floor and backdrop. Its stocked cans are what the container holds, so they are not invented props. Neither backdrop competes with its hero, and neither card adds props. My vector gives no clear reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the cutting board lies on a blue-and-white gingham tablecloth that fills the card. The tablecloth has strong contrast, creased folds and a hard repeating check. Its background detail (0.0393) is almost twice the real maximum, and the check pattern draws more attention than the small board. A: the fruit plate lies on broad, quiet wood planks, like the map card. A has scattered water droplets on the glass, a small extra, but its background stays inside the real range.",
+   "fix": "Put the cutting board on a plain wooden tabletop that fills the card, with soft broad grain and no tablecloth or check pattern. Make the board larger in the frame."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the lion statue sits in a full park scene. A brick path winds around it, with a large tree at the left and a row of cypresses, bushes and a second tree behind. Grass tufts are drawn along the bottom. That is many small objects, and edge density (0.068) is four times the real maximum. This matches the lighthouse lessons, where the generated card added rocks, a dock post and a lifebuoy. A: the player floats on purple concentric rings in two close tones. The earbuds are its one partner object in use, like the sunglasses with the sunscreen.",
+   "fix": "Show the lion statue close and centred on its plinth, standing on a lawn. Put only a soft, blurred green hedge and sky behind it, with no path, no separate trees and no grass tufts. Let the card's edge cut the plinth."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the birdfeeder hangs on a tree trunk that the card's edge cuts. Behind it is a soft park with trees, hedges, a path and distant buildings, a load similar to the real motel and tent cards. B: the pot sits close on a stove burner in front of large yellow wall tiles, and the card's edge cuts the stovetop. The tiles are a few large shapes, but steam wisps and water droplets on the lid add small extras. Both cards are category 4 and both background measures are inside the real range. My vector gives no clear reason to choose.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards give themselves away by staging too much. They build a scene around the object: rocks, paths, extra trees, grass tufts and props nobody asked for, as in the lighthouse lessons and p04. They also use backdrops with full-strength contrast, such as gingham, dark vignettes or strong rings, instead of quiet tone-on-tone patterns. Real cards keep the object close, with a few large quiet shapes around it and only the props the subject names."
+}

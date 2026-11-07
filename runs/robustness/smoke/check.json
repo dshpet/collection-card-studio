@@ -1,0 +1,372 @@
+{
+ "v1_01": [
+  {
+   "try_id": "v1_01_1",
+   "brief_id": "v1_01",
+   "card": {
+    "name": "Toaster",
+    "subject": "A rounded rectangular two-slot toaster with a side lever and a round dial, with two golden toast slices popping up from the slots.",
+    "object_class": "electronics",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "shiny silver, golden toast, red dial",
+    "backdrop_colors": "pink",
+    "surface_or_setting": "",
+    "build_model": true,
+    "topic": "Kitchen"
+   },
+   "style": 0.759,
+   "misses": [
+    "composition_hierarchy.center_x",
+    "color_palette.hue_gap"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Toaster with toast",
+     "object_class": "electronics",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  },
+  {
+   "try_id": "v1_01_2",
+   "brief_id": "v1_01",
+   "card": {
+    "name": "Toaster",
+    "subject": "A rounded rectangular two-slot toaster with a side lever and a round dial, with two golden toast slices popping up from the slots.",
+    "object_class": "electronics",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "shiny silver, golden toast, red dial",
+    "backdrop_colors": "pink",
+    "surface_or_setting": "",
+    "build_model": true,
+    "topic": "Kitchen"
+   },
+   "style": 0.751,
+   "misses": [
+    "composition_hierarchy.center_x",
+    "color_palette.hue_gap"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Toaster",
+     "object_class": "electronics",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true
+  },
+  {
+   "try_id": "v1_01_3",
+   "brief_id": "v1_01",
+   "card": {
+    "name": "Toaster",
+    "subject": "A rounded rectangular two-slot toaster with a side lever and a round dial, with two golden toast slices popping up from the slots.",
+    "object_class": "electronics",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "shiny silver, golden toast, red dial",
+    "backdrop_colors": "pink",
+    "surface_or_setting": "",
+    "build_model": true,
+    "topic": "Kitchen"
+   },
+   "style": 0.762,
+   "misses": [
+    "composition_hierarchy.center_x",
+    "color_palette.hue_gap",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Toaster with toast",
+     "object_class": "electronics",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false,
+   "chosen": true
+  }
+ ],
+ "v1_02": [
+  {
+   "try_id": "v1_02_1",
+   "brief_id": "v1_02",
+   "card": {
+    "name": "Chopping Board",
+    "subject": "A rectangular wooden cutting board with a round hole in one end, seen from above, holding sliced tomato, sliced cucumber rounds and carrot coins in neat piles.",
+    "object_class": "food_drink",
+    "category": "3",
+    "pattern": "surface_from_above",
+    "hero_colors": "wood brown, red tomato, green cucumber, orange carrot",
+    "backdrop_colors": "blue",
+    "surface_or_setting": "blue gingham tablecloth",
+    "build_model": true,
+    "topic": "Kitchen"
+   },
+   "style": 0.715,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.box_width",
+    "composition_hierarchy.box_height",
+    "composition_hierarchy.center_y",
+    "composition_hierarchy.margin_min",
+    "value_contrast.rms_contrast",
+    "value_contrast.boundary_contrast",
+    "surface_finish.detail_subject",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Vegetable cutting board",
+     "object_class": "food_drink",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false,
+   "chosen": true,
+   "unsure": true
+  },
+  {
+   "try_id": "v1_02_2",
+   "brief_id": "v1_02",
+   "card": {
+    "name": "Chopping Board",
+    "subject": "A rectangular wooden cutting board with a round hole in one end, seen from above, holding sliced tomato, sliced cucumber rounds and carrot coins in neat piles.",
+    "object_class": "food_drink",
+    "category": "3",
+    "pattern": "surface_from_above",
+    "hero_colors": "wood brown, red tomato, green cucumber, orange carrot",
+    "backdrop_colors": "blue",
+    "surface_or_setting": "blue gingham tablecloth",
+    "build_model": true,
+    "topic": "Kitchen"
+   },
+   "style": 0.75,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.box_width",
+    "composition_hierarchy.box_height",
+    "composition_hierarchy.center_y",
+    "composition_hierarchy.margin_min",
+    "value_contrast.rms_contrast",
+    "value_contrast.boundary_contrast",
+    "surface_finish.detail_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Vegetable cutting board",
+     "object_class": "tool",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v1_02_3",
+   "brief_id": "v1_02",
+   "card": {
+    "name": "Chopping Board",
+    "subject": "A rectangular wooden cutting board with a round hole in one end, seen from above, holding sliced tomato, sliced cucumber rounds and carrot coins in neat piles.",
+    "object_class": "food_drink",
+    "category": "3",
+    "pattern": "surface_from_above",
+    "hero_colors": "wood brown, red tomato, green cucumber, orange carrot",
+    "backdrop_colors": "blue",
+    "surface_or_setting": "blue gingham tablecloth",
+    "build_model": true,
+    "topic": "Kitchen"
+   },
+   "style": 0.734,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.center_x",
+    "color_palette.chroma_background",
+    "value_contrast.rms_contrast",
+    "value_contrast.boundary_contrast"
+   ],
+   "issues": [
+    "art_category"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Vegetable cutting board",
+     "object_class": "food_drink",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v1_03": [
+  {
+   "try_id": "v1_03_1",
+   "brief_id": "v1_03",
+   "card": {
+    "name": "Soup Pot",
+    "subject": "A round teal cooking pot with a lid and two side handles bolted to the body, standing on a gas stove burner over a bright fire with a yellow-white glowing core, orange flame tips curling upward, and warm orange light cast on the pot, with steam rising from the lid.",
+    "object_class": "container",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "teal, silver handles, orange fire",
+    "backdrop_colors": "yellow",
+    "surface_or_setting": "black gas stove top with a burner, in front of a yellow tiled wall",
+    "build_model": true,
+    "topic": "Kitchen"
+   },
+   "style": 0.671,
+   "misses": [
+    "value_contrast.boundary_contrast"
+   ],
+   "issues": [
+    "art_category"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Cooking pot",
+     "object_class": "container",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "simple_wall",
+     "background_detail": 3,
+     "secondary_objects": "one"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v1_03_2",
+   "brief_id": "v1_03",
+   "card": {
+    "name": "Soup Pot",
+    "subject": "A round teal cooking pot with a lid and two side handles bolted to the body, standing on a gas stove burner over a bright fire with a yellow-white glowing core, orange flame tips curling upward, and warm orange light cast on the pot, with steam rising from the lid.",
+    "object_class": "container",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "teal, silver handles, orange fire",
+    "backdrop_colors": "yellow",
+    "surface_or_setting": "black gas stove top with a burner, in front of a yellow tiled wall",
+    "build_model": true,
+    "topic": "Kitchen"
+   },
+   "style": 0.635,
+   "misses": [
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Cooking pot",
+     "object_class": "container",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "on_surface",
+     "background_type": "simple_wall",
+     "background_detail": 3,
+     "secondary_objects": "one"
+    }
+   },
+   "passed": true,
+   "chosen": true
+  },
+  {
+   "try_id": "v1_03_3",
+   "brief_id": "v1_03",
+   "card": {
+    "name": "Soup Pot",
+    "subject": "A round teal cooking pot with a lid and two side handles bolted to the body, standing on a gas stove burner over a bright fire with a yellow-white glowing core, orange flame tips curling upward, and warm orange light cast on the pot, with steam rising from the lid.",
+    "object_class": "container",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "teal, silver handles, orange fire",
+    "backdrop_colors": "yellow",
+    "surface_or_setting": "black gas stove top with a burner, in front of a yellow tiled wall",
+    "build_model": true,
+    "topic": "Kitchen"
+   },
+   "style": 0.633,
+   "misses": [
+    "value_contrast.rms_contrast"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Cooking pot",
+     "object_class": "container",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "on_surface",
+     "background_type": "simple_wall",
+     "background_detail": 3,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true
+  }
+ ]
+}
