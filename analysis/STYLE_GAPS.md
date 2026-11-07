@@ -144,6 +144,16 @@ Every style result above came from one generator, so two others drew the twins f
 - **Qwen-Image-2.1 loses more clearly.** The palette and patterns are right, but objects sit small in the frame, and it breaks hard rules Codex keeps: a drawn card frame on the drink, printed text on the phone booth. It ran at 640 px: at 1024 px with three references its latents turned NaN on this ROCm card under every attention backend. The prompts were written for Codex, so a prompt tuned for Qwen, or a style LoRA, could narrow the gap.
 - **So Codex stays.** The illustration look the producer sees is not a Codex quirk that another model fixes: both alternatives are further from the real cards. The open route worth trying next is a style LoRA on the 160 reference cards ([research](../research/README.md)).
 
+## An outside artist on the pre-final sets, 2026-11-07
+
+A UI designer with an art background, new to the project (`experiments/outside_rating.py`, answers in `runs/prefinal/outside/`). Blind first: 72 single cards, 36 ours from five genres and the cast, each against a real card of its art category. Then the brief, the five sets and 75 genre cards plus the 6 cast cards beside their references.
+
+- **The blind test came out inverted:** 23 of 72 right (p 0.003), AUC 0.33. She called 24 of 36 real cards AI and 11 of 36 of ours. She took about 2 s a card and used only the middle answers, so this is a quick prior, read backwards. She called brighter, larger and cleaner subjects AI (AUC 0.72 on subject chroma, 0.62 on subject area, about 0.3 on every surface-detail field), and real cards are the brighter and larger ones. Like the uncalibrated model raters, she accused the real cards, though for a different reason. So a lay eye does not catch ours, while the gap a trained eye uses is real.
+- **Measured gaps against the 129 real object cards** (150 of ours, AUC ours over real): fewer hue families, 2.6 against 3.9 (0.25); objects smaller in the frame, minimum margin 0.10 against 0.06 (0.72); duller subjects, chroma 0.101 against 0.130 (0.35); plainer backdrops (0.32); greyer shadows, 84% of chroma kept against 97% (0.41); simpler silhouettes (0.40). Fine texture measures the same on both.
+- **Her feedback after the session, relayed by the producer:** ours look grainier and more textured; the style is close but not theirs. Real cards keep large surfaces smooth and put their detail into parts, colors and silhouette; ours render the material (felt nap, leather grain, fabric weave) on simple shapes. Pixel measures at 430×480 do not separate the two, so this is judged by eye.
+- **Cards:** mean grade 3.1 of 5 on the 75 genre cards (41 of them a 3, "close"). She flagged 9 as broken, all on perspective or construction: brims that do not match their crowns, tables and floors at a different angle from the object. Cast cards scored best, 3.5.
+- **Sets:** every variant 3 or 4 of 5, "could stand in the game with small issues". She kept Detective, Horror and Period Drama.
+
 ## Limits
 
-One human rater. Model reviewers are not a gate: on pairs of different objects they also accuse hidden real cards. Reference cards are 430×480, so fine texture is out of reach. Draw-to-draw variation is as large as most single-line style changes.
+One producer and one outside rater. Model reviewers are not a gate: on pairs of different objects they also accuse hidden real cards. Reference cards are 430×480, so fine texture is out of reach. Draw-to-draw variation is as large as most single-line style changes.
