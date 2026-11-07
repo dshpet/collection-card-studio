@@ -11,7 +11,7 @@ Why the first cards looked off, how that was measured, and what fixed it. Human 
 - **The plan decides most of the card.** Batch grades rose from 3.63 to 3.97 (not blind): half from the character cards, most of the rest from swapped objects; the same objects redrawn moved by +0.11. Words do not hold a shape or a camera; a Blender model does.
 - **Edits by note are a gamble.** The director judged first-round edits better than their drafts 36 of 85 times and second-round ones 0 of 11, so an edit stays only if it wins and the pipeline reviews once.
 - **The game's cast stays itself on new cards** when drawn in one go with its real cutouts attached.
-- **Another generator was tried.** See the generator bake-off below.
+- **Codex stays the generator on evidence.** On the same twins, prompts and references, the director preferred Codex to Nano Banana Pro 11 to 0 and to Qwen-Image-2.1 39 to 1.
 
 ## How the gap is measured
 
@@ -138,10 +138,11 @@ Every style result above came from one generator, so two others drew the twins f
 | Arm | Twins | CSD to own real card, Codex / arm | Arm closer by CSD | Director: Codex / arm |
 |---|---:|---|---:|---|
 | Nano Banana Pro, through the Antigravity CLI | 11 | 0.914 / 0.897 | 5 (p 0.46) | 11 / 0 (p 0.001) |
-| Qwen-Image-2.1, open weights on this GPU | | | | |
+| Qwen-Image-2.1, open weights on this GPU, 640 px | 40 | 0.910 / 0.815 | 2 (p < 0.001) | 39 / 1 (p < 0.001) |
 
 - **Nano Banana Pro loses.** Its cards are darker, less saturated and more photographic: a realistic folded map, a flat calculator, a dim jellyfish. Antigravity's image agent rewrites the prompt, so this tests the system, not only the model; its daily image quota stopped the arm at 11 twins.
-- **Qwen-Image-2.1:** pending.
+- **Qwen-Image-2.1 loses more clearly.** The palette and patterns are right, but objects sit small in the frame, and it breaks hard rules Codex keeps: a drawn card frame on the drink, printed text on the phone booth. It ran at 640 px: at 1024 px with three references its latents turned NaN on this ROCm card under every attention backend. The prompts were written for Codex, so a prompt tuned for Qwen, or a style LoRA, could narrow the gap.
+- **So Codex stays.** The illustration look the producer sees is not a Codex quirk that another model fixes: both alternatives are further from the real cards. The open route worth trying next is a style LoRA on the 160 reference cards ([research](../research/README.md)).
 
 ## Limits
 

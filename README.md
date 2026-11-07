@@ -20,7 +20,7 @@ A tool that turns a theme and a producer's free-form wishes into 3–5 versions 
 - **Construction:** in a six-object trial, Blender blockouts cut broken cards from 5 of 12 to 1, and to none once the models were fixed after seeing the real cards (grade 3.7 against 2.2). So the planner models built objects; simple forms are drawn from words.
 - **Sets:** the producer's grades (not blind) rose from 3.63 to 3.97 between two batches: half from the three character cards, the rest mostly from better object choice. Most low grades trace to the plan, and each became a lesson the planner reads.
 - **Robustness:** 19 odd or hostile requests all produced plans, with forbidden wishes declined and named in the report: non-English and emoji themes, real brands, franchises, weapons, gore, prompt injection. After two repairs, War and Gangsters kept three cards still flagged for the producer, and Elections stayed a voting set. Kitchen, Pirates and a Star Wars request ran end to end ([experiments/robustness.py](experiments/robustness.py)).
-- **Generators:** Codex against Nano Banana Pro on 11 twins and Qwen-Image-2.1 (open weights, local): see [STYLE_GAPS](analysis/STYLE_GAPS.md#generator-bake-off-2026-11-07).
+- **Generators:** Codex stays on evidence: on the same twins and prompts the art director preferred it to Nano Banana Pro 11 to 0 and to Qwen-Image-2.1 (open weights, local) 39 to 1; CSD agrees. See [STYLE_GAPS](analysis/STYLE_GAPS.md#generator-bake-off-2026-11-07).
 
 ## Make a set
 

@@ -35,6 +35,9 @@ from PIL import Image
 RUN = ROOT / "runs" / "generators"
 TWINS = ROOT / "runs" / "twins40"
 QWEN = ("Qwen/Qwen-Image-2.1", "d26bb61231c349cf6b7896fa83353113880e1ba3")  # Qwen Research License: evaluation only
+# Side of the working resolution. At 1024 the attention runs over about 16k tokens with three references and turns the
+# latents to NaN on this ROCm card, whatever the attention backend; at 640 both backends are clean. Cards are 430x480.
+RESOLUTION = 640
 
 
 def twins():
@@ -50,8 +53,8 @@ def references(twin):
 
 
 def draw_qwen(limit):
-    """In two passes, so the 33 GB of weights never sit in memory at once: the text encoder reads every prompt with
-    its references, then the transformer draws from those encodings."""
+    """In three passes, so the 33 GB of weights never sit in memory at once: the text encoder reads every prompt with
+    its references, the transformer draws latents from those encodings, and the VAE decodes them."""
     import torch
     from diffusers import QwenImage21Pipeline
     from diffusers.pipelines.qwenimage21.pipeline_qwenimage21 import calculate_dimensions
@@ -68,7 +71,7 @@ def draw_qwen(limit):
         for twin in todo:
             images = []
             for image in references(twin):  # as the pipeline resizes its condition images
-                width, height, _ = calculate_dimensions(1024 * 1024, image.size[0] / image.size[1])
+                width, height, _ = calculate_dimensions(RESOLUTION ** 2, image.size[0] / image.size[1])
                 images.append(reader.image_processor.resize(image.convert("RGBA"), width=width, height=height))
             encoded[twin["id"]] = [t.cpu() if t is not None else None
                                    for t in reader.encode_prompt(prompt(twin), image=images, device="cuda")]
@@ -77,22 +80,48 @@ def draw_qwen(limit):
     torch.cuda.empty_cache()
 
     pipe = QwenImage21Pipeline.from_pretrained(QWEN[0], revision=QWEN[1], text_encoder=None, dtype=torch.bfloat16)
-    pipe.enable_model_cpu_offload()  # the transformer leaves the GPU before the VAE decodes
+    pipe.to("cuda")
+    torch.backends.cuda.enable_flash_sdp(False)  # the memory-efficient kernel was checked clean at this resolution
     timing = load_json(RUN / "timing_qwen.json") if (RUN / "timing_qwen.json").exists() else {}
+    saved = RUN / "latents"  # a rerun after a failed decode skips the drawing
+    saved.mkdir(parents=True, exist_ok=True)
     for twin in todo:
-        pipe.encode_prompt = lambda **_: [t.to(pipe._execution_device) if t is not None else None
-                                          for t in encoded[twin["id"]]]
+        if (saved / f"{twin['id']}.pt").exists():
+            continue
+        pipe.encode_prompt = lambda **_: [t.to("cuda") if t is not None else None for t in encoded[twin["id"]]]
         start = time.time()
-        image = pipe(prompt=prompt(twin), image=references(twin), num_inference_steps=40,
-                     generator=torch.Generator("cpu").manual_seed(1)).images[0]
+        drawn = pipe(prompt=prompt(twin), image=references(twin), num_inference_steps=40, output_type="latent",
+                     output_resolution=RESOLUTION, generator=torch.Generator("cpu").manual_seed(1)).images.cpu()
+        if torch.isnan(drawn).any():
+            raise RuntimeError(f"{twin['id']}: the latents are NaN")
+        torch.save(drawn, saved / f"{twin['id']}.pt")
         timing[twin["id"]] = round(time.time() - start, 1)
-        (RUN / "full").mkdir(parents=True, exist_ok=True)
-        image.save(RUN / "full" / f"{twin['id']}-qwen_1.png")
-        out = RUN / "tries" / f"{twin['id']}-qwen_1.png"
-        out.parent.mkdir(parents=True, exist_ok=True)
-        image.convert("RGB").resize(SIZE, Image.LANCZOS).save(out)
         save_json(RUN / "timing_qwen.json", timing)
         print(twin["id"], timing[twin["id"]], "s", flush=True)
+    del pipe
+    gc.collect()
+    torch.cuda.empty_cache()
+
+    # The VAE decodes alone: beside the transformer, a 1-megapixel decode runs out of the card's 24 GB
+    decoder = QwenImage21Pipeline.from_pretrained(QWEN[0], revision=QWEN[1], text_encoder=None, transformer=None,
+                                                  dtype=torch.bfloat16)
+    decoder.vae.to("cuda")
+    width, height, _ = calculate_dimensions(RESOLUTION ** 2, SIZE[0] / SIZE[1])  # from the last reference, as the pipeline
+    width, height = width // 32 * 32, height // 32 * 32
+    config = decoder.vae.config
+    mean = torch.tensor(config.latents_mean).view(1, config.z_dim, 1, 1, 1).to("cuda", torch.bfloat16)
+    std = torch.tensor(config.latents_std).view(1, config.z_dim, 1, 1, 1).to("cuda", torch.bfloat16)
+    with torch.inference_mode():
+        for twin in todo:
+            drawn = torch.load(saved / f"{twin['id']}.pt", weights_only=True).to("cuda")
+            packed = decoder._unpack_latents(drawn, height, width, decoder.vae_scale_factor)
+            decoded = decoder.vae.decode(packed.to(torch.bfloat16) * std + mean, return_dict=False)[0][:, :, 0]
+            image = decoder.image_processor.postprocess(decoded, output_type="pil")[0]
+            (RUN / "full").mkdir(parents=True, exist_ok=True)
+            image.save(RUN / "full" / f"{twin['id']}-qwen_1.png")
+            out = RUN / "tries" / f"{twin['id']}-qwen_1.png"
+            out.parent.mkdir(parents=True, exist_ok=True)
+            image.convert("RGB").resize(SIZE, Image.LANCZOS).save(out)
 
 
 def sent_prompts(conversation):

@@ -45,7 +45,7 @@ How the tool got here, decision by decision. Numbers are in [STYLE_GAPS](analysi
 
 | Task | Tried | Kept |
 |---|---|---|
-| Drawing | Codex image tool, Qwen-Image-2.1 (local), Nano Banana Pro (Antigravity) | Codex, pending the bake-off |
+| Drawing | Codex image tool, Qwen-Image-2.1 (local), Nano Banana Pro (Antigravity) | Codex: it beat both on the twins, 39 to 1 and 11 to 0 |
 | Planning, modelling, reviewing | Claude Sonnet and Opus, GPT-6.1 specialists, local Qwen and Gemma raters | Sonnet plans, Opus models and judges |
 | Masks | SAM 2.1, RMBG-2.0, BiRefNet; SAM 3 for the cast | BiRefNet; SAM 3 for the cast |
 | Depth, shading, attention | Depth Anything V2 and 3, Marigold, DeepGaze IIE | DA3 and Marigold for analysis; none gates a card |
