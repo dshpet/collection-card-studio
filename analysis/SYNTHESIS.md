@@ -55,7 +55,7 @@ What the sets choose:
 - **Contents and partners (eye).** 15 of 19 containers are open and filled, and about 22 more cards pair a tool with what completes it: mitt and ball, map and magnifier. Pairs are drawn as pairs: sneakers, flip-flops, flippers, gloves.
 - **Category follows how the object exists (eye, 74 of 129).** Fliers and swimmers float in their own sky or water, food and drink stand on a surface, vehicles stand on their own ground, built things sit in place. A quarter of category 4 cards show a small object where it is used, such as a ball on the pitch.
 - **Words become pictograms (eye).** About 16 cards keep sign, ticket and book objects, with icons for the words.
-- **Slot order is rarity (in-game screenshots).** Stars rise with the slot in 15 of 16 sets, gold cards come last, and categories are mixed.
+- **Slot order is rarity (in-game screenshots).** Stars rise with the slot in 15 of 16 sets, gold cards come last, and categories are mixed. Rarity does not change the art: slot does not predict category (Spearman -0.06, p 0.48) or subject detail (-0.11, measured).
 - **The game's emblem (eye).** A house icon or a cow head sits where a label would be on 9 cards in 8 sets.
 
 How they are drawn:

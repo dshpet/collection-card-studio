@@ -50,7 +50,7 @@ flowchart LR
 | Edit | Codex applies the notes. An edit stays only if it beats its draft, and every outcome is saved for later runs |
 | Deliver | `runs/<theme>/variant_N/`, a sheet per variant and `report.md` |
 
-A rerun of the same request continues where it stopped; another request for the same theme gets `runs/<theme>-2`. `--plan <file>` draws a plan a producer has checked, such as the drafts in `runs/plans/`. `--candidates 1 --review-rounds 0` gives a quick draft. `--cast 1` adds a character card per variant, drawn with the game's cast. `scripts/screen.py <folder> --variant 1 --color blue` places a variant in the game's window.
+A run first checks that its tools and data are in place. A rerun of the same request continues where it stopped; another request for the same theme gets `runs/<theme>-2`. `--alongside <folder> ...` names the other sets of the same collection, whose objects the plan must not repeat. `--plan <file>` draws a plan a producer has checked, such as the drafts in `runs/plans/`. `--candidates 1 --review-rounds 0` gives a quick draft. `--cast 1` adds a character card per variant, drawn with the game's cast. `scripts/screen.py <folder> --variant 1 --color blue` places a variant in the game's window.
 
 One run peaks at about 5 GB of GPU memory and each Blender render adds about 2 GB, so on a 24 GB card three runs fit at once with `--workers 2`.
 

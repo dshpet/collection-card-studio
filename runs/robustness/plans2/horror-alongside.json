@@ -1,0 +1,374 @@
+{
+ "title": "Horror",
+ "story": "A spooky night where every old house, hat and glowing pumpkin is friendly fun.",
+ "declined": [],
+ "variants": [
+  {
+   "cards": [
+    {
+     "name": "Pumpkin",
+     "subject": "A round jack-o'-lantern pumpkin with a short green stem, a carved triangle-eyed grinning face glowing with a bright yellow-white core, and warm orange light cast on the planks around it.",
+     "object_class": "plant_nature",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "orange pumpkin, green stem, yellow glow",
+     "backdrop_colors": "sky blue and cyan",
+     "surface_or_setting": "wooden planks",
+     "build_model": false
+    },
+    {
+     "name": "Witch Hat",
+     "subject": "A tall pointed witch hat with a wide round brim, a slightly bent tip and a band around the base with a square buckle.",
+     "object_class": "clothing",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "black hat, orange band",
+     "backdrop_colors": "cyan and grass green",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Bat",
+     "subject": "A bat flying with wings fully spread, two pointed ears, and scalloped wing edges, seen from the front.",
+     "object_class": "animal",
+     "category": "1",
+     "pattern": "full_scene",
+     "hero_colors": "charcoal black, light grey belly",
+     "backdrop_colors": "violet sky turning pink at the horizon",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Candelabra",
+     "subject": "A silver candelabra with a round base, a central stem and three symmetrical arms, each holding a candle with a bright fire: a yellow-white glowing core, orange flame tips curling upward, and warm orange light cast on the candles.",
+     "object_class": "furniture",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "silver candelabra, red candles",
+     "backdrop_colors": "rich purple",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Crystal Ball",
+     "subject": "A perfectly round glass crystal ball with swirling white mist inside, resting on a three-clawed gold stand attached beneath it.",
+     "object_class": "other",
+     "category": "3",
+     "pattern": "concentric_rings",
+     "hero_colors": "pale blue glass, gold stand",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "wooden planks",
+     "build_model": true
+    },
+    {
+     "name": "Lantern",
+     "subject": "An old black iron lantern with a ring handle on top, a glass-paned body and a bright fire inside: a yellow-white glowing core, orange flame tips curling upward, and warm orange light cast around it.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "black iron, orange flame",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Old Key",
+     "subject": "A large old iron key lying flat, with a round ring head, a long shaft and a notched bit at the end.",
+     "object_class": "tool",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "dark grey iron",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "wooden planks",
+     "build_model": false
+    },
+    {
+     "name": "Grandfather Clock",
+     "subject": "A tall wooden grandfather clock with a perfectly round clock face with tick marks and two hands, a glass door showing a swinging gold pendulum, and a flat base standing on the floor.",
+     "object_class": "furniture",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "dark brown wood, gold pendulum",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "wooden planks",
+     "build_model": true
+    },
+    {
+     "name": "Haunted Door",
+     "subject": "A tall arched wooden front door seen from the porch side, hinges on the left, a round iron knocker ring on the right, a stone step in front and a small round window glowing warm yellow.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "dark brown wood, iron knocker, yellow window light",
+     "backdrop_colors": "rich royal blue night sky with small stars and a crescent moon",
+     "surface_or_setting": "stone wall of an old mansion with a porch step",
+     "build_model": true
+    },
+    {
+     "name": "Haunted House",
+     "subject": "A tall narrow mansion with a pointed roof, a round turret, a chimney, a front door and glowing yellow windows, standing on a lawn.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "dark purple-grey walls, yellow windows, dark roof",
+     "backdrop_colors": "rich blue dusk sky with small stars and a crescent moon",
+     "surface_or_setting": "grass lawn in front of the mansion",
+     "build_model": true
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Pumpkin",
+     "subject": "A round jack-o'-lantern pumpkin with a short green stem and a carved triangle-eyed grin glowing with a bright yellow-white core.",
+     "object_class": "plant_nature",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "orange pumpkin, green stem, yellow glow",
+     "backdrop_colors": "rich purple",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Witch Hat",
+     "subject": "A tall pointed witch hat with a wide round brim, a bent tip and a band around the base with a square buckle.",
+     "object_class": "clothing",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "deep purple hat, green band",
+     "backdrop_colors": "yellow and orange",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Flying Broom",
+     "subject": "A witch's broom flying sideways, with a straight wooden handle and a bundle of straw bristles tied tightly to the handle's end with twine.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "full_scene",
+     "hero_colors": "brown wood, tan straw, red twine",
+     "backdrop_colors": "clear cyan sky",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Candle",
+     "subject": "A single brass candlestick with a round base, a slim stem and a drip tray holding a tall white candle with a bright fire: a yellow-white glowing core, orange flame tips curling upward, and warm orange light cast on the holder.",
+     "object_class": "tool",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "brass holder, white candle",
+     "backdrop_colors": "grass green",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Black Cat",
+     "subject": "A black cat sitting upright, tail curled around its feet, with pointed ears and bright yellow eyes.",
+     "object_class": "animal",
+     "category": "3",
+     "pattern": "waves",
+     "hero_colors": "black fur, yellow eyes",
+     "backdrop_colors": "violet and pink",
+     "surface_or_setting": "dark roof tiles",
+     "build_model": false
+    },
+    {
+     "name": "Hourglass",
+     "subject": "A symmetrical hourglass with two round glass bulbs joined at a narrow neck, tan sand in the lower bulb, and a flat wooden disc at the top and bottom joined by three wooden posts, standing upright.",
+     "object_class": "other",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "wood brown frame, tan sand, clear glass",
+     "backdrop_colors": "rich purple",
+     "surface_or_setting": "wooden planks",
+     "build_model": true
+    },
+    {
+     "name": "Treat Bag",
+     "subject": "A soft orange cloth sack tied at the top with a ribbon, overflowing with wrapped candies, with a small house pictogram patch stitched on the front.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "orange cloth, green ribbon, white candy wrappers",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "wooden planks",
+     "build_model": false
+    },
+    {
+     "name": "Bare Tree",
+     "subject": "A single twisted bare tree with a thick trunk and crooked branches without leaves.",
+     "object_class": "plant_nature",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "dark brown bark",
+     "backdrop_colors": "violet sky turning pink at the horizon",
+     "surface_or_setting": "grass lawn",
+     "build_model": false
+    },
+    {
+     "name": "Cobweb",
+     "subject": "A round spiderweb of fine silky threads with radial spokes and concentric rings, stretched across the corner of an old window frame, with no spider.",
+     "object_class": "other",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "white silk, grey shading",
+     "backdrop_colors": "rich royal blue night sky with small stars and a crescent moon",
+     "surface_or_setting": "corner of a wooden window frame",
+     "build_model": false
+    },
+    {
+     "name": "Haunted House",
+     "subject": "A tall narrow mansion with a pointed roof, a round turret, a chimney, a front door and glowing yellow windows, standing on a lawn.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "dark purple-grey walls, yellow windows, dark roof",
+     "backdrop_colors": "rich blue dusk sky with small stars and a crescent moon",
+     "surface_or_setting": "grass lawn in front of the mansion",
+     "build_model": true
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Pumpkin",
+     "subject": "A round jack-o'-lantern pumpkin with a short green stem, a carved triangle-eyed grin glowing with a bright yellow-white core, and warm orange light cast on the straw around it.",
+     "object_class": "plant_nature",
+     "category": "3",
+     "pattern": "concentric_rings",
+     "hero_colors": "orange pumpkin, green stem, yellow glow",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "straw",
+     "build_model": false
+    },
+    {
+     "name": "Witch Hat",
+     "subject": "A tall pointed witch hat with a wide round brim, a bent tip and a band around the base with a square buckle.",
+     "object_class": "clothing",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "black hat, purple band",
+     "backdrop_colors": "yellow and orange",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Party Mask",
+     "subject": "A masquerade eye mask with two symmetrical eye holes, pointed wings at the sides and a gold trim edge, with two ribbon ties attached at the sides.",
+     "object_class": "accessory",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "deep purple mask, gold trim",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Bat",
+     "subject": "A bat flying with wings fully spread, two pointed ears, and scalloped wing edges, seen from the front.",
+     "object_class": "animal",
+     "category": "1",
+     "pattern": "full_scene",
+     "hero_colors": "charcoal black, light grey belly",
+     "backdrop_colors": "violet sky turning pink at the horizon",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Hand Bell",
+     "subject": "A brass hand bell with a flared rim, a round top and a wooden handle attached on top, with a small clapper inside.",
+     "object_class": "music_instrument",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "brass bell, wood brown handle",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Sweets Jar",
+     "subject": "A round glass jar with a cork lid, filled with wrapped candies, with a small house pictogram printed on the glass.",
+     "object_class": "container",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "clear glass, light brown cork, orange and white candy wrappers",
+     "backdrop_colors": "grass green",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Gramophone",
+     "subject": "A wooden gramophone box with a black record on top and a large brass flared horn attached to a curved arm on the box.",
+     "object_class": "music_instrument",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "wood brown box, brass horn, black record",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "wooden table",
+     "build_model": true
+    },
+    {
+     "name": "Candy Apple",
+     "subject": "A glossy red candy apple on a wooden stick, lying on a round white plate seen from above.",
+     "object_class": "food_drink",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "red apple, wood brown stick, white plate",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "wooden table",
+     "build_model": false
+    },
+    {
+     "name": "Lamp Post",
+     "subject": "A tall black iron street lamp post with a round base, a slim pole and a lantern on top glowing warm yellow, standing on a cobblestone sidewalk.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "black iron, yellow glow",
+     "backdrop_colors": "violet sky turning pink at the horizon",
+     "surface_or_setting": "cobblestone sidewalk",
+     "build_model": true
+    },
+    {
+     "name": "Haunted House",
+     "subject": "A tall narrow mansion with a pointed roof, a round turret, a chimney, a front door and glowing yellow windows, standing on a lawn.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "dark purple-grey walls, yellow windows, dark roof",
+     "backdrop_colors": "rich royal blue night sky with small stars and a crescent moon",
+     "surface_or_setting": "grass lawn in front of the mansion",
+     "build_model": true
+    }
+   ]
+  }
+ ],
+ "problems": [],
+ "sensitive": [],
+ "cast": 0,
+ "taken": [
+  "Cactus",
+  "Campfire",
+  "Control Panel",
+  "Cowboy Boots",
+  "Cowboy Hat",
+  "Flying Saucer",
+  "Glow Flask",
+  "Harmonica",
+  "Hat Tip",
+  "Horseshoe",
+  "Lasso",
+  "Moon Rover",
+  "Ringed Planet",
+  "Rocket",
+  "Saloon Doors",
+  "Satellite",
+  "Space Farm",
+  "Space Helmet",
+  "Star Map",
+  "Wagon"
+ ]
+}

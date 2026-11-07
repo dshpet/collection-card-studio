@@ -13,7 +13,9 @@ The theme is required. Wishes are optional. Do not ask about anything else. If t
    .venv/bin/python -B scripts/make_set.py "<Theme>" --wishes "<wishes>" --variants 3
    ```
 
-   The first line names the run folder, `run: <folder>`. If the run stops, or its report lists a card as `missing`, run the same command again: it continues in that folder. Another theme or other wishes get a folder of their own.
+   When the set joins others in one collection, add `--alongside <folder> ...` with their run folders, so its objects do not repeat theirs.
+
+   The first line names the run folder, `run: <folder>`. If the run stops at once with `Cannot start`, do what it lists first. If it stops later, or its report lists a card as `missing`, run the same command again: it continues in that folder. Another theme or other wishes get a folder of their own.
 
 2. Show each variant's sheet, `runs/<folder>/variant_N.png` (`variant_N-cast.png` when it has character cards). From the top of `runs/<folder>/report.md`, tell the producer which wishes were not followed and why, and which cards are still flagged as possibly upsetting. Name the cards the report marks `review`, `unsure pick` or `missing`.
 

@@ -9,6 +9,7 @@ import argparse
 import json
 import os
 import re
+import shutil
 import subprocess
 from collections import Counter, defaultdict
 from concurrent.futures import ThreadPoolExecutor
@@ -88,7 +89,8 @@ def cast_rule(cast):
             "and has an empty cast")
 
 
-def plan_prompt(theme, wishes, variants, knowledge, cast=0):
+def plan_prompt(theme, wishes, variants, knowledge, cast=0, taken=()):
+    """taken: card names that other sets of the same collection already show."""
     examples = "\n".join(
         f"{example['title']}: " + "; ".join(
             f"{card['name']}: {card['subject']} [{card['object_class']}, cat {card['category']}, {card['pattern']}]"
@@ -96,7 +98,7 @@ def plan_prompt(theme, wishes, variants, knowledge, cast=0):
     return f"""You are the lead producer of card collections for a cozy mobile game.
 Theme: {theme}
 Producer wishes: {wishes or "none"}
-
+{f"Other sets of this collection already show: {', '.join(taken)}. Use none of these objects, nor a near copy of one, such as another potion bottle." + chr(10) if taken else ""}
 Design {variants} clearly different versions of one ten-card set for this theme.
 
 Rules learned from the game's real sets:
@@ -129,8 +131,12 @@ Real sets from the game, as examples:
 {examples}"""
 
 
-def plan_problems(plan, cast=0, variants=None):
+def plan_problems(plan, cast=0, variants=None, taken=()):
     problems = []
+    lower = {name.lower() for name in taken}
+    repeated = sorted({c["name"] for v in plan["variants"] for c in v["cards"] if c["name"].lower() in lower})
+    if repeated:
+        problems.append(f"another set of the collection already shows {', '.join(repeated)}: choose other objects")
     if variants and len(plan["variants"]) != variants:
         problems.append(f"design exactly {variants} versions")
     if len(plan["title"].split()) > 3:
@@ -161,13 +167,13 @@ def plan_problems(plan, cast=0, variants=None):
     return problems
 
 
-def make_plan(theme, wishes, variants, knowledge, cast=0):
+def make_plan(theme, wishes, variants, knowledge, cast=0, taken=()):
     """Plan, then repair until the plan keeps every rule and no card may upset players. What is left is recorded."""
-    prompt = plan_prompt(theme, wishes, variants, knowledge, cast)
+    prompt = plan_prompt(theme, wishes, variants, knowledge, cast, taken)
     schema = plan_schema(cast)
     plan = ask_claude(prompt, None, schema)
     for repair in range(PLAN_FIXES + 1):
-        problems, flagged = plan_problems(plan, cast, variants), sensitive_cards(plan)
+        problems, flagged = plan_problems(plan, cast, variants, taken), sensitive_cards(plan)
         if repair == PLAN_FIXES or not (problems or flagged):
             break
         fixes = ([f"Your last answer had these problems, fix them: {problems}"] if problems else []) + (
@@ -501,11 +507,36 @@ def deliver(run, plan, briefs, history):
     (run / "report.md").write_text("\n".join(lines) + "\n", "utf-8")
 
 
+def preflight(args):
+    """What a run needs before it starts, each with how to get it, so a run never stops halfway for a missing tool."""
+    from common import cards as reference_cards
+
+    missing = [f"{tool} is not on the PATH ({why})" for tool, why in (
+        ("codex", "the Codex CLI draws, logged in"), ("claude", "the Claude CLI plans and judges, logged in"),
+        ("blender", "Blender renders the models; or pass --no-blockouts")) if not shutil.which(tool)
+        and not (tool == "blender" and args.no_blockouts)]
+    absent = sum(not (ROOT / r["file"]).exists() for r in reference_cards())
+    if absent:
+        missing.append(f"{absent} board images are missing from materials/: see README, Setup")
+    if not (ANALYSIS / "embeddings" / "csd_whole.npy").exists():
+        missing.append("analysis/embeddings is empty: run scripts/embed.py")
+    if not all((ANALYSIS / "derived" / kind).is_dir() for kind in ("masks", "normals", "shading")):
+        missing.append("analysis/derived is incomplete: run scripts/estimate.py masks marigold")
+    if not torch.cuda.is_available():
+        missing.append("no GPU visible to PyTorch (ROCm or CUDA)")
+    if args.cast and not any((ROOT / "library" / "cast" / "grey").glob("*.png")):
+        missing.append("character cards need the cast cutouts: run scripts/cast.py find, then label")
+    missing += [f"--alongside {folder}: runs/{folder}/plan.json not found" for folder in args.alongside
+                if not (ROOT / "runs" / folder / "plan.json").exists()]
+    if missing:
+        raise SystemExit("Cannot start:\n- " + "\n- ".join(missing))
+
+
 def run_folder(args):
     """--run, or the theme's first folder that is free or holds this same request, so a rerun continues it and a
     different request never mixes with it: runs/western, then runs/western-2 and so on."""
     request = {"theme": args.theme, "wishes": args.wishes, "variants": args.variants, "cast": args.cast,
-               "plan": args.plan, "references": not args.no_references}
+               "plan": args.plan, "references": not args.no_references, "alongside": sorted(args.alongside)}
     runs = ROOT / "runs"
 
     def ours(folder):
@@ -539,8 +570,11 @@ def main():
     parser.add_argument("--no-blockouts", action="store_true", help="draw from the brief without a Blender model first")
     parser.add_argument("--run", help="folder name under runs/; by default the theme's")
     parser.add_argument("--cast", type=int, default=0, help="character cards per variant, drawn with the game's cast")
+    parser.add_argument("--alongside", nargs="+", default=[], metavar="FOLDER",
+                        help="run folders of other sets in the same collection, whose objects this set must not repeat")
     args = parser.parse_args()
 
+    preflight(args)
     run, request = run_folder(args)
     run.mkdir(parents=True, exist_ok=True)
     save_json(run / "request.json", request)
@@ -550,8 +584,10 @@ def main():
 
     plan_path = run / "plan.json"
     if not plan_path.exists():
+        taken = sorted({card["name"] for folder in args.alongside
+                        for variant in load_json(ROOT / "runs" / folder / "plan.json")["variants"] for card in variant["cards"]})
         plan = (load_json(ROOT / args.plan) if args.plan else
-                make_plan(args.theme, args.wishes, args.variants, knowledge, args.cast))
+                make_plan(args.theme, args.wishes, args.variants, knowledge, args.cast, taken))
         save_json(plan_path, {**plan, "request": request})
     plan = load_json(plan_path)
     print("plan:", plan["title"], "|", plan.get("problems") or "no problems", flush=True)
