@@ -378,10 +378,16 @@ def render(model, out):
     stage(scene, spec, center, distance)
 
     prefs = bpy.context.preferences.addons["cycles"].preferences
-    prefs.compute_device_type = "HIP"
-    prefs.get_devices()
+    for kind in ("HIP", "OPTIX", "CUDA", "METAL", "ONEAPI"):  # the first GPU backend with a device; else the CPU
+        try:
+            prefs.compute_device_type = kind
+        except TypeError:  # not built into this Blender
+            continue
+        prefs.get_devices()
+        if any(device.type == kind for device in prefs.devices):
+            break
     for device in prefs.devices:
-        device.use = device.type == "HIP"
+        device.use = device.type == prefs.compute_device_type
     scene.render.engine, scene.cycles.device, scene.cycles.samples = "CYCLES", "GPU", 128
     scene.cycles.use_denoising = True
     scene.view_settings.view_transform = "Standard"

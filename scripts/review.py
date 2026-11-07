@@ -13,29 +13,20 @@ import json
 import random
 from concurrent.futures import ThreadPoolExecutor
 
-from common import ANALYSIS, DERIVED, ROOT, load_json, save_json
+from common import (ANALYSIS, DERIVED, JUDGE, PLANNER, ROOT, SIZE, best_try, contact_sheet, load_json, run_name,
+                    save_json, strict, text)
 
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 
-from make_set import contact_sheet, run_name
 from experience import edit_examples
 from rate import ask_claude, ask_codex
 
 AGENTS = ANALYSIS / "agents"
-SIZE = (430, 480)
 STUDY_CATEGORIES = "1234"
 LESSONS = ("t02", "t04", "t09", "t11")  # one twin per category, shown with its answer
 LESSON_ROUNDS = ("baseline", "r3", "r7")  # too toy, too realistic, closest
 CONTROLS = 2
-
-
-def text():
-    return {"type": "string"}
-
-
-def strict(properties):
-    return {"type": "object", "additionalProperties": False, "properties": properties, "required": list(properties)}
 
 
 def array(item):
@@ -61,6 +52,8 @@ DIRECTOR_SCHEMA = strict({
     "style_text": text(),
     "cards": array(strict({"pair": text(), "keep": {"type": "boolean"}, "note": text()})),
     "summary": text()})
+
+
 def card_image(card):
     return Image.open(ROOT / card["file"]).convert("RGB").resize(SIZE, Image.LANCZOS)
 
@@ -378,7 +371,7 @@ def lessons_for():
     return [entry for label in LESSON_ROUNDS for entry in twin_entries(label)[0] if entry[0]["twin"] in LESSONS]
 
 
-def judge_pairs(run, label, contests, rater="claude-opus-5-5"):
+def judge_pairs(run, label, contests, rater=JUDGE):
     """Wins per try from pairwise judgements, each pair shown in both orders.
 
     contests: (card id, try id, try id, reference card ids). Two drawings under the card's real references, both
@@ -401,8 +394,6 @@ def judge_pairs(run, label, contests, rater="claude-opus-5-5"):
     first_image = len(taught) + 1
     lesson_list = "; ".join(f"image {i + 1}: {note}" for i, (_, note) in enumerate(taught))
     brief_text = (AGENTS / "art_director.md").read_text("utf-8")
-    notes = AGENTS / "director_notes.md"
-    notes = f"\n{notes.read_text('utf-8')}\n" if notes.exists() else ""
 
     def one(index):
         out = folder / f"pairs_{index:02d}.json"
@@ -410,7 +401,7 @@ def judge_pairs(run, label, contests, rater="claude-opus-5-5"):
             return load_json(out)
         batch = batches[index]
         listing = ", ".join(f"{r['pair']} is image {i + first_image}" for i, r in enumerate(batch))
-        prompt = (f"{brief_text}{notes}\nEach image shows real cards from the game on top, marked REAL, and below them "
+        prompt = (f"{brief_text}\nEach image shows real cards from the game on top, marked REAL, and below them "
                   f"two drawings of the same object, A and B, made by an image model. Images 1 to {first_image - 1} are "
                   f"lessons: the art lead marked the drawing they found closer to the real cards ({lesson_list}). Learn "
                   "which way the differences run from them, and trust them over any idea of what game art should look "
@@ -440,7 +431,7 @@ def judge_pairs(run, label, contests, rater="claude-opus-5-5"):
     return wins
 
 
-def choose(run, briefs, history, rater="claude-opus-5-5"):
+def choose(run, briefs, history, rater=JUDGE):
     """Mark each card's best candidate: most pairwise wins, ties to the earliest draw. A close win is marked unsure."""
     options = {b["id"]: [t for t in history[b["id"]] if t["passed"]] or history[b["id"]] for b in briefs}
     contests = [(b["id"], x["try_id"], y["try_id"], b["references"])
@@ -457,7 +448,7 @@ def choose(run, briefs, history, rater="claude-opus-5-5"):
         print(f"unsure picks, worth a human look: {', '.join(unsure)}", flush=True)
 
 
-def better_edits(run, label, edits, references, rater="claude-opus-5-5"):
+def better_edits(run, label, edits, references, rater=JUDGE):
     """Edited try ids that beat the draft they were made from. edits: (card id, draft try id, edited try id)."""
     if not edits:
         return set()
@@ -468,7 +459,6 @@ def better_edits(run, label, edits, references, rater="claude-opus-5-5"):
 def review_variant(run, variant, round_number, briefs, history, rater):
     """Blind review of a variant with hidden real controls. Returns {brief id: edit note}."""
     from estimate import write_marigold
-    from common import best_try
     from measure import measure_card
 
     real = {c["id"]: c for c in real_cards(characters=True)}  # a character card's first reference is one
@@ -481,8 +471,8 @@ def review_variant(run, variant, round_number, briefs, history, rater):
     for record, _ in entries:
         record["measured"] = measure_card(record, run / "derived")
     used = {i for brief in briefs for i in brief["references"]}
-    spare = [c for c in real.values() if c["id"] not in used and c["id"] not in twin_entries("baseline")[1]
-             and c["category"] != "5"]
+    lessons_cards = twin_entries("baseline")[1]  # real cards shown in the lessons
+    spare = [c for c in real.values() if c["id"] not in used and c["id"] not in lessons_cards and c["category"] != "5"]
     rng = random.Random(f"{run.name}{variant}{round_number}")
     entries += [tuple(rng.sample(spare, 2)) for _ in range(CONTROLS)]
     rng.shuffle(entries)
@@ -562,8 +552,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("mode", choices=("study", "twins"))
     parser.add_argument("run", nargs="?")
-    parser.add_argument("--rater", default="claude-sonnet-5-5")
-    parser.add_argument("--director", default="claude-opus-5-5")
+    parser.add_argument("--rater", default=PLANNER)
+    parser.add_argument("--director", default=JUDGE)
     parser.add_argument("--roles", nargs="+", default=list(ROLES))
     parser.add_argument("--lessons", nargs="+", default=["baseline"], help="rounds whose labelled twins calibrate the reviewers")
     parser.add_argument("--no-director", action="store_true")

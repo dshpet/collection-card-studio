@@ -1,5 +1,6 @@
 """Compile the reference analysis into the one file the generation pipeline reads."""
 
+import argparse
 from collections import defaultdict
 
 from common import ANALYSIS, load_json, pattern, save_json
@@ -61,4 +62,5 @@ def main():
 
 
 if __name__ == "__main__":
+    argparse.ArgumentParser(description=__doc__).parse_args()  # --help only; the script takes no options
     main()

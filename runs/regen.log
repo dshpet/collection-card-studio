@@ -1,271 +1,0 @@
-=== Western 16:21
-plan: Western | no problems
-models: 3 of 3 rendered, 7 cards drawn from the brief alone
-Loading weights:   0%|          | 0/754 [00:00<?, ?it/s]Loading weights: 100%|██████████| 754/754 [00:00<00:00, 41780.13it/s]
-=== Western 16:30
-plan: Western | no problems
-models: 3 of 3 rendered, 7 cards drawn from the brief alone
-Loading weights:   0%|          | 0/754 [00:00<?, ?it/s]Loading weights: 100%|██████████| 754/754 [00:00<00:00, 33218.20it/s]
-WARNING:root:No pretrained weights loaded for model 'ViT-L-14'. Model initialized randomly.
-candidates 1: drew 10, passed 9
-Loading weights:   0%|          | 0/754 [00:00<?, ?it/s]Loading weights: 100%|██████████| 754/754 [00:00<00:00, 37178.83it/s]
-WARNING:root:No pretrained weights loaded for model 'ViT-L-14'. Model initialized randomly.
-candidates 2: drew 10, passed 9
-Loading weights:   0%|          | 0/754 [00:00<?, ?it/s]Loading weights: 100%|██████████| 754/754 [00:00<00:00, 31982.94it/s]
-WARNING:root:No pretrained weights loaded for model 'ViT-L-14'. Model initialized randomly.
-candidates 3: drew 10, passed 8
-unsure picks, worth a human look: v1_01, v1_02, v1_03, v1_04, v1_05, v1_06, v1_07, v1_08, v1_09, v1_10
-/home/dshpet/Dev_Projects/playrix_testtask/.venv/lib/python3.14/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
-  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
-Could not reach the Hub (Cannot reach https://huggingface.co/api/models/prs-eth/marigold-normals-v1-1: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'prs-eth/marigold-normals-v1-1'.
-WARNING:huggingface_hub.hf_api:Could not reach the Hub (Cannot reach https://huggingface.co/api/models/prs-eth/marigold-normals-v1-1: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'prs-eth/marigold-normals-v1-1'.
-Couldn't connect to the Hub: Cannot reach https://huggingface.co/api/models/prs-eth/marigold-normals-v1-1/revision/main: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable..
-Will try to load from local cache.
-Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
-Loading weights:   0%|          | 0/372 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 372/372 [00:00<00:00, 27327.33it/s]
-Loading pipeline components...:  80%|████████  | 4/5 [00:00<00:00, 37.43it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 36.97it/s]
-Marigold predictions...:   0%|          | 0/1 [00:00<?, ?it/s]
-Diffusion steps...:   0%|          | 0/4 [00:00<?, ?it/s][A
-Diffusion steps...:  25%|██▌       | 1/4 [00:00<00:00,  9.47it/s][A
-Diffusion steps...:  75%|███████▌  | 3/4 [00:00<00:00, 14.93it/s][A
-                                                                 [AMarigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  3.87it/s]Marigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  3.87it/s]
-Marigold predictions...:   0%|          | 0/1 [00:00<?, ?it/s]
-Diffusion steps...:   0%|          | 0/4 [00:00<?, ?it/s][A
-Diffusion steps...:  75%|███████▌  | 3/4 [00:00<00:00, 22.07it/s][A
-                                                                 [AMarigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.48it/s]Marigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.48it/s]
-Marigold predictions...:   0%|          | 0/1 [00:00<?, ?it/s]
-Diffusion steps...:   0%|          | 0/4 [00:00<?, ?it/s][A
-Diffusion steps...:  75%|███████▌  | 3/4 [00:00<00:00, 22.39it/s][A
-                                                                 [AMarigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.54it/s]Marigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.54it/s]
-Marigold predictions...:   0%|          | 0/1 [00:00<?, ?it/s]
-Diffusion steps...:   0%|          | 0/4 [00:00<?, ?it/s][A
-Diffusion steps...:  75%|███████▌  | 3/4 [00:00<00:00, 22.27it/s][A
-                                                                 [AMarigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.50it/s]Marigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.50it/s]
-Marigold predictions...:   0%|          | 0/1 [00:00<?, ?it/s]
-Diffusion steps...:   0%|          | 0/4 [00:00<?, ?it/s][A
-Diffusion steps...:  75%|███████▌  | 3/4 [00:00<00:00, 22.38it/s][A
-                                                                 [AMarigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.54it/s]Marigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.53it/s]
-Marigold predictions...:   0%|          | 0/1 [00:00<?, ?it/s]
-Diffusion steps...:   0%|          | 0/4 [00:00<?, ?it/s][A
-Diffusion steps...:  75%|███████▌  | 3/4 [00:00<00:00, 22.19it/s][A
-                                                                 [AMarigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.48it/s]Marigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.48it/s]
-Marigold predictions...:   0%|          | 0/1 [00:00<?, ?it/s]
-Diffusion steps...:   0%|          | 0/4 [00:00<?, ?it/s][A
-Diffusion steps...:  75%|███████▌  | 3/4 [00:00<00:00, 21.91it/s][A
-                                                                 [AMarigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.40it/s]Marigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.40it/s]
-Marigold predictions...:   0%|          | 0/1 [00:00<?, ?it/s]
-Diffusion steps...:   0%|          | 0/4 [00:00<?, ?it/s][A
-Diffusion steps...:  75%|███████▌  | 3/4 [00:00<00:00, 22.06it/s][A
-                                                                 [AMarigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.43it/s]Marigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.43it/s]
-Marigold predictions...:   0%|          | 0/1 [00:00<?, ?it/s]
-Diffusion steps...:   0%|          | 0/4 [00:00<?, ?it/s][A
-Diffusion steps...:  75%|███████▌  | 3/4 [00:00<00:00, 21.83it/s][A
-                                                                 [AMarigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.35it/s]Marigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.35it/s]
-Marigold predictions...:   0%|          | 0/1 [00:00<?, ?it/s]
-Diffusion steps...:   0%|          | 0/4 [00:00<?, ?it/s][A
-Diffusion steps...:  75%|███████▌  | 3/4 [00:00<00:00, 21.86it/s][A
-                                                                 [AMarigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.38it/s]Marigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.38it/s]
-Could not reach the Hub (Cannot reach https://huggingface.co/api/models/prs-eth/marigold-iid-lighting-v1-1: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'prs-eth/marigold-iid-lighting-v1-1'.
-WARNING:huggingface_hub.hf_api:Could not reach the Hub (Cannot reach https://huggingface.co/api/models/prs-eth/marigold-iid-lighting-v1-1: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'prs-eth/marigold-iid-lighting-v1-1'.
-Couldn't connect to the Hub: Cannot reach https://huggingface.co/api/models/prs-eth/marigold-iid-lighting-v1-1/revision/main: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable..
-Will try to load from local cache.
-Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
-Loading weights:   0%|          | 0/372 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 372/372 [00:00<00:00, 26077.27it/s]
-Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 53.23it/s]
-Marigold predictions...:   0%|          | 0/1 [00:00<?, ?it/s]
-Diffusion steps...:   0%|          | 0/4 [00:00<?, ?it/s][A
-Diffusion steps...:  50%|█████     | 2/4 [00:00<00:00, 19.38it/s][A
-                                                                 [AMarigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.05it/s]Marigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.05it/s]
-Marigold predictions...:   0%|          | 0/1 [00:00<?, ?it/s]
-Diffusion steps...:   0%|          | 0/4 [00:00<?, ?it/s][A
-Diffusion steps...:  75%|███████▌  | 3/4 [00:00<00:00, 22.33it/s][A
-                                                                 [AMarigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.53it/s]Marigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.53it/s]
-Marigold predictions...:   0%|          | 0/1 [00:00<?, ?it/s]
-Diffusion steps...:   0%|          | 0/4 [00:00<?, ?it/s][A
-Diffusion steps...:  75%|███████▌  | 3/4 [00:00<00:00, 22.10it/s][A
-                                                                 [AMarigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.48it/s]Marigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.48it/s]
-Marigold predictions...:   0%|          | 0/1 [00:00<?, ?it/s]
-Diffusion steps...:   0%|          | 0/4 [00:00<?, ?it/s][A
-Diffusion steps...:  75%|███████▌  | 3/4 [00:00<00:00, 22.06it/s][A
-                                                                 [AMarigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.46it/s]Marigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.46it/s]
-Marigold predictions...:   0%|          | 0/1 [00:00<?, ?it/s]
-Diffusion steps...:   0%|          | 0/4 [00:00<?, ?it/s][A
-Diffusion steps...:  75%|███████▌  | 3/4 [00:00<00:00, 22.22it/s][A
-                                                                 [AMarigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.50it/s]Marigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.50it/s]
-Marigold predictions...:   0%|          | 0/1 [00:00<?, ?it/s]
-Diffusion steps...:   0%|          | 0/4 [00:00<?, ?it/s][A
-Diffusion steps...:  75%|███████▌  | 3/4 [00:00<00:00, 22.04it/s][A
-                                                                 [AMarigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.46it/s]Marigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.46it/s]
-Marigold predictions...:   0%|          | 0/1 [00:00<?, ?it/s]
-Diffusion steps...:   0%|          | 0/4 [00:00<?, ?it/s][A
-Diffusion steps...:  75%|███████▌  | 3/4 [00:00<00:00, 22.29it/s][A
-                                                                 [AMarigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.55it/s]Marigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.55it/s]
-Marigold predictions...:   0%|          | 0/1 [00:00<?, ?it/s]
-Diffusion steps...:   0%|          | 0/4 [00:00<?, ?it/s][A
-Diffusion steps...:  75%|███████▌  | 3/4 [00:00<00:00, 22.07it/s][A
-                                                                 [AMarigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.45it/s]Marigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.45it/s]
-Marigold predictions...:   0%|          | 0/1 [00:00<?, ?it/s]
-Diffusion steps...:   0%|          | 0/4 [00:00<?, ?it/s][A
-Diffusion steps...:  75%|███████▌  | 3/4 [00:00<00:00, 22.21it/s][A
-                                                                 [AMarigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.50it/s]Marigold predictions...: 100%|██████████| 1/1 [00:00<00:00,  4.50it/s]
-Marigold predictions...:   0%|          | 0/1 [00:00<?, ?it/s]
-Diffusion steps...:   0%|          | 0/4 [00:00<?, ?it/s][A
-Diffusion steps...:  75%|███████▌  | 3/4 [00:00<00:00, 22.25it/s][A
-=== Western 16:47
-plan: Western | no problems
-models: 3 of 3 rendered, 7 cards drawn from the brief alone
-candidates 1: drew 0, passed 0
-candidates 2: drew 0, passed 0
-candidates 3: drew 0, passed 0
-unsure picks, worth a human look: v1_07
-/home/dshpet/Dev_Projects/playrix_testtask/.venv/lib/python3.14/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
-  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
-Could not reach the Hub (Cannot reach https://huggingface.co/api/models/prs-eth/marigold-normals-v1-1: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'prs-eth/marigold-normals-v1-1'.
-Couldn't connect to the Hub: Cannot reach https://huggingface.co/api/models/prs-eth/marigold-normals-v1-1/revision/main: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable..
-Will try to load from local cache.
-Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  20%|██        | 1/5 [00:00<00:01,  2.91it/s]
-Loading weights:   0%|          | 0/372 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 372/372 [00:00<00:00, 39260.26it/s]
-Loading pipeline components...:  80%|████████  | 4/5 [00:00<00:00, 10.51it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 10.57it/s]
-Could not reach the Hub (Cannot reach https://huggingface.co/api/models/prs-eth/marigold-iid-lighting-v1-1: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'prs-eth/marigold-iid-lighting-v1-1'.
-Couldn't connect to the Hub: Cannot reach https://huggingface.co/api/models/prs-eth/marigold-iid-lighting-v1-1/revision/main: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable..
-Will try to load from local cache.
-Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
-Loading weights:   0%|          | 0/372 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 372/372 [00:00<00:00, 33355.02it/s]
-Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 50.23it/s]
-=== Western 16:49
-plan: Western | no problems
-models: 3 of 3 rendered, 7 cards drawn from the brief alone
-candidates 1: drew 0, passed 0
-candidates 2: drew 0, passed 0
-candidates 3: drew 0, passed 0
-unsure picks, worth a human look: v1_01, v1_02, v1_03, v1_05, v1_06, v1_08, v1_09, v1_10
-/home/dshpet/Dev_Projects/playrix_testtask/.venv/lib/python3.14/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
-  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
-Could not reach the Hub (Cannot reach https://huggingface.co/api/models/prs-eth/marigold-normals-v1-1: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'prs-eth/marigold-normals-v1-1'.
-Couldn't connect to the Hub: Cannot reach https://huggingface.co/api/models/prs-eth/marigold-normals-v1-1/revision/main: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable..
-Will try to load from local cache.
-Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  20%|██        | 1/5 [00:00<00:01,  2.81it/s]
-Loading weights:   0%|          | 0/372 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 372/372 [00:00<00:00, 31858.73it/s]
-Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 12.50it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 10.35it/s]
-Could not reach the Hub (Cannot reach https://huggingface.co/api/models/prs-eth/marigold-iid-lighting-v1-1: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'prs-eth/marigold-iid-lighting-v1-1'.
-Couldn't connect to the Hub: Cannot reach https://huggingface.co/api/models/prs-eth/marigold-iid-lighting-v1-1/revision/main: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable..
-Will try to load from local cache.
-Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
-Loading weights:   0%|          | 0/372 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 372/372 [00:00<00:00, 26098.20it/s]
-Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 54.42it/s]
-shape_proportions {'caught': 9, 'wrong': 1, 'abstained': 0, 'false_alarms': 1, 'pairs': 10, 'controls': 2}
-viewpoint_depth {'caught': 10, 'wrong': 0, 'abstained': 0, 'false_alarms': 0, 'pairs': 10, 'controls': 2}
-lighting_shading {'caught': 7, 'wrong': 2, 'abstained': 1, 'false_alarms': 2, 'pairs': 10, 'controls': 2}
-value_contrast {'caught': 8, 'wrong': 2, 'abstained': 0, 'false_alarms': 1, 'pairs': 10, 'controls': 2}
-color_palette {'caught': 10, 'wrong': 0, 'abstained': 0, 'false_alarms': 1, 'pairs': 10, 'controls': 2}
-surface_finish {'caught': 6, 'wrong': 2, 'abstained': 2, 'false_alarms': 2, 'pairs': 10, 'controls': 2}
-edges_linework {'caught': 5, 'wrong': 5, 'abstained': 0, 'false_alarms': 2, 'pairs': 10, 'controls': 2}
-composition_hierarchy {'caught': 10, 'wrong': 0, 'abstained': 0, 'false_alarms': 1, 'pairs': 10, 'controls': 2}
-staging_detail {'caught': 9, 'wrong': 0, 'abstained': 1, 'false_alarms': 1, 'pairs': 10, 'controls': 2}
-variant 1 review 1: 9 of 10 cards need edits
-Loading weights:   0%|          | 0/754 [00:00<?, ?it/s]Loading weights: 100%|██████████| 754/754 [00:00<00:00, 27855.38it/s]
-WARNING:root:No pretrained weights loaded for model 'ViT-L-14'. Model initialized randomly.
-/home/dshpet/Dev_Projects/playrix_testtask/.venv/lib/python3.14/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
-  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
-Could not reach the Hub (Cannot reach https://huggingface.co/api/models/prs-eth/marigold-normals-v1-1: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'prs-eth/marigold-normals-v1-1'.
-WARNING:huggingface_hub.hf_api:Could not reach the Hub (Cannot reach https://huggingface.co/api/models/prs-eth/marigold-normals-v1-1: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'prs-eth/marigold-normals-v1-1'.
-Couldn't connect to the Hub: Cannot reach https://huggingface.co/api/models/prs-eth/marigold-normals-v1-1/revision/main: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable..
-Will try to load from local cache.
-Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
-Loading weights:   0%|          | 0/372 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 372/372 [00:00<00:00, 31775.03it/s]
-Loading pipeline components...:  80%|████████  | 4/5 [00:00<00:00, 13.67it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 15.61it/s]
-Could not reach the Hub (Cannot reach https://huggingface.co/api/models/prs-eth/marigold-iid-lighting-v1-1: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'prs-eth/marigold-iid-lighting-v1-1'.
-WARNING:huggingface_hub.hf_api:Could not reach the Hub (Cannot reach https://huggingface.co/api/models/prs-eth/marigold-iid-lighting-v1-1: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'prs-eth/marigold-iid-lighting-v1-1'.
-Couldn't connect to the Hub: Cannot reach https://huggingface.co/api/models/prs-eth/marigold-iid-lighting-v1-1/revision/main: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable..
-Will try to load from local cache.
-Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
-Loading weights:   0%|          | 0/372 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 372/372 [00:00<00:00, 32011.68it/s]
-Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 54.83it/s]
-shape_proportions {'caught': 9, 'wrong': 1, 'abstained': 0, 'false_alarms': 1, 'pairs': 10, 'controls': 2}
-viewpoint_depth {'caught': 10, 'wrong': 0, 'abstained': 0, 'false_alarms': 2, 'pairs': 10, 'controls': 2}
-lighting_shading {'caught': 10, 'wrong': 0, 'abstained': 0, 'false_alarms': 1, 'pairs': 10, 'controls': 2}
-value_contrast {'caught': 10, 'wrong': 0, 'abstained': 0, 'false_alarms': 2, 'pairs': 10, 'controls': 2}
-color_palette {'caught': 10, 'wrong': 0, 'abstained': 0, 'false_alarms': 2, 'pairs': 10, 'controls': 2}
-surface_finish {'caught': 9, 'wrong': 1, 'abstained': 0, 'false_alarms': 2, 'pairs': 10, 'controls': 2}
-edges_linework {'caught': 8, 'wrong': 2, 'abstained': 0, 'false_alarms': 2, 'pairs': 10, 'controls': 2}
-composition_hierarchy {'caught': 10, 'wrong': 0, 'abstained': 0, 'false_alarms': 0, 'pairs': 10, 'controls': 2}
-staging_detail {'caught': 2, 'wrong': 4, 'abstained': 4, 'false_alarms': 2, 'pairs': 10, 'controls': 2}
-variant 1 review 2: 6 of 10 cards need edits
-Loading weights:   0%|          | 0/754 [00:00<?, ?it/s]Loading weights: 100%|██████████| 754/754 [00:00<00:00, 27749.79it/s]
-WARNING:root:No pretrained weights loaded for model 'ViT-L-14'. Model initialized randomly.
-done: /home/dshpet/Dev_Projects/playrix_testtask/runs/western-2/report.md
-=== Sci-Fi 17:04
-plan: Sci-Fi | no problems
-models: 7 of 7 rendered, 3 cards drawn from the brief alone
-Loading weights:   0%|          | 0/754 [00:00<?, ?it/s]Loading weights: 100%|██████████| 754/754 [00:00<00:00, 35930.62it/s]
-WARNING:root:No pretrained weights loaded for model 'ViT-L-14'. Model initialized randomly.
-candidates 1: drew 10, passed 5
-Loading weights:   0%|          | 0/754 [00:00<?, ?it/s]Loading weights: 100%|██████████| 754/754 [00:00<00:00, 30018.75it/s]
-WARNING:root:No pretrained weights loaded for model 'ViT-L-14'. Model initialized randomly.
-candidates 2: drew 10, passed 5
-Loading weights:   0%|          | 0/754 [00:00<?, ?it/s]Loading weights: 100%|██████████| 754/754 [00:00<00:00, 34153.06it/s]
-WARNING:root:No pretrained weights loaded for model 'ViT-L-14'. Model initialized randomly.
-candidates 3: drew 10, passed 5
-unsure picks, worth a human look: v1_01, v1_02, v1_03, v1_05, v1_06, v1_07
-/home/dshpet/Dev_Projects/playrix_testtask/.venv/lib/python3.14/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
-  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
-Could not reach the Hub (Cannot reach https://huggingface.co/api/models/prs-eth/marigold-normals-v1-1: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'prs-eth/marigold-normals-v1-1'.
-WARNING:huggingface_hub.hf_api:Could not reach the Hub (Cannot reach https://huggingface.co/api/models/prs-eth/marigold-normals-v1-1: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'prs-eth/marigold-normals-v1-1'.
-Couldn't connect to the Hub: Cannot reach https://huggingface.co/api/models/prs-eth/marigold-normals-v1-1/revision/main: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable..
-Will try to load from local cache.
-Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
-Loading weights:   0%|          | 0/372 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 372/372 [00:00<00:00, 29609.10it/s]
-Loading pipeline components...:  60%|██████    | 3/5 [00:00<00:00, 26.42it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 28.14it/s]
-Could not reach the Hub (Cannot reach https://huggingface.co/api/models/prs-eth/marigold-iid-lighting-v1-1: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'prs-eth/marigold-iid-lighting-v1-1'.
-WARNING:huggingface_hub.hf_api:Could not reach the Hub (Cannot reach https://huggingface.co/api/models/prs-eth/marigold-iid-lighting-v1-1: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'prs-eth/marigold-iid-lighting-v1-1'.
-Couldn't connect to the Hub: Cannot reach https://huggingface.co/api/models/prs-eth/marigold-iid-lighting-v1-1/revision/main: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable..
-Will try to load from local cache.
-Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
-Loading weights:   0%|          | 0/372 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 372/372 [00:00<00:00, 21875.35it/s]
-Loading pipeline components...:  80%|████████  | 4/5 [00:00<00:00, 33.23it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 37.23it/s]
-shape_proportions {'caught': 10, 'wrong': 0, 'abstained': 0, 'false_alarms': 0, 'pairs': 10, 'controls': 2}
-viewpoint_depth {'caught': 10, 'wrong': 0, 'abstained': 0, 'false_alarms': 0, 'pairs': 10, 'controls': 2}
-lighting_shading {'caught': 10, 'wrong': 0, 'abstained': 0, 'false_alarms': 1, 'pairs': 10, 'controls': 2}
-value_contrast {'caught': 9, 'wrong': 1, 'abstained': 0, 'false_alarms': 1, 'pairs': 10, 'controls': 2}
-color_palette {'caught': 10, 'wrong': 0, 'abstained': 0, 'false_alarms': 0, 'pairs': 10, 'controls': 2}
-surface_finish {'caught': 10, 'wrong': 0, 'abstained': 0, 'false_alarms': 0, 'pairs': 10, 'controls': 2}
-edges_linework {'caught': 10, 'wrong': 0, 'abstained': 0, 'false_alarms': 0, 'pairs': 10, 'controls': 2}
-composition_hierarchy {'caught': 10, 'wrong': 0, 'abstained': 0, 'false_alarms': 0, 'pairs': 10, 'controls': 2}
-staging_detail {'caught': 10, 'wrong': 0, 'abstained': 0, 'false_alarms': 0, 'pairs': 10, 'controls': 2}
-variant 1 review 1: 7 of 10 cards need edits
-Loading weights:   0%|          | 0/754 [00:00<?, ?it/s]Loading weights: 100%|██████████| 754/754 [00:00<00:00, 33888.10it/s]
-WARNING:root:No pretrained weights loaded for model 'ViT-L-14'. Model initialized randomly.
-variant 1 review 1: kept 3 of 5 edits
-/home/dshpet/Dev_Projects/playrix_testtask/.venv/lib/python3.14/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
-  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
-Could not reach the Hub (Cannot reach https://huggingface.co/api/models/prs-eth/marigold-normals-v1-1: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'prs-eth/marigold-normals-v1-1'.
-WARNING:huggingface_hub.hf_api:Could not reach the Hub (Cannot reach https://huggingface.co/api/models/prs-eth/marigold-normals-v1-1: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'prs-eth/marigold-normals-v1-1'.
-Couldn't connect to the Hub: Cannot reach https://huggingface.co/api/models/prs-eth/marigold-normals-v1-1/revision/main: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable..
-Will try to load from local cache.
-Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
-Loading weights:   0%|          | 0/372 [00:00<?, ?it/s][A
-Loading weights:  61%|██████    | 227/372 [00:00<00:00, 2268.56it/s][ALoading weights: 100%|██████████| 372/372 [00:00<00:00, 2600.45it/s]
-Loading pipeline components...:  60%|██████    | 3/5 [00:00<00:00, 14.15it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  9.54it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 10.13it/s]
-Could not reach the Hub (Cannot reach https://huggingface.co/api/models/prs-eth/marigold-iid-lighting-v1-1: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'prs-eth/marigold-iid-lighting-v1-1'.
-WARNING:huggingface_hub.hf_api:Could not reach the Hub (Cannot reach https://huggingface.co/api/models/prs-eth/marigold-iid-lighting-v1-1: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'prs-eth/marigold-iid-lighting-v1-1'.
-Couldn't connect to the Hub: Cannot reach https://huggingface.co/api/models/prs-eth/marigold-iid-lighting-v1-1/revision/main: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable..
-Will try to load from local cache.
-Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
-Loading weights:   0%|          | 0/372 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 372/372 [00:00<00:00, 21940.25it/s]
-Loading pipeline components...:  80%|████████  | 4/5 [00:00<00:00,  8.86it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 10.70it/s]
-shape_proportions {'caught': 10, 'wrong': 0, 'abstained': 0, 'false_alarms': 0, 'pairs': 10, 'controls': 2}
-viewpoint_depth {'caught': 10, 'wrong': 0, 'abstained': 0, 'false_alarms': 0, 'pairs': 10, 'controls': 2}
-lighting_shading {'caught': 10, 'wrong': 0, 'abstained': 0, 'false_alarms': 2, 'pairs': 10, 'controls': 2}
-value_contrast {'caught': 9, 'wrong': 1, 'abstained': 0, 'false_alarms': 1, 'pairs': 10, 'controls': 2}
-color_palette {'caught': 10, 'wrong': 0, 'abstained': 0, 'false_alarms': 2, 'pairs': 10, 'controls': 2}
-surface_finish {'caught': 9, 'wrong': 1, 'abstained': 0, 'false_alarms': 2, 'pairs': 10, 'controls': 2}
-edges_linework {'caught': 10, 'wrong': 0, 'abstained': 0, 'false_alarms': 2, 'pairs': 10, 'controls': 2}
-composition_hierarchy {'caught': 10, 'wrong': 0, 'abstained': 0, 'false_alarms': 0, 'pairs': 10, 'controls': 2}
-staging_detail {'caught': 10, 'wrong': 0, 'abstained': 0, 'false_alarms': 0, 'pairs': 10, 'controls': 2}
-variant 1 review 2: 7 of 10 cards need edits
-Loading weights:   0%|          | 0/754 [00:00<?, ?it/s]Loading weights: 100%|██████████| 754/754 [00:00<00:00, 26768.23it/s]
-WARNING:root:No pretrained weights loaded for model 'ViT-L-14'. Model initialized randomly.
-variant 1 review 2: kept 0 of 5 edits
-done: /home/dshpet/Dev_Projects/playrix_testtask/runs/sci-fi-2/report.md
-=== Horror 17:41
-plan: Horror | no problems

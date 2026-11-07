@@ -12,7 +12,7 @@ import argparse
 import re
 from datetime import date
 
-from common import ANALYSIS, ROOT, load_json, save_json
+from common import ANALYSIS, JUDGE, ROOT, load_json, save_json
 
 LESSONS = ANALYSIS / "lessons.md"
 EXPERIENCE = ANALYSIS / "experience.json"
@@ -30,6 +30,7 @@ def lessons(section):
 
 def collect():
     rows = [row for path in sorted((ROOT / "runs").rglob("edits.json")) for row in load_json(path)]
+    rows.sort(key=lambda row: row.get("date", ""))  # oldest first, so the director's examples are the latest edits
     save_json(EXPERIENCE, rows)
     print(f"{len(rows)} edits, {sum(r['kept'] for r in rows)} kept")
     return rows
@@ -84,7 +85,7 @@ def propose(rater):
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("mode", choices=("collect", "propose"))
-    parser.add_argument("--rater", default="claude-opus-5-5")
+    parser.add_argument("--rater", default=JUDGE)
     args = parser.parse_args()
     collect() if args.mode == "collect" else propose(args.rater)
 

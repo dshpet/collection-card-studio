@@ -1,5 +1,7 @@
 """Match every slot in the 16 set screenshots to one of the 160 cards."""
 
+import argparse
+
 import numpy as np
 from PIL import Image
 from scipy.optimize import linear_sum_assignment
@@ -59,4 +61,5 @@ def main():
 
 
 if __name__ == "__main__":
+    argparse.ArgumentParser(description=__doc__).parse_args()  # --help only; the script takes no options
     main()

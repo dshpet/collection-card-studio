@@ -7,6 +7,8 @@ import subprocess
 import tempfile
 from pathlib import Path
 
+from common import DRAWER
+
 HOME = Path(os.environ.get("CODEX_HOME", Path.home() / ".codex"))
 INSTRUCTION = """Call the image_gen tool exactly once{images}. Pass the text between <prompt> and </prompt> as its prompt, verbatim: do not rewrite, shorten, translate or add a single word. Do not read any files or skills. After the tool returns, reply with only the word done.
 
@@ -42,7 +44,7 @@ def draw(prompt, references, out, transparent=False):
     request = INSTRUCTION.format(images=images, prompt=prompt)
     with tempfile.TemporaryDirectory() as folder:
         command = ["codex", "exec", "--skip-git-repo-check", "--ignore-user-config",
-                   "-m", "gpt-6.1-sol", "-c", 'model_reasoning_effort="low"', "-s", "read-only",
+                   "-m", DRAWER, "-c", 'model_reasoning_effort="low"', "-s", "read-only",
                    "-C", folder, "--json", *attachments, "--", request]
         done = subprocess.run(command, capture_output=True, text=True, timeout=600, stdin=subprocess.DEVNULL)
     if done.returncode:

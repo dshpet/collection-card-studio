@@ -15,7 +15,7 @@ import os
 
 os.environ.setdefault("HF_HUB_OFFLINE", "1")
 
-from common import ANALYSIS, ROOT, cards, hf_key, load_json, save_json
+from common import ANALYSIS, PLANNER, ROOT, cards, hf_key, load_json, save_json
 
 import numpy as np
 import torch
@@ -198,7 +198,7 @@ def identity_references(name, count=3):
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("mode", choices=("find", "label", "sheet"))
-    parser.add_argument("--rater", default="claude-sonnet-5-5")
+    parser.add_argument("--rater", default=PLANNER)
     args = parser.parse_args()
     if args.mode == "find":
         find_all()

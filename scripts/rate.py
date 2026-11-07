@@ -12,7 +12,7 @@ from pathlib import Path
 
 from PIL import Image
 
-from common import ANALYSIS, ROOT, cards, load_json, manifest, save_json
+from common import ANALYSIS, DRAWER, PLANNER, ROOT, cards, load_json, manifest, save_json
 from form import CARD_FORM, SET_FORM, card_schema, guide, set_schema
 
 CATEGORIES = """art_category uses the art guide:
@@ -49,7 +49,7 @@ def ask_codex(prompt, image, schema, timeout=600, effort="low"):
         folder = Path(folder)
         (folder / "schema.json").write_text(json.dumps(schema))
         command = ["codex", "exec", "--skip-git-repo-check", "--ephemeral", "--ignore-user-config",
-                   "-m", "gpt-6.1-sol", "-c", f'model_reasoning_effort="{effort}"', "-s", "read-only",
+                   "-m", DRAWER, "-c", f'model_reasoning_effort="{effort}"', "-s", "read-only",
                    "-C", str(folder), "--output-schema", str(folder / "schema.json"),
                    "-o", str(folder / "out.json"), *attachments, "--", prompt]
         done = subprocess.run(command, capture_output=True, text=True, timeout=timeout,
@@ -59,7 +59,7 @@ def ask_codex(prompt, image, schema, timeout=600, effort="low"):
         return json.loads((folder / "out.json").read_text())
 
 
-def ask_claude(prompt, image, schema, model="claude-sonnet-5-5"):
+def ask_claude(prompt, image, schema, model=PLANNER):
     images = image_list(image)
     folders = sorted({str(Path(path).parent) for path in images})
     tools = ["--allowedTools", "Read", "--add-dir", *folders] if images else ["--tools", ""]

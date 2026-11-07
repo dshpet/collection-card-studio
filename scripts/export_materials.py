@@ -4,6 +4,7 @@ Refresh sources/board.svg through Codex + Miro separately. Local images are the
 board's original files; sources/original_images.json records their provenance.
 """
 
+import argparse
 from collections import defaultdict
 from hashlib import sha256
 from html import escape
@@ -136,4 +137,5 @@ def main():
 
 
 if __name__ == "__main__":
+    argparse.ArgumentParser(description=__doc__).parse_args()  # --help only; the script takes no options
     main()

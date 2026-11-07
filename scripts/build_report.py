@@ -1,5 +1,6 @@
 """Build the single-file dashboard, analysis/report.html. Open it from disk."""
 
+import argparse
 import html
 import json
 import re
@@ -65,4 +66,5 @@ def main():
 
 
 if __name__ == "__main__":
+    argparse.ArgumentParser(description=__doc__).parse_args()  # --help only; the script takes no options
     main()

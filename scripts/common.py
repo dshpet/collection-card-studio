@@ -1,14 +1,22 @@
-"""Shared paths, the card list and model-cache setup."""
+"""Shared paths, models, the card list and small helpers."""
 
 import json
 import os
 import re
 from pathlib import Path
 
+from PIL import Image
+
 ROOT = Path(__file__).resolve().parents[1]
 ANALYSIS = ROOT / "analysis"
 DERIVED = ANALYSIS / "derived"
 MODELS = ROOT / ".models"
+SIZE = (430, 480)  # a reference card
+
+# The models behind the CLIs. draw.py holds the generator itself.
+DRAWER = "gpt-6.1-sol"  # Codex: draws, edits and rates blind
+PLANNER = "claude-sonnet-5-5"  # plans sets, flags sensitive cards
+JUDGE = "claude-opus-5-5"  # models in Blender, reviews, judges pairs
 
 os.environ.setdefault("HF_HOME", str(MODELS / "hf"))
 os.environ.setdefault("TORCH_HOME", str(MODELS / "torch"))
@@ -38,16 +46,42 @@ def cards():
 
 
 def save_json(path, value):
+    """Write through a temporary file, so a crash mid-write never leaves a run's state half written."""
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(value, ensure_ascii=False, indent=1) + "\n", "utf-8")
+    temporary = path.with_name(f".{path.name}.{os.getpid()}.tmp")
+    temporary.write_text(json.dumps(value, ensure_ascii=False, indent=1) + "\n", "utf-8")
+    os.replace(temporary, path)
 
 
 def load_json(path):
     return json.loads(path.read_text("utf-8"))
 
 
+def text():
+    return {"type": "string"}
+
+
+def strict(properties):
+    """A JSON schema object that requires every property and allows no other."""
+    return {"type": "object", "additionalProperties": False, "properties": properties, "required": list(properties)}
+
+
 def best_try(tries):
     return min(tries, key=lambda t: (not t.get("chosen"), not t["passed"], len(t["issues"]), len(t["misses"])))
+
+
+def run_name(run):
+    """A run's folder under runs/, nested ones included."""
+    return str(run.relative_to(ROOT / "runs")) if run.is_relative_to(ROOT / "runs") else run.name
+
+
+def contact_sheet(paths, out, columns=5):
+    tile = (258, 288)
+    rows = (len(paths) + columns - 1) // columns
+    sheet = Image.new("RGB", (columns * tile[0], rows * tile[1]), "white")
+    for index, path in enumerate(paths):
+        sheet.paste(Image.open(path).convert("RGB").resize(tile), (index % columns * tile[0], index // columns * tile[1]))
+    sheet.save(out)
 
 
 # Flat objects lying on a surface that fills the card, seen from above. Raters labelled most of them stripes (the

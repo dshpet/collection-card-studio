@@ -1,5 +1,6 @@
 """Compare the final sets in runs/final.json with the real character-free sets, on the same definitions."""
 
+import argparse
 import os
 
 os.environ.setdefault("HF_HUB_OFFLINE", "1")
@@ -64,4 +65,5 @@ def main():
 
 
 if __name__ == "__main__":
+    argparse.ArgumentParser(description=__doc__).parse_args()  # --help only; the script takes no options
     main()

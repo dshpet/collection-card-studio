@@ -7,22 +7,24 @@ description: Produce a collection card set for a theme and free-form producer wi
 
 The theme is required. Wishes are optional. Do not ask about anything else. If the wishes ask for characters, add `--cast 1` (or 2): character cards show the game's own cast.
 
-1. Run this from the project root, in the background, because it takes about 40 minutes per variant. If it stops, the same command continues where it left off:
+1. Run this from the project root, in the background, because it takes about 40 minutes per variant:
 
    ```sh
    .venv/bin/python -B scripts/make_set.py "<Theme>" --wishes "<wishes>" --variants 3
    ```
 
-2. Show each variant's sheet, `runs/<slug>/variant_N.png` (`variant_N-cast.png` when it has character cards), and name the cards that `runs/<slug>/report.md` marks as `review`, `unsure pick` or `missing`.
+   The first line names the run folder, `run: <folder>`. If the run stops, or its report lists a card as `missing`, run the same command again: it continues in that folder. Another theme or other wishes get a folder of their own.
+
+2. Show each variant's sheet, `runs/<folder>/variant_N.png` (`variant_N-cast.png` when it has character cards). From the top of `runs/<folder>/report.md`, tell the producer which wishes were not followed and why, and which cards are still flagged as possibly upsetting. Name the cards the report marks `review`, `unsure pick` or `missing`.
 
 3. For a variant the producer likes, show it in the game's window:
 
    ```sh
-   .venv/bin/python -B scripts/screen.py <slug> --variant N --color blue
+   .venv/bin/python -B scripts/screen.py <folder> --variant N --color blue
    ```
 
-   Colors are blue, orange, magenta and purple. The result is `runs/<slug>/screen_N.png`.
+   Colors are blue, orange, magenta and purple. The result is `runs/<folder>/screen_N.png`.
 
-4. If the producer names a problem that will recur, such as an object type to avoid, add it as a line under Planning in `analysis/lessons.md`.
+4. If the producer names a problem that will recur, such as an object type to avoid, add it to `analysis/lessons.md` under Planning, as one line that starts with `- `.
 
-The run needs the Codex and Claude CLIs logged in and Blender on the PATH. A theme that was run before continues in its old folder, so to start a topic fresh, give a new folder name with `--run <name>` and never delete an earlier run.
+The run needs the Codex and Claude CLIs logged in, Blender on the PATH, a GPU and the board images in `materials/`. Character cards also need the cast cutouts in `library/cast/`, made once by `scripts/cast.py find` and `label`. Never delete an earlier run.

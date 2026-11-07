@@ -1,5 +1,7 @@
 """Measured fields per card, computed from pixels, the subject mask and model estimates."""
 
+import argparse
+
 from common import ANALYSIS, DERIVED, ROOT, cards, save_json
 
 import numpy as np
@@ -255,4 +257,5 @@ def main():
 
 
 if __name__ == "__main__":
+    argparse.ArgumentParser(description=__doc__).parse_args()  # --help only; the script takes no options
     main()

@@ -1,5 +1,7 @@
 """Map, cluster and score every embedding, and report what each one actually groups by."""
 
+import argparse
+
 from common import ANALYSIS, cards, load_json, save_json
 
 import numpy as np
@@ -69,4 +71,5 @@ def main():
 
 
 if __name__ == "__main__":
+    argparse.ArgumentParser(description=__doc__).parse_args()  # --help only; the script takes no options
     main()
