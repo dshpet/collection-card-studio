@@ -14,15 +14,15 @@ Nine specialists, one per art vector, and an art director. `scripts/review.py` r
 | [composition_hierarchy](composition_hierarchy.md) | Scale, placement, thumbnail read | Thumbnail |
 | [staging_detail](staging_detail.md) | Support, props, how busy the card is | Background alone |
 
-[art_director](art_director.md) reads every report and turns them into edit notes for the generator, with past notes that won and lost against their drafts as examples (`analysis/experience.json`). It also picks between candidates, two at a time in both orders, beside the card's real references and the user's labelled pairs (`analysis/judge_lessons.json`).
+[art_director](art_director.md) reads every report and turns them into edit notes for the generator, with past notes that won and lost against their drafts as examples (`analysis/experience.json`). It also picks between candidates, two at a time in both orders, beside the card's real references and the producer's labelled pairs (`analysis/judge_lessons.json`).
 
 Before any drawing, the [modeller](modeller.md) builds each card's object as a Blender blockout, looks at the render and fixes it, up to two rounds. Two models from the construction trial, in `models/`, are its examples. With each render it also gets a geometry check: the groups of parts that touch nothing holding them. The image model restyles that render, so construction comes from geometry rather than words. The planner decides per card whether a model is worth it: built, multi-part objects gain, simple forms lose charm.
 
-No model judges construction. Construction and perspective checkers were tried and removed: on pairs the user labelled works or broken they were at chance ([STYLE_GAPS](../STYLE_GAPS.md)). The director's unsure picks go to a human instead.
+No model judges construction. Construction and perspective checkers were tried and removed: on pairs the producer labelled works or broken they were at chance ([STYLE_GAPS](../STYLE_GAPS.md)). The director's unsure picks go to a human instead.
+
+What each lens can show, and how far to trust it: [TOOLS.md](../TOOLS.md). Each specialist also receives its section of [VOCABULARY.md](../VOCABULARY.md) with the rules below.
 
 ## Rules for every specialist
-
-Evidence and its limits: [TOOLS.md](../TOOLS.md). Each specialist also receives its section of [VOCABULARY.md](../VOCABULARY.md).
 
 - Judge only your vector. Another vector's flaw is not your finding.
 - Compare with the real cards, never with general taste. "Nice" and "polished" are not findings.
@@ -35,6 +35,6 @@ Evidence and its limits: [TOOLS.md](../TOOLS.md). Each specialist also receives 
 ## Modes
 
 - **study:** real cards only. What does this vector always do, what varies, how to say it to a generator.
-- **pairs:** cards A and B, blind. One may be drawn by a different process. Which one breaks the real cards' look on your vector, where, and how to fix it.
+- **pairs:** cards A and B, blind. One may be drawn by a different process. Which one breaks the real cards' look on your vector, where, and how to fix it. `review.py twins` runs this on twins; `make_set.py` runs it on each variant with hidden real cards as controls.
 
-Twins are the sharpest pairs: a real card and a redraw of the same object from which that card was hidden. Content is equal, so what remains is style. A hidden real card can also sit in a batch of new cards, which measures false alarms. If specialists cannot beat chance on twins, either the style matches or they are blind, so `off-style` cards must be caught first.
+Twins are the sharpest pairs: a real card and a redraw of the same object from which that card was hidden, so what differs is style. A chance result means the style matches only if the same specialists still catch clearly off-style cards.

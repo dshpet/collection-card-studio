@@ -30,21 +30,25 @@ Our sets sit inside or at the edge of the real ranges. Horror is the least unifi
 
 ## Art
 
-| Principle in the references | In our sets |
-|---|---|
-| Real proportions, simplified but not inflated | Followed. Objects are still very slightly plumper than real ones |
-| Thin parts stay thin | Followed on straps, spurs, candle arms and rails |
-| Materials read as themselves, with quiet detail | Followed: leather, brass, enamel, wood, canvas |
-| One clear soft light, form turns smoothly | Followed |
-| Bright, clean backdrops in a color that opposes the hero | Followed after a planner fix |
-| Tone-on-tone patterns: rays, rings, stripes, waves, diamonds | Followed |
-| Category 4 stays large and simple, a few quiet shapes | Followed. Saloon-type scenes are the busiest |
-| No text, frame or outline | Followed |
+Measured rows count our earlier cards: these sets and the first batch, as in [SYNTHESIS](SYNTHESIS.md#second-pass-2026-11-06) and `experiments/batch2_check.py`.
+
+| Principle in the references | In our earlier cards | Since |
+|---|---|---|
+| Real proportions, simplified but not inflated | Followed; objects still slightly plumper | |
+| Thin parts stay thin | Followed on straps, spurs, candle arms and rails | |
+| Materials read as themselves, with quiet detail | Followed: leather, brass, enamel, wood, canvas | |
+| One clear soft light, form turns smoothly | Followed | |
+| Backdrop against the hero's color temperature, never its hue | Partly: ours were more saturated and more opposed, backdrop chroma 0.180 against 0.143 | The planner states the real rule; batch 2 measured 0.160 against 0.153 |
+| Three-quarter view, even for symmetric objects | Not followed: a near-mirror silhouette on 9 of 17 first-batch cards against 13 of 67 real | Batch 2: 2 of 16 |
+| A pool of light behind the object, darker corners | Not followed: 11 of 23 against 39 of 52 real | Still not: the image model ignores the words |
+| Category 4 is the object's exact spot, close, often cut by the card edge | Partly: our scenes are wider, cut on 2 of 13 against 17 of 42 real | Close spots in the plan; edge cuts still rare |
+| Tone-on-tone patterns: rays, rings, stripes, waves, diamonds | Followed | |
+| No text, frame or outline | Followed | |
 
 ## Where we still differ
 
-- **Variants:** the third variant of Horror and of Sci-Fi is weaker in idea. Armchair, Rocking Horse and Space Food fit the topic only beside the others. The planner now asks for objects that name the topic on their own.
-- **By eye:** real cards look a little softer and quieter than ours. Ours are slightly tidier.
-- **Classifier:** a DINOv3 classifier still separates real cards from their redraws, at AUC 0.84 on the whole card. The old style scored 0.86. Style moved less on this measure than by eye, so part of the gap may be a generator fingerprint no viewer would see, but that is not proven.
-- **Blind review:** on unseen same-object pairs, specialists are at chance: right 47% of the time when they choose a side, against 71% for the old style. On pairs of different objects they pick the generated card 75% of the time, but they also accuse a real card on 59-69% of hidden real controls, so that number is weak.
-- **Rating:** the user graded these 30 cards 3.4 of 5 on average beside their references, and still spots 24 of 32 final-style twins ([STYLE_GAPS](STYLE_GAPS.md)). The other numbers above come from models.
+- **Objects:** Coffin and Tombstone are in the Horror set; the producer has since ruled out death and religious symbols. The third variants of Horror and Sci-Fi were weaker in idea (Armchair, Rocking Horse and Space Food fit only beside the others), which became a planning lesson.
+- **By eye:** real cards look a little softer and quieter than ours; ours are slightly tidier.
+- **Classifier:** a DINOv3 classifier still separates real cards from their redraws (AUC 0.84 whole card; old style 0.86). Whether a viewer sees what it sees is untested.
+- **Blind review:** on unseen same-object pairs, specialists are at chance: right 47% of the time when they choose a side, against 71% for the old style.
+- **Rating:** the producer graded these 30 cards 3.4 of 5 beside their references and still spots 24 of 32 final-style twins ([STYLE_GAPS](STYLE_GAPS.md)). The other numbers above come from models or measurement.

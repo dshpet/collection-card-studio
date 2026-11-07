@@ -62,7 +62,7 @@ The local art guide defines a progression: category 1 floats a relatively simple
 
 Consequently, “simple background,” “contact shadow,” “scene depth,” and “detail budget” cannot have one target across the collection. A contact-shadow requirement appropriate to a grounded object would contradict a floating-object card. A realistic category-4 setting should not be penalized merely for having more environmental structure than category 1.
 
-The reference-applicability lane records individual crops at approximately **59 × 67 pixels**, with one 58 × 67 crop. It supports coarse observations of focal prominence, broad category composition, and polished dimensional illustration, but not trustworthy fine-scale targets for material, texture, edge softness, or lighting. This report relies on that documented inspection rather than claiming a new visual analysis. ([Reference-applicability note](../research_notes/Measuring%20and%20controlling%20visual%20style/13%20reference%20applicability.md))
+The reference-applicability lane records individual crops at approximately **59 × 67 pixels**, with one 58 × 67 crop. It supports coarse observations of focal prominence, broad category composition, and polished dimensional illustration, but not trustworthy fine-scale targets for material, texture, edge softness, or lighting. This report relies on that documented inspection rather than claiming a new visual analysis. ([Reference-applicability note](measuring-visual-style-notes/13%20reference%20applicability.md))
 
 This does **not** make numerical geometry impossible. Canvas dimensions remain exact. A reviewed mask can produce an exact occupancy measurement **of that reduced raster**. The limitation is interpretation: that number is not automatically a trustworthy full-quality style target. Upscaling adds samples, not recovered evidence.
 
@@ -1055,16 +1055,16 @@ These notes retain extended formulas, source registers, access limitations, lice
 
 | Note | Detailed scope |
 |---|---|
-| [01 — Lighting and value](../research_notes/Measuring%20and%20controlling%20visual%20style/01%20lighting%20and%20value.md) | Roles, source geometry, shadow appearance, ratios, tonal analysis, relighting |
-| [02 — Color and palette](../research_notes/Measuring%20and%20controlling%20visual%20style/02%20color%20and%20palette.md) | Color coordinates, distributions, harmony, transport, recoloring |
-| [03 — Composition and format](../research_notes/Measuring%20and%20controlling%20visual%20style/03%20composition%20and%20format.md) | Apertures, occupancy, margins, balance, arrangements, layout control |
-| [04 — Edges, lines, and vectors](../research_notes/Measuring%20and%20controlling%20visual%20style/04%20edges%20lines%20and%20vectors.md) | Boundary profiles, strokes, contours, orientation, curvature |
-| [05 — Depth, perspective, and optics](../research_notes/Measuring%20and%20controlling%20visual%20style/05%20depth%20perspective%20and%20optics.md) | Projection, viewpoint, depth, atmosphere, blur, camera estimation |
-| [06 — Shape, scale, and silhouette](../research_notes/Measuring%20and%20controlling%20visual%20style/06%20shape%20scale%20and%20silhouette.md) | Geometry, part proportions, topology, recognition, apparent volume |
-| [07 — Texture, material, and finish](../research_notes/Measuring%20and%20controlling%20visual%20style/07%20texture%20material%20and%20finish.md) | Multiscale texture, material cues, brushwork, grain, artifacts |
-| [08 — Attention, readability, and detail](../research_notes/Measuring%20and%20controlling%20visual%20style/08%20attention%20readability%20and%20detail.md) | Hierarchy, saliency, detail budgets, display-scale tests |
-| [09 — Rhythm, pattern, and repetition](../research_notes/Measuring%20and%20controlling%20visual%20style/09%20rhythm%20pattern%20and%20repetition.md) | Motifs, spacing, spectra, recurrence, pattern rules |
-| [10 — Gesture, expression, and staging](../research_notes/Measuring%20and%20controlling%20visual%20style/10%20gesture%20expression%20and%20staging.md) | Pose, facial mechanisms, eyelines, contact, instance relations |
-| [11 — Style metrics and calibration](../research_notes/Measuring%20and%20controlling%20visual%20style/11%20style%20metrics%20and%20calibration.md) | Validity, perceptual/style metrics, uncertainty, acceptance design |
-| [12 — Controllable generation and editing](../research_notes/Measuring%20and%20controlling%20visual%20style/12%20controllable%20generation%20and%20editing.md) | Backend capabilities, control mechanisms, agent loops, preservation |
-| [13 — Reference applicability](../research_notes/Measuring%20and%20controlling%20visual%20style/13%20reference%20applicability.md) | Actual reference resolution, category relevance, observable limits |
+| [01 — Lighting and value](measuring-visual-style-notes/01%20lighting%20and%20value.md) | Roles, source geometry, shadow appearance, ratios, tonal analysis, relighting |
+| [02 — Color and palette](measuring-visual-style-notes/02%20color%20and%20palette.md) | Color coordinates, distributions, harmony, transport, recoloring |
+| [03 — Composition and format](measuring-visual-style-notes/03%20composition%20and%20format.md) | Apertures, occupancy, margins, balance, arrangements, layout control |
+| [04 — Edges, lines, and vectors](measuring-visual-style-notes/04%20edges%20lines%20and%20vectors.md) | Boundary profiles, strokes, contours, orientation, curvature |
+| [05 — Depth, perspective, and optics](measuring-visual-style-notes/05%20depth%20perspective%20and%20optics.md) | Projection, viewpoint, depth, atmosphere, blur, camera estimation |
+| [06 — Shape, scale, and silhouette](measuring-visual-style-notes/06%20shape%20scale%20and%20silhouette.md) | Geometry, part proportions, topology, recognition, apparent volume |
+| [07 — Texture, material, and finish](measuring-visual-style-notes/07%20texture%20material%20and%20finish.md) | Multiscale texture, material cues, brushwork, grain, artifacts |
+| [08 — Attention, readability, and detail](measuring-visual-style-notes/08%20attention%20readability%20and%20detail.md) | Hierarchy, saliency, detail budgets, display-scale tests |
+| [09 — Rhythm, pattern, and repetition](measuring-visual-style-notes/09%20rhythm%20pattern%20and%20repetition.md) | Motifs, spacing, spectra, recurrence, pattern rules |
+| [10 — Gesture, expression, and staging](measuring-visual-style-notes/10%20gesture%20expression%20and%20staging.md) | Pose, facial mechanisms, eyelines, contact, instance relations |
+| [11 — Style metrics and calibration](measuring-visual-style-notes/11%20style%20metrics%20and%20calibration.md) | Validity, perceptual/style metrics, uncertainty, acceptance design |
+| [12 — Controllable generation and editing](measuring-visual-style-notes/12%20controllable%20generation%20and%20editing.md) | Backend capabilities, control mechanisms, agent loops, preservation |
+| [13 — Reference applicability](measuring-visual-style-notes/13%20reference%20applicability.md) | Actual reference resolution, category relevance, observable limits |

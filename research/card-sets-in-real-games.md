@@ -4,7 +4,7 @@ Web research, 2026-11-02. The Cinema object lists come from a fan site's descrip
 
 ## Verified
 
-- **Gardenscapes already shipped this brief.** Its Cinema Collection (June 2026, 15 sets of 10) has sets named Western, Sci-Fi and Horror, alongside Equipment, Costumes, Adventures, Detective, Spies, Superheroes, Fantasy, Cinema, Broadway, Hollywood and Awards. It uses no real films ([1], [2], [3]). Reviewers probably know it, though that is an inference.
+- **Gardenscapes already shipped this brief.** Its Cinema Collection (June 2026, 15 sets of 10) has sets named Western, Sci-Fi and Horror, alongside Equipment, Costumes, Adventures, Detective, Spies, Superheroes, Fantasy, Cinema, Broadway, Hollywood and Awards. It uses no real films ([1], [2], [3]). Playrix reviewers likely know it.
 - **Playrix separates Horror from Halloween.** Horror: masks, dolls, mirrors, forests, crows, bats, abandoned mansions, static, chases ([2]). Halloween, in its Magic Collection: Pumpkin, Candy, Raven, Scarecrow, Decor, Mansion, Bats, Carving, Ghost, Awakened ([9], [10]).
 - **Western:** holsters, horseshoes, boots, cacti, stagecoaches, saddles, trains, saloons ([2]). Monopoly GO adds Wanted and High Noon ([5]).
 - **Sci-Fi:** flying cars, robot dogs, rockets, telescopes, spacesuits, space stations, terminals, UFOs ([2]).
@@ -14,10 +14,10 @@ Web research, 2026-11-02. The Cinema object lists come from a fan site's descrip
 
 ## Decisions
 
-- Horror leans Halloween, as the user chose. This departs from Playrix's own Horror set, which is the object-heavy, Halloween-free one.
+- Horror leans Halloween, as the producer chose. This departs from Playrix's own Horror set, which is the object-heavy, Halloween-free one.
 - Christmas is skipped.
 - No weapons. No shipped list names one, though whether Playrix's holsters hold guns is unconfirmed.
-- Skulls and graves are not taboo: Playrix shipped Calavera and a grave path ([9], [15]). Keeping them is a choice.
+- Skulls and graves are out, though Playrix shipped Calavera and a grave path ([9], [15]): the producer ruled out death and burial objects after the first sets ([lessons](../analysis/lessons.md)).
 - Sets stay object-only, which is stricter than shipped sets that include scene cards such as Carving.
 
 ## Sources

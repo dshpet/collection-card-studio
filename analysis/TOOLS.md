@@ -12,7 +12,7 @@ What a reviewer can rely on, and how far.
 | DINOv3 | Real-vs-generated classifier | Model estimate | Picks up content too, unless cards are twins |
 | `scripts/drift.py` | Field percentiles of a batch against real cards | Measured | Trust it for a batch, not a single card |
 | `scripts/review.py` | Specialist findings, art director | Rated | Wrong without lessons: see below |
-| Pairwise director (`choose()`) | Which of two drawings is closer to the real cards | Rated | Agrees with the user 61% of the time, about 77% when confident |
+| Pairwise director (`choose()`) | Which of two drawings is closer to the real cards | Rated | Agrees with the producer 61% of the time, 76% when confident |
 | CSD against the same object's real card | Style closeness with content held equal | Measured | Needs a real card of the same object, so only twins |
 | SigLIP 2 (`scripts/search.py`) | Which real cards show a phrase, with a confidence | Model estimate | Confidence is near 0 for objects no real card shows |
 | SAM 3 (`scripts/cast.py`) | Cutouts of the cast, by name | Model estimate | Misses a character hidden under a costume or a blanket |

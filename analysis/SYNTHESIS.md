@@ -10,9 +10,9 @@ Rater counts below are what models said, not what the cards are. Blind tests lat
 - **No outlines:** 154 cards. Form comes from shading.
 - **Shapes:** raters said round and soft in 133 and chunky in 136, but that is rater bias. Beside redraws of the same objects, real cards keep true proportions, slim parts and small soft bevels. They are simplified, not inflated.
 - **Surfaces:** smooth and calm. Raters said little texture in 132, yet materials stay readable: stitching, grain and seams exist, small and quiet.
-- **Colour:** saturation 4–5 of 5 in 156. Backgrounds are as saturated as subjects.
+- **Color:** raters gave saturation 4–5 of 5 on 156 cards, but measured backdrop chroma is moderate (Oklab 0.143), and ours ran higher until the planner stopped asking for "bright" colors. Backgrounds are about as saturated as subjects.
 - **Hero against background:** opposite temperature, not strict complements. A warm hero sits on a cool backdrop on 84% of cards, and a backdrop near the hero's own hue is rare (4% within 30°, against 14% shuffled). Details in [STYLE_GAPS.md](STYLE_GAPS.md), Backdrop colors.
-- **Shadows stay colourful:** the darkest quarter of a subject keeps 95% of its chroma. Dark means rich indigo or crimson, not black or grey.
+- **Shadows stay colorful:** the darkest quarter of a subject keeps 95% of its chroma. Dark means rich indigo or crimson, not black or grey.
 - **Camera:** eye level or slightly above in 145, three-quarter view in 127.
 - **Framing:** centred in 135. The subject's box spans about 83% × 76% of the card, though its silhouette covers only 33% of the area. 42 cards touch an edge.
 - **Attention:** 86% of predicted gaze lands on the subject. A content-free average map already scores 75%, so most of this reflects central framing.
@@ -21,7 +21,7 @@ Rater counts below are what models said, not what the cards are. Blind tests lat
 ## What changes by category
 
 - **Category 1 (35):** always floating, with no ground. Most are tilted. Backdrops are tone-on-tone rays, rings or stripes.
-- **Category 2 (20):** upright on a plain floor in the wall's colour, with no front edge or material (17 of 20 by eye), and a cast shadow. Backdrops are the most saturated. Raters never fully agree on this category, so the surface field below is the reliable test.
+- **Category 2 (20):** upright on a plain floor in the wall's color, with no front edge or material (17 of 20 by eye), and a cast shadow. Backdrops are the most saturated. Raters never fully agree on this category, so the surface field below is the reliable test.
 - **Category 3 (32):** on a real material such as wood, sand or grass (23 of 32). The backdrop stays graphic.
 - **Category 4 (42):** a real environment, usually outdoors, with a few supporting objects.
 - **Category 5 (31):** characters in dynamic poses with comic timing. Ten of these are the all-gold grand set, Summer Party. The rest sit late in their sets, mostly in gold frames, though Music Fest shows two without. 30 of the 31 show one cast: a stocky man with glasses and a mustache (14 cutouts), a pig (9), a sheep (5), a cow (4) and a rooster (5), in a new outfit on almost every card. A one-character card's figure spans about 70% × 68% of the card, centred, and the bottom edge cuts it on 10 of 23 (`analysis/cast.json`).
@@ -32,7 +32,7 @@ Rater counts below are what models said, not what the cards are. Blind tests lat
 - **Topics:** six activities, five places, three events, one group and one mood.
 - **Picks:** every set rates 4–5 of 5 for obviousness: the first things anyone would name.
 - **Sets share a look as well as an idea.** Regular sets average 0.62 style similarity against 0.57 for random cards, partly through shared ground materials such as sand, lawn or deck.
-- **Variety is not engineered.** Background hues per set (6.7) barely beat random draws (6.5), so a set's colours are about what chance gives. Object classes range from 4 to 9.
+- **Variety is not engineered.** Background hues per set (6.7) barely beat random draws (6.5), so a set's colors are about what chance gives. Object classes range from 4 to 9.
 - **Category mix is uneven:** Category 2 appears only 1–3 times per set, when it appears at all.
 - **Models for the movie sets:** Sports, Finals, Coolness, Countrystead and Gardens have no characters and no gold frames. Amusement has no characters, but three objects carry gold frames.
 
@@ -47,7 +47,7 @@ Rater counts below are what models said, not what the cards are. Blind tests lat
 
 ## Second pass, 2026-11-06
 
-Two fresh reviewers went over all 160 cards, one for object choice and one for art logic, against the planner's rules and our 60 cards. The author checked the main claims against the card list and by eye. Tags: measured from pixels, rated by the models' labels, or read by eye.
+Two model reviewers went over all 160 cards, one for object choice and one for art logic, against the planner's rules and our 60 cards; the main claims were checked against the card list and by eye. Tags: measured from pixels, rated by the models' labels, or read by eye.
 
 What the sets choose:
 - **Made things at object size (eye).** Wild nature appears on 4 of 129 object cards (Palm Tree, Coral Reef, Jellyfish, Seahorse), and no card shows a landform or a sky body. Our plans had about one in six.
@@ -82,5 +82,5 @@ Not adopted: close framing of character cards, which rested on only three of our
 - **Agreement is not truth.** All four raters shared the same wrong expectation, so their agreement could not reveal it.
 - A fresh reviewer's spot check of 38 cards found 8 wrong, mostly rings read as rays, which the new pattern field addresses, and surfaces misjudged.
 - Reviewers found 3 of 24 hard masks incomplete: Park Gate, Pool Bar and Adventure.
-- Shading maps leak some colour. DeepGaze learned from photos, so it is unvalidated on this art.
+- Shading maps leak some color. DeepGaze learned from photos, so it is unvalidated on this art.
 - The sky, sand and lawn reflect this summer collection, not the franchise. No art director has checked these ratings, and 430×480 limits conclusions about fine texture.

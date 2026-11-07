@@ -6,18 +6,18 @@ Every generated card and every measurement, oldest first. Full-size drawings, re
 |---|---|---|
 | `pilot/` | First small batches, before the reference analysis | early `make_set.py` |
 | `first/` | First full run: three genres, three variants, plus the off-style controls and the hidden-card test | `make_set.py`, `validate.py` |
-| `twins/` | Twelve real cards redrawn with the card hidden, once per style round (`baseline`, `r1`-`r9`) | `validate.py twins` |
+| `twins/` | Twelve real cards redrawn with the card hidden, once per style round (`baseline`, `r1`-`r8`), and `r2e`, six r2 twins edited by the director's notes | `validate.py twins` |
 | `review/` | Specialist and director reports: style rounds, calibration, checkers, set reviews | `review.py` |
 | `drift/` | Field drift and classifier results per batch | `drift.py` |
 | `western/`, `sci-fi/`, `horror/` | Three variants of each film genre in the final style | `make_set.py` |
-| `final/`, `final.json` | The ten cards chosen from those variants, per genre | by hand |
+| `final/`, `final.json`, `compare.json` | The ten cards chosen from those variants per genre, and their set numbers against the real sets | by hand, `compare.py` |
 | `twins40/` | Forty more twins: old and final style, then `r3`, `r9`, and the parameter rounds `p1`-`p3` | `validate.py`, `experiments/param.py` |
 | `ratings.json` | Every human rating: twins, closest style, set cards, trials | `rate_ui.py` |
 | `trial/` | Construction trial: brief, brief plus how it works, Blender blockout, fixed blockout | `experiments/trial.py` |
 | `*-blockout/` | The 30 final cards redrawn from Blender models | `make_set.py` |
 | `trial2/` | Soft render and real photos for the modeller | `experiments/trial2.py` |
 | `score/` | Every rated card scored by embeddings, classifier and reviewers | `experiments/score.py` |
-| `prefer/`, `prefer_works/` | Which of two drawings is closer, or built right, on pairs the user decided | `experiments/prefer.py` |
+| `prefer/`, `prefer_works/` | Which of two drawings is closer, or built right, on pairs the producer decided | `experiments/prefer.py` |
 | `tune/` | Automatic tuning of the director's notes | `experiments/tune.py` |
 | `param/` | Parameter loop: measured style parameters on the forty twins | `experiments/param.py` |
 | `western-2/`, `sci-fi-2/` | Test run of the current pipeline, one variant each. Not final | `make_set.py` |
@@ -32,6 +32,10 @@ Every generated card and every measurement, oldest first. Full-size drawings, re
 | `colors/` | Measured backdrop, surface and hero colors of the real cards, the earlier finals and the batch, with a swatch sheet | `experiments/colors.py` |
 | `western-batch2/`, `sci-fi-batch2/`, `horror-batch2/` | Variant 1 of each `*-shared-cast-2` plan: the reference color logic and the second reference pass. Not final | `make_set.py` |
 | `cast-check/`, `cast-check-2/`, `outfit_check/` | The Western cast plan's character cards, before and after the outfit fix | `make_set.py --plan`, `experiments/outfit_check.py` |
-| `plans/` | Draft plans for the final film sets, for the producer to approve before drawing; `*-shared` keep the most iconic objects in every variant | `make_set.make_plan`, `experiments/shared_plans.py` |
+| `plans/` | Draft plans for the film sets, for the producer to approve before drawing | `make_set.make_plan`, `experiments/shared_plans.py` |
+| `batch2.png` | The object cards of the three `*-batch2` runs, one row per genre | by hand |
+| `robustness/` | 19 odd, risky and hostile requests planned (`plans/`, then `plans2/` after the repair loop), and Kitchen, Pirates and Star Wars drawn end to end | `experiments/robustness.py`, `make_set.py` |
+| `grade/` | The forty final-style twins with a measured backdrop grade | `experiments/grade.py` |
+| `generators/` | The forty twins drawn by Qwen-Image-2.1 and Nano Banana Pro, against the Codex draws | `experiments/generators.py` |
 
-A set run folder holds `plan.json` and `briefs.json`, the drawings in `tries/`, prompts in `prompts/`, Blender models in `models/`, pairwise judgements in `choose/`, `check.json` with every try's checks, and `edits.json` with every edit and whether it was kept.
+A set run folder holds `plan.json` (with the request that made it) and `briefs.json`, the drawings in `tries/`, prompts in `prompts/`, Blender models in `models/`, pairwise judgements in `choose/`, `check.json` with every try's checks, `rounds.json` and `edits.json` with every edit and whether it was kept, and `report.md`.

@@ -2,7 +2,7 @@
 
 **Source cutoff:** 2026-10-31. These are research notes and recommendations, not implemented or benchmarked feature extraction.
 
-[Research synthesis](../../reports/Measuring%20and%20controlling%20visual%20style.md)
+[Research synthesis](../measuring-visual-style.md)
 
 | Note | Coverage |
 |---|---|

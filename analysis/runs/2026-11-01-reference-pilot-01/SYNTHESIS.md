@@ -61,16 +61,16 @@ References such as `role:O#` identify observations in the following normalized s
 
 | Role | Observation IDs | Source |
 |---|---|---|
-| lighting_shading | O1–O11 | [normalized JSON](reports/normalized/lighting_shading.json) |
-| value_contrast | O1–O4 | [normalized JSON](reports/normalized/value_contrast.json) |
-| color_palette | O1–O7 | [normalized JSON](reports/normalized/color_palette.json) |
-| composition_hierarchy | O1–O7 | [normalized JSON](reports/normalized/composition_hierarchy.json) |
-| shape_proportions | O1–O7 | [normalized JSON](reports/normalized/shape_proportions.json) |
-| viewpoint_depth | O1–O9 | [normalized JSON](reports/normalized/viewpoint_depth.json) |
-| edges_linework | O1–O5 | [normalized JSON](reports/normalized/edges_linework.json) |
-| surface_finish | O1–O7 | [normalized JSON](reports/normalized/surface_finish.json) |
-| rhythm_staging | O1–O7 | [normalized JSON](reports/normalized/rhythm_staging.json) |
+| lighting_shading | O1–O11 | normalized JSON |
+| value_contrast | O1–O4 | normalized JSON |
+| color_palette | O1–O7 | normalized JSON |
+| composition_hierarchy | O1–O7 | normalized JSON |
+| shape_proportions | O1–O7 | normalized JSON |
+| viewpoint_depth | O1–O9 | normalized JSON |
+| edges_linework | O1–O5 | normalized JSON |
+| surface_finish | O1–O7 | normalized JSON |
+| rhythm_staging | O1–O7 | normalized JSON |
 
-Tool evidence: [LP1_profile](raw_evidence/LP1_profile.json) · [LP2_profile](raw_evidence/LP2_profile.json) · [R1_whole_frame_summary](raw_evidence/R1_whole_frame_summary.json) · [R2_whole_frame_summary](raw_evidence/R2_whole_frame_summary.json) · [R3_whole_frame_summary](raw_evidence/R3_whole_frame_summary.json) · [R4_whole_frame_summary](raw_evidence/R4_whole_frame_summary.json) · [lighting_probe_statistics](raw_evidence/lighting_probe_statistics.json).
+Tool evidence: LP1_profile · LP2_profile · R1_whole_frame_summary · R2_whole_frame_summary · R3_whole_frame_summary · R4_whole_frame_summary · lighting_probe_statistics.
 
-[Frozen manifest](inputs.json) · [runtime qualification](runtime_observations.json) · [report validation](report_validation.json) · [capture provenance](validation/synthesis_capture.json).
+Frozen manifest · runtime qualification · report validation · capture provenance.
