@@ -1,0 +1,350 @@
+{
+ "title": "Fast Food",
+ "story": "",
+ "variants": [
+  {
+   "cards": [
+    {
+     "name": "Burger",
+     "subject": "A round cheeseburger with a domed sesame bun on top, a flat bun below, and between them a brown patty, a melted yellow cheese square, a red tomato slice and a ruffled green lettuce leaf.",
+     "object_class": "food_drink",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "golden brown bun, brown patty, yellow cheese, small green lettuce accent",
+     "backdrop_colors": "sky blue and cyan",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Pizza Slice",
+     "subject": "A single triangular pizza slice with a thick golden crust at the wide end, melted yellow cheese, and three round red pepperoni slices, the tip drooping slightly.",
+     "object_class": "food_drink",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "golden crust, yellow cheese, red pepperoni, small green basil accent",
+     "backdrop_colors": "blue and cyan",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Donut",
+     "subject": "A perfectly round ring donut with a hole in the middle, thick pink glaze on top and colorful sprinkles on the glaze.",
+     "object_class": "food_drink",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "light brown dough, pink glaze, small yellow sprinkle accent",
+     "backdrop_colors": "sky blue and cyan",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Fries",
+     "subject": "A red cardboard fry carton with a scalloped front edge, filled with many golden french fries sticking up out of it.",
+     "object_class": "container",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "red carton, golden yellow fries, small white stripe accent",
+     "backdrop_colors": "rich purple",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Milkshake",
+     "subject": "A tall tapered glass of pink milkshake topped with a swirl of whipped cream, a red cherry on top and a striped straw leaning out of the glass.",
+     "object_class": "food_drink",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "pink shake, white cream, red cherry, clear glass, small blue straw accent",
+     "backdrop_colors": "rich green",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Soda Cup",
+     "subject": "A tall tapered paper cup with a flat white lid and a straight plastic straw through the lid, with a simple wave icon printed around the cup, standing on a table.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "white cup, red wave icon, white lid, small blue straw accent",
+     "backdrop_colors": "blue and cyan",
+     "surface_or_setting": "wooden table",
+     "build_model": false
+    },
+    {
+     "name": "Hot Dog",
+     "subject": "A hot dog seen from above lying on a round white plate: a long soft bun holding a reddish sausage, with a zigzag line of yellow mustard along the top.",
+     "object_class": "food_drink",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "tan bun, red-brown sausage, yellow mustard, white plate",
+     "backdrop_colors": "blue",
+     "surface_or_setting": "wooden table",
+     "build_model": false
+    },
+    {
+     "name": "Food Truck",
+     "subject": "A boxy food truck with four wheels, a large open serving window with a striped awning above it, a flat roof, and a small house pictogram printed on the side door.",
+     "object_class": "vehicle",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "yellow body, red-white striped awning, black wheels, small teal house emblem accent",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "grey asphalt road",
+     "build_model": true
+    },
+    {
+     "name": "Menu Post",
+     "subject": "A drive-thru menu board: a rectangular board on a single sturdy post bolted into a concrete base, showing burger, fries and cup icons with a round speaker grille at the side of the board, seen from the car side.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "dark grey post, cream board, red and yellow food icons",
+     "backdrop_colors": "clear blue sky",
+     "surface_or_setting": "drive-thru lane of grey asphalt beside a curb",
+     "build_model": true
+    },
+    {
+     "name": "Soda Machine",
+     "subject": "A countertop soda dispenser with a boxy body, a front nozzle row and a drip tray, with a paper cup sitting on the tray under the nozzle.",
+     "object_class": "electronics",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "silver steel body, red front panel, white cup",
+     "backdrop_colors": "cyan wall tint",
+     "surface_or_setting": "steel kitchen counter against a tiled wall",
+     "build_model": true
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Chicken Bucket",
+     "subject": "A round tapered bucket with red and white vertical stripes and a flat rim, overflowing with golden fried chicken drumsticks.",
+     "object_class": "container",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "red and white stripes, golden brown chicken",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Ice Cream",
+     "subject": "A soft-serve ice cream cone: a tan waffle cone with a grid pattern, topped with a tall white curled swirl ending in a point.",
+     "object_class": "food_drink",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "tan cone, white cream, small pink sprinkle accent",
+     "backdrop_colors": "blue and cyan",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Burger",
+     "subject": "A round cheeseburger with a domed sesame bun, a brown patty, yellow cheese, red tomato and green lettuce, a flat bun below.",
+     "object_class": "food_drink",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "golden bun, brown patty, yellow cheese, red tomato, small green lettuce accent",
+     "backdrop_colors": "rich purple",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Fries",
+     "subject": "A red cardboard fry carton with a scalloped front edge, packed with golden french fries standing up.",
+     "object_class": "container",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "red carton, golden fries, small white stripe accent",
+     "backdrop_colors": "rich green",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Soda Cup",
+     "subject": "A tall tapered paper cup with a white lid and a straight straw, with a simple bubble icon printed around it, standing on a table.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "waves",
+     "hero_colors": "white cup, red icon, small yellow straw accent",
+     "backdrop_colors": "cyan and blue",
+     "surface_or_setting": "wooden table",
+     "build_model": false
+    },
+    {
+     "name": "Hot Dog",
+     "subject": "A hot dog seen from above in a long soft bun with a sausage and a zigzag of red ketchup, lying on a flat paper tray.",
+     "object_class": "food_drink",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "tan bun, brown sausage, red ketchup, white tray",
+     "backdrop_colors": "blue",
+     "surface_or_setting": "wooden table",
+     "build_model": false
+    },
+    {
+     "name": "Pizza Box",
+     "subject": "A square cardboard pizza box seen from above with its lid open, holding a whole round pizza with melted cheese and red pepperoni, one slice cut apart.",
+     "object_class": "paper_document",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "brown cardboard, yellow cheese, red pepperoni",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "wooden table",
+     "build_model": false
+    },
+    {
+     "name": "Delivery Scooter",
+     "subject": "A two-wheeled scooter with a curved front shield, handlebars and a seat, and a square insulated box fixed on the rear rack with a small house pictogram on its side.",
+     "object_class": "vehicle",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "yellow scooter body, black seat and tires, small teal house emblem accent",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "grey asphalt road",
+     "build_model": true
+    },
+    {
+     "name": "Burger Sign",
+     "subject": "A glowing wall sign: a round burger icon in red and yellow neon tubes inside a rounded rectangle plate, bolted flat to a wall.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "red and yellow glowing tubes, dark grey plate",
+     "backdrop_colors": "blue wall",
+     "surface_or_setting": "smooth blue-tiled wall outside a shop",
+     "build_model": true
+    },
+    {
+     "name": "Cash Register",
+     "subject": "A cash register with a boxy body, a raised small screen showing a burger icon, a flat button pad, and a pull-out drawer closed beneath, standing on a counter.",
+     "object_class": "electronics",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "silver grey body, cream buttons, small red button accent",
+     "backdrop_colors": "pink wall",
+     "surface_or_setting": "wooden shop counter against a wall",
+     "build_model": true
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Hot Dog",
+     "subject": "A hot dog in a long soft bun with a sausage poking out at both ends and a zigzag of yellow mustard along the top.",
+     "object_class": "food_drink",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "tan bun, red-brown sausage, yellow mustard",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Donut",
+     "subject": "A perfectly round ring donut with a center hole, pink glaze on top and sprinkles.",
+     "object_class": "food_drink",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "light brown dough, pink glaze, small yellow sprinkle accent",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Takeout Bag",
+     "subject": "A folded brown paper bag with a flat bottom, rolled-down top edge and two paper handles attached at the top, with a small house pictogram stamped on the front.",
+     "object_class": "container",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "kraft brown paper, small red house emblem accent",
+     "backdrop_colors": "blue and cyan",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Soda Cup",
+     "subject": "A tall tapered paper cup with a white lid and a straight straw, with a simple star icon around it.",
+     "object_class": "container",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "white cup, red star icon, small blue straw accent",
+     "backdrop_colors": "rich purple",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Pizza Slice",
+     "subject": "A single triangular pizza slice with a thick golden crust, melted cheese and round red pepperoni, standing on a flat white plate.",
+     "object_class": "food_drink",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "golden crust, yellow cheese, red pepperoni, white plate",
+     "backdrop_colors": "rich green",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Burger",
+     "subject": "A round cheeseburger with a sesame bun, brown patty, yellow cheese, red tomato and green lettuce, on a white plate.",
+     "object_class": "food_drink",
+     "category": "3",
+     "pattern": "diamonds",
+     "hero_colors": "golden bun, brown patty, yellow cheese, red tomato, small green lettuce accent, white plate",
+     "backdrop_colors": "blue",
+     "surface_or_setting": "steel counter",
+     "build_model": false
+    },
+    {
+     "name": "Fries",
+     "subject": "A red cardboard fry carton with a scalloped front, full of golden french fries, standing on a counter.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "red carton, golden fries, small white stripe accent",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "steel counter",
+     "build_model": false
+    },
+    {
+     "name": "Coffee Cup",
+     "subject": "A tapered paper coffee cup with a dark lid with a small drinking opening and a brown cardboard sleeve around the middle, standing on a counter.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "waves",
+     "hero_colors": "white cup, brown sleeve, dark brown lid",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "steel counter",
+     "build_model": false
+    },
+    {
+     "name": "Drive-In Sign",
+     "subject": "A tall pole sign: a single round steel pole set in a concrete base, topped with a round plate showing a burger icon in red and yellow.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "grey steel pole, red and yellow plate",
+     "backdrop_colors": "clear blue sky",
+     "surface_or_setting": "grey asphalt parking lot",
+     "build_model": true
+    },
+    {
+     "name": "Diner Stool",
+     "subject": "A diner stool with a round red cushioned seat on a single chrome pole that stands on a round chrome base fixed to the floor.",
+     "object_class": "furniture",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "red seat, silver chrome pole and base",
+     "backdrop_colors": "cyan wall",
+     "surface_or_setting": "black and white checkered floor beside a counter",
+     "build_model": true
+    }
+   ]
+  }
+ ],
+ "problems": [],
+ "cast": 0
+}

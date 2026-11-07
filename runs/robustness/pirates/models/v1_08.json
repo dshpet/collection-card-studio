@@ -1,0 +1,25 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "loose": [],
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The fluke plates (0.045 thick) are thinner than the arm tube (0.09 across), so the cut tube ends poke through both faces of each fluke, clearly visible on the right one; the flukes do not read as solid heads on the arms."
+  ]
+ },
+ {
+  "round": 2,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The eye boss is bored front to back (along y) but the ring lies in the x-z plane, so the ring's wire runs along x where it meets the boss and can't pass through the hole. In the render the boss is a flat disc over the ring. Fix: bore the boss along x (rot (0, 90, 0)).",
+   "The ball at each arm tip (radius 0.045) is wider than the flattened fluke (about 0.05 thick), so it pokes out of both faces as a rivet-like dot, a mark the card shouldn't have. Fix: remove the balls; the fluke already covers the arm end."
+  ]
+ }
+]

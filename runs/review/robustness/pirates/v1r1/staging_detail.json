@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the anchor stands upright on a plank floor that runs to a flat yellow gradient wall. That mixes category 3 and 4, and the plank grain is busy across the lower half (edge density 0.062, above the real max of 0.046). B: the barrel sits on a ship deck with a plain rail and sky, a quiet category 4 place.",
+   "fix": "Anchor lying on a ship's deck beside the rail, close-up, a few large plain planks, sea and sky behind, the card edge cutting the deck"
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the open coin bag has a pile of loose coins spilled on the floor at the bottom right, coins outside the container. The plain purple floor is otherwise fine. B: the vending machine stands alone on the plain purple floor with nothing added.",
+   "fix": "Coin sack on a plain purple floor, coins only inside the open mouth of the sack, no coins on the ground"
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the rowboat is moored at a dock, which fits its use, but two lily pads float on open water at the bottom right. That is invented scenery, and edge density 0.053 is above the real max. B: the ship sails on open sea with two small clouds and nothing added.",
+   "fix": "Rowboat tied to a wooden dock on calm water, no lily pads or plants, a few large quiet shapes"
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the snorkel lies on dock planks, and rope coils and a post are cut off at the top-left corner, an extra prop beside the hero. B: the water slide stands on a tiled pool edge in front of a pink wave pattern. The pattern is tone-on-tone and the slide is in its place of use.",
+   "fix": "Snorkel mask lying on poolside or dock planks with water behind, no rope or posts"
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: a large magnifying glass lies across the center of the map. It is a partner object the subject does not name, and it covers the hero. The map is also busy (detail 0.031, edges 0.077, both above the real max). A: the map lies flat on wood planks and fills the card, with only the map itself.",
+   "fix": "Paper map lying flat on a wooden table seen from above, nothing on top of it, no magnifying glass"
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the topiary stands in a garden with a hedge wall, a curved paved path, a stone planter rim and many small grass tufts across the foreground. It has a lot of small detail. A: the palm stands on a beach with sea and sky, a few large shapes plus two pebbles.",
+   "fix": "Spiral topiary on a lawn, close-up, plain grass and a soft hedge behind, no path and no scattered grass tufts"
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the ship's wheel and its post are shown whole, small in the middle of a wide deck with long plank lines, a rail and the sea. There is more floor than place of use (edges 0.063). A: the coin binocular is close up, cut by the card edges, with a city and a railing behind, matching the real cut-off framing.",
+   "fix": "Ship's wheel close-up at the helm, filling the card, the card edge cutting the post and deck, a few large plain planks"
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the polaroid floats on a red ray burst, a clean category 1. B: the bell buoy sits in the water it floats in, with a clouded sky. The clouds are a little busy on both sides, but that is within real practice.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both are category 1 sky cards. The parrot, cut by the card edge, flies among soft clouds. The balloons float above a cloud bank. Neither backdrop competes with its hero.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both float on tone-on-tone ray bursts with a bright center. The hat has only its own feather and band. The jacket's badges sit on its own sash. No invented props on either card.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both float on green ray bursts with nothing added around the object. The lamp's yellow halo is the lamp's own light.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the chest sits underwater with ten or more floating bubbles, a seashell at the bottom left and loose coins spilled on the sand. These are invented props and sparkle-like decoration around the hero. B: the open chest stands on plain sand dunes under a sky, holding coins inside, with nothing else.",
+   "fix": "Open treasure chest full of gold coins on plain sand, coins only inside the chest, no bubbles, no shells, no spilled coins"
+  }
+ ],
+ "pattern": "Generated cards give themselves away through invented things around the hero: lily pads, rope coils, a shell, bubbles, spilled coins, a magnifying glass. They also add busy ground detail such as grass tufts, paths and long plank grain, and they place a whole object small in a wide setting where real cards crop in close and let the card edge cut the object."
+}

@@ -1,0 +1,353 @@
+{
+ "title": "Gangster",
+ "story": "Shiny getaway cars, jazzy back rooms and a bag of loot by the vault.",
+ "variants": [
+  {
+   "cards": [
+    {
+     "name": "Fedora",
+     "subject": "A classic fedora hat with a pinched crown, a wide brim and a wide ribbon band around the crown.",
+     "object_class": "clothing",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "charcoal grey felt, red ribbon band",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Pocket Watch",
+     "subject": "A round gold pocket watch with a crown and a ring on top, a perfectly round white face with tick marks and two hands, and a short chain attached to the ring.",
+     "object_class": "accessory",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "gold, white face, small red second hand",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Trumpet",
+     "subject": "A brass trumpet with a flared bell, a coiled tube loop, three valves on top and a mouthpiece.",
+     "object_class": "music_instrument",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "brass gold, white pearl valve buttons",
+     "backdrop_colors": "grass green",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Money Bag",
+     "subject": "A round burlap sack tied at the neck with a rope, with a dollar sign sewn on the front.",
+     "object_class": "container",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "tan burlap, rope tan, green dollar sign",
+     "backdrop_colors": "rich purple",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Candle Phone",
+     "subject": "A candlestick telephone with a tall thin stem, a round base, a mouthpiece on top and a hook on the side holding a corded earpiece, with a round dial on the base.",
+     "object_class": "electronics",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "black, brass, small red dial center",
+     "backdrop_colors": "rich green",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Getaway Car",
+     "subject": "A 1930s black sedan with round fenders, running boards, a tall chrome grille, round headlights and four white-wall tires, seen from the front three-quarter.",
+     "object_class": "vehicle",
+     "category": "3",
+     "pattern": "concentric_rings",
+     "hero_colors": "glossy black, chrome, red hubcaps",
+     "backdrop_colors": "sunny yellow",
+     "surface_or_setting": "grey cobblestone street",
+     "build_model": true
+    },
+    {
+     "name": "Cash Case",
+     "subject": "An open brown leather suitcase with two brass latches and a handle, packed full of green banknote bundles with paper bands, standing on the floor.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "leather brown, green banknotes, brass",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "polished wooden floor",
+     "build_model": true
+    },
+    {
+     "name": "Spats",
+     "subject": "A pair of two-tone lace-up shoes in black and white leather with rounded toes and low heels.",
+     "object_class": "clothing",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "black and white leather, grey laces",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "polished wooden floor",
+     "build_model": false
+    },
+    {
+     "name": "Vault Door",
+     "subject": "A round steel vault door with a big spoked wheel handle in the center, thick hinges on the left and bolts around the rim, set in a concrete wall.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "steel grey, brass wheel",
+     "backdrop_colors": "orange",
+     "surface_or_setting": "concrete bank wall",
+     "build_model": true
+    },
+    {
+     "name": "Street Lamp",
+     "subject": "A tall black iron street lamp with a fluted pole, a round base and a glass lantern on top glowing warm yellow, standing on the sidewalk.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "black iron, warm yellow glow",
+     "backdrop_colors": "violet sky turning pink at the horizon",
+     "surface_or_setting": "cobblestone sidewalk at dusk",
+     "build_model": true
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Money Bag",
+     "subject": "A round burlap sack tied at the neck with a rope, with a dollar sign sewn on the front.",
+     "object_class": "container",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "tan burlap, rope tan, green dollar sign",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Saxophone",
+     "subject": "A curved brass saxophone with an upturned flared bell, a long body with rows of keys and a bent neck ending in a mouthpiece.",
+     "object_class": "music_instrument",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "brass gold, black mouthpiece",
+     "backdrop_colors": "grass green",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Typewriter",
+     "subject": "A vintage typewriter with a black body, rows of round blank keys, a roller with a paper sheet on top and a silver carriage lever on the left.",
+     "object_class": "electronics",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "black, silver, cream keys, small red lever tip",
+     "backdrop_colors": "rich purple",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Fedora",
+     "subject": "A fedora hat with a pinched crown, a wide brim and a band, resting on a table.",
+     "object_class": "clothing",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "cream-tan felt, dark brown band",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "dark wooden table",
+     "build_model": false
+    },
+    {
+     "name": "Candle Phone",
+     "subject": "A candlestick telephone with a tall thin stem, a round base, a mouthpiece on top and a hook on the side holding a corded earpiece, with a round dial on the base.",
+     "object_class": "electronics",
+     "category": "3",
+     "pattern": "waves",
+     "hero_colors": "black, brass, small red dial center",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "dark wooden table",
+     "build_model": true
+    },
+    {
+     "name": "Gramophone",
+     "subject": "A gramophone with a square wooden box, a round turntable with a black record and a big flared brass horn attached on an arm.",
+     "object_class": "music_instrument",
+     "category": "3",
+     "pattern": "plain_gradient",
+     "hero_colors": "wood brown, brass, black record",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "dark wooden table",
+     "build_model": true
+    },
+    {
+     "name": "Getaway Car",
+     "subject": "A 1930s black sedan with round fenders, running boards, a tall chrome grille, round headlights and four white-wall tires, parked in a brick alley at dusk with its headlights casting warm yellow light.",
+     "object_class": "vehicle",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "glossy black, chrome, yellow headlight glow",
+     "backdrop_colors": "violet sky turning pink at the horizon",
+     "surface_or_setting": "wet cobblestone alley beside a brick wall",
+     "build_model": true
+    },
+    {
+     "name": "Vault Door",
+     "subject": "A round steel vault door with a big spoked wheel handle in the center, thick hinges on the left and bolts around the rim, set in a concrete wall.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "steel grey, brass wheel",
+     "backdrop_colors": "sunny yellow",
+     "surface_or_setting": "concrete bank wall",
+     "build_model": true
+    },
+    {
+     "name": "Secret Door",
+     "subject": "A closed wooden door seen from the street, with a small square peephole hatch with a brass grille at head height, a round brass knob on the right and hinges on the left, set in a brick wall with a lit lamp above.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "wood brown, brass, warm yellow lamp",
+     "backdrop_colors": "rich royal blue night sky with a few small stars",
+     "surface_or_setting": "red brick wall on a street",
+     "build_model": true
+    },
+    {
+     "name": "Star Sign",
+     "subject": "A round glowing neon sign showing a star icon, mounted on a bracket on a brick wall, at night.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "hot pink and yellow neon, black frame",
+     "backdrop_colors": "rich royal blue night sky with a few small stars",
+     "surface_or_setting": "red brick wall of a jazz club",
+     "build_model": true
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Fedora",
+     "subject": "A classic fedora hat with a pinched crown, a wide brim and a wide ribbon band around the crown.",
+     "object_class": "clothing",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "black felt, white ribbon band",
+     "backdrop_colors": "grass green",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Money Bag",
+     "subject": "A round burlap sack tied at the neck with a rope, with a dollar sign sewn on the front.",
+     "object_class": "container",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "tan burlap, rope tan, green dollar sign",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Spats",
+     "subject": "A pair of two-tone lace-up shoes in black and white leather with rounded toes and low heels.",
+     "object_class": "clothing",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "black and white leather, grey laces",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Candle Phone",
+     "subject": "A candlestick telephone with a tall thin stem, a round base, a mouthpiece on top and a hook on the side holding a corded earpiece, with a round dial on the base.",
+     "object_class": "electronics",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "black, brass, small red dial center",
+     "backdrop_colors": "rich pink",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Radio",
+     "subject": "A vintage wooden table radio with a rounded arch top, a round speaker grille in the center and two round knobs below it.",
+     "object_class": "electronics",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "wood brown, cream grille, red knobs",
+     "backdrop_colors": "rich purple",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Getaway Car",
+     "subject": "A 1930s dark green sedan with round fenders, running boards, a tall chrome grille, round headlights and four white-wall tires, seen from the front three-quarter.",
+     "object_class": "vehicle",
+     "category": "3",
+     "pattern": "concentric_rings",
+     "hero_colors": "glossy dark green, chrome, white-wall tires",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "grey cobblestone street",
+     "build_model": true
+    },
+    {
+     "name": "Coffee Cup",
+     "subject": "A round white espresso cup with a small handle on a round saucer, filled with dark coffee, with a curl of steam.",
+     "object_class": "food_drink",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "white china, coffee brown, thin blue rim line",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "dark wooden table",
+     "build_model": false
+    },
+    {
+     "name": "Cash Case",
+     "subject": "An open brown leather suitcase with two brass latches and a handle, packed full of green banknote bundles with paper bands, seen from above.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "leather brown, green banknotes, brass",
+     "backdrop_colors": "sunny yellow",
+     "surface_or_setting": "dark wooden table",
+     "build_model": true
+    },
+    {
+     "name": "Vault Door",
+     "subject": "A round steel vault door with a big spoked wheel handle in the center, thick hinges on the left and bolts around the rim, set in a concrete wall.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "steel grey, brass wheel",
+     "backdrop_colors": "orange",
+     "surface_or_setting": "concrete bank wall",
+     "build_model": true
+    },
+    {
+     "name": "Hydrant",
+     "subject": "A red fire hydrant with a rounded dome top, a bolted cap, two side outlets with caps and a wide base, standing on the sidewalk.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "red, grey steel caps",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "grey sidewalk beside a brick wall",
+     "build_model": true
+    }
+   ]
+  }
+ ],
+ "problems": [
+  "versions 1 and 3 share too many objects: keep only the most iconic"
+ ],
+ "sensitive": [],
+ "cast": 0
+}

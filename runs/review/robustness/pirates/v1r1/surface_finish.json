@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the iron anchor is soft and evenly matte dark grey with a quiet sheen on the shank. The deck grain is fine and low-contrast, and the crop is slightly soft, like the real cards. B: the barrel staves carry big, scratchy, decorative grain strokes that read as painted-on marks rather than wood. The steel hoops are crisp and evenly lacquered.",
+   "fix": "Draw barrel staves with faint, fine wood grain barely visible, smooth soft surfaces, and matte iron hoops with one soft highlight."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the sack leather has visible pebble grain all over, dashed stitch seams along the edges, and a tightly twisted rope with crisp strands. That fine material detail matches the generated glove in the lessons. B: the vending machine is soft, smooth blue plastic with gentle condensation dots, and the crop is soft like the real cards.",
+   "fix": "Draw the sack as smooth, soft leather without visible pores or stitch dashes, and the rope as a simple soft twisted cord."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the boat and dock wood are flat, illustrated orange with drawn plank lines and painted ripple rings, and the gloss is the same everywhere. B: the sails are soft matte canvas with gentle folds, and the wood spars are smoothly shaded with small rope bindings. The rendering is soft, like the real cards.",
+   "fix": "Render the boat wood as smooth, softly shaded 3D planks with faint grain and slightly brighter top edges, not flat painted lines."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the mask glass has hard white painted streak highlights, and the dock wood shows brushy grain strokes, which are visible painterly marks. B: the slide is smooth, soft green plastic and the platform wood has a fine, quiet grain. Its surface is uniform and soft, like the real cards.",
+   "fix": "Draw the mask lens as clear glass with one soft, rounded reflection, and the dock wood with fine, faint grain instead of brush strokes."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the map paper is soft, with faint fold creases, the ocean is a smooth gradient, and detail is low. B: the magnifier rim is crisp metal and the outlines are sharp. The paper has crisp folds and many small hard-edged details, and both detail and micro texture measure above the real range.",
+   "fix": "Draw the map paper and magnifier with softer edges, fewer crisp outlines and smooth, gently shaded surfaces."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the palm trunk is smooth with soft ring bands, and the leaves are smooth matte green. B: the topiary is hundreds of small, individually glossy leaves with a repeated pattern, which is busy and noisy at the 2× crop. Micro texture (0.039) and gloss share (0.44) are far above the real range.",
+   "fix": "Draw the topiary as soft rounded green clumps with only a hint of leaf shapes at the edges, matte foliage and one soft light side."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the viewer is smooth blue metal with broad, soft reflections and a soft background, consistent with the real camera and fan. B: the ship's wheel has fine, crisp wood grain on the deck and posts, a polished gold ring, and many sharp edges. Gloss and detail sit at the top of the real range or above it.",
+   "fix": "Draw the ship's wheel wood as smooth, softly shaded varnished wood with very faint grain, and a muted brass ring with one soft highlight."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the polaroid paper shows a fine woven paper texture, and the signature is a dry-brush stroke. The photo contains a painterly stage scene, so visible marks and noise sit on a flat card. B: the buoy is soft, smooth red plastic with a soft brass bell and no surface noise.",
+   "fix": "Draw the polaroid frame as clean, smooth white paper without weave texture, and the signature as a smooth, clean ink line."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the parrot feathers are soft, clay-like grouped shapes with mild matte shading, in line with the soft real cards. B: the balloons are smooth latex with blotchy, smeared gradients and almost no surface variation (gloss 0, detail below the real range). The edges look over-smoothed and upscaled.",
+   "fix": "Draw the balloons as glossy latex with one crisp, soft-edged window reflection each and clean, even gradients."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the hat's dark felt is matte with a faint fine grain, set against a glossy gold trim and a satin ribbon, so the gloss range is mixed. B: the jacket fabric is uniform smooth clay with no weave or seam stitching, the badges are lacquered enamel, and everything carries a similar soft plastic sheen.",
+   "fix": "Draw the jacket as soft matte cotton twill with faint seam lines on pockets and cuffs, and keep the shine only on the metal buttons and badges."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the spyglass grip has dense pebbled leather grain, and the brass tubes have crisp mirror bands. The fine leather texture matches the generated glove lessons. B: the oil lamp is soft frosted glass with smooth brass and gentle highlights, quiet like the real cards.",
+   "fix": "Draw the spyglass grip as smooth dark leather with a soft sheen and no visible pores, and the brass with broad, soft reflections."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the chest wood is soft and painted, the gold trim is smooth, and the coins are soft-edged, consistent with real softness. B: the lid lining is plush red velvet with visible nap, the planks have fine crisp grain, and the coin pile is many sharp-edged discs. Detail sits above the real range.",
+   "fix": "Draw the chest with smooth, softly shaded wood, soft-edged coins, and a simple smooth red lining without velvet texture."
+  }
+ ],
+ "pattern": "In the lessons the generated cards add crisp fine material detail where the real cards stay soft. The tells are pebbled leather grain, dashed stitch seams, crisp wood grain and brick joints, velvet nap, dense repeated leaf texture, and paper weave. Generated cards also carry more uniform high-contrast gloss and sharper micro edges. Real cards are soft and slightly blurry at 2× crop, with smooth surfaces and quiet, faint grain."
+}

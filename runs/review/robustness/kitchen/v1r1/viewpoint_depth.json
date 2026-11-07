@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the pan floats tilted steeply toward the camera. The rim reads as a wide oval seen from high above, and there is no ground. The handle recedes in line with the pan, so the view itself is consistent. B: the oil lamp is seen nearly at eye level and dead-on, with only a thin top oval on the base and the chimney mouth. That matches the frontal real lamppost. The pan's high, near-top-down camera is the less typical view.",
+   "fix": "Lower the camera so the pan is seen at a gentle three-quarter angle, with the rim as a moderate oval rather than an almost-round top view."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the sneakers stand on a floor with a clear horizon line about a third of the way down. They are turned three-quarters, with a cast shadow tying them to the floor, like the real camera card. B: the toaster is almost square-on, with a flat front face and a soft gradient backdrop that has no horizon. Its feet rest on an implied floor that has no edge.",
+   "fix": "Turn the toaster about 30 degrees so one side panel is clearly visible, and set it on a tabletop with a visible back edge forming a horizon line behind it."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cookie jar is centered at eye level on a marble counter with a straight horizon line. Its lid floats tilted above an opening that is seen from higher up than the jar's bottom curve suggests. B: the barrel stands on deck planks that recede in mild perspective, with a railing behind it. Its top rim oval and plank lines agree on one camera height.",
+   "fix": "Draw the lid resting on the jar rim, with the rim oval and the jar's base curve matching one slightly-above camera height."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the vending machine is in a clear three-quarter view. The side panel is foreshortened and the feet sit on a floor with a soft horizon. B: the kettle is shown in plain side view with an open lid-top oval, but the base is flat at eye level. It sits on a gradient with no floor edge, so there is no ground plane to anchor it.",
+   "fix": "Rotate the kettle slightly toward the viewer and place it on a countertop with a visible back edge. Its base should curve as an oval that matches the lid's oval."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the faucet is shown almost straight-on against a flat tiled wall. The counter is a thin strip at the bottom and the sink is cut off at the left edge. The tile grid shows almost no convergence, so the scene reads as a flat backdrop. B: the gate scene has a paved path receding behind the gate, pillars in mild three-quarter view and a curb in the foreground, which gives three clear depth layers.",
+   "fix": "Angle the camera a little to the side and above so the counter top shows as a clear receding surface, with the tile rows converging gently toward the back."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the whisk floats perfectly upright and frontal on a plain green field, with no ground, no tilt and no depth layers. The wire loop is symmetrical, as if drawn flat. B: the Ferris wheel is seen from a low angle and cropped. The rim and spokes are strongly foreshortened and the gondolas overlap in depth, like the low, cropped view on the real lighthouse.",
+   "fix": "Tilt the whisk diagonally and turn it slightly so the wire loops overlap front-to-back, with the handle end nearer the viewer."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the popsicle floats on a diagonal on a sunburst background with no ground. Its thickness shows only along one edge, so the bar reads almost as a flat slab. B: the signpost is seen slightly from below. The arrows overlap the post at different depths and the clouds form a simpler background layer.",
+   "fix": "Turn the popsicle a bit more so its side thickness and rounded top are clearly visible, with the stick angling back into depth."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both cards use a high, near-overhead camera. A: the plate oval is seen from above while the watermelon wedge stands nearly upright, a slightly mixed view. B: the cutting board and the checked tablecloth show almost no convergence, close to a flat overhead view. On viewpoint alone, neither card stands out.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both cards put the hero on a counter edge with a horizon at the top third. A: the rolling pin lies on a round dough disc, and the disc's oval matches the counter. The pin itself is drawn more side-on than the disc, so it looks slightly raised off the surface. B: the scroll sits on a glossy blue slab with a consistent edge and a reflection, which grounds it in one view.",
+   "fix": "Lay the rolling pin flat on the dough, with its ends receding at the same angle as the counter edge and a contact shadow under it."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the pot sits on a stove grate whose four legs reach the counter at uneven depths. The back-right leg looks to stand on a different plane than the front ones, and the tile wall behind stays flat and sharp. B: the bird feeder hangs in front of a tree trunk, with the park and buildings softly blurred behind it. It shows three clear depth layers in one consistent slightly-below view.",
+   "fix": "Set all four grate legs flat on one countertop, with the back legs smaller and higher in the frame than the front legs. Soften the tile wall behind."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the oven mitts are shown flat and frontal, side by side, with almost no turn. Their cuff openings are visible from below while the mitt faces are seen dead-on, so the view does not agree between the hand part and the cuff. B: the jacket floats in a three-quarter view, with the sleeves and cuff openings receding consistently.",
+   "fix": "Turn both mitts about 20 degrees and overlap them front-to-back, with the cuff openings drawn as ovals that match the same camera angle."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the balloons float with overlapping spheres over a cloud layer, the same kind of floating view used on the real cards. B: the coin-operated binoculars are seen from a slightly low angle and cropped, with the railing and city skyline as receding background layers. Both read consistently, so viewpoint gives no reason to choose.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards tend to use a flat, centered, dead-on view: little turn, perfectly upright or simply diagonal, on a plain gradient with no ground edge. When they do have a ground, it is a flat strip under a sharp, unconverging backdrop (tiles, counter edge). They also often have small view mismatches: lids, cuffs or legs drawn from a different height than the body. Real cards commit to one turned three-quarter or low, cropped camera, use mild convergence and clear overlap, and stand the object on a ground plane that matches its base."
+}

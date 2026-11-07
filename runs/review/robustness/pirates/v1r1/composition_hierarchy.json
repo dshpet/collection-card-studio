@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a thin anchor stands upright in the middle of the card. It fills little of the card (0.131, below the real range) and has wide even margins (0.115). Most of the card is empty deck and yellow wall, so the thumbnail reads as wood planks first. B: the barrel is front-on and centered, but it fills the card (0.424) and sits close to the frame.",
+   "fix": "Make the anchor much bigger and turn it to a three-quarter view, tilted on a diagonal, so the flukes and ring nearly touch the card edges and the anchor fills most of the frame."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the coin bag is three-quarter and placed left of center, and a pile of coins spills out to the lower right. The group fills the card the way real cards do. B: the vending machine is upright, centered and almost front-on, with wide empty purple strips on the left and right (box width 0.581, at the bottom of the range). It reads like a product shot.",
+   "fix": "Turn the vending machine to a stronger three-quarter angle and bring it closer, so it fills the card from side to side with only thin margins."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the rowboat is big and on a diagonal, the dock cuts off the top-left corner, and the boat touches the frame (margin 0). This matches the real cropped close-ups like the lighthouse and the bike. B: the whole galleon is small and centered on open sea with sky above. It fills too little of the card (0.222) and has too much margin (0.123), so at thumbnail size the ship is a small shape in empty blue.",
+   "fix": "Move in close on the ship from a low three-quarter angle and let the sails and hull get cut off by the card edges, so the ship fills most of the frame."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the snorkel mask is large and tilted on dock planks, and the cropped dock corner and water fill the top. B: the green slide is large and three-quarter, close to the right edge (margin 0.035), with the pool cropped at the bottom. Both fill the card and are cropped the way the real cards are, so my vector gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a flat map, square-on to the viewer and centered, spreads almost to all four edges (box width 0.979, area 0.504, both above the real range). No single focal point stands out, and the dashed path and X are small inside it. B: the map is cut off at the top right and the magnifier gives one clear focal point in the middle.",
+   "fix": "Shrink the map a little and turn it to a three-quarter angle, with one bold detail such as a big red X or a compass in front to catch the eye first."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the palm leans across the card, its leaves reach the top edge, and the beach is cut off on all sides. The placement is off-center and lively, like the real cards. B: the spiral topiary is centered, symmetric and complete on a round stone base, with even space on both sides (box width 0.54, below the range). This is the same centered whole-object-on-a-base framing as the generated lighthouse lesson.",
+   "fix": "Move in closer on the topiary from a three-quarter angle, set it off-center, and let the base or the top get cut off by the card edge."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the binocular viewer is big and cut off by the bottom edge (margin 0), placed left of center with the city behind it, which matches the real cropped close-ups. B: the whole ship's wheel stands small and centered on a deck. It fills little of the card (0.198) and has a wide margin (0.123), so at thumbnail size the deck and sea take up as much room as the wheel.",
+   "fix": "Bring the wheel much closer, nearly filling the card, at a three-quarter tilt, and let its spokes get cut off by the card edges."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a flat polaroid lies squarely in the center of the card with a wide even margin of pink rays (margin 0.16, box width 0.56, both outside the real range). The tiny guitar picture inside is hard to name at thumbnail size. B: the bell buoy is centered too, but it is taller and fills the frame closer to the real proportions.",
+   "fix": "Make the polaroid much bigger and tilt it at an angle, so it almost reaches the card edges, with the guitar picture large inside it."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the parrot stretches across the whole card on a diagonal, and its wing tip and tail run into the left and bottom edges (box 0.949×0.917, above the real range). The shape reads as a spread of feathers more than one compact object. B: the balloon cluster is a compact group in the upper middle with its strings trailing down, within the range.",
+   "fix": "Fold the parrot's wings in a little and move it in, so the whole bird is one compact shape inside the card, with the head and beak as the first read."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the tricorn hat is a wide, flat, almost front-on shape centered on cyan rays. It is too short for the card (box height 0.529, below the range), leaving large empty bands above and below. B: the jacket is three-quarter and fills the card's height and width, within the range.",
+   "fix": "Tilt the tricorn up toward the viewer at a three-quarter angle and make it bigger, so the hat and feather fill more of the card's height."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the spyglass runs on a bold diagonal from upper left to lower right, which gives a fast, dynamic read. B: the oil lamp is a narrow, symmetric, front-on upright shape, centered with wide empty green on both sides. It is too narrow (box width 0.426) and fills too little of the card (0.17), the same centered upright framing as the generated lessons.",
+   "fix": "Turn the lamp to a three-quarter angle and make it much bigger, so it fills most of the card's width, placed slightly off-center."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the open chest is three-quarter, but bubbles are scattered all over the blue, and a shell and a loose coin sit in the bottom corners. These extra props compete with the chest, like the props added to the generated lighthouse lesson. B: one chest sits on plain sand with clean margins (0.098), and the gold inside is the only focal point.",
+   "fix": "Remove the scattered bubbles, the seashell and the loose coin, and keep only the open chest of gold on a simple background."
+  }
+ ],
+ "pattern": "Generated cards show the whole object, centered, often front-on and symmetric, with even empty margins on every side. They often put it on a base or platform (the topiary plinth, the galleon on open sea, the ship's wheel on a deck) or add scattered side props that compete with it. Real cards move in close at a three-quarter angle, set the object off-center, and let the card edges cut it off."
+}

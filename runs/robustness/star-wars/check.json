@@ -1,0 +1,1029 @@
+{
+ "v1_01": [
+  {
+   "try_id": "v1_01_1",
+   "brief_id": "v1_01",
+   "card": {
+    "name": "Rocket",
+    "subject": "A slim white rocket flying upward with a pointed nose cone, a round porthole, three symmetrical fins at the base and a bright fire plume under the engine, with a yellow-white glowing core and orange flame tips curling upward.",
+    "object_class": "vehicle",
+    "category": "1",
+    "pattern": "full_scene",
+    "hero_colors": "white body, red fins as accent",
+    "backdrop_colors": "clear sky blue",
+    "surface_or_setting": "",
+    "build_model": true,
+    "topic": "Space"
+   },
+   "style": 0.844,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.box_width"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Rocket",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "exterior_scene",
+     "background_detail": 3,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "chosen": true
+  },
+  {
+   "try_id": "v1_01_2",
+   "brief_id": "v1_01",
+   "card": {
+    "name": "Rocket",
+    "subject": "A slim white rocket flying upward with a pointed nose cone, a round porthole, three symmetrical fins at the base and a bright fire plume under the engine, with a yellow-white glowing core and orange flame tips curling upward.",
+    "object_class": "vehicle",
+    "category": "1",
+    "pattern": "full_scene",
+    "hero_colors": "white body, red fins as accent",
+    "backdrop_colors": "clear sky blue",
+    "surface_or_setting": "",
+    "build_model": true,
+    "topic": "Space"
+   },
+   "style": 0.816,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.box_width",
+    "color_palette.hue_gap"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Rocket",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "exterior_scene",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v1_02": [
+  {
+   "try_id": "v1_02_1",
+   "brief_id": "v1_02",
+   "card": {
+    "name": "Space Helmet",
+    "subject": "A round white astronaut helmet with a wide curved gold-tinted visor, a ring collar at the neck and two small side connectors, empty and with no face.",
+    "object_class": "clothing",
+    "category": "1",
+    "pattern": "rays",
+    "hero_colors": "white shell, gold visor, small blue collar ring as accent",
+    "backdrop_colors": "cyan",
+    "surface_or_setting": "",
+    "build_model": false,
+    "topic": "Space"
+   },
+   "style": 0.785,
+   "misses": [
+    "composition_hierarchy.margin_min"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Astronaut helmet",
+     "object_class": "clothing",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  },
+  {
+   "try_id": "v1_02_2",
+   "brief_id": "v1_02",
+   "card": {
+    "name": "Space Helmet",
+    "subject": "A round white astronaut helmet with a wide curved gold-tinted visor, a ring collar at the neck and two small side connectors, empty and with no face.",
+    "object_class": "clothing",
+    "category": "1",
+    "pattern": "rays",
+    "hero_colors": "white shell, gold visor, small blue collar ring as accent",
+    "backdrop_colors": "cyan",
+    "surface_or_setting": "",
+    "build_model": false,
+    "topic": "Space"
+   },
+   "style": 0.812,
+   "misses": [
+    "edges_linework.edge_density_background"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Astronaut helmet",
+     "object_class": "clothing",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "rays",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "chosen": true
+  }
+ ],
+ "v1_03": [
+  {
+   "try_id": "v1_03_1",
+   "brief_id": "v1_03",
+   "card": {
+    "name": "Satellite",
+    "subject": "A satellite with a boxy silver body, two flat rectangular solar panels attached on opposite sides by short arms, and a round dish mounted on top.",
+    "object_class": "electronics",
+    "category": "1",
+    "pattern": "concentric_rings",
+    "hero_colors": "silver body, dark blue solar panels, gold foil accent on the body",
+    "backdrop_colors": "orange",
+    "surface_or_setting": "",
+    "build_model": true,
+    "topic": "Space"
+   },
+   "style": 0.68,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.box_height",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Satellite",
+     "object_class": "electronics",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false,
+   "chosen": true,
+   "unsure": true
+  },
+  {
+   "try_id": "v1_03_2",
+   "brief_id": "v1_03",
+   "card": {
+    "name": "Satellite",
+    "subject": "A satellite with a boxy silver body, two flat rectangular solar panels attached on opposite sides by short arms, and a round dish mounted on top.",
+    "object_class": "electronics",
+    "category": "1",
+    "pattern": "concentric_rings",
+    "hero_colors": "silver body, dark blue solar panels, gold foil accent on the body",
+    "backdrop_colors": "orange",
+    "surface_or_setting": "",
+    "build_model": true,
+    "topic": "Space"
+   },
+   "style": 0.699,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.box_height",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Satellite",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v1_03_3",
+   "brief_id": "v1_03",
+   "card": {
+    "name": "Satellite",
+    "subject": "A satellite with a boxy silver body, two flat rectangular solar panels attached on opposite sides by short arms, and a round dish mounted on top.",
+    "object_class": "electronics",
+    "category": "1",
+    "pattern": "concentric_rings",
+    "hero_colors": "silver body, dark blue solar panels, gold foil accent on the body",
+    "backdrop_colors": "orange",
+    "surface_or_setting": "",
+    "build_model": true,
+    "topic": "Space"
+   },
+   "style": 0.692,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.box_height",
+    "edges_linework.edge_density_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Satellite",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "1",
+     "support": "floating",
+     "background_type": "motif_pattern",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v1_04": [
+  {
+   "try_id": "v1_04_1",
+   "brief_id": "v1_04",
+   "card": {
+    "name": "Space Gloves",
+    "subject": "A pair of thick white space gloves, each with a rounded mitten shape, a thumb and a ring cuff at the wrist, standing upright side by side.",
+    "object_class": "clothing",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "white gloves, orange cuff rings as accent",
+    "backdrop_colors": "rich purple",
+    "surface_or_setting": "",
+    "build_model": false,
+    "topic": "Space"
+   },
+   "style": 0.754,
+   "misses": [
+    "composition_hierarchy.box_width",
+    "composition_hierarchy.center_x",
+    "color_palette.chroma_subject",
+    "color_palette.hue_gap",
+    "color_palette.shadow_chroma_kept"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Space mittens",
+     "object_class": "clothing",
+     "real_world_scale": "handheld",
+     "subject_count": "pair"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false,
+   "chosen": true
+  },
+  {
+   "try_id": "v1_04_2",
+   "brief_id": "v1_04",
+   "card": {
+    "name": "Space Gloves",
+    "subject": "A pair of thick white space gloves, each with a rounded mitten shape, a thumb and a ring cuff at the wrist, standing upright side by side.",
+    "object_class": "clothing",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "white gloves, orange cuff rings as accent",
+    "backdrop_colors": "rich purple",
+    "surface_or_setting": "",
+    "build_model": false,
+    "topic": "Space"
+   },
+   "style": 0.735,
+   "misses": [
+    "composition_hierarchy.box_width",
+    "color_palette.chroma_subject",
+    "color_palette.hue_gap"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Space gloves",
+     "object_class": "clothing",
+     "real_world_scale": "handheld",
+     "subject_count": "pair"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v1_04_3",
+   "brief_id": "v1_04",
+   "card": {
+    "name": "Space Gloves",
+    "subject": "A pair of thick white space gloves, each with a rounded mitten shape, a thumb and a ring cuff at the wrist, standing upright side by side.",
+    "object_class": "clothing",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "white gloves, orange cuff rings as accent",
+    "backdrop_colors": "rich purple",
+    "surface_or_setting": "",
+    "build_model": false,
+    "topic": "Space"
+   },
+   "style": 0.756,
+   "misses": [
+    "composition_hierarchy.box_width",
+    "composition_hierarchy.center_x",
+    "color_palette.chroma_subject",
+    "color_palette.shadow_chroma_kept"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Space gloves",
+     "object_class": "clothing",
+     "real_world_scale": "handheld",
+     "subject_count": "pair"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v1_05": [
+  {
+   "try_id": "v1_05_1",
+   "brief_id": "v1_05",
+   "card": {
+    "name": "Toy Spaceship",
+    "subject": "A small toy spaceship with a rounded grey body, a clear yellow cockpit dome on top, two swept wings fixed to the sides and a twin engine at the back, resting on its flat underside.",
+    "object_class": "toy_game",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "light grey body, yellow cockpit dome as accent",
+    "backdrop_colors": "fresh green",
+    "surface_or_setting": "",
+    "build_model": true,
+    "topic": "Space"
+   },
+   "style": 0.71,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.box_height",
+    "color_palette.chroma_subject",
+    "value_contrast.lightness_mean"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Spaceship",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v1_05_2",
+   "brief_id": "v1_05",
+   "card": {
+    "name": "Toy Spaceship",
+    "subject": "A small toy spaceship with a rounded grey body, a clear yellow cockpit dome on top, two swept wings fixed to the sides and a twin engine at the back, resting on its flat underside.",
+    "object_class": "toy_game",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "light grey body, yellow cockpit dome as accent",
+    "backdrop_colors": "fresh green",
+    "surface_or_setting": "",
+    "build_model": true,
+    "topic": "Space"
+   },
+   "style": 0.752,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.box_height",
+    "color_palette.chroma_subject",
+    "value_contrast.lightness_mean"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Spaceship",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v1_05_3",
+   "brief_id": "v1_05",
+   "card": {
+    "name": "Toy Spaceship",
+    "subject": "A small toy spaceship with a rounded grey body, a clear yellow cockpit dome on top, two swept wings fixed to the sides and a twin engine at the back, resting on its flat underside.",
+    "object_class": "toy_game",
+    "category": "2",
+    "pattern": "plain_gradient",
+    "hero_colors": "light grey body, yellow cockpit dome as accent",
+    "backdrop_colors": "fresh green",
+    "surface_or_setting": "",
+    "build_model": true,
+    "topic": "Space"
+   },
+   "style": 0.712,
+   "misses": [
+    "composition_hierarchy.subject_area",
+    "composition_hierarchy.box_height",
+    "color_palette.chroma_subject",
+    "value_contrast.rms_contrast",
+    "edges_linework.edge_density_background"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Spaceship",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "2",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false,
+   "chosen": true
+  }
+ ],
+ "v1_06": [
+  {
+   "try_id": "v1_06_1",
+   "brief_id": "v1_06",
+   "card": {
+    "name": "Moon Rover",
+    "subject": "A six-wheeled white moon rover with a flat boxy body, a small round dish on a short mast fixed to the top and three wheels on each side.",
+    "object_class": "vehicle",
+    "category": "3",
+    "pattern": "plain_gradient",
+    "hero_colors": "white body, black wheels, yellow dish as accent",
+    "backdrop_colors": "sky blue",
+    "surface_or_setting": "pale sand",
+    "build_model": true,
+    "topic": "Space"
+   },
+   "style": 0.726,
+   "misses": [
+    "color_palette.chroma_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Planetary rover",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true
+  },
+  {
+   "try_id": "v1_06_2",
+   "brief_id": "v1_06",
+   "card": {
+    "name": "Moon Rover",
+    "subject": "A six-wheeled white moon rover with a flat boxy body, a small round dish on a short mast fixed to the top and three wheels on each side.",
+    "object_class": "vehicle",
+    "category": "3",
+    "pattern": "plain_gradient",
+    "hero_colors": "white body, black wheels, yellow dish as accent",
+    "backdrop_colors": "sky blue",
+    "surface_or_setting": "pale sand",
+    "build_model": true,
+    "topic": "Space"
+   },
+   "style": 0.723,
+   "misses": [
+    "color_palette.chroma_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Planetary rover",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  },
+  {
+   "try_id": "v1_06_3",
+   "brief_id": "v1_06",
+   "card": {
+    "name": "Moon Rover",
+    "subject": "A six-wheeled white moon rover with a flat boxy body, a small round dish on a short mast fixed to the top and three wheels on each side.",
+    "object_class": "vehicle",
+    "category": "3",
+    "pattern": "plain_gradient",
+    "hero_colors": "white body, black wheels, yellow dish as accent",
+    "backdrop_colors": "sky blue",
+    "surface_or_setting": "pale sand",
+    "build_model": true,
+    "topic": "Space"
+   },
+   "style": 0.711,
+   "misses": [
+    "color_palette.chroma_subject",
+    "color_palette.shadow_chroma_kept"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Planetary rover",
+     "object_class": "vehicle",
+     "real_world_scale": "vehicle_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "flat_gradient",
+     "background_detail": 1,
+     "secondary_objects": "few"
+    }
+   },
+   "passed": true,
+   "chosen": true
+  }
+ ],
+ "v1_07": [
+  {
+   "try_id": "v1_07_1",
+   "brief_id": "v1_07",
+   "card": {
+    "name": "Star Map",
+    "subject": "A flat rectangular star chart lying on a table, seen from above, with simple star icons joined by thin lines and a round compass icon in one corner.",
+    "object_class": "paper_document",
+    "category": "3",
+    "pattern": "surface_from_above",
+    "hero_colors": "deep blue paper, yellow star icons",
+    "backdrop_colors": "pink",
+    "surface_or_setting": "light wood table",
+    "build_model": false,
+    "topic": "Space"
+   },
+   "style": 0.74,
+   "misses": [
+    "composition_hierarchy.box_width"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Star chart",
+     "object_class": "paper_document",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "one"
+    }
+   },
+   "passed": true
+  },
+  {
+   "try_id": "v1_07_2",
+   "brief_id": "v1_07",
+   "card": {
+    "name": "Star Map",
+    "subject": "A flat rectangular star chart lying on a table, seen from above, with simple star icons joined by thin lines and a round compass icon in one corner.",
+    "object_class": "paper_document",
+    "category": "3",
+    "pattern": "surface_from_above",
+    "hero_colors": "deep blue paper, yellow star icons",
+    "backdrop_colors": "pink",
+    "surface_or_setting": "light wood table",
+    "build_model": false,
+    "topic": "Space"
+   },
+   "style": 0.712,
+   "misses": [
+    "composition_hierarchy.box_width"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Star chart",
+     "object_class": "paper_document",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "interior_scene",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true
+  },
+  {
+   "try_id": "v1_07_3",
+   "brief_id": "v1_07",
+   "card": {
+    "name": "Star Map",
+    "subject": "A flat rectangular star chart lying on a table, seen from above, with simple star icons joined by thin lines and a round compass icon in one corner.",
+    "object_class": "paper_document",
+    "category": "3",
+    "pattern": "surface_from_above",
+    "hero_colors": "deep blue paper, yellow star icons",
+    "backdrop_colors": "pink",
+    "surface_or_setting": "light wood table",
+    "build_model": false,
+    "topic": "Space"
+   },
+   "style": 0.769,
+   "misses": [
+    "composition_hierarchy.box_width"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Star chart",
+     "object_class": "paper_document",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "one"
+    }
+   },
+   "passed": true,
+   "chosen": true
+  }
+ ],
+ "v1_08": [
+  {
+   "try_id": "v1_08_1",
+   "brief_id": "v1_08",
+   "card": {
+    "name": "Astro Pouch",
+    "subject": "A silver foil food pouch standing upright, with a flat sealed top and bottom, a small round spout with a cap and a simple apple icon on the front.",
+    "object_class": "food_drink",
+    "category": "3",
+    "pattern": "stripes",
+    "hero_colors": "silver foil, orange cap as accent",
+    "backdrop_colors": "purple",
+    "surface_or_setting": "light wood table",
+    "build_model": false,
+    "topic": "Space"
+   },
+   "style": 0.788,
+   "misses": [
+    "composition_hierarchy.box_width",
+    "color_palette.shadow_chroma_kept"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Apple drink pouch",
+     "object_class": "food_drink",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "chosen": true
+  },
+  {
+   "try_id": "v1_08_2",
+   "brief_id": "v1_08",
+   "card": {
+    "name": "Astro Pouch",
+    "subject": "A silver foil food pouch standing upright, with a flat sealed top and bottom, a small round spout with a cap and a simple apple icon on the front.",
+    "object_class": "food_drink",
+    "category": "3",
+    "pattern": "stripes",
+    "hero_colors": "silver foil, orange cap as accent",
+    "backdrop_colors": "purple",
+    "surface_or_setting": "light wood table",
+    "build_model": false,
+    "topic": "Space"
+   },
+   "style": 0.786,
+   "misses": [
+    "composition_hierarchy.box_width",
+    "color_palette.shadow_chroma_kept",
+    "value_contrast.lightness_p1"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Apple puree pouch",
+     "object_class": "food_drink",
+     "real_world_scale": "handheld",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "stripes",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v1_09": [
+  {
+   "try_id": "v1_09_1",
+   "brief_id": "v1_09",
+   "card": {
+    "name": "Control Panel",
+    "subject": "A grey cockpit control panel fixed into a spaceship wall, with a perfectly round dial, a row of round buttons, two levers and a small square screen with a simple wave icon.",
+    "object_class": "electronics",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "light grey panel, green screen, red buttons as accent",
+    "backdrop_colors": "warm yellow",
+    "surface_or_setting": "the metal wall of a spaceship cockpit",
+    "build_model": true,
+    "topic": "Space"
+   },
+   "style": 0.696,
+   "misses": [
+    "color_palette.chroma_subject"
+   ],
+   "issues": [
+    "art_category"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Control console",
+     "object_class": "electronics",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "simple_wall",
+     "background_detail": 3,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v1_09_2",
+   "brief_id": "v1_09",
+   "card": {
+    "name": "Control Panel",
+    "subject": "A grey cockpit control panel fixed into a spaceship wall, with a perfectly round dial, a row of round buttons, two levers and a small square screen with a simple wave icon.",
+    "object_class": "electronics",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "light grey panel, green screen, red buttons as accent",
+    "backdrop_colors": "warm yellow",
+    "surface_or_setting": "the metal wall of a spaceship cockpit",
+    "build_model": true,
+    "topic": "Space"
+   },
+   "style": 0.716,
+   "misses": [
+    "color_palette.chroma_subject"
+   ],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Control console",
+     "object_class": "electronics",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "interior_scene",
+     "background_detail": 3,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "chosen": true
+  },
+  {
+   "try_id": "v1_09_3",
+   "brief_id": "v1_09",
+   "card": {
+    "name": "Control Panel",
+    "subject": "A grey cockpit control panel fixed into a spaceship wall, with a perfectly round dial, a row of round buttons, two levers and a small square screen with a simple wave icon.",
+    "object_class": "electronics",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "light grey panel, green screen, red buttons as accent",
+    "backdrop_colors": "warm yellow",
+    "surface_or_setting": "the metal wall of a spaceship cockpit",
+    "build_model": true,
+    "topic": "Space"
+   },
+   "style": 0.752,
+   "misses": [
+    "color_palette.chroma_subject"
+   ],
+   "issues": [
+    "art_category"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Control panel",
+     "object_class": "electronics",
+     "real_world_scale": "furniture_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "3",
+     "support": "on_surface",
+     "background_type": "simple_wall",
+     "background_detail": 1,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  }
+ ],
+ "v1_10": [
+  {
+   "try_id": "v1_10_1",
+   "brief_id": "v1_10",
+   "card": {
+    "name": "Airlock Hatch",
+    "subject": "A perfectly round grey metal hatch door set into a wall, with a rim of bolts, a small round window, a spoked wheel handle in the center and hinges on the left side, seen from the inside with a starry window beyond.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "grey metal, orange wheel handle as accent",
+    "backdrop_colors": "cyan",
+    "surface_or_setting": "a paneled metal wall inside a space station",
+    "build_model": true,
+    "topic": "Space"
+   },
+   "style": 0.669,
+   "misses": [],
+   "issues": [
+    "identity"
+   ],
+   "seen": {
+    "identity": {
+     "subject": "Vault door",
+     "object_class": "building_place",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "simple_wall",
+     "background_detail": 2,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": false
+  },
+  {
+   "try_id": "v1_10_2",
+   "brief_id": "v1_10",
+   "card": {
+    "name": "Airlock Hatch",
+    "subject": "A perfectly round grey metal hatch door set into a wall, with a rim of bolts, a small round window, a spoked wheel handle in the center and hinges on the left side, seen from the inside with a starry window beyond.",
+    "object_class": "building_place",
+    "category": "4",
+    "pattern": "full_scene",
+    "hero_colors": "grey metal, orange wheel handle as accent",
+    "backdrop_colors": "cyan",
+    "surface_or_setting": "a paneled metal wall inside a space station",
+    "build_model": true,
+    "topic": "Space"
+   },
+   "style": 0.678,
+   "misses": [],
+   "issues": [],
+   "seen": {
+    "identity": {
+     "subject": "Metal hatch door",
+     "object_class": "building_place",
+     "real_world_scale": "body_sized",
+     "subject_count": "one"
+    },
+    "staging": {
+     "art_category": "4",
+     "support": "in_environment",
+     "background_type": "simple_wall",
+     "background_detail": 3,
+     "secondary_objects": "none"
+    }
+   },
+   "passed": true,
+   "chosen": true
+  }
+ ]
+}

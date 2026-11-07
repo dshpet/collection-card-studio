@@ -1,0 +1,350 @@
+{
+ "title": "Lighthouse Tale",
+ "story": "A keeper finds a bottle, sails away, and bakes bread on a faraway island.",
+ "variants": [
+  {
+   "cards": [
+    {
+     "name": "Lighthouse",
+     "subject": "A tall, round, tapering lighthouse tower with wide red bands, a glass lantern room with a glowing yellow lamp, a red cone roof and a small balcony ring, standing on a stone base on the shore.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "white and red, with a yellow lamp",
+     "backdrop_colors": "sky blue, cyan",
+     "surface_or_setting": "a round stone base at the water's edge, with the sea beside it",
+     "build_model": true
+    },
+    {
+     "name": "Message Bottle",
+     "subject": "A clear glass bottle lying slightly tilted, with a rolled paper scroll visible inside, a light brown cork in the neck and a ribbon tied around the neck.",
+     "object_class": "container",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "clear pale glass, tan paper, light brown cork, red ribbon",
+     "backdrop_colors": "blue, cyan",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Bread Loaf",
+     "subject": "A round golden-brown loaf of bread with three diagonal slashes on top, resting on a wooden bread board.",
+     "object_class": "food_drink",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "golden brown, wood brown",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "a wooden bakery counter",
+     "build_model": false
+    },
+    {
+     "name": "Flour Sack",
+     "subject": "A plump cream cloth flour sack standing upright, tied at the top with a string, with a small house pictogram printed in one color on the front.",
+     "object_class": "container",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "cream white, green house pictogram",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Sailboat",
+     "subject": "A small wooden sailboat with a brown hull, one upright mast fixed in the deck, two triangular white sails and a small yellow flag at the mast top, floating on calm water.",
+     "object_class": "vehicle",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "wood brown and white, yellow flag",
+     "backdrop_colors": "sky blue, cyan",
+     "surface_or_setting": "calm open blue water under a clear sky",
+     "build_model": true
+    },
+    {
+     "name": "Sea Map",
+     "subject": "A flat, rectangular cream paper map lying open, with a drawn island, a dotted route line and a red X mark, seen from above.",
+     "object_class": "paper_document",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "cream, tan, red X mark",
+     "backdrop_colors": "green",
+     "surface_or_setting": "a wooden table",
+     "build_model": false
+    },
+    {
+     "name": "Oil Lantern",
+     "subject": "A brass oil lantern with a perfectly round glass globe holding a bright yellow flame, a top ring handle and a round base.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "brass gold, yellow glow, green knob",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Bakery Sign",
+     "subject": "A square wooden sign with a golden bread loaf icon, hanging from a black iron bracket bolted to a wall.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "wood brown, golden icon, black bracket",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "a whitewashed stone wall beside a door",
+     "build_model": true
+    },
+    {
+     "name": "Compass",
+     "subject": "A perfectly round brass compass with a glass cover, a white dial with a red needle and a small ring at the top, lying flat.",
+     "object_class": "tool",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "brass gold, white dial, red needle",
+     "backdrop_colors": "blue",
+     "surface_or_setting": "a wooden table",
+     "build_model": true
+    },
+    {
+     "name": "Parrot",
+     "subject": "A scarlet parrot flying with wings spread, long tail trailing, a curved beak and feet tucked in.",
+     "object_class": "animal",
+     "category": "1",
+     "pattern": "full_scene",
+     "hero_colors": "scarlet red, yellow wing feathers",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "a clear cyan sky",
+     "build_model": false
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Lighthouse",
+     "subject": "A tall, round, tapering lighthouse tower with a yellow body and a white top band, a glass lantern room with a glowing lamp, a red cone roof and a balcony ring, standing on a stone base.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "yellow and white, red roof",
+     "backdrop_colors": "blue, cyan",
+     "surface_or_setting": "a round stone base at the water's edge, with the sea beside it",
+     "build_model": true
+    },
+    {
+     "name": "Message Bottle",
+     "subject": "A green glass bottle lying slightly tilted, with a rolled paper scroll visible inside and a light brown cork in the neck.",
+     "object_class": "container",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "green glass, tan paper, light brown cork",
+     "backdrop_colors": "yellow, orange",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Croissant Plate",
+     "subject": "A golden crescent-shaped croissant on a round white plate.",
+     "object_class": "food_drink",
+     "category": "3",
+     "pattern": "plain_gradient",
+     "hero_colors": "golden brown, white plate, light blue plate rim",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "a wooden bakery counter",
+     "build_model": false
+    },
+    {
+     "name": "Bread Basket",
+     "subject": "A round woven wicker basket filled with three round bread loaves and two long baguettes.",
+     "object_class": "container",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "wicker tan, golden brown bread",
+     "backdrop_colors": "green",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Palm Tree",
+     "subject": "A single palm tree with a slightly curved brown trunk and a crown of long green fronds, with two brown coconuts under the crown.",
+     "object_class": "plant_nature",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "green fronds, brown trunk",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "pale beach sand",
+     "build_model": false
+    },
+    {
+     "name": "Spyglass",
+     "subject": "A closed brass spyglass: a compact tube in three stacked sections with a glass lens at each end and a brown leather grip band.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "brass gold, brown leather",
+     "backdrop_colors": "green",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Red Boat",
+     "subject": "A small sailboat with a red hull, one upright mast fixed in the deck and two cream triangular sails, floating on water.",
+     "object_class": "vehicle",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "red and cream, yellow flag",
+     "backdrop_colors": "sky blue, cyan",
+     "surface_or_setting": "deep blue water under a clear sky",
+     "build_model": true
+    },
+    {
+     "name": "Anchor",
+     "subject": "A solid iron anchor with a ring at the top, a straight shank, a crossbar and two curved arms, resting upright against its flukes.",
+     "object_class": "tool",
+     "category": "3",
+     "pattern": "rays",
+     "hero_colors": "dark grey iron, tan rope ring",
+     "backdrop_colors": "orange",
+     "surface_or_setting": "wooden dock planks",
+     "build_model": true
+    },
+    {
+     "name": "Layer Cake",
+     "subject": "A round two-layer cake with pink frosting, a red cherry on top, standing on a round white cake stand.",
+     "object_class": "food_drink",
+     "category": "3",
+     "pattern": "repeated_motif",
+     "hero_colors": "pink frosting, cream sponge, red cherry, white stand",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "a wooden bakery counter",
+     "build_model": false
+    },
+    {
+     "name": "Grey Parrot",
+     "subject": "A grey parrot flying with wings spread, a short bright red tail and a curved black beak, feet tucked in.",
+     "object_class": "animal",
+     "category": "1",
+     "pattern": "full_scene",
+     "hero_colors": "grey, red tail",
+     "backdrop_colors": "blue",
+     "surface_or_setting": "a clear blue sky",
+     "build_model": false
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Lighthouse",
+     "subject": "A tall, round, tapering lighthouse tower with white body and orange bands, a glass lantern room with a glowing lamp, a green cone roof and a balcony ring, standing on a stone base.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "white and orange, green roof",
+     "backdrop_colors": "sky blue, cyan",
+     "surface_or_setting": "a round stone base at the water's edge, with the sea beside it",
+     "build_model": true
+    },
+    {
+     "name": "Message Bottle",
+     "subject": "A clear glass bottle floating, tilted, with a rolled paper scroll inside, a light brown cork in the neck and a ribbon on the neck.",
+     "object_class": "container",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "clear pale glass, tan paper, light brown cork, orange ribbon",
+     "backdrop_colors": "blue",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Bread Loaf",
+     "subject": "A round golden-brown loaf of bread with three diagonal slashes on top, on a wooden bread board.",
+     "object_class": "food_drink",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "golden brown, wood brown",
+     "backdrop_colors": "green",
+     "surface_or_setting": "a wooden bakery counter",
+     "build_model": false
+    },
+    {
+     "name": "Mixing Bowl",
+     "subject": "A deep round white ceramic bowl filled with dough, with a wooden spoon resting inside, and a small cow-face pictogram printed in blue on the side.",
+     "object_class": "container",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "white, cream dough, wood brown spoon, blue cow-face",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Yellow Sailboat",
+     "subject": "A small sailboat with a yellow hull, one upright mast fixed in the deck, two white triangular sails and a red flag at the top, floating on water.",
+     "object_class": "vehicle",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "yellow and white, red flag",
+     "backdrop_colors": "blue, cyan",
+     "surface_or_setting": "calm blue water under a clear sky",
+     "build_model": true
+    },
+    {
+     "name": "Cupcake",
+     "subject": "A cupcake in a ridged paper cup with a swirl of pink frosting and a red cherry on top.",
+     "object_class": "food_drink",
+     "category": "3",
+     "pattern": "concentric_rings",
+     "hero_colors": "pink frosting, tan sponge cup, red cherry",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "a wooden bakery counter",
+     "build_model": false
+    },
+    {
+     "name": "Whisk",
+     "subject": "A silver balloon whisk with a loop of curved wires and a handle with a green grip.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "silver, green handle",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Brick Oven",
+     "subject": "An arched red brick bread oven with a round chimney on top and an open arch holding a bright fire with a yellow-white glowing core, orange flame tips curling upward, glowing orange ends on the logs, and warm orange light cast on the bricks around it.",
+     "object_class": "furniture",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "brick red, orange fire",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "a stone bakery floor against a plain wall",
+     "build_model": true
+    },
+    {
+     "name": "Rolling Pin",
+     "subject": "A wooden rolling pin with two round handles, lying on a flat round sheet of dough.",
+     "object_class": "tool",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "wood brown, cream dough",
+     "backdrop_colors": "blue",
+     "surface_or_setting": "a wooden bakery counter",
+     "build_model": false
+    },
+    {
+     "name": "Green Parrot",
+     "subject": "A green parrot with a yellow head flying with wings spread, a long tail and a red curved beak, feet tucked in.",
+     "object_class": "animal",
+     "category": "1",
+     "pattern": "full_scene",
+     "hero_colors": "green, yellow head, red beak",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "a clear blue sky",
+     "build_model": false
+    }
+   ]
+  }
+ ],
+ "problems": [],
+ "cast": 0
+}

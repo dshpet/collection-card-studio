@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the anchor stands on a deck whose boards recede at a clear angle. The flukes are slightly turned, so the left and right arms foreshorten differently. B: the barrel is centred and square to the camera, with a symmetric top-rim ellipse and a railing set parallel to the picture plane. This is the straight-on, symmetric framing that the generated lesson cards show.",
+   "fix": "Turn the barrel about 30 degrees so one side recedes, with the hoops foreshortening unevenly. Lower the camera slightly and angle the deck railing away into the distance instead of running it flat across the back."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the coin bag is seen from slightly above. The coins in front and the soft floor horizon give two clear layers. B: the vending machine is in a 3/4 turn showing its left side, and the floor horizon sits low. Both use mild perspective and a single consistent view.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a high camera looks down into the rowboat, with the dock cropped at the top-left edge. The near rope and lily pads, the boat and the dock make tight, overlapping layers, all seen at one angle. B: the whole ship sits small, mid-frame, on an eye-level sea horizon. The hull is turned diagonally, but the sails face the camera almost flat, so the rigging and the hull do not share one view.",
+   "fix": "Bring the camera closer and lower so the ship fills the card and is cropped at the edges. Turn the sails and yards to follow the same angle as the hull, so their faces foreshorten together."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the dock boards are seen steeply from above, yet the mask faces the camera almost head-on, as if standing upright, while the snorkel tube lies flat. The mask and the ground plane do not share a view. B: the slide platform, ladder and tiled pool edge all read from one slightly raised 3/4 camera, and the posts stay vertical.",
+   "fix": "Draw the mask lying flat on the dock, seen from the same high angle as the boards, so its lens ellipse is squashed in the same direction as the planks."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both maps lie on wooden tables seen from a high, mild-perspective camera. The board lines and the map edges recede consistently in each. In B the magnifier ring is foreshortened to match the map plane. My lens shows no clear difference between them.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the palm sits at mid-frame with an eye-level sea horizon, sand in the foreground and simple background layers. B: the topiary stands on a stone ring, set inside a staged garden with a curving path, a hedge wall and grass sprigs. That builds extra receding background layers around a centred, symmetric hero, which matches the generated lighthouse and island lessons.",
+   "fix": "Crop closer on the topiary so the background becomes simple sky and a soft hedge band. Drop the curving path, and angle the base ring slightly instead of showing it dead-centre."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a low camera sits close to the viewer, cropped at the bottom edge. The city skyline is pushed far back and softened, giving one consistent 3/4 view. B: the ship's wheel faces the camera as a near-perfect circle, while its pedestal and the deck boards are turned and recede diagonally. The wheel's axis does not follow the pedestal.",
+   "fix": "Turn the wheel to match the pedestal so the rim reads as an ellipse, with its spokes foreshortened on the far side and the axle pointing along the same diagonal as the deck boards."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the polaroid is a flat card tilted a few degrees on a sunburst, with no depth beyond the flat plane, like the real ticket card. B: the buoy is dead-centre and perfectly symmetric, seen straight on at eye level, with a low sea horizon and clouds behind. This is the frontal, centred staging the generated lessons share.",
+   "fix": "Turn the buoy slightly and raise the camera a little so more of the top deck shows. Let the ring and bell sit at a 3/4 angle rather than square to the viewer."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the parrot flies in side view against sky. B: the balloon bunch floats against sky with clouds. Neither has a ground plane, and both overlap their parts consistently. My lens gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the tricorn is seen from slightly below. The dark underside opening shows as a wide ellipse while the crown top is hidden, which is an upward camera that the real cards do not use. B: the jacket floats in a 3/4 turn, seen from slightly above, with the sleeves and collar foreshortened consistently.",
+   "fix": "Raise the camera above the hat so the crown and the upper brim are visible, hide the underside opening, and turn the hat a little toward 3/4."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the spyglass floats on a diagonal with the eyepiece toward the viewer, and the tapering sections foreshorten along one axis. B: the oil lamp is perfectly frontal and symmetric, centred, with the handle and knob in pure profile. This is the straight-on staging seen on the generated lessons.",
+   "fix": "Turn the lamp about 30 degrees so the handle swings toward the viewer and the base and font show as offset ellipses, seen from slightly above."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the chest is turned 3/4 so the front and the right side both read, and the lid's arch end matches the body. A shell and a coin in front plus bubbles behind give layers. B: the chest's front face is square to the camera, with only a sliver of the right side, sitting centred on a flat sand plane. This is the near-frontal, symmetric view the generated lesson cards use.",
+   "fix": "Turn the chest about 30 degrees so one full side panel shows, and lower the camera slightly. Put a coin or shell in the foreground to give a near layer."
+  }
+ ],
+ "pattern": "Generated cards stage the hero square to the camera: centred, symmetric and frontal, with the object shown whole and small inside a staged scene (an island, a garden path, a railing parallel to the frame). Real cards turn the object to a clear 3/4, keep the camera close and slightly low, crop at the card edge, and keep the background simple. A second giveaway is parts that do not share one view, such as a wheel or sails facing the viewer while the deck or hull recedes diagonally."
+}

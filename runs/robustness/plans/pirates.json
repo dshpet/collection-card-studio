@@ -1,0 +1,351 @@
+{
+ "title": "Pirates",
+ "story": "Hoist the sails and hunt for gold on the sunny seas.",
+ "variants": [
+  {
+   "cards": [
+    {
+     "name": "Treasure Chest",
+     "subject": "A wooden treasure chest with a curved lid opened wide, iron corner bands and a gold lock plate, filled to the brim with gold coins.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "rays",
+     "hero_colors": "wood brown, dark iron grey bands, gold coins, small red gem on top of the coin pile",
+     "backdrop_colors": "sky blue, cyan",
+     "surface_or_setting": "light beach sand",
+     "build_model": true
+    },
+    {
+     "name": "Parrot",
+     "subject": "A scarlet macaw flying with both wings spread wide, long tail feathers trailing behind, a curved beak and a white face patch.",
+     "object_class": "animal",
+     "category": "1",
+     "pattern": "full_scene",
+     "hero_colors": "bright red, white face patch, yellow stripe on wings",
+     "backdrop_colors": "clear sky blue, cyan",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Ship's Wheel",
+     "subject": "A wooden ship's wheel with a perfectly round rim, eight evenly spaced spokes that extend past the rim as handles, and a brass hub, mounted on a sturdy wooden helm post fixed to the ship deck.",
+     "object_class": "other",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "wood brown, brass gold hub",
+     "backdrop_colors": "clear sky blue, sea blue",
+     "surface_or_setting": "a wooden ship deck beside the mast",
+     "build_model": true
+    },
+    {
+     "name": "Pirate Hat",
+     "subject": "A black three-cornered tricorn hat with a wide upturned brim folded up in three symmetrical points and a gold braid along the edge.",
+     "object_class": "accessory",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "black, gold braid trim",
+     "backdrop_colors": "green, light green",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Pirate Boots",
+     "subject": "A pair of tall brown leather boots standing side by side, each with a wide folded-over cuff at the top and a gold buckle on the front of the cuff.",
+     "object_class": "clothing",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "leather brown, gold buckles",
+     "backdrop_colors": "rich purple, pink",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Treasure Map",
+     "subject": "A flat sheet of aged parchment seen from above with torn edges, a dotted trail winding across it, a simple palm tree icon and a big X icon at the end of the trail.",
+     "object_class": "paper_document",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "parchment cream, brown ink trail, red X",
+     "backdrop_colors": "blue, teal",
+     "surface_or_setting": "blue-painted wooden deck planks",
+     "build_model": false
+    },
+    {
+     "name": "Pirate Ship",
+     "subject": "A wooden sailing ship with a brown hull, three tall masts holding plain white square sails and a small flag on the top of the tallest mast, floating on the sea.",
+     "object_class": "vehicle",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "wood brown hull, white sails, small red flag",
+     "backdrop_colors": "clear sky blue, cyan",
+     "surface_or_setting": "open blue sea water",
+     "build_model": true
+    },
+    {
+     "name": "Spyglass",
+     "subject": "A brass telescope pulled out into three round tube sections of decreasing width, with a wider lens end and a small eyepiece, and a leather wrap around the middle section.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "brass gold, red leather wrap",
+     "backdrop_colors": "cyan, sky blue",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Anchor",
+     "subject": "A heavy iron anchor standing upright with a long shank, a ring at the top, a horizontal crossbar below the ring, and a curved bottom with two pointed flukes.",
+     "object_class": "tool",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "iron grey, rusty orange patches",
+     "backdrop_colors": "yellow, orange",
+     "surface_or_setting": "wooden dock planks",
+     "build_model": true
+    },
+    {
+     "name": "Porthole",
+     "subject": "A round brass ship porthole with a thick rim and bolts, set into a brown wooden hull wall, the glass showing blue sea.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "brass gold, wood brown hull, blue glass view",
+     "backdrop_colors": "cyan, sky blue",
+     "surface_or_setting": "a wooden ship hull wall",
+     "build_model": true
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Treasure Chest",
+     "subject": "A wooden treasure chest with a curved lid opened, iron bands and a gold lock, overflowing with gold coins and a few round gems, sitting in a shallow sandy pit.",
+     "object_class": "container",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "wood brown, iron grey bands, gold coins, a few red gems",
+     "backdrop_colors": "clear sky blue, cyan",
+     "surface_or_setting": "a shallow pit in beach sand",
+     "build_model": true
+    },
+    {
+     "name": "Pirate Hat",
+     "subject": "A black three-cornered tricorn hat with a wide brim folded up in three symmetrical points and a white feather tucked into the side.",
+     "object_class": "accessory",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "black, white feather",
+     "backdrop_colors": "rich purple, pink",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Compass",
+     "subject": "A perfectly round brass pocket compass with an open lid behind it, a round dial with a star icon and a needle with a red tip.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "brass gold, cream dial, red needle tip",
+     "backdrop_colors": "green, light green",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Coin Sack",
+     "subject": "A round burlap sack tied closed at the neck with a cord, with a few gold coins spilling out of the neck onto the planks.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "burlap tan, gold coins, dark brown cord",
+     "backdrop_colors": "blue, sky blue",
+     "surface_or_setting": "wooden dock planks",
+     "build_model": false
+    },
+    {
+     "name": "Parrot",
+     "subject": "A scarlet macaw flying with both wings spread wide, long tail feathers trailing behind, a curved beak and a white face patch.",
+     "object_class": "animal",
+     "category": "1",
+     "pattern": "full_scene",
+     "hero_colors": "bright red, white face patch, yellow wing stripe",
+     "backdrop_colors": "clear sky blue, cyan",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Treasure Map",
+     "subject": "A flat sheet of aged parchment seen from above with torn edges, a dotted trail, a mountain icon, and a big X icon at the end of the trail.",
+     "object_class": "paper_document",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "parchment cream, brown ink trail, red X",
+     "backdrop_colors": "purple, blue",
+     "surface_or_setting": "dark blue-painted wooden table planks",
+     "build_model": false
+    },
+    {
+     "name": "Message Bottle",
+     "subject": "A green glass bottle lying with a round body and a narrow neck closed with a light brown cork, holding a rolled parchment scroll inside.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "waves",
+     "hero_colors": "green glass, parchment cream scroll, light brown cork",
+     "backdrop_colors": "orange, yellow",
+     "surface_or_setting": "light beach sand",
+     "build_model": false
+    },
+    {
+     "name": "Ship's Wheel",
+     "subject": "A wooden ship's wheel with a perfectly round rim, eight evenly spaced spokes that extend past the rim as handles, and a brass hub, mounted on a sturdy wooden helm post fixed to the deck.",
+     "object_class": "other",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "wood brown, brass gold hub",
+     "backdrop_colors": "clear sky blue, sea blue",
+     "surface_or_setting": "a wooden ship deck by the railing",
+     "build_model": true
+    },
+    {
+     "name": "Chest Key",
+     "subject": "A brass key with a round ring-shaped bow, a straight shaft and two square teeth at the end.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "brass gold, small red cord loop through the bow",
+     "backdrop_colors": "cyan, sky blue",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Palm Tree",
+     "subject": "A coconut palm tree with a curved brown trunk, a crown of long green fronds and a cluster of brown coconuts under the crown, growing from sand.",
+     "object_class": "plant_nature",
+     "category": "3",
+     "pattern": "rays",
+     "hero_colors": "green fronds, brown trunk, brown coconuts",
+     "backdrop_colors": "pink, light pink",
+     "surface_or_setting": "light beach sand",
+     "build_model": false
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Ship's Wheel",
+     "subject": "A wooden ship's wheel with a perfectly round rim, eight evenly spaced spokes that extend past the rim as handles, and a brass hub, standing on a short wooden pedestal base.",
+     "object_class": "other",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "wood brown, brass gold hub",
+     "backdrop_colors": "rich green, light green",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Treasure Chest",
+     "subject": "A closed wooden treasure chest with a curved lid, two iron bands and a gold lock plate on the front.",
+     "object_class": "container",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "wood brown, iron grey bands, gold lock",
+     "backdrop_colors": "sky blue, cyan",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Pirate Hat",
+     "subject": "A red three-cornered tricorn hat with a wide brim folded up in three symmetrical points and a gold braid along the edge.",
+     "object_class": "accessory",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "red, gold braid trim",
+     "backdrop_colors": "cyan, sky blue",
+     "surface_or_setting": "wooden ship deck planks",
+     "build_model": false
+    },
+    {
+     "name": "Parrot",
+     "subject": "A scarlet macaw flying with both wings spread wide, long tail feathers trailing behind, a curved beak and a white face patch.",
+     "object_class": "animal",
+     "category": "1",
+     "pattern": "full_scene",
+     "hero_colors": "bright red, white face patch, yellow wing stripe",
+     "backdrop_colors": "clear sky blue, cyan",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Treasure Map",
+     "subject": "A flat sheet of aged parchment seen from above with torn edges, a dotted trail curving around a round cave icon and a big X icon at the end.",
+     "object_class": "paper_document",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "parchment cream, brown ink trail, red X",
+     "backdrop_colors": "teal, blue",
+     "surface_or_setting": "wooden ship deck planks",
+     "build_model": false
+    },
+    {
+     "name": "Crow's Nest",
+     "subject": "A round wooden lookout tub fixed on top of a tall simple wooden mast, with a brass spyglass resting across its rim.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "wood brown, brass gold spyglass, small red band on the spyglass",
+     "backdrop_colors": "clear sky blue, cyan",
+     "surface_or_setting": "the top of a tall ship mast",
+     "build_model": true
+    },
+    {
+     "name": "Anchor",
+     "subject": "A heavy iron anchor standing upright with a long shank, a ring at the top, a horizontal crossbar below the ring, and a curved bottom with two pointed flukes.",
+     "object_class": "tool",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "iron grey, rusty orange patches",
+     "backdrop_colors": "pink, light pink",
+     "surface_or_setting": "wooden ship deck planks",
+     "build_model": true
+    },
+    {
+     "name": "Ship Lantern",
+     "subject": "A brass ship lantern with a glass cylinder holding a bright fire with a yellow-white glowing core, orange flame tips curling upward, and warm orange light cast on the wooden post it hangs from by an iron bracket fixed to the post.",
+     "object_class": "tool",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "brass gold, glowing yellow-orange flame, wood brown post",
+     "backdrop_colors": "rich royal blue night sky with a few small stars and a crescent moon",
+     "surface_or_setting": "a wooden post on a ship deck at night",
+     "build_model": true
+    },
+    {
+     "name": "Juice Mug",
+     "subject": "A wooden tankard with a round body, iron bands, a curved handle attached on one side, filled with orange juice and a round orange slice on the rim.",
+     "object_class": "food_drink",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "wood brown, dark grey bands, orange juice and orange slice",
+     "backdrop_colors": "rich purple, pink",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Gold Doubloon",
+     "subject": "A big round flat gold coin with a raised rim, shown face-on, with an embossed small house pictogram with a pitched roof, a chimney and a door in the center.",
+     "object_class": "other",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "gold, deeper gold embossed house",
+     "backdrop_colors": "green, light green",
+     "surface_or_setting": "",
+     "build_model": true
+    }
+   ]
+  }
+ ],
+ "problems": [],
+ "sensitive": [],
+ "cast": 0
+}

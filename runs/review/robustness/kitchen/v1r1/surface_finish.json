@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the pan has soft matte charcoal walls, two small rivets, and a glossy egg yolk with one clean highlight. The surface is smooth, with no grain. B: the brass lamp body has soft gloss and the glass chimney is frosted and translucent-looking. Its finish is just as smooth. Both crops show the soft, slightly blurred finish of the real cards, and neither has added micro-texture.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the sneaker uppers have a crisp, regular dot pattern for the mesh, plus sharp piping and lace edges, all at even sharpness. The rubber, laces and mesh share the same lacquered sheen. This is the over-specified small detail that the generated lesson cards show. B: the toaster has softly brushed metal and bread with a quiet crumb, and its finish is softer, like the real cards.",
+   "fix": "Keep the shoe mesh as a soft, barely visible texture rather than sharp dots. Make the rubber sole matte and the fabric upper duller than the laces. Soften the small edges a little."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the ceramic jar has a near-photographic glaze sheen and sits on veined marble with a reflective highlight, so it reads as a product render. Highlights are well above the real range (0.289). The cookies are finely speckled. B: the barrel has quiet stylised wood grain on the staves and soft steel bands, which matches the real cards' gentle material cues.",
+   "fix": "Paint the jar as a soft stylised ceramic with only a small, gentle highlight. Avoid a photoreal marble counter. Keep the surface clean and slightly matte."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the vending machine has soft condensation dots on the glass and slightly blurred cans, which is the softness of a real card. B: the kettle is a single uniform glossy red enamel with sharp mirror reflections on the chrome knob and rim. There is no texture anywhere (micro-texture 0.0072, below the real range), so the whole object reads as one lacquered plastic.",
+   "fix": "Give the kettle body a softer, slightly satin enamel with broader, gentler highlights. Make the handle clearly matte rubber, with less mirror-like chrome on the knob."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the faucet is chrome with a mirror finish on glossy wall tiles and a steel sink, so the whole scene is equally polished. Gloss share is 0.535, far above the real range. B: the gate is stylised painted metal with chunky brick texture, which reads as cartoon materials with mixed gloss.",
+   "fix": "Make the tiles matte with only soft grout lines, and keep the bright reflection on the faucet spout only. Make the steel softer and brushed, not mirror-like."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the whisk's wires and collar are evenly bright chrome with continuous specular streaks, and gloss share (0.216) is above the real range. B: the ferris wheel spokes are matte cream with soft blur, and the cabins have soft translucent glass.",
+   "fix": "Reduce the whisk wires to a soft brushed-steel sheen with a few small highlights, and make the orange handle matte."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the popsicle is covered in a dense speckle of tiny frost dots, sharp water droplets and foamy edges. This is the busy micro-noise that the generated lesson cards add. B: the signpost has quiet carved wood grain, a few rivets and matte paint, all restrained.",
+   "fix": "Draw the popsicle as smooth, slightly glossy ice with one or two soft highlights. Leave out the frost speckle, foam and most of the droplets."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the watermelon flesh has a visible painterly brush and noise texture, the grapes and plate carry scattered sharp droplets, and the wood table has busy streaked grain. B: the tomato and cucumber slices have clean, structured seed patterns, the board grain is quiet and the gingham is crisp. B's finish is more controlled.",
+   "fix": "Paint the watermelon flesh smooth with no brush noise. Use only a couple of droplets, and keep the table wood grain fine and quiet."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the rolling pin has large, decorative, high-contrast wood-grain streaks, a scatter of flour specks and veined marble. Its texture scale is bigger and busier than on the real cards. B: the scroll is smooth matte paper with a clean wax seal and soft gloss on the base.",
+   "fix": "Make the wood grain on the rolling pin fine and faint, with fewer, thinner lines. Keep the flour dusting minimal."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the pot has smooth teal enamel with soft gloss and matte iron grate legs, so its gloss is mixed. B: the bird feeder has soft painted wood grain, rope twist and seeds, all at a quiet scale. Neither card shows any surface over-detailing or noise.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the oven mitts have sharp quilted diamond lines, crisp dashed stitching around the house patch and a fuzzy felt micro-texture. This is the same added stitch detail that marks the generated glove in the lessons. B: the jacket is soft matte clay-like fabric with simple pockets and slightly glossy badges. Its finish is softer and closer to the real cards.",
+   "fix": "Soften the quilting to gentle puffy shapes with no dashed stitch lines. Show the fabric as smooth matte cloth without fuzz texture."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the balloons are airbrushed with no texture at all, and fine detail (0.0072) and gloss (0.0) are both below the real range. The rubber reads as flat gradient with one blurry highlight blob each. B: the viewer has painted blue metal with varied gloss on the lenses, a matte coin slot and soft highlights, within the real ranges.",
+   "fix": "Give each balloon a clear, small, crisp highlight and a slightly satiny rubber sheen. Add a subtle tie knot and fine string detail."
+  }
+ ],
+ "pattern": "The generated cards over-specify the surface. They add crisp dashed stitching, dot-mesh, frost speckle, scattered droplets, painterly brush noise and big decorative wood grain, all equally sharp. Several also have a single lacquered gloss over every material (mirror chrome, photoreal glaze and marble). The real cards are softer and slightly blurred, keep texture fine and quiet, and mix matte and shiny within one object."
+}

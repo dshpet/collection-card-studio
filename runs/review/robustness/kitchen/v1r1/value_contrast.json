@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (frying pan): the pan is a big near-black ring around a pure-white egg, which makes hard local contrast inside the hero. rms 0.187 is above the real range. The rays keep a light glow right behind the pan. B (oil lamp): the dark rays sit in the corners and the hero is mid-light, with gentle glass and brass steps, like the real lamp and bottle cards.",
+   "fix": "Make the pan a mid charcoal grey, not black. Soften the jump between the pan's rim and the egg, and keep the darkest tone to the thin shadow under the pan."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (toaster): the body and toast fall in the same light band as the pale floor and backdrop wash, so they separate from the pink by hue only. The only dark accents are the small knob and feet. The background is a soft photo-style gradient with no clear groups. A (sneakers): the dark blue shoe mass reads clearly against a near-white floor, but the hard two-tone wall/floor split is also unusual. The evidence is weak both ways.",
+   "fix": "Put the toaster in front of a mid-value backdrop with simple rays, and give the chrome a darker shadow side so the body stands apart from the floor by value."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (cookie jar): a cream jar on white marble, so the hero and the floor share the lightest group and the jar's lower half dissolves into the counter. The overall key is too high (0.759, above the real range). B (barrel): mid-dark staves sit against a light deck and sky, a clear value split like the real ship's wheel card.",
+   "fix": "Set the jar on a mid-toned wooden counter, keep the background a darker green, and darken the jar's shadow side so its outline reads against the floor."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (kettle): a large dark-red body reads almost black in value, with hard white specular spots and a black handle. This is chrome-photo local contrast, and the overall key falls below the real range (0.584). A (vending machine): a dark body with a light glass panel and a gentle mid backdrop, close to the real taxi and AC cards.",
+   "fix": "Lighten the kettle to a bright tomato red with soft broad highlights instead of pinpoint white glints, and make the handle dark grey rather than black."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (faucet): almost the whole card is white tile, so the key is very high (0.829, well above range) and there is no middle group. The silver hero barely separates from the wall, and the dark sink sits only in the bottom corner. B (gate): clear light, mid and dark groups (sky, brick, paving), like the real lion and slide scene cards.",
+   "fix": "Use mid-value colored tiles, or a darker wall behind the tap, so the silver faucet stands out as the lightest shape. Keep one clear dark area at the sink."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (whisk): a thin wire hero floats on a blotchy background. A light diagonal light shaft sits top-left and murky dark corners cover the bottom and right. The value groups are cloud-like and not designed, and the hero's thin wires carry little mass. B (Ferris wheel): a bold white wheel against a single mid-blue sky, a clean two-group split.",
+   "fix": "Draw the whisk large on a clean radial ray background with an even mid-green tone, and drop the hazy light shaft and dark smudges in the corners."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (popsicle): the hero is one mid-dark mass rimmed by bright white frost bubbles, with a light ray halo behind. The frost makes busy speckled highlights, and rms 0.084 is under the real range. B (signpost): mid-orange boards on a mid sky with light clouds, with simple groups. The evidence is weak.",
+   "fix": "Shade the popsicle with a broad light top face and one soft shadow side, and cut the scattered white frost droplets down to a few highlights."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (cutting board): the gingham cloth alternates white and dark squares across the whole card, so it competes in value with the mid-toned board. The hero is not the strongest value contrast on the card. A (fruit plate): a mid wood table with a light plate. Its groups are calmer, but it is also low in contrast (0.115).",
+   "fix": "Replace the checkered cloth with a plain mid-tone table, or a large soft pattern, so the board and the slices hold the strongest light and dark."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (rolling pin): the white marble and dough form the lightest group, so the mid-orange pin and dark red handles sit against a brighter floor. The darkest corners make a strong vignette (0.131, above range). B (scroll): a light hero under a spotlight on a dark blue setting, with clear separation.",
+   "fix": "Use a warm mid-wood counter instead of white marble, ease the dark top corners, and keep the pin the lightest shape near the center."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (pot): a large near-black stovetop fills the lower half, and a bright flame glow sits against it. The pot is mid-dark against bright yellow tiles, which gives hard tenebrist contrast (rms 0.223, above range). B (bird feeder): mid tones across the tree and park scene with a lighter hero box, close to the real scene cards.",
+   "fix": "Make the stovetop a mid grey, lighten the pot's body to a brighter teal with a broad soft highlight, and keep the flame glow small."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (oven mitts): the mitts are mid-value orange on a mid-value blue ray field, so they separate by hue only, and the lens shows hero and background in the same grey. Dark accents are scattered loops and cuff shadows. B (jacket): a light jacket against a mid and dark ray field, with one strong dark sash, which gives clear value separation.",
+   "fix": "Light the mitts so their tops read pale peach against a deeper blue background, and add one clear dark shadow under the mitts."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A (balloons): mid balloons on a mid sky with a white cloud band at the bottom, and simple groups. B (coin binoculars): a mid-dark hero on a bright white-blue city, separated clearly by value. Both fit the real range of value designs.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards break the real value plan. The hero often shares its value band with the floor or wall (white jar on white marble, silver tap on white tile, orange mitts on mid blue), so it separates by hue only. Or they push to extremes: near-black pans, stovetops and kettles with hard white glints, or the key going too high or too low. Real cards keep the hero as the strongest contrast, with a simple background in one or two calm value groups."
+}

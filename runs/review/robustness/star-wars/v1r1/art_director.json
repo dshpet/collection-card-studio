@@ -1,0 +1,106 @@
+{
+ "issues": [
+  {
+   "issue": "A grey or white hero sits on one saturated studio gradient and takes on its colour: lime ship, purple-soaked mitts, grey panel on a yellow wall, white rover on pale sand. The hero has no local colour of its own, its whites and shadows pick up the backdrop hue, and it merges with the floor in value.",
+   "specialists": [
+    "color_palette",
+    "value_contrast",
+    "lighting_shading"
+   ],
+   "instruction": "Keep whites neutral light grey with cool grey shadows. Give the hero one or two local colours of its own that differ from the backdrop. Make the floor or ground a slightly deeper mid tone than the hero so the hero is the lightest mass."
+  },
+  {
+   "issue": "The hero is drawn small, centred and complete, floating in a large empty field with even margins (satellite, ship, and to a lesser degree the rocket). This shows at thumbnail size before anything else does.",
+   "specialists": [
+    "composition_hierarchy",
+    "staging_detail",
+    "value_contrast",
+    "viewpoint_depth"
+   ],
+   "instruction": "Style-level only, since form and framing edits are risky as notes. Real cards fill most of the card with the hero, and the card edge often cuts it."
+  },
+  {
+   "issue": "Flat frontal or top studio light. The side away from the light barely darkens, and some cards get a long photographic floor shadow (ship, rover, panel, star map).",
+   "specialists": [
+    "lighting_shading",
+    "value_contrast"
+   ],
+   "instruction": "Use a soft key from the upper left, a clearly darker right side with a slightly cool shadow, and a short soft contact shadow directly under the object."
+  },
+  {
+   "issue": "Invented hardware and background clutter drawn at the same sharpness everywhere: rivets, vents and seams on the wall behind the console, screwed plates, crinkled foil, speckle noise on the star map.",
+   "specialists": [
+    "surface_finish",
+    "edges_linework",
+    "staging_detail"
+   ],
+   "instruction": "Use plain, smooth walls and floors with no rivets, vents or seams. Show materials as broad soft surfaces with one or two soft highlights."
+  },
+  {
+   "issue": "Overruled. Shape_proportions fixes ask for thinner, slimmer or less rounded forms; form cannot be judged across different objects, so they are not used. Votes against the controls (p05 and p07) are also ignored. So are confident votes against real cards: the wreath door p03 B, the sneakers p11 A, the jacket p02 B and the airliner p12 A. Those mostly describe ordinary real-card detail.",
+   "specialists": [
+    "shape_proportions",
+    "surface_finish",
+    "edges_linework",
+    "lighting_shading",
+    "color_palette",
+    "staging_detail"
+   ],
+   "instruction": "No change."
+  }
+ ],
+ "style_text": "",
+ "cards": [
+  {
+   "pair": "p01",
+   "keep": false,
+   "note": "Satellite: Make the gold foil body smooth with only two or three broad soft folds, and make the dish soft satin silver instead of mirror chrome. Make the orange rings slightly softer and less saturated, and give the satellite a slightly cool shadow side on its right."
+  },
+  {
+   "pair": "p02",
+   "keep": true,
+   "note": "Helmet: Could pass. The clean shell, glossy visor and ray backdrop match the real cards."
+  },
+  {
+   "pair": "p03",
+   "keep": true,
+   "note": "Airlock Hatch: Could pass. Plain riveted wall, a few large shapes and one warm accent on the wheel."
+  },
+  {
+   "pair": "p04",
+   "keep": false,
+   "note": "Star Map: Paint the chart a slightly lighter mid blue with soft lighter and darker fold panels, and remove the speckled noise. Make the compass warm brass with a small soft shine. Keep the stars and the wooden table."
+  },
+  {
+   "pair": "p06",
+   "keep": false,
+   "note": "Spaceship: Paint the hull glossy white with a red stripe along the side, and make the engine nozzles dark blue-grey metal. Replace the lime studio gradient with an even, mid-tone green background, and put a short soft shadow right under the ship. Light from the upper left so the underside and right flank are clearly darker."
+  },
+  {
+   "pair": "p08",
+   "keep": false,
+   "note": "Control Panel: Make the wall one plain, slightly deeper warm yellow surface with no rivets, vents or seams, and make the floor smooth and plain. Light from the upper left so the right side of the console and the undersides of the buttons are slightly darker. Keep the screen, dial and levers."
+  },
+  {
+   "pair": "p09",
+   "keep": true,
+   "note": "Pouch: Could pass. Simple striped backdrop, wood table and believable foil."
+  },
+  {
+   "pair": "p10",
+   "keep": false,
+   "note": "Rover: Make the body matte white with a few soft panel seams and an orange stripe, and keep only a thin highlight along its top edge. Make the sand a smooth, slightly deeper warm ochre. Give the rover's right side and the wheels a clear cool blue-grey shadow side."
+  },
+  {
+   "pair": "p11",
+   "keep": false,
+   "note": "Space Gloves: Paint the gloves a neutral light grey-white with cool grey shadows instead of purple-tinted ones. Even out the purple background with only a gentle darkening at the corners. Keep the orange cuffs and the teal patches."
+  },
+  {
+   "pair": "p12",
+   "keep": true,
+   "note": "Rocket: Could pass. A clean sky, soft clouds and one warm accent, like the real sky cards."
+  }
+ ],
+ "summary": "Close, but not there yet. Of the 10 generated cards, 4 could pass: the helmet, the hatch, the pouch and the rocket. The other 6 give themselves away on staging rather than on drawing quality. The main cause is a grey or white hero on a single saturated studio gradient that soaks its whites and shadows, with flat frontal light (ship, mitts, rover, control panel). Second, the hero is small and centred in an empty field. Third, there is invented hardware clutter. The edit notes keep to colour, value, light, finish and backdrop, at most three changes each, and do not touch form."
+}

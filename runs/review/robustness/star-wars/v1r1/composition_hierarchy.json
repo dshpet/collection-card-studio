@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the yellow player is tilted and sits upper-left, and the earbud cable sweeps down to the lower edge. It fills the card with a tight margin, like the real cards. B: a small satellite floats dead centre. Its box height is 0.315, far below the real minimum of 0.581, and about two thirds of the card is empty orange rings. At thumbnail size it reads as a small speck.",
+   "fix": "Draw the satellite much bigger and tilted on a diagonal, with one solar panel almost touching the card edge. The satellite should fill most of the card."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the helmet is tilted three-quarters and fills the card, with the visor as a single strong first read. B: the jacket faces straight on, is symmetric and centred, and has even green margins on every side. The sash badges compete with the jacket for attention.",
+   "fix": "Turn the jacket to a three-quarter angle and scale it up so a sleeve nearly touches the card edge. Draw fewer, larger badges."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the round vault door is a whole circle, centred, with an even wall margin. Its margin of 0.091 is above the real range (0 to 0.085). B: the top and sides crop the door and its ivy frame, and the wreath sits high as the focal point. That edge-cropped framing matches real cards such as the lighthouse.",
+   "fix": "Push the vault door closer to the viewer so the card edges cut off its rim on one or two sides, and move it slightly off-centre."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the left edge crops the map, and the magnifier gives one clear focal point at the centre. B: the star map is a flat sheet with no single focal object, and the stars and compass compete for attention. It nearly spans the full width (0.981, above the real maximum of 0.921) without any edge cropping it.",
+   "fix": "Add one bold focal object on the star map, such as a large compass resting on it, and let one corner of the map run off the card."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the flamingo float sits off-centre against the pool edge, and its neck gives a clear silhouette that is named at once. B: the fruit plate is centred, but the watermelon, oranges, grapes and berries all compete for attention, so there is no single first read. The box height is a fairly low 0.565.",
+   "fix": "Make the watermelon slice the large hero and the other fruit smaller. Tilt the plate and bring it closer so it fills more of the card's height."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the vending machine stands upright, tall, and fills about 0.79 of the card's height. B: a small spaceship floats mid-card on a flat green gradient. Its box height is 0.294, far below the real minimum of 0.551, and most of the card is empty.",
+   "fix": "Make the spaceship much bigger and angle it diagonally toward the viewer, with its nose and wing tip close to the card edges."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the street lamp is the real card from the reference sheet. It is tall and centred, and the bottom edge crops its post. B: the cooler sits fully inside the card on the beach, with the lid open. The cans and the background horizon add competing detail.",
+   "fix": "Bring the cooler closer so the bottom edge crops its base, and simplify the horizon behind it."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the fan sits off-centre, the bottom edge crops its stand, and a curtain fills one side. This is the real cropped framing. B: the control panel is centred and fully contained, facing straight on, with even wall and floor margins. Its area of 0.464 is above the real maximum of 0.442, and the screen, dial and levers each pull attention.",
+   "fix": "Turn the control panel to a three-quarter angle and let the card edge crop its side. Make the dial the single large focal point."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the gloves are huge, the left edge crops them, and they fill the lower card. B: the pouch stands centred and upright, fully contained, with a narrow box (0.479 wide, below the real minimum of 0.661) and wide empty purple margins on each side.",
+   "fix": "Draw the pouch bigger and tilted, leaning toward the viewer, so it fills most of the card and nearly touches the side edges."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "B: the computer is the real card from the lessons. It fills the card, and the edges crop the desk. A: the rover is a plain block sitting low in the card, with a lot of empty sand and sky. The small dish is the only point of focus, so the object is not named at once.",
+   "fix": "Draw the rover larger and closer, at a three-quarter angle, with a wheel nearly touching the card edge. Make the dish and body bold enough to read at thumbnail size."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the sneakers sit in the lower half with a flat empty orange band above them. The box height is 0.487, below the real minimum of 0.551. B: the mittens are a centred, upright pair with an even purple margin. They are narrow but tall.",
+   "fix": "Raise the camera and scale the sneakers up so they fill the card's height. Tilt one shoe toward the viewer."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the airplane is big and tilted, the right edge crops it, and it fills the card, which is the real framing. B: a small rocket floats in the sky with lots of empty space. Its area is 0.14, below the real minimum of 0.198, and the clouds take up much of the card.",
+   "fix": "Make the rocket much bigger on a bold diagonal, with its nose near the top corner and the flame near the bottom edge."
+  }
+ ],
+ "pattern": "Generated cards draw the hero too small, centred and complete, with even empty margins all around. They often face it straight on, float it on a plain gradient or add extra objects that compete with it. Real cards make the hero large and tilted, push it off-centre and let the card edges crop it."
+}

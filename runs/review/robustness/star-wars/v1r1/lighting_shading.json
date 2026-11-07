@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (yellow player): soft key from upper left, the rounded body turns gradually into a mild shadow on the lower right, and the earbuds carry soft sheen with a gentle cast onto the cord. B (satellite): the cube and panels are lit almost entirely from one side with hard metal hot spots on the cube top and dish. Its light bias (1.035) is well outside the real range, while the panels stay flat with no turn across them.",
+   "fix": "Light the satellite with a soft upper-left key; let the cube's right face and the panel undersides fall into a cool, medium shadow; use broad soft sheen on the metal instead of sharp white hot spots."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (helmet): the light sits upper left, the shell turns smoothly into a darker right side, and the visor has one broad glossy sheen, which matches the lesson reals. B (jacket): light pools in the center of the chest and sash while the sleeves and edges darken like a vignette. There is no clear side shadow or core shadow across the torso.",
+   "fix": "Light the jacket from the upper left so its right sleeve and right side of the torso sit in a clear cool shadow, with a soft core shadow running down the body's turn."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (vault door): soft upper-left light, gentle turn across the rim and wheel, and soft contact darkening around the bolts. B (door with wreath): hard, realistic sunlight casts sharp leaf shadows across the door panels and frame. That kind of crisp dappled cast shadow does not appear on the real cards, which use soft shadows.",
+   "fix": "Remove the hard leaf shadows on the door; use soft even daylight from the upper left with only a gentle soft shadow under the wreath and inside the panel grooves."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (map and magnifier): directional light makes bright and shaded fold facets on the paper, and the magnifier casts a clear shadow. B (star map): the sheet is almost uniformly lit, the folds barely change value, and there is only a faint shadow under the edge. Shading range (0.443) and light bias (0.083) both fall below the real range.",
+   "fix": "Light the star map from the upper left so each fold panel alternates lighter and darker, with a soft darker cast shadow along the right and bottom edges onto the wood."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (flamingo float): the ring is lit nearly evenly all around and the neck shows little side darkening. Light bias (0.057) and form contrast (0.325) are both below the real range, though there is a cast shadow to the right. B (fruit plate): clear upper-left key, with grapes and berries turning into darker lower-right sides and soft contact shadows on the plate.",
+   "fix": "Light the flamingo from the upper left so the right and inner side of the ring and the back of the neck fall into a deeper shadow, with a soft core shadow along the tube."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (vending machine): front lit, side face in a clear medium shadow, with soft contact under the feet, like the real cards. B (spaceship): studio top light, a flat-gray body with little turn, and a long soft photographic shadow on a seamless ground. Light bias (0.983) is out of range and shading range (0.573) is below it.",
+   "fix": "Light the ship from the upper left with the underside and right flank in a cool, clearly darker shadow; keep a short soft contact shadow directly under the hull instead of a long studio shadow."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A (street lamp) is the same card as the real anchor: glowing glass, dark metal with soft rim sheen, and the right side in shadow. B (cooler): even frontal light with a glossy top-edge sheen on the red box and soft, shallow sand contact. The box sides barely separate in value.",
+   "fix": "Light the cooler from the upper left so its right face is clearly darker than its front, with soft contact darkening where it sinks into the sand."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (fan): window light from the left, soft turn on the hub dome, and the grille shadowed against the wall. B (control panel): even frontal light, bright top bevels and almost no shadow side on the box or knobs. Shading range (0.561) is below the real range.",
+   "fix": "Give the control panel a clear upper-left key: the right side of the box and the lower faces of the buttons and levers in soft medium shadow, plus a soft shadow under the console onto the floor."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (boxing gloves): soft upper-left light and a smooth turn into darker lower-right sides on the rounded leather. B (pouch): left key, crinkled foil highlights and a darker cast shadow to the right. Both fall inside the real ranges, and neither departs clearly from the lessons.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 5,
+   "difference": "B (computer) matches the real lesson card: side key, cool blue shadow on the monitor's right side, and soft contact under the keyboard. A (rover): the top of the box is flatly lit and the sides barely shade, with simple soft blobs under the wheels. Light bias (1.39) is far out of range.",
+   "fix": "Light the rover from the upper left with its right side and front face in a cool, clearly darker shadow, rounded wheels turning into shadow, and soft dark contact where the wheels touch the sand."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (sneakers): bright, nearly symmetric front light across both shoes with high overall range and a hard dark shadow to the left. Light bias (0.019) is far below the real range. B (mittens): upper-left light, a smooth turn into a darker right side on the padded sections, and soft contact shadows.",
+   "fix": "Light the sneakers from the upper left so the right side of each shoe and the inner sole wall fall into soft medium shadow, with a softer, shorter contact shadow under the soles."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (airplane): top-left light, darker belly and engine undersides, soft sheen along the fuselage. B (rocket): left key, darker right side of the body and fins, soft glow from the flame. Both look plausible against the real cards and stay within range.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards light the object from the front and fairly evenly. The side away from the light barely darkens and there is no clear cool shadow side. Real cards use a soft upper-side key with a clearly darker, often cool shadow side and soft contact shadows. The fakes either flatten the shadow side or swap in hard, photographic studio or sunlight shadows."
+}

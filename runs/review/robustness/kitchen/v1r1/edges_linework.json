@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (pan): the outer rim has a heavy, unbroken dark contour, and the egg white is ringed by a closed dark line, like the outlined generated glove. B (oil lamp): contours are thin and change weight, the glass chimney fades into the rays, and the line is strongest only at the brass base.",
+   "fix": "Remove the dark line around the egg white and the pan rim. Let the pan edge separate from the background by light and color only, and make the far rim softer than the near rim."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (toaster): the large metal face has almost no internal edges (subject density 0.058, below the real range), the bread is covered in grainy speckle edges, and the outline is darker than the real range (0.11). A (sneakers): edges are dense but sit inside the real range, with a hard horizon line behind them. The call is weak.",
+   "fix": "Add clear, thin panel seams and a defined slot rim to the toaster body. Draw the toast as a smooth surface with a soft crust edge and no grainy texture."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (cookie jar): the jar body is nearly edgeless (0.079, below the real range), while the cow logo is a hard, flat graphic outline. The marble counter carries more line detail than the hero. B (barrel): seams between staves and hoops are crisp and evenly spaced, and the edge hierarchy is clear.",
+   "fix": "Model the jar's rim and lid lip with crisp, thin edges. Make the cow face a painted shape without a dark line around it, and blur and simplify the marble veins behind."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (kettle): the lower body loses its edge into the shadow, the internal edges are sparse (0.071, below the real range), and the black handle gives an outline darkness above the real range. A (vending machine): it has double dark panel lines, but its edge density is within the real range. The call is weak.",
+   "fix": "Give the kettle body a defined bottom edge against the table and a thin, crisp seam where the lid sits. Make the handle a mid-dark color, not solid black."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (faucet): the chrome neck is drawn with double dark contours, and every tile on the wall behind has a hard grid edge equal in strength to the hero, so there is no edge hierarchy. Subject density is 0.457, far above the real range. B (gate): it is dense too, but the scroll ironwork is the sharpest area and the foliage behind is softer.",
+   "fix": "Blur and soften the wall tiles behind so their joints barely show. Keep the sharpest edges only on the faucet's spout and lever, with one clean silhouette and no doubled outline."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (whisk): every wire loop is drawn as a pair of dark lines, which gives a subject edge density of 0.431, about three times the real maximum. The handle, by contrast, is almost edgeless. B (Ferris wheel): its spokes and cabins have thin, even contours within the real range.",
+   "fix": "Draw fewer, thicker whisk wires, each a single smooth tube with a soft highlight and no dark border line. Give the handle a defined end cap and a clean ferrule seam."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (popsicle): the surface is covered in tiny speckle edges from frost and droplets, and the melting rim is ringed by dark blobs. Outline darkness is -0.157, outside the real range. B (signpost): it has firm contours on the arrows, but the plank seams and nail heads are clean and in range.",
+   "fix": "Draw fewer, larger water drops with soft edges, and remove the frost speckle. Keep the popsicle silhouette as one smooth, clean edge, with the two grooves as simple soft dips."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (cutting board): the gingham cloth fills the background with dense, grainy hatch edges that compete with the vegetables, and the outline darkness of 0.134 is above the real range. A (fruit plate): the fruit has crisp internal seeds and segments, while the wood behind is drawn as broad, soft plank lines. The call is weak.",
+   "fix": "Render the tablecloth as soft, blurred checks without fabric weave texture. Keep the crispest edges on the tomato and cucumber slices."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (rolling pin): the hero has very few edges (0.046, half the real minimum), while the flour on the dough is a field of noisy speckle edges and the marble veins add more line detail. B (scroll): its curl and ribbon are drawn with clean, thin contours inside the real range.",
+   "fix": "Give the rolling pin crisp edges where the handles meet the barrel and a defined end face. Replace the speckled flour with a few soft white patches, and blur the marble behind."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (pot): the lid and rim are drawn as doubled dark rings, and the tile grid behind has the same hard joint lines as the faucet card in p05. B (bird feeder): the background trees are scalloped and outlined, but the feeder's boards remain the sharpest area. Both cards are inside the measured ranges, so the call is weak.",
+   "fix": "Draw the pot rim as a single thin highlight edge and not as stacked dark rings. Soften the wall tiles behind into faint, blurred joints."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (oven mitts): the front mitt has a thick dark outer contour, the house patch is boxed in by a dark dashed stitch line, and the quilted fabric is filled with fine fuzzy texture edges, while the main forms carry few clean seams (density 0.074). B (jacket): it has even, thin seams at the pockets and sash, at the top of the real range. The call is weak.",
+   "fix": "Remove the dark outline around the mitts and the patch. Show the quilting as soft, shallow puffed diamonds with smooth fabric, and keep the patch edge as a light stitched seam."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (binoculars): the eyepieces carry heavy, doubled black ring contours, and the city skyline behind is drawn with hard outlines on every building. Both subject (0.172) and background (0.036) edge densities are above the real range, so there is no edge hierarchy. A (balloons): its silhouettes are soft and clean, and the clouds have lost edges.",
+   "fix": "Blur the skyline into soft, simple shapes with no window lines. Draw the eyepieces as smooth rims with a single highlight and no dark rings."
+  }
+ ],
+ "pattern": "Generated cards outline their forms. The silhouette is a heavy, closed, dark contour, and rims, wires and logos get doubled dark lines, where real cards separate forms with value and color and let edges thin out or disappear. Generated cards also put the wrong amount of detail in the wrong place. Either the hero is overloaded with tiny, equal-weight edges (whisk wires, frost speckle, flour, fabric fuzz), or it is nearly empty while the background (tiles, marble, gingham, skyline) is drawn as sharply as the hero. Real cards keep the crispest edges on the focal object and soften everything behind it."
+}

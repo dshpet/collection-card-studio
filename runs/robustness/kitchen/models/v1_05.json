@@ -1,0 +1,99 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "loose": [
+   {
+    "parts": 1,
+    "kinds": [
+     "sphere"
+    ],
+    "at": [
+     -0.0,
+     -0.2,
+     0.6
+    ],
+    "size": [
+     0.03,
+     0.03,
+     0.04
+    ]
+   },
+   {
+    "parts": 1,
+    "kinds": [
+     "sphere"
+    ],
+    "at": [
+     -0.0,
+     -0.2,
+     0.47
+    ],
+    "size": [
+     0.04,
+     0.04,
+     0.05
+    ]
+   },
+   {
+    "parts": 1,
+    "kinds": [
+     "sphere"
+    ],
+    "at": [
+     -0.0,
+     -0.2,
+     0.33
+    ],
+    "size": [
+     0.04,
+     0.04,
+     0.05
+    ]
+   }
+  ],
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "loose": [
+   {
+    "parts": 1,
+    "kinds": [
+     "sphere"
+    ],
+    "at": [
+     0.0,
+     -0.2,
+     0.56
+    ],
+    "size": [
+     0.02,
+     0.02,
+     0.03
+    ]
+   },
+   {
+    "parts": 1,
+    "kinds": [
+     "sphere"
+    ],
+    "at": [
+     -0.0,
+     -0.2,
+     0.48
+    ],
+    "size": [
+     0.03,
+     0.03,
+     0.04
+    ]
+   }
+  ],
+  "problems": [
+   "A gap shows between the sink's back deck and the tiled wall: the deck ends at y=0.32, the wall starts at y=0.33 and stops at z=0, so a yellow line of backdrop shows along the joint. Extend the deck back under the wall and drop the wall's base below the deck.",
+   "The water drops (the three spheres the geometry check flagged) float by design, but they are large and spaced far apart down to the deck level, so they read as bubbles on the tiles. Make them smaller and keep them closer under the outlet so they read as falling drops."
+  ]
+ }
+]

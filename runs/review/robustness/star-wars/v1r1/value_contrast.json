@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the white player and earbuds sit on the darkest ring as one large light shape, with a strong hero-over-background value gap. B: the satellite is small and mid-grey on a flat mid-grey card made of concentric rings. Its only dark accents are the black solar-panel cells, and the lens shows speckle noise in the background rings.",
+   "fix": "Make the satellite larger so it fills the card. Light the body brighter than the orange rings, and darken the background slightly toward the corners."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the white helmet sits on a nearly equally light cyan burst. In the lens the whole card is light and middle grey, with no corner darkening (vignette 0.005, key 0.797, both outside the real range). Only the visor gives a mid-dark area. B: the light jacket sits against a dark-green burst, with a dark sash and a lighter ring of rays behind it, giving clear hero-over-background value separation.",
+   "fix": "Darken the background rays toward the card corners and keep a soft light glow only right behind the helmet, so the white helmet stands out by value and not only by hue."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a dark grey vault door sits on a light wall, so the hero is darker than the background (gap -0.217, outside the real range). Its edges carry hard light rims all round. B: the light wreath sits on a dark blue door framed by mid-dark leaves, which keeps the darkness around the hero.",
+   "fix": "Lighten the vault door's metal to a mid-light grey and darken the surrounding wall a step, so the door reads lighter than the background, with soft shading instead of hard bright rims."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a light paper map with a mid-grey globe area and one black magnifier handle as the darkest accent, on a mid-grey table. B: the hero is one large near-black navy block with tiny white star accents, darker than the wooden table (gap -0.197). The darkest value takes up most of the hero instead of sitting in small accents.",
+   "fix": "Paint the star chart a lighter, mid blue with soft shading so it is not a flat near-black slab. Keep the darkest tones for small accents only."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the pink flamingo sits in middle values against darker water, with a black beak and a dark shadow under the ring. B: the fruit plate sits on a very light washed table (key 0.712, contrast 0.115, both just outside the real range). The value pattern is scattered small darks (seeds, berries), and the plate fades into the table.",
+   "fix": "Darken the wooden table to a warm mid tone and darken the card corners, so the bright fruit forms one clear light mass in the centre."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the dark blue vending machine stands against a mid-value purple wall, and its lit glass door makes a clear light shape in the dark body. B: the white spaceship lies on a near-white floor that fades upward to a darker green top. The hero melts into the background in the lens, and the key (0.805) and vignette (0.128) are both outside the real range.",
+   "fix": "Put the spaceship against a mid-tone green background with only a soft glow directly behind it. Keep the floor darker than the white hull so the ship's outline reads clearly."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A is the street-lamp card that appears in the real anchor set: a dark lamp against a lighter teal burst. B: a dark red cooler with a white lid interior against a darkened sky that goes almost black at the top, and very bright scattered sand. The darks spread across the top band instead of gathering on the hero.",
+   "fix": "Lighten the upper sky to an even mid blue and calm the bright sand highlights, so the cooler's white lid and cans are the lightest shapes on the card."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the fan's light blades and grille sit against a dark green curtain and a mid-value orange wall, giving clear separation. B: a light-grey panel on a light yellow wall over a light floor makes the card almost entirely light and middle grey. Only the screen and the bottom strip go dark, so the hero barely separates by value.",
+   "fix": "Darken the back wall to a deeper warm tone and shade the floor in front, so the light-grey console stands out as the brightest mass, with the screen as its one dark accent."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the red gloves read as dark-mid masses with heavy black shadows underneath. They are cropped off the left edge, and the corners are lighter than the centre (vignette -0.103, outside the real range). B: the bright silver pouch sits against a darker purple wall, with the hero clearly lighter than its background.",
+   "fix": "Bring the whole pair of gloves inside the frame and add soft highlights on their tops so they read lighter. Let the card's corners fall slightly darker than the centre."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "B is the real computer card from the lessons. A: the white rover body sits on near-white sand, so the hero and the ground merge in the lens. The only darks are the black wheels, and a flat dark-blue sky band runs along the top, with no grouping around the hero.",
+   "fix": "Make the sand a warm mid tone and soften the sky, so the white rover body is clearly the lightest shape. Keep the black wheels as small dark accents."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the dark blue sneakers have white soles, set on a flat light floor and wall split by a plain horizon. B: the bright white gloves sit in a lit circle with strong dark purple corners. This spotlight glow and heavy corner falloff are larger than on the real cards, which also makes the hero noticeably lighter than its surroundings (gap 0.153).",
+   "fix": "Even out the purple background with only a gentle darkening at the corners, and give the white gloves soft mid-grey shading so they are not pure white."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a white-and-blue airplane fills the card, with dark engine and window accents, against a mid-blue sky and white clouds. B: a small white rocket floats in a flat mid-grey sky. A bright cloud floor along the bottom makes the corners lighter than the centre (vignette -0.089), and the hero has low internal contrast (0.109).",
+   "fix": "Make the rocket larger in the frame, shade its body with a clear light side and mid-grey shadow side, and let the clouds fall slightly darker toward the card's bottom corners."
+  }
+ ],
+ "pattern": "On light and dark alone, the generated cards are easiest to spot in four ways. First, the value groups are flattened: a white hero on a near-white floor or sky (spaceship, rover, helmet), or a hero that is one big near-black block (constellation map). Second, corner darkening is wrong: missing or reversed (corners lighter than the centre), or pushed into a heavy spotlight. Third, dark accents are scattered across the background instead of gathered on the hero. Fourth, the hero is too small or cropped, which weakens the main light shape. Many of the generated subjects are also space-themed, but that is a content clue, not a value one."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the player is a rounded slab with a flat face and tight corners, and its earbud cables stay thin, like the real cards. B: the satellite's gold body is a swollen cube with soft corners. The two solar panels are short, thick rounded tiles, and the dish sits on a stubby post. Corner rate is 6.52, above the real range.",
+   "fix": "Draw the satellite body as a crisp box with flat faces and tight bevels. Make the solar panels long and thin with straight edges, on thin rods, and the dish on a thin mast."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the helmet is close to a perfect inflated ball. The ear discs and neck ring blend into one blob outline, and solidity is 0.961, above the real range. B: the jacket keeps a believable outline, with sleeves, collar and hem in their real places.",
+   "fix": "Draw the helmet a bit taller than it is wide, with a flat-edged visor frame. Make the neck ring a thin, straight-sided band and the side pieces small and flat."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the hatch outline is a plain filled disc. Straight share is 0.912 and the corner rate is 0, both outside the real range. The hinges barely change the outline. B: the wreath is a ragged leafy ring with an open centre, which reads as real decoration.",
+   "fix": "Draw the hatch with thin, flat hinge plates and bolts that stick out past the rim. Give the door a thin, tight frame edge instead of one thick disc."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the paper map has crisp folds and a thin magnifier handle. B: the star map is a puffy cushion with rounded corners and a soft, wavy outline. Straight share 0.892 and solidity 0.978 are both above the real range.",
+   "fix": "Draw the star chart as thin, flat paper with sharp corners, crisp fold creases and slightly curled edges, not a padded mat."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the flamingo float is meant to be inflated, so its puffy tube and neck are correct for the object. B: the fruit pile has a believable lumpy outline, but the silhouette left out the plate, so its edge can't be judged. Neither card shows a shape problem I can point to.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the vending machine is a tall upright box with straight sides and tight corners, in the real proportions. B: the ship is a stubby toy. The fuselage is a fat rounded capsule, the wings are short thick slabs, and the engine pods are oversized cylinders.",
+   "fix": "Draw the spaceship long and slim, with thin swept wings that have straight leading edges, small engine nozzles and crisp panel edges."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the street lamp has the same thin curled bracket and slim post as the real lamp card. B: the cooler has a slightly pillowy lid, but its box body keeps straight sides and believable proportions. On shape alone, neither card reads as generated.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the fan has a thin wire cage with open gaps and a slim pole, which reads as a real object. B: the console is a single rounded slab. There are no levers or knobs in the outline, and straight share 0.805 and solidity 0.96 are both above the real range.",
+   "fix": "Draw the control panel with a thin, sharp-edged back plate and a separate flat desk shelf. Let the levers, knobs and screen bezel stick out past the outline as thin parts."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: boxing gloves really are padded, so the fat rounded outline fits the object. B: the pouch has a thin crimped seal and a narrow spout, in true proportions. Neither card gives a clear shape reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "B is the same computer as the real lesson card. A: the rover is a toy. The body is a thick bar of soap, the six wheels are oversized black donuts on stubby legs, and the dish sits on a short, thick post. The real parts of a rover (thin struts, arms, panels) are missing.",
+   "fix": "Draw the rover with a flatter, sharp-edged chassis on thin suspension struts and smaller wheels. Add thin antenna masts and a flat solar panel, and keep every edge crisp."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the sneakers have a believable sole profile and an outline broken up by the laces. B: the space mittens are swollen, rounded mitts. The thumbs are thick and the cuffs are puffy rolls, so the shapes read as inflated toys rather than gloves.",
+   "fix": "Draw the gloves slimmer, with separate fingers or flatter mitten fronts, a thin, hard-edged cuff ring and flat panels on the back of the hand."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the airliner is chubby but keeps its thin wings and tail fin in a plausible arrangement. B: the rocket's fins are thick wedges and its body is a fat, short capsule. The flame merges into the outline, and the corner rate of 5.315 is above the real range.",
+   "fix": "Draw the rocket longer and slimmer, with thin flat fins that have straight edges, and keep the flame clearly separate from the body."
+  }
+ ],
+ "pattern": "Generated cards draw the object as an inflated toy. Bodies swell into capsules or cushions, flat panels and paper turn pillowy with soft blob corners, and thin parts such as struts, masts, fins and solar panels come out as thick, short slabs. The outline also tends to fill out into one solid blob: solidity and straight share run above the real range, and too few parts stick out past the outline."
+}

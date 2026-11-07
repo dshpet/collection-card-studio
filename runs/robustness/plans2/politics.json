@@ -1,0 +1,355 @@
+{
+ "title": "Elections",
+ "story": "A cozy polling day, from the booth to the results party.",
+ "declined": [
+  "flags of real countries: no politics, divisive",
+  "party logos: no logos or brands, no politics"
+ ],
+ "variants": [
+  {
+   "cards": [
+    {
+     "name": "Ballot Box",
+     "subject": "A sturdy square ballot box with a narrow slot in the lid and a white folded paper half inserted in the slot, with a yellow band around the lid.",
+     "object_class": "container",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "blue box, white paper, yellow band",
+     "backdrop_colors": "rich pink",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Voting Booth",
+     "subject": "A freestanding voting booth with a rectangular frame, solid side panels, a small shelf inside and a closed curtain across the front, standing on the hall floor.",
+     "object_class": "furniture",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "navy blue panels, white curtain, yellow shelf edge",
+     "backdrop_colors": "warm yellow",
+     "surface_or_setting": "tiled floor of a school hall",
+     "build_model": true
+    },
+    {
+     "name": "Ballot Paper",
+     "subject": "A rectangular white ballot paper seen from above, with rows of empty boxes drawn as simple shapes and one box ticked with a check mark.",
+     "object_class": "paper_document",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "white paper, grey lines, green check mark",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "light oak desk",
+     "build_model": false
+    },
+    {
+     "name": "Vote Sticker",
+     "subject": "A perfectly round sticker with a thick ring border and a bold check mark in the center.",
+     "object_class": "accessory",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "white disc, blue ring, red check mark",
+     "backdrop_colors": "fresh green",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Podium",
+     "subject": "A wooden podium with a slanted top, a solid front panel and a microphone on a short stem fixed to the top, standing on the stage.",
+     "object_class": "furniture",
+     "category": "3",
+     "pattern": "plain_gradient",
+     "hero_colors": "wood brown podium, black microphone, gold trim on the front",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "polished wooden stage floor",
+     "build_model": true
+    },
+    {
+     "name": "Megaphone",
+     "subject": "A cone-shaped megaphone with a wide round mouth, a pistol-free handle grip under the body and a trigger-less rounded back.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "red cone, white stripe, yellow handle",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Clipboard",
+     "subject": "A rectangular clipboard seen from above with a metal clip at the top holding a sheet with rows of check marks beside short lines.",
+     "object_class": "paper_document",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "light wood board, white sheet, silver clip, green check marks",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "light oak desk",
+     "build_model": false
+    },
+    {
+     "name": "Vote Calendar",
+     "subject": "A square wall calendar hanging from a nail on its top edge, with a grid of small squares and one square circled with a big circle.",
+     "object_class": "paper_document",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "white page, grey grid, red circle",
+     "backdrop_colors": "fresh green",
+     "surface_or_setting": "painted wall of a hallway",
+     "build_model": true
+    },
+    {
+     "name": "Rosette",
+     "subject": "A round winner rosette with pleated edges, a circular center and two straight ribbon tails hanging from the back.",
+     "object_class": "accessory",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "gold rosette and tails, small purple center",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Polling Sign",
+     "subject": "A square sign on a single wooden post planted in the ground, showing a big arrow and a ballot box icon.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "blue sign, white arrow and icon, wood brown post",
+     "backdrop_colors": "warm yellow",
+     "surface_or_setting": "grass lawn beside the school entrance path",
+     "build_model": true
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Ballot Box",
+     "subject": "A square ballot box with a slot in the lid and a white paper half inserted in the slot.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "red box, white paper, silver slot edge",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "light wooden table",
+     "build_model": true
+    },
+    {
+     "name": "Voting Booth",
+     "subject": "A freestanding voting booth with a rectangular frame, solid side panels, a small shelf inside and a closed curtain across the front.",
+     "object_class": "furniture",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "purple panels, white curtain, yellow shelf edge",
+     "backdrop_colors": "warm yellow",
+     "surface_or_setting": "wooden floor of a school gym",
+     "build_model": true
+    },
+    {
+     "name": "Ballot Paper",
+     "subject": "A rectangular white ballot paper seen from above with rows of boxes drawn as simple shapes, one ticked with a check mark, and a yellow pencil lying across it.",
+     "object_class": "paper_document",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "white paper, yellow pencil, green check mark",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "grey stone counter",
+     "build_model": false
+    },
+    {
+     "name": "Vote Sticker",
+     "subject": "A perfectly round sticker with a ring border and a bold check mark in the center.",
+     "object_class": "accessory",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "white disc, red ring, blue check mark",
+     "backdrop_colors": "fresh green",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Debate Podium",
+     "subject": "A wooden podium with a slanted top and a solid front panel, with two microphones fixed to the top on short stems, standing on a stage.",
+     "object_class": "furniture",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "wood brown podium, black microphones, gold trim",
+     "backdrop_colors": "rich blue",
+     "surface_or_setting": "wooden stage floor",
+     "build_model": true
+    },
+    {
+     "name": "Pin Button",
+     "subject": "A perfectly round pin-back button with a smooth rim and a large star icon in the center.",
+     "object_class": "accessory",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "yellow button, red star, silver rim",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Balloons",
+     "subject": "Three round balloons tied together at the bottom with a ribbon bow, strings joined at one knot.",
+     "object_class": "toy_game",
+     "category": "1",
+     "pattern": "full_scene",
+     "hero_colors": "red, yellow and orange balloons, purple ribbon bow",
+     "backdrop_colors": "clear cyan sky",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Results Board",
+     "subject": "A rectangular board hung flat on a wall by two hooks, showing three vertical bars of different heights as an icon chart.",
+     "object_class": "paper_document",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "white board, green and gold bars, grey frame",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "painted wall of a hall",
+     "build_model": true
+    },
+    {
+     "name": "Party Popper",
+     "subject": "A cone-shaped party popper with a wide open mouth, a twisted string at the narrow end and bursting confetti.",
+     "object_class": "toy_game",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "orange cone, gold confetti, blue string",
+     "backdrop_colors": "rich green",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Drop Box",
+     "subject": "A tall rectangular ballot drop box with a wide slot at the top front, a rounded lid and a sturdy base standing on the ground.",
+     "object_class": "container",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "blue box, white slot edge, yellow stripe",
+     "backdrop_colors": "warm orange",
+     "surface_or_setting": "paved sidewalk beside the curb",
+     "build_model": true
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Ballot Box",
+     "subject": "A square metal ballot box with a slot in the lid, white papers poking from the slot and a padlock on the front hasp.",
+     "object_class": "container",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "silver box, white papers, red padlock",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Voting Booth",
+     "subject": "A freestanding voting booth with a rectangular frame, solid side panels, a small shelf inside and a closed curtain across the front.",
+     "object_class": "furniture",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "green panels, white curtain, yellow shelf edge",
+     "backdrop_colors": "warm orange",
+     "surface_or_setting": "floor of a community hall in front of a wall",
+     "build_model": true
+    },
+    {
+     "name": "Ballot Paper",
+     "subject": "A rectangular white ballot paper seen from above with a ticked box and a wooden-handled rubber stamp lying on it.",
+     "object_class": "paper_document",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "white paper, wood brown stamp handle, red stamp base",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "light oak desk",
+     "build_model": false
+    },
+    {
+     "name": "Vote Sticker",
+     "subject": "A perfectly round sticker with a ring border and a bold check mark in the center, stuck on a folded sleeve.",
+     "object_class": "accessory",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "white disc, red ring and check mark",
+     "backdrop_colors": "warm yellow",
+     "surface_or_setting": "folded denim fabric",
+     "build_model": true
+    },
+    {
+     "name": "Lectern",
+     "subject": "A wooden lectern with a slanted top, a solid front and a small microphone on a short stem fixed to the top.",
+     "object_class": "furniture",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "wood brown lectern, black microphone, gold front trim",
+     "backdrop_colors": "rich purple",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Ballot Envelope",
+     "subject": "A rectangular white envelope seen from above with a pointed flap and a folded paper corner peeking out of the opening.",
+     "object_class": "paper_document",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "white envelope, blue flap lining, white paper",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "light oak desk",
+     "build_model": false
+    },
+    {
+     "name": "Wall Clock",
+     "subject": "A perfectly round wall clock with tick marks, two hands and a thick frame, hung on a wall.",
+     "object_class": "furniture",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "white face, black hands, red frame",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "painted wall of a polling hall",
+     "build_model": true
+    },
+    {
+     "name": "Megaphone",
+     "subject": "A cone-shaped megaphone with a wide round mouth and a handle grip under the body.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "red cone, white stripe, yellow band",
+     "backdrop_colors": "fresh green",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Radio",
+     "subject": "A retro tabletop radio with a rectangular wooden body, a round speaker grille, a dial and a short antenna fixed to the top.",
+     "object_class": "electronics",
+     "category": "3",
+     "pattern": "plain_gradient",
+     "hero_colors": "wood brown body, cream grille, red dial",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "light oak desk",
+     "build_model": true
+    },
+    {
+     "name": "Vote Calendar",
+     "subject": "A square wall calendar hanging from a nail on its top edge, with a grid of small squares and one square circled with a big circle.",
+     "object_class": "paper_document",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "white page, grey grid, red circle",
+     "backdrop_colors": "rich blue",
+     "surface_or_setting": "painted wall of a hallway",
+     "build_model": true
+    }
+   ]
+  }
+ ],
+ "problems": [],
+ "sensitive": [],
+ "cast": 0
+}

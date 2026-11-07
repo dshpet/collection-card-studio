@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A, the anchor: the deck has thick, dark plank grooves and wood-grain lines across the whole floor. Its background edge density (0.062) and subject edge density (0.221) are both above the real range. The anchor has a hard, dark contour all the way around. B, the barrel: stave seams and hoops are clean, the background deck is quieter, and every value is inside the real range.",
+   "fix": "Soften the deck: fewer, fainter plank seams that fade with distance. Leave no wood-grain lines in the background, and draw no dark line around the anchor."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A, the coin sack: soft silhouette edges and a light dashed seam, typical of real cards. B, the vending machine: a crisp, continuous dark contour around the cabinet and the glass panel, plus speckled droplet edges on the glass. Its outline darkness (0.088) is near the top of the real range.",
+   "fix": "Let the cabinet edge come from light and shade, not a dark rim line. Show glass condensation as a soft haze, not sharp dots."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A, the rowboat: the dock planks have heavy, dark parallel grooves, and the water is covered in many sharp ripple rings. Background edge density is 0.053. B, the galleon: water edges are mostly soft reflection streaks, and the background is quieter at 0.017.",
+   "fix": "Keep the water calm, with only a few soft ripples near the boat. Make the dock plank gaps thin and light, not deep black grooves."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A, the snorkel mask: a thick, dark contour traces the mask frame and the tube, and the background water has many hard-edged caustic cells. B, the water slide: edges are softer, with a regular tile grid and faint wavy wall lines.",
+   "fix": "Remove the dark edge line around the mask and tube. Make the water light patterns soft and blurred."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B, the map with a magnifier: every continent has a thick, dark drawn outline, a dark coastline line runs along the edge, and the fold creases are crisp. Subject edge density (0.18) and background edge density (0.077, wood grain) are both above the real range. A, the treasure map: shapes are filled flat with softer edges, and the table is quieter.",
+   "fix": "Draw the continents as flat colour shapes with no dark border line. Keep fold creases faint. Make the wooden table smooth, with very little grain."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B, the topiary: hundreds of crisp leaf edges, with subject edge density 0.29, above the real range. The background hedge is noisy, with speckled edges. A, the palm: a few clean frond edges and a calm sea and sand.",
+   "fix": "Show the bush as a few large, soft leaf clusters with smooth shading, not hundreds of individually outlined leaves. Blur the background hedge into a smooth, soft wall."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B, the ship's wheel: the deck has dense, sharp plank seams and wood grain, the railing panels are outlined, and every spoke has a hard, double-edged contour. A, the viewer: a light rim against a pale sky, with outline darkness at -0.126, outside the real range. The rest of A's edges are moderate. The lesson pattern of busy, grained floors points to B.",
+   "fix": "Smooth the deck: wide planks with faint seams and no grain lines. Let the wheel's rim edges come from shading, not dark lines."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A, the polaroid: a hard black frame contour, the guitar drawn as a flat silhouette with a crisp outline, and a bright halo with rays behind the card. Outline darkness is -0.296, far outside the real range. B, the buoy: soft volumetric edges and gentle ripples.",
+   "fix": "Remove the glow around the photo. Give the photo a soft drop shadow and no dark border line, and model the guitar with soft shading instead of a hard flat silhouette."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B, the balloons: almost no internal edges and soft, lost silhouettes melting into the clouds. Subject edge density is 0.028, well below the real range. A, the parrot: drawn-looking feather contours, but its values stay inside the real range.",
+   "fix": "Give the balloons crisp, clean outer silhouettes, a sharp highlight edge, and a clear knot and string, so they separate firmly from the clouds."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A, the tricorn hat: a dark hat with a thick, bright gold rim band around every edge. Outline darkness is -0.188, outside the real range, so the edge reads as a bright rim line. B, the jacket: many seams and pocket edges, but they are thin and the values sit near the real range.",
+   "fix": "Make the gold trim narrow, with an edge that follows the shading instead of a bright band tracing the whole silhouette."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A, the spyglass: the leather wrap is a field of fine noisy texture edges, and each brass ring has doubled hard contours. Subject edge density is 0.158, just above the real range. B, the oil lamp: clean, smooth contours on the glass and brass.",
+   "fix": "Make the leather grip a smooth surface with soft shading, not a fine noisy texture. Keep one clean edge per brass ring."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B, the open chest: a light gold rim runs along the lid and box edges against the sky, and outline darkness is -0.127, outside the real range. A, the underwater chest: many crisp bubble rings and coins, but every value is inside the real range.",
+   "fix": "Shade the gold trim on the chest edges so it does not form a bright line against the sky."
+  }
+ ],
+ "pattern": "Generated cards give themselves away on edges in a few ways. They outline shapes with dark contour lines, for example the map's continents and the polaroid frame. They put too many edges in the subject: individually outlined leaves, noisy leather texture, doubled ring contours. Their backgrounds are busy, with sharp plank grooves, wood grain and ripple rings. And they put bright rim bands or glows around the silhouette. A rarer giveaway is the opposite: an over-softened subject with lost silhouettes and almost no internal edges, like the balloons. Real cards keep thin, clean seams and a calm, low-edge background, with the hero's edges coming from shading rather than drawn lines."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the near-black iron anchor sits in front of a white halo that fills the upper middle of the card, and the deck is mid-grey. The hero is much darker than everything around it (gap -0.38, outside the real range). This is the same dark-hero-on-glow layout as the generated camera lessons. B: the barrel is mid-to-dark against a mid sky and a light deck. Its value steps are moderate, and its staves and hoops stay in a middle band.",
+   "fix": "Lighten the anchor's iron to a mid blue-grey with soft highlights. Remove the bright white glow behind it. Keep the background a smooth mid-tone yellow, close to the anchor's lit side."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the sack, coins and purple background all sit in two close mid-light greys. Contrast is flat (rms 0.099, below the real range), and the only darks are a small shadow under the sack. B: the vending machine's side panel is a strong dark block against a mid purple, with a light glass front. That gives clear light, mid and dark groups. B's dark-hero tendency is a mild worry.",
+   "fix": "Give the sack a clearly darker shadow side and a dark cast shadow on the floor. Add a few deep accents in the folds of the neck, so the bag separates from the background."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the sky and sea are one flat mid-grey field. The bright white sails are the only light group, and the hull is a small dark band. The card reads washed out (mean 0.73 above the range, rms 0.109 below). A: the dock, boat interior and water form distinct light, mid and dark masses, and a deep shadow falls under the dock.",
+   "fix": "Darken the sea toward the bottom edge. Give the hull a deep shadow side and a dark reflection in the water. Keep the sails as the single bright shape."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the blue snorkel has dark outlines on a busy mid-grey deck and water. B: the green slide is mid-grey on a striped pink wall above a bright white pool floor. Both cards have workable value groups, and the numbers sit inside the real ranges.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the map is almost all white paper over mid-grey wood, and it has no dark accent at all. It is lighter than the background by a wide margin (gap +0.169, above the range). B: a pale map with one concentrated black accent on the magnifier handle, plus a darker wood surround.",
+   "fix": "Tone the map's paper down to warm cream. Add a darker ink outline and a shadowed curl at the edges. Put one small deep accent, such as the red X or a pin, as the darkest spot."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the topiary is covered evenly in hard dark-and-light speckle from leaf to leaf. Local contrast is busy across the whole hero, with no large lit side and shadow side, and it sits against a dark hedge band. A: the palm is high key with a white sand foreground, but the fronds and trunk have broad, simple light and shadow shapes.",
+   "fix": "Paint the bush as a few large rounded tiers, each with one soft lit side and one shadow side. Keep the leaf texture light and low in contrast instead of speckled dark all over."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the steel binocular viewer is mid-dark against a nearly white, washed-out skyline and sky. The card is very high key (mean 0.759) with a large hero-darker gap (-0.246), both outside the real range. The pole has hard dark-light banding. B: the wheel sits in a balanced mid-key deck-and-sea scene with moderate contrast.",
+   "fix": "Bring the city and sky down to soft mid blues with gentle haze. Lighten the viewer's body so it is not much darker than its surroundings, and use soft rounded highlights instead of hard bands."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the red buoy is a large mid-dark mass against white clouds and light water, so the hero is clearly darker than the background (gap -0.211). The corners are lighter than usual (vignette 0.101, above the range). A: the polaroid is a white card on dark rays. The dark guitar silhouette is inside the photo, and the ray structure matches the real burst backgrounds.",
+   "fix": "Brighten the buoy's red, with a broad lit face and a soft light top. Calm the clouds so they are not brighter than the hero."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the parrot's wings have hard alternating dark and light feather scallops, and the corners do not darken (vignette -0.048, below the real range). B: the balloons form soft, large dark lower halves with simple round highlights, and the cloud bank at the bottom gives a gentle light frame.",
+   "fix": "Soften the feather rows into broader groups, so the wings read as one lit top and one shaded underside. Let the sky darken slightly toward the corners."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the tricorn hat is a near-black mass on a flat, pale cyan burst whose rays barely show. The hero-background gap is extreme (-0.41), and contrast is too hard (rms 0.219). Both are outside the real ranges, and this matches the dark generated camera lessons. B: the light jacket sits on dark green rays with a clear burst pattern, like the real glove card.",
+   "fix": "Paint the hat in a lighter warm charcoal or brown with soft blue-grey highlights on the brim. Make the background rays a clearly alternating mid and light blue, not a flat pale wash."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: a bright glow sits right behind the lamp, and the glass chimney melts into it. Hero and background are almost the same value (gap 0.002), and the corners darken too strongly (vignette 0.144, above the range). A: the telescope has a dark leather band and mid gold against a mid green burst, so it separates by value.",
+   "fix": "Remove the bright halo behind the lamp. Keep the burst even, mid green, and give the glass chimney a darker tinted edge so its outline reads against the background."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the chest's front is a dark wood block against light sand and sky, so the hero is darker than the background (gap -0.144). Its gold trim is near white with hard edges, and the corners darken a bit beyond the range (vignette 0.091). A: the underwater chest sits in a mid-dark blue, with light sand at the bottom and a moderate hero gap.",
+   "fix": "Lighten the chest's wooden front to a warm mid brown with a soft lit face. Tone down the bright gold rims, and keep the sky and sand only slightly lighter than the chest."
+  }
+ ],
+ "pattern": "Generated cards most often put a hero much darker than its background. The object goes near-black or deep mid-grey against a pale, washed-out field, often with a white glow behind it, which pushes lightness_gap strongly negative. They also add hard dark-light banding and speckle across the hero instead of one broad lit side and one shadow side. Real cards keep the hero close in value to a structured mid-key background, such as alternating ray bands or a toned sky, and keep the darkest accents small and placed on purpose."
+}

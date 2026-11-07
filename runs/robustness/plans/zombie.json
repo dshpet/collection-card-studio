@@ -1,0 +1,351 @@
+{
+ "title": "Zombies",
+ "story": "Board the windows and pack the kit: a playful survivor's stash, with the blood and gore left out.",
+ "variants": [
+  {
+   "cards": [
+    {
+     "name": "Flashlight",
+     "subject": "A yellow flashlight: a cylinder body with a wider round head, a glass lens glowing bright white at the front, a red push button on the side, and a soft cone of light.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "yellow body, silver head ring, white glowing lens, red button",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Lantern",
+     "subject": "An oil lantern with a metal base, a wire handle on top, a glass chimney, and a bright fire with a yellow-white glowing core, orange flame tips curling upward, glowing orange light cast around it.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "red metal, clear glass, yellow-white flame, silver handle",
+     "backdrop_colors": "green",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Hand Radio",
+     "subject": "A hand-crank emergency radio: a boxy body with a round speaker grille on the front, a tuning dial, a telescopic antenna rising from the top corner, and a folding crank handle on the side.",
+     "object_class": "electronics",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "red body, silver antenna, black grille, yellow dial",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Road Cone",
+     "subject": "A traffic cone: a tall orange cone with a square base and two white reflective bands.",
+     "object_class": "other",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "orange cone, white bands, black base",
+     "backdrop_colors": "green",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Canned Beans",
+     "subject": "A round tin can with a ring pull on the lid and a paper label showing a simple bean icon, standing upright.",
+     "object_class": "food_drink",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "silver tin, red label, brown bean icon",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "wooden table",
+     "build_model": false
+    },
+    {
+     "name": "Survival Pack",
+     "subject": "A hiking backpack standing upright with two shoulder straps, a flap lid with a buckle, a front pocket, and a small house patch sewn on the front pocket.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "diamonds",
+     "hero_colors": "olive green fabric, tan buckles, white house patch",
+     "backdrop_colors": "yellow",
+     "surface_or_setting": "packed dirt",
+     "build_model": false
+    },
+    {
+     "name": "Water Jug",
+     "subject": "A big rounded plastic water jug standing upright with a screw cap and a molded handle on the shoulder.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "waves",
+     "hero_colors": "clear blue plastic, white cap, light blue water",
+     "backdrop_colors": "orange",
+     "surface_or_setting": "wooden crate lid",
+     "build_model": false
+    },
+    {
+     "name": "Boarded Car",
+     "subject": "A small hatchback car with four wheels, headlights, and three wooden planks nailed across its side windows.",
+     "object_class": "vehicle",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "yellow body, brown planks, black tires, red taillights",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "asphalt road",
+     "build_model": true
+    },
+    {
+     "name": "Boarded Window",
+     "subject": "A square window in a red brick wall with a white frame, three wooden planks nailed across it with metal nails, warm light glowing through the gaps, a crescent moon and a few small stars above.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "brown planks, white frame, grey nails, warm yellow glow",
+     "backdrop_colors": "royal blue night sky",
+     "surface_or_setting": "red brick wall of a house at night",
+     "build_model": true
+    },
+    {
+     "name": "Bunker Door",
+     "subject": "A round steel hatch door seen from outside, with a spoked wheel handle in the middle, thick hinges on the left and a yellow warning stripe ring around the frame.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "grey steel, yellow stripe, red wheel",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "concrete wall of a bunker",
+     "build_model": true
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Lantern",
+     "subject": "An oil lantern with a metal base, a wire handle on top, a glass chimney, and a bright fire with a yellow-white glowing core, orange flame tips curling upward, glowing orange ends on the wick, and warm orange light cast around it.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "red metal, clear glass, yellow-white flame, silver handle",
+     "backdrop_colors": "green",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Binoculars",
+     "subject": "Binoculars: two parallel barrels joined by a center hinge, with a focus wheel in the middle and a round lens on each front end.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "black body, blue glass lenses, grey wheel",
+     "backdrop_colors": "yellow",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Slime Jar",
+     "subject": "A round glass jar with a cork stopper, filled with glowing green goo and a few bubbles, standing upright.",
+     "object_class": "container",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "clear glass, bright green goo, light brown cork",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Flashlight",
+     "subject": "A red flashlight lying on a wooden crate lid: a cylinder body with a round head, a bright lens and a black grip ring.",
+     "object_class": "tool",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "red body, black grip ring, silver head, white lens",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "wooden crate lid",
+     "build_model": true
+    },
+    {
+     "name": "Bean Cans",
+     "subject": "Three round tin cans stacked in a pyramid, two below and one on top, each with a ring pull and a red label with a bean icon.",
+     "object_class": "food_drink",
+     "category": "3",
+     "pattern": "diamonds",
+     "hero_colors": "silver tin, red label, brown bean icon",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "metal shelf",
+     "build_model": false
+    },
+    {
+     "name": "School Bus",
+     "subject": "A school bus with a long boxy body, six side windows with planks nailed across, a flat front with headlights and four wheels.",
+     "object_class": "vehicle",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "yellow body, brown planks, black tires, red lights",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "asphalt road",
+     "build_model": true
+    },
+    {
+     "name": "Camp Tent",
+     "subject": "A small A-frame tent, closed, with a triangular front, a zip door flap in the center and a pegged-down base.",
+     "object_class": "building_place",
+     "category": "3",
+     "pattern": "diamonds",
+     "hero_colors": "olive green fabric, tan pegs, orange door flap",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "grass",
+     "build_model": true
+    },
+    {
+     "name": "Boarded Window",
+     "subject": "A wooden-framed house window with three planks nailed across it and a warm lamp glow between them, a crescent moon and stars above.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "brown planks, white frame, warm yellow glow, grey nails",
+     "backdrop_colors": "royal blue night sky",
+     "surface_or_setting": "red brick wall",
+     "build_model": true
+    },
+    {
+     "name": "Padlocked Door",
+     "subject": "A wooden door seen from outside with hinges on the left, a handle on the right, and a thick silver chain looped through the handle and closed with a big padlock.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "brown wood, silver chain, gold padlock",
+     "backdrop_colors": "blue",
+     "surface_or_setting": "white stone wall doorway",
+     "build_model": true
+    },
+    {
+     "name": "Warning Sign",
+     "subject": "A triangular sign with a bold exclamation mark icon, bolted to a short grey metal post planted in the ground.",
+     "object_class": "other",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "yellow sign, black icon, grey post",
+     "backdrop_colors": "blue",
+     "surface_or_setting": "gravel ground beside a road",
+     "build_model": true
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Flashlight",
+     "subject": "An orange flashlight: a cylinder body with a wider round head, a glass lens glowing white and a soft cone of light, with a switch on the side.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "orange body, silver head, white lens, blue switch",
+     "backdrop_colors": "green",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Megaphone",
+     "subject": "A handheld megaphone: a wide flared cone, a short rounded back with a pistol-style grip handle underneath and a trigger button on the handle.",
+     "object_class": "electronics",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "white cone, black grip, red stripe around the cone rim",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Survival Pack",
+     "subject": "A backpack with two shoulder straps, a flap lid with a buckle, a front pocket and a small house patch on the pocket.",
+     "object_class": "container",
+     "category": "1",
+     "pattern": "waves",
+     "hero_colors": "orange fabric, tan buckles, white house patch",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Bean Can",
+     "subject": "A round tin can with a ring pull on the lid and a label showing a simple bean icon, standing upright.",
+     "object_class": "food_drink",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "silver tin, red label, brown bean icon",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Slime Jar",
+     "subject": "A round glass jar with a cork stopper, filled with glowing green goo and a few bubbles, standing upright.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "clear glass, bright green goo, light brown cork",
+     "backdrop_colors": "yellow",
+     "surface_or_setting": "wooden shelf",
+     "build_model": false
+    },
+    {
+     "name": "Boarded Car",
+     "subject": "A small hatchback car with four wheels, headlights, and wooden planks nailed across its side windows.",
+     "object_class": "vehicle",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "yellow body, brown planks, black tires, red taillights",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "asphalt road",
+     "build_model": true
+    },
+    {
+     "name": "Road Cone",
+     "subject": "A traffic cone: a tall orange cone with a square base and two white reflective bands.",
+     "object_class": "other",
+     "category": "3",
+     "pattern": "diamonds",
+     "hero_colors": "orange cone, white bands, black base",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "asphalt road",
+     "build_model": false
+    },
+    {
+     "name": "Boarded Window",
+     "subject": "A window in a log cabin wall with a white frame, three wooden planks nailed across it and nail heads showing, a lit lantern hanging on a hook beside it, and a crescent moon and stars above.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "brown planks, white frame, grey nails, warm yellow glow",
+     "backdrop_colors": "royal blue night sky",
+     "surface_or_setting": "log cabin wall at night",
+     "build_model": true
+    },
+    {
+     "name": "Warning Sign",
+     "subject": "A triangular sign with a bold exclamation mark icon, bolted to a short grey metal post planted in the ground.",
+     "object_class": "other",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "yellow sign, black icon, grey post",
+     "backdrop_colors": "blue",
+     "surface_or_setting": "gravel ground",
+     "build_model": true
+    },
+    {
+     "name": "Bunker Door",
+     "subject": "A round steel hatch door seen from outside, with a spoked wheel handle in the middle, thick hinges on the left and a yellow warning stripe ring around the frame.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "grey steel, yellow stripe, red wheel",
+     "backdrop_colors": "green",
+     "surface_or_setting": "concrete wall of a bunker",
+     "build_model": true
+    }
+   ]
+  }
+ ],
+ "problems": [],
+ "sensitive": [],
+ "cast": 0
+}

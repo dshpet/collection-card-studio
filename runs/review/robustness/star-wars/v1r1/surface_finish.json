@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the yellow player is smooth, soft matte rubber with a gentle sheen, and the earbuds are plain soft plastic, like the soft surfaces on the real cards. B: the satellite's gold body is covered in sharp crinkled foil facets, the solar panels have a crisp grid and the chrome dish is bright. Detail, micro-texture and gloss on B are all above the real range.",
+   "fix": "Draw the satellite body as a smooth gold box with a few soft broad folds instead of many sharp foil crinkles. Make the panels a simple soft blue grid and keep the chrome satin, not mirror-bright."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the helmet shell is smooth soft-white plastic and the gold visor has one broad reflection. That matte-shell, glossy-visor mix matches the real cards. B: the jacket fabric is smooth and soft, but the badges and buttons have crisp, glossy, sharp-edged rims, and the sash is the same clean plastic as the coat. Micro-texture is at the top of the real range. It is a weak call.",
+   "fix": "Give the jacket a soft matte cotton look with slightly blurred edges. Make the badges flat embroidered patches without glossy rims."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the vault door has brushed-metal streaks, small rivets and a few paint chips on the orange wheel, and stays within the real micro-texture range. B: the blue door has strong painted wood-grain strokes and the wreath has many crisp, glossy flowers. The ivy is dense, with every leaf highlighted. Gloss share is 0.51, far above real cards (max 0.21), and micro-texture is 0.045 against a real maximum of 0.031.",
+   "fix": "Paint the door as a smooth matte blue panel with only faint grain. Use fewer, larger, softly shaded flowers and leaves, without a shiny highlight on every petal and leaf."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both cards are above the real micro-texture range. A: the paper map has soft fold creases and the wood grain is broad, and the magnifier glass is glossy against matte paper. B: the navy star map has a mottled noise film across the whole fabric, with crisp fold lines and sharp-edged raised stars. There is almost no highlight, so the whole surface reads as one matte plastic.",
+   "fix": "Make the star map smooth, clean dark-blue cloth with two or three soft fold shadows and no speckled noise. Give the gold stars a small soft shine."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the flamingo float is soft, blurred, glossy pink vinyl with a faint seam row at the base. It is smoother than the real range but matches the soft finish of the real cards. B: the fruit plate is full of crisp, sharp water droplets, each strawberry seed is picked out and the glass plate has hard rim highlights. These are small toy details at uniform sharpness, and gloss is higher.",
+   "fix": "Remove most of the water droplets and soften the fruit surfaces. Keep the strawberry seeds faint and the glass plate edge softly lit."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the vending machine is soft-focus blue plastic with a fine condensation dot pattern on the glass, a satin chrome handle and soft can labels. B: the spaceship is all the same dull grey clay, with matte hull, wings and engines alike. It has small crisp screw plates, and the yellow canopy is the only glossy part. One material across the whole hull is not the material mix of the real cards.",
+   "fix": "Make the hull glossy white-painted metal with soft highlights along the top. Make the engine nozzles darker metal and let the cockpit glass shine."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: this street lamp matches the real anchor card, with soft dark-green painted metal and a softly glowing frosted glass shade. B: the cooler has crisp chrome can tops with sharp pull-tabs, glassy ice cubes and grainy sand. Its highlight share (0.213) is above the real range. The red plastic is uniformly glossy.",
+   "fix": "Soften the can tops into simple satin discs and make the ice softer and less glassy. Give the red cooler a mostly matte plastic finish with one broad soft highlight."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the fan grill is many thin wires (which raises the micro-texture number), the chrome hub is soft and satin, and the curtain is soft cloth. B: the control panel is brushed sheet metal with crisp corner screws, vent slots, riveted floor plates and red buttons in sharp chrome bezels. That is the small-hardware detail the lessons show on generated cards.",
+   "fix": "Remove the screws, vent slots and floor rivets. Draw the panel as smooth satin grey metal with soft rounded buttons."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the boxing gloves are smooth red leather with almost no gloss (0.015) and no stitching. Detail and micro-texture are below the real range, so the leather reads as smoothed-away rubber, and the table has large decorative grain swirls. B: the foil pouch has soft crinkles and a satin metallic sheen, and is within the real range.",
+   "fix": "Draw the gloves as soft leather with a gentle sheen on the knuckles, faint seam lines and a thin stitched cuff. Make the table grain fine and quiet."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 5,
+   "difference": "B is the real computer card from the lessons, with soft off-white plastic and a fine desk grain. A: the rover is a blank, uniformly glossy white block with a hard specular sweep and chrome posts. Its highlight share (0.381) is more than double the real maximum, and there is no panel or seam detail.",
+   "fix": "Make the rover body matte white plastic with a few soft panel seams. Limit highlights to a thin rim on the top edge and keep the wheels matte rubber."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the sneakers have a fine perforated mesh dot pattern over the blue upper, crisp laces and glossy rubber soles. Gloss is at the top of the real range and micro-texture is near it. B: the mittens are soft, smooth white padded material with gentle quilting, and are within the real range.",
+   "fix": "Draw the upper as smooth soft blue fabric with only a hint of mesh, and keep the laces matte. Make the sole satin rather than lacquered."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "Both cards have a highlight share above the real range. A: the airplane is soft, slightly blurred white paint with soft window shapes. B: the rocket has crisp screwed panel plates, a mirror-chrome porthole ring and hard-edged glossy red fins. That is small hardware drawn at the same sharpness everywhere.",
+   "fix": "Remove the screwed panel plates and soften the porthole rim to satin. Give the rocket body and fins a softer, less lacquered shine."
+  }
+ ],
+ "pattern": "Generated cards add small hardware and surface detail (screws, rivets, vent slots, foil crinkles, mesh dots, water droplets, pull-tabs) and draw it all at the same sharpness. They also make whole objects equally lacquered or equally flat clay. Real cards have softer, slightly blurred surfaces, fewer and larger details, and a mix of matte bodies with one or two glossy parts."
+}

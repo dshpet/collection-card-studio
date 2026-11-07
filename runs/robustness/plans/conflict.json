@@ -1,0 +1,352 @@
+{
+ "title": "Sci-Fi",
+ "story": "Gadgets and gear for a cozy trip out among the stars.",
+ "variants": [
+  {
+   "cards": [
+    {
+     "name": "Flying Saucer",
+     "subject": "A classic flying saucer in flight: a perfectly round, symmetrical disc with a smooth dome on top, a row of round lights around the rim and a rounded underside, no landing legs.",
+     "object_class": "vehicle",
+     "category": "1",
+     "pattern": "full_scene",
+     "hero_colors": "silver grey with pale grey glass dome and a small accent of yellow rim lights",
+     "backdrop_colors": "clear sky blue",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Rocket",
+     "subject": "A rocket flying upward: a symmetrical white cylinder with a pointed red nose cone, one round porthole window, four red fins around the base, and a bright fire with a yellow-white glowing core, orange flame tips curling downward and warm orange light cast on the body.",
+     "object_class": "vehicle",
+     "category": "1",
+     "pattern": "full_scene",
+     "hero_colors": "white body, red nose cone and fins, grey window, orange flame",
+     "backdrop_colors": "clear cyan",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Space Helmet",
+     "subject": "A round white astronaut helmet with a wide curved gold visor, a thick ring collar at the neck and a small side light.",
+     "object_class": "clothing",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "white helmet with a gold visor and a small red light",
+     "backdrop_colors": "fresh grass green",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Satellite",
+     "subject": "A satellite: a boxy gold foil body with two flat rectangular solar panels attached on rods to opposite sides and a round dish on top.",
+     "object_class": "electronics",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "gold foil body, dark blue panels, silver dish",
+     "backdrop_colors": "warm pink",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Glow Flask",
+     "subject": "A conical glass lab flask with a narrow neck, filled halfway with glowing green liquid and closed with a cork stopper.",
+     "object_class": "container",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "clear glass, bright green liquid, light brown cork",
+     "backdrop_colors": "rich purple",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Star Map",
+     "subject": "A flat rectangular chart lying face up, with dotted lines joining small star icons and a few circles.",
+     "object_class": "paper_document",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "deep blue paper with white lines and a yellow star accent",
+     "backdrop_colors": "warm orange",
+     "surface_or_setting": "a brushed metal table",
+     "build_model": false
+    },
+    {
+     "name": "Moon Rover",
+     "subject": "A moon rover: a white boxy body on six black wheels, a small dish antenna on a mast fixed to the top and a front camera box.",
+     "object_class": "vehicle",
+     "category": "3",
+     "pattern": "concentric_rings",
+     "hero_colors": "white body, black wheels, small orange dish",
+     "backdrop_colors": "clear sky blue",
+     "surface_or_setting": "pale sand",
+     "build_model": true
+    },
+    {
+     "name": "Radar Dish",
+     "subject": "A large round white radar dish tilted upward on a thick grey pedestal bolted to a round concrete pad, with a short feed arm in front of the dish.",
+     "object_class": "electronics",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "white dish, grey pedestal, small orange feed tip",
+     "backdrop_colors": "clear cyan",
+     "surface_or_setting": "a round concrete pad",
+     "build_model": true
+    },
+    {
+     "name": "Control Panel",
+     "subject": "A rectangular grey metal panel fixed to a wall with a small round screen, two rows of round buttons, three sliders and one big round button.",
+     "object_class": "electronics",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "grey metal with a big red button",
+     "backdrop_colors": "bright yellow",
+     "surface_or_setting": "a smooth metal spaceship wall",
+     "build_model": true
+    },
+    {
+     "name": "Round Hatch",
+     "subject": "A perfectly round silver door set in a metal wall, seen from the corridor side, with hinges on the left, a wheel handle on the right and a ring frame with bolts.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "silver with a yellow painted ring around the frame",
+     "backdrop_colors": "rich purple",
+     "surface_or_setting": "a smooth metal spaceship wall",
+     "build_model": true
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Flying Saucer",
+     "subject": "A flying saucer in flight: a perfectly round, symmetrical disc with a glass dome on top and a ring of round lights under the rim, no landing legs.",
+     "object_class": "vehicle",
+     "category": "1",
+     "pattern": "full_scene",
+     "hero_colors": "silver with a clear glass dome and red rim lights",
+     "backdrop_colors": "clear sky blue",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Rocket",
+     "subject": "A rocket flying upward: a symmetrical orange cylinder with a white pointed nose cone, a round porthole, four white fins around the base, and a bright fire with a yellow-white glowing core, orange flame tips curling downward and warm orange light cast on the body.",
+     "object_class": "vehicle",
+     "category": "1",
+     "pattern": "full_scene",
+     "hero_colors": "orange body, white nose cone and fins, grey window, orange flame",
+     "backdrop_colors": "clear cyan",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Space Helmet",
+     "subject": "A round silver astronaut helmet with a wide curved visor, a thick ring collar and two small side knobs.",
+     "object_class": "clothing",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "silver helmet with an orange visor",
+     "backdrop_colors": "fresh grass green",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Moon Boots",
+     "subject": "A pair of chunky puffy space boots, both the same, with thick rounded toes and wide ridged soles.",
+     "object_class": "clothing",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "light grey boots with orange soles",
+     "backdrop_colors": "rich pink",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Moon Rover",
+     "subject": "A moon rover: a boxy body on four wheels, an open front seat area, a small dish antenna on a mast fixed to the back.",
+     "object_class": "vehicle",
+     "category": "3",
+     "pattern": "plain_gradient",
+     "hero_colors": "yellow body, black wheels, silver dish",
+     "backdrop_colors": "clear sky blue",
+     "surface_or_setting": "pale sand",
+     "build_model": true
+    },
+    {
+     "name": "Microscope",
+     "subject": "A lab microscope: a heavy round base, a curved arm, a tube with an eyepiece on top, a round lens turret and a flat stage.",
+     "object_class": "tool",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "white body with a black eyepiece and a small gold knob",
+     "backdrop_colors": "rich purple",
+     "surface_or_setting": "a white lab bench",
+     "build_model": true
+    },
+    {
+     "name": "Glow Flask",
+     "subject": "A round-bottomed glass flask with a long neck holding glowing green liquid, closed with a cork stopper.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "rays",
+     "hero_colors": "clear glass, bright green liquid, light brown cork",
+     "backdrop_colors": "warm orange",
+     "surface_or_setting": "a white lab bench",
+     "build_model": false
+    },
+    {
+     "name": "Radar Dish",
+     "subject": "A round white radar dish tilted upward on a thick grey pedestal fixed to a flat roof deck, with a short feed arm in front.",
+     "object_class": "electronics",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "white dish, grey pedestal, small red feed tip",
+     "backdrop_colors": "clear cyan",
+     "surface_or_setting": "a flat concrete roof deck",
+     "build_model": true
+    },
+    {
+     "name": "Dome",
+     "subject": "A white observatory dome: a round half-sphere with a narrow slit opening, resting on a short round cylinder wall with a small door.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "white dome, grey base, small orange door",
+     "backdrop_colors": "clear sky blue",
+     "surface_or_setting": "short green grass at its foot",
+     "build_model": true
+    },
+    {
+     "name": "Porthole",
+     "subject": "A perfectly round window in a metal wall with a thick ring frame and eight bolts, showing small star icons outside.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "silver ring frame with dark glass and yellow stars",
+     "backdrop_colors": "rich pink",
+     "surface_or_setting": "a smooth metal spaceship wall",
+     "build_model": true
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Flying Saucer",
+     "subject": "A flying saucer in flight: a perfectly round, symmetrical disc with a dome on top and a ring of round lights under the rim, no landing legs.",
+     "object_class": "vehicle",
+     "category": "1",
+     "pattern": "full_scene",
+     "hero_colors": "silver with a pale grey dome and pink lights",
+     "backdrop_colors": "clear cyan",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Rocket",
+     "subject": "A rocket flying upward: a symmetrical white cylinder with a green pointed nose cone, a round porthole, four green fins around the base, and a bright fire with a yellow-white glowing core, orange flame tips curling downward and warm orange light cast on the body.",
+     "object_class": "vehicle",
+     "category": "1",
+     "pattern": "full_scene",
+     "hero_colors": "white body, green nose cone and fins, grey window, orange flame",
+     "backdrop_colors": "clear sky blue",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Satellite",
+     "subject": "A satellite: a boxy silver body with two flat rectangular solar panels attached on rods to opposite sides and a small round dish on top.",
+     "object_class": "electronics",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "silver body and dish, dark blue panels",
+     "backdrop_colors": "warm yellow",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Space Helmet",
+     "subject": "A round white astronaut helmet with a wide curved gold visor and a thick ring collar.",
+     "object_class": "clothing",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "white helmet with a gold visor",
+     "backdrop_colors": "rich purple",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Moon Rover",
+     "subject": "A moon rover: a boxy body on six wheels with a small dish antenna on a mast fixed to the top.",
+     "object_class": "vehicle",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "orange body, black wheels, silver dish",
+     "backdrop_colors": "clear cyan",
+     "surface_or_setting": "pale sand",
+     "build_model": true
+    },
+    {
+     "name": "Circuit Board",
+     "subject": "A flat rectangular circuit board lying face up with thin gold lines, square black chips and small round dots.",
+     "object_class": "electronics",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "green board with black chips and gold lines",
+     "backdrop_colors": "warm orange",
+     "surface_or_setting": "a white lab bench",
+     "build_model": false
+    },
+    {
+     "name": "Microscope",
+     "subject": "A lab microscope: a heavy round base, a curved arm, a tube with an eyepiece on top, a round lens turret and a flat stage.",
+     "object_class": "tool",
+     "category": "3",
+     "pattern": "rays",
+     "hero_colors": "white body with a black eyepiece and a small gold knob",
+     "backdrop_colors": "rich pink",
+     "surface_or_setting": "a white lab bench",
+     "build_model": true
+    },
+    {
+     "name": "Control Panel",
+     "subject": "A rectangular grey metal panel fixed to a wall with a round screen, rows of round buttons, two sliders and one big round button.",
+     "object_class": "electronics",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "grey metal with a big red button",
+     "backdrop_colors": "clear cyan",
+     "surface_or_setting": "a smooth metal spaceship wall",
+     "build_model": true
+    },
+    {
+     "name": "Solar Panel",
+     "subject": "A flat rectangular solar panel with a grid of cells in a silver frame, tilted on a short post set in the ground.",
+     "object_class": "electronics",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "dark blue cells with a silver frame and post",
+     "backdrop_colors": "bright yellow",
+     "surface_or_setting": "short green grass",
+     "build_model": true
+    },
+    {
+     "name": "Radar Dish",
+     "subject": "A round white radar dish tilted upward on a thick grey pedestal bolted to a round concrete pad, with a short feed arm in front.",
+     "object_class": "electronics",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "white dish, grey pedestal, small orange feed tip",
+     "backdrop_colors": "clear sky blue",
+     "surface_or_setting": "a round concrete pad",
+     "build_model": true
+    }
+   ]
+  }
+ ],
+ "problems": [
+  "versions 1 and 3 share too many objects: keep only the most iconic"
+ ],
+ "cast": 0
+}

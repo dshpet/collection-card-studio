@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (yellow player and earbuds): wide, even contours and a few large inner rims around the button and the earbud stems. B (satellite): a small hero cut up by a tight grid of crisp cell lines on both solar panels, plus wrinkle edges all over the gold foil. Its subject edge density is 0.267, well above the real range of 0.157.",
+   "fix": "Draw the solar panels as a few large, softly shaded blue panels with only faint dividing lines. Make the gold foil smooth with two or three broad folds. Make the satellite larger so it has fewer, larger shapes."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (helmet): large smooth shell with soft contours. The only crisp edges are the visor rim and a few rivets. B (scout jacket): many crisp seams and pocket flaps, a hard-edged sash with four badge rings, and a dark contour around the sleeves and collar. Its subject density is 0.159, just above the real range.",
+   "fix": "Make the jacket out of fewer, larger soft shapes. Show one or two pockets with gentle seams. Let the sleeve and collar edges fade softly into the background with no dark rim line."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (vault door): crisp rivets and rings, but the edges sit on a few bold circles and the wall panels are simple. B (door with wreath): the ivy frame is a dense mat of leaf outlines, and wood-grain strokes cover the door panels. The wreath flowers are all edged equally crisp, with no focus. Subject density is 0.342 against a real maximum of 0.270.",
+   "fix": "Paint the ivy as a few large leaf clusters with soft, merged edges. Make the door panels plain and smooth with no wood grain. Keep the crispest edges only on the wreath and bow."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (world map with magnifier): every coastline has a dark, wiggly outline. Fold creases and wave marks add more lines, and the background planks are busy. Subject density is 0.18 and background density is 0.077, both above the real range. B (star chart): a simple, bold border, sparse star and line marks, and calmer planks.",
+   "fix": "Draw the continents as flat colour shapes with no dark coastline outline. Keep only two soft fold creases. Make the wooden table blurrier and less detailed behind the map."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (flamingo float): broad, soft body contours with few inner edges. Subject density is 0.05; the busy edges are in the pool caustics, not on the hero. B (fruit plate): many small crisp edges on the seeds, droplets, strawberry pits and grape rims. The glass plate rim also has a sharp double contour, so edges are evenly crisp everywhere.",
+   "fix": "Remove the water droplets and the strawberry seed specks. Show the watermelon seeds as a few soft dark shapes. Give the plate rim one soft highlight instead of a hard double line."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (vending machine): thin, precise panel lines and a soft outer edge against the gradient. B (spaceship): a dark, uniform contour runs around the hull, wings and engines. Outline darkness is 0.123, above the real maximum of 0.106. The bolted hatch and wing panels are drawn as grooved seams on an empty flat backdrop.",
+   "fix": "Let the ship's silhouette separate from the background by light and colour only, with no dark rim. Draw the panel seams as fine, faint lines."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A (street lamp) is the lamp from the real reference sheet: soft outer edge with the crispest edges on the glass frame. B (beach cooler): a heavy dark contour around the lid, handle and cow emblem. The sand is speckled with small dot edges, and the clouds have outlined rims.",
+   "fix": "Remove the dark line around the cooler, lid and emblem, and let the red body meet the sky through shading. Make the sand a smooth soft gradient with no grain specks."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (fan): the grille's spokes give a high subject density of 0.302, but they are the focal detail, and the curtain and window are soft and loose. B (control panel): every element has a crisp dark contour, including the screws, vents, wall seams, floor tiles, buttons and gauge ticks. Outline darkness is 0.156, above the real maximum of 0.148. There is no edge hierarchy between the hero and the wall.",
+   "fix": "Draw the wall behind the panel as a soft, plain yellow surface with no screws, vents or seams. Make the floor a smooth blur. Keep the sharp detail only on the gauge and levers."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (boxing gloves): very soft, rounded forms. The only crisp marks are the thumb creases, and the silhouette melts into the background. B (apple pouch): a crisp, continuous dark contour around the whole pouch and the apple decal. The foil is covered in small crinkle edges, and the cap has a fine ribbed rim.",
+   "fix": "Let the pouch edge be defined by its silver highlight, not a dark line. Show the foil with two or three broad soft folds instead of many crinkles. Soften the outline of the apple sticker."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 5,
+   "difference": "B (computer) is the real computer card from the lessons. A (rover): heavy dark rings around each wheel and hub. A dark, even contour runs around the box body, giving outline darkness of 0.147, far above the real maximum of 0.097. The plain sand has hardly any edges, so the edge weight sits in drawn rims.",
+   "fix": "Remove the dark rings around the wheels and body. Shape the tyres and box with soft shading and highlights. Add a gentle soft-focus gradient in the sand and sky."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (sneakers): dense micro edges from the mesh texture, the laces and stripe outlines. A hard, straight floor-wall horizon line cuts behind them. Subject density is 0.227, at the top of the real range. B (mittens): a few large padded segments with soft seams and clean, moderate contours.",
+   "fix": "Paint the shoe upper as smooth fabric with no mesh pattern. Merge the laces into a few soft loops. Blend the floor into the wall with a soft gradient instead of a sharp line."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (airplane): a dark contour around the fuselage and wings. A row of crisply ringed windows. The clouds are filled with swirly line texture, so background density is 0.018, above the real maximum. B (rocket): a softer silhouette with a few panel plates, and clouds with soft edges.",
+   "fix": "Paint the clouds as soft, puffy shapes with no inner swirl lines. Drop the dark line around the plane and let the white body meet the sky through shading."
+  }
+ ],
+ "pattern": "Generated cards spread crisp edges evenly over everything. The usual signs: a dark, even rim line around the silhouette and around each sub-part (wheels, panels, emblems). Many small sharp details such as screws, vents, mesh, droplets, seeds, crinkles and leaf mats. Textured backgrounds: wood grain, sand specks, swirly cloud lines. Real cards keep a few large soft-edged forms, let the silhouette meet the background through shading, and keep the crispest edges at the focal detail."
+}

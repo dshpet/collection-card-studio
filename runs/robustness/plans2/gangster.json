@@ -1,0 +1,361 @@
+{
+ "title": "Gangsters",
+ "story": "Shiny black cars, secret doors and a big night out in the roaring twenties.",
+ "declined": [
+  "tommy gun: no weapons",
+  "cigar: tobacco counts as drugs",
+  "whiskey: alcohol may upset players"
+ ],
+ "variants": [
+  {
+   "cards": [
+    {
+     "name": "Fedora",
+     "subject": "A charcoal grey felt fedora with a pinched crown, a dent along the top and a wide brim, with a ribbon band around the base of the crown.",
+     "object_class": "accessory",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "charcoal grey, red band",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Money Bag",
+     "subject": "A round tan cloth sack with a puffy top tied shut with a cord, standing upright and slightly bulging.",
+     "object_class": "container",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "tan, brown cord",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Saxophone",
+     "subject": "A curved golden brass saxophone with a mouthpiece on a neck at the top, a row of round keys down the body and a flared bell at the bottom.",
+     "object_class": "music_instrument",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "gold brass, small white key pearls",
+     "backdrop_colors": "blue",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Pocket Watch",
+     "subject": "A perfectly round gold pocket watch with a white face, tick marks, two hands, a crown on top with a ring and a short chain looped through it.",
+     "object_class": "accessory",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "gold, white face, small blue second hand",
+     "backdrop_colors": "green",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Candle Phone",
+     "subject": "A black candlestick telephone with a tall slim stem on a round base, a round dial and a receiver resting on a side hook attached to the stem.",
+     "object_class": "electronics",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "black, brass dial, red cord",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Getaway Car",
+     "subject": "A glossy black 1920s sedan with four round wheels with cream tires, two round headlights, running boards and a tall boxy cabin, standing on a street.",
+     "object_class": "vehicle",
+     "category": "3",
+     "pattern": "rays",
+     "hero_colors": "black, chrome, cream tires, red pinstripe",
+     "backdrop_colors": "yellow",
+     "surface_or_setting": "grey cobblestone street",
+     "build_model": true
+    },
+    {
+     "name": "Gramophone",
+     "subject": "A wooden-box phonograph with a round turntable and black record on top, a curved arm and a big flared brass horn attached on a stem, standing on a table.",
+     "object_class": "electronics",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "wood brown, brass, black record",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "dark polished wood table",
+     "build_model": true
+    },
+    {
+     "name": "Cash Case",
+     "subject": "An open brown leather suitcase with two gold clasps, lid hinged at the back, packed full of banded stacks of green cash.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "diamonds",
+     "hero_colors": "brown, green cash, gold clasps",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "dark polished wood table",
+     "build_model": true
+    },
+    {
+     "name": "Hidden Door",
+     "subject": "A closed dark green wooden door seen from the street, with a small brass sliding peephole hatch at eye height and a brass handle opposite the hinges, set in a brick wall.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "dark green, brass",
+     "backdrop_colors": "orange",
+     "surface_or_setting": "red brick wall of an alley",
+     "build_model": true
+    },
+    {
+     "name": "Street Lamp",
+     "subject": "A tall black iron street lamp with a fluted post on a round base and a glass lantern on top glowing warm yellow.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "black iron, glowing yellow glass, green trim",
+     "backdrop_colors": "violet turning pink at the horizon, with a few small stars",
+     "surface_or_setting": "grey cobblestone sidewalk at dusk",
+     "build_model": true
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Spats",
+     "subject": "A pair of black and white two-tone wingtip shoes with laces and white ankle covers, side by side.",
+     "object_class": "clothing",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "black, white, red laces",
+     "backdrop_colors": "green",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Candle Phone",
+     "subject": "A black candlestick telephone with a slim stem on a round base, a round dial and a receiver on a side hook attached to the stem.",
+     "object_class": "electronics",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "black, brass dial, red cord",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Fedora",
+     "subject": "A tan felt fedora with a pinched crown and wide brim and a dark brown band around the crown base, standing on the floor.",
+     "object_class": "clothing",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "tan, brown band, small blue feather",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Money Bag",
+     "subject": "A round tan cloth sack with a puffy top tied shut with a cord, standing upright and slightly bulging, with a small house pictogram printed on the front.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "waves",
+     "hero_colors": "tan, brown cord, brown house pictogram",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "dark polished wood table",
+     "build_model": false
+    },
+    {
+     "name": "Dice",
+     "subject": "A pair of white six-sided cubes with rounded corners and black dots, sitting side by side.",
+     "object_class": "toy_game",
+     "category": "3",
+     "pattern": "diamonds",
+     "hero_colors": "white, black dots, small red edge",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "green felt card table",
+     "build_model": false
+    },
+    {
+     "name": "Desk Lamp",
+     "subject": "A banker's desk lamp with a round brass base, a slim brass stem and a curved green glass shade glowing with warm light.",
+     "object_class": "electronics",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "brass, green glass shade",
+     "backdrop_colors": "orange",
+     "surface_or_setting": "dark polished wood table",
+     "build_model": true
+    },
+    {
+     "name": "Getaway Car",
+     "subject": "A glossy black 1920s sedan with four round wheels with cream tires, round headlights, running boards and a boxy cabin, parked at a curb.",
+     "object_class": "vehicle",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "black, chrome, cream tires, red pinstripe",
+     "backdrop_colors": "clear cyan sky",
+     "surface_or_setting": "grey cobblestone street beside a curb",
+     "build_model": true
+    },
+    {
+     "name": "Wall Safe",
+     "subject": "A square steel safe door set flush into a wood-paneled wall, with a round gold combination dial and a straight handle on the right opposite the hinges on the left.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "steel grey, gold dial",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "dark wood-paneled wall of an office",
+     "build_model": true
+    },
+    {
+     "name": "Piano",
+     "subject": "An upright wooden piano with a closed lid, a row of white and black keys, gold pedals and a matching bench, standing on the floor against a wall.",
+     "object_class": "music_instrument",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "dark brown, white keys, gold pedals",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "wooden floor against a plain wall",
+     "build_model": true
+    },
+    {
+     "name": "Hydrant",
+     "subject": "A red fire hydrant with a rounded dome top, a thick body, two side nozzles with caps and a wide base bolted to the sidewalk.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "red, small silver caps",
+     "backdrop_colors": "rich royal blue night sky with a few small stars and a crescent moon",
+     "surface_or_setting": "grey concrete sidewalk beside a curb",
+     "build_model": true
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Fedora",
+     "subject": "A brown felt fedora with a pinched crown and wide brim, with a black ribbon band around the base of the crown.",
+     "object_class": "accessory",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "brown, black band, small yellow feather",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Trumpet",
+     "subject": "A golden brass trumpet with a mouthpiece, three round valve buttons on top, coiled tubing and a flared bell.",
+     "object_class": "music_instrument",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "gold brass, small white valve tops",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Press Camera",
+     "subject": "A boxy black press camera with a round glass lens, a bellows front, a silver flash reflector on top and a side handle.",
+     "object_class": "electronics",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "black, silver, small red button",
+     "backdrop_colors": "yellow",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Money Bag",
+     "subject": "A round tan cloth sack with a puffy top tied shut with a cord, standing upright and slightly bulging, on the floor.",
+     "object_class": "container",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "tan, brown cord",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Vault Safe",
+     "subject": "A square steel safe with a round combination dial, a straight handle on the right opposite the hinges on the left, and four short feet.",
+     "object_class": "container",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "steel grey, gold dial",
+     "backdrop_colors": "green",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Candle Phone",
+     "subject": "A black candlestick telephone with a slim stem on a round base, a round dial and a receiver on a side hook attached to the stem.",
+     "object_class": "electronics",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "black, gold dial, gold cord",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "dark polished wood table",
+     "build_model": true
+    },
+    {
+     "name": "Getaway Car",
+     "subject": "A glossy black 1920s sedan with four round wheels with cream tires, round headlights, running boards and a tall boxy cabin, standing on a street.",
+     "object_class": "vehicle",
+     "category": "3",
+     "pattern": "rays",
+     "hero_colors": "black, chrome, cream tires, red pinstripe",
+     "backdrop_colors": "orange",
+     "surface_or_setting": "grey cobblestone street",
+     "build_model": true
+    },
+    {
+     "name": "Old Radio",
+     "subject": "A wooden table radio with a rounded arched top, a round cream speaker grille and two round knobs under a round dial, standing on a sideboard.",
+     "object_class": "electronics",
+     "category": "3",
+     "pattern": "diamonds",
+     "hero_colors": "wood brown, cream grille, small black knobs",
+     "backdrop_colors": "blue",
+     "surface_or_setting": "wooden sideboard",
+     "build_model": true
+    },
+    {
+     "name": "Poker Chips",
+     "subject": "Three round stacks of flat casino chips in red, white and black, each stack with a stripe pattern around its edge.",
+     "object_class": "toy_game",
+     "category": "3",
+     "pattern": "repeated_motif",
+     "hero_colors": "red, white, black",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "dark polished wood table",
+     "build_model": false
+    },
+    {
+     "name": "Barber Pole",
+     "subject": "A tall glass cylinder barber pole with red, white and blue spiral stripes, capped top and bottom with round metal caps, mounted on a wall bracket by the door.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "red, white, blue stripes, silver caps",
+     "backdrop_colors": "violet turning pink at the horizon, with a few small stars",
+     "surface_or_setting": "cream plaster shop wall at dusk",
+     "build_model": true
+    }
+   ]
+  }
+ ],
+ "problems": [],
+ "sensitive": [
+  {
+   "name": "Poker Chips",
+   "why": "Casino chips depict gambling. Some faiths and cultures object to gambling, and parents may not want it promoted to children in an all-ages game."
+  }
+ ],
+ "cast": 0
+}

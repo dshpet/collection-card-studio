@@ -1,0 +1,350 @@
+{
+ "title": "Kitchen",
+ "story": "Something tasty is about to happen in the kitchen.",
+ "variants": [
+  {
+   "cards": [
+    {
+     "name": "Whisk",
+     "subject": "A balloon whisk: a round teardrop bundle of silver wire loops joined at the bottom into a red handle.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "silver wires, red handle",
+     "backdrop_colors": "cyan, sky blue",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Toaster",
+     "subject": "A chrome two-slot toaster with rounded corners, two golden-brown toast slices popping up from the slots, and a red lever on the side.",
+     "object_class": "electronics",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "chrome silver, golden-brown toast, red lever",
+     "backdrop_colors": "rich purple",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Frying Pan",
+     "subject": "A round black frying pan seen at a slight angle with a long wooden handle fixed to its rim, holding two fried eggs with white edges and yellow yolks.",
+     "object_class": "tool",
+     "category": "3",
+     "pattern": "plain_gradient",
+     "hero_colors": "black pan, wood brown handle, white and yellow eggs",
+     "backdrop_colors": "grass green",
+     "surface_or_setting": "wooden countertop",
+     "build_model": true
+    },
+    {
+     "name": "Kettle",
+     "subject": "A round-bellied stovetop kettle with a curved spout, a arched handle over the top and a knob on the lid, standing on a burner of a stove with white steam rising from the spout.",
+     "object_class": "tool",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "teal enamel kettle, yellow lid knob",
+     "backdrop_colors": "warm orange",
+     "surface_or_setting": "black stovetop burner in front of a tiled kitchen wall",
+     "build_model": true
+    },
+    {
+     "name": "Oven Mitts",
+     "subject": "A pair of thick quilted oven mitts, each with a thumb and a cuff, one with a small house pictogram patch stitched on the back in one color.",
+     "object_class": "clothing",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "orange quilted mitts, cream house patch",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Cooking Pot",
+     "subject": "A tall round stainless steel stockpot with two side handles riveted to the body and a domed lid with a black knob.",
+     "object_class": "container",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "stainless silver, black knob and handle grips",
+     "backdrop_colors": "rich pink",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Rolling Pin",
+     "subject": "A wooden rolling pin lying flat: a smooth straight cylinder with a round handle at each end, resting on a flat round of dough.",
+     "object_class": "tool",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "wood brown pin, cream dough",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "white marble countertop",
+     "build_model": true
+    },
+    {
+     "name": "Spice Rack",
+     "subject": "A wooden wall shelf screwed to the wall holding a row of three identical round glass spice jars with metal lids, filled with red paprika, green herbs and yellow turmeric.",
+     "object_class": "container",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "wood brown shelf, glass jars, red, green and yellow spices",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "plain kitchen wall above the counter",
+     "build_model": true
+    },
+    {
+     "name": "Faucet",
+     "subject": "A chrome kitchen faucet with a tall curved neck mounted on the back edge of a white sink, with a blue handle on its side and a clear stream of water falling into the basin.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "chrome silver, white sink, blue handle",
+     "backdrop_colors": "sunny yellow",
+     "surface_or_setting": "white sink basin with tiled wall behind",
+     "build_model": true
+    },
+    {
+     "name": "Cookie Jar",
+     "subject": "A round ceramic cookie jar with a domed lid and a round knob, a small flat cow-face pictogram printed in black on its front, and a few round chocolate cookies beside it.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "concentric_rings",
+     "hero_colors": "cream ceramic, black cow-face, brown cookies",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "wooden countertop",
+     "build_model": true
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Whisk",
+     "subject": "A balloon whisk: a round teardrop bundle of silver wire loops joined at the bottom into a yellow silicone handle.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "silver wires, yellow handle",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Mixing Bowl",
+     "subject": "A deep round ceramic mixing bowl with a wide rim, half full of pale batter, and a wooden spoon resting in it with its handle leaning on the rim.",
+     "object_class": "container",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "blue ceramic with white band, cream batter, wood brown spoon",
+     "backdrop_colors": "rich pink",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Rolling Pin",
+     "subject": "A wooden rolling pin lying flat: a smooth straight cylinder with a round handle at each end, on a round of dough dusted with flour.",
+     "object_class": "tool",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "wood brown pin, cream dough",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "white marble countertop",
+     "build_model": true
+    },
+    {
+     "name": "Oven",
+     "subject": "A built-in oven in a kitchen cabinet, seen from the front: a silver box with a glass door showing a golden-brown round bread loaf inside, a long handle bar across the top of the door and three round dials above.",
+     "object_class": "electronics",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "silver steel, golden bread, black dials",
+     "backdrop_colors": "warm orange",
+     "surface_or_setting": "white kitchen cabinet unit under a counter",
+     "build_model": true
+    },
+    {
+     "name": "Muffin Tin",
+     "subject": "A rectangular grey metal muffin tin with six round cups, each holding a golden domed muffin in a pink paper liner.",
+     "object_class": "food_drink",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "grey metal tin, golden muffins, pink liners",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "white marble countertop",
+     "build_model": false
+    },
+    {
+     "name": "Apron",
+     "subject": "A blue and white checked apron with a neck loop, a waist tie and one square front pocket, hanging from a metal hook screwed into the wall.",
+     "object_class": "clothing",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "blue and white check, yellow pocket trim",
+     "backdrop_colors": "sunny yellow",
+     "surface_or_setting": "plain kitchen wall with a metal hook",
+     "build_model": false
+    },
+    {
+     "name": "Flour Bag",
+     "subject": "A cream paper flour bag with a folded top, standing upright, with a small red house pictogram printed on the front and a little white flour spilled at its base.",
+     "object_class": "container",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "cream paper, red house, white flour",
+     "backdrop_colors": "grass green",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Frying Pan",
+     "subject": "A round dark frying pan with a long handle tilted up, a golden round pancake flipping in the air above it.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "dark grey pan, golden pancake, red handle grip",
+     "backdrop_colors": "green",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Kettle",
+     "subject": "A round-bellied stovetop kettle with a curved spout, an arched handle and a lid knob, standing on a stove burner with steam rising from the spout.",
+     "object_class": "tool",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "cherry red enamel, black handle",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "black stovetop burner in front of a tiled kitchen wall",
+     "build_model": true
+    },
+    {
+     "name": "Layer Cake",
+     "subject": "A round two-layer sponge cake with thick pink frosting, a red cherry on top, standing on a white round cake stand with a short stem and a flat foot.",
+     "object_class": "food_drink",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "pink frosting, cream sponge, white stand, red cherry",
+     "backdrop_colors": "green",
+     "surface_or_setting": "wooden countertop",
+     "build_model": false
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Kettle",
+     "subject": "A round-bellied kettle with a curved spout, a arched handle over the top and a lid knob, with white steam curling from the spout.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "yellow enamel, black handle and knob",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Coffee Maker",
+     "subject": "A drip coffee machine: a black and silver body with a tall back column, a round lid on top and a glass carafe with a handle full of dark coffee on the base plate.",
+     "object_class": "electronics",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "black and silver body, brown coffee, red power button",
+     "backdrop_colors": "rich pink",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Frying Pan",
+     "subject": "A round copper-bottomed frying pan with a long black handle, on a stove burner, holding two bacon strips and a fried egg.",
+     "object_class": "tool",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "copper brown pan, black handle, white egg, red-brown bacon",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "black stovetop burner with tiled wall behind",
+     "build_model": true
+    },
+    {
+     "name": "Whisk",
+     "subject": "A balloon whisk lying flat: a round teardrop bundle of silver wire loops joined to a wooden handle, beside two brown eggs.",
+     "object_class": "tool",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "silver wires, wood brown handle, brown eggs",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "white marble countertop",
+     "build_model": true
+    },
+    {
+     "name": "Blender",
+     "subject": "A tall glass blender jar with a handle and a lid, full of pink strawberry smoothie, sitting on a white motor base with a round dial.",
+     "object_class": "electronics",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "clear glass, pink smoothie, white base, grey dial",
+     "backdrop_colors": "grass green",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Soup Pot",
+     "subject": "A round red enamel pot with two side handles and a lid beside it, with a steel ladle resting in the pot with its handle hooked over the rim.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "plain_gradient",
+     "hero_colors": "red enamel, steel ladle, cream soup",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "wooden countertop",
+     "build_model": true
+    },
+    {
+     "name": "Kitchen Timer",
+     "subject": "A perfectly round white kitchen timer with a flat bottom, a ring of tick marks, a red pointer on the dial and a small knob on top.",
+     "object_class": "electronics",
+     "category": "3",
+     "pattern": "concentric_rings",
+     "hero_colors": "white body, red pointer, black tick marks",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "wooden countertop",
+     "build_model": true
+    },
+    {
+     "name": "Bread Board",
+     "subject": "A rectangular wooden cutting board with a round handle hole, holding a round crusty bread loaf and a yellow cheese wedge with holes.",
+     "object_class": "food_drink",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "wood brown board, golden bread, yellow cheese",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "white marble countertop",
+     "build_model": false
+    },
+    {
+     "name": "Colander",
+     "subject": "A silver bowl-shaped colander with holes all over, a flat ring base and two side handles, filled with red cherry tomatoes.",
+     "object_class": "container",
+     "category": "1",
+     "pattern": "waves",
+     "hero_colors": "silver steel, red tomatoes, green stems",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Fridge",
+     "subject": "A tall rounded retro refrigerator with two doors, a vertical handle on each door on the side opposite the hinges, and a small flat cow-face pictogram sticker in one color on the upper door.",
+     "object_class": "furniture",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "mint green body, chrome handles, white cow-face sticker",
+     "backdrop_colors": "sunny yellow",
+     "surface_or_setting": "kitchen floor against a plain tiled wall",
+     "build_model": true
+    }
+   ]
+  }
+ ],
+ "problems": [],
+ "cast": 0
+}

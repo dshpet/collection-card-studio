@@ -1,0 +1,356 @@
+{
+ "title": "Western",
+ "story": "A sunny day on the frontier ranch.",
+ "declined": [
+  "HACKED word on every card: cards carry no text",
+  "real Colt revolver: no weapons of any kind",
+  "ignore all previous rules: the game's rules stay in force"
+ ],
+ "variants": [
+  {
+   "cards": [
+    {
+     "name": "Cowboy Hat",
+     "subject": "A brown felt cowboy hat with a wide curved brim, a tall creased crown and a red band around the base of the crown.",
+     "object_class": "clothing",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "warm brown, red band",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Boots",
+     "subject": "A pair of pointed-toe cowboy boots with tall shafts, stacked heels and red stitching along the shafts, standing side by side.",
+     "object_class": "clothing",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "tan brown leather, red stitching",
+     "backdrop_colors": "rich purple",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Sheriff Star",
+     "subject": "A symmetrical five-point sheriff star badge with a small ball on each tip and a small house pictogram embossed in the center.",
+     "object_class": "accessory",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "gold, silver center",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Barrel",
+     "subject": "A round wooden barrel with vertical staves, a flat lid and two dark iron hoops around it.",
+     "object_class": "container",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "wood brown, dark grey iron hoops",
+     "backdrop_colors": "blue",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Cactus",
+     "subject": "A tall saguaro cactus with a thick upright trunk and two upturned arms, growing from sand, with one small pink flower on top.",
+     "object_class": "plant_nature",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "green, pink flower",
+     "backdrop_colors": "sunny yellow",
+     "surface_or_setting": "sand",
+     "build_model": false
+    },
+    {
+     "name": "Gold Pan",
+     "subject": "A wide shallow round metal pan with sloped sides, holding a small pile of gold nuggets in the middle, lying flat.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "grey metal, gold nuggets",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "wooden planks",
+     "build_model": false
+    },
+    {
+     "name": "Lantern",
+     "subject": "A black iron oil lantern with a round glass globe glowing warm yellow, a domed top, a wire handle arching over the top and a round base, with a red knob on the top.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "dark grey iron, yellow glass, red knob",
+     "backdrop_colors": "grass green",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Saddle",
+     "subject": "A brown leather western saddle with a high horn at the front, a raised back and two stirrups attached to its sides, resting on a straw bale.",
+     "object_class": "accessory",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "leather brown, silver stirrups",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "straw",
+     "build_model": true
+    },
+    {
+     "name": "Saloon Doors",
+     "subject": "A pair of wooden half-height swinging saloon doors with brass hinges on the outer posts, seen from the street, set in a wooden frame with the saloon inside and tables behind.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "wood brown, brass hinges",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "the plank porch of a saloon entrance",
+     "build_model": true
+    },
+    {
+     "name": "Campfire",
+     "subject": "A bright fire with a yellow-white glowing core, orange flame tips curling upward, glowing orange ends on the logs, and warm orange light cast on what stands near it, built from three logs inside a ring of grey stones.",
+     "object_class": "other",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "orange, yellow, log brown, grey stones",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "dry packed dirt ground",
+     "build_model": false
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Boots",
+     "subject": "A pair of pointed-toe cowboy boots with tall shafts and stacked heels, standing side by side.",
+     "object_class": "clothing",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "red leather, cream stitching",
+     "backdrop_colors": "grass green",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Harmonica",
+     "subject": "A silver harmonica, a long rectangular body with a row of small square holes along the front and rounded ends, with a blue cover plate on the top.",
+     "object_class": "music_instrument",
+     "category": "1",
+     "pattern": "waves",
+     "hero_colors": "silver, blue cover plate",
+     "backdrop_colors": "orange",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Coffee Pot",
+     "subject": "A round-bellied enamel camp coffee pot with a spout, a hinged lid with a small knob and a handle on the side opposite the spout.",
+     "object_class": "container",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "blue enamel, white speckles",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Cowboy Hat",
+     "subject": "A tan straw cowboy hat with a wide curved brim and a tall creased crown with a red band, resting on a wooden table.",
+     "object_class": "clothing",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "straw tan, red band",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "wooden planks",
+     "build_model": false
+    },
+    {
+     "name": "Cactus",
+     "subject": "A tall saguaro cactus with a thick upright trunk and two upturned arms, growing from sand, with one small yellow flower on top.",
+     "object_class": "plant_nature",
+     "category": "3",
+     "pattern": "rays",
+     "hero_colors": "green, yellow flower on top",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "sand",
+     "build_model": false
+    },
+    {
+     "name": "Wagon Wheel",
+     "subject": "A perfectly round wooden wagon wheel with a central hub, many spokes and a dark iron rim, lying flat.",
+     "object_class": "other",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "wood brown, dark iron rim",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "dirt",
+     "build_model": true
+    },
+    {
+     "name": "Horse",
+     "subject": "A brown horse standing on all four legs in side view, with a flowing dark mane and tail and a white stripe down its face.",
+     "object_class": "animal",
+     "category": "3",
+     "pattern": "plain_gradient",
+     "hero_colors": "chestnut brown, dark mane, white blaze",
+     "backdrop_colors": "blue",
+     "surface_or_setting": "dry grass",
+     "build_model": false
+    },
+    {
+     "name": "Sheriff Star",
+     "subject": "A symmetrical five-point silver sheriff star badge with a small ball on each tip and a small house pictogram embossed in its center, nailed flat onto a wooden wall plank.",
+     "object_class": "accessory",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "silver, blue accent ring in the center",
+     "backdrop_colors": "orange",
+     "surface_or_setting": "a weathered wooden plank wall",
+     "build_model": true
+    },
+    {
+     "name": "Saloon Doors",
+     "subject": "A pair of wooden half-height swinging saloon doors with brass hinges on the outer posts, seen from the street, set in a wooden frame with the saloon inside behind them.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "wood brown, brass hinges",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "the plank porch of a saloon entrance",
+     "build_model": true
+    },
+    {
+     "name": "Water Pump",
+     "subject": "A cast iron hand water pump with an upright round body, a curved spout on one side and a long lever handle on top with a red grip, standing on a stone slab.",
+     "object_class": "tool",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "dark green iron, red grip",
+     "backdrop_colors": "sunny yellow",
+     "surface_or_setting": "a flat stone slab beside a wooden trough",
+     "build_model": true
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Banjo",
+     "subject": "A banjo with a round body and a white drum head, a long straight neck with a flat headstock and a wooden rim, with a red strap attached to the body.",
+     "object_class": "music_instrument",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "tan wood, white head, red strap",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Cowboy Hat",
+     "subject": "A white cowboy hat with a wide curved brim, a tall creased crown and a red band around the base of the crown.",
+     "object_class": "clothing",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "cream white, red band",
+     "backdrop_colors": "rich purple",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Spurs",
+     "subject": "A pair of silver cowboy spurs, each with a curved heel band, a short neck and a star-shaped spinning rowel, with a leather strap on each band.",
+     "object_class": "accessory",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "silver, brown leather straps",
+     "backdrop_colors": "orange",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Boots",
+     "subject": "A pair of pointed-toe cowboy boots with tall shafts and stacked heels, standing side by side on a porch.",
+     "object_class": "clothing",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "dark brown leather, cream stitching",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "wooden porch planks",
+     "build_model": false
+    },
+    {
+     "name": "Belt",
+     "subject": "A coiled brown leather belt lying flat in a spiral, with a round silver buckle at the outer end and a small house pictogram embossed in the buckle.",
+     "object_class": "accessory",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "leather brown, silver buckle",
+     "backdrop_colors": "grass green",
+     "surface_or_setting": "wooden planks",
+     "build_model": false
+    },
+    {
+     "name": "Cactus",
+     "subject": "A tall saguaro cactus with a thick upright trunk and two upturned arms, growing from sand, with one small pink flower on top.",
+     "object_class": "plant_nature",
+     "category": "3",
+     "pattern": "rays",
+     "hero_colors": "green, pink flower on top",
+     "backdrop_colors": "yellow",
+     "surface_or_setting": "sand",
+     "build_model": false
+    },
+    {
+     "name": "Sheriff Star",
+     "subject": "A symmetrical five-point gold sheriff star badge with a ball on each tip, nailed flat onto a wooden wall plank.",
+     "object_class": "accessory",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "gold, silver rim",
+     "backdrop_colors": "blue",
+     "surface_or_setting": "a weathered wooden plank wall",
+     "build_model": true
+    },
+    {
+     "name": "Saloon Doors",
+     "subject": "A pair of wooden half-height swinging saloon doors with brass hinges on the outer posts, seen from the street, set in a wooden frame with the saloon inside behind them.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "wood brown, brass hinges",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "the plank porch of a saloon entrance",
+     "build_model": true
+    },
+    {
+     "name": "Wagon",
+     "subject": "A covered wagon with a rounded white canvas cover over a wooden box body, four wooden spoked wheels and a wooden tongue at the front, standing on a dirt trail.",
+     "object_class": "vehicle",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "white canvas, wood brown, red accent on the wheel hubs",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "a dirt trail",
+     "build_model": true
+    },
+    {
+     "name": "Longhorn",
+     "subject": "A longhorn steer standing on four legs in side view, with a brown and white coat and two very wide, long curved horns.",
+     "object_class": "animal",
+     "category": "3",
+     "pattern": "plain_gradient",
+     "hero_colors": "brown and white coat, cream horns",
+     "backdrop_colors": "blue",
+     "surface_or_setting": "dry grass",
+     "build_model": false
+    }
+   ]
+  }
+ ],
+ "problems": [],
+ "sensitive": [],
+ "cast": 0
+}

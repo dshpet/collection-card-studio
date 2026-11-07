@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (frying pan): the light comes from the front and is centred. The pan bowl has the same dark rim all the way round and a glowing middle, with no clear light side or shadow side, and it floats with no cast shadow. Its light bias of 0.059 is below the real range, and its form contrast of 0.703 is above it. B (oil lamp): the flame is a practical light that warms the glass and the brass. The base has a dark side and a lit side, like the real lamp-post card.",
+   "fix": "Light the pan from the upper left so the left rim and handle are bright and the right side of the bowl falls into a soft shadow. Add a soft shadow below and to the right of the pan."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (sneakers): there is a hard, dark shadow on a flat floor, the shoes are lit evenly from the front, and the shoe tops have a bright edge glow. The light bias of 0.019 is out of range, and the shading range of 0.82 is above the real maximum. B (toaster): a soft key light from the left gives a gentle turn across the side. The shadow at the feet is soft and the sheen is broad, which is closer to the real camera card.",
+   "fix": "Give the sneakers one light from the upper left, with the right-hand shoe side clearly darker. Soften the floor shadow into a short, blurry pool under the soles."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (cookie jar): this looks like a studio photo. It has a long, soft cast shadow going right across the marble, a smooth light-to-dark turn on the jar body, and a dim, murky backdrop. B (barrel): stylized key light from the upper left, with a lit left half of the staves, a darker right half and metal bands with crisp sheen, like the real cards.",
+   "fix": "Light the jar in a painted way, not like a photo. Make the left side bright and the right side a clean, mid-tone shadow, and put a short, soft contact shadow under the base instead of a long one across the counter."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (kettle): the red enamel has sharp white hot spots like plastic, and the shadow side is weak. Its form contrast of 0.389 is below the real range, and its shading range of 0.839 is above it. A (vending machine): light from the side, with a clearly darker side panel, a lit front and a soft contact shadow at the feet.",
+   "fix": "Replace the sharp white spots on the kettle with one broad, soft sheen on the upper left. Let the right side of the body turn into a deeper, cooler shadow."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (faucet): window-light streaks and a strong, sharp-edged cast shadow of the faucet fall on the tiles. The shading range of 0.49 is below the real range, so the faucet itself is weakly modelled. B (gate): broad daylight with pillars that have a lit side and a shadow side, as in the real outdoor cards.",
+   "fix": "Remove the window-beam streaks. Light the faucet from the upper left so the curved neck has a bright left edge and a darker right side, and keep the shadow on the wall soft and short."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (whisk): the wires are lit evenly from the front and it floats with no shadow and no light side. The handle has only a soft central glow. B (ferris wheel): the spokes and pods are lit from the side and the hub is in shade. The light bias is low on both cards, so this call is weak.",
+   "fix": "Light the whisk from one side so the wires on that side catch bright highlights and the far wires are darker. Make the handle's light side clearly different from its shadow side."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (popsicle): the dark edges go all the way round with a glowing centre, and the water drops are covered in many small, sharp white specular dots. B (signpost): flat, gentle shading on the wooden arms. Its form contrast of 0.304 is a little below range, but the light still comes from one side.",
+   "fix": "Light the popsicle from the upper left, with a soft sheen along the left ridge and a darker right edge. Use only a few, softer highlights on the drops."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (cutting board): top-down, even light like a photo, with very little light side or shadow side on the slices. Its form contrast of 0.396 is below range. A (fruit plate): the painted fruit has clear dark sides and contact shading where the pieces meet on the plate.",
+   "fix": "Light the board from the upper left. Give each tomato and cucumber slice a bright top-left rim and a darker lower-right edge, and add soft contact shadows where the slices overlap."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (rolling pin): soft studio light, a smooth gradient along the roller, and a dim backdrop in a photo-like scene on marble. B (scroll): a strongly directional light, with a reflection on a glossy surface. Its light bias of 0.924 is a little above range, but it reads as stylized.",
+   "fix": "Make the rolling pin's shading painted rather than photographic. Give the roller one clear bright band on top, a mid-tone shadow underneath and a short, soft contact shadow on the dough."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (pot on the stove): the flame lights it from below and there is a glossy, frontal sheen across the teal body. The shading range of 0.855 and the light bias of 0.647 are both above the real range. B (bird feeder): soft daylight from above, with a shaded underside of the roof and a dark interior, within range.",
+   "fix": "Lower the brightness of the glow from below. Light the pot from the upper left so the left side of the lid and body is bright and the right side falls into a gentle shadow, and drop the hard glossy streaks."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (oven mitts): even light from the front. The puffy quilted surface has only a mild turn, and the mitts float with no shadow. B (jacket): a dark vignette, lit shoulders and sleeves that turn into shadow, form contrast 0.57.",
+   "fix": "Light the mitts from the upper left so the front mitt's left bulge is bright and its right side and cuff fall into a deeper shadow. Make the back mitt darker where the front one overlaps it."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (binoculars): sharp white hot spots like plastic or metal on the barrels and post, with strong contrast. Its form contrast of 0.627 is above the real range. A (balloons): one soft highlight on each balloon from the upper left and a smooth turn into shadow, a close match to the real cards.",
+   "fix": "Replace the sharp hot spots on the binoculars with a broad, soft sheen on the upper left. Let the right side of the barrels and post fall into a soft, cooler shadow."
+  }
+ ],
+ "pattern": "Generated cards are lit flat from the front, with the light in the centre. The hero has a glowing middle, the same dark edge all the way round, and no clear light side or shadow side, so the light bias is often below the real range. Several of them have lighting like a studio photo instead: long soft shadows, window streaks and dim backdrops. Others have sharp white hot spots like plastic. Real cards use one key light from the upper left, give the far side a clear but gentle shadow, use broad soft sheens and put short, soft contact shadows under the object."
+}

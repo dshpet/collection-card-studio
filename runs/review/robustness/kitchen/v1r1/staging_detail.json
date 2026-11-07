@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the frying pan floats on cyan rays with a bright cyan glow pooled behind the pan's centre. That matches the halo on the generated mitt cards, where real cards keep the burst flatter. B: the lamp's green burst brightens behind the flame, which the lit lamp explains. The ray density is similar on both cards.",
+   "fix": "Flat radial burst in two close blues with even brightness, no glowing halo behind the pan."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the sneakers stand on a pale yellow floor that meets a darker orange wall at a hard horizontal line about halfway up the card. The floor does not match the backdrop colour. B: the toaster stands on a pink floor that blends seamlessly into the pink backdrop, which is a clean category 2.",
+   "fix": "Let the floor be the same orange as the backdrop and fade into it with no horizon line."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cookie jar sits on photographic grey-veined marble, with a flat green wall meeting it at a hard edge and no soft light pool. The jar also carries a printed cow face, which is invented decoration. B: the barrel stands on a few broad deck planks with a plain rail and an empty sky. The large, quiet shapes match the ship-wheel reference card.",
+   "fix": "A plain cream ceramic jar of cookies on a smooth warm countertop, with a soft green backdrop and a gentle glow behind the jar. No face or emblem."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both cards are category 2 on a purple floor that fades into the backdrop. A's vending machine has a soft light streak and holds drinks, which are its contents. B's kettle sits on a smoother field. Nothing on the staging separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the gate scene is crowded with brick-by-brick pillars, stone balls, hedges, grass tufts, distant trees, a path and paving slabs. Background detail of 0.042 and edge density of 0.122 are both above the real range. A: the faucet has a quiet tiled wall and a steel sink edge. The diagonal sun streak is its only extra.",
+   "fix": "Show just the gate between two plain pillars, with a soft green lawn and sky behind. Fewer, larger shapes and no individual bricks or grass tufts."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the whisk floats centred and whole on a green field with blurry diagonal light shafts from the top left. Background detail of 0.0072 is below the real range. B: the Ferris wheel is cropped by the card's edges against a plain sky, which is the real habit (compare the real lighthouse card).",
+   "fix": "Use a quiet tone-on-tone green pattern of waves or rays and no light shafts."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: a pink butterfly is perched on top of the signpost post. It is an invented whimsical prop that the subject does not name. A: the popsicle sits on a plain green radial burst with no extras.",
+   "fix": "Remove the butterfly. Show only the wooden signpost against the sky and clouds."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the cutting board lies on a blue-and-white gingham cloth that fills the card. The high-contrast check competes with the vegetables, and background detail of 0.050 is far above the real range. A: the fruit plate rests on broad, soft wood planks.",
+   "fix": "Lay the board on a plain light wooden table with soft, wide grain and no patterned cloth."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both are category 3. A's rolling pin is on dough on a marble counter, with a purple glow behind it. B's scroll is on a glossy blue shelf, with a dark blue glow behind it. Both have a simple backdrop and a light pool, and the dough and flour are a legitimate partner.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: around the bird feeder there is a tree trunk, branches, leaves, a hanging rope, bushes, a path and city tower blocks, which is many objects for a few metres of a place. A: the pot sits on a gas burner in front of a plain yellow tiled wall, which is quieter.",
+   "fix": "Hang the feeder on a tree trunk with soft, blurred green foliage behind it. No buildings, path or extra trees."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the right oven mitt carries a stitched house-shaped patch, which is invented decoration. B: the badges on the jacket's sash belong to a scout jacket. Both cards use a similar radial burst.",
+   "fix": "Plain quilted orange oven mitts without any patch or emblem."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: behind the binocular viewer are a railing plus a full skyline of many windowed towers. Edge density of 0.036 is double the top of the real range. A: the balloons float in a sky with a few soft clouds, which is a clean category 1.",
+   "fix": "Put the viewer on a railing with a hazy pale sky and only two or three soft, distant building shapes. No window grids."
+  }
+ ],
+ "pattern": "Generated cards add background load: busy textures that fill the card (gingham, marble, brick, window grids), extra environment objects, and invented whimsy or decoration (a butterfly, emblems, faces). They also glow a halo behind a whole, uncropped hero. Real cards keep a few large, quiet background shapes and crop the hero with the card's edge."
+}

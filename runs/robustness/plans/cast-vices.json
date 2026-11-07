@@ -1,0 +1,401 @@
+{
+ "title": "Western",
+ "story": "Howdy, partner: a sunny day in a friendly frontier town.",
+ "variants": [
+  {
+   "cards": [
+    {
+     "name": "Cowboy Hat",
+     "subject": "A brown felt cowboy hat with a wide curled brim, a tall dented crown and a red band around the crown.",
+     "object_class": "clothing",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "brown, red band",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Sheriff Badge",
+     "subject": "A perfectly symmetrical gold six-pointed star badge with a small ball on each point and a small house pictogram embossed in the center.",
+     "object_class": "accessory",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "gold",
+     "backdrop_colors": "blue",
+     "surface_or_setting": "",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Spurs",
+     "subject": "A pair of silver cowboy spurs, each with a curved heel band, a short neck and a round star-shaped spinning rowel at the end, with red leather straps attached to the ends of the band.",
+     "object_class": "accessory",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "silver, red leather straps",
+     "backdrop_colors": "orange",
+     "surface_or_setting": "",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Cowboy Boots",
+     "subject": "A pair of brown leather cowboy boots with pointed toes, tall shafts, slanted heels and decorative stitching on the shafts.",
+     "object_class": "clothing",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "brown, red stitching",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Cactus",
+     "subject": "A tall green saguaro cactus with a thick upright trunk, two arms curving upward and a small flower on top, growing from sand.",
+     "object_class": "plant_nature",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "green, small pink flower",
+     "backdrop_colors": "yellow",
+     "surface_or_setting": "sand",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Root Beer",
+     "subject": "A thick clear glass mug with a handle on the side, filled with brown root beer topped with white foam, standing on a bar counter.",
+     "object_class": "food_drink",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "brown root beer, white foam, clear glass",
+     "backdrop_colors": "blue",
+     "surface_or_setting": "wooden bar counter",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Covered Wagon",
+     "subject": "A covered wagon with four wooden spoked wheels, a wooden bed, an arched white canvas cover open at the front and a driver bench bolted across the front.",
+     "object_class": "vehicle",
+     "category": "3",
+     "pattern": "diamonds",
+     "hero_colors": "white canvas, brown wood, red wheel hubs",
+     "backdrop_colors": "grass green",
+     "surface_or_setting": "dirt trail",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Saloon Doors",
+     "subject": "A pair of swinging half-height wooden saloon doors with slatted tops, hinged to the outer sides of a wooden frame, seen from the street with a lit saloon interior behind them.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "brown wood, warm yellow light inside",
+     "backdrop_colors": "cyan sky",
+     "surface_or_setting": "the front of a wooden saloon porch, seen from the street",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Windmill",
+     "subject": "A tall ranch windmill with a slim four-legged wooden tower, a round metal wheel of many blades on top and a tail vane behind the wheel.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "grey metal, brown wood, red tail vane",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "dry ranch ground with short grass, tower base standing on the ground",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Porch Pals",
+     "subject": "The pig in a small cowboy hat with ear holes sips brown root beer from a glass mug while the man in a cowboy hat chews a wheat straw beside it, both sitting on a wooden porch bench.",
+     "object_class": "character",
+     "category": "5",
+     "pattern": "full_scene",
+     "hero_colors": "pink pig, brown hats, brown root beer with white foam, man in a green shirt",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "a wooden saloon porch",
+     "build_model": false,
+     "cast": [
+      "man",
+      "pig"
+     ]
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Bandana",
+     "subject": "A red triangular bandana tied into a loop with a neat knot at the front, symmetrical, with a white stitched hem.",
+     "object_class": "clothing",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "red, white hem",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Guitar",
+     "subject": "An acoustic guitar with a round sound hole, six strings, a long neck and a headstock with tuning pegs.",
+     "object_class": "music_instrument",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "warm brown wood, black, white tuning pegs",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Sheriff Badge",
+     "subject": "A perfectly round gold badge with a pointed star in the center and a thick rim.",
+     "object_class": "accessory",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "gold",
+     "backdrop_colors": "grass green",
+     "surface_or_setting": "",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Cowboy Boots",
+     "subject": "A pair of dark brown leather cowboy boots with pointed toes, tall shafts and slanted heels.",
+     "object_class": "clothing",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "dark brown, yellow stitching",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Cowboy Hat",
+     "subject": "A cream felt cowboy hat with a wide curled brim and a tall creased crown, resting on top of a wooden fence post.",
+     "object_class": "clothing",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "cream, dark brown band",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "wooden fence post",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Cactus Pot",
+     "subject": "A small round green barrel cactus with ribs and a pink flower on top, growing in a round white pot.",
+     "object_class": "plant_nature",
+     "category": "3",
+     "pattern": "diamonds",
+     "hero_colors": "green, white pot, pink flower",
+     "backdrop_colors": "yellow",
+     "surface_or_setting": "wooden windowsill",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Stagecoach",
+     "subject": "A red enclosed stagecoach with four large wooden spoked wheels, two side doors with windows, a driver's seat at the front on top and a curved roof.",
+     "object_class": "vehicle",
+     "category": "3",
+     "pattern": "diamonds",
+     "hero_colors": "red, black, yellow wheels",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "dirt road",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Saloon Doors",
+     "subject": "A pair of swinging half-height wooden saloon doors with slatted tops, hinged to the outer sides of a wooden frame, seen from the street with a warmly lit saloon interior behind them.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "brown wood, warm yellow light inside",
+     "backdrop_colors": "violet sky turning pink at the horizon",
+     "surface_or_setting": "the front of a wooden saloon porch at dusk, seen from the street",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Jail Door",
+     "subject": "A wooden plank door with a gold six-pointed star badge nailed to its middle, a black iron handle on the side opposite its hinges, seen from the street.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "brown wood, gold badge, black iron handle",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "the front wall of the sheriff's office, seen from the street",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Hay Bale Pals",
+     "subject": "The pig in a cowboy hat with ear holes sips brown root beer from a glass mug while the man in a cowboy hat chews a wheat straw, both sitting on hay bales.",
+     "object_class": "character",
+     "category": "5",
+     "pattern": "full_scene",
+     "hero_colors": "pink pig, brown hats, brown root beer with white foam, man in a yellow vest",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "hay bales on dry ground at a ranch",
+     "build_model": false,
+     "cast": [
+      "man",
+      "pig"
+     ]
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Bandana",
+     "subject": "A blue triangular bandana tied into a loop with a neat knot at the front, symmetrical, with small white dots.",
+     "object_class": "clothing",
+     "category": "1",
+     "pattern": "waves",
+     "hero_colors": "blue, white dots",
+     "backdrop_colors": "yellow",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Cowboy Hat",
+     "subject": "A cream white felt cowboy hat with a wide curled brim and a tall creased crown, with a dark brown band around the crown.",
+     "object_class": "clothing",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "cream, dark brown band",
+     "backdrop_colors": "grass green",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Sheriff Badge",
+     "subject": "A perfectly symmetrical gold five-pointed star badge with a small ball on each point and a small house pictogram embossed in the center.",
+     "object_class": "accessory",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "gold",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Cowboy Boots",
+     "subject": "A pair of red leather cowboy boots with pointed toes, tall shafts and slanted heels.",
+     "object_class": "clothing",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "red, tan stitching",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Cactus",
+     "subject": "A tall green saguaro cactus with a thick upright trunk, two arms curving upward and a small pink flower on top, growing from sand.",
+     "object_class": "plant_nature",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "green, small pink flower",
+     "backdrop_colors": "orange",
+     "surface_or_setting": "sand",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Gold Pan",
+     "subject": "A round shallow silver metal gold pan with a sloped rim, lying flat and holding a small pile of shiny gold nuggets.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "silver grey, gold nuggets",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "wooden planks",
+     "build_model": false,
+     "cast": []
+    },
+    {
+     "name": "Saddle",
+     "subject": "A brown leather horse saddle with a raised front horn, a curved seat, two side stirrups hanging from straps fixed to the body and a buckled girth strap, resting on a fence rail.",
+     "object_class": "other",
+     "category": "3",
+     "pattern": "diamonds",
+     "hero_colors": "brown leather, silver buckle",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "wooden fence rail",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Saloon Doors",
+     "subject": "A pair of swinging half-height wooden saloon doors with slatted tops, hinged to the outer sides of a wooden frame, seen from the street with a saloon interior behind them.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "light tan wood, warm yellow light inside",
+     "backdrop_colors": "grass green hills below a clear cyan sky",
+     "surface_or_setting": "the front of a wooden saloon porch, seen from the street",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Campfire Coffee",
+     "subject": "A silver tin coffee pot with a black handle and a spout, sitting on a ring of flat stones beside a bright fire with a yellow-white glowing core, orange flame tips curling upward, glowing orange ends on the logs, and warm orange light cast on what stands near it.",
+     "object_class": "container",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "silver, black handle, orange fire",
+     "backdrop_colors": "rich royal blue night sky with a few small stars and a crescent moon",
+     "surface_or_setting": "a flat stone fire ring on dry ground",
+     "build_model": true,
+     "cast": []
+    },
+    {
+     "name": "Camp Pals",
+     "subject": "The pig in a cowboy hat with ear holes sips brown root beer from a glass mug while the man in a cowboy hat chews a wheat straw, both sitting on a wooden bench beside the saloon wall.",
+     "object_class": "character",
+     "category": "5",
+     "pattern": "full_scene",
+     "hero_colors": "pink pig, brown hats, brown root beer with white foam, man in a red shirt",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "a wooden bench on a saloon porch",
+     "build_model": false,
+     "cast": [
+      "man",
+      "pig"
+     ]
+    }
+   ]
+  }
+ ],
+ "problems": [
+  "card name too long: Hay Bale Pals"
+ ],
+ "sensitive": [
+  {
+   "name": "Saloon Doors",
+   "why": "They signal a bar and alcohol. Some parents and some faith or cultural groups may not want a children's game to feature drinking venues."
+  },
+  {
+   "name": "Jail Door",
+   "why": "Imprisonment can upset players with incarcerated family members. It also isn't a cozy image for young children."
+  }
+ ],
+ "cast": 1
+}

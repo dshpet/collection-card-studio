@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the player and its earbuds fill the middle of the card on wide, quiet violet rings. The earbuds are the one partner object the subject implies. B: a small satellite sits in the centre with large empty orange rings all round it, so the hero covers only about a third of the card's width. B's background detail (0.006) is below the real range.",
+   "fix": "Draw the satellite large, filling most of the card's width, with its solar panels reaching close to the left and right edges, over the same broad tone-on-tone orange rings."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: wide cyan rays with an even tone, and only a mild lightening behind the helmet. B: many narrow green rays and a strong glow directly behind the jacket, the same hot centre the generated glove lessons show. The rays are thin and dense near the edges.",
+   "fix": "Use fewer, wider rays in two close shades of green with no bright glow behind the jacket. Keep the light even across the field."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the vault door sits in a plain riveted cyan wall above a strip of floor tile. The shapes are few and large. B: the wreath hangs on a door, and the top and both sides of the card are covered in dense ivy, with hundreds of small leaves and a stucco wall. The ivy is invented and busy, and its edge density (0.107) is above the real range.",
+   "fix": "Show the wreath on a plain blue painted door with a simple wooden frame. Remove all the ivy and leaves around the door so the space around it is calm and flat."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both cards are flat maps seen from above on warm wood planks that fill the card, which is category 3 for a flat object. A adds a magnifying glass as a partner object in use. B adds a small compass charm in a corner. The background boards are equally quiet. A's higher numbers come from the map itself leaking past the mask.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the flamingo float sits on the pool's edge tiles, with rippling water filling the top half. That is the place it is used, cut by the card edge. B: a fruit plate on wood planks, category 3. The water caustics in A are busy but match real water cards, and B's planks are quiet. The numbers are in range for both, so neither card stands out on staging.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the vending machine stands upright and fills the height of a plain purple floor and backdrop, which is category 2. B: a small spaceship sits low on a green gradient with a large empty area above it. The hero is undersized, and the backdrop detail (0.0054) is below the real range.",
+   "fix": "Draw the spaceship large and centred, filling most of the card's width, on a plain green floor that blends into the backdrop."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the street lamp on teal rays is the real card from the reference set. B: a red cooler half-sunk in beach sand with sea and sky behind, a few metres of the place it is used. It carries an invented cow face on its side, and a pebble sits in the sand in the foreground.",
+   "fix": "Show the cooler in the sand with a plain red side and only a simple handle. No face or logo, and no pebbles in the sand."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the fan stands by a curtain and window, close and central, and the bottom card edge cuts the stand, like the real lighthouse. There are few, large shapes. B: the control panel is shown whole against a yellow sci-fi wall with rivets, seams and a vent grille along the top, over tiled floor plates. It has many small edges (0.083).",
+   "fix": "Move in close so the console fills the card and the bottom edge cuts off its base. Make the wall behind it one plain yellow panel with no rivets, vents or seams."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both are category 3: an object on a wood surface against a simple vertical-stripe backdrop, blue panels in A and purple stripes in B. The left card edge cuts A's gloves, as the real cards do, and B's pouch stands with a soft shadow. There is no invented clutter in either.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "B is the real computer card from the lessons. A: a plain rover on a smooth sand dune under a clear sky, with only two or three tiny pebbles. That is a quiet, sparse place where the object is used, and nothing in its background marks it as generated.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: sneakers on a plain yellow floor with an orange wall and a hard horizon, like the real suitcase card. B: the mittens stand on a seamless purple floor and backdrop. Both are category 2 with no props, and the numbers are in range for both.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the plane is cut by the right edge, but the lower half of the card is a dense pile of many small cloud puffs, plus extra clouds at the top left and top. Its edge density (0.018) is above the real range. B: the rocket sits in open blue sky with a few large, soft cloud banks at the corners, like the real lifeguard card.",
+   "fix": "Keep the plane large in a clear blue sky, with only two or three big, soft cloud shapes near the bottom corners and no rows of small puffs."
+  }
+ ],
+ "pattern": "Generated cards give themselves away in the background. They add places and props the subject never names: ivy round a door, a rock island under a lighthouse, a cow face on a cooler, rivet-and-vent sci-fi walls. They show the whole object small or framed with empty space, where real cards move close and let the card edge cut the object. They put a hot glow behind the hero on ray backdrops, and fill the background with many small shapes (leaves, cloud puffs, panel seams) where real cards use a few large, quiet shapes."
+}

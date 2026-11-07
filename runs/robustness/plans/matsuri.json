@@ -1,0 +1,350 @@
+{
+ "title": "Matsuri",
+ "story": "A warm summer night at the village festival.",
+ "variants": [
+  {
+   "cards": [
+    {
+     "name": "Paper Lantern",
+     "subject": "A perfectly round red paper lantern with thin horizontal ribs, black cap rims at the top and bottom, and a small white house pictogram printed on the front.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "red paper, black rims, white house pictogram",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Ramune",
+     "subject": "A light blue glass soda bottle with a long narrow neck holding a small glass marble, an orange cap, and a white wave icon on the body.",
+     "object_class": "food_drink",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "light blue glass, orange cap, white wave icon",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Uchiwa Fan",
+     "subject": "A flat round paper fan lying flat, with a short flat bamboo handle extending from the bottom and a red circle printed in the middle of the white paper.",
+     "object_class": "accessory",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "white paper, tan bamboo handle, red circle",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "wooden planks",
+     "build_model": false
+    },
+    {
+     "name": "Taiko Drum",
+     "subject": "A big barrel-shaped taiko drum with two round cream drumheads edged with a ring of round tacks, resting on a low red wooden stand with two curved cradle supports, two wooden sticks lying across the top head.",
+     "object_class": "music_instrument",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "brown wood barrel, cream drumheads, red stand",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "wooden planks",
+     "build_model": true
+    },
+    {
+     "name": "Geta Sandals",
+     "subject": "A pair of wooden geta sandals, each a flat oblong wooden board raised on two wooden teeth beneath, with a red cloth thong strap fixed to three holes on top.",
+     "object_class": "clothing",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "light brown wood, red strap",
+     "backdrop_colors": "blue",
+     "surface_or_setting": "wooden planks",
+     "build_model": true
+    },
+    {
+     "name": "Kinchaku Pouch",
+     "subject": "A small round-bottomed orange fabric pouch with a gathered top tied shut by a white drawstring cord, with a white flower icon on the front.",
+     "object_class": "container",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "orange fabric, white cord, white flower icon",
+     "backdrop_colors": "green",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Candy Apple",
+     "subject": "A shiny red candy-coated round apple on a straight wooden stick, the stick standing upright in a small wooden block with a hole, with a short green stem at the top.",
+     "object_class": "food_drink",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "glossy red apple, light brown stick, small green stem",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "wooden planks",
+     "build_model": false
+    },
+    {
+     "name": "Noren Curtain",
+     "subject": "A short indigo-blue cloth curtain split into three panels, hanging from a wooden rod fixed across a shop doorway, with a white round icon on the middle panel, seen from the street with a warm lit shop inside.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "indigo blue cloth, white round icon, wood rod",
+     "backdrop_colors": "yellow",
+     "surface_or_setting": "wooden shop doorway frame seen from the street",
+     "build_model": false
+    },
+    {
+     "name": "Wind Chime",
+     "subject": "A dome-shaped glass bell wind chime with a red circle painted on the glass, a small clapper inside, and a long white paper strip hanging from the clapper, the bell hung by a loop from a hook on a wooden beam.",
+     "object_class": "other",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "clear glass, white paper strip, red circle",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "wooden eave beam of a veranda",
+     "build_model": true
+    },
+    {
+     "name": "Goldfish",
+     "subject": "A round clear water-filled plastic bag knotted at the top with a white tie, holding one plump orange goldfish with a fanned tail.",
+     "object_class": "animal",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "orange goldfish, clear bag, white tie",
+     "backdrop_colors": "blue",
+     "surface_or_setting": "",
+     "build_model": false
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Cotton Candy",
+     "subject": "A big fluffy round ball of pink cotton candy on a white paper cone with a blue stripe around it.",
+     "object_class": "food_drink",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "pink candy floss, white cone, blue stripe",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Taiko Drum",
+     "subject": "A big barrel-shaped taiko drum with two round cream drumheads edged with a ring of round tacks, set on a low red wooden stand with two curved cradle supports, standing on a wooden stage floor.",
+     "object_class": "music_instrument",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "brown wood barrel, cream drumheads, red stand",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "wooden festival stage floor",
+     "build_model": true
+    },
+    {
+     "name": "Shaved Ice",
+     "subject": "A tall rounded mound of white shaved ice in a clear glass cup, drizzled with blue syrup, with a green spoon-straw stuck in the top.",
+     "object_class": "food_drink",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "white ice, blue syrup, green spoon-straw",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Candy Apple",
+     "subject": "A shiny red candy-coated round apple on a straight wooden stick, with a short green stem at the top, the stick held upright.",
+     "object_class": "food_drink",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "glossy red apple, light brown stick, green stem",
+     "backdrop_colors": "green",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Grilled Corn",
+     "subject": "A golden corn cob with browned grill marks on a wooden skewer, a few green husk leaves at the base.",
+     "object_class": "food_drink",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "golden yellow kernels, light brown skewer, green husk",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "wooden planks",
+     "build_model": false
+    },
+    {
+     "name": "Paper Lantern",
+     "subject": "A perfectly round white paper lantern with thin horizontal ribs and black cap rims, a blue wave icon on the front, hung from a hook on a wooden post.",
+     "object_class": "tool",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "white paper, black rims, blue wave icon, light brown post",
+     "backdrop_colors": "orange",
+     "surface_or_setting": "wooden post at a festival ground",
+     "build_model": true
+    },
+    {
+     "name": "Watermelon",
+     "subject": "A half watermelon standing cut-side up, with green striped rind, red flesh and small black seeds.",
+     "object_class": "food_drink",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "green striped rind, red flesh, black seeds",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "wooden planks",
+     "build_model": false
+    },
+    {
+     "name": "Straw Hat",
+     "subject": "A round woven straw hat with a wide cone-shaped brim and a small flat top, tied with a red band around the crown.",
+     "object_class": "clothing",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "golden straw, red band",
+     "backdrop_colors": "blue",
+     "surface_or_setting": "wooden planks",
+     "build_model": false
+    },
+    {
+     "name": "Festival Banner",
+     "subject": "A tall narrow red cloth banner hanging from a crossbar at the top of a wooden pole, with a white circle icon, the pole planted in the ground.",
+     "object_class": "other",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "red cloth, white circle, light brown pole",
+     "backdrop_colors": "green",
+     "surface_or_setting": "gravel ground of a festival square",
+     "build_model": true
+    },
+    {
+     "name": "Goldfish",
+     "subject": "A single plump orange goldfish swimming sideways with a flowing fanned tail and a white belly.",
+     "object_class": "animal",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "orange body, white belly",
+     "backdrop_colors": "blue",
+     "surface_or_setting": "",
+     "build_model": false
+    }
+   ]
+  },
+  {
+   "cards": [
+    {
+     "name": "Paper Lantern",
+     "subject": "A perfectly round yellow-orange paper lantern with thin horizontal ribs, black cap rims at the top and bottom, and a small white wave icon on the front.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "yellow-orange paper, black rims, white wave icon",
+     "backdrop_colors": "blue",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Pinwheel",
+     "subject": "A paper pinwheel with four triangular pink and yellow blades folded to a central pin, fixed to a wooden stick.",
+     "object_class": "toy_game",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "pink and yellow blades, light brown stick",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Taiko Drum",
+     "subject": "A big barrel-shaped taiko drum with two round cream drumheads edged with a ring of round tacks, set on a low red wooden stand with two curved cradle supports.",
+     "object_class": "music_instrument",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "brown wood barrel, cream drumheads, red stand",
+     "backdrop_colors": "green",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Poi Scoop",
+     "subject": "A round goldfish-scooping paper scoop: a thin white paper disc stretched inside a round red plastic ring with a short flat handle, lying flat.",
+     "object_class": "tool",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "white paper, red plastic ring and handle",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "woven straw mat",
+     "build_model": false
+    },
+    {
+     "name": "Folding Fan",
+     "subject": "An open half-circle folding hand fan with slender bamboo ribs joined at the bottom pivot, covered by white paper with a blue wave icon.",
+     "object_class": "accessory",
+     "category": "1",
+     "pattern": "waves",
+     "hero_colors": "white paper, tan bamboo ribs, blue wave icon",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Candy Apple",
+     "subject": "A shiny red candy-coated round apple on a straight wooden stick, standing upright in a small wooden block with a hole, with a short green stem.",
+     "object_class": "food_drink",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "glossy red apple, light brown stick, green stem",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "woven straw mat",
+     "build_model": false
+    },
+    {
+     "name": "Bamboo Flute",
+     "subject": "A straight tan bamboo flute, a long hollow tube with a row of round finger holes along it and thin dark red thread wraps near each end, lying flat.",
+     "object_class": "music_instrument",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "tan bamboo, dark red thread",
+     "backdrop_colors": "blue",
+     "surface_or_setting": "woven straw mat",
+     "build_model": false
+    },
+    {
+     "name": "Sparklers",
+     "subject": "Three thin paper-twist sparklers standing upright in a red metal bucket filled with white sand, each tip a bright fire with a yellow-white glowing core, orange sparks curling outward, and warm orange light cast on the bucket.",
+     "object_class": "toy_game",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "red bucket, white sand, white paper sticks, golden sparks",
+     "backdrop_colors": "purple",
+     "surface_or_setting": "packed earth ground of a festival lane",
+     "build_model": false
+    },
+    {
+     "name": "Food Stall",
+     "subject": "A small wooden two-wheeled festival food cart with a counter, a red and white striped awning fixed above on two posts, and a round lantern hung from the awning's front edge.",
+     "object_class": "vehicle",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "light brown wood, red and white awning, yellow lantern",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "packed earth ground of a festival lane",
+     "build_model": true
+    },
+    {
+     "name": "Goldfish",
+     "subject": "A round clear glass bowl full of water holding one plump orange goldfish with a fanned tail.",
+     "object_class": "animal",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "orange goldfish, clear glass bowl",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "",
+     "build_model": false
+    }
+   ]
+  }
+ ],
+ "problems": [],
+ "cast": 0
+}

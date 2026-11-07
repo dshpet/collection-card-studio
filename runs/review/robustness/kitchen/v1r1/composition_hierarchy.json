@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the pan is tilted on a diagonal, fills about 84% of the width, and the handle runs toward the top-right corner. It reads like the real bottle card. B: the oil lamp stands upright, dead center and symmetric, at only 0.43 of the width (below the real range). Green rays fill the left and right thirds. At thumbnail size it reads as a small object floating in the rays.",
+   "fix": "Draw the oil lamp larger and turned in three-quarter view, filling most of the card's width, with the glass chimney close to the top edge."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the sneakers sit low, near the left edge, below a large empty orange wall. The box height of 0.49 is short, but the placement is off-center the way a real crop is. B: the toaster is fully contained and centered on a plain pink gradient, with even clearance on all sides (margin 0.114, above the real maximum). It looks like a product shot.",
+   "fix": "Draw the toaster bigger and closer to the viewer so it nearly touches the card edges, and let the toast slices reach close to the top edge."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cookie jar is a narrow, upright, centered object (width 0.56, below range) with wide side margins (0.123, above range). Empty green wall and marble surround it. B: the barrel is larger and fills the card more tightly, with the ship deck running to the edges.",
+   "fix": "Draw the cookie jar larger and turned slightly, filling about three quarters of the card's width, with the lid near the top edge."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the vending machine stands upright and centered on a purple gradient, at the low end of the real width range. B: the kettle is wide and sits low on the same kind of gradient. Both are isolated studio placements within the real ranges. Composition gives no clear reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the faucet is a thin vertical line covering 8% of the card. The tile wall and sink dominate, and at thumbnail size the tap barely registers. B: the gate is also small (0.157), but it is framed by the brick pillars and named instantly.",
+   "fix": "Draw the faucet much larger and closer, filling most of the card's height and width, with the tiles only as a soft backdrop behind it."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the whisk floats tiny and centered in an empty green field, at width 0.36 and area 0.10, both far below the real ranges. B: the Ferris wheel is cropped boldly by the right and bottom edges and fills the card, like the real lighthouse crop.",
+   "fix": "Draw the whisk large and tilted diagonally across the card, with the wire loop near one top corner and the handle near the opposite bottom corner."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the popsicle is tilted diagonally and fills the card, matching the real bottle's placement. B: the signpost is cropped by the bottom edge and the arrows reach toward both sides, matching the real crop habit. Both read like real framing.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the fruit plate spans the card width and comes close to the left edge (margin 0.063). B: the cutting board is fully contained and centered, with an even border of checkered cloth (margin 0.128, above range). The busy blue checks compete with the hero at thumbnail size.",
+   "fix": "Draw the cutting board larger and closer so its corners reach past the card edges, and keep the tablecloth to a small strip of background."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the rolling pin lies horizontally on dough, with the marble counter edge filling the bottom. B: the scroll lies horizontally on a blue slab. Both boxes are short (0.44 and 0.46) and both are horizontal still lifes with similar framing.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the pot and burner are fully contained and centered, with clearance on every side (margin 0.093, just above the real range). B: the bird feeder sits on a tree trunk that is cropped by both the top and bottom edges (height 1.0), which is the real cards' crop habit.",
+   "fix": "Draw the pot closer and larger, with the burner grate running off the bottom edge and the lid knob near the top edge."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the oven mitts are large and slightly overlapped, coming close to the top and side edges, like the real glove. B: the jacket is centered with a comfortable margin on rays. Both are within the real ranges and read instantly.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the balloon cluster fills the upper card, with the top balloon near the top edge. B: the binocular viewer is cropped by the bottom edge. Both follow real framing habits.",
+   "fix": ""
+  }
+ ],
+ "pattern": "The generated cards show the hero whole, upright and centered, with even and often oversized clearance on every side. Thin objects like the whisk and faucet float small in empty fields. The real cards tilt the hero diagonally, scale it up until it nearly touches the edges, or crop it boldly by a card edge."
+}

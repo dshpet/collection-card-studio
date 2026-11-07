@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A anchor: the shaft and flukes are lit almost evenly from the front, with little change from the left to the right side. The cast shadow is a soft smear to the right. Light bias is 0.167, below the real range. B barrel: a bright centre band and darker sides model the round staves. The hoops have a lit top edge and a clear contact shadow on the deck.",
+   "fix": "Light the anchor from the upper left. The right side of the shaft and flukes goes into a clear darker shadow. Add a dark contact shadow where the crown touches the deck."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A bag: the light comes from the upper right. The bag turns smoothly into a deep shadow on the lower left and casts a soft shadow on the left. B vending machine: the front face is flat and evenly lit. The left side is only slightly darker. The base has a weak, light contact shadow.",
+   "fix": "Light the machine from one side so the front face gets brighter toward one edge. Make the side panel clearly darker. Add a dark contact shadow under the feet."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A rowboat: the hull interior has deep form shadows under the thwarts. The dock throws a cast shadow, and the rim of the hull shows clear light and shadow sides. B galleon: the sails and hull are lit evenly from the front, with almost no core shadow. The hull has no darker side and there is no shadow on the water. Light bias is 0.694, above the real range.",
+   "fix": "Light the ship from the left. The sails curve from a bright edge into a soft grey shadow, and the right side of the hull goes darker. Add a darker reflection and shadow on the water under the hull."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A snorkel mask: lit from the front and above. It casts a shadow on the deck boards, and the glass has a soft sheen. B slide: the right side is lit and the left curve turns into a deep shadow. Both cards have a weak light bias (0.13 and 0.149). Nothing about the light separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A map: the paper is lit flat from the front. The folds are barely shaded, the edges show almost no curl shadow, and the shadow on the table is faint. Its shading range (0.471), form contrast and light bias are all far below the real range. B map: window-shaped patches of light fall across the paper, and the folds have light and dark faces. The magnifier throws a cast shadow.",
+   "fix": "Light the map strongly from one side. Each fold shows a lit face and a shaded face. The curled edges cast small dark shadows on the table, and there is a soft shadow under the whole sheet."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A palm: the fronds and trunk are lit evenly from the front. The trunk has a mild centre highlight, and the shadow on the sand is weak. Light bias is 0.195, at the bottom of the real range. B topiary: the light comes from the upper left, the right side of each tier goes into a deep shadow, and a strong cast shadow falls to the right on the grass.",
+   "fix": "Light the palm from the upper left. Darken the right side of the trunk and the undersides of the fronds, and cast a clear palm shadow across the sand."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A viewer binoculars: broad, glossy, plastic-like highlights sit on top of the tubes. Bright reflections also run down the post on both sides, so the shadow side is unclear. Form contrast is 0.627, above the real range. B ship's wheel: the light comes from the left, the spokes have soft shadowed undersides, and the post casts a shadow on the deck.",
+   "fix": "Use one soft light from the upper left. Keep the shine on the metal small and soft, and let the right half of the tubes and post fall into a steady darker shadow."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A polaroid: a flat card with a crisp drop shadow down and to the right, which suits its category. B bell buoy: each cylinder is lit flat from the front, with only slight darkening at the edges. The bell has almost no core shadow, and the buoy has no darker side. Form contrast is 0.355, below the real range, and light bias is 0.612, above it.",
+   "fix": "Light the buoy from the upper left. The right side of each red cylinder turns to a deep shadow, and the bell gets a dark side. Add a darker ring of shadow on the water where the base meets it."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A parrot: soft light from above, with gentle shading under the wings. B balloons: soft highlights in the upper left and shadow on the lower right of each balloon. All the measurements are inside the real range, and the lighting gives no reason to pick either card.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A tricorn hat: the light comes from above. The underside of the brim is deep and dark, and the crown shows a clear core shadow. B jacket: lit from the front, with a bright middle and evenly darker sleeves on both sides. The light has no side, and the shadows are shallow.",
+   "fix": "Light the jacket from the upper left. The right sleeve and right side of the body fall into a darker shadow, and the folds under the sash and pockets get crisp shadows."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A spyglass: brass with clear lit and dark bands along the barrel, which reads as directional metal. B oil lamp: the body is lit evenly and symmetrically from the front, with a soft glow from the flame. The brass base has no clear side. Light bias is 0.745, above the real range.",
+   "fix": "Light the brass lamp from the left. The right half of the bowl and base goes into a deep shadow, with only a small warm glow from the flame on the inner surfaces."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A chest: lit from the upper left, with a lit lid top and a dark interior. The right end and the gold trim are shaded. B chest: the front face is lit flat, with only slight darkening on the right side. The coin pile is lit evenly, the shadow inside the lid is shallow, and light bias is 0.17, below the real range.",
+   "fix": "Light the chest from the upper left. The right side panel goes clearly darker, the inside of the lid and the box fall into deep shadow, and a dark contact shadow sits where the chest meets the sand."
+  }
+ ],
+ "pattern": "Generated cards are lit from the front, evenly on both sides. Front faces stay flat and bright, the shadow side is shallow or missing, curved forms shade the same on both sides, and contact shadows are weak. Real cards use one strong light from one side, so each object has a clear dark side with a core shadow and a firm contact shadow."
+}
