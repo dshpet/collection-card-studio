@@ -377,18 +377,9 @@ def render(model, out):
     camera.data.clip_end = distance * 50
     stage(scene, spec, center, distance)
 
-    prefs = bpy.context.preferences.addons["cycles"].preferences
-    for kind in ("HIP", "OPTIX", "CUDA", "METAL", "ONEAPI"):  # the first GPU backend with a device; else the CPU
-        try:
-            prefs.compute_device_type = kind
-        except TypeError:  # not built into this Blender
-            continue
-        prefs.get_devices()
-        if any(device.type == kind for device in prefs.devices):
-            break
-    for device in prefs.devices:
-        device.use = device.type == prefs.compute_device_type
-    scene.render.engine, scene.cycles.device, scene.cycles.samples = "CYCLES", "GPU", 128
+    # The CPU: a render takes about 10 s, and Cycles on HIP faulted on an integrated GPU and once hung the main GPU
+    # under parallel runs (2026-11-07), resetting it and killing every GPU process
+    scene.render.engine, scene.cycles.device, scene.cycles.samples = "CYCLES", "CPU", 128
     scene.cycles.use_denoising = True
     scene.view_settings.view_transform = "Standard"
     scene.render.filepath = out
