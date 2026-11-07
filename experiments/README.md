@@ -22,5 +22,6 @@ One-off studies behind the pipeline's decisions. Each ran once, its results are 
 | `shared_plans.py` | Do variants drift less if they share the most iconic objects? | The producer asked for it; the rule is now a lesson. Its plans are in `runs/plans/` |
 | `outfit_check.py` | Do character cards borrow the outfits of their cutouts? | Yes; a prompt line and outfit-free cutouts first fix it for the animals |
 | `robustness.py` | Does the planner hold its rules on odd, risky and hostile requests? | Yes on 19 of 19: brands, weapons, vices, text and injected instructions are declined. The sensitivity check is a model call and varies between runs |
+| `csd_plus.py` | Does hubness-corrected CSD follow the producer's pairs better? | A lean: 128 to 132 of 218, within noise |
 | `grade.py` | Does a measured backdrop grade bring twins closer to their real cards? | No: CSD 0.910 to 0.909, 21 of 40 closer |
 | `generators.py` | Does another image model draw closer than Codex? | Qwen-Image-2.1 and Nano Banana Pro on the forty twins: see STYLE_GAPS |
