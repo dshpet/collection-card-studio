@@ -23,7 +23,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from math import comb
 from pathlib import Path
 from statistics import mean
-from urllib.parse import parse_qs, unquote, urlsplit
+from urllib.parse import unquote
 
 sys.path.insert(1, str(Path(__file__).resolve().parents[1] / "scripts"))  # the pipeline's modules
 from common import ROOT, best_try, load_json, save_json  # noqa: E402
@@ -76,12 +76,11 @@ def build():
     blind = []
     for genre, run, brief, path in picked:
         twin = by_category[brief["card"]["category"]].pop()
-        blind.append({"truth": "ai", "group": genre, "source": f"{run}/{brief['id']}", "name": brief["card"]["name"],
+        blind.append({"id": f"blind/ai/{run}/{brief['id']}", "truth": "ai", "group": genre, "name": brief["card"]["name"],
                       "image": path})
-        blind.append({"truth": "real", "group": "real", "source": twin["id"], "name": twin["name"], "image": image(twin["id"])})
+        blind.append({"id": f"blind/real/{twin['id']}", "truth": "real", "group": "real", "name": twin["name"],
+                      "image": image(twin["id"])})
     rng.shuffle(blind)
-    for number, item in enumerate(blind, 1):  # the page sees only this number: no path, name or answer to give it away
-        item["id"] = f"blind/{number:02d}"
 
     genres = []
     for genre, run in RUNS.items():
@@ -108,32 +107,14 @@ def build():
     print(f"{len(blind)} blind cards ({len(picked)} ours), {len(genres)} genres, {len(cards)} cards to grade")
 
 
-def score(rater):
-    """The rater's blind result, once every blind card is answered."""
-    blind, ratings = load_json(ITEMS)["blind"], load_json(RATINGS) if RATINGS.exists() else {}
-    scores = [(item["truth"], ratings.get(f"{item['id']}|{rater}", {}).get("score")) for item in blind]
-    if not all(s for _, s in scores):
-        return {}
-    return {"right": sum((s >= 3) == (truth == "ai") for truth, s in scores), "total": len(scores),
-            "ai_caught": sum(s >= 3 for truth, s in scores if truth == "ai"), "ai": sum(t == "ai" for t, _ in scores),
-            "real_kept": sum(s <= 2 for truth, s in scores if truth == "real"), "real": sum(t == "real" for t, _ in scores)}
-
-
 class Page(BaseHTTPRequestHandler):
     def do_GET(self):
-        url = urlsplit(self.path)
-        path = unquote(url.path).lstrip("/")
+        path = unquote(self.path).lstrip("/")
         if not path:
             return self.reply(PAGE.encode(), "text/html; charset=utf-8")
         if path == "data":
-            items, ratings = load_json(ITEMS), load_json(RATINGS) if RATINGS.exists() else {}
-            items["blind"] = [{"id": item["id"]} for item in items["blind"]]
-            return self.reply(json.dumps({"items": items, "ratings": ratings}).encode(), "application/json")
-        if path == "score":
-            rater = parse_qs(url.query).get("rater", [""])[0]
-            return self.reply(json.dumps(score(rater)).encode(), "application/json")
-        if path.startswith("blind/"):
-            path = next((item["image"] for item in load_json(ITEMS)["blind"] if item["id"] == path.removesuffix(".png")), "")
+            ratings = load_json(RATINGS) if RATINGS.exists() else {}
+            return self.reply(json.dumps({"items": load_json(ITEMS), "ratings": ratings}).encode(), "application/json")
         file = (ROOT / path).resolve()
         if path.startswith(SERVED) and file.is_relative_to(ROOT) and file.suffix == ".png" and file.exists():
             return self.reply(file.read_bytes(), "image/png")
@@ -292,7 +273,7 @@ const views = {
     const list = items.blind, i = Math.max(0, list.findIndex(x => !answer(x.id))), item = list[i];
     position.blind = i;
     return `<p class="hint">Частина карток — справжні, з мобільної гри Playrix, решту намалював наш ШІ-інструмент. Скільки яких — не кажемо. Теми карток різні: не вгадуйте за темою, дивіться, як картку намальовано. Відповідайте за першим враженням, кілька секунд на картку. Клавіші 1–4.</p>
-      <div class="cards blind"><figure><img src="/${item.id}.png"><figcaption>${i + 1} з ${list.length}</figcaption></figure></div>
+      <div class="cards blind"><figure><img src="/${item.image}"><figcaption>${i + 1} з ${list.length}</figcaption></figure></div>
       <textarea id="comment" placeholder="Необов'язково: що підказало?"></textarea>
       <div class="row">${BLIND.map((label, k) => `<button data-score="${k + 1}">${k + 1} · ${label}</button>`).join("")}</div>`;
   },
@@ -337,9 +318,12 @@ const views = {
       <div class="row"><button id="back">← Назад</button><button id="next">Далі →</button></div>`;
   },
   end() {
+    const rows = items.blind.map(i => [i, answer(i.id)]).filter(([, a]) => a && a.score);
+    const right = rows.filter(([i, a]) => (a.score >= 3) === (i.truth === "ai")).length;
+    const ai = rows.filter(([i]) => i.truth === "ai"), real = rows.filter(([i]) => i.truth === "real");
     const left = items.cards.length - done(items.cards), sets = items.sets.length - done(items.sets), entry = answer("final") || {};
     return `<div class="text"><h2>Дякуємо!</h2>
-      <p id="score"></p>
+      <p>Сліпий тест: ви правильно визначили <b>${right} з ${rows.length}</b> карток (навмання вийшла б приблизно половина). Карток ШІ розпізнано ${ai.filter(([, a]) => a.score >= 3).length} з ${ai.length}, справжніх визнано справжніми ${real.filter(([, a]) => a.score <= 2).length} з ${real.length}.</p>
       ${sets ? `<p>Ще не оцінено наборів: ${sets}. Можна повернутися до частини 2.</p>` : ""}
       ${left ? `<p>Ще не оцінено карток: ${left}. Можна повернутися до частини 3.</p>` : ""}
       <p>Загальне враження: що найбільше видає ШІ? Що вийшло добре?</p>
@@ -391,9 +375,6 @@ function show() {
     on("back", () => move(-1));
     on("next", () => move(1));
   }
-  if (step === "end") fetch("/score?rater=" + encodeURIComponent(rater)).then(r => r.json()).then(s => {
-    if (s.total) document.getElementById("score").innerHTML = `Сліпий тест: ви правильно визначили <b>${s.right} з ${s.total}</b> карток (навмання вийшла б приблизно половина). Карток ШІ розпізнано ${s.ai_caught} з ${s.ai}, справжніх визнано справжніми ${s.real_kept} з ${s.real}.`;
-  });
   on("send", () => { save("final", { comment: document.getElementById("final").value }); document.getElementById("saved").textContent = "Збережено. Дякуємо!"; });
 }
 
