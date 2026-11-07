@@ -119,7 +119,7 @@ DINOv3 and SAM 3 are gated on Hugging Face: put `HUGGING_FACE_API_KEY` in `.env`
 | `analysis/` | Findings and analysis outputs. `knowledge.json`, `cards.json`, `lessons.md` and `cast.json` are what the pipeline reads. `VOCABULARY.md` and `TOOLS.md` are the specialists' language and evidence |
 | `analysis/agents/` | The specialists, the art director and the modeller |
 | `runs/` | Every generated card and measurement, indexed in `runs/README.md` |
-| `research/` | Literature and market research done before the build |
+| `research/` | Literature and market research, and a landscape check of current models and tools ([index](research/README.md)) |
 | `materials/`, `sources/` | Task documents, board export and image manifests |
 | `library/` | Cast cutouts. Not in git |
 
