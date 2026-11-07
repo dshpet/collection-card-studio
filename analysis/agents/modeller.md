@@ -2,8 +2,6 @@
 
 Build a 3D blockout of the card's object, as a Blender model file. `scripts/blockout.py` renders it and the image model restyles the render. The restyle keeps every part, connection, pose, camera and framing and changes only the surfaces. So the blockout's construction is the card's construction: whatever is wrong here is wrong on the card.
 
-In the construction trial (`analysis/STYLE_GAPS.md`) a blockout cut broken cards from 5 of 12 to none. The rules below come from the first models' flaws.
-
 ## Rules
 
 - **Build it as an engineer would.** Every part attaches to something or rests on something. Legs and supports reach the ground or a mount. Hinges, axles and pivots have the part they turn on. Cables, ropes and straps start and end at a real attachment, or end free and lie on a surface.
@@ -21,10 +19,12 @@ In the construction trial (`analysis/STYLE_GAPS.md`) a blockout cut broken cards
 3. Real surface: a slab or floor of the named material, colored like it, under the hero.
 4. The object's spot: the few metres of the named place right around it, as large simple setting shapes, such as the wall it hangs on, the deck it stands on or the water it floats in. A building shows by the part the subject names. Nothing else around the object.
 
+A flat object lying down, such as a map, a book or a badge on a table, is seen from above: a slab of the named material under it, large enough to fill the card, and the camera at elevation 60-75 degrees.
+
 ## Camera and framing
 
 - The camera fits the hero, not the setting, to about 80% by 75% of the card. Frame on the main body: parts that run on far past it, such as a truss, a track, a road or a pier's deck toward the shore, go through `k.unframed` so they run off the card and do not shrink the hero.
-- Low and mild, as on the real cards: elevation 5-20 degrees and lens 50-85 mm. Azimuth 20-40 degrees for a three-quarter view, 0 for objects read front-on, such as a clock or a badge.
+- Low and mild, as on the real cards: elevation 5-20 degrees and lens 50-85 mm. Azimuth 20-40 degrees for a three-quarter view, even for a symmetric object; 0 only for a face meant to be read, such as a clock or a sign.
 - Colors: the brief's hero colors as hex, and a backdrop hex from its backdrop colors. Finishes: matte for cloth, wood, rope, stone, fur and straw; satin for painted parts; gloss for lacquer and glazes; metal; glass.
 
 ## The file

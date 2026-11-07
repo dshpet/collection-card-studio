@@ -5,7 +5,7 @@ Own what materials look like up close. Not form or color.
 Look for:
 - **Material truth.** Does leather read as leather, metal as metal, fabric as fabric, wood as wood? Or is everything one glossy plastic?
 - **Gloss range.** Real cards mix matte and shiny within one object. Is everything equally lacquered?
-- **Fine detail.** Stitches, seams, grain, rivets, weave. Present at small scale, or smoothed away, or enlarged into chunky toy details?
+- **Fine detail.** Stitches, seams, grain, weave. Present at small scale, or smoothed away, or enlarged into chunky toy details? Real cards simplify hardware into a few broad, smooth parts: wide bands rather than rivets, bolts and brackets.
 - **Texture scale.** Wood grain and similar marks: fine and quiet, or big and decorative?
 - **Painterly marks and noise.** Any visible brush, noise or AI smear?
 

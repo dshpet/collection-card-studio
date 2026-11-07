@@ -5,7 +5,7 @@ Own hue and chroma. Not value design or lighting.
 Look for:
 - **Natural color.** Does the object keep believable local colors, or is everything pushed to pure hue?
 - **Chroma level.** Are hero and background equally loud? How much neutral or muted color is present to rest the eye?
-- **Hue roles.** Hero against background, and the one accent if any.
+- **Hue roles.** Hero against background, and the one accent if any. Real backdrops go against the hero's color temperature, a warm hero on a cool backdrop on 84% of cards, and almost never repeat a hue the hero has.
 - **Shadow color.** What hue do shadows shift to? Rich and related, or orange/red everywhere?
 - **Palette count.** How many hue families on one card?
 - **Warm bias.** Is the whole card pulled warm?
