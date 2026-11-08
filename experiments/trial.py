@@ -15,15 +15,14 @@ from pathlib import Path
 sys.path.insert(1, str(Path(__file__).resolve().parents[1] / "scripts"))  # the pipeline's modules
 
 import argparse
-import subprocess
 from concurrent.futures import ThreadPoolExecutor
 
-from common import ROOT, load_json
+from common import ROOT, SIZE, load_json
 
 from PIL import Image
 
 from draw import draw
-from make_set import SIZE, blockout_brief, card_brief
+from make_set import blockout_brief, card_brief, render_model
 
 RUN = ROOT / "runs" / "trial"
 ARMS = ("control", "how", "blockout", "blockout2")
@@ -38,8 +37,9 @@ def briefs():
 def blockout(arm, brief):
     out = RUN / arm / f"{brief['id']}.png"
     if not out.exists():
-        subprocess.run(["blender", "-b", "--factory-startup", "--python", str(ROOT / "scripts" / "blockout.py"), "--",
-                        str(RUN / MODELS[arm] / f"{brief['id']}.py"), str(out)], check=True, capture_output=True)
+        error, _ = render_model(RUN / MODELS[arm] / f"{brief['id']}.py", out)
+        if error:
+            raise RuntimeError(error)
     return out
 
 
@@ -64,7 +64,7 @@ def draw_one(job):
     references = [ROOT / f"materials/card_examples/{i}.png" for i in brief["references"]]
     if arm in MODELS:
         references.append(blockout(arm, brief))
-    for tries_left in (1, 0):
+    for _ in range(2):
         try:
             draw(text, references, full)
             out.parent.mkdir(exist_ok=True)

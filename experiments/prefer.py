@@ -11,8 +11,7 @@ Judges, each scored on pairs the producer decided:
     reviewers  the nine specialists and the art director, asked A or B beside the real card(s)
 
 With --target works the truth is the producer's works / slightly off / broken label instead of the grade, closest picks
-drop out, and the director is asked which drawing is built right. Results go to runs/prefer_works. The construction
-and perspective checkers tested there, at chance, were removed (commit 8bee565 has them).
+drop out, and the director is asked which drawing is built right. Results go to runs/prefer_works.
 
     prefer.py embed       features and the two numeric judges
     prefer.py reviewers   about 270 model calls
@@ -33,7 +32,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 os.environ.setdefault("HF_HUB_OFFLINE", "1")
 
-from common import ROOT, load_json, save_json
+from common import JUDGE, ROOT, load_json, save_json, strict, text
 
 import numpy as np
 from PIL import Image
@@ -170,7 +169,7 @@ def numeric_judges(rows):
 
 
 def reviewers(rows, rater, director_rater, workers):
-    from review import ROLES, array, ask, role_prompt, strict, text
+    from review import ROLES, array, ask, role_prompt
 
     folder = OUT / "sheets"
     folder.mkdir(parents=True, exist_ok=True)
@@ -273,7 +272,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("mode", choices=("embed", "reviewers", "report"))
     parser.add_argument("--rater", default="claude-sonnet-5-5")
-    parser.add_argument("--director", default="claude-opus-5-5")
+    parser.add_argument("--director", default=JUDGE)
     parser.add_argument("--workers", type=int, default=6)
     parser.add_argument("--target", choices=("look", "works"), default="look")
     args = parser.parse_args()

@@ -66,8 +66,6 @@ def evidence(genre, outside, producer):
 
 
 def set_numbers(genre):
-    import torch  # noqa: F401  (compare.py loads CSD on the GPU)
-
     from compare import real_rows, set_row
     from embed import MODELS, load_csd
 

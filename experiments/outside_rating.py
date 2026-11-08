@@ -14,20 +14,24 @@ and no compression marks, so file traits give nothing away.
 Each generated card in the blind test faces a real card of the same art category.
 """
 
+import sys
+from pathlib import Path
+
+sys.path.insert(1, str(Path(__file__).resolve().parents[1] / "scripts"))  # the pipeline's modules
+
 import argparse
 import json
 import random
-import sys
 import threading
 from collections import defaultdict
-from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+from http.server import ThreadingHTTPServer
 from math import comb
-from pathlib import Path
 from statistics import mean
 from urllib.parse import unquote
 
-sys.path.insert(1, str(Path(__file__).resolve().parents[1] / "scripts"))  # the pipeline's modules
-from common import ROOT, best_try, load_json, save_json  # noqa: E402
+from common import ROOT, best_try, load_json, save_json
+
+import rate_ui
 
 RUNS = {genre: f"prefinal/{genre}" for genre in ("western", "sci-fi", "horror", "period-drama", "detective")}
 NAMES = {"western": "Вестерн", "sci-fi": "Фантастика", "horror": "Жахи", "period-drama": "Історична драма",
@@ -108,7 +112,9 @@ def build():
     print(f"{len(blind)} blind cards ({len(picked)} ours), {len(genres)} genres, {len(cards)} cards to grade")
 
 
-class Page(BaseHTTPRequestHandler):
+class Page(rate_ui.Page):
+    """rate_ui's server with this session's page, items, images and ratings file."""
+
     def do_GET(self):
         path = unquote(self.path).lstrip("/")
         if not path:
@@ -128,16 +134,6 @@ class Page(BaseHTTPRequestHandler):
             data[f"{entry['id']}|{entry['rater']}"] = entry
             save_json(RATINGS, data)
         self.reply(b"{}", "application/json")
-
-    def reply(self, body, kind):
-        self.send_response(200)
-        self.send_header("Content-Type", kind)
-        self.send_header("Content-Length", str(len(body)))
-        self.end_headers()
-        self.wfile.write(body)
-
-    def log_message(self, format, *args):
-        pass
 
 
 def summary():

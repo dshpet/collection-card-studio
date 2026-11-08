@@ -16,7 +16,6 @@ import sys
 from pathlib import Path
 
 sys.path.insert(1, str(Path(__file__).resolve().parents[1] / "scripts"))  # the pipeline's modules
-sys.path.insert(1, str(Path(__file__).resolve().parent))
 
 import argparse
 from collections import defaultdict
@@ -26,8 +25,8 @@ from PIL import Image
 from scipy.ndimage import binary_dilation
 from skimage.color import rgb2lab
 
-from color_logic import lch, warm
-from colors import colors
+from color_logic import warm
+from colors import colors, oklch
 from common import DERIVED, ROOT, best_try, load_json
 
 GENRES = ("western", "sci-fi", "horror")
@@ -96,12 +95,12 @@ def main():
         sym = [x for x in r if x["category"] in ("1", "3")]
         pool = [x for x in r if x["category"] in ("2", "3") and x["pool"] is not None]
         cut = [x for x in r if x["category"] == "4"]
-        hot = [x for x in r if lch(x["hero"])[1] >= 0.04 and warm(lch(x["hero"])[2])]
+        hot = [x for x in r if oklch(x["hero"])[1] >= 0.04 and warm(oklch(x["hero"])[2])]
         floating = [x for x in r if x["category"] == "1"]
         print(f"{group:7} {sum(x['mirror'] >= 0.85 for x in sym):3}/{len(sym):<3}"
               f"                | {sum(x['pool'] > 5 for x in pool):3}/{len(pool):<3}"
               f"                  | {sum(x['cut'] for x in cut):3}/{len(cut):<3}"
-              f"              | {sum(not warm(lch(x['backdrop'])[2]) for x in hot):3}/{len(hot):<3}"
+              f"              | {sum(not warm(oklch(x['backdrop'])[2]) for x in hot):3}/{len(hot):<3}"
               f"    | {sum(x['backdrop_family'] in ('cyan', 'blue', 'green') for x in floating):3}/{len(floating):<3}"
               f"                     | {np.mean([x['chroma'] for x in r]):.3f}")
     for group in ("batch", "batch2"):

@@ -124,7 +124,10 @@ def main():
     parser.add_argument("--only", nargs="+", choices=list(REQUESTS), help="these requests only")
     parser.add_argument("--out", default="plans", help="folder under runs/robustness/")
     args = parser.parse_args()
-    plan_all(args.workers, args.only or list(REQUESTS), args.out) if args.step == "plan" else scan(args.out)
+    if args.step == "plan":
+        plan_all(args.workers, args.only or list(REQUESTS), args.out)
+    else:
+        scan(args.out)
 
 
 if __name__ == "__main__":

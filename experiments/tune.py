@@ -3,8 +3,7 @@
 The pairs of experiments/prefer.py split by object into a tuning half and a held-out half. Each round the director judges
 the tuning half with the current notes, an editor sees its mistakes with the producer's own comments and proposes one
 change, and the change stays only if agreement rises by more than MARGIN pairs. At the end the tuned notes and the
-untouched prompt each judge the held-out half once. Notes that win there go to analysis/agents/director_notes.md. None
-held out (analysis/STYLE_GAPS.md), so the pipeline reads no tuned notes.
+untouched prompt each judge the held-out half once. None held out (analysis/STYLE_GAPS.md).
 
     tune.py --rounds 6
 """
@@ -19,12 +18,12 @@ import random
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
 
-from common import ROOT, load_json, save_json
+from common import JUDGE, ROOT, load_json, save_json, strict, text
 
-from prefer import BATCH, OUT as PAIRS, pairs, sheet
+from prefer import BATCH, OUT as PAIRS, pairs
+from review import array, ask, judge_sheet
 
 OUT = ROOT / "runs" / "tune"
-NOTES = ROOT / "analysis" / "agents" / "director_notes.md"
 MARGIN = 3
 SHOWN_MISTAKES = 8
 
@@ -65,12 +64,11 @@ def lessons(rows):
     out = []
     for row in [r for r in rows if r["lesson"]]:
         labels = ("A, preferred", "B") if row["user"] == "A" else ("A", "B, preferred")
-        out.append((sheet(row, folder / f"lesson_{row['pair']}.png", labels), row["lesson"]))
+        out.append((judge_sheet(row, folder / f"lesson_{row['pair']}.png", labels), row["lesson"]))
     return out
 
 
 def schema(batch):
-    from review import array, strict, text
     return strict({"pairs": array(strict({
         "pair": {"type": "string", "enum": [r["pair"] for r in batch]},
         "closer": {"type": "string", "enum": ["A", "B", "neither"]},
@@ -79,8 +77,6 @@ def schema(batch):
 
 def judge(rows, notes, taught, rater, label, workers):
     """The director's answers on rows, cached under label."""
-    from review import ask
-
     folder = OUT / "judged" / label
     batches = [rows[i:i + BATCH] for i in range(0, len(rows), BATCH)]
     brief = (ROOT / "analysis" / "agents" / "art_director.md").read_text("utf-8")
@@ -119,8 +115,6 @@ def agreement(rows, answers, confident=1):
 
 
 def propose(notes, rows, answers, user_notes, rater, round_number):
-    from review import ask, strict, text
-
     wrong = [r for r in rows if r["pair"] in answers and answers[r["pair"]]["closer"] not in ("neither", r["user"])]
     random.Random(round_number).shuffle(wrong)
     shown = wrong[:SHOWN_MISTAKES]
@@ -145,7 +139,7 @@ def propose(notes, rows, answers, user_notes, rater, round_number):
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--rounds", type=int, default=6)
-    parser.add_argument("--rater", default="claude-opus-5-5")
+    parser.add_argument("--rater", default=JUDGE)
     parser.add_argument("--workers", type=int, default=6)
     args = parser.parse_args()
     rows = pairs()
@@ -178,10 +172,6 @@ def main():
     result["held_first_run"] = {f"confidence>={c}": agreement(held, old, c) for c in (1, 3, 4)}
     save_json(OUT / "result.json", result)
     print(result, flush=True)
-    tuned, untouched = result["held_tuned"]["confidence>=1"], result["held_untouched"]["confidence>=1"]
-    if notes.strip() and tuned[0] / max(tuned[1], 1) > untouched[0] / max(untouched[1], 1):
-        NOTES.write_text("# Director notes\n\nLearned by `experiments/tune.py` from the user's past choices. Read by "
-                         "`choose()`.\n\n" + notes.strip() + "\n", "utf-8")
 
 
 if __name__ == "__main__":

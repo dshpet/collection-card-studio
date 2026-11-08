@@ -22,7 +22,7 @@ import argparse
 import random
 from concurrent.futures import ThreadPoolExecutor
 
-from common import DERIVED, ROOT, load_json, save_json
+from common import DERIVED, JUDGE, ROOT, SIZE, load_json, save_json, strict, text
 
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
@@ -125,7 +125,7 @@ def pair_sheet(real, drawn, real_first, out):
     font = ImageFont.load_default(30)
     sheet = Image.new("RGB", (430 * 2 + 12, 480), "white")
     for i, record in enumerate((real, drawn) if real_first else (drawn, real)):
-        sheet.paste(Image.open(ROOT / record["file"]).convert("RGB").resize((430, 480), Image.LANCZOS), (i * 442, 0))
+        sheet.paste(Image.open(ROOT / record["file"]).convert("RGB").resize(SIZE, Image.LANCZOS), (i * 442, 0))
         draw = ImageDraw.Draw(sheet)
         draw.rectangle((i * 442, 0, i * 442 + 44, 44), fill="white")
         draw.text((i * 442 + 10, 4), "AB"[i], fill="black", font=font)
@@ -134,7 +134,7 @@ def pair_sheet(real, drawn, real_first, out):
 
 
 def eye_readings(label, rater, workers):
-    from review import array, ask, strict, text
+    from review import array, ask
 
     folder = OUT / label
     (folder / "sheets").mkdir(parents=True, exist_ok=True)
@@ -272,9 +272,11 @@ def main():
     parser.add_argument("mode", choices=("read", "draw", "compare"))
     parser.add_argument("labels", nargs="+")
     parser.add_argument("--replace", nargs=2, metavar=("OLD", "NEW"))
-    parser.add_argument("--rater", default="claude-opus-5-5")
+    parser.add_argument("--rater", default=JUDGE)
     parser.add_argument("--workers", type=int, default=4)
     args = parser.parse_args()
+    if args.mode == "draw" and not args.replace:
+        parser.error("draw needs --replace OLD NEW")
     if args.mode == "read":
         read(args.labels[0], args.rater, args.workers)
     elif args.mode == "draw":

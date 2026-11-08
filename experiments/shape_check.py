@@ -18,12 +18,12 @@ sys.path.insert(1, str(Path(__file__).resolve().parents[1] / "scripts"))  # the 
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 
-from common import ROOT, load_json, save_json
+from common import ROOT, contact_sheet, load_json, save_json
 
 import numpy as np
 from PIL import Image
 
-from make_set import contact_sheet, draw_card
+from make_set import draw_card
 
 RUN = ROOT / "runs" / "shape_check"
 CIRCLE = " Its face is a perfect circle, not an oval."

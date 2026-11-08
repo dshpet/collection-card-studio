@@ -16,9 +16,9 @@ sys.path.insert(1, str(Path(__file__).resolve().parents[1] / "scripts"))  # the 
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 
-from common import ROOT, load_json
+from common import ROOT, contact_sheet, load_json
 
-from make_set import contact_sheet, draw_card
+from make_set import draw_card
 
 RUN = ROOT / "runs" / "plain_check"
 PLAIN = "A plain five-pointed star badge with a ball tip on each point and a ring around the edge, and no gem."

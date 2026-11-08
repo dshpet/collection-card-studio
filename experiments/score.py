@@ -27,7 +27,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 os.environ.setdefault("HF_HUB_OFFLINE", "1")
 
-from common import ANALYSIS, ROOT, load_json, save_json
+from common import ANALYSIS, JUDGE, ROOT, SIZE, load_json, save_json, strict, text
 
 import numpy as np
 from PIL import Image
@@ -187,7 +187,7 @@ def pair_similarity():
 
 
 def score_schema(keys):
-    from review import array, strict, text
+    from review import array
     return strict({"scores": array(strict({"card": {"type": "string", "enum": keys},
                                            "score": {"type": "integer", "minimum": 1, "maximum": 10},
                                            "tell": text()}))})
@@ -199,7 +199,7 @@ def lesson_images(rows, folder):
     for row in [r for r in rows if "lesson" in r]:
         label = "REAL" if row["lesson"] == "REAL" else f"grade {round(np.mean(row['grades']))} of 5"
         path = folder / f"lesson_{row['key']}.png"
-        labelled(Image.open(ROOT / row["file"]).convert("RGB").resize((430, 480), Image.LANCZOS), label).save(path)
+        labelled(Image.open(ROOT / row["file"]).convert("RGB").resize(SIZE, Image.LANCZOS), label).save(path)
         paths.append(path)
         notes.append(f"{label}" + (f": {row['lesson']}" if row["lesson"] not in ("", "REAL") else ""))
     return paths, notes
@@ -223,7 +223,7 @@ def specialists(rows, rater, director_rater, workers):
     for row in test:
         path = folder / f"{row['key']}.png"
         if not path.exists():
-            Image.open(ROOT / row["file"]).convert("RGB").resize((430, 480), Image.LANCZOS).save(path)
+            Image.open(ROOT / row["file"]).convert("RGB").resize(SIZE, Image.LANCZOS).save(path)
         cards[row["key"]] = path
     first = len(taught) + 2
 
@@ -350,7 +350,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("mode", choices=("embed", "specialists", "report"))
     parser.add_argument("--rater", default="claude-sonnet-5-5")
-    parser.add_argument("--director", default="claude-opus-5-5")
+    parser.add_argument("--director", default=JUDGE)
     parser.add_argument("--workers", type=int, default=6)
     args = parser.parse_args()
     rows = dataset()

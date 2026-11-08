@@ -38,12 +38,20 @@ import cv2
 import numpy as np
 from PIL import Image
 from scipy import ndimage
-from scipy.stats import mannwhitneyu, wilcoxon
+from scipy.stats import mannwhitneyu, spearmanr, wilcoxon
 from skimage import filters, morphology
 
 OUT = ROOT / "runs" / "smooth_check"
 MATERIAL = re.compile(r"\b(felt|leather|wool|woolen|knit|fabric|cloth|canvas|linen|velvet|silk|lace|tweed|burlap|"
                       r"suede|fur|furry|straw|wicker|wood|wooden|grain|parchment|paper|rope|hemp|cotton|denim)\b", re.I)
+
+
+def load_rgb(path):
+    return np.asarray(Image.open(path).convert("RGB"), dtype=np.float32) / 255
+
+
+def load_mask(path):
+    return np.asarray(Image.open(path).convert("L")) > 127
 
 
 def guided(image, radius, eps):
@@ -109,6 +117,12 @@ def surface_deviation(rgb, mask):
     return np.sqrt(np.maximum(ndimage.uniform_filter(lightness ** 2, 3) - ndimage.uniform_filter(lightness, 3) ** 2, 0))[surface]
 
 
+def real_surface(card_id):
+    """surface_deviation of a real card."""
+    return surface_deviation(load_rgb(ROOT / "materials" / "card_examples" / f"{card_id}.png"),
+                             load_mask(ANALYSIS / "derived" / "masks" / f"{card_id}.png"))
+
+
 def flat_gaps(styles=("old", "final", "r3", "r9")):
     """Flat share of each twin minus its own real card, by style round and flatness threshold, on the drawn cards.
     A round without masks gets BiRefNet masks in this script's own folder."""
@@ -127,10 +141,7 @@ def flat_gaps(styles=("old", "final", "r3", "r9")):
             mask = mask if mask.exists() else OUT / "derived" / f"masks-{style}" / drawn.name
             if not (drawn.exists() and mask.exists()):
                 continue
-            ours = surface_deviation(np.asarray(Image.open(drawn).convert("RGB"), dtype=np.float32) / 255,
-                                     np.asarray(Image.open(mask).convert("L")) > 127)
-            real = surface_deviation(np.asarray(Image.open(ROOT / "materials" / "card_examples" / f"{brief['real']}.png").convert("RGB"), dtype=np.float32) / 255,
-                                     np.asarray(Image.open(ANALYSIS / "derived" / "masks" / f"{brief['real']}.png").convert("L")) > 127)
+            ours, real = surface_deviation(load_rgb(drawn), load_mask(mask)), real_surface(brief["real"])
             for threshold in gaps:
                 gaps[threshold].append(float((ours < threshold).mean() - (real < threshold).mean()))
             per_style.setdefault(style, {})[brief["id"]] = gaps[0.004][-1]
@@ -161,10 +172,8 @@ def caught():
             if rating.get("answer") not in ("A", "B"):  # "neither" is no pick
                 continue
             drawn = ROOT / "runs" / "twins40" / style / "tries" / f"{brief['id']}_1.png"
-            ours = surface_deviation(np.asarray(Image.open(drawn).convert("RGB"), dtype=np.float32) / 255,
-                                     np.asarray(Image.open(drawn.parent.parent / "derived" / "masks" / drawn.name).convert("L")) > 127)
-            real = surface_deviation(np.asarray(Image.open(ROOT / "materials" / "card_examples" / f"{brief['real']}.png").convert("RGB"), dtype=np.float32) / 255,
-                                     np.asarray(Image.open(ANALYSIS / "derived" / "masks" / f"{brief['real']}.png").convert("L")) > 127)
+            ours = surface_deviation(load_rgb(drawn), load_mask(drawn.parent.parent / "derived" / "masks" / drawn.name))
+            real = real_surface(brief["real"])
             gaps[rating["correct"]].append(float((ours < 0.004).mean() - (real < 0.004).mean()))
     return {"caught_median": round(float(np.median(gaps[True])), 3), "missed_median": round(float(np.median(gaps[False])), 3),
             "n": [len(gaps[True]), len(gaps[False])], "auc_p": auc(gaps[True], gaps[False])}
@@ -184,12 +193,10 @@ def pairs():
     flat = {}
     for path in drawn:
         mask = mask_of(path) if mask_of(path).exists() else OUT / "derived" / "masks-pairs" / f"{path.replace('/', '_')[:-4]}.png"
-        flat[path] = float((surface_deviation(np.asarray(Image.open(ROOT / path).convert("RGB"), dtype=np.float32) / 255,
-                                              np.asarray(Image.open(mask).convert("L")) > 127) < 0.004).mean())
+        flat[path] = float((surface_deviation(load_rgb(ROOT / path), load_mask(mask)) < 0.004).mean())
     for path in sorted({r for row in rows for r in row["references"]}):
-        card = Path(path).stem
-        flat[path] = float((surface_deviation(np.asarray(Image.open(ROOT / path).convert("RGB"), dtype=np.float32) / 255,
-                                              np.asarray(Image.open(ANALYSIS / "derived" / "masks" / f"{card}.png").convert("L")) > 127) < 0.004).mean())
+        mask = ANALYSIS / "derived" / "masks" / f"{Path(path).stem}.png"
+        flat[path] = float((surface_deviation(load_rgb(ROOT / path), load_mask(mask)) < 0.004).mean())
     result = {}
     for name, group in (("decided", [r for r in rows if not r["lesson"]]),
                         ("texture_lessons", [r for r in rows if r["lesson"] and "texture" in r["lesson"]])):
@@ -220,11 +227,9 @@ def twins():
         real_file = ROOT / "materials" / "card_examples" / f"{brief['real']}.png"
         if not (drawn.exists() and mask_path.exists()):
             continue
-        real_rgb = np.asarray(Image.open(real_file).convert("RGB"), dtype=np.float32) / 255
-        real_mask = np.asarray(Image.open(ANALYSIS / "derived" / "masks" / f"{brief['real']}.png").convert("L")) > 127
-        row = {"id": brief["id"], "real": texture_fields(real_rgb, real_mask)}
-        mask = np.asarray(Image.open(mask_path).convert("L")) > 127
-        full = np.asarray(Image.open(drawn).convert("RGB"), dtype=np.float32) / 255
+        real_mask = load_mask(ANALYSIS / "derived" / "masks" / f"{brief['real']}.png")
+        row = {"id": brief["id"], "real": texture_fields(load_rgb(real_file), real_mask)}
+        mask, full = load_mask(mask_path), load_rgb(drawn)
         images = [Image.open(real_file).convert("RGB")]
         for arm, smooth in ARMS.items():
             small = Image.fromarray((np.clip(smooth(full), 0, 1) * 255).round().astype(np.uint8)).resize(SIZE, Image.LANCZOS)
@@ -265,25 +270,25 @@ def main():
     if options.flat:
         result = flat_gaps(options.flat)
         save_json(OUT / f"flat-{'-'.join(options.flat)}.json", result)
-        return print(result)
+        print(result)
+        return
     if options.pairs:
         result = pairs()
         save_json(OUT / "pairs.json", result)
-        return print(result)
+        print(result)
+        return
     if options.twins:
         return twins()
     measured = load_json(ANALYSIS / "measurements.json")
     real = []
     for record in cards():
         mask_path = ANALYSIS / "derived" / "masks" / f"{record['id']}.png"
-        rgb = np.asarray(Image.open(ROOT / record["file"]).convert("RGB"), dtype=np.float32) / 255
-        mask = np.asarray(Image.open(mask_path).convert("L")) > 127
-        real.append(texture_fields(rgb, mask) | {k: measured[record["id"]]["surface_finish"][k] for k in ("micro_texture", "detail_subject")})
+        real.append(texture_fields(load_rgb(ROOT / record["file"]), load_mask(mask_path))
+                    | {k: measured[record["id"]]["surface_finish"][k] for k in ("micro_texture", "detail_subject")})
     rows = ours()
     (OUT / "derived" / "masks").mkdir(parents=True, exist_ok=True)
     for row in rows:
-        mask = np.asarray(Image.open(row["mask"]).convert("L")) > 127
-        full = np.asarray(Image.open(ROOT / row["full"]).convert("RGB"), dtype=np.float32) / 255
+        mask, full = load_mask(row["mask"]), load_rgb(ROOT / row["full"])
         base = None
         for arm, smooth in ARMS.items():
             small = Image.fromarray((np.clip(smooth(full), 0, 1) * 255).round().astype(np.uint8)).resize(SIZE, Image.LANCZOS)
@@ -311,8 +316,8 @@ def main():
         "median_named_plain": [round(float(np.median([r["none"][k] for r in group])), 4) for group in (named, plain)],
         "auc_named_over_plain": auc([r["none"][k] for r in named], [r["none"][k] for r in plain])} for k in keys}}
     graded = [r for r in rows if r["grade"]]
-    summary["grade_spearman"] = {k: round(float(__import__("scipy").stats.spearmanr(
-        [r["none"][k] for r in graded], [r["grade"] for r in graded]).statistic), 3) for k in keys}
+    summary["grade_spearman"] = {k: round(float(spearmanr([r["none"][k] for r in graded],
+                                                          [r["grade"] for r in graded]).statistic), 3) for k in keys}
     save_json(OUT / "cards.json", [{k: (str(v) if isinstance(v, Path) else v) for k, v in r.items()} for r in rows])
     save_json(OUT / "summary.json", summary)
     # A sheet per card for the most textured dozen: arms side by side, then a 2x crop of the centre

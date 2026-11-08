@@ -25,16 +25,12 @@ import numpy as np
 from PIL import Image
 from skimage import morphology
 
+from colors import oklch
 from common import DERIVED, ROOT, best_try, load_json
 from measure import to_oklab
 
 WARM = (330, 115)  # Oklab hue angles from pink through red, orange and yellow
 SIZE = (215, 240)
-
-
-def lch(hex_color):
-    lab = to_oklab(np.array([int(hex_color[i:i + 2], 16) / 255 for i in (1, 3, 5)]))
-    return float(lab[0]), float(np.hypot(lab[1], lab[2])), float(np.degrees(np.arctan2(lab[2], lab[1])) % 360)
 
 
 def gap(a, b):
@@ -88,8 +84,8 @@ def main():
     rows = [row for row in load_json(ROOT / "runs" / "colors" / "colors.json") if row["group"] == "real"]
     measured = load_json(ROOT / "analysis" / "measurements.json")
     slots = {card["id"]: card["slot"] for card in load_json(ROOT / "analysis" / "cards.json")}
-    hero = np.array([lch(row["hero"]) for row in rows])
-    back = np.array([lch(row["backdrop"]) for row in rows])
+    hero = np.array([oklch(row["hero"]) for row in rows])
+    back = np.array([oklch(row["backdrop"]) for row in rows])
     colored = hero[:, 1] >= 0.04
 
     print(f"Hero main colors near grey (Oklab chroma under 0.04): {(~colored).sum()} of {len(rows)}")
@@ -108,8 +104,8 @@ def main():
           f"(n {(colored & ~hero_warm).sum()}); warm backdrops overall {back_warm.mean():.2f}")
 
     def secondaries(card_id):
-        return [lch(p["hex"])[2] for p in measured[card_id]["color_palette"]["palette_subject"][1:]
-                if lch(p["hex"])[1] > 0.06 and p["share"] >= 0.03]
+        return [oklch(p["hex"])[2] for p in measured[card_id]["color_palette"]["palette_subject"][1:]
+                if oklch(p["hex"])[1] > 0.06 and p["share"] >= 0.03]
     others = [secondaries(row["id"]) for row in rows]
     near = [min((gap(b, h) for h in o), default=None) for b, o in zip(back[:, 2], others)]
     near_shuffled = [min((gap(b, h) for h in o), default=None) for _ in range(100)

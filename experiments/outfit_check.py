@@ -16,10 +16,10 @@ sys.path.insert(1, str(Path(__file__).resolve().parents[1] / "scripts"))  # the 
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 
-from common import ROOT, load_json
+from common import ROOT, contact_sheet, load_json
 
 import make_set
-from make_set import contact_sheet, draw_card
+from make_set import draw_card
 
 RUN = ROOT / "runs" / "outfit_check"
 SENTENCE = " The cutouts show who each character is, not what it wears: dress it only as the subject says."

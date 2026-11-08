@@ -17,15 +17,14 @@ from pathlib import Path
 sys.path.insert(1, str(Path(__file__).resolve().parents[1] / "scripts"))  # the pipeline's modules
 
 import argparse
-import subprocess
 from concurrent.futures import ThreadPoolExecutor
 
-from common import ROOT, load_json
+from common import JUDGE, ROOT, SIZE, load_json
 
 from PIL import Image
 
 from draw import draw
-from make_set import SIZE, blockout_brief, model_card
+from make_set import blockout_brief, model_card, render_model
 from photos import fetch
 from style import BLOCKOUT
 
@@ -37,6 +36,7 @@ BUILD = {("western", "v1_09"): "covered wagon", ("western", "v1_10"): "steam loc
          ("horror", "v1_04"): "cast iron cauldron", ("sci-fi", "v1_07"): "Mars rover",
          ("sci-fi", "v1_10"): "geodesic dome"}
 FIRST = "The attached images are real cards from the game, except the last one, which is a 3D blockout of a new card."
+assert FIRST in BLOCKOUT
 
 
 def brief_of(run, card_id):
@@ -48,9 +48,9 @@ def soft_render(run, card_id):
     out = RUN / "soft" / run / "models" / f"{card_id}.png"
     if not out.exists():
         out.parent.mkdir(parents=True, exist_ok=True)
-        subprocess.run(["blender", "-b", "--factory-startup", "--python", str(ROOT / "scripts" / "blockout.py"), "--",
-                        str(ROOT / "runs" / f"{run}-blockout" / "models" / f"{new['id']}.py"), str(out), "soft"],
-                       check=True, capture_output=True)
+        error, _ = render_model(ROOT / "runs" / f"{run}-blockout" / "models" / f"{new['id']}.py", out, "soft")
+        if error:
+            raise RuntimeError(error)
     return out
 
 
@@ -65,10 +65,9 @@ def restyle(arm, run, brief, render, photos=()):
             f"The first {len(references)} attached images are real cards from the game: take the rendering, lighting, "
             f"finish, color and level of detail only from them. The next is a photo of the real object: use it only to "
             "understand how it is built, never for its look. The last image is a 3D blockout of a new card."))
-    assert FIRST in BLOCKOUT
     (RUN / arm / run / "prompts").mkdir(parents=True, exist_ok=True)
     (RUN / arm / run / "prompts" / f"{brief['id']}_1.txt").write_text(text, "utf-8")
-    for tries_left in (1, 0):
+    for _ in range(2):
         try:
             draw(text, references + list(photos) + [render], full)
             out.parent.mkdir(exist_ok=True)
@@ -98,7 +97,7 @@ def build_job(key, rater):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--rater", default="claude-opus-5-5")
+    parser.add_argument("--rater", default=JUDGE)
     parser.add_argument("--workers", type=int, default=4)
     args = parser.parse_args()
     with ThreadPoolExecutor(args.workers) as pool:

@@ -23,7 +23,7 @@ from PIL import Image
 from scipy.ndimage import binary_dilation, gaussian_filter
 from skimage.color import lab2rgb, rgb2lab
 
-from common import DERIVED, ROOT, load_json, save_json
+from common import DERIVED, ROOT, SIZE, load_json, save_json
 
 RUN = ROOT / "runs" / "grade"
 TWINS = ROOT / "runs" / "twins40"
@@ -31,8 +31,8 @@ BINS = np.linspace(0, 1, 11)
 
 
 def load(image, mask):
-    rgb = np.asarray(Image.open(image).convert("RGB").resize((430, 480), Image.LANCZOS), dtype=float) / 255
-    subject = np.asarray(Image.open(mask).convert("L").resize((430, 480))) > 127
+    rgb = np.asarray(Image.open(image).convert("RGB").resize(SIZE, Image.LANCZOS), dtype=float) / 255
+    subject = np.asarray(Image.open(mask).convert("L").resize(SIZE)) > 127
     return rgb, subject
 
 

@@ -1,10 +1,10 @@
-"""Which backdrop colours do the real cards use, and do ours follow them?
+"""Which backdrop colors do the real cards use, and do ours follow them?
 
-Asked by the producer after the sand-coloured backdrop of the batch potion (horror-batch v1_07).
+Asked by the producer after the sand-colored backdrop of the batch potion (horror-batch v1_07).
 
 Measured per card: the backdrop is the background above the subject (top 35% of rows, the subject mask dilated), the
 surface is the background in the bottom 20% of rows (used for categories 2 and 3, which stand on one), the hero is the
-subject mask. Each gets its main colour by k-means in Oklab, as in scripts/measure.py, then a hue family
+subject mask. Each gets its main color by k-means in Oklab, as in scripts/measure.py, then a hue family
 by HSV. Real cards, the batch (runs/<genre>-batch) and the earlier finals (runs/final.json) are measured the same way.
 
     colors.py     prints the tables and writes runs/colors/colors.json and runs/colors/sheet.png
@@ -98,7 +98,7 @@ def table(rows, title):
 
 
 def grounds(rows, title):
-    """Categories 2 and 3: is the surface a different colour from the backdrop?"""
+    """Categories 2 and 3: is the surface a different color from the backdrop?"""
     rows = [row for row in rows if row["category"] in ("2", "3")]
     same = sum(row["surface_family"] == row["backdrop_family"] for row in rows)
     print(f"  {title}, categories 2-3 ({len(rows)}): surface in the backdrop's family {same}, "
@@ -181,7 +181,7 @@ def main():
             if flags:
                 print(f"  outside the real range ({', '.join(flags)}): {row['run']} {row['name']}, planned "
                       f"'{row['planned']}', measured {row['backdrop']} L {row['lightness']:.2f} C {row['chroma']:.3f}")
-    sheet([("Real cards: backdrop square, main hero colour dot, by family", real),
+    sheet([("Real cards: backdrop square, main hero color dot, by family", real),
            ("Earlier finals", [r for r in mine if r["group"] == "earlier final"]),
            ("Batch", [r for r in mine if r["group"] == "batch"])], OUT / "sheet.png")
     print("\n->", OUT / "colors.json", OUT / "sheet.png")

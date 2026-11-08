@@ -14,7 +14,6 @@ import sys
 from pathlib import Path
 
 sys.path.insert(1, str(Path(__file__).resolve().parents[1] / "scripts"))  # the pipeline's modules
-sys.path.insert(1, str(Path(__file__).resolve().parent))
 
 import argparse
 

@@ -25,7 +25,6 @@ sys.path.insert(1, str(Path(__file__).resolve().parents[1] / "scripts"))  # the 
 
 import argparse
 import random
-import re
 import shutil
 from concurrent.futures import ThreadPoolExecutor
 
@@ -345,7 +344,7 @@ def read():
             print(key, "n", row["n"], "csd", row.get("csd_own_real"))
 
 
-def eyes(arm, rater="claude-opus-5-5"):
+def eyes(arm, rater=JUDGE):
     """Blockout arm against its control, by eye, both orders. +1: the arm has more of it."""
     from param import pair_sheet
     from review import array, ask

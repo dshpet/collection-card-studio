@@ -66,9 +66,7 @@ def labelled():
         item, comment = items[rating["id"]], rating.get("comment", "")
         if rating["kind"] == "twin":
             drawn = [item["images"][0 if item["generated"] == "A" else 1]]
-        elif rating["kind"] in ("closest", "param"):
-            drawn = item["images"][1:]
-        elif rating["kind"] == "trial":  # the real card first
+        elif rating["kind"] in ("closest", "param", "trial"):  # the real card first
             drawn = item["images"][1:]
         else:
             drawn = item["images"][:1]

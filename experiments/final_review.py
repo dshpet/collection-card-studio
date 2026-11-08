@@ -18,19 +18,22 @@ No blind items.
     --round 1                  the first review; the default is the latest round
 """
 
+import sys
+from pathlib import Path
+
+sys.path.insert(1, str(Path(__file__).resolve().parents[1] / "scripts"))  # the pipeline's modules
+
 import argparse
 import json
 import random
-import sys
-import threading
 from collections import defaultdict
-from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
-from pathlib import Path
+from http.server import ThreadingHTTPServer
 from statistics import mean
 from urllib.parse import unquote
 
-sys.path.insert(1, str(Path(__file__).resolve().parents[1] / "scripts"))  # the pipeline's modules
-from common import ROOT, best_try, load_json, save_json  # noqa: E402
+from common import ROOT, best_try, load_json, save_json
+
+import rate_ui
 
 FINAL = {"western": ("final3/western", 1), "period-drama": ("final3/period-drama-2", 3),
          "detective": ("final3/detective-3", 2)}
@@ -40,10 +43,9 @@ ROUNDS = {2: {"western": ("final4/western", "final3/western"), "period-drama": (
               "detective": ("final4/detective", "final3/detective-3"), "cast": ("final4/cast", CAST)},
           3: {"western": ("final5/western-2", "final4/western"), "period-drama": ("final5/period-drama", "final4/period-drama-2"),
               "detective": ("final5/detective", "final4/detective"), "cast": ("final4/cast", "final4/cast")},
-          # round 4, the final sets: the Top Hat redrawn in final6/period-drama was not better, so final5 stays
+          # round 4, the final sets: the Top Hat redrawn in final6/top-hat-trial was not better, so final5 stays
           4: {"western": ("final5/western-2", "final5/western-2"), "period-drama": ("final5/period-drama", "final5/period-drama"),
               "detective": ("final6/detective", "final5/detective"), "cast": ("final4/cast", "final4/cast")}}
-ROUND = 4
 COMPARE = "Beach"  # the real set shown above ours
 TWIN_ARMS = {"ns2": "smooth surfaces", "nc": "one camera"}
 TWINS_PER_ARM = 12
@@ -51,8 +53,6 @@ ITEMS = {1: ROOT / "runs" / "final3" / "review.json", 2: ROOT / "runs" / "final4
          3: ROOT / "runs" / "final5" / "review.json", 4: ROOT / "runs" / "final6" / "review.json"}
 RATINGS = ROOT / "runs" / "ratings.json"
 OUTSIDE = ROOT / "runs" / "prefinal" / "outside" / "ratings.json"
-SERVED = ("materials/card_examples/", "runs/")
-LOCK = threading.Lock()
 
 
 def prefinal_past(source, variant):
@@ -178,7 +178,9 @@ def compare_row(real, sets):
                                         for i in sets[COMPARE]["cards"]]}
 
 
-class Page(BaseHTTPRequestHandler):
+class Page(rate_ui.Page):
+    """rate_ui's server, which saves answers and serves images, with this review's page and the round's items."""
+
     def do_GET(self):
         path = unquote(self.path).lstrip("/")
         if not path:
@@ -186,29 +188,9 @@ class Page(BaseHTTPRequestHandler):
         if path == "data":
             ratings = {k: v for k, v in (load_json(RATINGS) if RATINGS.exists() else {}).items()
                        if v.get("kind") in ("final", "night")}
-            return self.reply(json.dumps({"items": load_json(ITEMS[ROUND]), "ratings": ratings}).encode(), "application/json")
-        file = (ROOT / path).resolve()
-        if path.startswith(SERVED) and file.is_relative_to(ROOT) and file.suffix == ".png" and file.exists():
-            return self.reply(file.read_bytes(), "image/png")
-        self.send_error(404)
-
-    def do_POST(self):
-        entry = json.loads(self.rfile.read(int(self.headers["Content-Length"])))
-        with LOCK:
-            data = load_json(RATINGS) if RATINGS.exists() else {}
-            data[f"{entry['id']}|{entry['rater']}"] = entry
-            save_json(RATINGS, data)
-        self.reply(b"{}", "application/json")
-
-    def reply(self, body, kind):
-        self.send_response(200)
-        self.send_header("Content-Type", kind)
-        self.send_header("Content-Length", str(len(body)))
-        self.end_headers()
-        self.wfile.write(body)
-
-    def log_message(self, format, *args):
-        pass
+            return self.reply(json.dumps({"items": load_json(self.server.items), "ratings": ratings}).encode(),
+                              "application/json")
+        super().do_GET()
 
 
 def summary(round_number):
@@ -422,18 +404,18 @@ def main():
     parser.add_argument("--port", type=int, default=8767)
     parser.add_argument("--round", type=int, choices=sorted(ITEMS), default=max(ITEMS))
     args = parser.parse_args()
-    global ROUND
-    ROUND = args.round
     if args.action == "build":
         build(args.round)
     elif args.action == "summary":
         summary(args.round)
     else:
-        if not ITEMS[ROUND].exists():
+        if not ITEMS[args.round].exists():
             raise SystemExit("run build first, once the final runs are done")
         print(f"open http://127.0.0.1:{args.port}", flush=True)
+        server = ThreadingHTTPServer(("127.0.0.1", args.port), Page)
+        server.items = ITEMS[args.round]
         try:
-            ThreadingHTTPServer(("127.0.0.1", args.port), Page).serve_forever()
+            server.serve_forever()
         except KeyboardInterrupt:
             pass
 

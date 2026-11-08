@@ -18,9 +18,9 @@ sys.path.insert(1, str(Path(__file__).resolve().parents[1] / "scripts"))  # the 
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 
-from common import ROOT, load_json
+from common import ROOT, contact_sheet, load_json
 
-from make_set import contact_sheet, draw_card
+from make_set import draw_card
 
 RUN = ROOT / "runs" / "wording_check"
 OBJECTS = [("western", "Cowboy Hat"), ("western", "Cowboy Boot"), ("horror", "Witch Hat"), ("sci-fi", "Control Panel")]
