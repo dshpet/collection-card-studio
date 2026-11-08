@@ -59,7 +59,8 @@ class FixRoundTest(unittest.TestCase):
 
 class RequestTest(unittest.TestCase):
     ARGS = dict(theme="Western", wishes="", variants=3, cast=0, plan=None, no_references=False, alongside=[],
-                no_blockouts=False, candidates=3, rater="claude-opus-5-5", keep=None, run=None)
+                no_blockouts=False, candidates=make_set.CANDIDATES, rater=make_set.JUDGE,
+                review_rounds=make_set.REVIEW_ROUNDS, keep=None, run=None)
 
     def setUp(self):
         self.folder = tempfile.TemporaryDirectory()
@@ -82,10 +83,12 @@ class RequestTest(unittest.TestCase):
         self.record("western", run_folder(Namespace(**self.ARGS))[1])
         self.assertEqual(run_folder(Namespace(**{**self.ARGS, "candidates": 8}))[0].name, "western-2")
 
-    def test_an_older_run_resumes_without_the_later_settings(self):
+    def test_an_older_run_counts_as_made_with_the_defaults(self):
         request = run_folder(Namespace(**self.ARGS))[1]
         self.record("western", {k: v for k, v in request.items() if k not in make_set.LATER})
-        self.assertEqual(run_folder(Namespace(**{**self.ARGS, "candidates": 8}))[0].name, "western")
+        self.assertEqual(run_folder(Namespace(**self.ARGS))[0].name, "western")
+        self.assertEqual(run_folder(Namespace(**{**self.ARGS, "candidates": 8}))[0].name, "western-2")
+        self.assertEqual(run_folder(Namespace(**{**self.ARGS, "review_rounds": 0}))[0].name, "western-2")
 
 
 if __name__ == "__main__":

@@ -26,7 +26,7 @@ A tool that turns a theme and a producer's free-form wishes into 3–5 variants 
 
 The producer here is the author, playing the brief's producer. Every human grade is theirs unless noted; an outside artist graded the pre-final sets.
 
-- **Final sets.** Drawn once, then three fix rounds redrew 17, 8 and 2 cards, almost all of them cards the producer had commented on. Set grades went from 4, 4, 4 to 5, 5, 5 after the second round; the third answered the one remaining comment, on the Magnifier, and was not graded again. Card means, latest grade per card, are 4.5 Western, 3.8 Period Drama and 4.0 Detective, and the six cast cards are at 5.0. The outside artist gave the pre-final cards 3.1 of 5.
+- **Final sets.** Drawn once, then three fix rounds redrew 17, 8 and 2 cards, almost all of them cards the producer had commented on. Set grades went from 4, 4, 4 to 5, 5, 5 after the second round; the third answered the one remaining comment, on the Magnifier, and was not graded again. Card means, latest grade per card, are 4.5 Western, 3.8 Period Drama and 4.0 Detective (nine graded cards; the new Magnifier was not graded), and the six cast cards are at 5.0. The outside artist gave the pre-final cards 3.1 of 5.
 - **Autonomy.** One command makes a set with no human step, such as the [pre-final Detective](runs/prefinal/detective/variant_1.png), one of three variants. The final sets added the producer's pass: plans composed from graded variants, then fix rounds through the same tool with `--keep`. In those rounds a few Blender models and three picks were adjusted by hand; a producer's note now reaches the modeller directly.
 - **Style.** Blind, on 40 twins of the final style the producer finds our drawing 24 times, takes the real card for ours 8 times and cannot tell 8 times; for the first style, 31, 1 and 8. Calibrated model reviewers are at chance on 16 of the same twins, so the producer stays the measure.
 - **Construction.** In a six-object trial, Blender models cut broken cards from 5 of 12 to 1, and to none once the models were fixed (grade 3.7 against 2.2). Only built, multi-part objects get a model.
@@ -62,7 +62,7 @@ flowchart LR
 | Edit | Codex applies the notes. An edit stays only if it beats its draft, and the outcome is saved for later runs |
 | Deliver | `runs/<theme>/variant_N/`, a sheet per variant and `report.md`, which marks cards for a look as `review` (failed a check), `unsure pick` (a close choice) or `missing` |
 
-A run first checks that its tools and data are in place. A request is the theme, the wishes and the settings that change the drawings (variants, candidates, references, blockouts, judge). Rerunning the same request continues where it stopped; any other request for the same theme gets `runs/<theme>-2`. Options:
+A run first checks that its tools and data are in place. A request is the theme, the wishes and the settings that change the drawings (variants, candidates, references, blockouts, judge, review rounds). Rerunning the same request continues where it stopped; any other request for the same theme gets `runs/<theme>-2`. Options:
 
 - `--alongside <folder> ...`: other sets of the same collection, whose objects the plan must not repeat.
 - `--plan <file>`: draw a plan a producer has checked, such as those in `runs/plans/`.

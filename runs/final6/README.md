@@ -13,7 +13,7 @@ Producer's grades, latest per card: sets 5, 5, 5, cast 5; cards 4.5 Western, 3.8
 
 `final_sets.png` shows the object cards; the cast cards show the game's characters and stay out of git. History: [first draw](../final3/README.md), [fix round 1](../final4/README.md), [fix round 2](../final5/README.md), fix round 3 below.
 
-Each set's `report.md` still flags cards from its automatic checks: `review` where measured fields fall outside the real range, `unsure pick` where the director's choice was close. The producer looked at every card, so these were accepted as they are: Windmill and Campfire in Western, Candelabra and Top Hat in Period Drama, Evidence Bag, Steel Safe and Handcuffs in Detective. Their misses are mostly a smaller subject and duller color, the gaps in [COMPARISON](../../analysis/COMPARISON.md).
+Each set's `report.md` still flags cards from its automatic checks. Seven are `review`, where a check failed or measured fields fall outside the real range: Windmill and Campfire in Western, Candelabra and Top Hat in Period Drama, Evidence Bag, Steel Safe and Handcuffs in Detective; their misses are mostly a smaller subject and duller color, the gaps in [COMPARISON](../../analysis/COMPARISON.md). Ten more are `unsure pick`, where the director's choice between candidates was close; the Piano also reads to the blind rater as another art category. The producer looked at every card and accepted these as they are.
 
 ## Fix round 3
 

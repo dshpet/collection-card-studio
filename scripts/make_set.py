@@ -618,7 +618,8 @@ def preflight(args):
         raise SystemExit("Cannot start:\n- " + "\n- ".join(missing))
 
 
-LATER = ("blockouts", "candidates", "rater")  # settings that older runs' request.json lacks; they match without them
+# Settings that older runs' request.json lacks; such a run counts as made with the defaults
+LATER = {"blockouts": True, "candidates": CANDIDATES, "rater": JUDGE, "review_rounds": REVIEW_ROUNDS}
 
 
 def run_folder(args):
@@ -626,7 +627,8 @@ def run_folder(args):
     different request never mixes with it: runs/western, then runs/western-2 and so on."""
     request = {"theme": args.theme, "wishes": args.wishes, "variants": args.variants, "cast": args.cast,
                "plan": args.plan, "references": not args.no_references, "alongside": sorted(args.alongside),
-               "blockouts": not args.no_blockouts, "candidates": args.candidates, "rater": args.rater}
+               "blockouts": not args.no_blockouts, "candidates": args.candidates, "rater": args.rater,
+               "review_rounds": args.review_rounds}
     if args.keep:
         request["keep"] = args.keep
     runs = ROOT / "runs"
@@ -637,8 +639,7 @@ def run_folder(args):
             return True
         if not record.exists():
             return False
-        stored = load_json(record)
-        return stored == {k: v for k, v in request.items() if k in stored or k not in LATER}
+        return {**LATER, **load_json(record)} == request
 
     if args.run:
         run = runs / args.run
