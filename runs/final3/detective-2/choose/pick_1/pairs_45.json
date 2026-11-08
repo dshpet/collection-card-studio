@@ -1,0 +1,52 @@
+{
+ "pairs": [
+  {
+   "pair": "q360",
+   "closer": "A",
+   "confidence": 2,
+   "why": "Cars are nearly identical, but B's asphalt is visibly speckled and grainy while A's road is smoother, like the soft roads on the real bus and bike cards."
+  },
+  {
+   "pair": "q361",
+   "closer": "B",
+   "confidence": 2,
+   "why": "Same car in both; A's road surface has more fine grain noise, while B's asphalt and background are smoother and closer to the real cards' clean finish."
+  },
+  {
+   "pair": "q362",
+   "closer": "A",
+   "confidence": 2,
+   "why": "B's asphalt carries more gritty speckle; A keeps the smoother, softly shaded road that the real vehicle cards use."
+  },
+  {
+   "pair": "q363",
+   "closer": "B",
+   "confidence": 1,
+   "why": "Nearly identical, but B's road and car surfaces read slightly smoother, with less micro-grain than A."
+  },
+  {
+   "pair": "q364",
+   "closer": "neither",
+   "confidence": 1,
+   "why": "Car build, gloss and light match in both, and the road finish is equally smooth; only the background props differ."
+  },
+  {
+   "pair": "q365",
+   "closer": "neither",
+   "confidence": 1,
+   "why": "Both have the same smooth asphalt and the same car rendering; the difference is only background scenery, which doesn't decide closeness."
+  },
+  {
+   "pair": "q366",
+   "closer": "A",
+   "confidence": 2,
+   "why": "B's asphalt is noticeably more speckled and gritty, which the lessons mark as too texture-y; A's smoother road matches the real cards better."
+  },
+  {
+   "pair": "q367",
+   "closer": "B",
+   "confidence": 2,
+   "why": "A's road has a slightly grainy, noisy texture, while B's road is smoother and cleaner, like the real bus card's street."
+  }
+ ]
+}

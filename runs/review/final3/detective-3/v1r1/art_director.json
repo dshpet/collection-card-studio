@@ -1,0 +1,100 @@
+{
+ "issues": [
+  {
+   "issue": "A soft spotlight glow sits behind the hero on a plain backdrop. The fedora has a bright ellipse of light on purple with dark corners, the bloodhound has a pale arch glowing behind its back inside the stripes, and the safe has a pink halo above it. Real cards keep their pattern (rings, rays, stripes) at an even brightness right up to the hero's edge. This is the strongest tell in the set.",
+   "specialists": [
+    "value_contrast",
+    "composition_hierarchy"
+   ],
+   "instruction": "Keep the backdrop pattern evenly bright from the centre out to the corners, with no pool of light behind the object. Separate the object from the backdrop with its own darker accents and a soft contact shadow."
+  },
+  {
+   "issue": "The setting is all one temperature or too dark. The evidence bag sits on near-black mahogany. The wallet is orange-brown leather on orange wood. The doorknob is gold on gold with a glowing yellow hallway behind it. Real cards set a warm hero against a contrasting, mid-to-light setting, or give it a clear second hue family.",
+   "specialists": [
+    "color_palette",
+    "value_contrast",
+    "lighting_shading"
+   ],
+   "instruction": "Keep the setting bright, mid-to-light and warm, and give the hero a colour family different from its surface. Paint shadows a slightly deeper, cooler tone of the object's colour."
+  },
+  {
+   "issue": "Small, fussy surface texture: fine leatherette grain on the camera body, and dashed stitching with pebbled grain on the wallet. Real cards use smooth satin bodies with a few broad highlights. Surface_finish is right on the camera and wallet, but I overrule its calls on the real spyglass, rocking chair and vending machine.",
+   "specialists": [
+    "surface_finish",
+    "edges_linework"
+   ],
+   "instruction": "Paint bodies as smooth satin surfaces with one broad soft highlight. Show hardware and seams as a few simple shapes."
+  },
+  {
+   "issue": "The police car is pulled back, with invented small scenery behind it: a house, a tree, bushes, a fence and a sidewalk. Real cards keep the background to a few large, calm shapes. This one can only be fixed through extras, so these notes don't touch the framing.",
+   "specialists": [
+    "staging_detail"
+   ],
+   "instruction": "Build the background from a few large soft shapes, such as sky, one hill line and the road surface."
+  },
+  {
+   "issue": "Overruled: most specialists picked the real card in many pairs (jellyfish, ivy door, music player, sunset bike, oil lamp, palm, spyglass, rocking chair, vending machine). These real cards are saturated, glossy, busy and scenic. That is the game's look, so do not tone any of it down. Shape and viewpoint calls (frontal camera and safe, fat handles) are form and fall outside the notes.",
+   "specialists": [
+    "shape_proportions",
+    "viewpoint_depth",
+    "lighting_shading",
+    "edges_linework"
+   ],
+   "instruction": "Keep the full saturation, gloss and lively settings. Change only backdrop light, setting colour and surface finish."
+  }
+ ],
+ "style_text": "",
+ "cards": [
+  {
+   "pair": "p02",
+   "keep": false,
+   "note": "Doorknob Print: Give the brass knob and plate slightly deeper warm-brown shadows toward the lower right. Paint the hallway glimpse a soft muted beige in place of the bright yellow. Keep the knob, the fingerprint, the green door and the view."
+  },
+  {
+   "pair": "p03",
+   "keep": true,
+   "note": "Magnifier: keep. The clear lens, red handle and even green rings already read as real."
+  },
+  {
+   "pair": "p04",
+   "keep": true,
+   "note": "Travel Book (wallet): keep. It already sits on bright warm wood, and an earlier note removing the stitching and grain lost."
+  },
+  {
+   "pair": "p05",
+   "keep": false,
+   "note": "Flash Camera: Paint the camera body smooth satin brick-red with no surface grain, with one soft broad highlight along the top edge. Draw the flash dish as one smooth silver bowl. Keep the lens, the buttons, the blue rings and the view."
+  },
+  {
+   "pair": "p06",
+   "keep": true,
+   "note": "Flashlight: keep. A finish note on this card lost earlier, and it reads close to the real cards."
+  },
+  {
+   "pair": "p07",
+   "keep": false,
+   "note": "Evidence Bag: Replace the dark mahogany planks with bright, warm honey-orange wood with a few broad, soft grain bands. Give the bag a soft, slightly darker shadow on the wood toward the lower right. Keep the bag, the blue zip and the gold ring."
+  },
+  {
+   "pair": "p09",
+   "keep": false,
+   "note": "Bloodhound: Keep the blue stripes at one even brightness from the top of the card down to the grass, with no pale glow behind the dog. Give the dog a slightly darker soft contact shadow in the grass. Keep the dog, the collar, the grass and the view."
+  },
+  {
+   "pair": "p10",
+   "keep": true,
+   "note": "Steel Safe: keep. This is the version from a kept edit, and it reads close enough."
+  },
+  {
+   "pair": "p11",
+   "keep": false,
+   "note": "Squad Car: Replace the house, tree, bushes, fence and sidewalk with one soft green hill line under a clear blue sky with a single cloud. Keep the car, the road, the lane marks and the view."
+  },
+  {
+   "pair": "p12",
+   "keep": false,
+   "note": "Sneakers (fedora): Replace the spotlight glow with soft purple concentric rings that stay evenly bright out to the corners. Keep a soft contact shadow under the brim. Keep the hat, the green band and the view."
+  }
+ ],
+ "summary": "Close. Most specialists picked the real card in several pairs, including the jellyfish, the ivy door, the music player and the sunset bike. That means the generated cards no longer stand out by richness or saturation. The remaining tells are narrow. Some cards have a studio spotlight glow behind the hero (fedora, bloodhound, safe). Some settings are monochrome or dark (mahogany under the evidence bag, gold on gold behind the doorknob). There is fine surface grain on the camera, and invented background scenery behind the police car. Six generated cards get small notes on the backdrop, finish or extras. Four are kept (magnifier, wallet, flashlight, safe), mostly where earlier notes have already been tried and kept, or tried and lost."
+}

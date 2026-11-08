@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (ferris wheel close-up): spokes and gondolas have clean, even contours. The hub is the sharpest point, and the flat sky has almost no edges, like the real ferris wheel card. B (jellyfish): a heavy dark contour runs all the way around the bell and down each tentacle. The bubbles are drawn as dark rings, and the light rays in the background add many long edges (bg 0.033, above the real range of up to 0.017).",
+   "fix": "Let the jellyfish bell and tentacles fade softly into the water with no dark rim around them; keep the background a smooth gradient without visible light-ray streaks."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (doorknob): a few strong edges on the knob rim and the backplate bevel. The door surface and the room behind it stay quiet. The fingerprint is the only busy area, and it is the focus. B (door with wreath): every ivy leaf around the frame has its own crisp contour, so the edge map is crowded from corner to corner. The wreath flowers and the bow each have dark outlines, and the edge density is above the real range for both the subject (0.342) and the background (0.107).",
+   "fix": "Draw the ivy as a few large soft leaf clusters with blurred edges, keep the door panels as simple shallow bevels, and keep the crisp edges for the wreath only."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (magnifier): the rim of the lens and the handle have soft, shaded boundaries, and the glass is almost free of edges. B (hoop): a dark double contour runs around the backboard frame and the inner square, almost like an inked outline. The net strands are drawn as dark lines and form the densest dark area on the card. Outline darkness is 0.201, above the real maximum of 0.122.",
+   "fix": "Shade the backboard's red frame so its edge comes from light and shadow, not a dark line; draw the net as soft white cord with no dark edges."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (travel book): the stickers have bold double contours from their white borders. The cover, page block and wood streaks are large simple shapes, much like the real cards. B (wallet): dashed stitch lines follow every panel edge on both halves. Fine leather grain and long plank grooves across the whole background add many thin, precise edges, which reads more like a photo than a card.",
+   "fix": "Remove the stitch lines along the wallet edges, make the leather a smooth single surface, and soften the floor into a few broad planks with no grain lines."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (flash camera): edges are soft and shaded on the body and the flash dish. The crispest edges sit on the lens ring, which is the focus. B (player with earbuds): a dark, even contour wraps the whole body and is doubled around the face plate. The earbud cable is drawn as a dark tube line along its full length, and every button carries an equally sharp ring, so no area stands out as the focus.",
+   "fix": "Let the yellow player's outer edge come from soft shading with no dark rim, make the cable a pale soft-edged cord, and keep only the big central button crisp."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (flashlight): the grip is cut by about a dozen parallel ribs, each with its own crisp groove line. This pushes subject edge density to 0.176, above the real maximum of 0.157. The beam rays add soft streaks around the head. B (oil lamp): the glass chimney and brass body have a few clean contours, with the sharpest edges at the burner and flame, so the edge hierarchy matches the real cards.",
+   "fix": "Give the flashlight grip three or four broad, soft ridges instead of many thin grooves, and keep the sharpest edge on the silver lens ring."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (racket): the string bed is a dense dark grid of crisp lines, the busiest region on any card (subject 0.281, far above the real maximum of 0.179). The court line adds long hard edges across the background. B (bag with ring): the bag's wrinkles are soft transitions, the ring has a clean bright rim, and the edge density stays inside the real range.",
+   "fix": "Draw the racket strings as a fine, light, slightly blurred mesh with no dark grid lines; soften the court line into the green."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "B (spyglass) matches the real telescope card in the reference sheet: soft bevels, with the crisp edges only on the brass rings and the lens. A (palm tree): every frond has a jagged, notched contour with a dark edge. The trunk is cut by hard ring grooves, and the spiral background plus the pebbles add extra edges around it.",
+   "fix": "Draw the palm fronds as smooth broad leaves with soft edges and few notches, and make the trunk segments shallow and soft rather than cut-in grooves."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (dog): the body's contour is soft. Fine fur texture and the facial folds give low-contrast edges, and the face is the sharpest area. B (rocking chair): the backrest shows carved wood-grain lines, and the floor planks have long dark grain streaks. Every rail and slat has a crisp dark contour, much like the extra wood-grain edges on the generated computer-desk lesson cards.",
+   "fix": "Paint the chair and the floor as smooth wood with no grain lines, and let the rails' far edges blur softly into shadow."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (safe): large soft bevels and only a few internal lines, with the dial and handle as the crisp focus. Subject density is low (0.087), as on the real cards. B (vending machine): the glass is crowded with small edges from condensation dots, cans, bottles and shelf lines. A dark double contour runs around the window and the dispenser slot, giving outline darkness of 0.088.",
+   "fix": "Show the drinks behind the glass as a few soft colored shapes without condensation dots, and let the window frame edge come from shading instead of a dark double line."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (police car): the car's contours are clean, and the house and trees behind it are softer, so the hierarchy holds even though the asphalt is noisy. B (bike on car): thin hard spoke lines, the chainring and the frame tubes have dark contours. The car and the mountains behind are just as edged, which gives a background density of 0.094 (above the real range) and no clear focus.",
+   "fix": "Blur the car and the mountains behind the bike into soft shapes, draw fewer and lighter spokes, and keep the crisp edges on the red frame only."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (sneakers): mesh texture, laces, colored side panels and sole stripes each carry crisp dark contours. Subject density is 0.227, at the top of the real range, and both shoes are equally sharp, so there is no focus. B (fedora): very few edges, with soft felt shading, a clean brim edge and a crisp band. It is under-detailed rather than overdrawn.",
+   "fix": "Simplify the sneakers into a few large smooth panels with no mesh texture, give them thick soft laces, and keep one shoe sharper than the other."
+  }
+ ],
+ "pattern": "Generated cards draw many small, crisp details that each carry their own dark contour: stitching, grain, ribs, mesh, string grids, ivy leaves and condensation dots. The real cards build forms from a few large, softly shaded masses and keep their hardest edges for the focal part. Generated cards also tend to wrap the outer silhouette in a dark, even, sometimes doubled contour, and they add edged detail to the background (grain, rays, scenery), which flattens the edge hierarchy."
+}

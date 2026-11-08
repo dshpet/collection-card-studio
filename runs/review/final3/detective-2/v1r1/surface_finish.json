@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: police car body is broad smooth black-and-white paint with one soft sheen band on the hood, chrome bumper as a single smooth bar; only the asphalt carries fine grain. B: the bike-rack scene is full of small hardware (rack clamps, brackets, bolts, chainring, spoke nipples), every tube of the red frame is equally lacquered with hard white speculars, and the car paint behind is just as glossy. Gloss share 0.308 and detail 0.104 are both above the real range.",
+   "fix": "Draw the bicycle as a few broad smooth parts: a plain frame, simple wheels with fewer thin spokes, no rack clamps or bolts. Keep the frame satin with one soft highlight and leave the car body behind it matte."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: magnifier has a smooth satin metal rim, a soft red handle and plain glass, with simple broad highlights. B: basketball backboard is flat white with a smooth red frame and a plain orange rim, and the net is simple soft cords. Both are simplified and clean, as on the real cards. B's high highlight share comes from the white board, not from gloss.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the wallet leather has a fine pebbled grain, a dashed stitch line running around every edge and the pocket, a hinge roll, and a crisp gold clasp with a sharp specular. The floor boards carry fine streaky grain. This is the added stitching seen in the generated gloves. A: the book cover is flat matte teal with smooth sticker shapes. Its wood grain is broad soft stripes. Detail 0.067 on B is above the real range.",
+   "fix": "Draw the wallet as smooth soft leather with no stitching lines and no pebble texture, with rounded thick edges. Make the clasp a simple soft gold shape with one broad highlight, and keep the wood floor quiet with faint broad grain."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: red camera body is matte with a faint leatherette tooth, satin metal flash dish and ring, all broad parts. B: yellow player is smooth semi-gloss plastic and the earbuds are smooth white. Both stay within the real ranges, and neither shows stitching, noise or chunky hardware.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: guitar body is uniform high-gloss red lacquer with hard white speculars. There are many small parts (individual pickup pole dots, fret wires, tuning pegs, knobs), and the stage floor has streaky plank grain and a patterned strap. Micro-texture 0.027, detail 0.063 and gloss 0.211 are all above the real range. A: jacket is soft matte fabric with broad folds, and the badges are smooth with mild sheen, which matches the real cards' matte and soft mix.",
+   "fix": "Paint the guitar body satin red with one broad soft highlight. Draw the pickups as plain bars with no pole dots, show the frets as faint lines and keep the plank floor quiet."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the flashlight's red body is lacquered all over with sharp streaky white reflections. The grip is a stack of crisp glossy ribs, and the brushed steel bezel has fine directional streaks. Gloss share 0.182 is above the real range. A: brass lamp has a warm soft sheen, and the frosted glass chimney reads as a soft translucent matte. The gloss is graded and broad, as on the real telescope.",
+   "fix": "Make the flashlight body semi-matte red plastic with one soft highlight along the top. Draw the grip as a few wide soft bands, and give the metal bezel a smooth plain finish without brushed streaks."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the blue door is covered in visible painterly brush streaks and wood-grain scratches. The frame has big decorative grain, and the ivy and wreath are dense with many small glossy leaves and petals. Micro-texture 0.045 and gloss share 0.51 are far outside the real range. B: brass knob and plate are a smooth polished metal with broad reflections, the fingerprint is the only fine detail, and the green door is flat.",
+   "fix": "Paint the door as a smooth flat blue panel with no brush strokes or scratches, and keep the frame wood plain with only faint broad grain. Use fewer, larger, soft matte leaves and flowers in the wreath and ivy."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: fan paper is flat matte purple with simple fold ridges, and the wood ribs are smooth with no grain. B: stage light is satin dark metal with a few broad parts (yoke, knob, ring) and soft colored lenses. Both are simplified, and both are within the real ranges.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the sneakers have a fine perforated mesh dot pattern over the uppers. The many multicolored laces each carry hard speculars, and the soles, panels and eyelets are all equally glossy plastic, so nothing reads as fabric. Detail 0.072 and gloss 0.267 sit at the top of the real range. A: felt hat is soft matte with a faint fine fuzz and a smooth band. It is quiet, if a little under-detailed.",
+   "fix": "Draw the sneaker uppers as soft matte fabric with no perforation dots. Use plain laces in one colour with no shine, and keep gloss only on the rubber sole edge as one soft highlight."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the rocking chair has every wooden part lacquered with bright orange speculars. There are decorative grain streaks on the arms, seat and back slats, and the floorboards carry long streaky grain lines. A: the dog's fur is a soft matte velvet with broad shading only, and the collar is a smooth matte strap with a small brass buckle.",
+   "fix": "Paint the chair wood satin to matte with very faint, fine grain. Drop the streaks on the arms and seat and keep the floorboards plain with soft seams."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the vending machine glass is covered in small condensation droplets, the cans and bottles carry many tiny labels and highlights, and the blue body and the chrome trim are equally glossy. Gloss share is 0.197. A: the safe is matte blue painted metal with a soft gold dial and handle and plain hinges, with a clear matte vs shiny split. It is slightly over-smooth (detail 0.024).",
+   "fix": "Remove the water droplets from the glass and show fewer, larger cans with simple labels. Make the machine body semi-matte blue paint with one soft highlight and keep the chrome trim to a single smooth band."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the tennis ball has a fine stippled fuzz noise over its whole surface. The string bed is a dense crisp grid, and the racket frame is uniform glossy plastic. A: the plastic bag has broad soft crinkle highlights that read as translucent film, the gold ring has a smooth polished band, and the dark wood has quiet fine grain. A's material mix is closer to the real cards.",
+   "fix": "Paint the tennis ball as smooth soft felt shading with no speckle noise. Draw fewer, wider racket strings and make the frame satin with one soft highlight."
+  }
+ ],
+ "pattern": "The giveaway in generated cards is extra fine surface texture that the real cards don't have. They add stitch lines on every seam, pebbled leather grain, perforation dots, condensation droplets, felt-fuzz noise and streaky wood grain on furniture and floors. They also draw hardware as many small crisp parts (bolts, clamps, pickup poles, ribbed grips) and give every material the same lacquered gloss with sharp white speculars. Real cards keep surfaces smooth and soft, simplify hardware into a few broad parts and mix matte with shiny within one object."
+}

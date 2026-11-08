@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B is a backlit sunset scene. The bike's dark tyres and frame and the car's shadowed rear fill the lower and right side. The corners and bottom go dark (vignette -0.318) and contrast is higher than any real card (0.232). A is a mid-key street scene with an even sky and road and no corner darkening, and its numbers sit in range.",
+   "fix": "Bright, even daylight from the front. Light sky and road, no dark sunset backlight. Keep the bike's frame and tyres mid-grey, with no big black shadows at the bottom or corners."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "In A, the green rings behind the magnifier are almost the same value as the lens and rim. The hero barely separates by value, overall contrast is very low (0.066) and the centre is not brighter than the corners. In B, a near-white backboard sits on a mid cyan field with a lighter glow ring behind it, the usual real-card build.",
+   "fix": "Draw a soft bright glow behind the magnifier and make the rings darker toward the corners. Give the metal rim a bright highlight and a darker underside so it stands out from the background."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "In A, the wood behind the book breaks into many hard dark streaks, so dark accents spread over the whole background. The book cover is one flat mid-dark block. In B, the pale, quiet table holds a single dark wallet, which gives a clean dark-on-light split. Both are in range on the numbers.",
+   "fix": "Make the tabletop a calm, light, even wood with soft grain and no dark streaks. Brighten the book cover so it reads lighter than the table."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B puts an almost white player on dark purple rings, which are among the darkest in the set. The hero is far lighter than its surround (gap 0.223, above the real range). A keeps a mid cyan ring background with a mid-dark camera body, close to the real cards.",
+   "fix": "Lighten the purple background rings toward a mid-light lilac and add a soft light glow behind the player, so the hero is not a white cut-out on a dark field."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B is lit like a stage. Dark navy truss and curtains fill the sides and top, and two hard white spotlight cones fall onto the guitar. The corners go dark (vignette -0.1) and contrast runs high (0.166). A uses a bright green ray burst behind a light jacket, with the dark value only in the sash.",
+   "fix": "Remove the dark stage and spotlight beams. Put the guitar on a simple bright ray-burst background that lightens behind it, with no black truss at the edges."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "In A, all four corners drop to near-black green while the centre glows yellow. That vignette (0.144) is stronger than any real card, and the glass lamp is mostly light-on-light at the centre. B has a bright cyan ray burst and a dark-red flashlight body, and its corners stay only a little darker than the centre.",
+   "fix": "Keep the corners mid-green rather than near-black, so the ray burst darkens only gently toward the edges."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A has a busy ivy frame with scattered dark gaps around a mid-dark blue door, and white flowers as the lightest accents. B has a large flat dark-green door field, a mid brass knob plate and a bright strip at the right edge. Both sit in range, and neither shows a clear lesson-type value tell.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B is a low-key scene. A dark teal-navy backdrop, a black stage light and a dark truss across the top give a dark card with a single light beam. Its mean (0.567) is below the real range and its vignette (0.128) is above it. A is a high-key yellow background with a mid-value purple fan.",
+   "fix": "Use a bright, light background behind the stage light, such as a light ray burst, with no dark truss bar at the top. Lighten the light's body so it is mid-grey, not black."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B splits into two flat value blocks: a mid orange wall and a near-white floor, with a hard horizon and no glow behind the sneakers. The sneakers carry hard local contrast. A has a soft lighter glow behind the hat that darkens toward the corners, though overall contrast is low (0.108).",
+   "fix": "Replace the split wall-and-floor with one background that has a soft light glow behind the sneakers and gently darker corners. Soften the hard black-and-white jumps on the shoes."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both use a striped blue background that is lighter behind the hero, with a mid-value hero and a mid-light floor or grass. Their numbers are nearly identical and in range.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A's safe is a big near-black navy block filling most of the card against a mid magenta. The card is too dark overall (mean 0.519), the hero is much darker than its surround (gap -0.273) and contrast is high (0.184), all outside the real range. B's vending machine has a light glass front and a mid background, within range.",
+   "fix": "Paint the safe a lighter, mid blue with bright top edges, and put a light glow on the wall behind it, so the safe is not a black block."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "In A, dark mahogany wood with near-black grain fills the background, so the card is low-key (mean 0.45). The pale bag stands out as a light shape on dark (gap 0.252), both outside the real range. B has a mid green court, a white line and a mid-light racket, within range.",
+   "fix": "Put the bag on a light, warm wooden table or a bright soft background with no dark grain, so the whole card reads light."
+  }
+ ],
+ "pattern": "Generated cards break the real cards' light, centre-lit layout. They use dark scene backgrounds (stage truss, dark wood, sunset backlight, dark ring fields) or near-black corners, where real cards use a bright, simple background with a soft glow behind the hero. The hero becomes either a black block or a white cut-out against that dark surround."
+}

@@ -1,6 +1,6 @@
 # Our sets against the references
 
-The final sets, drawn 2026-11-08, are in `runs/final3/` (`western/`, `period-drama-2/`, `detective/`), with six bonus cast cards in `runs/final2/cast/`; [what changed](../runs/final3/README.md). The earlier sets of 2026-11-03 (Western, Sci-Fi, Horror) stay in `runs/final/`. Evidence for the style is in [STYLE_GAPS.md](STYLE_GAPS.md). Set numbers come from `scripts/compare.py --sets runs/final3/sets.json`, on the definitions used for the real sets.
+The final sets, drawn 2026-11-08, are in `runs/final3/` (`western/`, `period-drama-2/`, `detective-3/`), with six bonus cast cards in `runs/final2/cast/`; [what changed](../runs/final3/README.md). The earlier sets of 2026-11-03 (Western, Sci-Fi, Horror) stay in `runs/final/`. Evidence for the style is in [STYLE_GAPS.md](STYLE_GAPS.md). Set numbers come from `scripts/compare.py --sets runs/final3/sets.json`, on the definitions used for the real sets.
 
 ## Idea
 
@@ -24,11 +24,11 @@ The film genre sets carry the idea through objects alone, as the brief asks: no 
 | Countrystead | 1 | 2 | 7 | 5 | 6 | 1/2/2/5 | 0.641 |
 | **Western** | 1 | 2 | 7 | 5 | 6 | 4/1/3/2 | 0.552 |
 | **Period Drama** | 2 | 2 | 6 | 2 | 7 | 4/2/3/1 | 0.556 |
-| **Detective** | 1 | 2 | 8 | 4 | 7 | 3/2/3/2 | 0.536 |
+| **Detective** | 1 | 2 | 8 | 4 | 7 | 3/2/3/2 | 0.543 |
 
 Names, scales and backdrop hues sit inside the real ranges. Period Drama is the one two-word title, and Detective has one object class more than the widest real set.
 
-Style similarity, the mean CSD between a set's own cards, is lower than in the real sets (0.54-0.56 against 0.60-0.64; the 2026-11-03 sets had 0.57-0.66, the pre-final variants 0.48-0.56). Most of it is color. On grey copies of the cards, Period Drama rises to 0.635, inside the real range, and Western to 0.590, while the real sets move by less than 0.03: a real set's cards share one color treatment, and each of ours takes its own saturated hue. Detective stays low in grey (0.555) because its objects differ in form and material: a safe, a car, a dog, a bag. This measure has not been checked against the producer; CSD against the same object, which has, improved overnight.
+Style similarity, the mean CSD between a set's own cards, is lower than in the real sets (0.54-0.56 against 0.60-0.64; the 2026-11-03 sets had 0.57-0.66, the pre-final variants 0.48-0.56). Most of it is color. On grey copies of the cards, Period Drama rises to 0.635, inside the real range, and Western to 0.590, while the real sets move by less than 0.03: a real set's cards share one color treatment, and each of ours takes its own saturated hue. Detective stays low in grey (0.570) because its objects differ in form and material: a safe, a car, a dog, a bag. This measure has not been checked against the producer; CSD against the same object, which has, improved overnight.
 
 ## Art
 
@@ -38,9 +38,9 @@ Medians on the 30 final cards against the 129 real object cards, beside the same
 |---|---:|---:|---:|
 | Subject chroma | 0.130 | 0.102 | 0.125 |
 | Hue families | 3.9 | 2.4 | 2.5 |
-| Shadow chroma kept | 97% | 82% | 86% |
+| Shadow chroma kept | 97% | 82% | 87% |
 | Smallest margin to the card edge | 0.058 | 0.098 | 0.082 |
-| Subject area | 0.324 | 0.279 | 0.274 |
+| Subject area | 0.324 | 0.279 | 0.277 |
 
 | Principle in the references | Where we stand |
 |---|---|

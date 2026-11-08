@@ -48,6 +48,7 @@ How the tool got here, decision by decision. Numbers are in [STYLE_GAPS](analysi
 - Overnight, one change per arm on the twins (`experiments/night.py`, STYLE_GAPS): smooth large surfaces in the text prompt, richer planner colors and a wider blockout frame were adopted; one camera and the perspective fixes wait on the producer's blind look.
 - The final started late, at 11:15 instead of 04:00: a background wait loop matched its own command line and waited on itself all night. Steps are now chained directly.
 - After the draw, two Period Drama cards were weak in every candidate, a plan problem: the Pearl Necklace became the Quill Pen (the outside rater's 4) and the Hat Box got stripes. The set was redrawn in a new folder seeded with the other eight cards' candidates, so only the two new cards were drawn and the picks and review ran again (`runs/final3/README.md`).
+- The same way, Detective's Badge Wallet left its dark table, darker than any real card, for a light desk, and the Flash Camera moved to royal blue so the set kept six or more backdrop hues, as every real set has.
 
 ## Tools tried
 

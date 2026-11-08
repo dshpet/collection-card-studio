@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A shows the whole police car standing in the middle of a street scene, with a house, a row of bushes, clouds and a kerb all in the background. That is a lot of extra scenery around a fully framed object, the same thing the generated lighthouse did when it added an island. B is a close-up: the card edges cut off the bike and the car's tailgate, as the real taxi and lighthouse cards are cut. B's background measures busier, though, so this call is weak.",
+   "fix": "Close-up on the police car parked on an asphalt road with lane markings, the car fills the card and is cut off by the right edge, plain blue sky behind, no houses, bushes or other scenery."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both cards use quiet concentric rings in tones of a single color. The magnifier floats; the hoop's pole is cut off by the bottom edge. Both background measurements fall inside the real range, and staging gives no reason to pick either.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "In A the wood under the book has bold orange stripe streaks across the whole card that are not tone-on-tone, and the cover is full of sticker decoration. In B the wallet lies on plain, quiet planks, close to the real material cards.",
+   "fix": "Book lying on a plain light wooden tabletop with soft, low-contrast grain, seen from above, the surface fills the card."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both float on quiet concentric rings. The earbuds in B are the music player's natural partner object, not an invented prop. Both measurements are in the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B puts the guitar on a full concert stage: lattice trusses down both sides, two spotlight cones and wooden floorboards. That is many small, busy shapes, and the background edge density is 0.039, more than twice the top of the real range. A's jacket sits on quiet green rays.",
+   "fix": "Electric guitar leaning on a plain wooden stage floor, close up, soft dark backdrop with one gentle light behind it, no trusses and no spotlight beams."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A's green rays have a strong yellow glow at the centre and dark corners, like the generated glove card in the lessons. B's cyan rays are even across the card, with only the flashlight beam on the left.",
+   "fix": "Oil lamp on even green rays with no bright glow at the centre and no dark corners."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "In A, dense ivy covers the top and both sides of the door frame, with hundreds of small leaves. The background edge density is 0.107, above the real range. B is a tight close-up of the knob on a plain green door, with the doorway cut off at the right edge: a few large, quiet shapes.",
+   "fix": "Close-up of the flower wreath hanging on a plain blue painted door, the door fills the card, no ivy or leaves around the frame."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B's background has a criss-cross metal truss along the top edge and coloured light beams, with edge density 0.061, well above the real range. A's fan sits on quiet tone-on-tone yellow waves.",
+   "fix": "Stage light hanging from a single plain bar at the top edge, dark teal backdrop with soft haze, no lattice truss."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "Behind B's sneakers, a hard horizontal line splits an orange wall from a cream floor of a different color, so this is neither a plain floor in the backdrop's color nor a real material. A's hat sits on a seamless purple sweep, which is category 2 as the guide describes it.",
+   "fix": "Sneakers standing on a plain floor the same orange as the backdrop, a smooth sweep with no visible horizon line."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both use tone-on-tone blue stripes like the real clock card. The dog stands on grass and the chair on plain planks. Both measurements are in range and the staging is equally plausible.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both sit on a plain seamless sweep in a single color. The vending machine's drinks are what the container holds. There is nothing in the staging to separate them.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A lies on dark reddish-brown wood, the darker, redder wood the generated computer cards used in place of the real light desk. B's racket and ball lie on flat green court with one white line, and the ball is a valid partner object.",
+   "fix": "Zip bag with the ring lying on a light, warm wooden tabletop with soft grain, seen from above."
+  }
+ ],
+ "pattern": "Generated cards add scenery or decoration that the real cards don't have: ivy, stage trusses, houses and bushes, an island base. They frame the whole object instead of letting the card edge cut it. They light the centre of ray backdrops with a bright glow, set the floor in a different color from the wall with a hard horizon, and swap the real light wood for darker, redder or streaky grain."
+}

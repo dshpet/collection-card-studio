@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A (Ferris wheel) is high-key. A near-white wheel sits on an even mid-light blue sky, and the corners are not darkened. B (jellyfish) is low-key. A dark navy field is 0.515 lightness, below the real range. The bottom band goes almost black. A pale pink hero glows against it with a 0.286 gap, far above the real cards. The light shafts brighten the top corners, so the vignette runs backwards (-0.046).",
+   "fix": "Lift the whole background to a mid-light blue so it is only slightly darker than the jellyfish. Remove the near-black band at the bottom and the bright light shafts. Darken the four corners slightly and evenly."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (doorknob) is a large dark green door field with a mid-value brass hero, plus a light strip on the right. B (wreath door) is a dark blue door framed by mid-light leaves along the edges, which lightens its corners (vignette -0.07). Both are a little below the real key range, and both keep their darkest accents to small areas. On value alone I have no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (magnifier) has low contrast: concentric green rings in two close mid values, and the lens takes the background value (rms 0.066). It has no halo. B (basketball hoop) has a near-white backboard, and the grey lens shows a smooth light glow hugging the board's outline against a flat mid field. That glow is the same halo behind the hero that the generated glove and camera lessons show.",
+   "fix": "Remove the bright glow that follows the backboard's outline. Keep the background rings at an even value right up to the hero's edge, and let the board's own white carry the separation."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (map book) is a mid-value teal book on a mid-light striped wood table. B (wallet) is a dark leather wallet on a light wood floor, with a hero gap of -0.223. A dark hero on a light ground matches the real camera card. Both have in-range key, contrast and vignette, so value gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (red flash camera) is a dark-to-mid hero on mid/dark violet rings, with a dark lens barrel as the darkest accent. Its key is slightly low (0.545). B (music player) has a hero that goes almost entirely to the top grey level, a near-white body and earbuds. Its gap of 0.223 sits well above the real cards, so the hero pops by brightness alone, with little shading inside it.",
+   "fix": "Shade the yellow player's side and bottom faces down to a mid value, with a darker band where it meets the cable. Do not make the whole object glow white against the purple."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (flashlight) is a dark red body on a light cyan ray burst, and the darkest accent sits on the handle. Its corners are close to even, which is typical of the real cards. B (oil lamp) has strongly darkened corners (vignette 0.144, above the real range). A bright ring of light rays wraps directly behind the lamp and fades to dark green at the edges, like a spotlight.",
+   "fix": "Keep the green rays at an even brightness out to the card's edges. Remove the dark corners and the bright glow pooled behind the lamp."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (tennis racket) has a mid green court, a white line and a light racket, and the only near-black area is the grip. Its key and gap are within the real range. B (evidence bag) is low-key: a nearly black wood table covers the whole card (key 0.45), and a pale bag and ring float on it with a 0.252 gap. That is a dark, spotlit look the real set never uses.",
+   "fix": "Make the wooden table a light, warm mid-brown so the card reads bright overall. Keep the clear bag only slightly lighter than the table, with dark accents only at the bag's folds and the ring's inner edge."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "B (spyglass) is the real card from the reference sheet: light cyan stripes, a dark brown barrel and crisp gold rims. A (palm tree) is a mid-dark magenta swirl over near-white sand. The hero is a mid-value trunk and leaves that share the swirl's value, so it barely separates by value (rms 0.111, below the real cards). The light sand band at the bottom carries most of the brightness.",
+   "fix": "Lighten the pink swirl background to a bright, pale magenta. Darken the trunk and the undersides of the leaves so the palm stands out as a darker shape against it."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "In the grey lens, A (bloodhound) shows a light arch-shaped glow directly behind the dog's back, inside darker blue stripes. That glow behind the hero matches the generated lessons. B (rocking chair) has even dark stripes behind a mid-light chair and floor, with no halo around the silhouette.",
+   "fix": "Remove the light glow arching behind the dog. Keep the blue stripes at the same brightness from the top of the card down to the grass."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (safe) is one big flat dark-blue mass with almost no value change across the door, and its key is slightly below range (0.57). In the grey lens a light rim of glow hugs its top edge. B (vending machine) is also a dark body, but its pale glass panel breaks it up into light and dark shapes, and the floor glow sits under it rather than around its outline.",
+   "fix": "Remove the bright glow hugging the top of the safe. Let the door panel get lighter toward the top-left and darker toward the bottom-right, so the blue body is not one flat dark block."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (police car) has a mid-light sky and street, a black-and-white car, and in-range values. B (bike rack) has a near-white sky in the top corners (vignette -0.318, far outside the real range). The SUV and road fill the frame in mid-dark values, and contrast is excessive (rms 0.232). The bright and dark areas are scattered, not grouped around the hero.",
+   "fix": "Tone the sunset sky down to a soft mid-light blue or peach so the top corners are not brighter than the centre. Reduce how much of the dark car body and road fills the card, so the red bike sits against one calm mid-value background."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (sneakers) is a flat two-tone setting: a light orange wall over a near-white floor. The white soles merge into the floor, but there is no glow. B (fedora) is a studio spotlight: dark purple corners and a smooth bright ellipse of glow behind and under the hat. That glow behind the hero is the generated tell in the lessons.",
+   "fix": "Make the purple background an even mid-light value from the centre out to the corners, with no spotlight glow behind the hat. Keep a soft contact shadow under the brim."
+  }
+ ],
+ "pattern": "The main tell is a smooth bright glow or spotlight pooled behind the hero. In the grey lens it shows as a light ring that follows the object's outline, often with dark corners, or with corners brighter than the centre. The second tell is a key outside the real range. Some cards are low-key, with a dark field and a hero lit like a spotlight. Others are flat backgrounds where the hero shares the background's value. Real cards keep an even, mid-to-light background pattern right up to the hero's edge. They separate the hero mostly by its own dark accents, and any corner darkening is only slight."
+}

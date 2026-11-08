@@ -1,0 +1,149 @@
+{
+ "title": "Detective",
+ "story": "One clue at a time, one case closed.",
+ "declined": [],
+ "variants": [
+  {
+   "cards": [
+    {
+     "name": "Flashlight",
+     "subject": "A red metal flashlight with a silver head ring and glass lens, a ridged grip, a yellow switch on the barrel, and bright yellow light shafts streaming from the lens.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "rich red body, silver head ring, yellow switch and light",
+     "backdrop_colors": "cyan, light cyan",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Flash Camera",
+     "subject": "A vintage press camera with a red-brown body, a silver lens ring and front lens, a round flash dish on top and a yellow shutter button.",
+     "object_class": "electronics",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "red-brown body, silver lens ring, small yellow button",
+     "backdrop_colors": "sky blue, light blue",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Magnifier",
+     "subject": "A magnifying glass with a round silver rim, a clear lens with a white glint and a glossy red handle joined to the rim at its lower edge.",
+     "object_class": "tool",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "silver rim, clear glass with white glint, glossy red handle",
+     "backdrop_colors": "grass green, light green",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Fedora",
+     "subject": "A tan felt fedora with a creased crown, a pinched front, a wide brim and a forest green band.",
+     "object_class": "clothing",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "rich tan crown, deeper amber-tan brim, forest green band",
+     "backdrop_colors": "rich purple",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Badge Wallet",
+     "subject": "An open brown leather wallet lying flat with a gold shield badge on the left flap and a cream card with a green stripe on the right flap.",
+     "object_class": "accessory",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "brown leather, gold badge, cream card, green stripe",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "light honey-colored wooden desk",
+     "build_model": true
+    },
+    {
+     "name": "Evidence Bag",
+     "subject": "A clear plastic zip bag lying flat with a blue zip strip across the top, holding a small gold ring.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "surface_from_above",
+     "hero_colors": "clear plastic, blue zip strip, gold ring",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "dark wooden table",
+     "build_model": false
+    },
+    {
+     "name": "Steel Safe",
+     "subject": "A square steel safe standing on four short feet, with a closed front door, a round gold dial in the centre, a gold handle on the right and thick hinges on the left.",
+     "object_class": "container",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "deep navy steel, gold dial and handle, silver hinges",
+     "backdrop_colors": "rich pink",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Doorknob Print",
+     "subject": "A round brass doorknob on a brass plate on a forest green door, with a clear grey fingerprint swirl dusted on the knob.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "brass knob, forest green door, grey powder print",
+     "backdrop_colors": "warm yellow",
+     "surface_or_setting": "painted wooden door in a house hallway",
+     "build_model": true
+    },
+    {
+     "name": "Squad Car",
+     "subject": "A vintage black and white sedan with a single red light on the roof, four wheels, and a house pictogram in one colour on the front door.",
+     "object_class": "vehicle",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "black and white body, red roof light, silver bumpers",
+     "backdrop_colors": "clear cyan sky",
+     "surface_or_setting": "asphalt street beside a pavement curb",
+     "build_model": true
+    },
+    {
+     "name": "Bloodhound",
+     "subject": "A sitting bloodhound with long droopy ears and a wrinkled face, nose lowered to sniff the ground, tan and red-brown fur and a forest green collar.",
+     "object_class": "animal",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "tan fur, red-brown ears and back, forest green collar",
+     "backdrop_colors": "sky blue, light blue",
+     "surface_or_setting": "green grass lawn",
+     "build_model": false
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "Composed on 2026-11-08 from the outside rater's best variant (v2) after a review of all three pre-final variants and the producer's earlier grades (experiments/plan_review.py, runs/night/plan_review.json).",
+  "Flashlight: outside 3. Source: runs/prefinal/detective v2_01.",
+  "Flash Camera: its twins in v1 and v3 got 3. Source: runs/prefinal/detective v2_02.",
+  "Magnifier, floating, replaces the Map Magnifier (outside 2, broken: a lens drawn front-on while lying flat). Source: runs/prefinal/detective v3_01.",
+  "Fedora: the genre's hat, on a floor. Source: runs/prefinal/detective v2_04.",
+  "Badge Wallet: the badge, lying flat in its wallet. Source: runs/prefinal/detective v2_05.",
+  "Evidence Bag: outside 3. Source: runs/prefinal/detective v2_06.",
+  "Steel Safe replaces the Tape Roll (outside 3), which without text is only tape; the safe got outside 4. Source: runs/prefinal/detective v1_05.",
+  "Doorknob Print: the small object in its exact spot. Source: runs/prefinal/detective v2_08.",
+  "Squad Car: outside 4; carries the set's one emblem. Source: runs/prefinal/detective v2_09.",
+  "Bloodhound: outside 3 in v1; the set's one animal. Source: runs/prefinal/detective v2_10.",
+  "Colors rewritten under the rich-color rule adopted overnight (on the twins, closer to their real cards by CSD on 29 of 40): Flashlight: red body, silver head, yellow switch and light → rich red body, silver head ring, yellow switch and light; Flash Camera: black body, silver lens, small red button → red-brown body, silver lens ring, small yellow button, color words in the subject to match; Magnifier: silver rim, clear glass, red handle → silver rim, clear glass with white glint, glossy red handle; Fedora: tan felt, dark brown band → rich tan crown, deeper amber-tan brim, forest green band, color words in the subject to match; Steel Safe: dark grey steel, gold dial and handle → deep navy steel, gold dial and handle, silver hinges; Doorknob Print: brass knob, dark green door, grey powder print → brass knob, forest green door, grey powder print, color words in the subject to match; Bloodhound: tan and black fur, red collar → tan fur, red-brown ears and back, forest green collar, sky blue, light cyan → sky blue, light blue, color words in the subject to match.",
+  "Kept by hand: the Squad Car stays black and white on a day sky, the colors that make it a police car (outside 4). The Doorknob Print keeps its warm yellow backdrop, so the set has one pink floor and one pink surface rather than three pinks.",
+  "After the final draw, 2026-11-08 (runs/final3/detective): the Badge Wallet on a dark wooden table measured lightness 0.34, darker than any card in the real sets (lowest 0.44; real flat surfaces such as Tennis and Fruit Plate sit at 0.66-0.71), so it moves to a light honey-colored desk. The Evidence Bag's chosen drawing is an edit that had already moved it onto light wood and beat its dark draft."
+ ],
+ "cast": 0,
+ "problems": [],
+ "sensitive": [],
+ "request": {
+  "theme": "Detective",
+  "wishes": "A set for a Movie collection",
+  "variants": 1,
+  "cast": 0,
+  "plan": "runs/plans/final-detective-2.json",
+  "references": true,
+  "alongside": []
+ }
+}

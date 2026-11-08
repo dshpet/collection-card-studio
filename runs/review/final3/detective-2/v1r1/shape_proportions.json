@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: police car is short and stubby with a rounded hood and big wheels, the same chunky treatment as the real taxi; its outline is clean. B: the red bike's rear wheel overlaps the car's bumper in a confused way. The rack and pedal parts under the frame merge into a muddy blob in the silhouette. Spoke and frame thin_share (0.088) is above the real range.",
+   "fix": "Draw the bike rack as a clear frame of straight bars holding the bike by its top tube. Keep both wheels fully separate from the car bumper, with a clean gap under the bike."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the magnifier's red handle is a fat, bulbous sausage that swells toward the end, and it is thick compared with the lens ring. B: the backboard is a flat plate with straight edges and tight corner bevels; the pole and the net cords stay thin.",
+   "fix": "Make the magnifier handle a slim, straight wooden or plastic rod about a third of the lens width, with a slightly flared end, not a swollen club."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the travel book is a thick, swollen block. Its spine corner at the bottom left is rounded into a blob and the cover edges bow. B: the open wallet is a flat, thin leather piece with straight runs and crisp corners, though very plain (straight_share 0.814, above the real range).",
+   "fix": "Draw the book as a flat hardcover with a thin board cover, straight edges and tight square corners, and a page block of normal thickness."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the camera body is a box with straight sides and small corner bevels, and the flash dish sits on a thin stem. B: the music player is a pillow-shaped slab with soft blob corners and a swollen face. The earbud cables loop across the card (solidity 0.58, below the real range).",
+   "fix": "Draw the music player as a thin flat rectangular device with straight sides and tight rounded corners. Make the earbud cable a short thin cord running close beside it."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the jacket is inflated like a puffer toy. The sleeves are thick sausages with fat rolled cuffs and the body has no flat panels. B: the guitar has true proportions, with a long thin neck, a flat body and a crisp headstock.",
+   "fix": "Draw the jacket as a cotton shirt-jacket with flat front panels, sleeves of normal thickness and thin cuffs. Lay the sash flat across the chest."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the oil lamp has believable proportions: a narrow glass chimney, a thin loop handle and a stepped foot. B: the flashlight is a swollen club. The grip is a fat ribbed sausage and the head flares into a soft blob with no corners (corner_rate 0, below the real range).",
+   "fix": "Draw the flashlight as a straight metal tube of even width with a slightly wider head, a crisp rim edge and a fine knurled grip, not a bulging ribbed body."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "A: the door has flat recessed panels and a straight frame, and the wreath is a thin ring. B: the brass knob is oversized, wider than the backplate. The plate has straight runs, but the knob dominates like a toy.",
+   "fix": "Make the door knob about as wide as the backplate, on a short visible neck. Keep the plate a flat narrow rectangle."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the folding fan has flat pleated leaves, a straight outer edge and thin separate ribs. B: the stage light's can is swollen into a round pot with blobby rims. The bracket and mount are thick tubes rather than thin flat straps.",
+   "fix": "Draw the stage light as a straight cylinder with flat front and back rims. Hang it from a thin flat U-bracket and a small clamp on the truss."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the fedora has a believable creased crown, a thin brim and a flat band. B: the sneakers are puffed up, with bloated white soles and swollen toe boxes. The two shoes merge into one lumpy silhouette.",
+   "fix": "Draw the sneakers with a sole of normal height, a slimmer upper and visible flat panels. Leave a clear gap between the two shoes."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the bloodhound is a compact folded mass with long thin ears, chunky but in the cartoon idiom. B: the rocking chair has thin spindles, curved rockers and the expected parts. Its arms are a bit thick, but nothing clearly off.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the safe's top corners are soft blobs. The door slab is thick and puffy, and the box sides bow slightly. B: the vending machine is a straight-sided box with flat faces and tight corner bevels.",
+   "fix": "Draw the safe as a heavy steel box with flat faces, straight edges and small tight corner bevels, with a door slab that sits nearly flush."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the zip bag is flat and thin, with straight edges and crisp corners (straight_share is high). B: the tennis racket has a thick toy-like plastic frame and a fat grip. The string grid is coarse and heavy (thin_share 0.259, far above the real range).",
+   "fix": "Draw the racket with a slim frame, a fine dense string bed and a grip only slightly wider than the throat."
+  }
+ ],
+ "pattern": "On shape, generated cards still inflate objects into toys. Flat things like device bodies, safes and books swell into pillows with blob corners. Handles, grips and sleeves thicken into sausages, as on the flashlight, magnifier and jacket. Parts are enlarged or merged, like the oversized knob and the fused sneaker pair. Real cards keep flat faces, tight bevels and thin parts at their true width."
+}

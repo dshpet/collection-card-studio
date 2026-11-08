@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A, the Ferris wheel, matches the anchor card. It has thin straight spokes, a crisp rim and boxy gondolas. B, the jellyfish, has a soft domed bell with ruffled oral arms. Its tentacles are long ribbons and fill more of its silhouette than real cards allow (thin_share 0.076 against a real maximum of 0.023), and its solidity is below the real range. The tentacles fit the subject, so this is a weak call.",
+   "fix": "Draw a compact jellyfish: a slightly flattened bell, shorter frilled arms kept close under the bell, and only two or three short tentacles."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the doorknob backplate is a flat rectangle with straight edges and tight corners, and the knob is a clean sphere. B: the masked object is the wreath, a ring broken into many small scalloped petal and leaf bumps (corner_rate 21.8, almost no straight edge). The door panels behind it are thin and busy. B gives weaker evidence of game-style simplified parts.",
+   "fix": "Draw the wreath as a clean ring with a few large, simple flowers and leaves, and a bow with two clear loops. Keep the door panels as flat rectangles with crisp edges."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the magnifier handle is a fat, glossy, tapered pill, almost as wide as the lens rim, and the rim and handle merge into one toy-like lump. B: the basketball backboard is a flat plane with straight runs and tight corners. The net and pole stay thin.",
+   "fix": "Make the magnifier handle a slim straight wooden or plastic rod about a third of the lens width, with a narrow metal collar and a thin metal rim around the lens."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the book's cover edges are puffy, its corners are soft, the page block is swollen, and it has extra parts: three ribbon bookmarks and stickers. B: the open wallet is a flat, near-rectangular slab with straight edges and a thin fold at the spine. B is very clean and its straight-edge and solidity values sit just above the real range, but it reads as a real flat object.",
+   "fix": "Draw the book with flat, rigid covers and sharp bevelled corners, a straight page block, and a single ribbon bookmark."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the retro camera box has fairly straight sides, a mounted flash reflector on a thin post, and small top buttons in the right relation to each other. B: the music player is a swollen pillow with large blobby corner radii and inflated buttons. Its earbud cords loop wide, pushing thin_share to 0.083 (real maximum 0.023) and solidity below the real range.",
+   "fix": "Draw the player as a thin flat rectangular device with tight bevelled corners and flush buttons, with short earbud cords coiled close to the body."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the flashlight is one smooth inflated pill with no corners at all (corner_rate 0, below the real range). The ribbed grip bulges like sausage rings and the head flare is soft. B: the oil lamp keeps a thin ring handle, a slim chimney, a footed base and small crisp rims, and its part count is right.",
+   "fix": "Draw the flashlight as a straight metal tube with a crisp stepped head and a flat lens rim. Cut shallow grip grooves into the tube instead of bulging rings, and add a small flat switch."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the racket strings are a coarse grid of thick bars, as wide as the gaps between them (thin_share 0.259, against a real maximum of 0.014). The frame and handle are plump. B: the zip bag is a flat, slightly warped sheet with a straight seal strip along the top, and the ring sits flat inside.",
+   "fix": "Draw the racket with a fine, dense string grid of thin lines, a slimmer oval frame, and a straight narrow throat and handle."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "B: the telescope matches the anchor card, with stepped brass rings and a tapering eyepiece. A: the palm's fronds are fat rounded leaf blobs on a thick segmented trunk, and solidity is 0.526, below the real range. The palm subject explains part of that, so this is a weak call.",
+   "fix": "Draw narrower palm fronds split into thin leaflets with pointed tips, and a slimmer curved trunk."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the bloodhound is a heavy lump with long ears and folded paws. That fits a cartoon bloodhound lying down. B: the rocking chair has the expected parts: slim spindles, arms, seat, cushion and curved rockers, in the right relation. Neither card shows a shape flaw beyond the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the safe's box has soft, blobby, pillow-rounded top and side edges. The door panel is swollen, the feet are fat stubs, and the handle is a thick sausage. B: the vending machine is a crisp box with flat faces, tight corners and tiny feet.",
+   "fix": "Draw the safe as a heavy steel cube with flat faces and tight bevelled corners. Inset the door as a flat panel, keep the handle a thin bar, and give it short low feet."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the police car has the anchor taxi's squat cartoon proportions, with clear body, cab, bumper and wheel parts. B: the bike frame and spokes are thin and correct, but the rack, chainring and car bumper below merge into an unclear mass. That raises thin_share to 0.088 and drops solidity below the real range.",
+   "fix": "Show the bike clearly separated from the car on a simple two-arm hitch rack, with a clean gap between the wheels and the bumper."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the sneakers have swollen pillow soles, chunky rounded uppers and thick multicolour laces. The two shoes merge into one lumpy mass. B: the fedora has a smooth flat elliptical brim, a pinched crown, and a band that stays a flat strip.",
+   "fix": "Draw the sneakers with a thinner flat sole, a defined toe cap and heel, thin laces, and a clear gap between the two shoes."
+  }
+ ],
+ "pattern": "On shape, generated cards still give themselves away through inflated volume. Boxes and devices swell into pillows with blobby corner radii (safe, music player, flashlight, book cover). Thin parts thicken into sausages or coarse bars (racket strings, magnifier handle, sneaker laces). Extra parts get added, such as more bookmarks, lacing windows or stickers. Real cards keep flat planes, tight bevels and slim straps and rails."
+}

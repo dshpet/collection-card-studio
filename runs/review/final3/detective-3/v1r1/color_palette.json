@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: cream wheel spokes with red, yellow, blue and purple cabins on a mid-blue sky. The local colours look believable, and the hero (0.080) is quieter than the backdrop. B: the jellyfish bell and tentacles are pure neon magenta with cyan rim glows on a saturated violet-blue field. Every hue is pushed to full strength and nothing neutral is left to rest the eye.",
+   "fix": "Paint the jellyfish a soft translucent pink with pale, milky highlights. Drop the neon cyan rim glow. Make the water a calmer mid-blue so the hero is the only strong colour."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the gold knob, gold plate and yellow hallway glimpse all sit in one orange-gold family against the green door, with no neutral area. Its hue-family count (2.64) is below the real range. B: a blue door, orange frame, green ivy and a multicolour wreath give separate hue roles, and the wall is cream.",
+   "fix": "Make the doorplate an aged brass with grey-brown shadows. Paint the background hallway a muted grey-beige instead of glowing yellow."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: a silver and red magnifier on saturated green rings. It has very few hue families and almost no warm area. B: a white backboard with red trim on cyan rings, with a cyan cast in the backboard shadow. Each card has one metric out of range, and neither departs clearly from the real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the brown wallet sits on orange wood, so the hero and backdrop share one warm family. Warm share is 0.99 and the card has about 2 hue families, both outside the real range. The only break is a tiny green card stripe. This matches the lesson's all-orange generated computer. A: a teal book on warm wood gives a clear temperature contrast.",
+   "fix": "Put the wallet on a cool blue-grey surface or a cool blue backdrop. Keep the leather a muted brown with dark brown-violet shadows."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the music player is one flat, fully saturated orange-yellow mass. Its shading barely changes hue, it sits on loud violet rings, and the card has under 2 hue families. A: a brick-red camera body with grey metal flash and lens rings. It has more natural local colours, although the blue background is also loud.",
+   "fix": "Give the player a softer butter-yellow with warm brown shadows and some grey or white plastic parts. Tone the violet rings down to a calmer purple."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the brass lamp and its flame sit on yellow-green rays whose glowing centre repeats the hero's yellow. The hero and backdrop share a temperature, and the lamp merges with the background in the lens. A: a red flashlight on cyan rays is the real card's warm hero on a cool backdrop.",
+   "fix": "Set the brass lamp on cool blue or teal sunburst rays. Keep the flame's glow small and close to the chimney."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a pure blue racket on a pure green court, so the whole card is cool. Warm share is 0.01, and only the yellow ball breaks it. The racket blue is pushed to full chroma. B: a neutral clear bag holding a gold ring on dark red-brown wood. It has believable local colours and a neutral mass.",
+   "fix": "Make the racket frame a warm red or orange with a dark grip. Keep the court a muted green."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the green palm sits on a hot magenta spiral above orange sand. The hero chroma (0.174) and background chroma (0.197) both exceed the real range, and the three loud families compete. B: a brown and gold telescope on cyan stripes, matching the real telescope card in the anchor.",
+   "fix": "Put the palm on a calm sky-blue backdrop. Use a softer leaf green and pale beige sand."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the orange wooden chair stands on an orange wooden floor of the same hue, so the hero repeats the backdrop. The only contrast comes from the blue wall and the lime cushion. A: the red-brown dog sits on green grass under a blue sky, with distinct hue roles and a cool backdrop.",
+   "fix": "Paint the floor a cool grey-blue or muted neutral so the warm chair stands apart. Make the cushion a softer green."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: a blue vending machine on a violet backdrop, which is a neighbouring hue with no temperature contrast. Warm share is 0.026, and the cans add scattered pure hues. A: a blue safe on pink, with gold dial and handle accents and grey hinges, giving clear hero and accent roles.",
+   "fix": "Put the blue machine on a warm orange or yellow backdrop. Use fewer, softer can colours."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: an orange sunset sky and golden hills pull the whole card warm, and the red bike sits on that warm field. The card has about 7 hue families, above the real range. A: a black and white car on a grey road under a blue sky, with a neutral hero and a cool backdrop.",
+   "fix": "Change the sky to a clear daytime blue and the hills to a muted green. Keep the red bike as the only warm accent."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the sneakers mix pure blue, lime, teal, magenta and orange laces on an orange wall above a pale yellow floor. With about 5.5 hue families it is over the real range, and every colour is pushed to full hue. B: a tan fedora with a dark green band on violet, a classic warm hero on a cool backdrop.",
+   "fix": "Paint the sneakers mainly blue with white soles and one accent colour. Make the backdrop a calm cool blue or teal."
+  }
+ ],
+ "pattern": "Generated cards push every hue to full strength and leave little neutral area. They also often break the real cards' warm-hero/cool-backdrop pairing: the hero repeats the backdrop's hue or temperature, as in the orange wallet on orange wood or the brass lamp on yellow-green rays. Some cards are pulled entirely warm, such as the sunset scene. In others, several pure accent colours compete instead of one accent."
+}

@@ -1,6 +1,6 @@
 """The morning review of the final sets, 2026-11-08. Answers go to runs/ratings.json as the producer's ratings.
 
-Sets: the three final sets and the cast cards, beside a real set.
+Sets: the three final sets and the cast cards, beside a real set; grade each set 1-5 and comment.
 Cards: each final card beside its three references, with every candidate drawn for it and the outside rater's grade of
 the same card in the pre-final set. Grade 1-5, mark it broken, comment, or pick another candidate.
 Blind: the overnight arms of experiments/night.py, unlabelled. Twins: a real card and two redraws, the style before
@@ -28,7 +28,7 @@ sys.path.insert(1, str(Path(__file__).resolve().parents[1] / "scripts"))  # the 
 from common import ROOT, best_try, load_json, save_json  # noqa: E402
 
 FINAL = {"western": ("final3/western", 1), "period-drama": ("final3/period-drama-2", 3),
-         "detective": ("final3/detective", 2)}
+         "detective": ("final3/detective-3", 2)}
 CAST = "final2/cast"
 COMPARE = "Beach"  # the real set shown above ours
 TWIN_ARMS = {"ns2": "smooth surfaces", "nc": "one camera"}
@@ -79,11 +79,12 @@ def build():
     for genre, (run, variant) in FINAL.items():
         found = list(final_cards(run, genre, f"prefinal/{genre}", variant))
         cards += found
-        rows.append({"title": load_json(ROOT / "runs" / run / "plan.json")["title"], "cards": found})
+        rows.append({"id": f"final/set/{run}", "kind": "final", "title": load_json(ROOT / "runs" / run / "plan.json")["title"],
+                     "cards": found})
     if (ROOT / "runs" / CAST / "check.json").exists():
         found = list(final_cards(CAST, "cast", "prefinal/cast", 1))
         cards += found
-        rows.append({"title": "Cast bonus", "cards": found})
+        rows.append({"id": f"final/set/{CAST}", "kind": "final", "title": "Cast bonus", "cards": found})
 
     blind = []
     twins = load_json(ROOT / "runs" / "twins40" / "briefs.json")
@@ -151,6 +152,10 @@ def summary():
     items = load_json(ITEMS)
     given = {v["id"]: v for v in (load_json(RATINGS) if RATINGS.exists() else {}).values()
              if v.get("kind") in ("final", "night") and v.get("rater") == "me"}
+    for row in items["sets"]:
+        answer = given.get(row.get("id"), {})
+        if answer.get("grade"):
+            print(f"set {row['title']}: {answer['grade']} ({SET_GRADES[answer['grade']]})")
     groups = defaultdict(list)
     for card in items["cards"]:
         answer = given.get(card["id"], {})
@@ -183,6 +188,8 @@ def summary():
         if entry.get("comment"):
             print(f"- {entry['id']}: {entry['comment']}")
 
+
+SET_GRADES = ["", "Clearly no", "Rather no", "Maybe", "Yes, with small issues", "Yes"]
 
 PAGE = """<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Final review</title>
 <style>
@@ -221,6 +228,7 @@ img { display: block; max-width: 100%; border-radius: 10px; }
 <script>
 const TABS = [["sets", "Sets"], ["cards", "Cards"], ["blind", "Blind arms"]];
 const GRADES = ["", "Clearly off", "Noticeably off", "Close", "Very close", "Indistinguishable"];
+const SET_GRADES = ["", "Clearly no", "Rather no", "Maybe", "Yes, with small issues", "Yes"];
 const WORKS = [["yes", "Works"], ["slight", "Slightly off"], ["no", "Broken"]];
 const rater = "me";
 let items, ratings = {}, tab = "sets";
@@ -240,8 +248,11 @@ const setRow = (label, cards) => `<div class="set"><div class="label">${esc(labe
 
 const views = {
   sets() {
-    return `<p class="hint">The three final sets and the bonus cast cards, with a real set on top. A candidate picked on the Cards tab replaces the card here.</p>
-      ${setRow("Real: " + items.compare.title, items.compare.cards)}${items.sets.map(s => setRow(s.title, s.cards)).join("")}`;
+    const votes = s => { const entry = answer(s.id) || {};
+      return `<div class="row">${[1, 2, 3, 4, 5].map(g => `<button data-set="${esc(s.id)}" data-setgrade="${g}" class="${entry.grade === g ? "on" : ""}">${g} · ${SET_GRADES[g]}</button>`).join("")}</div>
+        <textarea data-setcomment="${esc(s.id)}" placeholder="What stands out of the set? Optional">${esc(entry.comment || "")}</textarea>`; };
+    return `<p class="hint">The three final sets and the bonus cast cards, with a real set on top. Could each set stand in the game beside the real ones, by idea and by look? A candidate picked on the Cards tab replaces the card here.</p>
+      ${setRow("Real: " + items.compare.title, items.compare.cards)}${items.sets.map(s => setRow(s.title, s.cards) + votes(s)).join("")}`;
   },
   cards() {
     const item = items.cards[position.cards], entry = answer(item.id) || {}, past = item.prefinal;
@@ -276,7 +287,7 @@ const views = {
 function show() {
   document.getElementById("tabs").innerHTML = TABS.map(([id, label]) => `<button data-tab="${id}" class="${tab === id ? "on" : ""}">${label}</button>`).join(" ");
   document.querySelectorAll("[data-tab]").forEach(b => b.onclick = () => { tab = b.dataset.tab; show(); });
-  document.getElementById("progress").textContent = `Cards ${done(items.cards)}/${items.cards.length} · Blind ${done(items.blind)}/${items.blind.length}`;
+  document.getElementById("progress").textContent = `Sets ${done(items.sets)}/${items.sets.length} · Cards ${done(items.cards)}/${items.cards.length} · Blind ${done(items.blind)}/${items.blind.length}`;
   document.getElementById("main").innerHTML = views[tab]();
   const on = (id, f) => { const el = document.getElementById(id); if (el) el.onclick = f; };
   const comment = () => (document.getElementById("comment") || {}).value || "";
@@ -285,6 +296,11 @@ function show() {
     document.querySelectorAll("[data-grade]").forEach(b => b.onclick = () => grade(Number(b.dataset.grade)));
     document.querySelectorAll("[data-try]").forEach(b => b.onclick = () => { save(item, { pick: b.dataset.try === item.chosen ? null : b.dataset.try, comment: comment() }); show(); });
     on("broken", () => { save(item, { broken: !(answer(item.id) || {}).broken, comment: comment() }); show(); });
+  }
+  if (tab === "sets") {
+    const byId = id => items.sets.find(s => s.id === id);
+    document.querySelectorAll("[data-setgrade]").forEach(b => b.onclick = () => { save(byId(b.dataset.set), { grade: Number(b.dataset.setgrade) }); show(); });
+    document.querySelectorAll("[data-setcomment]").forEach(t => t.onchange = () => save(byId(t.dataset.setcomment), { comment: t.value }));
   }
   if (tab === "blind") {
     const item = items.blind[position.blind];

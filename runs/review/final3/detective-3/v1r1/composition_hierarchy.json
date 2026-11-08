@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the Ferris wheel's hub sits just right of and below center, and the wheel is cut off by the right and bottom edges. This matches the real Ferris wheel card in image 1. B: the jellyfish floats centered with an even margin of about 0.065 and spare bubbles around it. A thin cyan bar runs along the top edge, which looks like a framing artifact.",
+   "fix": "Fill the card edge to edge with dark blue water, with no stripe or bar at the top. Draw the jellyfish larger and lower so its tentacles run off the bottom edge."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a tight close-up. The doorknob fills the left half, the plate runs from top to bottom, and the door edge crops it at the right. B: the whole door is shown head-on, with ivy framing all four sides. The wreath, which is the hero, takes up only about 8% of the card, and the ivy and doorframe pull the eye away from it.",
+   "fix": "Move in close to the wreath so it fills most of the card, seen slightly from the side. Show only a little blue door around it and remove the ivy border."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the magnifier lies on a diagonal over the rings, with clear space all around it, like the real telescope card. B: the backboard is large and tilted, and the bottom edge cuts off the pole and net, like the real lighthouse card. On framing, both look like real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the book fills about 53% of the card, above the real range, and its corners nearly touch the top and left edges. The stickers on the cover compete with each other for attention. B: the wallet lies small and at an angle on wide empty planks, which leaves a lot of plain wood.",
+   "fix": "Draw the book smaller, with clear table space on every side. Use fewer, larger cover pictures so one shape reads first."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the camera faces straight on, its lens sits low and centered, and the flash dish sticks up top-left. This matches the frontal, centered cameras in the generated lessons. B: the player is tilted in the upper middle, and the earbud cords sweep down and to the right, giving the card movement.",
+   "fix": "Turn the camera to a three-quarter view, tilted slightly, with the lens toward the lower left and the flash leaning away."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the flashlight cuts diagonally across the card, and its beam runs off the top-left edge. B: the oil lamp stands perfectly upright and symmetrical in the center, with a radial glow behind it. Its box is narrow (0.43 wide) and the subject area is small. This centered, glowing setup matches the generated lessons.",
+   "fix": "Tilt the lamp slightly and draw it larger so it fills more of the card's width. Drop the glow centered behind it."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the racket lies on a diagonal across a court line, and the ball beside it is a second focus point. B: the bag is tilted in the center with the ring in its middle, and the clear plastic weakens the outline at thumbnail size. Neither card has a framing flaw that clearly gives it away.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "B: the telescope runs diagonally across the stripes and matches the real telescope card in image 1 in placement and extent. A: the palm stands upright in the center over a swirl background. Its fronds spread almost to both side edges, and rocks on the sand at the bottom pull attention to the bottom corners.",
+   "fix": "Lean the palm trunk slightly and draw the crown more compact so there is clear space at the sides. Remove the stray rocks on the sand."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the hound lies wide and low, filling the middle band on grass. B: the rocking chair is shown whole in three-quarter view on floorboards, against stripes. Both have similar occupancy and margins.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the safe is a big front-facing block filling about 51% of the card, above the real range. Its edges press toward the left and top. B: the vending machine stands upright in three-quarter view, centered, with even margins.",
+   "fix": "Draw the safe smaller and turned a little more to the side, with clear pink space around it on every side."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the police car is shown three-quarter on a road and takes up the middle of the card. A house and tree sit in the top-left background. B: the bike is cropped by the left and right edges and sits flat against the back of a large blue SUV. The SUV fills the rest of the card and competes with the hero.",
+   "fix": "Show the bike alone, angled in three-quarter view, with both wheels fully inside the card. Remove the car behind it, or keep only a small hint of it."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: a pair of sneakers sits low on a two-tone backdrop, with the shoe toe close to the left edge. B: the hat sits centered in three-quarter view, with a soft glow behind it. Both are short, wide subjects with similar occupancy.",
+   "fix": ""
+  }
+ ],
+ "pattern": "On framing, generated cards tend to show a front-facing, symmetric, centered object, often with a soft glow or rays behind it. They usually show the whole object, either crowding the edges (subject area above about 0.45) or shrinking it inside extra scenery (a doorframe, ivy, a car behind the hero) that competes with it. Real cards more often use a dynamic diagonal or three-quarter view, crop the object boldly with one edge, and keep one clear hero with plain background."
+}

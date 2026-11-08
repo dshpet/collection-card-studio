@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the police car has a firm but moderate outer contour. Its interior lines (grille, windows, house badge) are thin, and the road and house behind it give sparse, soft edges. B: the bike frame, both tyres and the SUV body have heavy doubled dark contours. The dense spoke lines and the mountain and sky edges crowd the background, and B's background edge density (0.094) and outline value (-0.145) both fall outside the real range.",
+   "fix": "Draw the bicycle with soft shaded edges and no dark rim around the tyres or frame. Use fewer, lighter spokes, and keep the car and the sunset hills behind it smooth and blurred, with no crisp lines."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the magnifier ring and handle have smooth, fairly soft edges, and the background rings are faint. B: the backboard frame has a thick dark double contour around both the outer and inner rectangles. The hoop net is drawn as dense dark crossing lines, and B's outline value (0.201) is the highest in the pair and well above the real range.",
+   "fix": "Make the red backboard frame a soft rounded plastic edge with no dark line around it. Draw the inner square as a thin flat stripe and the net as soft white cords without dark edges."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the book cover has fairly clean edges, but each map sticker carries a dark ringed border. B: the wallet has long dashed stitch lines running around every panel. The card slot and the badge have crisp double contours, and the wood planks are separated by hard dark grooves. Both cards score above the real outline range. B's tiny repeated stitch marks match the extra fine detail that generated cards showed in the lessons.",
+   "fix": "Remove the dashed stitching or make it faint. Round the wallet's panel edges softly and draw the plank gaps as soft, low-contrast shadows instead of dark lines."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the camera body has soft, slightly textured edges, and the flash reflector has lost, soft rims. B: the player box has a crisp dark contour on all sides, and the inner bezel is a thick double groove. The earbud cables are drawn as paired dark lines. B's subject edge density (0.152) is near the top of the real range.",
+   "fix": "Give the yellow player soft rounded edges with no dark rim. Make the face bezel a shallow soft step, and shade the white cables as smooth tubes without dark edge lines."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the jacket has moderate contours, the badges have thin rims, and the ray background is soft. B: the guitar has a dark outer outline, a fretboard dense with fret and string lines, and pickup detail. Behind it, the stage truss lattice, the lights and the floorboards fill the background with hard edges. All three of B's measures fall outside the real range.",
+   "fix": "Put the guitar on a plain soft gradient or light-ray background with no metal truss and no plank lines. Draw the guitar body with soft shaded edges and no dark outline, and keep the fret marks subtle."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the lamp's glass chimney has soft, partly lost edges, and the brass base has moderate rims. B: the flashlight body has a continuous dark contour, the lens bezel is a thick double ring, and the grip has many hard parallel groove lines. B's subject edge density (0.161) sits just above the real range.",
+   "fix": "Draw the flashlight with soft shaded edges and no dark outline. Make the grip ridges shallow and soft, and the metal bezel a smooth band rather than ringed lines."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: every ivy leaf around the door is individually outlined, and each wreath flower has a dark contour. The door panels have wood-grain lines, so edges are dense everywhere. A's subject (0.342) and background (0.107) densities are both far above the real range. B: the doorknob and plate have clean edges and a soft, sparse background, with most detail in the fingerprint.",
+   "fix": "Show fewer, larger ivy leaves as soft green masses without edge lines. Draw the wreath flowers as simple soft shapes, and make the door a smooth painted surface with no grain."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the fan has clean, moderate pleat edges, and the wavy background is faint (0.013). B: a metal truss lattice across the top adds dense hard edges, the light beams add streaks, and the lamp housing has doubled rims. B's background density (0.061) is about four times the real maximum.",
+   "fix": "Remove the metal truss and draw only a short soft mount. Set the light against a smooth gradient background, and give the housing soft rounded edges."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the hat has soft, almost lost edges and a smooth felt surface. Its subject edge density (0.05) is very low, under the real range. B: the shoes have heavy dark outlines, a dense mesh pattern and tangled lace lines. A hard straight horizon line crosses the background, and B's outline value (-0.1) falls outside the real range.",
+   "fix": "Draw the sneakers with soft shaded edges and no dark outline. Make the mesh a smooth surface, use simple laces, and let the floor fade softly into the wall with no hard horizon line."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the dog's outline is soft, the inner fur folds are light, and the background stripes are faint. B: every rail of the chair has a crisp dark contour, and wood-grain lines run across the backrest and the rockers. The floorboards add hard grain and gap lines, the same added-texture pattern the generated cards showed in the lessons.",
+   "fix": "Paint the chair as smooth, softly shaded wood with no grain lines or dark edges. Make the floor a soft gradient with only faint board gaps."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the safe has soft rounded body edges, with the hinges and dial as the crispest detail. B: the vending machine window holds dense small edges from cans, bottles and droplets, and the window frame and slot have dark double contours. B's subject density (0.142) is higher and its outline value (0.088) darker than A's.",
+   "fix": "Make the vending machine's window a soft glass area with a few simple drinks behind it and no water droplets. Round the frame edges softly, with no dark outline."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the bag's edges are soft and wrinkle-shaded, and the ring has clean rims. B: the racket strings form a dense grid of hard lines, the frame and grip have dark contours, and the court lines cut the background as hard straight edges. B's subject density (0.281) and outline value (-0.167) both fall outside the real range.",
+   "fix": "Draw the racket strings as a faint, soft mesh, and give the frame soft rounded edges with no dark outline. Make the court line a gentle, slightly blurred stripe."
+  }
+ ],
+ "pattern": "On this vector, the generated cards give themselves away by three habits. They draw a continuous dark, often doubled contour around the hero and its insets. They pack in fine repeated detail: stitching, strings, spokes, mesh, wood grain, foliage. And they let the background carry hard edges, such as trusses, planks and horizon lines. Real cards keep their edges soft and rounded, with lost edges at form turns and a quiet background."
+}

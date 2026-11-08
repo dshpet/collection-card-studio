@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: whole police car centered on a road at a standard 3/4 front view, with a house and bushes as a separate background layer: a tidy staged diorama. B: low, close camera cropped hard on the bike rack at the car's back. The car body leaves the frame, much like the real lighthouse's tight crop. Its normals are consistent.",
+   "fix": "Bring the camera closer and lower so the car fills the card and its back runs off one edge. Drop the house and keep only a soft, simple road behind."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: magnifier floats on a diagonal and faces the viewer almost flat-on, like the real spyglass. B: hoop seen from below, with the backboard and pole cut off at the right and bottom edges, a mild upward look. Both read as one consistent view. B's flat backboard pushes planar_share to 0.699, just above the real range, but that comes from the object's design.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: book seen from high above. The cover is one big even patch (planar 0.706, above the real range), and the page block shows on both the bottom and the right edge, so the turn feels stretched. B: wallet lies flat at a mild high angle, and the plank lines on the table match its tilt. Weak call.",
+   "fix": "Lower the camera so the book's cover is seen at a gentler slant, and show its page edge clearly on one side only."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: camera faces us almost straight on, with the lens pointing at the viewer and only a sliver of the top and side showing. This is the frontal, centered pose the generated cameras use in the lessons. B: the player is tilted and turned in a lively 3/4 view, with the earphone cord curling forward in depth.",
+   "fix": "Turn the camera about 30–40° so its side and top show clearly, with the lens angled off to one side, like a real product shot from above and to the side."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: guitar stands upright on a stage floor with nothing holding it up. Behind it is a full set: truss towers, spotlights and a floor horizon line, so foreground, hero, set and lights make four layers. It is like the extra diorama ground in the generated lighthouse. A: the jacket floats on a plain burst background in a single clean 3/4 view.",
+   "fix": "Remove the stage set. Show the guitar alone, tilted on a diagonal and turned slightly, over a simple radial-burst background."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: oil lamp is fully frontal, symmetric and dead-centered at eye level, with no top face showing on the base or chimney. Its normals are smooth rainbows only (planar 0.003, below the real range). B: flashlight sits on a dynamic diagonal with its front rim seen in 3/4, like the real spyglass.",
+   "fix": "Raise the camera a little and turn the lamp so the top of the base and the chimney opening show as ellipses. Tilt the whole lamp slightly off vertical."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: door is seen dead-on, like a flat orthographic elevation. Ivy frames it in the same plane, with no ground and no depth (planar 0.012, below the real range). B: extreme close-up with the knob sticking toward the camera, the plate in slight perspective, and a softer room visible through the gap at the right. That gives clear depth layers.",
+   "fix": "Turn the door slightly so its frame shows thickness on one side. Add a doorstep or floor line so it stands in space."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: fan is a flat front-on cut-out with no visible thickness and no tilt in depth. B: stage light in a 3/4 view, with its barrel receding and the truss cropped across the top, so it reads in clear depth. Weak call: the real clock is also frontal.",
+   "fix": "Tilt the fan back a little so the ribs and folds show thickness, and the handle points slightly toward the viewer."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: two shoes stand side by side at the same angle in a hard floor-wall corner. The flat horizon line cuts behind them, like a studio product shot rather than a game card. A: hat seen from slightly high in a 3/4 view. The brim ellipse matches the crown and it sits softly on a seamless background.",
+   "fix": "Show one sneaker, turned in 3/4 and seen from slightly above, floating or resting on a soft gradient. Remove the floor-wall corner."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: rocking chair from a low camera with a wide-angle feel. The floorboards converge strongly, the near rocker and armrest swell, and the top is cut off, so perspective looks forced. A: the dog lies on grass, seen from a gentle low camera, and the ground plane is consistent.",
+   "fix": "Use a milder camera with less stretch, a bit higher, so the whole chair fits. Keep the floorboards nearly parallel."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: safe in a 3/4 view showing its top and right side. B: vending machine in a 3/4 view showing its left side, with a low soft floor. Both keep one consistent view and mild perspective. A's planar_share of 0.665 comes from its big flat door, not the camera.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: bag seen almost straight down, a flat sheet on the table (planar 0.793, far above the real range). Only the ring gives any depth. B: racket and ball on the court from a high 3/4 view. The handle lifts off the ground and the ball casts a shadow, so the layers read. Weak call.",
+   "fix": "Lower the camera to a 3/4 view from above. Let the bag bulge around the ring and show the thickness of the zip strip."
+  }
+ ],
+ "pattern": "Generated cards tend to use a safe camera: a frontal, centered, eye-level view of the whole object (lamp, door, fan, vintage camera), or a staged set with a hard floor-wall horizon and extra layers (stage truss, shoe corner). Real cards use a turned 3/4 view, often seen a bit from above, with tight crops that let the object run off the edge and a simple background."
+}

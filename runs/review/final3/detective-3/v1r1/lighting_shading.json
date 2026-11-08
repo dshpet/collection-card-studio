@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (Ferris wheel) has a clear key from the upper left. The spokes and hub turn smoothly into cool grey-blue shadow, and the gondola undersides have real core shadows. B (jellyfish) is lit evenly by its own glow. Its bell has no shadow side, only scattered white dot sparkles and a uniform pink sheen, and in the lens the tentacles fade into a soft haze without turning as forms. B's shading range (0.416) is below the real cards.",
+   "fix": "Light the jellyfish from the upper left so the right side and underside of the bell fall into a soft, cooler shadow. Use one broad soft sheen on the bell instead of many small white sparkle dots, and darken the inner folds of the tentacles where they overlap."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (doorknob) has a single warm key from the upper right. The sphere turns smoothly from a broad sheen to a deep core shadow on the lower left, with a soft contact shadow on the backplate. B (door) is lit flat from the front. The panels have thin, even bevel lines, the wreath has little form shadow, and the cast leaf shadows are the only depth cue.",
+   "fix": "Give the door one light from the upper left. Make the left inner edge of each panel recess clearly darker, let the wreath's flowers and bow cast soft shadows onto the door, and darken the doorframe where it meets the door."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (magnifier): the light comes from the upper left, with a glossy band on the red handle and a sharp white glint on the glass. B (hoop): the backboard is lit from the front-left, and the frame shows a smooth turn and a soft shadow under the rim. Both fall within the real ranges, and neither shows the generated tells from the lessons.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (book) has a warm key from the upper left. The spine side falls into a cool grey shadow, and a soft cast shadow on the wood extends to the lower left. B (wallet) has a light-bias score of 0.963, above the real range. In the lens, the leather, card and table merge into one warm tan with a hard dark edge under the wallet, and the badge and stitching show little form turn.",
+   "fix": "Give the wallet thickness. The front edges of the leather should turn into a cooler, darker side face, and the shadow it casts on the table should be soft and slightly blue, not a hard warm-brown outline. The gold badge needs a lit top facet and a darker lower facet."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (camera) has a key from the upper left. The body's right and bottom faces go into a cool blue core shadow, and the lens barrel turns clearly. B (music player) is lit evenly from the front: its faces are almost the same pale lilac in the lens, the button is softly rounded but barely shaded, and the earbuds cast hardly any shadow. Its form contrast (0.331) and light bias (0.15) are at the bottom of the real range.",
+   "fix": "Light the player from the upper left so its right and bottom side faces are clearly darker and cooler than the front. Sink the big round button with a shadow inside its rim, and have the cable and earbuds cast soft shadows on the background."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (flashlight) has a cool, directional modelling. The ribbed grip turns from a bright top edge to a dark underside, and the metal head has crisp specular bands. Its high bias score comes from the beam glow. B (oil lamp) is lit almost entirely by its own flame. The brass base is evenly warm with little shadow side, and the lens shows a warm yellow cast over the whole object.",
+   "fix": "Add a key light from the upper left to the oil lamp so the right side of the brass bowl and foot falls into a cooler, darker shadow. Keep the flame's glow local to the glass chimney, and add a soft contact shadow under the foot."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (racket) has a key from the upper right. It casts a clear soft shadow to the lower left on the court, the ball has a defined terminator and contact shadow, and the shadow sides turn cool. B (zip bag) is almost flat: the bag is one pink-beige tone in the lens, the ring has only weak modelling, and there is barely a contact shadow on the table. Its shading range (0.588), form contrast (0.332) and light bias (0.113) are all below or at the bottom of the real ranges.",
+   "fix": "Light the bag from the upper left. Make the creases in the plastic show bright ridges next to darker folds, give the gold ring a lit top rim and a dark inner shadow, and have the bag cast a soft shadow onto the wooden table along its lower right edge."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "B (spyglass) matches the real anchor card. Its brass rings turn crisply, a dark core runs along the leather tube, and the lens shows a cool directional modelling. A (palm tree) is lit softly and evenly. In the lens the fronds are one warm beige, the trunk segments have only faint banding, and the rocks barely have shadow sides.",
+   "fix": "Light the palm from the upper left so the fronds on the right and underneath fall into cooler, darker green shadow. The trunk should darken toward its right side, and the rocks and trunk base should cast soft blue shadows across the sand."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (dog) has soft, even top lighting, with gentle cool-grey shadows under the ears and belly and a contact shadow in the grass. B (rocking chair) has glossy hot spots on the wood. In the lens, warm tan runs through the shadows, and the cushion and slats show little difference between lit and shadow sides.",
+   "fix": "Shade the rocking chair with a light from the upper left. The right faces of the legs and slats should be clearly darker and slightly cooler, the cushion should get a soft shadow under its front edge, and the rockers should cast soft shadows on the floor. Remove the shiny white streaks on the wood."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (safe) is lit almost from the front and top. The front and side faces are nearly the same value, and there is a sharp hot spot on the gold dial. B (vending machine) has a clear key from the left: the lit front turns into a darker right side face, and the glass door shows depth.",
+   "fix": "Light the safe from the upper left so its right side face is clearly darker and cooler than the front. Sink the door panel with a shadow line along its right and bottom edges, and soften the gold dial's highlight into one broad sheen."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (police car) has a strong sun from the upper left, with a crisp cast shadow under the car and wheels on the road. Its high contrast scores mostly come from the black paint. B (bike on car) is a backlit sunset. In the lens, an orange cast covers the bike and car, and the bike frame and tyres are thin, evenly lit tubes with weak core shadows.",
+   "fix": "Light the bike from one side so the red tubes have a bright top edge and a darker underside. The tyres should show a lit outer curve and a dark inner curve, and the bike should cast a soft shadow onto the back of the car."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (sneakers) has a light-bias score of 0.019, almost no directional bias. The shoes are lit from the front, and the white soles and blue uppers show little difference between their two sides. There is only a hard, flat cast shadow on the floor. B (hat) has a soft key from the upper left, a smooth turn into shadow on the crown's right side, and a soft dark shadow under the brim.",
+   "fix": "Light the sneakers from the upper left so the right sides of the uppers and soles turn darker and cooler. Shade inside the openings and under the toe caps, and blur the floor shadow so it is softer near its edges."
+  }
+ ],
+ "pattern": "Generated cards get flat, evenly-lit or self-glowing modelling. Lit and shadow sides of a form are nearly the same value, and in the shading lens a warm tint from the object's own color runs into the shadows. Real cards have one clear key light, usually from the upper left, with smooth turns into cooler, bluish shadow sides and soft contact shadows. Generated cards also use small sharp white hot spots or sparkle dots instead of one broad soft sheen."
+}

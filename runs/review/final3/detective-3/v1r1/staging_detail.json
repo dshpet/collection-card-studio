@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the Ferris wheel is cropped close against a plain blue sky, with nothing else in the frame. B: the jellyfish floats on a navy field with diagonal light shafts and a teal band along the top edge, plus five invented bubbles scattered left and right of the body. Background edge density for B is 0.033, above the 0.004–0.017 range of the real cards.",
+   "fix": "Jellyfish floating in plain deep-blue water, smooth gradient, no bubbles, no light rays, no bright band at the top edge."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: a tight crop of the knob plate on a plain green door. At the right edge there is one sliver of a quiet hallway. B: the door is pulled back to show the whole frame, and dense ivy leaves fill both sides and the top. Many small leaf shapes compete with the wreath. Edge density is 0.107, above the real maximum of 0.089.",
+   "fix": "Close crop of the wreath hanging on a plain blue door, with the door filling the card and its edges cut by the frame. No ivy, no leaves around the doorframe."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "Both cards sit on quiet tone-on-tone concentric rings: green behind the magnifier, cyan behind the hoop. The hoop is cut by the card edge on the right and bottom. Neither card has invented props.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the guidebook lies on wood drawn as high-contrast orange-and-brown streaks across the whole card, so the grain reads as a busy stripe pattern. B: the wallet lies on wide, quiet planks with soft grain and a few long seams.",
+   "fix": "Book lying on a warm wooden table seen from above: wide planks with soft, low-contrast grain, no bold streaks."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both float on soft tone-on-tone concentric rings. The earbuds in B are the player's own partner object in use, not an invented prop. Neither backdrop competes with its hero.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both use a quiet sunburst field. The yellow beam in A comes from the flashlight itself. B has only a soft glow behind the lamp. Neither card has invented props.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the racket lies on court green crossed by one white line, with the ball as its single partner object. B: the bag lies flat on dark wood that fills the card. Both are large, quiet surfaces with no clutter.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the palm stands on sand dunes against a pink spiral. It has three invented pale rocks and scattered pebble specks, and it mixes a graphic field with a real ground. B: the spyglass floats on plain diagonal cyan stripes, the same staging as the real spyglass card.",
+   "fix": "Palm tree floating on a plain pink tone-on-tone backdrop, or standing on one smooth sand mound, with no rocks or pebbles."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the dog lies on grass with a few tufts against soft blue stripes. B: the chair stands on a plank floor against blue stripes. Both are simple category-3 setups.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both stand on a plain floor in the backdrop's own color (pink and purple). The drinks inside the vending machine are what the container holds. Neither card has extra props.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the whole police car is pulled back on a street, with an invented house, a tree, bushes, a fence, a sidewalk and clouds behind it, so many small objects crowd the scene. B: the bike is close and cropped on the car's rack, in the spot where it is used. Its background is a few large shapes (the car's back, the road, the hills). The lessons show generated cards pulling back to the whole object and adding scenery.",
+   "fix": "Close crop of the police car on an empty road, with the card edge cutting the car. Plain sky behind it, no houses, trees, fences or sidewalk."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the sneakers stand on a plain pale-yellow floor against a flat orange wall. B: the hat sits on a purple floor with a soft pool of light behind it. Both backgrounds are empty and quiet.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards add scenery around the object. They pull back to show the whole object with an invented base or setting (rocks, an island, a house, trees, a fence) instead of cropping close in the place where it is used. They also scatter invented small props (bubbles, pebbles, rocks, ivy) and draw busy, high-contrast surfaces where real cards use a few large, quiet shapes."
+}

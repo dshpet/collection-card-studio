@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A's Ferris wheel has matte cream spokes and soft, broad gondola plastic, the same as the reference sheet. B's jellyfish bell and tentacles are all one wet, neon-lacquered surface. It has rim glow on every edge and no matte areas, but its measured values are in range.",
+   "fix": "Make the jellyfish bell soft and translucent with a gentle inner glow. Let the tentacles be mostly matte, with only one small highlight on the bell top."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A's brass knob and plate are brushed-looking with one dusty fingerprint swirl, and the green door has faint brush streaks. On B, the blue door panels are covered in streaky, painterly grain noise. The wreath, ivy and frame are all equally shiny, and its texture and gloss readings are far above the real range.",
+   "fix": "Paint the blue door as flat, smooth painted wood with no streaks or grain. Give the leaves and flowers a soft matte finish, with shine only on the brass handle."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A has a smooth chrome magnifier ring, a clean glass lens and a matte red handle, so it has a gloss mix. B has a matte white backboard, a smooth red rim and a simple tube net. Both are simplified the way the real cards are.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A's book cover is a flat, smooth teal with clean sticker shapes, though the table grain is large. B's wallet leather has fine pebbled grain and dashed stitch lines all around the edges and pocket, and the badge has a rivet stud. In the lessons, this kind of dashed stitching and leather grain marked the generated glove.",
+   "fix": "Draw the wallet as smooth, soft brown leather with no stitching lines or pebble texture. Make the badge one plain gold shape, and the wood planks quiet and nearly flat."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A's red camera body has a visible fine grain, like leatherette, and the flash dish has stepped rings of metal. B's yellow player is smooth, soft plastic with broad round buttons. The earbuds are clean white, which is closer to the smooth real-card finish.",
+   "fix": "Make the camera body smooth, satin red with no surface grain. Draw the flash dish as one smooth silver bowl with a single soft highlight."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's flashlight is one evenly lacquered candy-red tube with highlights along its full length. The grip is a stack of chunky toy ribs, and its gloss is above the real range. B's oil lamp mixes a frosted, matte glass chimney with warm brass, which is a realistic gloss range.",
+   "fix": "Give the flashlight body a softer satin red with one broad highlight. Draw the grip as a few wide, shallow bands rather than many glossy ribs."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A's tennis ball has quiet felt fuzz, and the racket frame is a smooth matte blue, so it reads true to its materials. B's plastic bag is crowded with crumpled specular streaks, and the dark wood has visible grain. The bag reads well as plastic, though, so this is a weak call.",
+   "fix": "Draw the bag as clear plastic with just two or three soft highlight streaks near the edges, and make the wood table smooth and quiet."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A's palm has smooth, matte fronds and simple carved trunk rings. B's spyglass is a variant of the reference telescope. The brown middle section has a fine crinkled-leather noise, and the brass bands are all equally lacquered, while the reference shows a smooth leather wrap.",
+   "fix": "Wrap the telescope in smooth, plain brown leather with no wrinkles or texture. Give the brass rings soft satin shine, and leave some of them dimmer."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A's bloodhound has smooth, soft fur shading with no strands, and its collar is plain, so the finish is calm. B's rocking chair has visible streaky wood grain on the seat, arms and back slats. The floorboards have large, decorative grain streaks, and the chair is all one glossy varnish.",
+   "fix": "Make the chair smooth, light wood with only faint, fine grain. Keep the cushion matte, and make the floor planks flat with almost no grain."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A's safe is a broad, smooth, matte blue, with shine only on the gold dial and handle and simple hinge blocks. B's vending machine glass is sprinkled with tiny condensation droplets. The machine adds many small cans and bottles, and it is glossy all over.",
+   "fix": "Remove the water droplets, draw the glass as clean and lightly tinted, and give the machine body a satin finish with fewer, larger items inside."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A's police car has simplified hardware: a broad chrome bumper, plain hubcaps and matte tires. B's bike and rack have fine spokes, a chain, bolts, brackets and clamp hardware, and its detail and gloss readings are above the real range. In the lessons, this kind of fussy hardware marked the generated cards.",
+   "fix": "Simplify the bike: a few thick spokes, no chain links, and the rack drawn as two wide plain bars with no bolts or brackets. Keep the red frame satin rather than wet."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's sneakers have perforated mesh dots on the toe and side panels. The laces, tips and panels are all glossy plastic, and the gloss reading is at the top of the real range. B's fedora reads as matte felt with a quieter matte band, which is a good material read.",
+   "fix": "Draw the sneaker uppers as smooth, soft matte fabric with no mesh holes. Use a few broad panels, and keep shine only on the rubber sole edge."
+  }
+ ],
+ "pattern": "Generated cards add small, fussy surface detail that the real cards smooth away: dashed stitch lines, leather pebbling, mesh perforations, condensation droplets, wrinkled-leather noise, streaky wood grain, and bolts and brackets. They also put one even wet-candy gloss over every part, while the real cards mix matte bodies with a few shiny accents and use broad, simplified hardware."
+}

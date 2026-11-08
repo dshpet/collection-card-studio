@@ -174,7 +174,7 @@ Palette arms replan colors from colorless subjects, so they sit below the contro
 
 Research beside the arms (`research/README.md`): a one-camera fit (GeoCalib) does not find the cards called off in perspective; blockout drawings keep the render's outline whether broken or not, so breaks sit in the render or a surface the drawing adds; edge-preserving smoothing after drawing restores flat share but not CSD. A style LoRA on the reference cards is feasible in about half a day and waits on the producer.
 
-The final sets (`runs/final3`) are drawn with the adopted smooth line, rich colors and fill. `runs/final2` holds the same plans drawn without the smooth line, stopped early and resumable. In the final, a plan still decided the weak cards: all nine Pearl Necklace drawings failed the style check and the plain Hat Box measured too little detail, and both passed once the plan changed (`runs/final3/README.md`). The cast cards are `runs/final2/cast`: their prompt has no material line.
+The final sets (`runs/final3`) are drawn with the adopted smooth line, rich colors and fill. `runs/final2` holds the same plans drawn without the smooth line, stopped early and resumable. In the final, a plan still decided the weak cards: all nine Pearl Necklace drawings failed the style check and the plain Hat Box measured too little detail, and both passed once the plan changed. Detective's darkest card, a badge wallet on a dark table, and its four cyan backdrops were plan choices too (`runs/final3/README.md`). The cast cards are `runs/final2/cast`: their prompt has no material line.
 
 ## Limits
 

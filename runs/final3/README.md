@@ -4,10 +4,10 @@
 |---|---|---|
 | Western | `western/` | `runs/plans/final-western.json` |
 | Period Drama | `period-drama-2/` | `runs/plans/final-period-drama-2.json` |
-| Detective | `detective/` | `runs/plans/final-detective.json` |
+| Detective | `detective-3/` | `runs/plans/final-detective-3.json` |
 | Cast bonus, two cards per genre | `runs/final2/cast/` | `runs/plans/final-cast.json` |
 
-Each folder has `spec.md` (the set: staging, subject, colors, why each card), `report.md` (checks), `variant_1.png` (the set) and every candidate in `tries/`. `period-drama/` is the first draw of Period Drama, kept for the record.
+Each folder has `spec.md` (the set: staging, subject, colors, why each card), `report.md` (checks), `variant_1.png` (the set) and every candidate in `tries/`. `period-drama/`, `detective/` and `detective-2/` are earlier draws of those sets, kept for the record.
 
 ## Review
 
@@ -21,6 +21,7 @@ Each folder has `spec.md` (the set: staging, subject, colors, why each card), `r
 - **Blockouts framed larger**, half the gap to the real cards' median, categories 2-4.
 - **Eight candidates per card** instead of five.
 - **Period Drama, after its first draw:** the Pearl Necklace failed the style check in all nine drawings (a navy cushion filling the card), so it became the Quill Pen, the outside rater's 4; the Hat Box drew as a plain red drum and got crimson and cream stripes. Both then passed.
+- **Detective, after its first draw:** the Badge Wallet lay on a dark wooden table, darker than any card in the real sets, so it moved to a light honey-colored desk, the same as the Evidence Bag's; the Flash Camera moved from sky blue to royal blue, so the set no longer had four cyan backdrops, two of them side by side. Both redraws were seeded with the other cards' candidates.
 
 Evidence and the dropped arms: `analysis/STYLE_GAPS.md`, "Overnight arms".
 
@@ -33,7 +34,7 @@ Against the four real sets without character cards (`set_numbers.json`; `compare
 | Real sets, range | 4-7 | 2-5 | 6-7 | 0.603-0.641 |
 | Western, final / pre-final v1 | 7 / 8 | 5 / 5 | 6 / 6 | 0.552 / 0.563 |
 | Period Drama, final / pre-final v3 | 6 / 5 | 2 / 2 | 7 / 8 | 0.556 / 0.482 |
-| Detective, final / pre-final v2 | 8 / 9 | 4 / 3 | 7 / 5 | 0.536 / 0.543 |
+| Detective, final / pre-final v2 | 8 / 9 | 4 / 3 | 7 / 5 | 0.543 / 0.543 |
 
 ## Not in the final, waiting on the producer
 

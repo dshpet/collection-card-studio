@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the police car is small and complete, parked mid-left in a wide street scene. House, bushes and road take up the top and bottom thirds, and the box height (0.477) is below the real range. B: the bike fills the card, its wheels and the car behind run off the bottom and right edges, and it reads at once, like the cropped ferris wheel and taxi.",
+   "fix": "Move in close on the police car so it fills most of the card, with the front bumper and a wheel running off the bottom edge. Show only a strip of road; no house or bushes."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the magnifier is tilted but floats small in the middle of green rings. Margins of 0.12 or more on every side, and its occupancy (0.187) is below the real range. B: the backboard fills the top two-thirds and the pole is cropped by the bottom edge, like the cropped real lighthouse.",
+   "fix": "Draw the magnifying glass much larger so the lens nearly touches the top-left corner and the handle reaches the bottom-right corner."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the wallet is small, flat and pushed right of centre on a large empty plank floor. At thumbnail size it reads as a brown smudge, and the floor lines are as strong as the object. A: the book fills the card at a tilt, with bookmarks reaching toward the edges, and reads at once.",
+   "fix": "Draw the open wallet much larger and tilted toward the viewer, filling about three-quarters of the card. Keep the badge large and centred, and show only a little floor around it."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the camera is centred with the flash rising to the upper left and generous even margins. B: the player is in the upper left and the earbud cable trails to the lower right. Both sit inside the real range on ring backgrounds, and neither framing clearly breaks the real pattern.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the guitar is a narrow upright shape (box width 0.523, below the real range) on a stage. Spotlights, trusses and a plank floor fill most of the card, and the bright light cones compete with the guitar for first read. A: the jacket fills the card on a plain sunburst, and the sash and badges read first.",
+   "fix": "Draw the guitar large and tilted diagonally across the card on a simple radiating background, with no stage trusses or spotlight beams."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the lamp stands upright and symmetric, dead centre and fully contained, with wide side margins (box width 0.426, below the real range). It is a static catalogue pose. B: the flashlight is laid diagonally corner to corner with its beam hitting the left edge, the same staging as the real telescope.",
+   "fix": "Tilt the oil lamp at a slight angle and draw it larger so it fills most of the card's height and width. Let the glass chimney almost touch the top edge."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a flat, front-on, symmetric door fills the card and the wreath sits small in the middle (occupancy 0.081, margin 0.279). The hero is unclear: door, wreath and the ivy framing every edge all compete. B: a tight crop on the gold knob, which reads first and clearly.",
+   "fix": "Make the wreath the clear hero, large and filling most of the card, with only a little of the blue door behind it and no ivy around the edges."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the fan is spread diagonally and fills the card on a plain wave pattern. B: the stage light hangs from a truss cropped by the top edge, and its lenses read first. Both match how real cards fill the frame and crop it.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: two equal sneakers side by side split the focus. They sit low on a hard wall-and-floor horizon in the upper third, with empty orange wall above (box height 0.487, below the real range). A: one hat in three-quarter view on a soft gradient is a single clear read, though it is also squat.",
+   "fix": "Draw one sneaker, large and tilted, filling most of the card on a simple radiating background, with no flat wall-and-floor split."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the dog lies in a wide horizontal shape in the lower half, with its face at the lower left. B: the rocking chair stands upright and fills the height, on a striped wall and plank floor much like the striped real clock card. Both fall in the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the safe is a big front-on block taking up half the card (occupancy 0.509, above the real range). Its left hinges sit close to the edge and there is little room around it. B: the vending machine is upright in three-quarter view with balanced space, and its glass front reads first.",
+   "fix": "Turn the safe to a three-quarter angle and shrink it slightly, so there is clear background around it and the dial is the first thing seen."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: a thin racket outline and a ball split the focus, and the bright white court line cuts diagonally behind them. Occupancy is low (0.186), so most of the card is flat green. A: the bag fills the card at a tilt and the gold ring in its centre reads first.",
+   "fix": "Draw the tennis racket larger and bolder so it fills most of the card, with the ball tucked against the strings. Remove the court line, or tone it down."
+  }
+ ],
+ "pattern": "Generated cards stage the whole object complete and centred with even margins in a static, front-on pose. Or they shrink the hero inside a scene (street, stage, floor, wall/floor horizon) whose props and lines compete with it. Real cards crop or tilt the hero, push it close to the edges and keep the background simple."
+}

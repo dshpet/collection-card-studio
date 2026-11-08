@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A crops the Ferris wheel on the left and bottom edges. The camera looks up at it from below, and the gondolas and rim share one tilt. This matches the real Ferris wheel card. B's jellyfish floats with no ground plane. Its bell is seen from the side and slightly above, but its tentacles lie flat on the picture plane. The only depth cue is a few scattered bubbles.",
+   "fix": "Show the jellyfish turned three-quarters, with the bell tilted toward the camera. Let some tentacles curl back behind the bell and others come forward so they overlap each other."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A is a tight close-up of the doorknob from a three-quarter view. The knob's sphere overlaps the backplate, and a room in the background is cut off at the right edge, so the depth reads clearly. B shows the door dead-on, with the camera centred and the frame symmetrical. Its panels and wreath face the camera flat. The only depth comes from the ivy overlapping the frame.",
+   "fix": "Turn the door about 25 degrees, so one side of the frame shows its thickness and the panels shorten as they go back. Make the wreath stick out from the door and cast a shadow on it."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A's magnifier floats on a diagonal like the real spyglass card, with the lens ring tipped into an ellipse. B looks up at the backboard from a low camera and crops the pole at the bottom. The rim seen from below and the board seen front-on are slightly out of step. Its flat-face share of 0.70 is above the real range.",
+   "fix": "Lower the camera only slightly. Make the hoop's rim and the backboard share one viewing angle, with the top of the rim just visible."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A shows the book from a high three-quarter view, with its spine and the page edges visible. The book has real thickness on the table. B looks almost straight down at the wallet. The wallet lies flush with the wood, with barely any side thickness, so it reads like a flat drawing on the planks.",
+   "fix": "Lower the camera to about 45 degrees. Show the wallet's leather edge thickness and the opened flap rising off the table, with a soft contact shadow under it."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A shows the camera nearly front-on and centred. The lens barrel points almost at the viewer, and the body's side face is a thin sliver. B tilts the player three-quarters, so its side thickness shows, and the earbud cord loops forward over the background.",
+   "fix": "Turn the camera body to a three-quarter view, so its side face and the lens barrel's depth both show. Keep the camera slightly above the top."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A's flashlight is angled diagonally toward the viewer, and its lens rim reads as a foreshortened ellipse. This matches the real spyglass card. B shows the oil lamp straight-on at eye level and perfectly symmetrical. The base and chimney are almost straight-on silhouettes. Its flat-face share of 0.003 is below the real range.",
+   "fix": "Raise the camera slightly and turn the lamp a little, so the top of the base and the chimney mouth show as ellipses and the handle swings to the side."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A looks down at the racket from a high three-quarter view. The court line runs back into the distance, and the ball overlaps the throat of the racket. B looks almost straight down at the bag on the planks, so the bag is a flat slab. Its flat-face share of 0.79 is far above the real range.",
+   "fix": "Lower the camera to a three-quarter angle. Make the bag puff up with a visible edge thickness, and let the plank lines shorten as they go back."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "B is the real spyglass card. It floats on a diagonal and its eyepiece rim is a foreshortened ellipse. A's palm tree stands on a sand ground plane, but the fronds fan out flat toward the camera. The rocks are scattered at sizes that don't step back consistently into depth.",
+   "fix": "Show the palm fronds reaching both toward and away from the viewer, with front fronds overlapping back ones. Make rocks farther back smaller and higher on the sand."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A has a low camera on the grass, and the dog sits firmly on it. B shows the chair three-quarters on a floor that recedes consistently, with both rockers touching it. Both cards keep one viewpoint.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "In A the safe's front face fills the card, and the right side face runs back at a fairly strong angle. Its feet sit on a ground plane that is barely there. Its flat-face share of 0.645 is above the real range. In B the vending machine has a mild three-quarter turn and stands on a clear floor.",
+   "fix": "Pull the camera back so the perspective is gentler, and turn the safe a little less. Show a faint top face and a floor contact shadow under all four feet."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A shows the police car three-quarters on a road that recedes consistently. Its layout matches the real taxi card. In B the camera sits very close behind the car, with the bike filling the card. The car's roof, the bike and the road meet at slightly different angles, which gives a wide-angle feel.",
+   "fix": "Move the camera back and turn the scene to three-quarters. Show the whole bike on its rack and the car's rear corner on the road at one consistent angle."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "In A the sneakers sit at a hard wall/floor split, with a low camera. The two shoes are almost identical, side-by-side copies, and the floor has no clear recession. B shows the hat three-quarters from slightly above. The brim reads as one clean ellipse, with a contact shadow under it.",
+   "fix": "Stagger the sneakers, with one turned and set slightly behind so it overlaps the other. Make the floor recede with a soft gradient, and drop the hard horizon band."
+  }
+ ],
+ "pattern": "Generated cards either look at the object dead-on and symmetrical, or look almost straight down so it lies flat. Sometimes the camera is too close and acts like a wide-angle lens. They show the whole object, centred, with depth in one plane: parts lie flat, there is little overlap, and the ground plane doesn't recede. Real cards use a mild three-quarter turn, crop the object at the card edge, and keep every part in one view."
+}
