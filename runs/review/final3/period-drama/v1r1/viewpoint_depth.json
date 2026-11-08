@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the beach ball sits dead centre and fills the frame, seen almost straight on. The sand is one soft surface with no clear ground angle or depth layers. B: the pier is seen from a consistent high 3/4 camera. Plank tops, post tops and the life ring all share one view, and there are three clear depth layers: dock, water and the shore at the top.",
+   "fix": "Show the beach ball from a raised 3/4 camera, slightly off centre, resting on a clearly angled stretch of sand that recedes toward the top of the card. Put a simple shoreline in the background to give a second depth layer."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the ring box is seen from a high 3/4 angle. The base top, the open lid and the medal all read from the same view. B: the pocket watch floats tilted in one plane, and the chain loops follow the same tilt. Both views are consistent and use mild perspective.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the red cylinder box is seen nearly at eye level and straight on, perfectly symmetric. The lid shows only a thin top ellipse, and the background is a gradient with no real ground plane. Planar share is 0.767, above the real range. B: the sneakers sit on a clear floor with a wall line behind them, turned 3/4, with the floor and shoes at one consistent angle.",
+   "fix": "Turn the box to a 3/4 angle and raise the camera so more of the lid top shows. Stand it on a visible tabletop or floor edge that recedes into the card, with a simple wall behind it."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the pearl bracelet is seen almost straight down onto a tufted velvet cushion. The cushion fills the whole card, so there is no horizon and no background layer, and it reads like a photo close-up. Planar share is 0.0, below the real range. B: the map and magnifier are seen from a high 3/4 angle on wooden floorboards that recede consistently, and the magnifier's rim shows correct foreshortening.",
+   "fix": "Lower the camera to a 3/4 view looking across the bracelet. Lay it on a cushion top whose far edge is visible, with a simple soft background behind, so the bracelet sits on a ground plane that recedes into the card."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cake stand stands on a tablecloth whose edge runs diagonally across the card, against a flat striped wall. The ground plane reads tilted relative to the stand's vertical post, and the whole stand fits neatly inside the frame. B: the fountain is cropped at the bottom of the card, and the basin, tiers and paving share one moderately high view.",
+   "fix": "Bring the camera closer so the stand's base is cropped by the bottom edge. Make the tabletop edge run level across the card, at the same angle as the stand's plates."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the scarf is frontal, but the neck loop shows its inside from above, giving it real depth. B: the folding fan lies completely flat in the picture plane, small in the middle of the card, with no turn, no top or side faces and no ground plane. It reads like a sticker.",
+   "fix": "Tilt the fan in space so it is turned about 30 degrees, with the far ribs foreshortened and the edges of the folds visible. Make it bigger in the frame."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the scroll rests on a blue ledge seen from a low camera, with the ledge cut off by the card edges. B: the DJ deck and headphones are seen from a high camera and fully contained in the card on a plain orange sweep, with no horizon. This is the higher, contained framing that the lessons' generated cards use.",
+   "fix": "Lower the camera to a 3/4 view closer to the tabletop. Let the deck run off one edge of the card, and show a table edge and a simple background wall."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the graduation cap is seen from a high 3/4 angle, with the board top, band and tassel all from one view. B: the top hat is seen from slightly above, with the crown ellipse and brim ellipse consistent. Both use the same concentric background and mild perspective.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the trunk is turned 3/4 from a low camera on stone tiles. The tile lines and the trunk's edges recede the same way. B: the suitcase is perfectly frontal with no top or side face visible, yet the green floor planks below converge steeply as if seen from above. The suitcase and the floor do not share one view. Planar share is 0.67, above the real range.",
+   "fix": "Turn the suitcase to 3/4 so its top edge and one side show. Match the floor planks to the same camera height, so they recede gently behind and under it."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the vending machine is turned 3/4, with the side panel and a sliver of top showing, standing on a gradient floor. B: the teacup and saucer are seen from slightly above, and the rim and saucer ellipses are consistent. Both have plausible mild perspective.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the purple fan lies flat in the picture plane, with every fold seen straight on and no foreshortening, depth or ground. B: the parasol is seen from above at 3/4. The canopy top, the ribs and the hooked handle all read from one view, and it is turned in space.",
+   "fix": "Tilt and turn the fan in space so the far folds are foreshortened and the fold edges and stick thickness are visible."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the guitar leans on a stage floor in front of a truss backdrop, with clear foreground, middle and background layers. B: the upright piano is nearly frontal, but both side cheeks show while the floor planks converge steeply. That reads as a wide-angle view. Planar share is 0.673, well above the real range of 0.034 to 0.509.",
+   "fix": "Turn the piano to a gentle 3/4 so only one side shows. Use a mild perspective, with floor planks receding at the same angle as the piano's base."
+  }
+ ],
+ "pattern": "Generated cards tend to use a straight-on, centred camera with the whole object neatly inside the frame. Objects lie flat in the picture plane or are perfectly frontal, and the floor is often seen from a higher angle than the object (a mismatched ground plane). Real cards turn the object to 3/4, crop it with the card edges, and keep the hero and ground at one consistent camera height."
+}

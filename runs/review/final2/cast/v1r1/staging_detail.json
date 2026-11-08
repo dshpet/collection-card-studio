@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both backgrounds are full of detail. A's street is the busier one: several facades, each with flower boxes, window frames, gutters and a door with an arched fanlight, plus cobbles running into the bottom-left corner. Its background edge density is 0.139, well above the real maximum of 0.082. B's office is also crowded, with a corkboard of notes, a potted plant, a filing cabinet, a stack of books and a notebook with a pen. It measures 0.113, also above the real range. B's shapes are larger and fewer, so A is more likely to be the generated card.",
+   "fix": "Show only a few metres of street behind the rider: one plain wall in a single soft colour and a smooth road. Draw no flower boxes, no extra windows and no cobble pattern."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B's floor is covered in hay strands across the whole bottom third, with dirt specks around the hoofprint. Behind that are a fence, a red barn, hay bales, a tree and clouds. Its background edge density is 0.119, far above the real maximum of 0.082. A's forest is made of soft tree trunks and leaf clusters that blur into a yellow-green haze. It measures 0.065, inside the real range.",
+   "fix": "Draw the ground as smooth packed dirt with a few large straw patches. Leave out the barn, fence and clouds, and use a soft green blur behind the animals."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A has a clear sky with two clouds, a plain green field and a large yellow car door, which makes a few big, quiet shapes. In B, a cherry-blossom canopy fills the top edge, and loose pink petals are scattered over the grass at the bottom. A tea table with a teapot and a plate of cookies is added in the middle. The petals and blossom clusters are invented decoration. The numbers are close (edge density A 0.063, B 0.065).",
+   "fix": "Use a plain grass lawn with no scattered petals, and a soft green and blue background with no flowering branches."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A shows a ballroom: green curtains, pillars, windows with trees, a wall sconce and a shiny parquet floor full of reflections. B shows a wide waterfall with bushes and a blue pool, built from large white and blue masses. Both measure within the real range (edge density A 0.048, B 0.034). A is a little more detailed, but this gives no clear reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B's background is full of small elements: a string of bulbs along the top edge, confetti pieces scattered across the sky, coloured spotlight beams and a crowd of small people at the right edge. The confetti and party bits are invented decoration. A shows a saloon front and a wooden deck, which are a few large shapes. A's plank lines raise its number (edge density A 0.09, B 0.08), but its elements are quiet.",
+   "fix": "Remove the confetti and bulb strings. Show the stage as one dark purple shape with two or three soft coloured light beams, and leave out the crowd."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A's drum kit stands on a red round platform under a soft spotlight cone, like the trophy reference card. B's caravan stands on grass covered in small repeated tufts across the whole bottom band, against a purple backdrop of concentric rings. That ring pattern does not appear on any real card, and a plain floor would not carry tuft texture. B's background measures lower overall (edge density A 0.037, B 0.019).",
+   "fix": "Put the caravan on a smooth, plain green ground with no grass tufts. Use a backdrop of soft light rays or a smooth gradient instead of rings."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "In A, a glass plate sits on wood planks that fill the card, which is acceptable staging. However, water droplets are scattered over the plate rim, the empty glass and the fruit, which is invented sparkle decoration. B is a ship's wheel on a wooden deck under soft purple-to-peach rays: few shapes and a quiet backdrop. The numbers are nearly identical (edge density A 0.037, B 0.034).",
+   "fix": "Draw the plate clean and dry, with no water droplets on the glass or fruit."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's background has a tree canopy, a fence running across the card, a red barn, clouds and bushes. The hay bale's straw strands fill the bottom third. Its background edge density is 0.086, above the real maximum of 0.082. B shows a sunset sky, soft bushes and one picnic table at the left, which are fewer and larger shapes. It measures 0.05, inside the real range.",
+   "fix": "Behind the cow and rooster, use one soft green field and a blurred tree, with no barn and no fence. Draw the hay bale as a few large straw clumps."
+  }
+ ],
+ "pattern": "Generated cards fill the background with many small, separate things: extra buildings, fences, barns and furniture, plus scattered decoration such as confetti, petals, water droplets, hay strands and grass tufts. The floor is often busy with texture. Real cards use a few large, quiet shapes and a tone-on-tone backdrop, they crop the scene close, and they add no props beyond what the subject names."
+}

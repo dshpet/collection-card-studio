@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (police car): dark contour around the body and bumper. The clouds and house also have crisp lines, but all three numbers are inside the real range. B (bike on car): dense hard edges on every spoke, the chain ring and the rack. The car behind and the mountains are outlined almost as strongly as the bike, so there is no edge hierarchy. Subject density 0.273 and background 0.094 are both above the real range.",
+   "fix": "Keep the hard edges on the bicycle frame only. Soften the car body, the window and the mountains behind into gentle color steps without crisp lines. Draw fewer spokes."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (orange player with earbuds): a dark, even contour wraps the device, its inner bezel ring and both earbud cords, so the lines read as drawn. B (flash camera): edges are softer and lighter on the body sides, with a textured, broken boundary like the real camera card. The numbers are similar and both are in range.",
+   "fix": "Remove the dark line around the device and the cords. Let the device's edge come from light against shadow, with a soft rolled edge on the rounded corners."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (backpack): thick, dark, even contours around every strap, buckle and pocket flap. The diamond pattern in the background is also drawn as crisp lines, as in the generated lessons. B (flippers): thin, lighter edges and a soft blade boundary, with only the foot pocket rim sharp.",
+   "fix": "Draw the straps and pocket flaps as soft folds of fabric, not outlined shapes. Make the background diamonds low-contrast blurred tones with no lines."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (vending machine): a heavy dark double line frames the glass window, the slot and the panel. Many hard edges on the cans and shelves inside. Outline darkness 0.088 is near the top of the range. A (safe): soft rounded box edges, lighter hinges, and the subject edge density sits at the low end, like the real cards.",
+   "fix": "Draw the window frame as a smooth rounded plastic rim without a dark line. Blur the cans behind the glass slightly so they don't compete with the frame."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (rocking chair): crisp dark contours on every spindle, arm and rocker, plus hard parallel lines on the floorboards. Edge strength is the same everywhere. A (dog): soft fur edges, lost edges into the grass and lighter lines, with the strongest edge only at the ear and back.",
+   "fix": "Soften the floorboard lines into gentle wood-grain tone. Show the chair's edges through light and shadow on rounded wood, with no dark outline along the spindles."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (basketball hoop): a thick dark contour along the backboard rim and the inner square, plus dense hard net strands. Outline darkness 0.201 is above the real range. B (magnifier): lighter, softer rim edges and a soft handle silhouette, inside the range.",
+   "fix": "Draw the backboard's red frame as a smooth rounded bevel lit from above, with no dark line along its outside. Make the net strands thinner and lighter."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (flashlight): a dark, heavy line runs along the bottom of the body, and there are many hard ridges on the grip. Subject density 0.161 is just above the range. A (oil lamp): the glass chimney has thin, light, partly lost edges, and the brass base has moderate contours.",
+   "fix": "Remove the dark line under the flashlight body and let the shadow side melt into the background. Use fewer, softer ridges on the grip."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "Both have outline darkness above the real range (about 0.165). B (wallet): a dark contour around the whole wallet, dashed stitching lines and hard plank lines in the background. Subject density 0.182 is over the range. A (book): thick double outlines around each sticker, but the book's own edges are softer. This is a weak call.",
+   "fix": "Remove the dark rim around the wallet. Make the stitching faint and the floorboard lines soft and low in contrast."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (tennis racket): a dense hard grid of string edges and a crisp line along the court markings. Subject density 0.281 is far above the range, and outline darkness -0.167 is below it. A (zip bag): soft folds of plastic with one strong outer rim, and its numbers are closer to the real range.",
+   "fix": "Paint the strings as a light, soft mesh with only a few visible lines. Let the racket frame's edge come from shading, not an even contour."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (sneakers): dark contours along each sole and panel, a hard wall/floor line, and a crisply edged shadow. Subject density 0.227 is at the top of the range. B (hat): very soft, almost lost edges on the felt, with density 0.05 below the range, so it is not clean either. A's outlined look matches the generated lessons more closely.",
+   "fix": "Remove the dark lines around the soles and panels. Show the sneaker shapes through soft shading, and blur the cast shadow edge and the wall/floor line."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (neck pillow): a thick black contour traces the inner hole and the right outer side, while the rest of the body has almost no edges. Subject density 0.017 is far below the range, so this is an outline with nothing inside it. A (pool goal): even, precise pipe and net edges with a rippled water background, all inside the range.",
+   "fix": "Remove the black line around the pillow. Show its puffy seams and the inner hole through soft light and shadow on the fabric."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B (door with wreath): every ivy leaf, flower and door panel has a crisp contour, so the frame is covered in edges and nothing stands out. Subject density 0.342 and background 0.107 are both far above the range. A (doorknob): clear hierarchy, with crisp edges on the knob and plate and a soft wall and room behind.",
+   "fix": "Keep the crisp edges on the wreath only. Turn the ivy and the door panels into soft, low-contrast shapes with few edges, and blur the frame edges."
+  }
+ ],
+ "pattern": "Generated cards draw a dark, even contour around the whole silhouette, and often around each sub-part (straps, stickers, window frames). They also give background shapes (clouds, floorboards, ivy, diamond patterns) edges as crisp as the hero's, so there is no edge hierarchy, and they pile on small hard details (spokes, strings, leaves). Real cards use lighter, slightly broken edges that come from shading, and keep the background soft."
+}

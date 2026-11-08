@@ -1,0 +1,667 @@
+{
+ "counts": {
+  "flagged": 18,
+  "producer_good": 92,
+  "producer_broken_other": 39,
+  "outside_ok": 64,
+  "outside_broken": 10,
+  "twin": 72,
+  "real": 160
+ },
+ "median": {
+  "up_residual": {
+   "flagged": 1.236,
+   "producer_good": 1.106,
+   "producer_broken_other": 0.664,
+   "outside_ok": 1.099,
+   "outside_broken": 1.845,
+   "twin": 0.865,
+   "real": 1.34
+  },
+  "latitude_residual": {
+   "flagged": 1.802,
+   "producer_good": 2.106,
+   "producer_broken_other": 2.156,
+   "outside_ok": 2.045,
+   "outside_broken": 1.83,
+   "twin": 2.037,
+   "real": 2.203
+  },
+  "up_residual_p90": {
+   "flagged": 16.128,
+   "producer_good": 9.684,
+   "producer_broken_other": 10.391,
+   "outside_ok": 10.017,
+   "outside_broken": 10.881,
+   "twin": 9.008,
+   "real": 9.834
+  },
+  "split_gap": {
+   "flagged": 2.808,
+   "producer_good": 2.45,
+   "producer_broken_other": 3.165,
+   "outside_ok": 2.756,
+   "outside_broken": 2.357,
+   "twin": 3.263,
+   "real": 3.227
+  },
+  "pitch_gap_vertical": {
+   "flagged": 1.805,
+   "producer_good": 1.79,
+   "producer_broken_other": 2.707,
+   "outside_ok": 1.91,
+   "outside_broken": 1.548,
+   "twin": 2.354,
+   "real": 2.286
+  },
+  "roll_gap_vertical": {
+   "flagged": 1.803,
+   "producer_good": 2.437,
+   "producer_broken_other": 1.532,
+   "outside_ok": 2.711,
+   "outside_broken": 1.593,
+   "twin": 1.825,
+   "real": 2.316
+  },
+  "pitch_uncertainty": {
+   "flagged": 7.109,
+   "producer_good": 6.815,
+   "producer_broken_other": 6.653,
+   "outside_ok": 6.378,
+   "outside_broken": 5.131,
+   "twin": 6.593,
+   "real": 6.38
+  },
+  "roll_uncertainty": {
+   "flagged": 7.742,
+   "producer_good": 5.364,
+   "producer_broken_other": 3.645,
+   "outside_ok": 6.396,
+   "outside_broken": 1.801,
+   "twin": 3.618,
+   "real": 5.893
+  },
+  "confidence": {
+   "flagged": 0.002,
+   "producer_good": 0.001,
+   "producer_broken_other": 0.002,
+   "outside_ok": 0.001,
+   "outside_broken": 0.001,
+   "twin": 0.002,
+   "real": 0.0
+  }
+ },
+ "auc": {
+  "up_residual": {
+   "flagged_vs_producer_good": {
+    "auc": 0.537,
+    "p": 0.6193,
+    "n": [
+     18,
+     92
+    ]
+   },
+   "outside_broken_vs_outside_ok": {
+    "auc": 0.522,
+    "p": 0.831,
+    "n": [
+     10,
+     64
+    ]
+   },
+   "flagged_vs_real": {
+    "auc": 0.465,
+    "p": 0.6329,
+    "n": [
+     18,
+     160
+    ]
+   },
+   "all_flagged_vs_all_ok": {
+    "auc": 0.534,
+    "p": 0.5724,
+    "n": [
+     28,
+     156
+    ]
+   },
+   "producer_broken_other_vs_producer_good": {
+    "auc": 0.465,
+    "p": 0.5276,
+    "n": [
+     39,
+     92
+    ]
+   }
+  },
+  "latitude_residual": {
+   "flagged_vs_producer_good": {
+    "auc": 0.404,
+    "p": 0.2003,
+    "n": [
+     18,
+     92
+    ]
+   },
+   "outside_broken_vs_outside_ok": {
+    "auc": 0.442,
+    "p": 0.5639,
+    "n": [
+     10,
+     64
+    ]
+   },
+   "flagged_vs_real": {
+    "auc": 0.411,
+    "p": 0.2159,
+    "n": [
+     18,
+     160
+    ]
+   },
+   "all_flagged_vs_all_ok": {
+    "auc": 0.415,
+    "p": 0.1545,
+    "n": [
+     28,
+     156
+    ]
+   },
+   "producer_broken_other_vs_producer_good": {
+    "auc": 0.489,
+    "p": 0.8404,
+    "n": [
+     39,
+     92
+    ]
+   }
+  },
+  "up_residual_p90": {
+   "flagged_vs_producer_good": {
+    "auc": 0.689,
+    "p": 0.0116,
+    "n": [
+     18,
+     92
+    ]
+   },
+   "outside_broken_vs_outside_ok": {
+    "auc": 0.534,
+    "p": 0.7339,
+    "n": [
+     10,
+     64
+    ]
+   },
+   "flagged_vs_real": {
+    "auc": 0.671,
+    "p": 0.0177,
+    "n": [
+     18,
+     160
+    ]
+   },
+   "all_flagged_vs_all_ok": {
+    "auc": 0.631,
+    "p": 0.0279,
+    "n": [
+     28,
+     156
+    ]
+   },
+   "producer_broken_other_vs_producer_good": {
+    "auc": 0.552,
+    "p": 0.353,
+    "n": [
+     39,
+     92
+    ]
+   }
+  },
+  "split_gap": {
+   "flagged_vs_producer_good": {
+    "auc": 0.587,
+    "p": 0.2463,
+    "n": [
+     18,
+     92
+    ]
+   },
+   "outside_broken_vs_outside_ok": {
+    "auc": 0.473,
+    "p": 0.7942,
+    "n": [
+     10,
+     64
+    ]
+   },
+   "flagged_vs_real": {
+    "auc": 0.541,
+    "p": 0.5741,
+    "n": [
+     18,
+     160
+    ]
+   },
+   "all_flagged_vs_all_ok": {
+    "auc": 0.553,
+    "p": 0.3765,
+    "n": [
+     28,
+     156
+    ]
+   },
+   "producer_broken_other_vs_producer_good": {
+    "auc": 0.565,
+    "p": 0.2379,
+    "n": [
+     39,
+     92
+    ]
+   }
+  },
+  "pitch_gap_vertical": {
+   "flagged_vs_producer_good": {
+    "auc": 0.52,
+    "p": 0.7929,
+    "n": [
+     18,
+     92
+    ]
+   },
+   "outside_broken_vs_outside_ok": {
+    "auc": 0.497,
+    "p": 0.9811,
+    "n": [
+     10,
+     64
+    ]
+   },
+   "flagged_vs_real": {
+    "auc": 0.486,
+    "p": 0.8489,
+    "n": [
+     18,
+     160
+    ]
+   },
+   "all_flagged_vs_all_ok": {
+    "auc": 0.512,
+    "p": 0.8442,
+    "n": [
+     28,
+     156
+    ]
+   },
+   "producer_broken_other_vs_producer_good": {
+    "auc": 0.541,
+    "p": 0.4563,
+    "n": [
+     39,
+     92
+    ]
+   }
+  },
+  "roll_gap_vertical": {
+   "flagged_vs_producer_good": {
+    "auc": 0.435,
+    "p": 0.3851,
+    "n": [
+     18,
+     92
+    ]
+   },
+   "outside_broken_vs_outside_ok": {
+    "auc": 0.441,
+    "p": 0.5532,
+    "n": [
+     10,
+     64
+    ]
+   },
+   "flagged_vs_real": {
+    "auc": 0.451,
+    "p": 0.4948,
+    "n": [
+     18,
+     160
+    ]
+   },
+   "all_flagged_vs_all_ok": {
+    "auc": 0.432,
+    "p": 0.2564,
+    "n": [
+     28,
+     156
+    ]
+   },
+   "producer_broken_other_vs_producer_good": {
+    "auc": 0.446,
+    "p": 0.3301,
+    "n": [
+     39,
+     92
+    ]
+   }
+  },
+  "pitch_uncertainty": {
+   "flagged_vs_producer_good": {
+    "auc": 0.522,
+    "p": 0.7742,
+    "n": [
+     18,
+     92
+    ]
+   },
+   "outside_broken_vs_outside_ok": {
+    "auc": 0.347,
+    "p": 0.1232,
+    "n": [
+     10,
+     64
+    ]
+   },
+   "flagged_vs_real": {
+    "auc": 0.598,
+    "p": 0.1737,
+    "n": [
+     18,
+     160
+    ]
+   },
+   "all_flagged_vs_all_ok": {
+    "auc": 0.469,
+    "p": 0.6016,
+    "n": [
+     28,
+     156
+    ]
+   },
+   "producer_broken_other_vs_producer_good": {
+    "auc": 0.417,
+    "p": 0.1343,
+    "n": [
+     39,
+     92
+    ]
+   }
+  },
+  "roll_uncertainty": {
+   "flagged_vs_producer_good": {
+    "auc": 0.492,
+    "p": 0.9131,
+    "n": [
+     18,
+     92
+    ]
+   },
+   "outside_broken_vs_outside_ok": {
+    "auc": 0.398,
+    "p": 0.3078,
+    "n": [
+     10,
+     64
+    ]
+   },
+   "flagged_vs_real": {
+    "auc": 0.539,
+    "p": 0.5906,
+    "n": [
+     18,
+     160
+    ]
+   },
+   "all_flagged_vs_all_ok": {
+    "auc": 0.455,
+    "p": 0.4466,
+    "n": [
+     28,
+     156
+    ]
+   },
+   "producer_broken_other_vs_producer_good": {
+    "auc": 0.421,
+    "p": 0.1565,
+    "n": [
+     39,
+     92
+    ]
+   }
+  },
+  "confidence": {
+   "flagged_vs_producer_good": {
+    "auc": 0.54,
+    "p": 0.5876,
+    "n": [
+     18,
+     92
+    ]
+   },
+   "outside_broken_vs_outside_ok": {
+    "auc": 0.534,
+    "p": 0.7187,
+    "n": [
+     10,
+     64
+    ]
+   },
+   "flagged_vs_real": {
+    "auc": 0.601,
+    "p": 0.132,
+    "n": [
+     18,
+     160
+    ]
+   },
+   "all_flagged_vs_all_ok": {
+    "auc": 0.539,
+    "p": 0.4987,
+    "n": [
+     28,
+     156
+    ]
+   },
+   "producer_broken_other_vs_producer_good": {
+    "auc": 0.534,
+    "p": 0.5272,
+    "n": [
+     39,
+     92
+    ]
+   }
+  }
+ },
+ "at_real_p90": {
+  "up_residual": {
+   "flagged": "2/18",
+   "producer_good": "9/92",
+   "producer_broken_other": "3/39",
+   "outside_ok": "9/64",
+   "outside_broken": "1/10",
+   "twin": "3/72",
+   "real": "16/160"
+  },
+  "latitude_residual": {
+   "flagged": "0/18",
+   "producer_good": "6/92",
+   "producer_broken_other": "5/39",
+   "outside_ok": "9/64",
+   "outside_broken": "3/10",
+   "twin": "5/72",
+   "real": "16/160"
+  },
+  "up_residual_p90": {
+   "flagged": "3/18",
+   "producer_good": "7/92",
+   "producer_broken_other": "3/39",
+   "outside_ok": "6/64",
+   "outside_broken": "0/10",
+   "twin": "10/72",
+   "real": "16/160"
+  },
+  "split_gap": {
+   "flagged": "4/18",
+   "producer_good": "8/92",
+   "producer_broken_other": "8/39",
+   "outside_ok": "5/64",
+   "outside_broken": "0/10",
+   "twin": "6/72",
+   "real": "16/160"
+  },
+  "pitch_gap_vertical": {
+   "flagged": "2/18",
+   "producer_good": "5/92",
+   "producer_broken_other": "7/39",
+   "outside_ok": "7/64",
+   "outside_broken": "0/10",
+   "twin": "5/72",
+   "real": "16/160"
+  },
+  "roll_gap_vertical": {
+   "flagged": "1/18",
+   "producer_good": "13/92",
+   "producer_broken_other": "4/39",
+   "outside_ok": "12/64",
+   "outside_broken": "3/10",
+   "twin": "8/72",
+   "real": "16/160"
+  },
+  "pitch_uncertainty": {
+   "flagged": "2/18",
+   "producer_good": "12/92",
+   "producer_broken_other": "1/39",
+   "outside_ok": "8/64",
+   "outside_broken": "1/10",
+   "twin": "7/72",
+   "real": "16/160"
+  },
+  "roll_uncertainty": {
+   "flagged": "2/18",
+   "producer_good": "17/92",
+   "producer_broken_other": "8/39",
+   "outside_ok": "9/64",
+   "outside_broken": "1/10",
+   "twin": "4/72",
+   "real": "16/160"
+  },
+  "confidence": {
+   "flagged": "2/18",
+   "producer_good": "8/92",
+   "producer_broken_other": "7/39",
+   "outside_ok": "9/64",
+   "outside_broken": "3/10",
+   "twin": "11/72",
+   "real": "16/160"
+  }
+ },
+ "twin_minus_real": {
+  "up_residual": {
+   "flagged": {
+    "median": 0.185,
+    "above": "6/12",
+    "p": 0.3804
+   },
+   "unflagged": {
+    "median": -0.348,
+    "above": "25/72",
+    "p": 0.0009
+   }
+  },
+  "latitude_residual": {
+   "flagged": {
+    "median": -0.319,
+    "above": "4/12",
+    "p": 0.791
+   },
+   "unflagged": {
+    "median": -0.434,
+    "above": "25/72",
+    "p": 0.0321
+   }
+  },
+  "up_residual_p90": {
+   "flagged": {
+    "median": 2.243,
+    "above": "8/12",
+    "p": 0.8501
+   },
+   "unflagged": {
+    "median": -0.135,
+    "above": "35/72",
+    "p": 0.5978
+   }
+  },
+  "split_gap": {
+   "flagged": {
+    "median": 1.359,
+    "above": "9/12",
+    "p": 0.064
+   },
+   "unflagged": {
+    "median": -0.026,
+    "above": "36/72",
+    "p": 0.8443
+   }
+  },
+  "pitch_gap_vertical": {
+   "flagged": {
+    "median": 0.633,
+    "above": "7/12",
+    "p": 0.4697
+   },
+   "unflagged": {
+    "median": -0.099,
+    "above": "35/72",
+    "p": 0.8884
+   }
+  },
+  "roll_gap_vertical": {
+   "flagged": {
+    "median": -1.593,
+    "above": "0/12",
+    "p": 0.0005
+   },
+   "unflagged": {
+    "median": 0.008,
+    "above": "37/72",
+    "p": 0.7661
+   }
+  },
+  "pitch_uncertainty": {
+   "flagged": {
+    "median": 0.014,
+    "above": "6/12",
+    "p": 0.6772
+   },
+   "unflagged": {
+    "median": 0.141,
+    "above": "37/72",
+    "p": 0.6294
+   }
+  },
+  "roll_uncertainty": {
+   "flagged": {
+    "median": -0.367,
+    "above": "5/12",
+    "p": 0.9097
+   },
+   "unflagged": {
+    "median": 0.238,
+    "above": "42/72",
+    "p": 0.3516
+   }
+  },
+  "confidence": {
+   "flagged": {
+    "median": 0.002,
+    "above": "8/12",
+    "p": 0.0234
+   },
+   "unflagged": {
+    "median": 0.0,
+    "above": "27/72",
+    "p": 0.3342
+   }
+  }
+ }
+}

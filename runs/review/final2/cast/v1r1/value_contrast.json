@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a bright, even daylight street. The man's purple shirt sits in the middle greys against light walls and cobbles, with no dark mass at the edges. B: a darker office interior. A dark blue wall fills the upper corners, a dark wooden desk runs across the whole bottom edge, and the bright white cake stand sits in the centre. That is the corner darkening the lessons showed on generated cards, such as the dark wooden table under the generated computer. B's vignette (0.087) is at the top of the real range; A's (-0.009) is well inside it.",
+   "fix": "Keep the desk and back wall in light-to-middle tones out to the card edges; don't let the bottom strip and upper corners go darker than the centre."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: dark green leaf clusters fill the top-left and bottom corners, and a bright yellow haze glows right behind the sheep, so the light sits in the centre and the dark sits at the edges. Its vignette is 0.153, well above the real maximum of 0.086. B: the hay floor and sky stay fairly even out to the edges. Its darks are local (the barn and tree), not a ring around the edge.",
+   "fix": "Light the forest evenly across the card. Keep the corner leaves as light as the leaves near the sheep, with no bright glow behind the sheep."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the man's dark red-and-black plaid shirt makes a large near-black block against a very bright sky and grass. The hero is much darker than the background (gap -0.199, below the real minimum of -0.136). B: the man and pig sit in the middle greys against a mid-tone garden, with only small darks (the top hat, the boots) and a value gap inside the real range.",
+   "fix": "Lighten the plaid shirt so its darkest checks are mid-dark rather than black, and keep the man's body close in brightness to the sky and grass behind him."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: dark green curtains frame the top corners and a darker floor sits at the bottom corners, while the windows and floor reflections are brightest in the centre behind the dancers. It reads as a spotlit stage, with vignette 0.156, far above the real maximum. B: the waterfall scene stays evenly lit out to the edges (vignette 0.012). Its contrast is a little soft, but inside the real character range.",
+   "fix": "Open up the corners: lighter curtains and an evenly lit floor out to the card edge, with no bright pool of light behind the dancers."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "A: a daylight saloon with even light. The man's dark shirt makes him darker than the background (gap -0.141, just past the real minimum). B: a dusk concert with a dark purple sky and dark crowd, and a bright white cow glowing in front (gap 0.159, just past the real maximum). That is a low-key, spotlit setup. Both are slightly outside the real range in opposite directions, so the evidence is weak.",
+   "fix": "Raise the overall brightness of the concert background: a lighter evening sky and a lighter crowd, so the cow is not the only bright mass."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the corners and lower edge fall nearly to black, and a single cone of spotlight from the top lights the drum kit, which leaves the white bass-drum head as an isolated bright island. The overall key is dark (mean 0.48 against a real minimum of 0.55), the corner darkening is strong (vignette 0.123) and the hero-to-background gap is large (0.204). All three are outside the real range. B: an evenly lit purple background with soft rings, a bright cream trailer and light grass. Its values are all inside the range.",
+   "fix": "Use a bright, evenly lit purple backdrop that stays light into all four corners, with no spotlight cone and no black edges, and a pink stage floor in light-to-middle tones."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a flat, light wood tabletop with the fruit plate in similar light-middle values. It has low contrast (0.115, just below the real minimum) but no glow and no darkening at the edges. B: a white sunburst glows right behind a mid-dark brown wheel, so the hero is much darker than its background (gap -0.282, far below the real minimum of -0.245). The overall key is too bright (0.761) and the edges are darker (0.089). That glow behind the hero is the same thing the generated baseball glove showed in the lessons.",
+   "fix": "Remove the bright glow behind the wheel. Make the lilac rays even across the card, and lighten the wood of the wheel so it isn't a dark silhouette against a white centre."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: a dark tree canopy at the top-left, a bright hay bale and white cow body, and a dark fence. Its vignette (0.087) is right at the real maximum. B: a dark tree at the top-left and a dusk-purple sky, so the overall key is slightly darker (0.595), and its vignette (0.078) is also near the top. Both have the same kind of dark corner and similar values, so on this vector there's nothing to choose between them.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards stage their light. The corners and edges go darker, sometimes close to black, and a bright pool, glow or spotlight sits right behind the hero, so you get a vignette above about 0.09 and a large hero-to-background gap. Real cards light the background evenly out to the edges and keep the hero close to the background in value, so the main subject doesn't read as a cut-out against a bright halo or a dark surround. The other giveaway is big near-black areas inside the hero or in the ground plane (a dark plaid shirt, a dark table) that pull the hero far below the background in value."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the beach ball sits on warm orange sand, and the shadow under it turns a saturated red-orange. The ball's white panels drift cream, so the card has no cool area to rest the eye (shadow_chroma_kept 1.32, above the real range). B: the warm wooden pier and red ring sit on cool cyan water, and the shadows under the pier go dark teal, which is the warm-hero-on-cool-backdrop split the real cards use.",
+   "fix": "Keep the white panels a clean cool white. Make the ball's shadow on the sand a muted dusty mauve-brown, not bright orange-red. Cool the sand toward a pale beige so the colored panels stand out."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the gold watch sits on a loud, uniform green checker (background chroma 0.225, above the real range). The card is almost entirely green and gold, about 1.5 hue families, and the white face picks up a green cast. A: a red box with a cream interior and a gold medal on cyan rays has clear hue roles: warm hero, cool backdrop, one blue ribbon accent.",
+   "fix": "Tone the green backdrop down to a softer, slightly bluish green. Keep the watch face a neutral white with no green tint. Add a small cool accent, such as a steel-blue crown or chain highlight."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: blue sneakers are sprinkled with neon accents (lime collar, teal laces, hot-pink and orange tips), about 5.5 hue families, above the real range. The white soles go pink-cream against the orange and yellow backdrop. A: a red bin with a navy lid on green is a plain complementary pair with few hues, though the red is quite loud.",
+   "fix": "Keep the sneakers to blue with white soles and one accent color on the laces. Leave out the rainbow of neon tips. Keep the soles a cool clean white."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the pearls are a near-neutral lavender-white (subject chroma 0.027) on an all royal-blue velvet field. The whole card is one cool hue family (about 1.25, warm share 0.025), with only a tiny gold clasp, far below the real range. B: a cream and blue map on warm wooden boards gives the card a clear warm/cool split.",
+   "fix": "Put the pearls on a warmer surface, such as a dark red or warm brown cushion, against a cooler backdrop. Give the pearls a warm creamy highlight and a gold clasp, so the hero reads warm against the cool area."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the white cake stand and tablecloth turn pink-lavender all over. Shadows on the cloth go strong violet (shadow_chroma_kept 1.55, above the real range), and the subject has little chroma of its own (0.057). The purple wall repeats the stand's tint. B: a cream stone fountain with cyan water on yellow stripes keeps clearer local colors.",
+   "fix": "Draw the cake stand and tablecloth a clean neutral white. Make the shadows a soft grey-violet, not saturated purple. Let the pink and mint cakes carry the color."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the scarf is one flat, pure red over its whole mass (subject chroma 0.217, above the real range), and its folds only darken the same red. The orange flame badge adds more of the same warm hue. B: the red fan also has a strong red, but the gold ribs and the shift to crimson in the folds keep some variation.",
+   "fix": "Make the scarf a slightly deeper cherry red. Let the folds shift toward a dark wine-crimson, not just darker red. Give the badge a contrasting metal, such as silver or brass, rather than a second orange."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the DJ deck is one pure cyan block with neon pink, green, yellow and orange buttons, and the headphones are royal blue. All of it sits on saturated orange, so the hero's color is pushed to pure hue. A: a cream scroll with a red ribbon and gold seal on navy is a warm hero on a cool backdrop with restrained chroma.",
+   "fix": "Give the deck a muted grey-blue or graphite body. Use only one or two button colors. Keep the headphones a darker, less saturated blue."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the top hat is near-black, with a teal rim reflection and a dull crimson band. The subject holds almost no chroma (0.067), and its shadows lose color (0.46), both below the real range, so a neutral black hero sits on a loud cyan field. A: the navy cap with an orange-gold trim and tassel keeps a saturated local color and a warm accent.",
+   "fix": "Make the hat a deep blue-black with a visible color, such as dark plum or navy, in the shadows. Keep the red band rich red rather than a dull maroon."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the lower half of the card is large grey stone paving (background chroma 0.079, below the real range). The trunk is a dark brick red-brown with orange straps, so the warm hero sits mostly on a dead neutral grey, not a colored backdrop. B: an orange suitcase on yellow rays with a green floor uses saturated colored backdrops like the real cards.",
+   "fix": "Replace the grey paving with a colored surface, such as a blue-tinted floor, or let the sky-blue rays fill more of the card. Keep the trunk a warmer reddish brown."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a cobalt-blue machine sits on a violet-purple backdrop, so the hero and the backdrop are neighboring cool hues (warm share 0.026, below the real range). Only the small cans carry warm color. B: a blue cup on hot pink also stays near the same hue, but the orange tea and gold rim add a warm accent.",
+   "fix": "Put the blue machine on a warm backdrop, such as orange-yellow or coral, instead of purple. Alternatively, make the machine a warm red and keep the purple backdrop."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: every pleat of the fan is a uniform, pure electric violet (subject chroma 0.226, above the real range), with flat tan ribs. Nothing neutral rests the eye, and the folds don't shift hue. B: a purple parasol with a white lace trim and a wooden handle has believable local colors and a neutral white band.",
+   "fix": "Make the fan a softer lavender-purple with some pleats lighter. Add a natural element, such as a pale fabric edge or darker wood ribs, so the purple is not one pure flat hue."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the card is entirely warm. A red mahogany piano sits on an orange wood floor against cream damask walls, with gold pedals (warm share 1.0, about 1.7 hue families). There is no cool backdrop or neutral area, and the shadows go red-brown. A: a red guitar on a blue-violet stage with blue truss and a teal spotlight is a warm hero on a cool backdrop.",
+   "fix": "Put the piano against a cool wall, such as teal or blue-grey wallpaper. Keep the shadows on the floor a cooler brown-violet. Keep the white keys a clean neutral white."
+  }
+ ],
+ "pattern": "Generated cards give themselves away by pushing local colors to pure hue: a flat electric violet fan, a pure red scarf, a cyan deck with neon buttons. They also tint the whites cream or pink, and let shadows keep the same saturated hue, or go orange-red or violet, instead of shifting to a muted related color. And they skip the real cards' warm-hero-on-cool-backdrop split. They make all-warm cards (piano, beach ball), same-hue cool-on-cool cards (pearls on blue, blue machine on purple), or large dead-neutral grey areas."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: police car on a plain grey road with lane marks, with one house, two bushes and a few clouds at the back. That is a few large, quiet shapes, like the real taxi card. B: the bike hangs on a rack on the back of an SUV. The car's rear window, bumper and hitch, orange desert hills, shrubs and a sunset sky all fill the space behind it. Background edge density is 0.094 and detail is 0.044, both above the real range.",
+   "fix": "Show the bicycle alone on a plain road under an open sky. No car, no rack, no hills. Keep the background to two or three big, quiet shapes."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "Both float on concentric-ring fields (category 1). A's purple rings are wider and have more contrast than B's soft blue rings, so A's field competes a little more. The earbuds are A's own partner object, not an invented prop. This is a weak difference.",
+   "fix": "Make the purple rings tone-on-tone with low contrast, so they read as quiet background."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "A: backpack on a plain orange floor in front of a faint red diamond pattern, which is quiet and real-like. B: flippers float on purple rings that fade to almost flat at the edges. Background edge density is 0.005, below the real range. Neither card has invented props, so this is a weak call.",
+   "fix": "Give the purple backdrop clear, even, tone-on-tone rings all the way to the card edges."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both are category 2: plain floor in the backdrop's color (pink safe, purple vending machine). There are no props beyond what the subject holds (the cans in the vending machine). Both backgrounds are equally quiet.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: hound on a grass strip in front of blue stripes, with a soft glow behind it. B: rocking chair on wooden planks in front of blue stripes, with plank seams and a reflection. Both match real staging (the lawnmower card on grass, the clock card on stripes), and neither adds props.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: hoop on cyan rings, cut by the card edge at the pole. B: magnifier floating on green rings. Both fields are quiet, tone-on-tone and free of extra props.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: oil lamp on green rays with a soft glow. B: flashlight on cyan rays with its own beam. Both are category 1 with no invented props. The beam belongs to the object.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the guidebook fills most of the card, lying on simple stylised orange wood seen from above. B: a small wallet sits in the middle of a large area of dark, realistic wood planks with fine grain and plank seams. That is a lot of empty surface around a small hero (detail 0.024, above the real range). This matches the lesson cards, where the generated hero is smaller and has more surround.",
+   "fix": "Bring the wallet close so it fills most of the card. Draw the table as simple, warm, stylised wood with only a few broad grain bands."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a small bag with a ring sits on dark, realistic wood planks with dense grain and seams. Background detail is 0.027, above the real range. B: racket and ball on a flat green court with one wide white line, which is quiet. The ball is a valid partner object.",
+   "fix": "Fill the card with the bag. Draw the surface as simple, light, stylised wood with a few broad grain bands. No photographic plank seams."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: sneakers on a flat yellow floor in front of a flat orange wall, a graphic two-tone setup. B: fedora in front of a purple studio sweep with dark corners and a hot spot behind the hat. That looks like a photo studio rather than a flat field (detail 0.0047, below the real range).",
+   "fix": "Put the hat on a plain purple floor in front of an evenly coloured purple wall. No dark vignette corners."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: a water-polo goal in a pool, cut by the card edge, with one ball as its partner object. The water is quiet, with one lane line. B: neck pillow on pink rings. Both backgrounds are within the real range and add no props.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: a close crop of the doorknob on a flat green door, with a narrow strip of hallway at the right edge. B: a whole front door, framed by dense ivy across the top and both sides with dozens of small leaves, plus a flowered wreath with a bow. The environment is very busy. Edge density is 0.107, above the real range.",
+   "fix": "Show a close crop of the door around the wreath, with plain painted wood around it. No ivy, no plants on the frame."
+  }
+ ],
+ "pattern": "Generated cards pull back to show more world than the subject needs. The hero sits smaller in the middle of a large surface (dark realistic wood planks with fine grain and seams), or the scene is filled with invented surroundings (ivy on the door frame, a car and desert hills behind a bike, an island under a lighthouse). Real cards crop in close, let the card edge cut the object, and keep the background to a few large, quiet, stylised shapes."
+}

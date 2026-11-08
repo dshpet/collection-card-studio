@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the umbrella floats on a flat tone-on-tone yellow diamond pattern with even light. Nothing glows behind it, which matches the real lamp and coral cards. B: the fan sits on yellow waves, but a bright, hot halo blooms right behind the fan's center. The waves lose contrast there and pick it up again toward the corners. That is the same centered glow the generated glove card has.",
+   "fix": "Flat, evenly lit yellow wave pattern with no bright glow behind the fan; keep the waves the same soft contrast across the whole card."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the suitcase stands on plain green floorboards in front of a pale sunburst, with a thin wall strip behind. These are a few large, quiet shapes. B: the trunk stands on large cobbled paving slabs with deep joints and stone texture. A yellow tactile strip behind it suggests a station platform, under a sunburst sky. The background is busier, with lots of small detail in the stone joints, and its detail reading (0.0278) is above the real range.",
+   "fix": "Stand the trunk on a smooth, plain floor with few or no joints, and drop the yellow platform strip; keep the floor a broad, quiet surface under a soft sunburst."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the target sits inside a carnival booth with a wooden frame, a row of four glowing bulbs along the top, a shelf, and a teddy bear with a bow tie sitting next to it. The bear is an invented prop with a face, and the booth adds a lot of story the subject doesn't name. B: the envelope floats on quiet green concentric rings with no extra props.",
+   "fix": "Show only the target with its arrow, on a simple stand against a plain wall; no teddy bear, no light bulbs, no booth frame."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the hatbox stands on a soft green floor in the backdrop's own color and fades into a gradient wall. This is category 2, like the real camera. B: the sneakers sit where a hard horizontal line splits a pale yellow floor from an orange wall. The floor doesn't match the backdrop color, so it reads as a studio set rather than the game's plain floor.",
+   "fix": "Floor and back wall in the same orange, blending softly with no hard horizon line; a soft shadow under the shoes."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the piano stands against a wall with quiet damask wallpaper, over plain floorboards and a skirting board. These are a few large, calm shapes. B: the guitar stands on a stage with two spotlight cans, criss-crossed metal truss towers on both sides and beams, and coloured light cones. The truss lattice puts many small edges all over the card, and a zigzag-patterned strap was added.",
+   "fix": "Guitar leaning on a plain wooden stage floor against a dark, simple backdrop with one soft spotlight glow behind it; no truss towers, no strap."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the cake stand rests on a soft draped tablecloth in front of broad purple stripes. These are simple shapes. B: the fountain stands on a ring of small paving bricks, each with its own edge, in front of yellow wallpaper stripes. The brick ring adds many small joints, and its edge reading (0.046) is at the very top of the real range.",
+   "fix": "Fountain on a smooth, plain stone floor with only a few large slabs, soft light behind it, quiet stripes."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the teacup sits on a soft pink floor-and-wall gradient, with the steam rising from the tea itself. B: the vending machine stands on a plain purple floor that fades into the wall. Both are clean category-2 stagings with no invented props.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the pocket watch floats on a quiet green diamond pattern with even light. B: the medal box floats on blue rays with a strong cyan halo blooming right behind the box. The rays wash out in the middle and turn deep blue at the corners, the same hot-center glow the generated glove cards have.",
+   "fix": "Even blue rays with only a gentle lightening toward the middle; no bright cyan halo behind the box."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both hats float on the same quiet cyan concentric rings, centered behind the hat, with no props. The two backgrounds can't be told apart.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the fan floats on a calm blue wave pattern. B: the scarf sits on a blue pattern that winds as a spiral rather than closed rings. The center sits off-axis behind the knot, and the light-to-dark contrast is strong, so the backdrop competes with the hero more than the real ring backgrounds do.",
+   "fix": "Use soft, evenly spaced concentric circles centered behind the scarf, tone-on-tone with low contrast."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the rocking chair stands on light floorboards against blue wall stripes. B: the inkwell stands on a glossy wooden tabletop against yellow stripes. Both are category-3 stagings on real material with a quiet backdrop, and neither adds props.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the bus sits on a street with a curb, pink and green buildings full of windows, and clouds. The buildings at the edges add many small window rectangles, more than the real taxi card's plain road and rays. B: the neon ice cream sign hangs on a plain green corrugated wall. It is a few large, quiet shapes and the card edges crop it close.",
+   "fix": "Bus on a plain road with a soft blue sky behind; drop the buildings or reduce them to soft, blurred blocks with no windows."
+  }
+ ],
+ "pattern": "Generated cards give themselves away in the background in three ways. First, a hot, washed-out halo glows right behind the hero on ray or pattern fields. Second, the model invents environments full of small detail that the subject doesn't name: paving joints, truss towers, booth lights, stickers, a teddy bear, rocks around a lighthouse. Third, the floor is split from the wall by a hard line in a different color, where the real cards use a floor in the backdrop's own color. Real cards keep the background as a few large, quiet shapes with even light."
+}

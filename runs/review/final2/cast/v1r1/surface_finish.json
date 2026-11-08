@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B's trench coat is covered in small hardware: stitched seams, many buttons, a square metal buckle on the belt and a shiny epaulette buckle. Its magnifier has a lacquered gold rim and a glassy lens with a hard highlight, and there are small crumbs on the plate. B is the furthest outside the real range on detail, micro-texture and gloss (0.068 / 0.028 / 0.19). A's polo shirt is simpler: broad flat cloth, a few stripes, one pocket and a soft headlamp highlight. A is also a little over the range, but much less than B.",
+   "fix": "Draw the trench coat as broad smooth matte fabric with only a few large simple buttons. Leave out the stitched seams and the extra buckles. Give the magnifier a plain soft rim, not polished gold."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B has two magnifiers with polished gold rims and glassy lenses that hold bright reflections. The straw is drawn as many fine separate strands, and highlight share is just over the real range (0.124). A's wool is soft, rounded swirls and the bow is matte wood, with highlights kept quiet. Both cards are close to the real range, so this is a weak call.",
+   "fix": "Make the magnifier rims plain matte brass with a single soft highlight. Show the straw as broad soft clumps, not individual strands."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A's flannel check is sharp-edged and fine all over the shirt. The thermos is chrome-bright with hard specular bands, and there are knuckle creases and nail detail on the hands. A is over the real range on detail, micro-texture and gloss (0.047 / 0.022 / 0.135). B is also busy, with flower prints on the china, but its gloss is in range and its surfaces are softer.",
+   "fix": "Paint the shirt check as larger, softer squares. Make the thermos smooth painted metal with one broad soft highlight, and keep the hands simple and smooth."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B falls below the real range on detail and micro-texture (0.023 / 0.0099). Its wool swirls are smeared and blurry at the edges, and the pig's skin is one uniform blurred surface with no defined planes, which looks like generator softening. A's wool swirls are crisp and the parquet is fine, and all of A's measures are in range.",
+   "fix": "Draw the wool as clearly separated rounded puffs with clean soft edges. Give the pig's skin gentle but defined shading instead of a blurred airbrushed surface."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B is below the real range on detail, micro-texture and gloss (0.019 / 0.0085 / 0.023). The cow's muzzle and the pig's body are blurred and plasticky with no surface variation, and the stage behind is a soft haze. A's plaid shirt, metal buttons and tin mug are crisp and simple, and all of A's measures are in range.",
+   "fix": "Give the cow's muzzle and the pig's skin a clean, slightly satin finish with clearly placed soft highlights, not an overall blur."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's drum shells are lined with many small gold lugs, tension rods and chrome bolts, all lacquered to the same high shine. This is the chunky toy-hardware look the lessons flag, and gloss is 0.126, over the real range. B's caravan is a broad matte cream shell with a few large simple parts (door, window, orange band) and soft highlights, the way real cards simplify hardware.",
+   "fix": "Draw the drums with a few wide smooth metal hoops and only a handful of simple lugs. Give the shells a satin finish rather than lacquer, and keep the chrome to a couple of soft highlights."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A's watermelon flesh is covered in fine speckle stipple. Water droplets are scattered over the fruit and the plate, and the glass plate is a crisp, glossy rim. B's wooden wheel has quiet fine grain and matte wood, with only the brass hub shining. B's gloss is low (0.04). Neither card is out of range, so this is a weak call.",
+   "fix": "Paint the watermelon flesh as a smooth gradient without speckles. Remove the water droplets, and give the plate a single soft glass highlight."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A is over the real range on all three measures (detail 0.052, micro-texture 0.022, gloss 0.173). The chicken's feathers are individually outlined, the hay bale is drawn strand by strand with a rope across it, and the galvanized bucket has a glossy metallic sheen and a pile of glinting grain. B's cow, food tray and burgers are smoother, with moderate gloss in range.",
+   "fix": "Paint the feathers as a few broad soft layers and the hay as large smooth clumps. Make the bucket plain matte grey metal with one soft highlight."
+  }
+ ],
+ "pattern": "Generated cards add too much small hardware and surface marking: rows of lugs, bolts, buckles and stitching, strand-by-strand hay and feathers, speckle stipple and water droplets. They also lacquer everything to the same glossy shine. Real cards keep broad matte surfaces with a few large simple parts and one soft highlight. A second giveaway is the opposite failure: a smeared, over-blurred airbrush finish (detail and micro-texture below the real range), where wool and skin lose their defined forms."
+}

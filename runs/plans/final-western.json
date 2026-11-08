@@ -1,0 +1,139 @@
+{
+ "title": "Western",
+ "story": "Dusty trails, creaky wagons and a campfire under the stars.",
+ "declined": [],
+ "variants": [
+  {
+   "cards": [
+    {
+     "name": "Cowboy Hat",
+     "subject": "A cowboy hat with a tall creased crown, a wide brim curled up at both sides and a band around the base of the crown.",
+     "object_class": "clothing",
+     "category": "1",
+     "pattern": "rays",
+     "hero_colors": "rich caramel brown with a red band",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Sheriff Star",
+     "subject": "A gold five-pointed sheriff star badge with a small ball on each tip and a raised rim along its edges.",
+     "object_class": "accessory",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "warm gold",
+     "backdrop_colors": "rich purple",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Harmonica",
+     "subject": "A harmonica: a long silver rectangle with a row of small square holes along the front, curved cover plates at both ends and two gold screws.",
+     "object_class": "music_instrument",
+     "category": "1",
+     "pattern": "waves",
+     "hero_colors": "silver with gold screws",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Bandana",
+     "subject": "A bandana: a smooth triangle of cloth with a small knot at the top and a pattern of round dots.",
+     "object_class": "clothing",
+     "category": "1",
+     "pattern": "diamonds",
+     "hero_colors": "rich red cloth, white dots, small yellow knot",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Cowboy Boots",
+     "subject": "A pair of brown leather cowboy boots with stitched shafts, pointed toes and a silver spur on each heel.",
+     "object_class": "clothing",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "rich red-brown leather, gold stitching, silver spurs",
+     "backdrop_colors": "grass green",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Saddle",
+     "subject": "A brown leather saddle with a raised horn, a high back, a stitched seat and two stirrups attached to its sides, resting on a wooden fence rail.",
+     "object_class": "accessory",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "rich chestnut brown leather, golden wood fence rail, gold stitching, silver stirrup trim",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "wooden fence rail",
+     "build_model": true
+    },
+    {
+     "name": "Cactus",
+     "subject": "A tall green saguaro cactus with two upward arms and ribbed sides, with a flower on top, growing from sand.",
+     "object_class": "plant_nature",
+     "category": "3",
+     "pattern": "rays",
+     "hero_colors": "rich green with a pink flower",
+     "backdrop_colors": "warm yellow",
+     "surface_or_setting": "sand",
+     "build_model": false
+    },
+    {
+     "name": "Covered Wagon",
+     "subject": "A covered wagon with an arched white canvas cover on a wooden bed and four wooden wheels, with a wooden tongue at the front resting on the ground.",
+     "object_class": "vehicle",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "white canvas, wood brown bed and tongue, red wheel rims",
+     "backdrop_colors": "grass green",
+     "surface_or_setting": "packed dirt",
+     "build_model": true
+    },
+    {
+     "name": "Windmill",
+     "subject": "A farm windmill: a tall tapering four-sided tower with solid walls, a round wheel of many blades at the top, and a tail vane behind the wheel.",
+     "object_class": "building_place",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "rich red-brown tower, white blades, golden yellow tail vane",
+     "backdrop_colors": "bright clear sky blue",
+     "surface_or_setting": "dry prairie with golden grass",
+     "build_model": true
+    },
+    {
+     "name": "Campfire",
+     "subject": "A bright fire with a yellow-white glowing core, orange flame tips curling upward, glowing orange ends on the logs, and warm orange light cast on what stands near it; the logs sit in a ring of grey stones, with a plum enamel coffee pot with a red rim on a flat stone beside it.",
+     "object_class": "tool",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "orange flames, wood brown logs, plum enamel coffee pot with a red rim, small grey stones",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "a patch of dry dirt with a ring of stones",
+     "build_model": false
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "Composed on 2026-11-08 from the outside rater's best variant (v1) after a review of all three pre-final variants and the producer's earlier grades (experiments/plan_review.py, runs/night/plan_review.json).",
+  "Cowboy Hat: the producer's 5 in batch 2; the pre-final hat was graded broken. Source: runs/western-batch2 v1_01.",
+  "Sheriff Star replaces the Gold Pan (outside 2): the genre's badge, absent from all three variants. It rose from 2 to 4 with a Blender model; no accent, since a red gem drew a jewel (lessons). Source: runs/western-blockout v1_05.",
+  "Harmonica: the producer's 5 in batch 2, with that wording; on v1's pink waves, the set's one pink. Source: runs/western-batch2 v1_03.",
+  "Bandana replaces the Barrel (the producer's 1): the producer's 5 in batch 1. Source: runs/western-batch v1_03.",
+  "Cowboy Boots: a pair with spurs and no stitched stars, as the producer asked in batch 2 (5); outside 4 on v3's twin. Source: runs/prefinal/western v1_04.",
+  "Saddle on a fence rail (v3) instead of on a hay bale (v1), which drew one stirrup and an awkward perch; built objects gained most from blockouts. Source: runs/prefinal/western v3_05.",
+  "Cactus: outside 4, the producer's 4, 5 and 5 on earlier wordings. Source: runs/prefinal/western v1_06.",
+  "Covered Wagon: outside 3, the producer's 4 and 3; four wheels, tongue on the ground. Source: runs/prefinal/western v1_08.",
+  "Windmill with a solid tapering tower (the producer's 4 in batch 1) instead of v1's open truss, which the lessons advise against. Source: runs/western-batch v1_08.",
+  "Campfire: the producer's 5 in batch 2, with v1's grey enamel pot instead of a black one. Source: runs/western-batch2 v1_09.",
+  "Colors rewritten under the rich-color rule adopted overnight (on the twins, closer to their real cards by CSD on 29 of 40): Cowboy Hat: tan brown with a red band → rich caramel brown with a red band; Bandana: red with white dots and a small yellow knot → rich red cloth, white dots, small yellow knot; Cowboy Boots: leather brown with silver spurs and turquoise stitching → rich red-brown leather, gold stitching, silver spurs; Saddle: leather brown with silver stirrup trim → rich chestnut brown leather, golden wood fence rail, gold stitching, silver stirrup trim; Cactus: green with a pink flower → rich green with a pink flower; Covered Wagon: white canvas, wood brown, red wheel rims → white canvas, wood brown bed and tongue, red wheel rims; Windmill: grey tower and white blades with a red tail vane → rich red-brown tower, white blades, golden yellow tail vane; Campfire: orange flames, wood brown logs, grey enamel coffee pot with a red rim, grey stones → orange flames, wood brown logs, plum enamel coffee pot with a red rim, small grey stones, color words in the subject to match.",
+  "Kept by hand: the Sheriff Star stays plain gold (tip colors drew a jewel before), the Harmonica keeps the producer's 5 colors, and the hat and cactus lose invented shading colors."
+ ],
+ "cast": 0,
+ "problems": [],
+ "sensitive": []
+}

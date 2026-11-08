@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (neck pillow): the subject has almost no edges (0.017, far below the real range). The fabric ribbing reads as fine noise, not as seams. A single dark, even-weight contour runs around the inner hole and the lower outer edge, while the top edge fades out. B (star badge): the rim is a crisp double line, and the ball tips have clean highlights. Edge density is in the real range, and the edges are sharpest on the star body.",
+   "fix": "Draw the pillow with a few clear stitched seams and crisp, clean silhouette edges. No dark outline. Smooth fabric with no fine crinkle noise."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (harmonica): thin, precise double lines on the cover plate and an even row of crisp hole openings, like the tight panel gaps on real cards. B (fan): a heavy, even-weight dark contour wraps the whole fan and every rib, and the folds are all drawn at the same line strength, with no softer edges anywhere.",
+   "fix": "Separate the fan folds with light and shade, not drawn lines. No dark outline around the fan. Keep the edges sharp at the pivot and the front ribs, and softer on the far folds."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (scout jacket): many internal edges (0.159, above the real range). Pocket flaps, buttons, badge rims, cuffs and the sash border are all cut as equally dark grooves, so no part of the jacket is sharper than the rest. B (cowboy hat): a few clean edges at the brim and band, and the crown fades out softly. It reads as sparse but believable.",
+   "fix": "Simplify the jacket: fewer pockets and seams. Draw the seams as thin, light gaps, not deep dark grooves. Keep the badges as the sharpest detail and let the sleeves and hem soften."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (caravan): a dark, uniform outline around the whole body, the door, the windows and the trim band, and every grass tuft in the foreground is outlined too. The edges look stamped on, all at one weight, which matches the generated lesson cards. B (buoy): a quiet silhouette with soft edges on the water ripples. Its subject edge density is low, but there is no drawn outline.",
+   "fix": "Remove the dark outline from the caravan. Make the grass a soft, low-detail ground with no outlined tufts. Keep the crisp edges on the door and window frames only."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "Both subjects are above the real edge-density range. A (sneakers): mushy, lost edges where the laces merge, a noisy mesh texture, and a hard horizon line cutting behind the shoes. B (boots): a strong, even dark contour and dense stitch and inlay lines. Both look suspect, so this is only a weak lean.",
+   "fix": "Draw the laces as distinct cords with clean crisp edges. Replace the mesh with a smooth surface. Use a soft floor-to-wall transition with no hard line."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (cactus): rib grooves are soft and varied in strength, and the arm contours fade into the light. B (spring-rider duck): a thin, continuous dark contour wraps the whole body, wing and beak at one weight, and there are few internal edges (0.082, below the real range).",
+   "fix": "No outline around the duck. Let its back edge melt softly into the light. Add a few crisp form edges at the beak, eye and handle."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (bandana): a dark, even line runs around the whole triangular silhouette and the knot, and each polka dot has its own hard ring, so the edges all have the same weight. B (graduation cap): a crisp board edge, soft under-shadow and tassel, and clear edge hierarchy, with no outline.",
+   "fix": "Draw the bandana with no outline. Show the folds by light and shade, and print the dots flat onto the cloth without rims."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (boxing gloves): the subject has very few edges (0.037, far below the real range). The glove silhouettes are blurry, the thumb seams are smeared, and the background planks are as sharp as the hero. B (saddle): crisp leather edges, precise dashed stitching, a clean stirrup, and the sharpest edges are on the subject.",
+   "fix": "Give the gloves crisp, clean silhouettes and precise seams at the thumb and cuff. Make the wall and table softer than the gloves."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (covered wagon): the outline darkness (0.128) is above the real range. A heavy dark contour runs around the wheels, canvas and hitch, and the dirt ground is full of speckled edge noise. A (rocking chair): clean, thin wood edges, and the floor planks are softer than the chair.",
+   "fix": "No dark outline on the wagon. Make the ground a smooth, soft dirt surface without speckles. Keep the sharpest edges on the wheel rims and spokes."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 5,
+   "difference": "B (lighthouse) is the real card from the lessons: soft clouds, and its sharpest edges are on the lantern and bricks. A (windmill): every blade carries a heavy dark contour, and the grass field is a dense mat of hatched edges that competes with the hero.",
+   "fix": "Draw the windmill blades as clean shapes with no dark outline. Make the wheat field soft and blurred in the distance, with no individual strands. Keep the sharp edges on the wheel hub and tower corners."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (campfire): the subject has few edges (0.066, below the real range). Every edge is soft and sketchy at the same strength, and the cabin, trees and kettle carry as much edge as the fire, so there is no focal sharpness. B (city binoculars): crisp lens rings and housing seams, and the skyline is softer behind.",
+   "fix": "Make the logs and stones crisp and clearly shaped. Blur and simplify the cabin and trees so the fire is the sharpest area."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (phone booth): a dense grid of window bars, all outlined with equal dark weight. The background suitcase icons also carry strong, crisp outlines, so the background competes with the hero. B (trophy): a clean double rim line, soft spotlight edges and a smooth bowl, with its sharpest edges on the handles and base.",
+   "fix": "Make the background suitcase pattern faint and soft, with no outlines. Draw the booth's window bars as thin, clean gaps, not dark lines."
+  }
+ ],
+ "pattern": "Generated cards draw a dark, even-weight contour around the whole hero and its parts, so every edge has the same strength. Small features and the background get just as many crisp edges: grass tufts, dirt speckles, outlined pattern icons, extra seams and stitching. On real cards the edges are thin and precise at the focus and soften or disappear on the shadow side, and the background stays soft. The opposite failure also appears: smeared, low-detail subjects whose background is sharper than the hero."
+}

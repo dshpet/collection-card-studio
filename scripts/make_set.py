@@ -37,6 +37,11 @@ from style import BLOCKOUT, CAST_STYLE, CATEGORY_RULES, EDIT, PATTERNS, STYLE
 
 CANDIDATES = 3
 MODEL_ROUNDS = 2
+# How much larger than the default box (80% by 75% of the card) a blockout frames its object, by art category. Blockout
+# cards sat smaller than real ones (minimum margin 0.105 against 0.058); framing at the real median size overshot area by
+# a tenth on 24 redrawn cards, so categories 2-4 take half of it and floating objects, already at the real size, none
+# (experiments/night.py, 2026-11-08).
+FILL = {"1": 1.0, "2": 1.035, "3": 1.05, "4": 1.06}
 PLAN_FIXES = 2  # repair rounds for a plan that breaks a rule or has a card that may upset players
 REVIEW_ROUNDS = 1  # first-round edits were kept 36 of 85 times, second-round 0 of 11 (analysis/experience.json)
 ALLOWED_MISSES = 2
@@ -115,7 +120,7 @@ Rules learned from the game's real sets:
 - The category follows how the object exists. A thing that flies or swims is category 1 in its own element: pattern full_scene with a clear sky for a flyer, rays as light shafts in blue water for a swimmer. A flat object lying down, such as a map, a book or a plate, is category 3 with pattern surface_from_above. Food and drink stand on a surface. Vehicles stand on their own ground, in category 3 or 4. Built or installed things are category 4. One or two category 4 cards show a small object in the exact spot where it is used, such as a ball on the pitch.
 - For category 4 use pattern full_scene. Otherwise pick a graphic pattern.
 - subject: one plain sentence on what to draw, with the two or three features that make it recognizable. Name the object and its parts, with no mood or style. It may add what a container holds, such as a cooler with cans, or one partner object that shows the hero in use and where it sits, such as a ball in the mitt: about a quarter of real cards do. Things used in pairs are drawn as a pair: boots, gloves, flippers.
-- hero_colors are the object's natural colors. Nearly all real cards also show one small accent in another hue, on a part the object really has, such as a hat's band.
+- hero_colors name three or four colors for the object's parts, as the real cards do: its natural colors, clean and rich, plus one small accent in another hue on a part the object really has, such as a hat's band. Black, charcoal and dark brown are rare on real cards: a dark part takes a deep rich hue instead, such as navy, plum, forest green or red-brown. The main body takes a rich, saturated hue, as on the real cards; white, grey and silver go on small parts, or on an object that is white by nature, such as a sail.
 - backdrop_colors go against the hero's color temperature, as on the real cards. A warm hero (red, orange, yellow, brown, wood or gold) gets a cool backdrop: cyan, sky blue, blue, grass green or purple. A cool hero (blue, cyan, green or purple) gets a warm backdrop, yellow, orange or pink, or a distant cool one, such as pink behind green. A white, grey or silver hero takes any color. Never use a hue that is on the hero, accent included.
 - By category: a floating object mostly sits on cyan, sky blue or green; a floor takes the richest purple, green or pink; where a sky shows, it is clear cyan or blue by day. A dark topic, such as horror, may set some cards at night or dusk, as the real evening scenes do: a rich royal blue sky with a few small stars and a crescent moon, or violet turning pink at the horizon, never black or grey, with a warm light in the scene, such as lit windows, a lantern or a glowing sign. A dark object, such as a bat, takes the dusk sky, not the night one, so it stands out.
 - Use about six backdrop colors across a set. Backdrops are rich and clean, like a clear sky or fresh grass: never dusty, dull, dark or neon. A night sky is the one deep backdrop, and it stays a rich blue.
@@ -226,12 +231,12 @@ def blockout_brief(card):
     return "\n".join(lines)
 
 
-def render_model(source, out, look="plain"):
+def render_model(source, out, look="plain", fill=1.0):
     """Render a model file with scripts/blockout.py. Returns Blender's error or None, and the parts that touch nothing."""
     out.unlink(missing_ok=True)
     try:
         done = subprocess.run(["blender", "-b", "--factory-startup", "--python-exit-code", "1", "--python",
-                               str(ROOT / "scripts" / "blockout.py"), "--", str(source), str(out), look],
+                               str(ROOT / "scripts" / "blockout.py"), "--", str(source), str(out), look, str(fill)],
                               capture_output=True, text=True, timeout=600)
     except subprocess.TimeoutExpired:
         return "Blender took over 10 minutes: simplify the model", []
@@ -288,7 +293,7 @@ def build_model(folder, brief, rater, look, photos):
     for round_number in range(MODEL_ROUNDS + 1):
         candidate = folder / f"{brief['id']}_{round_number}.py"
         candidate.write_text(answer["model"], "utf-8")
-        error, loose = render_model(candidate, folder / f"{brief['id']}_{round_number}.png", look)
+        error, loose = render_model(candidate, folder / f"{brief['id']}_{round_number}.png", look, FILL[card["category"]])
         log.append({"round": round_number, "error": error, "loose": loose, "problems": answer.get("problems", [])})
         if not error:
             good = round_number
@@ -465,6 +470,39 @@ def record_edits(run, round_number, drawn, before, notes, kept):
     save_json(path, rows)
 
 
+CATEGORY_NAMES = {"1": "floating", "2": "on a plain floor", "3": "on a real surface", "4": "in its place",
+                  "5": "characters"}
+
+
+def write_spec(run, plan):
+    """spec.md: the set as designed, written from the plan before any drawing, so every set is documented the same
+    way. A plan's notes, such as why its cards were chosen, close it."""
+    request = plan.get("request", {})
+    lines = [f"# {plan['title']}: set spec", "", plan.get("story") or "", "",
+             f"Theme: {request.get('theme', '?')}. Wishes: {request.get('wishes') or 'none'}. "
+             f"Plan: {request.get('plan') or 'the planner'}."]
+    lines += [f"Wishes not followed: {'; '.join(plan['declined'])}."] if plan.get("declined") else []
+    lines += [f"Cards flagged as possibly upsetting: {'; '.join(f['name'] for f in plan['sensitive'])}."] \
+        if plan.get("sensitive") else []
+    for number, variant in enumerate(plan["variants"], 1):
+        cards = variant["cards"]
+        mix = "/".join(str(sum(c["category"] == k for c in cards)) for k in "1234")
+        lines += ["", f"## Variant {number}", "",
+                  f"Categories 1/2/3/4: {mix}{', characters ' + str(sum(c['category'] == '5' for c in cards)) if any(c['category'] == '5' for c in cards) else ''}. "
+                  f"Object classes: {len({c['object_class'] for c in cards})}. Built in Blender: "
+                  f"{sum(bool(c.get('build_model')) for c in cards)}. Backdrops: "
+                  f"{', '.join(dict.fromkeys(c['backdrop_colors'] for c in cards))}.", "",
+                  "| # | Card | Staging | What it shows | Colors | Backdrop or setting |", "|---|---|---|---|---|---|"]
+        for index, card in enumerate(cards, 1):
+            staging = f"{card['category']} {CATEGORY_NAMES[card['category']]}" + (", model" if card.get("build_model") else "")
+            backdrop = (f"{card['pattern'].replace('_', ' ')} in {card['backdrop_colors']}"
+                        + (f"; {card['surface_or_setting']}" if card["surface_or_setting"] else ""))
+            lines.append(f"| {index} | {card['name']} | {staging} | {card['subject']} | {card['hero_colors']} | {backdrop} |")
+    if plan.get("notes"):
+        lines += ["", "## Notes", ""] + [f"- {note}" for note in plan["notes"]]
+    (run / "spec.md").write_text("\n".join(lines) + "\n", "utf-8")
+
+
 def deliver(run, plan, briefs, history):
     request = plan.get("request", {})
     lines = [f"# {plan['title']}", "", plan.get("story") or "", "",
@@ -590,7 +628,9 @@ def main():
                 make_plan(args.theme, args.wishes, args.variants, knowledge, args.cast, taken))
         save_json(plan_path, {**plan, "request": request})
     plan = load_json(plan_path)
-    print("plan:", plan["title"], "|", plan.get("problems") or "no problems", flush=True)
+    write_spec(run, plan)
+    print("plan:", plan["title"], "|", plan.get("problems") or "no problems", "| spec:", run_name(run) + "/spec.md",
+          flush=True)
     for note, items in (("wishes not followed", plan.get("declined")), ("still flagged", plan.get("sensitive"))):
         if items:
             print(f"{note}: {items}", flush=True)

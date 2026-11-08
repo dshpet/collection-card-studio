@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the police car is shown whole and small in the middle of a wide street scene. Its box height is 0.477, below the real range. The house at top left and the road markings take up a lot of the card. B: the bike on the rack fills the card and is cropped at the top and right edges (margin 0), close up like the real cropped lighthouse and desk.",
+   "fix": "Bring the camera close so the police car fills most of the card, let the bumper and roof run near or past the card edges, and show only a hint of road behind it"
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the box camera sits upright, centered and fully inside the frame with even space on all sides, the same contained, catalog-style setup as the generated lesson cards. A: the player is tilted, and its cable loops toward the bottom right. The weight is off-center, which is closer to the real cards' dynamic angles.",
+   "fix": "Turn the camera to a three-quarter angle, make it a bit larger, and push it slightly off-center so the lens comes toward the viewer"
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the backpack plus the bedroll on top fills 0.507 of the card, above the real range (up to 0.427). The bedroll comes close to the top edge, and there is almost no space on the left and right. B: the flippers sit diagonally with even space around them, inside the real range.",
+   "fix": "Draw the backpack a little smaller, leaving clear background space above the bedroll and on both sides"
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the safe fills 0.509 of the card, above the real range, and the hinge side nearly touches the left edge. It is a heavy block with little space around it. B: the vending machine is upright with room on all sides, inside the range. Both look similar, so the call rests mainly on A's oversized fill.",
+   "fix": "Shrink the safe so it has clear space on the left and right, and center it with a little floor showing below the feet"
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the rocking chair is shown whole and centered on a floor strip, with even space all round, the same full-object-on-a-ground setup as the generated lighthouse-on-rocks and computer-on-table cards. A: the dog fills the lower card at an angle, with its head pushed to the left. It is closer to the real cards' tight framing.",
+   "fix": "Bring the chair closer and turn it to a stronger three-quarter angle, letting the rockers run near the bottom edge"
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the magnifier is small (0.187, below the real range) and floats in the middle of the ring background with lots of empty space, so it reads a little weakly at thumbnail size. A: the hoop is large, and the pole is cut off by the bottom edge (margin 0), the same tight crop as the real lighthouse.",
+   "fix": "Make the magnifying glass much bigger, filling about two thirds of the card, set diagonally, with the handle running toward the bottom-right corner"
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the oil lamp is a narrow, symmetric, front-on shape standing upright in the dead center (width 0.426, well below the real range). Large empty side areas are left on both sides of the sunburst. B: the flashlight sits on a strong diagonal, and its light beam points toward the top-left edge. It spreads across the card the way real items are tilted.",
+   "fix": "Tilt the lamp to a three-quarter angle and draw it larger so it spans most of the card width, with the handle reaching toward the right edge"
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the badge wallet is small (0.235) and lies flat in the middle of a large area of dark wood. The gold badge is the only clear read, and the wood planks take up most of the card. A: the book fills the card, which is slightly over the range but reads at once.",
+   "fix": "Bring the camera close to the open wallet so it fills most of the card, tilted toward the viewer, with only a thin strip of wood around it"
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the racket and ball are small (0.186, below the real range) and lie flat. The white court line cuts across the whole card and competes with the racket. A: the bag with the ring fills the card at an angle, and the ring is clearly the focus in the center.",
+   "fix": "Draw the racket larger on a diagonal, filling the card, with the ball in front; leave out the long court line or keep it faint"
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the hat is centered, fully contained and short (box height 0.51), with even purple space above and below. It looks like a product shot with no crop. A: the sneakers sit low on a split-color backdrop, with a long shadow on the left. Both are below the real height range, so the call is weak.",
+   "fix": "Draw the hat larger and tilted toward the viewer, filling more of the card height, with the brim reaching close to the left and right edges"
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the neck pillow floats dead center on concentric rings, with a margin of 0.112, above the real range. It is a front-on, symmetric pose with even space all round. A: the goal is cut off by the left edge (width 1.0, margin 0) and sits in a pool scene, the same edge-cropped framing as the real cards.",
+   "fix": "Turn the pillow to a three-quarter angle and draw it larger, so it sits closer to the card edges"
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the wreath, the hero, covers only 0.081 of the card, far below the real range, with a margin of 0.279. The full blue door, the frame and the ivy border all compete with it, so at thumbnail size the first read is 'door', not 'wreath'. A: the doorknob and plate fill the card, close up and cropped by the door edge.",
+   "fix": "Zoom in on the flower wreath so it fills most of the card, with just a little blue door around it; remove the ivy border"
+  }
+ ],
+ "pattern": "Generated cards keep the whole object inside the frame, upright and centered, often front-on and symmetric, with even empty space around it (sometimes resting on a small base or floor patch). Real cards push the hero closer, turn it to a three-quarter angle, and let it reach or cross an edge. Generated cards are also more often too small (magnifier, racket, wreath on a door), or the scene around the hero (ivy, court lines, a whole door) takes over the first read."
+}

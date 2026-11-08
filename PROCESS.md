@@ -41,6 +41,14 @@ How the tool got here, decision by decision. Numbers are in [STYLE_GAPS](analysi
 - 19 odd and hostile requests (emoji, Ukrainian, brands, franchises, weapons, gore, an injected "ignore all previous rules") all produced plans, with forbidden wishes declined and named in the report; after two repairs, War and Gangsters kept three cards still flagged for the producer, and Elections stayed a voting set. Three new topics ran end to end in one consistent style.
 - A generator bake-off on the twins: Codex against Nano Banana Pro through Antigravity (11 twins, until its quota ran out) and Qwen-Image-2.1, open weights on this GPU ([STYLE_GAPS](analysis/STYLE_GAPS.md#generator-bake-off-2026-11-07)).
 
+## 7. The final sets, 11-08
+
+- Before the final drawing, the chosen variants were reviewed card by card against the other variants: grades, broken flags, the planner's checks and the lessons (`experiments/plan_review.py`).
+- Every set now has a short spec, `spec.md` in its run folder, written from the plan before drawing: each card's staging, subject and colors, and the notes on why the cards were chosen.
+- Overnight, one change per arm on the twins (`experiments/night.py`, STYLE_GAPS): smooth large surfaces in the text prompt, richer planner colors and a wider blockout frame were adopted; one camera and the perspective fixes wait on the producer's blind look.
+- The final started late, at 11:15 instead of 04:00: a background wait loop matched its own command line and waited on itself all night. Steps are now chained directly.
+- After the draw, two Period Drama cards were weak in every candidate, a plan problem: the Pearl Necklace became the Quill Pen (the outside rater's 4) and the Hat Box got stripes. The set was redrawn in a new folder seeded with the other eight cards' candidates, so only the two new cards were drawn and the picks and review ran again (`runs/final3/README.md`).
+
 ## Tools tried
 
 | Task | Tried | Kept |
@@ -58,4 +66,4 @@ How the tool got here, decision by decision. Numbers are in [STYLE_GAPS](analysi
 - One human rater. The final style is still spotted in 24 of 32 twins.
 - No model judges construction; it comes from geometry and a human look.
 - Each variant takes about 40 minutes and needs a GPU, Blender and two logged-in CLIs.
-- Next: draw the final film sets, compare them with the references, and try a style LoRA trained on the reference cards with an open model.
+- Next: the producer's review of the final sets and the blind arms (`experiments/final_review.py`), then a style LoRA trained on the reference cards with an open model.

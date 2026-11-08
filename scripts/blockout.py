@@ -1,6 +1,6 @@
 """Render a 3D blockout of a card's object in Blender, for the image model to restyle.
 
-    blender -b --factory-startup --python scripts/blockout.py -- model.py render.png [soft | check]
+    blender -b --factory-startup --python scripts/blockout.py -- model.py render.png [plain | soft | check] [fill]
 
 "soft" renders a smoother, stylized look: no clear coat, broad highlights, beveled edges in the shading, a larger
 light and more fill (experiments/trial2.py). "check" renders nothing and only prints the construction check.
@@ -10,7 +10,7 @@ nothing holding it. With a floor, ledge or setting, every group must reach it; a
 Two parts touch when their surfaces cross or come within 1% of the hero's height.
 
 A model file sets SCENE and defines build(k), where k holds the helpers below. Parts are the hero unless made
-with setting=True. The hero is framed to the real cards' median box, about 80% by 75% of the card.
+with setting=True. The hero is framed to the real cards' median box, about 80% by 75% of the card, times fill.
 SCENE: backdrop as hex, azimuth (0 is front-on, positive puts the camera to the right), elevation, lens in mm
 and light "left" or "right".
 """
@@ -33,6 +33,7 @@ SOFT = {"satin": dict(rough=0.6), "matte": dict(rough=0.85), "gloss": dict(rough
         "metal": dict(rough=0.5, metal=1.0)}
 ROOT = None
 LOOK = "plain"
+FILL = 1.0
 
 
 def linear(hex_color):
@@ -311,7 +312,7 @@ def frame(camera, scene, azimuth, elevation, points):
     for _ in range(60):
         middle = (low * high) ** 0.5
         xs, ys = fit(middle)
-        size = max((max(xs) - min(xs)) / BOX[0], (max(ys) - min(ys)) / BOX[1])
+        size = max((max(xs) - min(xs)) / (BOX[0] * FILL), (max(ys) - min(ys)) / (BOX[1] * FILL))
         low, high = (middle, high) if size > 1 else (low, middle)
     longest = max(SIZE)
     for _ in range(3):
@@ -389,4 +390,5 @@ def render(model, out):
 if __name__ == "__main__":
     model_file, out_file, *rest = sys.argv[sys.argv.index("--") + 1:]
     LOOK = rest[0] if rest else "plain"
+    FILL = float(rest[1]) if len(rest) > 1 else 1.0
     render(model_file, out_file)

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the parasol is turned in a 3/4 view and seen from slightly above. The canopy panels foreshorten toward the back, and the handle drops below in the same view. B: the fan is laid almost flat to the picture plane, like a front-on elevation. The pleats are even flat patches in the normal map (planar 0.649, near the top of the real range), and the fan has almost no turn or depth.",
+   "fix": "Turn the fan about 30 degrees away from the viewer and tilt it back slightly, so the pleats on the far side get narrower and the wooden guard sticks shows some thickness."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the suitcase is front-on at eye level, and the floorboards converge mildly toward one centre point. B: the trunk is seen from a higher 3/4 angle with a lot of its top showing. The foreground paving slabs are large and sharp, which forces depth more than the real cards do.",
+   "fix": "Lower the camera to near the trunk's lid height, show only a sliver of the top, and make the floor slabs smaller and quieter so they don't push forward."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the booth is a layered frontal stage, with the frame in front, the target and bear in the middle, and the back wall behind, all on one shelf plane. B: the envelope and photos are near-orthographic flat sheets facing the viewer, with no ground plane and no turn. Planar 0.855 is well above the real range.",
+   "fix": "Tilt the envelope back on a surface seen from slightly above. Fan the photos at different depths so the back ones are visibly smaller, and add a soft contact shadow."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the hatbox is front-on and symmetric. The camera is just above the lid, so the lid is a thin ellipse and the side is a flat wall. Planar 0.809 is well above the real range. B: the sneakers sit in a natural 3/4 view on a clear floor plane with a horizon line behind.",
+   "fix": "Turn the hatbox to a 3/4 view from a higher camera so more of the lid top shows. Let the stripes wrap and narrow around the curve, and set the box on a visible floor."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the piano is shown almost front-on, with the left side as a strip and the front a large flat face. Planar 0.673 is above the real range, and the floorboards and wall corner add a room-scale depth setting. B: the guitar leans on a stage floor that reads at one angle.",
+   "fix": "Turn the piano further into 3/4 so the keyboard and side panel recede. Simplify the room to a soft wall and floor."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cake stand is seen from a high camera and is small in the frame, with a large tilted tablecloth plane and the wall behind. B: the fountain fills the frame, and its tiers open up evenly from top to bottom on a paved ground.",
+   "fix": "Bring the camera closer and slightly lower so the cake stand fills the card, and reduce how much empty tablecloth recedes behind it."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the teacup is front-on and symmetric with no turn, and the handle is drawn flat in profile. B: the vending machine is turned 3/4 with its side visible and stands on a floor.",
+   "fix": "Turn the cup so the handle points toward the viewer at an angle, and raise the camera slightly so more of the saucer's top surface shows."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the watch dial faces the viewer while the case rim shows its right side, and the chain floats in a separate flat arc, so the parts don't share one view. B: the ring box is in a consistent 3/4 view from above, with the lid and base agreeing.",
+   "fix": "Lay the pocket watch on a surface seen from slightly above, with the chain draping on that same surface in matching perspective."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the top hat crown's top ellipse is quite open while the crown flares strongly, so the view looks steeper than the brim suggests. B: the graduation cap's square board is in one clean 3/4 view from above, with the tassel hanging naturally.",
+   "fix": "Keep the crown top and brim at the same viewing tilt, and make the top ellipse match the brim's openness."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the fan is drawn front-on and flat, like a flat sticker. The pleats are flat panels with no turn or tilt into depth. B: the scarf loop is seen from above in a 3/4 view, with the neck loop receding.",
+   "fix": "Tilt the fan back and turn it about 30 degrees so the far pleats get narrower and the guard sticks show their thickness."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the rocking chair is in a strong but consistent 3/4 view, and the rockers sit on a receding floor. B: the inkwell is front-on at eye level. The table is a flat horizontal band, and the bottle's mouth barely shows.",
+   "fix": "Raise the camera so the inkwell's mouth and the tabletop are seen from above, and turn the bottle and quill into a 3/4 view."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the bus uses strong wide-angle perspective. The front grows large while the side shrinks quickly, and the street buildings recede steeply. Planar 0.535 is above the real range. B: the neon sign is a frontal relief on a wall, mildly angled.",
+   "fix": "Use a milder, longer-lens view of the bus so the front and side are closer in scale, and keep the street background soft and simple."
+  }
+ ],
+ "pattern": "Generated cards tend to show period props almost front-on and symmetric, with no 3/4 turn. Flat elevations of hatboxes, fans, teacups, inkwells and pianos give planar_share above the real range. Parts sometimes disagree on view, like a watch dial versus its chain. Room or table settings are over-built, making the hero small, or the perspective is forced wide-angle. The real cards turn the hero 3/4 under mild perspective, with a simple ground."
+}

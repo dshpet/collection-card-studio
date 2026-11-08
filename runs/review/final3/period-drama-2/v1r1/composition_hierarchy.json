@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the parasol floats in the middle of the card with an even gap of about 0.10 on every side, and the hooked handle hangs into empty yellow at the bottom left. B: the fan is tilted and spreads close to the right and bottom edges (margin 0.058), so it fills the card more like the real cards do.",
+   "fix": "Draw the parasol larger and tilted so the canopy nearly touches the top and right edges of the card, with the handle running toward the bottom corner."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the suitcase faces straight on in the middle of the card with symmetric empty space. Its margin of 0.121 is above the largest real margin (0.098). B: the trunk is turned three-quarters and pushed close to the right edge, the way the real binoculars and camera are framed.",
+   "fix": "Turn the suitcase three-quarters to the viewer, draw it larger and let one corner come close to the card edge."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the target sits in a wooden booth that is cut off at the card edges (margin 0.019), and the teddy bear competes a little with the target. B: the tilted envelope with photos fills the card well. Both framings fall within the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the striped hatbox is centered, faces straight on and has the same gap on every side (margin 0.10), which is the 'complete object, centered' look of the generated lessons. B: the sneakers run wide and close to the left and right edges, cropped tightly the way real cards are.",
+   "fix": "Draw the hatbox larger and turned to a three-quarter view, placed off-center so its lid nearly touches one side of the card."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the upright piano is drawn almost straight on and fills the card. Its area of 0.493 is above the real maximum, and it sits as a complete object against a plain wall. B: the guitar is small (0.169) but leans at an angle, with stage spotlights adding busy secondary focus. A's straight-on wall-to-floor view is closer to the generated lesson pattern.",
+   "fix": "Show the piano at a three-quarter angle with one side cut off by the card edge instead of the full piano straight on."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cake stand is small (area 0.243) and centered on a tablecloth with even gaps around it (margin 0.104, above the real max of 0.098), so there is a lot of empty purple and white. B: the fountain spans almost the full width and its basin nearly touches the edges.",
+   "fix": "Draw the cake stand much larger, filling most of the card height, seen slightly from above and placed close to one edge."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the teacup is short (box height 0.465, below the real min) and floats in the middle of plain pink with a large gap around it (margin 0.133, far above the real max). B: the vending machine is tall and fills the card height within the real range.",
+   "fix": "Draw the teacup and saucer bigger and closer to the viewer so they fill most of the card, with the saucer rim almost touching the left and right edges."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the pocket watch and chain sit centered with an even margin of 0.121, just above the real max, leaving a lot of plain green. B: the ring box with the medal is turned three-quarters and fills the frame with comparable margins. The difference is small.",
+   "fix": "Draw the pocket watch larger and tilted, with the chain running off toward the top edge of the card."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the top hat is tilted and fills the card width with its brim angled. B: the graduation cap is flat and centered with a short box (box height 0.506, below the real min of 0.581), leaving large empty bands above and below.",
+   "fix": "Tilt the cap toward the viewer and draw it larger so the board and tassel fill more of the card's height."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the fan is a flat, wide half-circle in the middle of the card (box height 0.452, below the real min), with wide empty water bands above and below. B: the scarf fills the card height (0.833) and nearly touches the top and bottom.",
+   "fix": "Draw the fan bigger and tilted diagonally across the card so it fills the height as well as the width, with its tip near a corner."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the inkwell and quill are small (area 0.219, below the real min) and sit centered on a table, with a large empty striped wall behind them. A: the rocking chair is turned three-quarters and fills the card from the top edge to the floor.",
+   "fix": "Bring the inkwell and quill much closer so the bottle fills the lower half of the card and the feather reaches the top corner."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the bus fills the card in a three-quarter view and runs close to the edges (area 0.465), like the real taxi card. B: the neon ice cream sign is centered upright against a flat wall, with even gaps and a straight-on symmetric view.",
+   "fix": "Show the ice cream sign at an angle and larger, with the cone close to the bottom edge and the scoop near the top corner."
+  }
+ ],
+ "pattern": "The generated cards show the whole object, small to mid-size, centered and often straight on, with equal empty space on every side. Their margins often sit above the real maximum (about 0.10), or the box is too short or too small. Real cards push the hero bigger, turn it three-quarters, and let it touch or get cut off by an edge."
+}

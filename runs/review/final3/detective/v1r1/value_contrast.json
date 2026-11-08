@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the lower half falls into a heavy dark mass (car bumper, tyres, road), with a pale washed-out sky band at the top. The corners darken much more than on any real card (vignette -0.32), and the black bike frame and spokes make hard local contrast across the hero. A: a mid-key street with one compact dark mass, the black police-car hood, against even mid-grey road and sky. That matches the real taxi card.",
+   "fix": "Keep the whole scene mid-bright; lift the car rear and road at the bottom so the corners are not dark; draw the bike with softer mid-tone shading instead of black outlines and black shadows"
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a near-white player and earbuds sit on dark purple rings, so the hero is much lighter than its background (gap +0.22, above the real range). The value split is hard and graphic. B: a mid-dark red camera on light cyan rings, the same dark-hero-on-light-ground setup as the real camera card.",
+   "fix": "Make the background rings lighter, so the yellow player and white earbuds sit on a background only a little darker than they are"
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: a dark purple field takes most of the card. The fins are the lightest shape, and the foot pockets go almost black. The overall key (0.55) is darker than the real cards, with a faint glow ring behind the hero. A: the backpack sits on a mid-value red-orange ground with soft mid-grey groups on the pack.",
+   "fix": "Use a brighter, lighter purple background; shade the foot pockets dark purple, not black; remove the glow ring behind the fins"
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the safe body is one large near-black block covering most of the card. The overall key (0.52) is below the real range, and contrast is hard, with chrome hinges and handle as sharp white specks on black. B: the blue vending machine is mid-dark on its sides, with a big light glass panel inside it, so its value groups are more balanced.",
+   "fix": "Paint the safe a lighter mid blue with visible light on the top and front faces; keep the darkest tone only in thin shadow under the feet"
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a bright glow sits behind the dog's back against darker blue stripes. The value lean is toward the glow, while the dog's body stays in middle greys. B: the chair has soft mid-light groups against even stripes and a light floor, with no halo. Both are within the real ranges, so this is a weak call.",
+   "fix": "Remove the bright halo behind the dog; keep the striped background evenly lit"
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the green rings and the magnifier are close in value. Overall contrast is very low (rms 0.064, below the real range), with only one white glint and a mid-dark handle. The hero separates from the background by hue, not by value. A: a white backboard with a red frame stands out clearly against mid cyan.",
+   "fix": "Make the background rings a clearly lighter or darker green than the lens, add a bright rim on the silver frame, and shade the handle with a darker underside"
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the corners darken strongly (vignette 0.144, above the real range), and a bright glow sits behind the lamp chimney, a spotlight-in-the-dark setup. B: the flashlight is high key and evenly bright, with a dark red body as the single dark accent, close to the real camera layout.",
+   "fix": "Light the green ray background evenly to the corners; tone down the glow behind the lamp"
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the card is very low key (mean 0.35, far below the real range). Dark wood fills nearly the whole frame, the wallet is a mid-tone island, and the gold badge and card are the only lights. This is a tenebrist setup no real card uses. A: bright orange wood with a mid-teal book, a mid-to-high key like the real set.",
+   "fix": "Use light, warm, sunlit wood planks so the whole card is bright; keep the wallet mid-brown and the clearly darker shape"
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: dark reddish-brown wood covers the card (mean 0.43, below the real range). The clear bag is much lighter than the ground (gap +0.24), so the card reads as a light shape on a dark field. B: a mid green court with a white line and a light racket. Its overall key and value groups are within the real range.",
+   "fix": "Draw light honey-colored wood with soft daylight on it, so the background sits in the middle greys and the bag is only a little lighter"
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a nearly white, clipped floor fills the lower half under a flat light-orange wall. The overall key is above the real range (0.76), and the dark shoe shapes sit on near-white with hard edges. B: a mid-dark purple ground with a soft glow behind the hat and gentle roll-off on the felt. Its contrast is low but closer to the real layouts.",
+   "fix": "Use a warmer mid-tone floor instead of a near-white one, and let it shade gradually toward the edges"
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: there is a light pink glow ring behind a mid-dark blue pillow, and the inner crevice and lower folds drop to near-black pockets. That is the black-accent and glow pattern the lessons tie to generated cards. A: a light pool scene with a white goal and soft mid-grey water. Its contrast is low (rms 0.107), but there are no black holes.",
+   "fix": "Shade the pillow folds with darker blue, not black; remove the bright ring behind it and keep the pink background even"
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: a large flat dark-green door is the main area, with a mid-gold knob plate and a bright room strip at the right edge. B: a dark blue door framed by busy mid-light ivy leaves, with a light wreath at the center. Both sit at the low edge of the real key with similar contrast, and neither gives a clear value tell.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Real cards are mid-to-high key, with even light behind the hero. Generated cards drift away from that in a few ways. Some are very dark: a dark wood tabletop or a near-black object fills most of the card. Others have a spotlight glow behind the hero with darker corners. The darkest parts of the object often go to near-black pockets, with hard local contrast. Where the hero separates from the background, it does so by a strong light-on-dark value flip, or by hue alone with almost no value difference."
+}

@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (scooter): sunlit street with a clear sun direction. Hard cast shadows fall across the cobbles, and the man's shirt goes from a lit front to a darker left shoulder and arm. B (detective): the face and coat are lit almost head-on. The coat darkens evenly toward the right edge, and the rooster and man share one flat frontal fill. B's form contrast (0.629) is above the real range, which comes from heavy darkening in the coat folds rather than a clear side shadow. The light bias is similar on both, so this is a weak call.",
+   "fix": "Light the scene from one side window on the left. Leave the right side of the detective's face and coat in a soft cool shadow, and let the hat cast a shadow across his brow and the table."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (archer sheep): soft forest light from upper left. The wool puffs are lit on top and shaded underneath, and the body falls into gentle shadow toward the lower right. That fits the real range. B (sheep and cow): light bias is 0.639, far above the real maximum of 0.423. The lens shows a bright backlit hotspot on the ground between the figures, with both characters darker and evenly filled from the front. It looks like a glowing center more than a key that models form.",
+   "fix": "Remove the bright glowing patch behind and between the characters. Light both animals from the upper left so their left sides are bright, their right sides fall into soft shade, and each casts a short shadow onto the straw."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (thermos pour): light bias is 0.074, well below the real range. The man is lit flat from the front: face, arms and shirt have the same brightness left to right, with no side shadow and only light darkening under the arms. B (tea with the pig): there is a readable key from the upper left. The man's right side and the pig's belly turn into shade, the table casts a shadow on the grass, and the tree canopy darkens the upper right. B's shading range is a little low (0.549), but its light direction is clear.",
+   "fix": "Light the man from the left so the left side of his face and arms is bright and the right side turns to a soft shadow. Let the thermos and mug cast short shadows on the checked cloth."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both cards are lit fairly frontally, and both have a light bias at or below the low edge of the real range. A (ballroom dance): light bias is 0.083, below the real range. The sheep and cow are filled almost evenly from the front, with dark contact shadows only at the feet. Form contrast sits at the top of the range because the wool spirals are dark inside rather than shaded on one side. B (selfie at the waterfall): also frontal, but the pig's right cheek and the sheep's lower wool fall off a little more, which puts it at the edge of the real range.",
+   "fix": "Use the window light behind them as a key from the upper left. Brighten the left sides of the sheep and cow, let their right sides fall into soft shade, and lay longer soft shadows across the parquet."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (saloon): daylight from the upper left. The man's hat shades his face, and the pig's hat shades its upper face, both in the real range. B (concert): stage backlight with colored rims along the pig's and cow's tops and arms, and the faces filled from the front, also in the range. Lighting gives no clear reason to pick either card.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (drum kit): a single top-center spotlight lights the kit almost symmetrically. The drum heads and shells are bright on the front, and the shading range of 0.902 is just above the real maximum. There is no side where the form turns into core shadow, and the bass-drum face reads flat. B (caravan): a strong key from the left. The front and left face are lit, the right end drops into a deep blue-grey shadow, and the wheel and hitch cast a soft shadow on the grass. This matches the side-lit modeling of the real cards.",
+   "fix": "Move the light to the upper left so the left drums and cymbals are bright and the right side of each drum shell turns into a darker shadow. Let the kit cast a soft shadow to the right across the stage."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (fruit plate): a key from the upper left. The plate rim casts a soft shadow down and to the right on the table, and the fruit has lit tops and darker undersides. That is consistent with the real cards. B (ship's wheel): seen straight on and lit from the front and behind, with a glowing halo behind the hub. The spokes are shaded identically on both sides, form contrast is at the real minimum (0.415), and the shading range is below it (0.573). The ring and the stand are flat, with no shadow side.",
+   "fix": "Turn the wheel slightly and light it from the upper left. Make the right side of the ring, spokes and stand darker in shadow, and cast the wheel's shadow onto the deck to the lower right."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "Both cards are below the real light-bias range, but A is lower (0.048 against 0.118). A (cow and chicken on the hay bale): both characters are lit flat from the front. The cow's belly, face and legs have the same brightness left to right, and the only darkening is in the hay and under the bucket. B (cow with the tray): the sunset gives a slight warm side, and the right side of the cow's body darkens a little more.",
+   "fix": "Light the cow and chicken from the upper left with sunlight. Leave the right side of the cow's body and face in a soft shadow, and let the bucket and the chicken cast shadows onto the cow and the hay bale."
+  }
+ ],
+ "pattern": "Generated cards are lit flat from the front or symmetrically from the top, so neither side of the hero clearly turns away into a core shadow. Light bias is often near or below the low end of the real range. Some cards instead have a glowing backlight halo behind the subject, which pushes light bias too high. Real cards use one side key, usually from the upper left: the lit face is clearly brighter than the shadow face, and soft cast shadows fall toward the opposite side."
+}

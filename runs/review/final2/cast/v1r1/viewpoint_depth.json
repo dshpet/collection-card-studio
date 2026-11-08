@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the camera is low, close to the scooter's headlamp, and the street behind converges strongly. That reads a little wide-angle, but the man, the rooster and the street share one eye-level view. B: the camera is at eye level, the desk top is seen from slightly above, and the two characters and the props share that view. Both cards hold one consistent camera with a clear foreground layer (the scooter, the desk) and a simpler background. The lessons give no viewpoint cue that separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a tight, nearly frontal crop of the sheep. There is no visible ground. The trees behind are simpler and slightly soft, which matches the close-cropped real cards. B: the camera pulls back to show both full figures plus a fence and a barn. The hay ground and the hoofprint are drawn from fairly high above, while the sheep's and cow's heads are seen straight on at eye level, so the ground and the characters mix two camera heights.",
+   "fix": "Bring the camera closer and lower so the characters fill the card. Draw the hoofprint and the hay ground from the same low, eye-level angle as the faces, with only a thin strip of ground visible."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a close three-quarter crop. The car hood and the checkered cloth form a near foreground layer, the man is the middle layer, and the meadow behind is simple. B: the camera pulls back to show the full figures, shoes and all, on a flat lawn, with the table set centered between them. This is the pulled-back, whole-scene framing that the lessons show the generator choosing over a tighter crop.",
+   "fix": "Crop closer: cut the man at the waist and the pig at the belly, and turn the table three-quarters so its top recedes. Keep the cherry tree as a simpler backdrop behind them."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: both full figures stand centered in the ballroom. The parquet floor recedes in strong perspective toward the windows, and the pair are framed whole, as on a stage. B: a close selfie crop with the bodies cut by the bottom edge, set against a simpler waterfall backdrop. That matches the real cards' habit of cropping tight. A repeats the lessons' generated habit of pulling back to show everything on a ground plane.",
+   "fix": "Move the camera in to waist height so the sheep and cow are cut at the knees. Soften and simplify the ballroom behind them, and show less of the floor."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "A: the camera is pulled back. The man and the pig stand on a deck whose planks recede toward the saloon, with three separate layers: figures, deck, building. B: a close, tight crop of the pig and cow against a simpler stage backdrop. Both read consistently. A leans slightly toward the generated habit of a wider staged view.",
+   "fix": "Bring the camera closer so the man and the pig fill the card from the chest up, and keep the saloon as a simple, slightly soft backdrop."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the drum kit is turned three-quarters from slightly above. The tom tops and the round stage show their top faces at one shared angle, which matches the real cards. B: the caravan is drawn almost in flat side profile with barely any roof visible. Yet the grass, with its scattered tufts, is drawn as if seen from above, so the ground and the hero do not share one camera height.",
+   "fix": "Turn the caravan three-quarters so its front and side both show, raise the camera slightly so a strip of the roof is visible, and draw the grass at the same gentle angle."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the plate is seen from high above and turned at an angle. The table planks run diagonally at the same angle as the plate's rim, so it reads as one consistent view, like the real towel card. B: the ship's wheel is perfectly frontal and symmetric, like a flat front-on drawing, with no thickness turning away from the camera. It stands on a floor whose boards converge in perspective, so the wheel and the floor disagree. The lessons show the generator squaring objects to face the viewer.",
+   "fix": "Turn the wheel about 30 degrees so its rim shows thickness and the spokes on the far side get shorter. Show the top of the wooden stand, and match the deck boards to that same three-quarter angle."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "A: the camera pulls back to show both full figures sitting on a hay bale, with the fence and barn as a mid layer. It is centered, staged framing. Its planar share (0.014) is just below the real range. B: the cow is cropped close and the tray in the foreground is seen from above. The bushes and picnic table behind are simpler. B's tray is somewhat steeply angled, but its close crop matches the real cards more closely.",
+   "fix": "Move the camera closer so the cow and the rooster are cut at the hay bale's top edge, and keep the barn and fence simple and soft behind them."
+  }
+ ],
+ "pattern": "Generated cards pull the camera back to show the whole subject centered, often on an added base (a rock island, a stage, a lawn). They also square objects to the viewer, front-on or in flat side profile, instead of the real cards' close crop with a three-quarter turn. The ground plane is then often drawn from higher above than the hero, so the floor and the object disagree on camera height."
+}

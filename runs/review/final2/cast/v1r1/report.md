@@ -1,0 +1,30 @@
+# Review: final2/cast/v1r1
+
+| Specialist | Caught | Wrong | Abstained | False alarms |
+|---|---:|---:|---:|---:|
+| shape_proportions | 3/6 | 1 | 2 | 2/2 |
+| viewpoint_depth | 5/6 | 0 | 1 | 2/2 |
+| lighting_shading | 4/6 | 1 | 1 | 2/2 |
+| value_contrast | 2/6 | 3 | 1 | 2/2 |
+| color_palette | 6/6 | 0 | 0 | 2/2 |
+| surface_finish | 3/6 | 3 | 0 | 2/2 |
+| edges_linework | 4/6 | 2 | 0 | 2/2 |
+| composition_hierarchy | 4/6 | 1 | 1 | 2/2 |
+| staging_detail | 3/6 | 2 | 1 | 2/2 |
+
+## Art director
+
+Close. The cast, faces, rendering and finish all match the real cards, so no generated card gives itself away through its characters. They give themselves away through staging. The backdrop repeats the characters' warm colours (hay, barns, wood floors, a red saloon, pink blossoms) where real cards use cool sky or foliage, which the colour lens caught on all six. The camera also pulls back to show full figures on a dressed set, where real cards crop close. The controls showed that the vignette/spotlight, frontal-symmetry and blur complaints flag real cards, so I overruled them. All six generated cards get small edits, limited to backdrop colour and set dressing, plus light on the ballroom card.
+
+1. **The backdrop repeats the characters' warm colours. Hay floors, red barns, orange parquet, a red saloon with brown decking, a tan coat against a brown desk, and pink blossoms behind a pink pig make each generated card mostly one warm family. The real character cards (the scooter street, the archer forest, the thermos meadow, the waterfall, the concert) set the warm cast against blue sky, green foliage or violet. This was the most reliable cue: the colour lens picked all six generated cards.** Put the warm characters against a cool backdrop: bright blue sky, green grass and leaves, blue-grey or soft violet walls. Keep wood, hay, red barns and other warm set pieces to small patches.
+2. **Generated character scenes pull the camera back to show every figure head to feet, standing on a staged ground (a lawn with a tea table, a parquet ballroom, a deck, a hay bale) with set dressing around them. Real character cards crop close, at the waist or chest, and let a card edge cut the figures. The viewpoint lens picked all five generated cards it called. I overrule the 'centered, frontal, symmetric' version of this complaint: the real ship's wheel and drum kit are exactly that, so it does not apply to object cards.** For character cards, frame from the waist or chest up so the faces sit large in the upper half and the bottom edge cuts the bodies. Show only a thin strip of ground.
+3. **Invented set dressing and fine background texture: a barn, fence and hay bales, strand-by-strand straw, scattered petals, a filing cabinet, a plant and a corkboard. Real backgrounds are a few large, soft shapes. I overrule the staging lens on p01 A and the edges lens on p07 B, because both of those are real cards.** Behind the characters, paint a few large soft shapes: one tree, one wall, open sky. Draw ground as smooth colour with only a few strands or blades near the feet.
+4. **The characters are lit flat from the front (the ballroom, the hay bale), so neither side turns into shadow. I overrule the vignette and spotlight complaints: the real drum kit is a dark spotlit stage. Dark plaid shirts are not a cue either, because they appear on real cards.** Light the characters from the upper left so their right sides fall into soft shade and they cast short soft shadows to the right.
+5. **There is some extra small hardware and gloss: coat buckles and seams, a chrome bucket, polished gold magnifier rims. This is a minor cue. I overrule the blur complaint about p04 B and p05 B, because both are real.** Keep props matte with a few large simple parts and one soft highlight each.
+
+- p01: Detective: Make the desk a soft, light blue-grey painted wood in place of the glossy orange-brown. Paint the trench coat as smooth matte tan with fewer seams and plain small buckles. Replace the filing cabinet and potted plant with more of the plain blue wall. Keep the chicken with the camera, the magnifier and the cake stand.
+- p02: Sheep and Cow: Replace the straw floor with soft green grass, leaving a small patch of packed dirt around the hoofprint and only a few straw wisps. Replace the red barn and hay bales on the right with soft green trees. Keep the sheep, the cow, the magnifiers and the blue sky.
+- p03: Tea with the Pig: Replace the pink blossom canopy with a green leafy tree, and remove the pink petals from the grass. Make the tablecloth plain white. Keep the man, the pig, the tea set and the blue sky.
+- p04: Grand Ball: Make the floor a slightly cooler, softer grey-brown wood with faint, blurred reflections. Paint the ballroom walls a pale blue-grey. Light the dancers from the upper left so their right sides fall into soft shade. Keep the dance pose, the bonnet, the bow tie and the green curtains.
+- p05: Sheriff Pals: Paint the saloon front faded blue-grey wood with white trim, in place of red. Make the deck boards soft, weathered grey-brown wood with faint plank lines. Keep the man, the pig, the hats, the mug and the blue sky.
+- p08: Ranch Hands: Paint the hay bale as a few large, soft golden clumps with gentle shading, and remove the rope. Replace the red barn and fence with soft green bushes and more blue sky. Make the bucket plain matte grey metal with one soft highlight. Keep the rooster, the cow, the bandana and the tree.

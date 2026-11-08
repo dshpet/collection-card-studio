@@ -1,0 +1,396 @@
+{
+ "control": {
+  "n": 24,
+  "distribution": {
+   "color_palette.hue_families": {
+    "median": 2.7,
+    "real": 3.89,
+    "auc": 0.266
+   },
+   "color_palette.chroma_subject": {
+    "median": 0.1019,
+    "real": 0.1297,
+    "auc": 0.281
+   },
+   "color_palette.shadow_chroma_kept": {
+    "median": 0.7905,
+    "real": 0.972,
+    "auc": 0.389
+   },
+   "color_palette.chroma_background": {
+    "median": 0.1395,
+    "real": 0.1435,
+    "auc": 0.465
+   },
+   "composition_hierarchy.margin_min": {
+    "median": 0.106,
+    "real": 0.058,
+    "auc": 0.785
+   },
+   "composition_hierarchy.subject_area": {
+    "median": 0.302,
+    "real": 0.324,
+    "auc": 0.446
+   },
+   "composition_hierarchy.box_width": {
+    "median": 0.7835,
+    "real": 0.807,
+    "auc": 0.337
+   },
+   "composition_hierarchy.box_height": {
+    "median": 0.749,
+    "real": 0.748,
+    "auc": 0.45
+   },
+   "value_contrast.lightness_mean": {
+    "median": 0.6825,
+    "real": 0.683,
+    "auc": 0.502
+   },
+   "value_contrast.lightness_p5": {
+    "median": 0.368,
+    "real": 0.41,
+    "auc": 0.431
+   },
+   "value_contrast.rms_contrast": {
+    "median": 0.1425,
+    "real": 0.146,
+    "auc": 0.492
+   },
+   "surface_finish.micro_texture": {
+    "median": 0.0185,
+    "real": 0.0159,
+    "auc": 0.612
+   },
+   "surface_finish.detail_subject": {
+    "median": 0.0445,
+    "real": 0.0344,
+    "auc": 0.665
+   },
+   "surface_finish.gloss_share": {
+    "median": 0.119,
+    "real": 0.076,
+    "auc": 0.683
+   },
+   "surface_finish.form_contrast": {
+    "median": 0.546,
+    "real": 0.493,
+    "auc": 0.602
+   }
+  }
+ },
+ "smooth": {
+  "n": 24,
+  "distribution": {
+   "color_palette.hue_families": {
+    "median": 2.81,
+    "real": 3.89,
+    "auc": 0.272
+   },
+   "color_palette.chroma_subject": {
+    "median": 0.102,
+    "real": 0.1297,
+    "auc": 0.284
+   },
+   "color_palette.shadow_chroma_kept": {
+    "median": 0.831,
+    "real": 0.972,
+    "auc": 0.417
+   },
+   "color_palette.chroma_background": {
+    "median": 0.1418,
+    "real": 0.1435,
+    "auc": 0.497
+   },
+   "composition_hierarchy.margin_min": {
+    "median": 0.103,
+    "real": 0.058,
+    "auc": 0.779
+   },
+   "composition_hierarchy.subject_area": {
+    "median": 0.2985,
+    "real": 0.324,
+    "auc": 0.445
+   },
+   "composition_hierarchy.box_width": {
+    "median": 0.7825,
+    "real": 0.807,
+    "auc": 0.34
+   },
+   "composition_hierarchy.box_height": {
+    "median": 0.744,
+    "real": 0.748,
+    "auc": 0.448
+   },
+   "value_contrast.lightness_mean": {
+    "median": 0.6945,
+    "real": 0.683,
+    "auc": 0.535
+   },
+   "value_contrast.lightness_p5": {
+    "median": 0.371,
+    "real": 0.41,
+    "auc": 0.439
+   },
+   "value_contrast.rms_contrast": {
+    "median": 0.1445,
+    "real": 0.146,
+    "auc": 0.515
+   },
+   "surface_finish.micro_texture": {
+    "median": 0.0175,
+    "real": 0.0159,
+    "auc": 0.586
+   },
+   "surface_finish.detail_subject": {
+    "median": 0.0364,
+    "real": 0.0344,
+    "auc": 0.579
+   },
+   "surface_finish.gloss_share": {
+    "median": 0.1135,
+    "real": 0.076,
+    "auc": 0.685
+   },
+   "surface_finish.form_contrast": {
+    "median": 0.5555,
+    "real": 0.493,
+    "auc": 0.62
+   }
+  }
+ },
+ "control->smooth": {
+  "color_palette.hue_families": {
+   "higher": "15/24",
+   "median_shift": 0.025,
+   "p": 0.2179
+  },
+  "color_palette.chroma_subject": {
+   "higher": "11/24",
+   "median_shift": -0.0013,
+   "p": 0.2246
+  },
+  "color_palette.shadow_chroma_kept": {
+   "higher": "17/24",
+   "median_shift": 0.0335,
+   "p": 0.0134
+  },
+  "color_palette.chroma_background": {
+   "higher": "16/24",
+   "median_shift": 0.0025,
+   "p": 0.0017
+  },
+  "composition_hierarchy.margin_min": {
+   "higher": "4/24",
+   "median_shift": -0.002,
+   "p": 0.0661
+  },
+  "composition_hierarchy.subject_area": {
+   "higher": "11/24",
+   "median_shift": 0.0,
+   "p": 0.9305
+  },
+  "composition_hierarchy.box_width": {
+   "higher": "13/24",
+   "median_shift": 0.002,
+   "p": 0.2677
+  },
+  "composition_hierarchy.box_height": {
+   "higher": "12/24",
+   "median_shift": 0.001,
+   "p": 0.358
+  },
+  "value_contrast.lightness_mean": {
+   "higher": "19/24",
+   "median_shift": 0.007,
+   "p": 0.0191
+  },
+  "value_contrast.lightness_p5": {
+   "higher": "13/24",
+   "median_shift": 0.001,
+   "p": 0.4837
+  },
+  "value_contrast.rms_contrast": {
+   "higher": "16/24",
+   "median_shift": 0.003,
+   "p": 0.0549
+  },
+  "surface_finish.micro_texture": {
+   "higher": "8/24",
+   "median_shift": -0.0003,
+   "p": 0.3154
+  },
+  "surface_finish.detail_subject": {
+   "higher": "4/24",
+   "median_shift": -0.0039,
+   "p": 0.0037
+  },
+  "surface_finish.gloss_share": {
+   "higher": "11/24",
+   "median_shift": -0.0025,
+   "p": 0.721
+  },
+  "surface_finish.form_contrast": {
+   "higher": "17/24",
+   "median_shift": 0.0145,
+   "p": 0.0321
+  }
+ },
+ "fill": {
+  "n": 24,
+  "distribution": {
+   "color_palette.hue_families": {
+    "median": 2.79,
+    "real": 3.89,
+    "auc": 0.268
+   },
+   "color_palette.chroma_subject": {
+    "median": 0.1065,
+    "real": 0.1297,
+    "auc": 0.282
+   },
+   "color_palette.shadow_chroma_kept": {
+    "median": 0.786,
+    "real": 0.972,
+    "auc": 0.39
+   },
+   "color_palette.chroma_background": {
+    "median": 0.1397,
+    "real": 0.1435,
+    "auc": 0.467
+   },
+   "composition_hierarchy.margin_min": {
+    "median": 0.076,
+    "real": 0.058,
+    "auc": 0.581
+   },
+   "composition_hierarchy.subject_area": {
+    "median": 0.3535,
+    "real": 0.324,
+    "auc": 0.603
+   },
+   "composition_hierarchy.box_width": {
+    "median": 0.821,
+    "real": 0.807,
+    "auc": 0.471
+   },
+   "composition_hierarchy.box_height": {
+    "median": 0.784,
+    "real": 0.748,
+    "auc": 0.615
+   },
+   "value_contrast.lightness_mean": {
+    "median": 0.6725,
+    "real": 0.683,
+    "auc": 0.456
+   },
+   "value_contrast.lightness_p5": {
+    "median": 0.3425,
+    "real": 0.41,
+    "auc": 0.398
+   },
+   "value_contrast.rms_contrast": {
+    "median": 0.1485,
+    "real": 0.146,
+    "auc": 0.549
+   },
+   "surface_finish.micro_texture": {
+    "median": 0.0164,
+    "real": 0.0159,
+    "auc": 0.59
+   },
+   "surface_finish.detail_subject": {
+    "median": 0.0404,
+    "real": 0.0344,
+    "auc": 0.661
+   },
+   "surface_finish.gloss_share": {
+    "median": 0.0995,
+    "real": 0.076,
+    "auc": 0.633
+   },
+   "surface_finish.form_contrast": {
+    "median": 0.5285,
+    "real": 0.493,
+    "auc": 0.573
+   }
+  }
+ },
+ "control->fill": {
+  "color_palette.hue_families": {
+   "higher": "15/24",
+   "median_shift": 0.08,
+   "p": 0.3173
+  },
+  "color_palette.chroma_subject": {
+   "higher": "10/24",
+   "median_shift": -0.0012,
+   "p": 0.4389
+  },
+  "color_palette.shadow_chroma_kept": {
+   "higher": "12/24",
+   "median_shift": 0.0035,
+   "p": 0.9544
+  },
+  "color_palette.chroma_background": {
+   "higher": "11/24",
+   "median_shift": -0.0002,
+   "p": 0.6578
+  },
+  "composition_hierarchy.margin_min": {
+   "higher": "0/24",
+   "median_shift": -0.034,
+   "p": 0.0001
+  },
+  "composition_hierarchy.subject_area": {
+   "higher": "24/24",
+   "median_shift": 0.0585,
+   "p": 0.0
+  },
+  "composition_hierarchy.box_width": {
+   "higher": "23/24",
+   "median_shift": 0.0525,
+   "p": 0.0002
+  },
+  "composition_hierarchy.box_height": {
+   "higher": "24/24",
+   "median_shift": 0.06,
+   "p": 0.0
+  },
+  "value_contrast.lightness_mean": {
+   "higher": "6/24",
+   "median_shift": -0.0075,
+   "p": 0.0155
+  },
+  "value_contrast.lightness_p5": {
+   "higher": "8/24",
+   "median_shift": -0.009,
+   "p": 0.0231
+  },
+  "value_contrast.rms_contrast": {
+   "higher": "19/24",
+   "median_shift": 0.005,
+   "p": 0.0002
+  },
+  "surface_finish.micro_texture": {
+   "higher": "9/24",
+   "median_shift": -0.0007,
+   "p": 0.0592
+  },
+  "surface_finish.detail_subject": {
+   "higher": "9/24",
+   "median_shift": -0.0013,
+   "p": 0.149
+  },
+  "surface_finish.gloss_share": {
+   "higher": "6/24",
+   "median_shift": -0.0135,
+   "p": 0.0016
+  },
+  "surface_finish.form_contrast": {
+   "higher": "7/24",
+   "median_shift": -0.011,
+   "p": 0.0345
+  }
+ }
+}

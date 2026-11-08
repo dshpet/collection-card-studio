@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: one man on a scooter dominates. He is cut off by the bottom edge and the chicken sits behind his shoulder, so there is one clear first read. B: the detective and the chicken stand side by side as two equal figures. The desk, books, notebook, filing cabinet, plant and corkboard spread out to every edge (box width 0.991, above the real maximum), and these props pull the eye away from the cake stand in the middle.",
+   "fix": "Push in close on the detective so his face and magnifying glass fill the upper-middle of the card. Let the desk run off the bottom edge. Put the chicken partly behind him, and drop the filing cabinet, plant and the extra books."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a single sheep stands centered and facing forward, filling almost the whole card from top to bottom (height 0.95, above the real range). The bow crosses the frame flat and evenly, like a posed portrait. B: the sheep and cow lean toward each other, are cut by the left and right edges, and point to the hoofprint in the center as the focal point.",
+   "fix": "Turn the sheep three-quarters toward the arrow's target and pull back slightly so there is a band of forest above its hat. Let one side of the body run off the card edge instead of standing centered and facing forward."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the man, the pig and the small table are all shown head to boots inside the frame, as a staged scene centered on the table. There is wide grass below and blossoms above, so the characters read small at thumbnail size. A: the man is cut off at the waist by the left and bottom edges, and the thermos, mug and sandwich sit large in the foreground. This matches the tight crops of the real cards.",
+   "fix": "Crop to waist height so the man and the pig fill the card, with the man's head near the top edge. Bring the teapot and cup up large in the front and let the table run off the bottom edge."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the dancing sheep and cow are shown full-body and centered. Matching curtains and windows frame them on both sides, and they keep a clear margin on every side (0.077, above the real 0.033 maximum). B: the selfie of the sheep and pig is cut hard by the bottom and right edges, and the faces sit large in the middle band.",
+   "fix": "Move in closer so the sheep and cow are cut off at the knees by the bottom edge and their heads come near the top. Drop the matching curtain framing on the sides."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the man and pig are cut by the left and bottom edges, and the saloon sits behind them. Subject area is 0.516, a little above the real range. B: the pig and cow are cut by the bottom edge, with arms raised. The stage lights, confetti and crowd make a busy backdrop, but the two faces still read first. Both crops match the real cards, so my lens gives no clear signal.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the drum kit fills the card on a round stage under a spotlight, similar to the real trophy-on-podium card, and the cymbals reach close to the top corners. B: the caravan sits in the lower half, leaving a large empty purple area above. The tow hitch nearly touches the right edge while the left keeps air, so the weight leans right and low.",
+   "fix": "Draw the caravan bigger and centered higher, so the roof is close to the top quarter of the card. Keep even space on the left and right, and show less empty purple sky."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the ship's wheel is shown straight-on and perfectly symmetric on a stand, sitting dead-center over a sunburst and deck. Wide even margins (0.105, above the real maximum) and a low subject area (0.245) make it read small. A: the fruit plate is seen at an angle from above and fills the card, with the watermelon reaching toward the top-right, like the angled real objects.",
+   "fix": "Turn the ship's wheel to a three-quarter angle and tilt it slightly. Draw it larger so the spoke handles almost touch the card edges, and let the stand run off the bottom."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the chicken and the cow sit side by side on a hay bale with fence and barn behind, and the scene fills the full card height (0.923, at the real limit). The two heads compete equally for the first read. B: one cow is cut off by the bottom edge, and the tray of food is big in the foreground under her face, giving a clear order of face first, then food.",
+   "fix": "Make the cow the single hero, cut off at the chest by the bottom edge. Put the chicken smaller and behind her shoulder, and leave a little sky above the horns."
+  }
+ ],
+ "pattern": "Generated cards tend to show the hero whole and contained: straight-on, symmetric and centered, often on an added base or stage (island, deck, table). They leave even air on all sides, or split the first read between two equal figures. Real cards angle the hero three-quarters, push in close, and let an edge cut it hard, which gives one dominant read at thumbnail size."
+}

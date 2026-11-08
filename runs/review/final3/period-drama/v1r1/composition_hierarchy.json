@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the beach ball is large, centered and sits slightly low, filling most of the card. It reads instantly. B: the dock runs off the right edge and the life ring sits lower right, with two posts sharing attention. This crop resembles the real cards that run off the edge, such as the barrel deck and the water-polo pool. Both framings fall within the real cards' habits.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the ring box is tilted, large and nearly fills the card, and the medal reads first. B: the pocket watch is small and sits centered in the lower half. The chain floats up to the top right, leaving wide empty green margins (margin 0.121, above the real range). At thumbnail size the watch face is tiny.",
+   "fix": "Draw the pocket watch larger and tilted, filling about 80% of the card. Let the chain curl close around the case instead of floating off into the corner."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the hatbox is shown dead-on from the front, perfectly centered and symmetric, on a plain gradient with even space on both sides. This matches the generated lessons' straight-on, fully contained framing. B: the sneakers sit in a 3/4 view in the lower half of the card, under a large empty orange wall (box height 0.487, below range).",
+   "fix": "Show the hatbox from a 3/4 angle, slightly from above, and place it a little off-center. Let it fill more of the card, with its base close to the bottom edge."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the thin pearl bracelet is a loop that covers only a small share of the card (occupancy 0.168, well below real). Most of the card is blue velvet with tufted buttons that pull the eye, and the hero is weak at thumbnail size. B: the map and magnifier fill the card, the map runs to the edge, and the lens reads first.",
+   "fix": "Draw the pearl bracelet much larger and coiled into a full, tight heap that fills the card. Make the velvet backdrop plain, with no button tufts."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the cake stand is a thin vertical post, centered on a tablecloth corner with wide margins. Small cakes on the stand compete with one another. B: the fountain fills the card's width almost edge to edge, and the paving runs off the bottom and sides, like the real cards that sit in a scene.",
+   "fix": "Draw the cake stand larger and closer to the camera, filling the card's width. Fewer, bigger cakes. Let the tablecloth run off the bottom edge."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the scarf fills the card from top to bottom, with the badge as a clear focal point in the center. B: the folding fan is a flat, wide shape across the middle with large empty water-wave bands above and below (box height 0.448, below range). It reads small and thin at thumbnail size.",
+   "fix": "Draw the folding fan tilted upward at a diagonal and much larger, so it fills the card from corner to corner. Reduce the empty sky above and below it."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the scroll lies as a low horizontal band through the middle of the card (box height 0.463, below range), and the table and dark sky take up the top and bottom. B: the DJ deck and headphones fill the card on a diagonal, though the headphones compete a little with the deck.",
+   "fix": "Tilt the rolled scroll upward and bring the camera closer, so the scroll and its wax seal fill more of the card's height."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the graduation cap sits slightly to the left, and the tassel adds a focal point at the lower right. The frame is fairly short (box height 0.506). B: the top hat is tilted and large on the concentric rings, and the red band reads first. The framing is clean on both cards. The call rests mostly on the top hat floating in front of the target rings, with no ground or shadow.",
+   "fix": "Rest the top hat on a surface with a soft shadow beneath it, and tilt it slightly. Keep the brim close to the card's edges."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the trunk is shown from the front at a slight angle, in the upper middle, with flagstones filling the lower half. B: the suitcase is frontal and centered, with even margins on both sides (margin 0.121, above range), under sun rays. Both are close to frontal. A's large empty floor area is less typical of the real cards.",
+   "fix": "Bring the trunk closer and lower in the card. Show it in a stronger 3/4 view, so the lid and side are visible and it fills the width."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the vending machine is a tall, near-frontal block that fills the card's height, and it reads instantly. B: the teacup and saucer sit as a low, wide shape in the middle (box height 0.471, below range), with a big empty pink field and margins of 0.133, above range. The faint steam is the only thing filling the top.",
+   "fix": "Show the teacup larger and from a higher angle, so the saucer fills the bottom and the cup rim reaches near the top. Make the steam thicker and shorter, close to the cup."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the fan is tilted and large, and it spreads nearly edge to edge across the card. B: the parasol canopy floats in the upper part of the card, with the thin handle trailing down. It is centered on a flat diamond-pattern backdrop and leaves an empty lower right. The same kind of backdrop appears behind the generated-looking pocket watch in p02.",
+   "fix": "Draw the parasol larger and opened toward the viewer at a steeper tilt, so the canopy fills the card. Keep the handle short and close in."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the guitar is small (occupancy 0.169), and the spotlights and stage truss compete for attention. B: the upright piano is a frontal box that fills almost the whole card (occupancy 0.491, above range), with no breathing room. It looks like a flat catalog shot. Both framings fall outside the real range. B's straight-on, wall-to-wall placement matches the generated lessons more closely.",
+   "fix": "Turn the piano to a 3/4 angle and pull the camera back slightly, so there is a little space around the top and sides. Simplify the wallpaper behind it."
+  }
+ ],
+ "pattern": "Generated period-drama cards give themselves away through framing. The hero is centered and seen straight from the front, fully inside the card. Thin or flat objects (fan, teacup, bracelet, pocket watch, parasol) leave large empty bands of backdrop around them, so the hero reads small and occupancy falls outside the real range. Real cards tilt the hero in 3/4 view, fill the card more evenly, and let the ground or scene run off the edges."
+}

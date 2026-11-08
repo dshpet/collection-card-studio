@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: police car body is smooth broad black/white enamel, chrome bumper one simple band, the asphalt has only a quiet speckle. B: bike-on-rack is packed with thin hard parts (spokes, chain links, rack brackets, bolt heads on the crank) and lacquer highlights on every red tube and the car panel. Detail and gloss are well above the real range (0.104 / 0.308).",
+   "fix": "Simplify the bike and rack into a few broad smooth parts: fewer, thicker spokes, no chain links or bolts, rack drawn as two wide plain bars; satin paint on the frame with one soft highlight, matte car body."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the yellow player is one soft satin plastic with rounded buttons, and the earbuds are a clean matte white. Smooth like the real cards. B: the red camera body has a mottled leather-like grain noise across the front panel, the flash dish has fine radial brushed streaks, and the chrome lens ring is sharp and mirror-like.",
+   "fix": "Paint the camera body as smooth, slightly matte red with no surface grain; flash reflector as a plain soft silver gradient without streaks."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the green backpack fabric has a smeary, blotchy noise in the crop (lower pocket and flap), the rolled mat carries a dotted stipple texture, and everything from fabric to straps has the same wet sheen. B: the fins are clean yellow plastic with a matte dark-grey blade and rubber foot pocket. The gloss split is clear and there is no noise.",
+   "fix": "Draw the backpack as clean, smooth, matte canvas with soft shading and no blotchy noise; leave the mat's surface plain and slightly matte; keep only the buckles shiny."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the safe is flat matte blue with a single soft gold dial and handle, and the hinges are broad simple blocks. Very plain, slightly under the real detail range. B: the vending machine glass is covered in tiny condensation droplets, and the cans and bottles behind it are blurry. It is high gloss on blue plastic (0.197), with extra fine micro-detail that the real cards don't have.",
+   "fix": "Remove the water droplets from the glass; draw the glass as a clean pane with one broad soft reflection; make the blue cabinet satin rather than lacquered."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the bloodhound's fur is painted smooth with soft wrinkles, and the grass is fine blades. B: the rocking chair has moderate wood grain on the seat and floor planks, similar to the real signpost. The cushion is matte. Both sit inside the real ranges, and on finish neither card has a clear giveaway.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the white backboard is matte and soft, the rim is simple satin orange, and the net cords are smooth. Its high highlight share comes from the white board, not specular. B: the magnifier has a chrome ring with a broad reflection, glossy red handle and clear glass with one dot highlight. Its broad, simple parts match the real cards' finish.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the brass lamp has a warm soft sheen, frosted glass chimney, and few broad parts, like the real telescope brass. B: the flashlight is a uniformly lacquered red with hard white streak highlights along the whole barrel. The metal ring has fine brushed-line texture, and the grip has many sharp ribs. Gloss is above the real range (0.182).",
+   "fix": "Make the red barrel satin with one soft highlight instead of streaky lacquer; draw the metal ring as a plain smooth silver band without brushed lines; use fewer, wider grip ribs."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the book cover is flat matte teal and the stickers are smooth with simple white borders. B: the wallet has dashed stitching running around every edge and pocket, plus fine leather pore grain on the flap. The gold shield has rivets, and the wood planks are glossy. It shows the same added stitch detail as the generated gloves in the lessons. Detail and gloss are above the real range (0.061 / 0.21).",
+   "fix": "Draw the wallet as smooth soft-brown leather with no stitching lines or pore grain; badge as one plain gold shape without rivets; matte dark wood behind."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the ziplock film reads as thin translucent plastic with broad soft creases, and the gold ring has a clean band reflection. B: the racket strings form a dense, crisp grid of fine white lines, and the tennis ball has a speckled felt noise. The highlight share is high (0.161) on the white strings and court line.",
+   "fix": "Draw the racket strings as fewer, wider, softer lines; tennis ball as smooth soft yellow with only the white seam, no fuzzy speckle."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the sneakers carry perforated mesh dots across the toe and side panels and smeared, rubbery laces. The plastic sheen is uniform over mesh, rubber and laces, and the edges are soft and smudged. Detail sits at the top of the real range. B: the fedora is matte felt with a soft, even surface and a slightly smoother band. Very quiet, but it reads as one clear material.",
+   "fix": "Remove the mesh hole pattern; draw the shoe uppers as smooth matte fabric panels, laces as simple clean cords, and keep shine only on the white rubber sole."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the goal frame is smooth white plastic, the net cords are clean, and the ball has a satin orange sheen with simple seams. The water caustics are in the background. B: the neck pillow is a blurry, uniformly soft blue with faint smeared wrinkle streaks and a hazy fabric noise. Detail, micro-texture and gloss are all below the real range (0.012 / 0.005 / 0.007). It reads as AI smear, not as a defined velour or plastic.",
+   "fix": "Draw the pillow with crisp edges and a clear soft-velour surface: a few broad smooth folds near the inner curve, a gentle sheen on the top, no hazy blur."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: the gold knob and plate are smooth polished brass with broad reflections. The only fine texture is the dusty fingerprint, which is a deliberate clue. B: the whole blue door, frame and wall are covered in visible brushstroke noise and canvas-like streaking. The flowers and bow have the same painterly grain. Micro-texture and gloss are far above the real range (0.045 / 0.51).",
+   "fix": "Paint the door as clean smooth blue panels with soft shading and no brush marks; wreath flowers and bow as smooth simple shapes; plain matte wall."
+  }
+ ],
+ "pattern": "Generated cards give themselves away on the surface in two opposite ways. Most often they add fine detail the real cards drop: stitch dashes, condensation droplets, mesh holes, brushed-metal lines, dense string grids, visible brushstroke grain. They also put one uniform wet lacquer over every material. Less often they smear the surface into hazy, undefined blur. Real cards keep surfaces smooth with a few broad parts, matte and gloss mixed within one object, and grain quiet."
+}

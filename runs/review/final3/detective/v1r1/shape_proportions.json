@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the police car has a compact toy-car body like the reference taxi. The roof light, bumpers and wheels are all in the right relation, with crisp corners at the bumper ends. B: the bike's silhouette merges with the rack and car behind it. A dense blob of rack and wheel sits under the chain area, and the spokes are drawn as many separate wires (thin_share 0.088, above the real range of up to 0.072). Solidity is low at 0.528.",
+   "fix": "Draw the bicycle as a simplified game prop: fewer spokes, a clean frame triangle, and no tangle of rack parts merged with the bike's lower wheel area."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the player body is a swollen, pillow-like rounded square with soft blob corners. The earbud wires hang in long loops (thin_share 0.083, far above the real maximum of 0.023). B: the camera box has flat faces and tight corners. The flash dish and the knob are separate parts in a believable relation.",
+   "fix": "Make the player a flat-faced rectangular box with tight beveled corners. Shorten the earbud cable and tuck it close to the device."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the backpack's pockets bulge somewhat, but the straps stay thin and the rolled mat is a clean cylinder. B: the flippers are smooth paddle shapes with few corners (corner_rate 0.58, just under the real range). That fits a molded rubber fin. Neither silhouette shows a clear generated distortion.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the safe's top corners are rounded into soft blobs, the body reads as slightly swollen, and the feet are stubby pegs. B: the vending machine is a straight-sided box with tight bevels and the right part count: window, shelves, tray and handle.",
+   "fix": "Give the safe tight beveled corners and flat, straight side panels instead of a puffy rounded top."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the bloodhound is a soft organic mass, which is appropriate for a dog, and the ears and legs read clearly. B: the rocking chair keeps thin rails, separate spindles and runners, though the seat cushion is fat. Neither shows a decisive shape error.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the backboard's red frame has soft rounded corners, and the board's lower right edge juts out unevenly. The net forms a dense web of thin cords (thin_share 0.025, just above the real range). B: the magnifier has a clean round lens ring and a simple tapered handle in correct proportion.",
+   "fix": "Draw the backboard as a flat rectangle with tight corners and a thin, even frame. Simplify the net into a few clear cords."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the oil lamp keeps a thin loop handle, a separate chimney, burner and footed base, so the part count is right. B: the flashlight body has no real corners (corner_rate 0, below the real range). The head flares into a rounded blob, and the body is a swollen tube with sausage-like ribs.",
+   "fix": "Draw the flashlight as a straight cylindrical barrel. Give it a crisp-edged metal head ring and a thin, even grip texture instead of bulging ribs."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the book has a clear cover, page block, spine and ribbon tabs. Its cover edges are slightly soft, but the proportions are right. B: the wallet reads as a single flat rounded rectangle (straight_share 0.813 and solidity 0.983, both above the real range). The fold and the two halves barely register in the outline, so it reads as a slab.",
+   "fix": "Show the wallet's two leather halves meeting at a visible fold, with slightly raised edges, so the outline isn't a single slab."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the zip bag's outline is warped. The lower right side bows outward, the plastic puffs like a pillow, and the ring cuts a hole in the silhouette (straight_share 0.863, above the real range). B: the racket has a thin frame and throat and a correctly proportioned handle. The string grid is dense (thin_share 0.259), but it is an expected part.",
+   "fix": "Draw the bag as a flat, straight-edged square sleeve lying flat, with a thin zip strip along the top and no puffed sides."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the sneakers are swollen, with fat pillowy soles and bulging toe caps. The lace area is a lumpy contour, and the two shoes merge into one blob. B: the fedora has a clean crown pinch, a thin flat brim and a narrow band, with believable proportions.",
+   "fix": "Draw slimmer sneakers with thinner, flatter soles and a defined toe. Keep the two shoes separated by a visible gap."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the water polo goal is a tangle of net mesh and thick tube frame (thin_share 0.168, far above the real maximum of 0.072). Side pipes are cut off at the card edge. B: the neck pillow is a single U-shaped form, which suits an inflatable pillow, with a small valve. Its shape is believable.",
+   "fix": "Simplify the goal net into fewer, cleaner cords. Keep the frame posts thin and straight, and show the whole goal without pipes running off the card."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the door knob's back plate is flat with straight sides and tight corners, and the knob is a clean sphere. B: the wreath has a jagged outline made of dozens of leaf points (corner_rate 21.8, far above the real maximum of 9.1; straight_share 0.04). The surrounding ivy adds clutter, and the door panels are secondary to it.",
+   "fix": "Draw the wreath as a smooth ring with a few large, simple leaves and a single bow. Drop the ivy clutter so the door's flat panels read clearly."
+  }
+ ],
+ "pattern": "Generated cards give themselves away in three ways. They swell flat or simple objects into pillowy, rounded masses (zip bag, sneakers, safe top, flashlight). They add extra parts and dense fine detail that real cards simplify away (net mesh, spokes, leaf fringe, rack clutter, cables). And they push silhouette numbers outside the real ranges: thin_share spikes from mesh or wires, and corner_rate either collapses to zero on blob shapes or explodes on jagged foliage."
+}

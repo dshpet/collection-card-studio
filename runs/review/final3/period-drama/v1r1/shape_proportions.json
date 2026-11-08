@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the beach ball is a clean sphere with the expected six gores and a cap. The silhouette is a plain circle, which is why the metrics go out of range, not a defect. B: the dock has stubby square posts, wide planks, a thick rope coil and a life ring hung on a post. Every part is present and in sensible relation. Neither card shows the swollen forms or extra parts seen in the lessons.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the ring box's lid and base swell like pillows. Each corner is a large soft blob, with no straight edges or tight bevels, and a coin is wedged where a ring should sit. B: the pocket watch has a crisp round case, a small crown and a thin chain of evenly spaced open links ending in a T-bar. Its thin parts stay thin.",
+   "fix": "Draw the jewelry box with flat lid and base panels, straight edges and tight beveled corners, a thin lid wall and a ring seated in a slot cushion."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the hatbox is a bare cylinder with a slightly overhanging lid and a thick rope loop for a handle. There is no detail and the silhouette is very simple. B: the pair of sneakers has a believable sole-to-upper ratio and laces, and the toe and heel read correctly. A is the bare, simplified form the generator tends to produce.",
+   "fix": "Draw the hatbox with a shallow lid lip, a thin ribbon or cord handle fixed with small grommets, and a slightly shorter, wider drum."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the pearl bracelet's beads are large and uniform, a single ring of blobs with a tiny clasp. The ring is open, which pushes solidity low and thin share high. B: the folded map lies on flat planes with crisp fold lines, and the magnifier has a thin rim and a straight handle. Its proportions fit a real game card.",
+   "fix": "Draw the pearl strand with smaller pearls in proportion to a wrist and a visible thin thread between beads. Make the clasp a clear, readable size."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: in the cake stand, the lower plate is oversized against the upper one and the stem is a thin rod with a ball finial. The plates read as thick discs and the cakes poke out of the silhouette like bumps. B: the fountain's three tiers step down cleanly, with flat rims and a crisp basin wall, and the water arcs form the expected openings.",
+   "fix": "Draw the two-tier stand with thin, flat plates of closer sizes, a turned stem with small collars, and a modest footed base."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the neckerchief is puffy cloth, but that suits fabric, and its loop, knot with badge, and two tails are all present. B: the folding fan's paper leaf is fine, but the guard sticks are long thin rods that overshoot the leaf on both sides. The rib fan forms a dense comb of bars, giving thin share 0.077, far above the real range.",
+   "fix": "Draw the fan with the outer guard sticks ending flush with the leaf edge, fewer and slightly broader ribs, and a small round rivet at the pivot."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the scroll is a fat tube with a single loose curl at the end and a thick ribbon band, and the seal reads as a blob. Its proportions are stubby. B: the DJ controller is a flat slab with straight edges and tight corners, and the headphones have a thin band and two cups. Its parts are all there.",
+   "fix": "Draw the scroll as a slimmer roll with a visible spiral of several thin paper layers at the end, a narrow ribbon, and a flat wax seal disc."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the graduation cap's board is flat and thin with a crisp corner, and the tassel cord is thin. B: the top hat's crown flares toward the top like a cartoon stovepipe, and the brim is a thick soft roll with no thin edge. Its corner rate is low.",
+   "fix": "Draw the top hat with a straight-sided crown, a flat crisp top edge, and a thin brim curled up only slightly at the sides."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the trunk is a near-solid rectangle with solidity 0.971, above the real range. The straps and corner caps are drawn on the faces, so they barely break the silhouette, and the side handle is a thick loop. B: the suitcase has a thin, open handle loop and rounded but readable corner caps, and its proportions are real.",
+   "fix": "Draw the travel trunk with a slightly domed lid seam, metal corner caps that stand out from the edges, and a thin leather side handle."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the vending machine is a clean box with flat faces, tight corners and small feet, as on a real card. B: the teacup has a wide bowl, a thick looped handle and an oversized flat saucer. The handle is chunky against the cup.",
+   "fix": "Draw the teacup with a thinner, more delicate handle, a slightly taller bowl on a narrow foot, and a saucer only a little wider than the cup."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the fan has a clean leaf edge, thin ribs and a round pivot. B: the parasol's canopy is a swollen dome with sausage-thick ribs. The lace ruffle turns the rim into a bumpy scalloped blob, with corner rate 7.1, above the real range, and the handle is a thick hook.",
+   "fix": "Draw the parasol with a shallower canopy stretched taut between thin ribs, a narrow lace trim, a slim shaft and a small crook handle."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the guitar has a thin neck, a correct headstock and a believable body, and the strap is a thin band. B: the upright piano's silhouette is a near-solid block with straight share 0.71, above the real range. The front legs are thick turned posts, and the top overhang and cheek blocks are heavy.",
+   "fix": "Draw the upright piano with slimmer legs, a lid that overhangs only slightly, a visible keyboard recess breaking the front, and a lighter case outline."
+  }
+ ],
+ "pattern": "Generated cards draw themed objects as swollen, solid shapes with heavy outlines. Domes and rims puff up (the parasol, the ring box, the top hat brim), and thin parts are either thickened into sausages (parasol ribs, hooks, handles) or multiplied into dense combs (fan ribs). Silhouettes come out near-solid with few openings (the trunk, the piano). Real cards keep flat panels, tight bevels, believable part ratios and genuinely thin parts."
+}

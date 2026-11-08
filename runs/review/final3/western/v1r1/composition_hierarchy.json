@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the neck pillow is tilted and fills most of the card, leaving about 11% at the edges, like the tilted ticket and glove on the real cards. B: the sheriff star is small (0.193, at the bottom of the real range), seen straight on, symmetric and dead-center in the concentric rings, with even empty purple on every side.",
+   "fix": "Draw the sheriff star larger, tilted about 20 degrees and turned slightly in 3/4 view, filling most of the card and sitting a little off-center."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the harmonica lies on a diagonal from lower left to upper right. It is wide but short (height 0.473, below the real range), which is normal for a long thin object. B: the fan is open, tilted and fills the upper-middle of the card with a good margin. Both read at once at thumbnail size and nothing competes with either.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the scout jacket is nearly front-on and centered. At thumbnail size the row of four badges on the green sash pulls the eye away from the jacket's outline. B: the cowboy hat is in 3/4 view, tilted, fills the width, and reads as one clean outline.",
+   "fix": "Turn the jacket to a 3/4 angle, tilt it slightly and make it larger. Use fewer, larger badges so the jacket's outline reads first."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the caravan is in 3/4 view, large and low in the card, and the grass runs off the bottom edge, like the real lawnmower card. B: the buoy is narrow (width 0.535, below the real range), perfectly centered and symmetric, seen front-on, with water and clouds filling the space on both sides. This matches the centered, front-on lighthouse in the generated lesson cards.",
+   "fix": "Show the buoy from a 3/4 angle, larger and slightly off-center. Let the water run off the bottom edge and leave less empty sky on the sides."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the sneakers sit low, in the bottom half. The orange wall and cream floor split the card with a hard horizontal line, leaving a big empty top half, and the subject is short (0.487) with a 0.033 edge margin. B: the boots stand upright, fill the middle of the card and sit on a smooth green gradient.",
+   "fix": "Draw the sneakers bigger and higher in the card, angled toward the viewer. Use a soft gradient background with no hard horizon line."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cactus is front-on, symmetric and dead-center, a narrow column (width 0.567, below the real range) with sunburst space on both sides and pebbles around the base. B: the spring duck is in profile, off-center and slightly wider. Both sit on a sand patch with stones.",
+   "fix": "Turn the cactus to a slight 3/4 angle and move it off-center. Make it wider, with its arms reaching toward the card edges, and drop the scattered pebbles."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the bandana is tilted, off-center to the upper left, and its knot reaches toward the right edge, like the real tilted cards. B: the graduation cap is level and centered on concentric rings and is short (height 0.506), with a lot of empty ring space above and below.",
+   "fix": "Tilt the graduation cap about 15 degrees, show it in 3/4 view and make it larger so it fills more of the card's height."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the boxing gloves sit low on a table, are cut off at the left edge (width 0.951, margin 0.021, both outside the real range) and leave a large empty blue wall above. B: the saddle is centered on the fence with clear margins, and the fence rails run off both sides as context.",
+   "fix": "Draw the boxing gloves fully inside the card, larger and centered higher, with a small margin on every side and less empty wall above."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the rocking chair is in 3/4 view, fills the card and rises nearly to the top. B: the covered wagon is short (height 0.556) and sits in the upper middle. A wide strip of empty dirt fills the bottom third and the drawbar pulls the eye toward the lower right.",
+   "fix": "Draw the wagon larger and lower in the card, filling more of its height, with less empty ground in front."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "B is the same lighthouse as the real lesson card: tight framing, cut off by the bottom edge. A: the windmill is shown whole, grounded in a grass field. Its wheel sits upper-left and the tail vane leaves a lot of empty sky, so the weight is lopsided. The generated lessons share this whole-object-on-ground staging.",
+   "fix": "Frame the windmill closer so the tower is cut off by the bottom edge, and make the wheel larger and nearer the center."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a full scene. The campfire competes with a large teapot on a stone, a log cabin cut off at the top left, pine trees and grass tufts, so the first read is split. B: the coin binoculars are one clear hero, cut off at the bottom like the real lighthouse, with a soft city behind them.",
+   "fix": "Show only the campfire, larger and centered. Remove the teapot and cabin, and use a simple soft background."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the phone booth is in 3/4 view, tall and narrow (width 0.512), against a patterned wall. B: the trophy is perfectly symmetric, front-on and dead-center on a blue pedestal under a spotlight. This is the centered, on-a-base staging seen in the generated lesson cards.",
+   "fix": "Show the trophy at a 3/4 angle with a slight tilt, larger and off-center, and remove the pedestal and spotlight."
+  }
+ ],
+ "pattern": "On composition, generated cards place the whole object front-on or symmetric, dead-center, with even empty space on every side. They often stand it on a base, plinth or patch of ground and add extra props. Real cards tilt the hero or use a 3/4 view, push it close to an edge or let an edge cut it off, and keep a single hero with nothing competing."
+}

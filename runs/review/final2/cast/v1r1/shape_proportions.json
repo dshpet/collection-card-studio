@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the man on the scooter has a compact torso and the handlebar is a thin straight bar. The chicken holding the camera has a clean contour. B: the detective's hat brim and coat are flat and believable, and the cake stand is a thin plate on a narrow stem. Both silhouettes read as plausible cartoon proportions. B's corner_rate (7.94) is barely over the real range, which is not enough to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the bow stays a thin curved rail with a hairline string and a thin arrow shaft. The fleece outline is lumpy but it frames a single clear body. B: the sheep's legs are thick bent sausages and the cow's body is a swollen bean with stubby legs. The outline is wavy all round, with no straight runs (straight_share 0.129, corner_rate 9.69, above the real range).",
+   "fix": "Draw the sheep and cow with slimmer, straighter legs and a firmer body outline with fewer bumps. Keep the magnifying-glass handles thin."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the thermos is a straight cylinder and the mug has a straight wall and a thin handle. The man's shoulder and arm make long clean runs (straight_share 0.319). B: the table legs are curly blobs and the pig's ribbon and curled tail are fussy, lumpy edges. The man's legs taper to small boots under a large top half. The outline is busy, with corner_rate 9.97, well above the real range.",
+   "fix": "Draw the tea table with straight, simple legs. Give the pig a smooth body outline with a single small bow. Give the man even proportions from shoulders to boots."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the dancing sheep's fleece is a scalloped mass and the cow has a clean, readable pose and legs. B: the pig's head is large and rounded, and the sheep is cropped and blurred at the bottom (a mask artifact). Both measure inside the real ranges, and on shape alone neither one is clearly toy-swollen beyond the other.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the man has a broad but believable torso and the hat brim makes a crisp, flat line. The pig is plump but its contour is clean. B: the raised arms of the pig and cow are short, thick sausages ending in mitten blobs. The two bodies merge into one swollen mass with a wavy edge (corner_rate 9.31, above the real range).",
+   "fix": "Draw the pig and cow with slimmer raised arms and clear separate hands. Separate their two bodies with a clean gap or a clear overlap line."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "B: the caravan shell is rounded but planar, with a straight lower edge and a thin, straight tow bar (straight_share 0.424, solidity 0.90, inside the real range). A: the drum lugs are swollen gold pills and the bass drum merges with the floor toms into one lumpy mass. The cymbal stands make a thin, spiky fringe far beyond the real cards (thin_share 0.056, against a real maximum of 0.014, and corner_rate 5.90, above the range).",
+   "fix": "Draw the drum lugs as small, slim metal tabs. Keep each drum a clean cylinder with flat heads, clearly separated from its neighbours. Use fewer, simpler stands."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the plate is a flat glass disc with an even rim, and the fruit sits as a compact mass (solidity 0.946). B: the wheel's handles are bulbous turned knobs, the spokes thicken into sausages toward the hub, and the stand is a chunky wedge. The contour is all knobs and gaps (solidity 0.569, below the real minimum, and corner_rate 6.79, above the real range).",
+   "fix": "Draw the ship's wheel with slim, straight spokes and slender handles that taper only slightly. Draw a thin flat rim and a narrow, simple post."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "B: a single cow holds a tray with straight rim edges, and the outline is simple, with long runs (straight_share 0.299, corner_rate 5.46). A: the rooster's feathers, the scarf knot and the hay bale make a ragged, many-cornered outline (corner_rate 11.4, thin_share 0.012, both above the real range). There are also extra props stacked around the cow (bucket, hay, rope), and the cow's body is a swollen pear.",
+   "fix": "Draw the hay bale as a block with flat faces and crisp edges. Give the rooster a smooth body outline with a few clear feather groups. Give the cow a less pear-shaped body."
+  }
+ ],
+ "pattern": "Generated cards give themselves away by lumpy, many-cornered outlines. Bodies swell into beans and pears, and limbs and handles thicken into sausages with mitten or knob ends. Extra props pile up and merge into one mass. Real cards keep long straight runs, thin rails and handles, flat planes and fewer, clearly separated parts."
+}

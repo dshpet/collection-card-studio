@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the neck pillow is one pure saturated blue, and its shadow folds are just a darker version of the same blue with no hue shift. It sits on a flat pink ring backdrop, a cool hero on a warm ground, which is the reverse of most real cards. B: the gold star on purple rings is a warm hero on a cool backdrop, the real-card norm. The star has few hue families, but the gold is still believable as metal.",
+   "fix": "Make the pillow a softer, slightly greyed blue fabric. Let the folds shade toward a deep violet-blue instead of a darker pure blue. Use a cooler, less candy-pink backdrop."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the harmonica is a near-neutral silver on a pink wave backdrop. Its shadow picks up a little pink, which is believable for chrome, and real cards do include neutral grey heroes (the computer, the camera). B: the fan's paper is pure, fully saturated violet-magenta, above the real range for subject chroma, and every pleat is the same hue at full strength. The ribs are a flat pinkish tan. The card is pushed to pure hue.",
+   "fix": "Paint the fan paper a muted lilac-purple with some greyer, darker pleats in shadow. Make the wooden ribs a natural mid-brown wood."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the jacket's green sash repeats the green burst backdrop almost exactly, so hero and background share a hue, which real cards almost never do. The orange collar and cuffs and the yellow badges add more warm accents on the tan body. B: the brown felt hat with a red band on a cyan burst is a clean warm-hero, cool-backdrop pair, with brown shadows that stay rich.",
+   "fix": "Change the sash to a color that is not on the backdrop (deep red or navy), or move the backdrop to blue or teal. Keep the jacket a muted khaki."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the caravan body is a warm cream, not a cool neutral white. That is the same cream push the generated computer cards show. It sits on a loud magenta-violet backdrop that is louder than the hero (background chroma 0.199, above the real range), plus an orange stripe and a lime lawn. B: the red buoy on a blue sea with white clouds matches the real lighthouse palette, and its shadow shifts to a related crimson-purple.",
+   "fix": "Paint the caravan an off-white that turns cool grey-blue in shadow. Calm the purple backdrop to a softer, less saturated violet."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the sneakers carry blue, lime, teal, pink, orange and white accents on an orange and cream set, about 5.5 hue families, above the real range. The laces and sole stripes are confetti-colored. B: the brown leather boots on a green backdrop keep a believable local leather color, dark shadows and one muted gold stitch accent.",
+   "fix": "Paint the sneakers mostly one blue with white soles and a single accent color on the laces. Drop the rainbow trim."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: a green cactus with a pink flower on a yellow burst over warm sand, so the card leans warm. B: a yellow duck with red accents on a green burst over the same sand, with a blue base. Both keep their local colors and both stay inside the real ranges. My lens gives no clear reason to pick one.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the graduation cap is navy-blue on a blue-cyan ring backdrop, so the hero repeats the backdrop hue, and the whole card is cool (warm share 0.049, below the real range). Only the gold tassel and band break it. A: the red polka-dot bandana on a cyan diamond backdrop is a clean complementary pair. Its red is loud, but the folds shade to a related deep crimson.",
+   "fix": "Put the navy cap on a warm backdrop, such as a golden-yellow or orange burst, so the hero does not share the background's blue."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the boxing gloves are a pure, fully saturated red (subject chroma 0.18, above the real range), and their highlights slide to orange-pink rather than a whiter sheen, so red and orange run through the whole hero. The orange wood floor adds more of the same warmth. B: the saddle is a believable leather brown with dark brown shadows and a grey steel stirrup on a cyan stripe backdrop.",
+   "fix": "Paint the gloves a slightly deeper, less candy red leather. Give them pale, near-white highlights and dark wine-red shadows, and cool the floor toward a paler, greyer wood."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the rocking chair is saturated orange wood standing on an orange plank floor of the same hue, with a lime cushion. The wood shades orange-to-darker-orange with no cooler shift. B: the covered wagon's cream canvas and brown wood sit on brown dirt against a green stripe backdrop. Its red wheels are the one accent, and the shadows keep a rich brown.",
+   "fix": "Make the chair a natural honey-brown wood with darker brown shadows. Make the floor a paler, greyer wood so it does not repeat the chair's orange."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "B: the lighthouse is the same real card shown in the lessons, with cool grey-white stone, crimson red, and blue sea and sky. A: the windmill blades are a warm cream rather than a cool white, the tower is red-orange, and the field is saturated golden grass, so the lower half of the card is pulled warm and orange.",
+   "fix": "Paint the windmill blades a cool off-white with blue-grey shadows. Mute the field to a softer straw color with some green-grey in it."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the campfire scene runs about 5.7 hue families (log cabin, fire, red-maroon kettle, green trees, grey stones, blue sky). The stones, ground and logs are all washed orange, so the shadows go orange-brown everywhere (shadow chroma 0.573, below the real range). B: the steel-blue viewing binoculars sit on a pale blue city and repeat its hue, but the shadows stay a related deep blue.",
+   "fix": "Keep the fire as the only orange. Paint the stones cool grey with blue-grey shadows and the ground a muted brown. Cut the extra props' colors."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: a red phone booth on a green backdrop, a complementary pair, with the red shading to a related dark red. B: a gold trophy on a purple spotlight backdrop with a blue table, a warm hero on a cool ground. Both fit the real-card hue roles, and the numbers sit inside the real ranges.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards push local colors toward pure, candy hues. Off-white turns cream, leather and wood turn orange, and red and purple go to full saturation. Shadows are just darker versions of the same hue instead of shifting to a cooler, related color. Floors and props often repeat the hero's hue or warmth, and some cards pile on extra accent hues."
+}

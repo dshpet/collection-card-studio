@@ -1,0 +1,96 @@
+{
+ "issues": [
+  {
+   "issue": "Dark, realistic mahogany tabletops. The wallet (p08) and the evidence bag (p09) sit on dark brown planks with photographic grain and plank seams. That makes the whole card low-key and dull. The real Travel Book card uses bright, warm orange wood with a few broad, stylised grain bands. This is the strongest tell in the set.",
+   "specialists": [
+    "value_contrast",
+    "staging_detail",
+    "color_palette",
+    "surface_finish"
+   ],
+   "instruction": "Draw wooden surfaces as bright, warm honey-orange wood with a few broad, soft grain bands, lit evenly by daylight."
+  },
+  {
+   "issue": "Fine added surface detail and hard specular highlights. The wallet has stitch dashes, leather pores and rivets. The flashlight has hard white streaks on the lacquer and brushed lines on the ring. The magnifier glass has a single white dot highlight. Real cards keep surfaces smooth, with one broad soft sheen.",
+   "specialists": [
+    "surface_finish",
+    "lighting_shading",
+    "edges_linework"
+   ],
+   "instruction": "Paint materials smooth, with one broad soft highlight per surface. Draw leather as plain soft leather and metal as a smooth gradient band."
+  },
+  {
+   "issue": "The hero repeats the backdrop's hue. The magnifier lens is tinted the same green as its ring backdrop, so the object separates from the background by outline alone. Only one card has this.",
+   "specialists": [
+    "color_palette",
+    "value_contrast"
+   ],
+   "instruction": "Make glass a clear, pale blue-white so it stands apart from the backdrop."
+  },
+  {
+   "issue": "Overruled: several specialists flagged real cards as generated because they look busy or puffy. These were the bike on the car rack (p01 B), the ivy door with the wreath (p12 B), the sneakers (p10 A), the earbud player (p02 A), the basketball hoop (p06 A) and the oil lamp (p07 A). Real cards in this game do allow full scenes, glows behind the hero and soft, swollen forms, so those fixes are dropped. The framing and size calls on the police car and the magnifier can't be fixed with a note either.",
+   "specialists": [
+    "staging_detail",
+    "shape_proportions",
+    "composition_hierarchy",
+    "edges_linework",
+    "viewpoint_depth"
+   ],
+   "instruction": "No change. Keep the current scene density, glows and soft forms."
+  }
+ ],
+ "style_text": "",
+ "cards": [
+  {
+   "pair": "p01",
+   "keep": true,
+   "note": "Squad Car: Keep. The lighting, sky, road and finish match the real taxi-style cards."
+  },
+  {
+   "pair": "p02",
+   "keep": true,
+   "note": "Audio guide: Keep. The camera's light, ring backdrop and shapes match the real camera card. The faint grain is minor."
+  },
+  {
+   "pair": "p04",
+   "keep": true,
+   "note": "Steel Safe: Keep. The navy body and pink studio floor sit next to the real vending machine without a clear tell."
+  },
+  {
+   "pair": "p05",
+   "keep": true,
+   "note": "Bloodhound: Keep. The glow behind the dog also appears on real cards (the oil lamp), and the fur and grass are in range."
+  },
+  {
+   "pair": "p06",
+   "keep": false,
+   "note": "Hoop Shot: Magnifier: Make the lens glass clear pale blue-white instead of green. Replace the white dot on the glass with a soft curved reflection along the upper-left edge. Keep the silver ring, the red handle and the green ring backdrop."
+  },
+  {
+   "pair": "p07",
+   "keep": false,
+   "note": "Lantern: Flashlight: Paint the red barrel as satin red with one broad soft highlight along the top, in place of the hard white streaks. Make the head ring a plain smooth silver band. Keep the flashlight, the ribbed grip, the yellow beam and the cyan rays."
+  },
+  {
+   "pair": "p08",
+   "keep": false,
+   "note": "Travel Book: Wallet: Replace the dark wood planks with bright, warm orange wood with a few broad, soft grain bands. Paint the wallet as smooth soft-brown leather with no stitching or grain, and the badge as one plain gold shape with a soft sheen. Keep the wallet, the green card and the top-down view."
+  },
+  {
+   "pair": "p09",
+   "keep": false,
+   "note": "Evidence Bag: Replace the dark mahogany planks with bright, warm honey-orange wood with a few broad, soft grain bands. Give the bag a soft, slightly darker shadow on the wood toward the lower right. Keep the bag, the blue zip and the gold ring."
+  },
+  {
+   "pair": "p10",
+   "keep": true,
+   "note": "Sneakers: Fedora: Keep. The felt hat on a purple studio floor is in line with the real sneaker card's plain two-tone set."
+  },
+  {
+   "pair": "p12",
+   "keep": true,
+   "note": "Doorknob Print: Keep. The close crop, the brass finish and the hallway behind the door all match the real cards."
+  }
+ ],
+ "summary": "Close. Of the 10 generated cards, 6 could pass as-is: the squad car, camera, safe, bloodhound, fedora and doorknob. The one systematic tell is the dark, photoreal wood tabletop on the wallet and the evidence bag. The real cards use bright, stylised orange wood, so those two cards need a new surface. The flashlight and magnifier need only light finish fixes: softer highlights, and clear glass instead of green. The specialists were unreliable. Their most confident calls on p01, p10 and p12 pointed at the real card, mostly because real cards in this game do use busy scenes and soft, puffy forms. They were right about the wallet, bag and flashlight."
+}

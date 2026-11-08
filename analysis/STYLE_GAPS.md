@@ -11,6 +11,7 @@ Why the first cards looked off, how that was measured, and what fixed it. Human 
 - **The plan decides most of the card.** Batch grades rose from 3.63 to 3.97 (not blind): half from the character cards, most of the rest from swapped objects; the same objects redrawn moved by +0.11. Words do not hold a shape or a camera; a Blender model does.
 - **Edits by note are a gamble.** The director judged first-round edits better than their drafts 36 of 85 times and second-round ones 0 of 11, so an edit stays only if it wins and the pipeline reviews once.
 - **The game's cast stays itself on new cards** when drawn in one go with its real cutouts attached.
+- **The grain was in the prompt.** One line, large surfaces smooth with detail in the parts, closed most of the flat-surface gap on the twins at no CSD or gloss cost; richer planner colors brought twins closer by CSD on 29 of 40. Both are in the final (overnight arms below).
 - **Codex stays the generator on evidence.** On the same twins, prompts and references, the director preferred Codex to Nano Banana Pro 11 to 0 and to Qwen-Image-2.1 39 to 1.
 
 ## How the gap is measured
@@ -153,6 +154,27 @@ A UI designer with an art background, new to the project (`experiments/outside_r
 - **Her feedback after the session, relayed by the producer:** ours look grainier and more textured; the style is close but not theirs. Real cards keep large surfaces smooth and put their detail into parts, colors and silhouette; ours render the material (felt nap, leather grain, fabric weave) on simple shapes. Pixel measures at 430×480 do not separate the two, so this is judged by eye.
 - **Cards:** mean grade 3.1 of 5 on the 75 genre cards (41 of them a 3, "close"). She flagged 9 as broken, all on perspective or construction: brims that do not match their crowns, tables and floors at a different angle from the object. Cast cards scored best, 3.5.
 - **Sets:** every variant 3 or 4 of 5, "could stand in the game with small issues". She kept Detective, Horror and Period Drama.
+
+## Overnight arms, 2026-11-08
+
+One change per arm against a shared control, then one combining round (`experiments/night.py`, readings in `runs/night/read.json` and `runs/param/compare_n0_*.txt`). Twins arms redraw the forty final-style twins (`runs/twins40`); the blockout arms redraw 24 pre-final cards over their Blender models. Rule: adopt only if no other measured field moves away from the real cards and twin CSD does not drop; texture only where pixels and eyes agree. Flat share is the share of surface pixels with local lightness deviation under 0.004 (`experiments/smooth_check.py --flat`), the pixel measure of the grain the outside artist saw; eyes are the judge model's pairwise readings with the real card as the target.
+
+| Arm | What changed | Evidence | Verdict |
+|---|---|---|---|
+| Smooth, first wording | material line: "by its color and sheen ... large surfaces stay smooth, no grain, weave, nap or pores" | flat-share gap −0.109 to −0.032 (nearer on 22 of 40); eyes less textured; but glossier by eye (17/8 to 21/4 more/less than real), shadow depth away (p 0.05), CSD closer on 15 of 40 | dropped |
+| Smooth, no "sheen" | the same line without "and sheen" | flat-share gap −0.109 to −0.030 (nearer on 27 of 40, p 0.002); eyes 9/9 to 3/14 more/less textured than real; gloss by eye unchanged (18/6 to 19/5); CSD closer on 21 of 40 (0.908 to 0.906); no field away at p < 0.05 | **adopted** for cards drawn from text |
+| The same over blockouts | the line in the blockout prompt, with the fill below | less textured by eye 13 to 3 and by pixels; but glossier by eye 14 to 0 while pixel gloss fell | blockout prompt unchanged |
+| One camera | "every rim, brim, opening and tabletop opens by the same amount" | no field moved; CSD closer on 16 of 40; no measure reads perspective | the producer's call, blind page |
+| Planner colors, dark parts in rich hues | hero colors with no black or dark brown | CSD closer on 14 of 40; glossier (p 0.01) | dropped |
+| Planner colors, rich | also: the main body takes a rich, saturated hue, white and grey only on small parts | CSD closer on 29 of 40 (0.836 to 0.857), lightness closer on 26 of 40, no field away | **adopted** in the planner |
+| Fill | blockouts framed at the real cards' median size per category (×1.04 to ×1.12) | subject area up on 24 of 24, overshooting the real median (0.354 against 0.324); more texture by eye 10 to 2 | **adopted at half**, categories 2-4 only (×1.035, ×1.05, ×1.06) |
+| Perspective | the camera line, and Blender models for broken cards without one, on the nine pre-final cards graded broken | no model or pixel judge reads construction | the producer's call, blind page |
+
+Palette arms replan colors from colorless subjects, so they sit below the control by CSD (0.836 against 0.908); they are compared with each other. Combined, rich colors with the smooth line held CSD (21 of 40); its two single-field moves ran opposite to the same arm on the control, which reads as noise among 55 fields.
+
+Research beside the arms (`research/README.md`): a one-camera fit (GeoCalib) does not find the cards called off in perspective; blockout drawings keep the render's outline whether broken or not, so breaks sit in the render or a surface the drawing adds; edge-preserving smoothing after drawing restores flat share but not CSD. A style LoRA on the reference cards is feasible in about half a day and waits on the producer.
+
+The final sets (`runs/final3`) are drawn with the adopted smooth line, rich colors and fill. `runs/final2` holds the same plans drawn without the smooth line, stopped early and resumable. In the final, a plan still decided the weak cards: all nine Pearl Necklace drawings failed the style check and the plain Hat Box measured too little detail, and both passed once the plan changed (`runs/final3/README.md`). The cast cards are `runs/final2/cast`: their prompt has no material line.
 
 ## Limits
 

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: light pink, high-key field with a mid-dark blue pillow. The darkest accents are a thin crescent inside the ring and the underside seam, which is within real range. B: the purple field drops the whole card into low key (mean 0.49, below the real range). Corners go near-black in the lens, and the gold star sits lighter than its ground (gap +0.28). No real card is a light hero on a dark field.",
+   "fix": "Make the background a light, bright purple with only a soft lighter area behind the star, not dark corners. Keep the star's body a middle tone, so the background is the lightest large shape on the card."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the pink wave field and silver harmonica both fall into the same two middle-grey bands. The hero barely separates by value (gap -0.01), and overall contrast is flat (rms 0.08, below real). The body has a large pale highlight but no dark base under it. B: light yellow field with a white glow behind the fan, and dark purple pleats alternating with light ribs. This is a clear dark-hero-on-light-ground grouping like the real cards.",
+   "fix": "Lighten the pink background around the harmonica into a soft pale glow. Give the harmonica a darker steel underside and darker comb holes, so it reads as a darker shape against a lighter field."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: deep green sunburst with the card's corners going near-black (vignette 0.134, above real). The pale jacket glows against it, and the near-black sash cuts a big dark diagonal through the hero. B: light blue sunburst with a white centre and a middle-dark brown hat on top. This is the normal light-ground, darker-hero split.",
+   "fix": "Brighten the green sunburst, especially in the corners, so the edges stay middle-light instead of dark. Make the sash a middle green, not near-black."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: purple field with a lighter halo ring behind a near-white caravan. The darkest accents are small: windows, wheel and grass shadow. B: a large dark red buoy fills the centre. The sky corners are dark blue while the clouds are bright white (vignette 0.101, above real), so the hero is a heavy dark mass with a lit bell on top.",
+   "fix": "Lighten the sky toward the corners and keep the buoy's red a middle tone with a lit front face, not a dark block. Add a soft light area in the water around its base."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: orange wall and pale yellow floor, both light. The blue sneakers are middle-dark with white soles, and contrast stays moderate. B: the brown boots are near-black in the lens and set against a bleached white halo on the green. Gap -0.32 and rms 0.19 are both above the real range, so the hero is too dark against too bright a glow.",
+   "fix": "Make the boots a warm middle brown with lit fronts and toes. Soften the bright patch behind them into a gentle light green, not a white glow."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the yellow sunburst is bleached nearly white behind the cactus (mean 0.80, above the range for these cards), and the dark green cactus sits as a dark column on it (gap -0.27). B: a light duck on a middle-dark green burst, with low contrast (rms 0.116), slightly flat. A pushes harder away from real.",
+   "fix": "Tone the sunburst down to a warm yellow with visible rays, not white. Lighten the cactus to a fresh middle green with lit ribs."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: an even light cyan diamond field with a middle-dark red bandana and white dots. The grouping is simple and within range. B: a near-black navy cap board and crown sit on a bright glowing disc inside concentric rings (gap -0.31, beyond real). The darkest area on the card is the hero's whole top.",
+   "fix": "Make the cap a lighter royal blue with a clearly lit top board. Replace the bright ring halo with a soft, even light blue background."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the top half is a dark blue striped wall and the bottom a light wood floor, so the card's centre and upper area are darker than its lower corners (vignette -0.10, outside real). The red gloves sit as middle-dark masses with deep black under-shadows. B: light cyan stripes and light wood rails, with a dark leather saddle. The saddle is darker than real (gap -0.28), but the field stays bright.",
+   "fix": "Lighten the blue wall to a bright sky blue so it matches the floor's lightness. Soften the black shadows under the gloves to a middle tone."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: dark blue stripes at the top and a light wood floor, with an orange chair in clear light and middle groups. B: the green wall and brown dirt merge into one mottled middle grey, and the ground in the lens is full of speckle. Only the white canvas stands out, and overall contrast is low (rms 0.116).",
+   "fix": "Make the ground a clean, light sandy tone with one soft shadow under the wagon. Darken the wheel rims and the wagon bed slightly, so the hero has a clear dark accent under the white canvas."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "B matches the real lighthouse card's value pattern: middle sky, white clouds, a dark red gallery band and a light stone tower. A: the near-white windmill wheel is the brightest large shape and is set high on the card. The golden field is also light, so the whole card runs high-key (mean 0.738, above real), and the only dark mass is the narrow red tower.",
+   "fix": "Give the windmill blades soft grey shading on their undersides and tone the wheat field to a warmer middle gold. Keep the sky the only large light area."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the warm campfire scene holds middle values with the fire as the light centre and dark logs and teapot around it, which is within range. B: the city and sky bleach toward white in the lens (mean 0.76, above real). The middle-dark blue viewer stands against this washed-out ground with a large dark-hero gap (-0.25).",
+   "fix": "Make the sky a deeper clear blue and the city towers a middle blue, not pale haze. Light the viewer's front face, so it is not a dark silhouette."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: green field with a light halo behind a red booth, which is a dark-hero but conventional grouping. B: dark purple corners (vignette 0.096) and a spotlight cone over the trophy pull the card into low key (mean 0.578, below real), with a dark table edge across the bottom. It reads as a staged spotlight rather than an even card.",
+   "fix": "Remove the spotlight beam. Make the background an even, bright purple with only a gentle light area behind the trophy, and lighten the corners and the table."
+  }
+ ],
+ "pattern": "Generated cards drift to the ends of the value range where real cards stay middle-to-high key with even fields. They tend to go one of three ways. Some go dark-key, with dark corners or a spotlight cone (star, trophy, buoy). Some put a near-black hero on a bleached white glow or concentric ring halo (cap, boots, viewer, cactus). Some flatten into one mid-grey band with low contrast, where the hero doesn't separate by value (harmonica, wagon ground)."
+}

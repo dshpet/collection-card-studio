@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the neck pillow sits on pink concentric rings whose bands are soft and blotchy near the corners, and the background detail (0.0159) is above the real range. B: the sheriff star sits on clean purple rings with even steps and a quiet tone-on-tone look, like the real field cards.",
+   "fix": "Plain pink background with evenly spaced, crisp, tone-on-tone concentric rings; no blotches or haze in the corners."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "A: the harmonica is on even pink tone-on-tone waves with no hotspot. B: the fan is on yellow waves with a bright white-yellow glow pooled behind its center, like the boosted halos on the generated lesson cards. Both fields are otherwise quiet.",
+   "fix": "Even yellow wavy pattern across the whole card, tone-on-tone, with no bright glow behind the fan."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the scout jacket is on a green sunburst with many thin, tightly packed rays and a glowing center, the same fine-ray burst seen on the generated glove and camera lessons. B: the cowboy hat is on a blue sunburst with fewer, broad rays, like the real glove card.",
+   "fix": "Green sunburst with about 16 wide, soft rays in two close greens; no bright glow at the center."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the caravan stands on a grass strip dotted with evenly scattered small tufts, but behind it is a purple concentric-ring graphic field, so a real ground is mixed with an abstract backdrop. B: the buoy sits in rippling water under a cloudy sky, a consistent category-1 'in the water it floats in' scene with large, quiet shapes.",
+   "fix": "Put the caravan on a few metres of plain grass meadow with a soft sky behind; no purple ring pattern and no scattered grass tufts."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the sneakers are on a plain two-tone floor and wall (category 2) with soft cast shadows. B: the boots are on a plain green gradient with a soft light pool behind (category 2/3). Both backdrops are quiet and empty, so neither breaks the rules on this vector.",
+   "fix": ""
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the cactus grows from a sand mound with two pebbles at its base, which is where a cactus lives. B: a spring-rider duck sits on the same desert sand disc with the same pebbles left and right under a sunburst. A playground toy has been put in a desert, and the pebbles are invented props it would not have.",
+   "fix": "Place the spring-rider duck on a plain rubber playground mat or a plain floor in the backdrop colour; no sand and no pebbles."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the bandana floats on a quiet cyan harlequin pattern. B: the graduation cap floats on quiet blue concentric rings. Both are clean category-1 fields with similar low detail, and nothing is invented.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the boxing gloves rest on a wooden floor in front of a blue plank wall and are cut by the left card edge, so the shot is close and in place, like the real cropped lighthouse and desk. B: the saddle sits on two fence rails, but behind the fence is an abstract cyan stripe field rather than a place. The whole saddle sits in mid-card with nothing cut by the edge.",
+   "fix": "Show the saddle close up on a wooden fence rail in a ranch yard with a plain sky behind; let the card edges cut the rails and the stirrup."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "A: the rocking chair is on a plank floor in front of a blue striped wall. B: the small, whole wagon is on a dirt floor sprinkled with evenly scattered pebbles in front of a green striped wall. The scattered pebbles are invented small detail, but the evidence is weak.",
+   "fix": "Plain dirt floor with no pebbles; the wagon larger and closer, filling the card."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the windmill is shown whole and centred on a prairie, with grass blades, scattered rocks and clouds, and the full tower is visible. B: the lighthouse is cropped by the bottom edge, close and central, with quiet sky and clouds; it matches the real lighthouse lesson exactly.",
+   "fix": "Show the windmill close up so the card's bottom edge cuts the tower; plain golden grass with no rocks, plus sky and a few soft clouds."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the campfire is crowded with invented props: a log cabin with a lit window, pine trees, a coffee pot on a stone, flying embers, scattered pebbles and grass clumps. That is many small shapes. B: the coin binoculars are close and cut by the bottom edge, on a balcony with a soft city skyline, a few large quiet shapes.",
+   "fix": "Show only the campfire close up on bare ground with a soft dusk sky behind; no cabin, no kettle, no pebbles or grass tufts, and let the card edge cut the stone ring."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the phone booth stands on a green floor in front of a wall printed with large pale suitcase icons. The motif has nothing to do with the subject and competes with the booth, and the detail (0.0187) is above the real range. B: the trophy is on a blue pedestal under a soft purple spotlight, a simple backdrop with a light pool.",
+   "fix": "Plain green wall and floor behind the phone booth with a soft pool of light behind it; no suitcase pattern."
+  }
+ ],
+ "pattern": "Generated cards give themselves away in three ways. They show the whole object, small and centred, where the real cards move in close and let the edge cut the object. They invent props and small scattered detail, such as pebbles, grass tufts, a cabin or a kettle. And they mix staging categories: a real ground in front of an abstract graphic field, or a backdrop motif that has nothing to do with the subject. Their backdrops also add a boosted glow behind the hero and use fine, dense sunburst rays."
+}

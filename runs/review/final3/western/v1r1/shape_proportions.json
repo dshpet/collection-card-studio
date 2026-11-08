@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the neck pillow is one swollen tube with a small teardrop hole, and its outer contour is a single soft blob with no defined ends or seam. Its solidity of 0.906 is near the top of the real range. B: the star's points are crisp and straight-edged, and the ball tips are cleanly separated, like a real badge.",
+   "fix": "Draw a U-shaped travel pillow with a wide, open gap between the two arms. Make the tube the same thickness all the way around, and give the two ends clear rounded caps."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the harmonica's top cover is domed like a pillow, and the left end cap bulges in the silhouette. Its solidity of 0.985 is above the real range. B: the fan's panels are flat with straight edges, and the ribs stay thin and evenly spaced.",
+   "fix": "Draw the harmonica cover as a flat metal plate with straight edges. Give the ends tight, small bevels instead of a puffy dome."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the jacket's sleeves are short and stubby, and the cuffs are fat rings, so the body reads boxy and toy-like. B: the hat's brim is a thin, curled plane and the crown has a believable pinch, matching real proportions.",
+   "fix": "Draw the jacket with full-length, slimmer sleeves and thin cuffs. The shoulders should slope naturally."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the caravan has a straight roofline and a flat side, with a thin hitch and jack stand, which is believable. B: the buoy is stacked toy cylinders with a thick ring around the bell, and the silhouette has a splash blob at the base.",
+   "fix": "Draw the bell buoy as a float with an open frame tower made of thin metal bars. Hang the bell inside the frame, and keep the rails thin."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the sneakers have overinflated, chunky soles and short, fat uppers, and the laces are thick sausages. B: the boots have true proportions, with a narrow shaft, a pointed toe, a heel block and thin spurs.",
+   "fix": "Draw the sneakers with a thin, flat sole and a longer, lower upper. Use thin, flat laces."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cactus arms are thick, sausage-like tubes, and the oversized flower makes the plant read like a toy. B: the spring rider has a thin coil spring and a flat base plate with straight edges, and its parts relate correctly.",
+   "fix": "Draw the cactus arms slimmer than the trunk, bending up at a crisp elbow. Keep the flower small at the top."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the bandana triangle and knot read as real cloth. B: the mortarboard is a flat board with fairly crisp corners, and the tassel cord is thin. Both silhouettes fall inside the real ranges, and neither shows swelling.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the boxing gloves merge into one bulbous blob, with no defined cuff or thumb separation in the silhouette. Their corner rate of 0.39 is below the real range, and their solidity of 0.951 is high. B: the saddle has separate horn, seat, fender, strap and stirrup, and the stirrup has an open hole.",
+   "fix": "Draw each glove with a clearly separate thumb and a straight, cylindrical wrist cuff with a laced or strap edge. Keep the two gloves visibly apart."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the rocking chair's spindles, rockers and arms stay reasonably thin, and its part count is complete. B: the wagon has a tiny bed under oversized wheels, and the canvas cover is a boxy pillow with flat ends, giving toy proportions.",
+   "fix": "Draw the wagon bed longer than the wheel diameter. Make the canvas cover flare outward at both ends over thin hoops."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "B matches the real lighthouse card exactly. A: the windmill's tower is a thick, solid, tapered block where a farm windmill has a thin open lattice, so the thin parts are fattened into a column.",
+   "fix": "Draw the windmill on a tall, thin, open steel lattice tower made of narrow crossed struts. The sky should show through the tower."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the campfire logs, stones and kettle have distinct parts, and the kettle has a thin handle and spout. B: the viewer head is a swollen, soft blob with puffy cylinders on each side, and the yoke and post are thickened.",
+   "fix": "Draw the coin-operated viewer head as a boxy metal housing with flat faces and tight bevelled corners. Use a slim yoke arm and a narrow post."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the phone booth body is a plain slab, with solidity of 0.969 above the real range and a coarse window grid with few panes. B: the trophy has a thin, curled handle loop, a narrow stem and a stepped base, matching real proportions.",
+   "fix": "Draw the phone booth with a stepped, domed roof, slim frame posts at each corner, and doors with many small, evenly spaced panes."
+  }
+ ],
+ "pattern": "On the shape vector, generated cards still give themselves away by inflating the object. Parts that should be thin or open become thick solid masses: a lattice tower turns into a block, laces and soles become fat sausages, cuffs become thick rings and covers dome into pillows. Proportions drift toward a toy, with stubby limbs and oversized wheels or heads, and parts merge into blobs with soft corners where real cards keep flat faces, tight bevels and separated parts."
+}

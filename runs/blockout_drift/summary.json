@@ -1,0 +1,62 @@
+{
+ "outside/iou": {
+  "bad_median": 0.914,
+  "good_median": 0.928,
+  "auc_bad_over_good": 0.382,
+  "p": 0.4118,
+  "n": [
+   5,
+   33
+  ]
+ },
+ "outside/edge_drift": {
+  "bad_median": 2.4,
+  "good_median": 1.58,
+  "auc_bad_over_good": 0.658,
+  "p": 0.2708,
+  "n": [
+   5,
+   33
+  ]
+ },
+ "producer/iou": {
+  "bad_median": 0.916,
+  "good_median": 0.853,
+  "auc_bad_over_good": 0.609,
+  "p": 0.22,
+  "n": [
+   15,
+   39
+  ]
+ },
+ "producer/edge_drift": {
+  "bad_median": 1.92,
+  "good_median": 2.04,
+  "auc_bad_over_good": 0.49,
+  "p": 0.9154,
+  "n": [
+   15,
+   39
+  ]
+ },
+ "producer_no_only/iou": {
+  "bad_median": 0.88,
+  "good_median": 0.853,
+  "auc_bad_over_good": 0.479,
+  "p": 0.9222,
+  "n": [
+   3,
+   39
+  ]
+ },
+ "producer_no_only/edge_drift": {
+  "bad_median": 4.69,
+  "good_median": 2.04,
+  "auc_bad_over_good": 0.803,
+  "p": 0.0874,
+  "n": [
+   3,
+   39
+  ]
+ }
+}

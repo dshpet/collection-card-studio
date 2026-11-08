@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the edge map draws heavy dark lines all the way around the hat brim, the magnifier rim, the coat lapels and the belt buckle. The face has dense wrinkle and moustache strokes, and the subject edge density is 0.199, well above the real maximum of 0.157. A: the man's contour is lighter and less even, and the shirt and arms have fewer internal lines. A's background is still busy (cobblestones and window frames, 0.139), so this is not a clean call.",
+   "fix": "Remove the dark rim around the hat, coat and magnifier. Separate shapes by color and light instead of a drawn line. Keep coat seams few and thin, and reduce the moustache and wrinkle detail."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the straw ground is a field of hard scratchy marks, so background edge density is 0.119 against a real maximum of 0.082. The cow's arms, horns and the hoof print have heavy dark contours. A: the edges sit mostly in the wool swirls and the bow. The forest is soft and lost behind the sheep.",
+   "fix": "Paint the straw floor as soft, mostly smooth color with only a few blades near the characters. Let the background blur and lose its edges, and drop the dark contour around the cow's limbs and horns."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "A: the arm, thermos and head have dark contour lines, and the plaid shirt and checkered tablecloth add dense grid edges. Subject density is 0.166, just above the real range. B: the blossom canopy and grass are busy, but the figures' contours are softer and the outline value is lower (-0.026). This is weak evidence either way.",
+   "fix": "Soften the edge where the arms and thermos meet the background so they are not ringed by a dark line. Simplify the plaid and checker pattern into broader, softer color bands."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "A: the cow's black spots, legs and hooves are bounded by thick, even dark lines, and the ballroom window mullions add ruled lines behind. B: the pig and sheep bodies have soft, partly lost edges against the sky. Only the eyes and mouths get crisp lines, and subject density is low (0.065). The evidence is weak.",
+   "fix": "Draw the cow's spots and legs as color shapes without a dark border. Let the body edges soften into rim light, and keep crisp edges only around the eyes and mouth."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the outline darkness is 0.115, above the real maximum of 0.100. The edge map shows a heavy dark contour tracing the cow's horns, raised arms and the pig's ears, plus hard-edged confetti and stage-truss lines all over the background. A: the edges are mainly the plaid grid and the buttons. The figure silhouettes have no dark rim (outline -0.081), and the saloon behind is soft.",
+   "fix": "Remove the dark outline around the cow and pig. Separate them from the background with lighter rim light instead. Cut down the confetti and truss detail, and blur the stage behind them."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: subject edge density is 0.226, far above the real maximum of 0.179. Every drum is ringed with many small lugs and tension rods, each with its own hard edge, and the cymbal rims and stands are heavy dark lines. B: the camper has crisp, even contours, but the inside of the shape is simpler. The busiest part of its card is the scattered grass tufts.",
+   "fix": "Use fewer drum lugs and less hardware, with simpler stands. Keep the cymbal and drum rims crisp but thin, with no dark edge line, and let the back pieces go softer than the bass drum at the front."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the wheel spokes, rim and pedestal are traced with an even, dark, line-art-like contour, and the deck planks are drawn as hard dark lines running toward the stand. A: the fruit edges vary from crisp (orange rind, strawberry seeds) to soft (grapes, the glass plate rim), and the wood grain behind is low-contrast.",
+   "fix": "Shape the wheel's spokes and rim with light and shadow instead of a dark contour. Make the deck plank seams faint and thin, and soften the far planks."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the hay bale is a mass of hard straw strokes, and the rooster's feathers and the tree leaves add dense edges. Both densities are above the real range (subject 0.161, background 0.086). B: the cow body is broad and smooth with few internal lines, and the background bushes are softer (0.050). Only the cow's spots have a dark border.",
+   "fix": "Paint the hay bale as a soft, rounded form with only a few straw strands at the top edge. Reduce the feather strokes on the rooster, and blur the tree and barn behind."
+  }
+ ],
+ "pattern": "Generated cards draw an even, dark contour around the whole hero and its parts, like line art laid over a render. They also pack in extra small hard-edged detail: lugs, louvers, plaid, straw, confetti, wood grain. On real cards, edges get sharp at the focus and soften or disappear at the silhouette and in the background."
+}

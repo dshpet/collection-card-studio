@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the parasol canopy swells into a pillowy dome, and the lace frill turns the rim into a row of soft scallop bumps (corner_rate 7.1, above the real range). The handle is a thick rounded hook. B: the fan's pleats keep flat, straight-edged panels, and the guard sticks stay as straight bars.",
+   "fix": "Draw the parasol canopy as tight, flat triangular fabric panels between thin straight ribs. Keep the rim edge clean with a thin, flat lace band, and draw a slim handle with a small crook."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the suitcase is a simple slab with rounded corner caps and a single loop handle, like the simplified real cards. B: the trunk's silhouette is an almost perfect filled box (solidity 0.971, above the real range). Extra straps, buckles and corner plates crowd it, though the edges are crisp.",
+   "fix": "Simplify the trunk: one or two straps, small corner caps, and a slightly beveled lid edge. Don't fill the outline into a perfect block."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the target board is a clean disc on a thin easel, and the teddy has separate, readable parts. B: the envelope and photos merge into one filled slab (solidity 0.956, above the real range). The stacked photo corners stick out as an extra jagged cluster at the top.",
+   "fix": "Show fewer photos sticking out of the envelope, with clear gaps between them, and draw the envelope as a thin flat sheet with a crisp folded flap."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the hatbox is a plain drum with a slab lid. Its outline is almost free of corners (corner_rate 0.39, below the real range), and the rope handle is a thick, plump arc. B: the sneakers show the expected toe, collar and sole steps, with an articulated outline.",
+   "fix": "Give the hatbox lid a thin, crisp overhanging rim with a tight edge. Make the rope handle a thin cord, and add a slight bevel where the lid meets the box."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the upright piano is almost all long straight runs (straight_share 0.725, above the real range). It reads as a rigid slab with stiff legs. B: the guitar has a curved body, a thin neck and a thin strap loop, with real-card proportions.",
+   "fix": "Simplify the piano into a slightly chunkier stylized cabinet with softly beveled top and side edges. Add short, rounded legs and fewer flat panel insets."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cake stand has very wide, thin plates on a slim pole with a big ball finial. Small bumps from the cakes line both tiers, and the lower plate is oversized compared with the top. B: the fountain is a stacked, chunky set of basins with consistent tier proportions.",
+   "fix": "Scale the tiers so the lower plate is only slightly wider than the top one. Give the plates a visible rim thickness, and seat the cakes so they don't break the plate outline."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the teacup sits on an oversized, flared saucer that is much wider than the cup, and the handle is a thick loop. B: the vending machine is a boxy, upright slab with crisp corners and small feet (solidity 0.981, but consistent with real boxy objects).",
+   "fix": "Make the saucer only a little wider than the cup, and make the handle a slim ring."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the pocket watch is a plain oval body, but its chain is a long, chunky link chain with a T-bar, flung out across the card. That adds a large extra part to the silhouette (low solidity 0.645). B: the ring box is a compact, open clamshell with consistent, softly beveled edges.",
+   "fix": "Keep the chain short and thin, falling close to the watch. Draw the case as a round disc with a crown and bow of realistic size."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the top hat's brim is a swollen, sausage-thick roll that curls up into a blob on the right, and the crown flares like a toy. B: the mortarboard keeps a flat board with straight edges, crisp corners and a thin tassel cord.",
+   "fix": "Draw the top hat brim as a thin, flat band with a slight curl at the sides. Make the crown a straight-sided cylinder with a crisp top edge."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the fan's ribs read as many very thin sticks (thin_share 0.075, far above the real 0.023 max), and the guard sticks are long, thin rails reaching past the leaf. The pleated edge is jagged. B: the scarf is all soft, full fabric lobes, consistent with the real cards' volume.",
+   "fix": "Use fewer, slightly thicker ribs, and keep the guard sticks within the leaf's length. Give the leaf edge simple, even scallops."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the rocking chair has many spindles, arms and rockers that split the silhouette into many openings (solidity 0.596, below the real range). The arm rests are thick. B: the quill and inkpot form a compact, simple silhouette with a cleanly notched feather.",
+   "fix": "Reduce the chair to three back slats, simple arms of consistent thickness, and two clean, curved rockers, with fewer crossbars."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the bus is a boxy body with straight roof and side runs, wheel bumps and a thin mirror arm. B: the neon ice cream outline is a soft, blobby cloud with almost no corners (corner_rate 0.80, below the real range). The cone tip is rounded off.",
+   "fix": "Draw the cone as a crisp triangle with a sharp tip and a straight rim. Give the scoop distinct swirl lobes with defined creases between them."
+  }
+ ],
+ "pattern": "Generated cards give themselves away by over- or under-articulating the outline. Some add extra parts the real simplified cards leave out: long chains, many ribs or spindles, extra straps, or stacked photos. Others swell the main part into a pillow or blob with almost no corners: hatbox lids, hat brims, parasol canopies, neon outlines. Thin parts drift either too thick (brims, handles) or too spindly (fan ribs). Real cards keep one clear main mass, a few readable parts and tight bevels."
+}

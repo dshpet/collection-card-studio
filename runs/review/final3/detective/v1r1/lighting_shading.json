@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the police car is lit from the top front. The hood and roof get a broad sheen, there is a crisp dark cast shadow under the car on the road, and the light side and shadow side read clearly, as on the taxi in the real cards. Its high numbers come mostly from the black paint and black windows leaking into the lens. B: the bike is backlit by the sunset, with orange rims on the tyres and frame and a front that stays flat and muddy. The spokes and chainring have no clear core shadow, and nothing grounds the bike.",
+   "fix": "Light the bicycle from the upper left with one soft key. Make the frame tubes and tyres round, with a bright top and a darker underside. Drop the orange sunset rim. Add a soft shadow where the bike sits against the car's rack."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the music player and earbuds are lit almost straight from the front. The lens is an even lilac over the whole case, the side walls get only slightly darker, and there is no core shadow. It is the soft, puffy, clay-like look of the generated lessons (light bias 0.15). B: the camera has a clear key from the upper left. Its right side and the lens barrel drop into a deep shadow, and the chrome flash dish turns from bright to dark, like the real camera card.",
+   "fix": "Light the player from the upper left so the right and bottom side walls fall into a clearly darker shadow. Give the round button a bright top rim and a shaded lower lip. Cast a soft shadow from the case and cord onto the background."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the backpack turns slowly from a lit front-left to a dark right side and bottom. It has soft, broad highlights on the flap and a gentle shadow on the floor. B: the fins have hard, plastic-like white streaks along the yellow edges and a glowing magenta rim all round the outline, and nothing shades or grounds the foot pockets. Light bias 0.815 is above the real range.",
+   "fix": "Replace the sharp white edge streaks on the fins with one broad, soft sheen on the upper surfaces. Remove the glowing rim around the outline. Add a soft, darker shadow under each fin."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the safe has a soft top-left key, a brighter front face and a darker right side, a small hot spot on the gold dial, and a contact shadow at its feet. B: the vending machine has a darker left side, a lit window acting as a visible light source, a faint rim on its right edge, and a soft floor shadow. On form modeling, both fall inside the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the bloodhound is lit evenly from the front, with a glow behind it. The body barely darkens toward its far side, so the form turn is weak (light bias 0.115, below the real range). The ears and back have no clear core shadow. B: the rocking chair has a directional key. The lit tops of the arms and rockers stand against shaded undersides, and a soft cast shadow falls on the floor.",
+   "fix": "Light the dog from the upper left. Let its back, haunch and far ear fall into a clearly darker shadow side with a soft core shadow line. Remove the glow behind it. Add a soft darker contact shadow where the paws and chin meet the grass."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "A: the backboard has a broad, soft front and slightly shaded thickness on its right edge, with gentle shading on the rim and pole. B: the magnifier has a perfect hard white dot as the highlight on the glass and a strong chrome contrast on the ring. The handle has a sharp, glossy sheen. The light is more like plastic hot spots than the soft sheen of the real cards.",
+   "fix": "Replace the round white dot on the glass with a soft, curved window reflection along the upper-left edge of the lens. Tone the chrome ring down to a gentle bright-to-dark turn."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the oil lamp has a warm glow from the flame inside it and a brass body that turns softly, with gentle shadows at the base. B: the flashlight has very strong contrast (light bias 0.94, shading range 0.843, both above the real range). The red barrel has hard, glossy white streaks, the ribbed grip alternates between stark light and dark, and the chrome head is high-contrast like a mirror.",
+   "fix": "Soften the flashlight's barrel with one broad sheen along its top and a gentle darker underside. Lower the contrast on the ribbed grip and the chrome head. Avoid hard white streaks."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the book has a soft top-left key, a slightly shaded page block on its side, and a broad, soft cast shadow onto the wood toward the lower right, matching the real cards. B: the wallet sits in a spotlight pool, with the wood falling off into dark corners. The gold shield has a sharp, specular hot spot, and the leather is lit like a theatre spot rather than with even soft light.",
+   "fix": "Light the wallet with one even, soft key from the upper left, without a spotlight pool or dark corners. Give the gold shield a broad soft sheen in place of the hot spot. Add a soft cast shadow to the lower right on the wood."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the bag and ring are lit almost flat. The lens is a uniform grey over the whole bag, there is barely any shadow side, and the cast shadow on the table is faint (shading range 0.608, form contrast 0.315 and light bias 0.122, all below the real range). B: the racket and ball have a clear directional key, with a shaded underside on the ball and a defined cast shadow from the racket onto the court.",
+   "fix": "Light the bag from the upper left so its puffed edges turn darker on the lower right. Give the ring a lit top arc and a shaded inner wall. Add a soft but clearly darker cast shadow under the bag on the wood."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the sneakers are lit flat from the front, so the toe and side panels show almost no light-side or shadow-side split (light bias 0.019). They still throw a hard dark shadow to the left, which does not match the frontal light. B: the hat has a clear upper-left key, with a darker crown on the right, a soft shadow from the band, and a soft cast shadow under the brim.",
+   "fix": "Light the sneakers from the upper right, matching the shadow that falls to the left. Let the left side walls and the inner heel fall into a clear shadow side, and soften the edge of the cast shadow."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "A: the goal frame has soft, top-lit tubes, the ball shades from a lit top to a darker underside, and it has contact in the water. B: the neck pillow gets broad, even light with only the lower edge darkened. It has no cast shadow on the background, so it floats. Both are inside the real range, so this is weak evidence.",
+   "fix": "Light the pillow from the upper left so the right inner curve and lower lobes fall into a clear shadow side. Add a soft drop shadow beneath it on the background."
+  },
+  {
+   "pair": "p12",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the doorknob has a warm key from the right. The sphere has a soft highlight and a darker lower left, and the plate has a bright upper-right pool. B: the door has hard, dappled cast shadows from the ivy and a top-left key on the panels and wreath. Both are inside the real range, and both use believable directional light.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards light the hero almost straight from the front, often with a glow behind it. The far side barely darkens, there is no clear core shadow, and the cards look soft and puffy like clay (p02 A, p05 A, p09 A, p10 A). The opposite failure is hard, glossy white streaks or dots and chrome-like contrast, with no soft broad sheen (p03 B, p07 B, p06 B), or a spotlight pool with dark corners (p08 B). Real cards use one soft key from the upper left. Light turns into shadow over a moderate distance, the shadow side clearly darkens, and a soft cast or contact shadow grounds the object, in a direction that matches the key."
+}

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (beach ball): almost no edges inside the ball apart from the panel seams, and the right side of the ball blurs into the sand. Subject density is 0.029, far below the real range. B (dock): crisp silhouettes on the posts, rope coils and life ring, with thin plank seams. B's densities sit inside the real range.",
+   "fix": "Give the ball a crisp, clean silhouette all the way round against the sand. Draw thin, sharp seams between the colored panels and a crisp rim on the cap."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (pocket watch): every numeral is ringed with a thick dark line, and the chain links and case rim have heavy black contours. Subject density is 0.251 and outline darkness is 0.168, both above the real range. A (ring box): there is a dark contour around the box, but the inside is sparse and density is in range.",
+   "fix": "Draw the clock numerals as flat painted digits with no dark border. Separate the case rim and chain links with light and shadow, not black outlines. Keep fewer small details."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (sneakers): busy fine mesh texture, laces with an outline on every strand, and a hard ruled horizon line behind them. Subject density is 0.227, at the top of the real range. A (hat box): very sparse inside (0.047, below range), but with clean, simple edges like the real cards.",
+   "fix": "Simplify the shoe uppers into smooth, chunky panels without mesh texture. Draw fewer, thicker laces with no dark edges. Soften the line where the floor meets the wall."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (map): the coastlines and continents are traced with thick dark ink lines, and the wood planks have heavy grain lines. Background density is 0.077, far above the real range. A (pearls): each pearl has a dark rim, but the tufted cushion behind stays soft and quiet.",
+   "fix": "Paint the continents as flat color shapes without black coastline outlines. Make the wooden table smooth, with only faint plank gaps and no busy grain."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (fountain): the paving-tile grid fills the background with hard lines (0.046, at the top of the range), and the bowl rims carry dark groove lines. A (cake stand): the background is quiet apart from one table-edge line, and the plates have crisp, thin rims.",
+   "fix": "Keep the floor tiles faint and soft with few visible joints. Separate the bowl tiers with smooth shading, not dark groove lines."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (scarf): an even dark contour runs around both tails and the collar loop, like a drawn outline (outline darkness 0.038). The inside of the fabric is sparse. B (fan): the outer edge is light (-0.095), and the pleat and rib lines are thin and precise.",
+   "fix": "Let the red scarf edges meet the blue background through color and shading alone, with no dark line along the silhouette. Add soft fold creases in the fabric."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (DJ deck and headphones): every button, fader and pad is outlined in dark, so the subject is crowded with small boxed edges (0.19 and outline 0.107, both above the real range). A (scroll): sparse, with clean edges on the roll and ribbon.",
+   "fix": "Use fewer, bigger buttons and pads, shown as raised colored shapes without dark borders. Let the headphones' silhouette read through shading, not an outline."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (top hat): a thick black contour runs around the whole brim and crown, plus a dark band edge. A (mortarboard): the board corners are crisp, and the tassel and cap edges are lighter (outline darkness -0.096).",
+   "fix": "Draw the hat brim without a dark line around it. Let the dark felt meet the blue background through a soft rim light."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (suitcase): each sticker is ringed with a thick dark border, and the case has a heavy dark silhouette line (outline darkness 0.128, above the real range). A (trunk): the wood grain and strap edges are dense but stay within range, with no added outline.",
+   "fix": "Paint the stickers as flat decals with thin white borders and no black outline. Remove the dark line around the suitcase body."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (vending machine): an even dark contour around the cabinet and door frame (0.088), and dense speckle on the glass. B (teacup): thin, precise double rims on the cup and saucer, a light silhouette (-0.066), and soft steam with no edges.",
+   "fix": "Remove the dark line around the vending machine cabinet and door. Use a light rim highlight to separate it from the purple background, and keep the condensation dots sparse."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (parasol): heavy dark contour along the canopy hem and ribs, and the lace trim is packed with tiny dark eyelet marks. The background is nearly empty (0.004). A (fan): even pleat lines and a clean fan edge.",
+   "fix": "Make the lace trim a soft white frill with only a few large, faint holes. Mark the canopy edge and ribs with light highlights, not dark lines."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (guitar): a thick dark contour traces the body, headstock and pickguard, and the frets and strings are dense lines (outline 0.163 and subject 0.242, both at or above the top of the range). B (piano): the cabinet panels have thin seams and the silhouette is lighter (-0.047).",
+   "fix": "Draw the guitar body without a dark outline, separating the red body from the stage by its shine and shadow. Simplify the frets and strings into a few soft lines."
+  }
+ ],
+ "pattern": "Generated cards often draw a dark line of even width around the whole silhouette instead of letting color and light separate the object from the background. They also crowd the object with small parts that each get a dark ring: numerals, buttons, stickers, lace eyelets, coastlines. Real cards keep fewer internal edges, use thin seams, and let some edges fade into the background."
+}

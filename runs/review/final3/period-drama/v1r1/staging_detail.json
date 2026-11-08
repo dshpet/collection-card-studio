@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the beach ball fills the card on plain sand. The sand has a few soft dunes and nothing else. B: a dock corner with two posts, a coil of rope on one post, a lifebuoy hanging on the other, water ripples, a shoreline and pebbles at the top. That is several props the subject never names, much like the invented island, rope and post in the generated lighthouse lessons.",
+   "fix": "Show only the lifebuoy, close and central, hanging on one wooden dock post. The water may run off the card's edge. No rope coil, no second post, no shoreline, no pebbles."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the ray backdrop has a bright cyan glow pooled right behind the box. That is the same halo the generated glove lessons have. B: the green diamond pattern is tone-on-tone and quiet, with only a soft lighter centre.",
+   "fix": "Use even blue rays at the same brightness to the corners. No glowing spot behind the box."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a plain green floor that blends into a green backdrop with no seam, which is a clean category 2. B: a pale yellow floor meets an orange wall at a hard horizontal line across the middle of the card, so the floor is not the backdrop's color.",
+   "fix": "Stand the sneakers on a floor the same orange as the backdrop, fading softly into the wall with no hard horizon line."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the bracelet lies on blue tufted velvet that fills the card, seen from above. It is quiet, with a few buttons. B: a map with a magnifier lies on wooden planks. The map is crowded with islands, a compass rose and wave marks, and the plank seams add edges. Its background edge density, 0.077, is far above the real range.",
+   "fix": "Lay the map on one smooth wooden tabletop that fills the card, with no plank seams. Show fewer, larger land shapes on the map and no extra compass or wave doodles."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the cake stand sits on a tablecloth in front of a striped wall. It is a simple surface and backdrop, and the cakes are what the stand holds. B: an outdoor fountain sits on a ring of many small paving tiles in front of an indoor yellow striped wall. It mixes two places, and the tile ring adds a lot of small edges (0.046, at the top of the real range).",
+   "fix": "Place the fountain in a plain courtyard: a few large, smooth paving stones and a soft sky or hedge behind it, not a striped wall."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the backdrop is a spiral of concentric swirls with a bright core behind the knot. It is busier than the quiet patterns on real cards, and its background detail is near the top of the real range. B: soft, low-contrast waves, tone-on-tone.",
+   "fix": "Use soft, low-contrast blue waves at an even brightness behind the scarf, with no spiral and no glowing centre."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the scroll sits on a glossy blue slab with a visible front edge and reflections, which is a shelf edge on what should be a plain category 2 floor. Its detail, 0.0072, is below the real range. B: the mixer and headphones sit on a plain orange floor that fades seamlessly into the backdrop.",
+   "fix": "Stand the scroll on a plain floor the same blue as the backdrop, fading into it, with no shelf edge and no glossy reflection."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both hats float on the same soft concentric-ring backdrop with similar quiet detail. Nothing in the staging separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a ray-burst sky sits above a real stone pavement with cracks and a yellow platform strip. It is a hybrid of a category 1 field and a category 4 place, and its background detail, 0.0278, is above the real range. B: the suitcase stands on a simple green plank floor with a wall line and rays behind, which reads as one staging.",
+   "fix": "Put the trunk on a few large, smooth stone slabs under a plain soft sky. No ray burst, no platform strip, no cracks in the stones."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both sit on smooth gradient floors that blend into the backdrop, a clean category 2. The vending machine's contents and the tea's steam both belong to their subjects.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: soft yellow waves. B: a tone-on-tone diamond pattern. Both are quiet graphic fields with no props, so staging does not separate them.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the guitar is on a stage with two bright spotlights, light cones, metal truss towers on both sides and a plank floor. That is many shapes, plus a patterned strap draped beside it. B: the piano stands against a quiet damask wall on a wood floor, a few large calm shapes like the real fan and podium cards.",
+   "fix": "Lean the guitar on a plain wooden stage in front of a dark curtain, with one soft spotlight. No truss towers, no second light, plain strap."
+  }
+ ],
+ "pattern": "Generated cards put too much into the background. They add props the subject never names (rope coils, extra posts, pebbles, compass doodles), or mix two stagings, such as a ray burst over a real stone floor, or an outdoor fountain against a striped wallpaper wall. They also give the shelf a hard edge or the floor a hard horizon line where real cards fade the floor into the backdrop, and put a glowing spot behind the hero on graphic fields. Real cards keep the backdrop at an even tone, use a few large quiet shapes, and frame the object closely."
+}

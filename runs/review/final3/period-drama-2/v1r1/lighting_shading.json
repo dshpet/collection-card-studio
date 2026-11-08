@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A (parasol): clear key from upper left. The left canopy panels are pale, the right panels drop to a deep core shadow, and the knob and handle have small soft highlights. B (fan): the leaves are lit evenly across the whole arc, with no side turning into shadow. Each pleat has only a small light/dark alternation, and the guards and rivet are flat. Its light bias (0.09) and form contrast (0.213) are both below the real range.",
+   "fix": "Light the fan from the upper left. Keep the left leaves bright and let the right third of the fan fall into a clearly darker shadow. Shade each pleat so its fold turns from light to dark, and add a soft shadow under the wooden guards."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (suitcase): lit from the front and nearly symmetric. The front face is one even tone from left to right, the corner caps have matching shading, and the floor shadow is weak. B (trunk): the top plane is clearly lit, the front face is mid-tone and the right end is darker. The straps and corners have soft highlights, and there is a dark contact shadow on the stone floor. B reads as the real directional setup.",
+   "fix": "Light the suitcase from the upper left. Make the left half of the front face brighter and let it darken toward the right end. Give the top edge a soft highlight and put a darker contact shadow under the bottom right corner."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (target and teddy): the bulbs light the shelf from above. The target face darkens toward its right rim, the bear has a lit top and a shaded belly and legs, and there are contact shadows on the shelf. B (envelope with photos): flat and frontal. The envelope flaps and photo stack are almost one even tone, with only thin edge darkening and no clear shadow side. Its light bias (0.114) is below the real range.",
+   "fix": "Light the envelope from the upper left. Make the right flap and the lower right of the envelope noticeably darker, and let the top photos throw a soft shadow onto the envelope paper. Add a gentle highlight along the upper left edges."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (hatbox): strong key from the right. The cylinder turns smoothly from a bright right side to a darker left side, the lid has a lit top, and a clear soft shadow falls to the left. B (sneakers): both shoes are lit almost evenly from the front, so the left and right sides of each shoe are the same brightness. The cast shadow does not match the modeling on the shoes. Its light bias (0.019) is near zero and its shading range is above the real range.",
+   "fix": "Light the sneakers from the upper right. Keep the toe caps and right sides bright, and turn the inner and left sides of each shoe into a softer shadow. Make the shadow on the floor match that direction."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (piano): frontal and even. The case front, lid and legs share one warm mid-tone, the cabinet side is barely darker, and the shading is smudgy with no clear core shadow. Its light bias (0.177) is below the real range. This matches the generated lesson computers, which have the same warm, evenly lit look. B (guitar): the spotlights give the body a lit upper face and a darker lower curve, and the neck has light and shadow along it.",
+   "fix": "Light the piano from the upper left. Make the left side and top lid bright, let the right side panel and the area under the keyboard fall into a clear, cooler shadow, and put a soft contact shadow under the legs."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (cake stand): the plates and column are an almost uniform pale tone, and the cakes are evenly lit with tiny shading. The only strong dark area is the shadow on the cloth. Its form contrast (0.328) and light bias (0.167) are both below the real range. B (fountain): the basins have lit rims and darker inner bowls and undersides, and the pedestal turns from light to shadow.",
+   "fix": "Light the cake stand from the upper left. Shade the column so its right side is clearly darker, and darken the underside of each plate. Give each cake a lit top and a shaded side."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (teacup): side key with a lit left bowl, a darker right side and a cast shadow on the saucer and ground. B (vending machine): lit front face, darker right side panel and soft floor contact. Both have directional modeling within the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (pocket watch): soft top-left light. The case rim turns gently and there is a mild shadow behind the watch. B (ring box): lid interior lit, outer shell darker on the right, and the coin has a domed sheen. Both are within the real range and neither breaks the pattern from the lessons.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (top hat): strong key from the upper left. The crown is bright on the left and falls to a deep core shadow on the right, and the brim has a rim light. B (mortarboard): the top board is lit and the skull cap is darker underneath. Both shading ranges are slightly above the real maximum, so neither stands out.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (folding fan): the pleats alternate light and dark evenly with a mild overall gradient. B (neckerchief): soft, broad shading on the loop and tails. Both have form contrast below the real range (0.245 and 0.256) and look equally gentle, so this vector gives no reason to pick one.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (rocking chair): moderate top-left key. The slats and rockers have lit tops and gently shaded undersides. B (quill and inkwell): a very hard key from the left. The pot is bright on the left and drops to near-black on the right, with a long, sharp, dark cast shadow across the table and strong glossy hot spots on the glass. Its light bias (1.162) and form contrast (0.739) are above the real maximum, so it is too theatrical for this card set.",
+   "fix": "Use a softer, broader light on the inkwell. Keep the right side of the pot in shadow but not near black, make the table shadow shorter and softer, and shrink the glass highlight to one soft sheen."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (bus): sun from the left. The front and right side are in mid shadow, the roof edges catch light, and there is a dark shadow under the chassis on the road. B (ice cream sign): flat and frontal. The swirl and cone are lit evenly, the only form cue is a soft glow and halo, and there is no shadow side. Its light bias (0.035) is near zero.",
+   "fix": "Light the ice cream sign from the upper left. Make the left side of each swirl bump bright and turn its right side darker, shade the right side of the cone, and add a soft shadow on the wall plank to the lower right."
+  }
+ ],
+ "pattern": "Generated cards are lit from the front and too evenly. The hero has no clear shadow side or core shadow, the pleats, faces and cylinders hardly turn from light to dark, and the shading has an overall warm tint (fan, envelope, sneakers, piano, cake stand, ice cream sign). Their light bias falls at or below the bottom of the real range. Real cards use a single soft key from the upper left or right, with one side clearly in shadow and grounded contact shadows. Less often, a generated card overshoots into a theatrical key with near-black shadows and long, hard cast shadows (inkwell)."
+}

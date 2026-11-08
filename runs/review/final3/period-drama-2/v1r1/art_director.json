@@ -1,0 +1,99 @@
+{
+ "issues": [
+  {
+   "issue": "The model invents busy settings with fine texture around the hero: cracked flagstones and a yellow platform strip under the trunk, a finely wrinkled tablecloth under the cake stand, and mirror reflections on the piano floor. In the real cards the backdrop is a few large, quiet shapes, and the floor matches the backdrop color.",
+   "specialists": [
+    "staging_detail",
+    "surface_finish",
+    "edges_linework"
+   ],
+   "instruction": "Under the hero, draw a broad, smooth floor or cloth with a few soft joints or folds, in a color close to the backdrop. Keep the sharpest detail on the hero."
+  },
+  {
+   "issue": "Some cards push value and light to theatrical extremes. The inkwell has a hard key light, a near-black side and a long, sharp cast shadow. The piano is a deep, glossy red-brown against a pale cream wall. Real cards use one soft key light, a shadow side in mid-dark tones, and short, soft contact shadows.",
+   "specialists": [
+    "lighting_shading",
+    "value_contrast"
+   ],
+   "instruction": "Use soft light from the upper left. Keep the shadow side a rich, deep version of the object's own color, and make cast shadows short and soft."
+  },
+  {
+   "issue": "Some cards drift warm. Whites turn cream (the feather), and walls, floors and the hero all fall into one orange or red family (piano, inkwell). Real cards set a warm hero against a cooler or contrasting backdrop.",
+   "specialists": [
+    "color_palette"
+   ],
+   "instruction": "Keep whites clean, with soft grey-blue shading. When the hero is warm, give the wall a cooler or contrasting hue."
+  },
+  {
+   "issue": "Wood and metal are over-finished: lacquered swirly grain on the piano and mirror-gold on the watch, with a hard highlight on every link. Real cards use satin surfaces with one broad highlight per part.",
+   "specialists": [
+    "surface_finish",
+    "edges_linework"
+   ],
+   "instruction": "Paint wood and metal with a satin finish and one broad, soft highlight per part. Keep the grain faint."
+  },
+  {
+   "issue": "Several generated heroes are framed whole, centered and front-on, with wide even margins (hatbox, teacup, cake stand, suitcase-style framing). This is a mild tell only: the real controls also include centered objects on plain gradients. Specialists' requests to reshape parts (fan ribs, hat brim, parasol frill, chain length) are overruled, because form can't be judged across different objects.",
+   "specialists": [
+    "composition_hierarchy",
+    "viewpoint_depth",
+    "shape_proportions"
+   ],
+   "instruction": "No edit notes for this. Leave framing to the style references."
+  }
+ ],
+ "style_text": "",
+ "cards": [
+  {
+   "pair": "p01",
+   "keep": true,
+   "note": "Parasol passes. It has a clear key light, a believable palette and a quiet diamond backdrop. Several specialists flagged the real fan card instead. The eyelet lace is slightly busy but not worth risking an edit."
+  },
+  {
+   "pair": "p02",
+   "keep": false,
+   "note": "Steamer Trunk: Replace the grey cracked flagstones and the yellow strip with a few large, smooth, warm sandy stone slabs with soft, faint joints. Paint the wood slightly smoother, with faint, quiet grain. Keep the trunk, the straps, the brass corners, the buckles and the blue rays."
+  },
+  {
+   "pair": "p04",
+   "keep": true,
+   "note": "The hatbox reads as plain and centered, but its light, small palette and green backdrop match the real cards. An earlier lighting edit on this card lost to its draft."
+  },
+  {
+   "pair": "p05",
+   "keep": false,
+   "note": "Piano: Replace the cream damask wallpaper with a soft, plain pale blue wall with broad, gentle vertical stripes. Make the floor reflections slightly softer and fainter. Keep the piano, its wood color, the keys, the pedals and the view."
+  },
+  {
+   "pair": "p06",
+   "keep": false,
+   "note": "Cake Stand: Make the tablecloth smooth, soft lilac fabric with a few broad folds and no fine wrinkles, slightly darker than the white stand. Keep the stand, the cakes, the purple striped wall and the view."
+  },
+  {
+   "pair": "p07",
+   "keep": true,
+   "note": "The teacup passes. The real vending-machine card uses the same plain gradient backdrop, and the cup's light and shadow are within the real range."
+  },
+  {
+   "pair": "p08",
+   "keep": true,
+   "note": "The pocket watch is close enough. The gold is slightly too mirror-like, but a finish edit risks more than it fixes, and the chain is a matter of form."
+  },
+  {
+   "pair": "p09",
+   "keep": true,
+   "note": "The top hat passes. Its backdrop is indistinguishable from the real mortarboard card, and it has a clean key light and a simple finish."
+  },
+  {
+   "pair": "p10",
+   "keep": true,
+   "note": "The fan passes. It has a quiet wave backdrop and believable red and gold. The rib count is a form issue and is not up for change."
+  },
+  {
+   "pair": "p11",
+   "keep": false,
+   "note": "Inkwell: Light the inkwell with a softer, broader light, so the right side of the bottle is a deep green rather than near-black and the cast shadow on the table is shorter and softer. Make the feather a clean white with soft grey-blue shading. Keep the bottle, the quill, the yellow stripes and the table."
+  }
+ ],
+ "summary": "Close. Six of the ten generated cards could pass as real: parasol, hatbox, teacup, pocket watch, top hat and fan. The remaining tells are mostly in the setting rather than the hero: busy invented floors and cloths (trunk, cake stand), theatrical or all-warm light and value (inkwell, piano), and over-glossy finishes. The four edit notes each make one to three small changes to backdrop, light or color, and leave every hero's form alone. The Piano and Cake Stand notes are narrower than the earlier attempts that lost, since those changed too much at once."
+}

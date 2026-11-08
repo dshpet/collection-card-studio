@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the neck pillow is turned and tilted in 3/4 view. The camera looks slightly down into the inner opening, and both lobes share one view. B: the sheriff star is shown dead-on with no turn. Its face is one flat patch (planar 0.50) and the ball tips are spheres seen straight on. This flat, centred front view matches the generated lessons.",
+   "fix": "Turn the badge about 30° and tilt it back a little so its thick rim shows on one side and the star points shrink as they go back."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the harmonica lies on a diagonal in 3/4 view from above. Its top and front faces both show and the far end is slightly shorter, much like the real ticket card. B: the fan is a flat cut-out seen face-on (planar 0.65) with no visible thickness or turn. Only the handle hints at depth.",
+   "fix": "Show the fan turned at a 3/4 angle, with the paper folds catching light on alternate sides and the handle pointing toward the viewer."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the jacket floats in mild 3/4 view from slightly above. The inside of the collar and the sleeve openings agree on one camera. B: the cowboy hat is seen from a low 3/4 angle, and the brim curve and crown agree on one view. Neither card shows a viewpoint fault.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the caravan is seen side-on from a low camera at ground height, with its front narrowing slightly in perspective. It stands on grass that recedes believably. B: the buoy is fully frontal and symmetric, with the horizon cutting it at mid-height. The whole object is centred with its base ring complete, the full-object framing seen in the generated lighthouse lesson.",
+   "fix": "Turn the buoy slightly to the side, move the camera closer and lower, and let the water and base run off the bottom edge."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "A: the sneakers are seen from fairly high up, looking down into the heels. The wall and floor meet in a hard horizontal line at about half height, and the far shoe is barely smaller than the near one. B: the boots are seen at eye level in a light 3/4 view on a gradient with no clear ground. Both read mostly consistently, so this is a weak call.",
+   "fix": "Lower the camera to a gentle 3/4 view from just above the shoes and soften the wall–floor line into a background gradient."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both cards use the same layout: a sand mound seen from slightly above, with pebbles and a hero standing upright at eye level. A shows the cactus front-on, and B shows the duck side-on on a plate whose top face is visible. Both are plausible within one view, so I see no difference on this vector.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the bandana is tilted in 3/4 view from above, and the loop's inner opening and the knot share one view. B: the cap's board top is shown large and flat (planar 0.59), as if seen from well above. The skullcap and gold band below look closer to eye level, with only gentle curvature, so the board seems tipped toward the viewer.",
+   "fix": "Draw the board and the skullcap from one camera slightly above: board top as a narrow diamond, band curving down as a clear ellipse."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the boxing gloves are seen at eye level on a tabletop that is cropped at both sides, with a wall behind. Depth is layered the way the real computer card does it. B: the saddle's fender and strap face the viewer almost flat-on, but the two fence rails run steeply diagonal across the card as if seen at an angle. The saddle and the rails do not share one viewpoint.",
+   "fix": "Turn the saddle to match the fence: show the side fender in 3/4 so it runs along the rails, which recede gently toward one side."
+  },
+  {
+   "pair": "p09",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the rocking chair is in 3/4 view from above, and the floorboards converge toward the back wall consistently with the rockers. B: the wagon is in 3/4 view from above on a dirt floor, and the wheels and the pole read in one view. Both ground planes hold, so I can't separate them on this vector.",
+   "fix": ""
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "B matches the real lighthouse from the lessons: eye-level camera, horizon low, tower cropped at the bottom. A: the windmill wheel faces the viewer almost flat-on, but the tail vane, which should sit end-on to the camera, also shows its full broad side. Meanwhile the tower is turned in 3/4. The parts of the windmill do not share one view.",
+   "fix": "Turn the whole windmill to one 3/4 angle: wheel as a tilted oval, tail vane pointing back from the wheel and seen nearly edge-on, tower turned the same way."
+  },
+  {
+   "pair": "p11",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the stone ring and logs are seen from steeply above. The kettle and the cabin's log ends at top left are seen nearly at eye level, so the ground and the props do not share one camera height. B: the coin-operated binoculars are seen from a low camera. The railing recedes consistently and the city behind is softer and simpler, giving clean depth layers.",
+   "fix": "Use one camera height for the whole scene: lower it to a gentle look-down so the stone ring is a wide oval, matching the kettle and the cabin."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the phone booth is in 3/4 view from slightly above, with the roof and base tops both visible and the vertical edges staying parallel, which suits real cards. B: the trophy is perfectly frontal and symmetric, centred on a round pedestal under a spotlight. Its handles are seen flat-on, the head-on full-object framing seen in the generated lessons.",
+   "fix": "Turn the trophy about 25° so one handle comes toward the viewer and the other partly hides behind the cup, with the camera slightly above the rim."
+  }
+ ],
+ "pattern": "Generated cards tend to show the object head-on, symmetric and centred, with the whole object inside the frame. Real cards turn the object to a 3/4 view and let the setting run off the card edges. Generated cards also mix views between parts, such as a windmill wheel seen face-on with a broadside tail vane, or a flat-on saddle on diagonal rails. Some also give the ground and the props different camera heights."
+}

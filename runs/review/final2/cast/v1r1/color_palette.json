@@ -1,0 +1,61 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the trench coat, hat, orange rooster, brown desk, books and leather notebook are all one tan-to-orange family. Only the blue wall gives relief, and the coat's shadows go to muddy brown. The lens shows few hue masses (4.24 families, below the real range) and a warm share of 0.706, above real. A: purple shirt, teal scooter, and blue, pink and yellow facades make a wide palette with a cool street behind a warm face (8 families, warm share 0.57, at the top of the real range).",
+   "fix": "Make the background clearly cool, a blue-grey office with teal filing cabinets. Give the desk a cooler, darker wood, and add one non-brown accent on the detective, such as a deep green scarf or band. Keep shadows on the coat a cool brown-grey, not orange-brown."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: straw floor, orange cow muzzle, brown horns and red barn fill the card with yellow-orange. The warm share is 0.66, above the real range, and the background chroma is high, so the hero has no cool backdrop to sit on. A: white sheep against a green forest with a single red scarf accent. Its subject chroma is low, but the hue roles read like the real cards.",
+   "fix": "Push more of the card toward cool green grass and blue sky and cut the yellow straw down to a small patch under the feet. Keep the sheep's wool a neutral white, not cream."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: pink cherry blossoms, a pink pig, pink tablecloth trim and pink teapot flowers all repeat the hero's own hue in the background. The real cards almost never do this. Background chroma is high (0.146). A: a warm red plaid shirt against a cool blue sky and green field, with blue thermos and mug accents. This is the classic warm-hero-on-cool-backdrop split.",
+   "fix": "Replace the pink blossom tree with a plain green leafy tree and a blue sky, so the pink pig is the only pink mass. Make the tablecloth white."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: an orange parquet floor, a cream ballroom wall, an orange cow muzzle and a pink bonnet pull the whole card warm (warm share 0.71, above the real range). The sheep's wool is tinted cream, and the green curtains are the only cool mass. B: warm pink pig and white sheep in front of a cool blue waterfall and sky (warm share 0.32), with the wool kept neutral white.",
+   "fix": "Make the ballroom cool, with blue-grey walls and a cooler grey-brown floor. Keep the sheep's wool pure neutral white with cool grey shadows, not cream."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a red plaid shirt, brown hat, red saloon, brown boardwalk and pink pig all sit in one red-brown family. The warm share is 0.74 and there are only 4.3 hue families, both outside the real range, and the sky is a small strip. B: a warm pig and cow in front of a purple-violet stage with mixed confetti accents (warm share 0.51, 6.5 families).",
+   "fix": "Show more blue sky and paint the saloon a faded blue-grey or green, so the red shirt and pink pig stand on a cool backdrop. Make the boardwalk a grey weathered wood."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the camper body is cream-yellow, not neutral white. The lessons show this same white-to-cream drift on generated cards. It sits on a flat, very loud purple (background chroma 0.199, above the real range) over acid yellow-green grass. A: cobalt drum shells with gold hardware on a deep maroon stage. The saturation is rich but the shadows stay related, and the background stays in range.",
+   "fix": "Paint the camper body a clean neutral off-white with cool grey shadows. Tone the purple background down to a softer, slightly greyed violet, and make the grass a natural mid-green."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: watermelon red, orange slices and strawberries are pushed to pure hue (subject chroma 0.170, above the real range) on a yellow-orange wood table. The whole card is warm (0.853, the real maximum), and the green grapes and blueberries are small. B: a brown wheel against a soft lavender sky, a warm hero on a cool backdrop with moderate chroma.",
+   "fix": "Lower the fruit saturation a little, toward natural watermelon pink-red and softer orange. Put the plate on a cool surface, such as a blue-grey or teal tablecloth, instead of orange wood."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a yellow hay bale, orange rooster, orange cow muzzle, red bandana and red barn make the card mostly warm (0.683, above the real range). Shadow chroma is 0.724, below the real range, so the shadows go to a dull ochre. B: the cow against a purple-pink sunset and green bushes, which gives cooler backdrop masses, and its shadow chroma sits at the edge of the real range.",
+   "fix": "Make the backdrop cool with a larger blue sky and green grass. Shrink the hay to a small patch, paint the barn grey-blue, and keep the shadows on the hay a rich, deeper gold-brown instead of grey-ochre."
+  }
+ ],
+ "pattern": "Generated cards are pulled warm overall. Whites drift to cream (camper, sheep wool), and the backdrop repeats the hero's warm hue (wood floors, hay, saloons, pink blossoms) instead of setting it against a cool blue, green or violet field. The result is fewer hue families, a warm share above the real range, and a few pure-hue masses that are louder than real."
+}

@@ -1,0 +1,407 @@
+{
+ "title": "Movie cast",
+ "story": "Bonus character cards with the game's cast, two per film genre.",
+ "declined": [],
+ "variants": [
+  {
+   "cards": [
+    {
+     "name": "Sheriff Pals",
+     "subject": "The man in a cowboy hat tips it politely while the pig, in a cowboy hat that fits over its ears, holds a tin mug of coffee beside him, both in front of a saloon.",
+     "object_class": "character",
+     "category": "5",
+     "pattern": "full_scene",
+     "hero_colors": "brown hats, pink pig, tin grey mug",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "a boardwalk in front of a saloon",
+     "build_model": false,
+     "cast": [
+      "man",
+      "pig"
+     ],
+     "topic": "Western"
+    },
+    {
+     "name": "Ranch Hands",
+     "subject": "The cow wears a red bandana, and the rooster wears a tiny cowboy hat with a hole for its comb, standing on a hay bale next to the cow and sharing a bucket of oats.",
+     "object_class": "character",
+     "category": "5",
+     "pattern": "full_scene",
+     "hero_colors": "white and black cow, orange rooster, red bandana, tan hat",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "a hay bale on a ranch yard",
+     "build_model": false,
+     "cast": [
+      "cow",
+      "rooster"
+     ],
+     "topic": "Western"
+    },
+    {
+     "name": "Tea Time",
+     "subject": "The man in a top hat bows politely and hands a tea cup to the pig, who wears a straw bonnet and holds her saucer with both hands.",
+     "object_class": "character",
+     "category": "5",
+     "pattern": "full_scene",
+     "hero_colors": "brown, pink, black and white",
+     "backdrop_colors": "pink",
+     "surface_or_setting": "garden lawn with a small tea table",
+     "build_model": false,
+     "cast": [
+      "man",
+      "pig"
+     ],
+     "topic": "Period Drama"
+    },
+    {
+     "name": "Grand Ball",
+     "subject": "The sheep and the cow dance a waltz in a ballroom, the sheep in a tiny bow tie and the cow in a ribbon bonnet, both smiling.",
+     "object_class": "character",
+     "category": "5",
+     "pattern": "full_scene",
+     "hero_colors": "white, grey, black and orange",
+     "backdrop_colors": "green",
+     "surface_or_setting": "polished ballroom floor",
+     "build_model": false,
+     "cast": [
+      "sheep",
+      "cow"
+     ],
+     "topic": "Period Drama"
+    },
+    {
+     "name": "Cake Clue",
+     "subject": "The man in a trench coat and fedora holds a magnifying glass over an empty cake plate with a few crumbs, while the rooster beside him lifts a press camera to photograph the plate.",
+     "object_class": "character",
+     "category": "5",
+     "pattern": "full_scene",
+     "hero_colors": "tan trench coat, grey fedora, orange rooster, white plate, black camera",
+     "backdrop_colors": "sky blue office wall",
+     "surface_or_setting": "a wooden office floor with a table",
+     "build_model": false,
+     "cast": [
+      "man",
+      "rooster"
+     ],
+     "topic": "Detective"
+    },
+    {
+     "name": "Hoofprint Clue",
+     "subject": "The sheep and the cow each hold a magnifying glass and lean in to study one muddy hoofprint on the floor between them.",
+     "object_class": "character",
+     "category": "5",
+     "pattern": "full_scene",
+     "hero_colors": "white fleece, dark grey face, white and black cow, orange muzzle, brown mud",
+     "backdrop_colors": "grass green barn yard with a blue sky",
+     "surface_or_setting": "a barn floor of packed straw",
+     "build_model": false,
+     "cast": [
+      "sheep",
+      "cow"
+     ],
+     "topic": "Detective"
+    }
+   ]
+  }
+ ],
+ "problems": [],
+ "sensitive": [],
+ "cast": 2,
+ "sources": [
+  {
+   "title": "Period Drama",
+   "story": "Tea is poured, letters are sealed, and everyone dresses for the ball.",
+   "declined": [],
+   "variants": [
+    {
+     "cards": [
+      {
+       "name": "Top Hat",
+       "subject": "A tall black silk top hat with a flat crown, a curled wide brim and a band around the base.",
+       "object_class": "clothing",
+       "category": "1",
+       "pattern": "concentric_rings",
+       "hero_colors": "black with a red band",
+       "backdrop_colors": "sky blue",
+       "surface_or_setting": "",
+       "build_model": false,
+       "cast": []
+      },
+      {
+       "name": "Pocket Watch",
+       "subject": "A perfectly round gold pocket watch with a round white face with numbers, a small crown on top, a ring loop and a short chain attached to the ring.",
+       "object_class": "accessory",
+       "category": "1",
+       "pattern": "rays",
+       "hero_colors": "gold with a white face and a blue glass-free tip on the hands",
+       "backdrop_colors": "cyan",
+       "surface_or_setting": "",
+       "build_model": true,
+       "cast": []
+      },
+      {
+       "name": "Bonnet",
+       "subject": "A straw bonnet with a deep rounded crown, a wide brim curving around the face and a ribbon tied in a bow under the chin.",
+       "object_class": "clothing",
+       "category": "1",
+       "pattern": "plain_gradient",
+       "hero_colors": "tan straw with a red ribbon",
+       "backdrop_colors": "green",
+       "surface_or_setting": "",
+       "build_model": false,
+       "cast": []
+      },
+      {
+       "name": "Tea Cup",
+       "subject": "A white porcelain tea cup with a curved handle and a gold rim, resting on a matching round saucer, with steam rising.",
+       "object_class": "food_drink",
+       "category": "2",
+       "pattern": "plain_gradient",
+       "hero_colors": "white porcelain with gold rim and a pink band",
+       "backdrop_colors": "purple",
+       "surface_or_setting": "",
+       "build_model": false,
+       "cast": []
+      },
+      {
+       "name": "Candlestick",
+       "subject": "A brass candlestick with a round base, a slim stem and a cup holding a tall ivory candle, topped with a bright fire with a yellow-white glowing core, orange flame tips curling upward, and warm orange light cast on the table near it.",
+       "object_class": "tool",
+       "category": "3",
+       "pattern": "stripes",
+       "hero_colors": "brass gold with an ivory candle",
+       "backdrop_colors": "blue",
+       "surface_or_setting": "dark polished wood table",
+       "build_model": true,
+       "cast": []
+      },
+      {
+       "name": "Quill Pen",
+       "subject": "A long white feather quill lying beside a round glass inkwell filled with ink, with the quill tip resting on the inkwell rim.",
+       "object_class": "tool",
+       "category": "3",
+       "pattern": "surface_from_above",
+       "hero_colors": "white feather with a dark navy ink bottle",
+       "backdrop_colors": "orange",
+       "surface_or_setting": "dark polished wood table",
+       "build_model": false,
+       "cast": []
+      },
+      {
+       "name": "Gas Lamp",
+       "subject": "A tall black cast-iron street lamp with a round base, a slim pole and a four-sided glass lantern on top glowing warm yellow, standing on a cobblestone street.",
+       "object_class": "building_place",
+       "category": "4",
+       "pattern": "full_scene",
+       "hero_colors": "black iron with glowing yellow light",
+       "backdrop_colors": "sky blue",
+       "surface_or_setting": "cobblestone street pavement beside a curb",
+       "build_model": true,
+       "cast": []
+      },
+      {
+       "name": "Front Door",
+       "subject": "A closed dark blue panelled front door seen from the street, with a brass knocker in the middle, a brass handle on the side opposite the hinges, a round window above and two stone steps in front.",
+       "object_class": "building_place",
+       "category": "4",
+       "pattern": "full_scene",
+       "hero_colors": "dark blue with brass fittings",
+       "backdrop_colors": "warm yellow",
+       "surface_or_setting": "cream brick wall of a townhouse with stone steps",
+       "build_model": true,
+       "cast": []
+      },
+      {
+       "name": "Tea Time",
+       "subject": "The man in a top hat bows politely and hands a tea cup to the pig, who wears a straw bonnet and holds her saucer with both hands.",
+       "object_class": "character",
+       "category": "5",
+       "pattern": "full_scene",
+       "hero_colors": "brown, pink, black and white",
+       "backdrop_colors": "pink",
+       "surface_or_setting": "garden lawn with a small tea table",
+       "build_model": false,
+       "cast": [
+        "man",
+        "pig"
+       ]
+      },
+      {
+       "name": "Grand Ball",
+       "subject": "The sheep and the cow dance a waltz in a ballroom, the sheep in a tiny bow tie and the cow in a ribbon bonnet, both smiling.",
+       "object_class": "character",
+       "category": "5",
+       "pattern": "full_scene",
+       "hero_colors": "white, grey, black and orange",
+       "backdrop_colors": "green",
+       "surface_or_setting": "polished ballroom floor",
+       "build_model": false,
+       "cast": [
+        "sheep",
+        "cow"
+       ]
+      }
+     ]
+    }
+   ],
+   "problems": [],
+   "sensitive": [],
+   "cast": 2
+  },
+  {
+   "title": "Detective",
+   "story": "A cozy case file of clues, gear and funny sleuths.",
+   "declined": [],
+   "variants": [
+    {
+     "cards": [
+      {
+       "name": "Magnifier",
+       "subject": "A round magnifying glass with a clear lens, a silver rim and a thick brown wooden handle with a gold band where the handle meets the rim.",
+       "object_class": "tool",
+       "category": "1",
+       "pattern": "rays",
+       "hero_colors": "brown wood handle, silver rim, clear glass lens, gold band",
+       "backdrop_colors": "cyan and light blue",
+       "surface_or_setting": "",
+       "build_model": true,
+       "cast": []
+      },
+      {
+       "name": "Badge",
+       "subject": "A gold shield-shaped detective badge with a raised star in the middle, a scalloped edge and a red enamel circle in the center of the star, lying flat.",
+       "object_class": "accessory",
+       "category": "3",
+       "pattern": "surface_from_above",
+       "hero_colors": "gold, red enamel center circle",
+       "backdrop_colors": "blue",
+       "surface_or_setting": "wooden desk top seen from above",
+       "build_model": true,
+       "cast": []
+      },
+      {
+       "name": "Press Camera",
+       "subject": "A vintage press camera with a black boxy body, a round glass lens at the front, a silver top handle and a round flash reflector fixed on a bracket on top, with a small red button.",
+       "object_class": "electronics",
+       "category": "2",
+       "pattern": "plain_gradient",
+       "hero_colors": "black body, silver trim, red button",
+       "backdrop_colors": "rich purple floor and backdrop",
+       "surface_or_setting": "",
+       "build_model": true,
+       "cast": []
+      },
+      {
+       "name": "Office Door",
+       "subject": "A closed wooden office door seen from the corridor side, with a frosted glass window showing a fedora and magnifier silhouette icon, a brass knob on the side opposite the hinges, and a lit office faintly visible behind the glass.",
+       "object_class": "building_place",
+       "category": "4",
+       "pattern": "full_scene",
+       "hero_colors": "dark brown wood, brass knob, frosted white glass, a small yellow glow from inside",
+       "backdrop_colors": "blue corridor wall",
+       "surface_or_setting": "a corridor wall with a tiled floor at its base",
+       "build_model": true,
+       "cast": []
+      },
+      {
+       "name": "Fedora",
+       "subject": "A grey felt fedora with a creased crown, a pinched front and a wide brim that curves slightly, with a red band around the crown.",
+       "object_class": "accessory",
+       "category": "1",
+       "pattern": "concentric_rings",
+       "hero_colors": "charcoal grey felt, red band",
+       "backdrop_colors": "grass green and light green",
+       "surface_or_setting": "",
+       "build_model": false,
+       "cast": []
+      },
+      {
+       "name": "Fingerprint",
+       "subject": "A white index card with a large swirled thumbprint icon in dark ink and a few empty box outlines, lying flat.",
+       "object_class": "paper_document",
+       "category": "3",
+       "pattern": "surface_from_above",
+       "hero_colors": "white card, dark navy ink, a light green corner stripe",
+       "backdrop_colors": "pink",
+       "surface_or_setting": "wooden desk top seen from above",
+       "build_model": false,
+       "cast": []
+      },
+      {
+       "name": "Street Lamp",
+       "subject": "A tall black iron street lamp with a fluted post, a round base, a green band around the post and a glass lantern on top glowing warm yellow, standing on cobblestones at dusk.",
+       "object_class": "building_place",
+       "category": "4",
+       "pattern": "full_scene",
+       "hero_colors": "black iron, warm yellow glowing glass, green band",
+       "backdrop_colors": "violet sky turning pink at the horizon",
+       "surface_or_setting": "a cobblestone street corner with a stone curb",
+       "build_model": true,
+       "cast": []
+      },
+      {
+       "name": "Coffee Mug",
+       "subject": "A white ceramic mug with a curved handle, filled with steaming coffee, with a small red house pictogram printed on its side in one color, and a glazed donut resting on a saucer beside it.",
+       "object_class": "food_drink",
+       "category": "3",
+       "pattern": "plain_gradient",
+       "hero_colors": "white mug, dark brown coffee, tan donut, red house print",
+       "backdrop_colors": "sky blue",
+       "surface_or_setting": "wooden desk top",
+       "build_model": false,
+       "cast": []
+      },
+      {
+       "name": "Cake Clue",
+       "subject": "The man in a trench coat and fedora holds a magnifying glass over an empty cake plate with a few crumbs, while the rooster beside him lifts a press camera to photograph the plate.",
+       "object_class": "character",
+       "category": "5",
+       "pattern": "full_scene",
+       "hero_colors": "tan trench coat, grey fedora, orange rooster, white plate, black camera",
+       "backdrop_colors": "sky blue office wall",
+       "surface_or_setting": "a wooden office floor with a table",
+       "build_model": false,
+       "cast": [
+        "man",
+        "rooster"
+       ]
+      },
+      {
+       "name": "Hoofprint Clue",
+       "subject": "The sheep and the cow each hold a magnifying glass and lean in to study one muddy hoofprint on the floor between them.",
+       "object_class": "character",
+       "category": "5",
+       "pattern": "full_scene",
+       "hero_colors": "white fleece, dark grey face, white and black cow, orange muzzle, brown mud",
+       "backdrop_colors": "grass green barn yard with a blue sky",
+       "surface_or_setting": "a barn floor of packed straw",
+       "build_model": false,
+       "cast": [
+        "sheep",
+        "cow"
+       ]
+      }
+     ]
+    }
+   ],
+   "problems": [],
+   "sensitive": [],
+   "cast": 2
+  }
+ ],
+ "notes": [
+  "Bonus character cards, two per final genre, drawn in one go with the cast's real cutouts attached (experiments/cast_trial.py: 3.8 against 1.5-2.4 for pasted figures).",
+  "Western: Sheriff Pals (outside 4) and Ranch Hands (outside 3) from the pre-final cast run, redrawn.",
+  "Period Drama and Detective: two new cards each, the character cards of a full plan with --cast 2 (Tea Time, Grand Ball; Cake Clue, Hoofprint Clue).",
+  "The brief asks for no character cards, so these sit apart from the three sets."
+ ],
+ "request": {
+  "theme": "Movie cast",
+  "wishes": "",
+  "variants": 1,
+  "cast": 2,
+  "plan": "runs/plans/final-cast.json",
+  "references": true,
+  "alongside": []
+ }
+}

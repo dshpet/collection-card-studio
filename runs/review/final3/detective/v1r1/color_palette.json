@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a black-and-white police car with one red light, on cool grey road and blue sky. Its neutral body against a bright sky matches the taxi-on-road anchor. B: a red bike on a pale blue car under an orange sunset sky, with yellow hills. That is about 7 hue families, above the real range, and the sky pulls the top third of the card warm.",
+   "fix": "Use a plain clear blue daytime sky with no sunset orange. Keep the bike red and the car a soft grey-blue, with no golden-hour tint on the hills."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a pure yellow-orange player on a very loud violet ring backdrop (background chroma above the real range), and the white earbuds are tinted lavender. B: a muted brick-red camera with grey-silver metal on cyan rings, with believable local colors.",
+   "fix": "Make the violet ring backdrop calmer and less saturated. Keep the earbuds clean neutral white, and give the player a slightly warmer, less candy-yellow orange."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a lime-green backpack against a red-orange diamond backdrop, a cool hero on a warm ground. The brown straps repeat the backdrop's red-orange, and the blue mat adds a fifth family. B: yellow fins on a purple ring backdrop, warm against cool, with purple-grey foot pockets.",
+   "fix": "Put the green backpack on a cool sky-blue or teal backdrop. Make the green a natural canvas green instead of neon lime, and keep the straps brown leather."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a navy safe with a gold dial on a pink backdrop, so a gold accent and warm-cool contrast. B: a royal-blue machine on a violet backdrop, cool hero on a cool ground with adjacent hues. Almost nothing on the card is warm, and the glass shelf glows cyan.",
+   "fix": "Put the blue vending machine on a warm yellow or orange backdrop. Make the glass front clear and neutral instead of glowing cyan."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a red-brown and tan dog on bright green grass against blue stripes, with several related browns. B: a rocking chair in one flat, saturated orange that repeats in the floorboards, with a lime cushion. Hero and floor share one hue, the way the generated glove was pushed to pure orange.",
+   "fix": "Paint the chair a natural honey-brown wood with darker brown shading. Make the floor a paler, greyer wood that differs from the chair, and use a muted olive-green cushion."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a red-framed white backboard on cyan, warm accent on a cool ground with a neutral white mass. B: the magnifier lens is tinted the same green as the ring backdrop, so the hero repeats the background hue. Only red and green are on the card.",
+   "fix": "Make the magnifier glass clear and pale blue-white, not green. Keep the red handle and silver rim."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a brass lamp on yellow-green rays. The gold hero and the backdrop fall into one yellow-olive family in the lens, so the hero hue repeats into the background. B: a red flashlight on cyan rays, a clean warm-on-cool split.",
+   "fix": "Put the brass lamp on a cool blue or turquoise ray backdrop so the gold stands apart from it."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a brown leather wallet on dark brown wood. Almost the whole card is warm, background chroma is below the real range, and there are only about 1.6 hue families. The hero repeats the backdrop hue, and only the small green card breaks it. A: a teal book on orange wood, a cool hero on a warm ground with many sticker colors.",
+   "fix": "Put the wallet on a bright, cool blue backdrop instead of dark wood. Make the leather a warm tan so it stands out against the blue."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a dim, low-chroma dark-mahogany wood table, with both subject and background chroma below the real range. The lavender-grey bag and gold ring are the only other colors. B: a blue racket and yellow ball on a saturated green court, closer to the bright real grounds.",
+   "fix": "Use a bright, clean colored backdrop such as light blue rays instead of dark wood. Keep the bag clear with soft blue-white edges and the ring warm gold."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: blue sneakers carry lime, teal, pink, magenta and orange laces and trims, about 5.5 hue families, above the real range. Every accent is a pure hue. B: an orange felt hat with one green band on purple, warm against cool with a single accent.",
+   "fix": "Make the sneakers mostly blue and white with one accent color only. Use a plain grey sole and white laces, with no rainbow trims."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the neck pillow is pure electric blue across its whole mass, with subject chroma above the real range. It sits on a hot-pink backdrop, so both masses are loud with no neutral rest. A: a white goal and an orange ball in a blue pool, with neutral white frames resting the eye.",
+   "fix": "Make the pillow a softer, slightly dusty blue fabric with gentle grey-blue shading. Make the pink backdrop paler."
+  },
+  {
+   "pair": "p12",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the gold knob, the gold plate and the yellow room behind the door all share one yellow-orange family against flat green. With few families, the hero hue repeats into the background. B: a blue door, orange frame, green ivy and pink and yellow flowers, about 4 families, within the real range.",
+   "fix": "Make the room behind the door cool and neutral, pale grey-blue, so only the knob and plate are gold."
+  }
+ ],
+ "pattern": "Generated cards push the hero to one pure, flat hue (neon lime, electric blue, candy orange) and let it repeat into the backdrop: warm on warm wood, blue on violet, a green lens on a green ground. Real cards set a warm hero against a cool ground and keep neutrals greyish rather than cream."
+}

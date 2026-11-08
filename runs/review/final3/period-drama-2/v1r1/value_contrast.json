@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: dark purple canopy, near-black on its right side, set on a busy light-grey/white diamond field. Its value grouping looks real-card-like even though the key (0.805) sits just above the real range. B: the fan's mid-grey ribs sit inside a pasted-on white halo that follows its outline. That cut-out glow is the same as the lesson-generated glove's halo.",
+   "fix": "Remove the bright white glow hugging the fan's outline; keep the yellow background an even mid-light tone right up to the fan's edge, with only a soft broad light patch behind it."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the sky and sunburst rays go almost pure white over the whole top half, and the overall key (0.792) is above the real range. The mid-grey suitcase sits on a washed-out, near-clipped field. B: the dark chest is grouped against mid-grey flagstones and blue rays, with a clear three-level split.",
+   "fix": "Darken the sunburst behind the suitcase to a saturated mid-yellow with visible ray stripes, no near-white sky; keep the brightest tones only on small highlights of the case."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a full stage scene with a dark red backboard, lit bulbs and a black shelf front, broken into clear light, mid and dark groups. B: the envelope is a near-white mass on a lighter circular glow ring, with the green corners going dark (vignette 0.101, above the range). Contrast inside the envelope is flat (rms 0.116, below the range).",
+   "fix": "Flatten the green background to one even tone with no light ring behind the envelope and no darkened corners; add firmer shadow under the photo stack and the envelope flap."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the hatbox's black lid and stripes sit on a mid-grey green field with a soft light patch behind and a cast shadow; this is in range. B: a product-photo split into a flat orange wall and a near-white floor. The key (0.762) is above the range and the vignette is slightly negative, with no light/dark structure around the shoes.",
+   "fix": "Give the back wall a gentle radial light behind the shoes that falls off toward the corners, and tone the floor down to a warm mid-light, not near-white."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the piano is one near-black mass against a near-white wallpaper wall, with mirror-like reflections on the floor. The hero-to-ground gap (-0.33) and contrast (0.223) are both beyond the real range. B: the guitar sits on a mid-value stage, with its spotlight beams as light groups.",
+   "fix": "Lighten the piano body to a warm mid-brown with visible lit faces on the lid and front panel, and calm the wall to a mid-light cream so the piano is not a black silhouette."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the card is split into two flat blocks, a near-black purple wall behind a near-white tablecloth. The white cake stand merges with the cloth, with no value separation. The gap (0.209), contrast (0.221) and inverted vignette (-0.101) are all out of range. B: the fountain is uniformly light-mid with soft contrast. Its key is a little high, but the groups are coherent.",
+   "fix": "Lighten the purple wall to a mid-tone with soft stripes, and tint the tablecloth darker lilac so the white stand reads brighter than the cloth beneath it."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: a near-black glossy cup with a light glow behind it and slightly darker corners. B: a dark-blue machine with a light glass panel and a soft glow behind it. Both fall inside the real ranges, and both use the dark-hero-on-lit-ground layout seen in the real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the gold watch is light-mid, with a white face on mid-grey diamonds. It is low contrast (0.098) but in range. B: the ring box is a near-black frame inside a bright white burst glow, and the corners go dark (vignette 0.162, above the range). This is the lesson-generated halo-plus-black-accent layout.",
+   "fix": "Remove the bright glow ring behind the box and keep the sunburst rays an even mid-blue to the corners; lift the red box's shadow side so it is dark red, not black."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the top hat is a huge near-black mass with only thin highlights, on a light circular glow. The gap (-0.45) and contrast (0.225) are far outside the real range. B: the graduation cap is also dark on a glow circle, but its gap (-0.312) is milder and a gold band breaks up the dark mass.",
+   "fix": "Lighten the hat to a deep charcoal-blue with broad soft sheen across the crown and brim, so it is not a solid black shape against the bright ring."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: a red fan in mid-dark tones on mid-light wavy blue, with an even key. B: a red scarf with a near-black inner collar on a light swirl centre, with darker edges (vignette 0.115, in range). Both match the real groupings.",
+   "fix": ""
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the rocking chair is mid-light against a darker striped blue wall, on a light floor, with all three value groups present and in range. B: a near-white feather is set against a white glow patch on the yellow wall, above a near-black ink bottle. The key (0.774) is above the range, and the hard white/black pairing sits at the centre.",
+   "fix": "Remove the white glow behind the feather; tone the feather to a warm cream with soft grey shading, and lift the ink bottle to a deep green with visible glass highlights, not a black blob."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the red bus is a dark-mid mass against a light sky and buildings, with good local contrast (0.172). B: the ice-cream sign is mostly mid-grey on a mid-grey green wall, with only the neon outline light. Contrast (0.098) is below the real range, so the card reads flat and the hero is separated almost only by hue.",
+   "fix": "Make the cone and scoop clearly lighter than the green wall, with a bright lit top on the scoop and a darker shadowed underside, and darken the wall slightly toward the edges."
+  }
+ ],
+ "pattern": "Generated cards push values to extremes that the real cards avoid. Heroes go near-black against near-white or glowing grounds, which gives out-of-range hero gaps and contrast. A pasted-on bright halo hugs the hero's outline, sometimes with darkened corners. Alternatively, the whole card goes washed-out high-key or flat mid-grey, with no three-level grouping. Real cards keep the hero mid-dark on an even mid-light ground and reserve black for small accents."
+}

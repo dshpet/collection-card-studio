@@ -1,0 +1,45 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "loose": [
+   {
+    "parts": 5,
+    "kinds": [
+     "box",
+     "tube"
+    ],
+    "at": [
+     0.25,
+     -0.03,
+     0.06
+    ],
+    "size": [
+     0.38,
+     0.35,
+     0.03
+    ]
+   }
+  ],
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The ID card, its green stripes, the pocket front and the pocket lip float about 1 cm above the right flap, because the guessed height `top` (t+0.016) is above the flap's real top surface. The 3-degree flap tilt makes that surface height vary across the flap.",
+   "The flaps' undersides sit 0.006 above the table (z = 0), so the wallet floats instead of lying on the table.",
+   "Fix: lay the flaps flat on the table without the tilt, set top to the real flap top (t), and place each part on the surface below it."
+  ]
+ },
+ {
+  "round": 2,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The table planks have nothing under them, so the cyan backdrop shows through a plank seam as a bright line at the bottom left. The table is not solid and the category-3 surface must fill the card with no backdrop.",
+   "The table reads as a light pinkish-brown, not the dark wooden table named on the card, and it is close in tone to the leather, so the wallet does not stand out. Darken the wood and slightly deepen the leather."
+  ]
+ }
+]

@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the beach ball's panels are one smooth, evenly lacquered vinyl with a big soft white hotspot and no seam lines between panels. Its detail and micro-texture fall below the real range, and only the sand has fine speckle. B: the dock has quiet wood grain on the planks and post tops, a rope with readable twist, and matte wood beside a glossier life ring. That gloss range matches the real cards.",
+   "fix": "Draw thin raised seams between the beach-ball panels and a slightly dulled vinyl surface with a narrow highlight, not a broad glow."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the pocket watch case, crown and chain are all the same mirror-polished gold. The crown has fine knurling and the bright highlight band covers much of the case (highlight 0.355, about twice the real maximum). A: the ring box mixes a satin red shell with a matte cream velvet insert and a smooth gold coin. That matte/shiny split is how the real cards look.",
+   "fix": "Make the gold case satin with one narrow highlight streak. Leave the crown as a plain smooth band without ridges and make the chain a few broad links. Keep the dial matte."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the hatbox is a featureless red cylinder with a navy lid and no material cue: no paper or board texture, no lid seam, the same soft sheen everywhere (detail 0.008, far below the real range). Only the rope handle has any texture. B: the sneakers mix fine mesh dots on the upper, matte rubber soles and glossy laces. That fits the real range.",
+   "fix": "Show the hatbox as covered cardboard: faint paper texture on the sides, a soft matte finish, a small lip at the lid edge and a slightly brighter rim highlight on the lid."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the velvet cushion has photographic pile and fuzz and every pearl carries the same bright specular dot (highlight 0.182, above the real range). It reads as a photo render, not stylized. B: the paper map is matte with soft folds and the magnifier has a glossy metal rim. That matte-paper/shiny-metal contrast is in the real style.",
+   "fix": "Paint the cushion as smooth, softly shaded satin-matte cloth without fibre fuzz. Give the pearls one small soft highlight each, not hot specular dots."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the cake stand is glossy porcelain on every tier, plate and stem, and the cakes are equally shiny (highlight 0.252, far above real). The tablecloth has fine woven-linen texture that is too photographic. B: the stone fountain is matte with quiet carved lobes, and only the water is glossy. That is a clear gloss range.",
+   "fix": "Make the stand's porcelain soft satin with highlights only on rims. Make the cakes matte fondant and the tablecloth plain smooth fabric without a visible weave."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the fan's paper pleats are flat matte red with faint mottled noise and soft, mushy fold edges. The bamboo ribs are thin uniform sticks with no grain, and the pivot is a single glossy bead. A: the scarf reads as soft cloth with smooth folds and a cleanly bevelled enamel badge, like the real cards.",
+   "fix": "Give the fan pleats crisp alternating light and shadow faces and a faint paper sheen on the ridges. Draw the ribs as smooth polished wood with a subtle highlight line."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the DJ deck's body, knobs and buttons are all the same smooth toy plastic with the same sheen, and the fader slots and buttons are many small separate parts (detail and gloss above the real range). A: the scroll has matte paper, a waxy seal and satin ribbon, three separable materials.",
+   "fix": "Separate the materials on the deck: matte rubber pads, brushed-metal platters, glossy plastic housing. Merge the small buttons into a few broader strips."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the top hat's crown is one smooth dark satin with a vertical sheen, the band is glossy ribbon, and there is no felt or silk nap, so it reads as plastic. A: the mortarboard is matte with a crisp edge and a smooth cord, consistent with the real flat-faced simplification.",
+   "fix": "Draw the hat as matte felt with a faint soft nap. Keep the sheen on the silk band only and add a slightly rolled brim edge with a thin highlight."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the trunk has large decorative wood-grain streaks across every plank, dashed stitching along both leather straps, punched strap holes and small rivets on the brass corners. That fine-detail overload is what the lesson generated cards show (detail and micro-texture at the top of the range). B: the suitcase is a smooth matte leather surface with a few scuffs and glossy stickers, the simpler real finish.",
+   "fix": "Remove the strap stitching and rivets. Make the wood a smooth painted surface with only faint quiet grain, and draw the straps as broad plain leather bands with simple brass buckles."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the teacup and saucer are uniformly lacquered cobalt porcelain with multiple stacked specular streaks and a gilt rim that shines the same as the glaze. The steam is a smeared photo wisp. A: the vending machine mixes a satin painted body, frosted glass with condensation beads and chrome trim, a varied real-style gloss range.",
+   "fix": "Give the porcelain one soft highlight per curve and a slightly more matte glaze. Make the gold rim a thin metallic line and the steam a simple stylized curl."
+  },
+  {
+   "pair": "p11",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the parasol has a fine eyelet-lace frill with tiny embroidered cut-outs and seams at each rib joint. Those are small, busy details at 2×, where the real cards simplify (highlight 0.141). A: the fan is flat matte paper with plain wooden ribs, very low detail but consistent with the real simplification.",
+   "fix": "Simplify the lace to a plain scalloped white ruffle without perforations. Keep the canopy satin with one soft highlight per panel."
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the piano's mahogany carries large, decorative wavy grain on every panel under a full high-gloss lacquer, and the floor repeats the same glossy grain. Everything is equally shiny (gloss 0.095, but highlights everywhere) and the keys are many tiny crisp parts. A: the guitar's red lacquer body sits beside matte pickups, a fretboard and a woven strap, a varied gloss range like the real cards.",
+   "fix": "Make the piano wood smooth reddish-brown with faint quiet grain and a satin finish. Put highlights only on top edges and render the keys as a simplified row."
+  }
+ ],
+ "pattern": "Generated cards give themselves away in two ways on surface. First, they fill in fine, busy detail the real cards leave out: stitched seams, rivets, lace perforations, knurled crowns and big decorative wood grain. Second, they put one uniform lacquer over every material: gold, porcelain and wood all equally glossy, with stacked hotspots. Some swing the other way, to featureless single-material surfaces (hatbox) or photographic textures (velvet pile, linen weave). Real cards mix matte and satin parts on one object and simplify hardware into broad, smooth pieces."
+}

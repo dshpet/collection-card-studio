@@ -1,0 +1,89 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: police car at a 3/4 front view on a road that recedes to the upper right. The dashed lane line and the curb run parallel to the car's side, and the house sits further back as a simpler layer. This reads like the real taxi card. B: a tight, low crop of a bike on a rear rack. The bike and the car's back face the camera on the same plane, and the road and mountains behind fall back cleanly. Each card holds one viewpoint.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the player is tilted toward the viewer, with its front face as one even patch and the earbuds floating at the same depth, with no ground. B: retro camera at a mild 3/4 turn from slightly above. Its top face shows green in the normals and its right side is visible, and the flash dish is turned to match. Both keep one consistent view on a flat background.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: backpack turned to the left on a floor, with the horizon about two-thirds down the card. The side pocket and the end of the rolled mat show on the right, which fits that turn. B: fins seen steeply from above on a flat backdrop with no ground. The openings of both foot pockets are visible, and both fins share the same angle. Neither card shows a viewpoint conflict.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the safe door is drawn almost flat to the camera with level top and bottom edges, but the right side panel recedes steeply. The front looks orthographic and the side looks perspective. The planar share of 0.665 is above the real range. B: the vending machine is a mild 3/4 with the left side narrow and the floor horizon low behind it. The front and side converge gently together.",
+   "fix": "Turn the safe a little so the front door and the right side both recede gently toward the same far point. Keep the front's top and bottom edges slightly slanted, and narrow the side panel."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: low, close camera on the dog, with the grass meeting the wall low on the card. The dog is cropped tight and big in frame, much like the real lighthouse lesson. B: the whole chair sits in the middle of the frame and is seen from above. The floorboards converge sharply toward the upper left while the wall base is a flat horizontal line, so the floor's perspective is stronger than the chair's. That matches the lessons' generated look: whole object, centered, higher camera.",
+   "fix": "Lower the camera toward seat height and bring the chair closer, letting the rockers run off the bottom edge. Make the floorboards converge only gently, in line with the chair."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the backboard is seen from below with a strong worm's-eye slant, its left edge taller than its right. The orange rim, though, shows its top surface and the inside of the ring, as if seen from above. The board and the hoop use two different camera heights. Planar share 0.699 is above the real range. B: the magnifier floats on a diagonal, and the lens ring and handle share one turn.",
+   "fix": "Draw the hoop rim from below like the board: show only the underside and front of the orange ring, with the net hanging straight down. Soften the upward slant of the board."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the lamp is dead-frontal and symmetric, with the chimney opening and the base ellipses all seen at the same mild height and no turn at all. The planar share of 0.003 is below the real range. This matches the frontal look of the generated lesson cards. B: the flashlight is foreshortened along a diagonal, its head ring is an ellipse that matches the body's turn, and it reads like the real telescope.",
+   "fix": "Turn the lamp slightly to one side so the handle swings toward the viewer. Look down a little more so the base and the top of the oil bowl show as deeper ovals."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: book seen from high front right, with the page block showing on the bottom and right edges and the wood grain running roughly along the book. B: wallet seen from high above on planks that recede gently, with its thickness showing on the near edge. Both have consistent high cameras, and the planar shares are both high.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the bag reads as almost top-down and its outline is skewed like a warped trapezoid. The gold ring in its center shows a tall inner wall, as if seen from a steeper side angle than the bag. The planks run at yet another slant. Planar share 0.833 is far above the real range. B: the racket and ball lie on the court with one oblique view, and the court line recedes in line with the racket.",
+   "fix": "Make the bag a clean rectangle lying flat in the same gentle perspective as the table planks. Draw the ring as a low, flat oval lying on the bag, showing only a thin inner edge."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the two sneakers sit centered on a floor with a hard horizontal floor-wall split. The back shoe is no smaller than the front one, so the pair has almost no depth, and the whole object is in a staged product shot. B: the fedora's brim is a single ellipse that matches the camera height on the crown, and it floats over a soft cast shadow.",
+   "fix": "Set the back sneaker a little smaller and higher, as if further away. Bring the camera closer and lower so the near shoe overlaps the far one more."
+  },
+  {
+   "pair": "p11",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: water polo goal seen from above and front, cropped at the left edge. The side frames recede to both sides from a centered camera, and the pool lane recedes at the top right. B: the neck pillow is nearly frontal with a slight turn showing thickness on its right edge, floating with no ground. Both are self-consistent.",
+   "fix": ""
+  },
+  {
+   "pair": "p12",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a close, cropped view of the knob, with its neck showing to the right of it. The open doorway on the right has a room that falls back as a separate background layer, so there are three depth layers. B: a straight-on, flat elevation of the door, with no depth on the frame or panels. The ivy is the only overlap, and the planar share of 0.012 is below the real range.",
+   "fix": "Turn the door slightly so the frame's side edge and the panel bevels show depth, and let the step or doorstep show a sliver of its top. Push the ivy forward as a distinct front layer."
+  }
+ ],
+ "pattern": "Generated cards use a frontal, centered, whole-object camera on a staged ground or backdrop. Their parts also disagree on camera height: a hoop rim seen from above on a board seen from below, a ring seen at a steeper angle than its bag, a flat-on safe door with a steeply receding side. Real cards commit to one mild 3/4 turn, crop closer, and keep every part on one perspective."
+}

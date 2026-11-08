@@ -40,7 +40,7 @@ flowchart LR
 
 | Stage | What happens |
 |---|---|
-| Plan | Claude Sonnet plans the variants by rules taken from the real sets and the producer's [lessons](analysis/lessons.md). A second call flags cards that could upset players, and the plan is repaired, at most twice. Wishes the rules forbid, and anything still flagged, are listed in the report |
+| Plan | Claude Sonnet plans the variants by rules taken from the real sets and the producer's [lessons](analysis/lessons.md). A second call flags cards that could upset players, and the plan is repaired, at most twice. Wishes the rules forbid, and anything still flagged, are listed in the report. `spec.md` documents the set as designed, before any drawing |
 | References | Each card gets three real cards: same art category, backdrop pattern and object class, ties broken by text search over the card images (`search.py`) |
 | Model | For built objects of several parts, Claude Opus writes a Blender model, looks at its render and fixes it, up to two rounds. Simple forms skip this |
 | Draw | Codex's image model draws three candidates per card, restyling the model's render where there is one |
