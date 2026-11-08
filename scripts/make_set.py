@@ -286,7 +286,8 @@ def build_model(folder, brief, rater, look, photos):
     task = (f"{(ANALYSIS / 'agents' / 'modeller.md').read_text('utf-8')}\n\nTwo models from the trial, as examples of the "
             f"file:\n{examples}\n\nThe card: {card['name']}. {card['subject']}\nCategory {card['category']}: "
             f"{staging}\nHero colors: {card['hero_colors']}.\nBackdrop colors: "
-            f"{card['backdrop_colors']}.\nSurface or setting: {card['surface_or_setting'] or 'none'}.")
+            f"{card['backdrop_colors']}.\nSurface or setting: {card['surface_or_setting'] or 'none'}."
+            + (f"\nThe producer's note on this card: {card['note']}" if card.get("note") else ""))
     references = [ROOT / f"materials/card_examples/{i}.png" for i in brief["references"]]
     seen = (f"The first {len(references)} images are real cards of the same category, of other objects. Match their camera, "
             "framing and how much setting shows.")
@@ -356,7 +357,8 @@ def make_briefs(plan, cards):
 
 def keep_cards(run, source, briefs):
     """Fix round: a card whose plan is unchanged keeps source's brief, tries and pick, marked kept, and is not drawn,
-    picked or reviewed again. A card with the same object also keeps its Blender model. Returns the updated briefs."""
+    picked or reviewed again. A card with the same object, staging and note also keeps its Blender model, so a new
+    note gets a new model. Returns the updated briefs."""
     old_briefs = {b["id"]: b for b in load_json(source / "briefs.json")}
     old_history = load_json(source / "check.json")
     history, kept = {}, []
@@ -364,7 +366,8 @@ def keep_cards(run, source, briefs):
         old = old_briefs.get(brief["id"])
         if not old:
             continue
-        same_object = all(old["card"].get(key) == brief["card"].get(key) for key in ("name", "subject"))
+        same_object = all(old["card"].get(key) == brief["card"].get(key)
+                          for key in ("name", "subject", "category", "pattern", "note"))
         if same_object and brief["card"].get("build_model") and not (run / "models" / f"{brief['id']}.png").exists():
             for path in (source / "models").glob(f"{brief['id']}.*"):
                 (run / "models").mkdir(parents=True, exist_ok=True)
@@ -645,7 +648,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("theme")
     parser.add_argument("--wishes", default="")
-    parser.add_argument("--variants", type=int, default=3)
+    parser.add_argument("--variants", type=int, default=3, choices=range(1, 6), metavar="1-5")
     parser.add_argument("--workers", type=int, default=4)
     parser.add_argument("--candidates", type=int, default=CANDIDATES, help="drawings per card to choose from")
     parser.add_argument("--review-rounds", type=int, default=REVIEW_ROUNDS, help="0 skips the specialists and edits")
@@ -771,6 +774,10 @@ def main():
                 record_edits(run, round_number, drawn, before, notes, won)
                 print(f"variant {variant} review {round_number}: kept {len(won)} of {len(drawn)} edits", flush=True)
                 save_json(run / "check.json", history)
+                if len(drawn) < len(notes):  # an edit failed to draw: the round stays open for a rerun
+                    print(f"variant {variant} review {round_number}: {len(notes) - len(drawn)} edits not drawn, "
+                          "rerun to continue", flush=True)
+                    break
             state["kept"] = sorted(won)
             save_json(rounds_path, rounds)
             if not notes:

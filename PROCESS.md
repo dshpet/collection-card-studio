@@ -16,7 +16,7 @@ What was tried, and why the tool is built the way it is. Numbers are in [STYLE_G
 
 ## 3. Measurement
 
-- **Twins:** real cards redrawn with the card hidden, so content is equal and only style differs. Eight style-text rounds took calibrated reviewers from catching 89% of twins to chance.
+- **Twins:** real cards redrawn with the card hidden, so the object is the same and what differs is mostly style. Eight style-text rounds took calibrated reviewers from catching 89% of twins to chance.
 - **The producer's blind ratings** became the measure: 31 of 32 first-style twins found, 24 of 32 final-style. Models were at chance on 16 of the same twins.
 - No score of a lone card followed the producer's grades. Pairwise judging did: the director agrees with the producer 61% of the time, 76% when confident. So the pipeline picks candidates pairwise in both orders and flags close calls.
 - Dropped: automatic tuning of the director (gains on the tuning half did not hold out), tone rounds that moved measured darks onto the real cards (the producer preferred neither), measured geometry overlays for reviewers (they read the marks as proof), search-picked or five references, and a measured backdrop grade (no gain).

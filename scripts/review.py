@@ -242,7 +242,7 @@ def role_prompt(role):
 
 def field(measured, path):
     section, name = path.split(".")
-    return measured[section].get(name)
+    return measured.get(section, {}).get(name)
 
 
 def evidence(role, pairs):
@@ -470,7 +470,10 @@ def review_variant(run, variant, round_number, briefs, history, rater):
         ids[best["try_id"]] = brief["id"]
     write_marigold([e[0] for e in entries], "cuda", run / "derived")
     for record, _ in entries:
-        record["measured"] = measure_card(record, run / "derived")
+        try:
+            record["measured"] = measure_card(record, run / "derived")
+        except Exception:  # an unmeasured card, such as one with an empty mask, is reviewed without numbers
+            record["measured"] = {}
     used = {i for brief in briefs for i in brief["references"]}
     lessons_cards = twin_entries("baseline")[1]  # real cards shown in the lessons
     spare = [c for c in real.values() if c["id"] not in used and c["id"] not in lessons_cards and c["category"] != "5"]

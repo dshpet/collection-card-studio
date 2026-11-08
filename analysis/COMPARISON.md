@@ -51,7 +51,7 @@ The fix rounds moved subject chroma and area away from the real cards while the 
 | Materials read as themselves; large surfaces smooth, detail in the parts | Followed after the fixes: the image model paints metal, porcelain and enamel glossier than the game, and the producer asked for matte four times |
 | Rich, clean local colors, three or four hues on the object | Partly: subject chroma 0.111 against 0.128, and fewer hue families |
 | One clear soft light, form turns smoothly | Followed |
-| Backdrop against the hero's color temperature, never its hue | Followed in the plan |
+| Backdrop against the hero's color temperature, rarely its hue | Followed in the plan |
 | Three-quarter view, even for symmetric objects | Followed: 3 of 19 near-mirror silhouettes in categories 1 and 3, against 13 of 67 real. A top hat seen straight from the front read stiff and was not used |
 | The object large on the card | Partly: margins near the real cards, subject area below them |
 | A pool of light behind the object, darker corners | Partly: 7 of 12 cards in categories 2 and 3, against 39 of 52 real |

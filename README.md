@@ -16,7 +16,7 @@ A tool that turns a theme and a producer's free-form wishes into 3–5 variants 
 
 ## Approach
 
-- **Hold content equal to measure style.** A twin is a real card redrawn from a text brief with that card hidden, so only the style differs. Every change to the style text was judged on twins.
+- **Hold the object equal to measure style.** A twin is a real card redrawn from a text brief with that card hidden, so the object is the same and what differs is mostly style. Every change to the style text was judged on twins.
 - **Compare, don't score.** No score of a lone card followed a human's grades, but pairwise choices did. The pipeline picks between candidates two at a time, in both orders.
 - **Calibrate model judges before trusting them.** Without labelled examples, model reviewers called the real card the fake 12 of 12 times: they expect game art to be glossier than it is.
 - **Geometry for construction, words for style.** Built objects get a Blender model that the image model restyles. Simple forms are drawn from words.
@@ -26,8 +26,8 @@ A tool that turns a theme and a producer's free-form wishes into 3–5 variants 
 
 The producer here is the author, playing the brief's producer. Every human grade is theirs unless noted; an outside artist graded the pre-final sets.
 
-- **Final sets.** The final sets were drawn once. Three fix rounds then redrew 17, 8 and 2 cards, almost all of them cards the producer had commented on. Set grades went from 4, 4, 4 to 5, 5, 5. Card means are 4.5 Western, 3.8 Period Drama and 4.0 Detective, and the six cast cards are at 5.0. The outside artist gave the pre-final cards 3.1 of 5.
-- **Autonomy.** One command makes a set with no human step, such as the [pre-final Detective](runs/prefinal/detective/variant_1.png), one of three variants. The final sets added the producer's pass through the same tool: plans composed from graded variants, then the fix rounds with `--keep`.
+- **Final sets.** Drawn once, then three fix rounds redrew 17, 8 and 2 cards, almost all of them cards the producer had commented on. Set grades went from 4, 4, 4 to 5, 5, 5 after the second round; the third answered the one remaining comment, on the Magnifier, and was not graded again. Card means, latest grade per card, are 4.5 Western, 3.8 Period Drama and 4.0 Detective, and the six cast cards are at 5.0. The outside artist gave the pre-final cards 3.1 of 5.
+- **Autonomy.** One command makes a set with no human step, such as the [pre-final Detective](runs/prefinal/detective/variant_1.png), one of three variants. The final sets added the producer's pass: plans composed from graded variants, then fix rounds through the same tool with `--keep`. In those rounds a few Blender models and three picks were adjusted by hand; a producer's note now reaches the modeller directly.
 - **Style.** Blind, the producer still finds our drawing in 24 of 32 twins of the final style, down from 31 of 32 for the first. Calibrated model reviewers are at chance on 16 of the same twins, so the producer stays the measure.
 - **Construction.** In a six-object trial, Blender models cut broken cards from 5 of 12 to 1, and to none once the models were fixed (grade 3.7 against 2.2). Only built, multi-part objects get a model.
 - **Plans matter most.** Between two graded batches the mean rose from 3.63 to 3.97: half of that came from three character cards, most of the rest from better objects. Low grades traced back to the plan and became lessons.
@@ -143,7 +143,7 @@ To refresh the materials from the board, update `sources/board.svg` and `sources
 ## Glossary
 
 - **Producer:** the author, playing the brief's producer. Every human grade in `runs/ratings.json` is theirs unless noted.
-- **Twin:** a real card redrawn from a text brief with that card hidden from the generator. Content is equal, so what differs is style.
+- **Twin:** a real card redrawn from a text brief with that card hidden from the generator. The object is the same, so what differs is mostly style, with some pose and framing.
 - **Style rounds:** versions of the style text: `baseline` and `r1`–`r8` on 12 twins (`runs/twins`); `old` (the first style), `final`, `r3`, `r9` and `p1`–`p3` on 40 (`runs/twins40`). The current text is in `scripts/style.py`. `runs/final/` holds early picks drawn in the `final` style, not the final sets.
 - **Blockout:** a Blender model of the object, rendered and restyled by the image model.
 - **Category 1–5:** the art guide's staging: floating, plain floor, real surface, in its place, characters.
