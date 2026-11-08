@@ -1,12 +1,12 @@
-"""The morning review of the final sets, 2026-11-08. Answers go to runs/ratings.json as the producer's ratings.
+"""The producer's review of the final sets. Answers go to runs/ratings.json.
 
 Sets: the three final sets and the cast cards, beside a real set; grade each set 1-5 and comment.
 Cards: each final card beside its three references, with every candidate drawn for it and the outside rater's grade of
 the same card in the pre-final set. Grade 1-5, mark it broken, comment, or pick another candidate.
-Blind: the overnight arms of experiments/night.py, unlabelled. Twins: a real card and two redraws, the style before
-the night and one arm (smooth surfaces, adopted, or one camera), shuffled: pick the closer one and mark any that is broken. Broken cards:
-the nine pre-final cards graded broken, drawn by the current pipeline and by each perspective arm, shuffled: does each
-work as built?
+Blind: the arms of experiments/night.py, unlabelled. Twins: a real card and two redraws, the style before the arms
+and one arm (smooth surfaces, adopted, or one camera), shuffled: pick the closer one and mark any that is broken.
+Broken cards: the nine pre-final cards graded broken, drawn by the current pipeline and by each perspective arm,
+shuffled: does each work as built?
 
 Rounds 2 to 4 (runs/final4 to runs/final6) are fix rounds after those answers: each card shows its drawing from the
 round before with the producer's latest grade and comment; a card kept unchanged keeps its grade unless graded again.
@@ -40,7 +40,7 @@ ROUNDS = {2: {"western": ("final4/western", "final3/western"), "period-drama": (
               "detective": ("final4/detective", "final3/detective-3"), "cast": ("final4/cast", CAST)},
           3: {"western": ("final5/western-2", "final4/western"), "period-drama": ("final5/period-drama", "final4/period-drama-2"),
               "detective": ("final5/detective", "final4/detective"), "cast": ("final4/cast", "final4/cast")},
-          # round 4 is the final assembly: the Top Hat redrawn in final6/period-drama was not better, so that set stays
+          # round 4, the final sets: the Top Hat redrawn in final6/period-drama was not better, so final5 stays
           4: {"western": ("final5/western-2", "final5/western-2"), "period-drama": ("final5/period-drama", "final5/period-drama"),
               "detective": ("final6/detective", "final5/detective"), "cast": ("final4/cast", "final4/cast")}}
 ROUND = 4

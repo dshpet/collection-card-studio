@@ -38,9 +38,8 @@ from style import BLOCKOUT, CAST_STYLE, CATEGORY_RULES, EDIT, PATTERNS, STYLE
 CANDIDATES = 3
 MODEL_ROUNDS = 2
 # How much larger than the default box (80% by 75% of the card) a blockout frames its object, by art category. Blockout
-# cards sat smaller than real ones (minimum margin 0.105 against 0.058); framing at the real median size overshot area by
-# a tenth on 24 redrawn cards, so categories 2-4 take half of it and floating objects, already at the real size, none
-# (experiments/night.py, 2026-11-08).
+# cards sat smaller than real ones; the full real median size overshot area by a tenth, so categories 2-4 take half of
+# it, and floating objects, already at the real size, none (experiments/night.py).
 FILL = {"1": 1.0, "2": 1.035, "3": 1.05, "4": 1.06}
 PLAN_FIXES = 2  # repair rounds for a plan that breaks a rule or has a card that may upset players
 REVIEW_ROUNDS = 1  # first-round edits were kept 36 of 85 times, second-round 0 of 11 (analysis/experience.json)
@@ -57,8 +56,8 @@ CARD_SCHEMA = strict({
     "pattern": {"type": "string", "enum": list(PATTERNS)},
     "hero_colors": text(), "backdrop_colors": text(), "surface_or_setting": text(), "build_model": {"type": "boolean"},
 })
-# From the user's ratings: a Blender model fixed the chair, clock, pier and saddle, and took the charm out of the cat,
-# boot and witch hat (analysis/STYLE_GAPS.md).
+# From the producer's ratings: a Blender model fixed the chair, clock, pier and saddle, and took the charm out of the
+# cat, boot and witch hat (analysis/STYLE_GAPS.md).
 MODEL_RULE = ("build_model: true for a built object of several rigid parts that must connect or stand, such as furniture, "
               "clocks, vehicles, machines, buildings, piers, frames, or anything with legs, hinges, wheels, straps or "
               "rigging. false for a simple or organic form: an animal, plant, food, garment, hat, boot, a single solid "

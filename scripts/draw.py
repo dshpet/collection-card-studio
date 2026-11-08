@@ -18,7 +18,7 @@ INSTRUCTION = """Call the image_gen tool exactly once{images}. Pass the text bet
 
 
 def reached_tool(thread):
-    """The prompt the image tool really received. Codex keeps it in the session log, which we then remove."""
+    """The prompt the image tool really received, read from Codex's session log. The log is then removed."""
     log = next((HOME / "sessions").rglob(f"*{thread}*.jsonl"))
     prompts = []
     with open(log, encoding="utf-8") as lines:

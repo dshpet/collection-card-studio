@@ -1,58 +1,54 @@
 # Process
 
-> **DRAFT. This narrative must be reviewed and rewritten before submission.**
+What was tried, and why the tool is built the way it is. Numbers are in [STYLE_GAPS](analysis/STYLE_GAPS.md); each study's script is listed in [experiments/](experiments/README.md).
 
-How the tool got here, decision by decision. Numbers are in [STYLE_GAPS](analysis/STYLE_GAPS.md); the studies behind each decision are in [experiments/](experiments/README.md).
+## 1. Analysis before generation
 
-## 1. Analysis before generation, 2026-10-31 to 11-02
+- The Miro board was exported: task documents, 160 cards, 16 sets and the result templates. The first thumbnails were different drawings, so every card was replaced by its board original.
+- A pilot ran nine specialist agents on four cards ([pilot](analysis/runs/2026-11-01-reference-pilot-01/README.md)). Four cards were too few, and a planner built on it approved its own 90 briefs while an audit found contradictions in them. It was cut, and its specialists became the reviewers.
+- The audit set two rules: sets are plain topics with 1–3 word names, as in the references, not story premises; and every reference card is analysed in one form before anything is drawn.
+- All 160 cards and 16 sets were rated in that form by four vision models, measured from pixels, masks, depth, shading and attention, and embedded three ways ([SYNTHESIS](analysis/SYNTHESIS.md)). Fresh reviewers then checked the findings against the cards; two were wrong and were corrected.
 
-- Exported the Miro board: task documents, 160 cards, 16 sets, result templates. The first thumbnails turned out to be different drawings, so every card was replaced by its board original.
-- A first pilot ran nine specialist agents on four cards ([pilot](analysis/runs/2026-11-01-reference-pilot-01/README.md)). Four cards were too few, and a planner built on it confirmed its own 90 briefs while an audit found contradictions. It was cut.
-- An audit against the brief found no generated card yet, no analysis of the 16 sets, invented story premises where real sets use plain topics, and 500 words of pasted documentation in every prompt. Decisions: sets are topics with 1–3 word names, and every reference is analysed in one form before anything is drawn.
-- All 160 cards and 16 sets were rated in one form by four vision models, measured from pixels, masks, depth, shading and attention, and embedded three ways ([SYNTHESIS](analysis/SYNTHESIS.md)). External tools ran on a few test cards, were stopped until their code was reviewed, then pinned to the reviewed revisions; BiRefNet and Depth Anything 3 replaced weaker first choices.
-- Three fresh reviewers then checked the findings against the cards. Two were wrong and were corrected, and the backdrop fields they surfaced became some of the most reliable.
+## 2. The first pipeline passed its checks and failed the eye
 
-## 2. The first pipeline passed every check and failed the eye, 11-02
+- One command planned, drew, checked and delivered three genres, three variants each. The check rejected six off-style controls, and one generated card hidden among nine real ones was found only at chance.
+- The producer still saw at once that the cards were not quite the game's style. The measures were wrong, not the eye: Codex had been rewriting prompts and adding its own style words (`draw()` now forces them verbatim), a classifier told our cards from real ones at AUC 0.92–0.95, and uncalibrated model reviewers called the real card the fake 12 of 12 times, because they expect game art to be glossier than it is.
 
-- One command planned, drew, checked and delivered three genres, three variants each. The check rejected six off-style controls, and one generated card hidden among nine real ones was found at chance.
-- The producer still saw it at once: not quite the game's style. The cause was the measures, not the eye. Codex had been rewriting prompts and adding its own style words; a classifier told our cards from real ones at AUC 0.92-0.95; uncalibrated model reviewers called the real card the fake 12 of 12 times, because they expect game art to be glossier than it is.
+## 3. Honest measurement
 
-## 3. Making the measurement honest, 11-02 to 11-05
+- **Twins:** real cards redrawn with the card hidden, so content is equal and only style differs. Eight style-text rounds took calibrated reviewers from catching 89% of twins to chance.
+- **The producer's blind ratings** became the measure: 31 of 32 first-style twins found, 24 of 32 final-style. Models were at chance on 16 of the same twins.
+- **Compare, never score.** No score of a lone card followed the producer's grades. Pairwise judging did: the director agrees with the producer 61% of the time, 76% when confident. So the pipeline picks candidates pairwise in both orders and flags close calls.
+- Dropped: automatic tuning of the director (gains on the tuning half did not hold out), tone rounds that moved measured darks onto the real cards (the producer preferred neither), measured geometry overlays for reviewers (they read the marks as proof), search-picked or five references, and a measured backdrop grade (no gain).
 
-- **Twins:** real cards redrawn with the card hidden, so content is equal and only style differs. Eight style rounds brought calibrated reviewers from 89% to chance.
-- **The producer's blind ratings** became the measure: 31 of 32 old-style twins found, 24 of 32 final-style. Models were at chance on 16 of the same twins.
-- **Compare, never score.** No score of a lone card followed the producer's grades. Pairwise judging did: the director agrees 61% of the time, 76% when confident, so the pipeline picks candidates pairwise in both orders and flags close calls. Tuning the director automatically overfitted and was dropped.
+## 4. Construction from geometry
 
-## 4. Construction from geometry, 11-03 to 11-05
+- The producer's main complaint became construction: cables ending in air, a chair that could not fold. A line describing how the object works did nothing. In a six-object trial, a Blender blockout restyled by the image model cut broken cards from 5 of 12 to 1, and to none once the models were fixed.
+- Blockouts took the charm out of simple forms, so the planner models only built, multi-part objects.
+- Construction and perspective checkers were at chance on 93 pairs the producer labelled, and were removed. A geometric check for loose parts guards the models instead; close calls go to a human.
 
-- The producer's main complaint became construction: cables ending in air, a chair that could not fold. A line describing how an object works did nothing; in a six-object trial, a Blender blockout restyled by the image model cut broken cards from 5 of 12 to 1, and to none once the models were fixed.
-- Blockouts took the charm out of simple forms, so the planner models only built, multi-part objects. Construction and perspective checkers were at chance on the producer's labelled pairs and were removed. A geometric check of loose parts guards the models instead.
+## 5. The producer's loop
 
-## 5. The producer's loop, 11-05 to 11-06
+- **Lessons.** Rules learned from the producer's comments live in plain words in [lessons.md](analysis/lessons.md), which the planner reads. A model proposes new lessons from comments and lost edits; a person accepts them. A producer edits that file, not code.
+- **Cast.** SAM 3 cut the game's characters out of the reference cards. Drawn in one go with the real cutouts attached, they stayed themselves and graded 3.8, against 1.5–2.4 for pre-drawn figures pasted or attached.
+- **Batches.** Two graded batches of one variant per genre: 3.63, then 3.97 after the planner learned the real backdrop color logic (opposite temperature, not complements) and a second pass over the references (a place shown by its signature object, partner objects, three-quarter views, flat objects from above). Half the gain came from the three character cards and most of the rest from swapped objects; objects redrawn in both batches moved only +0.11. Each low grade traced to the plan and became a lesson.
+- **Edits.** Correction rounds rescued only 8 of 24 cards and were replaced by candidates and edits. Review edits beat their drafts only 36 of 85 times, and a second review round kept 0 of 11, so an edit stays only if it wins and the pipeline reviews once.
 
-- **Lessons.** Rules learned from the producer's comments live in plain words in [lessons.md](analysis/lessons.md), which the planner reads; a producer edits that file, not code. A model proposes new lessons from comments and lost edits, and a person accepts them.
-- **Cast.** SAM 3 cut the game's characters out of the reference cards. Drawn in one go with the real cutouts attached, they stayed themselves and graded 3.8 against 1.5-2.4 for pre-drawn figures pasted in.
-- **Batches.** Two batches of one version per genre: 3.63, then 3.97 after the planner learned the real backdrop color logic (temperature, not complements) and a second reference pass (places shown by their signature object, partner objects, three-quarter views, flat objects from above). Half the gain came from the three character cards and most of the rest from swapped objects; the same objects redrawn moved by only +0.11. Each low grade traced to the plan and became a lesson.
-- **Edits.** Review edits lost to their drafts more often than they won, so an edit stays only if it wins, and the pipeline reviews once.
+## 6. Robustness and other generators
 
-## 6. Hardening and outside views, 11-07
+- 19 odd and hostile requests (emoji, Ukrainian, brands, franchises, weapons, gore, an injected "ignore all previous rules") all produced plans, with forbidden wishes declined and named in the report. After two repairs, War and Gangsters kept three cards flagged for the producer, and Elections stayed a voting set. Kitchen, Pirates and a Star Wars request ran end to end in one consistent style.
+- A code review fixed three ways a run could stop or write to the wrong place; each run folder now records its request.
+- A generator bake-off on the twins: Codex against Nano Banana Pro through Antigravity (11 twins, until its quota ran out) and Qwen-Image-2.1, open weights on a local GPU ([STYLE_GAPS](analysis/STYLE_GAPS.md#generator-bake-off)). Codex won both.
+- An outside artist graded the pre-final sets of five genres: 3.1 of 5 per card, every set 3–4 of 5, and our surfaces read grainier than the real cards'. Each final set starts from that rater's best-graded variant of its genre.
 
-- Independent code, docs and hiring-manager reviews. The code review found that the skill's own command stopped in an old run folder, an empty theme wrote into `runs/`, and a failed Blender model stopped a run. All were fixed, and run folders now record their request.
-- 19 odd and hostile requests (emoji, Ukrainian, brands, franchises, weapons, gore, an injected "ignore all previous rules") all produced plans, with forbidden wishes declined and named in the report; after two repairs, War and Gangsters kept three cards still flagged for the producer, and Elections stayed a voting set. Three new topics ran end to end in one consistent style.
-- A generator bake-off on the twins: Codex against Nano Banana Pro through Antigravity (11 twins, until its quota ran out) and Qwen-Image-2.1, open weights on this GPU ([STYLE_GAPS](analysis/STYLE_GAPS.md#generator-bake-off-2026-11-07)).
+## 7. The final sets
 
-## 7. The final sets, 11-08
-
-- Before the final drawing, the chosen variants were reviewed card by card against the other variants: grades, broken flags, the planner's checks and the lessons (`experiments/plan_review.py`).
-- Every set now has a short spec, `spec.md` in its run folder, written from the plan before drawing: each card's staging, subject and colors, and the notes on why the cards were chosen.
-- Overnight, one change per arm on the twins (`experiments/night.py`, STYLE_GAPS): smooth large surfaces in the text prompt, richer planner colors and a wider blockout frame were adopted; one camera and the perspective fixes wait on the producer's blind look.
-- The final started late, at 11:15 instead of 04:00: a background wait loop matched its own command line and waited on itself all night. Steps are now chained directly.
-- After the draw, two Period Drama cards were weak in every candidate, a plan problem: the Pearl Necklace became the Quill Pen (the outside rater's 4) and the Hat Box got stripes. The set was redrawn in a new folder seeded with the other eight cards' candidates, so only the two new cards were drawn and the picks and review ran again (`runs/final3/README.md`).
-- The same way, Detective's Badge Wallet left its dark table, darker than any real card, for a light desk, and the Flash Camera moved to royal blue so the set kept six or more backdrop hues, as every real set has.
-- The producer graded every set 4 of 5, "Yes, with small issues"; cards 4.4 Western, 3.8 Period Drama, 3.1 Detective. Blind, they found the control closer to the real card than one camera, and the current pipeline better built than either perspective arm: both were dropped. The smooth line held.
-- Their comments were mostly about recognition and composition, not style: a badge without its emblem, a hat box that read American, a windmill on a solid tower that read as a monument, objects off center, a dog that read as a character. A fix round redrew only the commented cards: `make_set.py --keep` reuses an earlier run's cards whose plan is unchanged, a plan card's `note` carries the fix into its brief, and `k.focus` frames a blockout on its main body. The comments became planner rules in `analysis/lessons.md`, accepted by the producer (`runs/final4/README.md`).
-- Round 2 got 5, 4 and 4, cast 5: "I like it overall". Eight small fixes followed: matte metal and porcelain, an even brim, a shorter handle, a candelabra seen from mid-height. The first review undid three of them, asking for chrome cuffs and glossy porcelain: the art director had never seen the producer's notes. Now it gets them, and each edit prompt repeats the note to keep (`runs/final5/README.md`).
-- Round 3 got 5 of 5 for every set. The last comment, a magnifier whose glass was too large, was fixed after looking at the one real card with a magnifier; a Blender top hat fixed the uneven brim but read stiffer, so the round-3 hat stayed. The producer was tired of viewing cards, so this last round was judged here (`runs/final6/README.md`).
+- **Plans.** The chosen variants were reviewed card by card against the other variants: grades, broken flags, planner checks and lessons (`experiments/plan_review.py`). Each set got a `spec.md` written from its plan before drawing.
+- **Style changes, one per arm on the twins** (`experiments/night.py`): smooth large surfaces in the prompt, richer planner colors and larger blockout framing were adopted. One camera line and new perspective models were dropped after the producer's blind look.
+- **First draw.** Two Period Drama cards were weak in every candidate, a plan problem: the Pearl Necklace became the Quill Pen and the Hat Box got stripes. Detective's Badge Wallet moved from a dark table to a light desk, and the Flash Camera to royal blue so the set kept six or more backdrop hues, as every real set has. Both sets were redrawn in new folders seeded with the other cards' candidates. The producer graded every set 4 of 5, "Yes, with small issues" (`runs/final3/README.md`).
+- **Fix round 1.** The comments were about recognition and composition, not style: a badge without its emblem, a hat box that read American, a windmill that read as a monument, off-center objects, a dog that read as a character. Only the 17 commented cards were redrawn: `make_set.py --keep` reuses unchanged cards, a plan card's `note` carries the fix, and `k.focus` frames a blockout on its main body. The comments became planner lessons, which the producer accepted (`runs/final4/README.md`).
+- **Fix round 2.** Sets 5, 4 and 4. Eight small fixes: matte metal and porcelain, an even brim, a shorter handle, a candelabra seen from mid-height. The first review undid three of them, because the art director had never seen the producer's notes; now it gets them and each edit prompt repeats the note to keep (`runs/final5/README.md`).
+- **Fix round 3.** Every set 5 of 5. The last comment, a magnifier glass too large, was fixed by the proportions of the one real card with a magnifier. A Blender top hat fixed an uneven brim but read stiffer and was not used (`runs/final6/README.md`).
 
 ## Tools tried
 
@@ -71,4 +67,4 @@ How the tool got here, decision by decision. Numbers are in [STYLE_GAPS](analysi
 - One human rater. The final style is still spotted in 24 of 32 twins.
 - No model judges construction; it comes from geometry and a human look.
 - Each variant takes about 40 minutes and needs a GPU, Blender and two logged-in CLIs.
-- Next: the producer's review of the fix round (`experiments/final_review.py`), then a style LoRA trained on the reference cards with an open model.
+- A style LoRA trained on the reference cards with an open model was not tried, for lack of time. The research puts it at about half a day ([research](research/README.md)).

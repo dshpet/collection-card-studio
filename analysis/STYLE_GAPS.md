@@ -1,18 +1,6 @@
 # Style gaps and what closed them
 
-Why the first cards looked off, how that was measured, and what fixed it. Human grades are the producer's (see the README glossary); model results are named as such. Numbers trace to `runs/` and the scripts in `experiments/`.
-
-## What holds now
-
-- **The producer is the measure.** Blind, they find our drawing in 24 of 32 final-style twins (31 of 32 in the old style). Calibrated model reviewers are at chance on 16 of the same twins.
-- **Style rounds stopped.** The producer rates the final style, r3 and r9 about equal, and no tone change beat the final style.
-- **Construction is the main complaint, and geometry fixes it.** In a six-object trial a Blender blockout cut broken cards from 5 of 12 to 1, and to none once the models were fixed. No model judges construction above chance, so the planner models built objects and a human checks the rest.
-- **Compare, never score.** No score of a lone card follows the producer's grades. The art director picks the producer's side of a pair 61% of the time, 76% when confident; CSD against the same object's real card agrees above chance.
-- **The plan decides most of the card.** Batch grades rose from 3.63 to 3.97 (not blind): half from the character cards, most of the rest from swapped objects; the same objects redrawn moved by +0.11. Words do not hold a shape or a camera; a Blender model does.
-- **Edits by note are a gamble.** The director judged first-round edits better than their drafts 36 of 85 times and second-round ones 0 of 11, so an edit stays only if it wins and the pipeline reviews once.
-- **The game's cast stays itself on new cards** when drawn in one go with its real cutouts attached.
-- **The grain was in the prompt.** One line, large surfaces smooth with detail in the parts, closed most of the flat-surface gap on the twins at no CSD or gloss cost; richer planner colors brought twins closer by CSD on 29 of 40. Both are in the final (overnight arms below).
-- **Codex stays the generator on evidence.** On the same twins, prompts and references, the director preferred Codex to Nano Banana Pro 11 to 0 and to Qwen-Image-2.1 39 to 1.
+Why the first cards looked off, how the gap was measured, and what closed it. Human grades are the producer's unless noted; model results are named as such. Numbers trace to `runs/` and the scripts in `experiments/`. The short version is in [PROCESS.md](../PROCESS.md).
 
 ## How the gap is measured
 
@@ -22,7 +10,7 @@ Why the first cards looked off, how that was measured, and what fixed it. Human 
 - **Pairwise judges.** Of two drawings of one object beside its real card, which is closer, asked in both orders.
 - **CSD against the same object's real card**, the one embedding measure that tracks the producer. It needs a real card of the same object, so it scores twins, not new cards.
 
-## Style text rounds, 2026-11-02 to 11-03
+## Style text rounds
 
 | Round | Style text change | Reviewers caught | Field drift | Real-likeness |
 |---|---|---:|---:|---:|
@@ -53,7 +41,7 @@ What the rounds fixed:
 
 **Held-out twins.** On sixteen of the forty, reviewers caught the old style 97 of 144 times and the final style 64 of 144: 71% against 47% when they chose a side. A content-matched DINOv3 classifier still separates both (AUC 0.86 old, 0.84 final, whole card), so it sees something viewers may not. GPT-6.1 specialists with the same lessons also failed to separate r8 (11 caught, 39 missed).
 
-**The producer, blind (2026-11-03).** Of 80 twins, 16 answered "neither"; of the rest they found the generated card 31 of 32 times in the old style and 24 of 32 in the final style. They named: toy-like roundness and gloss short of the real cards' "grounded realism" (real cards look like rendered 3D models, ours like illustrations of 3D), objects that could not work, and parts seen from different cameras.
+**The producer, blind.** Of 80 twins, 16 answered "neither"; of the rest they found the generated card 31 of 32 times in the old style and 24 of 32 in the final style. They named: toy-like roundness and gloss short of the real cards' "grounded realism" (real cards look like rendered 3D models, ours like illustrations of 3D), objects that could not work, and parts seen from different cameras.
 
 **Closest style (36 twins).** Picked closest among old, final, r3 and r9: r3 15, final 10, r9 10, old 1. Old is out (p 0.02 for r3 against chance); r3's lead over final and r9 is weak. So the three count as one band and style rounds stopped. The model reviewers had called r3 "too realistic"; the producer preferred it.
 
@@ -61,7 +49,7 @@ What the rounds fixed:
 
 ## Construction
 
-**Trial, 2026-11-03** (`experiments/trial.py`). Six twins, two draws each, four arms, graded blind:
+**Trial** (`experiments/trial.py`). Six twins, two draws each, four arms, graded blind:
 
 | Arm | Works / slightly off / broken | Mean grade |
 |---|---|---:|
@@ -72,9 +60,9 @@ What the rounds fixed:
 
 A blockout fixes construction (0 broken against 5, Fisher p 0.04), mostly on multi-part structures: chair, clock and pier rose 3 to 3.5 grades. The fixed models had seen the real cards, but the first blockout arm had not and still won. A line on how the object works did nothing. The restyle copies the model, flaws included, and drops what the model lacks, such as printed calculator keys.
 
-**Redraw from blockouts, 2026-11-04.** The 30 earlier final cards redrawn from blockouts lost 7 to 15 (8 ties): they won on built things (saddle, badge, telescope) and lost on simple forms (boot, witch hat, cat), which came out "too glossy, looks like a statue". A matte render lost the designed shape instead (`experiments/trial2.py`), and photos taught engineering truth that reads as wrong, such as smaller front wagon wheels. So the planner models built, multi-part objects only; on the 30 cards that rule matched the producer's preference 16 of 22 times.
+**Redraw from blockouts.** The 30 earlier final cards redrawn from blockouts lost 7 to 15 (8 ties): they won on built things (saddle, badge, telescope) and lost on simple forms (boot, witch hat, cat), which came out "too glossy, looks like a statue". A matte render lost the designed shape instead (`experiments/trial2.py`), and photos taught engineering truth that reads as wrong, such as smaller front wagon wheels. So the planner models built, multi-part objects only; on the 30 cards that rule matched the producer's preference 16 of 22 times.
 
-**Checkers removed, 2026-11-05.** On 93 pairs the producer labelled works or broken, every model judge was at chance (construction checker 42 of 86, director 39 of 83), confident or not (`experiments/prefer.py`). They prefer the drawing with more hardware; the producer judges whether the whole object could work.
+**Checkers removed.** On 93 pairs the producer labelled works or broken, every model judge was at chance (construction checker 42 of 86, director 39 of 83), confident or not (`experiments/prefer.py`). They prefer the drawing with more hardware; the producer judges whether the whole object could work.
 
 **Geometric check.** `scripts/blockout.py` reports hero parts that touch nothing holding them. Over 200 model files it found early-round gaps the modeller had fixed and three parts that float by design; no final model had a loose part. A guard, not a measured gain.
 
@@ -82,10 +70,11 @@ A blockout fixes construction (0 broken against 5, Fisher p 0.04), mostly on mul
 
 - **Lone scores** (`experiments/score.py`, 129 graded cards): specialists, the director, CSD to the nearest real cards and a DINOv3 classifier all have Spearman about 0 with the producer's grades. Reviewers score hidden real cards lowest. Whole-card embeddings measure content.
 - **Pairs work** (`experiments/prefer.py`, 218 pairs the producer decided): director 61%, shape specialist 63%, CSD 59%, all above chance; the director at confidence 4 is right 37 of 49 times. `choose()` therefore picks pairwise, both orders, and flags close wins for a human.
-- **Hubness-corrected CSD** (CSD+, `experiments/csd_plus.py`, 2026-11-07): subtracting each drawing's similarity to its nearest real cards moved agreement from 128 to 132 of 218 pairs, all on closest picks. A lean within noise, with k chosen from three; not adopted.
+- **Hubness-corrected CSD** (CSD+, `experiments/csd_plus.py`): subtracting each drawing's similarity to its nearest real cards moved agreement from 128 to 132 of 218 pairs, all on closest picks. A lean within noise, with k chosen from three; not adopted.
+- **Edits by note are a gamble.** The director judged first-round edits better than their drafts 36 of 85 times and second-round ones 0 of 11, so an edit stays only if it wins and the pipeline reviews once.
 - **Tuning the director overfits** (`experiments/tune.py`): 65 to 84 of 115 on the tuning half, no gain held out, within run noise of about 5 pairs.
 - **Tone parameters** (`experiments/param.py`, 69 measured parameters on 40 twins): the final style is lighter (29 of 40), with shallower darks and lower contrast. One line on deeper shade moved the darks onto the real cards on average but greyed the shadows; a second line restored their color but read glossier. The producer, blind: same 16, final 11, p2 9, p1 4. Their comments were about construction. A line that simplifies hardware into broad smooth parts (p3) fixed the treasure chest's rivets but lightened the cards further, so it was not adopted.
-- **A measured backdrop grade** (`experiments/grade.py`, 2026-11-07): adding the real-twin lightness gap by distance from the object to the twins' backgrounds, fitted on one half and applied to the other, moved CSD from 0.910 to 0.909 (21 of 40 closer, p 0.82). Not adopted.
+- **A measured backdrop grade** (`experiments/grade.py`): adding the real-twin lightness gap by distance from the object to the twins' backgrounds, fitted on one half and applied to the other, moved CSD from 0.910 to 0.909 (21 of 40 closer, p 0.82). Not adopted.
 
 ## The brief decides the drawing
 
@@ -93,10 +82,10 @@ A blockout fixes construction (0 broken against 5, Fisher p 0.04), mostly on mul
 - **The colors line outweighs the subject.** Every sheriff star got a red jewel from "with a small red gem" in its colors. "No gem" in the subject left it in 3 of 3 draws; moving the red onto the ring removed it in 3 of 3 (`experiments/plain_check.py`). The planner's accent lesson now puts the accent on a part the object has.
 - **Words do not hold a shape.** "A perfect circle" left the clock twin's roundness at 0.95 against 0.995 on the real card (`experiments/shape_check.py`). A Blender model at azimuth 0 fixes the camera instead.
 - **Fire takes the real card's words.** "A small orange flame" drew a tiny flame 3 of 3 times; the real Campfire Cook card's description, with "big", drew a bright fire 3 of 3, judged by eye and one pixel measure (`experiments/fire_check.py`). The lesson drops "big"; with it, batch 2's campfire got 5 and its cauldron 1 ("Fire is off"). The real fire cards as references added nothing.
-- **Geometric subjects make plain objects.** The shape lesson's wording dropped the hat's badge, the boot's spur and the witch hat's bent tip in 12 of 12 draws, read by eye; the earlier wording brought them back in 12 of 12 (`experiments/wording_check.py`). The producer graded the plain versions about the same (4.25 against 4.5), and accepted the signature-details lesson on 2026-11-07.
+- **Geometric subjects make plain objects.** The shape lesson's wording dropped the hat's badge, the boot's spur and the witch hat's bent tip in 12 of 12 draws, read by eye; the earlier wording brought them back in 12 of 12 (`experiments/wording_check.py`). The producer graded the plain versions about the same (4.25 against 4.5) and accepted the signature-details lesson.
 - **Cutouts lend their outfits.** Character cards copied the cutouts' costumes. One prompt line and outfit-free cutouts first fixed it for the animals; the man has no outfit-free cutout (`experiments/outfit_check.py`).
 
-## Backdrop color, 2026-11-06
+## Backdrop color
 
 The producer asked whether the real backdrops follow a color logic (`experiments/colors.py`, `color_logic.py`, tested against the same cards with backdrops shuffled):
 
@@ -106,7 +95,7 @@ The producer asked whether the real backdrops follow a color logic (`experiments
 
 The planner's color rules now state the temperature rule, the colors by category and "rich and clean, never neon". On the next batch, floating objects took cool backdrops 8 of 9 times (real 25 of 35) and backdrop chroma fell to 0.160 (real 0.153 on the same categories).
 
-## Batches graded by the producer, 2026-11-06
+## Batches graded by the producer
 
 Variant 1 of each film genre, drawn with the producer's lessons, graded in the Cards tab (not blind):
 
@@ -119,7 +108,7 @@ Variant 1 of each film genre, drawn with the producer's lessons, graded in the C
 - **The gain came from the plan, not the drawing.** Of the 10 points gained over 30 cards, the three character cards brought 5 (5, 2, 3 to 5, 5, 5), swapped objects 3 (Teleport Pod 2 to Glow Flask 5, Candy Corn 2 to Crystal Ball 4) and the 18 objects drawn in both batches 2, +0.11 each. Object cards alone went from 3.67 to 3.85.
 - **Low grades name the plan.** An invented planet icon on a star map, landing legs on a flying saucer, a door handle in the middle of a door, saloon doors seen from inside, and four objects that failed twice (lasso, horseshoe, grounded rocket, cauldron over a fire). Each became a lesson in `analysis/lessons.md`.
 
-## The cast on new cards, 2026-11-05
+## The cast on new cards
 
 Six character cards, four ways, two draws each (`experiments/cast_trial.py`), graded blind by the producer:
 
@@ -132,9 +121,9 @@ Six character cards, four ways, two draws each (`experiments/cast_trial.py`), gr
 
 Identity held in every arm (each figure nearest its own cast member in DINOv2). Pasted figures stayed small and stood in front of their settings; drawn alone, a figure cannot know the counter it should lean on. So `make_set.py --cast N` draws character cards directly.
 
-## Generator bake-off, 2026-11-07
+## Generator bake-off
 
-Every style result above came from one generator, so two others drew the twins from the same prompts and the same three references (`experiments/generators.py`). Codex's arm is its final-style draws. Judged by CSD against each twin's own real card and by the art director, pairwise in both orders with the real card shown; the producer's blind pick waits in the rating page's Generators tab.
+Every style result above came from one generator, so two others drew the twins from the same prompts and the same three references (`experiments/generators.py`). Codex's arm is its final-style draws. Judged by CSD against each twin's own real card and by the art director, pairwise in both orders with the real card shown.
 
 | Arm | Twins | CSD to own real card, Codex / arm | Arm closer by CSD | Director: Codex / arm |
 |---|---:|---|---:|---|
@@ -143,19 +132,19 @@ Every style result above came from one generator, so two others drew the twins f
 
 - **Nano Banana Pro loses.** Its cards are darker, less saturated and more photographic: a realistic folded map, a flat calculator, a dim jellyfish. Antigravity's image agent rewrites the prompt, so this tests the system, not only the model; its daily image quota stopped the arm at 11 twins.
 - **Qwen-Image-2.1 loses more clearly.** The palette and patterns are right, but objects sit small in the frame, and it breaks hard rules Codex keeps: a drawn card frame on the drink, printed text on the phone booth. It ran at 640 px: at 1024 px with three references its latents turned NaN on this ROCm card under every attention backend. The prompts were written for Codex, so a prompt tuned for Qwen, or a style LoRA, could narrow the gap.
-- **So Codex stays.** The illustration look the producer sees is not a Codex quirk that another model fixes: both alternatives are further from the real cards. The open route worth trying next is a style LoRA on the 160 reference cards ([research](../research/README.md)).
+- **So Codex stays.** The illustration look the producer sees is not a Codex quirk that another model fixes: both alternatives are further from the real cards.
 
-## An outside artist on the pre-final sets, 2026-11-07
+## An outside artist on the pre-final sets
 
 A UI designer with an art background, new to the project (`experiments/outside_rating.py`, answers in `runs/prefinal/outside/`). Blind first: 72 single cards, 36 ours from five genres and the cast, each against a real card of its art category. Then the brief, the five sets and 75 genre cards plus the 6 cast cards beside their references.
 
-- **The blind test came out inverted:** 23 of 72 right (p 0.003), AUC 0.33. She called 24 of 36 real cards AI and 11 of 36 of ours. She took about 2 s a card and used only the middle answers, so this is a quick prior, read backwards. She called brighter, larger and cleaner subjects AI (AUC 0.72 on subject chroma, 0.62 on subject area, about 0.3 on every surface-detail field), and real cards are the brighter and larger ones. Like the uncalibrated model raters, she accused the real cards, though for a different reason. So a lay eye does not catch ours, while the gap a trained eye uses is real.
+- **The blind test came out inverted:** 23 of 72 right (p 0.003), AUC 0.33. The rater called 24 of 36 real cards AI and 11 of 36 of ours, at about 2 s a card and using only the middle answers: a quick prior, read backwards. Brighter, larger and cleaner subjects were called AI (AUC 0.72 on subject chroma, 0.62 on subject area, about 0.3 on every surface-detail field), and real cards are the brighter and larger ones. Like the uncalibrated model raters, the rater accused the real cards, though for a different reason. So a lay eye does not catch ours, while the gap a trained eye uses is real.
 - **Measured gaps against the 129 real object cards** (150 of ours, AUC ours over real): fewer hue families, 2.6 against 3.9 (0.25); objects smaller in the frame, minimum margin 0.10 against 0.06 (0.72); duller subjects, chroma 0.101 against 0.130 (0.35); plainer backdrops (0.32); greyer shadows, 84% of chroma kept against 97% (0.41); simpler silhouettes (0.40). Fine texture measures the same on both.
-- **Her feedback after the session, relayed by the producer:** ours look grainier and more textured; the style is close but not theirs. Real cards keep large surfaces smooth and put their detail into parts, colors and silhouette; ours render the material (felt nap, leather grain, fabric weave) on simple shapes. Pixel measures at 430×480 do not separate the two, so this is judged by eye.
-- **Cards:** mean grade 3.1 of 5 on the 75 genre cards (41 of them a 3, "close"). She flagged 9 as broken, all on perspective or construction: brims that do not match their crowns, tables and floors at a different angle from the object. Cast cards scored best, 3.5.
-- **Sets:** every variant 3 or 4 of 5, "could stand in the game with small issues". She kept Detective, Horror and Period Drama.
+- **Feedback after the session:** ours look grainier and more textured; the style is close but not theirs. Real cards keep large surfaces smooth and put their detail into parts, colors and silhouette; ours render the material (felt nap, leather grain, fabric weave) on simple shapes. Pixel measures at 430×480 do not separate the two, so this is judged by eye.
+- **Cards:** mean grade 3.1 of 5 on the 75 genre cards (41 of them a 3, "close"). 9 were flagged broken, all on perspective or construction: brims that do not match their crowns, tables and floors at a different angle from the object. Cast cards scored best, 3.5.
+- **Sets:** every variant 3 or 4 of 5, "could stand in the game with small issues". The rater kept Detective, Horror and Period Drama.
 
-## Overnight arms, 2026-11-08
+## Overnight arms before the final
 
 One change per arm against a shared control, then one combining round (`experiments/night.py`, readings in `runs/night/read.json` and `runs/param/compare_n0_*.txt`). Twins arms redraw the forty final-style twins (`runs/twins40`); the blockout arms redraw 24 pre-final cards over their Blender models. Rule: adopt only if no other measured field moves away from the real cards and twin CSD does not drop; texture only where pixels and eyes agree. Flat share is the share of surface pixels with local lightness deviation under 0.004 (`experiments/smooth_check.py --flat`), the pixel measure of the grain the outside artist saw; eyes are the judge model's pairwise readings with the real card as the target.
 
@@ -174,9 +163,9 @@ Palette arms replan colors from colorless subjects, so they sit below the contro
 
 The producer's blind look at the adopted smooth line, on 12 twins beside the control and the real card: closer to the real card on 3, the control on 1, the same on 6. As built, the control was better on 4 of 8, the smooth line on 1: the line stays, and construction stays the geometry's job.
 
-Research beside the arms (`research/README.md`): a one-camera fit (GeoCalib) does not find the cards called off in perspective; blockout drawings keep the render's outline whether broken or not, so breaks sit in the render or a surface the drawing adds; edge-preserving smoothing after drawing restores flat share but not CSD. A style LoRA on the reference cards is feasible in about half a day and waits on the producer.
+Research beside the arms (`research/README.md`): a one-camera fit (GeoCalib) does not find the cards called off in perspective; blockout drawings keep the render's outline whether broken or not, so breaks sit in the render or a surface the drawing adds; edge-preserving smoothing after drawing restores flat share but not CSD.
 
-The final sets (`runs/final3`) are drawn with the adopted smooth line, rich colors and fill. The fix rounds after the producer's grades (`runs/final4` to `runs/final6`) changed plans, notes and models, not the style text. `runs/final2` holds the same plans drawn without the smooth line, stopped early and resumable. In the final, plan choices made the weak cards; see `runs/final3/README.md`. The cast cards are `runs/final2/cast`: their prompt has no material line.
+The final sets (`runs/final3`) are drawn with the adopted smooth line, rich colors and fill; the fix rounds (`runs/final4` to `runs/final6`) changed plans, notes and models, not the style text. `runs/final2` holds the same plans drawn without the smooth line, stopped early. The cast cards were first drawn there, and their prompt has no material line.
 
 ## Limits
 

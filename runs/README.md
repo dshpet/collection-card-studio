@@ -1,6 +1,6 @@
 # Runs
 
-Every generated card and every measurement, oldest first. Full-size drawings, review sheets and model renders are kept on disk but not in git. Findings are in [analysis/STYLE_GAPS.md](../analysis/STYLE_GAPS.md).
+Every generated card and measurement, oldest first. **The final sets are listed in [final6/README.md](final6/README.md).** Full-size drawings, review sheets and model renders are kept on disk, not in git. Findings are in [analysis/STYLE_GAPS.md](../analysis/STYLE_GAPS.md).
 
 | Folder | What | Made by |
 |---|---|---|
@@ -20,19 +20,19 @@ Every generated card and every measurement, oldest first. Full-size drawings, re
 | `prefer/`, `prefer_works/` | Which of two drawings is closer, or built right, on pairs the producer decided | `experiments/prefer.py` |
 | `tune/` | Automatic tuning of the director's notes | `experiments/tune.py` |
 | `param/` | Parameter loop: measured style parameters on the forty twins | `experiments/param.py` |
-| `western-2/`, `sci-fi-2/` | Test run of the current pipeline, one variant each. Not final | `make_set.py` |
+| `western-2/`, `sci-fi-2/` | Test runs, one variant each | `make_set.py` |
 | `cast_trial/` | The game's characters on new cards: drawn directly, or pre-drawn, pasted and blended | `experiments/cast_trial.py` |
 | `search_trial/` | The forty twins with label-picked, search-picked and five references | `experiments/search_trial.py` |
 | `smoke/`, `smoke-2/` | Three cards through the changed pipeline, before and after the second review's fixes, one with the cast. Not sets | `make_set.py --plan` |
 | `plain_check/` | The sheriff star's invented jewel: subject wording against the colors line | `experiments/plain_check.py` |
 | `shape_check/` | The clock twin with and without "a perfect circle", with measured roundness | `experiments/shape_check.py` |
 | `fire_check/` | Cauldron and campfire fires: as planned, worded as the real fire, and with the real fire cards as references | `experiments/fire_check.py` |
-| `western-batch/`, `sci-fi-batch/`, `horror-batch/` | Variant 1 of each `*-shared-cast` plan: the producer's lessons, iconic objects and one character card. Not final | `make_set.py` |
+| `western-batch/`, `sci-fi-batch/`, `horror-batch/` | Batch 1: variant 1 of each `*-shared-cast` plan, with the producer's lessons, iconic objects and one character card | `make_set.py` |
 | `wording_check/` | Hat, boot, witch hat and console from their batch briefs, with the batch's and the earlier finals' wording | `experiments/wording_check.py` |
 | `colors/` | Measured backdrop, surface and hero colors of the real cards, the earlier finals and the batch, with a swatch sheet | `experiments/colors.py` |
-| `western-batch2/`, `sci-fi-batch2/`, `horror-batch2/` | Variant 1 of each `*-shared-cast-2` plan: the reference color logic and the second reference pass. Not final | `make_set.py` |
+| `western-batch2/`, `sci-fi-batch2/`, `horror-batch2/` | Batch 2: variant 1 of each `*-shared-cast-2` plan, with the reference color logic and the second reference pass | `make_set.py` |
 | `cast-check/`, `cast-check-2/`, `outfit_check/` | The Western cast plan's character cards, before and after the outfit fix | `make_set.py --plan`, `experiments/outfit_check.py` |
-| `plans/` | Draft plans for the film sets, for the producer to approve before drawing | `make_set.make_plan`, `experiments/shared_plans.py` |
+| `plans/` | Plans for the film sets, drafts and final ([index](plans/README.md)) | `make_set.make_plan`, `experiments/shared_plans.py` |
 | `batch2.png` | The object cards of the three `*-batch2` runs, one row per genre | by hand |
 | `robustness/` | 19 odd, risky and hostile requests planned (`plans/`, then `plans2/` after the repair loop), and Kitchen, Pirates and Star Wars drawn end to end | `experiments/robustness.py`, `make_set.py` |
 | `grade/` | The forty final-style twins with a measured backdrop grade | `experiments/grade.py` |
@@ -40,10 +40,10 @@ Every generated card and every measurement, oldest first. Full-size drawings, re
 | `prefinal/` | Pre-final film sets for five candidate genres (`western`, `sci-fi`, `horror`, `period-drama`, `detective`, three variants each, five candidates per card) and six bonus character cards (`cast`); `outside/` holds an outside rater's sample and answers | `make_set.py`, `experiments/outside_rating.py` |
 | `night/` | Overnight arms on the twins and on pre-final blockout cards (`palette/`, `blockout/`, `perspective/`), their readings (`read.json`, `read_blockout.json`) and the plan review (`plan_review.json`) | `experiments/night.py`, `plan_review.py` |
 | `smooth_check/`, `perspective_check/`, `blockout_drift/` | The research check: flat share of surfaces, a one-camera fit, blockout drift | `experiments/smooth_check.py`, `perspective_check.py`, `blockout_drift.py` |
-| `final2/` | The final plans drawn before the smooth-surface line, stopped early and resumable; `cast/` holds the six final cast cards, whose prompt has no material line | `make_set.py --plan runs/plans/final-*.json` |
-| `final3/` | The final sets, 2026-11-08: `western/`, `period-drama-2/` and `detective-3/`, eight candidates per card, with the smooth-surface line, rich colors and the wider blockout frame; each with its `spec.md`. `period-drama/`, `detective/` and `detective-2/` are earlier draws, before cards were replaced (see its README). `README.md` says what changed; `sets.json` and `compare.json` are the set numbers (`compare.py --sets`), `set_numbers.json` (`experiments/final_numbers.py`) adds the pre-final variants, grey copies and medians; `review.json` feeds the morning review page | `make_set.py --plan runs/plans/final-*.json`, `experiments/final_review.py` |
-| `final4/` | The fix round after the producer's grades of `final3`, 2026-11-08: `western/`, `period-drama/`, `detective/` and `cast/`, each started with `--keep` from its round-1 run, so only the cards the producer commented on were drawn again. `README.md` says what changed; `review.json` feeds round 2 of the review page | `make_set.py --keep`, `experiments/final_review.py` |
-| `final5/` | Fix round 2 after the producer's grades of `final4`, 2026-11-08: `western-2/`, `period-drama/` and `detective/`, eight cards redrawn with `--keep` and eight candidates; `western/` drew only three and is not used. `README.md` says what changed, including the review that undid the producer's notes; `review.json` feeds round 3 of the review page | `make_set.py --keep --candidates 8`, `experiments/final_review.py` |
-| `final6/` | Fix round 3 and the final sets, 2026-11-08: `detective/` with the new Magnifier, `period-drama/` with a Blender Top Hat that was not used. `README.md` lists the final sets; `final_sets.png` shows them; `review.json` feeds round 4 of the review page | `make_set.py --keep --candidates 8`, `experiments/final_review.py` |
+| `final2/` | The final plans drawn before the smooth-surface line, stopped early; `cast/` holds the first draw of the six cast cards | `make_set.py --plan runs/plans/final-*.json` |
+| `final3/` | First draw of the final sets: `western/`, `period-drama-2/` and `detective-3/`, eight candidates per card, with the smooth-surface line, rich colors and the wider blockout frame. `period-drama/`, `detective/` and `detective-2/` are earlier draws, before cards were replaced. `sets.json` and `compare.json` hold the set numbers, `set_numbers.json` adds the pre-final variants, grey copies and medians; `review.json` feeds round 1 of the review page ([README](final3/README.md)) | `make_set.py --plan runs/plans/final-*.json`, `experiments/final_review.py` |
+| `final4/` | Fix round 1: `western/`, `period-drama/` and `period-drama-2/`, `detective/` and `cast/`, started with `--keep` from round 1, so only the commented cards were drawn again ([README](final4/README.md)) | `make_set.py --keep`, `experiments/final_review.py` |
+| `final5/` | Fix round 2: `western-2/`, `period-drama/` and `detective/`, eight cards redrawn; `western/` drew only three candidates and is not used ([README](final5/README.md)) | `make_set.py --keep --candidates 8`, `experiments/final_review.py` |
+| `final6/` | Fix round 3 and the final sets: `detective/` with the new Magnifier, `period-drama/` with a Blender Top Hat that was not used; `final_sets.png` shows the sets ([README](final6/README.md)) | `make_set.py --keep --candidates 8`, `experiments/final_review.py` |
 
-A set run folder holds `plan.json` (with the request that made it), `spec.md` (the set as designed, card by card, with the plan's notes on why; runs before 2026-11-08 have none) and `briefs.json`, the drawings in `tries/`, prompts in `prompts/`, Blender models in `models/`, pairwise judgements in `choose/`, `check.json` with every try's checks, `rounds.json` and `edits.json` with every edit and whether it was kept, and `report.md`.
+A set run folder holds `plan.json` (with the request that made it), `spec.md` (the set as designed, card by card, with the plan's notes on why; early runs have none) and `briefs.json`, the drawings in `tries/`, prompts in `prompts/`, Blender models in `models/`, pairwise judgements in `choose/`, `check.json` with every try's checks, `rounds.json` and `edits.json` with every edit and whether it was kept, and `report.md`.

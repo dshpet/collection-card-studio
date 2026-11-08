@@ -16,7 +16,7 @@ closest, or same when none is.
 
     rate_ui.py              then open http://127.0.0.1:8765
     rate_ui.py --summary    what the ratings say so far
-    rate_ui.py --sets western-final sci-fi-final horror-final    rate the cards of other runs
+    rate_ui.py --sets western-batch2 sci-fi-batch2 horror-batch2    rate the cards of other runs
 """
 
 import argparse

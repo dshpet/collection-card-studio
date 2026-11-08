@@ -1,15 +1,16 @@
-"""Can anything predict which of two versions of one card the user finds closer to the real cards?
+"""Can anything predict which of two versions of one card the producer finds closer to the real cards?
 
 Pairs come from ratings already given, so content is equal within a pair:
-    closest    the user's pick among redraws of one real card, against each other redraw
+    closest    the producer's pick among redraws of one real card, against each other redraw
     trial      two drawings of one twin with different grades
     set        two versions of one set card (old, blockout, soft, photo) with different mean grades
-Judges, each scored on pairs the user decided:
+Judges, each scored on pairs the producer decided:
     csd        the version more similar to the real card(s) in CSD, no training
-    probe      logistic regression on CSD and DINOv3 differences, trained on the user's pairs, one object held out at a time
+    probe      logistic regression on CSD and DINOv3 differences, trained on the producer's pairs, one object held
+               out at a time
     reviewers  the nine specialists and the art director, asked A or B beside the real card(s)
 
-With --target works the truth is the user's works / slightly off / broken label instead of the grade, closest picks
+With --target works the truth is the producer's works / slightly off / broken label instead of the grade, closest picks
 drop out, and the director is asked which drawing is built right. Results go to runs/prefer_works. The construction
 and perspective checkers tested there, at chance, were removed (commit 8bee565 has them).
 
@@ -42,7 +43,7 @@ from review import judge_sheet as sheet
 OUT = ROOT / "runs" / "prefer"
 BATCH = 8
 TRIAL_PER_OBJECT = 10
-# Shown to the reviewers with the user's answer and note, and kept out of every result.
+# Shown to the reviewers with the producer's answer and note, and kept out of every result.
 LESSONS = {"set/horror/v1_09": "too glossy, looks like a statue",
            "set/western/v1_09": "too texture-y; real cards are smoother, but not ultra-smooth",
            "set/western/v1_07": "the preferred saddle is built right and reads like the real cards"}

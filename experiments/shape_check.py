@@ -1,6 +1,6 @@
 """Does naming the canonical shape keep a front-on clock round?
 
-The user called the clock twin (twins40 m17) "not completely round" and "elongated" in every style. Its subject says
+The producer called the clock twin (twins40 m17) "not completely round" and "elongated" in every style. Its subject says
 "a round wall clock seen straight on", while the style text asks for rims as thin ovals from a low camera. Three draws
 per arm, same references:
     before   the subject as written

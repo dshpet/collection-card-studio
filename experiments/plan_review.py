@@ -1,4 +1,4 @@
-"""Review the final plans against their alternatives before the final draw, 2026-11-08.
+"""Review the final plans against their alternatives before the final draw.
 
 For each final genre: every card of the three pre-final variants with the outside rater's grade, the producer's grades
 of the same object in earlier runs, and the pipeline's checks of its drawing; the set numbers of each variant against

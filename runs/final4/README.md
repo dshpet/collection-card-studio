@@ -1,6 +1,6 @@
-# Fix round, 2026-11-08
+# Fix round 1
 
-The producer graded the final sets (`runs/final3`, cast in `runs/final2/cast`) on `experiments/final_review.py`: every set 4 of 5, "Yes, with small issues"; cards 4.4 Western, 3.8 Period Drama, 3.1 Detective, 3.83 cast. This round redraws only the cards the producer commented on. Each folder was started with `make_set.py --keep <round-1 run>`: unchanged cards keep their drawings and picks, and only changed cards are drawn (eight candidates), picked and reviewed.
+After the first draw ([final3](../final3/README.md), every set 4 of 5), this round redraws only the cards the producer commented on. Each folder was started with `make_set.py --keep <first-draw run>`: unchanged cards keep their drawings and picks, and only changed cards are drawn (eight candidates), picked and reviewed.
 
 | Set | Folder | Plan | Kept from |
 |---|---|---|---|
@@ -11,7 +11,7 @@ The producer graded the final sets (`runs/final3`, cast in `runs/final2/cast`) o
 
 ## What changed, by the producer's comments
 
-| Card | Round 1 | Comment | Change |
+| Card | Grade | Comment | Change |
 |---|---|---|---|
 | Windmill | 3 | "Looks like a monument. Maybe add a recognizable field of wheat beneath? Is the structure correct?" | No: a farm wind pump stands on an open lattice tower. A new Blender model with four braced legs, in a wheat field |
 | Campfire | 4 | set: "somewhat off" | The cabin and the large plum pot are gone; logs in a cone, a small blue enamel pot at the edge |
@@ -28,7 +28,7 @@ The producer graded the final sets (`runs/final3`, cast in `runs/final2/cast`) o
 | Steel Safe | 3 | "A little too glossy" | Matte paint; same model |
 | Doorknob Print | 3 | set: "kinda meh as an object" | Replaced by the Trench Coat on a wall hook |
 | Bloodhound | 3 | "Not sure if this could be an object"; set: "looks like a character" | Replaced by the Handcuffs, modelled in Blender |
-| Grand Ball | 4 | "Too much blush on the sheep" | Redrawn with a note against blush. The game's sheep has a faint blush of its own; the new drawings keep about that much, where round 1 painted it larger and brighter |
+| Grand Ball | 4 | "Too much blush on the sheep" | Redrawn with a note against blush. The game's sheep has a faint blush of its own; the new drawings keep about that much, where the first draw painted it larger and brighter |
 | Cake Clue | 3 | "Too texture'y" | Redrawn with a note for smooth surfaces |
 | Hoofprint Clue | 2, broken | "Sheep is too blushed again. The cow has the 3rd leg behind"; set: "Detectives use magnifiers in both" | Barn Detectives: the cow dusts a milk can for prints, the sheep takes notes, both upright |
 
@@ -38,22 +38,20 @@ Unchanged although graded 3 without a comment: Cake Stand, Piano, Squad Car.
 
 Every changed card drew eight candidates, picked pairwise, then one review; an edit stayed only if it beat its draft (kept: Wagon, Windmill; Magnifier, Fedora, Steel Safe; Grand Ball; Folding Fan). Two picks were set by hand:
 
-- Top Hat: the producer's pick from round 1.
+- Top Hat: the producer's pick from the first draw.
 - Windmill: the kept edit had smoothed the wheat into plain golden dunes, against the producer's ask for a recognizable wheat field, so its draft stands (`picked_by` in `western/check.json`).
 
-Left as drawn: every Campfire candidate drew a log cabin at the edge although the plan names a pine clearing; the pick keeps it small. The Police Badge has its emblem but sits small in its wallet, as the model framed it. The Candelabra failed the automatic check on all eight candidates, on its thin silhouette and teal backdrop, not on how it looks. The sheep keeps a faint blush: the game's own sheep has one, so the proposed lesson asks for no more than the cutout's.
+Left as drawn: every Campfire candidate drew a log cabin at the edge although the plan names a pine clearing; the pick keeps it small. The Police Badge has its emblem but sits small in its wallet, as the model framed it. The Candelabra failed the automatic check on all eight candidates, on its thin silhouette and teal backdrop, not on how it looks. The sheep keeps a faint blush: the game's own sheep has one, so the lesson asks for no more than the cutout's.
 
 | Set | Object classes | Scale classes | Backdrop hues | Style similarity |
 |---|---:|---:|---:|---:|
 | Real sets, range | 4-7 | 2-5 | 6-7 | 0.603-0.641 |
-| Western, round 2 / 1 | 7 / 7 | 5 / 5 | 6 / 6 | 0.554 / 0.552 |
-| Period Drama, round 2 / 1 | 7 / 6 | 2 / 2 | 6 / 7 | 0.551 / 0.556 |
-| Detective, round 2 / 1 | 6 / 8 | 4 / 4 | 8 / 7 | 0.471 / 0.543 |
+| Western, fix 1 / first draw | 7 / 7 | 5 / 5 | 6 / 6 | 0.554 / 0.552 |
+| Period Drama, fix 1 / first draw | 7 / 6 | 2 / 2 | 6 / 7 | 0.551 / 0.556 |
+| Detective, fix 1 / first draw | 6 / 8 | 4 / 4 | 8 / 7 | 0.471 / 0.543 |
 
-`compare.json` from `scripts/compare.py --sets runs/final4/sets.json`. Detective's new colors (coral red, sage green) make its cards less alike than before and than any real set; style similarity is descriptive, not validated against the producer's grades.
+`compare.json` from `scripts/compare.py --sets runs/final4/sets.json`. Detective's new colors (coral red, sage green) make its cards less alike than before and than any real set.
 
-Pipeline changes from this round: `make_set.py --keep` and a plan card's `note`; `k.focus` in `scripts/blockout.py`, which frames a blockout on its main body; ten new rules under Proposed in `analysis/lessons.md`, waiting for the producer to accept them.
+Pipeline changes from this round: `make_set.py --keep` and a plan card's `note`; `k.focus` in `scripts/blockout.py`, which frames a blockout on its main body; ten new planner rules in `analysis/lessons.md`, accepted by the producer.
 
-## Review
-
-`.venv/bin/python -B experiments/final_review.py serve` (round 2 is the default), then http://127.0.0.1:8767. Each card shows its round-1 drawing with your grade and comment; a card kept unchanged says so, and its grade stands unless you grade it again. The page opens on the first changed card. `final_review.py summary` counts kept grades with the new ones.
+The producer's grades of this round and the next fixes: [final5](../final5/README.md).

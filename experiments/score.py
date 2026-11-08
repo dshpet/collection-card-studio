@@ -1,4 +1,4 @@
-"""One uniform score for every card the user rated, checked against the user's grades.
+"""One uniform score for every card the producer rated, checked against the producer's grades.
 
 Each card gets, on one shared list:
     twins        each twins40 redraw against its own real card, so content is equal (runs/score/pair_similarity.json)
@@ -11,7 +11,7 @@ Each card gets, on one shared list:
 
     score.py embed          embeddings and classifier, minutes on the GPU
     score.py specialists    model scores, about 250 calls
-    score.py report         how each score tracks the user's grades and twin picks
+    score.py report         how each score tracks the producer's grades and twin picks
 """
 
 import sys
@@ -38,7 +38,7 @@ GRADED = ("trial", "redraw", "soft", "card")
 EMBEDDERS = ("csd", "dinov3", "siglip2")
 K = 10
 BATCH = 10
-# Lessons for the specialists: the user's grade and note, kept out of every result.
+# Lessons for the specialists: the producer's grade and note, kept out of every result.
 LESSONS = {
     "redraw/new/horror/v1_09": "too glossy, looks like a statue",
     "redraw/new/western/v1_09": "too texture-y; real cards are smoother, but not ultra-smooth",
@@ -318,7 +318,7 @@ def report(rows):
             "grade_rho": round(float(rho), 2), "grade_p": round(float(p), 3), "graded": len(have),
             "real_vs_drawn_auc": auc([scores[r["key"]][m] for r in real if m in scores[r["key"]]],
                                      [scores[r["key"]][m] for r in drawn if m in scores[r["key"]]]),
-            # A higher score should mean the user was fooled more often.
+            # A higher score should mean the producer was fooled more often.
             "twin_missed_auc": auc([scores[r["key"]][m] for r in twins if not all(r["detected"]) and m in scores[r["key"]]],
                                    [scores[r["key"]][m] for r in twins if all(r["detected"]) and m in scores[r["key"]]]),
             "by_arm": {}}

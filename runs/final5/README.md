@@ -1,6 +1,6 @@
-# Fix round 2, 2026-11-08
+# Fix round 2
 
-The producer graded round 2 (`runs/final4`): Western 5 of 5, Period Drama 4, Detective 4, cast 5; cards 4.4 Western, 3.5 Period Drama, 3.8 Detective, 4.5 cast. "I like it overall, lets try some smaller fixes." This round redraws the eight cards with a comment, eight candidates each, with `make_set.py --keep <round-2 run> --candidates 8`.
+The producer graded fix round 1 (`runs/final4`): Western 5 of 5, Period Drama 4, Detective 4, cast 5; cards 4.4 Western, 3.5 Period Drama, 3.8 Detective, 4.5 cast. "I like it overall, lets try some smaller fixes." This round redraws the eight cards with a comment, eight candidates each, with `make_set.py --keep <fix-round-1 run> --candidates 8`.
 
 | Set | Folder | Plan | Kept from |
 |---|---|---|---|
@@ -9,11 +9,11 @@ The producer graded round 2 (`runs/final4`): Western 5 of 5, Period Drama 4, Det
 | Detective | `detective/` | `runs/plans/final-detective-5.json` | `final4/detective` |
 | Cast bonus | unchanged, `runs/final4/cast/` | | |
 
-`western/` drew three candidates, the default, before the run was restarted with eight; it is kept for the record and not used.
+`western/` drew three candidates, the default, before the run was restarted with eight; it is not used.
 
 ## What changed, by the producer's comments
 
-| Card | Round 2 | Comment | Change | Pick |
+| Card | Grade | Comment | Change | Pick |
 |---|---|---|---|---|
 | Campfire | 3 | "Maybe the kettle is too metallic in texture?" | Matte enamel pot in the plan | Edit, v1_10_9 |
 | Candelabra | 2, picked 8 | "Perspective seems a little off?"; set: "candelabra perspective?" | Every drawing showed the base from well above and the arms and cups straight on. The blockout now looks from the front at the height of its middle (8 degrees round, 6 up, 85 mm, was 28, 12, 60) | Edit, v1_02_9 |
@@ -32,23 +32,19 @@ The first review of Period Drama and Detective asked for "bright, polished chrom
 
 With the notes, the director asked for soft satin cuffs and kept the short handle, but it still asked for glossy porcelain once; the edit's `Keep:` line held the porcelain matte. It still simplifies the lace on the fan and the parasol into a smooth scalloped band. The lace drafts (Parasol v1_04_7, Fan v1_06_7) are one click away on the review page.
 
-The Top Hat's eight candidates all curl the right side of the brim higher than the left. The pick chose v1_03_1, among the least even; v1_03_3, whose two ends curl most alike, was picked by hand (`picked_by` in `period-drama/check.json`). If it still reads uneven, the next step is a Blender model.
+The Top Hat's eight candidates all curl the right side of the brim higher than the left. The pick chose v1_03_1, among the least even; v1_03_3, whose two ends curl most alike, was picked by hand (`picked_by` in `period-drama/check.json`).
 
 ## Results
 
 | Set | Object classes | Scale classes | Backdrop hues | Style similarity |
 |---|---:|---:|---:|---:|
 | Real sets, range | 4-7 | 2-5 | 6-7 | 0.603-0.641 |
-| Western, round 3 / 2 | 7 / 7 | 5 / 5 | 6 / 6 | 0.560 / 0.554 |
-| Period Drama, round 3 / 2 | 7 / 7 | 2 / 2 | 6 / 6 | 0.551 / 0.551 |
-| Detective, round 3 / 2 | 6 / 6 | 4 / 4 | 9 / 8 | 0.471 / 0.471 |
+| Western, fix 2 / fix 1 | 7 / 7 | 5 / 5 | 6 / 6 | 0.560 / 0.554 |
+| Period Drama, fix 2 / fix 1 | 7 / 7 | 2 / 2 | 6 / 6 | 0.551 / 0.551 |
+| Detective, fix 2 / fix 1 | 6 / 6 | 4 / 4 | 9 / 8 | 0.471 / 0.471 |
 
-`compare.json` from `scripts/compare.py --sets runs/final5/sets.json`. Style similarity is descriptive, not validated against the producer's grades.
+`compare.json` from `scripts/compare.py --sets runs/final5/sets.json`.
 
-Two lessons were added under Proposed in `analysis/lessons.md`: soft matte metal, porcelain and enamel; symmetric objects shown so both sides match, tall objects from mid-height, short handles.
+Two lessons were added to `analysis/lessons.md` and accepted: soft matte metal, porcelain and enamel; symmetric objects shown so both sides match, tall objects from mid-height, short handles.
 
-## Review
-
-`.venv/bin/python -B experiments/final_review.py serve` (round 3 is the default), then http://127.0.0.1:8767. Each changed card shows its round-2 drawing with the grade and comment; a card unchanged since an earlier round carries the grade it got last. Grand Ball and Cake Clue, redrawn in round 2, have no card grade yet.
-
-Round 3's grades, the last fix and the final sets: [runs/final6/README.md](../final6/README.md).
+The producer's grades of this round, the last fix and the final sets: [final6](../final6/README.md).

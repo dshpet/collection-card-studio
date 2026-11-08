@@ -85,7 +85,7 @@ def contact_sheet(paths, out, columns=5):
 
 
 # Flat objects lying on a surface that fills the card, seen from above. Raters labelled most of them stripes (the
-# planks), so they were attached as references to upright stripes cards, such as a rocket. Checked by eye, 2026-11-06.
+# planks), so they were attached as references to upright stripes cards, such as a rocket.
 SURFACE_FROM_ABOVE = {"Fruit Plate", "Tennis", "Binoculars", "Travel Book", "Map"}
 
 

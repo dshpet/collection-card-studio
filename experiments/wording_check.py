@@ -1,6 +1,6 @@
 """Do the producer's lessons make objects plainer through the subject wording?
 
-The batch of 2026-11-06 (runs/<genre>-batch) looks more correct but plainer than the earlier finals: the hat lost
+The first batch (runs/<genre>-batch) looks more correct but plainer than the earlier finals: the hat lost
 its badge, the boot its spur, the witch hat its bent tip, the control panel its gauges. Its subjects are longer and
 geometric, as the shape lesson asks. Four objects, each drawn from its batch brief (same staging, backdrop and
 references, no blockout), three draws per arm:

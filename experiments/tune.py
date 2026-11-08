@@ -1,10 +1,10 @@
-"""Tune the art director's judging notes on pairs the user already decided, and check them on pairs it never saw.
+"""Tune the art director's judging notes on pairs the producer decided, and check them on pairs it never saw.
 
 The pairs of experiments/prefer.py split by object into a tuning half and a held-out half. Each round the director judges
-the tuning half with the current notes, an editor sees its mistakes with the user's own comments and proposes one
+the tuning half with the current notes, an editor sees its mistakes with the producer's own comments and proposes one
 change, and the change stays only if agreement rises by more than MARGIN pairs. At the end the tuned notes and the
-untouched prompt each judge the held-out half once. Notes that win there go to analysis/agents/director_notes.md, which
-choose() in review.py reads.
+untouched prompt each judge the held-out half once. Notes that win there go to analysis/agents/director_notes.md. None
+held out (analysis/STYLE_GAPS.md), so the pipeline reads no tuned notes.
 
     tune.py --rounds 6
 """
@@ -43,7 +43,7 @@ def split(rows):
 
 
 def comments():
-    """The user's notes, by image and by closest-pick object."""
+    """The producer's notes, by image and by closest-pick object."""
     found = defaultdict(list)
     from rate_ui import items
     ratings = {v["id"]: v for v in load_json(ROOT / "runs" / "ratings.json").values() if v.get("comment")}

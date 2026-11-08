@@ -1,8 +1,8 @@
 """Can the image model draw a convincing fire, given words and references taken from the game's real fire?
 
-The producer called the fires weak: the cauldron's tiny flame ("Fire is too small", "Fire is laughable") and the
-meteor's tail. The real Campfire Cook card has a bright fire: yellow-white core, orange tips, glowing log ends and
-warm light on the pot above. Two objects, three arms, three draws each, all drawn from the brief without a blockout:
+The producer called the fires weak: the cauldron's tiny flame and the meteor's tail. The real Campfire Cook card has a
+bright fire: yellow-white core, orange tips, glowing log ends and warm light on the pot above. Two objects, three
+arms, three draws each, all drawn from the brief without a blockout:
     before   the brief as planned: the horror Cauldron (runs/horror v1_04) and the western Campfire (runs/western-2 v1_10)
     words    the subject describes the fire as on the real card
     refs     words, plus the real Campfire Cook and Lantern cards as the first references

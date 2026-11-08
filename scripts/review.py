@@ -3,8 +3,8 @@
     review.py study                 specialists read real cards and describe the style
     review.py twins r2              blind pairs: a run's twins against the real cards
 
-make_set.py calls choose() and review_variant() for new cards. Construction and perspective checkers were removed on
-2026-11-05: on pairs the user labelled works or broken they were at chance (analysis/STYLE_GAPS.md, commit 8bee565).
+make_set.py calls choose() and review_variant() for new cards. Construction and perspective checkers were removed: on
+pairs the producer labelled works or broken they were at chance (analysis/STYLE_GAPS.md, commit 8bee565).
 """
 
 import argparse
@@ -171,7 +171,8 @@ def judge_sheet(row, out, labels=("A", "B")):
 
 
 def judge_lessons(folder):
-    """Pairs the user decided, with their note, shown to the director before it judges (analysis/judge_lessons.json)."""
+    """Pairs the producer decided, with their note, shown to the director before it judges
+    (analysis/judge_lessons.json)."""
     taught = []
     for index, row in enumerate(load_json(ANALYSIS / "judge_lessons.json")):
         labels = ("A, preferred", "B") if row["user"] == "A" else ("A", "B, preferred")
@@ -375,7 +376,7 @@ def judge_pairs(run, label, contests, rater=JUDGE):
     """Wins per try from pairwise judgements, each pair shown in both orders.
 
     contests: (card id, try id, try id, reference card ids). Two drawings under the card's real references, both
-    orders, is the framing that agreed with the user (61% on 216 decided pairs, experiments/prefer.py) and cancels
+    orders, is the framing that agreed with the producer (61% on 216 decided pairs, experiments/prefer.py) and cancels
     position: shown three candidates at once, the director picked whatever sat in the second slot, ten of ten.
     """
     folder = run / "choose" / label
@@ -509,8 +510,7 @@ def direct(name, pairs, reports, style_text, rater, producer=None):
                  "shows the look, not the object. Form cannot be judged across objects: never ask to change a card's "
                  "proportions, thickness or roundness. Notes may change color, value, backdrop, light, finish and extras. "
                  f"{edit_examples()}\n")
-    # From the producer, 2026-11-08: the director asked for "bright, polished chrome" on handcuffs the producer had
-    # called too metallic, and for glossy porcelain they had called too glossy
+    # Without these notes the director undid the producer's fixes, asking for chrome cuffs and glossy porcelain again
     fixes = ("The producer's notes on these cards stand. Never ask for the opposite of one or for anything that undoes "
              "it:\n" + "\n".join(f"- {card}: {note}" for card, note in producer.items()) + "\n\n" if producer else "")
     prompt = (f"{(AGENTS / 'art_director.md').read_text('utf-8')}\n\nEach image is one pair of cards, A and B on top.\n"

@@ -45,9 +45,9 @@ Rater counts below are what models said, not what the cards are. Blind tests lat
 - **No natural families:** the best silhouette is 0.24. The cards form a continuum, not distinct groups.
 - **No outliers to drop:** within each category, local outlier factors stay at or below 1.44 in CSD, DINOv2 and SigLIP 2, and the spaces disagree on which cards are odd. The most flagged (Aircon, Rock Guitar, Podium) are on-style cards with unusual staging. Off-style work is caught one level up: a drawn card must sit near some real card in CSD, a floor that rejected all six wrong-style controls.
 
-## Second pass, 2026-11-06
+## Second pass: object choice and art logic
 
-Two model reviewers went over all 160 cards, one for object choice and one for art logic, against the planner's rules and our 60 cards; the main claims were spot-checked against the card list. Tags: measured from pixels, rated by the models' labels, or eye, read by those reviewers and spot-checked, not by the producer.
+Two model reviewers went over all 160 cards, one for object choice and one for art logic, against the planner's rules and our 60 cards; the main claims were spot-checked against the card list. Tags: measured from pixels, rated from the models' labels, or eye: read by those reviewers and spot-checked, not graded by the producer.
 
 What the sets choose:
 - **Made things at object size (eye).** Wild nature appears on 4 of 129 object cards (Palm Tree, Coral Reef, Jellyfish, Seahorse), and no card shows a landform or a sky body. Our plans had about one in six.
@@ -66,7 +66,7 @@ How they are drawn:
 - **Detail (measured).** Category 1 subjects are the plainest. The art guide says category 2 has no small details, but its subjects are the most detailed.
 - **Data note (eye).** Some card names do not match their pictures: Poolside's Swim Ring shows flip-flops, its Lifeguard Tower shows sunscreen, and Beach's Sunblock shows a lifeguard chair.
 
-The producer's calls, 2026-11-06:
+The producer's calls:
 - **No wild nature, as on the real sets.** A single plant or animal with a clear silhouette may stay, so the Cactus is kept. Mesa, Ringed Planet and Comet are dropped, though they were graded 5.
 - **Night and dusk skies are allowed for dark topics such as horror.** Real evening scenes (13 of 73, eye) use a rich royal blue sky with small stars and a crescent moon, or violet turning pink at the horizon. They are never black, and a warm light in the scene carries them: lit windows or a glowing sign.
 - **One object per set may carry the game's emblem, as on 8 of 15 real sets.** It goes where a brand or stamp would sit and is drawn from words alone: a house or cow-face pictogram. The brief neither asks for it nor rules it out.

@@ -1,7 +1,6 @@
 """Which backdrop colours do the real cards use, and do ours follow them?
 
-The producer on the batch potion (horror-batch v1_07): "The background is maybe off, reminiscent of sand. Run analysis
-of the colours that are being used: are there any patterns to it?"
+Asked by the producer after the sand-coloured backdrop of the batch potion (horror-batch v1_07).
 
 Measured per card: the backdrop is the background above the subject (top 35% of rows, the subject mask dilated), the
 surface is the background in the bottom 20% of rows (used for categories 2 and 3, which stand on one), the hero is the

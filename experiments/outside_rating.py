@@ -9,8 +9,8 @@ producer's runs/ratings.json.
 Five candidate genres for three sets: every variant is shown whole in the sets part, and a random half of each variant
 is graded card by card, to keep the session near 60 minutes. The blind test comes first, before the rater knows the
 topics or has seen our cards labelled: the real cards are all from a summer collection and ours are film genres, so
-knowing either would give ours away by topic. Generated cards
-are 430x480 like the real ones, with the same sharpness and no compression marks, so file traits give nothing away.
+knowing either would give ours away by topic. Generated cards are 430x480 like the real ones, with the same sharpness
+and no compression marks, so file traits give nothing away.
 Each generated card in the blind test faces a real card of the same art category.
 """
 

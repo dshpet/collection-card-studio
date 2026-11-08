@@ -207,8 +207,7 @@ def unframed(*parts):
 
 def focus(*parts):
     """Hero parts the card centers on, its main body, when other parts reach out to one side, such as a camera's
-    flash. Everything framed still fits on the card. From the producer, 2026-11-08: "should be more centered at the
-    point of visual attention"."""
+    flash. Everything framed still fits on the card."""
     for part in parts:
         part["focus"] = True
     return parts
@@ -398,8 +397,7 @@ def render(model, out):
     camera.data.clip_end = distance * 50
     stage(scene, spec, center, distance)
 
-    # The CPU: a render takes about 10 s, and Cycles on HIP faulted on an integrated GPU and once hung the main GPU
-    # under parallel runs (2026-11-07), resetting it and killing every GPU process
+    # CPU: about 10 s a render. Cycles on HIP faulted on the integrated GPU and hung the main GPU under parallel runs
     scene.render.engine, scene.cycles.device, scene.cycles.samples = "CYCLES", "CPU", 128
     scene.cycles.use_denoising = True
     scene.view_settings.view_transform = "Standard"

@@ -1,12 +1,12 @@
 """Does a measured backdrop grade bring drawings closer to their real cards?
 
 Real backdrops are darker toward the corners, with light pooled behind the object. Ours are lighter and flatter, and
-the image model ignored the words for it (analysis/STYLE_GAPS.md, second batch). This learns the gap instead: the
-median difference in background lightness (L*) between each real card and its twin, by distance from the object, and
-adds it to the twin's background through a soft mask. The object is untouched.
+the image model ignored the words for it (analysis/STYLE_GAPS.md, Batches graded by the producer). This learns the gap
+instead: the median difference in background lightness (L*) between each real card and its twin, by distance from the
+object, and adds it to the twin's background through a soft mask. The object is untouched.
 
 Tested on the forty final-style twins in two folds by object, so no twin is graded with a profile it helped fit.
-Closeness is CSD against the twin's own real card, the measure that tracked the user (analysis/STYLE_GAPS.md).
+Closeness is CSD against the twin's own real card, the measure that tracked the producer (analysis/STYLE_GAPS.md).
 
     grade.py                        -> runs/grade/<fold>/<twin>.png, runs/grade/result.json
 """

@@ -2,9 +2,10 @@
 
 The restyle prompt says to keep the blockout's camera and parts exactly, yet five of the outside rater's nine
 perspective breaks were drawn from blockouts. Two measures per card against its own render, both at 430x480: the
-silhouette IoU (BiRefNet masks of the drawing and of the render, as the pipeline makes them) and the edge drift, the mean distance in pixels from each edge of the render's object to the nearest edge of the
-drawing (Canny on lightness). Labels: the outside rater's broken pre-final cards, the producer's works / slightly off /
-broken on the blockout redraws and the construction trial's blockout arms.
+silhouette IoU (BiRefNet masks of the drawing and of the render, as the pipeline makes them) and the edge drift, the
+mean distance in pixels from each edge of the render's object to the nearest edge of the drawing (Canny on lightness).
+Labels: the outside rater's broken pre-final cards, the producer's works / slightly off / broken on the blockout
+redraws and the construction trial's blockout arms.
 
     blockout_drift.py    -> runs/blockout_drift/scores.json, summary.json, broken.png (renders above drawings)
 """

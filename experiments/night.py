@@ -1,4 +1,4 @@
-"""Overnight arms, 2026-11-07/08: one change per arm against a shared control, before the final sets.
+"""Style arms before the final sets: one change per arm against a shared control.
 
 The twins' style lines run through param.py (runs/twins40/n0, ns, nc). This script covers what param.py cannot:
 
@@ -7,8 +7,7 @@ The twins' style lines run through param.py (runs/twins40/n0, ns, nc). This scri
                                new+smooth draws the new rule's colors with the smooth line
     night.py blockout ARM      24 pre-final blockout cards redrawn: smooth (the smooth-surface line) or fill (re-rendered
                                at the real cards' frame size), or both, fill+smooth or fill+smooth2 (the smooth line
-                               without "sheen"); the control is each card's first
-                               pre-final candidate
+                               without "sheen"); the control is each card's first pre-final candidate
     night.py perspective ARM   the nine cards graded broken: cam (the one-camera line) or model (a blockout for the four
                                drawn without one); the control is their pre-final candidates
     night.py read              measure every arm against the real cards; CSD to the twin's own real card

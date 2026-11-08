@@ -1,4 +1,4 @@
-# The final sets, 2026-11-08
+# First draw of the final sets
 
 | Set | Folder | Plan |
 |---|---|---|
@@ -7,27 +7,25 @@
 | Detective | `detective-3/` | `runs/plans/final-detective-3.json` |
 | Cast bonus, two cards per genre | `runs/final2/cast/` | `runs/plans/final-cast.json` |
 
-Each folder has `spec.md` (the set: staging, subject, colors, why each card), `report.md` (checks), `variant_1.png` (the set; `variant_1-cast.png` for the cast, kept out of git) and every candidate in `tries/`. `period-drama/`, `detective/` and `detective-2/` are earlier draws of those sets, kept for the record.
+Each folder has `spec.md` (staging, subject, colors and why, per card), `report.md` (checks), `variant_1.png` (the cast sheet is kept out of git) and every candidate in `tries/`. `period-drama/`, `detective/` and `detective-2/` are earlier draws of those sets.
 
-## Review
-
-`.venv/bin/python -B experiments/final_review.py serve`, then http://127.0.0.1:8767. Sets: the four rows under a real set. Cards: each card with its references, every candidate, edits included (click one to pick it instead), its blockout and the pre-final drawing with the outside rater's grade; grade 1-5, broken, comment. Blind arms: the overnight smooth-surface and one-camera twins against the real card, and the nine broken pre-final cards redrawn by the perspective arms. Answers go to `runs/ratings.json`; `final_review.py summary` reads them.
+The producer graded this draw on `experiments/final_review.py` (round 1): every set 4 of 5, "Yes, with small issues"; cards 4.4 Western, 3.8 Period Drama, 3.1 Detective, 3.83 cast. The fix rounds follow in [final4](../final4/README.md).
 
 ## What changed since the pre-final
 
-- **Plans** composed card by card from the evidence: the outside rater's best variant per genre, cards the producer graded 5 before, and swaps for cards graded low or broken (`experiments/plan_review.py`, notes in each `spec.md`).
+- **Plans** composed card by card: the outside rater's best variant per genre, cards the producer graded 5 before, and swaps for cards graded low or broken (`experiments/plan_review.py`, notes in each `spec.md`).
 - **Rich colors** in the planner: twins closer to their real cards by CSD on 29 of 40.
 - **Smooth surfaces** in the prompt for cards drawn from text: flat share nearer the real cards on 27 of 40 twins, no gloss or CSD cost. The blockout prompt is unchanged: there the line read glossier.
 - **Blockouts framed larger**, half the gap to the real cards' median, categories 2-4.
 - **Eight candidates per card** instead of five.
-- **Period Drama, after its first draw:** the Pearl Necklace failed the style check in all nine drawings (a navy cushion filling the card), so it became the Quill Pen, the outside rater's 4; the Hat Box drew as a plain red drum and got crimson and cream stripes. Both then passed.
-- **Detective, in two redraws:** the Badge Wallet lay on a dark wooden table, darker than any card in the real sets, so it moved to a light honey-colored desk, like the Evidence Bag's chosen edit; then the Flash Camera moved from sky blue to royal blue, so the set no longer had four cyan backdrops, two of them side by side. Both redraws were seeded with the other cards' candidates.
+- **Period Drama, after its first draw:** the Pearl Necklace failed the style check in all nine drawings (a navy cushion filling the card), so it became the Quill Pen, the outside rater's 4; the Hat Box drew as a plain red drum and got crimson and cream stripes.
+- **Detective, in two redraws:** the Badge Wallet lay on a dark wooden table, darker than any real card, so it moved to a light honey-colored desk; then the Flash Camera moved from sky blue to royal blue, so the set no longer had four cyan backdrops. Both redraws were seeded with the other cards' candidates.
 
-Evidence and the dropped arms: `analysis/STYLE_GAPS.md`, "Overnight arms".
+The arms tried and dropped before this draw (one camera, perspective fixes) are in [STYLE_GAPS](../../analysis/STYLE_GAPS.md#overnight-arms-before-the-final).
 
 ## Set numbers
 
-Against the four real sets without character cards (`set_numbers.json` from `experiments/final_numbers.py`; `compare.json` from `scripts/compare.py --sets runs/final3/sets.json`). [COMPARISON](../../analysis/COMPARISON.md) has the full table and why style similarity is low. Style similarity is the mean CSD between a set's own cards; it is descriptive, not a judge.
+Against the four real sets without character cards (`set_numbers.json` from `experiments/final_numbers.py`; `compare.json` from `scripts/compare.py --sets runs/final3/sets.json`). Style similarity is the mean CSD between a set's own cards; [COMPARISON](../../analysis/COMPARISON.md) explains why it is low.
 
 | Set | Object classes | Scale classes | Backdrop hues | Style similarity |
 |---|---:|---:|---:|---:|
@@ -36,9 +34,4 @@ Against the four real sets without character cards (`set_numbers.json` from `exp
 | Period Drama, final / pre-final v3 | 6 / 5 | 2 / 2 | 7 / 8 | 0.556 / 0.482 |
 | Detective, final / pre-final v2 | 8 / 9 | 4 / 3 | 7 / 5 | 0.543 / 0.543 |
 
-## Not in the final, waiting on the producer
-
-- One camera: no measured change on the twins; the blind page asks.
-- Perspective: no model or pixel judge reads it; the blind page shows the nine broken cards redrawn with the camera line and with Blender models.
-- A style LoRA on the reference cards: about half a day; needs a decision.
-
+The review page: `.venv/bin/python -B experiments/final_review.py serve`, then http://127.0.0.1:8767; `final_review.py summary` reads the grades.

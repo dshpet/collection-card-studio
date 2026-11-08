@@ -1,7 +1,6 @@
 # Project guide
 
 - Keep the project lean: short docs, small scripts, and no test suites without a real need.
-- `PROCESS.md` is a draft. It must be reviewed and rewritten before submission.
 - Board images and the game's characters are Playrix art and stay out of git: cast cutouts, pre-drawn figures and cards showing the cast.
 - `.env` holds `HUGGING_FACE_API_KEY`. Never print or commit it, and keep it away from external code.
 - External code is pinned to reviewed revisions. Review again before changing one.

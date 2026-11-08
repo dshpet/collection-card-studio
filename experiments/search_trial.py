@@ -2,9 +2,9 @@
 
 Each twin is a real card redrawn with that card hidden. Arms, one draw per twin:
     labels   the three references picked by labels when the twins were made (the control)
-    search   three picked by search.py likeness within the backdrop pattern, the rule tested on 2026-11-05
+    search   three picked by search.py likeness within the backdrop pattern
     five     the control's three plus the next two by the pipeline's rule, as Codex takes up to five images
-Closeness to the hidden real card is measured with CSD, the one measure that tracked the user on twins
+Closeness to the hidden real card is measured with CSD, the one measure that tracked the producer on twins
 (analysis/STYLE_GAPS.md), and judged pairwise by the art director with the real card shown.
 
     search_trial.py draw --arm search
@@ -27,7 +27,7 @@ RUN = ROOT / "runs" / "search_trial"
 
 
 def by_likeness(card, cards, likeness):
-    """The rule tested on 2026-11-05: same category, backdrop pattern first, then likeness."""
+    """The rule under test: same category, backdrop pattern first, then likeness."""
     pool = [c for c in cards if c["form"]["staging"]["art_category"] == card["category"]
             and "staging.art_category" not in c["disputed"]]
     return sorted(pool, key=lambda c: (c["form"]["backdrop"]["pattern"] != card["pattern"], -likeness[c["id"]]))

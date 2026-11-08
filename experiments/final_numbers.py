@@ -1,4 +1,4 @@
-"""Numbers for the final sets of 2026-11-08 against the real sets and the pre-final variants they came from.
+"""Numbers for the final sets against the real sets and the pre-final variants they came from.
 
 Set numbers as scripts/compare.py defines them; style similarity again on grey copies of the cards, to see how much of
 it is color; medians of the measured gaps the outside artist's sample showed, on the 30 final cards, the 30

@@ -10,7 +10,7 @@ from common import ANALYSIS, ROOT, best_try, load_json
 
 from form import CARD_FORM
 
-FINAL_SETS = ROOT / "runs" / "final6" / "sets.json"  # the final sets, after the producer's fix rounds of 2026-11-08
+FINAL_SETS = ROOT / "runs" / "final6" / "sets.json"  # the final sets
 
 
 def markdown(text):
