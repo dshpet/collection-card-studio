@@ -26,7 +26,7 @@ Evidence and the dropped arms: `analysis/STYLE_GAPS.md`, "Overnight arms".
 
 ## Set numbers
 
-Against the four real sets without character cards (`set_numbers.json`, `scripts/compare.py`). Style similarity is CSD between whole sets; it compares different objects, so it is descriptive, not a judge.
+Against the four real sets without character cards (`set_numbers.json`; `compare.json` from `scripts/compare.py --sets runs/final3/sets.json`). [COMPARISON](../../analysis/COMPARISON.md) has the full table and why style similarity is low. Style similarity is the mean CSD between a set's own cards; it is descriptive, not a judge.
 
 | Set | Object classes | Scale classes | Backdrop hues | Style similarity |
 |---|---:|---:|---:|---:|

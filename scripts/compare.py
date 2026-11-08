@@ -1,7 +1,12 @@
-"""Compare the final sets in runs/final.json with the real character-free sets, on the same definitions."""
+"""Compare final sets with the real character-free sets, on the same definitions.
+
+    compare.py                                  the sets in runs/final.json -> runs/compare.json
+    compare.py --sets runs/final3/sets.json     another {run: picks} file -> compare.json beside it
+"""
 
 import argparse
 import os
+from pathlib import Path
 
 os.environ.setdefault("HF_HUB_OFFLINE", "1")
 
@@ -51,19 +56,20 @@ def set_row(run, picks, encode):
             "style_similarity": round(float(similarity[np.triu_indices(len(picks), 1)].mean()), 3)}
 
 
-def main():
+def main(sets):
     encode = load_csd(MODELS["csd"])
     rows = real_rows()
-    ours = [set_row(run, picks, encode) for run, picks in load_json(ROOT / "runs" / "final.json").items()]
+    ours = [set_row(run, picks, encode) for run, picks in load_json(sets).items()]
     print("| Set | Title words | Name words | Object classes | Scales | Backdrop hues | Categories 1/2/3/4 | Style similarity |")
     print("|---|---:|---:|---:|---:|---:|---|---:|")
     for row in rows + ours:
         mix = "/".join(str(row["categories"].get(c, 0)) for c in "1234")
         print(f"| {row['title']} | {row['title_words']} | {row['name_words']} | {row['object_classes']} | {row['scale_classes']} "
               f"| {row['background_hues']} | {mix} | {row['style_similarity']} |")
-    save_json(ROOT / "runs" / "compare.json", {"real": rows, "ours": ours})
+    save_json(sets.parent / "compare.json", {"real": rows, "ours": ours})
 
 
 if __name__ == "__main__":
-    argparse.ArgumentParser(description=__doc__).parse_args()  # --help only; the script takes no options
-    main()
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--sets", type=Path, default=ROOT / "runs" / "final.json", help="a {run: picks} file")
+    main(parser.parse_args().sets.resolve())
