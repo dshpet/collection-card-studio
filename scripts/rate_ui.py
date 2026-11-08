@@ -1,18 +1,8 @@
-"""A local page for human ratings. Answers go straight to runs/ratings.json.
+"""A local page for blind human ratings. Answers go straight to runs/ratings.json.
 
-Twins: a real card and its redraw, sides shuffled. Pick the generated one. Old-style redraws are mixed in as a control.
-Closest: a real card and its redraws in every style drawn so far, shuffled. Pick the closest.
-Cards: every set card beside its three reference cards, all at the same size, graded 1-5.
-Trial: each drawing of experiments/trial.py beside its real card, arm hidden: does it work as built, and a grade 1-5.
-Redraw: each final card, as chosen before and as redrawn from a blockout, mixed and unlabelled, beside its
-reference cards: does it work as built, and a grade 1-5.
-Soft: the cards of experiments/trial2.py, each arm and the old card mixed and unlabelled, rated as in Redraw.
-Param: a real card with its final-style twin and the twins redrawn by experiments/param.py rounds, shuffled. Pick the
-closest, or same when none is.
-Cast: each card of experiments/cast_trial.py, arms mixed and unlabelled, beside real cards with the same characters:
-does the scene work, and a grade 1-5.
-Generators: a real card with its twin drawn by each image model of experiments/generators.py, shuffled. Pick the
-closest, or same when none is.
+Tabs: Twins (pick the generated card), Closest (pick the redraw closest to the real card), Cards (grade set cards
+beside their references), and the trials Trial, Redraw, Soft, Param, Cast and Generators. Each tab states its question;
+arms are always shuffled and unlabelled.
 
     rate_ui.py              then open http://127.0.0.1:8765
     rate_ui.py --summary    what the ratings say so far
@@ -37,6 +27,7 @@ SERVED = ("materials/card_examples/", "runs/")
 CLOSEST_STYLES = ("final", "old", "r3", "r9")
 PARAM = ("p1", "p2")  # experiments/param.py rounds under test
 LOCK = threading.Lock()
+ITEMS = []  # filled by main()
 
 
 def items(sets=SETS):
@@ -236,6 +227,7 @@ textarea { display: block; width: 100%; max-width: 876px; height: 56px; margin: 
 <span id="progress"></span><label style="margin-left:auto">Rater <input id="rater" size="10"></label></header>
 <main id="main"></main>
 <script>
+const escapeHtml = s => s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
 let items = [], ratings = {}, mode = "twin";
 const position = { twin: 0, closest: 0, card: 0, trial: 0, redraw: 0, soft: 0, param: 0, cast: 0, generator: 0 };
 const kinds = ["twin", "closest", "card", "trial", "redraw", "soft", "param", "cast", "generator"];
@@ -306,7 +298,7 @@ function show() {
   }
   const result = mode === "twin" && entry ? (entry.answer === "neither" ? "Skipped" : (entry.correct ? "Right" : "Wrong")) +
     ` · ${item.generated} was generated · ${item.name}` : "";
-  document.getElementById("main").innerHTML = html + `<textarea id="comment" placeholder="Comment, optional: what looks off?">${entry && entry.comment ? entry.comment : ""}</textarea>
+  document.getElementById("main").innerHTML = html + `<textarea id="comment" placeholder="Comment, optional: what looks off?">${entry && entry.comment ? escapeHtml(entry.comment) : ""}</textarea>
     <div id="result">${result}</div><div class="row"><button id="back">← Back</button><button id="next">Next →</button></div>`;
   document.querySelectorAll("[data-answer]").forEach(b => b.onclick = () => save({ answer: b.dataset.answer, correct: b.dataset.answer === item.generated }));
   document.querySelectorAll("[data-grade]").forEach(b => b.onclick = () => save({ grade: Number(b.dataset.grade) }));

@@ -11,12 +11,12 @@ import random
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 
-from common import ANALYSIS, ROOT, best_try, load_json, save_json
+from common import ANALYSIS, ROOT, SIZE, best_try, contact_sheet, load_json, save_json, strict, text
 
 from PIL import Image
 
 from draw import draw
-from make_set import SIZE, check_tries, contact_sheet, draw_card, strict, text
+from make_set import check_tries, draw_card
 from rate import ask_claude, ask_codex
 
 STYLES = {"photo": "a real studio photograph, photorealistic, natural materials",

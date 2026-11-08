@@ -18,7 +18,7 @@ INSTRUCTION = """Call the image_gen tool exactly once{images}. Pass the text bet
 
 
 def reached_tool(thread):
-    """The prompt the image tool really received, read from Codex's session log. The log is then removed."""
+    """The prompt the image tool really received. Codex records it only in its session log, which is then removed."""
     log = next((HOME / "sessions").rglob(f"*{thread}*.jsonl"))
     prompts = []
     with open(log, encoding="utf-8") as lines:
@@ -52,11 +52,15 @@ def draw(prompt, references, out, transparent=False):
     thread = next(json.loads(line)["thread_id"] for line in done.stdout.splitlines()
                   if '"thread.started"' in line)
     sent = reached_tool(thread)
-    images = sorted((HOME / "generated_images" / thread).glob("*.png"))
-    if not images:
-        raise RuntimeError("no image was generated")
-    if (sent or "").strip() != prompt.strip():
-        raise RuntimeError(f"the prompt was rewritten: {(sent or '')[:200]}")
-    out.parent.mkdir(parents=True, exist_ok=True)
-    shutil.move(images[-1], out)
+    folder = HOME / "generated_images" / thread
+    try:
+        images = sorted(folder.glob("*.png"))
+        if not images:
+            raise RuntimeError("no image was generated")
+        if (sent or "").strip() != prompt.strip():
+            raise RuntimeError(f"the prompt was rewritten: {(sent or '')[:200]}")
+        out.parent.mkdir(parents=True, exist_ok=True)
+        shutil.move(images[-1], out)
+    finally:
+        shutil.rmtree(folder, ignore_errors=True)
     return out

@@ -29,8 +29,9 @@ class MaterialsIntegrityTest(unittest.TestCase):
             record = self.provenance[entry["id"]]
             self.assertEqual(entry["file"], record["file"])
             self.assertEqual(entry["sha256"], record["sha256"])
-            self.assertEqual(sha256((ROOT / entry["file"]).read_bytes()).hexdigest(),
-                             record["sha256"], entry["id"])
+            path = ROOT / entry["file"]
+            self.assertTrue(path.exists(), f"{entry['file']} is missing: the board images go in materials/ (README, Setup)")
+            self.assertEqual(sha256(path.read_bytes()).hexdigest(), record["sha256"], entry["id"])
 
     def test_no_untracked_images(self):
         tracked = {e["file"] for e in self.manifest}

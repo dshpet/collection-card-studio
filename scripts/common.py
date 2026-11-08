@@ -12,6 +12,7 @@ ANALYSIS = ROOT / "analysis"
 DERIVED = ANALYSIS / "derived"
 MODELS = ROOT / ".models"
 SIZE = (430, 480)  # a reference card
+FINAL_SETS = ROOT / "runs" / "final6" / "sets.json"  # the submitted sets: {run: picks}
 
 # The models behind the CLIs. draw.py holds the generator itself.
 DRAWER = "gpt-6.1-sol"  # Codex: draws, edits and rates blind
@@ -27,13 +28,6 @@ def hf_key():
     env = ROOT / ".env"
     match = env.exists() and re.search(r"^\s*HUGGING_FACE_API_KEY\s*=\s*(.+?)\s*$", env.read_text(), re.M)
     return match.group(1).strip("\"'") if match else None
-
-
-def load_token():
-    """Expose the key to the hub client through the environment. Only for scripts that start no other program."""
-    key = hf_key()
-    if key:
-        os.environ.setdefault("HF_TOKEN", key)
 
 
 def manifest(group):
@@ -84,8 +78,8 @@ def contact_sheet(paths, out, columns=5):
     sheet.save(out)
 
 
-# Flat objects lying on a surface that fills the card, seen from above. Raters labelled most of them stripes (the
-# planks), so they were attached as references to upright stripes cards, such as a rocket.
+# Flat objects seen from above on a surface that fills the card. Raters labelled most of them stripes (the planks),
+# which made them references for upright stripes cards such as a rocket.
 SURFACE_FROM_ABOVE = {"Fruit Plate", "Tennis", "Binoculars", "Travel Book", "Map"}
 
 

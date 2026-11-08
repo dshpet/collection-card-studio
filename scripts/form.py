@@ -1,5 +1,7 @@
 """The universal forms. One definition drives the raters, the schema and the report."""
 
+from common import strict
+
 
 def choice(*options):
     return {"kind": "choice", "options": list(options)}
@@ -156,25 +158,20 @@ def _schema(field):
     return {"type": "string"}
 
 
-def _object(properties):
-    return {"type": "object", "additionalProperties": False,
-            "properties": properties, "required": list(properties)}
-
-
 def _sections(form):
-    return {section: _object({name: _schema(field) for name, field in fields.items()})
+    return {section: strict({name: _schema(field) for name, field in fields.items()})
             for section, fields in form.items()}
 
 
 def card_schema(sections):
     form = {name: CARD_FORM[name] for name in sections}
-    return _object(_sections(form))
+    return strict(_sections(form))
 
 
 def set_schema():
-    card = _object({"slot": {"type": "integer"}, "name": {"type": "string"},
+    card = strict({"slot": {"type": "integer"}, "name": {"type": "string"},
                     "gold_frame": {"type": "boolean"}})
-    return _object({"cards": {"type": "array", "items": card}, **_sections(SET_FORM)})
+    return strict({"cards": {"type": "array", "items": card}, **_sections(SET_FORM)})
 
 
 def guide(form):

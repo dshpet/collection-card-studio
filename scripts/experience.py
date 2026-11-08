@@ -11,7 +11,7 @@ edits when it writes new notes, and the planner reads the Planning lessons.
 import argparse
 import re
 
-from common import ANALYSIS, JUDGE, ROOT, load_json, save_json
+from common import ANALYSIS, JUDGE, ROOT, load_json, save_json, strict, text
 
 LESSONS = ANALYSIS / "lessons.md"
 EXPERIENCE = ANALYSIS / "experience.json"
@@ -19,11 +19,11 @@ EXPERIENCE = ANALYSIS / "experience.json"
 
 def lessons(section):
     """The rules of one section of lessons.md, without their sources."""
-    text = LESSONS.read_text("utf-8")
-    if f"## {section}\n" not in text:
+    content = LESSONS.read_text("utf-8")
+    if f"## {section}\n" not in content:
         print(f"warning: no ## {section} section in {LESSONS.name}, so no lessons are used", flush=True)
         return []
-    part = text.split(f"## {section}\n", 1)[1].split("\n## ", 1)[0]
+    part = content.split(f"## {section}\n", 1)[1].split("\n## ", 1)[0]
     return [re.sub(r"\s*\*\(.*\)\*$", "", line) for line in part.splitlines() if line.startswith("- ")]
 
 
@@ -48,10 +48,7 @@ def edit_examples(count=12):
             + "\n".join(lines))
 
 
-PROPOSE_SCHEMA = {"type": "object", "additionalProperties": False, "required": ["lessons"], "properties": {
-    "lessons": {"type": "array", "items": {"type": "object", "additionalProperties": False,
-                                           "required": ["rule", "evidence"],
-                                           "properties": {"rule": {"type": "string"}, "evidence": {"type": "string"}}}}}}
+PROPOSE_SCHEMA = strict({"lessons": {"type": "array", "items": strict({"rule": text(), "evidence": text()})}})
 
 
 def propose(rater):
@@ -70,13 +67,13 @@ def propose(rater):
         "repeat a current lesson or a rule about rendering style. For each, give the evidence, citing the comments.\n\n"
         "Current lessons:\n" + "\n".join(lessons("Planning")) + "\n\nComments:\n" + "\n".join(comments)
         + "\n\nEdits:\n" + "\n".join(edits), None, PROPOSE_SCHEMA, rater)
-    text = LESSONS.read_text("utf-8").rstrip("\n") + "\n"
-    if "## Proposed\n" not in text:
-        text = text.rstrip("\n") + "\n\n## Proposed\n"
-    head, tail = text.split("## Proposed\n", 1)
+    current = LESSONS.read_text("utf-8").rstrip("\n") + "\n"
+    if "## Proposed\n" not in current:
+        current = current.rstrip("\n") + "\n\n## Proposed\n"
+    head, tail = current.split("## Proposed\n", 1)
     section, rest = (tail.split("\n## ", 1) + [""])[:2]
     added = "".join(f"- {lesson['rule']} *({lesson['evidence']})*\n" for lesson in answer["lessons"])
-    section = section.rstrip("\n") + ("\n" if section.strip() else "\n") + added
+    section = section.rstrip("\n") + "\n" + added
     LESSONS.write_text(head + "## Proposed\n" + section + (f"\n## {rest}" if rest else ""), "utf-8")
     print(f"proposed {len(answer['lessons'])} lessons in {LESSONS.relative_to(ROOT)}")
 
@@ -86,7 +83,10 @@ def main():
     parser.add_argument("mode", choices=("collect", "propose"))
     parser.add_argument("--rater", default=JUDGE)
     args = parser.parse_args()
-    collect() if args.mode == "collect" else propose(args.rater)
+    if args.mode == "collect":
+        collect()
+    else:
+        propose(args.rater)
 
 
 if __name__ == "__main__":

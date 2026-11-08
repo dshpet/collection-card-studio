@@ -20,15 +20,15 @@ from common import ANALYSIS, cards as manifest_cards, load_json, pattern, save_j
 import numpy as np
 import torch
 
-REPO = "google/siglip2-giant-opt-patch16-384"
-
-
 class Search:
     def __init__(self):
         from transformers import AutoModel, AutoTokenizer
 
-        self.model = AutoModel.from_pretrained(REPO, dtype=torch.float16).cuda().eval()
-        self.tokenizer = AutoTokenizer.from_pretrained(REPO)
+        from embed import MODELS
+
+        repo = MODELS["siglip2"]
+        self.model = AutoModel.from_pretrained(repo, dtype=torch.float16).cuda().eval()
+        self.tokenizer = AutoTokenizer.from_pretrained(repo)
         self.ids = [record["id"] for record in manifest_cards()]
         self.images = np.load(ANALYSIS / "embeddings" / "siglip2_whole.npy")
         self.scale, self.bias = self.model.logit_scale.exp().item(), self.model.logit_bias.item()
@@ -45,13 +45,9 @@ class Search:
 
 
 def pick_references(card, cards, likeness, count=3, taken=()):
-    """Real cards to attach to a new card's prompt: the same art category, then the same backdrop pattern and object
-    class, as labelled, and among equals the cards most likely to show the same kind of object (likeness, from Search).
-
-    Ranking by likeness alone brought references nearer hidden real cards (search.py test) but made no difference to
-    the drawings (experiments/search_trial.py), so likeness only breaks the label rule's ties, which were random.
-    The first pick is the real card a blind review sets beside this one, so it avoids taken: the first picks of the
-    other cards in the variant."""
+    """Real cards to attach to a new card: same art category, then backdrop pattern and object class, ties broken by
+    likeness (from Search). The first pick, which the blind review sets beside this card, avoids taken: the other
+    cards' first picks in the variant."""
     pool = [c for c in cards if c["form"]["staging"]["art_category"] == card["category"]
             and "staging.art_category" not in c["disputed"]]
     ranked = sorted(pool, key=lambda c: (pattern(c) != card["pattern"],

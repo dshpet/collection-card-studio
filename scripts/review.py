@@ -3,8 +3,7 @@
     review.py study                 specialists read real cards and describe the style
     review.py twins r2              blind pairs: a run's twins against the real cards
 
-make_set.py calls choose() and review_variant() for new cards. Construction and perspective checkers were removed: on
-pairs the producer labelled works or broken they were at chance (analysis/STYLE_GAPS.md, commit 8bee565).
+make_set.py calls choose() and review_variant() for new cards.
 """
 
 import argparse
@@ -13,8 +12,8 @@ import json
 import random
 from concurrent.futures import ThreadPoolExecutor
 
-from common import (ANALYSIS, DERIVED, JUDGE, PLANNER, ROOT, SIZE, best_try, contact_sheet, load_json, run_name,
-                    save_json, strict, text)
+from common import (ANALYSIS, DERIVED, JUDGE, ROOT, SIZE, best_try, contact_sheet, load_json, run_name, save_json,
+                    strict, text)
 
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageOps
@@ -24,7 +23,7 @@ from rate import ask_claude, ask_codex
 
 AGENTS = ANALYSIS / "agents"
 STUDY_CATEGORIES = "1234"
-LESSONS = ("t02", "t04", "t09", "t11")  # one twin per category, shown with its answer
+LESSON_TWINS = ("t02", "t04", "t09", "t11")  # one twin per category, shown with its answer
 LESSON_ROUNDS = ("baseline", "r3", "r7")  # too toy, too realistic, closest
 CONTROLS = 2
 
@@ -345,7 +344,7 @@ def specialists(name, pairs, lessons, exclude, rater, roles):
 
 
 def score(pairs, reports):
-    """Is each specialist better than chance? Keyed by role, then over all, plus false alarms on controls."""
+    """Per specialist: generated cards caught, wrong and abstained, and false alarms on real controls."""
     key = {p["pair"]: p["odd"] for p in pairs}
     rows = {}
     for role, report in reports.items():
@@ -368,16 +367,15 @@ def try_record(run, try_id, **extra):
             "full": run / "full" / f"{try_id}.png", "real": False, **extra}
 
 
-def lessons_for():
-    return [entry for label in LESSON_ROUNDS for entry in twin_entries(label)[0] if entry[0]["twin"] in LESSONS]
+def lessons_for(rounds=LESSON_ROUNDS):
+    return [entry for label in rounds for entry in twin_entries(label)[0] if entry[0]["twin"] in LESSON_TWINS]
 
 
 def judge_pairs(run, label, contests, rater=JUDGE):
     """Wins per try from pairwise judgements, each pair shown in both orders.
 
-    contests: (card id, try id, try id, reference card ids). Two drawings under the card's real references, both
-    orders, is the framing that agreed with the producer (61% on 216 decided pairs, experiments/prefer.py) and cancels
-    position: shown three candidates at once, the director picked whatever sat in the second slot, ten of ten.
+    contests: (card id, try id, try id, reference card ids). Both orders cancel position bias; this framing agreed with
+    the producer on 61% of 216 decided pairs (experiments/prefer.py).
     """
     folder = run / "choose" / label
     (folder / "sheets").mkdir(parents=True, exist_ok=True)
@@ -388,7 +386,8 @@ def judge_pairs(run, label, contests, rater=JUDGE):
         for a, b in ((first, second), (second, first)):
             row = {"pair": f"q{len(rows):03d}", "card": card, "A": a, "B": b}
             judge_sheet({"references": references, "A": str((run / "tries" / f"{a}.png").relative_to(ROOT)),
-                   "B": str((run / "tries" / f"{b}.png").relative_to(ROOT))}, folder / "sheets" / f"{row['pair']}.png")
+                         "B": str((run / "tries" / f"{b}.png").relative_to(ROOT))},
+                        folder / "sheets" / f"{row['pair']}.png")
             rows.append(row)
     fresh_cache(folder, rows)
     batches = [rows[i:i + 8] for i in range(0, len(rows), 8)]
@@ -510,7 +509,7 @@ def direct(name, pairs, reports, style_text, rater, producer=None):
                  "shows the look, not the object. Form cannot be judged across objects: never ask to change a card's "
                  "proportions, thickness or roundness. Notes may change color, value, backdrop, light, finish and extras. "
                  f"{edit_examples()}\n")
-    # Without these notes the director undid the producer's fixes, asking for chrome cuffs and glossy porcelain again
+    # otherwise the director undoes the producer's fixes
     fixes = ("The producer's notes on these cards stand. Never ask for the opposite of one or for anything that undoes "
              "it:\n" + "\n".join(f"- {card}: {note}" for card, note in producer.items()) + "\n\n" if producer else "")
     prompt = (f"{(AGENTS / 'art_director.md').read_text('utf-8')}\n\nEach image is one pair of cards, A and B on top.\n"
@@ -559,10 +558,11 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("mode", choices=("study", "twins"))
     parser.add_argument("run", nargs="?")
-    parser.add_argument("--rater", default=PLANNER)
+    parser.add_argument("--rater", default=JUDGE)
     parser.add_argument("--director", default=JUDGE)
     parser.add_argument("--roles", nargs="+", default=list(ROLES))
-    parser.add_argument("--lessons", nargs="+", default=["baseline"], help="rounds whose labelled twins calibrate the reviewers")
+    parser.add_argument("--lessons", nargs="+", default=list(LESSON_ROUNDS),
+                        help="rounds whose labelled twins calibrate the reviewers")
     parser.add_argument("--no-director", action="store_true")
     parser.add_argument("--name")
     args = parser.parse_args()
@@ -573,8 +573,8 @@ def main():
 
     name = args.name or f"twins_{args.run}"
     entries, exclude = twin_entries(args.run)
-    lessons = [entry for label in args.lessons for entry in twin_entries(label)[0] if entry[0]["twin"] in LESSONS]
-    pairs = blind_pairs([entry for entry in entries if entry[0]["twin"] not in LESSONS], name)
+    lessons = lessons_for(args.lessons)
+    pairs = blind_pairs([entry for entry in entries if entry[0]["twin"] not in LESSON_TWINS], name)
     reports = specialists(name, pairs, lessons, exclude, args.rater, args.roles)
     direction = None if args.no_director else direct(name, pairs, reports, STYLE, args.director)
     report(name, pairs, reports, direction)

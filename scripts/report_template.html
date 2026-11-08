@@ -109,7 +109,7 @@ tr.diff td { background: color-mix(in srgb, var(--band) 45%, transparent); }
 const D = /*DATA*/;
 const byId = Object.fromEntries(D.cards.map(c => [c.id, c]));
 const S = { tab: 'Summary', model: 'dinov2', view: 'whole', group: 'cluster', pick: null, card: null, pinned: null,
-            sort: 'composition_hierarchy.subject_area', set: '', cat: '' };
+            second: null, sort: 'composition_hierarchy.subject_area', set: '', cat: '' };
 const esc = s => String(s ?? '–').replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
 const nice = s => String(s).replace(/_/g, ' ');
 const art = id => `../materials/card_examples/${id}.png`;
@@ -312,7 +312,16 @@ function drawer() {
   box.classList.add('open');
   box.scrollTop = 0;
   document.getElementById('close').onclick = () => { S.card = null; drawer(); };
-  document.getElementById('pin').onclick = () => { S.pinned ? (S.second = c.id, S.tab = 'Compare', S.card = null, drawer(), render()) : (S.pinned = c.id, drawer()); };
+  document.getElementById('pin').onclick = () => {
+    if (S.pinned) {
+      Object.assign(S, { second: c.id, tab: 'Compare', card: null });
+      drawer();
+      render();
+    } else {
+      S.pinned = c.id;
+      drawer();
+    }
+  };
 }
 
 function compare() {

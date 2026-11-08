@@ -3,7 +3,7 @@
 import argparse
 import logging
 
-from common import ANALYSIS, DERIVED, ROOT, cards, load_token  # first: sets the model cache
+from common import ANALYSIS, DERIVED, ROOT, cards, hf_key  # first: sets the model cache
 
 import numpy as np
 import torch
@@ -17,11 +17,12 @@ MODELS = {
     "csd": "yuxi-liu-wired/CSD",
     "dinov3": "facebook/dinov3-vitl16-pretrain-lvd1689m",  # gated: needs access on Hugging Face
 }
+GATED = {MODELS["dinov3"]}
 NEUTRAL = (128, 128, 128)
 
 
 def square(image, size):
-    """Pad instead of centre-cropping, so nothing at the card edge is lost."""
+    """Pad instead of center-cropping, so nothing at the card edge is lost."""
     return ImageOps.pad(image.convert("RGB"), (size, size), Image.BICUBIC, color=NEUTRAL)
 
 
@@ -38,8 +39,9 @@ def views(record, derived=DERIVED):
 
 
 def load_hf(repo, dtype=torch.float16):
-    processor = AutoImageProcessor.from_pretrained(repo)
-    model = AutoModel.from_pretrained(repo, dtype=dtype).cuda().eval()
+    token = hf_key() if repo in GATED else None  # passed to the download alone, never through the environment
+    processor = AutoImageProcessor.from_pretrained(repo, token=token)
+    model = AutoModel.from_pretrained(repo, dtype=dtype, token=token).cuda().eval()
     size = processor.size.get("height") or processor.size.get("shortest_edge")
     mean, std = torch.tensor(processor.image_mean), torch.tensor(processor.image_std)
 
@@ -90,7 +92,6 @@ def main():
     parser.add_argument("--models", nargs="+", default=["dinov2", "siglip2", "csd"])
     parser.add_argument("--batch", type=int, default=8)
     args = parser.parse_args()
-    load_token()
 
     records = cards()
     output = ANALYSIS / "embeddings"

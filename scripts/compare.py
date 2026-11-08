@@ -1,6 +1,6 @@
-"""Compare final sets with the real character-free sets, on the same definitions.
+"""Compare our sets with the real character-free sets, on the same definitions.
 
-    compare.py                                  the sets in runs/final.json -> runs/compare.json
+    compare.py                                  the final sets, runs/final6/sets.json -> runs/final6/compare.json
     compare.py --sets runs/final3/sets.json     another {run: picks} file -> compare.json beside it
 """
 
@@ -10,7 +10,7 @@ from pathlib import Path
 
 os.environ.setdefault("HF_HUB_OFFLINE", "1")
 
-from common import ANALYSIS, ROOT, best_try, load_json, save_json
+from common import ANALYSIS, FINAL_SETS, ROOT, best_try, load_json, save_json
 
 import numpy as np
 import torch
@@ -71,5 +71,5 @@ def main(sets):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--sets", type=Path, default=ROOT / "runs" / "final.json", help="a {run: picks} file")
+    parser.add_argument("--sets", type=Path, default=FINAL_SETS, help="a {run: picks} file")
     main(parser.parse_args().sets.resolve())

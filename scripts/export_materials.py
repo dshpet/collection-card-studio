@@ -12,8 +12,9 @@ import json
 from pathlib import Path
 import xml.etree.ElementTree as ET
 
+from common import ROOT
 
-ROOT = Path(__file__).resolve().parents[1]
+
 DOCUMENTS = {
     "3458764679650208648": "02_collection_explanation",
     "3458764679650284128": "03_art_guide",

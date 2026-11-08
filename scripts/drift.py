@@ -168,6 +168,8 @@ def main():
     if args.matched:
         matched_classifier(args.matched)
         return
+    if not args.runs:
+        parser.error("give runs or --matched")
 
     real = real_cards()
     cards = []

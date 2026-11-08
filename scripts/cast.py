@@ -15,7 +15,7 @@ import os
 
 os.environ.setdefault("HF_HUB_OFFLINE", "1")
 
-from common import ANALYSIS, PLANNER, ROOT, cards, hf_key, load_json, save_json
+from common import ANALYSIS, PLANNER, ROOT, cards, hf_key, load_json, save_json, strict, text
 
 import numpy as np
 import torch
@@ -23,13 +23,6 @@ from PIL import Image, ImageDraw, ImageFont
 
 LIBRARY = ROOT / "library" / "cast"
 CATALOG = ANALYSIS / "cast.json"
-CAST = {
-    "man": "man",
-    "pig": "pig",
-    "sheep": "sheep",
-    "cow": "cow",
-    "rooster": "rooster",
-}
 LOOKS = {
     "man": "a stocky man with short brown hair, round glasses and a big brown mustache",
     "pig": "a round pink pig with big ears and a curly tail, standing on two legs",
@@ -41,6 +34,7 @@ THRESHOLD = 0.4
 MIN_AREA = 0.03  # of the card: drops crowds and far background figures
 OVERLAP = 0.5  # share of the smaller mask; above it two finds are one figure, and the surer name wins
 GREY = (128, 128, 128)
+CAST = tuple(LOOKS)  # each name is also SAM 3's text prompt
 
 
 def segmenter():
@@ -66,7 +60,7 @@ def segmenter():
 
 def figures(image, find):
     """Every cast member on a card: one entry per figure, named by the surest prompt."""
-    found = [(name, score, mask) for name, word in CAST.items() for score, mask in find(image, word)
+    found = [(name, score, mask) for name in CAST for score, mask in find(image, name)
              if mask.mean() >= MIN_AREA]
     found.sort(key=lambda f: -f[1])
     kept = []
@@ -121,17 +115,11 @@ def find_all():
     save_json(CATALOG, records)
 
 
-LABEL_SCHEMA = {"type": "object", "additionalProperties": False, "required": ["figures"], "properties": {
-    "figures": {"type": "array", "items": {"type": "object", "additionalProperties": False,
-                "required": ["id", "is_character", "view", "body", "pose", "outfit", "clean"], "properties": {
-        "id": {"type": "string"},
-        "is_character": {"type": "boolean"},
-        "view": {"type": "string", "enum": ["front", "three_quarter_left", "three_quarter_right", "side_left",
-                                            "side_right", "back"]},
-        "body": {"type": "string", "enum": ["full", "most", "upper", "head"]},
-        "pose": {"type": "string"},
-        "outfit": {"type": "string"},
-        "clean": {"type": "boolean"}}}}}}
+VIEWS = ["front", "three_quarter_left", "three_quarter_right", "side_left", "side_right", "back"]
+LABEL_SCHEMA = strict({"figures": {"type": "array", "items": strict({
+    "id": text(), "is_character": {"type": "boolean"}, "view": {"type": "string", "enum": VIEWS},
+    "body": {"type": "string", "enum": ["full", "most", "upper", "head"]}, "pose": text(), "outfit": text(),
+    "clean": {"type": "boolean"}})}})
 
 
 def label(rater):
@@ -176,10 +164,10 @@ def sheet():
         for index, record in enumerate(mine):
             image = on_grey(ROOT / record["file"], tile)
             labels = record.get("labels", {})
-            text = f"{record['id'][-6:]} {labels.get('view', '?')} {labels.get('body', '')}"
+            caption = f"{record['id'][-6:]} {labels.get('view', '?')} {labels.get('body', '')}"
             if labels and (not labels["clean"] or not labels["is_character"]):
-                text += " X"
-            ImageDraw.Draw(image).text((4, tile[1] - 20), text, fill="white", font=font)
+                caption += " X"
+            ImageDraw.Draw(image).text((4, tile[1] - 20), caption, fill="white", font=font)
             canvas.paste(image, (index % columns * tile[0], index // columns * tile[1]))
         canvas.save(LIBRARY / f"{name}.png")
         print(name, len(mine))

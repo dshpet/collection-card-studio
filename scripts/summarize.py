@@ -14,7 +14,6 @@ from sklearn.metrics import cohen_kappa_score
 from form import CARD_FORM, SET_FORM
 
 RATERS = ("codex", "claude", "qwen3.8", "gemma4")
-TEXT = "text"
 
 
 def load_ratings(prefix, records):
@@ -59,7 +58,7 @@ def pair_scores(form, first, second):
         if section not in first[shared[0]] or section not in second[shared[0]]:
             continue
         for name, field in fields.items():
-            if field["kind"] == TEXT:
+            if field["kind"] == "text":
                 continue
             a = [first[key][section][name] for key in shared]
             b = [second[key][section][name] for key in shared]
@@ -98,7 +97,7 @@ def distributions(records):
         category = record["form"]["staging"]["art_category"]
         for section, values in CARD_FORM.items():
             for name, field in values.items():
-                if field["kind"] == TEXT:
+                if field["kind"] == "text":
                     continue
                 value = record["form"][section][name]
                 value = str(round(value)) if field["kind"] == "scale" else value

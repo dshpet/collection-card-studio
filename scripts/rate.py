@@ -47,7 +47,7 @@ def ask_codex(prompt, image, schema, timeout=600, effort="low"):
     attachments = [flag for path in image_list(image) for flag in ("-i", str(path))]
     with tempfile.TemporaryDirectory() as folder:
         folder = Path(folder)
-        (folder / "schema.json").write_text(json.dumps(schema))
+        (folder / "schema.json").write_text(json.dumps(schema), "utf-8")
         command = ["codex", "exec", "--skip-git-repo-check", "--ephemeral", "--ignore-user-config",
                    "-m", DRAWER, "-c", f'model_reasoning_effort="{effort}"', "-s", "read-only",
                    "-C", str(folder), "--output-schema", str(folder / "schema.json"),
@@ -56,7 +56,7 @@ def ask_codex(prompt, image, schema, timeout=600, effort="low"):
                               stdin=subprocess.DEVNULL)
         if done.returncode:
             raise RuntimeError(done.stderr[-400:])
-        return json.loads((folder / "out.json").read_text())
+        return json.loads((folder / "out.json").read_text("utf-8"))
 
 
 def ask_claude(prompt, image, schema, model=PLANNER):
@@ -76,7 +76,7 @@ def ask_claude(prompt, image, schema, model=PLANNER):
     return json.loads(done.stdout)["structured_output"]
 
 
-def ask_ollama(model, prompt, image, schema):
+def ask_ollama(prompt, image, schema, model):
     payload = {"model": model, "stream": False, "format": schema, "think": False,
                "options": {"temperature": 0, "num_ctx": 16384},
                "messages": [{"role": "user", "content": prompt,
@@ -96,7 +96,7 @@ def run_one(rater, prompt, image, schema, out):
             elif rater == "claude":
                 result = ask_claude(prompt, image, schema)
             else:
-                result = ask_ollama(rater, prompt, image, schema)
+                result = ask_ollama(prompt, image, schema, rater)
             save_json(out, {**(load_json(out) if out.exists() else {}), **result})
             return "ok"
         except Exception as error:

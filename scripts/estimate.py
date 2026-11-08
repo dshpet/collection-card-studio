@@ -22,7 +22,7 @@ CENTER_BIAS = "https://github.com/matthias-k/DeepGaze/releases/download/v1.0.0/c
 
 
 def run_deform_conv_on_cpu():
-    """The CPU torchvision wheel has no GPU kernel for this op, which BiRefNet needs."""
+    """Run deform_conv2d, which BiRefNet needs, on the CPU: this torchvision build has no GPU kernel for it."""
     import torchvision.ops as ops
 
     if getattr(ops.deform_conv2d, "on_cpu", False):

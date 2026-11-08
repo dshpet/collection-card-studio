@@ -375,7 +375,8 @@ def render(model, out):
     ROOT = bpy.data.objects.new("hero", None)
     scene.collection.objects.link(ROOT)
     namespace = {}
-    exec(compile(open(model, encoding="utf-8").read(), model, "exec"), namespace)
+    with open(model, encoding="utf-8") as source:
+        exec(compile(source.read(), model, "exec"), namespace)
     spec = namespace["SCENE"]
     helpers = types.SimpleNamespace(mat=mat, box=box, cyl=cyl, cone=cone, sphere=sphere, torus=torus, tube=tube,
                                     lathe=lathe, blob=blob, warp=warp, floor=floor, turn=turn, unframed=unframed,
@@ -397,7 +398,7 @@ def render(model, out):
     camera.data.clip_end = distance * 50
     stage(scene, spec, center, distance)
 
-    # CPU: about 10 s a render. Cycles on HIP faulted on the integrated GPU and hung the main GPU under parallel runs
+    # CPU, about 10 s a render: Cycles on HIP hung the GPU under parallel runs
     scene.render.engine, scene.cycles.device, scene.cycles.samples = "CYCLES", "CPU", 128
     scene.cycles.use_denoising = True
     scene.view_settings.view_transform = "Standard"

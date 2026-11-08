@@ -18,8 +18,9 @@ from pathlib import Path
 
 os.environ.setdefault("HF_HUB_OFFLINE", "1")  # every local model is already cached
 
-from common import (ANALYSIS, JUDGE, ROOT, SIZE, best_try, contact_sheet, load_json, run_name, save_json, strict,
-                    text)
+from common import (ANALYSIS, DERIVED, JUDGE, ROOT, SIZE, best_try, contact_sheet, load_json, run_name, save_json,
+                    strict, text)
+from common import cards as reference_cards
 
 import numpy as np
 import torch
@@ -37,12 +38,11 @@ from style import BLOCKOUT, CAST_STYLE, CATEGORY_RULES, EDIT, PATTERNS, STYLE
 
 CANDIDATES = 3
 MODEL_ROUNDS = 2
-# How much larger than the default box (80% by 75% of the card) a blockout frames its object, by art category. Blockout
-# cards sat smaller than real ones; the full real median size overshot area by a tenth, so categories 2-4 take half of
-# it, and floating objects, already at the real size, none (experiments/night.py).
+# Blockout framing per category, beyond the default 80% by 75% box: half the gap to the real median size
+# (experiments/night.py)
 FILL = {"1": 1.0, "2": 1.035, "3": 1.05, "4": 1.06}
 PLAN_FIXES = 2  # repair rounds for a plan that breaks a rule or has a card that may upset players
-REVIEW_ROUNDS = 1  # first-round edits were kept 36 of 85 times, second-round 0 of 11 (analysis/experience.json)
+REVIEW_ROUNDS = 1  # first-round edits beat their drafts 135 of 263 times, second-round 0 of 11 (analysis/experience.json)
 ALLOWED_MISSES = 2
 RATED = ["identity", "staging"]
 EXAMPLE_MODELS = ANALYSIS / "agents" / "models"  # two models from the construction trial
@@ -355,9 +355,8 @@ def make_briefs(plan, cards):
 
 
 def keep_cards(run, source, briefs):
-    """A fix round: each card whose plan is unchanged from the run in source keeps that run's brief, drawings, checks and
-    pick, marked kept, and is neither drawn nor picked nor reviewed again; a card with the same name and subject also
-    keeps its Blender model, unless the folder already holds one. Returns the briefs, kept ones swapped in."""
+    """Fix round: a card whose plan is unchanged keeps source's brief, tries and pick, marked kept, and is not drawn,
+    picked or reviewed again. A card with the same object also keeps its Blender model. Returns the updated briefs."""
     old_briefs = {b["id"]: b for b in load_json(source / "briefs.json")}
     old_history = load_json(source / "check.json")
     history, kept = {}, []
@@ -520,8 +519,7 @@ CATEGORY_NAMES = {"1": "floating", "2": "on a plain floor", "3": "on a real surf
 
 
 def write_spec(run, plan):
-    """spec.md: the set as designed, written from the plan before any drawing, so every set is documented the same
-    way. A plan's notes, such as why its cards were chosen, close it."""
+    """Write spec.md: the planned set, card by card, before any drawing. The plan's notes close it."""
     request = plan.get("request", {})
     lines = [f"# {plan['title']}: set spec", "", plan.get("story") or "", "",
              f"Theme: {request.get('theme', '?')}. Wishes: {request.get('wishes') or 'none'}. "
@@ -529,11 +527,12 @@ def write_spec(run, plan):
     lines += [f"Wishes not followed: {'; '.join(plan['declined'])}."] if plan.get("declined") else []
     lines += [f"Cards flagged as possibly upsetting: {'; '.join(f['name'] for f in plan['sensitive'])}."] \
         if plan.get("sensitive") else []
-    for number, variant in enumerate(plan["variants"], 1):
+    for position, variant in enumerate(plan["variants"], 1):
         cards = variant["cards"]
         mix = "/".join(str(sum(c["category"] == k for c in cards)) for k in "1234")
-        lines += ["", f"## Variant {number}", "",
-                  f"Categories 1/2/3/4: {mix}{', characters ' + str(sum(c['category'] == '5' for c in cards)) if any(c['category'] == '5' for c in cards) else ''}. "
+        characters = sum(c["category"] == "5" for c in cards)
+        lines += ["", f"## Variant {position}", "",
+                  f"Categories 1/2/3/4: {mix}{f', characters {characters}' if characters else ''}. "
                   f"Object classes: {len({c['object_class'] for c in cards})}. Built in Blender: "
                   f"{sum(bool(c.get('build_model')) for c in cards)}. Backdrops: "
                   f"{', '.join(dict.fromkeys(c['backdrop_colors'] for c in cards))}.", "",
@@ -558,8 +557,8 @@ def deliver(run, plan, briefs, history):
     lines += [f"Cards still flagged as possibly upsetting: "
               f"{'; '.join(f['name'] + ' (' + f['why'] + ')' for f in plan['sensitive'])}."] if plan.get("sensitive") else []
     edits = load_json(run / "edits.json") if (run / "edits.json").exists() else []
-    lines += [f"Drawings: {sum(map(len, history.values()))}, of them {len(edits)} edits, "
-              f"{sum(e['kept'] for e in edits)} kept.", ""]
+    lines += [f"Drawings: {sum(map(len, history.values()))}, of them {len(edits)} "
+              f"edit{'' if len(edits) == 1 else 's'}, {sum(e['kept'] for e in edits)} kept.", ""]
     counts = Counter()
     for variant in range(1, len(plan["variants"]) + 1):
         folder = run / f"variant_{variant}"
@@ -593,8 +592,6 @@ def deliver(run, plan, briefs, history):
 
 def preflight(args):
     """What a run needs before it starts, each with how to get it, so a run never stops halfway for a missing tool."""
-    from common import cards as reference_cards
-
     missing = [f"{tool} is not on the PATH ({why})" for tool, why in (
         ("codex", "the Codex CLI draws, logged in"), ("claude", "the Claude CLI plans and judges, logged in"),
         ("blender", "Blender renders the models; or pass --no-blockouts")) if not shutil.which(tool)
@@ -604,7 +601,7 @@ def preflight(args):
         missing.append(f"{absent} board images are missing from materials/: see README, Setup")
     if not (ANALYSIS / "embeddings" / "csd_whole.npy").exists():
         missing.append("analysis/embeddings is empty: run scripts/embed.py")
-    if not all((ANALYSIS / "derived" / kind).is_dir() for kind in ("masks", "normals", "shading")):
+    if not all((DERIVED / kind).is_dir() for kind in ("masks", "normals", "shading")):
         missing.append("analysis/derived is incomplete: run scripts/estimate.py masks marigold")
     if not torch.cuda.is_available():
         missing.append("no GPU visible to PyTorch (ROCm or CUDA)")
@@ -694,8 +691,12 @@ def main():
     briefs = load_json(briefs_path)
     history = defaultdict(list, load_json(run / "check.json") if (run / "check.json").exists() else {})
 
+    def kept(brief):
+        return any(t.get("kept") for t in history.get(brief["id"], []))
+
     if not args.no_blockouts:
-        built = [brief for brief in briefs if brief["card"].get("build_model") and brief["card"]["category"] != "5"]
+        built = [brief for brief in briefs if brief["card"].get("build_model") and brief["card"]["category"] != "5"
+                 and not kept(brief)]
         with ThreadPoolExecutor(args.workers) as pool:
             renders = list(pool.map(lambda brief: model_card(run, brief, args.rater), built))
         print(f"models: {sum(r is not None for r in renders)} of {len(built)} rendered, "
@@ -713,9 +714,6 @@ def main():
             history[entry["brief_id"]].append(entry)
         save_json(run / "check.json", history)
         return tries
-
-    def kept(brief):
-        return any(t.get("kept") for t in history.get(brief["id"], []))
 
     for attempt in range(1, args.candidates + 1):
         tries = draw_and_check([(b, [], None) for b in briefs if not kept(b)], attempt)
@@ -752,9 +750,9 @@ def main():
                              attempt=1 + max(number(t["try_id"]) for b in chosen for t in history[b["id"]]))
                 save_json(rounds_path, rounds)
             notes, before, attempt = state["notes"], state["before"], state["attempt"]
-            kept = set()
+            won = set()
             if notes:
-                # the producer's note holds through the edit, which otherwise drifts, such as a handle grown long again
+                # repeat the producer's note, or the edit drifts from it
                 jobs = [(b, [notes[b["id"]]] + ([f"Keep: {b['card']['note']}"] if b["card"].get("note") else []),
                          run / "tries" / f"{before[b['id']]}.png") for b in chosen if b["id"] in notes]
                 draw_and_check(jobs, attempt)
@@ -762,18 +760,18 @@ def main():
                          if t["try_id"] == f"{b['id']}_{attempt}"]
                 edited = [e for e in drawn if e.get("passed") or not e.get("issues")]
                 # An edit is obeyed strongly and can make a card worse, so it stays only if it beats its draft
-                kept = better_edits(run, f"edit_{variant}_{round_number}",
-                                    [(e["brief_id"], before[e["brief_id"]], e["try_id"]) for e in edited],
-                                    {b["id"]: b["references"] for b in chosen}, args.rater)
+                won = better_edits(run, f"edit_{variant}_{round_number}",
+                                   [(e["brief_id"], before[e["brief_id"]], e["try_id"]) for e in edited],
+                                   {b["id"]: b["references"] for b in chosen}, args.rater)
                 for entry in edited:
-                    if entry["try_id"] in kept:
+                    if entry["try_id"] in won:
                         for old in history[entry["brief_id"]]:
                             old.pop("chosen", None)
                         entry["chosen"] = True
-                record_edits(run, round_number, drawn, before, notes, kept)
-                print(f"variant {variant} review {round_number}: kept {len(kept)} of {len(drawn)} edits", flush=True)
+                record_edits(run, round_number, drawn, before, notes, won)
+                print(f"variant {variant} review {round_number}: kept {len(won)} of {len(drawn)} edits", flush=True)
                 save_json(run / "check.json", history)
-            state["kept"] = sorted(kept)
+            state["kept"] = sorted(won)
             save_json(rounds_path, rounds)
             if not notes:
                 break

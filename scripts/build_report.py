@@ -6,11 +6,9 @@ import json
 import re
 from pathlib import Path
 
-from common import ANALYSIS, ROOT, best_try, load_json
+from common import ANALYSIS, FINAL_SETS, ROOT, best_try, load_json
 
 from form import CARD_FORM
-
-FINAL_SETS = ROOT / "runs" / "final6" / "sets.json"  # the final sets
 
 
 def markdown(text):
@@ -58,7 +56,7 @@ def generated_runs():
                      "passed": sum(b["passed"] for b in best),
                      "review": [b["card"]["name"] for b in best if not b["passed"]]})
         if slug in finals:
-            runs[-1]["note"] = f"The final set, {slug}: drawn 2026-11-08, then fixed card by card on the producer's comments."
+            runs[-1]["note"] = f"The final set, {slug}: drawn once, then fixed card by card on the producer's comments."
     return runs
 
 
