@@ -1,27 +1,38 @@
-# Playrix AI producer test task
+# Collection Card Studio
 
-A tool that turns a theme and a producer's free-form wishes into 3–5 variants of a ten-card collection set, drawn to sit beside the game's own cards, and the analysis of the reference collection behind it. Brief: [task](materials/01_task_description.md), [collections](materials/02_collection_explanation.md), [art guide](materials/03_art_guide.md), [Miro board](https://miro.com/app/board/uXjVEUZR5u0=/).
+A tool that turns a theme and a producer's free-form wishes into 3–5 variants of a ten-card collection set, drawn to sit beside a mobile game's own cards. Built for Playrix's AI-producer test task: [brief](materials/01_task_description.md), [collections](materials/02_collection_explanation.md), [art guide](materials/03_art_guide.md), [Miro board](https://miro.com/app/board/uXjVEUZR5u0=/).
 
 ![The final sets: Western, Period Drama and Detective, object cards only](runs/final6/final_sets.png)
 
-*The three film sets, object cards only. The producer graded each set 5 of 5; card means 4.5 Western, 3.8 Period Drama, 4.0 Detective. [The final sets](runs/final6/README.md).*
+*The three film sets: [Western](runs/final5/western-2/variant_1.png), [Period Drama](runs/final5/period-drama/variant_1.png) and [Detective](runs/final6/detective/variant_1.png), each with a `spec.md` beside it. Six bonus cards with the game's cast are on the Miro board; they show Playrix characters and stay out of git.*
 
 | The brief asks for | Here |
 |---|---|
-| An analysis of how the reference sets are built and drawn | [analysis/SYNTHESIS.md](analysis/SYNTHESIS.md), dashboard `analysis/report.html` |
-| A tool: theme and wishes in, 3–5 variants of a set out | The [make-card-set skill](.claude/skills/make-card-set/SKILL.md) over `scripts/make_set.py` |
-| Three film-genre sets, no gold cards | `runs/final5/western-2`, `runs/final5/period-drama`, `runs/final6/detective`, each with its `spec.md`; six bonus cast cards in `runs/final4/cast` |
+| An analysis of how the reference sets are built and drawn | [analysis/SYNTHESIS.md](analysis/SYNTHESIS.md); a dashboard, `analysis/report.html`, opens locally with the board images |
+| A tool: theme and wishes in, 3–5 variants of a set out | The [make-card-set skill](.claude/skills/make-card-set/SKILL.md) over `scripts/make_set.py` (linked at `.agents/skills/` for Codex) |
+| Three film-genre sets, no gold cards | Western, Period Drama and Detective above; [runs/final6/README.md](runs/final6/README.md) lists their folders and plans |
 | Our sets against the references | [analysis/COMPARISON.md](analysis/COMPARISON.md) |
 | What was tried and why | [PROCESS.md](PROCESS.md), with the evidence in [STYLE_GAPS](analysis/STYLE_GAPS.md), [experiments/](experiments/README.md) and [runs/](runs/README.md) |
 
+## Approach
+
+- **Hold content equal to measure style.** A twin is a real card redrawn from a text brief with that card hidden, so only the style differs. Every change to the style text was judged on twins.
+- **Compare, don't score.** No score of a lone card followed a human's grades, but pairwise choices did. The pipeline picks between candidates two at a time, in both orders.
+- **Calibrate model judges before trusting them.** Without labelled examples, model reviewers called the real card the fake 12 of 12 times: they expect game art to be glossier than it is.
+- **Geometry for construction, words for style.** Built objects get a Blender model that the image model restyles. Simple forms are drawn from words.
+- **The producer teaches in plain words.** Comments become rules in [lessons.md](analysis/lessons.md), which the planner reads. Nobody edits code to change what gets planned.
+
 ## Results
 
-- **Final sets:** drawn once, then three fix rounds redrew only the cards the producer commented on (17, 8, then 1). Set grades went from 4, 4, 4 to 5, 5, 5; the six cast cards ended at 5.0.
-- **Style:** blind, the producer still finds our drawing in 24 of 32 final-style twins, down from 31 of 32 for the first style. Calibrated model reviewers are at chance on 16 of the same twins, so the producer stays the measure.
-- **Construction:** in a six-object trial, Blender blockouts cut broken cards from 5 of 12 to 1, and to none once the models were fixed (grade 3.7 against 2.2). The planner models built objects; simple forms are drawn from words.
-- **Plans matter most:** between two graded batches the mean rose from 3.63 to 3.97, half from three character cards and most of the rest from better object choices. Low grades traced to the plan and became [lessons](analysis/lessons.md) the planner reads.
-- **Robustness:** 19 odd or hostile requests (emoji and non-English themes, brands, franchises, weapons, gore, prompt injection) all produced plans, with forbidden wishes declined and named in the report.
-- **Generator:** on the same twins and prompts the art director preferred Codex to Nano Banana Pro 11 to 0 and to Qwen-Image-2.1 39 to 1; CSD agrees.
+The producer here is the author, playing the brief's producer. Every human grade is theirs unless noted; an outside artist graded the pre-final sets.
+
+- **Final sets.** The final sets were drawn once. Three fix rounds then redrew 17, 8 and 2 cards, almost all of them cards the producer had commented on. Set grades went from 4, 4, 4 to 5, 5, 5. Card means are 4.5 Western, 3.8 Period Drama and 4.0 Detective, and the six cast cards are at 5.0. The outside artist gave the pre-final cards 3.1 of 5.
+- **Autonomy.** One command makes a set with no human step, such as the [pre-final Detective](runs/prefinal/detective/variant_1.png), one of three variants. The final sets added the producer's pass through the same tool: plans composed from graded variants, then the fix rounds with `--keep`.
+- **Style.** Blind, the producer still finds our drawing in 24 of 32 twins of the final style, down from 31 of 32 for the first. Calibrated model reviewers are at chance on 16 of the same twins, so the producer stays the measure.
+- **Construction.** In a six-object trial, Blender models cut broken cards from 5 of 12 to 1, and to none once the models were fixed (grade 3.7 against 2.2). Only built, multi-part objects get a model.
+- **Plans matter most.** Between two graded batches the mean rose from 3.63 to 3.97: half of that came from three character cards, most of the rest from better objects. Low grades traced back to the plan and became lessons.
+- **Robustness.** 19 odd or hostile requests (emoji and non-English themes, brands, franchises, weapons, gore, prompt injection) all produced plans, with forbidden wishes declined and named in the report. War and Gangsters kept three cards flagged for a person.
+- **Generator.** On the same twins and prompts the art director preferred Codex to Nano Banana Pro 11 to 0 and to Qwen-Image-2.1 39 to 1. CSD agrees for Qwen and is split for Nano Banana Pro (5 of 11). The prompts were tuned on Codex.
 
 ## Make a set
 
@@ -47,9 +58,9 @@ flowchart LR
 | Draw | Codex's image model draws three candidates per card, restyling the model's render where there is one |
 | Check | Each candidate is measured like the references: per-category ranges, CSD distance to the real cards, and a blind look at what it shows |
 | Choose | The art director compares candidates two at a time, in both orders. Close wins are marked for a human look |
-| Review | Nine specialists review each variant beside hidden real cards; the director turns their reports into edit notes |
+| Review | Nine specialists, one each for shape, viewpoint, light, value, color, surface, edges, composition and staging, review each variant beside hidden real cards; the director turns their reports into edit notes |
 | Edit | Codex applies the notes. An edit stays only if it beats its draft, and the outcome is saved for later runs |
-| Deliver | `runs/<theme>/variant_N/`, a sheet per variant and `report.md` |
+| Deliver | `runs/<theme>/variant_N/`, a sheet per variant and `report.md`, which marks cards for a look as `review` (failed a check), `unsure pick` (a close choice) or `missing` |
 
 A run first checks that its tools and data are in place. Rerunning the same request continues where it stopped; another request for the same theme gets `runs/<theme>-2`. Options:
 
@@ -60,23 +71,13 @@ A run first checks that its tools and data are in place. Rerunning the same requ
 - `--candidates 1 --review-rounds 0`: a quick draft.
 - `scripts/screen.py <folder> --variant 1 --color blue` places a variant in the game's window.
 
-One run peaks at about 5 GB of GPU memory and each Blender render adds about 2 GB; on a 24 GB card three runs fit at once with `--workers 2`. A variant takes about 40 minutes.
+A variant takes about 40 minutes. One run peaks at about 5 GB of GPU memory; Blender renders on the CPU, about 10 s a render. The Blender models are Python written by Claude and run locally with the user's rights, so run the tool only on your own machine.
 
 ## Teach it
 
 - **Lessons:** [analysis/lessons.md](analysis/lessons.md) holds rules learned from the producer, in plain words the planner reads. Edit it to teach the tool. `scripts/experience.py propose` drafts new lessons from rating comments and lost edits, for a person to accept.
 - **Experience:** every edit and whether it beat its draft goes to `analysis/experience.json`; the director sees past notes that won and lost.
-- **Ratings:** `scripts/rate_ui.py` serves a rating page at http://127.0.0.1:8765 (blind twins, set cards beside their references, trials). Answers go to `runs/ratings.json`.
-
-## Glossary
-
-- **Producer:** the author, playing the brief's producer. Every human grade in `runs/ratings.json` is theirs unless noted.
-- **Twin:** a real card redrawn from a text brief with that card hidden from the generator. Content is equal, so what differs is style.
-- **Style rounds:** versions of the style text: `baseline` and `r1`–`r8` on 12 twins (`runs/twins`); `old`, `final`, `r3`, `r9` and `p1`–`p3` on 40 (`runs/twins40`). The current text is in `scripts/style.py`.
-- **Blockout:** a Blender model of the object, rendered and restyled by the image model.
-- **Category 1–5:** the art guide's staging: floating, plain floor, real surface, in its place, characters.
-- **CSD:** a style embedding. Its similarity to the same object's real card is the one embedding measure that tracked the producer.
-- **Specialists and director:** nine model reviewers, one per art vector, and an art director, in [analysis/agents/](analysis/agents/README.md).
+- **Ratings:** `scripts/rate_ui.py` serves a blind rating page at http://127.0.0.1:8765. Answers go to `runs/ratings.json`.
 
 ## The cast
 
@@ -87,16 +88,16 @@ The reference collection has one cast: a man with glasses and a mustache, a pig,
 Needs a ROCm or CUDA GPU with PyTorch, the Codex and Claude CLIs logged in, Blender on the PATH, and the board images in `materials/` at the paths in `sources/image_manifest.json`. Board images, model weights and derived data are not in git.
 
 ```sh
-python -m venv .venv
+python -m venv --system-site-packages .venv    # PyTorch for your GPU comes from the system
 .venv/bin/pip install -r requirements.txt
+.venv/bin/python -B -m unittest discover -s tests    # the board images are complete and unchanged
 .venv/bin/python -B scripts/embed.py
 .venv/bin/python -B scripts/estimate.py masks marigold
-.venv/bin/python -B -m unittest discover -s tests    # the board images are complete and unchanged
 ```
 
-DINOv3 and SAM 3 are gated on Hugging Face: put `HUGGING_FACE_API_KEY` in `.env`, then run `scripts/embed.py --models dinov3` and `HF_HUB_OFFLINE=0 .venv/bin/python -B scripts/cast.py find`, then `cast.py label`. The key is used only for these downloads.
+DINOv3 and SAM 3 are gated on Hugging Face: put `HUGGING_FACE_API_KEY` in `.env`, then run `scripts/embed.py --models dinov3` and `HF_HUB_OFFLINE=0 .venv/bin/python -B scripts/cast.py find`, then `cast.py label`. Only these gated downloads get the key.
 
-**External code.** BiRefNet, Depth Anything 3 and DeepGaze run upstream code, so each is pinned to a reviewed revision: BiRefNet and DA3 weights in `scripts/estimate.py`, sources `depth-anything-3` at `3d835ec` and `DeepGaze` at `c7db17e`, cloned into `.models/src/`. The review scanned all 295 fetched Python files, read the code paths that run and loaded every checkpoint with PyTorch's restricted loader; test runs under an audit hook made no network calls or writes outside the project. SAM 3, SigLIP 2, DINOv2, DINOv3, CSD and Qwen-Image load through `transformers`, `open_clip` and `diffusers` with no remote code.
+BiRefNet, Depth Anything 3 and DeepGaze run upstream code, so each is pinned to a reviewed revision: weights in `scripts/estimate.py`, sources `depth-anything-3` at `3d835ec` and `DeepGaze` at `c7db17e` in `.models/src/`.
 
 ## Change the generator or the style
 
@@ -104,7 +105,7 @@ DINOv3 and SAM 3 are gated on Hugging Face: put `HUGGING_FACE_API_KEY` in `.env`
 
 ```sh
 .venv/bin/python -B scripts/validate.py twins --label r9
-.venv/bin/python -B scripts/review.py twins r9 --rater claude-opus-5-5 --lessons baseline r3 r8
+.venv/bin/python -B scripts/review.py twins r9
 ```
 
 ## Layout
@@ -113,11 +114,11 @@ DINOv3 and SAM 3 are gated on Hugging Face: put `HUGGING_FACE_API_KEY` in `.env`
 |---|---|
 | `scripts/` | The pipeline and the reference analysis |
 | `experiments/` | One-off studies behind the pipeline's decisions |
-| `analysis/` | Findings and analysis outputs. The pipeline reads `knowledge.json`, `cards.json`, `lessons.md` and `cast.json`; `VOCABULARY.md` and `TOOLS.md` are the specialists' language and evidence |
+| `analysis/` | Findings and analysis outputs. The pipeline reads `knowledge.json`, `cards.json`, `cast.json`, `lessons.md`, `experience.json` and `judge_lessons.json`; `VOCABULARY.md` and `TOOLS.md` are the specialists' language and evidence |
 | `analysis/agents/` | The specialists, the art director and the modeller |
 | `runs/` | Every generated card and measurement, indexed in `runs/README.md` |
 | `research/` | Literature, market research and a check of current models and tools ([index](research/README.md)) |
-| `materials/`, `sources/` | Task documents, board export and image manifests |
+| `materials/`, `sources/` | The brief, the board export and image manifests |
 | `library/` | Cast cutouts. Not in git |
 
 ## Reference analysis
@@ -138,3 +139,18 @@ Run from the project root; each step skips finished work. The form every rater f
 ```
 
 To refresh the materials from the board, update `sources/board.svg` and `sources/original_images.json`, then run `scripts/export_materials.py`.
+
+## Glossary
+
+- **Producer:** the author, playing the brief's producer. Every human grade in `runs/ratings.json` is theirs unless noted.
+- **Twin:** a real card redrawn from a text brief with that card hidden from the generator. Content is equal, so what differs is style.
+- **Style rounds:** versions of the style text: `baseline` and `r1`–`r8` on 12 twins (`runs/twins`); `old` (the first style), `final`, `r3`, `r9` and `p1`–`p3` on 40 (`runs/twins40`). The current text is in `scripts/style.py`. `runs/final/` holds early picks drawn in the `final` style, not the final sets.
+- **Blockout:** a Blender model of the object, rendered and restyled by the image model.
+- **Category 1–5:** the art guide's staging: floating, plain floor, real surface, in its place, characters.
+- **CSD:** Contrastive Style Descriptors, a style embedding. Its similarity to the same object's real card is the one embedding measure that tracked the producer.
+- **Calibrated reviewer:** a model reviewer shown labelled twins, with the answers, before it judges.
+- **Specialists and director:** nine model reviewers, one per aspect of the art, and an art director, in [analysis/agents/](analysis/agents/README.md).
+
+## License
+
+[PolyForm Noncommercial 1.0.0](LICENSE.md): free for personal, research and other noncommercial use. Commercial use needs the author's written permission.

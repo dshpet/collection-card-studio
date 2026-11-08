@@ -1,4 +1,4 @@
-# Review: final6/period-drama/v1r1
+# Review: final6/top-hat-trial/v1r1
 
 | Specialist | Caught | Wrong | Abstained | False alarms |
 |---|---:|---:|---:|---:|

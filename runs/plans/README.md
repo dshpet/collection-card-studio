@@ -5,7 +5,7 @@ Plans for the film sets, oldest first; the card lists are in each JSON. Draw one
 | Files | Made | What changed |
 |---|---|---|
 | `western.json`, `sci-fi.json`, `horror.json`, `western-cast.json` | 2026-11-05 | The planner as it was: variants shared at most five objects |
-| `*-shared.json` | 2026-11-05 | Variants keep the topic's most iconic objects (`experiments/shared_plans.py`) |
+| `*-shared.json` | 2026-11-05 | Variants keep the topic's most iconic objects, a rule now in `analysis/lessons.md` |
 | `*-shared-cast.json` | 2026-11-06 | The producer's first accepted lessons and one character card per variant; variant 1 drawn as `runs/<genre>-batch` |
 | `*-shared-cast-2.json` | 2026-11-06 | Backdrop color logic and the second reference pass; variant 1 drawn as `runs/<genre>-batch2` |
 | `*-shared-3.json` | 2026-11-06 | No character cards, as the brief asks; no landforms or sky bodies, night skies for dark topics, the game's emblem on one object |

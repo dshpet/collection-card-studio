@@ -1,6 +1,6 @@
 # Runs
 
-Every generated card and measurement, oldest first. **The final sets are listed in [final6/README.md](final6/README.md).** Full-size drawings, review sheets and model renders are kept on disk, not in git. Findings are in [analysis/STYLE_GAPS.md](../analysis/STYLE_GAPS.md).
+Every generated card and measurement, oldest first: the brief asks for every intermediate iteration, so all runs are kept. **The final sets are listed in [final6/README.md](final6/README.md).** Each variant's chosen cards and Blender models are in git; candidates (`tries/`), full-size drawings, review sheets and the modeller's draft renders stay on disk. Findings are in [analysis/STYLE_GAPS.md](../analysis/STYLE_GAPS.md).
 
 | Folder | What | Made by |
 |---|---|---|
@@ -32,7 +32,7 @@ Every generated card and measurement, oldest first. **The final sets are listed 
 | `colors/` | Measured backdrop, surface and hero colors of the real cards, the earlier finals and the batch, with a swatch sheet | `experiments/colors.py` |
 | `western-batch2/`, `sci-fi-batch2/`, `horror-batch2/` | Batch 2: variant 1 of each `*-shared-cast-2` plan, with the reference color logic and the second reference pass | `make_set.py` |
 | `cast-check/`, `cast-check-2/`, `outfit_check/` | The Western cast plan's character cards, before and after the outfit fix | `make_set.py --plan`, `experiments/outfit_check.py` |
-| `plans/` | Plans for the film sets, drafts and final ([index](plans/README.md)) | `make_set.make_plan`, `experiments/shared_plans.py` |
+| `plans/` | Plans for the film sets, drafts and final ([index](plans/README.md)) | `make_set.make_plan` |
 | `batch2.png` | The object cards of the three `*-batch2` runs, one row per genre | by hand |
 | `robustness/` | 19 odd, risky and hostile requests planned (`plans/`, then `plans2/` after the repair loop), and Kitchen, Pirates and Star Wars drawn end to end | `experiments/robustness.py`, `make_set.py` |
 | `grade/` | The forty final-style twins with a measured backdrop grade | `experiments/grade.py` |
@@ -44,6 +44,6 @@ Every generated card and measurement, oldest first. **The final sets are listed 
 | `final3/` | First draw of the final sets: `western/`, `period-drama-2/` and `detective-3/`, eight candidates per card, with the smooth-surface line, rich colors and the wider blockout frame. `period-drama/`, `detective/` and `detective-2/` are earlier draws, before cards were replaced. `sets.json` and `compare.json` hold the set numbers, `set_numbers.json` adds the pre-final variants, grey copies and medians; `review.json` feeds round 1 of the review page ([README](final3/README.md)) | `make_set.py --plan runs/plans/final-*.json`, `experiments/final_review.py` |
 | `final4/` | Fix round 1: `western/`, `period-drama/` and `period-drama-2/`, `detective/` and `cast/`, started with `--keep` from round 1, so only the commented cards were drawn again ([README](final4/README.md)) | `make_set.py --keep`, `experiments/final_review.py` |
 | `final5/` | Fix round 2: `western-2/`, `period-drama/` and `detective/`, eight cards redrawn; `western/` drew only three candidates and is not used ([README](final5/README.md)) | `make_set.py --keep --candidates 8`, `experiments/final_review.py` |
-| `final6/` | Fix round 3 and the final sets: `detective/` with the new Magnifier, `period-drama/` with a Blender Top Hat that was not used; `final_sets.png` shows the sets ([README](final6/README.md)) | `make_set.py --keep --candidates 8`, `experiments/final_review.py` |
+| `final6/` | Fix round 3 and the final sets: `detective/` with the new Magnifier, `top-hat-trial/` with a Blender Top Hat that was not used; `final_sets.png` shows the sets ([README](final6/README.md)) | `make_set.py --keep --candidates 8`, `experiments/final_review.py` |
 
-A set run folder holds `plan.json` (with the request that made it), `spec.md` (the set as designed, card by card, with the plan's notes on why; early runs have none) and `briefs.json`, the drawings in `tries/`, prompts in `prompts/`, Blender models in `models/`, pairwise judgements in `choose/`, `check.json` with every try's checks, `rounds.json` and `edits.json` with every edit and whether it was kept, and `report.md`.
+A set run folder holds `request.json`, `plan.json`, `spec.md` (the set as designed, card by card, with the plan's notes on why; early runs have none) and `briefs.json`; the chosen cards in `variant_N/` and a sheet per variant; prompts in `prompts/`, Blender models in `models/`, pairwise judgements in `choose/`; `check.json` with every try's checks, `rounds.json` and `edits.json` with every edit and whether it was kept; and `report.md`. Try ids such as `v1_03_9` (variant 1, card 3, try 9) name candidates kept on disk.

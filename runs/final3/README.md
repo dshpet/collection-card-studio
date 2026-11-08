@@ -7,7 +7,7 @@
 | Detective | `detective-3/` | `runs/plans/final-detective-3.json` |
 | Cast bonus, two cards per genre | `runs/final2/cast/` | `runs/plans/final-cast.json` |
 
-Each folder has `spec.md` (staging, subject, colors and why, per card), `report.md` (checks), `variant_1.png` (the cast sheet is kept out of git) and every candidate in `tries/`. `period-drama/`, `detective/` and `detective-2/` are earlier draws of those sets.
+Each folder has `spec.md` (staging, subject, colors and why, per card), `report.md` (checks), `variant_1.png` (the cast sheet is kept out of git) and every candidate in `tries/` (on disk, not in git). `period-drama/`, `detective/` and `detective-2/` are earlier draws of those sets.
 
 The producer graded this draw on `experiments/final_review.py` (round 1): every set 4 of 5, "Yes, with small issues"; cards 4.4 Western, 3.8 Period Drama, 3.1 Detective, 3.83 cast. The fix rounds follow in [final4](../final4/README.md).
 

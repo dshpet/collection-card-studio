@@ -20,7 +20,7 @@ The producer graded fix round 2 (`runs/final5`): every set 5 of 5, "close to bei
 | Card | Change | Kept? |
 |---|---|---|
 | Magnifier | Fix round 1's long thin handle was "elongated", fix round 2's short one "too small". The handle is now 0.40 long and sturdy, about 0.85 of the lens's width from the rim, as on the real Map card, and the blockout is framed at 0.9 so the glass is smaller | Yes, `detective/` v1_03_9: smaller glass, sturdy handle |
-| Top Hat | Every one of the sixteen candidates drawn from text curled one side of the brim higher. Built in Blender with an even brim, seen almost from the front | No: the brim is even, but the hat is a stiff frontal stovepipe, less appealing than before, and the pick turned it navy. `period-drama/` is kept for the record |
+| Top Hat | Every one of the sixteen candidates drawn from text curled one side of the brim higher. Built in Blender with an even brim, seen almost from the front | No: the brim is even, but the hat is a stiff frontal stovepipe, less appealing than before, and the pick turned it navy. `top-hat-trial/` is kept for the record |
 
 ## Set numbers
 

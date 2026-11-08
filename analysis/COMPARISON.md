@@ -1,6 +1,6 @@
 # Our sets against the references
 
-The final sets ([list](../runs/final6/README.md)): Western, Period Drama and Detective, with six bonus cast cards. Set numbers come from `scripts/compare.py --sets runs/final6/sets.json` and `experiments/final_numbers.py` (`runs/final6/set_numbers.json`), on the same definitions as for the real sets; the sets as first drawn are in `runs/final3/`. Evidence for the style is in [STYLE_GAPS.md](STYLE_GAPS.md).
+The final sets ([list](../runs/final6/README.md)): Western, Period Drama and Detective, with six bonus cast cards. They are compared with the four real sets that have no characters or gold cards, the models the brief points to. Set numbers come from `scripts/compare.py --sets runs/final6/sets.json` and `experiments/final_numbers.py` (`runs/final6/set_numbers.json`), on the same definitions as for the real sets; the sets as first drawn are in `runs/final3/`. Evidence for the style is in [STYLE_GAPS.md](STYLE_GAPS.md).
 
 ## Idea
 
@@ -16,7 +16,7 @@ The film genre sets carry the idea through objects alone, as the brief asks: no 
 
 ## Set numbers
 
-| Set | Title words | Name words | Object classes | Scales | Backdrop hues | Categories 1/2/3/4 | Style similarity |
+| Set | Title words | Name words | Object classes | Scale classes | Backdrop hues | Categories 1/2/3/4 | Style similarity |
 |---|---:|---:|---:|---:|---:|---|---:|
 | Sports | 1 | 2 | 4 | 2 | 6 | 3/1/3/3 | 0.613 |
 | Finals | 1 | 2 | 6 | 2 | 6 | 4/1/4/1 | 0.603 |
@@ -26,13 +26,13 @@ The film genre sets carry the idea through objects alone, as the brief asks: no 
 | **Period Drama** | 2 | 2 | 7 | 2 | 6 | 4/2/3/1 | 0.551 |
 | **Detective** | 1 | 2 | 6 | 4 | 9 | 4/2/2/2 | 0.474 |
 
-Names, object classes and scales sit inside the real ranges. Period Drama is the one two-word title. Detective has nine backdrop hues, two more than any real set: its fix rounds brought coral red and sage green.
+Names, object classes and scales sit inside the real ranges. Period Drama is the one two-word title. Detective has nine backdrop hues, two more than these four sets and one more than any of the sixteen (Poolside, 8): its fix rounds brought coral red and sage green.
 
-Style similarity, the mean CSD between a set's own cards, is lower than in the real sets (0.47-0.56 against 0.60-0.64; 0.54-0.56 as first drawn, 0.57-0.66 for the earlier sets in `runs/final/`). Most of it is color. On grey copies of the cards Period Drama rises to 0.623, inside the real range, Western to 0.586 and Detective to 0.588, while the real sets move by less than 0.03: a real set's cards share one color treatment, and each of ours takes its own saturated hue. The producer graded all three sets 5 of 5 at these values, so this measure is descriptive.
+Style similarity, the mean CSD between a set's own cards, is lower than in these four sets (0.47-0.56 against 0.60-0.64, and 0.57-0.71 across all fifteen regular sets; 0.54-0.56 as first drawn, 0.57-0.66 for the earlier sets in `runs/final/`). Most of it is color. On grey copies of the cards Period Drama rises to 0.623, inside the real range, Western to 0.586 and Detective to 0.588, while the real sets move by less than 0.03: a real set's cards share one color treatment, and each of ours takes its own saturated hue. The producer graded all three sets 5 of 5 at these values, so this measure is descriptive.
 
 ## Art
 
-Medians on the 30 final cards against the 126 real object cards, beside the sets as first drawn and the same genres' pre-final variants (`experiments/final_numbers.py`):
+Medians on the 30 final cards against the 126 real object cards without gold frames, beside the sets as first drawn and the same genres' pre-final variants (`experiments/final_numbers.py`):
 
 | Measure | Real | Pre-final | First drawn | Final |
 |---|---:|---:|---:|---:|
@@ -61,11 +61,11 @@ The fix rounds moved subject chroma and area away from the real cards while the 
 
 ## What the producer's comments were about
 
-The producer left 23 comments on single cards over four review rounds. None asked for a different overall style: render, palette, outline or light. Nine were about shape, proportion, viewpoint or construction (a magnifier's perspective and proportions, a top hat's brim, a candelabra and a watch in perspective, a ring that did not sit inside its bag), five about material finish (gloss, metal, texture), three about recognition (a windmill that read as a monument, a badge without its emblem, a dog as an object), three about composition (off-center objects, a busy doorway), and three about the cast cards (blush, a third leg, a misplaced hat). The rules drawn from them are in [lessons.md](lessons.md), accepted by the producer.
+The producer left 23 comments on single cards over three review rounds. None asked for a different overall style: render, palette, outline or light. Nine were about shape, proportion, viewpoint or construction (a magnifier's perspective and proportions, a top hat's brim, a candelabra and a watch in perspective, a ring that did not sit inside its bag), five about material finish (gloss, metal, texture), three about recognition (a windmill that read as a monument, a badge without its emblem, a dog as an object), three about composition (off-center objects, a busy doorway), and three about the cast cards (blush, a third leg, a misplaced hat). The rules drawn from them are in [lessons.md](lessons.md), accepted by the producer.
 
 ## Where we still differ
 
-- **Construction and perspective:** the outside artist marked 9 of 75 pre-final cards broken, all on perspective or construction. No model or pixel judge reads it. Blind, the producer found the current pipeline better built than the camera line or Blender models for those cards, so both arms were dropped; their later comments were fixed card by card in the plan or the blockout. Two minor ones were left as they are: the pocket watch "may have some problems with the perspective", and the hat on the man in Sheriff Pals is "a tad misplaced".
+- **Construction and perspective:** the outside artist marked 9 of 75 pre-final genre cards broken (and one cast card), all on perspective or construction. No model or pixel judge reads it. Blind, the producer found the current pipeline better built than the camera line or Blender models for those cards, so both arms were dropped; their later comments were fixed card by card in the plan or the blockout. Two minor ones were left as they are: the pocket watch "may have some problems with the perspective", and the hat on the man in Sheriff Pals is "a tad misplaced".
 - **Color across a set:** each card gets its own saturated backdrop, so our sets vary more in color than the real ones (above).
 - **Blind:** the producer still spots 24 of 32 final-style twins; the outside artist's quick blind pass came out inverted (23 of 72), calling the brighter, larger real cards AI ([STYLE_GAPS](STYLE_GAPS.md)).
 - **Rating:** the producer graded each final set 5 of 5; cards 4.5 Western, 3.8 Period Drama, 4.0 Detective (nine cards; the last Magnifier was not graded) and 5.0 for the cast cards ([final sets](../runs/final6/README.md)). The pre-final cards had 3.1 of 5 from the outside artist; the producer graded batch 2's object cards at 3.85. The other numbers above come from models or measurement.
