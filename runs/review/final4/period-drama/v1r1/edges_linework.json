@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (pocket watch): in the edge map, the case rim has doubled, uniformly dark contour lines. Every numeral and both hands have a heavy dark ring around them. The bail and chain links have the same black-line treatment. Its subject density (0.176) and outline darkness (0.202) are both above the real range, and A is the most extreme value in the set on both. B (ring box): the box has a crisp dark silhouette line too (outline 0.13, slightly high), but the inside of the box is quiet, with only the coin rim and the emblem drawn. Its subject density (0.077) sits well inside the real range. The lessons show this direction: generated cards draw heavier, more uniform contours than real cards.",
+   "fix": "Let the gold rim and the numerals read through soft shading and highlight, not drawn lines. No dark outline around the numerals, the hands or the case edge. Keep the rim edge thin and let it fade where it turns away from the light."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B (travel book): every sticker (skyline, barn, cathedral, map pins) has a thick double dark outline, like a die-cut sticker border. The edge of the book cover and the bookmark ribbons also have a heavy black contour. Its outline darkness (0.165) is far above the real range (max 0.097). A (captain's hat): the silhouette is defined by value change against the wood, with no drawn line. Its outline darkness (-0.028) is in range. Its seams (hat band, peak edge) are thin. The planks behind it are busy (0.035) but within range.",
+   "fix": "Draw the stickers as raised shapes with soft shading at their edges, with no dark border line around them. The book cover meets the background through light and shadow, not a black outline."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (scarf): the lower tails and side lobes are wrapped in one continuous dark line of even weight, like a drawn outline. Inside the cloth there are almost no edges, so subject density is low (0.053). Contour and interior don't match: the boundary is heavy and the inside is blank. B (fan): the edges come from real structure (lace scallops, ribs, slats). Its silhouette is not darkened (outline -0.062), and its density (0.144) is within range. Both cards' numbers fall inside the real ranges, so this call is weak.",
+   "fix": "Let the red cloth meet the blue background with a soft, shaded edge that turns into shadow, not a dark line traced around the tails. Add a few soft fold creases inside the knot and the tails."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (sneakers): the inside of the shoes is packed with edges: mesh texture, several lace loops, sole layers and panel insets. Subject density (0.227) is at the very top of the real range. The edge map also shows one hard, ruler-straight horizon line across the whole backdrop. B (straw hat and gift box): the edges are clustered at the flower and the bow, which gives a clear edge hierarchy. Elsewhere the box is calm, and density (0.105) is in range. A's silhouette is light (outline -0.1, just under range), so this choice rests on how busy the inside is, not on outlines.",
+   "fix": "Simplify the shoes: plain smooth upper panels, no mesh texture, fewer lace crossings. Let the floor meet the wall through a soft shadow, not a sharp line."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (paddling pool and duck): the pool rings are smooth, wide tubes with few internal edges. Subject density (0.045) is below the real range (min 0.076). Meanwhile the fence boards with wood-grain knots and the scattered grass tufts give a background density of 0.055. The background is nearly as busy as the hero, so the edge hierarchy is inverted, and the duck, the focus, has only a few soft edges. B (dock): the rope coils, plank seams and life ring carry the strongest edges. Water and sand are quiet (0.027), and both subject and background densities are in range.",
+   "fix": "Keep the fence and grass simple and soft-edged: smooth boards without wood-grain knots and fewer grass tufts. Put the crispest detail on the duck and the pool rim: a sharp highlight edge on each ring and clean detail on the duck's face."
+  }
+ ],
+ "pattern": "Generated cards draw the boundary instead of letting value change make it. Silhouettes and sub-parts (stickers, numerals, cloth tails) get a uniform dark contour line, often doubled, where real cards let the form turn away into shadow. Edges are also badly distributed. Either the hero is crammed with many small crisp details (mesh, lace loops, extra trim), or the background (wood grain, grass tufts, hard horizon lines) competes with the hero. Real cards keep the sharpest edges at the focal point and leave the rest soft."
+}

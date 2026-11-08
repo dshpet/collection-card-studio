@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the pocket watch hangs turned about 30° to the right, with the case's side band showing on the right. The dial numbers, though, read almost face-on, as if pasted onto the oval, and there is no ground or shadow to place the watch in depth. B: the ring box is seen from a consistent high 3/4 view. The front and right walls, the top rim, the inside of the cushion and the inside of the lid all agree on one camera, and the normal map shows the walls as even flat patches. Both float on a plain background, so this is a weak call.",
+   "fix": "Turn the whole watch as one solid object: squeeze the dial numbers and hands into the same oval as the case, and show the case's thickness evenly along the right edge."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the captain's cap sits on floorboards that recede at one steady angle into a room corner, and the camera is low and slightly above, as on the real desk and computer card. B: the book is seen from steeply above, almost top-down. The cover is one large flat panel (planar_share 0.706, above the real range), and only thin strips of page edge show at the bottom and right. The wood table behind it is a flat texture with no depth.",
+   "fix": "Lower the camera to a gentle 3/4 view from slightly above, so the book's thickness, spine and page block show clearly and the table surface recedes behind it."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the scarf is shown face-on, but the neck loop is seen slightly from above, so its inside shows, and the knot and tails overlap at different depths. B: the fan lies fully flat in the picture plane, like a sticker. The guard sticks are one horizontal line, the ribs have no foreshortening, there is no top face or thickness, and there is only a faint shadow on the wavy background. No real card is that flat in depth.",
+   "fix": "Tilt the fan toward the viewer at a 3/4 angle so the ribs and guard sticks overlap with visible thickness, and drop a soft shadow under it so it floats above the background."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the two sneakers stand side by side at almost the same size on a studio floor, with a hard straight line between floor and wall at about mid-height. The normal map is smooth swollen rainbows everywhere (planar_share 0.057), with no flat sole or side planes. B: the hatbox's top oval, side wall and the tilted hat brim all share one slightly-above view, and the box sits on a soft, blurred ground.",
+   "fix": "Set the shoe pair at a clear 3/4 turn, with the back shoe slightly smaller and partly hidden. Give the soles flat bottoms and crisp side walls, and blend the floor softly into the background instead of a hard horizon line."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the camera is high (about 30°) over the pool, and the pool's oval, the grass and the fence corner behind it all share one ground plane. B: the dock posts show their top faces, and the deck planks, water and shoreline at the top recede consistently. Both are full scenes with clear foreground, hero and background layers, and on viewpoint neither breaks consistency.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards show a camera that is either too frontal or too high. Some pull the object flat into the picture plane, like a sticker (the fan) or a near top-down slab (the book). Others show evenly sized, swollen forms on a hard studio horizon line. Real cards use a mild 3/4 turn from slightly above, with visible thickness, overlapping parts at different depths, and a soft ground that recedes behind the object."
+}

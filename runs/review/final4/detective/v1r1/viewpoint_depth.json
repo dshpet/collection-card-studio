@@ -1,0 +1,75 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the magnifier is seen almost straight-on and floats over a flat ring background, with one depth layer and no ground. B: the camera looks up at the backboard from below, so the board's bottom edge is wider than its top and the pole runs toward the bottom-right edge of the card. The perspective is stronger than in the reference cards, and B's planar_share of 0.699 is above the real range.",
+   "fix": "Show the hoop at eye level with mild perspective. Draw the backboard nearly face-on with its top and bottom edges almost parallel, and make the pole short and upright."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the dock boards are seen from high above and run steeply toward the top-left, but the mask faces the camera almost square-on, as if it were standing up rather than lying on the boards. Two views are mixed. B: the camper is a near-side elevation with a mild 3/4 turn on one level grass plane, and the wheel and hitch both sit on that ground.",
+   "fix": "Lay the mask flat on the dock, seen from the same high angle as the boards. The lens should look foreshortened, like an oval tilted back, and the snorkel should lie along the planks."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the racket and ball lie on the court at one consistent high 3/4 angle, and the court line recedes with them. B: the bag is seen straight down like a flat scan, but the ring inside shows its thick side wall as if it were standing upright. The bag and the ring do not share one view, and B's planar_share of 0.706 is above the real range.",
+   "fix": "Tilt the camera to a mild 3/4 angle above the table. Lay the ring flat inside the bag so it reads as a thin, tilted oval, and give the bag a slight thickness at its zipper edge."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the wheel is perfectly frontal and symmetric, like an elevation drawing, and the stand base is a flat strip. The floor planks fan out strongly toward the camera and the horizon curves, so the hero and the ground use different perspective. B: the goal is turned to a 3/4 view, and the frame, ball and water share one camera angle.",
+   "fix": "Turn the wheel a little to one side so the rim reads as a slight oval with its edge thickness visible. Show the top of the stand base, and keep the floor at the same gentle angle with straight planks."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "A: the coat is shown dead flat and face-on against the wall, while the window and dresser on the left are drawn at an angle. B: the binocular viewer is seen from a low, close camera and cropped at the bottom, with the railing and skyline set back as simpler background layers, much like the real lighthouse crop.",
+   "fix": "Turn the coat slightly so the sleeve and side seam on one side show some depth. Match the wall and window to that one angle."
+  },
+  {
+   "pair": "p06",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the camera body is close to frontal with a slight turn showing its top and right side. B: the player is tilted and floating, with its top and right edges visible. Both use mild perspective on a plain background, consistent with the real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the fan is flat and face-on with even panel planes. B: the hat is seen from a high 3/4 angle with the brim as one consistent ellipse. Both read with one view, as the real anchor and jellyfish cards do.",
+   "fix": ""
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the camera is low and close. The front door is almost square-on, but the right side face turns sharply, and the feet and floor split sit at a lower horizon than the front face implies. Its planar_share of 0.636 is above the real range. B: the vending machine has a mild 3/4 turn with a short side and consistent feet on the floor.",
+   "fix": "Use a mild 3/4 view from slightly above. Show a thin strip of the top face, turn the side face gently, and keep the door, side and feet on one ground plane."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the wallet lies flat on the table at the same oblique angle as the planks. B: the map is seen almost straight down, but the magnifier ring shows a tall side wall facing the viewer, as if seen from a lower camera. Its planar_share of 0.848 is far above the real range.",
+   "fix": "Draw the magnifier lying flat on the map at the same angle as the table. The lens should be a thin tilted oval with only a sliver of rim thickness."
+  },
+  {
+   "pair": "p10",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the handcuffs lie on a plain surface seen from a high 3/4 angle with consistent ring ellipses. B: the shoes are seen at a low eye-level angle, with a hard floor and wall split as the horizon. Each card uses one coherent view, and both planar_share values are near the bottom of the real range.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards mix camera views. A face-on hero, or a part standing upright, such as a ring, lens or mask, sits on a ground seen from a much higher or lower angle. Ground and floor perspective is also stronger than the hero's. Real cards keep one mild 3/4 view across the hero and its ground. When a high planar_share falls outside the real range, it usually confirms these flat, elevation-like front faces."
+}

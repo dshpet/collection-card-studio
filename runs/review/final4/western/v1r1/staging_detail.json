@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the whole wagon sits small in a wide landscape. It stands on a diagonal dirt road with scattered pebbles, a grey rock at bottom left, small white flowers and grass tufts in the foreground, and rolling hills and clouds behind. Nothing touches the card edge. That is the generated pattern from the lighthouse lessons, where the full object sits in a scattered scene. B: the coaster cars and track are cropped close and run off the top and right edges. Behind them are only large quiet shapes: sky, a few clouds and a soft green hill band. That matches how the real lighthouse is cropped.",
+   "fix": "Move in close on the wagon so the canopy and wheels fill the card and the card edges cut the back wheel and the tongue. Keep the ground as one plain band of dirt track with no pebbles, flowers or rocks. Behind it, only soft sky and one simple hill line."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: an invented secondary prop, a blue kettle, sits on the fire-ring stones. Behind the fire are a log cabin with a lit window at top left, a row of pine trees and bushes. In front are many small pebbles and grass tufts. With the hero greyed out, the background is still crowded with small detail. B: the viewer is cropped close, and its post is cut by the bottom edge. Behind it are one railing and a soft, low-contrast city skyline: a few large, quiet shapes.",
+   "fix": "Show only the campfire: logs, flames and the stone ring, seen close so the stones touch the card edges. Remove the kettle, the cabin and the pebbles. Behind the fire, use a soft dark-green blur of forest with no separate trees."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the windmill is shown whole and small in the upper middle. The bottom half of the card is a wheat field made of hundreds of separately drawn ear stalks. That is the busiest background in the set, with edge density 0.129, above the real maximum of 0.089. B: the posts and planks are cropped by the right and bottom edges. The water is flat with a few ripple rings, and a plain band of sand sits at the top. The rope and lifebuoy belong to the dock post, and the background reads as large quiet areas.",
+   "fix": "Draw the windmill close, so the tower legs run off the bottom edge and the wheel fills the upper card. Paint the wheat as a soft golden mass with only a few stalks drawn at the base, not a field of individual ears. Behind it, plain blue sky."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the chess table is shown whole at mid-distance with two stools. The background adds a park scene: a tree trunk with a canopy at top left, three rounded trees, hedges and a winding path. There are also small cracks drawn in the stone. That makes many separate background objects, and the edge density is higher (0.065 against 0.031). A: the ball is large and central. Behind it is a plain grass field with one white pitch line, which is a few quiet shapes, like the real beach ball on sand.",
+   "fix": "Move in close on the stone chess table so the tabletop fills the card and the edges cut the stools. Replace the trees and path with a soft, out-of-focus green lawn and one blurred hedge line."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the seahorse floats in open blue water with soft diagonal light rays (category 1, in the water it swims in), and there are no props. B: the beach ball sits on rippled sand, filling the card, with no added props. It matches the real beach ball in the reference sheet. Both backgrounds are quiet and tone-on-tone, and both measure slightly below the real range. On staging and detail, neither card stands out.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards pull the camera back: the whole object sits mid-card, and nothing is cut by the edge. They then fill the background with invented props and many small repeated details: pebbles, flowers, grass tufts, rocks or islands, kettles, cabins, trees, paths, wheat ears. Real category-4 cards crop close, let the card edge cut the object, and keep the place to a few large, quiet shapes. On plain backdrops, generated cards also add a bright glow halo behind the object."
+}

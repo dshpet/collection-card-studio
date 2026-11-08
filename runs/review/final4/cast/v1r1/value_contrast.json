@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the card splits hard into a near-white sky and fleece on the left and centre and a near-black stall interior and shopping bags on the right and bottom. That is a stark black/white split with little middle grey, and rms_contrast is 0.201, above the real range. B: the barn wall is a broad mid-dark mass, the straw floor is mid-grey, and the white sheep and cream cow sit on it in a softer three-value scheme. Its contrast is inside the real range.",
+   "fix": "Lighten the inside of the stall to a medium warm brown, not black. Make the shopping bags mid-tone, not black. Keep the sky softer, a light blue, not white, so the card reads in light, middle and dark-middle steps without big black holes."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a near-white sunburst glow sits directly behind the wheel, and bright rays fan across the deck under it. The mid-dark brown wheel and pedestal read as a dark silhouette on that glow. lightness_gap is -0.282 and the overall key is 0.761, both outside the real range. The corners at the top also drop off. A: the wood table is an even mid-light field and the plate and fruit sit in it in middle values. The darkest accents are the small melon seeds and blueberries. A is flat but plausible.",
+   "fix": "Remove the white glow and rays behind the wheel. Make the background an even soft lilac, about as light as the wheel's brightest wood, and light the wheel from the upper left so its front faces are light honey-brown, not a dark silhouette."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the card is low-key. A dark maroon stage and black background, with one spotlight cone from the top lighting the kit. The bass drum head is the only large near-white shape, so the light is concentrated tightly on the subject. lightness_mean is 0.48, well below the real 0.55 floor, and the corners go nearly black (vignette 0.123). A: the cream caravan is the light mass on a mid-violet background and a mid-green lawn, the overall key is high, and the only dark accents are the wheel and window interiors. All of A's measurements are inside the real range.",
+   "fix": "Light the whole scene brightly and evenly. Draw the background as a smooth, medium-bright magenta-purple wall and the stage as a light pink-red, with no spotlight cone and no dark corners. Keep the drum kit's blue shells medium-bright, with soft shadows only under the stands."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: a bright sunlit wall at the top left and a dark doorway on the left edge frame the man in a mid-value purple shirt. The cobbles are light. B: the window at the top left is bright and the table and wall are mid-dark. The white dish and magnifier lens are the bright centre accents, and the coat is light-middle. Both cards keep a broad middle-value mass with small dark accents, every measurement is inside the real range, and neither shows a glow or a corner falloff that would separate them.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: dark green curtains and dark window bars frame the corners (vignette 0.10, above the real range). The polished floor is broken into many small clipped-white reflection streaks around the hooves, so local contrast flickers across the bottom third. A: a big soft white fleece mass and a white waterfall band on a mid-blue field, with gentle, low-contrast roll-off in the clouds of wool and no corner darkening. A's rms is slightly low, but its grouping is broad and calm.",
+   "fix": "Make the ballroom background a light, evenly lit room with pale green curtains, not dark corners. Give the wooden floor a soft, even warm sheen with one or two gentle reflections instead of many sharp white glints."
+  }
+ ],
+ "pattern": "On value and contrast, generated cards give themselves away by how they stage the light. They put a bright glow or sunburst directly behind the hero, so the hero reads as a darker silhouette (strongly negative lightness_gap). They throw a spotlight on a low-key, dark-cornered set (low lightness_mean, high vignette). And they scatter many small clipped-white specular glints across surfaces. Real cards stay high-key with an even, broad background, keep the hero in light and middle values with soft roll-off, and keep the darkest accents small and placed within the object."
+}

@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (wagon): the key is high at 0.725, above the real range. In the lens the whole card breaks into light and mid-grey speckle: grass blades, flowers and pebbles cover the ground in small bright flecks. There is no large dark mass. The darkest accents are tiny: the wheel hubs and a thin shadow under the bed. The white canvas cover sits against an almost equally light sky, so the hero barely separates from the background by value. B (coaster): the vignette (0.117) and the lightness gap (-0.217) are just outside the range. Still, B has clear large groups: dark blue track arcs, light grey cars and a light sky. That is closer to the real cards, which keep one readable dark group, like the camera body or the glove's shadow side.",
+   "fix": "Darken the grass at the bottom corners and under the wagon into one solid, deeper green shadow area without small bright flecks. Give the wagon a broad dark shadow under its bed and between the wheels. Drop the sky a little toward a deeper blue so the white canvas cover is clearly the lightest shape on the card."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (binocular viewer): the key is high at 0.759 and the lightness gap is -0.246; both are outside the real range. In the lens the top-right sky and the skyline wash out to near white. The viewer is a mid-to-dark grey shape set against that pale field, so the hero reads darker than its background. A (campfire): the key is mid at 0.571. Dark tree shapes sit in the top corners, and the light group is the flame at centre with a glow around it. The stones and kettle form the middle group. A's numbers all fall inside the real ranges.",
+   "fix": "Bring the sky and city down to a medium blue so the top right is no longer near-white. Keep the brightest highlights on the viewer's chrome barrel and lenses so the viewer is the lightest thing on the card, set against a calmer mid-value background."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (windmill): the key is too high at 0.737, and the contrast is at the floor of the range (rms 0.124). In the lens the lower half is one even field of light grey wheat speckle that repeats from edge to edge. The dark tower is the only real dark shape, and the white wheel sits against a light sky and clouds of nearly the same value. B (dock): the water is a large mid-dark group, a light band of sand runs across the top right, and the posts and ring are dark accents placed at the centre. B's groups are broad and inside the real ranges.",
+   "fix": "Make the wheat in the foreground and at the bottom corners a darker, deeper gold in shadow, as broad shapes rather than repeated bright stalks. Deepen the sky toward the top so the white wheel blades stand out as the lightest shape on the card."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (soccer ball): the hard black patches inside the hero come from the ball's own pattern. The ball is light against mid-grey grass, with a dark cast shadow below and white field lines at the top. The contrast (0.202) sits right at the top of the real range. B (chess table): a light stone table on mid-grey grass, with dark tree canopies at the top corners and dark cast shadows. Both cards are inside the real ranges on every field, and both separate the hero clearly by value. My vector gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (beach ball): the vignette is negative (-0.028), outside the real range of 0.008 to 0.123. The sand in the top-right corner washes to near-white in the lens, so the corners are brighter than the area around the hero. The key is high at 0.738. The white panels are lit to near-white with hard glossy streaks, and a sharp dark cast shadow sits at the lower left, so contrast inside the hero is hard. A (seahorse): there is a clear diagonal split from a lighter top-left to a dark bottom-right. The corners darken as they do on real cards. The hero is a mid grey that separates mostly by hue, which is not out of line with the real range.",
+   "fix": "Darken the sand toward all four corners, especially the top right, so the light gathers around the ball. Soften the white panels so their highlights roll off gently instead of ending in hard white streaks."
+  }
+ ],
+ "pattern": "On value, generated cards go wrong in three ways. They run too high-key, with near-white skies or sand. They fill the ground with small light speckle (grass, wheat, sand grain) instead of a few broad light, mid and dark shapes. And they lack the darker corners that real cards have, so the hero is not set off by value against a calmer background."
+}

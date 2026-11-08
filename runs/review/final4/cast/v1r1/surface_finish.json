@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the sheep's fleece is soft cloudy curls with a fine fluffy edge. The bead necklace and the shopping bags all have the same lacquered plastic shine, with a hard white spot on every bead. Nothing is matte except the face. B: the fleece is built from broad, smooth spiral discs, the same construction as the sheep on the other cards. The milk can is dull brushed metal with a speckle of dust, the straw has quiet fine strands, and the wooden brush handle is semi-matte. B mixes matte and shiny materials; A coats everything in one gloss. The call is weak because B's detail measure (0.044) is above the real range.",
+   "fix": "Draw the fleece as large, smooth, matte spiral curls. Make the beads semi-matte with a soft, wide highlight instead of a sharp white dot. Make the paper bags matte paper with no shine. Keep the shine only on the sunglasses lenses."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the watermelon flesh has a fine, quiet grain and the plate is glossy glass. The water drops are small and sharp, and the wood under the plate has broad, soft grain. The materials read true: wet fruit, glass, wood. B: the wheel's wood is almost flat orange with faint, smeary grain. The deck has thin, scratchy hatched lines for grain. The gold hub carries the only gloss. The marks look painted flat and do not match the smooth rendered surfaces on the real cards. Gloss is low at 0.04.",
+   "fix": "Render the wheel as smooth, softly lit varnished wood with gentle, fine grain along each spoke and a soft sheen on the rim. Paint the deck planks as broad, smooth boards with quiet grain, not scratchy lines."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the caravan body is smooth matte cream plastic and the rubber door seal is one broad, soft band. The tail light and the window louvres are simplified into a few large parts, the way the real cards treat hardware. B: every drum carries a ring of small, glossy gold lugs and silver bolt tips. The cymbals, rims and stands are all equally polished metal. The chunky, toy-like hardware repeats around each shell, the hardware overload the lessons flag on generated cards. Gloss (0.126) is at the top of the real range.",
+   "fix": "Show each drum shell with two wide, smooth metal rims and only a few soft, simple tension rods. Make the drum skins matte. Give the cymbals a soft brushed-brass sheen, not a mirror shine."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the polo shirt is smooth matte cotton with soft folds, the scooter is semi-gloss painted metal, and the headlight is the only strong highlight. B: the trench coat has fine fabric grain, a buckle and buttons. The magnifier rim is high-gloss gold and the camera flash and lens are polished chrome. The plate has a gilded edge. Small shiny hardware is spread across the whole card, and highlights (0.058) are five times A's. Both cards measure above the real range for fine detail.",
+   "fix": "Make the trench coat smooth matte fabric with broad folds and no fine weave. Draw the belt buckle as one simple flat band. Give the magnifier rim and the camera a soft satin sheen with a single broad highlight."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the sheep's fleece is broad, smooth matte spirals and the pig's skin is a soft, even matte with a gentle blush. Micro-texture is very low (0.0099), close to the real cards' smooth finish. B: the cow's body is covered in fine, visible hair strokes, the fleece spirals are tighter and crisper, and the ballroom floor has streaky mirror reflections. That makes B's surface grain busier and its gloss more uneven.",
+   "fix": "Paint the cow's hide as smooth, soft matte with no visible hair strokes. Make the fleece large, soft spirals. Turn the floor into soft, low-contrast polished wood with one gentle, blurred reflection."
+  }
+ ],
+ "pattern": "Generated cards scatter small, glossy hardware everywhere: lugs, bolts, buckles, vents, stitch dashes. They give every material the same lacquered shine and add busy fine grain or hair strokes. Real cards simplify hardware into a few broad, smooth parts, keep most surfaces semi-matte with one soft highlight, and keep texture quiet and large-scale."
+}

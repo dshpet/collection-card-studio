@@ -1,0 +1,75 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A magnifier: the chrome rim, the neck collar and the red handle all have the same smooth, even lacquer, with one hard arc-and-dot highlight on the lens. There is no matte surface anywhere on the object. B hoop: the white backboard is soft and matte, while the orange rim and the net tubes are satin. That mix of finishes matches the real cards. B's 0.569 highlight score comes from the white board, not from shine.",
+   "fix": "Make the handle a soft matte rubber with a faint, broad sheen. Keep sharp reflections on the metal rim only, and make the collar a dull brushed grey."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A snorkel: the dock planks have broad, decorative grain and the mask is clear, glossy plastic, which is within the range of the real suitcase and wheel cards. B caravan: the body is smooth satin with thin, quiet panel lines, and there are small add-on parts (roof vent, lamp, jack). Both stay inside the real cards' simplification. Nothing on my vector separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B evidence bag: the plastic is drawn photographically, with crumpled, wrinkled translucent film and streaky reflections. The gold ring is a realistic jewellery render, and the green backdrop is a stitched fabric with fine dashed seams. That is a level of material realism and fine texture no real card has. A racket: the frame is smooth satin plastic, the strings are simple bars, and the ball has a soft felt look. That matches the real cards.",
+   "fix": "Draw the bag as a simple, smooth, slightly glossy clear pouch with two or three broad soft highlights and no wrinkles. Make the ring a clean toy-like gold band. Use a plain smooth backdrop without stitching."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A ship wheel: the wood grain is drawn as dark cartoon line strokes on a flat orange surface. The floor planks have scratchy, hand-drawn grain marks. The hub is the only glossy part and nothing else has a highlight (highlight 0.0). It reads as a flat 2D illustration, not the soft rendered varnished wood of the real wheel card. B pool goal: the white tube frame is satin, the ball is matte, and the water is glossy. The finishes are mixed and match the real cards.",
+   "fix": "Render the wheel as smooth, softly varnished wood with faint, fine grain and a broad satin sheen along the rim and spokes. Use soft rendered shading, not outline strokes. Give the floor planks quiet, fine grain."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A trench coat: the fabric reads as smooth matte clay or felt. There are no seams or topstitching, and the lapels, belt and pockets are all the same rubbery surface. The yellow wall behind it has soft, smeared painterly gradients. B coin binocular: the blue metal has sharp, believable reflections, and the bands and caps are separated into broad smooth parts, the way real cards simplify hardware.",
+   "fix": "Give the coat a soft cotton-gabardine look: very faint fine weave and thin, quiet seam lines along the lapels and belt. Give the buttons a slight shine against the matte cloth. Keep the wall a clean, even colour."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A camera: the red body has a faint mottled texture in the crop, and the flash reflector, lens ring and knob are all the same bright chrome. B player: the yellow body is clean satin plastic with smooth buttons, and the earbuds are soft glossy white, close to the real sunscreen card. The difference between them is weak.",
+   "fix": "Make the red body a clean, smooth satin with no mottling. Make only the lens ring bright metal, and give the flash reflector a softer brushed finish."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B fedora: the crown and brim have a blotchy, mottled tone that reads as a smear rather than an even felt nap. The green band is a uniform satin. A fan: the paper is flat purple with faint fold ridges and the ribs are smooth matte wood. It is quiet and clean like the real cards. Both scores are low and close together.",
+   "fix": "Render the hat felt as an even, soft matte surface with a very fine, quiet nap, without blotches. Give the ribbon band a slightly smoother, gentle sheen."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A safe: the navy body shows a speckled grain in the crop and the whole image is soft and blurry. Detail (0.021) and micro-texture (0.0085) are below the real-card range. The gold dial and handle are glossy, but the edges are mushy. B vending machine: crisp satin blue body, a glass front with condensation drops, and glossy bottles. Its scores sit inside the real range.",
+   "fix": "Draw the safe body as crisp, smooth, painted steel with a soft satin sheen and clean edges, with no grain or speckle. Draw the hinges as simple broad grey parts."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A badge wallet: the black leather has dashed stitching along every edge, the eagle has finely engraved feathers, and the wood desk grain is fine and sharp. Detail is 0.083, far above the real range. The generated lesson gloves show the same tell: fine dashed stitches the real cards leave out. B map: the paper and lens are flat and simpler, but its scores are also high. Both may be generated, but A shows more of the lessons' tells.",
+   "fix": "Make the wallet smooth, soft-sheen black leather with no stitch lines. Simplify the eagle into a few broad, smooth gold shapes. Make the desk wood quieter, with faint grain."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A handcuffs: every part (rings, lock blocks, chain links, pivot caps) is the same mirror chrome, with no matte or brushed break. Gloss share is 0.397, well above the real maximum of 0.267. B sneakers: the toe has a dot-grid mesh and the laces are smeared, which are also generated-looking tells, so confidence is low.",
+   "fix": "Make the cuff rings a satin brushed steel with one broad soft highlight each. Make the lock blocks a duller grey. Draw the chain as a few simple smooth links, without mirror reflections everywhere."
+  }
+ ],
+ "pattern": "Two things still give generated cards away. First, every part has the same finish: one even chrome or lacquer over the whole object, with no matte part next to a glossy one. Second, fine detail is either missing or overdone. Generated cards smooth fabric into clay, or add fine detail the real cards leave out: dashed stitching on leather, engraved feather detail, condensation drops, crumpled translucent film. A few go to the other extreme, with speckled grain or blur, or flat line-drawn wood grain. Real cards keep surfaces clean and soft and simplify hardware into broad, smooth parts, with only a few quiet marks."
+}

@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (candelabra): one clear key from upper left. The gold base and arms have a bright left side, darker right flanks and a soft cast shadow falling to the right on the teal floor. The light comes from one side, as on the real cards (bias 0.414). B (sneakers): the shading lens shows both shoes lit almost evenly from the front. The blue uppers and white soles look the same brightness on the left and right sides of each shoe, with no darker shadow side, and the bias is 0.019, far below the real range. Its only drama is a hard, dark cast shadow on the left floor, which does not match how evenly the shoes themselves are lit. Shading range 0.82 is above the real range, driven by that floor shadow and the white soles. This is the same front-lit, even-light look as the generated cameras and computers in the lessons.",
+   "fix": "Light the sneakers from the upper left. Make the right-hand and back sides of each shoe clearly darker, with soft gradual darkening across the toe box and sole, and let the shadow on the floor be soft-edged and fall to the right, matching the light."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (bumper car): strong directional modeling. The green hood is bright on top and turns down into dark sides, the black rubber bumper gets a deep core shadow underneath, and the car sits on a dark contact shadow with a reflection on the floor. All three readings fall inside the real ranges (bias 0.773). B (flip-flops): the lens shows a soft, even, front-and-top light. The soles have only a thin dark rim along the edges, the straps have gentle sheen and no real shadow side, and there is barely any cast shadow under the sandals on the striped background. Form contrast (0.361), shading range (0.553) and bias (0.179) are all below the real minimums. This is the flat, low-contrast lighting of the generated lessons.",
+   "fix": "Put a clear key light on the upper left. Give each flip-flop sole a darker right edge and underside, make the yellow straps throw small darker shadows onto the soles, and add a soft but visible shadow under the sandals, offset down and to the right, so they sit on the surface."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (bottle in sand): the light comes from above, matching the sun rays. The upper side of the glass is brighter, the scroll and rope have darker lower sides, and a dark, soft-edged cast shadow pools under the bottle in the sand. That grounds it the way the real cards' cast shadows do (bias 0.639, at the top of the real range). B (keyboard): the case is lit evenly from the front. The top and front faces are both bright white, with hard dark lines only between the keys, which pushes form contrast to 0.714, above the real 0.59 maximum. The case has no clear shadow side, and the X-stand has no cast shadow on the ground, so it floats. Light bias is low (0.221). The evidence is mixed, so confidence is low.",
+   "fix": "Light the keyboard from the upper left. Make its front and right end faces noticeably darker than the top, soften the dark lines between the keys, and add a soft shadow on the ground under the X-stand feet and keyboard."
+  }
+ ],
+ "pattern": "The generated cards give themselves away on lighting by being lit from the front and evenly. The object has no clear shadow side, so the left and right sides of a form are equally bright and the measured light bias is low. Form-turn contrast is either too gentle (soft, washed-out sheen) or too harsh in thin edge lines and crevices, instead of one broad, directional darkening across the form. Cast shadows are missing, floating, or hard-edged and pointing a different way from how the object is lit. The real cards use one dominant key light from upper left or right, a deep cool shadow side with a core shadow, soft contact shadow under the object, and a gentle rim along the far edge."
+}

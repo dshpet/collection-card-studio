@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (wagon): the edge map shows a dark, even contour around both red wheel rims, the spokes and the canvas hoops, as if they were inked. outline_darkness is 0.15, just above the top of the real range. The foreground grass and dirt are broken into many small crisp blade and pebble edges, so the ground pulls focus. B (coaster): the rails and cars have doubled tube edges, but the silhouette is not darkened (0.065). The clouds and hills behind are soft, and the sharpest edges are on the front car, which is how the real cards set up their edge hierarchy.",
+   "fix": "No dark outline around the wagon wheels or canvas; let the shapes separate by color and light only. Keep the grass and dirt path as soft blurred color areas with no individual blades or pebbles in sharp focus."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (campfire): the log-cabin logs, window panes, pine-tree outlines and scattered pebbles all carry crisp edges. Meanwhile the flames, which are the focus, have soft, partly lost edges. Subject edge density is 0.074, below the real minimum, while background density is high (0.052), so the background is as sharp as the hero. B (binoculars): the head and eyepieces have crisp edges, and the city skyline behind is lighter and simpler. The light rim gives B a low outline value (-0.126), but there is no drawn dark contour.",
+   "fix": "Make the logs, stones and kettle the sharpest-edged objects. Blur the cabin and pine trees into soft shapes with few details, and remove the scattered pebbles from the ground."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (windmill): the wheat field is a wall of small, hard-edged grain heads from the bottom edge up to the horizon. Background edge density is 0.129, above the real maximum of 0.089, and subject density is 0.319, also above the real range. The windmill tower's cross-bracing and bolts add many thin crisp lines, so nothing stands out as the focus. B (dock): the rope coils and planks are detailed, but the water and sand are smooth with only a few soft ripple lines. Both values are inside the real range.",
+   "fix": "Paint the wheat field as broad, soft golden bands with only a few large stalks in focus near the windmill. Show fewer braces and no bolts on the tower, so the windmill's outer shape is the only crisp edge."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (chess table): the tree canopies in the background are drawn with dense, crisp leaf clusters, and the curving path and lawn edges are also sharp. Background density is 0.065, against 0.031 for A, which matches the busy-background habit of the generated lesson cards (the wood-grain desks). Thin hairline cracks are scattered over the stone. A (soccer ball): the panel seams are firm grooves and the silhouette is clean. The grass behind is soft apart from the field line, so the ball is the sharpest thing on the card.",
+   "fix": "Blur the background trees into soft rounded green masses with no individual leaves. Remove the hairline cracks from the stone table and stools, and keep the crisp edges on the board and table top only."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A (seahorse): the edges are soft and painterly, with fine ridges between the body segments and no dark contour (-0.034). The water background is almost free of edges. B (beach ball): the panel seams are dark, crisp lines and there are speckled sand dots, but it matches the real beach ball in the reference sheet in both the seam weight and the soft sand ripples. Both cards keep their sharpest edges on the hero and a quiet background, so edges give no reason to pick either one.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards spread crisp edges evenly over the whole card: wood grain, wheat, leaf clusters, pebbles, bolts and cracks. That makes the background, or a pile of small parts, as sharp as the hero, which breaks the real cards' habit of keeping the sharpest edges on the hero over a soft, simple background. A second sign is an even, ink-like dark contour around the silhouette and around repeated parts such as wheel rims and hoops."
+}

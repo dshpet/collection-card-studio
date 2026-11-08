@@ -10,7 +10,8 @@ nothing holding it. With a floor, ledge or setting, every group must reach it; a
 Two parts touch when their surfaces cross or come within 1% of the hero's height.
 
 A model file sets SCENE and defines build(k), where k holds the helpers below. Parts are the hero unless made
-with setting=True. The hero is framed to the real cards' median box, about 80% by 75% of the card, times fill.
+with setting=True. The hero is framed to the real cards' median box, about 80% by 75% of the card, times fill,
+centered on its focus parts when the model names any.
 SCENE: backdrop as hex, azimuth (0 is front-on, positive puts the camera to the right), elevation, lens in mm
 and light "left" or "right".
 """
@@ -204,11 +205,21 @@ def unframed(*parts):
     return parts
 
 
-def hero_points():
+def focus(*parts):
+    """Hero parts the card centers on, its main body, when other parts reach out to one side, such as a camera's
+    flash. Everything framed still fits on the card. From the producer, 2026-11-08: "should be more centered at the
+    point of visual attention"."""
+    for part in parts:
+        part["focus"] = True
+    return parts
+
+
+def hero_points(focused=False):
     graph = bpy.context.evaluated_depsgraph_get()
     points = []
     for obj in bpy.context.scene.objects:
-        if obj.type in {"MESH", "CURVE"} and obj.parent == ROOT and not obj.get("unframed"):
+        if (obj.type in {"MESH", "CURVE"} and obj.parent == ROOT and not obj.get("unframed")
+                and (obj.get("focus") or not focused)):
             evaluated = obj.evaluated_get(graph)
             mesh = evaluated.to_mesh()
             points += [evaluated.matrix_world @ v.co for v in mesh.vertices]
@@ -295,30 +306,37 @@ def loose_parts():
     return loose
 
 
-def frame(camera, scene, azimuth, elevation, points):
+def frame(camera, scene, azimuth, elevation, points, focused=()):
+    """Fit the points to the box; centered on the focused points when there are any, else on all of them."""
     center = sum(points, Vector()) / len(points)
     a, e = math.radians(azimuth), math.radians(elevation)
     direction = Vector((math.sin(a) * math.cos(e), -math.cos(a) * math.cos(e), math.sin(e)))
     camera.rotation_euler = (-direction).to_track_quat("-Z", "Y").to_euler()
 
     def fit(distance):
+        """The framed width and height around the card's center point, and that center point."""
         camera.location = center + direction * distance
         bpy.context.view_layer.update()
         projected = [world_to_camera_view(scene, camera, p) for p in points]
         xs, ys = [p.x for p in projected], [p.y for p in projected]
-        return xs, ys
+        if not focused:
+            return max(xs) - min(xs), max(ys) - min(ys), (max(xs) + min(xs)) / 2, (max(ys) + min(ys)) / 2
+        body = [world_to_camera_view(scene, camera, p) for p in focused]
+        cx = (max(p.x for p in body) + min(p.x for p in body)) / 2
+        cy = (max(p.y for p in body) + min(p.y for p in body)) / 2
+        return 2 * max(abs(x - cx) for x in xs), 2 * max(abs(y - cy) for y in ys), cx, cy
 
     low, high = 0.01, 1000.0
     for _ in range(60):
         middle = (low * high) ** 0.5
-        xs, ys = fit(middle)
-        size = max((max(xs) - min(xs)) / (BOX[0] * FILL), (max(ys) - min(ys)) / (BOX[1] * FILL))
+        width, height, _, _ = fit(middle)
+        size = max(width / (BOX[0] * FILL), height / (BOX[1] * FILL))
         low, high = (middle, high) if size > 1 else (low, middle)
     longest = max(SIZE)
     for _ in range(3):
-        xs, ys = fit(high)
-        camera.data.shift_x += ((max(xs) + min(xs)) / 2 - 0.5) * SIZE[0] / longest
-        camera.data.shift_y += ((max(ys) + min(ys)) / 2 - 0.5) * SIZE[1] / longest
+        _, _, cx, cy = fit(high)
+        camera.data.shift_x += (cx - 0.5) * SIZE[0] / longest
+        camera.data.shift_y += (cy - 0.5) * SIZE[1] / longest
     return center, high
 
 
@@ -361,7 +379,8 @@ def render(model, out):
     exec(compile(open(model, encoding="utf-8").read(), model, "exec"), namespace)
     spec = namespace["SCENE"]
     helpers = types.SimpleNamespace(mat=mat, box=box, cyl=cyl, cone=cone, sphere=sphere, torus=torus, tube=tube,
-                                    lathe=lathe, blob=blob, warp=warp, floor=floor, turn=turn, unframed=unframed)
+                                    lathe=lathe, blob=blob, warp=warp, floor=floor, turn=turn, unframed=unframed,
+                                    focus=focus)
     namespace["build"](helpers)
     bpy.context.view_layer.update()
     print("LOOSE: " + json.dumps(loose_parts()), flush=True)
@@ -374,7 +393,8 @@ def render(model, out):
     camera.data.sensor_fit = "AUTO"
     scene.collection.objects.link(camera)
     scene.camera = camera
-    center, distance = frame(camera, scene, spec.get("azimuth", 30), spec.get("elevation", 12), hero_points())
+    center, distance = frame(camera, scene, spec.get("azimuth", 30), spec.get("elevation", 12), hero_points(),
+                             hero_points(focused=True))
     camera.data.clip_end = distance * 50
     stage(scene, spec, center, distance)
 

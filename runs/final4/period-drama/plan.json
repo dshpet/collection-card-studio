@@ -1,0 +1,158 @@
+{
+ "title": "Period Drama",
+ "story": "Tea, letters and top hats from a grand old-fashioned house.",
+ "declined": [],
+ "variants": [
+  {
+   "cards": [
+    {
+     "name": "Tea Cup",
+     "subject": "A rich blue porcelain tea cup with a gold rim and a curved handle on a matching round saucer, steam rising.",
+     "object_class": "food_drink",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "rich cobalt blue, gold rim, white steam",
+     "backdrop_colors": "rich pink",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Hat Box",
+     "subject": "A round hat box with a shallow lid overlapping its top edge, a wide satin ribbon tied over the lid in a big bow, and a straw bonnet with a pink silk flower resting on top of the lid.",
+     "object_class": "container",
+     "category": "2",
+     "pattern": "plain_gradient",
+     "hero_colors": "soft rose pink box and lid, cream satin ribbon, straw yellow bonnet with a pink flower",
+     "backdrop_colors": "fresh green",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Top Hat",
+     "subject": "A tall black silk top hat with a flat crown, a curled brim and a wide ribbon band.",
+     "object_class": "clothing",
+     "category": "1",
+     "pattern": "concentric_rings",
+     "hero_colors": "black, red band",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "",
+     "build_model": false
+    },
+    {
+     "name": "Parasol",
+     "subject": "An open round parasol with a domed violet canopy, a white ruffled lace edge, visible ribs and a wooden shaft with a curved handle.",
+     "object_class": "accessory",
+     "category": "1",
+     "pattern": "diamonds",
+     "hero_colors": "rich violet canopy, white lace, wood brown handle",
+     "backdrop_colors": "sunny yellow",
+     "surface_or_setting": "",
+     "build_model": true
+    },
+    {
+     "name": "Pocket Watch",
+     "subject": "A round gold pocket watch with a white face showing numerals, a small crown on top, a ring loop and a short gold chain attached to the loop.",
+     "object_class": "accessory",
+     "category": "1",
+     "pattern": "diamonds",
+     "hero_colors": "rich gold, white face, navy numerals",
+     "backdrop_colors": "fresh green",
+     "surface_or_setting": "",
+     "build_model": true,
+     "note": "The watch hangs from its chain, which runs straight up out of the top of the card, and the watch sits at the center of the card."
+    },
+    {
+     "name": "Folding Fan",
+     "subject": "An open hand fan with a half-circle of thin ribs joined at a pivot at the bottom and fabric stretched between them.",
+     "object_class": "accessory",
+     "category": "1",
+     "pattern": "waves",
+     "hero_colors": "pale pink silk with a scalloped ivory lace edge, ivory ribs, gold pivot",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "",
+     "build_model": true,
+     "note": "A European lady's fan of the 1800s, pale pink with a lace edge."
+    },
+    {
+     "name": "Cake Stand",
+     "subject": "A two-tier white porcelain cake stand with a round plate on each tier joined by a center post and a round foot, holding small iced cakes on both tiers.",
+     "object_class": "food_drink",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "white porcelain, pink icing, mint green icing",
+     "backdrop_colors": "rich purple",
+     "surface_or_setting": "white linen tablecloth",
+     "build_model": true
+    },
+    {
+     "name": "Steamer Trunk",
+     "subject": "A flat-topped rectangular steamer trunk with two leather straps buckled around it, brass corner guards, a brass latch at the front and a leather handle on each end, standing on a stone station platform.",
+     "object_class": "container",
+     "category": "3",
+     "pattern": "rays",
+     "hero_colors": "rich red-brown wood, tan leather straps, brass fittings, forest green handles",
+     "backdrop_colors": "sky blue",
+     "surface_or_setting": "stone station platform",
+     "build_model": true
+    },
+    {
+     "name": "Quill Pen",
+     "subject": "A long cream feather quill standing in a round deep emerald green glass inkwell with a short neck, on a desk.",
+     "object_class": "paper_document",
+     "category": "3",
+     "pattern": "stripes",
+     "hero_colors": "cream feather, deep emerald green glass inkwell",
+     "backdrop_colors": "sunny yellow",
+     "surface_or_setting": "polished wooden desk",
+     "build_model": false
+    },
+    {
+     "name": "Piano",
+     "subject": "An upright red-brown wooden piano with a closed-front body, a row of white and black keys under a raised key lid, and a pair of brass pedals, standing on short feet against a wall.",
+     "object_class": "music_instrument",
+     "category": "4",
+     "pattern": "full_scene",
+     "hero_colors": "rich red-brown wood, ivory and black keys, brass gold pedals",
+     "backdrop_colors": "cyan",
+     "surface_or_setting": "a polished wooden floor against a cream wallpapered wall",
+     "build_model": true
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "Composed on 2026-11-08 from the outside rater's best variant (v3) after a review of all three pre-final variants and the producer's earlier grades (experiments/plan_review.py, runs/night/plan_review.json).",
+  "Tea Cup: outside 3, as its twins in v1 and v2. Source: runs/prefinal/period-drama v3_01.",
+  "Hat Box: outside 4, reworded because its ribbon and bow drew a gift box. Source: runs/prefinal/period-drama v3_02.",
+  "Top Hat: outside 5, the best grade of the three variants; v2's grey hat was broken. Source: runs/prefinal/period-drama v3_03.",
+  "Parasol: outside 3, as in v2. Source: runs/prefinal/period-drama v3_04.",
+  "Pocket Watch replaces the Violin (outside 3), which names music, not the period. Source: runs/prefinal/period-drama v1_04.",
+  "Folding Fan: ungraded; no graded alternative is better. Source: runs/prefinal/period-drama v3_06.",
+  "Cake Stand: afternoon tea without a second cup. Source: runs/prefinal/period-drama v3_07.",
+  "Steamer Trunk: reworded with a flat top and straps, because its rounded lid drew a treasure chest. Source: runs/prefinal/period-drama v3_08.",
+  "Piano: the set's one place card. Source: runs/prefinal/period-drama v3_10.",
+  "Colors rewritten under the rich-color rule adopted overnight (on the twins, closer to their real cards by CSD on 29 of 40): Tea Cup: pale blue, gold rim → rich cobalt blue, gold rim, white steam, color words in the subject to match; Hat Box: burgundy red with a cream cord handle → rich crimson red, cream cord handle, navy blue lid; Parasol: lavender canopy, white lace, wood brown handle → rich violet canopy, white lace, wood brown handle, color words in the subject to match; Pocket Watch: gold, white face → rich gold, white face, navy numerals; Folding Fan: red silk, gold ribs → rich red silk, gold ribs, plum pivot; Cake Stand: white, pink icing → white porcelain, pink icing, mint green icing; Steamer Trunk: wood brown with tan leather straps and brass fittings → rich red-brown wood, tan leather straps, brass fittings, forest green handles; Pearl Necklace: white pearls, gold clasp → white pearls, gold clasp, pale silver sheen, warm orange → rich pink; Piano: dark wood brown, ivory keys, brass gold → rich red-brown wood, ivory and black keys, brass gold pedals, color words in the subject to match.",
+  "Kept by hand: the Top Hat stays black with a red band (outside 5; black is the object), and the piano keeps black keys.",
+  "After the final draw, 2026-11-08 (runs/final3/period-drama): all nine Pearl Necklace drawings failed the style check (style 0.40-0.55, the set's lowest), a navy cushion filling the card, so it is swapped for the Quill Pen, the outside rater's 4, its inkwell's dark green made deep emerald green under the rich-color rule. Source: runs/prefinal/period-drama v1_06.",
+  "Hat Box reworded with wide crimson and cream stripes: without its bow it drew as a plain red drum, and 8 of 9 drawings measured too little color, detail and edges on the subject.",
+  "Fix round, 2026-11-08, after the producer's grades on experiments/final_review.py (Period Drama 4 of 5, mean 3.8).",
+  "Top Hat: the producer picked candidate 4 instead of 3.",
+  "Hat Box (5, but the set comment: \"looks too american and probably would not be recognized easily\"): crimson and cream stripes under a navy lid read as a flag. Now soft rose pink with a cream satin bow, and a straw bonnet on the lid says what the box holds.",
+  "Pocket Watch (2: \"slightly off-center of the card, should be more centered as the point of visual attention\"): the chain arced out to the right and the framing centered the watch and chain together. The watch now hangs from a chain that leaves the top of the card, and the blockout frames the case alone (k.unframed).",
+  "Folding Fan (3, no comment): the red silk fan reads Asian, like the hat box read American; now a pale pink European fan with a lace edge, on the same Blender model.",
+  "Cake Stand and Piano (3, no comment) are unchanged: no comment says what to fix."
+ ],
+ "cast": 0,
+ "problems": [],
+ "sensitive": [],
+ "request": {
+  "theme": "Period Drama",
+  "wishes": "A set for a Movie collection",
+  "variants": 1,
+  "cast": 0,
+  "plan": "runs/plans/final-period-drama-3.json",
+  "references": true,
+  "alongside": [],
+  "keep": "final3/period-drama-2"
+ }
+}

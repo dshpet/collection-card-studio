@@ -1,0 +1,75 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (magnifier): the whole card sits in two close mid-light greys. The lens takes on the ring background's value, so the hero is told apart mainly by hue, with the red handle as the only dark accent. Contrast is below the real range (rms 0.073). B (hoop): a white backboard mass, a dark pole and rim accents, and value grouping clear enough to fall inside the real range.",
+   "fix": "Make the magnifier frame and handle clearly darker than the green rings. Put a deeper shadow under the handle and a bright rim highlight on the metal ring, so the tool reads against the background in greyscale too."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (camper): the hero is almost all near-white, with a bright halo arc behind it on the purple rings. The card's overall key (0.717) is above the real range, and the only darks are the small windows and wheels. A (snorkel): mid values spread across the dock and water, with dark accents on the tube and mask, which matches how the real scene cards are built.",
+   "fix": "Tone the camper's body down to a warm cream mid-light, with shaded side planes. Remove the bright glow ring behind it and keep the purple rings even in brightness."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (zip bag): a pale, washed-out card. The transparent bag has the same value as the light green fabric, and the only dark accents are thin edge lines. Contrast is far below the real range (0.078 vs 0.120 or more). A (racket): a mid-green field, a white court line, a black grip and a cast shadow, so it has clear light, middle and dark groups.",
+   "fix": "Make the background a deeper, saturated colour. Give the bag a darker cast shadow and darker crease shading, and draw the gold ring and label with strong light and dark sides so the object stands out from the backdrop."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (ship wheel): a darker mid-brown wheel against a very light lavender ray background and a pale floor. The hero sits much darker than its surroundings (gap -0.282, outside the real range), with bright edges around it (vignette 0.089, above range). B (pool goal): a white goal against mid-to-dark water, inside the real range.",
+   "fix": "Give the wheel warm light-wood highlights on its top rim and spokes so it sits closer in value to the background. Make the lavender rays slightly deeper and keep the brightness even out to the corners."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (binoculars): the sky and city are nearly clipped to white, while the blue viewer and pole form a darker mass. The hero sits well below the background (gap -0.246, outside the real range). A (coat): a mid-light tan coat on a light yellow wall, with a gentle shadow, inside the range.",
+   "fix": "Bring the sky and buildings down to a soft mid blue and stop the white glare. Light the viewer's top and front faces so it is not a dark cut-out against a blown-out backdrop."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (music player): a near-white hero and earbuds against dark purple rings. The hero is far lighter than the background (gap 0.223, above the real maximum of 0.128). A (red camera): a dark blue diamond background, a mid red body and a black lens. It is low key, but the hero-to-background gap is moderate.",
+   "fix": "Shade the yellow player down to a warm mid-orange with darker side faces, and lift the purple rings to a lighter, even violet so the gap between hero and background narrows."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (fedora): an overall dark card (0.536, below the real range). The purple wave background collapses into one flat dark grey, with a mid-light hat floating on it. A (fan): a light yellow wave background, with purple panels alternating mid and dark, matching real light-key cards.",
+   "fix": "Lift the purple background to a brighter, lighter violet with visible lighter and darker wave bands. Keep the hat's brim highlight warm, not glowing."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (safe): a huge near-black navy body fills most of the card, so the darkest accent becomes the main mass. Key (0.51), contrast (0.191) and gap (-0.295) are all outside the real ranges. B (vending machine): a mid-blue body with a bright glass front, inside the ranges.",
+   "fix": "Paint the safe a lighter mid-blue with clear lit top and front faces. Keep near-black only for small areas such as the door seam, feet and the shadow under it."
+  },
+  {
+   "pair": "p09",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "B (map): a large near-white map on wood that darkens toward the corners (vignette 0.061), which echoes the darker table in the generated computer lesson. A (badge wallet): a black wallet mass on evenly lit light wood. Both fall inside the real ranges, so there is only weak evidence either way.",
+   "fix": "Keep the wooden table evenly lit out to the corners, and tone the map paper to a warm cream rather than bright white."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (handcuffs): the silver cuffs sit at nearly the same mid-light value as the red-pink background, with only a soft diagonal light gradient behind them. Contrast is below the real range (0.086 vs 0.114 or more), and the dark accents are thin outlines. B (sneakers): a clear wall/floor split, dark blue shoe bodies and white soles, inside the range.",
+   "fix": "Give the metal cuffs dark reflections on their inner curves and a firm shadow underneath. Use a saturated, evenly toned background with a simple pattern instead of a smooth light-to-dark gradient."
+  }
+ ],
+ "pattern": "Generated cards break the real cards' mid-key balance between hero and background. They push the hero far lighter (near-white bodies, as in the camper, player and lesson computers) or far darker (black safe, dark wheel, dark binoculars) than its surroundings. Some also collapse into one flat, low-contrast value group (zip bag, handcuffs, magnifier). Glow halos behind the hero and corners that darken toward the edges show up more than in the real cards. Real cards keep the hero near the background's value, separated mostly by hue, with small dark accents and evenly lit patterned backgrounds."
+}

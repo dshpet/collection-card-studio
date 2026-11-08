@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (sneakers) is lit too brightly overall (key 0.762, above the real ceiling of 0.750). In the lens it splits into two flat slabs: a light-grey wall over a near-white floor. The shoes are then cut out with hard black shadow pockets inside the uppers and a hard cast shadow on the left. There is no middle value tying the hero to the ground. A (candelabra) has a dark teal top half that steps down to a mid-grey floor. The white candles and flames are the brightest accents, and the brass reads mid-grey with gentle roll-off. Its key sits inside the real range. A's flat dark top band is unusual, which keeps my confidence moderate.",
+   "fix": "Tone the whole card down to a medium brightness. Make the back wall and floor one soft gradient with a gentle light glow behind the shoes instead of a bright white floor. Soften the black shadows inside the shoes to a mid tone, and keep only a small dark contact shadow under the soles."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (bumper car) carries a large black mass: the rubber bumper ring plus its mirror reflection on the floor below fill the lower third with the darkest level. The seat and steering wheel are black too. Its contrast is 0.199, above the real ceiling of 0.195. This is the same move as the generated lesson cards, whose dark wood tables and black glove interiors darkened the ground under the hero. B (flip-flops) is the opposite extreme: high key (0.795) and low contrast (0.095), both outside the real range. The soles are mid grey on mid-grey stripes, the straps are light, and there is no dark accent at all. Both cards are off. I lean A because its error runs the same way as the lessons, but this is close to a guess.",
+   "fix": "Lighten the floor under the bumper car to a soft mid tone with no mirror reflection. Make the black rubber bumper a dark grey with a lit top edge, and keep the deepest darks to a thin contact shadow under the car."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (bottle) is a busy scene. Dark seaweed and rock silhouettes sit at mid-height on both side edges, dark hollows lie in the sand, and a bright sand floor fills the lower half. The pale glass bottle separates from the background mostly by outline rather than by a clean value step, and the dark masses at the edges pull attention away from the hero. B (keyboard) has a classic real-card layout: mid-blue ground, a lighter glow behind the hero, and darkened corners. B's vignette (0.109) is just above the real ceiling, but the glove reference card shows the same corner darkening. B's hard black-and-white keys belong to the object itself. I lean A, with low confidence.",
+   "fix": "Simplify the background behind the bottle into one soft mid-tone field with a gentle light glow behind the bottle. Remove the dark seaweed and rock silhouettes from the edges, and keep the darkest tone to a small shadow where the bottle meets the sand."
+  }
+ ],
+ "pattern": "Generated cards set the darkest values in the ground and surroundings: black wood-grain tables, black floor reflections, dark scenery at the edges. They also cut the hero out with hard black pockets. Real cards keep the ground mid-toned and rely on a soft light glow behind the hero, saving the deepest darks for small areas inside the object. A second tell is a key pushed past the real range in either direction: very bright and flat, or heavy and dark."
+}

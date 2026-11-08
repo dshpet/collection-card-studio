@@ -1,0 +1,88 @@
+{
+ "issues": [
+  {
+   "issue": "The hero sinks into the backdrop. It takes the backdrop's hue or value: the magnifier lens is filled with the ring green, the tan coat sits on a yellow-tan wall, the grey cuffs are close to the pink in value, and the clear bag washes out on olive felt. The safe fails the other way, a near-black mass. Real cards set the hero against the backdrop's temperature and keep it close in value, with only small dark accents.",
+   "specialists": [
+    "value_contrast",
+    "color_palette"
+   ],
+   "instruction": "Give the hero a local color whose temperature is opposite to the backdrop's: cool on warm, warm on cool. Keep its lit faces mid-light, and keep near-black for small accents only."
+  },
+  {
+   "issue": "Finish is wrong in one of two ways. Some cards are photographic: crumpled translucent film, a stitched leather backdrop, mirror chrome on every part. Others are smeared: clay-like coat cloth, blotchy felt, speckled paint on the safe. Real cards use clean, soft surfaces and mix one glossy part with matte parts.",
+   "specialists": [
+    "surface_finish",
+    "edges_linework"
+   ],
+   "instruction": "Clean, smooth surfaces with a soft satin sheen. Only the metal or glass part carries a crisp highlight; cloth, leather and paint stay softly matte and even."
+  },
+  {
+   "issue": "The form modeling is weak. Highlights look like stickers, there is little falloff into a darker right side, and the cast shadow is missing or faint (magnifier, bag, coat). Real cards have one upper-left key and a moderately darker right side or underside, plus a soft contact shadow.",
+   "specialists": [
+    "lighting_shading"
+   ],
+   "instruction": "Light from the upper left. Each form turns gently darker toward the lower right and puts a soft shadow on the surface beneath it."
+  },
+  {
+   "issue": "The hero is small and floats in the middle of the card with a wide even margin (handcuffs, magnifier). Real cards fill the frame or crop at an edge. Edit notes can't fix this, so it is flagged for generation only.",
+   "specialists": [
+    "composition_hierarchy"
+   ],
+   "instruction": "Have the hero fill most of the card at a diagonal or a three-quarter turn."
+  },
+  {
+   "issue": "Overruled: the staging-props, drawn wood-grain and outline complaints. The real snorkel card has a rope-wrapped post in its corner, and the real ship's wheel is centred and frontal, with drawn grain lines and a saturated orange floor. Shape and viewpoint calls are overruled too. They mostly picked real cards (snorkel, ship's wheel, viewer, music player, sneakers), and proportions can't be compared across different objects.",
+   "specialists": [
+    "staging_detail",
+    "shape_proportions",
+    "viewpoint_depth",
+    "edges_linework"
+   ],
+   "instruction": "Leave out this issue: no instruction for the generator."
+  }
+ ],
+ "style_text": "",
+ "cards": [
+  {
+   "pair": "p01",
+   "keep": false,
+   "note": "Magnifier: Tint the lens glass a pale, clear cool blue-grey in place of the background green, with one soft curved reflection along its upper left. Make the right side of the metal ring and the underside of the red handle slightly darker, and add a soft faint shadow of the magnifier on the rings. Keep the magnifier, the green ring backdrop and the view."
+  },
+  {
+   "pair": "p03",
+   "keep": false,
+   "note": "Evidence Bag (tennis pair): Replace the olive stitched felt with bright, warm honey-orange wood with a few broad, soft grain bands. Paint the plastic as a smooth, slightly glossy clear pouch with two or three broad soft highlights in place of the crumpled wrinkles. Give the bag a soft, slightly darker shadow on the wood toward the lower right. Keep the bag, the blue zip, the gold ring, the label and the view."
+  },
+  {
+   "pair": "p05",
+   "keep": false,
+   "note": "Trench Coat: Paint the wall a soft cool teal-grey in place of the mustard yellow. Make the coat's right sleeve, the right side of the body and the folds under the belt slightly darker warm brown. Give the cloth a smooth, soft matte gabardine look. Keep the coat, the hook, the window, the plant, the drawer and the view."
+  },
+  {
+   "pair": "p06",
+   "keep": true,
+   "note": "The flash camera reads as a real card: a muted red body on a cool blue tone-on-tone pattern, with one chrome accent. Keep."
+  },
+  {
+   "pair": "p07",
+   "keep": false,
+   "note": "Fedora (fan pair): Paint the felt as one even, smooth, soft matte orange with no blotches, slightly deeper orange on the right of the crown and under the brim. Make the purple waves slightly lighter and brighter. Keep the hat, the green band, the wave backdrop and the view."
+  },
+  {
+   "pair": "p08",
+   "keep": false,
+   "note": "Steel Safe: Paint the safe a slightly lighter mid royal blue in crisp, smooth satin paint, with soft bright highlights along the top edges and a gently darker right side. Add a soft light glow on the pink wall behind the safe. Keep the gold dial, the handle, the hinges, the feet, the magenta backdrop and the view."
+  },
+  {
+   "pair": "p09",
+   "keep": false,
+   "note": "Police Badge: Give the black leather a soft cool blue-grey sheen on the left halves of both flaps. Give the gold badge one broad, soft shine in place of the hard white hot spots. Add a soft, slightly darker shadow on the wood along the wallet's right and bottom edges. Keep the wallet, the badge, the ID card, the wood and the view."
+  },
+  {
+   "pair": "p10",
+   "keep": false,
+   "note": "Handcuffs: Give the steel a soft satin finish with one broad highlight per ring and deeper cool blue-grey shading on the inner curves. Make the shadow under the cuffs slightly darker and firmer. Make the red backdrop a slightly deeper, even coral red out to the corners. Keep the cuffs, the chain, the locks and the view."
+  }
+ ],
+ "summary": "Close. Without the key, several specialists marked both controls as fake: the real snorkel card for its rope prop and shapes, and the real ship's wheel for its grain lines, frontal view and orange floor. The camera and the fan-pair fedora pass, or nearly pass. The cards that still give themselves away are the evidence bag (washed-out olive stitched felt, photographic crumpled plastic), the safe (a dark navy mass), the trench coat (tan on a yellow wall) and the handcuffs (small, and close to the pink in value). All of these are colour, value, finish and light problems that notes can fix. One problem notes can't fix is the small, floating hero in the handcuffs and the magnifier."
+}

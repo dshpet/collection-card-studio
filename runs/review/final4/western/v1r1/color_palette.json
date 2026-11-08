@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the coaster cars are loud, pure yellow with red seats. The track is a fully saturated blue, the same hue family as the sky, so the hero's structure repeats the backdrop hue and nothing neutral rests the eye. Subject chroma is 0.173, above the real range. A: the wagon is warm brown and red against blue sky and green grass. The canvas is a muted cream, and the dirt and wood give a neutral rest. Its pure red wheels are the one loud accent. Its numbers are all inside the real range.",
+   "fix": "Paint the coaster track a muted steel grey-blue that is clearly different from the sky. Tone the car yellow down toward a warm golden ochre with deep red-brown shadows. Keep the sky a soft, slightly greyed blue."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the binocular viewer is a saturated periwinkle blue, set against a pale cyan city and sky. The hero repeats the backdrop hue, there is no temperature contrast, and the palette collapses into one blue family (3.3 families). The metal is pushed to pure blue instead of grey metal, the same way the generated camera in the lessons went. A: an orange fire and brown logs sit on grey rocks, with green pines behind and a single blue teapot as the accent. The rocks give a neutral rest. Its shadows are muddy, but the hue roles read like the real cards.",
+   "fix": "Paint the viewer in neutral silver-grey metal with only a faint cool tint. Put it in front of a warm sunset-peach sky or warm stone balcony so it stands out by temperature, and keep the blue only in the lenses."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the dock wood is pushed to pure orange and the water to pure cyan-teal, the same push toward cyan and orange as the generated lighthouse and glove lessons. The shadows under the dock drop into a dark navy that has lost the wood's hue (shadow chroma kept 0.54, below the real range). There are 6.3 hue families, at the busy end. A: a red-brown windmill tower stands in golden wheat, with a white wheel and blue sky. It has fewer families (4.7), and its shadows stay rich and related to the local colors.",
+   "fix": "Paint the dock in weathered, slightly greyed brown wood. Make the water a deeper natural sea blue rather than neon cyan. Let the shadows under the planks stay a dark warm brown instead of navy."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both cards have a neutral hero on a saturated green grass field. A's soccer ball is plain black and white, and the green field is very loud (background chroma 0.171). B's stone table is a lavender-grey with navy and cream checkers, and its trees and path vary the green a little. On this vector they share the same palette structure: very few hue families and a neutral hero on green. Nothing points clearly to one card.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: this is the beach ball on sand from the real set, redrawn with a warmer, louder palette. The sand is saturated orange instead of pale peach, and the shadow under the ball is a red-orange. The white panels are tinted cream, and the whole card leans warm (warm share 0.755, above the real range), with 5.4 hue families (also above the real range). A: an orange seahorse with yellow fins sits on a deep blue water backdrop. It has a classic warm hero on a cool background, few families, and shadows that stay in the orange family.",
+   "fix": "Paint the sand a pale, soft peach-beige with gentle tan shadows. Keep the ball's white panels clean neutral white, and make the shadow under the ball a muted warm brown rather than red-orange."
+  }
+ ],
+ "pattern": "Generated cards push local colors to pure hues. Wood and leather go neon orange, water goes cyan, metal goes saturated blue. Whites and neutrals get warmed to cream, and the hero often repeats the backdrop hue instead of contrasting its temperature. Real cards keep greyed local colors, cool neutral whites, and a clear warm-versus-cool split between hero and background."
+}

@@ -1,0 +1,75 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the backboard frame has a heavy dark double contour on all four sides, and the hoop's net is drawn as crisp dark strokes. Outline darkness is 0.201, above the real range. A: the magnifier rim and handle have soft rolled edges and the lens edge is clean. A sits near the top of the real range but has no drawn-looking line.",
+   "fix": "Remove the dark line around the red backboard frame. Let its edge come only from the red meeting the blue sky, with a soft highlight on the rolled rim."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the snorkel and mask have soft edges on busy planks and water. B: the camper has a crisp dark silhouette, and the grass is scattered with many small, sharp tuft marks. Both cards fall inside the real ranges, and neither gives a clear edge tell.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the edge map shows grainy noise over the whole fabric background, plus stitched seam lines in the corners. Real backgrounds are clean. The bag is built from many thin wrinkle edges with no clear hierarchy. A: the racket strings make a very dense edge grid (subject density 0.281, out of range), but that is real object geometry. The ball and court line edges are clean.",
+   "fix": "Make the background a smooth, clean colour field with no fabric grain or stitching. Use a few broad, soft folds on the bag instead of many thin wrinkles."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "A: the spokes and rim have a dark line drawn along their edges, and the wheel and floor carry wood-grain hairlines. That reads as a flat illustration, while the real wheel card has smooth wood with soft edges. B: the goal frame is crisp and the pool caustics are busy, but it has no drawn contour.",
+   "fix": "Drop the dark line around the spokes and remove the grain scratches. Shape the wheel with smooth light-to-dark shading on rounded wood."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 1,
+   "difference": "A: the coat is packed with sharp seams, a double-stitched lapel, and buttons with ringed rims. The wall behind it shows embossed relief edges, and the window and plant add clutter. B: the binocular viewer has a bright rim against a bright sky (outline -0.126, a light halo). The city behind is many thin lines but stays in range. This is weak evidence either way.",
+   "fix": "Simplify the coat to a few chunky panel seams and plain buttons. Keep the wall flat and quiet, with no embossed outline around the coat."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 1,
+   "difference": "B: the player body, buttons, cable and earbuds all have the same crisp dark silhouette, with sharp edges everywhere and no softening. A: the camera's lower body fades into soft, lost edges against the background, and the flash and lens are sharpest, which matches how the real cards order their edges.",
+   "fix": "Let the lower and far edges of the device and the cable soften into the background. Keep the sharpest edge only on the front button."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the hat is almost edgeless inside (subject density 0.042, below range). The crown is a smooth blob, with one dark line under the band and a dark lip under the brim. A: the fan's pleats give regular thin fold lines and its ribs are clean, which fits the real density.",
+   "fix": "Add a clear crisp pinch crease in the crown, a defined brim edge, and a band with a visible top and bottom step. Avoid the dark shadow line under the brim."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the safe has very few internal edges (0.068, below range). The large door and side faces are flat, with only the bevel and dial as edges. B: the vending machine has crisp panel, window and bottle edges within the real range, though its outer outline is somewhat dark.",
+   "fix": "Give the safe a crisp door gap, a bevelled frame, bolt heads, and a clear dial with tick marks, so the front face has a few sharp, precise seams."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the black wallet gives a hard, dark silhouette all round (outline 0.276, far above range), with stitched dashed lines and a sharp border around the badge. B: the map has drawn continent outlines, but those are the printed design, and the paper edge is softer. Both backgrounds are busy wood planks above range.",
+   "fix": "Light the wallet so its edges catch a soft rim highlight instead of a black cut-out silhouette. Soften the plank lines in the floor behind it."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: each chrome cuff is a stack of many thin concentric edge rings, and the chain links are sharp (subject density 0.40, far above range). The background is almost edgeless (0.005), so all detail is jammed inside the hero. B: the sneakers' mesh and laces are busy but sit at the top of the real range, and the background has a single horizon line.",
+   "fix": "Make the cuffs chunky, rounded metal rings with one broad highlight band instead of many thin reflective rings. Use fewer, larger chain links."
+  }
+ ],
+ "pattern": "Generated cards show one of two edge extremes. Either the edges are uniform: a crisp dark silhouette all the way round, or a pile of thin parallel rim lines on shiny parts (chrome rings, stitching, grain). Or the hero is too smooth and nearly edgeless (the hat, the safe). Real cards keep a few chunky, precise seams, are sharpest at the focus, and let edges get lost at the far and lower sides. Their backgrounds are clean, without grain or texture noise."
+}

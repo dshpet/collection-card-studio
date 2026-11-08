@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A puts a white sheep with mixed accents (blue hat, teal and purple beads, red and purple bags) against a cool blue sky and a brown stall. Hue spread is wide and the warm and cool masses are balanced (warm 0.44). B is almost all one warm family. The red barn wall, the orange straw floor, the orange cow muzzle and the cap all sit together, and even the sheep's white wool and the steel milk can take an amber cast in the flat-color lens. Warm share is 0.92 and hue families are 3.5, both outside the real range. This is the same warm drift as the generated computer lessons.",
+   "fix": "Keep the sheep's wool a neutral cool white and the milk can a blue-grey steel. Make the barn wall a muted dusty red with cool blue-grey shadow. Add a cool element such as a blue-grey sky through the door or cool shade on the straw, so the scene is not one amber wash."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A's fruit plate keeps distinct local colors: red melon, orange citrus, green grapes, blue berries and a cool glass plate. It sits on warm wood with cool, greyish shadows under the plate. B's wheel is one orange-brown hue from highlight to shadow, and its shadows only go darker brown with no cool shift. The pink-violet sky fades to a pale yellow-cream glow behind the hub, and the deck floor is the same orange as the wheel, so the floor repeats the hero's hue. Both backgrounds measure low on chroma, so this is a weak call.",
+   "fix": "Paint the wheel's shadow sides a cooler, darker violet-brown rather than a deeper orange. Make the deck floor a greyer, cooler wood than the wheel. Keep the sky a clean lavender with no yellow glow behind the wheel."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A's caravan body is a yellowed cream rather than a neutral off-white, just like the cream computers on the generated lesson cards. The orange stripe and lights add more warmth. The violet backdrop is a flat, very loud field (background chroma 0.199, above the real range) and is louder than the hero. Only three hue masses carry the card: cream, violet and yellow-green. B's blue drums with gold hoops against a muted maroon stage show a clear cool-hero / warm-backdrop split, and the chrome stands stay neutral grey.",
+   "fix": "Paint the caravan a neutral light grey-white with cool blue-grey shade on the side panels. Tone the purple backdrop down to a softer, dusty violet that is quieter than the caravan. Keep the orange stripe as the one accent."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A spreads many local colors across the card: a purple shirt, a turquoise scooter, a blue sky, and pink, yellow and blue house fronts. The warm share is balanced at 0.57. In B, nearly every mass sits in tan, orange and brown: the detective's tan coat and hat, the orange rooster, the orange-brown table and the brown chair. Only the blue wall sits outside that range, and the white cake stand picks up a warm cream cast. Warm share is 0.73 and hue families are 4.2, both outside the real range.",
+   "fix": "Give the detective's coat a cooler, greyer khaki and make the table a darker neutral walnut, not orange. Keep the cake stand pure white with cool grey shadow. Bring in one or two cooler local colors on the props, such as a grey-green filing cabinet and a blue-grey hat band."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A follows the real rule: a warm pink pig and white sheep against a cool blue waterfall, with blue-grey shade in the sheep's wool. B's ballroom floor is a glowing amber-orange, and the cow's cream body, the pink bonnet and the floor reflections all pull warm. The green curtains are the only cool mass, and the sheep's wool turns lavender-cream. Warm share is 0.67, outside the real range. The warm floor repeats the cow's cream and orange instead of opposing it.",
+   "fix": "Make the ballroom floor a cooler, polished grey-beige wood with blue-grey reflections. Keep the cow's body a neutral white with cool grey shade. Let the green curtains and a cool window light balance the warm characters."
+  }
+ ],
+ "pattern": "Generated cards are pulled warm across the whole card. Whites and greys turn cream or yellowed, steel and wool pick up an amber cast, and shadows only get darker in the same orange or brown instead of shifting cool or violet. The backdrop often repeats the hero's warm hue (orange floor under an orange-brown hero, red barn behind an orange cow) instead of opposing it. The result is fewer hue families, or one flat, overly loud backdrop field. Real cards keep neutral whites, cool shadow shifts and a clear warm-versus-cool split between hero and backdrop."
+}

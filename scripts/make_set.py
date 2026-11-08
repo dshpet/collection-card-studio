@@ -203,7 +203,13 @@ def cast_brief(card):
     who = " and ".join(f"the {name}" for name in card["cast"])
     same = "The character" if len(card["cast"]) == 1 else "Each character"
     return "\n".join([CAST_STYLE.format(who=who, same=same), f"Subject: {card['subject']}",
-                      f"Staging: {CATEGORY_RULES['5']}", f"Setting: {card['surface_or_setting']}, under {card['backdrop_colors']}."])
+                      f"Staging: {CATEGORY_RULES['5']}", f"Setting: {card['surface_or_setting']}, under {card['backdrop_colors']}."]
+                     + noted(card))
+
+
+def noted(card):
+    """A card's note, the producer's fix for this card in a later round, closes its brief."""
+    return [f"Note: {card['note']}"] if card.get("note") else []
 
 
 def card_brief(card):
@@ -217,7 +223,7 @@ def card_brief(card):
         lines += [f"Staging: {CATEGORY_RULES[card['category']]}", f"Backdrop: {backdrop} in {card['backdrop_colors']}."]
     if card["surface_or_setting"]:
         lines.append(f"Surface or setting: {card['surface_or_setting']}.")
-    return "\n".join(lines)
+    return "\n".join(lines + noted(card))
 
 
 def blockout_brief(card):
@@ -228,7 +234,7 @@ def blockout_brief(card):
         lines.append(f"Backdrop: {backdrop} in {card['backdrop_colors']}.")
     if card["surface_or_setting"]:
         lines.append(f"Surface or setting: {card['surface_or_setting']}.")
-    return "\n".join(lines)
+    return "\n".join(lines + noted(card))
 
 
 def render_model(source, out, look="plain", fill=1.0):
@@ -346,6 +352,46 @@ def make_briefs(plan, cards):
             brief["references"] = [c["id"] for c in pick_references(card, cards, chance, taken=firsts[variant])]
         firsts[variant].add(brief["references"][0])
         briefs.append(brief)
+    return briefs
+
+
+def keep_cards(run, source, briefs):
+    """A fix round: each card whose plan is unchanged from the run in source keeps that run's brief, drawings, checks and
+    pick, marked kept, and is neither drawn nor picked nor reviewed again; a card with the same name and subject also
+    keeps its Blender model, unless the folder already holds one. Returns the briefs, kept ones swapped in."""
+    old_briefs = {b["id"]: b for b in load_json(source / "briefs.json")}
+    old_history = load_json(source / "check.json")
+    history, kept = {}, []
+    for index, brief in enumerate(briefs):
+        old = old_briefs.get(brief["id"])
+        if not old:
+            continue
+        same_object = all(old["card"].get(key) == brief["card"].get(key) for key in ("name", "subject"))
+        if same_object and brief["card"].get("build_model") and not (run / "models" / f"{brief['id']}.png").exists():
+            for path in (source / "models").glob(f"{brief['id']}.*"):
+                (run / "models").mkdir(parents=True, exist_ok=True)
+                shutil.copy2(path, run / "models" / path.name)
+        if old["card"] != brief["card"] or not old_history.get(brief["id"]):
+            continue
+        briefs[index] = old
+        kept.append(brief["id"])
+        history[brief["id"]] = [{**entry, "kept": True} for entry in old_history[brief["id"]]]
+        for entry in history[brief["id"]]:
+            name = entry["try_id"]
+            for sub in ("tries", "full"):
+                if (source / sub / f"{name}.png").exists():
+                    (run / sub).mkdir(parents=True, exist_ok=True)
+                    shutil.copy2(source / sub / f"{name}.png", run / sub / f"{name}.png")
+            if (source / "prompts" / f"{name}.txt").exists():
+                (run / "prompts").mkdir(parents=True, exist_ok=True)
+                shutil.copy2(source / "prompts" / f"{name}.txt", run / "prompts" / f"{name}.txt")
+            for derived in (source / "derived").glob(f"*/{name}.*"):
+                target = run / "derived" / derived.parent.name / derived.name
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(derived, target)
+    save_json(run / "check.json", history)
+    print(f"kept from {run_name(source)}: {', '.join(kept) or 'none'}; drawn again: "
+          f"{', '.join(b['id'] for b in briefs if b['id'] not in kept)}", flush=True)
     return briefs
 
 
@@ -497,7 +543,8 @@ def write_spec(run, plan):
             staging = f"{card['category']} {CATEGORY_NAMES[card['category']]}" + (", model" if card.get("build_model") else "")
             backdrop = (f"{card['pattern'].replace('_', ' ')} in {card['backdrop_colors']}"
                         + (f"; {card['surface_or_setting']}" if card["surface_or_setting"] else ""))
-            lines.append(f"| {index} | {card['name']} | {staging} | {card['subject']} | {card['hero_colors']} | {backdrop} |")
+            shows = card["subject"] + (f" Note: {card['note']}" if card.get("note") else "")
+            lines.append(f"| {index} | {card['name']} | {staging} | {shows} | {card['hero_colors']} | {backdrop} |")
     if plan.get("notes"):
         lines += ["", "## Notes", ""] + [f"- {note}" for note in plan["notes"]]
     (run / "spec.md").write_text("\n".join(lines) + "\n", "utf-8")
@@ -566,6 +613,8 @@ def preflight(args):
         missing.append("character cards need the cast cutouts: run scripts/cast.py find, then label")
     missing += [f"--alongside {folder}: runs/{folder}/plan.json not found" for folder in args.alongside
                 if not (ROOT / "runs" / folder / "plan.json").exists()]
+    if args.keep and not (ROOT / "runs" / args.keep / "check.json").exists():
+        missing.append(f"--keep {args.keep}: runs/{args.keep}/check.json not found")
     if missing:
         raise SystemExit("Cannot start:\n- " + "\n- ".join(missing))
 
@@ -575,6 +624,8 @@ def run_folder(args):
     different request never mixes with it: runs/western, then runs/western-2 and so on."""
     request = {"theme": args.theme, "wishes": args.wishes, "variants": args.variants, "cast": args.cast,
                "plan": args.plan, "references": not args.no_references, "alongside": sorted(args.alongside)}
+    if args.keep:
+        request["keep"] = args.keep
     runs = ROOT / "runs"
 
     def ours(folder):
@@ -608,6 +659,8 @@ def main():
     parser.add_argument("--no-blockouts", action="store_true", help="draw from the brief without a Blender model first")
     parser.add_argument("--run", help="folder name under runs/; by default the theme's")
     parser.add_argument("--cast", type=int, default=0, help="character cards per variant, drawn with the game's cast")
+    parser.add_argument("--keep", metavar="FOLDER", help="an earlier run of this set under runs/: cards whose plan is "
+                        "unchanged keep its drawings and picks, and only the others are drawn, picked and reviewed")
     parser.add_argument("--alongside", nargs="+", default=[], metavar="FOLDER",
                         help="run folders of other sets in the same collection, whose objects this set must not repeat")
     args = parser.parse_args()
@@ -637,7 +690,8 @@ def main():
 
     briefs_path = run / "briefs.json"
     if not briefs_path.exists():
-        save_json(briefs_path, make_briefs(plan, cards))
+        briefs = make_briefs(plan, cards)
+        save_json(briefs_path, keep_cards(run, ROOT / "runs" / args.keep, briefs) if args.keep else briefs)
     briefs = load_json(briefs_path)
     history = defaultdict(list, load_json(run / "check.json") if (run / "check.json").exists() else {})
 
@@ -661,8 +715,11 @@ def main():
         save_json(run / "check.json", history)
         return tries
 
+    def kept(brief):
+        return any(t.get("kept") for t in history.get(brief["id"], []))
+
     for attempt in range(1, args.candidates + 1):
-        tries = draw_and_check([(b, [], None) for b in briefs], attempt)
+        tries = draw_and_check([(b, [], None) for b in briefs if not kept(b)], attempt)
         print(f"candidates {attempt}: drew {len(tries)}, passed {sum(t.get('passed', False) for t in tries)}", flush=True)
 
     # Each round's notes, drafts, edit number and outcome, so a rerun neither reviews a round twice nor mistakes one
@@ -672,8 +729,12 @@ def main():
     for variant in range(1, len(plan["variants"]) + 1):
         chosen = [b for b in briefs if b["variant"] == variant]
         waiting = [b["id"] for b in chosen if not history.get(b["id"])]
+        # cards kept from an earlier run keep their picks and are not reviewed again
+        chosen = [b for b in chosen if not kept(b)]
         if waiting:  # picks and reviews are made for the whole variant at once
             print(f"variant {variant} waits for a drawing of {', '.join(waiting)}: rerun to continue", flush=True)
+            continue
+        if not chosen:
             continue
         if not any(t.get("chosen") for b in chosen for t in history[b["id"]]):
             choose(run, chosen, history, args.rater)

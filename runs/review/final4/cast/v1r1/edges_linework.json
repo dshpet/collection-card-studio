@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the sheep's fleece puffs, the cow's head, the hooves and the milk can each have a dark line drawn all the way around them, so the figures read like stickers. The straw floor and barn boards behind them are full of crisp strokes. Background edge density is 0.118, above the real range (0.034–0.082). A: the fleece edge fades into the light background in places, with lost edges along the shoulders and hat brim. The stall and beads behind are drawn more lightly than the sheep (0.066, inside the real range). This matches the generated side of the lessons: a dark contour with no breaks and a busy background.",
+   "fix": "Don't draw a dark line around the characters. Let the edges of the fleece and the cow's body soften and fade where they meet a light area. Blur and simplify the straw and barn boards so they have far fewer sharp strands than the characters."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the ship's wheel rim, all eight handles and the stand have a doubled dark line around them with the same weight everywhere. The deck planks are hard, evenly spaced lines that look ruled. This is the same uniform line as the generated camera and computer in the lessons. A: the edge of the glass plate fades out on the right and bottom. The fruit edges vary from crisp (watermelon rind) to soft (grapes). Both cards fall inside the real density ranges, so I'm going on the line quality alone.",
+   "fix": "Don't draw a dark line around the wheel. Shape the handles with light and shadow instead of drawn edges, and let the edges facing away from the light go soft. Draw the deck planks as faint, soft seams instead of crisp dark lines."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the drum kit has the most edges inside the hero of any test card (0.226, well above the real top of 0.179), and its outline darkness of 0.098 sits at the top of the real range. Every lug, rim and stand leg has a dark line around it, and the cymbals and stands have doubled contours. A: the caravan has strong contours as well (0.169, slightly above the real range), but the grass and purple rings behind it fade out. Both cards lean toward too many edges; B goes further.",
+   "fix": "Use fewer, simpler hardware pieces on the drums. Let the rims and stand legs shade into one another with no dark line around each piece. Keep only the bass drum's front edge sharp, and let the far cymbal and the stands go soft."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the street behind the man (cobblestones, window frames, flower boxes, door arches) is as crisp and dense as the man and the scooter. Background edge density is 0.139, far above the real top of 0.082. Nothing tells the eye where the focus is. B: the window, the filing cabinet and the plant behind are drawn lightly (0.058), and the sharpest edges sit on the magnifying glass, the face and the cake stand. The real cards in the lessons are sharpest at the focus like this.",
+   "fix": "Blur and simplify the street. Draw the cobblestones and building windows as soft color shapes with almost no crisp edges, and keep sharp edges only on the man, the rooster and the scooter."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the cow's body, legs and hooves and the sheep's legs have a dark line around them all the way. The floor reflections, window panes and columns add many crisp lines behind them (background 0.058). A: the sheep's fleece and the pig's body fade into the background with lost edges, and the waterfalls are soft. A has fewer edges inside the hero than any real card (0.065, below the real low of 0.068), but the lessons never showed under-detail as a sign of generation. A dark contour all the way around is the sign they showed.",
+   "fix": "Don't draw a dark line around the cow and the sheep. Let the edges of the legs and body soften where they turn away from the light. Make the floor reflections and window panes soft and blurred behind the dancers."
+  }
+ ],
+ "pattern": "Generated cards draw a dark line of the same weight around every form, including small parts, so the hero reads like a sticker. Real cards give up the outline where the form turns away from the light or meets a light background. Generated cards also pack in too much hard detail: rivets, lugs, vents, wood grain, cobblestones. They often make the background as sharp as the hero, so there is no hierarchy where the edges are sharpest at the focus and fade elsewhere."
+}

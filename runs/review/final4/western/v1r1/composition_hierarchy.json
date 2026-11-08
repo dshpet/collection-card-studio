@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the covered wagon sits whole and fairly small in a wide meadow scene. Its body ends well below the top, with sky and clouds above and a big band of dirt road and grass below, so the hero takes up just over half the card's height (box_height 0.556, near the bottom of the real range). Landscape fills the rest. B: the coaster cars run off the top-left in a tilted diagonal and the blue track is cut by the left, right and bottom edges (margin 0). At thumbnail size B reads big and bold, which matches the real lighthouse and desk cards that crop the hero. A's fully contained object set in scenery matches the generated lesson cards.",
+   "fix": "Bring the camera close so the covered wagon fills most of the card. Let the wheels and shaft run off the bottom and left edges. Show less sky and less road, and drop the wide meadow."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the campfire sits in the middle with a full ring of stones, but a blue teapot on the right rock, a lit log-cabin window top-left and a pine-tree backdrop all compete with it. At thumbnail size the eye bounces between the fire, the teapot and the cabin. This is the same extra-prop staging seen in the generated lighthouses (life ring, bollards, bushes). B: the tower viewer is one large hero, cropped by the bottom edge (margin 0) and set right of center. The city and railing are pale and drop back, so it reads instantly, like the real cropped lighthouse.",
+   "fix": "Show only the campfire: logs and flames in a stone ring, large and filling the lower two-thirds of the card. Remove the teapot and the cabin. Keep the background a soft blur of trees."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the windmill is a thin tower standing in the upper-middle. The wheat field fills the whole bottom half and sky fills the rest, so the hero covers only about 14% of the card and 39% of its width, both below every real card. At thumbnail size the field reads first and the windmill is a small figure. B: the dock posts, rope coil and life ring fill the card and are cropped at the right and bottom, so the hero dominates like the real cards.",
+   "fix": "Move in close and look up at the windmill so the fan wheel and tower fill most of the card's height. Let the tower legs run off the bottom edge. Show the wheat only as a thin strip at the bottom."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the soccer ball floats whole in the middle with even clearance on every side (margin_min 0.144, more than any real card). Its fully contained, centered staging is the safe framing of the generated lesson cards. B: the stone chess table is lower and wide, with a stool and with trees and a path behind it that pull a little attention. But it stays within the real ranges and sits like the real basket and diploma cards on a surface. The signal is weak either way.",
+   "fix": "Make the soccer ball bigger and closer so it nearly touches the left and bottom edges, set slightly off-center. Show less of the field line."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the beach ball is huge and centered and fills almost half the card (subject_area 0.493, above every real card), with only a thin band of sand around it. The real beach ball in the anchor sits lower-left, smaller, and leans toward the edge, with more sand showing. A: the seahorse is a tall S-curve, a bit left of center with blue water around it and a light shaft upper-left. Its vertical fill is within the real range and it reads at once.",
+   "fix": "Draw the beach ball smaller, filling about a third of the card. Set it slightly low and to the left, with more sand and its shadow showing on the right and top."
+  }
+ ],
+ "pattern": "In the composition lens, generated cards show up as safe, fully contained framing. The whole object sits inside the card with even margins and is never cut by an edge. Either the hero is shrunk into a wide set (meadow, wheat field) or extra props compete with it (teapot, cabin, island rocks, life rings). The other variant pushes a single object to oversized, dead-center fill. Real cards crop boldly (the lighthouse base, the desk edge), tilt or offset the hero, and keep only one focal object."
+}

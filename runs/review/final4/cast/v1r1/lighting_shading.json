@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (market sheep): light comes from the upper left. The hat brim casts a soft shadow across the face. The right side of the fleece and the right-hand bags drop into a cooler, darker side, and the lens reads neutral grey. B (barn sheep and cow): both characters are lit flat from the front. Each fleece puff is shaded the same way from left to right, and the cow's belly and the milk can show no shadow side. The lens has an even warm pink-brown cast, like the generated computer lessons. B also has the lower light bias (0.144 vs 0.161).",
+   "fix": "Light the barn from a window on the upper left. Put the right side of the sheep's fleece, the cow's body and the milk can into a cooler, darker shadow. Add a clear cast shadow from each character to the right on the straw."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (fruit plate): the light comes from the upper right. The melon rind and the berries have shadow sides toward the lower left, the plate casts a soft shadow onto the boards, and the droplets have small sharp highlights. B (ship's wheel): the wheel is lit straight on and is symmetrical. Every spoke is shaded the same, the rim has no side that turns away into shadow, and the only floor effect is a centered spotlight pool. Its shading range is 0.573, below the real cards' lowest value of 0.658, and its form contrast is 0.415, at the bottom of the real range.",
+   "fix": "Light the wheel from the upper left. Let the right half of the rim and the right-hand spokes go noticeably darker, give each spoke handle a lit side and a shadow side, and cast a soft shadow of the stand to the lower right on the deck instead of a centered spotlight pool."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (caravan): the light comes from the left. The right end and the window side fall into a clear cool blue shadow, the wheel arch and the bottom of the body are darker, and the grass under the hitch is shaded. This is the same strong side-lit setup as the real camera and computer. B (drum kit): a spotlight from straight above lights the kit evenly from the front. Every drum shell has the same centered sheen, and nothing on the kit has a shadow side. The light bias is low at 0.243, close to the bottom of the real range, while the shading range is 0.902, at the very top of it. The contrast comes from the stage spotlight, not from the forms turning.",
+   "fix": "Light the drum kit from one side, the upper left, and put the right sides of the drum shells and cymbals in a darker shadow. Remove the centered overhead spotlight cone and let the bass drum cast a soft shadow to the right across the stage."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (scooter): sunlight comes from the upper left. The man's right arm and the side of his body facing away are in shadow, the buildings on the right are in shade, and the street has cast shadows. The light bias is 0.245. B (detective): the man, the rooster and the cake stand are all lit evenly from the front. The coat is shaded alike on both sides, and the cake stand has no cast shadow to any side. The light bias is 0.137, close to the real minimum of 0.127, and the form contrast is 0.604, just above the real maximum of 0.598. The lens has the warm overall cast seen on generated lesson cards.",
+   "fix": "Light the scene with window light from the upper left. Put the right side of the detective's coat and face and the rooster's far side in a cooler shadow, and have the cake stand cast a clear soft shadow to the right across the table."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (waterfall selfie): soft light from the upper left. The pig's cheek and arm turn gently into shadow on the right, and the lens is cool and neutral. B (ballroom dance): the dancers are lit from the front and backlit by the window, with warm reflections on the floor. The cow's body and the sheep's fleece have no clear shadow side, and the lens has a warm brown cast. B's light bias is 0.064, half the real minimum of 0.127. A's 0.127 is exactly the minimum.",
+   "fix": "Have one main light from the window on the upper left fall across the dancers. Darken the right side of the cow's body and the sheep's fleece clearly, and cast their shadows to the lower right across the floor instead of lighting them evenly from the front."
+  }
+ ],
+ "pattern": "Generated cards are lit straight from the front, often with a centered spotlight. Neither side of the subject turns into a clear, cool shadow, the forms are shaded the same on both sides, and the cast shadows are weak or centered. The estimated-shading lens shows these cards with a warm overall cast and low light bias. The real cards light from one side, so a clear darker side runs down the hero and the cast shadow falls the other way."
+}

@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the candelabra stands on a seamless teal gradient. The floor and wall are one color with no horizon edge, only a soft cast shadow to the right. This is a clean category 2, though the field is very empty (detail 0.0071, just under the real range). B: the sneakers sit on a pale-yellow floor that meets an orange wall at a hard, straight horizontal edge about halfway up the card. A two-tone wall/floor split with a visible edge breaks the category-2 rule of a plain floor in the backdrop's color. It reads more like a staged product shot than the real cards' seamless fields.",
+   "fix": "Plain warm-orange backdrop that runs into the floor with no visible horizon line; the floor is the same orange as the wall, fading slightly lighter toward the bottom; only a soft shadow under the shoes."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the bumper car sits in its place of use (category 4). Below it are a glossy rink floor with tile seams, a yellow lane stripe, a curved rail and reflections, and the pole is cut by the top edge. Behind the rail, though, the sky is replaced by graphic orange concentric rings. That hybrid of a real floor and an abstract field has no match on the real category-4 cards (forest behind the pot, city behind the binoculars), and the floor adds several small elements. B: the flip-flops float, seen from above, on quiet tone-on-tone teal vertical stripes, like the real clock card. The backdrop is calm and doesn't compete.",
+   "fix": "Bumper car on the arena floor with a real backdrop behind the rail: a dim indoor arena wall or soft-focus lights in large quiet shapes, no graphic rings; keep the floor to one plain glossy surface without lane stripes or tile lines."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the bottle lies on a seabed with the scroll inside, which is valid category 4. Around it is a busy frame, though: seaweed and dark rocks on both the left and right edges, light shafts from the top, and about eight scattered bubbles of different sizes around the cork. That's many small props framing the hero, the same direction as the generated lighthouse's added rocks, rope and lifebuoy. B: the keyboard on its stand floats on blue rays with tone-on-tone music notes and stars. The motif is themed, but it is pale, low-contrast and evenly spread, so it stays behind the hero, in line with the real cards' quiet patterned fields.",
+   "fix": "Bottle half-buried in smooth sand under soft blue water, with only one or two large dim shapes in the distance; no seaweed or rocks along the card edges, at most two small bubbles near the cork."
+  }
+ ],
+ "pattern": "Generated cards add environment the subject doesn't name: rocks, ropes, a lifebuoy, a wider tabletop, seaweed and bubbles framing both sides. They also mix staging categories, such as a real floor under an abstract graphic sky or a hard wall/floor horizon line on a plain field. Real cards keep one clear category with a few large, quiet shapes."
+}

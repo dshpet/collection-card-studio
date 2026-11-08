@@ -2,6 +2,8 @@
 
 The final sets, drawn 2026-11-08, are in `runs/final3/` (`western/`, `period-drama-2/`, `detective-3/`), with six bonus cast cards in `runs/final2/cast/`; [what changed](../runs/final3/README.md). The earlier sets of 2026-11-03 (Western, Sci-Fi, Horror) stay in `runs/final/`. Evidence for the style is in [STYLE_GAPS.md](STYLE_GAPS.md). Set numbers come from `scripts/compare.py --sets runs/final3/sets.json`, on the definitions used for the real sets.
 
+After the producer's grades, a fix round redrew 17 cards (`runs/final4/`, [what changed](../runs/final4/README.md)); the numbers below are for round 1. Round 2 (`compare.py --sets runs/final4/sets.json`): Western 7 object classes, 5 scales, 6 backdrop hues, style similarity 0.554; Period Drama 7, 2, 6, 0.551; Detective 6, 4, 8, 0.471. Detective's replaced cards brought new colors, and its similarity fell from 0.543; it now has one or two backdrop hues more than any real set.
+
 ## Idea
 
 | Principle in the references | Western | Period Drama | Detective |

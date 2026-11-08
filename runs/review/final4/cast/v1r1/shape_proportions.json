@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the sheep's wool body fills the frame and is held in by the wide hat brim. The bag handles stay thin curves at the left edge. B: the sheep and cow stand full length on thin legs and hooves. The milk can has straight sides and a tight shoulder. The two outlines have the same solidity (0.829), and both corner rates are inside the real range. I see no swollen part, missing part or thickened thin part on either card.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the glass plate's outline is almost entirely hidden by fruit. The outline is one lumpy blob topped by the watermelon wedge. The blueberries are about as big as the grapes, and the strawberries about as big as the orange wedges, so the small fruit look toy-sized and enlarged. B: the ship's wheel has a true circular rim and eight evenly spaced spokes with turned handles. The pedestal is a straight-sided trapezoid on a flat plinth with tight corners. The parts read in true relation. B's corner rate is above the real range, but that comes from the many spoke tips, not from rounded blobs.",
+   "fix": "Draw the plate as a wide, flat glass dish whose rim shows all the way around. Keep the fruit at true relative sizes: blueberries much smaller than grapes, strawberries smaller than orange slices. Pile the fruit low inside the rim."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the caravan body is one rounded box with a straight floor line, a straight drawbar and jockey-wheel post, and a single wheel arch. The rounded ends are true to a vintage caravan. Its numbers sit inside the real range. B: the drum kit's outline is crowded with tangled parts. The rack toms float above the bass drum with no clear mount. The left cymbal's boom arm runs into the tom cluster. The bass drum is enlarged and puffed up compared with the toms. The hardware lugs stick out of the outline as chunky nubs. Thin share (0.056) is four times the real maximum, corner rate is above the real range, and solidity is at the very bottom of it. This matches the over-detailed, extra-parts pattern seen in the lessons.",
+   "fix": "Draw a simpler drum kit with fewer pieces: one bass drum, two toms mounted on a short clear post on top of it, one snare, one hi-hat and one cymbal on thin straight stands. Keep the lugs small and flush with the shells, and make the bass drum only a little larger than the toms."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the man's torso and the scooter handlebar fill the lower card. The chicken's wing grips the camera as a small block. The proportions match the game's character style. B: the detective's hat brim is a flat ellipse. The magnifier is a thin ring on a handle, and the cake stand keeps a thin stem and flat foot. Its thin parts stay thin. Both cards have the same broad-shouldered character build. A's corner rate is high but still inside the real range. I see no clear shape flaw that singles out either card.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the sheep's wool cloud and the cropped pig body make a large rounded mass. The pig's raised arm is a short stub, and the lower-left wool edge fades out in the cutout. That is a cutout problem, not a shape flaw. B: the sheep and cow stand full length in a dance pose, with thin legs and hooves and a ribbon bow. The parts read in clear relation. Solidity and corner rate are almost the same on both cards and inside the real range. My lens gives no reliable reason to choose.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards give themselves away by adding parts and swelling the main mass. They put extra webbing holes, rocks, bollards, lugs and floating sub-parts into the outline, and enlarge the main body into a big rounded block. They also lose the clean part-to-part logic of the real cards: drums floating with no mount, and small items enlarged to toy size. Real cards keep fewer parts, true relative sizes, straight runs on boxes and bases, and a single clear outline."
+}

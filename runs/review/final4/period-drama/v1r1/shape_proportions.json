@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the pocket watch keeps a thin, even bezel, a small knurled crown and a thin bow and chain link. The parts relate the way a real watch's do. B: the ring box's lid and base are swollen like pillows. The lid's top corners are soft round blobs, not tight bevels. The base walls bulge outward. Inside, a large coin with a ribbon tab sits where a ring would go, so the part relation is off and the coin is oversized for the box.",
+   "fix": "Draw the ring box with flat, straight side walls and tight bevelled corners on both the lid and the base. Make the lid a thin shell with a crisp rim. Seat a small ring in a narrow slot in the cushion, not a large coin."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the captain's cap has a domed white crown, a thin peak and a thin gold band. The crown is full but true to a real cap. B: the book has straight cover edges, crisp corners, a page block slightly thinner than the cover overhang, and thin ribbon tabs. Neither card shows inflated or missing parts.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the neckerchief fabric is a thick, inflated tube at the collar loop and in both tails. That fits the chunky real cards (the duck and the cooler). B: the fan has many very thin ribs below the leaf, a scalloped lace rim and a straight guard bar across the full 180°. Its thin-part share (0.067) and corner rate (5.99) are both above every real card. The lessons show generated cards adding fine see-through structure (extra glove-web holes, railing posts). The fan is drawn as a realistic flat-lay rather than the simplified chunky forms in the set.",
+   "fix": "Draw the fan simplified, the way the real cards draw objects: fewer, wider sticks with small gaps between them, a smooth lace edge with a few large scallops, and guard sticks a little thicker than the ribs."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the pair of sneakers has chunky soles and toe boxes, but within the real cards' range of simplification, and both shoes keep the same proportions. B: the hatbox lid is barely set apart from the drum, with no clear rim step. The straw bonnet's brim is a curled cone with its crown hidden, so the hat's part count reads as incomplete. The silhouette is a near-solid block (solidity 0.955, at the top of the real range).",
+   "fix": "Draw the hatbox with a clear lid: a separate, slightly wider band at the top with a crisp step down to the box. Show the bonnet's crown and its full round brim resting on the lid."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the paddling pool is three stacked inflatable rings. The near-convex silhouette and low corner rate are out of the real range, but an inflatable pool really is that shape, so it is not a fault. B: the dock has square posts, straight planks, and thick but plausible rope coils and a life ring. Both sets of proportions are believable, and the shapes give no reason to choose one card.",
+   "fix": ""
+  }
+ ],
+ "pattern": "On shape, generated cards still give themselves away in three ways. Containers and boxes swell into pillows: walls bulge and corners turn into soft blobs instead of tight bevels. Small parts relate wrongly or are missing, like an oversized coin in a ring box or a hat with no crown. Fine see-through detail is overbuilt: many thin ribs, lace scallops, extra web holes and railing posts, where the real cards simplify the object into fewer, bolder parts."
+}

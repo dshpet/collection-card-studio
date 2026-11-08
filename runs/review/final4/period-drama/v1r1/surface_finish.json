@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the whole gold watch case, bow and crown has one even lacquered shine, with a broad bright band around the rim (highlight share 0.42, far above real cards). B: the red box reads as matte velvet and the cream cushion is matte; only the coin is glossy, a matte-and-shiny mix like the real cards.",
+   "fix": "Make the gold case satin rather than mirror-bright: one narrow highlight streak along the top edge of the rim, softer warm mid-tones elsewhere. Keep the crown a plain smooth cylinder with a few broad grooves."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the cap's navy band and peak carry a fine cloth-weave texture, and the whole card looks soft and smeary; the floorboards show painted grain. B: smooth book cover, crisp sticker edges, limited shine; only its table has large streaky grain.",
+   "fix": "Draw the cap band and peak as smooth, clean navy surfaces with no fabric weave; give the visor a single crisp gloss strip and keep the white crown matte; sharpen edges."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the pink fan folds show realistic linen weave, the lace edging is finely drawn, and the pivot is a ridged pearl rivet; this is the added real-world texture seen on the generated lesson cards. A: smooth satin scarf with broad, simple sheen and a flat, simple badge, like the real cards.",
+   "fix": "Paint the fan folds as smooth, flat pink panels with no cloth texture; simplify the lace edge into a smooth scalloped cream band with a few round holes; make the pivot a plain smooth round cap."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: woven straw on the hat brim, a strongly glossy satin ribbon and a petal-by-petal rose; this leans toward realistic texture. A: dotted mesh holes on the toe and glossy plastic upper and laces. Both are borderline.",
+   "fix": "Draw the straw hat brim as smooth concentric bands with no weave; make the ribbon a soft satin with one broad highlight instead of an oily sheen."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: blurry, smeared water swirls; the inflatable rings share one soft, even shine; the fence has decorative wood knots; detail and fine-texture readings are below the real range. B: crisp grooves cut into the dock planks and a twisted rope, like the real signpost and anchor cards.",
+   "fix": "Sharpen the pool: give each inflatable ring one crisp white highlight streak along its top, draw the water ripples as a few clean light curves, and draw the fence planks with a few fine, quiet grain lines and no big knots."
+  }
+ ],
+ "pattern": "Generated cards go wrong in two ways. Some imitate real-world surfaces with cloth weave, lace, stitch dashes, wood knots or scratches. Others make every material the same lacquered, soft-edged plastic with blurry areas. Real cards use a few broad, smooth parts with crisp edges, mix matte and shiny within one object, and keep texture quiet and simple."
+}

@@ -8,9 +8,13 @@ the night and one arm (smooth surfaces, adopted, or one camera), shuffled: pick 
 the nine pre-final cards graded broken, drawn by the current pipeline and by each perspective arm, shuffled: does each
 work as built?
 
+Round 2 (runs/final4) is the fix round after those answers: each card shows its round-1 drawing with the producer's
+grade and comment; a card kept unchanged keeps its grade unless graded again. No blind items.
+
     final_review.py build      once the final runs are done
     final_review.py serve      then open http://127.0.0.1:8767
     final_review.py summary    what the answers say
+    --round 1                  the first review; the default is the latest round
 """
 
 import argparse
@@ -30,38 +34,68 @@ from common import ROOT, best_try, load_json, save_json  # noqa: E402
 FINAL = {"western": ("final3/western", 1), "period-drama": ("final3/period-drama-2", 3),
          "detective": ("final3/detective-3", 2)}
 CAST = "final2/cast"
+# The fix round: its runs, and the round-1 run each was kept from
+ROUND2 = {"western": ("final4/western", "final3/western"), "period-drama": ("final4/period-drama-2", "final3/period-drama-2"),
+          "detective": ("final4/detective", "final3/detective-3"), "cast": ("final4/cast", CAST)}
+ROUND = 2
 COMPARE = "Beach"  # the real set shown above ours
 TWIN_ARMS = {"ns2": "smooth surfaces", "nc": "one camera"}
 TWINS_PER_ARM = 12
-ITEMS = ROOT / "runs" / "final3" / "review.json"
+ITEMS = {1: ROOT / "runs" / "final3" / "review.json", 2: ROOT / "runs" / "final4" / "review.json"}
 RATINGS = ROOT / "runs" / "ratings.json"
 OUTSIDE = ROOT / "runs" / "prefinal" / "outside" / "ratings.json"
 SERVED = ("materials/card_examples/", "runs/")
 LOCK = threading.Lock()
 
 
-def final_cards(run, group, source, variant):
-    """Each card of a final run: the chosen drawing, every candidate, references, and the same card in the pre-final
-    run it came from (source, variant), with the outside rater's grade."""
-    folder = ROOT / "runs" / run
-    history = load_json(folder / "check.json")
+def prefinal_past(source, variant):
+    """The same object in the pre-final run, from the chosen variant first, else from the variant it was swapped in
+    from, with the outside rater's grade."""
     outside = load_json(OUTSIDE) if OUTSIDE.exists() else {}
     past_history = load_json(ROOT / "runs" / source / "check.json")
-    # the same object in the pre-final run, from the chosen variant first, else from the variant it was swapped in from
     past_briefs = {b["card"]["name"]: b for b in sorted(load_json(ROOT / "runs" / source / "briefs.json"),
                                                         key=lambda b: b["variant"] == variant)}
+
+    def past(brief, image):
+        old = past_briefs.get(brief["card"]["name"])
+        if not (old and past_history.get(old["id"])):
+            return None
+        graded = outside.get(f"card/{source}/{old['id']}|reviewer 2", {})
+        return {"image": f"runs/{source}/tries/{best_try(past_history[old['id']])['try_id']}.png",
+                "label": "Pre-final drawing, outside rater", "grade": graded.get("grade"),
+                "broken": bool(graded.get("broken")), "comment": graded.get("comment", "")}
+    return past
+
+
+def round1_past(before):
+    """The same card in round 1, as the producer saw it (their pick if any), with their grade and comment."""
+    history = load_json(ROOT / "runs" / before / "check.json")
+    given = {v["id"]: v for v in (load_json(RATINGS) if RATINGS.exists() else {}).values()
+             if v.get("kind") == "final" and v.get("rater") == "me"}
+
+    def past(brief, image):
+        tries = history.get(brief["id"])
+        if not tries:
+            return None
+        answer = given.get(f"final/{before}/{brief['id']}", {})
+        shown = f"runs/{before}/tries/{answer.get('pick') or best_try(tries)['try_id']}.png"
+        return {"image": shown, "label": "Round 1, your grade", "grade": answer.get("grade"),
+                "broken": bool(answer.get("broken")), "comment": answer.get("comment", ""),
+                "kept": (ROOT / shown).read_bytes() == (ROOT / image).read_bytes()}  # the same drawing as in round 1
+    return past
+
+
+def final_cards(run, group, past):
+    """Each card of a final run: the chosen drawing, every candidate, references, and past(brief, image), the same card
+    earlier with its grade."""
+    folder = ROOT / "runs" / run
+    history = load_json(folder / "check.json")
     for brief in load_json(folder / "briefs.json"):
         tries = history.get(brief["id"])
         if not tries:
             continue
         chosen = best_try(tries)["try_id"]
-        prefinal = None
-        old = past_briefs.get(brief["card"]["name"])
-        if old and past_history.get(old["id"]):
-            graded = outside.get(f"card/{source}/{old['id']}|reviewer 2", {})
-            prefinal = {"image": f"runs/{source}/tries/{best_try(past_history[old['id']])['try_id']}.png",
-                        "grade": graded.get("grade"), "broken": bool(graded.get("broken")),
-                        "comment": graded.get("comment", "")}
+        prefinal = past(brief, f"runs/{run}/tries/{chosen}.png")
         yield {"id": f"final/{run}/{brief['id']}", "kind": "final", "group": group, "name": brief["card"]["name"],
                "image": f"runs/{run}/tries/{chosen}.png", "chosen": chosen,
                "candidates": [{"try": t["try_id"], "image": f"runs/{run}/tries/{t['try_id']}.png"}
@@ -71,20 +105,27 @@ def final_cards(run, group, source, variant):
                "prefinal": prefinal}
 
 
-def build():
+def build(round_number):
     rng = random.Random(11)
     real = {c["id"]: c["name"] for c in load_json(ROOT / "analysis" / "cards.json")}
     sets = {s["title"]: s for s in load_json(ROOT / "analysis" / "sets.json")}
     cards, rows = [], []
-    for genre, (run, variant) in FINAL.items():
-        found = list(final_cards(run, genre, f"prefinal/{genre}", variant))
+    if round_number == 1:
+        runs = [(genre, run, prefinal_past(f"prefinal/{genre}", variant)) for genre, (run, variant) in FINAL.items()]
+        runs.append(("cast", CAST, prefinal_past("prefinal/cast", 1)))
+    else:
+        runs = [(genre, run, round1_past(before)) for genre, (run, before) in ROUND2.items()]
+    for genre, run, past in runs:
+        if not (ROOT / "runs" / run / "check.json").exists():
+            continue
+        found = list(final_cards(run, genre, past))
         cards += found
-        rows.append({"id": f"final/set/{run}", "kind": "final", "title": load_json(ROOT / "runs" / run / "plan.json")["title"],
-                     "cards": found})
-    if (ROOT / "runs" / CAST / "check.json").exists():
-        found = list(final_cards(CAST, "cast", "prefinal/cast", 1))
-        cards += found
-        rows.append({"id": f"final/set/{CAST}", "kind": "final", "title": "Cast bonus", "cards": found})
+        title = "Cast bonus" if genre == "cast" else load_json(ROOT / "runs" / run / "plan.json")["title"]
+        rows.append({"id": f"final/set/{run}", "kind": "final", "title": title, "cards": found})
+    if round_number == 2:
+        save_json(ITEMS[2], {"compare": compare_row(real, sets), "sets": rows, "cards": cards, "blind": []})
+        print(f"{len(rows)} sets, {len(cards)} cards, {sum(not c['prefinal'] or not c['prefinal'].get('kept') for c in cards)} changed")
+        return
 
     blind = []
     twins = load_json(ROOT / "runs" / "twins40" / "briefs.json")
@@ -109,10 +150,13 @@ def build():
                       "references": [f"materials/card_examples/{i}.png" for i in brief["references"]],
                       "images": [p for _, p in images], "arms": [a for a, _ in images]})
     rng.shuffle(blind)
-    save_json(ITEMS, {"compare": {"title": COMPARE, "cards": [{"name": real[i], "image": f"materials/card_examples/{i}.png"}
-                                                               for i in sets[COMPARE]["cards"]]},
-                      "sets": rows, "cards": cards, "blind": blind})
+    save_json(ITEMS[1], {"compare": compare_row(real, sets), "sets": rows, "cards": cards, "blind": blind})
     print(f"{len(rows)} sets, {len(cards)} cards, {len(blind)} blind items")
+
+
+def compare_row(real, sets):
+    return {"title": COMPARE, "cards": [{"name": real[i], "image": f"materials/card_examples/{i}.png"}
+                                        for i in sets[COMPARE]["cards"]]}
 
 
 class Page(BaseHTTPRequestHandler):
@@ -123,7 +167,7 @@ class Page(BaseHTTPRequestHandler):
         if path == "data":
             ratings = {k: v for k, v in (load_json(RATINGS) if RATINGS.exists() else {}).items()
                        if v.get("kind") in ("final", "night")}
-            return self.reply(json.dumps({"items": load_json(ITEMS), "ratings": ratings}).encode(), "application/json")
+            return self.reply(json.dumps({"items": load_json(ITEMS[ROUND]), "ratings": ratings}).encode(), "application/json")
         file = (ROOT / path).resolve()
         if path.startswith(SERVED) and file.is_relative_to(ROOT) and file.suffix == ".png" and file.exists():
             return self.reply(file.read_bytes(), "image/png")
@@ -148,8 +192,8 @@ class Page(BaseHTTPRequestHandler):
         pass
 
 
-def summary():
-    items = load_json(ITEMS)
+def summary(round_number):
+    items = load_json(ITEMS[round_number])
     given = {v["id"]: v for v in (load_json(RATINGS) if RATINGS.exists() else {}).values()
              if v.get("kind") in ("final", "night") and v.get("rater") == "me"}
     for row in items["sets"]:
@@ -159,13 +203,17 @@ def summary():
     groups = defaultdict(list)
     for card in items["cards"]:
         answer = given.get(card["id"], {})
+        past = card.get("prefinal") or {}
+        if not answer.get("grade") and past.get("kept") and past.get("grade"):
+            answer = {"grade": past["grade"], "broken": past["broken"], "carried": True}  # unchanged since round 1
         if answer.get("grade"):
             groups[card["group"]].append((card, answer))
     for group, rows in groups.items():
         before = [c["prefinal"]["grade"] for c, _ in rows if c.get("prefinal") and c["prefinal"]["grade"]]
-        print(f"{group}: mean grade {mean(a['grade'] for _, a in rows):.2f} from {len(rows)}, broken "
-              f"{sum(bool(a.get('broken')) for _, a in rows)}" + (f"; outside rater on pre-final: {mean(before):.2f} "
-                                                                    f"from {len(before)}" if before else ""))
+        carried = sum(bool(a.get("carried")) for _, a in rows)
+        print(f"{group}: mean grade {mean(a['grade'] for _, a in rows):.2f} from {len(rows)}"
+              + (f" ({carried} kept from round 1)" if carried else "") + f", broken {sum(bool(a.get('broken')) for _, a in rows)}"
+              + (f"; {rows[0][0]['prefinal'].get('label', 'Pre-final drawing, outside rater').lower()}: {mean(before):.2f} from {len(before)}" if before else ""))
     picks = [(c, given[c["id"]]["pick"]) for c in items["cards"] if given.get(c["id"], {}).get("pick")]
     for card, pick in picks:
         print(f"  pick {card['id']}: {pick} instead of {card['chosen']}")
@@ -177,15 +225,17 @@ def summary():
         if item["type"] == "twin":
             arm = next(a for a in item["arms"] if a != "n0")
             choice = answer.get("closer")
-            closer[arm][item["arms"][int(choice)] if choice not in (None, "same") else "same"] += 1
+            if choice is not None:
+                closer[arm][item["arms"][int(choice)] if choice != "same" else "same"] += 1
         for index, verdict in (answer.get("works") or {}).items():
             works[f"{item['type']}/{item['arms'][int(index)]}"][verdict] += 1
     for arm, counts in closer.items():
         print(f"twins, {TWIN_ARMS[arm]}: closer {dict(counts)}")
     for arm, counts in sorted(works.items()):
         print(f"{arm}: works {counts['yes']}, slightly off {counts['slight']}, broken {counts['no']}")
+    shown = {item["id"] for part in ("sets", "cards", "blind") for item in items[part]}
     for entry in given.values():
-        if entry.get("comment"):
+        if entry.get("comment") and entry["id"] in shown:
             print(f"- {entry['id']}: {entry['comment']}")
 
 
@@ -262,7 +312,7 @@ const views = {
       ${item.references.map(src => `<figure><img src="/${src}"><figcaption>real</figcaption></figure>`).join("")}</div>
       <div class="strip">${item.candidates.map(c => `<img data-try="${c.try}" src="/${c.image}" class="${c.try === (entry.pick || item.chosen) ? "on" : ""}" title="${c.try}">`).join("")}
       ${item.blockout ? `<img src="/${item.blockout}" title="blockout" style="cursor:default;opacity:1;border:1px dashed #888">` : ""}</div>
-      ${past ? `<div class="past"><img src="/${past.image}"><span>Pre-final drawing, outside rater: ${past.grade ? past.grade + "/5" : "not graded"}${past.broken ? ", broken" : ""}${past.comment ? " · " + esc(past.comment) : ""}</span></div>` : ""}
+      ${past ? `<div class="past"><img src="/${past.image}"><span>${esc(past.label)}: ${past.grade ? past.grade + "/5" : "not graded"}${past.broken ? ", broken" : ""}${past.comment ? " · " + esc(past.comment) : ""}${past.kept ? " · <b>unchanged: this grade stands unless you grade again</b>" : ""}</span></div>` : ""}
       <div class="row"><button id="broken" class="${entry.broken ? "on" : ""}">X · Broken</button></div>
       <textarea id="comment" placeholder="Comment, optional">${esc(entry.comment || "")}</textarea>
       <div class="row">${[1, 2, 3, 4, 5].map(g => `<button data-grade="${g}" class="${entry.grade === g ? "on" : ""}">${g} · ${GRADES[g]}</button>`).join("")}</div>
@@ -285,9 +335,12 @@ const views = {
 };
 
 function show() {
-  document.getElementById("tabs").innerHTML = TABS.map(([id, label]) => `<button data-tab="${id}" class="${tab === id ? "on" : ""}">${label}</button>`).join(" ");
+  document.getElementById("tabs").innerHTML = TABS.filter(([id]) => id !== "blind" || items.blind.length).map(([id, label]) => `<button data-tab="${id}" class="${tab === id ? "on" : ""}">${label}</button>`).join(" ");
   document.querySelectorAll("[data-tab]").forEach(b => b.onclick = () => { tab = b.dataset.tab; show(); });
-  document.getElementById("progress").textContent = `Sets ${done(items.sets)}/${items.sets.length} · Cards ${done(items.cards)}/${items.cards.length} · Blind ${done(items.blind)}/${items.blind.length}`;
+  const changed = items.cards.filter(i => !(i.prefinal || {}).kept);
+  document.getElementById("progress").textContent = `Sets ${done(items.sets)}/${items.sets.length} · Cards ${done(items.cards)}/${items.cards.length}`
+    + (changed.length < items.cards.length ? ` (changed ${done(changed)}/${changed.length})` : "")
+    + (items.blind.length ? ` · Blind ${done(items.blind)}/${items.blind.length}` : "");
   document.getElementById("main").innerHTML = views[tab]();
   const on = (id, f) => { const el = document.getElementById(id); if (el) el.onclick = f; };
   const comment = () => (document.getElementById("comment") || {}).value || "";
@@ -337,7 +390,7 @@ document.onkeydown = event => {
 
 fetch("/data").then(r => r.json()).then(data => {
   items = data.items; ratings = data.ratings;
-  position.cards = Math.max(0, items.cards.findIndex(i => !answer(i.id)));
+  position.cards = Math.max(0, items.cards.findIndex(i => !answer(i.id) && !(i.prefinal || {}).kept));
   position.blind = Math.max(0, items.blind.findIndex(i => !answer(i.id)));
   show();
 });
@@ -348,13 +401,16 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("action", choices=("build", "serve", "summary"))
     parser.add_argument("--port", type=int, default=8767)
+    parser.add_argument("--round", type=int, choices=(1, 2), default=2)
     args = parser.parse_args()
+    global ROUND
+    ROUND = args.round
     if args.action == "build":
-        build()
+        build(args.round)
     elif args.action == "summary":
-        summary()
+        summary(args.round)
     else:
-        if not ITEMS.exists():
+        if not ITEMS[ROUND].exists():
             raise SystemExit("run build first, once the final runs are done")
         print(f"open http://127.0.0.1:{args.port}", flush=True)
         try:

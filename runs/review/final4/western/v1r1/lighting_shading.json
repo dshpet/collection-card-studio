@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (wagon): a hard key from the upper left. The canvas top is bright and its right end falls off, the wheel spokes and bed have dark right sides, and a heavy, crisp cast shadow runs down and to the right across the dirt. The light is pushed strongly to one side (bias 0.886, real cards top out at 0.641). B (coaster): the light is more frontal and balanced. The yellow cars get broad, soft sheen on their tops, the shadow sides go only moderately dark, and contact shadow sits under each car. That is closer to the gentle all-around light on real cards like the submarine and the beach ball. B's bias reads low (0.131), but by eye its form turn looks like a real card's.",
+   "fix": "Light the wagon softly from the front, with a slightly brighter top. Keep the right side of the canvas and wheels only a little darker than the lit side, not deep brown. Make the shadow under the wagon a short, soft, light pool beneath the wheels instead of a long, dark, hard shadow stretching across the road."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (campfire): the fire is the only light that matters. The log ends and the inner rock faces glow orange, while the outer rocks, the kettle's far side and the ground drop to near-dark. That is a strongly one-sided, low-key setup (bias 0.662, just outside the real range). B (city viewer): even, frontal light. The blue body turns smoothly with gentle shadow sides and soft sheen on the eyepiece rims, like the soft studio light on real cards. B's form contrast reads slightly high (0.627), but that comes from the dark lenses (albedo), not from the light.",
+   "fix": "Add a soft general daylight fill so the stones, the kettle and the ground stay readable in mid-tones on the side away from the fire. Let the fire add warm glow only to the nearby log ends and inner rock faces, with no deep black shadows."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (windmill): the tower lattice is split hard into lit left faces and dark brown right faces, with little in between. The inner lattice goes very dark, and the wheel has bright, crisp white blades. The light bias (1.007) and form contrast (0.621) are both above the real range. B (dock): the posts, planks and rope have clear but moderate top-left light. The shadow sides stay mid-tone, the life ring has soft sheen, and soft cast and contact shadows sit on the water and planks. That matches the soft turn on real cards.",
+   "fix": "Light the windmill tower softly from the front-left so the right faces of the beams are only a bit darker than the left. Keep the inside of the lattice mid-brown, not black. Add soft, gentle sheen to the wheel blades instead of bright white edges."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A (soccer ball): top-left key, a soft sheen on the upper panels, a darker lower right, and a dark contact and cast shadow on the grass. Its very high form contrast (0.835) is mostly the black pentagons leaking into the lens, not the light. B (stone chess table): the light comes from the right, with clean lit tops, darker front faces and long, soft cast shadows on the grass. Both turn form smoothly with believable grounding. Neither breaks from the real cards on light alone.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 3,
+   "difference": "A (seahorse): gentle, soft top light. The belly ridges turn smoothly, the shadow side is shallow, there is no cast shadow (it is underwater), and soft god-rays fall from the top left. B (beach ball): matches the real beach ball. It is lit from the upper left with soft broad sheen, a gradual turn to a darker lower right, and a soft cast shadow on the sand. Both sit inside the real ranges on all three fields.",
+   "fix": ""
+  }
+ ],
+ "pattern": "The generated cards in this set give themselves away with a single strong key light pushed to one side. The lit faces sit against shadow sides that fall almost to dark brown or black (wagon wheels, windmill lattice, campfire surroundings), with hard, heavy cast shadows. Real cards use soft, mostly frontal studio light: the shadow sides stay mid-tone, the turn from light to shadow is gradual, sheen is broad and soft, and contact shadows are short and gentle."
+}

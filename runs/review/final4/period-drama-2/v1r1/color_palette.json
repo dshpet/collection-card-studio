@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: gold candelabra (warm) on muted teal backdrop, cream candles give a neutral rest; ~2 hue families, natural brass color. B: blue sneaker covered in pure neon accents — lime collar/panel, teal laces, pink and orange heel tabs, lilac-white sole — ~5.5 hue families (above real 2.3-4.8), every accent at full chroma, matching the lessons' generated tendency to push local color to pure hue.",
+   "fix": "Blue running shoe with white laces and a plain off-white sole, one small accent color only, no neon green, pink or orange details."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: green car against orange sunburst plus blue-grey floor and yellow lane stripes (~5 hue families); the bumper and floor shadow side collapse to near-black grey-green, shadow_chroma_kept 0.34 below real range. B: coral flip-flops with yellow straps on cyan stripes — classic warm-hero/cool-field, ~3 families, sole shadows stay rich red-orange.",
+   "fix": "Give the black bumper a deep blue-green shadow color instead of near-black; light grey floor; remove the yellow lane stripes so the card is green car on orange only."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: cyan glass bottle sitting in cyan water — hero repeats backdrop hue — plus saturated orange sand and dark green seaweed competing. B: red keyboard on blue star/note field, real warm-on-cool relation, rainbow buttons are small, grey stand adds neutral; only B's stand shadow is slightly low in chroma.",
+   "fix": "Set the bottle against a warm sandy-beige backdrop instead of matching cyan water; tint the glass pale green so it separates from the background."
+  }
+ ],
+ "pattern": "Generated cards push hero local colors to pure candy hue (orange instead of brown leather, cream instead of grey plastic, neon accents on one object) with little neutral left, and either repeat the backdrop hue in the hero or add extra hue families; real cards keep one warm hero on one cool field, muted natural local colors, and chromatic (not grey-black) shadows."
+}

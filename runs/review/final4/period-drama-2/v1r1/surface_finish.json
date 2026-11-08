@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (candelabra): the gold has one smooth, soft gloss with broad, blurred highlights along the arms and cups. Its edges are soft like the real glove and computer, and the candles are plain matte wax with no fine marks. B (sneakers): the toe box has a crisp all-over perforated mesh dot pattern. The laces are lumpy rubber tubes with tiny sharp highlights, and the shadow under the sole is smeary. The whole shoe has the same lacquered plastic sheen, so there is no matte fabric next to the rubber. B's fine detail is sharper and denser (0.072, at the top of the real range), which matches the generated side in the lessons.",
+   "fix": "Draw the sneaker upper as soft matte fabric with no visible dot mesh, just broad smooth panels. Keep a gentle sheen only on the rubber sole. Draw the laces as simple flat smooth cords, and soften every edge slightly."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (bumper car): glossy green plastic body with broad soft highlights. The rubber bumper is matte dark, and the floor gives soft reflections, so the card mixes gloss and matte the way real cards do. B (flip-flops): matte orange sole with broad, simplified dimples, and a glossy yellow strap with a smooth highlight. That is also a believable mix of gloss and matte. Neither card has the over-crisp stitching, grain or vent lines that gave generated cards away in the lessons. B's micro texture is slightly below the real range, but I can't see a surface flaw to back that number up.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (bottle in the sea): soft, translucent-looking glass with broad highlights, matte paper and a softly twisted rope. The surfaces are quiet and soft-edged like the real cards. B (keyboard): every key edge, button and stand foot is razor-sharp. The red case, black keys and grey stand all share the same lacquered plastic sheen with crisp edge highlights, and the coloured buttons are tiny glossy beads. That is the over-sharpened, uniformly glossy finish of the generated cards in the lessons. B's micro texture (0.037) and gloss share (0.269) are both above the real range.",
+   "fix": "Render the keyboard with soft, slightly rounded edges and gentle broad highlights. Give the red case a satin, half-matte finish and make the stand matte grey metal. Use fewer, larger buttons, and avoid sharp edge highlights on every key."
+  }
+ ],
+ "pattern": "Generated cards give themselves away by over-crisp fine detail: sharp stitches, dot meshes, vent slats, brick lines and key edges. They also use the same lacquered sheen on every material. Real cards keep edges slightly soft, simplify detail into a few broad smooth forms, and set matte areas against the glossy ones."
+}

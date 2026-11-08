@@ -1,0 +1,28 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "loose": [],
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The wheat bed is only 6 units wide, so its edge shows partway up the card and the darker floor beyond it reads as a brown band across the sky line. The field must run off the card to the horizon.",
+   "The ears are fat egg shapes in a sparse grid. They read as eggs or pebbles, not ripe wheat. They should be slimmer and pointed, with thin stalks, standing closer together.",
+   "The tail vane is almost hidden behind the wheel and shows only as a small gold corner. The boom and vane need to be longer and larger, with the camera moved a little further round, so the vane clearly sits behind the wheel."
+  ]
+ },
+ {
+  "round": 2,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "Proportions are wrong: the wheel (about 0.95 across) is nearly as tall as the tower showing above the wheat (about 0.85), so the tower looks stubby. The card asks for a tall tower carrying a much smaller wheel. Fix: shrink the wheel to about 0.7 across and raise the tower so it rises well above the wheat.",
+   "The wheat reads as a forest of pointed cones, like little pine trees, not as wheat ears. Fix: make the ears slim ellipsoids on stalks, and tilt each ear along its stalk's lean. The old code tilted the ears around x while the stalks lean in x, so they didn't line up.",
+   "The tail vane hangs far back on a thin boom and looks detached from the wheel and tower. Fix: once the wheel is smaller, shorten the boom and keep the vane in proportion, with the strut tying it to the gearbox."
+  ]
+ }
+]

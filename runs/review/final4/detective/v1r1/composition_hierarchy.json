@@ -1,0 +1,75 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the magnifier floats in the upper-left of plain green rings. It fills only about a quarter of the card (0.225) and leaves a wide empty band along the bottom and right. B: the backboard fills the card, and the pole runs off the bottom edge (margin 0). That bold bottom crop matches the real lighthouse lesson card.",
+   "fix": "Draw the magnifying glass much larger, tilted on a diagonal from the upper-left corner to the lower-right corner. Let the red handle almost touch the bottom-right edge, so the lens and handle fill most of the card."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the snorkel mask fills the centre-left of a wooden dock, with a cropped barrel and rope in the top-left corner and water along the top. B: the camper sits in the lower two-thirds on grass under purple rings and runs almost to the right edge. Both fall inside the real ranges, and both crop a scene the way the real chess-table card does. My vector gives no reason to pick one.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the evidence bag is centred, nearly square-on and fully inside the frame, with an even margin all round. It looks pasted flat onto the felt, and the blank white label is a dead area. A: the racket runs diagonally from the upper-left toward the lower-right, the court line cuts across the whole card, and the ball sits at the throat. Its occupancy is low (0.186), but the diagonal reads as real-style framing. B matches the lessons' generated habit: a centred, contained, frontal hero.",
+   "fix": "Show the evidence bag at a steeper three-quarter angle, larger, with one corner almost touching the card edge. Make the gold ring the biggest, brightest shape and shrink the blank label."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the ship's wheel is dead-centre and perfectly frontal and symmetrical on a small plinth. It fills only 0.245, and its 0.105 margin is wider than any real card's, so it reads as a small sticker floating in a sunburst. The real wheel in the anchor fills the card with the spokes near the edges. B: the water-polo goal runs off the right edge (width 1.0) at a three-quarter angle, with the ball as a second focal point. That edge crop matches the real lesson cards.",
+   "fix": "Draw the ship's wheel larger, so the outer spoke handles nearly touch the left, right and top edges. Turn it slightly to a three-quarter view and let the wooden stand run toward the bottom edge."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the coat hangs centre-right, and the hook nearly touches the top edge (height 0.948, above the real range). A window, a potted plant and a drawer are crammed into the left strip and pull the eye away from the coat at thumbnail size. B: the binocular viewer is cropped at the bottom and right edges and is the only clear focus against a soft city backdrop.",
+   "fix": "Remove the window, the plant and the drawer. Show only the trench coat on its hook against a plain warm wall. Leave a small gap above the hook and make the coat slightly smaller, centred."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the small red camera floats in the middle of a diamond-pattern field. Its 0.123 margin is wider than any real card's, and it fills only 0.244, so it looks like a sticker with empty blue all round. B: the music player and earbud cable sweep diagonally from the upper-left to the lower-right across the rings, filling the card more actively.",
+   "fix": "Draw the retro camera much larger and turned to a three-quarter angle. Let the flash reflector reach close to the top edge and the lens close to the bottom-left, so the camera fills most of the card."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the fedora is a wide, flat shape floating in the middle of the card. Its box height (0.535) is below the real range, which leaves large empty purple bands above and below. A: the fan opens across the card from a handle at the left edge, fills the upper two-thirds, and has a strong diagonal.",
+   "fix": "Draw the fedora larger and tilted more toward the viewer, so the crown rises near the top edge and the brim dips toward the lower edge. The hat should fill the card from top to bottom, not sit as a thin band in the middle."
+  },
+  {
+   "pair": "p08",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the safe is a big block that crowds the card. Its 0.514 occupancy is well above the real maximum (0.427), with a nearly straight-on front face and little floor around it. B: the vending machine stands upright with clear space on both sides and is within the real ranges.",
+   "fix": "Draw the safe a little smaller and at a more turned three-quarter angle. Leave clear pink space above it and on both sides, so it does not fill the whole card like a wall."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the open badge wallet lies flat in the middle of the wooden boards, fully contained with an even margin. It is small (0.29), and the blank white ID card on the right half pulls as much attention as the gold badge. B: the map runs off the top edge, and the magnifier sits on it as a clear second focus. That edge crop matches the real lesson cards.",
+   "fix": "Draw the badge wallet larger and propped up at an angle toward the viewer, with the gold eagle badge as the biggest, brightest shape. Let one corner of the wallet run close to the card edge."
+  },
+  {
+   "pair": "p10",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the handcuffs are a thin diagonal line across a big empty red gradient. Their 0.122 occupancy is less than half the real minimum (0.264), and the box height is about half the card, so at thumbnail size they read as a small grey squiggle. B: the sneaker pair sits in the lower-centre, within the real occupancy range, on a clear floor/wall split.",
+   "fix": "Draw the handcuffs much larger and thicker, with the two cuffs filling the card from the upper-left to the lower-right corner and nearly touching both corners. Make the chain short and chunky."
+  }
+ ],
+ "pattern": "Generated cards shrink the hero and park it whole in the middle of the card, with an even, oversized margin all round, like a sticker floating on the background (occupancy at or below the real minimum, margins above the real maximum). Real cards fill the card, use bold diagonals or three-quarter turns, and are willing to let the object or its base run off an edge. When the generated cards add a scene, the side props (window, plant, barrel, blank labels) compete with the hero at thumbnail size."
+}

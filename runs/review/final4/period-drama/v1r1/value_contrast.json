@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the gold watch and white dial sit on a mid-green field. A soft lighter patch sits behind the watch, the corners darken only slightly, and the darkest accents are small (the navy numerals and hands). Every A value falls within the real range. B: the red ring box drops to near-black on its outer walls, rim and lid shadow in the lens, so a large dark mass wraps the hero. The sunburst corners also go dark (vignette 0.162, above the real maximum of 0.123). The lessons show the same pattern: the generated gloves had heavier dark shapes than the real one.",
+   "fix": "Light the red box evenly, with its shadow side a medium deep red rather than black. Keep the blue rays nearly as bright at the corners as at the centre."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a dark wooden room fills the upper half. The back wall and corner post read as large dark-grey and black masses, and only the white cap crown and a few floorboards read light. The card is low key (mean 0.50, below the real minimum of 0.55), and the hero is separated by a white-on-dark spotlight effect. B: bright orange wood fills the card in light and middle values, and the teal book sits as a single middle-grey block. Its key is within the real range.",
+   "fix": "Put the cap on a bright, warm, evenly lit wooden floor with no dark wall behind it. Make the whole background light to medium in brightness, and give the cap's navy band the only deep dark."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the red scarf reads as a solid middle-dark shape against a light/mid spiral, with a black accent inside the collar loop and a light medallion. These are clear value groups (rms 0.114). B: the pink fan, lace and ivory ribs all fall into the same light-grey to white band as the pale-blue background, so the hero is separated only by hue. There is no dark accent anywhere except a tiny spot at the pivot. B's rms contrast is 0.056, far below the real minimum of 0.085.",
+   "fix": "Give the fan deeper rose-pink shadowed folds and a darker wooden rib section, and put a medium-dark blue behind it. That way the fan reads as a distinct shape even in black and white."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a hard horizontal split, with an orange back wall reading light-grey and a cream floor reading near-white. The blue sneakers are clearly darker than the background (gap -0.222), with dark mesh and near-white soles. B: a soft round light glow sits directly behind the hat-and-box, and the top corners fall off into darker green. This is the halo-plus-dark-corners arrangement seen on the generated lessons. The pink box and the background share a similar middle grey, so value barely separates them (gap -0.067). Both cards are brighter overall than the real range.",
+   "fix": "Make the green background one even, slightly darker tone, with no bright spot behind the box. Make the pink box a deeper pink than the background so the box and hat stand out by brightness."
+  },
+  {
+   "pair": "p05",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: a dark shadowed fence in the top-left corner, a mid-grey lawn, and the pool rings as banded light and middle values with a white duck. B: the dark wooden posts and the shadowed water under the dock form deep dark accents across the lower half, against a bright beach strip in the top-right corner. Both have key, contrast and vignette inside the real ranges, and both use scene-style lighting that none of the lessons covers. Value gives no reliable reason to choose.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards give themselves away in four ways. (1) They put a soft bright glow right behind the hero and let the corners fall off into darker tones, which is stronger than the real cards' flat sunburst or pattern fields. (2) They add heavier near-black masses on the hero's shadow side or under objects. (3) Some are pushed outside the real key range: too dark for a low-key room, or too pale, where hero and background fall into the same light band and only hue separates them. (4) Their dark accents spread over a wide area instead of the real cards' few small, controlled darks."
+}

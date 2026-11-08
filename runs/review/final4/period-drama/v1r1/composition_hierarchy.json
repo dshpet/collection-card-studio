@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the pocket watch is tilted and pushed up so the chain runs off the top edge (margin 0). It sits a little left of center, and that kind of crop by an edge is something the real cards do (anchor drink straw, cooler, pot frame). B: the ring box with its medal sits dead center and upright-ish, with even clearance on every side (margin 0.11, at the top of the real range). The whole box is shown, nothing touches an edge, and blue rays fill a lot of the corners. That is the 'whole object, floating with padding' framing the generated glove and lighthouse used in the lessons.",
+   "fix": "Draw the open ring box larger and closer to the viewer, tilted, with the lid running off the top edge of the card and the box nearly touching the bottom-left corner."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the captain's cap sits low and left of center on plank flooring, with a wall corner behind it. It is a wide, short silhouette (height 0.49, below the real range) and has a lot of empty wall above it. B: the guidebook runs diagonally across the card, close to every edge, and fills more of the card than any real card does (0.527). Each card is out of range on one measure, in opposite directions. Both read instantly at thumbnail size, and neither has a competing focal point. My vector gives no clear reason to pick one.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the neckerchief is frontal and fills the card from top to bottom (height 0.83). The knot badge sits near the center and the tails reach almost to the bottom edge, which matches how the real cards fill the frame. B: the fan is a flat, wide strip floating in the vertical middle (height 0.49, below the real range). It leaves large empty bands of wavy blue above and below. At thumbnail size it reads as a small, thin object with the stand-alone padding the generated lesson cards show.",
+   "fix": "Draw the fan bigger and tilted up at an angle, opened toward the viewer, so its lace edge almost touches the top of the card and the handle reaches the bottom corner. Leave no empty band above or below it."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the pair of sneakers sits on the lower half of a two-tone backdrop (orange wall, cream floor). The top 40% of the card is an empty orange band (height 0.49, below the real range), and two equal shoes split the focus. B: the hatbox with the straw hat on top is a single stacked silhouette, centered and tall (height 0.73). It has generous margins (0.125, a little over the real maximum) but reads as one object. A's split backdrop with an empty top band and its doubled hero are the weaker, more staged framing.",
+   "fix": "Draw one sneaker large, angled three-quarter toward the viewer, filling most of the card from left to right, with its toe near the bottom-right corner and its heel collar reaching into the upper third. Remove the empty orange band at the top."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the inflatable pool is one clear hero. It fills the card's width (0.94), the duck sits at its center, and the fence and grass stay behind it. It is named instantly as a 'kiddie pool'. B: a dock corner with two posts. The rope-wrapped post at upper left and the lifebuoy on the right-hand post pull the eye in two directions. The dock runs off the right edge and the shore cuts across the top, so at thumbnail size it is unclear whether the subject is the lifebuoy, the rope or the pier.",
+   "fix": "Make the red-and-white lifebuoy the single hero: draw it large and centered, hanging on one wooden post. Make the second post and the dock planks small and soft in the background."
+  }
+ ],
+ "pattern": "Across the lessons, generated cards show the whole object with even padding around it, often adding a base or ground prop (an island, a full desk) and leaving empty background bands. Real cards push the hero larger and closer to the edges, often tilted and sometimes cropped by an edge. In the test pairs, the giveaways are a hero floating in the middle with clear space on all sides, flat wide objects leaving empty bands above and below, and scene cards where two props split the first read."
+}

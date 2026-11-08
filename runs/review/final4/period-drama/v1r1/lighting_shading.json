@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (pocket watch): in the shading lens the dial and case are lit almost evenly from the front. Only a thin darker band runs down the right edge of the case. The watch floats with no cast or contact shadow, and the light turns slowly with little core shadow on the gold rim. B (ring box): the light clearly comes from the upper left. The right outer wall of the box and the inside of the lid fall into a darker shadow side, and the cushion casts a soft shadow onto the medal. This matches the directional modelling on the real camera and glove. Both cards' numbers are within the real range, so this call is weak.",
+   "fix": "Light the pocket watch from the upper left. Make the right half of the gold case and the lower right of the dial noticeably darker, add a clear darker band where the rim turns away, and put one soft highlight on the upper-left rim."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (captain's cap): a hard diagonal block of shadow cuts across the back wall and floor, like light through a window. The cap sits in moody, theatrical side light, and the shadow side of the white crown and brim drops deep. Its light-bias value of 1.25 is far above the real maximum of 0.91. B (book): even, soft top light with a gentle shadow on the page edges and a broad soft cast shadow on the left. This is within the real range and close to the soft, bright modelling on the real cards.",
+   "fix": "Remove the hard diagonal shadow from the wall and floor. Light the cap with one soft, bright light from the upper left, keep the right side of the cap only gently darker, and put a short soft shadow under the brim on the floor."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (fan): the pleats alternate light and dark evenly across the whole fan, with no overall lit side or shadow side. The ribs and handle are lit flat from the front, and the fan sits on the backdrop with almost no cast or contact shadow. Its light-bias value of 0.036 is far below the real minimum of 0.10. A (scarf): its form contrast is also low, but the folds have a clear top-left light and the knot tails and the underside of the collar are darker, so the light has a direction.",
+   "fix": "Light the fan from the upper left. Make the left pleats brighter and the right pleats darker overall, darken the ribs under the paper, and add a soft shadow under the fan and handle on the background."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (sneakers): the light is frontal and even, like a product photo. Both shoes are lit the same across their sides and toes, with no clear shadow side. Its light-bias value of 0.019 is far below the real minimum of 0.20, and its shading range of 0.82 is above the real maximum of 0.79. Only the long cast shadow to the left hints at a direction. B (hat box): the key light comes from the upper right. The left side of the drum turns smoothly into a darker core, the bow loops carry soft shadows, and the cast shadow falls to the left, matching the real cards.",
+   "fix": "Light the sneakers from the upper left. Make the right sides of the shoes and the inner shoe clearly darker than the lit toes, add a soft dark contact shadow right under the soles, and keep highlights to small soft sheens on the toe caps."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (paddling pool): the stacked rings are lit almost the same at the front and back. Each ring gets a similar narrow top highlight and only a slight darkening underneath. Its form contrast of 0.385 sits at the very bottom of the real range, though the fence does cast a shadow onto the grass. B (dock): the posts, rope coils and lifebuoy have a clear lit side and shadow side, with darker undersides and water contact. Its light-bias value of 0.576 is mid-range for the real cards. The call is weak.",
+   "fix": "Light the pool from the upper left. Make the right and front-right curve of each ring clearly darker, add a darker crease where the rings press together, and put a soft dark contact shadow on the grass under the bottom ring."
+  }
+ ],
+ "pattern": "Generated cards use flat, frontal or evenly spread light. They lack a clear lit side, shadow side and core shadow, show weak overall light direction (very low light bias) and have little contact shadow. When the generator does add direction, it sometimes goes theatrical, with hard shadow blocks on walls. The real cards use a soft upper-side key light with a clear but gentle shadow side and soft grounded shadows."
+}

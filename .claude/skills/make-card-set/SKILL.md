@@ -27,6 +27,14 @@ The theme is required. Wishes are optional. Do not ask about anything else. If t
 
    Colors are blue, orange, magenta and purple. The result is `runs/<folder>/screen_N.png`.
 
-4. If the producer names a problem that will recur, such as an object type to avoid, add it to `analysis/lessons.md` under Planning, as one line that starts with `- `.
+4. If the producer comments on single cards, fix only those: copy `runs/<folder>/plan.json` to `runs/plans/<name>.json`, change the named cards (another object, other colors or staging, or a `note` with the fix, which closes the card's brief), and run
+
+   ```sh
+   .venv/bin/python -B scripts/make_set.py "<Theme>" --wishes "<wishes>" --variants N --plan runs/plans/<name>.json --keep <folder> --run <folder>-fix
+   ```
+
+   Unchanged cards keep their drawings and picks; only the changed ones are drawn again.
+
+5. If the producer names a problem that will recur, such as an object type to avoid, add it to `analysis/lessons.md` under Planning, as one line that starts with `- `.
 
 The run needs the Codex and Claude CLIs logged in, Blender on the PATH, a GPU and the board images in `materials/`. Character cards also need the cast cutouts in `library/cast/`, made once by `scripts/cast.py find` and `label`. Never delete an earlier run.

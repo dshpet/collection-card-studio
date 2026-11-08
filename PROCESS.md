@@ -49,6 +49,8 @@ How the tool got here, decision by decision. Numbers are in [STYLE_GAPS](analysi
 - The final started late, at 11:15 instead of 04:00: a background wait loop matched its own command line and waited on itself all night. Steps are now chained directly.
 - After the draw, two Period Drama cards were weak in every candidate, a plan problem: the Pearl Necklace became the Quill Pen (the outside rater's 4) and the Hat Box got stripes. The set was redrawn in a new folder seeded with the other eight cards' candidates, so only the two new cards were drawn and the picks and review ran again (`runs/final3/README.md`).
 - The same way, Detective's Badge Wallet left its dark table, darker than any real card, for a light desk, and the Flash Camera moved to royal blue so the set kept six or more backdrop hues, as every real set has.
+- The producer graded every set 4 of 5, "Yes, with small issues"; cards 4.4 Western, 3.8 Period Drama, 3.1 Detective. Blind, they found the control closer to the real card than one camera, and the current pipeline better built than either perspective arm: both were dropped. The smooth line held.
+- Their comments were mostly about recognition and composition, not style: a badge without its emblem, a hat box that read American, a windmill on a solid tower that read as a monument, objects off center, a dog that read as a character. A fix round redrew only the commented cards: `make_set.py --keep` reuses an earlier run's cards whose plan is unchanged, a plan card's `note` carries the fix into its brief, and `k.focus` frames a blockout on its main body. The comments became ten proposed lessons (`runs/final4/README.md`).
 
 ## Tools tried
 
@@ -67,4 +69,4 @@ How the tool got here, decision by decision. Numbers are in [STYLE_GAPS](analysi
 - One human rater. The final style is still spotted in 24 of 32 twins.
 - No model judges construction; it comes from geometry and a human look.
 - Each variant takes about 40 minutes and needs a GPU, Blender and two logged-in CLIs.
-- Next: the producer's review of the final sets and the blind arms (`experiments/final_review.py`), then a style LoRA trained on the reference cards with an open model.
+- Next: the producer's review of the fix round (`experiments/final_review.py`), then a style LoRA trained on the reference cards with an open model.

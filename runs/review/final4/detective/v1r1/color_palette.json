@@ -1,0 +1,75 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the magnifier's lens glass is filled with the same green as the ring background, so the card reads as one green mass. Only the red handle and the grey rim break it, which is about one hue family. B: a red-framed backboard with a neutral cool white face on a cyan backdrop. The red hero sits against a cool ground with a clean neutral rest area, which matches the real cards. B's stand shadow keeps a lot of blue, but that is a small area.",
+   "fix": "Make the lens glass clear and pale with a cool grey-blue tint, not filled with background green. Add a soft neutral grey to the silver rim, and give the background a little yellow-green variation so the card is not one flat green."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a blue snorkel on warm orange-brown planks with turquoise water. The hero is cool against a warm ground and the hue roles are clear. B: a cream camper with an orange stripe on a loud violet backdrop over yellow-green grass. The violet is louder than any real backdrop (above the real chroma range), and the cream body repeats the yellow cast of the grass, so the hero has no clear opposing temperature.",
+   "fix": "Tone the violet backdrop down to a softer lavender. Paint the camper body a cleaner white with cool grey shadows instead of cream, and keep the orange stripe as the only warm accent."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a cyan-blue racket and a yellow ball on a saturated green court with a pale line, which is loud and readable like the real cards. B: a clear evidence bag on dull olive felt. The background and the subject are both washed out, with chroma well below the real range. The bag's shadows are grey-blue on grey-green, and the only colour is a thin blue zip strip and the gold ring, so the card has almost no saturated mass.",
+   "fix": "Put the bag on a brighter, more saturated backdrop, such as a clean teal or warm orange with soft rays. Make the gold ring richer and warmer, and give the label a bold red stripe so there is one strong accent."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a ship's wheel very close to the real anchor card, but the floor planks are pushed to saturated orange, and the rays fade from pink to peach, so the whole lower half goes warm orange. In the real card the floor is a paler tan and the lavender sky holds more cool. B: a white goal in blue water with an orange ball. The ball is the one warm accent on a cool field, a clear hue role.",
+   "fix": "Make the deck floor a pale sandy tan instead of orange. Keep the upper background a cool lavender-violet all the way down to the horizon, and keep the wheel a medium chestnut brown with the gold hub as the only bright warm spot."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a camel coat on a mustard-yellow wall with a tan hook and a brown drawer. Nearly the whole card is one warm yellow-tan family (warm share 0.95), and the hero repeats the background hue, so the coat sinks into the wall. B: blue binoculars against a blue city with a pale sky. It is also cool on cool, but it holds cool neutrals and a pinkish haze that rests the eye.",
+   "fix": "Put the beige coat on a cool background, such as a soft teal or blue-grey wall. Keep the coat a natural camel tan with slightly cooler brown shadows, and keep the brass hook as a small warm accent."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a brick-red camera with silver and a blue lens on a royal-blue diamond pattern. The red body is a muted, believable local colour and the backdrop takes the opposite temperature. B: a flat pure yellow-orange player on violet rings. The device is one saturated yellow mass with almost no shading, and the white earbuds pick up yellow edges, so the hero is pushed to a pure hue.",
+   "fix": "Shade the player body from warm yellow into a deeper ochre-orange in the shadows, not one flat yellow. Keep the earbuds a clean cool white with lavender-grey shadows, and calm the violet ring contrast slightly."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a fan with panels in pure saturated magenta-violet, above the real hero chroma range, on bright yellow waves. The fabric has no natural dulling, only light and dark violet stripes. B: an orange felt fedora with a dark green band on purple waves. The hat keeps a believable felt orange-tan, and the green band is a single related accent.",
+   "fix": "Paint the fan fabric a softer orchid purple with dusty mauve shadows rather than neon violet. Keep the bamboo ribs a natural light wood tan, and leave the yellow backdrop as is."
+  },
+  {
+   "pair": "p08",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a navy safe with a gold dial and handle on a hot pink backdrop. The cool hero against a warm-pink ground gives clear hue roles, and the gold is one accent. B: a royal-blue vending machine on violet, with a hero and backdrop in neighbouring cool hues and a warm share near zero. The interior glass is cyan and only tiny can colours break the cool mass.",
+   "fix": "Put the blue vending machine on a warm backdrop, such as an orange or peach gradient, so the hero stands apart. Keep the drinks inside in varied warm reds and yellows."
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: a black leather wallet and a gold badge on orange wood. The whole card is pulled warm (warm share 0.97). The ID card window turns peach in the lens, the black leather loses all hue in shadow, and the blue star is the only cool spot. B: a map on wood has blue seas, cream land, green islands and a silver magnifier. The cool sea balances the warm wood, with about five hue families as on real cards.",
+   "fix": "Give the black leather a cool blue-grey sheen and highlights, and make the ID card window a clean cool white with a light blue header. Keep the wood warm but slightly less orange."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: silver handcuffs with lavender-grey shading on a coral-red ground. The cool neutral hero on a warm backdrop matches the real computer card pattern. B: blue sneakers with neon lime collars, teal laces, and magenta and orange sole flecks, on orange and yellow. About 5.5 hue families, more than the real cards' range, each pushed to pure hue on a small part.",
+   "fix": "Keep the sneakers mostly blue with white soles and one accent colour, such as lime green on the collar and laces. Remove the magenta, orange and teal flecks from the soles and laces."
+  }
+ ],
+ "pattern": "Generated cards give themselves away in four ways on colour. They pull neutrals and whole scenes warm (cream instead of cool white, orange floors and wood, warm share near 1). They let the hero repeat the background hue, such as tan on yellow or blue on violet, instead of opposing its temperature. They push small parts to pure, unshaded hue (neon violet fabric, flat yellow plastic, rainbow neon trim). And their backgrounds are either louder than the real range or washed out to dull olive or grey. Real cards keep believable local colours, cool neutral shadows on white and metal, and a clear warm/cool split between hero and backdrop."
+}

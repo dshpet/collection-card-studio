@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the pocket watch floats on a flat green diamond pattern, light-on-dark green with a soft glow at the centre, and the chain runs off the top edge. This matches the real purple diamond card in the anchor. B: an open red case holding a medal floats on a cyan sunburst with no extra props. The medal is what the case holds. Both are clean category 1 cards, and both background metrics are inside the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the captain's hat lies on plank flooring in the corner of a wooden room. A plank wall with a vertical post runs across the top third, and a hard diagonal shadow cuts across it. It is a staged interior that the hat is not used in, and the wall and post add competing edges behind the hero (edge 0.035, near the top of the real range). B: the book lies flat on a wood-grain surface that fills the card, seen from above, which is the correct category 3 setup for a flat object. The grain is a quiet tone-on-tone streak.",
+   "fix": "Put the captain's hat on a simple warm wooden tabletop with a soft, plain blurred backdrop and a soft pool of light behind the hat. No room walls, no corner posts, no hard diagonal shadows."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the red neckerchief floats on a blue tone-on-tone spiral of rings, like the real concentric-ring card. B: the open fan floats or lies on a quiet blue tone-on-tone wave pattern with a soft shadow under it. Neither backdrop competes with its hero, and neither card adds props. Both are within the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the sneakers stand on a pale cream floor that meets a saturated orange wall along a hard, perfectly straight horizon a third of the way down. Category 2 calls for a floor in the backdrop's own colour, and the real cocktail card's floor is the same purple as its wall. Here the floor is a different hue, which gives a product-photo look. B: the hatbox stands in a soft green vignette, with the floor and wall in one colour and a gentle pool of light, as on the real cards. The straw hat on its lid reads as what the box holds.",
+   "fix": "Stand the sneakers on a plain floor of the same orange as the backdrop, only slightly lighter, and let the floor fade softly into the wall with no hard horizon line."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: a paddling pool on lawn, with a plank fence across the top band. The card's edges cut the pool, and the scene is a few large, quiet shapes (fence, grass, pool), like the real campfire and cooler cards. The single duck is a plausible partner object. B: the mooring post has a rope coil wound round a second post, a life ring hanging on it, dock planks, a sandy shore curving across the top, pebbles, and ripple rings round each pile. That is several props the subject never named, the same invented harbour clutter (life ring, rope posts) that gave away the generated lighthouse lessons.",
+   "fix": "Show one wooden mooring post with a rope looped around it, close and central at the edge of a plain wooden dock over calm water. No life ring, no second post, no beach or pebbles."
+  }
+ ],
+ "pattern": "Generated cards fill the scene with harbour, room or garden extras that the subject never named, such as life rings, rope-wrapped posts, rock islands, beaches and room corners, instead of a few quiet shapes. They also build a staged set with hard horizons, two-tone floors or room walls where the real cards use a plain floor in the backdrop's colour or a soft pool of light."
+}

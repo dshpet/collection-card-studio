@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: camera close and slightly low, sheep cropped at the chest, filling the card. The hat brim tilts toward us and the shop stall sits close behind. That tight, cropped viewpoint matches the real lighthouse. B: camera pulled back to show both characters head to toe, square to the viewer, standing side by side on a straw floor seen from above. The barn wall runs flat behind them. This is the zoomed-out, everything-in-frame staging the generated lesson cards use.",
+   "fix": "Move the camera closer and lower. Crop the characters at the waist so they fill the card, turn them three-quarters toward the viewer, and leave the floor mostly out of frame."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: one high camera, about 45° down. The plate ellipse, the fruit tops and the receding table planks all agree on that angle. B: the wheel is dead frontal and perfectly symmetrical, so its rim is a near-perfect circle and the base block shows no top face. Yet the deck below is seen from above, with planks spreading outward and a curved horizon. The wheel and the floor are drawn from two different camera heights.",
+   "fix": "Turn the ship's wheel about 30° to the side and tilt the view slightly down, so the rim is an oval and the top of the stand's base shows. Keep the deck boards at the same downward angle as the wheel."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the caravan is shown almost flat from the side at eye level, with barely any roof visible and the front end only slightly turned. The grass under it is drawn as if seen from above, with sprouts scattered evenly to the bottom edge, so the ground and the camper don't share one camera height. B: one slightly raised three-quarter view. The stage ellipse, the drum tops and the cymbals all tilt the same way, and the spotlit round pedestal matches the real trophy card.",
+   "fix": "Raise the camera a little and turn the caravan three-quarters so its front and roof both show. Draw the grass at the same shallow angle the caravan stands on, with the grass fading back toward the horizon instead of filling the bottom of the card."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: wide-angle look. The scooter headlamp and handlebars loom large in the foreground, the cobbled street lines converge hard and the building fronts lean inward. B: milder perspective. The round table edge and the cake stand sit at one gentle downward angle, and the background filing cabinet and window are only slightly foreshortened.",
+   "fix": "Use a longer, flatter lens: shrink the scooter front so it's no bigger than the rider's torso. Keep the street and buildings with only gentle convergence and straight vertical walls."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: close selfie framing, characters cropped at the chest and filling the frame. The waterfalls behind sit in clearly separate, simpler distant layers. B: pulled back to full bodies standing square to the viewer on a shiny parquet floor. The floor tiles recede steeply from a high camera, while the characters are drawn from about eye level. That is the zoomed-out, full-figure staging seen in the generated lessons.",
+   "fix": "Bring the camera in close and crop the dancing pair at the waist. Keep the camera height matched to their faces, and let the ballroom floor be barely visible, with only gentle perspective."
+  }
+ ],
+ "pattern": "The generated cards pull the camera back to show the whole object or figure standing on a floor or base. They square it to the viewer, often fully frontal and symmetrical. The ground is often drawn from a higher camera than the object itself, so the two read as different viewpoints. Real cards crop tighter and turn the object three-quarters. Their ground plane, top faces and ellipses all agree on one gentle camera angle."
+}

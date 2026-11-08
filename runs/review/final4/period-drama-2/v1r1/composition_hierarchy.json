@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the candelabra is a thin upright shape set small in the middle of the card. Its occupancy is 0.134, about half the lowest real card (0.264). Its box is narrow (0.49 width), with large empty teal areas on the left and right and a wide gap above the flames. At thumbnail size it reads as a small gold outline floating in flat teal. B: the pair of sneakers spans almost the full width (0.849) and the right toe nearly touches the right edge (margin 0.033). Its occupancy (0.268) is in the real range, and it reads as one solid mass, like the real glove or camera cards.",
+   "fix": "Draw the candelabra much larger, so the base nearly reaches the bottom edge and the flames nearly reach the top edge. Widen the arms so the candles sit close to the left and right edges. Fill most of the card with the object and leave no large empty background areas."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the bumper car is large and low in a scene with a floor. Its green pole runs off the top edge (margin 0), the way the real lighthouse is cut off by the bottom edge. B: the two flip-flops sit fully inside the card with even clearance on every side. Their box is narrow (0.565 width, below the real 0.661 minimum), with empty striped bands on the left and right. This tidy, fully contained, centered placement matches the generated lesson cards: the uncut lighthouse on its rock and the smaller, fully framed camera.",
+   "fix": "Draw the flip-flops larger and closer, angled across the card so the sole tips nearly touch the top-right and bottom-left corners. Let one heel run slightly off the bottom edge. Don't leave empty stripe bands at the sides."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the bottle lies on a diagonal across the sand, and its neck and cork reach toward the top-right. It sits in an underwater scene, like the real cooler-on-beach and pot-over-fire cards. B: the keyboard on its stand is fully framed with even clearance. The background is scattered with music notes and stars, which compete with the hero at thumbnail size. The real cards keep a plain background of rays, stripes or a simple scene with no decorative icons. Both cards' measurements are in the real range, so this is a weak call.",
+   "fix": "Remove the music notes and stars and use plain blue sunburst rays. Draw the keyboard bigger and closer, so its left end nearly touches the left edge and the stand's feet reach the bottom edge."
+  }
+ ],
+ "pattern": "Generated cards hold the hero back. The whole object fits inside the card, small and centered, with even empty space on every side. The real cards push the hero big and close: it fills the card, nearly touches the edges, and is sometimes cut off by one. Generated cards also add extra props or decorative background icons that compete with the hero at thumbnail size."
+}

@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a yellow-gold watch with a near-neutral white dial on a green harlequin backdrop. Only about two hue families show, and in the lens the gold's shadow sinks to olive, close to the backdrop green. That is quiet, but it fits the real green-stripe clock card. B: a pure crimson box, a pure orange-gold coin and a blue ribbon on cyan rays with a glowing cyan centre. Every mass is at full hue, the red shadows turn magenta-purple, and the 5.43 hue families are above the real range. This matches the generated glove's glowing cyan centre and pushed hues in the lessons.",
+   "fix": "Use a deeper, slightly brown-red velvet for the box, with shadows that stay dark red instead of purple. Make the coin a softer gold. Make the rays a calmer mid-blue with no bright cyan glow in the centre. Keep the cream lining muted."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the whole card is brown wood, with a wood wall and floor behind the hat. The hat's white crown turns tan-beige and its navy band goes brown-black in the lens. Subject chroma is 0.059 and background chroma is 0.085, both below the real range, and the warm share of 0.85 is at the top of the range. Everything is pulled warm and brown, like the cream-tinted generated computers. B: a teal book on orange wood gives a clear complementary hero against backdrop. Its sticker hues are busy, but its local colours read true.",
+   "fix": "Keep the hat crown a clean cool white with light blue-grey shadows and a true navy band. Place it on a cool blue or teal backdrop instead of a brown wooden room, so the warm gold anchor is the one accent."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the scarf is pure fire-engine red throughout. Subject chroma is 0.2165, above the real top of 0.189, and in the lens the shadow folds stay saturated red, so hero and swirl backdrop are equally loud. This is the 'everything at full hue' push seen in the generated cards. B: a muted rose-pink fan with cream lace and bamboo on soft blue. It is calm and low in chroma, with a narrow palette but believable local colours.",
+   "fix": "Use a slightly deeper, cloth-like red for the scarf, with shadows that darken toward wine red. Let the highlights soften toward pink, and make the backdrop blue a little calmer than the scarf."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: royal-blue sneakers with lime collars, teal laces, a pink and orange sole stripe and green panels, set on an orange and yellow backdrop. There are 5.49 hue families, above the real maximum of 4.78, and the white soles turn lavender. The accents are scattered candy colours instead of one accent. B: a pink hat box with cream ribbon and a straw hat on a green gradient. Its warm hero sits on a cool backdrop in 2.8 families, within the real range.",
+   "fix": "Make the sneakers mostly blue with white soles and white laces, and use a single accent colour such as one lime stripe. Remove the pink, orange and teal trim. Keep the orange backdrop behind them."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the posts and planks are pushed to saturated orange and the life ring to pure red-orange, against loud cyan water, so hero and background are equally loud. The shadows under the dock and on the post legs drop to near-black navy-grey (shadow chroma kept is 0.543, below the real minimum of 0.61), so the shadows lose their colour. A: a pink, yellow and blue pool on green grass with a brown fence. It has many hues, but its shadows keep a teal-green colour and every family fits the real ranges.",
+   "fix": "Paint the dock wood as a weathered mid-brown instead of bright orange, and make the life ring a plain red with white bands. Fill the shadows under the dock with a rich deep teal-blue instead of dark grey, and calm the water a little."
+  }
+ ],
+ "pattern": "On colour, generated cards show either a warm cast over the whole card (whites turn cream or tan, wood turns orange) or local colours pushed to full hue, so hero and backdrop are equally loud. Accents get scattered across many hues instead of one, and shadows either keep the full-hue colour or fall to colourless dark grey instead of a related deeper hue."
+}

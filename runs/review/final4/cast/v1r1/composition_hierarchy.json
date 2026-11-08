@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the sheep is a tight close-up. The hat brim nearly touches the top edge, the shopping bags are cut off by the left, right and bottom edges, and the face sits in the upper third. At thumbnail size you read 'sheep in a sun hat' right away. B: two full-body characters stand side by side with their feet on the straw and clear space at the top and sides. The sheep and the cow are the same size and both pull the eye, and the milk can in the middle is a third focal point. The lessons point the same way: generated cards show the whole subject standing on its ground, and real cards crop in close.",
+   "fix": "Close-up of the sheep only, cropped at the chest by the bottom edge, head large in the upper half of the card, the cow small or off to the side behind it"
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the fruit plate is seen from a high three-quarter angle. It fills the width, and the watermelon wedge breaks the plate's rim near the top. The wood floor runs past every edge with no stage. B: the ship's wheel faces straight on and is perfectly centered and mirror-symmetric. It stands whole on a pedestal on a curved stage floor, with an even ring of empty space all around it. That matches the generated lighthouse-on-island and frontal camera lessons: a whole object displayed on a base, front-on and centered.",
+   "fix": "Ship's wheel turned at a three-quarter angle and filling most of the card, cropped by the bottom edge, no pedestal or stage floor"
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the caravan is seen at a three-quarter angle and fills the width. The hitch nearly touches the right edge, and the grass continues off the bottom. B: the drum kit sits whole and centered on a round red stage under a spotlight, with the bass drum head facing the viewer square in the middle. The cymbals spread toward the top corners, so several shapes compete with the drum. That is the generated 'object on a display stage' setup, close to the lessons where the generated version adds a base under the hero.",
+   "fix": "Drum kit at a three-quarter angle, bass drum large in front and cropped by the bottom edge, no round stage or spotlight"
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the man on the scooter is cropped by the bottom edge, with the chicken peeking over his shoulder at top left and a street receding at the left. B: the man in the trench coat is cropped by the right edge, the chicken by the left, and the empty cake stand sits low in the center. Both are tight scene crops with zero margin. B splits attention between three things (two faces and the plate), while A has one clear main figure. Neither card matches the generated pattern from the lessons strongly.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a selfie-style close-up. The sheep and the pig are cut off by the bottom edge and the pig's arm runs off the right, so the faces dominate. B: the sheep and the cow are shown full-body mid-dance, with their hooves on the floor and a whole ballroom around them. The figures sit in the middle with room at the sides, and their hooves stop just short of the bottom edge. As in p01, generated cards show complete figures standing on visible ground, while real cards push in.",
+   "fix": "Push in closer: sheep and cow from the waist up, cropped by the bottom edge, faces large in the upper half"
+  }
+ ],
+ "pattern": "Generated cards show the whole subject: a complete object or full-body figures standing on a pedestal, island, stage or floor. The subject is centered and often front-on and symmetric, with even space around it. Real cards push in at a three-quarter angle and let edges cut off the subject (the lighthouse base, the desk, the bags), so one large hero fills the card."
+}

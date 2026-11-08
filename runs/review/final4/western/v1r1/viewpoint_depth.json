@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (covered wagon): the bed and canvas top are turned three-quarter, so we see the front end and some of the top. But the two near wheels are drawn as almost full circles, as if seen from the side. They do not flatten into ovals to match the turned body. The camera is fairly high and far back, showing the whole wagon on a dirt road that recedes to layered hills. B (roller coaster): a low camera looks up at cars curving along a loop. The cars shrink steadily along the track and the supports lean the same way, so every part shares one strong but consistent upward view, like the low camera on the real buoy and swing cards.",
+   "fix": "Turn the wagon three-quarter and draw every wheel as an oval tilted to match the side of the wagon bed, with the far wheels smaller and partly hidden. Lower the camera closer to wagon height and crop tighter, so the road is a short strip of ground and not a wide view from above."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (campfire): a high camera looks down into the stone ring, showing the whole object on a wide ground plane. Behind it are a cabin and trees, so there are three full depth layers, all drawn sharp. In the lessons, generated cards share this high, far-back framing. B (coin binoculars): a low, close camera crops the post at the bottom edge, like the real lighthouse lesson card. Only a short slice of railing shows, and the city behind is simplified and pale. The post, eyepieces and railing share one mild perspective.",
+   "fix": "Bring the camera down near the height of the stones and move in close, so the fire ring fills the lower card and is cropped at the edges. Keep the background as a few soft, simplified tree shapes, not a detailed cabin and forest."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (windmill): the wheel faces the camera head-on, but the tail vane, which on a real windmill is at a right angle to the wheel, is drawn as a full side-on flag pointing right. The wheel and the vane are in two different views. The tower is almost square-on, and the wheat field runs to a flat horizon. B (dock): one consistent high three-quarter view. Both post tops show their top faces at the same tilt, the planks run back in parallel toward the beach, and the ring lies along the deck at that same angle.",
+   "fix": "Turn the windmill three-quarter so the wheel is a tilted oval, with the tail vane pointing back and away and shortened by the angle. Turn the tower legs to the same angle so the wheel, vane and tower all share one view."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (soccer ball): a low camera just above the grass and a tight crop, with the ball filling the card. The field lines sit high on the card, and the grass falls away only gently behind. This matches the tight, low framing of the real beach ball and buoy cards. B (stone chess table): a high three-quarter camera shows the whole table, both stools and the plinth on a lawn. A path and trees sit sharp in the background, at the same level of detail as the hero. This roomy, from-above framing showed up on the generated cards in the lessons.",
+   "fix": "Lower the camera to just above the table edge and move in, so the board top shows as a thinner slanted shape and a stool is cropped at the card edge. Make the trees and path behind softer and simpler than the table."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (seahorse): a flat side view against a plain underwater gradient with no ground, like the real side-view submarine card. All parts share one side-on view. B (beach ball): close to the real beach ball card in the anchor sheet, but the camera has moved. The purple cap now sits near top-center facing the viewer, where the real card has it turned toward the upper left. The ball fills the frame, and more of the dimpled sand is seen from above. The ball is more frontal and the camera higher than on the real card.",
+   "fix": "Turn the ball so the purple cap sits up and to the left, with the panels curving away to the right. Pull the camera back and lower it so the ball sits smaller on the sand, and keep the sand behind simple and soft."
+  }
+ ],
+ "pattern": "Generated cards pull the camera higher and further back. They show the whole object standing on a wide ground plane, with sharp, detailed background layers, where real cards crop tight from a lower camera and simplify the background. They also mix views within one object: parts that should be turned are drawn face-on (wagon wheels as circles on a turned wagon), or side-on (a windmill vane shown flat beside a wheel facing the camera)."
+}

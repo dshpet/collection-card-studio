@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (candelabra): the edge map shows hard, even contours on every part. The stem has a stack of evenly spaced ring grooves, and the base has three or four concentric ring lines. Each flame has a crisp contour plus a glow halo around it. Subject edge density is 0.255, above the real maximum of 0.228. That matches the lessons, where generated cards pack in more hard internal lines than real ones. B (sneakers): edges are also busy, with a mesh dot texture, many lace strands and doubled contour lines around the soles. But the edges are softer and less even, and outline darkness is -0.1, below the real range rather than above it. Both cards are borderline, and A's over-dense, evenly hard linework is the closer match to the generated lessons.",
+   "fix": "Keep only the main silhouette of the candelabra crisp. Draw the stem as two or three smooth bulges with soft shading instead of many thin ring grooves. Give the base one rim edge instead of several concentric rings. Let the flames fade softly into the background with no hard rim around them."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (bumper car): edges are varied. The car body and bumper have firm contours, the reflections on the floor are soft, and the background rings and floor lines are faint. Subject density is 0.116, inside the real range. B (flip-flops): the subject is sparse. It is mostly smooth sole and strap outlines plus a grid of identical, evenly spaced perforation dots stamped on each sole. Subject density is 0.06, below the real minimum of 0.087. The strap contours are clean and uniform with no change in sharpness from front to back. The cue is weak because the lessons mostly show generated cards being too dense, not too sparse.",
+   "fix": "Give the flip-flops a little more surface detail: a raised rim around each sole, a slight curve where the foot presses down, and a few uneven dots that soften toward the back. Make the front sandal's edges sharper than the back one's."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (keyboard): every key, button, stand bar and background star and music note has a crisp outline of the same weight. Subject density is 0.233 and outline darkness is 0.106, both near the top of the real range. The background icons all get hard contours, so the edges are about as sharp on the background as on the hero. The generated lessons show the same thing: even hard linework everywhere and a background drawn with outlined shapes. A (bottle): the glass edges are mostly soft or lost, and the hardest edges are at the cork and the rope. The underwater background fades back. Its subject density of 0.066 is slightly below the real minimum, but its edges get softer away from the focus the way real cards do.",
+   "fix": "Make the stars and music notes behind the keyboard soft, blurry shapes with no outlines, a little lighter than the backdrop. Keep the sharpest edges only on the front keys and control panel, and let the far end of the keyboard and the stand legs soften."
+  }
+ ],
+ "pattern": "Generated cards put the same crisp, even-weight contour on everything: the hero, its small repeated parts (rings, grooves, keys, perforation dots) and even background shapes. Subject edge density ends up at or above the top of the real range. Real cards save hard edges for the silhouette and focal parts, then let interiors and backgrounds go soft or lost."
+}

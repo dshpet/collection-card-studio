@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (covered wagon): the wheels are oversized next to the short wagon bed, and the red rims are thick, rubbery rings. The canopy is a swollen cylinder with fat hoops. The tongue ends in a round knob. These are toy proportions, and straight_share is 0.18, below the real range. B (coaster): the track rails and ladder ties stay thin and run in long straight sections. The cars are soft, but their size matches the rail.",
+   "fix": "Draw a wooden covered wagon with true proportions: thin wooden wheel rims and spokes, wheels about as tall as the wagon bed is deep, a taut canvas cover over thin bows, and a straight thin tongue with no knob at the end."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (campfire): the ring stones are swollen, pillow-like blobs. A coffee pot has been added as an extra prop, and the whole object sits complete on a ground base. In the lessons, generated cards added props the same way (the lifebuoy and posts on the lighthouse). straight_share is 0.166, below the real range. B (binocular viewer): the column has straight sides and is cropped off at the bottom, like the real lighthouse. The head is a rounded capsule with a thin yoke arm.",
+   "fix": "Draw only the campfire: crossed logs on a ring of stones that have flat tops and some angular facets. Leave out the coffee pot and other extra props, and do not puff the stones into round pillows."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (dock): the rope coiled on the post is a stack of fat sausages. The lifebuoy is oversized next to the post, and the post tops are soft, domed crowns. thin_share is 0.002, which means almost no thin parts survive. A (windmill): the lattice tower keeps thin, straight struts, and the vane and blades read crisply. Its thin_share is only just above the real range.",
+   "fix": "Keep the mooring rope thin, a few tight turns around the post. Draw the lifebuoy smaller than the post is tall. Give the post tops flat, cut ends with small bevels."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (soccer ball): each hexagon and pentagon panel is puffed up into a pillow with deep seams, and the outline bulges unevenly on the right side. solidity is 0.995 and corner_rate is 0, a blob with no structure. B (stone chess table): the tabletop is a flat slab with straight edges and tight bevelled corners. The pedestal and stools are separate, correctly placed parts.",
+   "fix": "Draw a round soccer ball with smooth panels that sit flush, separated by thin, shallow seams. Keep the outline a clean circle."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "B (beach ball) is the same as the beach ball among the real cards: a clean circle with a purple cap. A (seahorse): the snout is thin, the tail curls tightly and the fins sit in the right places, so the proportions read true. The ridge edge along the back is jagged, though, and corner_rate is 5.9, above the real range of 4.6. That is weak evidence, so A is a low-confidence pick by elimination.",
+   "fix": "Draw the seahorse's back with a smooth outline and only a few evenly spaced small ridges, not a row of lumpy bumps."
+  }
+ ],
+ "pattern": "Generated cards give themselves away by inflating the object into toy proportions. Wheels, buoys, rope and stones get bigger, and thin parts such as rims, rope and bows are fattened into sausages. Flat panels swell into pillows, as with the soccer-ball panels and the campfire stones. Extra props and a complete ground base are added (the coffee pot, the lighthouse rocks and posts) where real cards crop the object and keep straight runs with tight bevels."
+}

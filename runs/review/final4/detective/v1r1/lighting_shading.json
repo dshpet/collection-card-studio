@@ -1,0 +1,75 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the magnifier's rim and red handle are lit almost evenly from the front, and the shadow side does not drop off. The glass carries a pasted-on white arc and dot as its highlight, and there is no cast shadow on the backdrop. B: the backboard has a clear key from the left. The right edge of the red frame and the pole turn into a darker shadow side, and the rim casts a soft shadow onto the board, like the real cards' side-lit modeling.",
+   "fix": "Light the magnifier from the upper left so the right side of the metal ring and the underside of the red handle fall into a soft, darker shadow. Draw a curved, soft reflection on the glass that follows the lens shape instead of a white sticker dot. Add a faint soft shadow under the handle."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the snorkel mask and tube are lit evenly from the front. The lens shows a flat diagonal glare streak, and the tube's shadow side is barely darker than its lit side (light bias 0.13, below the real range). B: the caravan has a strong key from the front-left. The right body and the rear turn clearly darker, and there is a dark contact shadow under the chassis and wheel, matching the side-to-side modeling on real cards.",
+   "fix": "Light the snorkel from the upper left. Let the right sides of the mask frame and tube fall into a deeper, cooler shadow. Add a soft contact shadow where the mask and tube rest on the planks."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the racket frame and ball have a clear lit top-left and a darker lower-right, with a soft cast shadow under the ball and frame on the court. B: the ziplock bag is almost shadowless. The plastic is a uniform milky sheet with only faint crinkle highlights, and the gold ring and label barely change in value. The bag has only a faint edge shadow on the felt (form contrast 0.32, below the real range).",
+   "fix": "Light the bag from the upper left. Give the plastic a few broad, soft bright creases on the lit side and darker folds on the lower right. Shade the ring as a solid round band with a bright top and a dark inner bottom. Add a soft darker shadow along the bag's lower and right edges where it lies on the cloth."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the ship's wheel matches the real ship's-wheel card. It is frontal and symmetric, with a glowing backdrop and a soft pool of light under the stand. B: the water-polo goal is lit from the left, with shaded inner posts, a ball with a lit top and a darker underside, and soft contact shadows at the water line. Neither card breaks the light behaviour seen on the real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the coat is lit softly and evenly by a warm window light. The folds are shallow and only slightly darker, with a broad blurred shadow on the wall behind it (form contrast 0.42). B: the viewer binoculars are lit strongly from the left. The cylinders turn quickly into a darker right side, with a crisp metallic sheen on the eyepieces and a clear core shadow down the post, like the real cards' solid 3D modeling.",
+   "fix": "Light the coat from the left so the right sleeve, the folds under the belt and the right side of the body fall into clearly darker shadow. Put a brighter band of light on the left lapel and shoulder. Make the shadow on the wall darker and tighter right under the hem and sleeves."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the camera body is lit with very hard contrast. The red box turns almost black on its right and under its edges, the lens ring is a hard chrome, and the flash bulb glows as a bright light source of its own. Shading range is 0.91 and form contrast 0.70, both above the real range. B: the music player and earbuds are lit gently from the top-left, with soft gradients and a soft shadow under the case. That is within the range of the gentle real cards.",
+   "fix": "Soften the camera's lighting. Keep the right side and underside of the red body a mid-dark red rather than near-black. Give the lens ring a soft, broad sheen. Draw the flash bulb as a plain reflector, not a glowing light."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the fan's panels alternate light and dark purple, like printed stripes, not a fold turning toward and away from the light. The wooden sticks and the pivot are almost flat, and there is no cast shadow on the background. Form contrast 0.21 and light bias 0.09 are both below the real range. B: the hat is lit from the upper left, with a soft gradient over the crown, a darker underside of the brim, a shaded band, and a soft rim along the brim edge.",
+   "fix": "Light the fan from the upper left so each pleat has a lit face and a darker face that grow gradually darker toward the right. Shade the wooden sticks and the round pivot as rounded pieces with a light top and a dark underside. Add a soft shadow of the fan on the background behind it."
+  },
+  {
+   "pair": "p08",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the safe has a soft frontal-left key. The right side face is moderately darker, the brass dial and handle have small highlights, and there is a soft shadow under the feet. B: the vending machine is lit from the left, with a darker right side panel, a glossy glass front and soft contact at the feet. Both sit inside the real range, and neither shows a clear lighting tell.",
+   "fix": ""
+  },
+  {
+   "pair": "p09",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the badge wallet lies flat. The black leather reads near-black throughout, and most of its contrast comes from that dark color, not from light (form contrast 0.72, above the real range). There is only a thin edge shadow on the table. The gold badge has hard, metallic hot spots. B: the map's folds catch light on their upper faces and fall into soft shade on the others. The magnifier casts a soft shadow onto the map, and the handle has a gentle cylindrical shading, like the real ground-contact cards.",
+   "fix": "Light the wallet from the upper left so the open leather flaps show a soft lighter sheen on their left halves and gentle shade toward the spine. Give the gold badge a broad, soft shine instead of hard white spots. Add a soft shadow along the right and bottom edges of the wallet on the wood."
+  },
+  {
+   "pair": "p10",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the handcuffs are shaded softly, with smooth chrome gradients on the rings, a soft shadow beneath them, and gentle contrast. B: the sneakers sit in a photo-studio setup, with a hard-edged dark cast shadow stretching to the left on the floor, strong shadow under the soles, and a harsh split between the lit tops and dark sides. Shading range is 0.82, above the real range.",
+   "fix": "Light the sneakers with a softer, broader light from the upper left. Draw a short, soft, blurred shadow right under the shoes instead of a long hard-edged one. Keep the shadow sides of the shoes a mid-tone blue, not dark."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away by missing the real cards' steady modeling. The real cards have one key light from the upper left or front-left, and each form turns smoothly into a moderately deeper shadow side on the right or underside. Generated cards miss this in one of two directions. Some are flat and frontal, with almost no side-to-side falloff, stripe-like value bands instead of form turns, sticker highlights and missing cast shadows (fan, snorkel, magnifier, zip bag). Others are overcooked, with near-black shadow sides, hard studio cast shadows, or glowing light sources on the object (vintage camera, sneakers)."
+}

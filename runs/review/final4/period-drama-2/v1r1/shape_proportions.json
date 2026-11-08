@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (candelabra): the three arms are thin, tube-like curves, and the stem is a stack of many small knobs and rings above a wide flat dish base. The silhouette is mostly empty space between the arms (solidity 0.425, below the real range, and thin_share 0.011, above it). That busy, fussy outline matches the generated lesson cards, which added extra small parts such as the lighthouse railing posts and the glove web slats. B (sneakers): two chunky shoes with thick soles and a solid, compact mass. The soles are swollen, but that matches the chunky volume of the real cards (for example the jacket and the cooler). Its numbers sit inside the real range.",
+   "fix": "Draw a simple, chunky three-arm candlestick. Give the arms and stem a sturdy, even thickness, put at most one or two bands on the stem, and make the base a plain thick disc. Leave out the stacked rings and small knobs."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (bumper car): a rounded, swollen body on a flat bumper ring, with a thin vertical pole and a thin steering-wheel loop. Both thin parts are present and keep their real thickness, which fits a bumper car. B (flip-flops): flat soles with a straight, even thickness, a crisp sole edge and straps of believable width. Its corner_rate of 0 comes from the object having no corners, not from rounding. Neither card shows the over-detailing or toy-like bulk that gives away the generated lesson cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (bottle): the body is fattened, the shoulder slumps into a short, stubby neck, and the cork is oversized, so the bottle reads as a squat toy rather than a simplified real bottle. B (keyboard): a boxy case with flat top and front faces and tight corner bevels, standing on an X-stand whose legs and feet stay thin, straight bars. The flat-faces-and-crisp-corners treatment matches the real cards' boxes, such as the cooler. B's straight_share of 0.647 is only marginally above the real maximum and is explained by the boxy object.",
+   "fix": "Draw the bottle with real wine-bottle proportions: a longer, slimmer body, a clear shoulder and a long, narrow neck, topped by a small cork that sits flush with the lip."
+  }
+ ],
+ "pattern": "In the lessons, the generated cards give themselves away through added small parts and an over-built outline: extra web slats on the glove, railing posts and a rock island on the lighthouse, a taller camera top, and a fattened monitor, keyboard and mouse that read like toys. They also inflate volumes and blunt the proportions toward a squat toy, while the real cards keep a simpler outline with fewer, sturdier parts."
+}

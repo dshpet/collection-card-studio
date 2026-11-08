@@ -1,0 +1,40 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (wagon): the wagon box has small round bolt heads at every corner and along the rim. The boards carry wood-grain lines and the wheel hubs are dark metal caps. The canvas cover has a faint cloth weave and the wheels are a lacquered red. That is the small-hardware look the generated gloves and cameras had in the lessons. B (coaster): the cars and track are broad, smooth plastic with soft highlights. There are no rivets or seams, and the hardware is simplified into wide bands, as on the real submarine and buoy cards.",
+   "fix": "Draw the wagon box as smooth planks with only a faint, soft grain and no bolt heads or metal studs. Make the wheel hubs simple rounded wooden caps. Keep the canvas soft and matte, and give the red wheels a satin sheen, not a lacquered one."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (campfire): soft, matte bark on the logs, fire-lit end grain, and rounded matte stones. This matches the real cards' quiet surfaces. B (binocular viewer): the whole object is one uniformly glossy blue chrome. Crisp specular streaks run along the eyepiece barrel, the bracket and the post. A small coin slot and hard edges at the panel seams are the kind of hardware detail the generated cameras had. The evidence is weak, because real cards also use smooth metal.",
+   "fix": "Paint the viewer as soft, satin-finish painted metal with one broad, gentle highlight per part. Vary the finish between the head, the bracket and the post, and leave out the coin-slot detail and the sharp chrome streaks."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (windmill): there are silver rivet heads at nearly every crossing of the red lattice tower, and every member is glossy. The wheat field is a dense, repeated, high-contrast pattern of ears. Detail, micro-texture and gloss all measure above the real-card range (gloss 0.53). B (dock): the post and planks have a few broad, soft grain grooves. The rope twist is simplified and the life ring has a soft satin finish, which matches the real cards' simplification.",
+   "fix": "Draw the tower as smooth, matte painted beams with no rivets or bolt heads at the joints. Use broad, soft highlights only. Render the wheat as a softer mass with only a few ears picked out, not a uniform, glossy repeated pattern."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (soccer ball): smooth, slightly glossy panels with soft seams and a fine pebbled leather texture on the black pentagons. That reads as true material and stays within range. B (stone chess table): decorative hairline cracks are drawn across the table edge, the pedestal and the stool tops. The grass fringe smears into the stone at the base. The squares on the board are glossy while the stone is matte, but the cracks read as an added decorative texture, not quiet stone. The call is uncertain.",
+   "fix": "Draw the stone table as smooth, softly worn matte stone with no drawn crack lines. Keep only a faint, even speckle, and give the base a clean edge where it meets the grass."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "B (beach ball): this matches the real beach-ball card in the reference sheet: smooth vinyl panels, a satin highlight, a purple cap and finely grained sand. A (seahorse): the surface is built from soft, painterly brush shading. Dark painted spots and ridge bands are smeared rather than modelled, and the body has a uniform matte finish. That differs from the real cards' smooth, rendered surfaces. This is a weak signal, and its measurements are within range.",
+   "fix": "Render the seahorse as a smooth, rounded 3D form with a soft satin sheen on the belly. Draw the ridges as broad, clean bands, and keep only a few crisp, small spots with no smudgy brush marks."
+  }
+ ],
+ "pattern": "Generated cards add small, hard-edged hardware and surface detail that the real cards simplify away. Look for rivets and bolt heads at joints, stitch dashes, vent slats, slots and icons, and drawn-on cracks. They also tend toward a uniform lacquered or chrome gloss on every part, where real cards mix matte and satin with a few broad, soft highlights. Dense, repeated decorative texture (wheat, grain, weave) is another tell."
+}

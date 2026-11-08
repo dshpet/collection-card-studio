@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the candelabra is shown dead-on and mirror-symmetric, with the camera at the height of the arms. The base is a shallow ellipse, and in the normals the floor fades into the wall as a soft blur at mid-card rather than meeting it at an edge. This square-on, centered pose matches the generated lesson cards (camera, computer). B: the sneakers are turned three-quarters, seen from a moderately high camera, and sit on a floor that meets the wall at a crisp line. Both shoes share one view and stand on the floor. Both planar_share values (A 0.052, B 0.057) sit at the bottom of the real range, so the number doesn't decide it.",
+   "fix": "Turn the candelabra about 30 degrees so one arm comes toward the viewer and the other goes back. Raise the camera a little so more of the round base's top shows, and stand it on a clear tabletop edge instead of a fading gradient."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the bumper car is seen from a low camera with fairly strong perspective. The floor tiles and yellow lines converge hard toward the back, the arena rim curves at the left edge, and the car shows mostly its front with little top face. This deep scene, with a reflective floor stretching away, is more forced than the mild perspective on the real cards. B: the flip-flops are seen from almost straight above, with no ground plane, on a flat striped background. Both soles share one view, just like the real towel card. B's high planar_share (0.411) fits its flat soles.",
+   "fix": "Raise the camera to a gentle three-quarter view from above so the car's seat and top rim show. Use milder perspective, keep only a small patch of arena floor under the car, and make the background a simple flat backdrop."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the bottle lies diagonally in sand. The sand in front, the rocks and seaweed at the sides, and a lighter water backdrop give three layers spaced like the real cauldron and cooler cards, and the scroll inside follows the bottle's angle. B: the keyboard is seen from a high three-quarter camera, but its X-stand stands on nothing. The feet hover over a flat backdrop of musical notes with no floor and only a faint shadow, so the stand's feet and the keyboard deck have no shared ground to sit on. This is a weak read; nothing else on either card clearly breaks the view.",
+   "fix": "Put the keyboard stand on a visible floor: draw a simple ground plane under both feet, with soft contact shadows where the feet touch it. Keep the same high three-quarter camera so the floor and the keyboard top tilt at the same angle."
+  }
+ ],
+ "pattern": "Generated cards give themselves away in three ways. They prefer a square-on, centered camera; they build deeper scenes or bases with stronger perspective; and they leave the floor vague, either a soft fading gradient or missing under objects that need one. Real cards turn the hero three-quarters under mild perspective and stand it on one clear ground plane, cropped close."
+}
