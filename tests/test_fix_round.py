@@ -83,12 +83,13 @@ class RequestTest(unittest.TestCase):
         self.record("western", run_folder(Namespace(**self.ARGS))[1])
         self.assertEqual(run_folder(Namespace(**{**self.ARGS, "candidates": 8}))[0].name, "western-2")
 
-    def test_an_older_run_counts_as_made_with_the_defaults(self):
+    def test_an_older_run_is_never_continued(self):
         request = run_folder(Namespace(**self.ARGS))[1]
-        self.record("western", {k: v for k, v in request.items() if k not in make_set.LATER})
-        self.assertEqual(run_folder(Namespace(**self.ARGS))[0].name, "western")
-        self.assertEqual(run_folder(Namespace(**{**self.ARGS, "candidates": 8}))[0].name, "western-2")
-        self.assertEqual(run_folder(Namespace(**{**self.ARGS, "review_rounds": 0}))[0].name, "western-2")
+        later = ("blockouts", "candidates", "rater", "review_rounds")
+        self.record("western", {k: v for k, v in request.items() if k not in later})
+        self.assertEqual(run_folder(Namespace(**self.ARGS))[0].name, "western-2")
+        with self.assertRaises(SystemExit):
+            run_folder(Namespace(**{**self.ARGS, "run": "western"}))
 
 
 if __name__ == "__main__":

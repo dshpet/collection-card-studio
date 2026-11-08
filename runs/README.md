@@ -46,4 +46,6 @@ Every generated card and measurement, oldest first: the brief asks for every int
 | `final5/` | Fix round 2: `western-2/`, `period-drama/` and `detective/`, eight cards redrawn; `western/` drew only three candidates and is not used ([README](final5/README.md)) | `make_set.py --keep --candidates 8`, `experiments/final_review.py` |
 | `final6/` | Fix round 3 and the final sets: `detective/` with the new Magnifier, `top-hat-trial/` with a Blender Top Hat that was not used; `final_sets.png` shows the sets ([README](final6/README.md)) | `make_set.py --keep --candidates 8`, `experiments/final_review.py` |
 
+A rerun continues a folder only if its request matches. Folders recorded before the request held candidates, blockouts, judge and review rounds, which is every run here, are never continued: a rerun starts a new folder.
+
 A set run folder holds `request.json`, `plan.json`, `spec.md` (the set as designed, card by card, with the plan's notes on why; early runs have none) and `briefs.json`; the chosen cards in `variant_N/` and a sheet per variant; prompts in `prompts/`, Blender models in `models/`, pairwise judgements in `choose/`; `check.json` with every try's checks, `rounds.json` and `edits.json` with every edit and whether it was kept; and `report.md`. Try ids such as `v1_03_9` (variant 1, card 3, try 9) name candidates kept on disk.

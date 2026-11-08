@@ -618,10 +618,6 @@ def preflight(args):
         raise SystemExit("Cannot start:\n- " + "\n- ".join(missing))
 
 
-# Settings that older runs' request.json lacks; such a run counts as made with the defaults
-LATER = {"blockouts": True, "candidates": CANDIDATES, "rater": JUDGE, "review_rounds": REVIEW_ROUNDS}
-
-
 def run_folder(args):
     """--run, or the theme's first folder that is free or holds this same request, so a rerun continues it and a
     different request never mixes with it: runs/western, then runs/western-2 and so on."""
@@ -639,7 +635,8 @@ def run_folder(args):
             return True
         if not record.exists():
             return False
-        return {**LATER, **load_json(record)} == request
+        # a run recorded before candidates, blockouts, judge and review rounds were part of the request never matches
+        return load_json(record) == request
 
     if args.run:
         run = runs / args.run
