@@ -1,4 +1,4 @@
-"""A grading session for an outside rater, in Ukrainian: a blind real-or-AI test, the task in brief, then the pre-final
+"""A grading session for an outside rater: a blind real-or-AI test, the task in brief, then the pre-final
 sets and cards graded beside the real ones. Answers go to runs/prefinal/outside/ratings.json, apart from the
 producer's runs/ratings.json.
 

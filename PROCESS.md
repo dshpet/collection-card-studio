@@ -36,7 +36,7 @@ What was tried, and why the tool is built the way it is. Numbers are in [STYLE_G
 
 ## 6. Robustness and other generators
 
-- 19 odd and hostile requests (emoji, Ukrainian, brands, franchises, weapons, gore, an injected "ignore all previous rules") all produced plans, with forbidden wishes declined and named in the report. After two repairs, War and Gangsters kept three cards flagged for the producer, and Elections stayed a voting set. Kitchen, Pirates and a Star Wars request ran end to end in one consistent style.
+- 19 odd and risky requests (emoji, brands, franchises, weapons, gore, an injected "ignore all previous rules") all produced plans, with forbidden wishes declined and named in the report. After two repairs, War and Gangsters kept three cards flagged for the producer, and Elections stayed a voting set. Kitchen, Pirates and a Star Wars request ran end to end in one consistent style.
 - A code review fixed three ways a run could stop or write to the wrong place; each run folder now records its request.
 - A generator bake-off on the twins: Codex against Nano Banana Pro through Antigravity (11 twins, until its quota ran out) and Qwen-Image-2.1, open weights on a local GPU ([STYLE_GAPS](analysis/STYLE_GAPS.md#generator-bake-off)). Codex won both.
 - An outside artist graded the pre-final sets of five genres: 3.1 of 5 per card, every set 3–4 of 5, and our surfaces read grainier than the real cards'. Each final set starts from that rater's best-graded variant of its genre.
