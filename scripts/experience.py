@@ -10,7 +10,6 @@ edits when it writes new notes, and the planner reads the Planning lessons.
 
 import argparse
 import re
-from datetime import date
 
 from common import ANALYSIS, JUDGE, ROOT, load_json, save_json
 
@@ -76,7 +75,7 @@ def propose(rater):
         text = text.rstrip("\n") + "\n\n## Proposed\n"
     head, tail = text.split("## Proposed\n", 1)
     section, rest = (tail.split("\n## ", 1) + [""])[:2]
-    added = "".join(f"- {lesson['rule']} *({date.today()}: {lesson['evidence']})*\n" for lesson in answer["lessons"])
+    added = "".join(f"- {lesson['rule']} *({lesson['evidence']})*\n" for lesson in answer["lessons"])
     section = section.rstrip("\n") + ("\n" if section.strip() else "\n") + added
     LESSONS.write_text(head + "## Proposed\n" + section + (f"\n## {rest}" if rest else ""), "utf-8")
     print(f"proposed {len(answer['lessons'])} lessons in {LESSONS.relative_to(ROOT)}")
