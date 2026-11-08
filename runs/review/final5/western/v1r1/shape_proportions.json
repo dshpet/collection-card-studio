@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (jellyfish): the bell is a swollen dome, and the oral arms are a thick wavy sausage that does not taper. The four outer tentacles are uniform thin strokes trailing off the card, which leaves a loose, gappy silhouette (thin_share 0.076, about 3× the real maximum; solidity 0.587, below the real range). B (basketball hoop): the backboard is a flat rectangle with straight runs and tight corner bevels, the inner square is crisp, the rim and net strings stay thin and the pole is a plain bent tube. Its part count and relation are as expected. That matches the flat, tight real cards, such as the birdhouse roof and the clock rim.",
+   "fix": "Draw a compact jellyfish: a shallower bell, and short frilled oral arms that taper to fine tips and stay close under the bell. Use fewer, shorter trailing tentacles, kept inside the card."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (street lamp): the lantern head is a slightly bulbous cage. The scroll arm is a clean, even-width bar with tight curls, and the post has stacked collars with straight sides. It is cropped at the bottom like the real lighthouse card, and its proportions read as a real lamp. B (seahorse): the body is plumped. The belly bulges, the dorsal fin and head crest are enlarged into soft lobes, and the tail curl is a fat spiral. The silhouette is all soft bumps with almost no straight run (straight_share 0.147, below the real range; corner_rate 5.945, above it). This is the rounded, toy-swollen contour that the generated lesson cards show.",
+   "fix": "Draw a slimmer seahorse: a narrow, ridged trunk with clearly segmented bony rings, a small thin dorsal fin and a thin tail that tapers before it curls. Make the crest spikes small and sharp, not rounded lobes."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (campfire): the ring stones are pillowy blobs, the logs are short fat stubs and the flame is a large swollen mass. A large enamel kettle is added as an extra prop, with its stone base and a cabin behind. The silhouette is a lumpy heap with almost no straight run (straight_share 0.17, below the real range). This matches the lessons, where the generated cards add base props such as the lighthouse island and enlarge parts. B (coin binoculars): the head is a rounded block, but the barrels, side yoke and stepped column collars keep straight sides and tight steps (straight_share 0.316, in range). The yoke stays thinner than the body. Its parts are in the right relation.",
+   "fix": "Draw only the campfire: a ring of flatter, angular stones and longer, thinner logs leaning into a tight cone, with a modest flame. No kettle, no extra props."
+  }
+ ],
+ "pattern": "Generated cards inflate the form. Parts are fattened and shortened (stubby logs, plump bodies, oversized lenses and mice), and flat faces are pillowed into soft lobes. Extra props or base platforms appear that a real card would leave out (island rocks, kettles, extra webbing holes). The real cards keep straight runs, tight bevels, thin parts at true thickness, and only the expected parts."
+}

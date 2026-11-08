@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (vending machine): the 2x crop is soft and smeary. The condensation on the glass is scattered speckle noise, the can labels are blurred, and the bottle caps have no crisp edges. Cabinet, door frame, handle and slot all have the same glossy blue plastic sheen. B (ship's wheel): quiet, matte wood finish with faint fine grain on the base and deck, and one glossy accent on the gold hub, close to the real birdhouse and basket cards.",
+   "fix": "Clean, crisp glass door with no water droplets or speckles; sharp edges on cans and bottles; satin-matte blue painted metal cabinet with a brighter shine only on the chrome handle and coin slot."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: coaster cars are evenly lacquered yellow and red plastic on matte blue rails, with broad, simple wheels and no chunky hardware, consistent with the real beach ball and sunscreen bottle. B: the curtain is a smooth satin sheen with no weave and has a high highlight share (0.196), but real cards also simplify fabric, and the brick wall and window frame are clean and matte. Neither card gives a clear surface tell.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the logs have fairly bold, decorative grain lines and ring marks on the cut ends, and the stones are speckled, a bit busier than the quiet wood on real cards. B: brushed blue metal binoculars with broad, smooth parts (a single slot, wide bands, no rivets), consistent with how real cards simplify hardware. There is a slight lean towards A from the decorative grain, but it is too weak to call A generated.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards add extra fine surface detail that real cards leave out: pale contrasting laces with stitch lines on the glove, grip texture and extra dials on the camera, vent slats on the computer, and drawn mortar and brick edges on the lighthouse. They also give every part the same crisp lacquer instead of quiet matte areas with one shiny accent, and older outputs show soft smear and speckle noise (droplets, blurred labels) at 2x."
+}

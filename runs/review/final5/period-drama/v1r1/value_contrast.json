@@ -1,0 +1,54 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (parasol): the overall key is very bright (0.811, above the real range). In the lens, the harlequin diamonds behind the canopy break into scattered white shapes all over the middle of the card. The canopy is a mid-dark grey mass with hard white streaks along its ribs, and a band of bright white lace runs around it. So the card has many small, hard light-dark changes instead of a few large groups. B (fan): there is a soft light glow behind the fan, and the panels alternate in clean dark and mid stripes. Its large light, middle and dark groups read clearly, much like the real cards.",
+   "fix": "Tone down the bright yellow background pattern so it sits as one soft mid-light field. Add a soft glow straight behind the parasol, and make the lace a soft cream rather than pure white so the canopy reads as one calm shape."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (chest): the background is a blotchy dark blue at the top and turns into bright sand at the bottom. The gold lid and trims go almost white and sit right against that dark water, so the chest has no single value against its surroundings (gap only -0.05). The bubbles add scattered small highlights. B (phone booth): one dark red mass stands in a soft light halo on the green pattern, the same centered glow separation the real cards use.",
+   "fix": "Put a soft light glow behind the chest and keep the water around it an even mid-blue. Make the gold trims warm mid-yellow, not near-white, and use fewer bright bubbles."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B (cake stand): in the lens, the cream stand, the cakes and the white tablecloth all fall into the same top white level, against a solid near-black purple wall. The hero melts into the tablecloth, and the card splits into a black top half and a white bottom half. Contrast (0.209), gap (+0.199) and vignette (-0.086) are all outside the real range. A (fountain): the stone basins are light against a mid-light striped wall, the water and paving sit in the middle values, and the groups are layered the way the real cards are.",
+   "fix": "Make the purple wall a lighter, brighter violet with a soft glow behind the stand. Change the tablecloth to a mid-tone color clearly darker than the cream stand, so the stand stands out as the lightest shape."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (top hat): almost the whole hero is a near-black mass with hard glossy white streaks on the crown and brim, so the local contrast is very hard (rms 0.225, gap -0.455, both outside the real range). The concentric rings run evenly into the corners with no brighter center behind the hat. B (graduation cap): the dark cap sits on a clear light glow disc in the middle, with darker rings toward the edges, which is the centered-glow layout of the real cards. Its highlights are softer.",
+   "fix": "Draw the top hat in soft charcoal with gentle, broad highlights instead of sharp white streaks. Put a bright soft glow in the middle of the background behind the hat, fading darker toward the corners."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (candelabra): a dark, low-key teal backdrop (0.594, at the bottom of the real range). Only a small spotlight pool lights the floor, and the bright white candles carry the hero, which gives a theatrical dark-setting look unlike the bright real cards. The vignette is slightly negative. B (sneakers): a bright, plain two-tone studio backdrop with a near-white floor and no glow. That is unusual too, but the dark shoes against the light ground read clearly.",
+   "fix": "Lighten the background to a bright, saturated teal with a soft glow behind the candelabra and slightly darker corners. Keep the brass in warm mid-tones rather than a mix of near-white and dark streaks."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (lace fan): the whole card sits in the top two grey levels. The pale pink fan and cream lace are white on a light blue background with no darks anywhere (rms 0.066, below the real range). The hero is set apart by hue only, not by value. B (neckerchief): a dark red scarf with a darker shadowed collar sits on a light swirl that brightens behind the badge, giving clear light, middle and dark groups like the real cards.",
+   "fix": "Make the fan a deeper rose pink with darker shadows in the folds and under the ribs. Use a mid-to-deep blue background with darker corners and a soft glow just behind the fan, so the fan reads lighter than its surroundings."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (paddling pool): in the lens, the pool rings, the water and the grass all sit in the same middle greys. The pool melts into the lawn, and noisy speckled grass texture spreads small contrast over the whole bottom half. The only strong dark is the fence's diagonal shadow in the top-left corner, away from the hero. A (cooler): the dark red box is clearly set against bright sand and a light sky band, and the white lid frames the cans. The vignette (0.117) runs a little high, but the hero separation is clear.",
+   "fix": "Make the grass a darker, smoother green with less fine texture, and put a soft light patch on the lawn directly behind the pool. Give the pool rings a bright top edge so the pool reads lighter than the grass."
+  }
+ ],
+ "pattern": "Generated cards break the real cards' value plan of a single hero against a centered glow. Either the hero sits in the same grey level as its surroundings (white stand on a white tablecloth, a pale fan on a light background, a pool in grass of the same grey), or the card splits into a hard black/white half-and-half. When the hero is dark, it gets near-black masses with sharp glossy white streaks, and the background runs evenly to the edges with no glow behind the hero."
+}

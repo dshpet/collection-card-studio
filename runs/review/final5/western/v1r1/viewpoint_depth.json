@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the jellyfish is a flat side view floating whole in the middle of the card. Its normals read like a raised relief on a flat plane: the bell and tentacles all face the camera, with no turn into depth. The bubbles and light rays are scattered at one sharp depth, not real layers. B: the hoop is seen from a low camera that looks slightly up. The backboard is turned in 3/4 with a visible side thickness on the right. The pole curves away and is cut by the bottom edge. The rim ellipse and backboard share one view. The tight crop with the pole running off the edge matches the real lighthouse and desk cards. B's planar_share of 0.699 is at the top of the real range, but its flat faces are a real flat backboard.",
+   "fix": "Turn the jellyfish slightly toward the camera so the underside of the bell shows as a dark hollow and the tentacles come forward and go back into depth. Make the near tentacles larger and the far ones smaller. Push the bubbles to clearly different distances: one big soft bubble in front and tiny soft ones far behind."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the lamp post is seen from a low camera with the dome tilted in mild 3/4. The pole runs off the bottom edge, like the real lighthouse crop. The normals show a turned, round lantern with a lit side and a shadow side. B: the seahorse is a strict side profile floating in the middle with nothing below it. Its normals are an even, shallow relief (planar_share 0.053, near the bottom of the real range). The body reads as an embossed cutout rather than a rounded form turned in space, and the snout and fins lie in the same plane as the body.",
+   "fix": "Show the seahorse in a 3/4 view, turned slightly toward the camera. The near side of the belly and head should swell toward the viewer, the far fin should be partly hidden behind the body, and the snout should point slightly toward the camera so it is shortened. Let the curled tail come forward in front of the body."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the campfire is seen from a high camera that shows the full top of the stone ring. The whole object sits centred with margin on every side, on a ground plane that tilts toward the viewer. The trees and cabin behind it are as sharp and detailed as the hero, so the layers are stacked but not separated. This is the generated habit from the lessons: a high, whole-object, everything-in-focus view. B: the binocular viewer is seen from a low, close camera and cropped by the bottom edge. The railing recedes in mild perspective and the city behind it is paler and softer, so foreground, hero and background are clearly separated. That matches the real cards' tight crops.",
+   "fix": "Lower the camera to just above the stones and move closer, so the front stones and logs run off the bottom edge of the card. Show only a thin sliver of the top of the stone ring. Make the trees and cabin behind it paler, softer and simpler, clearly far away, with fewer details than the fire."
+  }
+ ],
+ "pattern": "Generated cards show the whole object centred with margin all round. The camera is either a level, front-on stand-in shot or a high view showing the top, and every layer is equally sharp. Real cards crop the hero tightly so it runs off a card edge, use a lower 3/4 camera with mild perspective, and keep the background paler and simpler than the hero. Flat-profile subjects in generated cards read as embossed reliefs in the normals instead of forms turned in depth."
+}

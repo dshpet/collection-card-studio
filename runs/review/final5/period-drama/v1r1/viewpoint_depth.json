@@ -1,0 +1,54 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the parasol is seen from about 30° above in a three-quarter view. The canopy top and the lace hem form consistent ellipses, and the handle hangs straight down from under the centre. B: the fan is tilted slightly in the picture plane. The leaf arc is centred on the pivot rivet and the flat pleats share one plane. Both float on a flat patterned background with no ground plane. I see no viewpoint inconsistency on either card.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the chest body is seen in three-quarter view from slightly above, and its right side panel is narrow. The open lid's arched right end cap reads much wider and rounder than that side panel, even though it lies in the same plane, so the lid and the body seem to be seen from slightly different angles. B: the phone booth stands on a flat floor with the horizon near its base. The plinth shows a little top face, the roof shows none, and the vertical edges stay parallel. The view is consistent.",
+   "fix": "Draw the open lid's end cap at the same angle as the chest's side panel, so it is just as narrow and foreshortened, with the hinge running straight along the back top edge."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the fountain is seen from high up with fairly strong perspective. The bowl ellipses open up from top to bottom in a consistent way, but the paving at the left and right edges bends down slightly. B: the cake stand on its table is also seen from high up. The two plates open up consistently, and the table edge and back wall form a clean horizon. Both read as one camera, with nothing decisive.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the top hat is tilted and seen from slightly above. The crown's top ellipse and the curled brim tilt in the same direction. B: we see the top of the mortarboard as a parallelogram receding to the right, and the band of the cap underneath curves downward, which agrees with a camera above. Both are floating icons with mild perspective that matches the real cards.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the candelabra is seen from the front at roughly eye level, on a soft gradient floor with no hard horizon. The base ellipse and the cup ellipses are consistent. B: the two sneakers sit on a floor with a hard horizon at about 45% of the card height. The back shoe is a near copy of the front one, at the same size and the same angle, with no shrinking or change of view for its greater distance. The studio floor-and-wall line is harder than on any real card.",
+   "fix": "Make the back shoe slightly smaller and turned a little differently from the front one, and fade the floor softly into the background with no hard horizon line."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the fan is drawn straight-on like a flat lay. It is perfectly symmetric, the pleats are shallow, and there is no tilt or foreshortening, so it reads almost like a flat 2D picture. B: we look slightly down into the scarf's collar loop and see its inner back, while the knot and tails hang toward the camera, so the scarf has real depth.",
+   "fix": "Turn the fan about 20° and tip its top edge away from the viewer, so the pleats foreshorten toward one side and the guard stick shows some thickness."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the sea horizon sits at about 58% of the card height, which puts eye level below the cooler's rim. Yet we look down into the open cooler and see the can tops and the top of the rim from above, so the background camera and the object camera disagree. B: the paddling pool is seen from high up. The ring ellipses, the grass ground and the fence along the back all fit one high camera.",
+   "fix": "Raise the sea horizon above the cooler's rim, or show the beach from higher up so the sand fills most of the background behind the cooler, so the background agrees with looking down into the cooler."
+  }
+ ],
+ "pattern": "On camera and depth, generated cards give themselves away in three ways. The horizon or floor line puts eye level in a place that does not match how much top face the object shows. Neighbouring parts of one object (a lid and its body, a pair of shoes) do not share one view. Objects are shown dead-front and symmetric with no foreshortening. Real cards use one mild three-quarter camera, set slightly above the object, for the object and its ground alike."
+}

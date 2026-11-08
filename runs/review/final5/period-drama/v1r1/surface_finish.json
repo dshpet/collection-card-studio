@@ -1,0 +1,54 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (parasol): the canopy has a visible fine cloth weave. The trim is lace with punched eyelet flowers, and the rib caps are glossy. At 2× it reads as dense textile detail laid over a lacquered shine, and gloss_share (0.194) is above the real range. B (folding fan): the paper is flat, matte and plain, the sticks are smooth wood-coloured strips and there is no added micro detail. That matches the quiet simplification of the real cards.",
+   "fix": "Paint the parasol canopy as smooth, soft matte fabric with no visible weave. Simplify the lace trim into a plain scalloped white band with a few broad soft shapes instead of punched holes. Keep only a small soft highlight on the top knob and handle."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (chest): the wood planks have quiet, broad grain. The gold trim is smooth and metallic, the coins have soft rims and the gems are glossy, so the matte wood and shiny gold sit side by side the way they do on the real barrel card. B (phone box): the whole box is one glossy red lacquer with the same sheen on the door frame, panes and roof. Gloss_share (0.188) and micro_texture are above the real range. The phone inside is grey plastic with tiny keypad buttons.",
+   "fix": "Paint the phone box as painted cast metal with a softer satin finish. Use broad, gentle highlights only on the rounded roof and frame edges, and keep the glass panes clearly separate with a faint cool reflection. Simplify the phone inside into a few large shapes."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (fountain): the stone is matte, with soft carved lobes on the basin. The water is glossy and translucent, and the paving bricks are matte, so there is a clear material contrast. B (cake stand): the stand, tablecloth and little cakes all share one smooth clay finish. The porcelain doesn't shine, the fondant cakes look the same as the plate, and the cloth has no fabric softness. Highlight_share (0.269) is above the real range because the whole surface is evenly bright.",
+   "fix": "Make the cake stand glossy white porcelain with crisp curved highlights on the plate rims and the knob. Give the cakes a soft matte sugar-icing surface with pearl tops, and drape the tablecloth with soft fabric folds that are clearly duller than the china."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (top hat): the felt crown is a soft, dark satin with a long vertical sheen, the ribbon band is a shinier satin red and the brim is slightly glossier. That gives a believable mix of gloss within one object. B (graduation cap): the board, skullcap, gold band and tassel all have the same rubbery matte-plastic finish. The tassel is one smooth lump with no strand separation. The measurements are similar for both, so this call is weak.",
+   "fix": "Give the mortarboard a cloth-covered look with a soft matte finish and a crisp board edge. Make the tassel a bundle of a few broad, separated threads with a slight silky sheen, and give the button a small satin highlight."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (candelabra): the brass is polished gold with smooth reflections and the wax candles are matte. The material reads clearly and the detail is sparse. B (sneakers): the upper is covered in fine perforation dots and the laces are busy multicoloured cords with candy-coloured tips. The rubber, mesh and laces all share the same soft, slightly smeared finish. Detail_subject (0.072) and micro_texture (0.031) are at the top of the real range, with added fine detail the way the generated lesson cards had it.",
+   "fix": "Simplify the sneakers. Show the mesh as a plain matte fabric panel with no dot pattern, and use fewer, thicker laces in one colour. Give the rubber sole a smooth, slightly glossy finish so it reads differently from the matte fabric upper."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (lace fan): the trim is a photographic lace edge with real-looking openwork. The pink pleats have a shiny satin sheen on every fold, and the gold pin is glossy. Gloss_share (0.243) and highlight_share (0.272) are both above the real range, and detail_subject is high. B (neckerchief): smooth matte cloth with broad soft folds and a simple glossy badge. That is the restrained finish of the real cards.",
+   "fix": "Paint the fan leaf as soft matte paper or silk with only a faint sheen on a few pleats. Replace the realistic lace with a simple scalloped cream border made of a few broad shapes, and keep one small highlight on the pivot pin."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (cooler): the red plastic body is satin, the white lid liner is matte, and the cans have shiny aluminium tops with bright highlights. The ice is translucent. This is the mixed-material gloss of the real cards. B (paddling pool): the inflatable vinyl rings are flat and matte when they should be shiny. The grass and fence planks show loose painterly brush strokes, and the water ripples look smeared. Gloss_share (0.028) is at the low edge of the real range.",
+   "fix": "Make the pool rings shiny inflatable vinyl with long, crisp, curved white highlights along the top of each tube. Paint the grass as smooth, simple clumps without loose brush strokes, and give the water clean, soft ripple highlights."
+  }
+ ],
+ "pattern": "The generated cards give themselves away in three ways. Some add fine, realistic detail the real cards leave out: lace openwork, fabric weave, mesh dots, stitch lines, vents. Some put one finish over the whole object, either an even lacquer or a clay-matte look, so wood, metal, cloth and plastic stop looking different. A few show loose painterly brush or smeared texture. On the real cards each material keeps its own gloss level, highlights are sparse and broad, and fine detail is simplified into a few smooth shapes."
+}

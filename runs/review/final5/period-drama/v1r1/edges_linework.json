@@ -1,0 +1,54 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (umbrella): the canopy rim has a strong contour, but it fades toward the top left of the dome. The lace hem is a busy band of small eyelet marks, and the ribs read as soft raised tubes, not as lines. B (fan): one dark contour of even width runs around the whole fan silhouette, and every pleat and rib is closed off with the same hard line. That makes it read as a traced outline, not a form edge, which is the main pattern in the generated lesson cards. B's subject edge density is low (0.06), so the pleats are filled in flat between the lines.",
+   "fix": "Let the fan's outer edge go soft where the pink paper turns away from the light. Don't put a dark line around the silhouette. Separate the pleats with light and shadow instead of drawn lines, and keep the sharpest edge only on the wooden guard at the pivot."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (treasure chest): line weight varies. The lid and front band are firm, the coins and wood planks have softer, broken edges, and the sand edge almost disappears. B (phone booth): every window pane has a crisp double-ruled border of the same weight. A hard, ruler-straight floor line crosses the whole card, and each suitcase in the background has its own clean closed outline. Edges are equally sharp from front to back, like the generated computer and lighthouse lesson cards.",
+   "fix": "Draw the booth's window bars as rounded, slightly soft red bars, not doubled sharp lines. Soften the far edge of the booth and the background suitcase pattern so they blur into the green. Let the floor meet the wall with a soft shadow, not a hard line."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (fountain): the paving around the basin is a dense grid of dark, crisp groove lines that runs to the card edges. Background edge density is 0.046, the top of the real range, much like the busy wood grain behind the generated computers. The water streams also have hard edges. B (cake stand): the stand and cakes have moderate edges and the background stripes are faint. Only the tablecloth edge is a single dark line.",
+   "fix": "Paint the paving stones as soft, low-contrast tiles with thin, light gaps that fade out toward the card edges. Give the water streams soft, glowing edges, not sharp outlines."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (top hat): the brim underside has a strong edge, but the crown edge goes soft and almost disappears on the upper left. The band edges are gentle, giving a clear edge hierarchy. B (graduation cap): a continuous contour of even width runs around the board's rim, the skullcap and the gold band, and the board's top edge is drawn as a doubled line. The edges are equally crisp all over. Its outline_darkness is also just outside the real range (-0.096). The evidence is weak, and both could be real.",
+   "fix": "Round off the board's edge with a soft bevel highlight, not a hard drawn rim. Let the dark cap body blend into its shadow at the back, and keep the crispest edge for the button and tassel."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (candelabra): each flame has a soft glowing halo around it. The gold arms and base are cut into many fine, sharp reflection edges, pushing subject edge density to 0.278, above every real card. The background is a featureless gradient. B (sneakers): heavy dark contours around the soles and the cast shadow, and a hard horizon line. Its density (0.227) is at the top of the real range. Both cards are atypical. On edges, A's density outlier and flame halos are the stronger tell.",
+   "fix": "Model the gold candelabra with a few broad, smooth highlights instead of many small sharp reflections. Draw the flames with clean edges and no glow haze around them."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (lace fan): a dense fringe of tiny dark lace marks runs along the top. Every rib is separated by a hard line, and a dark contour runs around the whole silhouette. Subject edge density is 0.161, above the real range, the same over-detailing seen in the generated glove's webbing and the lighthouse rocks. B (neckerchief): a few large soft forms with smooth, gently shaded folds. The silhouette edge is clean and the emblem is the sharpest spot, so the edges get sharper toward the focus.",
+   "fix": "Simplify the lace border into a soft scalloped edge with only a few large holes. Separate the paper folds with soft shading rather than hard dividing lines, and keep the sharpest edge only on the pivot pin."
+  },
+  {
+   "pair": "p07",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (cooler): the lid, the lid's inner tray, the handle and the cow badge all have crisp double contours of even weight, and outline_darkness (0.126) is near the top of the real range. These are the clean, groove-like panel edges of the generated computer cards. B (paddling pool): the rings are separated by soft shading, the water ripples and fence boards have looser, broken edges, and the rim fades where it meets the grass.",
+   "fix": "Make the cooler's lid rim and badge soft, rounded bevels without dark double lines. Let the cooler's bottom edge soften into the sand and its shadow."
+  }
+ ],
+ "pattern": "Generated cards wrap the whole silhouette and every interior panel in a continuous contour of even weight, often a doubled groove. Edges are equally sharp in front and behind, with no lost edges where forms turn away. They also add busy micro-detail, such as lace, paving grid, glove webbing and wood grain, that pushes edge density in the subject or background above the real cards. Real cards vary line weight, keep the sharpest edges at the focal point, and let secondary edges soften into shading."
+}

@@ -1,0 +1,54 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the parasol stands upright, dead center and mirror-symmetric, with an even band of empty diamond pattern all round it (margin 0.098). The thin handle leaves the lower third mostly empty. B: the fan is tilted on a diagonal, larger (area 0.346) and runs close to the right edge (margin 0.058), like the angled ticket and signpost cards.",
+   "fix": "Show the parasol larger and tilted about 20° in a three-quarter view, canopy toward the upper left. Let the canopy run close to the card edges so it fills the frame. Don't leave it centered with equal empty space on every side."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: a tall, narrow phone booth stands straight and front-on in the middle of the card. Box width is 0.512, below the real range of 0.661 to 0.921, which leaves wide empty green strips on both sides. The faint suitcase wallpaper also competes as pattern. A: the chest is in three-quarter view, fills the width (0.835) and sits low and close to the edges, like the barrel card.",
+   "fix": "Turn the phone booth to a three-quarter angle and move the camera closer. Crop the bottom of the booth at the card's lower edge so it fills more of the width. Use a plain glowing background without the suitcase pattern."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the cake stand is spindly and centered, with low occupancy (0.243). Its margin (0.104) is larger than any real card's, and a big empty white tablecloth fills the lower half. At thumbnail size the small cakes read as scattered dots. A: the fountain is broad, fills the width (0.916) and almost touches the side edges.",
+   "fix": "Move in close to the cake stand. Make the lower plate span almost the full card width and crop the base at the bottom edge. Cut the empty tablecloth so the cakes are large and readable."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: the graduation cap is a flat, wide shape floating in the middle of the card. Box height is 0.506, below the real minimum of 0.581, so the top and bottom bands of the concentric rings are empty. A: the top hat is taller (0.592) and tilted, with its brim running off toward the side edges.",
+   "fix": "Tilt the graduation cap more steeply toward the viewer so its top board and the cap below fill more of the card's height. Let the tassel hang down close to the bottom edge."
+  },
+  {
+   "pair": "p05",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the candelabra is a thin, perfectly symmetric front view, centered, and fills only 0.124 of the card (real cards are at least 0.264). Most of the card is empty teal, and at thumbnail size it reads as three small lines. B: the pair of shoes is wide (0.849), at a three-quarter angle, and runs close to the edge (0.033), though it is somewhat short.",
+   "fix": "Draw the candelabra much larger and from a slight three-quarter angle. Make the arms wider so they reach close to the card edges and the flames come near the top. Don't leave a large empty background around a small centered object."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the fan lies flat, seen straight on and mirror-symmetric, in a wide strip across the middle of the card. Box height is 0.475, below the real minimum of 0.581, so the top and bottom thirds are empty wave pattern. B: the scarf fills the card from top to bottom (0.833), and its knot and badge form a clear center point.",
+   "fix": "Tilt the fan diagonally and show it in a three-quarter view, raised up toward the viewer. Make it large enough to fill most of the card's height, close to the edges, not lying flat in a thin band across the middle."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the cooler is in three-quarter view, fills most of the card's height (0.8) and is set in a beach scene, like the barrel and duck cards. B: the wading pool spans the full width (0.94) and almost touches the side edges (0.023), with the fence behind it and the duck as a small second focus inside. Both measurements are within the real ranges, and both match real scene-based cards.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards show the whole object front-on, centered and mirror-symmetric, with an even band of empty background on every side. The real cards tilt the hero to a three-quarter angle, push it close to or past an edge, and fill the frame. In the lessons, the generated lighthouse is shown whole on an island while the real one is cropped at the bottom. Thin or flat generated objects end up outside the real ranges: too narrow (phone booth), too short (fan, graduation cap), too little of the card filled (candelabra), or with margins that are too wide (cake stand)."
+}

@@ -755,7 +755,9 @@ def main():
             notes, before, attempt = state["notes"], state["before"], state["attempt"]
             kept = set()
             if notes:
-                jobs = [(b, [notes[b["id"]]], run / "tries" / f"{before[b['id']]}.png") for b in chosen if b["id"] in notes]
+                # the producer's note holds through the edit, which otherwise drifts, such as a handle grown long again
+                jobs = [(b, [notes[b["id"]]] + ([f"Keep: {b['card']['note']}"] if b["card"].get("note") else []),
+                         run / "tries" / f"{before[b['id']]}.png") for b in chosen if b["id"] in notes]
                 draw_and_check(jobs, attempt)
                 drawn = [t for b in chosen if b["id"] in notes for t in history[b["id"]]
                          if t["try_id"] == f"{b['id']}_{attempt}"]

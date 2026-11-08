@@ -1,0 +1,33 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the blue sneakers carry neon lime collars, teal laces, a pink lace and orange/magenta sole flecks, about five pure hue families on one hero (5.49, above the real range). The lens breaks the shoe into many small saturated masses instead of one blue body with one accent. B: the handcuffs are plain neutral grey on a salmon field. That is a near-monochrome card with one quiet hero, like the grey binoculars on the real cards. Its low hue count is unusual but believable.",
+   "fix": "Blue running shoes with plain white soles and white laces, one small orange accent on the heel only; no neon green, teal or pink trims."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: a grey-ringed magnifier with a pure red handle on a loud green ring backdrop. The glass repeats the backdrop green, which is natural for glass. The backdrop is very saturated, but the real scarf card has the same kind of ring field. B: a red-framed white backboard with an orange rim on cyan, a warm hero on a cool backdrop as on real cards. In the lens the red frame stays one unshaded red mass. Neither card shows the warm-pushed or cream-tinted look from the lessons.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: the stone fountain is cream-beige, the paving is warm tan/orange and the striped backdrop is yellow, so hero and backdrop share the same warm temperature (warm_share 0.86, above the real range). Only the cyan water breaks it. This is the lesson pattern where generated cards turn neutral stone or plastic into warm cream. In the lens the stone and paving merge into one warm mass. A: a neutral black-and-white ball on green grass with a believable local color and a clear figure against the field.",
+   "fix": "Fountain in cool light-grey stone with bluish-grey shadows, grey paving stones, on the yellow striped backdrop; keep the bright blue water."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the jellyfish is saturated magenta-pink with cyan glowing spots and a hot-pink tentacle rim, so hero chroma sits at the top of the real range (0.188). The body glows as pure hue with no muted area, and both hero and indigo backdrop are equally loud. B: a grey metal chair with a purple seat and canopy and a red/white ring under a sky with white clouds. Its grey frame gives neutral rest, and the red ring is a single warm accent.",
+   "fix": "Jellyfish in soft translucent pale pink with milky white highlights and muted lilac tentacles; no neon cyan spots, keep the deep blue water calmer."
+  }
+ ],
+ "pattern": "Generated cards push the hero to pure, evenly loud hues. Neutral materials (white plastic, stone, leather) drift to warm cream or orange. The whole card warms until hero and backdrop share one temperature. Small multi-color neon trims are added, and the hero's shadows stay the same saturated hue instead of shifting darker and richer."
+}

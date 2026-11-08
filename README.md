@@ -4,13 +4,13 @@ A tool that turns a theme and a producer's free-form wishes into 3–5 versions 
 
 ![Batch 2: Western, Sci-Fi and Horror, one version each, object cards only](runs/batch2.png)
 
-*Batch 2, one version per film genre, object cards only: graded 3.85 of 5 by the producer, beside their references and not blind. The final sets, Western, Period Drama and Detective, were drawn on 2026-11-08 (`runs/final3/`, [what changed](runs/final3/README.md)); the producer graded every set 4 of 5, and a fix round redrew the 17 cards they commented on: `runs/final4/` ([what changed](runs/final4/README.md)). The 2026-11-03 sets are in `runs/final/`.*
+*Batch 2, one version per film genre, object cards only: graded 3.85 of 5 by the producer, beside their references and not blind. The final sets, Western, Period Drama and Detective, were drawn on 2026-11-08 (`runs/final3/`, [what changed](runs/final3/README.md)); the producer graded every set 4 of 5, and a fix round redrew the 17 cards they commented on: `runs/final4/` ([what changed](runs/final4/README.md)). Round 2 got 5, 4, 4 and 5 for the cast; a second fix round redrew eight cards: `runs/final5/` ([what changed](runs/final5/README.md)). The 2026-11-03 sets are in `runs/final/`.*
 
 | The brief asks for | Here |
 |---|---|
 | An analysis of how the reference sets are built and drawn | [analysis/SYNTHESIS.md](analysis/SYNTHESIS.md), dashboard `analysis/report.html` |
 | A tool: theme and wishes in, 3–5 variants of a set out | The [make-card-set skill](.claude/skills/make-card-set/SKILL.md) over `scripts/make_set.py` |
-| Three film-genre sets, no gold cards | `runs/final4/western`, `period-drama-2`, `detective`, each with its `spec.md`; six bonus cast cards in `runs/final4/cast/` |
+| Three film-genre sets, no gold cards | `runs/final5/western-2`, `period-drama`, `detective`, each with its `spec.md`; six bonus cast cards in `runs/final4/cast/` |
 | Our sets against the references | [analysis/COMPARISON.md](analysis/COMPARISON.md) |
 | The process and what was tried | [PROCESS.md](PROCESS.md), [STYLE_GAPS](analysis/STYLE_GAPS.md), [experiments/](experiments/README.md), [runs/](runs/README.md) |
 
@@ -51,7 +51,7 @@ flowchart LR
 | Edit | Codex applies the notes. An edit stays only if it beats its draft, and every outcome is saved for later runs |
 | Deliver | `runs/<theme>/variant_N/`, a sheet per variant and `report.md` |
 
-A run first checks that its tools and data are in place. A rerun of the same request continues where it stopped; another request for the same theme gets `runs/<theme>-2`. `--alongside <folder> ...` names the other sets of the same collection, whose objects the plan must not repeat. `--plan <file>` draws a plan a producer has checked, such as the drafts in `runs/plans/`. `--candidates 1 --review-rounds 0` gives a quick draft. `--cast 1` adds a character card per variant, drawn with the game's cast. `--keep <folder>` starts a fix round from an earlier run of the set, with `--plan` naming the changed plan and `--run` a new folder: cards whose plan is unchanged keep their drawings and picks, and only the others are drawn, picked and reviewed. A card's `note` in the plan, such as the producer's fix, closes its brief. `scripts/screen.py <folder> --variant 1 --color blue` places a variant in the game's window.
+A run first checks that its tools and data are in place. A rerun of the same request continues where it stopped; another request for the same theme gets `runs/<theme>-2`. `--alongside <folder> ...` names the other sets of the same collection, whose objects the plan must not repeat. `--plan <file>` draws a plan a producer has checked, such as the drafts in `runs/plans/`. `--candidates 1 --review-rounds 0` gives a quick draft. `--cast 1` adds a character card per variant, drawn with the game's cast. `--keep <folder>` starts a fix round from an earlier run of the set, with `--plan` naming the changed plan and `--run` a new folder: cards whose plan is unchanged keep their drawings and picks, and only the others are drawn, picked and reviewed. A card's `note` in the plan, such as the producer's fix, closes its brief, and the review's edit notes may not undo it. `scripts/screen.py <folder> --variant 1 --color blue` places a variant in the game's window.
 
 One run peaks at about 5 GB of GPU memory and each Blender render adds about 2 GB, so on a 24 GB card three runs fit at once with `--workers 2`.
 

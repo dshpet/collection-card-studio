@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (ship's wheel): the floor is covered in dark plank seams plus crack and grain strokes. On the edge map it is the busiest area on the card, and background density is 0.034, above the real range of 0.008 to 0.021. The wheel rim and spoke handles have an even, closed dark contour all the way round, like an inked outline, and the faint ray lines run through the sky behind it. This matches the generated computer desks in the lessons, which add wood-grain linework the real desk does not have. A (vending machine): the plain purple backdrop and floor carry almost no edges (0.012, inside the real range). Its strongest edges are on the door frame and dispenser slot, and the outer box edge softens into the floor shadow, which is the hierarchy the real cards show.",
+   "fix": "Plain wooden deck with only a few faint plank seams and no cracks or grain lines. Soften and blur the deck as it goes back. No dark outline around the wheel: separate the rim from the background with light and color, and keep the crispest edges on the brass hub and the front of the rim."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (roller coaster): each car has a closed dark rim contour, the track is drawn as double lines, and the hills and clouds carry small grass and cloud strokes. B (window): crisp, even frame edges, regular brick-grout lines across the whole wall, and the curtain folds drawn with long dark lines. Background density is the same on both (0.04, inside the real range). Subject density and outline darkness are within or near the real range on both, apart from B's slightly negative outline value. Neither card shows a clear lesson-style tell, such as wood-grain clutter or ruled outlines, strongly enough to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (campfire): the edge hierarchy is reversed. The pine trees, log cabin, grass tufts and scattered pebbles all carry about as many line marks as the fire and logs, and the trees have a hard dark top silhouette. Subject density is 0.068, below the real minimum of 0.076, and background density is the higher of the pair at 0.055. The hero therefore gets lost in background linework, like the generated lighthouses with their rock-and-wave clutter and the generated desks with grain. B (binocular viewer): the strongest edges are clearly on the hero's eyepieces, coin slot and pole collar (subject 0.172). The city skyline behind is drawn with thin, lighter lines that recede, which matches the real-card pattern of the sharpest edges at the focus.",
+   "fix": "Keep the forest and cabin soft and simplified: no individual grass tufts, no scattered pebbles, and blurred tree shapes with no dark silhouette edge. Put the crispest edges and the most detail on the logs, stones and kettle in the center, and let the background fade to smooth, low-detail shapes."
+  }
+ ],
+ "pattern": "Generated cards spread busy, evenly weighted linework across the background, such as wood grain, plank cracks, grass tufts, pebbles and rock clutter, and often draw even, closed contours around shapes. That weakens or reverses the edge hierarchy. On real cards the backgrounds are mostly plain and soft, and the crispest edges stay on the hero."
+}

@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: a pure saturated blue vending machine on a magenta-violet backdrop. The cans and bottles are bright pinks, yellows and greens. Both hero and backdrop are cool, which breaks the warm-on-cool rule (warm_share 0.026). The backdrop chroma (0.20), though, is as loud as on the anchor cards, like the trophy on purple. B: an orange-brown wheel on a washed-out lavender and peach sunburst. Its backdrop chroma (0.076) is far below every real card (min 0.138). The peach glow behind the wheel and the tan wooden floor repeat the wheel's own warm hue, so the hero has no opposing backdrop color. Neither card is clean on this vector. B's pastel, low-chroma backdrop that echoes the hero's hue is further from the anchor set, where backgrounds are always bold.",
+   "fix": "Paint the sky behind the ship's wheel as a strong saturated cool color, such as deep teal or royal blue with bold sunburst rays. Make the deck floor a muted cool grey-blue instead of tan wood, so the warm brown wheel is the only warm mass on the card."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the coaster cars are pure lemon yellow with pure red seats. The track is a fully saturated royal blue, the sky is a saturated blue and the grass is a saturated green. Every mass sits at full hue and nothing neutral rests the eye. Subject chroma 0.173 is above the real maximum of 0.153. B: a white window frame with soft lavender-grey shadows, a dark navy interior and a lime curtain, set on orange brick. The hero carries neutral whites and a dark interior to balance the one loud accent, much like the real computer card's grey body. The brick is loud (0.163), but it is the background doing its job against a cool and neutral hero.",
+   "fix": "Make the coaster cars a softer butter-yellow with dark maroon seat interiors. Give the shadowed sides of the cars a muted brownish-orange. Paint the track steel a duller slate blue with grey highlights, so not every surface is at full color."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the whole card is pulled warm. There is orange dirt ground, orange-yellow fire, orange logs and a log cabin lit amber, and only the dark pines and the blue kettle push back. Warm_share is 0.673, above the real maximum. The shadows under the logs and rocks go to a dull brown-olive (shadow_chroma 0.608, below the real minimum), not a rich related shadow color. This matches the lessons' generated computer, where cream plastic and orange wood flooded the card. B: blue-steel binoculars against a pale blue city skyline. The palette is cool and limited, the steel shadows stay a clean deeper blue, and the balcony rail and glass give neutral grey-white rest.",
+   "fix": "Make the campfire the only warm mass. Paint the ground a cool grey-green forest floor with blue-grey stones, and push the background pines and sky into deep cool blue-greens. Give the cabin cool shaded wood instead of amber glow. Paint the shadows under the logs a deep plum-brown rather than muddy olive."
+  }
+ ],
+ "pattern": "Generated cards push the hero to pure, full-strength hue with no neutral rest. Examples are the orange glove and the lemon coaster cars. They also pull the whole card warm, as with the cream computer on an orange wood table or the orange campfire ground. Real cards keep believable local color: grey plastic, tan leather, white plaster. They set the hero against a backdrop of the opposite temperature, and their shadows shift to a related cool color (lavender-grey, deep blue) instead of muddy brown or orange."
+}

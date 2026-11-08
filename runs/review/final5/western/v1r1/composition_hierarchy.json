@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the jellyfish floats whole in the middle of the card with clear margins on every side (margin_min 0.065). Small bubbles at left and right add extra points of focus, and a thin cyan strip runs along the top edge. B: the basketball backboard is big and tilted, and its pole runs off the bottom edge (margin 0). That matches how the real lighthouse is cropped by the bottom edge. At thumbnail size, B reads first as a hoop. A reads as a jellyfish, but its trailing tentacles spread its visual weight thin, with a low 0.245 fill.",
+   "fix": "Make the jellyfish larger and closer, so its tentacles run off the bottom edge of the card. Remove the scattered bubbles and the bright strip along the top edge."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the street lamp's post is cut off by the bottom edge (margin 0) and the lantern head sits in the upper middle, the same crop as the real lighthouse. B: the seahorse floats whole and centered with even space all around (margin 0.056). Its box is narrow (0.553 width), just under the real range. This is the same pattern as the generated lessons, where the whole object is kept inside the frame.",
+   "fix": "Bring the seahorse closer and make it larger, letting its curled tail be cut off by the bottom edge. Have its body fill more of the card's width."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a wide scene in which the campfire sits whole in the lower middle (margin 0.03). A blue kettle on the right and a glowing log cabin in the top-right corner pull focus from the fire. This looks like the generated lighthouse, which gained an island, a life ring and bushes. B: the coin-operated viewer is large and close up, with its pole cut off by the bottom edge (margin 0). It is the only clear focal point against a soft city skyline, which matches the real crop pattern.",
+   "fix": "Show only the campfire: logs and flames ringed by stones, filling the card, set close with the stones running off the bottom edge. Remove the kettle and the cabin."
+  }
+ ],
+ "pattern": "Generated cards keep the whole object inside the frame. They center it, leave even space on every side, and often add a base or extra props (island, rocks, bubbles, a kettle) that compete with the hero. Real cards push in close, so the hero is cut off by an edge, usually the bottom. The hero is the one clear focal point."
+}

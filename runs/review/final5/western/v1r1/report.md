@@ -1,0 +1,24 @@
+# Review: final5/western/v1r1
+
+| Specialist | Caught | Wrong | Abstained | False alarms |
+|---|---:|---:|---:|---:|
+| shape_proportions | 1/1 | 0 | 0 | 2/2 |
+| viewpoint_depth | 1/1 | 0 | 0 | 2/2 |
+| lighting_shading | 1/1 | 0 | 0 | 2/2 |
+| value_contrast | 0/1 | 1 | 0 | 2/2 |
+| color_palette | 1/1 | 0 | 0 | 2/2 |
+| surface_finish | 1/1 | 0 | 0 | 2/2 |
+| edges_linework | 1/1 | 0 | 0 | 2/2 |
+| composition_hierarchy | 1/1 | 0 | 0 | 2/2 |
+| staging_detail | 1/1 | 0 | 0 | 1/2 |
+
+## Art director
+
+Close, but not passing yet. The campfire's rendering, materials and palette fit the real cards, but its staging gives it away. It is a busy full scene (kettle, cabin, pebbles, tufts), the background is as sharp as the hero, and the lighting ignores the fire. Most specialist flags on p01 and p02 were wrong, because those cards are real. Their bubbles, rays, sparkles and centred whole heroes are within the real style and must not be corrected away. The campfire edit targets depth and firelight instead of removing props again, since the props-only edit lost before.
+
+1. **The campfire is staged as a busy little scene, not as one hero. A kettle sits on the stone ring, a log cabin fills the top-right corner, and pebbles, grass tufts and ember flecks are scattered everywhere. Real cards show one hero against a few large, quiet shapes. This was the clearest tell on the only generated card. An earlier edit that only deleted props lost, so the next edit should fix depth and light rather than just remove things.** Show one hero against a quiet backdrop of a few large, soft shapes. Keep the props the subject names, plus at most one small supporting element.
+2. **The background is as sharp, detailed and saturated as the hero. The pines and the cabin have crisp dark outlines and full detail, so the fire does not stand out by depth. On the real backdrops (the binoculars' city, the seahorse's water), the background is paler, softer and simpler than the hero.** Make backdrop scenery paler, softer, slightly hazy and less detailed than the hero, so the hero holds the crispest edges and the strongest color.
+3. **The fire does not light the scene. The stones are lit from the top like daylight, and the whole ground is already flat orange. So the fire is not the single warm accent and casts no glow. The real cards' lighting is consistent with their light sources.** When the hero gives off light, warm the surfaces that face it and keep the surroundings cooler, so the light source is the warmest, brightest spot.
+4. **Overruled: the specialists called the jellyfish (p01 A), the seahorse (p02 B) and the lamp (p02 A) generated, but all three are real. On real cards the hero can float whole and centred, with bubbles, light-ray shafts, small sparkle highlights, a dark gradient field, stamped spots, a hue matching the backdrop, and dark iron with crisp shadow sides. None of these should be fed back as corrections. A generic rule like 'no bubbles, rays or sparkles' or 'always crop the hero at the edge' would ask for less than the real cards have.** No change. Keep these traits allowed.
+
+- p03: Campfire: Make the pine trees and the log cabin slightly paler, softer and hazier, a light blue-green, with simpler shapes and no dark outlines, so they read as far behind the fire. Put warm orange firelight on the stone faces turned toward the flames and a soft glowing pool of light on the dirt around the ring. Make the dirt further from the fire a slightly cooler grey-brown with smooth, plain ground in place of the scattered pebbles. Keep the fire, the logs, the stone ring, the kettle, the grass tufts and the view.

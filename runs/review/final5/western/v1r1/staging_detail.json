@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the jellyfish floats in water, but the background has extra things in it. There are five or six clear bubbles left and right of the bell, sparkle dots on the bell, slanted light shafts, and a thin cyan line along the top edge. Its background edge density is 0.033, about twice the top of the real range (0.017). B: the hoop's board is cut off by the right card edge and the pole runs off the bottom. Behind it are quiet, tone-on-tone concentric rings with nothing else in the background (0.013, inside the real range).",
+   "fix": "A jellyfish floating in plain deep-blue water with a soft vertical gradient. No bubbles, no sparkles, no light rays and no lines at the card edge. Let the tentacles run off the bottom edge of the card."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the street lamp stands against a tone-on-tone teal sunburst, close up, and the bottom edge cuts the post. That matches real category-1 staging. B: the seahorse swims in a plain blue water gradient with faint light from the top-left and no props. Its background edge density is 0.002, a little under the real range. That only means the background is very plain, not that anything was invented. The seahorse's eye is its own anatomy, not added decoration. On staging, both cards follow the real pattern.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A: the campfire sits in a full small scene. There are pine trees across the top, a log cabin with a lit window cut by the top-right corner, and grass tufts in every corner. Pebbles are scattered across the dirt and floating ember flecks surround the flame. A coffee pot sits on the stone ring, which the subject 'campfire' doesn't call for. That's many small objects, like the extra island, rocks and lifebuoy in the generated lighthouse lessons. B: the coin binoculars sit close and central, and the card edges cut the post and the head. The surroundings are a few large, quiet shapes: one glass railing and a soft blue skyline, as in the real bird-feeder card.",
+   "fix": "A campfire seen close up: a ring of a few large grey stones with crossed logs and one flame, filling most of the card, and the card's edge may cut the stones. Behind it, only plain packed earth and a soft, blurry dark-green treeline. No cabin, no coffee pot, no scattered pebbles, no grass tufts, no floating embers."
+  }
+ ],
+ "pattern": "Generated cards fill the space around the hero with things nobody asked for. There are extra props (rocks, an island base, a coffee pot, a cabin), many small scattered details (pebbles, grass tufts, embers, bubbles, sparkles), and the hero sits fully framed with a margin. Real cards crop the hero with the card edge and keep the surroundings to a few large, quiet, tone-on-tone shapes."
+}

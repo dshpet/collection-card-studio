@@ -1,0 +1,33 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the pair of sneakers sits on a tabletop with a hard straight seam between the orange wall and yellow floor. The camera is low, near shoe height, and the two shoes repeat the same view side by side, like a staged product photo. In the normal map the floor is one green patch and the wall is one purple patch. B: the handcuffs lie flat and are seen from high above on a diagonal. The perspective is mild and the shadow sits on one consistent ground plane. This matches the real calculator card.",
+   "fix": "Show one sneaker, turned three-quarters and seen from slightly above. Use a soft colored background with no hard line between wall and floor, and keep the shoe large in the frame."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the magnifying glass is seen almost straight on, floating whole and centered over concentric rings. The lens shows no depth, and only the handle's metal collar suggests any turn. B: the basketball hoop is seen from below and to the side. The board, rim and pole are cut off by the card edges. The view is consistent: the board's right edge thickness and the rim ellipse both fit one low eye level, like the real lighthouse card. B's flat board explains its high planar_share (0.699, just above the real maximum of 0.679).",
+   "fix": "Turn the magnifying glass about 30 degrees so the rim's thickness and the side of the lens show. Tilt the handle toward the viewer and let it overlap the frame slightly."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the soccer ball fills the frame from a low camera on grass. The pitch lines recede to the top edge with mild perspective, like the real beach ball card. B: the fountain is shown whole and centered from a camera about 30 degrees above. It stands on a round paved plaza that meets a flat striped wall, a stage-like ground plane with a base that echoes the generated lighthouse islands. The bowl ellipses do agree with each other.",
+   "fix": "Move the camera closer and lower so the fountain's lower basin is cut off by the bottom edge. Remove the paved ring and the wall seam, and use a simple soft background behind the tiers."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the jellyfish is seen from the side and slightly below. It forms one coherent form with rays fading behind it, two layers in all. B: the lifeguard chair is seen from below, with a strong upward view of the canopy's underside and steep, converging legs. The chair is turned three-quarters, but the life ring hanging on its right armrest faces the camera almost as a perfect circle. The ring does not share the chair's view.",
+   "fix": "Lower the camera's tilt so the canopy is only slightly seen from below. Turn the life ring to follow the side of the chair so it reads as an oval, and soften the convergence of the legs."
+  }
+ ],
+ "pattern": "Generated cards stage the object whole and centered on a stage-like ground: a tabletop with a hard wall seam, a paved ring, or an island base. They also mix views between parts, such as an attached ring facing the camera on a chair turned three-quarters. Real cards crop close with one mild, consistent camera and a simple soft background."
+}

@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (vending machine): one clear key from the upper left. The front face is lit, the right side panel falls into a darker side, the glass door has a soft sheen, and there is a soft contact shadow under the feet. Light falls off in one direction, as on the real camera and computer cards. B (ship wheel): lit almost straight from the front and symmetrically. The left and right spokes get the same rounded gradient and the rim ring has no shadow side. The hub has one centered hot spot, and the stand has only a faint darkening where it meets the deck. Its shading range (0.573) is below the real cards' range, and its directional bias is weaker than A's. This is the flat, frontal look the generated lesson cards had.",
+   "fix": "Light the ship wheel from the upper left. Make the right half of the wooden ring and the right-hand spokes clearly darker, with a visible core shadow running along the ring. Use a soft broad sheen on the brass hub instead of a centered spot, and put a darker contact shadow where the stand meets the deck, falling to the lower right."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A (coaster): top-left sun on glossy plastic cars. Each car has broad highlights on the rim and darker undersides, and the blue track has a lit top edge. It is high contrast (shading range 0.851, a little above the real range) but stays consistent from car to car. B (window): soft frontal light. The shutters cast a drop shadow down and to the right onto the brick, the curtain folds turn smoothly from light to shadow, and the bricks have soft lit top edges. Both cards have similarly weak light direction (0.131 / 0.117), and neither shows a clear lighting tell from the lessons. The measured numbers fall slightly outside the real range on different fields for each card, so they cancel out.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (campfire): the fire is a visible light source, but it doesn't organize the light on the scene. The stones in the ring are lit evenly from above on every side, including the side facing away from the fire. The kettle is lit from the front-left rather than by orange glow from the fire, and the ground around the stones has almost no warm glow or cast shadows. The logs glow, but the surrounding forms ignore the fire. Its light bias (0.702) is above the real range. B (coin-operated binoculars): one consistent key from the upper left. The barrel tops and eyepiece rims are lit, the right side and the underside of the head drop into a cool shadow side, and the post turns smoothly. It matches how the real cards model light.",
+   "fix": "Make the fire the main light. Light the side of each stone that faces the fire in warm orange and let the side facing away fall dark. Put an orange rim of light on the side of the kettle that faces the fire. Spread a warm glow on the ground around the fire ring, and give the stones and kettle short cast shadows pointing away from the flames."
+  }
+ ],
+ "pattern": "Generated cards light the hero almost straight from the front and evenly. Left and right shading looks the same, side planes never drop into a real shadow side, and hot spots sit in the centre. Visible light sources (fires, lamps) glow but don't light the props around them, and contact shadows are weak. Real cards commit to one side key: one side lit, the other in deep shadow, and soft, darker grounding shadows."
+}

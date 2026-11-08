@@ -1,0 +1,33 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (sneakers): the edge map shows a hard horizontal floor/wall seam running the full card width, a stray frame line down the right border, and a dense grid of tiny mesh edges on the toe boxes. The soles carry a firm, even contour, and the cast shadow ends in a hard-edged blob. Subject density is 0.227, at the very top of the real range, and outline darkness is -0.1, below the real range. B (handcuffs): the rings show soft, doubled rim edges, the lock plates and chain links have thin, precise internal lines, and the background is almost free of edges at 0.007. B's subject density of 0.256 is high, but that comes from the many small chain links, not from heavy contours. A's even, mechanical detail edges and stray seam lines match the generated lessons more closely.",
+   "fix": "Remove the hard line where the floor meets the wall; blend them into one soft gradient. Replace the fine shoe mesh with a few soft painted patches. Soften the sole edges toward the background and give the cast shadow a soft, fading edge."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B (basketball hoop): the backboard's red frame is traced by a heavy, dark double contour on both its inner and outer rims. The inner square and the orange rim get the same thick, even-weight line, and the net strands are outlined in near-black. Outline darkness is 0.201, far above the real maximum of 0.122. This matches the generated lesson cards (camera, computer, lighthouse), which have uniform dark contours. A (magnifier): the edges on the chrome ring and the handle are soft and graded, and the glass edge fades out. Outline darkness is 0.11, within the real range.",
+   "fix": "Remove the dark line around the backboard frame and the hoop. Separate the red frame from the white board and from the blue sky using only light and colour, with soft rounded bevels instead of drawn contours. Make the net strands light and thin with no dark edging."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A (soccer ball): the panel seams are fairly thick and dark, and the ball's silhouette is firm. Painterly hatching inside the panels and many grass-blade edges fill the background. B (fountain): thin, precise rings on the basin tiers, clean water edges, and evenly spaced tile and stripe edges behind the fountain. All measured values for both cards fall inside the real ranges. The two cards are about equally edgy, each in a different way, so on edges alone nothing clearly points to a generated card.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (jellyfish): the bell's outer edge is drawn with a thick, dark, continuous line, like an ink outline. The tentacles and bubbles also have even dark contours, and a hard frame line runs along the top edge. Background density is 0.033, above the real maximum of 0.017, because of the hard-edged light rays. B (lifeguard chair): its edges are crisp but thin and vary with each form. Its clouds are outlined and its background density of 0.021 is also slightly high, but no dark outline surrounds the hero. A's outline treatment matches the generated lessons.",
+   "fix": "Remove the dark line around the jellyfish bell and tentacles. Let the bell's edge glow softly into the water, with the rim defined only by a lighter translucent band. Make the light rays soft, blurred beams, and remove the hard line along the top of the card."
+  }
+ ],
+ "pattern": "On the edge map, generated cards give themselves away with a heavy, even-weight dark contour traced around the hero and its main parts, like a drawn outline. They often double it on rims and frames. They also crowd the image with crisp, even-weight detail edges (mesh, grain, rocks, tiles) and put hard seams or lines in the background. On real cards the silhouette edges vary in weight and soften away from the focus, and the backgrounds stay calm."
+}

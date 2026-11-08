@@ -1,0 +1,33 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (sneakers): both shoes get nearly the same frontal light. The toe boxes, mesh and soles carry the same value from the left shoe to the right one, with no side turning into shadow, and the shading lens is flat across both uppers (light_bias 0.019, far below the real 0.199 floor). Only the dark, sharp-edged cast shadow pooling to the left suggests a direction, and the body of the shoes doesn't follow it. B (handcuffs): a soft top-down light. The rings' top faces are lighter, there's a gentle core on their lower-right inner walls, and a soft contact shadow sits to the lower right. Bias is also low (0.104), but the forms turn consistently with one source.",
+   "fix": "Light the sneakers from the upper left: left-facing sides and tops bright, the right side of each shoe and the inner faces of the soles in clear shadow. The right shoe should be slightly darker where the left shoe overlaps it. Keep a soft contact shadow under the soles that falls to the right, matching the light."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (magnifier): the light is upper left. There's a sharp white dot and a curved streak highlight on the glass, a glossy hot spot on the red handle, and an even chrome ring with a soft drop shadow to the lower right. The lens reads the glass as black, so that part is color leaking in. B (hoop): the backboard face is gently graded, darker toward the lower left, with a lit top rim edge and a soft shadow under the orange rim on the board. Both sit inside the real ranges, and both use the same soft-key, glossy-accent treatment seen on the real trophy and calculator. My lens gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (soccer ball): a strong key from the upper right. The lower-left quarter of the ball turns into a deep core shadow and a dark cast shadow lies on the grass to the left. The high form_contrast and bias numbers (0.835/0.711) are partly inflated by the black panels leaking into the shading estimate, but the turn is still clearly one-sided, like the real beach ball. B (fountain): close to frontal, even light. The basin rim, the bowls and the pedestal are lit almost equally on the left and right, the bowl undersides are only mildly darker, and the contact shadows on the paving are faint. This matches the flat, evenly lit look of the generated lesson cards (lighthouse, computer).",
+   "fix": "Light the fountain from the upper left. The right side of each bowl and of the pedestal should fall into clear, darker shadow, with dark shadow bands under each bowl lip and a visible shadow cast by the basin onto the paving to the lower right."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (jellyfish): no light side or shadow side on the bell. It's lit all over, with scattered small white dot highlights and a uniform glow, and the tentacles have no shadow side either. Shading range is 0.416, below the real 0.500 floor, though some of that comes from it being a translucent subject. B (lifeguard chair): a clear key from above and to the left. The canopy underside is dark, the canopy casts a shadow onto the seat back, the ring has a lit left side and a shaded right side, and the legs shade on their right faces.",
+   "fix": "Put one light on the jellyfish from the upper left: a broad, bright sheen on the upper-left of the bell, its lower-right rim and underside clearly darker, and the tentacles darker where they hang beneath the bell. Use one or two soft highlights instead of scattered white dots."
+  }
+ ],
+ "pattern": "Generated cards are lit almost from the front and evenly. Both sides of the object get similar light, the core shadow is weak, and the shadow sides don't go much darker than the lit ones. Often a dark cast shadow is laid down on the ground without the object's own shading agreeing with its direction. On real cards one side clearly turns away into a darker, cooler shadow (the camera's right side, the lighthouse's left, the monitor's side). Generated cards also add scattered, sharp white dot highlights instead of one broad sheen."
+}

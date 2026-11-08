@@ -1,0 +1,33 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (handcuffs): almost the whole card sits in one light-middle grey. The pink floor, the hero's silver rings and the lock blocks merge in the five-level lens. The only darks are thin crescents inside the rings and a soft cast shadow. Background and hero are separated by hue (grey against pink), barely by value, and rms contrast is 0.09, below the real range. A (sneakers): the light floor and middle wall make two clear value bands. The blue uppers form a dark mass against the near-white soles, and the dark cast shadows sit under the shoes. Its contrast is inside the real range, like the real cards' firm hero-on-background reads.",
+   "fix": "Make the handcuffs darker steel than the pink floor: deep charcoal on the inner rings and under the lock blocks, a crisp bright highlight along the top of each ring, and a clear dark contact shadow under both cuffs. Keep the floor a lighter, even pink."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (magnifier): the lens glass is the same mid-grey as the green rings behind it, so the glass vanishes into the background in the lens. The rings are only one value step apart, and rms contrast is 0.075, below the real range. Only the chrome rim and the dark handle tip give darks. B (hoop): the near-white backboard sits on a middle cyan field with a lighter glow behind it. The red rim and the pole give a mid-dark frame. This matches the real cards' bright hero against a middle background with a soft halo.",
+   "fix": "Make the lens glass clearly lighter than the background, a pale tinted disc with a bright rim highlight. Darken the outer background rings so they step clearly from light near the hero to darker at the corners. Keep the red handle as the darkest shape."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (fountain): the card is very high-key (0.783, above the real range). The yellow stripes, the stone bowls and the pavement all fall into the two lightest grey levels. There is no dark anchor anywhere, so the hero separates by hue (cyan water) rather than value. The real cards always keep a mid-dark group or contact shadow. A (soccer ball): the black panels are the darkest accents and are mostly inherent to the object. The grass forms a middle field, and a dark contact shadow sits under the ball. Its contrast is high but sits at the top of the real range.",
+   "fix": "Lower the fountain's overall brightness. Make the wall stripes a richer middle yellow-orange. Put darker shade under each bowl lip and inside the basin, and add a firm dark shadow where the fountain meets the paving, so the pale stone stands out by lightness."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (jellyfish): the card is low-key (lightness 0.515, below every real card). It is a dark navy field that falls to pure black across the bottom third, with the luminous jelly as an isolated light shape, which is close to tenebrism. The real cards are mid-to-high key and keep the background as a middle or light group, never a black mass. B (lifeguard chair): a light sky and clouds, a middle chair frame, and a dark canopy underside and seat as the dark accents. This is the real cards' bright-key, three-group layout.",
+   "fix": "Brighten the water to a medium clear blue with lighter rays from the top. Remove the black at the bottom so the lower edge stays a middle blue. Keep the jellyfish lightest, with soft pink shade inside the bell rather than relying on a dark surround."
+  }
+ ],
+ "pattern": "In the lessons, generated cards misplace darks. They either add near-black accents and hard light-dark edges inside the hero, or they drop into a dark floor or surround that the real cards avoid. In the test pairs, generated cards drift to one end of the key: washed-out single-grey cards with no dark anchor (handcuffs, fountain) or a low-key black surround (jellyfish). In those cards the hero separates from the background by hue, not value. Real cards keep a mid-to-high key with three readable groups: a middle background, a lighter or darker hero, and a small set of dark contact-shadow accents."
+}

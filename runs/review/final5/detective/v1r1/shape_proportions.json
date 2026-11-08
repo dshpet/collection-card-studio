@@ -1,0 +1,33 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (sneakers): both shoes are puffed up like toys. The midsoles are thick rounded cushions with no straight edge, the toe boxes are short and bulbous, and the laces are fat tubes. The heel and collar contour is all soft lumps, the same chunky fattening the generated camera and computer show in the lessons. B (handcuffs): the two rings are simplified thick donuts, but the lock boxes keep flat faces and tight corners, the chain links stay thin, and the parts (two cuffs, two lock housings, a short chain) sit in the right relation. Its solidity of 0.54 just reflects the open rings.",
+   "fix": "Draw the sneakers with true running-shoe proportions: a long, low toe; a thin midsole with a straight top edge and a crisp sole edge; laces as thin cords; a narrow heel collar. No puffy, inflated soles."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (magnifier): the red handle is a short, swollen sausage that ends in a round blob, too fat and too short for the lens. The ferrule is a soft lump, and the silhouette reads as a toy rattle. B (hoop): the backboard is a flat plate with straight edges and tight corner bevels. The inner square is crisp, the pole is a thin bent tube, the net strings stay thin, and the rim bracket is small. All the parts a viewer expects are there in proportion.",
+   "fix": "Draw the magnifying-glass handle as a long, slim, straight grip about as long as the lens is wide, slightly tapered, with a tight cylindrical metal collar where it joins the ring. Not a short round bulb."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (soccer ball): the silhouette is a plain circle with true sphere proportions, so the shape gives nothing to judge either way. Its corner rate of 0 and solidity of 0.995 come from it being a sphere. B (fountain): there are three tiers in sensible size order (small top bowl, middle bowl, wide basin) on thin pedestal stems, and the water arcs are thin. The basin rim is a thick rounded lip, but that fits stone. Neither card shows the fattening or extra-part pattern from the lessons.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (jellyfish): a domed bell with thin trailing tentacles and ruffled oral arms. Its thin share of 0.076 comes from the tentacles, which is correct for this subject. B (lifeguard tower): the canopy is a flat plate with straight edges and crisp corners, and the posts and ladder rungs are straight and reasonably thin. The purple seat cushion and the armrest tubes are somewhat pillowy, but the part count and relations are right. Neither silhouette clearly shows the toy-like swelling seen on the generated lesson cards.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards fatten and shorten objects into toy-like forms: puffy, inflated soles and handles, soft blob corners, and bodies that are boxier and chunkier than the real proportions. They also tend to add extra parts the real card leaves out, like the rock islands, piers and extra glove webbing in the lessons. Real cards keep thin parts thin (handles, rails, straps) and flat plates planar with tight bevels."
+}

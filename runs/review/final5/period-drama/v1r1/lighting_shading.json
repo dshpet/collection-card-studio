@@ -1,0 +1,54 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (parasol): the light comes from the upper left. The canopy panels turn from a pale left side to a darker right side, the ribs have their own shading, and the lace frill and the handle hook both show a lit side and a shadow side. B (fan): each purple panel is nearly one flat tone. In the lens, the light and dark panels alternate in a stripe pattern that follows the paint colours, not the light. There is no side-to-side falloff across the fan, the ribs and guard are evenly lit, and there is no cast shadow on the background. Its form contrast (0.21) and light bias (0.09) are both below the real range.",
+   "fix": "Light the fan from the upper left. Make the left panels brighter and let the panels darken gradually toward the lower right. Each pleat needs a lit face and a shadowed face. Give the wooden guard and ribs a darker underside, and add a soft drop shadow down and to the right on the background."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (chest): the lid's underside drops into a deep shadow, the right side of the box is darker than the front, the coins are lit on top with dark gaps between them, and there is a contact shadow on the sand. B (phone booth): the front face is lit almost evenly from top to bottom. The left side is only slightly darker, the window bars are uniformly pale, and the floor shadow is a faint, soft band. The form turns less sharply than on the real cards.",
+   "fix": "Light the booth strongly from the front left. Put the right-hand face clearly in cool shadow, darken it under the roof cornice, and shade the window recesses. Add a darker contact shadow where the base meets the floor, falling to the right."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (fountain): the bowls have dark undersides and the pedestal turns from a lit front to darker sides. The basin rim is lit on top with a shadowed inner wall, and the paving has contact darkening around the basin. B (cake stand): the plates, the column and the cakes are lit almost evenly. The cakes have little shading, and the only strong shadow is a soft smear on the tablecloth to the right. Its shading range (0.64) and form contrast (0.33) are both below the real range.",
+   "fix": "Shade the cake stand from the upper left. Darken the undersides of both plates and the right side of the column and the base. Give each cake a lit top and a shadowed side, and add a dark contact shadow where each cake sits on its plate and where the base meets the tablecloth."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (top hat): lit from the upper left. The crown turns smoothly into a dark right side, and the brim has a dark underside. B (graduation cap): the top board is evenly lit, the crown under the board drops into deep shadow, and the tassel is shaded. Both have strong, dramatic shading slightly above the real range, and both are lit from the left. Nothing on my vector separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (candelabra): the brass arms and stem have a lit side and a shadow side. The base dish shades from top to underside, and a soft shadow falls to the right on the floor. B (sneakers): the shoes are lit evenly from both sides. The lens shows no consistent side-to-side falloff (light bias 0.02, far below the real range), the soles and uppers have little core shadow, and the shoes rest on the floor under a hard, flat shadow pool with a photographic look.",
+   "fix": "Light the sneakers clearly from the upper right. Put the left sides and the inner side walls of the soles into soft shadow, and give the toe caps a lit top. Make the cast shadow fall to the left as a soft-edged shape that fades out, with dark contact darkening only right under the soles."
+  },
+  {
+   "pair": "p06",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (lace fan): the fan is lit flat from straight on, with almost no difference between its left and right halves. The pleats show only faint ridges, and the lace edge and guard sticks have no shadow side. There is no drop shadow on the background. It looks like an evenly lit flat-lay photo, and all three numbers fall below the real range. B (scarf): the neck loop has a dark inner shadow, the knotted tails turn from lit tops to darker folds, and the medallion casts a shadow onto the knot.",
+   "fix": "Light the fan from the upper left at an angle. Give every pleat a bright face and a darker face, and shade the right side of the fan more than the left. Add a darker underside to the guard sticks and a soft drop shadow down and to the right on the background."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (cooler): lit from the upper left. The right face of the box is in clear shadow, the lid has a darker inner wall, and the cooler has a dark contact shadow on the sand. B (paddling pool): the fence casts a hard shadow across the grass, the rings have lit tops and darker lower bands, and there is contact darkening under the pool. Both show a single, consistent light direction and grounding that match the real cards, so my vector gives no reason to choose.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards are lit flatter and more evenly than real ones. Real cards set one clear side light that turns each form into a cool, darker side, with dark undersides and a contact shadow. Generated ones light the hero almost frontally, with weak falloff from side to side. Light and dark areas follow the paint colours rather than the light, pleats and panels have no core shadow, and cast shadows are faint or soft smears."
+}

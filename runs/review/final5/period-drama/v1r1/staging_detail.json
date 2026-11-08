@@ -1,0 +1,54 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the parasol floats on a yellow diamond pattern that is quiet and tone-on-tone. B: the fan floats on a yellow wavy pattern that is also quiet and tone-on-tone. Both are category 1, neither card has extra props, and both background measurements are inside the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the chest sits on sand under water with bubbles. Coins and gems inside are what it holds, which is fine. But a scallop shell bottom-left and a loose coin bottom-right sit on the sand, and the chest does not name either. B: the phone booth stands on a plain green floor with a pale suitcase pattern behind it. The pattern is fairly bold, but the card has no extra props.",
+   "fix": "Treasure chest full of coins and gems resting on smooth sand under water, a few bubbles, no shells, no loose coins on the sand."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the fountain stands on a full ring of cobblestone paving with many small tile edges, set against a striped yellow wall. That band of paving is the busiest part of the background (edge density 0.046, the top of the real range). B: the cake stand stands on a plain white tablecloth in front of a purple striped wall. The cakes on the stand are what it holds, and the floor is quiet.",
+   "fix": "Fountain standing on a smooth plain stone floor, only a few large paving slabs, plain striped wall behind, no fine tile pattern."
+  },
+  {
+   "pair": "p04",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both hats float on quiet cyan rings, a category 1 field. Neither has props or decoration, and the background measurements are nearly the same and inside the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the candelabra stands on a teal floor that blends into the teal backdrop with no visible edge. That is a clean category 2 card. B: the sneakers stand on a pale yellow surface that meets the orange wall at a hard horizontal line across the middle of the card. This reads as a tabletop edge in a different color from the backdrop, which category 2 should not have.",
+   "fix": "Pair of sneakers standing on a floor that is the same orange as the background, the floor blending into the wall with no edge or horizon line."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the fan is centred on a quiet blue wavy pattern and has no extra props. B: the neckerchief floats on a blue spiral with fairly strong contrast between its bands. A round gold badge with a campfire symbol is pinned at the knot, which looks like invented decoration.",
+   "fix": "Plain red neckerchief tied with a simple fabric knot, no badge or emblem, on a soft low-contrast blue spiral background."
+  },
+  {
+   "pair": "p07",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the cooler sits on sand close to the camera, with the sea and sky as a few large, quiet shapes. The cans and ice are what it holds. B: the pool is shown whole, with a fence of many planks behind it and dozens of small grass tufts scattered evenly across the lawn. That is a lot of small background detail for category 4 (detail measurement 0.0205).",
+   "fix": "Paddling pool seen close up on smooth grass with one duck in the water, the card's edge cutting the pool's rim, few or no grass tufts, at most a soft blurred fence."
+  }
+ ],
+ "pattern": "Generated cards pull the camera back and fill the scene with environment the subject never names: a rock island with ropes and a lifebuoy, a whole round table, evenly scattered grass tufts, cobblestone rings. They also add invented decoration such as badges, emblems and stray shells, and they put a hard floor-to-wall edge on cards that should have a plain floor. Real cards stay close, keep the background to a few large quiet shapes, and add only what the object holds or is used with."
+}

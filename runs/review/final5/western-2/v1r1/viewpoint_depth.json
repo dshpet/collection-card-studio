@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the vending machine is in a mild three-quarter view. Its front and left side read as flat, even panels, the camera sits slightly above, and the feet rest on a soft floor with no hard horizon. The whole object shares one view. B: the ship's wheel and its stand are drawn dead-on, with no side faces. In the normal map the stand base is a flat strip with no top face. The deck planks under it, though, spread out sharply toward the viewer, as if seen from well above. So the hero is drawn straight-on while the floor is seen from high up, two views that don't match. B's planar_share of 0.597 is also above the real range (max 0.559).",
+   "fix": "Turn the ship's wheel and its wooden stand slightly into a three-quarter view so the rim's thickness and the stand's top and side faces show. Lower the camera to match the deck, with the planks only gently converging, so the base clearly sits on the floor from the same viewpoint."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the camera is very low and wide-angle, looking up into the loop. The front cart is cut off by the bottom edge and is much larger than the carts behind it. The track rails and the left support converge strongly, and the normals are almost all smooth rainbow gradients (planar 0.028, just below the real minimum of 0.034). That is forced perspective, not the mild lens the real cards use. B: a straight-on window set into a flat brick wall. The wall and frame are even, flat patches, and the shutters swing out with modest foreshortening. That is consistent and close to the straight-on real cards such as the clock and the target. The evidence is weak, since A's dramatic crop also resembles the cropped real lighthouse.",
+   "fix": "Use a gentler camera: raise it closer to the carts' height and back off so the loop and the carts converge only mildly and the front cart isn't hugely larger than the rest. Keep the hills simple behind."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the camera is high, looking down at about 45°. The full dirt ground plane is visible around a complete ring of stones, and there are many crisp layers: pebbles in front, the fire and kettle, then the trees and cabin, all equally sharp and busy. This matches the lesson fakes, which place the whole object on a ground or island and add a full environment. B: the camera is near eye level and the binocular post is cut off by the bottom edge, like the real lighthouse. The railing gives one consistent ground line, and the city behind is simpler and hazier, which separates the depth layers the way the real cards do.",
+   "fix": "Lower the camera toward the fire's height and move closer so the stone ring is partly cut off at the bottom. Show less of the ground, and make the trees and cabin behind simpler and softer so the campfire stands out."
+  }
+ ],
+ "pattern": "Generated cards show the whole object from a slightly high, centered camera, usually on a full ground patch or platform, and give the background as much detail as the object. Real cards use a lower, mild three-quarter view and often let the object run off the card's edge. Real backgrounds are simpler. Generated cards also tend to mix views: a straight-on object on a floor seen from well above, or a forced wide-angle shot."
+}

@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 4,
+   "difference": "A (jellyfish): the whole card is dark. A deep violet field turns near-black along the bottom edge and the bottom-left corner. The pale bell is a hard near-white island inside it, with crisp white rims on the bell and the bubbles. The corners do not darken relative to the centre (vignette -0.046), and the hero is far brighter than its surround (gap 0.286). Mean lightness (0.515) and gap are both outside the real range. This matches the lessons: generated cards add dark masses at the edges and push hero edges to hard white. B (hoop): a light card. The near-white backboard sits on a mid cyan field with a soft lighter halo ring behind it, and the corners darken gently. Its darkest accents are small: the pole shadow and the rim underside. All of B's numbers are inside the real range, and the halo and soft corner fall-off match the real anchor cards (clock, gloves).",
+   "fix": "Lighten the whole card: a bright, mid-light blue-violet water background, with a soft lighter glow right behind the jellyfish and only slight darkening toward the corners. No black area along the bottom. Shade the bell and tentacles with soft gradual shading instead of hard white rims."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (street lamp): a light turquoise field with alternating light and mid rays. The dark iron lamp reads as one dark silhouette with black accents at the cap, the collar and the scrolls. The glass glows near-white in the middle. The hero is darker than the background (gap -0.292, at the edge of the real range). This is the same dark-hero-on-light-rays scheme as the real camera card, with clean value groups. B (seahorse): the background splits into a light diagonal shaft at upper left and a big dark mass covering the lower-right corner. The orange body sits at about the same mid grey as the water around it, so it separates by hue only, not by value. Its dark spots and stripes are scattered small accents with no single dark group. The value grouping is muddy compared with the real cards, where the hero clearly stands out by value. The numbers are in range, so this call rests on the lens only and confidence is low.",
+   "fix": "Make the seahorse stand apart in lightness: draw a clear soft light glow behind the seahorse and keep the water an even mid blue. Do not draw a large dark corner. Give the body a lighter, cleaner belly and keep the dark spots few and small."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (binoculars): the card is washed out. The sky and city skyline fade to near-white across most of the frame, and the hero is a mid-to-dark grey metal shape set against it. The pole is the darkest mass, and the hard black rings around the lenses are the darkest accents. Mean lightness (0.759) and gap (-0.246) are both outside the real range, and the corners show almost no darkening. The scene reads as hazy and pale with no middle-value ground. A (campfire): a mid-key full scene, like the real tree-feeder card. The dark trees and cabin frame the top. The fire is the single brightest group, sitting in the centre on mid-grey rocks and earth. Its numbers are all within the real range.",
+   "fix": "Bring the background down to a mid-light blue sky and skyline with clearer mid-tone buildings, and keep the brightest light on the binoculars' top faces and lenses. Darken the card's corners gently. Lighten the pole so it is not the darkest mass."
+  }
+ ],
+ "pattern": "Generated cards break the real cards' simple scheme: one light hero against a mid-value field, with a soft glow and gentle corner darkening. Instead they show (1) big dark or black masses at the card edges and corners (the jellyfish's bottom, the seahorse's lower right, the darker periphery of the generated glove backgrounds), (2) hard white rims and crisp black accents scattered through the hero instead of soft roll-off, and (3) an off-range overall key, either too dark or washed-out near-white, so the hero no longer separates from the background by value."
+}

@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A, the vending machine, reads as a swollen block. The cabinet's top corners are large soft radii, and the door frame around the glass is a thick rounded bezel. The handle and dispenser tray are puffy pills. Its silhouette is a near-solid rounded slab (solidity 0.981, at the top of the real range) with stubby blob feet. B, the ship's wheel, has a crisp ring with evenly spaced spokes and turned handles. The spokes are thin and the hub sits in proportion. The stand is a straight trapezoid on a flat rectangular plinth with tight corners. B's silhouette has open gaps between the spokes and the right part count, the way the real cards draw their objects.",
+   "fix": "Draw the vending machine as a tall, flat-sided metal cabinet. Give it sharp, tightly bevelled corners, a thin flat metal frame around the glass door, a slim flat handle, a shallow rectangular coin slot and tray, and small square feet. No rounded, pillowy edges."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "In A, the roller-coaster cars are fat, toy-like tubs, oversized next to the track. Four stacked cars fill the inside of the loop, so it reads as one lumpy mass, and their seat rims are thick rolled edges. The rails and supports are fairly even tubes, but the cars swamp them. Solidity is 0.495, below the real range, and thin_share is 0.075, just above it. In B, the window frame and both shutters have straight runs, tight corners and thin, even crossbars, like the real computer and lighthouse railings. The curtain is the only soft shape, and that is correct for cloth. B's straight_share is high (0.808), but that suits an object made of flat boards.",
+   "fix": "Draw the coaster cars smaller and lower, sitting in scale on a slim twin-rail track. Give them thin seat rims and flatter side panels, with clear gaps between the cars so the loop structure shows through. Not chunky, bloated tubs."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "In A, the campfire ring is a row of soft pillow-shaped stones merged into one lumpy base, and the logs are thick and stubby. A coffee pot is added on its own rock, plus a cabin in the background. That extra-prop clutter matches the lessons, where the generated lighthouse gained rocks and buoys. straight_share is 0.17, below the real range. In B, the viewer has a plausible part count: twin eyepieces, a housing, a yoke handle, a coin box and a column with a collar ring. The column and collar have straight runs. Its proportions are chunky but consistent, within the real range on every field.",
+   "fix": "Draw a simple campfire: a few slim, straight split logs leaning together, ringed by flatter stones that each have some flat faces and clear edges. No added coffee pot or extra props, and no rounded, pillow-shaped rocks."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away by swelling and adding things. Flat cabinets and boards get soft, large-radius corners and puffy bezels. Movable parts such as coaster cars and rocks are scaled up into chunky toy masses. Extra props get added that the real cards don't draw: rocks round the lighthouse, a coffee pot by the fire, extra glove webbing. The real cards keep straight runs, tight bevels, thin rails and spokes, and only the parts the object needs."
+}

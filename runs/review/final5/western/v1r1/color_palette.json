@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (jellyfish): the pink-magenta bell and tentacles are as loud as the violet-blue water behind them (subject 0.188, background 0.188). Cyan glow spots inside the bell and red-pink tentacle strands push every mass to pure hue, and there is almost no neutral area anywhere on the card. B (basketball hoop): a red rim and frame, an orange hoop and a large white backboard with a white net, on a cyan backdrop. The white board and grey pole give the eye a neutral rest. The red hero sits against a cyan backdrop, the opposite temperature, which matches the real cards. B's shadow ratio is out of range, but in the flat-color lens that comes from the cyan bounce on the white board, not from heavy colored shadows.",
+   "fix": "Make the jellyfish bell a soft translucent pale pink with milky white highlights, and remove the cyan glow spots from inside the bell. Make the tentacles a muted dusty rose, not hot pink. Darken and calm the water to a deeper, less saturated navy blue so the jellyfish is the only bright thing on the card."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (street lamp): a dark teal-green lamp body on a turquoise sunburst. The hero repeats the background's hue family, and both are cool. The only warm note is the small yellow bulb. The flat lens shows about two hue families, 1.58, below the real range, and the shadows on the lamp lose their color and turn grey-black (0.543, below range). B (seahorse): an orange-and-yellow seahorse with red-brown spots and a green eye on a deep blue gradient. A warm hero against a cool backdrop is the most common real setup. The shadows on the belly and tail stay a rich, related red-brown, and all of B's measurements are inside the real ranges.",
+   "fix": "Paint the lamp in warm aged brass or a dark bronze with golden-brown edges instead of dark teal-green, so it doesn't share a color with the turquoise background. Make the glass glow warm amber. Keep color in the shadow side of the metal, a deep brown-olive rather than grey-black."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (campfire): orange flames, orange-brown logs, an orange dirt ground and an orange log cabin. The whole card is pulled warm (warm share 0.673, above the real range). Only the green pines and the blue kettle break it up. Shadows on the stones and ground go muddy and lose chroma (0.608, just under range). This matches the warm-washed tables and cream plastic of the generated computer lessons. B (coin binoculars): a blue-steel viewer in front of a blue city skyline. The hero repeats the backdrop's hue, which is unusual for real cards, but all of B's measurements sit inside the real ranges, and the white-and-grey railing gives a neutral rest. On my vector the evidence points to A, but only weakly.",
+   "fix": "Make the ground a cooler grey-brown earth instead of orange, and paint the cabin logs a weathered grey-brown. Keep orange and yellow for the fire alone. Give the rocks cool blue-grey shadows and add more cool green grass, so the fire is the single warm accent on a cooler forest."
+  }
+ ],
+ "pattern": "Generated cards push every mass to pure, high chroma: saturated orange leather, hot pink and cyan glows. The hero ends up as loud as the backdrop, with little neutral or muted area to rest the eye. The whole card drifts warm, with cream or orange wash on whites, wood and ground, and shadows go either muddy grey or one orange-red. When the hero repeats the backdrop's hue family, the hero-against-background temperature contrast that real cards keep is lost."
+}

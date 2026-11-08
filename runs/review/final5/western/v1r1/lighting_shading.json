@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (jellyfish): the bell is lit almost evenly from the front, with a soft pink-white sheen across the whole top. It is sprinkled with many small white sparkle dots on the bell and the tentacle spots. The shading lens shows a narrow range (0.416, below every real card): the bell's underside and the tentacles barely drop into shadow, and there is no clear core shadow on the bell. B (basketball hoop): light comes from the upper left. The board's thick frame has a lit top-left face and a shaded right and bottom edge. The rim and net sit darker under the board, and the pole turns smoothly from lit to shadow. The range (0.698) matches the real cards.",
+   "fix": "Light the jellyfish from the upper left with one soft key light. Let the right side and the underside of the bell fall into a clearly darker, cooler shadow. Shade the tentacles darker where they hang below the bell. Use one broad soft highlight on the top of the bell instead of many small white sparkle dots."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (street lamp): the dark green iron has hard, deep shadow sides on the pole, the curl and the cap. Its form contrast (0.68) is above every real card. The glass globe is lit evenly, and the glowing bulb does not light the inside of the frame or the cap. B (seahorse): soft light from the upper left. Each belly ridge turns gently from light to shadow, and the shadow side on the back is mild. This gentle range sits inside the real range and is close to the real gloves and camera bodies.",
+   "fix": "Keep the lamp's iron shadows softer and lighter so the shadow side stays readable as dark green, not near black. Let the warm bulb glow spill onto the inner frame bars and the underside of the cap, with a faint warm rim on the pole near the globe."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (campfire): the logs' ends glow orange and the kettle's left side catches the fire. But the ring of stones is lit from the top like a daylight scene: grey tops with dark lower halves, and almost no orange light on the sides facing the flames. The dirt around the fire has no bright pool of firelight. The light-direction value (0.702) is above every real card. B (coin binoculars): one steady key light from the upper left. Soft broad sheen runs down the tube and across the eyepiece housing, the shadow side is on the right, and the railing behind it is shaded the same way. It is high in contrast but looks consistent.",
+   "fix": "Light the stones and ground from the campfire: put warm orange light on the stone faces turned toward the flames and a soft glowing circle on the dirt around the fire. Let the far sides of the stones fall into cool, soft shadow."
+  }
+ ],
+ "pattern": "In the lessons, the generated cards are lit from the front and evenly: shadow sides stay shallow and warm, with no cool shadow side or rim. The real cards (camera, computer, lighthouse) use a clear upper-left key light with a deeper, cooler shadow side and a soft contact shadow. In the test cards, three things still give generated cards away: highlights scattered as many small sparkle dots instead of one broad sheen, glowing light sources that don't light the nearby surfaces, and shading that ignores the light source in the scene (stones lit from above next to a fire)."
+}

@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (jellyfish): the background is busy. Light-ray streaks fall across the whole field, and there is a hard cyan line along the very top border. Its background edge density is 0.033, about twice the highest real card (0.017). The bell and tentacles have a uniform dark rim, and small bubble rings are scattered across the background. B (basketball hoop): the background holds only soft concentric rings, so the background is nearly empty (0.013). Its high outline_darkness (0.201) comes from the red backboard frame meeting the cyan field, a color boundary rather than a drawn line. The net and rim carry the sharpest edges, which is the focus, as on the real cards.",
+   "fix": "Plain smooth deep-blue water background with only a faint, soft glow, no light-ray streaks, few or no bubbles, no line along the top edge; jellyfish edges soft and translucent with no dark rim around the bell and tentacles."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (street lamp): the edge map shows doubled, dark contour lines along the post, the curled bracket and the cap ring. The glass has many pane dividers and the post many collars and scrolls. Subject edge density is 0.187 and outline darkness 0.149, both above the real range. That matches the lesson pattern of a crisp black outer contour plus extra small parts. B (seahorse): the edges are soft and painterly with no drawn contour (outline −0.034). The body has few internal lines beyond the ridges and spots, and the background is almost empty. That is closer to the real cards' soft outer edges, though it looks a bit flatter than they do.",
+   "fix": "Simpler lamp: fewer pane dividers and post rings, one plain curved arm with no extra scrolls; let the dark green post melt softly into the background with no dark line traced around it."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (campfire): the edges run against the focus. The flames, the focus, have almost no internal edges (subject density 0.068, below the real minimum). Meanwhile the pine trees, log cabin, grass tufts and scattered pebbles behind them all have crisp dark contours, so the background reads as sharp as the hero. Filling the scene with props like this matches the generated lighthouses in the lessons. B (coin-operated binoculars): the lenses, eyepiece rims and coin slot hold the crispest edges. The city behind is a looser, lighter tangle of lines, so the sharpest edges sit at the focus. The bright rim around the binoculars (outline −0.126) is a light halo but stays inside the real range's tendency.",
+   "fix": "Keep the campfire as the sharp focus: crisp edges on the logs and stone ring, flames with clear shapes; blur and simplify the background into soft shapes of trees with no cabin details, no scattered pebbles or grass tufts, no dark lines around the trees."
+  }
+ ],
+ "pattern": "Generated cards give themselves away by having too many hard edges in the wrong places. They add extra small parts and filler props (window frames, stitching, scattered pebbles, grass tufts, wood grain, rippled water). They also trace a uniform crisp, dark contour around every object, including background ones. Real cards keep one simple hero with fewer internal seams, softer outer edges and a quiet background, so the sharpest edges sit only at the focus."
+}

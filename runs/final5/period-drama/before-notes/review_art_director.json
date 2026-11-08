@@ -1,0 +1,76 @@
+{
+ "issues": [
+  {
+   "issue": "Photographic fine detail. Fine detail is drawn the way a photo shows it, not simplified as on the real cards: real lace openwork on the fan, punched eyelet lace and cloth weave on the parasol, and many small sharp mirror reflections on the candelabra's brass. Real cards (the purple fan, the scarf, the chest) turn trims and metal into a few broad, smooth shapes with soft highlights. This is the biggest giveaway on the fan and the candelabra.",
+   "specialists": [
+    "surface_finish",
+    "edges_linework",
+    "shape_proportions"
+   ],
+   "instruction": "Paint trims as smooth, soft scalloped bands made of a few broad shapes. Paint fabric as smooth, soft matte cloth. Paint metal with two or three broad, soft highlights."
+  },
+  {
+   "issue": "Hero blends into its surroundings by value. The cake stand is white on a white tablecloth under a near-black wall. The fan is pale pink and cream on pale blue, with no darks anywhere. The candelabra stands on a dim, low-key teal. Real cards set a clearly separated hero on a bright, saturated backdrop with a soft glow behind it (the mortarboard, the phone booth, the scarf).",
+   "specialists": [
+    "value_contrast",
+    "color_palette",
+    "staging_detail"
+   ],
+   "instruction": "Use a bright, saturated backdrop with a soft light glow behind the object, and keep the object clearly lighter or darker than whatever it stands on."
+  },
+  {
+   "issue": "Flat, frontal light. The fan and the cake stand are lit evenly from the front, with no side falloff, no core shadow on pleats or plates, and weak cast shadows. Real cards use one clear light from the upper left, with darker right sides and undersides and a soft contact shadow.",
+   "specialists": [
+    "lighting_shading"
+   ],
+   "instruction": "Light from the upper left: lit left faces, slightly darker right sides and undersides, and a soft shadow down and to the right."
+  },
+  {
+   "issue": "One clay finish over every material. On the cake stand, the porcelain, the icing and the tablecloth share the same dull clay surface. Real cards give each material its own gloss (the shiny gold beside the matte wood on the chest, the glossy cans beside the matte liner in the cooler).",
+   "specialists": [
+    "surface_finish"
+   ],
+   "instruction": "Give each material its own finish: glossy china, soft matte icing and cloth."
+  },
+  {
+   "issue": "Overruled reports. These claims are about real cards or ask for form changes, so I am setting them aside: the shape and colour calls on the sneakers, the scarf, the phone booth and the purple fan; the viewpoint call on the cooler; the staging calls on the sneakers' floor and the scarf's badge; and every request to change size, tilt, framing or thickness (form cannot be judged across objects). The top hat's shiny black also matches the real cards' strong shading, so it stays.",
+   "specialists": [
+    "shape_proportions",
+    "viewpoint_depth",
+    "composition_hierarchy",
+    "staging_detail",
+    "color_palette"
+   ],
+   "instruction": "No action."
+  }
+ ],
+ "style_text": "",
+ "cards": [
+  {
+   "pair": "p06",
+   "keep": false,
+   "note": "Folding Fan: Paint the pleats a slightly deeper rose pink, lit from the upper left, with a bright face and a darker face on each pleat and the right half gently darker. Replace the realistic lace with a smooth, soft cream scalloped band made of a few broad shapes. Add a soft shadow of the fan down and to the right on a slightly deeper blue wave backdrop. Keep the fan, the sticks, the gold pin and the view."
+  },
+  {
+   "pair": "p05",
+   "keep": false,
+   "note": "Candelabra: Make the teal backdrop a brighter, more saturated teal with a soft light glow behind the candelabra and slightly darker corners. Paint the brass as smooth warm gold with a few broad, soft highlights in place of the many small sharp reflections, and a gently darker right side. Keep the candelabra, the candles, the flames, the soft floor shadow and the view."
+  },
+  {
+   "pair": "p03",
+   "keep": false,
+   "note": "Cake stand: Paint the tablecloth a soft mid-tone rose, clearly darker than the cream stand, and make the purple wall a slightly lighter violet with a soft glow behind the stand. Give the porcelain crisp glossy highlights on the plate rims and the knob, with slightly darker plate undersides and a darker right side on the column. Keep the stand, the cakes, the striped wall and the view."
+  },
+  {
+   "pair": "p01",
+   "keep": false,
+   "note": "Parasol: Simplify the lace trim into a smooth, soft cream scalloped band with no punched holes. Paint the canopy as smooth, soft matte fabric with no visible weave. Keep the parasol, the ribs, the handle, the yellow diamond backdrop and the view."
+  },
+  {
+   "pair": "p04",
+   "keep": true,
+   "note": "Keep. The shiny black hat, the red band and the cyan ring backdrop match the real mortarboard card closely enough to pass."
+  }
+ ],
+ "summary": "Moderately close. The top hat could pass as it is, and the parasol is close; only its punched lace and visible cloth weave give it away. The fan and the candelabra are the clearest misses: they look photographic (real lace openwork, mirror-like brass reflections), with flat or dim light and no glowing backdrop. The cake stand misses mainly on value: a white stand on a white tablecloth under a near-black wall, with one clay finish over everything. Across the set, the generated cards have too much photo-style detail, weak upper-left light, and heroes that don't stand apart from their backdrops. The style text stays unchanged; four cards get small targeted edits."
+}

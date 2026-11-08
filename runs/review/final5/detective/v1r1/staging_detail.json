@@ -1,0 +1,33 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the sneakers stand on a pale yellow floor that meets a saturated orange wall in a hard, ruled horizontal seam at about 45% height. That seam is the strongest line in the background. Its edge density (0.015) is about double B's. The real floor-type cards, such as the folding chair, blend floor into backdrop with a soft gradient and no seam. B: the handcuffs lie flat on a pink surface that fills the card, seen from above, with only a soft vignette. That is clean category-3 staging, like the real flat objects.",
+   "fix": "Plain floor in the same warm color as the backdrop, fading softly into the back wall with no visible horizon line; a soft pool of light behind the shoes."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the magnifier floats on quiet tone-on-tone concentric green rings, a category-1 field like the real swirl and ray backdrops. B: the hoop sits on the same kind of soft cyan rings, and the card edge cuts the pole. Both backgrounds are quiet and sit inside the real range, and neither card has an invented prop. Staging gives no reason to pick one.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B mixes two categories. A vertical yellow striped wallpaper backdrop sits behind a ring of individually drawn paving bricks, which run off the bottom and sides of the card. The many small brick joints make this the busiest background in the pair (edge density 0.046). Real category-3 cards keep the backdrop plain, and real category-4 cards drop the graphic pattern. A: the soccer ball sits on grass with one pitch line, staged in place like the real beach ball on sand. Its foreground blade tufts are busy but still read as one large grass shape.",
+   "fix": "Fountain standing on a plain pale stone floor in the backdrop's color, with a simple soft backdrop and a gentle pool of light behind it; no striped wallpaper and no individual paving bricks."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the jellyfish has invented extras around it: five or six glossy bubbles to the left and right, diagonal light shafts across the top, and a cyan bar along the top edge. Its background edge density (0.033) is above the real range (0.004 to 0.017). The real water and sky cards, such as the lighthouse and the binoculars, keep the surroundings to a few large, quiet shapes. B: the lifeguard chair is cropped by the card edge against a sky with soft clouds. The life ring is its one natural partner object, matching how the real lighthouse is staged.",
+   "fix": "Jellyfish floating in plain deep-blue water with a soft gradient toward lighter blue at the top; no bubbles, no light rays, no bar along the top edge."
+  }
+ ],
+ "pattern": "Generated cards add background clutter the real cards don't have: extra decoration such as bubbles, light shafts and props (rocks, life rings, bollards on the lighthouse), surfaces drawn as many small units (paving bricks, glossy wood grain, separate grass blades), and hard floor/wall horizon lines. They also mix categories, putting a graphic striped or ray backdrop behind a real material floor. Real cards keep the background to a few large, quiet shapes, and crop the subject at the card edge instead of building a little scene around it."
+}

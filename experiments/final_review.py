@@ -8,8 +8,9 @@ the night and one arm (smooth surfaces, adopted, or one camera), shuffled: pick 
 the nine pre-final cards graded broken, drawn by the current pipeline and by each perspective arm, shuffled: does each
 work as built?
 
-Round 2 (runs/final4) is the fix round after those answers: each card shows its round-1 drawing with the producer's
-grade and comment; a card kept unchanged keeps its grade unless graded again. No blind items.
+Rounds 2 and 3 (runs/final4, runs/final5) are fix rounds after those answers: each card shows its drawing from the
+round before with the producer's latest grade and comment; a card kept unchanged keeps its grade unless graded again.
+No blind items.
 
     final_review.py build      once the final runs are done
     final_review.py serve      then open http://127.0.0.1:8767
@@ -34,14 +35,17 @@ from common import ROOT, best_try, load_json, save_json  # noqa: E402
 FINAL = {"western": ("final3/western", 1), "period-drama": ("final3/period-drama-2", 3),
          "detective": ("final3/detective-3", 2)}
 CAST = "final2/cast"
-# The fix round: its runs, and the round-1 run each was kept from
-ROUND2 = {"western": ("final4/western", "final3/western"), "period-drama": ("final4/period-drama-2", "final3/period-drama-2"),
-          "detective": ("final4/detective", "final3/detective-3"), "cast": ("final4/cast", CAST)}
-ROUND = 2
+# The fix rounds: each genre's run, and the run of the round before that it was kept from
+ROUNDS = {2: {"western": ("final4/western", "final3/western"), "period-drama": ("final4/period-drama-2", "final3/period-drama-2"),
+              "detective": ("final4/detective", "final3/detective-3"), "cast": ("final4/cast", CAST)},
+          3: {"western": ("final5/western-2", "final4/western"), "period-drama": ("final5/period-drama", "final4/period-drama-2"),
+              "detective": ("final5/detective", "final4/detective"), "cast": ("final4/cast", "final4/cast")}}
+ROUND = 3
 COMPARE = "Beach"  # the real set shown above ours
 TWIN_ARMS = {"ns2": "smooth surfaces", "nc": "one camera"}
 TWINS_PER_ARM = 12
-ITEMS = {1: ROOT / "runs" / "final3" / "review.json", 2: ROOT / "runs" / "final4" / "review.json"}
+ITEMS = {1: ROOT / "runs" / "final3" / "review.json", 2: ROOT / "runs" / "final4" / "review.json",
+         3: ROOT / "runs" / "final5" / "review.json"}
 RATINGS = ROOT / "runs" / "ratings.json"
 OUTSIDE = ROOT / "runs" / "prefinal" / "outside" / "ratings.json"
 SERVED = ("materials/card_examples/", "runs/")
@@ -67,21 +71,33 @@ def prefinal_past(source, variant):
     return past
 
 
-def round1_past(before):
-    """The same card in round 1, as the producer saw it (their pick if any), with their grade and comment."""
-    history = load_json(ROOT / "runs" / before / "check.json")
+def earlier_past(round_number, genre):
+    """The same card in the round before, as the producer saw it (their pick if any), with their latest grade and
+    comment: a drawing left unchanged through earlier rounds carries the grade it got last."""
     given = {v["id"]: v for v in (load_json(RATINGS) if RATINGS.exists() else {}).values()
              if v.get("kind") == "final" and v.get("rater") == "me"}
 
     def past(brief, image):
-        tries = history.get(brief["id"])
-        if not tries:
-            return None
-        answer = given.get(f"final/{before}/{brief['id']}", {})
-        shown = f"runs/{before}/tries/{answer.get('pick') or best_try(tries)['try_id']}.png"
-        return {"image": shown, "label": "Round 1, your grade", "grade": answer.get("grade"),
-                "broken": bool(answer.get("broken")), "comment": answer.get("comment", ""),
-                "kept": (ROOT / shown).read_bytes() == (ROOT / image).read_bytes()}  # the same drawing as in round 1
+        found, later = None, image
+        for number in range(round_number - 1, 0, -1):
+            run = ROUNDS[number + 1][genre][1]  # the run shown in that round
+            tries = load_json(ROOT / "runs" / run / "check.json").get(brief["id"])
+            if not tries:
+                break
+            answer = given.get(f"final/{run}/{brief['id']}", {})
+            shown = f"runs/{run}/tries/{answer.get('pick') or best_try(tries)['try_id']}.png"
+            same = (ROOT / shown).read_bytes() == (ROOT / later).read_bytes()
+            if found is None:
+                found = {"image": shown, "label": f"Round {number}, your grade", "grade": None, "broken": False,
+                         "comment": "", "kept": same}  # the same drawing as in the round before
+            elif not same:
+                break  # changed between those rounds: the older grade is for another drawing
+            if answer.get("grade"):
+                found.update(label=f"Round {number}, your grade", grade=answer["grade"],
+                             broken=bool(answer.get("broken")), comment=answer.get("comment", ""))
+                break
+            later = shown
+        return found
     return past
 
 
@@ -114,7 +130,7 @@ def build(round_number):
         runs = [(genre, run, prefinal_past(f"prefinal/{genre}", variant)) for genre, (run, variant) in FINAL.items()]
         runs.append(("cast", CAST, prefinal_past("prefinal/cast", 1)))
     else:
-        runs = [(genre, run, round1_past(before)) for genre, (run, before) in ROUND2.items()]
+        runs = [(genre, run, earlier_past(round_number, genre)) for genre, (run, _) in ROUNDS[round_number].items()]
     for genre, run, past in runs:
         if not (ROOT / "runs" / run / "check.json").exists():
             continue
@@ -122,8 +138,8 @@ def build(round_number):
         cards += found
         title = "Cast bonus" if genre == "cast" else load_json(ROOT / "runs" / run / "plan.json")["title"]
         rows.append({"id": f"final/set/{run}", "kind": "final", "title": title, "cards": found})
-    if round_number == 2:
-        save_json(ITEMS[2], {"compare": compare_row(real, sets), "sets": rows, "cards": cards, "blind": []})
+    if round_number > 1:
+        save_json(ITEMS[round_number], {"compare": compare_row(real, sets), "sets": rows, "cards": cards, "blind": []})
         print(f"{len(rows)} sets, {len(cards)} cards, {sum(not c['prefinal'] or not c['prefinal'].get('kept') for c in cards)} changed")
         return
 
@@ -205,15 +221,15 @@ def summary(round_number):
         answer = given.get(card["id"], {})
         past = card.get("prefinal") or {}
         if not answer.get("grade") and past.get("kept") and past.get("grade"):
-            answer = {"grade": past["grade"], "broken": past["broken"], "carried": True}  # unchanged since round 1
+            answer = {"grade": past["grade"], "broken": past["broken"], "carried": True}  # unchanged since then
         if answer.get("grade"):
             groups[card["group"]].append((card, answer))
     for group, rows in groups.items():
         before = [c["prefinal"]["grade"] for c, _ in rows if c.get("prefinal") and c["prefinal"]["grade"]]
         carried = sum(bool(a.get("carried")) for _, a in rows)
         print(f"{group}: mean grade {mean(a['grade'] for _, a in rows):.2f} from {len(rows)}"
-              + (f" ({carried} kept from round 1)" if carried else "") + f", broken {sum(bool(a.get('broken')) for _, a in rows)}"
-              + (f"; {rows[0][0]['prefinal'].get('label', 'Pre-final drawing, outside rater').lower()}: {mean(before):.2f} from {len(before)}" if before else ""))
+              + (f" ({carried} kept from before)" if carried else "") + f", broken {sum(bool(a.get('broken')) for _, a in rows)}"
+              + (f"; {'your grades before' if round_number > 1 else 'pre-final drawing, outside rater'}: {mean(before):.2f} from {len(before)}" if before else ""))
     picks = [(c, given[c["id"]]["pick"]) for c in items["cards"] if given.get(c["id"], {}).get("pick")]
     for card, pick in picks:
         print(f"  pick {card['id']}: {pick} instead of {card['chosen']}")
@@ -401,7 +417,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("action", choices=("build", "serve", "summary"))
     parser.add_argument("--port", type=int, default=8767)
-    parser.add_argument("--round", type=int, choices=(1, 2), default=2)
+    parser.add_argument("--round", type=int, choices=sorted(ITEMS), default=max(ITEMS))
     args = parser.parse_args()
     global ROUND
     ROUND = args.round

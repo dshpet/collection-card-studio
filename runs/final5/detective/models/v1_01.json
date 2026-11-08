@@ -1,0 +1,43 @@
+[
+ {
+  "round": 0,
+  "error": null,
+  "loose": [
+   {
+    "parts": 1,
+    "kinds": [
+     "cyl"
+    ],
+    "at": [
+     -0.68,
+     -0.27,
+     0.47
+    ],
+    "size": [
+     0.16,
+     0.24,
+     0.22
+    ]
+   }
+  ],
+  "problems": []
+ },
+ {
+  "round": 1,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The glowing reflector disc floats in the air. It sits at z 0.867–0.873, but the head's closed top is at z 0.86 and the glass starts at 0.89. Its radius (0.128) is also smaller than the bezel's inner radius (0.13), so it touches nothing. Fix: rest it on the head top at z 0.863.",
+   "From this camera the lens is almost edge-on. k.turn(18, -55, 0) points the head's axis about 90° from the view, so the card shows the side of the bezel and no glass. The light shafts come from the lens, so the lens face has to show. Fix: re-tilt to k.turn(50, -35, 0). The head still points up-left, the lens faces the viewer at about 50°, and the barrel and switch stay visible."
+  ]
+ },
+ {
+  "round": 2,
+  "error": null,
+  "loose": [],
+  "problems": [
+   "The lens shows as a flat opaque grey disc, the same tone as the bezel. It does not look like glass, and the glowing reflector under it can't be seen, so the head looks like a solid silver cap and not a lit lens.",
+   "The switch's red base runs into the top grip ring (rings reach z≈0.465, the switch base starts at z=0.45), so the switch sits on the ridges instead of on smooth barrel."
+  ]
+ }
+]

@@ -482,7 +482,8 @@ def review_variant(run, variant, round_number, briefs, history, rater):
     pairs = blind_pairs(entries, name)
     fresh_cache(ROOT / "runs" / "review" / name, [[p["pair"], p["A"]["id"], p["B"]["id"]] for p in pairs])
     reports = specialists(name, pairs, lessons_for(), used, rater, list(ROLES))
-    direction = direct(name, pairs, reports, None, rater)
+    producer = {b["card"]["name"]: b["card"]["note"] for b in briefs if b["card"].get("note")}
+    direction = direct(name, pairs, reports, None, rater, producer)
     if not direction:
         raise RuntimeError("the art director gave no notes. Rerun to continue")
     report(name, pairs, reports, direction)
@@ -492,7 +493,8 @@ def review_variant(run, variant, round_number, briefs, history, rater):
     return {ids[try_id]: note for try_id, note in notes.items()}
 
 
-def direct(name, pairs, reports, style_text, rater):
+def direct(name, pairs, reports, style_text, rater, producer=None):
+    """producer: {card name: note}, the producer's fixes, which no note may undo."""
     folder = ROOT / "runs" / "review" / name
     out = folder / "art_director.json"
     if out.exists():
@@ -507,8 +509,12 @@ def direct(name, pairs, reports, style_text, rater):
                  "shows the look, not the object. Form cannot be judged across objects: never ask to change a card's "
                  "proportions, thickness or roundness. Notes may change color, value, backdrop, light, finish and extras. "
                  f"{edit_examples()}\n")
+    # From the producer, 2026-11-08: the director asked for "bright, polished chrome" on handcuffs the producer had
+    # called too metallic, and for glossy porcelain they had called too glossy
+    fixes = ("The producer's notes on these cards stand. Never ask for the opposite of one or for anything that undoes "
+             "it:\n" + "\n".join(f"- {card}: {note}" for card, note in producer.items()) + "\n\n" if producer else "")
     prompt = (f"{(AGENTS / 'art_director.md').read_text('utf-8')}\n\nEach image is one pair of cards, A and B on top.\n"
-              f"Answer key:\n{unblinded}\n\n{style_part}"
+              f"Answer key:\n{unblinded}\n\n{fixes}{style_part}"
               f"Specialist reports:\n{json.dumps(reports, ensure_ascii=False)}\n\n"
               f"Return issues, ranked. {style_ask}"
               "For each generated card return keep, or a note for its edit. Summary: is this close to the real cards?")

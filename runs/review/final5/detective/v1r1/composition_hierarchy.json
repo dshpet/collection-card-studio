@@ -1,0 +1,33 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B: thin handcuffs lie on a diagonal from upper-left to lower-right and cover only about 12% of the card (subject_area 0.124, far below the real 0.264 minimum). Most of the card is empty pink gradient, and at thumbnail size the cuffs read as a small grey squiggle. A: the pair of sneakers fills the lower-middle of the card and nearly touches the left edge (margin 0.033). It is short (box_height 0.487) but solid, and it reads at once as shoes. Its occupancy matches the real cards.",
+   "fix": "Make the handcuffs fill most of the card: draw them big and chunky, close to the camera, in a three-quarter view, with the two cuffs nearly touching opposite edges and thick rings and a thick chain that stay clear at small size. Leave little empty background."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the magnifying glass sits whole inside the card, tilted on a diagonal, with even green margins on every side (margin 0.088) and nothing touching an edge. It is the fully contained, floating framing seen on the GENERATED lesson cards. B: the backboard is large and pushed up and to the right, and the pole runs off the bottom edge (margin 0). This edge crop matches how the real lighthouse and computer cards bleed off the frame. Both read clearly, so this is a weak call.",
+   "fix": "Draw the magnifying glass larger and closer, so the lens rim nearly touches the top-left and the handle runs off the bottom-right corner of the card."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the soccer ball sits low and slightly left, whole inside the card, with a wide grass band around it (margin_min 0.144, above the real maximum of 0.085). The pitch lines at the top add a second, weaker point of interest. B: the fountain basin fills almost the full width (box_width 0.916), and the paving runs off the left, right and bottom edges, so the hero is tight to the frame as on the real cards.",
+   "fix": "Draw the soccer ball much bigger, filling most of the card with its edges almost touching the sides and bottom. Remove the white pitch lines at the top."
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the jellyfish floats whole inside the card, bell at upper-left and tentacles trailing to the lower-right, with clear margins all around. Loose bubbles to the left and right compete a little, and a thin bright cyan strip runs along the very top edge like a framing leftover. B: the lifeguard chair is big, its legs are cut off by the bottom edge (margin 0) and its roof nearly reaches the top. This is the edge crop seen on the real lighthouse card.",
+   "fix": "Draw the jellyfish larger, with the bell near the top-left and the tentacles running off the bottom edge of the card. Remove the stray bubbles and the bright line along the top edge."
+  }
+ ],
+ "pattern": "Generated cards show the whole object floating inside the frame, with even, fairly wide margins all around, often small or thin relative to the card. Real cards push the hero big and close in a three-quarter view, and often let it or its ground run off an edge (lighthouse base, desk, basketball pole, chair legs)."
+}

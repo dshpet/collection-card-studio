@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the vending machine stands on a plain purple floor in the backdrop's own color. There is no floor edge, no texture and only a soft shadow (category 2), like the real basket and trophy cards. The background is about as quiet as it can be (detail 0.008, at the bottom of the real range). B: the ship's wheel stands on a curved wooden deck. Each plank has drawn grain and crack lines, and a pastel sunburst fans out behind. That is two staging systems on one card: a category-1 graphic burst on top of a category-3 material floor. The busy plank lines in the bottom third push background edge density to 0.034, above the real ceiling of 0.021. The same thing happens in the lessons, where generated cards add texture to the floor (the woodgrain table in the computer lessons).",
+   "fix": "Ship's wheel on its wooden stand, standing on a plain smooth floor in the same soft lilac as the background, with no planks or wood grain on the floor. Behind it, a simple soft glow with no sunburst rays."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the roller coaster sits in its place of use (category 4). The track is cut by the card's left and right edges. Behind it are a sky with a few clouds, low rolling hills and a strip of grass with small tufts at the bottom. Those are large, quiet shapes, similar to the park behind the real birdhouse card. B: the open window is set into an orange brick wall that fills the card. The bricks are tone-on-tone and evenly spaced, and nothing has been added around the window. Both cards measure the same (edge 0.04) and sit well inside the real range. The green curtain blowing out is a motion cue, not an invented prop. On staging and detail, neither card stands out.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the campfire is surrounded by things the subject does not call for. There is a blue coffee pot on the stone ring, a log cabin with a lit window at the top right and a row of pine trees across the top. About fifteen small pebbles and many grass tufts are scattered over the dirt, and floating ember crescents drift around the flame. That is a lot of small detail in a category-4 scene (edge 0.055 vs B's 0.036). It matches the lighthouse lessons, where the generated card adds rocks, bushes, a lifebuoy and bollards. B: the coin binoculars stand close and central on a balcony. The railing and a soft city skyline sit behind, made of a few large, pale shapes, and the card's bottom edge cuts the post. This matches the real birdhouse card's staging.",
+   "fix": "Campfire of stacked logs inside a ring of grey stones, filling most of the card, on plain smooth dirt ground. Behind it, a soft, blurry forest of a few large dark green shapes. No cabin, no coffee pot, no scattered pebbles or grass tufts, no floating sparks."
+  }
+ ],
+ "pattern": "Generated cards add things the subject never names: extra props (lifebuoys, bollards, a coffee pot, a cabin) and scattered small clutter (pebbles, tufts, sparks). They also give floors material texture that the real cards leave plain or quiet (wood grain and planks under a category-2 object), or mix a graphic sunburst with a material floor. Real cards keep one staging category and fill the background with a few large, quiet shapes."
+}

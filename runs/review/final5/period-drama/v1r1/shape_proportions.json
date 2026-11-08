@@ -1,0 +1,54 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (parasol): the canopy is blown up into a pillow dome with soft bulging panels. The ribs are thick rounded tubes laid over the fabric, not thin lines. The handle and crook are chunky, and the lace frill makes a wobbly scalloped edge (corner_rate 5.86, above the real range). B (folding fan): the leaf panels are flat planes with straight fold edges and crisp tips. The sticks are thin slats with clear gaps between them, and the guard is a flat plank. B keeps flat parts flat; A swells them.",
+   "fix": "Parasol canopy as a taut, shallow fabric dome with flat segments stretched between thin straight ribs; ribs drawn as thin lines at the seams, not raised tubes; slim handle shaft with a thin hooked crook."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (phone box): the silhouette is an almost perfect rectangular slab (straight_share 0.733 and solidity 0.969, both above the real range). The roof is a single smooth arch with no stepped cornice tiers and no crown pediments on the sides, so the parts a viewer expects are reduced. A (chest): the barrel lid, gold corner caps and spilled coins break the contour the way the real barrel and envelope cards do. The chest's bands are thick, but they sit within the real range.",
+   "fix": "Draw the red kiosk roof as stepped tiers: a domed top over a ledge, with a small raised crown pediment on each side and a header panel under the ledge; add a slightly wider stepped plinth at the base so the outline is not a plain box."
+  },
+  {
+   "pair": "p03",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (fountain): stacked bowls with scalloped rims, chunky water arcs and a thick pool rim. That is stylized but consistent with real cards such as the barrel. B (cake stand): thin flat plates, a slim column with turned knobs and a broad foot. Proportions are plausible and the thin parts stay thin. Neither silhouette gives a clear shape tell, and both metric sets sit inside the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p04",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (top hat): the brim is swollen into a thick rolled tube with a blobby upturned end. The crown's top edge is rounded off, and the whole contour is soft with almost no corners (corner_rate 0.75). B (mortarboard): the board is a thin flat square with straight edges and tight corners. The tassel cord is a thin line ending in a properly narrow tassel. The skullcap below is a plain band.",
+   "fix": "Top hat with a thin, flat brim, gently curled only at the sides, drawn as a narrow edge, not a thick roll; a straight-sided crown with a crisp flat top and a tight edge where top meets side."
+  },
+  {
+   "pair": "p05",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (sneakers): the soles balloon into puffy white pillows and the two shoes merge into one lump. The laces are thick, tangled loops that don't thread through eyelets, and the upper panels melt into each other with no clear toe cap or heel counter. A (candelabra): the arms and candles are correctly thin, there is a turned stem with distinct knops, a flat drip pan under each candle and a domed foot. Its low solidity comes from the open arms, which is correct for the object.",
+   "fix": "Running shoes with a firm, slightly thick midsole that has a straight top edge, a distinct toe cap and heel counter, and thin laces crossing in neat parallel rungs through a visible row of eyelets; separate the two shoes with a small gap."
+  },
+  {
+   "pair": "p06",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (neckerchief): the cloth is inflated like a balloon. The collar is a thick round tube, and the two tails are fat rounded lobes with no thin folded hem or pointed triangle tips. It reads as rubber, not fabric. A (fan): flat pleated leaf, thin separated sticks, a narrow guard and a small rivet. The lace edge raises corner_rate, but that matches the real object.",
+   "fix": "Neckerchief as thin folded cloth: a flat band around the neck with a crisp fold edge, a tight knot at the toggle, and two flat triangular tails ending in sharp points, with thin creases rather than puffy volume."
+  },
+  {
+   "pair": "p07",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A (cooler): a boxy body with slightly tapering walls, a flat lid panel with rounded corners and a side handle loop. Proportions are reasonable. B (paddling pool): three stacked inflatable rings of equal thickness forming a smooth oval. Low corner_rate and high solidity are expected for an inflatable ring, so the metric outlier is not a real shape flaw. Neither card shows a clear sign of swelling or missing parts.",
+   "fix": ""
+  }
+ ],
+ "pattern": "Generated cards give themselves away by swelling: thin parts (hat brims, cloth tails, parasol ribs, shoe laces) become thick rolled tubes or pillow lobes, flat sheets bulge, and corners turn into soft blobs. They also drop or blur parts a viewer expects, like stepped roof tiers, eyelets and a separate toe cap and heel. Real cards keep brims, boards and cloth edges thin and planar with tight bevels."
+}

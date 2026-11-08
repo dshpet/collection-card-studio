@@ -1,0 +1,33 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (sneakers): the blue upper has a fine perforated mesh pattern on the toe and side panels. Parts of it look smeared, especially near the toe box. The laces are thick, glossy, toy-like tubes. Every part, from the sole and collar to the laces and logo patch, has the same wet sheen, so the fabric does not read as fabric. Its micro_texture (0.031) sits at the top of the real range. B (handcuffs): smooth, even, satin grey metal. The lock blocks have flat faces and the keyhole is one simple dark shape. The chain links are broad and plain. This matches how real cards simplify hardware.",
+   "fix": "Running shoes with a soft matte fabric upper drawn as smooth flat color with no visible mesh dots. Slightly glossy rubber sole. Thin simple laces with a soft finish. Clean, crisp edges with no smeared texture."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A (magnifier): a glossy glass lens with one broad streak highlight and a dot, a satin grey rim and a glossy red handle. This mix of finishes matches the real lamp post and trophy. B (hoop): a flat matte white backboard, a satin red frame, an orange rim and a smooth white rope net with no fine strand detail. B's high highlight_share comes from the white board's base color, not from gloss. Neither card shows over-detailing or uniform lacquer.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (soccer ball): the 2x crop shows a fine pebbled leather grain on the black pentagon and a faint one on the white panels. The seams are deep, crisp grooves, and the highlights are bright (highlight_share 0.256, above the real range). The lessons show this pattern in generated cards: fine material texture added where real cards keep smooth surfaces, like the generated glove's stitch lines. B (fountain): smooth matte sandstone with broad, soft fluting and simple paving tiles. The water is a smooth translucent ribbon. The surface simplification matches the real lighthouse.",
+   "fix": "Soccer ball with smooth, slightly glossy panels and no visible leather grain or pebbling. Soft shallow seams between the panels. One soft broad highlight."
+  },
+  {
+   "pair": "p04",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (jellyfish): a glossy, translucent-looking bell with soft inner glow spots and smooth ribbon tentacles. It has no added micro-texture. B (lifeguard chair): a matte purple seat and canopy and satin metal tubes. The life ring has a thin twisted rope wrapped around it, with strand detail visible in the 2x crop, plus small strap clips. This added fine hardware and rope detail matches the generated lessons' extra stitching and vents (micro_texture 0.015 vs 0.010). The signal is weak because B's other surfaces are clean.",
+   "fix": "Lifeguard chair with a plain red-and-white ring and no rope wrapped around it, or only a smooth, simple cord band. No small clips or straps. Keep the broad, smooth parts."
+  }
+ ],
+ "pattern": "Generated cards add fine surface detail that real cards simplify away: stitch lines, perforated mesh, pebbled leather grain, vents, twisted rope strands, small clips and screws. The detail is crisp and sometimes slightly smeared. Generated cards also tend to give every part the same wet sheen, where real cards mix matte bodies with a few soft, broad highlights."
+}

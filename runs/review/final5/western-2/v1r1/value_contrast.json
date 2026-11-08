@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (ship wheel): the whole card is high-key. A white glow fills the area behind the wheel, and the sunburst and floor sit in the top two grey levels, so the mid-grey wheel and its dark pedestal read as one darker cut-out against a bleached field. Lightness mean is 0.761 and the hero gap is -0.282, both outside the real range. This matches the halo-behind-hero pattern in the generated lessons (glove, camera). A (vending machine): the purple background is a calm mid value with only a soft lighter pool on the floor. The dark blue body is set against it, and the bright window panel carries the light group. Its numbers sit inside the real range.",
+   "fix": "Lower the background to a medium-bright warm tone with no white glow behind the wheel. Keep the sunburst rays soft and close in value to the sky. Light the wheel's wood so its top faces come up near the background brightness, and keep the darkest shadow to a small patch under the pedestal."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (roller coaster): the yellow cars land in the same mid-light grey band as the clouds and sky, so the hero barely separates by value and relies on hue. The dark blue track and grass plus a darker lower band push the corners down: vignette is 0.117 and the gap is -0.217, both just outside the real range. B (window): it has clear real-style grouping. The bright white frame and curtain are the light group, the navy interior is one compact dark accent, and the brick wall is an even mid grey with no corner darkening. All its values are in range.",
+   "fix": "Brighten the yellow cars so their lit tops are clearly the lightest shapes on the card, above the sky. Keep the grass and the bottom corners at the same mid brightness as the hills instead of darker, and let the blue track be a mid-dark line rather than near-black."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (binoculars): the background is washed-out pale sky and city haze, almost all in the top grey levels, so the overall key is very high (lightness mean 0.759, above range). The hero is clearly darker than the field (gap -0.246, below range), with near-black eyepiece rings and a dark post. This is the same dark-hero-on-bleached-ground split seen in the generated camera lessons. A (campfire): the darker trees in the corners frame a central bright flame. Value steps through mid-grey stones and logs, and the dark accents are small, under the logs and in the forest. Its numbers are in range.",
+   "fix": "Bring the sky and city down to a medium light blue with visible mid-tone buildings rather than white haze. Light the binocular body so its top and front faces are as bright as the sky, and keep the darkest tones to small rings inside the lenses rather than the whole post."
+  }
+ ],
+ "pattern": "The generated cards are lit in a split-key way. A bright, often haloed background sits in the top grey levels while the hero falls to mid-dark with large near-black areas, so the hero is darker than its ground by more than the real cards ever go. Real cards keep the hero's lit faces level with or above the background, keep the background mid-key, and limit the darkest accents to small pockets."
+}
