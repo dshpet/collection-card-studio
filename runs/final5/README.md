@@ -1,6 +1,6 @@
 # Fix round 2
 
-The producer graded fix round 1 (`runs/final4`): Western 5 of 5, Period Drama 4, Detective 4, cast 5; cards 4.4 Western, 3.5 Period Drama, 3.8 Detective, 4.5 cast (re-graded 5.0 after fix round 3). "I like it overall, lets try some smaller fixes." This round redraws the eight cards with a comment, eight candidates each, with `make_set.py --keep <fix-round-1 run> --candidates 8`.
+The producer graded fix round 1 (`runs/final4`): Western 5 of 5, Period Drama 4, Detective 4, cast 5; cards 4.4 Western, 3.5 Period Drama, 3.8 Detective. The cast cards' grades from this round were overwritten when they were re-graded 5.0 after fix round 3. "I like it overall, lets try some smaller fixes." This round redraws the eight cards with a comment, eight candidates each, with `make_set.py --keep <fix-round-1 run> --candidates 8`.
 
 | Set | Folder | Plan | Kept from |
 |---|---|---|---|

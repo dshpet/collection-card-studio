@@ -612,8 +612,8 @@ def preflight(args):
         missing.append("character cards need the cast cutouts: run scripts/cast.py find, then label")
     missing += [f"--alongside {folder}: runs/{folder}/plan.json not found" for folder in args.alongside
                 if not (ROOT / "runs" / folder / "plan.json").exists()]
-    if args.keep and not (ROOT / "runs" / args.keep / "check.json").exists():
-        missing.append(f"--keep {args.keep}: runs/{args.keep}/check.json not found")
+    missing += [f"--keep {args.keep}: runs/{args.keep}/{name} not found" for name in ("briefs.json", "check.json")
+                if args.keep and not (ROOT / "runs" / args.keep / name).exists()]
     if missing:
         raise SystemExit("Cannot start:\n- " + "\n- ".join(missing))
 
@@ -770,7 +770,7 @@ def main():
                 draw_and_check(jobs, attempt)
                 drawn = [t for b in chosen if b["id"] in notes for t in history[b["id"]]
                          if t["try_id"] == f"{b['id']}_{attempt}"]
-                edited = [e for e in drawn if e.get("passed") or not e.get("issues")]
+                edited = [e for e in drawn if not e.get("issues")]  # measured misses alone do not stop an edit
                 # An edit is obeyed strongly and can make a card worse, so it stays only if it beats its draft
                 won = better_edits(run, f"edit_{variant}_{round_number}",
                                    [(e["brief_id"], before[e["brief_id"]], e["try_id"]) for e in edited],

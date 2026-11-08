@@ -67,7 +67,7 @@ A run first checks that its tools and data are in place. A request is the theme,
 - `--alongside <folder> ...`: other sets of the same collection, whose objects the plan must not repeat.
 - `--plan <file>`: draw a plan a producer has checked, such as those in `runs/plans/`.
 - `--cast N`: add N character cards per variant, drawn with the game's cast.
-- `--keep <folder>` with `--plan` and `--run`: a fix round. Cards whose plan is unchanged keep their drawings and picks; only the others are drawn again. A card's `note`, such as the producer's fix, closes its brief, and the review may not undo it.
+- `--keep <folder>` with `--plan` and `--run`: a fix round. Cards are matched by their position in the plan; those whose plan is unchanged keep their drawings and picks, and only the others are drawn again. A card's `note`, such as the producer's fix, closes its brief, and the review may not undo it.
 - `--candidates 1 --review-rounds 0`: a quick draft.
 - `scripts/screen.py <folder> --variant 1 --color blue` places a variant in the game's window.
 

@@ -27,7 +27,7 @@ The theme is required. Wishes are optional. Do not ask about anything else. If t
 
    Colors are blue, orange, magenta and purple. The result is `runs/<folder>/screen_N.png`.
 
-4. If the producer comments on single cards, fix only those: copy `runs/<folder>/plan.json` to `runs/plans/<name>.json`, change the named cards (another object, other colors or staging, or a `note` with the fix, which closes the card's brief), and run
+4. If the producer comments on single cards, fix only those: copy `runs/<folder>/plan.json` to `runs/plans/<name>.json`, change the named cards in place, keeping every card's position (another object, other colors or staging, or a `note` with the fix, which closes the card's brief), and run
 
    ```sh
    .venv/bin/python -B scripts/make_set.py "<Theme>" --wishes "<wishes>" --candidates 8 --plan runs/plans/<name>.json --keep <folder> --run <folder>-fix

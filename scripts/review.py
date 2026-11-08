@@ -569,6 +569,8 @@ def main():
     parser.add_argument("--no-director", action="store_true")
     parser.add_argument("--name")
     args = parser.parse_args()
+    if not args.no_director and "staging_detail" not in args.roles:
+        parser.error("the director reads the staging_detail sheets: include that role or pass --no-director")
     if args.mode == "study":
         study(args.rater)
         return
