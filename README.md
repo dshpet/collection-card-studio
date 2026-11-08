@@ -32,7 +32,7 @@ The producer here is the author, playing the brief's producer. Every human grade
 - **Construction.** In a six-object trial, Blender models cut broken cards from 5 of 12 to 1, and to none once the models were fixed (grade 3.7 against 2.2). Only built, multi-part objects get a model.
 - **Plans matter most.** Between two graded batches the mean rose from 3.63 to 3.97: half of that came from three character cards, most of the rest from better objects. Low grades traced back to the plan and became lessons.
 - **Robustness.** 19 odd or hostile requests (emoji and non-English themes, brands, franchises, weapons, gore, prompt injection) all produced plans, with forbidden wishes declined and named in the report. War and Gangsters kept three cards flagged for a person.
-- **Generator.** On the same twins and prompts the art director preferred Codex to Nano Banana Pro 11 to 0 and to Qwen-Image-2.1 39 to 1. CSD agrees for Qwen and is split for Nano Banana Pro (5 of 11). The prompts were tuned on Codex.
+- **Generator.** On the same twins and briefs the art director preferred Codex to Nano Banana Pro 11 to 0 and to Qwen-Image-2.1 39 to 1. CSD agrees for Qwen and is split for Nano Banana Pro (5 of 11). The prompts were tuned on Codex, and Nano Banana Pro ran through Antigravity, whose agent rewrites prompts, so that arm tests the system as well as the model.
 
 ## Make a set
 
