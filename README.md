@@ -62,7 +62,7 @@ flowchart LR
 | Edit | Codex applies the notes. An edit stays only if it beats its draft, and the outcome is saved for later runs |
 | Deliver | `runs/<theme>/variant_N/`, a sheet per variant and `report.md`, which marks cards for a look as `review` (failed a check), `unsure pick` (a close choice) or `missing` |
 
-A run first checks that its tools and data are in place. Rerunning the same request continues where it stopped; another request for the same theme gets `runs/<theme>-2`. Options:
+A run first checks that its tools and data are in place. A request is the theme, the wishes and the settings that change the drawings (variants, candidates, references, blockouts, judge). Rerunning the same request continues where it stopped; any other request for the same theme gets `runs/<theme>-2`. Options:
 
 - `--alongside <folder> ...`: other sets of the same collection, whose objects the plan must not repeat.
 - `--plan <file>`: draw a plan a producer has checked, such as those in `runs/plans/`.
@@ -97,7 +97,7 @@ python -m venv --system-site-packages .venv    # PyTorch for your GPU comes from
 
 DINOv3 and SAM 3 are gated on Hugging Face: put `HUGGING_FACE_API_KEY` in `.env`, then run `scripts/embed.py --models dinov3` and `HF_HUB_OFFLINE=0 .venv/bin/python -B scripts/cast.py find`, then `cast.py label`. Only these gated downloads get the key.
 
-BiRefNet, Depth Anything 3 and DeepGaze run upstream code, so each is pinned to a reviewed revision: weights in `scripts/estimate.py`, sources `depth-anything-3` at `3d835ec` and `DeepGaze` at `c7db17e` in `.models/src/`.
+BiRefNet, Depth Anything 3 and DeepGaze run upstream code, so each is pinned to a reviewed revision: weights in `scripts/estimate.py`, sources `depth-anything-3` at `3d835ec` and `DeepGaze` at `c7db17e` in `.models/src/` (see Reference analysis).
 
 ## Change the generator or the style
 
@@ -123,9 +123,11 @@ BiRefNet, Depth Anything 3 and DeepGaze run upstream code, so each is pinned to 
 
 ## Reference analysis
 
-Run from the project root; each step skips finished work. The form every rater fills is in `scripts/form.py`.
+Run from the project root; each step skips finished work. The form every rater fills is in `scripts/form.py`. Depth Anything 3 and DeepGaze run from their pinned sources:
 
 ```sh
+git clone https://github.com/ByteDance-Seed/depth-anything-3.git .models/src/da3 && git -C .models/src/da3 checkout 3d835ec1a5802d64a8b8b15f817a1ab54809bfe4
+git clone https://github.com/matthias-k/DeepGaze.git .models/src/deepgaze && git -C .models/src/deepgaze checkout c7db17e2d1d7ea6468ffdee2cfaddf141095dcff
 .venv/bin/python -B scripts/map_sets.py
 .venv/bin/python -B scripts/rate.py cards --rater codex    # also: claude, qwen3.8:27b-q4_K_M, gemma4:31b
 .venv/bin/python -B scripts/rate.py sets --rater codex

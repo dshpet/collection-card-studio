@@ -1,14 +1,18 @@
-"""A fix round (make_set.py --keep) keeps unchanged cards and redraws the rest, offline."""
+"""Offline checks of how runs resume: a fix round (make_set.py --keep) keeps unchanged cards and redraws the rest,
+and a rerun continues only the same request."""
 
 import json
 import sys
 import tempfile
 import unittest
+from argparse import Namespace
 from pathlib import Path
+from unittest import mock
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
-from make_set import keep_cards  # noqa: E402
+import make_set  # noqa: E402
+from make_set import keep_cards, run_folder  # noqa: E402
 
 CARD = {"name": "Pocket Watch", "subject": "A gold pocket watch on a chain", "category": "1",
         "pattern": "rays", "hero_colors": "gold", "build_model": True}
@@ -47,6 +51,41 @@ class FixRoundTest(unittest.TestCase):
         self.keep({**CARD, "note": "a shorter, sturdier chain"})
         self.assertEqual(json.loads((self.run / "check.json").read_text()), {})
         self.assertFalse((self.run / "models" / "v1_01.png").exists())
+
+    def test_a_new_setting_gets_a_new_model(self):
+        self.keep({**CARD, "surface_or_setting": "hanging from a nail on a wall"})
+        self.assertFalse((self.run / "models" / "v1_01.png").exists())
+
+
+class RequestTest(unittest.TestCase):
+    ARGS = dict(theme="Western", wishes="", variants=3, cast=0, plan=None, no_references=False, alongside=[],
+                no_blockouts=False, candidates=3, rater="claude-opus-5-5", keep=None, run=None)
+
+    def setUp(self):
+        self.folder = tempfile.TemporaryDirectory()
+        self.root = Path(self.folder.name)
+        patcher = mock.patch.object(make_set, "ROOT", self.root)
+        patcher.start()
+        self.addCleanup(patcher.stop)
+        self.addCleanup(self.folder.cleanup)
+
+    def record(self, name, request):
+        (self.root / "runs" / name).mkdir(parents=True)
+        (self.root / "runs" / name / "request.json").write_text(json.dumps(request))
+
+    def test_the_same_request_continues_its_folder(self):
+        run, request = run_folder(Namespace(**self.ARGS))
+        self.record("western", request)
+        self.assertEqual(run_folder(Namespace(**self.ARGS))[0].name, "western")
+
+    def test_more_candidates_start_a_new_folder(self):
+        self.record("western", run_folder(Namespace(**self.ARGS))[1])
+        self.assertEqual(run_folder(Namespace(**{**self.ARGS, "candidates": 8}))[0].name, "western-2")
+
+    def test_an_older_run_resumes_without_the_later_settings(self):
+        request = run_folder(Namespace(**self.ARGS))[1]
+        self.record("western", {k: v for k, v in request.items() if k not in make_set.LATER})
+        self.assertEqual(run_folder(Namespace(**{**self.ARGS, "candidates": 8}))[0].name, "western")
 
 
 if __name__ == "__main__":

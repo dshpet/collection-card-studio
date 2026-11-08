@@ -367,7 +367,7 @@ def keep_cards(run, source, briefs):
         if not old:
             continue
         same_object = all(old["card"].get(key) == brief["card"].get(key)
-                          for key in ("name", "subject", "category", "pattern", "note"))
+                          for key in ("name", "subject", "category", "pattern", "surface_or_setting", "note"))
         if same_object and brief["card"].get("build_model") and not (run / "models" / f"{brief['id']}.png").exists():
             for path in (source / "models").glob(f"{brief['id']}.*"):
                 (run / "models").mkdir(parents=True, exist_ok=True)
@@ -618,18 +618,27 @@ def preflight(args):
         raise SystemExit("Cannot start:\n- " + "\n- ".join(missing))
 
 
+LATER = ("blockouts", "candidates", "rater")  # settings that older runs' request.json lacks; they match without them
+
+
 def run_folder(args):
     """--run, or the theme's first folder that is free or holds this same request, so a rerun continues it and a
     different request never mixes with it: runs/western, then runs/western-2 and so on."""
     request = {"theme": args.theme, "wishes": args.wishes, "variants": args.variants, "cast": args.cast,
-               "plan": args.plan, "references": not args.no_references, "alongside": sorted(args.alongside)}
+               "plan": args.plan, "references": not args.no_references, "alongside": sorted(args.alongside),
+               "blockouts": not args.no_blockouts, "candidates": args.candidates, "rater": args.rater}
     if args.keep:
         request["keep"] = args.keep
     runs = ROOT / "runs"
 
     def ours(folder):
         record = folder / "request.json"
-        return not folder.exists() or (record.exists() and load_json(record) == request)
+        if not folder.exists():
+            return True
+        if not record.exists():
+            return False
+        stored = load_json(record)
+        return stored == {k: v for k, v in request.items() if k in stored or k not in LATER}
 
     if args.run:
         run = runs / args.run
