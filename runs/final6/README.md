@@ -29,4 +29,6 @@ Producer's grades, latest per card: sets 5, 5, 5, cast 5; cards 4.5 Western, 3.8
 
 `compare.json` from `scripts/compare.py --sets runs/final6/sets.json`. Style similarity is descriptive, not validated against the producer's grades. `final_sets.png` shows the object cards; the cast cards show the game's characters and stay out of git.
 
+The producer accepted the twelve rules drawn from their comments; they are under Planning in `analysis/lessons.md`.
+
 The review page's round 4 (`experiments/final_review.py serve`, the default) shows this assembly; only the Magnifier changed.

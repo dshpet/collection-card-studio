@@ -25,7 +25,7 @@ A flat object lying down, such as a map, a book or a badge on a table, is seen f
 
 - The camera fits the hero, not the setting, to about 80% by 75% of the card. Frame on the main body: parts that run on far past it, such as a truss, a track, a road or a pier's deck toward the shore, go through `k.unframed` so they run off the card and do not shrink the hero. The main body is the card's point of attention and sits at its center: when a part reaches out to one side, such as a camera's flash or a watch chain, pass the body through `k.focus`, and keep that part compact so the body stays large.
 - Low and mild, as on the real cards: elevation 5-20 degrees and lens 50-85 mm. Azimuth 20-40 degrees for a three-quarter view, even for a symmetric object; 0 only for a face meant to be read, such as a clock or a sign.
-- Colors: the brief's hero colors as hex, and a backdrop hex from its backdrop colors. Finishes: matte for cloth, wood, rope, stone, fur and straw; satin for painted parts; gloss for lacquer and glazes; metal; glass.
+- Colors: the brief's hero colors as hex, and a backdrop hex from its backdrop colors. Finishes: matte for cloth, wood, rope, stone, fur and straw; satin for painted parts, metal, porcelain and enamel, since the drawing turns metal and gloss into chrome and glare; gloss for lacquer; glass.
 
 ## The file
 

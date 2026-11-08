@@ -61,7 +61,7 @@ The fix rounds moved subject chroma and area away from the real cards while the 
 
 ## What the producer's comments were about
 
-The producer left 23 comments on single cards over four review rounds. None asked for a different overall style: render, palette, outline or light. Nine were about shape, proportion, viewpoint or construction (a magnifier's perspective and proportions, a top hat's brim, a candelabra and a watch in perspective, a ring that did not sit inside its bag), five about material finish (gloss, metal, texture), three about recognition (a windmill that read as a monument, a badge without its emblem, a dog as an object), three about composition (off-center objects, a busy doorway), and three about the cast cards (blush, a third leg, a misplaced hat). The rules drawn from them wait for the producer under Proposed in [lessons.md](lessons.md).
+The producer left 23 comments on single cards over four review rounds. None asked for a different overall style: render, palette, outline or light. Nine were about shape, proportion, viewpoint or construction (a magnifier's perspective and proportions, a top hat's brim, a candelabra and a watch in perspective, a ring that did not sit inside its bag), five about material finish (gloss, metal, texture), three about recognition (a windmill that read as a monument, a badge without its emblem, a dog as an object), three about composition (off-center objects, a busy doorway), and three about the cast cards (blush, a third leg, a misplaced hat). The rules drawn from them are in [lessons.md](lessons.md), accepted by the producer.
 
 ## Where we still differ
 
