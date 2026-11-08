@@ -32,14 +32,14 @@ Style similarity, the mean CSD between a set's own cards, is lower than in the r
 
 ## Art
 
-Medians on the 30 final cards against the 129 real object cards, beside the same genres' pre-final variants (`analysis/STYLE_GAPS.md`, "Overnight arms"):
+Medians on the 30 final cards against the 126 real object cards, beside the same genres' pre-final variants (`experiments/final_numbers.py`, `runs/final3/set_numbers.json`):
 
 | Measure | Real | Pre-final | Final |
 |---|---:|---:|---:|
-| Subject chroma | 0.130 | 0.102 | 0.125 |
-| Hue families | 3.9 | 2.4 | 2.5 |
+| Subject chroma | 0.128 | 0.102 | 0.125 |
+| Hue families | 3.8 | 2.4 | 2.5 |
 | Shadow chroma kept | 97% | 82% | 87% |
-| Smallest margin to the card edge | 0.058 | 0.098 | 0.082 |
+| Smallest margin to the card edge | 0.060 | 0.098 | 0.082 |
 | Subject area | 0.324 | 0.279 | 0.277 |
 
 | Principle in the references | Where we stand |
@@ -61,4 +61,4 @@ Medians on the 30 final cards against the 129 real object cards, beside the same
 - **Construction and perspective:** the outside artist marked 9 of 75 pre-final cards broken, all on perspective or construction. No model or pixel judge reads it, so the camera line and Blender models for those cards wait on the producer's blind look (`experiments/final_review.py`).
 - **Color across a set:** each card gets its own saturated backdrop, so our sets vary more in color than the real ones (above).
 - **Blind:** the producer still spots 24 of 32 final-style twins; the outside artist's quick blind pass came out inverted (23 of 72), calling the brighter, larger real cards AI ([STYLE_GAPS](STYLE_GAPS.md)).
-- **Rating:** the final sets are not graded yet. The pre-final cards had 3.1 of 5 from the outside artist; the producer graded batch 2 at 3.85. The other numbers above come from models or measurement.
+- **Rating:** the final sets are not graded yet. The pre-final cards had 3.1 of 5 from the outside artist; the producer graded batch 2's object cards at 3.85. The other numbers above come from models or measurement.

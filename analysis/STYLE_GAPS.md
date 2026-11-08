@@ -161,20 +161,20 @@ One change per arm against a shared control, then one combining round (`experime
 
 | Arm | What changed | Evidence | Verdict |
 |---|---|---|---|
-| Smooth, first wording | material line: "by its color and sheen ... large surfaces stay smooth, no grain, weave, nap or pores" | flat-share gap −0.109 to −0.032 (nearer on 22 of 40); eyes less textured; but glossier by eye (17/8 to 21/4 more/less than real), shadow depth away (p 0.05), CSD closer on 15 of 40 | dropped |
+| Smooth, first wording | material line: "by its color and sheen ... large surfaces stay smooth, no grain, weave, nap or pores" | flat-share gap −0.109 to −0.032 (nearer on 22 of 40); eyes less textured; but glossier by eye (17/8 to 21/4 more/less than real), shadow depth and backdrop edges away (p 0.05 and 0.03), CSD closer on 15 of 40 | dropped |
 | Smooth, no "sheen" | the same line without "and sheen" | flat-share gap −0.109 to −0.030 (nearer on 27 of 40, p 0.002); eyes 9/9 to 3/14 more/less textured than real; gloss by eye unchanged (18/6 to 19/5); CSD closer on 21 of 40 (0.908 to 0.906); no field away at p < 0.05 | **adopted** for cards drawn from text |
 | The same over blockouts | the line in the blockout prompt, with the fill below | less textured by eye 13 to 3 and by pixels; but glossier by eye 14 to 0 while pixel gloss fell | blockout prompt unchanged |
-| One camera | "every rim, brim, opening and tabletop opens by the same amount" | no field moved; CSD closer on 16 of 40; no measure reads perspective | the producer's call, blind page |
+| One camera | "every rim, brim, opening and tabletop opens by the same amount" | 3 of 55 fields away at p < 0.05, about chance; CSD closer on 16 of 40; no measure reads perspective | the producer's call, blind page |
 | Planner colors, dark parts in rich hues | hero colors with no black or dark brown | CSD closer on 14 of 40; glossier (p 0.01) | dropped |
 | Planner colors, rich | also: the main body takes a rich, saturated hue, white and grey only on small parts | CSD closer on 29 of 40 (0.836 to 0.857), lightness closer on 26 of 40, no field away | **adopted** in the planner |
 | Fill | blockouts framed at the real cards' median size per category (×1.04 to ×1.12) | subject area up on 24 of 24, overshooting the real median (0.354 against 0.324); more texture by eye 10 to 2 | **adopted at half**, categories 2-4 only (×1.035, ×1.05, ×1.06) |
 | Perspective | the camera line, and Blender models for broken cards without one, on the nine pre-final cards graded broken | no model or pixel judge reads construction | the producer's call, blind page |
 
-Palette arms replan colors from colorless subjects, so they sit below the control by CSD (0.836 against 0.908); they are compared with each other. Combined, rich colors with the smooth line held CSD (21 of 40); its two single-field moves ran opposite to the same arm on the control, which reads as noise among 55 fields.
+Palette arms replan colors from colorless subjects, so they sit below the control by CSD (0.836 against 0.908); they are compared with each other. Combined, rich colors with the smooth line held CSD (21 of 40); three of its 15 fields moved at p < 0.05, two of them opposite to the same arm on the control: noise.
 
 Research beside the arms (`research/README.md`): a one-camera fit (GeoCalib) does not find the cards called off in perspective; blockout drawings keep the render's outline whether broken or not, so breaks sit in the render or a surface the drawing adds; edge-preserving smoothing after drawing restores flat share but not CSD. A style LoRA on the reference cards is feasible in about half a day and waits on the producer.
 
-The final sets (`runs/final3`) are drawn with the adopted smooth line, rich colors and fill. `runs/final2` holds the same plans drawn without the smooth line, stopped early and resumable. In the final, a plan still decided the weak cards: all nine Pearl Necklace drawings failed the style check and the plain Hat Box measured too little detail, and both passed once the plan changed. Detective's darkest card, a badge wallet on a dark table, and its four cyan backdrops were plan choices too (`runs/final3/README.md`). The cast cards are `runs/final2/cast`: their prompt has no material line.
+The final sets (`runs/final3`) are drawn with the adopted smooth line, rich colors and fill. `runs/final2` holds the same plans drawn without the smooth line, stopped early and resumable. In the final, plan choices made the weak cards; see `runs/final3/README.md`. The cast cards are `runs/final2/cast`: their prompt has no material line.
 
 ## Limits
 

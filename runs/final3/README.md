@@ -7,11 +7,11 @@
 | Detective | `detective-3/` | `runs/plans/final-detective-3.json` |
 | Cast bonus, two cards per genre | `runs/final2/cast/` | `runs/plans/final-cast.json` |
 
-Each folder has `spec.md` (the set: staging, subject, colors, why each card), `report.md` (checks), `variant_1.png` (the set) and every candidate in `tries/`. `period-drama/`, `detective/` and `detective-2/` are earlier draws of those sets, kept for the record.
+Each folder has `spec.md` (the set: staging, subject, colors, why each card), `report.md` (checks), `variant_1.png` (the set; `variant_1-cast.png` for the cast, kept out of git) and every candidate in `tries/`. `period-drama/`, `detective/` and `detective-2/` are earlier draws of those sets, kept for the record.
 
 ## Review
 
-`.venv/bin/python -B experiments/final_review.py serve`, then http://127.0.0.1:8767. Sets: the four rows under a real set. Cards: each card with its references, all eight candidates (click one to pick it instead), its blockout and the pre-final drawing with the outside rater's grade; grade 1-5, broken, comment. Blind arms: the overnight smooth-surface and one-camera twins against the real card, and the nine broken pre-final cards redrawn by the perspective arms. Answers go to `runs/ratings.json`; `final_review.py summary` reads them.
+`.venv/bin/python -B experiments/final_review.py serve`, then http://127.0.0.1:8767. Sets: the four rows under a real set. Cards: each card with its references, every candidate, edits included (click one to pick it instead), its blockout and the pre-final drawing with the outside rater's grade; grade 1-5, broken, comment. Blind arms: the overnight smooth-surface and one-camera twins against the real card, and the nine broken pre-final cards redrawn by the perspective arms. Answers go to `runs/ratings.json`; `final_review.py summary` reads them.
 
 ## What changed since the pre-final
 
@@ -21,13 +21,13 @@ Each folder has `spec.md` (the set: staging, subject, colors, why each card), `r
 - **Blockouts framed larger**, half the gap to the real cards' median, categories 2-4.
 - **Eight candidates per card** instead of five.
 - **Period Drama, after its first draw:** the Pearl Necklace failed the style check in all nine drawings (a navy cushion filling the card), so it became the Quill Pen, the outside rater's 4; the Hat Box drew as a plain red drum and got crimson and cream stripes. Both then passed.
-- **Detective, after its first draw:** the Badge Wallet lay on a dark wooden table, darker than any card in the real sets, so it moved to a light honey-colored desk, the same as the Evidence Bag's; the Flash Camera moved from sky blue to royal blue, so the set no longer had four cyan backdrops, two of them side by side. Both redraws were seeded with the other cards' candidates.
+- **Detective, in two redraws:** the Badge Wallet lay on a dark wooden table, darker than any card in the real sets, so it moved to a light honey-colored desk, like the Evidence Bag's chosen edit; then the Flash Camera moved from sky blue to royal blue, so the set no longer had four cyan backdrops, two of them side by side. Both redraws were seeded with the other cards' candidates.
 
 Evidence and the dropped arms: `analysis/STYLE_GAPS.md`, "Overnight arms".
 
 ## Set numbers
 
-Against the four real sets without character cards (`set_numbers.json`; `compare.json` from `scripts/compare.py --sets runs/final3/sets.json`). [COMPARISON](../../analysis/COMPARISON.md) has the full table and why style similarity is low. Style similarity is the mean CSD between a set's own cards; it is descriptive, not a judge.
+Against the four real sets without character cards (`set_numbers.json` from `experiments/final_numbers.py`; `compare.json` from `scripts/compare.py --sets runs/final3/sets.json`). [COMPARISON](../../analysis/COMPARISON.md) has the full table and why style similarity is low. Style similarity is the mean CSD between a set's own cards; it is descriptive, not a judge.
 
 | Set | Object classes | Scale classes | Backdrop hues | Style similarity |
 |---|---:|---:|---:|---:|
@@ -42,4 +42,3 @@ Against the four real sets without character cards (`set_numbers.json`; `compare
 - Perspective: no model or pixel judge reads it; the blind page shows the nine broken cards redrawn with the camera line and with Blender models.
 - A style LoRA on the reference cards: about half a day; needs a decision.
 
-The final started at 11:15 instead of 04:00: a background wait loop matched its own command line and waited on itself all night.
