@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (grad cap): the dark navy board and crown sit as one mid-dark mass against a mid-grey ring background with a lighter halo behind it. The gold band and tassel add a light middle step, and contrast inside the hero stays moderate (rms 0.165, at the top of the real range). B (top hat): the crown and brim form one large near-black mass covering about half the card, with hard white specular streaks on the crown's left edge and brim rim. That gives far more contrast than any real card (rms 0.256 vs a 0.085–0.165 range), and the hero is much darker than the background (gap -0.497 vs a -0.290 floor). The red band is the only middle value on the hat.",
+   "fix": "Lift the top hat from black to a deep charcoal-blue with soft grey-blue light falling across the crown and brim. Make the highlights broad and gentle instead of thin white streaks, and keep the darkest black to small areas under the brim and inside the band shadow."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (fan): the card has clear value groups. A light window on the left, a dark green curtain band, a mid-value orange wall, and a light fan grille with a bright chrome hub in the middle. The key is mid (0.631) and the hero reads against the dark curtain. B (sandcastle): almost the whole card falls in the top two grey levels. Sand, castle and sky are all light (mean 0.771, above the 0.707 real ceiling). The castle barely separates from the sand it stands in, and the only darks are small window holes, the bucket interior and the shovel. There is no large middle or dark mass anchoring the card.",
+   "fix": "Darken the beach behind and around the castle to a warmer mid-tone, and give the castle's shadow side and the ground under it a clear deeper shade. Then the bright, sunlit castle front stands out from the sand. Keep the sky a saturated mid blue, not pale."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (buoy): the red buoy body forms a dark-middle mass against a mid-grey sky with lighter clouds and mid-light water. It has a bright gold bell at the top and ripple darks at the base. The key is mid (0.702) and the hero is separated by both value and hue. B (suitcase): the sunburst background is nearly white across the whole top half. The grey lens shows it close to clipped, with no rays readable. The card is too high-key overall (0.792 vs a 0.707 real ceiling). The middle-value suitcase sits on a flat pale backdrop, and the only darks are the corner caps and handle. There is no deeper value at the card edges or behind the floorboards.",
+   "fix": "Make the sunburst a richer golden-yellow with clearly darker orange rays between the light rays, darkening slightly toward the card corners. Keep the green floor a solid mid-green so the suitcase sits in a middle-value setting instead of a white glare."
+  }
+ ],
+ "pattern": "The lessons show generated cards giving the hero strong local contrast: hard white rims and specular streaks next to near-black areas. They also tend to have a glow behind the hero, while the real cards use a softer roll-off. In the test pairs, the generated cards fall outside the real key range at one extreme or the other. One is a hero that is one huge near-black mass with sharp white highlights (top hat). The others are washed-out, near-white high-key backgrounds where the hero has no dark or middle mass to sit against (sandcastle, suitcase sunburst). Real cards keep a mid key, with distinct light, middle and dark groups, and keep the darkest accents small."
+}

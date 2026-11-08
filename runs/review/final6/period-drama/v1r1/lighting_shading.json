@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (graduation cap): the top board is lit evenly from above with a soft bevel highlight along the front edge. The crown sides fall into a moderate, smooth shadow, and the orange band has a gentle sheen. This top-key plus soft side-shadow setup matches the real cards (trophy, vending machine). B (top hat): the crown has a bright hot spot on the top-left that falls off into a brushed, streaky texture down the cylinder. The red satin band has a sharp, glossy specular line, and the brim underside goes nearly black. The lens shows the crown top almost white over a near-black brim interior (shading_range 0.878, above the real maximum of 0.826). It reads as photographic material rendering, not the soft clay-like turn of the real cards.",
+   "fix": "Light the top hat softly from the upper left with smooth matte shading. Show a broad soft sheen on the crown instead of a hot spot and streaky texture. Make the hatband satin softly lit with no sharp glossy line, and lift the shadow under the brim to a mid-dark tone instead of near-black."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (fan): window light comes in from the left onto the curtain, but the fan itself is lit almost frontally. The blades are flat, light blue with little turn from light to shadow, and the hub dome has one broad central sheen. The stand and grille have weak side shading, and the fan casts almost no shadow on the orange wall. B (sandcastle): the key comes from the upper left. The towers turn from a lit left face to a darker right face, the arch and windows are carved by dark occlusion, and the bucket and shovel cast soft shadows on the sand to the right. That clear side-light form modeling is what the real cards show in the lessons. The call is weak because both cards fall inside the real ranges.",
+   "fix": "Light the fan from the window side, the left. Put a darker shadow side on the right of the hub, blades and pole, and give each blade a visible curve from light to shade. Add a soft cast shadow of the fan on the wall behind it."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (buoy): a clear key from the upper left. The left side of the cone and the base ring are lit, the right sides turn smoothly into a darker shadow side, the bell has a warm sheen on its left shoulder, and there is soft contact darkening where the base meets the water. This is the side-key setup of the real lesson cards (light_bias 0.612). B (suitcase): the front face is lit almost frontally and evenly, with a soft vignette rather than a light side and a shadow side. The corners and handle get small, even highlights, and the lens shows a warm color tint leaking into the shading. The only strong dark is a broad cast shadow under the case. This even, front-on look is the generated pattern in every lesson (compare the lessons' generated camera and computer to their real versions).",
+   "fix": "Light the suitcase from the upper left so the left end and top edge are bright and the right end and lower front fall into a clear, darker shadow side. Let the front panel bulge, with a soft highlight on the upper left, and add a firm contact shadow where the bottom corners touch the floor."
+  }
+ ],
+ "pattern": "Generated cards are lit flat and from the front. The hero faces the viewer evenly lit with a soft vignette, without a clear light side and shadow side, so forms like blades, panels and bodies barely turn. The estimated shading also carries a warm color tint. Real cards put a clear key on one side, usually the upper left. The opposite side falls into a cool, smooth shadow side, sheens are broad and soft, and contact shadows are firm. A second giveaway is photographic material rendering: hot spots, brushed streaks and near-black recesses where the real cards keep soft, clay-like shading."
+}

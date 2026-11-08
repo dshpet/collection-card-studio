@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A (graduation cap): the square board is a flat slab with straight edges and fairly tight corners. The skull cap is short, the band is plain, and the tassel cord is still thin. B (top hat): the crown is a tall cylinder with straight sides, and the brim curls up on both sides into a round bowl under the band. Both silhouettes show real proportions. Neither has extra parts, thick thin parts or pillowy flat faces, and all four metrics fall inside the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (fan): the guard wires do not run evenly from the center. They cross each other at random angles, most visibly in the lower-left and right of the cage, so the guard reads as a tangled web. The four blades are soft round lobes, and the motor neck is a thick stub. thin_share is 0.164, far above the real maximum of 0.072, which comes from this tangle of wires. B (sandcastle): the towers have square crenellations with crisp notches and straight walls. The bucket and shovel are separate, readable shapes. corner_rate is high, but the extra corners are the battlement notches the object should have.",
+   "fix": "Draw the fan guard as a round cage of evenly spaced straight wires running from the center hub to the rim, with no crossing or tangled wires. Draw three or four flat blades with defined edges and a slim neck connecting the head to the pole."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A (bell buoy): the bell hangs inside one thick oval loop as wide as a sausage, where a buoy would have a thin frame of rails. The body is stacked cylinders with soft swollen rims. The base merges into a blob of splash, which breaks the outline at the bottom. B (suitcase): the case is a flat box with straight top and side runs and tight corner caps. The handle is a thin arch and the faces stay planar. solidity is 0.911, within the real range.",
+   "fix": "Draw the bell hanging in a thin open frame of two or three narrow metal rails above a flat-topped, straight-sided red buoy body. Keep the rims crisp, and keep the bottom edge clean against the water."
+  }
+ ],
+ "pattern": "Generated cards give themselves away through their parts more than their outer contour. Thin parts such as wires, rails and frames come out thickened into loops or tangled at random angles instead of evenly spaced straight runs. They also add or merge extra elements, such as splash blobs, islands, extra openings and props, which bulk up the base. Rims and edges get swollen. Real cards keep thin parts thin and regular, faces planar and the part count simple."
+}

@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: magnifier seen almost straight from above, lens rim a near-perfect circle with no tilt, no ground plane or contact shadow, so it floats with no depth layers. B: low camera looking up at the backboard, right edge shows its thickness, pole cut off at the bottom edge; this close, cropped view matches the real lighthouse. B's planar_share (0.699) is only just above the real range, as expected from a flat backboard.",
+   "fix": "Tilt the magnifier back about 20° so the lens rim becomes a slight oval and the handle points toward the viewer; add a soft shadow on a surface underneath."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: bird feeder centred, whole and square to the camera, camera slightly above showing roof planks and tray top; the park behind is simplified, not blurred, so the feeder looks placed in front of a backdrop, matching the generated habit of a centred, complete object. B: bike cropped at the bottom and car cut off at the frame; bike and car rear share one flat side-on view; low planar_share (0.091) fits the round wheels and tubes.",
+   "fix": "Bring the camera closer and lower, turn the feeder to a three-quarter view showing one side wall, let the roof corner run off the card edge, and blur the park behind."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: camera looks steeply down on the dock and the planks recede strongly, but the mask's glass faces the viewer almost straight on, as if standing upright, while the snorkel tube lies flat on the planks, so mask and dock do not share one view. B: bag at eye level and slightly turned, floor and wall meet at a level line, bag sits firmly on the floor with a curved base; close to the real vending-machine card.",
+   "fix": "Lay the mask flat on the dock so its glass faces up and is seen at the same steep angle as the planks; make the strap and tube follow the plank direction."
+  }
+ ],
+ "pattern": "The camera is pulled back and slightly high. The object is centred, complete and squared to the viewer, and often sits on a wide base or added ground. The background is simplified rather than blurred. Parts of the object sometimes take different views (mask facing the camera while the dock is seen from above). Real cards use a close, firmly turned three-quarter view that often crops the object at the card edge."
+}

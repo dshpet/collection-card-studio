@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A (magnifier on green rings): the lens shows almost everything as one middle grey. The glass interior has about the same value as the rings, and only the rim highlight and the dark red handle stand out. RMS contrast is 0.073, just under the real range, but the lessons show generated cards with more contrast, not less, so this doesn't point to A. B (basketball hoop): a clean white backboard sits against a mid-grey cyan background with a soft light halo behind the board. The dark accents are small: the board's frame edge and the pole shadow. Its numbers sit inside the real range. Neither card shows the generated signature from the lessons (crisp black outlines, clipped whites, darkened surround), so my vector gives no reason to choose.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (bike on car rack): the value design runs from an almost white sky at the top to heavy black masses at the bottom. The tires, the car's underside and bumper, and the rack form solid dark shapes, and the dark bike-frame lines and spokes sit hard against the light car body. Vignette is -0.318, far outside the real range of -0.071 to 0.100. RMS contrast is 0.232, above the real maximum of 0.201. This matches the lessons: generated cards had harder local contrast and bigger, darker accents. A (bird feeder): it has dark foliage in the top corners and a mid-dark trunk, but its value groups are broader and the dark accents are spread around the frame. Its numbers are near the real range. The red bike is separated from the car mostly by hard black lines rather than by broad value shapes.",
+   "fix": "Keep the whole scene in a mid-light key. Make the tires and car bumper a soft dark blue-grey instead of black, keep the sky and road in a similar middle-light tone, and soften the outlines on the bike frame and spokes so no large black areas sit at the bottom of the card."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (yellow tote on purple stripes): through the lens the bag reads as one large near-white shape with clipped highlights on the canvas, set against dark grey stripes and a dark floor. Lightness gap is +0.212, above the real maximum of 0.155. The hero is pushed much brighter than the background, the same way it was in the generated computer lessons (whiter hero, darker surround). A (snorkel on dock): the mask's blue frame is the darkest accent and sits inside a mid-value wooden deck and water. The hero is a little darker than the background (gap -0.093). Its key and contrast fall inside the real range, and the value steps across the dock are gradual.",
+   "fix": "Make the bag a warm mid-yellow with soft shading on its lower half and sides instead of bright white highlights. Lighten the purple stripes and floor toward a medium violet so the bag stands out by color more than by a big jump from light to dark."
+  }
+ ],
+ "pattern": "Generated cards push value too far. The hero is lit nearly white against a background that has been darkened (the computer, bag and camera lessons). Hard dark lines and solid black masses appear at edges and on the lower part of the card (glove lesson rims, bike tires and car). Local contrast inside the hero is harder than on the real cards. Real cards keep broad middle-light groups, use small dark accents and let tones roll off gently, and they rarely darken the bottom or corners heavily."
+}

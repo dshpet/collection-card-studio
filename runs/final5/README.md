@@ -50,3 +50,5 @@ Two lessons were added under Proposed in `analysis/lessons.md`: soft matte metal
 ## Review
 
 `.venv/bin/python -B experiments/final_review.py serve` (round 3 is the default), then http://127.0.0.1:8767. Each changed card shows its round-2 drawing with the grade and comment; a card unchanged since an earlier round carries the grade it got last. Grand Ball and Cake Clue, redrawn in round 2, have no card grade yet.
+
+Round 3's grades, the last fix and the final sets: [runs/final6/README.md](../final6/README.md).

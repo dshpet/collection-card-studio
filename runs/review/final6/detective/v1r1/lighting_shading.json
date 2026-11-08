@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (magnifier): the light is almost frontal and centred. On the shading lens the silver ring has the same soft value all the way round, with no lit side and no shadow side. The red handle turns light to dark evenly along its length. The glass has a stock white arc and dot highlight at its top left. Under the ring and handle sits a soft dark halo that looks like a drop shadow, not a shadow cast in one direction. Its light bias (0.31) sits in the weaker part of the real range. B (hoop): the light clearly comes from the upper left. The backboard's white face fades from bright at the upper left to darker at the lower right. The right and bottom edges of the red frame turn into a cool, darker side face, like the cool shadow sides on the real camera and computer. The pole has a lit left edge and a shaded right edge. The rim casts a shadow onto the board. This matches the directional key light on the real cards. The call is weak because both cards are inside the real numeric ranges.",
+   "fix": "Light the magnifier from the upper left: a bright upper-left arc on the silver ring and a cooler, darker lower-right arc. Give the red handle one clear lit stripe along its top and a darker underside. Cast a short soft shadow down and to the right of the ring and handle, not a halo all around them."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (bike rack on car): its shading range (0.549) falls below every real card (0.602 and up). On the lens, the bike frame, wheels and car rear are a foggy middle value with no clear lit plane and no clear shadow plane. The sunset gives a vague warm rim on the handlebars and seat but no firm core shadow on the tubes. The background is hazy and blurred, and the parts barely darken where they touch. A (bird feeder): the lit and shaded planes are firm. The roof's top planks are lit, the front edge of the tray is lit, and the inside of the box drops into a deep shadow. The feeder and ropes cast a clear shadow onto the trunk. That is the planar, directional modelling the real cards have.",
+   "fix": "Light the bike from one side: a bright edge on top of each frame tube and a clearly darker underside. Darken the gap between the bike and the car's rear door and the inside of the rack. Keep the background crisp, and let the car body show a lit upper panel and a shadowed lower bumper."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (tote bag): its form contrast (0.319) is below the real range (0.385 and up). On the lens the bag's front is an almost uniform pale grey with only a faint darkening at the sides. It reads as soft, even studio light with no form turn. The handles and bottles get the same diffuse treatment. There is only a faint, even contact shadow on the purple floor. Lessons 2, 6 and 10 (computer) show the same even, clay-like lighting on the generated cards. A (snorkel mask): strong modelling. The blue frame has lit upper surfaces and dark undersides, the mask interior falls into a deep core shadow, the glass has crisp diagonal streak highlights, and the tube and mouthpiece cast shadows onto the dock planks. Its weak light bias (0.13) is a caution, but the depth of its forms is like the real cards.",
+   "fix": "Light the bag from the upper left: the left front panel bright, the right side panel turning into a clearly darker cool shadow. Fold the canvas so it has dark creases under the handles and above the base. Put a firm dark contact shadow where the bag sits on the floor, and deeper shadow inside the bag opening behind the bottles."
+  }
+ ],
+ "pattern": "Generated cards light the object evenly from the front: soft, clay-like studio light that makes surfaces glow without a clear key side. Real cards turn each form from a lit upper-left plane to a cooler, darker side plane and put firm contact shadows where objects touch. Generated cards fall back on all-around halo shadows, hazy middle values, or flat uniform faces."
+}

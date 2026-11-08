@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the magnifier has a round rim and a chunky red handle that tapers to a rounded end. In silhouette it is a clean disc on a stick, much like the magnifier on the real map card. B: the backboard keeps long straight edges with a fairly tight corner, the frame lip steps out cleanly on the left and right, the net cords stay thin, and the pole is a plain curved tube. Neither card shows a swollen pillow or toy-like fattening clearly enough to pick it, and every measured value is inside the real range.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A: the feeder roof and tray are flat planks with straight runs and tight board ends, and the rope stays thin. B: the bicycle has thin spokes, thin tubes and a frame in believable proportion. The only odd area is a muddy blob where the chainring meets the rack below the frame. Its thin_share of 0.088 is above the real range, but that comes from the spokes, which are correct for a bike. Neither card shows the chunky, swollen shape seen in the lessons.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the mask is swollen into a rounded dome, and the lens frame and skirt merge into one soft blob. The snorkel tube is a thick sausage of even width with a fat purple cap, and the mouthpiece is a bulbous loop. The silhouette has almost no crisp corners: corner_rate is 1.076, below the real range of 1.668 to 9.078. B: the bag has a flat-bottomed, trapezoid body with straight side runs. The handles are moderately thin loops with open gaps, and the bottle and tube read in believable proportion.",
+   "fix": "Draw the dive mask at real proportions: a flat oval glass faceplate in a slim rubber frame, a thin strap, and a separate nose pocket. Make the snorkel a slim tube of true diameter with a small mouthpiece, not a thick rubbery hose. Keep the frame edges crisp, and don't puff the mask into a rounded dome."
+  }
+ ],
+ "pattern": "Generated cards give themselves away by fattening and softening. Tubes, rims and handles get thicker, and objects swell into rounded toy shapes with blobby corners. In the lessons the generated cards also make parts chunkier (the camera body, the mouse) and add extra parts the real card lacks (rock islands, extra glove webbing). Real cards keep thin parts thin, faces flat and corners tight."
+}

@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: the magnifier floats on a field of soft green concentric rings, with no floor and no props. The rings are tone-on-tone and quiet. B: the hoop floats on cyan concentric rings in the same style. The bottom edge cuts the pole, the same way the street-lamp anchor card is cut. Neither card adds props or decoration. Both background measures are inside the real range, and A's edge density (0.004) is at the real minimum.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the bird feeder hangs on a tree trunk with leaves at the top corners. A soft, blurred park fills the back: trees, a pale building block and a paved path. The seeds count because they are what the feeder holds. Both background measures are inside the real range. B: the bike is on a rack, and behind it the back of the car is full of hard-edged detail: rear window, brake light, roof rails, rack arms and bolts, and the bumper. Past the car are a road with lane lines, orange hills and small bushes. B's background measures (detail 0.044, edges 0.094) are both above the real range. The lessons go the same way: generated cards pack more small things around the hero, such as the rock island and life ring around the lighthouse.",
+   "fix": "Show only the bike on its rack and a soft, simple suggestion of the car's back as one large smooth shape. Do not draw rack bolts, roof rails or brake-light detail. Blur the background into a plain warm sky with no road lines, hills or bushes."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the mask and snorkel lie on wooden dock planks seen from above, with sparkling turquoise water at the top right. In the top-left corner there is a wooden post with coiled rope. That is a dock prop the subject does not name, the same kind of rope-and-post the generated lighthouse lessons add. B: the beach bag stands on a plain purple floor in front of a tone-on-tone striped wall, which is a clean category 2 setup. The towel, sunscreen and bottle sticking out are what a bag holds. The house patch on the front is a small extra but sits on the object itself. Both cards' background measures are inside the real range.",
+   "fix": "Show only the mask and snorkel lying on wooden planks that fill the card. Remove the post with coiled rope in the corner and keep the water edge as a calm, simple band, or leave it out."
+  }
+ ],
+ "pattern": "In the lessons, the generated cards add things the subject does not name: rocks, a life ring and rope posts around the lighthouse, and a whole round table under the computer. The test pairs show the same: the busy car-and-road scene behind the bike in p02 and the rope post at the edge of the dock in p03. Real cards keep the setting to a few large, quiet shapes and show only the object's own partner or contents."
+}

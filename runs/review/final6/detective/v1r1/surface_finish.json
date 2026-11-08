@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 2,
+   "difference": "A (magnifier): the steel rim is one smooth satin band, the lens glass shows a single painted arc-and-dot highlight, and the red handle has one soft gloss streak. There is no grain or noise, which matches the anchor's magnifier and calculator finish. B (basketball hoop): the backboard is plain matte white with a soft falloff, the red frame and orange rim are smooth semi-gloss, and the net is soft rounded cord with no fibre texture. B's high highlight_share comes from the large white board, not from shine. Both use the broad, smooth, simplified hardware of the real cards, and neither shows stitch, grain or bolt noise, so on my vector there is no reason to pick one.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A (bird feeder): the planks carry quiet, fine, long wood-grain lines and stay matte. The rope twist is simplified, and the seeds are soft, smooth ovals. This is the same finish as the anchor's map-on-table wood. B (bike on car rack): every part is lacquered. The red frame, fenders and the car's grey rack all carry sharp specular streaks. The rack is full of small hardware: bolts, clamps, brackets, rods and end caps, plus crisp thin spokes and a toothed chainring. The whole card has crisp edge noise. Real cards reduce this kind of hardware to a few wide, smooth parts. B's detail_subject (0.104), micro_texture (0.036) and gloss_share (0.31) are all above the real range.",
+   "fix": "Draw the bike rack as two or three wide, smooth, rounded grey bars with no bolts, clamps or end caps. Give the bike frame a soft satin finish with one broad gentle highlight instead of many sharp shiny streaks. Draw fewer, thicker spokes, and make the chainring a plain smooth disc. Keep the car body matte."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (snorkel mask): the frame is smooth blue plastic, the lens is clear glass with one broad diagonal glint, and the purple mouthpiece is translucent. The dock planks have quiet, fine grain. This mix of matte and gloss is the simplified finish of the real cards. B (tote bag): the whole bag is covered in a photographic canvas weave texture, and the patch has a dashed running-stitch border and a debossed house emblem. This is the same failure as the generated baseball gloves in the lessons, where dashed stitch lines and fine material texture were added. Real cards keep fabric (the scarf, the tent, the picnic cloth) smooth, with no visible weave. B's handles and bottles also look like the same soft rubbery plastic.",
+   "fix": "Draw the tote bag as smooth, flat-coloured yellow fabric with soft broad shading and no visible weave or fibre texture. Make the front patch a simple raised rounded square with a plain house shape and no dashed stitching around it. Give the handles a slight satin sheen so they read as different from the matte bag body."
+  }
+ ],
+ "pattern": "Generated cards still give themselves away by adding too much surface detail. They add small hardware such as bolts, clamps, dials and holes, and they add dashed stitch lines and visible fabric weave or fine grain at photographic scale. The real cards simplify all of this into a few broad, smooth parts with quiet texture. Generated cards also tend to put the same lacquered specular streaks on every material, where real cards mix matte and gloss within one object."
+}

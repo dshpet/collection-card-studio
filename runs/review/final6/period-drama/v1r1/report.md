@@ -1,0 +1,25 @@
+# Review: final6/period-drama/v1r1
+
+| Specialist | Caught | Wrong | Abstained | False alarms |
+|---|---:|---:|---:|---:|
+| shape_proportions | 0/1 | 0 | 1 | 2/2 |
+| viewpoint_depth | 1/1 | 0 | 0 | 2/2 |
+| lighting_shading | 1/1 | 0 | 0 | 2/2 |
+| value_contrast | 1/1 | 0 | 0 | 2/2 |
+| color_palette | 1/1 | 0 | 0 | 1/2 |
+| surface_finish | 1/1 | 0 | 0 | 2/2 |
+| edges_linework | 1/1 | 0 | 0 | 2/2 |
+| composition_hierarchy | 1/1 | 0 | 0 | 2/2 |
+| staging_detail | 0/1 | 0 | 1 | 2/2 |
+
+## Art director
+
+The top hat is close to the real cards. Its shape, the frontal pose the producer asked for, the ring backdrop and the staging all match. The giveaway is the material: the felt is neutral grey-black with brushed photo streaks, and the band is glossy satin. Real cards use smooth, clay-like, coloured darks. The edit is limited to finish, colour and highlights. I overruled the viewpoint and composition calls because the producer's note fixes the front view. On both control pairs (all real), specialists picked a real card as odd, so props, busy floors, wear and mixed backdrops are within the real range. They must not become style rules.
+
+1. **Top hat felt is rendered as near-neutral grey-black with photographic brushed streaks on the crown and a hard hot spot top-left. Real cards keep dark materials smooth, clay-like and coloured, like the saturated navy of the grad cap. This is the main giveaway, and it is visible in the 2× view.** Paint the top hat as smooth, soft matte felt in a deep blue-black, with a broad soft sheen on the crown's left side and rich dark indigo on the shadow side and under the brim.
+2. **The hatband is glossy satin with crinkle streaks and a sharp white specular line, and its shadowed half turns dull maroon. Real accents, like the grad cap's orange band, are smooth with one soft highlight and keep their colour in shadow.** Make the hatband a smooth crimson ribbon with one soft broad highlight that stays clearly red in its shadowed half.
+3. **The brim has a hard bright rim highlight and a near-black underside. Together they push the hat's contrast past the real cards. This is a minor issue and is fixed mostly by the two notes above.** Soften the brim edge highlight slightly and lift the shadow inside the brim slightly to a dark indigo.
+4. **Overruled: three specialists want the top hat turned to three-quarter, made asymmetric, enlarged and moved off centre. The producer's note fixes a frontal view with an evenly curled brim, and the hat's size and placement are comparable to real centred hero cards. This is not a change to make.** Keep the front view, centring and size.
+5. **Overruled on the controls: on p02 and p03 both cards are real, so every 'odd' call there is wrong. Busy staging is therefore within the real range: the tangled fan guard, the bucket, spade and pebbles on the beach, the wooden floor and skirting board under rays, and the scuffs and outlines on the suitcase. None of these should become a rule against props, wear, mixed backdrops or texture on a floor.** No change.
+
+- p01: Top Hat: Paint the felt as smooth, soft matte deep blue-black with no brushed streaks, with a broad soft sheen on the left of the crown and rich dark indigo on the shadow side and under the brim. Make the band a smooth crimson ribbon with one soft broad highlight that stays red in its shadowed half. Soften the bright edge highlight on the brim slightly. Keep the hat, the front view, the evenly curled brim, the cyan ring backdrop and the size.

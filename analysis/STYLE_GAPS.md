@@ -176,7 +176,7 @@ The producer's blind look at the adopted smooth line, on 12 twins beside the con
 
 Research beside the arms (`research/README.md`): a one-camera fit (GeoCalib) does not find the cards called off in perspective; blockout drawings keep the render's outline whether broken or not, so breaks sit in the render or a surface the drawing adds; edge-preserving smoothing after drawing restores flat share but not CSD. A style LoRA on the reference cards is feasible in about half a day and waits on the producer.
 
-The final sets (`runs/final3`) are drawn with the adopted smooth line, rich colors and fill. The fix round after the producer's grades (`runs/final4`) changed plans, notes and models, not the style text. `runs/final2` holds the same plans drawn without the smooth line, stopped early and resumable. In the final, plan choices made the weak cards; see `runs/final3/README.md`. The cast cards are `runs/final2/cast`: their prompt has no material line.
+The final sets (`runs/final3`) are drawn with the adopted smooth line, rich colors and fill. The fix rounds after the producer's grades (`runs/final4` to `runs/final6`) changed plans, notes and models, not the style text. `runs/final2` holds the same plans drawn without the smooth line, stopped early and resumable. In the final, plan choices made the weak cards; see `runs/final3/README.md`. The cast cards are `runs/final2/cast`: their prompt has no material line.
 
 ## Limits
 

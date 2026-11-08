@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "B (basketball hoop): the edge map shows a heavy, even dark contour around the whole backboard rim and the pole. The red frame is drawn as a doubled line, inner and outer, and the net cords are thick black loops. Its outline_darkness of 0.201 is well above the real maximum of 0.122. This matches the lesson generated cards (computer, camera, glove), which all had a uniform inked silhouette. A (magnifier): the rim and handle have soft gray edges, the lens interior is nearly blank, and the boundary softens toward the handle tip. That is closer to the real glove and lighthouse maps, and its 0.127 is only marginally over the real range.",
+   "fix": "Show the backboard, rim and pole edges only as color and light changes against the blue sky, with no dark line around them. Make the backboard's back edge and the pole soften and fade slightly, and draw the net cords thin and light, not as thick dark loops."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (bike on car): all three measurements fall outside the real ranges. Subject density is 0.273 against a maximum of 0.270, background density is 0.094 against 0.089, and outline_darkness is -0.145 against a minimum of -0.056. The edge map is busy across the whole frame. The spokes are dense hard lines, and the car body, rear window, roof rack and road markings carry edges as crisp as the hero's, so sharpness doesn't drop away from the bicycle. A (birdhouse): there is a clear dark contour around the roof and tray, and scalloped outlines on the foliage, but the background buildings and trees soften. The edge contrast between hero and background is closer to the real cards. Both cards are stylized, so this is a weak call.",
+   "fix": "Keep the bicycle crisp, and blur and soften the car, rear window, roof rack and road behind it so their edges are clearly weaker than the bike's. Use fewer spokes and draw them finer."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B (yellow tote): a hard, continuous dark contour runs around the bag body, both handles and the bottle. The towel and canvas carry dense, scratchy edge texture, and the stitched patch reads as a sharp groove. Its outline_darkness (0.053) is higher than A's. A (snorkel mask): the tube and mask edges are soft and glassy, with lost edges where the clear silicone meets the deck. The deck planks and water ripples have soft, low-contrast edges. This is closer to how the real cards handle boundaries. All A and B numbers are within the real ranges, so this call rests on the eye.",
+   "fix": "Remove the dark rim around the bag and handles, and let the bag's edge show only as yellow against purple with soft shading. Make the canvas and towel smooth, with only faint texture, and the stitching thin and shallow."
+  }
+ ],
+ "pattern": "Generated cards draw a uniform, dark, inked contour around the hero, often doubled along rims and frames. Their background edges are as sharp and dense as the hero's, with no fall-off in sharpness. Real cards separate the hero mostly by value and color, use soft or lost edges on the shadow side, and keep internal seams thin."
+}

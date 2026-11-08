@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: the mortarboard is tilted and sits slightly left of center. Its board nearly spans the card width, and the tassel hangs close to the right edge, so the clearance around it is uneven, as on the real trumpet and beach-ball cards. B: the top hat is square-on and dead center, mirror-symmetric, with almost equal space on the left, right, top and bottom. Its smallest margin (0.121) is wider than any real card's (max 0.116). That is the generated look from the lessons: a fully contained object with even clearance, like the generated glove and camera. A's short box height (0.506) is below the real range, which keeps my confidence low.",
+   "fix": "Turn the top hat to a three-quarter view and tilt it slightly. Make it larger so the brim nearly touches the left and right edges, and set it a little off center rather than in a perfectly symmetric frontal pose."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the bottom edge cuts off the fan's stand (margin 0.0), and the fan fills the right two-thirds against the curtain and wall. That bleed off the edge is what real cards do, like the real lighthouse cut off at its base and the real desk running off the edge. B: the whole sandcastle sits inside the frame on a beach with sand all around. A bright green bucket and a blue shovel take the front-right corner and compete with the castle for the first read. This matches the generated lighthouse lessons, which add an island, a life ring and a dock post and keep the whole scene inside the frame.",
+   "fix": "Draw the sandcastle bigger and closer, with its base cut off by the bottom edge of the card. Remove the bucket and shovel, or make them small and push them to the background, so only the castle reads first."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A: the bell buoy is placed slightly left of center and rises tall in the frame. The water ripples run off the left and right edges, which matches the real seascape crops. B: the suitcase is centered with even sky and floor around it, and its margins (0.121) are wider than any real card's (max 0.085). It is short and wide (height 0.569) and sits fully inside the frame on a floor plane, under evenly centered sunrays. This is the same contained, evenly padded staging seen in the generated lessons.",
+   "fix": "Draw the suitcase larger, filling most of the card. Let the bottom corners and the wheels or floor run close to or off the bottom edge, view it from a slight angle, and leave less empty sky above the handle."
+  }
+ ],
+ "pattern": "Generated cards keep the whole object inside the frame, with even padding on all sides, a centered and often frontal or symmetric pose, and margins at or above the top of the real range. They also tend to add extra props or a setting (island, bucket, shovel) that compete with the hero. Real cards push the hero to an edge or let the edge cut it off (base, desk, stand), use uneven margins, and keep a single subject."
+}

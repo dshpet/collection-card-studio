@@ -8,7 +8,7 @@ the night and one arm (smooth surfaces, adopted, or one camera), shuffled: pick 
 the nine pre-final cards graded broken, drawn by the current pipeline and by each perspective arm, shuffled: does each
 work as built?
 
-Rounds 2 and 3 (runs/final4, runs/final5) are fix rounds after those answers: each card shows its drawing from the
+Rounds 2 to 4 (runs/final4 to runs/final6) are fix rounds after those answers: each card shows its drawing from the
 round before with the producer's latest grade and comment; a card kept unchanged keeps its grade unless graded again.
 No blind items.
 
@@ -39,13 +39,16 @@ CAST = "final2/cast"
 ROUNDS = {2: {"western": ("final4/western", "final3/western"), "period-drama": ("final4/period-drama-2", "final3/period-drama-2"),
               "detective": ("final4/detective", "final3/detective-3"), "cast": ("final4/cast", CAST)},
           3: {"western": ("final5/western-2", "final4/western"), "period-drama": ("final5/period-drama", "final4/period-drama-2"),
-              "detective": ("final5/detective", "final4/detective"), "cast": ("final4/cast", "final4/cast")}}
-ROUND = 3
+              "detective": ("final5/detective", "final4/detective"), "cast": ("final4/cast", "final4/cast")},
+          # round 4 is the final assembly: the Top Hat redrawn in final6/period-drama was not better, so that set stays
+          4: {"western": ("final5/western-2", "final5/western-2"), "period-drama": ("final5/period-drama", "final5/period-drama"),
+              "detective": ("final6/detective", "final5/detective"), "cast": ("final4/cast", "final4/cast")}}
+ROUND = 4
 COMPARE = "Beach"  # the real set shown above ours
 TWIN_ARMS = {"ns2": "smooth surfaces", "nc": "one camera"}
 TWINS_PER_ARM = 12
 ITEMS = {1: ROOT / "runs" / "final3" / "review.json", 2: ROOT / "runs" / "final4" / "review.json",
-         3: ROOT / "runs" / "final5" / "review.json"}
+         3: ROOT / "runs" / "final5" / "review.json", 4: ROOT / "runs" / "final6" / "review.json"}
 RATINGS = ROOT / "runs" / "ratings.json"
 OUTSIDE = ROOT / "runs" / "prefinal" / "outside" / "ratings.json"
 SERVED = ("materials/card_examples/", "runs/")

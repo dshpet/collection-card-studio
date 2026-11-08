@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "Both are category 1: the hat floats on a flat field of tone-on-tone concentric blue/cyan rings, with no floor and no props. A's mortarboard has only its own tassel. B's top hat has only its own red band. In both, the rings are soft and wide and the background measures sit inside the real range (A 0.0094/0.008, B 0.0109/0.013). Greyed out, the two backgrounds are the same kind of quiet ring field. Nothing in the staging separates them.",
+   "fix": ""
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A is category 4: the fan stands in a room corner with a green curtain on the left, a strip of window and sky at the far left, and a plain orange wall on the right. These are three large, quiet shapes, and the card's edge cuts the fan's pole, which matches the real tent and binocular cards. B is also category 4, a beach with sea and sky, but it adds a green bucket and a blue spade at the lower centre and right, and sprinkles small pebbles and lumps across the foreground sand. The castle has five towers full of windows and crenellations. The extra props and the busy sand are the same kind of additions the generated lighthouse got (rocks, a life ring, ropes, a bollard). Weak call: the measured B background is actually lower than A's.",
+   "fix": "A sandcastle on smooth, plain sand at the beach, close and central. No bucket, no spade, no pebbles or small lumps in the sand. Sea and sky are simple soft bands behind it. Keep the castle to a few large towers."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A is category 1: the buoy floats in open water with soft concentric ripples around its base, and large soft clouds sit on a blue sky behind it. The water and sky are quiet, like the real lighthouse and water-polo cards. B mixes two categories. The upper half is a graphic yellow sunburst. The lower half is a real green plank floor with visible board seams, plus a pale skirting-board strip running across the card at mid-height behind the suitcase. Real cards with a ray backdrop either float the object or put it on a plain floor in the backdrop's color (the camera on its yellow floor). None combine rays with a wooden floor and a wall baseboard.",
+   "fix": "Stand the suitcase on a plain, seamless floor in the same yellow as the backdrop: no wooden planks and no skirting board. Behind it, soft tone-on-tone yellow rays that fade into the floor, with a soft shadow under the suitcase."
+  }
+ ],
+ "pattern": "Generated cards give themselves away in the background with things no real card does. They add props the subject never named, like the rocks, life ring and ropes around a lighthouse, or a bucket and spade by a sandcastle. They fill the floor with small texture, like plank seams or pebbles. They also mix categories, putting a real-material floor and room details such as a skirting board under a graphic ray backdrop. Real cards keep the background to a few large, quiet shapes, or to one plain field."
+}

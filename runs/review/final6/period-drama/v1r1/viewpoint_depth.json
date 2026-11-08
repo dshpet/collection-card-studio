@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A (mortarboard): a three-quarter view from slightly above, with the board turned about 30° so its top face and two side edges show. The band underneath curves down on the same view, and the perspective is mild and consistent. B (top hat): dead frontal and mirror-symmetric, centered head-on like a front elevation. The crown top shows as a thin ellipse while the brim shows a deep green-lit inner top face, so the brim reads as tipped toward the camera more than the crown. The lessons show generated cards turning objects square to the camera, which matches B. Both cards share the same flat ring background with no ground plane, so this is a weak signal.",
+   "fix": "Turn the top hat about 25–30 degrees to a three-quarter view, with the camera slightly above. The crown top and the brim should show the same amount of top surface, and the hat should not be perfectly left-right symmetric."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (fan): low, eye-level camera with a tight crop that cuts the stand at the bottom. It has two flat layers behind it (curtain, then wall and window), like the cropped real lighthouse and the vending machine. B (sandcastle): a high camera looking down on a wide sand ground plane, with the sea horizon high behind it. Bucket and shovel props are added in the foreground, giving 3–4 depth layers in a full diorama. This is the same move the generated lighthouses make, putting the hero on a rocky island base with props seen from above.",
+   "fix": "Lower the camera to near the castle's base and crop in closer so the castle fills the card. Drop the separate foreground bucket and shovel layer, and keep the background as a simple soft sea and sky band rather than a wide beach scene."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (buoy): low camera just above the water. The horizon sits behind the mid-body, the base ellipse and ripples are shallow, and the view is consistent from the bell to the base. B (suitcase): the floorboards converge hard toward a high vanishing point, so the floor is seen from well above with wide-angle convergence. Yet the suitcase is shown almost flat front-on, with no top face visible and only a sliver of its left side. The object and the ground plane don't share one camera. planar_share 0.67 is above the real range (max 0.51), which matches the flat, elevation-like front face.",
+   "fix": "Draw the suitcase in a three-quarter view from slightly above, showing its top face and one side panel. Make the floorboards recede gently at the same angle the suitcase sits on, without strong fan-shaped convergence."
+  }
+ ],
+ "pattern": "Generated cards squash the camera into two modes. Either the object is square to the lens and symmetric like a front elevation, or it sits as a hero on a wide ground plane seen from above, with added foreground props (island, beach, bucket). Often the object and the floor don't share one view: the floor converges from high above while the object is drawn flat front-on. Real cards use one mild three-quarter camera near object height, crop tighter, and keep the background to one or two simple layers."
+}

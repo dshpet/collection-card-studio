@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "A: navy mortarboard with one saturated orange accent (trim band and tassel) on a cyan ring backdrop. The navy shadow under the board stays a rich blue-violet, so the shadows keep their chroma (0.80, inside the real range). B: a black top hat with a red satin band on cyan. The hat is almost neutral (subject chroma 0.05, below the real range). Its shadows go flat grey-black, and the shadowed part of the band goes dull maroon (shadow chroma kept 0.51, below the real minimum of 0.74). In the lessons, real cards keep colour in their dark areas, as with the navy camera body. B's hero reads as a grey-black hole, with the red band as its only colour.",
+   "fix": "Draw the top hat in deep blue-black or plum-black felt, not neutral grey-black. Let the shadowed sides of the crown and brim stay a rich dark indigo. Keep the red band a warm crimson that stays red in its shadowed half, not brown-maroon."
+  },
+  {
+   "pair": "p02",
+   "odd": "neither",
+   "confidence": 1,
+   "difference": "A: a pale blue fan with a grey metal grille against a flat burnt-orange wall, a green curtain and a pale blue window: a cool hero on a warm backdrop, about 4 hue families. B: an ochre sandcastle on ochre sand under a cyan sea and sky, with a lime-green bucket and a blue shovel as accents. Its shadows go a related brown-orange, not red. Both cards fall inside the real ranges on every field. B's hero shares its hue with the sand, but the beach ball reference card does the same. This vector gives no clear reason to pick either card.",
+   "fix": ""
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "A: a red buoy with a gold bell on a cool blue sea and sky with white clouds. This is a warm hero on a cool backdrop, with large neutral cloud areas to rest the eye. B: an orange-brown suitcase on pale-yellow sunburst rays, over a saturated green plank floor. The hero repeats the warm backdrop: orange case, yellow sun sticker, yellow rays. The warm share is 0.72, above the real maximum of 0.66, and background chroma is 0.159, above the real maximum of 0.147. The green floor is a third loud mass, and the card has no neutral area. This matches the lessons, where generated cards push the whole card warm and saturated.",
+   "fix": "Put the tan-brown suitcase on a cool backdrop, such as soft sky-blue rays or a muted teal wall. Make the floor a quiet grey-blue or desaturated wood instead of bright green. Keep the stickers as the only small spots of strong colour."
+  }
+ ],
+ "pattern": "Generated cards pull the whole card warm and saturated. Neutrals turn cream or beige (computer, lighthouse stone), leather goes pure orange, and the backdrop picks up the hero's own warm hue instead of the opposite temperature. A second giveaway is dark materials whose shadows lose their colour and go flat grey-black instead of a rich related hue."
+}

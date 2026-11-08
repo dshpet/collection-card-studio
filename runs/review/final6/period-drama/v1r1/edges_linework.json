@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (graduation cap): the board's outer edge is clean and moderately dark, the band and the tassel have soft, lost lower edges, and there is no drawn contour. This matches the real cards. B (top hat): a heavy, near-black contour runs all around the brim and doubles along its rim, almost like an ink outline. The crown is filled with grainy speckle edges from a brushed-satin texture rather than smooth tone. That uniform dark rim and the noise inside the form match the generated side of the lessons.",
+   "fix": "Remove the dark outline around the hat brim. Let the brim edge be defined only by the change from light to dark, softer where it turns away from the light. Make the crown smooth, evenly shaded felt with no grainy texture."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A (fan): the grille is drawn as dozens of equally thick, equally dark spokes and rings, so every wire has the same hard weight. Subject edge density is 0.302, above the real range. The curtain and window behind it are soft and almost lost, so the hierarchy is all-or-nothing. B (sandcastle): the crenellations and arch have crisp, varied edges. The sand has soft speckle and the sea horizon is soft, which falls within the real ranges. The difference is partly caused by the subject itself, since a fan grille has many wires, so confidence is low.",
+   "fix": "Draw fewer, thinner grille wires that fade softly toward the edge of the cage. Make the wires on the far side lighter and slightly blurred, with only the front rim and the hub crisp."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 3,
+   "difference": "A (buoy): the body edges are soft-to-medium and the base edge is lost into the water ripples. The bell loop is crisp but not outlined. Outline darkness is -0.049, in the real range. B (suitcase): an even dark contour runs around the whole case and handle (outline darkness 0.128, near the top of the range). Each sticker has a thick double ring from its die-cut border. The corner caps are outlined the same way, and the floor adds evenly spaced hard plank lines. The edge weight is the same everywhere instead of being sharpest at a focus, as on the generated lesson cards (the computer and the lighthouse).",
+   "fix": "Remove the dark line around the suitcase silhouette and handle. Separate the case from the background with light and shadow only. Make the sticker borders thin and flat with no dark rim. Make the floor planks soft and slightly blurred so the case's front corners are the sharpest edges in the image."
+  }
+ ],
+ "pattern": "Generated cards give themselves away with an even, dark contour line traced around the silhouette and around inner parts (brims, stickers, corner caps). Their edges have the same hardness everywhere instead of being sharpest at the focus and lost elsewhere. They also add extra hard detail lines that real cards leave out or soften: vent slats, woodgrain, plank seams, dense wires, surface texture speckle."
+}

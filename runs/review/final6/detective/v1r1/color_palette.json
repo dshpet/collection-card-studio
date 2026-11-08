@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a silver magnifier with a red handle sits on loud green rings. The background is the loudest mass on the card (0.229, above the real range). In the lens view, the glass becomes the same green as the backdrop, so the hero repeats the background hue, and the whole card reads as almost one hue family (1.25). B: a red-framed white backboard on a cyan field. The warm hero sits against a cool backdrop, and the white board stays neutral, which is the usual real split. B's shadow chroma number is high because the cyan reflects into the board's shadow, but in the lens view the board still reads as clean white and grey. The call is weak, and both cards could be real.",
+   "fix": "Make the green background rings calmer and more muted. Give the magnifier glass a clear, slightly cool grey-blue tint instead of green, so the hero does not repeat the backdrop color. Let the red handle be the only strong accent."
+  },
+  {
+   "pair": "p02",
+   "odd": "B",
+   "confidence": 2,
+   "difference": "B: a red bike in front of a blue car under a yellow-orange sunset sky with ochre hills. The warm hero sits on a warm sky, and the card spreads across about seven hue families (7.15, above the real range). In the lens view, the shadows on the car and the road go dull purple-grey, which matches the low shadow-chroma number (0.47). A: an orange-roofed, yellow-wood feeder on a cool park of green and sky blue. The warm hero sits on a cool backdrop, like the real cards. The wood is pushed a bit toward pure yellow, but the shadows on the trunk and the box stay rich brown. A's numbers are close to the real range.",
+   "fix": "Put the red bike against a cool, calm backdrop, such as a soft blue daytime sky and grey road, with no orange sunset. Leave out the ochre hills. Keep the car a muted grey-blue, and make the shadows under the rack a deeper blue-grey, not dull purple."
+  },
+  {
+   "pair": "p03",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: a blue snorkel mask on bright orange dock planks next to saturated turquoise water. The wood is pushed to pure orange, like the generated desks in the computer lessons, and its shadows turn mauve-red in the lens view. The card spreads across about six hue families (6.01, the top of the real range), with the purple snorkel tip as an extra accent. B: a yellow bag on purple stripes, which is the classic complementary hero/backdrop split. The contents (green, cream, light blue) stay small and muted. B's background is very saturated (0.223, above the range), but this matches the real purple cards in the anchor.",
+   "fix": "Paint the dock as a muted, weathered brown-tan wood with soft brown shadows, not bright orange. Tone the water down to a calmer teal, and make the snorkel's top cap a darker blue instead of purple."
+  }
+ ],
+ "pattern": "The giveaways are generated cards that push local colors to pure hue: wood goes saturated orange or yellow, beige whites go cream, and leather goes orange. They also lose the neutral grey and white masses that rest the eye. Their shadows drift to red, mauve or dull purple. Generated cards either repeat the backdrop hue inside the hero or put a warm hero on a warm backdrop. Some add extra props that push the hue-family count up."
+}

@@ -2,15 +2,15 @@
 
 A tool that turns a theme and a producer's free-form wishes into 3–5 versions of a ten-card collection set, drawn to sit beside the game's own cards, and the analysis of the reference collection behind it. Brief: [task](materials/01_task_description.md), [collections](materials/02_collection_explanation.md), [art guide](materials/03_art_guide.md), [Miro board](https://miro.com/app/board/uXjVEUZR5u0=/).
 
-![Batch 2: Western, Sci-Fi and Horror, one version each, object cards only](runs/batch2.png)
+![The final sets: Western, Period Drama and Detective, object cards only](runs/final6/final_sets.png)
 
-*Batch 2, one version per film genre, object cards only: graded 3.85 of 5 by the producer, beside their references and not blind. The final sets, Western, Period Drama and Detective, were drawn on 2026-11-08 (`runs/final3/`, [what changed](runs/final3/README.md)); the producer graded every set 4 of 5, and a fix round redrew the 17 cards they commented on: `runs/final4/` ([what changed](runs/final4/README.md)). Round 2 got 5, 4, 4 and 5 for the cast; a second fix round redrew eight cards: `runs/final5/` ([what changed](runs/final5/README.md)). The 2026-11-03 sets are in `runs/final/`.*
+*The final sets, object cards only: the producer graded each 5 of 5. Drawn on 2026-11-08 (`runs/final3/`, [what changed](runs/final3/README.md)), they got 4 of 5 each; three fix rounds redrew only the cards the producer commented on: 17 cards (`runs/final4/`, [what changed](runs/final4/README.md)), then eight (`runs/final5/`, [what changed](runs/final5/README.md)), then the Magnifier (`runs/final6/`, [the final sets](runs/final6/README.md)). Batch 2, the earlier Western, Sci-Fi and Horror, is `runs/batch2.png`; the 2026-11-03 sets are in `runs/final/`.*
 
 | The brief asks for | Here |
 |---|---|
 | An analysis of how the reference sets are built and drawn | [analysis/SYNTHESIS.md](analysis/SYNTHESIS.md), dashboard `analysis/report.html` |
 | A tool: theme and wishes in, 3–5 variants of a set out | The [make-card-set skill](.claude/skills/make-card-set/SKILL.md) over `scripts/make_set.py` |
-| Three film-genre sets, no gold cards | `runs/final5/western-2`, `period-drama`, `detective`, each with its `spec.md`; six bonus cast cards in `runs/final4/cast/` |
+| Three film-genre sets, no gold cards | `runs/final5/western-2`, `runs/final5/period-drama`, `runs/final6/detective`, each with its `spec.md`; six bonus cast cards in `runs/final4/cast/`; [the list](runs/final6/README.md) |
 | Our sets against the references | [analysis/COMPARISON.md](analysis/COMPARISON.md) |
 | The process and what was tried | [PROCESS.md](PROCESS.md), [STYLE_GAPS](analysis/STYLE_GAPS.md), [experiments/](experiments/README.md), [runs/](runs/README.md) |
 

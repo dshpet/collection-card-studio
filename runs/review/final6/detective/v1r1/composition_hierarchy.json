@@ -1,0 +1,26 @@
+{
+ "pairs": [
+  {
+   "pair": "p01",
+   "odd": "A",
+   "confidence": 3,
+   "difference": "A: the magnifier is small and centered on the green rings, tilted only by its handle, with a wide even gap on every side. Its margin_min of 0.128 is above the largest real margin (0.116), and its area of 0.195 is just under the smallest real area. That is the 'whole object floating in the middle' framing the generated lessons show (glove, camera, lighthouse on an island). B: the backboard fills the upper card at a 3/4 angle, and the pole is cut off by the bottom edge (margin 0). That matches the real lighthouse and street lamp, which run off the card edge. At thumbnail size B reads as a basketball hoop at once, while A's lens reads as a small grey ring with a lot of empty green around it.",
+   "fix": "Draw the magnifying glass much larger and closer to the viewer, filling about two-thirds of the card. Turn it at a slight 3/4 angle so the lens rim nearly touches the top-left edge and the red handle reaches close to the bottom-right corner. Leave only a thin strip of the green ring background around it."
+  },
+  {
+   "pair": "p02",
+   "odd": "A",
+   "confidence": 2,
+   "difference": "A: the bird feeder sits dead center and straight-on, symmetric left to right, with its roof and tray parallel to the card edges. The tree trunk runs from top to bottom behind it (box_height 1.0). The square-on centering leans generated. B: the bicycle is seen at an angle and sits off-center to the right, and the car is cropped on the right and bottom edges. That cropped, angled scene framing matches the real tent and binocular cards. Both are full scenes, and both have something big competing with the hero (the trunk in A, the car in B), so this is a weak call.",
+   "fix": "Turn the bird feeder to a 3/4 angle and push it slightly toward the viewer and off center, so one roof corner comes close to the card edge. Let the tree trunk be cut off by the card edge on one side instead of running straight up the middle."
+  },
+  {
+   "pair": "p03",
+   "odd": "B",
+   "confidence": 4,
+   "difference": "B: the tote bag stands upright, square to the viewer, and centered on a flat purple floor, with bottles and a towel sticking out symmetrically on both sides. The whole object is visible, with even room on every side (margin_min 0.092, above the largest real margin of 0.085), and its area of 0.467 is above the largest real area. At thumbnail size the bottles and towel compete with the bag as the thing you see first. A: the snorkel mask lies tilted diagonally on dock planks, close to the viewer. The snorkel tube runs near the left edge, and the water and rope are cut off by the top corners. That close, tilted, edge-cropped framing matches the real cards (map with magnifier, ball on sand).",
+   "fix": "Tip the beach bag over at a 3/4 angle, lying on sand or a towel and seen from slightly above. Bring it close so a handle or one corner is cut off by the card edge. Keep only one item, a single bottle, peeking out of the bag, smaller than the bag itself."
+  }
+ ],
+ "pattern": "Generated cards put the whole object in the middle of the card, square to the viewer, with an even, generous gap on all four sides. Nothing touches or crosses the card edge, and the object is often turned into a complete little scene with extra props (an island, bottles, a towel) that compete with the hero. Real cards bring the object close at a 3/4 tilt and let parts of it or the setting run off the card edge. They give the hero most of the frame, leave uneven and tight margins, and keep little else in view."
+}
