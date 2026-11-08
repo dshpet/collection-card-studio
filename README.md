@@ -28,7 +28,7 @@ The producer here is the author, playing the brief's producer. Every human grade
 
 - **Final sets.** Drawn once, then three fix rounds redrew 17, 8 and 2 cards, almost all of them cards the producer had commented on. Set grades went from 4, 4, 4 to 5, 5, 5 after the second round; the third answered the one remaining comment, on the Magnifier, and was not graded again. Card means, latest grade per card, are 4.5 Western, 3.8 Period Drama and 4.0 Detective, and the six cast cards are at 5.0. The outside artist gave the pre-final cards 3.1 of 5.
 - **Autonomy.** One command makes a set with no human step, such as the [pre-final Detective](runs/prefinal/detective/variant_1.png), one of three variants. The final sets added the producer's pass: plans composed from graded variants, then fix rounds through the same tool with `--keep`. In those rounds a few Blender models and three picks were adjusted by hand; a producer's note now reaches the modeller directly.
-- **Style.** Blind, the producer still finds our drawing in 24 of 32 twins of the final style, down from 31 of 32 for the first. Calibrated model reviewers are at chance on 16 of the same twins, so the producer stays the measure.
+- **Style.** Blind, on 40 twins of the final style the producer finds our drawing 24 times, takes the real card for ours 8 times and cannot tell 8 times; for the first style, 31, 1 and 8. Calibrated model reviewers are at chance on 16 of the same twins, so the producer stays the measure.
 - **Construction.** In a six-object trial, Blender models cut broken cards from 5 of 12 to 1, and to none once the models were fixed (grade 3.7 against 2.2). Only built, multi-part objects get a model.
 - **Plans matter most.** Between two graded batches the mean rose from 3.63 to 3.97: half of that came from three character cards, most of the rest from better objects. Low grades traced back to the plan and became lessons.
 - **Robustness.** 19 odd or hostile requests (emoji and non-English themes, brands, franchises, weapons, gore, prompt injection) all produced plans, with forbidden wishes declined and named in the report. War and Gangsters kept three cards flagged for a person.
@@ -71,7 +71,7 @@ A run first checks that its tools and data are in place. A request is the theme,
 - `--candidates 1 --review-rounds 0`: a quick draft.
 - `scripts/screen.py <folder> --variant 1 --color blue` places a variant in the game's window.
 
-A variant takes about 40 minutes. One run peaks at about 5 GB of GPU memory; Blender renders on the CPU, about 10 s a render. The Blender models are Python written by Claude and run locally with the user's rights, so run the tool only on your own machine.
+A variant takes about 40 minutes. A three-variant set with five candidates a card, such as the pre-final Detective, made 173 drawings; its Claude calls cost $47 at API list prices (measured from the session logs), and the drawings would cost about $35-70 at gpt-image-2 list prices. One run peaks at about 5 GB of GPU memory; Blender renders on the CPU, about 10 s a render. The Blender models are Python written by Claude and run locally with the user's rights, so run the tool only on your own machine.
 
 ## Teach it
 

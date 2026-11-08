@@ -17,7 +17,7 @@ What was tried, and why the tool is built the way it is. Numbers are in [STYLE_G
 ## 3. Measurement
 
 - **Twins:** real cards redrawn with the card hidden, so the object is the same and what differs is mostly style. Eight style-text rounds took calibrated reviewers from catching 89% of twins to chance.
-- **The producer's blind ratings** became the measure: 31 of 32 first-style twins found, 24 of 32 final-style. Models were at chance on 16 of the same twins.
+- **The producer's blind ratings** became the measure: of 40 twins each, 31 of 32 decided first-style twins found, 24 of 32 final-style (8 undecided each). Models were at chance on 16 of the same twins.
 - No score of a lone card followed the producer's grades. Pairwise judging did: the director agrees with the producer 61% of the time, 76% when confident. So the pipeline picks candidates pairwise in both orders and flags close calls.
 - Dropped: automatic tuning of the director (gains on the tuning half did not hold out), tone rounds that moved measured darks onto the real cards (the producer preferred neither), measured geometry overlays for reviewers (they read the marks as proof), search-picked or five references, and a measured backdrop grade (no gain).
 
@@ -64,7 +64,7 @@ What was tried, and why the tool is built the way it is. Numbers are in [STYLE_G
 
 ## Limits and next steps
 
-- One main human rater, plus an outside artist on the pre-final sets. The final style is still spotted in 24 of 32 twins.
+- One main human rater, plus an outside artist on the pre-final sets. The final style is still spotted in 24 of the 32 decided twins.
 - No model judges construction; it comes from geometry and a human look.
 - Each variant takes about 40 minutes and needs a GPU, Blender and two logged-in CLIs.
 - A style LoRA trained on the reference cards with an open model was not tried, for lack of time. The research puts it at about half a day ([research](research/README.md)).
