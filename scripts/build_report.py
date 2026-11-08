@@ -10,13 +10,17 @@ from common import ANALYSIS, ROOT, best_try, load_json
 
 from form import CARD_FORM
 
+FINAL_SETS = ROOT / "runs" / "final6" / "sets.json"  # the final sets, after the producer's fix rounds of 2026-11-08
+
 
 def markdown(text):
-    """Enough Markdown for the synthesis: headings, bullets, paragraphs and bold."""
+    """Enough Markdown for the synthesis: headings, bullets, paragraphs, bold, code and links."""
     output, in_list = [], False
     for line in text.splitlines():
         line = html.escape(line.strip(), quote=False)
         line = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", line)
+        line = re.sub(r"`(.+?)`", r"<code>\1</code>", line)
+        line = re.sub(r"\[(.+?)\]\((.+?)\)", r'<a href="\2">\1</a>', line)
         is_item = line.startswith("- ")
         if in_list and not is_item:
             output.append("</ul>")
@@ -38,17 +42,23 @@ def markdown(text):
 
 
 def generated_runs():
-    """Every finished pipeline run, for the Generated tab."""
+    """The final sets, then every earlier pipeline run at the top of runs/ with an object-card sheet, for the Generated
+    tab. A run of character cards has only its cast sheet, which stays out of git."""
+    finals = list(load_json(FINAL_SETS)) if FINAL_SETS.exists() else []
     runs = []
-    for report in sorted((ROOT / "runs").glob("*/report.md")):
-        folder = report.parent
+    for slug in finals + sorted(report.parent.name for report in (ROOT / "runs").glob("*/report.md")):
+        folder = ROOT / "runs" / slug
+        if not (folder / "variant_1.png").exists():
+            continue
         plan = load_json(folder / "plan.json")
         history = load_json(folder / "check.json")
         best = [best_try(tries) for tries in history.values() if tries]
-        runs.append({"slug": folder.name, "title": plan["title"], "story": plan.get("story"),
+        runs.append({"slug": slug, "title": plan["title"], "story": plan.get("story"),
                      "variants": len(plan["variants"]), "cards": len(best),
                      "passed": sum(b["passed"] for b in best),
                      "review": [b["card"]["name"] for b in best if not b["passed"]]})
+        if slug in finals:
+            runs[-1]["note"] = f"The final set, {slug}: drawn 2026-11-08, then fixed card by card on the producer's comments."
     return runs
 
 

@@ -1,0 +1,194 @@
+{
+ "real": {
+  "Sports": {
+   "style_similarity": 0.613,
+   "grey_similarity": 0.621
+  },
+  "Finals": {
+   "style_similarity": 0.603,
+   "grey_similarity": 0.611
+  },
+  "Coolness": {
+   "style_similarity": 0.61,
+   "grey_similarity": 0.603
+  },
+  "Countrystead": {
+   "style_similarity": 0.641,
+   "grey_similarity": 0.668
+  }
+ },
+ "sets": {
+  "Western": {
+   "final": {
+    "run": "final5/western-2",
+    "variant": 1,
+    "title": "Western",
+    "title_words": 1,
+    "name_words": 2,
+    "object_classes": 7,
+    "scale_classes": 5,
+    "background_hues": 6,
+    "categories": {
+     "1": 4,
+     "2": 1,
+     "3": 2,
+     "4": 3
+    },
+    "style_similarity": 0.56,
+    "grey_similarity": 0.586
+   },
+   "pre-final": {
+    "run": "prefinal/western",
+    "variant": 1,
+    "title": "Western",
+    "title_words": 1,
+    "name_words": 2,
+    "object_classes": 8,
+    "scale_classes": 5,
+    "background_hues": 6,
+    "categories": {
+     "1": 3,
+     "2": 1,
+     "3": 4,
+     "4": 2
+    },
+    "style_similarity": 0.563,
+    "grey_similarity": 0.611
+   }
+  },
+  "Period Drama": {
+   "final": {
+    "run": "final5/period-drama",
+    "variant": 1,
+    "title": "Period Drama",
+    "title_words": 2,
+    "name_words": 2,
+    "object_classes": 7,
+    "scale_classes": 2,
+    "background_hues": 6,
+    "categories": {
+     "1": 4,
+     "2": 2,
+     "3": 3,
+     "4": 1
+    },
+    "style_similarity": 0.551,
+    "grey_similarity": 0.623
+   },
+   "pre-final": {
+    "run": "prefinal/period-drama",
+    "variant": 3,
+    "title": "Period Drama",
+    "title_words": 2,
+    "name_words": 2,
+    "object_classes": 5,
+    "scale_classes": 2,
+    "background_hues": 8,
+    "categories": {
+     "1": 4,
+     "2": 2,
+     "3": 3,
+     "4": 1
+    },
+    "style_similarity": 0.482,
+    "grey_similarity": 0.582
+   }
+  },
+  "Detective": {
+   "final": {
+    "run": "final6/detective",
+    "variant": 1,
+    "title": "Detective",
+    "title_words": 1,
+    "name_words": 2,
+    "object_classes": 6,
+    "scale_classes": 4,
+    "background_hues": 9,
+    "categories": {
+     "1": 4,
+     "2": 2,
+     "3": 2,
+     "4": 2
+    },
+    "style_similarity": 0.474,
+    "grey_similarity": 0.588
+   },
+   "pre-final": {
+    "run": "prefinal/detective",
+    "variant": 2,
+    "title": "Detective",
+    "title_words": 1,
+    "name_words": 2,
+    "object_classes": 9,
+    "scale_classes": 3,
+    "background_hues": 5,
+    "categories": {
+     "1": 2,
+     "2": 2,
+     "3": 4,
+     "4": 2
+    },
+    "style_similarity": 0.543,
+    "grey_similarity": 0.559
+   }
+  }
+ },
+ "medians": {
+  "real": {
+   "chroma_subject": 0.128,
+   "hue_families": 3.84,
+   "shadow_chroma_kept": 0.97,
+   "margin_min": 0.06,
+   "subject_area": 0.324
+  },
+  "pre-final": {
+   "chroma_subject": 0.102,
+   "hue_families": 2.36,
+   "shadow_chroma_kept": 0.817,
+   "margin_min": 0.098,
+   "subject_area": 0.279
+  },
+  "final": {
+   "chroma_subject": 0.111,
+   "hue_families": 2.275,
+   "shadow_chroma_kept": 0.905,
+   "margin_min": 0.079,
+   "subject_area": 0.247
+  },
+  "cards": {
+   "real": 126,
+   "pre-final": 30,
+   "final": 30
+  }
+ },
+ "staging": {
+  "final": {
+   "mirror": [
+    3,
+    19
+   ],
+   "pool": [
+    7,
+    12
+   ],
+   "cut": [
+    0,
+    6
+   ]
+  },
+  "pre-final": {
+   "mirror": [
+    3,
+    20
+   ],
+   "pool": [
+    11,
+    16
+   ],
+   "cut": [
+    1,
+    5
+   ]
+  }
+ }
+}

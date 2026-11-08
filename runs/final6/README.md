@@ -18,7 +18,7 @@ The producer graded round 3 (`runs/final5`): every set 5 of 5, "close to being s
 | Detective | `runs/final6/detective/` | `runs/plans/final-detective-6.json` |
 | Cast bonus, two cards per genre | `runs/final4/cast/` | `runs/plans/final-cast-2.json` |
 
-Producer's grades, latest per card: sets 5, 5, 5, cast 5; cards 4.5 Western, 3.8 Period Drama, 4.0 Detective without the new Magnifier, 4.33 cast.
+Producer's grades, latest per card: sets 5, 5, 5, cast 5; cards 4.5 Western, 3.8 Period Drama, 4.0 Detective without the new Magnifier, 5.0 cast. Two last minor comments were left as they are: the Pocket Watch "may have some problems with the perspective", and the hat on the man in Sheriff Pals is "a tad misplaced".
 
 | Set | Object classes | Scale classes | Backdrop hues | Style similarity |
 |---|---:|---:|---:|---:|
